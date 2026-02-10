@@ -18,7 +18,7 @@ final class DeviceAccessibilityModule$setAccessibilityFocus$1$1 implements Funct
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((Exception) obj);
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     public final void invoke(Exception error) {

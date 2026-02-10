@@ -1,16 +1,16 @@
 package com.withpersona.sdk2.inquiry.network.core;
 
 import android.content.Context;
-import cr.h;
-import cr.i;
-import eo.g;
 import java.util.Map;
 import java.util.Set;
 import javax.inject.Provider;
+import lr.h;
+import lr.i;
+import no.g;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class NetworkCoreModule_OkhttpClientFactory implements cr.d {
+public final class NetworkCoreModule_OkhttpClientFactory implements lr.d {
     private final h contextProvider;
     private final h deviceInfoProvider;
     private final h deviceVendorIDProvider;
@@ -33,8 +33,8 @@ public final class NetworkCoreModule_OkhttpClientFactory implements cr.d {
         return new NetworkCoreModule_OkhttpClientFactory(networkCoreModule, i.a(provider), i.a(provider2), i.a(provider3), i.a(provider4), i.a(provider5), i.a(provider6));
     }
 
-    public static OkHttpClient okhttpClient(NetworkCoreModule networkCoreModule, Set<Interceptor> set, Map<String, String> map, Context context, g gVar, eo.b bVar, ep.b bVar2) {
-        return (OkHttpClient) cr.g.d(networkCoreModule.okhttpClient(set, map, context, gVar, bVar, bVar2));
+    public static OkHttpClient okhttpClient(NetworkCoreModule networkCoreModule, Set<Interceptor> set, Map<String, String> map, Context context, g gVar, no.b bVar, np.b bVar2) {
+        return (OkHttpClient) lr.g.d(networkCoreModule.okhttpClient(set, map, context, gVar, bVar, bVar2));
     }
 
     public static NetworkCoreModule_OkhttpClientFactory create(NetworkCoreModule networkCoreModule, h hVar, h hVar2, h hVar3, h hVar4, h hVar5, h hVar6) {
@@ -43,6 +43,6 @@ public final class NetworkCoreModule_OkhttpClientFactory implements cr.d {
 
     @Override // javax.inject.Provider
     public OkHttpClient get() {
-        return okhttpClient(this.module, (Set) this.interceptorsProvider.get(), (Map) this.headersProvider.get(), (Context) this.contextProvider.get(), (g) this.deviceVendorIDProvider.get(), (eo.b) this.deviceInfoProvider.get(), (ep.b) this.loggerProvider.get());
+        return okhttpClient(this.module, (Set) this.interceptorsProvider.get(), (Map) this.headersProvider.get(), (Context) this.contextProvider.get(), (g) this.deviceVendorIDProvider.get(), (no.b) this.deviceInfoProvider.get(), (np.b) this.loggerProvider.get());
     }
 }

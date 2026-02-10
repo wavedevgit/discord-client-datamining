@@ -1,48 +1,40 @@
 package fr;
-
-import fr.b;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements tu.b, b {
+public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f23181a = new a();
+    public static int f24220a = 2131101364;
 
-    /* renamed from: fr.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class C0354a extends Lambda implements Function2 {
+    /* renamed from: b  reason: collision with root package name */
+    public static int f24221b = 2131101367;
 
-        /* renamed from: d  reason: collision with root package name */
-        public static final C0354a f23182d = new C0354a();
+    /* renamed from: c  reason: collision with root package name */
+    public static int f24222c = 2131101368;
 
-        C0354a() {
-            super(2);
-        }
+    /* renamed from: d  reason: collision with root package name */
+    public static int f24223d = 2131101369;
 
-        public final String a(String formatSequence, double d10) {
-            Intrinsics.checkNotNullParameter(formatSequence, "formatSequence");
-            String format = String.format(formatSequence, Double.valueOf(d10));
-            Intrinsics.checkNotNullExpressionValue(format, "format(formatSequence, arg)");
-            return format;
-        }
+    /* renamed from: e  reason: collision with root package name */
+    public static int f24224e = 2131101370;
 
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a((String) obj, ((Number) obj2).doubleValue());
-        }
-    }
+    /* renamed from: f  reason: collision with root package name */
+    public static int f24225f = 2131101371;
 
-    private a() {
-    }
+    /* renamed from: g  reason: collision with root package name */
+    public static int f24226g = 2131101376;
 
-    public String a(Object obj, Object obj2, Function2 function2) {
-        return b.a.b(this, obj, obj2, function2);
-    }
+    /* renamed from: h  reason: collision with root package name */
+    public static int f24227h = 2131101377;
 
-    @Override // tu.b
-    public Object f(Object obj, Object obj2) {
-        return a(obj, obj2, C0354a.f23182d);
-    }
+    /* renamed from: i  reason: collision with root package name */
+    public static int f24228i = 2131101378;
+
+    /* renamed from: j  reason: collision with root package name */
+    public static int f24229j = 2131101380;
+
+    /* renamed from: k  reason: collision with root package name */
+    public static int f24230k = 2131101381;
+
+    /* renamed from: l  reason: collision with root package name */
+    public static int f24231l = 2131101384;
 }

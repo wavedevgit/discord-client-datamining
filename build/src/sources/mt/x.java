@@ -1,58 +1,43 @@
 package mt;
 
-import java.util.Map;
-import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.descriptors.SerialDescriptor;
+import mt.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class x {
+public final class x implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f37611a = w.a(16);
+    private final kotlin.reflect.g f36642a;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
+    public x(kotlin.reflect.g property) {
+        Intrinsics.checkNotNullParameter(property, "property");
+        this.f36642a = property;
     }
 
-    public final Object a(SerialDescriptor descriptor, a key) {
-        Object obj;
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        Intrinsics.checkNotNullParameter(key, "key");
-        Map map = (Map) this.f37611a.get(descriptor);
-        if (map != null) {
-            obj = map.get(key);
-        } else {
-            obj = null;
-        }
-        if (obj == null) {
+    @Override // mt.b
+    public Object a(Object obj) {
+        return this.f36642a.get(obj);
+    }
+
+    @Override // mt.b
+    public Object b(Object obj) {
+        return b.a.a(this, obj);
+    }
+
+    @Override // ot.a
+    public Object c(Object obj, Object obj2) {
+        Object obj3 = this.f36642a.get(obj);
+        if (obj3 == null) {
+            this.f36642a.set(obj, obj2);
             return null;
+        } else if (Intrinsics.areEqual(obj3, obj2)) {
+            return null;
+        } else {
+            return obj3;
         }
-        return obj;
     }
 
-    public final Object b(SerialDescriptor descriptor, a key, Function0 defaultValue) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        Intrinsics.checkNotNullParameter(key, "key");
-        Intrinsics.checkNotNullParameter(defaultValue, "defaultValue");
-        Object a10 = a(descriptor, key);
-        if (a10 != null) {
-            return a10;
-        }
-        Object invoke = defaultValue.invoke();
-        c(descriptor, key, invoke);
-        return invoke;
-    }
-
-    public final void c(SerialDescriptor descriptor, a key, Object value) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        Intrinsics.checkNotNullParameter(key, "key");
-        Intrinsics.checkNotNullParameter(value, "value");
-        Map map = this.f37611a;
-        Object obj = map.get(descriptor);
-        if (obj == null) {
-            obj = w.a(2);
-            map.put(descriptor, obj);
-        }
-        ((Map) obj).put(key, value);
+    @Override // ot.a
+    public String getName() {
+        return this.f36642a.getName();
     }
 }

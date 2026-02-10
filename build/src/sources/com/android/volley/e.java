@@ -3,16 +3,16 @@ package com.android.volley;
 public class e implements r {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f8196a;
+    private int f8773a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f8197b;
+    private int f8774b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f8198c;
+    private final int f8775c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f8199d;
+    private final float f8776d;
 
     public e() {
         this(2500, 1, 1.0f);
@@ -20,14 +20,14 @@ public class e implements r {
 
     @Override // com.android.volley.r
     public int a() {
-        return this.f8197b;
+        return this.f8774b;
     }
 
     @Override // com.android.volley.r
     public void b(u uVar) {
-        this.f8197b++;
-        int i10 = this.f8196a;
-        this.f8196a = i10 + ((int) (i10 * this.f8199d));
+        this.f8774b++;
+        int i10 = this.f8773a;
+        this.f8773a = i10 + ((int) (i10 * this.f8776d));
         if (d()) {
             return;
         }
@@ -36,19 +36,19 @@ public class e implements r {
 
     @Override // com.android.volley.r
     public int c() {
-        return this.f8196a;
+        return this.f8773a;
     }
 
     protected boolean d() {
-        if (this.f8197b <= this.f8198c) {
+        if (this.f8774b <= this.f8775c) {
             return true;
         }
         return false;
     }
 
     public e(int i10, int i11, float f10) {
-        this.f8196a = i10;
-        this.f8198c = i11;
-        this.f8199d = f10;
+        this.f8773a = i10;
+        this.f8775c = i11;
+        this.f8776d = f10;
     }
 }

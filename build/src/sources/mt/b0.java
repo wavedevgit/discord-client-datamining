@@ -1,80 +1,87 @@
 package mt;
 
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.json.Json;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b0 extends kotlinx.serialization.encoding.a {
+public final class b0 extends a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f37515a;
+    private final b f36601a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final nt.b f37516b;
+    private final int f36602b;
 
-    public b0(a lexer, Json json) {
-        Intrinsics.checkNotNullParameter(lexer, "lexer");
-        Intrinsics.checkNotNullParameter(json, "json");
-        this.f37515a = lexer;
-        this.f37516b = json.a();
+    /* renamed from: c  reason: collision with root package name */
+    private final int f36603c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final String f36604d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final Integer f36605e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final m f36606f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final int f36607g;
+
+    public /* synthetic */ b0(b bVar, int i10, int i11, String str, Integer num, m mVar, int i12, DefaultConstructorMarker defaultConstructorMarker) {
+        this(bVar, i10, i11, (i12 & 8) != 0 ? bVar.getName() : str, (i12 & 16) != 0 ? null : num, (i12 & 32) != 0 ? null : mVar);
     }
 
-    @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
-    public byte H() {
-        a aVar = this.f37515a;
-        String q10 = aVar.q();
-        try {
-            return kotlin.text.e0.a(q10);
-        } catch (IllegalArgumentException unused) {
-            a.x(aVar, "Failed to parse type 'UByte' for input '" + q10 + '\'', 0, null, 6, null);
-            throw new rr.h();
+    @Override // mt.n
+    public b b() {
+        return this.f36601a;
+    }
+
+    @Override // mt.n
+    public m c() {
+        return this.f36606f;
+    }
+
+    @Override // mt.n
+    /* renamed from: d */
+    public Integer a() {
+        return this.f36605e;
+    }
+
+    public final int e() {
+        return this.f36607g;
+    }
+
+    public final int f() {
+        return this.f36603c;
+    }
+
+    public final int g() {
+        return this.f36602b;
+    }
+
+    @Override // mt.n
+    public String getName() {
+        return this.f36604d;
+    }
+
+    public b0(b accessor, int i10, int i11, String name, Integer num, m mVar) {
+        int i12;
+        Intrinsics.checkNotNullParameter(accessor, "accessor");
+        Intrinsics.checkNotNullParameter(name, "name");
+        this.f36601a = accessor;
+        this.f36602b = i10;
+        this.f36603c = i11;
+        this.f36604d = name;
+        this.f36605e = num;
+        this.f36606f = mVar;
+        if (i11 < 10) {
+            i12 = 1;
+        } else if (i11 < 100) {
+            i12 = 2;
+        } else if (i11 >= 1000) {
+            throw new IllegalArgumentException("Max value " + i11 + " is too large");
+        } else {
+            i12 = 3;
         }
-    }
-
-    @Override // kotlinx.serialization.encoding.Decoder, kotlinx.serialization.encoding.c
-    public nt.b a() {
-        return this.f37516b;
-    }
-
-    @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
-    public int h() {
-        a aVar = this.f37515a;
-        String q10 = aVar.q();
-        try {
-            return kotlin.text.e0.d(q10);
-        } catch (IllegalArgumentException unused) {
-            a.x(aVar, "Failed to parse type 'UInt' for input '" + q10 + '\'', 0, null, 6, null);
-            throw new rr.h();
-        }
-    }
-
-    @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
-    public long l() {
-        a aVar = this.f37515a;
-        String q10 = aVar.q();
-        try {
-            return kotlin.text.e0.g(q10);
-        } catch (IllegalArgumentException unused) {
-            a.x(aVar, "Failed to parse type 'ULong' for input '" + q10 + '\'', 0, null, 6, null);
-            throw new rr.h();
-        }
-    }
-
-    @Override // kotlinx.serialization.encoding.c
-    public int o(SerialDescriptor descriptor) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        throw new IllegalStateException("unsupported");
-    }
-
-    @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
-    public short s() {
-        a aVar = this.f37515a;
-        String q10 = aVar.q();
-        try {
-            return kotlin.text.e0.j(q10);
-        } catch (IllegalArgumentException unused) {
-            a.x(aVar, "Failed to parse type 'UShort' for input '" + q10 + '\'', 0, null, 6, null);
-            throw new rr.h();
-        }
+        this.f36607g = i12;
     }
 }

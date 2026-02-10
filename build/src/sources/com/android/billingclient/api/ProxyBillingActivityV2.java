@@ -14,28 +14,28 @@ import d.e;
 public class ProxyBillingActivityV2 extends ComponentActivity {
 
     /* renamed from: d  reason: collision with root package name */
-    private ActivityResultLauncher f8016d;
+    private ActivityResultLauncher f8593d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ActivityResultLauncher f8017e;
+    private ActivityResultLauncher f8594e;
 
     /* renamed from: i  reason: collision with root package name */
-    private ResultReceiver f8018i;
+    private ResultReceiver f8595i;
 
     /* renamed from: o  reason: collision with root package name */
-    private ResultReceiver f8019o;
+    private ResultReceiver f8596o;
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // androidx.activity.ComponentActivity, androidx.core.app.ComponentActivity, android.app.Activity
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.f8016d = registerForActivityResult(new e.b(), new ActivityResultCallback() { // from class: com.android.billingclient.api.d0
+        this.f8593d = registerForActivityResult(new e.b(), new ActivityResultCallback() { // from class: com.android.billingclient.api.d0
             @Override // androidx.activity.result.ActivityResultCallback
             public final void a(Object obj) {
                 ProxyBillingActivityV2.this.r((d.a) obj);
             }
         });
-        this.f8017e = registerForActivityResult(new e.b(), new ActivityResultCallback() { // from class: com.android.billingclient.api.e0
+        this.f8594e = registerForActivityResult(new e.b(), new ActivityResultCallback() { // from class: com.android.billingclient.api.e0
             @Override // androidx.activity.result.ActivityResultCallback
             public final void a(Object obj) {
                 ProxyBillingActivityV2.this.s((d.a) obj);
@@ -44,16 +44,16 @@ public class ProxyBillingActivityV2 extends ComponentActivity {
         if (bundle == null) {
             com.google.android.gms.internal.play_billing.a0.h("ProxyBillingActivityV2", "Launching Play Store billing dialog");
             if (getIntent().hasExtra("ALTERNATIVE_BILLING_ONLY_DIALOG_INTENT")) {
-                this.f8018i = (ResultReceiver) getIntent().getParcelableExtra("alternative_billing_only_dialog_result_receiver");
-                this.f8016d.b(new e.a((PendingIntent) getIntent().getParcelableExtra("ALTERNATIVE_BILLING_ONLY_DIALOG_INTENT")).a());
+                this.f8595i = (ResultReceiver) getIntent().getParcelableExtra("alternative_billing_only_dialog_result_receiver");
+                this.f8593d.b(new e.a((PendingIntent) getIntent().getParcelableExtra("ALTERNATIVE_BILLING_ONLY_DIALOG_INTENT")).a());
             } else if (getIntent().hasExtra("external_payment_dialog_pending_intent")) {
-                this.f8019o = (ResultReceiver) getIntent().getParcelableExtra("external_payment_dialog_result_receiver");
-                this.f8017e.b(new e.a((PendingIntent) getIntent().getParcelableExtra("external_payment_dialog_pending_intent")).a());
+                this.f8596o = (ResultReceiver) getIntent().getParcelableExtra("external_payment_dialog_result_receiver");
+                this.f8594e.b(new e.a((PendingIntent) getIntent().getParcelableExtra("external_payment_dialog_pending_intent")).a());
             }
         } else if (bundle.containsKey("alternative_billing_only_dialog_result_receiver")) {
-            this.f8018i = (ResultReceiver) bundle.getParcelable("alternative_billing_only_dialog_result_receiver");
+            this.f8595i = (ResultReceiver) bundle.getParcelable("alternative_billing_only_dialog_result_receiver");
         } else if (bundle.containsKey("external_payment_dialog_result_receiver")) {
-            this.f8019o = (ResultReceiver) bundle.getParcelable("external_payment_dialog_result_receiver");
+            this.f8596o = (ResultReceiver) bundle.getParcelable("external_payment_dialog_result_receiver");
         }
     }
 
@@ -61,11 +61,11 @@ public class ProxyBillingActivityV2 extends ComponentActivity {
     @Override // androidx.activity.ComponentActivity, androidx.core.app.ComponentActivity, android.app.Activity
     public final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        ResultReceiver resultReceiver = this.f8018i;
+        ResultReceiver resultReceiver = this.f8595i;
         if (resultReceiver != null) {
             bundle.putParcelable("alternative_billing_only_dialog_result_receiver", resultReceiver);
         }
-        ResultReceiver resultReceiver2 = this.f8019o;
+        ResultReceiver resultReceiver2 = this.f8596o;
         if (resultReceiver2 != null) {
             bundle.putParcelable("external_payment_dialog_result_receiver", resultReceiver2);
         }
@@ -76,7 +76,7 @@ public class ProxyBillingActivityV2 extends ComponentActivity {
         Bundle extras;
         Intent a10 = aVar.a();
         int b10 = com.google.android.gms.internal.play_billing.a0.d(a10, "ProxyBillingActivityV2").b();
-        ResultReceiver resultReceiver = this.f8018i;
+        ResultReceiver resultReceiver = this.f8595i;
         if (resultReceiver != null) {
             if (a10 == null) {
                 extras = null;
@@ -97,7 +97,7 @@ public class ProxyBillingActivityV2 extends ComponentActivity {
         Bundle extras;
         Intent a10 = aVar.a();
         int b10 = com.google.android.gms.internal.play_billing.a0.d(a10, "ProxyBillingActivityV2").b();
-        ResultReceiver resultReceiver = this.f8019o;
+        ResultReceiver resultReceiver = this.f8596o;
         if (resultReceiver != null) {
             if (a10 == null) {
                 extras = null;

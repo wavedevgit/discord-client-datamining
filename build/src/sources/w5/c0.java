@@ -6,7 +6,7 @@ import x5.c;
 abstract class c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f53258a = c.a.a("nm", "sy", "pt", "p", "r", "or", "os", "ir", "is", "hd", "d");
+    private static final c.a f52287a = c.a.a("nm", "sy", "pt", "p", "r", "or", "os", "ir", "is", "hd", "d");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static t5.k a(x5.c cVar, l5.i iVar, int i10) {
@@ -28,9 +28,9 @@ abstract class c0 {
         s5.b bVar5 = null;
         s5.b bVar6 = null;
         while (cVar.hasNext()) {
-            switch (cVar.p(f53258a)) {
+            switch (cVar.p(f52287a)) {
                 case 0:
-                    str = cVar.b1();
+                    str = cVar.g1();
                     break;
                 case 1:
                     aVar = k.a.d(cVar.nextInt());
@@ -57,7 +57,7 @@ abstract class c0 {
                     bVar5 = d.f(cVar, iVar, false);
                     break;
                 case 9:
-                    z11 = cVar.g();
+                    z11 = cVar.h();
                     break;
                 case 10:
                     if (cVar.nextInt() == 3) {

@@ -7,7 +7,7 @@ import java.util.List;
 public class n {
 
     /* renamed from: a  reason: collision with root package name */
-    final a f5181a;
+    final a f5191a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -19,13 +19,13 @@ public class n {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(a aVar) {
-        this.f5181a = aVar;
+        this.f5191a = aVar;
     }
 
     private int a(List list) {
         boolean z10 = false;
         for (int size = list.size() - 1; size >= 0; size--) {
-            if (((AdapterHelper.b) list.get(size)).f4850a == 8) {
+            if (((AdapterHelper.b) list.get(size)).f4860a == 8) {
                 if (z10) {
                     return size;
                 }
@@ -38,25 +38,25 @@ public class n {
 
     private void c(List list, int i10, AdapterHelper.b bVar, int i11, AdapterHelper.b bVar2) {
         int i12;
-        int i13 = bVar.f4853d;
-        int i14 = bVar2.f4851b;
+        int i13 = bVar.f4863d;
+        int i14 = bVar2.f4861b;
         if (i13 < i14) {
             i12 = -1;
         } else {
             i12 = 0;
         }
-        int i15 = bVar.f4851b;
+        int i15 = bVar.f4861b;
         if (i15 < i14) {
             i12++;
         }
         if (i14 <= i15) {
-            bVar.f4851b = i15 + bVar2.f4853d;
+            bVar.f4861b = i15 + bVar2.f4863d;
         }
-        int i16 = bVar2.f4851b;
+        int i16 = bVar2.f4861b;
         if (i16 <= i13) {
-            bVar.f4853d = i13 + bVar2.f4853d;
+            bVar.f4863d = i13 + bVar2.f4863d;
         }
-        bVar2.f4851b = i16 + i12;
+        bVar2.f4861b = i16 + i12;
         list.set(i10, bVar2);
         list.set(i11, bVar);
     }
@@ -64,7 +64,7 @@ public class n {
     private void d(List list, int i10, int i11) {
         AdapterHelper.b bVar = (AdapterHelper.b) list.get(i10);
         AdapterHelper.b bVar2 = (AdapterHelper.b) list.get(i11);
-        int i12 = bVar2.f4850a;
+        int i12 = bVar2.f4860a;
         if (i12 != 1) {
             if (i12 != 2) {
                 if (i12 != 4) {
@@ -93,98 +93,98 @@ public class n {
 
     void e(List list, int i10, AdapterHelper.b bVar, int i11, AdapterHelper.b bVar2) {
         boolean z10;
-        int i12 = bVar.f4851b;
-        int i13 = bVar.f4853d;
+        int i12 = bVar.f4861b;
+        int i13 = bVar.f4863d;
         boolean z11 = false;
         if (i12 < i13) {
-            if (bVar2.f4851b == i12 && bVar2.f4853d == i13 - i12) {
+            if (bVar2.f4861b == i12 && bVar2.f4863d == i13 - i12) {
                 z10 = false;
                 z11 = true;
             } else {
                 z10 = false;
             }
-        } else if (bVar2.f4851b == i13 + 1 && bVar2.f4853d == i12 - i13) {
+        } else if (bVar2.f4861b == i13 + 1 && bVar2.f4863d == i12 - i13) {
             z10 = true;
             z11 = true;
         } else {
             z10 = true;
         }
-        int i14 = bVar2.f4851b;
+        int i14 = bVar2.f4861b;
         if (i13 < i14) {
-            bVar2.f4851b = i14 - 1;
+            bVar2.f4861b = i14 - 1;
         } else {
-            int i15 = bVar2.f4853d;
+            int i15 = bVar2.f4863d;
             if (i13 < i14 + i15) {
-                bVar2.f4853d = i15 - 1;
-                bVar.f4850a = 2;
-                bVar.f4853d = 1;
-                if (bVar2.f4853d == 0) {
+                bVar2.f4863d = i15 - 1;
+                bVar.f4860a = 2;
+                bVar.f4863d = 1;
+                if (bVar2.f4863d == 0) {
                     list.remove(i11);
-                    this.f5181a.b(bVar2);
+                    this.f5191a.b(bVar2);
                     return;
                 }
                 return;
             }
         }
-        int i16 = bVar.f4851b;
-        int i17 = bVar2.f4851b;
+        int i16 = bVar.f4861b;
+        int i17 = bVar2.f4861b;
         AdapterHelper.b bVar3 = null;
         if (i16 <= i17) {
-            bVar2.f4851b = i17 + 1;
+            bVar2.f4861b = i17 + 1;
         } else {
-            int i18 = bVar2.f4853d;
+            int i18 = bVar2.f4863d;
             if (i16 < i17 + i18) {
-                bVar3 = this.f5181a.a(2, i16 + 1, (i17 + i18) - i16, null);
-                bVar2.f4853d = bVar.f4851b - bVar2.f4851b;
+                bVar3 = this.f5191a.a(2, i16 + 1, (i17 + i18) - i16, null);
+                bVar2.f4863d = bVar.f4861b - bVar2.f4861b;
             }
         }
         if (z11) {
             list.set(i10, bVar2);
             list.remove(i11);
-            this.f5181a.b(bVar);
+            this.f5191a.b(bVar);
             return;
         }
         if (z10) {
             if (bVar3 != null) {
-                int i19 = bVar.f4851b;
-                if (i19 > bVar3.f4851b) {
-                    bVar.f4851b = i19 - bVar3.f4853d;
+                int i19 = bVar.f4861b;
+                if (i19 > bVar3.f4861b) {
+                    bVar.f4861b = i19 - bVar3.f4863d;
                 }
-                int i20 = bVar.f4853d;
-                if (i20 > bVar3.f4851b) {
-                    bVar.f4853d = i20 - bVar3.f4853d;
+                int i20 = bVar.f4863d;
+                if (i20 > bVar3.f4861b) {
+                    bVar.f4863d = i20 - bVar3.f4863d;
                 }
             }
-            int i21 = bVar.f4851b;
-            if (i21 > bVar2.f4851b) {
-                bVar.f4851b = i21 - bVar2.f4853d;
+            int i21 = bVar.f4861b;
+            if (i21 > bVar2.f4861b) {
+                bVar.f4861b = i21 - bVar2.f4863d;
             }
-            int i22 = bVar.f4853d;
-            if (i22 > bVar2.f4851b) {
-                bVar.f4853d = i22 - bVar2.f4853d;
+            int i22 = bVar.f4863d;
+            if (i22 > bVar2.f4861b) {
+                bVar.f4863d = i22 - bVar2.f4863d;
             }
         } else {
             if (bVar3 != null) {
-                int i23 = bVar.f4851b;
-                if (i23 >= bVar3.f4851b) {
-                    bVar.f4851b = i23 - bVar3.f4853d;
+                int i23 = bVar.f4861b;
+                if (i23 >= bVar3.f4861b) {
+                    bVar.f4861b = i23 - bVar3.f4863d;
                 }
-                int i24 = bVar.f4853d;
-                if (i24 >= bVar3.f4851b) {
-                    bVar.f4853d = i24 - bVar3.f4853d;
+                int i24 = bVar.f4863d;
+                if (i24 >= bVar3.f4861b) {
+                    bVar.f4863d = i24 - bVar3.f4863d;
                 }
             }
-            int i25 = bVar.f4851b;
-            if (i25 >= bVar2.f4851b) {
-                bVar.f4851b = i25 - bVar2.f4853d;
+            int i25 = bVar.f4861b;
+            if (i25 >= bVar2.f4861b) {
+                bVar.f4861b = i25 - bVar2.f4863d;
             }
-            int i26 = bVar.f4853d;
-            if (i26 >= bVar2.f4851b) {
-                bVar.f4853d = i26 - bVar2.f4853d;
+            int i26 = bVar.f4863d;
+            if (i26 >= bVar2.f4861b) {
+                bVar.f4863d = i26 - bVar2.f4863d;
             }
         }
         list.set(i10, bVar2);
-        if (bVar.f4851b != bVar.f4853d) {
+        if (bVar.f4861b != bVar.f4863d) {
             list.set(i11, bVar);
         } else {
             list.remove(i11);
@@ -208,57 +208,57 @@ public class n {
     void f(java.util.List r9, int r10, androidx.recyclerview.widget.AdapterHelper.b r11, int r12, androidx.recyclerview.widget.AdapterHelper.b r13) {
         /*
             r8 = this;
-            int r0 = r11.f4853d
-            int r1 = r13.f4851b
+            int r0 = r11.f4863d
+            int r1 = r13.f4861b
             r2 = 4
             r3 = 1
             r4 = 0
             if (r0 >= r1) goto Ld
             int r1 = r1 - r3
-            r13.f4851b = r1
+            r13.f4861b = r1
             goto L20
         Ld:
-            int r5 = r13.f4853d
+            int r5 = r13.f4863d
             int r1 = r1 + r5
             if (r0 >= r1) goto L20
             int r5 = r5 - r3
-            r13.f4853d = r5
-            androidx.recyclerview.widget.n$a r0 = r8.f5181a
-            int r1 = r11.f4851b
-            java.lang.Object r5 = r13.f4852c
+            r13.f4863d = r5
+            androidx.recyclerview.widget.n$a r0 = r8.f5191a
+            int r1 = r11.f4861b
+            java.lang.Object r5 = r13.f4862c
             androidx.recyclerview.widget.AdapterHelper$b r0 = r0.a(r2, r1, r3, r5)
             goto L21
         L20:
             r0 = r4
         L21:
-            int r1 = r11.f4851b
-            int r5 = r13.f4851b
+            int r1 = r11.f4861b
+            int r5 = r13.f4861b
             if (r1 > r5) goto L2b
             int r5 = r5 + r3
-            r13.f4851b = r5
+            r13.f4861b = r5
             goto L41
         L2b:
-            int r6 = r13.f4853d
+            int r6 = r13.f4863d
             int r7 = r5 + r6
             if (r1 >= r7) goto L41
             int r5 = r5 + r6
             int r5 = r5 - r1
-            androidx.recyclerview.widget.n$a r4 = r8.f5181a
+            androidx.recyclerview.widget.n$a r4 = r8.f5191a
             int r1 = r1 + r3
-            java.lang.Object r3 = r13.f4852c
+            java.lang.Object r3 = r13.f4862c
             androidx.recyclerview.widget.AdapterHelper$b r4 = r4.a(r2, r1, r5, r3)
-            int r1 = r13.f4853d
+            int r1 = r13.f4863d
             int r1 = r1 - r5
-            r13.f4853d = r1
+            r13.f4863d = r1
         L41:
             r9.set(r12, r11)
-            int r11 = r13.f4853d
+            int r11 = r13.f4863d
             if (r11 <= 0) goto L4c
             r9.set(r10, r13)
             goto L54
         L4c:
             r9.remove(r10)
-            androidx.recyclerview.widget.n$a r11 = r8.f5181a
+            androidx.recyclerview.widget.n$a r11 = r8.f5191a
             r11.b(r13)
         L54:
             if (r0 == 0) goto L59

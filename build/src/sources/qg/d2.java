@@ -1,51 +1,51 @@
 package qg;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class d2 implements zi.g {
+public final class d2 implements bj.g {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f45579a = false;
+    private boolean f44247a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f45580b = false;
+    private boolean f44248b = false;
 
     /* renamed from: c  reason: collision with root package name */
-    private zi.c f45581c;
+    private bj.c f44249c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final y1 f45582d;
+    private final y1 f44250d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d2(y1 y1Var) {
-        this.f45582d = y1Var;
+        this.f44250d = y1Var;
     }
 
-    private final void b() {
-        if (!this.f45579a) {
-            this.f45579a = true;
+    private final void c() {
+        if (!this.f44247a) {
+            this.f44247a = true;
             return;
         }
-        throw new zi.b("Cannot encode a second value in the ValueEncoderContext");
+        throw new bj.b("Cannot encode a second value in the ValueEncoderContext");
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final void a(zi.c cVar, boolean z10) {
-        this.f45579a = false;
-        this.f45581c = cVar;
-        this.f45580b = z10;
-    }
-
-    @Override // zi.g
-    public final zi.g c(String str) {
-        b();
-        this.f45582d.f(this.f45581c, str, this.f45580b);
+    @Override // bj.g
+    public final bj.g a(String str) {
+        c();
+        this.f44250d.f(this.f44249c, str, this.f44248b);
         return this;
     }
 
-    @Override // zi.g
-    public final zi.g e(boolean z10) {
-        b();
-        this.f45582d.g(this.f45581c, z10 ? 1 : 0, this.f45580b);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final void b(bj.c cVar, boolean z10) {
+        this.f44247a = false;
+        this.f44249c = cVar;
+        this.f44248b = z10;
+    }
+
+    @Override // bj.g
+    public final bj.g d(boolean z10) {
+        c();
+        this.f44250d.g(this.f44249c, z10 ? 1 : 0, this.f44248b);
         return this;
     }
 }

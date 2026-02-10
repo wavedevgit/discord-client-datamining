@@ -5,7 +5,7 @@ import com.facebook.imagepipeline.common.ResizeOptions;
 public final class n1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final n1 f10885a = new n1();
+    public static final n1 f11462a = new n1();
 
     private n1() {
     }
@@ -20,7 +20,7 @@ public final class n1 {
                 return false;
             }
             return true;
-        } else if (a(i10) < resizeOptions.f10486a || a(i11) < resizeOptions.f10487b) {
+        } else if (a(i10) < resizeOptions.f11063a || a(i11) < resizeOptions.f11064b) {
             return false;
         } else {
             return true;
@@ -31,8 +31,8 @@ public final class n1 {
         if (kVar == null) {
             return false;
         }
-        int l12 = kVar.l1();
-        if (l12 != 90 && l12 != 270) {
+        int q12 = kVar.q1();
+        if (q12 != 90 && q12 != 270) {
             return b(kVar.getWidth(), kVar.getHeight(), resizeOptions);
         }
         return b(kVar.getHeight(), kVar.getWidth(), resizeOptions);

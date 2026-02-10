@@ -1,32 +1,41 @@
 package iq;
 
-import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class c {
 
-    /* renamed from: a  reason: collision with root package name */
-    private Function0 f29630a = new Function0() { // from class: iq.b
-        @Override // kotlin.jvm.functions.Function0
-        public final Object invoke() {
-            Unit d10;
-            d10 = c.d();
-            return d10;
-        }
-    };
+    /* renamed from: d  reason: collision with root package name */
+    public static final c f30395d = new c("ROUGH", 0);
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit d() {
-        return Unit.f31765a;
+    /* renamed from: e  reason: collision with root package name */
+    public static final c f30396e = new c("PRECISE", 1);
+
+    /* renamed from: i  reason: collision with root package name */
+    private static final /* synthetic */ c[] f30397i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f30398o;
+
+    static {
+        c[] a10 = a();
+        f30397i = a10;
+        f30398o = hs.a.a(a10);
     }
 
-    public final Function0 b() {
-        return this.f29630a;
+    private c(String str, int i10) {
     }
 
-    public final void c(Function0 function0) {
-        Intrinsics.checkNotNullParameter(function0, "<set-?>");
-        this.f29630a = function0;
+    private static final /* synthetic */ c[] a() {
+        return new c[]{f30395d, f30396e};
+    }
+
+    public static c valueOf(String str) {
+        return (c) Enum.valueOf(c.class, str);
+    }
+
+    public static c[] values() {
+        return (c[]) f30397i.clone();
     }
 }

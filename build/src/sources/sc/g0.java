@@ -21,7 +21,7 @@ import sc.m;
 public final class g0 implements b0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final b0.c f49644d = new b0.c() { // from class: sc.d0
+    public static final b0.c f47960d = new b0.c() { // from class: sc.d0
         @Override // sc.b0.c
         public final b0 a(UUID uuid) {
             return g0.n(uuid);
@@ -29,13 +29,13 @@ public final class g0 implements b0 {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private final UUID f49645a;
+    private final UUID f47961a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final MediaDrm f49646b;
+    private final MediaDrm f47962b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f49647c;
+    private int f47963c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static class a {
@@ -55,12 +55,12 @@ public final class g0 implements b0 {
 
     private g0(UUID uuid) {
         oe.a.e(uuid);
-        oe.a.b(!mc.d.f36851b.equals(uuid), "Use C.CLEARKEY_UUID instead");
-        this.f49645a = uuid;
+        oe.a.b(!mc.d.f36226b.equals(uuid), "Use C.CLEARKEY_UUID instead");
+        this.f47961a = uuid;
         MediaDrm mediaDrm = new MediaDrm(u(uuid));
-        this.f49646b = mediaDrm;
-        this.f49647c = 1;
-        if (mc.d.f36853d.equals(uuid) && z()) {
+        this.f47962b = mediaDrm;
+        this.f47963c = 1;
+        if (mc.d.f36228d.equals(uuid) && z()) {
             w(mediaDrm);
         }
     }
@@ -97,7 +97,7 @@ public final class g0 implements b0 {
         short w11 = h0Var.w();
         if (w10 == 1 && w11 == 1) {
             short w12 = h0Var.w();
-            Charset charset = ni.d.f38906e;
+            Charset charset = pi.d.f42739e;
             String F = h0Var.F(w12, charset);
             if (F.contains("<LA_URL>")) {
                 return bArr;
@@ -124,14 +124,14 @@ public final class g0 implements b0 {
         if ("<LA_URL>https://x</LA_URL>".equals(str)) {
             return "";
         }
-        if (w0.f40711a == 33 && "https://default.url".equals(str)) {
+        if (w0.f39037a == 33 && "https://default.url".equals(str)) {
             return "";
         }
         return str;
     }
 
     private static byte[] r(UUID uuid, byte[] bArr) {
-        if (mc.d.f36852c.equals(uuid)) {
+        if (mc.d.f36227c.equals(uuid)) {
             return sc.a.a(bArr);
         }
         return bArr;
@@ -146,7 +146,7 @@ public final class g0 implements b0 {
     */
     private static byte[] s(java.util.UUID r3, byte[] r4) {
         /*
-            java.util.UUID r0 = mc.d.f36854e
+            java.util.UUID r0 = mc.d.f36229e
             boolean r1 = r0.equals(r3)
             if (r1 == 0) goto L18
             byte[] r1 = cd.l.e(r4, r3)
@@ -158,20 +158,20 @@ public final class g0 implements b0 {
             byte[] r4 = p(r4)
             byte[] r4 = cd.l.a(r0, r4)
         L18:
-            int r1 = oe.w0.f40711a
+            int r1 = oe.w0.f39037a
             r2 = 23
             if (r1 >= r2) goto L26
-            java.util.UUID r1 = mc.d.f36853d
+            java.util.UUID r1 = mc.d.f36228d
             boolean r1 = r1.equals(r3)
             if (r1 != 0) goto L58
         L26:
             boolean r0 = r0.equals(r3)
             if (r0 == 0) goto L5f
             java.lang.String r0 = "Amazon"
-            java.lang.String r1 = oe.w0.f40713c
+            java.lang.String r1 = oe.w0.f39039c
             boolean r0 = r0.equals(r1)
             if (r0 == 0) goto L5f
-            java.lang.String r0 = oe.w0.f40714d
+            java.lang.String r0 = oe.w0.f39040d
             java.lang.String r1 = "AFTB"
             boolean r1 = r1.equals(r0)
             if (r1 != 0) goto L58
@@ -195,15 +195,15 @@ public final class g0 implements b0 {
     }
 
     private static String t(UUID uuid, String str) {
-        if (w0.f40711a < 26 && mc.d.f36852c.equals(uuid) && ("video/mp4".equals(str) || "audio/mp4".equals(str))) {
+        if (w0.f39037a < 26 && mc.d.f36227c.equals(uuid) && ("video/mp4".equals(str) || "audio/mp4".equals(str))) {
             return "cenc";
         }
         return str;
     }
 
     private static UUID u(UUID uuid) {
-        if (w0.f40711a < 27 && mc.d.f36852c.equals(uuid)) {
-            return mc.d.f36851b;
+        if (w0.f39037a < 27 && mc.d.f36227c.equals(uuid)) {
+            return mc.d.f36226b;
         }
         return uuid;
     }
@@ -213,23 +213,23 @@ public final class g0 implements b0 {
     }
 
     private static m.b y(UUID uuid, List list) {
-        if (!mc.d.f36853d.equals(uuid)) {
+        if (!mc.d.f36228d.equals(uuid)) {
             return (m.b) list.get(0);
         }
-        if (w0.f40711a >= 28 && list.size() > 1) {
+        if (w0.f39037a >= 28 && list.size() > 1) {
             m.b bVar = (m.b) list.get(0);
             int i10 = 0;
             for (int i11 = 0; i11 < list.size(); i11++) {
                 m.b bVar2 = (m.b) list.get(i11);
-                byte[] bArr = (byte[]) oe.a.e(bVar2.f49716p);
-                if (w0.c(bVar2.f49715o, bVar.f49715o) && w0.c(bVar2.f49714i, bVar.f49714i) && cd.l.c(bArr)) {
+                byte[] bArr = (byte[]) oe.a.e(bVar2.f48032p);
+                if (w0.c(bVar2.f48031o, bVar.f48031o) && w0.c(bVar2.f48030i, bVar.f48030i) && cd.l.c(bArr)) {
                     i10 += bArr.length;
                 }
             }
             byte[] bArr2 = new byte[i10];
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
-                byte[] bArr3 = (byte[]) oe.a.e(((m.b) list.get(i13)).f49716p);
+                byte[] bArr3 = (byte[]) oe.a.e(((m.b) list.get(i13)).f48032p);
                 int length = bArr3.length;
                 System.arraycopy(bArr3, 0, bArr2, i12, length);
                 i12 += length;
@@ -238,8 +238,8 @@ public final class g0 implements b0 {
         }
         for (int i14 = 0; i14 < list.size(); i14++) {
             m.b bVar3 = (m.b) list.get(i14);
-            int g10 = cd.l.g((byte[]) oe.a.e(bVar3.f49716p));
-            int i15 = w0.f40711a;
+            int g10 = cd.l.g((byte[]) oe.a.e(bVar3.f48032p));
+            int i15 = w0.f39037a;
             if ((i15 < 23 && g10 == 0) || (i15 >= 23 && g10 == 1)) {
                 return bVar3;
             }
@@ -248,34 +248,34 @@ public final class g0 implements b0 {
     }
 
     private static boolean z() {
-        return "ASUS_Z00AD".equals(w0.f40714d);
+        return "ASUS_Z00AD".equals(w0.f39040d);
     }
 
     @Override // sc.b0
     public Map a(byte[] bArr) {
-        return this.f49646b.queryKeyStatus(bArr);
+        return this.f47962b.queryKeyStatus(bArr);
     }
 
     @Override // sc.b0
     public b0.d b() {
-        MediaDrm.ProvisionRequest provisionRequest = this.f49646b.getProvisionRequest();
+        MediaDrm.ProvisionRequest provisionRequest = this.f47962b.getProvisionRequest();
         return new b0.d(provisionRequest.getData(), provisionRequest.getDefaultUrl());
     }
 
     @Override // sc.b0
     public byte[] c() {
-        return this.f49646b.openSession();
+        return this.f47962b.openSession();
     }
 
     @Override // sc.b0
     public void d(byte[] bArr, byte[] bArr2) {
-        this.f49646b.restoreKeys(bArr, bArr2);
+        this.f47962b.restoreKeys(bArr, bArr2);
     }
 
     @Override // sc.b0
     public void e(final b0.b bVar) {
         MediaDrm.OnEventListener onEventListener;
-        MediaDrm mediaDrm = this.f49646b;
+        MediaDrm mediaDrm = this.f47962b;
         if (bVar == null) {
             onEventListener = null;
         } else {
@@ -291,7 +291,7 @@ public final class g0 implements b0 {
 
     @Override // sc.b0
     public void f(byte[] bArr) {
-        this.f49646b.provideProvisionResponse(bArr);
+        this.f47962b.provideProvisionResponse(bArr);
     }
 
     @Override // sc.b0
@@ -301,9 +301,9 @@ public final class g0 implements b0 {
 
     @Override // sc.b0
     public void i(byte[] bArr, t1 t1Var) {
-        if (w0.f40711a >= 31) {
+        if (w0.f39037a >= 31) {
             try {
-                a.b(this.f49646b, bArr, t1Var);
+                a.b(this.f47962b, bArr, t1Var);
             } catch (UnsupportedOperationException unused) {
                 oe.y.i("FrameworkMediaDrm", "setLogSessionId failed.");
             }
@@ -312,11 +312,11 @@ public final class g0 implements b0 {
 
     @Override // sc.b0
     public boolean j(byte[] bArr, String str) {
-        if (w0.f40711a >= 31) {
-            return a.a(this.f49646b, str);
+        if (w0.f39037a >= 31) {
+            return a.a(this.f47962b, str);
         }
         try {
-            MediaCrypto mediaCrypto = new MediaCrypto(this.f49645a, bArr);
+            MediaCrypto mediaCrypto = new MediaCrypto(this.f47961a, bArr);
             try {
                 return mediaCrypto.requiresSecureDecoderComponent(str);
             } finally {
@@ -329,15 +329,15 @@ public final class g0 implements b0 {
 
     @Override // sc.b0
     public void k(byte[] bArr) {
-        this.f49646b.closeSession(bArr);
+        this.f47962b.closeSession(bArr);
     }
 
     @Override // sc.b0
     public byte[] l(byte[] bArr, byte[] bArr2) {
-        if (mc.d.f36852c.equals(this.f49645a)) {
+        if (mc.d.f36227c.equals(this.f47961a)) {
             bArr2 = sc.a.b(bArr2);
         }
-        return this.f49646b.provideKeyResponse(bArr, bArr2);
+        return this.f47962b.provideKeyResponse(bArr, bArr2);
     }
 
     @Override // sc.b0
@@ -347,21 +347,21 @@ public final class g0 implements b0 {
         String str;
         int i11;
         if (list != null) {
-            bVar = y(this.f49645a, list);
-            bArr2 = s(this.f49645a, (byte[]) oe.a.e(bVar.f49716p));
-            str = t(this.f49645a, bVar.f49715o);
+            bVar = y(this.f47961a, list);
+            bArr2 = s(this.f47961a, (byte[]) oe.a.e(bVar.f48032p));
+            str = t(this.f47961a, bVar.f48031o);
         } else {
             bVar = null;
             bArr2 = null;
             str = null;
         }
-        MediaDrm.KeyRequest keyRequest = this.f49646b.getKeyRequest(bArr, bArr2, str, i10, hashMap);
-        byte[] r10 = r(this.f49645a, keyRequest.getData());
+        MediaDrm.KeyRequest keyRequest = this.f47962b.getKeyRequest(bArr, bArr2, str, i10, hashMap);
+        byte[] r10 = r(this.f47961a, keyRequest.getData());
         String q10 = q(keyRequest.getDefaultUrl());
-        if (TextUtils.isEmpty(q10) && bVar != null && !TextUtils.isEmpty(bVar.f49714i)) {
-            q10 = bVar.f49714i;
+        if (TextUtils.isEmpty(q10) && bVar != null && !TextUtils.isEmpty(bVar.f48030i)) {
+            q10 = bVar.f48030i;
         }
-        if (w0.f40711a >= 23) {
+        if (w0.f39037a >= 23) {
             i11 = keyRequest.getRequestType();
         } else {
             i11 = Integer.MIN_VALUE;
@@ -371,10 +371,10 @@ public final class g0 implements b0 {
 
     @Override // sc.b0
     public synchronized void release() {
-        int i10 = this.f49647c - 1;
-        this.f49647c = i10;
+        int i10 = this.f47963c - 1;
+        this.f47963c = i10;
         if (i10 == 0) {
-            this.f49646b.release();
+            this.f47962b.release();
         }
     }
 
@@ -382,15 +382,15 @@ public final class g0 implements b0 {
     /* renamed from: v */
     public c0 h(byte[] bArr) {
         boolean z10;
-        if (w0.f40711a < 21 && mc.d.f36853d.equals(this.f49645a) && "L3".equals(x("securityLevel"))) {
+        if (w0.f39037a < 21 && mc.d.f36228d.equals(this.f47961a) && "L3".equals(x("securityLevel"))) {
             z10 = true;
         } else {
             z10 = false;
         }
-        return new c0(u(this.f49645a), bArr, z10);
+        return new c0(u(this.f47961a), bArr, z10);
     }
 
     public String x(String str) {
-        return this.f49646b.getPropertyString(str);
+        return this.f47962b.getPropertyString(str);
     }
 }

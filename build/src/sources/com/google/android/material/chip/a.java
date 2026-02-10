@@ -19,408 +19,183 @@ import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import bh.k;
+import bh.l;
+import ch.g;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
 import com.google.android.material.internal.j;
-import com.google.android.material.internal.l;
-import com.google.android.material.internal.o;
+import com.google.android.material.internal.m;
+import com.google.android.material.internal.p;
 import java.lang.ref.WeakReference;
 import java.util.Arrays;
-import oh.d;
-import ph.b;
-import r1.c;
-import rh.g;
+import qh.c;
+import qh.d;
+import th.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a extends g implements Drawable.Callback, j.b {
-    private static final int[] U0 = {16842910};
-    private static final ShapeDrawable V0 = new ShapeDrawable(new OvalShape());
-    private int A0;
-    private int B0;
-    private int C0;
-    private int D0;
-    private int E0;
-    private boolean F0;
-    private int G0;
-    private int H0;
-    private ColorFilter I0;
-    private PorterDuffColorFilter J0;
-    private ColorStateList K;
-    private ColorStateList K0;
-    private ColorStateList L;
-    private PorterDuff.Mode L0;
-    private float M;
-    private int[] M0;
-    private float N;
-    private boolean N0;
-    private ColorStateList O;
-    private ColorStateList O0;
-    private float P;
-    private WeakReference P0;
-    private ColorStateList Q;
-    private TextUtils.TruncateAt Q0;
-    private CharSequence R;
-    private boolean R0;
-    private boolean S;
-    private int S0;
-    private Drawable T;
-    private boolean T0;
+public class a extends h implements Drawable.Callback, j.b {
+
+    /* renamed from: e1  reason: collision with root package name */
+    private static final int[] f15574e1 = {16842910};
+
+    /* renamed from: f1  reason: collision with root package name */
+    private static final ShapeDrawable f15575f1 = new ShapeDrawable(new OvalShape());
+    private float A0;
+    private final Context B0;
+    private final Paint C0;
+    private final Paint D0;
+    private final Paint.FontMetrics E0;
+    private final RectF F0;
+    private final PointF G0;
+    private final Path H0;
+    private final j I0;
+    private int J0;
+    private int K0;
+    private int L0;
+    private int M0;
+    private int N0;
+    private int O0;
+    private boolean P0;
+    private int Q0;
+    private int R0;
+    private ColorFilter S0;
+    private PorterDuffColorFilter T0;
     private ColorStateList U;
-    private float V;
-    private boolean W;
-    private boolean X;
-    private Drawable Y;
-    private Drawable Z;
+    private ColorStateList U0;
+    private ColorStateList V;
+    private PorterDuff.Mode V0;
+    private float W;
+    private int[] W0;
+    private float X;
+    private boolean X0;
+    private ColorStateList Y;
+    private ColorStateList Y0;
+    private float Z;
+    private WeakReference Z0;
 
     /* renamed from: a0  reason: collision with root package name */
-    private ColorStateList f14962a0;
+    private ColorStateList f15576a0;
+
+    /* renamed from: a1  reason: collision with root package name */
+    private TextUtils.TruncateAt f15577a1;
 
     /* renamed from: b0  reason: collision with root package name */
-    private float f14963b0;
+    private CharSequence f15578b0;
+
+    /* renamed from: b1  reason: collision with root package name */
+    private boolean f15579b1;
 
     /* renamed from: c0  reason: collision with root package name */
-    private CharSequence f14964c0;
+    private boolean f15580c0;
+
+    /* renamed from: c1  reason: collision with root package name */
+    private int f15581c1;
 
     /* renamed from: d0  reason: collision with root package name */
-    private boolean f14965d0;
+    private Drawable f15582d0;
+
+    /* renamed from: d1  reason: collision with root package name */
+    private boolean f15583d1;
 
     /* renamed from: e0  reason: collision with root package name */
-    private boolean f14966e0;
+    private ColorStateList f15584e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    private Drawable f14967f0;
+    private float f15585f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private ColorStateList f14968g0;
+    private boolean f15586g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    private ch.g f14969h0;
+    private boolean f15587h0;
 
     /* renamed from: i0  reason: collision with root package name */
-    private ch.g f14970i0;
+    private Drawable f15588i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private float f14971j0;
+    private Drawable f15589j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private float f14972k0;
+    private ColorStateList f15590k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private float f14973l0;
+    private float f15591l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private float f14974m0;
+    private CharSequence f15592m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private float f14975n0;
+    private boolean f15593n0;
 
     /* renamed from: o0  reason: collision with root package name */
-    private float f14976o0;
+    private boolean f15594o0;
 
     /* renamed from: p0  reason: collision with root package name */
-    private float f14977p0;
+    private Drawable f15595p0;
 
     /* renamed from: q0  reason: collision with root package name */
-    private float f14978q0;
+    private ColorStateList f15596q0;
 
     /* renamed from: r0  reason: collision with root package name */
-    private final Context f14979r0;
+    private g f15597r0;
 
     /* renamed from: s0  reason: collision with root package name */
-    private final Paint f14980s0;
+    private g f15598s0;
 
     /* renamed from: t0  reason: collision with root package name */
-    private final Paint f14981t0;
+    private float f15599t0;
 
     /* renamed from: u0  reason: collision with root package name */
-    private final Paint.FontMetrics f14982u0;
+    private float f15600u0;
 
     /* renamed from: v0  reason: collision with root package name */
-    private final RectF f14983v0;
+    private float f15601v0;
 
     /* renamed from: w0  reason: collision with root package name */
-    private final PointF f14984w0;
+    private float f15602w0;
 
     /* renamed from: x0  reason: collision with root package name */
-    private final Path f14985x0;
+    private float f15603x0;
 
     /* renamed from: y0  reason: collision with root package name */
-    private final j f14986y0;
+    private float f15604y0;
 
     /* renamed from: z0  reason: collision with root package name */
-    private int f14987z0;
+    private float f15605z0;
 
     /* renamed from: com.google.android.material.chip.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface InterfaceC0200a {
+    public interface InterfaceC0179a {
         void a();
     }
 
     private a(Context context, AttributeSet attributeSet, int i10, int i11) {
         super(context, attributeSet, i10, i11);
-        this.N = -1.0f;
-        this.f14980s0 = new Paint(1);
-        this.f14982u0 = new Paint.FontMetrics();
-        this.f14983v0 = new RectF();
-        this.f14984w0 = new PointF();
-        this.f14985x0 = new Path();
-        this.H0 = SetSpanOperation.SPAN_MAX_PRIORITY;
-        this.L0 = PorterDuff.Mode.SRC_IN;
-        this.P0 = new WeakReference(null);
-        N(context);
-        this.f14979r0 = context;
+        this.X = -1.0f;
+        this.C0 = new Paint(1);
+        this.E0 = new Paint.FontMetrics();
+        this.F0 = new RectF();
+        this.G0 = new PointF();
+        this.H0 = new Path();
+        this.R0 = SetSpanOperation.SPAN_MAX_PRIORITY;
+        this.V0 = PorterDuff.Mode.SRC_IN;
+        this.Z0 = new WeakReference(null);
+        T(context);
+        this.B0 = context;
         j jVar = new j(this);
-        this.f14986y0 = jVar;
-        this.R = "";
-        jVar.f().density = context.getResources().getDisplayMetrics().density;
-        this.f14981t0 = null;
-        int[] iArr = U0;
+        this.I0 = jVar;
+        this.f15578b0 = "";
+        jVar.g().density = context.getResources().getDisplayMetrics().density;
+        this.D0 = null;
+        int[] iArr = f15574e1;
         setState(iArr);
-        l2(iArr);
-        this.R0 = true;
-        if (b.f44266a) {
-            V0.setTint(-1);
-        }
+        z2(iArr);
+        this.f15579b1 = true;
+        f15575f1.setTint(-1);
     }
 
-    private void A0(Canvas canvas, Rect rect) {
-        if (!this.T0) {
-            this.f14980s0.setColor(this.f14987z0);
-            this.f14980s0.setStyle(Paint.Style.FILL);
-            this.f14983v0.set(rect);
-            canvas.drawRoundRect(this.f14983v0, I0(), I0(), this.f14980s0);
-        }
-    }
-
-    private void B0(Canvas canvas, Rect rect) {
-        if (P2()) {
-            o0(rect, this.f14983v0);
-            RectF rectF = this.f14983v0;
-            float f10 = rectF.left;
-            float f11 = rectF.top;
-            canvas.translate(f10, f11);
-            this.Y.setBounds(0, 0, (int) this.f14983v0.width(), (int) this.f14983v0.height());
-            if (b.f44266a) {
-                this.Z.setBounds(this.Y.getBounds());
-                this.Z.jumpToCurrentState();
-                this.Z.draw(canvas);
-            } else {
-                this.Y.draw(canvas);
-            }
-            canvas.translate(-f10, -f11);
-        }
-    }
-
-    private void C0(Canvas canvas, Rect rect) {
-        this.f14980s0.setColor(this.D0);
-        this.f14980s0.setStyle(Paint.Style.FILL);
-        this.f14983v0.set(rect);
-        if (!this.T0) {
-            canvas.drawRoundRect(this.f14983v0, I0(), I0(), this.f14980s0);
-            return;
-        }
-        h(new RectF(rect), this.f14985x0);
-        super.p(canvas, this.f14980s0, this.f14985x0, u());
-    }
-
-    private void D0(Canvas canvas, Rect rect) {
-        Canvas canvas2;
-        Paint paint = this.f14981t0;
-        if (paint != null) {
-            paint.setColor(c.l(-16777216, 127));
-            canvas.drawRect(rect, this.f14981t0);
-            if (O2() || N2()) {
-                l0(rect, this.f14983v0);
-                canvas.drawRect(this.f14983v0, this.f14981t0);
-            }
-            if (this.R != null) {
-                canvas2 = canvas;
-                canvas2.drawLine(rect.left, rect.exactCenterY(), rect.right, rect.exactCenterY(), this.f14981t0);
-            } else {
-                canvas2 = canvas;
-            }
-            if (P2()) {
-                o0(rect, this.f14983v0);
-                canvas2.drawRect(this.f14983v0, this.f14981t0);
-            }
-            this.f14981t0.setColor(c.l(-65536, 127));
-            n0(rect, this.f14983v0);
-            canvas2.drawRect(this.f14983v0, this.f14981t0);
-            this.f14981t0.setColor(c.l(-16711936, 127));
-            p0(rect, this.f14983v0);
-            canvas2.drawRect(this.f14983v0, this.f14981t0);
-        }
-    }
-
-    private void E0(Canvas canvas, Rect rect) {
-        boolean z10;
-        if (this.R != null) {
-            Paint.Align t02 = t0(rect, this.f14984w0);
-            r0(rect, this.f14983v0);
-            if (this.f14986y0.e() != null) {
-                this.f14986y0.f().drawableState = getState();
-                this.f14986y0.l(this.f14979r0);
-            }
-            this.f14986y0.f().setTextAlign(t02);
-            int i10 = 0;
-            if (Math.round(this.f14986y0.g(h1().toString())) > Math.round(this.f14983v0.width())) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            if (z10) {
-                i10 = canvas.save();
-                canvas.clipRect(this.f14983v0);
-            }
-            CharSequence charSequence = this.R;
-            if (z10 && this.Q0 != null) {
-                charSequence = TextUtils.ellipsize(charSequence, this.f14986y0.f(), this.f14983v0.width(), this.Q0);
-            }
-            CharSequence charSequence2 = charSequence;
-            int length = charSequence2.length();
-            PointF pointF = this.f14984w0;
-            canvas.drawText(charSequence2, 0, length, pointF.x, pointF.y, this.f14986y0.f());
-            if (z10) {
-                canvas.restoreToCount(i10);
-            }
-        }
-    }
-
-    private boolean N2() {
-        if (this.f14966e0 && this.f14967f0 != null && this.F0) {
-            return true;
-        }
-        return false;
-    }
-
-    private boolean O2() {
-        if (this.S && this.T != null) {
-            return true;
-        }
-        return false;
-    }
-
-    private boolean P2() {
-        if (this.X && this.Y != null) {
-            return true;
-        }
-        return false;
-    }
-
-    private void Q2(Drawable drawable) {
-        if (drawable != null) {
-            drawable.setCallback(null);
-        }
-    }
-
-    private void R2() {
-        ColorStateList colorStateList;
-        if (this.N0) {
-            colorStateList = b.a(this.Q);
-        } else {
-            colorStateList = null;
-        }
-        this.O0 = colorStateList;
-    }
-
-    private void S2() {
-        this.Z = new RippleDrawable(b.a(f1()), this.Y, V0);
-    }
-
-    private float Z0() {
-        Drawable drawable;
-        if (this.F0) {
-            drawable = this.f14967f0;
-        } else {
-            drawable = this.T;
-        }
-        float f10 = this.V;
-        if (f10 <= 0.0f && drawable != null) {
-            f10 = (float) Math.ceil(o.d(this.f14979r0, 24));
-            if (drawable.getIntrinsicHeight() <= f10) {
-                return drawable.getIntrinsicHeight();
-            }
-        }
-        return f10;
-    }
-
-    private float a1() {
-        Drawable drawable;
-        if (this.F0) {
-            drawable = this.f14967f0;
-        } else {
-            drawable = this.T;
-        }
-        float f10 = this.V;
-        if (f10 <= 0.0f && drawable != null) {
-            return drawable.getIntrinsicWidth();
-        }
-        return f10;
-    }
-
-    private void b2(ColorStateList colorStateList) {
-        if (this.K != colorStateList) {
-            this.K = colorStateList;
-            onStateChange(getState());
-        }
-    }
-
-    private void k0(Drawable drawable) {
-        if (drawable != null) {
-            drawable.setCallback(this);
-            s1.a.m(drawable, s1.a.f(this));
-            drawable.setLevel(getLevel());
-            drawable.setVisible(isVisible(), false);
-            if (drawable == this.Y) {
-                if (drawable.isStateful()) {
-                    drawable.setState(W0());
-                }
-                s1.a.o(drawable, this.f14962a0);
-                return;
-            }
-            Drawable drawable2 = this.T;
-            if (drawable == drawable2 && this.W) {
-                s1.a.o(drawable2, this.U);
-            }
-            if (drawable.isStateful()) {
-                drawable.setState(getState());
-            }
-        }
-    }
-
-    private void l0(Rect rect, RectF rectF) {
-        rectF.setEmpty();
-        if (!O2() && !N2()) {
-            return;
-        }
-        float f10 = this.f14971j0 + this.f14972k0;
-        float a12 = a1();
-        if (s1.a.f(this) == 0) {
-            float f11 = rect.left + f10;
-            rectF.left = f11;
-            rectF.right = f11 + a12;
-        } else {
-            float f12 = rect.right - f10;
-            rectF.right = f12;
-            rectF.left = f12 - a12;
-        }
-        float Z0 = Z0();
-        float exactCenterY = rect.exactCenterY() - (Z0 / 2.0f);
-        rectF.top = exactCenterY;
-        rectF.bottom = exactCenterY + Z0;
-    }
-
-    private ColorFilter l1() {
-        ColorFilter colorFilter = this.I0;
-        if (colorFilter != null) {
-            return colorFilter;
-        }
-        return this.J0;
-    }
-
-    private void n0(Rect rect, RectF rectF) {
+    private void A0(Rect rect, RectF rectF) {
         rectF.set(rect);
-        if (P2()) {
-            float f10 = this.f14978q0 + this.f14977p0 + this.f14963b0 + this.f14976o0 + this.f14975n0;
+        if (d3()) {
+            float f10 = this.A0 + this.f15605z0 + this.f15591l0 + this.f15604y0 + this.f15603x0;
             if (s1.a.f(this) == 0) {
                 rectF.right = rect.right - f10;
             } else {
@@ -429,7 +204,7 @@ public class a extends g implements Drawable.Callback, j.b {
         }
     }
 
-    private static boolean n1(int[] iArr, int i10) {
+    private static boolean A1(int[] iArr, int i10) {
         if (iArr == null) {
             return false;
         }
@@ -441,31 +216,31 @@ public class a extends g implements Drawable.Callback, j.b {
         return false;
     }
 
-    private void o0(Rect rect, RectF rectF) {
+    private void B0(Rect rect, RectF rectF) {
         rectF.setEmpty();
-        if (P2()) {
-            float f10 = this.f14978q0 + this.f14977p0;
+        if (d3()) {
+            float f10 = this.A0 + this.f15605z0;
             if (s1.a.f(this) == 0) {
                 float f11 = rect.right - f10;
                 rectF.right = f11;
-                rectF.left = f11 - this.f14963b0;
+                rectF.left = f11 - this.f15591l0;
             } else {
                 float f12 = rect.left + f10;
                 rectF.left = f12;
-                rectF.right = f12 + this.f14963b0;
+                rectF.right = f12 + this.f15591l0;
             }
             float exactCenterY = rect.exactCenterY();
-            float f13 = this.f14963b0;
+            float f13 = this.f15591l0;
             float f14 = exactCenterY - (f13 / 2.0f);
             rectF.top = f14;
             rectF.bottom = f14 + f13;
         }
     }
 
-    private void p0(Rect rect, RectF rectF) {
+    private void C0(Rect rect, RectF rectF) {
         rectF.setEmpty();
-        if (P2()) {
-            float f10 = this.f14978q0 + this.f14977p0 + this.f14963b0 + this.f14976o0 + this.f14975n0;
+        if (d3()) {
+            float f10 = this.A0 + this.f15605z0 + this.f15591l0 + this.f15604y0 + this.f15603x0;
             if (s1.a.f(this) == 0) {
                 float f11 = rect.right;
                 rectF.right = f11;
@@ -480,144 +255,144 @@ public class a extends g implements Drawable.Callback, j.b {
         }
     }
 
-    private void r0(Rect rect, RectF rectF) {
+    private void E0(Rect rect, RectF rectF) {
         rectF.setEmpty();
-        if (this.R != null) {
-            float m02 = this.f14971j0 + m0() + this.f14974m0;
-            float q02 = this.f14978q0 + q0() + this.f14975n0;
+        if (this.f15578b0 != null) {
+            float z02 = this.f15599t0 + z0() + this.f15602w0;
+            float D0 = this.A0 + D0() + this.f15603x0;
             if (s1.a.f(this) == 0) {
-                rectF.left = rect.left + m02;
-                rectF.right = rect.right - q02;
+                rectF.left = rect.left + z02;
+                rectF.right = rect.right - D0;
             } else {
-                rectF.left = rect.left + q02;
-                rectF.right = rect.right - m02;
+                rectF.left = rect.left + D0;
+                rectF.right = rect.right - z02;
             }
             rectF.top = rect.top;
             rectF.bottom = rect.bottom;
         }
     }
 
-    private static boolean r1(ColorStateList colorStateList) {
+    private static boolean E1(ColorStateList colorStateList) {
         if (colorStateList != null && colorStateList.isStateful()) {
             return true;
         }
         return false;
     }
 
-    private float s0() {
-        this.f14986y0.f().getFontMetrics(this.f14982u0);
-        Paint.FontMetrics fontMetrics = this.f14982u0;
+    private float F0() {
+        this.I0.g().getFontMetrics(this.E0);
+        Paint.FontMetrics fontMetrics = this.E0;
         return (fontMetrics.descent + fontMetrics.ascent) / 2.0f;
     }
 
-    private static boolean s1(Drawable drawable) {
+    private static boolean F1(Drawable drawable) {
         if (drawable != null && drawable.isStateful()) {
             return true;
         }
         return false;
     }
 
-    private static boolean t1(d dVar) {
-        if (dVar != null && dVar.i() != null && dVar.i().isStateful()) {
+    private static boolean G1(d dVar) {
+        if (dVar != null && dVar.j() != null && dVar.j().isStateful()) {
             return true;
         }
         return false;
     }
 
-    private boolean u0() {
-        if (this.f14966e0 && this.f14967f0 != null && this.f14965d0) {
+    private boolean H0() {
+        if (this.f15594o0 && this.f15595p0 != null && this.f15593n0) {
             return true;
         }
         return false;
     }
 
-    private void u1(AttributeSet attributeSet, int i10, int i11) {
-        TypedArray i12 = l.i(this.f14979r0, attributeSet, k.f7031x0, i10, i11, new int[0]);
-        this.T0 = i12.hasValue(k.f6893i1);
-        b2(oh.c.a(this.f14979r0, i12, k.V0));
-        F1(oh.c.a(this.f14979r0, i12, k.I0));
-        T1(i12.getDimension(k.Q0, 0.0f));
-        if (i12.hasValue(k.J0)) {
-            H1(i12.getDimension(k.J0, 0.0f));
+    private void H1(AttributeSet attributeSet, int i10, int i11) {
+        TypedArray i12 = m.i(this.B0, attributeSet, l.N0, i10, i11, new int[0]);
+        this.f15583d1 = i12.hasValue(l.f7185y1);
+        p2(c.a(this.B0, i12, l.f7064l1));
+        T1(c.a(this.B0, i12, l.Y0));
+        h2(i12.getDimension(l.f7014g1, 0.0f));
+        if (i12.hasValue(l.Z0)) {
+            V1(i12.getDimension(l.Z0, 0.0f));
         }
-        X1(oh.c.a(this.f14979r0, i12, k.T0));
-        Z1(i12.getDimension(k.U0, 0.0f));
-        y2(oh.c.a(this.f14979r0, i12, k.f6883h1));
-        D2(i12.getText(k.C0));
-        d f10 = oh.c.f(this.f14979r0, i12, k.f7040y0);
-        f10.l(i12.getDimension(k.f7049z0, f10.j()));
-        E2(f10);
-        int i13 = i12.getInt(k.A0, 0);
+        l2(c.a(this.B0, i12, l.f7044j1));
+        n2(i12.getDimension(l.f7054k1, 0.0f));
+        M2(c.a(this.B0, i12, l.f7176x1));
+        R2(i12.getText(l.S0));
+        d h10 = c.h(this.B0, i12, l.O0);
+        h10.o(i12.getDimension(l.P0, h10.k()));
+        S2(h10);
+        int i13 = i12.getInt(l.Q0, 0);
         if (i13 != 1) {
             if (i13 != 2) {
                 if (i13 == 3) {
-                    q2(TextUtils.TruncateAt.END);
+                    E2(TextUtils.TruncateAt.END);
                 }
             } else {
-                q2(TextUtils.TruncateAt.MIDDLE);
+                E2(TextUtils.TruncateAt.MIDDLE);
             }
         } else {
-            q2(TextUtils.TruncateAt.START);
+            E2(TextUtils.TruncateAt.START);
         }
-        S1(i12.getBoolean(k.P0, false));
+        g2(i12.getBoolean(l.f7004f1, false));
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "chipIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "chipIconVisible") == null) {
-            S1(i12.getBoolean(k.M0, false));
+            g2(i12.getBoolean(l.f6974c1, false));
         }
-        L1(oh.c.d(this.f14979r0, i12, k.L0));
-        if (i12.hasValue(k.O0)) {
-            P1(oh.c.a(this.f14979r0, i12, k.O0));
+        Z1(c.e(this.B0, i12, l.f6964b1));
+        if (i12.hasValue(l.f6994e1)) {
+            d2(c.a(this.B0, i12, l.f6994e1));
         }
-        N1(i12.getDimension(k.N0, -1.0f));
-        o2(i12.getBoolean(k.f6833c1, false));
+        b2(i12.getDimension(l.f6984d1, -1.0f));
+        C2(i12.getBoolean(l.f7131s1, false));
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "closeIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "closeIconVisible") == null) {
-            o2(i12.getBoolean(k.X0, false));
+            C2(i12.getBoolean(l.f7084n1, false));
         }
-        c2(oh.c.d(this.f14979r0, i12, k.W0));
-        m2(oh.c.a(this.f14979r0, i12, k.f6823b1));
-        h2(i12.getDimension(k.Z0, 0.0f));
-        x1(i12.getBoolean(k.D0, false));
-        E1(i12.getBoolean(k.H0, false));
+        q2(c.e(this.B0, i12, l.f7074m1));
+        A2(c.a(this.B0, i12, l.f7122r1));
+        v2(i12.getDimension(l.f7104p1, 0.0f));
+        L1(i12.getBoolean(l.T0, false));
+        S1(i12.getBoolean(l.X0, false));
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "checkedIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "checkedIconVisible") == null) {
-            E1(i12.getBoolean(k.F0, false));
+            S1(i12.getBoolean(l.V0, false));
         }
-        z1(oh.c.d(this.f14979r0, i12, k.E0));
-        if (i12.hasValue(k.G0)) {
-            B1(oh.c.a(this.f14979r0, i12, k.G0));
+        N1(c.e(this.B0, i12, l.U0));
+        if (i12.hasValue(l.W0)) {
+            P1(c.a(this.B0, i12, l.W0));
         }
-        B2(ch.g.b(this.f14979r0, i12, k.f6903j1));
-        r2(ch.g.b(this.f14979r0, i12, k.f6853e1));
-        V1(i12.getDimension(k.S0, 0.0f));
-        v2(i12.getDimension(k.f6873g1, 0.0f));
-        t2(i12.getDimension(k.f6863f1, 0.0f));
-        J2(i12.getDimension(k.f6923l1, 0.0f));
-        G2(i12.getDimension(k.f6913k1, 0.0f));
-        j2(i12.getDimension(k.f6813a1, 0.0f));
-        e2(i12.getDimension(k.Y0, 0.0f));
-        J1(i12.getDimension(k.K0, 0.0f));
-        x2(i12.getDimensionPixelSize(k.B0, Integer.MAX_VALUE));
+        P2(g.b(this.B0, i12, l.f7194z1));
+        F2(g.b(this.B0, i12, l.f7149u1));
+        j2(i12.getDimension(l.f7034i1, 0.0f));
+        J2(i12.getDimension(l.f7167w1, 0.0f));
+        H2(i12.getDimension(l.f7158v1, 0.0f));
+        X2(i12.getDimension(l.B1, 0.0f));
+        U2(i12.getDimension(l.A1, 0.0f));
+        x2(i12.getDimension(l.f7113q1, 0.0f));
+        s2(i12.getDimension(l.f7094o1, 0.0f));
+        X1(i12.getDimension(l.f6954a1, 0.0f));
+        L2(i12.getDimensionPixelSize(l.R0, Integer.MAX_VALUE));
         i12.recycle();
     }
 
-    public static a v0(Context context, AttributeSet attributeSet, int i10, int i11) {
+    public static a I0(Context context, AttributeSet attributeSet, int i10, int i11) {
         a aVar = new a(context, attributeSet, i10, i11);
-        aVar.u1(attributeSet, i10, i11);
+        aVar.H1(attributeSet, i10, i11);
         return aVar;
     }
 
-    private void w0(Canvas canvas, Rect rect) {
-        if (N2()) {
-            l0(rect, this.f14983v0);
-            RectF rectF = this.f14983v0;
+    private void J0(Canvas canvas, Rect rect) {
+        if (b3()) {
+            y0(rect, this.F0);
+            RectF rectF = this.F0;
             float f10 = rectF.left;
             float f11 = rectF.top;
             canvas.translate(f10, f11);
-            this.f14967f0.setBounds(0, 0, (int) this.f14983v0.width(), (int) this.f14983v0.height());
-            this.f14967f0.draw(canvas);
+            this.f15595p0.setBounds(0, 0, (int) this.F0.width(), (int) this.F0.height());
+            this.f15595p0.draw(canvas);
             canvas.translate(-f10, -f11);
         }
     }
 
-    private boolean w1(int[] iArr, int[] iArr2) {
+    private boolean J1(int[] iArr, int[] iArr2) {
         int i10;
         int i11;
         boolean z10;
@@ -629,84 +404,84 @@ public class a extends g implements Drawable.Callback, j.b {
         boolean z13;
         int i15;
         boolean onStateChange = super.onStateChange(iArr);
-        ColorStateList colorStateList = this.K;
+        ColorStateList colorStateList = this.U;
         if (colorStateList != null) {
-            i10 = colorStateList.getColorForState(iArr, this.f14987z0);
+            i10 = colorStateList.getColorForState(iArr, this.J0);
         } else {
             i10 = 0;
         }
-        int l10 = l(i10);
+        int q10 = q(i10);
         boolean z14 = true;
-        if (this.f14987z0 != l10) {
-            this.f14987z0 = l10;
+        if (this.J0 != q10) {
+            this.J0 = q10;
             onStateChange = true;
         }
-        ColorStateList colorStateList2 = this.L;
+        ColorStateList colorStateList2 = this.V;
         if (colorStateList2 != null) {
-            i11 = colorStateList2.getColorForState(iArr, this.A0);
+            i11 = colorStateList2.getColorForState(iArr, this.K0);
         } else {
             i11 = 0;
         }
-        int l11 = l(i11);
-        if (this.A0 != l11) {
-            this.A0 = l11;
+        int q11 = q(i11);
+        if (this.K0 != q11) {
+            this.K0 = q11;
             onStateChange = true;
         }
-        int i16 = hh.a.i(l10, l11);
-        if (this.B0 != i16) {
+        int i16 = jh.a.i(q10, q11);
+        if (this.L0 != i16) {
             z10 = true;
         } else {
             z10 = false;
         }
-        if (x() == null) {
+        if (D() == null) {
             z11 = true;
         } else {
             z11 = false;
         }
         if (z10 | z11) {
-            this.B0 = i16;
-            X(ColorStateList.valueOf(i16));
+            this.L0 = i16;
+            f0(ColorStateList.valueOf(i16));
             onStateChange = true;
         }
-        ColorStateList colorStateList3 = this.O;
+        ColorStateList colorStateList3 = this.Y;
         if (colorStateList3 != null) {
-            i12 = colorStateList3.getColorForState(iArr, this.C0);
+            i12 = colorStateList3.getColorForState(iArr, this.M0);
         } else {
             i12 = 0;
         }
-        if (this.C0 != i12) {
-            this.C0 = i12;
+        if (this.M0 != i12) {
+            this.M0 = i12;
             onStateChange = true;
         }
-        if (this.O0 != null && b.b(iArr)) {
-            i13 = this.O0.getColorForState(iArr, this.D0);
+        if (this.Y0 != null && rh.a.e(iArr)) {
+            i13 = this.Y0.getColorForState(iArr, this.N0);
         } else {
             i13 = 0;
         }
-        if (this.D0 != i13) {
-            this.D0 = i13;
-            if (this.N0) {
+        if (this.N0 != i13) {
+            this.N0 = i13;
+            if (this.X0) {
                 onStateChange = true;
             }
         }
-        if (this.f14986y0.e() != null && this.f14986y0.e().i() != null) {
-            i14 = this.f14986y0.e().i().getColorForState(iArr, this.E0);
+        if (this.I0.e() != null && this.I0.e().j() != null) {
+            i14 = this.I0.e().j().getColorForState(iArr, this.O0);
         } else {
             i14 = 0;
         }
-        if (this.E0 != i14) {
-            this.E0 = i14;
+        if (this.O0 != i14) {
+            this.O0 = i14;
             onStateChange = true;
         }
-        if (n1(getState(), 16842912) && this.f14965d0) {
+        if (A1(getState(), 16842912) && this.f15593n0) {
             z12 = true;
         } else {
             z12 = false;
         }
-        if (this.F0 != z12 && this.f14967f0 != null) {
-            float m02 = m0();
-            this.F0 = z12;
-            if (m02 != m0()) {
+        if (this.P0 != z12 && this.f15595p0 != null) {
+            float z02 = z0();
+            this.P0 = z12;
+            if (z02 != z0()) {
                 onStateChange = true;
                 z13 = true;
             } else {
@@ -716,633 +491,893 @@ public class a extends g implements Drawable.Callback, j.b {
         } else {
             z13 = false;
         }
-        ColorStateList colorStateList4 = this.K0;
+        ColorStateList colorStateList4 = this.U0;
         if (colorStateList4 != null) {
-            i15 = colorStateList4.getColorForState(iArr, this.G0);
+            i15 = colorStateList4.getColorForState(iArr, this.Q0);
         } else {
             i15 = 0;
         }
-        if (this.G0 != i15) {
-            this.G0 = i15;
-            this.J0 = com.google.android.material.drawable.c.l(this, this.K0, this.L0);
+        if (this.Q0 != i15) {
+            this.Q0 = i15;
+            this.T0 = com.google.android.material.drawable.c.m(this, this.U0, this.V0);
         } else {
             z14 = onStateChange;
         }
-        if (s1(this.T)) {
-            z14 |= this.T.setState(iArr);
+        if (F1(this.f15582d0)) {
+            z14 |= this.f15582d0.setState(iArr);
         }
-        if (s1(this.f14967f0)) {
-            z14 |= this.f14967f0.setState(iArr);
+        if (F1(this.f15595p0)) {
+            z14 |= this.f15595p0.setState(iArr);
         }
-        if (s1(this.Y)) {
+        if (F1(this.f15588i0)) {
             int[] iArr3 = new int[iArr.length + iArr2.length];
             System.arraycopy(iArr, 0, iArr3, 0, iArr.length);
             System.arraycopy(iArr2, 0, iArr3, iArr.length, iArr2.length);
-            z14 |= this.Y.setState(iArr3);
+            z14 |= this.f15588i0.setState(iArr3);
         }
-        if (b.f44266a && s1(this.Z)) {
-            z14 |= this.Z.setState(iArr2);
+        if (F1(this.f15589j0)) {
+            z14 |= this.f15589j0.setState(iArr2);
         }
         if (z14) {
             invalidateSelf();
         }
         if (z13) {
-            v1();
+            I1();
         }
         return z14;
     }
 
-    private void x0(Canvas canvas, Rect rect) {
-        if (!this.T0) {
-            this.f14980s0.setColor(this.A0);
-            this.f14980s0.setStyle(Paint.Style.FILL);
-            this.f14980s0.setColorFilter(l1());
-            this.f14983v0.set(rect);
-            canvas.drawRoundRect(this.f14983v0, I0(), I0(), this.f14980s0);
+    private void K0(Canvas canvas, Rect rect) {
+        if (!this.f15583d1) {
+            this.C0.setColor(this.K0);
+            this.C0.setStyle(Paint.Style.FILL);
+            this.C0.setColorFilter(y1());
+            this.F0.set(rect);
+            canvas.drawRoundRect(this.F0, V0(), V0(), this.C0);
         }
     }
 
-    private void y0(Canvas canvas, Rect rect) {
-        if (O2()) {
-            l0(rect, this.f14983v0);
-            RectF rectF = this.f14983v0;
+    private void L0(Canvas canvas, Rect rect) {
+        if (c3()) {
+            y0(rect, this.F0);
+            RectF rectF = this.F0;
             float f10 = rectF.left;
             float f11 = rectF.top;
             canvas.translate(f10, f11);
-            this.T.setBounds(0, 0, (int) this.f14983v0.width(), (int) this.f14983v0.height());
-            this.T.draw(canvas);
+            this.f15582d0.setBounds(0, 0, (int) this.F0.width(), (int) this.F0.height());
+            this.f15582d0.draw(canvas);
             canvas.translate(-f10, -f11);
         }
     }
 
-    private void z0(Canvas canvas, Rect rect) {
-        if (this.P > 0.0f && !this.T0) {
-            this.f14980s0.setColor(this.C0);
-            this.f14980s0.setStyle(Paint.Style.STROKE);
-            if (!this.T0) {
-                this.f14980s0.setColorFilter(l1());
+    private void M0(Canvas canvas, Rect rect) {
+        if (this.Z > 0.0f && !this.f15583d1) {
+            this.C0.setColor(this.M0);
+            this.C0.setStyle(Paint.Style.STROKE);
+            if (!this.f15583d1) {
+                this.C0.setColorFilter(y1());
             }
-            RectF rectF = this.f14983v0;
-            float f10 = this.P;
+            RectF rectF = this.F0;
+            float f10 = this.Z;
             rectF.set(rect.left + (f10 / 2.0f), rect.top + (f10 / 2.0f), rect.right - (f10 / 2.0f), rect.bottom - (f10 / 2.0f));
-            float f11 = this.N - (this.P / 2.0f);
-            canvas.drawRoundRect(this.f14983v0, f11, f11, this.f14980s0);
+            float f11 = this.X - (this.Z / 2.0f);
+            canvas.drawRoundRect(this.F0, f11, f11, this.C0);
         }
     }
 
-    public void A1(int i10) {
-        z1(g.a.b(this.f14979r0, i10));
+    private void N0(Canvas canvas, Rect rect) {
+        if (!this.f15583d1) {
+            this.C0.setColor(this.J0);
+            this.C0.setStyle(Paint.Style.FILL);
+            this.F0.set(rect);
+            canvas.drawRoundRect(this.F0, V0(), V0(), this.C0);
+        }
+    }
+
+    private void O0(Canvas canvas, Rect rect) {
+        if (d3()) {
+            B0(rect, this.F0);
+            RectF rectF = this.F0;
+            float f10 = rectF.left;
+            float f11 = rectF.top;
+            canvas.translate(f10, f11);
+            this.f15588i0.setBounds(0, 0, (int) this.F0.width(), (int) this.F0.height());
+            this.f15589j0.setBounds(this.f15588i0.getBounds());
+            this.f15589j0.jumpToCurrentState();
+            this.f15589j0.draw(canvas);
+            canvas.translate(-f10, -f11);
+        }
+    }
+
+    private void P0(Canvas canvas, Rect rect) {
+        this.C0.setColor(this.N0);
+        this.C0.setStyle(Paint.Style.FILL);
+        this.F0.set(rect);
+        if (!this.f15583d1) {
+            canvas.drawRoundRect(this.F0, V0(), V0(), this.C0);
+            return;
+        }
+        l(new RectF(rect), this.H0);
+        super.u(canvas, this.C0, this.H0, z());
+    }
+
+    private void Q0(Canvas canvas, Rect rect) {
+        Canvas canvas2;
+        Paint paint = this.D0;
+        if (paint != null) {
+            paint.setColor(r1.c.l(-16777216, 127));
+            canvas.drawRect(rect, this.D0);
+            if (c3() || b3()) {
+                y0(rect, this.F0);
+                canvas.drawRect(this.F0, this.D0);
+            }
+            if (this.f15578b0 != null) {
+                canvas2 = canvas;
+                canvas2.drawLine(rect.left, rect.exactCenterY(), rect.right, rect.exactCenterY(), this.D0);
+            } else {
+                canvas2 = canvas;
+            }
+            if (d3()) {
+                B0(rect, this.F0);
+                canvas2.drawRect(this.F0, this.D0);
+            }
+            this.D0.setColor(r1.c.l(-65536, 127));
+            A0(rect, this.F0);
+            canvas2.drawRect(this.F0, this.D0);
+            this.D0.setColor(r1.c.l(-16711936, 127));
+            C0(rect, this.F0);
+            canvas2.drawRect(this.F0, this.D0);
+        }
+    }
+
+    private void R0(Canvas canvas, Rect rect) {
+        boolean z10;
+        if (this.f15578b0 != null) {
+            Paint.Align G0 = G0(rect, this.G0);
+            E0(rect, this.F0);
+            if (this.I0.e() != null) {
+                this.I0.g().drawableState = getState();
+                this.I0.n(this.B0);
+            }
+            this.I0.g().setTextAlign(G0);
+            int i10 = 0;
+            if (Math.round(this.I0.h(u1().toString())) > Math.round(this.F0.width())) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            if (z10) {
+                i10 = canvas.save();
+                canvas.clipRect(this.F0);
+            }
+            CharSequence charSequence = this.f15578b0;
+            if (z10 && this.f15577a1 != null) {
+                charSequence = TextUtils.ellipsize(charSequence, this.I0.g(), this.F0.width(), this.f15577a1);
+            }
+            CharSequence charSequence2 = charSequence;
+            int length = charSequence2.length();
+            PointF pointF = this.G0;
+            canvas.drawText(charSequence2, 0, length, pointF.x, pointF.y, this.I0.g());
+            if (z10) {
+                canvas.restoreToCount(i10);
+            }
+        }
+    }
+
+    private boolean b3() {
+        if (this.f15594o0 && this.f15595p0 != null && this.P0) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean c3() {
+        if (this.f15580c0 && this.f15582d0 != null) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean d3() {
+        if (this.f15587h0 && this.f15588i0 != null) {
+            return true;
+        }
+        return false;
+    }
+
+    private void e3(Drawable drawable) {
+        if (drawable != null) {
+            drawable.setCallback(null);
+        }
+    }
+
+    private void f3() {
+        ColorStateList colorStateList;
+        if (this.X0) {
+            colorStateList = rh.a.d(this.f15576a0);
+        } else {
+            colorStateList = null;
+        }
+        this.Y0 = colorStateList;
+    }
+
+    private void g3() {
+        this.f15589j0 = new RippleDrawable(rh.a.d(s1()), this.f15588i0, f15575f1);
+    }
+
+    private float m1() {
+        Drawable drawable;
+        if (this.P0) {
+            drawable = this.f15595p0;
+        } else {
+            drawable = this.f15582d0;
+        }
+        float f10 = this.f15585f0;
+        if (f10 <= 0.0f && drawable != null) {
+            f10 = (float) Math.ceil(p.d(this.B0, 24));
+            if (drawable.getIntrinsicHeight() <= f10) {
+                return drawable.getIntrinsicHeight();
+            }
+        }
+        return f10;
+    }
+
+    private float n1() {
+        Drawable drawable;
+        if (this.P0) {
+            drawable = this.f15595p0;
+        } else {
+            drawable = this.f15582d0;
+        }
+        float f10 = this.f15585f0;
+        if (f10 <= 0.0f && drawable != null) {
+            return drawable.getIntrinsicWidth();
+        }
+        return f10;
+    }
+
+    private void p2(ColorStateList colorStateList) {
+        if (this.U != colorStateList) {
+            this.U = colorStateList;
+            onStateChange(getState());
+        }
+    }
+
+    private void x0(Drawable drawable) {
+        if (drawable != null) {
+            drawable.setCallback(this);
+            s1.a.m(drawable, s1.a.f(this));
+            drawable.setLevel(getLevel());
+            drawable.setVisible(isVisible(), false);
+            if (drawable == this.f15588i0) {
+                if (drawable.isStateful()) {
+                    drawable.setState(j1());
+                }
+                drawable.setTintList(this.f15590k0);
+                return;
+            }
+            Drawable drawable2 = this.f15582d0;
+            if (drawable == drawable2 && this.f15586g0) {
+                drawable2.setTintList(this.f15584e0);
+            }
+            if (drawable.isStateful()) {
+                drawable.setState(getState());
+            }
+        }
+    }
+
+    private void y0(Rect rect, RectF rectF) {
+        rectF.setEmpty();
+        if (!c3() && !b3()) {
+            return;
+        }
+        float f10 = this.f15599t0 + this.f15600u0;
+        float n12 = n1();
+        if (s1.a.f(this) == 0) {
+            float f11 = rect.left + f10;
+            rectF.left = f11;
+            rectF.right = f11 + n12;
+        } else {
+            float f12 = rect.right - f10;
+            rectF.right = f12;
+            rectF.left = f12 - n12;
+        }
+        float m12 = m1();
+        float exactCenterY = rect.exactCenterY() - (m12 / 2.0f);
+        rectF.top = exactCenterY;
+        rectF.bottom = exactCenterY + m12;
+    }
+
+    private ColorFilter y1() {
+        ColorFilter colorFilter = this.S0;
+        if (colorFilter != null) {
+            return colorFilter;
+        }
+        return this.T0;
+    }
+
+    public void A2(ColorStateList colorStateList) {
+        if (this.f15590k0 != colorStateList) {
+            this.f15590k0 = colorStateList;
+            if (d3()) {
+                this.f15588i0.setTintList(colorStateList);
+            }
+            onStateChange(getState());
+        }
+    }
+
+    public boolean B1() {
+        return this.f15593n0;
+    }
+
+    public void B2(int i10) {
+        A2(g.a.a(this.B0, i10));
+    }
+
+    public boolean C1() {
+        return F1(this.f15588i0);
+    }
+
+    public void C2(boolean z10) {
+        if (this.f15587h0 != z10) {
+            boolean d32 = d3();
+            this.f15587h0 = z10;
+            boolean d33 = d3();
+            if (d32 != d33) {
+                if (d33) {
+                    x0(this.f15588i0);
+                } else {
+                    e3(this.f15588i0);
+                }
+                invalidateSelf();
+                I1();
+            }
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void A2(boolean z10) {
-        this.R0 = z10;
+    public float D0() {
+        if (d3()) {
+            return this.f15604y0 + this.f15591l0 + this.f15605z0;
+        }
+        return 0.0f;
     }
 
-    public void B1(ColorStateList colorStateList) {
-        if (this.f14968g0 != colorStateList) {
-            this.f14968g0 = colorStateList;
-            if (u0()) {
-                s1.a.o(this.f14967f0, colorStateList);
+    public boolean D1() {
+        return this.f15587h0;
+    }
+
+    public void D2(InterfaceC0179a interfaceC0179a) {
+        this.Z0 = new WeakReference(interfaceC0179a);
+    }
+
+    public void E2(TextUtils.TruncateAt truncateAt) {
+        this.f15577a1 = truncateAt;
+    }
+
+    public void F2(g gVar) {
+        this.f15598s0 = gVar;
+    }
+
+    Paint.Align G0(Rect rect, PointF pointF) {
+        pointF.set(0.0f, 0.0f);
+        Paint.Align align = Paint.Align.LEFT;
+        if (this.f15578b0 != null) {
+            float z02 = this.f15599t0 + z0() + this.f15602w0;
+            if (s1.a.f(this) == 0) {
+                pointF.x = rect.left + z02;
+            } else {
+                pointF.x = rect.right - z02;
+                align = Paint.Align.RIGHT;
+            }
+            pointF.y = rect.centerY() - F0();
+        }
+        return align;
+    }
+
+    public void G2(int i10) {
+        F2(g.c(this.B0, i10));
+    }
+
+    public void H2(float f10) {
+        if (this.f15601v0 != f10) {
+            float z02 = z0();
+            this.f15601v0 = f10;
+            float z03 = z0();
+            invalidateSelf();
+            if (z02 != z03) {
+                I1();
+            }
+        }
+    }
+
+    protected void I1() {
+        InterfaceC0179a interfaceC0179a = (InterfaceC0179a) this.Z0.get();
+        if (interfaceC0179a != null) {
+            interfaceC0179a.a();
+        }
+    }
+
+    public void I2(int i10) {
+        H2(this.B0.getResources().getDimension(i10));
+    }
+
+    public void J2(float f10) {
+        if (this.f15600u0 != f10) {
+            float z02 = z0();
+            this.f15600u0 = f10;
+            float z03 = z0();
+            invalidateSelf();
+            if (z02 != z03) {
+                I1();
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public boolean K1(boolean z10) {
+        if (this.f15588i0 == null) {
+            return false;
+        }
+        return z2(z10 ? new int[]{16842919, 16842910} : f15574e1);
+    }
+
+    public void K2(int i10) {
+        J2(this.B0.getResources().getDimension(i10));
+    }
+
+    public void L1(boolean z10) {
+        if (this.f15593n0 != z10) {
+            this.f15593n0 = z10;
+            float z02 = z0();
+            if (!z10 && this.P0) {
+                this.P0 = false;
+            }
+            float z03 = z0();
+            invalidateSelf();
+            if (z02 != z03) {
+                I1();
+            }
+        }
+    }
+
+    public void L2(int i10) {
+        this.f15581c1 = i10;
+    }
+
+    public void M1(int i10) {
+        L1(this.B0.getResources().getBoolean(i10));
+    }
+
+    public void M2(ColorStateList colorStateList) {
+        if (this.f15576a0 != colorStateList) {
+            this.f15576a0 = colorStateList;
+            f3();
+            onStateChange(getState());
+        }
+    }
+
+    public void N1(Drawable drawable) {
+        if (this.f15595p0 != drawable) {
+            float z02 = z0();
+            this.f15595p0 = drawable;
+            float z03 = z0();
+            e3(this.f15595p0);
+            x0(this.f15595p0);
+            invalidateSelf();
+            if (z02 != z03) {
+                I1();
+            }
+        }
+    }
+
+    public void N2(int i10) {
+        M2(g.a.a(this.B0, i10));
+    }
+
+    public void O1(int i10) {
+        N1(g.a.b(this.B0, i10));
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void O2(boolean z10) {
+        this.f15579b1 = z10;
+    }
+
+    public void P1(ColorStateList colorStateList) {
+        if (this.f15596q0 != colorStateList) {
+            this.f15596q0 = colorStateList;
+            if (H0()) {
+                this.f15595p0.setTintList(colorStateList);
             }
             onStateChange(getState());
         }
     }
 
-    public void B2(ch.g gVar) {
-        this.f14969h0 = gVar;
+    public void P2(g gVar) {
+        this.f15597r0 = gVar;
     }
 
-    public void C1(int i10) {
-        B1(g.a.a(this.f14979r0, i10));
+    public void Q1(int i10) {
+        P1(g.a.a(this.B0, i10));
     }
 
-    public void C2(int i10) {
-        B2(ch.g.c(this.f14979r0, i10));
+    public void Q2(int i10) {
+        P2(g.c(this.B0, i10));
     }
 
-    public void D1(int i10) {
-        E1(this.f14979r0.getResources().getBoolean(i10));
+    public void R1(int i10) {
+        S1(this.B0.getResources().getBoolean(i10));
     }
 
-    public void D2(CharSequence charSequence) {
+    public void R2(CharSequence charSequence) {
         if (charSequence == null) {
             charSequence = "";
         }
-        if (!TextUtils.equals(this.R, charSequence)) {
-            this.R = charSequence;
-            this.f14986y0.k(true);
+        if (!TextUtils.equals(this.f15578b0, charSequence)) {
+            this.f15578b0 = charSequence;
+            this.I0.m(true);
             invalidateSelf();
-            v1();
+            I1();
         }
     }
 
-    public void E1(boolean z10) {
-        if (this.f14966e0 != z10) {
-            boolean N2 = N2();
-            this.f14966e0 = z10;
-            boolean N22 = N2();
-            if (N2 != N22) {
-                if (N22) {
-                    k0(this.f14967f0);
+    public Drawable S0() {
+        return this.f15595p0;
+    }
+
+    public void S1(boolean z10) {
+        if (this.f15594o0 != z10) {
+            boolean b32 = b3();
+            this.f15594o0 = z10;
+            boolean b33 = b3();
+            if (b32 != b33) {
+                if (b33) {
+                    x0(this.f15595p0);
                 } else {
-                    Q2(this.f14967f0);
+                    e3(this.f15595p0);
                 }
                 invalidateSelf();
-                v1();
+                I1();
             }
         }
     }
 
-    public void E2(d dVar) {
-        this.f14986y0.j(dVar, this.f14979r0);
+    public void S2(d dVar) {
+        this.I0.k(dVar, this.B0);
     }
 
-    public Drawable F0() {
-        return this.f14967f0;
+    public ColorStateList T0() {
+        return this.f15596q0;
     }
 
-    public void F1(ColorStateList colorStateList) {
-        if (this.L != colorStateList) {
-            this.L = colorStateList;
+    public void T1(ColorStateList colorStateList) {
+        if (this.V != colorStateList) {
+            this.V = colorStateList;
             onStateChange(getState());
         }
     }
 
-    public void F2(int i10) {
-        E2(new d(this.f14979r0, i10));
+    public void T2(int i10) {
+        S2(new d(this.B0, i10));
     }
 
-    public ColorStateList G0() {
-        return this.f14968g0;
+    public ColorStateList U0() {
+        return this.V;
     }
 
-    public void G1(int i10) {
-        F1(g.a.a(this.f14979r0, i10));
+    public void U1(int i10) {
+        T1(g.a.a(this.B0, i10));
     }
 
-    public void G2(float f10) {
-        if (this.f14975n0 != f10) {
-            this.f14975n0 = f10;
+    public void U2(float f10) {
+        if (this.f15603x0 != f10) {
+            this.f15603x0 = f10;
             invalidateSelf();
-            v1();
+            I1();
         }
     }
 
-    public ColorStateList H0() {
-        return this.L;
+    public float V0() {
+        if (this.f15583d1) {
+            return M();
+        }
+        return this.X;
     }
 
-    public void H1(float f10) {
-        if (this.N != f10) {
-            this.N = f10;
-            setShapeAppearanceModel(D().w(f10));
+    public void V1(float f10) {
+        if (this.X != f10) {
+            this.X = f10;
+            setShapeAppearanceModel(J().x(f10));
         }
     }
 
-    public void H2(int i10) {
-        G2(this.f14979r0.getResources().getDimension(i10));
+    public void V2(int i10) {
+        U2(this.B0.getResources().getDimension(i10));
     }
 
-    public float I0() {
-        if (this.T0) {
-            return G();
-        }
-        return this.N;
+    public float W0() {
+        return this.A0;
     }
 
-    public void I1(int i10) {
-        H1(this.f14979r0.getResources().getDimension(i10));
+    public void W1(int i10) {
+        V1(this.B0.getResources().getDimension(i10));
     }
 
-    public void I2(float f10) {
-        d i12 = i1();
-        if (i12 != null) {
-            i12.l(f10);
-            this.f14986y0.f().setTextSize(f10);
+    public void W2(float f10) {
+        d v12 = v1();
+        if (v12 != null) {
+            v12.o(f10);
+            this.I0.g().setTextSize(f10);
             a();
         }
     }
 
-    public float J0() {
-        return this.f14978q0;
-    }
-
-    public void J1(float f10) {
-        if (this.f14978q0 != f10) {
-            this.f14978q0 = f10;
-            invalidateSelf();
-            v1();
-        }
-    }
-
-    public void J2(float f10) {
-        if (this.f14974m0 != f10) {
-            this.f14974m0 = f10;
-            invalidateSelf();
-            v1();
-        }
-    }
-
-    public Drawable K0() {
-        Drawable drawable = this.T;
+    public Drawable X0() {
+        Drawable drawable = this.f15582d0;
         if (drawable != null) {
             return s1.a.q(drawable);
         }
         return null;
     }
 
-    public void K1(int i10) {
-        J1(this.f14979r0.getResources().getDimension(i10));
+    public void X1(float f10) {
+        if (this.A0 != f10) {
+            this.A0 = f10;
+            invalidateSelf();
+            I1();
+        }
     }
 
-    public void K2(int i10) {
-        J2(this.f14979r0.getResources().getDimension(i10));
+    public void X2(float f10) {
+        if (this.f15602w0 != f10) {
+            this.f15602w0 = f10;
+            invalidateSelf();
+            I1();
+        }
     }
 
-    public float L0() {
-        return this.V;
+    public float Y0() {
+        return this.f15585f0;
     }
 
-    public void L1(Drawable drawable) {
+    public void Y1(int i10) {
+        X1(this.B0.getResources().getDimension(i10));
+    }
+
+    public void Y2(int i10) {
+        X2(this.B0.getResources().getDimension(i10));
+    }
+
+    public ColorStateList Z0() {
+        return this.f15584e0;
+    }
+
+    public void Z1(Drawable drawable) {
         Drawable drawable2;
-        Drawable K0 = K0();
-        if (K0 != drawable) {
-            float m02 = m0();
+        Drawable X0 = X0();
+        if (X0 != drawable) {
+            float z02 = z0();
             if (drawable != null) {
                 drawable2 = s1.a.r(drawable).mutate();
             } else {
                 drawable2 = null;
             }
-            this.T = drawable2;
-            float m03 = m0();
-            Q2(K0);
-            if (O2()) {
-                k0(this.T);
+            this.f15582d0 = drawable2;
+            float z03 = z0();
+            e3(X0);
+            if (c3()) {
+                x0(this.f15582d0);
             }
             invalidateSelf();
-            if (m02 != m03) {
-                v1();
+            if (z02 != z03) {
+                I1();
             }
         }
     }
 
-    public void L2(boolean z10) {
-        if (this.N0 != z10) {
-            this.N0 = z10;
-            R2();
+    public void Z2(boolean z10) {
+        if (this.X0 != z10) {
+            this.X0 = z10;
+            f3();
             onStateChange(getState());
-        }
-    }
-
-    public ColorStateList M0() {
-        return this.U;
-    }
-
-    public void M1(int i10) {
-        L1(g.a.b(this.f14979r0, i10));
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public boolean M2() {
-        return this.R0;
-    }
-
-    public float N0() {
-        return this.M;
-    }
-
-    public void N1(float f10) {
-        if (this.V != f10) {
-            float m02 = m0();
-            this.V = f10;
-            float m03 = m0();
-            invalidateSelf();
-            if (m02 != m03) {
-                v1();
-            }
-        }
-    }
-
-    public float O0() {
-        return this.f14971j0;
-    }
-
-    public void O1(int i10) {
-        N1(this.f14979r0.getResources().getDimension(i10));
-    }
-
-    public ColorStateList P0() {
-        return this.O;
-    }
-
-    public void P1(ColorStateList colorStateList) {
-        this.W = true;
-        if (this.U != colorStateList) {
-            this.U = colorStateList;
-            if (O2()) {
-                s1.a.o(this.T, colorStateList);
-            }
-            onStateChange(getState());
-        }
-    }
-
-    public float Q0() {
-        return this.P;
-    }
-
-    public void Q1(int i10) {
-        P1(g.a.a(this.f14979r0, i10));
-    }
-
-    public Drawable R0() {
-        Drawable drawable = this.Y;
-        if (drawable != null) {
-            return s1.a.q(drawable);
-        }
-        return null;
-    }
-
-    public void R1(int i10) {
-        S1(this.f14979r0.getResources().getBoolean(i10));
-    }
-
-    public CharSequence S0() {
-        return this.f14964c0;
-    }
-
-    public void S1(boolean z10) {
-        if (this.S != z10) {
-            boolean O2 = O2();
-            this.S = z10;
-            boolean O22 = O2();
-            if (O2 != O22) {
-                if (O22) {
-                    k0(this.T);
-                } else {
-                    Q2(this.T);
-                }
-                invalidateSelf();
-                v1();
-            }
-        }
-    }
-
-    public float T0() {
-        return this.f14977p0;
-    }
-
-    public void T1(float f10) {
-        if (this.M != f10) {
-            this.M = f10;
-            invalidateSelf();
-            v1();
-        }
-    }
-
-    public float U0() {
-        return this.f14963b0;
-    }
-
-    public void U1(int i10) {
-        T1(this.f14979r0.getResources().getDimension(i10));
-    }
-
-    public float V0() {
-        return this.f14976o0;
-    }
-
-    public void V1(float f10) {
-        if (this.f14971j0 != f10) {
-            this.f14971j0 = f10;
-            invalidateSelf();
-            v1();
-        }
-    }
-
-    public int[] W0() {
-        return this.M0;
-    }
-
-    public void W1(int i10) {
-        V1(this.f14979r0.getResources().getDimension(i10));
-    }
-
-    public ColorStateList X0() {
-        return this.f14962a0;
-    }
-
-    public void X1(ColorStateList colorStateList) {
-        if (this.O != colorStateList) {
-            this.O = colorStateList;
-            if (this.T0) {
-                f0(colorStateList);
-            }
-            onStateChange(getState());
-        }
-    }
-
-    public void Y0(RectF rectF) {
-        p0(getBounds(), rectF);
-    }
-
-    public void Y1(int i10) {
-        X1(g.a.a(this.f14979r0, i10));
-    }
-
-    public void Z1(float f10) {
-        if (this.P != f10) {
-            this.P = f10;
-            this.f14980s0.setStrokeWidth(f10);
-            if (this.T0) {
-                super.g0(f10);
-            }
-            invalidateSelf();
         }
     }
 
     @Override // com.google.android.material.internal.j.b
     public void a() {
-        v1();
+        I1();
         invalidateSelf();
     }
 
+    public float a1() {
+        return this.W;
+    }
+
     public void a2(int i10) {
-        Z1(this.f14979r0.getResources().getDimension(i10));
+        Z1(g.a.b(this.B0, i10));
     }
 
-    public TextUtils.TruncateAt b1() {
-        return this.Q0;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public boolean a3() {
+        return this.f15579b1;
     }
 
-    public ch.g c1() {
-        return this.f14970i0;
+    public float b1() {
+        return this.f15599t0;
     }
 
-    public void c2(Drawable drawable) {
-        Drawable drawable2;
-        Drawable R0 = R0();
-        if (R0 != drawable) {
-            float q02 = q0();
-            if (drawable != null) {
-                drawable2 = s1.a.r(drawable).mutate();
-            } else {
-                drawable2 = null;
-            }
-            this.Y = drawable2;
-            if (b.f44266a) {
-                S2();
-            }
-            float q03 = q0();
-            Q2(R0);
-            if (P2()) {
-                k0(this.Y);
-            }
+    public void b2(float f10) {
+        if (this.f15585f0 != f10) {
+            float z02 = z0();
+            this.f15585f0 = f10;
+            float z03 = z0();
             invalidateSelf();
-            if (q02 != q03) {
-                v1();
+            if (z02 != z03) {
+                I1();
             }
         }
+    }
+
+    public ColorStateList c1() {
+        return this.Y;
+    }
+
+    public void c2(int i10) {
+        b2(this.B0.getResources().getDimension(i10));
     }
 
     public float d1() {
-        return this.f14973l0;
+        return this.Z;
     }
 
-    public void d2(CharSequence charSequence) {
-        if (this.f14964c0 != charSequence) {
-            this.f14964c0 = a2.a.c().h(charSequence);
-            invalidateSelf();
+    public void d2(ColorStateList colorStateList) {
+        this.f15586g0 = true;
+        if (this.f15584e0 != colorStateList) {
+            this.f15584e0 = colorStateList;
+            if (c3()) {
+                this.f15582d0.setTintList(colorStateList);
+            }
+            onStateChange(getState());
         }
     }
 
-    @Override // rh.g, android.graphics.drawable.Drawable
+    @Override // th.h, android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
         Canvas canvas2;
         int i10;
         Rect bounds = getBounds();
         if (!bounds.isEmpty() && getAlpha() != 0) {
-            int i11 = this.H0;
+            int i11 = this.R0;
             if (i11 < 255) {
                 canvas2 = canvas;
-                i10 = dh.a.a(canvas2, bounds.left, bounds.top, bounds.right, bounds.bottom, i11);
+                i10 = fh.a.a(canvas2, bounds.left, bounds.top, bounds.right, bounds.bottom, i11);
             } else {
                 canvas2 = canvas;
                 i10 = 0;
             }
-            A0(canvas2, bounds);
-            x0(canvas2, bounds);
-            if (this.T0) {
+            N0(canvas2, bounds);
+            K0(canvas2, bounds);
+            if (this.f15583d1) {
                 super.draw(canvas2);
             }
-            z0(canvas2, bounds);
-            C0(canvas2, bounds);
-            y0(canvas2, bounds);
-            w0(canvas2, bounds);
-            if (this.R0) {
-                E0(canvas2, bounds);
+            M0(canvas2, bounds);
+            P0(canvas2, bounds);
+            L0(canvas2, bounds);
+            J0(canvas2, bounds);
+            if (this.f15579b1) {
+                R0(canvas2, bounds);
             }
-            B0(canvas2, bounds);
-            D0(canvas2, bounds);
-            if (this.H0 < 255) {
+            O0(canvas2, bounds);
+            Q0(canvas2, bounds);
+            if (this.R0 < 255) {
                 canvas2.restoreToCount(i10);
             }
         }
     }
 
-    public float e1() {
-        return this.f14972k0;
+    public Drawable e1() {
+        Drawable drawable = this.f15588i0;
+        if (drawable != null) {
+            return s1.a.q(drawable);
+        }
+        return null;
     }
 
-    public void e2(float f10) {
-        if (this.f14977p0 != f10) {
-            this.f14977p0 = f10;
-            invalidateSelf();
-            if (P2()) {
-                v1();
+    public void e2(int i10) {
+        d2(g.a.a(this.B0, i10));
+    }
+
+    public CharSequence f1() {
+        return this.f15592m0;
+    }
+
+    public void f2(int i10) {
+        g2(this.B0.getResources().getBoolean(i10));
+    }
+
+    public float g1() {
+        return this.f15605z0;
+    }
+
+    public void g2(boolean z10) {
+        if (this.f15580c0 != z10) {
+            boolean c32 = c3();
+            this.f15580c0 = z10;
+            boolean c33 = c3();
+            if (c32 != c33) {
+                if (c33) {
+                    x0(this.f15582d0);
+                } else {
+                    e3(this.f15582d0);
+                }
+                invalidateSelf();
+                I1();
             }
         }
     }
 
-    public ColorStateList f1() {
-        return this.Q;
-    }
-
-    public void f2(int i10) {
-        e2(this.f14979r0.getResources().getDimension(i10));
-    }
-
-    public ch.g g1() {
-        return this.f14969h0;
-    }
-
-    public void g2(int i10) {
-        c2(g.a.b(this.f14979r0, i10));
-    }
-
-    @Override // rh.g, android.graphics.drawable.Drawable
+    @Override // th.h, android.graphics.drawable.Drawable
     public int getAlpha() {
-        return this.H0;
+        return this.R0;
     }
 
     @Override // android.graphics.drawable.Drawable
     public ColorFilter getColorFilter() {
-        return this.I0;
+        return this.S0;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicHeight() {
-        return (int) this.M;
+        return (int) this.W;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicWidth() {
-        return Math.min(Math.round(this.f14971j0 + m0() + this.f14974m0 + this.f14986y0.g(h1().toString()) + this.f14975n0 + q0() + this.f14978q0), this.S0);
+        return Math.min(Math.round(this.f15599t0 + z0() + this.f15602w0 + this.I0.h(u1().toString()) + this.f15603x0 + D0() + this.A0), this.f15581c1);
     }
 
-    @Override // rh.g, android.graphics.drawable.Drawable
+    @Override // th.h, android.graphics.drawable.Drawable
     public int getOpacity() {
         return -3;
     }
 
-    @Override // rh.g, android.graphics.drawable.Drawable
+    @Override // th.h, android.graphics.drawable.Drawable
     public void getOutline(Outline outline) {
         Outline outline2;
-        if (this.T0) {
+        if (this.f15583d1) {
             super.getOutline(outline);
             return;
         }
         Rect bounds = getBounds();
         if (!bounds.isEmpty()) {
-            outline.setRoundRect(bounds, this.N);
+            outline.setRoundRect(bounds, this.X);
             outline2 = outline;
         } else {
             outline2 = outline;
-            outline2.setRoundRect(0, 0, getIntrinsicWidth(), getIntrinsicHeight(), this.N);
+            outline2.setRoundRect(0, 0, getIntrinsicWidth(), getIntrinsicHeight(), this.X);
         }
         outline2.setAlpha(getAlpha() / 255.0f);
     }
 
-    public CharSequence h1() {
-        return this.R;
+    public float h1() {
+        return this.f15591l0;
     }
 
     public void h2(float f10) {
-        if (this.f14963b0 != f10) {
-            this.f14963b0 = f10;
+        if (this.W != f10) {
+            this.W = f10;
             invalidateSelf();
-            if (P2()) {
-                v1();
-            }
+            I1();
         }
     }
 
-    public d i1() {
-        return this.f14986y0.e();
+    public float i1() {
+        return this.f15604y0;
     }
 
     public void i2(int i10) {
-        h2(this.f14979r0.getResources().getDimension(i10));
+        h2(this.B0.getResources().getDimension(i10));
     }
 
     @Override // android.graphics.drawable.Drawable.Callback
@@ -1353,10 +1388,10 @@ public class a extends g implements Drawable.Callback, j.b {
         }
     }
 
-    @Override // rh.g, android.graphics.drawable.Drawable
+    @Override // th.h, android.graphics.drawable.Drawable
     public boolean isStateful() {
-        if (!r1(this.K) && !r1(this.L) && !r1(this.O)) {
-            if ((!this.N0 || !r1(this.O0)) && !t1(this.f14986y0.e()) && !u0() && !s1(this.T) && !s1(this.f14967f0) && !r1(this.K0)) {
+        if (!E1(this.U) && !E1(this.V) && !E1(this.Y)) {
+            if ((!this.X0 || !E1(this.Y0)) && !G1(this.I0.e()) && !H0() && !F1(this.f15582d0) && !F1(this.f15595p0) && !E1(this.U0)) {
                 return false;
             }
             return true;
@@ -1364,97 +1399,74 @@ public class a extends g implements Drawable.Callback, j.b {
         return true;
     }
 
-    public float j1() {
-        return this.f14975n0;
+    public int[] j1() {
+        return this.W0;
     }
 
     public void j2(float f10) {
-        if (this.f14976o0 != f10) {
-            this.f14976o0 = f10;
+        if (this.f15599t0 != f10) {
+            this.f15599t0 = f10;
             invalidateSelf();
-            if (P2()) {
-                v1();
-            }
+            I1();
         }
     }
 
-    public float k1() {
-        return this.f14974m0;
+    public ColorStateList k1() {
+        return this.f15590k0;
     }
 
     public void k2(int i10) {
-        j2(this.f14979r0.getResources().getDimension(i10));
+        j2(this.B0.getResources().getDimension(i10));
     }
 
-    public boolean l2(int[] iArr) {
-        if (!Arrays.equals(this.M0, iArr)) {
-            this.M0 = iArr;
-            if (P2()) {
-                return w1(getState(), iArr);
-            }
-            return false;
-        }
-        return false;
+    public void l1(RectF rectF) {
+        C0(getBounds(), rectF);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public float m0() {
-        if (!O2() && !N2()) {
-            return 0.0f;
-        }
-        return this.f14972k0 + a1() + this.f14973l0;
-    }
-
-    public boolean m1() {
-        return this.N0;
-    }
-
-    public void m2(ColorStateList colorStateList) {
-        if (this.f14962a0 != colorStateList) {
-            this.f14962a0 = colorStateList;
-            if (P2()) {
-                s1.a.o(this.Y, colorStateList);
+    public void l2(ColorStateList colorStateList) {
+        if (this.Y != colorStateList) {
+            this.Y = colorStateList;
+            if (this.f15583d1) {
+                p0(colorStateList);
             }
             onStateChange(getState());
         }
     }
 
-    public void n2(int i10) {
-        m2(g.a.a(this.f14979r0, i10));
+    public void m2(int i10) {
+        l2(g.a.a(this.B0, i10));
     }
 
-    public boolean o1() {
-        return this.f14965d0;
-    }
-
-    public void o2(boolean z10) {
-        if (this.X != z10) {
-            boolean P2 = P2();
-            this.X = z10;
-            boolean P22 = P2();
-            if (P2 != P22) {
-                if (P22) {
-                    k0(this.Y);
-                } else {
-                    Q2(this.Y);
-                }
-                invalidateSelf();
-                v1();
+    public void n2(float f10) {
+        if (this.Z != f10) {
+            this.Z = f10;
+            this.C0.setStrokeWidth(f10);
+            if (this.f15583d1) {
+                super.q0(f10);
             }
+            invalidateSelf();
         }
+    }
+
+    public TextUtils.TruncateAt o1() {
+        return this.f15577a1;
+    }
+
+    public void o2(int i10) {
+        n2(this.B0.getResources().getDimension(i10));
     }
 
     @Override // android.graphics.drawable.Drawable
     public boolean onLayoutDirectionChanged(int i10) {
         boolean onLayoutDirectionChanged = super.onLayoutDirectionChanged(i10);
-        if (O2()) {
-            onLayoutDirectionChanged |= s1.a.m(this.T, i10);
+        if (c3()) {
+            onLayoutDirectionChanged |= s1.a.m(this.f15582d0, i10);
         }
-        if (N2()) {
-            onLayoutDirectionChanged |= s1.a.m(this.f14967f0, i10);
+        if (b3()) {
+            onLayoutDirectionChanged |= s1.a.m(this.f15595p0, i10);
         }
-        if (P2()) {
-            onLayoutDirectionChanged |= s1.a.m(this.Y, i10);
+        if (d3()) {
+            onLayoutDirectionChanged |= s1.a.m(this.f15588i0, i10);
         }
         if (onLayoutDirectionChanged) {
             invalidateSelf();
@@ -1466,14 +1478,14 @@ public class a extends g implements Drawable.Callback, j.b {
     @Override // android.graphics.drawable.Drawable
     protected boolean onLevelChange(int i10) {
         boolean onLevelChange = super.onLevelChange(i10);
-        if (O2()) {
-            onLevelChange |= this.T.setLevel(i10);
+        if (c3()) {
+            onLevelChange |= this.f15582d0.setLevel(i10);
         }
-        if (N2()) {
-            onLevelChange |= this.f14967f0.setLevel(i10);
+        if (b3()) {
+            onLevelChange |= this.f15595p0.setLevel(i10);
         }
-        if (P2()) {
-            onLevelChange |= this.Y.setLevel(i10);
+        if (d3()) {
+            onLevelChange |= this.f15588i0.setLevel(i10);
         }
         if (onLevelChange) {
             invalidateSelf();
@@ -1481,44 +1493,69 @@ public class a extends g implements Drawable.Callback, j.b {
         return onLevelChange;
     }
 
-    @Override // rh.g, android.graphics.drawable.Drawable, com.google.android.material.internal.j.b
+    @Override // th.h, android.graphics.drawable.Drawable, com.google.android.material.internal.j.b
     public boolean onStateChange(int[] iArr) {
-        if (this.T0) {
+        if (this.f15583d1) {
             super.onStateChange(iArr);
         }
-        return w1(iArr, W0());
+        return J1(iArr, j1());
     }
 
-    public boolean p1() {
-        return s1(this.Y);
+    public g p1() {
+        return this.f15598s0;
     }
 
-    public void p2(InterfaceC0200a interfaceC0200a) {
-        this.P0 = new WeakReference(interfaceC0200a);
+    public float q1() {
+        return this.f15601v0;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public float q0() {
-        if (P2()) {
-            return this.f14976o0 + this.f14963b0 + this.f14977p0;
+    public void q2(Drawable drawable) {
+        Drawable drawable2;
+        Drawable e12 = e1();
+        if (e12 != drawable) {
+            float D0 = D0();
+            if (drawable != null) {
+                drawable2 = s1.a.r(drawable).mutate();
+            } else {
+                drawable2 = null;
+            }
+            this.f15588i0 = drawable2;
+            g3();
+            float D02 = D0();
+            e3(e12);
+            if (d3()) {
+                x0(this.f15588i0);
+            }
+            invalidateSelf();
+            if (D0 != D02) {
+                I1();
+            }
         }
-        return 0.0f;
     }
 
-    public boolean q1() {
-        return this.X;
+    public float r1() {
+        return this.f15600u0;
     }
 
-    public void q2(TextUtils.TruncateAt truncateAt) {
-        this.Q0 = truncateAt;
+    public void r2(CharSequence charSequence) {
+        if (this.f15592m0 != charSequence) {
+            this.f15592m0 = a2.a.c().h(charSequence);
+            invalidateSelf();
+        }
     }
 
-    public void r2(ch.g gVar) {
-        this.f14970i0 = gVar;
+    public ColorStateList s1() {
+        return this.f15576a0;
     }
 
-    public void s2(int i10) {
-        r2(ch.g.c(this.f14979r0, i10));
+    public void s2(float f10) {
+        if (this.f15605z0 != f10) {
+            this.f15605z0 = f10;
+            invalidateSelf();
+            if (d3()) {
+                I1();
+            }
+        }
     }
 
     @Override // android.graphics.drawable.Drawable.Callback
@@ -1529,35 +1566,35 @@ public class a extends g implements Drawable.Callback, j.b {
         }
     }
 
-    @Override // rh.g, android.graphics.drawable.Drawable
+    @Override // th.h, android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        if (this.H0 != i10) {
-            this.H0 = i10;
+        if (this.R0 != i10) {
+            this.R0 = i10;
             invalidateSelf();
         }
     }
 
-    @Override // rh.g, android.graphics.drawable.Drawable
+    @Override // th.h, android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        if (this.I0 != colorFilter) {
-            this.I0 = colorFilter;
+        if (this.S0 != colorFilter) {
+            this.S0 = colorFilter;
             invalidateSelf();
         }
     }
 
-    @Override // rh.g, android.graphics.drawable.Drawable
+    @Override // th.h, android.graphics.drawable.Drawable
     public void setTintList(ColorStateList colorStateList) {
-        if (this.K0 != colorStateList) {
-            this.K0 = colorStateList;
+        if (this.U0 != colorStateList) {
+            this.U0 = colorStateList;
             onStateChange(getState());
         }
     }
 
-    @Override // rh.g, android.graphics.drawable.Drawable
+    @Override // th.h, android.graphics.drawable.Drawable
     public void setTintMode(PorterDuff.Mode mode) {
-        if (this.L0 != mode) {
-            this.L0 = mode;
-            this.J0 = com.google.android.material.drawable.c.l(this, this.K0, mode);
+        if (this.V0 != mode) {
+            this.V0 = mode;
+            this.T0 = com.google.android.material.drawable.c.m(this, this.U0, mode);
             invalidateSelf();
         }
     }
@@ -1565,14 +1602,14 @@ public class a extends g implements Drawable.Callback, j.b {
     @Override // android.graphics.drawable.Drawable
     public boolean setVisible(boolean z10, boolean z11) {
         boolean visible = super.setVisible(z10, z11);
-        if (O2()) {
-            visible |= this.T.setVisible(z10, z11);
+        if (c3()) {
+            visible |= this.f15582d0.setVisible(z10, z11);
         }
-        if (N2()) {
-            visible |= this.f14967f0.setVisible(z10, z11);
+        if (b3()) {
+            visible |= this.f15595p0.setVisible(z10, z11);
         }
-        if (P2()) {
-            visible |= this.Y.setVisible(z10, z11);
+        if (d3()) {
+            visible |= this.f15588i0.setVisible(z10, z11);
         }
         if (visible) {
             invalidateSelf();
@@ -1580,36 +1617,20 @@ public class a extends g implements Drawable.Callback, j.b {
         return visible;
     }
 
-    Paint.Align t0(Rect rect, PointF pointF) {
-        pointF.set(0.0f, 0.0f);
-        Paint.Align align = Paint.Align.LEFT;
-        if (this.R != null) {
-            float m02 = this.f14971j0 + m0() + this.f14974m0;
-            if (s1.a.f(this) == 0) {
-                pointF.x = rect.left + m02;
-            } else {
-                pointF.x = rect.right - m02;
-                align = Paint.Align.RIGHT;
-            }
-            pointF.y = rect.centerY() - s0();
-        }
-        return align;
+    public g t1() {
+        return this.f15597r0;
     }
 
-    public void t2(float f10) {
-        if (this.f14973l0 != f10) {
-            float m02 = m0();
-            this.f14973l0 = f10;
-            float m03 = m0();
-            invalidateSelf();
-            if (m02 != m03) {
-                v1();
-            }
-        }
+    public void t2(int i10) {
+        s2(this.B0.getResources().getDimension(i10));
+    }
+
+    public CharSequence u1() {
+        return this.f15578b0;
     }
 
     public void u2(int i10) {
-        t2(this.f14979r0.getResources().getDimension(i10));
+        q2(g.a.b(this.B0, i10));
     }
 
     @Override // android.graphics.drawable.Drawable.Callback
@@ -1620,75 +1641,66 @@ public class a extends g implements Drawable.Callback, j.b {
         }
     }
 
-    protected void v1() {
-        InterfaceC0200a interfaceC0200a = (InterfaceC0200a) this.P0.get();
-        if (interfaceC0200a != null) {
-            interfaceC0200a.a();
-        }
+    public d v1() {
+        return this.I0.e();
     }
 
     public void v2(float f10) {
-        if (this.f14972k0 != f10) {
-            float m02 = m0();
-            this.f14972k0 = f10;
-            float m03 = m0();
+        if (this.f15591l0 != f10) {
+            this.f15591l0 = f10;
             invalidateSelf();
-            if (m02 != m03) {
-                v1();
+            if (d3()) {
+                I1();
             }
         }
+    }
+
+    public float w1() {
+        return this.f15603x0;
     }
 
     public void w2(int i10) {
-        v2(this.f14979r0.getResources().getDimension(i10));
+        v2(this.B0.getResources().getDimension(i10));
     }
 
-    public void x1(boolean z10) {
-        if (this.f14965d0 != z10) {
-            this.f14965d0 = z10;
-            float m02 = m0();
-            if (!z10 && this.F0) {
-                this.F0 = false;
-            }
-            float m03 = m0();
+    public float x1() {
+        return this.f15602w0;
+    }
+
+    public void x2(float f10) {
+        if (this.f15604y0 != f10) {
+            this.f15604y0 = f10;
             invalidateSelf();
-            if (m02 != m03) {
-                v1();
+            if (d3()) {
+                I1();
             }
         }
     }
 
-    public void x2(int i10) {
-        this.S0 = i10;
+    public void y2(int i10) {
+        x2(this.B0.getResources().getDimension(i10));
     }
 
-    public void y1(int i10) {
-        x1(this.f14979r0.getResources().getBoolean(i10));
-    }
-
-    public void y2(ColorStateList colorStateList) {
-        if (this.Q != colorStateList) {
-            this.Q = colorStateList;
-            R2();
-            onStateChange(getState());
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public float z0() {
+        if (!c3() && !b3()) {
+            return 0.0f;
         }
+        return this.f15600u0 + n1() + this.f15601v0;
     }
 
-    public void z1(Drawable drawable) {
-        if (this.f14967f0 != drawable) {
-            float m02 = m0();
-            this.f14967f0 = drawable;
-            float m03 = m0();
-            Q2(this.f14967f0);
-            k0(this.f14967f0);
-            invalidateSelf();
-            if (m02 != m03) {
-                v1();
+    public boolean z1() {
+        return this.X0;
+    }
+
+    public boolean z2(int[] iArr) {
+        if (!Arrays.equals(this.W0, iArr)) {
+            this.W0 = iArr;
+            if (d3()) {
+                return J1(getState(), iArr);
             }
+            return false;
         }
-    }
-
-    public void z2(int i10) {
-        y2(g.a.a(this.f14979r0, i10));
+        return false;
     }
 }

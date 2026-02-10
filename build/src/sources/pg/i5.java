@@ -1,57 +1,57 @@
 package pg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class i5 implements zi.d {
+final class i5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final i5 f43629a = new i5();
+    static final i5 f42087a = new i5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f43630b;
+    private static final bj.c f42088b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f43631c;
+    private static final bj.c f42089c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f43632d;
+    private static final bj.c f42090d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final zi.c f43633e;
+    private static final bj.c f42091e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final zi.c f43634f;
+    private static final bj.c f42092f;
 
     static {
-        c.b a10 = zi.c.a("detectorOptions");
+        c.b a10 = bj.c.a("detectorOptions");
         f fVar = new f();
         fVar.a(1);
-        f43630b = a10.b(fVar.b()).a();
-        c.b a11 = zi.c.a("errorCode");
+        f42088b = a10.b(fVar.b()).a();
+        c.b a11 = bj.c.a("errorCode");
         f fVar2 = new f();
         fVar2.a(2);
-        f43631c = a11.b(fVar2.b()).a();
-        c.b a12 = zi.c.a("totalInitializationMs");
+        f42089c = a11.b(fVar2.b()).a();
+        c.b a12 = bj.c.a("totalInitializationMs");
         f fVar3 = new f();
         fVar3.a(3);
-        f43632d = a12.b(fVar3.b()).a();
-        c.b a13 = zi.c.a("loggingInitializationMs");
+        f42090d = a12.b(fVar3.b()).a();
+        c.b a13 = bj.c.a("loggingInitializationMs");
         f fVar4 = new f();
         fVar4.a(4);
-        f43633e = a13.b(fVar4.b()).a();
-        c.b a14 = zi.c.a("otherErrors");
+        f42091e = a13.b(fVar4.b()).a();
+        c.b a14 = bj.c.a("otherErrors");
         f fVar5 = new f();
         fVar5.a(5);
-        f43634f = a14.b(fVar5.b()).a();
+        f42092f = a14.b(fVar5.b()).a();
     }
 
     private i5() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

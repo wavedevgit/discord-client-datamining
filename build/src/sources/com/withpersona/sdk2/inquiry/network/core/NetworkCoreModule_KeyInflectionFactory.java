@@ -1,8 +1,8 @@
 package com.withpersona.sdk2.inquiry.network.core;
 
-import cr.g;
+import lr.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class NetworkCoreModule_KeyInflectionFactory implements cr.d {
+public final class NetworkCoreModule_KeyInflectionFactory implements lr.d {
     private final NetworkCoreModule module;
 
     public NetworkCoreModule_KeyInflectionFactory(NetworkCoreModule networkCoreModule) {

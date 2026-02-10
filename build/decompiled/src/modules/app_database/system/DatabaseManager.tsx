@@ -830,13 +830,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var4.bind(var5)(var0);
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun18847_ip = 94;
+                        _fun18847_ip = 95;
                         continue _fun18847
                     }
-                case 84:
+                case 85:
                     var0 = var2.close;
                     var0 = var0.bind(var2)();
-                case 94:
+                case 95:
                     var2 = var1.databases;
                     var0 = var2.delete;
                     var0 = var0.bind(var2)(var3);

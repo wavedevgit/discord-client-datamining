@@ -12,37 +12,37 @@ import y0.h;
 public abstract class k {
 
     /* renamed from: b */
-    private static final long f55383b = 0;
+    private static final long f55314b = 0;
 
     /* renamed from: e */
-    private static h f55386e;
+    private static h f55317e;
 
     /* renamed from: f */
-    private static long f55387f;
+    private static long f55318f;
 
     /* renamed from: g */
-    private static final f f55388g;
+    private static final f f55319g;
 
     /* renamed from: h */
-    private static final m f55389h;
+    private static final m f55320h;
 
     /* renamed from: i */
-    private static List f55390i;
+    private static List f55321i;
 
     /* renamed from: j */
-    private static List f55391j;
+    private static List f55322j;
 
     /* renamed from: k */
-    private static final b f55392k;
+    private static final b f55323k;
 
     /* renamed from: l */
-    private static final e f55393l;
+    private static final e f55324l;
 
     /* renamed from: m */
-    private static x0.a f55394m;
+    private static x0.a f55325m;
 
     /* renamed from: a */
-    private static final Function1 f55382a = new Function1() { // from class: y0.j
+    private static final Function1 f55313a = new Function1() { // from class: y0.j
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Object obj) {
             Unit f10;
@@ -52,40 +52,40 @@ public abstract class k {
     };
 
     /* renamed from: c */
-    private static final x0.b f55384c = new x0.b();
+    private static final x0.b f55315c = new x0.b();
 
     /* renamed from: d */
-    private static final Object f55385d = new Object();
+    private static final Object f55316d = new Object();
 
     static {
-        h.a aVar = h.f55370p;
-        f55386e = aVar.a();
+        h.a aVar = h.f55301p;
+        f55317e = aVar.a();
         long j10 = 1;
-        f55387f = i.c(1) + j10;
-        f55388g = new f();
-        f55389h = new m();
-        f55390i = CollectionsKt.l();
-        f55391j = CollectionsKt.l();
-        long j11 = f55387f;
-        f55387f = j10 + j11;
+        f55318f = i.c(1) + j10;
+        f55319g = new f();
+        f55320h = new m();
+        f55321i = CollectionsKt.l();
+        f55322j = CollectionsKt.l();
+        long j11 = f55318f;
+        f55318f = j10 + j11;
         b bVar = new b(j11, aVar.a());
-        f55386e = f55386e.i(bVar.d());
-        f55392k = bVar;
-        f55393l = bVar;
-        f55394m = new x0.a(0);
+        f55317e = f55317e.j(bVar.d());
+        f55323k = bVar;
+        f55324l = bVar;
+        f55325m = new x0.a(0);
     }
 
     public static final /* synthetic */ List b() {
-        return f55391j;
+        return f55322j;
     }
 
     public static final /* synthetic */ long c() {
-        return f55383b;
+        return f55314b;
     }
 
     public static final p d(p pVar) {
         p l10;
-        e.a aVar = e.f55359d;
+        e.a aVar = e.f55290d;
         e a10 = aVar.a();
         p l11 = l(pVar, a10.d(), a10.a());
         if (l11 == null) {
@@ -97,25 +97,25 @@ public abstract class k {
                 return l10;
             }
             k();
-            throw new rr.h();
+            throw new as.h();
         }
         return l11;
     }
 
     public static final e e() {
-        e eVar = (e) f55384c.a();
+        e eVar = (e) f55315c.a();
         if (eVar == null) {
-            return f55392k;
+            return f55323k;
         }
         return eVar;
     }
 
     public static final Unit f(h hVar) {
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     public static final Object g() {
-        return f55385d;
+        return f55316d;
     }
 
     public static final p h(p pVar, n nVar) {
@@ -179,7 +179,7 @@ public abstract class k {
 
     public static final p m(p pVar, n nVar) {
         p l10;
-        e.a aVar = e.f55359d;
+        e.a aVar = e.f55290d;
         e a10 = aVar.a();
         Function1 b10 = a10.b();
         if (b10 != null) {
@@ -194,7 +194,7 @@ public abstract class k {
                 l10 = l(b11, a11.d(), a11.a());
                 if (l10 == null) {
                     k();
-                    throw new rr.h();
+                    throw new as.h();
                 }
             }
             return l10;
@@ -204,19 +204,19 @@ public abstract class k {
 
     public static final int n(long j10, h hVar) {
         int a10;
-        long h10 = hVar.h(j10);
+        long i10 = hVar.i(j10);
         synchronized (g()) {
-            a10 = f55388g.a(h10);
+            a10 = f55319g.a(i10);
         }
         return a10;
     }
 
     private static final p o(n nVar) {
-        long d10 = f55388g.d(f55387f) - 1;
-        h a10 = h.f55370p.a();
+        long d10 = f55319g.d(f55318f) - 1;
+        h a10 = h.f55301p.a();
         p pVar = null;
         for (p b10 = nVar.b(); b10 != null; b10 = b10.b()) {
-            if (b10.c() != f55383b) {
+            if (b10.c() != f55314b) {
                 if (q(b10, d10, a10)) {
                     if (pVar == null) {
                         pVar = b10;
@@ -231,7 +231,7 @@ public abstract class k {
     }
 
     private static final boolean p(long j10, long j11, h hVar) {
-        if (j11 != f55383b && Intrinsics.compare(j11, j10) <= 0 && !hVar.g(j11)) {
+        if (j11 != f55314b && Intrinsics.compare(j11, j10) <= 0 && !hVar.g(j11)) {
             return true;
         }
         return false;

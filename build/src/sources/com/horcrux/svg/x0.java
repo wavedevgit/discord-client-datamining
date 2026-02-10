@@ -22,22 +22,22 @@ public class x0 extends j1 {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public g1 E() {
+    public g1 F() {
         return this.D;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public h1 F() {
+    public h1 G() {
         return this.C;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public SVGLength G() {
+    public SVGLength H() {
         return this.E;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public Path H(Canvas canvas, Paint paint) {
+    public Path I(Canvas canvas, Paint paint) {
         VirtualView definedTemplate = getSvgView().getDefinedTemplate(this.B);
         if (!(definedTemplate instanceof RenderableView)) {
             return null;
@@ -45,52 +45,52 @@ public class x0 extends j1 {
         return ((RenderableView) definedTemplate).getPath(canvas, paint);
     }
 
-    public void I(String str) {
+    public void J(String str) {
         this.B = str;
         invalidate();
     }
 
-    public void J(String str) {
+    public void K(String str) {
         this.D = g1.valueOf(str);
         invalidate();
     }
 
-    public void K(String str) {
+    public void L(String str) {
         this.C = h1.valueOf(str);
         invalidate();
     }
 
-    public void L(String str) {
+    public void M(String str) {
         this.G = i1.valueOf(str);
         invalidate();
     }
 
-    public void M(Dynamic dynamic) {
+    public void N(Dynamic dynamic) {
         this.E = SVGLength.b(dynamic);
         invalidate();
     }
 
     @Override // com.horcrux.svg.j1, com.horcrux.svg.c0, com.horcrux.svg.RenderableView, com.horcrux.svg.VirtualView
     void draw(Canvas canvas, Paint paint, float f10) {
-        c(canvas, paint, f10);
+        d(canvas, paint, f10);
     }
 
     @Override // com.horcrux.svg.j1, com.horcrux.svg.c0, com.horcrux.svg.RenderableView, com.horcrux.svg.VirtualView
     Path getPath(Canvas canvas, Paint paint) {
-        return p(canvas, paint);
+        return q(canvas, paint);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.horcrux.svg.c0
-    public void h() {
+    public void i() {
     }
 
     @Override // com.horcrux.svg.j1, com.horcrux.svg.c0
-    void i() {
+    void j() {
     }
 
     @Override // com.horcrux.svg.j1
-    public void y(String str) {
+    public void z(String str) {
         this.F = f1.valueOf(str);
         invalidate();
     }

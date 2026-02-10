@@ -1,59 +1,22 @@
 package us;
 
-import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+import java.util.List;
+import kotlin.jvm.functions.Function0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class q {
+public class q implements Function0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f51809a = AtomicReferenceFieldUpdater.newUpdater(q.class, Object.class, "_cur$volatile");
-    private volatile /* synthetic */ Object _cur$volatile;
+    /* renamed from: d  reason: collision with root package name */
+    private final a0 f51127d;
 
-    public q(boolean z10) {
-        this._cur$volatile = new r(8, z10);
+    public q(a0 a0Var) {
+        this.f51127d = a0Var;
     }
 
-    public final boolean a(Object obj) {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f51809a;
-        while (true) {
-            r rVar = (r) atomicReferenceFieldUpdater.get(this);
-            int a10 = rVar.a(obj);
-            if (a10 == 0) {
-                return true;
-            }
-            if (a10 != 1) {
-                if (a10 == 2) {
-                    return false;
-                }
-            } else {
-                androidx.concurrent.futures.b.a(f51809a, this, rVar, rVar.l());
-            }
-        }
-    }
-
-    public final void b() {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f51809a;
-        while (true) {
-            r rVar = (r) atomicReferenceFieldUpdater.get(this);
-            if (rVar.d()) {
-                return;
-            }
-            androidx.concurrent.futures.b.a(f51809a, this, rVar, rVar.l());
-        }
-    }
-
-    public final int c() {
-        return ((r) f51809a.get(this)).g();
-    }
-
-    public final Object e() {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f51809a;
-        while (true) {
-            r rVar = (r) atomicReferenceFieldUpdater.get(this);
-            Object m10 = rVar.m();
-            if (m10 != r.f51813h) {
-                return m10;
-            }
-            androidx.concurrent.futures.b.a(f51809a, this, rVar, rVar.l());
-        }
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        List d10;
+        d10 = a0.d(this.f51127d);
+        return d10;
     }
 }

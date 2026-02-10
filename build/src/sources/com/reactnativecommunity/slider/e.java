@@ -7,22 +7,22 @@ import com.facebook.react.uimanager.events.Event;
 public class e extends Event {
 
     /* renamed from: a  reason: collision with root package name */
-    private final double f17558a;
+    private final double f18307a;
 
     public e(int i10, double d10) {
         super(i10);
-        this.f17558a = d10;
+        this.f18307a = d10;
     }
 
-    private WritableMap b() {
+    private WritableMap c() {
         WritableMap createMap = Arguments.createMap();
         createMap.putInt("target", getViewTag());
-        createMap.putDouble("value", a());
+        createMap.putDouble("value", b());
         return createMap;
     }
 
-    public double a() {
-        return this.f17558a;
+    public double b() {
+        return this.f18307a;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -37,7 +37,7 @@ public class e extends Event {
 
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
-        return b();
+        return c();
     }
 
     @Override // com.facebook.react.uimanager.events.Event

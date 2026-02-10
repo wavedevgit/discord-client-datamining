@@ -10,16 +10,8 @@ import com.withpersona.sdk2.inquiry.network.dto.ui.InputSelectBoxComponentStyle;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.InputPhoneNumber;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.InputTextBasedComponentStyle;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.TextBasedComponentStyle;
-import en.t;
-import en.w;
-import gq.b4;
-import gq.c2;
-import gq.e0;
-import gq.k5;
-import gq.v;
-import gq.w4;
-import hq.j;
-import hq.k;
+import gn.t;
+import gn.w;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
@@ -28,45 +20,53 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000\u0082\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0013\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010 \n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\t\b\u0087\b\u0018\u0000 _2\u00020\u00012\b\u0012\u0004\u0012\u00020\u00000\u00022\u00020\u00032\u00020\u0004:\u0001ZB?\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\b\u0010\n\u001a\u0004\u0018\u00010\b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u000e\u0010\u000fJ\u0017\u0010\u0011\u001a\u00020\u00002\u0006\u0010\u0010\u001a\u00020\u0005H\u0016¢\u0006\u0004\b\u0011\u0010\u0012J\u0017\u0010\u0015\u001a\u00020\u00002\b\u0010\u0014\u001a\u0004\u0018\u00010\u0013¢\u0006\u0004\b\u0015\u0010\u0016J\u001d\u0010\u001c\u001a\u00020\u001b2\u0006\u0010\u0018\u001a\u00020\u00172\u0006\u0010\u001a\u001a\u00020\u0019¢\u0006\u0004\b\u001c\u0010\u001dJ\r\u0010\u001e\u001a\u00020\u0019¢\u0006\u0004\b\u001e\u0010\u001fJT\u0010 \u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0005HÆ\u0001¢\u0006\u0004\b \u0010!J\u0010\u0010\"\u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b\"\u0010#J\u0010\u0010$\u001a\u00020\u0019HÖ\u0001¢\u0006\u0004\b$\u0010\u001fJ\u001a\u0010(\u001a\u00020'2\b\u0010&\u001a\u0004\u0018\u00010%HÖ\u0003¢\u0006\u0004\b(\u0010)R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b*\u0010+\u001a\u0004\b,\u0010#R\u0017\u0010\u0007\u001a\u00020\u00058\u0006¢\u0006\f\n\u0004\b-\u0010+\u001a\u0004\b.\u0010#R\u001c\u0010\t\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b/\u00100\u001a\u0004\b1\u00102R\u001c\u0010\n\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b3\u00100\u001a\u0004\b4\u00102R\u0019\u0010\f\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b\u0011\u00105\u001a\u0004\b6\u00107R$\u0010\r\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b\u0015\u0010+\u001a\u0004\b8\u0010#\"\u0004\b9\u0010:R&\u0010B\u001a\b\u0012\u0004\u0012\u00020<0;8\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\b=\u0010>\u0012\u0004\b@\u0010A\u001a\u0004\b*\u0010?R\u001d\u0010H\u001a\u00020C8\u0006¢\u0006\u0012\n\u0004\bD\u0010E\u0012\u0004\bG\u0010A\u001a\u0004\b/\u0010FR(\u0010Q\u001a\u00020I8\u0006@\u0006X\u0086\u000e¢\u0006\u0018\n\u0004\bJ\u0010K\u0012\u0004\bP\u0010A\u001a\u0004\bL\u0010M\"\u0004\bN\u0010OR#\u0010V\u001a\b\u0012\u0004\u0012\u00020\u00130R8\u0006¢\u0006\u0012\n\u0004\bS\u0010>\u0012\u0004\bU\u0010A\u001a\u0004\bT\u0010?R(\u0010^\u001a\u00020W8\u0016@\u0016X\u0097\u000e¢\u0006\u0018\n\u0004\bX\u0010Y\u0012\u0004\b]\u0010A\u001a\u0004\bZ\u0010[\"\u0004\b3\u0010\\¨\u0006`"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputPhoneNumberComponent;", "Lgq/k5;", "Lgq/w4;", "Lgq/v;", "Lgq/e0;", "", StackTraceHelper.NAME_KEY, "value", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;", "errorTextStyle", "selectedCountryCode", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;Ljava/lang/String;)V", "newString", "p", "(Ljava/lang/String;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputPhoneNumberComponent;", "Lgq/b4;", "selectedCountry", "q", "(Lgq/b4;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputPhoneNumberComponent;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "c", "(Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;Ljava/lang/String;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputPhoneNumberComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "getValue", "i", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "o", "getDisabled", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;", "j", "()Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;", "l", "setSelectedCountryCode", "(Ljava/lang/String;)V", "", "Loq/a;", "r", "Ljava/util/List;", "()Ljava/util/List;", "getAssociatedViews$annotations", "()V", "associatedViews", "Lgq/c2;", "s", "Lgq/c2;", "()Lgq/c2;", "getCountryCodeSelectComponent$annotations", "countryCodeSelectComponent", "Lhq/k;", "t", "Lhq/k;", "h", "()Lhq/k;", "setCountryCodeOptionsController", "(Lhq/k;)V", "getCountryCodeOptionsController$annotations", "countryCodeOptionsController", "", "u", "f", "getCountryCodeOptions$annotations", "countryCodeOptions", "Len/t;", "v", "Len/t;", "b", "()Len/t;", "(Len/t;)V", "getTextController$annotations", "textController", "w", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import pq.b4;
+import pq.c2;
+import pq.e0;
+import pq.k5;
+import pq.v;
+import pq.w4;
+import qq.j;
+import qq.k;
+@Metadata(d1 = {"\u0000\u0082\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0013\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010 \n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\n\b\u0087\b\u0018\u0000 `2\u00020\u00012\b\u0012\u0004\u0012\u00020\u00000\u00022\u00020\u00032\u00020\u0004:\u0001ZB?\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\b\u0010\n\u001a\u0004\u0018\u00010\b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u000e\u0010\u000fJ\u0017\u0010\u0011\u001a\u00020\u00002\u0006\u0010\u0010\u001a\u00020\u0005H\u0016¢\u0006\u0004\b\u0011\u0010\u0012J\u0017\u0010\u0015\u001a\u00020\u00002\b\u0010\u0014\u001a\u0004\u0018\u00010\u0013¢\u0006\u0004\b\u0015\u0010\u0016J\u001d\u0010\u001c\u001a\u00020\u001b2\u0006\u0010\u0018\u001a\u00020\u00172\u0006\u0010\u001a\u001a\u00020\u0019¢\u0006\u0004\b\u001c\u0010\u001dJ\r\u0010\u001e\u001a\u00020\u0019¢\u0006\u0004\b\u001e\u0010\u001fJT\u0010 \u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0005HÆ\u0001¢\u0006\u0004\b \u0010!J\u0010\u0010\"\u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b\"\u0010#J\u0010\u0010$\u001a\u00020\u0019HÖ\u0001¢\u0006\u0004\b$\u0010\u001fJ\u001a\u0010(\u001a\u00020'2\b\u0010&\u001a\u0004\u0018\u00010%HÖ\u0003¢\u0006\u0004\b(\u0010)R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b*\u0010+\u001a\u0004\b,\u0010#R\u0017\u0010\u0007\u001a\u00020\u00058\u0006¢\u0006\f\n\u0004\b-\u0010+\u001a\u0004\b.\u0010#R\u001c\u0010\t\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b/\u00100\u001a\u0004\b1\u00102R\u001c\u0010\n\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0011\u00100\u001a\u0004\b3\u00102R\u0019\u0010\f\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b\u0015\u00104\u001a\u0004\b5\u00106R$\u0010\r\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b7\u0010+\u001a\u0004\b8\u0010#\"\u0004\b9\u0010:R&\u0010B\u001a\b\u0012\u0004\u0012\u00020<0;8\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\b=\u0010>\u0012\u0004\b@\u0010A\u001a\u0004\b*\u0010?R\u001d\u0010H\u001a\u00020C8\u0006¢\u0006\u0012\n\u0004\bD\u0010E\u0012\u0004\bG\u0010A\u001a\u0004\b/\u0010FR(\u0010Q\u001a\u00020I8\u0006@\u0006X\u0086\u000e¢\u0006\u0018\n\u0004\bJ\u0010K\u0012\u0004\bP\u0010A\u001a\u0004\bL\u0010M\"\u0004\bN\u0010OR#\u0010V\u001a\b\u0012\u0004\u0012\u00020\u00130R8\u0006¢\u0006\u0012\n\u0004\bS\u0010>\u0012\u0004\bU\u0010A\u001a\u0004\bT\u0010?R(\u0010_\u001a\u00020W8\u0016@\u0016X\u0097\u000e¢\u0006\u0018\n\u0004\bX\u0010Y\u0012\u0004\b^\u0010A\u001a\u0004\bZ\u0010[\"\u0004\b\\\u0010]¨\u0006a"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputPhoneNumberComponent;", "Lpq/k5;", "Lpq/w4;", "Lpq/v;", "Lpq/e0;", "", StackTraceHelper.NAME_KEY, "value", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;", "errorTextStyle", "selectedCountryCode", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;Ljava/lang/String;)V", "newString", "o", "(Ljava/lang/String;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputPhoneNumberComponent;", "Lpq/b4;", "selectedCountry", "p", "(Lpq/b4;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputPhoneNumberComponent;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "c", "(Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;Ljava/lang/String;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputPhoneNumberComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "getValue", "i", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getDisabled", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;", "j", "()Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/TextBasedComponentStyle;", "q", "k", "setSelectedCountryCode", "(Ljava/lang/String;)V", "", "Lxq/a;", "r", "Ljava/util/List;", "()Ljava/util/List;", "getAssociatedViews$annotations", "()V", "associatedViews", "Lpq/c2;", "s", "Lpq/c2;", "()Lpq/c2;", "getCountryCodeSelectComponent$annotations", "countryCodeSelectComponent", "Lqq/k;", "t", "Lqq/k;", "g", "()Lqq/k;", "setCountryCodeOptionsController", "(Lqq/k;)V", "getCountryCodeOptionsController$annotations", "countryCodeOptionsController", "", "u", "f", "getCountryCodeOptions$annotations", "countryCodeOptions", "Lgn/t;", "v", "Lgn/t;", "b", "()Lgn/t;", "l", "(Lgn/t;)V", "getTextController$annotations", "textController", "w", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19797d;
+    private final String f20677d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f19798e;
+    private final String f20678e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f19799i;
+    private final JsonLogicBoolean f20679i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f19800o;
+    private final JsonLogicBoolean f20680o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final TextBasedComponentStyle f19801p;
+    private final TextBasedComponentStyle f20681p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f19802q;
+    private String f20682q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final List f19803r;
+    private final List f20683r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final c2 f19804s;
+    private final c2 f20684s;
 
     /* renamed from: t  reason: collision with root package name */
-    private k f19805t;
+    private k f20685t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final List f19806u;
+    private final List f20686u;
 
     /* renamed from: v  reason: collision with root package name */
-    private t f19807v;
+    private t f20687v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final b f19796w = new b(null);
+    public static final b f20676w = new b(null);
     @NotNull
     public static final Parcelable.Creator<InputPhoneNumberComponent> CREATOR = new c();
 
@@ -75,27 +75,27 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
         a() {
         }
 
-        @Override // gq.c2
+        @Override // pq.c2
         public List b() {
             return InputPhoneNumberComponent.this.f();
         }
 
-        @Override // gq.c2
+        @Override // pq.c2
         public boolean c() {
             return false;
         }
 
-        @Override // gq.c2
+        @Override // pq.c2
         public List f() {
-            return CollectionsKt.e(hq.d.f26469a.g(InputPhoneNumberComponent.this.l()));
+            return CollectionsKt.e(qq.d.f45610a.g(InputPhoneNumberComponent.this.k()));
         }
 
-        @Override // gq.c2
+        @Override // pq.c2
         public String getLabel() {
             return null;
         }
 
-        @Override // gq.c2
+        @Override // pq.c2
         public InputSelectBoxComponentStyle getStyles() {
             return null;
         }
@@ -119,14 +119,14 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
             String str3 = (attributes == null || (prefill = attributes.getPrefill()) == null || (str3 = StringsKt.k1(prefill).toString()) == null) ? "" : "";
             TextBasedComponentStyle textBasedComponentStyle = null;
             if (StringsKt.P(str3, "+", false, 2, null)) {
-                j k10 = hq.d.f26469a.k(str3);
+                j k10 = qq.d.f45610a.k(str3);
                 String b10 = k10.b();
                 str2 = k10.a();
                 str = b10;
             } else {
                 InputPhoneNumber.Attributes attributes2 = config.getAttributes();
                 if (attributes2 == null || (a10 = attributes2.getCountryCode()) == null) {
-                    a10 = hq.d.f26469a.j().a();
+                    a10 = qq.d.f45610a.j().a();
                 }
                 str = str3;
                 str2 = a10;
@@ -174,38 +174,38 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
     public InputPhoneNumberComponent(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle, String str) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f19797d = name;
-        this.f19798e = value;
-        this.f19799i = jsonLogicBoolean;
-        this.f19800o = jsonLogicBoolean2;
-        this.f19801p = textBasedComponentStyle;
-        this.f19802q = str;
-        this.f19803r = new ArrayList();
-        hq.d dVar = hq.d.f26469a;
-        this.f19806u = dVar.f();
-        this.f19804s = new a();
-        this.f19805t = new k(dVar.g(this.f19802q));
-        this.f19807v = w.a(value);
+        this.f20677d = name;
+        this.f20678e = value;
+        this.f20679i = jsonLogicBoolean;
+        this.f20680o = jsonLogicBoolean2;
+        this.f20681p = textBasedComponentStyle;
+        this.f20682q = str;
+        this.f20683r = new ArrayList();
+        qq.d dVar = qq.d.f45610a;
+        this.f20686u = dVar.f();
+        this.f20684s = new a();
+        this.f20685t = new k(dVar.g(this.f20682q));
+        this.f20687v = w.a(value);
     }
 
     public static /* synthetic */ InputPhoneNumberComponent e(InputPhoneNumberComponent inputPhoneNumberComponent, String str, String str2, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle, String str3, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputPhoneNumberComponent.f19797d;
+            str = inputPhoneNumberComponent.f20677d;
         }
         if ((i10 & 2) != 0) {
-            str2 = inputPhoneNumberComponent.f19798e;
+            str2 = inputPhoneNumberComponent.f20678e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputPhoneNumberComponent.f19799i;
+            jsonLogicBoolean = inputPhoneNumberComponent.f20679i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputPhoneNumberComponent.f19800o;
+            jsonLogicBoolean2 = inputPhoneNumberComponent.f20680o;
         }
         if ((i10 & 16) != 0) {
-            textBasedComponentStyle = inputPhoneNumberComponent.f19801p;
+            textBasedComponentStyle = inputPhoneNumberComponent.f20681p;
         }
         if ((i10 & 32) != 0) {
-            str3 = inputPhoneNumberComponent.f19802q;
+            str3 = inputPhoneNumberComponent.f20682q;
         }
         TextBasedComponentStyle textBasedComponentStyle2 = textBasedComponentStyle;
         String str4 = str3;
@@ -216,9 +216,9 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
     public static /* synthetic */ void getTextController$annotations() {
     }
 
-    @Override // gq.w4
+    @Override // pq.w4
     public t b() {
-        return this.f19807v;
+        return this.f20687v;
     }
 
     public final InputPhoneNumberComponent c(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle, String str) {
@@ -227,9 +227,9 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
         return new InputPhoneNumberComponent(name, value, jsonLogicBoolean, jsonLogicBoolean2, textBasedComponentStyle, str);
     }
 
-    @Override // gq.e0
+    @Override // pq.e0
     public List d() {
-        return this.f19803r;
+        return this.f20683r;
     }
 
     @Override // android.os.Parcelable
@@ -243,104 +243,104 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
         }
         if (obj instanceof InputPhoneNumberComponent) {
             InputPhoneNumberComponent inputPhoneNumberComponent = (InputPhoneNumberComponent) obj;
-            return Intrinsics.areEqual(this.f19797d, inputPhoneNumberComponent.f19797d) && Intrinsics.areEqual(this.f19798e, inputPhoneNumberComponent.f19798e) && Intrinsics.areEqual(this.f19799i, inputPhoneNumberComponent.f19799i) && Intrinsics.areEqual(this.f19800o, inputPhoneNumberComponent.f19800o) && Intrinsics.areEqual(this.f19801p, inputPhoneNumberComponent.f19801p) && Intrinsics.areEqual(this.f19802q, inputPhoneNumberComponent.f19802q);
+            return Intrinsics.areEqual(this.f20677d, inputPhoneNumberComponent.f20677d) && Intrinsics.areEqual(this.f20678e, inputPhoneNumberComponent.f20678e) && Intrinsics.areEqual(this.f20679i, inputPhoneNumberComponent.f20679i) && Intrinsics.areEqual(this.f20680o, inputPhoneNumberComponent.f20680o) && Intrinsics.areEqual(this.f20681p, inputPhoneNumberComponent.f20681p) && Intrinsics.areEqual(this.f20682q, inputPhoneNumberComponent.f20682q);
         }
         return false;
     }
 
     public final List f() {
-        return this.f19806u;
+        return this.f20686u;
     }
 
-    @Override // gq.v
+    public final k g() {
+        return this.f20685t;
+    }
+
+    @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f19800o;
+        return this.f20680o;
     }
 
-    @Override // gq.e0
+    @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f19799i;
+        return this.f20679i;
     }
 
-    @Override // gq.k5
+    @Override // pq.k5
     public String getName() {
-        return this.f19797d;
-    }
-
-    public final k h() {
-        return this.f19805t;
+        return this.f20677d;
     }
 
     public int hashCode() {
-        int hashCode = ((this.f19797d.hashCode() * 31) + this.f19798e.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f19799i;
+        int hashCode = ((this.f20677d.hashCode() * 31) + this.f20678e.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20679i;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19800o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20680o;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        TextBasedComponentStyle textBasedComponentStyle = this.f19801p;
+        TextBasedComponentStyle textBasedComponentStyle = this.f20681p;
         int hashCode4 = (hashCode3 + (textBasedComponentStyle == null ? 0 : textBasedComponentStyle.hashCode())) * 31;
-        String str = this.f19802q;
+        String str = this.f20682q;
         return hashCode4 + (str != null ? str.hashCode() : 0);
     }
 
     public final c2 i() {
-        return this.f19804s;
+        return this.f20684s;
     }
 
     public final TextBasedComponentStyle j() {
-        return this.f19801p;
+        return this.f20681p;
     }
 
-    public final String l() {
-        return this.f19802q;
+    public final String k() {
+        return this.f20682q;
     }
 
-    public void o(t tVar) {
+    public void l(t tVar) {
         Intrinsics.checkNotNullParameter(tVar, "<set-?>");
-        this.f19807v = tVar;
+        this.f20687v = tVar;
     }
 
-    @Override // gq.w4
-    /* renamed from: p */
+    @Override // pq.w4
+    /* renamed from: o */
     public InputPhoneNumberComponent a(String newString) {
         Intrinsics.checkNotNullParameter(newString, "newString");
         InputPhoneNumberComponent e10 = e(this, null, newString, null, null, null, null, 61, null);
-        e10.o(b());
-        e10.f19805t = this.f19805t;
+        e10.l(b());
+        e10.f20685t = this.f20685t;
         return e10;
     }
 
-    public final InputPhoneNumberComponent q(b4 b4Var) {
+    public final InputPhoneNumberComponent p(b4 b4Var) {
         String str;
         if (b4Var != null) {
-            str = hq.d.f26469a.e(b4Var);
+            str = qq.d.f45610a.e(b4Var);
         } else {
             str = null;
         }
         InputPhoneNumberComponent e10 = e(this, null, null, null, null, null, str, 31, null);
-        e10.o(b());
-        e10.f19805t = this.f19805t;
+        e10.l(b());
+        e10.f20685t = this.f20685t;
         return e10;
     }
 
     public String toString() {
-        String str = this.f19797d;
-        String str2 = this.f19798e;
-        JsonLogicBoolean jsonLogicBoolean = this.f19799i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19800o;
-        TextBasedComponentStyle textBasedComponentStyle = this.f19801p;
-        String str3 = this.f19802q;
+        String str = this.f20677d;
+        String str2 = this.f20678e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20679i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20680o;
+        TextBasedComponentStyle textBasedComponentStyle = this.f20681p;
+        String str3 = this.f20682q;
         return "InputPhoneNumberComponent(name=" + str + ", value=" + str2 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", errorTextStyle=" + textBasedComponentStyle + ", selectedCountryCode=" + str3 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f19797d);
-        dest.writeString(this.f19798e);
-        dest.writeParcelable(this.f19799i, i10);
-        dest.writeParcelable(this.f19800o, i10);
-        dest.writeParcelable(this.f19801p, i10);
-        dest.writeString(this.f19802q);
+        dest.writeString(this.f20677d);
+        dest.writeString(this.f20678e);
+        dest.writeParcelable(this.f20679i, i10);
+        dest.writeParcelable(this.f20680o, i10);
+        dest.writeParcelable(this.f20681p, i10);
+        dest.writeString(this.f20682q);
     }
 }

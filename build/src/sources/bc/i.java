@@ -5,23 +5,23 @@ import android.content.Context;
 class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f6450a;
+    private final Context f6556a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final kc.a f6451b;
+    private final kc.a f6557b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final kc.a f6452c;
+    private final kc.a f6558c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(Context context, kc.a aVar, kc.a aVar2) {
-        this.f6450a = context;
-        this.f6451b = aVar;
-        this.f6452c = aVar2;
+        this.f6556a = context;
+        this.f6557b = aVar;
+        this.f6558c = aVar2;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h a(String str) {
-        return h.a(this.f6450a, this.f6451b, this.f6452c, str);
+        return h.a(this.f6556a, this.f6557b, this.f6558c, str);
     }
 }

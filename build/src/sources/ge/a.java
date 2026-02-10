@@ -10,29 +10,29 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import ni.d;
 import oe.h0;
 import oe.y;
 import oe.z;
+import pi.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class a extends f {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Pattern f24257q = Pattern.compile("\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*-->\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*");
+    private static final Pattern f25557q = Pattern.compile("\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*-->\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*");
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Pattern f24258r = Pattern.compile("\\{\\\\.*?\\}");
+    private static final Pattern f25558r = Pattern.compile("\\{\\\\.*?\\}");
 
     /* renamed from: o  reason: collision with root package name */
-    private final StringBuilder f24259o;
+    private final StringBuilder f25559o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final ArrayList f24260p;
+    private final ArrayList f25560p;
 
     public a() {
         super("SubripDecoder");
-        this.f24259o = new StringBuilder();
-        this.f24260p = new ArrayList();
+        this.f25559o = new StringBuilder();
+        this.f25560p = new ArrayList();
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -237,7 +237,7 @@ public final class a extends f {
         if (P != null) {
             return P;
         }
-        return d.f38904c;
+        return d.f42737c;
     }
 
     static float D(int i10) {
@@ -272,7 +272,7 @@ public final class a extends f {
     private String F(String str, ArrayList arrayList) {
         String trim = str.trim();
         StringBuilder sb2 = new StringBuilder(trim);
-        Matcher matcher = f24258r.matcher(trim);
+        Matcher matcher = f25558r.matcher(trim);
         int i10 = 0;
         while (matcher.find()) {
             String group = matcher.group();
@@ -305,22 +305,22 @@ public final class a extends f {
                         y.i("SubripDecoder", "Unexpected end");
                         break;
                     }
-                    Matcher matcher = f24257q.matcher(t11);
+                    Matcher matcher = f25557q.matcher(t11);
                     if (matcher.matches()) {
                         zVar.a(E(matcher, 1));
                         zVar.a(E(matcher, 6));
-                        this.f24259o.setLength(0);
-                        this.f24260p.clear();
+                        this.f25559o.setLength(0);
+                        this.f25560p.clear();
                         for (String t12 = h0Var.t(C); !TextUtils.isEmpty(t12); t12 = h0Var.t(C)) {
-                            if (this.f24259o.length() > 0) {
-                                this.f24259o.append("<br>");
+                            if (this.f25559o.length() > 0) {
+                                this.f25559o.append("<br>");
                             }
-                            this.f24259o.append(F(t12, this.f24260p));
+                            this.f25559o.append(F(t12, this.f25560p));
                         }
-                        Spanned fromHtml = Html.fromHtml(this.f24259o.toString());
+                        Spanned fromHtml = Html.fromHtml(this.f25559o.toString());
                         while (true) {
-                            if (i11 < this.f24260p.size()) {
-                                str = (String) this.f24260p.get(i11);
+                            if (i11 < this.f25560p.size()) {
+                                str = (String) this.f25560p.get(i11);
                                 if (str.matches("\\{\\\\an[1-9]\\}")) {
                                     break;
                                 }

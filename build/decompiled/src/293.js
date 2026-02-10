@@ -281,7 +281,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var1 = var1.props;
                                 var1 = var1.onDrawerStateChanged;
                                 if (!var1) {
-                                    _fun4494_ip = 67;
+                                    _fun4494_ip = 66;
                                     continue _fun4494
                                 }
                             case 21:
@@ -294,7 +294,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var0 = var0.drawerState;
                                 var0 = var3[var0];
                                 var0 = var1.bind(var2)(var0);
-                            case 67:
+                            case 66:
                                 var0 = undefined;
                                 return var0;
                         }

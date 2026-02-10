@@ -1,44 +1,28 @@
 package rr;
 
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import java.io.File;
+import kotlin.jvm.internal.Intrinsics;
+import ls.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d {
+public final class d implements a {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final d f49187d = new d("WARNING", 0);
+    /* renamed from: a  reason: collision with root package name */
+    private final File f47742a;
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final d f49188e = new d("ERROR", 1);
-
-    /* renamed from: i  reason: collision with root package name */
-    public static final d f49189i = new d("HIDDEN", 2);
-
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ d[] f49190o;
-
-    /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f49191p;
-
-    static {
-        d[] a10 = a();
-        f49190o = a10;
-        f49191p = yr.a.a(a10);
+    public d(File destination) {
+        Intrinsics.checkParameterIsNotNull(destination, "destination");
+        this.f47742a = destination;
     }
 
-    private d(String str, int i10) {
+    @Override // rr.a
+    public boolean isSatisfied(File imageFile) {
+        Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
+        return Intrinsics.areEqual(imageFile.getAbsolutePath(), this.f47742a.getAbsolutePath());
     }
 
-    private static final /* synthetic */ d[] a() {
-        return new d[]{f49187d, f49188e, f49189i};
-    }
-
-    public static d valueOf(String str) {
-        return (d) Enum.valueOf(d.class, str);
-    }
-
-    public static d[] values() {
-        return (d[]) f49190o.clone();
+    @Override // rr.a
+    public File satisfy(File imageFile) {
+        Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
+        return j.q(imageFile, this.f47742a, true, 0, 4, null);
     }
 }

@@ -10,50 +10,50 @@ import uc.y;
 final class m {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ni.p f7478d = ni.p.d(':');
+    private static final pi.p f8159d = pi.p.d(':');
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ni.p f7479e = ni.p.d('*');
+    private static final pi.p f8160e = pi.p.d('*');
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f7480a = new ArrayList();
+    private final List f8161a = new ArrayList();
 
     /* renamed from: b  reason: collision with root package name */
-    private int f7481b = 0;
+    private int f8162b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f7482c;
+    private int f8163c;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f7483a;
+        public final int f8164a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f7484b;
+        public final long f8165b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f7485c;
+        public final int f8166c;
 
         public a(int i10, long j10, int i11) {
-            this.f7483a = i10;
-            this.f7484b = j10;
-            this.f7485c = i11;
+            this.f8164a = i10;
+            this.f8165b = j10;
+            this.f8166c = i11;
         }
     }
 
     private void a(uc.l lVar, y yVar) {
         h0 h0Var = new h0(8);
         lVar.readFully(h0Var.e(), 0, 8);
-        this.f7482c = h0Var.u() + 8;
+        this.f8163c = h0Var.u() + 8;
         if (h0Var.q() != 1397048916) {
-            yVar.f51535a = 0L;
+            yVar.f50714a = 0L;
             return;
         }
-        yVar.f51535a = lVar.getPosition() - (this.f7482c - 12);
-        this.f7481b = 2;
+        yVar.f50714a = lVar.getPosition() - (this.f8163c - 12);
+        this.f8162b = 2;
     }
 
     private static int b(String str) {
@@ -109,7 +109,7 @@ final class m {
 
     private void d(uc.l lVar, y yVar) {
         long length = lVar.getLength();
-        int i10 = this.f7482c - 20;
+        int i10 = this.f8163c - 20;
         h0 h0Var = new h0(i10);
         lVar.readFully(h0Var.e(), 0, i10);
         for (int i11 = 0; i11 < i10 / 12; i11++) {
@@ -118,29 +118,29 @@ final class m {
             if (w10 != 2192 && w10 != 2816 && w10 != 2817 && w10 != 2819 && w10 != 2820) {
                 h0Var.V(8);
             } else {
-                this.f7480a.add(new a(w10, (length - this.f7482c) - h0Var.u(), h0Var.u()));
+                this.f8161a.add(new a(w10, (length - this.f8163c) - h0Var.u(), h0Var.u()));
             }
         }
-        if (this.f7480a.isEmpty()) {
-            yVar.f51535a = 0L;
+        if (this.f8161a.isEmpty()) {
+            yVar.f50714a = 0L;
             return;
         }
-        this.f7481b = 3;
-        yVar.f51535a = ((a) this.f7480a.get(0)).f7484b;
+        this.f8162b = 3;
+        yVar.f50714a = ((a) this.f8161a.get(0)).f8165b;
     }
 
     private void e(uc.l lVar, List list) {
         long position = lVar.getPosition();
-        int length = (int) ((lVar.getLength() - lVar.getPosition()) - this.f7482c);
+        int length = (int) ((lVar.getLength() - lVar.getPosition()) - this.f8163c);
         h0 h0Var = new h0(length);
         lVar.readFully(h0Var.e(), 0, length);
-        for (int i10 = 0; i10 < this.f7480a.size(); i10++) {
-            a aVar = (a) this.f7480a.get(i10);
-            h0Var.U((int) (aVar.f7484b - position));
+        for (int i10 = 0; i10 < this.f8161a.size(); i10++) {
+            a aVar = (a) this.f8161a.get(i10);
+            h0Var.U((int) (aVar.f8165b - position));
             h0Var.V(4);
             int u10 = h0Var.u();
             int b10 = b(h0Var.E(u10));
-            int i11 = aVar.f7485c - (u10 + 8);
+            int i11 = aVar.f8166c - (u10 + 8);
             if (b10 != 2192) {
                 if (b10 != 2816 && b10 != 2817 && b10 != 2819 && b10 != 2820) {
                     throw new IllegalStateException();
@@ -153,9 +153,9 @@ final class m {
 
     private static nd.c f(h0 h0Var, int i10) {
         ArrayList arrayList = new ArrayList();
-        List f10 = f7479e.f(h0Var.E(i10));
+        List f10 = f8160e.f(h0Var.E(i10));
         for (int i11 = 0; i11 < f10.size(); i11++) {
-            List f11 = f7478d.f((CharSequence) f10.get(i11));
+            List f11 = f8159d.f((CharSequence) f10.get(i11));
             if (f11.size() == 3) {
                 try {
                     arrayList.add(new c.b(Long.parseLong((String) f11.get(0)), Long.parseLong((String) f11.get(1)), 1 << (Integer.parseInt((String) f11.get(2)) - 1)));
@@ -170,14 +170,14 @@ final class m {
     }
 
     public int c(uc.l lVar, y yVar, List list) {
-        int i10 = this.f7481b;
+        int i10 = this.f8162b;
         long j10 = 0;
         if (i10 != 0) {
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
                         e(lVar, list);
-                        yVar.f51535a = 0L;
+                        yVar.f50714a = 0L;
                     } else {
                         throw new IllegalStateException();
                     }
@@ -192,14 +192,14 @@ final class m {
             if (length != -1 && length >= 8) {
                 j10 = length - 8;
             }
-            yVar.f51535a = j10;
-            this.f7481b = 1;
+            yVar.f50714a = j10;
+            this.f8162b = 1;
         }
         return 1;
     }
 
     public void g() {
-        this.f7480a.clear();
-        this.f7481b = 0;
+        this.f8161a.clear();
+        this.f8162b = 0;
     }
 }

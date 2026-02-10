@@ -1,0 +1,59 @@
+package tt;
+
+import java.util.Arrays;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public final class z2 extends d2 {
+
+    /* renamed from: a  reason: collision with root package name */
+    private long[] f50109a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private int f50110b;
+
+    public /* synthetic */ z2(long[] jArr, DefaultConstructorMarker defaultConstructorMarker) {
+        this(jArr);
+    }
+
+    @Override // tt.d2
+    public /* bridge */ /* synthetic */ Object a() {
+        return as.c0.b(f());
+    }
+
+    @Override // tt.d2
+    public void b(int i10) {
+        if (as.c0.l(this.f50109a) < i10) {
+            long[] jArr = this.f50109a;
+            long[] copyOf = Arrays.copyOf(jArr, kotlin.ranges.d.d(i10, as.c0.l(jArr) * 2));
+            Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
+            this.f50109a = as.c0.d(copyOf);
+        }
+    }
+
+    @Override // tt.d2
+    public int d() {
+        return this.f50110b;
+    }
+
+    public final void e(long j10) {
+        d2.c(this, 0, 1, null);
+        long[] jArr = this.f50109a;
+        int d10 = d();
+        this.f50110b = d10 + 1;
+        as.c0.r(jArr, d10, j10);
+    }
+
+    public long[] f() {
+        long[] copyOf = Arrays.copyOf(this.f50109a, d());
+        Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
+        return as.c0.d(copyOf);
+    }
+
+    private z2(long[] bufferWithData) {
+        Intrinsics.checkNotNullParameter(bufferWithData, "bufferWithData");
+        this.f50109a = bufferWithData;
+        this.f50110b = as.c0.l(bufferWithData);
+        b(10);
+    }
+}

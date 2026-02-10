@@ -13,68 +13,68 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.Checkable;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
-import bh.j;
-import rh.h;
-import rh.k;
-import rh.n;
+import bh.k;
+import th.i;
+import th.l;
+import th.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class MaterialCardView extends CardView implements Checkable, n {
+public class MaterialCardView extends CardView implements Checkable, o {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final int[] f14831p = {16842911};
+    private static final int[] f15437p = {16842911};
 
     /* renamed from: q  reason: collision with root package name */
-    private static final int[] f14832q = {16842912};
+    private static final int[] f15438q = {16842912};
 
     /* renamed from: r  reason: collision with root package name */
-    private static final int[] f14833r = {bh.b.f6618a0};
+    private static final int[] f15439r = {bh.b.f6736g0};
 
     /* renamed from: s  reason: collision with root package name */
-    private static final int f14834s = j.f6799o;
+    private static final int f15440s = k.f6946u;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f14835d;
+    private final b f15441d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f14836e;
+    private boolean f15442e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f14837i;
+    private boolean f15443i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f14838o;
+    private boolean f15444o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
     }
 
     public MaterialCardView(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, bh.b.A);
+        this(context, attributeSet, bh.b.C);
     }
 
     private void b() {
         if (Build.VERSION.SDK_INT > 26) {
-            this.f14835d.k();
+            this.f15441d.i();
         }
     }
 
     @NonNull
     private RectF getBoundsAsRectF() {
         RectF rectF = new RectF();
-        rectF.set(this.f14835d.l().getBounds());
+        rectF.set(this.f15441d.j().getBounds());
         return rectF;
     }
 
     public boolean c() {
-        b bVar = this.f14835d;
-        if (bVar != null && bVar.F()) {
+        b bVar = this.f15441d;
+        if (bVar != null && bVar.D()) {
             return true;
         }
         return false;
     }
 
     public boolean d() {
-        return this.f14838o;
+        return this.f15444o;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -85,12 +85,12 @@ public class MaterialCardView extends CardView implements Checkable, n {
     @Override // androidx.cardview.widget.CardView
     @NonNull
     public ColorStateList getCardBackgroundColor() {
-        return this.f14835d.m();
+        return this.f15441d.k();
     }
 
     @NonNull
     public ColorStateList getCardForegroundColor() {
-        return this.f14835d.n();
+        return this.f15441d.l();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -99,99 +99,99 @@ public class MaterialCardView extends CardView implements Checkable, n {
     }
 
     public Drawable getCheckedIcon() {
-        return this.f14835d.o();
+        return this.f15441d.m();
     }
 
     public int getCheckedIconGravity() {
-        return this.f14835d.p();
+        return this.f15441d.n();
     }
 
     public int getCheckedIconMargin() {
-        return this.f14835d.q();
+        return this.f15441d.o();
     }
 
     public int getCheckedIconSize() {
-        return this.f14835d.r();
+        return this.f15441d.p();
     }
 
     public ColorStateList getCheckedIconTint() {
-        return this.f14835d.s();
+        return this.f15441d.q();
     }
 
     @Override // androidx.cardview.widget.CardView
     public int getContentPaddingBottom() {
-        return this.f14835d.C().bottom;
+        return this.f15441d.A().bottom;
     }
 
     @Override // androidx.cardview.widget.CardView
     public int getContentPaddingLeft() {
-        return this.f14835d.C().left;
+        return this.f15441d.A().left;
     }
 
     @Override // androidx.cardview.widget.CardView
     public int getContentPaddingRight() {
-        return this.f14835d.C().right;
+        return this.f15441d.A().right;
     }
 
     @Override // androidx.cardview.widget.CardView
     public int getContentPaddingTop() {
-        return this.f14835d.C().top;
+        return this.f15441d.A().top;
     }
 
     public float getProgress() {
-        return this.f14835d.w();
+        return this.f15441d.u();
     }
 
     @Override // androidx.cardview.widget.CardView
     public float getRadius() {
-        return this.f14835d.u();
+        return this.f15441d.s();
     }
 
     public ColorStateList getRippleColor() {
-        return this.f14835d.x();
+        return this.f15441d.v();
     }
 
     @NonNull
-    public k getShapeAppearanceModel() {
-        return this.f14835d.y();
+    public l getShapeAppearanceModel() {
+        return this.f15441d.w();
     }
 
     @Deprecated
     public int getStrokeColor() {
-        return this.f14835d.z();
+        return this.f15441d.x();
     }
 
     public ColorStateList getStrokeColorStateList() {
-        return this.f14835d.A();
+        return this.f15441d.y();
     }
 
     public int getStrokeWidth() {
-        return this.f14835d.B();
+        return this.f15441d.z();
     }
 
     @Override // android.widget.Checkable
     public boolean isChecked() {
-        return this.f14837i;
+        return this.f15443i;
     }
 
     @Override // android.view.ViewGroup, android.view.View
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        this.f14835d.f0();
-        h.f(this, this.f14835d.l());
+        this.f15441d.d0();
+        i.f(this, this.f15441d.j());
     }
 
     @Override // android.view.ViewGroup, android.view.View
     protected int[] onCreateDrawableState(int i10) {
         int[] onCreateDrawableState = super.onCreateDrawableState(i10 + 3);
         if (c()) {
-            View.mergeDrawableStates(onCreateDrawableState, f14831p);
+            View.mergeDrawableStates(onCreateDrawableState, f15437p);
         }
         if (isChecked()) {
-            View.mergeDrawableStates(onCreateDrawableState, f14832q);
+            View.mergeDrawableStates(onCreateDrawableState, f15438q);
         }
         if (d()) {
-            View.mergeDrawableStates(onCreateDrawableState, f14833r);
+            View.mergeDrawableStates(onCreateDrawableState, f15439r);
         }
         return onCreateDrawableState;
     }
@@ -216,7 +216,7 @@ public class MaterialCardView extends CardView implements Checkable, n {
     @Override // androidx.cardview.widget.CardView, android.widget.FrameLayout, android.view.View
     public void onMeasure(int i10, int i11) {
         super.onMeasure(i10, i11);
-        this.f14835d.J(getMeasuredWidth(), getMeasuredHeight());
+        this.f15441d.H(getMeasuredWidth(), getMeasuredHeight());
     }
 
     @Override // android.view.View
@@ -226,10 +226,10 @@ public class MaterialCardView extends CardView implements Checkable, n {
 
     @Override // android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
-        if (this.f14836e) {
-            if (!this.f14835d.E()) {
+        if (this.f15442e) {
+            if (!this.f15441d.C()) {
                 Log.i("MaterialCardView", "Setting a custom background is not supported.");
-                this.f14835d.K(true);
+                this.f15441d.I(true);
             }
             super.setBackgroundDrawable(drawable);
         }
@@ -242,85 +242,85 @@ public class MaterialCardView extends CardView implements Checkable, n {
 
     @Override // androidx.cardview.widget.CardView
     public void setCardBackgroundColor(int i10) {
-        this.f14835d.L(ColorStateList.valueOf(i10));
+        this.f15441d.J(ColorStateList.valueOf(i10));
     }
 
     @Override // androidx.cardview.widget.CardView
     public void setCardElevation(float f10) {
         super.setCardElevation(f10);
-        this.f14835d.h0();
+        this.f15441d.f0();
     }
 
     public void setCardForegroundColor(ColorStateList colorStateList) {
-        this.f14835d.M(colorStateList);
+        this.f15441d.K(colorStateList);
     }
 
     public void setCheckable(boolean z10) {
-        this.f14835d.N(z10);
+        this.f15441d.L(z10);
     }
 
     @Override // android.widget.Checkable
     public void setChecked(boolean z10) {
-        if (this.f14837i != z10) {
+        if (this.f15443i != z10) {
             toggle();
         }
     }
 
     public void setCheckedIcon(Drawable drawable) {
-        this.f14835d.Q(drawable);
+        this.f15441d.O(drawable);
     }
 
     public void setCheckedIconGravity(int i10) {
-        if (this.f14835d.p() != i10) {
-            this.f14835d.R(i10);
+        if (this.f15441d.n() != i10) {
+            this.f15441d.P(i10);
         }
     }
 
     public void setCheckedIconMargin(int i10) {
-        this.f14835d.S(i10);
+        this.f15441d.Q(i10);
     }
 
     public void setCheckedIconMarginResource(int i10) {
         if (i10 != -1) {
-            this.f14835d.S(getResources().getDimensionPixelSize(i10));
+            this.f15441d.Q(getResources().getDimensionPixelSize(i10));
         }
     }
 
     public void setCheckedIconResource(int i10) {
-        this.f14835d.Q(g.a.b(getContext(), i10));
+        this.f15441d.O(g.a.b(getContext(), i10));
     }
 
     public void setCheckedIconSize(int i10) {
-        this.f14835d.T(i10);
+        this.f15441d.R(i10);
     }
 
     public void setCheckedIconSizeResource(int i10) {
         if (i10 != 0) {
-            this.f14835d.T(getResources().getDimensionPixelSize(i10));
+            this.f15441d.R(getResources().getDimensionPixelSize(i10));
         }
     }
 
     public void setCheckedIconTint(ColorStateList colorStateList) {
-        this.f14835d.U(colorStateList);
+        this.f15441d.S(colorStateList);
     }
 
     @Override // android.view.View
     public void setClickable(boolean z10) {
         super.setClickable(z10);
-        b bVar = this.f14835d;
+        b bVar = this.f15441d;
         if (bVar != null) {
-            bVar.f0();
+            bVar.d0();
         }
     }
 
     @Override // androidx.cardview.widget.CardView
     public void setContentPadding(int i10, int i11, int i12, int i13) {
-        this.f14835d.b0(i10, i11, i12, i13);
+        this.f15441d.Z(i10, i11, i12, i13);
     }
 
     public void setDragged(boolean z10) {
-        if (this.f14838o != z10) {
-            this.f14838o = z10;
+        if (this.f15444o != z10) {
+            this.f15444o = z10;
             refreshDrawableState();
             b();
             invalidate();
@@ -330,7 +330,7 @@ public class MaterialCardView extends CardView implements Checkable, n {
     @Override // androidx.cardview.widget.CardView
     public void setMaxCardElevation(float f10) {
         super.setMaxCardElevation(f10);
-        this.f14835d.j0();
+        this.f15441d.h0();
     }
 
     public void setOnCheckedChangeListener(a aVar) {
@@ -339,32 +339,32 @@ public class MaterialCardView extends CardView implements Checkable, n {
     @Override // androidx.cardview.widget.CardView
     public void setPreventCornerOverlap(boolean z10) {
         super.setPreventCornerOverlap(z10);
-        this.f14835d.j0();
-        this.f14835d.g0();
+        this.f15441d.h0();
+        this.f15441d.e0();
     }
 
     public void setProgress(float f10) {
-        this.f14835d.W(f10);
+        this.f15441d.U(f10);
     }
 
     @Override // androidx.cardview.widget.CardView
     public void setRadius(float f10) {
         super.setRadius(f10);
-        this.f14835d.V(f10);
+        this.f15441d.T(f10);
     }
 
     public void setRippleColor(ColorStateList colorStateList) {
-        this.f14835d.X(colorStateList);
+        this.f15441d.V(colorStateList);
     }
 
     public void setRippleColorResource(int i10) {
-        this.f14835d.X(g.a.a(getContext(), i10));
+        this.f15441d.V(g.a.a(getContext(), i10));
     }
 
-    @Override // rh.n
-    public void setShapeAppearanceModel(@NonNull k kVar) {
-        setClipToOutline(kVar.u(getBoundsAsRectF()));
-        this.f14835d.Y(kVar);
+    @Override // th.o
+    public void setShapeAppearanceModel(@NonNull l lVar) {
+        setClipToOutline(lVar.v(getBoundsAsRectF()));
+        this.f15441d.W(lVar);
     }
 
     public void setStrokeColor(int i10) {
@@ -372,24 +372,24 @@ public class MaterialCardView extends CardView implements Checkable, n {
     }
 
     public void setStrokeWidth(int i10) {
-        this.f14835d.a0(i10);
+        this.f15441d.Y(i10);
         invalidate();
     }
 
     @Override // androidx.cardview.widget.CardView
     public void setUseCompatPadding(boolean z10) {
         super.setUseCompatPadding(z10);
-        this.f14835d.j0();
-        this.f14835d.g0();
+        this.f15441d.h0();
+        this.f15441d.e0();
     }
 
     @Override // android.widget.Checkable
     public void toggle() {
         if (c() && isEnabled()) {
-            this.f14837i = !this.f14837i;
+            this.f15443i = !this.f15443i;
             refreshDrawableState();
             b();
-            this.f14835d.P(this.f14837i, true);
+            this.f15441d.N(this.f15443i, true);
         }
     }
 
@@ -401,31 +401,31 @@ public class MaterialCardView extends CardView implements Checkable, n {
     public MaterialCardView(android.content.Context r7, android.util.AttributeSet r8, int r9) {
         /*
             r6 = this;
-            int r4 = com.google.android.material.card.MaterialCardView.f14834s
-            android.content.Context r7 = uh.a.c(r7, r8, r9, r4)
+            int r4 = com.google.android.material.card.MaterialCardView.f15440s
+            android.content.Context r7 = wh.a.d(r7, r8, r9, r4)
             r6.<init>(r7, r8, r9)
             r7 = 0
-            r6.f14837i = r7
-            r6.f14838o = r7
+            r6.f15443i = r7
+            r6.f15444o = r7
             r0 = 1
-            r6.f14836e = r0
+            r6.f15442e = r0
             android.content.Context r0 = r6.getContext()
-            int[] r2 = bh.k.J3
+            int[] r2 = bh.l.N3
             int[] r5 = new int[r7]
             r1 = r8
             r3 = r9
-            android.content.res.TypedArray r7 = com.google.android.material.internal.l.i(r0, r1, r2, r3, r4, r5)
+            android.content.res.TypedArray r7 = com.google.android.material.internal.m.i(r0, r1, r2, r3, r4, r5)
             com.google.android.material.card.b r8 = new com.google.android.material.card.b
             r8.<init>(r6, r1, r3, r4)
-            r6.f14835d = r8
+            r6.f15441d = r8
             android.content.res.ColorStateList r9 = super.getCardBackgroundColor()
-            r8.L(r9)
+            r8.J(r9)
             int r9 = super.getContentPaddingLeft()
             int r0 = super.getContentPaddingTop()
             int r1 = super.getContentPaddingRight()
             int r2 = super.getContentPaddingBottom()
-            r8.b0(r9, r0, r1, r2)
-            r8.I(r7)
+            r8.Z(r9, r0, r1, r2)
+            r8.G(r7)
             r7.recycle()
             return
         */
@@ -434,11 +434,11 @@ public class MaterialCardView extends CardView implements Checkable, n {
 
     @Override // androidx.cardview.widget.CardView
     public void setCardBackgroundColor(ColorStateList colorStateList) {
-        this.f14835d.L(colorStateList);
+        this.f15441d.J(colorStateList);
     }
 
     public void setStrokeColor(ColorStateList colorStateList) {
-        this.f14835d.Z(colorStateList);
+        this.f15441d.X(colorStateList);
         invalidate();
     }
 }

@@ -11,13 +11,13 @@ public interface b extends IInterface {
 
         /* renamed from: cf.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static class C0151a extends fg.a implements b {
-            C0151a(IBinder iBinder) {
+        public static class C0134a extends fg.a implements b {
+            C0134a(IBinder iBinder) {
                 super(iBinder, "com.google.android.gms.auth.blockstore.restorecredential.internal.IRestoreCredentialService");
             }
 
             @Override // cf.b
-            public void j0(bf.a aVar, cf.a aVar2) {
+            public void k0(bf.a aVar, cf.a aVar2) {
                 Parcel e10 = e();
                 fg.d.b(e10, aVar);
                 fg.d.c(e10, aVar2);
@@ -33,9 +33,9 @@ public interface b extends IInterface {
             if (queryLocalInterface instanceof b) {
                 return (b) queryLocalInterface;
             }
-            return new C0151a(iBinder);
+            return new C0134a(iBinder);
         }
     }
 
-    void j0(bf.a aVar, cf.a aVar2);
+    void k0(bf.a aVar, cf.a aVar2);
 }

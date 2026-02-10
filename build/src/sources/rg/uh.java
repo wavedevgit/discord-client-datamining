@@ -13,14 +13,14 @@ public enum uh implements x1 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f48745d;
+    private final int f47199d;
 
     uh(int i10) {
-        this.f48745d = i10;
+        this.f47199d = i10;
     }
 
     @Override // rg.x1
     public final int zza() {
-        return this.f48745d;
+        return this.f47199d;
     }
 }

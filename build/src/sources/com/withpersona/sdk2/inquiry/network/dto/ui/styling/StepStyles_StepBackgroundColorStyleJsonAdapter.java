@@ -52,7 +52,7 @@ public final class StepStyles_StepBackgroundColorStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
@@ -68,7 +68,7 @@ public final class StepStyles_StepBackgroundColorStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.StepBackgroundColorStyle stepBackgroundColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepBackgroundColorStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, stepBackgroundColorStyle.getBase());
             writer.J("option");

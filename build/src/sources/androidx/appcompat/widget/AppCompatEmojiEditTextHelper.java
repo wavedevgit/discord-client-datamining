@@ -11,21 +11,21 @@ import android.widget.EditText;
 class AppCompatEmojiEditTextHelper {
 
     /* renamed from: a  reason: collision with root package name */
-    private final EditText f1579a;
+    private final EditText f1581a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d3.a f1580b;
+    private final d3.a f1582b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public AppCompatEmojiEditTextHelper(EditText editText) {
-        this.f1579a = editText;
-        this.f1580b = new d3.a(editText, false);
+        this.f1581a = editText;
+        this.f1582b = new d3.a(editText, false);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public KeyListener a(KeyListener keyListener) {
         if (b(keyListener)) {
-            return this.f1580b.a(keyListener);
+            return this.f1582b.a(keyListener);
         }
         return keyListener;
     }
@@ -37,16 +37,16 @@ class AppCompatEmojiEditTextHelper {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean c() {
-        return this.f1580b.b();
+        return this.f1582b.b();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d(AttributeSet attributeSet, int i10) {
-        TypedArray obtainStyledAttributes = this.f1579a.getContext().obtainStyledAttributes(attributeSet, f.j.f22322g0, i10, 0);
+        TypedArray obtainStyledAttributes = this.f1581a.getContext().obtainStyledAttributes(attributeSet, f.j.f23447g0, i10, 0);
         try {
             boolean z10 = true;
-            if (obtainStyledAttributes.hasValue(f.j.f22392u0)) {
-                z10 = obtainStyledAttributes.getBoolean(f.j.f22392u0, true);
+            if (obtainStyledAttributes.hasValue(f.j.f23517u0)) {
+                z10 = obtainStyledAttributes.getBoolean(f.j.f23517u0, true);
             }
             obtainStyledAttributes.recycle();
             f(z10);
@@ -58,11 +58,11 @@ class AppCompatEmojiEditTextHelper {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public InputConnection e(InputConnection inputConnection, EditorInfo editorInfo) {
-        return this.f1580b.c(inputConnection, editorInfo);
+        return this.f1582b.c(inputConnection, editorInfo);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(boolean z10) {
-        this.f1580b.d(z10);
+        this.f1582b.d(z10);
     }
 }

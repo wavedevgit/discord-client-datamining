@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class m implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaClassMemberScope f32755d;
+    private final LazyJavaClassMemberScope f32977d;
 
     public m(LazyJavaClassMemberScope lazyJavaClassMemberScope) {
-        this.f32755d = lazyJavaClassMemberScope;
+        this.f32977d = lazyJavaClassMemberScope;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Map I0;
-        I0 = LazyJavaClassMemberScope.I0(this.f32755d);
+        I0 = LazyJavaClassMemberScope.I0(this.f32977d);
         return I0;
     }
 }

@@ -8,14 +8,14 @@ public enum he implements x1 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f48253d;
+    private final int f46707d;
 
     he(int i10) {
-        this.f48253d = i10;
+        this.f46707d = i10;
     }
 
     @Override // rg.x1
     public final int zza() {
-        return this.f48253d;
+        return this.f46707d;
     }
 }

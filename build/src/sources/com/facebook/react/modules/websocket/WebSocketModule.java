@@ -16,7 +16,6 @@ import com.facebook.react.modules.network.CustomClientBuilder;
 import com.facebook.react.modules.network.ForwardingCookieHandler;
 import com.facebook.react.modules.websocket.WebSocketModule;
 import com.reactnativecommunity.webview.RNCWebViewManager;
-import cu.l;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -30,6 +29,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
+import lu.l;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -335,7 +335,7 @@ public final class WebSocketModule extends NativeWebSocketModuleSpec {
             }
         }
         c10.F(l10.b(), new l() { // from class: com.facebook.react.modules.websocket.WebSocketModule$connect$2
-            @Override // cu.l
+            @Override // lu.l
             public void onClosed(WebSocket webSocket, int i12, String reason) {
                 Intrinsics.checkNotNullParameter(webSocket, "webSocket");
                 Intrinsics.checkNotNullParameter(reason, "reason");
@@ -349,21 +349,21 @@ public final class WebSocketModule extends NativeWebSocketModuleSpec {
                 WebSocketModule.this.sendEvent("websocketClosed", createMap);
             }
 
-            @Override // cu.l
+            @Override // lu.l
             public void onClosing(WebSocket websocket, int i12, String reason) {
                 Intrinsics.checkNotNullParameter(websocket, "websocket");
                 Intrinsics.checkNotNullParameter(reason, "reason");
                 websocket.f(i12, reason);
             }
 
-            @Override // cu.l
+            @Override // lu.l
             public void onFailure(WebSocket webSocket, Throwable t10, Response response) {
                 Intrinsics.checkNotNullParameter(webSocket, "webSocket");
                 Intrinsics.checkNotNullParameter(t10, "t");
                 WebSocketModule.this.notifyWebSocketFailed(i10, t10.getMessage());
             }
 
-            @Override // cu.l
+            @Override // lu.l
             public void onMessage(WebSocket webSocket, String text) {
                 Map map2;
                 Intrinsics.checkNotNullParameter(webSocket, "webSocket");
@@ -382,7 +382,7 @@ public final class WebSocketModule extends NativeWebSocketModuleSpec {
                 WebSocketModule.this.sendEvent("websocketMessage", createMap);
             }
 
-            @Override // cu.l
+            @Override // lu.l
             public void onOpen(WebSocket webSocket, Response response) {
                 Map map2;
                 Intrinsics.checkNotNullParameter(webSocket, "webSocket");
@@ -402,7 +402,7 @@ public final class WebSocketModule extends NativeWebSocketModuleSpec {
                 }
             }
 
-            @Override // cu.l
+            @Override // lu.l
             public void onMessage(WebSocket webSocket, ByteString bytes) {
                 Map map2;
                 Intrinsics.checkNotNullParameter(webSocket, "webSocket");
@@ -460,7 +460,7 @@ public final class WebSocketModule extends NativeWebSocketModuleSpec {
             return;
         }
         try {
-            webSocket.a(ByteString.f42342p);
+            webSocket.a(ByteString.f40592p);
         } catch (Exception e10) {
             notifyWebSocketFailed(i10, e10.getMessage());
         }
@@ -524,7 +524,7 @@ public final class WebSocketModule extends NativeWebSocketModuleSpec {
             return;
         }
         try {
-            ByteString a10 = ByteString.f42341o.a(base64String);
+            ByteString a10 = ByteString.f40591o.a(base64String);
             if (a10 != null) {
                 webSocket.a(a10);
                 return;

@@ -10,6 +10,6 @@ public final class b implements s3.a {
         db2.P("UPDATE workspec SET period_count = 1 WHERE last_enqueue_time <> 0 AND interval_duration <> 0");
         ContentValues contentValues = new ContentValues(1);
         contentValues.put("last_enqueue_time", Long.valueOf(System.currentTimeMillis()));
-        db2.t1("WorkSpec", 3, contentValues, "last_enqueue_time = 0 AND interval_duration <> 0 ", new Object[0]);
+        db2.y1("WorkSpec", 3, contentValues, "last_enqueue_time = 0 AND interval_duration <> 0 ", new Object[0]);
     }
 }

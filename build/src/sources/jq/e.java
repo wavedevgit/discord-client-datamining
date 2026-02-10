@@ -1,57 +1,53 @@
 package jq;
 
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.Guideline;
-import androidx.viewbinding.ViewBinding;
+import bq.m;
+import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e implements ViewBinding {
+public abstract class e {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f30342a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
 
-    /* renamed from: b  reason: collision with root package name */
-    public final Guideline f30343b;
+        /* renamed from: a  reason: collision with root package name */
+        final /* synthetic */ Function0 f31297a;
 
-    /* renamed from: c  reason: collision with root package name */
-    public final Guideline f30344c;
-
-    private e(ConstraintLayout constraintLayout, Guideline guideline, Guideline guideline2) {
-        this.f30342a = constraintLayout;
-        this.f30343b = guideline;
-        this.f30344c = guideline2;
+        a(Function0 function0) {
+            this.f31297a = function0;
+        }
     }
 
-    public static e a(View view) {
-        int i10 = eq.e.W;
-        Guideline guideline = (Guideline) e4.a.a(view, i10);
-        if (guideline != null) {
-            i10 = eq.e.f22007r0;
-            Guideline guideline2 = (Guideline) e4.a.a(view, i10);
-            if (guideline2 != null) {
-                return new e((ConstraintLayout) view, guideline, guideline2);
+    public static final void b(final jq.a navigationState, final Function0 back, final Function0 cancel, Pi2NavigationBar navigationBar, View backPressHandler) {
+        Intrinsics.checkNotNullParameter(navigationState, "navigationState");
+        Intrinsics.checkNotNullParameter(back, "back");
+        Intrinsics.checkNotNullParameter(cancel, "cancel");
+        Intrinsics.checkNotNullParameter(navigationBar, "navigationBar");
+        Intrinsics.checkNotNullParameter(backPressHandler, "backPressHandler");
+        navigationBar.l(navigationState, back, cancel);
+        Function0 function0 = new Function0() { // from class: jq.d
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                Unit c10;
+                c10 = e.c(a.this, back, cancel);
+                return c10;
             }
+        };
+        backPressHandler.setTag(m.f7396h, new a(function0));
+        if (navigationState.a()) {
+            gn.e.c(backPressHandler, function0);
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    public static e c(LayoutInflater layoutInflater) {
-        return d(layoutInflater, null, false);
-    }
-
-    public static e d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(eq.f.f22028e, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit c(jq.a aVar, Function0 function0, Function0 function02) {
+        if (aVar.b()) {
+            function0.invoke();
+        } else {
+            function02.invoke();
         }
-        return a(inflate);
-    }
-
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public ConstraintLayout getRoot() {
-        return this.f30342a;
+        return Unit.f31987a;
     }
 }

@@ -12,13 +12,13 @@ import androidx.annotation.NonNull;
 public class x extends ToggleButton {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AppCompatBackgroundHelper f1995d;
+    private final AppCompatBackgroundHelper f1998d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AppCompatTextHelper f1996e;
+    private final AppCompatTextHelper f1999e;
 
     /* renamed from: i  reason: collision with root package name */
-    private AppCompatEmojiTextHelper f1997i;
+    private AppCompatEmojiTextHelper f2000i;
 
     public x(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 16842827);
@@ -26,27 +26,27 @@ public class x extends ToggleButton {
 
     @NonNull
     private AppCompatEmojiTextHelper getEmojiTextViewHelper() {
-        if (this.f1997i == null) {
-            this.f1997i = new AppCompatEmojiTextHelper(this);
+        if (this.f2000i == null) {
+            this.f2000i = new AppCompatEmojiTextHelper(this);
         }
-        return this.f1997i;
+        return this.f2000i;
     }
 
     @Override // android.widget.ToggleButton, android.widget.CompoundButton, android.widget.TextView, android.view.View
     protected void drawableStateChanged() {
         super.drawableStateChanged();
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1995d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1998d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.b();
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1996e;
+        AppCompatTextHelper appCompatTextHelper = this.f1999e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.b();
         }
     }
 
     public ColorStateList getSupportBackgroundTintList() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1995d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1998d;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.c();
         }
@@ -54,7 +54,7 @@ public class x extends ToggleButton {
     }
 
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1995d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1998d;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.d();
         }
@@ -62,11 +62,11 @@ public class x extends ToggleButton {
     }
 
     public ColorStateList getSupportCompoundDrawablesTintList() {
-        return this.f1996e.j();
+        return this.f1999e.j();
     }
 
     public PorterDuff.Mode getSupportCompoundDrawablesTintMode() {
-        return this.f1996e.k();
+        return this.f1999e.k();
     }
 
     @Override // android.widget.TextView
@@ -78,7 +78,7 @@ public class x extends ToggleButton {
     @Override // android.widget.ToggleButton, android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1995d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1998d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.f(drawable);
         }
@@ -87,7 +87,7 @@ public class x extends ToggleButton {
     @Override // android.view.View
     public void setBackgroundResource(int i10) {
         super.setBackgroundResource(i10);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1995d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1998d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.g(i10);
         }
@@ -96,7 +96,7 @@ public class x extends ToggleButton {
     @Override // android.widget.TextView
     public void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
-        AppCompatTextHelper appCompatTextHelper = this.f1996e;
+        AppCompatTextHelper appCompatTextHelper = this.f1999e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.p();
         }
@@ -105,7 +105,7 @@ public class x extends ToggleButton {
     @Override // android.widget.TextView
     public void setCompoundDrawablesRelative(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawablesRelative(drawable, drawable2, drawable3, drawable4);
-        AppCompatTextHelper appCompatTextHelper = this.f1996e;
+        AppCompatTextHelper appCompatTextHelper = this.f1999e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.p();
         }
@@ -121,37 +121,37 @@ public class x extends ToggleButton {
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1995d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1998d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.i(colorStateList);
         }
     }
 
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1995d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1998d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.j(mode);
         }
     }
 
     public void setSupportCompoundDrawablesTintList(ColorStateList colorStateList) {
-        this.f1996e.w(colorStateList);
-        this.f1996e.b();
+        this.f1999e.w(colorStateList);
+        this.f1999e.b();
     }
 
     public void setSupportCompoundDrawablesTintMode(PorterDuff.Mode mode) {
-        this.f1996e.x(mode);
-        this.f1996e.b();
+        this.f1999e.x(mode);
+        this.f1999e.b();
     }
 
     public x(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         r0.a(this, getContext());
         AppCompatBackgroundHelper appCompatBackgroundHelper = new AppCompatBackgroundHelper(this);
-        this.f1995d = appCompatBackgroundHelper;
+        this.f1998d = appCompatBackgroundHelper;
         appCompatBackgroundHelper.e(attributeSet, i10);
         AppCompatTextHelper appCompatTextHelper = new AppCompatTextHelper(this);
-        this.f1996e = appCompatTextHelper;
+        this.f1999e = appCompatTextHelper;
         appCompatTextHelper.m(attributeSet, i10);
         getEmojiTextViewHelper().c(attributeSet, i10);
     }

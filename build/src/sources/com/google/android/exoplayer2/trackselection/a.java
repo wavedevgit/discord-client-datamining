@@ -9,10 +9,10 @@ import java.util.List;
 import ke.k;
 import oe.w0;
 import oe.y;
-import oi.c0;
-import oi.s;
-import oi.v;
-import oi.x;
+import qi.c0;
+import qi.s;
+import qi.v;
+import qi.x;
 import rd.r;
 import rd.u0;
 import td.n;
@@ -21,84 +21,84 @@ import td.o;
 public class a extends ke.b {
 
     /* renamed from: h  reason: collision with root package name */
-    private final me.e f13215h;
+    private final me.e f13792h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final long f13216i;
+    private final long f13793i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final long f13217j;
+    private final long f13794j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final long f13218k;
+    private final long f13795k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final int f13219l;
+    private final int f13796l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final int f13220m;
+    private final int f13797m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final float f13221n;
+    private final float f13798n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final float f13222o;
+    private final float f13799o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final s f13223p;
+    private final s f13800p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final oe.e f13224q;
+    private final oe.e f13801q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f13225r;
+    private float f13802r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f13226s;
+    private int f13803s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f13227t;
+    private int f13804t;
 
     /* renamed from: u  reason: collision with root package name */
-    private long f13228u;
+    private long f13805u;
 
     /* renamed from: v  reason: collision with root package name */
-    private n f13229v;
+    private n f13806v;
 
     /* renamed from: w  reason: collision with root package name */
-    private long f13230w;
+    private long f13807w;
 
     /* renamed from: com.google.android.exoplayer2.trackselection.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0192a {
+    public static final class C0169a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long f13231a;
+        public final long f13808a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f13232b;
+        public final long f13809b;
 
-        public C0192a(long j10, long j11) {
-            this.f13231a = j10;
-            this.f13232b = j11;
+        public C0169a(long j10, long j11) {
+            this.f13808a = j10;
+            this.f13809b = j11;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if (!(obj instanceof C0192a)) {
+            if (!(obj instanceof C0169a)) {
                 return false;
             }
-            C0192a c0192a = (C0192a) obj;
-            if (this.f13231a == c0192a.f13231a && this.f13232b == c0192a.f13232b) {
+            C0169a c0169a = (C0169a) obj;
+            if (this.f13808a == c0169a.f13808a && this.f13809b == c0169a.f13809b) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return (((int) this.f13231a) * 31) + ((int) this.f13232b);
+            return (((int) this.f13808a) * 31) + ((int) this.f13809b);
         }
     }
 
@@ -106,28 +106,28 @@ public class a extends ke.b {
     public static class b implements g.b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f13233a;
+        private final int f13810a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f13234b;
+        private final int f13811b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f13235c;
+        private final int f13812c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f13236d;
+        private final int f13813d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f13237e;
+        private final int f13814e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final float f13238f;
+        private final float f13815f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final float f13239g;
+        private final float f13816g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final oe.e f13240h;
+        private final oe.e f13817h;
 
         public b() {
             this(10000, 25000, 25000, 0.7f);
@@ -143,14 +143,14 @@ public class a extends ke.b {
             while (i10 < aVarArr.length) {
                 g.a aVar = aVarArr[i10];
                 if (aVar != null) {
-                    int[] iArr = aVar.f13242b;
+                    int[] iArr = aVar.f13819b;
                     if (iArr.length != 0) {
                         if (iArr.length == 1) {
-                            b10 = new k(aVar.f13241a, iArr[0], aVar.f13243c);
+                            b10 = new k(aVar.f13818a, iArr[0], aVar.f13820c);
                             eVar2 = eVar;
                         } else {
                             eVar2 = eVar;
-                            b10 = b(aVar.f13241a, iArr, aVar.f13243c, eVar2, (s) y10.get(i10));
+                            b10 = b(aVar.f13818a, iArr, aVar.f13820c, eVar2, (s) y10.get(i10));
                         }
                         gVarArr[i10] = b10;
                         i10++;
@@ -165,22 +165,22 @@ public class a extends ke.b {
         }
 
         protected a b(u0 u0Var, int[] iArr, int i10, me.e eVar, s sVar) {
-            return new a(u0Var, iArr, i10, eVar, this.f13233a, this.f13234b, this.f13235c, this.f13236d, this.f13237e, this.f13238f, this.f13239g, sVar, this.f13240h);
+            return new a(u0Var, iArr, i10, eVar, this.f13810a, this.f13811b, this.f13812c, this.f13813d, this.f13814e, this.f13815f, this.f13816g, sVar, this.f13817h);
         }
 
         public b(int i10, int i11, int i12, float f10) {
-            this(i10, i11, i12, 1279, 719, f10, 0.75f, oe.e.f40604a);
+            this(i10, i11, i12, 1279, 719, f10, 0.75f, oe.e.f38930a);
         }
 
         public b(int i10, int i11, int i12, int i13, int i14, float f10, float f11, oe.e eVar) {
-            this.f13233a = i10;
-            this.f13234b = i11;
-            this.f13235c = i12;
-            this.f13236d = i13;
-            this.f13237e = i14;
-            this.f13238f = f10;
-            this.f13239g = f11;
-            this.f13240h = eVar;
+            this.f13810a = i10;
+            this.f13811b = i11;
+            this.f13812c = i12;
+            this.f13813d = i13;
+            this.f13814e = i14;
+            this.f13815f = f10;
+            this.f13816g = f11;
+            this.f13817h = eVar;
         }
     }
 
@@ -193,20 +193,20 @@ public class a extends ke.b {
         } else {
             j13 = j12;
         }
-        this.f13215h = eVar;
-        this.f13216i = j10 * 1000;
-        this.f13217j = j11 * 1000;
-        this.f13218k = j13 * 1000;
-        this.f13219l = i11;
-        this.f13220m = i12;
-        this.f13221n = f10;
-        this.f13222o = f11;
-        this.f13223p = s.o(list);
-        this.f13224q = eVar2;
-        this.f13225r = 1.0f;
-        this.f13227t = 0;
-        this.f13228u = -9223372036854775807L;
-        this.f13230w = Long.MIN_VALUE;
+        this.f13792h = eVar;
+        this.f13793i = j10 * 1000;
+        this.f13794j = j11 * 1000;
+        this.f13795k = j13 * 1000;
+        this.f13796l = i11;
+        this.f13797m = i12;
+        this.f13798n = f10;
+        this.f13799o = f11;
+        this.f13800p = s.o(list);
+        this.f13801q = eVar2;
+        this.f13802r = 1.0f;
+        this.f13804t = 0;
+        this.f13805u = -9223372036854775807L;
+        this.f13807w = Long.MIN_VALUE;
     }
 
     private long A(List list) {
@@ -214,9 +214,9 @@ public class a extends ke.b {
             return -9223372036854775807L;
         }
         n nVar = (n) v.c(list);
-        long j10 = nVar.f50780g;
+        long j10 = nVar.f48712g;
         if (j10 != -9223372036854775807L) {
-            long j11 = nVar.f50781h;
+            long j11 = nVar.f48713h;
             if (j11 != -9223372036854775807L) {
                 return j11 - j10;
             }
@@ -225,9 +225,9 @@ public class a extends ke.b {
     }
 
     private long C(o[] oVarArr, List list) {
-        int i10 = this.f13226s;
+        int i10 = this.f13803s;
         if (i10 < oVarArr.length && oVarArr[i10].next()) {
-            o oVar = oVarArr[this.f13226s];
+            o oVar = oVarArr[this.f13803s];
             return oVar.b() - oVar.a();
         }
         for (o oVar2 : oVarArr) {
@@ -245,14 +245,14 @@ public class a extends ke.b {
             if (aVar == null) {
                 jArr[i10] = new long[0];
             } else {
-                jArr[i10] = new long[aVar.f13242b.length];
+                jArr[i10] = new long[aVar.f13819b.length];
                 int i11 = 0;
                 while (true) {
-                    int[] iArr = aVar.f13242b;
+                    int[] iArr = aVar.f13819b;
                     if (i11 >= iArr.length) {
                         break;
                     }
-                    long j10 = aVar.f13241a.c(iArr[i11]).f11723s;
+                    long j10 = aVar.f13818a.c(iArr[i11]).f12300s;
                     long[] jArr2 = jArr[i10];
                     if (j10 == -1) {
                         j10 = 0;
@@ -309,24 +309,24 @@ public class a extends ke.b {
 
     private long F(long j10) {
         long b10;
-        long f10 = this.f13215h.f();
-        this.f13230w = f10;
-        long j11 = ((float) f10) * this.f13221n;
-        if (this.f13215h.b() != -9223372036854775807L && j10 != -9223372036854775807L) {
+        long f10 = this.f13792h.f();
+        this.f13807w = f10;
+        long j11 = ((float) f10) * this.f13798n;
+        if (this.f13792h.b() != -9223372036854775807L && j10 != -9223372036854775807L) {
             float f11 = (float) j10;
-            return (((float) j11) * Math.max((f11 / this.f13225r) - ((float) b10), 0.0f)) / f11;
+            return (((float) j11) * Math.max((f11 / this.f13802r) - ((float) b10), 0.0f)) / f11;
         }
-        return ((float) j11) / this.f13225r;
+        return ((float) j11) / this.f13802r;
     }
 
     private long G(long j10, long j11) {
         if (j10 == -9223372036854775807L) {
-            return this.f13216i;
+            return this.f13793i;
         }
         if (j11 != -9223372036854775807L) {
             j10 -= j11;
         }
-        return Math.min(((float) j10) * this.f13222o, this.f13216i);
+        return Math.min(((float) j10) * this.f13799o, this.f13793i);
     }
 
     private static void v(List list, long[] jArr) {
@@ -337,7 +337,7 @@ public class a extends ke.b {
         for (int i10 = 0; i10 < list.size(); i10++) {
             s.a aVar = (s.a) list.get(i10);
             if (aVar != null) {
-                aVar.a(new C0192a(j10, jArr[i10]));
+                aVar.a(new C0169a(j10, jArr[i10]));
             }
         }
     }
@@ -345,10 +345,10 @@ public class a extends ke.b {
     private int x(long j10, long j11) {
         long z10 = z(j11);
         int i10 = 0;
-        for (int i11 = 0; i11 < this.f30838b; i11++) {
+        for (int i11 = 0; i11 < this.f31696b; i11++) {
             if (j10 == Long.MIN_VALUE || !a(i11, j10)) {
                 Format c10 = c(i11);
-                if (w(c10, c10.f11723s, z10)) {
+                if (w(c10, c10.f12300s, z10)) {
                     return i11;
                 }
                 i10 = i11;
@@ -363,10 +363,10 @@ public class a extends ke.b {
         long j10;
         ArrayList arrayList = new ArrayList();
         for (g.a aVar : aVarArr) {
-            if (aVar != null && aVar.f13242b.length > 1) {
-                s.a j11 = s.j();
-                j11.a(new C0192a(0L, 0L));
-                arrayList.add(j11);
+            if (aVar != null && aVar.f13819b.length > 1) {
+                s.a k11 = s.k();
+                k11.a(new C0169a(0L, 0L));
+                arrayList.add(k11);
             } else {
                 arrayList.add(null);
             }
@@ -398,7 +398,7 @@ public class a extends ke.b {
             }
         }
         v(arrayList, jArr);
-        s.a j12 = s.j();
+        s.a k12 = s.k();
         for (int i14 = 0; i14 < arrayList.size(); i14++) {
             s.a aVar2 = (s.a) arrayList.get(i14);
             if (aVar2 == null) {
@@ -406,35 +406,35 @@ public class a extends ke.b {
             } else {
                 k10 = aVar2.k();
             }
-            j12.a(k10);
+            k12.a(k10);
         }
-        return j12.k();
+        return k12.k();
     }
 
     private long z(long j10) {
         long j11;
         long F = F(j10);
-        if (this.f13223p.isEmpty()) {
+        if (this.f13800p.isEmpty()) {
             return F;
         }
         int i10 = 1;
-        while (i10 < this.f13223p.size() - 1 && ((C0192a) this.f13223p.get(i10)).f13231a < F) {
+        while (i10 < this.f13800p.size() - 1 && ((C0169a) this.f13800p.get(i10)).f13808a < F) {
             i10++;
         }
-        C0192a c0192a = (C0192a) this.f13223p.get(i10 - 1);
-        C0192a c0192a2 = (C0192a) this.f13223p.get(i10);
-        long j12 = c0192a.f13231a;
-        return c0192a.f13232b + ((((float) (F - j12)) / ((float) (c0192a2.f13231a - j12))) * ((float) (c0192a2.f13232b - j11)));
+        C0169a c0169a = (C0169a) this.f13800p.get(i10 - 1);
+        C0169a c0169a2 = (C0169a) this.f13800p.get(i10);
+        long j12 = c0169a.f13808a;
+        return c0169a.f13809b + ((((float) (F - j12)) / ((float) (c0169a2.f13808a - j12))) * ((float) (c0169a2.f13809b - j11)));
     }
 
     protected long B() {
-        return this.f13218k;
+        return this.f13795k;
     }
 
     protected boolean H(long j10, List list) {
-        long j11 = this.f13228u;
+        long j11 = this.f13805u;
         if (j11 != -9223372036854775807L && j10 - j11 < 1000) {
-            if (list.isEmpty() || ((n) v.c(list)).equals(this.f13229v)) {
+            if (list.isEmpty() || ((n) v.c(list)).equals(this.f13806v)) {
                 return false;
             }
             return true;
@@ -444,33 +444,33 @@ public class a extends ke.b {
 
     @Override // com.google.android.exoplayer2.trackselection.g
     public int b() {
-        return this.f13226s;
+        return this.f13803s;
     }
 
     @Override // ke.b, com.google.android.exoplayer2.trackselection.g
     public void disable() {
-        this.f13229v = null;
+        this.f13806v = null;
     }
 
     @Override // com.google.android.exoplayer2.trackselection.g
     public void e(long j10, long j11, long j12, List list, o[] oVarArr) {
         int o10;
-        long b10 = this.f13224q.b();
+        long b10 = this.f13801q.b();
         long C = C(oVarArr, list);
-        int i10 = this.f13227t;
+        int i10 = this.f13804t;
         if (i10 == 0) {
-            this.f13227t = 1;
-            this.f13226s = x(b10, C);
+            this.f13804t = 1;
+            this.f13803s = x(b10, C);
             return;
         }
-        int i11 = this.f13226s;
+        int i11 = this.f13803s;
         if (list.isEmpty()) {
             o10 = -1;
         } else {
-            o10 = o(((n) v.c(list)).f50777d);
+            o10 = o(((n) v.c(list)).f48709d);
         }
         if (o10 != -1) {
-            i10 = ((n) v.c(list)).f50778e;
+            i10 = ((n) v.c(list)).f48710e;
             i11 = o10;
         }
         int x10 = x(b10, C);
@@ -478,28 +478,28 @@ public class a extends ke.b {
             Format c10 = c(i11);
             Format c11 = c(x10);
             long G = G(j12, C);
-            int i12 = c11.f11723s;
-            int i13 = c10.f11723s;
-            if ((i12 > i13 && j11 < G) || (i12 < i13 && j11 >= this.f13217j)) {
+            int i12 = c11.f12300s;
+            int i13 = c10.f12300s;
+            if ((i12 > i13 && j11 < G) || (i12 < i13 && j11 >= this.f13794j)) {
                 x10 = i11;
             }
         }
         if (x10 != i11) {
             i10 = 3;
         }
-        this.f13227t = i10;
-        this.f13226s = x10;
+        this.f13804t = i10;
+        this.f13803s = x10;
     }
 
     @Override // ke.b, com.google.android.exoplayer2.trackselection.g
     public void enable() {
-        this.f13228u = -9223372036854775807L;
-        this.f13229v = null;
+        this.f13805u = -9223372036854775807L;
+        this.f13806v = null;
     }
 
     @Override // ke.b, com.google.android.exoplayer2.trackselection.g
     public void g(float f10) {
-        this.f13225r = f10;
+        this.f13802r = f10;
     }
 
     @Override // com.google.android.exoplayer2.trackselection.g
@@ -512,29 +512,29 @@ public class a extends ke.b {
         n nVar;
         int i10;
         int i11;
-        long b10 = this.f13224q.b();
+        long b10 = this.f13801q.b();
         if (!H(b10, list)) {
             return list.size();
         }
-        this.f13228u = b10;
+        this.f13805u = b10;
         if (list.isEmpty()) {
             nVar = null;
         } else {
             nVar = (n) v.c(list);
         }
-        this.f13229v = nVar;
+        this.f13806v = nVar;
         if (list.isEmpty()) {
             return 0;
         }
         int size = list.size();
-        long j02 = w0.j0(((n) list.get(size - 1)).f50780g - j10, this.f13225r);
+        long j02 = w0.j0(((n) list.get(size - 1)).f48712g - j10, this.f13802r);
         long B = B();
         if (j02 >= B) {
             Format c10 = c(x(b10, A(list)));
             for (int i12 = 0; i12 < size; i12++) {
                 n nVar2 = (n) list.get(i12);
-                Format format = nVar2.f50777d;
-                if (w0.j0(nVar2.f50780g - j10, this.f13225r) >= B && format.f11723s < c10.f11723s && (i10 = format.C) != -1 && i10 <= this.f13220m && (i11 = format.B) != -1 && i11 <= this.f13219l && i10 < c10.C) {
+                Format format = nVar2.f48709d;
+                if (w0.j0(nVar2.f48712g - j10, this.f13802r) >= B && format.f12300s < c10.f12300s && (i10 = format.C) != -1 && i10 <= this.f13797m && (i11 = format.B) != -1 && i11 <= this.f13796l && i10 < c10.C) {
                     return i12;
                 }
             }
@@ -544,7 +544,7 @@ public class a extends ke.b {
 
     @Override // com.google.android.exoplayer2.trackselection.g
     public int r() {
-        return this.f13227t;
+        return this.f13804t;
     }
 
     protected boolean w(Format format, int i10, long j10) {

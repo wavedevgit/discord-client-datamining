@@ -24,10 +24,10 @@ final class SPX implements Externalizable {
     private static final long serialVersionUID = 6526945678752534989L;
 
     /* renamed from: d  reason: collision with root package name */
-    private transient Object f38734d;
+    private transient Object f37738d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient int f38735e;
+    private transient int f37739e;
 
     public SPX() {
     }
@@ -46,7 +46,7 @@ final class SPX implements Externalizable {
         byte readByte = dataInput.readByte();
         b0 f10 = b0.f((readByte & 255) >>> 4);
         int i11 = readByte & 15;
-        i iVar = i.f38758o[i11 % 3];
+        i iVar = i.f37762o[i11 % 3];
         int i12 = i(i11);
         byte readByte2 = dataInput.readByte();
         int i13 = (readByte2 & 255) >>> 3;
@@ -74,7 +74,7 @@ final class SPX implements Externalizable {
         byte readByte = dataInput.readByte();
         int i10 = (readByte & 255) >>> 4;
         int i11 = readByte & 15;
-        i iVar = i.f38758o[i11 % 3];
+        i iVar = i.f37762o[i11 % 3];
         int i12 = i(i11);
         byte readByte2 = dataInput.readByte();
         int i13 = (readByte2 & 255) >>> 3;
@@ -94,7 +94,7 @@ final class SPX implements Externalizable {
         byte readByte = dataInput.readByte();
         b0 f10 = b0.f((readByte & 255) >>> 4);
         int i11 = readByte & 15;
-        i iVar = i.f38758o[i11 % 3];
+        i iVar = i.f37762o[i11 % 3];
         int i12 = i(i11);
         byte readByte2 = dataInput.readByte();
         y0 h10 = y0.h((readByte2 & 255) >>> 5);
@@ -292,7 +292,7 @@ final class SPX implements Externalizable {
     }
 
     private static int m(g gVar) {
-        return gVar.f().v(g0.K) + qt.c.g(gVar.c() * 86400);
+        return gVar.f().m(g0.K) + zt.c.g(gVar.c() * 86400);
     }
 
     private static int n(int i10) {
@@ -376,7 +376,7 @@ final class SPX implements Externalizable {
     }
 
     private Object readResolve() {
-        return this.f38734d;
+        return this.f37738d;
     }
 
     private static void s(Object obj, DataOutput dataOutput) {
@@ -527,7 +527,7 @@ final class SPX implements Externalizable {
         long g10 = qVar.g() + i10;
         long j10 = 7200 + g10;
         if (j10 >= -4575744000L && j10 < 18067104000L) {
-            i12 = l(qt.c.d(j10, 86400));
+            i12 = l(zt.c.d(j10, 86400));
         }
         byte b12 = (byte) ((i12 << 2) | b11);
         if (i12 == 0) {
@@ -565,62 +565,62 @@ final class SPX implements Externalizable {
     public void readExternal(ObjectInput objectInput) {
         switch (objectInput.readByte()) {
             case 120:
-                this.f38734d = d(objectInput);
+                this.f37738d = d(objectInput);
                 return;
             case 121:
-                this.f38734d = c(objectInput);
+                this.f37738d = c(objectInput);
                 return;
             case 122:
-                this.f38734d = e(objectInput);
+                this.f37738d = e(objectInput);
                 return;
             case 123:
             case 124:
             default:
                 throw new StreamCorruptedException("Unknown serialized type.");
             case 125:
-                this.f38734d = g(objectInput);
+                this.f37738d = g(objectInput);
                 return;
             case 126:
-                this.f38734d = a(objectInput);
+                this.f37738d = a(objectInput);
                 return;
             case Byte.MAX_VALUE:
-                this.f38734d = b(objectInput);
+                this.f37738d = b(objectInput);
                 return;
         }
     }
 
     @Override // java.io.Externalizable
     public void writeExternal(ObjectOutput objectOutput) {
-        objectOutput.writeByte(this.f38735e);
-        switch (this.f38735e) {
+        objectOutput.writeByte(this.f37739e);
+        switch (this.f37739e) {
             case 120:
-                s(this.f38734d, objectOutput);
+                s(this.f37738d, objectOutput);
                 return;
             case 121:
-                r(this.f38734d, objectOutput);
+                r(this.f37738d, objectOutput);
                 return;
             case 122:
-                t(this.f38734d, objectOutput);
+                t(this.f37738d, objectOutput);
                 return;
             case 123:
             case 124:
             default:
                 throw new InvalidClassException("Unknown serialized type.");
             case 125:
-                w(this.f38734d, objectOutput);
+                w(this.f37738d, objectOutput);
                 return;
             case 126:
-                p(this.f38734d, objectOutput);
+                p(this.f37738d, objectOutput);
                 return;
             case 127:
-                q(this.f38734d, objectOutput);
+                q(this.f37738d, objectOutput);
                 return;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public SPX(Object obj, int i10) {
-        this.f38734d = obj;
-        this.f38735e = i10;
+        this.f37738d = obj;
+        this.f37739e = i10;
     }
 }

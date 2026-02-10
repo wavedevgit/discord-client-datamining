@@ -58,7 +58,7 @@ public final class PoseConfigJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -80,7 +80,7 @@ public final class PoseConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, PoseConfig poseConfig) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (poseConfig != null) {
-            writer.k();
+            writer.i();
             writer.J("pose");
             this.nullableStringAdapter.toJson(writer, poseConfig.getPose());
             writer.J("allowReview");

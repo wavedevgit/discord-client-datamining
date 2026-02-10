@@ -20,28 +20,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '../discord_common/js/packages/libdave/package/src/DisplayableCode.ts';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0, arg1, arg2() {
-        _fun67060: for (var _fun67060_ip = 0;;) switch (_fun67060_ip) {
+        _fun67113: for (var _fun67113_ip = 0;;) switch (_fun67113_ip) {
             case 0:
                 var12 = arg0;
                 var11 = arg1;
                 var10 = arg2;
                 var0 = var12.byteLength;
                 if (!(!(var0 < var11))) {
-                    _fun67060_ip = 315;
-                    continue _fun67060
+                    _fun67113_ip = 315;
+                    continue _fun67113
                 }
             case 22:
                 var0 = var11 % var10;
                 var9 = 0;
                 if (!(var0 == var9)) {
-                    _fun67060_ip = 279;
-                    continue _fun67060
+                    _fun67113_ip = 279;
+                    continue _fun67113
                 }
             case 35:
                 var0 = 8;
                 if (!(!(var10 > var0))) {
-                    _fun67060_ip = 243;
-                    continue _fun67060
+                    _fun67113_ip = 243;
+                    continue _fun67113
                 }
             case 45:
                 var0 = global;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = undefined;
                 var1 = var4;
                 if (!var13) {
-                    _fun67060_ip = 207;
-                    continue _fun67060
+                    _fun67113_ip = 207;
+                    continue _fun67113
                 }
             case 98:
                 var13 = var0.BigInt;
@@ -68,16 +68,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var15;
                 var14 = var10;
                 if (!(var14 > var9)) {
-                    _fun67060_ip = 167;
-                    continue _fun67060
+                    _fun67113_ip = 167;
+                    continue _fun67113
                 }
             case 119:
                 var16 = var10 - var14;
                 var16 = var3 + var16;
                 var16 = var12[var16];
                 if (!(var8 !== var16)) {
-                    _fun67060_ip = 209;
-                    continue _fun67060
+                    _fun67113_ip = 209;
+                    continue _fun67113
                 }
             case 135:
                 var18 = var15 << var5;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var15;
                 var2 = var16;
                 if (var14 > var9) {
-                    _fun67060_ip = 119;
-                    continue _fun67060
+                    _fun67113_ip = 119;
+                    continue _fun67113
                 }
             case 167:
                 var14 = var13 % var7;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3 + var10;
                 var1 = var4;
                 if (var3 < var11) {
-                    _fun67060_ip = 98;
-                    continue _fun67060
+                    _fun67113_ip = 98;
+                    continue _fun67113
                 }
             case 207:
                 return var1;

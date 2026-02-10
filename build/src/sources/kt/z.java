@@ -1,113 +1,124 @@
 package kt;
 
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.Lazy;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlin.jvm.internal.Lambda;
+import kt.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class z {
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final a f35249e = new a(null);
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final long[] f35250f = new long[0];
+public abstract class z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SerialDescriptor f35251a;
+    private static final Lazy f35328a = as.l.b(a.f35331d);
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function2 f35252b;
+    private static final Lazy f35329b = as.l.b(b.f35333d);
 
     /* renamed from: c  reason: collision with root package name */
-    private long f35253c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final long[] f35254d;
+    private static final v f35330c = new v(null, null, null, null, null, 31, null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    static final class a extends Lambda implements Function0 {
 
-        private a() {
-        }
-    }
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f35331d = new a();
 
-    public z(SerialDescriptor descriptor, Function2 readIfAbsent) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        Intrinsics.checkNotNullParameter(readIfAbsent, "readIfAbsent");
-        this.f35251a = descriptor;
-        this.f35252b = readIfAbsent;
-        int d10 = descriptor.d();
-        if (d10 <= 64) {
-            this.f35253c = d10 != 64 ? (-1) << d10 : 0L;
-            this.f35254d = f35250f;
-            return;
-        }
-        this.f35253c = 0L;
-        this.f35254d = e(d10);
-    }
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: kt.z$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class C0484a extends Lambda implements Function1 {
 
-    private final void b(int i10) {
-        int i11 = (i10 >>> 6) - 1;
-        long[] jArr = this.f35254d;
-        jArr[i11] = jArr[i11] | (1 << (i10 & 63));
-    }
+            /* renamed from: d  reason: collision with root package name */
+            public static final C0484a f35332d = new C0484a();
 
-    private final int c() {
-        int length = this.f35254d.length;
-        int i10 = 0;
-        while (i10 < length) {
-            int i11 = i10 + 1;
-            int i12 = i11 * 64;
-            long j10 = this.f35254d[i10];
-            while (j10 != -1) {
-                int numberOfTrailingZeros = Long.numberOfTrailingZeros(~j10);
-                j10 |= 1 << numberOfTrailingZeros;
-                int i13 = numberOfTrailingZeros + i12;
-                if (((Boolean) this.f35252b.invoke(this.f35251a, Integer.valueOf(i13))).booleanValue()) {
-                    this.f35254d[i10] = j10;
-                    return i13;
-                }
+            C0484a() {
+                super(1);
             }
-            this.f35254d[i10] = j10;
-            i10 = i11;
-        }
-        return -1;
-    }
 
-    private final long[] e(int i10) {
-        long[] jArr = new long[(i10 - 1) >>> 6];
-        if ((i10 & 63) != 0) {
-            jArr[kotlin.collections.i.Z(jArr)] = (-1) << i10;
-        }
-        return jArr;
-    }
-
-    public final void a(int i10) {
-        if (i10 < 64) {
-            this.f35253c |= 1 << i10;
-        } else {
-            b(i10);
-        }
-    }
-
-    public final int d() {
-        int numberOfTrailingZeros;
-        int d10 = this.f35251a.d();
-        do {
-            long j10 = this.f35253c;
-            if (j10 != -1) {
-                numberOfTrailingZeros = Long.numberOfTrailingZeros(~j10);
-                this.f35253c |= 1 << numberOfTrailingZeros;
-            } else if (d10 > 64) {
-                return c();
-            } else {
-                return -1;
+            public final void a(o.a build) {
+                Intrinsics.checkNotNullParameter(build, "$this$build");
+                o.a.C0474a.c(build, null, 1, null);
+                p.b(build, '-');
+                o.a.C0474a.b(build, null, 1, null);
+                p.b(build, '-');
+                o.a.C0474a.a(build, null, 1, null);
             }
-        } while (!((Boolean) this.f35252b.invoke(this.f35251a, Integer.valueOf(numberOfTrailingZeros))).booleanValue());
-        return numberOfTrailingZeros;
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                a((o.a) obj);
+                return Unit.f31987a;
+            }
+        }
+
+        a() {
+            super(0);
+        }
+
+        @Override // kotlin.jvm.functions.Function0
+        /* renamed from: a */
+        public final n invoke() {
+            return y.f35325b.a(C0484a.f35332d);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class b extends Lambda implements Function0 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final b f35333d = new b();
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class a extends Lambda implements Function1 {
+
+            /* renamed from: d  reason: collision with root package name */
+            public static final a f35334d = new a();
+
+            a() {
+                super(1);
+            }
+
+            public final void a(o.a build) {
+                Intrinsics.checkNotNullParameter(build, "$this$build");
+                o.a.C0474a.c(build, null, 1, null);
+                o.a.C0474a.b(build, null, 1, null);
+                o.a.C0474a.a(build, null, 1, null);
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                a((o.a) obj);
+                return Unit.f31987a;
+            }
+        }
+
+        b() {
+            super(0);
+        }
+
+        @Override // kotlin.jvm.functions.Function0
+        /* renamed from: a */
+        public final n invoke() {
+            return y.f35325b.a(a.f35334d);
+        }
+    }
+
+    public static final n b() {
+        return (n) f35328a.getValue();
+    }
+
+    public static final n c() {
+        return (n) f35329b.getValue();
+    }
+
+    public static final Object d(Object obj, String name) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        if (obj != null) {
+            return obj;
+        }
+        throw new jt.b("Can not create a " + name + " from the given input: the field " + name + " is missing");
     }
 }

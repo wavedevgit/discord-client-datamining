@@ -6,29 +6,29 @@ import java.util.regex.Pattern;
 public final class e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f28332a;
+    private final String f29267a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Pattern f28333b;
+    private final Pattern f29268b;
 
     public e0(String str) {
         Pattern pattern;
-        this.f28332a = str;
+        this.f29267a = str;
         try {
             pattern = Pattern.compile(str);
         } catch (Throwable unused) {
             b5.v().b().getLogger().c(SentryLevel.DEBUG, "Only using filter string for String comparison as it could not be parsed as regex: %s", str);
             pattern = null;
         }
-        this.f28333b = pattern;
+        this.f29268b = pattern;
     }
 
     public String a() {
-        return this.f28332a;
+        return this.f29267a;
     }
 
     public boolean b(String str) {
-        Pattern pattern = this.f28333b;
+        Pattern pattern = this.f29268b;
         if (pattern == null) {
             return false;
         }
@@ -37,12 +37,12 @@ public final class e0 {
 
     public boolean equals(Object obj) {
         if (obj != null && e0.class == obj.getClass()) {
-            return Objects.equals(this.f28332a, ((e0) obj).f28332a);
+            return Objects.equals(this.f29267a, ((e0) obj).f29267a);
         }
         return false;
     }
 
     public int hashCode() {
-        return Objects.hash(this.f28332a);
+        return Objects.hash(this.f29267a);
     }
 }

@@ -62,7 +62,7 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
         IconUrlUtils iconUrlUtils = IconUrlUtils.INSTANCE;
         Context context = getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        simpleDraweeView.setImageURI(IconUrlUtils.m915getForUser_fRzTXg$default(iconUrlUtils, context, UserId.m1135boximpl(user.m965getUserIdre6GcUE()), user.getAvatar(), Integer.valueOf(user.getDiscriminator()), false, null, 48, null));
+        simpleDraweeView.setImageURI(IconUrlUtils.m916getForUser_fRzTXg$default(iconUrlUtils, context, UserId.m1136boximpl(user.m966getUserIdre6GcUE()), user.getAvatar(), Integer.valueOf(user.getDiscriminator()), false, null, 48, null));
         if (user.getSpeaking()) {
             fadeActive();
         } else {
@@ -92,8 +92,8 @@ public final class OverlayVoiceBubble extends OverlayBubbleWrap {
         int i12 = i10;
         super.onConfigurationChanged(configuration);
         OverlayBubbleWrap.animateToCoordinate$default(this, i12, getWindowLayoutParams().y, null, 4, null);
-        getSpringAnimationX().z();
-        getSpringAnimationY().z();
+        getSpringAnimationX().A();
+        getSpringAnimationY().A();
     }
 
     @Override // com.discord.mobile_voice_overlay.views.OverlayView

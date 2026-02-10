@@ -4,5 +4,9 @@ import android.view.View;
 import com.facebook.react.uimanager.ViewManagerWithGeneratedInterface;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface RNSScreenStackHeaderSubviewManagerInterface<T extends View> extends ViewManagerWithGeneratedInterface {
+    void setHidesSharedBackground(T t10, boolean z10);
+
+    void setSynchronousShadowStateUpdatesEnabled(T t10, boolean z10);
+
     void setType(T t10, String str);
 }

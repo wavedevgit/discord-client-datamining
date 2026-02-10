@@ -7,22 +7,22 @@ import com.google.android.play.core.integrity.c;
 public final class x implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final j0 f16360a;
+    private final j0 f17109a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final p0 f16361b;
+    private final p0 f17110b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public x(j0 j0Var, p0 p0Var) {
-        this.f16360a = j0Var;
-        this.f16361b = p0Var;
+        this.f17109a = j0Var;
+        this.f17110b = p0Var;
     }
 
     @Override // com.google.android.play.core.integrity.c
     public final Task a(final c.a aVar) {
         long b10 = aVar.b();
         aVar.a();
-        return this.f16360a.d(b10, 0).r(new zg.j() { // from class: com.google.android.play.core.integrity.w
+        return this.f17109a.d(b10, 0).r(new zg.j() { // from class: com.google.android.play.core.integrity.w
             @Override // zg.j
             public final Task a(Object obj) {
                 return x.this.b(aVar, (Long) obj);
@@ -35,18 +35,18 @@ public final class x implements c {
         final long b10 = aVar.b();
         final long longValue = l10.longValue();
         aVar.a();
-        final p0 p0Var = this.f16361b;
-        return zg.m.f(new c.InterfaceC0210c(b10, longValue, 0) { // from class: com.google.android.play.core.integrity.o0
+        final p0 p0Var = this.f17110b;
+        return zg.m.f(new c.InterfaceC0191c(b10, longValue, 0) { // from class: com.google.android.play.core.integrity.o0
 
             /* renamed from: b  reason: collision with root package name */
-            public final /* synthetic */ long f16340b;
+            public final /* synthetic */ long f17089b;
 
             /* renamed from: c  reason: collision with root package name */
-            public final /* synthetic */ long f16341c;
+            public final /* synthetic */ long f17090c;
 
-            @Override // com.google.android.play.core.integrity.c.InterfaceC0210c
+            @Override // com.google.android.play.core.integrity.c.InterfaceC0191c
             public final Task a(c.d dVar) {
-                return p0.this.a(this.f16340b, this.f16341c, 0, dVar);
+                return p0.this.a(this.f17089b, this.f17090c, 0, dVar);
             }
         });
     }

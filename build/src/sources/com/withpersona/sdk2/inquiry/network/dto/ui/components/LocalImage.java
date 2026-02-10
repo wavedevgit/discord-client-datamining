@@ -46,7 +46,7 @@ public final class LocalImage implements UiComponentConfig {
             if (!Intrinsics.areEqual(type, Image.class)) {
                 return null;
             }
-            return an.a.a(Image.class).d(null).nullSafe();
+            return cn.a.a(Image.class).d(null).nullSafe();
         }
 
         @NotNull
@@ -154,7 +154,7 @@ public final class LocalImage implements UiComponentConfig {
         static {
             Image[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = yr.a.a($values);
+            $ENTRIES = hs.a.a($values);
         }
 
         private Image(String str, int i10) {

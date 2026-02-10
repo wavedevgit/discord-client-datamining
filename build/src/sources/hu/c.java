@@ -1,384 +1,313 @@
 package hu;
 
-import java.io.IOException;
-import java.net.ProtocolException;
-import kotlin.jvm.internal.Intrinsics;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
-import okhttp3.ResponseBody;
-import okio.Buffer;
-import okio.Sink;
-import okio.Source;
-import qu.d;
-import ru.k;
-import ru.x;
+import cu.m;
+import cu.u;
+import cu.v;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.MissingResourceException;
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c {
+public final class c implements u, eu.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f26515a;
+    private static final Set f27700a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final okhttp3.e f26516b;
+    private static final Set f27701b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final d f26517c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final iu.d f26518d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private boolean f26519e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private boolean f26520f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private final f f26521g;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private final class a extends ru.j {
-
-        /* renamed from: e  reason: collision with root package name */
-        private final long f26522e;
-
-        /* renamed from: i  reason: collision with root package name */
-        private boolean f26523i;
-
-        /* renamed from: o  reason: collision with root package name */
-        private long f26524o;
-
-        /* renamed from: p  reason: collision with root package name */
-        private boolean f26525p;
-
-        /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ c f26526q;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public a(c cVar, Sink delegate, long j10) {
-            super(delegate);
-            Intrinsics.checkNotNullParameter(delegate, "delegate");
-            this.f26526q = cVar;
-            this.f26522e = j10;
+    static {
+        String[] split = e.h("calendar/names/iso8601/iso8601", Locale.ROOT).f("languages").split(" ");
+        HashSet hashSet = new HashSet();
+        Collections.addAll(hashSet, split);
+        Set<String> unmodifiableSet = Collections.unmodifiableSet(hashSet);
+        f27700a = unmodifiableSet;
+        HashSet hashSet2 = new HashSet();
+        for (String str : unmodifiableSet) {
+            hashSet2.add(new Locale(str));
         }
-
-        private final IOException a(IOException iOException) {
-            if (this.f26523i) {
-                return iOException;
-            }
-            this.f26523i = true;
-            return this.f26526q.a(this.f26524o, false, true, iOException);
+        for (d dVar : d.values()) {
+            hashSet2.add(new Locale(dVar.name()));
         }
+        f27701b = Collections.unmodifiableSet(hashSet2);
+    }
 
-        @Override // ru.j, okio.Sink, java.io.Closeable, java.lang.AutoCloseable
-        public void close() {
-            if (this.f26525p) {
-                return;
+    private static String[] l(Locale locale, v vVar) {
+        v vVar2;
+        e m10 = m(locale);
+        String[] strArr = null;
+        v vVar3 = null;
+        if (m10 != null) {
+            if (vVar == v.SHORT) {
+                vVar = v.ABBREVIATED;
             }
-            this.f26525p = true;
-            long j10 = this.f26522e;
-            if (j10 != -1 && this.f26524o != j10) {
-                throw new ProtocolException("unexpected end of stream");
+            v vVar4 = vVar;
+            String n10 = n(m10, "ERA");
+            if (vVar4 == v.NARROW) {
+                vVar3 = v.ABBREVIATED;
             }
-            try {
-                super.close();
-                a(null);
-            } catch (IOException e10) {
-                throw a(e10);
+            strArr = o(m10, 5, n10, vVar4, vVar3, m.FORMAT, 0);
+            if (strArr == null && vVar4 != (vVar2 = v.ABBREVIATED)) {
+                strArr = l(locale, vVar2);
             }
         }
-
-        @Override // ru.j, okio.Sink, java.io.Flushable
-        public void flush() {
-            try {
-                super.flush();
-            } catch (IOException e10) {
-                throw a(e10);
-            }
+        if (strArr != null) {
+            return strArr;
         }
+        throw new MissingResourceException("Cannot find ISO-8601-resource for era and locale: " + locale, c.class.getName(), locale.toString());
+    }
 
-        @Override // ru.j, okio.Sink
-        public void u0(Buffer source, long j10) {
-            Intrinsics.checkNotNullParameter(source, "source");
-            if (!this.f26525p) {
-                long j11 = this.f26522e;
-                if (j11 != -1 && this.f26524o + j10 > j11) {
-                    throw new ProtocolException("expected " + this.f26522e + " bytes but received " + (this.f26524o + j10));
+    private static e m(Locale locale) {
+        return e.h("calendar/names/iso8601/iso8601", locale);
+    }
+
+    private static String n(e eVar, String str) {
+        if (eVar.b("useShortKeys") && "true".equals(eVar.f("useShortKeys"))) {
+            return str.substring(0, 1);
+        }
+        return str;
+    }
+
+    private static String[] o(e eVar, int i10, String str, v vVar, v vVar2, m mVar, int i11) {
+        boolean z10;
+        String[] o10;
+        m mVar2 = mVar;
+        String[] strArr = new String[i10];
+        if (str.length() == 1) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        int i12 = 0;
+        while (i12 < i10) {
+            StringBuilder sb2 = new StringBuilder();
+            sb2.append(str);
+            sb2.append('(');
+            if (z10) {
+                char charAt = vVar.name().charAt(0);
+                if (mVar2 != m.STANDALONE) {
+                    charAt = Character.toLowerCase(charAt);
                 }
-                try {
-                    super.u0(source, j10);
-                    this.f26524o += j10;
-                    return;
-                } catch (IOException e10) {
-                    throw a(e10);
-                }
-            }
-            throw new IllegalStateException("closed");
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public final class b extends k {
-
-        /* renamed from: d  reason: collision with root package name */
-        private final long f26527d;
-
-        /* renamed from: e  reason: collision with root package name */
-        private long f26528e;
-
-        /* renamed from: i  reason: collision with root package name */
-        private boolean f26529i;
-
-        /* renamed from: o  reason: collision with root package name */
-        private boolean f26530o;
-
-        /* renamed from: p  reason: collision with root package name */
-        private boolean f26531p;
-
-        /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ c f26532q;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public b(c cVar, Source delegate, long j10) {
-            super(delegate);
-            Intrinsics.checkNotNullParameter(delegate, "delegate");
-            this.f26532q = cVar;
-            this.f26527d = j10;
-            this.f26529i = true;
-            if (j10 == 0) {
-                a(null);
-            }
-        }
-
-        public final IOException a(IOException iOException) {
-            if (this.f26530o) {
-                return iOException;
-            }
-            this.f26530o = true;
-            if (iOException == null && this.f26529i) {
-                this.f26529i = false;
-                this.f26532q.i().w(this.f26532q.g());
-            }
-            return this.f26532q.a(this.f26528e, true, false, iOException);
-        }
-
-        @Override // ru.k, okio.Source, java.io.Closeable, java.lang.AutoCloseable
-        public void close() {
-            if (this.f26531p) {
-                return;
-            }
-            this.f26531p = true;
-            try {
-                super.close();
-                a(null);
-            } catch (IOException e10) {
-                throw a(e10);
-            }
-        }
-
-        @Override // ru.k, okio.Source
-        public long read(Buffer sink, long j10) {
-            Intrinsics.checkNotNullParameter(sink, "sink");
-            if (!this.f26531p) {
-                try {
-                    long read = delegate().read(sink, j10);
-                    if (this.f26529i) {
-                        this.f26529i = false;
-                        this.f26532q.i().w(this.f26532q.g());
-                    }
-                    if (read == -1) {
-                        a(null);
-                        return -1L;
-                    }
-                    long j11 = this.f26528e + read;
-                    long j12 = this.f26527d;
-                    if (j12 != -1 && j11 > j12) {
-                        throw new ProtocolException("expected " + this.f26527d + " bytes but received " + j11);
-                    }
-                    this.f26528e = j11;
-                    if (j11 == j12) {
-                        a(null);
-                    }
-                    return read;
-                } catch (IOException e10) {
-                    throw a(e10);
-                }
-            }
-            throw new IllegalStateException("closed");
-        }
-    }
-
-    public c(e call, okhttp3.e eventListener, d finder, iu.d codec) {
-        Intrinsics.checkNotNullParameter(call, "call");
-        Intrinsics.checkNotNullParameter(eventListener, "eventListener");
-        Intrinsics.checkNotNullParameter(finder, "finder");
-        Intrinsics.checkNotNullParameter(codec, "codec");
-        this.f26515a = call;
-        this.f26516b = eventListener;
-        this.f26517c = finder;
-        this.f26518d = codec;
-        this.f26521g = codec.c();
-    }
-
-    private final void u(IOException iOException) {
-        this.f26520f = true;
-        this.f26517c.h(iOException);
-        this.f26518d.c().H(this.f26515a, iOException);
-    }
-
-    public final IOException a(long j10, boolean z10, boolean z11, IOException iOException) {
-        if (iOException != null) {
-            u(iOException);
-        }
-        if (z11) {
-            if (iOException != null) {
-                this.f26516b.s(this.f26515a, iOException);
+                sb2.append(charAt);
             } else {
-                this.f26516b.q(this.f26515a, j10);
+                sb2.append(vVar.name());
+                if (mVar2 == m.STANDALONE) {
+                    sb2.append('|');
+                    sb2.append(mVar2.name());
+                }
             }
-        }
-        if (z10) {
-            if (iOException != null) {
-                this.f26516b.x(this.f26515a, iOException);
+            sb2.append(')');
+            sb2.append('_');
+            sb2.append(i12 + i11);
+            String sb3 = sb2.toString();
+            if (eVar.b(sb3)) {
+                strArr[i12] = eVar.f(sb3);
+            } else if (vVar2 == null || (o10 = o(eVar, i10, str, vVar2, null, mVar2, i11)) == null) {
+                return null;
             } else {
-                this.f26516b.v(this.f26515a, j10);
+                strArr[i12] = o10[i12];
+            }
+            i12++;
+            mVar2 = mVar;
+        }
+        return strArr;
+    }
+
+    private static String p(String str, v vVar, m mVar) {
+        char charAt = vVar.name().charAt(0);
+        if (mVar == m.FORMAT) {
+            charAt = Character.toLowerCase(charAt);
+        }
+        return "P(" + String.valueOf(charAt) + ")_" + str;
+    }
+
+    private static String[] q(Locale locale, v vVar, m mVar) {
+        e m10 = m(locale);
+        if (m10 != null) {
+            if (vVar == v.SHORT) {
+                vVar = v.ABBREVIATED;
+            }
+            String p10 = p("am", vVar, mVar);
+            String p11 = p("pm", vVar, mVar);
+            if (m10.b(p10) && m10.b(p11)) {
+                return new String[]{m10.f(p10), m10.f(p11)};
+            }
+            if (mVar == m.STANDALONE) {
+                v vVar2 = v.ABBREVIATED;
+                if (vVar == vVar2) {
+                    return q(locale, vVar, m.FORMAT);
+                }
+                return q(locale, vVar2, mVar);
+            }
+            v vVar3 = v.ABBREVIATED;
+            if (vVar != vVar3) {
+                return q(locale, vVar3, mVar);
             }
         }
-        return this.f26515a.u(this, z11, z10, iOException);
+        throw new MissingResourceException("Cannot find ISO-8601-resource for am/pm and locale: " + locale, c.class.getName(), locale.toString());
     }
 
-    public final void b() {
-        this.f26518d.cancel();
-    }
-
-    public final Sink c(Request request, boolean z10) {
-        Intrinsics.checkNotNullParameter(request, "request");
-        this.f26519e = z10;
-        RequestBody c10 = request.c();
-        Intrinsics.checkNotNull(c10);
-        long contentLength = c10.contentLength();
-        this.f26516b.r(this.f26515a);
-        return new a(this, this.f26518d.e(request, contentLength), contentLength);
-    }
-
-    public final void d() {
-        this.f26518d.cancel();
-        this.f26515a.u(this, true, true, null);
-    }
-
-    public final void e() {
-        try {
-            this.f26518d.a();
-        } catch (IOException e10) {
-            this.f26516b.s(this.f26515a, e10);
-            u(e10);
-            throw e10;
-        }
-    }
-
-    public final void f() {
-        try {
-            this.f26518d.h();
-        } catch (IOException e10) {
-            this.f26516b.s(this.f26515a, e10);
-            u(e10);
-            throw e10;
-        }
-    }
-
-    public final e g() {
-        return this.f26515a;
-    }
-
-    public final f h() {
-        return this.f26521g;
-    }
-
-    public final okhttp3.e i() {
-        return this.f26516b;
-    }
-
-    public final d j() {
-        return this.f26517c;
-    }
-
-    public final boolean k() {
-        return this.f26520f;
-    }
-
-    public final boolean l() {
-        return !Intrinsics.areEqual(this.f26517c.d().l().i(), this.f26521g.A().a().l().i());
-    }
-
-    public final boolean m() {
-        return this.f26519e;
-    }
-
-    public final d.AbstractC0641d n() {
-        this.f26515a.A();
-        return this.f26518d.c().x(this);
-    }
-
-    public final void o() {
-        this.f26518d.c().z();
-    }
-
-    public final void p() {
-        this.f26515a.u(this, true, false, null);
-    }
-
-    public final ResponseBody q(Response response) {
-        Intrinsics.checkNotNullParameter(response, "response");
-        try {
-            String Z = Response.Z(response, "Content-Type", null, 2, null);
-            long d10 = this.f26518d.d(response);
-            return new iu.h(Z, d10, x.d(new b(this, this.f26518d.b(response), d10)));
-        } catch (IOException e10) {
-            this.f26516b.x(this.f26515a, e10);
-            u(e10);
-            throw e10;
-        }
-    }
-
-    public final Response.a r(boolean z10) {
-        try {
-            Response.a g10 = this.f26518d.g(z10);
-            if (g10 != null) {
-                g10.l(this);
-                return g10;
+    private static String[] r(Locale locale, v vVar, m mVar) {
+        String[] strArr;
+        e m10 = m(locale);
+        if (m10 != null) {
+            if (vVar == v.SHORT) {
+                vVar = v.ABBREVIATED;
             }
-            return g10;
-        } catch (IOException e10) {
-            this.f26516b.x(this.f26515a, e10);
-            u(e10);
-            throw e10;
+            v vVar2 = vVar;
+            strArr = o(m10, 12, n(m10, "MONTH_OF_YEAR"), vVar2, null, mVar, 1);
+            if (strArr == null) {
+                m mVar2 = m.STANDALONE;
+                if (mVar == mVar2) {
+                    if (vVar2 != v.NARROW) {
+                        strArr = r(locale, vVar2, m.FORMAT);
+                    }
+                } else if (vVar2 == v.ABBREVIATED) {
+                    strArr = r(locale, v.WIDE, m.FORMAT);
+                } else if (vVar2 == v.NARROW) {
+                    strArr = r(locale, vVar2, mVar2);
+                }
+            }
+        } else {
+            strArr = null;
         }
-    }
-
-    public final void s(Response response) {
-        Intrinsics.checkNotNullParameter(response, "response");
-        this.f26516b.y(this.f26515a, response);
-    }
-
-    public final void t() {
-        this.f26516b.z(this.f26515a);
-    }
-
-    public final void v() {
-        a(-1L, true, true, null);
-    }
-
-    public final void w(Request request) {
-        Intrinsics.checkNotNullParameter(request, "request");
-        try {
-            this.f26516b.u(this.f26515a);
-            this.f26518d.f(request);
-            this.f26516b.t(this.f26515a, request);
-        } catch (IOException e10) {
-            this.f26516b.s(this.f26515a, e10);
-            u(e10);
-            throw e10;
+        if (strArr != null) {
+            return strArr;
         }
+        throw new MissingResourceException("Cannot find ISO-8601-month for locale: " + locale, c.class.getName(), locale.toString());
+    }
+
+    private static String[] s(Locale locale, v vVar, m mVar) {
+        String[] strArr;
+        e m10 = m(locale);
+        if (m10 != null) {
+            if (vVar == v.SHORT) {
+                vVar = v.ABBREVIATED;
+            }
+            v vVar2 = vVar;
+            strArr = o(m10, 4, n(m10, "QUARTER_OF_YEAR"), vVar2, null, mVar, 1);
+            if (strArr == null) {
+                m mVar2 = m.STANDALONE;
+                if (mVar == mVar2) {
+                    if (vVar2 != v.NARROW) {
+                        strArr = s(locale, vVar2, m.FORMAT);
+                    }
+                } else if (vVar2 == v.ABBREVIATED) {
+                    strArr = s(locale, v.WIDE, m.FORMAT);
+                } else if (vVar2 == v.NARROW) {
+                    strArr = s(locale, vVar2, mVar2);
+                }
+            }
+        } else {
+            strArr = null;
+        }
+        if (strArr != null) {
+            return strArr;
+        }
+        throw new MissingResourceException("Cannot find ISO-8601-quarter-of-year for locale: " + locale, c.class.getName(), locale.toString());
+    }
+
+    private static char t(cu.e eVar) {
+        return Character.toLowerCase(eVar.name().charAt(0));
+    }
+
+    private static String[] u(Locale locale, v vVar, m mVar) {
+        String[] strArr;
+        e m10 = m(locale);
+        if (m10 != null) {
+            strArr = o(m10, 7, n(m10, "DAY_OF_WEEK"), vVar, null, mVar, 1);
+            if (strArr == null) {
+                m mVar2 = m.STANDALONE;
+                if (mVar == mVar2) {
+                    if (vVar != v.NARROW) {
+                        strArr = u(locale, vVar, m.FORMAT);
+                    }
+                } else {
+                    v vVar2 = v.ABBREVIATED;
+                    if (vVar == vVar2) {
+                        strArr = u(locale, v.WIDE, m.FORMAT);
+                    } else if (vVar == v.SHORT) {
+                        strArr = u(locale, vVar2, m.FORMAT);
+                    } else if (vVar == v.NARROW) {
+                        strArr = u(locale, vVar, mVar2);
+                    }
+                }
+            }
+        } else {
+            strArr = null;
+        }
+        if (strArr != null) {
+            return strArr;
+        }
+        throw new MissingResourceException("Cannot find ISO-8601-day-of-week for locale: " + locale, c.class.getName(), locale.toString());
+    }
+
+    @Override // cu.f
+    public String a(cu.e eVar, Locale locale) {
+        return h(eVar, locale, false);
+    }
+
+    @Override // cu.u
+    public boolean b(Locale locale) {
+        return f27700a.contains(d.a(locale));
+    }
+
+    @Override // cu.u
+    public String[] c(String str, Locale locale, v vVar, m mVar, boolean z10) {
+        return r(locale, vVar, mVar);
+    }
+
+    @Override // cu.f
+    public String d(cu.e eVar, cu.e eVar2, Locale locale) {
+        if (eVar.compareTo(eVar2) < 0) {
+            eVar = eVar2;
+        }
+        return m(locale).f("F(" + t(eVar) + ")_dt");
+    }
+
+    @Override // cu.u
+    public String[] e(String str, Locale locale, v vVar, m mVar) {
+        return u(locale, vVar, mVar);
+    }
+
+    @Override // cu.f
+    public String f(cu.e eVar, Locale locale) {
+        return m(locale).f("F(" + t(eVar) + ")_d");
+    }
+
+    @Override // cu.u
+    public String[] g(String str, Locale locale, v vVar) {
+        return l(locale, vVar);
+    }
+
+    @Override // eu.c
+    public String h(cu.e eVar, Locale locale, boolean z10) {
+        String str;
+        if (z10 && eVar == cu.e.FULL) {
+            str = "F(alt)";
+        } else {
+            str = "F(" + t(eVar) + ")_t";
+        }
+        return m(locale).f(str);
+    }
+
+    @Override // cu.u
+    public boolean i(String str) {
+        return "iso8601".equals(str);
+    }
+
+    @Override // cu.u
+    public String[] j(String str, Locale locale, v vVar, m mVar) {
+        return q(locale, vVar, mVar);
+    }
+
+    @Override // cu.u
+    public String[] k(String str, Locale locale, v vVar, m mVar) {
+        return s(locale, vVar, mVar);
+    }
+
+    public String toString() {
+        return "IsoTextProviderSPI";
     }
 }

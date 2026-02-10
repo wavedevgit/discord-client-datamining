@@ -12,7 +12,7 @@ public abstract class c extends Binder implements IInterface {
         attachInterface(this, str);
     }
 
-    private boolean h(int i10, Parcel parcel, Parcel parcel2, int i11) {
+    private boolean i(int i10, Parcel parcel, Parcel parcel2, int i11) {
         if (i10 > 16777215) {
             return super.onTransact(i10, parcel, parcel2, i11);
         }
@@ -24,7 +24,7 @@ public abstract class c extends Binder implements IInterface {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void f(Parcel parcel) {
-        int i10 = d.f22633a;
+        int i10 = d.f23758a;
         int dataAvail = parcel.dataAvail();
         if (dataAvail <= 0) {
             return;
@@ -34,7 +34,7 @@ public abstract class c extends Binder implements IInterface {
 
     @Override // android.os.Binder
     public boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
-        if (h(i10, parcel, parcel2, i11)) {
+        if (i(i10, parcel, parcel2, i11)) {
             return true;
         }
         return e(i10, parcel, parcel2, i11);

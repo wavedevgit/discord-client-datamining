@@ -1,175 +1,163 @@
 package zs;
 
-import at.z;
-import j$.time.DayOfWeek;
-import j$.time.LocalDate;
-import j$.time.Month;
-import j$.time.chrono.ChronoLocalDate;
-import j$.time.format.DateTimeParseException;
-import kotlin.Metadata;
+import android.os.Handler;
+import android.os.Looper;
+import java.util.concurrent.CancellationException;
+import kotlin.Unit;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import org.jetbrains.annotations.NotNull;
-@gt.m(with = ft.f.class)
-@Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u000f\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0007\u0018\u0000 (2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0002\u0015)B\u0011\b\u0000\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005B!\b\u0016\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\u0006\u0010\b\u001a\u00020\u0006\u0012\u0006\u0010\t\u001a\u00020\u0006¢\u0006\u0004\b\u0004\u0010\nJ\u001a\u0010\u000e\u001a\u00020\r2\b\u0010\f\u001a\u0004\u0018\u00010\u000bH\u0096\u0002¢\u0006\u0004\b\u000e\u0010\u000fJ\u000f\u0010\u0010\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0010\u0010\u0011J\u000f\u0010\u0013\u001a\u00020\u0012H\u0016¢\u0006\u0004\b\u0013\u0010\u0014J\u0018\u0010\u0015\u001a\u00020\u00062\u0006\u0010\f\u001a\u00020\u0000H\u0096\u0002¢\u0006\u0004\b\u0015\u0010\u0016J\r\u0010\u0017\u001a\u00020\u0006¢\u0006\u0004\b\u0017\u0010\u0011R\u001a\u0010\u0003\u001a\u00020\u00028\u0000X\u0080\u0004¢\u0006\f\n\u0004\b\u0018\u0010\u0019\u001a\u0004\b\u001a\u0010\u001bR\u0011\u0010\u0007\u001a\u00020\u00068F¢\u0006\u0006\u001a\u0004\b\u001c\u0010\u0011R\u0011\u0010\b\u001a\u00020\u00068F¢\u0006\u0006\u001a\u0004\b\u001d\u0010\u0011R\u0015\u0010\"\u001a\u00060\u001ej\u0002`\u001f8F¢\u0006\u0006\u001a\u0004\b \u0010!R\u0011\u0010\t\u001a\u00020\u00068F¢\u0006\u0006\u001a\u0004\b\u0018\u0010\u0011R\u0015\u0010'\u001a\u00060#j\u0002`$8F¢\u0006\u0006\u001a\u0004\b%\u0010&¨\u0006*"}, d2 = {"Lzs/f;", "", "j$/time/LocalDate", "value", "<init>", "(Lj$/time/LocalDate;)V", "", "year", "monthNumber", "dayOfMonth", "(III)V", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "hashCode", "()I", "", "toString", "()Ljava/lang/String;", "a", "(Lzs/f;)I", "k", "d", "Lj$/time/LocalDate;", "h", "()Lj$/time/LocalDate;", "i", "g", "j$/time/Month", "Lkotlinx/datetime/Month;", "f", "()Lj$/time/Month;", "month", "j$/time/DayOfWeek", "Lkotlinx/datetime/DayOfWeek;", "e", "()Lj$/time/DayOfWeek;", "dayOfWeek", "Companion", "b", "kotlinx-datetime"}, k = 1, mv = {1, 9, 0}, xi = 48)
+import kotlinx.coroutines.CancellableContinuation;
+import kotlinx.coroutines.k;
+import kotlinx.coroutines.z;
+import ys.e1;
+import ys.m0;
+import ys.n0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class f implements Comparable<f> {
-    @NotNull
-    public static final a Companion = new a(null);
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final f f56665e;
+public final class f extends g implements k {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final f f56666i;
+    private final Handler f57120i;
 
-    /* renamed from: d  reason: collision with root package name */
-    private final LocalDate f56667d;
+    /* renamed from: o  reason: collision with root package name */
+    private final String f57121o;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: p  reason: collision with root package name */
+    private final boolean f57122p;
 
-        public static /* synthetic */ f b(a aVar, CharSequence charSequence, at.n nVar, int i10, Object obj) {
-            if ((i10 & 2) != 0) {
-                nVar = h.a();
-            }
-            return aVar.a(charSequence, nVar);
-        }
+    /* renamed from: q  reason: collision with root package name */
+    private final f f57123q;
 
-        public final f a(CharSequence input, at.n format) {
-            Intrinsics.checkNotNullParameter(input, "input");
-            Intrinsics.checkNotNullParameter(format, "format");
-            if (format == b.f56668a.a()) {
-                try {
-                    return new f(LocalDate.parse(bt.d.d(input.toString())));
-                } catch (DateTimeParseException e10) {
-                    throw new zs.b(e10);
+    private f(Handler handler, String str, boolean z10) {
+        super(null);
+        this.f57120i = handler;
+        this.f57121o = str;
+        this.f57122p = z10;
+        this.f57123q = z10 ? this : new f(handler, str, true);
+    }
+
+    private final void g2(CoroutineContext coroutineContext, Runnable runnable) {
+        z.c(coroutineContext, new CancellationException("The task was rejected, the handler underlying the dispatcher '" + this + "' was closed"));
+        m0.b().b1(coroutineContext, runnable);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void m2(f fVar, Runnable runnable) {
+        fVar.f57120i.removeCallbacks(runnable);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void o2(CancellableContinuation cancellableContinuation, f fVar) {
+        cancellableContinuation.t(fVar, Unit.f31987a);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit t2(f fVar, Runnable runnable, Throwable th2) {
+        fVar.f57120i.removeCallbacks(runnable);
+        return Unit.f31987a;
+    }
+
+    @Override // kotlinx.coroutines.k
+    public n0 C0(long j10, final Runnable runnable, CoroutineContext coroutineContext) {
+        if (this.f57120i.postDelayed(runnable, kotlin.ranges.d.j(j10, 4611686018427387903L))) {
+            return new n0() { // from class: zs.c
+                @Override // ys.n0
+                public final void dispose() {
+                    f.m2(f.this, runnable);
                 }
-            }
-            return (f) format.a(input);
+            };
         }
+        g2(coroutineContext, runnable);
+        return e1.f55791d;
+    }
 
-        @NotNull
-        public final KSerializer serializer() {
-            return ft.f.f23225a;
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void b1(CoroutineContext coroutineContext, Runnable runnable) {
+        if (!this.f57120i.post(runnable)) {
+            g2(coroutineContext, runnable);
         }
-
-        private a() {
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final b f56668a = new b();
-
-        /* renamed from: b  reason: collision with root package name */
-        private static final at.n f56669b = z.c();
-
-        private b() {
-        }
-
-        public final at.n a() {
-            return z.b();
-        }
-    }
-
-    static {
-        LocalDate MIN = LocalDate.MIN;
-        Intrinsics.checkNotNullExpressionValue(MIN, "MIN");
-        f56665e = new f(MIN);
-        LocalDate MAX = LocalDate.MAX;
-        Intrinsics.checkNotNullExpressionValue(MAX, "MAX");
-        f56666i = new f(MAX);
-    }
-
-    public f(LocalDate value) {
-        Intrinsics.checkNotNullParameter(value, "value");
-        this.f56667d = value;
-    }
-
-    @Override // java.lang.Comparable
-    /* renamed from: a */
-    public int compareTo(f other) {
-        Intrinsics.checkNotNullParameter(other, "other");
-        return this.f56667d.compareTo((ChronoLocalDate) other.f56667d);
-    }
-
-    public final int d() {
-        return this.f56667d.getDayOfMonth();
-    }
-
-    public final DayOfWeek e() {
-        DayOfWeek dayOfWeek = this.f56667d.getDayOfWeek();
-        Intrinsics.checkNotNullExpressionValue(dayOfWeek, "getDayOfWeek(...)");
-        return dayOfWeek;
     }
 
     public boolean equals(Object obj) {
-        if (this != obj) {
-            if (!(obj instanceof f) || !Intrinsics.areEqual(this.f56667d, ((f) obj).f56667d)) {
-                return false;
+        if (obj instanceof f) {
+            f fVar = (f) obj;
+            if (fVar.f57120i == this.f57120i && fVar.f57122p == this.f57122p) {
+                return true;
             }
-            return true;
+            return false;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        int i10;
+        int identityHashCode = System.identityHashCode(this.f57120i);
+        if (this.f57122p) {
+            i10 = 1231;
+        } else {
+            i10 = 1237;
+        }
+        return identityHashCode ^ i10;
+    }
+
+    @Override // ys.c1
+    /* renamed from: l2 */
+    public f P1() {
+        return this.f57123q;
+    }
+
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public String toString() {
+        String Y1 = Y1();
+        if (Y1 == null) {
+            String str = this.f57121o;
+            if (str == null) {
+                str = this.f57120i.toString();
+            }
+            if (this.f57122p) {
+                return str + ".immediate";
+            }
+            return str;
+        }
+        return Y1;
+    }
+
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public boolean x1(CoroutineContext coroutineContext) {
+        if (this.f57122p && Intrinsics.areEqual(Looper.myLooper(), this.f57120i.getLooper())) {
+            return false;
         }
         return true;
     }
 
-    public final Month f() {
-        Month month = this.f56667d.getMonth();
-        Intrinsics.checkNotNullExpressionValue(month, "getMonth(...)");
-        return month;
+    @Override // kotlinx.coroutines.k
+    public void z(long j10, final CancellableContinuation cancellableContinuation) {
+        final Runnable runnable = new Runnable() { // from class: zs.d
+            @Override // java.lang.Runnable
+            public final void run() {
+                f.o2(CancellableContinuation.this, this);
+            }
+        };
+        if (this.f57120i.postDelayed(runnable, kotlin.ranges.d.j(j10, 4611686018427387903L))) {
+            cancellableContinuation.c(new Function1() { // from class: zs.e
+                @Override // kotlin.jvm.functions.Function1
+                public final Object invoke(Object obj) {
+                    Unit t22;
+                    t22 = f.t2(f.this, runnable, (Throwable) obj);
+                    return t22;
+                }
+            });
+        } else {
+            g2(cancellableContinuation.getContext(), runnable);
+        }
     }
 
-    public final int g() {
-        return this.f56667d.getMonthValue();
+    public /* synthetic */ f(Handler handler, String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(handler, (i10 & 2) != 0 ? null : str);
     }
 
-    public final LocalDate h() {
-        return this.f56667d;
-    }
-
-    public int hashCode() {
-        return this.f56667d.hashCode();
-    }
-
-    public final int i() {
-        return this.f56667d.getYear();
-    }
-
-    public final int k() {
-        return bt.c.a(this.f56667d.toEpochDay());
-    }
-
-    public String toString() {
-        String localDate = this.f56667d.toString();
-        Intrinsics.checkNotNullExpressionValue(localDate, "toString(...)");
-        return localDate;
-    }
-
-    /* JADX WARN: Illegal instructions before constructor call */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public f(int r1, int r2, int r3) {
-        /*
-            r0 = this;
-            j$.time.LocalDate r1 = j$.time.LocalDate.of(r1, r2, r3)     // Catch: j$.time.DateTimeException -> Lb
-            kotlin.jvm.internal.Intrinsics.checkNotNull(r1)
-            r0.<init>(r1)
-            return
-        Lb:
-            r1 = move-exception
-            java.lang.IllegalArgumentException r2 = new java.lang.IllegalArgumentException
-            r2.<init>(r1)
-            throw r2
-        */
-        throw new UnsupportedOperationException("Method not decompiled: zs.f.<init>(int, int, int):void");
+    public f(Handler handler, String str) {
+        this(handler, str, false);
     }
 }

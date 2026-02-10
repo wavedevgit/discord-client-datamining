@@ -46,12 +46,12 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_UnknownE
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.C0();
+                mVar.z0();
                 mVar.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw bn.c.x("title", "title", mVar);
+                    throw dn.c.x("title", "title", mVar);
                 }
                 i10 &= -2;
             } else if (J == 1) {
@@ -68,7 +68,7 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_UnknownE
         }
         Constructor<GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError.class.getDeclaredConstructor(String.class, String.class, ErrorDetails.class, Integer.TYPE, bn.c.f7152c);
+            constructor = GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError.class.getDeclaredConstructor(String.class, String.class, ErrorDetails.class, Integer.TYPE, dn.c.f21827c);
             this.constructorRef = constructor;
         }
         return constructor.newInstance(str, str2, errorDetails, Integer.valueOf(i10), null);
@@ -77,7 +77,7 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_UnknownE
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError unknownError) {
         if (unknownError != null) {
-            tVar.k();
+            tVar.i();
             tVar.J("title");
             this.stringAdapter.toJson(tVar, unknownError.getTitle());
             tVar.J("code");

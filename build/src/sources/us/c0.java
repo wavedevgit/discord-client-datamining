@@ -1,24 +1,23 @@
 package us;
 
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.functions.Function0;
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
+import us.w0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class c0 {
-    public static final b0 b(Object obj) {
-        if (obj != b.f51766a) {
-            Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type S of kotlinx.coroutines.internal.SegmentOrClosed");
-            return (b0) obj;
-        }
-        throw new IllegalStateException("Does not contain segment");
+public class c0 implements Function0 {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final w0 f51004d;
+
+    public c0(w0 w0Var) {
+        this.f51004d = w0Var;
     }
 
-    public static final boolean c(Object obj) {
-        if (obj == b.f51766a) {
-            return true;
-        }
-        return false;
-    }
-
-    public static Object a(Object obj) {
-        return obj;
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        ClassDescriptor G;
+        G = w0.a.G(this.f51004d);
+        return G;
     }
 }

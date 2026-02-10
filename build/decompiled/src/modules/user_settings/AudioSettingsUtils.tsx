@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/AudioSettingsUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1() {
-        _fun66842: for (var _fun66842_ip = 0;;) switch (_fun66842_ip) {
+        _fun66895: for (var _fun66895_ip = 0;;) switch (_fun66895_ip) {
             case 0:
                 var0 = arg0;
                 var4 = _closure1_slot0;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1.STREAM;
                 var1 = arg1;
                 if (!(var1 !== var4)) {
-                    _fun66842_ip = 81;
-                    continue _fun66842
+                    _fun66895_ip = 81;
+                    continue _fun66895
                 }
             case 47:
                 var4 = _closure1_slot0;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.bind(var8)(var1);
                 var1 = var1.AudioSettingsDefaultVolumes;
                 var1 = var1.USER;
-                _fun66842_ip = 113;
-                continue _fun66842;
+                _fun66895_ip = 113;
+                continue _fun66895;
             case 81:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6 - var2;
                 var2 = var4.bind(var5)(var2);
                 if (!(var2 < var3)) {
-                    _fun66842_ip = 194;
-                    continue _fun66842
+                    _fun66895_ip = 194;
+                    continue _fun66895
                 }
             case 191:
                 var0 = var1;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.snapVolumeToDefault = var3;
     var1 = function arg0() {
-        _fun66843: for (var _fun66843_ip = 0;;) switch (_fun66843_ip) {
+        _fun66896: for (var _fun66896_ip = 0;;) switch (_fun66896_ip) {
             case 0:
                 var3 = arg0;
                 var4 = _closure1_slot0;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.MediaEngineContextTypes;
                 var2 = var2.DEFAULT;
                 if (!(var2 !== var3)) {
-                    _fun66843_ip = 91;
-                    continue _fun66843
+                    _fun66896_ip = 91;
+                    continue _fun66896
                 }
             case 44:
                 var4 = _closure1_slot0;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.MediaEngineContextTypes;
                 var2 = var2.STREAM;
                 if (!(var2 !== var3)) {
-                    _fun66843_ip = 79;
-                    continue _fun66843
+                    _fun66896_ip = 79;
+                    continue _fun66896
                 }
             case 77:
                 return var1;
@@ -130,4 +130,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.coerceAudioContextForProto = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [665, 3634, 8258, 3958, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [665, 3634, 8268, 3958, 2]);

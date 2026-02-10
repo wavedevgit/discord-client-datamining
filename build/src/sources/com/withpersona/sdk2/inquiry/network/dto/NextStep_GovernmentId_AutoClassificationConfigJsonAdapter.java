@@ -56,7 +56,7 @@ public final class NextStep_GovernmentId_AutoClassificationConfigJsonAdapter ext
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 bool = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
@@ -75,7 +75,7 @@ public final class NextStep_GovernmentId_AutoClassificationConfigJsonAdapter ext
         }
         Constructor<NextStep.GovernmentId.AutoClassificationConfig> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AutoClassificationConfig.class.getDeclaredConstructor(Boolean.class, Boolean.class, CapturePageConfig.class, Integer.TYPE, bn.c.f7152c);
+            constructor = NextStep.GovernmentId.AutoClassificationConfig.class.getDeclaredConstructor(Boolean.class, Boolean.class, CapturePageConfig.class, Integer.TYPE, dn.c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -88,7 +88,7 @@ public final class NextStep_GovernmentId_AutoClassificationConfigJsonAdapter ext
     public void toJson(@NotNull t writer, NextStep.GovernmentId.AutoClassificationConfig autoClassificationConfig) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (autoClassificationConfig != null) {
-            writer.k();
+            writer.i();
             writer.J("isEnabled");
             this.nullableBooleanAdapter.toJson(writer, autoClassificationConfig.isEnabled());
             writer.J("extractTextFromImage");

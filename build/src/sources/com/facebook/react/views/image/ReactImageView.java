@@ -316,7 +316,7 @@ public final class ReactImageView extends b {
         ImageResizeMethod imageResizeMethod = this.resizeMethod;
         ImageResizeMethod imageResizeMethod2 = ImageResizeMethod.NONE;
         if (imageResizeMethod == imageResizeMethod2) {
-            I.E(DownsampleMode.f10504i);
+            I.E(DownsampleMode.f11081i);
         }
         if (this.useSmallCache) {
             I.A(ImageRequest.CacheChoice.SMALL);
@@ -342,7 +342,7 @@ public final class ReactImageView extends b {
         if (imageSource2 != null) {
             ImageRequestBuilder K = ImageRequestBuilder.x(imageSource2.getUri()).J(from).N(resizeOptions).y(true).K(this.progressiveRenderingEnabled);
             if (this.resizeMethod == imageResizeMethod2) {
-                K.E(DownsampleMode.f10504i);
+                K.E(DownsampleMode.f11081i);
             }
             if (this.useSmallCache) {
                 K.A(ImageRequest.CacheChoice.SMALL);
@@ -490,7 +490,7 @@ public final class ReactImageView extends b {
                         }
                         Drawable drawable2 = this.loadingImageDrawable;
                         if (drawable2 != null) {
-                            genericDraweeHierarchy.A(drawable2, ScalingUtils$ScaleType.f10060g);
+                            genericDraweeHierarchy.A(drawable2, ScalingUtils$ScaleType.f10637g);
                         }
                         a o10 = genericDraweeHierarchy.o();
                         if (o10 != null) {
@@ -498,7 +498,7 @@ public final class ReactImageView extends b {
                             if (i10 != 0) {
                                 o10.s(i10);
                             } else {
-                                o10.w(a.EnumC0173a.BITMAP_ONLY);
+                                o10.w(a.EnumC0150a.BITMAP_ONLY);
                             }
                             genericDraweeHierarchy.D(o10);
                         }

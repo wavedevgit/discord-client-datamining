@@ -17,7 +17,7 @@ public interface a {
 
     /* renamed from: s9.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0664a {
+    public static final class C0649a {
         public static CloseableReference b(a aVar, int i10, int i11, int i12) {
             return null;
         }

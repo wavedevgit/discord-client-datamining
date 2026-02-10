@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19339a;
+    private final m.b f20219a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19340b;
+    private final com.squareup.moshi.h f20220b;
 
     public ExchangeOneTimeLinkCodeResponse_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("relationships");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19339a = a10;
+        this.f20219a = a10;
         com.squareup.moshi.h f10 = moshi.f(a0.j(Map.class, String.class, ExchangeOneTimeLinkCodeResponse.Relationship.class), x0.d(), "relationships");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19340b = f10;
+        this.f20220b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,13 +37,13 @@ public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.s
         reader.u();
         Map map = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19339a);
+            int J = reader.J(this.f20219a);
             if (J != -1) {
                 if (J == 0) {
-                    map = (Map) this.f19340b.fromJson(reader);
+                    map = (Map) this.f20220b.fromJson(reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -56,9 +56,9 @@ public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.s
     public void toJson(t writer, ExchangeOneTimeLinkCodeResponse.Data data) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (data != null) {
-            writer.k();
+            writer.i();
             writer.J("relationships");
-            this.f19340b.toJson(writer, data.a());
+            this.f20220b.toJson(writer, data.a());
             writer.s();
             return;
         }

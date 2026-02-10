@@ -113,7 +113,7 @@ public final class InputAddress_AddressComponentStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -162,7 +162,7 @@ public final class InputAddress_AddressComponentStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, InputAddress.AddressComponentStyle addressComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (addressComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("textStyle");
             this.nullableAddressTextStyleAdapter.toJson(writer, addressComponentStyle.getTextStyle());
             writer.J(ViewProps.BACKGROUND_COLOR);

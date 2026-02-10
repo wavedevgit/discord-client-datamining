@@ -1,59 +1,44 @@
 package vn;
 
-import android.media.AudioRecord;
-import java.util.Iterator;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.events.Event;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class d {
+public abstract class d extends Event implements tn.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f52596a = CollectionsKt.o(48000, 44100, 22050, 16000, 11025, 8000);
+    private final String f51650a;
 
-    public static final c a() {
-        Iterator it = f52596a.iterator();
-        while (true) {
-            AudioRecord audioRecord = null;
-            if (!it.hasNext()) {
-                return null;
-            }
-            int intValue = ((Number) it.next()).intValue();
-            try {
-                int minBufferSize = AudioRecord.getMinBufferSize(intValue, 16, 2);
-                if (minBufferSize != -2) {
-                    AudioRecord audioRecord2 = new AudioRecord(1, intValue, 16, 2, minBufferSize);
-                    try {
-                        if (audioRecord2.getState() == 1) {
-                            audioRecord2.release();
-                            c cVar = new c(intValue, 16, 2, minBufferSize);
-                            audioRecord2.release();
-                            return cVar;
-                        }
-                        audioRecord2.release();
-                    } catch (IllegalArgumentException unused) {
-                        audioRecord = audioRecord2;
-                        if (audioRecord != null) {
-                            audioRecord.release();
-                        }
-                    } catch (SecurityException unused2) {
-                        audioRecord = audioRecord2;
-                        if (audioRecord != null) {
-                            audioRecord.release();
-                        }
-                    } catch (Throwable th2) {
-                        th = th2;
-                        audioRecord = audioRecord2;
-                        if (audioRecord != null) {
-                            audioRecord.release();
-                        }
-                        throw th;
-                    }
-                }
-            } catch (IllegalArgumentException unused3) {
-            } catch (SecurityException unused4) {
-            } catch (Throwable th3) {
-                th = th3;
-            }
-        }
+    /* renamed from: b  reason: collision with root package name */
+    private final String f51651b;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public d(int i10, int i11, String name, String registrationName) {
+        super(i10, i11);
+        Intrinsics.checkNotNullParameter(name, "name");
+        Intrinsics.checkNotNullParameter(registrationName, "registrationName");
+        this.f51650a = name;
+        this.f51651b = registrationName;
+    }
+
+    @Override // tn.b
+    public String a() {
+        return this.f51651b;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public short getCoalescingKey() {
+        return (short) 0;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    protected WritableMap getEventData() {
+        return Arguments.createMap();
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public String getEventName() {
+        return this.f51650a;
     }
 }

@@ -15,14 +15,14 @@ abstract class g1 extends h1 {
         return false;
     }
 
-    @Override // com.google.android.gms.internal.fido.h1
-    final boolean h() {
-        return false;
-    }
-
     @Override // com.google.android.gms.internal.fido.h1, java.util.Collection, java.util.Set
     public final int hashCode() {
         return y1.a(r().c());
+    }
+
+    @Override // com.google.android.gms.internal.fido.h1
+    final boolean i() {
+        return false;
     }
 
     abstract f1 r();

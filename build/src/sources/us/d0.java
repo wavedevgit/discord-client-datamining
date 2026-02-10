@@ -1,45 +1,23 @@
 package us;
 
-import kotlin.Result;
+import java.util.Collection;
+import kotlin.jvm.functions.Function0;
+import us.w0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d0 {
+public class d0 implements Function0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final StackTraceElement f51771a = new a.a().a();
+    /* renamed from: d  reason: collision with root package name */
+    private final w0 f51020d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final String f51772b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final String f51773c;
-
-    static {
-        Object b10;
-        Object b11;
-        try {
-            Result.a aVar = Result.f31762e;
-            b10 = Result.b(kotlin.coroutines.jvm.internal.a.class.getCanonicalName());
-        } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31762e;
-            b10 = Result.b(kotlin.c.a(th2));
-        }
-        if (Result.e(b10) != null) {
-            b10 = "kotlin.coroutines.jvm.internal.BaseContinuationImpl";
-        }
-        f51772b = (String) b10;
-        try {
-            b11 = Result.b(d0.class.getCanonicalName());
-        } catch (Throwable th3) {
-            Result.a aVar3 = Result.f31762e;
-            b11 = Result.b(kotlin.c.a(th3));
-        }
-        if (Result.e(b11) != null) {
-            b11 = "kotlinx.coroutines.internal.StackTraceRecoveryKt";
-        }
-        f51773c = (String) b11;
+    public d0(w0 w0Var) {
+        this.f51020d = w0Var;
     }
 
-    public static final Throwable a(Throwable th2) {
-        return th2;
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        Collection E;
+        E = w0.a.E(this.f51020d);
+        return E;
     }
 }

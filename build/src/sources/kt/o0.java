@@ -1,51 +1,121 @@
 package kt;
 
-import java.util.Arrays;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import kt.b;
+import kt.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class o0 extends d2 {
-
-    /* renamed from: a  reason: collision with root package name */
-    private int[] f35185a;
+public final class o0 extends kt.a {
 
     /* renamed from: b  reason: collision with root package name */
-    private int f35186b;
+    public static final b f35270b = new b(null);
 
-    public o0(int[] bufferWithData) {
-        Intrinsics.checkNotNullParameter(bufferWithData, "bufferWithData");
-        this.f35185a = bufferWithData;
-        this.f35186b = bufferWithData.length;
-        b(10);
-    }
+    /* renamed from: a  reason: collision with root package name */
+    private final mt.f f35271a;
 
-    @Override // kt.d2
-    public void b(int i10) {
-        int[] iArr = this.f35185a;
-        if (iArr.length < i10) {
-            int[] copyOf = Arrays.copyOf(iArr, kotlin.ranges.d.d(i10, iArr.length * 2));
-            Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f35185a = copyOf;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    private static final class a implements kt.b, e {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final mt.d f35272a;
+
+        public a(mt.d actualBuilder) {
+            Intrinsics.checkNotNullParameter(actualBuilder, "actualBuilder");
+            this.f35272a = actualBuilder;
+        }
+
+        @Override // kt.b
+        public mt.d a() {
+            return this.f35272a;
+        }
+
+        @Override // kt.b
+        public void b(String str, Function1 function1) {
+            b.a.b(this, str, function1);
+        }
+
+        @Override // kt.b
+        public void e(Function1[] function1Arr, Function1 function1) {
+            b.a.a(this, function1Arr, function1);
+        }
+
+        @Override // kt.o.d
+        public void j(h0 h0Var) {
+            e.a.b(this, h0Var);
+        }
+
+        @Override // kt.o
+        public void k(String str) {
+            b.a.d(this, str);
+        }
+
+        @Override // kt.o.d
+        public void n(h0 h0Var) {
+            e.a.c(this, h0Var);
+        }
+
+        @Override // kt.o.d
+        public void r(h0 h0Var) {
+            e.a.d(this, h0Var);
+        }
+
+        @Override // kt.e
+        public void s(mt.o structure) {
+            Intrinsics.checkNotNullParameter(structure, "structure");
+            a().a(structure);
+        }
+
+        public mt.f x() {
+            return b.a.c(this);
+        }
+
+        @Override // kt.b
+        /* renamed from: y */
+        public a g() {
+            return new a(new mt.d());
         }
     }
 
-    @Override // kt.d2
-    public int d() {
-        return this.f35186b;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b {
+        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final o0 a(Function1 block) {
+            Intrinsics.checkNotNullParameter(block, "block");
+            a aVar = new a(new mt.d());
+            block.invoke(aVar);
+            return new o0(aVar.x());
+        }
+
+        private b() {
+        }
     }
 
-    public final void e(int i10) {
-        d2.c(this, 0, 1, null);
-        int[] iArr = this.f35185a;
-        int d10 = d();
-        this.f35186b = d10 + 1;
-        iArr[d10] = i10;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public o0(mt.f actualFormat) {
+        super(null);
+        Intrinsics.checkNotNullParameter(actualFormat, "actualFormat");
+        this.f35271a = actualFormat;
     }
 
-    @Override // kt.d2
+    @Override // kt.a
+    public mt.f b() {
+        return this.f35271a;
+    }
+
+    @Override // kt.a
+    /* renamed from: e */
+    public x c() {
+        return p0.a();
+    }
+
+    @Override // kt.a
     /* renamed from: f */
-    public int[] a() {
-        int[] copyOf = Arrays.copyOf(this.f35185a, d());
-        Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-        return copyOf;
+    public jt.k d(x intermediate) {
+        Intrinsics.checkNotNullParameter(intermediate, "intermediate");
+        return intermediate.d();
     }
 }

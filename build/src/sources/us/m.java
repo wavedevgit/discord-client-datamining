@@ -1,19 +1,18 @@
 package us;
 
-import kotlinx.coroutines.CoroutineDispatcher;
+import java.lang.reflect.Method;
+import kotlin.jvm.functions.Function1;
+import us.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class m {
-    public static final void a(int i10) {
-        if (i10 >= 1) {
-            return;
-        }
-        throw new IllegalArgumentException(("Expected positive parallelism level, but got " + i10).toString());
-    }
+class m implements Function1 {
 
-    public static final CoroutineDispatcher b(CoroutineDispatcher coroutineDispatcher, String str) {
-        if (str != null) {
-            return new w(coroutineDispatcher, str);
-        }
-        return coroutineDispatcher;
+    /* renamed from: d  reason: collision with root package name */
+    public static final m f51094d = new m();
+
+    @Override // kotlin.jvm.functions.Function1
+    public Object invoke(Object obj) {
+        CharSequence c10;
+        c10 = n.a.c((Method) obj);
+        return c10;
     }
 }

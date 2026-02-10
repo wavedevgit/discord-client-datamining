@@ -37,7 +37,7 @@ public final class ErrorResponseJsonAdapter extends h {
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.C0();
+                mVar.z0();
                 mVar.T();
             } else if (J == 0) {
                 list = (List) this.nullableListOfErrorAdapter.fromJson(mVar);
@@ -50,7 +50,7 @@ public final class ErrorResponseJsonAdapter extends h {
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, ErrorResponse errorResponse) {
         if (errorResponse != null) {
-            tVar.k();
+            tVar.i();
             tVar.J("errors");
             this.nullableListOfErrorAdapter.toJson(tVar, errorResponse.getErrors());
             tVar.s();

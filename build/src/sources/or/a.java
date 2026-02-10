@@ -1,20 +1,48 @@
 package or;
+
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+import or.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-    public static a a() {
-        return new b();
+public final class a implements cv.b, b {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f41089a = new a();
+
+    /* renamed from: or.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class C0578a extends Lambda implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final C0578a f41090d = new C0578a();
+
+        C0578a() {
+            super(2);
+        }
+
+        public final String a(String formatSequence, double d10) {
+            Intrinsics.checkNotNullParameter(formatSequence, "formatSequence");
+            String format = String.format(formatSequence, Double.valueOf(d10));
+            Intrinsics.checkNotNullExpressionValue(format, "format(formatSequence, arg)");
+            return format;
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            return a((String) obj, ((Number) obj2).doubleValue());
+        }
     }
 
-    public abstract String b(String str);
+    private a() {
+    }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static class b extends a {
-        private b() {
-        }
+    public String a(Object obj, Object obj2, Function2 function2) {
+        return b.a.b(this, obj, obj2, function2);
+    }
 
-        @Override // or.a
-        public String b(String str) {
-            return str;
-        }
+    @Override // cv.b
+    public Object f(Object obj, Object obj2) {
+        return a(obj, obj2, C0578a.f41090d);
     }
 }

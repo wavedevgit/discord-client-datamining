@@ -23,30 +23,30 @@ import android.view.PointerIcon;
 import android.view.View;
 import android.view.ViewOutlineProvider;
 import android.view.accessibility.AccessibilityNodeInfo;
+import android.widget.Button;
 import android.widget.Checkable;
 import android.widget.CompoundButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.f;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import androidx.customview.widget.ExploreByTouchHelper;
-import bh.i;
 import bh.j;
 import bh.k;
+import bh.l;
 import ch.g;
 import com.facebook.react.modules.appstate.AppStateModule;
 import com.google.android.material.chip.a;
-import com.google.android.material.internal.l;
-import com.google.android.material.internal.o;
+import com.google.android.material.internal.m;
 import com.reactnativecommunity.webview.RNCWebViewManager;
 import java.util.List;
-import oh.d;
-import rh.h;
-import rh.n;
+import qh.d;
+import th.i;
+import th.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
-    private static final int H = j.f6800p;
+public class Chip extends f implements a.InterfaceC0179a, o, Checkable {
+    private static final int H = k.f6947v;
     private static final Rect I = new Rect();
     private static final int[] J = {16842913};
     private static final int[] K = {16842911};
@@ -56,56 +56,56 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     private boolean D;
     private final Rect E;
     private final RectF F;
-    private final oh.f G;
+    private final qh.f G;
 
     /* renamed from: p  reason: collision with root package name */
-    private com.google.android.material.chip.a f14948p;
+    private com.google.android.material.chip.a f15560p;
 
     /* renamed from: q  reason: collision with root package name */
-    private InsetDrawable f14949q;
+    private InsetDrawable f15561q;
 
     /* renamed from: r  reason: collision with root package name */
-    private RippleDrawable f14950r;
+    private RippleDrawable f15562r;
 
     /* renamed from: s  reason: collision with root package name */
-    private View.OnClickListener f14951s;
+    private View.OnClickListener f15563s;
 
     /* renamed from: t  reason: collision with root package name */
-    private CompoundButton.OnCheckedChangeListener f14952t;
+    private CompoundButton.OnCheckedChangeListener f15564t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f14953u;
+    private boolean f15565u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f14954v;
+    private boolean f15566v;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f14955w;
+    private boolean f15567w;
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f14956x;
+    private boolean f15568x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f14957y;
+    private boolean f15569y;
 
     /* renamed from: z  reason: collision with root package name */
-    private int f14958z;
+    private int f15570z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class a extends oh.f {
+    class a extends qh.f {
         a() {
         }
 
-        @Override // oh.f
+        @Override // qh.f
         public void a(int i10) {
         }
 
-        @Override // oh.f
+        @Override // qh.f
         public void b(Typeface typeface, boolean z10) {
             CharSequence text;
             Chip chip = Chip.this;
-            if (chip.f14948p.M2()) {
-                text = Chip.this.f14948p.h1();
+            if (chip.f15560p.a3()) {
+                text = Chip.this.f15560p.u1();
             } else {
                 text = Chip.this.getText();
             }
@@ -123,8 +123,8 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
 
         @Override // android.view.ViewOutlineProvider
         public void getOutline(View view, Outline outline) {
-            if (Chip.this.f14948p != null) {
-                Chip.this.f14948p.getOutline(outline);
+            if (Chip.this.f15560p != null) {
+                Chip.this.f15560p.getOutline(outline);
             } else {
                 outline.setAlpha(0.0f);
             }
@@ -149,7 +149,7 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
         @Override // androidx.customview.widget.ExploreByTouchHelper
         protected void getVisibleVirtualViews(List list) {
             list.add(0);
-            if (Chip.this.n() && Chip.this.s() && Chip.this.f14951s != null) {
+            if (Chip.this.n() && Chip.this.s() && Chip.this.f15563s != null) {
                 list.add(1);
             }
         }
@@ -186,15 +186,16 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
                 } else {
                     CharSequence text = Chip.this.getText();
                     Context context = Chip.this.getContext();
-                    int i11 = i.f6772k;
+                    int i11 = j.f6913n;
                     if (!TextUtils.isEmpty(text)) {
                         str = text;
                     }
                     accessibilityNodeInfoCompat.A0(context.getString(i11, str).trim());
                 }
                 accessibilityNodeInfoCompat.s0(Chip.this.getCloseIconTouchBoundsInt());
-                accessibilityNodeInfoCompat.b(AccessibilityNodeInfoCompat.a.f3454i);
+                accessibilityNodeInfoCompat.b(AccessibilityNodeInfoCompat.a.f3458i);
                 accessibilityNodeInfoCompat.C0(Chip.this.isEnabled());
+                accessibilityNodeInfoCompat.w0(Button.class.getName());
                 return;
             }
             accessibilityNodeInfoCompat.A0("");
@@ -204,40 +205,42 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
         @Override // androidx.customview.widget.ExploreByTouchHelper
         protected void onVirtualViewKeyboardFocusChanged(int i10, boolean z10) {
             if (i10 == 1) {
-                Chip.this.f14956x = z10;
+                Chip.this.f15568x = z10;
+            }
+            if (Chip.this.f15560p.K1(Chip.this.f15568x)) {
                 Chip.this.refreshDrawableState();
             }
         }
     }
 
     public Chip(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, bh.b.f6627f);
+        this(context, attributeSet, bh.b.f6733f);
     }
 
     private void A() {
         com.google.android.material.chip.a aVar;
-        if (!TextUtils.isEmpty(getText()) && (aVar = this.f14948p) != null) {
-            int J0 = (int) (aVar.J0() + this.f14948p.j1() + this.f14948p.q0());
-            int O0 = (int) (this.f14948p.O0() + this.f14948p.k1() + this.f14948p.m0());
-            if (this.f14949q != null) {
+        if (!TextUtils.isEmpty(getText()) && (aVar = this.f15560p) != null) {
+            int W0 = (int) (aVar.W0() + this.f15560p.w1() + this.f15560p.D0());
+            int b12 = (int) (this.f15560p.b1() + this.f15560p.x1() + this.f15560p.z0());
+            if (this.f15561q != null) {
                 Rect rect = new Rect();
-                this.f14949q.getPadding(rect);
-                O0 += rect.left;
-                J0 += rect.right;
+                this.f15561q.getPadding(rect);
+                b12 += rect.left;
+                W0 += rect.right;
             }
-            h0.F0(this, O0, getPaddingTop(), J0, getPaddingBottom());
+            setPaddingRelative(b12, getPaddingTop(), W0, getPaddingBottom());
         }
     }
 
     private void B() {
         TextPaint paint = getPaint();
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
             paint.drawableState = aVar.getState();
         }
         d textAppearance = getTextAppearance();
         if (textAppearance != null) {
-            textAppearance.n(getContext(), paint, this.G);
+            textAppearance.p(getContext(), paint, this.G);
         }
     }
 
@@ -270,7 +273,7 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public static /* synthetic */ void b(Chip chip, CompoundButton compoundButton, boolean z10) {
-        CompoundButton.OnCheckedChangeListener onCheckedChangeListener = chip.f14952t;
+        CompoundButton.OnCheckedChangeListener onCheckedChangeListener = chip.f15564t;
         if (onCheckedChangeListener != null) {
             onCheckedChangeListener.onCheckedChanged(compoundButton, z10);
         }
@@ -280,8 +283,8 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     @NonNull
     public RectF getCloseIconTouchBounds() {
         this.F.setEmpty();
-        if (n() && this.f14951s != null) {
-            this.f14948p.Y0(this.F);
+        if (n() && this.f15563s != null) {
+            this.f15560p.l1(this.F);
         }
         return this.F;
     }
@@ -295,30 +298,30 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     private d getTextAppearance() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.i1();
+            return aVar.v1();
         }
         return null;
     }
 
-    private void j(com.google.android.material.chip.a aVar) {
-        aVar.p2(this);
+    private void k(com.google.android.material.chip.a aVar) {
+        aVar.D2(this);
     }
 
     /* JADX WARN: Type inference failed for: r0v0, types: [boolean, int] */
-    private int[] k() {
+    private int[] l() {
         ?? isEnabled = isEnabled();
         int i10 = isEnabled;
-        if (this.f14956x) {
+        if (this.f15568x) {
             i10 = isEnabled + 1;
         }
         int i11 = i10;
-        if (this.f14955w) {
+        if (this.f15567w) {
             i11 = i10 + 1;
         }
         int i12 = i11;
-        if (this.f14954v) {
+        if (this.f15566v) {
             i12 = i11 + 1;
         }
         int i13 = i12;
@@ -331,15 +334,15 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
             iArr[0] = 16842910;
             i14 = 1;
         }
-        if (this.f14956x) {
+        if (this.f15568x) {
             iArr[i14] = 16842908;
             i14++;
         }
-        if (this.f14955w) {
+        if (this.f15567w) {
             iArr[i14] = 16843623;
             i14++;
         }
-        if (this.f14954v) {
+        if (this.f15566v) {
             iArr[i14] = 16842919;
             i14++;
         }
@@ -349,25 +352,19 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
         return iArr;
     }
 
-    private void m() {
-        if (getBackgroundDrawable() == this.f14949q && this.f14948p.getCallback() == null) {
-            this.f14948p.setCallback(this.f14949q);
-        }
-    }
-
     /* JADX INFO: Access modifiers changed from: private */
     public boolean n() {
-        com.google.android.material.chip.a aVar = this.f14948p;
-        if (aVar != null && aVar.R0() != null) {
+        com.google.android.material.chip.a aVar = this.f15560p;
+        if (aVar != null && aVar.e1() != null) {
             return true;
         }
         return false;
     }
 
     private void o(Context context, AttributeSet attributeSet, int i10) {
-        TypedArray i11 = l.i(context, attributeSet, k.f7031x0, i10, H, new int[0]);
-        this.f14957y = i11.getBoolean(k.f6843d1, false);
-        this.A = (int) Math.ceil(i11.getDimension(k.R0, (float) Math.ceil(o.d(getContext(), 48))));
+        TypedArray i11 = m.i(context, attributeSet, l.N0, i10, H, new int[0]);
+        this.f15569y = i11.getBoolean(l.f7140t1, false);
+        this.A = (int) Math.ceil(i11.getDimension(l.f7024h1, qh.b.e(context)));
         i11.recycle();
     }
 
@@ -376,26 +373,26 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     private void q(int i10, int i11, int i12, int i13) {
-        this.f14949q = new InsetDrawable((Drawable) this.f14948p, i10, i11, i12, i13);
+        this.f15561q = new InsetDrawable((Drawable) this.f15560p, i10, i11, i12, i13);
     }
 
     private void setCloseIconHovered(boolean z10) {
-        if (this.f14955w != z10) {
-            this.f14955w = z10;
+        if (this.f15567w != z10) {
+            this.f15567w = z10;
             refreshDrawableState();
         }
     }
 
     private void setCloseIconPressed(boolean z10) {
-        if (this.f14954v != z10) {
-            this.f14954v = z10;
+        if (this.f15566v != z10) {
+            this.f15566v = z10;
             refreshDrawableState();
         }
     }
 
     private void u() {
-        if (this.f14949q != null) {
-            this.f14949q = null;
+        if (this.f15561q != null) {
+            this.f15561q = null;
             setMinWidth(0);
             setMinHeight((int) getChipMinHeight());
             y();
@@ -404,41 +401,34 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
 
     private void w(com.google.android.material.chip.a aVar) {
         if (aVar != null) {
-            aVar.p2(null);
+            aVar.D2(null);
         }
     }
 
     private void x() {
-        if (n() && s() && this.f14951s != null) {
-            h0.n0(this, this.C);
+        if (n() && s() && this.f15563s != null) {
+            i0.k0(this, this.C);
             this.D = true;
             return;
         }
-        h0.n0(this, null);
+        i0.k0(this, null);
         this.D = false;
     }
 
     private void y() {
-        if (ph.b.f44266a) {
-            z();
-            return;
-        }
-        this.f14948p.L2(true);
-        h0.r0(this, getBackgroundDrawable());
-        A();
-        m();
+        z();
     }
 
     private void z() {
-        this.f14950r = new RippleDrawable(ph.b.a(this.f14948p.f1()), getBackgroundDrawable(), null);
-        this.f14948p.L2(false);
-        h0.r0(this, this.f14950r);
+        this.f15562r = new RippleDrawable(rh.a.d(this.f15560p.s1()), getBackgroundDrawable(), null);
+        this.f15560p.Z2(false);
+        setBackground(this.f15562r);
         A();
     }
 
-    @Override // com.google.android.material.chip.a.InterfaceC0200a
+    @Override // com.google.android.material.chip.a.InterfaceC0179a
     public void a() {
-        l(this.A);
+        m(this.A);
         requestLayout();
         invalidateOutline();
     }
@@ -470,9 +460,9 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     public void drawableStateChanged() {
         boolean z10;
         super.drawableStateChanged();
-        com.google.android.material.chip.a aVar = this.f14948p;
-        if (aVar != null && aVar.p1()) {
-            z10 = this.f14948p.l2(k());
+        com.google.android.material.chip.a aVar = this.f15560p;
+        if (aVar != null && aVar.C1()) {
+            z10 = this.f15560p.z2(l());
         } else {
             z10 = false;
         }
@@ -498,109 +488,109 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public Drawable getBackgroundDrawable() {
-        InsetDrawable insetDrawable = this.f14949q;
+        InsetDrawable insetDrawable = this.f15561q;
         if (insetDrawable == null) {
-            return this.f14948p;
+            return this.f15560p;
         }
         return insetDrawable;
     }
 
     public Drawable getCheckedIcon() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.F0();
+            return aVar.S0();
         }
         return null;
     }
 
     public ColorStateList getCheckedIconTint() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.G0();
+            return aVar.T0();
         }
         return null;
     }
 
     public ColorStateList getChipBackgroundColor() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.H0();
+            return aVar.U0();
         }
         return null;
     }
 
     public float getChipCornerRadius() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar == null) {
             return 0.0f;
         }
-        return Math.max(0.0f, aVar.I0());
+        return Math.max(0.0f, aVar.V0());
     }
 
     public Drawable getChipDrawable() {
-        return this.f14948p;
+        return this.f15560p;
     }
 
     public float getChipEndPadding() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.J0();
+            return aVar.W0();
         }
         return 0.0f;
     }
 
     public Drawable getChipIcon() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.K0();
+            return aVar.X0();
         }
         return null;
     }
 
     public float getChipIconSize() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.L0();
+            return aVar.Y0();
         }
         return 0.0f;
     }
 
     public ColorStateList getChipIconTint() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.M0();
+            return aVar.Z0();
         }
         return null;
     }
 
     public float getChipMinHeight() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.N0();
+            return aVar.a1();
         }
         return 0.0f;
     }
 
     public float getChipStartPadding() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.O0();
+            return aVar.b1();
         }
         return 0.0f;
     }
 
     public ColorStateList getChipStrokeColor() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.P0();
+            return aVar.c1();
         }
         return null;
     }
 
     public float getChipStrokeWidth() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.Q0();
+            return aVar.d1();
         }
         return 0.0f;
     }
@@ -611,58 +601,58 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public Drawable getCloseIcon() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.R0();
+            return aVar.e1();
         }
         return null;
     }
 
     public CharSequence getCloseIconContentDescription() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.S0();
+            return aVar.f1();
         }
         return null;
     }
 
     public float getCloseIconEndPadding() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.T0();
+            return aVar.g1();
         }
         return 0.0f;
     }
 
     public float getCloseIconSize() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.U0();
+            return aVar.h1();
         }
         return 0.0f;
     }
 
     public float getCloseIconStartPadding() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.V0();
+            return aVar.i1();
         }
         return 0.0f;
     }
 
     public ColorStateList getCloseIconTint() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.X0();
+            return aVar.k1();
         }
         return null;
     }
 
     @Override // android.widget.TextView
     public TextUtils.TruncateAt getEllipsize() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.b1();
+            return aVar.o1();
         }
         return null;
     }
@@ -677,82 +667,82 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public g getHideMotionSpec() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.c1();
+            return aVar.p1();
         }
         return null;
     }
 
     public float getIconEndPadding() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.d1();
+            return aVar.q1();
         }
         return 0.0f;
     }
 
     public float getIconStartPadding() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.e1();
+            return aVar.r1();
         }
         return 0.0f;
     }
 
     public ColorStateList getRippleColor() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.f1();
+            return aVar.s1();
         }
         return null;
     }
 
     @NonNull
-    public rh.k getShapeAppearanceModel() {
-        return this.f14948p.D();
+    public th.l getShapeAppearanceModel() {
+        return this.f15560p.J();
     }
 
     public g getShowMotionSpec() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.g1();
+            return aVar.t1();
         }
         return null;
     }
 
     public float getTextEndPadding() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.j1();
+            return aVar.w1();
         }
         return 0.0f;
     }
 
     public float getTextStartPadding() {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            return aVar.k1();
+            return aVar.x1();
         }
         return 0.0f;
     }
 
-    public boolean l(int i10) {
+    public boolean m(int i10) {
         int i11;
         this.A = i10;
         int i12 = 0;
         if (!v()) {
-            if (this.f14949q != null) {
+            if (this.f15561q != null) {
                 u();
             } else {
                 y();
             }
             return false;
         }
-        int max = Math.max(0, i10 - this.f14948p.getIntrinsicHeight());
-        int max2 = Math.max(0, i10 - this.f14948p.getIntrinsicWidth());
+        int max = Math.max(0, i10 - this.f15560p.getIntrinsicHeight());
+        int max2 = Math.max(0, i10 - this.f15560p.getIntrinsicWidth());
         if (max2 <= 0 && max <= 0) {
-            if (this.f14949q != null) {
+            if (this.f15561q != null) {
                 u();
             } else {
                 y();
@@ -767,9 +757,9 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
         if (max > 0) {
             i12 = max / 2;
         }
-        if (this.f14949q != null) {
+        if (this.f15561q != null) {
             Rect rect = new Rect();
-            this.f14949q.getPadding(rect);
+            this.f15561q.getPadding(rect);
             if (rect.top == i12 && rect.bottom == i12 && rect.left == i11 && rect.right == i11) {
                 y();
                 return true;
@@ -789,7 +779,7 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     @Override // android.widget.TextView, android.view.View
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        h.f(this, this.f14948p);
+        i.f(this, this.f15560p);
     }
 
     @Override // android.widget.CompoundButton, android.widget.TextView, android.view.View
@@ -845,8 +835,8 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     @Override // android.widget.TextView, android.view.View
     public void onRtlPropertiesChanged(int i10) {
         super.onRtlPropertiesChanged(i10);
-        if (this.f14958z != i10) {
-            this.f14958z = i10;
+        if (this.f15570z != i10) {
+            this.f15570z = i10;
             A();
         }
     }
@@ -877,7 +867,7 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
             if (r0 == r1) goto L35
             goto L40
         L21:
-            boolean r0 = r5.f14954v
+            boolean r0 = r5.f15566v
             if (r0 == 0) goto L40
             if (r1 != 0) goto L2a
             r5.setCloseIconPressed(r3)
@@ -885,7 +875,7 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
             r0 = r2
             goto L41
         L2c:
-            boolean r0 = r5.f14954v
+            boolean r0 = r5.f15566v
             if (r0 == 0) goto L35
             r5.t()
             r0 = r2
@@ -915,16 +905,16 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public boolean r() {
-        com.google.android.material.chip.a aVar = this.f14948p;
-        if (aVar != null && aVar.o1()) {
+        com.google.android.material.chip.a aVar = this.f15560p;
+        if (aVar != null && aVar.B1()) {
             return true;
         }
         return false;
     }
 
     public boolean s() {
-        com.google.android.material.chip.a aVar = this.f14948p;
-        if (aVar != null && aVar.q1()) {
+        com.google.android.material.chip.a aVar = this.f15560p;
+        if (aVar != null && aVar.D1()) {
             return true;
         }
         return false;
@@ -936,7 +926,7 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
 
     @Override // android.view.View
     public void setBackground(Drawable drawable) {
-        if (drawable != getBackgroundDrawable() && drawable != this.f14950r) {
+        if (drawable != getBackgroundDrawable() && drawable != this.f15562r) {
             Log.w("Chip", "Do not set the background; Chip manages its own background drawable.");
         } else {
             super.setBackground(drawable);
@@ -950,7 +940,7 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
 
     @Override // androidx.appcompat.widget.f, android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
-        if (drawable != getBackgroundDrawable() && drawable != this.f14950r) {
+        if (drawable != getBackgroundDrawable() && drawable != this.f15562r) {
             Log.w("Chip", "Do not set the background drawable; Chip manages its own background drawable.");
         } else {
             super.setBackgroundDrawable(drawable);
@@ -973,33 +963,33 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public void setCheckable(boolean z10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.x1(z10);
+            aVar.L1(z10);
         }
     }
 
     public void setCheckableResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.y1(i10);
+            aVar.M1(i10);
         }
     }
 
     @Override // android.widget.CompoundButton, android.widget.Checkable
     public void setChecked(boolean z10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar == null) {
-            this.f14953u = z10;
-        } else if (aVar.o1()) {
+            this.f15565u = z10;
+        } else if (aVar.B1()) {
             super.setChecked(z10);
         }
     }
 
     public void setCheckedIcon(Drawable drawable) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.z1(drawable);
+            aVar.N1(drawable);
         }
     }
 
@@ -1014,92 +1004,92 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public void setCheckedIconResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.A1(i10);
+            aVar.O1(i10);
         }
     }
 
     public void setCheckedIconTint(ColorStateList colorStateList) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.B1(colorStateList);
+            aVar.P1(colorStateList);
         }
     }
 
     public void setCheckedIconTintResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.C1(i10);
+            aVar.Q1(i10);
         }
     }
 
     public void setCheckedIconVisible(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.D1(i10);
+            aVar.R1(i10);
         }
     }
 
     public void setChipBackgroundColor(ColorStateList colorStateList) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.F1(colorStateList);
+            aVar.T1(colorStateList);
         }
     }
 
     public void setChipBackgroundColorResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.G1(i10);
+            aVar.U1(i10);
         }
     }
 
     @Deprecated
     public void setChipCornerRadius(float f10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.H1(f10);
+            aVar.V1(f10);
         }
     }
 
     @Deprecated
     public void setChipCornerRadiusResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.I1(i10);
+            aVar.W1(i10);
         }
     }
 
     public void setChipDrawable(@NonNull com.google.android.material.chip.a aVar) {
-        com.google.android.material.chip.a aVar2 = this.f14948p;
+        com.google.android.material.chip.a aVar2 = this.f15560p;
         if (aVar2 != aVar) {
             w(aVar2);
-            this.f14948p = aVar;
-            aVar.A2(false);
-            j(this.f14948p);
-            l(this.A);
+            this.f15560p = aVar;
+            aVar.O2(false);
+            k(this.f15560p);
+            m(this.A);
         }
     }
 
     public void setChipEndPadding(float f10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.J1(f10);
+            aVar.X1(f10);
         }
     }
 
     public void setChipEndPaddingResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.K1(i10);
+            aVar.Y1(i10);
         }
     }
 
     public void setChipIcon(Drawable drawable) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.L1(drawable);
+            aVar.Z1(drawable);
         }
     }
 
@@ -1114,100 +1104,100 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public void setChipIconResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.M1(i10);
+            aVar.a2(i10);
         }
     }
 
     public void setChipIconSize(float f10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.N1(f10);
+            aVar.b2(f10);
         }
     }
 
     public void setChipIconSizeResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.O1(i10);
+            aVar.c2(i10);
         }
     }
 
     public void setChipIconTint(ColorStateList colorStateList) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.P1(colorStateList);
+            aVar.d2(colorStateList);
         }
     }
 
     public void setChipIconTintResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.Q1(i10);
+            aVar.e2(i10);
         }
     }
 
     public void setChipIconVisible(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.R1(i10);
+            aVar.f2(i10);
         }
     }
 
     public void setChipMinHeight(float f10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.T1(f10);
+            aVar.h2(f10);
         }
     }
 
     public void setChipMinHeightResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.U1(i10);
+            aVar.i2(i10);
         }
     }
 
     public void setChipStartPadding(float f10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.V1(f10);
+            aVar.j2(f10);
         }
     }
 
     public void setChipStartPaddingResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.W1(i10);
+            aVar.k2(i10);
         }
     }
 
     public void setChipStrokeColor(ColorStateList colorStateList) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.X1(colorStateList);
+            aVar.l2(colorStateList);
         }
     }
 
     public void setChipStrokeColorResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.Y1(i10);
+            aVar.m2(i10);
         }
     }
 
     public void setChipStrokeWidth(float f10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.Z1(f10);
+            aVar.n2(f10);
         }
     }
 
     public void setChipStrokeWidthResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.a2(i10);
+            aVar.o2(i10);
         }
     }
 
@@ -1222,17 +1212,17 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public void setCloseIcon(Drawable drawable) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.c2(drawable);
+            aVar.q2(drawable);
         }
         x();
     }
 
     public void setCloseIconContentDescription(CharSequence charSequence) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.d2(charSequence);
+            aVar.r2(charSequence);
         }
     }
 
@@ -1247,66 +1237,66 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public void setCloseIconEndPadding(float f10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.e2(f10);
+            aVar.s2(f10);
         }
     }
 
     public void setCloseIconEndPaddingResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.f2(i10);
+            aVar.t2(i10);
         }
     }
 
     public void setCloseIconResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.g2(i10);
+            aVar.u2(i10);
         }
         x();
     }
 
     public void setCloseIconSize(float f10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.h2(f10);
+            aVar.v2(f10);
         }
     }
 
     public void setCloseIconSizeResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.i2(i10);
+            aVar.w2(i10);
         }
     }
 
     public void setCloseIconStartPadding(float f10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.j2(f10);
+            aVar.x2(f10);
         }
     }
 
     public void setCloseIconStartPaddingResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.k2(i10);
+            aVar.y2(i10);
         }
     }
 
     public void setCloseIconTint(ColorStateList colorStateList) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.m2(colorStateList);
+            aVar.A2(colorStateList);
         }
     }
 
     public void setCloseIconTintResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.n2(i10);
+            aVar.B2(i10);
         }
     }
 
@@ -1365,20 +1355,20 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     @Override // android.view.View
     public void setElevation(float f10) {
         super.setElevation(f10);
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.W(f10);
+            aVar.e0(f10);
         }
     }
 
     @Override // android.widget.TextView
     public void setEllipsize(TextUtils.TruncateAt truncateAt) {
-        if (this.f14948p != null) {
+        if (this.f15560p != null) {
             if (truncateAt != TextUtils.TruncateAt.MARQUEE) {
                 super.setEllipsize(truncateAt);
-                com.google.android.material.chip.a aVar = this.f14948p;
+                com.google.android.material.chip.a aVar = this.f15560p;
                 if (aVar != null) {
-                    aVar.q2(truncateAt);
+                    aVar.E2(truncateAt);
                     return;
                 }
                 return;
@@ -1388,8 +1378,8 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public void setEnsureMinTouchTargetSize(boolean z10) {
-        this.f14957y = z10;
-        l(this.A);
+        this.f15569y = z10;
+        m(this.A);
     }
 
     @Override // android.widget.TextView
@@ -1402,44 +1392,44 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public void setHideMotionSpec(g gVar) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.r2(gVar);
+            aVar.F2(gVar);
         }
     }
 
     public void setHideMotionSpecResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.s2(i10);
+            aVar.G2(i10);
         }
     }
 
     public void setIconEndPadding(float f10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.t2(f10);
+            aVar.H2(f10);
         }
     }
 
     public void setIconEndPaddingResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.u2(i10);
+            aVar.I2(i10);
         }
     }
 
     public void setIconStartPadding(float f10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.v2(f10);
+            aVar.J2(f10);
         }
     }
 
     public void setIconStartPaddingResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.w2(i10);
+            aVar.K2(i10);
         }
     }
 
@@ -1448,7 +1438,7 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
 
     @Override // android.view.View
     public void setLayoutDirection(int i10) {
-        if (this.f14948p == null) {
+        if (this.f15560p == null) {
             return;
         }
         super.setLayoutDirection(i10);
@@ -1475,9 +1465,9 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     @Override // android.widget.TextView
     public void setMaxWidth(int i10) {
         super.setMaxWidth(i10);
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.x2(i10);
+            aVar.L2(i10);
         }
     }
 
@@ -1492,50 +1482,50 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
 
     @Override // android.widget.CompoundButton
     public void setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener onCheckedChangeListener) {
-        this.f14952t = onCheckedChangeListener;
+        this.f15564t = onCheckedChangeListener;
     }
 
     public void setOnCloseIconClickListener(View.OnClickListener onClickListener) {
-        this.f14951s = onClickListener;
+        this.f15563s = onClickListener;
         x();
     }
 
     public void setRippleColor(ColorStateList colorStateList) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.y2(colorStateList);
+            aVar.M2(colorStateList);
         }
-        if (!this.f14948p.m1()) {
+        if (!this.f15560p.z1()) {
             z();
         }
     }
 
     public void setRippleColorResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.z2(i10);
-            if (!this.f14948p.m1()) {
+            aVar.N2(i10);
+            if (!this.f15560p.z1()) {
                 z();
             }
         }
     }
 
-    @Override // rh.n
-    public void setShapeAppearanceModel(@NonNull rh.k kVar) {
-        this.f14948p.setShapeAppearanceModel(kVar);
+    @Override // th.o
+    public void setShapeAppearanceModel(@NonNull th.l lVar) {
+        this.f15560p.setShapeAppearanceModel(lVar);
     }
 
     public void setShowMotionSpec(g gVar) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.B2(gVar);
+            aVar.P2(gVar);
         }
     }
 
     public void setShowMotionSpecResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.C2(i10);
+            aVar.Q2(i10);
         }
     }
 
@@ -1551,28 +1541,28 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     @Override // android.widget.TextView
     public void setText(CharSequence charSequence, TextView.BufferType bufferType) {
         CharSequence charSequence2;
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
             if (charSequence == null) {
                 charSequence = "";
             }
-            if (aVar.M2()) {
+            if (aVar.a3()) {
                 charSequence2 = null;
             } else {
                 charSequence2 = charSequence;
             }
             super.setText(charSequence2, bufferType);
-            com.google.android.material.chip.a aVar2 = this.f14948p;
+            com.google.android.material.chip.a aVar2 = this.f15560p;
             if (aVar2 != null) {
-                aVar2.D2(charSequence);
+                aVar2.R2(charSequence);
             }
         }
     }
 
     public void setTextAppearance(d dVar) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.E2(dVar);
+            aVar.S2(dVar);
         }
         B();
     }
@@ -1582,47 +1572,47 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public void setTextEndPadding(float f10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.G2(f10);
+            aVar.U2(f10);
         }
     }
 
     public void setTextEndPaddingResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.H2(i10);
+            aVar.V2(i10);
         }
     }
 
     @Override // android.widget.TextView
     public void setTextSize(int i10, float f10) {
         super.setTextSize(i10, f10);
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.I2(TypedValue.applyDimension(i10, f10, getResources().getDisplayMetrics()));
+            aVar.W2(TypedValue.applyDimension(i10, f10, getResources().getDisplayMetrics()));
         }
         B();
     }
 
     public void setTextStartPadding(float f10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.J2(f10);
+            aVar.X2(f10);
         }
     }
 
     public void setTextStartPaddingResource(int i10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.K2(i10);
+            aVar.Y2(i10);
         }
     }
 
     public boolean t() {
         boolean z10 = false;
         playSoundEffect(0);
-        View.OnClickListener onClickListener = this.f14951s;
+        View.OnClickListener onClickListener = this.f15563s;
         if (onClickListener != null) {
             onClickListener.onClick(this);
             z10 = true;
@@ -1634,7 +1624,7 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public boolean v() {
-        return this.f14957y;
+        return this.f15569y;
     }
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -1646,7 +1636,7 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
         /*
             r6 = this;
             int r4 = com.google.android.material.chip.Chip.H
-            android.content.Context r7 = uh.a.c(r7, r8, r9, r4)
+            android.content.Context r7 = wh.a.d(r7, r8, r9, r4)
             r6.<init>(r7, r8, r9)
             android.graphics.Rect r7 = new android.graphics.Rect
             r7.<init>()
@@ -1659,18 +1649,18 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
             r6.G = r7
             android.content.Context r0 = r6.getContext()
             r6.C(r8)
-            com.google.android.material.chip.a r7 = com.google.android.material.chip.a.v0(r0, r8, r9, r4)
+            com.google.android.material.chip.a r7 = com.google.android.material.chip.a.I0(r0, r8, r9, r4)
             r6.o(r0, r8, r9)
             r6.setChipDrawable(r7)
-            float r1 = androidx.core.view.h0.u(r6)
-            r7.W(r1)
-            int[] r2 = bh.k.f7031x0
+            float r1 = r6.getElevation()
+            r7.e0(r1)
+            int[] r2 = bh.l.N0
             r1 = 0
             int[] r5 = new int[r1]
             r1 = r8
             r3 = r9
-            android.content.res.TypedArray r8 = com.google.android.material.internal.l.i(r0, r1, r2, r3, r4, r5)
-            int r9 = bh.k.f6893i1
+            android.content.res.TypedArray r8 = com.google.android.material.internal.m.i(r0, r1, r2, r3, r4, r5)
+            int r9 = bh.l.f7185y1
             boolean r9 = r8.hasValue(r9)
             r8.recycle()
             com.google.android.material.chip.Chip$c r8 = new com.google.android.material.chip.Chip$c
@@ -1680,15 +1670,15 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
             if (r9 != 0) goto L59
             r6.p()
         L59:
-            boolean r8 = r6.f14953u
+            boolean r8 = r6.f15565u
             r6.setChecked(r8)
-            java.lang.CharSequence r8 = r7.h1()
+            java.lang.CharSequence r8 = r7.u1()
             r6.setText(r8)
-            android.text.TextUtils$TruncateAt r7 = r7.b1()
+            android.text.TextUtils$TruncateAt r7 = r7.o1()
             r6.setEllipsize(r7)
             r6.B()
-            com.google.android.material.chip.a r7 = r6.f14948p
-            boolean r7 = r7.M2()
+            com.google.android.material.chip.a r7 = r6.f15560p
+            boolean r7 = r7.a3()
             if (r7 != 0) goto L7e
             r7 = 1
             r6.setLines(r7)
@@ -1702,9 +1692,9 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
             int r7 = r6.A
             r6.setMinHeight(r7)
         L92:
-            int r7 = androidx.core.view.h0.z(r6)
-            r6.f14958z = r7
-            gh.a r7 = new gh.a
+            int r7 = r6.getLayoutDirection()
+            r6.f15570z = r7
+            ih.a r7 = new ih.a
             r7.<init>()
             super.setOnCheckedChangeListener(r7)
             return
@@ -1713,24 +1703,24 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     }
 
     public void setCloseIconVisible(boolean z10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.o2(z10);
+            aVar.C2(z10);
         }
         x();
     }
 
     public void setCheckedIconVisible(boolean z10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.E1(z10);
+            aVar.S1(z10);
         }
     }
 
     public void setChipIconVisible(boolean z10) {
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.S1(z10);
+            aVar.g2(z10);
         }
     }
 
@@ -1761,9 +1751,9 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     @Override // android.widget.TextView
     public void setTextAppearance(Context context, int i10) {
         super.setTextAppearance(context, i10);
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.F2(i10);
+            aVar.T2(i10);
         }
         B();
     }
@@ -1771,9 +1761,9 @@ public class Chip extends f implements a.InterfaceC0200a, n, Checkable {
     @Override // android.widget.TextView
     public void setTextAppearance(int i10) {
         super.setTextAppearance(i10);
-        com.google.android.material.chip.a aVar = this.f14948p;
+        com.google.android.material.chip.a aVar = this.f15560p;
         if (aVar != null) {
-            aVar.F2(i10);
+            aVar.T2(i10);
         }
         B();
     }

@@ -1,23 +1,9 @@
 package ut;
 
-import java.util.HashMap;
-import java.util.Map;
+import kotlinx.serialization.encoding.CompositeEncoder;
+import kotlinx.serialization.encoding.Encoder;
+import kotlinx.serialization.json.Json;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class q extends HashMap {
-    private static final long serialVersionUID = 1245025551222311435L;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public q(Map map) {
-        super(map);
-    }
-
-    @Override // java.util.HashMap, java.util.AbstractMap, java.util.Map
-    /* renamed from: a */
-    public Object put(st.p pVar, Object obj) {
-        Object put = super.put(pVar, obj);
-        if (pVar != null && put != null && !put.equals(obj)) {
-            throw new a(pVar);
-        }
-        return put;
-    }
+public interface q extends Encoder, CompositeEncoder {
+    Json d();
 }

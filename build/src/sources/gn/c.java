@@ -1,77 +1,81 @@
 package gn;
 
+import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
-import kotlin.collections.CollectionsKt;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+import kotlinx.coroutines.CompletableJob;
+import kotlinx.coroutines.CoroutineScope;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c {
+public final class c implements View.OnAttachStateChangeListener {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final List f24444a;
+    /* renamed from: d  reason: collision with root package name */
+    private final List f25789d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Object f24445b;
+    /* renamed from: e  reason: collision with root package name */
+    private final CompletableJob f25790e;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final List f24446c;
+    /* renamed from: i  reason: collision with root package name */
+    private final CoroutineScope f25791i;
 
-    public c(Object bottom, List rest) {
-        Intrinsics.checkNotNullParameter(bottom, "bottom");
-        Intrinsics.checkNotNullParameter(rest, "rest");
-        List L0 = CollectionsKt.L0(CollectionsKt.e(bottom), rest);
-        this.f24444a = L0;
-        this.f24445b = CollectionsKt.z0(L0);
-        this.f24446c = L0.subList(0, L0.size() - 1);
-    }
-
-    public final List a() {
-        return this.f24446c;
-    }
-
-    public final List b() {
-        return this.f24444a;
-    }
-
-    public final Object c() {
-        return this.f24445b;
-    }
-
-    public final c d(Function1 transform) {
-        Intrinsics.checkNotNullParameter(transform, "transform");
-        List<Object> list = this.f24444a;
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-        for (Object obj : list) {
-            arrayList.add(transform.invoke(obj));
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class a extends Lambda implements Function1 {
+        a() {
+            super(1);
         }
-        return d.a(arrayList);
-    }
 
-    public boolean equals(Object obj) {
-        c cVar;
-        List list = null;
-        if (obj instanceof c) {
-            cVar = (c) obj;
-        } else {
-            cVar = null;
+        @Override // kotlin.jvm.functions.Function1
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            invoke((Throwable) obj);
+            return Unit.f31987a;
         }
-        if (cVar != null) {
-            list = cVar.f24444a;
+
+        public final void invoke(Throwable th2) {
+            c.this.f25789d.clear();
         }
-        return Intrinsics.areEqual(list, this.f24444a);
     }
 
-    public int hashCode() {
-        return this.f24444a.hashCode();
+    public c(CoroutineScope parentCoroutineScope) {
+        Intrinsics.checkNotNullParameter(parentCoroutineScope, "parentCoroutineScope");
+        this.f25789d = new ArrayList();
+        CompletableJob a10 = kotlinx.coroutines.z.a(kotlinx.coroutines.z.m(parentCoroutineScope.getCoroutineContext()));
+        a10.z0(new a());
+        this.f25790e = a10;
+        this.f25791i = kotlinx.coroutines.i.j(parentCoroutineScope, a10);
     }
 
-    public String toString() {
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append((Object) c.class.getSimpleName());
-        sb2.append('(');
-        sb2.append(this.f24444a);
-        sb2.append(')');
-        return sb2.toString();
+    public final CoroutineScope b() {
+        return this.f25791i;
+    }
+
+    public final void c(Function0 block) {
+        Intrinsics.checkNotNullParameter(block, "block");
+        if (kotlinx.coroutines.i.i(this.f25791i)) {
+            this.f25789d.add(block);
+            return;
+        }
+        throw new IllegalStateException("Expected AttachedScope to be active when adding attach handler.");
+    }
+
+    @Override // android.view.View.OnAttachStateChangeListener
+    public void onViewAttachedToWindow(View v10) {
+        Intrinsics.checkNotNullParameter(v10, "v");
+        List<Function0> list = this.f25789d;
+        for (Function0 function0 : list) {
+            function0.invoke();
+        }
+        list.clear();
+    }
+
+    @Override // android.view.View.OnAttachStateChangeListener
+    public void onViewDetachedFromWindow(View v10) {
+        Intrinsics.checkNotNullParameter(v10, "v");
+        kotlinx.coroutines.i.e(this.f25791i, "View detached", null, 2, null);
+        v10.removeOnAttachStateChangeListener(this);
     }
 }

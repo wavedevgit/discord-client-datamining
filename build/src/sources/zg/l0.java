@@ -7,10 +7,10 @@ import java.util.concurrent.Executor;
 final class l0 implements Executor {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Handler f56411d = new ug.a(Looper.getMainLooper());
+    private final Handler f56450d = new ug.a(Looper.getMainLooper());
 
     @Override // java.util.concurrent.Executor
     public final void execute(Runnable runnable) {
-        this.f56411d.post(runnable);
+        this.f56450d.post(runnable);
     }
 }

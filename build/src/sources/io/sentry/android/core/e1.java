@@ -29,40 +29,40 @@ import java.util.Map;
 public abstract class e1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final io.sentry.android.core.util.a f27273a = new io.sentry.android.core.util.a(new a.InterfaceC0409a() { // from class: io.sentry.android.core.z0
-        @Override // io.sentry.android.core.util.a.InterfaceC0409a
+    private static final io.sentry.android.core.util.a f28208a = new io.sentry.android.core.util.a(new a.InterfaceC0384a() { // from class: io.sentry.android.core.z0
+        @Override // io.sentry.android.core.util.a.InterfaceC0384a
         public final Object a(Context context) {
             return e1.d(context);
         }
     });
 
     /* renamed from: b  reason: collision with root package name */
-    private static final io.sentry.android.core.util.a f27274b = new io.sentry.android.core.util.a(new a.InterfaceC0409a() { // from class: io.sentry.android.core.a1
-        @Override // io.sentry.android.core.util.a.InterfaceC0409a
+    private static final io.sentry.android.core.util.a f28209b = new io.sentry.android.core.util.a(new a.InterfaceC0384a() { // from class: io.sentry.android.core.a1
+        @Override // io.sentry.android.core.util.a.InterfaceC0384a
         public final Object a(Context context) {
             return e1.b(context);
         }
     });
 
     /* renamed from: c  reason: collision with root package name */
-    private static final io.sentry.android.core.util.a f27275c = new io.sentry.android.core.util.a(new a.InterfaceC0409a() { // from class: io.sentry.android.core.b1
-        @Override // io.sentry.android.core.util.a.InterfaceC0409a
+    private static final io.sentry.android.core.util.a f28210c = new io.sentry.android.core.util.a(new a.InterfaceC0384a() { // from class: io.sentry.android.core.b1
+        @Override // io.sentry.android.core.util.a.InterfaceC0384a
         public final Object a(Context context) {
             return e1.a(context);
         }
     });
 
     /* renamed from: d  reason: collision with root package name */
-    private static final io.sentry.android.core.util.a f27276d = new io.sentry.android.core.util.a(new a.InterfaceC0409a() { // from class: io.sentry.android.core.c1
-        @Override // io.sentry.android.core.util.a.InterfaceC0409a
+    private static final io.sentry.android.core.util.a f28211d = new io.sentry.android.core.util.a(new a.InterfaceC0384a() { // from class: io.sentry.android.core.c1
+        @Override // io.sentry.android.core.util.a.InterfaceC0384a
         public final Object a(Context context) {
             return e1.c(context);
         }
     });
 
     /* renamed from: e  reason: collision with root package name */
-    private static final io.sentry.android.core.util.a f27277e = new io.sentry.android.core.util.a(new a.InterfaceC0409a() { // from class: io.sentry.android.core.d1
-        @Override // io.sentry.android.core.util.a.InterfaceC0409a
+    private static final io.sentry.android.core.util.a f28212e = new io.sentry.android.core.util.a(new a.InterfaceC0384a() { // from class: io.sentry.android.core.d1
+        @Override // io.sentry.android.core.util.a.InterfaceC0384a
         public final Object a(Context context) {
             return e1.e(context);
         }
@@ -73,20 +73,20 @@ public abstract class e1 {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean f27278a;
+        private final boolean f28213a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f27279b;
+        private final String f28214b;
 
         public a(boolean z10, String str) {
-            this.f27278a = z10;
-            this.f27279b = str;
+            this.f28213a = z10;
+            this.f28214b = str;
         }
 
         public Map a() {
             HashMap hashMap = new HashMap();
-            hashMap.put("isSideLoaded", String.valueOf(this.f27278a));
-            String str = this.f27279b;
+            hashMap.put("isSideLoaded", String.valueOf(this.f28213a));
+            String str = this.f28214b;
             if (str != null) {
                 hashMap.put("installerStore", str);
             }
@@ -99,22 +99,22 @@ public abstract class e1 {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean f27280a;
+        private final boolean f28215a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String[] f27281b;
+        private final String[] f28216b;
 
         public b(boolean z10, String[] strArr) {
-            this.f27280a = z10;
-            this.f27281b = strArr;
+            this.f28215a = z10;
+            this.f28216b = strArr;
         }
 
         public String[] a() {
-            return this.f27281b;
+            return this.f28216b;
         }
 
         public boolean b() {
-            return this.f27280a;
+            return this.f28215a;
         }
     }
 
@@ -197,14 +197,14 @@ public abstract class e1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ApplicationInfo h(Context context, x0 x0Var) {
         if (x0Var.d() >= 33) {
-            return (ApplicationInfo) f27276d.a(context);
+            return (ApplicationInfo) f28211d.a(context);
         }
-        return (ApplicationInfo) f27277e.a(context);
+        return (ApplicationInfo) f28212e.a(context);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static String i(Context context) {
-        return (String) f27275c.a(context);
+        return (String) f28210c.a(context);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -283,9 +283,9 @@ public abstract class e1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static PackageInfo p(Context context, x0 x0Var) {
         if (x0Var.d() >= 33) {
-            return (PackageInfo) f27273a.a(context);
+            return (PackageInfo) f28208a.a(context);
         }
-        return (PackageInfo) f27274b.a(context);
+        return (PackageInfo) f28209b.a(context);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

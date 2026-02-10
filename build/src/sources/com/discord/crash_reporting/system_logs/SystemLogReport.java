@@ -100,7 +100,7 @@ public final class SystemLogReport {
             INSTANCE.recordBreadcrumb(tombstone.getGroupHash(), "Tombstone-Hash");
         }
         function1.invoke(new NativeCrashDiagnostics(HistoricalProcessExitReason.INSTANCE.lastReason(context), tombstone));
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     private final void recordBreadcrumb(String str, String str2) {

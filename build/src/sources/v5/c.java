@@ -7,18 +7,18 @@ public enum c {
     
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f52150d;
+    public final String f51392d;
 
     c(String str) {
-        this.f52150d = str;
+        this.f51392d = str;
     }
 
     public String d() {
-        return ".temp" + this.f52150d;
+        return ".temp" + this.f51392d;
     }
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f52150d;
+        return this.f51392d;
     }
 }

@@ -7,25 +7,25 @@ import android.os.Parcel;
 public abstract class l6 implements IInterface {
 
     /* renamed from: c  reason: collision with root package name */
-    private final IBinder f14404c;
+    private final IBinder f14981c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f14405d = "com.android.vending.billing.IInAppBillingService";
+    private final String f14982d = "com.android.vending.billing.IInAppBillingService";
 
     /* JADX INFO: Access modifiers changed from: protected */
     public l6(IBinder iBinder, String str) {
-        this.f14404c = iBinder;
+        this.f14981c = iBinder;
     }
 
     @Override // android.os.IInterface
     public final IBinder asBinder() {
-        return this.f14404c;
+        return this.f14981c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Parcel e() {
         Parcel obtain = Parcel.obtain();
-        obtain.writeInterfaceToken(this.f14405d);
+        obtain.writeInterfaceToken(this.f14982d);
         return obtain;
     }
 
@@ -34,7 +34,7 @@ public abstract class l6 implements IInterface {
         Parcel obtain = Parcel.obtain();
         try {
             try {
-                this.f14404c.transact(i10, parcel, obtain, 0);
+                this.f14981c.transact(i10, parcel, obtain, 0);
                 obtain.readException();
                 return obtain;
             } catch (RuntimeException e10) {
@@ -47,10 +47,10 @@ public abstract class l6 implements IInterface {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public final void h(int i10, Parcel parcel) {
+    public final void i(int i10, Parcel parcel) {
         Parcel obtain = Parcel.obtain();
         try {
-            this.f14404c.transact(i10, parcel, obtain, 0);
+            this.f14981c.transact(i10, parcel, obtain, 0);
             obtain.readException();
         } finally {
             parcel.recycle();

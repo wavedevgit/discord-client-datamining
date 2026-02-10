@@ -7,32 +7,32 @@ import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.LongCompanionObject;
 import kotlinx.coroutines.q;
-import ps.l1;
-import ps.n0;
-import ps.p0;
+import ys.l1;
+import ys.n0;
+import ys.p0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class j extends q implements Runnable {
     private static volatile Thread _thread;
     private static volatile int debugStatus;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final j f34823t;
+    public static final j f35045t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final long f34824u;
+    private static final long f35046u;
 
     static {
         Long l10;
         j jVar = new j();
-        f34823t = jVar;
-        p0.q2(jVar, false, 1, null);
+        f35045t = jVar;
+        p0.l2(jVar, false, 1, null);
         TimeUnit timeUnit = TimeUnit.MILLISECONDS;
         try {
             l10 = Long.getLong("kotlinx.coroutines.DefaultExecutor.keepAlive", 1000L);
         } catch (SecurityException unused) {
             l10 = 1000L;
         }
-        f34824u = timeUnit.toNanos(l10.longValue());
+        f35046u = timeUnit.toNanos(l10.longValue());
     }
 
     private j() {
@@ -54,7 +54,7 @@ public final class j extends q implements Runnable {
         if (thread == null) {
             thread = new Thread(this, "kotlinx.coroutines.DefaultExecutor");
             _thread = thread;
-            thread.setContextClassLoader(f34823t.getClass().getClassLoader());
+            thread.setContextClassLoader(f35045t.getClass().getClassLoader());
             thread.setDaemon(true);
             thread.start();
         }
@@ -90,6 +90,11 @@ public final class j extends q implements Runnable {
         throw new RejectedExecutionException("DefaultExecutor was shut down. This error indicates that Dispatchers.shutdown() was invoked prior to completion of exiting coroutines, leaving coroutines in incomplete state. Please refer to Dispatchers.shutdown documentation for more details");
     }
 
+    @Override // kotlinx.coroutines.q, kotlinx.coroutines.k
+    public n0 C0(long j10, Runnable runnable, CoroutineContext coroutineContext) {
+        return N2(j10, runnable);
+    }
+
     @Override // kotlinx.coroutines.q
     public void C2(Runnable runnable) {
         if (S2()) {
@@ -98,16 +103,11 @@ public final class j extends q implements Runnable {
         super.C2(runnable);
     }
 
-    @Override // kotlinx.coroutines.q, kotlinx.coroutines.k
-    public n0 Z(long j10, Runnable runnable, CoroutineContext coroutineContext) {
-        return N2(j10, runnable);
-    }
-
     @Override // java.lang.Runnable
     public void run() {
         boolean I2;
-        l1.f44513a.d(this);
-        ps.b.a();
+        l1.f55799a.d(this);
+        ys.b.a();
         try {
             if (!U2()) {
                 if (!I2) {
@@ -120,16 +120,16 @@ public final class j extends q implements Runnable {
                 Thread.interrupted();
                 long t22 = t2();
                 if (t22 == LongCompanionObject.MAX_VALUE) {
-                    ps.b.a();
+                    ys.b.a();
                     long nanoTime = System.nanoTime();
                     if (j10 == LongCompanionObject.MAX_VALUE) {
-                        j10 = f34824u + nanoTime;
+                        j10 = f35046u + nanoTime;
                     }
                     long j11 = j10 - nanoTime;
                     if (j11 <= 0) {
                         _thread = null;
                         Q2();
-                        ps.b.a();
+                        ys.b.a();
                         if (!I2()) {
                             w2();
                             return;
@@ -144,28 +144,28 @@ public final class j extends q implements Runnable {
                     if (T2()) {
                         _thread = null;
                         Q2();
-                        ps.b.a();
+                        ys.b.a();
                         if (!I2()) {
                             w2();
                             return;
                         }
                         return;
                     }
-                    ps.b.a();
+                    ys.b.a();
                     LockSupport.parkNanos(this, t22);
                 }
             }
         } finally {
             _thread = null;
             Q2();
-            ps.b.a();
+            ys.b.a();
             if (!I2()) {
                 w2();
             }
         }
     }
 
-    @Override // kotlinx.coroutines.q, ps.p0
+    @Override // kotlinx.coroutines.q, ys.p0
     public void shutdown() {
         debugStatus = 4;
         super.shutdown();

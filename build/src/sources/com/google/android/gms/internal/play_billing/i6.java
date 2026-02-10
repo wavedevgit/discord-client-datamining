@@ -10,15 +10,28 @@ public final class i6 extends l6 implements k6 {
         super(iBinder, "com.android.vending.billing.IInAppBillingService");
     }
 
+    @Override // com.google.android.gms.internal.play_billing.k6
+    public final Bundle A(int i10, String str, String str2, String str3) {
+        Parcel e10 = e();
+        e10.writeInt(3);
+        e10.writeString(str);
+        e10.writeString(str2);
+        e10.writeString(str3);
+        Parcel f10 = f(4, e10);
+        Bundle bundle = (Bundle) n6.a(f10, Bundle.CREATOR);
+        f10.recycle();
+        return bundle;
+    }
+
     /* JADX WARN: Multi-variable type inference failed */
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final void C0(int i10, String str, Bundle bundle, h6 h6Var) {
+    public final void D0(int i10, String str, Bundle bundle, h6 h6Var) {
         Parcel e10 = e();
         e10.writeInt(18);
         e10.writeString(str);
         n6.c(e10, bundle);
         e10.writeStrongBinder(h6Var);
-        h(1301, e10);
+        i(1301, e10);
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
@@ -37,7 +50,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final int Q0(int i10, String str, String str2, Bundle bundle) {
+    public final int R0(int i10, String str, String str2, Bundle bundle) {
         Parcel e10 = e();
         e10.writeInt(i10);
         e10.writeString(str);
@@ -50,7 +63,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final Bundle T0(int i10, String str, String str2, Bundle bundle) {
+    public final Bundle U0(int i10, String str, String str2, Bundle bundle) {
         Parcel e10 = e();
         e10.writeInt(9);
         e10.writeString(str);
@@ -63,7 +76,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final Bundle X(int i10, String str, String str2, String str3, Bundle bundle) {
+    public final Bundle Z(int i10, String str, String str2, String str3, Bundle bundle) {
         Parcel e10 = e();
         e10.writeInt(i10);
         e10.writeString(str);
@@ -77,7 +90,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final Bundle g0(int i10, String str, String str2, Bundle bundle, Bundle bundle2) {
+    public final Bundle h0(int i10, String str, String str2, Bundle bundle, Bundle bundle2) {
         Parcel e10 = e();
         e10.writeInt(i10);
         e10.writeString(str);
@@ -91,7 +104,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final Bundle i0(int i10, String str, String str2, Bundle bundle) {
+    public final Bundle j0(int i10, String str, String str2, Bundle bundle) {
         Parcel e10 = e();
         e10.writeInt(9);
         e10.writeString(str);
@@ -104,24 +117,24 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final int m(int i10, String str, String str2) {
-        Parcel e10 = e();
-        e10.writeInt(3);
-        e10.writeString(str);
-        e10.writeString(str2);
-        Parcel f10 = f(5, e10);
-        int readInt = f10.readInt();
-        f10.recycle();
-        return readInt;
-    }
-
-    @Override // com.google.android.gms.internal.play_billing.k6
     public final int m0(int i10, String str, String str2) {
         Parcel e10 = e();
         e10.writeInt(i10);
         e10.writeString(str);
         e10.writeString(str2);
         Parcel f10 = f(1, e10);
+        int readInt = f10.readInt();
+        f10.recycle();
+        return readInt;
+    }
+
+    @Override // com.google.android.gms.internal.play_billing.k6
+    public final int o(int i10, String str, String str2) {
+        Parcel e10 = e();
+        e10.writeInt(3);
+        e10.writeString(str);
+        e10.writeString(str2);
+        Parcel f10 = f(5, e10);
         int readInt = f10.readInt();
         f10.recycle();
         return readInt;
@@ -142,7 +155,7 @@ public final class i6 extends l6 implements k6 {
     }
 
     @Override // com.google.android.gms.internal.play_billing.k6
-    public final Bundle v0(int i10, String str, String str2, String str3, String str4) {
+    public final Bundle u0(int i10, String str, String str2, String str3, String str4) {
         Parcel e10 = e();
         e10.writeInt(3);
         e10.writeString(str);
@@ -150,19 +163,6 @@ public final class i6 extends l6 implements k6 {
         e10.writeString(str3);
         e10.writeString(null);
         Parcel f10 = f(3, e10);
-        Bundle bundle = (Bundle) n6.a(f10, Bundle.CREATOR);
-        f10.recycle();
-        return bundle;
-    }
-
-    @Override // com.google.android.gms.internal.play_billing.k6
-    public final Bundle z(int i10, String str, String str2, String str3) {
-        Parcel e10 = e();
-        e10.writeInt(3);
-        e10.writeString(str);
-        e10.writeString(str2);
-        e10.writeString(str3);
-        Parcel f10 = f(4, e10);
         Bundle bundle = (Bundle) n6.a(f10, Bundle.CREATOR);
         f10.recycle();
         return bundle;

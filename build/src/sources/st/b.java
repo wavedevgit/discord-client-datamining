@@ -1,47 +1,37 @@
 package st;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KClass;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import tt.j2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b implements j0, Comparator {
-
-    /* renamed from: d  reason: collision with root package name */
-    private final List f50370d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final boolean f50371e;
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public b(boolean z10, w... wVarArr) {
-        this(Arrays.asList(wVarArr), z10);
-    }
-
-    @Override // java.util.Comparator
-    /* renamed from: a */
-    public int compare(w wVar, w wVar2) {
-        return Double.compare(wVar2.getLength(), wVar.getLength());
-    }
-
-    private b(List list, boolean z10) {
-        if (!list.isEmpty()) {
-            Collections.sort(list, this);
-            int size = list.size();
-            int i10 = 0;
-            while (i10 < size) {
-                w wVar = (w) list.get(i10);
-                i10++;
-                for (int i11 = i10; i11 < size; i11++) {
-                    if (wVar.equals(list.get(i11))) {
-                        throw new IllegalArgumentException("Duplicate unit: " + wVar);
-                    }
-                }
-            }
-            this.f50370d = Collections.unmodifiableList(list);
-            this.f50371e = z10;
-            return;
+public abstract class b {
+    public static final KClass a(SerialDescriptor serialDescriptor) {
+        Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
+        if (serialDescriptor instanceof c) {
+            return ((c) serialDescriptor).f48356b;
         }
-        throw new IllegalArgumentException("Missing units.");
+        if (serialDescriptor instanceof j2) {
+            return a(((j2) serialDescriptor).j());
+        }
+        return null;
+    }
+
+    public static final SerialDescriptor b(wt.b bVar, SerialDescriptor descriptor) {
+        KSerializer c10;
+        Intrinsics.checkNotNullParameter(bVar, "<this>");
+        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
+        KClass a10 = a(descriptor);
+        if (a10 == null || (c10 = wt.b.c(bVar, a10, null, 2, null)) == null) {
+            return null;
+        }
+        return c10.getDescriptor();
+    }
+
+    public static final SerialDescriptor c(SerialDescriptor serialDescriptor, KClass context) {
+        Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
+        Intrinsics.checkNotNullParameter(context, "context");
+        return new c(serialDescriptor, context);
     }
 }

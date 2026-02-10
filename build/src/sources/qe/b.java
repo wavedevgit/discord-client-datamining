@@ -57,7 +57,7 @@ public final class b extends com.google.android.exoplayer2.f {
 
     @Override // com.google.android.exoplayer2.w1
     public int a(Format format) {
-        if ("application/x-camera-motion".equals(format.f11727w)) {
+        if ("application/x-camera-motion".equals(format.f12304w)) {
             return w1.b(4);
         }
         return w1.b(0);
@@ -93,10 +93,10 @@ public final class b extends com.google.android.exoplayer2.f {
             this.A.h();
             if (X(J(), this.A, 0) == -4 && !this.A.n()) {
                 rc.f fVar = this.A;
-                this.E = fVar.f47777p;
+                this.E = fVar.f46231p;
                 if (this.D != null && !fVar.m()) {
                     this.A.v();
-                    float[] a02 = a0((ByteBuffer) w0.j(this.A.f47775i));
+                    float[] a02 = a0((ByteBuffer) w0.j(this.A.f46229i));
                     if (a02 != null) {
                         ((a) w0.j(this.D)).b(this.E - this.C, a02);
                     }

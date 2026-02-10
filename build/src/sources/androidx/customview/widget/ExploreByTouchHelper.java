@@ -12,10 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.collection.SparseArrayCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityNodeProviderCompat;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import androidx.customview.widget.FocusStrategy;
 import androidx.recyclerview.widget.RecyclerView;
-import c2.q;
+import c2.p;
 import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import java.util.ArrayList;
@@ -106,8 +106,8 @@ public abstract class ExploreByTouchHelper extends androidx.core.view.a {
             this.mHost = view;
             this.mManager = (AccessibilityManager) view.getContext().getSystemService("accessibility");
             view.setFocusable(true);
-            if (h0.x(view) == 0) {
-                h0.x0(view, 1);
+            if (i0.w(view) == 0) {
+                i0.s0(view, 1);
                 return;
             }
             return;
@@ -154,7 +154,7 @@ public abstract class ExploreByTouchHelper extends androidx.core.view.a {
             throw new RuntimeException("Callbacks must add text or a content description in populateEventForVirtualViewId()");
         }
         obtain.setClassName(obtainAccessibilityNodeInfo.s());
-        q.c(obtain, this.mHost, i10);
+        p.c(obtain, this.mHost, i10);
         obtain.setPackageName(this.mHost.getContext().getPackageName());
         return obtain;
     }
@@ -208,9 +208,9 @@ public abstract class ExploreByTouchHelper extends androidx.core.view.a {
                     j02.n(this.mTempScreenRect);
                     if (this.mTempScreenRect.equals(rect)) {
                         j02.m(this.mTempScreenRect);
-                        if (j02.f3448b != -1) {
+                        if (j02.f3452b != -1) {
                             AccessibilityNodeInfoCompat j03 = AccessibilityNodeInfoCompat.j0();
-                            for (int i11 = j02.f3448b; i11 != -1; i11 = j03.f3448b) {
+                            for (int i11 = j02.f3452b; i11 != -1; i11 = j03.f3452b) {
                                 j03.R0(this.mHost, -1);
                                 j03.s0(INVALID_PARENT_BOUNDS);
                                 onPopulateNodeForVirtualView(i11, j03);
@@ -243,7 +243,7 @@ public abstract class ExploreByTouchHelper extends androidx.core.view.a {
 
     private AccessibilityNodeInfoCompat i() {
         AccessibilityNodeInfoCompat k02 = AccessibilityNodeInfoCompat.k0(this.mHost);
-        h0.a0(this.mHost, k02);
+        i0.X(this.mHost, k02);
         ArrayList arrayList = new ArrayList();
         getVisibleVirtualViews(arrayList);
         if (k02.r() > 0 && arrayList.size() > 0) {
@@ -348,13 +348,13 @@ public abstract class ExploreByTouchHelper extends androidx.core.view.a {
             }
             accessibilityNodeInfoCompat2 = (AccessibilityNodeInfoCompat) FocusStrategy.c(j10, SPARSE_VALUES_ADAPTER, NODE_ADAPTER, accessibilityNodeInfoCompat3, rect2, i10);
         } else {
-            if (h0.z(this.mHost) != 1) {
+            if (i0.y(this.mHost) != 1) {
                 z10 = false;
             }
             accessibilityNodeInfoCompat2 = (AccessibilityNodeInfoCompat) FocusStrategy.d(j10, SPARSE_VALUES_ADAPTER, NODE_ADAPTER, accessibilityNodeInfoCompat3, i10, z10, false);
         }
         if (accessibilityNodeInfoCompat2 != null) {
-            i12 = j10.j(j10.i(accessibilityNodeInfoCompat2));
+            i12 = j10.j(j10.h(accessibilityNodeInfoCompat2));
         }
         return requestKeyboardFocusForVirtualView(i12);
     }
@@ -376,7 +376,7 @@ public abstract class ExploreByTouchHelper extends androidx.core.view.a {
     }
 
     private boolean q(int i10, Bundle bundle) {
-        return h0.c0(this.mHost, i10, bundle);
+        return i0.Z(this.mHost, i10, bundle);
     }
 
     private boolean r(int i10) {

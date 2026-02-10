@@ -5,21 +5,21 @@ import java.util.Iterator;
 final class k1 extends g1 {
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ l1 f14138i;
+    final /* synthetic */ l1 f14715i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k1(l1 l1Var) {
-        this.f14138i = l1Var;
+        this.f14715i = l1Var;
     }
 
     @Override // com.google.android.gms.internal.fido.h1, com.google.android.gms.internal.fido.z0
     public final c2 e() {
-        return j().listIterator(0);
+        return k().listIterator(0);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final /* synthetic */ Iterator iterator() {
-        return j().listIterator(0);
+        return k().listIterator(0);
     }
 
     @Override // com.google.android.gms.internal.fido.h1
@@ -29,6 +29,6 @@ final class k1 extends g1 {
 
     @Override // com.google.android.gms.internal.fido.g1
     final f1 r() {
-        return this.f14138i;
+        return this.f14715i;
     }
 }

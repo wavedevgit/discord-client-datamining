@@ -4,22 +4,22 @@ import java.util.concurrent.CancellationException;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function2;
-import ps.j1;
-import ps.m0;
-import ps.s0;
+import ys.j1;
+import ys.m0;
+import ys.s0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class i {
     public static final CoroutineScope a(CoroutineContext coroutineContext) {
         CompletableJob b10;
-        if (coroutineContext.m(Job.f34774h) == null) {
+        if (coroutineContext.m(Job.f34996k) == null) {
             b10 = a0.b(null, 1, null);
-            coroutineContext = coroutineContext.V0(b10);
+            coroutineContext = coroutineContext.O0(b10);
         }
-        return new us.e(coroutineContext);
+        return new dt.e(coroutineContext);
     }
 
     public static final CoroutineScope b() {
-        return new us.e(j1.b(null, 1, null).V0(m0.c()));
+        return new dt.e(j1.b(null, 1, null).O0(m0.c()));
     }
 
     public static final void c(CoroutineScope coroutineScope, String str, Throwable th2) {
@@ -27,9 +27,9 @@ public abstract class i {
     }
 
     public static final void d(CoroutineScope coroutineScope, CancellationException cancellationException) {
-        Job job = (Job) coroutineScope.getCoroutineContext().m(Job.f34774h);
+        Job job = (Job) coroutineScope.getCoroutineContext().m(Job.f34996k);
         if (job != null) {
-            job.k(cancellationException);
+            job.i(cancellationException);
             return;
         }
         throw new IllegalStateException(("Scope cannot be cancelled because it does not have a job: " + coroutineScope).toString());
@@ -50,9 +50,9 @@ public abstract class i {
     }
 
     public static final Object g(Function2 function2, Continuation continuation) {
-        us.a0 a0Var = new us.a0(continuation.getContext(), continuation);
-        Object d10 = vs.b.d(a0Var, a0Var, function2);
-        if (d10 == xr.b.f()) {
+        dt.a0 a0Var = new dt.a0(continuation.getContext(), continuation);
+        Object d10 = et.b.d(a0Var, a0Var, function2);
+        if (d10 == gs.b.f()) {
             kotlin.coroutines.jvm.internal.g.c(continuation);
         }
         return d10;
@@ -63,7 +63,7 @@ public abstract class i {
     }
 
     public static final boolean i(CoroutineScope coroutineScope) {
-        Job job = (Job) coroutineScope.getCoroutineContext().m(Job.f34774h);
+        Job job = (Job) coroutineScope.getCoroutineContext().m(Job.f34996k);
         if (job != null) {
             return job.a();
         }
@@ -71,6 +71,6 @@ public abstract class i {
     }
 
     public static final CoroutineScope j(CoroutineScope coroutineScope, CoroutineContext coroutineContext) {
-        return new us.e(coroutineScope.getCoroutineContext().V0(coroutineContext));
+        return new dt.e(coroutineScope.getCoroutineContext().O0(coroutineContext));
     }
 }

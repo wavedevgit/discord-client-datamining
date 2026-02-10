@@ -9,89 +9,89 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import oe.w0;
 import oe.y;
-import qi.e;
+import si.e;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f22566a;
+    public final String f23691a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f22567b;
+    public final int f23692b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Integer f22568c;
+    public final Integer f23693c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Integer f22569d;
+    public final Integer f23694d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final float f22570e;
+    public final float f23695e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final boolean f22571f;
+    public final boolean f23696f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final boolean f22572g;
+    public final boolean f23697g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final boolean f22573h;
+    public final boolean f23698h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final boolean f22574i;
+    public final boolean f23699i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final int f22575j;
+    public final int f23700j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f22576a;
+        public final int f23701a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f22577b;
+        public final int f23702b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f22578c;
+        public final int f23703c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f22579d;
+        public final int f23704d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f22580e;
+        public final int f23705e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final int f22581f;
+        public final int f23706f;
 
         /* renamed from: g  reason: collision with root package name */
-        public final int f22582g;
+        public final int f23707g;
 
         /* renamed from: h  reason: collision with root package name */
-        public final int f22583h;
+        public final int f23708h;
 
         /* renamed from: i  reason: collision with root package name */
-        public final int f22584i;
+        public final int f23709i;
 
         /* renamed from: j  reason: collision with root package name */
-        public final int f22585j;
+        public final int f23710j;
 
         /* renamed from: k  reason: collision with root package name */
-        public final int f22586k;
+        public final int f23711k;
 
         private a(int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17, int i18, int i19, int i20) {
-            this.f22576a = i10;
-            this.f22577b = i11;
-            this.f22578c = i12;
-            this.f22579d = i13;
-            this.f22580e = i14;
-            this.f22581f = i15;
-            this.f22582g = i16;
-            this.f22583h = i17;
-            this.f22584i = i18;
-            this.f22585j = i19;
-            this.f22586k = i20;
+            this.f23701a = i10;
+            this.f23702b = i11;
+            this.f23703c = i12;
+            this.f23704d = i13;
+            this.f23705e = i14;
+            this.f23706f = i15;
+            this.f23707g = i16;
+            this.f23708h = i17;
+            this.f23709i = i18;
+            this.f23710j = i19;
+            this.f23711k = i20;
         }
 
         /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -109,7 +109,7 @@ public final class c {
             int i18 = -1;
             int i19 = -1;
             for (int i20 = 0; i20 < split.length; i20++) {
-                String e10 = ni.b.e(split[i20].trim());
+                String e10 = pi.b.e(split[i20].trim());
                 e10.getClass();
                 switch (e10.hashCode()) {
                     case -1178781136:
@@ -230,30 +230,30 @@ public final class c {
     static final class b {
 
         /* renamed from: c  reason: collision with root package name */
-        private static final Pattern f22587c = Pattern.compile("\\{([^}]*)\\}");
+        private static final Pattern f23712c = Pattern.compile("\\{([^}]*)\\}");
 
         /* renamed from: d  reason: collision with root package name */
-        private static final Pattern f22588d = Pattern.compile(w0.D("\\\\pos\\((%1$s),(%1$s)\\)", "\\s*\\d+(?:\\.\\d+)?\\s*"));
+        private static final Pattern f23713d = Pattern.compile(w0.D("\\\\pos\\((%1$s),(%1$s)\\)", "\\s*\\d+(?:\\.\\d+)?\\s*"));
 
         /* renamed from: e  reason: collision with root package name */
-        private static final Pattern f22589e = Pattern.compile(w0.D("\\\\move\\(%1$s,%1$s,(%1$s),(%1$s)(?:,%1$s,%1$s)?\\)", "\\s*\\d+(?:\\.\\d+)?\\s*"));
+        private static final Pattern f23714e = Pattern.compile(w0.D("\\\\move\\(%1$s,%1$s,(%1$s),(%1$s)(?:,%1$s,%1$s)?\\)", "\\s*\\d+(?:\\.\\d+)?\\s*"));
 
         /* renamed from: f  reason: collision with root package name */
-        private static final Pattern f22590f = Pattern.compile("\\\\an(\\d+)");
+        private static final Pattern f23715f = Pattern.compile("\\\\an(\\d+)");
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f22591a;
+        public final int f23716a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final PointF f22592b;
+        public final PointF f23717b;
 
         private b(int i10, PointF pointF) {
-            this.f22591a = i10;
-            this.f22592b = pointF;
+            this.f23716a = i10;
+            this.f23717b = pointF;
         }
 
         private static int a(String str) {
-            Matcher matcher = f22590f.matcher(str);
+            Matcher matcher = f23715f.matcher(str);
             if (matcher.find()) {
                 return c.e((String) oe.a.e(matcher.group(1)));
             }
@@ -261,7 +261,7 @@ public final class c {
         }
 
         public static b b(String str) {
-            Matcher matcher = f22587c.matcher(str);
+            Matcher matcher = f23712c.matcher(str);
             PointF pointF = null;
             int i10 = -1;
             while (matcher.find()) {
@@ -287,8 +287,8 @@ public final class c {
         private static PointF c(String str) {
             String group;
             String group2;
-            Matcher matcher = f22588d.matcher(str);
-            Matcher matcher2 = f22589e.matcher(str);
+            Matcher matcher = f23713d.matcher(str);
+            Matcher matcher2 = f23714e.matcher(str);
             boolean find = matcher.find();
             boolean find2 = matcher2.find();
             if (find) {
@@ -307,21 +307,21 @@ public final class c {
         }
 
         public static String d(String str) {
-            return f22587c.matcher(str).replaceAll("");
+            return f23712c.matcher(str).replaceAll("");
         }
     }
 
     private c(String str, int i10, Integer num, Integer num2, float f10, boolean z10, boolean z11, boolean z12, boolean z13, int i11) {
-        this.f22566a = str;
-        this.f22567b = i10;
-        this.f22568c = num;
-        this.f22569d = num2;
-        this.f22570e = f10;
-        this.f22571f = z10;
-        this.f22572g = z11;
-        this.f22573h = z12;
-        this.f22574i = z13;
-        this.f22575j = i11;
+        this.f23691a = str;
+        this.f23692b = i10;
+        this.f23693c = num;
+        this.f23694d = num2;
+        this.f23695e = f10;
+        this.f23696f = z10;
+        this.f23697g = z11;
+        this.f23698h = z12;
+        this.f23699i = z13;
+        this.f23700j = i11;
     }
 
     public static c b(String str, a aVar) {
@@ -335,40 +335,40 @@ public final class c {
         oe.a.a(str.startsWith("Style:"));
         String[] split = TextUtils.split(str.substring(6), ",");
         int length = split.length;
-        int i11 = aVar.f22586k;
+        int i11 = aVar.f23711k;
         if (length != i11) {
             y.i("SsaStyle", w0.D("Skipping malformed 'Style:' line (expected %s values, found %s): '%s'", Integer.valueOf(i11), Integer.valueOf(split.length), str));
             return null;
         }
         try {
-            String trim = split[aVar.f22576a].trim();
-            int i12 = aVar.f22577b;
+            String trim = split[aVar.f23701a].trim();
+            int i12 = aVar.f23702b;
             int i13 = -1;
             if (i12 != -1) {
                 i10 = e(split[i12].trim());
             } else {
                 i10 = -1;
             }
-            int i14 = aVar.f22578c;
+            int i14 = aVar.f23703c;
             if (i14 != -1) {
                 num = h(split[i14].trim());
             } else {
                 num = null;
             }
-            int i15 = aVar.f22579d;
+            int i15 = aVar.f23704d;
             if (i15 != -1) {
                 num2 = h(split[i15].trim());
             } else {
                 num2 = null;
             }
-            int i16 = aVar.f22580e;
+            int i16 = aVar.f23705e;
             if (i16 != -1) {
                 f10 = i(split[i16].trim());
             } else {
                 f10 = -3.4028235E38f;
             }
             float f11 = f10;
-            int i17 = aVar.f22581f;
+            int i17 = aVar.f23706f;
             boolean z13 = false;
             boolean z14 = true;
             if (i17 != -1 && f(split[i17].trim())) {
@@ -377,24 +377,24 @@ public final class c {
             } else {
                 z10 = false;
             }
-            int i18 = aVar.f22582g;
+            int i18 = aVar.f23707g;
             if (i18 != -1 && f(split[i18].trim())) {
                 z11 = true;
             } else {
                 z11 = true;
                 z14 = z10;
             }
-            int i19 = aVar.f22583h;
+            int i19 = aVar.f23708h;
             if (i19 == -1 || !f(split[i19].trim())) {
                 z11 = false;
             }
-            int i20 = aVar.f22584i;
+            int i20 = aVar.f23709i;
             if (i20 != -1 && f(split[i20].trim())) {
                 z12 = true;
             } else {
                 z12 = false;
             }
-            int i21 = aVar.f22585j;
+            int i21 = aVar.f23710j;
             if (i21 != -1) {
                 i13 = g(split[i21].trim());
             }

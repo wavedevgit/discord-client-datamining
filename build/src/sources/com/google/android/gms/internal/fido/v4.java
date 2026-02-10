@@ -9,17 +9,17 @@ import java.util.Locale;
 public abstract class v4 implements Iterable, Serializable {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final v4 f14239e = new t4(z4.f14257a);
+    public static final v4 f14816e = new t4(z4.f14834a);
 
     /* renamed from: d  reason: collision with root package name */
-    private int f14240d = 0;
+    private int f14817d = 0;
 
     static {
-        int i10 = n4.f14168a;
+        int i10 = n4.f14745a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static int j(int i10, int i11, int i12) {
+    public static int k(int i10, int i11, int i12) {
         int i13 = i11 - i10;
         if ((i10 | i11 | i13 | (i12 - i11)) < 0) {
             if (i10 >= 0) {
@@ -34,7 +34,7 @@ public abstract class v4 implements Iterable, Serializable {
     }
 
     public static v4 o(byte[] bArr, int i10, int i11) {
-        j(0, i11, bArr.length);
+        k(0, i11, bArr.length);
         byte[] bArr2 = new byte[i11];
         System.arraycopy(bArr, 0, bArr2, 0, i11);
         return new t4(bArr2);
@@ -55,37 +55,37 @@ public abstract class v4 implements Iterable, Serializable {
 
     public abstract v4 g(int i10, int i11);
 
-    public abstract InputStream h();
-
     public final int hashCode() {
-        int i10 = this.f14240d;
+        int i10 = this.f14817d;
         if (i10 == 0) {
             int d10 = d();
             i10 = f(d10, 0, d10);
             if (i10 == 0) {
                 i10 = 1;
             }
-            this.f14240d = i10;
+            this.f14817d = i10;
         }
         return i10;
     }
 
-    public abstract ByteBuffer i();
+    public abstract InputStream i();
 
     @Override // java.lang.Iterable
     public final /* synthetic */ Iterator iterator() {
         return new o4(this);
     }
 
+    public abstract ByteBuffer j();
+
     /* JADX INFO: Access modifiers changed from: protected */
     public final int l() {
-        return this.f14240d;
+        return this.f14817d;
     }
 
     public final byte[] p() {
         int d10 = d();
         if (d10 == 0) {
-            return z4.f14257a;
+            return z4.f14834a;
         }
         byte[] bArr = new byte[d10];
         e(bArr, 0, 0, d10);

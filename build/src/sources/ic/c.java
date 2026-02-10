@@ -5,7 +5,7 @@ import dc.c;
 public interface c {
     void a();
 
-    dc.a g();
+    dc.a h();
 
-    void k(long j10, c.b bVar, String str);
+    void i(long j10, c.b bVar, String str);
 }

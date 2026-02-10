@@ -1,11 +1,18 @@
 package aw;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public enum a {
-    MILLISECOND,
-    SECOND,
-    MINUTE,
-    HOUR,
-    DAY,
-    MONTH,
-    YEAR
+public abstract class a extends r {
+    @Override // aw.r
+    protected void j(r rVar) {
+        if (rVar instanceof a) {
+            super.j(rVar);
+            return;
+        }
+        throw new IllegalArgumentException("Parent of block must also be block (can not be inline)");
+    }
+
+    @Override // aw.r
+    /* renamed from: m */
+    public a f() {
+        return (a) super.f();
+    }
 }

@@ -1,41 +1,33 @@
 package li;
 
-import android.os.IBinder;
-import android.os.IInterface;
-import android.os.Parcel;
+import android.app.PendingIntent;
+import android.os.Bundle;
+import com.discord.js_watchdog.SharedPreferencesKey;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a implements IInterface {
-
-    /* renamed from: c  reason: collision with root package name */
-    private final IBinder f35925c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final String f35926d;
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public a(IBinder iBinder, String str) {
-        this.f35925c = iBinder;
-        this.f35926d = str;
+public abstract class a {
+    public static a j(Bundle bundle) {
+        return new b(bundle.getInt(SharedPreferencesKey.SESSION_ID), bundle.getInt("status"), bundle.getInt("error_code"), bundle.getLong("bytes_downloaded"), bundle.getLong("total_bytes_to_download"), bundle.getStringArrayList("module_names"), bundle.getStringArrayList("languages"), (PendingIntent) bundle.getParcelable("user_confirmation_intent"), bundle.getParcelableArrayList("split_file_intents"));
     }
 
-    @Override // android.os.IInterface
-    public final IBinder asBinder() {
-        return this.f35925c;
-    }
+    public abstract long a();
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final Parcel e() {
-        Parcel obtain = Parcel.obtain();
-        obtain.writeInterfaceToken(this.f35926d);
-        return obtain;
-    }
+    public abstract int b();
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final void f(int i10, Parcel parcel) {
-        try {
-            this.f35925c.transact(i10, parcel, null, 1);
-        } finally {
-            parcel.recycle();
-        }
-    }
+    public abstract PendingIntent c();
+
+    public abstract int d();
+
+    public abstract int e();
+
+    public abstract long f();
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public abstract List g();
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public abstract List h();
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public abstract List i();
 }

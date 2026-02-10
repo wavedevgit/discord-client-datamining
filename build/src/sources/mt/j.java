@@ -1,25 +1,117 @@
 package mt;
 
+import java.util.List;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class j extends i {
+public final class j implements s {
 
-    /* renamed from: c  reason: collision with root package name */
-    public static final j f37546c = new j();
+    /* renamed from: a  reason: collision with root package name */
+    private final String f36622a;
 
-    private j() {
+    public j(String string) {
+        Intrinsics.checkNotNullParameter(string, "string");
+        this.f36622a = string;
     }
 
-    public final void c(char[] array) {
-        Intrinsics.checkNotNullParameter(array, "array");
-        if (array.length == 16384) {
-            a(array);
-            return;
+    @Override // mt.o
+    public nt.e a() {
+        return new nt.c(this.f36622a);
+    }
+
+    @Override // mt.o
+    public ot.q b() {
+        String str;
+        List a10;
+        if (this.f36622a.length() == 0) {
+            a10 = CollectionsKt.l();
+        } else {
+            List c10 = CollectionsKt.c();
+            String str2 = "";
+            if (lt.d.b(this.f36622a.charAt(0))) {
+                String str3 = this.f36622a;
+                int length = str3.length();
+                int i10 = 0;
+                while (true) {
+                    if (i10 >= length) {
+                        break;
+                    } else if (!lt.d.b(str3.charAt(i10))) {
+                        str3 = str3.substring(0, i10);
+                        Intrinsics.checkNotNullExpressionValue(str3, "substring(...)");
+                        break;
+                    } else {
+                        i10++;
+                    }
+                }
+                c10.add(new ot.h(CollectionsKt.e(new ot.b(str3))));
+                String str4 = this.f36622a;
+                int length2 = str4.length();
+                int i11 = 0;
+                while (true) {
+                    if (i11 >= length2) {
+                        str = "";
+                        break;
+                    } else if (!lt.d.b(str4.charAt(i11))) {
+                        str = str4.substring(i11);
+                        Intrinsics.checkNotNullExpressionValue(str, "substring(...)");
+                        break;
+                    } else {
+                        i11++;
+                    }
+                }
+            } else {
+                str = this.f36622a;
+            }
+            if (str.length() > 0) {
+                if (lt.d.b(str.charAt(str.length() - 1))) {
+                    int c02 = StringsKt.c0(str);
+                    while (true) {
+                        if (-1 >= c02) {
+                            break;
+                        } else if (!lt.d.b(str.charAt(c02))) {
+                            str2 = str.substring(0, c02 + 1);
+                            Intrinsics.checkNotNullExpressionValue(str2, "substring(...)");
+                            break;
+                        } else {
+                            c02--;
+                        }
+                    }
+                    c10.add(new ot.r(str2));
+                    int c03 = StringsKt.c0(str);
+                    while (true) {
+                        if (-1 >= c03) {
+                            break;
+                        } else if (!lt.d.b(str.charAt(c03))) {
+                            str = str.substring(c03 + 1);
+                            Intrinsics.checkNotNullExpressionValue(str, "substring(...)");
+                            break;
+                        } else {
+                            c03--;
+                        }
+                    }
+                    c10.add(new ot.h(CollectionsKt.e(new ot.b(str))));
+                } else {
+                    c10.add(new ot.r(str));
+                }
+            }
+            a10 = CollectionsKt.a(c10);
         }
-        throw new IllegalArgumentException(("Inconsistent internal invariant: unexpected array size " + array.length).toString());
+        return new ot.q(a10, CollectionsKt.l());
     }
 
-    public final char[] d() {
-        return super.b(16384);
+    public boolean equals(Object obj) {
+        if ((obj instanceof j) && Intrinsics.areEqual(this.f36622a, ((j) obj).f36622a)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return this.f36622a.hashCode();
+    }
+
+    public String toString() {
+        return "ConstantFormatStructure(" + this.f36622a + ')';
     }
 }

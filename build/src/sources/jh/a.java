@@ -1,77 +1,87 @@
 package jh;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.util.TypedValue;
+import android.view.View;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import oh.b;
+import qh.b;
 import r1.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a {
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final int f30166f = (int) Math.round(5.1000000000000005d);
-
-    /* renamed from: a  reason: collision with root package name */
-    private final boolean f30167a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int f30168b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final int f30169c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final int f30170d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final float f30171e;
-
-    public a(Context context) {
-        this(b.b(context, bh.b.f6645s, false), hh.a.b(context, bh.b.f6644r, 0), hh.a.b(context, bh.b.f6643q, 0), hh.a.b(context, bh.b.f6641o, 0), context.getResources().getDisplayMetrics().density);
+public abstract class a {
+    public static int a(int i10, int i11) {
+        return c.l(i10, (Color.alpha(i10) * i11) / SetSpanOperation.SPAN_MAX_PRIORITY);
     }
 
-    private boolean e(int i10) {
-        if (c.l(i10, SetSpanOperation.SPAN_MAX_PRIORITY) == this.f30170d) {
+    public static int b(Context context, int i10, int i11) {
+        Integer f10 = f(context, i10);
+        if (f10 != null) {
+            return f10.intValue();
+        }
+        return i11;
+    }
+
+    public static int c(Context context, int i10, String str) {
+        return l(context, b.g(context, i10, str));
+    }
+
+    public static int d(View view, int i10) {
+        return l(view.getContext(), b.h(view, i10));
+    }
+
+    public static int e(View view, int i10, int i11) {
+        return b(view.getContext(), i10, i11);
+    }
+
+    public static Integer f(Context context, int i10) {
+        TypedValue a10 = b.a(context, i10);
+        if (a10 != null) {
+            return Integer.valueOf(l(context, a10));
+        }
+        return null;
+    }
+
+    public static ColorStateList g(Context context, int i10) {
+        TypedValue a10 = b.a(context, i10);
+        if (a10 == null) {
+            return null;
+        }
+        int i11 = a10.resourceId;
+        if (i11 != 0) {
+            return androidx.core.content.a.d(context, i11);
+        }
+        int i12 = a10.data;
+        if (i12 == 0) {
+            return null;
+        }
+        return ColorStateList.valueOf(i12);
+    }
+
+    public static boolean h(int i10) {
+        if (i10 != 0 && c.e(i10) > 0.5d) {
             return true;
         }
         return false;
     }
 
-    public float a(float f10) {
-        float f11 = this.f30171e;
-        if (f11 <= 0.0f || f10 <= 0.0f) {
-            return 0.0f;
+    public static int i(int i10, int i11) {
+        return c.h(i11, i10);
+    }
+
+    public static int j(int i10, int i11, float f10) {
+        return i(i10, c.l(i11, Math.round(Color.alpha(i11) * f10)));
+    }
+
+    public static int k(View view, int i10, int i11, float f10) {
+        return j(d(view, i10), d(view, i11), f10);
+    }
+
+    private static int l(Context context, TypedValue typedValue) {
+        int i10 = typedValue.resourceId;
+        if (i10 != 0) {
+            return androidx.core.content.a.c(context, i10);
         }
-        return Math.min(((((float) Math.log1p(f10 / f11)) * 4.5f) + 2.0f) / 100.0f, 1.0f);
-    }
-
-    public int b(int i10, float f10) {
-        int i11;
-        float a10 = a(f10);
-        int alpha = Color.alpha(i10);
-        int j10 = hh.a.j(c.l(i10, SetSpanOperation.SPAN_MAX_PRIORITY), this.f30168b, a10);
-        if (a10 > 0.0f && (i11 = this.f30169c) != 0) {
-            j10 = hh.a.i(j10, c.l(i11, f30166f));
-        }
-        return c.l(j10, alpha);
-    }
-
-    public int c(int i10, float f10) {
-        if (this.f30167a && e(i10)) {
-            return b(i10, f10);
-        }
-        return i10;
-    }
-
-    public boolean d() {
-        return this.f30167a;
-    }
-
-    public a(boolean z10, int i10, int i11, int i12, float f10) {
-        this.f30167a = z10;
-        this.f30168b = i10;
-        this.f30169c = i11;
-        this.f30170d = i12;
-        this.f30171e = f10;
+        return typedValue.data;
     }
 }

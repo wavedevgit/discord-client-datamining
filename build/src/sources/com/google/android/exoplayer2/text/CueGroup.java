@@ -8,21 +8,21 @@ import java.util.ArrayList;
 import java.util.List;
 import oe.d;
 import oe.w0;
-import oi.s;
+import qi.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class CueGroup implements g {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final CueGroup f13074i = new CueGroup(s.t(), 0);
+    public static final CueGroup f13651i = new CueGroup(s.t(), 0);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String f13075o = w0.B0(0);
+    private static final String f13652o = w0.B0(0);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f13076p = w0.B0(1);
+    private static final String f13653p = w0.B0(1);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final g.a f13077q = new g.a() { // from class: ae.d
+    public static final g.a f13654q = new g.a() { // from class: ae.d
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             CueGroup b10;
@@ -32,25 +32,25 @@ public final class CueGroup implements g {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    public final s f13078d;
+    public final s f13655d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f13079e;
+    public final long f13656e;
 
     public CueGroup(List list, long j10) {
-        this.f13078d = s.o(list);
-        this.f13079e = j10;
+        this.f13655d = s.o(list);
+        this.f13656e = j10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final CueGroup b(Bundle bundle) {
         s d10;
-        ArrayList parcelableArrayList = bundle.getParcelableArrayList(f13075o);
+        ArrayList parcelableArrayList = bundle.getParcelableArrayList(f13652o);
         if (parcelableArrayList == null) {
             d10 = s.t();
         } else {
             d10 = d.d(b.U, parcelableArrayList);
         }
-        return new CueGroup(d10, bundle.getLong(f13076p));
+        return new CueGroup(d10, bundle.getLong(f13653p));
     }
 }

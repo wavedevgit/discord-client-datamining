@@ -5,14 +5,14 @@ import gf.r;
 import sf.a;
 import zg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class f extends a.AbstractBinderC0667a {
+public final class f extends a.AbstractBinderC0652a {
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ k f49771c;
+    final /* synthetic */ k f48087c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(k kVar) {
-        this.f49771c = kVar;
+        this.f48087c = kVar;
     }
 
     @Override // sf.a
@@ -23,6 +23,6 @@ public final class f extends a.AbstractBinderC0667a {
         } else {
             num = null;
         }
-        r.a(status, num, this.f49771c);
+        r.a(status, num, this.f48087c);
     }
 }

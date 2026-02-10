@@ -25,15 +25,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/isCrunchyrollActivity.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun62470: for (var _fun62470_ip = 0;;) switch (_fun62470_ip) {
+        _fun62523: for (var _fun62523_ip = 0;;) switch (_fun62523_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun62470_ip = 20;
-                    continue _fun62470
+                    _fun62523_ip = 20;
+                    continue _fun62523
                 }
             case 14:
                 var1 = var0.application_id;
@@ -45,4 +45,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5927, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5937, 2]);

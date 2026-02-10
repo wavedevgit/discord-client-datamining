@@ -13,60 +13,60 @@ import w1.d;
 public class g extends androidx.fragment.app.o0 {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    class a extends Transition.e {
+    class a extends Transition.f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Rect f5396a;
+        final /* synthetic */ Rect f5406a;
 
         a(Rect rect) {
-            this.f5396a = rect;
+            this.f5406a = rect;
         }
 
-        @Override // androidx.transition.Transition.e
+        @Override // androidx.transition.Transition.f
         public Rect a(Transition transition) {
-            return this.f5396a;
+            return this.f5406a;
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    class b implements Transition.h {
+    class b implements Transition.i {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ View f5398a;
+        final /* synthetic */ View f5408a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ArrayList f5399b;
+        final /* synthetic */ ArrayList f5409b;
 
         b(View view, ArrayList arrayList) {
-            this.f5398a = view;
-            this.f5399b = arrayList;
+            this.f5408a = view;
+            this.f5409b = arrayList;
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionCancel(Transition transition) {
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionEnd(Transition transition) {
-            transition.f0(this);
-            this.f5398a.setVisibility(8);
-            int size = this.f5399b.size();
+            transition.h0(this);
+            this.f5408a.setVisibility(8);
+            int size = this.f5409b.size();
             for (int i10 = 0; i10 < size; i10++) {
-                ((View) this.f5399b.get(i10)).setVisibility(0);
+                ((View) this.f5409b.get(i10)).setVisibility(0);
             }
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionPause(Transition transition) {
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionResume(Transition transition) {
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionStart(Transition transition) {
-            transition.f0(this);
+            transition.h0(this);
             transition.c(this);
         }
     }
@@ -75,102 +75,102 @@ public class g extends androidx.fragment.app.o0 {
     class c extends w {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Object f5401a;
+        final /* synthetic */ Object f5411a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ArrayList f5402b;
+        final /* synthetic */ ArrayList f5412b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Object f5403c;
+        final /* synthetic */ Object f5413c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ArrayList f5404d;
+        final /* synthetic */ ArrayList f5414d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Object f5405e;
+        final /* synthetic */ Object f5415e;
 
         /* renamed from: f  reason: collision with root package name */
-        final /* synthetic */ ArrayList f5406f;
+        final /* synthetic */ ArrayList f5416f;
 
         c(Object obj, ArrayList arrayList, Object obj2, ArrayList arrayList2, Object obj3, ArrayList arrayList3) {
-            this.f5401a = obj;
-            this.f5402b = arrayList;
-            this.f5403c = obj2;
-            this.f5404d = arrayList2;
-            this.f5405e = obj3;
-            this.f5406f = arrayList3;
+            this.f5411a = obj;
+            this.f5412b = arrayList;
+            this.f5413c = obj2;
+            this.f5414d = arrayList2;
+            this.f5415e = obj3;
+            this.f5416f = arrayList3;
         }
 
-        @Override // androidx.transition.w, androidx.transition.Transition.h
+        @Override // androidx.transition.w, androidx.transition.Transition.i
         public void onTransitionEnd(Transition transition) {
-            transition.f0(this);
+            transition.h0(this);
         }
 
-        @Override // androidx.transition.w, androidx.transition.Transition.h
+        @Override // androidx.transition.w, androidx.transition.Transition.i
         public void onTransitionStart(Transition transition) {
-            Object obj = this.f5401a;
+            Object obj = this.f5411a;
             if (obj != null) {
-                g.this.E(obj, this.f5402b, null);
+                g.this.E(obj, this.f5412b, null);
             }
-            Object obj2 = this.f5403c;
+            Object obj2 = this.f5413c;
             if (obj2 != null) {
-                g.this.E(obj2, this.f5404d, null);
+                g.this.E(obj2, this.f5414d, null);
             }
-            Object obj3 = this.f5405e;
+            Object obj3 = this.f5415e;
             if (obj3 != null) {
-                g.this.E(obj3, this.f5406f, null);
+                g.this.E(obj3, this.f5416f, null);
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public class d implements Transition.h {
+    public class d implements Transition.i {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Runnable f5408a;
+        final /* synthetic */ Runnable f5418a;
 
         d(Runnable runnable) {
-            this.f5408a = runnable;
+            this.f5418a = runnable;
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionCancel(Transition transition) {
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionEnd(Transition transition) {
-            this.f5408a.run();
+            this.f5418a.run();
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionPause(Transition transition) {
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionResume(Transition transition) {
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionStart(Transition transition) {
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    class e extends Transition.e {
+    class e extends Transition.f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Rect f5410a;
+        final /* synthetic */ Rect f5420a;
 
         e(Rect rect) {
-            this.f5410a = rect;
+            this.f5420a = rect;
         }
 
-        @Override // androidx.transition.Transition.e
+        @Override // androidx.transition.Transition.f
         public Rect a(Transition transition) {
-            Rect rect = this.f5410a;
+            Rect rect = this.f5420a;
             if (rect != null && !rect.isEmpty()) {
-                return this.f5410a;
+                return this.f5420a;
             }
             return null;
         }
@@ -186,7 +186,7 @@ public class g extends androidx.fragment.app.o0 {
     }
 
     private static boolean D(Transition transition) {
-        if (androidx.fragment.app.o0.l(transition.I()) && androidx.fragment.app.o0.l(transition.J()) && androidx.fragment.app.o0.l(transition.K())) {
+        if (androidx.fragment.app.o0.l(transition.K()) && androidx.fragment.app.o0.l(transition.L()) && androidx.fragment.app.o0.l(transition.M())) {
             return false;
         }
         return true;
@@ -196,8 +196,8 @@ public class g extends androidx.fragment.app.o0 {
     public void A(Object obj, ArrayList arrayList, ArrayList arrayList2) {
         a0 a0Var = (a0) obj;
         if (a0Var != null) {
-            a0Var.L().clear();
-            a0Var.L().addAll(arrayList2);
+            a0Var.N().clear();
+            a0Var.N().addAll(arrayList2);
             E(a0Var, arrayList, arrayList2);
         }
     }
@@ -208,7 +208,7 @@ public class g extends androidx.fragment.app.o0 {
             return null;
         }
         a0 a0Var = new a0();
-        a0Var.w0((Transition) obj);
+        a0Var.y0((Transition) obj);
         return a0Var;
     }
 
@@ -218,14 +218,14 @@ public class g extends androidx.fragment.app.o0 {
         int i10 = 0;
         if (transition instanceof a0) {
             a0 a0Var = (a0) transition;
-            int z02 = a0Var.z0();
-            while (i10 < z02) {
-                E(a0Var.y0(i10), arrayList, arrayList2);
+            int B0 = a0Var.B0();
+            while (i10 < B0) {
+                E(a0Var.A0(i10), arrayList, arrayList2);
                 i10++;
             }
         } else if (!D(transition)) {
-            List L = transition.L();
-            if (L.size() == arrayList.size() && L.containsAll(arrayList)) {
+            List N = transition.N();
+            if (N.size() == arrayList.size() && N.containsAll(arrayList)) {
                 if (arrayList2 == null) {
                     size = 0;
                 } else {
@@ -236,7 +236,7 @@ public class g extends androidx.fragment.app.o0 {
                     i10++;
                 }
                 for (int size2 = arrayList.size() - 1; size2 >= 0; size2--) {
-                    transition.g0((View) arrayList.get(size2));
+                    transition.i0((View) arrayList.get(size2));
                 }
             }
         }
@@ -256,12 +256,12 @@ public class g extends androidx.fragment.app.o0 {
             int i10 = 0;
             if (transition instanceof a0) {
                 a0 a0Var = (a0) transition;
-                int z02 = a0Var.z0();
-                while (i10 < z02) {
-                    b(a0Var.y0(i10), arrayList);
+                int B0 = a0Var.B0();
+                while (i10 < B0) {
+                    b(a0Var.A0(i10), arrayList);
                     i10++;
                 }
-            } else if (!D(transition) && androidx.fragment.app.o0.l(transition.L())) {
+            } else if (!D(transition) && androidx.fragment.app.o0.l(transition.N())) {
                 int size = arrayList.size();
                 while (i10 < size) {
                     transition.d((View) arrayList.get(i10));
@@ -311,11 +311,11 @@ public class g extends androidx.fragment.app.o0 {
 
     @Override // androidx.fragment.app.o0
     public boolean n(Object obj) {
-        boolean R = ((Transition) obj).R();
-        if (!R) {
+        boolean T = ((Transition) obj).T();
+        if (!T) {
             Log.v("FragmentManager", "Predictive back not available for AndroidX Transition " + obj + ". Please enable seeking support for the designated transition by overriding isSeekingSupported().");
         }
-        return R;
+        return T;
     }
 
     @Override // androidx.fragment.app.o0
@@ -324,7 +324,7 @@ public class g extends androidx.fragment.app.o0 {
         Transition transition2 = (Transition) obj2;
         Transition transition3 = (Transition) obj3;
         if (transition != null && transition2 != null) {
-            transition = new a0().w0(transition).w0(transition2).G0(1);
+            transition = new a0().y0(transition).y0(transition2).H0(1);
         } else if (transition == null) {
             if (transition2 != null) {
                 transition = transition2;
@@ -335,9 +335,9 @@ public class g extends androidx.fragment.app.o0 {
         if (transition3 != null) {
             a0 a0Var = new a0();
             if (transition != null) {
-                a0Var.w0(transition);
+                a0Var.y0(transition);
             }
-            a0Var.w0(transition3);
+            a0Var.y0(transition3);
             return a0Var;
         }
         return transition;
@@ -347,13 +347,13 @@ public class g extends androidx.fragment.app.o0 {
     public Object p(Object obj, Object obj2, Object obj3) {
         a0 a0Var = new a0();
         if (obj != null) {
-            a0Var.w0((Transition) obj);
+            a0Var.y0((Transition) obj);
         }
         if (obj2 != null) {
-            a0Var.w0((Transition) obj2);
+            a0Var.y0((Transition) obj2);
         }
         if (obj3 != null) {
-            a0Var.w0((Transition) obj3);
+            a0Var.y0((Transition) obj3);
         }
         return a0Var;
     }
@@ -386,7 +386,7 @@ public class g extends androidx.fragment.app.o0 {
     @Override // androidx.fragment.app.o0
     public void u(Object obj, Rect rect) {
         if (obj != null) {
-            ((Transition) obj).n0(new e(rect));
+            ((Transition) obj).p0(new e(rect));
         }
     }
 
@@ -395,7 +395,7 @@ public class g extends androidx.fragment.app.o0 {
         if (view != null) {
             Rect rect = new Rect();
             k(view, rect);
-            ((Transition) obj).n0(new a(rect));
+            ((Transition) obj).p0(new a(rect));
         }
     }
 
@@ -419,13 +419,13 @@ public class g extends androidx.fragment.app.o0 {
     @Override // androidx.fragment.app.o0
     public void z(Object obj, View view, ArrayList arrayList) {
         a0 a0Var = (a0) obj;
-        List L = a0Var.L();
-        L.clear();
+        List N = a0Var.N();
+        N.clear();
         int size = arrayList.size();
         for (int i10 = 0; i10 < size; i10++) {
-            androidx.fragment.app.o0.f(L, (View) arrayList.get(i10));
+            androidx.fragment.app.o0.f(N, (View) arrayList.get(i10));
         }
-        L.add(view);
+        N.add(view);
         arrayList.add(view);
         b(a0Var, arrayList);
     }

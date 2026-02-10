@@ -1,83 +1,119 @@
 package yp;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import kotlin.collections.CollectionsKt;
-import kotlin.collections.o0;
+import android.os.Parcel;
+import android.os.Parcelable;
+import cq.f;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.ranges.d;
+import org.jetbrains.annotations.NotNull;
+import wp.a1;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements a {
-    private final int b(BitmapFactory.Options options, int i10, int i11) {
-        int i12 = options.outHeight;
-        int i13 = options.outWidth;
-        if (i12 <= i11 && i13 <= i10) {
-            return 1;
-        }
-        return Math.min(gs.a.c(i12 / i11), gs.a.c(i13 / i10));
-    }
+public final class b implements f {
+    @NotNull
+    public static final Parcelable.Creator<b> CREATOR = new a();
 
-    private final Map c(File file) {
-        try {
-            List o10 = CollectionsKt.o("DateTime", "DateTimeDigitized", "ExposureTime", "Flash", "FocalLength", "GPSAltitude", "GPSAltitudeRef", "GPSDateStamp", "GPSLatitude", "GPSLatitudeRef", "GPSLongitude", "GPSLongitudeRef", "GPSProcessingMethod", "GPSTimeStamp", "Make", "Model", "Orientation", "SubSecTime", "WhiteBalance");
-            FileInputStream fileInputStream = new FileInputStream(file);
-            e3.a aVar = new e3.a(fileInputStream);
-            List list = o10;
-            LinkedHashMap linkedHashMap = new LinkedHashMap(d.d(o0.e(CollectionsKt.w(list, 10)), 16));
-            for (Object obj : list) {
-                linkedHashMap.put(obj, aVar.k((String) obj));
-            }
-            cs.c.a(fileInputStream, null);
-            return linkedHashMap;
-        } catch (IOException unused) {
-            return o0.i();
-        }
-    }
+    /* renamed from: d  reason: collision with root package name */
+    private final String f55681d;
 
-    private final void d(File file, Map map) {
-        try {
-            e3.a aVar = new e3.a(file.getAbsolutePath());
-            for (Map.Entry entry : map.entrySet()) {
-                String str = (String) entry.getKey();
-                String str2 = (String) entry.getValue();
-                if (str2 != null) {
-                    aVar.h0(str, str2);
-                }
-            }
-            aVar.c0();
-        } catch (IOException unused) {
+    /* renamed from: e  reason: collision with root package name */
+    private final a1 f55682e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final a1 f55683i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final a1 f55684o;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final b createFromParcel(Parcel parcel) {
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            return new b(parcel.readString(), (a1) parcel.readParcelable(b.class.getClassLoader()), (a1) parcel.readParcelable(b.class.getClassLoader()), (a1) parcel.readParcelable(b.class.getClassLoader()));
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final b[] newArray(int i10) {
+            return new b[i10];
         }
     }
 
-    @Override // yp.a
-    public void a(File file) {
-        Intrinsics.checkNotNullParameter(file, "file");
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(file.getAbsolutePath(), options);
-        Map c10 = c(file);
-        try {
-            String absolutePath = file.getAbsolutePath();
-            BitmapFactory.Options options2 = new BitmapFactory.Options();
-            options2.inSampleSize = b(options, 2000, 2000);
-            Bitmap decodeFile = BitmapFactory.decodeFile(absolutePath, options2);
-            FileOutputStream fileOutputStream = new FileOutputStream(file);
-            if (decodeFile != null) {
-                decodeFile.compress(Bitmap.CompressFormat.JPEG, 80, fileOutputStream);
-            }
-            cs.c.a(fileOutputStream, null);
-            if (decodeFile != null) {
-                decodeFile.recycle();
-            }
-        } catch (IllegalArgumentException unused) {
+    public b(String stepName, a1 a1Var, a1 a1Var2, a1 a1Var3) {
+        Intrinsics.checkNotNullParameter(stepName, "stepName");
+        this.f55681d = stepName;
+        this.f55682e = a1Var;
+        this.f55683i = a1Var2;
+        this.f55684o = a1Var3;
+    }
+
+    public final a1 a() {
+        return this.f55682e;
+    }
+
+    public String b() {
+        return this.f55681d;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        d(file, c10);
+        if (!(obj instanceof b)) {
+            return false;
+        }
+        b bVar = (b) obj;
+        if (Intrinsics.areEqual(this.f55681d, bVar.f55681d) && Intrinsics.areEqual(this.f55682e, bVar.f55682e) && Intrinsics.areEqual(this.f55683i, bVar.f55683i) && Intrinsics.areEqual(this.f55684o, bVar.f55684o)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        int hashCode;
+        int hashCode2;
+        int hashCode3 = this.f55681d.hashCode() * 31;
+        a1 a1Var = this.f55682e;
+        int i10 = 0;
+        if (a1Var == null) {
+            hashCode = 0;
+        } else {
+            hashCode = a1Var.hashCode();
+        }
+        int i11 = (hashCode3 + hashCode) * 31;
+        a1 a1Var2 = this.f55683i;
+        if (a1Var2 == null) {
+            hashCode2 = 0;
+        } else {
+            hashCode2 = a1Var2.hashCode();
+        }
+        int i12 = (i11 + hashCode2) * 31;
+        a1 a1Var3 = this.f55684o;
+        if (a1Var3 != null) {
+            i10 = a1Var3.hashCode();
+        }
+        return i12 + i10;
+    }
+
+    public String toString() {
+        String str = this.f55681d;
+        a1 a1Var = this.f55682e;
+        a1 a1Var2 = this.f55683i;
+        a1 a1Var3 = this.f55684o;
+        return "SelfieStepData(stepName=" + str + ", centerCapture=" + a1Var + ", leftCapture=" + a1Var2 + ", rightCapture=" + a1Var3 + ")";
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeString(this.f55681d);
+        dest.writeParcelable(this.f55682e, i10);
+        dest.writeParcelable(this.f55683i, i10);
+        dest.writeParcelable(this.f55684o, i10);
     }
 }

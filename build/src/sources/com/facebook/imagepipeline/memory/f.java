@@ -10,16 +10,16 @@ import wa.z;
 public abstract class f extends a {
 
     /* renamed from: k  reason: collision with root package name */
-    private final int[] f10673k;
+    private final int[] f11250k;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(s8.d dVar, z zVar, a0 a0Var) {
         super(dVar, zVar, a0Var);
-        SparseIntArray sparseIntArray = (SparseIntArray) j.g(zVar.f53438c);
-        this.f10673k = new int[sparseIntArray.size()];
+        SparseIntArray sparseIntArray = (SparseIntArray) j.g(zVar.f52467c);
+        this.f11250k = new int[sparseIntArray.size()];
         int i10 = 0;
         while (true) {
-            int[] iArr = this.f10673k;
+            int[] iArr = this.f11250k;
             if (i10 < iArr.length) {
                 iArr[i10] = sparseIntArray.keyAt(i10);
                 i10++;
@@ -48,7 +48,7 @@ public abstract class f extends a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int C() {
-        return this.f10673k[0];
+        return this.f11250k[0];
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -63,7 +63,7 @@ public abstract class f extends a {
     protected int n(int i10) {
         int[] iArr;
         if (i10 > 0) {
-            for (int i11 : this.f10673k) {
+            for (int i11 : this.f11250k) {
                 if (i11 >= i10) {
                     return i11;
                 }

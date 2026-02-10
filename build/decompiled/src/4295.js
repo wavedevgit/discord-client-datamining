@@ -4,38 +4,44 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function arg0() {
-        _fun39530: for (var _fun39530_ip = 0;;) switch (_fun39530_ip) {
+    var1 = function arg0, arg1() {
+        _fun39563: for (var _fun39563_ip = 0;;) switch (_fun39563_ip) {
             case 0:
                 var4 = arg0;
-                var0 = null;
-                var1 = var0 == var4;
-                var3 = 0;
-                var0 = 0;
-                if (var1) {
-                    _fun39530_ip = 21;
-                    continue _fun39530
-                }
-            case 16:
-                var0 = var4.length;
-            case 21:
-                if (var0) {
-                    _fun39530_ip = 30;
-                    continue _fun39530
-                }
-            case 24:
-                var0 = new Array(0);
-                _fun39530_ip = 61;
-                continue _fun39530;
-            case 30:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var1 = var1[var3];
+                var0 = arg1;
                 var3 = undefined;
-                var2 = var2.bind(var3)(var1);
-                var1 = 1;
-                var0 = var2.bind(var3)(var4, var1);
-            case 61:
+                var5 = 'function';
+                var1 = typeof var0;
+                var2 = undefined;
+                if (!(var5 === var1)) {
+                    _fun39563_ip = 24;
+                    continue _fun39563
+                }
+            case 21:
+                var2 = var0;
+            case 24:
+                if (!var4) {
+                    _fun39563_ip = 35;
+                    continue _fun39563
+                }
+            case 27:
+                var0 = var4.length;
+                if (var0) {
+                    _fun39563_ip = 41;
+                    continue _fun39563
+                }
+            case 35:
+                var0 = new Array(0);
+                _fun39563_ip = 70;
+                continue _fun39563;
+            case 41:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var1 = 0;
+                var1 = var6[var1];
+                var1 = var5.bind(var3)(var1);
+                var0 = var1.bind(var3)(var4, var3, var2);
+            case 70:
                 return var0;
         }
     };

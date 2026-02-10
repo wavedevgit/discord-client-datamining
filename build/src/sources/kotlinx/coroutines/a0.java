@@ -6,9 +6,9 @@ import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.sequences.Sequence;
-import ps.n0;
-import ps.s0;
-import ps.z0;
+import ys.n0;
+import ys.s0;
+import ys.z0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract /* synthetic */ class a0 {
 
@@ -25,7 +25,7 @@ public abstract /* synthetic */ class a0 {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((Throwable) obj);
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
     }
 
@@ -41,14 +41,14 @@ public abstract /* synthetic */ class a0 {
     }
 
     public static final void c(CoroutineContext coroutineContext, CancellationException cancellationException) {
-        Job job = (Job) coroutineContext.m(Job.f34774h);
+        Job job = (Job) coroutineContext.m(Job.f34996k);
         if (job != null) {
-            job.k(cancellationException);
+            job.i(cancellationException);
         }
     }
 
     public static final void d(Job job, String str, Throwable th2) {
-        job.k(s0.a(str, th2));
+        job.i(s0.a(str, th2));
     }
 
     public static /* synthetic */ void e(CoroutineContext coroutineContext, CancellationException cancellationException, int i10, Object obj) {
@@ -67,17 +67,17 @@ public abstract /* synthetic */ class a0 {
 
     public static final void g(CoroutineContext coroutineContext, CancellationException cancellationException) {
         Sequence<Job> children;
-        Job job = (Job) coroutineContext.m(Job.f34774h);
+        Job job = (Job) coroutineContext.m(Job.f34996k);
         if (job != null && (children = job.getChildren()) != null) {
             for (Job job2 : children) {
-                job2.k(cancellationException);
+                job2.i(cancellationException);
             }
         }
     }
 
     public static final void h(Job job, CancellationException cancellationException) {
         for (Job job2 : job.getChildren()) {
-            job2.k(cancellationException);
+            job2.i(cancellationException);
         }
     }
 
@@ -95,7 +95,7 @@ public abstract /* synthetic */ class a0 {
     }
 
     public static final void k(CoroutineContext coroutineContext) {
-        Job job = (Job) coroutineContext.m(Job.f34774h);
+        Job job = (Job) coroutineContext.m(Job.f34996k);
         if (job != null) {
             z.l(job);
         }
@@ -105,11 +105,11 @@ public abstract /* synthetic */ class a0 {
         if (job.a()) {
             return;
         }
-        throw job.C();
+        throw job.I();
     }
 
     public static final Job m(CoroutineContext coroutineContext) {
-        Job job = (Job) coroutineContext.m(Job.f34774h);
+        Job job = (Job) coroutineContext.m(Job.f34996k);
         if (job != null) {
             return job;
         }
@@ -118,9 +118,9 @@ public abstract /* synthetic */ class a0 {
 
     public static final n0 n(Job job, boolean z10, z0 z0Var) {
         if (job instanceof b0) {
-            return ((b0) job).k0(z10, z0Var);
+            return ((b0) job).l0(z10, z0Var);
         }
-        return job.z(z0Var.v(), z10, new a(z0Var));
+        return job.C(z0Var.v(), z10, new a(z0Var));
     }
 
     public static /* synthetic */ n0 o(Job job, boolean z10, z0 z0Var, int i10, Object obj) {

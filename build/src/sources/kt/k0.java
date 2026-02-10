@@ -1,17 +1,53 @@
 package kt;
-
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class k0 extends x0 {
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public k0(SerialDescriptor elementDesc) {
-        super(elementDesc, null);
-        Intrinsics.checkNotNullParameter(elementDesc, "elementDesc");
+public interface k0 {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static lt.a a(k0 k0Var) {
+            Integer a10 = k0Var.a();
+            if (a10 != null) {
+                return new lt.a(a10.intValue(), 9);
+            }
+            return null;
+        }
+
+        public static void b(k0 k0Var, lt.a aVar) {
+            Integer num;
+            if (aVar != null) {
+                num = Integer.valueOf(aVar.d(9));
+            } else {
+                num = null;
+            }
+            k0Var.u(num);
+        }
     }
 
-    @Override // kotlinx.serialization.descriptors.SerialDescriptor
-    public String h() {
-        return "kotlin.collections.HashSet";
-    }
+    void D(Integer num);
+
+    Integer a();
+
+    Integer d();
+
+    Integer e();
+
+    Integer h();
+
+    void i(g gVar);
+
+    Integer j();
+
+    void n(Integer num);
+
+    void r(lt.a aVar);
+
+    g s();
+
+    void t(Integer num);
+
+    void u(Integer num);
+
+    void x(Integer num);
+
+    lt.a z();
 }

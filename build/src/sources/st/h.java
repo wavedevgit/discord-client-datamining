@@ -1,71 +1,127 @@
 package st;
 
-import java.io.Serializable;
+import java.util.Iterator;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.markers.KMappedMarker;
+import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class h implements Comparable, Serializable {
+public abstract class h {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final h f50382d = new h(0);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a implements Iterator, KMappedMarker {
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final h f50383e = new h(1);
-    private final long days;
+        /* renamed from: d  reason: collision with root package name */
+        private int f48371d;
 
-    private h(long j10) {
-        this.days = j10;
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ SerialDescriptor f48372e;
+
+        a(SerialDescriptor serialDescriptor) {
+            this.f48372e = serialDescriptor;
+            this.f48371d = serialDescriptor.d();
+        }
+
+        @Override // java.util.Iterator
+        /* renamed from: a */
+        public SerialDescriptor next() {
+            SerialDescriptor serialDescriptor = this.f48372e;
+            int d10 = serialDescriptor.d();
+            int i10 = this.f48371d;
+            this.f48371d = i10 - 1;
+            return serialDescriptor.g(d10 - i10);
+        }
+
+        @Override // java.util.Iterator
+        public boolean hasNext() {
+            if (this.f48371d > 0) {
+                return true;
+            }
+            return false;
+        }
+
+        @Override // java.util.Iterator
+        public void remove() {
+            throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+        }
     }
 
-    public static h e(long j10) {
-        if (j10 == 0) {
-            return f50382d;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b implements Iterator, KMappedMarker {
+
+        /* renamed from: d  reason: collision with root package name */
+        private int f48373d;
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ SerialDescriptor f48374e;
+
+        b(SerialDescriptor serialDescriptor) {
+            this.f48374e = serialDescriptor;
+            this.f48373d = serialDescriptor.d();
         }
-        if (j10 == 1) {
-            return f50383e;
+
+        @Override // java.util.Iterator
+        /* renamed from: a */
+        public String next() {
+            SerialDescriptor serialDescriptor = this.f48374e;
+            int d10 = serialDescriptor.d();
+            int i10 = this.f48373d;
+            this.f48373d = i10 - 1;
+            return serialDescriptor.e(d10 - i10);
         }
-        return new h(j10);
+
+        @Override // java.util.Iterator
+        public boolean hasNext() {
+            if (this.f48373d > 0) {
+                return true;
+            }
+            return false;
+        }
+
+        @Override // java.util.Iterator
+        public void remove() {
+            throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+        }
     }
 
-    @Override // java.lang.Comparable
-    /* renamed from: a */
-    public int compareTo(h hVar) {
-        long j10 = this.days;
-        long j11 = hVar.days;
-        if (j10 < j11) {
-            return -1;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class c implements Iterable, KMappedMarker {
+
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ SerialDescriptor f48375d;
+
+        public c(SerialDescriptor serialDescriptor) {
+            this.f48375d = serialDescriptor;
         }
-        if (j10 > j11) {
-            return 1;
+
+        @Override // java.lang.Iterable
+        public Iterator iterator() {
+            return new a(this.f48375d);
         }
-        return 0;
     }
 
-    public long d() {
-        return this.days;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class d implements Iterable, KMappedMarker {
+
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ SerialDescriptor f48376d;
+
+        public d(SerialDescriptor serialDescriptor) {
+            this.f48376d = serialDescriptor;
+        }
+
+        @Override // java.lang.Iterable
+        public Iterator iterator() {
+            return new b(this.f48376d);
+        }
     }
 
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if ((obj instanceof h) && this.days == ((h) obj).days) {
-            return true;
-        }
-        return false;
+    public static final Iterable a(SerialDescriptor serialDescriptor) {
+        Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
+        return new c(serialDescriptor);
     }
 
-    public int hashCode() {
-        long j10 = this.days;
-        return (int) (j10 ^ (j10 >>> 32));
-    }
-
-    public String toString() {
-        StringBuilder sb2 = new StringBuilder();
-        if (this.days < 0) {
-            sb2.append('-');
-        }
-        sb2.append('P');
-        sb2.append(Math.abs(this.days));
-        sb2.append('D');
-        return sb2.toString();
+    public static final Iterable b(SerialDescriptor serialDescriptor) {
+        Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
+        return new d(serialDescriptor);
     }
 }

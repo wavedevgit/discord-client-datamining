@@ -13,76 +13,76 @@ import sun.misc.Unsafe;
 abstract class o1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Logger f3847a = Logger.getLogger(o1.class.getName());
+    private static final Logger f3853a = Logger.getLogger(o1.class.getName());
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Unsafe f3848b = B();
+    private static final Unsafe f3854b = B();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Class f3849c = androidx.datastore.preferences.protobuf.d.b();
+    private static final Class f3855c = androidx.datastore.preferences.protobuf.d.b();
 
     /* renamed from: d  reason: collision with root package name */
-    private static final boolean f3850d = m(Long.TYPE);
+    private static final boolean f3856d = m(Long.TYPE);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final boolean f3851e = m(Integer.TYPE);
+    private static final boolean f3857e = m(Integer.TYPE);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final e f3852f = z();
+    private static final e f3858f = z();
 
     /* renamed from: g  reason: collision with root package name */
-    private static final boolean f3853g = Q();
+    private static final boolean f3859g = Q();
 
     /* renamed from: h  reason: collision with root package name */
-    private static final boolean f3854h = P();
+    private static final boolean f3860h = P();
 
     /* renamed from: i  reason: collision with root package name */
-    static final long f3855i;
+    static final long f3861i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final long f3856j;
+    private static final long f3862j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final long f3857k;
+    private static final long f3863k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final long f3858l;
+    private static final long f3864l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final long f3859m;
+    private static final long f3865m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final long f3860n;
+    private static final long f3866n;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final long f3861o;
+    private static final long f3867o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final long f3862p;
+    private static final long f3868p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final long f3863q;
+    private static final long f3869q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final long f3864r;
+    private static final long f3870r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final long f3865s;
+    private static final long f3871s;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final long f3866t;
+    private static final long f3872t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final long f3867u;
+    private static final long f3873u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final long f3868v;
+    private static final long f3874v;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final int f3869w;
+    private static final int f3875w;
 
     /* renamed from: x  reason: collision with root package name */
-    static final boolean f3870x;
+    static final boolean f3876x;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -114,12 +114,12 @@ abstract class o1 {
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public boolean c(Object obj, long j10) {
-            return o1.f3870x ? o1.q(obj, j10) : o1.r(obj, j10);
+            return o1.f3876x ? o1.q(obj, j10) : o1.r(obj, j10);
         }
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public byte d(Object obj, long j10) {
-            return o1.f3870x ? o1.t(obj, j10) : o1.u(obj, j10);
+            return o1.f3876x ? o1.t(obj, j10) : o1.u(obj, j10);
         }
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
@@ -134,7 +134,7 @@ abstract class o1 {
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public void k(Object obj, long j10, boolean z10) {
-            if (o1.f3870x) {
+            if (o1.f3876x) {
                 o1.F(obj, j10, z10);
             } else {
                 o1.G(obj, j10, z10);
@@ -143,7 +143,7 @@ abstract class o1 {
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public void l(Object obj, long j10, byte b10) {
-            if (o1.f3870x) {
+            if (o1.f3876x) {
                 o1.I(obj, j10, b10);
             } else {
                 o1.J(obj, j10, b10);
@@ -170,12 +170,12 @@ abstract class o1 {
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public boolean c(Object obj, long j10) {
-            return o1.f3870x ? o1.q(obj, j10) : o1.r(obj, j10);
+            return o1.f3876x ? o1.q(obj, j10) : o1.r(obj, j10);
         }
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public byte d(Object obj, long j10) {
-            return o1.f3870x ? o1.t(obj, j10) : o1.u(obj, j10);
+            return o1.f3876x ? o1.t(obj, j10) : o1.u(obj, j10);
         }
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
@@ -190,7 +190,7 @@ abstract class o1 {
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public void k(Object obj, long j10, boolean z10) {
-            if (o1.f3870x) {
+            if (o1.f3876x) {
                 o1.F(obj, j10, z10);
             } else {
                 o1.G(obj, j10, z10);
@@ -199,7 +199,7 @@ abstract class o1 {
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public void l(Object obj, long j10, byte b10) {
-            if (o1.f3870x) {
+            if (o1.f3876x) {
                 o1.I(obj, j10, b10);
             } else {
                 o1.J(obj, j10, b10);
@@ -226,42 +226,42 @@ abstract class o1 {
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public boolean c(Object obj, long j10) {
-            return this.f3871a.getBoolean(obj, j10);
+            return this.f3877a.getBoolean(obj, j10);
         }
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public byte d(Object obj, long j10) {
-            return this.f3871a.getByte(obj, j10);
+            return this.f3877a.getByte(obj, j10);
         }
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public double e(Object obj, long j10) {
-            return this.f3871a.getDouble(obj, j10);
+            return this.f3877a.getDouble(obj, j10);
         }
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public float f(Object obj, long j10) {
-            return this.f3871a.getFloat(obj, j10);
+            return this.f3877a.getFloat(obj, j10);
         }
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public void k(Object obj, long j10, boolean z10) {
-            this.f3871a.putBoolean(obj, j10, z10);
+            this.f3877a.putBoolean(obj, j10, z10);
         }
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public void l(Object obj, long j10, byte b10) {
-            this.f3871a.putByte(obj, j10, b10);
+            this.f3877a.putByte(obj, j10, b10);
         }
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public void m(Object obj, long j10, double d10) {
-            this.f3871a.putDouble(obj, j10, d10);
+            this.f3877a.putDouble(obj, j10, d10);
         }
 
         @Override // androidx.datastore.preferences.protobuf.o1.e
         public void n(Object obj, long j10, float f10) {
-            this.f3871a.putFloat(obj, j10, f10);
+            this.f3877a.putFloat(obj, j10, f10);
         }
     }
 
@@ -270,18 +270,18 @@ abstract class o1 {
     public static abstract class e {
 
         /* renamed from: a  reason: collision with root package name */
-        Unsafe f3871a;
+        Unsafe f3877a;
 
         e(Unsafe unsafe) {
-            this.f3871a = unsafe;
+            this.f3877a = unsafe;
         }
 
         public final int a(Class cls) {
-            return this.f3871a.arrayBaseOffset(cls);
+            return this.f3877a.arrayBaseOffset(cls);
         }
 
         public final int b(Class cls) {
-            return this.f3871a.arrayIndexScale(cls);
+            return this.f3877a.arrayIndexScale(cls);
         }
 
         public abstract boolean c(Object obj, long j10);
@@ -293,19 +293,19 @@ abstract class o1 {
         public abstract float f(Object obj, long j10);
 
         public final int g(Object obj, long j10) {
-            return this.f3871a.getInt(obj, j10);
+            return this.f3877a.getInt(obj, j10);
         }
 
         public final long h(Object obj, long j10) {
-            return this.f3871a.getLong(obj, j10);
+            return this.f3877a.getLong(obj, j10);
         }
 
         public final Object i(Object obj, long j10) {
-            return this.f3871a.getObject(obj, j10);
+            return this.f3877a.getObject(obj, j10);
         }
 
         public final long j(Field field) {
-            return this.f3871a.objectFieldOffset(field);
+            return this.f3877a.objectFieldOffset(field);
         }
 
         public abstract void k(Object obj, long j10, boolean z10);
@@ -317,47 +317,47 @@ abstract class o1 {
         public abstract void n(Object obj, long j10, float f10);
 
         public final void o(Object obj, long j10, int i10) {
-            this.f3871a.putInt(obj, j10, i10);
+            this.f3877a.putInt(obj, j10, i10);
         }
 
         public final void p(Object obj, long j10, long j11) {
-            this.f3871a.putLong(obj, j10, j11);
+            this.f3877a.putLong(obj, j10, j11);
         }
 
         public final void q(Object obj, long j10, Object obj2) {
-            this.f3871a.putObject(obj, j10, obj2);
+            this.f3877a.putObject(obj, j10, obj2);
         }
     }
 
     static {
         boolean z10;
         long j10 = j(byte[].class);
-        f3855i = j10;
-        f3856j = j(boolean[].class);
-        f3857k = k(boolean[].class);
-        f3858l = j(int[].class);
-        f3859m = k(int[].class);
-        f3860n = j(long[].class);
-        f3861o = k(long[].class);
-        f3862p = j(float[].class);
-        f3863q = k(float[].class);
-        f3864r = j(double[].class);
-        f3865s = k(double[].class);
-        f3866t = j(Object[].class);
-        f3867u = k(Object[].class);
-        f3868v = o(l());
-        f3869w = (int) (j10 & 7);
+        f3861i = j10;
+        f3862j = j(boolean[].class);
+        f3863k = k(boolean[].class);
+        f3864l = j(int[].class);
+        f3865m = k(int[].class);
+        f3866n = j(long[].class);
+        f3867o = k(long[].class);
+        f3868p = j(float[].class);
+        f3869q = k(float[].class);
+        f3870r = j(double[].class);
+        f3871s = k(double[].class);
+        f3872t = j(Object[].class);
+        f3873u = k(Object[].class);
+        f3874v = o(l());
+        f3875w = (int) (j10 & 7);
         if (ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN) {
             z10 = true;
         } else {
             z10 = false;
         }
-        f3870x = z10;
+        f3876x = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Object A(Object obj, long j10) {
-        return f3852f.i(obj, j10);
+        return f3858f.i(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -371,17 +371,17 @@ abstract class o1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean C() {
-        return f3854h;
+        return f3860h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean D() {
-        return f3853g;
+        return f3859g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void E(Object obj, long j10, boolean z10) {
-        f3852f.k(obj, j10, z10);
+        f3858f.k(obj, j10, z10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -396,7 +396,7 @@ abstract class o1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void H(byte[] bArr, long j10, byte b10) {
-        f3852f.l(bArr, f3855i + j10, b10);
+        f3858f.l(bArr, f3861i + j10, b10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -416,31 +416,31 @@ abstract class o1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void K(Object obj, long j10, double d10) {
-        f3852f.m(obj, j10, d10);
+        f3858f.m(obj, j10, d10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void L(Object obj, long j10, float f10) {
-        f3852f.n(obj, j10, f10);
+        f3858f.n(obj, j10, f10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void M(Object obj, long j10, int i10) {
-        f3852f.o(obj, j10, i10);
+        f3858f.o(obj, j10, i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void N(Object obj, long j10, long j11) {
-        f3852f.p(obj, j10, j11);
+        f3858f.p(obj, j10, j11);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void O(Object obj, long j10, Object obj2) {
-        f3852f.q(obj, j10, obj2);
+        f3858f.q(obj, j10, obj2);
     }
 
     private static boolean P() {
-        Unsafe unsafe = f3848b;
+        Unsafe unsafe = f3854b;
         if (unsafe == null) {
             return false;
         }
@@ -469,7 +469,7 @@ abstract class o1 {
             cls.getMethod("putDouble", Object.class, cls2, Double.TYPE);
             return true;
         } catch (Throwable th2) {
-            Logger logger = f3847a;
+            Logger logger = f3853a;
             Level level = Level.WARNING;
             logger.log(level, "platform method missing - proto runtime falling back to safer methods: " + th2);
             return false;
@@ -477,7 +477,7 @@ abstract class o1 {
     }
 
     private static boolean Q() {
-        Unsafe unsafe = f3848b;
+        Unsafe unsafe = f3854b;
         if (unsafe == null) {
             return false;
         }
@@ -502,7 +502,7 @@ abstract class o1 {
             cls.getMethod("copyMemory", Object.class, cls2, Object.class, cls2, cls2);
             return true;
         } catch (Throwable th2) {
-            Logger logger = f3847a;
+            Logger logger = f3853a;
             Level level = Level.WARNING;
             logger.log(level, "platform method missing - proto runtime falling back to safer methods: " + th2);
             return false;
@@ -512,22 +512,22 @@ abstract class o1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Object i(Class cls) {
         try {
-            return f3848b.allocateInstance(cls);
+            return f3854b.allocateInstance(cls);
         } catch (InstantiationException e10) {
             throw new IllegalStateException(e10);
         }
     }
 
     private static int j(Class cls) {
-        if (f3854h) {
-            return f3852f.a(cls);
+        if (f3860h) {
+            return f3858f.a(cls);
         }
         return -1;
     }
 
     private static int k(Class cls) {
-        if (f3854h) {
-            return f3852f.b(cls);
+        if (f3860h) {
+            return f3858f.b(cls);
         }
         return -1;
     }
@@ -549,7 +549,7 @@ abstract class o1 {
             return false;
         }
         try {
-            Class cls2 = f3849c;
+            Class cls2 = f3855c;
             Class cls3 = Boolean.TYPE;
             cls2.getMethod("peekLong", cls, cls3);
             cls2.getMethod("pokeLong", cls, Long.TYPE, cls3);
@@ -576,7 +576,7 @@ abstract class o1 {
 
     private static long o(Field field) {
         e eVar;
-        if (field != null && (eVar = f3852f) != null) {
+        if (field != null && (eVar = f3858f) != null) {
             return eVar.j(field);
         }
         return -1L;
@@ -584,7 +584,7 @@ abstract class o1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean p(Object obj, long j10) {
-        return f3852f.c(obj, j10);
+        return f3858f.c(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -605,7 +605,7 @@ abstract class o1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static byte s(byte[] bArr, long j10) {
-        return f3852f.d(bArr, f3855i + j10);
+        return f3858f.d(bArr, f3861i + j10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -620,34 +620,34 @@ abstract class o1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static double v(Object obj, long j10) {
-        return f3852f.e(obj, j10);
+        return f3858f.e(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static float w(Object obj, long j10) {
-        return f3852f.f(obj, j10);
+        return f3858f.f(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int x(Object obj, long j10) {
-        return f3852f.g(obj, j10);
+        return f3858f.g(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static long y(Object obj, long j10) {
-        return f3852f.h(obj, j10);
+        return f3858f.h(obj, j10);
     }
 
     private static e z() {
-        Unsafe unsafe = f3848b;
+        Unsafe unsafe = f3854b;
         if (unsafe == null) {
             return null;
         }
         if (androidx.datastore.preferences.protobuf.d.c()) {
-            if (f3850d) {
+            if (f3856d) {
                 return new c(unsafe);
             }
-            if (!f3851e) {
+            if (!f3857e) {
                 return null;
             }
             return new b(unsafe);

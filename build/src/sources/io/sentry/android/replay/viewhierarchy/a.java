@@ -1,6 +1,7 @@
 package io.sentry.android.replay.viewhierarchy;
 
 import android.view.View;
+import as.l;
 import io.sentry.k7;
 import java.lang.reflect.Method;
 import kotlin.Lazy;
@@ -8,27 +9,26 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.text.StringsKt;
-import rr.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f28107a = new a();
+    public static final a f29042a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f28108b = l.a(C0422a.f28110d);
+    private static final Lazy f29043b = l.b(C0397a.f29045d);
 
     /* renamed from: c  reason: collision with root package name */
-    public static final int f28109c = 8;
+    public static final int f29044c = 8;
 
     /* renamed from: io.sentry.android.replay.viewhierarchy.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class C0422a extends Lambda implements Function0 {
+    static final class C0397a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0422a f28110d = new C0422a();
+        public static final C0397a f29045d = new C0397a();
 
-        C0422a() {
+        C0397a() {
             super(0);
         }
 

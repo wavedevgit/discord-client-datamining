@@ -21,43 +21,43 @@ import kotlin.jvm.internal.Intrinsics;
 public final class o implements w0 {
 
     /* renamed from: m  reason: collision with root package name */
-    public static final a f10886m = new a(null);
+    public static final a f11463m = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final s8.a f10887a;
+    private final s8.a f11464a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Executor f10888b;
+    private final Executor f11465b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ra.c f10889c;
+    private final ra.c f11466c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ra.e f10890d;
+    private final ra.e f11467d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final DownsampleMode f10891e;
+    private final DownsampleMode f11468e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f10892f;
+    private final boolean f11469f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f10893g;
+    private final boolean f11470g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final w0 f10894h;
+    private final w0 f11471h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f10895i;
+    private final int f11472i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final oa.a f10896j;
+    private final oa.a f11473j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Runnable f10897k;
+    private final Runnable f11474k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Supplier f10898l;
+    private final Supplier f11475l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -67,7 +67,7 @@ public final class o implements w0 {
 
         /* JADX INFO: Access modifiers changed from: private */
         public final boolean b(ta.k kVar, ImageDecodeOptions imageDecodeOptions) {
-            if (kVar.getWidth() * kVar.getHeight() * db.d.h(imageDecodeOptions.f10474h) > 104857600) {
+            if (kVar.getWidth() * kVar.getHeight() * db.d.h(imageDecodeOptions.f11051h) > 104857600) {
                 return true;
             }
             return false;
@@ -81,14 +81,14 @@ public final class o implements w0 {
     private final class b extends d {
 
         /* renamed from: k  reason: collision with root package name */
-        final /* synthetic */ o f10899k;
+        final /* synthetic */ o f11476k;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(o oVar, Consumer consumer, ProducerContext producerContext, boolean z10, int i10) {
             super(oVar, consumer, producerContext, z10, i10);
             Intrinsics.checkNotNullParameter(consumer, "consumer");
             Intrinsics.checkNotNullParameter(producerContext, "producerContext");
-            this.f10899k = oVar;
+            this.f11476k = oVar;
         }
 
         @Override // com.facebook.imagepipeline.producers.o.d
@@ -120,13 +120,13 @@ public final class o implements w0 {
     private final class c extends d {
 
         /* renamed from: k  reason: collision with root package name */
-        private final ra.f f10900k;
+        private final ra.f f11477k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final ra.e f10901l;
+        private final ra.e f11478l;
 
         /* renamed from: m  reason: collision with root package name */
-        final /* synthetic */ o f10902m;
+        final /* synthetic */ o f11479m;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(o oVar, Consumer consumer, ProducerContext producerContext, ra.f progressiveJpegParser, ra.e progressiveJpegConfig, boolean z10, int i10) {
@@ -135,9 +135,9 @@ public final class o implements w0 {
             Intrinsics.checkNotNullParameter(producerContext, "producerContext");
             Intrinsics.checkNotNullParameter(progressiveJpegParser, "progressiveJpegParser");
             Intrinsics.checkNotNullParameter(progressiveJpegConfig, "progressiveJpegConfig");
-            this.f10902m = oVar;
-            this.f10900k = progressiveJpegParser;
-            this.f10901l = progressiveJpegConfig;
+            this.f11479m = oVar;
+            this.f11477k = progressiveJpegParser;
+            this.f11478l = progressiveJpegConfig;
             H(0);
         }
 
@@ -153,15 +153,15 @@ public final class o implements w0 {
                     }
                     return I;
                 }
-                if (!com.facebook.imagepipeline.producers.c.m(i10, 4) && ta.k.O0(kVar) && kVar.z() == ga.b.f24082b) {
-                    if (!this.f10900k.g(kVar)) {
+                if (!com.facebook.imagepipeline.producers.c.m(i10, 4) && ta.k.H0(kVar) && kVar.z() == ga.b.f25382b) {
+                    if (!this.f11477k.g(kVar)) {
                         return false;
                     }
-                    int d10 = this.f10900k.d();
+                    int d10 = this.f11477k.d();
                     if (d10 <= x()) {
                         return false;
                     }
-                    if (d10 < this.f10901l.a(x()) && !this.f10900k.e()) {
+                    if (d10 < this.f11478l.a(x()) && !this.f11477k.e()) {
                         return false;
                     }
                     H(d10);
@@ -175,12 +175,12 @@ public final class o implements w0 {
         @Override // com.facebook.imagepipeline.producers.o.d
         protected int w(ta.k encodedImage) {
             Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
-            return this.f10900k.c();
+            return this.f11477k.c();
         }
 
         @Override // com.facebook.imagepipeline.producers.o.d
         protected ta.o y() {
-            ta.o b10 = this.f10901l.b(this.f10900k.d());
+            ta.o b10 = this.f11478l.b(this.f11477k.d());
             Intrinsics.checkNotNullExpressionValue(b10, "getQualityInfo(...)");
             return b10;
         }
@@ -191,49 +191,49 @@ public final class o implements w0 {
     public abstract class d extends s {
 
         /* renamed from: c  reason: collision with root package name */
-        private final ProducerContext f10903c;
+        private final ProducerContext f11480c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f10904d;
+        private final String f11481d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final y0 f10905e;
+        private final y0 f11482e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final ImageDecodeOptions f10906f;
+        private final ImageDecodeOptions f11483f;
 
         /* renamed from: g  reason: collision with root package name */
-        private boolean f10907g;
+        private boolean f11484g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final e0 f10908h;
+        private final e0 f11485h;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f10909i;
+        private int f11486i;
 
         /* renamed from: j  reason: collision with root package name */
-        final /* synthetic */ o f10910j;
+        final /* synthetic */ o f11487j;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public static final class a extends f {
 
             /* renamed from: b  reason: collision with root package name */
-            final /* synthetic */ boolean f10912b;
+            final /* synthetic */ boolean f11489b;
 
             a(boolean z10) {
-                this.f10912b = z10;
+                this.f11489b = z10;
             }
 
             @Override // com.facebook.imagepipeline.producers.f, com.facebook.imagepipeline.producers.x0
             public void a() {
-                if (d.this.f10903c.z()) {
-                    d.this.f10908h.h();
+                if (d.this.f11480c.z()) {
+                    d.this.f11485h.h();
                 }
             }
 
             @Override // com.facebook.imagepipeline.producers.x0
             public void b() {
-                if (this.f10912b) {
+                if (this.f11489b) {
                     d.this.z();
                 }
             }
@@ -244,20 +244,20 @@ public final class o implements w0 {
             super(consumer);
             Intrinsics.checkNotNullParameter(consumer, "consumer");
             Intrinsics.checkNotNullParameter(producerContext, "producerContext");
-            this.f10910j = oVar;
-            this.f10903c = producerContext;
-            this.f10904d = "ProgressiveDecoder";
-            this.f10905e = producerContext.y();
+            this.f11487j = oVar;
+            this.f11480c = producerContext;
+            this.f11481d = "ProgressiveDecoder";
+            this.f11482e = producerContext.y();
             ImageDecodeOptions imageDecodeOptions = producerContext.I().getImageDecodeOptions();
             Intrinsics.checkNotNullExpressionValue(imageDecodeOptions, "getImageDecodeOptions(...)");
-            this.f10906f = imageDecodeOptions;
-            this.f10908h = new e0(oVar.f(), new e0.d() { // from class: com.facebook.imagepipeline.producers.p
+            this.f11483f = imageDecodeOptions;
+            this.f11485h = new e0(oVar.f(), new e0.d() { // from class: com.facebook.imagepipeline.producers.p
                 @Override // com.facebook.imagepipeline.producers.e0.d
                 public final void a(ta.k kVar, int i11) {
                     o.d.q(o.d.this, oVar, i10, kVar, i11);
                 }
-            }, imageDecodeOptions.f10467a);
-            producerContext.g(new a(z10));
+            }, imageDecodeOptions.f11044a);
+            producerContext.h(new a(z10));
         }
 
         private final void A(Throwable th2) {
@@ -266,7 +266,7 @@ public final class o implements w0 {
         }
 
         private final void B(ta.e eVar, int i10) {
-            CloseableReference b10 = this.f10910j.c().b(eVar);
+            CloseableReference b10 = this.f11487j.c().b(eVar);
             try {
                 D(com.facebook.imagepipeline.producers.c.d(i10));
                 o().b(b10, i10);
@@ -277,21 +277,21 @@ public final class o implements w0 {
 
         private final ta.e C(ta.k kVar, int i10, ta.o oVar) {
             boolean z10;
-            if (this.f10910j.h() != null && ((Boolean) this.f10910j.i().get()).booleanValue()) {
+            if (this.f11487j.h() != null && ((Boolean) this.f11487j.i().get()).booleanValue()) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             try {
-                return this.f10910j.g().a(kVar, i10, oVar, this.f10906f);
+                return this.f11487j.g().a(kVar, i10, oVar, this.f11483f);
             } catch (OutOfMemoryError e10) {
                 if (z10) {
-                    Runnable h10 = this.f10910j.h();
+                    Runnable h10 = this.f11487j.h();
                     if (h10 != null) {
                         h10.run();
                     }
                     System.gc();
-                    return this.f10910j.g().a(kVar, i10, oVar, this.f10906f);
+                    return this.f11487j.g().a(kVar, i10, oVar, this.f11483f);
                 }
                 throw e10;
             }
@@ -300,35 +300,35 @@ public final class o implements w0 {
         private final void D(boolean z10) {
             synchronized (this) {
                 if (z10) {
-                    if (!this.f10907g) {
+                    if (!this.f11484g) {
                         o().c(1.0f);
-                        this.f10907g = true;
-                        Unit unit = Unit.f31765a;
-                        this.f10908h.c();
+                        this.f11484g = true;
+                        Unit unit = Unit.f31987a;
+                        this.f11485h.c();
                     }
                 }
             }
         }
 
         private final void E(ta.k kVar) {
-            if (kVar.z() != ga.b.f24082b) {
+            if (kVar.z() != ga.b.f25382b) {
                 return;
             }
-            kVar.S1(ab.a.c(kVar, db.d.h(this.f10906f.f10474h), 104857600));
+            kVar.w1(ab.a.c(kVar, db.d.h(this.f11483f.f11051h), 104857600));
         }
 
         private final void G(ta.k kVar, ta.e eVar, int i10) {
-            this.f10903c.p("encoded_width", Integer.valueOf(kVar.getWidth()));
-            this.f10903c.p("encoded_height", Integer.valueOf(kVar.getHeight()));
-            this.f10903c.p("encoded_size", Integer.valueOf(kVar.Q()));
-            this.f10903c.p("image_color_space", kVar.s());
+            this.f11480c.p("encoded_width", Integer.valueOf(kVar.getWidth()));
+            this.f11480c.p("encoded_height", Integer.valueOf(kVar.getHeight()));
+            this.f11480c.p("encoded_size", Integer.valueOf(kVar.Q()));
+            this.f11480c.p("image_color_space", kVar.s());
             if (eVar instanceof ta.d) {
-                this.f10903c.p("bitmap_config", String.valueOf(((ta.d) eVar).L1().getConfig()));
+                this.f11480c.p("bitmap_config", String.valueOf(((ta.d) eVar).Q1().getConfig()));
             }
             if (eVar != null) {
-                eVar.J(this.f10903c.getExtras());
+                eVar.J(this.f11480c.getExtras());
             }
-            this.f10903c.p("last_scan_num", Integer.valueOf(i10));
+            this.f11480c.p("last_scan_num", Integer.valueOf(i10));
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -337,29 +337,29 @@ public final class o implements w0 {
             Intrinsics.checkNotNullParameter(this$0, "this$0");
             Intrinsics.checkNotNullParameter(this$1, "this$1");
             if (kVar != null) {
-                ImageRequest I = this$0.f10903c.I();
-                this$0.f10903c.p("image_format", kVar.z().a());
+                ImageRequest I = this$0.f11480c.I();
+                this$0.f11480c.p("image_format", kVar.z().a());
                 Uri sourceUri = I.getSourceUri();
                 if (sourceUri != null) {
                     str = sourceUri.toString();
                 } else {
                     str = null;
                 }
-                kVar.U1(str);
+                kVar.x1(str);
                 DownsampleMode downsampleOverride = I.getDownsampleOverride();
                 if (downsampleOverride == null) {
                     downsampleOverride = this$1.e();
                 }
                 boolean m10 = com.facebook.imagepipeline.producers.c.m(i11, 16);
-                if ((downsampleOverride == DownsampleMode.f10502d || (downsampleOverride == DownsampleMode.f10503e && !m10)) && (this$1.d() || !x8.f.p(I.getSourceUri()))) {
+                if ((downsampleOverride == DownsampleMode.f11079d || (downsampleOverride == DownsampleMode.f11080e && !m10)) && (this$1.d() || !x8.f.p(I.getSourceUri()))) {
                     RotationOptions rotationOptions = I.getRotationOptions();
                     Intrinsics.checkNotNullExpressionValue(rotationOptions, "getRotationOptions(...)");
-                    kVar.S1(ab.a.b(rotationOptions, I.getResizeOptions(), kVar, i10));
+                    kVar.w1(ab.a.b(rotationOptions, I.getResizeOptions(), kVar, i10));
                 }
-                if (this$0.f10903c.k().G().i()) {
+                if (this$0.f11480c.i().G().i()) {
                     this$0.E(kVar);
                 }
-                this$0.u(kVar, i11, this$0.f10909i);
+                this$0.u(kVar, i11, this$0.f11486i);
             }
         }
 
@@ -380,7 +380,7 @@ public final class o implements w0 {
             Map extras;
             Object obj;
             String str5 = null;
-            if (!this.f10905e.f(this.f10903c, "DecodeProducer")) {
+            if (!this.f11482e.f(this.f11480c, "DecodeProducer")) {
                 return null;
             }
             String valueOf = String.valueOf(j10);
@@ -391,9 +391,9 @@ public final class o implements w0 {
             }
             if (eVar instanceof ta.f) {
                 String str6 = str5;
-                Bitmap L1 = ((ta.f) eVar).L1();
-                Intrinsics.checkNotNullExpressionValue(L1, "getUnderlyingBitmap(...)");
-                String str7 = L1.getWidth() + "x" + L1.getHeight();
+                Bitmap Q1 = ((ta.f) eVar).Q1();
+                Intrinsics.checkNotNullExpressionValue(Q1, "getUnderlyingBitmap(...)");
+                String str7 = Q1.getWidth() + "x" + Q1.getHeight();
                 HashMap hashMap = new HashMap(8);
                 hashMap.put("bitmapSize", str7);
                 hashMap.put("queueTime", valueOf);
@@ -403,7 +403,7 @@ public final class o implements w0 {
                 hashMap.put("imageFormat", str);
                 hashMap.put("requestedImageSize", str3);
                 hashMap.put("sampleSize", str4);
-                int byteCount = L1.getByteCount();
+                int byteCount = Q1.getByteCount();
                 StringBuilder sb2 = new StringBuilder();
                 sb2.append(byteCount);
                 hashMap.put("byteCount", sb2.toString());
@@ -440,22 +440,22 @@ public final class o implements w0 {
                 boolean d10 = com.facebook.imagepipeline.producers.c.d(i10);
                 if (d10) {
                     if (kVar == null) {
-                        boolean areEqual = Intrinsics.areEqual(this.f10903c.Z("cached_value_found"), Boolean.TRUE);
-                        if (!this.f10903c.k().G().h() || this.f10903c.C0() == ImageRequest.RequestLevel.FULL_FETCH || areEqual) {
+                        boolean areEqual = Intrinsics.areEqual(this.f11480c.Z("cached_value_found"), Boolean.TRUE);
+                        if (!this.f11480c.i().G().h() || this.f11480c.z0() == ImageRequest.RequestLevel.FULL_FETCH || areEqual) {
                             A(new x8.a("Encoded image is null."));
                             return;
                         }
-                    } else if (!kVar.J0()) {
+                    } else if (!kVar.G0()) {
                         A(new x8.a("Encoded image is not valid."));
                         return;
                     }
                 }
                 if (I(kVar, i10)) {
                     boolean m10 = com.facebook.imagepipeline.producers.c.m(i10, 4);
-                    if (!d10 && !m10 && !this.f10903c.z()) {
+                    if (!d10 && !m10 && !this.f11480c.z()) {
                         return;
                     }
-                    this.f10908h.h();
+                    this.f11485h.h();
                     return;
                 }
                 return;
@@ -465,9 +465,9 @@ public final class o implements w0 {
                 boolean d11 = com.facebook.imagepipeline.producers.c.d(i10);
                 if (d11) {
                     if (kVar == null) {
-                        boolean areEqual2 = Intrinsics.areEqual(this.f10903c.Z("cached_value_found"), Boolean.TRUE);
-                        if (this.f10903c.k().G().h()) {
-                            if (this.f10903c.C0() != ImageRequest.RequestLevel.FULL_FETCH) {
+                        boolean areEqual2 = Intrinsics.areEqual(this.f11480c.Z("cached_value_found"), Boolean.TRUE);
+                        if (this.f11480c.i().G().h()) {
+                            if (this.f11480c.z0() != ImageRequest.RequestLevel.FULL_FETCH) {
                                 if (areEqual2) {
                                 }
                             }
@@ -475,7 +475,7 @@ public final class o implements w0 {
                         A(new x8.a("Encoded image is null."));
                         za.b.b();
                         return;
-                    } else if (!kVar.J0()) {
+                    } else if (!kVar.G0()) {
                         A(new x8.a("Encoded image is not valid."));
                         za.b.b();
                         return;
@@ -486,10 +486,10 @@ public final class o implements w0 {
                     return;
                 }
                 boolean m11 = com.facebook.imagepipeline.producers.c.m(i10, 4);
-                if (d11 || m11 || this.f10903c.z()) {
-                    this.f10908h.h();
+                if (d11 || m11 || this.f11480c.z()) {
+                    this.f11485h.h();
                 }
-                Unit unit = Unit.f31765a;
+                Unit unit = Unit.f31987a;
                 za.b.b();
             } catch (Throwable th2) {
                 za.b.b();
@@ -498,11 +498,11 @@ public final class o implements w0 {
         }
 
         protected final void H(int i10) {
-            this.f10909i = i10;
+            this.f11486i = i10;
         }
 
         protected boolean I(ta.k kVar, int i10) {
-            return this.f10908h.k(kVar, i10);
+            return this.f11485h.k(kVar, i10);
         }
 
         @Override // com.facebook.imagepipeline.producers.s, com.facebook.imagepipeline.producers.c
@@ -525,7 +525,7 @@ public final class o implements w0 {
         protected abstract int w(ta.k kVar);
 
         protected final int x() {
-            return this.f10909i;
+            return this.f11486i;
         }
 
         protected abstract ta.o y();
@@ -540,18 +540,18 @@ public final class o implements w0 {
         Intrinsics.checkNotNullParameter(inputProducer, "inputProducer");
         Intrinsics.checkNotNullParameter(closeableReferenceFactory, "closeableReferenceFactory");
         Intrinsics.checkNotNullParameter(recoverFromDecoderOOM, "recoverFromDecoderOOM");
-        this.f10887a = byteArrayPool;
-        this.f10888b = executor;
-        this.f10889c = imageDecoder;
-        this.f10890d = progressiveJpegConfig;
-        this.f10891e = downsampleMode;
-        this.f10892f = z10;
-        this.f10893g = z11;
-        this.f10894h = inputProducer;
-        this.f10895i = i10;
-        this.f10896j = closeableReferenceFactory;
-        this.f10897k = runnable;
-        this.f10898l = recoverFromDecoderOOM;
+        this.f11464a = byteArrayPool;
+        this.f11465b = executor;
+        this.f11466c = imageDecoder;
+        this.f11467d = progressiveJpegConfig;
+        this.f11468e = downsampleMode;
+        this.f11469f = z10;
+        this.f11470g = z11;
+        this.f11471h = inputProducer;
+        this.f11472i = i10;
+        this.f11473j = closeableReferenceFactory;
+        this.f11474k = runnable;
+        this.f11475l = recoverFromDecoderOOM;
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -565,27 +565,27 @@ public final class o implements w0 {
         if (!za.b.d()) {
             ImageRequest I = context.I();
             if (!x8.f.p(I.getSourceUri()) && !ImageRequestBuilder.s(I.getSourceUri())) {
-                cVar2 = new b(this, consumer, context, this.f10893g, this.f10895i);
+                cVar2 = new b(this, consumer, context, this.f11470g, this.f11472i);
                 oVar = this;
                 producerContext = context;
             } else {
                 oVar = this;
                 producerContext = context;
-                cVar2 = new c(oVar, consumer, producerContext, new ra.f(oVar.f10887a), oVar.f10890d, oVar.f10893g, oVar.f10895i);
+                cVar2 = new c(oVar, consumer, producerContext, new ra.f(oVar.f11464a), oVar.f11467d, oVar.f11470g, oVar.f11472i);
             }
-            oVar.f10894h.b(cVar2, producerContext);
+            oVar.f11471h.b(cVar2, producerContext);
             return;
         }
         za.b.a("DecodeProducer#produceResults");
         try {
             ImageRequest I2 = context.I();
             if (!x8.f.p(I2.getSourceUri()) && !ImageRequestBuilder.s(I2.getSourceUri())) {
-                cVar = new b(this, consumer, context, this.f10893g, this.f10895i);
+                cVar = new b(this, consumer, context, this.f11470g, this.f11472i);
             } else {
-                cVar = new c(this, consumer, context, new ra.f(this.f10887a), this.f10890d, this.f10893g, this.f10895i);
+                cVar = new c(this, consumer, context, new ra.f(this.f11464a), this.f11467d, this.f11470g, this.f11472i);
             }
-            this.f10894h.b(cVar, context);
-            Unit unit = Unit.f31765a;
+            this.f11471h.b(cVar, context);
+            Unit unit = Unit.f31987a;
             za.b.b();
         } catch (Throwable th2) {
             za.b.b();
@@ -594,30 +594,30 @@ public final class o implements w0 {
     }
 
     public final oa.a c() {
-        return this.f10896j;
+        return this.f11473j;
     }
 
     public final boolean d() {
-        return this.f10892f;
+        return this.f11469f;
     }
 
     public final DownsampleMode e() {
-        return this.f10891e;
+        return this.f11468e;
     }
 
     public final Executor f() {
-        return this.f10888b;
+        return this.f11465b;
     }
 
     public final ra.c g() {
-        return this.f10889c;
+        return this.f11466c;
     }
 
     public final Runnable h() {
-        return this.f10897k;
+        return this.f11474k;
     }
 
     public final Supplier i() {
-        return this.f10898l;
+        return this.f11475l;
     }
 }

@@ -15,7 +15,7 @@ interface g3 {
 
     void g(Object obj, o4 o4Var);
 
-    boolean h(Object obj);
+    Object h();
 
-    Object k();
+    boolean i(Object obj);
 }

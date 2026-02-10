@@ -5,6 +5,7 @@ import androidx.lifecycle.LifecycleOwner;
 import app.rive.core.CommandQueue;
 import app.rive.core.FrameTicker;
 import app.rive.core.FrameTickerKt;
+import gs.b;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.c;
@@ -14,7 +15,6 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
 import org.jetbrains.annotations.NotNull;
-import xr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @e(c = "app.rive.RememberCommandQueueKt$rememberCommandQueueOrNull$1", f = "rememberCommandQueue.kt", l = {86}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -51,7 +51,7 @@ final class RememberCommandQueueKt$rememberCommandQueueOrNull$1 extends k implem
             c.b(obj);
             CommandQueue commandQueue = this.$commandQueue;
             if (commandQueue == null) {
-                return Unit.f31765a;
+                return Unit.f31987a;
             }
             Lifecycle lifecycle = this.$lifecycleOwner.getLifecycle();
             FrameTicker composeFrameTicker = FrameTickerKt.getComposeFrameTicker();
@@ -60,11 +60,11 @@ final class RememberCommandQueueKt$rememberCommandQueueOrNull$1 extends k implem
                 return f10;
             }
         }
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RememberCommandQueueKt$rememberCommandQueueOrNull$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
+        return ((RememberCommandQueueKt$rememberCommandQueueOrNull$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
     }
 }

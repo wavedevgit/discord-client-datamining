@@ -7,26 +7,26 @@ public final class yg extends jf.a {
     public static final Parcelable.Creator<yg> CREATOR = new h();
 
     /* renamed from: d  reason: collision with root package name */
-    public String f41688d;
+    public String f40014d;
 
     /* renamed from: e  reason: collision with root package name */
-    public String f41689e;
+    public String f40015e;
 
     /* renamed from: i  reason: collision with root package name */
-    public int f41690i;
+    public int f40016i;
 
     public yg(String str, String str2, int i10) {
-        this.f41688d = str;
-        this.f41689e = str2;
-        this.f41690i = i10;
+        this.f40014d = str;
+        this.f40015e = str2;
+        this.f40016i = i10;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = jf.c.a(parcel);
-        jf.c.s(parcel, 2, this.f41688d, false);
-        jf.c.s(parcel, 3, this.f41689e, false);
-        jf.c.l(parcel, 4, this.f41690i);
+        jf.c.s(parcel, 2, this.f40014d, false);
+        jf.c.s(parcel, 3, this.f40015e, false);
+        jf.c.l(parcel, 4, this.f40016i);
         jf.c.b(parcel, a10);
     }
 }

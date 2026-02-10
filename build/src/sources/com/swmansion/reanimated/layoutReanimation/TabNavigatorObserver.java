@@ -177,7 +177,7 @@ public class TabNavigatorObserver {
             int id2 = fragment.getId();
             if (!this.mFragmentsWithListenerRegistry.contains(Integer.valueOf(id2))) {
                 this.mFragmentsWithListenerRegistry.add(Integer.valueOf(id2));
-                fragment.getParentFragmentManager().l1(new FragmentLifecycleCallbacks(fragment), true);
+                fragment.getParentFragmentManager().n1(new FragmentLifecycleCallbacks(fragment), true);
             }
         } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException e10) {
             if (e10.getMessage() != null) {

@@ -11,7 +11,7 @@ import mc.x;
 import oe.c0;
 import oe.w0;
 import oe.y;
-import oi.s;
+import qi.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class n extends com.google.android.exoplayer2.f implements Handler.Callback {
     private final Handler A;
@@ -49,7 +49,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
             }
             return this.L.e(a10 - 1);
         }
-        return this.L.f47783e;
+        return this.L.f46237e;
     }
 
     private long c0() {
@@ -91,7 +91,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
     }
 
     private void g0(CueGroup cueGroup) {
-        this.B.onCues(cueGroup.f13078d);
+        this.B.onCues(cueGroup.f13655d);
         this.B.onCues(cueGroup);
     }
 
@@ -177,7 +177,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                 i10 = 2;
             }
             return w1.b(i10);
-        } else if (c0.r(format.f11727w)) {
+        } else if (c0.r(format.f12304w)) {
             return w1.b(1);
         } else {
             return w1.b(0);
@@ -257,7 +257,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                                 this.F = true;
                             }
                         }
-                    } else if (lVar.f47783e <= j10) {
+                    } else if (lVar.f46237e <= j10) {
                         l lVar2 = this.L;
                         if (lVar2 != null) {
                             lVar2.t();
@@ -297,7 +297,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                                     this.E = true;
                                     this.G = false;
                                 } else {
-                                    Format format = this.D.f36907b;
+                                    Format format = this.D.f36282b;
                                     if (format != null) {
                                         kVar.f749t = format.A;
                                         kVar.v();

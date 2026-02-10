@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/quests/native/VideoQuestModal/hooks/useVideoExternallyPaused.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun84581: for (var _fun84581_ip = 0;;) switch (_fun84581_ip) {
+        _fun84637: for (var _fun84637_ip = 0;;) switch (_fun84637_ip) {
             case 0:
                 var3 = arg1;
                 var7 = _closure1_slot0;
@@ -83,38 +83,38 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var6.isIOS;
                 var0 = var0.bind(var6)();
                 if (!var0) {
-                    _fun84581_ip = 203;
-                    continue _fun84581
+                    _fun84637_ip = 203;
+                    continue _fun84637
                 }
             case 200:
                 var0 = var3;
             case 203:
                 if (var0) {
-                    _fun84581_ip = 212;
-                    continue _fun84581
+                    _fun84637_ip = 212;
+                    continue _fun84637
                 }
             case 206:
                 var3 = null;
                 var0 = var3 != var5;
             case 212:
                 if (var0) {
-                    _fun84581_ip = 221;
-                    continue _fun84581
+                    _fun84637_ip = 221;
+                    continue _fun84637
                 }
             case 215:
                 var3 = null;
                 var0 = var3 != var4;
             case 221:
                 if (var0) {
-                    _fun84581_ip = 227;
-                    continue _fun84581
+                    _fun84637_ip = 227;
+                    continue _fun84637
                 }
             case 224:
                 var0 = var2;
             case 227:
                 if (var0) {
-                    _fun84581_ip = 233;
-                    continue _fun84581
+                    _fun84637_ip = 233;
+                    continue _fun84637
                 }
             case 230:
                 var0 = var1;
@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useVideoExternallyPaused = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3142, 5270, 3920, 5369, 566, 4028, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3142, 5280, 3920, 5379, 566, 4028, 478, 2]);

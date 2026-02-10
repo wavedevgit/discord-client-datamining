@@ -1,5 +1,6 @@
 package kotlin.reflect.jvm.internal.impl.descriptors.impl;
 
+import as.l;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -29,43 +30,42 @@ import kotlin.reflect.jvm.internal.impl.platform.TargetPlatform;
 import kotlin.reflect.jvm.internal.impl.storage.MemoizedFunctionToNotNull;
 import kotlin.reflect.jvm.internal.impl.storage.StorageManager;
 import org.jetbrains.annotations.NotNull;
-import rr.l;
 @SourceDebugExtension({"SMAP\nModuleDescriptorImpl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ModuleDescriptorImpl.kt\norg/jetbrains/kotlin/descriptors/impl/ModuleDescriptorImpl\n+ 2 coreLib.kt\norg/jetbrains/kotlin/utils/CoreLibKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,180:1\n19#2:181\n19#2:185\n19#2:186\n19#2:188\n774#3:182\n865#3,2:183\n1869#3,2:189\n1563#3:191\n1634#3,3:192\n1#4:187\n*S KotlinDebug\n*F\n+ 1 ModuleDescriptorImpl.kt\norg/jetbrains/kotlin/descriptors/impl/ModuleDescriptorImpl\n*L\n72#1:181\n75#1:185\n78#1:186\n91#1:188\n72#1:182\n72#1:183,2\n95#1:189,2\n101#1:191\n101#1:192,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class ModuleDescriptorImpl extends DeclarationDescriptorImpl implements ModuleDescriptor {
 
     /* renamed from: i  reason: collision with root package name */
-    private final StorageManager f32271i;
+    private final StorageManager f32493i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final KotlinBuiltIns f32272o;
+    private final KotlinBuiltIns f32494o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final TargetPlatform f32273p;
+    private final TargetPlatform f32495p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Name f32274q;
+    private final Name f32496q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Map f32275r;
+    private final Map f32497r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final PackageViewDescriptorFactory f32276s;
+    private final PackageViewDescriptorFactory f32498s;
 
     /* renamed from: t  reason: collision with root package name */
-    private ModuleDependencies f32277t;
+    private ModuleDependencies f32499t;
 
     /* renamed from: u  reason: collision with root package name */
-    private PackageFragmentProvider f32278u;
+    private PackageFragmentProvider f32500u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f32279v;
+    private boolean f32501v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final MemoizedFunctionToNotNull f32280w;
+    private final MemoizedFunctionToNotNull f32502w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final Lazy f32281x;
+    private final Lazy f32503x;
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ModuleDescriptorImpl(@NotNull Name moduleName, @NotNull StorageManager storageManager, @NotNull KotlinBuiltIns builtIns, TargetPlatform targetPlatform) {
@@ -82,12 +82,12 @@ public final class ModuleDescriptorImpl extends DeclarationDescriptorImpl implem
     }
 
     private final CompositePackageFragmentProvider e() {
-        return (CompositePackageFragmentProvider) this.f32281x.getValue();
+        return (CompositePackageFragmentProvider) this.f32503x.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final CompositePackageFragmentProvider f(ModuleDescriptorImpl moduleDescriptorImpl) {
-        ModuleDependencies moduleDependencies = moduleDescriptorImpl.f32277t;
+        ModuleDependencies moduleDependencies = moduleDescriptorImpl.f32499t;
         if (moduleDependencies != null) {
             List<ModuleDescriptorImpl> allDependencies = moduleDependencies.getAllDependencies();
             moduleDescriptorImpl.assertValid();
@@ -98,7 +98,7 @@ public final class ModuleDescriptorImpl extends DeclarationDescriptorImpl implem
             }
             ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
             for (ModuleDescriptorImpl moduleDescriptorImpl3 : list) {
-                PackageFragmentProvider packageFragmentProvider = moduleDescriptorImpl3.f32278u;
+                PackageFragmentProvider packageFragmentProvider = moduleDescriptorImpl3.f32500u;
                 Intrinsics.checkNotNull(packageFragmentProvider);
                 arrayList.add(packageFragmentProvider);
             }
@@ -110,11 +110,11 @@ public final class ModuleDescriptorImpl extends DeclarationDescriptorImpl implem
     /* JADX INFO: Access modifiers changed from: private */
     public static final PackageViewDescriptor g(ModuleDescriptorImpl moduleDescriptorImpl, FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        return moduleDescriptorImpl.f32276s.compute(moduleDescriptorImpl, fqName, moduleDescriptorImpl.f32271i);
+        return moduleDescriptorImpl.f32498s.compute(moduleDescriptorImpl, fqName, moduleDescriptorImpl.f32493i);
     }
 
     private final boolean isInitialized() {
-        if (this.f32278u != null) {
+        if (this.f32500u != null) {
             return true;
         }
         return false;
@@ -134,13 +134,13 @@ public final class ModuleDescriptorImpl extends DeclarationDescriptorImpl implem
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor
     @NotNull
     public KotlinBuiltIns getBuiltIns() {
-        return this.f32272o;
+        return this.f32494o;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor
     public <T> T getCapability(@NotNull ModuleCapability<T> capability) {
         Intrinsics.checkNotNullParameter(capability, "capability");
-        T t10 = (T) this.f32275r.get(capability);
+        T t10 = (T) this.f32497r.get(capability);
         if (t10 == null) {
             return null;
         }
@@ -155,7 +155,7 @@ public final class ModuleDescriptorImpl extends DeclarationDescriptorImpl implem
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor
     @NotNull
     public List<ModuleDescriptor> getExpectedByModules() {
-        ModuleDependencies moduleDependencies = this.f32277t;
+        ModuleDependencies moduleDependencies = this.f32499t;
         if (moduleDependencies != null) {
             return moduleDependencies.getDirectExpectedByDependencies();
         }
@@ -167,7 +167,7 @@ public final class ModuleDescriptorImpl extends DeclarationDescriptorImpl implem
     public PackageViewDescriptor getPackage(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
         assertValid();
-        return (PackageViewDescriptor) this.f32280w.invoke(fqName);
+        return (PackageViewDescriptor) this.f32502w.invoke(fqName);
     }
 
     @NotNull
@@ -188,16 +188,16 @@ public final class ModuleDescriptorImpl extends DeclarationDescriptorImpl implem
     public final void initialize(@NotNull PackageFragmentProvider providerForModuleContent) {
         Intrinsics.checkNotNullParameter(providerForModuleContent, "providerForModuleContent");
         isInitialized();
-        this.f32278u = providerForModuleContent;
+        this.f32500u = providerForModuleContent;
     }
 
     public boolean isValid() {
-        return this.f32279v;
+        return this.f32501v;
     }
 
     public final void setDependencies(@NotNull ModuleDependencies dependencies) {
         Intrinsics.checkNotNullParameter(dependencies, "dependencies");
-        this.f32277t = dependencies;
+        this.f32499t = dependencies;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor
@@ -206,7 +206,7 @@ public final class ModuleDescriptorImpl extends DeclarationDescriptorImpl implem
         if (Intrinsics.areEqual(this, targetModule)) {
             return true;
         }
-        ModuleDependencies moduleDependencies = this.f32277t;
+        ModuleDependencies moduleDependencies = this.f32499t;
         Intrinsics.checkNotNull(moduleDependencies);
         if (CollectionsKt.d0(moduleDependencies.getModulesWhoseInternalsAreVisible(), targetModule) || getExpectedByModules().contains(targetModule) || targetModule.getExpectedByModules().contains(this)) {
             return true;
@@ -224,7 +224,7 @@ public final class ModuleDescriptorImpl extends DeclarationDescriptorImpl implem
             sb2.append(" !isValid");
         }
         sb2.append(" packageFragmentProvider: ");
-        PackageFragmentProvider packageFragmentProvider = this.f32278u;
+        PackageFragmentProvider packageFragmentProvider = this.f32500u;
         if (packageFragmentProvider != null) {
             str = packageFragmentProvider.getClass().getSimpleName();
         } else {
@@ -255,17 +255,17 @@ public final class ModuleDescriptorImpl extends DeclarationDescriptorImpl implem
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(builtIns, "builtIns");
         Intrinsics.checkNotNullParameter(capabilities, "capabilities");
-        this.f32271i = storageManager;
-        this.f32272o = builtIns;
-        this.f32273p = targetPlatform;
-        this.f32274q = name;
+        this.f32493i = storageManager;
+        this.f32494o = builtIns;
+        this.f32495p = targetPlatform;
+        this.f32496q = name;
         if (moduleName.isSpecial()) {
-            this.f32275r = capabilities;
+            this.f32497r = capabilities;
             PackageViewDescriptorFactory packageViewDescriptorFactory = (PackageViewDescriptorFactory) getCapability(PackageViewDescriptorFactory.Companion.getCAPABILITY());
-            this.f32276s = packageViewDescriptorFactory == null ? PackageViewDescriptorFactory.Default.INSTANCE : packageViewDescriptorFactory;
-            this.f32279v = true;
-            this.f32280w = storageManager.createMemoizedFunction(new g(this));
-            this.f32281x = l.a(new h(this));
+            this.f32498s = packageViewDescriptorFactory == null ? PackageViewDescriptorFactory.Default.INSTANCE : packageViewDescriptorFactory;
+            this.f32501v = true;
+            this.f32502w = storageManager.createMemoizedFunction(new g(this));
+            this.f32503x = l.b(new h(this));
             return;
         }
         throw new IllegalArgumentException("Module name must be special: " + moduleName);

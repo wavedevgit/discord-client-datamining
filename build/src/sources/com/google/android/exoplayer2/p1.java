@@ -7,10 +7,10 @@ import com.google.android.exoplayer2.p1;
 public final class p1 extends u1 {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String f12794o = oe.w0.B0(1);
+    private static final String f13371o = oe.w0.B0(1);
 
     /* renamed from: p  reason: collision with root package name */
-    public static final g.a f12795p = new g.a() { // from class: mc.m0
+    public static final g.a f13372p = new g.a() { // from class: mc.m0
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             p1 d10;
@@ -20,20 +20,20 @@ public final class p1 extends u1 {
     };
 
     /* renamed from: i  reason: collision with root package name */
-    private final float f12796i;
+    private final float f13373i;
 
     public p1() {
-        this.f12796i = -1.0f;
+        this.f13373i = -1.0f;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static p1 d(Bundle bundle) {
         boolean z10 = true;
-        if (bundle.getInt(u1.f13250d, -1) != 1) {
+        if (bundle.getInt(u1.f13827d, -1) != 1) {
             z10 = false;
         }
         oe.a.a(z10);
-        float f10 = bundle.getFloat(f12794o, -1.0f);
+        float f10 = bundle.getFloat(f13371o, -1.0f);
         if (f10 == -1.0f) {
             return new p1();
         }
@@ -41,18 +41,18 @@ public final class p1 extends u1 {
     }
 
     public boolean equals(Object obj) {
-        if (!(obj instanceof p1) || this.f12796i != ((p1) obj).f12796i) {
+        if (!(obj instanceof p1) || this.f13373i != ((p1) obj).f13373i) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return ni.j.b(Float.valueOf(this.f12796i));
+        return pi.j.b(Float.valueOf(this.f13373i));
     }
 
     public p1(float f10) {
         oe.a.b(f10 >= 0.0f && f10 <= 100.0f, "percent must be in the range of [0, 100]");
-        this.f12796i = f10;
+        this.f13373i = f10;
     }
 }

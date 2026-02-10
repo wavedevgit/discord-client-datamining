@@ -9,20 +9,20 @@ import java.util.RandomAccess;
 public class n1 extends AbstractList implements d0, RandomAccess {
 
     /* renamed from: d  reason: collision with root package name */
-    private final d0 f3834d;
+    private final d0 f3840d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements ListIterator {
 
         /* renamed from: d  reason: collision with root package name */
-        ListIterator f3835d;
+        ListIterator f3841d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f3836e;
+        final /* synthetic */ int f3842e;
 
         a(int i10) {
-            this.f3836e = i10;
-            this.f3835d = n1.this.f3834d.listIterator(i10);
+            this.f3842e = i10;
+            this.f3841d = n1.this.f3840d.listIterator(i10);
         }
 
         @Override // java.util.ListIterator
@@ -34,13 +34,13 @@ public class n1 extends AbstractList implements d0, RandomAccess {
         @Override // java.util.ListIterator, java.util.Iterator
         /* renamed from: b */
         public String next() {
-            return (String) this.f3835d.next();
+            return (String) this.f3841d.next();
         }
 
         @Override // java.util.ListIterator
         /* renamed from: c */
         public String previous() {
-            return (String) this.f3835d.previous();
+            return (String) this.f3841d.previous();
         }
 
         @Override // java.util.ListIterator
@@ -51,22 +51,22 @@ public class n1 extends AbstractList implements d0, RandomAccess {
 
         @Override // java.util.ListIterator, java.util.Iterator
         public boolean hasNext() {
-            return this.f3835d.hasNext();
+            return this.f3841d.hasNext();
         }
 
         @Override // java.util.ListIterator
         public boolean hasPrevious() {
-            return this.f3835d.hasPrevious();
+            return this.f3841d.hasPrevious();
         }
 
         @Override // java.util.ListIterator
         public int nextIndex() {
-            return this.f3835d.nextIndex();
+            return this.f3841d.nextIndex();
         }
 
         @Override // java.util.ListIterator
         public int previousIndex() {
-            return this.f3835d.previousIndex();
+            return this.f3841d.previousIndex();
         }
 
         @Override // java.util.ListIterator, java.util.Iterator
@@ -79,21 +79,21 @@ public class n1 extends AbstractList implements d0, RandomAccess {
     class b implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        Iterator f3838d;
+        Iterator f3844d;
 
         b() {
-            this.f3838d = n1.this.f3834d.iterator();
+            this.f3844d = n1.this.f3840d.iterator();
         }
 
         @Override // java.util.Iterator
         /* renamed from: a */
         public String next() {
-            return (String) this.f3838d.next();
+            return (String) this.f3844d.next();
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            return this.f3838d.hasNext();
+            return this.f3844d.hasNext();
         }
 
         @Override // java.util.Iterator
@@ -103,28 +103,28 @@ public class n1 extends AbstractList implements d0, RandomAccess {
     }
 
     public n1(d0 d0Var) {
-        this.f3834d = d0Var;
+        this.f3840d = d0Var;
     }
 
     @Override // androidx.datastore.preferences.protobuf.d0
-    public void G0(g gVar) {
+    public void C0(g gVar) {
         throw new UnsupportedOperationException();
     }
 
     @Override // androidx.datastore.preferences.protobuf.d0
-    public Object R0(int i10) {
-        return this.f3834d.R0(i10);
+    public Object G0(int i10) {
+        return this.f3840d.G0(i10);
     }
 
     @Override // java.util.AbstractList, java.util.List
     /* renamed from: c */
     public String get(int i10) {
-        return (String) this.f3834d.get(i10);
+        return (String) this.f3840d.get(i10);
     }
 
     @Override // androidx.datastore.preferences.protobuf.d0
     public List getUnderlyingElements() {
-        return this.f3834d.getUnderlyingElements();
+        return this.f3840d.getUnderlyingElements();
     }
 
     @Override // androidx.datastore.preferences.protobuf.d0
@@ -144,6 +144,6 @@ public class n1 extends AbstractList implements d0, RandomAccess {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public int size() {
-        return this.f3834d.size();
+        return this.f3840d.size();
     }
 }

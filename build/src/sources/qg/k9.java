@@ -7,14 +7,14 @@ public enum k9 implements u1 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f45978d;
+    private final int f44646d;
 
     k9(int i10) {
-        this.f45978d = i10;
+        this.f44646d = i10;
     }
 
     @Override // qg.u1
     public final int zza() {
-        return this.f45978d;
+        return this.f44646d;
     }
 }

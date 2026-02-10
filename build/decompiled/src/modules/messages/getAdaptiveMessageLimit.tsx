@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useMessageLimit = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 8496, 660, 8497, 1348, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 8506, 660, 8507, 1348, 566, 2]);

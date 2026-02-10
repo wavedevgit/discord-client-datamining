@@ -1,24 +1,19 @@
 package dt;
 
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
+import java.util.Collection;
+import java.util.ServiceLoader;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class f implements e {
+public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f20965a;
+    private static final Collection f21878a = kotlin.sequences.k.Y(kotlin.sequences.k.h(ServiceLoader.load(ys.z.class, ys.z.class.getClassLoader()).iterator()));
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Function1 f20966b;
+    public static final Collection a() {
+        return f21878a;
+    }
 
-    /* renamed from: c  reason: collision with root package name */
-    private final boolean f20967c;
-
-    public f(e formatter, Function1 allSubFormatsNegative, boolean z10) {
-        Intrinsics.checkNotNullParameter(formatter, "formatter");
-        Intrinsics.checkNotNullParameter(allSubFormatsNegative, "allSubFormatsNegative");
-        this.f20965a = formatter;
-        this.f20966b = allSubFormatsNegative;
-        this.f20967c = z10;
+    public static final void b(Throwable th2) {
+        Thread currentThread = Thread.currentThread();
+        currentThread.getUncaughtExceptionHandler().uncaughtException(currentThread, th2);
     }
 }

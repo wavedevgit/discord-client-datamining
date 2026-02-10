@@ -16,22 +16,22 @@ import java.util.Set;
 public final class a {
 
     /* renamed from: d  reason: collision with root package name */
-    private static volatile a f5218d;
+    private static volatile a f5228d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Object f5219e = new Object();
+    private static final Object f5229e = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    final Context f5222c;
+    final Context f5232c;
 
     /* renamed from: b  reason: collision with root package name */
-    final Set f5221b = new HashSet();
+    final Set f5231b = new HashSet();
 
     /* renamed from: a  reason: collision with root package name */
-    final Map f5220a = new HashMap();
+    final Map f5230a = new HashMap();
 
     a(Context context) {
-        this.f5222c = context.getApplicationContext();
+        this.f5232c = context.getApplicationContext();
     }
 
     private Object d(Class cls, Set set) {
@@ -45,22 +45,22 @@ public final class a {
             }
         }
         if (!set.contains(cls)) {
-            if (!this.f5220a.containsKey(cls)) {
+            if (!this.f5230a.containsKey(cls)) {
                 set.add(cls);
                 a4.a aVar = (a4.a) cls.getDeclaredConstructor(null).newInstance(null);
                 List<Class> dependencies = aVar.dependencies();
                 if (!dependencies.isEmpty()) {
                     for (Class cls2 : dependencies) {
-                        if (!this.f5220a.containsKey(cls2)) {
+                        if (!this.f5230a.containsKey(cls2)) {
                             d(cls2, set);
                         }
                     }
                 }
-                obj = aVar.create(this.f5222c);
+                obj = aVar.create(this.f5232c);
                 set.remove(cls);
-                this.f5220a.put(cls, obj);
+                this.f5230a.put(cls, obj);
             } else {
-                obj = this.f5220a.get(cls);
+                obj = this.f5230a.get(cls);
             }
             c4.a.f();
             return obj;
@@ -69,21 +69,21 @@ public final class a {
     }
 
     public static a e(Context context) {
-        if (f5218d == null) {
-            synchronized (f5219e) {
+        if (f5228d == null) {
+            synchronized (f5229e) {
                 try {
-                    if (f5218d == null) {
-                        f5218d = new a(context);
+                    if (f5228d == null) {
+                        f5228d = new a(context);
                     }
                 } finally {
                 }
             }
         }
-        return f5218d;
+        return f5228d;
     }
 
     void a(Bundle bundle) {
-        String string = this.f5222c.getString(b.f383a);
+        String string = this.f5232c.getString(b.f383a);
         if (bundle != null) {
             try {
                 HashSet hashSet = new HashSet();
@@ -91,11 +91,11 @@ public final class a {
                     if (string.equals(bundle.getString(str, null))) {
                         Class<?> cls = Class.forName(str);
                         if (a4.a.class.isAssignableFrom(cls)) {
-                            this.f5221b.add(cls);
+                            this.f5231b.add(cls);
                         }
                     }
                 }
-                for (Class cls2 : this.f5221b) {
+                for (Class cls2 : this.f5231b) {
                     d(cls2, hashSet);
                 }
             } catch (ClassNotFoundException e10) {
@@ -109,7 +109,7 @@ public final class a {
         try {
             try {
                 c4.a.c("Startup");
-                a(this.f5222c.getPackageManager().getProviderInfo(new ComponentName(this.f5222c, cls), IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT).metaData);
+                a(this.f5232c.getPackageManager().getProviderInfo(new ComponentName(this.f5232c, cls), IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT).metaData);
             } catch (PackageManager.NameNotFoundException e10) {
                 throw new c(e10);
             }
@@ -120,9 +120,9 @@ public final class a {
 
     Object c(Class cls) {
         Object obj;
-        synchronized (f5219e) {
+        synchronized (f5229e) {
             try {
-                obj = this.f5220a.get(cls);
+                obj = this.f5230a.get(cls);
                 if (obj == null) {
                     obj = d(cls, new HashSet());
                 }
@@ -138,6 +138,6 @@ public final class a {
     }
 
     public boolean g(Class cls) {
-        return this.f5221b.contains(cls);
+        return this.f5231b.contains(cls);
     }
 }

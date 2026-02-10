@@ -3,90 +3,90 @@ package qg;
 public final class fc {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f45781a;
+    private String f44449a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f45782b;
+    private String f44450b;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f45783c;
+    private String f44451c;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f45784d;
+    private String f44452d;
 
     /* renamed from: e  reason: collision with root package name */
-    private p0 f45785e;
+    private p0 f44453e;
 
     /* renamed from: f  reason: collision with root package name */
-    private String f45786f;
+    private String f44454f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Boolean f45787g;
+    private Boolean f44455g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Boolean f45788h;
+    private Boolean f44456h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Boolean f45789i;
+    private Boolean f44457i;
 
     /* renamed from: j  reason: collision with root package name */
-    private Integer f45790j;
+    private Integer f44458j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Integer f45791k;
+    private Integer f44459k;
 
     public final fc b(String str) {
-        this.f45781a = str;
+        this.f44449a = str;
         return this;
     }
 
     public final fc c(String str) {
-        this.f45782b = str;
+        this.f44450b = str;
         return this;
     }
 
     public final fc d(Integer num) {
-        this.f45790j = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f44458j = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 
     public final fc e(Boolean bool) {
-        this.f45787g = bool;
+        this.f44455g = bool;
         return this;
     }
 
     public final fc f(Boolean bool) {
-        this.f45789i = bool;
+        this.f44457i = bool;
         return this;
     }
 
     public final fc g(Boolean bool) {
-        this.f45788h = bool;
+        this.f44456h = bool;
         return this;
     }
 
     public final fc h(p0 p0Var) {
-        this.f45785e = p0Var;
+        this.f44453e = p0Var;
         return this;
     }
 
     public final fc i(String str) {
-        this.f45786f = str;
+        this.f44454f = str;
         return this;
     }
 
     public final fc j(String str) {
-        this.f45783c = str;
+        this.f44451c = str;
         return this;
     }
 
     public final fc k(Integer num) {
-        this.f45791k = num;
+        this.f44459k = num;
         return this;
     }
 
     public final fc l(String str) {
-        this.f45784d = str;
+        this.f44452d = str;
         return this;
     }
 

@@ -45,7 +45,7 @@ public final class AttributeStyles_GovernmentIdNfcScanInputTextStylesJsonAdapter
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 governmentIdNfcScanInputTextStylesContainer = (AttributeStyles.GovernmentIdNfcScanInputTextStylesContainer) this.nullableGovernmentIdNfcScanInputTextStylesContainerAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class AttributeStyles_GovernmentIdNfcScanInputTextStylesJsonAdapter
     public void toJson(@NotNull t writer, AttributeStyles.GovernmentIdNfcScanInputTextStyles governmentIdNfcScanInputTextStyles) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdNfcScanInputTextStyles != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableGovernmentIdNfcScanInputTextStylesContainerAdapter.toJson(writer, governmentIdNfcScanInputTextStyles.getBase());
             writer.s();

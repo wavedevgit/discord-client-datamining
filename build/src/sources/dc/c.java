@@ -3,43 +3,43 @@ package dc;
 public final class c {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c f20587c = new a().a();
+    private static final c f21534c = new a().a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f20588a;
+    private final long f21535a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f20589b;
+    private final b f21536b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private long f20590a = 0;
+        private long f21537a = 0;
 
         /* renamed from: b  reason: collision with root package name */
-        private b f20591b = b.REASON_UNKNOWN;
+        private b f21538b = b.REASON_UNKNOWN;
 
         a() {
         }
 
         public c a() {
-            return new c(this.f20590a, this.f20591b);
+            return new c(this.f21537a, this.f21538b);
         }
 
         public a b(long j10) {
-            this.f20590a = j10;
+            this.f21537a = j10;
             return this;
         }
 
         public a c(b bVar) {
-            this.f20591b = bVar;
+            this.f21538b = bVar;
             return this;
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public enum b implements cj.c {
+    public enum b implements ej.c {
         REASON_UNKNOWN(0),
         MESSAGE_TOO_OLD(1),
         CACHE_FULL(2),
@@ -50,21 +50,21 @@ public final class c {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f20600d;
+        private final int f21547d;
 
         b(int i10) {
-            this.f20600d = i10;
+            this.f21547d = i10;
         }
 
-        @Override // cj.c
+        @Override // ej.c
         public int getNumber() {
-            return this.f20600d;
+            return this.f21547d;
         }
     }
 
     c(long j10, b bVar) {
-        this.f20588a = j10;
-        this.f20589b = bVar;
+        this.f21535a = j10;
+        this.f21536b = bVar;
     }
 
     public static a c() {
@@ -72,10 +72,10 @@ public final class c {
     }
 
     public long a() {
-        return this.f20588a;
+        return this.f21535a;
     }
 
     public b b() {
-        return this.f20589b;
+        return this.f21536b;
     }
 }

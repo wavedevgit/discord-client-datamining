@@ -1,45 +1,32 @@
 package ao;
+
+import com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
+public abstract class a implements ChildrenDrawingOrderStrategy {
 
-    /* renamed from: ao.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0084a {
+    /* renamed from: a  reason: collision with root package name */
+    private boolean f5933a;
 
-        /* renamed from: a  reason: collision with root package name */
-        private final double f5923a;
-
-        public C0084a(double d10) {
-            this.f5923a = d10;
-        }
-
-        public final double a() {
-            return this.f5923a;
-        }
-
-        public boolean equals(Object obj) {
-            if (this == obj) {
-                return true;
-            }
-            if ((obj instanceof C0084a) && Double.compare(this.f5923a, ((C0084a) obj).f5923a) == 0) {
-                return true;
-            }
-            return false;
-        }
-
-        public int hashCode() {
-            return Double.hashCode(this.f5923a);
-        }
-
-        public String toString() {
-            double d10 = this.f5923a;
-            return "CameraStats(averageRotation=" + d10 + ")";
-        }
+    public a(boolean z10) {
+        this.f5933a = z10;
     }
 
-    C0084a a();
+    public boolean b() {
+        return this.f5933a;
+    }
 
-    void b();
+    @Override // com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy
+    public void disable() {
+        this.f5933a = false;
+    }
 
-    void c();
+    @Override // com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy
+    public void enable() {
+        this.f5933a = true;
+    }
+
+    public /* synthetic */ a(boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i10 & 1) != 0 ? false : z10);
+    }
 }

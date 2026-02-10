@@ -1,41 +1,21 @@
 package us;
 
-import java.util.List;
-import ps.c1;
+import kotlin.jvm.functions.Function0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class u {
-    private static final v a(Throwable th2, String str) {
-        if (th2 != null) {
-            throw th2;
-        }
-        d();
-        throw new rr.h();
+public class u implements Function0 {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final a0 f51155d;
+
+    public u(a0 a0Var) {
+        this.f51155d = a0Var;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* synthetic */ v b(Throwable th2, String str, int i10, Object obj) {
-        if ((i10 & 1) != 0) {
-            th2 = null;
-        }
-        if ((i10 & 2) != 0) {
-            str = null;
-        }
-        return a(th2, str);
-    }
-
-    public static final boolean c(c1 c1Var) {
-        return c1Var.e2() instanceof v;
-    }
-
-    public static final Void d() {
-        throw new IllegalStateException("Module with the Main dispatcher is missing. Add dependency providing the Main dispatcher, e.g. 'kotlinx-coroutines-android' and ensure it has the same version as 'kotlinx-coroutines-core'");
-    }
-
-    public static final c1 e(s sVar, List list) {
-        try {
-            return sVar.b(list);
-        } catch (Throwable th2) {
-            return a(th2, sVar.a());
-        }
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        Object[] c10;
+        c10 = a0.c(this.f51155d);
+        return c10;
     }
 }

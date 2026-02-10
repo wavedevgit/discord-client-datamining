@@ -1,43 +1,42 @@
 package tt;
 
-import java.util.Locale;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
+import st.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface x {
-    String A(Locale locale, boolean z10, n nVar);
+public final class x implements KSerializer {
 
-    String B(Locale locale, boolean z10, n nVar);
+    /* renamed from: a  reason: collision with root package name */
+    public static final x f50086a = new x();
 
-    String C(Locale locale, v vVar, n nVar);
+    /* renamed from: b  reason: collision with root package name */
+    private static final SerialDescriptor f50087b = new g2("kotlin.Double", e.d.f48363a);
 
-    String D(Locale locale, v vVar, n nVar);
+    private x() {
+    }
 
-    String c(Locale locale);
+    @Override // kotlinx.serialization.DeserializationStrategy
+    /* renamed from: a */
+    public Double deserialize(Decoder decoder) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        return Double.valueOf(decoder.v());
+    }
 
-    String g(Locale locale, boolean z10, n nVar);
+    public void b(Encoder encoder, double d10) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        encoder.f(d10);
+    }
 
-    String j(Locale locale, v vVar, n nVar);
+    @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return f50087b;
+    }
 
-    String k(Locale locale, v vVar, n nVar);
-
-    String l(Locale locale, boolean z10, n nVar);
-
-    String m(Locale locale, v vVar, n nVar);
-
-    String n(Locale locale, boolean z10, n nVar);
-
-    String p(Locale locale, v vVar, n nVar);
-
-    String q(Locale locale, boolean z10, n nVar);
-
-    String t(Locale locale, v vVar, n nVar);
-
-    String u(Locale locale, v vVar, n nVar);
-
-    String w(Locale locale, v vVar, n nVar);
-
-    String x(Locale locale, v vVar, n nVar);
-
-    String y(Locale locale, v vVar, int i10);
-
-    String z(Locale locale, boolean z10, n nVar);
+    @Override // qt.o
+    public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
+        b(encoder, ((Number) obj).doubleValue());
+    }
 }

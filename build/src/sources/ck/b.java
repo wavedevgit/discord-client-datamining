@@ -1,26 +1,24 @@
 package ck;
 
-import java.util.List;
-import qg.xe;
-import qg.ye;
+import android.media.Image;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class b {
+final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f7660a;
+    private final Image f8305a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final List f7661b;
-
-    public b(int i10, List list) {
-        this.f7660a = i10;
-        this.f7661b = list;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b(Image image) {
+        this.f8305a = image;
     }
 
-    public String toString() {
-        xe a10 = ye.a("FaceContour");
-        a10.b("type", this.f7660a);
-        a10.c("points", this.f7661b.toArray());
-        return a10.toString();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final Image a() {
+        return this.f8305a;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final Image.Plane[] b() {
+        return this.f8305a.getPlanes();
     }
 }

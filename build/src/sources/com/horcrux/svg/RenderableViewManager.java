@@ -251,19 +251,19 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGCircleManagerInterface
         @ReactProp(name = "cx")
         public void setCx(b bVar, Dynamic dynamic) {
-            bVar.c(dynamic);
+            bVar.d(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGCircleManagerInterface
         @ReactProp(name = "cy")
         public void setCy(b bVar, Dynamic dynamic) {
-            bVar.d(dynamic);
+            bVar.e(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGCircleManagerInterface
         @ReactProp(name = "r")
         public void setR(b bVar, Dynamic dynamic) {
-            bVar.e(dynamic);
+            bVar.f(dynamic);
         }
     }
 
@@ -713,25 +713,25 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGEllipseManagerInterface
         @ReactProp(name = "cx")
         public void setCx(h hVar, Dynamic dynamic) {
-            hVar.c(dynamic);
+            hVar.d(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGEllipseManagerInterface
         @ReactProp(name = "cy")
         public void setCy(h hVar, Dynamic dynamic) {
-            hVar.d(dynamic);
+            hVar.e(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGEllipseManagerInterface
         @ReactProp(name = "rx")
         public void setRx(h hVar, Dynamic dynamic) {
-            hVar.e(dynamic);
+            hVar.f(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGEllipseManagerInterface
         @ReactProp(name = "ry")
         public void setRy(h hVar, Dynamic dynamic) {
-            hVar.f(dynamic);
+            hVar.g(dynamic);
         }
     }
 
@@ -778,19 +778,19 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGFeBlendManagerInterface
         @ReactProp(name = "in1")
         public void setIn1(j jVar, String str) {
-            jVar.l(str);
+            jVar.m(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeBlendManagerInterface
         @ReactProp(name = "in2")
         public void setIn2(j jVar, String str) {
-            jVar.m(str);
+            jVar.n(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeBlendManagerInterface
         @ReactProp(name = "mode")
         public void setMode(j jVar, String str) {
-            jVar.n(str);
+            jVar.o(str);
         }
     }
 
@@ -837,19 +837,19 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGFeColorMatrixManagerInterface
         @ReactProp(name = "in1")
         public void setIn1(k kVar, String str) {
-            kVar.k(str);
+            kVar.l(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeColorMatrixManagerInterface
         @ReactProp(name = "type")
         public void setType(k kVar, String str) {
-            kVar.l(str);
+            kVar.m(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeColorMatrixManagerInterface
         @ReactProp(name = "values")
         public void setValues(k kVar, ReadableArray readableArray) {
-            kVar.m(readableArray);
+            kVar.n(readableArray);
         }
     }
 
@@ -896,43 +896,43 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGFeCompositeManagerInterface
         @ReactProp(name = "in1")
         public void setIn1(l lVar, String str) {
-            lVar.k(str);
+            lVar.l(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeCompositeManagerInterface
         @ReactProp(name = "in2")
         public void setIn2(l lVar, String str) {
-            lVar.l(str);
+            lVar.m(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeCompositeManagerInterface
         @ReactProp(name = "k1")
         public void setK1(l lVar, float f10) {
-            lVar.m(Float.valueOf(f10));
+            lVar.n(Float.valueOf(f10));
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeCompositeManagerInterface
         @ReactProp(name = "k2")
         public void setK2(l lVar, float f10) {
-            lVar.n(Float.valueOf(f10));
+            lVar.o(Float.valueOf(f10));
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeCompositeManagerInterface
         @ReactProp(name = "k3")
         public void setK3(l lVar, float f10) {
-            lVar.o(Float.valueOf(f10));
+            lVar.p(Float.valueOf(f10));
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeCompositeManagerInterface
         @ReactProp(name = "k4")
         public void setK4(l lVar, float f10) {
-            lVar.p(Float.valueOf(f10));
+            lVar.q(Float.valueOf(f10));
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeCompositeManagerInterface
         @ReactProp(name = "operator1")
         public void setOperator1(l lVar, String str) {
-            lVar.q(str);
+            lVar.r(str);
         }
     }
 
@@ -979,17 +979,17 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGFeFloodManagerInterface
         @ReactProp(name = "floodColor")
         public void setFloodColor(m mVar, Dynamic dynamic) {
-            mVar.k(dynamic);
+            mVar.l(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeFloodManagerInterface
         @ReactProp(defaultFloat = JankStatsAggregatorKt.DEFAULT_JANK_MUTLIPLIER, name = "floodOpacity")
         public void setFloodOpacity(m mVar, float f10) {
-            mVar.m(f10);
+            mVar.n(f10);
         }
 
         public void setFloodColor(m mVar, ReadableMap readableMap) {
-            mVar.l(readableMap);
+            mVar.m(readableMap);
         }
     }
 
@@ -1036,25 +1036,25 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGFeGaussianBlurManagerInterface
         @ReactProp(name = "values")
         public void setEdgeMode(n nVar, String str) {
-            nVar.l(str);
+            nVar.m(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeGaussianBlurManagerInterface
         @ReactProp(name = "in1")
         public void setIn1(n nVar, String str) {
-            nVar.m(str);
+            nVar.n(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeGaussianBlurManagerInterface
         @ReactProp(name = "stdDeviationX")
         public void setStdDeviationX(n nVar, float f10) {
-            nVar.n(f10);
+            nVar.o(f10);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeGaussianBlurManagerInterface
         @ReactProp(name = "stdDeviationY")
         public void setStdDeviationY(n nVar, float f10) {
-            nVar.o(f10);
+            nVar.p(f10);
         }
     }
 
@@ -1101,7 +1101,7 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGFeMergeManagerInterface
         @ReactProp(name = "nodes")
         public void setNodes(o oVar, ReadableArray readableArray) {
-            oVar.k(readableArray);
+            oVar.l(readableArray);
         }
     }
 
@@ -1148,19 +1148,19 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGFeOffsetManagerInterface
         @ReactProp(name = "dx")
         public void setDx(p pVar, Dynamic dynamic) {
-            pVar.k(dynamic);
+            pVar.l(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeOffsetManagerInterface
         @ReactProp(name = "dy")
         public void setDy(p pVar, Dynamic dynamic) {
-            pVar.l(dynamic);
+            pVar.m(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFeOffsetManagerInterface
         @ReactProp(name = "in1")
         public void setIn1(p pVar, String str) {
-            pVar.m(str);
+            pVar.n(str);
         }
     }
 
@@ -1183,37 +1183,37 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGFilterManagerInterface
         @ReactProp(name = "filterUnits")
         public void setFilterUnits(x xVar, String str) {
-            xVar.d(str);
+            xVar.e(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFilterManagerInterface
         @ReactProp(name = "height")
         public void setHeight(x xVar, Dynamic dynamic) {
-            xVar.e(dynamic);
+            xVar.f(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFilterManagerInterface
         @ReactProp(name = "primitiveUnits")
         public void setPrimitiveUnits(x xVar, String str) {
-            xVar.f(str);
+            xVar.g(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFilterManagerInterface
         @ReactProp(name = "width")
         public void setWidth(x xVar, Dynamic dynamic) {
-            xVar.g(dynamic);
+            xVar.h(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFilterManagerInterface
         @ReactProp(name = "x")
         public void setX(x xVar, Dynamic dynamic) {
-            xVar.h(dynamic);
+            xVar.i(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGFilterManagerInterface
         @ReactProp(name = "y")
         public void setY(x xVar, Dynamic dynamic) {
-            xVar.i(dynamic);
+            xVar.j(dynamic);
         }
     }
 
@@ -1225,27 +1225,27 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
 
         @ReactProp(name = "height")
         public void setHeight(T t10, Dynamic dynamic) {
-            t10.f(dynamic);
+            t10.g(dynamic);
         }
 
         @ReactProp(name = "result")
         public void setResult(T t10, String str) {
-            t10.g(str);
+            t10.h(str);
         }
 
         @ReactProp(name = "width")
         public void setWidth(T t10, Dynamic dynamic) {
-            t10.h(dynamic);
+            t10.i(dynamic);
         }
 
         @ReactProp(name = "x")
         public void setX(T t10, Dynamic dynamic) {
-            t10.i(dynamic);
+            t10.j(dynamic);
         }
 
         @ReactProp(name = "y")
         public void setY(T t10, Dynamic dynamic) {
-            t10.j(dynamic);
+            t10.k(dynamic);
         }
     }
 
@@ -1441,25 +1441,25 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGForeignObjectManagerInterface
         @ReactProp(name = "height")
         public void setHeight(z zVar, Dynamic dynamic) {
-            zVar.n(dynamic);
+            zVar.o(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGForeignObjectManagerInterface
         @ReactProp(name = "width")
         public void setWidth(z zVar, Dynamic dynamic) {
-            zVar.o(dynamic);
+            zVar.p(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGForeignObjectManagerInterface
         @ReactProp(name = "x")
         public void setX(z zVar, Dynamic dynamic) {
-            zVar.p(dynamic);
+            zVar.q(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGForeignObjectManagerInterface
         @ReactProp(name = "y")
         public void setY(z zVar, Dynamic dynamic) {
-            zVar.q(dynamic);
+            zVar.r(dynamic);
         }
     }
 
@@ -1661,13 +1661,13 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
 
         @ReactProp(name = "font")
         public void setFont(U u10, Dynamic dynamic) {
-            u10.k(dynamic);
+            u10.l(dynamic);
         }
 
         @ReactProp(name = ViewProps.FONT_SIZE)
         public void setFontSize(U u10, Dynamic dynamic) {
             JavaOnlyMap javaOnlyMap = new JavaOnlyMap();
-            int i10 = a.f16853a[dynamic.getType().ordinal()];
+            int i10 = a.f17602a[dynamic.getType().ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     return;
@@ -1676,13 +1676,13 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
             } else {
                 javaOnlyMap.putDouble(ViewProps.FONT_SIZE, dynamic.asDouble());
             }
-            u10.l(javaOnlyMap);
+            u10.m(javaOnlyMap);
         }
 
         @ReactProp(name = ViewProps.FONT_WEIGHT)
         public void setFontWeight(U u10, Dynamic dynamic) {
             JavaOnlyMap javaOnlyMap = new JavaOnlyMap();
-            int i10 = a.f16853a[dynamic.getType().ordinal()];
+            int i10 = a.f17602a[dynamic.getType().ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     return;
@@ -1691,7 +1691,7 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
             } else {
                 javaOnlyMap.putDouble(ViewProps.FONT_WEIGHT, dynamic.asDouble());
             }
-            u10.l(javaOnlyMap);
+            u10.m(javaOnlyMap);
         }
     }
 
@@ -1882,7 +1882,7 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGImageManagerInterface
         @ReactProp(name = "height")
         public void setHeight(d0 d0Var, Dynamic dynamic) {
-            d0Var.h(dynamic);
+            d0Var.i(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGImageManagerInterface
@@ -1894,25 +1894,25 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGImageManagerInterface
         @ReactProp(customType = "ImageSource", name = "src")
         public void setSrc(d0 d0Var, ReadableMap readableMap) {
-            d0Var.i(readableMap);
+            d0Var.j(readableMap);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGImageManagerInterface
         @ReactProp(name = "width")
         public void setWidth(d0 d0Var, Dynamic dynamic) {
-            d0Var.j(dynamic);
+            d0Var.k(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGImageManagerInterface
         @ReactProp(name = "x")
         public void setX(d0 d0Var, Dynamic dynamic) {
-            d0Var.k(dynamic);
+            d0Var.l(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGImageManagerInterface
         @ReactProp(name = "y")
         public void setY(d0 d0Var, Dynamic dynamic) {
-            d0Var.l(dynamic);
+            d0Var.m(dynamic);
         }
     }
 
@@ -2090,25 +2090,25 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGLineManagerInterface
         @ReactProp(name = "x1")
         public void setX1(e0 e0Var, Dynamic dynamic) {
-            e0Var.c(dynamic);
+            e0Var.d(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGLineManagerInterface
         @ReactProp(name = "x2")
         public void setX2(e0 e0Var, Dynamic dynamic) {
-            e0Var.d(dynamic);
+            e0Var.e(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGLineManagerInterface
         @ReactProp(name = "y1")
         public void setY1(e0 e0Var, Dynamic dynamic) {
-            e0Var.e(dynamic);
+            e0Var.f(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGLineManagerInterface
         @ReactProp(name = "y2")
         public void setY2(e0 e0Var, Dynamic dynamic) {
-            e0Var.f(dynamic);
+            e0Var.g(dynamic);
         }
     }
 
@@ -2196,43 +2196,43 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGLinearGradientManagerInterface
         @ReactProp(name = "gradient")
         public void setGradient(f0 f0Var, ReadableArray readableArray) {
-            f0Var.c(readableArray);
+            f0Var.d(readableArray);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGLinearGradientManagerInterface
         @ReactProp(name = "gradientTransform")
         public void setGradientTransform(f0 f0Var, ReadableArray readableArray) {
-            f0Var.d(readableArray);
+            f0Var.e(readableArray);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGLinearGradientManagerInterface
         @ReactProp(name = "gradientUnits")
         public void setGradientUnits(f0 f0Var, int i10) {
-            f0Var.e(i10);
+            f0Var.f(i10);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGLinearGradientManagerInterface
         @ReactProp(name = "x1")
         public void setX1(f0 f0Var, Dynamic dynamic) {
-            f0Var.f(dynamic);
+            f0Var.g(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGLinearGradientManagerInterface
         @ReactProp(name = "x2")
         public void setX2(f0 f0Var, Dynamic dynamic) {
-            f0Var.g(dynamic);
+            f0Var.h(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGLinearGradientManagerInterface
         @ReactProp(name = "y1")
         public void setY1(f0 f0Var, Dynamic dynamic) {
-            f0Var.h(dynamic);
+            f0Var.i(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGLinearGradientManagerInterface
         @ReactProp(name = "y2")
         public void setY2(f0 f0Var, Dynamic dynamic) {
-            f0Var.i(dynamic);
+            f0Var.j(dynamic);
         }
     }
 
@@ -2434,19 +2434,19 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGMarkerManagerInterface
         @ReactProp(name = "markerHeight")
         public void setMarkerHeight(g0 g0Var, Dynamic dynamic) {
-            g0Var.o(dynamic);
+            g0Var.p(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGMarkerManagerInterface
         @ReactProp(name = "markerUnits")
         public void setMarkerUnits(g0 g0Var, String str) {
-            g0Var.p(str);
+            g0Var.q(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGMarkerManagerInterface
         @ReactProp(name = "markerWidth")
         public void setMarkerWidth(g0 g0Var, Dynamic dynamic) {
-            g0Var.q(dynamic);
+            g0Var.r(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGMarkerManagerInterface
@@ -2470,19 +2470,19 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGMarkerManagerInterface
         @ReactProp(name = "orient")
         public void setOrient(g0 g0Var, String str) {
-            g0Var.r(str);
+            g0Var.s(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGMarkerManagerInterface
         @ReactProp(name = "refX")
         public void setRefX(g0 g0Var, Dynamic dynamic) {
-            g0Var.s(dynamic);
+            g0Var.t(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGMarkerManagerInterface
         @ReactProp(name = "refY")
         public void setRefY(g0 g0Var, Dynamic dynamic) {
-            g0Var.t(dynamic);
+            g0Var.u(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGMarkerManagerInterface
@@ -2690,43 +2690,43 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGMaskManagerInterface
         @ReactProp(name = "height")
         public void setHeight(h0 h0Var, Dynamic dynamic) {
-            h0Var.p(dynamic);
+            h0Var.q(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGMaskManagerInterface
         @ReactProp(name = "maskContentUnits")
         public void setMaskContentUnits(h0 h0Var, int i10) {
-            h0Var.q(i10);
+            h0Var.r(i10);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGMaskManagerInterface
         @ReactProp(name = "maskType")
         public void setMaskType(h0 h0Var, int i10) {
-            h0Var.r(i10);
+            h0Var.s(i10);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGMaskManagerInterface
         @ReactProp(name = "maskUnits")
         public void setMaskUnits(h0 h0Var, int i10) {
-            h0Var.s(i10);
+            h0Var.t(i10);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGMaskManagerInterface
         @ReactProp(name = "width")
         public void setWidth(h0 h0Var, Dynamic dynamic) {
-            h0Var.t(dynamic);
+            h0Var.u(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGMaskManagerInterface
         @ReactProp(name = "x")
         public void setX(h0 h0Var, Dynamic dynamic) {
-            h0Var.u(dynamic);
+            h0Var.v(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGMaskManagerInterface
         @ReactProp(name = "y")
         public void setY(h0 h0Var, Dynamic dynamic) {
-            h0Var.v(dynamic);
+            h0Var.w(dynamic);
         }
     }
 
@@ -2904,7 +2904,7 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGPathManagerInterface
         @ReactProp(name = "d")
         public void setD(k0 k0Var, String str) {
-            k0Var.c(str);
+            k0Var.d(str);
         }
     }
 
@@ -3106,7 +3106,7 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGPatternManagerInterface
         @ReactProp(name = "height")
         public void setHeight(l0 l0Var, Dynamic dynamic) {
-            l0Var.n(dynamic);
+            l0Var.o(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGPatternManagerInterface
@@ -3130,19 +3130,19 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGPatternManagerInterface
         @ReactProp(name = "patternContentUnits")
         public void setPatternContentUnits(l0 l0Var, int i10) {
-            l0Var.o(i10);
+            l0Var.p(i10);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGPatternManagerInterface
         @ReactProp(name = "patternTransform")
         public void setPatternTransform(l0 l0Var, ReadableArray readableArray) {
-            l0Var.p(readableArray);
+            l0Var.q(readableArray);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGPatternManagerInterface
         @ReactProp(name = "patternUnits")
         public void setPatternUnits(l0 l0Var, int i10) {
-            l0Var.q(i10);
+            l0Var.r(i10);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGPatternManagerInterface
@@ -3160,19 +3160,19 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGPatternManagerInterface
         @ReactProp(name = "width")
         public void setWidth(l0 l0Var, Dynamic dynamic) {
-            l0Var.r(dynamic);
+            l0Var.s(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGPatternManagerInterface
         @ReactProp(name = "x")
         public void setX(l0 l0Var, Dynamic dynamic) {
-            l0Var.s(dynamic);
+            l0Var.t(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGPatternManagerInterface
         @ReactProp(name = "y")
         public void setY(l0 l0Var, Dynamic dynamic) {
-            l0Var.t(dynamic);
+            l0Var.u(dynamic);
         }
     }
 
@@ -3260,55 +3260,55 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGRadialGradientManagerInterface
         @ReactProp(name = "cx")
         public void setCx(q0 q0Var, Dynamic dynamic) {
-            q0Var.c(dynamic);
+            q0Var.d(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGRadialGradientManagerInterface
         @ReactProp(name = "cy")
         public void setCy(q0 q0Var, Dynamic dynamic) {
-            q0Var.d(dynamic);
+            q0Var.e(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGRadialGradientManagerInterface
         @ReactProp(name = "fx")
         public void setFx(q0 q0Var, Dynamic dynamic) {
-            q0Var.e(dynamic);
+            q0Var.f(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGRadialGradientManagerInterface
         @ReactProp(name = "fy")
         public void setFy(q0 q0Var, Dynamic dynamic) {
-            q0Var.f(dynamic);
+            q0Var.g(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGRadialGradientManagerInterface
         @ReactProp(name = "gradient")
         public void setGradient(q0 q0Var, ReadableArray readableArray) {
-            q0Var.g(readableArray);
+            q0Var.h(readableArray);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGRadialGradientManagerInterface
         @ReactProp(name = "gradientTransform")
         public void setGradientTransform(q0 q0Var, ReadableArray readableArray) {
-            q0Var.h(readableArray);
+            q0Var.i(readableArray);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGRadialGradientManagerInterface
         @ReactProp(name = "gradientUnits")
         public void setGradientUnits(q0 q0Var, int i10) {
-            q0Var.i(i10);
+            q0Var.j(i10);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGRadialGradientManagerInterface
         @ReactProp(name = "rx")
         public void setRx(q0 q0Var, Dynamic dynamic) {
-            q0Var.j(dynamic);
+            q0Var.k(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGRadialGradientManagerInterface
         @ReactProp(name = "ry")
         public void setRy(q0 q0Var, Dynamic dynamic) {
-            q0Var.k(dynamic);
+            q0Var.l(dynamic);
         }
     }
 
@@ -3486,37 +3486,37 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGRectManagerInterface
         @ReactProp(name = "height")
         public void setHeight(r0 r0Var, Dynamic dynamic) {
-            r0Var.c(dynamic);
+            r0Var.d(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGRectManagerInterface
         @ReactProp(name = "rx")
         public void setRx(r0 r0Var, Dynamic dynamic) {
-            r0Var.d(dynamic);
+            r0Var.e(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGRectManagerInterface
         @ReactProp(name = "ry")
         public void setRy(r0 r0Var, Dynamic dynamic) {
-            r0Var.e(dynamic);
+            r0Var.f(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGRectManagerInterface
         @ReactProp(name = "width")
         public void setWidth(r0 r0Var, Dynamic dynamic) {
-            r0Var.f(dynamic);
+            r0Var.g(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGRectManagerInterface
         @ReactProp(name = "x")
         public void setX(r0 r0Var, Dynamic dynamic) {
-            r0Var.g(dynamic);
+            r0Var.h(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGRectManagerInterface
         @ReactProp(name = "y")
         public void setY(r0 r0Var, Dynamic dynamic) {
-            r0Var.h(dynamic);
+            r0Var.i(dynamic);
         }
     }
 
@@ -4003,7 +4003,7 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGTSpanManagerInterface
         @ReactProp(name = "content")
         public void setContent(w0 w0Var, String str) {
-            w0Var.L(str);
+            w0Var.M(str);
         }
 
         TSpanViewManager(VirtualViewManager.SVGClass sVGClass) {
@@ -4190,7 +4190,7 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
 
         @ReactProp(name = "midLine")
         public void setSharp(x0 x0Var, String str) {
-            x0Var.J(str);
+            x0Var.K(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGTextPathManagerInterface
@@ -4274,30 +4274,30 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGTextPathManagerInterface
         @ReactProp(name = "href")
         public void setHref(x0 x0Var, String str) {
-            x0Var.I(str);
+            x0Var.J(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGTextPathManagerInterface
         public void setMidLine(x0 x0Var, String str) {
-            x0Var.J(str);
+            x0Var.K(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGTextPathManagerInterface
         @ReactProp(name = "side")
         public void setSide(x0 x0Var, String str) {
-            x0Var.K(str);
+            x0Var.L(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGTextPathManagerInterface
         @ReactProp(name = "spacing")
         public void setSpacing(x0 x0Var, String str) {
-            x0Var.L(str);
+            x0Var.M(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGTextPathManagerInterface
         @ReactProp(name = "startOffset")
         public void setStartOffset(x0 x0Var, Dynamic dynamic) {
-            x0Var.M(dynamic);
+            x0Var.N(dynamic);
         }
 
         TextPathViewManager(VirtualViewManager.SVGClass sVGClass) {
@@ -4308,7 +4308,7 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.horcrux.svg.RenderableViewManager.TextViewManagerAbstract
         @ReactProp(name = "method")
         public void setMethod(x0 x0Var, String str) {
-            x0Var.y(str);
+            x0Var.z(str);
         }
     }
 
@@ -4319,22 +4319,22 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         }
 
         public void setAlignmentBaseline(K k10, String str) {
-            k10.y(str);
+            k10.z(str);
         }
 
         @ReactProp(name = "baselineShift")
         public void setBaselineShift(K k10, Dynamic dynamic) {
-            k10.t(dynamic);
+            k10.u(dynamic);
         }
 
         @ReactProp(name = "dx")
         public void setDx(K k10, Dynamic dynamic) {
-            k10.u(dynamic);
+            k10.v(dynamic);
         }
 
         @ReactProp(name = "dy")
         public void setDy(K k10, Dynamic dynamic) {
-            k10.v(dynamic);
+            k10.w(dynamic);
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -4346,47 +4346,47 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
 
         @ReactProp(name = "inlineSize")
         public void setInlineSize(K k10, Dynamic dynamic) {
-            k10.w(dynamic);
+            k10.x(dynamic);
         }
 
         @ReactProp(name = "lengthAdjust")
         public void setLengthAdjust(K k10, String str) {
-            k10.x(str);
+            k10.y(str);
         }
 
         @ReactProp(name = "alignmentBaseline")
         public void setMethod(K k10, String str) {
-            k10.y(str);
+            k10.z(str);
         }
 
         @ReactProp(name = "rotate")
         public void setRotate(K k10, Dynamic dynamic) {
-            k10.B(dynamic);
+            k10.C(dynamic);
         }
 
         @ReactProp(name = "textLength")
         public void setTextLength(K k10, Dynamic dynamic) {
-            k10.C(dynamic);
+            k10.D(dynamic);
         }
 
         @ReactProp(name = "verticalAlign")
         public void setVerticalAlign(K k10, Dynamic dynamic) {
-            k10.D(dynamic);
+            k10.E(dynamic);
         }
 
         @ReactProp(name = "x")
         public void setX(K k10, Dynamic dynamic) {
-            k10.z(dynamic);
+            k10.A(dynamic);
         }
 
         @ReactProp(name = "y")
         public void setY(K k10, Dynamic dynamic) {
-            k10.A(dynamic);
+            k10.B(dynamic);
         }
 
         @ReactProp(name = "font")
         public void setFont(K k10, Dynamic dynamic) {
-            k10.k(dynamic);
+            k10.l(dynamic);
         }
     }
 
@@ -4564,31 +4564,31 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @Override // com.facebook.react.viewmanagers.RNSVGUseManagerInterface
         @ReactProp(name = "height")
         public void setHeight(k1 k1Var, Dynamic dynamic) {
-            k1Var.c(dynamic);
+            k1Var.d(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGUseManagerInterface
         @ReactProp(name = "href")
         public void setHref(k1 k1Var, String str) {
-            k1Var.d(str);
+            k1Var.e(str);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGUseManagerInterface
         @ReactProp(name = "width")
         public void setWidth(k1 k1Var, Dynamic dynamic) {
-            k1Var.e(dynamic);
+            k1Var.f(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGUseManagerInterface
         @ReactProp(name = "x")
         public void setX(k1 k1Var, Dynamic dynamic) {
-            k1Var.f(dynamic);
+            k1Var.g(dynamic);
         }
 
         @Override // com.facebook.react.viewmanagers.RNSVGUseManagerInterface
         @ReactProp(name = "y")
         public void setY(k1 k1Var, Dynamic dynamic) {
-            k1Var.g(dynamic);
+            k1Var.h(dynamic);
         }
     }
 
@@ -4597,17 +4597,17 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f16853a;
+        static final /* synthetic */ int[] f17602a;
 
         static {
             int[] iArr = new int[ReadableType.values().length];
-            f16853a = iArr;
+            f17602a = iArr;
             try {
                 iArr[ReadableType.Number.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f16853a[ReadableType.String.ordinal()] = 2;
+                f17602a[ReadableType.String.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }

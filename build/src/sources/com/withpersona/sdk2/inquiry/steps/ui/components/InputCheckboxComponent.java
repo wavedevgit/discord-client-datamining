@@ -6,39 +6,39 @@ import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.g;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
-import gq.e0;
-import gq.k5;
-import gq.u4;
-import gq.v;
-import hq.m;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0002\b\u0010\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\b\b\u0087\b\u0018\u00002\u00020\u00012\b\u0012\u0004\u0012\u00020\u00000\u00022\u00020\u00032\u00020\u0004B+\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\b\u0010\n\u001a\u0004\u0018\u00010\t\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\t¢\u0006\u0004\b\f\u0010\rB\u001b\b\u0016\u0012\u0006\u0010\u000f\u001a\u00020\u000e\u0012\b\b\u0002\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b\f\u0010\u0010J\u0017\u0010\u0012\u001a\u00020\u00002\u0006\u0010\u0011\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\u0012\u0010\u0013J\u001d\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u0015\u001a\u00020\u00142\u0006\u0010\u0017\u001a\u00020\u0016¢\u0006\u0004\b\u0019\u0010\u001aJ\r\u0010\u001b\u001a\u00020\u0016¢\u0006\u0004\b\u001b\u0010\u001cJ<\u0010\u001d\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\u00072\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\tHÆ\u0001¢\u0006\u0004\b\u001d\u0010\u001eJ\u0010\u0010\u001f\u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b\u001f\u0010 J\u0010\u0010!\u001a\u00020\u0016HÖ\u0001¢\u0006\u0004\b!\u0010\u001cJ\u001a\u0010$\u001a\u00020\u00072\b\u0010#\u001a\u0004\u0018\u00010\"HÖ\u0003¢\u0006\u0004\b$\u0010%R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b&\u0010'\u001a\u0004\b(\u0010 R\u0017\u0010\b\u001a\u00020\u00078\u0006¢\u0006\f\n\u0004\b)\u0010*\u001a\u0004\b+\u0010,R\u001c\u0010\n\u001a\u0004\u0018\u00010\t8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b-\u0010.\u001a\u0004\b/\u00100R\u001c\u0010\u000b\u001a\u0004\u0018\u00010\t8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b1\u0010.\u001a\u0004\b2\u00100R&\u0010:\u001a\b\u0012\u0004\u0012\u000204038\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\b5\u00106\u0012\u0004\b8\u00109\u001a\u0004\b&\u00107R(\u0010B\u001a\u00020;8\u0016@\u0016X\u0097\u000e¢\u0006\u0018\n\u0004\b<\u0010=\u0012\u0004\bA\u00109\u001a\u0004\b>\u0010?\"\u0004\b)\u0010@¨\u0006C"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputCheckboxComponent;", "Lgq/k5;", "Lgq/u4;", "Lgq/v;", "Lgq/e0;", "", StackTraceHelper.NAME_KEY, "", "value", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "<init>", "(Ljava/lang/String;ZLcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;)V", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputCheckbox;", "config", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputCheckbox;Z)V", "newValue", "f", "(Z)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputCheckboxComponent;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "b", "(Ljava/lang/String;ZLcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputCheckboxComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "Z", "getValue", "()Z", "i", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "o", "getDisabled", "", "Loq/a;", "p", "Ljava/util/List;", "()Ljava/util/List;", "getAssociatedViews$annotations", "()V", "associatedViews", "Lhq/m;", "q", "Lhq/m;", "a", "()Lhq/m;", "(Lhq/m;)V", "getTwoStateViewController$annotations", "twoStateViewController", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import pq.e0;
+import pq.k5;
+import pq.u4;
+import pq.v;
+import qq.m;
+@Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0002\b\u0010\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\b\b\u0087\b\u0018\u00002\u00020\u00012\b\u0012\u0004\u0012\u00020\u00000\u00022\u00020\u00032\u00020\u0004B+\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\b\u0010\n\u001a\u0004\u0018\u00010\t\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\t¢\u0006\u0004\b\f\u0010\rB\u001b\b\u0016\u0012\u0006\u0010\u000f\u001a\u00020\u000e\u0012\b\b\u0002\u0010\b\u001a\u00020\u0007¢\u0006\u0004\b\f\u0010\u0010J\u0017\u0010\u0012\u001a\u00020\u00002\u0006\u0010\u0011\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\u0012\u0010\u0013J\u001d\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u0015\u001a\u00020\u00142\u0006\u0010\u0017\u001a\u00020\u0016¢\u0006\u0004\b\u0019\u0010\u001aJ\r\u0010\u001b\u001a\u00020\u0016¢\u0006\u0004\b\u001b\u0010\u001cJ<\u0010\u001d\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\u00072\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\tHÆ\u0001¢\u0006\u0004\b\u001d\u0010\u001eJ\u0010\u0010\u001f\u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b\u001f\u0010 J\u0010\u0010!\u001a\u00020\u0016HÖ\u0001¢\u0006\u0004\b!\u0010\u001cJ\u001a\u0010$\u001a\u00020\u00072\b\u0010#\u001a\u0004\u0018\u00010\"HÖ\u0003¢\u0006\u0004\b$\u0010%R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b&\u0010'\u001a\u0004\b(\u0010 R\u0017\u0010\b\u001a\u00020\u00078\u0006¢\u0006\f\n\u0004\b)\u0010*\u001a\u0004\b+\u0010,R\u001c\u0010\n\u001a\u0004\u0018\u00010\t8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b-\u0010.\u001a\u0004\b/\u00100R\u001c\u0010\u000b\u001a\u0004\u0018\u00010\t8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b1\u0010.\u001a\u0004\b2\u00100R&\u0010:\u001a\b\u0012\u0004\u0012\u000204038\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\b5\u00106\u0012\u0004\b8\u00109\u001a\u0004\b&\u00107R(\u0010B\u001a\u00020;8\u0016@\u0016X\u0097\u000e¢\u0006\u0018\n\u0004\b<\u0010=\u0012\u0004\bA\u00109\u001a\u0004\b>\u0010?\"\u0004\b)\u0010@¨\u0006C"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputCheckboxComponent;", "Lpq/k5;", "Lpq/u4;", "Lpq/v;", "Lpq/e0;", "", StackTraceHelper.NAME_KEY, "", "value", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "<init>", "(Ljava/lang/String;ZLcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;)V", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputCheckbox;", "config", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputCheckbox;Z)V", "newValue", "f", "(Z)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputCheckboxComponent;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "b", "(Ljava/lang/String;ZLcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputCheckboxComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "Z", "getValue", "()Z", "i", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "o", "getDisabled", "", "Lxq/a;", "p", "Ljava/util/List;", "()Ljava/util/List;", "getAssociatedViews$annotations", "()V", "associatedViews", "Lqq/m;", "q", "Lqq/m;", "a", "()Lqq/m;", "(Lqq/m;)V", "getTwoStateViewController$annotations", "twoStateViewController", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class InputCheckboxComponent implements k5, u4, v, e0 {
     @NotNull
     public static final Parcelable.Creator<InputCheckboxComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19749d;
+    private final String f20629d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f19750e;
+    private final boolean f20630e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f19751i;
+    private final JsonLogicBoolean f20631i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f19752o;
+    private final JsonLogicBoolean f20632o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final List f19753p;
+    private final List f20633p;
 
     /* renamed from: q  reason: collision with root package name */
-    private m f19754q;
+    private m f20634q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -58,26 +58,26 @@ public final class InputCheckboxComponent implements k5, u4, v, e0 {
 
     public InputCheckboxComponent(String name, boolean z10, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f19749d = name;
-        this.f19750e = z10;
-        this.f19751i = jsonLogicBoolean;
-        this.f19752o = jsonLogicBoolean2;
-        this.f19753p = new ArrayList();
-        this.f19754q = new m(z10);
+        this.f20629d = name;
+        this.f20630e = z10;
+        this.f20631i = jsonLogicBoolean;
+        this.f20632o = jsonLogicBoolean2;
+        this.f20633p = new ArrayList();
+        this.f20634q = new m(z10);
     }
 
     public static /* synthetic */ InputCheckboxComponent c(InputCheckboxComponent inputCheckboxComponent, String str, boolean z10, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputCheckboxComponent.f19749d;
+            str = inputCheckboxComponent.f20629d;
         }
         if ((i10 & 2) != 0) {
-            z10 = inputCheckboxComponent.f19750e;
+            z10 = inputCheckboxComponent.f20630e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputCheckboxComponent.f19751i;
+            jsonLogicBoolean = inputCheckboxComponent.f20631i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputCheckboxComponent.f19752o;
+            jsonLogicBoolean2 = inputCheckboxComponent.f20632o;
         }
         return inputCheckboxComponent.b(str, z10, jsonLogicBoolean, jsonLogicBoolean2);
     }
@@ -86,9 +86,9 @@ public final class InputCheckboxComponent implements k5, u4, v, e0 {
     public static /* synthetic */ void getTwoStateViewController$annotations() {
     }
 
-    @Override // gq.u4
+    @Override // pq.u4
     public m a() {
-        return this.f19754q;
+        return this.f20634q;
     }
 
     public final InputCheckboxComponent b(String name, boolean z10, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
@@ -96,9 +96,9 @@ public final class InputCheckboxComponent implements k5, u4, v, e0 {
         return new InputCheckboxComponent(name, z10, jsonLogicBoolean, jsonLogicBoolean2);
     }
 
-    @Override // gq.e0
+    @Override // pq.e0
     public List d() {
-        return this.f19753p;
+        return this.f20633p;
     }
 
     @Override // android.os.Parcelable
@@ -108,7 +108,7 @@ public final class InputCheckboxComponent implements k5, u4, v, e0 {
 
     public void e(m mVar) {
         Intrinsics.checkNotNullParameter(mVar, "<set-?>");
-        this.f19754q = mVar;
+        this.f20634q = mVar;
     }
 
     public boolean equals(Object obj) {
@@ -117,12 +117,12 @@ public final class InputCheckboxComponent implements k5, u4, v, e0 {
         }
         if (obj instanceof InputCheckboxComponent) {
             InputCheckboxComponent inputCheckboxComponent = (InputCheckboxComponent) obj;
-            return Intrinsics.areEqual(this.f19749d, inputCheckboxComponent.f19749d) && this.f19750e == inputCheckboxComponent.f19750e && Intrinsics.areEqual(this.f19751i, inputCheckboxComponent.f19751i) && Intrinsics.areEqual(this.f19752o, inputCheckboxComponent.f19752o);
+            return Intrinsics.areEqual(this.f20629d, inputCheckboxComponent.f20629d) && this.f20630e == inputCheckboxComponent.f20630e && Intrinsics.areEqual(this.f20631i, inputCheckboxComponent.f20631i) && Intrinsics.areEqual(this.f20632o, inputCheckboxComponent.f20632o);
         }
         return false;
     }
 
-    @Override // gq.u4
+    @Override // pq.u4
     /* renamed from: f */
     public InputCheckboxComponent update(boolean z10) {
         InputCheckboxComponent c10 = c(this, null, z10, null, null, 13, null);
@@ -130,44 +130,44 @@ public final class InputCheckboxComponent implements k5, u4, v, e0 {
         return c10;
     }
 
-    @Override // gq.v
+    @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f19752o;
+        return this.f20632o;
     }
 
-    @Override // gq.e0
+    @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f19751i;
+        return this.f20631i;
     }
 
-    @Override // gq.k5
+    @Override // pq.k5
     public String getName() {
-        return this.f19749d;
+        return this.f20629d;
     }
 
     public int hashCode() {
-        int hashCode = ((this.f19749d.hashCode() * 31) + Boolean.hashCode(this.f19750e)) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f19751i;
+        int hashCode = ((this.f20629d.hashCode() * 31) + Boolean.hashCode(this.f20630e)) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20631i;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19752o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20632o;
         return hashCode2 + (jsonLogicBoolean2 != null ? jsonLogicBoolean2.hashCode() : 0);
     }
 
     public String toString() {
-        String str = this.f19749d;
-        boolean z10 = this.f19750e;
-        JsonLogicBoolean jsonLogicBoolean = this.f19751i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19752o;
+        String str = this.f20629d;
+        boolean z10 = this.f20630e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20631i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20632o;
         return "InputCheckboxComponent(name=" + str + ", value=" + z10 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f19749d);
-        dest.writeInt(this.f19750e ? 1 : 0);
-        dest.writeParcelable(this.f19751i, i10);
-        dest.writeParcelable(this.f19752o, i10);
+        dest.writeString(this.f20629d);
+        dest.writeInt(this.f20630e ? 1 : 0);
+        dest.writeParcelable(this.f20631i, i10);
+        dest.writeParcelable(this.f20632o, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

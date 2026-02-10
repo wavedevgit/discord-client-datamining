@@ -88,7 +88,7 @@ public final class GovernmentIdNfcScan_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -173,7 +173,7 @@ public final class GovernmentIdNfcScan_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, GovernmentIdNfcScan.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
             writer.J("disabled");

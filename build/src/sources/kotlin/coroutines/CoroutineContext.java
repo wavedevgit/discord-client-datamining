@@ -5,7 +5,7 @@ import kotlin.coroutines.CoroutineContext;
 import kotlin.coroutines.d;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
-@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u000b\bg\u0018\u00002\u00020\u0001:\u0002\u0013\u0014J*\u0010\u0006\u001a\u0004\u0018\u00018\u0000\"\b\b\u0000\u0010\u0003*\u00020\u00022\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004H¦\u0002¢\u0006\u0004\b\u0006\u0010\u0007J7\u0010\f\u001a\u00028\u0000\"\u0004\b\u0000\u0010\b2\u0006\u0010\t\u001a\u00028\u00002\u0018\u0010\u000b\u001a\u0014\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00028\u00000\nH&¢\u0006\u0004\b\f\u0010\rJ\u0018\u0010\u000f\u001a\u00020\u00002\u0006\u0010\u000e\u001a\u00020\u0000H\u0096\u0002¢\u0006\u0004\b\u000f\u0010\u0010J\u001b\u0010\u0011\u001a\u00020\u00002\n\u0010\u0005\u001a\u0006\u0012\u0002\b\u00030\u0004H&¢\u0006\u0004\b\u0011\u0010\u0012¨\u0006\u0015"}, d2 = {"Lkotlin/coroutines/CoroutineContext;", "", "Lkotlin/coroutines/CoroutineContext$Element;", "E", "Lkotlin/coroutines/CoroutineContext$b;", "key", "m", "(Lkotlin/coroutines/CoroutineContext$b;)Lkotlin/coroutines/CoroutineContext$Element;", "R", "initial", "Lkotlin/Function2;", "operation", "u1", "(Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;", "context", "V0", "(Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;", "s1", "(Lkotlin/coroutines/CoroutineContext$b;)Lkotlin/coroutines/CoroutineContext;", "b", "Element", "kotlin-stdlib"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u000b\bg\u0018\u00002\u00020\u0001:\u0002\u0013\u0014J*\u0010\u0006\u001a\u0004\u0018\u00018\u0000\"\b\b\u0000\u0010\u0003*\u00020\u00022\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00028\u00000\u0004H¦\u0002¢\u0006\u0004\b\u0006\u0010\u0007J7\u0010\f\u001a\u00028\u0000\"\u0004\b\u0000\u0010\b2\u0006\u0010\t\u001a\u00028\u00002\u0018\u0010\u000b\u001a\u0014\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00028\u00000\nH&¢\u0006\u0004\b\f\u0010\rJ\u0018\u0010\u000f\u001a\u00020\u00002\u0006\u0010\u000e\u001a\u00020\u0000H\u0096\u0002¢\u0006\u0004\b\u000f\u0010\u0010J\u001b\u0010\u0011\u001a\u00020\u00002\n\u0010\u0005\u001a\u0006\u0012\u0002\b\u00030\u0004H&¢\u0006\u0004\b\u0011\u0010\u0012¨\u0006\u0015"}, d2 = {"Lkotlin/coroutines/CoroutineContext;", "", "Lkotlin/coroutines/CoroutineContext$Element;", "E", "Lkotlin/coroutines/CoroutineContext$b;", "key", "m", "(Lkotlin/coroutines/CoroutineContext$b;)Lkotlin/coroutines/CoroutineContext$Element;", "R", "initial", "Lkotlin/Function2;", "operation", "a1", "(Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;", "context", "O0", "(Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;", "Z0", "(Lkotlin/coroutines/CoroutineContext$b;)Lkotlin/coroutines/CoroutineContext;", "b", "Element", "kotlin-stdlib"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public interface CoroutineContext {
 
@@ -32,7 +32,7 @@ public interface CoroutineContext {
             public static CoroutineContext c(Element element, b key) {
                 Intrinsics.checkNotNullParameter(key, "key");
                 if (Intrinsics.areEqual(element.getKey(), key)) {
-                    return e.f31839d;
+                    return e.f32061d;
                 }
                 return element;
             }
@@ -53,10 +53,10 @@ public interface CoroutineContext {
     public static final class a {
         public static CoroutineContext b(CoroutineContext coroutineContext, CoroutineContext context) {
             Intrinsics.checkNotNullParameter(context, "context");
-            if (context == e.f31839d) {
+            if (context == e.f32061d) {
                 return coroutineContext;
             }
-            return (CoroutineContext) context.u1(coroutineContext, new Function2() { // from class: wr.c
+            return (CoroutineContext) context.a1(coroutineContext, new Function2() { // from class: fs.c
                 @Override // kotlin.jvm.functions.Function2
                 public final Object invoke(Object obj, Object obj2) {
                     CoroutineContext c10;
@@ -70,21 +70,21 @@ public interface CoroutineContext {
         public static CoroutineContext c(CoroutineContext acc, Element element) {
             Intrinsics.checkNotNullParameter(acc, "acc");
             Intrinsics.checkNotNullParameter(element, "element");
-            CoroutineContext s12 = acc.s1(element.getKey());
-            e eVar = e.f31839d;
-            if (s12 == eVar) {
+            CoroutineContext Z0 = acc.Z0(element.getKey());
+            e eVar = e.f32061d;
+            if (Z0 == eVar) {
                 return element;
             }
-            d.b bVar = d.f31837g;
-            d dVar = (d) s12.m(bVar);
+            d.b bVar = d.f32059j;
+            d dVar = (d) Z0.m(bVar);
             if (dVar == null) {
-                return new c(s12, element);
+                return new c(Z0, element);
             }
-            CoroutineContext s13 = s12.s1(bVar);
-            if (s13 == eVar) {
+            CoroutineContext Z02 = Z0.Z0(bVar);
+            if (Z02 == eVar) {
                 return new c(element, dVar);
             }
-            return new c(new c(s13, element), dVar);
+            return new c(new c(Z02, element), dVar);
         }
     }
 
@@ -92,11 +92,11 @@ public interface CoroutineContext {
     public interface b {
     }
 
-    CoroutineContext V0(CoroutineContext coroutineContext);
+    CoroutineContext O0(CoroutineContext coroutineContext);
+
+    CoroutineContext Z0(b bVar);
+
+    Object a1(Object obj, Function2 function2);
 
     Element m(b bVar);
-
-    CoroutineContext s1(b bVar);
-
-    Object u1(Object obj, Function2 function2);
 }

@@ -1,75 +1,75 @@
 package com.google.zxing;
 
-import ik.a;
-import ik.o;
-import ik.p;
 import java.util.EnumMap;
 import java.util.Map;
+import kk.a;
+import kk.o;
+import kk.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class Result {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f16693a;
+    private final String f17442a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final byte[] f16694b;
+    private final byte[] f17443b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f16695c;
+    private final int f17444c;
 
     /* renamed from: d  reason: collision with root package name */
-    private p[] f16696d;
+    private p[] f17445d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f16697e;
+    private final a f17446e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Map f16698f;
+    private Map f17447f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final long f16699g;
+    private final long f17448g;
 
     public Result(String str, byte[] bArr, p[] pVarArr, a aVar) {
         this(str, bArr, pVarArr, aVar, System.currentTimeMillis());
     }
 
     public void a(p[] pVarArr) {
-        p[] pVarArr2 = this.f16696d;
+        p[] pVarArr2 = this.f17445d;
         if (pVarArr2 == null) {
-            this.f16696d = pVarArr;
+            this.f17445d = pVarArr;
         } else if (pVarArr != null && pVarArr.length > 0) {
             p[] pVarArr3 = new p[pVarArr2.length + pVarArr.length];
             System.arraycopy(pVarArr2, 0, pVarArr3, 0, pVarArr2.length);
             System.arraycopy(pVarArr, 0, pVarArr3, pVarArr2.length, pVarArr.length);
-            this.f16696d = pVarArr3;
+            this.f17445d = pVarArr3;
         }
     }
 
     public a b() {
-        return this.f16697e;
+        return this.f17446e;
     }
 
     public byte[] c() {
-        return this.f16694b;
+        return this.f17443b;
     }
 
     public Map d() {
-        return this.f16698f;
+        return this.f17447f;
     }
 
     public p[] e() {
-        return this.f16696d;
+        return this.f17445d;
     }
 
     public String f() {
-        return this.f16693a;
+        return this.f17442a;
     }
 
     public void g(Map map) {
         if (map != null) {
-            Map map2 = this.f16698f;
+            Map map2 = this.f17447f;
             if (map2 == null) {
-                this.f16698f = map;
+                this.f17447f = map;
             } else {
                 map2.putAll(map);
             }
@@ -77,14 +77,14 @@ public final class Result {
     }
 
     public void h(o oVar, Object obj) {
-        if (this.f16698f == null) {
-            this.f16698f = new EnumMap(o.class);
+        if (this.f17447f == null) {
+            this.f17447f = new EnumMap(o.class);
         }
-        this.f16698f.put(oVar, obj);
+        this.f17447f.put(oVar, obj);
     }
 
     public String toString() {
-        return this.f16693a;
+        return this.f17442a;
     }
 
     public Result(String str, byte[] bArr, p[] pVarArr, a aVar, long j10) {
@@ -92,12 +92,12 @@ public final class Result {
     }
 
     public Result(String str, byte[] bArr, int i10, p[] pVarArr, a aVar, long j10) {
-        this.f16693a = str;
-        this.f16694b = bArr;
-        this.f16695c = i10;
-        this.f16696d = pVarArr;
-        this.f16697e = aVar;
-        this.f16698f = null;
-        this.f16699g = j10;
+        this.f17442a = str;
+        this.f17443b = bArr;
+        this.f17444c = i10;
+        this.f17445d = pVarArr;
+        this.f17446e = aVar;
+        this.f17447f = null;
+        this.f17448g = j10;
     }
 }

@@ -7,33 +7,33 @@ public final class t extends b implements l0 {
     private static final long serialVersionUID = -1337148214680014674L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f38673o;
+    private final transient int f37677o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient Integer f38674p;
+    private final transient Integer f37678p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient Integer f38675q;
+    private final transient Integer f37679q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient char f38676r;
+    private final transient char f37680r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient st.t f38677s;
+    private final transient bu.t f37681s;
 
     private t(String str, int i10, Integer num, Integer num2, char c10) {
         super(str);
         boolean z10;
-        this.f38673o = i10;
-        this.f38674p = num;
-        this.f38675q = num2;
-        this.f38676r = c10;
+        this.f37677o = i10;
+        this.f37678p = num;
+        this.f37679q = num2;
+        this.f37680r = c10;
         if (i10 != 5 && i10 != 7 && i10 != 9 && i10 != 13) {
             z10 = false;
         } else {
             z10 = true;
         }
-        this.f38677s = new m0(this, z10);
+        this.f37681s = new m0(this, z10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -73,50 +73,50 @@ public final class t extends b implements l0 {
         throw new InvalidObjectException(name());
     }
 
-    @Override // st.p
+    @Override // bu.p
     public boolean A() {
         return false;
     }
 
-    @Override // st.p
-    public boolean D() {
+    @Override // bu.p
+    public boolean C() {
         return true;
     }
 
-    @Override // st.e
+    @Override // bu.e
     protected boolean E() {
         return true;
     }
 
-    @Override // st.p
+    @Override // bu.p
     /* renamed from: I */
-    public Integer e() {
-        return this.f38675q;
+    public Integer f() {
+        return this.f37679q;
     }
 
-    @Override // st.p
+    @Override // bu.p
     /* renamed from: J */
     public Integer B() {
-        return this.f38674p;
+        return this.f37678p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int K() {
-        return this.f38673o;
+        return this.f37677o;
     }
 
-    @Override // st.e, st.p
+    @Override // bu.e, bu.p
     public char d() {
-        return this.f38676r;
+        return this.f37680r;
     }
 
-    @Override // st.p
+    @Override // bu.p
     public Class getType() {
         return Integer.class;
     }
 
     @Override // net.time4j.l0
-    public /* bridge */ /* synthetic */ o v(Number number) {
+    public /* bridge */ /* synthetic */ o s(Number number) {
         return super.F((Integer) number);
     }
 }

@@ -10,58 +10,58 @@ import p4.u;
 public final class w implements v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f43013a;
+    private final r3.u f41471a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f43014b;
+    private final r3.i f41472b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r3.h f43015c;
+    private final r3.h f41473c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final r3.a0 f43016d;
+    private final r3.a0 f41474d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final r3.a0 f43017e;
+    private final r3.a0 f41475e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final r3.a0 f43018f;
+    private final r3.a0 f41476f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final r3.a0 f43019g;
+    private final r3.a0 f41477g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final r3.a0 f43020h;
+    private final r3.a0 f41478h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final r3.a0 f43021i;
+    private final r3.a0 f41479i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final r3.a0 f43022j;
+    private final r3.a0 f41480j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final r3.a0 f43023k;
+    private final r3.a0 f41481k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final r3.a0 f43024l;
+    private final r3.a0 f41482l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final r3.a0 f43025m;
+    private final r3.a0 f41483m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final r3.a0 f43026n;
+    private final r3.a0 f41484n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final r3.a0 f43027o;
+    private final r3.a0 f41485o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final r3.a0 f43028p;
+    private final r3.a0 f41486p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final r3.a0 f43029q;
+    private final r3.a0 f41487q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final r3.a0 f43030r;
+    private final r3.a0 f41488r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.a0 {
@@ -173,80 +173,80 @@ public final class w implements v {
         @Override // r3.i
         /* renamed from: k */
         public void i(x3.k kVar, u uVar) {
-            String str = uVar.f42988a;
+            String str = uVar.f41446a;
             if (str == null) {
-                kVar.N1(1);
+                kVar.S1(1);
             } else {
-                kVar.d1(1, str);
+                kVar.i1(1, str);
             }
-            b0 b0Var = b0.f42948a;
-            kVar.q1(2, b0.j(uVar.f42989b));
-            String str2 = uVar.f42990c;
+            b0 b0Var = b0.f41406a;
+            kVar.v1(2, b0.j(uVar.f41447b));
+            String str2 = uVar.f41448c;
             if (str2 == null) {
-                kVar.N1(3);
+                kVar.S1(3);
             } else {
-                kVar.d1(3, str2);
+                kVar.i1(3, str2);
             }
-            String str3 = uVar.f42991d;
+            String str3 = uVar.f41449d;
             if (str3 == null) {
-                kVar.N1(4);
+                kVar.S1(4);
             } else {
-                kVar.d1(4, str3);
+                kVar.i1(4, str3);
             }
-            byte[] o10 = androidx.work.b.o(uVar.f42992e);
+            byte[] o10 = androidx.work.b.o(uVar.f41450e);
             if (o10 == null) {
-                kVar.N1(5);
+                kVar.S1(5);
             } else {
-                kVar.y1(5, o10);
+                kVar.D1(5, o10);
             }
-            byte[] o11 = androidx.work.b.o(uVar.f42993f);
+            byte[] o11 = androidx.work.b.o(uVar.f41451f);
             if (o11 == null) {
-                kVar.N1(6);
+                kVar.S1(6);
             } else {
-                kVar.y1(6, o11);
+                kVar.D1(6, o11);
             }
-            kVar.q1(7, uVar.f42994g);
-            kVar.q1(8, uVar.f42995h);
-            kVar.q1(9, uVar.f42996i);
-            kVar.q1(10, uVar.f42998k);
-            kVar.q1(11, b0.a(uVar.f42999l));
-            kVar.q1(12, uVar.f43000m);
-            kVar.q1(13, uVar.f43001n);
-            kVar.q1(14, uVar.f43002o);
-            kVar.q1(15, uVar.f43003p);
-            kVar.q1(16, uVar.f43004q ? 1L : 0L);
-            kVar.q1(17, b0.h(uVar.f43005r));
-            kVar.q1(18, uVar.i());
-            kVar.q1(19, uVar.f());
-            kVar.q1(20, uVar.g());
-            kVar.q1(21, uVar.h());
-            kVar.q1(22, uVar.j());
-            k4.d dVar = uVar.f42997j;
+            kVar.v1(7, uVar.f41452g);
+            kVar.v1(8, uVar.f41453h);
+            kVar.v1(9, uVar.f41454i);
+            kVar.v1(10, uVar.f41456k);
+            kVar.v1(11, b0.a(uVar.f41457l));
+            kVar.v1(12, uVar.f41458m);
+            kVar.v1(13, uVar.f41459n);
+            kVar.v1(14, uVar.f41460o);
+            kVar.v1(15, uVar.f41461p);
+            kVar.v1(16, uVar.f41462q ? 1L : 0L);
+            kVar.v1(17, b0.h(uVar.f41463r));
+            kVar.v1(18, uVar.i());
+            kVar.v1(19, uVar.f());
+            kVar.v1(20, uVar.g());
+            kVar.v1(21, uVar.h());
+            kVar.v1(22, uVar.j());
+            k4.d dVar = uVar.f41455j;
             if (dVar != null) {
-                kVar.q1(23, b0.g(dVar.d()));
-                kVar.q1(24, dVar.g() ? 1L : 0L);
-                kVar.q1(25, dVar.h() ? 1L : 0L);
-                kVar.q1(26, dVar.f() ? 1L : 0L);
-                kVar.q1(27, dVar.i() ? 1L : 0L);
-                kVar.q1(28, dVar.b());
-                kVar.q1(29, dVar.a());
+                kVar.v1(23, b0.g(dVar.d()));
+                kVar.v1(24, dVar.g() ? 1L : 0L);
+                kVar.v1(25, dVar.h() ? 1L : 0L);
+                kVar.v1(26, dVar.f() ? 1L : 0L);
+                kVar.v1(27, dVar.i() ? 1L : 0L);
+                kVar.v1(28, dVar.b());
+                kVar.v1(29, dVar.a());
                 byte[] i10 = b0.i(dVar.c());
                 if (i10 == null) {
-                    kVar.N1(30);
+                    kVar.S1(30);
                     return;
                 } else {
-                    kVar.y1(30, i10);
+                    kVar.D1(30, i10);
                     return;
                 }
             }
-            kVar.N1(23);
-            kVar.N1(24);
-            kVar.N1(25);
-            kVar.N1(26);
-            kVar.N1(27);
-            kVar.N1(28);
-            kVar.N1(29);
-            kVar.N1(30);
+            kVar.S1(23);
+            kVar.S1(24);
+            kVar.S1(25);
+            kVar.S1(26);
+            kVar.S1(27);
+            kVar.S1(28);
+            kVar.S1(29);
+            kVar.S1(30);
         }
     }
 
@@ -347,24 +347,24 @@ public final class w implements v {
     }
 
     public w(r3.u uVar) {
-        this.f43013a = uVar;
-        this.f43014b = new i(uVar);
-        this.f43015c = new j(uVar);
-        this.f43016d = new k(uVar);
-        this.f43017e = new l(uVar);
-        this.f43018f = new m(uVar);
-        this.f43019g = new n(uVar);
-        this.f43020h = new o(uVar);
-        this.f43021i = new p(uVar);
-        this.f43022j = new q(uVar);
-        this.f43023k = new a(uVar);
-        this.f43024l = new b(uVar);
-        this.f43025m = new c(uVar);
-        this.f43026n = new d(uVar);
-        this.f43027o = new e(uVar);
-        this.f43028p = new f(uVar);
-        this.f43029q = new g(uVar);
-        this.f43030r = new h(uVar);
+        this.f41471a = uVar;
+        this.f41472b = new i(uVar);
+        this.f41473c = new j(uVar);
+        this.f41474d = new k(uVar);
+        this.f41475e = new l(uVar);
+        this.f41476f = new m(uVar);
+        this.f41477g = new n(uVar);
+        this.f41478h = new o(uVar);
+        this.f41479i = new p(uVar);
+        this.f41480j = new q(uVar);
+        this.f41481k = new a(uVar);
+        this.f41482l = new b(uVar);
+        this.f41483m = new c(uVar);
+        this.f41484n = new d(uVar);
+        this.f41485o = new e(uVar);
+        this.f41486p = new f(uVar);
+        this.f41487q = new g(uVar);
+        this.f41488r = new h(uVar);
     }
 
     public static List A() {
@@ -373,39 +373,39 @@ public final class w implements v {
 
     @Override // p4.v
     public void a(String str) {
-        this.f43013a.d();
-        x3.k b10 = this.f43016d.b();
+        this.f41471a.d();
+        x3.k b10 = this.f41474d.b();
         if (str == null) {
-            b10.N1(1);
+            b10.S1(1);
         } else {
-            b10.d1(1, str);
+            b10.i1(1, str);
         }
-        this.f43013a.e();
+        this.f41471a.e();
         try {
             b10.V();
-            this.f43013a.A();
+            this.f41471a.A();
         } finally {
-            this.f43013a.i();
-            this.f43016d.h(b10);
+            this.f41471a.i();
+            this.f41474d.h(b10);
         }
     }
 
     @Override // p4.v
     public void b(String str) {
-        this.f43013a.d();
-        x3.k b10 = this.f43019g.b();
+        this.f41471a.d();
+        x3.k b10 = this.f41477g.b();
         if (str == null) {
-            b10.N1(1);
+            b10.S1(1);
         } else {
-            b10.d1(1, str);
+            b10.i1(1, str);
         }
-        this.f43013a.e();
+        this.f41471a.e();
         try {
             b10.V();
-            this.f43013a.A();
+            this.f41471a.A();
         } finally {
-            this.f43013a.i();
-            this.f43019g.h(b10);
+            this.f41471a.i();
+            this.f41477g.h(b10);
         }
     }
 
@@ -423,10 +423,10 @@ public final class w implements v {
         boolean z13;
         boolean z14;
         byte[] blob3;
-        r3.x k10 = r3.x.k("SELECT * FROM workspec WHERE last_enqueue_time >= ? AND state IN (2, 3, 5) ORDER BY last_enqueue_time DESC", 1);
-        k10.q1(1, j10);
-        this.f43013a.d();
-        Cursor b10 = t3.b.b(this.f43013a, k10, false, null);
+        r3.x i10 = r3.x.i("SELECT * FROM workspec WHERE last_enqueue_time >= ? AND state IN (2, 3, 5) ORDER BY last_enqueue_time DESC", 1);
+        i10.v1(1, j10);
+        this.f41471a.d();
+        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
         try {
             int e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
             int e11 = t3.a.e(b10, "state");
@@ -442,7 +442,7 @@ public final class w implements v {
             int e21 = t3.a.e(b10, "backoff_delay_duration");
             int e22 = t3.a.e(b10, "last_enqueue_time");
             int e23 = t3.a.e(b10, "minimum_retention_duration");
-            xVar = k10;
+            xVar = i10;
             try {
                 int e24 = t3.a.e(b10, "schedule_requested_at");
                 int e25 = t3.a.e(b10, "run_in_foreground");
@@ -460,7 +460,7 @@ public final class w implements v {
                 int e37 = t3.a.e(b10, "trigger_content_update_delay");
                 int e38 = t3.a.e(b10, "trigger_max_content_delay");
                 int e39 = t3.a.e(b10, "content_uri_triggers");
-                int i10 = e23;
+                int i11 = e23;
                 ArrayList arrayList = new ArrayList(b10.getCount());
                 while (b10.moveToNext()) {
                     if (b10.isNull(e10)) {
@@ -494,88 +494,88 @@ public final class w implements v {
                     long j11 = b10.getLong(e16);
                     long j12 = b10.getLong(e17);
                     long j13 = b10.getLong(e18);
-                    int i11 = b10.getInt(e19);
+                    int i12 = b10.getInt(e19);
                     k4.a c10 = b0.c(b10.getInt(e20));
                     long j14 = b10.getLong(e21);
                     long j15 = b10.getLong(e22);
-                    int i12 = i10;
-                    long j16 = b10.getLong(i12);
-                    int i13 = e10;
-                    int i14 = e24;
-                    long j17 = b10.getLong(i14);
-                    e24 = i14;
-                    int i15 = e25;
-                    if (b10.getInt(i15) != 0) {
+                    int i13 = i11;
+                    long j16 = b10.getLong(i13);
+                    int i14 = e10;
+                    int i15 = e24;
+                    long j17 = b10.getLong(i15);
+                    e24 = i15;
+                    int i16 = e25;
+                    if (b10.getInt(i16) != 0) {
                         z10 = true;
                     } else {
                         z10 = false;
                     }
-                    e25 = i15;
-                    int i16 = e26;
-                    k4.r e40 = b0.e(b10.getInt(i16));
-                    e26 = i16;
-                    int i17 = e27;
-                    int i18 = b10.getInt(i17);
-                    e27 = i17;
-                    int i19 = e28;
-                    int i20 = b10.getInt(i19);
-                    e28 = i19;
-                    int i21 = e29;
-                    long j18 = b10.getLong(i21);
-                    e29 = i21;
-                    int i22 = e30;
-                    int i23 = b10.getInt(i22);
-                    e30 = i22;
-                    int i24 = e31;
-                    int i25 = b10.getInt(i24);
-                    e31 = i24;
-                    int i26 = e32;
-                    k4.n d10 = b0.d(b10.getInt(i26));
-                    e32 = i26;
-                    int i27 = e33;
-                    if (b10.getInt(i27) != 0) {
+                    e25 = i16;
+                    int i17 = e26;
+                    k4.r e40 = b0.e(b10.getInt(i17));
+                    e26 = i17;
+                    int i18 = e27;
+                    int i19 = b10.getInt(i18);
+                    e27 = i18;
+                    int i20 = e28;
+                    int i21 = b10.getInt(i20);
+                    e28 = i20;
+                    int i22 = e29;
+                    long j18 = b10.getLong(i22);
+                    e29 = i22;
+                    int i23 = e30;
+                    int i24 = b10.getInt(i23);
+                    e30 = i23;
+                    int i25 = e31;
+                    int i26 = b10.getInt(i25);
+                    e31 = i25;
+                    int i27 = e32;
+                    k4.n d10 = b0.d(b10.getInt(i27));
+                    e32 = i27;
+                    int i28 = e33;
+                    if (b10.getInt(i28) != 0) {
                         z11 = true;
                     } else {
                         z11 = false;
                     }
-                    e33 = i27;
-                    int i28 = e34;
-                    if (b10.getInt(i28) != 0) {
+                    e33 = i28;
+                    int i29 = e34;
+                    if (b10.getInt(i29) != 0) {
                         z12 = true;
                     } else {
                         z12 = false;
                     }
-                    e34 = i28;
-                    int i29 = e35;
-                    if (b10.getInt(i29) != 0) {
+                    e34 = i29;
+                    int i30 = e35;
+                    if (b10.getInt(i30) != 0) {
                         z13 = true;
                     } else {
                         z13 = false;
                     }
-                    e35 = i29;
-                    int i30 = e36;
-                    if (b10.getInt(i30) != 0) {
+                    e35 = i30;
+                    int i31 = e36;
+                    if (b10.getInt(i31) != 0) {
                         z14 = true;
                     } else {
                         z14 = false;
                     }
-                    e36 = i30;
-                    int i31 = e37;
-                    long j19 = b10.getLong(i31);
-                    e37 = i31;
-                    int i32 = e38;
-                    long j20 = b10.getLong(i32);
-                    e38 = i32;
-                    int i33 = e39;
-                    if (b10.isNull(i33)) {
+                    e36 = i31;
+                    int i32 = e37;
+                    long j19 = b10.getLong(i32);
+                    e37 = i32;
+                    int i33 = e38;
+                    long j20 = b10.getLong(i33);
+                    e38 = i33;
+                    int i34 = e39;
+                    if (b10.isNull(i34)) {
                         blob3 = null;
                     } else {
-                        blob3 = b10.getBlob(i33);
+                        blob3 = b10.getBlob(i34);
                     }
-                    e39 = i33;
-                    arrayList.add(new u(string, f10, string2, string3, g10, g11, j11, j12, j13, new k4.d(d10, z11, z12, z13, z14, j19, j20, b0.b(blob3)), i11, c10, j14, j15, j16, j17, z10, e40, i18, i20, j18, i23, i25));
-                    e10 = i13;
-                    i10 = i12;
+                    e39 = i34;
+                    arrayList.add(new u(string, f10, string2, string3, g10, g11, j11, j12, j13, new k4.d(d10, z11, z12, z13, z14, j19, j20, b0.b(blob3)), i12, c10, j14, j15, j16, j17, z10, e40, i19, i21, j18, i24, i26));
+                    e10 = i14;
+                    i11 = i13;
                 }
                 b10.close();
                 xVar.p();
@@ -588,48 +588,48 @@ public final class w implements v {
             }
         } catch (Throwable th3) {
             th = th3;
-            xVar = k10;
+            xVar = i10;
         }
     }
 
     @Override // p4.v
     public int d(k4.x xVar, String str) {
-        this.f43013a.d();
-        x3.k b10 = this.f43017e.b();
-        b10.q1(1, b0.j(xVar));
+        this.f41471a.d();
+        x3.k b10 = this.f41475e.b();
+        b10.v1(1, b0.j(xVar));
         if (str == null) {
-            b10.N1(2);
+            b10.S1(2);
         } else {
-            b10.d1(2, str);
+            b10.i1(2, str);
         }
-        this.f43013a.e();
+        this.f41471a.e();
         try {
             int V = b10.V();
-            this.f43013a.A();
+            this.f41471a.A();
             return V;
         } finally {
-            this.f43013a.i();
-            this.f43017e.h(b10);
+            this.f41471a.i();
+            this.f41475e.h(b10);
         }
     }
 
     @Override // p4.v
     public void e(String str, int i10) {
-        this.f43013a.d();
-        x3.k b10 = this.f43030r.b();
-        b10.q1(1, i10);
+        this.f41471a.d();
+        x3.k b10 = this.f41488r.b();
+        b10.v1(1, i10);
         if (str == null) {
-            b10.N1(2);
+            b10.S1(2);
         } else {
-            b10.d1(2, str);
+            b10.i1(2, str);
         }
-        this.f43013a.e();
+        this.f41471a.e();
         try {
             b10.V();
-            this.f43013a.A();
+            this.f41471a.A();
         } finally {
-            this.f43013a.i();
-            this.f43030r.h(b10);
+            this.f41471a.i();
+            this.f41488r.h(b10);
         }
     }
 
@@ -647,9 +647,9 @@ public final class w implements v {
         boolean z13;
         boolean z14;
         byte[] blob3;
-        r3.x k10 = r3.x.k("SELECT * FROM workspec WHERE state=0 AND schedule_requested_at<>-1", 0);
-        this.f43013a.d();
-        Cursor b10 = t3.b.b(this.f43013a, k10, false, null);
+        r3.x i10 = r3.x.i("SELECT * FROM workspec WHERE state=0 AND schedule_requested_at<>-1", 0);
+        this.f41471a.d();
+        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
         try {
             int e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
             int e11 = t3.a.e(b10, "state");
@@ -665,7 +665,7 @@ public final class w implements v {
             int e21 = t3.a.e(b10, "backoff_delay_duration");
             int e22 = t3.a.e(b10, "last_enqueue_time");
             int e23 = t3.a.e(b10, "minimum_retention_duration");
-            xVar = k10;
+            xVar = i10;
             try {
                 int e24 = t3.a.e(b10, "schedule_requested_at");
                 int e25 = t3.a.e(b10, "run_in_foreground");
@@ -683,7 +683,7 @@ public final class w implements v {
                 int e37 = t3.a.e(b10, "trigger_content_update_delay");
                 int e38 = t3.a.e(b10, "trigger_max_content_delay");
                 int e39 = t3.a.e(b10, "content_uri_triggers");
-                int i10 = e23;
+                int i11 = e23;
                 ArrayList arrayList = new ArrayList(b10.getCount());
                 while (b10.moveToNext()) {
                     if (b10.isNull(e10)) {
@@ -717,88 +717,88 @@ public final class w implements v {
                     long j10 = b10.getLong(e16);
                     long j11 = b10.getLong(e17);
                     long j12 = b10.getLong(e18);
-                    int i11 = b10.getInt(e19);
+                    int i12 = b10.getInt(e19);
                     k4.a c10 = b0.c(b10.getInt(e20));
                     long j13 = b10.getLong(e21);
                     long j14 = b10.getLong(e22);
-                    int i12 = i10;
-                    long j15 = b10.getLong(i12);
-                    int i13 = e10;
-                    int i14 = e24;
-                    long j16 = b10.getLong(i14);
-                    e24 = i14;
-                    int i15 = e25;
-                    if (b10.getInt(i15) != 0) {
+                    int i13 = i11;
+                    long j15 = b10.getLong(i13);
+                    int i14 = e10;
+                    int i15 = e24;
+                    long j16 = b10.getLong(i15);
+                    e24 = i15;
+                    int i16 = e25;
+                    if (b10.getInt(i16) != 0) {
                         z10 = true;
                     } else {
                         z10 = false;
                     }
-                    e25 = i15;
-                    int i16 = e26;
-                    k4.r e40 = b0.e(b10.getInt(i16));
-                    e26 = i16;
-                    int i17 = e27;
-                    int i18 = b10.getInt(i17);
-                    e27 = i17;
-                    int i19 = e28;
-                    int i20 = b10.getInt(i19);
-                    e28 = i19;
-                    int i21 = e29;
-                    long j17 = b10.getLong(i21);
-                    e29 = i21;
-                    int i22 = e30;
-                    int i23 = b10.getInt(i22);
-                    e30 = i22;
-                    int i24 = e31;
-                    int i25 = b10.getInt(i24);
-                    e31 = i24;
-                    int i26 = e32;
-                    k4.n d10 = b0.d(b10.getInt(i26));
-                    e32 = i26;
-                    int i27 = e33;
-                    if (b10.getInt(i27) != 0) {
+                    e25 = i16;
+                    int i17 = e26;
+                    k4.r e40 = b0.e(b10.getInt(i17));
+                    e26 = i17;
+                    int i18 = e27;
+                    int i19 = b10.getInt(i18);
+                    e27 = i18;
+                    int i20 = e28;
+                    int i21 = b10.getInt(i20);
+                    e28 = i20;
+                    int i22 = e29;
+                    long j17 = b10.getLong(i22);
+                    e29 = i22;
+                    int i23 = e30;
+                    int i24 = b10.getInt(i23);
+                    e30 = i23;
+                    int i25 = e31;
+                    int i26 = b10.getInt(i25);
+                    e31 = i25;
+                    int i27 = e32;
+                    k4.n d10 = b0.d(b10.getInt(i27));
+                    e32 = i27;
+                    int i28 = e33;
+                    if (b10.getInt(i28) != 0) {
                         z11 = true;
                     } else {
                         z11 = false;
                     }
-                    e33 = i27;
-                    int i28 = e34;
-                    if (b10.getInt(i28) != 0) {
+                    e33 = i28;
+                    int i29 = e34;
+                    if (b10.getInt(i29) != 0) {
                         z12 = true;
                     } else {
                         z12 = false;
                     }
-                    e34 = i28;
-                    int i29 = e35;
-                    if (b10.getInt(i29) != 0) {
+                    e34 = i29;
+                    int i30 = e35;
+                    if (b10.getInt(i30) != 0) {
                         z13 = true;
                     } else {
                         z13 = false;
                     }
-                    e35 = i29;
-                    int i30 = e36;
-                    if (b10.getInt(i30) != 0) {
+                    e35 = i30;
+                    int i31 = e36;
+                    if (b10.getInt(i31) != 0) {
                         z14 = true;
                     } else {
                         z14 = false;
                     }
-                    e36 = i30;
-                    int i31 = e37;
-                    long j18 = b10.getLong(i31);
-                    e37 = i31;
-                    int i32 = e38;
-                    long j19 = b10.getLong(i32);
-                    e38 = i32;
-                    int i33 = e39;
-                    if (b10.isNull(i33)) {
+                    e36 = i31;
+                    int i32 = e37;
+                    long j18 = b10.getLong(i32);
+                    e37 = i32;
+                    int i33 = e38;
+                    long j19 = b10.getLong(i33);
+                    e38 = i33;
+                    int i34 = e39;
+                    if (b10.isNull(i34)) {
                         blob3 = null;
                     } else {
-                        blob3 = b10.getBlob(i33);
+                        blob3 = b10.getBlob(i34);
                     }
-                    e39 = i33;
-                    arrayList.add(new u(string, f10, string2, string3, g10, g11, j10, j11, j12, new k4.d(d10, z11, z12, z13, z14, j18, j19, b0.b(blob3)), i11, c10, j13, j14, j15, j16, z10, e40, i18, i20, j17, i23, i25));
-                    e10 = i13;
-                    i10 = i12;
+                    e39 = i34;
+                    arrayList.add(new u(string, f10, string2, string3, g10, g11, j10, j11, j12, new k4.d(d10, z11, z12, z13, z14, j18, j19, b0.b(blob3)), i12, c10, j13, j14, j15, j16, z10, e40, i19, i21, j17, i24, i26));
+                    e10 = i14;
+                    i11 = i13;
                 }
                 b10.close();
                 xVar.p();
@@ -811,21 +811,21 @@ public final class w implements v {
             }
         } catch (Throwable th3) {
             th = th3;
-            xVar = k10;
+            xVar = i10;
         }
     }
 
     @Override // p4.v
     public List g(String str) {
         String string;
-        r3.x k10 = r3.x.k("SELECT id FROM workspec WHERE state NOT IN (2, 3, 5) AND id IN (SELECT work_spec_id FROM workname WHERE name=?)", 1);
+        r3.x i10 = r3.x.i("SELECT id FROM workspec WHERE state NOT IN (2, 3, 5) AND id IN (SELECT work_spec_id FROM workname WHERE name=?)", 1);
         if (str == null) {
-            k10.N1(1);
+            i10.S1(1);
         } else {
-            k10.d1(1, str);
+            i10.i1(1, str);
         }
-        this.f43013a.d();
-        Cursor b10 = t3.b.b(this.f43013a, k10, false, null);
+        this.f41471a.d();
+        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -839,22 +839,22 @@ public final class w implements v {
             return arrayList;
         } finally {
             b10.close();
-            k10.p();
+            i10.p();
         }
     }
 
     @Override // p4.v
     public k4.x h(String str) {
         Integer valueOf;
-        r3.x k10 = r3.x.k("SELECT state FROM workspec WHERE id=?", 1);
+        r3.x i10 = r3.x.i("SELECT state FROM workspec WHERE id=?", 1);
         if (str == null) {
-            k10.N1(1);
+            i10.S1(1);
         } else {
-            k10.d1(1, str);
+            i10.i1(1, str);
         }
-        this.f43013a.d();
+        this.f41471a.d();
         k4.x xVar = null;
-        Cursor b10 = t3.b.b(this.f43013a, k10, false, null);
+        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
         try {
             if (b10.moveToFirst()) {
                 if (b10.isNull(0)) {
@@ -863,14 +863,14 @@ public final class w implements v {
                     valueOf = Integer.valueOf(b10.getInt(0));
                 }
                 if (valueOf != null) {
-                    b0 b0Var = b0.f42948a;
+                    b0 b0Var = b0.f41406a;
                     xVar = b0.f(valueOf.intValue());
                 }
             }
             return xVar;
         } finally {
             b10.close();
-            k10.p();
+            i10.p();
         }
     }
 
@@ -903,14 +903,14 @@ public final class w implements v {
         boolean z13;
         boolean z14;
         byte[] blob3;
-        r3.x k10 = r3.x.k("SELECT * FROM workspec WHERE id=?", 1);
+        r3.x i10 = r3.x.i("SELECT * FROM workspec WHERE id=?", 1);
         if (str == null) {
-            k10.N1(1);
+            i10.S1(1);
         } else {
-            k10.d1(1, str);
+            i10.i1(1, str);
         }
-        this.f43013a.d();
-        Cursor b10 = t3.b.b(this.f43013a, k10, false, null);
+        this.f41471a.d();
+        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
         try {
             e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
             e11 = t3.a.e(b10, "state");
@@ -926,10 +926,10 @@ public final class w implements v {
             e21 = t3.a.e(b10, "backoff_delay_duration");
             e22 = t3.a.e(b10, "last_enqueue_time");
             e23 = t3.a.e(b10, "minimum_retention_duration");
-            xVar = k10;
+            xVar = i10;
         } catch (Throwable th2) {
             th = th2;
-            xVar = k10;
+            xVar = i10;
         }
         try {
             int e24 = t3.a.e(b10, "schedule_requested_at");
@@ -980,7 +980,7 @@ public final class w implements v {
                 long j10 = b10.getLong(e16);
                 long j11 = b10.getLong(e17);
                 long j12 = b10.getLong(e18);
-                int i10 = b10.getInt(e19);
+                int i11 = b10.getInt(e19);
                 k4.a c10 = b0.c(b10.getInt(e20));
                 long j13 = b10.getLong(e21);
                 long j14 = b10.getLong(e22);
@@ -992,11 +992,11 @@ public final class w implements v {
                     z10 = false;
                 }
                 k4.r e40 = b0.e(b10.getInt(e26));
-                int i11 = b10.getInt(e27);
-                int i12 = b10.getInt(e28);
+                int i12 = b10.getInt(e27);
+                int i13 = b10.getInt(e28);
                 long j17 = b10.getLong(e29);
-                int i13 = b10.getInt(e30);
-                int i14 = b10.getInt(e31);
+                int i14 = b10.getInt(e30);
+                int i15 = b10.getInt(e31);
                 k4.n d10 = b0.d(b10.getInt(e32));
                 if (b10.getInt(e33) != 0) {
                     z11 = true;
@@ -1025,7 +1025,7 @@ public final class w implements v {
                 } else {
                     blob3 = b10.getBlob(e39);
                 }
-                uVar = new u(string, f10, string2, string3, g10, g11, j10, j11, j12, new k4.d(d10, z11, z12, z13, z14, j18, j19, b0.b(blob3)), i10, c10, j13, j14, j15, j16, z10, e40, i11, i12, j17, i13, i14);
+                uVar = new u(string, f10, string2, string3, g10, g11, j10, j11, j12, new k4.d(d10, z11, z12, z13, z14, j18, j19, b0.b(blob3)), i11, c10, j13, j14, j15, j16, z10, e40, i12, i13, j17, i14, i15);
             } else {
                 uVar = null;
             }
@@ -1042,35 +1042,35 @@ public final class w implements v {
 
     @Override // p4.v
     public int j(String str) {
-        this.f43013a.d();
-        x3.k b10 = this.f43018f.b();
+        this.f41471a.d();
+        x3.k b10 = this.f41476f.b();
         if (str == null) {
-            b10.N1(1);
+            b10.S1(1);
         } else {
-            b10.d1(1, str);
+            b10.i1(1, str);
         }
-        this.f43013a.e();
+        this.f41471a.e();
         try {
             int V = b10.V();
-            this.f43013a.A();
+            this.f41471a.A();
             return V;
         } finally {
-            this.f43013a.i();
-            this.f43018f.h(b10);
+            this.f41471a.i();
+            this.f41476f.h(b10);
         }
     }
 
     @Override // p4.v
     public List k(String str) {
         byte[] blob;
-        r3.x k10 = r3.x.k("SELECT output FROM workspec WHERE id IN\n             (SELECT prerequisite_id FROM dependency WHERE work_spec_id=?)", 1);
+        r3.x i10 = r3.x.i("SELECT output FROM workspec WHERE id IN\n             (SELECT prerequisite_id FROM dependency WHERE work_spec_id=?)", 1);
         if (str == null) {
-            k10.N1(1);
+            i10.S1(1);
         } else {
-            k10.d1(1, str);
+            i10.i1(1, str);
         }
-        this.f43013a.d();
-        Cursor b10 = t3.b.b(this.f43013a, k10, false, null);
+        this.f41471a.d();
+        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -1084,7 +1084,7 @@ public final class w implements v {
             return arrayList;
         } finally {
             b10.close();
-            k10.p();
+            i10.p();
         }
     }
 
@@ -1102,10 +1102,10 @@ public final class w implements v {
         boolean z13;
         boolean z14;
         byte[] blob3;
-        r3.x k10 = r3.x.k("SELECT * FROM workspec WHERE state=0 ORDER BY last_enqueue_time LIMIT ?", 1);
-        k10.q1(1, i10);
-        this.f43013a.d();
-        Cursor b10 = t3.b.b(this.f43013a, k10, false, null);
+        r3.x i11 = r3.x.i("SELECT * FROM workspec WHERE state=0 ORDER BY last_enqueue_time LIMIT ?", 1);
+        i11.v1(1, i10);
+        this.f41471a.d();
+        Cursor b10 = t3.b.b(this.f41471a, i11, false, null);
         try {
             int e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
             int e11 = t3.a.e(b10, "state");
@@ -1121,7 +1121,7 @@ public final class w implements v {
             int e21 = t3.a.e(b10, "backoff_delay_duration");
             int e22 = t3.a.e(b10, "last_enqueue_time");
             int e23 = t3.a.e(b10, "minimum_retention_duration");
-            xVar = k10;
+            xVar = i11;
             try {
                 int e24 = t3.a.e(b10, "schedule_requested_at");
                 int e25 = t3.a.e(b10, "run_in_foreground");
@@ -1139,7 +1139,7 @@ public final class w implements v {
                 int e37 = t3.a.e(b10, "trigger_content_update_delay");
                 int e38 = t3.a.e(b10, "trigger_max_content_delay");
                 int e39 = t3.a.e(b10, "content_uri_triggers");
-                int i11 = e23;
+                int i12 = e23;
                 ArrayList arrayList = new ArrayList(b10.getCount());
                 while (b10.moveToNext()) {
                     if (b10.isNull(e10)) {
@@ -1173,88 +1173,88 @@ public final class w implements v {
                     long j10 = b10.getLong(e16);
                     long j11 = b10.getLong(e17);
                     long j12 = b10.getLong(e18);
-                    int i12 = b10.getInt(e19);
+                    int i13 = b10.getInt(e19);
                     k4.a c10 = b0.c(b10.getInt(e20));
                     long j13 = b10.getLong(e21);
                     long j14 = b10.getLong(e22);
-                    int i13 = i11;
-                    long j15 = b10.getLong(i13);
-                    int i14 = e10;
-                    int i15 = e24;
-                    long j16 = b10.getLong(i15);
-                    e24 = i15;
-                    int i16 = e25;
-                    if (b10.getInt(i16) != 0) {
+                    int i14 = i12;
+                    long j15 = b10.getLong(i14);
+                    int i15 = e10;
+                    int i16 = e24;
+                    long j16 = b10.getLong(i16);
+                    e24 = i16;
+                    int i17 = e25;
+                    if (b10.getInt(i17) != 0) {
                         z10 = true;
                     } else {
                         z10 = false;
                     }
-                    e25 = i16;
-                    int i17 = e26;
-                    k4.r e40 = b0.e(b10.getInt(i17));
-                    e26 = i17;
-                    int i18 = e27;
-                    int i19 = b10.getInt(i18);
-                    e27 = i18;
-                    int i20 = e28;
-                    int i21 = b10.getInt(i20);
-                    e28 = i20;
-                    int i22 = e29;
-                    long j17 = b10.getLong(i22);
-                    e29 = i22;
-                    int i23 = e30;
-                    int i24 = b10.getInt(i23);
-                    e30 = i23;
-                    int i25 = e31;
-                    int i26 = b10.getInt(i25);
-                    e31 = i25;
-                    int i27 = e32;
-                    k4.n d10 = b0.d(b10.getInt(i27));
-                    e32 = i27;
-                    int i28 = e33;
-                    if (b10.getInt(i28) != 0) {
+                    e25 = i17;
+                    int i18 = e26;
+                    k4.r e40 = b0.e(b10.getInt(i18));
+                    e26 = i18;
+                    int i19 = e27;
+                    int i20 = b10.getInt(i19);
+                    e27 = i19;
+                    int i21 = e28;
+                    int i22 = b10.getInt(i21);
+                    e28 = i21;
+                    int i23 = e29;
+                    long j17 = b10.getLong(i23);
+                    e29 = i23;
+                    int i24 = e30;
+                    int i25 = b10.getInt(i24);
+                    e30 = i24;
+                    int i26 = e31;
+                    int i27 = b10.getInt(i26);
+                    e31 = i26;
+                    int i28 = e32;
+                    k4.n d10 = b0.d(b10.getInt(i28));
+                    e32 = i28;
+                    int i29 = e33;
+                    if (b10.getInt(i29) != 0) {
                         z11 = true;
                     } else {
                         z11 = false;
                     }
-                    e33 = i28;
-                    int i29 = e34;
-                    if (b10.getInt(i29) != 0) {
+                    e33 = i29;
+                    int i30 = e34;
+                    if (b10.getInt(i30) != 0) {
                         z12 = true;
                     } else {
                         z12 = false;
                     }
-                    e34 = i29;
-                    int i30 = e35;
-                    if (b10.getInt(i30) != 0) {
+                    e34 = i30;
+                    int i31 = e35;
+                    if (b10.getInt(i31) != 0) {
                         z13 = true;
                     } else {
                         z13 = false;
                     }
-                    e35 = i30;
-                    int i31 = e36;
-                    if (b10.getInt(i31) != 0) {
+                    e35 = i31;
+                    int i32 = e36;
+                    if (b10.getInt(i32) != 0) {
                         z14 = true;
                     } else {
                         z14 = false;
                     }
-                    e36 = i31;
-                    int i32 = e37;
-                    long j18 = b10.getLong(i32);
-                    e37 = i32;
-                    int i33 = e38;
-                    long j19 = b10.getLong(i33);
-                    e38 = i33;
-                    int i34 = e39;
-                    if (b10.isNull(i34)) {
+                    e36 = i32;
+                    int i33 = e37;
+                    long j18 = b10.getLong(i33);
+                    e37 = i33;
+                    int i34 = e38;
+                    long j19 = b10.getLong(i34);
+                    e38 = i34;
+                    int i35 = e39;
+                    if (b10.isNull(i35)) {
                         blob3 = null;
                     } else {
-                        blob3 = b10.getBlob(i34);
+                        blob3 = b10.getBlob(i35);
                     }
-                    e39 = i34;
-                    arrayList.add(new u(string, f10, string2, string3, g10, g11, j10, j11, j12, new k4.d(d10, z11, z12, z13, z14, j18, j19, b0.b(blob3)), i12, c10, j13, j14, j15, j16, z10, e40, i19, i21, j17, i24, i26));
-                    e10 = i14;
-                    i11 = i13;
+                    e39 = i35;
+                    arrayList.add(new u(string, f10, string2, string3, g10, g11, j10, j11, j12, new k4.d(d10, z11, z12, z13, z14, j18, j19, b0.b(blob3)), i13, c10, j13, j14, j15, j16, z10, e40, i20, i22, j17, i25, i27));
+                    e10 = i15;
+                    i12 = i14;
                 }
                 b10.close();
                 xVar.p();
@@ -1267,69 +1267,69 @@ public final class w implements v {
             }
         } catch (Throwable th3) {
             th = th3;
-            xVar = k10;
+            xVar = i11;
         }
     }
 
     @Override // p4.v
     public int m() {
-        this.f43013a.d();
-        x3.k b10 = this.f43027o.b();
-        this.f43013a.e();
+        this.f41471a.d();
+        x3.k b10 = this.f41485o.b();
+        this.f41471a.e();
         try {
             int V = b10.V();
-            this.f43013a.A();
+            this.f41471a.A();
             return V;
         } finally {
-            this.f43013a.i();
-            this.f43027o.h(b10);
+            this.f41471a.i();
+            this.f41485o.h(b10);
         }
     }
 
     @Override // p4.v
     public void n(u uVar) {
-        this.f43013a.d();
-        this.f43013a.e();
+        this.f41471a.d();
+        this.f41471a.e();
         try {
-            this.f43014b.j(uVar);
-            this.f43013a.A();
+            this.f41472b.j(uVar);
+            this.f41471a.A();
         } finally {
-            this.f43013a.i();
+            this.f41471a.i();
         }
     }
 
     @Override // p4.v
     public int o(String str, long j10) {
-        this.f43013a.d();
-        x3.k b10 = this.f43026n.b();
-        b10.q1(1, j10);
+        this.f41471a.d();
+        x3.k b10 = this.f41484n.b();
+        b10.v1(1, j10);
         if (str == null) {
-            b10.N1(2);
+            b10.S1(2);
         } else {
-            b10.d1(2, str);
+            b10.i1(2, str);
         }
-        this.f43013a.e();
+        this.f41471a.e();
         try {
             int V = b10.V();
-            this.f43013a.A();
+            this.f41471a.A();
             return V;
         } finally {
-            this.f43013a.i();
-            this.f43026n.h(b10);
+            this.f41471a.i();
+            this.f41484n.h(b10);
         }
     }
 
     @Override // p4.v
     public List p(String str) {
         String string;
-        r3.x k10 = r3.x.k("SELECT id, state FROM workspec WHERE id IN (SELECT work_spec_id FROM workname WHERE name=?)", 1);
+        r3.x i10 = r3.x.i("SELECT id, state FROM workspec WHERE id IN (SELECT work_spec_id FROM workname WHERE name=?)", 1);
         if (str == null) {
-            k10.N1(1);
+            i10.S1(1);
         } else {
-            k10.d1(1, str);
+            i10.i1(1, str);
         }
-        this.f43013a.d();
-        Cursor b10 = t3.b.b(this.f43013a, k10, false, null);
+        this.f41471a.d();
+        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -1343,7 +1343,7 @@ public final class w implements v {
             return arrayList;
         } finally {
             b10.close();
-            k10.p();
+            i10.p();
         }
     }
 
@@ -1361,10 +1361,10 @@ public final class w implements v {
         boolean z13;
         boolean z14;
         byte[] blob3;
-        r3.x k10 = r3.x.k("SELECT * FROM workspec WHERE state=0 AND schedule_requested_at=-1 ORDER BY last_enqueue_time LIMIT (SELECT MAX(?-COUNT(*), 0) FROM workspec WHERE schedule_requested_at<>-1 AND LENGTH(content_uri_triggers)=0 AND state NOT IN (2, 3, 5))", 1);
-        k10.q1(1, i10);
-        this.f43013a.d();
-        Cursor b10 = t3.b.b(this.f43013a, k10, false, null);
+        r3.x i11 = r3.x.i("SELECT * FROM workspec WHERE state=0 AND schedule_requested_at=-1 ORDER BY last_enqueue_time LIMIT (SELECT MAX(?-COUNT(*), 0) FROM workspec WHERE schedule_requested_at<>-1 AND LENGTH(content_uri_triggers)=0 AND state NOT IN (2, 3, 5))", 1);
+        i11.v1(1, i10);
+        this.f41471a.d();
+        Cursor b10 = t3.b.b(this.f41471a, i11, false, null);
         try {
             int e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
             int e11 = t3.a.e(b10, "state");
@@ -1380,7 +1380,234 @@ public final class w implements v {
             int e21 = t3.a.e(b10, "backoff_delay_duration");
             int e22 = t3.a.e(b10, "last_enqueue_time");
             int e23 = t3.a.e(b10, "minimum_retention_duration");
-            xVar = k10;
+            xVar = i11;
+            try {
+                int e24 = t3.a.e(b10, "schedule_requested_at");
+                int e25 = t3.a.e(b10, "run_in_foreground");
+                int e26 = t3.a.e(b10, "out_of_quota_policy");
+                int e27 = t3.a.e(b10, "period_count");
+                int e28 = t3.a.e(b10, "generation");
+                int e29 = t3.a.e(b10, "next_schedule_time_override");
+                int e30 = t3.a.e(b10, "next_schedule_time_override_generation");
+                int e31 = t3.a.e(b10, "stop_reason");
+                int e32 = t3.a.e(b10, "required_network_type");
+                int e33 = t3.a.e(b10, "requires_charging");
+                int e34 = t3.a.e(b10, "requires_device_idle");
+                int e35 = t3.a.e(b10, "requires_battery_not_low");
+                int e36 = t3.a.e(b10, "requires_storage_not_low");
+                int e37 = t3.a.e(b10, "trigger_content_update_delay");
+                int e38 = t3.a.e(b10, "trigger_max_content_delay");
+                int e39 = t3.a.e(b10, "content_uri_triggers");
+                int i12 = e23;
+                ArrayList arrayList = new ArrayList(b10.getCount());
+                while (b10.moveToNext()) {
+                    if (b10.isNull(e10)) {
+                        string = null;
+                    } else {
+                        string = b10.getString(e10);
+                    }
+                    k4.x f10 = b0.f(b10.getInt(e11));
+                    if (b10.isNull(e12)) {
+                        string2 = null;
+                    } else {
+                        string2 = b10.getString(e12);
+                    }
+                    if (b10.isNull(e13)) {
+                        string3 = null;
+                    } else {
+                        string3 = b10.getString(e13);
+                    }
+                    if (b10.isNull(e14)) {
+                        blob = null;
+                    } else {
+                        blob = b10.getBlob(e14);
+                    }
+                    androidx.work.b g10 = androidx.work.b.g(blob);
+                    if (b10.isNull(e15)) {
+                        blob2 = null;
+                    } else {
+                        blob2 = b10.getBlob(e15);
+                    }
+                    androidx.work.b g11 = androidx.work.b.g(blob2);
+                    long j10 = b10.getLong(e16);
+                    long j11 = b10.getLong(e17);
+                    long j12 = b10.getLong(e18);
+                    int i13 = b10.getInt(e19);
+                    k4.a c10 = b0.c(b10.getInt(e20));
+                    long j13 = b10.getLong(e21);
+                    long j14 = b10.getLong(e22);
+                    int i14 = i12;
+                    long j15 = b10.getLong(i14);
+                    int i15 = e10;
+                    int i16 = e24;
+                    long j16 = b10.getLong(i16);
+                    e24 = i16;
+                    int i17 = e25;
+                    if (b10.getInt(i17) != 0) {
+                        z10 = true;
+                    } else {
+                        z10 = false;
+                    }
+                    e25 = i17;
+                    int i18 = e26;
+                    k4.r e40 = b0.e(b10.getInt(i18));
+                    e26 = i18;
+                    int i19 = e27;
+                    int i20 = b10.getInt(i19);
+                    e27 = i19;
+                    int i21 = e28;
+                    int i22 = b10.getInt(i21);
+                    e28 = i21;
+                    int i23 = e29;
+                    long j17 = b10.getLong(i23);
+                    e29 = i23;
+                    int i24 = e30;
+                    int i25 = b10.getInt(i24);
+                    e30 = i24;
+                    int i26 = e31;
+                    int i27 = b10.getInt(i26);
+                    e31 = i26;
+                    int i28 = e32;
+                    k4.n d10 = b0.d(b10.getInt(i28));
+                    e32 = i28;
+                    int i29 = e33;
+                    if (b10.getInt(i29) != 0) {
+                        z11 = true;
+                    } else {
+                        z11 = false;
+                    }
+                    e33 = i29;
+                    int i30 = e34;
+                    if (b10.getInt(i30) != 0) {
+                        z12 = true;
+                    } else {
+                        z12 = false;
+                    }
+                    e34 = i30;
+                    int i31 = e35;
+                    if (b10.getInt(i31) != 0) {
+                        z13 = true;
+                    } else {
+                        z13 = false;
+                    }
+                    e35 = i31;
+                    int i32 = e36;
+                    if (b10.getInt(i32) != 0) {
+                        z14 = true;
+                    } else {
+                        z14 = false;
+                    }
+                    e36 = i32;
+                    int i33 = e37;
+                    long j18 = b10.getLong(i33);
+                    e37 = i33;
+                    int i34 = e38;
+                    long j19 = b10.getLong(i34);
+                    e38 = i34;
+                    int i35 = e39;
+                    if (b10.isNull(i35)) {
+                        blob3 = null;
+                    } else {
+                        blob3 = b10.getBlob(i35);
+                    }
+                    e39 = i35;
+                    arrayList.add(new u(string, f10, string2, string3, g10, g11, j10, j11, j12, new k4.d(d10, z11, z12, z13, z14, j18, j19, b0.b(blob3)), i13, c10, j13, j14, j15, j16, z10, e40, i20, i22, j17, i25, i27));
+                    e10 = i15;
+                    i12 = i14;
+                }
+                b10.close();
+                xVar.p();
+                return arrayList;
+            } catch (Throwable th2) {
+                th = th2;
+                b10.close();
+                xVar.p();
+                throw th;
+            }
+        } catch (Throwable th3) {
+            th = th3;
+            xVar = i11;
+        }
+    }
+
+    @Override // p4.v
+    public void r(String str, androidx.work.b bVar) {
+        this.f41471a.d();
+        x3.k b10 = this.f41478h.b();
+        byte[] o10 = androidx.work.b.o(bVar);
+        if (o10 == null) {
+            b10.S1(1);
+        } else {
+            b10.D1(1, o10);
+        }
+        if (str == null) {
+            b10.S1(2);
+        } else {
+            b10.i1(2, str);
+        }
+        this.f41471a.e();
+        try {
+            b10.V();
+            this.f41471a.A();
+        } finally {
+            this.f41471a.i();
+            this.f41478h.h(b10);
+        }
+    }
+
+    @Override // p4.v
+    public void s(String str, long j10) {
+        this.f41471a.d();
+        x3.k b10 = this.f41479i.b();
+        b10.v1(1, j10);
+        if (str == null) {
+            b10.S1(2);
+        } else {
+            b10.i1(2, str);
+        }
+        this.f41471a.e();
+        try {
+            b10.V();
+            this.f41471a.A();
+        } finally {
+            this.f41471a.i();
+            this.f41479i.h(b10);
+        }
+    }
+
+    @Override // p4.v
+    public List t() {
+        r3.x xVar;
+        String string;
+        String string2;
+        String string3;
+        byte[] blob;
+        byte[] blob2;
+        boolean z10;
+        boolean z11;
+        boolean z12;
+        boolean z13;
+        boolean z14;
+        byte[] blob3;
+        r3.x i10 = r3.x.i("SELECT * FROM workspec WHERE state=1", 0);
+        this.f41471a.d();
+        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
+        try {
+            int e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
+            int e11 = t3.a.e(b10, "state");
+            int e12 = t3.a.e(b10, "worker_class_name");
+            int e13 = t3.a.e(b10, "input_merger_class_name");
+            int e14 = t3.a.e(b10, "input");
+            int e15 = t3.a.e(b10, "output");
+            int e16 = t3.a.e(b10, "initial_delay");
+            int e17 = t3.a.e(b10, "interval_duration");
+            int e18 = t3.a.e(b10, "flex_duration");
+            int e19 = t3.a.e(b10, "run_attempt_count");
+            int e20 = t3.a.e(b10, "backoff_policy");
+            int e21 = t3.a.e(b10, "backoff_delay_duration");
+            int e22 = t3.a.e(b10, "last_enqueue_time");
+            int e23 = t3.a.e(b10, "minimum_retention_duration");
+            xVar = i10;
             try {
                 int e24 = t3.a.e(b10, "schedule_requested_at");
                 int e25 = t3.a.e(b10, "run_in_foreground");
@@ -1526,243 +1753,16 @@ public final class w implements v {
             }
         } catch (Throwable th3) {
             th = th3;
-            xVar = k10;
-        }
-    }
-
-    @Override // p4.v
-    public void r(String str, androidx.work.b bVar) {
-        this.f43013a.d();
-        x3.k b10 = this.f43020h.b();
-        byte[] o10 = androidx.work.b.o(bVar);
-        if (o10 == null) {
-            b10.N1(1);
-        } else {
-            b10.y1(1, o10);
-        }
-        if (str == null) {
-            b10.N1(2);
-        } else {
-            b10.d1(2, str);
-        }
-        this.f43013a.e();
-        try {
-            b10.V();
-            this.f43013a.A();
-        } finally {
-            this.f43013a.i();
-            this.f43020h.h(b10);
-        }
-    }
-
-    @Override // p4.v
-    public void s(String str, long j10) {
-        this.f43013a.d();
-        x3.k b10 = this.f43021i.b();
-        b10.q1(1, j10);
-        if (str == null) {
-            b10.N1(2);
-        } else {
-            b10.d1(2, str);
-        }
-        this.f43013a.e();
-        try {
-            b10.V();
-            this.f43013a.A();
-        } finally {
-            this.f43013a.i();
-            this.f43021i.h(b10);
-        }
-    }
-
-    @Override // p4.v
-    public List t() {
-        r3.x xVar;
-        String string;
-        String string2;
-        String string3;
-        byte[] blob;
-        byte[] blob2;
-        boolean z10;
-        boolean z11;
-        boolean z12;
-        boolean z13;
-        boolean z14;
-        byte[] blob3;
-        r3.x k10 = r3.x.k("SELECT * FROM workspec WHERE state=1", 0);
-        this.f43013a.d();
-        Cursor b10 = t3.b.b(this.f43013a, k10, false, null);
-        try {
-            int e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
-            int e11 = t3.a.e(b10, "state");
-            int e12 = t3.a.e(b10, "worker_class_name");
-            int e13 = t3.a.e(b10, "input_merger_class_name");
-            int e14 = t3.a.e(b10, "input");
-            int e15 = t3.a.e(b10, "output");
-            int e16 = t3.a.e(b10, "initial_delay");
-            int e17 = t3.a.e(b10, "interval_duration");
-            int e18 = t3.a.e(b10, "flex_duration");
-            int e19 = t3.a.e(b10, "run_attempt_count");
-            int e20 = t3.a.e(b10, "backoff_policy");
-            int e21 = t3.a.e(b10, "backoff_delay_duration");
-            int e22 = t3.a.e(b10, "last_enqueue_time");
-            int e23 = t3.a.e(b10, "minimum_retention_duration");
-            xVar = k10;
-            try {
-                int e24 = t3.a.e(b10, "schedule_requested_at");
-                int e25 = t3.a.e(b10, "run_in_foreground");
-                int e26 = t3.a.e(b10, "out_of_quota_policy");
-                int e27 = t3.a.e(b10, "period_count");
-                int e28 = t3.a.e(b10, "generation");
-                int e29 = t3.a.e(b10, "next_schedule_time_override");
-                int e30 = t3.a.e(b10, "next_schedule_time_override_generation");
-                int e31 = t3.a.e(b10, "stop_reason");
-                int e32 = t3.a.e(b10, "required_network_type");
-                int e33 = t3.a.e(b10, "requires_charging");
-                int e34 = t3.a.e(b10, "requires_device_idle");
-                int e35 = t3.a.e(b10, "requires_battery_not_low");
-                int e36 = t3.a.e(b10, "requires_storage_not_low");
-                int e37 = t3.a.e(b10, "trigger_content_update_delay");
-                int e38 = t3.a.e(b10, "trigger_max_content_delay");
-                int e39 = t3.a.e(b10, "content_uri_triggers");
-                int i10 = e23;
-                ArrayList arrayList = new ArrayList(b10.getCount());
-                while (b10.moveToNext()) {
-                    if (b10.isNull(e10)) {
-                        string = null;
-                    } else {
-                        string = b10.getString(e10);
-                    }
-                    k4.x f10 = b0.f(b10.getInt(e11));
-                    if (b10.isNull(e12)) {
-                        string2 = null;
-                    } else {
-                        string2 = b10.getString(e12);
-                    }
-                    if (b10.isNull(e13)) {
-                        string3 = null;
-                    } else {
-                        string3 = b10.getString(e13);
-                    }
-                    if (b10.isNull(e14)) {
-                        blob = null;
-                    } else {
-                        blob = b10.getBlob(e14);
-                    }
-                    androidx.work.b g10 = androidx.work.b.g(blob);
-                    if (b10.isNull(e15)) {
-                        blob2 = null;
-                    } else {
-                        blob2 = b10.getBlob(e15);
-                    }
-                    androidx.work.b g11 = androidx.work.b.g(blob2);
-                    long j10 = b10.getLong(e16);
-                    long j11 = b10.getLong(e17);
-                    long j12 = b10.getLong(e18);
-                    int i11 = b10.getInt(e19);
-                    k4.a c10 = b0.c(b10.getInt(e20));
-                    long j13 = b10.getLong(e21);
-                    long j14 = b10.getLong(e22);
-                    int i12 = i10;
-                    long j15 = b10.getLong(i12);
-                    int i13 = e10;
-                    int i14 = e24;
-                    long j16 = b10.getLong(i14);
-                    e24 = i14;
-                    int i15 = e25;
-                    if (b10.getInt(i15) != 0) {
-                        z10 = true;
-                    } else {
-                        z10 = false;
-                    }
-                    e25 = i15;
-                    int i16 = e26;
-                    k4.r e40 = b0.e(b10.getInt(i16));
-                    e26 = i16;
-                    int i17 = e27;
-                    int i18 = b10.getInt(i17);
-                    e27 = i17;
-                    int i19 = e28;
-                    int i20 = b10.getInt(i19);
-                    e28 = i19;
-                    int i21 = e29;
-                    long j17 = b10.getLong(i21);
-                    e29 = i21;
-                    int i22 = e30;
-                    int i23 = b10.getInt(i22);
-                    e30 = i22;
-                    int i24 = e31;
-                    int i25 = b10.getInt(i24);
-                    e31 = i24;
-                    int i26 = e32;
-                    k4.n d10 = b0.d(b10.getInt(i26));
-                    e32 = i26;
-                    int i27 = e33;
-                    if (b10.getInt(i27) != 0) {
-                        z11 = true;
-                    } else {
-                        z11 = false;
-                    }
-                    e33 = i27;
-                    int i28 = e34;
-                    if (b10.getInt(i28) != 0) {
-                        z12 = true;
-                    } else {
-                        z12 = false;
-                    }
-                    e34 = i28;
-                    int i29 = e35;
-                    if (b10.getInt(i29) != 0) {
-                        z13 = true;
-                    } else {
-                        z13 = false;
-                    }
-                    e35 = i29;
-                    int i30 = e36;
-                    if (b10.getInt(i30) != 0) {
-                        z14 = true;
-                    } else {
-                        z14 = false;
-                    }
-                    e36 = i30;
-                    int i31 = e37;
-                    long j18 = b10.getLong(i31);
-                    e37 = i31;
-                    int i32 = e38;
-                    long j19 = b10.getLong(i32);
-                    e38 = i32;
-                    int i33 = e39;
-                    if (b10.isNull(i33)) {
-                        blob3 = null;
-                    } else {
-                        blob3 = b10.getBlob(i33);
-                    }
-                    e39 = i33;
-                    arrayList.add(new u(string, f10, string2, string3, g10, g11, j10, j11, j12, new k4.d(d10, z11, z12, z13, z14, j18, j19, b0.b(blob3)), i11, c10, j13, j14, j15, j16, z10, e40, i18, i20, j17, i23, i25));
-                    e10 = i13;
-                    i10 = i12;
-                }
-                b10.close();
-                xVar.p();
-                return arrayList;
-            } catch (Throwable th2) {
-                th = th2;
-                b10.close();
-                xVar.p();
-                throw th;
-            }
-        } catch (Throwable th3) {
-            th = th3;
-            xVar = k10;
+            xVar = i10;
         }
     }
 
     @Override // p4.v
     public boolean u() {
         boolean z10 = false;
-        r3.x k10 = r3.x.k("SELECT COUNT(*) > 0 FROM workspec WHERE state NOT IN (2, 3, 5) LIMIT 1", 0);
-        this.f43013a.d();
-        Cursor b10 = t3.b.b(this.f43013a, k10, false, null);
+        r3.x i10 = r3.x.i("SELECT COUNT(*) > 0 FROM workspec WHERE state NOT IN (2, 3, 5) LIMIT 1", 0);
+        this.f41471a.d();
+        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
         try {
             if (b10.moveToFirst()) {
                 if (b10.getInt(0) != 0) {
@@ -1772,7 +1772,7 @@ public final class w implements v {
             return z10;
         } finally {
             b10.close();
-            k10.p();
+            i10.p();
         }
     }
 
@@ -1790,9 +1790,9 @@ public final class w implements v {
         boolean z13;
         boolean z14;
         byte[] blob3;
-        r3.x k10 = r3.x.k("SELECT * FROM workspec WHERE state=0 AND schedule_requested_at=-1 AND LENGTH(content_uri_triggers)<>0 ORDER BY last_enqueue_time", 0);
-        this.f43013a.d();
-        Cursor b10 = t3.b.b(this.f43013a, k10, false, null);
+        r3.x i10 = r3.x.i("SELECT * FROM workspec WHERE state=0 AND schedule_requested_at=-1 AND LENGTH(content_uri_triggers)<>0 ORDER BY last_enqueue_time", 0);
+        this.f41471a.d();
+        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
         try {
             int e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
             int e11 = t3.a.e(b10, "state");
@@ -1808,7 +1808,7 @@ public final class w implements v {
             int e21 = t3.a.e(b10, "backoff_delay_duration");
             int e22 = t3.a.e(b10, "last_enqueue_time");
             int e23 = t3.a.e(b10, "minimum_retention_duration");
-            xVar = k10;
+            xVar = i10;
             try {
                 int e24 = t3.a.e(b10, "schedule_requested_at");
                 int e25 = t3.a.e(b10, "run_in_foreground");
@@ -1826,7 +1826,7 @@ public final class w implements v {
                 int e37 = t3.a.e(b10, "trigger_content_update_delay");
                 int e38 = t3.a.e(b10, "trigger_max_content_delay");
                 int e39 = t3.a.e(b10, "content_uri_triggers");
-                int i10 = e23;
+                int i11 = e23;
                 ArrayList arrayList = new ArrayList(b10.getCount());
                 while (b10.moveToNext()) {
                     if (b10.isNull(e10)) {
@@ -1860,88 +1860,88 @@ public final class w implements v {
                     long j10 = b10.getLong(e16);
                     long j11 = b10.getLong(e17);
                     long j12 = b10.getLong(e18);
-                    int i11 = b10.getInt(e19);
+                    int i12 = b10.getInt(e19);
                     k4.a c10 = b0.c(b10.getInt(e20));
                     long j13 = b10.getLong(e21);
                     long j14 = b10.getLong(e22);
-                    int i12 = i10;
-                    long j15 = b10.getLong(i12);
-                    int i13 = e10;
-                    int i14 = e24;
-                    long j16 = b10.getLong(i14);
-                    e24 = i14;
-                    int i15 = e25;
-                    if (b10.getInt(i15) != 0) {
+                    int i13 = i11;
+                    long j15 = b10.getLong(i13);
+                    int i14 = e10;
+                    int i15 = e24;
+                    long j16 = b10.getLong(i15);
+                    e24 = i15;
+                    int i16 = e25;
+                    if (b10.getInt(i16) != 0) {
                         z10 = true;
                     } else {
                         z10 = false;
                     }
-                    e25 = i15;
-                    int i16 = e26;
-                    k4.r e40 = b0.e(b10.getInt(i16));
-                    e26 = i16;
-                    int i17 = e27;
-                    int i18 = b10.getInt(i17);
-                    e27 = i17;
-                    int i19 = e28;
-                    int i20 = b10.getInt(i19);
-                    e28 = i19;
-                    int i21 = e29;
-                    long j17 = b10.getLong(i21);
-                    e29 = i21;
-                    int i22 = e30;
-                    int i23 = b10.getInt(i22);
-                    e30 = i22;
-                    int i24 = e31;
-                    int i25 = b10.getInt(i24);
-                    e31 = i24;
-                    int i26 = e32;
-                    k4.n d10 = b0.d(b10.getInt(i26));
-                    e32 = i26;
-                    int i27 = e33;
-                    if (b10.getInt(i27) != 0) {
+                    e25 = i16;
+                    int i17 = e26;
+                    k4.r e40 = b0.e(b10.getInt(i17));
+                    e26 = i17;
+                    int i18 = e27;
+                    int i19 = b10.getInt(i18);
+                    e27 = i18;
+                    int i20 = e28;
+                    int i21 = b10.getInt(i20);
+                    e28 = i20;
+                    int i22 = e29;
+                    long j17 = b10.getLong(i22);
+                    e29 = i22;
+                    int i23 = e30;
+                    int i24 = b10.getInt(i23);
+                    e30 = i23;
+                    int i25 = e31;
+                    int i26 = b10.getInt(i25);
+                    e31 = i25;
+                    int i27 = e32;
+                    k4.n d10 = b0.d(b10.getInt(i27));
+                    e32 = i27;
+                    int i28 = e33;
+                    if (b10.getInt(i28) != 0) {
                         z11 = true;
                     } else {
                         z11 = false;
                     }
-                    e33 = i27;
-                    int i28 = e34;
-                    if (b10.getInt(i28) != 0) {
+                    e33 = i28;
+                    int i29 = e34;
+                    if (b10.getInt(i29) != 0) {
                         z12 = true;
                     } else {
                         z12 = false;
                     }
-                    e34 = i28;
-                    int i29 = e35;
-                    if (b10.getInt(i29) != 0) {
+                    e34 = i29;
+                    int i30 = e35;
+                    if (b10.getInt(i30) != 0) {
                         z13 = true;
                     } else {
                         z13 = false;
                     }
-                    e35 = i29;
-                    int i30 = e36;
-                    if (b10.getInt(i30) != 0) {
+                    e35 = i30;
+                    int i31 = e36;
+                    if (b10.getInt(i31) != 0) {
                         z14 = true;
                     } else {
                         z14 = false;
                     }
-                    e36 = i30;
-                    int i31 = e37;
-                    long j18 = b10.getLong(i31);
-                    e37 = i31;
-                    int i32 = e38;
-                    long j19 = b10.getLong(i32);
-                    e38 = i32;
-                    int i33 = e39;
-                    if (b10.isNull(i33)) {
+                    e36 = i31;
+                    int i32 = e37;
+                    long j18 = b10.getLong(i32);
+                    e37 = i32;
+                    int i33 = e38;
+                    long j19 = b10.getLong(i33);
+                    e38 = i33;
+                    int i34 = e39;
+                    if (b10.isNull(i34)) {
                         blob3 = null;
                     } else {
-                        blob3 = b10.getBlob(i33);
+                        blob3 = b10.getBlob(i34);
                     }
-                    e39 = i33;
-                    arrayList.add(new u(string, f10, string2, string3, g10, g11, j10, j11, j12, new k4.d(d10, z11, z12, z13, z14, j18, j19, b0.b(blob3)), i11, c10, j13, j14, j15, j16, z10, e40, i18, i20, j17, i23, i25));
-                    e10 = i13;
-                    i10 = i12;
+                    e39 = i34;
+                    arrayList.add(new u(string, f10, string2, string3, g10, g11, j10, j11, j12, new k4.d(d10, z11, z12, z13, z14, j18, j19, b0.b(blob3)), i12, c10, j13, j14, j15, j16, z10, e40, i19, i21, j17, i24, i26));
+                    e10 = i14;
+                    i11 = i13;
                 }
                 b10.close();
                 xVar.p();
@@ -1954,56 +1954,56 @@ public final class w implements v {
             }
         } catch (Throwable th3) {
             th = th3;
-            xVar = k10;
+            xVar = i10;
         }
     }
 
     @Override // p4.v
     public int w(String str) {
-        this.f43013a.d();
-        x3.k b10 = this.f43023k.b();
+        this.f41471a.d();
+        x3.k b10 = this.f41481k.b();
         if (str == null) {
-            b10.N1(1);
+            b10.S1(1);
         } else {
-            b10.d1(1, str);
+            b10.i1(1, str);
         }
-        this.f43013a.e();
+        this.f41471a.e();
         try {
             int V = b10.V();
-            this.f43013a.A();
+            this.f41471a.A();
             return V;
         } finally {
-            this.f43013a.i();
-            this.f43023k.h(b10);
+            this.f41471a.i();
+            this.f41481k.h(b10);
         }
     }
 
     @Override // p4.v
     public int x(String str) {
-        this.f43013a.d();
-        x3.k b10 = this.f43022j.b();
+        this.f41471a.d();
+        x3.k b10 = this.f41480j.b();
         if (str == null) {
-            b10.N1(1);
+            b10.S1(1);
         } else {
-            b10.d1(1, str);
+            b10.i1(1, str);
         }
-        this.f43013a.e();
+        this.f41471a.e();
         try {
             int V = b10.V();
-            this.f43013a.A();
+            this.f41471a.A();
             return V;
         } finally {
-            this.f43013a.i();
-            this.f43022j.h(b10);
+            this.f41471a.i();
+            this.f41480j.h(b10);
         }
     }
 
     @Override // p4.v
     public int y() {
         int i10 = 0;
-        r3.x k10 = r3.x.k("Select COUNT(*) FROM workspec WHERE LENGTH(content_uri_triggers)<>0 AND state NOT IN (2, 3, 5)", 0);
-        this.f43013a.d();
-        Cursor b10 = t3.b.b(this.f43013a, k10, false, null);
+        r3.x i11 = r3.x.i("Select COUNT(*) FROM workspec WHERE LENGTH(content_uri_triggers)<>0 AND state NOT IN (2, 3, 5)", 0);
+        this.f41471a.d();
+        Cursor b10 = t3.b.b(this.f41471a, i11, false, null);
         try {
             if (b10.moveToFirst()) {
                 i10 = b10.getInt(0);
@@ -2011,27 +2011,27 @@ public final class w implements v {
             return i10;
         } finally {
             b10.close();
-            k10.p();
+            i11.p();
         }
     }
 
     @Override // p4.v
     public void z(String str, int i10) {
-        this.f43013a.d();
-        x3.k b10 = this.f43025m.b();
+        this.f41471a.d();
+        x3.k b10 = this.f41483m.b();
         if (str == null) {
-            b10.N1(1);
+            b10.S1(1);
         } else {
-            b10.d1(1, str);
+            b10.i1(1, str);
         }
-        b10.q1(2, i10);
-        this.f43013a.e();
+        b10.v1(2, i10);
+        this.f41471a.e();
         try {
             b10.V();
-            this.f43013a.A();
+            this.f41471a.A();
         } finally {
-            this.f43013a.i();
-            this.f43025m.h(b10);
+            this.f41471a.i();
+            this.f41483m.h(b10);
         }
     }
 }

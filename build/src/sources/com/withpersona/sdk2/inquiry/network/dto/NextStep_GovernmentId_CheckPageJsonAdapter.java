@@ -52,17 +52,17 @@ public final class NextStep_GovernmentId_CheckPageJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw bn.c.x("buttonSubmit", "btnSubmit", reader);
+                    throw dn.c.x("buttonSubmit", "btnSubmit", reader);
                 }
             } else if (J == 1) {
                 str2 = (String) this.stringAdapter.fromJson(reader);
                 if (str2 == null) {
-                    throw bn.c.x("buttonRetake", "btnRetake", reader);
+                    throw dn.c.x("buttonRetake", "btnRetake", reader);
                 }
             } else if (J == 2) {
                 str3 = (String) this.nullableStringAdapter.fromJson(reader);
@@ -73,16 +73,16 @@ public final class NextStep_GovernmentId_CheckPageJsonAdapter extends h {
             if (str2 != null) {
                 return new NextStep.GovernmentId.CheckPage(str, str2, str3);
             }
-            throw bn.c.o("buttonRetake", "btnRetake", reader);
+            throw dn.c.o("buttonRetake", "btnRetake", reader);
         }
-        throw bn.c.o("buttonSubmit", "btnSubmit", reader);
+        throw dn.c.o("buttonSubmit", "btnSubmit", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.GovernmentId.CheckPage checkPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkPage != null) {
-            writer.k();
+            writer.i();
             writer.J("btnSubmit");
             this.stringAdapter.toJson(writer, checkPage.getButtonSubmit());
             writer.J("btnRetake");

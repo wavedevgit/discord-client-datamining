@@ -1,64 +1,64 @@
 package qg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class l5 implements zi.d {
+final class l5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l5 f45992a = new l5();
+    static final l5 f44660a = new l5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f45993b;
+    private static final bj.c f44661b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f45994c;
+    private static final bj.c f44662c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f45995d;
+    private static final bj.c f44663d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final zi.c f45996e;
+    private static final bj.c f44664e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final zi.c f45997f;
+    private static final bj.c f44665f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final zi.c f45998g;
+    private static final bj.c f44666g;
 
     static {
-        c.b a10 = zi.c.a("mode");
+        c.b a10 = bj.c.a("mode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f45993b = a10.b(s1Var.b()).a();
-        c.b a11 = zi.c.a("landmark");
+        f44661b = a10.b(s1Var.b()).a();
+        c.b a11 = bj.c.a("landmark");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f45994c = a11.b(s1Var2.b()).a();
-        c.b a12 = zi.c.a("classification");
+        f44662c = a11.b(s1Var2.b()).a();
+        c.b a12 = bj.c.a("classification");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f45995d = a12.b(s1Var3.b()).a();
-        c.b a13 = zi.c.a("prominentFaceOnly");
+        f44663d = a12.b(s1Var3.b()).a();
+        c.b a13 = bj.c.a("prominentFaceOnly");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f45996e = a13.b(s1Var4.b()).a();
-        c.b a14 = zi.c.a("tracking");
+        f44664e = a13.b(s1Var4.b()).a();
+        c.b a14 = bj.c.a("tracking");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f45997f = a14.b(s1Var5.b()).a();
-        c.b a15 = zi.c.a("minFaceSize");
+        f44665f = a14.b(s1Var5.b()).a();
+        c.b a15 = bj.c.a("minFaceSize");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f45998g = a15.b(s1Var6.b()).a();
+        f44666g = a15.b(s1Var6.b()).a();
     }
 
     private l5() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

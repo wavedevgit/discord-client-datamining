@@ -59,17 +59,17 @@ public final class NextStep_DocumentJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw bn.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+                    throw dn.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
                 }
             } else if (J == 1) {
                 documentStepStyle = (StepStyles.DocumentStepStyle) this.nullableDocumentStepStyleAdapter.fromJson(reader);
             } else if (J == 2 && (config = (NextStep.Document.Config) this.configAdapter.fromJson(reader)) == null) {
-                throw bn.c.x("config", "config", reader);
+                throw dn.c.x("config", "config", reader);
             }
         }
         reader.D();
@@ -77,16 +77,16 @@ public final class NextStep_DocumentJsonAdapter extends h {
             if (config != null) {
                 return new NextStep.Document(str, documentStepStyle, config);
             }
-            throw bn.c.o("config", "config", reader);
+            throw dn.c.o("config", "config", reader);
         }
-        throw bn.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw dn.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.Document document) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (document != null) {
-            writer.k();
+            writer.i();
             writer.J(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(writer, document.getName());
             writer.J("styles");

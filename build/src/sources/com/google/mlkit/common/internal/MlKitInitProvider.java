@@ -8,7 +8,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.util.Log;
 import hf.q;
-import uj.i;
+import wj.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class MlKitInitProvider extends ContentProvider {
     @Override // android.content.ContentProvider

@@ -12,13 +12,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class k implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Number f28785d;
+    private final Number f29720d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f28786e;
+    private final String f29721e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f28787i;
+    private Map f29722i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -37,12 +37,12 @@ public final class k implements w1 {
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.p1(iLogger, concurrentHashMap, o02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                     } else {
-                        number = (Number) e3Var.T1();
+                        number = (Number) e3Var.Z1();
                     }
                 } else {
-                    str = e3Var.m1();
+                    str = e3Var.r1();
                 }
             }
             e3Var.D();
@@ -58,25 +58,25 @@ public final class k implements w1 {
     }
 
     public k(Number number, String str) {
-        this.f28785d = number;
-        this.f28786e = str;
+        this.f29720d = number;
+        this.f29721e = str;
     }
 
     public void a(Map map) {
-        this.f28787i = map;
+        this.f29722i = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("value").i(this.f28785d);
-        if (this.f28786e != null) {
-            f3Var.e("unit").f(this.f28786e);
+        f3Var.e("value").i(this.f29720d);
+        if (this.f29721e != null) {
+            f3Var.e("unit").f(this.f29721e);
         }
-        Map map = this.f28787i;
+        Map map = this.f29722i;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28787i.get(str);
+                Object obj = this.f29722i.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }

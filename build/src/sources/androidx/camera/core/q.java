@@ -8,25 +8,25 @@ import java.util.concurrent.Executor;
 public class q implements j1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final j1 f2181d;
+    private final j1 f2184d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Surface f2182e;
+    private final Surface f2185e;
 
     /* renamed from: f  reason: collision with root package name */
-    private e.a f2183f;
+    private e.a f2186f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f2178a = new Object();
+    private final Object f2181a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private int f2179b = 0;
+    private int f2182b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f2180c = false;
+    private boolean f2183c = false;
 
     /* renamed from: g  reason: collision with root package name */
-    private final e.a f2184g = new e.a() { // from class: x.k1
+    private final e.a f2187g = new e.a() { // from class: x.k1
         @Override // androidx.camera.core.e.a
         public final void a(androidx.camera.core.n nVar) {
             androidx.camera.core.q.h(androidx.camera.core.q.this, nVar);
@@ -34,8 +34,8 @@ public class q implements j1 {
     };
 
     public q(j1 j1Var) {
-        this.f2181d = j1Var;
-        this.f2182e = j1Var.getSurface();
+        this.f2184d = j1Var;
+        this.f2185e = j1Var.getSurface();
     }
 
     public static /* synthetic */ void a(q qVar, j1.a aVar, j1 j1Var) {
@@ -45,14 +45,14 @@ public class q implements j1 {
 
     public static /* synthetic */ void h(q qVar, n nVar) {
         e.a aVar;
-        synchronized (qVar.f2178a) {
+        synchronized (qVar.f2181a) {
             try {
-                int i10 = qVar.f2179b - 1;
-                qVar.f2179b = i10;
-                if (qVar.f2180c && i10 == 0) {
+                int i10 = qVar.f2182b - 1;
+                qVar.f2182b = i10;
+                if (qVar.f2183c && i10 == 0) {
                     qVar.close();
                 }
-                aVar = qVar.f2183f;
+                aVar = qVar.f2186f;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -64,9 +64,9 @@ public class q implements j1 {
 
     private n l(n nVar) {
         if (nVar != null) {
-            this.f2179b++;
+            this.f2182b++;
             s sVar = new s(nVar);
-            sVar.a(this.f2184g);
+            sVar.a(this.f2187g);
             return sVar;
         }
         return null;
@@ -75,8 +75,8 @@ public class q implements j1 {
     @Override // a0.j1
     public n b() {
         n l10;
-        synchronized (this.f2178a) {
-            l10 = l(this.f2181d.b());
+        synchronized (this.f2181a) {
+            l10 = l(this.f2184d.b());
         }
         return l10;
     }
@@ -84,21 +84,21 @@ public class q implements j1 {
     @Override // a0.j1
     public int c() {
         int c10;
-        synchronized (this.f2178a) {
-            c10 = this.f2181d.c();
+        synchronized (this.f2181a) {
+            c10 = this.f2184d.c();
         }
         return c10;
     }
 
     @Override // a0.j1
     public void close() {
-        synchronized (this.f2178a) {
+        synchronized (this.f2181a) {
             try {
-                Surface surface = this.f2182e;
+                Surface surface = this.f2185e;
                 if (surface != null) {
                     surface.release();
                 }
-                this.f2181d.close();
+                this.f2184d.close();
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -107,15 +107,15 @@ public class q implements j1 {
 
     @Override // a0.j1
     public void d() {
-        synchronized (this.f2178a) {
-            this.f2181d.d();
+        synchronized (this.f2181a) {
+            this.f2184d.d();
         }
     }
 
     @Override // a0.j1
     public void e(final j1.a aVar, Executor executor) {
-        synchronized (this.f2178a) {
-            this.f2181d.e(new j1.a() { // from class: x.j1
+        synchronized (this.f2181a) {
+            this.f2184d.e(new j1.a() { // from class: x.j1
                 @Override // a0.j1.a
                 public final void a(a0.j1 j1Var) {
                     androidx.camera.core.q.a(androidx.camera.core.q.this, aVar, j1Var);
@@ -127,8 +127,8 @@ public class q implements j1 {
     @Override // a0.j1
     public int f() {
         int f10;
-        synchronized (this.f2178a) {
-            f10 = this.f2181d.f();
+        synchronized (this.f2181a) {
+            f10 = this.f2184d.f();
         }
         return f10;
     }
@@ -136,8 +136,8 @@ public class q implements j1 {
     @Override // a0.j1
     public n g() {
         n l10;
-        synchronized (this.f2178a) {
-            l10 = l(this.f2181d.g());
+        synchronized (this.f2181a) {
+            l10 = l(this.f2184d.g());
         }
         return l10;
     }
@@ -145,8 +145,8 @@ public class q implements j1 {
     @Override // a0.j1
     public int getHeight() {
         int height;
-        synchronized (this.f2178a) {
-            height = this.f2181d.getHeight();
+        synchronized (this.f2181a) {
+            height = this.f2184d.getHeight();
         }
         return height;
     }
@@ -154,8 +154,8 @@ public class q implements j1 {
     @Override // a0.j1
     public Surface getSurface() {
         Surface surface;
-        synchronized (this.f2178a) {
-            surface = this.f2181d.getSurface();
+        synchronized (this.f2181a) {
+            surface = this.f2184d.getSurface();
         }
         return surface;
     }
@@ -163,26 +163,26 @@ public class q implements j1 {
     @Override // a0.j1
     public int getWidth() {
         int width;
-        synchronized (this.f2178a) {
-            width = this.f2181d.getWidth();
+        synchronized (this.f2181a) {
+            width = this.f2184d.getWidth();
         }
         return width;
     }
 
     public int i() {
         int f10;
-        synchronized (this.f2178a) {
-            f10 = this.f2181d.f() - this.f2179b;
+        synchronized (this.f2181a) {
+            f10 = this.f2184d.f() - this.f2182b;
         }
         return f10;
     }
 
     public void j() {
-        synchronized (this.f2178a) {
+        synchronized (this.f2181a) {
             try {
-                this.f2180c = true;
-                this.f2181d.d();
-                if (this.f2179b == 0) {
+                this.f2183c = true;
+                this.f2184d.d();
+                if (this.f2182b == 0) {
                     close();
                 }
             } catch (Throwable th2) {
@@ -192,8 +192,8 @@ public class q implements j1 {
     }
 
     public void k(e.a aVar) {
-        synchronized (this.f2178a) {
-            this.f2183f = aVar;
+        synchronized (this.f2181a) {
+            this.f2186f = aVar;
         }
     }
 }

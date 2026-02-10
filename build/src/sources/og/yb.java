@@ -1,61 +1,61 @@
 package og;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class yb implements zi.d {
+final class yb implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final yb f41531a = new yb();
+    static final yb f39857a = new yb();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f41532b;
+    private static final bj.c f39858b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f41533c;
+    private static final bj.c f39859c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f41534d;
+    private static final bj.c f39860d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final zi.c f41535e;
+    private static final bj.c f39861e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final zi.c f41536f;
+    private static final bj.c f39862f;
 
     static {
-        c.b a10 = zi.c.a("xMin");
+        c.b a10 = bj.c.a("xMin");
         l2 l2Var = new l2();
         l2Var.a(1);
-        f41532b = a10.b(l2Var.b()).a();
-        c.b a11 = zi.c.a("yMin");
+        f39858b = a10.b(l2Var.b()).a();
+        c.b a11 = bj.c.a("yMin");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
-        f41533c = a11.b(l2Var2.b()).a();
-        c.b a12 = zi.c.a("xMax");
+        f39859c = a11.b(l2Var2.b()).a();
+        c.b a12 = bj.c.a("xMax");
         l2 l2Var3 = new l2();
         l2Var3.a(3);
-        f41534d = a12.b(l2Var3.b()).a();
-        c.b a13 = zi.c.a("yMax");
+        f39860d = a12.b(l2Var3.b()).a();
+        c.b a13 = bj.c.a("yMax");
         l2 l2Var4 = new l2();
         l2Var4.a(4);
-        f41535e = a13.b(l2Var4.b()).a();
-        c.b a14 = zi.c.a("confidenceScore");
+        f39861e = a13.b(l2Var4.b()).a();
+        c.b a14 = bj.c.a("confidenceScore");
         l2 l2Var5 = new l2();
         l2Var5.a(5);
-        f41536f = a14.b(l2Var5.b()).a();
+        f39862f = a14.b(l2Var5.b()).a();
     }
 
     private yb() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         oi oiVar = (oi) obj;
-        zi.e eVar = (zi.e) obj2;
-        eVar.d(f41532b, oiVar.c());
-        eVar.d(f41533c, oiVar.e());
-        eVar.d(f41534d, oiVar.b());
-        eVar.d(f41535e, oiVar.d());
-        eVar.d(f41536f, oiVar.a());
+        bj.e eVar = (bj.e) obj2;
+        eVar.e(f39858b, oiVar.c());
+        eVar.e(f39859c, oiVar.e());
+        eVar.e(f39860d, oiVar.b());
+        eVar.e(f39861e, oiVar.d());
+        eVar.e(f39862f, oiVar.a());
     }
 }

@@ -20,7 +20,7 @@ public final class SpoilerType {
     static {
         SpoilerType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = yr.a.a($values);
+        $ENTRIES = hs.a.a($values);
     }
 
     private SpoilerType(String str, int i10) {

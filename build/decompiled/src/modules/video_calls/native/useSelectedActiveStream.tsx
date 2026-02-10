@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot3;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun69140: for (var _fun69140_ip = 0;;) switch (_fun69140_ip) {
+            _fun69196: for (var _fun69196_ip = 0;;) switch (_fun69196_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var2 = var3.getSelectedParticipantId;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var2 = var0 != var3;
                     if (!var2) {
-                        _fun69140_ip = 54;
-                        continue _fun69140
+                        _fun69196_ip = 54;
+                        continue _fun69196
                     }
                 case 39:
                     var2 = _closure1_slot3;

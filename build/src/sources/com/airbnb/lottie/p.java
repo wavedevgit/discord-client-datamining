@@ -16,29 +16,29 @@ import l5.y;
 public class p {
 
     /* renamed from: e  reason: collision with root package name */
-    public static Executor f7928e = Executors.newCachedThreadPool(new y5.e());
+    public static Executor f8505e = Executors.newCachedThreadPool(new y5.e());
 
     /* renamed from: a  reason: collision with root package name */
-    private final Set f7929a;
+    private final Set f8506a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f7930b;
+    private final Set f8507b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Handler f7931c;
+    private final Handler f8508c;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile c0 f7932d;
+    private volatile c0 f8509d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a extends FutureTask {
 
         /* renamed from: d  reason: collision with root package name */
-        private p f7933d;
+        private p f8510d;
 
         a(p pVar, Callable callable) {
             super(callable);
-            this.f7933d = pVar;
+            this.f8510d = pVar;
         }
 
         @Override // java.util.concurrent.FutureTask
@@ -46,13 +46,13 @@ public class p {
             try {
                 if (!isCancelled()) {
                     try {
-                        this.f7933d.l((c0) get());
+                        this.f8510d.l((c0) get());
                     } catch (InterruptedException | ExecutionException e10) {
-                        this.f7933d.l(new c0(e10));
+                        this.f8510d.l(new c0(e10));
                     }
                 }
             } finally {
-                this.f7933d = null;
+                this.f8510d = null;
             }
         }
     }
@@ -62,7 +62,7 @@ public class p {
     }
 
     private synchronized void f(Throwable th2) {
-        ArrayList<y> arrayList = new ArrayList(this.f7930b);
+        ArrayList<y> arrayList = new ArrayList(this.f8507b);
         if (arrayList.isEmpty()) {
             y5.d.d("Lottie encountered an error but no failure listener was added:", th2);
             return;
@@ -76,7 +76,7 @@ public class p {
         if (Looper.myLooper() == Looper.getMainLooper()) {
             h();
         } else {
-            this.f7931c.post(new Runnable() { // from class: l5.d0
+            this.f8508c.post(new Runnable() { // from class: l5.d0
                 @Override // java.lang.Runnable
                 public final void run() {
                     com.airbnb.lottie.p.this.h();
@@ -87,7 +87,7 @@ public class p {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void h() {
-        c0 c0Var = this.f7932d;
+        c0 c0Var = this.f8509d;
         if (c0Var == null) {
             return;
         }
@@ -99,15 +99,15 @@ public class p {
     }
 
     private synchronized void i(Object obj) {
-        for (y yVar : new ArrayList(this.f7929a)) {
+        for (y yVar : new ArrayList(this.f8506a)) {
             yVar.onResult(obj);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void l(c0 c0Var) {
-        if (this.f7932d == null) {
-            this.f7932d = c0Var;
+        if (this.f8509d == null) {
+            this.f8509d = c0Var;
             g();
             return;
         }
@@ -116,11 +116,11 @@ public class p {
 
     public synchronized p c(y yVar) {
         try {
-            c0 c0Var = this.f7932d;
+            c0 c0Var = this.f8509d;
             if (c0Var != null && c0Var.a() != null) {
                 yVar.onResult(c0Var.a());
             }
-            this.f7930b.add(yVar);
+            this.f8507b.add(yVar);
         } catch (Throwable th2) {
             throw th2;
         }
@@ -129,11 +129,11 @@ public class p {
 
     public synchronized p d(y yVar) {
         try {
-            c0 c0Var = this.f7932d;
+            c0 c0Var = this.f8509d;
             if (c0Var != null && c0Var.b() != null) {
                 yVar.onResult(c0Var.b());
             }
-            this.f7929a.add(yVar);
+            this.f8506a.add(yVar);
         } catch (Throwable th2) {
             throw th2;
         }
@@ -141,33 +141,33 @@ public class p {
     }
 
     public c0 e() {
-        return this.f7932d;
+        return this.f8509d;
     }
 
     public synchronized p j(y yVar) {
-        this.f7930b.remove(yVar);
+        this.f8507b.remove(yVar);
         return this;
     }
 
     public synchronized p k(y yVar) {
-        this.f7929a.remove(yVar);
+        this.f8506a.remove(yVar);
         return this;
     }
 
     public p(Object obj) {
-        this.f7929a = new LinkedHashSet(1);
-        this.f7930b = new LinkedHashSet(1);
-        this.f7931c = new Handler(Looper.getMainLooper());
-        this.f7932d = null;
+        this.f8506a = new LinkedHashSet(1);
+        this.f8507b = new LinkedHashSet(1);
+        this.f8508c = new Handler(Looper.getMainLooper());
+        this.f8509d = null;
         l(new c0(obj));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(Callable callable, boolean z10) {
-        this.f7929a = new LinkedHashSet(1);
-        this.f7930b = new LinkedHashSet(1);
-        this.f7931c = new Handler(Looper.getMainLooper());
-        this.f7932d = null;
+        this.f8506a = new LinkedHashSet(1);
+        this.f8507b = new LinkedHashSet(1);
+        this.f8508c = new Handler(Looper.getMainLooper());
+        this.f8509d = null;
         if (z10) {
             try {
                 l((c0) callable.call());
@@ -177,6 +177,6 @@ public class p {
                 return;
             }
         }
-        f7928e.execute(new a(this, callable));
+        f8505e.execute(new a(this, callable));
     }
 }

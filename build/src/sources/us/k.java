@@ -1,33 +1,56 @@
 package us;
 
-import java.util.ArrayList;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.util.Collection;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.jvm.internal.impl.descriptors.PropertyDescriptor;
+import kotlin.reflect.jvm.internal.impl.name.Name;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class k {
-    public static /* synthetic */ Object b(Object obj, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        if ((i10 & 1) != 0) {
-            obj = null;
-        }
-        return a(obj);
+public final class k extends c1 {
+
+    /* renamed from: o  reason: collision with root package name */
+    public static final k f51082o = new k();
+
+    private k() {
     }
 
-    public static final Object c(Object obj, Object obj2) {
-        if (obj == null) {
-            return a(obj2);
-        }
-        if (obj instanceof ArrayList) {
-            Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.util.ArrayList<E of kotlinx.coroutines.internal.InlineList>");
-            ((ArrayList) obj).add(obj2);
-            return a(obj);
-        }
-        ArrayList arrayList = new ArrayList(4);
-        arrayList.add(obj);
-        arrayList.add(obj2);
-        return a(arrayList);
+    private final Void C() {
+        throw new x2("Introspecting local functions, lambdas, anonymous functions, local variables and typealiases is not yet fully supported in Kotlin reflection");
     }
 
-    public static Object a(Object obj) {
-        return obj;
+    @Override // kotlin.jvm.internal.ClassBasedDeclarationContainer
+    public Class getJClass() {
+        C();
+        throw new as.h();
+    }
+
+    @Override // kotlin.jvm.internal.ClassBasedDeclarationContainer
+    public Collection getMembers() {
+        C();
+        throw new as.h();
+    }
+
+    @Override // us.c1
+    public Collection r() {
+        C();
+        throw new as.h();
+    }
+
+    @Override // us.c1
+    public Collection s(Name name) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        C();
+        throw new as.h();
+    }
+
+    @Override // us.c1
+    public PropertyDescriptor t(int i10) {
+        return null;
+    }
+
+    @Override // us.c1
+    public Collection w(Name name) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        C();
+        throw new as.h();
     }
 }

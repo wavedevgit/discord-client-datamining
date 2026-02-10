@@ -18,6 +18,8 @@ import android.os.Build;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.Editable;
+import android.text.StaticLayout;
+import android.text.TextPaint;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -38,212 +40,213 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.e0;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.internal.CheckableImageButton;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class TextInputLayout extends LinearLayout implements ViewTreeObserver.OnGlobalLayoutListener {
-    private static final int N0 = bh.j.f6794j;
-    private static final int[][] O0 = {new int[]{16842919}, new int[0]};
-    private int A;
+    private static final int O0 = bh.k.f6939n;
+    private static final int[][] P0 = {new int[]{16842919}, new int[0]};
+    private TextView A;
     private int A0;
     private int B;
     private int B0;
-    private CharSequence C;
+    private int C;
     private int C0;
-    private boolean D;
+    private CharSequence D;
     private int D0;
-    private TextView E;
-    int E0;
-    private ColorStateList F;
-    private boolean F0;
-    private int G;
-    final com.google.android.material.internal.a G0;
-    private androidx.transition.e H;
-    private boolean H0;
+    private boolean E;
+    private int E0;
+    private TextView F;
+    int F0;
+    private ColorStateList G;
+    private boolean G0;
+    private int H;
+    final com.google.android.material.internal.a H0;
     private androidx.transition.e I;
     private boolean I0;
-    private ColorStateList J;
-    private ValueAnimator J0;
+    private androidx.transition.e J;
+    private boolean J0;
     private ColorStateList K;
-    private boolean K0;
+    private ValueAnimator K0;
     private ColorStateList L;
     private boolean L0;
     private ColorStateList M;
     private boolean M0;
-    private boolean N;
-    private CharSequence O;
-    private boolean P;
-    private rh.g Q;
-    private rh.g R;
-    private StateListDrawable S;
-    private boolean T;
-    private rh.g U;
-    private rh.g V;
-    private rh.k W;
+    private ColorStateList N;
+    private boolean N0;
+    private boolean O;
+    private CharSequence P;
+    private boolean Q;
+    private th.h R;
+    private th.h S;
+    private StateListDrawable T;
+    private boolean U;
+    private th.h V;
+    private th.h W;
 
     /* renamed from: a0  reason: collision with root package name */
-    private boolean f15535a0;
+    private th.l f16283a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    private final int f15536b0;
+    private boolean f16284b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    private int f15537c0;
+    private final int f16285c0;
 
     /* renamed from: d  reason: collision with root package name */
-    private final FrameLayout f15538d;
+    private final FrameLayout f16286d;
 
     /* renamed from: d0  reason: collision with root package name */
-    private int f15539d0;
+    private int f16287d0;
 
     /* renamed from: e  reason: collision with root package name */
-    private final y f15540e;
+    private final y f16288e;
 
     /* renamed from: e0  reason: collision with root package name */
-    private int f15541e0;
+    private int f16289e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    private int f15542f0;
+    private int f16290f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private int f15543g0;
+    private int f16291g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    private int f15544h0;
+    private int f16292h0;
 
     /* renamed from: i  reason: collision with root package name */
-    private final r f15545i;
+    private final r f16293i;
 
     /* renamed from: i0  reason: collision with root package name */
-    private int f15546i0;
+    private int f16294i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private final Rect f15547j0;
+    private int f16295j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private final Rect f15548k0;
+    private final Rect f16296k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private final RectF f15549l0;
+    private final Rect f16297l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private Typeface f15550m0;
+    private final RectF f16298m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private Drawable f15551n0;
+    private Typeface f16299n0;
 
     /* renamed from: o  reason: collision with root package name */
-    EditText f15552o;
+    private final int f16300o;
 
     /* renamed from: o0  reason: collision with root package name */
-    private int f15553o0;
+    private Drawable f16301o0;
 
     /* renamed from: p  reason: collision with root package name */
-    private CharSequence f15554p;
+    EditText f16302p;
 
     /* renamed from: p0  reason: collision with root package name */
-    private final LinkedHashSet f15555p0;
+    private int f16303p0;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f15556q;
+    private CharSequence f16304q;
 
     /* renamed from: q0  reason: collision with root package name */
-    private Drawable f15557q0;
+    private final LinkedHashSet f16305q0;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f15558r;
+    private int f16306r;
 
     /* renamed from: r0  reason: collision with root package name */
-    private int f15559r0;
+    private Drawable f16307r0;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f15560s;
+    private int f16308s;
 
     /* renamed from: s0  reason: collision with root package name */
-    private Drawable f15561s0;
+    private int f16309s0;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f15562t;
+    private int f16310t;
 
     /* renamed from: t0  reason: collision with root package name */
-    private ColorStateList f15563t0;
+    private Drawable f16311t0;
 
     /* renamed from: u  reason: collision with root package name */
-    private final u f15564u;
+    private int f16312u;
 
     /* renamed from: u0  reason: collision with root package name */
-    private ColorStateList f15565u0;
+    private ColorStateList f16313u0;
 
     /* renamed from: v  reason: collision with root package name */
-    boolean f15566v;
+    private final u f16314v;
 
     /* renamed from: v0  reason: collision with root package name */
-    private int f15567v0;
+    private ColorStateList f16315v0;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f15568w;
+    boolean f16316w;
 
     /* renamed from: w0  reason: collision with root package name */
-    private int f15569w0;
+    private int f16317w0;
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f15570x;
+    private int f16318x;
 
     /* renamed from: x0  reason: collision with root package name */
-    private int f15571x0;
+    private int f16319x0;
 
     /* renamed from: y  reason: collision with root package name */
-    private e f15572y;
+    private boolean f16320y;
 
     /* renamed from: y0  reason: collision with root package name */
-    private ColorStateList f15573y0;
+    private int f16321y0;
 
     /* renamed from: z  reason: collision with root package name */
-    private TextView f15574z;
+    private f f16322z;
 
     /* renamed from: z0  reason: collision with root package name */
-    private int f15575z0;
+    private ColorStateList f16323z0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a implements TextWatcher {
 
         /* renamed from: d  reason: collision with root package name */
-        int f15576d;
+        int f16324d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ EditText f15577e;
+        final /* synthetic */ EditText f16325e;
 
         a(EditText editText) {
-            this.f15577e = editText;
-            this.f15576d = editText.getLineCount();
+            this.f16325e = editText;
+            this.f16324d = editText.getLineCount();
         }
 
         @Override // android.text.TextWatcher
         public void afterTextChanged(Editable editable) {
             TextInputLayout textInputLayout = TextInputLayout.this;
-            textInputLayout.t0(!textInputLayout.L0);
+            textInputLayout.x0(!textInputLayout.M0);
             TextInputLayout textInputLayout2 = TextInputLayout.this;
-            if (textInputLayout2.f15566v) {
-                textInputLayout2.j0(editable);
+            if (textInputLayout2.f16316w) {
+                textInputLayout2.m0(editable);
             }
-            if (TextInputLayout.this.D) {
-                TextInputLayout.this.x0(editable);
+            if (TextInputLayout.this.E) {
+                TextInputLayout.this.B0(editable);
             }
-            int lineCount = this.f15577e.getLineCount();
-            int i10 = this.f15576d;
+            int lineCount = this.f16325e.getLineCount();
+            int i10 = this.f16324d;
             if (lineCount != i10) {
                 if (lineCount < i10) {
-                    int A = h0.A(this.f15577e);
-                    int i11 = TextInputLayout.this.E0;
-                    if (A != i11) {
-                        this.f15577e.setMinimumHeight(i11);
+                    int minimumHeight = this.f16325e.getMinimumHeight();
+                    int i11 = TextInputLayout.this.F0;
+                    if (minimumHeight != i11) {
+                        this.f16325e.setMinimumHeight(i11);
                     }
                 }
-                this.f15576d = lineCount;
+                this.f16324d = lineCount;
             }
         }
 
@@ -256,37 +259,50 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         }
     }
 
+    /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class b implements Runnable {
+    public class b extends androidx.core.view.a {
         b() {
+        }
+
+        @Override // androidx.core.view.a
+        public void onInitializeAccessibilityNodeInfo(View view, AccessibilityNodeInfoCompat accessibilityNodeInfoCompat) {
+            super.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfoCompat);
+            accessibilityNodeInfoCompat.f1(false);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    class c implements Runnable {
+        c() {
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            TextInputLayout.this.f15545i.h();
+            TextInputLayout.this.f16293i.h();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class c implements ValueAnimator.AnimatorUpdateListener {
-        c() {
+    public class d implements ValueAnimator.AnimatorUpdateListener {
+        d() {
         }
 
         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
-            TextInputLayout.this.G0.c0(((Float) valueAnimator.getAnimatedValue()).floatValue());
+            TextInputLayout.this.H0.j0(((Float) valueAnimator.getAnimatedValue()).floatValue());
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class d extends androidx.core.view.a {
+    public static class e extends androidx.core.view.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final TextInputLayout f15581a;
+        private final TextInputLayout f16330a;
 
-        public d(TextInputLayout textInputLayout) {
-            this.f15581a = textInputLayout;
+        public e(TextInputLayout textInputLayout) {
+            this.f16330a = textInputLayout;
         }
 
         @Override // androidx.core.view.a
@@ -295,20 +311,20 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             boolean z10;
             String str;
             super.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfoCompat);
-            EditText editText = this.f15581a.getEditText();
+            EditText editText = this.f16330a.getEditText();
             if (editText != null) {
                 charSequence = editText.getText();
             } else {
                 charSequence = null;
             }
-            CharSequence hint = this.f15581a.getHint();
-            CharSequence error = this.f15581a.getError();
-            CharSequence placeholderText = this.f15581a.getPlaceholderText();
-            int counterMaxLength = this.f15581a.getCounterMaxLength();
-            CharSequence counterOverflowDescription = this.f15581a.getCounterOverflowDescription();
+            CharSequence hint = this.f16330a.getHint();
+            CharSequence error = this.f16330a.getError();
+            CharSequence placeholderText = this.f16330a.getPlaceholderText();
+            int counterMaxLength = this.f16330a.getCounterMaxLength();
+            CharSequence counterOverflowDescription = this.f16330a.getCounterOverflowDescription();
             boolean isEmpty = TextUtils.isEmpty(charSequence);
             boolean isEmpty2 = TextUtils.isEmpty(hint);
-            boolean P = this.f15581a.P();
+            boolean Q = this.f16330a.Q();
             boolean isEmpty3 = TextUtils.isEmpty(error);
             if (isEmpty3 && TextUtils.isEmpty(counterOverflowDescription)) {
                 z10 = false;
@@ -320,12 +336,12 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             } else {
                 str = "";
             }
-            this.f15581a.f15540e.A(accessibilityNodeInfoCompat);
+            this.f16330a.f16288e.A(accessibilityNodeInfoCompat);
             if (!isEmpty) {
                 accessibilityNodeInfoCompat.b1(charSequence);
             } else if (!TextUtils.isEmpty(str)) {
                 accessibilityNodeInfoCompat.b1(str);
-                if (!P && placeholderText != null) {
+                if (!Q && placeholderText != null) {
                     accessibilityNodeInfoCompat.b1(str + ", " + ((Object) placeholderText));
                 }
             } else if (placeholderText != null) {
@@ -349,40 +365,40 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
                 }
                 accessibilityNodeInfoCompat.D0(error);
             }
-            View t10 = this.f15581a.f15564u.t();
+            View t10 = this.f16330a.f16314v.t();
             if (t10 != null) {
                 accessibilityNodeInfoCompat.K0(t10);
             }
-            this.f15581a.f15545i.m().o(view, accessibilityNodeInfoCompat);
+            this.f16330a.f16293i.m().o(view, accessibilityNodeInfoCompat);
         }
 
         @Override // androidx.core.view.a
         public void onPopulateAccessibilityEvent(View view, AccessibilityEvent accessibilityEvent) {
             super.onPopulateAccessibilityEvent(view, accessibilityEvent);
-            this.f15581a.f15545i.m().p(view, accessibilityEvent);
+            this.f16330a.f16293i.m().p(view, accessibilityEvent);
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface e {
+    public interface f {
         int a(Editable editable);
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface f {
+    public interface g {
         void a(TextInputLayout textInputLayout);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class g extends u2.a {
-        public static final Parcelable.Creator<g> CREATOR = new a();
+    public static class h extends u2.a {
+        public static final Parcelable.Creator<h> CREATOR = new a();
 
         /* renamed from: i  reason: collision with root package name */
-        CharSequence f15582i;
+        CharSequence f16331i;
 
         /* renamed from: o  reason: collision with root package name */
-        boolean f15583o;
+        boolean f16332o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         class a implements Parcelable.ClassLoaderCreator {
@@ -391,193 +407,252 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
             @Override // android.os.Parcelable.Creator
             /* renamed from: a */
-            public g createFromParcel(Parcel parcel) {
-                return new g(parcel, null);
+            public h createFromParcel(Parcel parcel) {
+                return new h(parcel, null);
             }
 
             @Override // android.os.Parcelable.ClassLoaderCreator
             /* renamed from: b */
-            public g createFromParcel(Parcel parcel, ClassLoader classLoader) {
-                return new g(parcel, classLoader);
+            public h createFromParcel(Parcel parcel, ClassLoader classLoader) {
+                return new h(parcel, classLoader);
             }
 
             @Override // android.os.Parcelable.Creator
             /* renamed from: c */
-            public g[] newArray(int i10) {
-                return new g[i10];
+            public h[] newArray(int i10) {
+                return new h[i10];
             }
         }
 
-        g(Parcelable parcelable) {
+        h(Parcelable parcelable) {
             super(parcelable);
         }
 
         public String toString() {
-            return "TextInputLayout.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " error=" + ((Object) this.f15582i) + "}";
+            return "TextInputLayout.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " error=" + ((Object) this.f16331i) + "}";
         }
 
         @Override // u2.a, android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
             super.writeToParcel(parcel, i10);
-            TextUtils.writeToParcel(this.f15582i, parcel, i10);
-            parcel.writeInt(this.f15583o ? 1 : 0);
+            TextUtils.writeToParcel(this.f16331i, parcel, i10);
+            parcel.writeInt(this.f16332o ? 1 : 0);
         }
 
-        g(Parcel parcel, ClassLoader classLoader) {
+        h(Parcel parcel, ClassLoader classLoader) {
             super(parcel, classLoader);
-            this.f15582i = (CharSequence) TextUtils.CHAR_SEQUENCE_CREATOR.createFromParcel(parcel);
-            this.f15583o = parcel.readInt() == 1;
+            this.f16331i = (CharSequence) TextUtils.CHAR_SEQUENCE_CREATOR.createFromParcel(parcel);
+            this.f16332o = parcel.readInt() == 1;
         }
     }
 
     public TextInputLayout(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, bh.b.f6632h0);
+        this(context, attributeSet, bh.b.f6750n0);
     }
 
-    private androidx.transition.e A() {
+    private void A(boolean z10) {
+        ValueAnimator valueAnimator = this.K0;
+        if (valueAnimator != null && valueAnimator.isRunning()) {
+            this.K0.cancel();
+        }
+        if (z10 && this.J0) {
+            m(1.0f);
+        } else {
+            this.H0.j0(1.0f);
+        }
+        this.G0 = false;
+        if (C()) {
+            W();
+        }
+        A0();
+        this.f16288e.l(false);
+        this.f16293i.H(false);
+    }
+
+    private void A0() {
+        Editable text;
+        EditText editText = this.f16302p;
+        if (editText == null) {
+            text = null;
+        } else {
+            text = editText.getText();
+        }
+        B0(text);
+    }
+
+    private androidx.transition.e B() {
         androidx.transition.e eVar = new androidx.transition.e();
-        eVar.m0(mh.g.f(getContext(), bh.b.K, 87));
-        eVar.o0(mh.g.g(getContext(), bh.b.Q, ch.a.f7595a));
+        eVar.o0(oh.g.f(getContext(), bh.b.O, 87));
+        eVar.q0(oh.g.g(getContext(), bh.b.U, ch.a.f8276a));
         return eVar;
     }
 
-    private boolean B() {
-        if (this.N && !TextUtils.isEmpty(this.O) && (this.Q instanceof h)) {
+    /* JADX INFO: Access modifiers changed from: private */
+    public void B0(Editable editable) {
+        if (this.f16322z.a(editable) == 0 && !this.G0) {
+            h0();
+        } else {
+            M();
+        }
+    }
+
+    private boolean C() {
+        if (this.O && !TextUtils.isEmpty(this.P) && (this.R instanceof com.google.android.material.textfield.h)) {
             return true;
         }
         return false;
     }
 
-    private void C() {
-        Iterator it = this.f15555p0.iterator();
-        while (it.hasNext()) {
-            ((f) it.next()).a(this);
+    private void C0(boolean z10, boolean z11) {
+        int defaultColor = this.f16323z0.getDefaultColor();
+        int colorForState = this.f16323z0.getColorForState(new int[]{16843623, 16842910}, defaultColor);
+        int colorForState2 = this.f16323z0.getColorForState(new int[]{16843518, 16842910}, defaultColor);
+        if (z10) {
+            this.f16294i0 = colorForState2;
+        } else if (z11) {
+            this.f16294i0 = colorForState;
+        } else {
+            this.f16294i0 = defaultColor;
         }
     }
 
-    private void D(Canvas canvas) {
-        rh.g gVar;
-        if (this.V != null && (gVar = this.U) != null) {
-            gVar.draw(canvas);
-            if (this.f15552o.isFocused()) {
-                Rect bounds = this.V.getBounds();
-                Rect bounds2 = this.U.getBounds();
-                float x10 = this.G0.x();
-                int centerX = bounds2.centerX();
-                bounds.left = ch.a.c(centerX, bounds2.left, x10);
-                bounds.right = ch.a.c(centerX, bounds2.right, x10);
-                this.V.draw(canvas);
-            }
+    private void D() {
+        Iterator it = this.f16305q0.iterator();
+        while (it.hasNext()) {
+            ((g) it.next()).a(this);
         }
     }
 
     private void E(Canvas canvas) {
-        if (this.N) {
-            this.G0.l(canvas);
+        th.h hVar;
+        if (this.W != null && (hVar = this.V) != null) {
+            hVar.draw(canvas);
+            if (this.f16302p.isFocused()) {
+                Rect bounds = this.W.getBounds();
+                Rect bounds2 = this.V.getBounds();
+                float B = this.H0.B();
+                int centerX = bounds2.centerX();
+                bounds.left = ch.a.c(centerX, bounds2.left, B);
+                bounds.right = ch.a.c(centerX, bounds2.right, B);
+                this.W.draw(canvas);
+            }
         }
     }
 
-    private void F(boolean z10) {
-        ValueAnimator valueAnimator = this.J0;
+    private void F(Canvas canvas) {
+        if (this.O) {
+            this.H0.k(canvas);
+        }
+    }
+
+    private void G(boolean z10) {
+        ValueAnimator valueAnimator = this.K0;
         if (valueAnimator != null && valueAnimator.isRunning()) {
-            this.J0.cancel();
+            this.K0.cancel();
         }
-        if (z10 && this.I0) {
-            l(0.0f);
+        if (z10 && this.J0) {
+            m(0.0f);
         } else {
-            this.G0.c0(0.0f);
+            this.H0.j0(0.0f);
         }
-        if (B() && ((h) this.Q).n0()) {
-            y();
+        if (C() && ((com.google.android.material.textfield.h) this.R).A0()) {
+            z();
         }
-        this.F0 = true;
-        L();
-        this.f15540e.l(true);
-        this.f15545i.H(true);
+        this.G0 = true;
+        M();
+        this.f16288e.l(true);
+        this.f16293i.H(true);
     }
 
-    private rh.g G(boolean z10) {
+    private th.h H(boolean z10) {
         float f10;
         float dimensionPixelOffset;
         ColorStateList colorStateList;
-        float dimensionPixelOffset2 = getResources().getDimensionPixelOffset(bh.d.f6668c0);
+        float dimensionPixelOffset2 = getResources().getDimensionPixelOffset(bh.d.f6817v0);
         if (z10) {
             f10 = dimensionPixelOffset2;
         } else {
             f10 = 0.0f;
         }
-        EditText editText = this.f15552o;
+        EditText editText = this.f16302p;
         if (editText instanceof MaterialAutoCompleteTextView) {
             dimensionPixelOffset = ((MaterialAutoCompleteTextView) editText).getPopupElevation();
         } else {
-            dimensionPixelOffset = getResources().getDimensionPixelOffset(bh.d.f6688r);
+            dimensionPixelOffset = getResources().getDimensionPixelOffset(bh.d.C);
         }
-        int dimensionPixelOffset3 = getResources().getDimensionPixelOffset(bh.d.W);
-        rh.k m10 = rh.k.a().B(f10).G(f10).s(dimensionPixelOffset2).w(dimensionPixelOffset2).m();
-        EditText editText2 = this.f15552o;
+        int dimensionPixelOffset3 = getResources().getDimensionPixelOffset(bh.d.f6801n0);
+        th.l m10 = th.l.a().D(f10).I(f10).u(dimensionPixelOffset2).y(dimensionPixelOffset2).m();
+        EditText editText2 = this.f16302p;
         if (editText2 instanceof MaterialAutoCompleteTextView) {
             colorStateList = ((MaterialAutoCompleteTextView) editText2).getDropDownBackgroundTintList();
         } else {
             colorStateList = null;
         }
-        rh.g m11 = rh.g.m(getContext(), dimensionPixelOffset, colorStateList);
-        m11.setShapeAppearanceModel(m10);
-        m11.Z(0, dimensionPixelOffset3, 0, dimensionPixelOffset3);
-        return m11;
+        th.h r10 = th.h.r(getContext(), dimensionPixelOffset, colorStateList);
+        r10.setShapeAppearanceModel(m10);
+        r10.i0(0, dimensionPixelOffset3, 0, dimensionPixelOffset3);
+        return r10;
     }
 
-    private static Drawable H(rh.g gVar, int i10, int i11, int[][] iArr) {
-        return new RippleDrawable(new ColorStateList(iArr, new int[]{hh.a.j(i11, i10, 0.1f), i10}), gVar, gVar);
+    private static Drawable I(th.h hVar, int i10, int i11, int[][] iArr) {
+        return new RippleDrawable(new ColorStateList(iArr, new int[]{jh.a.j(i11, i10, 0.1f), i10}), hVar, hVar);
     }
 
-    private int I(int i10, boolean z10) {
+    private int J(int i10, boolean z10) {
         int compoundPaddingLeft;
         if (!z10 && getPrefixText() != null) {
-            compoundPaddingLeft = this.f15540e.c();
+            compoundPaddingLeft = this.f16288e.c();
         } else if (z10 && getSuffixText() != null) {
-            compoundPaddingLeft = this.f15545i.y();
+            compoundPaddingLeft = this.f16293i.y();
         } else {
-            compoundPaddingLeft = this.f15552o.getCompoundPaddingLeft();
+            compoundPaddingLeft = this.f16302p.getCompoundPaddingLeft();
         }
         return i10 + compoundPaddingLeft;
     }
 
-    private int J(int i10, boolean z10) {
+    private int K(int i10, boolean z10) {
         int compoundPaddingRight;
         if (!z10 && getSuffixText() != null) {
-            compoundPaddingRight = this.f15545i.y();
+            compoundPaddingRight = this.f16293i.y();
         } else if (z10 && getPrefixText() != null) {
-            compoundPaddingRight = this.f15540e.c();
+            compoundPaddingRight = this.f16288e.c();
         } else {
-            compoundPaddingRight = this.f15552o.getCompoundPaddingRight();
+            compoundPaddingRight = this.f16302p.getCompoundPaddingRight();
         }
         return i10 - compoundPaddingRight;
     }
 
-    private static Drawable K(Context context, rh.g gVar, int i10, int[][] iArr) {
-        int c10 = hh.a.c(context, bh.b.f6641o, "TextInputLayout");
-        rh.g gVar2 = new rh.g(gVar.D());
-        int j10 = hh.a.j(i10, c10, 0.1f);
-        gVar2.X(new ColorStateList(iArr, new int[]{j10, 0}));
-        gVar2.setTint(c10);
+    private static Drawable L(Context context, th.h hVar, int i10, int[][] iArr) {
+        int c10 = jh.a.c(context, bh.b.f6751o, "TextInputLayout");
+        th.h hVar2 = new th.h(hVar.J());
+        int j10 = jh.a.j(i10, c10, 0.1f);
+        hVar2.f0(new ColorStateList(iArr, new int[]{j10, 0}));
+        hVar2.setTint(c10);
         ColorStateList colorStateList = new ColorStateList(iArr, new int[]{j10, c10});
-        rh.g gVar3 = new rh.g(gVar.D());
-        gVar3.setTint(-1);
-        return new LayerDrawable(new Drawable[]{new RippleDrawable(colorStateList, gVar2, gVar3), gVar});
+        th.h hVar3 = new th.h(hVar.J());
+        hVar3.setTint(-1);
+        return new LayerDrawable(new Drawable[]{new RippleDrawable(colorStateList, hVar2, hVar3), hVar});
     }
 
-    private void L() {
-        TextView textView = this.E;
-        if (textView != null && this.D) {
+    private void M() {
+        TextView textView = this.F;
+        if (textView != null && this.E) {
             textView.setText((CharSequence) null);
-            androidx.transition.x.a(this.f15538d, this.I);
-            this.E.setVisibility(4);
+            androidx.transition.x.a(this.f16286d, this.J);
+            this.F.setVisibility(4);
         }
     }
 
-    private boolean Q() {
-        if (!c0()) {
-            if (this.f15574z == null || !this.f15570x) {
+    private boolean R() {
+        if (getHintMaxLines() == 1) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean S() {
+        if (!e0()) {
+            if (this.A == null || !this.f16320y) {
                 return false;
             }
             return true;
@@ -585,68 +660,76 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         return true;
     }
 
-    private boolean S() {
-        if (this.f15537c0 == 1 && this.f15552o.getMinLines() <= 1) {
+    private boolean U() {
+        if (this.f16287d0 == 1 && this.f16302p.getMinLines() <= 1) {
             return true;
         }
         return false;
     }
 
-    private void T() {
-        p();
-        q0();
-        z0();
-        g0();
-        k();
-        if (this.f15537c0 != 0) {
-            s0();
+    private void V() {
+        q();
+        t0();
+        D0();
+        i0();
+        l();
+        if (this.f16287d0 != 0) {
+            w0();
         }
-        a0();
+        c0();
     }
 
-    private void U() {
-        if (B()) {
-            RectF rectF = this.f15549l0;
-            this.G0.o(rectF, this.f15552o.getWidth(), this.f15552o.getGravity());
+    private void W() {
+        if (C()) {
+            RectF rectF = this.f16298m0;
+            this.H0.o(rectF, this.f16302p.getWidth(), this.f16302p.getGravity());
             if (rectF.width() > 0.0f && rectF.height() > 0.0f) {
-                o(rectF);
-                rectF.offset(-getPaddingLeft(), ((-getPaddingTop()) - (rectF.height() / 2.0f)) + this.f15541e0);
-                ((h) this.Q).q0(rectF);
+                p(rectF);
+                rectF.offset(-getPaddingLeft(), ((-getPaddingTop()) - (rectF.height() / 2.0f)) + this.f16290f0);
+                rectF.top = 0.0f;
+                ((com.google.android.material.textfield.h) this.R).D0(rectF);
             }
         }
     }
 
-    private void V() {
-        if (B() && !this.F0) {
-            y();
-            U();
+    private void X() {
+        if (C() && !this.G0) {
+            z();
+            W();
         }
     }
 
-    private static void W(ViewGroup viewGroup, boolean z10) {
+    private static void Y(ViewGroup viewGroup, boolean z10) {
         int childCount = viewGroup.getChildCount();
         for (int i10 = 0; i10 < childCount; i10++) {
             View childAt = viewGroup.getChildAt(i10);
             childAt.setEnabled(z10);
             if (childAt instanceof ViewGroup) {
-                W((ViewGroup) childAt, z10);
+                Y((ViewGroup) childAt, z10);
             }
         }
     }
 
-    private void Y() {
-        TextView textView = this.E;
+    private void a0() {
+        TextView textView = this.F;
         if (textView != null) {
             textView.setVisibility(8);
         }
     }
 
-    private void a0() {
-        EditText editText = this.f15552o;
+    public static /* synthetic */ int c(Editable editable) {
+        if (editable != null) {
+            return editable.length();
+        }
+        return 0;
+    }
+
+    private void c0() {
+        EditText editText = this.f16302p;
         if (editText instanceof AutoCompleteTextView) {
             AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) editText;
             if (autoCompleteTextView.getDropDownBackground() == null) {
-                int i10 = this.f15537c0;
+                int i10 = this.f16287d0;
                 if (i10 == 2) {
                     autoCompleteTextView.setDropDownBackgroundDrawable(getOrCreateOutlinedDropDownMenuBackground());
                 } else if (i10 == 1) {
@@ -656,586 +739,666 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         }
     }
 
-    public static /* synthetic */ int b(Editable editable) {
-        if (editable != null) {
-            return editable.length();
-        }
-        return 0;
-    }
-
-    private boolean d0() {
-        if ((this.f15545i.G() || ((this.f15545i.A() && M()) || this.f15545i.w() != null)) && this.f15545i.getMeasuredWidth() > 0) {
+    private boolean f0() {
+        if ((this.f16293i.G() || ((this.f16293i.A() && N()) || this.f16293i.w() != null)) && this.f16293i.getMeasuredWidth() > 0) {
             return true;
         }
         return false;
     }
 
-    private boolean e0() {
-        if ((getStartIconDrawable() != null || (getPrefixText() != null && getPrefixTextView().getVisibility() == 0)) && this.f15540e.getMeasuredWidth() > 0) {
+    private boolean g0() {
+        if ((getStartIconDrawable() != null || (getPrefixText() != null && getPrefixTextView().getVisibility() == 0)) && this.f16288e.getMeasuredWidth() > 0) {
             return true;
         }
         return false;
-    }
-
-    private void f0() {
-        if (this.E != null && this.D && !TextUtils.isEmpty(this.C)) {
-            this.E.setText(this.C);
-            androidx.transition.x.a(this.f15538d, this.H);
-            this.E.setVisibility(0);
-            this.E.bringToFront();
-            announceForAccessibility(this.C);
-        }
-    }
-
-    private void g0() {
-        if (this.f15537c0 == 1) {
-            if (oh.c.h(getContext())) {
-                this.f15539d0 = getResources().getDimensionPixelSize(bh.d.D);
-            } else if (oh.c.g(getContext())) {
-                this.f15539d0 = getResources().getDimensionPixelSize(bh.d.C);
-            }
-        }
     }
 
     private Drawable getEditTextBoxBackground() {
-        EditText editText = this.f15552o;
+        EditText editText = this.f16302p;
         if ((editText instanceof AutoCompleteTextView) && !q.a(editText)) {
-            int d10 = hh.a.d(this.f15552o, bh.b.f6633i);
-            int i10 = this.f15537c0;
+            int d10 = jh.a.d(this.f16302p, f.a.f23295t);
+            int i10 = this.f16287d0;
             if (i10 == 2) {
-                return K(getContext(), this.Q, d10, O0);
+                return L(getContext(), this.R, d10, P0);
             }
             if (i10 == 1) {
-                return H(this.Q, this.f15546i0, d10, O0);
+                return I(this.R, this.f16295j0, d10, P0);
             }
             return null;
-        }
-        return this.Q;
-    }
-
-    private Drawable getOrCreateFilledDropDownMenuBackground() {
-        if (this.S == null) {
-            StateListDrawable stateListDrawable = new StateListDrawable();
-            this.S = stateListDrawable;
-            stateListDrawable.addState(new int[]{16842922}, getOrCreateOutlinedDropDownMenuBackground());
-            this.S.addState(new int[0], G(false));
-        }
-        return this.S;
-    }
-
-    private Drawable getOrCreateOutlinedDropDownMenuBackground() {
-        if (this.R == null) {
-            this.R = G(true);
         }
         return this.R;
     }
 
-    private void h0(Rect rect) {
-        rh.g gVar = this.U;
-        if (gVar != null) {
-            int i10 = rect.bottom;
-            gVar.setBounds(rect.left, i10 - this.f15542f0, rect.right, i10);
+    private Drawable getOrCreateFilledDropDownMenuBackground() {
+        if (this.T == null) {
+            StateListDrawable stateListDrawable = new StateListDrawable();
+            this.T = stateListDrawable;
+            stateListDrawable.addState(new int[]{16842922}, getOrCreateOutlinedDropDownMenuBackground());
+            this.T.addState(new int[0], H(false));
         }
-        rh.g gVar2 = this.V;
-        if (gVar2 != null) {
-            int i11 = rect.bottom;
-            gVar2.setBounds(rect.left, i11 - this.f15543g0, rect.right, i11);
+        return this.T;
+    }
+
+    private Drawable getOrCreateOutlinedDropDownMenuBackground() {
+        if (this.S == null) {
+            this.S = H(true);
+        }
+        return this.S;
+    }
+
+    private void h0() {
+        if (this.F != null && this.E && !TextUtils.isEmpty(this.D)) {
+            this.F.setText(this.D);
+            androidx.transition.x.a(this.f16286d, this.I);
+            this.F.setVisibility(0);
+            this.F.bringToFront();
         }
     }
 
     private void i0() {
+        if (this.f16287d0 == 1) {
+            if (qh.c.l(getContext())) {
+                this.f16289e0 = getResources().getDimensionPixelSize(bh.d.R);
+            } else if (qh.c.k(getContext())) {
+                this.f16289e0 = getResources().getDimensionPixelSize(bh.d.Q);
+            }
+        }
+    }
+
+    private void j0(Rect rect) {
+        th.h hVar = this.V;
+        if (hVar != null) {
+            int i10 = rect.bottom;
+            hVar.setBounds(rect.left, i10 - this.f16291g0, rect.right, i10);
+        }
+        th.h hVar2 = this.W;
+        if (hVar2 != null) {
+            int i11 = rect.bottom;
+            hVar2.setBounds(rect.left, i11 - this.f16292h0, rect.right, i11);
+        }
+    }
+
+    private void k() {
+        TextView textView = this.F;
+        if (textView != null) {
+            this.f16286d.addView(textView);
+            this.F.setVisibility(0);
+        }
+    }
+
+    private void k0(int i10) {
+        this.H0.s0(i10);
+        Rect rect = this.f16296k0;
+        com.google.android.material.internal.b.a(this, this.f16302p, rect);
+        this.H0.S(s(rect));
+        w0();
+        l();
+        u0(i10);
+    }
+
+    private void l() {
+        if (this.f16302p != null && this.f16287d0 == 1) {
+            if (!R()) {
+                EditText editText = this.f16302p;
+                editText.setPaddingRelative(editText.getPaddingStart(), (int) (this.H0.q() + this.f16300o), this.f16302p.getPaddingEnd(), getResources().getDimensionPixelSize(bh.d.M));
+            } else if (qh.c.l(getContext())) {
+                EditText editText2 = this.f16302p;
+                editText2.setPaddingRelative(editText2.getPaddingStart(), getResources().getDimensionPixelSize(bh.d.P), this.f16302p.getPaddingEnd(), getResources().getDimensionPixelSize(bh.d.O));
+            } else if (qh.c.k(getContext())) {
+                EditText editText3 = this.f16302p;
+                editText3.setPaddingRelative(editText3.getPaddingStart(), getResources().getDimensionPixelSize(bh.d.N), this.f16302p.getPaddingEnd(), getResources().getDimensionPixelSize(bh.d.M));
+            }
+        }
+    }
+
+    private void l0() {
         Editable text;
-        if (this.f15574z != null) {
-            EditText editText = this.f15552o;
+        if (this.A != null) {
+            EditText editText = this.f16302p;
             if (editText == null) {
                 text = null;
             } else {
                 text = editText.getText();
             }
-            j0(text);
-        }
-    }
-
-    private void j() {
-        TextView textView = this.E;
-        if (textView != null) {
-            this.f15538d.addView(textView);
-            this.E.setVisibility(0);
-        }
-    }
-
-    private void k() {
-        if (this.f15552o != null && this.f15537c0 == 1) {
-            if (oh.c.h(getContext())) {
-                EditText editText = this.f15552o;
-                h0.F0(editText, h0.E(editText), getResources().getDimensionPixelSize(bh.d.B), h0.D(this.f15552o), getResources().getDimensionPixelSize(bh.d.A));
-            } else if (oh.c.g(getContext())) {
-                EditText editText2 = this.f15552o;
-                h0.F0(editText2, h0.E(editText2), getResources().getDimensionPixelSize(bh.d.f6696z), h0.D(this.f15552o), getResources().getDimensionPixelSize(bh.d.f6695y));
-            }
-        }
-    }
-
-    private static void k0(Context context, TextView textView, int i10, int i11, boolean z10) {
-        int i12;
-        if (z10) {
-            i12 = bh.i.f6764c;
-        } else {
-            i12 = bh.i.f6763b;
-        }
-        textView.setContentDescription(context.getString(i12, Integer.valueOf(i10), Integer.valueOf(i11)));
-    }
-
-    private void l0() {
-        int i10;
-        ColorStateList colorStateList;
-        ColorStateList colorStateList2;
-        TextView textView = this.f15574z;
-        if (textView != null) {
-            if (this.f15570x) {
-                i10 = this.A;
-            } else {
-                i10 = this.B;
-            }
-            b0(textView, i10);
-            if (!this.f15570x && (colorStateList2 = this.J) != null) {
-                this.f15574z.setTextColor(colorStateList2);
-            }
-            if (this.f15570x && (colorStateList = this.K) != null) {
-                this.f15574z.setTextColor(colorStateList);
-            }
-        }
-    }
-
-    private void m() {
-        rh.g gVar = this.Q;
-        if (gVar == null) {
-            return;
-        }
-        rh.k D = gVar.D();
-        rh.k kVar = this.W;
-        if (D != kVar) {
-            this.Q.setShapeAppearanceModel(kVar);
-        }
-        if (w()) {
-            this.Q.d0(this.f15541e0, this.f15544h0);
-        }
-        int q10 = q();
-        this.f15546i0 = q10;
-        this.Q.X(ColorStateList.valueOf(q10));
-        n();
-        q0();
-    }
-
-    private void m0() {
-        ColorStateList colorStateList;
-        ColorStateList colorStateList2 = this.L;
-        if (colorStateList2 == null) {
-            colorStateList2 = hh.a.g(getContext(), bh.b.f6631h);
-        }
-        EditText editText = this.f15552o;
-        if (editText != null && editText.getTextCursorDrawable() != null) {
-            Drawable mutate = s1.a.r(this.f15552o.getTextCursorDrawable()).mutate();
-            if (Q() && (colorStateList = this.M) != null) {
-                colorStateList2 = colorStateList;
-            }
-            s1.a.o(mutate, colorStateList2);
+            m0(text);
         }
     }
 
     private void n() {
+        th.h hVar = this.R;
+        if (hVar == null) {
+            return;
+        }
+        th.l J = hVar.J();
+        th.l lVar = this.f16283a0;
+        if (J != lVar) {
+            this.R.setShapeAppearanceModel(lVar);
+        }
+        if (x()) {
+            this.R.n0(this.f16290f0, this.f16294i0);
+        }
+        int r10 = r();
+        this.f16295j0 = r10;
+        this.R.f0(ColorStateList.valueOf(r10));
+        o();
+        t0();
+    }
+
+    private static void n0(Context context, TextView textView, int i10, int i11, boolean z10) {
+        int i12;
+        if (z10) {
+            i12 = bh.j.f6902c;
+        } else {
+            i12 = bh.j.f6901b;
+        }
+        textView.setContentDescription(context.getString(i12, Integer.valueOf(i10), Integer.valueOf(i11)));
+    }
+
+    private void o() {
         ColorStateList valueOf;
-        if (this.U != null && this.V != null) {
-            if (x()) {
-                rh.g gVar = this.U;
-                if (this.f15552o.isFocused()) {
-                    valueOf = ColorStateList.valueOf(this.f15567v0);
+        if (this.V != null && this.W != null) {
+            if (y()) {
+                th.h hVar = this.V;
+                if (this.f16302p.isFocused()) {
+                    valueOf = ColorStateList.valueOf(this.f16317w0);
                 } else {
-                    valueOf = ColorStateList.valueOf(this.f15544h0);
+                    valueOf = ColorStateList.valueOf(this.f16294i0);
                 }
-                gVar.X(valueOf);
-                this.V.X(ColorStateList.valueOf(this.f15544h0));
+                hVar.f0(valueOf);
+                this.W.f0(ColorStateList.valueOf(this.f16294i0));
             }
             invalidate();
         }
     }
 
-    private void o(RectF rectF) {
+    private void o0() {
+        int i10;
+        ColorStateList colorStateList;
+        ColorStateList colorStateList2;
+        TextView textView = this.A;
+        if (textView != null) {
+            if (this.f16320y) {
+                i10 = this.B;
+            } else {
+                i10 = this.C;
+            }
+            d0(textView, i10);
+            if (!this.f16320y && (colorStateList2 = this.K) != null) {
+                this.A.setTextColor(colorStateList2);
+            }
+            if (this.f16320y && (colorStateList = this.L) != null) {
+                this.A.setTextColor(colorStateList);
+            }
+        }
+    }
+
+    private void p(RectF rectF) {
         float f10 = rectF.left;
-        int i10 = this.f15536b0;
+        int i10 = this.f16285c0;
         rectF.left = f10 - i10;
         rectF.right += i10;
     }
 
-    private void p() {
-        int i10 = this.f15537c0;
+    private void p0() {
+        ColorStateList colorStateList;
+        ColorStateList colorStateList2 = this.M;
+        if (colorStateList2 == null) {
+            colorStateList2 = jh.a.g(getContext(), f.a.f23294s);
+        }
+        EditText editText = this.f16302p;
+        if (editText != null && editText.getTextCursorDrawable() != null) {
+            Drawable mutate = s1.a.r(this.f16302p.getTextCursorDrawable()).mutate();
+            if (S() && (colorStateList = this.N) != null) {
+                colorStateList2 = colorStateList;
+            }
+            mutate.setTintList(colorStateList2);
+        }
+    }
+
+    private void q() {
+        int i10 = this.f16287d0;
         if (i10 != 0) {
             if (i10 != 1) {
                 if (i10 == 2) {
-                    if (this.N && !(this.Q instanceof h)) {
-                        this.Q = h.m0(this.W);
+                    if (this.O && !(this.R instanceof com.google.android.material.textfield.h)) {
+                        this.R = com.google.android.material.textfield.h.z0(this.f16283a0);
                     } else {
-                        this.Q = new rh.g(this.W);
+                        this.R = new th.h(this.f16283a0);
                     }
-                    this.U = null;
                     this.V = null;
+                    this.W = null;
                     return;
                 }
-                throw new IllegalArgumentException(this.f15537c0 + " is illegal; only @BoxBackgroundMode constants are supported.");
+                throw new IllegalArgumentException(this.f16287d0 + " is illegal; only @BoxBackgroundMode constants are supported.");
             }
-            this.Q = new rh.g(this.W);
-            this.U = new rh.g();
-            this.V = new rh.g();
+            this.R = new th.h(this.f16283a0);
+            this.V = new th.h();
+            this.W = new th.h();
             return;
         }
-        this.Q = null;
-        this.U = null;
+        this.R = null;
         this.V = null;
+        this.W = null;
     }
 
-    private void p0() {
-        h0.r0(this.f15552o, getEditTextBoxBackground());
-    }
-
-    private int q() {
-        int i10 = this.f15546i0;
-        if (this.f15537c0 == 1) {
-            return hh.a.i(hh.a.e(this, bh.b.f6641o, 0), this.f15546i0);
+    private int r() {
+        int i10 = this.f16295j0;
+        if (this.f16287d0 == 1) {
+            return jh.a.i(jh.a.e(this, bh.b.f6751o, 0), this.f16295j0);
         }
         return i10;
     }
 
-    private Rect r(Rect rect) {
-        if (this.f15552o != null) {
-            Rect rect2 = this.f15548k0;
-            boolean h10 = com.google.android.material.internal.o.h(this);
+    private Rect s(Rect rect) {
+        if (this.f16302p != null) {
+            Rect rect2 = this.f16297l0;
+            boolean h10 = com.google.android.material.internal.p.h(this);
             rect2.bottom = rect.bottom;
-            int i10 = this.f15537c0;
+            int i10 = this.f16287d0;
             if (i10 != 1) {
                 if (i10 != 2) {
-                    rect2.left = I(rect.left, h10);
+                    rect2.left = J(rect.left, h10);
                     rect2.top = getPaddingTop();
-                    rect2.right = J(rect.right, h10);
+                    rect2.right = K(rect.right, h10);
                     return rect2;
                 }
-                rect2.left = rect.left + this.f15552o.getPaddingLeft();
-                rect2.top = rect.top - v();
-                rect2.right = rect.right - this.f15552o.getPaddingRight();
+                rect2.left = rect.left + this.f16302p.getPaddingLeft();
+                rect2.top = rect.top - w();
+                rect2.right = rect.right - this.f16302p.getPaddingRight();
                 return rect2;
             }
-            rect2.left = I(rect.left, h10);
-            rect2.top = rect.top + this.f15539d0;
-            rect2.right = J(rect.right, h10);
+            rect2.left = J(rect.left, h10);
+            rect2.top = rect.top + this.f16289e0;
+            rect2.right = K(rect.right, h10);
             return rect2;
         }
         throw new IllegalStateException();
     }
 
-    private boolean r0() {
-        int max;
-        if (this.f15552o == null || this.f15552o.getMeasuredHeight() >= (max = Math.max(this.f15545i.getMeasuredHeight(), this.f15540e.getMeasuredHeight()))) {
-            return false;
-        }
-        this.f15552o.setMinimumHeight(max);
-        return true;
-    }
-
-    private int s(Rect rect, Rect rect2, float f10) {
-        if (S()) {
-            return (int) (rect2.top + f10);
-        }
-        return rect.bottom - this.f15552o.getCompoundPaddingBottom();
-    }
-
     private void s0() {
-        if (this.f15537c0 != 1) {
-            LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) this.f15538d.getLayoutParams();
-            int v10 = v();
-            if (v10 != layoutParams.topMargin) {
-                layoutParams.topMargin = v10;
-                this.f15538d.requestLayout();
-            }
-        }
+        this.f16302p.setBackground(getEditTextBoxBackground());
     }
 
     private void setEditText(EditText editText) {
-        if (this.f15552o == null) {
+        if (this.f16302p == null) {
             if (getEndIconMode() != 3 && !(editText instanceof TextInputEditText)) {
                 Log.i("TextInputLayout", "EditText added is not a TextInputEditText. Please switch to using that class instead.");
             }
-            this.f15552o = editText;
-            int i10 = this.f15556q;
+            this.f16302p = editText;
+            int i10 = this.f16306r;
             if (i10 != -1) {
                 setMinEms(i10);
             } else {
-                setMinWidth(this.f15560s);
+                setMinWidth(this.f16310t);
             }
-            int i11 = this.f15558r;
+            int i11 = this.f16308s;
             if (i11 != -1) {
                 setMaxEms(i11);
             } else {
-                setMaxWidth(this.f15562t);
+                setMaxWidth(this.f16312u);
             }
-            this.T = false;
-            T();
-            setTextInputAccessibilityDelegate(new d(this));
-            this.G0.i0(this.f15552o.getTypeface());
-            this.G0.a0(this.f15552o.getTextSize());
-            int i12 = Build.VERSION.SDK_INT;
-            this.G0.X(this.f15552o.getLetterSpacing());
-            int gravity = this.f15552o.getGravity();
-            this.G0.S((gravity & (-113)) | 48);
-            this.G0.Z(gravity);
-            this.E0 = h0.A(editText);
-            this.f15552o.addTextChangedListener(new a(editText));
-            if (this.f15563t0 == null) {
-                this.f15563t0 = this.f15552o.getHintTextColors();
+            this.U = false;
+            V();
+            setTextInputAccessibilityDelegate(new e(this));
+            this.H0.p0(this.f16302p.getTypeface());
+            this.H0.h0(this.f16302p.getTextSize());
+            this.H0.d0(this.f16302p.getLetterSpacing());
+            int gravity = this.f16302p.getGravity();
+            this.H0.X((gravity & (-113)) | 48);
+            this.H0.g0(gravity);
+            this.F0 = editText.getMinimumHeight();
+            this.f16302p.addTextChangedListener(new a(editText));
+            if (this.f16313u0 == null) {
+                this.f16313u0 = this.f16302p.getHintTextColors();
             }
-            if (this.N) {
-                if (TextUtils.isEmpty(this.O)) {
-                    CharSequence hint = this.f15552o.getHint();
-                    this.f15554p = hint;
+            if (this.O) {
+                if (TextUtils.isEmpty(this.P)) {
+                    CharSequence hint = this.f16302p.getHint();
+                    this.f16304q = hint;
                     setHint(hint);
-                    this.f15552o.setHint((CharSequence) null);
+                    this.f16302p.setHint((CharSequence) null);
                 }
-                this.P = true;
+                this.Q = true;
             }
-            if (i12 >= 29) {
-                m0();
+            if (Build.VERSION.SDK_INT >= 29) {
+                p0();
             }
-            if (this.f15574z != null) {
-                j0(this.f15552o.getText());
+            if (this.A != null) {
+                m0(this.f16302p.getText());
             }
-            o0();
-            this.f15564u.f();
-            this.f15540e.bringToFront();
-            this.f15545i.bringToFront();
-            C();
-            this.f15545i.x0();
+            r0();
+            this.f16314v.f();
+            this.f16288e.bringToFront();
+            this.f16293i.bringToFront();
+            D();
+            this.f16293i.x0();
             if (!isEnabled()) {
                 editText.setEnabled(false);
             }
-            u0(false, true);
+            y0(false, true);
             return;
         }
         throw new IllegalArgumentException("We already have an EditText, can only have one");
     }
 
     private void setHintInternal(CharSequence charSequence) {
-        if (!TextUtils.equals(charSequence, this.O)) {
-            this.O = charSequence;
-            this.G0.g0(charSequence);
-            if (!this.F0) {
-                U();
+        if (!TextUtils.equals(charSequence, this.P)) {
+            this.P = charSequence;
+            this.H0.n0(charSequence);
+            if (!this.G0) {
+                W();
             }
         }
     }
 
     private void setPlaceholderTextEnabled(boolean z10) {
-        if (this.D == z10) {
+        if (this.E == z10) {
             return;
         }
         if (z10) {
-            j();
+            k();
         } else {
-            Y();
-            this.E = null;
+            a0();
+            this.F = null;
         }
-        this.D = z10;
+        this.E = z10;
     }
 
-    private int t(Rect rect, float f10) {
-        if (S()) {
+    private int t(Rect rect, Rect rect2, float f10) {
+        if (U()) {
+            return (int) (rect2.top + f10);
+        }
+        return rect.bottom - this.f16302p.getCompoundPaddingBottom();
+    }
+
+    private int u(Rect rect, float f10) {
+        int i10;
+        if (U()) {
             return (int) (rect.centerY() - (f10 / 2.0f));
         }
-        return rect.top + this.f15552o.getCompoundPaddingTop();
+        if (this.f16287d0 == 0 && !R()) {
+            i10 = (int) (this.H0.A() / 2.0f);
+        } else {
+            i10 = 0;
+        }
+        return (rect.top + this.f16302p.getCompoundPaddingTop()) - i10;
     }
 
-    private Rect u(Rect rect) {
-        if (this.f15552o != null) {
-            Rect rect2 = this.f15548k0;
-            float w10 = this.G0.w();
-            rect2.left = rect.left + this.f15552o.getCompoundPaddingLeft();
-            rect2.top = t(rect, w10);
-            rect2.right = rect.right - this.f15552o.getCompoundPaddingRight();
-            rect2.bottom = s(rect, rect2, w10);
+    private void u0(int i10) {
+        boolean z10;
+        if (this.f16302p != null) {
+            float z11 = this.H0.z();
+            float f10 = 0.0f;
+            if (this.D != null) {
+                TextPaint textPaint = new TextPaint(129);
+                textPaint.set(this.F.getPaint());
+                textPaint.setTextSize(this.F.getTextSize());
+                textPaint.setTypeface(this.F.getTypeface());
+                textPaint.setLetterSpacing(this.F.getLetterSpacing());
+                com.google.android.material.internal.h b10 = com.google.android.material.internal.h.b(this.D, textPaint, i10);
+                if (getLayoutDirection() == 1) {
+                    z10 = true;
+                } else {
+                    z10 = false;
+                }
+                StaticLayout a10 = b10.g(z10).f(true).h(this.F.getLineSpacingExtra(), this.F.getLineSpacingMultiplier()).j(new com.google.android.material.internal.i() { // from class: com.google.android.material.textfield.b0
+                    @Override // com.google.android.material.internal.i
+                    public final void a(StaticLayout.Builder builder) {
+                        builder.setBreakStrategy(TextInputLayout.this.F.getBreakStrategy());
+                    }
+                }).a();
+                if (this.f16287d0 == 1) {
+                    f10 = this.f16300o + this.H0.q() + this.f16289e0;
+                }
+                f10 += a10.getHeight();
+            }
+            float max = Math.max(z11, f10);
+            if (this.f16302p.getMeasuredHeight() < max) {
+                this.f16302p.setMinimumHeight(Math.round(max));
+            }
+        }
+    }
+
+    private Rect v(Rect rect) {
+        float y10;
+        if (this.f16302p != null) {
+            Rect rect2 = this.f16297l0;
+            if (R()) {
+                y10 = this.H0.A();
+            } else {
+                y10 = this.H0.y() * this.H0.w();
+            }
+            rect2.left = rect.left + this.f16302p.getCompoundPaddingLeft();
+            rect2.top = u(rect, y10);
+            rect2.right = rect.right - this.f16302p.getCompoundPaddingRight();
+            rect2.bottom = t(rect, rect2, y10);
             return rect2;
         }
         throw new IllegalStateException();
     }
 
-    private void u0(boolean z10, boolean z11) {
+    private boolean v0() {
+        int max;
+        if (this.f16302p == null || this.f16302p.getMeasuredHeight() >= (max = Math.max(this.f16293i.getMeasuredHeight(), this.f16288e.getMeasuredHeight()))) {
+            return false;
+        }
+        this.f16302p.setMinimumHeight(max);
+        return true;
+    }
+
+    private int w() {
+        if (!this.O) {
+            return 0;
+        }
+        int i10 = this.f16287d0;
+        if (i10 != 0) {
+            if (i10 != 2) {
+                return 0;
+            }
+            if (R()) {
+                return (int) (this.H0.q() / 2.0f);
+            }
+            return Math.max(0, (int) (this.H0.q() - (this.H0.n() / 2.0f)));
+        }
+        return (int) this.H0.q();
+    }
+
+    private void w0() {
+        if (this.f16287d0 != 1) {
+            LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) this.f16286d.getLayoutParams();
+            int w10 = w();
+            if (w10 != layoutParams.topMargin) {
+                layoutParams.topMargin = w10;
+                this.f16286d.requestLayout();
+            }
+        }
+    }
+
+    private boolean x() {
+        if (this.f16287d0 == 2 && y()) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean y() {
+        if (this.f16290f0 > -1 && this.f16294i0 != 0) {
+            return true;
+        }
+        return false;
+    }
+
+    private void y0(boolean z10, boolean z11) {
         boolean z12;
         ColorStateList colorStateList;
         TextView textView;
         int i10;
         boolean isEnabled = isEnabled();
-        EditText editText = this.f15552o;
+        EditText editText = this.f16302p;
         boolean z13 = false;
         if (editText != null && !TextUtils.isEmpty(editText.getText())) {
             z12 = true;
         } else {
             z12 = false;
         }
-        EditText editText2 = this.f15552o;
+        EditText editText2 = this.f16302p;
         if (editText2 != null && editText2.hasFocus()) {
             z13 = true;
         }
-        ColorStateList colorStateList2 = this.f15563t0;
+        ColorStateList colorStateList2 = this.f16313u0;
         if (colorStateList2 != null) {
-            this.G0.M(colorStateList2);
+            this.H0.Q(colorStateList2);
         }
         if (!isEnabled) {
-            ColorStateList colorStateList3 = this.f15563t0;
+            ColorStateList colorStateList3 = this.f16313u0;
             if (colorStateList3 != null) {
-                i10 = colorStateList3.getColorForState(new int[]{-16842910}, this.D0);
+                i10 = colorStateList3.getColorForState(new int[]{-16842910}, this.E0);
             } else {
-                i10 = this.D0;
+                i10 = this.E0;
             }
-            this.G0.M(ColorStateList.valueOf(i10));
-        } else if (c0()) {
-            this.G0.M(this.f15564u.r());
-        } else if (this.f15570x && (textView = this.f15574z) != null) {
-            this.G0.M(textView.getTextColors());
-        } else if (z13 && (colorStateList = this.f15565u0) != null) {
-            this.G0.R(colorStateList);
+            this.H0.Q(ColorStateList.valueOf(i10));
+        } else if (e0()) {
+            this.H0.Q(this.f16314v.r());
+        } else if (this.f16320y && (textView = this.A) != null) {
+            this.H0.Q(textView.getTextColors());
+        } else if (z13 && (colorStateList = this.f16315v0) != null) {
+            this.H0.W(colorStateList);
         }
-        if (!z12 && this.H0 && (!isEnabled() || !z13)) {
-            if (z11 || !this.F0) {
-                F(z10);
+        if (!z12 && this.I0 && (!isEnabled() || !z13)) {
+            if (z11 || !this.G0) {
+                G(z10);
             }
-        } else if (!z11 && !this.F0) {
+        } else if (!z11 && !this.G0) {
         } else {
-            z(z10);
+            A(z10);
         }
     }
 
-    private int v() {
-        float q10;
-        if (!this.N) {
-            return 0;
+    private void z() {
+        if (C()) {
+            ((com.google.android.material.textfield.h) this.R).B0();
         }
-        int i10 = this.f15537c0;
-        if (i10 != 0) {
-            if (i10 != 2) {
-                return 0;
-            }
-            q10 = this.G0.q() / 2.0f;
-        } else {
-            q10 = this.G0.q();
-        }
-        return (int) q10;
     }
 
-    private void v0() {
+    private void z0() {
         EditText editText;
-        if (this.E != null && (editText = this.f15552o) != null) {
-            this.E.setGravity(editText.getGravity());
-            this.E.setPadding(this.f15552o.getCompoundPaddingLeft(), this.f15552o.getCompoundPaddingTop(), this.f15552o.getCompoundPaddingRight(), this.f15552o.getCompoundPaddingBottom());
+        if (this.F != null && (editText = this.f16302p) != null) {
+            this.F.setGravity(editText.getGravity());
+            this.F.setPadding(this.f16302p.getCompoundPaddingLeft(), this.f16302p.getCompoundPaddingTop(), this.f16302p.getCompoundPaddingRight(), this.f16302p.getCompoundPaddingBottom());
         }
     }
 
-    private boolean w() {
-        if (this.f15537c0 == 2 && x()) {
-            return true;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void D0() {
+        boolean z10;
+        TextView textView;
+        EditText editText;
+        EditText editText2;
+        if (this.R != null && this.f16287d0 != 0) {
+            boolean z11 = false;
+            if (!isFocused() && ((editText2 = this.f16302p) == null || !editText2.hasFocus())) {
+                z10 = false;
+            } else {
+                z10 = true;
+            }
+            if (isHovered() || ((editText = this.f16302p) != null && editText.isHovered())) {
+                z11 = true;
+            }
+            if (!isEnabled()) {
+                this.f16294i0 = this.E0;
+            } else if (e0()) {
+                if (this.f16323z0 != null) {
+                    C0(z10, z11);
+                } else {
+                    this.f16294i0 = getErrorCurrentTextColors();
+                }
+            } else if (this.f16320y && (textView = this.A) != null) {
+                if (this.f16323z0 != null) {
+                    C0(z10, z11);
+                } else {
+                    this.f16294i0 = textView.getCurrentTextColor();
+                }
+            } else if (z10) {
+                this.f16294i0 = this.f16321y0;
+            } else if (z11) {
+                this.f16294i0 = this.f16319x0;
+            } else {
+                this.f16294i0 = this.f16317w0;
+            }
+            if (Build.VERSION.SDK_INT >= 29) {
+                p0();
+            }
+            this.f16293i.I();
+            Z();
+            if (this.f16287d0 == 2) {
+                int i10 = this.f16290f0;
+                if (z10 && isEnabled()) {
+                    this.f16290f0 = this.f16292h0;
+                } else {
+                    this.f16290f0 = this.f16291g0;
+                }
+                if (this.f16290f0 != i10) {
+                    X();
+                }
+            }
+            if (this.f16287d0 == 1) {
+                if (!isEnabled()) {
+                    this.f16295j0 = this.B0;
+                } else if (z11 && !z10) {
+                    this.f16295j0 = this.D0;
+                } else if (z10) {
+                    this.f16295j0 = this.C0;
+                } else {
+                    this.f16295j0 = this.A0;
+                }
+            }
+            n();
         }
-        return false;
-    }
-
-    private void w0() {
-        Editable text;
-        EditText editText = this.f15552o;
-        if (editText == null) {
-            text = null;
-        } else {
-            text = editText.getText();
-        }
-        x0(text);
-    }
-
-    private boolean x() {
-        if (this.f15541e0 > -1 && this.f15544h0 != 0) {
-            return true;
-        }
-        return false;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public void x0(Editable editable) {
-        if (this.f15572y.a(editable) == 0 && !this.F0) {
-            f0();
-        } else {
-            L();
-        }
-    }
-
-    private void y() {
-        if (B()) {
-            ((h) this.Q).o0();
-        }
-    }
-
-    private void y0(boolean z10, boolean z11) {
-        int defaultColor = this.f15573y0.getDefaultColor();
-        int colorForState = this.f15573y0.getColorForState(new int[]{16843623, 16842910}, defaultColor);
-        int colorForState2 = this.f15573y0.getColorForState(new int[]{16843518, 16842910}, defaultColor);
-        if (z10) {
-            this.f15544h0 = colorForState2;
-        } else if (z11) {
-            this.f15544h0 = colorForState;
-        } else {
-            this.f15544h0 = defaultColor;
-        }
-    }
-
-    private void z(boolean z10) {
-        ValueAnimator valueAnimator = this.J0;
-        if (valueAnimator != null && valueAnimator.isRunning()) {
-            this.J0.cancel();
-        }
-        if (z10 && this.I0) {
-            l(1.0f);
-        } else {
-            this.G0.c0(1.0f);
-        }
-        this.F0 = false;
-        if (B()) {
-            U();
-        }
-        w0();
-        this.f15540e.l(false);
-        this.f15545i.H(false);
-    }
-
-    public boolean M() {
-        return this.f15545i.F();
     }
 
     public boolean N() {
-        return this.f15564u.A();
+        return this.f16293i.F();
     }
 
     public boolean O() {
-        return this.f15564u.B();
+        return this.f16314v.A();
     }
 
-    final boolean P() {
-        return this.F0;
+    public boolean P() {
+        return this.f16314v.B();
     }
 
-    public boolean R() {
-        return this.P;
+    final boolean Q() {
+        return this.G0;
     }
 
-    public void X() {
-        this.f15540e.m();
+    public boolean T() {
+        return this.Q;
     }
 
-    public void Z(float f10, float f11, float f12, float f13) {
+    public void Z() {
+        this.f16288e.m();
+    }
+
+    @Override // android.view.ViewGroup
+    public void addView(View view, int i10, ViewGroup.LayoutParams layoutParams) {
+        if (view instanceof EditText) {
+            FrameLayout.LayoutParams layoutParams2 = new FrameLayout.LayoutParams(layoutParams);
+            layoutParams2.gravity = (layoutParams2.gravity & (-113)) | 16;
+            this.f16286d.addView(view, layoutParams2);
+            this.f16286d.setLayoutParams(layoutParams);
+            w0();
+            setEditText((EditText) view);
+            return;
+        }
+        super.addView(view, i10, layoutParams);
+    }
+
+    public void b0(float f10, float f11, float f12, float f13) {
         float f14;
         float f15;
-        boolean h10 = com.google.android.material.internal.o.h(this);
-        this.f15535a0 = h10;
+        boolean h10 = com.google.android.material.internal.p.h(this);
+        this.f16284b0 = h10;
         if (h10) {
             f14 = f11;
         } else {
@@ -1252,75 +1415,56 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (!h10) {
             f12 = f13;
         }
-        rh.g gVar = this.Q;
-        if (gVar != null && gVar.G() == f14 && this.Q.H() == f10 && this.Q.s() == f15 && this.Q.t() == f12) {
+        th.h hVar = this.R;
+        if (hVar != null && hVar.M() == f14 && this.R.N() == f10 && this.R.x() == f15 && this.R.y() == f12) {
             return;
         }
-        this.W = this.W.v().B(f14).G(f10).s(f15).w(f12).m();
-        m();
-    }
-
-    @Override // android.view.ViewGroup
-    public void addView(View view, int i10, ViewGroup.LayoutParams layoutParams) {
-        if (view instanceof EditText) {
-            FrameLayout.LayoutParams layoutParams2 = new FrameLayout.LayoutParams(layoutParams);
-            layoutParams2.gravity = (layoutParams2.gravity & (-113)) | 16;
-            this.f15538d.addView(view, layoutParams2);
-            this.f15538d.setLayoutParams(layoutParams);
-            s0();
-            setEditText((EditText) view);
-            return;
-        }
-        super.addView(view, i10, layoutParams);
+        this.f16283a0 = this.f16283a0.w().D(f14).I(f10).u(f15).y(f12).m();
+        n();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void b0(TextView textView, int i10) {
+    public void d0(TextView textView, int i10) {
         try {
-            androidx.core.widget.j.s(textView, i10);
+            androidx.core.widget.j.q(textView, i10);
             if (textView.getTextColors().getDefaultColor() != -65281) {
                 return;
             }
         } catch (Exception unused) {
         }
-        androidx.core.widget.j.s(textView, bh.j.f6786b);
-        textView.setTextColor(androidx.core.content.a.c(getContext(), bh.c.f6653a));
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public boolean c0() {
-        return this.f15564u.l();
+        androidx.core.widget.j.q(textView, f.i.f23411b);
+        textView.setTextColor(androidx.core.content.a.c(getContext(), bh.c.f6764a));
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public void dispatchProvideAutofillStructure(ViewStructure viewStructure, int i10) {
-        EditText editText = this.f15552o;
+        EditText editText = this.f16302p;
         if (editText == null) {
             super.dispatchProvideAutofillStructure(viewStructure, i10);
             return;
         }
-        if (this.f15554p != null) {
-            boolean z10 = this.P;
-            this.P = false;
+        if (this.f16304q != null) {
+            boolean z10 = this.Q;
+            this.Q = false;
             CharSequence hint = editText.getHint();
-            this.f15552o.setHint(this.f15554p);
+            this.f16302p.setHint(this.f16304q);
             try {
                 super.dispatchProvideAutofillStructure(viewStructure, i10);
                 return;
             } finally {
-                this.f15552o.setHint(hint);
-                this.P = z10;
+                this.f16302p.setHint(hint);
+                this.Q = z10;
             }
         }
         viewStructure.setAutofillId(getAutofillId());
         onProvideAutofillStructure(viewStructure, i10);
         onProvideAutofillVirtualStructure(viewStructure, i10);
-        viewStructure.setChildCount(this.f15538d.getChildCount());
-        for (int i11 = 0; i11 < this.f15538d.getChildCount(); i11++) {
-            View childAt = this.f15538d.getChildAt(i11);
+        viewStructure.setChildCount(this.f16286d.getChildCount());
+        for (int i11 = 0; i11 < this.f16286d.getChildCount(); i11++) {
+            View childAt = this.f16286d.getChildAt(i11);
             ViewStructure newChild = viewStructure.newChild(i11);
             childAt.dispatchProvideAutofillStructure(newChild, i10);
-            if (childAt == this.f15552o) {
+            if (childAt == this.f16302p) {
                 newChild.setHint(getHint());
             }
         }
@@ -1328,498 +1472,415 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     @Override // android.view.ViewGroup, android.view.View
     protected void dispatchRestoreInstanceState(SparseArray sparseArray) {
-        this.L0 = true;
+        this.M0 = true;
         super.dispatchRestoreInstanceState(sparseArray);
-        this.L0 = false;
+        this.M0 = false;
     }
 
     @Override // android.view.View
     public void draw(Canvas canvas) {
         super.draw(canvas);
+        F(canvas);
         E(canvas);
-        D(canvas);
     }
 
     @Override // android.view.ViewGroup, android.view.View
     protected void drawableStateChanged() {
         boolean z10;
-        if (this.K0) {
+        if (this.L0) {
             return;
         }
         boolean z11 = true;
-        this.K0 = true;
+        this.L0 = true;
         super.drawableStateChanged();
         int[] drawableState = getDrawableState();
-        com.google.android.material.internal.a aVar = this.G0;
+        com.google.android.material.internal.a aVar = this.H0;
         if (aVar != null) {
-            z10 = aVar.f0(drawableState);
+            z10 = aVar.m0(drawableState);
         } else {
             z10 = false;
         }
-        if (this.f15552o != null) {
-            if (!h0.S(this) || !isEnabled()) {
+        if (this.f16302p != null) {
+            if (!isLaidOut() || !isEnabled()) {
                 z11 = false;
             }
-            t0(z11);
+            x0(z11);
         }
-        o0();
-        z0();
+        r0();
+        D0();
         if (z10) {
             invalidate();
         }
-        this.K0 = false;
+        this.L0 = false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public boolean e0() {
+        return this.f16314v.l();
     }
 
     @Override // android.widget.LinearLayout, android.view.View
     public int getBaseline() {
-        EditText editText = this.f15552o;
+        EditText editText = this.f16302p;
         if (editText != null) {
-            return editText.getBaseline() + getPaddingTop() + v();
+            return editText.getBaseline() + getPaddingTop() + w();
         }
         return super.getBaseline();
     }
 
     @NonNull
-    rh.g getBoxBackground() {
-        int i10 = this.f15537c0;
+    th.h getBoxBackground() {
+        int i10 = this.f16287d0;
         if (i10 != 1 && i10 != 2) {
             throw new IllegalStateException();
         }
-        return this.Q;
+        return this.R;
     }
 
     public int getBoxBackgroundColor() {
-        return this.f15546i0;
+        return this.f16295j0;
     }
 
     public int getBoxBackgroundMode() {
-        return this.f15537c0;
+        return this.f16287d0;
     }
 
     public int getBoxCollapsedPaddingTop() {
-        return this.f15539d0;
+        return this.f16289e0;
     }
 
     public float getBoxCornerRadiusBottomEnd() {
-        if (com.google.android.material.internal.o.h(this)) {
-            return this.W.j().a(this.f15549l0);
+        if (com.google.android.material.internal.p.h(this)) {
+            return this.f16283a0.j().a(this.f16298m0);
         }
-        return this.W.l().a(this.f15549l0);
+        return this.f16283a0.l().a(this.f16298m0);
     }
 
     public float getBoxCornerRadiusBottomStart() {
-        if (com.google.android.material.internal.o.h(this)) {
-            return this.W.l().a(this.f15549l0);
+        if (com.google.android.material.internal.p.h(this)) {
+            return this.f16283a0.l().a(this.f16298m0);
         }
-        return this.W.j().a(this.f15549l0);
+        return this.f16283a0.j().a(this.f16298m0);
     }
 
     public float getBoxCornerRadiusTopEnd() {
-        if (com.google.android.material.internal.o.h(this)) {
-            return this.W.r().a(this.f15549l0);
+        if (com.google.android.material.internal.p.h(this)) {
+            return this.f16283a0.r().a(this.f16298m0);
         }
-        return this.W.t().a(this.f15549l0);
+        return this.f16283a0.t().a(this.f16298m0);
     }
 
     public float getBoxCornerRadiusTopStart() {
-        if (com.google.android.material.internal.o.h(this)) {
-            return this.W.t().a(this.f15549l0);
+        if (com.google.android.material.internal.p.h(this)) {
+            return this.f16283a0.t().a(this.f16298m0);
         }
-        return this.W.r().a(this.f15549l0);
+        return this.f16283a0.r().a(this.f16298m0);
     }
 
     public int getBoxStrokeColor() {
-        return this.f15571x0;
+        return this.f16321y0;
     }
 
     public ColorStateList getBoxStrokeErrorColor() {
-        return this.f15573y0;
+        return this.f16323z0;
     }
 
     public int getBoxStrokeWidth() {
-        return this.f15542f0;
+        return this.f16291g0;
     }
 
     public int getBoxStrokeWidthFocused() {
-        return this.f15543g0;
+        return this.f16292h0;
     }
 
     public int getCounterMaxLength() {
-        return this.f15568w;
+        return this.f16318x;
     }
 
     CharSequence getCounterOverflowDescription() {
         TextView textView;
-        if (this.f15566v && this.f15570x && (textView = this.f15574z) != null) {
+        if (this.f16316w && this.f16320y && (textView = this.A) != null) {
             return textView.getContentDescription();
         }
         return null;
     }
 
     public ColorStateList getCounterOverflowTextColor() {
-        return this.K;
-    }
-
-    public ColorStateList getCounterTextColor() {
-        return this.J;
-    }
-
-    public ColorStateList getCursorColor() {
         return this.L;
     }
 
-    public ColorStateList getCursorErrorColor() {
+    public ColorStateList getCounterTextColor() {
+        return this.K;
+    }
+
+    public ColorStateList getCursorColor() {
         return this.M;
     }
 
+    public ColorStateList getCursorErrorColor() {
+        return this.N;
+    }
+
     public ColorStateList getDefaultHintTextColor() {
-        return this.f15563t0;
+        return this.f16313u0;
     }
 
     public EditText getEditText() {
-        return this.f15552o;
+        return this.f16302p;
     }
 
     public CharSequence getEndIconContentDescription() {
-        return this.f15545i.l();
+        return this.f16293i.l();
     }
 
     public Drawable getEndIconDrawable() {
-        return this.f15545i.n();
+        return this.f16293i.n();
     }
 
     public int getEndIconMinSize() {
-        return this.f15545i.o();
+        return this.f16293i.o();
     }
 
     public int getEndIconMode() {
-        return this.f15545i.p();
+        return this.f16293i.p();
     }
 
     @NonNull
     public ImageView.ScaleType getEndIconScaleType() {
-        return this.f15545i.q();
+        return this.f16293i.q();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @NonNull
     public CheckableImageButton getEndIconView() {
-        return this.f15545i.r();
+        return this.f16293i.r();
     }
 
     public CharSequence getError() {
-        if (this.f15564u.A()) {
-            return this.f15564u.p();
+        if (this.f16314v.A()) {
+            return this.f16314v.p();
         }
         return null;
     }
 
     public int getErrorAccessibilityLiveRegion() {
-        return this.f15564u.n();
+        return this.f16314v.n();
     }
 
     public CharSequence getErrorContentDescription() {
-        return this.f15564u.o();
+        return this.f16314v.o();
     }
 
     public int getErrorCurrentTextColors() {
-        return this.f15564u.q();
+        return this.f16314v.q();
     }
 
     public Drawable getErrorIconDrawable() {
-        return this.f15545i.s();
+        return this.f16293i.s();
     }
 
     public CharSequence getHelperText() {
-        if (this.f15564u.B()) {
-            return this.f15564u.s();
+        if (this.f16314v.B()) {
+            return this.f16314v.s();
         }
         return null;
     }
 
     public int getHelperTextCurrentTextColor() {
-        return this.f15564u.u();
+        return this.f16314v.u();
     }
 
     public CharSequence getHint() {
-        if (this.N) {
-            return this.O;
+        if (this.O) {
+            return this.P;
         }
         return null;
     }
 
     final float getHintCollapsedTextHeight() {
-        return this.G0.q();
+        return this.H0.q();
     }
 
     final int getHintCurrentCollapsedTextColor() {
-        return this.G0.t();
+        return this.H0.t();
+    }
+
+    public int getHintMaxLines() {
+        return this.H0.x();
     }
 
     public ColorStateList getHintTextColor() {
-        return this.f15565u0;
+        return this.f16315v0;
     }
 
     @NonNull
-    public e getLengthCounter() {
-        return this.f15572y;
+    public f getLengthCounter() {
+        return this.f16322z;
     }
 
     public int getMaxEms() {
-        return this.f15558r;
+        return this.f16308s;
     }
 
     public int getMaxWidth() {
-        return this.f15562t;
+        return this.f16312u;
     }
 
     public int getMinEms() {
-        return this.f15556q;
+        return this.f16306r;
     }
 
     public int getMinWidth() {
-        return this.f15560s;
+        return this.f16310t;
     }
 
     @Deprecated
     public CharSequence getPasswordVisibilityToggleContentDescription() {
-        return this.f15545i.u();
+        return this.f16293i.u();
     }
 
     @Deprecated
     public Drawable getPasswordVisibilityToggleDrawable() {
-        return this.f15545i.v();
+        return this.f16293i.v();
     }
 
     public CharSequence getPlaceholderText() {
-        if (this.D) {
-            return this.C;
+        if (this.E) {
+            return this.D;
         }
         return null;
     }
 
     public int getPlaceholderTextAppearance() {
-        return this.G;
+        return this.H;
     }
 
     public ColorStateList getPlaceholderTextColor() {
-        return this.F;
+        return this.G;
     }
 
     public CharSequence getPrefixText() {
-        return this.f15540e.a();
+        return this.f16288e.a();
     }
 
     public ColorStateList getPrefixTextColor() {
-        return this.f15540e.b();
+        return this.f16288e.b();
     }
 
     @NonNull
     public TextView getPrefixTextView() {
-        return this.f15540e.d();
+        return this.f16288e.d();
     }
 
     @NonNull
-    public rh.k getShapeAppearanceModel() {
-        return this.W;
+    public th.l getShapeAppearanceModel() {
+        return this.f16283a0;
     }
 
     public CharSequence getStartIconContentDescription() {
-        return this.f15540e.e();
+        return this.f16288e.e();
     }
 
     public Drawable getStartIconDrawable() {
-        return this.f15540e.f();
+        return this.f16288e.f();
     }
 
     public int getStartIconMinSize() {
-        return this.f15540e.g();
+        return this.f16288e.g();
     }
 
     @NonNull
     public ImageView.ScaleType getStartIconScaleType() {
-        return this.f15540e.h();
+        return this.f16288e.h();
     }
 
     public CharSequence getSuffixText() {
-        return this.f15545i.w();
+        return this.f16293i.w();
     }
 
     public ColorStateList getSuffixTextColor() {
-        return this.f15545i.x();
+        return this.f16293i.x();
     }
 
     @NonNull
     public TextView getSuffixTextView() {
-        return this.f15545i.z();
+        return this.f16293i.z();
     }
 
     public Typeface getTypeface() {
-        return this.f15550m0;
+        return this.f16299n0;
     }
 
-    public void i(f fVar) {
-        this.f15555p0.add(fVar);
-        if (this.f15552o != null) {
-            fVar.a(this);
+    public void j(g gVar) {
+        this.f16305q0.add(gVar);
+        if (this.f16302p != null) {
+            gVar.a(this);
         }
     }
 
-    void j0(Editable editable) {
+    void m(float f10) {
+        if (this.H0.B() == f10) {
+            return;
+        }
+        if (this.K0 == null) {
+            ValueAnimator valueAnimator = new ValueAnimator();
+            this.K0 = valueAnimator;
+            valueAnimator.setInterpolator(oh.g.g(getContext(), bh.b.T, ch.a.f8277b));
+            this.K0.setDuration(oh.g.f(getContext(), bh.b.M, 167));
+            this.K0.addUpdateListener(new d());
+        }
+        this.K0.setFloatValues(this.H0.B(), f10);
+        this.K0.start();
+    }
+
+    void m0(Editable editable) {
         boolean z10;
-        int a10 = this.f15572y.a(editable);
-        boolean z11 = this.f15570x;
-        int i10 = this.f15568w;
+        int a10 = this.f16322z.a(editable);
+        boolean z11 = this.f16320y;
+        int i10 = this.f16318x;
         if (i10 == -1) {
-            this.f15574z.setText(String.valueOf(a10));
-            this.f15574z.setContentDescription(null);
-            this.f15570x = false;
+            this.A.setText(String.valueOf(a10));
+            this.A.setContentDescription(null);
+            this.f16320y = false;
         } else {
             if (a10 > i10) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f15570x = z10;
-            k0(getContext(), this.f15574z, a10, this.f15568w, this.f15570x);
-            if (z11 != this.f15570x) {
-                l0();
+            this.f16320y = z10;
+            n0(getContext(), this.A, a10, this.f16318x, this.f16320y);
+            if (z11 != this.f16320y) {
+                o0();
             }
-            this.f15574z.setText(a2.a.c().j(getContext().getString(bh.i.f6765d, Integer.valueOf(a10), Integer.valueOf(this.f15568w))));
+            this.A.setText(a2.a.c().j(getContext().getString(bh.j.f6903d, Integer.valueOf(a10), Integer.valueOf(this.f16318x))));
         }
-        if (this.f15552o != null && z11 != this.f15570x) {
-            t0(false);
-            z0();
-            o0();
-        }
-    }
-
-    void l(float f10) {
-        if (this.G0.x() == f10) {
-            return;
-        }
-        if (this.J0 == null) {
-            ValueAnimator valueAnimator = new ValueAnimator();
-            this.J0 = valueAnimator;
-            valueAnimator.setInterpolator(mh.g.g(getContext(), bh.b.P, ch.a.f7596b));
-            this.J0.setDuration(mh.g.f(getContext(), bh.b.I, 167));
-            this.J0.addUpdateListener(new c());
-        }
-        this.J0.setFloatValues(this.G0.x(), f10);
-        this.J0.start();
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public boolean n0() {
-        boolean z10;
-        if (this.f15552o == null) {
-            return false;
-        }
-        boolean z11 = true;
-        if (e0()) {
-            int measuredWidth = this.f15540e.getMeasuredWidth() - this.f15552o.getPaddingLeft();
-            if (this.f15551n0 == null || this.f15553o0 != measuredWidth) {
-                ColorDrawable colorDrawable = new ColorDrawable();
-                this.f15551n0 = colorDrawable;
-                this.f15553o0 = measuredWidth;
-                colorDrawable.setBounds(0, 0, measuredWidth, 1);
-            }
-            Drawable[] d10 = androidx.core.widget.j.d(this.f15552o);
-            Drawable drawable = d10[0];
-            Drawable drawable2 = this.f15551n0;
-            if (drawable != drawable2) {
-                androidx.core.widget.j.m(this.f15552o, drawable2, d10[1], d10[2], d10[3]);
-                z10 = true;
-            }
-            z10 = false;
-        } else {
-            if (this.f15551n0 != null) {
-                Drawable[] d11 = androidx.core.widget.j.d(this.f15552o);
-                androidx.core.widget.j.m(this.f15552o, null, d11[1], d11[2], d11[3]);
-                this.f15551n0 = null;
-                z10 = true;
-            }
-            z10 = false;
-        }
-        if (d0()) {
-            int measuredWidth2 = this.f15545i.z().getMeasuredWidth() - this.f15552o.getPaddingRight();
-            CheckableImageButton k10 = this.f15545i.k();
-            if (k10 != null) {
-                measuredWidth2 = measuredWidth2 + k10.getMeasuredWidth() + androidx.core.view.m.b((ViewGroup.MarginLayoutParams) k10.getLayoutParams());
-            }
-            Drawable[] d12 = androidx.core.widget.j.d(this.f15552o);
-            Drawable drawable3 = this.f15557q0;
-            if (drawable3 != null && this.f15559r0 != measuredWidth2) {
-                this.f15559r0 = measuredWidth2;
-                drawable3.setBounds(0, 0, measuredWidth2, 1);
-                androidx.core.widget.j.m(this.f15552o, d12[0], d12[1], this.f15557q0, d12[3]);
-                return true;
-            }
-            if (drawable3 == null) {
-                ColorDrawable colorDrawable2 = new ColorDrawable();
-                this.f15557q0 = colorDrawable2;
-                this.f15559r0 = measuredWidth2;
-                colorDrawable2.setBounds(0, 0, measuredWidth2, 1);
-            }
-            Drawable drawable4 = d12[2];
-            Drawable drawable5 = this.f15557q0;
-            if (drawable4 != drawable5) {
-                this.f15561s0 = drawable4;
-                androidx.core.widget.j.m(this.f15552o, d12[0], d12[1], drawable5, d12[3]);
-                return true;
-            }
-        } else if (this.f15557q0 != null) {
-            Drawable[] d13 = androidx.core.widget.j.d(this.f15552o);
-            if (d13[2] == this.f15557q0) {
-                androidx.core.widget.j.m(this.f15552o, d13[0], d13[1], this.f15561s0, d13[3]);
-            } else {
-                z11 = z10;
-            }
-            this.f15557q0 = null;
-            return z11;
-        }
-        return z10;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public void o0() {
-        Drawable background;
-        TextView textView;
-        EditText editText = this.f15552o;
-        if (editText != null && this.f15537c0 == 0 && (background = editText.getBackground()) != null) {
-            if (e0.a(background)) {
-                background = background.mutate();
-            }
-            if (c0()) {
-                background.setColorFilter(androidx.appcompat.widget.j.e(getErrorCurrentTextColors(), PorterDuff.Mode.SRC_IN));
-            } else if (this.f15570x && (textView = this.f15574z) != null) {
-                background.setColorFilter(androidx.appcompat.widget.j.e(textView.getCurrentTextColor(), PorterDuff.Mode.SRC_IN));
-            } else {
-                s1.a.c(background);
-                this.f15552o.refreshDrawableState();
-            }
+        if (this.f16302p != null && z11 != this.f16320y) {
+            x0(false);
+            D0();
+            r0();
         }
     }
 
     @Override // android.view.View
     protected void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
-        this.G0.H(configuration);
+        this.H0.L(configuration);
     }
 
     @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
     public void onGlobalLayout() {
-        this.f15545i.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-        this.M0 = false;
-        boolean r02 = r0();
-        boolean n02 = n0();
-        if (!r02 && !n02) {
+        this.f16293i.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+        this.N0 = false;
+        boolean v02 = v0();
+        boolean q02 = q0();
+        if (!v02 && !q02) {
             return;
         }
-        this.f15552o.post(new Runnable() { // from class: com.google.android.material.textfield.z
+        this.f16302p.post(new Runnable() { // from class: com.google.android.material.textfield.z
             @Override // java.lang.Runnable
             public final void run() {
-                TextInputLayout.this.f15552o.requestLayout();
+                TextInputLayout.this.f16302p.requestLayout();
             }
         });
     }
@@ -1827,21 +1888,21 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     @Override // android.widget.LinearLayout, android.view.ViewGroup, android.view.View
     protected void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         super.onLayout(z10, i10, i11, i12, i13);
-        EditText editText = this.f15552o;
+        EditText editText = this.f16302p;
         if (editText != null) {
-            Rect rect = this.f15547j0;
+            Rect rect = this.f16296k0;
             com.google.android.material.internal.b.a(this, editText, rect);
-            h0(rect);
-            if (this.N) {
-                this.G0.a0(this.f15552o.getTextSize());
-                int gravity = this.f15552o.getGravity();
-                this.G0.S((gravity & (-113)) | 48);
-                this.G0.Z(gravity);
-                this.G0.O(r(rect));
-                this.G0.W(u(rect));
-                this.G0.J();
-                if (B() && !this.F0) {
-                    U();
+            j0(rect);
+            if (this.O) {
+                this.H0.h0(this.f16302p.getTextSize());
+                int gravity = this.f16302p.getGravity();
+                this.H0.X((gravity & (-113)) | 48);
+                this.H0.g0(gravity);
+                this.H0.S(s(rect));
+                this.H0.c0(v(rect));
+                this.H0.N();
+                if (C() && !this.G0) {
+                    W();
                 }
             }
         }
@@ -1850,25 +1911,28 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     @Override // android.widget.LinearLayout, android.view.View
     protected void onMeasure(int i10, int i11) {
         super.onMeasure(i10, i11);
-        if (!this.M0) {
-            this.f15545i.getViewTreeObserver().addOnGlobalLayoutListener(this);
-            this.M0 = true;
+        if (!this.N0) {
+            this.f16293i.getViewTreeObserver().addOnGlobalLayoutListener(this);
+            this.N0 = true;
         }
-        v0();
-        this.f15545i.x0();
+        z0();
+        this.f16293i.x0();
+        if (!R()) {
+            k0((this.f16302p.getMeasuredWidth() - this.f16302p.getCompoundPaddingLeft()) - this.f16302p.getCompoundPaddingRight());
+        }
     }
 
     @Override // android.view.View
     protected void onRestoreInstanceState(Parcelable parcelable) {
-        if (!(parcelable instanceof g)) {
+        if (!(parcelable instanceof h)) {
             super.onRestoreInstanceState(parcelable);
             return;
         }
-        g gVar = (g) parcelable;
-        super.onRestoreInstanceState(gVar.a());
-        setError(gVar.f15582i);
-        if (gVar.f15583o) {
-            post(new b());
+        h hVar = (h) parcelable;
+        super.onRestoreInstanceState(hVar.a());
+        setError(hVar.f16331i);
+        if (hVar.f16332o) {
+            post(new c());
         }
         requestLayout();
     }
@@ -1880,47 +1944,128 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (i10 != 1) {
             z10 = false;
         }
-        if (z10 != this.f15535a0) {
-            float a10 = this.W.r().a(this.f15549l0);
-            float a11 = this.W.t().a(this.f15549l0);
-            float a12 = this.W.j().a(this.f15549l0);
-            float a13 = this.W.l().a(this.f15549l0);
-            rh.d q10 = this.W.q();
-            rh.d s10 = this.W.s();
-            rh.k m10 = rh.k.a().A(s10).F(q10).r(this.W.k()).v(this.W.i()).B(a11).G(a10).s(a13).w(a12).m();
-            this.f15535a0 = z10;
+        if (z10 != this.f16284b0) {
+            float a10 = this.f16283a0.r().a(this.f16298m0);
+            float a11 = this.f16283a0.t().a(this.f16298m0);
+            float a12 = this.f16283a0.j().a(this.f16298m0);
+            float a13 = this.f16283a0.l().a(this.f16298m0);
+            th.e q10 = this.f16283a0.q();
+            th.e s10 = this.f16283a0.s();
+            th.l m10 = th.l.a().C(s10).H(q10).t(this.f16283a0.k()).x(this.f16283a0.i()).D(a11).I(a10).u(a13).y(a12).m();
+            this.f16284b0 = z10;
             setShapeAppearanceModel(m10);
         }
     }
 
     @Override // android.view.View
     public Parcelable onSaveInstanceState() {
-        g gVar = new g(super.onSaveInstanceState());
-        if (c0()) {
-            gVar.f15582i = getError();
+        h hVar = new h(super.onSaveInstanceState());
+        if (e0()) {
+            hVar.f16331i = getError();
         }
-        gVar.f15583o = this.f15545i.E();
-        return gVar;
+        hVar.f16332o = this.f16293i.E();
+        return hVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void q0() {
-        EditText editText = this.f15552o;
-        if (editText != null && this.Q != null) {
-            if ((this.T || editText.getBackground() == null) && this.f15537c0 != 0) {
-                p0();
-                this.T = true;
+    public boolean q0() {
+        boolean z10;
+        if (this.f16302p == null) {
+            return false;
+        }
+        boolean z11 = true;
+        if (g0()) {
+            int measuredWidth = this.f16288e.getMeasuredWidth() - this.f16302p.getPaddingLeft();
+            if (this.f16301o0 == null || this.f16303p0 != measuredWidth) {
+                ColorDrawable colorDrawable = new ColorDrawable();
+                this.f16301o0 = colorDrawable;
+                this.f16303p0 = measuredWidth;
+                colorDrawable.setBounds(0, 0, measuredWidth, 1);
+            }
+            Drawable[] compoundDrawablesRelative = this.f16302p.getCompoundDrawablesRelative();
+            Drawable drawable = compoundDrawablesRelative[0];
+            Drawable drawable2 = this.f16301o0;
+            if (drawable != drawable2) {
+                this.f16302p.setCompoundDrawablesRelative(drawable2, compoundDrawablesRelative[1], compoundDrawablesRelative[2], compoundDrawablesRelative[3]);
+                z10 = true;
+            }
+            z10 = false;
+        } else {
+            if (this.f16301o0 != null) {
+                Drawable[] compoundDrawablesRelative2 = this.f16302p.getCompoundDrawablesRelative();
+                this.f16302p.setCompoundDrawablesRelative(null, compoundDrawablesRelative2[1], compoundDrawablesRelative2[2], compoundDrawablesRelative2[3]);
+                this.f16301o0 = null;
+                z10 = true;
+            }
+            z10 = false;
+        }
+        if (f0()) {
+            int measuredWidth2 = this.f16293i.z().getMeasuredWidth() - this.f16302p.getPaddingRight();
+            CheckableImageButton k10 = this.f16293i.k();
+            if (k10 != null) {
+                measuredWidth2 = measuredWidth2 + k10.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) k10.getLayoutParams()).getMarginStart();
+            }
+            Drawable[] compoundDrawablesRelative3 = this.f16302p.getCompoundDrawablesRelative();
+            Drawable drawable3 = this.f16307r0;
+            if (drawable3 != null && this.f16309s0 != measuredWidth2) {
+                this.f16309s0 = measuredWidth2;
+                drawable3.setBounds(0, 0, measuredWidth2, 1);
+                this.f16302p.setCompoundDrawablesRelative(compoundDrawablesRelative3[0], compoundDrawablesRelative3[1], this.f16307r0, compoundDrawablesRelative3[3]);
+                return true;
+            }
+            if (drawable3 == null) {
+                ColorDrawable colorDrawable2 = new ColorDrawable();
+                this.f16307r0 = colorDrawable2;
+                this.f16309s0 = measuredWidth2;
+                colorDrawable2.setBounds(0, 0, measuredWidth2, 1);
+            }
+            Drawable drawable4 = compoundDrawablesRelative3[2];
+            Drawable drawable5 = this.f16307r0;
+            if (drawable4 != drawable5) {
+                this.f16311t0 = drawable4;
+                this.f16302p.setCompoundDrawablesRelative(compoundDrawablesRelative3[0], compoundDrawablesRelative3[1], drawable5, compoundDrawablesRelative3[3]);
+                return true;
+            }
+        } else if (this.f16307r0 != null) {
+            Drawable[] compoundDrawablesRelative4 = this.f16302p.getCompoundDrawablesRelative();
+            if (compoundDrawablesRelative4[2] == this.f16307r0) {
+                this.f16302p.setCompoundDrawablesRelative(compoundDrawablesRelative4[0], compoundDrawablesRelative4[1], this.f16311t0, compoundDrawablesRelative4[3]);
+            } else {
+                z11 = z10;
+            }
+            this.f16307r0 = null;
+            return z11;
+        }
+        return z10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void r0() {
+        Drawable background;
+        TextView textView;
+        EditText editText = this.f16302p;
+        if (editText != null && this.f16287d0 == 0 && (background = editText.getBackground()) != null) {
+            if (e0.a(background)) {
+                background = background.mutate();
+            }
+            if (e0()) {
+                background.setColorFilter(androidx.appcompat.widget.j.e(getErrorCurrentTextColors(), PorterDuff.Mode.SRC_IN));
+            } else if (this.f16320y && (textView = this.A) != null) {
+                background.setColorFilter(androidx.appcompat.widget.j.e(textView.getCurrentTextColor(), PorterDuff.Mode.SRC_IN));
+            } else {
+                s1.a.c(background);
+                this.f16302p.refreshDrawableState();
             }
         }
     }
 
     public void setBoxBackgroundColor(int i10) {
-        if (this.f15546i0 != i10) {
-            this.f15546i0 = i10;
-            this.f15575z0 = i10;
-            this.B0 = i10;
+        if (this.f16295j0 != i10) {
+            this.f16295j0 = i10;
+            this.A0 = i10;
             this.C0 = i10;
-            m();
+            this.D0 = i10;
+            n();
         }
     }
 
@@ -1930,66 +2075,66 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     public void setBoxBackgroundColorStateList(@NonNull ColorStateList colorStateList) {
         int defaultColor = colorStateList.getDefaultColor();
-        this.f15575z0 = defaultColor;
-        this.f15546i0 = defaultColor;
-        this.A0 = colorStateList.getColorForState(new int[]{-16842910}, -1);
-        this.B0 = colorStateList.getColorForState(new int[]{16842908, 16842910}, -1);
-        this.C0 = colorStateList.getColorForState(new int[]{16843623, 16842910}, -1);
-        m();
+        this.A0 = defaultColor;
+        this.f16295j0 = defaultColor;
+        this.B0 = colorStateList.getColorForState(new int[]{-16842910}, -1);
+        this.C0 = colorStateList.getColorForState(new int[]{16842908, 16842910}, -1);
+        this.D0 = colorStateList.getColorForState(new int[]{16843623, 16842910}, -1);
+        n();
     }
 
     public void setBoxBackgroundMode(int i10) {
-        if (i10 != this.f15537c0) {
-            this.f15537c0 = i10;
-            if (this.f15552o != null) {
-                T();
+        if (i10 != this.f16287d0) {
+            this.f16287d0 = i10;
+            if (this.f16302p != null) {
+                V();
             }
         }
     }
 
     public void setBoxCollapsedPaddingTop(int i10) {
-        this.f15539d0 = i10;
+        this.f16289e0 = i10;
     }
 
     public void setBoxCornerFamily(int i10) {
-        this.W = this.W.v().z(i10, this.W.r()).E(i10, this.W.t()).q(i10, this.W.j()).u(i10, this.W.l()).m();
-        m();
+        this.f16283a0 = this.f16283a0.w().B(i10, this.f16283a0.r()).G(i10, this.f16283a0.t()).s(i10, this.f16283a0.j()).w(i10, this.f16283a0.l()).m();
+        n();
     }
 
     public void setBoxStrokeColor(int i10) {
-        if (this.f15571x0 != i10) {
-            this.f15571x0 = i10;
-            z0();
+        if (this.f16321y0 != i10) {
+            this.f16321y0 = i10;
+            D0();
         }
     }
 
     public void setBoxStrokeColorStateList(@NonNull ColorStateList colorStateList) {
         if (colorStateList.isStateful()) {
-            this.f15567v0 = colorStateList.getDefaultColor();
-            this.D0 = colorStateList.getColorForState(new int[]{-16842910}, -1);
-            this.f15569w0 = colorStateList.getColorForState(new int[]{16843623, 16842910}, -1);
-            this.f15571x0 = colorStateList.getColorForState(new int[]{16842908, 16842910}, -1);
-        } else if (this.f15571x0 != colorStateList.getDefaultColor()) {
-            this.f15571x0 = colorStateList.getDefaultColor();
+            this.f16317w0 = colorStateList.getDefaultColor();
+            this.E0 = colorStateList.getColorForState(new int[]{-16842910}, -1);
+            this.f16319x0 = colorStateList.getColorForState(new int[]{16843623, 16842910}, -1);
+            this.f16321y0 = colorStateList.getColorForState(new int[]{16842908, 16842910}, -1);
+        } else if (this.f16321y0 != colorStateList.getDefaultColor()) {
+            this.f16321y0 = colorStateList.getDefaultColor();
         }
-        z0();
+        D0();
     }
 
     public void setBoxStrokeErrorColor(ColorStateList colorStateList) {
-        if (this.f15573y0 != colorStateList) {
-            this.f15573y0 = colorStateList;
-            z0();
+        if (this.f16323z0 != colorStateList) {
+            this.f16323z0 = colorStateList;
+            D0();
         }
     }
 
     public void setBoxStrokeWidth(int i10) {
-        this.f15542f0 = i10;
-        z0();
+        this.f16291g0 = i10;
+        D0();
     }
 
     public void setBoxStrokeWidthFocused(int i10) {
-        this.f15543g0 = i10;
-        z0();
+        this.f16292h0 = i10;
+        D0();
     }
 
     public void setBoxStrokeWidthFocusedResource(int i10) {
@@ -2001,306 +2146,312 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setCounterEnabled(boolean z10) {
-        if (this.f15566v != z10) {
+        if (this.f16316w != z10) {
             if (z10) {
                 AppCompatTextView appCompatTextView = new AppCompatTextView(getContext());
-                this.f15574z = appCompatTextView;
-                appCompatTextView.setId(bh.f.O);
-                Typeface typeface = this.f15550m0;
+                this.A = appCompatTextView;
+                appCompatTextView.setId(bh.f.X);
+                Typeface typeface = this.f16299n0;
                 if (typeface != null) {
-                    this.f15574z.setTypeface(typeface);
+                    this.A.setTypeface(typeface);
                 }
-                this.f15574z.setMaxLines(1);
-                this.f15564u.e(this.f15574z, 2);
-                androidx.core.view.m.d((ViewGroup.MarginLayoutParams) this.f15574z.getLayoutParams(), getResources().getDimensionPixelOffset(bh.d.f6678h0));
+                this.A.setMaxLines(1);
+                this.f16314v.e(this.A, 2);
+                ((ViewGroup.MarginLayoutParams) this.A.getLayoutParams()).setMarginStart(getResources().getDimensionPixelOffset(bh.d.A0));
+                o0();
                 l0();
-                i0();
             } else {
-                this.f15564u.C(this.f15574z, 2);
-                this.f15574z = null;
+                this.f16314v.C(this.A, 2);
+                this.A = null;
             }
-            this.f15566v = z10;
+            this.f16316w = z10;
         }
     }
 
     public void setCounterMaxLength(int i10) {
-        if (this.f15568w != i10) {
+        if (this.f16318x != i10) {
             if (i10 > 0) {
-                this.f15568w = i10;
+                this.f16318x = i10;
             } else {
-                this.f15568w = -1;
+                this.f16318x = -1;
             }
-            if (this.f15566v) {
-                i0();
+            if (this.f16316w) {
+                l0();
             }
         }
     }
 
     public void setCounterOverflowTextAppearance(int i10) {
-        if (this.A != i10) {
-            this.A = i10;
-            l0();
+        if (this.B != i10) {
+            this.B = i10;
+            o0();
         }
     }
 
     public void setCounterOverflowTextColor(ColorStateList colorStateList) {
-        if (this.K != colorStateList) {
-            this.K = colorStateList;
-            l0();
+        if (this.L != colorStateList) {
+            this.L = colorStateList;
+            o0();
         }
     }
 
     public void setCounterTextAppearance(int i10) {
-        if (this.B != i10) {
-            this.B = i10;
-            l0();
+        if (this.C != i10) {
+            this.C = i10;
+            o0();
         }
     }
 
     public void setCounterTextColor(ColorStateList colorStateList) {
-        if (this.J != colorStateList) {
-            this.J = colorStateList;
-            l0();
+        if (this.K != colorStateList) {
+            this.K = colorStateList;
+            o0();
         }
     }
 
     public void setCursorColor(ColorStateList colorStateList) {
-        if (this.L != colorStateList) {
-            this.L = colorStateList;
-            m0();
+        if (this.M != colorStateList) {
+            this.M = colorStateList;
+            p0();
         }
     }
 
     public void setCursorErrorColor(ColorStateList colorStateList) {
-        if (this.M != colorStateList) {
-            this.M = colorStateList;
-            if (Q()) {
-                m0();
+        if (this.N != colorStateList) {
+            this.N = colorStateList;
+            if (S()) {
+                p0();
             }
         }
     }
 
     public void setDefaultHintTextColor(ColorStateList colorStateList) {
-        this.f15563t0 = colorStateList;
-        this.f15565u0 = colorStateList;
-        if (this.f15552o != null) {
-            t0(false);
+        this.f16313u0 = colorStateList;
+        this.f16315v0 = colorStateList;
+        if (this.f16302p != null) {
+            x0(false);
         }
     }
 
     @Override // android.view.View
     public void setEnabled(boolean z10) {
-        W(this, z10);
+        Y(this, z10);
         super.setEnabled(z10);
     }
 
     public void setEndIconActivated(boolean z10) {
-        this.f15545i.N(z10);
+        this.f16293i.N(z10);
     }
 
     public void setEndIconCheckable(boolean z10) {
-        this.f15545i.O(z10);
+        this.f16293i.O(z10);
     }
 
     public void setEndIconContentDescription(int i10) {
-        this.f15545i.P(i10);
+        this.f16293i.P(i10);
     }
 
     public void setEndIconDrawable(int i10) {
-        this.f15545i.R(i10);
+        this.f16293i.R(i10);
     }
 
     public void setEndIconMinSize(int i10) {
-        this.f15545i.T(i10);
+        this.f16293i.T(i10);
     }
 
     public void setEndIconMode(int i10) {
-        this.f15545i.U(i10);
+        this.f16293i.U(i10);
     }
 
     public void setEndIconOnClickListener(View.OnClickListener onClickListener) {
-        this.f15545i.V(onClickListener);
+        this.f16293i.V(onClickListener);
     }
 
     public void setEndIconOnLongClickListener(View.OnLongClickListener onLongClickListener) {
-        this.f15545i.W(onLongClickListener);
+        this.f16293i.W(onLongClickListener);
     }
 
     public void setEndIconScaleType(@NonNull ImageView.ScaleType scaleType) {
-        this.f15545i.X(scaleType);
+        this.f16293i.X(scaleType);
     }
 
     public void setEndIconTintList(ColorStateList colorStateList) {
-        this.f15545i.Y(colorStateList);
+        this.f16293i.Y(colorStateList);
     }
 
     public void setEndIconTintMode(PorterDuff.Mode mode) {
-        this.f15545i.Z(mode);
+        this.f16293i.Z(mode);
     }
 
     public void setEndIconVisible(boolean z10) {
-        this.f15545i.a0(z10);
+        this.f16293i.a0(z10);
     }
 
     public void setError(CharSequence charSequence) {
-        if (!this.f15564u.A()) {
+        if (!this.f16314v.A()) {
             if (TextUtils.isEmpty(charSequence)) {
                 return;
             }
             setErrorEnabled(true);
         }
         if (!TextUtils.isEmpty(charSequence)) {
-            this.f15564u.Q(charSequence);
+            this.f16314v.Q(charSequence);
         } else {
-            this.f15564u.w();
+            this.f16314v.w();
         }
     }
 
     public void setErrorAccessibilityLiveRegion(int i10) {
-        this.f15564u.E(i10);
+        this.f16314v.E(i10);
     }
 
     public void setErrorContentDescription(CharSequence charSequence) {
-        this.f15564u.F(charSequence);
+        this.f16314v.F(charSequence);
     }
 
     public void setErrorEnabled(boolean z10) {
-        this.f15564u.G(z10);
+        this.f16314v.G(z10);
     }
 
     public void setErrorIconDrawable(int i10) {
-        this.f15545i.b0(i10);
+        this.f16293i.b0(i10);
     }
 
     public void setErrorIconOnClickListener(View.OnClickListener onClickListener) {
-        this.f15545i.d0(onClickListener);
+        this.f16293i.d0(onClickListener);
     }
 
     public void setErrorIconOnLongClickListener(View.OnLongClickListener onLongClickListener) {
-        this.f15545i.e0(onLongClickListener);
+        this.f16293i.e0(onLongClickListener);
     }
 
     public void setErrorIconTintList(ColorStateList colorStateList) {
-        this.f15545i.f0(colorStateList);
+        this.f16293i.f0(colorStateList);
     }
 
     public void setErrorIconTintMode(PorterDuff.Mode mode) {
-        this.f15545i.g0(mode);
+        this.f16293i.g0(mode);
     }
 
     public void setErrorTextAppearance(int i10) {
-        this.f15564u.H(i10);
+        this.f16314v.H(i10);
     }
 
     public void setErrorTextColor(ColorStateList colorStateList) {
-        this.f15564u.I(colorStateList);
+        this.f16314v.I(colorStateList);
     }
 
     public void setExpandedHintEnabled(boolean z10) {
-        if (this.H0 != z10) {
-            this.H0 = z10;
-            t0(false);
+        if (this.I0 != z10) {
+            this.I0 = z10;
+            x0(false);
         }
     }
 
     public void setHelperText(CharSequence charSequence) {
         if (TextUtils.isEmpty(charSequence)) {
-            if (O()) {
+            if (P()) {
                 setHelperTextEnabled(false);
                 return;
             }
             return;
         }
-        if (!O()) {
+        if (!P()) {
             setHelperTextEnabled(true);
         }
-        this.f15564u.R(charSequence);
+        this.f16314v.R(charSequence);
     }
 
     public void setHelperTextColor(ColorStateList colorStateList) {
-        this.f15564u.L(colorStateList);
+        this.f16314v.L(colorStateList);
     }
 
     public void setHelperTextEnabled(boolean z10) {
-        this.f15564u.K(z10);
+        this.f16314v.K(z10);
     }
 
     public void setHelperTextTextAppearance(int i10) {
-        this.f15564u.J(i10);
+        this.f16314v.J(i10);
     }
 
     public void setHint(CharSequence charSequence) {
-        if (this.N) {
+        if (this.O) {
             setHintInternal(charSequence);
             sendAccessibilityEvent(RecyclerView.ItemAnimator.FLAG_MOVED);
         }
     }
 
     public void setHintAnimationEnabled(boolean z10) {
-        this.I0 = z10;
+        this.J0 = z10;
     }
 
     public void setHintEnabled(boolean z10) {
-        if (z10 != this.N) {
-            this.N = z10;
+        if (z10 != this.O) {
+            this.O = z10;
             if (!z10) {
-                this.P = false;
-                if (!TextUtils.isEmpty(this.O) && TextUtils.isEmpty(this.f15552o.getHint())) {
-                    this.f15552o.setHint(this.O);
+                this.Q = false;
+                if (!TextUtils.isEmpty(this.P) && TextUtils.isEmpty(this.f16302p.getHint())) {
+                    this.f16302p.setHint(this.P);
                 }
                 setHintInternal(null);
             } else {
-                CharSequence hint = this.f15552o.getHint();
+                CharSequence hint = this.f16302p.getHint();
                 if (!TextUtils.isEmpty(hint)) {
-                    if (TextUtils.isEmpty(this.O)) {
+                    if (TextUtils.isEmpty(this.P)) {
                         setHint(hint);
                     }
-                    this.f15552o.setHint((CharSequence) null);
+                    this.f16302p.setHint((CharSequence) null);
                 }
-                this.P = true;
+                this.Q = true;
             }
-            if (this.f15552o != null) {
-                s0();
+            if (this.f16302p != null) {
+                w0();
             }
         }
     }
 
+    public void setHintMaxLines(int i10) {
+        this.H0.T(i10);
+        this.H0.e0(i10);
+        requestLayout();
+    }
+
     public void setHintTextAppearance(int i10) {
-        this.G0.P(i10);
-        this.f15565u0 = this.G0.p();
-        if (this.f15552o != null) {
-            t0(false);
-            s0();
+        this.H0.U(i10);
+        this.f16315v0 = this.H0.p();
+        if (this.f16302p != null) {
+            x0(false);
+            w0();
         }
     }
 
     public void setHintTextColor(ColorStateList colorStateList) {
-        if (this.f15565u0 != colorStateList) {
-            if (this.f15563t0 == null) {
-                this.G0.R(colorStateList);
+        if (this.f16315v0 != colorStateList) {
+            if (this.f16313u0 == null) {
+                this.H0.W(colorStateList);
             }
-            this.f15565u0 = colorStateList;
-            if (this.f15552o != null) {
-                t0(false);
+            this.f16315v0 = colorStateList;
+            if (this.f16302p != null) {
+                x0(false);
             }
         }
     }
 
-    public void setLengthCounter(@NonNull e eVar) {
-        this.f15572y = eVar;
+    public void setLengthCounter(@NonNull f fVar) {
+        this.f16322z = fVar;
     }
 
     public void setMaxEms(int i10) {
-        this.f15558r = i10;
-        EditText editText = this.f15552o;
+        this.f16308s = i10;
+        EditText editText = this.f16302p;
         if (editText != null && i10 != -1) {
             editText.setMaxEms(i10);
         }
     }
 
     public void setMaxWidth(int i10) {
-        this.f15562t = i10;
-        EditText editText = this.f15552o;
+        this.f16312u = i10;
+        EditText editText = this.f16302p;
         if (editText != null && i10 != -1) {
             editText.setMaxWidth(i10);
         }
@@ -2311,16 +2462,16 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setMinEms(int i10) {
-        this.f15556q = i10;
-        EditText editText = this.f15552o;
+        this.f16306r = i10;
+        EditText editText = this.f16302p;
         if (editText != null && i10 != -1) {
             editText.setMinEms(i10);
         }
     }
 
     public void setMinWidth(int i10) {
-        this.f15560s = i10;
-        EditText editText = this.f15552o;
+        this.f16310t = i10;
+        EditText editText = this.f16302p;
         if (editText != null && i10 != -1) {
             editText.setMinWidth(i10);
         }
@@ -2332,65 +2483,67 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     @Deprecated
     public void setPasswordVisibilityToggleContentDescription(int i10) {
-        this.f15545i.i0(i10);
+        this.f16293i.i0(i10);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleDrawable(int i10) {
-        this.f15545i.k0(i10);
+        this.f16293i.k0(i10);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleEnabled(boolean z10) {
-        this.f15545i.m0(z10);
+        this.f16293i.m0(z10);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleTintList(ColorStateList colorStateList) {
-        this.f15545i.n0(colorStateList);
+        this.f16293i.n0(colorStateList);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleTintMode(PorterDuff.Mode mode) {
-        this.f15545i.o0(mode);
+        this.f16293i.o0(mode);
     }
 
     public void setPlaceholderText(CharSequence charSequence) {
-        if (this.E == null) {
+        if (this.F == null) {
             AppCompatTextView appCompatTextView = new AppCompatTextView(getContext());
-            this.E = appCompatTextView;
-            appCompatTextView.setId(bh.f.R);
-            h0.x0(this.E, 2);
-            androidx.transition.e A = A();
-            this.H = A;
-            A.r0(67L);
-            this.I = A();
-            setPlaceholderTextAppearance(this.G);
-            setPlaceholderTextColor(this.F);
+            this.F = appCompatTextView;
+            appCompatTextView.setId(bh.f.f6838a0);
+            this.F.setImportantForAccessibility(1);
+            this.F.setAccessibilityLiveRegion(1);
+            androidx.transition.e B = B();
+            this.I = B;
+            B.t0(67L);
+            this.J = B();
+            setPlaceholderTextAppearance(this.H);
+            setPlaceholderTextColor(this.G);
+            i0.k0(this.F, new b());
         }
         if (TextUtils.isEmpty(charSequence)) {
             setPlaceholderTextEnabled(false);
         } else {
-            if (!this.D) {
+            if (!this.E) {
                 setPlaceholderTextEnabled(true);
             }
-            this.C = charSequence;
+            this.D = charSequence;
         }
-        w0();
+        A0();
     }
 
     public void setPlaceholderTextAppearance(int i10) {
-        this.G = i10;
-        TextView textView = this.E;
+        this.H = i10;
+        TextView textView = this.F;
         if (textView != null) {
-            androidx.core.widget.j.s(textView, i10);
+            androidx.core.widget.j.q(textView, i10);
         }
     }
 
     public void setPlaceholderTextColor(ColorStateList colorStateList) {
-        if (this.F != colorStateList) {
-            this.F = colorStateList;
-            TextView textView = this.E;
+        if (this.G != colorStateList) {
+            this.G = colorStateList;
+            TextView textView = this.F;
             if (textView != null && colorStateList != null) {
                 textView.setTextColor(colorStateList);
             }
@@ -2398,27 +2551,27 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setPrefixText(CharSequence charSequence) {
-        this.f15540e.n(charSequence);
+        this.f16288e.n(charSequence);
     }
 
     public void setPrefixTextAppearance(int i10) {
-        this.f15540e.o(i10);
+        this.f16288e.o(i10);
     }
 
     public void setPrefixTextColor(@NonNull ColorStateList colorStateList) {
-        this.f15540e.p(colorStateList);
+        this.f16288e.p(colorStateList);
     }
 
-    public void setShapeAppearanceModel(@NonNull rh.k kVar) {
-        rh.g gVar = this.Q;
-        if (gVar != null && gVar.D() != kVar) {
-            this.W = kVar;
-            m();
+    public void setShapeAppearanceModel(@NonNull th.l lVar) {
+        th.h hVar = this.R;
+        if (hVar != null && hVar.J() != lVar) {
+            this.f16283a0 = lVar;
+            n();
         }
     }
 
     public void setStartIconCheckable(boolean z10) {
-        this.f15540e.q(z10);
+        this.f16288e.q(z10);
     }
 
     public void setStartIconContentDescription(int i10) {
@@ -2430,58 +2583,58 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setStartIconMinSize(int i10) {
-        this.f15540e.t(i10);
+        this.f16288e.t(i10);
     }
 
     public void setStartIconOnClickListener(View.OnClickListener onClickListener) {
-        this.f15540e.u(onClickListener);
+        this.f16288e.u(onClickListener);
     }
 
     public void setStartIconOnLongClickListener(View.OnLongClickListener onLongClickListener) {
-        this.f15540e.v(onLongClickListener);
+        this.f16288e.v(onLongClickListener);
     }
 
     public void setStartIconScaleType(@NonNull ImageView.ScaleType scaleType) {
-        this.f15540e.w(scaleType);
+        this.f16288e.w(scaleType);
     }
 
     public void setStartIconTintList(ColorStateList colorStateList) {
-        this.f15540e.x(colorStateList);
+        this.f16288e.x(colorStateList);
     }
 
     public void setStartIconTintMode(PorterDuff.Mode mode) {
-        this.f15540e.y(mode);
+        this.f16288e.y(mode);
     }
 
     public void setStartIconVisible(boolean z10) {
-        this.f15540e.z(z10);
+        this.f16288e.z(z10);
     }
 
     public void setSuffixText(CharSequence charSequence) {
-        this.f15545i.p0(charSequence);
+        this.f16293i.p0(charSequence);
     }
 
     public void setSuffixTextAppearance(int i10) {
-        this.f15545i.q0(i10);
+        this.f16293i.q0(i10);
     }
 
     public void setSuffixTextColor(@NonNull ColorStateList colorStateList) {
-        this.f15545i.r0(colorStateList);
+        this.f16293i.r0(colorStateList);
     }
 
-    public void setTextInputAccessibilityDelegate(d dVar) {
-        EditText editText = this.f15552o;
+    public void setTextInputAccessibilityDelegate(e eVar) {
+        EditText editText = this.f16302p;
         if (editText != null) {
-            h0.n0(editText, dVar);
+            i0.k0(editText, eVar);
         }
     }
 
     public void setTypeface(Typeface typeface) {
-        if (typeface != this.f15550m0) {
-            this.f15550m0 = typeface;
-            this.G0.i0(typeface);
-            this.f15564u.N(typeface);
-            TextView textView = this.f15574z;
+        if (typeface != this.f16299n0) {
+            this.f16299n0 = typeface;
+            this.H0.p0(typeface);
+            this.f16314v.N(typeface);
+            TextView textView = this.A;
             if (textView != null) {
                 textView.setTypeface(typeface);
             }
@@ -2489,76 +2642,19 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void t0(boolean z10) {
-        u0(z10, false);
+    public void t0() {
+        EditText editText = this.f16302p;
+        if (editText != null && this.R != null) {
+            if ((this.U || editText.getBackground() == null) && this.f16287d0 != 0) {
+                s0();
+                this.U = true;
+            }
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void z0() {
-        boolean z10;
-        TextView textView;
-        EditText editText;
-        EditText editText2;
-        if (this.Q != null && this.f15537c0 != 0) {
-            boolean z11 = false;
-            if (!isFocused() && ((editText2 = this.f15552o) == null || !editText2.hasFocus())) {
-                z10 = false;
-            } else {
-                z10 = true;
-            }
-            if (isHovered() || ((editText = this.f15552o) != null && editText.isHovered())) {
-                z11 = true;
-            }
-            if (!isEnabled()) {
-                this.f15544h0 = this.D0;
-            } else if (c0()) {
-                if (this.f15573y0 != null) {
-                    y0(z10, z11);
-                } else {
-                    this.f15544h0 = getErrorCurrentTextColors();
-                }
-            } else if (this.f15570x && (textView = this.f15574z) != null) {
-                if (this.f15573y0 != null) {
-                    y0(z10, z11);
-                } else {
-                    this.f15544h0 = textView.getCurrentTextColor();
-                }
-            } else if (z10) {
-                this.f15544h0 = this.f15571x0;
-            } else if (z11) {
-                this.f15544h0 = this.f15569w0;
-            } else {
-                this.f15544h0 = this.f15567v0;
-            }
-            if (Build.VERSION.SDK_INT >= 29) {
-                m0();
-            }
-            this.f15545i.I();
-            X();
-            if (this.f15537c0 == 2) {
-                int i10 = this.f15541e0;
-                if (z10 && isEnabled()) {
-                    this.f15541e0 = this.f15543g0;
-                } else {
-                    this.f15541e0 = this.f15542f0;
-                }
-                if (this.f15541e0 != i10) {
-                    V();
-                }
-            }
-            if (this.f15537c0 == 1) {
-                if (!isEnabled()) {
-                    this.f15546i0 = this.A0;
-                } else if (z11 && !z10) {
-                    this.f15546i0 = this.C0;
-                } else if (z10) {
-                    this.f15546i0 = this.B0;
-                } else {
-                    this.f15546i0 = this.f15575z0;
-                }
-            }
-            m();
-        }
+    public void x0(boolean z10) {
+        y0(z10, false);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -2568,40 +2664,40 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     */
     public TextInputLayout(android.content.Context r17, android.util.AttributeSet r18, int r19) {
         /*
-            Method dump skipped, instructions count: 881
+            Method dump skipped, instructions count: 902
             To view this dump add '--comments-level debug' option
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.material.textfield.TextInputLayout.<init>(android.content.Context, android.util.AttributeSet, int):void");
     }
 
     public void setEndIconContentDescription(CharSequence charSequence) {
-        this.f15545i.Q(charSequence);
+        this.f16293i.Q(charSequence);
     }
 
     public void setEndIconDrawable(Drawable drawable) {
-        this.f15545i.S(drawable);
+        this.f16293i.S(drawable);
     }
 
     public void setErrorIconDrawable(Drawable drawable) {
-        this.f15545i.c0(drawable);
+        this.f16293i.c0(drawable);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleContentDescription(CharSequence charSequence) {
-        this.f15545i.j0(charSequence);
+        this.f16293i.j0(charSequence);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleDrawable(Drawable drawable) {
-        this.f15545i.l0(drawable);
+        this.f16293i.l0(drawable);
     }
 
     public void setStartIconContentDescription(CharSequence charSequence) {
-        this.f15540e.r(charSequence);
+        this.f16288e.r(charSequence);
     }
 
     public void setStartIconDrawable(Drawable drawable) {
-        this.f15540e.s(drawable);
+        this.f16288e.s(drawable);
     }
 
     public void setHint(int i10) {

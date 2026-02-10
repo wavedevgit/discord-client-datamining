@@ -140,7 +140,7 @@ public final class OverlayMenuView extends LinearLayout {
                     if (i11 == 4) {
                         reactAsset2 = ReactAsset.CallStatusUnknown;
                     } else {
-                        throw new rr.p();
+                        throw new as.p();
                     }
                 } else {
                     reactAsset2 = ReactAsset.CallStatusRed;

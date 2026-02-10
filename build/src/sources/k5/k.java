@@ -29,45 +29,45 @@ import y4.a;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Bitmap.Config[] f30700a;
+    private static final Bitmap.Config[] f31558a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Bitmap.Config f30701b;
+    private static final Bitmap.Config f31559b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Headers f30702c;
+    private static final Headers f31560c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f30703a;
+        public static final /* synthetic */ int[] f31561a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f30704b;
+        public static final /* synthetic */ int[] f31562b;
 
         /* renamed from: c  reason: collision with root package name */
-        public static final /* synthetic */ int[] f30705c;
+        public static final /* synthetic */ int[] f31563c;
 
         static {
             int[] iArr = new int[x4.h.values().length];
             try {
-                iArr[x4.h.f54611d.ordinal()] = 1;
+                iArr[x4.h.f54343d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[x4.h.f54612e.ordinal()] = 2;
+                iArr[x4.h.f54344e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[x4.h.f54613i.ordinal()] = 3;
+                iArr[x4.h.f54345i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[x4.h.f54614o.ordinal()] = 4;
+                iArr[x4.h.f54346o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
-            f30703a = iArr;
+            f31561a = iArr;
             int[] iArr2 = new int[ImageView.ScaleType.values().length];
             try {
                 iArr2[ImageView.ScaleType.FIT_START.ordinal()] = 1;
@@ -85,17 +85,17 @@ public abstract class k {
                 iArr2[ImageView.ScaleType.CENTER_INSIDE.ordinal()] = 4;
             } catch (NoSuchFieldError unused8) {
             }
-            f30704b = iArr2;
+            f31562b = iArr2;
             int[] iArr3 = new int[h5.h.values().length];
             try {
-                iArr3[h5.h.f24978d.ordinal()] = 1;
+                iArr3[h5.h.f26196d.ordinal()] = 1;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                iArr3[h5.h.f24979e.ordinal()] = 2;
+                iArr3[h5.h.f26197e.ordinal()] = 2;
             } catch (NoSuchFieldError unused10) {
             }
-            f30705c = iArr3;
+            f31563c = iArr3;
         }
     }
 
@@ -110,26 +110,26 @@ public abstract class k {
         } else {
             configArr = new Bitmap.Config[]{Bitmap.Config.ARGB_8888};
         }
-        f30700a = configArr;
+        f31558a = configArr;
         if (i10 >= 26) {
             config = Bitmap.Config.HARDWARE;
         } else {
             config = Bitmap.Config.ARGB_8888;
         }
-        f30701b = config;
-        f30702c = new Headers.a().f();
+        f31559b = config;
+        f31560c = new Headers.a().f();
     }
 
     public static final int A(h5.c cVar, h5.h hVar) {
         if (cVar instanceof c.a) {
-            return ((c.a) cVar).f24967a;
+            return ((c.a) cVar).f26185a;
         }
-        int i10 = a.f30705c[hVar.ordinal()];
+        int i10 = a.f31563c[hVar.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return Integer.MAX_VALUE;
             }
-            throw new rr.p();
+            throw new as.p();
         }
         return Integer.MIN_VALUE;
     }
@@ -197,14 +197,14 @@ public abstract class k {
     }
 
     public static final Bitmap.Config f() {
-        return f30701b;
+        return f31559b;
     }
 
     public static final v4.c g(b.a aVar) {
         if (aVar instanceof b5.c) {
             return ((b5.c) aVar).e();
         }
-        return v4.c.f52097b;
+        return v4.c.f51339b;
     }
 
     public static final String h(Uri uri) {
@@ -238,7 +238,7 @@ public abstract class k {
 
     public static final g5.v l(View view) {
         g5.v vVar;
-        Object tag = view.getTag(w4.a.f53249a);
+        Object tag = view.getTag(w4.a.f52278a);
         g5.v vVar2 = null;
         if (tag instanceof g5.v) {
             vVar = (g5.v) tag;
@@ -248,14 +248,14 @@ public abstract class k {
         if (vVar == null) {
             synchronized (view) {
                 try {
-                    Object tag2 = view.getTag(w4.a.f53249a);
+                    Object tag2 = view.getTag(w4.a.f52278a);
                     if (tag2 instanceof g5.v) {
                         vVar2 = (g5.v) tag2;
                     }
                     if (vVar2 == null) {
                         vVar2 = new g5.v(view);
                         view.addOnAttachStateChangeListener(vVar2);
-                        view.setTag(w4.a.f53249a, vVar2);
+                        view.setTag(w4.a.f52278a, vVar2);
                     }
                 } finally {
                 }
@@ -280,16 +280,16 @@ public abstract class k {
         if (scaleType == null) {
             i10 = -1;
         } else {
-            i10 = a.f30704b[scaleType.ordinal()];
+            i10 = a.f31562b[scaleType.ordinal()];
         }
         if (i10 != 1 && i10 != 2 && i10 != 3 && i10 != 4) {
-            return h5.h.f24978d;
+            return h5.h.f26196d;
         }
-        return h5.h.f24979e;
+        return h5.h.f26197e;
     }
 
     public static final Bitmap.Config[] o() {
-        return f30700a;
+        return f31558a;
     }
 
     public static final int p(Drawable drawable) {
@@ -340,21 +340,21 @@ public abstract class k {
 
     public static final g5.n v(g5.n nVar) {
         if (nVar == null) {
-            return g5.n.f23577i;
+            return g5.n.f24877i;
         }
         return nVar;
     }
 
     public static final g5.s w(g5.s sVar) {
         if (sVar == null) {
-            return g5.s.f23591c;
+            return g5.s.f24891c;
         }
         return sVar;
     }
 
     public static final Headers x(Headers headers) {
         if (headers == null) {
-            return f30702c;
+            return f31560c;
         }
         return headers;
     }

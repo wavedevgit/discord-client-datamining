@@ -9,22 +9,22 @@ import uc.z;
 final class c implements g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long[] f6467a;
+    private final long[] f6573a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long[] f6468b;
+    private final long[] f6574b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f6469c;
+    private final long f6575c;
 
     private c(long[] jArr, long[] jArr2, long j10) {
-        this.f6467a = jArr;
-        this.f6468b = jArr2;
-        this.f6469c = j10 == -9223372036854775807L ? w0.K0(jArr2[jArr2.length - 1]) : j10;
+        this.f6573a = jArr;
+        this.f6574b = jArr2;
+        this.f6575c = j10 == -9223372036854775807L ? w0.K0(jArr2[jArr2.length - 1]) : j10;
     }
 
     public static c a(long j10, k kVar, long j11) {
-        int length = kVar.f36946p.length;
+        int length = kVar.f36321p.length;
         int i10 = length + 1;
         long[] jArr = new long[i10];
         long[] jArr2 = new long[i10];
@@ -33,8 +33,8 @@ final class c implements g {
         jArr2[0] = 0;
         for (int i11 = 1; i11 <= length; i11++) {
             int i12 = i11 - 1;
-            j10 += kVar.f36944i + kVar.f36946p[i12];
-            j12 += kVar.f36945o + kVar.f36947q[i12];
+            j10 += kVar.f36319i + kVar.f36321p[i12];
+            j12 += kVar.f36320o + kVar.f36322q[i12];
             jArr[i11] = j10;
             jArr2[i11] = j12;
         }
@@ -62,12 +62,12 @@ final class c implements g {
 
     @Override // bd.g
     public long b(long j10) {
-        return w0.K0(((Long) c(j10, this.f6467a, this.f6468b).second).longValue());
+        return w0.K0(((Long) c(j10, this.f6573a, this.f6574b).second).longValue());
     }
 
     @Override // uc.z
     public z.a e(long j10) {
-        Pair c10 = c(w0.p1(w0.r(j10, 0L, this.f6469c)), this.f6468b, this.f6467a);
+        Pair c10 = c(w0.p1(w0.r(j10, 0L, this.f6575c)), this.f6574b, this.f6573a);
         return new z.a(new a0(w0.K0(((Long) c10.first).longValue()), ((Long) c10.second).longValue()));
     }
 
@@ -83,6 +83,6 @@ final class c implements g {
 
     @Override // uc.z
     public long i() {
-        return this.f6469c;
+        return this.f6575c;
     }
 }

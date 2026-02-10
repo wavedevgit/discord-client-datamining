@@ -20,14 +20,14 @@ public enum tj implements n2 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f41376d;
+    private final int f39702d;
 
     tj(int i10) {
-        this.f41376d = i10;
+        this.f39702d = i10;
     }
 
     @Override // og.n2
     public final int zza() {
-        return this.f41376d;
+        return this.f39702d;
     }
 }

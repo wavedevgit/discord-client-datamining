@@ -46,15 +46,15 @@ public final class NextStep_GovernmentId_PendingPageJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw bn.c.x("title", "title", reader);
+                    throw dn.c.x("title", "title", reader);
                 }
             } else if (J == 1 && (str2 = (String) this.stringAdapter.fromJson(reader)) == null) {
-                throw bn.c.x("description", "description", reader);
+                throw dn.c.x("description", "description", reader);
             }
         }
         reader.D();
@@ -62,16 +62,16 @@ public final class NextStep_GovernmentId_PendingPageJsonAdapter extends h {
             if (str2 != null) {
                 return new NextStep.GovernmentId.PendingPage(str, str2);
             }
-            throw bn.c.o("description", "description", reader);
+            throw dn.c.o("description", "description", reader);
         }
-        throw bn.c.o("title", "title", reader);
+        throw dn.c.o("title", "title", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.GovernmentId.PendingPage pendingPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (pendingPage != null) {
-            writer.k();
+            writer.i();
             writer.J("title");
             this.stringAdapter.toJson(writer, pendingPage.getTitle());
             writer.J("description");

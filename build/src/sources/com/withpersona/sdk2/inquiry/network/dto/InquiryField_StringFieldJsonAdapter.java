@@ -54,14 +54,14 @@ public final class InquiryField_StringFieldJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
             } else if (J == 1) {
                 str2 = (String) this.stringAdapter.fromJson(reader);
                 if (str2 == null) {
-                    throw bn.c.x("type", "type", reader);
+                    throw dn.c.x("type", "type", reader);
                 }
                 i10 = -3;
             } else {
@@ -75,7 +75,7 @@ public final class InquiryField_StringFieldJsonAdapter extends h {
         }
         Constructor<InquiryField.StringField> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InquiryField.StringField.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, bn.c.f7152c);
+            constructor = InquiryField.StringField.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, dn.c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -88,7 +88,7 @@ public final class InquiryField_StringFieldJsonAdapter extends h {
     public void toJson(@NotNull t writer, InquiryField.StringField stringField) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stringField != null) {
-            writer.k();
+            writer.i();
             writer.J("value");
             this.nullableStringAdapter.toJson(writer, stringField.getValue());
             writer.J("type");

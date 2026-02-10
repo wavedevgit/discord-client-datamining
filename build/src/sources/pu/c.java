@@ -1,30 +1,21 @@
 package pu;
 
-import java.util.List;
-import javax.net.ssl.X509TrustManager;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import mu.h;
+import kotlin.jvm.functions.Function0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class c {
+public final class c extends a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f44557a = new a(null);
+    /* renamed from: e  reason: collision with root package name */
+    final /* synthetic */ Function0 f43207e;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        public final c a(X509TrustManager trustManager) {
-            Intrinsics.checkNotNullParameter(trustManager, "trustManager");
-            return h.f37655a.g().c(trustManager);
-        }
-
-        private a() {
-        }
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public c(String str, boolean z10, Function0 function0) {
+        super(str, z10);
+        this.f43207e = function0;
     }
 
-    public abstract List a(List list, String str);
+    @Override // pu.a
+    public long f() {
+        this.f43207e.invoke();
+        return -1L;
+    }
 }

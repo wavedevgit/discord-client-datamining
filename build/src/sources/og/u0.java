@@ -7,31 +7,31 @@ import java.util.NoSuchElementException;
 abstract class u0 implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    int f41378d;
+    int f39704d;
 
     /* renamed from: e  reason: collision with root package name */
-    int f41379e;
+    int f39705e;
 
     /* renamed from: i  reason: collision with root package name */
-    int f41380i;
+    int f39706i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ y0 f41381o;
+    final /* synthetic */ y0 f39707o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ u0(y0 y0Var, t0 t0Var) {
         int i10;
-        this.f41381o = y0Var;
-        i10 = y0Var.f41518p;
-        this.f41378d = i10;
-        this.f41379e = y0Var.h();
-        this.f41380i = -1;
+        this.f39707o = y0Var;
+        i10 = y0Var.f39844p;
+        this.f39704d = i10;
+        this.f39705e = y0Var.h();
+        this.f39706i = -1;
     }
 
     private final void b() {
         int i10;
-        i10 = this.f41381o.f41518p;
-        if (i10 == this.f41378d) {
+        i10 = this.f39707o.f39844p;
+        if (i10 == this.f39704d) {
             return;
         }
         throw new ConcurrentModificationException();
@@ -41,7 +41,7 @@ abstract class u0 implements Iterator {
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        if (this.f41379e >= 0) {
+        if (this.f39705e >= 0) {
             return true;
         }
         return false;
@@ -51,10 +51,10 @@ abstract class u0 implements Iterator {
     public final Object next() {
         b();
         if (hasNext()) {
-            int i10 = this.f41379e;
-            this.f41380i = i10;
+            int i10 = this.f39705e;
+            this.f39706i = i10;
             Object a10 = a(i10);
-            this.f41379e = this.f41381o.i(this.f41379e);
+            this.f39705e = this.f39707o.i(this.f39705e);
             return a10;
         }
         throw new NoSuchElementException();
@@ -64,17 +64,17 @@ abstract class u0 implements Iterator {
     public final void remove() {
         boolean z10;
         b();
-        if (this.f41380i >= 0) {
+        if (this.f39706i >= 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         t.e(z10, "no calls to next() since the last call to remove()");
-        this.f41378d += 32;
-        int i10 = this.f41380i;
-        y0 y0Var = this.f41381o;
+        this.f39704d += 32;
+        int i10 = this.f39706i;
+        y0 y0Var = this.f39707o;
         y0Var.remove(y0.j(y0Var, i10));
-        this.f41379e--;
-        this.f41380i = -1;
+        this.f39705e--;
+        this.f39706i = -1;
     }
 }

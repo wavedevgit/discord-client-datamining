@@ -13,9 +13,9 @@ public abstract class o1 extends ig.n implements p1 {
             if (i10 != 2) {
                 return false;
             }
-            int k10 = k();
+            int h10 = h();
             parcel2.writeNoException();
-            parcel2.writeInt(k10);
+            parcel2.writeInt(h10);
         } else {
             tf.a b10 = b();
             parcel2.writeNoException();

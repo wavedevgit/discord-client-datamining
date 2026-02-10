@@ -5,7 +5,7 @@ import java.io.Closeable;
 public interface g extends Closeable {
     void b();
 
-    void i();
+    void j();
 
     void o(s sVar);
 

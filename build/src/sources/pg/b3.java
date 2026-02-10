@@ -1,29 +1,29 @@
 package pg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class b3 implements zi.d {
+final class b3 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final b3 f43316a = new b3();
+    static final b3 f41774a = new b3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f43317b;
+    private static final bj.c f41775b;
 
     static {
-        c.b a10 = zi.c.a("errorCode");
+        c.b a10 = bj.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f43317b = a10.b(fVar.b()).a();
+        f41775b = a10.b(fVar.b()).a();
     }
 
     private b3() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

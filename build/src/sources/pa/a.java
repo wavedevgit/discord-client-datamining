@@ -12,15 +12,15 @@ import p8.j;
 public abstract class a extends z8.a {
 
     /* renamed from: h  reason: collision with root package name */
-    private final d1 f43082h;
+    private final d1 f41540h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final va.d f43083i;
+    private final va.d f41541i;
 
     /* renamed from: pa.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0611a extends com.facebook.imagepipeline.producers.c {
-        C0611a() {
+    public static final class C0587a extends com.facebook.imagepipeline.producers.c {
+        C0587a() {
         }
 
         @Override // com.facebook.imagepipeline.producers.c
@@ -51,8 +51,8 @@ public abstract class a extends z8.a {
         Intrinsics.checkNotNullParameter(producer, "producer");
         Intrinsics.checkNotNullParameter(settableProducerContext, "settableProducerContext");
         Intrinsics.checkNotNullParameter(requestListener, "requestListener");
-        this.f43082h = settableProducerContext;
-        this.f43083i = requestListener;
+        this.f41540h = settableProducerContext;
+        this.f41541i = requestListener;
         if (!za.b.d()) {
             m(settableProducerContext.getExtras());
             if (!za.b.d()) {
@@ -61,7 +61,7 @@ public abstract class a extends z8.a {
                 za.b.a("AbstractProducerToDataSourceAdapter()->onRequestStart");
                 try {
                     requestListener.a(settableProducerContext);
-                    Unit unit = Unit.f31765a;
+                    Unit unit = Unit.f31987a;
                 } finally {
                 }
             }
@@ -72,7 +72,7 @@ public abstract class a extends z8.a {
             za.b.a("AbstractProducerToDataSourceAdapter()->produceResult");
             try {
                 producer.b(y(), settableProducerContext);
-                Unit unit2 = Unit.f31765a;
+                Unit unit2 = Unit.f31987a;
                 return;
             } finally {
             }
@@ -85,7 +85,7 @@ public abstract class a extends z8.a {
             } else {
                 za.b.a("AbstractProducerToDataSourceAdapter()->onRequestStart");
                 requestListener.a(settableProducerContext);
-                Unit unit3 = Unit.f31765a;
+                Unit unit3 = Unit.f31987a;
                 za.b.b();
             }
             if (!za.b.d()) {
@@ -93,10 +93,10 @@ public abstract class a extends z8.a {
             } else {
                 za.b.a("AbstractProducerToDataSourceAdapter()->produceResult");
                 producer.b(y(), settableProducerContext);
-                Unit unit4 = Unit.f31765a;
+                Unit unit4 = Unit.f31987a;
                 za.b.b();
             }
-            Unit unit5 = Unit.f31765a;
+            Unit unit5 = Unit.f31987a;
         } catch (Throwable th2) {
             throw th2;
         }
@@ -109,17 +109,17 @@ public abstract class a extends z8.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void C(Throwable th2) {
-        if (super.o(th2, z(this.f43082h))) {
-            this.f43083i.i(this.f43082h, th2);
+        if (super.o(th2, z(this.f41540h))) {
+            this.f41541i.i(this.f41540h, th2);
         }
     }
 
     private final Consumer y() {
-        return new C0611a();
+        return new C0587a();
     }
 
     public final d1 A() {
-        return this.f43082h;
+        return this.f41540h;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -127,7 +127,7 @@ public abstract class a extends z8.a {
         Intrinsics.checkNotNullParameter(producerContext, "producerContext");
         boolean d10 = com.facebook.imagepipeline.producers.c.d(i10);
         if (super.s(obj, d10, z(producerContext)) && d10) {
-            this.f43083i.e(this.f43082h);
+            this.f41541i.e(this.f41540h);
         }
     }
 
@@ -137,8 +137,8 @@ public abstract class a extends z8.a {
             return false;
         }
         if (!super.isFinished()) {
-            this.f43083i.g(this.f43082h);
-            this.f43082h.f();
+            this.f41541i.g(this.f41540h);
+            this.f41540h.f();
             return true;
         }
         return true;

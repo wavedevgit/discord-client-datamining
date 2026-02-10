@@ -1,110 +1,96 @@
 package qv;
 
-import java.nio.charset.Charset;
 import java.util.Locale;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Pattern f47309a = Pattern.compile("[\\\\&]");
+    private static final ConcurrentMap f45771a = new ConcurrentHashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f47310b = Pattern.compile("\\\\[!\"#$%&'()*+,./:;<=>?@\\[\\\\\\]^_`{|}~-]|&(?:#x[a-f0-9]{1,6}|#[0-9]{1,7}|[a-z][a-z0-9]{1,31});", 2);
+    private static final ConcurrentMap f45772b = new ConcurrentHashMap();
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f47311c = Pattern.compile("(%[a-fA-F0-9]{0,2}|[^:/?#@!$&'()*+,;=a-zA-Z0-9\\-._~])");
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final char[] f47312d = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final Pattern f47313e = Pattern.compile("[ \t\r\n]+");
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final c f47314f = new C0642a();
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final c f47315g = new b();
-
-    /* renamed from: qv.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static class C0642a implements c {
-        C0642a() {
+    private static boolean a(String str) {
+        if (b.b(str) && str.length() == 2) {
+            return true;
         }
-
-        @Override // qv.a.c
-        public void a(String str, StringBuilder sb2) {
-            if (str.charAt(0) == '\\') {
-                sb2.append((CharSequence) str, 1, str.length());
-            } else {
-                sb2.append(qv.b.a(str));
-            }
-        }
+        return false;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static class b implements c {
-        b() {
+    private static boolean b(String str) {
+        if (b.a(str)) {
+            if (str.length() == 2 || str.length() == 3) {
+                return true;
+            }
+            return false;
         }
+        return false;
+    }
 
-        @Override // qv.a.c
-        public void a(String str, StringBuilder sb2) {
-            byte[] bytes;
-            if (str.startsWith("%")) {
-                if (str.length() == 3) {
-                    sb2.append(str);
-                    return;
+    private static boolean c(String str) {
+        if (b.d(str) && str.length() == 3) {
+            return true;
+        }
+        return false;
+    }
+
+    private static Locale d(String str) {
+        if (b(str)) {
+            return new Locale(str);
+        }
+        String[] split = str.split("_", -1);
+        String str2 = split[0];
+        if (split.length == 2) {
+            String str3 = split[1];
+            if ((b(str2) && a(str3)) || c(str3)) {
+                return new Locale(str2, str3);
+            }
+        } else if (split.length == 3) {
+            String str4 = split[1];
+            String str5 = split[2];
+            if (b(str2) && ((str4.isEmpty() || a(str4) || c(str4)) && !str5.isEmpty())) {
+                return new Locale(str2, str4, str5);
+            }
+        }
+        throw new IllegalArgumentException("Invalid locale format: " + str);
+    }
+
+    public static Locale e(String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.isEmpty()) {
+            return new Locale("", "");
+        }
+        if (!str.contains("#")) {
+            int length = str.length();
+            if (length >= 2) {
+                if (str.charAt(0) == '_') {
+                    if (length >= 3) {
+                        char charAt = str.charAt(1);
+                        char charAt2 = str.charAt(2);
+                        if (Character.isUpperCase(charAt) && Character.isUpperCase(charAt2)) {
+                            if (length == 3) {
+                                return new Locale("", str.substring(1, 3));
+                            }
+                            if (length >= 5) {
+                                if (str.charAt(3) == '_') {
+                                    return new Locale("", str.substring(1, 3), str.substring(4));
+                                }
+                                throw new IllegalArgumentException("Invalid locale format: " + str);
+                            }
+                            throw new IllegalArgumentException("Invalid locale format: " + str);
+                        }
+                        throw new IllegalArgumentException("Invalid locale format: " + str);
+                    }
+                    throw new IllegalArgumentException("Invalid locale format: " + str);
                 }
-                sb2.append("%25");
-                sb2.append((CharSequence) str, 1, str.length());
-                return;
+                return d(str);
             }
-            for (byte b10 : str.getBytes(Charset.forName("UTF-8"))) {
-                sb2.append('%');
-                sb2.append(a.f47312d[(b10 >> 4) & 15]);
-                sb2.append(a.f47312d[b10 & 15]);
-            }
+            throw new IllegalArgumentException("Invalid locale format: " + str);
         }
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public interface c {
-        void a(String str, StringBuilder sb2);
-    }
-
-    public static String b(String str) {
-        return f47313e.matcher(str.trim().toLowerCase(Locale.ROOT)).replaceAll(" ");
-    }
-
-    public static String c(String str) {
-        return b(str.substring(1, str.length() - 1));
-    }
-
-    private static String d(Pattern pattern, String str, c cVar) {
-        Matcher matcher = pattern.matcher(str);
-        if (!matcher.find()) {
-            return str;
-        }
-        StringBuilder sb2 = new StringBuilder(str.length() + 16);
-        int i10 = 0;
-        do {
-            sb2.append((CharSequence) str, i10, matcher.start());
-            cVar.a(matcher.group(), sb2);
-            i10 = matcher.end();
-        } while (matcher.find());
-        if (i10 != str.length()) {
-            sb2.append((CharSequence) str, i10, str.length());
-        }
-        return sb2.toString();
-    }
-
-    public static String e(String str) {
-        if (f47309a.matcher(str).find()) {
-            return d(f47310b, str, f47314f);
-        }
-        return str;
+        throw new IllegalArgumentException("Invalid locale format: " + str);
     }
 }

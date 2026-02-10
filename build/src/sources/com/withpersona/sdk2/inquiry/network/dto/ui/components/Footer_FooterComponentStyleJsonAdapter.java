@@ -59,7 +59,7 @@ public final class Footer_FooterComponentStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 footerColorStyle = (AttributeStyles.FooterColorStyle) this.nullableFooterColorStyleAdapter.fromJson(reader);
@@ -77,7 +77,7 @@ public final class Footer_FooterComponentStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, Footer.FooterComponentStyle footerComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (footerComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J(ViewProps.BACKGROUND_COLOR);
             this.nullableFooterColorStyleAdapter.toJson(writer, footerComponentStyle.getBackgroundColor());
             writer.J(ViewProps.PADDING);

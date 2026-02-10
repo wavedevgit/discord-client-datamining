@@ -1,63 +1,26 @@
 package mt;
 
+import java.util.ArrayList;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements CharSequence {
+public final class d {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final char[] f37523d;
+    /* renamed from: a  reason: collision with root package name */
+    private final List f36614a = new ArrayList();
 
-    /* renamed from: e  reason: collision with root package name */
-    private int f37524e;
-
-    public d(char[] buffer) {
-        Intrinsics.checkNotNullParameter(buffer, "buffer");
-        this.f37523d = buffer;
-        this.f37524e = buffer.length;
+    public final void a(o format) {
+        Intrinsics.checkNotNullParameter(format, "format");
+        if (format instanceof s) {
+            this.f36614a.add(format);
+        } else if (format instanceof h) {
+            for (s sVar : ((h) format).c()) {
+                this.f36614a.add(sVar);
+            }
+        }
     }
 
-    public char a(int i10) {
-        return this.f37523d[i10];
-    }
-
-    public final char[] b() {
-        return this.f37523d;
-    }
-
-    public int c() {
-        return this.f37524e;
-    }
-
-    @Override // java.lang.CharSequence
-    public final /* bridge */ char charAt(int i10) {
-        return a(i10);
-    }
-
-    public void d(int i10) {
-        this.f37524e = i10;
-    }
-
-    public final String e(int i10, int i11) {
-        return StringsKt.w(this.f37523d, i10, Math.min(i11, length()));
-    }
-
-    public final void f(int i10) {
-        d(Math.min(this.f37523d.length, i10));
-    }
-
-    @Override // java.lang.CharSequence
-    public final /* bridge */ int length() {
-        return c();
-    }
-
-    @Override // java.lang.CharSequence
-    public CharSequence subSequence(int i10, int i11) {
-        return StringsKt.w(this.f37523d, i10, Math.min(i11, length()));
-    }
-
-    @Override // java.lang.CharSequence
-    public String toString() {
-        return e(0, length());
+    public final h b() {
+        return new h(this.f36614a);
     }
 }

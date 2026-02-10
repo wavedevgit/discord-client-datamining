@@ -12,19 +12,19 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class m implements Executor {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final ThreadFactory f54360i = new a();
+    private static final ThreadFactory f54092i = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f54361d = new Object();
+    private final Object f54093d = new Object();
 
     /* renamed from: e  reason: collision with root package name */
-    private ThreadPoolExecutor f54362e = b();
+    private ThreadPoolExecutor f54094e = b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements ThreadFactory {
 
         /* renamed from: a  reason: collision with root package name */
-        private final AtomicInteger f54363a = new AtomicInteger(0);
+        private final AtomicInteger f54095a = new AtomicInteger(0);
 
         a() {
         }
@@ -32,13 +32,13 @@ public class m implements Executor {
         @Override // java.util.concurrent.ThreadFactory
         public Thread newThread(Runnable runnable) {
             Thread thread = new Thread(runnable);
-            thread.setName(String.format(Locale.US, "CameraX-core_camera_%d", Integer.valueOf(this.f54363a.getAndIncrement())));
+            thread.setName(String.format(Locale.US, "CameraX-core_camera_%d", Integer.valueOf(this.f54095a.getAndIncrement())));
             return thread;
         }
     }
 
     private static ThreadPoolExecutor b() {
-        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 1, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue(), f54360i);
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 1, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue(), f54092i);
         threadPoolExecutor.setRejectedExecutionHandler(new RejectedExecutionHandler() { // from class: x.l
             @Override // java.util.concurrent.RejectedExecutionHandler
             public final void rejectedExecution(Runnable runnable, ThreadPoolExecutor threadPoolExecutor2) {
@@ -52,12 +52,12 @@ public class m implements Executor {
     public void c(a0.c0 c0Var) {
         ThreadPoolExecutor threadPoolExecutor;
         b2.e.g(c0Var);
-        synchronized (this.f54361d) {
+        synchronized (this.f54093d) {
             try {
-                if (this.f54362e.isShutdown()) {
-                    this.f54362e = b();
+                if (this.f54094e.isShutdown()) {
+                    this.f54094e = b();
                 }
-                threadPoolExecutor = this.f54362e;
+                threadPoolExecutor = this.f54094e;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -70,8 +70,8 @@ public class m implements Executor {
     @Override // java.util.concurrent.Executor
     public void execute(Runnable runnable) {
         b2.e.g(runnable);
-        synchronized (this.f54361d) {
-            this.f54362e.execute(runnable);
+        synchronized (this.f54093d) {
+            this.f54094e.execute(runnable);
         }
     }
 }

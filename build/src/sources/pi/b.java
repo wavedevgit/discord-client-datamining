@@ -1,128 +1,80 @@
 package pi;
-
-import java.math.RoundingMode;
-import ni.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    static final byte[] f44281a = {9, 9, 9, 8, 8, 8, 7, 7, 7, 6, 6, 6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 3, 3, 2, 2, 2, 1, 1, 1, 0, 0, 0, 0};
-
-    /* renamed from: b  reason: collision with root package name */
-    static final int[] f44282b = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
-
-    /* renamed from: c  reason: collision with root package name */
-    static final int[] f44283c = {3, 31, 316, 3162, 31622, 316227, 3162277, 31622776, 316227766, Integer.MAX_VALUE};
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final int[] f44284d = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 39916800, 479001600};
-
-    /* renamed from: e  reason: collision with root package name */
-    static int[] f44285e = {Integer.MAX_VALUE, Integer.MAX_VALUE, 65536, 2345, 477, 193, 110, 75, 58, 49, 43, 39, 37, 35, 34, 34, 33};
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static /* synthetic */ class a {
-
-        /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f44286a;
-
-        static {
-            int[] iArr = new int[RoundingMode.values().length];
-            f44286a = iArr;
-            try {
-                iArr[RoundingMode.UNNECESSARY.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                f44286a[RoundingMode.DOWN.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
-            }
-            try {
-                f44286a[RoundingMode.FLOOR.ordinal()] = 3;
-            } catch (NoSuchFieldError unused3) {
-            }
-            try {
-                f44286a[RoundingMode.UP.ordinal()] = 4;
-            } catch (NoSuchFieldError unused4) {
-            }
-            try {
-                f44286a[RoundingMode.CEILING.ordinal()] = 5;
-            } catch (NoSuchFieldError unused5) {
-            }
-            try {
-                f44286a[RoundingMode.HALF_DOWN.ordinal()] = 6;
-            } catch (NoSuchFieldError unused6) {
-            }
-            try {
-                f44286a[RoundingMode.HALF_UP.ordinal()] = 7;
-            } catch (NoSuchFieldError unused7) {
-            }
-            try {
-                f44286a[RoundingMode.HALF_EVEN.ordinal()] = 8;
-            } catch (NoSuchFieldError unused8) {
+    public static boolean a(CharSequence charSequence, CharSequence charSequence2) {
+        int b10;
+        int length = charSequence.length();
+        if (charSequence == charSequence2) {
+            return true;
+        }
+        if (length != charSequence2.length()) {
+            return false;
+        }
+        for (int i10 = 0; i10 < length; i10++) {
+            char charAt = charSequence.charAt(i10);
+            char charAt2 = charSequence2.charAt(i10);
+            if (charAt != charAt2 && ((b10 = b(charAt)) >= 26 || b10 != b(charAt2))) {
+                return false;
             }
         }
+        return true;
     }
 
-    public static int a(int i10, int i11, RoundingMode roundingMode) {
-        boolean z10;
-        m.j(roundingMode);
-        if (i11 != 0) {
-            int i12 = i10 / i11;
-            int i13 = i10 - (i11 * i12);
-            if (i13 == 0) {
-                return i12;
-            }
-            boolean z11 = true;
-            int i14 = ((i10 ^ i11) >> 31) | 1;
-            switch (a.f44286a[roundingMode.ordinal()]) {
-                case 1:
-                    if (i13 != 0) {
-                        z11 = false;
-                    }
-                    d.a(z11);
-                    return i12;
-                case 2:
-                    return i12;
-                case 3:
-                    if (i14 >= 0) {
-                        return i12;
-                    }
-                    return i12 + i14;
-                case 4:
-                    return i12 + i14;
-                case 5:
-                    if (i14 <= 0) {
-                        return i12;
-                    }
-                    return i12 + i14;
-                case 6:
-                case 7:
-                case 8:
-                    int abs = Math.abs(i13);
-                    int abs2 = abs - (Math.abs(i11) - abs);
-                    if (abs2 == 0) {
-                        if (roundingMode != RoundingMode.HALF_UP) {
-                            if (roundingMode == RoundingMode.HALF_EVEN) {
-                                z10 = true;
-                            } else {
-                                z10 = false;
-                            }
-                            if ((i12 & 1) == 0) {
-                                z11 = false;
-                            }
-                            if (!(z10 & z11)) {
-                                return i12;
-                            }
-                        }
-                    } else if (abs2 <= 0) {
-                        return i12;
-                    }
-                    return i12 + i14;
-                default:
-                    throw new AssertionError();
-            }
+    private static int b(char c10) {
+        return (char) ((c10 | ' ') - 97);
+    }
+
+    public static boolean c(char c10) {
+        if (c10 >= 'a' && c10 <= 'z') {
+            return true;
         }
-        throw new ArithmeticException("/ by zero");
+        return false;
+    }
+
+    public static boolean d(char c10) {
+        if (c10 >= 'A' && c10 <= 'Z') {
+            return true;
+        }
+        return false;
+    }
+
+    public static String e(String str) {
+        int length = str.length();
+        int i10 = 0;
+        while (i10 < length) {
+            if (d(str.charAt(i10))) {
+                char[] charArray = str.toCharArray();
+                while (i10 < length) {
+                    char c10 = charArray[i10];
+                    if (d(c10)) {
+                        charArray[i10] = (char) (c10 ^ ' ');
+                    }
+                    i10++;
+                }
+                return String.valueOf(charArray);
+            }
+            i10++;
+        }
+        return str;
+    }
+
+    public static String f(String str) {
+        int length = str.length();
+        int i10 = 0;
+        while (i10 < length) {
+            if (c(str.charAt(i10))) {
+                char[] charArray = str.toCharArray();
+                while (i10 < length) {
+                    char c10 = charArray[i10];
+                    if (c(c10)) {
+                        charArray[i10] = (char) (c10 ^ ' ');
+                    }
+                    i10++;
+                }
+                return String.valueOf(charArray);
+            }
+            i10++;
+        }
+        return str;
     }
 }

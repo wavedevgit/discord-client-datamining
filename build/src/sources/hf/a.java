@@ -7,7 +7,7 @@ import android.util.Log;
 import hf.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class a extends j.a {
-    public static Account h(j jVar) {
+    public static Account i(j jVar) {
         if (jVar == null) {
             return null;
         }

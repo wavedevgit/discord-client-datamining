@@ -1,28 +1,13 @@
 package rr;
 
-import java.io.Serializable;
-import kotlin.Lazy;
+import android.graphics.Bitmap;
+import id.zelory.compressor.constraint.Compression;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g implements Lazy, Serializable {
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Object f49198d;
-
-    public g(Object obj) {
-        this.f49198d = obj;
-    }
-
-    @Override // kotlin.Lazy
-    public Object getValue() {
-        return this.f49198d;
-    }
-
-    @Override // kotlin.Lazy
-    public boolean isInitialized() {
-        return true;
-    }
-
-    public String toString() {
-        return String.valueOf(getValue());
+public abstract class g {
+    public static final void a(Compression format, Bitmap.CompressFormat format2) {
+        Intrinsics.checkParameterIsNotNull(format, "$this$format");
+        Intrinsics.checkParameterIsNotNull(format2, "format");
+        format.a(new f(format2));
     }
 }

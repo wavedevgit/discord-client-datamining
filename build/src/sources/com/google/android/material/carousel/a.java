@@ -1,41 +1,41 @@
 package com.google.android.material.carousel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class a {
+public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    final int f14891a;
+    final int f15497a;
 
     /* renamed from: b  reason: collision with root package name */
-    float f14892b;
+    float f15498b;
 
     /* renamed from: c  reason: collision with root package name */
-    int f14893c;
+    int f15499c;
 
     /* renamed from: d  reason: collision with root package name */
-    int f14894d;
+    int f15500d;
 
     /* renamed from: e  reason: collision with root package name */
-    float f14895e;
+    float f15501e;
 
     /* renamed from: f  reason: collision with root package name */
-    float f14896f;
+    float f15502f;
 
     /* renamed from: g  reason: collision with root package name */
-    final int f14897g;
+    final int f15503g;
 
     /* renamed from: h  reason: collision with root package name */
-    final float f14898h;
+    final float f15504h;
 
-    a(int i10, float f10, float f11, float f12, int i11, float f13, int i12, float f14, int i13, float f15) {
-        this.f14891a = i10;
-        this.f14892b = u1.a.a(f10, f11, f12);
-        this.f14893c = i11;
-        this.f14895e = f13;
-        this.f14894d = i12;
-        this.f14896f = f14;
-        this.f14897g = i13;
+    public a(int i10, float f10, float f11, float f12, int i11, float f13, int i12, float f14, int i13, float f15) {
+        this.f15497a = i10;
+        this.f15498b = u1.a.a(f10, f11, f12);
+        this.f15499c = i11;
+        this.f15501e = f13;
+        this.f15500d = i12;
+        this.f15502f = f14;
+        this.f15503g = i13;
         d(f15, f11, f12, f14);
-        this.f14898h = b(f14);
+        this.f15504h = b(f14);
     }
 
     private float a(float f10, int i10, float f11, int i11, int i12) {
@@ -50,10 +50,9 @@ final class a {
         if (!g()) {
             return Float.MAX_VALUE;
         }
-        return Math.abs(f10 - this.f14896f) * this.f14891a;
+        return Math.abs(f10 - this.f15502f) * this.f15497a;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     public static a c(float f10, float f11, float f12, float f13, int[] iArr, float f14, int[] iArr2, float f15, int[] iArr3) {
         a aVar = null;
         int i10 = 1;
@@ -71,8 +70,8 @@ final class a {
                     int i18 = length2;
                     int i19 = i14;
                     a aVar2 = new a(i17, f11, f12, f13, iArr[i14], f14, i13, f15, i11, f10);
-                    if (aVar == null || aVar2.f14898h < aVar.f14898h) {
-                        if (aVar2.f14898h == 0.0f) {
+                    if (aVar == null || aVar2.f15504h < aVar.f15504h) {
+                        if (aVar2.f15504h == 0.0f) {
                             return aVar2;
                         }
                         aVar = aVar2;
@@ -95,53 +94,53 @@ final class a {
     private void d(float f10, float f11, float f12, float f13) {
         float f14;
         float f15 = f10 - f();
-        int i10 = this.f14893c;
+        int i10 = this.f15499c;
         if (i10 > 0 && f15 > 0.0f) {
-            float f16 = this.f14892b;
-            this.f14892b = f16 + Math.min(f15 / i10, f12 - f16);
+            float f16 = this.f15498b;
+            this.f15498b = f16 + Math.min(f15 / i10, f12 - f16);
         } else if (i10 > 0 && f15 < 0.0f) {
-            float f17 = this.f14892b;
-            this.f14892b = f17 + Math.max(f15 / i10, f11 - f17);
+            float f17 = this.f15498b;
+            this.f15498b = f17 + Math.max(f15 / i10, f11 - f17);
         }
-        int i11 = this.f14893c;
+        int i11 = this.f15499c;
         if (i11 > 0) {
-            f14 = this.f14892b;
+            f14 = this.f15498b;
         } else {
             f14 = 0.0f;
         }
-        this.f14892b = f14;
-        float a10 = a(f10, i11, f14, this.f14894d, this.f14897g);
-        this.f14896f = a10;
-        float f18 = (this.f14892b + a10) / 2.0f;
-        this.f14895e = f18;
-        int i12 = this.f14894d;
+        this.f15498b = f14;
+        float a10 = a(f10, i11, f14, this.f15500d, this.f15503g);
+        this.f15502f = a10;
+        float f18 = (this.f15498b + a10) / 2.0f;
+        this.f15501e = f18;
+        int i12 = this.f15500d;
         if (i12 > 0 && a10 != f13) {
-            float f19 = (f13 - a10) * this.f14897g;
+            float f19 = (f13 - a10) * this.f15503g;
             float min = Math.min(Math.abs(f19), f18 * 0.1f * i12);
             if (f19 > 0.0f) {
-                this.f14895e -= min / this.f14894d;
-                this.f14896f += min / this.f14897g;
+                this.f15501e -= min / this.f15500d;
+                this.f15502f += min / this.f15503g;
                 return;
             }
-            this.f14895e += min / this.f14894d;
-            this.f14896f -= min / this.f14897g;
+            this.f15501e += min / this.f15500d;
+            this.f15502f -= min / this.f15503g;
         }
     }
 
     private float f() {
-        return (this.f14896f * this.f14897g) + (this.f14895e * this.f14894d) + (this.f14892b * this.f14893c);
+        return (this.f15502f * this.f15503g) + (this.f15501e * this.f15500d) + (this.f15498b * this.f15499c);
     }
 
     private boolean g() {
-        int i10 = this.f14897g;
-        if (i10 > 0 && this.f14893c > 0 && this.f14894d > 0) {
-            float f10 = this.f14896f;
-            float f11 = this.f14895e;
-            if (f10 <= f11 || f11 <= this.f14892b) {
+        int i10 = this.f15503g;
+        if (i10 > 0 && this.f15499c > 0 && this.f15500d > 0) {
+            float f10 = this.f15502f;
+            float f11 = this.f15501e;
+            if (f10 <= f11 || f11 <= this.f15498b) {
                 return false;
             }
             return true;
-        } else if (i10 > 0 && this.f14893c > 0 && this.f14896f <= this.f14892b) {
+        } else if (i10 > 0 && this.f15499c > 0 && this.f15502f <= this.f15498b) {
             return false;
         } else {
             return true;
@@ -150,10 +149,10 @@ final class a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int e() {
-        return this.f14893c + this.f14894d + this.f14897g;
+        return this.f15499c + this.f15500d + this.f15503g;
     }
 
     public String toString() {
-        return "Arrangement [priority=" + this.f14891a + ", smallCount=" + this.f14893c + ", smallSize=" + this.f14892b + ", mediumCount=" + this.f14894d + ", mediumSize=" + this.f14895e + ", largeCount=" + this.f14897g + ", largeSize=" + this.f14896f + ", cost=" + this.f14898h + "]";
+        return "Arrangement [priority=" + this.f15497a + ", smallCount=" + this.f15499c + ", smallSize=" + this.f15498b + ", mediumCount=" + this.f15500d + ", mediumSize=" + this.f15501e + ", largeCount=" + this.f15503g + ", largeSize=" + this.f15502f + ", cost=" + this.f15504h + "]";
     }
 }

@@ -1,8 +1,8 @@
 package ki;
 
-import java.io.File;
-import java.util.ArrayList;
+import java.util.Set;
+import java.util.zip.ZipFile;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface l {
-    Object[] a(Object obj, ArrayList arrayList, File file, ArrayList arrayList2);
+interface l {
+    void a(ZipFile zipFile, Set set);
 }

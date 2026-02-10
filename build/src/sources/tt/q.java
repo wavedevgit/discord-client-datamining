@@ -1,58 +1,77 @@
 package tt;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
+import kotlin.Result;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KClass;
+import kotlin.reflect.KType;
+import kotlinx.serialization.KSerializer;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class q implements st.c {
+final class q implements s1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f51100a;
+    private final Function2 f50055a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Class f51101b;
+    private final r f50056b;
 
-    private q(String str, Class cls) {
-        if (str != null) {
-            if (cls != null) {
-                this.f51100a = str;
-                this.f51101b = cls;
-                return;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a implements Function0 {
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            return new r1();
+        }
+    }
+
+    public q(Function2 compute) {
+        Intrinsics.checkNotNullParameter(compute, "compute");
+        this.f50055a = compute;
+        this.f50056b = new r();
+    }
+
+    @Override // tt.s1
+    public Object a(KClass key, List types) {
+        ConcurrentHashMap concurrentHashMap;
+        Object b10;
+        Intrinsics.checkNotNullParameter(key, "key");
+        Intrinsics.checkNotNullParameter(types, "types");
+        Object obj = this.f50056b.get(ns.a.b(key));
+        Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
+        e1 e1Var = (e1) obj;
+        Object obj2 = e1Var.f49982a.get();
+        if (obj2 == null) {
+            obj2 = e1Var.a(new a());
+        }
+        r1 r1Var = (r1) obj2;
+        List<KType> list = types;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+        for (KType kType : list) {
+            arrayList.add(new r0(kType));
+        }
+        concurrentHashMap = r1Var.f50061a;
+        Object obj3 = concurrentHashMap.get(arrayList);
+        if (obj3 == null) {
+            try {
+                Result.a aVar = Result.f31984e;
+                b10 = Result.b((KSerializer) this.f50055a.invoke(key, types));
+            } catch (Throwable th2) {
+                Result.a aVar2 = Result.f31984e;
+                b10 = Result.b(kotlin.c.a(th2));
             }
-            throw new NullPointerException("Missing type of attribute.");
-        }
-        throw new NullPointerException("Missing name of attribute key.");
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static q a(String str, Class cls) {
-        return new q(str, cls);
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj instanceof q) {
-            q qVar = (q) obj;
-            if (this.f51100a.equals(qVar.f51100a) && this.f51101b.equals(qVar.f51101b)) {
-                return true;
+            Result a10 = Result.a(b10);
+            Object putIfAbsent = concurrentHashMap.putIfAbsent(arrayList, a10);
+            if (putIfAbsent == null) {
+                obj3 = a10;
+            } else {
+                obj3 = putIfAbsent;
             }
         }
-        return false;
-    }
-
-    public int hashCode() {
-        return this.f51100a.hashCode();
-    }
-
-    @Override // st.c
-    public String name() {
-        return this.f51100a;
-    }
-
-    public String toString() {
-        return this.f51101b.getName() + "@" + this.f51100a;
-    }
-
-    @Override // st.c
-    public Class type() {
-        return this.f51101b;
+        Intrinsics.checkNotNullExpressionValue(obj3, "getOrPut(...)");
+        return ((Result) obj3).j();
     }
 }

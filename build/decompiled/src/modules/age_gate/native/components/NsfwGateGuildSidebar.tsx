@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/age_gate/native/components/NsfwGateGuildSidebar.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun103367: for (var _fun103367_ip = 0;;) switch (_fun103367_ip) {
+        _fun103419: for (var _fun103419_ip = 0;;) switch (_fun103419_ip) {
             case 0:
                 var1 = arg0;
                 var6 = var1.style;
@@ -128,22 +128,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[1] = var7;
                 var1[2] = var5;
                 var0 = function() { // Environment: var0
-                    _fun103369: for (var _fun103369_ip = 0;;) switch (_fun103369_ip) {
+                    _fun103421: for (var _fun103421_ip = 0;;) switch (_fun103421_ip) {
                         case 0:
                             var0 = _closure2_slot2;
                             var2 = null;
                             var0 = var2 != var0;
                             if (!var0) {
-                                _fun103369_ip = 24;
-                                continue _fun103369
+                                _fun103421_ip = 24;
+                                continue _fun103421
                             }
                         case 16:
                             var1 = _closure2_slot1;
                             var0 = var2 != var1;
                         case 24:
                             if (!var0) {
-                                _fun103369_ip = 184;
-                                continue _fun103369
+                                _fun103421_ip = 184;
+                                continue _fun103421
                             }
                         case 30:
                             var1 = _closure1_slot1;
@@ -168,8 +168,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.is_member = var6;
                             var5 = var5.nsfwAllowed;
                             if (!var5) {
-                                _fun103369_ip = 159;
-                                continue _fun103369
+                                _fun103421_ip = 159;
+                                continue _fun103421
                             }
                         case 129:
                             var7 = _closure1_slot0;
@@ -194,8 +194,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var7;
                 if (var1) {
-                    _fun103367_ip = 489;
-                    continue _fun103367
+                    _fun103419_ip = 489;
+                    continue _fun103419
                 }
             case 153:
                 var3 = _closure1_slot13;
@@ -279,4 +279,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1683, 1410, 1621, 9096, 660, 33, 1297, 671, 566, 795, 8000, 13326, 8402, 4682, 13494, 1234, 1686, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1683, 1410, 1621, 9107, 660, 33, 1297, 671, 566, 795, 8010, 13335, 8412, 4692, 13503, 1234, 1686, 2]);

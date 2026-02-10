@@ -8,6 +8,7 @@ import com.facebook.common.references.CloseableReference;
 import com.facebook.datasource.DataSource;
 import com.facebook.drawee.generic.GenericDraweeHierarchy;
 import com.facebook.imagepipeline.request.ImageRequest;
+import gs.b;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.c;
@@ -18,10 +19,9 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
-import ps.g;
-import ps.m0;
 import ta.d;
-import xr.b;
+import ys.g;
+import ys.m0;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.image.fresco.tiled.TiledDraweeController$load$1", f = "TiledDraweeController.kt", l = {84}, m = "invokeSuspend")
@@ -116,7 +116,7 @@ public final class TiledDraweeController$load$1 extends k implements Function2<C
             dVar = null;
         }
         if (dVar != null) {
-            bitmap = dVar.L1();
+            bitmap = dVar.Q1();
         } else {
             bitmap = null;
         }
@@ -139,11 +139,11 @@ public final class TiledDraweeController$load$1 extends k implements Function2<C
             genericDraweeHierarchy.e(bitmapDrawable, 1.0f, !z10);
         }
         dataSource.close();
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((TiledDraweeController$load$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
+        return ((TiledDraweeController$load$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
     }
 }

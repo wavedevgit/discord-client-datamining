@@ -28,10 +28,10 @@ public abstract class InquiryField implements Parcelable {
 
         @NotNull
         public final h.e createAdapter() {
-            an.b b10 = an.b.b(InquiryField.class, "type");
+            cn.b b10 = cn.b.b(InquiryField.class, "type");
             UnknownAdapter unknownAdapter = UnknownAdapter.INSTANCE;
             Intrinsics.checkNotNull(unknownAdapter, "null cannot be cast to non-null type com.squareup.moshi.JsonAdapter<kotlin.Any>");
-            an.b e10 = b10.d(unknownAdapter).e(StringField.class, StringField.TYPE).e(IntegerField.class, IntegerField.TYPE).e(BooleanField.class, BooleanField.TYPE).e(FloatField.class, FloatField.TYPE).e(FloatField.class, FloatField.TYPE2).e(DateField.class, DateField.TYPE).e(DatetimeField.class, DatetimeField.TYPE).e(ChoicesField.class, ChoicesField.TYPE).e(MultiChoicesField.class, MultiChoicesField.TYPE);
+            cn.b e10 = b10.d(unknownAdapter).e(StringField.class, StringField.TYPE).e(IntegerField.class, IntegerField.TYPE).e(BooleanField.class, BooleanField.TYPE).e(FloatField.class, FloatField.TYPE).e(FloatField.class, FloatField.TYPE2).e(DateField.class, DateField.TYPE).e(DatetimeField.class, DatetimeField.TYPE).e(ChoicesField.class, ChoicesField.TYPE).e(MultiChoicesField.class, MultiChoicesField.TYPE);
             Intrinsics.checkNotNullExpressionValue(e10, "withSubtype(...)");
             return e10;
         }
@@ -107,7 +107,7 @@ public abstract class InquiryField implements Parcelable {
             String str = "";
             while (reader.hasNext()) {
                 if (Intrinsics.areEqual(reader.o0(), "type")) {
-                    str = reader.b1();
+                    str = reader.g1();
                 } else {
                     reader.T();
                 }
@@ -119,9 +119,9 @@ public abstract class InquiryField implements Parcelable {
         @Override // com.squareup.moshi.h
         public void toJson(@NotNull t writer, InquiryField inquiryField) {
             Intrinsics.checkNotNullParameter(writer, "writer");
-            writer.k();
+            writer.i();
             writer.J("type");
-            writer.r1(inquiryField != null ? inquiryField.getType() : null);
+            writer.V0(inquiryField != null ? inquiryField.getType() : null);
             writer.s();
         }
     }

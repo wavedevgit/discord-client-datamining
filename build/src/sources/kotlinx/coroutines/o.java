@@ -1,24 +1,24 @@
 package kotlinx.coroutines;
 
-import ps.n0;
-import ps.z0;
+import ys.n0;
+import ys.z0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 final class o extends z0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private final n0 f34828p;
+    private final n0 f35050p;
 
     public o(n0 n0Var) {
-        this.f34828p = n0Var;
+        this.f35050p = n0Var;
     }
 
-    @Override // ps.z0
+    @Override // ys.z0
     public boolean v() {
         return false;
     }
 
-    @Override // ps.z0
+    @Override // ys.z0
     public void w(Throwable th2) {
-        this.f34828p.dispose();
+        this.f35050p.dispose();
     }
 }

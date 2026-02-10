@@ -238,13 +238,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = undefined;
                 var8 = var8.bind(var0)(var15);
                 if (var8) {
-                    _fun6405_ip = 486;
+                    _fun6405_ip = 487;
                     continue _fun6405
                 }
             case 198:
                 var8 = inf;
                 if (!(var15 !== var8)) {
-                    _fun6405_ip = 486;
+                    _fun6405_ip = 487;
                     continue _fun6405
                 }
             case 215:
@@ -266,55 +266,55 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var13 = var19;
                 var8 = var16;
                 if (!(var20 < var14)) {
-                    _fun6405_ip = 309;
+                    _fun6405_ip = 310;
                     continue _fun6405
                 }
-            case 302:
+            case 303:
                 var13 = var19 - 1;
                 var8 = var16 * var21;
-            case 309:
+            case 310:
                 var16 = var13 + var18;
                 if (!(!(var16 >= var14))) {
-                    _fun6405_ip = 345;
+                    _fun6405_ip = 346;
                     continue _fun6405
                 }
-            case 317:
+            case 318:
                 var20 = var9.Math;
                 var19 = var20.pow;
                 var16 = var14 - var18;
                 var16 = var19.bind(var20)(var21, var16);
                 var16 = var17 * var16;
-                _fun6405_ip = 349;
+                _fun6405_ip = 350;
                 continue _fun6405;
-            case 345:
+            case 346:
                 var16 = var17 / var8;
-            case 349:
+            case 350:
                 var19 = var15 + var16;
                 var20 = var19 * var8;
                 var17 = var13;
                 var16 = var8;
                 if (!(var20 >= var21)) {
-                    _fun6405_ip = 374;
+                    _fun6405_ip = 375;
                     continue _fun6405
                 }
-            case 367:
+            case 368:
                 var17 = var13 + 1;
                 var16 = var8 / var21;
-            case 374:
+            case 375:
                 var20 = var17 + var18;
                 var13 = 0;
                 var8 = var10;
                 if (!(!(var20 >= var8))) {
-                    _fun6405_ip = 511;
+                    _fun6405_ip = 512;
                     continue _fun6405
                 }
-            case 390:
+            case 391:
                 var20 = var17 + var18;
                 if (!(!(var20 >= var14))) {
-                    _fun6405_ip = 450;
+                    _fun6405_ip = 451;
                     continue _fun6405
                 }
-            case 398:
+            case 399:
                 var23 = var9.Math;
                 var22 = var23.pow;
                 var20 = var18 - var14;
@@ -325,9 +325,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var20 = var20.bind(var23)(var21, var6);
                 var13 = var22 * var20;
                 var8 = 0;
-                _fun6405_ip = 511;
+                _fun6405_ip = 512;
                 continue _fun6405;
-            case 450:
+            case 451:
                 var16 = var19 * var16;
                 var19 = var16 - var14;
                 var20 = var9.Math;
@@ -335,22 +335,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var16 = var16.bind(var20)(var21, var6);
                 var13 = var19 * var16;
                 var8 = var17 + var18;
-                _fun6405_ip = 511;
+                _fun6405_ip = 512;
                 continue _fun6405;
-            case 486:
+            case 487:
                 var9 = var9.isNaN;
                 var15 = var9.bind(var0)(var15);
                 var9 = 0;
                 if (!var15) {
-                    _fun6405_ip = 505;
+                    _fun6405_ip = 506;
                     continue _fun6405
                 }
-            case 502:
+            case 503:
                 var9 = var14;
-            case 505:
+            case 506:
                 var13 = var9;
                 var8 = var10;
-            case 511:
+            case 512:
                 var10 = 255;
                 var9 = 256;
                 var15 = var13;
@@ -360,10 +360,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var14;
                 var6 = var16;
                 if (!(var6 >= var12)) {
-                    _fun6405_ip = 579;
+                    _fun6405_ip = 580;
                     continue _fun6405
                 }
-            case 542:
+            case 543:
                 var18 = var4 + var14;
                 var17 = var10 & var15;
                 var3[var18] = var17;
@@ -374,20 +374,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var14;
                 var6 = var16;
                 if (var6 >= var12) {
-                    _fun6405_ip = 542;
+                    _fun6405_ip = 543;
                     continue _fun6405
                 }
-            case 579:
+            case 580:
                 var8 = var8 << var6;
                 var8 = var8 | var13;
                 var7 = var7 + var6;
                 var6 = var1;
                 var1 = var6;
                 if (!(var7 > var11)) {
-                    _fun6405_ip = 632;
+                    _fun6405_ip = 633;
                     continue _fun6405
                 }
-            case 601:
+            case 602:
                 var14 = var4 + var6;
                 var13 = var10 & var8;
                 var3[var14] = var13;
@@ -396,10 +396,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var7 - var12;
                 var1 = var6;
                 if (var7 > var11) {
-                    _fun6405_ip = 601;
+                    _fun6405_ip = 602;
                     continue _fun6405
                 }
-            case 632:
+            case 633:
                 var1 = var4 + var1;
                 var2 = var1 - var2;
                 var4 = var3[var2];

@@ -11,32 +11,32 @@ import java.util.HashMap;
 class p extends q {
 
     /* renamed from: i  reason: collision with root package name */
-    String f17130i;
+    String f17879i;
 
     /* renamed from: o  reason: collision with root package name */
-    SVGLength f17131o;
+    SVGLength f17880o;
 
     /* renamed from: p  reason: collision with root package name */
-    SVGLength f17132p;
+    SVGLength f17881p;
 
     public p(ReactContext reactContext) {
         super(reactContext);
     }
 
     @Override // com.horcrux.svg.q
-    public Bitmap c(HashMap hashMap, Bitmap bitmap) {
+    public Bitmap d(HashMap hashMap, Bitmap bitmap) {
         float f10;
         float f11;
-        Bitmap e10 = q.e(hashMap, bitmap, this.f17130i);
+        Bitmap f12 = q.f(hashMap, bitmap, this.f17879i);
         Bitmap createBitmap = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(createBitmap);
-        SVGLength sVGLength = this.f17131o;
+        SVGLength sVGLength = this.f17880o;
         if (sVGLength != null) {
             f10 = (float) relativeOnWidth(sVGLength);
         } else {
             f10 = 0.0f;
         }
-        SVGLength sVGLength2 = this.f17132p;
+        SVGLength sVGLength2 = this.f17881p;
         if (sVGLength2 != null) {
             f11 = (float) relativeOnHeight(sVGLength2);
         } else {
@@ -44,30 +44,30 @@ class p extends q {
         }
         RectF rectF = new RectF(0.0f, 0.0f, f10, f11);
         getSvgView().getCtm().mapRect(rectF);
-        float f12 = rectF.left;
-        if (f12 >= 0.0f) {
-            f12 = rectF.width();
-        }
-        float f13 = rectF.top;
+        float f13 = rectF.left;
         if (f13 >= 0.0f) {
-            f13 = rectF.height();
+            f13 = rectF.width();
         }
-        canvas.drawBitmap(e10, f12, f13, (Paint) null);
+        float f14 = rectF.top;
+        if (f14 >= 0.0f) {
+            f14 = rectF.height();
+        }
+        canvas.drawBitmap(f12, f13, f14, (Paint) null);
         return createBitmap;
     }
 
-    public void k(Dynamic dynamic) {
-        this.f17131o = SVGLength.b(dynamic);
-        invalidate();
-    }
-
     public void l(Dynamic dynamic) {
-        this.f17132p = SVGLength.b(dynamic);
+        this.f17880o = SVGLength.b(dynamic);
         invalidate();
     }
 
-    public void m(String str) {
-        this.f17130i = str;
+    public void m(Dynamic dynamic) {
+        this.f17881p = SVGLength.b(dynamic);
+        invalidate();
+    }
+
+    public void n(String str) {
+        this.f17879i = str;
         invalidate();
     }
 }

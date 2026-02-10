@@ -26,37 +26,37 @@ import java.util.concurrent.TimeUnit;
 public class AnrV2Integration implements io.sentry.k1, Closeable {
 
     /* renamed from: o  reason: collision with root package name */
-    static final long f27156o = TimeUnit.DAYS.toMillis(91);
+    static final long f28091o = TimeUnit.DAYS.toMillis(91);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f27157d;
+    private final Context f28092d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final io.sentry.transport.p f27158e;
+    private final io.sentry.transport.p f28093e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SentryAndroidOptions f27159i;
+    private SentryAndroidOptions f28094i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Context f27160d;
+        private final Context f28095d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final io.sentry.w0 f27161e;
+        private final io.sentry.w0 f28096e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final SentryAndroidOptions f27162i;
+        private final SentryAndroidOptions f28097i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final long f27163o;
+        private final long f28098o;
 
         a(Context context, io.sentry.w0 w0Var, SentryAndroidOptions sentryAndroidOptions, io.sentry.transport.p pVar) {
-            this.f27160d = context;
-            this.f27161e = w0Var;
-            this.f27162i = sentryAndroidOptions;
-            this.f27163o = pVar.a() - AnrV2Integration.f27156o;
+            this.f28095d = context;
+            this.f28096e = w0Var;
+            this.f28097i = sentryAndroidOptions;
+            this.f28098o = pVar.a() - AnrV2Integration.f28091o;
         }
 
         private byte[] a(InputStream inputStream) {
@@ -99,7 +99,7 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
                 try {
                     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(a10)));
                     io.sentry.android.core.internal.threaddump.b c10 = io.sentry.android.core.internal.threaddump.b.c(bufferedReader);
-                    io.sentry.android.core.internal.threaddump.c cVar2 = new io.sentry.android.core.internal.threaddump.c(this.f27162i, z10);
+                    io.sentry.android.core.internal.threaddump.c cVar2 = new io.sentry.android.core.internal.threaddump.c(this.f28097i, z10);
                     cVar2.i(c10);
                     List f10 = cVar2.f();
                     List c11 = cVar2.c();
@@ -112,11 +112,11 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
                     bufferedReader.close();
                     return cVar4;
                 } catch (Throwable th2) {
-                    this.f27162i.getLogger().b(SentryLevel.WARNING, "Failed to parse ANR thread dump", th2);
+                    this.f28097i.getLogger().b(SentryLevel.WARNING, "Failed to parse ANR thread dump", th2);
                     return new c(c.a.ERROR, a10);
                 }
             } catch (Throwable th3) {
-                this.f27162i.getLogger().b(SentryLevel.WARNING, "Failed to read ANR thread dump", th3);
+                this.f28097i.getLogger().b(SentryLevel.WARNING, "Failed to read ANR thread dump", th3);
                 return new c(c.a.NO_DUMP);
             }
         }
@@ -132,33 +132,33 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
             }
             boolean z12 = z11;
             c b10 = b(applicationExitInfo, z12);
-            if (b10.f27167a == c.a.NO_DUMP) {
-                this.f27162i.getLogger().c(SentryLevel.WARNING, "Not reporting ANR event as there was no thread dump for the ANR %s", applicationExitInfo.toString());
+            if (b10.f28102a == c.a.NO_DUMP) {
+                this.f28097i.getLogger().c(SentryLevel.WARNING, "Not reporting ANR event as there was no thread dump for the ANR %s", applicationExitInfo.toString());
                 return;
             }
-            b bVar = new b(this.f27162i.getFlushTimeoutMillis(), this.f27162i.getLogger(), timestamp, z10, z12);
+            b bVar = new b(this.f28097i.getFlushTimeoutMillis(), this.f28097i.getLogger(), timestamp, z10, z12);
             Hint e10 = io.sentry.util.n.e(bVar);
             SentryEvent sentryEvent = new SentryEvent();
-            c.a aVar = b10.f27167a;
+            c.a aVar = b10.f28102a;
             if (aVar == c.a.ERROR) {
                 io.sentry.protocol.m mVar = new io.sentry.protocol.m();
                 mVar.f("Sentry Android SDK failed to parse system thread dump for this ANR. We recommend enabling [SentryOptions.isAttachAnrThreadDump] option to attach the thread dump as plain text and report this issue on GitHub.");
                 sentryEvent.F0(mVar);
             } else if (aVar == c.a.DUMP) {
-                sentryEvent.H0(b10.f27169c);
-                if (b10.f27170d != null) {
+                sentryEvent.H0(b10.f28104c);
+                if (b10.f28105d != null) {
                     io.sentry.protocol.d dVar = new io.sentry.protocol.d();
-                    dVar.e(b10.f27170d);
+                    dVar.e(b10.f28105d);
                     sentryEvent.U(dVar);
                 }
             }
             sentryEvent.E0(SentryLevel.FATAL);
             sentryEvent.I0(io.sentry.k.e(timestamp));
-            if (this.f27162i.isAttachAnrThreadDump() && (bArr = b10.f27168b) != null) {
+            if (this.f28097i.isAttachAnrThreadDump() && (bArr = b10.f28103b) != null) {
                 e10.n(io.sentry.b.b(bArr));
             }
-            if (!this.f27161e.x(sentryEvent, e10).equals(io.sentry.protocol.x.f28863e) && !bVar.g()) {
-                this.f27162i.getLogger().c(SentryLevel.WARNING, "Timed out waiting to flush ANR event to disk. Event: %s", sentryEvent.G());
+            if (!this.f28096e.y(sentryEvent, e10).equals(io.sentry.protocol.x.f29798e) && !bVar.g()) {
+                this.f28097i.getLogger().c(SentryLevel.WARNING, "Timed out waiting to flush ANR event to disk. Event: %s", sentryEvent.G());
             }
         }
 
@@ -167,10 +167,10 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
             for (Object obj : list) {
                 ApplicationExitInfo a10 = q4.e.a(obj);
                 if (a10.getReason() == 6) {
-                    if (a10.getTimestamp() < this.f27163o) {
-                        this.f27162i.getLogger().c(SentryLevel.DEBUG, "ANR happened too long ago %s.", a10);
+                    if (a10.getTimestamp() < this.f28098o) {
+                        this.f28097i.getLogger().c(SentryLevel.DEBUG, "ANR happened too long ago %s.", a10);
                     } else if (l10 != null && a10.getTimestamp() <= l10.longValue()) {
-                        this.f27162i.getLogger().c(SentryLevel.DEBUG, "ANR has already been reported %s.", a10);
+                        this.f28097i.getLogger().c(SentryLevel.DEBUG, "ANR has already been reported %s.", a10);
                     } else {
                         c(a10, false);
                     }
@@ -181,21 +181,21 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
         @Override // java.lang.Runnable
         public void run() {
             ApplicationExitInfo applicationExitInfo = null;
-            List<ApplicationExitInfo> historicalProcessExitReasons = ((ActivityManager) this.f27160d.getSystemService("activity")).getHistoricalProcessExitReasons(null, 0, 0);
+            List<ApplicationExitInfo> historicalProcessExitReasons = ((ActivityManager) this.f28095d.getSystemService("activity")).getHistoricalProcessExitReasons(null, 0, 0);
             if (historicalProcessExitReasons.size() == 0) {
-                this.f27162i.getLogger().c(SentryLevel.DEBUG, "No records in historical exit reasons.", new Object[0]);
+                this.f28097i.getLogger().c(SentryLevel.DEBUG, "No records in historical exit reasons.", new Object[0]);
                 return;
             }
-            io.sentry.cache.g envelopeDiskCache = this.f27162i.getEnvelopeDiskCache();
-            if ((envelopeDiskCache instanceof io.sentry.cache.f) && this.f27162i.isEnableAutoSessionTracking()) {
+            io.sentry.cache.g envelopeDiskCache = this.f28097i.getEnvelopeDiskCache();
+            if ((envelopeDiskCache instanceof io.sentry.cache.f) && this.f28097i.isEnableAutoSessionTracking()) {
                 io.sentry.cache.f fVar = (io.sentry.cache.f) envelopeDiskCache;
                 if (!fVar.F()) {
-                    this.f27162i.getLogger().c(SentryLevel.WARNING, "Timed out waiting to flush previous session to its own file.", new Object[0]);
+                    this.f28097i.getLogger().c(SentryLevel.WARNING, "Timed out waiting to flush previous session to its own file.", new Object[0]);
                     fVar.v();
                 }
             }
             List arrayList = new ArrayList(historicalProcessExitReasons);
-            Long P = io.sentry.android.core.cache.d.P(this.f27162i);
+            Long P = io.sentry.android.core.cache.d.P(this.f28097i);
             Iterator it = arrayList.iterator();
             while (true) {
                 if (!it.hasNext()) {
@@ -209,13 +209,13 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
                 }
             }
             if (applicationExitInfo == null) {
-                this.f27162i.getLogger().c(SentryLevel.DEBUG, "No ANRs have been found in the historical exit reasons list.", new Object[0]);
-            } else if (applicationExitInfo.getTimestamp() < this.f27163o) {
-                this.f27162i.getLogger().c(SentryLevel.DEBUG, "Latest ANR happened too long ago, returning early.", new Object[0]);
+                this.f28097i.getLogger().c(SentryLevel.DEBUG, "No ANRs have been found in the historical exit reasons list.", new Object[0]);
+            } else if (applicationExitInfo.getTimestamp() < this.f28098o) {
+                this.f28097i.getLogger().c(SentryLevel.DEBUG, "Latest ANR happened too long ago, returning early.", new Object[0]);
             } else if (P != null && applicationExitInfo.getTimestamp() <= P.longValue()) {
-                this.f27162i.getLogger().c(SentryLevel.DEBUG, "Latest ANR has already been reported, returning early.", new Object[0]);
+                this.f28097i.getLogger().c(SentryLevel.DEBUG, "Latest ANR has already been reported, returning early.", new Object[0]);
             } else {
-                if (this.f27162i.isReportHistoricalAnrs()) {
+                if (this.f28097i.isReportHistoricalAnrs()) {
                     d(arrayList, P);
                 }
                 c(applicationExitInfo, true);
@@ -227,24 +227,24 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
     public static final class b extends io.sentry.hints.d implements io.sentry.hints.c, io.sentry.hints.a {
 
         /* renamed from: d  reason: collision with root package name */
-        private final long f27164d;
+        private final long f28099d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f27165e;
+        private final boolean f28100e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final boolean f27166f;
+        private final boolean f28101f;
 
         public b(long j10, ILogger iLogger, long j11, boolean z10, boolean z11) {
             super(j10, iLogger);
-            this.f27164d = j11;
-            this.f27165e = z10;
-            this.f27166f = z11;
+            this.f28099d = j11;
+            this.f28100e = z10;
+            this.f28101f = z11;
         }
 
         @Override // io.sentry.hints.c
         public boolean a() {
-            return this.f27165e;
+            return this.f28100e;
         }
 
         @Override // io.sentry.hints.f
@@ -258,7 +258,7 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
 
         @Override // io.sentry.hints.a
         public Long e() {
-            return Long.valueOf(this.f27164d);
+            return Long.valueOf(this.f28099d);
         }
 
         @Override // io.sentry.hints.a
@@ -268,7 +268,7 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
 
         @Override // io.sentry.hints.a
         public String h() {
-            if (this.f27166f) {
+            if (this.f28101f) {
                 return "anr_background";
             }
             return "anr_foreground";
@@ -281,14 +281,14 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        SentryAndroidOptions sentryAndroidOptions = this.f27159i;
+        SentryAndroidOptions sentryAndroidOptions = this.f28094i;
         if (sentryAndroidOptions != null) {
             sentryAndroidOptions.getLogger().c(SentryLevel.DEBUG, "AnrV2Integration removed.", new Object[0]);
         }
     }
 
     @Override // io.sentry.k1
-    public void g(io.sentry.w0 w0Var, k7 k7Var) {
+    public void h(io.sentry.w0 w0Var, k7 k7Var) {
         SentryAndroidOptions sentryAndroidOptions;
         if (k7Var instanceof SentryAndroidOptions) {
             sentryAndroidOptions = (SentryAndroidOptions) k7Var;
@@ -296,13 +296,13 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
             sentryAndroidOptions = null;
         }
         SentryAndroidOptions sentryAndroidOptions2 = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
-        this.f27159i = sentryAndroidOptions2;
-        sentryAndroidOptions2.getLogger().c(SentryLevel.DEBUG, "AnrIntegration enabled: %s", Boolean.valueOf(this.f27159i.isAnrEnabled()));
-        if (this.f27159i.getCacheDirPath() == null) {
-            this.f27159i.getLogger().c(SentryLevel.INFO, "Cache dir is not set, unable to process ANRs", new Object[0]);
-        } else if (this.f27159i.isAnrEnabled()) {
+        this.f28094i = sentryAndroidOptions2;
+        sentryAndroidOptions2.getLogger().c(SentryLevel.DEBUG, "AnrIntegration enabled: %s", Boolean.valueOf(this.f28094i.isAnrEnabled()));
+        if (this.f28094i.getCacheDirPath() == null) {
+            this.f28094i.getLogger().c(SentryLevel.INFO, "Cache dir is not set, unable to process ANRs", new Object[0]);
+        } else if (this.f28094i.isAnrEnabled()) {
             try {
-                k7Var.getExecutorService().submit(new a(this.f27157d, w0Var, this.f27159i, this.f27158e));
+                k7Var.getExecutorService().submit(new a(this.f28092d, w0Var, this.f28094i, this.f28093e));
             } catch (Throwable th2) {
                 k7Var.getLogger().b(SentryLevel.DEBUG, "Failed to start AnrProcessor.", th2);
             }
@@ -312,8 +312,8 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
     }
 
     AnrV2Integration(Context context, io.sentry.transport.p pVar) {
-        this.f27157d = e1.g(context);
-        this.f27158e = pVar;
+        this.f28092d = e1.g(context);
+        this.f28093e = pVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -321,16 +321,16 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        final a f27167a;
+        final a f28102a;
 
         /* renamed from: b  reason: collision with root package name */
-        final byte[] f27168b;
+        final byte[] f28103b;
 
         /* renamed from: c  reason: collision with root package name */
-        final List f27169c;
+        final List f28104c;
 
         /* renamed from: d  reason: collision with root package name */
-        final List f27170d;
+        final List f28105d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -341,24 +341,24 @@ public class AnrV2Integration implements io.sentry.k1, Closeable {
         }
 
         c(a aVar) {
-            this.f27167a = aVar;
-            this.f27168b = null;
-            this.f27169c = null;
-            this.f27170d = null;
+            this.f28102a = aVar;
+            this.f28103b = null;
+            this.f28104c = null;
+            this.f28105d = null;
         }
 
         c(a aVar, byte[] bArr) {
-            this.f27167a = aVar;
-            this.f27168b = bArr;
-            this.f27169c = null;
-            this.f27170d = null;
+            this.f28102a = aVar;
+            this.f28103b = bArr;
+            this.f28104c = null;
+            this.f28105d = null;
         }
 
         c(a aVar, byte[] bArr, List list, List list2) {
-            this.f27167a = aVar;
-            this.f27168b = bArr;
-            this.f27169c = list;
-            this.f27170d = list2;
+            this.f28102a = aVar;
+            this.f28103b = bArr;
+            this.f28104c = list;
+            this.f28105d = list2;
         }
     }
 }

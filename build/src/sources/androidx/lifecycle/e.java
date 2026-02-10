@@ -6,16 +6,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e implements m {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DefaultLifecycleObserver f4629d;
+    private final DefaultLifecycleObserver f4639d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final m f4630e;
+    private final m f4640e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f4631a;
+        public static final /* synthetic */ int[] f4641a;
 
         static {
             int[] iArr = new int[Lifecycle.a.values().length];
@@ -47,47 +47,47 @@ public final class e implements m {
                 iArr[Lifecycle.a.ON_ANY.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
-            f4631a = iArr;
+            f4641a = iArr;
         }
     }
 
     public e(DefaultLifecycleObserver defaultLifecycleObserver, m mVar) {
         Intrinsics.checkNotNullParameter(defaultLifecycleObserver, "defaultLifecycleObserver");
-        this.f4629d = defaultLifecycleObserver;
-        this.f4630e = mVar;
+        this.f4639d = defaultLifecycleObserver;
+        this.f4640e = mVar;
     }
 
     @Override // androidx.lifecycle.m
-    public void k(LifecycleOwner source, Lifecycle.a event) {
+    public void i(LifecycleOwner source, Lifecycle.a event) {
         Intrinsics.checkNotNullParameter(source, "source");
         Intrinsics.checkNotNullParameter(event, "event");
-        switch (a.f4631a[event.ordinal()]) {
+        switch (a.f4641a[event.ordinal()]) {
             case 1:
-                this.f4629d.onCreate(source);
+                this.f4639d.onCreate(source);
                 break;
             case 2:
-                this.f4629d.onStart(source);
+                this.f4639d.onStart(source);
                 break;
             case 3:
-                this.f4629d.onResume(source);
+                this.f4639d.onResume(source);
                 break;
             case 4:
-                this.f4629d.onPause(source);
+                this.f4639d.onPause(source);
                 break;
             case 5:
-                this.f4629d.onStop(source);
+                this.f4639d.onStop(source);
                 break;
             case 6:
-                this.f4629d.onDestroy(source);
+                this.f4639d.onDestroy(source);
                 break;
             case 7:
                 throw new IllegalArgumentException("ON_ANY must not been send by anybody");
             default:
-                throw new rr.p();
+                throw new as.p();
         }
-        m mVar = this.f4630e;
+        m mVar = this.f4640e;
         if (mVar != null) {
-            mVar.k(source, event);
+            mVar.i(source, event);
         }
     }
 }

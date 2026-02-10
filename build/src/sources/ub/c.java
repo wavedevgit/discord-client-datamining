@@ -25,7 +25,7 @@ public abstract class c {
 
     /* renamed from: ub.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface InterfaceC0713c {
+    public interface InterfaceC0695c {
     }
 
     public static d a() {

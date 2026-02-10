@@ -2,6 +2,7 @@ package com.withpersona.sdk2.inquiry.ui.network;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import as.p;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.z;
@@ -11,7 +12,6 @@ import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import rr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class ComponentParam implements Parcelable {
 
@@ -20,33 +20,33 @@ public abstract class ComponentParam implements Parcelable {
     public static final class Adapter extends com.squareup.moshi.h {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final Adapter f19915a = new Adapter();
+        public static final Adapter f20795a = new Adapter();
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public /* synthetic */ class a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f19916a;
+            public static final /* synthetic */ int[] f20796a;
 
             static {
-                int[] iArr = new int[hp.a.values().length];
+                int[] iArr = new int[qp.a.values().length];
                 try {
-                    iArr[hp.a.f26387d.ordinal()] = 1;
+                    iArr[qp.a.f45528d.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[hp.a.f26388e.ordinal()] = 2;
+                    iArr[qp.a.f45529e.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
                 try {
-                    iArr[hp.a.f26389i.ordinal()] = 3;
+                    iArr[qp.a.f45530i.ordinal()] = 3;
                 } catch (NoSuchFieldError unused3) {
                 }
                 try {
-                    iArr[hp.a.f26390o.ordinal()] = 4;
+                    iArr[qp.a.f45531o.ordinal()] = 4;
                 } catch (NoSuchFieldError unused4) {
                 }
-                f19916a = iArr;
+                f20796a = iArr;
             }
         }
 
@@ -66,55 +66,55 @@ public abstract class ComponentParam implements Parcelable {
             String str;
             Intrinsics.checkNotNullParameter(writer, "writer");
             if (componentParam instanceof d) {
-                writer.r1(((d) componentParam).a());
+                writer.V0(((d) componentParam).a());
             } else if (componentParam instanceof e) {
                 writer.a();
                 for (String str2 : ((e) componentParam).a()) {
-                    writer.r1(str2);
+                    writer.V0(str2);
                 }
                 writer.n();
             } else if (componentParam instanceof a) {
-                writer.k();
+                writer.i();
                 a aVar = (a) componentParam;
                 String c10 = aVar.c();
                 if (c10 != null) {
                     writer.J("street_1");
-                    writer.r1(c10);
+                    writer.V0(c10);
                 }
                 String d10 = aVar.d();
                 if (d10 != null) {
                     writer.J("street_2");
-                    writer.r1(d10);
+                    writer.V0(d10);
                 }
                 String a10 = aVar.a();
                 if (a10 != null) {
                     writer.J("city");
-                    writer.r1(a10);
+                    writer.V0(a10);
                 }
                 String e10 = aVar.e();
                 if (e10 != null) {
                     writer.J("subdivision");
-                    writer.r1(e10);
+                    writer.V0(e10);
                 }
                 String b10 = aVar.b();
                 if (b10 != null) {
                     writer.J("postal_code");
-                    writer.r1(b10);
+                    writer.V0(b10);
                 }
                 writer.s();
             } else if (componentParam instanceof b) {
-                writer.s1(((b) componentParam).a());
+                writer.Z0(((b) componentParam).a());
             } else if (componentParam instanceof c) {
-                writer.r1(new BigDecimal(((c) componentParam).a().doubleValue()).toPlainString());
+                writer.V0(new BigDecimal(((c) componentParam).a().doubleValue()).toPlainString());
             } else if (componentParam instanceof f) {
-                writer.r1(((f) componentParam).a());
+                writer.V0(((f) componentParam).a());
             } else if (componentParam instanceof g) {
-                writer.k();
+                writer.i();
                 g gVar = (g) componentParam;
-                hp.a a11 = gVar.a();
+                qp.a a11 = gVar.a();
                 if (a11 != null) {
                     writer.J("caFlag");
-                    int i10 = a.f19916a[a11.ordinal()];
+                    int i10 = a.f20796a[a11.ordinal()];
                     if (i10 == 1) {
                         str = "notRequested";
                     } else if (i10 == 2) {
@@ -126,46 +126,46 @@ public abstract class ComponentParam implements Parcelable {
                     } else {
                         throw new p();
                     }
-                    writer.r1(str);
+                    writer.V0(str);
                 }
                 String b11 = gVar.b();
                 if (b11 != null) {
                     writer.J("dg1");
-                    writer.r1(b11);
+                    writer.V0(b11);
                 }
                 String c11 = gVar.c();
                 if (c11 != null) {
                     writer.J("dg2");
-                    writer.r1(c11);
+                    writer.V0(c11);
                 }
                 String d11 = gVar.d();
                 if (d11 != null) {
                     writer.J("sod");
-                    writer.r1(d11);
+                    writer.V0(d11);
                 }
                 writer.s();
             } else if (componentParam instanceof h) {
-                writer.k();
+                writer.i();
                 h hVar = (h) componentParam;
                 String a12 = hVar.a();
                 if (a12 != null) {
                     writer.J("idb_country");
-                    writer.r1(a12);
+                    writer.V0(a12);
                 }
                 String b12 = hVar.b();
                 if (b12 != null) {
                     writer.J("idb_type");
-                    writer.r1(b12);
+                    writer.V0(b12);
                 }
                 String c12 = hVar.c();
                 if (c12 != null) {
                     writer.J("idb_value");
-                    writer.r1(c12);
+                    writer.V0(c12);
                 }
                 writer.s();
             } else {
                 if (componentParam == null) {
-                    Unit unit = Unit.f31765a;
+                    Unit unit = Unit.f31987a;
                     return;
                 }
                 throw new p();
@@ -176,26 +176,26 @@ public abstract class ComponentParam implements Parcelable {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends ComponentParam {
         @NotNull
-        public static final Parcelable.Creator<a> CREATOR = new C0283a();
+        public static final Parcelable.Creator<a> CREATOR = new C0268a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f19917d;
+        private final String f20797d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f19918e;
+        private final String f20798e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f19919i;
+        private final String f20799i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final String f19920o;
+        private final String f20800o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final String f19921p;
+        private final String f20801p;
 
         /* renamed from: com.withpersona.sdk2.inquiry.ui.network.ComponentParam$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0283a implements Parcelable.Creator {
+        public static final class C0268a implements Parcelable.Creator {
             @Override // android.os.Parcelable.Creator
             /* renamed from: a */
             public final a createFromParcel(Parcel parcel) {
@@ -212,27 +212,27 @@ public abstract class ComponentParam implements Parcelable {
 
         public a(String str, String str2, String str3, String str4, String str5) {
             super(null);
-            this.f19917d = str;
-            this.f19918e = str2;
-            this.f19919i = str3;
-            this.f19920o = str4;
-            this.f19921p = str5;
+            this.f20797d = str;
+            this.f20798e = str2;
+            this.f20799i = str3;
+            this.f20800o = str4;
+            this.f20801p = str5;
         }
 
         public final String a() {
-            return this.f19919i;
+            return this.f20799i;
         }
 
         public final String b() {
-            return this.f19921p;
+            return this.f20801p;
         }
 
         public final String c() {
-            return this.f19917d;
+            return this.f20797d;
         }
 
         public final String d() {
-            return this.f19918e;
+            return this.f20798e;
         }
 
         @Override // android.os.Parcelable
@@ -241,17 +241,17 @@ public abstract class ComponentParam implements Parcelable {
         }
 
         public final String e() {
-            return this.f19920o;
+            return this.f20800o;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f19917d);
-            dest.writeString(this.f19918e);
-            dest.writeString(this.f19919i);
-            dest.writeString(this.f19920o);
-            dest.writeString(this.f19921p);
+            dest.writeString(this.f20797d);
+            dest.writeString(this.f20798e);
+            dest.writeString(this.f20799i);
+            dest.writeString(this.f20800o);
+            dest.writeString(this.f20801p);
         }
     }
 
@@ -261,7 +261,7 @@ public abstract class ComponentParam implements Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f19922d;
+        private final boolean f20802d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -281,11 +281,11 @@ public abstract class ComponentParam implements Parcelable {
 
         public b(boolean z10) {
             super(null);
-            this.f19922d = z10;
+            this.f20802d = z10;
         }
 
         public final boolean a() {
-            return this.f19922d;
+            return this.f20802d;
         }
 
         @Override // android.os.Parcelable
@@ -296,7 +296,7 @@ public abstract class ComponentParam implements Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeInt(this.f19922d ? 1 : 0);
+            dest.writeInt(this.f20802d ? 1 : 0);
         }
     }
 
@@ -306,7 +306,7 @@ public abstract class ComponentParam implements Parcelable {
         public static final Parcelable.Creator<c> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final Number f19923d;
+        private final Number f20803d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -328,11 +328,11 @@ public abstract class ComponentParam implements Parcelable {
         public c(Number value) {
             super(null);
             Intrinsics.checkNotNullParameter(value, "value");
-            this.f19923d = value;
+            this.f20803d = value;
         }
 
         public final Number a() {
-            return this.f19923d;
+            return this.f20803d;
         }
 
         @Override // android.os.Parcelable
@@ -343,7 +343,7 @@ public abstract class ComponentParam implements Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeSerializable(this.f19923d);
+            dest.writeSerializable(this.f20803d);
         }
     }
 
@@ -353,7 +353,7 @@ public abstract class ComponentParam implements Parcelable {
         public static final Parcelable.Creator<d> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f19924d;
+        private final String f20804d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -375,11 +375,11 @@ public abstract class ComponentParam implements Parcelable {
         public d(String value) {
             super(null);
             Intrinsics.checkNotNullParameter(value, "value");
-            this.f19924d = value;
+            this.f20804d = value;
         }
 
         public final String a() {
-            return this.f19924d;
+            return this.f20804d;
         }
 
         @Override // android.os.Parcelable
@@ -390,7 +390,7 @@ public abstract class ComponentParam implements Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f19924d);
+            dest.writeString(this.f20804d);
         }
     }
 
@@ -400,7 +400,7 @@ public abstract class ComponentParam implements Parcelable {
         public static final Parcelable.Creator<e> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f19925d;
+        private final List f20805d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -422,11 +422,11 @@ public abstract class ComponentParam implements Parcelable {
         public e(List value) {
             super(null);
             Intrinsics.checkNotNullParameter(value, "value");
-            this.f19925d = value;
+            this.f20805d = value;
         }
 
         public final List a() {
-            return this.f19925d;
+            return this.f20805d;
         }
 
         @Override // android.os.Parcelable
@@ -437,7 +437,7 @@ public abstract class ComponentParam implements Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeStringList(this.f19925d);
+            dest.writeStringList(this.f20805d);
         }
     }
 
@@ -447,7 +447,7 @@ public abstract class ComponentParam implements Parcelable {
         public static final Parcelable.Creator<f> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f19926d;
+        private final String f20806d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -467,11 +467,11 @@ public abstract class ComponentParam implements Parcelable {
 
         public f(String str) {
             super(null);
-            this.f19926d = str;
+            this.f20806d = str;
         }
 
         public final String a() {
-            return this.f19926d;
+            return this.f20806d;
         }
 
         @Override // android.os.Parcelable
@@ -482,7 +482,7 @@ public abstract class ComponentParam implements Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f19926d);
+            dest.writeString(this.f20806d);
         }
     }
 
@@ -492,16 +492,16 @@ public abstract class ComponentParam implements Parcelable {
         public static final Parcelable.Creator<g> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f19927d;
+        private final String f20807d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f19928e;
+        private final String f20808e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f19929i;
+        private final String f20809i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final hp.a f19930o;
+        private final qp.a f20810o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -509,7 +509,7 @@ public abstract class ComponentParam implements Parcelable {
             /* renamed from: a */
             public final g createFromParcel(Parcel parcel) {
                 Intrinsics.checkNotNullParameter(parcel, "parcel");
-                return new g(parcel.readString(), parcel.readString(), parcel.readString(), parcel.readInt() == 0 ? null : hp.a.valueOf(parcel.readString()));
+                return new g(parcel.readString(), parcel.readString(), parcel.readString(), parcel.readInt() == 0 ? null : qp.a.valueOf(parcel.readString()));
             }
 
             @Override // android.os.Parcelable.Creator
@@ -519,28 +519,28 @@ public abstract class ComponentParam implements Parcelable {
             }
         }
 
-        public g(String str, String str2, String str3, hp.a aVar) {
+        public g(String str, String str2, String str3, qp.a aVar) {
             super(null);
-            this.f19927d = str;
-            this.f19928e = str2;
-            this.f19929i = str3;
-            this.f19930o = aVar;
+            this.f20807d = str;
+            this.f20808e = str2;
+            this.f20809i = str3;
+            this.f20810o = aVar;
         }
 
-        public final hp.a a() {
-            return this.f19930o;
+        public final qp.a a() {
+            return this.f20810o;
         }
 
         public final String b() {
-            return this.f19927d;
+            return this.f20807d;
         }
 
         public final String c() {
-            return this.f19928e;
+            return this.f20808e;
         }
 
         public final String d() {
-            return this.f19929i;
+            return this.f20809i;
         }
 
         @Override // android.os.Parcelable
@@ -551,10 +551,10 @@ public abstract class ComponentParam implements Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f19927d);
-            dest.writeString(this.f19928e);
-            dest.writeString(this.f19929i);
-            hp.a aVar = this.f19930o;
+            dest.writeString(this.f20807d);
+            dest.writeString(this.f20808e);
+            dest.writeString(this.f20809i);
+            qp.a aVar = this.f20810o;
             if (aVar == null) {
                 dest.writeInt(0);
                 return;
@@ -570,13 +570,13 @@ public abstract class ComponentParam implements Parcelable {
         public static final Parcelable.Creator<h> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f19931d;
+        private final String f20811d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f19932e;
+        private final String f20812e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f19933i;
+        private final String f20813i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -596,21 +596,21 @@ public abstract class ComponentParam implements Parcelable {
 
         public h(String str, String str2, String str3) {
             super(null);
-            this.f19931d = str;
-            this.f19932e = str2;
-            this.f19933i = str3;
+            this.f20811d = str;
+            this.f20812e = str2;
+            this.f20813i = str3;
         }
 
         public final String a() {
-            return this.f19931d;
+            return this.f20811d;
         }
 
         public final String b() {
-            return this.f19932e;
+            return this.f20812e;
         }
 
         public final String c() {
-            return this.f19933i;
+            return this.f20813i;
         }
 
         @Override // android.os.Parcelable
@@ -621,9 +621,9 @@ public abstract class ComponentParam implements Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f19931d);
-            dest.writeString(this.f19932e);
-            dest.writeString(this.f19933i);
+            dest.writeString(this.f20811d);
+            dest.writeString(this.f20812e);
+            dest.writeString(this.f20813i);
         }
     }
 

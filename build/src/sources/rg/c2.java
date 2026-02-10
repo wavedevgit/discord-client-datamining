@@ -7,36 +7,36 @@ public final class c2 extends jf.a {
     public static final Parcelable.Creator<c2> CREATOR = new d3();
 
     /* renamed from: d  reason: collision with root package name */
-    public int f48147d;
+    public int f46601d;
 
     /* renamed from: e  reason: collision with root package name */
-    public int f48148e;
+    public int f46602e;
 
     /* renamed from: i  reason: collision with root package name */
-    public int f48149i;
+    public int f46603i;
 
     /* renamed from: o  reason: collision with root package name */
-    public long f48150o;
+    public long f46604o;
 
     /* renamed from: p  reason: collision with root package name */
-    public int f48151p;
+    public int f46605p;
 
     public c2(int i10, int i11, int i12, long j10, int i13) {
-        this.f48147d = i10;
-        this.f48148e = i11;
-        this.f48149i = i12;
-        this.f48150o = j10;
-        this.f48151p = i13;
+        this.f46601d = i10;
+        this.f46602e = i11;
+        this.f46603i = i12;
+        this.f46604o = j10;
+        this.f46605p = i13;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = jf.c.a(parcel);
-        jf.c.l(parcel, 2, this.f48147d);
-        jf.c.l(parcel, 3, this.f48148e);
-        jf.c.l(parcel, 4, this.f48149i);
-        jf.c.o(parcel, 5, this.f48150o);
-        jf.c.l(parcel, 6, this.f48151p);
+        jf.c.l(parcel, 2, this.f46601d);
+        jf.c.l(parcel, 3, this.f46602e);
+        jf.c.l(parcel, 4, this.f46603i);
+        jf.c.o(parcel, 5, this.f46604o);
+        jf.c.l(parcel, 6, this.f46605p);
         jf.c.b(parcel, a10);
     }
 }

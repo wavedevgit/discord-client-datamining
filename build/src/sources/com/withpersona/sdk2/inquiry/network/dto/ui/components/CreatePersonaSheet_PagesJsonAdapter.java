@@ -45,7 +45,7 @@ public final class CreatePersonaSheet_PagesJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 cardCtaPage = (CreatePersonaSheet.CardCtaPage) this.nullableCardCtaPageAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class CreatePersonaSheet_PagesJsonAdapter extends h {
     public void toJson(@NotNull t writer, CreatePersonaSheet.Pages pages) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (pages != null) {
-            writer.k();
+            writer.i();
             writer.J("ctaCard");
             this.nullableCardCtaPageAdapter.toJson(writer, pages.getCtaCard());
             writer.s();

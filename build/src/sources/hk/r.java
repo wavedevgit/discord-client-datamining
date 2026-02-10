@@ -1,31 +1,29 @@
 package hk;
+
+import android.content.Context;
+import rg.ik;
+import rg.xj;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-class r implements h0 {
+public final class r extends wj.e {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final r f26301a = new r();
+    /* renamed from: b  reason: collision with root package name */
+    private final wj.i f27403b;
 
-    private r() {
+    public r(wj.i iVar) {
+        this.f27403b = iVar;
     }
 
-    public static r c() {
-        return f26301a;
-    }
-
-    @Override // hk.h0
-    public g0 a(Class cls) {
-        if (s.class.isAssignableFrom(cls)) {
-            try {
-                return (g0) s.l(cls.asSubclass(s.class)).b();
-            } catch (Exception e10) {
-                throw new RuntimeException("Unable to get message info for " + cls.getName(), e10);
-            }
+    @Override // wj.e
+    protected final /* bridge */ /* synthetic */ Object a(Object obj) {
+        o fVar;
+        gk.d dVar = (gk.d) obj;
+        xj b10 = ik.b(dVar.b());
+        Context b11 = this.f27403b.b();
+        if (com.google.android.gms.common.g.f().a(b11) < 204700000 && !dVar.d()) {
+            fVar = new g(b11);
+        } else {
+            fVar = new f(b11, dVar, b10);
         }
-        throw new IllegalArgumentException("Unsupported message type: " + cls.getName());
-    }
-
-    @Override // hk.h0
-    public boolean b(Class cls) {
-        return s.class.isAssignableFrom(cls);
+        return new d(b10, fVar, dVar);
     }
 }

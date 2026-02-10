@@ -55,7 +55,7 @@ public final class NextStep_GovernmentId_DigitalIdConfigJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -75,7 +75,7 @@ public final class NextStep_GovernmentId_DigitalIdConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.GovernmentId.DigitalIdConfig digitalIdConfig) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (digitalIdConfig != null) {
-            writer.k();
+            writer.i();
             writer.J("merchantId");
             this.nullableStringAdapter.toJson(writer, digitalIdConfig.getMerchantId());
             writer.J("nonce");

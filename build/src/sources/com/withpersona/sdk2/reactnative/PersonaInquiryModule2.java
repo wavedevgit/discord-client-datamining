@@ -24,17 +24,17 @@ import com.withpersona.sdk2.inquiry.InquiryTemplateBuilder;
 import com.withpersona.sdk2.inquiry.ServerThemeSource;
 import com.withpersona.sdk2.inquiry.ThemeSource;
 import com.withpersona.sdk2.inquiry.network.dto.InquiryField;
+import er.b;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
-import pq.a;
-import pq.c;
-import pq.e;
-import pq.f;
-import pq.g;
-import vq.b;
+import yq.a;
+import yq.c;
+import yq.e;
+import yq.f;
+import yq.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements ActivityEventListener {
     private static final String ACCESS_TOKEN = "sessionToken";
@@ -71,7 +71,7 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
             createMap2.putString("stepName", gVar.a());
             if (gVar instanceof g.a) {
                 WritableArray createArray2 = Arguments.createArray();
-                for (c cVar : ((g.a) gVar).p()) {
+                for (c cVar : ((g.a) gVar).i()) {
                     WritableMap createMap3 = Arguments.createMap();
                     createMap3.putString("absoluteFilePath", cVar.a().getAbsolutePath());
                     createArray2.pushMap(createMap3);
@@ -80,13 +80,13 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 createMap2.putString("type", "DocumentStepData");
             } else if (gVar instanceof g.b) {
                 WritableArray createArray3 = Arguments.createArray();
-                for (e eVar : ((g.b) gVar).p()) {
+                for (e eVar : ((g.b) gVar).i()) {
                     WritableMap createMap4 = Arguments.createMap();
                     createMap4.putString("idClass", eVar.b());
                     createMap4.putString("captureMethod", eVar.a().name());
                     createMap4.putString("side", eVar.c().name());
                     WritableArray createArray4 = Arguments.createArray();
-                    for (e.c cVar2 : eVar.h2()) {
+                    for (e.c cVar2 : eVar.m2()) {
                         WritableMap createMap5 = Arguments.createMap();
                         createMap5.putString("absoluteFilePath", cVar2.a().getAbsolutePath());
                         createArray4.pushMap(createMap5);
@@ -98,15 +98,15 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 createMap2.putString("type", "GovernmentIdStepData");
             } else if (gVar instanceof g.c) {
                 g.c cVar3 = (g.c) gVar;
-                ReadableMap selfieCaptureToMap = selfieCaptureToMap(cVar3.p());
-                ReadableMap selfieCaptureToMap2 = selfieCaptureToMap(cVar3.e2());
-                ReadableMap selfieCaptureToMap3 = selfieCaptureToMap(cVar3.o2());
+                ReadableMap selfieCaptureToMap = selfieCaptureToMap(cVar3.i());
+                ReadableMap selfieCaptureToMap2 = selfieCaptureToMap(cVar3.p());
+                ReadableMap selfieCaptureToMap3 = selfieCaptureToMap(cVar3.s());
                 createMap2.putMap("centerCapture", selfieCaptureToMap);
                 createMap2.putMap("leftCapture", selfieCaptureToMap2);
                 createMap2.putMap("rightCapture", selfieCaptureToMap3);
                 createMap2.putString("type", "SelfieStepData");
             } else if (gVar instanceof g.d) {
-                createMap2.putMap("componentParams", uiStepParamsMapToMap(((g.d) gVar).p()));
+                createMap2.putMap("componentParams", uiStepParamsMapToMap(((g.d) gVar).i()));
                 createMap2.putString("type", "UiStepData");
             }
             createArray.pushMap(createMap2);
@@ -299,9 +299,9 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 str11 = null;
             }
             if (str11 != null && str11.equals("server")) {
-                clientThemeSource2 = new ServerThemeSource(Integer.valueOf(b.f52993a));
+                clientThemeSource2 = new ServerThemeSource(Integer.valueOf(b.f23265a));
             } else {
-                clientThemeSource2 = new ClientThemeSource(Integer.valueOf(b.f52993a));
+                clientThemeSource2 = new ClientThemeSource(Integer.valueOf(b.f23265a));
             }
             InquiryBuilder theme = fromInquiry.theme(clientThemeSource2);
             if (readableMap.hasKey(ACCESS_TOKEN)) {
@@ -336,9 +336,9 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 str4 = null;
             }
             if (str4 != null && str4.equals("server")) {
-                clientThemeSource = new ServerThemeSource(Integer.valueOf(b.f52993a));
+                clientThemeSource = new ServerThemeSource(Integer.valueOf(b.f23265a));
             } else {
-                clientThemeSource = new ClientThemeSource(Integer.valueOf(b.f52993a));
+                clientThemeSource = new ClientThemeSource(Integer.valueOf(b.f23265a));
             }
             InquiryTemplateBuilder theme2 = fromTemplateVersion.theme(clientThemeSource);
             if (readableMap.hasKey(REFERENCE_ID)) {

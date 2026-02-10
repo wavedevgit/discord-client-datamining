@@ -1,8 +1,11 @@
 package jl;
+
+import com.facebook.react.bridge.Dynamic;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class g implements h {
-    @Override // jl.h
-    public void a(kl.g gVar) {
-        gVar.t();
+public class g extends k {
+    @Override // jl.k
+    /* renamed from: d */
+    public String c(Dynamic dynamic) {
+        return dynamic.asString();
     }
 }

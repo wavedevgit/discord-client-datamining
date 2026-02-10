@@ -1,117 +1,96 @@
 package ct;
 
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.channels.ProducerScope;
+import kotlinx.coroutines.flow.Flow;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class j implements s {
+public final class j extends e {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final String f20224a;
+    /* renamed from: o  reason: collision with root package name */
+    private final Iterable f21063o;
 
-    public j(String string) {
-        Intrinsics.checkNotNullParameter(string, "string");
-        this.f20224a = string;
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
-    @Override // ct.o
-    public dt.e a() {
-        return new dt.c(this.f20224a);
-    }
+        /* renamed from: d  reason: collision with root package name */
+        int f21064d;
 
-    @Override // ct.o
-    public et.q b() {
-        String str;
-        List a10;
-        if (this.f20224a.length() == 0) {
-            a10 = CollectionsKt.l();
-        } else {
-            List c10 = CollectionsKt.c();
-            String str2 = "";
-            if (bt.d.b(this.f20224a.charAt(0))) {
-                String str3 = this.f20224a;
-                int length = str3.length();
-                int i10 = 0;
-                while (true) {
-                    if (i10 >= length) {
-                        break;
-                    } else if (!bt.d.b(str3.charAt(i10))) {
-                        str3 = str3.substring(0, i10);
-                        Intrinsics.checkNotNullExpressionValue(str3, "substring(...)");
-                        break;
-                    } else {
-                        i10++;
-                    }
-                }
-                c10.add(new et.h(CollectionsKt.e(new et.b(str3))));
-                String str4 = this.f20224a;
-                int length2 = str4.length();
-                int i11 = 0;
-                while (true) {
-                    if (i11 >= length2) {
-                        str = "";
-                        break;
-                    } else if (!bt.d.b(str4.charAt(i11))) {
-                        str = str4.substring(i11);
-                        Intrinsics.checkNotNullExpressionValue(str, "substring(...)");
-                        break;
-                    } else {
-                        i11++;
-                    }
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ Flow f21065e;
+
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ z f21066i;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        a(Flow flow, z zVar, Continuation continuation) {
+            super(2, continuation);
+            this.f21065e = flow;
+            this.f21066i = zVar;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            return new a(this.f21065e, this.f21066i, continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            Object f10 = gs.b.f();
+            int i10 = this.f21064d;
+            if (i10 != 0) {
+                if (i10 == 1) {
+                    kotlin.c.b(obj);
+                } else {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
             } else {
-                str = this.f20224a;
-            }
-            if (str.length() > 0) {
-                if (bt.d.b(str.charAt(str.length() - 1))) {
-                    int c02 = StringsKt.c0(str);
-                    while (true) {
-                        if (-1 >= c02) {
-                            break;
-                        } else if (!bt.d.b(str.charAt(c02))) {
-                            str2 = str.substring(0, c02 + 1);
-                            Intrinsics.checkNotNullExpressionValue(str2, "substring(...)");
-                            break;
-                        } else {
-                            c02--;
-                        }
-                    }
-                    c10.add(new et.r(str2));
-                    int c03 = StringsKt.c0(str);
-                    while (true) {
-                        if (-1 >= c03) {
-                            break;
-                        } else if (!bt.d.b(str.charAt(c03))) {
-                            str = str.substring(c03 + 1);
-                            Intrinsics.checkNotNullExpressionValue(str, "substring(...)");
-                            break;
-                        } else {
-                            c03--;
-                        }
-                    }
-                    c10.add(new et.h(CollectionsKt.e(new et.b(str))));
-                } else {
-                    c10.add(new et.r(str));
+                kotlin.c.b(obj);
+                Flow flow = this.f21065e;
+                z zVar = this.f21066i;
+                this.f21064d = 1;
+                if (flow.collect(zVar, this) == f10) {
+                    return f10;
                 }
             }
-            a10 = CollectionsKt.a(c10);
+            return Unit.f31987a;
         }
-        return new et.q(a10, CollectionsKt.l());
-    }
 
-    public boolean equals(Object obj) {
-        if ((obj instanceof j) && Intrinsics.areEqual(this.f20224a, ((j) obj).f20224a)) {
-            return true;
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
         }
-        return false;
     }
 
-    public int hashCode() {
-        return this.f20224a.hashCode();
+    public /* synthetic */ j(Iterable iterable, CoroutineContext coroutineContext, int i10, at.a aVar, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+        this(iterable, (i11 & 2) != 0 ? kotlin.coroutines.e.f32061d : coroutineContext, (i11 & 4) != 0 ? -2 : i10, (i11 & 8) != 0 ? at.a.f6104d : aVar);
     }
 
-    public String toString() {
-        return "ConstantFormatStructure(" + this.f20224a + ')';
+    @Override // ct.e
+    protected Object e(ProducerScope producerScope, Continuation continuation) {
+        z zVar = new z(producerScope);
+        for (Flow flow : this.f21063o) {
+            ys.i.d(producerScope, null, null, new a(flow, zVar, null), 3, null);
+        }
+        return Unit.f31987a;
+    }
+
+    @Override // ct.e
+    protected e f(CoroutineContext coroutineContext, int i10, at.a aVar) {
+        return new j(this.f21063o, coroutineContext, i10, aVar);
+    }
+
+    @Override // ct.e
+    public at.v m(CoroutineScope coroutineScope) {
+        return at.s.c(coroutineScope, this.f21030d, this.f21031e, k());
+    }
+
+    public j(Iterable iterable, CoroutineContext coroutineContext, int i10, at.a aVar) {
+        super(coroutineContext, i10, aVar);
+        this.f21063o = iterable;
     }
 }

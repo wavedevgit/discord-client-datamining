@@ -8,6 +8,6 @@ public abstract class b {
     }
 
     public static final boolean b(i iVar) {
-        return Intrinsics.areEqual(iVar, i.f24983d);
+        return Intrinsics.areEqual(iVar, i.f26201d);
     }
 }

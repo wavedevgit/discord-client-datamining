@@ -1,29 +1,20 @@
 package ao;
 
-import android.content.Context;
-import cr.d;
-import cr.h;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements d {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final h f5931a;
-
-    public c(h hVar) {
-        this.f5931a = hVar;
+public final class c extends a {
+    public c() {
+        super(false, 1, null);
     }
 
-    public static c a(h hVar) {
-        return new c(hVar);
-    }
-
-    public static b c(Context context) {
-        return new b(context);
-    }
-
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public b get() {
-        return c((Context) this.f5931a.get());
+    @Override // com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy
+    public void a(List drawingOperations) {
+        Intrinsics.checkNotNullParameter(drawingOperations, "drawingOperations");
+        if (!b()) {
+            return;
+        }
+        CollectionsKt.X(drawingOperations);
     }
 }

@@ -3,8 +3,8 @@ package vb;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public long f52174a;
+    public long f51416a;
 
     /* renamed from: b  reason: collision with root package name */
-    public long f52175b;
+    public long f51417b;
 }

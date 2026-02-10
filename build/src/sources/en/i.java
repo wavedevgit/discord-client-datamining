@@ -1,150 +1,136 @@
 package en;
 
-import android.content.Context;
-import android.view.View;
-import android.view.ViewGroup;
-import kotlin.Pair;
-import kotlin.Unit;
+import kotlin.Lazy;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
-import kotlin.reflect.KClass;
+import okio.Buffer;
+import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class i implements c0 {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final KClass f21798a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final Function2 f21799b;
+public final class i {
 
     /* renamed from: c  reason: collision with root package name */
-    private final h0 f21800c;
+    public static final a f22980c = new a(null);
 
-    /* renamed from: d  reason: collision with root package name */
-    private final Function4 f21801d;
+    /* renamed from: a  reason: collision with root package name */
+    private final Function0 f22981a;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* renamed from: b  reason: collision with root package name */
+    private final Lazy f22982b;
+
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a extends Lambda implements Function4 {
+    public static final class a {
 
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function1 f21802d;
+        /* renamed from: en.i$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        static final class C0308a extends Lambda implements Function0 {
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        a(Function1 function1) {
-            super(4);
-            this.f21802d = function1;
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ ByteString f22983d;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            C0308a(ByteString byteString) {
+                super(0);
+                this.f22983d = byteString;
+            }
+
+            @Override // kotlin.jvm.functions.Function0
+            /* renamed from: a */
+            public final ByteString invoke() {
+                return this.f22983d;
+            }
         }
 
-        public final void a(View noName_0, Function2 innerShowRendering, Object outerRendering, a0 viewEnvironment) {
-            Intrinsics.checkNotNullParameter(noName_0, "$noName_0");
-            Intrinsics.checkNotNullParameter(innerShowRendering, "innerShowRendering");
-            Intrinsics.checkNotNullParameter(outerRendering, "outerRendering");
-            Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-            innerShowRendering.invoke(this.f21802d.invoke(outerRendering), viewEnvironment);
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        static final class b extends Lambda implements Function0 {
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ Function1 f22984d;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            b(Function1 function1) {
+                super(0);
+                this.f22984d = function1;
+            }
+
+            @Override // kotlin.jvm.functions.Function0
+            /* renamed from: a */
+            public final ByteString invoke() {
+                Buffer buffer = new Buffer();
+                this.f22984d.invoke(buffer);
+                return buffer.M1();
+            }
         }
 
-        @Override // kotlin.jvm.functions.Function4
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
-            a((View) obj, (Function2) obj2, obj3, (a0) obj4);
-            return Unit.f31765a;
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final i a(Function0 lazy) {
+            Intrinsics.checkNotNullParameter(lazy, "lazy");
+            return new i(lazy, null);
+        }
+
+        public final i b(ByteString byteString) {
+            Intrinsics.checkNotNullParameter(byteString, "byteString");
+            return new i(new C0308a(byteString), null);
+        }
+
+        public final i c(Function1 lazy) {
+            Intrinsics.checkNotNullParameter(lazy, "lazy");
+            return a(new b(lazy));
+        }
+
+        private a() {
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class b extends Lambda implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function1 f21803d;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        b(Function1 function1) {
-            super(2);
-            this.f21803d = function1;
+    static final class b extends Lambda implements Function0 {
+        b() {
+            super(0);
         }
 
-        @Override // kotlin.jvm.functions.Function2
+        @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
-        public final Pair invoke(Object outer, a0 viewEnvironment) {
-            Intrinsics.checkNotNullParameter(outer, "outer");
-            Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-            return new Pair(this.f21803d.invoke(outer), viewEnvironment);
+        public final ByteString invoke() {
+            return (ByteString) i.this.f22981a.invoke();
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class c extends Lambda implements Function2 {
+    public /* synthetic */ i(Function0 function0, DefaultConstructorMarker defaultConstructorMarker) {
+        this(function0);
+    }
 
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ View f21805e;
+    public final ByteString b() {
+        return (ByteString) this.f22982b.getValue();
+    }
 
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function2 f21806i;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        c(View view, Function2 function2) {
-            super(2);
-            this.f21805e = view;
-            this.f21806i = function2;
+    public boolean equals(Object obj) {
+        i iVar;
+        if (obj instanceof i) {
+            iVar = (i) obj;
+        } else {
+            iVar = null;
         }
-
-        public final void a(Object rendering, a0 env) {
-            Intrinsics.checkNotNullParameter(rendering, "rendering");
-            Intrinsics.checkNotNullParameter(env, "env");
-            i.this.f21801d.invoke(this.f21805e, this.f21806i, rendering, env);
+        if (iVar == null) {
+            return false;
         }
-
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            a(obj, (a0) obj2);
-            return Unit.f31765a;
-        }
+        return Intrinsics.areEqual(b(), iVar.b());
     }
 
-    public i(KClass type, Function2 map, h0 h0Var, Function4 doShowRendering) {
-        Intrinsics.checkNotNullParameter(type, "type");
-        Intrinsics.checkNotNullParameter(map, "map");
-        Intrinsics.checkNotNullParameter(doShowRendering, "doShowRendering");
-        this.f21798a = type;
-        this.f21799b = map;
-        this.f21800c = h0Var;
-        this.f21801d = doShowRendering;
+    public int hashCode() {
+        return b().hashCode();
     }
 
-    @Override // en.c0
-    public View a(Object initialRendering, a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
-        Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
-        Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
-        Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        Pair pair = (Pair) this.f21799b.invoke(initialRendering, initialViewEnvironment);
-        Object a10 = pair.a();
-        a0 a0Var = (a0) pair.b();
-        View c10 = f0.c((e0) a0Var.a(e0.f21788a), a10, a0Var, contextForNewView, viewGroup, this.f21800c);
-        Function2 d10 = g0.d(c10);
-        Intrinsics.checkNotNull(d10);
-        g0.a(c10, initialRendering, a0Var, new c(c10, d10));
-        return c10;
+    public String toString() {
+        return "Snapshot(" + b() + ')';
     }
 
-    @Override // en.c0
-    public KClass getType() {
-        return this.f21798a;
-    }
-
-    public /* synthetic */ i(KClass kClass, Function1 function1, h0 h0Var, Function4 function4, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(kClass, function1, (i10 & 4) != 0 ? null : h0Var, (i10 & 8) != 0 ? new a(function1) : function4);
-    }
-
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public i(KClass type, Function1 map, h0 h0Var, Function4 doShowRendering) {
-        this(type, new b(map), h0Var, doShowRendering);
-        Intrinsics.checkNotNullParameter(type, "type");
-        Intrinsics.checkNotNullParameter(map, "map");
-        Intrinsics.checkNotNullParameter(doShowRendering, "doShowRendering");
+    private i(Function0 function0) {
+        this.f22981a = function0;
+        this.f22982b = as.l.b(new b());
     }
 }

@@ -5,7 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -55,7 +55,7 @@ public final class NestedScrollOnTouchListener implements View.OnTouchListener {
     public NestedScrollOnTouchListener(@NotNull final View view, boolean z10) {
         Intrinsics.checkNotNullParameter(view, "view");
         if (!z10) {
-            h0.n0(view, new androidx.core.view.a() { // from class: com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchListener.1
+            i0.k0(view, new androidx.core.view.a() { // from class: com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchListener.1
                 @Override // androidx.core.view.a
                 public boolean performAccessibilityAction(View host, int i10, Bundle bundle) {
                     View.OnLongClickListener nestedLongClickListener;
@@ -105,7 +105,7 @@ public final class NestedScrollOnTouchListener implements View.OnTouchListener {
     public static final Unit onSupplementalMotionEventReceived$lambda$2(NestedScrollOnTouchListener nestedScrollOnTouchListener, View view, MotionEvent event) {
         Intrinsics.checkNotNullParameter(event, "event");
         nestedScrollOnTouchListener.viewTouchTracker.handleTouch$react_gesture_handler_release(view, event, true);
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -115,7 +115,7 @@ public final class NestedScrollOnTouchListener implements View.OnTouchListener {
         if (function2 != null) {
             function2.invoke(view, nestedScrollOnTouchListener.onSupplementalMotionEventReceived);
         }
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -125,7 +125,7 @@ public final class NestedScrollOnTouchListener implements View.OnTouchListener {
         if (function2 != null) {
             function2.invoke(view, nestedScrollOnTouchListener.onSupplementalMotionEventReceived);
         }
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     @Override // android.view.View.OnTouchListener

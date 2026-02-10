@@ -1,29 +1,31 @@
 package xv;
-
-import com.squareup.moshi.t;
-import okhttp3.MediaType;
-import okhttp3.RequestBody;
-import okio.Buffer;
-import wv.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class b implements h {
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final MediaType f55345b = MediaType.e("application/json; charset=UTF-8");
+public class b extends cw.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.squareup.moshi.h f55346a;
+    private final int f55168a;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b(com.squareup.moshi.h hVar) {
-        this.f55346a = hVar;
+    /* renamed from: b  reason: collision with root package name */
+    private final int f55169b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final boolean f55170c;
+
+    public b(int i10, int i11, boolean z10) {
+        this.f55168a = i10;
+        this.f55169b = i11;
+        this.f55170c = z10;
     }
 
-    @Override // wv.h
-    /* renamed from: b */
-    public RequestBody a(Object obj) {
-        Buffer buffer = new Buffer();
-        this.f55346a.toJson(t.Z(buffer), obj);
-        return RequestBody.create(f55345b, buffer.I1());
+    public int e() {
+        return this.f55169b;
+    }
+
+    public int f() {
+        return this.f55168a;
+    }
+
+    public boolean g() {
+        return this.f55170c;
     }
 }

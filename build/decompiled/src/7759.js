@@ -1,37 +1,117 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
-    var4 = dependencyMap;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
     var2 = {};
-    var0 = 0;
-    var1 = var4[var0];
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
     var0 = undefined;
-    var1 = var3.bind(var0)(var1);
-    var2.shadowColor = var1;
-    var1 = 1;
-    var5 = var4[var1];
-    var7 = var3.bind(var0)(var5);
-    var6 = var7.shape;
-    var5 = {};
-    var8 = var4[var1];
-    var8 = var3.bind(var0)(var8);
-    var8 = var8.number;
-    var5.width = var8;
-    var8 = var4[var1];
-    var8 = var3.bind(var0)(var8);
-    var8 = var8.number;
-    var5.height = var8;
-    var5 = var6.bind(var7)(var5);
-    var2.shadowOffset = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.number;
-    var2.shadowOpacity = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.number;
-    var2.shadowRadius = var1;
-    var1 = module;
+    var3 = 'ColorPropType';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'EdgeInsetsPropType';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 2;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'ImagePropTypes';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 3;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'PointPropType';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 4;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'TextInputPropTypes';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 5;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'TextPropTypes';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var3 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 6;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var1 = 'ViewPropTypes';
+    Object.defineProperty(var2, var1, {
+        get: var3,
+        set: var0,
+        enumerable: true
+    });
+    var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7750, 3221]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7760, 7762, 7763, 7773, 7774, 7775, 7764]);

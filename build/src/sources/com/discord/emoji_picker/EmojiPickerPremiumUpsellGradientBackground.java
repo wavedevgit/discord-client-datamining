@@ -6,7 +6,7 @@ import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.Shader;
 import android.view.View;
-import androidx.core.view.n0;
+import androidx.core.view.o0;
 import androidx.recyclerview.widget.RecyclerView;
 import com.facebook.react.uimanager.ViewProps;
 import com.rnlineargradient.LinearGradientManager;
@@ -72,7 +72,7 @@ public final class EmojiPickerPremiumUpsellGradientBackground extends RecyclerVi
         int i10 = 0;
         float f10 = -1.0f;
         float f11 = -1.0f;
-        for (Object obj : n0.a(recyclerView)) {
+        for (Object obj : o0.a(recyclerView)) {
             int i11 = i10 + 1;
             if (i10 < 0) {
                 CollectionsKt.v();

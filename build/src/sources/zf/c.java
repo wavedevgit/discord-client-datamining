@@ -7,21 +7,21 @@ import yf.k;
 import yf.m;
 import zf.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class c extends a.AbstractBinderC0800a {
+public abstract class c extends a.AbstractBinderC0801a {
     @Override // zf.a
-    public void E0(Status status, yf.a aVar) {
+    public void F0(Status status, yf.a aVar) {
         Intrinsics.checkNotNullParameter(status, "status");
         throw new UnsupportedOperationException();
     }
 
     @Override // zf.a
-    public void a0(Status status, m mVar) {
+    public void c0(Status status, m mVar) {
         Intrinsics.checkNotNullParameter(status, "status");
         throw new UnsupportedOperationException();
     }
 
     @Override // zf.a
-    public void o(Status status, i iVar) {
+    public void q(Status status, i iVar) {
         Intrinsics.checkNotNullParameter(status, "status");
         throw new UnsupportedOperationException();
     }

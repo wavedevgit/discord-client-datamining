@@ -1,6 +1,9 @@
 package com.google.android.material.drawable;
 
+import android.content.Context;
 import android.content.res.ColorStateList;
+import android.content.res.Resources;
+import android.content.res.XmlResourceParser;
 import android.graphics.Outline;
 import android.graphics.Path;
 import android.graphics.PorterDuff;
@@ -9,8 +12,13 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.os.Build;
+import android.text.TextUtils;
+import android.util.AttributeSet;
+import android.util.Xml;
 import androidx.annotation.NonNull;
+import java.io.IOException;
 import java.util.Arrays;
+import org.xmlpull.v1.XmlPullParserException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {
 
@@ -77,7 +85,7 @@ public abstract class c {
         if (colorStateList != null) {
             Drawable mutate = s1.a.r(drawable).mutate();
             if (mode != null) {
-                s1.a.p(mutate, mode);
+                mutate.setTintMode(mode);
             }
             return mutate;
         }
@@ -142,7 +150,37 @@ public abstract class c {
         return iArr2;
     }
 
-    public static void k(Outline outline, Path path) {
+    public static AttributeSet k(Context context, int i10, CharSequence charSequence) {
+        int next;
+        try {
+            XmlResourceParser xml = context.getResources().getXml(i10);
+            do {
+                next = xml.next();
+                if (next == 2) {
+                    break;
+                }
+            } while (next != 1);
+            if (next == 2) {
+                if (TextUtils.equals(xml.getName(), charSequence)) {
+                    return Xml.asAttributeSet(xml);
+                }
+                throw new XmlPullParserException("Must have a <" + ((Object) charSequence) + "> start tag");
+            }
+            throw new XmlPullParserException("No start tag found");
+        } catch (IOException e10) {
+            e = e10;
+            Resources.NotFoundException notFoundException = new Resources.NotFoundException("Can't load badge resource ID #0x" + Integer.toHexString(i10));
+            notFoundException.initCause(e);
+            throw notFoundException;
+        } catch (XmlPullParserException e11) {
+            e = e11;
+            Resources.NotFoundException notFoundException2 = new Resources.NotFoundException("Can't load badge resource ID #0x" + Integer.toHexString(i10));
+            notFoundException2.initCause(e);
+            throw notFoundException2;
+        }
+    }
+
+    public static void l(Outline outline, Path path) {
         int i10 = Build.VERSION.SDK_INT;
         if (i10 >= 30) {
             b.a(outline, path);
@@ -156,7 +194,7 @@ public abstract class c {
         }
     }
 
-    public static PorterDuffColorFilter l(Drawable drawable, ColorStateList colorStateList, PorterDuff.Mode mode) {
+    public static PorterDuffColorFilter m(Drawable drawable, ColorStateList colorStateList, PorterDuff.Mode mode) {
         if (colorStateList != null && mode != null) {
             return new PorterDuffColorFilter(colorStateList.getColorForState(drawable.getState(), 0), mode);
         }

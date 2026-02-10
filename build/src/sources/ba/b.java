@@ -3,10 +3,10 @@ package ba;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f6432a = new b();
+    public static final b f6538a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    public static c f6433b = a.f6431a;
+    public static c f6539b = a.f6537a;
 
     private b() {
     }

@@ -2,13 +2,13 @@ package com.withpersona.sdk2.inquiry.network.core;
 
 import com.squareup.moshi.h;
 import com.squareup.moshi.w;
-import cr.g;
-import cr.h;
-import cr.i;
 import java.util.Set;
 import javax.inject.Provider;
+import lr.g;
+import lr.h;
+import lr.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class NetworkCoreModule_MoshiFactory implements cr.d {
+public final class NetworkCoreModule_MoshiFactory implements lr.d {
     private final h jsonAdapterBindingsProvider;
     private final h jsonAdapterFactoryProvider;
     private final h jsonAdaptersProvider;
@@ -29,7 +29,7 @@ public final class NetworkCoreModule_MoshiFactory implements cr.d {
         return (w) g.d(networkCoreModule.moshi(set, set2, set3));
     }
 
-    public static NetworkCoreModule_MoshiFactory create(NetworkCoreModule networkCoreModule, cr.h hVar, cr.h hVar2, cr.h hVar3) {
+    public static NetworkCoreModule_MoshiFactory create(NetworkCoreModule networkCoreModule, lr.h hVar, lr.h hVar2, lr.h hVar3) {
         return new NetworkCoreModule_MoshiFactory(networkCoreModule, hVar, hVar2, hVar3);
     }
 

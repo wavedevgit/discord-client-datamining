@@ -7,11 +7,11 @@ import java.util.List;
 public final class gk implements dk {
 
     /* renamed from: a  reason: collision with root package name */
-    final List f40914a;
+    final List f39240a;
 
     public gk(Context context, fk fkVar) {
         ArrayList arrayList = new ArrayList();
-        this.f40914a = arrayList;
+        this.f39240a = arrayList;
         if (fkVar.c()) {
             arrayList.add(new vk(context, fkVar));
         }
@@ -19,7 +19,7 @@ public final class gk implements dk {
 
     @Override // og.dk
     public final void a(ck ckVar) {
-        for (dk dkVar : this.f40914a) {
+        for (dk dkVar : this.f39240a) {
             dkVar.a(ckVar);
         }
     }

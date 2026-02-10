@@ -801,7 +801,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)();
             case 35:
                 if (!var1) {
-                    _fun35712_ip = 71;
+                    _fun35712_ip = 72;
                     continue _fun35712
                 }
             case 38:
@@ -812,7 +812,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 'STAFF-ACK-LOG:';
                 var0 = arg1;
                 var0 = var3.bind(var4)(var1, var0, var2);
-            case 71:
+            case 72:
                 var0 = undefined;
                 return var0;
         }
@@ -5980,26 +5980,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5.isOld = var4;
                     var4 = var3 != var11;
                     if (!var4) {
-                        _fun35809_ip = 138;
+                        _fun35809_ip = 139;
                         continue _fun35809
                     }
-                case 119:
+                case 120:
                     var14 = _closure1_slot25;
                     var13 = var14.has;
                     var12 = var11.type;
                     var4 = var13.bind(var14)(var12);
-                case 138:
+                case 139:
                     var5.validType = var4;
                     var4 = var3 != var11;
                     if (!var4) {
-                        _fun35809_ip = 166;
+                        _fun35809_ip = 167;
                         continue _fun35809
                     }
-                case 152:
+                case 153:
                     var12 = _closure1_slot22;
                     var11 = var11.type;
                     var4 = var12.bind(var0)(var11);
-                case 166:
+                case 167:
                     var5.readableType = var4;
                     var4 = _closure1_slot84;
                     var4 = var4.bind(var0)();
@@ -6019,17 +6019,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var15 = var5;
                     var4 = var19[var9](var18, var17, var16, var15, var14);
                     if (!var2) {
-                        _fun35809_ip = 261;
+                        _fun35809_ip = 262;
                         continue _fun35809
                     }
-                case 255:
+                case 256:
                     var2 = var1._persisted;
-                case 261:
+                case 262:
                     if (!var2) {
-                        _fun35809_ip = 361;
+                        _fun35809_ip = 362;
                         continue _fun35809
                     }
-                case 264:
+                case 265:
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
                     var2 = 44;
@@ -6053,21 +6053,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2.oldFormErrors = var6;
                     var2.rejectWithError = var6;
                     var2 = var4.bind(var5)(var2);
-                case 361:
+                case 362:
                     var4 = _closure2_slot0;
                     var6 = var4._readStates;
                     var5 = var6.get;
                     var4 = var1.type;
                     var5 = var5.bind(var6)(var4);
                     if (!(var3 != var5)) {
-                        _fun35809_ip = 408;
+                        _fun35809_ip = 409;
                         continue _fun35809
                     }
-                case 393:
+                case 394:
                     var4 = var5.delete;
                     var3 = var1.channelId;
                     var3 = var4.bind(var5)(var3);
-                case 408:
+                case 409:
                     var2 = _closure2_slot0;
                     var3 = var2._mentionChannels;
                     var2 = var3.delete;
@@ -11213,4 +11213,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.shouldBadgeMessage = var3;
     var2.ReadState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [15, 17, 18, 5, 57, 6, 7, 1371, 3949, 1674, 1590, 3335, 3963, 3968, 3969, 4224, 3095, 1310, 1376, 1216, 4225, 1372, 4228, 4001, 1410, 4229, 4251, 3093, 3102, 1672, 4303, 1621, 8496, 660, 7960, 1379, 1378, 4304, 1233, 3, 21, 667, 806, 3989, 507, 3631, 1444, 5336, 8788, 3101, 12292, 4579, 8687, 12293, 1307, 1384, 3047, 22, 1304, 3921, 8784, 3100, 1385, 5337, 5946, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [15, 17, 18, 5, 57, 6, 7, 1371, 3949, 1674, 1590, 3335, 3963, 3968, 3969, 4234, 3095, 1310, 1376, 1216, 4235, 1372, 4238, 4001, 1410, 4239, 4261, 3093, 3102, 1672, 4313, 1621, 8506, 660, 7970, 1379, 1378, 4314, 1233, 3, 21, 667, 806, 3989, 507, 3631, 1444, 5346, 8799, 3101, 12303, 4589, 8698, 12304, 1307, 1384, 3047, 22, 1304, 3921, 8795, 3100, 1385, 5347, 5956, 566, 2]);

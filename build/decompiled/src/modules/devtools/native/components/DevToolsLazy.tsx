@@ -1,7 +1,7 @@
 // modules/devtools/native/components/DevToolsLazy.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun100499: for (var _fun100499_ip = 0;;) switch (_fun100499_ip) {
+    _fun100551: for (var _fun100551_ip = 0;;) switch (_fun100551_ip) {
         case 0:
             var4 = require;
             var8 = metroImportDefault;
@@ -57,14 +57,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var9.isAndroid;
             var7 = var7.bind(var9)();
             if (var7) {
-                _fun100499_ip = 218;
-                continue _fun100499
+                _fun100551_ip = 218;
+                continue _fun100551
             }
         case 204:
             var3 = var3.KeyCommandsView;
             var3 = var3.keyModifierControl;
-            _fun100499_ip = 246;
-            continue _fun100499;
+            _fun100551_ip = 246;
+            continue _fun100551;
         case 218:
             var7 = 7;
             var7 = var5[var7];
@@ -79,13 +79,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var0 = function*() { // Environment: var0
                     var0 = function*() { // Original name: ?anon_0_, environment: var0
-                        _fun100502: for (var _fun100502_ip = 0;;) switch (_fun100502_ip) {
+                        _fun100554: for (var _fun100554_ip = 0;;) switch (_fun100554_ip) {
                             case 0:
                                 StartGenerator();
                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                 if (var1) {
-                                    _fun100502_ip = 76;
-                                    continue _fun100502
+                                    _fun100554_ip = 76;
+                                    continue _fun100554
                                 }
                             case 7:
                                 var4 = _closure1_slot0;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 54:
                                 ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                                 if (var3) {
-                                    _fun100502_ip = 73;
-                                    continue _fun100502
+                                    _fun100554_ip = 73;
+                                    continue _fun100554
                                 }
                             case 60:
                                 var3 = var1.navigateToDevTools;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = 'modules/devtools/native/components/DevToolsLazy.tsx';
             var3 = var4.bind(var5)(var3);
             var1 = function() {
-                _fun100503: for (var _fun100503_ip = 0;;) switch (_fun100503_ip) {
+                _fun100555: for (var _fun100555_ip = 0;;) switch (_fun100555_ip) {
                     case 0:
                         var5 = _closure1_slot0;
                         var6 = _closure1_slot1;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = _closure1_slot3;
                         var7 = var8.useEffect;
                         var4 = function() { // Environment: var4
-                            _fun100506: for (var _fun100506_ip = 0;;) switch (_fun100506_ip) {
+                            _fun100558: for (var _fun100558_ip = 0;;) switch (_fun100558_ip) {
                                 case 0:
                                     var3 = _closure1_slot0;
                                     var2 = _closure1_slot1;
@@ -179,21 +179,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var2 = var3.isIOS;
                                     var2 = var2.bind(var3)();
                                     if (!var2) {
-                                        _fun100506_ip = 62;
-                                        continue _fun100506
+                                        _fun100558_ip = 62;
+                                        continue _fun100558
                                     }
                                 case 38:
                                     var3 = _closure1_slot5;
                                     var2 = var3.addChangeListener;
                                     var1 = function() { // Environment: var1
-                                        _fun100507: for (var _fun100507_ip = 0;;) switch (_fun100507_ip) {
+                                        _fun100559: for (var _fun100559_ip = 0;;) switch (_fun100559_ip) {
                                             case 0:
                                                 var0 = _closure1_slot4;
                                                 var2 = var0.NSUserDefaultsBridge;
                                                 var0 = null;
                                                 if (!(var0 != var2)) {
-                                                    _fun100507_ip = 39;
-                                                    continue _fun100507
+                                                    _fun100559_ip = 39;
+                                                    continue _fun100559
                                                 }
                                             case 19:
                                                 var1 = var2.setIsDiscordDeveloper;
@@ -215,25 +215,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var5.bind(var3)(var4);
                         var5 = var6.useKeyCommands;
                         if (var2) {
-                            _fun100503_ip = 148;
-                            continue _fun100503
+                            _fun100555_ip = 148;
+                            continue _fun100555
                         }
                     case 142:
                         var4 = new Array(0);
-                        _fun100503_ip = 152;
-                        continue _fun100503;
+                        _fun100555_ip = 152;
+                        continue _fun100555;
                     case 148:
                         var4 = _closure1_slot8;
                     case 152:
                         var4 = var5.bind(var6)(var4);
                         if (!var2) {
-                            _fun100503_ip = 163;
-                            continue _fun100503
+                            _fun100555_ip = 163;
+                            continue _fun100555
                         }
                     case 160:
                         if (var1) {
-                            _fun100503_ip = 167;
-                            continue _fun100503
+                            _fun100555_ip = 167;
+                            continue _fun100555
                         }
                     case 163:
                         var1 = null;
@@ -254,4 +254,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 5316, 5315, 33, 478, 13077, 11433, 1307, 566, 13071, 13078, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 5326, 5325, 33, 478, 13086, 11444, 1307, 566, 13080, 13087, 2]);

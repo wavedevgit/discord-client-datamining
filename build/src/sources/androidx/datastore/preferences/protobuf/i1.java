@@ -7,20 +7,20 @@ abstract class i1 {
     public static class a implements b {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ g f3812a;
+        final /* synthetic */ g f3818a;
 
         a(g gVar) {
-            this.f3812a = gVar;
+            this.f3818a = gVar;
         }
 
         @Override // androidx.datastore.preferences.protobuf.i1.b
         public byte a(int i10) {
-            return this.f3812a.c(i10);
+            return this.f3818a.c(i10);
         }
 
         @Override // androidx.datastore.preferences.protobuf.i1.b
         public int size() {
-            return this.f3812a.size();
+            return this.f3818a.size();
         }
     }
 
@@ -94,6 +94,6 @@ abstract class i1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static String c(String str) {
-        return a(g.h(str));
+        return a(g.i(str));
     }
 }

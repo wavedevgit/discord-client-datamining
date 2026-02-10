@@ -1,82 +1,49 @@
 package bv;
 
-import bv.c;
-import java.util.List;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.Intrinsics;
+import okio.Buffer;
+import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements tu.b, c {
+public abstract class b {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final b f7229a = new b();
+    /* renamed from: a */
+    private static final char[] f7851a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a extends Lambda implements Function2 {
+    /* JADX WARN: Code restructure failed: missing block: B:429:0x01ac, code lost:
+        return r4;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static final int c(byte[] r18, int r19) {
+        /*
+            Method dump skipped, instructions count: 429
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: bv.b.c(byte[], int):int");
+    }
 
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f7230d = new a();
+    public static final void d(ByteString byteString, Buffer buffer, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(byteString, "<this>");
+        Intrinsics.checkNotNullParameter(buffer, "buffer");
+        buffer.write(byteString.l(), i10, i11);
+    }
 
-        a() {
-            super(2);
+    public static final int e(char c10) {
+        if ('0' <= c10 && c10 < ':') {
+            return c10 - '0';
         }
-
-        public final Boolean a(int i10, int i11) {
-            boolean z10;
-            if (i10 == i11) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            return Boolean.valueOf(z10);
+        if ('a' <= c10 && c10 < 'g') {
+            return c10 - 'W';
         }
-
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+        if ('A' <= c10 && c10 < 'G') {
+            return c10 - '7';
         }
+        throw new IllegalArgumentException("Unexpected hex digit: " + c10);
     }
 
-    private b() {
-    }
-
-    @Override // bv.c, cv.a
-    public Object a(Object obj) {
-        return c.a.f(this, obj);
-    }
-
-    @Override // uu.c
-    public boolean b(List list, Function2 function2) {
-        return c.a.b(this, list, function2);
-    }
-
-    @Override // uu.a
-    public Boolean c(Object obj) {
-        return c.a.g(this, obj);
-    }
-
-    @Override // uu.b
-    public List d(Comparable comparable, Comparable comparable2) {
-        return c.a.d(this, comparable, comparable2);
-    }
-
-    @Override // cv.c
-    public Object e(Object obj) {
-        return c.a.e(this, obj);
-    }
-
-    @Override // uu.b
-    public List g(Comparable comparable, Comparable comparable2) {
-        return c.a.c(this, comparable, comparable2);
-    }
-
-    public boolean h(Object obj, Function2 function2) {
-        return c.a.a(this, obj, function2);
-    }
-
-    @Override // tu.b
-    /* renamed from: i */
-    public Boolean f(Object obj, Object obj2) {
-        return Boolean.valueOf(h(obj, a.f7230d));
+    public static final char[] f() {
+        return f7851a;
     }
 }

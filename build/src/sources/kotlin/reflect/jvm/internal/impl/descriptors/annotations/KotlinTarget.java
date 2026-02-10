@@ -1,5 +1,6 @@
 package kotlin.reflect.jvm.internal.impl.descriptors.annotations;
 
+import as.v;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -11,7 +12,6 @@ import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
-import rr.v;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @SourceDebugExtension({"SMAP\nKotlinTarget.kt\nKotlin\n*S Kotlin\n*F\n+ 1 KotlinTarget.kt\norg/jetbrains/kotlin/descriptors/annotations/KotlinTarget\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,140:1\n774#2:141\n865#2,2:142\n*S KotlinDebug\n*F\n+ 1 KotlinTarget.kt\norg/jetbrains/kotlin/descriptors/annotations/KotlinTarget\n*L\n81#1:141\n81#1:142,2\n*E\n"})
@@ -26,49 +26,49 @@ public final class KotlinTarget {
     private static final /* synthetic */ EnumEntries E;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final HashMap f32124i;
+    private static final HashMap f32346i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Set f32125o;
+    private static final Set f32347o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Set f32126p;
+    private static final Set f32348p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final List f32127q;
+    private static final List f32349q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final List f32128r;
+    private static final List f32350r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final List f32129s;
+    private static final List f32351s;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final List f32130t;
+    private static final List f32352t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final List f32131u;
+    private static final List f32353u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final List f32132v;
+    private static final List f32354v;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final List f32133w;
+    private static final List f32355w;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final List f32134x;
+    private static final List f32356x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final List f32135y;
+    private static final List f32357y;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final List f32136z;
+    private static final List f32358z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f32137d;
+    private final String f32359d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f32138e;
+    private final boolean f32360e;
     public static final KotlinTarget CLASS = new KotlinTarget("CLASS", 0, "class", false, 2, null);
     public static final KotlinTarget ANNOTATION_CLASS = new KotlinTarget("ANNOTATION_CLASS", 1, "annotation class", false, 2, null);
     public static final KotlinTarget TYPE_PARAMETER = new KotlinTarget("TYPE_PARAMETER", 2, "type parameter", false);
@@ -126,40 +126,40 @@ public final class KotlinTarget {
     static {
         KotlinTarget[] a10 = a();
         D = a10;
-        E = yr.a.a(a10);
+        E = hs.a.a(a10);
         Companion = new Companion(null);
-        f32124i = new HashMap();
+        f32346i = new HashMap();
         for (KotlinTarget kotlinTarget : getEntries()) {
-            f32124i.put(kotlinTarget.name(), kotlinTarget);
+            f32346i.put(kotlinTarget.name(), kotlinTarget);
         }
         EnumEntries entries = getEntries();
         ArrayList arrayList = new ArrayList();
         for (Object obj : entries) {
-            if (((KotlinTarget) obj).f32138e) {
+            if (((KotlinTarget) obj).f32360e) {
                 arrayList.add(obj);
             }
         }
-        f32125o = CollectionsKt.l1(arrayList);
-        f32126p = CollectionsKt.l1(getEntries());
+        f32347o = CollectionsKt.l1(arrayList);
+        f32348p = CollectionsKt.l1(getEntries());
         KotlinTarget kotlinTarget2 = ANNOTATION_CLASS;
         KotlinTarget kotlinTarget3 = CLASS;
-        f32127q = CollectionsKt.o(kotlinTarget2, kotlinTarget3);
-        f32128r = CollectionsKt.o(LOCAL_CLASS, kotlinTarget3);
-        f32129s = CollectionsKt.o(CLASS_ONLY, kotlinTarget3);
+        f32349q = CollectionsKt.o(kotlinTarget2, kotlinTarget3);
+        f32350r = CollectionsKt.o(LOCAL_CLASS, kotlinTarget3);
+        f32351s = CollectionsKt.o(CLASS_ONLY, kotlinTarget3);
         KotlinTarget kotlinTarget4 = COMPANION_OBJECT;
         KotlinTarget kotlinTarget5 = OBJECT;
-        f32130t = CollectionsKt.o(kotlinTarget4, kotlinTarget5, kotlinTarget3);
-        f32131u = CollectionsKt.o(STANDALONE_OBJECT, kotlinTarget5, kotlinTarget3);
-        f32132v = CollectionsKt.o(INTERFACE, kotlinTarget3);
-        f32133w = CollectionsKt.o(ENUM_CLASS, kotlinTarget3);
+        f32352t = CollectionsKt.o(kotlinTarget4, kotlinTarget5, kotlinTarget3);
+        f32353u = CollectionsKt.o(STANDALONE_OBJECT, kotlinTarget5, kotlinTarget3);
+        f32354v = CollectionsKt.o(INTERFACE, kotlinTarget3);
+        f32355w = CollectionsKt.o(ENUM_CLASS, kotlinTarget3);
         KotlinTarget kotlinTarget6 = ENUM_ENTRY;
         KotlinTarget kotlinTarget7 = PROPERTY;
         KotlinTarget kotlinTarget8 = FIELD;
-        f32134x = CollectionsKt.o(kotlinTarget6, kotlinTarget7, kotlinTarget8);
+        f32356x = CollectionsKt.o(kotlinTarget6, kotlinTarget7, kotlinTarget8);
         KotlinTarget kotlinTarget9 = PROPERTY_SETTER;
-        f32135y = CollectionsKt.e(kotlinTarget9);
+        f32357y = CollectionsKt.e(kotlinTarget9);
         KotlinTarget kotlinTarget10 = PROPERTY_GETTER;
-        f32136z = CollectionsKt.e(kotlinTarget10);
+        f32358z = CollectionsKt.e(kotlinTarget10);
         A = CollectionsKt.e(FUNCTION);
         KotlinTarget kotlinTarget11 = FILE;
         B = CollectionsKt.e(kotlinTarget11);
@@ -169,8 +169,8 @@ public final class KotlinTarget {
     }
 
     private KotlinTarget(String str, int i10, String str2, boolean z10) {
-        this.f32137d = str2;
-        this.f32138e = z10;
+        this.f32359d = str2;
+        this.f32360e = z10;
     }
 
     private static final /* synthetic */ KotlinTarget[] a() {

@@ -1,92 +1,30 @@
 package no;
 
-import ko.c4;
-import kotlin.jvm.internal.Intrinsics;
+import android.os.Build;
+import java.io.File;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class h {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final String f39007a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final String f39008b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final String f39009c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final String f39010d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final String f39011e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final c4.e f39012f;
-
-    public h(String helpButtonText, String title, String prompt, String tips, String buttonText, c4.e side) {
-        Intrinsics.checkNotNullParameter(helpButtonText, "helpButtonText");
-        Intrinsics.checkNotNullParameter(title, "title");
-        Intrinsics.checkNotNullParameter(prompt, "prompt");
-        Intrinsics.checkNotNullParameter(tips, "tips");
-        Intrinsics.checkNotNullParameter(buttonText, "buttonText");
-        Intrinsics.checkNotNullParameter(side, "side");
-        this.f39007a = helpButtonText;
-        this.f39008b = title;
-        this.f39009c = prompt;
-        this.f39010d = tips;
-        this.f39011e = buttonText;
-        this.f39012f = side;
-    }
-
-    public final String a() {
-        return this.f39011e;
-    }
-
-    public final String b() {
-        return this.f39007a;
-    }
-
-    public final String c() {
-        return this.f39009c;
-    }
-
-    public final c4.e d() {
-        return this.f39012f;
-    }
-
-    public final String e() {
-        return this.f39010d;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
+public abstract class h {
+    public static final boolean a() {
+        String str;
+        String str2;
+        String str3;
+        String str4;
+        String str5;
+        String str6;
+        boolean z10;
+        String str7 = Build.BRAND;
+        if (str7 == null || (str = Build.DEVICE) == null || (str2 = Build.FINGERPRINT) == null || (str3 = Build.HARDWARE) == null || (str4 = Build.MODEL) == null || (str5 = Build.MANUFACTURER) == null || (str6 = Build.PRODUCT) == null) {
             return true;
         }
-        if (!(obj instanceof h)) {
-            return false;
+        if (!new File("/storage/emulated/0/Android/data/com.android.ld.appstore/files").exists() && !new File("/storage/emulated/0/Android/data/com.android.ld.appstore/cache").exists()) {
+            z10 = false;
+        } else {
+            z10 = true;
         }
-        h hVar = (h) obj;
-        if (Intrinsics.areEqual(this.f39007a, hVar.f39007a) && Intrinsics.areEqual(this.f39008b, hVar.f39008b) && Intrinsics.areEqual(this.f39009c, hVar.f39009c) && Intrinsics.areEqual(this.f39010d, hVar.f39010d) && Intrinsics.areEqual(this.f39011e, hVar.f39011e) && this.f39012f == hVar.f39012f) {
+        if ((StringsKt.P(str7, "generic", false, 2, null) && StringsKt.P(str, "generic", false, 2, null)) || StringsKt.P(str2, "generic", false, 2, null) || StringsKt.P(str2, "unknown", false, 2, null) || StringsKt.V(str3, "goldfish", false, 2, null) || StringsKt.V(str3, "ranchu", false, 2, null) || StringsKt.V(str4, "google_sdk", false, 2, null) || StringsKt.V(str4, "Emulator", false, 2, null) || StringsKt.V(str4, "Android SDK built for x86", false, 2, null) || StringsKt.V(str5, "Genymotion", false, 2, null) || StringsKt.V(str6, "sdk_google", false, 2, null) || StringsKt.V(str6, "google_sdk", false, 2, null) || StringsKt.V(str6, "sdk", false, 2, null) || StringsKt.V(str6, "sdk_x86", false, 2, null) || StringsKt.V(str6, "sdk_gphone64_arm64", false, 2, null) || StringsKt.V(str6, "vbox86p", false, 2, null) || StringsKt.V(str6, "emulator", false, 2, null) || StringsKt.V(str6, "simulator", false, 2, null) || z10) {
             return true;
         }
         return false;
-    }
-
-    public final String f() {
-        return this.f39008b;
-    }
-
-    public int hashCode() {
-        return (((((((((this.f39007a.hashCode() * 31) + this.f39008b.hashCode()) * 31) + this.f39009c.hashCode()) * 31) + this.f39010d.hashCode()) * 31) + this.f39011e.hashCode()) * 31) + this.f39012f.hashCode();
-    }
-
-    public String toString() {
-        String str = this.f39007a;
-        String str2 = this.f39008b;
-        String str3 = this.f39009c;
-        String str4 = this.f39010d;
-        String str5 = this.f39011e;
-        c4.e eVar = this.f39012f;
-        return "CaptureTipsViewModel(helpButtonText=" + str + ", title=" + str2 + ", prompt=" + str3 + ", tips=" + str4 + ", buttonText=" + str5 + ", side=" + eVar + ")";
     }
 }

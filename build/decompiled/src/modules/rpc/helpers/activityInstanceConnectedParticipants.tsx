@@ -9,15 +9,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var3;
     var _closure1_slot2 = var7;
     var4 = function() {
-        _fun98487: for (var _fun98487_ip = 0;;) switch (_fun98487_ip) {
+        _fun98543: for (var _fun98543_ip = 0;;) switch (_fun98543_ip) {
             case 0:
                 var3 = _closure1_slot3;
                 var2 = var3.getCurrentEmbeddedActivity;
                 var2 = var2.bind(var3)();
                 var3 = null;
                 if (!(var3 != var2)) {
-                    _fun98487_ip = 168;
-                    continue _fun98487
+                    _fun98543_ip = 168;
+                    continue _fun98543
                 }
             case 28:
                 var5 = _closure1_slot0;
@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var7.from;
                 var2 = var2.userIds;
                 var1 = function(arg0) { // Environment: var1
-                    _fun98488: for (var _fun98488_ip = 0;;) switch (_fun98488_ip) {
+                    _fun98544: for (var _fun98544_ip = 0;;) switch (_fun98544_ip) {
                         case 0:
                             var2 = _closure1_slot4;
                             var1 = var2.getUser;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var1.bind(var2)(var0);
                             var3 = null;
                             if (!(var3 == var5)) {
-                                _fun98488_ip = 31;
-                                continue _fun98488
+                                _fun98544_ip = 31;
+                                continue _fun98544
                             }
                         case 27:
                             var0 = undefined;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = copyDataProperties(var11, var10);
                             var3 = var3 != var1;
                             if (!var3) {
-                                _fun98488_ip = 117;
-                                continue _fun98488
+                                _fun98544_ip = 117;
+                                continue _fun98544
                             }
                         case 114:
                             var2 = var1;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.scope = var3;
     var5 = function() {
         var0 = function(arg0) { // Environment: var0
-            _fun98490: for (var _fun98490_ip = 0;;) switch (_fun98490_ip) {
+            _fun98546: for (var _fun98546_ip = 0;;) switch (_fun98546_ip) {
                 case 0:
                     var0 = arg0;
                     var5 = var0.prevState;
@@ -152,8 +152,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var4.isEqual;
                     var3 = var3.bind(var4)(var0, var5);
                     if (var3) {
-                        _fun98490_ip = 67;
-                        continue _fun98490
+                        _fun98546_ip = 67;
+                        continue _fun98546
                     }
                 case 62:
                     var1 = var2.bind(var1)(var0);
@@ -174,4 +174,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.activityInstanceConnectedParticipantsScope = var3;
     var2.activityInstanceConnectedParticipantsUpdateEvent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1371, 1621, 3357, 3083, 3960, 7979, 1304, 22, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1371, 1621, 3357, 3083, 3960, 7989, 1304, 22, 2]);

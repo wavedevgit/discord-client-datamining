@@ -3,13 +3,13 @@ package cc;
 public final class c implements b {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c f7351b = new c(null);
+    private static final c f8032b = new c(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f7352a;
+    private final Object f8033a;
 
     private c(Object obj) {
-        this.f7352a = obj;
+        this.f8033a = obj;
     }
 
     public static b a(Object obj) {
@@ -18,6 +18,6 @@ public final class c implements b {
 
     @Override // javax.inject.Provider
     public Object get() {
-        return this.f7352a;
+        return this.f8033a;
     }
 }

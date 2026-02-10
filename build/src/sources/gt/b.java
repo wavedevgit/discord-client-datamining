@@ -1,94 +1,70 @@
 package gt;
 
-import java.util.List;
-import jt.k;
 import kotlin.Unit;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function1;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.reflect.KClass;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import kt.u1;
+import kotlin.jvm.internal.TypeIntrinsics;
+import ys.i0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements KSerializer {
+public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KClass f24787a;
+    private final long f25980a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final KSerializer f24788b;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    /* synthetic */ class a extends FunctionReferenceImpl implements Function3 {
 
-    /* renamed from: c  reason: collision with root package name */
-    private final List f24789c;
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f25981d = new a();
 
-    /* renamed from: d  reason: collision with root package name */
-    private final SerialDescriptor f24790d;
+        a() {
+            super(3, b.class, "register", "register(Lkotlinx/coroutines/selects/SelectInstance;Ljava/lang/Object;)V", 0);
+        }
 
-    public b(KClass serializableClass, KSerializer kSerializer, KSerializer[] typeArgumentsSerializers) {
-        Intrinsics.checkNotNullParameter(serializableClass, "serializableClass");
-        Intrinsics.checkNotNullParameter(typeArgumentsSerializers, "typeArgumentsSerializers");
-        this.f24787a = serializableClass;
-        this.f24788b = kSerializer;
-        this.f24789c = kotlin.collections.i.e(typeArgumentsSerializers);
-        this.f24790d = jt.b.c(jt.j.d("kotlinx.serialization.ContextualSerializer", k.a.f30493a, new SerialDescriptor[0], new Function1() { // from class: gt.a
-            @Override // kotlin.jvm.functions.Function1
-            public final Object invoke(Object obj) {
-                Unit b10;
-                b10 = b.b(b.this, (jt.a) obj);
-                return b10;
-            }
-        }), serializableClass);
+        public final void a(b bVar, l lVar, Object obj) {
+            bVar.d(lVar, obj);
+        }
+
+        @Override // kotlin.jvm.functions.Function3
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
+            a((b) obj, (l) obj2, obj3);
+            return Unit.f31987a;
+        }
+    }
+
+    public b(long j10) {
+        this.f25980a = j10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit b(b bVar, jt.a buildSerialDescriptor) {
-        List list;
-        SerialDescriptor descriptor;
-        Intrinsics.checkNotNullParameter(buildSerialDescriptor, "$this$buildSerialDescriptor");
-        KSerializer kSerializer = bVar.f24788b;
-        if (kSerializer != null && (descriptor = kSerializer.getDescriptor()) != null) {
-            list = descriptor.getAnnotations();
-        } else {
-            list = null;
+    public final void d(final l lVar, Object obj) {
+        if (this.f25980a <= 0) {
+            lVar.d(Unit.f31987a);
+            return;
         }
-        if (list == null) {
-            list = CollectionsKt.l();
-        }
-        buildSerialDescriptor.h(list);
-        return Unit.f31765a;
-    }
-
-    private final KSerializer c(nt.b bVar) {
-        KSerializer b10 = bVar.b(this.f24787a, this.f24789c);
-        if (b10 == null) {
-            KSerializer kSerializer = this.f24788b;
-            if (kSerializer != null) {
-                return kSerializer;
+        Runnable runnable = new Runnable() { // from class: gt.a
+            @Override // java.lang.Runnable
+            public final void run() {
+                b.e(l.this, this);
             }
-            u1.f(this.f24787a);
-            throw new rr.h();
-        }
-        return b10;
+        };
+        Intrinsics.checkNotNull(lVar, "null cannot be cast to non-null type kotlinx.coroutines.selects.SelectImplementation<*>");
+        k kVar = (k) lVar;
+        CoroutineContext context = kVar.getContext();
+        kVar.n(i0.c(context).C0(this.f25980a, runnable, context));
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    public Object deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return decoder.G(c(decoder.a()));
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void e(l lVar, b bVar) {
+        lVar.e(bVar, Unit.f31987a);
     }
 
-    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return this.f24790d;
-    }
-
-    @Override // gt.o
-    public void serialize(Encoder encoder, Object value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        encoder.h(c(encoder.a()), value);
+    public final f c() {
+        a aVar = a.f25981d;
+        Intrinsics.checkNotNull(aVar, "null cannot be cast to non-null type kotlin.Function3<@[ParameterName(name = \"clauseObject\")] kotlin.Any, @[ParameterName(name = \"select\")] kotlinx.coroutines.selects.SelectInstance<*>, @[ParameterName(name = \"param\")] kotlin.Any?, kotlin.Unit>");
+        return new g(this, (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(aVar, 3), null, 4, null);
     }
 }

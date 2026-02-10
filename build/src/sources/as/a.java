@@ -1,64 +1,19 @@
 package as;
 
+import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a extends zr.a {
+public final class a {
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* renamed from: as.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0101a {
-        @NotNull
+    /* renamed from: a  reason: collision with root package name */
+    private final Function3 f6050a;
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final C0101a f6033a = new C0101a();
-
-        /* renamed from: b  reason: collision with root package name */
-        public static final Integer f6034b;
-
-        static {
-            Integer num;
-            Object obj;
-            Integer num2 = null;
-            try {
-                obj = Class.forName("android.os.Build$VERSION").getField("SDK_INT").get(null);
-            } catch (Throwable unused) {
-            }
-            if (obj instanceof Integer) {
-                num = (Integer) obj;
-                if (num != null && num.intValue() > 0) {
-                    num2 = num;
-                }
-                f6034b = num2;
-            }
-            num = null;
-            if (num != null) {
-                num2 = num;
-            }
-            f6034b = num2;
-        }
-
-        private C0101a() {
-        }
+    public a(Function3 block) {
+        Intrinsics.checkNotNullParameter(block, "block");
+        this.f6050a = block;
     }
 
-    private final boolean c(int i10) {
-        Integer num = C0101a.f6034b;
-        if (num != null && num.intValue() < i10) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override // zr.a
-    public void a(Throwable cause, Throwable exception) {
-        Intrinsics.checkNotNullParameter(cause, "cause");
-        Intrinsics.checkNotNullParameter(exception, "exception");
-        if (c(19)) {
-            cause.addSuppressed(exception);
-        } else {
-            super.a(cause, exception);
-        }
+    public final Function3 a() {
+        return this.f6050a;
     }
 }

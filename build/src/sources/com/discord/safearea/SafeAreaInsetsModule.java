@@ -5,6 +5,7 @@ import android.os.Build;
 import android.view.Window;
 import androidx.core.graphics.Insets;
 import androidx.core.view.WindowInsetsCompat;
+import as.v;
 import com.discord.codegen.NativeSafeAreaInsetsModuleSpec;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.react.utilities.NativeMapExtensionsKt;
@@ -20,7 +21,6 @@ import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
-import rr.v;
 @Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0006\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\b\u0000\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u0010\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016J\n\u0010\f\u001a\u0004\u0018\u00010\rH\u0016J\u0010\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000bH\u0016J\u0010\u0010\u0011\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000bH\u0016J\u0010\u0010\u0012\u001a\u00020\u000f2\u0006\u0010\u0013\u001a\u00020\u000bH\u0016R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007¨\u0006\u0014"}, d2 = {"Lcom/discord/safearea/SafeAreaInsetsModule;", "Lcom/discord/codegen/NativeSafeAreaInsetsModuleSpec;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getReactContext", "()Lcom/facebook/react/bridge/ReactApplicationContext;", "getImeInsets", "", "exludeSytemBars", "", "getStableSafeAreaInsets", "Lcom/facebook/react/bridge/WritableMap;", "setStatusBarVisible", "", ViewProps.VISIBLE, "setNavigationBarVisible", "setNavigationBarContrastEnforced", "enforced", "safe_area_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nSafeAreaInsetsModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SafeAreaInsetsModule.kt\ncom/discord/safearea/SafeAreaInsetsModule\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,112:1\n1#2:113\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -95,7 +95,7 @@ public final class SafeAreaInsetsModule extends NativeSafeAreaInsetsModuleSpec {
         }
         int i11 = 0;
         if (windowInsetsCompat != null && (imeInsets$default = WindowInsetsCompatExtensionsKt.getImeInsets$default(windowInsetsCompat, false, 1, null)) != null) {
-            i10 = imeInsets$default.f3304d;
+            i10 = imeInsets$default.f3307d;
         } else {
             i10 = 0;
         }
@@ -108,7 +108,7 @@ public final class SafeAreaInsetsModule extends NativeSafeAreaInsetsModuleSpec {
                 insets = WindowInsetsCompatExtensionsKt.getSystemBarInsets$default(windowInsetsCompat, currentActivity2, false, 2, null);
             }
             if (insets != null) {
-                i11 = insets.f3304d;
+                i11 = insets.f3307d;
             }
         }
         if (i11 == i10 && Build.VERSION.SDK_INT <= 29) {
@@ -144,7 +144,7 @@ public final class SafeAreaInsetsModule extends NativeSafeAreaInsetsModuleSpec {
         }
         Insets displayCutoutInsets = WindowInsetsCompatExtensionsKt.getDisplayCutoutInsets(windowInsetsCompat, true);
         Insets systemBarInsets = WindowInsetsCompatExtensionsKt.getSystemBarInsets(windowInsetsCompat, currentActivity, true);
-        return (WritableMap) function4.invoke(Integer.valueOf(Math.max(displayCutoutInsets.f3301a, systemBarInsets.f3301a)), Integer.valueOf(Math.max(displayCutoutInsets.f3302b, systemBarInsets.f3302b)), Integer.valueOf(Math.max(displayCutoutInsets.f3303c, systemBarInsets.f3303c)), Integer.valueOf(Math.max(displayCutoutInsets.f3304d, systemBarInsets.f3304d)));
+        return (WritableMap) function4.invoke(Integer.valueOf(Math.max(displayCutoutInsets.f3304a, systemBarInsets.f3304a)), Integer.valueOf(Math.max(displayCutoutInsets.f3305b, systemBarInsets.f3305b)), Integer.valueOf(Math.max(displayCutoutInsets.f3306c, systemBarInsets.f3306c)), Integer.valueOf(Math.max(displayCutoutInsets.f3307d, systemBarInsets.f3307d)));
     }
 
     @Override // com.discord.codegen.NativeSafeAreaInsetsModuleSpec

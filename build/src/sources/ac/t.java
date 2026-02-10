@@ -37,7 +37,7 @@ public class t implements s {
     public static t c() {
         u uVar = f619e;
         if (uVar != null) {
-            return uVar.g();
+            return uVar.h();
         }
         throw new IllegalStateException("Not initialized!");
     }
@@ -54,7 +54,7 @@ public class t implements s {
             synchronized (t.class) {
                 try {
                     if (f619e == null) {
-                        f619e = e.k().a(context).build();
+                        f619e = e.i().a(context).build();
                     }
                 } catch (Throwable th2) {
                     throw th2;

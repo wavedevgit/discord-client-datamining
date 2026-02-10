@@ -10,62 +10,62 @@ import com.facebook.react.views.text.ReactFontManager;
 public class y {
 
     /* renamed from: p  reason: collision with root package name */
-    static final y f17208p = new y();
+    static final y f17957p = new y();
 
     /* renamed from: a  reason: collision with root package name */
-    final double f17209a;
+    final double f17958a;
 
     /* renamed from: b  reason: collision with root package name */
-    final String f17210b;
+    final String f17959b;
 
     /* renamed from: c  reason: collision with root package name */
-    final z0 f17211c;
+    final z0 f17960c;
 
     /* renamed from: d  reason: collision with root package name */
-    final ReadableMap f17212d;
+    final ReadableMap f17961d;
 
     /* renamed from: e  reason: collision with root package name */
-    b1 f17213e;
+    b1 f17962e;
 
     /* renamed from: f  reason: collision with root package name */
-    int f17214f;
+    int f17963f;
 
     /* renamed from: g  reason: collision with root package name */
-    final String f17215g;
+    final String f17964g;
 
     /* renamed from: h  reason: collision with root package name */
-    final String f17216h;
+    final String f17965h;
 
     /* renamed from: i  reason: collision with root package name */
-    final a1 f17217i;
+    final a1 f17966i;
 
     /* renamed from: j  reason: collision with root package name */
-    final c1 f17218j;
+    final c1 f17967j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final d1 f17219k;
+    private final d1 f17968k;
 
     /* renamed from: l  reason: collision with root package name */
-    final double f17220l;
+    final double f17969l;
 
     /* renamed from: m  reason: collision with root package name */
-    final double f17221m;
+    final double f17970m;
 
     /* renamed from: n  reason: collision with root package name */
-    final double f17222n;
+    final double f17971n;
 
     /* renamed from: o  reason: collision with root package name */
-    final boolean f17223o;
+    final boolean f17972o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final b1[] f17224a;
+        private static final b1[] f17973a;
 
         /* renamed from: b  reason: collision with root package name */
-        private static final int[] f17225b;
+        private static final int[] f17974b;
 
         static {
             b1 b1Var = b1.w100;
@@ -77,8 +77,8 @@ public class y {
             b1 b1Var7 = b1.Bold;
             b1 b1Var8 = b1.w800;
             b1 b1Var9 = b1.w900;
-            f17224a = new b1[]{b1Var, b1Var, b1Var2, b1Var3, b1Var4, b1Var5, b1Var6, b1Var7, b1Var8, b1Var9, b1Var9};
-            f17225b = new int[]{ReactFontManager.TypefaceStyle.NORMAL, ReactFontManager.TypefaceStyle.BOLD, 100, androidx.recyclerview.widget.h.DEFAULT_DRAG_ANIMATION_DURATION, ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS, ReactFontManager.TypefaceStyle.NORMAL, 500, 600, ReactFontManager.TypefaceStyle.BOLD, 800, 900};
+            f17973a = new b1[]{b1Var, b1Var, b1Var2, b1Var3, b1Var4, b1Var5, b1Var6, b1Var7, b1Var8, b1Var9, b1Var9};
+            f17974b = new int[]{ReactFontManager.TypefaceStyle.NORMAL, ReactFontManager.TypefaceStyle.BOLD, 100, androidx.recyclerview.widget.h.DEFAULT_DRAG_ANIMATION_DURATION, ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS, ReactFontManager.TypefaceStyle.NORMAL, 500, 600, ReactFontManager.TypefaceStyle.BOLD, 800, 900};
         }
 
         private static int a(int i10) {
@@ -96,12 +96,12 @@ public class y {
 
         static int b(b1 b1Var, y yVar) {
             if (b1Var == b1.Bolder) {
-                return a(yVar.f17214f);
+                return a(yVar.f17963f);
             }
             if (b1Var == b1.Lighter) {
-                return c(yVar.f17214f);
+                return c(yVar.f17963f);
             }
-            return f17225b[b1Var.ordinal()];
+            return f17974b[b1Var.ordinal()];
         }
 
         private static int c(int i10) {
@@ -115,42 +115,42 @@ public class y {
         }
 
         static b1 d(int i10) {
-            return f17224a[Math.round(i10 / 100.0f)];
+            return f17973a[Math.round(i10 / 100.0f)];
         }
     }
 
     private y() {
-        this.f17212d = null;
-        this.f17210b = "";
-        this.f17211c = z0.normal;
-        this.f17213e = b1.Normal;
-        this.f17214f = ReactFontManager.TypefaceStyle.NORMAL;
-        this.f17215g = "";
-        this.f17216h = "";
-        this.f17217i = a1.normal;
-        this.f17218j = c1.start;
-        this.f17219k = d1.None;
-        this.f17223o = false;
-        this.f17220l = 0.0d;
-        this.f17209a = 12.0d;
-        this.f17221m = 0.0d;
-        this.f17222n = 0.0d;
+        this.f17961d = null;
+        this.f17959b = "";
+        this.f17960c = z0.normal;
+        this.f17962e = b1.Normal;
+        this.f17963f = ReactFontManager.TypefaceStyle.NORMAL;
+        this.f17964g = "";
+        this.f17965h = "";
+        this.f17966i = a1.normal;
+        this.f17967j = c1.start;
+        this.f17968k = d1.None;
+        this.f17972o = false;
+        this.f17969l = 0.0d;
+        this.f17958a = 12.0d;
+        this.f17970m = 0.0d;
+        this.f17971n = 0.0d;
     }
 
     private void a(y yVar, double d10) {
         long round = Math.round(d10);
         if (round >= 1 && round <= 1000) {
             int i10 = (int) round;
-            this.f17214f = i10;
-            this.f17213e = a.d(i10);
+            this.f17963f = i10;
+            this.f17962e = a.d(i10);
             return;
         }
         b(yVar);
     }
 
     private void b(y yVar) {
-        this.f17214f = yVar.f17214f;
-        this.f17213e = yVar.f17213e;
+        this.f17963f = yVar.f17963f;
+        this.f17962e = yVar.f17962e;
     }
 
     private double c(ReadableMap readableMap, String str, double d10, double d11, double d12) {
@@ -169,11 +169,11 @@ public class y {
         d1 d1Var;
         double d11;
         double d12;
-        double d13 = yVar.f17209a;
+        double d13 = yVar.f17958a;
         if (readableMap.hasKey(ViewProps.FONT_SIZE)) {
-            this.f17209a = c(readableMap, ViewProps.FONT_SIZE, 1.0d, d13, d13);
+            this.f17958a = c(readableMap, ViewProps.FONT_SIZE, 1.0d, d13, d13);
         } else {
-            this.f17209a = d13;
+            this.f17958a = d13;
         }
         if (readableMap.hasKey(ViewProps.FONT_WEIGHT)) {
             if (readableMap.getType(ViewProps.FONT_WEIGHT) == ReadableType.Number) {
@@ -182,8 +182,8 @@ public class y {
                 String string = readableMap.getString(ViewProps.FONT_WEIGHT);
                 if (b1.e(string)) {
                     int b10 = a.b(b1.d(string), yVar);
-                    this.f17214f = b10;
-                    this.f17213e = a.d(b10);
+                    this.f17963f = b10;
+                    this.f17962e = a.d(b10);
                 } else if (string != null) {
                     a(yVar, Double.parseDouble(string));
                 } else {
@@ -193,53 +193,53 @@ public class y {
         } else {
             b(yVar);
         }
-        this.f17212d = readableMap.hasKey("fontData") ? readableMap.getMap("fontData") : yVar.f17212d;
-        this.f17210b = readableMap.hasKey(ViewProps.FONT_FAMILY) ? readableMap.getString(ViewProps.FONT_FAMILY) : yVar.f17210b;
-        this.f17211c = readableMap.hasKey(ViewProps.FONT_STYLE) ? z0.valueOf(readableMap.getString(ViewProps.FONT_STYLE)) : yVar.f17211c;
+        this.f17961d = readableMap.hasKey("fontData") ? readableMap.getMap("fontData") : yVar.f17961d;
+        this.f17959b = readableMap.hasKey(ViewProps.FONT_FAMILY) ? readableMap.getString(ViewProps.FONT_FAMILY) : yVar.f17959b;
+        this.f17960c = readableMap.hasKey(ViewProps.FONT_STYLE) ? z0.valueOf(readableMap.getString(ViewProps.FONT_STYLE)) : yVar.f17960c;
         if (readableMap.hasKey("fontFeatureSettings")) {
             str = readableMap.getString("fontFeatureSettings");
         } else {
-            str = yVar.f17215g;
+            str = yVar.f17964g;
         }
-        this.f17215g = str;
+        this.f17964g = str;
         if (readableMap.hasKey("fontVariationSettings")) {
             str2 = readableMap.getString("fontVariationSettings");
         } else {
-            str2 = yVar.f17216h;
+            str2 = yVar.f17965h;
         }
-        this.f17216h = str2;
+        this.f17965h = str2;
         if (readableMap.hasKey("fontVariantLigatures")) {
             a1Var = a1.valueOf(readableMap.getString("fontVariantLigatures"));
         } else {
-            a1Var = yVar.f17217i;
+            a1Var = yVar.f17966i;
         }
-        this.f17217i = a1Var;
+        this.f17966i = a1Var;
         if (readableMap.hasKey("textAnchor")) {
             c1Var = c1.valueOf(readableMap.getString("textAnchor"));
         } else {
-            c1Var = yVar.f17218j;
+            c1Var = yVar.f17967j;
         }
-        this.f17218j = c1Var;
+        this.f17967j = c1Var;
         if (readableMap.hasKey("textDecoration")) {
             d1Var = d1.d(readableMap.getString("textDecoration"));
         } else {
-            d1Var = yVar.f17219k;
+            d1Var = yVar.f17968k;
         }
-        this.f17219k = d1Var;
+        this.f17968k = d1Var;
         boolean hasKey = readableMap.hasKey("kerning");
-        this.f17223o = hasKey || yVar.f17223o;
-        this.f17220l = hasKey ? c(readableMap, "kerning", d10, this.f17209a, 0.0d) : yVar.f17220l;
+        this.f17972o = hasKey || yVar.f17972o;
+        this.f17969l = hasKey ? c(readableMap, "kerning", d10, this.f17958a, 0.0d) : yVar.f17969l;
         if (readableMap.hasKey("wordSpacing")) {
-            d11 = c(readableMap, "wordSpacing", d10, this.f17209a, 0.0d);
+            d11 = c(readableMap, "wordSpacing", d10, this.f17958a, 0.0d);
         } else {
-            d11 = yVar.f17221m;
+            d11 = yVar.f17970m;
         }
-        this.f17221m = d11;
+        this.f17970m = d11;
         if (readableMap.hasKey(ViewProps.LETTER_SPACING)) {
-            d12 = c(readableMap, ViewProps.LETTER_SPACING, d10, this.f17209a, 0.0d);
+            d12 = c(readableMap, ViewProps.LETTER_SPACING, d10, this.f17958a, 0.0d);
         } else {
-            d12 = yVar.f17222n;
+            d12 = yVar.f17971n;
         }
-        this.f17222n = d12;
+        this.f17971n = d12;
     }
 }

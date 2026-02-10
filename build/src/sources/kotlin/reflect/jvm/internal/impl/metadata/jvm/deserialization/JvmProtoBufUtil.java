@@ -26,13 +26,13 @@ public final class JvmProtoBufUtil {
     public static final JvmProtoBufUtil INSTANCE = new JvmProtoBufUtil();
 
     /* renamed from: a */
-    private static final ExtensionRegistryLite f33573a;
+    private static final ExtensionRegistryLite f33795a;
 
     static {
         ExtensionRegistryLite newInstance = ExtensionRegistryLite.newInstance();
         JvmProtoBuf.registerAllExtensions(newInstance);
         Intrinsics.checkNotNullExpressionValue(newInstance, "apply(...)");
-        f33573a = newInstance;
+        f33795a = newInstance;
     }
 
     private JvmProtoBufUtil() {
@@ -46,7 +46,7 @@ public final class JvmProtoBufUtil {
     }
 
     private final JvmNameResolver b(InputStream inputStream, String[] strArr) {
-        JvmProtoBuf.StringTableTypes parseDelimitedFrom = JvmProtoBuf.StringTableTypes.parseDelimitedFrom(inputStream, f33573a);
+        JvmProtoBuf.StringTableTypes parseDelimitedFrom = JvmProtoBuf.StringTableTypes.parseDelimitedFrom(inputStream, f33795a);
         Intrinsics.checkNotNullExpressionValue(parseDelimitedFrom, "parseDelimitedFrom(...)");
         return new JvmNameResolver(parseDelimitedFrom, strArr);
     }
@@ -82,7 +82,7 @@ public final class JvmProtoBufUtil {
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(strings, "strings");
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(BitEncoding.decodeBytes(data));
-        return new Pair<>(INSTANCE.b(byteArrayInputStream, strings), ProtoBuf.Function.parseFrom(byteArrayInputStream, f33573a));
+        return new Pair<>(INSTANCE.b(byteArrayInputStream, strings), ProtoBuf.Function.parseFrom(byteArrayInputStream, f33795a));
     }
 
     @NotNull
@@ -96,7 +96,7 @@ public final class JvmProtoBufUtil {
 
     @NotNull
     public final ExtensionRegistryLite getEXTENSION_REGISTRY() {
-        return f33573a;
+        return f33795a;
     }
 
     public final JvmMemberSignature.Method getJvmConstructorSignature(@NotNull ProtoBuf.Constructor proto, @NotNull NameResolver nameResolver, @NotNull TypeTable typeTable) {
@@ -220,7 +220,7 @@ public final class JvmProtoBufUtil {
         Intrinsics.checkNotNullParameter(bytes, "bytes");
         Intrinsics.checkNotNullParameter(strings, "strings");
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(bytes);
-        return new Pair<>(INSTANCE.b(byteArrayInputStream, strings), ProtoBuf.Class.parseFrom(byteArrayInputStream, f33573a));
+        return new Pair<>(INSTANCE.b(byteArrayInputStream, strings), ProtoBuf.Class.parseFrom(byteArrayInputStream, f33795a));
     }
 
     @NotNull
@@ -228,6 +228,6 @@ public final class JvmProtoBufUtil {
         Intrinsics.checkNotNullParameter(bytes, "bytes");
         Intrinsics.checkNotNullParameter(strings, "strings");
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(bytes);
-        return new Pair<>(INSTANCE.b(byteArrayInputStream, strings), ProtoBuf.Package.parseFrom(byteArrayInputStream, f33573a));
+        return new Pair<>(INSTANCE.b(byteArrayInputStream, strings), ProtoBuf.Package.parseFrom(byteArrayInputStream, f33795a));
     }
 }

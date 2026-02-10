@@ -12,17 +12,17 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaRecordComponent extends ReflectJavaMember implements JavaRecordComponent {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f32416a;
+    private final Object f32638a;
 
     public ReflectJavaRecordComponent(@NotNull Object recordComponent) {
         Intrinsics.checkNotNullParameter(recordComponent, "recordComponent");
-        this.f32416a = recordComponent;
+        this.f32638a = recordComponent;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaMember
     @NotNull
     public Member getMember() {
-        Method c10 = Java16RecordComponentsLoader.f32372a.c(this.f32416a);
+        Method c10 = Java16RecordComponentsLoader.f32594a.c(this.f32638a);
         if (c10 != null) {
             return c10;
         }
@@ -32,7 +32,7 @@ public final class ReflectJavaRecordComponent extends ReflectJavaMember implemen
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaRecordComponent
     @NotNull
     public JavaType getType() {
-        Class d10 = Java16RecordComponentsLoader.f32372a.d(this.f32416a);
+        Class d10 = Java16RecordComponentsLoader.f32594a.d(this.f32638a);
         if (d10 != null) {
             return new ReflectJavaClassifierType(d10);
         }

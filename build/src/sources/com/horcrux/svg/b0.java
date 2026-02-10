@@ -8,25 +8,25 @@ import java.util.ArrayList;
 class b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayList f16945a;
+    private final ArrayList f17694a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int[][] f16946b;
+    private final int[][] f17695b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Paint f16947c;
+    private final Paint f17696c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b0(Paint paint) {
         ArrayList arrayList = new ArrayList();
-        this.f16945a = arrayList;
-        this.f16946b = new int[IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER];
-        this.f16947c = paint;
+        this.f17694a = arrayList;
+        this.f17695b = new int[IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER];
+        this.f17696c = paint;
         arrayList.add(new Path());
     }
 
     private int a(char c10) {
-        int[] iArr = this.f16946b[c10 >> '\b'];
+        int[] iArr = this.f17695b[c10 >> '\b'];
         if (iArr == null) {
             return 0;
         }
@@ -38,19 +38,19 @@ class b0 {
         Path path;
         int a10 = a(c10);
         if (a10 != 0) {
-            path = (Path) this.f16945a.get(a10);
+            path = (Path) this.f17694a.get(a10);
         } else {
             Path path2 = new Path();
-            this.f16947c.getTextPath(str, 0, 1, 0.0f, 0.0f, path2);
-            int[][] iArr = this.f16946b;
+            this.f17696c.getTextPath(str, 0, 1, 0.0f, 0.0f, path2);
+            int[][] iArr = this.f17695b;
             int i10 = c10 >> '\b';
             int[] iArr2 = iArr[i10];
             if (iArr2 == null) {
                 iArr2 = new int[IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER];
                 iArr[i10] = iArr2;
             }
-            iArr2[c10 & 255] = this.f16945a.size();
-            this.f16945a.add(path2);
+            iArr2[c10 & 255] = this.f17694a.size();
+            this.f17694a.add(path2);
             path = path2;
         }
         Path path3 = new Path();

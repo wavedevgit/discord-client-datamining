@@ -14,41 +14,41 @@ public final class Surrogates {
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ Surrogates m864boximpl(String str) {
+    public static final /* synthetic */ Surrogates m865boximpl(String str) {
         return new Surrogates(str);
     }
 
     @NotNull
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static String m865constructorimpl(@NotNull String value) {
+    public static String m866constructorimpl(@NotNull String value) {
         Intrinsics.checkNotNullParameter(value, "value");
         return value;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m866equalsimpl(String str, Object obj) {
-        return (obj instanceof Surrogates) && Intrinsics.areEqual(str, ((Surrogates) obj).m873unboximpl());
+    public static boolean m867equalsimpl(String str, Object obj) {
+        return (obj instanceof Surrogates) && Intrinsics.areEqual(str, ((Surrogates) obj).m874unboximpl());
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m867equalsimpl0(String str, String str2) {
+    public static final boolean m868equalsimpl0(String str, String str2) {
         return Intrinsics.areEqual(str, str2);
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m868hashCodeimpl(String str) {
+    public static int m869hashCodeimpl(String str) {
         return str.hashCode();
     }
 
     @NotNull
     /* renamed from: toAssetUrl-impl  reason: not valid java name */
-    public static final String m869toAssetUrlimpl(String str) {
-        String m870toCodePointsimpl = m870toCodePointsimpl(str);
-        return "asset:///emoji-" + m870toCodePointsimpl + ".png";
+    public static final String m870toAssetUrlimpl(String str) {
+        String m871toCodePointsimpl = m871toCodePointsimpl(str);
+        return "asset:///emoji-" + m871toCodePointsimpl + ".png";
     }
 
     /* renamed from: toCodePoints-impl  reason: not valid java name */
-    private static final String m870toCodePointsimpl(String str) {
+    private static final String m871toCodePointsimpl(String str) {
         StringBuilder sb2 = new StringBuilder();
         int i10 = 0;
         while (i10 < str.length()) {
@@ -63,20 +63,20 @@ public final class Surrogates {
     }
 
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m871toStringimpl(String str) {
+    public static String m872toStringimpl(String str) {
         return "Surrogates(value=" + str + ")";
     }
 
     @NotNull
     /* renamed from: withoutDiversity-impl  reason: not valid java name */
-    public static final String m872withoutDiversityimpl(String str) {
+    public static final String m873withoutDiversityimpl(String str) {
         char[] chars = Character.toChars(str.codePointAt(0));
         Intrinsics.checkNotNullExpressionValue(chars, "toChars(...)");
         return kotlin.collections.i.t0(chars, "", null, null, 0, null, null, 62, null);
     }
 
     public boolean equals(Object obj) {
-        return m866equalsimpl(this.value, obj);
+        return m867equalsimpl(this.value, obj);
     }
 
     @NotNull
@@ -85,15 +85,15 @@ public final class Surrogates {
     }
 
     public int hashCode() {
-        return m868hashCodeimpl(this.value);
+        return m869hashCodeimpl(this.value);
     }
 
     public String toString() {
-        return m871toStringimpl(this.value);
+        return m872toStringimpl(this.value);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ String m873unboximpl() {
+    public final /* synthetic */ String m874unboximpl() {
         return this.value;
     }
 }

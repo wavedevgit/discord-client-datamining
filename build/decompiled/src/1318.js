@@ -126,7 +126,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1.view = var4;
                     var4 = null;
                     if (!(var4 == var2)) {
-                        _fun14808_ip = 209;
+                        _fun14808_ip = 213;
                         continue _fun14808
                     }
                 case 167:
@@ -145,7 +145,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var12 = var4;
                     var3 = new var12[var6](var11, var10, var9);
                     var2 = var3 instanceof Object ? var3 : var4;
-                case 209:
+                case 213:
                     var1.textDecoder = var2;
                     return var0;
             }

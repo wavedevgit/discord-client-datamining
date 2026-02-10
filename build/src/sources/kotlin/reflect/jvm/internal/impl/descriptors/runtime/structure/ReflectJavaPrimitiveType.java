@@ -12,31 +12,31 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaPrimitiveType extends ReflectJavaType implements JavaPrimitiveType {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Class f32413a;
+    private final Class f32635a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Collection f32414b;
+    private final Collection f32636b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f32415c;
+    private final boolean f32637c;
 
     public ReflectJavaPrimitiveType(@NotNull Class<?> reflectType) {
         Intrinsics.checkNotNullParameter(reflectType, "reflectType");
-        this.f32413a = reflectType;
-        this.f32414b = CollectionsKt.l();
+        this.f32635a = reflectType;
+        this.f32636b = CollectionsKt.l();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaType
     /* renamed from: a */
     public Class getReflectType() {
-        return this.f32413a;
+        return this.f32635a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationOwner
     @NotNull
     public Collection<JavaAnnotation> getAnnotations() {
-        return this.f32414b;
+        return this.f32636b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaPrimitiveType
@@ -49,6 +49,6 @@ public final class ReflectJavaPrimitiveType extends ReflectJavaType implements J
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationOwner
     public boolean isDeprecatedInJavaDoc() {
-        return this.f32415c;
+        return this.f32637c;
     }
 }

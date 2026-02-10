@@ -1,7 +1,22 @@
 package hk;
 
-import hk.u;
-import java.util.RandomAccess;
+import rg.ik;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-abstract class q extends c implements u.b, RandomAccess, r0 {
+public final class q {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final r f27401a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final wj.d f27402b;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public q(r rVar, wj.d dVar) {
+        this.f27401a = rVar;
+        this.f27402b = dVar;
+    }
+
+    public final gk.c a(gk.d dVar) {
+        return new p((d) this.f27401a.b(dVar), this.f27402b.a(dVar.a()), ik.b(dVar.b()), dVar);
+    }
 }

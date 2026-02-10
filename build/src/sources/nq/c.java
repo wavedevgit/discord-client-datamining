@@ -1,21 +1,10 @@
 package nq;
 
-import android.content.Context;
-import android.graphics.drawable.Drawable;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyle;
 import kotlin.jvm.internal.Intrinsics;
-import sp.s;
-import sp.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {
-    public static final Drawable a(StepStyle stepStyle, Context context) {
-        Integer g10;
-        Intrinsics.checkNotNullParameter(stepStyle, "<this>");
-        Intrinsics.checkNotNullParameter(context, "context");
-        String backgroundImageName = stepStyle.getBackgroundImageName();
-        if (backgroundImageName == null || (g10 = s.g(context, backgroundImageName, t.f50010e)) == null) {
-            return null;
-        }
-        return androidx.core.content.a.e(context, g10.intValue());
+    public static final g a(b bVar) {
+        Intrinsics.checkNotNullParameter(bVar, "<this>");
+        return new g(bVar.getComponents(), bVar.E0(), bVar.getStyles());
     }
 }

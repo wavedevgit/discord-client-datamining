@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/explicit_media_redaction/SensitiveMediaRedactionSettingUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun39485: for (var _fun39485_ip = 0;;) switch (_fun39485_ip) {
+        _fun39538: for (var _fun39538_ip = 0;;) switch (_fun39538_ip) {
             case 0:
                 var2 = arg0;
                 var3 = _closure1_slot0;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.BLUR;
                 var0 = var2 === var0;
                 if (var0) {
-                    _fun39485_ip = 79;
-                    continue _fun39485
+                    _fun39538_ip = 79;
+                    continue _fun39538
                 }
             case 46:
                 var3 = _closure1_slot0;

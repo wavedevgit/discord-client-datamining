@@ -14,26 +14,26 @@ import org.jetbrains.annotations.NotNull;
 public final class Checks {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Name f34540a;
+    private final Name f34762a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Regex f34541b;
+    private final Regex f34763b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Collection f34542c;
+    private final Collection f34764c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function1 f34543d;
+    private final Function1 f34765d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Check[] f34544e;
+    private final Check[] f34766e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f34545d = new a();
+        public static final a f34767d = new a();
 
         a() {
         }
@@ -51,7 +51,7 @@ public final class Checks {
     public static final class b implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f34546d = new b();
+        public static final b f34768d = new b();
 
         b() {
         }
@@ -69,7 +69,7 @@ public final class Checks {
     public static final class c implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f34547d = new c();
+        public static final c f34769d = new c();
 
         c() {
         }
@@ -83,23 +83,23 @@ public final class Checks {
     }
 
     private Checks(Name name, Regex regex, Collection collection, Function1 function1, Check... checkArr) {
-        this.f34540a = name;
-        this.f34541b = regex;
-        this.f34542c = collection;
-        this.f34543d = function1;
-        this.f34544e = checkArr;
+        this.f34762a = name;
+        this.f34763b = regex;
+        this.f34764c = collection;
+        this.f34765d = function1;
+        this.f34766e = checkArr;
     }
 
     @NotNull
     public final CheckResult checkAll(@NotNull FunctionDescriptor functionDescriptor) {
         Intrinsics.checkNotNullParameter(functionDescriptor, "functionDescriptor");
-        for (Check check : this.f34544e) {
+        for (Check check : this.f34766e) {
             String invoke = check.invoke(functionDescriptor);
             if (invoke != null) {
                 return new CheckResult.IllegalSignature(invoke);
             }
         }
-        String str = (String) this.f34543d.invoke(functionDescriptor);
+        String str = (String) this.f34765d.invoke(functionDescriptor);
         if (str != null) {
             return new CheckResult.IllegalSignature(str);
         }
@@ -108,17 +108,17 @@ public final class Checks {
 
     public final boolean isApplicable(@NotNull FunctionDescriptor functionDescriptor) {
         Intrinsics.checkNotNullParameter(functionDescriptor, "functionDescriptor");
-        if (this.f34540a != null && !Intrinsics.areEqual(functionDescriptor.getName(), this.f34540a)) {
+        if (this.f34762a != null && !Intrinsics.areEqual(functionDescriptor.getName(), this.f34762a)) {
             return false;
         }
-        if (this.f34541b != null) {
+        if (this.f34763b != null) {
             String asString = functionDescriptor.getName().asString();
             Intrinsics.checkNotNullExpressionValue(asString, "asString(...)");
-            if (!this.f34541b.i(asString)) {
+            if (!this.f34763b.i(asString)) {
                 return false;
             }
         }
-        Collection collection = this.f34542c;
+        Collection collection = this.f34764c;
         if (collection != null && !collection.contains(functionDescriptor.getName())) {
             return false;
         }
@@ -126,7 +126,7 @@ public final class Checks {
     }
 
     public /* synthetic */ Checks(Name name, Check[] checkArr, Function1 function1, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(name, checkArr, (i10 & 4) != 0 ? a.f34545d : function1);
+        this(name, checkArr, (i10 & 4) != 0 ? a.f34767d : function1);
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
@@ -138,7 +138,7 @@ public final class Checks {
     }
 
     public /* synthetic */ Checks(Regex regex, Check[] checkArr, Function1 function1, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(regex, checkArr, (i10 & 4) != 0 ? b.f34546d : function1);
+        this(regex, checkArr, (i10 & 4) != 0 ? b.f34768d : function1);
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
@@ -150,7 +150,7 @@ public final class Checks {
     }
 
     public /* synthetic */ Checks(Collection collection, Check[] checkArr, Function1 function1, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(collection, checkArr, (i10 & 4) != 0 ? c.f34547d : function1);
+        this(collection, checkArr, (i10 & 4) != 0 ? c.f34769d : function1);
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

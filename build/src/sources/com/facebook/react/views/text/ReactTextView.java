@@ -16,7 +16,7 @@ import android.view.MotionEvent;
 import android.view.ViewGroup;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.s0;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import androidx.customview.widget.ExploreByTouchHelper;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactContext;
@@ -117,10 +117,10 @@ public class ReactTextView extends AppCompatTextView implements ReactCompoundVie
 
     @Override // android.view.View
     protected boolean dispatchHoverEvent(MotionEvent motionEvent) {
-        if (h0.N(this)) {
-            androidx.core.view.a l10 = h0.l(this);
-            if (l10 instanceof ExploreByTouchHelper) {
-                if (!((ExploreByTouchHelper) l10).dispatchHoverEvent(motionEvent) && !super.dispatchHoverEvent(motionEvent)) {
+        if (i0.M(this)) {
+            androidx.core.view.a k10 = i0.k(this);
+            if (k10 instanceof ExploreByTouchHelper) {
+                if (!((ExploreByTouchHelper) k10).dispatchHoverEvent(motionEvent) && !super.dispatchHoverEvent(motionEvent)) {
                     return false;
                 }
                 return true;
@@ -131,8 +131,8 @@ public class ReactTextView extends AppCompatTextView implements ReactCompoundVie
 
     @Override // android.view.View
     public boolean dispatchKeyEvent(KeyEvent keyEvent) {
-        androidx.core.view.a l10 = h0.l(this);
-        if ((l10 != null && getMovementMethod() == null && (l10 instanceof ReactTextViewAccessibilityDelegate) && ((ReactTextViewAccessibilityDelegate) l10).dispatchKeyEvent(keyEvent)) || super.dispatchKeyEvent(keyEvent)) {
+        androidx.core.view.a k10 = i0.k(this);
+        if ((k10 != null && getMovementMethod() == null && (k10 instanceof ReactTextViewAccessibilityDelegate) && ((ReactTextViewAccessibilityDelegate) k10).dispatchKeyEvent(keyEvent)) || super.dispatchKeyEvent(keyEvent)) {
             return true;
         }
         return false;
@@ -305,9 +305,9 @@ public class ReactTextView extends AppCompatTextView implements ReactCompoundVie
     @Override // android.widget.TextView, android.view.View
     public final void onFocusChanged(boolean z10, int i10, Rect rect) {
         super.onFocusChanged(z10, i10, rect);
-        androidx.core.view.a l10 = h0.l(this);
-        if (l10 != null && (l10 instanceof ReactTextViewAccessibilityDelegate) && getMovementMethod() == null) {
-            ((ReactTextViewAccessibilityDelegate) l10).onFocusChanged(z10, i10, rect);
+        androidx.core.view.a k10 = i0.k(this);
+        if (k10 != null && (k10 instanceof ReactTextViewAccessibilityDelegate) && getMovementMethod() == null) {
+            ((ReactTextViewAccessibilityDelegate) k10).onFocusChanged(z10, i10, rect);
         }
     }
 

@@ -13,22 +13,22 @@ import java.util.List;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f22438a;
+    private final List f23563a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements d {
 
         /* renamed from: a  reason: collision with root package name */
-        private g4.a f22439a;
+        private g4.a f23564a;
 
         public a(Context context) {
-            this.f22439a = new g4.a(context);
+            this.f23564a = new g4.a(context);
         }
 
         @Override // f4.b.d
         public WebResourceResponse a(String str) {
             try {
-                return new WebResourceResponse(g4.a.f(str), null, this.f22439a.h(str));
+                return new WebResourceResponse(g4.a.f(str), null, this.f23564a.h(str));
             } catch (IOException e10) {
                 Log.e("WebViewAssetLoader", "Error opening asset path: " + str, e10);
                 return new WebResourceResponse(null, null, null);
@@ -38,33 +38,33 @@ public final class b {
 
     /* renamed from: f4.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0329b {
+    public static final class C0314b {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f22440a = false;
+        private boolean f23565a = false;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f22441b = "appassets.androidplatform.net";
+        private String f23566b = "appassets.androidplatform.net";
 
         /* renamed from: c  reason: collision with root package name */
-        private List f22442c = new ArrayList();
+        private List f23567c = new ArrayList();
 
-        public C0329b a(String str, d dVar) {
-            this.f22442c.add(new e(this.f22441b, str, this.f22440a, dVar));
+        public C0314b a(String str, d dVar) {
+            this.f23567c.add(new e(this.f23566b, str, this.f23565a, dVar));
             return this;
         }
 
         public b b() {
-            return new b(this.f22442c);
+            return new b(this.f23567c);
         }
 
-        public C0329b c(String str) {
-            this.f22441b = str;
+        public C0314b c(String str) {
+            this.f23566b = str;
             return this;
         }
 
-        public C0329b d(boolean z10) {
-            this.f22440a = z10;
+        public C0314b d(boolean z10) {
+            this.f23565a = z10;
             return this;
         }
     }
@@ -73,14 +73,14 @@ public final class b {
     public static final class c implements d {
 
         /* renamed from: b  reason: collision with root package name */
-        private static final String[] f22443b = {"app_webview/", "databases/", "lib/", "shared_prefs/", "code_cache/"};
+        private static final String[] f23568b = {"app_webview/", "databases/", "lib/", "shared_prefs/", "code_cache/"};
 
         /* renamed from: a  reason: collision with root package name */
-        private final File f22444a;
+        private final File f23569a;
 
         public c(Context context, File file) {
             try {
-                this.f22444a = new File(g4.a.a(file));
+                this.f23569a = new File(g4.a.a(file));
                 if (b(context)) {
                     return;
                 }
@@ -91,13 +91,13 @@ public final class b {
         }
 
         private boolean b(Context context) {
-            String a10 = g4.a.a(this.f22444a);
+            String a10 = g4.a.a(this.f23569a);
             String a11 = g4.a.a(context.getCacheDir());
             String a12 = g4.a.a(g4.a.c(context));
             if ((!a10.startsWith(a11) && !a10.startsWith(a12)) || a10.equals(a11) || a10.equals(a12)) {
                 return false;
             }
-            for (String str : f22443b) {
+            for (String str : f23568b) {
                 if (a10.startsWith(a12 + str)) {
                     return false;
                 }
@@ -109,14 +109,14 @@ public final class b {
         public WebResourceResponse a(String str) {
             File b10;
             try {
-                b10 = g4.a.b(this.f22444a, str);
+                b10 = g4.a.b(this.f23569a, str);
             } catch (IOException e10) {
                 Log.e("WebViewAssetLoader", "Error opening the requested path: " + str, e10);
             }
             if (b10 != null) {
                 return new WebResourceResponse(g4.a.f(str), null, g4.a.i(b10));
             }
-            Log.e("WebViewAssetLoader", String.format("The requested file: %s is outside the mounted directory: %s", str, this.f22444a));
+            Log.e("WebViewAssetLoader", String.format("The requested file: %s is outside the mounted directory: %s", str, this.f23569a));
             return new WebResourceResponse(null, null, null);
         }
     }
@@ -130,24 +130,24 @@ public final class b {
     static class e {
 
         /* renamed from: a  reason: collision with root package name */
-        final boolean f22445a;
+        final boolean f23570a;
 
         /* renamed from: b  reason: collision with root package name */
-        final String f22446b;
+        final String f23571b;
 
         /* renamed from: c  reason: collision with root package name */
-        final String f22447c;
+        final String f23572c;
 
         /* renamed from: d  reason: collision with root package name */
-        final d f22448d;
+        final d f23573d;
 
         e(String str, String str2, boolean z10, d dVar) {
             if (!str2.isEmpty() && str2.charAt(0) == '/') {
                 if (str2.endsWith("/")) {
-                    this.f22446b = str;
-                    this.f22447c = str2;
-                    this.f22445a = z10;
-                    this.f22448d = dVar;
+                    this.f23571b = str;
+                    this.f23572c = str2;
+                    this.f23570a = z10;
+                    this.f23573d = dVar;
                     return;
                 }
                 throw new IllegalArgumentException("Path should end with a slash '/'");
@@ -156,17 +156,17 @@ public final class b {
         }
 
         public String a(String str) {
-            return str.replaceFirst(this.f22447c, "");
+            return str.replaceFirst(this.f23572c, "");
         }
 
         public d b(Uri uri) {
-            if (uri.getScheme().equals("http") && !this.f22445a) {
+            if (uri.getScheme().equals("http") && !this.f23570a) {
                 return null;
             }
-            if ((!uri.getScheme().equals("http") && !uri.getScheme().equals("https")) || !uri.getAuthority().equals(this.f22446b) || !uri.getPath().startsWith(this.f22447c)) {
+            if ((!uri.getScheme().equals("http") && !uri.getScheme().equals("https")) || !uri.getAuthority().equals(this.f23571b) || !uri.getPath().startsWith(this.f23572c)) {
                 return null;
             }
-            return this.f22448d;
+            return this.f23573d;
         }
     }
 
@@ -174,16 +174,16 @@ public final class b {
     public static final class f implements d {
 
         /* renamed from: a  reason: collision with root package name */
-        private g4.a f22449a;
+        private g4.a f23574a;
 
         public f(Context context) {
-            this.f22449a = new g4.a(context);
+            this.f23574a = new g4.a(context);
         }
 
         @Override // f4.b.d
         public WebResourceResponse a(String str) {
             try {
-                return new WebResourceResponse(g4.a.f(str), null, this.f22449a.j(str));
+                return new WebResourceResponse(g4.a.f(str), null, this.f23574a.j(str));
             } catch (Resources.NotFoundException e10) {
                 Log.e("WebViewAssetLoader", "Resource not found from the path: " + str, e10);
                 return new WebResourceResponse(null, null, null);
@@ -195,12 +195,12 @@ public final class b {
     }
 
     b(List list) {
-        this.f22438a = list;
+        this.f23563a = list;
     }
 
     public WebResourceResponse a(Uri uri) {
         WebResourceResponse a10;
-        for (e eVar : this.f22438a) {
+        for (e eVar : this.f23563a) {
             d b10 = eVar.b(uri);
             if (b10 != null && (a10 = b10.a(eVar.a(uri.getPath()))) != null) {
                 return a10;

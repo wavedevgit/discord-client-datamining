@@ -1,12 +1,12 @@
 package com.withpersona.sdk2.inquiry.governmentid.network;
 
-import bn.c;
 import com.squareup.moshi.a0;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.governmentid.network.AutoClassifyResponse;
+import dn.c;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.collections.x0;
@@ -17,19 +17,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AutoClassifyResponse_ClassificationFailedResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18753a;
+    private final m.b f19633a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18754b;
+    private final h f19634b;
 
     public AutoClassifyResponse_ClassificationFailedResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("idClassesByCountries");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18753a = a10;
+        this.f19633a = a10;
         h f10 = moshi.f(a0.j(List.class, AutoClassifyResponse.IdClassesForCountry.class), x0.d(), "idClassesByCountries");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18754b = f10;
+        this.f19634b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -39,13 +39,13 @@ public final class AutoClassifyResponse_ClassificationFailedResponseJsonAdapter 
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18753a);
+            int J = reader.J(this.f19633a);
             if (J != -1) {
-                if (J == 0 && (list = (List) this.f18754b.fromJson(reader)) == null) {
+                if (J == 0 && (list = (List) this.f19634b.fromJson(reader)) == null) {
                     throw c.x("idClassesByCountries", "idClassesByCountries", reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -61,9 +61,9 @@ public final class AutoClassifyResponse_ClassificationFailedResponseJsonAdapter 
     public void toJson(t writer, AutoClassifyResponse.ClassificationFailedResponse classificationFailedResponse) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (classificationFailedResponse != null) {
-            writer.k();
+            writer.i();
             writer.J("idClassesByCountries");
-            this.f18754b.toJson(writer, classificationFailedResponse.a());
+            this.f19634b.toJson(writer, classificationFailedResponse.a());
             writer.s();
             return;
         }

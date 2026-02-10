@@ -30,49 +30,49 @@ public final class q3 implements w1 {
     private Map N;
 
     /* renamed from: d  reason: collision with root package name */
-    private final File f28875d;
+    private final File f29810d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Callable f28876e;
+    private final Callable f29811e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f28877i;
+    private int f29812i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f28878o;
+    private String f29813o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f28879p;
+    private String f29814p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f28880q;
+    private String f29815q;
 
     /* renamed from: r  reason: collision with root package name */
-    private String f28881r;
+    private String f29816r;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f28882s;
+    private String f29817s;
 
     /* renamed from: t  reason: collision with root package name */
-    private String f28883t;
+    private String f29818t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f28884u;
+    private boolean f29819u;
 
     /* renamed from: v  reason: collision with root package name */
-    private String f28885v;
+    private String f29820v;
 
     /* renamed from: w  reason: collision with root package name */
-    private List f28886w;
+    private List f29821w;
 
     /* renamed from: x  reason: collision with root package name */
-    private String f28887x;
+    private String f29822x;
 
     /* renamed from: y  reason: collision with root package name */
-    private String f28888y;
+    private String f29823y;
 
     /* renamed from: z  reason: collision with root package name */
-    private String f28889z;
+    private String f29824z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b implements m1 {
@@ -246,59 +246,59 @@ public final class q3 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        String m12 = e3Var.m1();
-                        if (m12 == null) {
+                        String r12 = e3Var.r1();
+                        if (r12 == null) {
                             break;
                         } else {
-                            q3Var.f28879p = m12;
+                            q3Var.f29814p = r12;
                             break;
                         }
                     case 1:
-                        Integer g12 = e3Var.g1();
-                        if (g12 == null) {
+                        Integer l12 = e3Var.l1();
+                        if (l12 == null) {
                             break;
                         } else {
-                            q3Var.f28877i = g12.intValue();
+                            q3Var.f29812i = l12.intValue();
                             break;
                         }
                     case 2:
-                        String m13 = e3Var.m1();
-                        if (m13 == null) {
+                        String r13 = e3Var.r1();
+                        if (r13 == null) {
                             break;
                         } else {
-                            q3Var.f28889z = m13;
+                            q3Var.f29824z = r13;
                             break;
                         }
                     case 3:
-                        String m14 = e3Var.m1();
-                        if (m14 == null) {
+                        String r14 = e3Var.r1();
+                        if (r14 == null) {
                             break;
                         } else {
-                            q3Var.f28878o = m14;
+                            q3Var.f29813o = r14;
                             break;
                         }
                     case 4:
-                        String m15 = e3Var.m1();
-                        if (m15 == null) {
+                        String r15 = e3Var.r1();
+                        if (r15 == null) {
                             break;
                         } else {
-                            q3Var.H = m15;
+                            q3Var.H = r15;
                             break;
                         }
                     case 5:
-                        String m16 = e3Var.m1();
-                        if (m16 == null) {
+                        String r16 = e3Var.r1();
+                        if (r16 == null) {
                             break;
                         } else {
-                            q3Var.f28881r = m16;
+                            q3Var.f29816r = r16;
                             break;
                         }
                     case 6:
-                        String m17 = e3Var.m1();
-                        if (m17 == null) {
+                        String r17 = e3Var.r1();
+                        if (r17 == null) {
                             break;
                         } else {
-                            q3Var.f28880q = m17;
+                            q3Var.f29815q = r17;
                             break;
                         }
                     case 7:
@@ -306,63 +306,63 @@ public final class q3 implements w1 {
                         if (w02 == null) {
                             break;
                         } else {
-                            q3Var.f28884u = w02.booleanValue();
+                            q3Var.f29819u = w02.booleanValue();
                             break;
                         }
                     case '\b':
-                        String m18 = e3Var.m1();
-                        if (m18 == null) {
+                        String r18 = e3Var.r1();
+                        if (r18 == null) {
                             break;
                         } else {
-                            q3Var.C = m18;
+                            q3Var.C = r18;
                             break;
                         }
                     case '\t':
-                        Map o12 = e3Var.o1(iLogger, new a.C0427a());
-                        if (o12 == null) {
+                        Map t12 = e3Var.t1(iLogger, new a.C0402a());
+                        if (t12 == null) {
                             break;
                         } else {
-                            q3Var.L.putAll(o12);
+                            q3Var.L.putAll(t12);
                             break;
                         }
                     case '\n':
-                        String m19 = e3Var.m1();
-                        if (m19 == null) {
+                        String r19 = e3Var.r1();
+                        if (r19 == null) {
                             break;
                         } else {
-                            q3Var.f28887x = m19;
+                            q3Var.f29822x = r19;
                             break;
                         }
                     case 11:
-                        List list = (List) e3Var.T1();
+                        List list = (List) e3Var.Z1();
                         if (list == null) {
                             break;
                         } else {
-                            q3Var.f28886w = list;
+                            q3Var.f29821w = list;
                             break;
                         }
                     case '\f':
-                        String m110 = e3Var.m1();
-                        if (m110 == null) {
+                        String r110 = e3Var.r1();
+                        if (r110 == null) {
                             break;
                         } else {
-                            q3Var.D = m110;
+                            q3Var.D = r110;
                             break;
                         }
                     case '\r':
-                        String m111 = e3Var.m1();
-                        if (m111 == null) {
+                        String r111 = e3Var.r1();
+                        if (r111 == null) {
                             break;
                         } else {
-                            q3Var.E = m111;
+                            q3Var.E = r111;
                             break;
                         }
                     case 14:
-                        String m112 = e3Var.m1();
-                        if (m112 == null) {
+                        String r112 = e3Var.r1();
+                        if (r112 == null) {
                             break;
                         } else {
-                            q3Var.I = m112;
+                            q3Var.I = r112;
                             break;
                         }
                     case 15:
@@ -374,90 +374,90 @@ public final class q3 implements w1 {
                             break;
                         }
                     case 16:
-                        String m113 = e3Var.m1();
-                        if (m113 == null) {
+                        String r113 = e3Var.r1();
+                        if (r113 == null) {
                             break;
                         } else {
-                            q3Var.B = m113;
+                            q3Var.B = r113;
                             break;
                         }
                     case 17:
-                        String m114 = e3Var.m1();
-                        if (m114 == null) {
+                        String r114 = e3Var.r1();
+                        if (r114 == null) {
                             break;
                         } else {
-                            q3Var.f28882s = m114;
+                            q3Var.f29817s = r114;
                             break;
                         }
                     case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
-                        String m115 = e3Var.m1();
-                        if (m115 == null) {
+                        String r115 = e3Var.r1();
+                        if (r115 == null) {
                             break;
                         } else {
-                            q3Var.f28885v = m115;
+                            q3Var.f29820v = r115;
                             break;
                         }
                     case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                        String m116 = e3Var.m1();
-                        if (m116 == null) {
+                        String r116 = e3Var.r1();
+                        if (r116 == null) {
                             break;
                         } else {
-                            q3Var.F = m116;
+                            q3Var.F = r116;
                             break;
                         }
                     case 20:
-                        String m117 = e3Var.m1();
-                        if (m117 == null) {
+                        String r117 = e3Var.r1();
+                        if (r117 == null) {
                             break;
                         } else {
-                            q3Var.f28883t = m117;
+                            q3Var.f29818t = r117;
                             break;
                         }
                     case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
-                        String m118 = e3Var.m1();
-                        if (m118 == null) {
+                        String r118 = e3Var.r1();
+                        if (r118 == null) {
                             break;
                         } else {
-                            q3Var.J = m118;
+                            q3Var.J = r118;
                             break;
                         }
                     case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
-                        String m119 = e3Var.m1();
-                        if (m119 == null) {
+                        String r119 = e3Var.r1();
+                        if (r119 == null) {
                             break;
                         } else {
-                            q3Var.G = m119;
+                            q3Var.G = r119;
                             break;
                         }
                     case 23:
-                        String m120 = e3Var.m1();
-                        if (m120 == null) {
+                        String r120 = e3Var.r1();
+                        if (r120 == null) {
                             break;
                         } else {
-                            q3Var.f28888y = m120;
+                            q3Var.f29823y = r120;
                             break;
                         }
                     case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
-                        String m121 = e3Var.m1();
-                        if (m121 == null) {
+                        String r121 = e3Var.r1();
+                        if (r121 == null) {
                             break;
                         } else {
-                            q3Var.M = m121;
+                            q3Var.M = r121;
                             break;
                         }
                     case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
-                        List f22 = e3Var.f2(iLogger, new r3.a());
-                        if (f22 == null) {
+                        List k22 = e3Var.k2(iLogger, new r3.a());
+                        if (k22 == null) {
                             break;
                         } else {
-                            q3Var.A.addAll(f22);
+                            q3Var.A.addAll(k22);
                             break;
                         }
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.p1(iLogger, concurrentHashMap, o02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
@@ -483,12 +483,12 @@ public final class q3 implements w1 {
     }
 
     public File C() {
-        return this.f28875d;
+        return this.f29810d;
     }
 
     public void E() {
         try {
-            this.f28886w = (List) this.f28876e.call();
+            this.f29821w = (List) this.f29811e.call();
         } catch (Throwable unused) {
         }
     }
@@ -504,19 +504,19 @@ public final class q3 implements w1 {
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("android_api_level").j(iLogger, Integer.valueOf(this.f28877i));
-        f3Var.e("device_locale").j(iLogger, this.f28878o);
-        f3Var.e("device_manufacturer").f(this.f28879p);
-        f3Var.e("device_model").f(this.f28880q);
-        f3Var.e("device_os_build_number").f(this.f28881r);
-        f3Var.e("device_os_name").f(this.f28882s);
-        f3Var.e("device_os_version").f(this.f28883t);
-        f3Var.e("device_is_emulator").d(this.f28884u);
-        f3Var.e("architecture").j(iLogger, this.f28885v);
-        f3Var.e("device_cpu_frequencies").j(iLogger, this.f28886w);
-        f3Var.e("device_physical_memory_bytes").f(this.f28887x);
-        f3Var.e("platform").f(this.f28888y);
-        f3Var.e("build_id").f(this.f28889z);
+        f3Var.e("android_api_level").j(iLogger, Integer.valueOf(this.f29812i));
+        f3Var.e("device_locale").j(iLogger, this.f29813o);
+        f3Var.e("device_manufacturer").f(this.f29814p);
+        f3Var.e("device_model").f(this.f29815q);
+        f3Var.e("device_os_build_number").f(this.f29816r);
+        f3Var.e("device_os_name").f(this.f29817s);
+        f3Var.e("device_os_version").f(this.f29818t);
+        f3Var.e("device_is_emulator").d(this.f29819u);
+        f3Var.e("architecture").j(iLogger, this.f29820v);
+        f3Var.e("device_cpu_frequencies").j(iLogger, this.f29821w);
+        f3Var.e("device_physical_memory_bytes").f(this.f29822x);
+        f3Var.e("platform").f(this.f29823y);
+        f3Var.e("build_id").f(this.f29824z);
         f3Var.e("transaction_name").f(this.B);
         f3Var.e("duration_ns").f(this.C);
         f3Var.e("version_name").f(this.E);
@@ -562,23 +562,23 @@ public final class q3 implements w1 {
     }
 
     public q3(File file, Date date, List list, String str, String str2, String str3, String str4, int i10, String str5, Callable callable, String str6, String str7, String str8, Boolean bool, String str9, String str10, String str11, String str12, String str13, Map map) {
-        this.f28886w = new ArrayList();
+        this.f29821w = new ArrayList();
         this.M = null;
-        this.f28875d = file;
+        this.f29810d = file;
         this.K = date;
-        this.f28885v = str5;
-        this.f28876e = callable;
-        this.f28877i = i10;
-        this.f28878o = Locale.getDefault().toString();
-        this.f28879p = str6 == null ? "" : str6;
-        this.f28880q = str7 == null ? "" : str7;
-        this.f28883t = str8 == null ? "" : str8;
-        this.f28884u = bool != null ? bool.booleanValue() : false;
-        this.f28887x = str9 != null ? str9 : "0";
-        this.f28881r = "";
-        this.f28882s = "android";
-        this.f28888y = "android";
-        this.f28889z = str10 != null ? str10 : "";
+        this.f29820v = str5;
+        this.f29811e = callable;
+        this.f29812i = i10;
+        this.f29813o = Locale.getDefault().toString();
+        this.f29814p = str6 == null ? "" : str6;
+        this.f29815q = str7 == null ? "" : str7;
+        this.f29818t = str8 == null ? "" : str8;
+        this.f29819u = bool != null ? bool.booleanValue() : false;
+        this.f29822x = str9 != null ? str9 : "0";
+        this.f29816r = "";
+        this.f29817s = "android";
+        this.f29823y = "android";
+        this.f29824z = str10 != null ? str10 : "";
         this.A = list;
         this.B = str.isEmpty() ? "unknown" : str;
         this.C = str4;

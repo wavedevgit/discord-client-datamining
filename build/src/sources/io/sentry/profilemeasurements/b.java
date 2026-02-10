@@ -16,16 +16,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class b implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f28648d;
+    private Map f29583d;
 
     /* renamed from: e  reason: collision with root package name */
-    private double f28649e;
+    private double f29584e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f28650i;
+    private String f29585i;
 
     /* renamed from: o  reason: collision with root package name */
-    private double f28651o;
+    private double f29586o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -62,11 +62,11 @@ public final class b implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        String m12 = e3Var.m1();
-                        if (m12 == null) {
+                        String r12 = e3Var.r1();
+                        if (r12 == null) {
                             break;
                         } else {
-                            bVar.f28650i = m12;
+                            bVar.f29585i = r12;
                             break;
                         }
                     case 1:
@@ -83,7 +83,7 @@ public final class b implements w1 {
                         if (d10 == null) {
                             break;
                         } else {
-                            bVar.f28649e = d10.doubleValue();
+                            bVar.f29584e = d10.doubleValue();
                             break;
                         }
                     case 2:
@@ -91,14 +91,14 @@ public final class b implements w1 {
                         if (n02 == null) {
                             break;
                         } else {
-                            bVar.f28651o = n02.doubleValue();
+                            bVar.f29586o = n02.doubleValue();
                             break;
                         }
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.p1(iLogger, concurrentHashMap, o02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
@@ -117,7 +117,7 @@ public final class b implements w1 {
     }
 
     public void e(Map map) {
-        this.f28648d = map;
+        this.f29583d = map;
     }
 
     public boolean equals(Object obj) {
@@ -126,7 +126,7 @@ public final class b implements w1 {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (y.a(this.f28648d, bVar.f28648d) && this.f28650i.equals(bVar.f28650i) && this.f28651o == bVar.f28651o && this.f28649e == bVar.f28649e) {
+            if (y.a(this.f29583d, bVar.f29583d) && this.f29585i.equals(bVar.f29585i) && this.f29586o == bVar.f29586o && this.f29584e == bVar.f29584e) {
                 return true;
             }
         }
@@ -134,19 +134,19 @@ public final class b implements w1 {
     }
 
     public int hashCode() {
-        return y.b(this.f28648d, this.f28650i, Double.valueOf(this.f28651o));
+        return y.b(this.f29583d, this.f29585i, Double.valueOf(this.f29586o));
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("value").j(iLogger, Double.valueOf(this.f28651o));
-        f3Var.e("elapsed_since_start_ns").j(iLogger, this.f28650i);
-        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f28649e)));
-        Map map = this.f28648d;
+        f3Var.e("value").j(iLogger, Double.valueOf(this.f29586o));
+        f3Var.e("elapsed_since_start_ns").j(iLogger, this.f29585i);
+        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f29584e)));
+        Map map = this.f29583d;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28648d.get(str);
+                Object obj = this.f29583d.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -155,8 +155,8 @@ public final class b implements w1 {
     }
 
     public b(Long l10, Number number, long j10) {
-        this.f28650i = l10.toString();
-        this.f28651o = number.doubleValue();
-        this.f28649e = k.m(j10);
+        this.f29585i = l10.toString();
+        this.f29586o = number.doubleValue();
+        this.f29584e = k.m(j10);
     }
 }

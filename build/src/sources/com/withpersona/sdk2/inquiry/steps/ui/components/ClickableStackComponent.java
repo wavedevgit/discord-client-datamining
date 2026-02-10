@@ -7,10 +7,6 @@ import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.i;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.ClickableStack;
-import gq.e0;
-import gq.k5;
-import gq.l5;
-import gq.v;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
@@ -18,8 +14,12 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
+import pq.e0;
+import pq.k5;
+import pq.l5;
+import pq.v;
 @i(generateAdapter = true)
-@Metadata(d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0002\b\u0019\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0087\b\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004BE\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00010\u0007\u0012\b\u0010\n\u001a\u0004\u0018\u00010\t\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\r\u001a\u0004\u0018\u00010\f\u0012\b\b\u0002\u0010\u000f\u001a\u00020\u000e¢\u0006\u0004\b\u0010\u0010\u0011B\u0011\b\u0016\u0012\u0006\u0010\u0013\u001a\u00020\u0012¢\u0006\u0004\b\u0010\u0010\u0014J\u001d\u0010\u0016\u001a\u00020\u00022\f\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00010\u0007H\u0016¢\u0006\u0004\b\u0016\u0010\u0017J\u001d\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u001b\u001a\u00020\u001a¢\u0006\u0004\b\u001d\u0010\u001eJ\r\u0010\u001f\u001a\u00020\u001a¢\u0006\u0004\b\u001f\u0010 JX\u0010!\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\u000e\b\u0002\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00010\u00072\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\f2\b\b\u0002\u0010\u000f\u001a\u00020\u000eHÆ\u0001¢\u0006\u0004\b!\u0010\"J\u0010\u0010#\u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b#\u0010$J\u0010\u0010%\u001a\u00020\u001aHÖ\u0001¢\u0006\u0004\b%\u0010 J\u001a\u0010(\u001a\u00020\u000e2\b\u0010'\u001a\u0004\u0018\u00010&HÖ\u0003¢\u0006\u0004\b(\u0010)R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b*\u0010+\u001a\u0004\b,\u0010$R \u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00010\u00078\u0016X\u0096\u0004¢\u0006\f\n\u0004\b-\u0010.\u001a\u0004\b/\u00100R\u001c\u0010\n\u001a\u0004\u0018\u00010\t8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b1\u00102\u001a\u0004\b3\u00104R\u001c\u0010\u000b\u001a\u0004\u0018\u00010\t8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b5\u00102\u001a\u0004\b6\u00104R\u0019\u0010\r\u001a\u0004\u0018\u00010\f8\u0006¢\u0006\f\n\u0004\b7\u00108\u001a\u0004\b9\u0010:R\"\u0010\u000f\u001a\u00020\u000e8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b;\u0010<\u001a\u0004\b-\u0010=\"\u0004\b>\u0010?R&\u0010E\u001a\b\u0012\u0004\u0012\u00020A0@8\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\bB\u0010.\u0012\u0004\bC\u0010D\u001a\u0004\b*\u00100¨\u0006F"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponent;", "Lgq/k5;", "Lgq/l5;", "Lgq/v;", "Lgq/e0;", "", StackTraceHelper.NAME_KEY, "", "children", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack$ClickableStackComponentStyle;", "styles", "", "isActive", "<init>", "(Ljava/lang/String;Ljava/util/List;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack$ClickableStackComponentStyle;Z)V", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack;", "config", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack;)V", "newChildren", "O0", "(Ljava/util/List;)Lgq/l5;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "a", "(Ljava/lang/String;Ljava/util/List;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack$ClickableStackComponentStyle;Z)Lcom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "Ljava/util/List;", "getChildren", "()Ljava/util/List;", "i", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "o", "getDisabled", "p", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack$ClickableStackComponentStyle;", "c", "()Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack$ClickableStackComponentStyle;", "q", "Z", "()Z", "f", "(Z)V", "", "Loq/a;", "r", "getAssociatedViews$annotations", "()V", "associatedViews", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+@Metadata(d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0002\b\u0019\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0087\b\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004BE\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00010\u0007\u0012\b\u0010\n\u001a\u0004\u0018\u00010\t\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\r\u001a\u0004\u0018\u00010\f\u0012\b\b\u0002\u0010\u000f\u001a\u00020\u000e¢\u0006\u0004\b\u0010\u0010\u0011B\u0011\b\u0016\u0012\u0006\u0010\u0013\u001a\u00020\u0012¢\u0006\u0004\b\u0010\u0010\u0014J\u001d\u0010\u0016\u001a\u00020\u00022\f\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00010\u0007H\u0016¢\u0006\u0004\b\u0016\u0010\u0017J\u001d\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u001b\u001a\u00020\u001a¢\u0006\u0004\b\u001d\u0010\u001eJ\r\u0010\u001f\u001a\u00020\u001a¢\u0006\u0004\b\u001f\u0010 JX\u0010!\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\u000e\b\u0002\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00010\u00072\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\f2\b\b\u0002\u0010\u000f\u001a\u00020\u000eHÆ\u0001¢\u0006\u0004\b!\u0010\"J\u0010\u0010#\u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b#\u0010$J\u0010\u0010%\u001a\u00020\u001aHÖ\u0001¢\u0006\u0004\b%\u0010 J\u001a\u0010(\u001a\u00020\u000e2\b\u0010'\u001a\u0004\u0018\u00010&HÖ\u0003¢\u0006\u0004\b(\u0010)R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b*\u0010+\u001a\u0004\b,\u0010$R \u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00010\u00078\u0016X\u0096\u0004¢\u0006\f\n\u0004\b-\u0010.\u001a\u0004\b/\u00100R\u001c\u0010\n\u001a\u0004\u0018\u00010\t8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b1\u00102\u001a\u0004\b3\u00104R\u001c\u0010\u000b\u001a\u0004\u0018\u00010\t8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b5\u00102\u001a\u0004\b6\u00104R\u0019\u0010\r\u001a\u0004\u0018\u00010\f8\u0006¢\u0006\f\n\u0004\b7\u00108\u001a\u0004\b9\u0010:R\"\u0010\u000f\u001a\u00020\u000e8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b;\u0010<\u001a\u0004\b-\u0010=\"\u0004\b>\u0010?R&\u0010E\u001a\b\u0012\u0004\u0012\u00020A0@8\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\bB\u0010.\u0012\u0004\bC\u0010D\u001a\u0004\b*\u00100¨\u0006F"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponent;", "Lpq/k5;", "Lpq/l5;", "Lpq/v;", "Lpq/e0;", "", StackTraceHelper.NAME_KEY, "", "children", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack$ClickableStackComponentStyle;", "styles", "", "isActive", "<init>", "(Ljava/lang/String;Ljava/util/List;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack$ClickableStackComponentStyle;Z)V", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack;", "config", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack;)V", "newChildren", "S0", "(Ljava/util/List;)Lpq/l5;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "a", "(Ljava/lang/String;Ljava/util/List;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack$ClickableStackComponentStyle;Z)Lcom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "Ljava/util/List;", "getChildren", "()Ljava/util/List;", "i", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "o", "getDisabled", "p", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack$ClickableStackComponentStyle;", "c", "()Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/ClickableStack$ClickableStackComponentStyle;", "q", "Z", "()Z", "f", "(Z)V", "", "Lxq/a;", "r", "getAssociatedViews$annotations", "()V", "associatedViews", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nClickableStackComponent.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ClickableStackComponent.kt\ncom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponent\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,91:1\n1611#2,9:92\n1863#2:101\n1864#2:103\n1620#2:104\n1#3:102\n*S KotlinDebug\n*F\n+ 1 ClickableStackComponent.kt\ncom/withpersona/sdk2/inquiry/steps/ui/components/ClickableStackComponent\n*L\n34#1:92,9\n34#1:101\n34#1:103\n34#1:104\n34#1:102\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class ClickableStackComponent implements k5, l5, v, e0 {
@@ -27,25 +27,25 @@ public final class ClickableStackComponent implements k5, l5, v, e0 {
     public static final Parcelable.Creator<ClickableStackComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19699d;
+    private final String f20579d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f19700e;
+    private final List f20580e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f19701i;
+    private final JsonLogicBoolean f20581i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f19702o;
+    private final JsonLogicBoolean f20582o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final ClickableStack.ClickableStackComponentStyle f19703p;
+    private final ClickableStack.ClickableStackComponentStyle f20583p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f19704q;
+    private boolean f20584q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final List f19705r;
+    private final List f20585r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -72,41 +72,41 @@ public final class ClickableStackComponent implements k5, l5, v, e0 {
     public ClickableStackComponent(String name, List children, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle, boolean z10) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(children, "children");
-        this.f19699d = name;
-        this.f19700e = children;
-        this.f19701i = jsonLogicBoolean;
-        this.f19702o = jsonLogicBoolean2;
-        this.f19703p = clickableStackComponentStyle;
-        this.f19704q = z10;
-        this.f19705r = new ArrayList();
+        this.f20579d = name;
+        this.f20580e = children;
+        this.f20581i = jsonLogicBoolean;
+        this.f20582o = jsonLogicBoolean2;
+        this.f20583p = clickableStackComponentStyle;
+        this.f20584q = z10;
+        this.f20585r = new ArrayList();
     }
 
     public static /* synthetic */ ClickableStackComponent b(ClickableStackComponent clickableStackComponent, String str, List list, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = clickableStackComponent.f19699d;
+            str = clickableStackComponent.f20579d;
         }
         if ((i10 & 2) != 0) {
-            list = clickableStackComponent.f19700e;
+            list = clickableStackComponent.f20580e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = clickableStackComponent.f19701i;
+            jsonLogicBoolean = clickableStackComponent.f20581i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = clickableStackComponent.f19702o;
+            jsonLogicBoolean2 = clickableStackComponent.f20582o;
         }
         if ((i10 & 16) != 0) {
-            clickableStackComponentStyle = clickableStackComponent.f19703p;
+            clickableStackComponentStyle = clickableStackComponent.f20583p;
         }
         if ((i10 & 32) != 0) {
-            z10 = clickableStackComponent.f19704q;
+            z10 = clickableStackComponent.f20584q;
         }
         ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle2 = clickableStackComponentStyle;
         boolean z11 = z10;
         return clickableStackComponent.a(str, list, jsonLogicBoolean, jsonLogicBoolean2, clickableStackComponentStyle2, z11);
     }
 
-    @Override // gq.l5
-    public l5 O0(List newChildren) {
+    @Override // pq.l5
+    public l5 S0(List newChildren) {
         Intrinsics.checkNotNullParameter(newChildren, "newChildren");
         return b(this, null, newChildren, null, null, null, false, 61, null);
     }
@@ -118,12 +118,12 @@ public final class ClickableStackComponent implements k5, l5, v, e0 {
     }
 
     public final ClickableStack.ClickableStackComponentStyle c() {
-        return this.f19703p;
+        return this.f20583p;
     }
 
-    @Override // gq.e0
+    @Override // pq.e0
     public List d() {
-        return this.f19705r;
+        return this.f20585r;
     }
 
     @Override // android.os.Parcelable
@@ -132,7 +132,7 @@ public final class ClickableStackComponent implements k5, l5, v, e0 {
     }
 
     public final boolean e() {
-        return this.f19704q;
+        return this.f20584q;
     }
 
     public boolean equals(Object obj) {
@@ -141,68 +141,68 @@ public final class ClickableStackComponent implements k5, l5, v, e0 {
         }
         if (obj instanceof ClickableStackComponent) {
             ClickableStackComponent clickableStackComponent = (ClickableStackComponent) obj;
-            return Intrinsics.areEqual(this.f19699d, clickableStackComponent.f19699d) && Intrinsics.areEqual(this.f19700e, clickableStackComponent.f19700e) && Intrinsics.areEqual(this.f19701i, clickableStackComponent.f19701i) && Intrinsics.areEqual(this.f19702o, clickableStackComponent.f19702o) && Intrinsics.areEqual(this.f19703p, clickableStackComponent.f19703p) && this.f19704q == clickableStackComponent.f19704q;
+            return Intrinsics.areEqual(this.f20579d, clickableStackComponent.f20579d) && Intrinsics.areEqual(this.f20580e, clickableStackComponent.f20580e) && Intrinsics.areEqual(this.f20581i, clickableStackComponent.f20581i) && Intrinsics.areEqual(this.f20582o, clickableStackComponent.f20582o) && Intrinsics.areEqual(this.f20583p, clickableStackComponent.f20583p) && this.f20584q == clickableStackComponent.f20584q;
         }
         return false;
     }
 
     public final void f(boolean z10) {
-        this.f19704q = z10;
+        this.f20584q = z10;
     }
 
-    @Override // gq.l5
+    @Override // pq.l5
     public List getChildren() {
-        return this.f19700e;
+        return this.f20580e;
     }
 
-    @Override // gq.v
+    @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f19702o;
+        return this.f20582o;
     }
 
-    @Override // gq.e0
+    @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f19701i;
+        return this.f20581i;
     }
 
-    @Override // gq.k5
+    @Override // pq.k5
     public String getName() {
-        return this.f19699d;
+        return this.f20579d;
     }
 
     public int hashCode() {
-        int hashCode = ((this.f19699d.hashCode() * 31) + this.f19700e.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f19701i;
+        int hashCode = ((this.f20579d.hashCode() * 31) + this.f20580e.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20581i;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19702o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20582o;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle = this.f19703p;
-        return ((hashCode3 + (clickableStackComponentStyle != null ? clickableStackComponentStyle.hashCode() : 0)) * 31) + Boolean.hashCode(this.f19704q);
+        ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle = this.f20583p;
+        return ((hashCode3 + (clickableStackComponentStyle != null ? clickableStackComponentStyle.hashCode() : 0)) * 31) + Boolean.hashCode(this.f20584q);
     }
 
     public String toString() {
-        String str = this.f19699d;
-        List list = this.f19700e;
-        JsonLogicBoolean jsonLogicBoolean = this.f19701i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19702o;
-        ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle = this.f19703p;
-        boolean z10 = this.f19704q;
+        String str = this.f20579d;
+        List list = this.f20580e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20581i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20582o;
+        ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle = this.f20583p;
+        boolean z10 = this.f20584q;
         return "ClickableStackComponent(name=" + str + ", children=" + list + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", styles=" + clickableStackComponentStyle + ", isActive=" + z10 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f19699d);
-        List<Parcelable> list = this.f19700e;
+        dest.writeString(this.f20579d);
+        List<Parcelable> list = this.f20580e;
         dest.writeInt(list.size());
         for (Parcelable parcelable : list) {
             dest.writeParcelable(parcelable, i10);
         }
-        dest.writeParcelable(this.f19701i, i10);
-        dest.writeParcelable(this.f19702o, i10);
-        dest.writeParcelable(this.f19703p, i10);
-        dest.writeInt(this.f19704q ? 1 : 0);
+        dest.writeParcelable(this.f20581i, i10);
+        dest.writeParcelable(this.f20582o, i10);
+        dest.writeParcelable(this.f20583p, i10);
+        dest.writeInt(this.f20584q ? 1 : 0);
     }
 
     public /* synthetic */ ClickableStackComponent(String str, List list, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -231,7 +231,7 @@ public final class ClickableStackComponent implements k5, l5, v, e0 {
             if (r3 == 0) goto L30
             java.lang.Object r3 = r0.next()
             com.withpersona.sdk2.inquiry.network.dto.ui.components.UiComponentConfig r3 = (com.withpersona.sdk2.inquiry.network.dto.ui.components.UiComponentConfig) r3
-            gq.k5 r3 = com.withpersona.sdk2.inquiry.steps.ui.components.f.l(r3)
+            pq.k5 r3 = com.withpersona.sdk2.inquiry.steps.ui.components.f.l(r3)
             if (r3 == 0) goto L1a
             r1.add(r3)
             goto L1a

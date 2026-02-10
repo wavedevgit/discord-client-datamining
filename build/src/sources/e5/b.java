@@ -6,7 +6,7 @@ import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class b implements i {
     @Override // e5.i
-    public c.C0315c b(c.b bVar) {
+    public c.C0302c b(c.b bVar) {
         return null;
     }
 

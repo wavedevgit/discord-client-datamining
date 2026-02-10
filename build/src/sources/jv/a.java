@@ -1,186 +1,83 @@
 package jv;
 
-import android.os.ParcelFileDescriptor;
-import java.io.File;
-import java.io.FileInputStream;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import org.chromium.net.UploadDataProvider;
-import org.chromium.net.UploadDataSink;
+import java.util.List;
+import jv.b;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Lambda;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
+public final class a implements cv.b, b {
 
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f31373a = new a();
+
+    /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: jv.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    class C0459a implements d {
-
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ File f30527a;
-
-        C0459a(File file) {
-            this.f30527a = file;
-        }
-
-        @Override // jv.a.d
-        public FileChannel g() {
-            return new FileInputStream(this.f30527a).getChannel();
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    class b implements d {
-
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ ParcelFileDescriptor f30528a;
-
-        b(ParcelFileDescriptor parcelFileDescriptor) {
-            this.f30528a = parcelFileDescriptor;
-        }
-
-        @Override // jv.a.d
-        public FileChannel g() {
-            if (this.f30528a.getStatSize() != -1) {
-                return new ParcelFileDescriptor.AutoCloseInputStream(this.f30528a).getChannel();
-            }
-            this.f30528a.close();
-            String valueOf = String.valueOf(this.f30528a);
-            throw new IllegalArgumentException("Not a file: " + valueOf);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class c extends UploadDataProvider {
+    public static final class C0438a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        private final ByteBuffer f30529d;
+        public static final C0438a f31374d = new C0438a();
 
-        @Override // org.chromium.net.UploadDataProvider
-        public long getLength() {
-            return this.f30529d.limit();
+        C0438a() {
+            super(2);
         }
 
-        @Override // org.chromium.net.UploadDataProvider
-        public void read(UploadDataSink uploadDataSink, ByteBuffer byteBuffer) {
-            if (byteBuffer.hasRemaining()) {
-                if (byteBuffer.remaining() >= this.f30529d.remaining()) {
-                    byteBuffer.put(this.f30529d);
-                } else {
-                    int limit = this.f30529d.limit();
-                    ByteBuffer byteBuffer2 = this.f30529d;
-                    ByteBuffer byteBuffer3 = (ByteBuffer) byteBuffer2.limit(byteBuffer2.position() + byteBuffer.remaining());
-                    byteBuffer.put(this.f30529d);
-                    ByteBuffer byteBuffer4 = (ByteBuffer) this.f30529d.limit(limit);
-                }
-                uploadDataSink.onReadSucceeded(false);
-                return;
+        public final Boolean a(int i10, int i11) {
+            boolean z10;
+            if (i10 == i11) {
+                z10 = true;
+            } else {
+                z10 = false;
             }
-            throw new IllegalStateException("Cronet passed a buffer with no bytes remaining");
+            return Boolean.valueOf(z10);
         }
 
-        @Override // org.chromium.net.UploadDataProvider
-        public void rewind(UploadDataSink uploadDataSink) {
-            ByteBuffer byteBuffer = (ByteBuffer) this.f30529d.position(0);
-            uploadDataSink.onRewindSucceeded();
-        }
-
-        private c(ByteBuffer byteBuffer) {
-            this.f30529d = byteBuffer;
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public interface d {
-        FileChannel g();
+    private a() {
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static final class e extends UploadDataProvider {
-
-        /* renamed from: d  reason: collision with root package name */
-        private volatile FileChannel f30530d;
-
-        /* renamed from: e  reason: collision with root package name */
-        private final d f30531e;
-
-        /* renamed from: i  reason: collision with root package name */
-        private final Object f30532i;
-
-        private FileChannel a() {
-            if (this.f30530d == null) {
-                synchronized (this.f30532i) {
-                    try {
-                        if (this.f30530d == null) {
-                            this.f30530d = this.f30531e.g();
-                        }
-                    } finally {
-                    }
-                }
-            }
-            return this.f30530d;
-        }
-
-        @Override // org.chromium.net.UploadDataProvider, java.io.Closeable, java.lang.AutoCloseable
-        public void close() {
-            FileChannel fileChannel = this.f30530d;
-            if (fileChannel != null) {
-                fileChannel.close();
-            }
-        }
-
-        @Override // org.chromium.net.UploadDataProvider
-        public long getLength() {
-            return a().size();
-        }
-
-        @Override // org.chromium.net.UploadDataProvider
-        public void read(UploadDataSink uploadDataSink, ByteBuffer byteBuffer) {
-            if (byteBuffer.hasRemaining()) {
-                FileChannel a10 = a();
-                int i10 = 0;
-                while (i10 == 0) {
-                    int read = a10.read(byteBuffer);
-                    if (read == -1) {
-                        break;
-                    }
-                    i10 += read;
-                }
-                uploadDataSink.onReadSucceeded(false);
-                return;
-            }
-            throw new IllegalStateException("Cronet passed a buffer with no bytes remaining");
-        }
-
-        @Override // org.chromium.net.UploadDataProvider
-        public void rewind(UploadDataSink uploadDataSink) {
-            a().position(0L);
-            uploadDataSink.onRewindSucceeded();
-        }
-
-        private e(d dVar) {
-            this.f30532i = new Object();
-            this.f30531e = dVar;
-        }
+    @Override // lv.a
+    public Object a(Object obj) {
+        return b.a.f(this, obj);
     }
 
-    public static UploadDataProvider a(ParcelFileDescriptor parcelFileDescriptor) {
-        return new e(new b(parcelFileDescriptor));
+    @Override // dv.c
+    public boolean b(List list, Function2 function2) {
+        return b.a.b(this, list, function2);
     }
 
-    public static UploadDataProvider b(File file) {
-        return new e(new C0459a(file));
+    @Override // dv.a
+    public Boolean c(Object obj) {
+        return b.a.g(this, obj);
     }
 
-    public static UploadDataProvider c(ByteBuffer byteBuffer) {
-        return new c(byteBuffer.slice());
+    @Override // dv.b
+    public List d(Comparable comparable, Comparable comparable2) {
+        return b.a.d(this, comparable, comparable2);
     }
 
-    public static UploadDataProvider d(byte[] bArr) {
-        return e(bArr, 0, bArr.length);
+    @Override // lv.c
+    public Object e(Object obj) {
+        return b.a.e(this, obj);
     }
 
-    public static UploadDataProvider e(byte[] bArr, int i10, int i11) {
-        return new c(ByteBuffer.wrap(bArr, i10, i11).slice());
+    @Override // dv.b
+    public List g(Comparable comparable, Comparable comparable2) {
+        return b.a.c(this, comparable, comparable2);
+    }
+
+    public boolean h(Object obj, Function2 function2) {
+        return b.a.a(this, obj, function2);
+    }
+
+    @Override // cv.b
+    /* renamed from: i */
+    public Boolean f(Object obj, Object obj2) {
+        return Boolean.valueOf(h(obj, C0438a.f31374d));
     }
 }

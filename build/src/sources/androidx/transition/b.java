@@ -16,28 +16,28 @@ import java.util.Map;
 public class b extends Transition {
 
     /* renamed from: c0  reason: collision with root package name */
-    private static final String[] f5323c0 = {"android:changeBounds:bounds", "android:changeBounds:clip", "android:changeBounds:parent", "android:changeBounds:windowX", "android:changeBounds:windowY"};
+    private static final String[] f5333c0 = {"android:changeBounds:bounds", "android:changeBounds:clip", "android:changeBounds:parent", "android:changeBounds:windowX", "android:changeBounds:windowY"};
 
     /* renamed from: d0  reason: collision with root package name */
-    private static final Property f5324d0 = new a(PointF.class, "topLeft");
+    private static final Property f5334d0 = new a(PointF.class, "topLeft");
 
     /* renamed from: e0  reason: collision with root package name */
-    private static final Property f5325e0 = new C0071b(PointF.class, "bottomRight");
+    private static final Property f5335e0 = new C0067b(PointF.class, "bottomRight");
 
     /* renamed from: f0  reason: collision with root package name */
-    private static final Property f5326f0 = new c(PointF.class, "bottomRight");
+    private static final Property f5336f0 = new c(PointF.class, "bottomRight");
 
     /* renamed from: g0  reason: collision with root package name */
-    private static final Property f5327g0 = new d(PointF.class, "topLeft");
+    private static final Property f5337g0 = new d(PointF.class, "topLeft");
 
     /* renamed from: h0  reason: collision with root package name */
-    private static final Property f5328h0 = new e(PointF.class, ViewProps.POSITION);
+    private static final Property f5338h0 = new e(PointF.class, ViewProps.POSITION);
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final m f5329i0 = new m();
+    private static final m f5339i0 = new m();
 
     /* renamed from: b0  reason: collision with root package name */
-    private boolean f5330b0 = false;
+    private boolean f5340b0 = false;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends Property {
@@ -60,8 +60,8 @@ public class b extends Transition {
 
     /* renamed from: androidx.transition.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    class C0071b extends Property {
-        C0071b(Class cls, String str) {
+    class C0067b extends Property {
+        C0067b(Class cls, String str) {
             super(cls, str);
         }
 
@@ -141,74 +141,74 @@ public class b extends Transition {
     class f extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ i f5331a;
+        final /* synthetic */ i f5341a;
         private final i mViewBounds;
 
         f(i iVar) {
-            this.f5331a = iVar;
+            this.f5341a = iVar;
             this.mViewBounds = iVar;
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    private static class g extends AnimatorListenerAdapter implements Transition.h {
+    private static class g extends AnimatorListenerAdapter implements Transition.i {
 
         /* renamed from: a  reason: collision with root package name */
-        private final View f5333a;
+        private final View f5343a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Rect f5334b;
+        private final Rect f5344b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final boolean f5335c;
+        private final boolean f5345c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Rect f5336d;
+        private final Rect f5346d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f5337e;
+        private final boolean f5347e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final int f5338f;
+        private final int f5348f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final int f5339g;
+        private final int f5349g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final int f5340h;
+        private final int f5350h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f5341i;
+        private final int f5351i;
 
         /* renamed from: j  reason: collision with root package name */
-        private final int f5342j;
+        private final int f5352j;
 
         /* renamed from: k  reason: collision with root package name */
-        private final int f5343k;
+        private final int f5353k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final int f5344l;
+        private final int f5354l;
 
         /* renamed from: m  reason: collision with root package name */
-        private final int f5345m;
+        private final int f5355m;
 
         /* renamed from: n  reason: collision with root package name */
-        private boolean f5346n;
+        private boolean f5356n;
 
         g(View view, Rect rect, boolean z10, Rect rect2, boolean z11, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
-            this.f5333a = view;
-            this.f5334b = rect;
-            this.f5335c = z10;
-            this.f5336d = rect2;
-            this.f5337e = z11;
-            this.f5338f = i10;
-            this.f5339g = i11;
-            this.f5340h = i12;
-            this.f5341i = i13;
-            this.f5342j = i14;
-            this.f5343k = i15;
-            this.f5344l = i16;
-            this.f5345m = i17;
+            this.f5343a = view;
+            this.f5344b = rect;
+            this.f5345c = z10;
+            this.f5346d = rect2;
+            this.f5347e = z11;
+            this.f5348f = i10;
+            this.f5349g = i11;
+            this.f5350h = i12;
+            this.f5351i = i13;
+            this.f5352j = i14;
+            this.f5353k = i15;
+            this.f5354l = i16;
+            this.f5355m = i17;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
@@ -221,66 +221,66 @@ public class b extends Transition {
             onAnimationStart(animator, false);
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionCancel(Transition transition) {
-            this.f5346n = true;
+            this.f5356n = true;
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionEnd(Transition transition) {
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionPause(Transition transition) {
             Rect rect;
-            this.f5333a.setTag(l.f5425b, this.f5333a.getClipBounds());
-            if (this.f5337e) {
+            this.f5343a.setTag(l.f5435b, this.f5343a.getClipBounds());
+            if (this.f5347e) {
                 rect = null;
             } else {
-                rect = this.f5336d;
+                rect = this.f5346d;
             }
-            this.f5333a.setClipBounds(rect);
+            this.f5343a.setClipBounds(rect);
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionResume(Transition transition) {
-            this.f5333a.setTag(l.f5425b, null);
-            this.f5333a.setClipBounds((Rect) this.f5333a.getTag(l.f5425b));
+            this.f5343a.setTag(l.f5435b, null);
+            this.f5343a.setClipBounds((Rect) this.f5343a.getTag(l.f5435b));
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionStart(Transition transition) {
         }
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator, boolean z10) {
-            if (this.f5346n) {
+            if (this.f5356n) {
                 return;
             }
             Rect rect = null;
             if (z10) {
-                if (!this.f5335c) {
-                    rect = this.f5334b;
+                if (!this.f5345c) {
+                    rect = this.f5344b;
                 }
-            } else if (!this.f5337e) {
-                rect = this.f5336d;
+            } else if (!this.f5347e) {
+                rect = this.f5346d;
             }
-            this.f5333a.setClipBounds(rect);
+            this.f5343a.setClipBounds(rect);
             if (z10) {
-                h0.d(this.f5333a, this.f5338f, this.f5339g, this.f5340h, this.f5341i);
+                h0.d(this.f5343a, this.f5348f, this.f5349g, this.f5350h, this.f5351i);
             } else {
-                h0.d(this.f5333a, this.f5342j, this.f5343k, this.f5344l, this.f5345m);
+                h0.d(this.f5343a, this.f5352j, this.f5353k, this.f5354l, this.f5355m);
             }
         }
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator, boolean z10) {
-            int max = Math.max(this.f5340h - this.f5338f, this.f5344l - this.f5342j);
-            int max2 = Math.max(this.f5341i - this.f5339g, this.f5345m - this.f5343k);
-            int i10 = z10 ? this.f5342j : this.f5338f;
-            int i11 = z10 ? this.f5343k : this.f5339g;
-            h0.d(this.f5333a, i10, i11, max + i10, max2 + i11);
-            this.f5333a.setClipBounds(z10 ? this.f5336d : this.f5334b);
+            int max = Math.max(this.f5350h - this.f5348f, this.f5354l - this.f5352j);
+            int max2 = Math.max(this.f5351i - this.f5349g, this.f5355m - this.f5353k);
+            int i10 = z10 ? this.f5352j : this.f5348f;
+            int i11 = z10 ? this.f5353k : this.f5349g;
+            h0.d(this.f5343a, i10, i11, max + i10, max2 + i11);
+            this.f5343a.setClipBounds(z10 ? this.f5346d : this.f5344b);
         }
     }
 
@@ -288,37 +288,37 @@ public class b extends Transition {
     private static class h extends w {
 
         /* renamed from: a  reason: collision with root package name */
-        boolean f5347a = false;
+        boolean f5357a = false;
 
         /* renamed from: b  reason: collision with root package name */
-        final ViewGroup f5348b;
+        final ViewGroup f5358b;
 
         h(ViewGroup viewGroup) {
-            this.f5348b = viewGroup;
+            this.f5358b = viewGroup;
         }
 
-        @Override // androidx.transition.w, androidx.transition.Transition.h
+        @Override // androidx.transition.w, androidx.transition.Transition.i
         public void onTransitionCancel(Transition transition) {
-            g0.b(this.f5348b, false);
-            this.f5347a = true;
+            g0.b(this.f5358b, false);
+            this.f5357a = true;
         }
 
-        @Override // androidx.transition.w, androidx.transition.Transition.h
+        @Override // androidx.transition.w, androidx.transition.Transition.i
         public void onTransitionEnd(Transition transition) {
-            if (!this.f5347a) {
-                g0.b(this.f5348b, false);
+            if (!this.f5357a) {
+                g0.b(this.f5358b, false);
             }
-            transition.f0(this);
+            transition.h0(this);
         }
 
-        @Override // androidx.transition.w, androidx.transition.Transition.h
+        @Override // androidx.transition.w, androidx.transition.Transition.i
         public void onTransitionPause(Transition transition) {
-            g0.b(this.f5348b, false);
+            g0.b(this.f5358b, false);
         }
 
-        @Override // androidx.transition.w, androidx.transition.Transition.h
+        @Override // androidx.transition.w, androidx.transition.Transition.i
         public void onTransitionResume(Transition transition) {
-            g0.b(this.f5348b, true);
+            g0.b(this.f5358b, true);
         }
     }
 
@@ -327,89 +327,89 @@ public class b extends Transition {
     public static class i {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f5349a;
+        private int f5359a;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f5350b;
+        private int f5360b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f5351c;
+        private int f5361c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f5352d;
+        private int f5362d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final View f5353e;
+        private final View f5363e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f5354f;
+        private int f5364f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f5355g;
+        private int f5365g;
 
         i(View view) {
-            this.f5353e = view;
+            this.f5363e = view;
         }
 
         private void b() {
-            h0.d(this.f5353e, this.f5349a, this.f5350b, this.f5351c, this.f5352d);
-            this.f5354f = 0;
-            this.f5355g = 0;
+            h0.d(this.f5363e, this.f5359a, this.f5360b, this.f5361c, this.f5362d);
+            this.f5364f = 0;
+            this.f5365g = 0;
         }
 
         void a(PointF pointF) {
-            this.f5351c = Math.round(pointF.x);
-            this.f5352d = Math.round(pointF.y);
-            int i10 = this.f5355g + 1;
-            this.f5355g = i10;
-            if (this.f5354f == i10) {
+            this.f5361c = Math.round(pointF.x);
+            this.f5362d = Math.round(pointF.y);
+            int i10 = this.f5365g + 1;
+            this.f5365g = i10;
+            if (this.f5364f == i10) {
                 b();
             }
         }
 
         void c(PointF pointF) {
-            this.f5349a = Math.round(pointF.x);
-            this.f5350b = Math.round(pointF.y);
-            int i10 = this.f5354f + 1;
-            this.f5354f = i10;
-            if (i10 == this.f5355g) {
+            this.f5359a = Math.round(pointF.x);
+            this.f5360b = Math.round(pointF.y);
+            int i10 = this.f5364f + 1;
+            this.f5364f = i10;
+            if (i10 == this.f5365g) {
                 b();
             }
         }
     }
 
-    private void u0(c0 c0Var) {
-        View view = c0Var.f5366b;
+    private void w0(c0 c0Var) {
+        View view = c0Var.f5376b;
         if (view.isLaidOut() || view.getWidth() != 0 || view.getHeight() != 0) {
-            c0Var.f5365a.put("android:changeBounds:bounds", new Rect(view.getLeft(), view.getTop(), view.getRight(), view.getBottom()));
-            c0Var.f5365a.put("android:changeBounds:parent", c0Var.f5366b.getParent());
-            if (this.f5330b0) {
-                c0Var.f5365a.put("android:changeBounds:clip", view.getClipBounds());
+            c0Var.f5375a.put("android:changeBounds:bounds", new Rect(view.getLeft(), view.getTop(), view.getRight(), view.getBottom()));
+            c0Var.f5375a.put("android:changeBounds:parent", c0Var.f5376b.getParent());
+            if (this.f5340b0) {
+                c0Var.f5375a.put("android:changeBounds:clip", view.getClipBounds());
             }
         }
     }
 
     @Override // androidx.transition.Transition
-    public String[] N() {
-        return f5323c0;
+    public String[] P() {
+        return f5333c0;
     }
 
     @Override // androidx.transition.Transition
-    public boolean R() {
+    public boolean T() {
         return true;
     }
 
     @Override // androidx.transition.Transition
-    public void i(c0 c0Var) {
-        u0(c0Var);
+    public void h(c0 c0Var) {
+        w0(c0Var);
     }
 
     @Override // androidx.transition.Transition
     public void l(c0 c0Var) {
         Rect rect;
-        u0(c0Var);
-        if (this.f5330b0 && (rect = (Rect) c0Var.f5366b.getTag(l.f5425b)) != null) {
-            c0Var.f5365a.put("android:changeBounds:clip", rect);
+        w0(c0Var);
+        if (this.f5340b0 && (rect = (Rect) c0Var.f5376b.getTag(l.f5435b)) != null) {
+            c0Var.f5375a.put("android:changeBounds:clip", rect);
         }
     }
 
@@ -431,16 +431,16 @@ public class b extends Transition {
         if (c0Var == null || c0Var2 == null) {
             return null;
         }
-        Map map = c0Var.f5365a;
-        Map map2 = c0Var2.f5365a;
+        Map map = c0Var.f5375a;
+        Map map2 = c0Var2.f5375a;
         ViewGroup viewGroup2 = (ViewGroup) map.get("android:changeBounds:parent");
         ViewGroup viewGroup3 = (ViewGroup) map2.get("android:changeBounds:parent");
         if (viewGroup2 == null || viewGroup3 == null) {
             return null;
         }
-        View view = c0Var2.f5366b;
-        Rect rect3 = (Rect) c0Var.f5365a.get("android:changeBounds:bounds");
-        Rect rect4 = (Rect) c0Var2.f5365a.get("android:changeBounds:bounds");
+        View view = c0Var2.f5376b;
+        Rect rect3 = (Rect) c0Var.f5375a.get("android:changeBounds:bounds");
+        Rect rect4 = (Rect) c0Var2.f5375a.get("android:changeBounds:bounds");
         int i16 = rect3.left;
         int i17 = rect4.left;
         int i18 = rect3.top;
@@ -453,8 +453,8 @@ public class b extends Transition {
         int i25 = i22 - i18;
         int i26 = i21 - i17;
         int i27 = i23 - i19;
-        Rect rect5 = (Rect) c0Var.f5365a.get("android:changeBounds:clip");
-        Rect rect6 = (Rect) c0Var2.f5365a.get("android:changeBounds:clip");
+        Rect rect5 = (Rect) c0Var.f5375a.get("android:changeBounds:clip");
+        Rect rect6 = (Rect) c0Var2.f5375a.get("android:changeBounds:clip");
         if ((i24 != 0 && i25 != 0) || (i26 != 0 && i27 != 0)) {
             if (i16 == i17 && i18 == i19) {
                 i10 = 0;
@@ -474,24 +474,24 @@ public class b extends Transition {
         if (i28 <= 0) {
             return null;
         }
-        if (!this.f5330b0) {
+        if (!this.f5340b0) {
             h0.d(view, i16, i18, i20, i22);
             if (i28 == 2) {
                 if (i24 == i26 && i25 == i27) {
-                    c10 = j.a(view, f5328h0, D().a(i16, i18, i17, i19));
+                    c10 = j.a(view, f5338h0, F().a(i16, i18, i17, i19));
                 } else {
                     i iVar = new i(view);
-                    ObjectAnimator a11 = j.a(iVar, f5324d0, D().a(i16, i18, i17, i19));
-                    ObjectAnimator a12 = j.a(iVar, f5325e0, D().a(i20, i22, i21, i23));
+                    ObjectAnimator a11 = j.a(iVar, f5334d0, F().a(i16, i18, i17, i19));
+                    ObjectAnimator a12 = j.a(iVar, f5335e0, F().a(i20, i22, i21, i23));
                     AnimatorSet animatorSet = new AnimatorSet();
                     animatorSet.playTogether(a11, a12);
                     animatorSet.addListener(new f(iVar));
                     c10 = animatorSet;
                 }
             } else if (i16 == i17 && i18 == i19) {
-                c10 = j.a(view, f5326f0, D().a(i20, i22, i21, i23));
+                c10 = j.a(view, f5336f0, F().a(i20, i22, i21, i23));
             } else {
-                c10 = j.a(view, f5327g0, D().a(i16, i18, i17, i19));
+                c10 = j.a(view, f5337g0, F().a(i16, i18, i17, i19));
             }
         } else {
             h0.d(view, i16, i18, Math.max(i24, i26) + i16, i18 + Math.max(i25, i27));
@@ -504,7 +504,7 @@ public class b extends Transition {
                 i11 = i23;
                 i12 = i21;
                 i13 = i17;
-                a10 = j.a(view, f5328h0, D().a(i16, i18, i17, i19));
+                a10 = j.a(view, f5338h0, F().a(i16, i18, i17, i19));
             }
             if (rect5 == null) {
                 z10 = true;
@@ -530,7 +530,7 @@ public class b extends Transition {
             }
             if (!rect.equals(rect2)) {
                 view.setClipBounds(rect);
-                objectAnimator = ObjectAnimator.ofObject(view, "clipBounds", f5329i0, rect, rect2);
+                objectAnimator = ObjectAnimator.ofObject(view, "clipBounds", f5339i0, rect, rect2);
                 g gVar = new g(view, rect, z10, rect2, i15, i16, i18, i20, i22, i13, i19, i12, i11);
                 objectAnimator.addListener(gVar);
                 c(gVar);
@@ -542,7 +542,7 @@ public class b extends Transition {
         if (view.getParent() instanceof ViewGroup) {
             ViewGroup viewGroup4 = (ViewGroup) view.getParent();
             g0.b(viewGroup4, true);
-            F().c(new h(viewGroup4));
+            H().c(new h(viewGroup4));
         }
         return c10;
     }

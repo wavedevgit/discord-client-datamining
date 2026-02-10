@@ -89,7 +89,7 @@ public final class JavaOnlyMap implements ReadableMap, WritableMap {
                             javaOnlyMap.putArray(nextKey, JavaOnlyArray.Companion.deepClone(readableMap.getArray(nextKey)));
                             break;
                         default:
-                            throw new rr.p();
+                            throw new as.p();
                     }
                 }
             }
@@ -363,7 +363,7 @@ public final class JavaOnlyMap implements ReadableMap, WritableMap {
         this();
         if (objArr.length % 2 == 0) {
             int i10 = 0;
-            int c10 = zr.c.c(0, objArr.length - 1, 2);
+            int c10 = is.c.c(0, objArr.length - 1, 2);
             if (c10 < 0) {
                 return;
             }

@@ -5,16 +5,16 @@ import bc.g;
 final class b extends g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g.a f6439a;
+    private final g.a f6545a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f6440b;
+    private final long f6546b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(g.a aVar, long j10) {
         if (aVar != null) {
-            this.f6439a = aVar;
-            this.f6440b = j10;
+            this.f6545a = aVar;
+            this.f6546b = j10;
             return;
         }
         throw new NullPointerException("Null status");
@@ -22,12 +22,12 @@ final class b extends g {
 
     @Override // bc.g
     public long b() {
-        return this.f6440b;
+        return this.f6546b;
     }
 
     @Override // bc.g
     public g.a c() {
-        return this.f6439a;
+        return this.f6545a;
     }
 
     public boolean equals(Object obj) {
@@ -36,7 +36,7 @@ final class b extends g {
         }
         if (obj instanceof g) {
             g gVar = (g) obj;
-            if (this.f6439a.equals(gVar.c()) && this.f6440b == gVar.b()) {
+            if (this.f6545a.equals(gVar.c()) && this.f6546b == gVar.b()) {
                 return true;
             }
         }
@@ -44,11 +44,11 @@ final class b extends g {
     }
 
     public int hashCode() {
-        long j10 = this.f6440b;
-        return ((this.f6439a.hashCode() ^ 1000003) * 1000003) ^ ((int) (j10 ^ (j10 >>> 32)));
+        long j10 = this.f6546b;
+        return ((this.f6545a.hashCode() ^ 1000003) * 1000003) ^ ((int) (j10 ^ (j10 >>> 32)));
     }
 
     public String toString() {
-        return "BackendResponse{status=" + this.f6439a + ", nextRequestWaitMillis=" + this.f6440b + "}";
+        return "BackendResponse{status=" + this.f6545a + ", nextRequestWaitMillis=" + this.f6546b + "}";
     }
 }

@@ -33,51 +33,51 @@ import r1.e;
 public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     /* renamed from: u  reason: collision with root package name */
-    static final PorterDuff.Mode f5508u = PorterDuff.Mode.SRC_IN;
+    static final PorterDuff.Mode f5518u = PorterDuff.Mode.SRC_IN;
 
     /* renamed from: e  reason: collision with root package name */
-    private h f5509e;
+    private h f5519e;
 
     /* renamed from: i  reason: collision with root package name */
-    private PorterDuffColorFilter f5510i;
+    private PorterDuffColorFilter f5520i;
 
     /* renamed from: o  reason: collision with root package name */
-    private ColorFilter f5511o;
+    private ColorFilter f5521o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f5512p;
+    private boolean f5522p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f5513q;
+    private boolean f5523q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final float[] f5514r;
+    private final float[] f5524r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Matrix f5515s;
+    private final Matrix f5525s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Rect f5516t;
+    private final Rect f5526t;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class b extends AbstractC0075f {
+    public static class b extends AbstractC0071f {
         b() {
         }
 
         private void f(TypedArray typedArray, XmlPullParser xmlPullParser) {
             String string = typedArray.getString(0);
             if (string != null) {
-                this.f5543b = string;
+                this.f5553b = string;
             }
             String string2 = typedArray.getString(1);
             if (string2 != null) {
-                this.f5542a = r1.e.d(string2);
+                this.f5552a = r1.e.d(string2);
             }
-            this.f5544c = m.g(typedArray, xmlPullParser, "fillType", 2, 0);
+            this.f5554c = m.g(typedArray, xmlPullParser, "fillType", 2, 0);
         }
 
-        @Override // androidx.vectordrawable.graphics.drawable.f.AbstractC0075f
+        @Override // androidx.vectordrawable.graphics.drawable.f.AbstractC0071f
         public boolean c() {
             return true;
         }
@@ -86,7 +86,7 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
             if (!m.h(xmlPullParser, "pathData")) {
                 return;
             }
-            TypedArray i10 = m.i(resources, theme, attributeSet, androidx.vectordrawable.graphics.drawable.a.f5481d);
+            TypedArray i10 = m.i(resources, theme, attributeSet, androidx.vectordrawable.graphics.drawable.a.f5491d);
             f(i10, xmlPullParser);
             i10.recycle();
         }
@@ -116,133 +116,133 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
     public static class h extends Drawable.ConstantState {
 
         /* renamed from: a  reason: collision with root package name */
-        int f5563a;
+        int f5573a;
 
         /* renamed from: b  reason: collision with root package name */
-        g f5564b;
+        g f5574b;
 
         /* renamed from: c  reason: collision with root package name */
-        ColorStateList f5565c;
+        ColorStateList f5575c;
 
         /* renamed from: d  reason: collision with root package name */
-        PorterDuff.Mode f5566d;
+        PorterDuff.Mode f5576d;
 
         /* renamed from: e  reason: collision with root package name */
-        boolean f5567e;
+        boolean f5577e;
 
         /* renamed from: f  reason: collision with root package name */
-        Bitmap f5568f;
+        Bitmap f5578f;
 
         /* renamed from: g  reason: collision with root package name */
-        ColorStateList f5569g;
+        ColorStateList f5579g;
 
         /* renamed from: h  reason: collision with root package name */
-        PorterDuff.Mode f5570h;
+        PorterDuff.Mode f5580h;
 
         /* renamed from: i  reason: collision with root package name */
-        int f5571i;
+        int f5581i;
 
         /* renamed from: j  reason: collision with root package name */
-        boolean f5572j;
+        boolean f5582j;
 
         /* renamed from: k  reason: collision with root package name */
-        boolean f5573k;
+        boolean f5583k;
 
         /* renamed from: l  reason: collision with root package name */
-        Paint f5574l;
+        Paint f5584l;
 
         h(h hVar) {
-            this.f5565c = null;
-            this.f5566d = f.f5508u;
+            this.f5575c = null;
+            this.f5576d = f.f5518u;
             if (hVar != null) {
-                this.f5563a = hVar.f5563a;
-                g gVar = new g(hVar.f5564b);
-                this.f5564b = gVar;
-                if (hVar.f5564b.f5551e != null) {
-                    gVar.f5551e = new Paint(hVar.f5564b.f5551e);
+                this.f5573a = hVar.f5573a;
+                g gVar = new g(hVar.f5574b);
+                this.f5574b = gVar;
+                if (hVar.f5574b.f5561e != null) {
+                    gVar.f5561e = new Paint(hVar.f5574b.f5561e);
                 }
-                if (hVar.f5564b.f5550d != null) {
-                    this.f5564b.f5550d = new Paint(hVar.f5564b.f5550d);
+                if (hVar.f5574b.f5560d != null) {
+                    this.f5574b.f5560d = new Paint(hVar.f5574b.f5560d);
                 }
-                this.f5565c = hVar.f5565c;
-                this.f5566d = hVar.f5566d;
-                this.f5567e = hVar.f5567e;
+                this.f5575c = hVar.f5575c;
+                this.f5576d = hVar.f5576d;
+                this.f5577e = hVar.f5577e;
             }
         }
 
         public boolean a(int i10, int i11) {
-            if (i10 == this.f5568f.getWidth() && i11 == this.f5568f.getHeight()) {
+            if (i10 == this.f5578f.getWidth() && i11 == this.f5578f.getHeight()) {
                 return true;
             }
             return false;
         }
 
         public boolean b() {
-            if (!this.f5573k && this.f5569g == this.f5565c && this.f5570h == this.f5566d && this.f5572j == this.f5567e && this.f5571i == this.f5564b.getRootAlpha()) {
+            if (!this.f5583k && this.f5579g == this.f5575c && this.f5580h == this.f5576d && this.f5582j == this.f5577e && this.f5581i == this.f5574b.getRootAlpha()) {
                 return true;
             }
             return false;
         }
 
         public void c(int i10, int i11) {
-            if (this.f5568f != null && a(i10, i11)) {
+            if (this.f5578f != null && a(i10, i11)) {
                 return;
             }
-            this.f5568f = Bitmap.createBitmap(i10, i11, Bitmap.Config.ARGB_8888);
-            this.f5573k = true;
+            this.f5578f = Bitmap.createBitmap(i10, i11, Bitmap.Config.ARGB_8888);
+            this.f5583k = true;
         }
 
         public void d(Canvas canvas, ColorFilter colorFilter, Rect rect) {
-            canvas.drawBitmap(this.f5568f, (Rect) null, rect, e(colorFilter));
+            canvas.drawBitmap(this.f5578f, (Rect) null, rect, e(colorFilter));
         }
 
         public Paint e(ColorFilter colorFilter) {
             if (!f() && colorFilter == null) {
                 return null;
             }
-            if (this.f5574l == null) {
+            if (this.f5584l == null) {
                 Paint paint = new Paint();
-                this.f5574l = paint;
+                this.f5584l = paint;
                 paint.setFilterBitmap(true);
             }
-            this.f5574l.setAlpha(this.f5564b.getRootAlpha());
-            this.f5574l.setColorFilter(colorFilter);
-            return this.f5574l;
+            this.f5584l.setAlpha(this.f5574b.getRootAlpha());
+            this.f5584l.setColorFilter(colorFilter);
+            return this.f5584l;
         }
 
         public boolean f() {
-            if (this.f5564b.getRootAlpha() < 255) {
+            if (this.f5574b.getRootAlpha() < 255) {
                 return true;
             }
             return false;
         }
 
         public boolean g() {
-            return this.f5564b.f();
+            return this.f5574b.f();
         }
 
         @Override // android.graphics.drawable.Drawable.ConstantState
         public int getChangingConfigurations() {
-            return this.f5563a;
+            return this.f5573a;
         }
 
         public boolean h(int[] iArr) {
-            boolean g10 = this.f5564b.g(iArr);
-            this.f5573k |= g10;
+            boolean g10 = this.f5574b.g(iArr);
+            this.f5583k |= g10;
             return g10;
         }
 
         public void i() {
-            this.f5569g = this.f5565c;
-            this.f5570h = this.f5566d;
-            this.f5571i = this.f5564b.getRootAlpha();
-            this.f5572j = this.f5567e;
-            this.f5573k = false;
+            this.f5579g = this.f5575c;
+            this.f5580h = this.f5576d;
+            this.f5581i = this.f5574b.getRootAlpha();
+            this.f5582j = this.f5577e;
+            this.f5583k = false;
         }
 
         public void j(int i10, int i11) {
-            this.f5568f.eraseColor(0);
-            this.f5564b.b(new Canvas(this.f5568f), i10, i11, null);
+            this.f5578f.eraseColor(0);
+            this.f5574b.b(new Canvas(this.f5578f), i10, i11, null);
         }
 
         @Override // android.graphics.drawable.Drawable.ConstantState
@@ -256,18 +256,18 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
         }
 
         h() {
-            this.f5565c = null;
-            this.f5566d = f.f5508u;
-            this.f5564b = new g();
+            this.f5575c = null;
+            this.f5576d = f.f5518u;
+            this.f5574b = new g();
         }
     }
 
     f() {
-        this.f5513q = true;
-        this.f5514r = new float[9];
-        this.f5515s = new Matrix();
-        this.f5516t = new Rect();
-        this.f5509e = new h();
+        this.f5523q = true;
+        this.f5524r = new float[9];
+        this.f5525s = new Matrix();
+        this.f5526t = new Rect();
+        this.f5519e = new h();
     }
 
     static int a(int i10, float f10) {
@@ -276,15 +276,15 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     public static f b(Resources resources, int i10, Resources.Theme theme) {
         f fVar = new f();
-        fVar.f5507d = j.f(resources, i10, theme);
+        fVar.f5517d = j.f(resources, i10, theme);
         return fVar;
     }
 
     private void d(Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
-        h hVar = this.f5509e;
-        g gVar = hVar.f5564b;
+        h hVar = this.f5519e;
+        g gVar = hVar.f5574b;
         ArrayDeque arrayDeque = new ArrayDeque();
-        arrayDeque.push(gVar.f5554h);
+        arrayDeque.push(gVar.f5564h);
         int eventType = xmlPullParser.getEventType();
         int depth = xmlPullParser.getDepth() + 1;
         boolean z10 = true;
@@ -296,29 +296,29 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
                     if ("path".equals(name)) {
                         c cVar = new c();
                         cVar.g(resources, attributeSet, theme, xmlPullParser);
-                        dVar.f5530b.add(cVar);
+                        dVar.f5540b.add(cVar);
                         if (cVar.getPathName() != null) {
-                            gVar.f5562p.put(cVar.getPathName(), cVar);
+                            gVar.f5572p.put(cVar.getPathName(), cVar);
                         }
-                        hVar.f5563a = cVar.f5545d | hVar.f5563a;
+                        hVar.f5573a = cVar.f5555d | hVar.f5573a;
                         z10 = false;
                     } else if ("clip-path".equals(name)) {
                         b bVar = new b();
                         bVar.e(resources, attributeSet, theme, xmlPullParser);
-                        dVar.f5530b.add(bVar);
+                        dVar.f5540b.add(bVar);
                         if (bVar.getPathName() != null) {
-                            gVar.f5562p.put(bVar.getPathName(), bVar);
+                            gVar.f5572p.put(bVar.getPathName(), bVar);
                         }
-                        hVar.f5563a = bVar.f5545d | hVar.f5563a;
+                        hVar.f5573a = bVar.f5555d | hVar.f5573a;
                     } else if ("group".equals(name)) {
                         d dVar2 = new d();
                         dVar2.c(resources, attributeSet, theme, xmlPullParser);
-                        dVar.f5530b.add(dVar2);
+                        dVar.f5540b.add(dVar2);
                         arrayDeque.push(dVar2);
                         if (dVar2.getGroupName() != null) {
-                            gVar.f5562p.put(dVar2.getGroupName(), dVar2);
+                            gVar.f5572p.put(dVar2.getGroupName(), dVar2);
                         }
-                        hVar.f5563a = dVar2.f5539k | hVar.f5563a;
+                        hVar.f5573a = dVar2.f5549k | hVar.f5573a;
                     }
                 }
             } else if (eventType == 3 && "group".equals(xmlPullParser.getName())) {
@@ -362,29 +362,29 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
     }
 
     private void h(TypedArray typedArray, XmlPullParser xmlPullParser, Resources.Theme theme) {
-        h hVar = this.f5509e;
-        g gVar = hVar.f5564b;
-        hVar.f5566d = f(m.g(typedArray, xmlPullParser, "tintMode", 6, -1), PorterDuff.Mode.SRC_IN);
+        h hVar = this.f5519e;
+        g gVar = hVar.f5574b;
+        hVar.f5576d = f(m.g(typedArray, xmlPullParser, "tintMode", 6, -1), PorterDuff.Mode.SRC_IN);
         ColorStateList c10 = m.c(typedArray, xmlPullParser, theme, "tint", 1);
         if (c10 != null) {
-            hVar.f5565c = c10;
+            hVar.f5575c = c10;
         }
-        hVar.f5567e = m.a(typedArray, xmlPullParser, "autoMirrored", 5, hVar.f5567e);
-        gVar.f5557k = m.f(typedArray, xmlPullParser, "viewportWidth", 7, gVar.f5557k);
-        float f10 = m.f(typedArray, xmlPullParser, "viewportHeight", 8, gVar.f5558l);
-        gVar.f5558l = f10;
-        if (gVar.f5557k > 0.0f) {
+        hVar.f5577e = m.a(typedArray, xmlPullParser, "autoMirrored", 5, hVar.f5577e);
+        gVar.f5567k = m.f(typedArray, xmlPullParser, "viewportWidth", 7, gVar.f5567k);
+        float f10 = m.f(typedArray, xmlPullParser, "viewportHeight", 8, gVar.f5568l);
+        gVar.f5568l = f10;
+        if (gVar.f5567k > 0.0f) {
             if (f10 > 0.0f) {
-                gVar.f5555i = typedArray.getDimension(3, gVar.f5555i);
-                float dimension = typedArray.getDimension(2, gVar.f5556j);
-                gVar.f5556j = dimension;
-                if (gVar.f5555i > 0.0f) {
+                gVar.f5565i = typedArray.getDimension(3, gVar.f5565i);
+                float dimension = typedArray.getDimension(2, gVar.f5566j);
+                gVar.f5566j = dimension;
+                if (gVar.f5565i > 0.0f) {
                     if (dimension > 0.0f) {
                         gVar.setAlpha(m.f(typedArray, xmlPullParser, "alpha", 4, gVar.getAlpha()));
                         String string = typedArray.getString(0);
                         if (string != null) {
-                            gVar.f5560n = string;
-                            gVar.f5562p.put(string, gVar);
+                            gVar.f5570n = string;
+                            gVar.f5572p.put(string, gVar);
                             return;
                         }
                         return;
@@ -405,12 +405,12 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Object c(String str) {
-        return this.f5509e.f5564b.f5562p.get(str);
+        return this.f5519e.f5574b.f5572p.get(str);
     }
 
     @Override // android.graphics.drawable.Drawable
     public boolean canApplyTheme() {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             s1.a.b(drawable);
             return false;
@@ -425,46 +425,46 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             drawable.draw(canvas);
             return;
         }
-        copyBounds(this.f5516t);
-        if (this.f5516t.width() > 0 && this.f5516t.height() > 0) {
-            ColorFilter colorFilter = this.f5511o;
+        copyBounds(this.f5526t);
+        if (this.f5526t.width() > 0 && this.f5526t.height() > 0) {
+            ColorFilter colorFilter = this.f5521o;
             if (colorFilter == null) {
-                colorFilter = this.f5510i;
+                colorFilter = this.f5520i;
             }
-            canvas.getMatrix(this.f5515s);
-            this.f5515s.getValues(this.f5514r);
-            float abs = Math.abs(this.f5514r[0]);
-            float abs2 = Math.abs(this.f5514r[4]);
-            float abs3 = Math.abs(this.f5514r[1]);
-            float abs4 = Math.abs(this.f5514r[3]);
+            canvas.getMatrix(this.f5525s);
+            this.f5525s.getValues(this.f5524r);
+            float abs = Math.abs(this.f5524r[0]);
+            float abs2 = Math.abs(this.f5524r[4]);
+            float abs3 = Math.abs(this.f5524r[1]);
+            float abs4 = Math.abs(this.f5524r[3]);
             if (abs3 != 0.0f || abs4 != 0.0f) {
                 abs = 1.0f;
                 abs2 = 1.0f;
             }
-            int min = Math.min((int) RecyclerView.ItemAnimator.FLAG_MOVED, (int) (this.f5516t.width() * abs));
-            int min2 = Math.min((int) RecyclerView.ItemAnimator.FLAG_MOVED, (int) (this.f5516t.height() * abs2));
+            int min = Math.min((int) RecyclerView.ItemAnimator.FLAG_MOVED, (int) (this.f5526t.width() * abs));
+            int min2 = Math.min((int) RecyclerView.ItemAnimator.FLAG_MOVED, (int) (this.f5526t.height() * abs2));
             if (min > 0 && min2 > 0) {
                 int save = canvas.save();
-                Rect rect = this.f5516t;
+                Rect rect = this.f5526t;
                 canvas.translate(rect.left, rect.top);
                 if (e()) {
-                    canvas.translate(this.f5516t.width(), 0.0f);
+                    canvas.translate(this.f5526t.width(), 0.0f);
                     canvas.scale(-1.0f, 1.0f);
                 }
-                this.f5516t.offsetTo(0, 0);
-                this.f5509e.c(min, min2);
-                if (!this.f5513q) {
-                    this.f5509e.j(min, min2);
-                } else if (!this.f5509e.b()) {
-                    this.f5509e.j(min, min2);
-                    this.f5509e.i();
+                this.f5526t.offsetTo(0, 0);
+                this.f5519e.c(min, min2);
+                if (!this.f5523q) {
+                    this.f5519e.j(min, min2);
+                } else if (!this.f5519e.b()) {
+                    this.f5519e.j(min, min2);
+                    this.f5519e.i();
                 }
-                this.f5509e.d(canvas, colorFilter, this.f5516t);
+                this.f5519e.d(canvas, colorFilter, this.f5526t);
                 canvas.restoreToCount(save);
             }
         }
@@ -472,43 +472,43 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(boolean z10) {
-        this.f5513q = z10;
+        this.f5523q = z10;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getAlpha() {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             return s1.a.d(drawable);
         }
-        return this.f5509e.f5564b.getRootAlpha();
+        return this.f5519e.f5574b.getRootAlpha();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getChangingConfigurations() {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             return drawable.getChangingConfigurations();
         }
-        return super.getChangingConfigurations() | this.f5509e.getChangingConfigurations();
+        return super.getChangingConfigurations() | this.f5519e.getChangingConfigurations();
     }
 
     @Override // android.graphics.drawable.Drawable
     public ColorFilter getColorFilter() {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             return s1.a.e(drawable);
         }
-        return this.f5511o;
+        return this.f5521o;
     }
 
     @Override // android.graphics.drawable.Drawable
     public Drawable.ConstantState getConstantState() {
-        if (this.f5507d != null) {
-            return new i(this.f5507d.getConstantState());
+        if (this.f5517d != null) {
+            return new i(this.f5517d.getConstantState());
         }
-        this.f5509e.f5563a = getChangingConfigurations();
-        return this.f5509e;
+        this.f5519e.f5573a = getChangingConfigurations();
+        return this.f5519e;
     }
 
     @Override // androidx.vectordrawable.graphics.drawable.e, android.graphics.drawable.Drawable
@@ -518,20 +518,20 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicHeight() {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             return drawable.getIntrinsicHeight();
         }
-        return (int) this.f5509e.f5564b.f5556j;
+        return (int) this.f5519e.f5574b.f5566j;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicWidth() {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             return drawable.getIntrinsicWidth();
         }
-        return (int) this.f5509e.f5564b.f5555i;
+        return (int) this.f5519e.f5574b.f5565i;
     }
 
     @Override // androidx.vectordrawable.graphics.drawable.e, android.graphics.drawable.Drawable
@@ -546,7 +546,7 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     @Override // android.graphics.drawable.Drawable
     public int getOpacity() {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             return drawable.getOpacity();
         }
@@ -577,7 +577,7 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     @Override // android.graphics.drawable.Drawable
     public void inflate(Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet) {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             drawable.inflate(resources, xmlPullParser, attributeSet);
         } else {
@@ -587,7 +587,7 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     @Override // android.graphics.drawable.Drawable
     public void invalidateSelf() {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             drawable.invalidateSelf();
         } else {
@@ -597,24 +597,24 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     @Override // android.graphics.drawable.Drawable
     public boolean isAutoMirrored() {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             return s1.a.h(drawable);
         }
-        return this.f5509e.f5567e;
+        return this.f5519e.f5577e;
     }
 
     @Override // android.graphics.drawable.Drawable
     public boolean isStateful() {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             return drawable.isStateful();
         }
         if (!super.isStateful()) {
-            h hVar = this.f5509e;
+            h hVar = this.f5519e;
             if (hVar != null) {
                 if (!hVar.g()) {
-                    ColorStateList colorStateList = this.f5509e.f5565c;
+                    ColorStateList colorStateList = this.f5519e.f5575c;
                     if (colorStateList == null || !colorStateList.isStateful()) {
                         return false;
                     }
@@ -634,21 +634,21 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     @Override // android.graphics.drawable.Drawable
     public Drawable mutate() {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             drawable.mutate();
             return this;
         }
-        if (!this.f5512p && super.mutate() == this) {
-            this.f5509e = new h(this.f5509e);
-            this.f5512p = true;
+        if (!this.f5522p && super.mutate() == this) {
+            this.f5519e = new h(this.f5519e);
+            this.f5522p = true;
         }
         return this;
     }
 
     @Override // android.graphics.drawable.Drawable
     protected void onBoundsChange(Rect rect) {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             drawable.setBounds(rect);
         }
@@ -658,14 +658,14 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
     protected boolean onStateChange(int[] iArr) {
         boolean z10;
         PorterDuff.Mode mode;
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             return drawable.setState(iArr);
         }
-        h hVar = this.f5509e;
-        ColorStateList colorStateList = hVar.f5565c;
-        if (colorStateList != null && (mode = hVar.f5566d) != null) {
-            this.f5510i = i(this.f5510i, colorStateList, mode);
+        h hVar = this.f5519e;
+        ColorStateList colorStateList = hVar.f5575c;
+        if (colorStateList != null && (mode = hVar.f5576d) != null) {
+            this.f5520i = i(this.f5520i, colorStateList, mode);
             invalidateSelf();
             z10 = true;
         } else {
@@ -680,7 +680,7 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     @Override // android.graphics.drawable.Drawable
     public void scheduleSelf(Runnable runnable, long j10) {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             drawable.scheduleSelf(runnable, j10);
         } else {
@@ -690,22 +690,22 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             drawable.setAlpha(i10);
-        } else if (this.f5509e.f5564b.getRootAlpha() != i10) {
-            this.f5509e.f5564b.setRootAlpha(i10);
+        } else if (this.f5519e.f5574b.getRootAlpha() != i10) {
+            this.f5519e.f5574b.setRootAlpha(i10);
             invalidateSelf();
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setAutoMirrored(boolean z10) {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             s1.a.j(drawable, z10);
         } else {
-            this.f5509e.f5567e = z10;
+            this.f5519e.f5577e = z10;
         }
     }
 
@@ -741,7 +741,7 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     @Override // android.graphics.drawable.Drawable
     public void setTint(int i10) {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             s1.a.n(drawable, i10);
         } else {
@@ -751,37 +751,37 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     @Override // android.graphics.drawable.Drawable
     public void setTintList(ColorStateList colorStateList) {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             s1.a.o(drawable, colorStateList);
             return;
         }
-        h hVar = this.f5509e;
-        if (hVar.f5565c != colorStateList) {
-            hVar.f5565c = colorStateList;
-            this.f5510i = i(this.f5510i, colorStateList, hVar.f5566d);
+        h hVar = this.f5519e;
+        if (hVar.f5575c != colorStateList) {
+            hVar.f5575c = colorStateList;
+            this.f5520i = i(this.f5520i, colorStateList, hVar.f5576d);
             invalidateSelf();
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setTintMode(PorterDuff.Mode mode) {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             s1.a.p(drawable, mode);
             return;
         }
-        h hVar = this.f5509e;
-        if (hVar.f5566d != mode) {
-            hVar.f5566d = mode;
-            this.f5510i = i(this.f5510i, hVar.f5565c, mode);
+        h hVar = this.f5519e;
+        if (hVar.f5576d != mode) {
+            hVar.f5576d = mode;
+            this.f5520i = i(this.f5520i, hVar.f5575c, mode);
             invalidateSelf();
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     public boolean setVisible(boolean z10, boolean z11) {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             return drawable.setVisible(z10, z11);
         }
@@ -790,7 +790,7 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
     @Override // android.graphics.drawable.Drawable
     public void unscheduleSelf(Runnable runnable) {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             drawable.unscheduleSelf(runnable);
         } else {
@@ -802,76 +802,76 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
     private static class i extends Drawable.ConstantState {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Drawable.ConstantState f5575a;
+        private final Drawable.ConstantState f5585a;
 
         i(Drawable.ConstantState constantState) {
-            this.f5575a = constantState;
+            this.f5585a = constantState;
         }
 
         @Override // android.graphics.drawable.Drawable.ConstantState
         public boolean canApplyTheme() {
-            return this.f5575a.canApplyTheme();
+            return this.f5585a.canApplyTheme();
         }
 
         @Override // android.graphics.drawable.Drawable.ConstantState
         public int getChangingConfigurations() {
-            return this.f5575a.getChangingConfigurations();
+            return this.f5585a.getChangingConfigurations();
         }
 
         @Override // android.graphics.drawable.Drawable.ConstantState
         public Drawable newDrawable() {
             f fVar = new f();
-            fVar.f5507d = (VectorDrawable) this.f5575a.newDrawable();
+            fVar.f5517d = (VectorDrawable) this.f5585a.newDrawable();
             return fVar;
         }
 
         @Override // android.graphics.drawable.Drawable.ConstantState
         public Drawable newDrawable(Resources resources) {
             f fVar = new f();
-            fVar.f5507d = (VectorDrawable) this.f5575a.newDrawable(resources);
+            fVar.f5517d = (VectorDrawable) this.f5585a.newDrawable(resources);
             return fVar;
         }
 
         @Override // android.graphics.drawable.Drawable.ConstantState
         public Drawable newDrawable(Resources resources, Resources.Theme theme) {
             f fVar = new f();
-            fVar.f5507d = (VectorDrawable) this.f5575a.newDrawable(resources, theme);
+            fVar.f5517d = (VectorDrawable) this.f5585a.newDrawable(resources, theme);
             return fVar;
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             drawable.setColorFilter(colorFilter);
             return;
         }
-        this.f5511o = colorFilter;
+        this.f5521o = colorFilter;
         invalidateSelf();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: androidx.vectordrawable.graphics.drawable.f$f  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static abstract class AbstractC0075f extends e {
+    public static abstract class AbstractC0071f extends e {
 
         /* renamed from: a  reason: collision with root package name */
-        protected e.b[] f5542a;
+        protected e.b[] f5552a;
 
         /* renamed from: b  reason: collision with root package name */
-        String f5543b;
+        String f5553b;
 
         /* renamed from: c  reason: collision with root package name */
-        int f5544c;
+        int f5554c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f5545d;
+        int f5555d;
 
-        AbstractC0075f() {
+        AbstractC0071f() {
             super();
-            this.f5542a = null;
-            this.f5544c = 0;
+            this.f5552a = null;
+            this.f5554c = 0;
         }
 
         public boolean c() {
@@ -880,115 +880,115 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
         public void d(Path path) {
             path.reset();
-            e.b[] bVarArr = this.f5542a;
+            e.b[] bVarArr = this.f5552a;
             if (bVarArr != null) {
                 r1.e.j(bVarArr, path);
             }
         }
 
         public e.b[] getPathData() {
-            return this.f5542a;
+            return this.f5552a;
         }
 
         public String getPathName() {
-            return this.f5543b;
+            return this.f5553b;
         }
 
         public void setPathData(e.b[] bVarArr) {
-            if (!r1.e.b(this.f5542a, bVarArr)) {
-                this.f5542a = r1.e.f(bVarArr);
+            if (!r1.e.b(this.f5552a, bVarArr)) {
+                this.f5552a = r1.e.f(bVarArr);
             } else {
-                r1.e.k(this.f5542a, bVarArr);
+                r1.e.k(this.f5552a, bVarArr);
             }
         }
 
-        AbstractC0075f(AbstractC0075f abstractC0075f) {
+        AbstractC0071f(AbstractC0071f abstractC0071f) {
             super();
-            this.f5542a = null;
-            this.f5544c = 0;
-            this.f5543b = abstractC0075f.f5543b;
-            this.f5545d = abstractC0075f.f5545d;
-            this.f5542a = r1.e.f(abstractC0075f.f5542a);
+            this.f5552a = null;
+            this.f5554c = 0;
+            this.f5553b = abstractC0071f.f5553b;
+            this.f5555d = abstractC0071f.f5555d;
+            this.f5552a = r1.e.f(abstractC0071f.f5552a);
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     public void inflate(Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
-        Drawable drawable = this.f5507d;
+        Drawable drawable = this.f5517d;
         if (drawable != null) {
             s1.a.g(drawable, resources, xmlPullParser, attributeSet, theme);
             return;
         }
-        h hVar = this.f5509e;
-        hVar.f5564b = new g();
-        TypedArray i10 = m.i(resources, theme, attributeSet, androidx.vectordrawable.graphics.drawable.a.f5478a);
+        h hVar = this.f5519e;
+        hVar.f5574b = new g();
+        TypedArray i10 = m.i(resources, theme, attributeSet, androidx.vectordrawable.graphics.drawable.a.f5488a);
         h(i10, xmlPullParser, theme);
         i10.recycle();
-        hVar.f5563a = getChangingConfigurations();
-        hVar.f5573k = true;
+        hVar.f5573a = getChangingConfigurations();
+        hVar.f5583k = true;
         d(resources, xmlPullParser, attributeSet, theme);
-        this.f5510i = i(this.f5510i, hVar.f5565c, hVar.f5566d);
+        this.f5520i = i(this.f5520i, hVar.f5575c, hVar.f5576d);
     }
 
     f(h hVar) {
-        this.f5513q = true;
-        this.f5514r = new float[9];
-        this.f5515s = new Matrix();
-        this.f5516t = new Rect();
-        this.f5509e = hVar;
-        this.f5510i = i(this.f5510i, hVar.f5565c, hVar.f5566d);
+        this.f5523q = true;
+        this.f5524r = new float[9];
+        this.f5525s = new Matrix();
+        this.f5526t = new Rect();
+        this.f5519e = hVar;
+        this.f5520i = i(this.f5520i, hVar.f5575c, hVar.f5576d);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class c extends AbstractC0075f {
+    public static class c extends AbstractC0071f {
 
         /* renamed from: e  reason: collision with root package name */
-        private int[] f5517e;
+        private int[] f5527e;
 
         /* renamed from: f  reason: collision with root package name */
-        q1.d f5518f;
+        q1.d f5528f;
 
         /* renamed from: g  reason: collision with root package name */
-        float f5519g;
+        float f5529g;
 
         /* renamed from: h  reason: collision with root package name */
-        q1.d f5520h;
+        q1.d f5530h;
 
         /* renamed from: i  reason: collision with root package name */
-        float f5521i;
+        float f5531i;
 
         /* renamed from: j  reason: collision with root package name */
-        float f5522j;
+        float f5532j;
 
         /* renamed from: k  reason: collision with root package name */
-        float f5523k;
+        float f5533k;
 
         /* renamed from: l  reason: collision with root package name */
-        float f5524l;
+        float f5534l;
 
         /* renamed from: m  reason: collision with root package name */
-        float f5525m;
+        float f5535m;
 
         /* renamed from: n  reason: collision with root package name */
-        Paint.Cap f5526n;
+        Paint.Cap f5536n;
 
         /* renamed from: o  reason: collision with root package name */
-        Paint.Join f5527o;
+        Paint.Join f5537o;
 
         /* renamed from: p  reason: collision with root package name */
-        float f5528p;
+        float f5538p;
 
         c() {
-            this.f5519g = 0.0f;
-            this.f5521i = 1.0f;
-            this.f5522j = 1.0f;
-            this.f5523k = 0.0f;
-            this.f5524l = 1.0f;
-            this.f5525m = 0.0f;
-            this.f5526n = Paint.Cap.BUTT;
-            this.f5527o = Paint.Join.MITER;
-            this.f5528p = 4.0f;
+            this.f5529g = 0.0f;
+            this.f5531i = 1.0f;
+            this.f5532j = 1.0f;
+            this.f5533k = 0.0f;
+            this.f5534l = 1.0f;
+            this.f5535m = 0.0f;
+            this.f5536n = Paint.Cap.BUTT;
+            this.f5537o = Paint.Join.MITER;
+            this.f5538p = 4.0f;
         }
 
         private Paint.Cap e(int i10, Paint.Cap cap) {
@@ -1018,35 +1018,35 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
         }
 
         private void h(TypedArray typedArray, XmlPullParser xmlPullParser, Resources.Theme theme) {
-            this.f5517e = null;
+            this.f5527e = null;
             if (!m.h(xmlPullParser, "pathData")) {
                 return;
             }
             String string = typedArray.getString(0);
             if (string != null) {
-                this.f5543b = string;
+                this.f5553b = string;
             }
             String string2 = typedArray.getString(2);
             if (string2 != null) {
-                this.f5542a = r1.e.d(string2);
+                this.f5552a = r1.e.d(string2);
             }
-            this.f5520h = m.e(typedArray, xmlPullParser, theme, "fillColor", 1, 0);
-            this.f5522j = m.f(typedArray, xmlPullParser, "fillAlpha", 12, this.f5522j);
-            this.f5526n = e(m.g(typedArray, xmlPullParser, "strokeLineCap", 8, -1), this.f5526n);
-            this.f5527o = f(m.g(typedArray, xmlPullParser, "strokeLineJoin", 9, -1), this.f5527o);
-            this.f5528p = m.f(typedArray, xmlPullParser, "strokeMiterLimit", 10, this.f5528p);
-            this.f5518f = m.e(typedArray, xmlPullParser, theme, "strokeColor", 3, 0);
-            this.f5521i = m.f(typedArray, xmlPullParser, "strokeAlpha", 11, this.f5521i);
-            this.f5519g = m.f(typedArray, xmlPullParser, "strokeWidth", 4, this.f5519g);
-            this.f5524l = m.f(typedArray, xmlPullParser, "trimPathEnd", 6, this.f5524l);
-            this.f5525m = m.f(typedArray, xmlPullParser, "trimPathOffset", 7, this.f5525m);
-            this.f5523k = m.f(typedArray, xmlPullParser, "trimPathStart", 5, this.f5523k);
-            this.f5544c = m.g(typedArray, xmlPullParser, "fillType", 13, this.f5544c);
+            this.f5530h = m.e(typedArray, xmlPullParser, theme, "fillColor", 1, 0);
+            this.f5532j = m.f(typedArray, xmlPullParser, "fillAlpha", 12, this.f5532j);
+            this.f5536n = e(m.g(typedArray, xmlPullParser, "strokeLineCap", 8, -1), this.f5536n);
+            this.f5537o = f(m.g(typedArray, xmlPullParser, "strokeLineJoin", 9, -1), this.f5537o);
+            this.f5538p = m.f(typedArray, xmlPullParser, "strokeMiterLimit", 10, this.f5538p);
+            this.f5528f = m.e(typedArray, xmlPullParser, theme, "strokeColor", 3, 0);
+            this.f5531i = m.f(typedArray, xmlPullParser, "strokeAlpha", 11, this.f5531i);
+            this.f5529g = m.f(typedArray, xmlPullParser, "strokeWidth", 4, this.f5529g);
+            this.f5534l = m.f(typedArray, xmlPullParser, "trimPathEnd", 6, this.f5534l);
+            this.f5535m = m.f(typedArray, xmlPullParser, "trimPathOffset", 7, this.f5535m);
+            this.f5533k = m.f(typedArray, xmlPullParser, "trimPathStart", 5, this.f5533k);
+            this.f5554c = m.g(typedArray, xmlPullParser, "fillType", 13, this.f5554c);
         }
 
         @Override // androidx.vectordrawable.graphics.drawable.f.e
         public boolean a() {
-            if (!this.f5520h.i() && !this.f5518f.i()) {
+            if (!this.f5530h.i() && !this.f5528f.i()) {
                 return false;
             }
             return true;
@@ -1054,103 +1054,103 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
         @Override // androidx.vectordrawable.graphics.drawable.f.e
         public boolean b(int[] iArr) {
-            return this.f5518f.j(iArr) | this.f5520h.j(iArr);
+            return this.f5528f.j(iArr) | this.f5530h.j(iArr);
         }
 
         public void g(Resources resources, AttributeSet attributeSet, Resources.Theme theme, XmlPullParser xmlPullParser) {
-            TypedArray i10 = m.i(resources, theme, attributeSet, androidx.vectordrawable.graphics.drawable.a.f5480c);
+            TypedArray i10 = m.i(resources, theme, attributeSet, androidx.vectordrawable.graphics.drawable.a.f5490c);
             h(i10, xmlPullParser, theme);
             i10.recycle();
         }
 
         float getFillAlpha() {
-            return this.f5522j;
+            return this.f5532j;
         }
 
         int getFillColor() {
-            return this.f5520h.e();
+            return this.f5530h.e();
         }
 
         float getStrokeAlpha() {
-            return this.f5521i;
+            return this.f5531i;
         }
 
         int getStrokeColor() {
-            return this.f5518f.e();
+            return this.f5528f.e();
         }
 
         float getStrokeWidth() {
-            return this.f5519g;
+            return this.f5529g;
         }
 
         float getTrimPathEnd() {
-            return this.f5524l;
+            return this.f5534l;
         }
 
         float getTrimPathOffset() {
-            return this.f5525m;
+            return this.f5535m;
         }
 
         float getTrimPathStart() {
-            return this.f5523k;
+            return this.f5533k;
         }
 
         void setFillAlpha(float f10) {
-            this.f5522j = f10;
+            this.f5532j = f10;
         }
 
         void setFillColor(int i10) {
-            this.f5520h.k(i10);
+            this.f5530h.k(i10);
         }
 
         void setStrokeAlpha(float f10) {
-            this.f5521i = f10;
+            this.f5531i = f10;
         }
 
         void setStrokeColor(int i10) {
-            this.f5518f.k(i10);
+            this.f5528f.k(i10);
         }
 
         void setStrokeWidth(float f10) {
-            this.f5519g = f10;
+            this.f5529g = f10;
         }
 
         void setTrimPathEnd(float f10) {
-            this.f5524l = f10;
+            this.f5534l = f10;
         }
 
         void setTrimPathOffset(float f10) {
-            this.f5525m = f10;
+            this.f5535m = f10;
         }
 
         void setTrimPathStart(float f10) {
-            this.f5523k = f10;
+            this.f5533k = f10;
         }
 
         c(c cVar) {
             super(cVar);
-            this.f5519g = 0.0f;
-            this.f5521i = 1.0f;
-            this.f5522j = 1.0f;
-            this.f5523k = 0.0f;
-            this.f5524l = 1.0f;
-            this.f5525m = 0.0f;
-            this.f5526n = Paint.Cap.BUTT;
-            this.f5527o = Paint.Join.MITER;
-            this.f5528p = 4.0f;
-            this.f5517e = cVar.f5517e;
-            this.f5518f = cVar.f5518f;
-            this.f5519g = cVar.f5519g;
-            this.f5521i = cVar.f5521i;
-            this.f5520h = cVar.f5520h;
-            this.f5544c = cVar.f5544c;
-            this.f5522j = cVar.f5522j;
-            this.f5523k = cVar.f5523k;
-            this.f5524l = cVar.f5524l;
-            this.f5525m = cVar.f5525m;
-            this.f5526n = cVar.f5526n;
-            this.f5527o = cVar.f5527o;
-            this.f5528p = cVar.f5528p;
+            this.f5529g = 0.0f;
+            this.f5531i = 1.0f;
+            this.f5532j = 1.0f;
+            this.f5533k = 0.0f;
+            this.f5534l = 1.0f;
+            this.f5535m = 0.0f;
+            this.f5536n = Paint.Cap.BUTT;
+            this.f5537o = Paint.Join.MITER;
+            this.f5538p = 4.0f;
+            this.f5527e = cVar.f5527e;
+            this.f5528f = cVar.f5528f;
+            this.f5529g = cVar.f5529g;
+            this.f5531i = cVar.f5531i;
+            this.f5530h = cVar.f5530h;
+            this.f5554c = cVar.f5554c;
+            this.f5532j = cVar.f5532j;
+            this.f5533k = cVar.f5533k;
+            this.f5534l = cVar.f5534l;
+            this.f5535m = cVar.f5535m;
+            this.f5536n = cVar.f5536n;
+            this.f5537o = cVar.f5537o;
+            this.f5538p = cVar.f5538p;
         }
     }
 
@@ -1159,69 +1159,69 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
     public static class g {
 
         /* renamed from: q  reason: collision with root package name */
-        private static final Matrix f5546q = new Matrix();
+        private static final Matrix f5556q = new Matrix();
 
         /* renamed from: a  reason: collision with root package name */
-        private final Path f5547a;
+        private final Path f5557a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Path f5548b;
+        private final Path f5558b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Matrix f5549c;
+        private final Matrix f5559c;
 
         /* renamed from: d  reason: collision with root package name */
-        Paint f5550d;
+        Paint f5560d;
 
         /* renamed from: e  reason: collision with root package name */
-        Paint f5551e;
+        Paint f5561e;
 
         /* renamed from: f  reason: collision with root package name */
-        private PathMeasure f5552f;
+        private PathMeasure f5562f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f5553g;
+        private int f5563g;
 
         /* renamed from: h  reason: collision with root package name */
-        final d f5554h;
+        final d f5564h;
 
         /* renamed from: i  reason: collision with root package name */
-        float f5555i;
+        float f5565i;
 
         /* renamed from: j  reason: collision with root package name */
-        float f5556j;
+        float f5566j;
 
         /* renamed from: k  reason: collision with root package name */
-        float f5557k;
+        float f5567k;
 
         /* renamed from: l  reason: collision with root package name */
-        float f5558l;
+        float f5568l;
 
         /* renamed from: m  reason: collision with root package name */
-        int f5559m;
+        int f5569m;
 
         /* renamed from: n  reason: collision with root package name */
-        String f5560n;
+        String f5570n;
 
         /* renamed from: o  reason: collision with root package name */
-        Boolean f5561o;
+        Boolean f5571o;
 
         /* renamed from: p  reason: collision with root package name */
-        final u0.a f5562p;
+        final u0.a f5572p;
 
         g() {
-            this.f5549c = new Matrix();
-            this.f5555i = 0.0f;
-            this.f5556j = 0.0f;
-            this.f5557k = 0.0f;
-            this.f5558l = 0.0f;
-            this.f5559m = SetSpanOperation.SPAN_MAX_PRIORITY;
-            this.f5560n = null;
-            this.f5561o = null;
-            this.f5562p = new u0.a();
-            this.f5554h = new d();
-            this.f5547a = new Path();
-            this.f5548b = new Path();
+            this.f5559c = new Matrix();
+            this.f5565i = 0.0f;
+            this.f5566j = 0.0f;
+            this.f5567k = 0.0f;
+            this.f5568l = 0.0f;
+            this.f5569m = SetSpanOperation.SPAN_MAX_PRIORITY;
+            this.f5570n = null;
+            this.f5571o = null;
+            this.f5572p = new u0.a();
+            this.f5564h = new d();
+            this.f5557a = new Path();
+            this.f5558b = new Path();
         }
 
         private static float a(float f10, float f11, float f12, float f13) {
@@ -1230,16 +1230,16 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
 
         private void c(d dVar, Matrix matrix, Canvas canvas, int i10, int i11, ColorFilter colorFilter) {
             d dVar2 = dVar;
-            dVar2.f5529a.set(matrix);
-            dVar2.f5529a.preConcat(dVar2.f5538j);
+            dVar2.f5539a.set(matrix);
+            dVar2.f5539a.preConcat(dVar2.f5548j);
             canvas.save();
             int i12 = 0;
-            while (i12 < dVar2.f5530b.size()) {
-                e eVar = (e) dVar2.f5530b.get(i12);
+            while (i12 < dVar2.f5540b.size()) {
+                e eVar = (e) dVar2.f5540b.get(i12);
                 if (eVar instanceof d) {
-                    c((d) eVar, dVar2.f5529a, canvas, i10, i11, colorFilter);
-                } else if (eVar instanceof AbstractC0075f) {
-                    d(dVar2, (AbstractC0075f) eVar, canvas, i10, i11, colorFilter);
+                    c((d) eVar, dVar2.f5539a, canvas, i10, i11, colorFilter);
+                } else if (eVar instanceof AbstractC0071f) {
+                    d(dVar2, (AbstractC0071f) eVar, canvas, i10, i11, colorFilter);
                 }
                 i12++;
                 dVar2 = dVar;
@@ -1247,113 +1247,113 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
             canvas.restore();
         }
 
-        private void d(d dVar, AbstractC0075f abstractC0075f, Canvas canvas, int i10, int i11, ColorFilter colorFilter) {
+        private void d(d dVar, AbstractC0071f abstractC0071f, Canvas canvas, int i10, int i11, ColorFilter colorFilter) {
             Path.FillType fillType;
             Path.FillType fillType2;
-            float f10 = i10 / this.f5557k;
-            float f11 = i11 / this.f5558l;
+            float f10 = i10 / this.f5567k;
+            float f11 = i11 / this.f5568l;
             float min = Math.min(f10, f11);
-            Matrix matrix = dVar.f5529a;
-            this.f5549c.set(matrix);
-            this.f5549c.postScale(f10, f11);
+            Matrix matrix = dVar.f5539a;
+            this.f5559c.set(matrix);
+            this.f5559c.postScale(f10, f11);
             float e10 = e(matrix);
             if (e10 != 0.0f) {
-                abstractC0075f.d(this.f5547a);
-                Path path = this.f5547a;
-                this.f5548b.reset();
-                if (abstractC0075f.c()) {
-                    Path path2 = this.f5548b;
-                    if (abstractC0075f.f5544c == 0) {
+                abstractC0071f.d(this.f5557a);
+                Path path = this.f5557a;
+                this.f5558b.reset();
+                if (abstractC0071f.c()) {
+                    Path path2 = this.f5558b;
+                    if (abstractC0071f.f5554c == 0) {
                         fillType2 = Path.FillType.WINDING;
                     } else {
                         fillType2 = Path.FillType.EVEN_ODD;
                     }
                     path2.setFillType(fillType2);
-                    this.f5548b.addPath(path, this.f5549c);
-                    canvas.clipPath(this.f5548b);
+                    this.f5558b.addPath(path, this.f5559c);
+                    canvas.clipPath(this.f5558b);
                     return;
                 }
-                c cVar = (c) abstractC0075f;
-                float f12 = cVar.f5523k;
-                if (f12 != 0.0f || cVar.f5524l != 1.0f) {
-                    float f13 = cVar.f5525m;
+                c cVar = (c) abstractC0071f;
+                float f12 = cVar.f5533k;
+                if (f12 != 0.0f || cVar.f5534l != 1.0f) {
+                    float f13 = cVar.f5535m;
                     float f14 = (f12 + f13) % 1.0f;
-                    float f15 = (cVar.f5524l + f13) % 1.0f;
-                    if (this.f5552f == null) {
-                        this.f5552f = new PathMeasure();
+                    float f15 = (cVar.f5534l + f13) % 1.0f;
+                    if (this.f5562f == null) {
+                        this.f5562f = new PathMeasure();
                     }
-                    this.f5552f.setPath(this.f5547a, false);
-                    float length = this.f5552f.getLength();
+                    this.f5562f.setPath(this.f5557a, false);
+                    float length = this.f5562f.getLength();
                     float f16 = f14 * length;
                     float f17 = f15 * length;
                     path.reset();
                     if (f16 > f17) {
-                        this.f5552f.getSegment(f16, length, path, true);
-                        this.f5552f.getSegment(0.0f, f17, path, true);
+                        this.f5562f.getSegment(f16, length, path, true);
+                        this.f5562f.getSegment(0.0f, f17, path, true);
                     } else {
-                        this.f5552f.getSegment(f16, f17, path, true);
+                        this.f5562f.getSegment(f16, f17, path, true);
                     }
                     path.rLineTo(0.0f, 0.0f);
                 }
-                this.f5548b.addPath(path, this.f5549c);
-                if (cVar.f5520h.l()) {
-                    q1.d dVar2 = cVar.f5520h;
-                    if (this.f5551e == null) {
+                this.f5558b.addPath(path, this.f5559c);
+                if (cVar.f5530h.l()) {
+                    q1.d dVar2 = cVar.f5530h;
+                    if (this.f5561e == null) {
                         Paint paint = new Paint(1);
-                        this.f5551e = paint;
+                        this.f5561e = paint;
                         paint.setStyle(Paint.Style.FILL);
                     }
-                    Paint paint2 = this.f5551e;
+                    Paint paint2 = this.f5561e;
                     if (dVar2.h()) {
                         Shader f18 = dVar2.f();
-                        f18.setLocalMatrix(this.f5549c);
+                        f18.setLocalMatrix(this.f5559c);
                         paint2.setShader(f18);
-                        paint2.setAlpha(Math.round(cVar.f5522j * 255.0f));
+                        paint2.setAlpha(Math.round(cVar.f5532j * 255.0f));
                     } else {
                         paint2.setShader(null);
                         paint2.setAlpha(SetSpanOperation.SPAN_MAX_PRIORITY);
-                        paint2.setColor(f.a(dVar2.e(), cVar.f5522j));
+                        paint2.setColor(f.a(dVar2.e(), cVar.f5532j));
                     }
                     paint2.setColorFilter(colorFilter);
-                    Path path3 = this.f5548b;
-                    if (cVar.f5544c == 0) {
+                    Path path3 = this.f5558b;
+                    if (cVar.f5554c == 0) {
                         fillType = Path.FillType.WINDING;
                     } else {
                         fillType = Path.FillType.EVEN_ODD;
                     }
                     path3.setFillType(fillType);
-                    canvas.drawPath(this.f5548b, paint2);
+                    canvas.drawPath(this.f5558b, paint2);
                 }
-                if (cVar.f5518f.l()) {
-                    q1.d dVar3 = cVar.f5518f;
-                    if (this.f5550d == null) {
+                if (cVar.f5528f.l()) {
+                    q1.d dVar3 = cVar.f5528f;
+                    if (this.f5560d == null) {
                         Paint paint3 = new Paint(1);
-                        this.f5550d = paint3;
+                        this.f5560d = paint3;
                         paint3.setStyle(Paint.Style.STROKE);
                     }
-                    Paint paint4 = this.f5550d;
-                    Paint.Join join = cVar.f5527o;
+                    Paint paint4 = this.f5560d;
+                    Paint.Join join = cVar.f5537o;
                     if (join != null) {
                         paint4.setStrokeJoin(join);
                     }
-                    Paint.Cap cap = cVar.f5526n;
+                    Paint.Cap cap = cVar.f5536n;
                     if (cap != null) {
                         paint4.setStrokeCap(cap);
                     }
-                    paint4.setStrokeMiter(cVar.f5528p);
+                    paint4.setStrokeMiter(cVar.f5538p);
                     if (dVar3.h()) {
                         Shader f19 = dVar3.f();
-                        f19.setLocalMatrix(this.f5549c);
+                        f19.setLocalMatrix(this.f5559c);
                         paint4.setShader(f19);
-                        paint4.setAlpha(Math.round(cVar.f5521i * 255.0f));
+                        paint4.setAlpha(Math.round(cVar.f5531i * 255.0f));
                     } else {
                         paint4.setShader(null);
                         paint4.setAlpha(SetSpanOperation.SPAN_MAX_PRIORITY);
-                        paint4.setColor(f.a(dVar3.e(), cVar.f5521i));
+                        paint4.setColor(f.a(dVar3.e(), cVar.f5531i));
                     }
                     paint4.setColorFilter(colorFilter);
-                    paint4.setStrokeWidth(cVar.f5519g * min * e10);
-                    canvas.drawPath(this.f5548b, paint4);
+                    paint4.setStrokeWidth(cVar.f5529g * min * e10);
+                    canvas.drawPath(this.f5558b, paint4);
                 }
             }
         }
@@ -1370,18 +1370,18 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
         }
 
         public void b(Canvas canvas, int i10, int i11, ColorFilter colorFilter) {
-            c(this.f5554h, f5546q, canvas, i10, i11, colorFilter);
+            c(this.f5564h, f5556q, canvas, i10, i11, colorFilter);
         }
 
         public boolean f() {
-            if (this.f5561o == null) {
-                this.f5561o = Boolean.valueOf(this.f5554h.a());
+            if (this.f5571o == null) {
+                this.f5571o = Boolean.valueOf(this.f5564h.a());
             }
-            return this.f5561o.booleanValue();
+            return this.f5571o.booleanValue();
         }
 
         public boolean g(int[] iArr) {
-            return this.f5554h.b(iArr);
+            return this.f5564h.b(iArr);
         }
 
         public float getAlpha() {
@@ -1389,7 +1389,7 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
         }
 
         public int getRootAlpha() {
-            return this.f5559m;
+            return this.f5569m;
         }
 
         public void setAlpha(float f10) {
@@ -1397,35 +1397,35 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
         }
 
         public void setRootAlpha(int i10) {
-            this.f5559m = i10;
+            this.f5569m = i10;
         }
 
         g(g gVar) {
-            this.f5549c = new Matrix();
-            this.f5555i = 0.0f;
-            this.f5556j = 0.0f;
-            this.f5557k = 0.0f;
-            this.f5558l = 0.0f;
-            this.f5559m = SetSpanOperation.SPAN_MAX_PRIORITY;
-            this.f5560n = null;
-            this.f5561o = null;
+            this.f5559c = new Matrix();
+            this.f5565i = 0.0f;
+            this.f5566j = 0.0f;
+            this.f5567k = 0.0f;
+            this.f5568l = 0.0f;
+            this.f5569m = SetSpanOperation.SPAN_MAX_PRIORITY;
+            this.f5570n = null;
+            this.f5571o = null;
             u0.a aVar = new u0.a();
-            this.f5562p = aVar;
-            this.f5554h = new d(gVar.f5554h, aVar);
-            this.f5547a = new Path(gVar.f5547a);
-            this.f5548b = new Path(gVar.f5548b);
-            this.f5555i = gVar.f5555i;
-            this.f5556j = gVar.f5556j;
-            this.f5557k = gVar.f5557k;
-            this.f5558l = gVar.f5558l;
-            this.f5553g = gVar.f5553g;
-            this.f5559m = gVar.f5559m;
-            this.f5560n = gVar.f5560n;
-            String str = gVar.f5560n;
+            this.f5572p = aVar;
+            this.f5564h = new d(gVar.f5564h, aVar);
+            this.f5557a = new Path(gVar.f5557a);
+            this.f5558b = new Path(gVar.f5558b);
+            this.f5565i = gVar.f5565i;
+            this.f5566j = gVar.f5566j;
+            this.f5567k = gVar.f5567k;
+            this.f5568l = gVar.f5568l;
+            this.f5563g = gVar.f5563g;
+            this.f5569m = gVar.f5569m;
+            this.f5570n = gVar.f5570n;
+            String str = gVar.f5570n;
             if (str != null) {
                 aVar.put(str, this);
             }
-            this.f5561o = gVar.f5561o;
+            this.f5571o = gVar.f5571o;
         }
     }
 
@@ -1434,79 +1434,79 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
     public static class d extends e {
 
         /* renamed from: a  reason: collision with root package name */
-        final Matrix f5529a;
+        final Matrix f5539a;
 
         /* renamed from: b  reason: collision with root package name */
-        final ArrayList f5530b;
+        final ArrayList f5540b;
 
         /* renamed from: c  reason: collision with root package name */
-        float f5531c;
+        float f5541c;
 
         /* renamed from: d  reason: collision with root package name */
-        private float f5532d;
+        private float f5542d;
 
         /* renamed from: e  reason: collision with root package name */
-        private float f5533e;
+        private float f5543e;
 
         /* renamed from: f  reason: collision with root package name */
-        private float f5534f;
+        private float f5544f;
 
         /* renamed from: g  reason: collision with root package name */
-        private float f5535g;
+        private float f5545g;
 
         /* renamed from: h  reason: collision with root package name */
-        private float f5536h;
+        private float f5546h;
 
         /* renamed from: i  reason: collision with root package name */
-        private float f5537i;
+        private float f5547i;
 
         /* renamed from: j  reason: collision with root package name */
-        final Matrix f5538j;
+        final Matrix f5548j;
 
         /* renamed from: k  reason: collision with root package name */
-        int f5539k;
+        int f5549k;
 
         /* renamed from: l  reason: collision with root package name */
-        private int[] f5540l;
+        private int[] f5550l;
 
         /* renamed from: m  reason: collision with root package name */
-        private String f5541m;
+        private String f5551m;
 
         d(d dVar, u0.a aVar) {
             super();
-            AbstractC0075f bVar;
-            this.f5529a = new Matrix();
-            this.f5530b = new ArrayList();
-            this.f5531c = 0.0f;
-            this.f5532d = 0.0f;
-            this.f5533e = 0.0f;
-            this.f5534f = 1.0f;
-            this.f5535g = 1.0f;
-            this.f5536h = 0.0f;
-            this.f5537i = 0.0f;
+            AbstractC0071f bVar;
+            this.f5539a = new Matrix();
+            this.f5540b = new ArrayList();
+            this.f5541c = 0.0f;
+            this.f5542d = 0.0f;
+            this.f5543e = 0.0f;
+            this.f5544f = 1.0f;
+            this.f5545g = 1.0f;
+            this.f5546h = 0.0f;
+            this.f5547i = 0.0f;
             Matrix matrix = new Matrix();
-            this.f5538j = matrix;
-            this.f5541m = null;
-            this.f5531c = dVar.f5531c;
-            this.f5532d = dVar.f5532d;
-            this.f5533e = dVar.f5533e;
-            this.f5534f = dVar.f5534f;
-            this.f5535g = dVar.f5535g;
-            this.f5536h = dVar.f5536h;
-            this.f5537i = dVar.f5537i;
-            this.f5540l = dVar.f5540l;
-            String str = dVar.f5541m;
-            this.f5541m = str;
-            this.f5539k = dVar.f5539k;
+            this.f5548j = matrix;
+            this.f5551m = null;
+            this.f5541c = dVar.f5541c;
+            this.f5542d = dVar.f5542d;
+            this.f5543e = dVar.f5543e;
+            this.f5544f = dVar.f5544f;
+            this.f5545g = dVar.f5545g;
+            this.f5546h = dVar.f5546h;
+            this.f5547i = dVar.f5547i;
+            this.f5550l = dVar.f5550l;
+            String str = dVar.f5551m;
+            this.f5551m = str;
+            this.f5549k = dVar.f5549k;
             if (str != null) {
                 aVar.put(str, this);
             }
-            matrix.set(dVar.f5538j);
-            ArrayList arrayList = dVar.f5530b;
+            matrix.set(dVar.f5548j);
+            ArrayList arrayList = dVar.f5540b;
             for (int i10 = 0; i10 < arrayList.size(); i10++) {
                 Object obj = arrayList.get(i10);
                 if (obj instanceof d) {
-                    this.f5530b.add(new d((d) obj, aVar));
+                    this.f5540b.add(new d((d) obj, aVar));
                 } else {
                     if (obj instanceof c) {
                         bVar = new c((c) obj);
@@ -1515,8 +1515,8 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
                     } else {
                         throw new IllegalStateException("Unknown object in the tree!");
                     }
-                    this.f5530b.add(bVar);
-                    Object obj2 = bVar.f5543b;
+                    this.f5540b.add(bVar);
+                    Object obj2 = bVar.f5553b;
                     if (obj2 != null) {
                         aVar.put(obj2, bVar);
                     }
@@ -1525,33 +1525,33 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
         }
 
         private void d() {
-            this.f5538j.reset();
-            this.f5538j.postTranslate(-this.f5532d, -this.f5533e);
-            this.f5538j.postScale(this.f5534f, this.f5535g);
-            this.f5538j.postRotate(this.f5531c, 0.0f, 0.0f);
-            this.f5538j.postTranslate(this.f5536h + this.f5532d, this.f5537i + this.f5533e);
+            this.f5548j.reset();
+            this.f5548j.postTranslate(-this.f5542d, -this.f5543e);
+            this.f5548j.postScale(this.f5544f, this.f5545g);
+            this.f5548j.postRotate(this.f5541c, 0.0f, 0.0f);
+            this.f5548j.postTranslate(this.f5546h + this.f5542d, this.f5547i + this.f5543e);
         }
 
         private void e(TypedArray typedArray, XmlPullParser xmlPullParser) {
-            this.f5540l = null;
-            this.f5531c = m.f(typedArray, xmlPullParser, ViewProps.ROTATION, 5, this.f5531c);
-            this.f5532d = typedArray.getFloat(1, this.f5532d);
-            this.f5533e = typedArray.getFloat(2, this.f5533e);
-            this.f5534f = m.f(typedArray, xmlPullParser, ViewProps.SCALE_X, 3, this.f5534f);
-            this.f5535g = m.f(typedArray, xmlPullParser, ViewProps.SCALE_Y, 4, this.f5535g);
-            this.f5536h = m.f(typedArray, xmlPullParser, ViewProps.TRANSLATE_X, 6, this.f5536h);
-            this.f5537i = m.f(typedArray, xmlPullParser, ViewProps.TRANSLATE_Y, 7, this.f5537i);
+            this.f5550l = null;
+            this.f5541c = m.f(typedArray, xmlPullParser, ViewProps.ROTATION, 5, this.f5541c);
+            this.f5542d = typedArray.getFloat(1, this.f5542d);
+            this.f5543e = typedArray.getFloat(2, this.f5543e);
+            this.f5544f = m.f(typedArray, xmlPullParser, ViewProps.SCALE_X, 3, this.f5544f);
+            this.f5545g = m.f(typedArray, xmlPullParser, ViewProps.SCALE_Y, 4, this.f5545g);
+            this.f5546h = m.f(typedArray, xmlPullParser, ViewProps.TRANSLATE_X, 6, this.f5546h);
+            this.f5547i = m.f(typedArray, xmlPullParser, ViewProps.TRANSLATE_Y, 7, this.f5547i);
             String string = typedArray.getString(0);
             if (string != null) {
-                this.f5541m = string;
+                this.f5551m = string;
             }
             d();
         }
 
         @Override // androidx.vectordrawable.graphics.drawable.f.e
         public boolean a() {
-            for (int i10 = 0; i10 < this.f5530b.size(); i10++) {
-                if (((e) this.f5530b.get(i10)).a()) {
+            for (int i10 = 0; i10 < this.f5540b.size(); i10++) {
+                if (((e) this.f5540b.get(i10)).a()) {
                     return true;
                 }
             }
@@ -1561,116 +1561,116 @@ public class f extends androidx.vectordrawable.graphics.drawable.e {
         @Override // androidx.vectordrawable.graphics.drawable.f.e
         public boolean b(int[] iArr) {
             boolean z10 = false;
-            for (int i10 = 0; i10 < this.f5530b.size(); i10++) {
-                z10 |= ((e) this.f5530b.get(i10)).b(iArr);
+            for (int i10 = 0; i10 < this.f5540b.size(); i10++) {
+                z10 |= ((e) this.f5540b.get(i10)).b(iArr);
             }
             return z10;
         }
 
         public void c(Resources resources, AttributeSet attributeSet, Resources.Theme theme, XmlPullParser xmlPullParser) {
-            TypedArray i10 = m.i(resources, theme, attributeSet, androidx.vectordrawable.graphics.drawable.a.f5479b);
+            TypedArray i10 = m.i(resources, theme, attributeSet, androidx.vectordrawable.graphics.drawable.a.f5489b);
             e(i10, xmlPullParser);
             i10.recycle();
         }
 
         public String getGroupName() {
-            return this.f5541m;
+            return this.f5551m;
         }
 
         public Matrix getLocalMatrix() {
-            return this.f5538j;
+            return this.f5548j;
         }
 
         public float getPivotX() {
-            return this.f5532d;
+            return this.f5542d;
         }
 
         public float getPivotY() {
-            return this.f5533e;
+            return this.f5543e;
         }
 
         public float getRotation() {
-            return this.f5531c;
+            return this.f5541c;
         }
 
         public float getScaleX() {
-            return this.f5534f;
+            return this.f5544f;
         }
 
         public float getScaleY() {
-            return this.f5535g;
+            return this.f5545g;
         }
 
         public float getTranslateX() {
-            return this.f5536h;
+            return this.f5546h;
         }
 
         public float getTranslateY() {
-            return this.f5537i;
+            return this.f5547i;
         }
 
         public void setPivotX(float f10) {
-            if (f10 != this.f5532d) {
-                this.f5532d = f10;
+            if (f10 != this.f5542d) {
+                this.f5542d = f10;
                 d();
             }
         }
 
         public void setPivotY(float f10) {
-            if (f10 != this.f5533e) {
-                this.f5533e = f10;
+            if (f10 != this.f5543e) {
+                this.f5543e = f10;
                 d();
             }
         }
 
         public void setRotation(float f10) {
-            if (f10 != this.f5531c) {
-                this.f5531c = f10;
+            if (f10 != this.f5541c) {
+                this.f5541c = f10;
                 d();
             }
         }
 
         public void setScaleX(float f10) {
-            if (f10 != this.f5534f) {
-                this.f5534f = f10;
+            if (f10 != this.f5544f) {
+                this.f5544f = f10;
                 d();
             }
         }
 
         public void setScaleY(float f10) {
-            if (f10 != this.f5535g) {
-                this.f5535g = f10;
+            if (f10 != this.f5545g) {
+                this.f5545g = f10;
                 d();
             }
         }
 
         public void setTranslateX(float f10) {
-            if (f10 != this.f5536h) {
-                this.f5536h = f10;
+            if (f10 != this.f5546h) {
+                this.f5546h = f10;
                 d();
             }
         }
 
         public void setTranslateY(float f10) {
-            if (f10 != this.f5537i) {
-                this.f5537i = f10;
+            if (f10 != this.f5547i) {
+                this.f5547i = f10;
                 d();
             }
         }
 
         d() {
             super();
-            this.f5529a = new Matrix();
-            this.f5530b = new ArrayList();
-            this.f5531c = 0.0f;
-            this.f5532d = 0.0f;
-            this.f5533e = 0.0f;
-            this.f5534f = 1.0f;
-            this.f5535g = 1.0f;
-            this.f5536h = 0.0f;
-            this.f5537i = 0.0f;
-            this.f5538j = new Matrix();
-            this.f5541m = null;
+            this.f5539a = new Matrix();
+            this.f5540b = new ArrayList();
+            this.f5541c = 0.0f;
+            this.f5542d = 0.0f;
+            this.f5543e = 0.0f;
+            this.f5544f = 1.0f;
+            this.f5545g = 1.0f;
+            this.f5546h = 0.0f;
+            this.f5547i = 0.0f;
+            this.f5548j = new Matrix();
+            this.f5551m = null;
         }
     }
 }

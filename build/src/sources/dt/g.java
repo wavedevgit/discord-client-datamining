@@ -1,30 +1,20 @@
 package dt;
 
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.coroutines.CoroutineContext;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g implements e {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Function1 f20968a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int f20969b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final Integer f20970c;
-
-    public g(Function1 number, int i10, Integer num) {
-        Intrinsics.checkNotNullParameter(number, "number");
-        this.f20968a = number;
-        this.f20969b = i10;
-        this.f20970c = num;
-        if (i10 >= 0) {
-            if (i10 <= 9) {
-                return;
+public abstract class g {
+    public static final void a(CoroutineContext coroutineContext, Throwable th2) {
+        for (ys.z zVar : f.a()) {
+            try {
+                zVar.N0(coroutineContext, th2);
+            } catch (Throwable th3) {
+                f.b(ys.a0.b(th2, th3));
             }
-            throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") exceeds the length of an Int").toString());
         }
-        throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") is negative").toString());
+        try {
+            as.e.a(th2, new h(coroutineContext));
+        } catch (Throwable unused) {
+        }
+        f.b(th2);
     }
 }

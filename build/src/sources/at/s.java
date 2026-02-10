@@ -1,96 +1,190 @@
 package at;
 
-import java.util.Iterator;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import kotlin.Result;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.FunctionReferenceImpl;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.CancellableContinuation;
+import kotlinx.coroutines.CoroutineScope;
+import ys.c0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class s {
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final a f6164b = new a(null);
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final s f6165c = new s(CollectionsKt.o("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"));
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final s f6166d = new s(CollectionsKt.o("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"));
-
-    /* renamed from: a  reason: collision with root package name */
-    private final List f6167a;
+public abstract class s {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    public static final class a extends kotlin.coroutines.jvm.internal.d {
+
+        /* renamed from: d */
+        Object f6176d;
+
+        /* renamed from: e */
+        Object f6177e;
+
+        /* renamed from: i */
+        /* synthetic */ Object f6178i;
+
+        /* renamed from: o */
+        int f6179o;
+
+        a(Continuation continuation) {
+            super(continuation);
         }
 
-        public final s a() {
-            return s.f6166d;
-        }
-
-        private a() {
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            this.f6178i = obj;
+            this.f6179o |= Integer.MIN_VALUE;
+            return s.a(null, null, this);
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
+    public static final class b implements Function1 {
 
-        /* renamed from: d  reason: collision with root package name */
-        public static final b f6168d = new b();
+        /* renamed from: d */
+        final /* synthetic */ CancellableContinuation f6180d;
 
-        b() {
-            super(1, String.class, "toString", "toString()Ljava/lang/String;", 0);
+        b(CancellableContinuation cancellableContinuation) {
+            this.f6180d = cancellableContinuation;
+        }
+
+        public final void a(Throwable th2) {
+            CancellableContinuation cancellableContinuation = this.f6180d;
+            Result.a aVar = Result.f31984e;
+            cancellableContinuation.resumeWith(Result.b(Unit.f31987a));
         }
 
         @Override // kotlin.jvm.functions.Function1
-        public final String invoke(String p02) {
-            Intrinsics.checkNotNullParameter(p02, "p0");
-            return p02.toString();
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((Throwable) obj);
+            return Unit.f31987a;
         }
     }
 
-    public s(List names) {
-        Intrinsics.checkNotNullParameter(names, "names");
-        this.f6167a = names;
-        if (names.size() == 7) {
-            Iterator it = CollectionsKt.m(names).iterator();
-            while (it.hasNext()) {
-                int nextInt = ((kotlin.collections.m0) it).nextInt();
-                if (((CharSequence) this.f6167a.get(nextInt)).length() > 0) {
-                    for (int i10 = 0; i10 < nextInt; i10++) {
-                        if (Intrinsics.areEqual(this.f6167a.get(nextInt), this.f6167a.get(i10))) {
-                            throw new IllegalArgumentException(("Day-of-week names must be unique, but '" + ((String) this.f6167a.get(nextInt)) + "' was repeated").toString());
-                        }
-                    }
-                } else {
-                    throw new IllegalArgumentException("A day-of-week name can not be empty");
-                }
-            }
-            return;
+    /* JADX WARN: Removed duplicated region for block: B:42:0x0023  */
+    /* JADX WARN: Removed duplicated region for block: B:50:0x003c  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static final java.lang.Object a(kotlinx.coroutines.channels.ProducerScope r4, kotlin.jvm.functions.Function0 r5, kotlin.coroutines.Continuation r6) {
+        /*
+            boolean r0 = r6 instanceof at.s.a
+            if (r0 == 0) goto L13
+            r0 = r6
+            at.s$a r0 = (at.s.a) r0
+            int r1 = r0.f6179o
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.f6179o = r1
+            goto L18
+        L13:
+            at.s$a r0 = new at.s$a
+            r0.<init>(r6)
+        L18:
+            java.lang.Object r6 = r0.f6178i
+            java.lang.Object r1 = gs.b.f()
+            int r2 = r0.f6179o
+            r3 = 1
+            if (r2 == 0) goto L3c
+            if (r2 != r3) goto L34
+            java.lang.Object r4 = r0.f6177e
+            r5 = r4
+            kotlin.jvm.functions.Function0 r5 = (kotlin.jvm.functions.Function0) r5
+            java.lang.Object r4 = r0.f6176d
+            kotlinx.coroutines.channels.ProducerScope r4 = (kotlinx.coroutines.channels.ProducerScope) r4
+            kotlin.c.b(r6)     // Catch: java.lang.Throwable -> L32
+            goto L75
+        L32:
+            r4 = move-exception
+            goto L7b
+        L34:
+            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
+            java.lang.String r5 = "call to 'resume' before 'invoke' with coroutine"
+            r4.<init>(r5)
+            throw r4
+        L3c:
+            kotlin.c.b(r6)
+            kotlin.coroutines.CoroutineContext r6 = r0.getContext()
+            kotlinx.coroutines.Job$b r2 = kotlinx.coroutines.Job.f34996k
+            kotlin.coroutines.CoroutineContext$Element r6 = r6.m(r2)
+            if (r6 != r4) goto L7f
+            r0.f6176d = r4     // Catch: java.lang.Throwable -> L32
+            r0.f6177e = r5     // Catch: java.lang.Throwable -> L32
+            r0.f6179o = r3     // Catch: java.lang.Throwable -> L32
+            kotlinx.coroutines.e r6 = new kotlinx.coroutines.e     // Catch: java.lang.Throwable -> L32
+            kotlin.coroutines.Continuation r2 = gs.b.c(r0)     // Catch: java.lang.Throwable -> L32
+            r6.<init>(r2, r3)     // Catch: java.lang.Throwable -> L32
+            r6.H()     // Catch: java.lang.Throwable -> L32
+            at.s$b r2 = new at.s$b     // Catch: java.lang.Throwable -> L32
+            r2.<init>(r6)     // Catch: java.lang.Throwable -> L32
+            r4.b(r2)     // Catch: java.lang.Throwable -> L32
+            java.lang.Object r4 = r6.B()     // Catch: java.lang.Throwable -> L32
+            java.lang.Object r6 = gs.b.f()     // Catch: java.lang.Throwable -> L32
+            if (r4 != r6) goto L72
+            kotlin.coroutines.jvm.internal.g.c(r0)     // Catch: java.lang.Throwable -> L32
+        L72:
+            if (r4 != r1) goto L75
+            return r1
+        L75:
+            r5.invoke()
+            kotlin.Unit r4 = kotlin.Unit.f31987a
+            return r4
+        L7b:
+            r5.invoke()
+            throw r4
+        L7f:
+            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
+            java.lang.String r5 = "awaitClose() can only be invoked from the producer context"
+            r4.<init>(r5)
+            throw r4
+        */
+        throw new UnsupportedOperationException("Method not decompiled: at.s.a(kotlinx.coroutines.channels.ProducerScope, kotlin.jvm.functions.Function0, kotlin.coroutines.Continuation):java.lang.Object");
+    }
+
+    public static final v b(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, at.a aVar, c0 c0Var, Function1 function1, Function2 function2) {
+        t tVar = new t(ys.x.k(coroutineScope, coroutineContext), j.b(i10, aVar, null, 4, null));
+        if (function1 != null) {
+            tVar.z0(function1);
         }
-        throw new IllegalArgumentException("Day of week names must contain exactly 7 elements");
+        tVar.Y0(c0Var, tVar, function2);
+        return tVar;
     }
 
-    public final List b() {
-        return this.f6167a;
+    public static final v c(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, Function2 function2) {
+        return b(coroutineScope, coroutineContext, i10, at.a.f6104d, c0.f55782d, null, function2);
     }
 
-    public boolean equals(Object obj) {
-        if ((obj instanceof s) && Intrinsics.areEqual(this.f6167a, ((s) obj).f6167a)) {
-            return true;
+    public static /* synthetic */ v d(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, at.a aVar, c0 c0Var, Function1 function1, Function2 function2, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            coroutineContext = kotlin.coroutines.e.f32061d;
         }
-        return false;
+        if ((i11 & 2) != 0) {
+            i10 = 0;
+        }
+        if ((i11 & 4) != 0) {
+            aVar = at.a.f6104d;
+        }
+        if ((i11 & 8) != 0) {
+            c0Var = c0.f55782d;
+        }
+        if ((i11 & 16) != 0) {
+            function1 = null;
+        }
+        Function1 function12 = function1;
+        return b(coroutineScope, coroutineContext, i10, aVar, c0Var, function12, function2);
     }
 
-    public int hashCode() {
-        return this.f6167a.hashCode();
-    }
-
-    public String toString() {
-        return CollectionsKt.x0(this.f6167a, ", ", "DayOfWeekNames(", ")", 0, null, b.f6168d, 24, null);
+    public static /* synthetic */ v e(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, Function2 function2, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            coroutineContext = kotlin.coroutines.e.f32061d;
+        }
+        if ((i11 & 2) != 0) {
+            i10 = 0;
+        }
+        return c(coroutineScope, coroutineContext, i10, function2);
     }
 }

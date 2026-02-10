@@ -11,23 +11,23 @@ import com.withpersona.sdk2.inquiry.network.dto.ui.styling.InputSelectComponentS
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.InputTextBasedComponentStyle;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.TextBasedComponentStyle;
 import com.withpersona.sdk2.inquiry.steps.ui.components.b;
-import en.u;
-import gq.b4;
-import gq.m5;
-import gq.o1;
-import gq.y3;
+import gn.u;
 import java.util.Iterator;
 import java.util.List;
-import jq.p;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
-import lq.a0;
-import lq.f0;
-import lq.o;
+import pq.b4;
+import pq.m5;
+import pq.o1;
+import pq.y3;
+import sq.p;
+import uq.a0;
+import uq.f0;
+import uq.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {
     public static final /* synthetic */ b4 h(b.c cVar) {
@@ -47,7 +47,7 @@ public abstract class c {
         Intrinsics.checkNotNullParameter(config, "config");
         final p c10 = p.c(uiComponentHelper.b());
         InputInternationalDb.Attributes attributes = config.getAttributes();
-        TextView textView = c10.f30392h;
+        TextView textView = c10.f48276h;
         String str4 = null;
         if (attributes != null) {
             str = attributes.getLabel();
@@ -55,30 +55,30 @@ public abstract class c {
             str = null;
         }
         textView.setText(str);
-        TextInputLayout textInputLayout = c10.f30387c;
+        TextInputLayout textInputLayout = c10.f48271c;
         if (attributes != null) {
             str2 = attributes.getLabelIdbCountry();
         } else {
             str2 = null;
         }
         textInputLayout.setHint(str2);
-        TextInputLayout textInputLayout2 = c10.f30390f;
+        TextInputLayout textInputLayout2 = c10.f48274f;
         if (attributes != null) {
             str3 = attributes.getLabelIdbType();
         } else {
             str3 = null;
         }
         textInputLayout2.setHint(str3);
-        TextInputLayout textInputLayout3 = c10.f30393i;
+        TextInputLayout textInputLayout3 = c10.f48277i;
         if (attributes != null) {
             str4 = attributes.getLabelIdbValue();
         }
         textInputLayout3.setHint(str4);
-        EditText editText = c10.f30393i.getEditText();
+        EditText editText = c10.f48277i.getEditText();
         if (editText != null) {
-            u.b(bVar.u(), editText);
+            u.b(bVar.s(), editText);
         }
-        uiComponentHelper.d(new Function0() { // from class: gq.f1
+        uiComponentHelper.d(new Function0() { // from class: pq.f1
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit k10;
@@ -97,27 +97,27 @@ public abstract class c {
         if (styles != null) {
             InputSelectComponentStyle inputSelectStyle = styles.getInputSelectStyle();
             if (inputSelectStyle != null) {
-                TextInputLayout idbCountryInput = pVar.f30387c;
+                TextInputLayout idbCountryInput = pVar.f48271c;
                 Intrinsics.checkNotNullExpressionValue(idbCountryInput, "idbCountryInput");
                 o.i(idbCountryInput, inputSelectStyle);
-                TextInputLayout idbIdTypeInput = pVar.f30390f;
+                TextInputLayout idbIdTypeInput = pVar.f48274f;
                 Intrinsics.checkNotNullExpressionValue(idbIdTypeInput, "idbIdTypeInput");
                 o.i(idbIdTypeInput, inputSelectStyle);
             }
             InputTextBasedComponentStyle inputTextStyle = styles.getInputTextStyle();
             if (inputTextStyle != null) {
-                TextInputLayout idbValueInput = pVar.f30393i;
+                TextInputLayout idbValueInput = pVar.f48277i;
                 Intrinsics.checkNotNullExpressionValue(idbValueInput, "idbValueInput");
                 a0.k(idbValueInput, inputTextStyle);
             }
             TextBasedComponentStyle textStyle = styles.getTextStyle();
             if (textStyle != null) {
-                TextView idbDescription = pVar.f30389e;
+                TextView idbDescription = pVar.f48273e;
                 Intrinsics.checkNotNullExpressionValue(idbDescription, "idbDescription");
                 f0.n(idbDescription, textStyle, null, 2, null);
             }
         }
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     public static final b4 l(b.c cVar) {
@@ -141,9 +141,9 @@ public abstract class c {
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(onCountryInputClick, "onCountryInputClick");
         Intrinsics.checkNotNullParameter(onIdTypeInputClick, "onIdTypeInputClick");
-        EditText editText = binding.f30387c.getEditText();
+        EditText editText = binding.f48271c.getEditText();
         if (editText != null) {
-            editText.setText(CollectionsKt.x0(bVar.f().b(), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new Function1() { // from class: gq.g1
+            editText.setText(CollectionsKt.x0(bVar.f().b(), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new Function1() { // from class: pq.g1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj2) {
                     CharSequence s10;
@@ -152,9 +152,9 @@ public abstract class c {
                 }
             }, 30, null));
         }
-        EditText editText2 = binding.f30390f.getEditText();
+        EditText editText2 = binding.f48274f.getEditText();
         if (editText2 != null) {
-            editText2.setText(CollectionsKt.x0(bVar.q().b(), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new Function1() { // from class: gq.h1
+            editText2.setText(CollectionsKt.x0(bVar.p().b(), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new Function1() { // from class: pq.h1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj2) {
                     CharSequence t10;
@@ -163,45 +163,45 @@ public abstract class c {
                 }
             }, 30, null));
         }
-        String w10 = bVar.w();
-        String x10 = bVar.x();
+        String u10 = bVar.u();
+        String v10 = bVar.v();
         List e10 = bVar.e();
-        List p10 = bVar.p();
+        List o10 = bVar.o();
         boolean i12 = bVar.i();
-        boolean l10 = bVar.l();
-        if (w10 == null) {
-            binding.f30390f.setEnabled(false);
+        boolean k10 = bVar.k();
+        if (u10 == null) {
+            binding.f48274f.setEnabled(false);
         } else {
-            binding.f30390f.setEnabled(true);
+            binding.f48274f.setEnabled(true);
         }
-        if (w10 == null && e10 != null && e10.size() == 1) {
+        if (u10 == null && e10 != null && e10.size() == 1) {
             bVar.f().c(CollectionsKt.e(l((b.c) CollectionsKt.o0(e10))));
             if (Intrinsics.areEqual(bVar.j(), Boolean.TRUE)) {
                 i12 = true;
             }
         }
-        if (w10 != null && p10 != null && p10.size() == 1) {
-            bVar.q().c(CollectionsKt.e(m((b.e) CollectionsKt.o0(p10))));
-            if (Intrinsics.areEqual(bVar.o(), Boolean.TRUE)) {
-                l10 = true;
+        if (u10 != null && o10 != null && o10.size() == 1) {
+            bVar.p().c(CollectionsKt.e(m((b.e) CollectionsKt.o0(o10))));
+            if (Intrinsics.areEqual(bVar.l(), Boolean.TRUE)) {
+                k10 = true;
             }
         }
-        TextInputLayout textInputLayout = binding.f30387c;
+        TextInputLayout textInputLayout = binding.f48271c;
         if (i12) {
             i10 = 8;
         } else {
             i10 = 0;
         }
         textInputLayout.setVisibility(i10);
-        TextInputLayout textInputLayout2 = binding.f30390f;
-        if (l10) {
+        TextInputLayout textInputLayout2 = binding.f48274f;
+        if (k10) {
             i11 = 8;
         } else {
             i11 = 0;
         }
         textInputLayout2.setVisibility(i11);
-        if (w10 != null && x10 != null) {
-            binding.f30393i.setEnabled(true);
+        if (u10 != null && v10 != null) {
+            binding.f48277i.setEnabled(true);
             List c10 = bVar.c();
             String str7 = null;
             if (c10 != null) {
@@ -210,7 +210,7 @@ public abstract class c {
                     if (it.hasNext()) {
                         obj = it.next();
                         InputInternationalDb.IdType idType2 = (InputInternationalDb.IdType) obj;
-                        if (Intrinsics.areEqual(idType2.getCountryCode(), w10) && Intrinsics.areEqual(idType2.getIdType(), x10)) {
+                        if (Intrinsics.areEqual(idType2.getCountryCode(), u10) && Intrinsics.areEqual(idType2.getIdType(), v10)) {
                             break;
                         }
                     } else {
@@ -222,7 +222,7 @@ public abstract class c {
             } else {
                 idType = null;
             }
-            TextInputLayout idbValueInput = binding.f30393i;
+            TextInputLayout idbValueInput = binding.f48277i;
             Intrinsics.checkNotNullExpressionValue(idbValueInput, "idbValueInput");
             if (idType != null) {
                 str4 = idType.getMask();
@@ -246,52 +246,52 @@ public abstract class c {
                 str6 = null;
             }
             if (str6 != null && !StringsKt.k0(str6)) {
-                binding.f30389e.setVisibility(0);
-                TextView textView = binding.f30389e;
+                binding.f48273e.setVisibility(0);
+                TextView textView = binding.f48273e;
                 if (idType != null) {
                     str7 = idType.getDescription();
                 }
                 textView.setText(str7);
             } else {
-                binding.f30389e.setVisibility(8);
+                binding.f48273e.setVisibility(8);
             }
         } else {
-            binding.f30393i.setEnabled(false);
-            binding.f30389e.setVisibility(8);
+            binding.f48277i.setEnabled(false);
+            binding.f48273e.setVisibility(8);
         }
-        binding.f30387c.setOnClickListener(new View.OnClickListener() { // from class: gq.i1
+        binding.f48271c.setOnClickListener(new View.OnClickListener() { // from class: pq.i1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 com.withpersona.sdk2.inquiry.steps.ui.components.c.o(Function0.this, view);
             }
         });
-        EditText editText3 = binding.f30387c.getEditText();
+        EditText editText3 = binding.f48271c.getEditText();
         if (editText3 != null) {
-            editText3.setOnClickListener(new View.OnClickListener() { // from class: gq.j1
+            editText3.setOnClickListener(new View.OnClickListener() { // from class: pq.j1
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     com.withpersona.sdk2.inquiry.steps.ui.components.c.p(Function0.this, view);
                 }
             });
         }
-        binding.f30390f.setOnClickListener(new View.OnClickListener() { // from class: gq.k1
+        binding.f48274f.setOnClickListener(new View.OnClickListener() { // from class: pq.k1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 com.withpersona.sdk2.inquiry.steps.ui.components.c.q(Function0.this, view);
             }
         });
-        EditText editText4 = binding.f30390f.getEditText();
+        EditText editText4 = binding.f48274f.getEditText();
         if (editText4 != null) {
-            editText4.setOnClickListener(new View.OnClickListener() { // from class: gq.l1
+            editText4.setOnClickListener(new View.OnClickListener() { // from class: pq.l1
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     com.withpersona.sdk2.inquiry.steps.ui.components.c.r(Function0.this, view);
                 }
             });
         }
-        binding.f30387c.setError(str);
-        binding.f30390f.setError(str2);
-        binding.f30393i.setError(str3);
+        binding.f48271c.setError(str);
+        binding.f48274f.setError(str2);
+        binding.f48277i.setError(str3);
     }
 
     public static final void o(Function0 function0, View view) {

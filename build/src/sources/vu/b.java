@@ -1,81 +1,236 @@
 package vu;
 
+import android.os.Build;
+import android.security.NetworkSecurityPolicy;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+import java.security.cert.TrustAnchor;
+import java.security.cert.X509Certificate;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.X509TrustManager;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import wu.i;
+import wu.j;
+import wu.k;
+import wu.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b {
+public final class b extends h {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final List f52996a;
+    /* renamed from: f  reason: collision with root package name */
+    public static final a f51988f = new a(null);
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Map f52997b;
+    /* renamed from: g  reason: collision with root package name */
+    private static final boolean f51989g;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final Object f52998c;
+    /* renamed from: d  reason: collision with root package name */
+    private final List f51990d;
 
-    public b(List list, Map map, Object obj) {
-        this.f52996a = list;
-        this.f52997b = map;
-        this.f52998c = obj;
-    }
+    /* renamed from: e  reason: collision with root package name */
+    private final wu.h f51991e;
 
-    public final Map a() {
-        return this.f52997b;
-    }
-
-    public final List b() {
-        return this.f52996a;
-    }
-
-    public final Object c() {
-        return this.f52998c;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        if (!(obj instanceof b)) {
+
+        public final h a() {
+            if (b()) {
+                return new b();
+            }
+            return null;
+        }
+
+        public final boolean b() {
+            return b.f51989g;
+        }
+
+        private a() {
+        }
+    }
+
+    /* renamed from: vu.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0716b implements yu.e {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final X509TrustManager f51992a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final Method f51993b;
+
+        public C0716b(X509TrustManager trustManager, Method findByIssuerAndSignatureMethod) {
+            Intrinsics.checkNotNullParameter(trustManager, "trustManager");
+            Intrinsics.checkNotNullParameter(findByIssuerAndSignatureMethod, "findByIssuerAndSignatureMethod");
+            this.f51992a = trustManager;
+            this.f51993b = findByIssuerAndSignatureMethod;
+        }
+
+        @Override // yu.e
+        public X509Certificate a(X509Certificate cert) {
+            Intrinsics.checkNotNullParameter(cert, "cert");
+            try {
+                Object invoke = this.f51993b.invoke(this.f51992a, cert);
+                Intrinsics.checkNotNull(invoke, "null cannot be cast to non-null type java.security.cert.TrustAnchor");
+                return ((TrustAnchor) invoke).getTrustedCert();
+            } catch (IllegalAccessException e10) {
+                throw new AssertionError("unable to get issues and signature", e10);
+            } catch (InvocationTargetException unused) {
+                return null;
+            }
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if (!(obj instanceof C0716b)) {
+                return false;
+            }
+            C0716b c0716b = (C0716b) obj;
+            if (Intrinsics.areEqual(this.f51992a, c0716b.f51992a) && Intrinsics.areEqual(this.f51993b, c0716b.f51993b)) {
+                return true;
+            }
             return false;
         }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f52996a, bVar.f52996a) && Intrinsics.areEqual(this.f52997b, bVar.f52997b) && Intrinsics.areEqual(this.f52998c, bVar.f52998c)) {
-            return true;
+
+        public int hashCode() {
+            return (this.f51992a.hashCode() * 31) + this.f51993b.hashCode();
         }
-        return false;
+
+        public String toString() {
+            return "CustomTrustRootIndex(trustManager=" + this.f51992a + ", findByIssuerAndSignatureMethod=" + this.f51993b + ')';
+        }
     }
 
-    public int hashCode() {
-        int hashCode;
-        int hashCode2;
-        List list = this.f52996a;
-        int i10 = 0;
-        if (list == null) {
-            hashCode = 0;
-        } else {
-            hashCode = list.hashCode();
+    static {
+        boolean z10 = false;
+        if (h.f52015a.h() && Build.VERSION.SDK_INT < 30) {
+            z10 = true;
         }
-        int i11 = hashCode * 31;
-        Map map = this.f52997b;
-        if (map == null) {
-            hashCode2 = 0;
-        } else {
-            hashCode2 = map.hashCode();
-        }
-        int i12 = (i11 + hashCode2) * 31;
-        Object obj = this.f52998c;
-        if (obj != null) {
-            i10 = obj.hashCode();
-        }
-        return i12 + i10;
+        f51989g = z10;
     }
 
-    public String toString() {
-        List list = this.f52996a;
-        Map map = this.f52997b;
-        Object obj = this.f52998c;
-        return "ArrayOperationInputData(operationData=" + list + ", mappingOperation=" + map + ", operationDefault=" + obj + ")";
+    public b() {
+        k[] kVarArr = {l.a.b(l.f54007j, null, 1, null), new j(wu.f.f53989f.d()), new j(i.f54003a.a()), new j(wu.g.f53997a.a())};
+        ArrayList arrayList = new ArrayList();
+        for (Object obj : CollectionsKt.q(kVarArr)) {
+            if (((k) obj).a()) {
+                arrayList.add(obj);
+            }
+        }
+        this.f51990d = arrayList;
+        this.f51991e = wu.h.f53999d.a();
+    }
+
+    @Override // vu.h
+    public yu.c c(X509TrustManager trustManager) {
+        Intrinsics.checkNotNullParameter(trustManager, "trustManager");
+        wu.b a10 = wu.b.f53982d.a(trustManager);
+        if (a10 != null) {
+            return a10;
+        }
+        return super.c(trustManager);
+    }
+
+    @Override // vu.h
+    public yu.e d(X509TrustManager trustManager) {
+        Intrinsics.checkNotNullParameter(trustManager, "trustManager");
+        try {
+            Method method = trustManager.getClass().getDeclaredMethod("findTrustAnchorByIssuerAndSignature", X509Certificate.class);
+            method.setAccessible(true);
+            Intrinsics.checkNotNullExpressionValue(method, "method");
+            return new C0716b(trustManager, method);
+        } catch (NoSuchMethodException unused) {
+            return super.d(trustManager);
+        }
+    }
+
+    @Override // vu.h
+    public void e(SSLSocket sslSocket, String str, List protocols) {
+        Object obj;
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Intrinsics.checkNotNullParameter(protocols, "protocols");
+        Iterator it = this.f51990d.iterator();
+        while (true) {
+            if (it.hasNext()) {
+                obj = it.next();
+                if (((k) obj).b(sslSocket)) {
+                    break;
+                }
+            } else {
+                obj = null;
+                break;
+            }
+        }
+        k kVar = (k) obj;
+        if (kVar != null) {
+            kVar.d(sslSocket, str, protocols);
+        }
+    }
+
+    @Override // vu.h
+    public void f(Socket socket, InetSocketAddress address, int i10) {
+        Intrinsics.checkNotNullParameter(socket, "socket");
+        Intrinsics.checkNotNullParameter(address, "address");
+        try {
+            socket.connect(address, i10);
+        } catch (ClassCastException e10) {
+            if (Build.VERSION.SDK_INT == 26) {
+                throw new IOException("Exception in connect", e10);
+            }
+            throw e10;
+        }
+    }
+
+    @Override // vu.h
+    public String h(SSLSocket sslSocket) {
+        Object obj;
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Iterator it = this.f51990d.iterator();
+        while (true) {
+            if (it.hasNext()) {
+                obj = it.next();
+                if (((k) obj).b(sslSocket)) {
+                    break;
+                }
+            } else {
+                obj = null;
+                break;
+            }
+        }
+        k kVar = (k) obj;
+        if (kVar == null) {
+            return null;
+        }
+        return kVar.c(sslSocket);
+    }
+
+    @Override // vu.h
+    public Object i(String closer) {
+        Intrinsics.checkNotNullParameter(closer, "closer");
+        return this.f51991e.a(closer);
+    }
+
+    @Override // vu.h
+    public boolean j(String hostname) {
+        Intrinsics.checkNotNullParameter(hostname, "hostname");
+        return NetworkSecurityPolicy.getInstance().isCleartextTrafficPermitted(hostname);
+    }
+
+    @Override // vu.h
+    public void m(String message, Object obj) {
+        Intrinsics.checkNotNullParameter(message, "message");
+        if (!this.f51991e.b(obj)) {
+            h.l(this, message, 5, null, 4, null);
+        }
     }
 }

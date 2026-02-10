@@ -1,5 +1,7 @@
 package kotlin.reflect.jvm.internal.impl.load.java.lazy;
 
+import as.l;
+import as.o;
 import kotlin.Lazy;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.descriptors.ClassOrPackageFragmentDescriptor;
@@ -8,8 +10,6 @@ import kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations;
 import kotlin.reflect.jvm.internal.impl.load.java.JavaTypeQualifiersByElementType;
 import kotlin.reflect.jvm.internal.impl.load.java.structure.JavaTypeParameterListOwner;
 import org.jetbrains.annotations.NotNull;
-import rr.l;
-import rr.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class ContextKt {
     private static final LazyJavaResolverContext c(LazyJavaResolverContext lazyJavaResolverContext, DeclarationDescriptor declarationDescriptor, JavaTypeParameterListOwner javaTypeParameterListOwner, int i10, Lazy lazy) {
@@ -34,7 +34,7 @@ public final class ContextKt {
     public static final LazyJavaResolverContext childForClassOrPackage(@NotNull LazyJavaResolverContext lazyJavaResolverContext, @NotNull ClassOrPackageFragmentDescriptor containingDeclaration, JavaTypeParameterListOwner javaTypeParameterListOwner, int i10) {
         Intrinsics.checkNotNullParameter(lazyJavaResolverContext, "<this>");
         Intrinsics.checkNotNullParameter(containingDeclaration, "containingDeclaration");
-        return c(lazyJavaResolverContext, containingDeclaration, javaTypeParameterListOwner, i10, l.b(o.f49211i, new a(lazyJavaResolverContext, containingDeclaration)));
+        return c(lazyJavaResolverContext, containingDeclaration, javaTypeParameterListOwner, i10, l.a(o.f6083i, new a(lazyJavaResolverContext, containingDeclaration)));
     }
 
     public static /* synthetic */ LazyJavaResolverContext childForClassOrPackage$default(LazyJavaResolverContext lazyJavaResolverContext, ClassOrPackageFragmentDescriptor classOrPackageFragmentDescriptor, JavaTypeParameterListOwner javaTypeParameterListOwner, int i10, int i11, Object obj) {
@@ -75,7 +75,7 @@ public final class ContextKt {
         if (additionalAnnotations.isEmpty()) {
             return lazyJavaResolverContext;
         }
-        return new LazyJavaResolverContext(lazyJavaResolverContext.getComponents(), lazyJavaResolverContext.getTypeParameterResolver(), l.b(o.f49211i, new b(lazyJavaResolverContext, additionalAnnotations)));
+        return new LazyJavaResolverContext(lazyJavaResolverContext.getComponents(), lazyJavaResolverContext.getTypeParameterResolver(), l.a(o.f6083i, new b(lazyJavaResolverContext, additionalAnnotations)));
     }
 
     /* JADX INFO: Access modifiers changed from: private */

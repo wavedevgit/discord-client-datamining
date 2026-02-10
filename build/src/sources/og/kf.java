@@ -21,14 +21,14 @@ public enum kf implements n2 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f41104d;
+    private final int f39430d;
 
     kf(int i10) {
-        this.f41104d = i10;
+        this.f39430d = i10;
     }
 
     @Override // og.n2
     public final int zza() {
-        return this.f41104d;
+        return this.f39430d;
     }
 }

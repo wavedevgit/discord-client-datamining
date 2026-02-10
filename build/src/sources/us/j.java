@@ -1,121 +1,68 @@
 package us;
 
-import java.util.concurrent.CancellationException;
-import kotlin.Result;
 import kotlin.Unit;
-import kotlin.coroutines.Continuation;
-import kotlin.coroutines.CoroutineContext;
-import kotlinx.coroutines.CoroutineDispatcher;
-import kotlinx.coroutines.Job;
-import ps.l1;
-import ps.u1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.PropertyDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorVisitorEmptyBodies;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class j {
+public class j extends DeclarationDescriptorVisitorEmptyBodies {
 
+    /* renamed from: a  reason: collision with root package name */
+    private final c1 f51063a;
+
+    public j(c1 container) {
+        Intrinsics.checkNotNullParameter(container, "container");
+        this.f51063a = container;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorVisitorEmptyBodies, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
     /* renamed from: a */
-    private static final e0 f51784a = new e0("UNDEFINED");
+    public a0 visitFunctionDescriptor(FunctionDescriptor descriptor, Unit data) {
+        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
+        Intrinsics.checkNotNullParameter(data, "data");
+        return new h1(this.f51063a, descriptor);
+    }
 
+    @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorVisitorEmptyBodies, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
     /* renamed from: b */
-    public static final e0 f51785b = new e0("REUSABLE_CLAIMED");
-
-    public static final /* synthetic */ e0 a() {
-        return f51784a;
-    }
-
-    public static final void b(Continuation continuation, Object obj) {
-        u1 u1Var;
-        if (continuation instanceof i) {
-            i iVar = (i) continuation;
-            Object b10 = ps.t.b(obj);
-            if (d(iVar.f51780o, iVar.getContext())) {
-                iVar.f51782q = b10;
-                iVar.f34826i = 1;
-                c(iVar.f51780o, iVar.getContext(), iVar);
-                return;
-            }
-            ps.p0 b11 = l1.f44513a.b();
-            if (b11.r2()) {
-                iVar.f51782q = b10;
-                iVar.f34826i = 1;
-                b11.j2(iVar);
-                return;
-            }
-            b11.p2(true);
-            try {
-                Job job = (Job) iVar.getContext().m(Job.f34774h);
-                if (job != null && !job.a()) {
-                    CancellationException C = job.C();
-                    iVar.b(b10, C);
-                    Result.a aVar = Result.f31762e;
-                    iVar.resumeWith(Result.b(kotlin.c.a(C)));
+    public a0 visitPropertyDescriptor(PropertyDescriptor descriptor, Unit data) {
+        int i10;
+        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
+        Intrinsics.checkNotNullParameter(data, "data");
+        int i11 = 0;
+        if (descriptor.getDispatchReceiverParameter() != null) {
+            i10 = 1;
+        } else {
+            i10 = 0;
+        }
+        if (descriptor.getExtensionReceiverParameter() != null) {
+            i11 = 1;
+        }
+        int i12 = i10 + i11;
+        if (descriptor.isVar()) {
+            if (i12 != 0) {
+                if (i12 != 1) {
+                    if (i12 == 2) {
+                        return new n1(this.f51063a, descriptor);
+                    }
                 } else {
-                    Continuation continuation2 = iVar.f51781p;
-                    Object obj2 = iVar.f51783r;
-                    CoroutineContext context = continuation2.getContext();
-                    Object i10 = l0.i(context, obj2);
-                    if (i10 != l0.f51795a) {
-                        u1Var = ps.x.m(continuation2, context, i10);
-                    } else {
-                        u1Var = null;
-                    }
-                    iVar.f51781p.resumeWith(obj);
-                    Unit unit = Unit.f31765a;
-                    if (u1Var == null || u1Var.Z0()) {
-                        l0.f(context, i10);
-                    }
+                    return new l1(this.f51063a, descriptor);
                 }
-                do {
-                } while (b11.u2());
-            } finally {
-                try {
-                    return;
-                } finally {
+            } else {
+                return new j1(this.f51063a, descriptor);
+            }
+        } else if (i12 != 0) {
+            if (i12 != 1) {
+                if (i12 == 2) {
+                    return new g2(this.f51063a, descriptor);
                 }
+            } else {
+                return new d2(this.f51063a, descriptor);
             }
-            return;
+        } else {
+            return new a2(this.f51063a, descriptor);
         }
-        continuation.resumeWith(obj);
-    }
-
-    public static final void c(CoroutineDispatcher coroutineDispatcher, CoroutineContext coroutineContext, Runnable runnable) {
-        try {
-            coroutineDispatcher.z1(coroutineContext, runnable);
-        } catch (Throwable th2) {
-            throw new ps.j0(th2, coroutineDispatcher, coroutineContext);
-        }
-    }
-
-    public static final boolean d(CoroutineDispatcher coroutineDispatcher, CoroutineContext coroutineContext) {
-        try {
-            return coroutineDispatcher.U1(coroutineContext);
-        } catch (Throwable th2) {
-            throw new ps.j0(th2, coroutineDispatcher, coroutineContext);
-        }
-    }
-
-    public static final boolean e(i iVar) {
-        Unit unit = Unit.f31765a;
-        ps.p0 b10 = l1.f44513a.b();
-        if (b10.s2()) {
-            return false;
-        }
-        if (b10.r2()) {
-            iVar.f51782q = unit;
-            iVar.f34826i = 1;
-            b10.j2(iVar);
-            return true;
-        }
-        b10.p2(true);
-        try {
-            iVar.run();
-            do {
-            } while (b10.u2());
-        } finally {
-            try {
-                return false;
-            } finally {
-            }
-        }
-        return false;
+        throw new x2("Unsupported property: " + descriptor);
     }
 }

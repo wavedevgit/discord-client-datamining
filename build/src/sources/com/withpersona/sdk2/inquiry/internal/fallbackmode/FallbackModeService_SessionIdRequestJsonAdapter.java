@@ -14,31 +14,31 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_SessionIdRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18954a;
+    private final m.b f19834a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18955b;
+    private final com.squareup.moshi.h f19835b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f18956c;
+    private final com.squareup.moshi.h f19836c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final com.squareup.moshi.h f18957d;
+    private final com.squareup.moshi.h f19837d;
 
     public FallbackModeService_SessionIdRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("inquiry-template-id", "inquiry-template-version-id", "inquiry-id", "reference-id", "account-id", "environment", "environment-id", "fields", "theme-set-id");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18954a = a10;
+        this.f19834a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "inquiryTemplateId");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18955b = f10;
+        this.f19835b = f10;
         com.squareup.moshi.h f11 = moshi.f(String.class, x0.d(), "inquiryTemplateVersion");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f18956c = f11;
+        this.f19836c = f11;
         com.squareup.moshi.h f12 = moshi.f(InquiryFieldMap.class, x0.d(), "fields");
         Intrinsics.checkNotNullExpressionValue(f12, "adapter(...)");
-        this.f18957d = f12;
+        this.f19837d = f12;
     }
 
     @Override // com.squareup.moshi.h
@@ -56,41 +56,41 @@ public final class FallbackModeService_SessionIdRequestJsonAdapter extends com.s
         InquiryFieldMap inquiryFieldMap = null;
         String str8 = null;
         while (reader.hasNext()) {
-            switch (reader.J(this.f18954a)) {
+            switch (reader.J(this.f19834a)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
-                    str = (String) this.f18955b.fromJson(reader);
+                    str = (String) this.f19835b.fromJson(reader);
                     if (str != null) {
                         break;
                     } else {
-                        throw bn.c.x("inquiryTemplateId", "inquiry-template-id", reader);
+                        throw dn.c.x("inquiryTemplateId", "inquiry-template-id", reader);
                     }
                 case 1:
-                    str2 = (String) this.f18956c.fromJson(reader);
+                    str2 = (String) this.f19836c.fromJson(reader);
                     break;
                 case 2:
-                    str3 = (String) this.f18956c.fromJson(reader);
+                    str3 = (String) this.f19836c.fromJson(reader);
                     break;
                 case 3:
-                    str4 = (String) this.f18956c.fromJson(reader);
+                    str4 = (String) this.f19836c.fromJson(reader);
                     break;
                 case 4:
-                    str5 = (String) this.f18956c.fromJson(reader);
+                    str5 = (String) this.f19836c.fromJson(reader);
                     break;
                 case 5:
-                    str6 = (String) this.f18956c.fromJson(reader);
+                    str6 = (String) this.f19836c.fromJson(reader);
                     break;
                 case 6:
-                    str7 = (String) this.f18956c.fromJson(reader);
+                    str7 = (String) this.f19836c.fromJson(reader);
                     break;
                 case 7:
-                    inquiryFieldMap = (InquiryFieldMap) this.f18957d.fromJson(reader);
+                    inquiryFieldMap = (InquiryFieldMap) this.f19837d.fromJson(reader);
                     break;
                 case 8:
-                    str8 = (String) this.f18956c.fromJson(reader);
+                    str8 = (String) this.f19836c.fromJson(reader);
                     break;
             }
         }
@@ -98,7 +98,7 @@ public final class FallbackModeService_SessionIdRequestJsonAdapter extends com.s
         if (str != null) {
             return new FallbackModeService.SessionIdRequest(str, str2, str3, str4, str5, str6, str7, inquiryFieldMap, str8);
         }
-        throw bn.c.o("inquiryTemplateId", "inquiry-template-id", reader);
+        throw dn.c.o("inquiryTemplateId", "inquiry-template-id", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -106,25 +106,25 @@ public final class FallbackModeService_SessionIdRequestJsonAdapter extends com.s
     public void toJson(t writer, FallbackModeService.SessionIdRequest sessionIdRequest) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (sessionIdRequest != null) {
-            writer.k();
+            writer.i();
             writer.J("inquiry-template-id");
-            this.f18955b.toJson(writer, sessionIdRequest.f());
+            this.f19835b.toJson(writer, sessionIdRequest.f());
             writer.J("inquiry-template-version-id");
-            this.f18956c.toJson(writer, sessionIdRequest.g());
+            this.f19836c.toJson(writer, sessionIdRequest.g());
             writer.J("inquiry-id");
-            this.f18956c.toJson(writer, sessionIdRequest.e());
+            this.f19836c.toJson(writer, sessionIdRequest.e());
             writer.J("reference-id");
-            this.f18956c.toJson(writer, sessionIdRequest.h());
+            this.f19836c.toJson(writer, sessionIdRequest.h());
             writer.J("account-id");
-            this.f18956c.toJson(writer, sessionIdRequest.a());
+            this.f19836c.toJson(writer, sessionIdRequest.a());
             writer.J("environment");
-            this.f18956c.toJson(writer, sessionIdRequest.b());
+            this.f19836c.toJson(writer, sessionIdRequest.b());
             writer.J("environment-id");
-            this.f18956c.toJson(writer, sessionIdRequest.c());
+            this.f19836c.toJson(writer, sessionIdRequest.c());
             writer.J("fields");
-            this.f18957d.toJson(writer, sessionIdRequest.d());
+            this.f19837d.toJson(writer, sessionIdRequest.d());
             writer.J("theme-set-id");
-            this.f18956c.toJson(writer, sessionIdRequest.i());
+            this.f19836c.toJson(writer, sessionIdRequest.i());
             writer.s();
             return;
         }

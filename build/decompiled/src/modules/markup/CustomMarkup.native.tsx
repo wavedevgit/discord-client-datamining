@@ -384,4 +384,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getWidgetMessageRules = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3940, 4784, 4783, 4788, 3148, 8856, 4785, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3940, 4794, 4793, 4798, 3148, 8867, 4795, 2]);

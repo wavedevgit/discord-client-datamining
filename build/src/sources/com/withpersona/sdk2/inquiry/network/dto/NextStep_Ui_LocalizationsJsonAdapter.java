@@ -51,7 +51,7 @@ public final class NextStep_Ui_LocalizationsJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 promptPage = (NextStep.Ui.PromptPage) this.nullablePromptPageAdapter.fromJson(reader);
@@ -67,7 +67,7 @@ public final class NextStep_Ui_LocalizationsJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Ui.Localizations localizations) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (localizations != null) {
-            writer.k();
+            writer.i();
             writer.J("promptPage");
             this.nullablePromptPageAdapter.toJson(writer, localizations.getPromptPage());
             writer.J("cancelDialog");

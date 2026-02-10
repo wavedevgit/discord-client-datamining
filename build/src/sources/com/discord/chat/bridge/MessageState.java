@@ -1,8 +1,6 @@
 package com.discord.chat.bridge;
 
-import gt.m;
-import jt.e;
-import jt.j;
+import hs.a;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -13,7 +11,9 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import org.jetbrains.annotations.NotNull;
-import yr.a;
+import qt.m;
+import st.e;
+import st.j;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @m(with = Serializer.class)
@@ -82,10 +82,10 @@ public final class MessageState {
         private Serializer() {
         }
 
-        @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
+        @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
         @NotNull
         public SerialDescriptor getDescriptor() {
-            return j.b("MessageState", e.i.f30484a);
+            return j.b("MessageState", e.i.f48368a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy
@@ -95,7 +95,7 @@ public final class MessageState {
             return MessageState.Companion.fromValue(decoder.z());
         }
 
-        @Override // gt.o
+        @Override // qt.o
         public void serialize(@NotNull Encoder encoder, @NotNull MessageState value) {
             Intrinsics.checkNotNullParameter(encoder, "encoder");
             Intrinsics.checkNotNullParameter(value, "value");

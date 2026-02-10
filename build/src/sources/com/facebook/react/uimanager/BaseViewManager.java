@@ -373,16 +373,16 @@ public abstract class BaseViewManager<T extends View, C extends LayoutShadowNode
     public void setAccessibilityLiveRegion(@NonNull T t10, String str) {
         if (str != null && !str.equals(ViewProps.NONE)) {
             if (str.equals("polite")) {
-                androidx.core.view.h0.p0(t10, 1);
+                androidx.core.view.i0.m0(t10, 1);
                 return;
             } else if (str.equals("assertive")) {
-                androidx.core.view.h0.p0(t10, 2);
+                androidx.core.view.i0.m0(t10, 2);
                 return;
             } else {
                 return;
             }
         }
-        androidx.core.view.h0.p0(t10, 0);
+        androidx.core.view.i0.m0(t10, 0);
     }
 
     @ReactProp(name = ViewProps.ACCESSIBILITY_ROLE)
@@ -449,7 +449,7 @@ public abstract class BaseViewManager<T extends View, C extends LayoutShadowNode
 
     @ReactProp(name = ViewProps.ELEVATION)
     public void setElevation(@NonNull T t10, float f10) {
-        androidx.core.view.h0.v0(t10, PixelUtil.toPixelFromDIP(f10));
+        androidx.core.view.i0.r0(t10, PixelUtil.toPixelFromDIP(f10));
     }
 
     @ReactProp(customType = "Filter", name = ViewProps.FILTER)
@@ -463,19 +463,19 @@ public abstract class BaseViewManager<T extends View, C extends LayoutShadowNode
     public void setImportantForAccessibility(@NonNull T t10, String str) {
         if (str != null && !str.equals("auto")) {
             if (str.equals("yes")) {
-                androidx.core.view.h0.x0(t10, 1);
+                androidx.core.view.i0.s0(t10, 1);
                 return;
             } else if (str.equals("no")) {
-                androidx.core.view.h0.x0(t10, 2);
+                androidx.core.view.i0.s0(t10, 2);
                 return;
             } else if (str.equals("no-hide-descendants")) {
-                androidx.core.view.h0.x0(t10, 4);
+                androidx.core.view.i0.s0(t10, 4);
                 return;
             } else {
                 return;
             }
         }
-        androidx.core.view.h0.x0(t10, 0);
+        androidx.core.view.i0.s0(t10, 0);
     }
 
     @ReactProp(name = ViewProps.MIX_BLEND_MODE)

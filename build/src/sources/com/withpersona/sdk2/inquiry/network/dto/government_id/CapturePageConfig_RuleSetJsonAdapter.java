@@ -47,7 +47,7 @@ public final class CapturePageConfig_RuleSetJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 list = (List) this.nullableListOfRuleAdapter.fromJson(reader);
@@ -61,7 +61,7 @@ public final class CapturePageConfig_RuleSetJsonAdapter extends h {
     public void toJson(@NotNull t writer, CapturePageConfig.RuleSet ruleSet) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (ruleSet != null) {
-            writer.k();
+            writer.i();
             writer.J("rules");
             this.nullableListOfRuleAdapter.toJson(writer, ruleSet.getRules());
             writer.s();

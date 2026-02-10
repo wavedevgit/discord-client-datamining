@@ -1,90 +1,156 @@
 package op;
 
-import android.view.LayoutInflater;
+import android.app.Dialog;
+import android.content.Context;
+import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import androidx.viewbinding.ViewBinding;
-import com.withpersona.sdk2.inquiry.selfie.view.Pi2CircleMaskView;
-import com.withpersona.sdk2.inquiry.selfie.view.Pi2ProgressArcView;
-import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
-import np.w0;
-import np.x0;
+import android.view.Window;
+import androidx.core.view.x0;
+import bq.f0;
+import gn.a0;
+import gn.c0;
+import gn.g0;
+import java.util.Iterator;
+import kn.j;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function4;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Reflection;
+import kotlin.reflect.KClass;
+import lq.s;
+import op.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements ViewBinding {
+public final class b extends j {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final View f42557a;
+    /* renamed from: q  reason: collision with root package name */
+    public static final a f41076q = new a(null);
 
-    /* renamed from: b  reason: collision with root package name */
-    public final View f42558b;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements c0 {
 
-    /* renamed from: c  reason: collision with root package name */
-    public final Pi2CircleMaskView f42559c;
+        /* renamed from: a  reason: collision with root package name */
+        private final /* synthetic */ gn.f f41077a;
 
-    /* renamed from: d  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f42560d;
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: op.b$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public /* synthetic */ class C0576a extends FunctionReferenceImpl implements Function2 {
+            C0576a(Object obj) {
+                super(2, obj, b.class, "update", "update(Lcom/squareup/workflow1/ui/modal/HasModals;Lcom/squareup/workflow1/ui/ViewEnvironment;)V", 0);
+            }
 
-    /* renamed from: e  reason: collision with root package name */
-    public final ImageView f42561e;
+            public final void a(kn.f p02, a0 p12) {
+                Intrinsics.checkNotNullParameter(p02, "p0");
+                Intrinsics.checkNotNullParameter(p12, "p1");
+                ((b) this.receiver).c(p02, p12);
+            }
 
-    /* renamed from: f  reason: collision with root package name */
-    public final View f42562f;
-
-    /* renamed from: g  reason: collision with root package name */
-    public final View f42563g;
-
-    /* renamed from: h  reason: collision with root package name */
-    public final Pi2ProgressArcView f42564h;
-
-    private b(View view, View view2, Pi2CircleMaskView pi2CircleMaskView, ThemeableLottieAnimationView themeableLottieAnimationView, ImageView imageView, View view3, View view4, Pi2ProgressArcView pi2ProgressArcView) {
-        this.f42557a = view;
-        this.f42558b = view2;
-        this.f42559c = pi2CircleMaskView;
-        this.f42560d = themeableLottieAnimationView;
-        this.f42561e = imageView;
-        this.f42562f = view3;
-        this.f42563g = view4;
-        this.f42564h = pi2ProgressArcView;
-    }
-
-    public static b a(View view) {
-        View a10;
-        View a11;
-        int i10 = w0.f39527d;
-        View a12 = e4.a.a(view, i10);
-        if (a12 != null) {
-            i10 = w0.f39534k;
-            Pi2CircleMaskView pi2CircleMaskView = (Pi2CircleMaskView) e4.a.a(view, i10);
-            if (pi2CircleMaskView != null) {
-                i10 = w0.f39541r;
-                ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
-                if (themeableLottieAnimationView != null) {
-                    i10 = w0.f39542s;
-                    ImageView imageView = (ImageView) e4.a.a(view, i10);
-                    if (imageView != null && (a10 = e4.a.a(view, (i10 = w0.f39546w))) != null && (a11 = e4.a.a(view, (i10 = w0.f39548y))) != null) {
-                        i10 = w0.L;
-                        Pi2ProgressArcView pi2ProgressArcView = (Pi2ProgressArcView) e4.a.a(view, i10);
-                        if (pi2ProgressArcView != null) {
-                            return new b(view, a12, pi2CircleMaskView, themeableLottieAnimationView, imageView, a10, a11, pi2ProgressArcView);
-                        }
-                    }
-                }
+            @Override // kotlin.jvm.functions.Function2
+            public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+                a((kn.f) obj, (a0) obj2);
+                return Unit.f31987a;
             }
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
-    }
 
-    public static b b(LayoutInflater layoutInflater, ViewGroup viewGroup) {
-        if (viewGroup != null) {
-            layoutInflater.inflate(x0.f39563b, viewGroup);
-            return a(viewGroup);
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        throw new NullPointerException("parent");
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final View c(c initialRendering, a0 initialEnv, Context contextForNewView, ViewGroup viewGroup) {
+            Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
+            Intrinsics.checkNotNullParameter(initialEnv, "initialEnv");
+            Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
+            b bVar = new b(contextForNewView, null, 0, 0, 14, null);
+            bVar.setId(g.f41085b);
+            bVar.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
+            g0.a(bVar, initialRendering, initialEnv, new C0576a(bVar));
+            return bVar;
+        }
+
+        @Override // gn.c0
+        /* renamed from: d */
+        public View a(c initialRendering, a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
+            Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
+            Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
+            Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
+            return this.f41077a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+        }
+
+        @Override // gn.c0
+        public KClass getType() {
+            return this.f41077a.getType();
+        }
+
+        private a() {
+            this.f41077a = new gn.f(Reflection.getOrCreateKotlinClass(c.class), new Function4() { // from class: op.a
+                @Override // kotlin.jvm.functions.Function4
+                public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
+                    View c10;
+                    c10 = b.a.c((c) obj, (a0) obj2, (Context) obj3, (ViewGroup) obj4);
+                    return c10;
+                }
+            });
+        }
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    public View getRoot() {
-        return this.f42557a;
+    public /* synthetic */ b(Context context, AttributeSet attributeSet, int i10, int i11, int i12, DefaultConstructorMarker defaultConstructorMarker) {
+        this(context, (i12 & 2) != 0 ? null : attributeSet, (i12 & 4) != 0 ? 0 : i10, (i12 & 8) != 0 ? 0 : i11);
+    }
+
+    @Override // kn.j
+    public Dialog g(View view) {
+        Object obj;
+        Object obj2;
+        Integer num;
+        Intrinsics.checkNotNullParameter(view, "view");
+        Dialog dialog = new Dialog(getContext(), tp.f.f49809a);
+        Iterator it = s.d(view).iterator();
+        while (true) {
+            if (it.hasNext()) {
+                obj = it.next();
+                if (((View) obj).getTag(g.f41084a) instanceof Integer) {
+                    break;
+                }
+            } else {
+                obj = null;
+                break;
+            }
+        }
+        View view2 = (View) obj;
+        if (view2 != null) {
+            obj2 = view2.getTag(g.f41084a);
+        } else {
+            obj2 = null;
+        }
+        if (obj2 instanceof Integer) {
+            num = (Integer) obj2;
+        } else {
+            num = null;
+        }
+        dialog.setContentView(view);
+        Window window = dialog.getWindow();
+        if (window != null) {
+            if (num != null) {
+                f0.a(window, num.intValue());
+            }
+            window.setBackgroundDrawable(null);
+            window.setLayout(-1, -1);
+            x0.c(window, false);
+            if (!lq.f.f()) {
+                window.setNavigationBarColor(-16777216);
+            }
+        }
+        return dialog;
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(Context context, AttributeSet attributeSet, int i10, int i11) {
+        super(context, attributeSet, i10, i11);
+        Intrinsics.checkNotNullParameter(context, "context");
     }
 }

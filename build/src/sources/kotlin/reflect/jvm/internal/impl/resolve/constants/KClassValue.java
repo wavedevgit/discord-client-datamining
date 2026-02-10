@@ -1,5 +1,6 @@
 package kotlin.reflect.jvm.internal.impl.resolve.constants;
 
+import as.p;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -24,7 +25,6 @@ import kotlin.reflect.jvm.internal.impl.types.error.ErrorTypeKind;
 import kotlin.reflect.jvm.internal.impl.types.error.ErrorUtils;
 import kotlin.reflect.jvm.internal.impl.types.typeUtil.TypeUtilsKt;
 import org.jetbrains.annotations.NotNull;
-import rr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class KClassValue extends ConstantValue<Value> {
     @NotNull
@@ -48,14 +48,14 @@ public final class KClassValue extends ConstantValue<Value> {
                 Intrinsics.checkNotNullExpressionValue(kotlinType, "getType(...)");
                 i10++;
             }
-            ClassifierDescriptor mo1199getDeclarationDescriptor = kotlinType.getConstructor().mo1199getDeclarationDescriptor();
-            if (mo1199getDeclarationDescriptor instanceof ClassDescriptor) {
-                ClassId classId = DescriptorUtilsKt.getClassId(mo1199getDeclarationDescriptor);
+            ClassifierDescriptor mo1202getDeclarationDescriptor = kotlinType.getConstructor().mo1202getDeclarationDescriptor();
+            if (mo1202getDeclarationDescriptor instanceof ClassDescriptor) {
+                ClassId classId = DescriptorUtilsKt.getClassId(mo1202getDeclarationDescriptor);
                 if (classId == null) {
                     return new KClassValue(new Value.LocalClass(argumentType));
                 }
                 return new KClassValue(classId, i10);
-            } else if (!(mo1199getDeclarationDescriptor instanceof TypeParameterDescriptor)) {
+            } else if (!(mo1202getDeclarationDescriptor instanceof TypeParameterDescriptor)) {
                 return null;
             } else {
                 return new KClassValue(ClassId.Companion.topLevel(StandardNames.FqNames.any.toSafe()), 0);
@@ -73,34 +73,34 @@ public final class KClassValue extends ConstantValue<Value> {
         public static final class LocalClass extends Value {
 
             /* renamed from: a  reason: collision with root package name */
-            private final KotlinType f33909a;
+            private final KotlinType f34131a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public LocalClass(@NotNull KotlinType type) {
                 super(null);
                 Intrinsics.checkNotNullParameter(type, "type");
-                this.f33909a = type;
+                this.f34131a = type;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof LocalClass) && Intrinsics.areEqual(this.f33909a, ((LocalClass) obj).f33909a);
+                return (obj instanceof LocalClass) && Intrinsics.areEqual(this.f34131a, ((LocalClass) obj).f34131a);
             }
 
             @NotNull
             public final KotlinType getType() {
-                return this.f33909a;
+                return this.f34131a;
             }
 
             public int hashCode() {
-                return this.f33909a.hashCode();
+                return this.f34131a.hashCode();
             }
 
             @NotNull
             public String toString() {
-                return "LocalClass(type=" + this.f33909a + ')';
+                return "LocalClass(type=" + this.f34131a + ')';
             }
         }
 
@@ -108,43 +108,43 @@ public final class KClassValue extends ConstantValue<Value> {
         public static final class NormalClass extends Value {
 
             /* renamed from: a  reason: collision with root package name */
-            private final ClassLiteralValue f33910a;
+            private final ClassLiteralValue f34132a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public NormalClass(@NotNull ClassLiteralValue value) {
                 super(null);
                 Intrinsics.checkNotNullParameter(value, "value");
-                this.f33910a = value;
+                this.f34132a = value;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof NormalClass) && Intrinsics.areEqual(this.f33910a, ((NormalClass) obj).f33910a);
+                return (obj instanceof NormalClass) && Intrinsics.areEqual(this.f34132a, ((NormalClass) obj).f34132a);
             }
 
             public final int getArrayDimensions() {
-                return this.f33910a.getArrayNestedness();
+                return this.f34132a.getArrayNestedness();
             }
 
             @NotNull
             public final ClassId getClassId() {
-                return this.f33910a.getClassId();
+                return this.f34132a.getClassId();
             }
 
             @NotNull
             public final ClassLiteralValue getValue() {
-                return this.f33910a;
+                return this.f34132a;
             }
 
             public int hashCode() {
-                return this.f33910a.hashCode();
+                return this.f34132a.hashCode();
             }
 
             @NotNull
             public String toString() {
-                return "NormalClass(value=" + this.f33910a + ')';
+                return "NormalClass(value=" + this.f34132a + ')';
             }
         }
 

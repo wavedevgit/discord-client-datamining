@@ -1,12 +1,12 @@
 package com.withpersona.sdk2.inquiry.governmentid.network;
 
-import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.governmentid.network.AutoClassifyResponse;
 import com.withpersona.sdk2.inquiry.network.dto.government_id.Id;
+import dn.c;
 import kotlin.Metadata;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.Intrinsics;
@@ -16,25 +16,25 @@ import org.jetbrains.annotations.NotNull;
 public final class AutoClassifyResponse_IdAcceptedResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18755a;
+    private final m.b f19635a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18756b;
+    private final h f19636b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f18757c;
+    private final h f19637c;
 
     public AutoClassifyResponse_IdAcceptedResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("countryCode", "idClass", "idConfig");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18755a = a10;
+        this.f19635a = a10;
         h f10 = moshi.f(String.class, x0.d(), "countryCode");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18756b = f10;
+        this.f19636b = f10;
         h f11 = moshi.f(Id.class, x0.d(), "idConfig");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f18757c = f11;
+        this.f19637c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -46,27 +46,27 @@ public final class AutoClassifyResponse_IdAcceptedResponseJsonAdapter extends h 
         String str2 = null;
         Id id2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18755a);
+            int J = reader.J(this.f19635a);
             if (J != -1) {
                 if (J != 0) {
                     if (J != 1) {
-                        if (J == 2 && (id2 = (Id) this.f18757c.fromJson(reader)) == null) {
+                        if (J == 2 && (id2 = (Id) this.f19637c.fromJson(reader)) == null) {
                             throw c.x("idConfig", "idConfig", reader);
                         }
                     } else {
-                        str2 = (String) this.f18756b.fromJson(reader);
+                        str2 = (String) this.f19636b.fromJson(reader);
                         if (str2 == null) {
                             throw c.x("idClass", "idClass", reader);
                         }
                     }
                 } else {
-                    str = (String) this.f18756b.fromJson(reader);
+                    str = (String) this.f19636b.fromJson(reader);
                     if (str == null) {
                         throw c.x("countryCode", "countryCode", reader);
                     }
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -88,13 +88,13 @@ public final class AutoClassifyResponse_IdAcceptedResponseJsonAdapter extends h 
     public void toJson(t writer, AutoClassifyResponse.IdAcceptedResponse idAcceptedResponse) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (idAcceptedResponse != null) {
-            writer.k();
+            writer.i();
             writer.J("countryCode");
-            this.f18756b.toJson(writer, idAcceptedResponse.a());
+            this.f19636b.toJson(writer, idAcceptedResponse.a());
             writer.J("idClass");
-            this.f18756b.toJson(writer, idAcceptedResponse.b());
+            this.f19636b.toJson(writer, idAcceptedResponse.b());
             writer.J("idConfig");
-            this.f18757c.toJson(writer, idAcceptedResponse.c());
+            this.f19637c.toJson(writer, idAcceptedResponse.c());
             writer.s();
             return;
         }

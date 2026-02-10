@@ -6,22 +6,22 @@ import java.util.Map;
 final class s0 implements d1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o0 f3933a;
+    private final o0 f3939a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final k1 f3934b;
+    private final k1 f3940b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f3935c;
+    private final boolean f3941c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final p f3936d;
+    private final p f3942d;
 
     private s0(k1 k1Var, p pVar, o0 o0Var) {
-        this.f3934b = k1Var;
-        this.f3935c = pVar.e(o0Var);
-        this.f3936d = pVar;
-        this.f3933a = o0Var;
+        this.f3940b = k1Var;
+        this.f3941c = pVar.e(o0Var);
+        this.f3942d = pVar;
+        this.f3939a = o0Var;
     }
 
     private int j(k1 k1Var, Object obj) {
@@ -69,9 +69,9 @@ final class s0 implements d1 {
 
     private boolean m(c1 c1Var, o oVar, p pVar, s sVar, k1 k1Var, Object obj) {
         int tag = c1Var.getTag();
-        if (tag != q1.f3873a) {
+        if (tag != q1.f3879a) {
             if (q1.b(tag) == 2) {
-                Object b10 = pVar.b(oVar, this.f3933a, q1.a(tag));
+                Object b10 = pVar.b(oVar, this.f3939a, q1.a(tag));
                 if (b10 != null) {
                     pVar.h(c1Var, b10, oVar, sVar);
                     return true;
@@ -85,10 +85,10 @@ final class s0 implements d1 {
         g gVar = null;
         while (c1Var.z() != Integer.MAX_VALUE) {
             int tag2 = c1Var.getTag();
-            if (tag2 == q1.f3875c) {
+            if (tag2 == q1.f3881c) {
                 i10 = c1Var.g();
-                obj2 = pVar.b(oVar, this.f3933a, i10);
-            } else if (tag2 == q1.f3876d) {
+                obj2 = pVar.b(oVar, this.f3939a, i10);
+            } else if (tag2 == q1.f3882d) {
                 if (obj2 != null) {
                     pVar.h(c1Var, obj2, oVar, sVar);
                 } else {
@@ -98,7 +98,7 @@ final class s0 implements d1 {
                 break;
             }
         }
-        if (c1Var.getTag() == q1.f3874b) {
+        if (c1Var.getTag() == q1.f3880b) {
             if (gVar != null) {
                 if (obj2 != null) {
                     pVar.i(gVar, obj2, oVar, sVar);
@@ -117,67 +117,67 @@ final class s0 implements d1 {
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public void a(Object obj, Object obj2) {
-        f1.F(this.f3934b, obj, obj2);
-        if (this.f3935c) {
-            f1.D(this.f3936d, obj, obj2);
+        f1.F(this.f3940b, obj, obj2);
+        if (this.f3941c) {
+            f1.D(this.f3942d, obj, obj2);
         }
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public void b(Object obj) {
-        this.f3934b.j(obj);
-        this.f3936d.f(obj);
+        this.f3940b.j(obj);
+        this.f3942d.f(obj);
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public final boolean c(Object obj) {
-        return this.f3936d.c(obj).k();
+        return this.f3942d.c(obj).k();
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public Object d() {
-        return this.f3933a.newBuilderForType().s();
+        return this.f3939a.newBuilderForType().s();
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public int e(Object obj) {
-        int hashCode = this.f3934b.g(obj).hashCode();
-        if (this.f3935c) {
-            return (hashCode * 53) + this.f3936d.c(obj).hashCode();
+        int hashCode = this.f3940b.g(obj).hashCode();
+        if (this.f3941c) {
+            return (hashCode * 53) + this.f3942d.c(obj).hashCode();
         }
         return hashCode;
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public boolean f(Object obj, Object obj2) {
-        if (!this.f3934b.g(obj).equals(this.f3934b.g(obj2))) {
+        if (!this.f3940b.g(obj).equals(this.f3940b.g(obj2))) {
             return false;
         }
-        if (this.f3935c) {
-            return this.f3936d.c(obj).equals(this.f3936d.c(obj2));
+        if (this.f3941c) {
+            return this.f3942d.c(obj).equals(this.f3942d.c(obj2));
         }
         return true;
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public void g(Object obj, c1 c1Var, o oVar) {
-        k(this.f3934b, this.f3936d, obj, c1Var, oVar);
+        k(this.f3940b, this.f3942d, obj, c1Var, oVar);
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public int h(Object obj) {
-        int j10 = j(this.f3934b, obj);
-        if (this.f3935c) {
-            return j10 + this.f3936d.c(obj).f();
+        int j10 = j(this.f3940b, obj);
+        if (this.f3941c) {
+            return j10 + this.f3942d.c(obj).f();
         }
         return j10;
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public void i(Object obj, r1 r1Var) {
-        Iterator n10 = this.f3936d.c(obj).n();
+        Iterator n10 = this.f3942d.c(obj).n();
         if (!n10.hasNext()) {
-            n(this.f3934b, obj, r1Var);
+            n(this.f3940b, obj, r1Var);
         } else {
             android.support.v4.media.session.b.a(((Map.Entry) n10.next()).getKey());
             throw null;

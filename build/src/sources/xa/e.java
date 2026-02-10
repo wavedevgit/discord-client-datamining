@@ -9,7 +9,7 @@ import wa.y;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f54722a = new e();
+    public static final e f54454a = new e();
 
     private e() {
     }
@@ -30,7 +30,7 @@ public final class e {
     public static final b2.d b(y poolFactory, boolean z10) {
         Intrinsics.checkNotNullParameter(poolFactory, "poolFactory");
         if (z10) {
-            s8.b INSTANCE = s8.b.f49547a;
+            s8.b INSTANCE = s8.b.f47863a;
             Intrinsics.checkNotNullExpressionValue(INSTANCE, "INSTANCE");
             return INSTANCE;
         }

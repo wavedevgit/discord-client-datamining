@@ -1,51 +1,96 @@
 package kt;
 
-import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class f0 extends d2 {
-
-    /* renamed from: a  reason: collision with root package name */
-    private float[] f35136a;
+public final class f0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private int f35137b;
+    public static final a f35180b = new a(null);
 
-    public f0(float[] bufferWithData) {
-        Intrinsics.checkNotNullParameter(bufferWithData, "bufferWithData");
-        this.f35136a = bufferWithData;
-        this.f35137b = bufferWithData.length;
-        b(10);
-    }
+    /* renamed from: c  reason: collision with root package name */
+    private static final f0 f35181c = new f0(CollectionsKt.o("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"));
 
-    @Override // kt.d2
-    public void b(int i10) {
-        float[] fArr = this.f35136a;
-        if (fArr.length < i10) {
-            float[] copyOf = Arrays.copyOf(fArr, kotlin.ranges.d.d(i10, fArr.length * 2));
-            Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f35136a = copyOf;
+    /* renamed from: d  reason: collision with root package name */
+    private static final f0 f35182d = new f0(CollectionsKt.o("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"));
+
+    /* renamed from: a  reason: collision with root package name */
+    private final List f35183a;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final f0 a() {
+            return f0.f35182d;
+        }
+
+        private a() {
         }
     }
 
-    @Override // kt.d2
-    public int d() {
-        return this.f35137b;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final b f35184d = new b();
+
+        b() {
+            super(1, String.class, "toString", "toString()Ljava/lang/String;", 0);
+        }
+
+        @Override // kotlin.jvm.functions.Function1
+        public final String invoke(String p02) {
+            Intrinsics.checkNotNullParameter(p02, "p0");
+            return p02.toString();
+        }
     }
 
-    public final void e(float f10) {
-        d2.c(this, 0, 1, null);
-        float[] fArr = this.f35136a;
-        int d10 = d();
-        this.f35137b = d10 + 1;
-        fArr[d10] = f10;
+    public f0(List names) {
+        Intrinsics.checkNotNullParameter(names, "names");
+        this.f35183a = names;
+        if (names.size() == 12) {
+            Iterator it = CollectionsKt.m(names).iterator();
+            while (it.hasNext()) {
+                int nextInt = ((kotlin.collections.m0) it).nextInt();
+                if (((CharSequence) this.f35183a.get(nextInt)).length() > 0) {
+                    for (int i10 = 0; i10 < nextInt; i10++) {
+                        if (Intrinsics.areEqual(this.f35183a.get(nextInt), this.f35183a.get(i10))) {
+                            throw new IllegalArgumentException(("Month names must be unique, but '" + ((String) this.f35183a.get(nextInt)) + "' was repeated").toString());
+                        }
+                    }
+                } else {
+                    throw new IllegalArgumentException("A month name can not be empty");
+                }
+            }
+            return;
+        }
+        throw new IllegalArgumentException("Month names must contain exactly 12 elements");
     }
 
-    @Override // kt.d2
-    /* renamed from: f */
-    public float[] a() {
-        float[] copyOf = Arrays.copyOf(this.f35136a, d());
-        Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-        return copyOf;
+    public final List b() {
+        return this.f35183a;
+    }
+
+    public boolean equals(Object obj) {
+        if ((obj instanceof f0) && Intrinsics.areEqual(this.f35183a, ((f0) obj).f35183a)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return this.f35183a.hashCode();
+    }
+
+    public String toString() {
+        return CollectionsKt.x0(this.f35183a, ", ", "MonthNames(", ")", 0, null, b.f35184d, 24, null);
     }
 }

@@ -7,37 +7,37 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class q8 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.protocol.x f28904d;
+    private final io.sentry.protocol.x f29839d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f28905e;
+    private final String f29840e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f28906i;
+    private final String f29841i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f28907o;
+    private final String f29842o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f28908p;
+    private final String f29843p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f28909q;
+    private final String f29844q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final String f28910r;
+    private final String f29845r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f28911s;
+    private final String f29846s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final String f28912t;
+    private final String f29847t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final io.sentry.protocol.x f28913u;
+    private final io.sentry.protocol.x f29848u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Map f28914v;
+    private Map f29849v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -138,45 +138,45 @@ public final class q8 implements w1 {
                             xVar = xVar3;
                             break;
                         case 1:
-                            str4 = e3Var.m1();
+                            str4 = e3Var.r1();
                             xVar = xVar3;
                             break;
                         case 2:
-                            str3 = e3Var.m1();
+                            str3 = e3Var.r1();
                             xVar = xVar3;
                             break;
                         case 3:
-                            str8 = e3Var.m1();
+                            str8 = e3Var.r1();
                             xVar = xVar3;
                             break;
                         case 4:
-                            str6 = e3Var.m1();
+                            str6 = e3Var.r1();
                             xVar = xVar3;
                             break;
                         case 5:
-                            str2 = e3Var.m1();
+                            str2 = e3Var.r1();
                             xVar = xVar3;
                             break;
                         case 6:
                             xVar = new x.a().a(e3Var, iLogger);
                             break;
                         case 7:
-                            str7 = e3Var.m1();
+                            str7 = e3Var.r1();
                             xVar = xVar3;
                             break;
                         case '\b':
-                            str = e3Var.b1();
+                            str = e3Var.g1();
                             xVar = xVar3;
                             continue;
                         case '\t':
-                            str5 = e3Var.m1();
+                            str5 = e3Var.r1();
                             xVar = xVar3;
                             break;
                         default:
                             if (concurrentHashMap == null) {
                                 concurrentHashMap = new ConcurrentHashMap();
                             }
-                            e3Var.p1(iLogger, concurrentHashMap, o02);
+                            e3Var.u1(iLogger, concurrentHashMap, o02);
                             xVar = xVar3;
                             break;
                     }
@@ -202,50 +202,50 @@ public final class q8 implements w1 {
     }
 
     public String a() {
-        return this.f28911s;
+        return this.f29846s;
     }
 
     public String b() {
-        return this.f28910r;
+        return this.f29845r;
     }
 
     public void c(Map map) {
-        this.f28914v = map;
+        this.f29849v = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("trace_id").j(iLogger, this.f28904d);
-        f3Var.e("public_key").f(this.f28905e);
-        if (this.f28906i != null) {
-            f3Var.e("release").f(this.f28906i);
+        f3Var.e("trace_id").j(iLogger, this.f29839d);
+        f3Var.e("public_key").f(this.f29840e);
+        if (this.f29841i != null) {
+            f3Var.e("release").f(this.f29841i);
         }
-        if (this.f28907o != null) {
-            f3Var.e("environment").f(this.f28907o);
+        if (this.f29842o != null) {
+            f3Var.e("environment").f(this.f29842o);
         }
-        if (this.f28908p != null) {
-            f3Var.e("user_id").f(this.f28908p);
+        if (this.f29843p != null) {
+            f3Var.e("user_id").f(this.f29843p);
         }
-        if (this.f28909q != null) {
-            f3Var.e("transaction").f(this.f28909q);
+        if (this.f29844q != null) {
+            f3Var.e("transaction").f(this.f29844q);
         }
-        if (this.f28910r != null) {
-            f3Var.e("sample_rate").f(this.f28910r);
+        if (this.f29845r != null) {
+            f3Var.e("sample_rate").f(this.f29845r);
         }
-        if (this.f28911s != null) {
-            f3Var.e("sample_rand").f(this.f28911s);
+        if (this.f29846s != null) {
+            f3Var.e("sample_rand").f(this.f29846s);
         }
-        if (this.f28912t != null) {
-            f3Var.e("sampled").f(this.f28912t);
+        if (this.f29847t != null) {
+            f3Var.e("sampled").f(this.f29847t);
         }
-        if (this.f28913u != null) {
-            f3Var.e("replay_id").j(iLogger, this.f28913u);
+        if (this.f29848u != null) {
+            f3Var.e("replay_id").j(iLogger, this.f29848u);
         }
-        Map map = this.f28914v;
+        Map map = this.f29849v;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28914v.get(str);
+                Object obj = this.f29849v.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -259,15 +259,15 @@ public final class q8 implements w1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q8(io.sentry.protocol.x xVar, String str, String str2, String str3, String str4, String str5, String str6, String str7, io.sentry.protocol.x xVar2, String str8) {
-        this.f28904d = xVar;
-        this.f28905e = str;
-        this.f28906i = str2;
-        this.f28907o = str3;
-        this.f28908p = str4;
-        this.f28909q = str5;
-        this.f28910r = str6;
-        this.f28912t = str7;
-        this.f28913u = xVar2;
-        this.f28911s = str8;
+        this.f29839d = xVar;
+        this.f29840e = str;
+        this.f29841i = str2;
+        this.f29842o = str3;
+        this.f29843p = str4;
+        this.f29844q = str5;
+        this.f29845r = str6;
+        this.f29847t = str7;
+        this.f29848u = xVar2;
+        this.f29846s = str8;
     }
 }

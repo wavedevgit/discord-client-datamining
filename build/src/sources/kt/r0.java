@@ -1,84 +1,53 @@
 package kt;
-
-import java.util.List;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.reflect.KClass;
-import kotlin.reflect.KType;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class r0 implements KType {
+public final class r0 extends mt.c0 {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final KType f35209d;
+    /* renamed from: e  reason: collision with root package name */
+    private final h0 f35295e;
 
-    public r0(KType origin) {
-        Intrinsics.checkNotNullParameter(origin, "origin");
-        this.f35209d = origin;
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public r0(kt.h0 r5) {
+        /*
+            r4 = this;
+            java.lang.String r0 = "padding"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
+            kt.g0 r0 = kt.g0.f35189a
+            mt.b0 r0 = r0.b()
+            kt.h0 r1 = kt.h0.f35200e
+            r2 = 2
+            if (r5 != r1) goto L12
+            r1 = r2
+            goto L13
+        L12:
+            r1 = 1
+        L13:
+            kt.h0 r3 = kt.h0.f35201i
+            if (r5 != r3) goto L1c
+            java.lang.Integer r2 = java.lang.Integer.valueOf(r2)
+            goto L1d
+        L1c:
+            r2 = 0
+        L1d:
+            r4.<init>(r0, r1, r2)
+            r4.f35295e = r5
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: kt.r0.<init>(kt.h0):void");
     }
 
     public boolean equals(Object obj) {
-        r0 r0Var;
-        KType kType;
-        KType kType2;
-        if (obj == null) {
-            return false;
-        }
-        KType kType3 = this.f35209d;
-        kotlin.reflect.d dVar = null;
-        if (obj instanceof r0) {
-            r0Var = (r0) obj;
-        } else {
-            r0Var = null;
-        }
-        if (r0Var != null) {
-            kType = r0Var.f35209d;
-        } else {
-            kType = null;
-        }
-        if (!Intrinsics.areEqual(kType3, kType)) {
-            return false;
-        }
-        kotlin.reflect.d classifier = getClassifier();
-        if (classifier instanceof KClass) {
-            if (obj instanceof KType) {
-                kType2 = (KType) obj;
-            } else {
-                kType2 = null;
-            }
-            if (kType2 != null) {
-                dVar = kType2.getClassifier();
-            }
-            if (dVar != null && (dVar instanceof KClass)) {
-                return Intrinsics.areEqual(es.a.b((KClass) classifier), es.a.b((KClass) dVar));
-            }
+        if ((obj instanceof r0) && this.f35295e == ((r0) obj).f35295e) {
+            return true;
         }
         return false;
     }
 
-    @Override // kotlin.reflect.b
-    public List getAnnotations() {
-        return this.f35209d.getAnnotations();
-    }
-
-    @Override // kotlin.reflect.KType
-    public List getArguments() {
-        return this.f35209d.getArguments();
-    }
-
-    @Override // kotlin.reflect.KType
-    public kotlin.reflect.d getClassifier() {
-        return this.f35209d.getClassifier();
-    }
-
     public int hashCode() {
-        return this.f35209d.hashCode();
-    }
-
-    @Override // kotlin.reflect.KType
-    public boolean isMarkedNullable() {
-        return this.f35209d.isMarkedNullable();
-    }
-
-    public String toString() {
-        return "KTypeWrapper: " + this.f35209d;
+        return this.f35295e.hashCode();
     }
 }

@@ -1,44 +1,20 @@
 package lq;
 
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import android.text.StaticLayout;
+import android.widget.TextView;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class p {
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final p f36355d = new p("BASE", 0);
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final p f36356e = new p("ACTIVE", 1);
-
-    /* renamed from: i  reason: collision with root package name */
-    public static final p f36357i = new p("DISABLED", 2);
-
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ p[] f36358o;
-
-    /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f36359p;
-
-    static {
-        p[] a10 = a();
-        f36358o = a10;
-        f36359p = yr.a.a(a10);
-    }
-
-    private p(String str, int i10) {
-    }
-
-    private static final /* synthetic */ p[] a() {
-        return new p[]{f36355d, f36356e, f36357i};
-    }
-
-    public static p valueOf(String str) {
-        return (p) Enum.valueOf(p.class, str);
-    }
-
-    public static p[] values() {
-        return (p[]) f36358o.clone();
+public abstract class p {
+    public static final int a(TextView textView) {
+        int width;
+        Intrinsics.checkNotNullParameter(textView, "<this>");
+        CharSequence text = textView.getText();
+        if (text == null || (width = textView.getWidth()) == 0 || StringsKt.k0(text)) {
+            return 0;
+        }
+        StaticLayout build = StaticLayout.Builder.obtain(text, 0, text.length(), textView.getPaint(), width).build();
+        Intrinsics.checkNotNullExpressionValue(build, "build(...)");
+        return build.getLineCount();
     }
 }

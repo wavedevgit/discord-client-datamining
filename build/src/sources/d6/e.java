@@ -27,17 +27,17 @@ public abstract class e {
             }
         }
         ArrayList arrayList = new ArrayList(list);
-        List list2 = aVar.f8186h;
+        List list2 = aVar.f8763h;
         if (list2 != null) {
             if (!list2.isEmpty()) {
-                for (com.android.volley.g gVar : aVar.f8186h) {
+                for (com.android.volley.g gVar : aVar.f8763h) {
                     if (!treeSet.contains(gVar.a())) {
                         arrayList.add(gVar);
                     }
                 }
             }
-        } else if (!aVar.f8185g.isEmpty()) {
-            for (Map.Entry entry : aVar.f8185g.entrySet()) {
+        } else if (!aVar.f8762g.isEmpty()) {
+            for (Map.Entry entry : aVar.f8762g.entrySet()) {
                 if (!treeSet.contains(entry.getKey())) {
                     arrayList.add(new com.android.volley.g((String) entry.getKey(), (String) entry.getValue()));
                 }
@@ -56,11 +56,11 @@ public abstract class e {
             return Collections.EMPTY_MAP;
         }
         HashMap hashMap = new HashMap();
-        String str = aVar.f8180b;
+        String str = aVar.f8757b;
         if (str != null) {
             hashMap.put("If-None-Match", str);
         }
-        long j10 = aVar.f8182d;
+        long j10 = aVar.f8759d;
         if (j10 > 0) {
             hashMap.put("If-Modified-Since", b(j10));
         }
@@ -84,7 +84,7 @@ public abstract class e {
         long j16;
         long j17;
         long currentTimeMillis = System.currentTimeMillis();
-        Map map = kVar.f8215c;
+        Map map = kVar.f8792c;
         if (map == null) {
             return null;
         }
@@ -156,14 +156,14 @@ public abstract class e {
             j17 = j16;
         }
         b.a aVar = new b.a();
-        aVar.f8179a = kVar.f8214b;
-        aVar.f8180b = str5;
-        aVar.f8184f = j16;
-        aVar.f8183e = j17;
-        aVar.f8181c = j10;
-        aVar.f8182d = j15;
-        aVar.f8185g = map;
-        aVar.f8186h = kVar.f8216d;
+        aVar.f8756a = kVar.f8791b;
+        aVar.f8757b = str5;
+        aVar.f8761f = j16;
+        aVar.f8760e = j17;
+        aVar.f8758c = j10;
+        aVar.f8759d = j15;
+        aVar.f8762g = map;
+        aVar.f8763h = kVar.f8793d;
         return aVar;
     }
 

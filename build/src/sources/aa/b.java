@@ -65,9 +65,9 @@ public interface b {
 
     void a(String str, Throwable th2, a aVar);
 
-    void g(String str, a aVar);
+    void h(String str, a aVar);
 
-    void k(String str, Object obj, a aVar);
+    void i(String str, Object obj, a aVar);
 
     void m(String str);
 

@@ -5,22 +5,22 @@ import android.content.Context;
 public final class vk implements dk {
 
     /* renamed from: a  reason: collision with root package name */
-    private gj.b f41422a;
+    private ij.b f39748a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final gj.b f41423b;
+    private final ij.b f39749b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final fk f41424c;
+    private final fk f39750c;
 
     public vk(Context context, fk fkVar) {
-        this.f41424c = fkVar;
-        com.google.android.datatransport.cct.a aVar = com.google.android.datatransport.cct.a.f11658g;
+        this.f39750c = fkVar;
+        com.google.android.datatransport.cct.a aVar = com.google.android.datatransport.cct.a.f12235g;
         ac.t.f(context);
         final yb.i g10 = ac.t.c().g(aVar);
         if (aVar.a().contains(yb.c.b("json"))) {
-            this.f41422a = new vi.w(new gj.b() { // from class: og.sk
-                @Override // gj.b
+            this.f39748a = new xi.w(new ij.b() { // from class: og.sk
+                @Override // ij.b
                 public final Object get() {
                     return yb.i.this.a("FIREBASE_ML_SDK", byte[].class, yb.c.b("json"), new yb.g() { // from class: og.uk
                         @Override // yb.g
@@ -31,8 +31,8 @@ public final class vk implements dk {
                 }
             });
         }
-        this.f41423b = new vi.w(new gj.b() { // from class: og.tk
-            @Override // gj.b
+        this.f39749b = new xi.w(new ij.b() { // from class: og.tk
+            @Override // ij.b
             public final Object get() {
                 return yb.i.this.a("FIREBASE_ML_SDK", byte[].class, yb.c.b("proto"), new yb.g() { // from class: og.rk
                     @Override // yb.g
@@ -54,14 +54,14 @@ public final class vk implements dk {
 
     @Override // og.dk
     public final void a(ck ckVar) {
-        if (this.f41424c.a() == 0) {
-            gj.b bVar = this.f41422a;
+        if (this.f39750c.a() == 0) {
+            ij.b bVar = this.f39748a;
             if (bVar != null) {
-                ((yb.h) bVar.get()).a(b(this.f41424c, ckVar));
+                ((yb.h) bVar.get()).a(b(this.f39750c, ckVar));
                 return;
             }
             return;
         }
-        ((yb.h) this.f41423b.get()).a(b(this.f41424c, ckVar));
+        ((yb.h) this.f39749b.get()).a(b(this.f39750c, ckVar));
     }
 }

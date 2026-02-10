@@ -73,7 +73,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = 'string';
                 var4 = typeof var4;
                 if (!(var5 !== var4)) {
-                    _fun10934_ip = 251;
+                    _fun10934_ip = 252;
                     continue _fun10934
                 }
             case 79:
@@ -83,14 +83,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var6 instanceof var5;
                 var5 = var0;
                 if (var6) {
-                    _fun10934_ip = 232;
+                    _fun10934_ip = 233;
                     continue _fun10934
                 }
             case 103:
                 var4 = var4.FormData;
                 var4 = var5 instanceof var4;
                 if (var4) {
-                    _fun10934_ip = 207;
+                    _fun10934_ip = 208;
                     continue _fun10934
                 }
             case 116:
@@ -112,7 +112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var6.bind(var1)(var4);
                 var4 = var4.DEBUG_BUILD;
                 if (!var4) {
-                    _fun10934_ip = 187;
+                    _fun10934_ip = 188;
                     continue _fun10934
                 }
             case 164:
@@ -121,34 +121,34 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var0;
                 var4 = 'Skipping network body because of body type';
                 var4 = var7.bind(var8)(var4, var6);
-            case 187:
+            case 188:
                 var4 = new Array(2);
                 var4[0] = var1;
                 var6 = 'UNPARSEABLE_BODY_TYPE';
                 var4[1] = var6;
                 return var4;
-            case 207: // try_start_1
+            case 208: // try_start_1
                 var6 = _closure1_slot3;
                 var4 = var0;
                 var6 = var6.bind(var1)(var4);
                 var4 = new Array(1);
                 var4[0] = var6;
-            case 230: // try_end1
+            case 231: // try_end1
                 return var4;
-            case 232: // try_start_2
+            case 233: // try_start_2
                 var4 = var5.toString;
                 var5 = var4.bind(var5)();
                 var4 = new Array(1);
                 var4[0] = var5;
-            case 249: // try_end2
+            case 250: // try_end2
                 return var4;
-            case 251: // try_start_3
+            case 252: // try_start_3
                 var5 = var0;
                 var4 = new Array(1);
                 var4[0] = var5;
-            case 262: // try_end3
+            case 263: // try_end3
                 return var4;
-            case 264: // catch_target0 // catch_target1 // catch_target2 // catch_target3
+            case 265: // catch_target0 // catch_target1 // catch_target2 // catch_target3
                 CatchBlockStart(arg_register = 2);
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -157,17 +157,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var5.bind(var1)(var4);
                 var4 = var4.DEBUG_BUILD;
                 if (!var4) {
-                    _fun10934_ip = 325;
+                    _fun10934_ip = 326;
                     continue _fun10934
                 }
-            case 298:
+            case 299:
                 var5 = var3;
                 var4 = var5.error;
                 var3 = var2;
                 var2 = var0;
                 var0 = 'Failed to serialize body';
                 var0 = var4.bind(var5)(var3, var0, var2);
-            case 325:
+            case 326:
                 var0 = new Array(2);
                 var0[0] = var1;
                 var1 = 'BODY_PARSE_ERROR';

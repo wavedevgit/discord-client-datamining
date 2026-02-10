@@ -69,97 +69,97 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     private l W;
 
     /* renamed from: a0  reason: collision with root package name */
-    View.OnFocusChangeListener f1627a0;
+    View.OnFocusChangeListener f1629a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    private View.OnClickListener f1628b0;
+    private View.OnClickListener f1630b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    private boolean f1629c0;
+    private boolean f1631c0;
 
     /* renamed from: d0  reason: collision with root package name */
-    private boolean f1630d0;
+    private boolean f1632d0;
 
     /* renamed from: e0  reason: collision with root package name */
-    s2.a f1631e0;
+    s2.a f1633e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    private boolean f1632f0;
+    private boolean f1634f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private CharSequence f1633g0;
+    private CharSequence f1635g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    private boolean f1634h0;
+    private boolean f1636h0;
 
     /* renamed from: i0  reason: collision with root package name */
-    private boolean f1635i0;
+    private boolean f1637i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private int f1636j0;
+    private int f1638j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private boolean f1637k0;
+    private boolean f1639k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private CharSequence f1638l0;
+    private CharSequence f1640l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private CharSequence f1639m0;
+    private CharSequence f1641m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private boolean f1640n0;
+    private boolean f1642n0;
 
     /* renamed from: o0  reason: collision with root package name */
-    private int f1641o0;
+    private int f1643o0;
 
     /* renamed from: p0  reason: collision with root package name */
-    SearchableInfo f1642p0;
+    SearchableInfo f1644p0;
 
     /* renamed from: q0  reason: collision with root package name */
-    private Bundle f1643q0;
+    private Bundle f1645q0;
 
     /* renamed from: r0  reason: collision with root package name */
-    private final Runnable f1644r0;
+    private final Runnable f1646r0;
 
     /* renamed from: s0  reason: collision with root package name */
-    private Runnable f1645s0;
+    private Runnable f1647s0;
 
     /* renamed from: t0  reason: collision with root package name */
-    private final WeakHashMap f1646t0;
+    private final WeakHashMap f1648t0;
 
     /* renamed from: u0  reason: collision with root package name */
-    private final View.OnClickListener f1647u0;
+    private final View.OnClickListener f1649u0;
 
     /* renamed from: v0  reason: collision with root package name */
-    View.OnKeyListener f1648v0;
+    View.OnKeyListener f1650v0;
 
     /* renamed from: w0  reason: collision with root package name */
-    private final TextView.OnEditorActionListener f1649w0;
+    private final TextView.OnEditorActionListener f1651w0;
 
     /* renamed from: x0  reason: collision with root package name */
-    private final AdapterView.OnItemClickListener f1650x0;
+    private final AdapterView.OnItemClickListener f1652x0;
 
     /* renamed from: y0  reason: collision with root package name */
-    private final AdapterView.OnItemSelectedListener f1651y0;
+    private final AdapterView.OnItemSelectedListener f1653y0;
 
     /* renamed from: z0  reason: collision with root package name */
-    private TextWatcher f1652z0;
+    private TextWatcher f1654z0;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class SearchAutoComplete extends androidx.appcompat.widget.d {
 
         /* renamed from: p  reason: collision with root package name */
-        private int f1653p;
+        private int f1655p;
 
         /* renamed from: q  reason: collision with root package name */
-        private SearchView f1654q;
+        private SearchView f1656q;
 
         /* renamed from: r  reason: collision with root package name */
-        private boolean f1655r;
+        private boolean f1657r;
 
         /* renamed from: s  reason: collision with root package name */
-        final Runnable f1656s;
+        final Runnable f1658s;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Runnable {
@@ -173,7 +173,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         }
 
         public SearchAutoComplete(Context context, AttributeSet attributeSet) {
-            this(context, attributeSet, f.a.f22165m);
+            this(context, attributeSet, f.a.f23288m);
         }
 
         private int getSearchViewTextMinWidthDp() {
@@ -212,15 +212,15 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         }
 
         void d() {
-            if (this.f1655r) {
+            if (this.f1657r) {
                 ((InputMethodManager) getContext().getSystemService("input_method")).showSoftInput(this, 0);
-                this.f1655r = false;
+                this.f1657r = false;
             }
         }
 
         @Override // android.widget.AutoCompleteTextView
         public boolean enoughToFilter() {
-            if (this.f1653p > 0 && !super.enoughToFilter()) {
+            if (this.f1655p > 0 && !super.enoughToFilter()) {
                 return false;
             }
             return true;
@@ -229,9 +229,9 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         @Override // androidx.appcompat.widget.d, android.widget.TextView, android.view.View
         public InputConnection onCreateInputConnection(EditorInfo editorInfo) {
             InputConnection onCreateInputConnection = super.onCreateInputConnection(editorInfo);
-            if (this.f1655r) {
-                removeCallbacks(this.f1656s);
-                post(this.f1656s);
+            if (this.f1657r) {
+                removeCallbacks(this.f1658s);
+                post(this.f1658s);
             }
             return onCreateInputConnection;
         }
@@ -245,7 +245,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         @Override // android.widget.AutoCompleteTextView, android.widget.TextView, android.view.View
         protected void onFocusChanged(boolean z10, int i10, Rect rect) {
             super.onFocusChanged(z10, i10, rect);
-            this.f1654q.X();
+            this.f1656q.X();
         }
 
         @Override // android.widget.AutoCompleteTextView, android.widget.TextView, android.view.View
@@ -263,7 +263,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
                         keyDispatcherState2.handleUpEvent(keyEvent);
                     }
                     if (keyEvent.isTracking() && !keyEvent.isCanceled()) {
-                        this.f1654q.clearFocus();
+                        this.f1656q.clearFocus();
                         setImeVisibility(false);
                         return true;
                     }
@@ -275,8 +275,8 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         @Override // android.widget.AutoCompleteTextView, android.widget.TextView, android.view.View
         public void onWindowFocusChanged(boolean z10) {
             super.onWindowFocusChanged(z10);
-            if (z10 && this.f1654q.hasFocus() && getVisibility() == 0) {
-                this.f1655r = true;
+            if (z10 && this.f1656q.hasFocus() && getVisibility() == 0) {
+                this.f1657r = true;
                 if (SearchView.K(getContext())) {
                     b();
                 }
@@ -294,32 +294,32 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         void setImeVisibility(boolean z10) {
             InputMethodManager inputMethodManager = (InputMethodManager) getContext().getSystemService("input_method");
             if (!z10) {
-                this.f1655r = false;
-                removeCallbacks(this.f1656s);
+                this.f1657r = false;
+                removeCallbacks(this.f1658s);
                 inputMethodManager.hideSoftInputFromWindow(getWindowToken(), 0);
             } else if (inputMethodManager.isActive(this)) {
-                this.f1655r = false;
-                removeCallbacks(this.f1656s);
+                this.f1657r = false;
+                removeCallbacks(this.f1658s);
                 inputMethodManager.showSoftInput(this, 0);
             } else {
-                this.f1655r = true;
+                this.f1657r = true;
             }
         }
 
         void setSearchView(SearchView searchView) {
-            this.f1654q = searchView;
+            this.f1656q = searchView;
         }
 
         @Override // android.widget.AutoCompleteTextView
         public void setThreshold(int i10) {
             super.setThreshold(i10);
-            this.f1653p = i10;
+            this.f1655p = i10;
         }
 
         public SearchAutoComplete(Context context, AttributeSet attributeSet, int i10) {
             super(context, attributeSet, i10);
-            this.f1656s = new a();
-            this.f1653p = getThreshold();
+            this.f1658s = new a();
+            this.f1655p = getThreshold();
         }
     }
 
@@ -360,7 +360,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
 
         @Override // java.lang.Runnable
         public void run() {
-            s2.a aVar = SearchView.this.f1631e0;
+            s2.a aVar = SearchView.this.f1633e0;
             if (aVar instanceof q0) {
                 aVar.a(null);
             }
@@ -375,7 +375,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         @Override // android.view.View.OnFocusChangeListener
         public void onFocusChange(View view, boolean z10) {
             SearchView searchView = SearchView.this;
-            View.OnFocusChangeListener onFocusChangeListener = searchView.f1627a0;
+            View.OnFocusChangeListener onFocusChangeListener = searchView.f1629a0;
             if (onFocusChangeListener != null) {
                 onFocusChangeListener.onFocusChange(searchView, z10);
             }
@@ -423,7 +423,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         @Override // android.view.View.OnKeyListener
         public boolean onKey(View view, int i10, KeyEvent keyEvent) {
             SearchView searchView = SearchView.this;
-            if (searchView.f1642p0 == null) {
+            if (searchView.f1644p0 == null) {
                 return false;
             }
             if (searchView.A.isPopupShowing() && SearchView.this.A.getListSelection() != -1) {
@@ -510,34 +510,34 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     public static class o {
 
         /* renamed from: a  reason: collision with root package name */
-        private Method f1668a;
+        private Method f1670a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Method f1669b;
+        private Method f1671b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Method f1670c;
+        private Method f1672c;
 
         o() {
-            this.f1668a = null;
-            this.f1669b = null;
-            this.f1670c = null;
+            this.f1670a = null;
+            this.f1671b = null;
+            this.f1672c = null;
             d();
             try {
                 Method declaredMethod = AutoCompleteTextView.class.getDeclaredMethod("doBeforeTextChanged", null);
-                this.f1668a = declaredMethod;
+                this.f1670a = declaredMethod;
                 declaredMethod.setAccessible(true);
             } catch (NoSuchMethodException unused) {
             }
             try {
                 Method declaredMethod2 = AutoCompleteTextView.class.getDeclaredMethod("doAfterTextChanged", null);
-                this.f1669b = declaredMethod2;
+                this.f1671b = declaredMethod2;
                 declaredMethod2.setAccessible(true);
             } catch (NoSuchMethodException unused2) {
             }
             try {
                 Method method = AutoCompleteTextView.class.getMethod("ensureImeVisible", Boolean.TYPE);
-                this.f1670c = method;
+                this.f1672c = method;
                 method.setAccessible(true);
             } catch (NoSuchMethodException unused3) {
             }
@@ -552,7 +552,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
 
         void a(AutoCompleteTextView autoCompleteTextView) {
             d();
-            Method method = this.f1669b;
+            Method method = this.f1671b;
             if (method != null) {
                 try {
                     method.invoke(autoCompleteTextView, null);
@@ -563,7 +563,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
 
         void b(AutoCompleteTextView autoCompleteTextView) {
             d();
-            Method method = this.f1668a;
+            Method method = this.f1670a;
             if (method != null) {
                 try {
                     method.invoke(autoCompleteTextView, null);
@@ -574,7 +574,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
 
         void c(AutoCompleteTextView autoCompleteTextView) {
             d();
-            Method method = this.f1670c;
+            Method method = this.f1672c;
             if (method != null) {
                 try {
                     method.invoke(autoCompleteTextView, Boolean.TRUE);
@@ -590,7 +590,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         public static final Parcelable.Creator<p> CREATOR = new a();
 
         /* renamed from: i  reason: collision with root package name */
-        boolean f1671i;
+        boolean f1673i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Parcelable.ClassLoaderCreator {
@@ -621,18 +621,18 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         }
 
         public String toString() {
-            return "SearchView.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " isIconified=" + this.f1671i + "}";
+            return "SearchView.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " isIconified=" + this.f1673i + "}";
         }
 
         @Override // u2.a, android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
             super.writeToParcel(parcel, i10);
-            parcel.writeValue(Boolean.valueOf(this.f1671i));
+            parcel.writeValue(Boolean.valueOf(this.f1673i));
         }
 
         public p(Parcel parcel, ClassLoader classLoader) {
             super(parcel, classLoader);
-            this.f1671i = ((Boolean) parcel.readValue(null)).booleanValue();
+            this.f1673i = ((Boolean) parcel.readValue(null)).booleanValue();
         }
     }
 
@@ -640,40 +640,40 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     private static class q extends TouchDelegate {
 
         /* renamed from: a  reason: collision with root package name */
-        private final View f1672a;
+        private final View f1674a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Rect f1673b;
+        private final Rect f1675b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Rect f1674c;
+        private final Rect f1676c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Rect f1675d;
+        private final Rect f1677d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f1676e;
+        private final int f1678e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f1677f;
+        private boolean f1679f;
 
         public q(Rect rect, Rect rect2, View view) {
             super(rect, view);
-            this.f1676e = ViewConfiguration.get(view.getContext()).getScaledTouchSlop();
-            this.f1673b = new Rect();
-            this.f1675d = new Rect();
-            this.f1674c = new Rect();
+            this.f1678e = ViewConfiguration.get(view.getContext()).getScaledTouchSlop();
+            this.f1675b = new Rect();
+            this.f1677d = new Rect();
+            this.f1676c = new Rect();
             a(rect, rect2);
-            this.f1672a = view;
+            this.f1674a = view;
         }
 
         public void a(Rect rect, Rect rect2) {
-            this.f1673b.set(rect);
-            this.f1675d.set(rect);
-            Rect rect3 = this.f1675d;
-            int i10 = this.f1676e;
+            this.f1675b.set(rect);
+            this.f1677d.set(rect);
+            Rect rect3 = this.f1677d;
+            int i10 = this.f1678e;
             rect3.inset(-i10, -i10);
-            this.f1674c.set(rect2);
+            this.f1676c.set(rect2);
         }
 
         @Override // android.view.TouchDelegate
@@ -687,14 +687,14 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
             if (action != 0) {
                 if (action != 1 && action != 2) {
                     if (action == 3) {
-                        z11 = this.f1677f;
-                        this.f1677f = false;
+                        z11 = this.f1679f;
+                        this.f1679f = false;
                     }
                     z10 = true;
                     z12 = false;
                 } else {
-                    z11 = this.f1677f;
-                    if (z11 && !this.f1675d.contains(x10, y10)) {
+                    z11 = this.f1679f;
+                    if (z11 && !this.f1677d.contains(x10, y10)) {
                         z12 = z11;
                         z10 = false;
                     }
@@ -702,8 +702,8 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
                 z12 = z11;
                 z10 = true;
             } else {
-                if (this.f1673b.contains(x10, y10)) {
-                    this.f1677f = true;
+                if (this.f1675b.contains(x10, y10)) {
+                    this.f1679f = true;
                     z10 = true;
                 }
                 z10 = true;
@@ -712,13 +712,13 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
             if (!z12) {
                 return false;
             }
-            if (z10 && !this.f1674c.contains(x10, y10)) {
-                motionEvent.setLocation(this.f1672a.getWidth() / 2, this.f1672a.getHeight() / 2);
+            if (z10 && !this.f1676c.contains(x10, y10)) {
+                motionEvent.setLocation(this.f1674a.getWidth() / 2, this.f1674a.getHeight() / 2);
             } else {
-                Rect rect = this.f1674c;
+                Rect rect = this.f1676c;
                 motionEvent.setLocation(x10 - rect.left, y10 - rect.top);
             }
-            return this.f1672a.dispatchTouchEvent(motionEvent);
+            return this.f1674a.dispatchTouchEvent(motionEvent);
         }
     }
 
@@ -742,14 +742,14 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         if (uri != null) {
             intent.setData(uri);
         }
-        intent.putExtra("user_query", this.f1639m0);
+        intent.putExtra("user_query", this.f1641m0);
         if (str3 != null) {
             intent.putExtra("query", str3);
         }
         if (str2 != null) {
             intent.putExtra("intent_extra_data_key", str2);
         }
-        Bundle bundle = this.f1643q0;
+        Bundle bundle = this.f1645q0;
         if (bundle != null) {
             intent.putExtra("app_data", bundle);
         }
@@ -757,7 +757,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
             intent.putExtra("action_key", i10);
             intent.putExtra("action_msg", str4);
         }
-        intent.setComponent(this.f1642p0.getSearchActivity());
+        intent.setComponent(this.f1644p0.getSearchActivity());
         return intent;
     }
 
@@ -768,7 +768,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         try {
             String n11 = q0.n(cursor, "suggest_intent_action");
             if (n11 == null) {
-                n11 = this.f1642p0.getSuggestIntentAction();
+                n11 = this.f1644p0.getSuggestIntentAction();
             }
             if (n11 == null) {
                 n11 = "android.intent.action.SEARCH";
@@ -776,7 +776,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
             String str2 = n11;
             String n12 = q0.n(cursor, "suggest_intent_data");
             if (n12 == null) {
-                n12 = this.f1642p0.getSuggestIntentData();
+                n12 = this.f1644p0.getSuggestIntentData();
             }
             if (n12 != null && (n10 = q0.n(cursor, "suggest_intent_data_id")) != null) {
                 n12 = n12 + "/" + Uri.encode(n10);
@@ -808,7 +808,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         intent2.setComponent(searchActivity);
         PendingIntent activity = PendingIntent.getActivity(getContext(), 0, intent2, 1107296256);
         Bundle bundle = new Bundle();
-        Bundle bundle2 = this.f1643q0;
+        Bundle bundle2 = this.f1645q0;
         if (bundle2 != null) {
             bundle.putParcelable("app_data", bundle2);
         }
@@ -877,7 +877,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     private CharSequence H(CharSequence charSequence) {
-        if (this.f1629c0 && this.P != null) {
+        if (this.f1631c0 && this.P != null) {
             int textSize = (int) (this.A.getTextSize() * 1.25d);
             this.P.setBounds(0, 0, textSize, textSize);
             SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder("   ");
@@ -890,11 +890,11 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
 
     private boolean I() {
         Intent intent;
-        SearchableInfo searchableInfo = this.f1642p0;
+        SearchableInfo searchableInfo = this.f1644p0;
         if (searchableInfo != null && searchableInfo.getVoiceSearchEnabled()) {
-            if (this.f1642p0.getVoiceSearchLaunchWebSearch()) {
+            if (this.f1644p0.getVoiceSearchLaunchWebSearch()) {
                 intent = this.S;
-            } else if (this.f1642p0.getVoiceSearchLaunchRecognizer()) {
+            } else if (this.f1644p0.getVoiceSearchLaunchRecognizer()) {
                 intent = this.T;
             } else {
                 intent = null;
@@ -914,7 +914,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     private boolean L() {
-        if ((this.f1632f0 || this.f1637k0) && !J()) {
+        if ((this.f1634f0 || this.f1639k0) && !J()) {
             return true;
         }
         return false;
@@ -932,7 +932,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     private boolean O(int i10, int i11, String str) {
-        Cursor c10 = this.f1631e0.c();
+        Cursor c10 = this.f1633e0.c();
         if (c10 != null && c10.moveToPosition(i10)) {
             M(B(c10, i11, str));
             return true;
@@ -941,17 +941,17 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     private void Z() {
-        post(this.f1644r0);
+        post(this.f1646r0);
     }
 
     private void a0(int i10) {
         Editable text = this.A.getText();
-        Cursor c10 = this.f1631e0.c();
+        Cursor c10 = this.f1633e0.c();
         if (c10 == null) {
             return;
         }
         if (c10.moveToPosition(i10)) {
-            CharSequence convertToString = this.f1631e0.convertToString(c10);
+            CharSequence convertToString = this.f1633e0.convertToString(c10);
             if (convertToString != null) {
                 setQuery(convertToString);
                 return;
@@ -968,7 +968,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         int[] iArr;
         boolean isEmpty = TextUtils.isEmpty(this.A.getText());
         int i10 = 0;
-        if (isEmpty && (!this.f1629c0 || this.f1640n0)) {
+        if (isEmpty && (!this.f1631c0 || this.f1642n0)) {
             z10 = false;
         } else {
             z10 = true;
@@ -999,27 +999,27 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     private void f0() {
-        this.A.setThreshold(this.f1642p0.getSuggestThreshold());
-        this.A.setImeOptions(this.f1642p0.getImeOptions());
-        int inputType = this.f1642p0.getInputType();
+        this.A.setThreshold(this.f1644p0.getSuggestThreshold());
+        this.A.setImeOptions(this.f1644p0.getImeOptions());
+        int inputType = this.f1644p0.getInputType();
         int i10 = 1;
         if ((inputType & 15) == 1) {
             inputType &= -65537;
-            if (this.f1642p0.getSuggestAuthority() != null) {
+            if (this.f1644p0.getSuggestAuthority() != null) {
                 inputType |= 589824;
             }
         }
         this.A.setInputType(inputType);
-        s2.a aVar = this.f1631e0;
+        s2.a aVar = this.f1633e0;
         if (aVar != null) {
             aVar.a(null);
         }
-        if (this.f1642p0.getSuggestAuthority() != null) {
-            q0 q0Var = new q0(getContext(), this, this.f1642p0, this.f1646t0);
-            this.f1631e0 = q0Var;
+        if (this.f1644p0.getSuggestAuthority() != null) {
+            q0 q0Var = new q0(getContext(), this, this.f1644p0, this.f1648t0);
+            this.f1633e0 = q0Var;
             this.A.setAdapter(q0Var);
-            q0 q0Var2 = (q0) this.f1631e0;
-            if (this.f1634h0) {
+            q0 q0Var2 = (q0) this.f1633e0;
+            if (this.f1636h0) {
                 i10 = 2;
             }
             q0Var2.w(i10);
@@ -1037,16 +1037,16 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     private int getPreferredHeight() {
-        return getContext().getResources().getDimensionPixelSize(f.d.f22192e);
+        return getContext().getResources().getDimensionPixelSize(f.d.f23315e);
     }
 
     private int getPreferredWidth() {
-        return getContext().getResources().getDimensionPixelSize(f.d.f22193f);
+        return getContext().getResources().getDimensionPixelSize(f.d.f23316f);
     }
 
     private void h0(boolean z10) {
         int i10;
-        if (this.f1632f0 && L() && hasFocus() && (z10 || !this.f1637k0)) {
+        if (this.f1634f0 && L() && hasFocus() && (z10 || !this.f1639k0)) {
             i10 = 0;
         } else {
             i10 = 8;
@@ -1057,7 +1057,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     private void i0(boolean z10) {
         int i10;
         int i11;
-        this.f1630d0 = z10;
+        this.f1632d0 = z10;
         int i12 = 8;
         if (z10) {
             i10 = 0;
@@ -1074,7 +1074,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
             i11 = 0;
         }
         view.setVisibility(i11);
-        if (this.O.getDrawable() != null && !this.f1629c0) {
+        if (this.O.getDrawable() != null && !this.f1631c0) {
             i12 = 0;
         }
         this.O.setVisibility(i12);
@@ -1085,7 +1085,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
 
     private void j0(boolean z10) {
         int i10 = 8;
-        if (this.f1637k0 && !J() && z10) {
+        if (this.f1639k0 && !J() && z10) {
             this.F.setVisibility(8);
             i10 = 0;
         }
@@ -1115,7 +1115,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     public boolean J() {
-        return this.f1630d0;
+        return this.f1632d0;
     }
 
     void N(int i10, String str, String str2) {
@@ -1124,7 +1124,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
 
     void P() {
         if (TextUtils.isEmpty(this.A.getText())) {
-            if (this.f1629c0) {
+            if (this.f1631c0) {
                 l lVar = this.W;
                 if (lVar == null || !lVar.a()) {
                     clearFocus();
@@ -1161,7 +1161,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         i0(false);
         this.A.requestFocus();
         this.A.setImeVisibility(true);
-        View.OnClickListener onClickListener = this.f1628b0;
+        View.OnClickListener onClickListener = this.f1630b0;
         if (onClickListener != null) {
             onClickListener.onClick(this);
         }
@@ -1172,7 +1172,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         if (text != null && TextUtils.getTrimmedLength(text) > 0) {
             m mVar = this.V;
             if (mVar == null || !mVar.b(text.toString())) {
-                if (this.f1642p0 != null) {
+                if (this.f1644p0 != null) {
                     N(0, null, text.toString());
                 }
                 this.A.setImeVisibility(false);
@@ -1183,7 +1183,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
 
     boolean V(View view, int i10, KeyEvent keyEvent) {
         int length;
-        if (this.f1642p0 != null && this.f1631e0 != null && keyEvent.getAction() == 0 && keyEvent.hasNoModifiers()) {
+        if (this.f1644p0 != null && this.f1633e0 != null && keyEvent.getAction() == 0 && keyEvent.hasNoModifiers()) {
             if (i10 != 66 && i10 != 84 && i10 != 61) {
                 if (i10 != 21 && i10 != 22) {
                     if (i10 == 19) {
@@ -1211,16 +1211,16 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
 
     void W(CharSequence charSequence) {
         Editable text = this.A.getText();
-        this.f1639m0 = text;
+        this.f1641m0 = text;
         boolean isEmpty = TextUtils.isEmpty(text);
         h0(!isEmpty);
         j0(isEmpty);
         c0();
         g0();
-        if (this.V != null && !TextUtils.equals(charSequence, this.f1638l0)) {
+        if (this.V != null && !TextUtils.equals(charSequence, this.f1640l0)) {
             this.V.a(charSequence.toString());
         }
-        this.f1638l0 = charSequence.toString();
+        this.f1640l0 = charSequence.toString();
     }
 
     void X() {
@@ -1232,7 +1232,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     void Y() {
-        SearchableInfo searchableInfo = this.f1642p0;
+        SearchableInfo searchableInfo = this.f1644p0;
         if (searchableInfo != null) {
             try {
                 if (searchableInfo.getVoiceSearchLaunchWebSearch()) {
@@ -1251,7 +1251,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         if (charSequence != null) {
             SearchAutoComplete searchAutoComplete = this.A;
             searchAutoComplete.setSelection(searchAutoComplete.length());
-            this.f1639m0 = charSequence;
+            this.f1641m0 = charSequence;
         }
         if (z10 && !TextUtils.isEmpty(charSequence)) {
             U();
@@ -1260,11 +1260,11 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
 
     @Override // android.view.ViewGroup, android.view.View
     public void clearFocus() {
-        this.f1635i0 = true;
+        this.f1637i0 = true;
         super.clearFocus();
         this.A.clearFocus();
         this.A.setImeVisibility(false);
-        this.f1635i0 = false;
+        this.f1637i0 = false;
     }
 
     void d0() {
@@ -1294,7 +1294,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     public int getMaxWidth() {
-        return this.f1636j0;
+        return this.f1638j0;
     }
 
     public CharSequence getQuery() {
@@ -1302,13 +1302,13 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     public CharSequence getQueryHint() {
-        CharSequence charSequence = this.f1633g0;
+        CharSequence charSequence = this.f1635g0;
         if (charSequence != null) {
             return charSequence;
         }
-        SearchableInfo searchableInfo = this.f1642p0;
+        SearchableInfo searchableInfo = this.f1644p0;
         if (searchableInfo != null && searchableInfo.getHintId() != 0) {
-            return getContext().getText(this.f1642p0.getHintId());
+            return getContext().getText(this.f1644p0.getHintId());
         }
         return this.U;
     }
@@ -1324,7 +1324,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     public s2.a getSuggestionsAdapter() {
-        return this.f1631e0;
+        return this.f1633e0;
     }
 
     @Override // androidx.appcompat.view.b
@@ -1332,18 +1332,18 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         b0("", false);
         clearFocus();
         i0(true);
-        this.A.setImeOptions(this.f1641o0);
-        this.f1640n0 = false;
+        this.A.setImeOptions(this.f1643o0);
+        this.f1642n0 = false;
     }
 
     @Override // androidx.appcompat.view.b
     public void onActionViewExpanded() {
-        if (this.f1640n0) {
+        if (this.f1642n0) {
             return;
         }
-        this.f1640n0 = true;
+        this.f1642n0 = true;
         int imeOptions = this.A.getImeOptions();
-        this.f1641o0 = imeOptions;
+        this.f1643o0 = imeOptions;
         this.A.setImeOptions(imeOptions | 33554432);
         this.A.setText("");
         setIconified(false);
@@ -1352,8 +1352,8 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // android.view.ViewGroup, android.view.View
     public void onDetachedFromWindow() {
-        removeCallbacks(this.f1644r0);
-        post(this.f1645s0);
+        removeCallbacks(this.f1646r0);
+        post(this.f1647s0);
         super.onDetachedFromWindow();
     }
 
@@ -1389,17 +1389,17 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         int size = View.MeasureSpec.getSize(i10);
         if (mode != Integer.MIN_VALUE) {
             if (mode != 0) {
-                if (mode == 1073741824 && (i12 = this.f1636j0) > 0) {
+                if (mode == 1073741824 && (i12 = this.f1638j0) > 0) {
                     size = Math.min(i12, size);
                 }
             } else {
-                size = this.f1636j0;
+                size = this.f1638j0;
                 if (size <= 0) {
                     size = getPreferredWidth();
                 }
             }
         } else {
-            int i13 = this.f1636j0;
+            int i13 = this.f1638j0;
             size = i13 > 0 ? Math.min(i13, size) : Math.min(getPreferredWidth(), size);
         }
         int mode2 = View.MeasureSpec.getMode(i11);
@@ -1422,14 +1422,14 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         }
         p pVar = (p) parcelable;
         super.onRestoreInstanceState(pVar.a());
-        i0(pVar.f1671i);
+        i0(pVar.f1673i);
         requestLayout();
     }
 
     @Override // android.view.View
     protected Parcelable onSaveInstanceState() {
         p pVar = new p(super.onSaveInstanceState());
-        pVar.f1671i = J();
+        pVar.f1673i = J();
         return pVar;
     }
 
@@ -1441,7 +1441,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
 
     @Override // android.view.ViewGroup, android.view.View
     public boolean requestFocus(int i10, Rect rect) {
-        if (this.f1635i0 || !isFocusable()) {
+        if (this.f1637i0 || !isFocusable()) {
             return false;
         }
         if (!J()) {
@@ -1455,7 +1455,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     public void setAppSearchData(Bundle bundle) {
-        this.f1643q0 = bundle;
+        this.f1645q0 = bundle;
     }
 
     public void setIconified(boolean z10) {
@@ -1467,10 +1467,10 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     public void setIconifiedByDefault(boolean z10) {
-        if (this.f1629c0 == z10) {
+        if (this.f1631c0 == z10) {
             return;
         }
-        this.f1629c0 = z10;
+        this.f1631c0 = z10;
         i0(z10);
         e0();
     }
@@ -1484,7 +1484,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     public void setMaxWidth(int i10) {
-        this.f1636j0 = i10;
+        this.f1638j0 = i10;
         requestLayout();
     }
 
@@ -1493,7 +1493,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     public void setOnQueryTextFocusChangeListener(View.OnFocusChangeListener onFocusChangeListener) {
-        this.f1627a0 = onFocusChangeListener;
+        this.f1629a0 = onFocusChangeListener;
     }
 
     public void setOnQueryTextListener(m mVar) {
@@ -1501,21 +1501,21 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     public void setOnSearchClickListener(View.OnClickListener onClickListener) {
-        this.f1628b0 = onClickListener;
+        this.f1630b0 = onClickListener;
     }
 
     public void setOnSuggestionListener(n nVar) {
     }
 
     public void setQueryHint(CharSequence charSequence) {
-        this.f1633g0 = charSequence;
+        this.f1635g0 = charSequence;
         e0();
     }
 
     public void setQueryRefinementEnabled(boolean z10) {
         int i10;
-        this.f1634h0 = z10;
-        s2.a aVar = this.f1631e0;
+        this.f1636h0 = z10;
+        s2.a aVar = this.f1633e0;
         if (aVar instanceof q0) {
             q0 q0Var = (q0) aVar;
             if (z10) {
@@ -1528,13 +1528,13 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     public void setSearchableInfo(SearchableInfo searchableInfo) {
-        this.f1642p0 = searchableInfo;
+        this.f1644p0 = searchableInfo;
         if (searchableInfo != null) {
             f0();
             e0();
         }
         boolean I = I();
-        this.f1637k0 = I;
+        this.f1639k0 = I;
         if (I) {
             this.A.setPrivateImeOptions("nm");
         }
@@ -1542,12 +1542,12 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     public void setSubmitButtonEnabled(boolean z10) {
-        this.f1632f0 = z10;
+        this.f1634f0 = z10;
         i0(J());
     }
 
     public void setSuggestionsAdapter(s2.a aVar) {
-        this.f1631e0 = aVar;
+        this.f1633e0 = aVar;
         this.A.setAdapter(aVar);
     }
 
@@ -1559,8 +1559,8 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
             int paddingLeft = this.C.getPaddingLeft();
             Rect rect = new Rect();
             boolean b10 = g1.b(this);
-            if (this.f1629c0) {
-                i10 = resources.getDimensionPixelSize(f.d.f22190c) + resources.getDimensionPixelSize(f.d.f22191d);
+            if (this.f1631c0) {
+                i10 = resources.getDimensionPixelSize(f.d.f23313c) + resources.getDimensionPixelSize(f.d.f23314d);
             } else {
                 i10 = 0;
             }
@@ -1576,7 +1576,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     public SearchView(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.G);
+        this(context, attributeSet, f.a.H);
     }
 
     public SearchView(Context context, AttributeSet attributeSet, int i10) {
@@ -1585,22 +1585,22 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         this.L = new Rect();
         this.M = new int[2];
         this.N = new int[2];
-        this.f1644r0 = new b();
-        this.f1645s0 = new c();
-        this.f1646t0 = new WeakHashMap();
+        this.f1646r0 = new b();
+        this.f1647s0 = new c();
+        this.f1648t0 = new WeakHashMap();
         f fVar = new f();
-        this.f1647u0 = fVar;
-        this.f1648v0 = new g();
+        this.f1649u0 = fVar;
+        this.f1650v0 = new g();
         h hVar = new h();
-        this.f1649w0 = hVar;
+        this.f1651w0 = hVar;
         i iVar = new i();
-        this.f1650x0 = iVar;
+        this.f1652x0 = iVar;
         j jVar = new j();
-        this.f1651y0 = jVar;
-        this.f1652z0 = new a();
-        v0 v10 = v0.v(context, attributeSet, f.j.f22319f2, i10, 0);
-        androidx.core.view.h0.l0(this, context, f.j.f22319f2, attributeSet, v10.r(), i10, 0);
-        LayoutInflater.from(context).inflate(v10.n(f.j.f22369p2, f.g.f22270r), (ViewGroup) this, true);
+        this.f1653y0 = jVar;
+        this.f1654z0 = new a();
+        v0 v10 = v0.v(context, attributeSet, f.j.f23444f2, i10, 0);
+        androidx.core.view.i0.i0(this, context, f.j.f23444f2, attributeSet, v10.r(), i10, 0);
+        LayoutInflater.from(context).inflate(v10.n(f.j.f23494p2, f.g.f23393r), (ViewGroup) this, true);
         SearchAutoComplete searchAutoComplete = (SearchAutoComplete) findViewById(f.f.E);
         this.A = searchAutoComplete;
         searchAutoComplete.setSearchView(this);
@@ -1609,54 +1609,54 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         this.C = findViewById;
         View findViewById2 = findViewById(f.f.K);
         this.D = findViewById2;
-        ImageView imageView = (ImageView) findViewById(f.f.f22251y);
+        ImageView imageView = (ImageView) findViewById(f.f.f23374y);
         this.E = imageView;
         ImageView imageView2 = (ImageView) findViewById(f.f.B);
         this.F = imageView2;
-        ImageView imageView3 = (ImageView) findViewById(f.f.f22252z);
+        ImageView imageView3 = (ImageView) findViewById(f.f.f23375z);
         this.G = imageView3;
         ImageView imageView4 = (ImageView) findViewById(f.f.F);
         this.H = imageView4;
         ImageView imageView5 = (ImageView) findViewById(f.f.C);
         this.O = imageView5;
-        androidx.core.view.h0.r0(findViewById, v10.g(f.j.f22374q2));
-        androidx.core.view.h0.r0(findViewById2, v10.g(f.j.f22394u2));
-        imageView.setImageDrawable(v10.g(f.j.f22389t2));
-        imageView2.setImageDrawable(v10.g(f.j.f22359n2));
-        imageView3.setImageDrawable(v10.g(f.j.f22344k2));
-        imageView4.setImageDrawable(v10.g(f.j.f22404w2));
-        imageView5.setImageDrawable(v10.g(f.j.f22389t2));
-        this.P = v10.g(f.j.f22384s2);
-        a1.a(imageView, getResources().getString(f.h.f22286n));
-        this.Q = v10.n(f.j.f22399v2, f.g.f22269q);
-        this.R = v10.n(f.j.f22349l2, 0);
+        androidx.core.view.i0.o0(findViewById, v10.g(f.j.f23499q2));
+        androidx.core.view.i0.o0(findViewById2, v10.g(f.j.f23519u2));
+        imageView.setImageDrawable(v10.g(f.j.f23514t2));
+        imageView2.setImageDrawable(v10.g(f.j.f23484n2));
+        imageView3.setImageDrawable(v10.g(f.j.f23469k2));
+        imageView4.setImageDrawable(v10.g(f.j.f23529w2));
+        imageView5.setImageDrawable(v10.g(f.j.f23514t2));
+        this.P = v10.g(f.j.f23509s2);
+        a1.a(imageView, getResources().getString(f.h.f23409n));
+        this.Q = v10.n(f.j.f23524v2, f.g.f23392q);
+        this.R = v10.n(f.j.f23474l2, 0);
         imageView.setOnClickListener(fVar);
         imageView3.setOnClickListener(fVar);
         imageView2.setOnClickListener(fVar);
         imageView4.setOnClickListener(fVar);
         searchAutoComplete.setOnClickListener(fVar);
-        searchAutoComplete.addTextChangedListener(this.f1652z0);
+        searchAutoComplete.addTextChangedListener(this.f1654z0);
         searchAutoComplete.setOnEditorActionListener(hVar);
         searchAutoComplete.setOnItemClickListener(iVar);
         searchAutoComplete.setOnItemSelectedListener(jVar);
-        searchAutoComplete.setOnKeyListener(this.f1648v0);
+        searchAutoComplete.setOnKeyListener(this.f1650v0);
         searchAutoComplete.setOnFocusChangeListener(new d());
-        setIconifiedByDefault(v10.a(f.j.f22364o2, true));
-        int f10 = v10.f(f.j.f22329h2, -1);
+        setIconifiedByDefault(v10.a(f.j.f23489o2, true));
+        int f10 = v10.f(f.j.f23454h2, -1);
         if (f10 != -1) {
             setMaxWidth(f10);
         }
-        this.U = v10.p(f.j.f22354m2);
-        this.f1633g0 = v10.p(f.j.f22379r2);
-        int k10 = v10.k(f.j.f22339j2, -1);
+        this.U = v10.p(f.j.f23479m2);
+        this.f1635g0 = v10.p(f.j.f23504r2);
+        int k10 = v10.k(f.j.f23464j2, -1);
         if (k10 != -1) {
             setImeOptions(k10);
         }
-        int k11 = v10.k(f.j.f22334i2, -1);
+        int k11 = v10.k(f.j.f23459i2, -1);
         if (k11 != -1) {
             setInputType(k11);
         }
-        setFocusable(v10.a(f.j.f22324g2, true));
+        setFocusable(v10.a(f.j.f23449g2, true));
         v10.x();
         Intent intent = new Intent("android.speech.action.WEB_SEARCH");
         this.S = intent;
@@ -1670,7 +1670,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         if (findViewById3 != null) {
             findViewById3.addOnLayoutChangeListener(new e());
         }
-        i0(this.f1629c0);
+        i0(this.f1631c0);
         e0();
     }
 }

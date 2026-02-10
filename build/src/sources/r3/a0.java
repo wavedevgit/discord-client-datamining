@@ -9,13 +9,13 @@ import kotlin.jvm.internal.Lambda;
 public abstract class a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f47464a;
+    private final u f45918a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final AtomicBoolean f47465b;
+    private final AtomicBoolean f45919b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Lazy f47466c;
+    private final Lazy f45920c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends Lambda implements Function0 {
@@ -32,18 +32,18 @@ public abstract class a0 {
 
     public a0(u database) {
         Intrinsics.checkNotNullParameter(database, "database");
-        this.f47464a = database;
-        this.f47465b = new AtomicBoolean(false);
-        this.f47466c = rr.l.a(new a());
+        this.f45918a = database;
+        this.f45919b = new AtomicBoolean(false);
+        this.f45920c = as.l.b(new a());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final x3.k d() {
-        return this.f47464a.f(e());
+        return this.f45918a.f(e());
     }
 
     private final x3.k f() {
-        return (x3.k) this.f47466c.getValue();
+        return (x3.k) this.f45920c.getValue();
     }
 
     private final x3.k g(boolean z10) {
@@ -55,11 +55,11 @@ public abstract class a0 {
 
     public x3.k b() {
         c();
-        return g(this.f47465b.compareAndSet(false, true));
+        return g(this.f45919b.compareAndSet(false, true));
     }
 
     protected void c() {
-        this.f47464a.c();
+        this.f45918a.c();
     }
 
     protected abstract String e();
@@ -67,7 +67,7 @@ public abstract class a0 {
     public void h(x3.k statement) {
         Intrinsics.checkNotNullParameter(statement, "statement");
         if (statement == f()) {
-            this.f47465b.set(false);
+            this.f45919b.set(false);
         }
     }
 }

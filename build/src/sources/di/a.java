@@ -1,5 +1,11 @@
 package di;
+
+import ni.t0;
+import ni.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
-    void a(Object obj);
+public final class a implements z {
+    @Override // ni.e0
+    public final /* synthetic */ Object a() {
+        return new t0("IntegrityService");
+    }
 }

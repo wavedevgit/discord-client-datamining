@@ -6,23 +6,23 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface NullabilityAnnotationStates<T> {
     @NotNull
-    public static final Companion Companion = Companion.f32514a;
+    public static final Companion Companion = Companion.f32736a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f32514a = new Companion();
+        static final /* synthetic */ Companion f32736a = new Companion();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final NullabilityAnnotationStates f32515b = new NullabilityAnnotationStatesImpl(o0.i());
+        private static final NullabilityAnnotationStates f32737b = new NullabilityAnnotationStatesImpl(o0.i());
 
         private Companion() {
         }
 
         @NotNull
         public final NullabilityAnnotationStates getEMPTY() {
-            return f32515b;
+            return f32737b;
         }
     }
 

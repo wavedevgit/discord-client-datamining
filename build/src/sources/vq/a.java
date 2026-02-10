@@ -1,20 +1,48 @@
 package vq;
 
-import com.facebook.react.ReactPackage;
-import com.facebook.react.bridge.ReactApplicationContext;
-import com.withpersona.sdk2.reactnative.PersonaInquiryModule2;
-import java.util.Arrays;
-import java.util.Collections;
+import android.os.Bundle;
 import java.util.List;
+import java.util.Map;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a implements ReactPackage {
-    @Override // com.facebook.react.ReactPackage
-    public List createNativeModules(ReactApplicationContext reactApplicationContext) {
-        return Arrays.asList(new PersonaInquiryModule2(reactApplicationContext));
+public interface a {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final C0712a f51742a = C0712a.f51743a;
+
+    /* renamed from: vq.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0712a {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ C0712a f51743a = new C0712a();
+
+        /* renamed from: b  reason: collision with root package name */
+        private static a f51744b;
+
+        private C0712a() {
+        }
+
+        public final a a() {
+            a aVar = f51744b;
+            Intrinsics.checkNotNull(aVar);
+            return aVar;
+        }
+
+        public final void b(a instance) {
+            Intrinsics.checkNotNullParameter(instance, "instance");
+            f51744b = instance;
+        }
     }
 
-    @Override // com.facebook.react.ReactPackage
-    public List createViewManagers(ReactApplicationContext reactApplicationContext) {
-        return Collections.EMPTY_LIST;
-    }
+    void a(String str, Function1 function1);
+
+    void b(Bundle bundle);
+
+    void c(List list);
+
+    Map d();
+
+    void e(Bundle bundle);
 }

@@ -71,7 +71,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = var2.getActiveSpan;
                             var7 = var1.bind(var2)();
                             if (!var7) {
-                                _fun12006_ip = 322;
+                                _fun12006_ip = 323;
                                 continue _fun12006
                             }
                         case 41:
@@ -88,12 +88,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = var1.document;
                             var1 = var1.hidden;
                             if (!var1) {
-                                _fun12006_ip = 322;
+                                _fun12006_ip = 323;
                                 continue _fun12006
                             }
                         case 104:
                             if (!var2) {
-                                _fun12006_ip = 322;
+                                _fun12006_ip = 323;
                                 continue _fun12006
                             }
                         case 110:
@@ -110,7 +110,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var5.bind(var0)(var3);
                             var3 = var3.DEBUG_BUILD;
                             if (!var3) {
-                                _fun12006_ip = 238;
+                                _fun12006_ip = 239;
                                 continue _fun12006
                             }
                         case 169:
@@ -128,12 +128,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = ' -> since tab moved to the background, op: ';
                             var3 = var10.bind(var9)(var8, var3, var11);
                             var3 = var5.bind(var7)(var3);
-                        case 238:
+                        case 239:
                             if (var1) {
-                                _fun12006_ip = 289;
+                                _fun12006_ip = 290;
                                 continue _fun12006
                             }
-                        case 241:
+                        case 242:
                             var3 = var2.setStatus;
                             var1 = {};
                             var5 = _closure1_slot0;
@@ -145,14 +145,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = 'cancelled';
                             var1.message = var4;
                             var1 = var3.bind(var2)(var1);
-                        case 289:
+                        case 290:
                             var4 = var2.setAttribute;
                             var3 = 'sentry.cancellation_reason';
                             var1 = 'document.hidden';
                             var1 = var4.bind(var2)(var3, var1);
                             var1 = var2.end;
                             var1 = var1.bind(var2)();
-                        case 322:
+                        case 323:
                             return var0;
                     }
                 };

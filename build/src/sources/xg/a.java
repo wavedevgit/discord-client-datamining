@@ -84,7 +84,7 @@ public class a extends hf.g implements wg.e {
         } catch (RemoteException e10) {
             Log.w("SignInClientImpl", "Remote service probably died when signIn is called");
             try {
-                fVar.Q(new l(1, new com.google.android.gms.common.b(8, null), null));
+                fVar.P(new l(1, new com.google.android.gms.common.b(8, null), null));
             } catch (RemoteException unused) {
                 Log.wtf("SignInClientImpl", "ISignInCallbacks#onSignInComplete should be executed from the same process, unexpected RemoteException.", e10);
             }
@@ -93,7 +93,7 @@ public class a extends hf.g implements wg.e {
 
     @Override // hf.c, ff.a.f
     public final int n() {
-        return com.google.android.gms.common.k.f13920a;
+        return com.google.android.gms.common.k.f14497a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

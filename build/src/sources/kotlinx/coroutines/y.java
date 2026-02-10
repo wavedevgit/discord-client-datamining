@@ -3,29 +3,29 @@ package kotlinx.coroutines;
 public class y extends b0 implements CompletableJob {
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f34846i;
+    private final boolean f35068i;
 
     public y(Job job) {
         super(true);
-        j0(job);
-        this.f34846i = S0();
+        k0(job);
+        this.f35068i = V0();
     }
 
-    private final boolean S0() {
+    private final boolean V0() {
         g gVar;
         b0 u10;
         g gVar2;
-        ps.n d02 = d0();
-        if (d02 instanceof g) {
-            gVar = (g) d02;
+        ys.n e02 = e0();
+        if (e02 instanceof g) {
+            gVar = (g) e02;
         } else {
             gVar = null;
         }
         if (gVar != null && (u10 = gVar.u()) != null) {
-            while (!u10.Z()) {
-                ps.n d03 = u10.d0();
-                if (d03 instanceof g) {
-                    gVar2 = (g) d03;
+            while (!u10.a0()) {
+                ys.n e03 = u10.e0();
+                if (e03 instanceof g) {
+                    gVar2 = (g) e03;
                 } else {
                     gVar2 = null;
                 }
@@ -41,12 +41,12 @@ public class y extends b0 implements CompletableJob {
     }
 
     @Override // kotlinx.coroutines.b0
-    public boolean Z() {
-        return this.f34846i;
+    public boolean a0() {
+        return this.f35068i;
     }
 
     @Override // kotlinx.coroutines.b0
-    public boolean a0() {
+    public boolean b0() {
         return true;
     }
 }

@@ -8,10 +8,10 @@ import java.util.List;
 public final class p implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f42975a;
+    private final r3.u f41433a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f42976b;
+    private final r3.i f41434b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -28,21 +28,21 @@ public final class p implements o {
         /* renamed from: k */
         public void i(x3.k kVar, n nVar) {
             if (nVar.a() == null) {
-                kVar.N1(1);
+                kVar.S1(1);
             } else {
-                kVar.d1(1, nVar.a());
+                kVar.i1(1, nVar.a());
             }
             if (nVar.b() == null) {
-                kVar.N1(2);
+                kVar.S1(2);
             } else {
-                kVar.d1(2, nVar.b());
+                kVar.i1(2, nVar.b());
             }
         }
     }
 
     public p(r3.u uVar) {
-        this.f42975a = uVar;
-        this.f42976b = new a(uVar);
+        this.f41433a = uVar;
+        this.f41434b = new a(uVar);
     }
 
     public static List c() {
@@ -52,14 +52,14 @@ public final class p implements o {
     @Override // p4.o
     public List a(String str) {
         String string;
-        r3.x k10 = r3.x.k("SELECT name FROM workname WHERE work_spec_id=?", 1);
+        r3.x i10 = r3.x.i("SELECT name FROM workname WHERE work_spec_id=?", 1);
         if (str == null) {
-            k10.N1(1);
+            i10.S1(1);
         } else {
-            k10.d1(1, str);
+            i10.i1(1, str);
         }
-        this.f42975a.d();
-        Cursor b10 = t3.b.b(this.f42975a, k10, false, null);
+        this.f41433a.d();
+        Cursor b10 = t3.b.b(this.f41433a, i10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -73,19 +73,19 @@ public final class p implements o {
             return arrayList;
         } finally {
             b10.close();
-            k10.p();
+            i10.p();
         }
     }
 
     @Override // p4.o
     public void b(n nVar) {
-        this.f42975a.d();
-        this.f42975a.e();
+        this.f41433a.d();
+        this.f41433a.e();
         try {
-            this.f42976b.j(nVar);
-            this.f42975a.A();
+            this.f41434b.j(nVar);
+            this.f41433a.A();
         } finally {
-            this.f42975a.i();
+            this.f41433a.i();
         }
     }
 }

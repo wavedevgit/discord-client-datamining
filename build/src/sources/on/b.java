@@ -1,41 +1,35 @@
 package on;
 
-import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.events.Event;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b extends Event {
+public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f42380a = new a(null);
+    private final int f40633a;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: b  reason: collision with root package name */
+    private final int f40634b;
 
-        private a() {
-        }
+    /* renamed from: c  reason: collision with root package name */
+    private final int f40635c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final int f40636d;
+
+    public b(nn.d handler) {
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        this.f40633a = handler.O();
+        this.f40634b = handler.T();
+        this.f40635c = handler.S();
+        this.f40636d = handler.Q();
     }
 
-    public b(int i10, int i11) {
-        super(i10, i11);
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public short getCoalescingKey() {
-        return (short) 0;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    protected WritableMap getEventData() {
-        return Arguments.createMap();
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public String getEventName() {
-        return "topHeaderBackButtonClicked";
+    public void a(WritableMap eventData) {
+        Intrinsics.checkNotNullParameter(eventData, "eventData");
+        eventData.putInt("numberOfPointers", this.f40633a);
+        eventData.putInt("handlerTag", this.f40634b);
+        eventData.putInt("state", this.f40635c);
+        eventData.putInt("pointerType", this.f40636d);
     }
 }

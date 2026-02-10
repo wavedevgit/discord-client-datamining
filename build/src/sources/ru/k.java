@@ -1,51 +1,106 @@
 package ru;
 
+import java.net.ProtocolException;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import okio.Buffer;
-import okio.Source;
-import okio.Timeout;
-import org.jetbrains.annotations.NotNull;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class k implements Source {
-    @NotNull
-    private final Source delegate;
+public final class k {
 
-    public k(Source delegate) {
-        Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.delegate = delegate;
+    /* renamed from: d  reason: collision with root package name */
+    public static final a f47775d = new a(null);
+
+    /* renamed from: a  reason: collision with root package name */
+    public final lu.j f47776a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final int f47777b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final String f47778c;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final k a(String statusLine) {
+            lu.j jVar;
+            int i10;
+            String str;
+            Intrinsics.checkNotNullParameter(statusLine, "statusLine");
+            if (StringsKt.P(statusLine, "HTTP/1.", false, 2, null)) {
+                i10 = 9;
+                if (statusLine.length() >= 9 && statusLine.charAt(8) == ' ') {
+                    int charAt = statusLine.charAt(7) - '0';
+                    if (charAt != 0) {
+                        if (charAt == 1) {
+                            jVar = lu.j.HTTP_1_1;
+                        } else {
+                            throw new ProtocolException("Unexpected status line: " + statusLine);
+                        }
+                    } else {
+                        jVar = lu.j.HTTP_1_0;
+                    }
+                } else {
+                    throw new ProtocolException("Unexpected status line: " + statusLine);
+                }
+            } else if (StringsKt.P(statusLine, "ICY ", false, 2, null)) {
+                jVar = lu.j.HTTP_1_0;
+                i10 = 4;
+            } else {
+                throw new ProtocolException("Unexpected status line: " + statusLine);
+            }
+            int i11 = i10 + 3;
+            if (statusLine.length() >= i11) {
+                try {
+                    String substring = statusLine.substring(i10, i11);
+                    Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
+                    int parseInt = Integer.parseInt(substring);
+                    if (statusLine.length() > i11) {
+                        if (statusLine.charAt(i11) == ' ') {
+                            str = statusLine.substring(i10 + 4);
+                            Intrinsics.checkNotNullExpressionValue(str, "this as java.lang.String).substring(startIndex)");
+                        } else {
+                            throw new ProtocolException("Unexpected status line: " + statusLine);
+                        }
+                    } else {
+                        str = "";
+                    }
+                    return new k(jVar, parseInt, str);
+                } catch (NumberFormatException unused) {
+                    throw new ProtocolException("Unexpected status line: " + statusLine);
+                }
+            }
+            throw new ProtocolException("Unexpected status line: " + statusLine);
+        }
+
+        private a() {
+        }
     }
 
-    @rr.c
-    @NotNull
-    /* renamed from: -deprecated_delegate  reason: not valid java name */
-    public final Source m1233deprecated_delegate() {
-        return this.delegate;
+    public k(lu.j protocol, int i10, String message) {
+        Intrinsics.checkNotNullParameter(protocol, "protocol");
+        Intrinsics.checkNotNullParameter(message, "message");
+        this.f47776a = protocol;
+        this.f47777b = i10;
+        this.f47778c = message;
     }
 
-    @Override // okio.Source, java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        this.delegate.close();
-    }
-
-    @NotNull
-    public final Source delegate() {
-        return this.delegate;
-    }
-
-    @Override // okio.Source
-    public long read(Buffer sink, long j10) {
-        Intrinsics.checkNotNullParameter(sink, "sink");
-        return this.delegate.read(sink, j10);
-    }
-
-    @Override // okio.Source
-    @NotNull
-    public Timeout timeout() {
-        return this.delegate.timeout();
-    }
-
-    @NotNull
     public String toString() {
-        return getClass().getSimpleName() + '(' + this.delegate + ')';
+        StringBuilder sb2 = new StringBuilder();
+        if (this.f47776a == lu.j.HTTP_1_0) {
+            sb2.append("HTTP/1.0");
+        } else {
+            sb2.append("HTTP/1.1");
+        }
+        sb2.append(' ');
+        sb2.append(this.f47777b);
+        sb2.append(' ');
+        sb2.append(this.f47778c);
+        String sb3 = sb2.toString();
+        Intrinsics.checkNotNullExpressionValue(sb3, "StringBuilder().apply(builderAction).toString()");
+        return sb3;
     }
 }

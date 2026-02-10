@@ -3,54 +3,54 @@ package net.time4j;
 final class i extends o {
 
     /* renamed from: i  reason: collision with root package name */
-    private final Object f38575i;
+    private final Object f37579i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public i(st.p pVar, int i10) {
+    public i(bu.p pVar, int i10) {
         this(pVar, i10, null);
     }
 
-    private static Object c(st.p pVar, Object obj) {
-        return u0.a(st.g0.o(pVar.getType().cast(obj), pVar), obj);
+    private static Object c(bu.p pVar, Object obj) {
+        return u0.a(bu.g0.o(pVar.getType().cast(obj), pVar), obj);
     }
 
-    private static Object d(st.p pVar, Object obj) {
-        return u0.a(st.g0.n(pVar.getType().cast(obj), pVar), obj);
+    private static Object d(bu.p pVar, Object obj) {
+        return u0.a(bu.g0.n(pVar.getType().cast(obj), pVar), obj);
     }
 
-    @Override // st.v
+    @Override // bu.v
     /* renamed from: b */
     public f0 apply(f0 f0Var) {
-        return (f0) ((st.v) this.f38575i).apply(f0Var);
+        return (f0) ((bu.v) this.f37579i).apply(f0Var);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public i(st.p pVar, int i10, Object obj) {
+    public i(bu.p pVar, int i10, Object obj) {
         super(pVar, i10);
         switch (i10) {
             case -1:
-                this.f38575i = d(pVar, obj);
+                this.f37579i = d(pVar, obj);
                 return;
             case 0:
-                this.f38575i = st.g0.l(pVar);
+                this.f37579i = bu.g0.l(pVar);
                 return;
             case 1:
-                this.f38575i = st.g0.j(pVar);
+                this.f37579i = bu.g0.j(pVar);
                 return;
             case 2:
-                this.f38575i = st.g0.f(pVar);
+                this.f37579i = bu.g0.f(pVar);
                 return;
             case 3:
-                this.f38575i = st.g0.h(pVar);
+                this.f37579i = bu.g0.h(pVar);
                 return;
             case 4:
-                this.f38575i = st.g0.d(pVar);
+                this.f37579i = bu.g0.d(pVar);
                 return;
             case 5:
-                this.f38575i = st.g0.c(pVar);
+                this.f37579i = bu.g0.c(pVar);
                 return;
             case 6:
-                this.f38575i = c(pVar, obj);
+                this.f37579i = c(pVar, obj);
                 return;
             default:
                 throw new AssertionError("Unknown: " + a());

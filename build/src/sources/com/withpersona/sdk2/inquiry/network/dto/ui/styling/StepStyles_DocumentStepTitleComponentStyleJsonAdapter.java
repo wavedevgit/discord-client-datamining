@@ -46,7 +46,7 @@ public final class StepStyles_DocumentStepTitleComponentStyleJsonAdapter extends
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 stepTextBasedComponentStyleContainer = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
@@ -62,7 +62,7 @@ public final class StepStyles_DocumentStepTitleComponentStyleJsonAdapter extends
     public void toJson(@NotNull t writer, StepStyles.DocumentStepTitleComponentStyle documentStepTitleComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStepTitleComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, documentStepTitleComponentStyle.getBase());
             writer.J("documentProcessingTitle");

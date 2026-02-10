@@ -1,189 +1,104 @@
 package yt;
 
-import java.util.HashMap;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.util.Log;
+import cu.e;
 import java.util.Locale;
-import java.util.Map;
-import tt.k;
-import tt.o;
-import tt.p;
+import java.util.TimeZone;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicBoolean;
+import net.time4j.a0;
+import net.time4j.android.spi.AndroidResourceLoader;
+import net.time4j.f0;
+import net.time4j.g0;
+import net.time4j.i0;
+import net.time4j.q0;
+import net.time4j.tz.k;
+import net.time4j.tz.l;
+import net.time4j.tz.p;
+import zt.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements o {
+public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f55771a;
+    private static final AtomicBoolean f55838a = new AtomicBoolean(false);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final p f55772b;
+    private static final AtomicBoolean f55839b = new AtomicBoolean(false);
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final Map f55773c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final p f55774d;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* renamed from: yt.a$a  reason: collision with other inner class name */
+    /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static /* synthetic */ class C0783a {
+    public static class b implements Runnable {
+        private b() {
+        }
 
-        /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f55775a;
-
-        static {
-            int[] iArr = new int[k.values().length];
-            f55775a = iArr;
+        @Override // java.lang.Runnable
+        public void run() {
+            long nanoTime = System.nanoTime();
+            k t10 = p.t(TimeZone.getDefault().getOffset(System.currentTimeMillis()) / 1000);
+            Locale locale = Locale.getDefault();
             try {
-                iArr[k.CARDINALS.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                f55775a[k.ORDINALS.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
+                a0 b10 = q0.b();
+                t10 = l.O().z();
+                Log.i("TIME4A", "System time zone at start: [" + t10.a() + "]");
+                Log.i("TIME4A", "System locale at start: [" + locale.toString() + "]");
+                e eVar = e.FULL;
+                Log.i("TIME4A", du.c.B(eVar, eVar, locale, t10).l(b10));
+                Log.i("TIME4A", "Prefetch thread consumed (in ms): " + ((System.nanoTime() - nanoTime) / 1000000));
+            } catch (Throwable th2) {
+                Log.e("TIME4A", "Error on prefetch thread with: time zone=" + t10.a() + ", locale=" + locale + "!", th2);
+                throw new IllegalStateException(th2);
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class b extends p {
-
-        /* renamed from: g  reason: collision with root package name */
-        private final int f55776g;
-
-        /* synthetic */ b(int i10, C0783a c0783a) {
-            this(i10);
+    public static class c extends BroadcastReceiver {
+        private c() {
         }
 
-        private b(int i10) {
-            this.f55776g = i10;
+        @Override // android.content.BroadcastReceiver
+        public void onReceive(Context context, Intent intent) {
+            l.b.a();
+            Log.i("TIME4A", "Event ACTION_TIMEZONE_CHANGED received, system timezone changed to: [" + l.O().z().a() + "]. Original tz-id reported by Android: [" + intent.getStringExtra("time-zone") + "]");
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class c extends p {
-
-        /* renamed from: g  reason: collision with root package name */
-        private final int f55777g;
-
-        /* synthetic */ c(int i10, C0783a c0783a) {
-            this(i10);
+    public static void a(Context context, Runnable runnable) {
+        long nanoTime = System.nanoTime();
+        c(context, null);
+        d(context.getApplicationContext());
+        i0 o02 = f0.H0(2021, 3, 27).o0(g0.F0());
+        Log.i("TIME4A", "Starting Time4A (v4.8-2021a published on " + o02.f0() + ")");
+        if (runnable != null) {
+            Executors.defaultThreadFactory().newThread(runnable).start();
         }
+        Log.i("TIME4A", "Main-Thread consumed in ms: " + ((System.nanoTime() - nanoTime) / 1000000));
+    }
 
-        private c(int i10) {
-            this.f55777g = i10;
+    public static void b(Context context, boolean z10) {
+        b bVar = null;
+        if (z10) {
+            bVar = new b();
+        }
+        a(context, bVar);
+    }
+
+    public static void c(Context context, yt.b bVar) {
+        if (!f55838a.getAndSet(true)) {
+            System.setProperty("net.time4j.base.ResourceLoader", "net.time4j.android.spi.AndroidResourceLoader");
+            ((AndroidResourceLoader) d.c()).j(context, bVar);
         }
     }
 
-    static {
-        HashMap hashMap = new HashMap(140);
-        f55771a = hashMap;
-        f55772b = new b(0, null);
-        HashMap hashMap2 = new HashMap();
-        b(hashMap2, "bm bo dz id ig ii in ja jbo jv jw kde kea km ko lkt", -1);
-        b(hashMap2, "lo ms my nqo root sah ses sg th to vi wo yo zh", -1);
-        b(hashMap2, "pt_PT", 0);
-        b(hashMap2, "am as bn fa gu hi kn zu", 1);
-        b(hashMap2, "ff fr hy kab pt", 1);
-        b(hashMap2, "si", 1);
-        b(hashMap2, "ak bh guw ln mg nso pa ti wa", 1);
-        b(hashMap2, "tzm", 2);
-        b(hashMap2, "is", 3);
-        b(hashMap2, "mk", 4);
-        b(hashMap2, "ceb fil tl", 5);
-        b(hashMap2, "lv prg", 6);
-        b(hashMap2, "lag ksh", 7);
-        b(hashMap2, "iu naq se sma smi smj smn sms", 8);
-        b(hashMap2, "shi", 9);
-        b(hashMap2, "mo ro", 10);
-        b(hashMap2, "bs hr sh sr", 11);
-        b(hashMap2, "gd", 12);
-        b(hashMap2, "sl", 13);
-        b(hashMap2, "he iw", 14);
-        b(hashMap2, "cs sk", 15);
-        b(hashMap2, "pl", 16);
-        b(hashMap2, "be", 17);
-        b(hashMap2, "lt", 18);
-        b(hashMap2, "mt", 19);
-        b(hashMap2, "ru uk", 17);
-        b(hashMap2, "br", 20);
-        b(hashMap2, "ga", 21);
-        b(hashMap2, "gv", 22);
-        b(hashMap2, "ar", 23);
-        b(hashMap2, "cy", 24);
-        b(hashMap2, "dsb hsb", 25);
-        b(hashMap2, "kw", 26);
-        hashMap.putAll(hashMap2);
-        HashMap hashMap3 = new HashMap(140);
-        f55773c = hashMap3;
-        f55774d = new c(0, null);
-        HashMap hashMap4 = new HashMap();
-        c(hashMap4, "sv", 1);
-        c(hashMap4, "fil fr ga hy lo mo ms ro tl vi", 2);
-        c(hashMap4, "hu", 3);
-        c(hashMap4, "ne", 4);
-        c(hashMap4, "kk", 5);
-        c(hashMap4, "it sc scn", 6);
-        c(hashMap4, "ka", 7);
-        c(hashMap4, "sq", 8);
-        c(hashMap4, "en", 9);
-        c(hashMap4, "mr", 10);
-        c(hashMap4, "ca", 11);
-        c(hashMap4, "mk", 12);
-        c(hashMap4, "az", 13);
-        c(hashMap4, "gu hi", 14);
-        c(hashMap4, "as bn", 15);
-        c(hashMap4, "cy", 16);
-        c(hashMap4, "be", 17);
-        c(hashMap4, "uk", 18);
-        c(hashMap4, "tk", 19);
-        c(hashMap4, "or", 20);
-        c(hashMap4, "gd", 21);
-        c(hashMap4, "kw", 22);
-        hashMap3.putAll(hashMap4);
-    }
-
-    private static void b(Map map, String str, int i10) {
-        for (String str2 : str.split(" ")) {
-            map.put(str2, new b(i10, null));
+    public static void d(Context context) {
+        if (context != null && !f55839b.getAndSet(true)) {
+            System.setProperty("net.time4j.allow.system.tz.override", "true");
+            context.registerReceiver(new c(), new IntentFilter("android.intent.action.TIMEZONE_CHANGED"));
         }
-    }
-
-    private static void c(Map map, String str, int i10) {
-        for (String str2 : str.split(" ")) {
-            map.put(str2, new c(i10, null));
-        }
-    }
-
-    @Override // tt.o
-    public p a(Locale locale, k kVar) {
-        Map map;
-        p pVar;
-        p pVar2;
-        int i10 = C0783a.f55775a[kVar.ordinal()];
-        if (i10 != 1) {
-            if (i10 == 2) {
-                map = f55773c;
-                pVar = f55774d;
-            } else {
-                throw new UnsupportedOperationException(kVar.name());
-            }
-        } else {
-            map = f55771a;
-            pVar = f55772b;
-        }
-        String country = locale.getCountry();
-        if (!country.isEmpty()) {
-            pVar2 = (p) map.get(locale.getLanguage() + '_' + country);
-        } else {
-            pVar2 = null;
-        }
-        if (pVar2 == null) {
-            pVar2 = (p) map.get(locale.getLanguage());
-        }
-        if (pVar2 == null) {
-            return pVar;
-        }
-        return pVar2;
     }
 }

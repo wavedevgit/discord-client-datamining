@@ -3,20 +3,20 @@ package com.google.android.play.core.integrity;
 abstract class h1 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f16303b;
+    private final String f17052b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f16304c;
+    private final long f17053c;
 
     /* renamed from: a  reason: collision with root package name */
-    private final li.t0 f16302a = new li.t0("IntegrityDialogWrapper");
+    private final ni.t0 f17051a = new ni.t0("IntegrityDialogWrapper");
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f16305d = new Object();
+    private final Object f17054d = new Object();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h1(String str, long j10) {
-        this.f16303b = str;
-        this.f16304c = j10;
+        this.f17052b = str;
+        this.f17053c = j10;
     }
 }

@@ -11,7 +11,7 @@ public final class g6 extends a implements IInterface {
     }
 
     public final void W0() {
-        h(2, e());
+        i(2, e());
     }
 
     public final ka[] X0(tf.a aVar, c2 c2Var) {

@@ -1,12 +1,12 @@
 package com.withpersona.sdk2.inquiry.network.dto.government_id;
 
-import bn.c;
 import com.squareup.moshi.a0;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.government_id.Id;
+import dn.c;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.collections.x0;
@@ -66,7 +66,7 @@ public final class IdJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
@@ -98,7 +98,7 @@ public final class IdJsonAdapter extends h {
     public void toJson(@NotNull t writer, Id id2) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (id2 != null) {
-            writer.k();
+            writer.i();
             writer.J("class");
             this.stringAdapter.toJson(writer, id2.getClass());
             writer.J("requiresSides");

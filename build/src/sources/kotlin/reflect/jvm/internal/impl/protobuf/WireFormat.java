@@ -3,16 +3,16 @@ package kotlin.reflect.jvm.internal.impl.protobuf;
 public final class WireFormat {
 
     /* renamed from: a  reason: collision with root package name */
-    static final int f33729a = b(1, 3);
+    static final int f33951a = b(1, 3);
 
     /* renamed from: b  reason: collision with root package name */
-    static final int f33730b = b(1, 4);
+    static final int f33952b = b(1, 4);
 
     /* renamed from: c  reason: collision with root package name */
-    static final int f33731c = b(2, 0);
+    static final int f33953c = b(2, 0);
 
     /* renamed from: d  reason: collision with root package name */
-    static final int f33732d = b(3, 2);
+    static final int f33954d = b(3, 2);
 
     /* JADX WARN: Enum visitor error
     jadx.core.utils.exceptions.JadxRuntimeException: Init of enum INT64 uses external variables
@@ -46,13 +46,13 @@ public final class WireFormat {
         public static final FieldType UINT64;
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ FieldType[] f33733i;
+        private static final /* synthetic */ FieldType[] f33955i;
 
         /* renamed from: d  reason: collision with root package name */
-        private final JavaType f33734d;
+        private final JavaType f33956d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f33735e;
+        private final int f33957e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         enum a extends FieldType {
@@ -142,7 +142,7 @@ public final class WireFormat {
             SINT32 = fieldType13;
             FieldType fieldType14 = new FieldType("SINT64", 17, javaType, 0);
             SINT64 = fieldType14;
-            f33733i = new FieldType[]{fieldType, fieldType2, fieldType3, fieldType4, fieldType5, fieldType6, fieldType7, fieldType8, aVar, bVar, cVar, dVar, fieldType9, fieldType10, fieldType11, fieldType12, fieldType13, fieldType14};
+            f33955i = new FieldType[]{fieldType, fieldType2, fieldType3, fieldType4, fieldType5, fieldType6, fieldType7, fieldType8, aVar, bVar, cVar, dVar, fieldType9, fieldType10, fieldType11, fieldType12, fieldType13, fieldType14};
         }
 
         public static FieldType valueOf(String str) {
@@ -150,15 +150,15 @@ public final class WireFormat {
         }
 
         public static FieldType[] values() {
-            return (FieldType[]) f33733i.clone();
+            return (FieldType[]) f33955i.clone();
         }
 
         public JavaType getJavaType() {
-            return this.f33734d;
+            return this.f33956d;
         }
 
         public int getWireType() {
-            return this.f33735e;
+            return this.f33957e;
         }
 
         public boolean isPackable() {
@@ -166,8 +166,8 @@ public final class WireFormat {
         }
 
         private FieldType(String str, int i10, JavaType javaType, int i11) {
-            this.f33734d = javaType;
-            this.f33735e = i11;
+            this.f33956d = javaType;
+            this.f33957e = i11;
         }
     }
 
@@ -185,10 +185,10 @@ public final class WireFormat {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final Object f33737d;
+        private final Object f33959d;
 
         JavaType(Object obj) {
-            this.f33737d = obj;
+            this.f33959d = obj;
         }
     }
 

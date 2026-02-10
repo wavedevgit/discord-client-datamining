@@ -1,5 +1,6 @@
 package kotlin.reflect.jvm.internal.impl.name;
 
+import as.p;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -7,7 +8,6 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
 import org.jetbrains.annotations.NotNull;
-import rr.p;
 @SourceDebugExtension({"SMAP\nFqNamesUtil.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FqNamesUtil.kt\norg/jetbrains/kotlin/name/FqNamesUtilKt\n+ 2 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,86:1\n538#2:87\n523#2,6:88\n1#3:94\n*S KotlinDebug\n*F\n+ 1 FqNamesUtil.kt\norg/jetbrains/kotlin/name/FqNamesUtilKt\n*L\n73#1:87\n73#1:88,6\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class FqNamesUtilKt {
@@ -19,15 +19,15 @@ public final class FqNamesUtilKt {
         static {
             int[] iArr = new int[a.values().length];
             try {
-                iArr[a.f33648d.ordinal()] = 1;
+                iArr[a.f33870d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[a.f33650i.ordinal()] = 2;
+                iArr[a.f33872i.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[a.f33649e.ordinal()] = 3;
+                iArr[a.f33871e.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             $EnumSwitchMapping$0 = iArr;
@@ -101,14 +101,14 @@ public final class FqNamesUtilKt {
         if (str == null) {
             return false;
         }
-        a aVar = a.f33648d;
+        a aVar = a.f33870d;
         for (int i10 = 0; i10 < str.length(); i10++) {
             char charAt = str.charAt(i10);
             int i11 = WhenMappings.$EnumSwitchMapping$0[aVar.ordinal()];
             if (i11 != 1 && i11 != 2) {
                 if (i11 == 3) {
                     if (charAt == '.') {
-                        aVar = a.f33650i;
+                        aVar = a.f33872i;
                     } else if (!Character.isJavaIdentifierPart(charAt)) {
                         return false;
                     }
@@ -118,10 +118,10 @@ public final class FqNamesUtilKt {
             } else if (!Character.isJavaIdentifierStart(charAt)) {
                 return false;
             } else {
-                aVar = a.f33649e;
+                aVar = a.f33871e;
             }
         }
-        if (aVar == a.f33650i) {
+        if (aVar == a.f33872i) {
             return false;
         }
         return true;

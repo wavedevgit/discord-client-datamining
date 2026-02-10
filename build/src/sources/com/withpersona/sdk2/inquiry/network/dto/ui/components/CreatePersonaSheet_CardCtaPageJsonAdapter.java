@@ -1,12 +1,12 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.NextStep;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.CreatePersonaSheet;
+import dn.c;
 import java.lang.reflect.Constructor;
 import kotlin.Metadata;
 import kotlin.collections.x0;
@@ -56,7 +56,7 @@ public final class CreatePersonaSheet_CardCtaPageJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 ui2 = (NextStep.Ui) this.uiAdapter.fromJson(reader);
@@ -77,7 +77,7 @@ public final class CreatePersonaSheet_CardCtaPageJsonAdapter extends h {
         }
         Constructor<CreatePersonaSheet.CardCtaPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = CreatePersonaSheet.CardCtaPage.class.getDeclaredConstructor(NextStep.Ui.class, CreatePersonaSheet.CardCtaPage.ComponentNameMapping.class, Integer.TYPE, c.f7152c);
+            constructor = CreatePersonaSheet.CardCtaPage.class.getDeclaredConstructor(NextStep.Ui.class, CreatePersonaSheet.CardCtaPage.ComponentNameMapping.class, Integer.TYPE, c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -93,7 +93,7 @@ public final class CreatePersonaSheet_CardCtaPageJsonAdapter extends h {
     public void toJson(@NotNull t writer, CreatePersonaSheet.CardCtaPage cardCtaPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (cardCtaPage != null) {
-            writer.k();
+            writer.i();
             writer.J("uiStep");
             this.uiAdapter.toJson(writer, cardCtaPage.getUiStep());
             writer.J("componentNameMapping");

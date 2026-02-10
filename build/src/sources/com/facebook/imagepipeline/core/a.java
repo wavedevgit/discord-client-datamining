@@ -37,86 +37,86 @@ public final class a {
     private final boolean L;
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f10578a;
+    private final boolean f11155a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f10579b;
+    private final boolean f11156b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final y8.b f10580c;
+    private final y8.b f11157c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f10581d;
+    private final boolean f11158d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f10582e;
+    private final boolean f11159e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f10583f;
+    private final boolean f11160f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f10584g;
+    private final int f11161g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f10585h;
+    private final int f11162h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f10586i;
+    private final int f11163i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final boolean f10587j;
+    private final boolean f11164j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final int f10588k;
+    private final int f11165k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final boolean f10589l;
+    private final boolean f11166l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final boolean f10590m;
+    private final boolean f11167m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final d f10591n;
+    private final d f11168n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Supplier f10592o;
+    private final Supplier f11169o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f10593p;
+    private final boolean f11170p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f10594q;
+    private final boolean f11171q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Supplier f10595r;
+    private final Supplier f11172r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f10596s;
+    private final boolean f11173s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final long f10597t;
+    private final long f11174t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final boolean f10598u;
+    private final boolean f11175u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final boolean f10599v;
+    private final boolean f11176v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final boolean f10600w;
+    private final boolean f11177w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final boolean f10601x;
+    private final boolean f11178x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final boolean f10602y;
+    private final boolean f11179y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final boolean f10603z;
+    private final boolean f11180z;
 
     /* renamed from: com.facebook.imagepipeline.core.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0177a {
+    public static final class C0154a {
         public boolean A;
         public boolean B;
         public int C;
@@ -132,138 +132,138 @@ public final class a {
         public boolean M;
 
         /* renamed from: a  reason: collision with root package name */
-        private final ImagePipelineConfig.Builder f10604a;
+        private final ImagePipelineConfig.Builder f11181a;
 
         /* renamed from: b  reason: collision with root package name */
-        public boolean f10605b;
+        public boolean f11182b;
 
         /* renamed from: c  reason: collision with root package name */
-        public boolean f10606c;
+        public boolean f11183c;
 
         /* renamed from: d  reason: collision with root package name */
-        public boolean f10607d;
+        public boolean f11184d;
 
         /* renamed from: e  reason: collision with root package name */
-        public y8.b f10608e;
+        public y8.b f11185e;
 
         /* renamed from: f  reason: collision with root package name */
-        public boolean f10609f;
+        public boolean f11186f;
 
         /* renamed from: g  reason: collision with root package name */
-        public boolean f10610g;
+        public boolean f11187g;
 
         /* renamed from: h  reason: collision with root package name */
-        public boolean f10611h;
+        public boolean f11188h;
 
         /* renamed from: i  reason: collision with root package name */
-        public int f10612i;
+        public int f11189i;
 
         /* renamed from: j  reason: collision with root package name */
-        public int f10613j;
+        public int f11190j;
 
         /* renamed from: k  reason: collision with root package name */
-        public int f10614k;
+        public int f11191k;
 
         /* renamed from: l  reason: collision with root package name */
-        public boolean f10615l;
+        public boolean f11192l;
 
         /* renamed from: m  reason: collision with root package name */
-        public int f10616m;
+        public int f11193m;
 
         /* renamed from: n  reason: collision with root package name */
-        public boolean f10617n;
+        public boolean f11194n;
 
         /* renamed from: o  reason: collision with root package name */
-        public boolean f10618o;
+        public boolean f11195o;
 
         /* renamed from: p  reason: collision with root package name */
-        public d f10619p;
+        public d f11196p;
 
         /* renamed from: q  reason: collision with root package name */
-        public Supplier f10620q;
+        public Supplier f11197q;
 
         /* renamed from: r  reason: collision with root package name */
-        public boolean f10621r;
+        public boolean f11198r;
 
         /* renamed from: s  reason: collision with root package name */
-        public boolean f10622s;
+        public boolean f11199s;
 
         /* renamed from: t  reason: collision with root package name */
-        public Supplier f10623t;
+        public Supplier f11200t;
 
         /* renamed from: u  reason: collision with root package name */
-        public boolean f10624u;
+        public boolean f11201u;
 
         /* renamed from: v  reason: collision with root package name */
-        public long f10625v;
+        public long f11202v;
 
         /* renamed from: w  reason: collision with root package name */
-        public boolean f10626w;
+        public boolean f11203w;
 
         /* renamed from: x  reason: collision with root package name */
-        public boolean f10627x;
+        public boolean f11204x;
 
         /* renamed from: y  reason: collision with root package name */
-        public boolean f10628y;
+        public boolean f11205y;
 
         /* renamed from: z  reason: collision with root package name */
-        public boolean f10629z;
+        public boolean f11206z;
 
-        public C0177a(ImagePipelineConfig.Builder configBuilder) {
+        public C0154a(ImagePipelineConfig.Builder configBuilder) {
             Intrinsics.checkNotNullParameter(configBuilder, "configBuilder");
-            this.f10604a = configBuilder;
-            this.f10612i = 1000;
-            this.f10616m = RecyclerView.ItemAnimator.FLAG_MOVED;
+            this.f11181a = configBuilder;
+            this.f11189i = 1000;
+            this.f11193m = RecyclerView.ItemAnimator.FLAG_MOVED;
             Supplier a10 = m.a(Boolean.FALSE);
             Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-            this.f10623t = a10;
-            this.f10628y = true;
-            this.f10629z = true;
+            this.f11200t = a10;
+            this.f11205y = true;
+            this.f11206z = true;
             this.C = 20;
             this.I = 30;
             this.L = new f(false, false, 3, null);
         }
 
-        private final C0177a c(Function0 function0) {
+        private final C0154a c(Function0 function0) {
             function0.invoke();
             return this;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public static final Unit f(C0177a this$0, boolean z10) {
+        public static final Unit f(C0154a this$0, boolean z10) {
             Intrinsics.checkNotNullParameter(this$0, "this$0");
             this$0.M = z10;
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public static final Unit h(C0177a this$0, boolean z10) {
+        public static final Unit h(C0154a this$0, boolean z10) {
             Intrinsics.checkNotNullParameter(this$0, "this$0");
-            this$0.f10622s = z10;
-            return Unit.f31765a;
+            this$0.f11199s = z10;
+            return Unit.f31987a;
         }
 
         public final a d() {
             return new a(this, null);
         }
 
-        public final C0177a e(final boolean z10) {
+        public final C0154a e(final boolean z10) {
             return c(new Function0() { // from class: oa.s
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit f10;
-                    f10 = a.C0177a.f(a.C0177a.this, z10);
+                    f10 = a.C0154a.f(a.C0154a.this, z10);
                     return f10;
                 }
             });
         }
 
-        public final C0177a g(final boolean z10) {
+        public final C0154a g(final boolean z10) {
             return c(new Function0() { // from class: oa.t
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit h10;
-                    h10 = a.C0177a.h(a.C0177a.this, z10);
+                    h10 = a.C0154a.h(a.C0154a.this, z10);
                     return h10;
                 }
             });
@@ -307,8 +307,8 @@ public final class a {
         x a(Context context, s8.a aVar, ra.c cVar, e eVar, DownsampleMode downsampleMode, boolean z10, boolean z11, n nVar, i iVar, l lVar, w wVar, w wVar2, Supplier supplier, k kVar, PlatformBitmapFactory platformBitmapFactory, int i10, int i11, boolean z12, int i12, oa.a aVar2, boolean z13, int i13);
     }
 
-    public /* synthetic */ a(C0177a c0177a, DefaultConstructorMarker defaultConstructorMarker) {
-        this(c0177a);
+    public /* synthetic */ a(C0154a c0154a, DefaultConstructorMarker defaultConstructorMarker) {
+        this(c0154a);
     }
 
     public final boolean A() {
@@ -316,47 +316,47 @@ public final class a {
     }
 
     public final boolean B() {
-        return this.f10579b;
+        return this.f11156b;
     }
 
     public final boolean C() {
-        return this.f10603z;
+        return this.f11180z;
     }
 
     public final boolean D() {
-        return this.f10600w;
+        return this.f11177w;
     }
 
     public final boolean E() {
-        return this.f10602y;
+        return this.f11179y;
     }
 
     public final boolean F() {
-        return this.f10601x;
+        return this.f11178x;
     }
 
     public final boolean G() {
-        return this.f10596s;
+        return this.f11173s;
     }
 
     public final boolean H() {
-        return this.f10593p;
+        return this.f11170p;
     }
 
     public final Supplier I() {
-        return this.f10592o;
+        return this.f11169o;
     }
 
     public final boolean J() {
-        return this.f10589l;
+        return this.f11166l;
     }
 
     public final boolean K() {
-        return this.f10590m;
+        return this.f11167m;
     }
 
     public final boolean L() {
-        return this.f10578a;
+        return this.f11155a;
     }
 
     public final boolean a() {
@@ -372,19 +372,19 @@ public final class a {
     }
 
     public final int d() {
-        return this.f10584g;
+        return this.f11161g;
     }
 
     public final boolean e() {
-        return this.f10587j;
+        return this.f11164j;
     }
 
     public final int f() {
-        return this.f10586i;
+        return this.f11163i;
     }
 
     public final int g() {
-        return this.f10585h;
+        return this.f11162h;
     }
 
     public final boolean h() {
@@ -392,11 +392,11 @@ public final class a {
     }
 
     public final boolean i() {
-        return this.f10599v;
+        return this.f11176v;
     }
 
     public final boolean j() {
-        return this.f10594q;
+        return this.f11171q;
     }
 
     public final boolean k() {
@@ -404,15 +404,15 @@ public final class a {
     }
 
     public final boolean l() {
-        return this.f10598u;
+        return this.f11175u;
     }
 
     public final int m() {
-        return this.f10588k;
+        return this.f11165k;
     }
 
     public final long n() {
-        return this.f10597t;
+        return this.f11174t;
     }
 
     public final f o() {
@@ -420,7 +420,7 @@ public final class a {
     }
 
     public final d p() {
-        return this.f10591n;
+        return this.f11168n;
     }
 
     public final boolean q() {
@@ -436,7 +436,7 @@ public final class a {
     }
 
     public final Supplier t() {
-        return this.f10595r;
+        return this.f11172r;
     }
 
     public final int u() {
@@ -444,69 +444,69 @@ public final class a {
     }
 
     public final boolean v() {
-        return this.f10583f;
+        return this.f11160f;
     }
 
     public final boolean w() {
-        return this.f10582e;
+        return this.f11159e;
     }
 
     public final boolean x() {
-        return this.f10581d;
+        return this.f11158d;
     }
 
     public final y8.b y() {
-        return this.f10580c;
+        return this.f11157c;
     }
 
     public final b.a z() {
         return null;
     }
 
-    private a(C0177a c0177a) {
-        this.f10578a = c0177a.f10606c;
-        this.f10579b = c0177a.f10607d;
-        this.f10580c = c0177a.f10608e;
-        this.f10581d = c0177a.f10609f;
-        this.f10582e = c0177a.f10610g;
-        this.f10583f = c0177a.f10611h;
-        this.f10584g = c0177a.f10612i;
-        this.f10585h = c0177a.f10613j;
-        this.f10586i = c0177a.f10614k;
-        this.f10587j = c0177a.f10615l;
-        this.f10588k = c0177a.f10616m;
-        this.f10589l = c0177a.f10617n;
-        this.f10590m = c0177a.f10618o;
-        d dVar = c0177a.f10619p;
-        this.f10591n = dVar == null ? new c() : dVar;
-        Supplier BOOLEAN_FALSE = c0177a.f10620q;
+    private a(C0154a c0154a) {
+        this.f11155a = c0154a.f11183c;
+        this.f11156b = c0154a.f11184d;
+        this.f11157c = c0154a.f11185e;
+        this.f11158d = c0154a.f11186f;
+        this.f11159e = c0154a.f11187g;
+        this.f11160f = c0154a.f11188h;
+        this.f11161g = c0154a.f11189i;
+        this.f11162h = c0154a.f11190j;
+        this.f11163i = c0154a.f11191k;
+        this.f11164j = c0154a.f11192l;
+        this.f11165k = c0154a.f11193m;
+        this.f11166l = c0154a.f11194n;
+        this.f11167m = c0154a.f11195o;
+        d dVar = c0154a.f11196p;
+        this.f11168n = dVar == null ? new c() : dVar;
+        Supplier BOOLEAN_FALSE = c0154a.f11197q;
         if (BOOLEAN_FALSE == null) {
-            BOOLEAN_FALSE = m.f43065b;
+            BOOLEAN_FALSE = m.f41523b;
             Intrinsics.checkNotNullExpressionValue(BOOLEAN_FALSE, "BOOLEAN_FALSE");
         }
-        this.f10592o = BOOLEAN_FALSE;
-        this.f10593p = c0177a.f10621r;
-        this.f10594q = c0177a.f10622s;
-        this.f10595r = c0177a.f10623t;
-        this.f10596s = c0177a.f10624u;
-        this.f10597t = c0177a.f10625v;
-        this.f10598u = c0177a.f10626w;
-        this.f10599v = c0177a.f10627x;
-        this.f10600w = c0177a.f10628y;
-        this.f10601x = c0177a.f10629z;
-        this.f10602y = c0177a.A;
-        this.f10603z = c0177a.B;
-        this.A = c0177a.C;
-        this.G = c0177a.H;
-        this.I = c0177a.I;
-        this.B = c0177a.D;
-        this.C = c0177a.E;
-        this.D = c0177a.F;
-        this.E = c0177a.G;
-        this.F = c0177a.f10605b;
-        this.H = c0177a.J;
-        this.J = c0177a.K;
-        this.K = c0177a.L;
-        this.L = c0177a.M;
+        this.f11169o = BOOLEAN_FALSE;
+        this.f11170p = c0154a.f11198r;
+        this.f11171q = c0154a.f11199s;
+        this.f11172r = c0154a.f11200t;
+        this.f11173s = c0154a.f11201u;
+        this.f11174t = c0154a.f11202v;
+        this.f11175u = c0154a.f11203w;
+        this.f11176v = c0154a.f11204x;
+        this.f11177w = c0154a.f11205y;
+        this.f11178x = c0154a.f11206z;
+        this.f11179y = c0154a.A;
+        this.f11180z = c0154a.B;
+        this.A = c0154a.C;
+        this.G = c0154a.H;
+        this.I = c0154a.I;
+        this.B = c0154a.D;
+        this.C = c0154a.E;
+        this.D = c0154a.F;
+        this.E = c0154a.G;
+        this.F = c0154a.f11182b;
+        this.H = c0154a.J;
+        this.J = c0154a.K;
+        this.K = c0154a.L;
+        this.L = c0154a.M;
     }
 }

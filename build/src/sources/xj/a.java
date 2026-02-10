@@ -1,57 +1,25 @@
 package xj;
 
-import android.graphics.Matrix;
-import android.graphics.Point;
-import android.graphics.Rect;
-import bk.b;
-import hf.q;
+import hf.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class a {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final yj.a f55043a;
-
     /* renamed from: b  reason: collision with root package name */
-    private final Rect f55044b;
+    private static final i f54867b = new i("ModelFileHelper", "");
 
     /* renamed from: c  reason: collision with root package name */
-    private final Point[] f55045c;
+    public static final String f54868c = String.format("com.google.mlkit.%s.models", "translate");
 
-    public a(yj.a aVar, Matrix matrix) {
-        this.f55043a = (yj.a) q.l(aVar);
-        Rect a10 = aVar.a();
-        if (a10 != null && matrix != null) {
-            b.e(a10, matrix);
-        }
-        this.f55044b = a10;
-        Point[] d10 = aVar.d();
-        if (d10 != null && matrix != null) {
-            b.b(d10, matrix);
-        }
-        this.f55045c = d10;
-    }
+    /* renamed from: d  reason: collision with root package name */
+    public static final String f54869d = String.format("com.google.mlkit.%s.models", "custom");
 
-    public Rect a() {
-        return this.f55044b;
-    }
+    /* renamed from: e  reason: collision with root package name */
+    static final String f54870e = String.format("com.google.mlkit.%s.models", "base");
 
-    public Point[] b() {
-        return this.f55045c;
-    }
+    /* renamed from: a  reason: collision with root package name */
+    private final wj.i f54871a;
 
-    public int c() {
-        int format = this.f55043a.getFormat();
-        if (format > 4096 || format == 0) {
-            return -1;
-        }
-        return format;
-    }
-
-    public String d() {
-        return this.f55043a.b();
-    }
-
-    public int e() {
-        return this.f55043a.c();
+    public a(wj.i iVar) {
+        this.f54871a = iVar;
     }
 }

@@ -3,7 +3,7 @@ package yg;
 final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    int f55632a;
+    int f55563a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ d(c cVar) {

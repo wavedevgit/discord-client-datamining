@@ -33,8 +33,8 @@ public final class e {
         }
         float f10 = i10;
         float f11 = i11;
-        float max = Math.max(resizeOptions.f10486a / f10, resizeOptions.f10487b / f11);
-        float f12 = resizeOptions.f10488c;
+        float max = Math.max(resizeOptions.f11063a / f10, resizeOptions.f11064b / f11);
+        float f12 = resizeOptions.f11065c;
         if (f10 * max > f12) {
             max = f12 / f10;
         }
@@ -45,20 +45,20 @@ public final class e {
     }
 
     private final int c(k kVar) {
-        int l12 = kVar.l1();
-        if (l12 != 90 && l12 != 180 && l12 != 270) {
+        int q12 = kVar.q1();
+        if (q12 != 90 && q12 != 180 && q12 != 270) {
             return 0;
         }
-        return kVar.l1();
+        return kVar.q1();
     }
 
     public static final int d(RotationOptions rotationOptions, k encodedImage) {
         int i10;
         Intrinsics.checkNotNullParameter(rotationOptions, "rotationOptions");
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
-        int X0 = encodedImage.X0();
+        int c12 = encodedImage.c1();
         p8.e eVar = f530b;
-        int indexOf = eVar.indexOf(Integer.valueOf(X0));
+        int indexOf = eVar.indexOf(Integer.valueOf(c12));
         if (indexOf >= 0) {
             if (!rotationOptions.j()) {
                 i10 = rotationOptions.h();
@@ -96,7 +96,7 @@ public final class e {
         }
         int e10 = e(rotationOptions, encodedImage);
         boolean z11 = false;
-        if (f530b.contains(Integer.valueOf(encodedImage.X0()))) {
+        if (f530b.contains(Integer.valueOf(encodedImage.c1()))) {
             i10 = d(rotationOptions, encodedImage);
         } else {
             i10 = 0;
@@ -114,7 +114,7 @@ public final class e {
         } else {
             height = encodedImage.getHeight();
         }
-        int k10 = k(b(resizeOptions, width, height), resizeOptions.f10489d);
+        int k10 = k(b(resizeOptions, width, height), resizeOptions.f11066d);
         if (k10 > 8) {
             return 8;
         }
@@ -127,7 +127,7 @@ public final class e {
     public static final Matrix g(k encodedImage, RotationOptions rotationOptions) {
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
         Intrinsics.checkNotNullParameter(rotationOptions, "rotationOptions");
-        if (f530b.contains(Integer.valueOf(encodedImage.X0()))) {
+        if (f530b.contains(Integer.valueOf(encodedImage.c1()))) {
             return f529a.h(d(rotationOptions, encodedImage));
         }
         int e10 = e(rotationOptions, encodedImage);

@@ -27,7 +27,7 @@ public final class k {
     static {
         k[] a10 = a();
         f516p = a10;
-        f517q = yr.a.a(a10);
+        f517q = hs.a.a(a10);
     }
 
     private k(String str, int i10) {

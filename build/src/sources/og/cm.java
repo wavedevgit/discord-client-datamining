@@ -23,10 +23,10 @@ public final class cm extends a implements IInterface {
     }
 
     public final void X0() {
-        h(1, e());
+        i(1, e());
     }
 
     public final void Y0() {
-        h(2, e());
+        i(2, e());
     }
 }

@@ -3,33 +3,33 @@ package qe;
 final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public final a f45375a;
+    public final a f44043a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final a f45376b;
+    public final a f44044b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f45377c;
+    public final int f44045c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final boolean f45378d;
+    public final boolean f44046d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final b[] f45379a;
+        private final b[] f44047a;
 
         public a(b... bVarArr) {
-            this.f45379a = bVarArr;
+            this.f44047a = bVarArr;
         }
 
         public b a(int i10) {
-            return this.f45379a[i10];
+            return this.f44047a[i10];
         }
 
         public int b() {
-            return this.f45379a.length;
+            return this.f44047a.length;
         }
     }
 
@@ -37,33 +37,33 @@ final class e {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f45380a;
+        public final int f44048a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f45381b;
+        public final int f44049b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final float[] f45382c;
+        public final float[] f44050c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final float[] f45383d;
+        public final float[] f44051d;
 
         public b(int i10, float[] fArr, float[] fArr2, int i11) {
             boolean z10;
-            this.f45380a = i10;
+            this.f44048a = i10;
             if (fArr.length * 2 == fArr2.length * 3) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             oe.a.a(z10);
-            this.f45382c = fArr;
-            this.f45383d = fArr2;
-            this.f45381b = i11;
+            this.f44050c = fArr;
+            this.f44051d = fArr2;
+            this.f44049b = i11;
         }
 
         public int a() {
-            return this.f45382c.length / 3;
+            return this.f44050c.length / 3;
         }
     }
 
@@ -185,9 +185,9 @@ final class e {
     }
 
     public e(a aVar, a aVar2, int i10) {
-        this.f45375a = aVar;
-        this.f45376b = aVar2;
-        this.f45377c = i10;
-        this.f45378d = aVar == aVar2;
+        this.f44043a = aVar;
+        this.f44044b = aVar2;
+        this.f44045c = i10;
+        this.f44046d = aVar == aVar2;
     }
 }

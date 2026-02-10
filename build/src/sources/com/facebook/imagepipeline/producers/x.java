@@ -5,23 +5,23 @@ import android.util.Pair;
 public class x extends o0 {
 
     /* renamed from: f  reason: collision with root package name */
-    private final ma.k f11000f;
+    private final ma.k f11577f;
 
     public x(ma.k kVar, boolean z10, w0 w0Var) {
         super(w0Var, "EncodedCacheKeyMultiplexProducer", "multiplex_enc_cnt", z10);
-        this.f11000f = kVar;
+        this.f11577f = kVar;
     }
 
     @Override // com.facebook.imagepipeline.producers.o0
     /* renamed from: l */
     public ta.k g(ta.k kVar) {
-        return ta.k.g(kVar);
+        return ta.k.h(kVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.facebook.imagepipeline.producers.o0
     /* renamed from: m */
     public Pair j(ProducerContext producerContext) {
-        return Pair.create(this.f11000f.getEncodedCacheKey(producerContext.I(), producerContext.a()), producerContext.C0());
+        return Pair.create(this.f11577f.getEncodedCacheKey(producerContext.I(), producerContext.a()), producerContext.z0());
     }
 }

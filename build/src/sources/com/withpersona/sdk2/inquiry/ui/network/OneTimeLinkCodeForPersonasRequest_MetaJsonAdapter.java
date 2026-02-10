@@ -1,11 +1,11 @@
 package com.withpersona.sdk2.inquiry.ui.network;
 
-import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.ui.network.OneTimeLinkCodeForPersonasRequest;
+import dn.c;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class OneTimeLinkCodeForPersonasRequest_MetaJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19957a;
+    private final m.b f20837a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19958b;
+    private final h f20838b;
 
     public OneTimeLinkCodeForPersonasRequest_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("transitionParams");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19957a = a10;
+        this.f20837a = a10;
         h f10 = moshi.f(OneTimeLinkCodeForPersonasRequest.TransitionParams.class, x0.d(), "transitionParams");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19958b = f10;
+        this.f20838b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -36,13 +36,13 @@ public final class OneTimeLinkCodeForPersonasRequest_MetaJsonAdapter extends h {
         reader.u();
         OneTimeLinkCodeForPersonasRequest.TransitionParams transitionParams = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19957a);
+            int J = reader.J(this.f20837a);
             if (J != -1) {
-                if (J == 0 && (transitionParams = (OneTimeLinkCodeForPersonasRequest.TransitionParams) this.f19958b.fromJson(reader)) == null) {
+                if (J == 0 && (transitionParams = (OneTimeLinkCodeForPersonasRequest.TransitionParams) this.f20838b.fromJson(reader)) == null) {
                     throw c.x("transitionParams", "transitionParams", reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -58,9 +58,9 @@ public final class OneTimeLinkCodeForPersonasRequest_MetaJsonAdapter extends h {
     public void toJson(t writer, OneTimeLinkCodeForPersonasRequest.Meta meta) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (meta != null) {
-            writer.k();
+            writer.i();
             writer.J("transitionParams");
-            this.f19958b.toJson(writer, meta.a());
+            this.f20838b.toJson(writer, meta.a());
             writer.s();
             return;
         }

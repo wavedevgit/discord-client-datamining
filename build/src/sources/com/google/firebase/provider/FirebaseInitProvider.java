@@ -9,16 +9,16 @@ import android.net.Uri;
 import android.util.Log;
 import hf.q;
 import java.util.concurrent.atomic.AtomicBoolean;
-import si.e;
-import si.l;
+import ui.e;
+import ui.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class FirebaseInitProvider extends ContentProvider {
 
     /* renamed from: d  reason: collision with root package name */
-    private static l f16689d = l.e();
+    private static l f17438d = l.e();
 
     /* renamed from: e  reason: collision with root package name */
-    private static AtomicBoolean f16690e = new AtomicBoolean(false);
+    private static AtomicBoolean f17439e = new AtomicBoolean(false);
 
     private static void a(ProviderInfo providerInfo) {
         q.m(providerInfo, "FirebaseInitProvider ProviderInfo cannot be null.");
@@ -29,11 +29,11 @@ public class FirebaseInitProvider extends ContentProvider {
     }
 
     public static l b() {
-        return f16689d;
+        return f17438d;
     }
 
     public static boolean c() {
-        return f16690e.get();
+        return f17439e.get();
     }
 
     @Override // android.content.ContentProvider
@@ -60,16 +60,16 @@ public class FirebaseInitProvider extends ContentProvider {
     @Override // android.content.ContentProvider
     public boolean onCreate() {
         try {
-            f16690e.set(true);
+            f17439e.set(true);
             if (e.p(getContext()) == null) {
                 Log.i("FirebaseInitProvider", "FirebaseApp initialization unsuccessful");
             } else {
                 Log.i("FirebaseInitProvider", "FirebaseApp initialization successful");
             }
-            f16690e.set(false);
+            f17439e.set(false);
             return false;
         } catch (Throwable th2) {
-            f16690e.set(false);
+            f17439e.set(false);
             throw th2;
         }
     }

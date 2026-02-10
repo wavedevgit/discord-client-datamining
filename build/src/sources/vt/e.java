@@ -1,15 +1,39 @@
 package vt;
 
-import java.text.ParsePosition;
-import java.util.Locale;
-import st.o;
-import tt.g;
-import tt.m;
-import tt.t;
-import tt.v;
+import kotlin.Result;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface e extends t {
-    void q(o oVar, Appendable appendable, Locale locale, v vVar, m mVar);
+public abstract class e {
 
-    Object w(CharSequence charSequence, ParsePosition parsePosition, Locale locale, v vVar, m mVar, g gVar);
+    /* renamed from: a */
+    private static final int f51887a;
+
+    static {
+        Object b10;
+        int i10;
+        try {
+            Result.a aVar = Result.f31984e;
+            String property = System.getProperty("kotlinx.serialization.json.pool.size");
+            Intrinsics.checkNotNullExpressionValue(property, "getProperty(...)");
+            b10 = Result.b(StringsKt.toIntOrNull(property));
+        } catch (Throwable th2) {
+            Result.a aVar2 = Result.f31984e;
+            b10 = Result.b(kotlin.c.a(th2));
+        }
+        if (Result.g(b10)) {
+            b10 = null;
+        }
+        Integer num = (Integer) b10;
+        if (num != null) {
+            i10 = num.intValue();
+        } else {
+            i10 = 2097152;
+        }
+        f51887a = i10;
+    }
+
+    public static final /* synthetic */ int a() {
+        return f51887a;
+    }
 }

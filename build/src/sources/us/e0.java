@@ -1,15 +1,23 @@
 package us;
+
+import java.util.Collection;
+import kotlin.jvm.functions.Function0;
+import us.w0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e0 {
+public class e0 implements Function0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    public final String f51775a;
+    /* renamed from: d  reason: collision with root package name */
+    private final w0 f51028d;
 
-    public e0(String str) {
-        this.f51775a = str;
+    public e0(w0 w0Var) {
+        this.f51028d = w0Var;
     }
 
-    public String toString() {
-        return '<' + this.f51775a + '>';
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        Collection F;
+        F = w0.a.F(this.f51028d);
+        return F;
     }
 }

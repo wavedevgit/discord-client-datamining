@@ -5,16 +5,16 @@ import com.android.volley.b;
 public class p {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Object f8238a;
+    public final Object f8815a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final b.a f8239b;
+    public final b.a f8816b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final u f8240c;
+    public final u f8817c;
 
     /* renamed from: d  reason: collision with root package name */
-    public boolean f8241d;
+    public boolean f8818d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -27,10 +27,10 @@ public class p {
     }
 
     private p(Object obj, b.a aVar) {
-        this.f8241d = false;
-        this.f8238a = obj;
-        this.f8239b = aVar;
-        this.f8240c = null;
+        this.f8818d = false;
+        this.f8815a = obj;
+        this.f8816b = aVar;
+        this.f8817c = null;
     }
 
     public static p a(u uVar) {
@@ -42,16 +42,16 @@ public class p {
     }
 
     public boolean b() {
-        if (this.f8240c == null) {
+        if (this.f8817c == null) {
             return true;
         }
         return false;
     }
 
     private p(u uVar) {
-        this.f8241d = false;
-        this.f8238a = null;
-        this.f8239b = null;
-        this.f8240c = uVar;
+        this.f8818d = false;
+        this.f8815a = null;
+        this.f8816b = null;
+        this.f8817c = uVar;
     }
 }

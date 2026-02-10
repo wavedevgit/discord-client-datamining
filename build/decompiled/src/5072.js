@@ -19,12 +19,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.create;
     var1 = {};
     var5 = {
+        'flexDirection': 'column-reverse',
         'position': 'absolute',
         'top': 0,
         'left': 0,
-        'right': 0,
-        'zIndex': 9999,
-        'pointerEvents': 'box-none'
+        'right': 0
     };
     var1.container = var5;
     var1 = var3.bind(var4)(var1);

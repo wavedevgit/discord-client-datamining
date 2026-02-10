@@ -3,16 +3,16 @@ package j$.time.temporal;
 public final /* synthetic */ class m implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ int f29818a;
+    public final /* synthetic */ int f30618a;
 
     public /* synthetic */ m(int i10) {
-        this.f29818a = i10;
+        this.f30618a = i10;
     }
 
     @Override // j$.time.temporal.l
     public final k d(k kVar) {
         int g10 = kVar.g(a.DAY_OF_WEEK);
-        int i10 = this.f29818a;
+        int i10 = this.f30618a;
         if (g10 == i10) {
             return kVar;
         }

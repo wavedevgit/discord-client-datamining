@@ -10,34 +10,34 @@ import android.view.animation.DecelerateInterpolator;
 public class p extends n0 {
 
     /* renamed from: f0  reason: collision with root package name */
-    private static final TimeInterpolator f5460f0 = new DecelerateInterpolator();
+    private static final TimeInterpolator f5470f0 = new DecelerateInterpolator();
 
     /* renamed from: g0  reason: collision with root package name */
-    private static final TimeInterpolator f5461g0 = new AccelerateInterpolator();
+    private static final TimeInterpolator f5471g0 = new AccelerateInterpolator();
 
     /* renamed from: h0  reason: collision with root package name */
-    private static final g f5462h0 = new a();
+    private static final g f5472h0 = new a();
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final g f5463i0 = new b();
+    private static final g f5473i0 = new b();
 
     /* renamed from: j0  reason: collision with root package name */
-    private static final g f5464j0 = new c();
+    private static final g f5474j0 = new c();
 
     /* renamed from: k0  reason: collision with root package name */
-    private static final g f5465k0 = new d();
+    private static final g f5475k0 = new d();
 
     /* renamed from: l0  reason: collision with root package name */
-    private static final g f5466l0 = new e();
+    private static final g f5476l0 = new e();
 
     /* renamed from: m0  reason: collision with root package name */
-    private static final g f5467m0 = new f();
+    private static final g f5477m0 = new f();
 
     /* renamed from: d0  reason: collision with root package name */
-    private g f5468d0 = f5467m0;
+    private g f5478d0 = f5477m0;
 
     /* renamed from: e0  reason: collision with root package name */
-    private int f5469e0 = 80;
+    private int f5479e0 = 80;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends h {
@@ -156,81 +156,81 @@ public class p extends n0 {
     }
 
     public p(int i10) {
-        B0(i10);
+        D0(i10);
     }
 
-    private void u0(c0 c0Var) {
+    private void w0(c0 c0Var) {
         int[] iArr = new int[2];
-        c0Var.f5366b.getLocationOnScreen(iArr);
-        c0Var.f5365a.put("android:slide:screenPosition", iArr);
+        c0Var.f5376b.getLocationOnScreen(iArr);
+        c0Var.f5375a.put("android:slide:screenPosition", iArr);
     }
 
-    public void B0(int i10) {
+    @Override // androidx.transition.n0
+    public Animator A0(ViewGroup viewGroup, View view, c0 c0Var, c0 c0Var2) {
+        if (c0Var == null) {
+            return null;
+        }
+        int[] iArr = (int[]) c0Var.f5375a.get("android:slide:screenPosition");
+        return e0.a(view, c0Var, iArr[0], iArr[1], view.getTranslationX(), view.getTranslationY(), this.f5478d0.b(viewGroup, view), this.f5478d0.a(viewGroup, view), f5471g0, this);
+    }
+
+    public void D0(int i10) {
         if (i10 != 3) {
             if (i10 != 5) {
                 if (i10 != 48) {
                     if (i10 != 80) {
                         if (i10 != 8388611) {
                             if (i10 == 8388613) {
-                                this.f5468d0 = f5466l0;
+                                this.f5478d0 = f5476l0;
                             } else {
                                 throw new IllegalArgumentException("Invalid slide direction");
                             }
                         } else {
-                            this.f5468d0 = f5463i0;
+                            this.f5478d0 = f5473i0;
                         }
                     } else {
-                        this.f5468d0 = f5467m0;
+                        this.f5478d0 = f5477m0;
                     }
                 } else {
-                    this.f5468d0 = f5464j0;
+                    this.f5478d0 = f5474j0;
                 }
             } else {
-                this.f5468d0 = f5465k0;
+                this.f5478d0 = f5475k0;
             }
         } else {
-            this.f5468d0 = f5462h0;
+            this.f5478d0 = f5472h0;
         }
-        this.f5469e0 = i10;
+        this.f5479e0 = i10;
         o oVar = new o();
         oVar.j(i10);
-        q0(oVar);
+        s0(oVar);
     }
 
     @Override // androidx.transition.Transition
-    public boolean R() {
+    public boolean T() {
         return true;
     }
 
     @Override // androidx.transition.n0, androidx.transition.Transition
-    public void i(c0 c0Var) {
-        super.i(c0Var);
-        u0(c0Var);
+    public void h(c0 c0Var) {
+        super.h(c0Var);
+        w0(c0Var);
     }
 
     @Override // androidx.transition.n0, androidx.transition.Transition
     public void l(c0 c0Var) {
         super.l(c0Var);
-        u0(c0Var);
-    }
-
-    @Override // androidx.transition.n0
-    public Animator w0(ViewGroup viewGroup, View view, c0 c0Var, c0 c0Var2) {
-        if (c0Var2 == null) {
-            return null;
-        }
-        int[] iArr = (int[]) c0Var2.f5365a.get("android:slide:screenPosition");
-        float translationX = view.getTranslationX();
-        float translationY = view.getTranslationY();
-        return e0.a(view, c0Var2, iArr[0], iArr[1], this.f5468d0.b(viewGroup, view), this.f5468d0.a(viewGroup, view), translationX, translationY, f5460f0, this);
+        w0(c0Var);
     }
 
     @Override // androidx.transition.n0
     public Animator y0(ViewGroup viewGroup, View view, c0 c0Var, c0 c0Var2) {
-        if (c0Var == null) {
+        if (c0Var2 == null) {
             return null;
         }
-        int[] iArr = (int[]) c0Var.f5365a.get("android:slide:screenPosition");
-        return e0.a(view, c0Var, iArr[0], iArr[1], view.getTranslationX(), view.getTranslationY(), this.f5468d0.b(viewGroup, view), this.f5468d0.a(viewGroup, view), f5461g0, this);
+        int[] iArr = (int[]) c0Var2.f5375a.get("android:slide:screenPosition");
+        float translationX = view.getTranslationX();
+        float translationY = view.getTranslationY();
+        return e0.a(view, c0Var2, iArr[0], iArr[1], this.f5478d0.b(viewGroup, view), this.f5478d0.a(viewGroup, view), translationX, translationY, f5470f0, this);
     }
 }

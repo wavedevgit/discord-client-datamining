@@ -11,8 +11,8 @@ public interface a extends IInterface {
 
     /* renamed from: zf.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class AbstractBinderC0800a extends lg.b implements a {
-        public AbstractBinderC0800a() {
+    public static abstract class AbstractBinderC0801a extends lg.b implements a {
+        public AbstractBinderC0801a() {
             super("com.google.android.gms.identitycredentials.internal.IIdentityCredentialCallbacks");
         }
 
@@ -29,15 +29,15 @@ public interface a extends IInterface {
                             x0((Status) lg.c.a(parcel, Status.CREATOR), (k) lg.c.a(parcel, k.CREATOR));
                         } else {
                             f(parcel);
-                            o((Status) lg.c.a(parcel, Status.CREATOR), (i) lg.c.a(parcel, i.CREATOR));
+                            q((Status) lg.c.a(parcel, Status.CREATOR), (i) lg.c.a(parcel, i.CREATOR));
                         }
                     } else {
                         f(parcel);
-                        E0((Status) lg.c.a(parcel, Status.CREATOR), (yf.a) lg.c.a(parcel, yf.a.CREATOR));
+                        F0((Status) lg.c.a(parcel, Status.CREATOR), (yf.a) lg.c.a(parcel, yf.a.CREATOR));
                     }
                 } else {
                     f(parcel);
-                    a0((Status) lg.c.a(parcel, Status.CREATOR), (m) lg.c.a(parcel, m.CREATOR));
+                    c0((Status) lg.c.a(parcel, Status.CREATOR), (m) lg.c.a(parcel, m.CREATOR));
                 }
             } else {
                 f(parcel);
@@ -47,13 +47,13 @@ public interface a extends IInterface {
         }
     }
 
-    void E0(Status status, yf.a aVar);
-
     void F(Status status, yf.g gVar);
 
-    void a0(Status status, m mVar);
+    void F0(Status status, yf.a aVar);
 
-    void o(Status status, i iVar);
+    void c0(Status status, m mVar);
+
+    void q(Status status, i iVar);
 
     void x0(Status status, k kVar);
 }

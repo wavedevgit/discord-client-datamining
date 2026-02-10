@@ -1,18 +1,18 @@
 package com.discord.fastest_list.react_events;
 
+import as.v;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
-import gt.m;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import kt.v1;
 import org.jetbrains.annotations.NotNull;
-import rr.v;
+import qt.m;
+import tt.v1;
 @m
 @Metadata(d1 = {"\u0000R\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0006\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0081\b\u0018\u0000 *2\u00020\u0001:\u0002)*B'\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003¢\u0006\u0004\b\u0007\u0010\bB;\b\u0010\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\u0004\b\u0007\u0010\rJ\b\u0010\u0013\u001a\u00020\u0014H\u0016J\t\u0010\u0015\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0017\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0003HÆ\u0003J1\u0010\u0019\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u001a\u001a\u00020\u001b2\b\u0010\u001c\u001a\u0004\u0018\u00010\u001dHÖ\u0003J\t\u0010\u001e\u001a\u00020\nHÖ\u0001J\t\u0010\u001f\u001a\u00020 HÖ\u0001J%\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020\u00002\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020'H\u0001¢\u0006\u0002\b(R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000fR\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u000fR\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u000f¨\u0006+"}, d2 = {"Lcom/discord/fastest_list/react_events/OnLayoutEvent;", "Lcom/discord/reactevents/ReactEvent;", "x", "", "y", "width", "height", "<init>", "(FFFF)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IFFFFLkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getX", "()F", "getY", "getWidth", "getHeight", "serialize", "Lcom/facebook/react/bridge/WritableMap;", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "", "hashCode", "toString", "", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$fastest_list_release", "$serializer", "Companion", "fastest_list_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -23,10 +23,10 @@ public final class OnLayoutEvent implements ReactEvent {
     private final float width;
 
     /* renamed from: x  reason: collision with root package name */
-    private final float f9448x;
+    private final float f10025x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final float f9449y;
+    private final float f10026y;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/fastest_list/react_events/OnLayoutEvent$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/fastest_list/react_events/OnLayoutEvent;", "fastest_list_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -48,18 +48,18 @@ public final class OnLayoutEvent implements ReactEvent {
         if (15 != (i10 & 15)) {
             v1.b(i10, 15, OnLayoutEvent$$serializer.INSTANCE.getDescriptor());
         }
-        this.f9448x = f10;
-        this.f9449y = f11;
+        this.f10025x = f10;
+        this.f10026y = f11;
         this.width = f12;
         this.height = f13;
     }
 
     public static /* synthetic */ OnLayoutEvent copy$default(OnLayoutEvent onLayoutEvent, float f10, float f11, float f12, float f13, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            f10 = onLayoutEvent.f9448x;
+            f10 = onLayoutEvent.f10025x;
         }
         if ((i10 & 2) != 0) {
-            f11 = onLayoutEvent.f9449y;
+            f11 = onLayoutEvent.f10026y;
         }
         if ((i10 & 4) != 0) {
             f12 = onLayoutEvent.width;
@@ -71,18 +71,18 @@ public final class OnLayoutEvent implements ReactEvent {
     }
 
     public static final /* synthetic */ void write$Self$fastest_list_release(OnLayoutEvent onLayoutEvent, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.s(serialDescriptor, 0, onLayoutEvent.f9448x);
-        compositeEncoder.s(serialDescriptor, 1, onLayoutEvent.f9449y);
+        compositeEncoder.s(serialDescriptor, 0, onLayoutEvent.f10025x);
+        compositeEncoder.s(serialDescriptor, 1, onLayoutEvent.f10026y);
         compositeEncoder.s(serialDescriptor, 2, onLayoutEvent.width);
         compositeEncoder.s(serialDescriptor, 3, onLayoutEvent.height);
     }
 
     public final float component1() {
-        return this.f9448x;
+        return this.f10025x;
     }
 
     public final float component2() {
-        return this.f9449y;
+        return this.f10026y;
     }
 
     public final float component3() {
@@ -104,7 +104,7 @@ public final class OnLayoutEvent implements ReactEvent {
         }
         if (obj instanceof OnLayoutEvent) {
             OnLayoutEvent onLayoutEvent = (OnLayoutEvent) obj;
-            return Float.compare(this.f9448x, onLayoutEvent.f9448x) == 0 && Float.compare(this.f9449y, onLayoutEvent.f9449y) == 0 && Float.compare(this.width, onLayoutEvent.width) == 0 && Float.compare(this.height, onLayoutEvent.height) == 0;
+            return Float.compare(this.f10025x, onLayoutEvent.f10025x) == 0 && Float.compare(this.f10026y, onLayoutEvent.f10026y) == 0 && Float.compare(this.width, onLayoutEvent.width) == 0 && Float.compare(this.height, onLayoutEvent.height) == 0;
         }
         return false;
     }
@@ -118,35 +118,35 @@ public final class OnLayoutEvent implements ReactEvent {
     }
 
     public final float getX() {
-        return this.f9448x;
+        return this.f10025x;
     }
 
     public final float getY() {
-        return this.f9449y;
+        return this.f10026y;
     }
 
     public int hashCode() {
-        return (((((Float.hashCode(this.f9448x) * 31) + Float.hashCode(this.f9449y)) * 31) + Float.hashCode(this.width)) * 31) + Float.hashCode(this.height);
+        return (((((Float.hashCode(this.f10025x) * 31) + Float.hashCode(this.f10026y)) * 31) + Float.hashCode(this.width)) * 31) + Float.hashCode(this.height);
     }
 
     @Override // com.discord.reactevents.ReactEvent
     @NotNull
     public WritableMap serialize() {
-        return NativeMapExtensionsKt.nativeMapOf(v.a("layout", NativeMapExtensionsKt.nativeMapOf(v.a("x", Float.valueOf(this.f9448x)), v.a("y", Float.valueOf(this.f9449y)), v.a("width", Float.valueOf(this.width)), v.a("height", Float.valueOf(this.height)))));
+        return NativeMapExtensionsKt.nativeMapOf(v.a("layout", NativeMapExtensionsKt.nativeMapOf(v.a("x", Float.valueOf(this.f10025x)), v.a("y", Float.valueOf(this.f10026y)), v.a("width", Float.valueOf(this.width)), v.a("height", Float.valueOf(this.height)))));
     }
 
     @NotNull
     public String toString() {
-        float f10 = this.f9448x;
-        float f11 = this.f9449y;
+        float f10 = this.f10025x;
+        float f11 = this.f10026y;
         float f12 = this.width;
         float f13 = this.height;
         return "OnLayoutEvent(x=" + f10 + ", y=" + f11 + ", width=" + f12 + ", height=" + f13 + ")";
     }
 
     public OnLayoutEvent(float f10, float f11, float f12, float f13) {
-        this.f9448x = f10;
-        this.f9449y = f11;
+        this.f10025x = f10;
+        this.f10026y = f11;
         this.width = f12;
         this.height = f13;
     }

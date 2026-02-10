@@ -7,77 +7,77 @@ import java.util.List;
 public class FlexLine {
 
     /* renamed from: e  reason: collision with root package name */
-    int f13671e;
+    int f14248e;
 
     /* renamed from: f  reason: collision with root package name */
-    int f13672f;
+    int f14249f;
 
     /* renamed from: g  reason: collision with root package name */
-    int f13673g;
+    int f14250g;
 
     /* renamed from: h  reason: collision with root package name */
-    int f13674h;
+    int f14251h;
 
     /* renamed from: i  reason: collision with root package name */
-    int f13675i;
+    int f14252i;
 
     /* renamed from: j  reason: collision with root package name */
-    float f13676j;
+    float f14253j;
 
     /* renamed from: k  reason: collision with root package name */
-    float f13677k;
+    float f14254k;
 
     /* renamed from: l  reason: collision with root package name */
-    int f13678l;
+    int f14255l;
 
     /* renamed from: m  reason: collision with root package name */
-    int f13679m;
+    int f14256m;
 
     /* renamed from: o  reason: collision with root package name */
-    int f13681o;
+    int f14258o;
 
     /* renamed from: p  reason: collision with root package name */
-    int f13682p;
+    int f14259p;
 
     /* renamed from: q  reason: collision with root package name */
-    boolean f13683q;
+    boolean f14260q;
 
     /* renamed from: r  reason: collision with root package name */
-    boolean f13684r;
+    boolean f14261r;
 
     /* renamed from: a  reason: collision with root package name */
-    int f13667a = Integer.MAX_VALUE;
+    int f14244a = Integer.MAX_VALUE;
 
     /* renamed from: b  reason: collision with root package name */
-    int f13668b = Integer.MAX_VALUE;
+    int f14245b = Integer.MAX_VALUE;
 
     /* renamed from: c  reason: collision with root package name */
-    int f13669c = Integer.MIN_VALUE;
+    int f14246c = Integer.MIN_VALUE;
 
     /* renamed from: d  reason: collision with root package name */
-    int f13670d = Integer.MIN_VALUE;
+    int f14247d = Integer.MIN_VALUE;
 
     /* renamed from: n  reason: collision with root package name */
-    List f13680n = new ArrayList();
+    List f14257n = new ArrayList();
 
     public int a() {
-        return this.f13673g;
+        return this.f14250g;
     }
 
     public int b() {
-        return this.f13674h;
+        return this.f14251h;
     }
 
     public int c() {
-        return this.f13674h - this.f13675i;
+        return this.f14251h - this.f14252i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d(View view, int i10, int i11, int i12, int i13) {
         b bVar = (b) view.getLayoutParams();
-        this.f13667a = Math.min(this.f13667a, (view.getLeft() - bVar.z1()) - i10);
-        this.f13668b = Math.min(this.f13668b, (view.getTop() - bVar.C()) - i11);
-        this.f13669c = Math.max(this.f13669c, view.getRight() + bVar.W1() + i12);
-        this.f13670d = Math.max(this.f13670d, view.getBottom() + bVar.w1() + i13);
+        this.f14244a = Math.min(this.f14244a, (view.getLeft() - bVar.E1()) - i10);
+        this.f14245b = Math.min(this.f14245b, (view.getTop() - bVar.Z()) - i11);
+        this.f14246c = Math.max(this.f14246c, view.getRight() + bVar.c2() + i12);
+        this.f14247d = Math.max(this.f14247d, view.getBottom() + bVar.B1() + i13);
     }
 }

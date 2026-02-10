@@ -5,9 +5,9 @@ import x4.r;
 public final class a extends r.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f54595a;
+    private final String f54327a;
 
     public a(String str) {
-        this.f54595a = str;
+        this.f54327a = str;
     }
 }

@@ -1,96 +1,53 @@
 package kt;
 
+import java.util.ArrayList;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Ref;
-import kotlin.reflect.KClass;
-import kotlinx.serialization.DeserializationStrategy;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.CompositeEncoder;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import kotlinx.serialization.encoding.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b implements KSerializer {
-    /* JADX INFO: Access modifiers changed from: private */
-    public final Object b(kotlinx.serialization.encoding.c cVar) {
-        return c.a.c(cVar, getDescriptor(), 1, gt.h.b(this, cVar, cVar.m(getDescriptor(), 0)), null, 8, null);
-    }
+public interface b extends o {
 
-    public gt.o c(Encoder encoder, Object value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        return encoder.a().e(e(), value);
-    }
-
-    public DeserializationStrategy d(kotlinx.serialization.encoding.c decoder, String str) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return decoder.a().f(e(), str);
-    }
-
-    /* JADX WARN: Type inference failed for: r3v2, types: [T, java.lang.String] */
-    @Override // kotlinx.serialization.DeserializationStrategy
-    public final Object deserialize(Decoder decoder) {
-        Object obj;
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        SerialDescriptor descriptor = getDescriptor();
-        kotlinx.serialization.encoding.c b10 = decoder.b(descriptor);
-        Ref.ObjectRef objectRef = new Ref.ObjectRef();
-        if (b10.p()) {
-            obj = b(b10);
-        } else {
-            Object obj2 = null;
-            while (true) {
-                int o10 = b10.o(getDescriptor());
-                if (o10 != -1) {
-                    if (o10 != 0) {
-                        if (o10 != 1) {
-                            StringBuilder sb2 = new StringBuilder();
-                            sb2.append("Invalid index in polymorphic deserialization of ");
-                            String str = (String) objectRef.element;
-                            if (str == null) {
-                                str = "unknown class";
-                            }
-                            sb2.append(str);
-                            sb2.append("\n Expected 0, 1 or DECODE_DONE(-1), but found ");
-                            sb2.append(o10);
-                            throw new gt.n(sb2.toString());
-                        }
-                        T t10 = objectRef.element;
-                        if (t10 != 0) {
-                            objectRef.element = t10;
-                            obj2 = c.a.c(b10, getDescriptor(), o10, gt.h.b(this, b10, (String) t10), null, 8, null);
-                        } else {
-                            throw new IllegalArgumentException("Cannot read polymorphic value before its type token");
-                        }
-                    } else {
-                        objectRef.element = b10.m(getDescriptor(), o10);
-                    }
-                } else if (obj2 != null) {
-                    Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type T of kotlinx.serialization.internal.AbstractPolymorphicSerializer");
-                    obj = obj2;
-                } else {
-                    throw new IllegalArgumentException(("Polymorphic value has not been read for class " + ((String) objectRef.element)).toString());
-                }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static void a(b bVar, Function1[] otherFormats, Function1 mainFormat) {
+            Intrinsics.checkNotNullParameter(otherFormats, "otherFormats");
+            Intrinsics.checkNotNullParameter(mainFormat, "mainFormat");
+            ArrayList arrayList = new ArrayList(otherFormats.length);
+            for (Function1 function1 : otherFormats) {
+                b g10 = bVar.g();
+                function1.invoke(g10);
+                arrayList.add(g10.a().b());
             }
+            b g11 = bVar.g();
+            mainFormat.invoke(g11);
+            bVar.a().a(new mt.c(g11.a().b(), arrayList));
         }
-        b10.c(descriptor);
-        return obj;
+
+        public static void b(b bVar, String onZero, Function1 format) {
+            Intrinsics.checkNotNullParameter(onZero, "onZero");
+            Intrinsics.checkNotNullParameter(format, "format");
+            mt.d a10 = bVar.a();
+            b g10 = bVar.g();
+            format.invoke(g10);
+            Unit unit = Unit.f31987a;
+            a10.a(new mt.t(onZero, g10.a().b()));
+        }
+
+        public static mt.f c(b bVar) {
+            return new mt.f(bVar.a().b().c());
+        }
+
+        public static void d(b bVar, String value) {
+            Intrinsics.checkNotNullParameter(value, "value");
+            bVar.a().a(new mt.j(value));
+        }
     }
 
-    public abstract KClass e();
+    mt.d a();
 
-    @Override // gt.o
-    public final void serialize(Encoder encoder, Object value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        gt.o a10 = gt.h.a(this, encoder, value);
-        SerialDescriptor descriptor = getDescriptor();
-        CompositeEncoder b10 = encoder.b(descriptor);
-        b10.y(getDescriptor(), 0, a10.getDescriptor().h());
-        SerialDescriptor descriptor2 = getDescriptor();
-        Intrinsics.checkNotNull(a10, "null cannot be cast to non-null type kotlinx.serialization.SerializationStrategy<T of kotlinx.serialization.internal.Platform_commonKt.cast>");
-        b10.F(descriptor2, 1, a10, value);
-        b10.c(descriptor);
-    }
+    void b(String str, Function1 function1);
+
+    void e(Function1[] function1Arr, Function1 function1);
+
+    b g();
 }

@@ -11,11 +11,11 @@ public interface n {
     public static class a extends IOException {
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f49717d;
+        public final int f48033d;
 
         public a(Throwable th2, int i10) {
             super(th2);
-            this.f49717d = i10;
+            this.f48033d = i10;
         }
     }
 

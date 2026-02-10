@@ -42,25 +42,25 @@ public final class MediaPlayerManagerModule$onMediaPlayerViewWillAppear$1 extend
     public final Object invokeSuspend(Object obj) {
         ReactEvents reactEvents;
         ReactApplicationContext reactApplicationContext;
-        xr.b.f();
+        gs.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             reactEvents = this.this$0.reactEvents;
             reactApplicationContext = this.this$0.reactContext;
-            String m1064toStringimpl = ChannelId.m1064toStringimpl(this.$channelId);
+            String m1065toStringimpl = ChannelId.m1065toStringimpl(this.$channelId);
             MediaSource[] mediaSourceArr = this.$mediaSources;
             ArrayList arrayList = new ArrayList(mediaSourceArr.length);
             for (MediaSource mediaSource : mediaSourceArr) {
                 arrayList.add(MediaPlayerPlaybackSource.Companion.createId(mediaSource));
             }
-            reactEvents.emitModuleEvent(reactApplicationContext, new MediaPlayerViewWillAppear(m1064toStringimpl, arrayList));
-            return Unit.f31765a;
+            reactEvents.emitModuleEvent(reactApplicationContext, new MediaPlayerViewWillAppear(m1065toStringimpl, arrayList));
+            return Unit.f31987a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManagerModule$onMediaPlayerViewWillAppear$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
+        return ((MediaPlayerManagerModule$onMediaPlayerViewWillAppear$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
     }
 }

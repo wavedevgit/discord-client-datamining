@@ -198,7 +198,7 @@ public abstract class ChatListAdapterUpdateLogItem {
                     if (i10 == 3) {
                         str = "PortalViewUpdateType.REMOVE";
                     } else {
-                        throw new rr.p();
+                        throw new as.p();
                     }
                 } else {
                     str = "PortalViewUpdateType.CHANGE";

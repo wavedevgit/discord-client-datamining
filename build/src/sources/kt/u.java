@@ -1,35 +1,53 @@
 package kt;
-
-import java.util.concurrent.ConcurrentHashMap;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.reflect.KClass;
-import kotlinx.serialization.KSerializer;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class u implements k2 {
+public final class u extends mt.c0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Function1 f35220a;
+    /* renamed from: e  reason: collision with root package name */
+    private final h0 f35309e;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final ConcurrentHashMap f35221b;
-
-    public u(Function1 compute) {
-        Intrinsics.checkNotNullParameter(compute, "compute");
-        this.f35220a = compute;
-        this.f35221b = new ConcurrentHashMap();
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public u(kt.h0 r5) {
+        /*
+            r4 = this;
+            java.lang.String r0 = "padding"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
+            kt.l0 r0 = kt.l0.f35253a
+            mt.b0 r0 = r0.b()
+            kt.h0 r1 = kt.h0.f35200e
+            r2 = 2
+            if (r5 != r1) goto L12
+            r1 = r2
+            goto L13
+        L12:
+            r1 = 1
+        L13:
+            kt.h0 r3 = kt.h0.f35201i
+            if (r5 != r3) goto L1c
+            java.lang.Integer r2 = java.lang.Integer.valueOf(r2)
+            goto L1d
+        L1c:
+            r2 = 0
+        L1d:
+            r4.<init>(r0, r1, r2)
+            r4.f35309e = r5
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: kt.u.<init>(kt.h0):void");
     }
 
-    @Override // kt.k2
-    public KSerializer a(KClass key) {
-        Object putIfAbsent;
-        Intrinsics.checkNotNullParameter(key, "key");
-        ConcurrentHashMap concurrentHashMap = this.f35221b;
-        Class b10 = es.a.b(key);
-        Object obj = concurrentHashMap.get(b10);
-        if (obj == null && (putIfAbsent = concurrentHashMap.putIfAbsent(b10, (obj = new k((KSerializer) this.f35220a.invoke(key))))) != null) {
-            obj = putIfAbsent;
+    public boolean equals(Object obj) {
+        if ((obj instanceof u) && this.f35309e == ((u) obj).f35309e) {
+            return true;
         }
-        return ((k) obj).f35163a;
+        return false;
+    }
+
+    public int hashCode() {
+        return this.f35309e.hashCode();
     }
 }

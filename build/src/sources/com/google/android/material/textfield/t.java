@@ -5,7 +5,6 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.ImageView;
-import androidx.core.view.h0;
 import com.google.android.material.internal.CheckableImageButton;
 import java.util.Arrays;
 /* JADX INFO: Access modifiers changed from: package-private */
@@ -17,12 +16,12 @@ public abstract class t {
         if (drawable != null) {
             drawable = s1.a.r(drawable).mutate();
             if (colorStateList != null && colorStateList.isStateful()) {
-                s1.a.o(drawable, ColorStateList.valueOf(colorStateList.getColorForState(c(textInputLayout, checkableImageButton), colorStateList.getDefaultColor())));
+                drawable.setTintList(ColorStateList.valueOf(colorStateList.getColorForState(c(textInputLayout, checkableImageButton), colorStateList.getDefaultColor())));
             } else {
-                s1.a.o(drawable, colorStateList);
+                drawable.setTintList(colorStateList);
             }
             if (mode != null) {
-                s1.a.p(drawable, mode);
+                drawable.setTintMode(mode);
             }
         }
         if (checkableImageButton.getDrawable() != drawable) {
@@ -68,7 +67,7 @@ public abstract class t {
         if (checkableImageButton.getDrawable() != null && colorStateList != null && colorStateList.isStateful()) {
             int colorForState = colorStateList.getColorForState(c(textInputLayout, checkableImageButton), colorStateList.getDefaultColor());
             Drawable mutate = s1.a.r(drawable).mutate();
-            s1.a.o(mutate, ColorStateList.valueOf(colorForState));
+            mutate.setTintList(ColorStateList.valueOf(colorForState));
             checkableImageButton.setImageDrawable(mutate);
         }
     }
@@ -79,7 +78,7 @@ public abstract class t {
 
     private static void f(CheckableImageButton checkableImageButton, View.OnLongClickListener onLongClickListener) {
         boolean z10;
-        boolean O = h0.O(checkableImageButton);
+        boolean hasOnClickListeners = checkableImageButton.hasOnClickListeners();
         boolean z11 = false;
         int i10 = 1;
         if (onLongClickListener != null) {
@@ -87,17 +86,17 @@ public abstract class t {
         } else {
             z10 = false;
         }
-        if (O || z10) {
+        if (hasOnClickListeners || z10) {
             z11 = true;
         }
         checkableImageButton.setFocusable(z11);
-        checkableImageButton.setClickable(O);
-        checkableImageButton.setPressable(O);
+        checkableImageButton.setClickable(hasOnClickListeners);
+        checkableImageButton.setPressable(hasOnClickListeners);
         checkableImageButton.setLongClickable(z10);
         if (!z11) {
             i10 = 2;
         }
-        h0.x0(checkableImageButton, i10);
+        checkableImageButton.setImportantForAccessibility(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

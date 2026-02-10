@@ -8,102 +8,102 @@ public final class sl extends jf.a {
     public static final Parcelable.Creator<sl> CREATOR = new tl();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f41327d;
+    private final int f39653d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f41328e;
+    private final String f39654e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f41329i;
+    private final String f39655i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final byte[] f41330o;
+    private final byte[] f39656o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Point[] f41331p;
+    private final Point[] f39657p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f41332q;
+    private final int f39658q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final kl f41333r;
+    private final kl f39659r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final nl f41334s;
+    private final nl f39660s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final ol f41335t;
+    private final ol f39661t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final rl f41336u;
+    private final rl f39662u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final pl f41337v;
+    private final pl f39663v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final ll f41338w;
+    private final ll f39664w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final hl f41339x;
+    private final hl f39665x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final il f41340y;
+    private final il f39666y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final jl f41341z;
+    private final jl f39667z;
 
     public sl(int i10, String str, String str2, byte[] bArr, Point[] pointArr, int i11, kl klVar, nl nlVar, ol olVar, rl rlVar, pl plVar, ll llVar, hl hlVar, il ilVar, jl jlVar) {
-        this.f41327d = i10;
-        this.f41328e = str;
-        this.f41329i = str2;
-        this.f41330o = bArr;
-        this.f41331p = pointArr;
-        this.f41332q = i11;
-        this.f41333r = klVar;
-        this.f41334s = nlVar;
-        this.f41335t = olVar;
-        this.f41336u = rlVar;
-        this.f41337v = plVar;
-        this.f41338w = llVar;
-        this.f41339x = hlVar;
-        this.f41340y = ilVar;
-        this.f41341z = jlVar;
+        this.f39653d = i10;
+        this.f39654e = str;
+        this.f39655i = str2;
+        this.f39656o = bArr;
+        this.f39657p = pointArr;
+        this.f39658q = i11;
+        this.f39659r = klVar;
+        this.f39660s = nlVar;
+        this.f39661t = olVar;
+        this.f39662u = rlVar;
+        this.f39663v = plVar;
+        this.f39664w = llVar;
+        this.f39665x = hlVar;
+        this.f39666y = ilVar;
+        this.f39667z = jlVar;
     }
 
     public final int b() {
-        return this.f41327d;
+        return this.f39653d;
     }
 
     public final int c() {
-        return this.f41332q;
+        return this.f39658q;
     }
 
     public final String d() {
-        return this.f41329i;
+        return this.f39655i;
     }
 
     public final Point[] e() {
-        return this.f41331p;
+        return this.f39657p;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = jf.c.a(parcel);
-        jf.c.l(parcel, 1, this.f41327d);
-        jf.c.s(parcel, 2, this.f41328e, false);
-        jf.c.s(parcel, 3, this.f41329i, false);
-        jf.c.f(parcel, 4, this.f41330o, false);
-        jf.c.v(parcel, 5, this.f41331p, i10, false);
-        jf.c.l(parcel, 6, this.f41332q);
-        jf.c.q(parcel, 7, this.f41333r, i10, false);
-        jf.c.q(parcel, 8, this.f41334s, i10, false);
-        jf.c.q(parcel, 9, this.f41335t, i10, false);
-        jf.c.q(parcel, 10, this.f41336u, i10, false);
-        jf.c.q(parcel, 11, this.f41337v, i10, false);
-        jf.c.q(parcel, 12, this.f41338w, i10, false);
-        jf.c.q(parcel, 13, this.f41339x, i10, false);
-        jf.c.q(parcel, 14, this.f41340y, i10, false);
-        jf.c.q(parcel, 15, this.f41341z, i10, false);
+        jf.c.l(parcel, 1, this.f39653d);
+        jf.c.s(parcel, 2, this.f39654e, false);
+        jf.c.s(parcel, 3, this.f39655i, false);
+        jf.c.f(parcel, 4, this.f39656o, false);
+        jf.c.v(parcel, 5, this.f39657p, i10, false);
+        jf.c.l(parcel, 6, this.f39658q);
+        jf.c.q(parcel, 7, this.f39659r, i10, false);
+        jf.c.q(parcel, 8, this.f39660s, i10, false);
+        jf.c.q(parcel, 9, this.f39661t, i10, false);
+        jf.c.q(parcel, 10, this.f39662u, i10, false);
+        jf.c.q(parcel, 11, this.f39663v, i10, false);
+        jf.c.q(parcel, 12, this.f39664w, i10, false);
+        jf.c.q(parcel, 13, this.f39665x, i10, false);
+        jf.c.q(parcel, 14, this.f39666y, i10, false);
+        jf.c.q(parcel, 15, this.f39667z, i10, false);
         jf.c.b(parcel, a10);
     }
 }

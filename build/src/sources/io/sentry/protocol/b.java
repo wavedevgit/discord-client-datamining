@@ -12,13 +12,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class b implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28694d;
+    private String f29629d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f28695e;
+    private String f29630e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f28696i;
+    private Map f29631i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -32,14 +32,14 @@ public final class b implements w1 {
                 String o02 = e3Var.o0();
                 o02.getClass();
                 if (o02.equals(StackTraceHelper.NAME_KEY)) {
-                    bVar.f28694d = e3Var.m1();
+                    bVar.f29629d = e3Var.r1();
                 } else if (o02.equals("version")) {
-                    bVar.f28695e = e3Var.m1();
+                    bVar.f29630e = e3Var.r1();
                 } else {
                     if (concurrentHashMap == null) {
                         concurrentHashMap = new ConcurrentHashMap();
                     }
-                    e3Var.p1(iLogger, concurrentHashMap, o02);
+                    e3Var.u1(iLogger, concurrentHashMap, o02);
                 }
             }
             bVar.c(concurrentHashMap);
@@ -52,7 +52,7 @@ public final class b implements w1 {
     }
 
     public void c(Map map) {
-        this.f28696i = map;
+        this.f29631i = map;
     }
 
     public boolean equals(Object obj) {
@@ -61,7 +61,7 @@ public final class b implements w1 {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (io.sentry.util.y.a(this.f28694d, bVar.f28694d) && io.sentry.util.y.a(this.f28695e, bVar.f28695e)) {
+            if (io.sentry.util.y.a(this.f29629d, bVar.f29629d) && io.sentry.util.y.a(this.f29630e, bVar.f29630e)) {
                 return true;
             }
         }
@@ -69,22 +69,22 @@ public final class b implements w1 {
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f28694d, this.f28695e);
+        return io.sentry.util.y.b(this.f29629d, this.f29630e);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f28694d != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28694d);
+        if (this.f29629d != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29629d);
         }
-        if (this.f28695e != null) {
-            f3Var.e("version").f(this.f28695e);
+        if (this.f29630e != null) {
+            f3Var.e("version").f(this.f29630e);
         }
-        Map map = this.f28696i;
+        Map map = this.f29631i;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28696i.get(str);
+                Object obj = this.f29631i.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -94,8 +94,8 @@ public final class b implements w1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(b bVar) {
-        this.f28694d = bVar.f28694d;
-        this.f28695e = bVar.f28695e;
-        this.f28696i = io.sentry.util.c.b(bVar.f28696i);
+        this.f29629d = bVar.f29629d;
+        this.f29630e = bVar.f29630e;
+        this.f29631i = io.sentry.util.c.b(bVar.f29631i);
     }
 }

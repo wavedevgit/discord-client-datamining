@@ -5,9 +5,9 @@ public interface b0 {
         return l7Var;
     }
 
-    SentryEvent g(SentryEvent sentryEvent, Hint hint);
+    SentryEvent h(SentryEvent sentryEvent, Hint hint);
 
-    default io.sentry.protocol.d0 k(io.sentry.protocol.d0 d0Var, Hint hint) {
+    default io.sentry.protocol.d0 i(io.sentry.protocol.d0 d0Var, Hint hint) {
         return d0Var;
     }
 }

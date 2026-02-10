@@ -45,7 +45,7 @@ public final class AttributeStyles_AddressTextStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 addressTextStyleContainer = (AttributeStyles.AddressTextStyleContainer) this.nullableAddressTextStyleContainerAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class AttributeStyles_AddressTextStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, AttributeStyles.AddressTextStyle addressTextStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (addressTextStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("expandButton");
             this.nullableAddressTextStyleContainerAdapter.toJson(writer, addressTextStyle.getExpandButton());
             writer.s();

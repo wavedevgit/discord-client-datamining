@@ -12,30 +12,30 @@ import com.facebook.react.views.view.ReactViewGroup;
 public class a extends ReactViewGroup {
 
     /* renamed from: d  reason: collision with root package name */
-    private Bitmap f42630d;
+    private Bitmap f41096d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f42631e;
+    private boolean f41097e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Paint f42632i;
+    private Paint f41098i;
 
     /* renamed from: o  reason: collision with root package name */
-    private PorterDuffXfermode f42633o;
+    private PorterDuffXfermode f41099o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f42634p;
+    private int f41100p;
 
     public a(Context context) {
         super(context);
-        this.f42630d = null;
-        this.f42631e = false;
-        this.f42634p = 2;
-        this.f42632i = new Paint(1);
-        this.f42633o = new PorterDuffXfermode(PorterDuff.Mode.DST_IN);
+        this.f41096d = null;
+        this.f41097e = false;
+        this.f41100p = 2;
+        this.f41098i = new Paint(1);
+        this.f41099o = new PorterDuffXfermode(PorterDuff.Mode.DST_IN);
     }
 
-    public static Bitmap c(View view) {
+    public static Bitmap d(View view) {
         view.layout(0, 0, view.getMeasuredWidth(), view.getMeasuredHeight());
         if (view.getMeasuredWidth() > 0 && view.getMeasuredHeight() > 0) {
             Bitmap createBitmap = Bitmap.createBitmap(view.getMeasuredWidth(), view.getMeasuredHeight(), Bitmap.Config.ARGB_8888);
@@ -45,15 +45,15 @@ public class a extends ReactViewGroup {
         return null;
     }
 
-    private void d() {
+    private void e() {
         View childAt = getChildAt(0);
         if (childAt != null) {
             childAt.setVisibility(0);
-            Bitmap bitmap = this.f42630d;
+            Bitmap bitmap = this.f41096d;
             if (bitmap != null) {
                 bitmap.recycle();
             }
-            this.f42630d = c(childAt);
+            this.f41096d = d(childAt);
             childAt.setVisibility(4);
         }
     }
@@ -62,15 +62,15 @@ public class a extends ReactViewGroup {
     @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup, android.view.View
     public void dispatchDraw(Canvas canvas) {
         super.dispatchDraw(canvas);
-        if (this.f42631e) {
-            d();
-            this.f42631e = false;
+        if (this.f41097e) {
+            e();
+            this.f41097e = false;
         }
-        if (this.f42630d != null) {
-            setLayerType(this.f42634p, this.f42632i);
-            this.f42632i.setXfermode(this.f42633o);
-            canvas.drawBitmap(this.f42630d, 0.0f, 0.0f, this.f42632i);
-            this.f42632i.setXfermode(null);
+        if (this.f41096d != null) {
+            setLayerType(this.f41100p, this.f41098i);
+            this.f41098i.setXfermode(this.f41099o);
+            canvas.drawBitmap(this.f41096d, 0.0f, 0.0f, this.f41098i);
+            this.f41098i.setXfermode(null);
         }
     }
 
@@ -78,15 +78,15 @@ public class a extends ReactViewGroup {
     @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup, android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        this.f42631e = true;
+        this.f41097e = true;
     }
 
     @Override // android.view.ViewGroup, android.view.ViewParent
     public void onDescendantInvalidated(View view, View view2) {
         View childAt;
         super.onDescendantInvalidated(view, view2);
-        if (!this.f42631e && (childAt = getChildAt(0)) != null && childAt.equals(view)) {
-            this.f42631e = true;
+        if (!this.f41097e && (childAt = getChildAt(0)) != null && childAt.equals(view)) {
+            this.f41097e = true;
         }
         invalidate();
     }
@@ -96,7 +96,7 @@ public class a extends ReactViewGroup {
     public void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         super.onLayout(z10, i10, i11, i12, i13);
         if (z10) {
-            this.f42631e = true;
+            this.f41097e = true;
         }
     }
 
@@ -107,6 +107,6 @@ public class a extends ReactViewGroup {
         } else {
             i10 = 2;
         }
-        this.f42634p = i10;
+        this.f41100p = i10;
     }
 }

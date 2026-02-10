@@ -1,88 +1,14 @@
 package pq;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.util.Date;
+import com.withpersona.sdk2.inquiry.network.dto.ui.components.Button;
+import com.withpersona.sdk2.inquiry.shared.ui.ButtonWithLoadingIndicator;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<b> CREATOR = new a();
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Date f44434d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final Date f44435e;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final b createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new b((Date) parcel.readSerializable(), (Date) parcel.readSerializable());
-        }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final b[] newArray(int i10) {
-            return new b[i10];
-        }
-    }
-
-    public b(Date date, Date date2) {
-        this.f44434d = date;
-        this.f44435e = date2;
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof b)) {
-            return false;
-        }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f44434d, bVar.f44434d) && Intrinsics.areEqual(this.f44435e, bVar.f44435e)) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        int hashCode;
-        Date date = this.f44434d;
-        int i10 = 0;
-        if (date == null) {
-            hashCode = 0;
-        } else {
-            hashCode = date.hashCode();
-        }
-        int i11 = hashCode * 31;
-        Date date2 = this.f44435e;
-        if (date2 != null) {
-            i10 = date2.hashCode();
-        }
-        return i11 + i10;
-    }
-
-    public String toString() {
-        Date date = this.f44434d;
-        Date date2 = this.f44435e;
-        return "CollectedGovernmentIdDetails(dateOfBirth=" + date + ", expirationDate=" + date2 + ")";
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeSerializable(this.f44434d);
-        dest.writeSerializable(this.f44435e);
+public abstract class b {
+    public static final ButtonWithLoadingIndicator a(a aVar, m5 uiComponentHelper, Button config) {
+        Intrinsics.checkNotNullParameter(aVar, "<this>");
+        Intrinsics.checkNotNullParameter(uiComponentHelper, "uiComponentHelper");
+        Intrinsics.checkNotNullParameter(config, "config");
+        return com.withpersona.sdk2.inquiry.steps.ui.components.f.f(aVar, uiComponentHelper, config);
     }
 }

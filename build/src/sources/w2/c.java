@@ -3,27 +3,27 @@ package w2;
 final class c extends n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f53076a;
+    private final Object f52105a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f53077b;
+    private final int f52106b;
 
     public c(Object obj, int i10) {
         super(null);
-        this.f53076a = obj;
-        this.f53077b = i10;
+        this.f52105a = obj;
+        this.f52106b = i10;
     }
 
     public final void a() {
         int i10;
-        Object obj = this.f53076a;
+        Object obj = this.f52105a;
         boolean z10 = false;
         if (obj != null) {
             i10 = obj.hashCode();
         } else {
             i10 = 0;
         }
-        if (i10 == this.f53077b) {
+        if (i10 == this.f52106b) {
             z10 = true;
         }
         if (z10) {
@@ -33,6 +33,6 @@ final class c extends n {
     }
 
     public final Object b() {
-        return this.f53076a;
+        return this.f52105a;
     }
 }

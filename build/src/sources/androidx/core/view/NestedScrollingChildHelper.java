@@ -6,22 +6,22 @@ import android.view.ViewParent;
 public class NestedScrollingChildHelper {
 
     /* renamed from: a  reason: collision with root package name */
-    private ViewParent f3395a;
+    private ViewParent f3398a;
 
     /* renamed from: b  reason: collision with root package name */
-    private ViewParent f3396b;
+    private ViewParent f3399b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final View f3397c;
+    private final View f3400c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f3398d;
+    private boolean f3401d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int[] f3399e;
+    private int[] f3402e;
 
     public NestedScrollingChildHelper(View view) {
-        this.f3397c = view;
+        this.f3400c = view;
     }
 
     private boolean h(int i10, int i11, int i12, int i13, int[] iArr, int i14, int[] iArr2) {
@@ -40,7 +40,7 @@ public class NestedScrollingChildHelper {
             return false;
         }
         if (iArr != null) {
-            this.f3397c.getLocationInWindow(iArr);
+            this.f3400c.getLocationInWindow(iArr);
             i16 = iArr[0];
             i17 = iArr[1];
         } else {
@@ -55,9 +55,9 @@ public class NestedScrollingChildHelper {
         } else {
             iArr3 = iArr2;
         }
-        p0.d(i15, this.f3397c, i10, i11, i12, i13, i14, iArr3);
+        q0.d(i15, this.f3400c, i10, i11, i12, i13, i14, iArr3);
         if (iArr != null) {
-            this.f3397c.getLocationInWindow(iArr);
+            this.f3400c.getLocationInWindow(iArr);
             iArr[0] = iArr[0] - i16;
             iArr[1] = iArr[1] - i17;
         }
@@ -69,16 +69,16 @@ public class NestedScrollingChildHelper {
             if (i10 != 1) {
                 return null;
             }
-            return this.f3396b;
+            return this.f3399b;
         }
-        return this.f3395a;
+        return this.f3398a;
     }
 
     private int[] j() {
-        if (this.f3399e == null) {
-            this.f3399e = new int[2];
+        if (this.f3402e == null) {
+            this.f3402e = new int[2];
         }
-        return this.f3399e;
+        return this.f3402e;
     }
 
     private void o(int i10, ViewParent viewParent) {
@@ -86,10 +86,10 @@ public class NestedScrollingChildHelper {
             if (i10 != 1) {
                 return;
             }
-            this.f3396b = viewParent;
+            this.f3399b = viewParent;
             return;
         }
-        this.f3395a = viewParent;
+        this.f3398a = viewParent;
     }
 
     public boolean a(float f10, float f11, boolean z10) {
@@ -97,7 +97,7 @@ public class NestedScrollingChildHelper {
         if (!m() || (i10 = i(0)) == null) {
             return false;
         }
-        return p0.a(i10, this.f3397c, f10, f11, z10);
+        return q0.a(i10, this.f3400c, f10, f11, z10);
     }
 
     public boolean b(float f10, float f11) {
@@ -105,7 +105,7 @@ public class NestedScrollingChildHelper {
         if (!m() || (i10 = i(0)) == null) {
             return false;
         }
-        return p0.b(i10, this.f3397c, f10, f11);
+        return q0.b(i10, this.f3400c, f10, f11);
     }
 
     public boolean c(int i10, int i11, int[] iArr, int[] iArr2) {
@@ -127,7 +127,7 @@ public class NestedScrollingChildHelper {
             return false;
         }
         if (iArr2 != null) {
-            this.f3397c.getLocationInWindow(iArr2);
+            this.f3400c.getLocationInWindow(iArr2);
             i14 = iArr2[0];
             i15 = iArr2[1];
         } else {
@@ -140,9 +140,9 @@ public class NestedScrollingChildHelper {
         int[] iArr3 = iArr;
         iArr3[0] = 0;
         iArr3[1] = 0;
-        p0.c(i13, this.f3397c, i10, i11, iArr3, i12);
+        q0.c(i13, this.f3400c, i10, i11, iArr3, i12);
         if (iArr2 != null) {
-            this.f3397c.getLocationInWindow(iArr2);
+            this.f3400c.getLocationInWindow(iArr2);
             iArr2[0] = iArr2[0] - i14;
             iArr2[1] = iArr2[1] - i15;
         }
@@ -176,14 +176,14 @@ public class NestedScrollingChildHelper {
     }
 
     public boolean m() {
-        return this.f3398d;
+        return this.f3401d;
     }
 
     public void n(boolean z10) {
-        if (this.f3398d) {
-            h0.O0(this.f3397c);
+        if (this.f3401d) {
+            i0.H0(this.f3400c);
         }
-        this.f3398d = z10;
+        this.f3401d = z10;
     }
 
     public boolean p(int i10) {
@@ -195,11 +195,11 @@ public class NestedScrollingChildHelper {
             return true;
         }
         if (m()) {
-            View view = this.f3397c;
-            for (ViewParent parent = this.f3397c.getParent(); parent != null; parent = parent.getParent()) {
-                if (p0.f(parent, view, this.f3397c, i10, i11)) {
+            View view = this.f3400c;
+            for (ViewParent parent = this.f3400c.getParent(); parent != null; parent = parent.getParent()) {
+                if (q0.f(parent, view, this.f3400c, i10, i11)) {
                     o(i11, parent);
-                    p0.e(parent, view, this.f3397c, i10, i11);
+                    q0.e(parent, view, this.f3400c, i10, i11);
                     return true;
                 }
                 if (parent instanceof View) {
@@ -218,7 +218,7 @@ public class NestedScrollingChildHelper {
     public void s(int i10) {
         ViewParent i11 = i(i10);
         if (i11 != null) {
-            p0.g(i11, this.f3397c, i10);
+            q0.g(i11, this.f3400c, i10);
             o(i10, null);
         }
     }

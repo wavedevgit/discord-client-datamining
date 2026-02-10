@@ -6,25 +6,25 @@ import com.discord.media.utils.DiscordVideoMediaSource;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Size f26623a = new Size(0, 0);
+    public static final Size f27742a = new Size(0, 0);
 
     /* renamed from: b  reason: collision with root package name */
-    public static final Size f26624b = new Size(320, 240);
+    public static final Size f27743b = new Size(320, 240);
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Size f26625c = new Size(DiscordVideoMediaSource.DEFAULT_WIDTH, DiscordVideoMediaSource.DEFAULT_HEIGHT);
+    public static final Size f27744c = new Size(DiscordVideoMediaSource.DEFAULT_WIDTH, DiscordVideoMediaSource.DEFAULT_HEIGHT);
 
     /* renamed from: d  reason: collision with root package name */
-    public static final Size f26626d = new Size(720, DiscordVideoMediaSource.DEFAULT_HEIGHT);
+    public static final Size f27745d = new Size(720, DiscordVideoMediaSource.DEFAULT_HEIGHT);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final Size f26627e = new Size(1280, 720);
+    public static final Size f27746e = new Size(1280, 720);
 
     /* renamed from: f  reason: collision with root package name */
-    public static final Size f26628f = new Size(1920, 1080);
+    public static final Size f27747f = new Size(1920, 1080);
 
     /* renamed from: g  reason: collision with root package name */
-    public static final Size f26629g = new Size(1920, 1440);
+    public static final Size f27748g = new Size(1920, 1440);
 
     public static int a(int i10, int i11) {
         return i10 * i11;

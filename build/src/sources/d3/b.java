@@ -6,38 +6,38 @@ import androidx.emoji2.text.n;
 final class b extends Editable.Factory {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f20484a = new Object();
+    private static final Object f21431a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile Editable.Factory f20485b;
+    private static volatile Editable.Factory f21432b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static Class f20486c;
+    private static Class f21433c;
 
     private b() {
         try {
-            f20486c = Class.forName("android.text.DynamicLayout$ChangeWatcher", false, b.class.getClassLoader());
+            f21433c = Class.forName("android.text.DynamicLayout$ChangeWatcher", false, b.class.getClassLoader());
         } catch (Throwable unused) {
         }
     }
 
     public static Editable.Factory getInstance() {
-        if (f20485b == null) {
-            synchronized (f20484a) {
+        if (f21432b == null) {
+            synchronized (f21431a) {
                 try {
-                    if (f20485b == null) {
-                        f20485b = new b();
+                    if (f21432b == null) {
+                        f21432b = new b();
                     }
                 } finally {
                 }
             }
         }
-        return f20485b;
+        return f21432b;
     }
 
     @Override // android.text.Editable.Factory
     public Editable newEditable(CharSequence charSequence) {
-        Class cls = f20486c;
+        Class cls = f21433c;
         if (cls != null) {
             return n.c(cls, charSequence);
         }

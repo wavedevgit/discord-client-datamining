@@ -13,18 +13,18 @@ public abstract class l {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final UUID f7475a;
+        private final UUID f8156a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f7476b;
+        private final int f8157b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final byte[] f7477c;
+        private final byte[] f8158c;
 
         public a(UUID uuid, int i10, byte[] bArr) {
-            this.f7475a = uuid;
-            this.f7476b = i10;
-            this.f7477c = bArr;
+            this.f8156a = uuid;
+            this.f8157b = i10;
+            this.f8158c = bArr;
         }
     }
 
@@ -108,17 +108,17 @@ public abstract class l {
         if (d10 == null) {
             return null;
         }
-        if (uuid.equals(d10.f7475a)) {
-            return d10.f7477c;
+        if (uuid.equals(d10.f8156a)) {
+            return d10.f8158c;
         }
-        y.i("PsshAtomUtil", "UUID mismatch. Expected: " + uuid + ", got: " + d10.f7475a + ".");
+        y.i("PsshAtomUtil", "UUID mismatch. Expected: " + uuid + ", got: " + d10.f8156a + ".");
         return null;
     }
 
     public static UUID f(byte[] bArr) {
         a d10 = d(bArr);
         if (d10 != null) {
-            return d10.f7475a;
+            return d10.f8156a;
         }
         return null;
     }
@@ -126,7 +126,7 @@ public abstract class l {
     public static int g(byte[] bArr) {
         a d10 = d(bArr);
         if (d10 != null) {
-            return d10.f7476b;
+            return d10.f8157b;
         }
         return -1;
     }

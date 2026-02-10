@@ -3,23 +3,23 @@ package o1;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f40129a = 2131951658;
+    public static int f38455a = 2131951657;
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f40130b = 2131951659;
+    public static int f38456b = 2131951658;
 
     /* renamed from: c  reason: collision with root package name */
-    public static int f40131c = 2131951660;
+    public static int f38457c = 2131951659;
 
     /* renamed from: d  reason: collision with root package name */
-    public static int f40132d = 2131951661;
+    public static int f38458d = 2131951660;
 
     /* renamed from: e  reason: collision with root package name */
-    public static int f40133e = 2131951662;
+    public static int f38459e = 2131951661;
 
     /* renamed from: f  reason: collision with root package name */
-    public static int f40134f = 2131951663;
+    public static int f38460f = 2131951662;
 
     /* renamed from: g  reason: collision with root package name */
-    public static int f40135g = 2131951664;
+    public static int f38461g = 2131951663;
 }

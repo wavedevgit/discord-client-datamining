@@ -46,7 +46,7 @@ public final class AttributeStyles_DateSelectBorderColorStyleJsonAdapter extends
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
@@ -60,7 +60,7 @@ public final class AttributeStyles_DateSelectBorderColorStyleJsonAdapter extends
     public void toJson(@NotNull t writer, AttributeStyles.DateSelectBorderColorStyle dateSelectBorderColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (dateSelectBorderColorStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableComplexElementColorAdapter.toJson(writer, dateSelectBorderColorStyle.getBase());
             writer.s();

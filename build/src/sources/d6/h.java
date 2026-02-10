@@ -18,24 +18,24 @@ import javax.net.ssl.SSLSocketFactory;
 public class h extends d6.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SSLSocketFactory f20535a;
+    private final SSLSocketFactory f21482a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a extends FilterInputStream {
 
         /* renamed from: d  reason: collision with root package name */
-        private final HttpURLConnection f20536d;
+        private final HttpURLConnection f21483d;
 
         a(HttpURLConnection httpURLConnection) {
             super(h.j(httpURLConnection));
-            this.f20536d = httpURLConnection;
+            this.f21483d = httpURLConnection;
         }
 
         @Override // java.io.FilterInputStream, java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
             super.close();
-            this.f20536d.disconnect();
+            this.f21483d.disconnect();
         }
     }
 
@@ -103,7 +103,7 @@ public class h extends d6.a {
         f10.setReadTimeout(timeoutMs);
         f10.setUseCaches(false);
         f10.setDoInput(true);
-        if ("https".equals(url.getProtocol()) && (sSLSocketFactory = this.f20535a) != null) {
+        if ("https".equals(url.getProtocol()) && (sSLSocketFactory = this.f21482a) != null) {
             ((HttpsURLConnection) f10).setSSLSocketFactory(sSLSocketFactory);
         }
         return f10;
@@ -200,6 +200,6 @@ public class h extends d6.a {
     }
 
     public h(b bVar, SSLSocketFactory sSLSocketFactory) {
-        this.f20535a = sSLSocketFactory;
+        this.f21482a = sSLSocketFactory;
     }
 }

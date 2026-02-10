@@ -46,7 +46,7 @@ public final class AttributeStyles_HorizontalStackAlignmentStyleJsonAdapter exte
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 position = (StyleElements.Position) this.nullablePositionAdapter.fromJson(reader);
@@ -60,7 +60,7 @@ public final class AttributeStyles_HorizontalStackAlignmentStyleJsonAdapter exte
     public void toJson(@NotNull t writer, AttributeStyles.HorizontalStackAlignmentStyle horizontalStackAlignmentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (horizontalStackAlignmentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullablePositionAdapter.toJson(writer, horizontalStackAlignmentStyle.getBase());
             writer.s();

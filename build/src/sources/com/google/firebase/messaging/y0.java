@@ -9,27 +9,27 @@ import java.util.concurrent.Executor;
 public final class y0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static WeakReference f16679d;
+    private static WeakReference f17428d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final SharedPreferences f16680a;
+    private final SharedPreferences f17429a;
 
     /* renamed from: b  reason: collision with root package name */
-    private u0 f16681b;
+    private u0 f17430b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Executor f16682c;
+    private final Executor f17431c;
 
     private y0(SharedPreferences sharedPreferences, Executor executor) {
-        this.f16682c = executor;
-        this.f16680a = sharedPreferences;
+        this.f17431c = executor;
+        this.f17429a = sharedPreferences;
     }
 
     public static synchronized y0 a(Context context, Executor executor) {
         y0 y0Var;
         synchronized (y0.class) {
             try {
-                WeakReference weakReference = f16679d;
+                WeakReference weakReference = f17428d;
                 if (weakReference != null) {
                     y0Var = (y0) weakReference.get();
                 } else {
@@ -38,7 +38,7 @@ public final class y0 {
                 if (y0Var == null) {
                     y0Var = new y0(context.getSharedPreferences("com.google.android.gms.appid", 0), executor);
                     y0Var.c();
-                    f16679d = new WeakReference(y0Var);
+                    f17428d = new WeakReference(y0Var);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -48,16 +48,16 @@ public final class y0 {
     }
 
     private synchronized void c() {
-        this.f16681b = u0.c(this.f16680a, "topic_operation_queue", ",", this.f16682c);
+        this.f17430b = u0.c(this.f17429a, "topic_operation_queue", ",", this.f17431c);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized x0 b() {
-        return x0.a(this.f16681b.e());
+        return x0.a(this.f17430b.e());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized boolean d(x0 x0Var) {
-        return this.f16681b.f(x0Var.e());
+        return this.f17430b.f(x0Var.e());
     }
 }

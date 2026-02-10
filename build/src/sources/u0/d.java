@@ -6,8 +6,8 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class d {
     public static final void a(b bVar, int i10) {
         Intrinsics.checkNotNullParameter(bVar, "<this>");
-        bVar.i(new int[i10]);
-        bVar.h(new Object[i10]);
+        bVar.j(new int[i10]);
+        bVar.i(new Object[i10]);
     }
 
     public static final int b(b bVar, int i10) {

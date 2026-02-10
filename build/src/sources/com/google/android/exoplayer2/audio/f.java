@@ -12,13 +12,13 @@ public interface f {
     public static final class b extends Exception {
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f12267d;
+        public final int f12844d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final boolean f12268e;
+        public final boolean f12845e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final Format f12269i;
+        public final Format f12846i;
 
         /* JADX WARN: Illegal instructions before constructor call */
         /*
@@ -56,9 +56,9 @@ public interface f {
                 r0.append(r5)
                 java.lang.String r5 = r0.toString()
                 r3.<init>(r5, r10)
-                r3.f12267d = r4
-                r3.f12268e = r9
-                r3.f12269i = r8
+                r3.f12844d = r4
+                r3.f12845e = r9
+                r3.f12846i = r8
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: com.google.android.exoplayer2.audio.f.b.<init>(int, int, int, int, com.google.android.exoplayer2.Format, boolean, java.lang.Exception):void");
@@ -88,15 +88,15 @@ public interface f {
     public static final class d extends Exception {
 
         /* renamed from: d  reason: collision with root package name */
-        public final long f12270d;
+        public final long f12847d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final long f12271e;
+        public final long f12848e;
 
         public d(long j10, long j11) {
             super("Unexpected audio track timestamp discontinuity: expected " + j11 + ", got " + j10);
-            this.f12270d = j10;
-            this.f12271e = j11;
+            this.f12847d = j10;
+            this.f12848e = j11;
         }
     }
 
@@ -104,19 +104,19 @@ public interface f {
     public static final class e extends Exception {
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f12272d;
+        public final int f12849d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final boolean f12273e;
+        public final boolean f12850e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final Format f12274i;
+        public final Format f12851i;
 
         public e(int i10, Format format, boolean z10) {
             super("AudioTrack write failed: " + i10);
-            this.f12273e = z10;
-            this.f12272d = i10;
-            this.f12274i = format;
+            this.f12850e = z10;
+            this.f12849d = i10;
+            this.f12851i = format;
         }
     }
 
@@ -181,16 +181,16 @@ public interface f {
     public static final class a extends Exception {
 
         /* renamed from: d  reason: collision with root package name */
-        public final Format f12266d;
+        public final Format f12843d;
 
         public a(Throwable th2, Format format) {
             super(th2);
-            this.f12266d = format;
+            this.f12843d = format;
         }
 
         public a(String str, Format format) {
             super(str);
-            this.f12266d = format;
+            this.f12843d = format;
         }
     }
 }

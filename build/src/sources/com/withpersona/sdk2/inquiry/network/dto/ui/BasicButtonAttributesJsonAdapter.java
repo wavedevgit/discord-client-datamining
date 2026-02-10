@@ -1,6 +1,5 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui;
 
-import bn.c;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -8,6 +7,7 @@ import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.Button;
+import dn.c;
 import java.lang.reflect.Constructor;
 import kotlin.Metadata;
 import kotlin.collections.x0;
@@ -78,7 +78,7 @@ public final class BasicButtonAttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -130,7 +130,7 @@ public final class BasicButtonAttributesJsonAdapter extends h {
         String str6 = str;
         Constructor<BasicButtonAttributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = BasicButtonAttributes.class.getDeclaredConstructor(String.class, Button.ButtonType.class, String.class, Integer.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f7152c);
+            constructor = BasicButtonAttributes.class.getDeclaredConstructor(String.class, Button.ButtonType.class, String.class, Integer.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -146,7 +146,7 @@ public final class BasicButtonAttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, BasicButtonAttributes basicButtonAttributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (basicButtonAttributes != null) {
-            writer.k();
+            writer.i();
             writer.J("text");
             this.stringAdapter.toJson(writer, basicButtonAttributes.getText());
             writer.J("buttonType");

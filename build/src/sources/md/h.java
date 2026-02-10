@@ -12,12 +12,12 @@ import oe.g0;
 import oe.h0;
 import oe.w0;
 import oe.y;
-import oi.s;
+import qi.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class h extends hd.e {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f36934b = new a() { // from class: md.g
+    public static final a f36309b = new a() { // from class: md.g
         @Override // md.h.a
         public final boolean a(int i10, int i11, int i12, int i13, int i14) {
             return h.c(i10, i11, i12, i13, i14);
@@ -25,7 +25,7 @@ public final class h extends hd.e {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f36935a;
+    private final a f36310a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -37,18 +37,18 @@ public final class h extends hd.e {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f36936a;
+        private final int f36311a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f36937b;
+        private final boolean f36312b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f36938c;
+        private final int f36313c;
 
         public b(int i10, boolean z10, int i11) {
-            this.f36936a = i10;
-            this.f36937b = z10;
-            this.f36938c = i11;
+            this.f36311a = i10;
+            this.f36312b = z10;
+            this.f36313c = i11;
         }
     }
 
@@ -217,7 +217,7 @@ public final class h extends hd.e {
 
     private static byte[] d(byte[] bArr, int i10, int i11) {
         if (i11 <= i10) {
-            return w0.f40716f;
+            return w0.f39042f;
         }
         return Arrays.copyOfRange(bArr, i10, i11);
     }
@@ -231,14 +231,14 @@ public final class h extends hd.e {
         byte[] bArr = new byte[i12];
         h0Var.l(bArr, 0, i12);
         if (i11 == 2) {
-            str = "image/" + ni.b.e(new String(bArr, 0, 3, ni.d.f38903b));
+            str = "image/" + pi.b.e(new String(bArr, 0, 3, pi.d.f42736b));
             if (ClipboardModule.MIMETYPE_JPG.equals(str)) {
                 str = ClipboardModule.MIMETYPE_JPEG;
             }
             z10 = 2;
         } else {
             z10 = z(bArr, 0);
-            String e10 = ni.b.e(new String(bArr, 0, z10, ni.d.f38903b));
+            String e10 = pi.b.e(new String(bArr, 0, z10, pi.d.f42736b));
             if (e10.indexOf(47) == -1) {
                 str = "image/" + e10;
             } else {
@@ -260,7 +260,7 @@ public final class h extends hd.e {
         long j10;
         int f10 = h0Var.f();
         int z11 = z(h0Var.e(), f10);
-        String str = new String(h0Var.e(), f10, z11 - f10, ni.d.f38903b);
+        String str = new String(h0Var.e(), f10, z11 - f10, pi.d.f42736b);
         h0Var.U(z11 + 1);
         int q10 = h0Var.q();
         int q11 = h0Var.q();
@@ -290,7 +290,7 @@ public final class h extends hd.e {
         boolean z12;
         int f10 = h0Var.f();
         int z13 = z(h0Var.e(), f10);
-        String str = new String(h0Var.e(), f10, z13 - f10, ni.d.f38903b);
+        String str = new String(h0Var.e(), f10, z13 - f10, pi.d.f42736b);
         h0Var.U(z13 + 1);
         int H = h0Var.H();
         if ((H & 2) != 0) {
@@ -308,7 +308,7 @@ public final class h extends hd.e {
         for (int i13 = 0; i13 < H2; i13++) {
             int f11 = h0Var.f();
             int z14 = z(h0Var.e(), f11);
-            strArr[i13] = new String(h0Var.e(), f11, z14 - f11, ni.d.f38903b);
+            strArr[i13] = new String(h0Var.e(), f11, z14 - f11, pi.d.f42736b);
             h0Var.U(z14 + 1);
         }
         ArrayList arrayList = new ArrayList();
@@ -371,7 +371,7 @@ public final class h extends hd.e {
         byte[] bArr = new byte[i11];
         h0Var.l(bArr, 0, i11);
         int z10 = z(bArr, 0);
-        String str = new String(bArr, 0, z10, ni.d.f38903b);
+        String str = new String(bArr, 0, z10, pi.d.f42736b);
         int i12 = z10 + 1;
         int y10 = y(bArr, i12, H);
         String p10 = p(bArr, i12, y10, w10);
@@ -446,7 +446,7 @@ public final class h extends hd.e {
         byte[] bArr = new byte[i10];
         h0Var.l(bArr, 0, i10);
         int z10 = z(bArr, 0);
-        return new l(new String(bArr, 0, z10, ni.d.f38903b), d(bArr, z10 + 1, i10));
+        return new l(new String(bArr, 0, z10, pi.d.f42736b), d(bArr, z10 + 1, i10));
     }
 
     private static String p(byte[] bArr, int i10, int i11, Charset charset) {
@@ -471,18 +471,18 @@ public final class h extends hd.e {
         if (i11 >= bArr.length) {
             return s.u("");
         }
-        s.a j10 = s.j();
+        s.a k10 = s.k();
         int y10 = y(bArr, i11, i10);
         while (i11 < y10) {
-            j10.a(new String(bArr, i11, y10 - i11, w(i10)));
+            k10.a(new String(bArr, i11, y10 - i11, w(i10)));
             i11 = v(i10) + y10;
             y10 = y(bArr, i11, i10);
         }
-        s k10 = j10.k();
-        if (k10.isEmpty()) {
+        s k11 = k10.k();
+        if (k11.isEmpty()) {
             return s.u("");
         }
-        return k10;
+        return k11;
     }
 
     private static m s(h0 h0Var, int i10) {
@@ -500,7 +500,7 @@ public final class h extends hd.e {
     private static n t(h0 h0Var, int i10, String str) {
         byte[] bArr = new byte[i10];
         h0Var.l(bArr, 0, i10);
-        return new n(str, null, new String(bArr, 0, z(bArr, 0), ni.d.f38903b));
+        return new n(str, null, new String(bArr, 0, z(bArr, 0), pi.d.f42736b));
     }
 
     private static n u(h0 h0Var, int i10) {
@@ -514,7 +514,7 @@ public final class h extends hd.e {
         int y10 = y(bArr, 0, H);
         String str = new String(bArr, 0, y10, w(H));
         int v10 = y10 + v(H);
-        return new n("WXXX", str, p(bArr, v10, z(bArr, v10), ni.d.f38903b));
+        return new n("WXXX", str, p(bArr, v10, z(bArr, v10), pi.d.f42736b));
     }
 
     private static int v(int i10) {
@@ -528,13 +528,13 @@ public final class h extends hd.e {
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
-                    return ni.d.f38903b;
+                    return pi.d.f42736b;
                 }
-                return ni.d.f38904c;
+                return pi.d.f42737c;
             }
-            return ni.d.f38905d;
+            return pi.d.f42738d;
         }
-        return ni.d.f38907f;
+        return pi.d.f42740f;
     }
 
     private static String x(int i10, int i11, int i12, int i13, int i14) {
@@ -582,27 +582,27 @@ public final class h extends hd.e {
             return null;
         }
         int f10 = h0Var.f();
-        if (m10.f36936a == 2) {
+        if (m10.f36311a == 2) {
             i11 = 6;
         } else {
             i11 = 10;
         }
-        int i12 = m10.f36938c;
-        if (m10.f36937b) {
-            i12 = A(h0Var, m10.f36938c);
+        int i12 = m10.f36313c;
+        if (m10.f36312b) {
+            i12 = A(h0Var, m10.f36313c);
         }
         h0Var.T(f10 + i12);
         boolean z10 = false;
-        if (!B(h0Var, m10.f36936a, i11, false)) {
-            if (m10.f36936a == 4 && B(h0Var, 4, i11, true)) {
+        if (!B(h0Var, m10.f36311a, i11, false)) {
+            if (m10.f36311a == 4 && B(h0Var, 4, i11, true)) {
                 z10 = true;
             } else {
-                y.i("Id3Decoder", "Failed to validate ID3 tag with majorVersion=" + m10.f36936a);
+                y.i("Id3Decoder", "Failed to validate ID3 tag with majorVersion=" + m10.f36311a);
                 return null;
             }
         }
         while (h0Var.a() >= i11) {
-            i k10 = k(m10.f36936a, h0Var, z10, i11, this.f36935a);
+            i k10 = k(m10.f36311a, h0Var, z10, i11, this.f36310a);
             if (k10 != null) {
                 arrayList.add(k10);
             }
@@ -611,6 +611,6 @@ public final class h extends hd.e {
     }
 
     public h(a aVar) {
-        this.f36935a = aVar;
+        this.f36310a = aVar;
     }
 }

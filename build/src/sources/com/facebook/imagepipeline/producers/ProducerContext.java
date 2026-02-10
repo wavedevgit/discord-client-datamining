@@ -6,19 +6,17 @@ import com.facebook.imagepipeline.request.ImageRequest;
 public interface ProducerContext extends z9.a {
     Priority C();
 
-    ImageRequest.RequestLevel C0();
-
     ImageRequest I();
 
     boolean Q();
 
     Object a();
 
-    void g(x0 x0Var);
-
     String getId();
 
-    oa.r k();
+    void h(x0 x0Var);
+
+    oa.r i();
 
     void m(String str, String str2);
 
@@ -29,4 +27,6 @@ public interface ProducerContext extends z9.a {
     y0 y();
 
     boolean z();
+
+    ImageRequest.RequestLevel z0();
 }

@@ -20,21 +20,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/instant_invite/getInviteURL.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function() {
-        _fun54939: for (var _fun54939_ip = 0;;) switch (_fun54939_ip) {
+        _fun54992: for (var _fun54992_ip = 0;;) switch (_fun54992_ip) {
             case 0:
                 var3 = arguments[0];
                 var5 = arguments[1];
                 var0 = undefined;
                 if (!(var3 === var0)) {
-                    _fun54939_ip = 16;
-                    continue _fun54939
+                    _fun54992_ip = 16;
+                    continue _fun54992
                 }
             case 12:
                 var3 = '';
             case 16:
                 if (!(var5 === var0)) {
-                    _fun54939_ip = 22;
-                    continue _fun54939
+                    _fun54992_ip = 22;
+                    continue _fun54992
                 }
             case 20:
                 var5 = true;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = '';
                 var1 = var2;
                 if (!var5) {
-                    _fun54939_ip = 107;
-                    continue _fun54939
+                    _fun54992_ip = 107;
+                    continue _fun54992
                 }
             case 72:
                 var5 = var0.location;

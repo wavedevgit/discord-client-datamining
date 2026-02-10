@@ -5,46 +5,46 @@ import zb.o;
 final class i extends o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o.c f56249a;
+    private final o.c f56288a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final o.b f56250b;
+    private final o.b f56289b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     static final class b extends o.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private o.c f56251a;
+        private o.c f56290a;
 
         /* renamed from: b  reason: collision with root package name */
-        private o.b f56252b;
+        private o.b f56291b;
 
         @Override // zb.o.a
         public o a() {
-            return new i(this.f56251a, this.f56252b);
+            return new i(this.f56290a, this.f56291b);
         }
 
         @Override // zb.o.a
         public o.a b(o.b bVar) {
-            this.f56252b = bVar;
+            this.f56291b = bVar;
             return this;
         }
 
         @Override // zb.o.a
         public o.a c(o.c cVar) {
-            this.f56251a = cVar;
+            this.f56290a = cVar;
             return this;
         }
     }
 
     @Override // zb.o
     public o.b b() {
-        return this.f56250b;
+        return this.f56289b;
     }
 
     @Override // zb.o
     public o.c c() {
-        return this.f56249a;
+        return this.f56288a;
     }
 
     public boolean equals(Object obj) {
@@ -53,9 +53,9 @@ final class i extends o {
         }
         if (obj instanceof o) {
             o oVar = (o) obj;
-            o.c cVar = this.f56249a;
+            o.c cVar = this.f56288a;
             if (cVar != null ? cVar.equals(oVar.c()) : oVar.c() == null) {
-                o.b bVar = this.f56250b;
+                o.b bVar = this.f56289b;
                 if (bVar != null ? bVar.equals(oVar.b()) : oVar.b() == null) {
                     return true;
                 }
@@ -66,7 +66,7 @@ final class i extends o {
 
     public int hashCode() {
         int hashCode;
-        o.c cVar = this.f56249a;
+        o.c cVar = this.f56288a;
         int i10 = 0;
         if (cVar == null) {
             hashCode = 0;
@@ -74,7 +74,7 @@ final class i extends o {
             hashCode = cVar.hashCode();
         }
         int i11 = (hashCode ^ 1000003) * 1000003;
-        o.b bVar = this.f56250b;
+        o.b bVar = this.f56289b;
         if (bVar != null) {
             i10 = bVar.hashCode();
         }
@@ -82,11 +82,11 @@ final class i extends o {
     }
 
     public String toString() {
-        return "NetworkConnectionInfo{networkType=" + this.f56249a + ", mobileSubtype=" + this.f56250b + "}";
+        return "NetworkConnectionInfo{networkType=" + this.f56288a + ", mobileSubtype=" + this.f56289b + "}";
     }
 
     private i(o.c cVar, o.b bVar) {
-        this.f56249a = cVar;
-        this.f56250b = bVar;
+        this.f56288a = cVar;
+        this.f56289b = bVar;
     }
 }

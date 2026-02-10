@@ -6,26 +6,26 @@ import com.facebook.react.uimanager.ViewProps;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f22561a;
+    public final int f23686a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f22562b;
+    public final int f23687b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f22563c;
+    public final int f23688c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f22564d;
+    public final int f23689d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f22565e;
+    public final int f23690e;
 
     private b(int i10, int i11, int i12, int i13, int i14) {
-        this.f22561a = i10;
-        this.f22562b = i11;
-        this.f22563c = i12;
-        this.f22564d = i13;
-        this.f22565e = i14;
+        this.f23686a = i10;
+        this.f23687b = i11;
+        this.f23688c = i12;
+        this.f23689d = i13;
+        this.f23690e = i14;
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -38,7 +38,7 @@ final class b {
         int i12 = -1;
         int i13 = -1;
         for (int i14 = 0; i14 < split.length; i14++) {
-            String e10 = ni.b.e(split[i14].trim());
+            String e10 = pi.b.e(split[i14].trim());
             e10.getClass();
             switch (e10.hashCode()) {
                 case 100571:

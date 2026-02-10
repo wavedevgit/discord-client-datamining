@@ -8,22 +8,22 @@ import o5.a;
 public class q implements s, a.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.airbnb.lottie.n f37951a;
+    private final com.airbnb.lottie.n f36955a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f37952b;
+    private final String f36956b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final o5.a f37953c;
+    private final o5.a f36957c;
 
     /* renamed from: d  reason: collision with root package name */
-    private t5.o f37954d;
+    private t5.o f36958d;
 
     public q(com.airbnb.lottie.n nVar, u5.b bVar, t5.n nVar2) {
-        this.f37951a = nVar;
-        this.f37952b = nVar2.c();
+        this.f36955a = nVar;
+        this.f36956b = nVar2.c();
         o5.a a10 = nVar2.b().a();
-        this.f37953c = a10;
+        this.f36957c = a10;
         bVar.i(a10);
         a10.a(this);
     }
@@ -72,21 +72,21 @@ public class q implements s, a.b {
                 i10++;
             }
         }
-        t5.o oVar2 = this.f37954d;
+        t5.o oVar2 = this.f36958d;
         if (oVar2 == null || oVar2.a().size() != i10) {
             ArrayList arrayList = new ArrayList(i10);
             for (int i11 = 0; i11 < i10; i11++) {
                 arrayList.add(new r5.a());
             }
-            this.f37954d = new t5.o(new PointF(0.0f, 0.0f), false, arrayList);
+            this.f36958d = new t5.o(new PointF(0.0f, 0.0f), false, arrayList);
         }
-        this.f37954d.e(d10);
-        return this.f37954d;
+        this.f36958d.e(d10);
+        return this.f36958d;
     }
 
     @Override // o5.a.b
     public void a() {
-        this.f37951a.invalidateSelf();
+        this.f36955a.invalidateSelf();
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:25:0x009e, code lost:
@@ -106,7 +106,7 @@ public class q implements s, a.b {
     }
 
     public o5.a g() {
-        return this.f37953c;
+        return this.f36957c;
     }
 
     @Override // n5.c

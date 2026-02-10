@@ -6,11 +6,11 @@ import java.util.Objects;
 final class h1 extends m0 {
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ i1 f48234o;
+    final /* synthetic */ i1 f46688o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h1(i1 i1Var) {
-        this.f48234o = i1Var;
+        this.f46688o = i1Var;
     }
 
     @Override // java.util.List
@@ -18,13 +18,13 @@ final class h1 extends m0 {
         int i11;
         Object[] objArr;
         Object[] objArr2;
-        i11 = this.f48234o.f48261p;
+        i11 = this.f46688o.f46715p;
         el.a(i10, i11, "index");
-        objArr = this.f48234o.f48260o;
+        objArr = this.f46688o.f46714o;
         int i12 = i10 + i10;
         Object obj = objArr[i12];
         Objects.requireNonNull(obj);
-        objArr2 = this.f48234o.f48260o;
+        objArr2 = this.f46688o.f46714o;
         Object obj2 = objArr2[i12 + 1];
         Objects.requireNonNull(obj2);
         return new AbstractMap.SimpleImmutableEntry(obj, obj2);
@@ -33,7 +33,7 @@ final class h1 extends m0 {
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
         int i10;
-        i10 = this.f48234o.f48261p;
+        i10 = this.f46688o.f46715p;
         return i10;
     }
 }

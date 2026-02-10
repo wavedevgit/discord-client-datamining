@@ -5,10 +5,10 @@ import android.os.Binder;
 final class o1 extends Binder {
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ ExtractionForegroundService f16060c;
+    final /* synthetic */ ExtractionForegroundService f16809c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o1(ExtractionForegroundService extractionForegroundService) {
-        this.f16060c = extractionForegroundService;
+        this.f16809c = extractionForegroundService;
     }
 }

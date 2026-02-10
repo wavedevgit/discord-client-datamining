@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/useCanSeeEventsInChannelList.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun90424: for (var _fun90424_ip = 0;;) switch (_fun90424_ip) {
+        _fun90480: for (var _fun90480_ip = 0;;) switch (_fun90480_ip) {
             case 0:
                 var5 = arg0;
                 var6 = _closure1_slot0;
@@ -43,13 +43,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var4)(var5);
                 var0 = !var0;
                 if (!var0) {
-                    _fun90424_ip = 87;
-                    continue _fun90424
+                    _fun90480_ip = 87;
+                    continue _fun90480
                 }
             case 72:
                 if (var1) {
-                    _fun90424_ip = 84;
-                    continue _fun90424
+                    _fun90480_ip = 84;
+                    continue _fun90480
                 }
             case 75:
                 var2 = var2.length;
@@ -62,4 +62,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8138, 8127, 11752, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8148, 8137, 11763, 2]);

@@ -1,18 +1,49 @@
 package fo;
 
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.ButtonCancelComponentStyle;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.ButtonCombinedStepComponentStyle;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.ButtonSubmitComponentStyle;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.Result;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-    public static final ButtonCombinedStepComponentStyle a(ButtonCancelComponentStyle buttonCancelComponentStyle) {
-        Intrinsics.checkNotNullParameter(buttonCancelComponentStyle, "<this>");
-        return new ButtonCombinedStepComponentStyle(buttonCancelComponentStyle.getPadding(), buttonCancelComponentStyle.getMargin(), buttonCancelComponentStyle.getJustify(), buttonCancelComponentStyle.getFontFamily(), buttonCancelComponentStyle.getFontSize(), buttonCancelComponentStyle.getFontWeight(), buttonCancelComponentStyle.getLetterSpacing(), buttonCancelComponentStyle.getLineHeight(), buttonCancelComponentStyle.getTextColor(), buttonCancelComponentStyle.getHeight(), buttonCancelComponentStyle.getWidth(), buttonCancelComponentStyle.getBackgroundColor(), buttonCancelComponentStyle.getBorderColor(), buttonCancelComponentStyle.getBorderRadius(), buttonCancelComponentStyle.getBorderWidth());
+public final class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Object f23983a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final boolean f23984b;
+
+    public b(Object obj, boolean z10) {
+        this.f23983a = obj;
+        this.f23984b = z10;
     }
 
-    public static final ButtonCombinedStepComponentStyle b(ButtonSubmitComponentStyle buttonSubmitComponentStyle) {
-        Intrinsics.checkNotNullParameter(buttonSubmitComponentStyle, "<this>");
-        return new ButtonCombinedStepComponentStyle(buttonSubmitComponentStyle.getPadding(), buttonSubmitComponentStyle.getMargin(), buttonSubmitComponentStyle.getJustify(), buttonSubmitComponentStyle.getFontFamily(), buttonSubmitComponentStyle.getFontSize(), buttonSubmitComponentStyle.getFontWeight(), buttonSubmitComponentStyle.getLetterSpacing(), buttonSubmitComponentStyle.getLineHeight(), buttonSubmitComponentStyle.getTextColor(), buttonSubmitComponentStyle.getHeight(), buttonSubmitComponentStyle.getWidth(), buttonSubmitComponentStyle.getBackgroundColor(), buttonSubmitComponentStyle.getBorderColor(), buttonSubmitComponentStyle.getBorderRadius(), buttonSubmitComponentStyle.getBorderWidth());
+    public final Object a() {
+        return this.f23983a;
+    }
+
+    public final boolean b() {
+        return this.f23984b;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof b)) {
+            return false;
+        }
+        b bVar = (b) obj;
+        if (Result.d(this.f23983a, bVar.f23983a) && this.f23984b == bVar.f23984b) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return (Result.f(this.f23983a) * 31) + Boolean.hashCode(this.f23984b);
+    }
+
+    public String toString() {
+        String i10 = Result.i(this.f23983a);
+        boolean z10 = this.f23984b;
+        return "AnalyzerResult(result=" + i10 + ", isActiveAnalyzer=" + z10 + ")";
     }
 }

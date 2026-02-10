@@ -4,21 +4,21 @@ package gf;
 public final class g0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f24319a;
+    private final b f25619a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.google.android.gms.common.d f24320b;
+    private final com.google.android.gms.common.d f25620b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ g0(b bVar, com.google.android.gms.common.d dVar, f0 f0Var) {
-        this.f24319a = bVar;
-        this.f24320b = dVar;
+        this.f25619a = bVar;
+        this.f25620b = dVar;
     }
 
     public final boolean equals(Object obj) {
         if (obj != null && (obj instanceof g0)) {
             g0 g0Var = (g0) obj;
-            if (hf.o.a(this.f24319a, g0Var.f24319a) && hf.o.a(this.f24320b, g0Var.f24320b)) {
+            if (hf.o.a(this.f25619a, g0Var.f25619a) && hf.o.a(this.f25620b, g0Var.f25620b)) {
                 return true;
             }
         }
@@ -26,10 +26,10 @@ public final class g0 {
     }
 
     public final int hashCode() {
-        return hf.o.b(this.f24319a, this.f24320b);
+        return hf.o.b(this.f25619a, this.f25620b);
     }
 
     public final String toString() {
-        return hf.o.c(this).a("key", this.f24319a).a("feature", this.f24320b).toString();
+        return hf.o.c(this).a("key", this.f25619a).a("feature", this.f25620b).toString();
     }
 }

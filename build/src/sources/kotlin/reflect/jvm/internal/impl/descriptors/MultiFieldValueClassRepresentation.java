@@ -12,28 +12,28 @@ import org.jetbrains.annotations.NotNull;
 public final class MultiFieldValueClassRepresentation<Type extends RigidTypeMarker> extends ValueClassRepresentation<Type> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f32071a;
+    private final List f32293a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f32072b;
+    private final Map f32294b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public MultiFieldValueClassRepresentation(@NotNull List<? extends Pair<Name, ? extends Type>> underlyingPropertyNamesToTypes) {
         super(null);
         Intrinsics.checkNotNullParameter(underlyingPropertyNamesToTypes, "underlyingPropertyNamesToTypes");
-        this.f32071a = underlyingPropertyNamesToTypes;
-        this.f32072b = o0.u(getUnderlyingPropertyNamesToTypes());
+        this.f32293a = underlyingPropertyNamesToTypes;
+        this.f32294b = o0.u(getUnderlyingPropertyNamesToTypes());
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ValueClassRepresentation
     public boolean containsPropertyWithName(@NotNull Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return this.f32072b.containsKey(name);
+        return this.f32294b.containsKey(name);
     }
 
     @NotNull
     public List<Pair<Name, Type>> getUnderlyingPropertyNamesToTypes() {
-        return this.f32071a;
+        return this.f32293a;
     }
 
     @NotNull

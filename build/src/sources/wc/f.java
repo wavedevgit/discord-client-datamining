@@ -1,20 +1,20 @@
 package wc;
 
 import oe.h0;
-import oi.s;
-import oi.t0;
+import qi.s;
+import qi.t0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class f implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final s f53502a;
+    public final s f52531a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f53503b;
+    private final int f52532b;
 
     private f(int i10, s sVar) {
-        this.f53503b = i10;
-        this.f53502a = sVar;
+        this.f52532b = i10;
+        this.f52531a = sVar;
     }
 
     private static a a(int i10, int i11, h0 h0Var) {
@@ -59,7 +59,7 @@ final class f implements a {
     }
 
     public a b(Class cls) {
-        t0 it = this.f53502a.iterator();
+        t0 it = this.f52531a.iterator();
         while (it.hasNext()) {
             a aVar = (a) it.next();
             if (aVar.getClass() == cls) {
@@ -71,6 +71,6 @@ final class f implements a {
 
     @Override // wc.a
     public int getType() {
-        return this.f53503b;
+        return this.f52532b;
     }
 }

@@ -46,7 +46,7 @@ public final class StepStyles_GovernmentIdStepTitleComponentStyleJsonAdapter ext
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 stepTextBasedComponentStyleContainer = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
@@ -62,7 +62,7 @@ public final class StepStyles_GovernmentIdStepTitleComponentStyleJsonAdapter ext
     public void toJson(@NotNull t writer, StepStyles.GovernmentIdStepTitleComponentStyle governmentIdStepTitleComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepTitleComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, governmentIdStepTitleComponentStyle.getBase());
             writer.J("governmentIdProcessingTitle");

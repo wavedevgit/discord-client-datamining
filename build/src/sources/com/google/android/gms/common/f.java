@@ -25,19 +25,19 @@ import hf.e0;
 public class f extends g {
 
     /* renamed from: c  reason: collision with root package name */
-    private String f13914c;
+    private String f14491c;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Object f13912e = new Object();
+    private static final Object f14489e = new Object();
 
     /* renamed from: f  reason: collision with root package name */
-    private static final f f13913f = new f();
+    private static final f f14490f = new f();
 
     /* renamed from: d  reason: collision with root package name */
-    public static final int f13911d = g.f13915a;
+    public static final int f14488d = g.f14492a;
 
     public static f n() {
-        return f13913f;
+        return f14490f;
     }
 
     @Override // com.google.android.gms.common.g
@@ -185,22 +185,22 @@ public class f extends g {
                 hf.q.n(com.google.android.gms.common.util.k.b());
                 Z.U(context.getApplicationInfo().icon).M(2);
                 if (com.google.android.gms.common.util.g.d(context)) {
-                    Z.a(df.a.f20697a, resources.getString(df.b.f20712o), pendingIntent);
+                    Z.a(df.a.f21644a, resources.getString(df.b.f21659o), pendingIntent);
                 } else {
                     Z.v(pendingIntent);
                 }
             } else {
-                Z.U(17301642).b0(resources.getString(df.b.f20705h)).g0(System.currentTimeMillis()).v(pendingIntent).w(d10);
+                Z.U(17301642).b0(resources.getString(df.b.f21652h)).g0(System.currentTimeMillis()).v(pendingIntent).w(d10);
             }
             if (com.google.android.gms.common.util.k.e()) {
                 hf.q.n(com.google.android.gms.common.util.k.e());
-                synchronized (f13912e) {
-                    str2 = this.f13914c;
+                synchronized (f14489e) {
+                    str2 = this.f14491c;
                 }
                 if (str2 == null) {
                     str2 = "com.google.android.gms.availability";
                     NotificationChannel notificationChannel = notificationManager.getNotificationChannel("com.google.android.gms.availability");
-                    String string = context.getResources().getString(df.b.f20704g);
+                    String string = context.getResources().getString(df.b.f21651g);
                     if (notificationChannel == null) {
                         notificationManager.createNotificationChannel(e.a("com.google.android.gms.availability", string, 4));
                     } else if (!string.contentEquals(notificationChannel.getName())) {
@@ -214,7 +214,7 @@ public class f extends g {
             if (i10 != 1 && i10 != 2 && i10 != 3) {
                 i11 = 39789;
             } else {
-                k.f13921b.set(false);
+                k.f14498b.set(false);
                 i11 = 10436;
             }
             notificationManager.notify(i11, g10);
@@ -239,7 +239,7 @@ public class f extends g {
         if (qf.a.a(context) || (m10 = m(context, bVar)) == null) {
             return false;
         }
-        u(context, bVar.c(), null, PendingIntent.getActivity(context, 0, GoogleApiActivity.a(context, m10, i10, true), gg.g.f24397a | 134217728));
+        u(context, bVar.c(), null, PendingIntent.getActivity(context, 0, GoogleApiActivity.a(context, m10, i10, true), gg.g.f25697a | 134217728));
         return true;
     }
 }

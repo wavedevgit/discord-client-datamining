@@ -3,17 +3,17 @@ package j$.time.temporal;
 public abstract /* synthetic */ class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int[] f29810a;
+    public static final /* synthetic */ int[] f30610a;
 
     static {
         int[] iArr = new int[i.values().length];
-        f29810a = iArr;
+        f30610a = iArr;
         try {
             iArr[i.WEEK_BASED_YEARS.ordinal()] = 1;
         } catch (NoSuchFieldError unused) {
         }
         try {
-            f29810a[i.QUARTER_YEARS.ordinal()] = 2;
+            f30610a[i.QUARTER_YEARS.ordinal()] = 2;
         } catch (NoSuchFieldError unused2) {
         }
     }

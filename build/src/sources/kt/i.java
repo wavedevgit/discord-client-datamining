@@ -1,51 +1,93 @@
 package kt;
 
-import java.util.Arrays;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.MutablePropertyReference1Impl;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class i extends d2 {
+final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private byte[] f35148a;
+    public static final i f35204a = new i();
 
     /* renamed from: b  reason: collision with root package name */
-    private int f35149b;
-
-    public i(byte[] bufferWithData) {
-        Intrinsics.checkNotNullParameter(bufferWithData, "bufferWithData");
-        this.f35148a = bufferWithData;
-        this.f35149b = bufferWithData.length;
-        b(10);
-    }
-
-    @Override // kt.d2
-    public void b(int i10) {
-        byte[] bArr = this.f35148a;
-        if (bArr.length < i10) {
-            byte[] copyOf = Arrays.copyOf(bArr, kotlin.ranges.d.d(i10, bArr.length * 2));
-            Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f35148a = copyOf;
+    private static final mt.q f35205b = new mt.q(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.i.e
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
+        public Object get(Object obj) {
+            return ((h) obj).f();
         }
+
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
+        public void set(Object obj, Object obj2) {
+            ((h) obj).B((Integer) obj2);
+        }
+    }), null, null, null, 14, null);
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final mt.b0 f35206c = new mt.b0(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.i.d
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
+        public Object get(Object obj) {
+            return ((h) obj).C();
+        }
+
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
+        public void set(Object obj, Object obj2) {
+            ((h) obj).v((Integer) obj2);
+        }
+    }), 1, 12, null, null, null, 56, null);
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final mt.b0 f35207d = new mt.b0(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.i.a
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
+        public Object get(Object obj) {
+            return ((h) obj).g();
+        }
+
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
+        public void set(Object obj, Object obj2) {
+            ((h) obj).y((Integer) obj2);
+        }
+    }), 1, 31, null, null, null, 56, null);
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final mt.b0 f35208e = new mt.b0(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.i.c
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
+        public Object get(Object obj) {
+            return ((h) obj).k();
+        }
+
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
+        public void set(Object obj, Object obj2) {
+            ((h) obj).E((Integer) obj2);
+        }
+    }), 1, 7, null, null, null, 56, null);
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final mt.b0 f35209f = new mt.b0(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.i.b
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
+        public Object get(Object obj) {
+            return ((h) obj).A();
+        }
+
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
+        public void set(Object obj, Object obj2) {
+            ((h) obj).o((Integer) obj2);
+        }
+    }), 1, 366, null, null, null, 56, null);
+
+    private i() {
     }
 
-    @Override // kt.d2
-    public int d() {
-        return this.f35149b;
+    public final mt.b0 a() {
+        return f35207d;
     }
 
-    public final void e(byte b10) {
-        d2.c(this, 0, 1, null);
-        byte[] bArr = this.f35148a;
-        int d10 = d();
-        this.f35149b = d10 + 1;
-        bArr[d10] = b10;
+    public final mt.b0 b() {
+        return f35208e;
     }
 
-    @Override // kt.d2
-    /* renamed from: f */
-    public byte[] a() {
-        byte[] copyOf = Arrays.copyOf(this.f35148a, d());
-        Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-        return copyOf;
+    public final mt.b0 c() {
+        return f35206c;
+    }
+
+    public final mt.q d() {
+        return f35205b;
     }
 }

@@ -1,49 +1,49 @@
 package com.google.android.play.core.assetpacks;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class z1 implements yh.t {
+public final class z1 implements ai.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final yh.w f16238a;
+    private final ai.w f16987a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final yh.w f16239b;
+    private final ai.w f16988b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final yh.w f16240c;
+    private final ai.w f16989c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final yh.w f16241d;
+    private final ai.w f16990d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final yh.w f16242e;
+    private final ai.w f16991e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final yh.w f16243f;
+    private final ai.w f16992f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final yh.w f16244g;
+    private final ai.w f16993g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final yh.w f16245h;
+    private final ai.w f16994h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final yh.w f16246i;
+    private final ai.w f16995i;
 
-    public z1(yh.w wVar, yh.w wVar2, yh.w wVar3, yh.w wVar4, yh.w wVar5, yh.w wVar6, yh.w wVar7, yh.w wVar8, yh.w wVar9) {
-        this.f16238a = wVar;
-        this.f16239b = wVar2;
-        this.f16240c = wVar3;
-        this.f16241d = wVar4;
-        this.f16242e = wVar5;
-        this.f16243f = wVar6;
-        this.f16244g = wVar7;
-        this.f16245h = wVar8;
-        this.f16246i = wVar9;
+    public z1(ai.w wVar, ai.w wVar2, ai.w wVar3, ai.w wVar4, ai.w wVar5, ai.w wVar6, ai.w wVar7, ai.w wVar8, ai.w wVar9) {
+        this.f16987a = wVar;
+        this.f16988b = wVar2;
+        this.f16989c = wVar3;
+        this.f16990d = wVar4;
+        this.f16991e = wVar5;
+        this.f16992f = wVar6;
+        this.f16993g = wVar7;
+        this.f16994h = wVar8;
+        this.f16995i = wVar9;
     }
 
-    @Override // yh.w
+    @Override // ai.w
     public final /* bridge */ /* synthetic */ Object a() {
-        Object a10 = this.f16238a.a();
-        return new y1((r2) a10, yh.r.c(yh.v.a(this.f16239b)), (m1) this.f16240c.a(), (f4) this.f16241d.a(), (g3) this.f16242e.a(), (k3) this.f16243f.a(), (t3) this.f16244g.a(), (y3) this.f16245h.a(), (u2) this.f16246i.a());
+        Object a10 = this.f16987a.a();
+        return new y1((r2) a10, ai.r.c(ai.v.a(this.f16988b)), (m1) this.f16989c.a(), (f4) this.f16990d.a(), (g3) this.f16991e.a(), (k3) this.f16992f.a(), (t3) this.f16993g.a(), (y3) this.f16994h.a(), (u2) this.f16995i.a());
     }
 }

@@ -1,6 +1,5 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import bn.c;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -8,6 +7,7 @@ import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.LocalImage;
+import dn.c;
 import java.lang.reflect.Constructor;
 import kotlin.Metadata;
 import kotlin.collections.x0;
@@ -59,7 +59,7 @@ public final class LocalImage_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 image = (LocalImage.Image) this.nullableImageAdapter.fromJson(reader);
@@ -74,7 +74,7 @@ public final class LocalImage_AttributesJsonAdapter extends h {
         }
         Constructor<LocalImage.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = LocalImage.Attributes.class.getDeclaredConstructor(LocalImage.Image.class, JsonLogicBoolean.class, Integer.TYPE, c.f7152c);
+            constructor = LocalImage.Attributes.class.getDeclaredConstructor(LocalImage.Image.class, JsonLogicBoolean.class, Integer.TYPE, c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -87,7 +87,7 @@ public final class LocalImage_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, LocalImage.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("imageKey");
             this.nullableImageAdapter.toJson(writer, attributes.getImageKey());
             writer.J(ViewProps.HIDDEN);

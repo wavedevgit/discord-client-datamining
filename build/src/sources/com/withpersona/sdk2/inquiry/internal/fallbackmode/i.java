@@ -1,27 +1,27 @@
 package com.withpersona.sdk2.inquiry.internal.fallbackmode;
 
 import androidx.lifecycle.b0;
+import as.p;
 import com.withpersona.sdk2.inquiry.internal.l;
 import com.withpersona.sdk2.inquiry.network.dto.NextStep;
 import java.util.List;
 import java.util.UUID;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
-import rr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f19032a;
+    private final List f19912a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b0 f19033b;
+    private final b0 f19913b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f19034c;
+    private final String f19914c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19035d;
+    private final String f19915d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -32,30 +32,30 @@ public final class i {
         Intrinsics.checkNotNullParameter(steps, "steps");
         Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
         Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
-        this.f19032a = steps;
-        this.f19033b = savedStateHandle;
+        this.f19912a = steps;
+        this.f19913b = savedStateHandle;
         String uuid = UUID.randomUUID().toString();
         Intrinsics.checkNotNullExpressionValue(uuid, "toString(...)");
-        this.f19034c = uuid;
-        this.f19035d = "Bearer " + sessionToken;
+        this.f19914c = uuid;
+        this.f19915d = "Bearer " + sessionToken;
     }
 
     public final l a() {
         NextStep c10 = c();
         if (c10 instanceof NextStep.Ui) {
-            return bp.a.s((NextStep.Ui) c10, this.f19035d, this.f19034c, "fake_status", null, zp.g.f56624o.a());
+            return kp.a.s((NextStep.Ui) c10, this.f19915d, this.f19914c, "fake_status", null, iq.g.f30404o.a());
         }
         if (c10 instanceof NextStep.GovernmentId) {
-            return bp.a.q((NextStep.GovernmentId) c10, this.f19035d, this.f19034c, null);
+            return kp.a.q((NextStep.GovernmentId) c10, this.f19915d, this.f19914c, null);
         }
         if (c10 instanceof NextStep.Selfie) {
-            return bp.a.r((NextStep.Selfie) c10, this.f19035d, this.f19034c);
+            return kp.a.r((NextStep.Selfie) c10, this.f19915d, this.f19914c);
         }
         if (c10 instanceof NextStep.Document) {
-            return bp.a.p((NextStep.Document) c10, this.f19035d, this.f19034c);
+            return kp.a.p((NextStep.Document) c10, this.f19915d, this.f19914c);
         }
         if (c10 instanceof NextStep.Complete) {
-            return bp.a.o((NextStep.Complete) c10, this.f19035d, this.f19034c, "fake_status", null);
+            return kp.a.o((NextStep.Complete) c10, this.f19915d, this.f19914c, "fake_status", null);
         }
         if (Intrinsics.areEqual(c10, NextStep.Unknown.INSTANCE)) {
             String name = c10.getName();
@@ -65,15 +65,15 @@ public final class i {
     }
 
     public final String b() {
-        return this.f19035d;
+        return this.f19915d;
     }
 
     public final NextStep c() {
-        return (NextStep) this.f19032a.get(d());
+        return (NextStep) this.f19912a.get(d());
     }
 
     public final int d() {
-        Integer num = (Integer) this.f19033b.b("current_fallback_mode_step_index");
+        Integer num = (Integer) this.f19913b.b("current_fallback_mode_step_index");
         if (num != null) {
             return num.intValue();
         }
@@ -81,15 +81,15 @@ public final class i {
     }
 
     public final String e() {
-        return this.f19034c;
+        return this.f19914c;
     }
 
     public final NextStep f() {
-        if (d() == CollectionsKt.n(this.f19032a)) {
+        if (d() == CollectionsKt.n(this.f19912a)) {
             return null;
         }
         h(d() + 1);
-        return (NextStep) this.f19032a.get(d());
+        return (NextStep) this.f19912a.get(d());
     }
 
     public final NextStep g() {
@@ -97,10 +97,10 @@ public final class i {
             return null;
         }
         h(d() - 1);
-        return (NextStep) this.f19032a.get(d());
+        return (NextStep) this.f19912a.get(d());
     }
 
     public final void h(int i10) {
-        this.f19033b.h("current_fallback_mode_step_index", Integer.valueOf(i10));
+        this.f19913b.h("current_fallback_mode_step_index", Integer.valueOf(i10));
     }
 }

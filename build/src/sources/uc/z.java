@@ -6,10 +6,10 @@ public interface z {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final a0 f51536a;
+        public final a0 f50715a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final a0 f51537b;
+        public final a0 f50716b;
 
         public a(a0 a0Var) {
             this(a0Var, a0Var);
@@ -21,7 +21,7 @@ public interface z {
             }
             if (obj != null && a.class == obj.getClass()) {
                 a aVar = (a) obj;
-                if (this.f51536a.equals(aVar.f51536a) && this.f51537b.equals(aVar.f51537b)) {
+                if (this.f50715a.equals(aVar.f50715a) && this.f50716b.equals(aVar.f50716b)) {
                     return true;
                 }
             }
@@ -29,18 +29,18 @@ public interface z {
         }
 
         public int hashCode() {
-            return (this.f51536a.hashCode() * 31) + this.f51537b.hashCode();
+            return (this.f50715a.hashCode() * 31) + this.f50716b.hashCode();
         }
 
         public String toString() {
             String str;
             StringBuilder sb2 = new StringBuilder();
             sb2.append("[");
-            sb2.append(this.f51536a);
-            if (this.f51536a.equals(this.f51537b)) {
+            sb2.append(this.f50715a);
+            if (this.f50715a.equals(this.f50716b)) {
                 str = "";
             } else {
-                str = ", " + this.f51537b;
+                str = ", " + this.f50716b;
             }
             sb2.append(str);
             sb2.append("]");
@@ -48,8 +48,8 @@ public interface z {
         }
 
         public a(a0 a0Var, a0 a0Var2) {
-            this.f51536a = (a0) oe.a.e(a0Var);
-            this.f51537b = (a0) oe.a.e(a0Var2);
+            this.f50715a = (a0) oe.a.e(a0Var);
+            this.f50716b = (a0) oe.a.e(a0Var2);
         }
     }
 
@@ -57,10 +57,10 @@ public interface z {
     public static class b implements z {
 
         /* renamed from: a  reason: collision with root package name */
-        private final long f51538a;
+        private final long f50717a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final a f51539b;
+        private final a f50718b;
 
         public b(long j10) {
             this(j10, 0L);
@@ -68,7 +68,7 @@ public interface z {
 
         @Override // uc.z
         public a e(long j10) {
-            return this.f51539b;
+            return this.f50718b;
         }
 
         @Override // uc.z
@@ -78,12 +78,12 @@ public interface z {
 
         @Override // uc.z
         public long i() {
-            return this.f51538a;
+            return this.f50717a;
         }
 
         public b(long j10, long j11) {
-            this.f51538a = j10;
-            this.f51539b = new a(j11 == 0 ? a0.f51431c : new a0(0L, j11));
+            this.f50717a = j10;
+            this.f50718b = new a(j11 == 0 ? a0.f50610c : new a0(0L, j11));
         }
     }
 

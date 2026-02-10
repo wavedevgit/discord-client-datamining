@@ -1,29 +1,29 @@
 package t4;
 
+import as.p;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
-import rr.p;
 import t4.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public final class h implements tu.b {
+public final class h implements cv.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f50547a = new h();
+    public static final h f48479a = new h();
 
     private h() {
     }
 
     private final Object a(i iVar, Function0 function0, Function0 function02) {
-        if (Intrinsics.areEqual(iVar, i.b.f50549a)) {
+        if (Intrinsics.areEqual(iVar, i.b.f48481a)) {
             return function02.invoke();
         }
-        if (Intrinsics.areEqual(iVar, i.a.f50548a)) {
+        if (Intrinsics.areEqual(iVar, i.a.f48480a)) {
             return function0.invoke();
         }
-        if (Intrinsics.areEqual(iVar, i.c.f50550a)) {
+        if (Intrinsics.areEqual(iVar, i.c.f48482a)) {
             return null;
         }
         throw new p();
@@ -105,24 +105,24 @@ public final class h implements tu.b {
         if (!Intrinsics.areEqual(num5, num6)) {
             return null;
         }
-        List l02 = CollectionsKt.l0(dw.a.b(list));
+        List l02 = CollectionsKt.l0(mw.a.b(list));
         return a(iVar, new f(l02), new g(l02));
     }
 
     private final i c(String str) {
         if (Intrinsics.areEqual(str, "desc")) {
-            return i.b.f50549a;
+            return i.b.f48481a;
         }
         if (Intrinsics.areEqual(str, "asc")) {
-            return i.a.f50548a;
+            return i.a.f48480a;
         }
-        return i.c.f50550a;
+        return i.c.f48482a;
     }
 
-    @Override // tu.b
+    @Override // cv.b
     public Object f(Object obj, Object obj2) {
         List list;
-        List c10 = dw.a.c(obj);
+        List c10 = mw.a.c(obj);
         Object firstOrNull = CollectionsKt.firstOrNull(c10);
         String str = null;
         if (firstOrNull instanceof List) {
@@ -133,8 +133,8 @@ public final class h implements tu.b {
         if (list == null) {
             return null;
         }
-        h hVar = f50547a;
-        Object b10 = dw.c.b(c10);
+        h hVar = f48479a;
+        Object b10 = mw.c.b(c10);
         if (b10 instanceof String) {
             str = (String) b10;
         }

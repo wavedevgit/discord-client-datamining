@@ -4,33 +4,33 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class m0 implements st.t {
+public final class m0 implements bu.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final st.p f38622a;
+    private final bu.p f37626a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f38623b;
+    private final boolean f37627b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public m0(st.p pVar, boolean z10) {
-        this.f38622a = pVar;
-        this.f38623b = z10;
+    public m0(bu.p pVar, boolean z10) {
+        this.f37626a = pVar;
+        this.f37627b = z10;
     }
 
-    @Override // st.t
+    @Override // bu.t
     /* renamed from: a */
-    public BigDecimal apply(st.q qVar) {
-        long longValue = ((Number) qVar.t(this.f38622a)).longValue();
-        long longValue2 = ((Number) qVar.m(this.f38622a)).longValue();
-        long longValue3 = ((Number) qVar.n(this.f38622a)).longValue();
+    public BigDecimal apply(bu.q qVar) {
+        long longValue = ((Number) qVar.k(this.f37626a)).longValue();
+        long longValue2 = ((Number) qVar.t(this.f37626a)).longValue();
+        long longValue3 = ((Number) qVar.v(this.f37626a)).longValue();
         if (longValue > longValue3) {
             longValue = longValue3;
         }
         if (longValue == longValue2) {
             return BigDecimal.ZERO;
         }
-        if (this.f38623b && (qVar instanceof g0) && !((g0) g0.class.cast(qVar)).w0(this.f38622a)) {
+        if (this.f37627b && (qVar instanceof g0) && !((g0) g0.class.cast(qVar)).w0(this.f37626a)) {
             if (longValue == longValue3) {
                 return BigDecimal.ONE;
             }

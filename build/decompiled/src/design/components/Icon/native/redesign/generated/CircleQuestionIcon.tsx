@@ -40,23 +40,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/CircleQuestionIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun76036: for (var _fun76036_ip = 0;;) switch (_fun76036_ip) {
+        _fun76092: for (var _fun76092_ip = 0;;) switch (_fun76092_ip) {
             case 0:
                 var2 = arg0;
                 var9 = var2.style;
                 var12 = var2.secondaryColor;
                 var3 = undefined;
                 if (!(var12 === var3)) {
-                    _fun76036_ip = 24;
-                    continue _fun76036
+                    _fun76092_ip = 24;
+                    continue _fun76092
                 }
             case 20:
                 var12 = 'transparent';
             case 24:
                 var10 = var2.color;
                 if (!(var10 === var3)) {
-                    _fun76036_ip = 67;
-                    continue _fun76036
+                    _fun76092_ip = 67;
+                    continue _fun76092
                 }
             case 33:
                 var1 = _closure1_slot1;
@@ -139,4 +139,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CircleQuestionIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 3152, 9616, 9617, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 3152, 9627, 9628, 2]);

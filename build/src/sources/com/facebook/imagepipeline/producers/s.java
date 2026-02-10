@@ -5,31 +5,31 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class s extends c {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Consumer f10960b;
+    private final Consumer f11537b;
 
     public s(Consumer consumer) {
         Intrinsics.checkNotNullParameter(consumer, "consumer");
-        this.f10960b = consumer;
+        this.f11537b = consumer;
     }
 
     @Override // com.facebook.imagepipeline.producers.c
     protected void f() {
-        this.f10960b.a();
+        this.f11537b.a();
     }
 
     @Override // com.facebook.imagepipeline.producers.c
     protected void g(Throwable t10) {
         Intrinsics.checkNotNullParameter(t10, "t");
-        this.f10960b.onFailure(t10);
+        this.f11537b.onFailure(t10);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.facebook.imagepipeline.producers.c
     public void i(float f10) {
-        this.f10960b.c(f10);
+        this.f11537b.c(f10);
     }
 
     public final Consumer o() {
-        return this.f10960b;
+        return this.f11537b;
     }
 }

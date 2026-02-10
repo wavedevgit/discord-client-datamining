@@ -16,25 +16,25 @@ import java.util.Map;
 class k implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f6456a;
+    private final a f6562a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i f6457b;
+    private final i f6563b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f6458c;
+    private final Map f6564c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f6459a;
+        private final Context f6565a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Map f6460b = null;
+        private Map f6566b = null;
 
         a(Context context) {
-            this.f6459a = context;
+            this.f6565a = context;
         }
 
         private Map a(Context context) {
@@ -59,10 +59,10 @@ class k implements e {
         }
 
         private Map c() {
-            if (this.f6460b == null) {
-                this.f6460b = a(this.f6459a);
+            if (this.f6566b == null) {
+                this.f6566b = a(this.f6565a);
             }
-            return this.f6460b;
+            return this.f6566b;
         }
 
         private static Bundle d(Context context) {
@@ -117,21 +117,21 @@ class k implements e {
 
     @Override // bc.e
     public synchronized m a(String str) {
-        if (this.f6458c.containsKey(str)) {
-            return (m) this.f6458c.get(str);
+        if (this.f6564c.containsKey(str)) {
+            return (m) this.f6564c.get(str);
         }
-        d b10 = this.f6456a.b(str);
+        d b10 = this.f6562a.b(str);
         if (b10 == null) {
             return null;
         }
-        m create = b10.create(this.f6457b.a(str));
-        this.f6458c.put(str, create);
+        m create = b10.create(this.f6563b.a(str));
+        this.f6564c.put(str, create);
         return create;
     }
 
     k(a aVar, i iVar) {
-        this.f6458c = new HashMap();
-        this.f6456a = aVar;
-        this.f6457b = iVar;
+        this.f6564c = new HashMap();
+        this.f6562a = aVar;
+        this.f6563b = iVar;
     }
 }

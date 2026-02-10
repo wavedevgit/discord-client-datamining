@@ -5,16 +5,16 @@ import javax.inject.Provider;
 public final class a implements Provider {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f7348c = new Object();
+    private static final Object f8029c = new Object();
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile Provider f7349a;
+    private volatile Provider f8030a;
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile Object f7350b = f7348c;
+    private volatile Object f8031b = f8029c;
 
     private a(Provider provider) {
-        this.f7349a = provider;
+        this.f8030a = provider;
     }
 
     public static Provider a(Provider provider) {
@@ -26,7 +26,7 @@ public final class a implements Provider {
     }
 
     public static Object b(Object obj, Object obj2) {
-        if (obj != f7348c) {
+        if (obj != f8029c) {
             if (obj == obj2) {
                 return obj2;
             }
@@ -38,16 +38,16 @@ public final class a implements Provider {
     @Override // javax.inject.Provider
     public Object get() {
         Object obj;
-        Object obj2 = this.f7350b;
-        Object obj3 = f7348c;
+        Object obj2 = this.f8031b;
+        Object obj3 = f8029c;
         if (obj2 == obj3) {
             synchronized (this) {
                 try {
-                    obj = this.f7350b;
+                    obj = this.f8031b;
                     if (obj == obj3) {
-                        obj = this.f7349a.get();
-                        this.f7350b = b(this.f7350b, obj);
-                        this.f7349a = null;
+                        obj = this.f8030a.get();
+                        this.f8031b = b(this.f8031b, obj);
+                        this.f8030a = null;
                     }
                 } catch (Throwable th2) {
                     throw th2;

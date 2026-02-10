@@ -9,13 +9,13 @@ import java.util.RandomAccess;
 public abstract class z extends w implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final d0 f37105e = new x(a0.f37079p, 0);
+    private static final d0 f36480e = new x(a0.f36454p, 0);
 
-    public static z i() {
-        return a0.f37079p;
+    public static z j() {
+        return a0.f36454p;
     }
 
-    public static z j(Collection collection) {
+    public static z k(Collection collection) {
         if (collection instanceof w) {
             z e10 = ((w) collection).e();
             if (e10.f()) {
@@ -39,7 +39,7 @@ public abstract class z extends w implements List, RandomAccess {
 
     static z l(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return a0.f37079p;
+            return a0.f36454p;
         }
         return new a0(objArr, i10);
     }
@@ -135,20 +135,6 @@ public abstract class z extends w implements List, RandomAccess {
         return size;
     }
 
-    @Override // java.util.List
-    /* renamed from: h */
-    public z subList(int i10, int i11) {
-        t.c(i10, i11, size());
-        int i12 = i11 - i10;
-        if (i12 == size()) {
-            return this;
-        }
-        if (i12 == 0) {
-            return a0.f37079p;
-        }
-        return new y(this, i10, i12);
-    }
-
     @Override // java.util.Collection, java.util.List
     public final int hashCode() {
         int size = size();
@@ -157,6 +143,20 @@ public abstract class z extends w implements List, RandomAccess {
             i10 = (i10 * 31) + get(i11).hashCode();
         }
         return i10;
+    }
+
+    @Override // java.util.List
+    /* renamed from: i */
+    public z subList(int i10, int i11) {
+        t.c(i10, i11, size());
+        int i12 = i11 - i10;
+        if (i12 == size()) {
+            return this;
+        }
+        if (i12 == 0) {
+            return a0.f36454p;
+        }
+        return new y(this, i10, i12);
     }
 
     @Override // java.util.List
@@ -201,7 +201,7 @@ public abstract class z extends w implements List, RandomAccess {
     public final d0 listIterator(int i10) {
         t.b(i10, size(), "index");
         if (isEmpty()) {
-            return f37105e;
+            return f36480e;
         }
         return new x(this, i10);
     }

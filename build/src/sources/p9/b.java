@@ -11,19 +11,19 @@ import p9.a;
 public abstract class b implements p9.a {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f43068e = new a(null);
+    public static final a f41526e = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private p9.a f43069a;
+    private p9.a f41527a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f43070b = -1;
+    private int f41528b = -1;
 
     /* renamed from: c  reason: collision with root package name */
-    private ColorFilter f43071c;
+    private ColorFilter f41529c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Rect f43072d;
+    private Rect f41530d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -36,12 +36,12 @@ public abstract class b implements p9.a {
     }
 
     public b(p9.a aVar) {
-        this.f43069a = aVar;
+        this.f41527a = aVar;
     }
 
     @Override // p9.d
     public int a() {
-        p9.a aVar = this.f43069a;
+        p9.a aVar = this.f41527a;
         if (aVar == null) {
             return 0;
         }
@@ -51,7 +51,7 @@ public abstract class b implements p9.a {
 
     @Override // p9.d
     public int b() {
-        p9.a aVar = this.f43069a;
+        p9.a aVar = this.f41527a;
         if (aVar == null) {
             return 0;
         }
@@ -61,7 +61,7 @@ public abstract class b implements p9.a {
 
     @Override // p9.a
     public int c() {
-        p9.a aVar = this.f43069a;
+        p9.a aVar = this.f41527a;
         if (aVar == null) {
             return -1;
         }
@@ -71,7 +71,7 @@ public abstract class b implements p9.a {
 
     @Override // p9.a
     public void clear() {
-        p9.a aVar = this.f43069a;
+        p9.a aVar = this.f41527a;
         if (aVar != null) {
             aVar.clear();
         }
@@ -80,16 +80,16 @@ public abstract class b implements p9.a {
     @Override // p9.a
     public void d(Rect bounds) {
         Intrinsics.checkNotNullParameter(bounds, "bounds");
-        p9.a aVar = this.f43069a;
+        p9.a aVar = this.f41527a;
         if (aVar != null) {
             aVar.d(bounds);
         }
-        this.f43072d = bounds;
+        this.f41530d = bounds;
     }
 
     @Override // p9.a
     public int e() {
-        p9.a aVar = this.f43069a;
+        p9.a aVar = this.f41527a;
         if (aVar == null) {
             return -1;
         }
@@ -99,16 +99,16 @@ public abstract class b implements p9.a {
 
     @Override // p9.a
     public void f(ColorFilter colorFilter) {
-        p9.a aVar = this.f43069a;
+        p9.a aVar = this.f41527a;
         if (aVar != null) {
             aVar.f(colorFilter);
         }
-        this.f43071c = colorFilter;
+        this.f41529c = colorFilter;
     }
 
     @Override // p9.d
     public int g() {
-        p9.a aVar = this.f43069a;
+        p9.a aVar = this.f41527a;
         if (aVar == null) {
             return 0;
         }
@@ -120,7 +120,7 @@ public abstract class b implements p9.a {
     public boolean h(Drawable parent, Canvas canvas, int i10) {
         Intrinsics.checkNotNullParameter(parent, "parent");
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        p9.a aVar = this.f43069a;
+        p9.a aVar = this.f41527a;
         if (aVar == null || !aVar.h(parent, canvas, i10)) {
             return false;
         }
@@ -129,7 +129,7 @@ public abstract class b implements p9.a {
 
     @Override // p9.d
     public int j() {
-        p9.a aVar = this.f43069a;
+        p9.a aVar = this.f41527a;
         if (aVar == null) {
             return 0;
         }
@@ -139,7 +139,7 @@ public abstract class b implements p9.a {
 
     @Override // p9.d
     public int k(int i10) {
-        p9.a aVar = this.f43069a;
+        p9.a aVar = this.f41527a;
         if (aVar == null) {
             return 0;
         }
@@ -149,16 +149,16 @@ public abstract class b implements p9.a {
 
     @Override // p9.a
     public void l(int i10) {
-        p9.a aVar = this.f43069a;
+        p9.a aVar = this.f41527a;
         if (aVar != null) {
             aVar.l(i10);
         }
-        this.f43070b = i10;
+        this.f41528b = i10;
     }
 
     @Override // p9.d
     public int m() {
-        p9.a aVar = this.f43069a;
+        p9.a aVar = this.f41527a;
         if (aVar == null) {
             return 0;
         }
@@ -167,10 +167,10 @@ public abstract class b implements p9.a {
     }
 
     @Override // p9.a
-    public void n(a.InterfaceC0610a interfaceC0610a) {
-        p9.a aVar = this.f43069a;
+    public void n(a.InterfaceC0586a interfaceC0586a) {
+        p9.a aVar = this.f41527a;
         if (aVar != null) {
-            aVar.n(interfaceC0610a);
+            aVar.n(interfaceC0586a);
         }
     }
 }

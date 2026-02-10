@@ -7,25 +7,25 @@ import android.os.Parcel;
 public abstract class a implements IInterface {
 
     /* renamed from: c  reason: collision with root package name */
-    private final IBinder f6592c;
+    private final IBinder f6698c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f6593d = "com.google.android.gms.appset.internal.IAppSetService";
+    private final String f6699d = "com.google.android.gms.appset.internal.IAppSetService";
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(IBinder iBinder, String str) {
-        this.f6592c = iBinder;
+        this.f6698c = iBinder;
     }
 
     @Override // android.os.IInterface
     public final IBinder asBinder() {
-        return this.f6592c;
+        return this.f6698c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Parcel e() {
         Parcel obtain = Parcel.obtain();
-        obtain.writeInterfaceToken(this.f6593d);
+        obtain.writeInterfaceToken(this.f6699d);
         return obtain;
     }
 
@@ -33,7 +33,7 @@ public abstract class a implements IInterface {
     public final void f(int i10, Parcel parcel) {
         Parcel obtain = Parcel.obtain();
         try {
-            this.f6592c.transact(1, parcel, obtain, 0);
+            this.f6698c.transact(1, parcel, obtain, 0);
             obtain.readException();
         } finally {
             parcel.recycle();

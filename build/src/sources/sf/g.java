@@ -6,13 +6,13 @@ import zg.k;
 final class g implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f49772a = new g();
+    public static final g f48088a = new g();
 
     g() {
     }
 
     @Override // gf.m
     public final /* bridge */ /* synthetic */ void accept(Object obj, Object obj2) {
-        ((b) ((e) obj).C()).z0(new f((k) obj2));
+        ((b) ((e) obj).C()).A0(new f((k) obj2));
     }
 }

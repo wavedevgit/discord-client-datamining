@@ -13,10 +13,10 @@ public abstract class b0 {
 
     public static void b(MediaFormat mediaFormat, pe.c cVar) {
         if (cVar != null) {
-            d(mediaFormat, "color-transfer", cVar.f43108i);
-            d(mediaFormat, "color-standard", cVar.f43106d);
-            d(mediaFormat, "color-range", cVar.f43107e);
-            a(mediaFormat, "hdr-static-info", cVar.f43109o);
+            d(mediaFormat, "color-transfer", cVar.f41566i);
+            d(mediaFormat, "color-standard", cVar.f41564d);
+            d(mediaFormat, "color-range", cVar.f41565e);
+            a(mediaFormat, "hdr-static-info", cVar.f41567o);
         }
     }
 

@@ -4,11 +4,11 @@ package com.swmansion.worklets;
 public class WorkletsMessageQueueThread extends WorkletsMessageQueueThreadBase {
     @Override // com.facebook.react.bridge.queue.MessageQueueThread
     public boolean isIdle() {
-        return this.f18542a.isIdle();
+        return this.f19422a.isIdle();
     }
 
     @Override // com.facebook.react.bridge.queue.MessageQueueThread
     public boolean runOnQueue(Runnable runnable) {
-        return this.f18542a.runOnQueue(runnable);
+        return this.f19422a.runOnQueue(runnable);
     }
 }

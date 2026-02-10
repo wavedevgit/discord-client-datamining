@@ -3,26 +3,26 @@ package io.sentry.android.core.performance;
 public class c implements Comparable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final i f27583d = new i();
+    private final i f28518d = new i();
 
     /* renamed from: e  reason: collision with root package name */
-    private final i f27584e = new i();
+    private final i f28519e = new i();
 
     @Override // java.lang.Comparable
     /* renamed from: a */
     public int compareTo(c cVar) {
-        int compare = Long.compare(this.f27583d.m(), cVar.f27583d.m());
+        int compare = Long.compare(this.f28518d.m(), cVar.f28518d.m());
         if (compare == 0) {
-            return Long.compare(this.f27584e.m(), cVar.f27584e.m());
+            return Long.compare(this.f28519e.m(), cVar.f28519e.m());
         }
         return compare;
     }
 
     public final i d() {
-        return this.f27583d;
+        return this.f28518d;
     }
 
     public final i e() {
-        return this.f27584e;
+        return this.f28519e;
     }
 }

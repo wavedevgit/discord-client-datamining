@@ -45,7 +45,7 @@ public final class StepStyles_StepSubmitButtonComponentStyleContainerJsonAdapter
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 buttonSubmitComponentStyle = (ButtonSubmitComponentStyle) this.nullableButtonSubmitComponentStyleAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class StepStyles_StepSubmitButtonComponentStyleContainerJsonAdapter
     public void toJson(@NotNull t writer, StepStyles.StepSubmitButtonComponentStyleContainer stepSubmitButtonComponentStyleContainer) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepSubmitButtonComponentStyleContainer != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableButtonSubmitComponentStyleAdapter.toJson(writer, stepSubmitButtonComponentStyleContainer.getBase());
             writer.s();

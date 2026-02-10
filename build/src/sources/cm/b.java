@@ -1,48 +1,66 @@
 package cm;
 
-import com.otaliastudios.zoom.OverPanRangeProvider;
+import android.content.Context;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.widget.OverScroller;
 import com.otaliastudios.zoom.ScaledPoint;
-import com.otaliastudios.zoom.ZoomEngine;
 import com.otaliastudios.zoom.ZoomLogger;
-import kotlin.jvm.functions.Function0;
+import dm.c;
+import em.b;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.ranges.d;
+import kotlin.jvm.internal.Lambda;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b extends cm.a {
+public final class b implements GestureDetector.OnGestureListener {
+    private static final ZoomLogger A;
 
-    /* renamed from: j  reason: collision with root package name */
-    public static final a f7681j = new a(null);
+    /* renamed from: y  reason: collision with root package name */
+    public static final a f8336y = new a(null);
 
-    /* renamed from: k  reason: collision with root package name */
-    private static final String f7682k;
-
-    /* renamed from: l  reason: collision with root package name */
-    private static final ZoomLogger f7683l;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final ZoomEngine f7684b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private boolean f7685c;
+    /* renamed from: z  reason: collision with root package name */
+    private static final String f8337z;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f7686d;
+    private final em.b f8338d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f7687e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private boolean f7688f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private int f7689g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private OverPanRangeProvider f7690h;
+    private final bm.a f8339e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ScaledPoint f7691i;
+    private final dm.b f8340i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final GestureDetector f8341o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private final OverScroller f8342p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private final b.C0304b f8343q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private final b.C0304b f8344r;
+
+    /* renamed from: s  reason: collision with root package name */
+    private boolean f8345s;
+
+    /* renamed from: t  reason: collision with root package name */
+    private boolean f8346t;
+
+    /* renamed from: u  reason: collision with root package name */
+    private boolean f8347u;
+
+    /* renamed from: v  reason: collision with root package name */
+    private boolean f8348v;
+
+    /* renamed from: w  reason: collision with root package name */
+    private boolean f8349w;
+
+    /* renamed from: x  reason: collision with root package name */
+    private boolean f8350x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -54,291 +72,305 @@ public final class b extends cm.a {
         }
     }
 
+    /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: cm.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0153b {
-
-        /* renamed from: a  reason: collision with root package name */
-        private int f7692a;
-
-        /* renamed from: b  reason: collision with root package name */
-        private int f7693b;
-
-        /* renamed from: c  reason: collision with root package name */
-        private int f7694c;
+    public static final class C0136b extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f7695d;
+        final /* synthetic */ ScaledPoint f8351d;
 
-        public final int a() {
-            return this.f7693b;
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        C0136b(ScaledPoint scaledPoint) {
+            super(1);
+            this.f8351d = scaledPoint;
         }
 
-        public final int b() {
-            return this.f7694c;
+        public final void a(c.a animateUpdate) {
+            Intrinsics.checkNotNullParameter(animateUpdate, "$this$animateUpdate");
+            animateUpdate.c(this.f8351d, true);
         }
 
-        public final int c() {
-            return this.f7692a;
+        @Override // kotlin.jvm.functions.Function1
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((c.a) obj);
+            return Unit.f31987a;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c implements Runnable {
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        static final class a extends Lambda implements Function1 {
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ ScaledPoint f8353d;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            a(ScaledPoint scaledPoint) {
+                super(1);
+                this.f8353d = scaledPoint;
+            }
+
+            public final void a(c.a applyUpdate) {
+                Intrinsics.checkNotNullParameter(applyUpdate, "$this$applyUpdate");
+                applyUpdate.e(this.f8353d, true);
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                a((c.a) obj);
+                return Unit.f31987a;
+            }
         }
 
-        public final boolean d() {
-            return this.f7695d;
+        c() {
         }
 
-        public final void e(int i10) {
-            this.f7693b = i10;
+        @Override // java.lang.Runnable
+        public void run() {
+            if (b.this.f8342p.isFinished()) {
+                b.this.f8339e.f();
+                b.this.f8341o.setIsLongpressEnabled(true);
+            } else if (b.this.f8342p.computeScrollOffset()) {
+                b.this.f8340i.h(new a(new ScaledPoint(b.this.f8342p.getCurrX(), b.this.f8342p.getCurrY())));
+                b.this.f8340i.C(this);
+            }
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class d extends Lambda implements Function1 {
+
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ ScaledPoint f8354d;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        d(ScaledPoint scaledPoint) {
+            super(1);
+            this.f8354d = scaledPoint;
         }
 
-        public final void f(boolean z10) {
-            this.f7695d = z10;
+        public final void a(c.a applyUpdate) {
+            Intrinsics.checkNotNullParameter(applyUpdate, "$this$applyUpdate");
+            applyUpdate.c(this.f8354d, true);
         }
 
-        public final void g(int i10) {
-            this.f7694c = i10;
-        }
-
-        public final void h(int i10) {
-            this.f7692a = i10;
+        @Override // kotlin.jvm.functions.Function1
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((c.a) obj);
+            return Unit.f31987a;
         }
     }
 
     static {
         String TAG = b.class.getSimpleName();
-        f7682k = TAG;
-        ZoomLogger.a aVar = ZoomLogger.f17433b;
+        f8337z = TAG;
+        ZoomLogger.a aVar = ZoomLogger.f18182b;
         Intrinsics.checkNotNullExpressionValue(TAG, "TAG");
-        f7683l = aVar.a(TAG);
+        A = aVar.a(TAG);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public b(ZoomEngine engine, Function0 provider) {
-        super(provider);
-        Intrinsics.checkNotNullParameter(engine, "engine");
-        Intrinsics.checkNotNullParameter(provider, "provider");
-        this.f7684b = engine;
-        this.f7685c = true;
-        this.f7686d = true;
-        this.f7687e = true;
-        this.f7688f = true;
-        this.f7689g = 51;
-        this.f7690h = OverPanRangeProvider.f17396b;
-        this.f7691i = new ScaledPoint(0.0f, 0.0f, 3, null);
+    public b(Context context, em.b panManager, bm.a stateController, dm.b matrixController) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        Intrinsics.checkNotNullParameter(panManager, "panManager");
+        Intrinsics.checkNotNullParameter(stateController, "stateController");
+        Intrinsics.checkNotNullParameter(matrixController, "matrixController");
+        this.f8338d = panManager;
+        this.f8339e = stateController;
+        this.f8340i = matrixController;
+        GestureDetector gestureDetector = new GestureDetector(context, this);
+        gestureDetector.setOnDoubleTapListener(null);
+        Unit unit = Unit.f31987a;
+        this.f8341o = gestureDetector;
+        this.f8342p = new OverScroller(context);
+        this.f8343q = new b.C0304b();
+        this.f8344r = new b.C0304b();
+        this.f8345s = true;
+        this.f8346t = true;
+        this.f8347u = true;
+        this.f8348v = true;
+        this.f8349w = true;
     }
 
-    public final float b(int i10, float f10, boolean z10) {
-        int i11;
-        if (z10) {
-            i11 = i10 & 7;
-        } else {
-            i11 = i10 & 112;
-        }
-        if (i11 != 1) {
-            if (i11 != 3) {
-                if (i11 != 5) {
-                    if (i11 != 16) {
-                        if (i11 == 48 || i11 != 80) {
-                            return 0.0f;
-                        }
-                    }
-                }
-                return f10;
+    private final boolean g() {
+        if (this.f8338d.n()) {
+            ScaledPoint f10 = this.f8338d.f();
+            if (f10.c() != 0.0f || f10.d() != 0.0f) {
+                this.f8340i.f(new C0136b(f10));
+                return true;
             }
-            return 0.0f;
+            return false;
         }
-        return f10 * 0.5f;
+        return false;
     }
 
-    public final float c(boolean z10, boolean z11) {
-        float x10;
-        float l10;
-        float o10;
+    public final void e() {
+        this.f8342p.forceFinished(true);
+    }
+
+    public final void f() {
+        if (!g()) {
+            this.f8339e.f();
+        }
+    }
+
+    public final boolean h(MotionEvent event) {
+        Intrinsics.checkNotNullParameter(event, "event");
+        return this.f8341o.onTouchEvent(event);
+    }
+
+    public final void i(boolean z10) {
+        this.f8345s = z10;
+    }
+
+    public final void j(boolean z10) {
+        this.f8350x = z10;
+    }
+
+    public final void k(boolean z10) {
+        this.f8347u = z10;
+    }
+
+    public final void l(boolean z10) {
+        this.f8346t = z10;
+    }
+
+    public final void m(boolean z10) {
+        this.f8349w = z10;
+    }
+
+    public final void n(boolean z10) {
+        this.f8348v = z10;
+    }
+
+    @Override // android.view.GestureDetector.OnGestureListener
+    public boolean onDown(MotionEvent e10) {
+        Intrinsics.checkNotNullParameter(e10, "e");
+        e();
+        return true;
+    }
+
+    @Override // android.view.GestureDetector.OnGestureListener
+    public boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent2, float f10, float f11) {
+        float f12;
+        float f13;
+        float f14;
+        if (!this.f8345s || !this.f8338d.m()) {
+            return false;
+        }
+        float f15 = 0.0f;
+        if (this.f8338d.h()) {
+            f12 = f10;
+        } else {
+            f12 = 0.0f;
+        }
+        int i10 = (int) f12;
+        if (this.f8338d.l()) {
+            f13 = f11;
+        } else {
+            f13 = 0.0f;
+        }
+        int i11 = (int) f13;
+        this.f8338d.d(true, this.f8343q);
+        this.f8338d.d(false, this.f8344r);
+        int c10 = this.f8343q.c();
+        int a10 = this.f8343q.a();
+        int b10 = this.f8343q.b();
+        int c11 = this.f8344r.c();
+        int a11 = this.f8344r.a();
+        int b11 = this.f8344r.b();
+        if (!this.f8350x && (this.f8343q.d() || this.f8344r.d())) {
+            return false;
+        }
+        if ((c10 >= b10 && c11 >= b11 && !this.f8338d.n()) || !this.f8339e.l()) {
+            return false;
+        }
+        this.f8341o.setIsLongpressEnabled(false);
+        if (this.f8338d.g()) {
+            f14 = this.f8338d.i();
+        } else {
+            f14 = 0.0f;
+        }
+        if (this.f8338d.k()) {
+            f15 = this.f8338d.j();
+        }
+        ZoomLogger zoomLogger = A;
+        zoomLogger.b("startFling", "velocityX:", Integer.valueOf(i10), "velocityY:", Integer.valueOf(i11));
+        zoomLogger.b("startFling", "flingX:", "min:", Integer.valueOf(c10), "max:", Integer.valueOf(b10), "start:", Integer.valueOf(a10), "overScroll:", Float.valueOf(f15));
+        zoomLogger.b("startFling", "flingY:", "min:", Integer.valueOf(c11), "max:", Integer.valueOf(b11), "start:", Integer.valueOf(a11), "overScroll:", Float.valueOf(f14));
+        this.f8342p.fling(a10, a11, i10, i11, c10, b10, c11, b11, (int) f14, (int) f15);
+        this.f8340i.B(new c());
+        return true;
+    }
+
+    @Override // android.view.GestureDetector.OnGestureListener
+    public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent2, float f10, float f11) {
+        boolean z10;
+        boolean z11;
         boolean z12;
-        float f10;
-        int e10;
-        float f11;
-        bm.b a10 = a();
-        if (z10) {
-            x10 = a10.w();
-        } else {
-            x10 = a10.x();
+        if (!this.f8346t) {
+            return false;
         }
-        bm.b a11 = a();
-        if (z10) {
-            l10 = a11.m();
+        if (motionEvent2 == null || motionEvent2.getPointerCount() != 1) {
+            z10 = false;
         } else {
-            l10 = a11.l();
+            z10 = true;
         }
-        bm.b a12 = a();
-        if (z10) {
-            o10 = a12.p();
+        if (motionEvent2 == null || motionEvent2.getPointerCount() != 2) {
+            z11 = false;
         } else {
-            o10 = a12.o();
-        }
-        if (z10) {
-            z12 = this.f7685c;
-        } else {
-            z12 = this.f7686d;
-        }
-        float f12 = 0.0f;
-        if (z12 && z11) {
-            if (z10) {
-                f10 = i();
-            } else {
-                f10 = j();
-            }
-        } else {
-            f10 = 0.0f;
-        }
-        if (z10) {
-            e10 = com.otaliastudios.zoom.a.f17438a.d(this.f7689g, 0);
-        } else {
-            e10 = com.otaliastudios.zoom.a.f17438a.e(this.f7689g, 0);
-        }
-        if (o10 <= l10) {
-            f11 = l10 - o10;
-            if (e10 != 0) {
-                f12 = b(e10, f11, z10);
-                f11 = f12;
-            }
-        } else {
-            f12 = l10 - o10;
-            f11 = 0.0f;
-        }
-        return d.l(x10, f12 - f10, f11 + f10) - x10;
-    }
-
-    public final void d(boolean z10, C0153b output) {
-        float x10;
-        float l10;
-        float o10;
-        int b10;
-        Intrinsics.checkNotNullParameter(output, "output");
-        bm.b a10 = a();
-        if (z10) {
-            x10 = a10.w();
-        } else {
-            x10 = a10.x();
-        }
-        int i10 = (int) x10;
-        bm.b a11 = a();
-        if (z10) {
-            l10 = a11.m();
-        } else {
-            l10 = a11.l();
-        }
-        int i11 = (int) l10;
-        bm.b a12 = a();
-        if (z10) {
-            o10 = a12.p();
-        } else {
-            o10 = a12.o();
-        }
-        int i12 = (int) o10;
-        boolean z11 = false;
-        int c10 = (int) c(z10, false);
-        if (z10) {
-            b10 = com.otaliastudios.zoom.a.f17438a.a(this.f7689g);
-        } else {
-            b10 = com.otaliastudios.zoom.a.f17438a.b(this.f7689g);
-        }
-        if (i12 > i11) {
-            output.h(-(i12 - i11));
-            output.g(0);
-        } else if (com.otaliastudios.zoom.a.f17438a.c(b10)) {
-            output.h(0);
-            output.g(i11 - i12);
-        } else {
-            int i13 = i10 + c10;
-            output.h(i13);
-            output.g(i13);
-        }
-        output.e(i10);
-        if (c10 != 0) {
             z11 = true;
         }
-        output.f(z11);
-    }
-
-    public final int e() {
-        return this.f7689g;
-    }
-
-    public final ScaledPoint f() {
-        this.f7691i.g(Float.valueOf(c(true, false)), Float.valueOf(c(false, false)));
-        return this.f7691i;
-    }
-
-    public final boolean g() {
-        return this.f7685c;
-    }
-
-    public final boolean h() {
-        return this.f7687e;
-    }
-
-    public final float i() {
-        float a10 = this.f7690h.a(this.f7684b, true);
-        if (a10 < 0.0f) {
-            f7683l.g("Received negative maxHorizontalOverPan value, coercing to 0");
-            return d.c(a10, 0.0f);
+        if (motionEvent2 == null || motionEvent2.getPointerCount() != 3) {
+            z12 = false;
+        } else {
+            z12 = true;
         }
-        return a10;
-    }
-
-    public final float j() {
-        float a10 = this.f7690h.a(this.f7684b, false);
-        if (a10 < 0.0f) {
-            f7683l.g("Received negative maxVerticalOverPan value, coercing to 0");
-            return d.c(a10, 0.0f);
-        }
-        return a10;
-    }
-
-    public final boolean k() {
-        return this.f7686d;
-    }
-
-    public final boolean l() {
-        return this.f7688f;
-    }
-
-    public boolean m() {
-        if (!this.f7687e && !this.f7688f) {
+        if (!this.f8347u && z10) {
             return false;
+        }
+        if (!this.f8348v && z11) {
+            return false;
+        }
+        if ((!this.f8349w && z12) || !this.f8338d.m() || !this.f8339e.n()) {
+            return false;
+        }
+        ScaledPoint scaledPoint = new ScaledPoint(-f10, -f11);
+        ScaledPoint f12 = this.f8338d.f();
+        if ((f12.c() < 0.0f && scaledPoint.c() > 0.0f) || (f12.c() > 0.0f && scaledPoint.c() < 0.0f)) {
+            float pow = (1.0f - ((float) Math.pow(Math.abs(f12.c()) / this.f8338d.i(), 0.4d))) * 0.6f;
+            A.b("onScroll", "applying friction X:", Float.valueOf(pow));
+            scaledPoint.h(scaledPoint.c() * pow);
+        }
+        if ((f12.d() < 0.0f && scaledPoint.d() > 0.0f) || (f12.d() > 0.0f && scaledPoint.d() < 0.0f)) {
+            float pow2 = (1.0f - ((float) Math.pow(Math.abs(f12.d()) / this.f8338d.j(), 0.4d))) * 0.6f;
+            A.b("onScroll", "applying friction Y:", Float.valueOf(pow2));
+            scaledPoint.i(scaledPoint.d() * pow2);
+        }
+        if (!this.f8338d.h()) {
+            scaledPoint.h(0.0f);
+        }
+        if (!this.f8338d.l()) {
+            scaledPoint.i(0.0f);
+        }
+        if (scaledPoint.c() != 0.0f || scaledPoint.d() != 0.0f) {
+            this.f8340i.h(new d(scaledPoint));
         }
         return true;
     }
 
-    public boolean n() {
-        if (!this.f7685c && !this.f7686d) {
-            return false;
-        }
-        return true;
+    @Override // android.view.GestureDetector.OnGestureListener
+    public boolean onSingleTapUp(MotionEvent motionEvent) {
+        return false;
     }
 
-    public final void o(int i10) {
-        this.f7689g = i10;
+    @Override // android.view.GestureDetector.OnGestureListener
+    public void onLongPress(MotionEvent motionEvent) {
     }
 
-    public final void p(boolean z10) {
-        this.f7685c = z10;
-    }
-
-    public final void q(boolean z10) {
-        this.f7687e = z10;
-    }
-
-    public final void r(OverPanRangeProvider overPanRangeProvider) {
-        Intrinsics.checkNotNullParameter(overPanRangeProvider, "<set-?>");
-        this.f7690h = overPanRangeProvider;
-    }
-
-    public final void s(boolean z10) {
-        this.f7686d = z10;
-    }
-
-    public final void t(boolean z10) {
-        this.f7688f = z10;
+    @Override // android.view.GestureDetector.OnGestureListener
+    public void onShowPress(MotionEvent motionEvent) {
     }
 }

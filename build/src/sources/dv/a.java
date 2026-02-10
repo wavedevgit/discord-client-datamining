@@ -1,50 +1,33 @@
 package dv;
 
-import dv.c;
-import fv.b;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements tu.b, c, fv.b {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f20988a = new a();
+public interface a {
 
     /* renamed from: dv.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class C0311a extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final C0311a f20989d = new C0311a();
-
-        C0311a() {
-            super(1);
+    public static final class C0298a {
+        public static Boolean a(a aVar, Object obj) {
+            Double p10;
+            if (obj instanceof Boolean) {
+                return (Boolean) obj;
+            }
+            boolean z10 = false;
+            if (obj instanceof Number) {
+                if (((Number) obj).longValue() > 0) {
+                    z10 = true;
+                }
+                return Boolean.valueOf(z10);
+            } else if (!(obj instanceof String) || (p10 = StringsKt.p((String) obj)) == null) {
+                return null;
+            } else {
+                if (((long) p10.doubleValue()) > 0) {
+                    z10 = true;
+                }
+                return Boolean.valueOf(z10);
+            }
         }
-
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final Double invoke(List it) {
-            Intrinsics.checkNotNullParameter(it, "it");
-            return Double.valueOf(CollectionsKt.Y0(it));
-        }
     }
 
-    private a() {
-    }
-
-    public Double a(Object obj, Function1 function1) {
-        return c.a.a(this, obj, function1);
-    }
-
-    public List b(Object obj) {
-        return b.a.b(this, obj);
-    }
-
-    @Override // tu.b
-    public Object f(Object obj, Object obj2) {
-        return a(b(obj), C0311a.f20989d);
-    }
+    Boolean c(Object obj);
 }

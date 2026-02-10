@@ -3,14 +3,14 @@ package gg;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f24399a;
+    public static final com.google.android.gms.common.d f25699a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final com.google.android.gms.common.d[] f24400b;
+    public static final com.google.android.gms.common.d[] f25700b;
 
     static {
         com.google.android.gms.common.d dVar = new com.google.android.gms.common.d("moduleinstall", 7L);
-        f24399a = dVar;
-        f24400b = new com.google.android.gms.common.d[]{dVar};
+        f25699a = dVar;
+        f25700b = new com.google.android.gms.common.d[]{dVar};
     }
 }

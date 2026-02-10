@@ -7,13 +7,13 @@ public enum YogaDisplay {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f11539d;
+    private final int f12116d;
 
     YogaDisplay(int i10) {
-        this.f11539d = i10;
+        this.f12116d = i10;
     }
 
     public int d() {
-        return this.f11539d;
+        return this.f12116d;
     }
 }

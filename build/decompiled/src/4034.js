@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var8;
     var0 = ['enabled', 'freezeOnBlur', 'shouldFreeze'];
     var _closure1_slot3 = var0;
-    var0 = ['active', 'activityState', 'children', 'isNativeStack', 'gestureResponseDistance', 'onGestureCancel', 'style'];
+    var0 = ['active', 'activityState', 'children', 'isNativeStack', 'fullScreenSwipeEnabled', 'gestureResponseDistance', 'scrollEdgeEffects', 'onGestureCancel', 'style'];
     var _closure1_slot4 = var0;
     var0 = ['active', 'activityState', 'style', 'onComponentRef'];
     var _closure1_slot5 = var0;
@@ -60,12 +60,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot0 = var9;
                 var6 = _closure1_slot7;
                 var0 = var6.useRef;
-                var19 = null;
-                var0 = var0.bind(var6)(var19);
+                var4 = null;
+                var0 = var0.bind(var6)(var4);
                 var _closure2_slot1 = var0;
                 var3 = var6.useImperativeHandle;
                 var2 = arg1;
-                var1 = function() { // Environment: var4
+                var1 = function() { // Environment: var14
                     var0 = _closure2_slot1;
                     var0 = var0.current;
                     return var0;
@@ -81,7 +81,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.usePrevious;
                 var0 = var9.activityState;
                 var2 = var1.bind(var2)(var0);
-                var25 = function arg0() {
+                var22 = function arg0() {
                     _fun37382: for (var _fun37382_ip = 0;;) switch (_fun37382_ip) {
                         case 0:
                             var2 = arg0;
@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                     }
                 };
-                var _closure2_slot2 = var25;
+                var _closure2_slot2 = var22;
                 var7 = var6.useRef;
                 var0 = _closure1_slot8;
                 var5 = var0.Value;
@@ -114,9 +114,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 });
                 var1 = 0;
-                var38 = var8;
-                var37 = 0;
-                var5 = new var38[var5](var37, var36);
+                var43 = var8;
+                var42 = 0;
+                var5 = new var43[var5](var42, var41);
                 var5 = var5 instanceof Object ? var5 : var8;
                 var5 = var7.bind(var6)(var5);
                 var16 = var5.current;
@@ -128,9 +128,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         value: var5
                     }
                 });
-                var38 = var8;
-                var37 = 0;
-                var5 = new var38[var5](var37, var36);
+                var43 = var8;
+                var42 = 0;
+                var5 = new var43[var5](var42, var41);
                 var5 = var5 instanceof Object ? var5 : var8;
                 var5 = var7.bind(var6)(var5);
                 var17 = var5.current;
@@ -142,9 +142,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         value: var0
                     }
                 });
-                var38 = var7;
-                var37 = 0;
-                var0 = new var38[var0](var37, var36);
+                var43 = var7;
+                var42 = 0;
+                var0 = new var43[var0](var42, var41);
                 var0 = var0 instanceof Object ? var0 : var7;
                 var0 = var5.bind(var6)(var0);
                 var15 = var0.current;
@@ -179,8 +179,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var9.shouldFreeze;
                 var8 = _closure1_slot6;
                 var7 = _closure1_slot3;
-                var33 = var8.bind(var3)(var9, var7);
-                var13 = var33.sheetAllowedDetents;
+                var38 = var8.bind(var3)(var9, var7);
+                var13 = var38.sheetAllowedDetents;
                 if (!(var3 === var13)) {
                     _fun37380_ip = 359;
                     continue _fun37380
@@ -188,8 +188,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 349:
                 var13 = [1];
             case 359:
-                var24 = var33.sheetLargestUndimmedDetentIndex;
-                if (!(var3 === var24)) {
+                var21 = var38.sheetLargestUndimmedDetentIndex;
+                if (!(var3 === var21)) {
                     _fun37380_ip = 397;
                     continue _fun37380
                 }
@@ -199,46 +199,46 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = 8;
                 var7 = var9[var7];
                 var7 = var8.bind(var3)(var7);
-                var24 = var7.SHEET_DIMMED_ALWAYS;
+                var21 = var7.SHEET_DIMMED_ALWAYS;
             case 397:
-                var7 = var33.sheetGrabberVisible;
-                var22 = var3 !== var7;
-                if (!var22) {
+                var7 = var38.sheetGrabberVisible;
+                var24 = var3 !== var7;
+                if (!var24) {
                     _fun37380_ip = 413;
                     continue _fun37380
                 }
             case 410:
-                var22 = var7;
+                var24 = var7;
             case 413:
-                var7 = var33.sheetCornerRadius;
-                var14 = -1;
-                var21 = var14;
+                var7 = var38.sheetCornerRadius;
+                var19 = -1;
+                var23 = var19;
                 if (!(var3 !== var7)) {
                     _fun37380_ip = 435;
                     continue _fun37380
                 }
             case 432:
-                var21 = var7;
+                var23 = var7;
             case 435:
-                var7 = var33.sheetExpandsWhenScrolledToEdge;
-                var18 = var3 === var7;
-                if (var18) {
+                var7 = var38.sheetExpandsWhenScrolledToEdge;
+                var20 = var3 === var7;
+                if (var20) {
                     _fun37380_ip = 451;
                     continue _fun37380
                 }
             case 448:
-                var18 = var7;
+                var20 = var7;
             case 451:
-                var7 = var33.sheetElevation;
-                var23 = 24;
+                var7 = var38.sheetElevation;
+                var27 = 24;
                 if (!(var3 !== var7)) {
                     _fun37380_ip = 467;
                     continue _fun37380
                 }
             case 464:
-                var23 = var7;
+                var27 = var7;
             case 467:
-                var7 = var33.sheetInitialDetentIndex;
+                var7 = var38.sheetInitialDetentIndex;
                 var9 = 0;
                 if (!(var3 !== var7)) {
                     _fun37380_ip = 484;
@@ -247,16 +247,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 481:
                 var9 = var7;
             case 484:
-                var7 = var33.stackPresentation;
-                var32 = var33.onAppear;
-                var31 = var33.onDisappear;
-                var30 = var33.onWillAppear;
-                var29 = var33.onWillDisappear;
-                if (!var5) {
-                    _fun37380_ip = 549;
+                var7 = var38.sheetShouldOverflowTopInset;
+                var26 = var3 !== var7;
+                if (!var26) {
+                    _fun37380_ip = 500;
                     continue _fun37380
                 }
-            case 517:
+            case 497:
+                var26 = var7;
+            case 500:
+                var7 = var38.sheetDefaultResizeAnimationEnabled;
+                var25 = var3 === var7;
+                if (var25) {
+                    _fun37380_ip = 516;
+                    continue _fun37380
+                }
+            case 513:
+                var25 = var7;
+            case 516:
+                var30 = var38.screenId;
+                var7 = var38.stackPresentation;
+                var37 = var38.onAppear;
+                var36 = var38.onDisappear;
+                var35 = var38.onWillAppear;
+                var34 = var38.onWillDisappear;
+                if (!var5) {
+                    _fun37380_ip = 587;
+                    continue _fun37380
+                }
+            case 555:
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot2;
                 var5 = 7;
@@ -264,40 +283,40 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var7.bind(var3)(var5);
                 var5 = var5.isNativePlatformSupported;
                 if (var5) {
-                    _fun37380_ip = 692;
+                    _fun37380_ip = 730;
                     continue _fun37380
                 }
-            case 549:
-                var7 = var33.active;
-                var34 = var33.activityState;
-                var27 = var33.style;
-                var5 = var33.onComponentRef;
+            case 587:
+                var7 = var38.active;
+                var32 = var38.activityState;
+                var29 = var38.style;
+                var5 = var38.onComponentRef;
                 var8 = _closure1_slot6;
                 var5 = _closure1_slot5;
-                var20 = var8.bind(var3)(var33, var5);
+                var18 = var8.bind(var3)(var38, var5);
                 var5 = var3 !== var7;
                 if (!var5) {
-                    _fun37380_ip = 597;
+                    _fun37380_ip = 635;
                     continue _fun37380
                 }
-            case 593:
-                var5 = var3 === var34;
-            case 597:
+            case 631:
+                var5 = var3 === var32;
+            case 635:
                 if (!var5) {
-                    _fun37380_ip = 612;
+                    _fun37380_ip = 650;
                     continue _fun37380
                 }
-            case 600:
+            case 638:
                 var5 = 0;
                 if (!(var1 !== var7)) {
-                    _fun37380_ip = 609;
+                    _fun37380_ip = 647;
                     continue _fun37380
                 }
-            case 606:
+            case 644:
                 var5 = 2;
-            case 609:
-                var34 = var5;
-            case 612:
+            case 647:
+                var32 = var5;
+            case 650:
                 var8 = _closure1_slot9;
                 var5 = _closure1_slot8;
                 var7 = var5.View;
@@ -305,118 +324,120 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var12 = var5.Object;
                 var11 = var12.assign;
                 var5 = {};
-                var26 = new Array(2);
-                var26[0] = var27;
-                var27 = {};
-                var28 = 'none';
-                if (!(var1 !== var34)) {
-                    _fun37380_ip = 662;
+                var28 = new Array(2);
+                var28[0] = var29;
+                var29 = {};
+                var31 = 'none';
+                if (!(var1 !== var32)) {
+                    _fun37380_ip = 700;
                     continue _fun37380
                 }
-            case 658:
-                var28 = 'flex';
-            case 662:
-                var27.display = var28;
-                var26[1] = var27;
-                var5.style = var26;
-                var5.ref = var25;
-                var5 = var11.bind(var12)(var5, var20);
+            case 696:
+                var31 = 'flex';
+            case 700:
+                var29.display = var31;
+                var28[1] = var29;
+                var5.style = var28;
+                var5.ref = var22;
+                var5 = var11.bind(var12)(var5, var18);
                 var5 = var8.bind(var3)(var7, var5);
                 return var5;
-            case 692:
+            case 730:
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot2;
                 var5 = 8;
                 var11 = var8[var5];
                 var12 = var7.bind(var3)(var11);
                 var11 = var12.resolveSheetAllowedDetents;
-                var25 = var11.bind(var12)(var13);
+                var29 = var11.bind(var12)(var13);
                 var11 = var8[var5];
-                var20 = var7.bind(var3)(var11);
-                var13 = var20.resolveSheetLargestUndimmedDetent;
-                var12 = var25.length;
+                var18 = var7.bind(var3)(var11);
+                var13 = var18.resolveSheetLargestUndimmedDetent;
+                var12 = var29.length;
                 var11 = 1;
                 var12 = var12 - var11;
-                var24 = var13.bind(var20)(var24, var12);
+                var28 = var13.bind(var18)(var21, var12);
                 var5 = var8[var5];
                 var8 = var7.bind(var3)(var5);
                 var7 = var8.resolveSheetInitialDetentIndex;
-                var5 = var25.length;
+                var5 = var29.length;
                 var5 = var5 - var11;
-                var12 = var7.bind(var8)(var9, var5);
+                var18 = var7.bind(var8)(var9, var5);
                 var5 = _closure1_slot10;
-                var8 = var33.active;
-                var26 = var33.activityState;
-                var13 = var33.children;
-                var11 = var33.isNativeStack;
-                var20 = var33.gestureResponseDistance;
-                var27 = var33.onGestureCancel;
-                var28 = var33.style;
+                var8 = var38.active;
+                var31 = var38.activityState;
+                var13 = var38.children;
+                var11 = var38.isNativeStack;
+                var22 = var38.fullScreenSwipeEnabled;
+                var21 = var38.gestureResponseDistance;
+                var12 = var38.scrollEdgeEffects;
+                var32 = var38.onGestureCancel;
+                var33 = var38.style;
                 var9 = _closure1_slot6;
                 var7 = _closure1_slot4;
-                var9 = var9.bind(var3)(var33, var7);
+                var9 = var9.bind(var3)(var38, var7);
                 var7 = var3 !== var8;
                 if (!var7) {
-                    _fun37380_ip = 855;
-                    continue _fun37380
-                }
-            case 851:
-                var7 = var3 === var26;
-            case 855:
-                if (!var7) {
-                    _fun37380_ip = 894;
-                    continue _fun37380
-                }
-            case 858:
-                var7 = global;
-                var34 = var7.console;
-                var33 = var34.warn;
-                var7 = 'It appears that you are using old version of react-navigation library. Please update @react-navigation/bottom-tabs, @react-navigation/stack and @react-navigation/drawer to version 5.10.0 or above to take full advantage of new functionality added to react-native-screens';
-                var7 = var33.bind(var34)(var7);
-                var7 = 0;
-                if (!(var7 !== var8)) {
-                    _fun37380_ip = 891;
-                    continue _fun37380
-                }
-            case 888:
-                var7 = 2;
-            case 891:
-                var26 = var7;
-            case 894:
-                if (!var11) {
-                    _fun37380_ip = 912;
-                    continue _fun37380
-                }
-            case 897:
-                if (!(var3 !== var2)) {
-                    _fun37380_ip = 912;
+                    _fun37380_ip = 905;
                     continue _fun37380
                 }
             case 901:
-                if (!(var3 !== var26)) {
-                    _fun37380_ip = 912;
-                    continue _fun37380
-                }
+                var7 = var3 === var31;
             case 905:
-                if (!(!(var2 > var26))) {
-                    _fun37380_ip = 1373;
+                if (!var7) {
+                    _fun37380_ip = 944;
                     continue _fun37380
                 }
-            case 912:
+            case 908:
+                var7 = global;
+                var39 = var7.console;
+                var38 = var39.warn;
+                var7 = 'It appears that you are using old version of react-navigation library. Please update @react-navigation/bottom-tabs, @react-navigation/stack and @react-navigation/drawer to version 5.10.0 or above to take full advantage of new functionality added to react-native-screens';
+                var7 = var38.bind(var39)(var7);
+                var7 = 0;
+                if (!(var7 !== var8)) {
+                    _fun37380_ip = 941;
+                    continue _fun37380
+                }
+            case 938:
+                var7 = 2;
+            case 941:
+                var31 = var7;
+            case 944:
+                if (!var11) {
+                    _fun37380_ip = 962;
+                    continue _fun37380
+                }
+            case 947:
+                if (!(var3 !== var2)) {
+                    _fun37380_ip = 962;
+                    continue _fun37380
+                }
+            case 951:
+                if (!(var3 !== var31)) {
+                    _fun37380_ip = 962;
+                    continue _fun37380
+                }
+            case 955:
+                if (!(!(var2 > var31))) {
+                    _fun37380_ip = 1612;
+                    continue _fun37380
+                }
+            case 962:
                 if (!var6) {
-                    _fun37380_ip = 926;
+                    _fun37380_ip = 976;
                     continue _fun37380
                 }
-            case 915:
+            case 965:
                 if (!(var3 === var0)) {
-                    _fun37380_ip = 923;
+                    _fun37380_ip = 973;
                     continue _fun37380
                 }
-            case 919:
-                var0 = var1 === var26;
-            case 923:
+            case 969:
+                var0 = var1 === var31;
+            case 973:
                 var6 = var0;
-            case 926:
+            case 976:
                 var2 = _closure1_slot9;
                 var1 = _closure1_slot1;
                 var7 = _closure1_slot2;
@@ -429,113 +450,124 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var6.Object;
                 var7 = var8.assign;
                 var6 = {};
-                var6.onAppear = var32;
-                var6.onDisappear = var31;
-                var6.onWillAppear = var30;
-                var6.onWillDisappear = var29;
-                if (!(var19 == var27)) {
-                    _fun37380_ip = 1001;
+                var6.onAppear = var37;
+                var6.onDisappear = var36;
+                var6.onWillAppear = var35;
+                var6.onWillDisappear = var34;
+                if (!(var4 == var32)) {
+                    _fun37380_ip = 1051;
                     continue _fun37380
                 }
-            case 996:
-                var27 = function() { // Environment: var4
+            case 1046:
+                var32 = function() { // Environment: var14
                     var0 = undefined;
                     return var0;
                 };
-            case 1001:
-                var6.onGestureCancel = var27;
-                var27 = new Array(2);
-                var27[0] = var28;
-                var28 = {};
-                var28.zIndex = var3;
-                var27[1] = var28;
-                var6.style = var27;
-                var6.activityState = var26;
-                var6.sheetAllowedDetents = var25;
-                var6.sheetLargestUndimmedDetent = var24;
-                var6.sheetElevation = var23;
-                var6.sheetGrabberVisible = var22;
-                var6.sheetCornerRadius = var21;
-                var6.sheetExpandsWhenScrolledToEdge = var18;
-                var6.sheetInitialDetent = var12;
-                var12 = {};
-                var18 = var19 == var20;
-                var21 = undefined;
-                if (var18) {
-                    _fun37380_ip = 1085;
+            case 1051:
+                var6.onGestureCancel = var32;
+                var32 = new Array(2);
+                var32[0] = var33;
+                var33 = {};
+                var33.zIndex = var3;
+                var32[1] = var33;
+                var6.style = var32;
+                var6.activityState = var31;
+                var6.screenId = var30;
+                var6.sheetAllowedDetents = var29;
+                var6.sheetLargestUndimmedDetent = var28;
+                var6.sheetElevation = var27;
+                var6.sheetShouldOverflowTopInset = var26;
+                var6.sheetDefaultResizeAnimationEnabled = var25;
+                var6.sheetGrabberVisible = var24;
+                var6.sheetCornerRadius = var23;
+                var6.sheetExpandsWhenScrolledToEdge = var20;
+                var6.sheetInitialDetent = var18;
+                var20 = _closure1_slot0;
+                var23 = _closure1_slot2;
+                var18 = 10;
+                var18 = var23[var18];
+                var20 = var20.bind(var3)(var18);
+                var18 = var20.parseBooleanToOptionalBooleanNativeProp;
+                var18 = var18.bind(var20)(var22);
+                var6.fullScreenSwipeEnabled = var18;
+                var18 = {};
+                var20 = var4 == var21;
+                var22 = undefined;
+                if (var20) {
+                    _fun37380_ip = 1186;
                     continue _fun37380
                 }
-            case 1080:
-                var21 = var20.start;
-            case 1085:
-                var22 = var19 != var21;
-                var18 = var14;
-                if (!var22) {
-                    _fun37380_ip = 1098;
+            case 1181:
+                var22 = var21.start;
+            case 1186:
+                var23 = var4 != var22;
+                var20 = var19;
+                if (!var23) {
+                    _fun37380_ip = 1199;
                     continue _fun37380
                 }
-            case 1095:
-                var18 = var21;
-            case 1098:
-                var12.start = var18;
-                var18 = var19 == var20;
-                var21 = undefined;
-                if (var18) {
-                    _fun37380_ip = 1116;
+            case 1196:
+                var20 = var22;
+            case 1199:
+                var18.start = var20;
+                var20 = var4 == var21;
+                var22 = undefined;
+                if (var20) {
+                    _fun37380_ip = 1217;
                     continue _fun37380
                 }
-            case 1111:
-                var21 = var20.end;
-            case 1116:
-                var22 = var19 != var21;
-                var18 = var14;
-                if (!var22) {
-                    _fun37380_ip = 1129;
+            case 1212:
+                var22 = var21.end;
+            case 1217:
+                var23 = var4 != var22;
+                var20 = var19;
+                if (!var23) {
+                    _fun37380_ip = 1230;
                     continue _fun37380
                 }
-            case 1126:
-                var18 = var21;
-            case 1129:
-                var12.end = var18;
-                var18 = var19 == var20;
-                var21 = undefined;
-                if (var18) {
-                    _fun37380_ip = 1147;
+            case 1227:
+                var20 = var22;
+            case 1230:
+                var18.end = var20;
+                var20 = var4 == var21;
+                var22 = undefined;
+                if (var20) {
+                    _fun37380_ip = 1248;
                     continue _fun37380
                 }
-            case 1142:
-                var21 = var20.top;
-            case 1147:
-                var22 = var19 != var21;
-                var18 = var14;
-                if (!var22) {
-                    _fun37380_ip = 1160;
+            case 1243:
+                var22 = var21.top;
+            case 1248:
+                var23 = var4 != var22;
+                var20 = var19;
+                if (!var23) {
+                    _fun37380_ip = 1261;
                     continue _fun37380
                 }
-            case 1157:
-                var18 = var21;
-            case 1160:
-                var12.top = var18;
-                var21 = var19 == var20;
-                var18 = undefined;
-                if (var21) {
-                    _fun37380_ip = 1178;
+            case 1258:
+                var20 = var22;
+            case 1261:
+                var18.top = var20;
+                var22 = var4 == var21;
+                var20 = undefined;
+                if (var22) {
+                    _fun37380_ip = 1279;
                     continue _fun37380
                 }
-            case 1173:
-                var18 = var20.bottom;
-            case 1178:
-                var19 = var19 != var18;
-                if (!var19) {
-                    _fun37380_ip = 1188;
+            case 1274:
+                var20 = var21.bottom;
+            case 1279:
+                var21 = var4 != var20;
+                if (!var21) {
+                    _fun37380_ip = 1289;
                     continue _fun37380
                 }
-            case 1185:
-                var14 = var18;
-            case 1188:
-                var12.bottom = var14;
-                var6.gestureResponseDistance = var12;
-                var4 = function arg0() {
+            case 1286:
+                var19 = var20;
+            case 1289:
+                var18.bottom = var19;
+                var6.gestureResponseDistance = var18;
+                var14 = function arg0() {
                     _fun37384: for (var _fun37384_ip = 0;;) switch (_fun37384_ip) {
                         case 0:
                             var2 = arg0;
@@ -559,62 +591,98 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         case 29:
                             var1 = var1.style;
                             if (var1) {
-                                _fun37384_ip = 174;
+                                _fun37384_ip = 263;
                                 continue _fun37384
                             }
                         case 40:
-                            var1 = var0 != var2;
-                            var3 = undefined;
-                            var5 = undefined;
-                            if (!var1) {
-                                _fun37384_ip = 64;
+                            if (!(var0 != var2)) {
+                                _fun37384_ip = 75;
                                 continue _fun37384
                             }
-                        case 51:
-                            var4 = var2._viewConfig;
-                            var1 = var0 != var4;
-                            var5 = var4;
-                        case 64:
-                            var4 = var5;
-                            if (!var1) {
-                                _fun37384_ip = 83;
-                                continue _fun37384
-                            }
-                        case 70:
-                            var5 = var5.validAttributes;
-                            var1 = var0 != var5;
-                            var4 = var5;
-                        case 83:
-                            if (!var1) {
-                                _fun37384_ip = 91;
-                                continue _fun37384
-                            }
-                        case 86:
-                            var1 = var4.style;
-                        case 91:
-                            if (!var1) {
-                                _fun37384_ip = 251;
-                                continue _fun37384
-                            }
-                        case 97:
+                        case 44:
                             var1 = var2._viewConfig;
-                            var4 = var1.validAttributes;
+                            if (!(var0 != var1)) {
+                                _fun37384_ip = 75;
+                                continue _fun37384
+                            }
+                        case 54:
+                            var1 = var1.validAttributes;
+                            if (!(var0 != var1)) {
+                                _fun37384_ip = 75;
+                                continue _fun37384
+                            }
+                        case 64:
+                            var1 = var1.style;
+                            if (var1) {
+                                _fun37384_ip = 198;
+                                continue _fun37384
+                            }
+                        case 75:
+                            var1 = var0 != var2;
+                            var4 = undefined;
+                            if (!var1) {
+                                _fun37384_ip = 97;
+                                continue _fun37384
+                            }
+                        case 84:
+                            var3 = var2.__viewConfig;
+                            var1 = var0 != var3;
+                            var4 = var3;
+                        case 97:
+                            var3 = var4;
+                            if (!var1) {
+                                _fun37384_ip = 116;
+                                continue _fun37384
+                            }
+                        case 103:
+                            var4 = var4.validAttributes;
+                            var1 = var0 != var4;
+                            var3 = var4;
+                        case 116:
+                            if (!var1) {
+                                _fun37384_ip = 124;
+                                continue _fun37384
+                            }
+                        case 119:
+                            var1 = var3.style;
+                        case 124:
+                            if (!var1) {
+                                _fun37384_ip = 326;
+                                continue _fun37384
+                            }
+                        case 130:
+                            var1 = var2.__viewConfig;
+                            var3 = var1.validAttributes;
                             var1 = global;
-                            var8 = var1.Object;
-                            var7 = var8.assign;
+                            var7 = var1.Object;
+                            var6 = var7.assign;
+                            var1 = var2.__viewConfig;
+                            var1 = var1.validAttributes;
+                            var5 = var1.style;
+                            var4 = {};
+                            var4.display = var0;
+                            var1 = {};
+                            var1 = var6.bind(var7)(var1, var5, var4);
+                            var3.style = var1;
+                            _fun37384_ip = 326;
+                            continue _fun37384;
+                        case 198:
+                            var1 = var2._viewConfig;
+                            var3 = var1.validAttributes;
+                            var1 = global;
+                            var7 = var1.Object;
+                            var6 = var7.assign;
                             var1 = var2._viewConfig;
                             var1 = var1.validAttributes;
-                            var6 = var1.style;
-                            var5 = {};
-                            var5.display = var0;
+                            var5 = var1.style;
+                            var4 = {};
+                            var4.display = var0;
                             var1 = {};
-                            var1 = var7.bind(var8)(var1, var6, var5);
-                            var4.style = var1;
-                            var1 = _closure2_slot2;
-                            var1 = var1.bind(var3)(var2);
-                            _fun37384_ip = 251;
+                            var1 = var6.bind(var7)(var1, var5, var4);
+                            var3.style = var1;
+                            _fun37384_ip = 326;
                             continue _fun37384;
-                        case 174:
+                        case 263:
                             var1 = var2.viewConfig;
                             var1 = var1.validAttributes;
                             var3 = global;
@@ -628,47 +696,99 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = {};
                             var0 = var5.bind(var6)(var0, var4, var3);
                             var1.style = var0;
+                        case 326:
                             var1 = _closure2_slot2;
                             var0 = undefined;
-                            var0 = var1.bind(var0)(var2);
-                        case 251:
-                            var0 = undefined;
+                            var1 = var1.bind(var0)(var2);
                             return var0;
                     }
                 };
-                var6.ref = var4;
-                var4 = undefined;
+                var6.ref = var14;
+                var14 = undefined;
                 if (!var11) {
-                    _fun37380_ip = 1268;
+                    _fun37380_ip = 1368;
                     continue _fun37380
                 }
-            case 1211:
-                var19 = _closure1_slot8;
-                var18 = var19.event;
-                var12 = {};
-                var14 = {};
-                var14.progress = var17;
-                var14.closing = var16;
-                var14.goingForward = var15;
-                var12.nativeEvent = var14;
-                var14 = new Array(1);
-                var14[0] = var12;
-                var12 = {};
-                var20 = true;
-                var12.useNativeDriver = var20;
-                var4 = var18.bind(var19)(var14, var12);
-            case 1268:
-                var6.onTransitionProgress = var4;
+            case 1312:
+                var21 = _closure1_slot8;
+                var20 = var21.event;
+                var18 = {};
+                var19 = {};
+                var19.progress = var17;
+                var19.closing = var16;
+                var19.goingForward = var15;
+                var18.nativeEvent = var19;
+                var19 = new Array(1);
+                var19[0] = var18;
+                var18 = {};
+                var22 = true;
+                var18.useNativeDriver = var22;
+                var14 = var20.bind(var21)(var19, var18);
+            case 1368:
+                var6.onTransitionProgress = var14;
+                var18 = var4 == var12;
+                var14 = undefined;
+                if (var18) {
+                    _fun37380_ip = 1387;
+                    continue _fun37380
+                }
+            case 1382:
+                var14 = var12.bottom;
+            case 1387:
+                var6.bottomScrollEdgeEffect = var14;
+                var18 = var4 == var12;
+                var14 = undefined;
+                if (var18) {
+                    _fun37380_ip = 1406;
+                    continue _fun37380
+                }
+            case 1401:
+                var14 = var12.left;
+            case 1406:
+                var6.leftScrollEdgeEffect = var14;
+                var18 = var4 == var12;
+                var14 = undefined;
+                if (var18) {
+                    _fun37380_ip = 1425;
+                    continue _fun37380
+                }
+            case 1420:
+                var14 = var12.right;
+            case 1425:
+                var6.rightScrollEdgeEffect = var14;
+                var14 = var4 == var12;
+                var4 = undefined;
+                if (var14) {
+                    _fun37380_ip = 1444;
+                    continue _fun37380
+                }
+            case 1439:
+                var4 = var12.top;
+            case 1444:
+                var6.topScrollEdgeEffect = var4;
+                var12 = _closure1_slot1;
+                var14 = _closure1_slot2;
+                var4 = 11;
+                var18 = var14[var4];
+                var18 = var12.bind(var3)(var18);
+                var18 = var18.experiment;
+                var18 = var18.synchronousScreenUpdatesEnabled;
+                var6.synchronousShadowStateUpdatesEnabled = var18;
+                var4 = var14[var4];
+                var4 = var12.bind(var3)(var4);
+                var4 = var4.experiment;
+                var4 = var4.androidResetScreenShadowStateOnOrientationChangeEnabled;
+                var6.androidResetScreenShadowStateOnOrientationChangeEnabled = var4;
                 var4 = var13;
                 if (!var11) {
-                    _fun37380_ip = 1342;
+                    _fun37380_ip = 1581;
                     continue _fun37380
                 }
-            case 1279:
+            case 1518:
                 var12 = _closure1_slot9;
                 var11 = _closure1_slot1;
                 var14 = _closure1_slot2;
-                var10 = 10;
+                var10 = 12;
                 var10 = var14[var10];
                 var10 = var11.bind(var3)(var10);
                 var11 = var10.Provider;
@@ -680,7 +800,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10.value = var14;
                 var10.children = var13;
                 var4 = var12.bind(var3)(var11, var10);
-            case 1342:
+            case 1581:
                 var6.children = var4;
                 var4 = {};
                 var4 = var7.bind(var8)(var4, var9, var6);
@@ -688,7 +808,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.children = var4;
                 var0 = var2.bind(var3)(var1, var0);
                 return var0;
-            case 1373:
+            case 1612:
                 var0 = global;
                 var2 = var0.Error;
                 var0 = var2.prototype;
@@ -697,9 +817,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         value: var2
                     }
                 });
-                var37 = '[RNScreens] activityState cannot be decreased in NativeStack';
-                var38 = var1;
-                var0 = new var38[var2](var37, var36);
+                var42 = '[RNScreens] activityState cannot be decreased in NativeStack';
+                var43 = var1;
+                var0 = new var43[var2](var42, var41);
                 var0 = var0 instanceof Object ? var0 : var1;
                 throw var0;
         }
@@ -713,48 +833,29 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = function(arg0, arg1) { // Environment: var4
         _fun37385: for (var _fun37385_ip = 0;;) switch (_fun37385_ip) {
             case 0:
-                var8 = arg0;
                 var3 = _closure1_slot7;
                 var2 = var3.useContext;
                 var1 = _closure1_slot12;
                 var3 = var2.bind(var3)(var1);
                 if (var3) {
-                    _fun37385_ip = 32;
+                    _fun37385_ip = 29;
                     continue _fun37385
                 }
-            case 28:
+            case 25:
                 var3 = _closure1_slot11;
-            case 32:
+            case 29:
                 var2 = _closure1_slot9;
-                var1 = global;
-                var7 = var1.Object;
-                var6 = var7.assign;
-                var5 = _closure1_slot0;
-                var1 = _closure1_slot2;
-                var9 = 11;
-                var4 = var1[var9];
-                var1 = undefined;
-                var4 = var5.bind(var1)(var4);
-                var4 = var4.EDGE_TO_EDGE;
-                var5 = var8;
-                if (!var4) {
-                    _fun37385_ip = 111;
-                    continue _fun37385
-                }
-            case 83:
-                var4 = _closure1_slot0;
-                var0 = _closure1_slot2;
-                var0 = var0[var9];
-                var4 = var4.bind(var1)(var0);
-                var0 = var4.transformEdgeToEdgeProps;
-                var5 = var0.bind(var4)(var8);
-            case 111:
+                var0 = global;
+                var6 = var0.Object;
+                var5 = var6.assign;
                 var4 = {};
                 var0 = arg1;
                 var4.ref = var0;
-                var0 = {};
-                var0 = var6.bind(var7)(var0, var5, var4);
-                var0 = var2.bind(var1)(var3, var0);
+                var1 = {};
+                var0 = arg0;
+                var1 = var5.bind(var6)(var1, var0, var4);
+                var0 = undefined;
+                var0 = var2.bind(var0)(var3, var1);
                 return var0;
         }
     };
@@ -765,4 +866,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.InnerScreen = var3;
     var2.ScreenContext = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, 4035, 4036, 4037, 4033, 4038, 4039, 4041, 4042]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, 4035, 4036, 4037, 4033, 4038, 4039, 4041, 4042, 4043]);

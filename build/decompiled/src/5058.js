@@ -1,21 +1,48 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
     var2 = exports;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
     var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var1 = {};
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
     var0 = true;
-    var1.value = var0;
+    var5.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var4)(var2, var0, var1);
-    var1 = dependencyMap;
+    var0 = var6.bind(var7)(var2, var0, var5);
     var0 = 0;
-    var3 = var1[var0];
-    var1 = require;
+    var3 = var3[var0];
     var0 = undefined;
-    var1 = var1.bind(var0)(var3);
-    var1 = var1.BottomSheetHostingContainer;
-    var2.BottomSheetHostingContainer = var1;
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.useContext;
+    var _closure1_slot2 = var3;
+    var1 = function() {
+        _fun45471: for (var _fun45471_ip = 0;;) switch (_fun45471_ip) {
+            case 0:
+                var2 = _closure1_slot2;
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var0 = var1[var0];
+                var1 = undefined;
+                var0 = var3.bind(var1)(var0);
+                var0 = var0.BottomSheetGestureHandlersContext;
+                var0 = var2.bind(var1)(var0);
+                var1 = null;
+                if (!(var1 !== var0)) {
+                    _fun45471_ip = 48;
+                    continue _fun45471
+                }
+            case 46:
+                return var0;
+            case 48:
+                var0 = "'useBottomSheetGestureHandlers' cannot be used out of the BottomSheet!";
+                throw var0;
+        }
+    };
+    var2.useBottomSheetGestureHandlers = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5059]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4957]);

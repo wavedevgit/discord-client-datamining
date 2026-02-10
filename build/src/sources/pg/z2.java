@@ -1,36 +1,36 @@
 package pg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class z2 implements zi.d {
+final class z2 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z2 f44245a = new z2();
+    static final z2 f42703a = new z2();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f44246b;
+    private static final bj.c f42704b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f44247c;
+    private static final bj.c f42705c;
 
     static {
-        c.b a10 = zi.c.a("errorCode");
+        c.b a10 = bj.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f44246b = a10.b(fVar.b()).a();
-        c.b a11 = zi.c.a("options");
+        f42704b = a10.b(fVar.b()).a();
+        c.b a11 = bj.c.a("options");
         f fVar2 = new f();
         fVar2.a(2);
-        f44247c = a11.b(fVar2.b()).a();
+        f42705c = a11.b(fVar2.b()).a();
     }
 
     private z2() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

@@ -1,5 +1,7 @@
 package m4;
 
+import bt.g;
+import ct.l;
 import java.util.ArrayList;
 import java.util.List;
 import k4.m;
@@ -18,19 +20,17 @@ import m4.b;
 import n4.h;
 import o4.n;
 import p4.u;
-import ss.g;
-import ts.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f36760a;
+    private final List f36135a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f36761d = new a();
+        public static final a f36136d = new a();
 
         a() {
             super(1);
@@ -50,49 +50,49 @@ public final class e {
     public static final class b implements Flow {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Flow[] f36762d;
+        final /* synthetic */ Flow[] f36137d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         static final class a extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Flow[] f36763d;
+            final /* synthetic */ Flow[] f36138d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(Flow[] flowArr) {
                 super(0);
-                this.f36763d = flowArr;
+                this.f36138d = flowArr;
             }
 
             @Override // kotlin.jvm.functions.Function0
             /* renamed from: a */
             public final Object[] invoke() {
-                return new m4.b[this.f36763d.length];
+                return new m4.b[this.f36138d.length];
             }
         }
 
         /* renamed from: m4.e$b$b  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0530b extends k implements Function3 {
+        public static final class C0512b extends k implements Function3 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f36764d;
+            int f36139d;
 
             /* renamed from: e  reason: collision with root package name */
-            private /* synthetic */ Object f36765e;
+            private /* synthetic */ Object f36140e;
 
             /* renamed from: i  reason: collision with root package name */
-            /* synthetic */ Object f36766i;
+            /* synthetic */ Object f36141i;
 
-            public C0530b(Continuation continuation) {
+            public C0512b(Continuation continuation) {
                 super(3, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 m4.b bVar;
-                Object f10 = xr.b.f();
-                int i10 = this.f36764d;
+                Object f10 = gs.b.f();
+                int i10 = this.f36139d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -101,14 +101,14 @@ public final class e {
                     }
                 } else {
                     kotlin.c.b(obj);
-                    FlowCollector flowCollector = (FlowCollector) this.f36765e;
-                    m4.b[] bVarArr = (m4.b[]) ((Object[]) this.f36766i);
+                    FlowCollector flowCollector = (FlowCollector) this.f36140e;
+                    m4.b[] bVarArr = (m4.b[]) ((Object[]) this.f36141i);
                     int length = bVarArr.length;
                     int i11 = 0;
                     while (true) {
                         if (i11 < length) {
                             bVar = bVarArr[i11];
-                            if (!Intrinsics.areEqual(bVar, b.a.f36754a)) {
+                            if (!Intrinsics.areEqual(bVar, b.a.f36129a)) {
                                 break;
                             }
                             i11++;
@@ -118,50 +118,50 @@ public final class e {
                         }
                     }
                     if (bVar == null) {
-                        bVar = b.a.f36754a;
+                        bVar = b.a.f36129a;
                     }
-                    this.f36764d = 1;
+                    this.f36139d = 1;
                     if (flowCollector.emit(bVar, this) == f10) {
                         return f10;
                     }
                 }
-                return Unit.f31765a;
+                return Unit.f31987a;
             }
 
             @Override // kotlin.jvm.functions.Function3
             /* renamed from: j */
             public final Object invoke(FlowCollector flowCollector, Object[] objArr, Continuation continuation) {
-                C0530b c0530b = new C0530b(continuation);
-                c0530b.f36765e = flowCollector;
-                c0530b.f36766i = objArr;
-                return c0530b.invokeSuspend(Unit.f31765a);
+                C0512b c0512b = new C0512b(continuation);
+                c0512b.f36140e = flowCollector;
+                c0512b.f36141i = objArr;
+                return c0512b.invokeSuspend(Unit.f31987a);
             }
         }
 
         public b(Flow[] flowArr) {
-            this.f36762d = flowArr;
+            this.f36137d = flowArr;
         }
 
         @Override // kotlinx.coroutines.flow.Flow
         public Object collect(FlowCollector flowCollector, Continuation continuation) {
-            Flow[] flowArr = this.f36762d;
-            Object a10 = l.a(flowCollector, flowArr, new a(flowArr), new C0530b(null), continuation);
-            if (a10 == xr.b.f()) {
+            Flow[] flowArr = this.f36137d;
+            Object a10 = l.a(flowCollector, flowArr, new a(flowArr), new C0512b(null), continuation);
+            if (a10 == gs.b.f()) {
                 return a10;
             }
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
     }
 
     public e(List controllers) {
         Intrinsics.checkNotNullParameter(controllers, "controllers");
-        this.f36760a = controllers;
+        this.f36135a = controllers;
     }
 
     public final boolean a(u workSpec) {
         Intrinsics.checkNotNullParameter(workSpec, "workSpec");
         ArrayList arrayList = new ArrayList();
-        for (Object obj : this.f36760a) {
+        for (Object obj : this.f36135a) {
             if (((n4.c) obj).e(workSpec)) {
                 arrayList.add(obj);
             }
@@ -169,7 +169,7 @@ public final class e {
         if (!arrayList.isEmpty()) {
             m e10 = m.e();
             String a10 = f.a();
-            e10.a(a10, "Work " + workSpec.f42988a + " constrained by " + CollectionsKt.x0(arrayList, null, null, null, 0, null, a.f36761d, 31, null));
+            e10.a(a10, "Work " + workSpec.f41446a + " constrained by " + CollectionsKt.x0(arrayList, null, null, null, 0, null, a.f36136d, 31, null));
         }
         return arrayList.isEmpty();
     }
@@ -177,7 +177,7 @@ public final class e {
     public final Flow b(u spec) {
         Intrinsics.checkNotNullParameter(spec, "spec");
         ArrayList<n4.c> arrayList = new ArrayList();
-        for (Object obj : this.f36760a) {
+        for (Object obj : this.f36135a) {
             if (((n4.c) obj).c(spec)) {
                 arrayList.add(obj);
             }

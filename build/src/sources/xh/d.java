@@ -1,79 +1,21 @@
 package xh;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.util.Enumeration;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d extends InputStream {
+public class d {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final Enumeration f55040d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private InputStream f55041e;
-
-    public d(Enumeration enumeration) {
-        this.f55040d = enumeration;
-        a();
-    }
-
-    final void a() {
-        InputStream inputStream = this.f55041e;
-        if (inputStream != null) {
-            inputStream.close();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static class a {
+        /* synthetic */ a(h hVar) {
         }
-        if (this.f55040d.hasMoreElements()) {
-            this.f55041e = new FileInputStream((File) this.f55040d.nextElement());
-        } else {
-            this.f55041e = null;
+
+        public d a() {
+            return new d(null);
         }
     }
 
-    @Override // java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
-    public final void close() {
-        super.close();
-        InputStream inputStream = this.f55041e;
-        if (inputStream != null) {
-            inputStream.close();
-            this.f55041e = null;
-        }
+    /* synthetic */ d(h hVar) {
     }
 
-    @Override // java.io.InputStream
-    public final int read() {
-        while (true) {
-            InputStream inputStream = this.f55041e;
-            if (inputStream == null) {
-                return -1;
-            }
-            int read = inputStream.read();
-            if (read != -1) {
-                return read;
-            }
-            a();
-        }
-    }
-
-    @Override // java.io.InputStream
-    public final int read(byte[] bArr, int i10, int i11) {
-        if (this.f55041e == null) {
-            return -1;
-        }
-        bArr.getClass();
-        if (i10 < 0 || i11 < 0 || i11 > bArr.length - i10) {
-            throw new IndexOutOfBoundsException();
-        }
-        if (i11 != 0) {
-            do {
-                int read = this.f55041e.read(bArr, i10, i11);
-                if (read > 0) {
-                    return read;
-                }
-                a();
-            } while (this.f55041e != null);
-            return -1;
-        }
-        return 0;
+    public static a a() {
+        return new a(null);
     }
 }

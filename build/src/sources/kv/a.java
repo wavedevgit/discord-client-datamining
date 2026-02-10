@@ -1,126 +1,83 @@
 package kv;
 
-import hk.j0;
-import hk.q0;
-import hk.s;
-import hk.u;
 import java.util.List;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Lambda;
+import kv.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a extends s implements j0 {
+public final class a implements cv.b, c {
 
-    /* renamed from: q  reason: collision with root package name */
-    private static final a f35444q;
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f35349a = new a();
 
-    /* renamed from: r  reason: collision with root package name */
-    private static volatile q0 f35445r;
-
-    /* renamed from: p  reason: collision with root package name */
-    private u.b f35446p = s.k();
-
+    /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: kv.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static /* synthetic */ class C0502a {
+    public static final class C0486a extends Lambda implements Function2 {
 
-        /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f35447a;
+        /* renamed from: d  reason: collision with root package name */
+        public static final C0486a f35350d = new C0486a();
 
-        static {
-            int[] iArr = new int[s.d.values().length];
-            f35447a = iArr;
-            try {
-                iArr[s.d.NEW_MUTABLE_INSTANCE.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                f35447a[s.d.NEW_BUILDER.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
-            }
-            try {
-                f35447a[s.d.BUILD_MESSAGE_INFO.ordinal()] = 3;
-            } catch (NoSuchFieldError unused3) {
-            }
-            try {
-                f35447a[s.d.GET_DEFAULT_INSTANCE.ordinal()] = 4;
-            } catch (NoSuchFieldError unused4) {
-            }
-            try {
-                f35447a[s.d.GET_PARSER.ordinal()] = 5;
-            } catch (NoSuchFieldError unused5) {
-            }
-            try {
-                f35447a[s.d.GET_MEMOIZED_IS_INITIALIZED.ordinal()] = 6;
-            } catch (NoSuchFieldError unused6) {
-            }
-            try {
-                f35447a[s.d.SET_MEMOIZED_IS_INITIALIZED.ordinal()] = 7;
-            } catch (NoSuchFieldError unused7) {
-            }
+        C0486a() {
+            super(2);
         }
-    }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b extends s.a implements j0 {
-        private b() {
-            super(a.f35444q);
+        public final Boolean a(int i10, int i11) {
+            boolean z10;
+            if (i10 == i11) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            return Boolean.valueOf(z10);
         }
-    }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class c extends s implements j0 {
-    }
-
-    static {
-        a aVar = new a();
-        f35444q = aVar;
-        s.C(a.class, aVar);
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+        }
     }
 
     private a() {
     }
 
-    public static a H() {
-        return f35444q;
+    @Override // kv.c, lv.a
+    public Object a(Object obj) {
+        return c.a.f(this, obj);
     }
 
-    public List G() {
-        return this.f35446p;
+    @Override // dv.c
+    public boolean b(List list, Function2 function2) {
+        return c.a.b(this, list, function2);
     }
 
-    @Override // hk.s
-    protected final Object j(s.d dVar, Object obj, Object obj2) {
-        q0 q0Var;
-        switch (C0502a.f35447a[dVar.ordinal()]) {
-            case 1:
-                return new a();
-            case 2:
-                return new b();
-            case 3:
-                return s.x(f35444q, "\u0001\u0001\u0000\u0000\b\b\u0001\u0000\u0001\u0000\b\u001b", new Object[]{"constrainedValues_", c.class});
-            case 4:
-                return f35444q;
-            case 5:
-                q0 q0Var2 = f35445r;
-                if (q0Var2 == null) {
-                    synchronized (a.class) {
-                        try {
-                            q0Var = f35445r;
-                            if (q0Var == null) {
-                                q0Var = new s.b(f35444q);
-                                f35445r = q0Var;
-                            }
-                        } catch (Throwable th2) {
-                            throw th2;
-                        }
-                    }
-                    return q0Var;
-                }
-                return q0Var2;
-            case 6:
-                return (byte) 1;
-            case 7:
-                return null;
-            default:
-                throw new UnsupportedOperationException();
-        }
+    @Override // dv.a
+    public Boolean c(Object obj) {
+        return c.a.g(this, obj);
+    }
+
+    @Override // dv.b
+    public List d(Comparable comparable, Comparable comparable2) {
+        return c.a.d(this, comparable, comparable2);
+    }
+
+    @Override // lv.c
+    public Object e(Object obj) {
+        return c.a.e(this, obj);
+    }
+
+    @Override // dv.b
+    public List g(Comparable comparable, Comparable comparable2) {
+        return c.a.c(this, comparable, comparable2);
+    }
+
+    public boolean h(Object obj, Function2 function2) {
+        return c.a.a(this, obj, function2);
+    }
+
+    @Override // cv.b
+    /* renamed from: i */
+    public Boolean f(Object obj, Object obj2) {
+        return Boolean.valueOf(!h(obj, C0486a.f35350d));
     }
 }

@@ -21,21 +21,21 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final C0525a f36731b = new C0525a(null);
+    public static final C0507a f36106b = new C0507a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Set f36732c = x0.i(7, 20);
+    private static final Set f36107c = x0.i(7, 20);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int f36733d = 1;
+    private static final int f36108d = 1;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f36734a;
+    private final Context f36109a;
 
     /* renamed from: m2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0525a {
-        public /* synthetic */ C0525a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0507a {
+        public /* synthetic */ C0507a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -50,7 +50,7 @@ public abstract class a {
         }
 
         public final int b() {
-            return a.f36733d;
+            return a.f36108d;
         }
 
         public final m c(String str, String str2) {
@@ -72,7 +72,7 @@ public abstract class a {
         }
 
         public final Set d() {
-            return a.f36732c;
+            return a.f36107c;
         }
 
         public final void e(ResultReceiver resultReceiver, String errName, String errMsg) {
@@ -95,13 +95,13 @@ public abstract class a {
             resultReceiver.send(i11, bundle);
         }
 
-        private C0525a() {
+        private C0507a() {
         }
     }
 
     public a(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f36734a = context;
+        this.f36109a = context;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -110,7 +110,7 @@ public abstract class a {
         Intrinsics.checkNotNullParameter(hiddenIntent, "hiddenIntent");
         Intrinsics.checkNotNullParameter(typeTag, "typeTag");
         hiddenIntent.putExtra("TYPE", typeTag);
-        hiddenIntent.putExtra("ACTIVITY_REQUEST_CODE", f36733d);
+        hiddenIntent.putExtra("ACTIVITY_REQUEST_CODE", f36108d);
         hiddenIntent.putExtra("RESULT_RECEIVER", d(resultReceiver));
         hiddenIntent.setFlags(65536);
     }

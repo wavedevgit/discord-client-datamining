@@ -14,71 +14,71 @@ import o5.a;
 public class p implements e, m, j, a.b, k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Matrix f37941a = new Matrix();
+    private final Matrix f36945a = new Matrix();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Path f37942b = new Path();
+    private final Path f36946b = new Path();
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.airbnb.lottie.n f37943c;
+    private final com.airbnb.lottie.n f36947c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final u5.b f37944d;
+    private final u5.b f36948d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f37945e;
+    private final String f36949e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f37946f;
+    private final boolean f36950f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final o5.a f37947g;
+    private final o5.a f36951g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final o5.a f37948h;
+    private final o5.a f36952h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final o5.p f37949i;
+    private final o5.p f36953i;
 
     /* renamed from: j  reason: collision with root package name */
-    private d f37950j;
+    private d f36954j;
 
     public p(com.airbnb.lottie.n nVar, u5.b bVar, t5.m mVar) {
-        this.f37943c = nVar;
-        this.f37944d = bVar;
-        this.f37945e = mVar.c();
-        this.f37946f = mVar.f();
+        this.f36947c = nVar;
+        this.f36948d = bVar;
+        this.f36949e = mVar.c();
+        this.f36950f = mVar.f();
         o5.d a10 = mVar.b().a();
-        this.f37947g = a10;
+        this.f36951g = a10;
         bVar.i(a10);
         a10.a(this);
         o5.d a11 = mVar.d().a();
-        this.f37948h = a11;
+        this.f36952h = a11;
         bVar.i(a11);
         a11.a(this);
         o5.p b10 = mVar.e().b();
-        this.f37949i = b10;
+        this.f36953i = b10;
         b10.a(bVar);
         b10.b(this);
     }
 
     @Override // o5.a.b
     public void a() {
-        this.f37943c.invalidateSelf();
+        this.f36947c.invalidateSelf();
     }
 
     @Override // n5.c
     public void b(List list, List list2) {
-        this.f37950j.b(list, list2);
+        this.f36954j.b(list, list2);
     }
 
     @Override // r5.f
     public void d(Object obj, z5.c cVar) {
-        if (!this.f37949i.c(obj, cVar)) {
-            if (obj == b0.f35668u) {
-                this.f37947g.o(cVar);
-            } else if (obj == b0.f35669v) {
-                this.f37948h.o(cVar);
+        if (!this.f36953i.c(obj, cVar)) {
+            if (obj == b0.f35565u) {
+                this.f36951g.o(cVar);
+            } else if (obj == b0.f35566v) {
+                this.f36952h.o(cVar);
             }
         }
     }
@@ -86,8 +86,8 @@ public class p implements e, m, j, a.b, k {
     @Override // r5.f
     public void e(r5.e eVar, int i10, List list, r5.e eVar2) {
         y5.i.k(eVar, i10, list, eVar2, this);
-        for (int i11 = 0; i11 < this.f37950j.j().size(); i11++) {
-            c cVar = (c) this.f37950j.j().get(i11);
+        for (int i11 = 0; i11 < this.f36954j.j().size(); i11++) {
+            c cVar = (c) this.f36954j.j().get(i11);
             if (cVar instanceof k) {
                 y5.i.k(eVar, i10, list, eVar2, (k) cVar);
             }
@@ -96,12 +96,12 @@ public class p implements e, m, j, a.b, k {
 
     @Override // n5.e
     public void f(RectF rectF, Matrix matrix, boolean z10) {
-        this.f37950j.f(rectF, matrix, z10);
+        this.f36954j.f(rectF, matrix, z10);
     }
 
     @Override // n5.j
     public void g(ListIterator listIterator) {
-        if (this.f37950j != null) {
+        if (this.f36954j != null) {
             return;
         }
         while (listIterator.hasPrevious() && listIterator.previous() != this) {
@@ -112,38 +112,38 @@ public class p implements e, m, j, a.b, k {
             listIterator.remove();
         }
         Collections.reverse(arrayList);
-        this.f37950j = new d(this.f37943c, this.f37944d, "Repeater", this.f37946f, arrayList, null);
+        this.f36954j = new d(this.f36947c, this.f36948d, "Repeater", this.f36950f, arrayList, null);
     }
 
     @Override // n5.c
     public String getName() {
-        return this.f37945e;
+        return this.f36949e;
     }
 
     @Override // n5.e
     public void h(Canvas canvas, Matrix matrix, int i10) {
-        float floatValue = ((Float) this.f37947g.h()).floatValue();
-        float floatValue2 = ((Float) this.f37948h.h()).floatValue();
-        float floatValue3 = ((Float) this.f37949i.i().h()).floatValue() / 100.0f;
-        float floatValue4 = ((Float) this.f37949i.e().h()).floatValue() / 100.0f;
+        float floatValue = ((Float) this.f36951g.h()).floatValue();
+        float floatValue2 = ((Float) this.f36952h.h()).floatValue();
+        float floatValue3 = ((Float) this.f36953i.i().h()).floatValue() / 100.0f;
+        float floatValue4 = ((Float) this.f36953i.e().h()).floatValue() / 100.0f;
         for (int i11 = ((int) floatValue) - 1; i11 >= 0; i11--) {
-            this.f37941a.set(matrix);
+            this.f36945a.set(matrix);
             float f10 = i11;
-            this.f37941a.preConcat(this.f37949i.g(f10 + floatValue2));
-            this.f37950j.h(canvas, this.f37941a, (int) (i10 * y5.i.i(floatValue3, floatValue4, f10 / floatValue)));
+            this.f36945a.preConcat(this.f36953i.g(f10 + floatValue2));
+            this.f36954j.h(canvas, this.f36945a, (int) (i10 * y5.i.i(floatValue3, floatValue4, f10 / floatValue)));
         }
     }
 
     @Override // n5.m
     public Path t() {
-        Path t10 = this.f37950j.t();
-        this.f37942b.reset();
-        float floatValue = ((Float) this.f37947g.h()).floatValue();
-        float floatValue2 = ((Float) this.f37948h.h()).floatValue();
+        Path t10 = this.f36954j.t();
+        this.f36946b.reset();
+        float floatValue = ((Float) this.f36951g.h()).floatValue();
+        float floatValue2 = ((Float) this.f36952h.h()).floatValue();
         for (int i10 = ((int) floatValue) - 1; i10 >= 0; i10--) {
-            this.f37941a.set(this.f37949i.g(i10 + floatValue2));
-            this.f37942b.addPath(t10, this.f37941a);
+            this.f36945a.set(this.f36953i.g(i10 + floatValue2));
+            this.f36946b.addPath(t10, this.f36945a);
         }
-        return this.f37942b;
+        return this.f36946b;
     }
 }

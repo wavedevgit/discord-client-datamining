@@ -16,22 +16,22 @@ import com.google.android.material.chip.Chip;
 public class TimePickerView extends ConstraintLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Chip f15733d;
+    private final Chip f16482d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Chip f15734e;
+    private final Chip f16483e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ClockHandView f15735i;
+    private final ClockHandView f16484i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ClockFaceView f15736o;
+    private final ClockFaceView f16485o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final MaterialButtonToggleGroup f15737p;
+    private final MaterialButtonToggleGroup f16486p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final View.OnClickListener f15738q;
+    private final View.OnClickListener f16487q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements View.OnClickListener {
@@ -62,16 +62,16 @@ public class TimePickerView extends ConstraintLayout {
     public class c implements View.OnTouchListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ GestureDetector f15741d;
+        final /* synthetic */ GestureDetector f16490d;
 
         c(GestureDetector gestureDetector) {
-            this.f15741d = gestureDetector;
+            this.f16490d = gestureDetector;
         }
 
         @Override // android.view.View.OnTouchListener
         public boolean onTouch(View view, MotionEvent motionEvent) {
             if (((Checkable) view).isChecked()) {
-                return this.f15741d.onTouchEvent(motionEvent);
+                return this.f16490d.onTouchEvent(motionEvent);
             }
             return false;
         }
@@ -100,44 +100,44 @@ public class TimePickerView extends ConstraintLayout {
     }
 
     private void k() {
-        this.f15733d.setTag(bh.f.J, 12);
-        this.f15734e.setTag(bh.f.J, 10);
-        this.f15733d.setOnClickListener(this.f15738q);
-        this.f15734e.setOnClickListener(this.f15738q);
-        this.f15733d.setAccessibilityClassName("android.view.View");
-        this.f15734e.setAccessibilityClassName("android.view.View");
+        this.f16482d.setTag(bh.f.S, 12);
+        this.f16483e.setTag(bh.f.S, 10);
+        this.f16482d.setOnClickListener(this.f16487q);
+        this.f16483e.setOnClickListener(this.f16487q);
+        this.f16482d.setAccessibilityClassName("android.view.View");
+        this.f16483e.setAccessibilityClassName("android.view.View");
     }
 
     private void l() {
         c cVar = new c(new GestureDetector(getContext(), new b()));
-        this.f15733d.setOnTouchListener(cVar);
-        this.f15734e.setOnTouchListener(cVar);
+        this.f16482d.setOnTouchListener(cVar);
+        this.f16483e.setOnTouchListener(cVar);
     }
 
     @Override // android.view.View
     protected void onVisibilityChanged(View view, int i10) {
         super.onVisibilityChanged(view, i10);
         if (view == this && i10 == 0) {
-            this.f15734e.sendAccessibilityEvent(8);
+            this.f16483e.sendAccessibilityEvent(8);
         }
     }
 
     public TimePickerView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f15738q = new a();
-        LayoutInflater.from(context).inflate(h.f6750l, this);
-        this.f15736o = (ClockFaceView) findViewById(bh.f.f6718k);
-        MaterialButtonToggleGroup materialButtonToggleGroup = (MaterialButtonToggleGroup) findViewById(bh.f.f6721n);
-        this.f15737p = materialButtonToggleGroup;
-        materialButtonToggleGroup.b(new MaterialButtonToggleGroup.d() { // from class: com.google.android.material.timepicker.f
-            @Override // com.google.android.material.button.MaterialButtonToggleGroup.d
+        this.f16487q = new a();
+        LayoutInflater.from(context).inflate(h.f6887o, this);
+        this.f16485o = (ClockFaceView) findViewById(bh.f.f6852k);
+        MaterialButtonToggleGroup materialButtonToggleGroup = (MaterialButtonToggleGroup) findViewById(bh.f.f6855n);
+        this.f16486p = materialButtonToggleGroup;
+        materialButtonToggleGroup.q(new MaterialButtonToggleGroup.b() { // from class: com.google.android.material.timepicker.f
+            @Override // com.google.android.material.button.MaterialButtonToggleGroup.b
             public final void a(MaterialButtonToggleGroup materialButtonToggleGroup2, int i11, boolean z10) {
                 TimePickerView.this.getClass();
             }
         });
-        this.f15733d = (Chip) findViewById(bh.f.f6724q);
-        this.f15734e = (Chip) findViewById(bh.f.f6722o);
-        this.f15735i = (ClockHandView) findViewById(bh.f.f6719l);
+        this.f16482d = (Chip) findViewById(bh.f.f6858q);
+        this.f16483e = (Chip) findViewById(bh.f.f6856o);
+        this.f16484i = (ClockHandView) findViewById(bh.f.f6853l);
         l();
         k();
     }

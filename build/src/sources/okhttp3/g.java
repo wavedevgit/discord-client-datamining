@@ -1,5 +1,6 @@
 package okhttp3;
 
+import as.l;
 import java.io.IOException;
 import java.security.cert.Certificate;
 import java.security.cert.X509Certificate;
@@ -14,44 +15,43 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
-import rr.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class g {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f42306e = new a(null);
+    public static final a f40556e = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f42307a;
+    private final h f40557a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f42308b;
+    private final c f40558b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f42309c;
+    private final List f40559c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lazy f42310d;
+    private final Lazy f40560d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: okhttp3.g$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        static final class C0600a extends Lambda implements Function0 {
+        static final class C0558a extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ List f42311d;
+            final /* synthetic */ List f40561d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0600a(List list) {
+            C0558a(List list) {
                 super(0);
-                this.f42311d = list;
+                this.f40561d = list;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public final List invoke() {
-                return this.f42311d;
+                return this.f40561d;
             }
         }
 
@@ -59,17 +59,17 @@ public final class g {
         static final class b extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ List f42312d;
+            final /* synthetic */ List f40562d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             b(List list) {
                 super(0);
-                this.f42312d = list;
+                this.f40562d = list;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public final List invoke() {
-                return this.f42312d;
+                return this.f40562d;
             }
         }
 
@@ -79,7 +79,7 @@ public final class g {
 
         private final List c(Certificate[] certificateArr) {
             if (certificateArr != null) {
-                return du.e.w(Arrays.copyOf(certificateArr, certificateArr.length));
+                return mu.e.w(Arrays.copyOf(certificateArr, certificateArr.length));
             }
             return CollectionsKt.l();
         }
@@ -96,11 +96,11 @@ public final class g {
                     areEqual = Intrinsics.areEqual(cipherSuite, "SSL_NULL_WITH_NULL_NULL");
                 }
                 if (!areEqual) {
-                    c b10 = c.f42213b.b(cipherSuite);
+                    c b10 = c.f40463b.b(cipherSuite);
                     String protocol = sSLSession.getProtocol();
                     if (protocol != null) {
                         if (!Intrinsics.areEqual("NONE", protocol)) {
-                            h a10 = h.f42314e.a(protocol);
+                            h a10 = h.f40564e.a(protocol);
                             try {
                                 l10 = c(sSLSession.getPeerCertificates());
                             } catch (SSLPeerUnverifiedException unused) {
@@ -122,7 +122,7 @@ public final class g {
             Intrinsics.checkNotNullParameter(cipherSuite, "cipherSuite");
             Intrinsics.checkNotNullParameter(peerCertificates, "peerCertificates");
             Intrinsics.checkNotNullParameter(localCertificates, "localCertificates");
-            return new g(tlsVersion, cipherSuite, du.e.V(localCertificates), new C0600a(du.e.V(peerCertificates)));
+            return new g(tlsVersion, cipherSuite, mu.e.V(localCertificates), new C0558a(mu.e.V(peerCertificates)));
         }
 
         private a() {
@@ -133,18 +133,18 @@ public final class g {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f42313d;
+        final /* synthetic */ Function0 f40563d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Function0 function0) {
             super(0);
-            this.f42313d = function0;
+            this.f40563d = function0;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public final List invoke() {
             try {
-                return (List) this.f42313d.invoke();
+                return (List) this.f40563d.invoke();
             } catch (SSLPeerUnverifiedException unused) {
                 return CollectionsKt.l();
             }
@@ -156,10 +156,10 @@ public final class g {
         Intrinsics.checkNotNullParameter(cipherSuite, "cipherSuite");
         Intrinsics.checkNotNullParameter(localCertificates, "localCertificates");
         Intrinsics.checkNotNullParameter(peerCertificatesFn, "peerCertificatesFn");
-        this.f42307a = tlsVersion;
-        this.f42308b = cipherSuite;
-        this.f42309c = localCertificates;
-        this.f42310d = l.a(new b(peerCertificatesFn));
+        this.f40557a = tlsVersion;
+        this.f40558b = cipherSuite;
+        this.f40559c = localCertificates;
+        this.f40560d = l.b(new b(peerCertificatesFn));
     }
 
     private final String b(Certificate certificate) {
@@ -172,25 +172,25 @@ public final class g {
     }
 
     public final c a() {
-        return this.f42308b;
+        return this.f40558b;
     }
 
     public final List c() {
-        return this.f42309c;
+        return this.f40559c;
     }
 
     public final List d() {
-        return (List) this.f42310d.getValue();
+        return (List) this.f40560d.getValue();
     }
 
     public final h e() {
-        return this.f42307a;
+        return this.f40557a;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof g) {
             g gVar = (g) obj;
-            if (gVar.f42307a == this.f42307a && Intrinsics.areEqual(gVar.f42308b, this.f42308b) && Intrinsics.areEqual(gVar.d(), d()) && Intrinsics.areEqual(gVar.f42309c, this.f42309c)) {
+            if (gVar.f40557a == this.f40557a && Intrinsics.areEqual(gVar.f40558b, this.f40558b) && Intrinsics.areEqual(gVar.d(), d()) && Intrinsics.areEqual(gVar.f40559c, this.f40559c)) {
                 return true;
             }
             return false;
@@ -199,7 +199,7 @@ public final class g {
     }
 
     public int hashCode() {
-        return ((((((527 + this.f42307a.hashCode()) * 31) + this.f42308b.hashCode()) * 31) + d().hashCode()) * 31) + this.f42309c.hashCode();
+        return ((((((527 + this.f40557a.hashCode()) * 31) + this.f40558b.hashCode()) * 31) + d().hashCode()) * 31) + this.f40559c.hashCode();
     }
 
     public String toString() {
@@ -211,13 +211,13 @@ public final class g {
         String obj = arrayList.toString();
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Handshake{tlsVersion=");
-        sb2.append(this.f42307a);
+        sb2.append(this.f40557a);
         sb2.append(" cipherSuite=");
-        sb2.append(this.f42308b);
+        sb2.append(this.f40558b);
         sb2.append(" peerCertificates=");
         sb2.append(obj);
         sb2.append(" localCertificates=");
-        List<Certificate> list = this.f42309c;
+        List<Certificate> list = this.f40559c;
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(list, 10));
         for (Certificate certificate2 : list) {
             arrayList2.add(b(certificate2));

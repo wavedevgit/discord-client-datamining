@@ -1,19 +1,5 @@
 package kotlin.jvm.internal;
 
-import fs.b;
-import fs.c;
-import fs.d;
-import fs.e;
-import fs.f;
-import fs.g;
-import fs.h;
-import fs.i;
-import fs.j;
-import fs.k;
-import fs.l;
-import fs.m;
-import fs.n;
-import fs.o;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
@@ -37,7 +23,21 @@ import kotlin.jvm.internal.markers.KMutableList;
 import kotlin.jvm.internal.markers.KMutableListIterator;
 import kotlin.jvm.internal.markers.KMutableMap;
 import kotlin.jvm.internal.markers.KMutableSet;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+import os.b;
+import os.c;
+import os.d;
+import os.e;
+import os.f;
+import os.g;
+import os.h;
+import os.i;
+import os.j;
+import os.k;
+import os.l;
+import os.m;
+import os.n;
+import os.o;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class TypeIntrinsics {
     public static Collection asMutableCollection(Object obj) {
         if ((obj instanceof KMappedMarker) && !(obj instanceof KMutableCollection)) {
@@ -200,7 +200,7 @@ public class TypeIntrinsics {
         if (obj instanceof o) {
             return 9;
         }
-        if (obj instanceof fs.a) {
+        if (obj instanceof os.a) {
             return 10;
         }
         if (obj instanceof b) {

@@ -34,50 +34,50 @@ import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import oe.w0;
-import oi.t0;
-import oi.u;
+import qi.t0;
+import qi.u;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final HashMap f13499a;
+    private final HashMap f14076a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final SparseArray f13500b;
+    private final SparseArray f14077b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final SparseBooleanArray f13501c;
+    private final SparseBooleanArray f14078c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final SparseBooleanArray f13502d;
+    private final SparseBooleanArray f14079d;
 
     /* renamed from: e  reason: collision with root package name */
-    private c f13503e;
+    private c f14080e;
 
     /* renamed from: f  reason: collision with root package name */
-    private c f13504f;
+    private c f14081f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class a implements c {
 
         /* renamed from: e  reason: collision with root package name */
-        private static final String[] f13505e = {StackTraceHelper.ID_KEY, "key", "metadata"};
+        private static final String[] f14082e = {StackTraceHelper.ID_KEY, "key", "metadata"};
 
         /* renamed from: a  reason: collision with root package name */
-        private final qc.b f13506a;
+        private final qc.b f14083a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final SparseArray f13507b = new SparseArray();
+        private final SparseArray f14084b = new SparseArray();
 
         /* renamed from: c  reason: collision with root package name */
-        private String f13508c;
+        private String f14085c;
 
         /* renamed from: d  reason: collision with root package name */
-        private String f13509d;
+        private String f14086d;
 
         public a(qc.b bVar) {
-            this.f13506a = bVar;
+            this.f14083a = bVar;
         }
 
         private void i(SQLiteDatabase sQLiteDatabase, g gVar) {
@@ -85,10 +85,10 @@ public class h {
             h.t(gVar.c(), new DataOutputStream(byteArrayOutputStream));
             byte[] byteArray = byteArrayOutputStream.toByteArray();
             ContentValues contentValues = new ContentValues();
-            contentValues.put(StackTraceHelper.ID_KEY, Integer.valueOf(gVar.f13492a));
-            contentValues.put("key", gVar.f13493b);
+            contentValues.put(StackTraceHelper.ID_KEY, Integer.valueOf(gVar.f14069a));
+            contentValues.put("key", gVar.f14070b);
             contentValues.put("metadata", byteArray);
-            sQLiteDatabase.replaceOrThrow((String) oe.a.e(this.f13509d), null, contentValues);
+            sQLiteDatabase.replaceOrThrow((String) oe.a.e(this.f14086d), null, contentValues);
         }
 
         private static void j(qc.b bVar, String str) {
@@ -106,7 +106,7 @@ public class h {
         }
 
         private void k(SQLiteDatabase sQLiteDatabase, int i10) {
-            sQLiteDatabase.delete((String) oe.a.e(this.f13509d), "id = ?", new String[]{Integer.toString(i10)});
+            sQLiteDatabase.delete((String) oe.a.e(this.f14086d), "id = ?", new String[]{Integer.toString(i10)});
         }
 
         private static void l(SQLiteDatabase sQLiteDatabase, String str) {
@@ -114,7 +114,7 @@ public class h {
         }
 
         private Cursor m() {
-            return this.f13506a.getReadableDatabase().query((String) oe.a.e(this.f13509d), f13505e, null, null, null, null, null);
+            return this.f14083a.getReadableDatabase().query((String) oe.a.e(this.f14086d), f14082e, null, null, null, null, null);
         }
 
         private static String n(String str) {
@@ -122,24 +122,24 @@ public class h {
         }
 
         private void o(SQLiteDatabase sQLiteDatabase) {
-            qc.e.d(sQLiteDatabase, 1, (String) oe.a.e(this.f13508c), 1);
-            l(sQLiteDatabase, (String) oe.a.e(this.f13509d));
-            sQLiteDatabase.execSQL("CREATE TABLE " + this.f13509d + " (id INTEGER PRIMARY KEY NOT NULL,key TEXT NOT NULL,metadata BLOB NOT NULL)");
+            qc.e.d(sQLiteDatabase, 1, (String) oe.a.e(this.f14085c), 1);
+            l(sQLiteDatabase, (String) oe.a.e(this.f14086d));
+            sQLiteDatabase.execSQL("CREATE TABLE " + this.f14086d + " (id INTEGER PRIMARY KEY NOT NULL,key TEXT NOT NULL,metadata BLOB NOT NULL)");
         }
 
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public void a(g gVar, boolean z10) {
             if (z10) {
-                this.f13507b.delete(gVar.f13492a);
+                this.f14084b.delete(gVar.f14069a);
             } else {
-                this.f13507b.put(gVar.f13492a, null);
+                this.f14084b.put(gVar.f14069a, null);
             }
         }
 
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public boolean b() {
             try {
-                if (qc.e.b(this.f13506a.getReadableDatabase(), 1, (String) oe.a.e(this.f13508c)) != -1) {
+                if (qc.e.b(this.f14083a.getReadableDatabase(), 1, (String) oe.a.e(this.f14085c)) != -1) {
                     return true;
                 }
                 return false;
@@ -150,22 +150,22 @@ public class h {
 
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public void c(HashMap hashMap) {
-            if (this.f13507b.size() == 0) {
+            if (this.f14084b.size() == 0) {
                 return;
             }
             try {
-                SQLiteDatabase writableDatabase = this.f13506a.getWritableDatabase();
+                SQLiteDatabase writableDatabase = this.f14083a.getWritableDatabase();
                 writableDatabase.beginTransactionNonExclusive();
-                for (int i10 = 0; i10 < this.f13507b.size(); i10++) {
-                    g gVar = (g) this.f13507b.valueAt(i10);
+                for (int i10 = 0; i10 < this.f14084b.size(); i10++) {
+                    g gVar = (g) this.f14084b.valueAt(i10);
                     if (gVar == null) {
-                        k(writableDatabase, this.f13507b.keyAt(i10));
+                        k(writableDatabase, this.f14084b.keyAt(i10));
                     } else {
                         i(writableDatabase, gVar);
                     }
                 }
                 writableDatabase.setTransactionSuccessful();
-                this.f13507b.clear();
+                this.f14084b.clear();
                 writableDatabase.endTransaction();
             } catch (SQLException e10) {
                 throw new qc.a(e10);
@@ -175,21 +175,21 @@ public class h {
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public void d(long j10) {
             String hexString = Long.toHexString(j10);
-            this.f13508c = hexString;
-            this.f13509d = n(hexString);
+            this.f14085c = hexString;
+            this.f14086d = n(hexString);
         }
 
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public void e(HashMap hashMap) {
             try {
-                SQLiteDatabase writableDatabase = this.f13506a.getWritableDatabase();
+                SQLiteDatabase writableDatabase = this.f14083a.getWritableDatabase();
                 writableDatabase.beginTransactionNonExclusive();
                 o(writableDatabase);
                 for (g gVar : hashMap.values()) {
                     i(writableDatabase, gVar);
                 }
                 writableDatabase.setTransactionSuccessful();
-                this.f13507b.clear();
+                this.f14084b.clear();
                 writableDatabase.endTransaction();
             } catch (SQLException e10) {
                 throw new qc.a(e10);
@@ -198,21 +198,21 @@ public class h {
 
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public void f(g gVar) {
-            this.f13507b.put(gVar.f13492a, gVar);
+            this.f14084b.put(gVar.f14069a, gVar);
         }
 
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public void g(HashMap hashMap, SparseArray sparseArray) {
             boolean z10;
-            if (this.f13507b.size() == 0) {
+            if (this.f14084b.size() == 0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             oe.a.g(z10);
             try {
-                if (qc.e.b(this.f13506a.getReadableDatabase(), 1, (String) oe.a.e(this.f13508c)) != 1) {
-                    SQLiteDatabase writableDatabase = this.f13506a.getWritableDatabase();
+                if (qc.e.b(this.f14083a.getReadableDatabase(), 1, (String) oe.a.e(this.f14085c)) != 1) {
+                    SQLiteDatabase writableDatabase = this.f14083a.getWritableDatabase();
                     writableDatabase.beginTransactionNonExclusive();
                     o(writableDatabase);
                     writableDatabase.setTransactionSuccessful();
@@ -221,8 +221,8 @@ public class h {
                 Cursor m10 = m();
                 while (m10.moveToNext()) {
                     g gVar = new g(m10.getInt(0), (String) oe.a.e(m10.getString(1)), h.q(new DataInputStream(new ByteArrayInputStream(m10.getBlob(2)))));
-                    hashMap.put(gVar.f13493b, gVar);
-                    sparseArray.put(gVar.f13492a, gVar.f13493b);
+                    hashMap.put(gVar.f14070b, gVar);
+                    sparseArray.put(gVar.f14069a, gVar.f14070b);
                 }
                 m10.close();
             } catch (SQLiteException e10) {
@@ -234,7 +234,7 @@ public class h {
 
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public void h() {
-            j(this.f13506a, (String) oe.a.e(this.f13508c));
+            j(this.f14083a, (String) oe.a.e(this.f14085c));
         }
     }
 
@@ -242,25 +242,25 @@ public class h {
     private static class b implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean f13510a;
+        private final boolean f14087a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Cipher f13511b;
+        private final Cipher f14088b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final SecretKeySpec f13512c;
+        private final SecretKeySpec f14089c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final SecureRandom f13513d;
+        private final SecureRandom f14090d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final oe.b f13514e;
+        private final oe.b f14091e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f13515f;
+        private boolean f14092f;
 
         /* renamed from: g  reason: collision with root package name */
-        private i f13516g;
+        private i f14093g;
 
         public b(File file, byte[] bArr, boolean z10) {
             boolean z11;
@@ -285,17 +285,17 @@ public class h {
                 cipher = null;
                 secretKeySpec = null;
             }
-            this.f13510a = z10;
-            this.f13511b = cipher;
-            this.f13512c = secretKeySpec;
-            this.f13513d = z10 ? new SecureRandom() : null;
-            this.f13514e = new oe.b(file);
+            this.f14087a = z10;
+            this.f14088b = cipher;
+            this.f14089c = secretKeySpec;
+            this.f14090d = z10 ? new SecureRandom() : null;
+            this.f14091e = new oe.b(file);
         }
 
         private int i(g gVar, int i10) {
             int i11;
             int hashCode;
-            int hashCode2 = (gVar.f13492a * 31) + gVar.f13493b.hashCode();
+            int hashCode2 = (gVar.f14069a * 31) + gVar.f14070b.hashCode();
             if (i10 < 2) {
                 long d10 = ne.d.d(gVar.c());
                 i11 = hashCode2 * 31;
@@ -317,7 +317,7 @@ public class h {
                 long readLong = dataInputStream.readLong();
                 ne.e eVar = new ne.e();
                 ne.e.g(eVar, readLong);
-                q10 = ne.f.f38181c.g(eVar);
+                q10 = ne.f.f37185c.g(eVar);
             }
             return new g(readInt, readUTF, q10);
         }
@@ -326,12 +326,12 @@ public class h {
             BufferedInputStream bufferedInputStream;
             DataInputStream dataInputStream;
             boolean z10;
-            if (!this.f13514e.c()) {
+            if (!this.f14091e.c()) {
                 return true;
             }
             DataInputStream dataInputStream2 = null;
             try {
-                bufferedInputStream = new BufferedInputStream(this.f13514e.d());
+                bufferedInputStream = new BufferedInputStream(this.f14091e.d());
                 dataInputStream = new DataInputStream(bufferedInputStream);
             } catch (IOException unused) {
             } catch (Throwable th2) {
@@ -341,15 +341,15 @@ public class h {
                 int readInt = dataInputStream.readInt();
                 if (readInt >= 0 && readInt <= 2) {
                     if ((dataInputStream.readInt() & 1) != 0) {
-                        if (this.f13511b == null) {
+                        if (this.f14088b == null) {
                             w0.n(dataInputStream);
                             return false;
                         }
                         byte[] bArr = new byte[16];
                         dataInputStream.readFully(bArr);
                         try {
-                            this.f13511b.init(2, (Key) w0.j(this.f13512c), new IvParameterSpec(bArr));
-                            dataInputStream = new DataInputStream(new CipherInputStream(bufferedInputStream, this.f13511b));
+                            this.f14088b.init(2, (Key) w0.j(this.f14089c), new IvParameterSpec(bArr));
+                            dataInputStream = new DataInputStream(new CipherInputStream(bufferedInputStream, this.f14088b));
                         } catch (InvalidAlgorithmParameterException e10) {
                             e = e10;
                             throw new IllegalStateException(e);
@@ -357,15 +357,15 @@ public class h {
                             e = e11;
                             throw new IllegalStateException(e);
                         }
-                    } else if (this.f13510a) {
-                        this.f13515f = true;
+                    } else if (this.f14087a) {
+                        this.f14092f = true;
                     }
                     int readInt2 = dataInputStream.readInt();
                     int i10 = 0;
                     for (int i11 = 0; i11 < readInt2; i11++) {
                         g j10 = j(readInt, dataInputStream);
-                        hashMap.put(j10.f13493b, j10);
-                        sparseArray.put(j10.f13492a, j10.f13493b);
+                        hashMap.put(j10.f14070b, j10);
+                        sparseArray.put(j10.f14069a, j10.f14070b);
                         i10 += i(j10, readInt);
                     }
                     int readInt3 = dataInputStream.readInt();
@@ -400,8 +400,8 @@ public class h {
         }
 
         private void l(g gVar, DataOutputStream dataOutputStream) {
-            dataOutputStream.writeInt(gVar.f13492a);
-            dataOutputStream.writeUTF(gVar.f13493b);
+            dataOutputStream.writeInt(gVar.f14069a);
+            dataOutputStream.writeUTF(gVar.f14070b);
             h.t(gVar.c(), dataOutputStream);
         }
 
@@ -410,29 +410,29 @@ public class h {
             DataOutputStream dataOutputStream;
             DataOutputStream dataOutputStream2 = null;
             try {
-                OutputStream f10 = this.f13514e.f();
-                i iVar2 = this.f13516g;
+                OutputStream f10 = this.f14091e.f();
+                i iVar2 = this.f14093g;
                 if (iVar2 == null) {
-                    this.f13516g = new i(f10);
+                    this.f14093g = new i(f10);
                 } else {
                     iVar2.a(f10);
                 }
-                iVar = this.f13516g;
+                iVar = this.f14093g;
                 dataOutputStream = new DataOutputStream(iVar);
             } catch (Throwable th2) {
                 th = th2;
             }
             try {
                 dataOutputStream.writeInt(2);
-                dataOutputStream.writeInt(this.f13510a ? 1 : 0);
-                if (this.f13510a) {
+                dataOutputStream.writeInt(this.f14087a ? 1 : 0);
+                if (this.f14087a) {
                     byte[] bArr = new byte[16];
-                    ((SecureRandom) w0.j(this.f13513d)).nextBytes(bArr);
+                    ((SecureRandom) w0.j(this.f14090d)).nextBytes(bArr);
                     dataOutputStream.write(bArr);
                     try {
-                        ((Cipher) w0.j(this.f13511b)).init(1, (Key) w0.j(this.f13512c), new IvParameterSpec(bArr));
+                        ((Cipher) w0.j(this.f14088b)).init(1, (Key) w0.j(this.f14089c), new IvParameterSpec(bArr));
                         dataOutputStream.flush();
-                        dataOutputStream = new DataOutputStream(new CipherOutputStream(iVar, this.f13511b));
+                        dataOutputStream = new DataOutputStream(new CipherOutputStream(iVar, this.f14088b));
                     } catch (InvalidAlgorithmParameterException e10) {
                         e = e10;
                         throw new IllegalStateException(e);
@@ -448,7 +448,7 @@ public class h {
                     i10 += i(gVar, 2);
                 }
                 dataOutputStream.writeInt(i10);
-                this.f13514e.b(dataOutputStream);
+                this.f14091e.b(dataOutputStream);
                 w0.n(null);
             } catch (Throwable th3) {
                 th = th3;
@@ -460,17 +460,17 @@ public class h {
 
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public void a(g gVar, boolean z10) {
-            this.f13515f = true;
+            this.f14092f = true;
         }
 
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public boolean b() {
-            return this.f13514e.c();
+            return this.f14091e.c();
         }
 
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public void c(HashMap hashMap) {
-            if (!this.f13515f) {
+            if (!this.f14092f) {
                 return;
             }
             e(hashMap);
@@ -483,27 +483,27 @@ public class h {
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public void e(HashMap hashMap) {
             m(hashMap);
-            this.f13515f = false;
+            this.f14092f = false;
         }
 
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public void f(g gVar) {
-            this.f13515f = true;
+            this.f14092f = true;
         }
 
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public void g(HashMap hashMap, SparseArray sparseArray) {
-            oe.a.g(!this.f13515f);
+            oe.a.g(!this.f14092f);
             if (!k(hashMap, sparseArray)) {
                 hashMap.clear();
                 sparseArray.clear();
-                this.f13514e.a();
+                this.f14091e.a();
             }
         }
 
         @Override // com.google.android.exoplayer2.upstream.cache.h.c
         public void h() {
-            this.f13514e.a();
+            this.f14091e.a();
         }
     }
 
@@ -536,10 +536,10 @@ public class h {
             z12 = true;
         }
         oe.a.g(z12);
-        this.f13499a = new HashMap();
-        this.f13500b = new SparseArray();
-        this.f13501c = new SparseBooleanArray();
-        this.f13502d = new SparseBooleanArray();
+        this.f14076a = new HashMap();
+        this.f14077b = new SparseArray();
+        this.f14078c = new SparseBooleanArray();
+        this.f14079d = new SparseBooleanArray();
         if (bVar != null) {
             aVar = new a(bVar);
         } else {
@@ -547,12 +547,12 @@ public class h {
         }
         b bVar2 = file != null ? new b(new File(file, "cached_content_index.exi"), bArr, z10) : null;
         if (aVar != null && (bVar2 == null || !z11)) {
-            this.f13503e = aVar;
-            this.f13504f = bVar2;
+            this.f14080e = aVar;
+            this.f14081f = bVar2;
             return;
         }
-        this.f13503e = (c) w0.j(bVar2);
-        this.f13504f = aVar;
+        this.f14080e = (c) w0.j(bVar2);
+        this.f14081f = aVar;
     }
 
     static /* synthetic */ Cipher a() {
@@ -560,17 +560,17 @@ public class h {
     }
 
     private g d(String str) {
-        int l10 = l(this.f13500b);
+        int l10 = l(this.f14077b);
         g gVar = new g(l10, str);
-        this.f13499a.put(str, gVar);
-        this.f13500b.put(l10, str);
-        this.f13502d.put(l10, true);
-        this.f13503e.f(gVar);
+        this.f14076a.put(str, gVar);
+        this.f14077b.put(l10, str);
+        this.f14079d.put(l10, true);
+        this.f14080e.f(gVar);
         return gVar;
     }
 
     private static Cipher i() {
-        if (w0.f40711a == 18) {
+        if (w0.f39037a == 18) {
             try {
                 return Cipher.getInstance("AES/CBC/PKCS5PADDING", "BC");
             } catch (Throwable unused) {
@@ -610,7 +610,7 @@ public class h {
             int readInt2 = dataInputStream.readInt();
             if (readInt2 >= 0) {
                 int min = Math.min(readInt2, 10485760);
-                byte[] bArr = w0.f40716f;
+                byte[] bArr = w0.f39042f;
                 int i11 = 0;
                 while (i11 != readInt2) {
                     int i12 = i11 + min;
@@ -642,20 +642,20 @@ public class h {
     public void e(String str, ne.e eVar) {
         g m10 = m(str);
         if (m10.b(eVar)) {
-            this.f13503e.f(m10);
+            this.f14080e.f(m10);
         }
     }
 
     public int f(String str) {
-        return m(str).f13492a;
+        return m(str).f14069a;
     }
 
     public g g(String str) {
-        return (g) this.f13499a.get(str);
+        return (g) this.f14076a.get(str);
     }
 
     public Collection h() {
-        return Collections.unmodifiableCollection(this.f13499a.values());
+        return Collections.unmodifiableCollection(this.f14076a.values());
     }
 
     public ne.d j(String str) {
@@ -663,15 +663,15 @@ public class h {
         if (g10 != null) {
             return g10.c();
         }
-        return ne.f.f38181c;
+        return ne.f.f37185c;
     }
 
     public String k(int i10) {
-        return (String) this.f13500b.get(i10);
+        return (String) this.f14077b.get(i10);
     }
 
     public g m(String str) {
-        g gVar = (g) this.f13499a.get(str);
+        g gVar = (g) this.f14076a.get(str);
         if (gVar == null) {
             return d(str);
         }
@@ -680,55 +680,55 @@ public class h {
 
     public void n(long j10) {
         c cVar;
-        this.f13503e.d(j10);
-        c cVar2 = this.f13504f;
+        this.f14080e.d(j10);
+        c cVar2 = this.f14081f;
         if (cVar2 != null) {
             cVar2.d(j10);
         }
-        if (!this.f13503e.b() && (cVar = this.f13504f) != null && cVar.b()) {
-            this.f13504f.g(this.f13499a, this.f13500b);
-            this.f13503e.e(this.f13499a);
+        if (!this.f14080e.b() && (cVar = this.f14081f) != null && cVar.b()) {
+            this.f14081f.g(this.f14076a, this.f14077b);
+            this.f14080e.e(this.f14076a);
         } else {
-            this.f13503e.g(this.f13499a, this.f13500b);
+            this.f14080e.g(this.f14076a, this.f14077b);
         }
-        c cVar3 = this.f13504f;
+        c cVar3 = this.f14081f;
         if (cVar3 != null) {
             cVar3.h();
-            this.f13504f = null;
+            this.f14081f = null;
         }
     }
 
     public void p(String str) {
-        g gVar = (g) this.f13499a.get(str);
+        g gVar = (g) this.f14076a.get(str);
         if (gVar != null && gVar.f() && gVar.h()) {
-            this.f13499a.remove(str);
-            int i10 = gVar.f13492a;
-            boolean z10 = this.f13502d.get(i10);
-            this.f13503e.a(gVar, z10);
+            this.f14076a.remove(str);
+            int i10 = gVar.f14069a;
+            boolean z10 = this.f14079d.get(i10);
+            this.f14080e.a(gVar, z10);
             if (z10) {
-                this.f13500b.remove(i10);
-                this.f13502d.delete(i10);
+                this.f14077b.remove(i10);
+                this.f14079d.delete(i10);
                 return;
             }
-            this.f13500b.put(i10, null);
-            this.f13501c.put(i10, true);
+            this.f14077b.put(i10, null);
+            this.f14078c.put(i10, true);
         }
     }
 
     public void r() {
-        t0 s10 = u.o(this.f13499a.keySet()).s();
+        t0 s10 = u.o(this.f14076a.keySet()).s();
         while (s10.hasNext()) {
             p((String) s10.next());
         }
     }
 
     public void s() {
-        this.f13503e.c(this.f13499a);
-        int size = this.f13501c.size();
+        this.f14080e.c(this.f14076a);
+        int size = this.f14078c.size();
         for (int i10 = 0; i10 < size; i10++) {
-            this.f13500b.remove(this.f13501c.keyAt(i10));
+            this.f14077b.remove(this.f14078c.keyAt(i10));
         }
-        this.f13501c.clear();
-        this.f13502d.clear();
+        this.f14078c.clear();
+        this.f14079d.clear();
     }
 }

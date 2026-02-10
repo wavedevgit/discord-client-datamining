@@ -28,12 +28,12 @@ public final class GuildInviteViewHolder extends MessagePartViewHolder {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$2$lambda$0(GuildInviteViewHolder guildInviteViewHolder, GuildInviteMessageAccessory guildInviteMessageAccessory, View view) {
-        guildInviteViewHolder.eventHandler.mo462onTapInviteEmbedAFFcxXc(guildInviteMessageAccessory.mo536getMessageId3Eiw7ao(), guildInviteMessageAccessory.getCodedLinkIndex(), null, null);
+        guildInviteViewHolder.eventHandler.mo463onTapInviteEmbedAFFcxXc(guildInviteMessageAccessory.mo537getMessageId3Eiw7ao(), guildInviteMessageAccessory.getCodedLinkIndex(), null, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$2$lambda$1(GuildInviteViewHolder guildInviteViewHolder, GuildInviteMessageAccessory guildInviteMessageAccessory, View view) {
-        guildInviteViewHolder.eventHandler.mo463onTapInviteEmbedAcceptntcYbpo(guildInviteMessageAccessory.mo536getMessageId3Eiw7ao(), guildInviteMessageAccessory.getCodedLinkIndex());
+        guildInviteViewHolder.eventHandler.mo464onTapInviteEmbedAcceptntcYbpo(guildInviteMessageAccessory.mo537getMessageId3Eiw7ao(), guildInviteMessageAccessory.getCodedLinkIndex());
     }
 
     public final void bind(@NotNull final GuildInviteMessageAccessory inviteAccessory) {

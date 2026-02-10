@@ -5,46 +5,46 @@ import java.util.ArrayDeque;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f26614a;
+    private final int f27733a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ArrayDeque f26615b;
+    private final ArrayDeque f27734b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f26616c = new Object();
+    private final Object f27735c = new Object();
 
     /* renamed from: d  reason: collision with root package name */
-    final c f26617d;
+    final c f27736d;
 
     public a(int i10, c cVar) {
-        this.f26614a = i10;
-        this.f26615b = new ArrayDeque(i10);
-        this.f26617d = cVar;
+        this.f27733a = i10;
+        this.f27734b = new ArrayDeque(i10);
+        this.f27736d = cVar;
     }
 
     public Object a() {
         Object removeLast;
-        synchronized (this.f26616c) {
-            removeLast = this.f26615b.removeLast();
+        synchronized (this.f27735c) {
+            removeLast = this.f27734b.removeLast();
         }
         return removeLast;
     }
 
     public void b(Object obj) {
         Object obj2;
-        synchronized (this.f26616c) {
+        synchronized (this.f27735c) {
             try {
-                if (this.f26615b.size() >= this.f26614a) {
+                if (this.f27734b.size() >= this.f27733a) {
                     obj2 = a();
                 } else {
                     obj2 = null;
                 }
-                this.f26615b.addFirst(obj);
+                this.f27734b.addFirst(obj);
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        c cVar = this.f26617d;
+        c cVar = this.f27736d;
         if (cVar != null && obj2 != null) {
             cVar.a(obj2);
         }
@@ -52,8 +52,8 @@ public abstract class a {
 
     public boolean c() {
         boolean isEmpty;
-        synchronized (this.f26616c) {
-            isEmpty = this.f26615b.isEmpty();
+        synchronized (this.f27735c) {
+            isEmpty = this.f27734b.isEmpty();
         }
         return isEmpty;
     }

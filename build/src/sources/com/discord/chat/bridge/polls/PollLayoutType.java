@@ -2,14 +2,14 @@ package com.discord.chat.bridge.polls;
 
 import com.discord.serialization.IntEnum;
 import com.discord.serialization.IntEnumSerializer;
-import gt.m;
+import hs.a;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Reflection;
 import kotlinx.serialization.KSerializer;
 import org.jetbrains.annotations.NotNull;
-import yr.a;
+import qt.m;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @m(with = Serializer.class)

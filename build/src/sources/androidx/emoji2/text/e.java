@@ -18,74 +18,74 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class e {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Object f4085o = new Object();
+    private static final Object f4095o = new Object();
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Object f4086p = new Object();
+    private static final Object f4096p = new Object();
 
     /* renamed from: q  reason: collision with root package name */
-    private static volatile e f4087q;
+    private static volatile e f4097q;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f4089b;
+    private final Set f4099b;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b f4092e;
+    private final b f4102e;
 
     /* renamed from: f  reason: collision with root package name */
-    final h f4093f;
+    final h f4103f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final j f4094g;
+    private final j f4104g;
 
     /* renamed from: h  reason: collision with root package name */
-    final boolean f4095h;
+    final boolean f4105h;
 
     /* renamed from: i  reason: collision with root package name */
-    final boolean f4096i;
+    final boolean f4106i;
 
     /* renamed from: j  reason: collision with root package name */
-    final int[] f4097j;
+    final int[] f4107j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final boolean f4098k;
+    private final boolean f4108k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final int f4099l;
+    private final int f4109l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final int f4100m;
+    private final int f4110m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final InterfaceC0052e f4101n;
+    private final InterfaceC0048e f4111n;
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReadWriteLock f4088a = new ReentrantReadWriteLock();
+    private final ReadWriteLock f4098a = new ReentrantReadWriteLock();
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile int f4090c = 3;
+    private volatile int f4100c = 3;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Handler f4091d = new Handler(Looper.getMainLooper());
+    private final Handler f4101d = new Handler(Looper.getMainLooper());
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class a extends b {
 
         /* renamed from: b  reason: collision with root package name */
-        private volatile androidx.emoji2.text.h f4102b;
+        private volatile androidx.emoji2.text.h f4112b;
 
         /* renamed from: c  reason: collision with root package name */
-        private volatile m f4103c;
+        private volatile m f4113c;
 
         /* renamed from: androidx.emoji2.text.e$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        class C0051a extends i {
-            C0051a() {
+        class C0047a extends i {
+            C0047a() {
             }
 
             @Override // androidx.emoji2.text.e.i
             public void a(Throwable th2) {
-                a.this.f4105a.n(th2);
+                a.this.f4115a.n(th2);
             }
 
             @Override // androidx.emoji2.text.e.i
@@ -101,35 +101,35 @@ public class e {
         @Override // androidx.emoji2.text.e.b
         void a() {
             try {
-                this.f4105a.f4093f.a(new C0051a());
+                this.f4115a.f4103f.a(new C0047a());
             } catch (Throwable th2) {
-                this.f4105a.n(th2);
+                this.f4115a.n(th2);
             }
         }
 
         @Override // androidx.emoji2.text.e.b
         CharSequence b(CharSequence charSequence, int i10, int i11, int i12, boolean z10) {
-            return this.f4102b.h(charSequence, i10, i11, i12, z10);
+            return this.f4112b.h(charSequence, i10, i11, i12, z10);
         }
 
         @Override // androidx.emoji2.text.e.b
         void c(EditorInfo editorInfo) {
-            editorInfo.extras.putInt("android.support.text.emoji.emojiCompat_metadataVersion", this.f4103c.e());
-            editorInfo.extras.putBoolean("android.support.text.emoji.emojiCompat_replaceAll", this.f4105a.f4095h);
+            editorInfo.extras.putInt("android.support.text.emoji.emojiCompat_metadataVersion", this.f4113c.e());
+            editorInfo.extras.putBoolean("android.support.text.emoji.emojiCompat_replaceAll", this.f4115a.f4105h);
         }
 
         void d(m mVar) {
             if (mVar == null) {
-                this.f4105a.n(new IllegalArgumentException("metadataRepo cannot be null"));
+                this.f4115a.n(new IllegalArgumentException("metadataRepo cannot be null"));
                 return;
             }
-            this.f4103c = mVar;
-            m mVar2 = this.f4103c;
-            j jVar = this.f4105a.f4094g;
-            InterfaceC0052e interfaceC0052e = this.f4105a.f4101n;
-            e eVar = this.f4105a;
-            this.f4102b = new androidx.emoji2.text.h(mVar2, jVar, interfaceC0052e, eVar.f4096i, eVar.f4097j, androidx.emoji2.text.g.a());
-            this.f4105a.o();
+            this.f4113c = mVar;
+            m mVar2 = this.f4113c;
+            j jVar = this.f4115a.f4104g;
+            InterfaceC0048e interfaceC0048e = this.f4115a.f4111n;
+            e eVar = this.f4115a;
+            this.f4112b = new androidx.emoji2.text.h(mVar2, jVar, interfaceC0048e, eVar.f4106i, eVar.f4107j, androidx.emoji2.text.g.a());
+            this.f4115a.o();
         }
     }
 
@@ -138,10 +138,10 @@ public class e {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        final e f4105a;
+        final e f4115a;
 
         b(e eVar) {
-            this.f4105a = eVar;
+            this.f4115a = eVar;
         }
 
         abstract void a();
@@ -155,48 +155,48 @@ public class e {
     public static abstract class c {
 
         /* renamed from: a  reason: collision with root package name */
-        final h f4106a;
+        final h f4116a;
 
         /* renamed from: b  reason: collision with root package name */
-        j f4107b;
+        j f4117b;
 
         /* renamed from: c  reason: collision with root package name */
-        boolean f4108c;
+        boolean f4118c;
 
         /* renamed from: d  reason: collision with root package name */
-        boolean f4109d;
+        boolean f4119d;
 
         /* renamed from: e  reason: collision with root package name */
-        int[] f4110e;
+        int[] f4120e;
 
         /* renamed from: f  reason: collision with root package name */
-        Set f4111f;
+        Set f4121f;
 
         /* renamed from: g  reason: collision with root package name */
-        boolean f4112g;
+        boolean f4122g;
 
         /* renamed from: h  reason: collision with root package name */
-        int f4113h = -16711936;
+        int f4123h = -16711936;
 
         /* renamed from: i  reason: collision with root package name */
-        int f4114i = 0;
+        int f4124i = 0;
 
         /* renamed from: j  reason: collision with root package name */
-        InterfaceC0052e f4115j = new androidx.emoji2.text.d();
+        InterfaceC0048e f4125j = new androidx.emoji2.text.d();
 
         /* JADX INFO: Access modifiers changed from: protected */
         public c(h hVar) {
             b2.e.h(hVar, "metadataLoader cannot be null.");
-            this.f4106a = hVar;
+            this.f4116a = hVar;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         public final h a() {
-            return this.f4106a;
+            return this.f4116a;
         }
 
         public c b(int i10) {
-            this.f4114i = i10;
+            this.f4124i = i10;
             return this;
         }
     }
@@ -211,7 +211,7 @@ public class e {
 
     /* renamed from: androidx.emoji2.text.e$e  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public interface InterfaceC0052e {
+    public interface InterfaceC0048e {
         boolean a(CharSequence charSequence, int i10, int i11, int i12);
     }
 
@@ -229,13 +229,13 @@ public class e {
     public static class g implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f4116d;
+        private final List f4126d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Throwable f4117e;
+        private final Throwable f4127e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f4118i;
+        private final int f4128i;
 
         g(f fVar, int i10) {
             this(Arrays.asList((f) b2.e.h(fVar, "initCallback cannot be null")), i10, null);
@@ -243,17 +243,17 @@ public class e {
 
         @Override // java.lang.Runnable
         public void run() {
-            int size = this.f4116d.size();
+            int size = this.f4126d.size();
             int i10 = 0;
-            if (this.f4118i != 1) {
+            if (this.f4128i != 1) {
                 while (i10 < size) {
-                    ((f) this.f4116d.get(i10)).a(this.f4117e);
+                    ((f) this.f4126d.get(i10)).a(this.f4127e);
                     i10++;
                 }
                 return;
             }
             while (i10 < size) {
-                ((f) this.f4116d.get(i10)).b();
+                ((f) this.f4126d.get(i10)).b();
                 i10++;
             }
         }
@@ -264,9 +264,9 @@ public class e {
 
         g(Collection collection, int i10, Throwable th2) {
             b2.e.h(collection, "initCallbacks cannot be null");
-            this.f4116d = new ArrayList(collection);
-            this.f4118i = i10;
-            this.f4117e = th2;
+            this.f4126d = new ArrayList(collection);
+            this.f4128i = i10;
+            this.f4127e = th2;
         }
     }
 
@@ -288,31 +288,31 @@ public class e {
     }
 
     private e(c cVar) {
-        this.f4095h = cVar.f4108c;
-        this.f4096i = cVar.f4109d;
-        this.f4097j = cVar.f4110e;
-        this.f4098k = cVar.f4112g;
-        this.f4099l = cVar.f4113h;
-        this.f4093f = cVar.f4106a;
-        this.f4100m = cVar.f4114i;
-        this.f4101n = cVar.f4115j;
+        this.f4105h = cVar.f4118c;
+        this.f4106i = cVar.f4119d;
+        this.f4107j = cVar.f4120e;
+        this.f4108k = cVar.f4122g;
+        this.f4109l = cVar.f4123h;
+        this.f4103f = cVar.f4116a;
+        this.f4110m = cVar.f4124i;
+        this.f4111n = cVar.f4125j;
         u0.b bVar = new u0.b();
-        this.f4089b = bVar;
-        j jVar = cVar.f4107b;
-        this.f4094g = jVar == null ? new d() : jVar;
-        Set set = cVar.f4111f;
+        this.f4099b = bVar;
+        j jVar = cVar.f4117b;
+        this.f4104g = jVar == null ? new d() : jVar;
+        Set set = cVar.f4121f;
         if (set != null && !set.isEmpty()) {
-            bVar.addAll(cVar.f4111f);
+            bVar.addAll(cVar.f4121f);
         }
-        this.f4092e = new a(this);
+        this.f4102e = new a(this);
         m();
     }
 
     public static e c() {
         e eVar;
         boolean z10;
-        synchronized (f4085o) {
-            eVar = f4087q;
+        synchronized (f4095o) {
+            eVar = f4097q;
             if (eVar != null) {
                 z10 = true;
             } else {
@@ -333,14 +333,14 @@ public class e {
 
     public static e h(c cVar) {
         e eVar;
-        e eVar2 = f4087q;
+        e eVar2 = f4097q;
         if (eVar2 == null) {
-            synchronized (f4085o) {
+            synchronized (f4095o) {
                 try {
-                    eVar = f4087q;
+                    eVar = f4097q;
                     if (eVar == null) {
                         eVar = new e(cVar);
-                        f4087q = eVar;
+                        f4097q = eVar;
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -352,7 +352,7 @@ public class e {
     }
 
     public static boolean i() {
-        if (f4087q != null) {
+        if (f4097q != null) {
             return true;
         }
         return false;
@@ -366,86 +366,86 @@ public class e {
     }
 
     private void m() {
-        this.f4088a.writeLock().lock();
+        this.f4098a.writeLock().lock();
         try {
-            if (this.f4100m == 0) {
-                this.f4090c = 0;
+            if (this.f4110m == 0) {
+                this.f4100c = 0;
             }
-            this.f4088a.writeLock().unlock();
+            this.f4098a.writeLock().unlock();
             if (e() == 0) {
-                this.f4092e.a();
+                this.f4102e.a();
             }
         } catch (Throwable th2) {
-            this.f4088a.writeLock().unlock();
+            this.f4098a.writeLock().unlock();
             throw th2;
         }
     }
 
     public int d() {
-        return this.f4099l;
+        return this.f4109l;
     }
 
     public int e() {
-        this.f4088a.readLock().lock();
+        this.f4098a.readLock().lock();
         try {
-            return this.f4090c;
+            return this.f4100c;
         } finally {
-            this.f4088a.readLock().unlock();
+            this.f4098a.readLock().unlock();
         }
     }
 
     public boolean j() {
-        return this.f4098k;
+        return this.f4108k;
     }
 
     public void l() {
         boolean z10 = true;
-        if (this.f4100m != 1) {
+        if (this.f4110m != 1) {
             z10 = false;
         }
         b2.e.j(z10, "Set metadataLoadStrategy to LOAD_STRATEGY_MANUAL to execute manual loading");
         if (k()) {
             return;
         }
-        this.f4088a.writeLock().lock();
+        this.f4098a.writeLock().lock();
         try {
-            if (this.f4090c == 0) {
+            if (this.f4100c == 0) {
                 return;
             }
-            this.f4090c = 0;
-            this.f4088a.writeLock().unlock();
-            this.f4092e.a();
+            this.f4100c = 0;
+            this.f4098a.writeLock().unlock();
+            this.f4102e.a();
         } finally {
-            this.f4088a.writeLock().unlock();
+            this.f4098a.writeLock().unlock();
         }
     }
 
     void n(Throwable th2) {
         ArrayList arrayList = new ArrayList();
-        this.f4088a.writeLock().lock();
+        this.f4098a.writeLock().lock();
         try {
-            this.f4090c = 2;
-            arrayList.addAll(this.f4089b);
-            this.f4089b.clear();
-            this.f4088a.writeLock().unlock();
-            this.f4091d.post(new g(arrayList, this.f4090c, th2));
+            this.f4100c = 2;
+            arrayList.addAll(this.f4099b);
+            this.f4099b.clear();
+            this.f4098a.writeLock().unlock();
+            this.f4101d.post(new g(arrayList, this.f4100c, th2));
         } catch (Throwable th3) {
-            this.f4088a.writeLock().unlock();
+            this.f4098a.writeLock().unlock();
             throw th3;
         }
     }
 
     void o() {
         ArrayList arrayList = new ArrayList();
-        this.f4088a.writeLock().lock();
+        this.f4098a.writeLock().lock();
         try {
-            this.f4090c = 1;
-            arrayList.addAll(this.f4089b);
-            this.f4089b.clear();
-            this.f4088a.writeLock().unlock();
-            this.f4091d.post(new g(arrayList, this.f4090c));
+            this.f4100c = 1;
+            arrayList.addAll(this.f4099b);
+            this.f4099b.clear();
+            this.f4098a.writeLock().unlock();
+            this.f4101d.post(new g(arrayList, this.f4100c));
         } catch (Throwable th2) {
-            this.f4088a.writeLock().unlock();
+            this.f4098a.writeLock().unlock();
             throw th2;
         }
     }
@@ -504,38 +504,38 @@ public class e {
         }
         if (i13 != 1) {
             if (i13 != 2) {
-                z14 = this.f4095h;
+                z14 = this.f4105h;
             }
             z13 = z14;
         } else {
             z13 = true;
         }
-        return this.f4092e.b(charSequence, i10, i11, i12, z13);
+        return this.f4102e.b(charSequence, i10, i11, i12, z13);
     }
 
     public void t(f fVar) {
         b2.e.h(fVar, "initCallback cannot be null");
-        this.f4088a.writeLock().lock();
+        this.f4098a.writeLock().lock();
         try {
-            if (this.f4090c != 1 && this.f4090c != 2) {
-                this.f4089b.add(fVar);
-                this.f4088a.writeLock().unlock();
+            if (this.f4100c != 1 && this.f4100c != 2) {
+                this.f4099b.add(fVar);
+                this.f4098a.writeLock().unlock();
             }
-            this.f4091d.post(new g(fVar, this.f4090c));
-            this.f4088a.writeLock().unlock();
+            this.f4101d.post(new g(fVar, this.f4100c));
+            this.f4098a.writeLock().unlock();
         } catch (Throwable th2) {
-            this.f4088a.writeLock().unlock();
+            this.f4098a.writeLock().unlock();
             throw th2;
         }
     }
 
     public void u(f fVar) {
         b2.e.h(fVar, "initCallback cannot be null");
-        this.f4088a.writeLock().lock();
+        this.f4098a.writeLock().lock();
         try {
-            this.f4089b.remove(fVar);
+            this.f4099b.remove(fVar);
         } finally {
-            this.f4088a.writeLock().unlock();
+            this.f4098a.writeLock().unlock();
         }
     }
 
@@ -544,7 +544,7 @@ public class e {
             if (editorInfo.extras == null) {
                 editorInfo.extras = new Bundle();
             }
-            this.f4092e.c(editorInfo);
+            this.f4102e.c(editorInfo);
         }
     }
 }

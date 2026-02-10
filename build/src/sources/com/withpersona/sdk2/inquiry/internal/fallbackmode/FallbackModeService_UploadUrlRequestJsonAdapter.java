@@ -13,25 +13,25 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18966a;
+    private final m.b f19846a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18967b;
+    private final com.squareup.moshi.h f19847b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f18968c;
+    private final com.squareup.moshi.h f19848c;
 
     public FallbackModeService_UploadUrlRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("expected-content-length", "expected-content-type");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18966a = a10;
+        this.f19846a = a10;
         com.squareup.moshi.h f10 = moshi.f(Long.TYPE, x0.d(), "expectedContentLength");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18967b = f10;
+        this.f19847b = f10;
         com.squareup.moshi.h f11 = moshi.f(String.class, x0.d(), "expectedContentType");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f18968c = f11;
+        this.f19848c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -42,20 +42,20 @@ public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.s
         Long l10 = null;
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18966a);
+            int J = reader.J(this.f19846a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str = (String) this.f18968c.fromJson(reader)) == null) {
-                        throw bn.c.x("expectedContentType", "expected-content-type", reader);
+                    if (J == 1 && (str = (String) this.f19848c.fromJson(reader)) == null) {
+                        throw dn.c.x("expectedContentType", "expected-content-type", reader);
                     }
                 } else {
-                    l10 = (Long) this.f18967b.fromJson(reader);
+                    l10 = (Long) this.f19847b.fromJson(reader);
                     if (l10 == null) {
-                        throw bn.c.x("expectedContentLength", "expected-content-length", reader);
+                        throw dn.c.x("expectedContentLength", "expected-content-length", reader);
                     }
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -65,9 +65,9 @@ public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.s
             if (str != null) {
                 return new FallbackModeService.UploadUrlRequest(longValue, str);
             }
-            throw bn.c.o("expectedContentType", "expected-content-type", reader);
+            throw dn.c.o("expectedContentType", "expected-content-type", reader);
         }
-        throw bn.c.o("expectedContentLength", "expected-content-length", reader);
+        throw dn.c.o("expectedContentLength", "expected-content-length", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -75,11 +75,11 @@ public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.s
     public void toJson(t writer, FallbackModeService.UploadUrlRequest uploadUrlRequest) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (uploadUrlRequest != null) {
-            writer.k();
+            writer.i();
             writer.J("expected-content-length");
-            this.f18967b.toJson(writer, Long.valueOf(uploadUrlRequest.a()));
+            this.f19847b.toJson(writer, Long.valueOf(uploadUrlRequest.a()));
             writer.J("expected-content-type");
-            this.f18968c.toJson(writer, uploadUrlRequest.b());
+            this.f19848c.toJson(writer, uploadUrlRequest.b());
             writer.s();
             return;
         }

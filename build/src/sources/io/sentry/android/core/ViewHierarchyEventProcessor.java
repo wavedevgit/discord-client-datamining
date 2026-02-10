@@ -19,13 +19,13 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class ViewHierarchyEventProcessor implements io.sentry.b0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final SentryAndroidOptions f27245d;
+    private final SentryAndroidOptions f28180d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final io.sentry.android.core.internal.util.n f27246e = new io.sentry.android.core.internal.util.n(io.sentry.android.core.internal.util.f.b(), 2000, 3);
+    private final io.sentry.android.core.internal.util.n f28181e = new io.sentry.android.core.internal.util.n(io.sentry.android.core.internal.util.f.b(), 2000, 3);
 
     public ViewHierarchyEventProcessor(SentryAndroidOptions sentryAndroidOptions) {
-        this.f27245d = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
+        this.f28180d = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
         if (sentryAndroidOptions.isAttachViewHierarchy()) {
             io.sentry.util.p.a("ViewHierarchy");
         }
@@ -53,9 +53,9 @@ public final class ViewHierarchyEventProcessor implements io.sentry.b0 {
                 for (int i10 = 0; i10 < childCount; i10++) {
                     View childAt = viewGroup.getChildAt(i10);
                     if (childAt != null) {
-                        io.sentry.protocol.j0 h10 = h(childAt);
-                        arrayList.add(h10);
-                        c(childAt, h10, list);
+                        io.sentry.protocol.j0 g10 = g(childAt);
+                        arrayList.add(g10);
+                        c(childAt, g10, list);
                     }
                 }
                 j0Var.m(arrayList);
@@ -127,13 +127,13 @@ public final class ViewHierarchyEventProcessor implements io.sentry.b0 {
     public static io.sentry.protocol.i0 f(View view, List list) {
         ArrayList arrayList = new ArrayList(1);
         io.sentry.protocol.i0 i0Var = new io.sentry.protocol.i0("android_view_system", arrayList);
-        io.sentry.protocol.j0 h10 = h(view);
-        arrayList.add(h10);
-        c(view, h10, list);
+        io.sentry.protocol.j0 g10 = g(view);
+        arrayList.add(g10);
+        c(view, g10, list);
         return i0Var;
     }
 
-    private static io.sentry.protocol.j0 h(View view) {
+    private static io.sentry.protocol.j0 g(View view) {
         io.sentry.protocol.j0 j0Var = new io.sentry.protocol.j0();
         j0Var.p(io.sentry.android.core.internal.util.k.a(view));
         try {
@@ -161,16 +161,16 @@ public final class ViewHierarchyEventProcessor implements io.sentry.b0 {
     }
 
     @Override // io.sentry.b0
-    public SentryEvent g(SentryEvent sentryEvent, Hint hint) {
+    public SentryEvent h(SentryEvent sentryEvent, Hint hint) {
         io.sentry.protocol.i0 e10;
         if (sentryEvent.B0()) {
-            if (!this.f27245d.isAttachViewHierarchy()) {
-                this.f27245d.getLogger().c(SentryLevel.DEBUG, "attachViewHierarchy is disabled.", new Object[0]);
+            if (!this.f28180d.isAttachViewHierarchy()) {
+                this.f28180d.getLogger().c(SentryLevel.DEBUG, "attachViewHierarchy is disabled.", new Object[0]);
                 return sentryEvent;
             } else if (!io.sentry.util.n.i(hint)) {
-                boolean a10 = this.f27246e.a();
-                this.f27245d.getBeforeViewHierarchyCaptureCallback();
-                if (!a10 && (e10 = e(f1.c().b(), this.f27245d.getViewHierarchyExporters(), this.f27245d.getThreadChecker(), this.f27245d.getLogger())) != null) {
+                boolean a10 = this.f28181e.a();
+                this.f28180d.getBeforeViewHierarchyCaptureCallback();
+                if (!a10 && (e10 = e(f1.c().b(), this.f28180d.getViewHierarchyExporters(), this.f28180d.getThreadChecker(), this.f28180d.getLogger())) != null) {
                     hint.o(io.sentry.b.c(e10));
                 }
             }
@@ -179,7 +179,7 @@ public final class ViewHierarchyEventProcessor implements io.sentry.b0 {
     }
 
     @Override // io.sentry.b0
-    public io.sentry.protocol.d0 k(io.sentry.protocol.d0 d0Var, Hint hint) {
+    public io.sentry.protocol.d0 i(io.sentry.protocol.d0 d0Var, Hint hint) {
         return d0Var;
     }
 }

@@ -8,27 +8,27 @@ public final class c extends jf.a {
     public static final Parcelable.Creator<c> CREATOR = new d();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f14051d;
+    private final String f14628d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(String str) {
-        this.f14051d = str;
+        this.f14628d = str;
     }
 
     public final boolean equals(Object obj) {
         if (!(obj instanceof c)) {
             return false;
         }
-        return o.a(this.f14051d, ((c) obj).f14051d);
+        return o.a(this.f14628d, ((c) obj).f14628d);
     }
 
     public final int hashCode() {
-        return o.b(this.f14051d);
+        return o.b(this.f14628d);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        String str = this.f14051d;
+        String str = this.f14628d;
         int a10 = jf.c.a(parcel);
         jf.c.s(parcel, 1, str, false);
         jf.c.b(parcel, a10);

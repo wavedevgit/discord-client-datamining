@@ -1,44 +1,52 @@
 package bo;
 
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import android.animation.FloatEvaluator;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public final class a extends FloatEvaluator {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Function1 f7302a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final Function1 f7303b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private Number f7304c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f7161d = new a("Stream", 0);
+    private Number f7305d;
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final a f7162e = new a("Upload", 1);
-
-    /* renamed from: i  reason: collision with root package name */
-    public static final a f7163i = new a("None", 2);
-
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ a[] f7164o;
-
-    /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f7165p;
-
-    static {
-        a[] a10 = a();
-        f7164o = a10;
-        f7165p = yr.a.a(a10);
+    public a(Function1 startValueProvider, Function1 endValueProvider) {
+        Intrinsics.checkNotNullParameter(startValueProvider, "startValueProvider");
+        Intrinsics.checkNotNullParameter(endValueProvider, "endValueProvider");
+        this.f7302a = startValueProvider;
+        this.f7303b = endValueProvider;
     }
 
-    private a(String str, int i10) {
+    private final Number a(Number number) {
+        if (this.f7305d == null) {
+            this.f7305d = (Number) this.f7303b.invoke(number);
+        }
+        return this.f7305d;
     }
 
-    private static final /* synthetic */ a[] a() {
-        return new a[]{f7161d, f7162e, f7163i};
+    private final Number b(Number number) {
+        if (this.f7304c == null) {
+            this.f7304c = (Number) this.f7302a.invoke(number);
+        }
+        return this.f7304c;
     }
 
-    public static a valueOf(String str) {
-        return (a) Enum.valueOf(a.class, str);
-    }
-
-    public static a[] values() {
-        return (a[]) f7164o.clone();
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // android.animation.TypeEvaluator
+    public Float evaluate(float f10, Number number, Number number2) {
+        Number b10 = b(number);
+        Number a10 = a(number2);
+        if (b10 == null || a10 == null) {
+            return null;
+        }
+        return super.evaluate(f10, b10, a10);
     }
 }

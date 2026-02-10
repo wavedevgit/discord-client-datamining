@@ -6,37 +6,37 @@ import kotlin.jvm.internal.Intrinsics;
 public final class r implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final androidx.work.impl.u f45272d;
+    private final androidx.work.impl.u f43940d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a0 f45273e;
+    private final a0 f43941e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f45274i;
+    private final boolean f43942i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f45275o;
+    private final int f43943o;
 
     public r(androidx.work.impl.u processor, a0 token, boolean z10, int i10) {
         Intrinsics.checkNotNullParameter(processor, "processor");
         Intrinsics.checkNotNullParameter(token, "token");
-        this.f45272d = processor;
-        this.f45273e = token;
-        this.f45274i = z10;
-        this.f45275o = i10;
+        this.f43940d = processor;
+        this.f43941e = token;
+        this.f43942i = z10;
+        this.f43943o = i10;
     }
 
     @Override // java.lang.Runnable
     public void run() {
         boolean t10;
-        if (this.f45274i) {
-            t10 = this.f45272d.s(this.f45273e, this.f45275o);
+        if (this.f43942i) {
+            t10 = this.f43940d.s(this.f43941e, this.f43943o);
         } else {
-            t10 = this.f45272d.t(this.f45273e, this.f45275o);
+            t10 = this.f43940d.t(this.f43941e, this.f43943o);
         }
         k4.m e10 = k4.m.e();
         String i10 = k4.m.i("StopWorkRunnable");
-        e10.a(i10, "StopWorkRunnable for " + this.f45273e.a().b() + "; Processor.stopWork = " + t10);
+        e10.a(i10, "StopWorkRunnable for " + this.f43941e.a().b() + "; Processor.stopWork = " + t10);
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

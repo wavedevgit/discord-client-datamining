@@ -28,9 +28,9 @@ public final class UtilsKt {
         c("type: " + typeConstructor, sb2);
         c("hashCode: " + typeConstructor.hashCode(), sb2);
         c("javaClass: " + typeConstructor.getClass().getCanonicalName(), sb2);
-        for (DeclarationDescriptor mo1199getDeclarationDescriptor = typeConstructor.mo1199getDeclarationDescriptor(); mo1199getDeclarationDescriptor != null; mo1199getDeclarationDescriptor = mo1199getDeclarationDescriptor.getContainingDeclaration()) {
-            c("fqName: " + DescriptorRenderer.FQ_NAMES_IN_TYPES.render(mo1199getDeclarationDescriptor), sb2);
-            c("javaClass: " + mo1199getDeclarationDescriptor.getClass().getCanonicalName(), sb2);
+        for (DeclarationDescriptor mo1202getDeclarationDescriptor = typeConstructor.mo1202getDeclarationDescriptor(); mo1202getDeclarationDescriptor != null; mo1202getDeclarationDescriptor = mo1202getDeclarationDescriptor.getContainingDeclaration()) {
+            c("fqName: " + DescriptorRenderer.FQ_NAMES_IN_TYPES.render(mo1202getDeclarationDescriptor), sb2);
+            c("javaClass: " + mo1202getDeclarationDescriptor.getClass().getCanonicalName(), sb2);
         }
         return sb2.toString();
     }

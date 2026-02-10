@@ -17,48 +17,48 @@ import oe.w0;
 public final class a extends f {
 
     /* renamed from: o  reason: collision with root package name */
-    private final h0 f20683o;
+    private final h0 f21630o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final h0 f20684p;
+    private final h0 f21631p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final C0307a f20685q;
+    private final C0291a f21632q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Inflater f20686r;
+    private Inflater f21633r;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: de.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0307a {
+    public static final class C0291a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final h0 f20687a = new h0();
+        private final h0 f21634a = new h0();
 
         /* renamed from: b  reason: collision with root package name */
-        private final int[] f20688b = new int[IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER];
+        private final int[] f21635b = new int[IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER];
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f20689c;
+        private boolean f21636c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f20690d;
+        private int f21637d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f20691e;
+        private int f21638e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f20692f;
+        private int f21639f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f20693g;
+        private int f21640g;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f20694h;
+        private int f21641h;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f20695i;
+        private int f21642i;
 
         /* JADX INFO: Access modifiers changed from: private */
         public void e(h0 h0Var, int i10) {
@@ -74,20 +74,20 @@ public final class a extends f {
                 int i11 = i10 - 4;
                 if (z10) {
                     if (i11 >= 7 && (K = h0Var.K()) >= 4) {
-                        this.f20694h = h0Var.N();
-                        this.f20695i = h0Var.N();
-                        this.f20687a.Q(K - 4);
+                        this.f21641h = h0Var.N();
+                        this.f21642i = h0Var.N();
+                        this.f21634a.Q(K - 4);
                         i11 = i10 - 11;
                     } else {
                         return;
                     }
                 }
-                int f10 = this.f20687a.f();
-                int g10 = this.f20687a.g();
+                int f10 = this.f21634a.f();
+                int g10 = this.f21634a.g();
                 if (f10 < g10 && i11 > 0) {
                     int min = Math.min(i11, g10 - f10);
-                    h0Var.l(this.f20687a.e(), f10, min);
-                    this.f20687a.U(f10 + min);
+                    h0Var.l(this.f21634a.e(), f10, min);
+                    this.f21634a.U(f10 + min);
                 }
             }
         }
@@ -97,11 +97,11 @@ public final class a extends f {
             if (i10 < 19) {
                 return;
             }
-            this.f20690d = h0Var.N();
-            this.f20691e = h0Var.N();
+            this.f21637d = h0Var.N();
+            this.f21638e = h0Var.N();
             h0Var.V(11);
-            this.f20692f = h0Var.N();
-            this.f20693g = h0Var.N();
+            this.f21639f = h0Var.N();
+            this.f21640g = h0Var.N();
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -110,7 +110,7 @@ public final class a extends f {
                 return;
             }
             h0Var.V(2);
-            Arrays.fill(this.f20688b, 0);
+            Arrays.fill(this.f21635b, 0);
             int i11 = i10 / 5;
             for (int i12 = 0; i12 < i11; i12++) {
                 int H = h0Var.H();
@@ -120,37 +120,37 @@ public final class a extends f {
                 double d10 = H2;
                 double d11 = H3 - 128;
                 double d12 = H4 - 128;
-                this.f20688b[H] = (w0.q((int) ((d10 - (0.34414d * d12)) - (d11 * 0.71414d)), 0, SetSpanOperation.SPAN_MAX_PRIORITY) << 8) | (h0Var.H() << 24) | (w0.q((int) ((1.402d * d11) + d10), 0, SetSpanOperation.SPAN_MAX_PRIORITY) << 16) | w0.q((int) (d10 + (d12 * 1.772d)), 0, SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f21635b[H] = (w0.q((int) ((d10 - (0.34414d * d12)) - (d11 * 0.71414d)), 0, SetSpanOperation.SPAN_MAX_PRIORITY) << 8) | (h0Var.H() << 24) | (w0.q((int) ((1.402d * d11) + d10), 0, SetSpanOperation.SPAN_MAX_PRIORITY) << 16) | w0.q((int) (d10 + (d12 * 1.772d)), 0, SetSpanOperation.SPAN_MAX_PRIORITY);
             }
-            this.f20689c = true;
+            this.f21636c = true;
         }
 
         public ae.b d() {
             int i10;
             int H;
             int i11;
-            if (this.f20690d != 0 && this.f20691e != 0 && this.f20694h != 0 && this.f20695i != 0 && this.f20687a.g() != 0 && this.f20687a.f() == this.f20687a.g() && this.f20689c) {
-                this.f20687a.U(0);
-                int i12 = this.f20694h * this.f20695i;
+            if (this.f21637d != 0 && this.f21638e != 0 && this.f21641h != 0 && this.f21642i != 0 && this.f21634a.g() != 0 && this.f21634a.f() == this.f21634a.g() && this.f21636c) {
+                this.f21634a.U(0);
+                int i12 = this.f21641h * this.f21642i;
                 int[] iArr = new int[i12];
                 int i13 = 0;
                 while (i13 < i12) {
-                    int H2 = this.f20687a.H();
+                    int H2 = this.f21634a.H();
                     if (H2 != 0) {
                         i10 = i13 + 1;
-                        iArr[i13] = this.f20688b[H2];
+                        iArr[i13] = this.f21635b[H2];
                     } else {
-                        int H3 = this.f20687a.H();
+                        int H3 = this.f21634a.H();
                         if (H3 != 0) {
                             if ((H3 & 64) == 0) {
                                 H = H3 & 63;
                             } else {
-                                H = ((H3 & 63) << 8) | this.f20687a.H();
+                                H = ((H3 & 63) << 8) | this.f21634a.H();
                             }
                             if ((H3 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 0) {
                                 i11 = 0;
                             } else {
-                                i11 = this.f20688b[this.f20687a.H()];
+                                i11 = this.f21635b[this.f21634a.H()];
                             }
                             i10 = H + i13;
                             Arrays.fill(iArr, i13, i10, i11);
@@ -158,42 +158,42 @@ public final class a extends f {
                     }
                     i13 = i10;
                 }
-                return new b.C0009b().f(Bitmap.createBitmap(iArr, this.f20694h, this.f20695i, Bitmap.Config.ARGB_8888)).k(this.f20692f / this.f20690d).l(0).h(this.f20693g / this.f20691e, 0).i(0).n(this.f20694h / this.f20690d).g(this.f20695i / this.f20691e).a();
+                return new b.C0009b().f(Bitmap.createBitmap(iArr, this.f21641h, this.f21642i, Bitmap.Config.ARGB_8888)).k(this.f21639f / this.f21637d).l(0).h(this.f21640g / this.f21638e, 0).i(0).n(this.f21641h / this.f21637d).g(this.f21642i / this.f21638e).a();
             }
             return null;
         }
 
         public void h() {
-            this.f20690d = 0;
-            this.f20691e = 0;
-            this.f20692f = 0;
-            this.f20693g = 0;
-            this.f20694h = 0;
-            this.f20695i = 0;
-            this.f20687a.Q(0);
-            this.f20689c = false;
+            this.f21637d = 0;
+            this.f21638e = 0;
+            this.f21639f = 0;
+            this.f21640g = 0;
+            this.f21641h = 0;
+            this.f21642i = 0;
+            this.f21634a.Q(0);
+            this.f21636c = false;
         }
     }
 
     public a() {
         super("PgsDecoder");
-        this.f20683o = new h0();
-        this.f20684p = new h0();
-        this.f20685q = new C0307a();
+        this.f21630o = new h0();
+        this.f21631p = new h0();
+        this.f21632q = new C0291a();
     }
 
     private void B(h0 h0Var) {
         if (h0Var.a() > 0 && h0Var.j() == 120) {
-            if (this.f20686r == null) {
-                this.f20686r = new Inflater();
+            if (this.f21633r == null) {
+                this.f21633r = new Inflater();
             }
-            if (w0.A0(h0Var, this.f20684p, this.f20686r)) {
-                h0Var.S(this.f20684p.e(), this.f20684p.g());
+            if (w0.A0(h0Var, this.f21631p, this.f21633r)) {
+                h0Var.S(this.f21631p.e(), this.f21631p.g());
             }
         }
     }
 
-    private static ae.b C(h0 h0Var, C0307a c0307a) {
+    private static ae.b C(h0 h0Var, C0291a c0291a) {
         int g10 = h0Var.g();
         int H = h0Var.H();
         int N = h0Var.N();
@@ -206,18 +206,18 @@ public final class a extends f {
         if (H != 128) {
             switch (H) {
                 case 20:
-                    c0307a.g(h0Var, N);
+                    c0291a.g(h0Var, N);
                     break;
                 case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
-                    c0307a.e(h0Var, N);
+                    c0291a.e(h0Var, N);
                     break;
                 case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
-                    c0307a.f(h0Var, N);
+                    c0291a.f(h0Var, N);
                     break;
             }
         } else {
-            bVar = c0307a.d();
-            c0307a.h();
+            bVar = c0291a.d();
+            c0291a.h();
         }
         h0Var.U(f10);
         return bVar;
@@ -225,12 +225,12 @@ public final class a extends f {
 
     @Override // ae.f
     protected g z(byte[] bArr, int i10, boolean z10) {
-        this.f20683o.S(bArr, i10);
-        B(this.f20683o);
-        this.f20685q.h();
+        this.f21630o.S(bArr, i10);
+        B(this.f21630o);
+        this.f21632q.h();
         ArrayList arrayList = new ArrayList();
-        while (this.f20683o.a() >= 3) {
-            ae.b C = C(this.f20683o, this.f20685q);
+        while (this.f21630o.a() >= 3) {
+            ae.b C = C(this.f21630o, this.f21632q);
             if (C != null) {
                 arrayList.add(C);
             }

@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = false;
                 case 190:
                     if (!var4) {
-                        _fun12156_ip = 846;
+                        _fun12156_ip = 849;
                         continue _fun12156
                     }
                 case 196:
@@ -106,7 +106,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var2.data;
                     var4 = var4._sentryDebugIds;
                     if (!var4) {
-                        _fun12156_ip = 383;
+                        _fun12156_ip = 384;
                         continue _fun12156
                     }
                 case 223:
@@ -117,7 +117,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var5.bind(var0)(var4);
                     var4 = var4.DEBUG_BUILD;
                     if (!var4) {
-                        _fun12156_ip = 297;
+                        _fun12156_ip = 298;
                         continue _fun12156
                     }
                 case 252:
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var2.data;
                     var4 = 'Sentry debugId web worker message received';
                     var4 = var6.bind(var7)(var4, var5);
-                case 297:
+                case 298:
                     var6 = _closure1_slot0;
                     var10 = _closure1_slot1;
                     var4 = 2;
@@ -149,14 +149,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = {};
                     var4 = var8.bind(var9)(var4, var7, var6);
                     var5._sentryDebugIds = var4;
-                case 383:
+                case 384:
                     var4 = var2.data;
                     var4 = var4._sentryWorkerError;
                     if (!var4) {
-                        _fun12156_ip = 846;
+                        _fun12156_ip = 849;
                         continue _fun12156
                     }
-                case 400:
+                case 401:
                     var5 = _closure1_slot0;
                     var4 = _closure1_slot1;
                     var6 = 1;
@@ -164,10 +164,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var5.bind(var0)(var4);
                     var4 = var4.DEBUG_BUILD;
                     if (!var4) {
-                        _fun12156_ip = 480;
+                        _fun12156_ip = 482;
                         continue _fun12156
                     }
-                case 429:
+                case 430:
                     var5 = _closure1_slot0;
                     var4 = _closure1_slot1;
                     var4 = var4[var3];
@@ -178,7 +178,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var4._sentryWorkerError;
                     var4 = 'Sentry worker rejection message received';
                     var4 = var7.bind(var8)(var4, var5);
-                case 480:
+                case 482:
                     var2 = var2.data;
                     var11 = var2._sentryWorkerError;
                     var4 = _closure1_slot0;
@@ -188,10 +188,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var4.getClient;
                     var4 = var2.bind(var4)();
                     if (!var4) {
-                        _fun12156_ip = 846;
+                        _fun12156_ip = 849;
                         continue _fun12156
                     }
-                case 524:
+                case 526:
                     var2 = var4.getOptions;
                     var2 = var2.bind(var4)();
                     var12 = var2.stackParser;
@@ -208,10 +208,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = _closure1_slot0;
                     var7 = _closure1_slot1;
                     if (var2) {
-                        _fun12156_ip = 641;
+                        _fun12156_ip = 643;
                         continue _fun12156
                     }
-                case 601:
+                case 603:
                     var2 = 4;
                     var2 = var7[var2];
                     var9 = var5.bind(var0)(var2);
@@ -223,23 +223,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var15 = undefined;
                     var14 = var10;
                     var10 = var18[var8](var17, var16, var15, var14, var13, var12);
-                    _fun12156_ip = 664;
+                    _fun12156_ip = 666;
                     continue _fun12156;
-                case 641:
+                case 643:
                     var2 = 3;
                     var2 = var7[var2];
                     var5 = var5.bind(var0)(var2);
                     var2 = var5._eventFromRejectionWithPrimitive;
                     var10 = var2.bind(var5)(var4);
-                case 664:
+                case 666:
                     var2 = 'error';
                     var10.level = var2;
                     var2 = var11.filename;
                     if (!var2) {
-                        _fun12156_ip = 737;
+                        _fun12156_ip = 739;
                         continue _fun12156
                     }
-                case 683:
+                case 685:
                     var2 = global;
                     var9 = var2.Object;
                     var8 = var9.assign;
@@ -252,7 +252,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = {};
                     var2 = var8.bind(var9)(var2, var7, var5);
                     var10.contexts = var2;
-                case 737:
+                case 739:
                     var5 = _closure1_slot0;
                     var2 = _closure1_slot1;
                     var7 = var2[var3];
@@ -270,10 +270,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var5.bind(var0)(var2);
                     var2 = var2.DEBUG_BUILD;
                     if (!var2) {
-                        _fun12156_ip = 846;
+                        _fun12156_ip = 849;
                         continue _fun12156
                     }
-                case 806:
+                case 808:
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
                     var1 = var1[var3];
@@ -282,7 +282,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var3.log;
                     var1 = 'Captured worker unhandled rejection';
                     var1 = var2.bind(var3)(var1, var4);
-                case 846:
+                case 849:
                     return var0;
             }
         };
@@ -427,7 +427,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var3.bind(var0)(var2);
                             var2 = var2.DEBUG_BUILD;
                             if (!var2) {
-                                _fun12162_ip = 180;
+                                _fun12162_ip = 181;
                                 continue _fun12162
                             }
                         case 138:
@@ -440,7 +440,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var3.log;
                             var1 = '[Sentry Worker] Forwarding unhandled rejection to parent';
                             var1 = var2.bind(var3)(var1, var4);
-                        case 180:
+                        case 181:
                             return var0;
                     }
                 };
@@ -452,7 +452,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.bind(var0)(var2);
                 var2 = var2.DEBUG_BUILD;
                 if (!var2) {
-                    _fun12161_ip = 158;
+                    _fun12161_ip = 159;
                     continue _fun12161
                 }
             case 117:
@@ -465,7 +465,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.log;
                 var1 = '[Sentry Worker] Registered worker with unhandled rejection handling';
                 var1 = var2.bind(var3)(var1);
-            case 158:
+            case 159:
                 return var0;
         }
     };

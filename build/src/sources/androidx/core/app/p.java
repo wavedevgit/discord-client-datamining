@@ -16,10 +16,10 @@ import java.util.Set;
 public abstract class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f3258a = new Object();
+    private static final Object f3261a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object f3259b = new Object();
+    private static final Object f3262b = new Object();
 
     private static RemoteInput a(Bundle bundle) {
         ArrayList<String> stringArrayList = bundle.getStringArrayList("allowedDataTypes");

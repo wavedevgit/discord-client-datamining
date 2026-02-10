@@ -6,7 +6,7 @@ import java.io.Closeable;
 public interface e extends Closeable, ImageInfo, t8.a, z9.a {
     ImageInfo E();
 
-    o F1();
+    o J1();
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     void close();
@@ -17,7 +17,7 @@ public interface e extends Closeable, ImageInfo, t8.a, z9.a {
 
     boolean isClosed();
 
-    boolean l2();
+    boolean q2();
 
     int w();
 }

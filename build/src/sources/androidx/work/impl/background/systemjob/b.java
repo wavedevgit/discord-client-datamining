@@ -25,22 +25,22 @@ import q4.h;
 public class b implements w {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String f5737q = m.i("SystemJobScheduler");
+    private static final String f5747q = m.i("SystemJobScheduler");
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f5738d;
+    private final Context f5748d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JobScheduler f5739e;
+    private final JobScheduler f5749e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final a f5740i;
+    private final a f5750i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final WorkDatabase f5741o;
+    private final WorkDatabase f5751o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final androidx.work.a f5742p;
+    private final androidx.work.a f5752p;
 
     public b(Context context, WorkDatabase workDatabase, androidx.work.a aVar) {
         this(context, workDatabase, aVar, (JobScheduler) context.getSystemService("jobscheduler"), new a(context, aVar.a()));
@@ -60,7 +60,7 @@ public class b implements w {
         try {
             jobScheduler.cancel(i10);
         } catch (Throwable th2) {
-            m.e().d(f5737q, String.format(Locale.getDefault(), "Exception while trying to cancel job (%d)", Integer.valueOf(i10)), th2);
+            m.e().d(f5747q, String.format(Locale.getDefault(), "Exception while trying to cancel job (%d)", Integer.valueOf(i10)), th2);
         }
     }
 
@@ -84,7 +84,7 @@ public class b implements w {
         try {
             list = jobScheduler.getAllPendingJobs();
         } catch (Throwable th2) {
-            m.e().d(f5737q, "getAllPendingJobs() is not reliable on this device.", th2);
+            m.e().d(f5747q, "getAllPendingJobs() is not reliable on this device.", th2);
             list = null;
         }
         if (list == null) {
@@ -141,7 +141,7 @@ public class b implements w {
         while (true) {
             if (it.hasNext()) {
                 if (!hashSet.contains((String) it.next())) {
-                    m.e().a(f5737q, "Reconciling jobs");
+                    m.e().a(f5747q, "Reconciling jobs");
                     z10 = true;
                     break;
                 }
@@ -169,12 +169,12 @@ public class b implements w {
 
     @Override // androidx.work.impl.w
     public void c(String str) {
-        List<Integer> f10 = f(this.f5738d, this.f5739e, str);
+        List<Integer> f10 = f(this.f5748d, this.f5749e, str);
         if (f10 != null && !f10.isEmpty()) {
             for (Integer num : f10) {
-                b(this.f5739e, num.intValue());
+                b(this.f5749e, num.intValue());
             }
-            this.f5741o.E().h(str);
+            this.f5751o.E().h(str);
         }
     }
 
@@ -186,62 +186,62 @@ public class b implements w {
     @Override // androidx.work.impl.w
     public void e(u... uVarArr) {
         int e10;
-        h hVar = new h(this.f5741o);
+        h hVar = new h(this.f5751o);
         for (u uVar : uVarArr) {
-            this.f5741o.e();
+            this.f5751o.e();
             try {
-                u i10 = this.f5741o.H().i(uVar.f42988a);
+                u i10 = this.f5751o.H().i(uVar.f41446a);
                 if (i10 == null) {
-                    m.e().k(f5737q, "Skipping scheduling " + uVar.f42988a + " because it's no longer in the DB");
-                    this.f5741o.A();
-                } else if (i10.f42989b != x.ENQUEUED) {
-                    m.e().k(f5737q, "Skipping scheduling " + uVar.f42988a + " because it is no longer enqueued");
-                    this.f5741o.A();
+                    m.e().k(f5747q, "Skipping scheduling " + uVar.f41446a + " because it's no longer in the DB");
+                    this.f5751o.A();
+                } else if (i10.f41447b != x.ENQUEUED) {
+                    m.e().k(f5747q, "Skipping scheduling " + uVar.f41446a + " because it is no longer enqueued");
+                    this.f5751o.A();
                 } else {
                     p4.m a10 = p4.x.a(uVar);
-                    i a11 = this.f5741o.E().a(a10);
+                    i a11 = this.f5751o.E().a(a10);
                     if (a11 != null) {
-                        e10 = a11.f42963c;
+                        e10 = a11.f41421c;
                     } else {
-                        e10 = hVar.e(this.f5742p.i(), this.f5742p.g());
+                        e10 = hVar.e(this.f5752p.i(), this.f5752p.g());
                     }
                     if (a11 == null) {
-                        this.f5741o.E().e(l.a(a10, e10));
+                        this.f5751o.E().e(l.a(a10, e10));
                     }
                     j(uVar, e10);
-                    this.f5741o.A();
+                    this.f5751o.A();
                 }
             } finally {
-                this.f5741o.i();
+                this.f5751o.i();
             }
         }
     }
 
     public void j(u uVar, int i10) {
-        JobInfo a10 = this.f5740i.a(uVar, i10);
+        JobInfo a10 = this.f5750i.a(uVar, i10);
         m e10 = m.e();
-        String str = f5737q;
-        e10.a(str, "Scheduling work ID " + uVar.f42988a + "Job ID " + i10);
+        String str = f5747q;
+        e10.a(str, "Scheduling work ID " + uVar.f41446a + "Job ID " + i10);
         int i11 = 0;
         try {
-            if (this.f5739e.schedule(a10) == 0) {
+            if (this.f5749e.schedule(a10) == 0) {
                 m e11 = m.e();
-                e11.k(str, "Unable to schedule work ID " + uVar.f42988a);
-                if (uVar.f43004q && uVar.f43005r == r.RUN_AS_NON_EXPEDITED_WORK_REQUEST) {
-                    uVar.f43004q = false;
-                    m.e().a(str, String.format("Scheduling a non-expedited job (work ID %s)", uVar.f42988a));
+                e11.k(str, "Unable to schedule work ID " + uVar.f41446a);
+                if (uVar.f41462q && uVar.f41463r == r.RUN_AS_NON_EXPEDITED_WORK_REQUEST) {
+                    uVar.f41462q = false;
+                    m.e().a(str, String.format("Scheduling a non-expedited job (work ID %s)", uVar.f41446a));
                     j(uVar, i10);
                 }
             }
         } catch (IllegalStateException e12) {
-            List g10 = g(this.f5738d, this.f5739e);
+            List g10 = g(this.f5748d, this.f5749e);
             if (g10 != null) {
                 i11 = g10.size();
             }
-            String format = String.format(Locale.getDefault(), "JobScheduler 100 job limit exceeded.  We count %d WorkManager jobs in JobScheduler; we have %d tracked jobs in our DB; our Configuration limit is %d.", Integer.valueOf(i11), Integer.valueOf(this.f5741o.H().f().size()), Integer.valueOf(this.f5742p.h()));
-            m.e().c(f5737q, format);
+            String format = String.format(Locale.getDefault(), "JobScheduler 100 job limit exceeded.  We count %d WorkManager jobs in JobScheduler; we have %d tracked jobs in our DB; our Configuration limit is %d.", Integer.valueOf(i11), Integer.valueOf(this.f5751o.H().f().size()), Integer.valueOf(this.f5752p.h()));
+            m.e().c(f5747q, format);
             IllegalStateException illegalStateException = new IllegalStateException(format, e12);
-            Consumer l10 = this.f5742p.l();
+            Consumer l10 = this.f5752p.l();
             if (l10 != null) {
                 l10.accept(illegalStateException);
                 return;
@@ -249,16 +249,16 @@ public class b implements w {
             throw illegalStateException;
         } catch (Throwable th2) {
             m e13 = m.e();
-            String str2 = f5737q;
+            String str2 = f5747q;
             e13.d(str2, "Unable to schedule " + uVar, th2);
         }
     }
 
     public b(Context context, WorkDatabase workDatabase, androidx.work.a aVar, JobScheduler jobScheduler, a aVar2) {
-        this.f5738d = context;
-        this.f5739e = jobScheduler;
-        this.f5740i = aVar2;
-        this.f5741o = workDatabase;
-        this.f5742p = aVar;
+        this.f5748d = context;
+        this.f5749e = jobScheduler;
+        this.f5750i = aVar2;
+        this.f5751o = workDatabase;
+        this.f5752p = aVar;
     }
 }

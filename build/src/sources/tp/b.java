@@ -1,18 +1,13 @@
 package tp;
-
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
+public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f50892a;
+    public static int f49772a = 2131101049;
 
-    public b(a dataCollector) {
-        Intrinsics.checkNotNullParameter(dataCollector, "dataCollector");
-        this.f50892a = dataCollector;
-    }
+    /* renamed from: b  reason: collision with root package name */
+    public static int f49773b = 2131101050;
 
-    public final a a() {
-        return this.f50892a;
-    }
+    /* renamed from: c  reason: collision with root package name */
+    public static int f49774c = 2131101053;
 }

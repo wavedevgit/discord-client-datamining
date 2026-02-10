@@ -58,7 +58,7 @@ public final class GovernmentIdNfcScan_GovernmentIdNfcScanStylesJsonAdapter exte
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 governmentIdNfcScanPrimaryButtonStyles = (AttributeStyles.GovernmentIdNfcScanPrimaryButtonStyles) this.nullableGovernmentIdNfcScanPrimaryButtonStylesAdapter.fromJson(reader);
@@ -76,7 +76,7 @@ public final class GovernmentIdNfcScan_GovernmentIdNfcScanStylesJsonAdapter exte
     public void toJson(@NotNull t writer, GovernmentIdNfcScan.GovernmentIdNfcScanStyles governmentIdNfcScanStyles) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdNfcScanStyles != null) {
-            writer.k();
+            writer.i();
             writer.J("buttonPrimaryStyle");
             this.nullableGovernmentIdNfcScanPrimaryButtonStylesAdapter.toJson(writer, governmentIdNfcScanStyles.getButtonPrimaryStyle());
             writer.J("inputTextStyle");

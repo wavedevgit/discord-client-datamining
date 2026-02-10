@@ -25,7 +25,7 @@ public final class FontManager {
     @NotNull
     public static final FontManager INSTANCE = new FontManager();
     @NotNull
-    private static final ReadWriteProperty initialFontSize$delegate = a.f31852a.a();
+    private static final ReadWriteProperty initialFontSize$delegate = a.f32074a.a();
 
     private FontManager() {
     }

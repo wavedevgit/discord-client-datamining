@@ -20,15 +20,15 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$64 exten
 
     @Override // kotlin.jvm.functions.Function8
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6, Object obj7, Object obj8) {
-        m519invokeYVExdug(((ChannelId) obj).m1066unboximpl(), ((MessageId) obj2).m1092unboximpl(), (String) obj3, ((Number) obj4).intValue(), ((Number) obj5).intValue(), ((Number) obj6).intValue(), ((Number) obj7).intValue(), (ViewResizeMode) obj8);
-        return Unit.f31765a;
+        m520invokeYVExdug(((ChannelId) obj).m1067unboximpl(), ((MessageId) obj2).m1093unboximpl(), (String) obj3, ((Number) obj4).intValue(), ((Number) obj5).intValue(), ((Number) obj6).intValue(), ((Number) obj7).intValue(), (ViewResizeMode) obj8);
+        return Unit.f31987a;
     }
 
     /* renamed from: invoke-YVExdug  reason: not valid java name */
-    public final void m519invokeYVExdug(long j10, String p12, String p22, int i10, int i11, int i12, int i13, ViewResizeMode p72) {
+    public final void m520invokeYVExdug(long j10, String p12, String p22, int i10, int i11, int i12, int i13, ViewResizeMode p72) {
         Intrinsics.checkNotNullParameter(p12, "p1");
         Intrinsics.checkNotNullParameter(p22, "p2");
         Intrinsics.checkNotNullParameter(p72, "p7");
-        ((ChatEventHandler) this.receiver).mo440onLongPressPollImageYVExdug(j10, p12, p22, i10, i11, i12, i13, p72);
+        ((ChatEventHandler) this.receiver).mo441onLongPressPollImageYVExdug(j10, p12, p22, i10, i11, i12, i13, p72);
     }
 }

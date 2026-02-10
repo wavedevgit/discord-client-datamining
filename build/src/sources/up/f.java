@@ -1,48 +1,93 @@
 package up;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import androidx.viewbinding.ViewBinding;
-import sp.n;
+import java.util.Set;
+import kotlin.collections.CollectionsKt;
+import kotlin.collections.x0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import okhttp3.Interceptor;
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import okio.Buffer;
+import org.json.JSONObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f implements ViewBinding {
+public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ImageView f51758a;
+    public static final a f50894a = new a(null);
 
-    /* renamed from: b  reason: collision with root package name */
-    public final ImageView f51759b;
-
-    private f(ImageView imageView, ImageView imageView2) {
-        this.f51758a = imageView;
-        this.f51759b = imageView2;
-    }
-
-    public static f a(View view) {
-        if (view != null) {
-            ImageView imageView = (ImageView) view;
-            return new f(imageView, imageView);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        throw new NullPointerException("rootView");
-    }
 
-    public static f c(LayoutInflater layoutInflater) {
-        return d(layoutInflater, null, false);
-    }
-
-    public static f d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n.f49978f, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
+        public final Set a() {
+            return x0.c(p.f50912d);
         }
-        return a(inflate);
+
+        private a() {
+        }
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public ImageView getRoot() {
-        return this.f51758a;
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Response c(c cVar, Interceptor.Chain chain) {
+        String str;
+        Intrinsics.checkNotNullParameter(chain, "chain");
+        Request i10 = chain.i();
+        RequestBody c10 = i10.c();
+        if ((Intrinsics.areEqual(CollectionsKt.z0(i10.n().n()), "transition") || Intrinsics.areEqual(CollectionsKt.z0(i10.n().n()), "government-id-classification")) && c10 != null && cVar.c()) {
+            String a10 = c.f50882d.a(cVar.a());
+            MediaType contentType = c10.contentType();
+            if (contentType != null) {
+                str = contentType.g();
+            } else {
+                str = null;
+            }
+            if (Intrinsics.areEqual(str, "form-data")) {
+                MultipartBody multipartBody = (MultipartBody) c10;
+                MultipartBody.Builder e10 = new MultipartBody.Builder(null, 1, null).e(multipartBody.contentType());
+                for (MultipartBody.b bVar : multipartBody.b()) {
+                    e10.c(bVar);
+                }
+                return chain.a(i10.k().g(i10.j(), e10.a("meta[workflowInitialVariables][debugForcedStatus]", a10).d()).b());
+            } else if (Intrinsics.areEqual(str, "json")) {
+                Buffer buffer = new Buffer();
+                c10.writeTo(buffer);
+                JSONObject jSONObject = new JSONObject(buffer.X1());
+                JSONObject optJSONObject = jSONObject.optJSONObject("meta");
+                if (optJSONObject == null) {
+                    optJSONObject = new JSONObject();
+                }
+                optJSONObject.put("workflowInitialVariables", new JSONObject().put("debugForcedStatus", a10));
+                jSONObject.put("meta", optJSONObject);
+                RequestBody.Companion companion = RequestBody.Companion;
+                String jSONObject2 = jSONObject.toString();
+                Intrinsics.checkNotNullExpressionValue(jSONObject2, "toString(...)");
+                return chain.a(i10.k().g(i10.j(), companion.b(jSONObject2, c10.contentType())).b());
+            } else {
+                return chain.a(i10);
+            }
+        }
+        return chain.a(i10);
+    }
+
+    public static final Set d() {
+        return f50894a.a();
+    }
+
+    public final Interceptor b(final c flags) {
+        Intrinsics.checkNotNullParameter(flags, "flags");
+        return new Interceptor() { // from class: up.e
+            @Override // okhttp3.Interceptor
+            public final Response intercept(Interceptor.Chain chain) {
+                Response c10;
+                c10 = f.c(c.this, chain);
+                return c10;
+            }
+        };
     }
 }

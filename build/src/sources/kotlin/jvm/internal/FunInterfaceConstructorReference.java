@@ -2,7 +2,7 @@ package kotlin.jvm.internal;
 
 import java.io.Serializable;
 import kotlin.reflect.KFunction;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class FunInterfaceConstructorReference extends FunctionReference implements Serializable {
     private final Class funInterface;
 

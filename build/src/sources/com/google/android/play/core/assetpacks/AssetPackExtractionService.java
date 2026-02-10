@@ -7,11 +7,11 @@ import android.os.IBinder;
 public class AssetPackExtractionService extends Service {
 
     /* renamed from: d  reason: collision with root package name */
-    a0 f15782d;
+    a0 f16531d;
 
     @Override // android.app.Service
     public final IBinder onBind(Intent intent) {
-        return this.f15782d;
+        return this.f16531d;
     }
 
     @Override // android.app.Service

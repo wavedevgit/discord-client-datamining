@@ -3,10 +3,10 @@ package qg;
 public final class xa {
 
     /* renamed from: a  reason: collision with root package name */
-    private ca f46496a;
+    private ca f45164a;
 
     public final xa b(ca caVar) {
-        this.f46496a = caVar;
+        this.f45164a = caVar;
         return this;
     }
 

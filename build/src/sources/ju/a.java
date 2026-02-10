@@ -1,52 +1,147 @@
 package ju;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import okhttp3.Headers;
-import okio.BufferedSource;
+import iu.c;
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.Collections;
+import java.util.Map;
+import java.util.Set;
+import net.time4j.f0;
+import net.time4j.tz.m;
+import net.time4j.tz.r;
+import net.time4j.tz.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a {
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final C0457a f30499c = new C0457a(null);
+public class a implements r, c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final BufferedSource f30500a;
+    private final String f31363a;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f30501b;
+    private final String f31364b;
 
-    /* renamed from: ju.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0457a {
-        public /* synthetic */ C0457a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: c  reason: collision with root package name */
+    private final Map f31365c;
 
-        private C0457a() {
-        }
+    /* renamed from: d  reason: collision with root package name */
+    private final Map f31366d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final f0 f31367e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final Map f31368f;
+
+    /* JADX WARN: Removed duplicated region for block: B:79:0x0208  */
+    /* JADX WARN: Removed duplicated region for block: B:81:0x021b  */
+    /* JADX WARN: Removed duplicated region for block: B:92:0x0200 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:96:0x021f A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public a() {
+        /*
+            Method dump skipped, instructions count: 547
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ju.a.<init>():void");
     }
 
-    public a(BufferedSource source) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        this.f30500a = source;
-        this.f30501b = 262144L;
+    private static void i(DataInputStream dataInputStream, String str) {
+        byte readByte = dataInputStream.readByte();
+        byte readByte2 = dataInputStream.readByte();
+        byte readByte3 = dataInputStream.readByte();
+        byte readByte4 = dataInputStream.readByte();
+        byte readByte5 = dataInputStream.readByte();
+        byte readByte6 = dataInputStream.readByte();
+        if (readByte == 116 && readByte2 == 122 && readByte3 == 114 && readByte4 == 101 && readByte5 == 112 && readByte6 == 111) {
+            return;
+        }
+        throw new IOException("Invalid tz-repository: " + str);
     }
 
-    public final Headers a() {
-        Headers.a aVar = new Headers.a();
-        while (true) {
-            String b10 = b();
-            if (b10.length() == 0) {
-                return aVar.f();
+    private static Class k() {
+        if (Boolean.getBoolean("test.environment")) {
+            try {
+                return Class.forName("net.time4j.tz.spi.RepositoryTest");
+            } catch (ClassNotFoundException e10) {
+                throw new AssertionError(e10);
             }
-            aVar.c(b10);
+        }
+        return a.class;
+    }
+
+    @Override // net.time4j.tz.r
+    public s a() {
+        return null;
+    }
+
+    @Override // iu.c
+    public boolean b() {
+        return !this.f31368f.isEmpty();
+    }
+
+    @Override // net.time4j.tz.r
+    public Map c() {
+        return this.f31366d;
+    }
+
+    @Override // net.time4j.tz.r
+    public String e() {
+        return this.f31363a;
+    }
+
+    @Override // iu.c
+    public Map f() {
+        return Collections.unmodifiableMap(this.f31368f);
+    }
+
+    @Override // net.time4j.tz.r
+    public Set g() {
+        return this.f31365c.keySet();
+    }
+
+    @Override // net.time4j.tz.r
+    public String getLocation() {
+        return this.f31364b;
+    }
+
+    @Override // net.time4j.tz.r
+    public String getName() {
+        return "TZDB";
+    }
+
+    @Override // net.time4j.tz.r
+    public String h() {
+        return "";
+    }
+
+    @Override // iu.c
+    /* renamed from: j */
+    public f0 d() {
+        return this.f31367e;
+    }
+
+    @Override // net.time4j.tz.r
+    public m load(String str) {
+        try {
+            byte[] bArr = (byte[]) this.f31365c.get(str);
+            if (bArr != null) {
+                return (m) new ObjectInputStream(new ByteArrayInputStream(bArr)).readObject();
+            }
+            return null;
+        } catch (IOException e10) {
+            e10.printStackTrace();
+            return null;
+        } catch (ClassNotFoundException e11) {
+            e11.printStackTrace();
+            return null;
         }
     }
 
-    public final String b() {
-        String i02 = this.f30500a.i0(this.f30501b);
-        this.f30501b -= i02.length();
-        return i02;
+    public String toString() {
+        return "TZ-REPOSITORY(" + this.f31363a + ")";
     }
 }

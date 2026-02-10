@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
 public class c implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AbstractTypeAliasDescriptor f32346d;
+    private final AbstractTypeAliasDescriptor f32568d;
 
     public c(AbstractTypeAliasDescriptor abstractTypeAliasDescriptor) {
-        this.f32346d = abstractTypeAliasDescriptor;
+        this.f32568d = abstractTypeAliasDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         SimpleType f10;
-        f10 = AbstractTypeAliasDescriptor.f(this.f32346d, (KotlinTypeRefiner) obj);
+        f10 = AbstractTypeAliasDescriptor.f(this.f32568d, (KotlinTypeRefiner) obj);
         return f10;
     }
 }

@@ -1,103 +1,108 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var2 = exports;
-    var6 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var6;
-    var0 = ['tintColor', 'style'];
-    var _closure1_slot2 = var0;
-    var0 = global;
-    var7 = var0.Object;
-    var5 = var7.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var5.bind(var7)(var2, var0, var3);
-    var0 = 0;
-    var5 = var6[var0];
-    var3 = metroImportDefault;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var5);
-    var _closure1_slot3 = var3;
-    var3 = 1;
-    var5 = var6[var3];
-    var3 = metroImportAll;
-    var3 = var3.bind(var0)(var5);
-    var3 = 2;
-    var3 = var6[var3];
-    var3 = var4.bind(var0)(var3);
-    var5 = var3.Animated;
-    var _closure1_slot4 = var5;
-    var5 = var3.Platform;
-    var5 = var3.StyleSheet;
-    var3 = 3;
-    var3 = var6[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot5 = var3;
-    var4 = var5.create;
-    var3 = {};
-    var6 = {
-        'fontSize': 20,
-        'fontFamily': 'sans-serif-medium',
-        'fontWeight': 'normal'
-    };
-    var3.title = var6;
-    var3 = var4.bind(var5)(var3);
-    var _closure1_slot6 = var3;
-    var1 = function arg0() {
-        _fun43693: for (var _fun43693_ip = 0;;) switch (_fun43693_ip) {
-            case 0:
-                var4 = arg0;
-                var10 = var4.tintColor;
-                var8 = var4.style;
-                var2 = _closure1_slot3;
-                var1 = _closure1_slot2;
-                var3 = undefined;
-                var7 = var2.bind(var3)(var4, var1);
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var1 = 4;
-                var1 = var4[var1];
-                var2 = var2.bind(var3)(var1);
-                var1 = var2.useTheme;
-                var1 = var1.bind(var2)();
-                var11 = var1.colors;
-                var2 = _closure1_slot5;
-                var1 = _closure1_slot4;
-                var1 = var1.Text;
-                var4 = global;
-                var6 = var4.Object;
-                var5 = var6.assign;
-                var4 = {};
-                var0 = _closure1_slot6;
-                var9 = var0.title;
-                var0 = new Array(3);
-                var0[0] = var9;
-                var9 = {};
-                if (!(var3 === var10)) {
-                    _fun43693_ip = 124;
-                    continue _fun43693
+    _fun43729: for (var _fun43729_ip = 0;;) switch (_fun43729_ip) {
+        case 0:
+            var11 = require;
+            var4 = metroImportDefault;
+            var2 = exports;
+            var5 = dependencyMap;
+            var0 = global;
+            var6 = var0.Object;
+            var3 = var6.defineProperty;
+            var1 = {};
+            var0 = true;
+            var1.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var6)(var2, var0, var1);
+            var0 = 0;
+            var1 = var5[var0];
+            var0 = undefined;
+            var3 = var11.bind(var0)(var1);
+            var1 = new Array(2);
+            var1[0] = var3;
+            var3 = 1;
+            var3 = var5[var3];
+            var3 = var11.bind(var0)(var3);
+            var1[1] = var3;
+            var6 = 2;
+            var3 = var5[var6];
+            var9 = var11.bind(var0)(var3);
+            for (var3 in var9)
+                case 101: {
+                    case 110: var13 = var3;
+                    var12 = var5[var6];
+                    var12 = var11.bind(var0)(var12);
+                    var12 = var12[var13];
+                    var2[var13] = var12;
+                    _fun43729_ip = 101;
+                    continue _fun43729;
                 }
-            case 119:
-                var10 = var11.text;
-            case 124:
-                var9.color = var10;
-                var0[1] = var9;
-                var0[2] = var8;
-                var4.style = var0;
-                var0 = {
-                    'accessibilityRole': 'header',
-                    'aria-level': '1',
-                    'numberOfLines': 1
-                };
-                var0 = var5.bind(var6)(var0, var7, var4);
-                var0 = var2.bind(var3)(var1, var0);
-                return var0;
-        }
-    };
-    var2.default = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, 1470]);
+        case 132:
+            var3 = 3;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.Background = var3;
+            var3 = 4;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.getDefaultHeaderHeight = var3;
+            var3 = 5;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.getHeaderTitle = var3;
+            var3 = 6;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.Header = var3;
+            var3 = 7;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.HeaderBackButton = var3;
+            var3 = 8;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.HeaderBackContext = var3;
+            var3 = 9;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.HeaderBackground = var3;
+            var3 = 10;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.HeaderHeightContext = var3;
+            var3 = 11;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.HeaderShownContext = var3;
+            var3 = 12;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.HeaderTitle = var3;
+            var3 = 13;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.useHeaderHeight = var3;
+            var3 = 14;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.MissingIcon = var3;
+            var3 = 15;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.PlatformPressable = var3;
+            var3 = 16;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.ResourceSavingView = var3;
+            var3 = 17;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.SafeAreaProviderCompat = var3;
+            var3 = 18;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.Screen = var3;
+            var2.Assets = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4720, 4721, 4722, 4723, 4724, 4725, 4726, 4731, 4737, 4730, 4738, 4727, 4729, 4739, 4740, 4736, 4741, 4742, 4743]);

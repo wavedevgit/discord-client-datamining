@@ -1,60 +1,63 @@
 package fk;
 
-import rg.ak;
-import rg.he;
-import rg.ie;
-import rg.je;
-import rg.ke;
-import rg.lj;
-import rg.mh;
-import rg.uh;
-import rg.wj;
-import rg.xj;
+import com.google.android.gms.tasks.Task;
+import ek.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static uh a(int i10) {
-        switch (i10) {
-            case 1:
-                return uh.LATIN;
-            case 2:
-                return uh.LATIN_AND_CHINESE;
-            case 3:
-                return uh.LATIN_AND_DEVANAGARI;
-            case 4:
-                return uh.LATIN_AND_JAPANESE;
-            case 5:
-                return uh.LATIN_AND_KOREAN;
-            case 6:
-                return uh.CREDIT_CARD;
-            case 7:
-                return uh.DOCUMENT;
-            case 8:
-                return uh.PIXEL_AI;
-            default:
-                return uh.TYPE_UNKNOWN;
-        }
-    }
+public class a extends dk.e implements ek.d {
+
+    /* renamed from: t  reason: collision with root package name */
+    static final ek.e f23759t = new e.a().a();
+
+    /* renamed from: s  reason: collision with root package name */
+    private final boolean f23760s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static void b(xj xjVar, final boolean z10, final ie ieVar) {
-        xjVar.f(new wj() { // from class: fk.n
-            @Override // rg.wj
-            public final lj zza() {
-                he heVar;
-                ke keVar = new ke();
-                if (z10) {
-                    heVar = he.TYPE_THICK;
-                } else {
-                    heVar = he.TYPE_THIN;
-                }
-                ie ieVar2 = ieVar;
-                keVar.e(heVar);
-                mh mhVar = new mh();
-                mhVar.b(ieVar2);
-                keVar.g(mhVar.c());
-                return ak.e(keVar);
-            }
-        }, je.ON_DEVICE_TEXT_LOAD);
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public /* synthetic */ a(fk.i r1, wj.d r2, ek.e r3, fk.e r4) {
+        /*
+            r0 = this;
+            java.util.concurrent.Executor r4 = r3.f()
+            java.util.concurrent.Executor r2 = r2.a(r4)
+            java.lang.String r4 = fk.k.b()
+            qg.qd r4 = qg.be.b(r4)
+            r0.<init>(r1, r2)
+            boolean r1 = fk.k.d()
+            r0.f23760s = r1
+            qg.ea r2 = new qg.ea
+            r2.<init>()
+            if (r1 == 0) goto L23
+            qg.ba r1 = qg.ba.TYPE_THICK
+            goto L25
+        L23:
+            qg.ba r1 = qg.ba.TYPE_THIN
+        L25:
+            r2.e(r1)
+            qg.ua r1 = new qg.ua
+            r1.<init>()
+            qg.n9 r3 = fk.k.a(r3)
+            r1.e(r3)
+            qg.wa r1 = r1.i()
+            r2.g(r1)
+            r1 = 1
+            qg.ed r1 = qg.td.f(r2, r1)
+            qg.da r2 = qg.da.ON_DEVICE_FACE_CREATE
+            r4.d(r1, r2)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: fk.a.<init>(fk.i, wj.d, ek.e, fk.e):void");
+    }
+
+    @Override // ff.f
+    public final com.google.android.gms.common.d[] a() {
+        return this.f23760s ? wj.l.f52797a : new com.google.android.gms.common.d[]{wj.l.f52800d};
+    }
+
+    @Override // ek.d
+    public final Task e(ck.a aVar) {
+        return super.h(aVar);
     }
 }

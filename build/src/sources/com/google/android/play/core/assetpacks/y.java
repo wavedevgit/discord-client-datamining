@@ -1,24 +1,24 @@
 package com.google.android.play.core.assetpacks;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class y implements yh.t {
+public final class y implements ai.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final yh.w f16213a;
+    private final ai.w f16962a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final yh.w f16214b;
+    private final ai.w f16963b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final yh.w f16215c;
+    private final ai.w f16964c;
 
-    public y(yh.w wVar, yh.w wVar2, yh.w wVar3) {
-        this.f16213a = wVar;
-        this.f16214b = wVar2;
-        this.f16215c = wVar3;
+    public y(ai.w wVar, ai.w wVar2, ai.w wVar3) {
+        this.f16962a = wVar;
+        this.f16963b = wVar2;
+        this.f16964c = wVar3;
     }
 
-    @Override // yh.w
+    @Override // ai.w
     public final /* bridge */ /* synthetic */ Object a() {
-        return new x(((q4) this.f16213a).b(), (b2) this.f16214b.a(), (o3) this.f16215c.a());
+        return new x(((q4) this.f16962a).b(), (b2) this.f16963b.a(), (o3) this.f16964c.a());
     }
 }

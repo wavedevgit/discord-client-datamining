@@ -14,17 +14,17 @@ import org.jetbrains.annotations.NotNull;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f50855a = new b(null);
+    public static final b f48935a = new b(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ArrayList f50856b = new ArrayList();
+    private static final ArrayList f48936b = new ArrayList();
 
     /* renamed from: c  reason: collision with root package name */
-    private static volatile c[] f50857c = new c[0];
+    private static volatile c[] f48937c = new c[0];
 
     /* renamed from: timber.log.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class C0696a extends c {
+    public static class C0661a extends c {
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -42,12 +42,12 @@ public abstract class a {
                 z10 = false;
             }
             if (z10) {
-                synchronized (a.f50856b) {
-                    a.f50856b.add(tree);
-                    Object[] array = a.f50856b.toArray(new c[0]);
+                synchronized (a.f48936b) {
+                    a.f48936b.add(tree);
+                    Object[] array = a.f48936b.toArray(new c[0]);
                     if (array != null) {
-                        a.f50857c = (c[]) array;
-                        Unit unit = Unit.f31765a;
+                        a.f48937c = (c[]) array;
+                        Unit unit = Unit.f31987a;
                     } else {
                         throw new NullPointerException("null cannot be cast to non-null type kotlin.Array<T>");
                     }
@@ -60,7 +60,7 @@ public abstract class a {
         @Override // timber.log.a.c
         public void d(String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.d(str, Arrays.copyOf(args, args.length));
             }
         }
@@ -68,14 +68,14 @@ public abstract class a {
         @Override // timber.log.a.c
         public void e(String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.e(str, Arrays.copyOf(args, args.length));
             }
         }
 
         public final c f(String tag) {
             Intrinsics.checkNotNullParameter(tag, "tag");
-            c[] cVarArr = a.f50857c;
+            c[] cVarArr = a.f48937c;
             int length = cVarArr.length;
             int i10 = 0;
             while (i10 < length) {
@@ -89,7 +89,7 @@ public abstract class a {
         @Override // timber.log.a.c
         public void i(String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.i(str, Arrays.copyOf(args, args.length));
             }
         }
@@ -97,7 +97,7 @@ public abstract class a {
         @Override // timber.log.a.c
         public void log(int i10, String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.log(i10, str, Arrays.copyOf(args, args.length));
             }
         }
@@ -105,7 +105,7 @@ public abstract class a {
         @Override // timber.log.a.c
         public void v(String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.v(str, Arrays.copyOf(args, args.length));
             }
         }
@@ -113,7 +113,7 @@ public abstract class a {
         @Override // timber.log.a.c
         public void w(String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.w(str, Arrays.copyOf(args, args.length));
             }
         }
@@ -121,7 +121,7 @@ public abstract class a {
         @Override // timber.log.a.c
         public void wtf(String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.wtf(str, Arrays.copyOf(args, args.length));
             }
         }
@@ -132,7 +132,7 @@ public abstract class a {
         @Override // timber.log.a.c
         public void d(Throwable th2, String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.d(th2, str, Arrays.copyOf(args, args.length));
             }
         }
@@ -140,7 +140,7 @@ public abstract class a {
         @Override // timber.log.a.c
         public void e(Throwable th2, String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.e(th2, str, Arrays.copyOf(args, args.length));
             }
         }
@@ -148,7 +148,7 @@ public abstract class a {
         @Override // timber.log.a.c
         public void i(Throwable th2, String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.i(th2, str, Arrays.copyOf(args, args.length));
             }
         }
@@ -156,7 +156,7 @@ public abstract class a {
         @Override // timber.log.a.c
         public void log(int i10, Throwable th2, String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.log(i10, th2, str, Arrays.copyOf(args, args.length));
             }
         }
@@ -164,7 +164,7 @@ public abstract class a {
         @Override // timber.log.a.c
         public void v(Throwable th2, String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.v(th2, str, Arrays.copyOf(args, args.length));
             }
         }
@@ -172,7 +172,7 @@ public abstract class a {
         @Override // timber.log.a.c
         public void w(Throwable th2, String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.w(th2, str, Arrays.copyOf(args, args.length));
             }
         }
@@ -180,56 +180,56 @@ public abstract class a {
         @Override // timber.log.a.c
         public void wtf(Throwable th2, String str, Object... args) {
             Intrinsics.checkNotNullParameter(args, "args");
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.wtf(th2, str, Arrays.copyOf(args, args.length));
             }
         }
 
         @Override // timber.log.a.c
         public void d(Throwable th2) {
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.d(th2);
             }
         }
 
         @Override // timber.log.a.c
         public void e(Throwable th2) {
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.e(th2);
             }
         }
 
         @Override // timber.log.a.c
         public void i(Throwable th2) {
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.i(th2);
             }
         }
 
         @Override // timber.log.a.c
         public void log(int i10, Throwable th2) {
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.log(i10, th2);
             }
         }
 
         @Override // timber.log.a.c
         public void v(Throwable th2) {
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.v(th2);
             }
         }
 
         @Override // timber.log.a.c
         public void w(Throwable th2) {
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.w(th2);
             }
         }
 
         @Override // timber.log.a.c
         public void wtf(Throwable th2) {
-            for (c cVar : a.f50857c) {
+            for (c cVar : a.f48937c) {
                 cVar.wtf(th2);
             }
         }
@@ -318,7 +318,7 @@ public abstract class a {
             b(4, null, str, Arrays.copyOf(args, args.length));
         }
 
-        @rr.c
+        @as.c
         protected boolean isLoggable(int i10) {
             return true;
         }

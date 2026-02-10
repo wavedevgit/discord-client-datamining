@@ -130,17 +130,17 @@ public final class DescriptorBasedTypeSignatureMappingKt {
             }
             return (T) mapType(TypeUtilsKt.replaceArgumentsWithStarProjections(alternativeType), factory, mode, typeMappingConfiguration, jvmDescriptorTypeWriter, writeGenericType);
         }
-        ClassifierDescriptor mo1199getDeclarationDescriptor = constructor.mo1199getDeclarationDescriptor();
-        if (mo1199getDeclarationDescriptor != null) {
-            if (ErrorUtils.isError(mo1199getDeclarationDescriptor)) {
+        ClassifierDescriptor mo1202getDeclarationDescriptor = constructor.mo1202getDeclarationDescriptor();
+        if (mo1202getDeclarationDescriptor != null) {
+            if (ErrorUtils.isError(mo1202getDeclarationDescriptor)) {
                 T t11 = (T) factory.createObjectType("error/NonExistentClass");
-                typeMappingConfiguration.processErrorType(kotlinType, (ClassDescriptor) mo1199getDeclarationDescriptor);
+                typeMappingConfiguration.processErrorType(kotlinType, (ClassDescriptor) mo1202getDeclarationDescriptor);
                 if (jvmDescriptorTypeWriter != 0) {
                     jvmDescriptorTypeWriter.writeClass(t11);
                 }
                 return t11;
             }
-            boolean z10 = mo1199getDeclarationDescriptor instanceof ClassDescriptor;
+            boolean z10 = mo1202getDeclarationDescriptor instanceof ClassDescriptor;
             if (z10 && KotlinBuiltIns.isArray(kotlinType)) {
                 if (kotlinType.getArguments().size() == 1) {
                     TypeProjection typeProjection = kotlinType.getArguments().get(0);
@@ -168,13 +168,13 @@ public final class DescriptorBasedTypeSignatureMappingKt {
                 }
                 throw new UnsupportedOperationException("arrays must have one type argument");
             } else if (z10) {
-                if (InlineClassesUtilsKt.isInlineClass(mo1199getDeclarationDescriptor) && !mode.getNeedInlineClassWrapping() && (kotlinType2 = (KotlinType) ExpandedTypeUtilsKt.computeExpandedTypeForInlineClass(simpleClassicTypeSystemContext, kotlinType)) != null) {
+                if (InlineClassesUtilsKt.isInlineClass(mo1202getDeclarationDescriptor) && !mode.getNeedInlineClassWrapping() && (kotlinType2 = (KotlinType) ExpandedTypeUtilsKt.computeExpandedTypeForInlineClass(simpleClassicTypeSystemContext, kotlinType)) != null) {
                     return (T) mapType(kotlinType2, factory, mode.wrapInlineClassesMode(), typeMappingConfiguration, jvmDescriptorTypeWriter, writeGenericType);
                 }
-                if (mode.isForAnnotationParameter() && KotlinBuiltIns.isKClass((ClassDescriptor) mo1199getDeclarationDescriptor)) {
+                if (mode.isForAnnotationParameter() && KotlinBuiltIns.isKClass((ClassDescriptor) mo1202getDeclarationDescriptor)) {
                     obj = (T) factory.getJavaLangClassType();
                 } else {
-                    ClassDescriptor classDescriptor = (ClassDescriptor) mo1199getDeclarationDescriptor;
+                    ClassDescriptor classDescriptor = (ClassDescriptor) mo1202getDeclarationDescriptor;
                     ClassDescriptor original = classDescriptor.getOriginal();
                     Intrinsics.checkNotNullExpressionValue(original, "getOriginal(...)");
                     obj = (T) typeMappingConfiguration.getPredefinedTypeForClass(original);
@@ -191,20 +191,20 @@ public final class DescriptorBasedTypeSignatureMappingKt {
                 }
                 writeGenericType.invoke(kotlinType, obj, mode);
                 return (T) obj;
-            } else if (mo1199getDeclarationDescriptor instanceof TypeParameterDescriptor) {
-                KotlinType representativeUpperBound = TypeUtilsKt.getRepresentativeUpperBound((TypeParameterDescriptor) mo1199getDeclarationDescriptor);
+            } else if (mo1202getDeclarationDescriptor instanceof TypeParameterDescriptor) {
+                KotlinType representativeUpperBound = TypeUtilsKt.getRepresentativeUpperBound((TypeParameterDescriptor) mo1202getDeclarationDescriptor);
                 if (kotlinType.isMarkedNullable()) {
                     representativeUpperBound = TypeUtilsKt.makeNullable(representativeUpperBound);
                 }
                 T t12 = (T) mapType(representativeUpperBound, factory, mode, typeMappingConfiguration, null, FunctionsKt.getDO_NOTHING_3());
                 if (jvmDescriptorTypeWriter != 0) {
-                    Name name = mo1199getDeclarationDescriptor.getName();
+                    Name name = mo1202getDeclarationDescriptor.getName();
                     Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
                     jvmDescriptorTypeWriter.writeTypeVariable(name, t12);
                 }
                 return t12;
-            } else if ((mo1199getDeclarationDescriptor instanceof TypeAliasDescriptor) && mode.getMapTypeAliases()) {
-                return (T) mapType(((TypeAliasDescriptor) mo1199getDeclarationDescriptor).getExpandedType(), factory, mode, typeMappingConfiguration, jvmDescriptorTypeWriter, writeGenericType);
+            } else if ((mo1202getDeclarationDescriptor instanceof TypeAliasDescriptor) && mode.getMapTypeAliases()) {
+                return (T) mapType(((TypeAliasDescriptor) mo1202getDeclarationDescriptor).getExpandedType(), factory, mode, typeMappingConfiguration, jvmDescriptorTypeWriter, writeGenericType);
             } else {
                 throw new UnsupportedOperationException("Unknown type " + kotlinType);
             }

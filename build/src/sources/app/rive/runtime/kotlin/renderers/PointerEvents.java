@@ -22,7 +22,7 @@ public final class PointerEvents {
     static {
         PointerEvents[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = yr.a.a($values);
+        $ENTRIES = hs.a.a($values);
     }
 
     private PointerEvents(String str, int i10) {

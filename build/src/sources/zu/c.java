@@ -1,49 +1,55 @@
 package zu;
 
-import cv.d;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import av.o;
+import java.io.Closeable;
+import java.util.zip.Inflater;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.LongCompanionObject;
+import okio.Buffer;
+import okio.Source;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements tu.b, cv.d {
+public final class c implements Closeable {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final c f56704a = new c();
+    /* renamed from: d  reason: collision with root package name */
+    private final boolean f57133d;
 
-    private c() {
+    /* renamed from: e  reason: collision with root package name */
+    private final Buffer f57134e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final Inflater f57135i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final o f57136o;
+
+    public c(boolean z10) {
+        this.f57133d = z10;
+        Buffer buffer = new Buffer();
+        this.f57134e = buffer;
+        Inflater inflater = new Inflater(true);
+        this.f57135i = inflater;
+        this.f57136o = new o((Source) buffer, inflater);
     }
 
-    private final Object a(List list) {
-        int size = list.size();
-        if (size == 0) {
-            return null;
-        }
-        if (size != 1) {
-            if (size != 2) {
-                if (size != 3) {
-                    if (b(CollectionsKt.firstOrNull(list))) {
-                        return dw.c.b(list);
-                    }
-                    return a(list.subList(2, list.size()));
-                } else if (b(CollectionsKt.firstOrNull(list))) {
-                    return dw.c.b(list);
-                } else {
-                    return dw.c.c(list);
-                }
-            } else if (!b(CollectionsKt.firstOrNull(list))) {
-                return null;
-            } else {
-                return dw.c.b(list);
+    public final void a(Buffer buffer) {
+        Intrinsics.checkNotNullParameter(buffer, "buffer");
+        if (this.f57134e.size() == 0) {
+            if (this.f57133d) {
+                this.f57135i.reset();
             }
+            this.f57134e.A0(buffer);
+            this.f57134e.writeInt(65535);
+            long bytesRead = this.f57135i.getBytesRead() + this.f57134e.size();
+            do {
+                this.f57136o.a(buffer, LongCompanionObject.MAX_VALUE);
+            } while (this.f57135i.getBytesRead() < bytesRead);
+            return;
         }
-        return CollectionsKt.firstOrNull(list);
+        throw new IllegalArgumentException("Failed requirement.");
     }
 
-    public boolean b(Object obj) {
-        return d.a.a(this, obj);
-    }
-
-    @Override // tu.b
-    public Object f(Object obj, Object obj2) {
-        return a(dw.a.c(obj));
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        this.f57136o.close();
     }
 }

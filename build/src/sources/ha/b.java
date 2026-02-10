@@ -3,25 +3,25 @@ package ha;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f25791a;
+    public final int f27009a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f25792b;
+    public final int f27010b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f25793c;
+    public final int f27011c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f25794d;
+    public final int f27012d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f25795e;
+    public final int f27013e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final a f25796f;
+    public final a f27014f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final EnumC0380b f25797g;
+    public final EnumC0359b f27015g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public enum a {
@@ -31,19 +31,19 @@ public class b {
 
     /* renamed from: ha.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public enum EnumC0380b {
+    public enum EnumC0359b {
         DISPOSE_DO_NOT,
         DISPOSE_TO_BACKGROUND,
         DISPOSE_TO_PREVIOUS
     }
 
-    public b(int i10, int i11, int i12, int i13, int i14, a aVar, EnumC0380b enumC0380b) {
-        this.f25791a = i10;
-        this.f25792b = i11;
-        this.f25793c = i12;
-        this.f25794d = i13;
-        this.f25795e = i14;
-        this.f25796f = aVar;
-        this.f25797g = enumC0380b;
+    public b(int i10, int i11, int i12, int i13, int i14, a aVar, EnumC0359b enumC0359b) {
+        this.f27009a = i10;
+        this.f27010b = i11;
+        this.f27011c = i12;
+        this.f27012d = i13;
+        this.f27013e = i14;
+        this.f27014f = aVar;
+        this.f27015g = enumC0359b;
     }
 }

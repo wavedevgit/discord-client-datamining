@@ -5,24 +5,24 @@ import vd.i;
 public final class h implements f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final uc.c f51546a;
+    private final uc.c f50725a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f51547b;
+    private final long f50726b;
 
     public h(uc.c cVar, long j10) {
-        this.f51546a = cVar;
-        this.f51547b = j10;
+        this.f50725a = cVar;
+        this.f50726b = j10;
     }
 
     @Override // ud.f
     public long a(long j10, long j11) {
-        return this.f51546a.f51441d[(int) j10];
+        return this.f50725a.f50620d[(int) j10];
     }
 
     @Override // ud.f
     public long b(long j10) {
-        return this.f51546a.f51442e[(int) j10] - this.f51547b;
+        return this.f50725a.f50621e[(int) j10] - this.f50726b;
     }
 
     @Override // ud.f
@@ -37,19 +37,19 @@ public final class h implements f {
 
     @Override // ud.f
     public i e(long j10) {
-        uc.c cVar = this.f51546a;
+        uc.c cVar = this.f50725a;
         int i10 = (int) j10;
-        return new i(null, cVar.f51440c[i10], cVar.f51439b[i10]);
+        return new i(null, cVar.f50619c[i10], cVar.f50618b[i10]);
     }
 
     @Override // ud.f
     public long f(long j10, long j11) {
-        return this.f51546a.a(j10 + this.f51547b);
+        return this.f50725a.a(j10 + this.f50726b);
     }
 
     @Override // ud.f
     public long g(long j10) {
-        return this.f51546a.f51438a;
+        return this.f50725a.f50617a;
     }
 
     @Override // ud.f
@@ -64,6 +64,6 @@ public final class h implements f {
 
     @Override // ud.f
     public long j(long j10, long j11) {
-        return this.f51546a.f51438a;
+        return this.f50725a.f50617a;
     }
 }

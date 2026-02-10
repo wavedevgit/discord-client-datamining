@@ -9,12 +9,12 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewOutlineProvider;
 import com.facebook.react.uimanager.ViewProps;
-import com.google.android.material.internal.l;
+import com.google.android.material.internal.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f14657a = {16843848};
+    private static final int[] f15233a = {16843848};
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void a(View view) {
@@ -23,10 +23,10 @@ abstract class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void b(View view, float f10) {
-        int integer = view.getResources().getInteger(bh.g.f6734a);
+        int integer = view.getResources().getInteger(bh.g.f6868a);
         StateListAnimator stateListAnimator = new StateListAnimator();
         long j10 = integer;
-        stateListAnimator.addState(new int[]{16842910, bh.b.f6624d0, -bh.b.f6626e0}, ObjectAnimator.ofFloat(view, ViewProps.ELEVATION, 0.0f).setDuration(j10));
+        stateListAnimator.addState(new int[]{16842910, bh.b.f6742j0, -bh.b.f6744k0}, ObjectAnimator.ofFloat(view, ViewProps.ELEVATION, 0.0f).setDuration(j10));
         stateListAnimator.addState(new int[]{16842910}, ObjectAnimator.ofFloat(view, ViewProps.ELEVATION, f10).setDuration(j10));
         stateListAnimator.addState(new int[0], ObjectAnimator.ofFloat(view, ViewProps.ELEVATION, 0.0f).setDuration(0L));
         view.setStateListAnimator(stateListAnimator);
@@ -35,7 +35,7 @@ abstract class g {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void c(View view, AttributeSet attributeSet, int i10, int i11) {
         Context context = view.getContext();
-        TypedArray i12 = l.i(context, attributeSet, f14657a, i10, i11, new int[0]);
+        TypedArray i12 = m.i(context, attributeSet, f15233a, i10, i11, new int[0]);
         try {
             if (i12.hasValue(0)) {
                 view.setStateListAnimator(AnimatorInflater.loadStateListAnimator(context, i12.getResourceId(0, 0)));

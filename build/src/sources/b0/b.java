@@ -8,54 +8,54 @@ import java.nio.ByteOrder;
 class b extends FilterOutputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    final OutputStream f6241d;
+    final OutputStream f6345d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ByteOrder f6242e;
+    private ByteOrder f6346e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(OutputStream outputStream, ByteOrder byteOrder) {
         super(outputStream);
-        this.f6241d = outputStream;
-        this.f6242e = byteOrder;
+        this.f6345d = outputStream;
+        this.f6346e = byteOrder;
     }
 
     public void a(ByteOrder byteOrder) {
-        this.f6242e = byteOrder;
+        this.f6346e = byteOrder;
     }
 
-    public void g(int i10) {
-        this.f6241d.write(i10);
+    public void h(int i10) {
+        this.f6345d.write(i10);
     }
 
-    public void k(int i10) {
-        ByteOrder byteOrder = this.f6242e;
+    public void i(int i10) {
+        ByteOrder byteOrder = this.f6346e;
         if (byteOrder == ByteOrder.LITTLE_ENDIAN) {
-            this.f6241d.write(i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
-            this.f6241d.write((i10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
-            this.f6241d.write((i10 >>> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
-            this.f6241d.write((i10 >>> 24) & SetSpanOperation.SPAN_MAX_PRIORITY);
+            this.f6345d.write(i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
+            this.f6345d.write((i10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
+            this.f6345d.write((i10 >>> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
+            this.f6345d.write((i10 >>> 24) & SetSpanOperation.SPAN_MAX_PRIORITY);
         } else if (byteOrder == ByteOrder.BIG_ENDIAN) {
-            this.f6241d.write((i10 >>> 24) & SetSpanOperation.SPAN_MAX_PRIORITY);
-            this.f6241d.write((i10 >>> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
-            this.f6241d.write((i10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
-            this.f6241d.write(i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
+            this.f6345d.write((i10 >>> 24) & SetSpanOperation.SPAN_MAX_PRIORITY);
+            this.f6345d.write((i10 >>> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
+            this.f6345d.write((i10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
+            this.f6345d.write(i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
         }
     }
 
     public void m(short s10) {
-        ByteOrder byteOrder = this.f6242e;
+        ByteOrder byteOrder = this.f6346e;
         if (byteOrder == ByteOrder.LITTLE_ENDIAN) {
-            this.f6241d.write(s10 & 255);
-            this.f6241d.write((s10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
+            this.f6345d.write(s10 & 255);
+            this.f6345d.write((s10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
         } else if (byteOrder == ByteOrder.BIG_ENDIAN) {
-            this.f6241d.write((s10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
-            this.f6241d.write(s10 & 255);
+            this.f6345d.write((s10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
+            this.f6345d.write(s10 & 255);
         }
     }
 
     public void n(long j10) {
-        k((int) j10);
+        i((int) j10);
     }
 
     public void p(int i10) {
@@ -64,11 +64,11 @@ class b extends FilterOutputStream {
 
     @Override // java.io.FilterOutputStream, java.io.OutputStream
     public void write(byte[] bArr) {
-        this.f6241d.write(bArr);
+        this.f6345d.write(bArr);
     }
 
     @Override // java.io.FilterOutputStream, java.io.OutputStream
     public void write(byte[] bArr, int i10, int i11) {
-        this.f6241d.write(bArr, i10, i11);
+        this.f6345d.write(bArr, i10, i11);
     }
 }

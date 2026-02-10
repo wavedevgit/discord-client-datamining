@@ -1,88 +1,108 @@
 package vu;
 
-import cv.d;
-import java.util.ArrayList;
+import java.security.KeyStore;
+import java.security.Provider;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.FunctionReferenceImpl;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.TrustManagerFactory;
+import javax.net.ssl.X509TrustManager;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import vu.f;
+import org.bouncycastle.jsse.provider.BouncyCastleJsseProvider;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements tu.a, f, cv.d {
+public final class c extends h {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final c f52999a = new c();
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f51994e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final boolean f51995f;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Provider f51996d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
-        a(Object obj) {
-            super(2, obj, c.class, "filterOrEmptyList", "filterOrEmptyList(Loperations/array/ArrayOperationInputData;LLogicEvaluator;)Ljava/util/List;", 0);
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
 
-        @Override // kotlin.jvm.functions.Function2
-        /* renamed from: a */
-        public final List invoke(b p02, h p12) {
-            Intrinsics.checkNotNullParameter(p02, "p0");
-            Intrinsics.checkNotNullParameter(p12, "p1");
-            return ((c) this.receiver).h(p02, p12);
+        public final c a() {
+            if (!b()) {
+                return null;
+            }
+            return new c(null);
         }
+
+        public final boolean b() {
+            return c.f51995f;
+        }
+
+        private a() {
+        }
+    }
+
+    static {
+        a aVar = new a(null);
+        f51994e = aVar;
+        boolean z10 = false;
+        try {
+            Class.forName("org.bouncycastle.jsse.provider.BouncyCastleJsseProvider", false, aVar.getClass().getClassLoader());
+            z10 = true;
+        } catch (ClassNotFoundException unused) {
+        }
+        f51995f = z10;
+    }
+
+    public /* synthetic */ c(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    @Override // vu.h
+    public void e(SSLSocket sslSocket, String str, List protocols) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Intrinsics.checkNotNullParameter(protocols, "protocols");
+        super.e(sslSocket, str, protocols);
+    }
+
+    @Override // vu.h
+    public String h(SSLSocket sslSocket) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        return super.h(sslSocket);
+    }
+
+    @Override // vu.h
+    public SSLContext n() {
+        SSLContext sSLContext = SSLContext.getInstance("TLS", this.f51996d);
+        Intrinsics.checkNotNullExpressionValue(sSLContext, "getInstance(\"TLS\", provider)");
+        return sSLContext;
+    }
+
+    @Override // vu.h
+    public X509TrustManager p() {
+        TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance("PKIX", "BCJSSE");
+        trustManagerFactory.init((KeyStore) null);
+        TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();
+        Intrinsics.checkNotNull(trustManagers);
+        if (trustManagers.length == 1) {
+            TrustManager trustManager = trustManagers[0];
+            if (trustManager instanceof X509TrustManager) {
+                Intrinsics.checkNotNull(trustManager, "null cannot be cast to non-null type javax.net.ssl.X509TrustManager");
+                return (X509TrustManager) trustManager;
+            }
+        }
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("Unexpected default trust managers: ");
+        String arrays = Arrays.toString(trustManagers);
+        Intrinsics.checkNotNullExpressionValue(arrays, "toString(this)");
+        sb2.append(arrays);
+        throw new IllegalStateException(sb2.toString().toString());
     }
 
     private c() {
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final List h(b bVar, h hVar) {
-        List b10 = bVar.b();
-        if (b10 == null) {
-            b10 = CollectionsKt.l();
-        }
-        ArrayList arrayList = new ArrayList();
-        for (Object obj : b10) {
-            if (f52999a.i(hVar, obj, bVar.a(), bVar.c())) {
-                arrayList.add(obj);
-            }
-        }
-        return arrayList;
-    }
-
-    private final boolean i(h hVar, Object obj, Map map, Object obj2) {
-        Object a10;
-        if (map != null && (a10 = hVar.a(map, obj)) != null) {
-            obj2 = a10;
-        }
-        return j(obj2);
-    }
-
-    @Override // vu.a
-    public Object a(Map map, List list) {
-        return f.a.b(this, map, list);
-    }
-
-    @Override // vu.f
-    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
-        return f.a.c(this, obj, obj2, hVar, function2);
-    }
-
-    @Override // vu.a
-    public b c(List list, Object obj, h hVar) {
-        return f.a.a(this, list, obj, hVar);
-    }
-
-    @Override // tu.a
-    public Object d(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        return b(obj, obj2, evaluator, new a(this));
-    }
-
-    @Override // cw.a
-    public List f(List list, Object obj, h hVar) {
-        return f.a.d(this, list, obj, hVar);
-    }
-
-    public boolean j(Object obj) {
-        return d.a.a(this, obj);
+        this.f51996d = new BouncyCastleJsseProvider();
     }
 }

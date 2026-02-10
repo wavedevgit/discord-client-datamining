@@ -6,38 +6,38 @@ import io.sentry.util.y;
 public final class a extends RuntimeException {
 
     /* renamed from: d  reason: collision with root package name */
-    private final l f28369d;
+    private final l f29304d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Throwable f28370e;
+    private final Throwable f29305e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Thread f28371i;
+    private final Thread f29306i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f28372o;
+    private final boolean f29307o;
 
     public a(l lVar, Throwable th2, Thread thread, boolean z10) {
-        this.f28369d = (l) y.c(lVar, "Mechanism is required.");
-        this.f28370e = (Throwable) y.c(th2, "Throwable is required.");
-        this.f28371i = (Thread) y.c(thread, "Thread is required.");
-        this.f28372o = z10;
+        this.f29304d = (l) y.c(lVar, "Mechanism is required.");
+        this.f29305e = (Throwable) y.c(th2, "Throwable is required.");
+        this.f29306i = (Thread) y.c(thread, "Thread is required.");
+        this.f29307o = z10;
     }
 
     public l a() {
-        return this.f28369d;
+        return this.f29304d;
     }
 
     public Thread b() {
-        return this.f28371i;
+        return this.f29306i;
     }
 
     public Throwable c() {
-        return this.f28370e;
+        return this.f29305e;
     }
 
     public boolean d() {
-        return this.f28372o;
+        return this.f29307o;
     }
 
     public a(l lVar, Throwable th2, Thread thread) {

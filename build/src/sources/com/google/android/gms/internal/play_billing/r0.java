@@ -9,25 +9,25 @@ import java.util.Locale;
 public abstract class r0 implements Iterable, Serializable {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final r0 f14462e = new o0(y1.f14507d);
+    public static final r0 f15039e = new o0(y1.f15084d);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Comparator f14463i;
+    private static final Comparator f15040i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final q0 f14464o;
+    private static final q0 f15041o;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f14465d = 0;
+    private int f15042d = 0;
 
     static {
-        int i10 = c0.f14298a;
-        f14464o = new q0(null);
-        f14463i = new i0();
+        int i10 = c0.f14875a;
+        f15041o = new q0(null);
+        f15040i = new i0();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static int j(int i10, int i11, int i12) {
+    public static int k(int i10, int i11, int i12) {
         int i13 = i11 - i10;
         if ((i10 | i11 | i13 | (i12 - i11)) < 0) {
             if (i10 >= 0) {
@@ -42,7 +42,7 @@ public abstract class r0 implements Iterable, Serializable {
     }
 
     public static r0 o(byte[] bArr, int i10, int i11) {
-        j(i10, i10 + i11, bArr.length);
+        k(i10, i10 + i11, bArr.length);
         byte[] bArr2 = new byte[i11];
         System.arraycopy(bArr, i10, bArr2, 0, i11);
         return new o0(bArr2);
@@ -63,32 +63,32 @@ public abstract class r0 implements Iterable, Serializable {
 
     protected abstract String g(Charset charset);
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public abstract void h(g0 g0Var);
-
     public final int hashCode() {
-        int i10 = this.f14465d;
+        int i10 = this.f15042d;
         if (i10 == 0) {
             int d10 = d();
             i10 = e(d10, 0, d10);
             if (i10 == 0) {
                 i10 = 1;
             }
-            this.f14465d = i10;
+            this.f15042d = i10;
         }
         return i10;
     }
 
-    public abstract boolean i();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public abstract void i(g0 g0Var);
 
     @Override // java.lang.Iterable
     public final /* synthetic */ Iterator iterator() {
         return new h0(this);
     }
 
+    public abstract boolean j();
+
     /* JADX INFO: Access modifiers changed from: protected */
     public final int l() {
-        return this.f14465d;
+        return this.f15042d;
     }
 
     public final String p(Charset charset) {

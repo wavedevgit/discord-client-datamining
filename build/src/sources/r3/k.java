@@ -9,22 +9,22 @@ import r3.j;
 public interface k extends IInterface {
     int D(j jVar, String str);
 
-    void Y(int i10, String[] strArr);
+    void a0(int i10, String[] strArr);
 
-    void c0(j jVar, int i10);
+    void e0(j jVar, int i10);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static abstract class a extends Binder implements k {
 
         /* renamed from: r3.k$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        private static class C0651a implements k {
+        private static class C0628a implements k {
 
             /* renamed from: c  reason: collision with root package name */
-            private IBinder f47536c;
+            private IBinder f45990c;
 
-            C0651a(IBinder iBinder) {
-                this.f47536c = iBinder;
+            C0628a(IBinder iBinder) {
+                this.f45990c = iBinder;
             }
 
             @Override // r3.k
@@ -35,7 +35,7 @@ public interface k extends IInterface {
                     obtain.writeInterfaceToken("androidx.room.IMultiInstanceInvalidationService");
                     obtain.writeStrongInterface(jVar);
                     obtain.writeString(str);
-                    this.f47536c.transact(1, obtain, obtain2, 0);
+                    this.f45990c.transact(1, obtain, obtain2, 0);
                     obtain2.readException();
                     return obtain2.readInt();
                 } finally {
@@ -45,13 +45,13 @@ public interface k extends IInterface {
             }
 
             @Override // r3.k
-            public void Y(int i10, String[] strArr) {
+            public void a0(int i10, String[] strArr) {
                 Parcel obtain = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("androidx.room.IMultiInstanceInvalidationService");
                     obtain.writeInt(i10);
                     obtain.writeStringArray(strArr);
-                    this.f47536c.transact(3, obtain, null, 1);
+                    this.f45990c.transact(3, obtain, null, 1);
                 } finally {
                     obtain.recycle();
                 }
@@ -59,7 +59,7 @@ public interface k extends IInterface {
 
             @Override // android.os.IInterface
             public IBinder asBinder() {
-                return this.f47536c;
+                return this.f45990c;
             }
         }
 
@@ -75,7 +75,7 @@ public interface k extends IInterface {
             if (queryLocalInterface != null && (queryLocalInterface instanceof k)) {
                 return (k) queryLocalInterface;
             }
-            return new C0651a(iBinder);
+            return new C0628a(iBinder);
         }
 
         @Override // android.os.Binder
@@ -89,9 +89,9 @@ public interface k extends IInterface {
                         if (i10 != 3) {
                             return super.onTransact(i10, parcel, parcel2, i11);
                         }
-                        Y(parcel.readInt(), parcel.createStringArray());
+                        a0(parcel.readInt(), parcel.createStringArray());
                     } else {
-                        c0(j.a.e(parcel.readStrongBinder()), parcel.readInt());
+                        e0(j.a.e(parcel.readStrongBinder()), parcel.readInt());
                         parcel2.writeNoException();
                     }
                 } else {

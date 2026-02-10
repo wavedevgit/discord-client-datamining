@@ -9,26 +9,26 @@ import java.util.RandomAccess;
 public abstract class f extends c implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final t f38836e = new d(l.f38861q, 0);
+    private static final t f37840e = new d(l.f37865q, 0);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final /* synthetic */ int f38837i = 0;
+    public static final /* synthetic */ int f37841i = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static f g(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return l.f38861q;
+            return l.f37865q;
         }
         return new l(objArr, i10);
     }
 
-    public static f h(Object obj) {
+    public static f i(Object obj) {
         Object[] objArr = {obj};
         k.a(objArr, 1);
         return g(objArr, 1);
     }
 
-    public static f i(Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6, Object obj7, Object obj8, Object obj9) {
+    public static f j(Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6, Object obj7, Object obj8, Object obj9) {
         Object[] objArr = {obj, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9};
         k.a(objArr, 9);
         return g(objArr, 9);
@@ -135,7 +135,7 @@ public abstract class f extends c implements List, RandomAccess {
             return this;
         }
         if (i12 == 0) {
-            return l.f38861q;
+            return l.f37865q;
         }
         return new e(this, i10, i12);
     }
@@ -170,11 +170,11 @@ public abstract class f extends c implements List, RandomAccess {
     }
 
     @Override // java.util.List
-    /* renamed from: j */
+    /* renamed from: k */
     public final t listIterator(int i10) {
         t0.b(i10, size(), "index");
         if (isEmpty()) {
-            return f38836e;
+            return f37840e;
         }
         return new d(this, i10);
     }

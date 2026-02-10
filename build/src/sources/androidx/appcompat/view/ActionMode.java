@@ -8,10 +8,10 @@ import android.view.View;
 public abstract class ActionMode {
 
     /* renamed from: d  reason: collision with root package name */
-    private Object f1292d;
+    private Object f1293d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f1293e;
+    private boolean f1294e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface Callback {
@@ -35,13 +35,13 @@ public abstract class ActionMode {
     public abstract CharSequence g();
 
     public Object h() {
-        return this.f1292d;
+        return this.f1293d;
     }
 
     public abstract CharSequence i();
 
     public boolean j() {
-        return this.f1293e;
+        return this.f1294e;
     }
 
     public abstract void k();
@@ -57,7 +57,7 @@ public abstract class ActionMode {
     public abstract void o(CharSequence charSequence);
 
     public void p(Object obj) {
-        this.f1292d = obj;
+        this.f1293d = obj;
     }
 
     public abstract void q(int i10);
@@ -65,6 +65,6 @@ public abstract class ActionMode {
     public abstract void r(CharSequence charSequence);
 
     public void s(boolean z10) {
-        this.f1293e = z10;
+        this.f1294e = z10;
     }
 }

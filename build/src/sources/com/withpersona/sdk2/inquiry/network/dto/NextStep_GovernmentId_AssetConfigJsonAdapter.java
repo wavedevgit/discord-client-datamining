@@ -74,7 +74,7 @@ public final class NextStep_GovernmentId_AssetConfigJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 selectPage = (NextStep.GovernmentId.AssetConfig.SelectPage) this.nullableSelectPageAdapter.fromJson(reader);
@@ -106,7 +106,7 @@ public final class NextStep_GovernmentId_AssetConfigJsonAdapter extends h {
         NextStep.GovernmentId.AssetConfig.SelectPage selectPage2 = selectPage;
         Constructor<NextStep.GovernmentId.AssetConfig> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.class.getDeclaredConstructor(NextStep.GovernmentId.AssetConfig.SelectPage.class, NextStep.GovernmentId.AssetConfig.PromptPage.class, NextStep.GovernmentId.AssetConfig.CapturePage.class, NextStep.GovernmentId.AssetConfig.CheckPage.class, NextStep.GovernmentId.AssetConfig.PendingPage.class, Integer.TYPE, bn.c.f7152c);
+            constructor = NextStep.GovernmentId.AssetConfig.class.getDeclaredConstructor(NextStep.GovernmentId.AssetConfig.SelectPage.class, NextStep.GovernmentId.AssetConfig.PromptPage.class, NextStep.GovernmentId.AssetConfig.CapturePage.class, NextStep.GovernmentId.AssetConfig.CheckPage.class, NextStep.GovernmentId.AssetConfig.PendingPage.class, Integer.TYPE, dn.c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -119,7 +119,7 @@ public final class NextStep_GovernmentId_AssetConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.GovernmentId.AssetConfig assetConfig) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (assetConfig != null) {
-            writer.k();
+            writer.i();
             writer.J("selectPage");
             this.nullableSelectPageAdapter.toJson(writer, assetConfig.getSelectPage());
             writer.J("promptPage");

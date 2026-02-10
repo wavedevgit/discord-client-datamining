@@ -5,6 +5,7 @@ import app.rive.runtime.kotlin.core.Alignment;
 import app.rive.runtime.kotlin.core.Fit;
 import e1.a;
 import e1.f;
+import gs.b;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.c;
@@ -17,7 +18,6 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
 import w0.p;
 import w0.q;
-import xr.b;
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"Le1/f;", "", "<anonymous>", "(Le1/f;)V"}, k = 3, mv = {1, 9, 0})
 @e(c = "app.rive.RiveUIKt$RiveUI$9", f = "RiveUI.kt", l = {277}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -71,7 +71,7 @@ final class RiveUIKt$RiveUI$9 extends k implements Function2<f, Continuation<? s
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(@NotNull a aVar, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(aVar, continuation)).invokeSuspend(Unit.f31765a);
+            return ((AnonymousClass1) create(aVar, continuation)).invokeSuspend(Unit.f31987a);
         }
 
         /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
@@ -121,7 +121,7 @@ final class RiveUIKt$RiveUI$9 extends k implements Function2<f, Continuation<? s
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull f fVar, Continuation<? super Unit> continuation) {
-        return ((RiveUIKt$RiveUI$9) create(fVar, continuation)).invokeSuspend(Unit.f31765a);
+        return ((RiveUIKt$RiveUI$9) create(fVar, continuation)).invokeSuspend(Unit.f31987a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -142,6 +142,6 @@ final class RiveUIKt$RiveUI$9 extends k implements Function2<f, Continuation<? s
                 return f10;
             }
         }
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 }

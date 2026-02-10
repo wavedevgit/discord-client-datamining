@@ -1,12 +1,12 @@
 package com.swmansion.rnscreens;
+
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class n extends m {
+public abstract class n {
+    public /* synthetic */ n(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
 
-    /* renamed from: a  reason: collision with root package name */
-    private final int f18427a;
-
-    public n(int i10) {
-        super(null);
-        this.f18427a = i10;
+    private n() {
     }
 }

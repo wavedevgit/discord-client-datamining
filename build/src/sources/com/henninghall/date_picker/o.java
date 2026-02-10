@@ -21,7 +21,7 @@ public abstract class o {
     }
 
     public static boolean c() {
-        return !DateFormat.is24HourFormat(c.f16719a);
+        return !DateFormat.is24HourFormat(c.f17468a);
     }
 
     private static SimpleDateFormat d() {
@@ -64,7 +64,7 @@ public abstract class o {
         }
     }
 
-    public static gl.c h(char c10) {
+    public static il.c h(char c10) {
         if (c10 != 'H') {
             if (c10 != 'M') {
                 if (c10 != 'a') {
@@ -72,23 +72,23 @@ public abstract class o {
                         if (c10 != 'h') {
                             if (c10 != 'm') {
                                 if (c10 == 'y') {
-                                    return gl.c.YEAR;
+                                    return il.c.YEAR;
                                 }
                                 throw new Exception("Invalid pattern char: " + c10);
                             }
-                            return gl.c.MINUTE;
+                            return il.c.MINUTE;
                         }
                     } else {
-                        return gl.c.DATE;
+                        return il.c.DATE;
                     }
                 } else {
-                    return gl.c.AM_PM;
+                    return il.c.AM_PM;
                 }
             } else {
-                return gl.c.MONTH;
+                return il.c.MONTH;
             }
         }
-        return gl.c.HOUR;
+        return il.c.HOUR;
     }
 
     public static String i(Locale locale) {
@@ -96,7 +96,7 @@ public abstract class o {
     }
 
     public static int j(int i10) {
-        return (int) (i10 * c.f16719a.getResources().getDisplayMetrics().density);
+        return (int) (i10 * c.f17468a.getResources().getDisplayMetrics().density);
     }
 
     public static String k(int i10) {

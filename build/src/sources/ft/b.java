@@ -1,73 +1,62 @@
 package ft;
 
-import kotlin.Lazy;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
-import kotlin.jvm.internal.Reflection;
-import kotlin.reflect.KClass;
-import kotlinx.serialization.DeserializationStrategy;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.SealedClassSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Encoder;
-import rr.l;
-import rr.o;
-import zs.c;
+import dt.f0;
+import dt.h0;
+import java.util.concurrent.Executor;
+import kotlin.coroutines.CoroutineContext;
+import kotlinx.coroutines.CoroutineDispatcher;
+import kotlinx.coroutines.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b extends kt.b {
+public final class b extends s implements Executor {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final b f23216a = new b();
+    /* renamed from: o  reason: collision with root package name */
+    public static final b f24362o = new b();
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f23217b = l.b(o.f49210e, a.f23218d);
+    /* renamed from: p  reason: collision with root package name */
+    private static final CoroutineDispatcher f24363p;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function0 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f23218d = new a();
-
-        a() {
-            super(0);
-        }
-
-        @Override // kotlin.jvm.functions.Function0
-        /* renamed from: a */
-        public final SealedClassSerializer invoke() {
-            return new SealedClassSerializer("kotlinx.datetime.DateTimeUnit", Reflection.getOrCreateKotlinClass(zs.c.class), new KClass[]{Reflection.getOrCreateKotlinClass(c.C0807c.class), Reflection.getOrCreateKotlinClass(c.d.class), Reflection.getOrCreateKotlinClass(c.e.class)}, new KSerializer[]{d.f23219a, h.f23229a, i.f23233a});
-        }
+    static {
+        int e10;
+        k kVar = k.f24380i;
+        e10 = h0.e("kotlinx.coroutines.io.parallelism", kotlin.ranges.d.d(64, f0.a()), 0, 0, 12, null);
+        f24363p = CoroutineDispatcher.E1(kVar, e10, null, 2, null);
     }
 
     private b() {
     }
 
-    private final SealedClassSerializer g() {
-        return (SealedClassSerializer) f23217b.getValue();
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public CoroutineDispatcher B1(int i10, String str) {
+        return k.f24380i.B1(i10, str);
     }
 
-    @Override // kt.b
-    public DeserializationStrategy d(kotlinx.serialization.encoding.c decoder, String str) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return g().d(decoder, str);
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void b1(CoroutineContext coroutineContext, Runnable runnable) {
+        f24363p.b1(coroutineContext, runnable);
     }
 
-    @Override // kt.b
-    public KClass e() {
-        return Reflection.getOrCreateKotlinClass(zs.c.class);
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        throw new IllegalStateException("Cannot be invoked on Dispatchers.IO");
     }
 
-    @Override // kt.b
-    /* renamed from: f */
-    public gt.o c(Encoder encoder, zs.c value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        return g().c(encoder, value);
+    @Override // java.util.concurrent.Executor
+    public void execute(Runnable runnable) {
+        b1(kotlin.coroutines.e.f32061d, runnable);
     }
 
-    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return g().getDescriptor();
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public String toString() {
+        return "Dispatchers.IO";
+    }
+
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void w1(CoroutineContext coroutineContext, Runnable runnable) {
+        f24363p.w1(coroutineContext, runnable);
+    }
+
+    @Override // kotlinx.coroutines.s
+    public Executor P1() {
+        return this;
     }
 }

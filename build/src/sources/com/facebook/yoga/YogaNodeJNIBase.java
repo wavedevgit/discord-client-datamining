@@ -9,62 +9,62 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
     private float[] arr;
 
     /* renamed from: d  reason: collision with root package name */
-    private YogaNodeJNIBase f11567d;
+    private YogaNodeJNIBase f12144d;
 
     /* renamed from: e  reason: collision with root package name */
-    private YogaConfig f11568e;
+    private YogaConfig f12145e;
 
     /* renamed from: i  reason: collision with root package name */
-    private List f11569i;
+    private List f12146i;
     @tb.a
     private int mLayoutDirection;
 
     /* renamed from: o  reason: collision with root package name */
-    private YogaMeasureFunction f11570o;
+    private YogaMeasureFunction f12147o;
 
     /* renamed from: p  reason: collision with root package name */
-    private YogaBaselineFunction f11571p;
+    private YogaBaselineFunction f12148p;
 
     /* renamed from: q  reason: collision with root package name */
-    protected long f11572q;
+    protected long f12149q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Object f11573r;
+    private Object f12150r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f11574s;
+    private boolean f12151s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f11575a;
+        static final /* synthetic */ int[] f12152a;
 
         static {
             int[] iArr = new int[e.values().length];
-            f11575a = iArr;
+            f12152a = iArr;
             try {
                 iArr[e.LEFT.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f11575a[e.TOP.ordinal()] = 2;
+                f12152a[e.TOP.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f11575a[e.RIGHT.ordinal()] = 3;
+                f12152a[e.RIGHT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f11575a[e.BOTTOM.ordinal()] = 4;
+                f12152a[e.BOTTOM.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f11575a[e.START.ordinal()] = 5;
+                f12152a[e.START.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f11575a[e.END.ordinal()] = 6;
+                f12152a[e.END.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
         }
@@ -73,9 +73,9 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
     private YogaNodeJNIBase(long j10) {
         this.arr = null;
         this.mLayoutDirection = 0;
-        this.f11574s = true;
+        this.f12151s = true;
         if (j10 != 0) {
-            this.f11572q = j10;
+            this.f12149q = j10;
             return;
         }
         throw new IllegalStateException("Failed to allocate native memory");
@@ -87,12 +87,12 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
 
     @tb.a
     private final long replaceChild(YogaNodeJNIBase yogaNodeJNIBase, int i10) {
-        List list = this.f11569i;
+        List list = this.f12146i;
         if (list != null) {
             list.remove(i10);
-            this.f11569i.add(i10, yogaNodeJNIBase);
-            yogaNodeJNIBase.f11567d = this;
-            return yogaNodeJNIBase.f11572q;
+            this.f12146i.add(i10, yogaNodeJNIBase);
+            yogaNodeJNIBase.f12144d = this;
+            return yogaNodeJNIBase.f12149q;
         }
         throw new IllegalStateException("Cannot replace child. YogaNode does not have children");
     }
@@ -104,8 +104,8 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
     @Override // com.facebook.yoga.YogaNode
     public void A(YogaBaselineFunction yogaBaselineFunction) {
         boolean z10;
-        this.f11571p = yogaBaselineFunction;
-        long j10 = this.f11572q;
+        this.f12148p = yogaBaselineFunction;
+        long j10 = this.f12149q;
         if (yogaBaselineFunction != null) {
             z10 = true;
         } else {
@@ -116,117 +116,117 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
 
     @Override // com.facebook.yoga.YogaNode
     public void B(e eVar, float f10) {
-        YogaNative.jni_YGNodeStyleSetBorderJNI(this.f11572q, eVar.e(), f10);
+        YogaNative.jni_YGNodeStyleSetBorderJNI(this.f12149q, eVar.e(), f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void D(Object obj) {
-        this.f11573r = obj;
+        this.f12150r = obj;
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void E(YogaDirection yogaDirection) {
-        YogaNative.jni_YGNodeStyleSetDirectionJNI(this.f11572q, yogaDirection.e());
+        YogaNative.jni_YGNodeStyleSetDirectionJNI(this.f12149q, yogaDirection.e());
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void F(YogaDisplay yogaDisplay) {
-        YogaNative.jni_YGNodeStyleSetDisplayJNI(this.f11572q, yogaDisplay.d());
+        YogaNative.jni_YGNodeStyleSetDisplayJNI(this.f12149q, yogaDisplay.d());
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void G(float f10) {
-        YogaNative.jni_YGNodeStyleSetFlexJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetFlexJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void H(float f10) {
-        YogaNative.jni_YGNodeStyleSetFlexBasisJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetFlexBasisJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void I() {
-        YogaNative.jni_YGNodeStyleSetFlexBasisAutoJNI(this.f11572q);
+        YogaNative.jni_YGNodeStyleSetFlexBasisAutoJNI(this.f12149q);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void J(float f10) {
-        YogaNative.jni_YGNodeStyleSetFlexBasisPercentJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetFlexBasisPercentJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void K(YogaFlexDirection yogaFlexDirection) {
-        YogaNative.jni_YGNodeStyleSetFlexDirectionJNI(this.f11572q, yogaFlexDirection.d());
+        YogaNative.jni_YGNodeStyleSetFlexDirectionJNI(this.f12149q, yogaFlexDirection.d());
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void L(float f10) {
-        YogaNative.jni_YGNodeStyleSetFlexGrowJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetFlexGrowJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void M(float f10) {
-        YogaNative.jni_YGNodeStyleSetFlexShrinkJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetFlexShrinkJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void N(g gVar, float f10) {
-        YogaNative.jni_YGNodeStyleSetGapJNI(this.f11572q, gVar.d(), f10);
+        YogaNative.jni_YGNodeStyleSetGapJNI(this.f12149q, gVar.d(), f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void O(g gVar, float f10) {
-        YogaNative.jni_YGNodeStyleSetGapPercentJNI(this.f11572q, gVar.d(), f10);
+        YogaNative.jni_YGNodeStyleSetGapPercentJNI(this.f12149q, gVar.d(), f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void P(float f10) {
-        YogaNative.jni_YGNodeStyleSetHeightJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetHeightJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void R() {
-        YogaNative.jni_YGNodeStyleSetHeightAutoJNI(this.f11572q);
+        YogaNative.jni_YGNodeStyleSetHeightAutoJNI(this.f12149q);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void S(float f10) {
-        YogaNative.jni_YGNodeStyleSetHeightPercentJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetHeightPercentJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void T(YogaJustify yogaJustify) {
-        YogaNative.jni_YGNodeStyleSetJustifyContentJNI(this.f11572q, yogaJustify.d());
+        YogaNative.jni_YGNodeStyleSetJustifyContentJNI(this.f12149q, yogaJustify.d());
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void U(e eVar, float f10) {
-        YogaNative.jni_YGNodeStyleSetMarginJNI(this.f11572q, eVar.e(), f10);
+        YogaNative.jni_YGNodeStyleSetMarginJNI(this.f12149q, eVar.e(), f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void V(e eVar) {
-        YogaNative.jni_YGNodeStyleSetMarginAutoJNI(this.f11572q, eVar.e());
+        YogaNative.jni_YGNodeStyleSetMarginAutoJNI(this.f12149q, eVar.e());
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void W(e eVar, float f10) {
-        YogaNative.jni_YGNodeStyleSetMarginPercentJNI(this.f11572q, eVar.e(), f10);
+        YogaNative.jni_YGNodeStyleSetMarginPercentJNI(this.f12149q, eVar.e(), f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void X(float f10) {
-        YogaNative.jni_YGNodeStyleSetMaxHeightJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetMaxHeightJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void Y(float f10) {
-        YogaNative.jni_YGNodeStyleSetMaxHeightPercentJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetMaxHeightPercentJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void Z(float f10) {
-        YogaNative.jni_YGNodeStyleSetMaxWidthJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetMaxWidthJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
@@ -235,13 +235,13 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
             return;
         }
         YogaNodeJNIBase yogaNodeJNIBase = (YogaNodeJNIBase) yogaNode;
-        if (yogaNodeJNIBase.f11567d == null) {
-            if (this.f11569i == null) {
-                this.f11569i = new ArrayList(4);
+        if (yogaNodeJNIBase.f12144d == null) {
+            if (this.f12146i == null) {
+                this.f12146i = new ArrayList(4);
             }
-            this.f11569i.add(i10, yogaNodeJNIBase);
-            yogaNodeJNIBase.f11567d = this;
-            YogaNative.jni_YGNodeInsertChildJNI(this.f11572q, yogaNodeJNIBase.f11572q, i10);
+            this.f12146i.add(i10, yogaNodeJNIBase);
+            yogaNodeJNIBase.f12144d = this;
+            YogaNative.jni_YGNodeInsertChildJNI(this.f12149q, yogaNodeJNIBase.f12149q, i10);
             return;
         }
         throw new IllegalStateException("Child already has a parent, it must be removed first.");
@@ -249,7 +249,7 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
 
     @Override // com.facebook.yoga.YogaNode
     public void a0(float f10) {
-        YogaNative.jni_YGNodeStyleSetMaxWidthPercentJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetMaxWidthPercentJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
@@ -259,7 +259,7 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
         arrayList.add(this);
         for (int i10 = 0; i10 < arrayList.size(); i10++) {
             YogaNodeJNIBase yogaNodeJNIBase = (YogaNodeJNIBase) arrayList.get(i10);
-            List<YogaNodeJNIBase> list = yogaNodeJNIBase.f11569i;
+            List<YogaNodeJNIBase> list = yogaNodeJNIBase.f12146i;
             if (list != null) {
                 for (YogaNodeJNIBase yogaNodeJNIBase2 : list) {
                     yogaNodeJNIBase2.q0(yogaNodeJNIBase);
@@ -270,16 +270,16 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
         YogaNodeJNIBase[] yogaNodeJNIBaseArr = (YogaNodeJNIBase[]) arrayList.toArray(new YogaNodeJNIBase[arrayList.size()]);
         long[] jArr = new long[yogaNodeJNIBaseArr.length];
         for (int i11 = 0; i11 < yogaNodeJNIBaseArr.length; i11++) {
-            jArr[i11] = yogaNodeJNIBaseArr[i11].f11572q;
+            jArr[i11] = yogaNodeJNIBaseArr[i11].f12149q;
         }
-        YogaNative.jni_YGNodeCalculateLayoutJNI(this.f11572q, f10, f11, jArr, yogaNodeJNIBaseArr);
+        YogaNative.jni_YGNodeCalculateLayoutJNI(this.f12149q, f10, f11, jArr, yogaNodeJNIBaseArr);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void b0(YogaMeasureFunction yogaMeasureFunction) {
         boolean z10;
-        this.f11570o = yogaMeasureFunction;
-        long j10 = this.f11572q;
+        this.f12147o = yogaMeasureFunction;
+        long j10 = this.f12149q;
         if (yogaMeasureFunction != null) {
             z10 = true;
         } else {
@@ -290,37 +290,37 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
 
     @tb.a
     public final float baseline(float f10, float f11) {
-        return this.f11571p.a(this, f10, f11);
+        return this.f12148p.a(this, f10, f11);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void c() {
-        YogaNative.jni_YGNodeMarkDirtyJNI(this.f11572q);
+        YogaNative.jni_YGNodeMarkDirtyJNI(this.f12149q);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void c0(float f10) {
-        YogaNative.jni_YGNodeStyleSetMinHeightJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetMinHeightJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public float d() {
-        return YogaNative.jni_YGNodeStyleGetFlexJNI(this.f11572q);
+        return YogaNative.jni_YGNodeStyleGetFlexJNI(this.f12149q);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void d0(float f10) {
-        YogaNative.jni_YGNodeStyleSetMinHeightPercentJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetMinHeightPercentJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public YogaValue e() {
-        return t0(YogaNative.jni_YGNodeStyleGetHeightJNI(this.f11572q));
+        return t0(YogaNative.jni_YGNodeStyleGetHeightJNI(this.f12149q));
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void e0(float f10) {
-        YogaNative.jni_YGNodeStyleSetMinWidthJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetMinWidthJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
@@ -337,16 +337,11 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
 
     @Override // com.facebook.yoga.YogaNode
     public void f0(float f10) {
-        YogaNative.jni_YGNodeStyleSetMinWidthPercentJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetMinWidthPercentJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
-    public void g0(YogaOverflow yogaOverflow) {
-        YogaNative.jni_YGNodeStyleSetOverflowJNI(this.f11572q, yogaOverflow.d());
-    }
-
-    @Override // com.facebook.yoga.YogaNode
-    public float h() {
+    public float g() {
         float[] fArr = this.arr;
         if (fArr != null) {
             return fArr[2];
@@ -355,12 +350,12 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
     }
 
     @Override // com.facebook.yoga.YogaNode
-    public void h0(e eVar, float f10) {
-        YogaNative.jni_YGNodeStyleSetPaddingJNI(this.f11572q, eVar.e(), f10);
+    public void g0(YogaOverflow yogaOverflow) {
+        YogaNative.jni_YGNodeStyleSetOverflowJNI(this.f12149q, yogaOverflow.d());
     }
 
     @Override // com.facebook.yoga.YogaNode
-    public float i(e eVar) {
+    public float h(e eVar) {
         float[] fArr = this.arr;
         if (fArr != null) {
             int i10 = 0;
@@ -370,7 +365,7 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
                     i10 = 4;
                 }
                 int i11 = 10 - i10;
-                switch (a.f11575a[eVar.ordinal()]) {
+                switch (a.f12152a[eVar.ordinal()]) {
                     case 1:
                         return this.arr[i11];
                     case 2:
@@ -399,8 +394,13 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
     }
 
     @Override // com.facebook.yoga.YogaNode
+    public void h0(e eVar, float f10) {
+        YogaNative.jni_YGNodeStyleSetPaddingJNI(this.f12149q, eVar.e(), f10);
+    }
+
+    @Override // com.facebook.yoga.YogaNode
     public void i0(e eVar, float f10) {
-        YogaNative.jni_YGNodeStyleSetPaddingPercentJNI(this.f11572q, eVar.e(), f10);
+        YogaNative.jni_YGNodeStyleSetPaddingPercentJNI(this.f12149q, eVar.e(), f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
@@ -414,7 +414,7 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
 
     @Override // com.facebook.yoga.YogaNode
     public void j0(e eVar, float f10) {
-        YogaNative.jni_YGNodeStyleSetPositionJNI(this.f11572q, eVar.e(), f10);
+        YogaNative.jni_YGNodeStyleSetPositionJNI(this.f12149q, eVar.e(), f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
@@ -428,7 +428,7 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
 
     @Override // com.facebook.yoga.YogaNode
     public void k0(e eVar, float f10) {
-        YogaNative.jni_YGNodeStyleSetPositionPercentJNI(this.f11572q, eVar.e(), f10);
+        YogaNative.jni_YGNodeStyleSetPositionPercentJNI(this.f12149q, eVar.e(), f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
@@ -442,35 +442,35 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
 
     @Override // com.facebook.yoga.YogaNode
     public void l0(YogaPositionType yogaPositionType) {
-        YogaNative.jni_YGNodeStyleSetPositionTypeJNI(this.f11572q, yogaPositionType.d());
+        YogaNative.jni_YGNodeStyleSetPositionTypeJNI(this.f12149q, yogaPositionType.d());
     }
 
     @Override // com.facebook.yoga.YogaNode
     public YogaValue m(e eVar) {
-        return t0(YogaNative.jni_YGNodeStyleGetPaddingJNI(this.f11572q, eVar.e()));
+        return t0(YogaNative.jni_YGNodeStyleGetPaddingJNI(this.f12149q, eVar.e()));
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void m0(float f10) {
-        YogaNative.jni_YGNodeStyleSetWidthJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetWidthJNI(this.f12149q, f10);
     }
 
     @tb.a
     public final long measure(float f10, int i10, float f11, int i11) {
         if (r()) {
-            return this.f11570o.measure(this, f10, YogaMeasureMode.d(i10), f11, YogaMeasureMode.d(i11));
+            return this.f12147o.measure(this, f10, YogaMeasureMode.d(i10), f11, YogaMeasureMode.d(i11));
         }
         throw new RuntimeException("Measure function isn't defined!");
     }
 
     @Override // com.facebook.yoga.YogaNode
     public YogaValue n() {
-        return t0(YogaNative.jni_YGNodeStyleGetWidthJNI(this.f11572q));
+        return t0(YogaNative.jni_YGNodeStyleGetWidthJNI(this.f12149q));
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void n0() {
-        YogaNative.jni_YGNodeStyleSetWidthAutoJNI(this.f11572q);
+        YogaNative.jni_YGNodeStyleSetWidthAutoJNI(this.f12149q);
     }
 
     @Override // com.facebook.yoga.YogaNode
@@ -482,44 +482,44 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
             }
             return true;
         }
-        return this.f11574s;
+        return this.f12151s;
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void o0(float f10) {
-        YogaNative.jni_YGNodeStyleSetWidthPercentJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetWidthPercentJNI(this.f12149q, f10);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void p0(YogaWrap yogaWrap) {
-        YogaNative.jni_YGNodeStyleSetFlexWrapJNI(this.f11572q, yogaWrap.d());
+        YogaNative.jni_YGNodeStyleSetFlexWrapJNI(this.f12149q, yogaWrap.d());
     }
 
     @Override // com.facebook.yoga.YogaNode
     public boolean q() {
-        return YogaNative.jni_YGNodeIsDirtyJNI(this.f11572q);
+        return YogaNative.jni_YGNodeIsDirtyJNI(this.f12149q);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public boolean r() {
-        if (this.f11570o != null) {
+        if (this.f12147o != null) {
             return true;
         }
         return false;
     }
 
     public Object r0() {
-        return this.f11573r;
+        return this.f12150r;
     }
 
     @Override // com.facebook.yoga.YogaNode
     /* renamed from: s0 */
     public YogaNodeJNIBase u(int i10) {
-        List list = this.f11569i;
+        List list = this.f12146i;
         if (list != null) {
             YogaNodeJNIBase yogaNodeJNIBase = (YogaNodeJNIBase) list.remove(i10);
-            yogaNodeJNIBase.f11567d = null;
-            YogaNative.jni_YGNodeRemoveChildJNI(this.f11572q, yogaNodeJNIBase.f11572q);
+            yogaNodeJNIBase.f12144d = null;
+            YogaNative.jni_YGNodeRemoveChildJNI(this.f12149q, yogaNodeJNIBase.f12149q);
             return yogaNodeJNIBase;
         }
         throw new IllegalStateException("Trying to remove a child of a YogaNode that does not have children");
@@ -531,38 +531,38 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
         if (fArr != null) {
             fArr[0] = ((int) fArr[0]) & (-17);
         }
-        this.f11574s = false;
+        this.f12151s = false;
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void v() {
-        this.f11570o = null;
-        this.f11571p = null;
-        this.f11573r = null;
+        this.f12147o = null;
+        this.f12148p = null;
+        this.f12150r = null;
         this.arr = null;
-        this.f11574s = true;
+        this.f12151s = true;
         this.mLayoutDirection = 0;
-        YogaNative.jni_YGNodeResetJNI(this.f11572q);
+        YogaNative.jni_YGNodeResetJNI(this.f12149q);
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void w(YogaAlign yogaAlign) {
-        YogaNative.jni_YGNodeStyleSetAlignContentJNI(this.f11572q, yogaAlign.d());
+        YogaNative.jni_YGNodeStyleSetAlignContentJNI(this.f12149q, yogaAlign.d());
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void x(YogaAlign yogaAlign) {
-        YogaNative.jni_YGNodeStyleSetAlignItemsJNI(this.f11572q, yogaAlign.d());
+        YogaNative.jni_YGNodeStyleSetAlignItemsJNI(this.f12149q, yogaAlign.d());
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void y(YogaAlign yogaAlign) {
-        YogaNative.jni_YGNodeStyleSetAlignSelfJNI(this.f11572q, yogaAlign.d());
+        YogaNative.jni_YGNodeStyleSetAlignSelfJNI(this.f12149q, yogaAlign.d());
     }
 
     @Override // com.facebook.yoga.YogaNode
     public void z(float f10) {
-        YogaNative.jni_YGNodeStyleSetAspectRatioJNI(this.f11572q, f10);
+        YogaNative.jni_YGNodeStyleSetAspectRatioJNI(this.f12149q, f10);
     }
 
     YogaNodeJNIBase() {
@@ -571,7 +571,7 @@ public abstract class YogaNodeJNIBase extends YogaNode implements Cloneable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public YogaNodeJNIBase(YogaConfig yogaConfig) {
-        this(YogaNative.jni_YGNodeNewWithConfigJNI(((b) yogaConfig).f11606a));
-        this.f11568e = yogaConfig;
+        this(YogaNative.jni_YGNodeNewWithConfigJNI(((b) yogaConfig).f12183a));
+        this.f12145e = yogaConfig;
     }
 }

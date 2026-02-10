@@ -1,17 +1,70 @@
 package ls;
 
-import kotlin.jvm.functions.Function1;
-import ls.n;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class o implements Function1 {
+import java.io.BufferedReader;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.markers.KMappedMarker;
+import kotlin.sequences.Sequence;
+/* JADX INFO: Access modifiers changed from: package-private */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class o implements Sequence {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final o f36504d = new o();
+    /* renamed from: a  reason: collision with root package name */
+    private final BufferedReader f36035a;
 
-    @Override // kotlin.jvm.functions.Function1
-    public Object invoke(Object obj) {
-        CharSequence c10;
-        c10 = n.b.c((Class) obj);
-        return c10;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements Iterator, KMappedMarker {
+
+        /* renamed from: d  reason: collision with root package name */
+        private String f36036d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private boolean f36037e;
+
+        a() {
+        }
+
+        @Override // java.util.Iterator
+        /* renamed from: a */
+        public String next() {
+            if (hasNext()) {
+                String str = this.f36036d;
+                this.f36036d = null;
+                Intrinsics.checkNotNull(str);
+                return str;
+            }
+            throw new NoSuchElementException();
+        }
+
+        @Override // java.util.Iterator
+        public boolean hasNext() {
+            if (this.f36036d == null && !this.f36037e) {
+                String readLine = o.this.f36035a.readLine();
+                this.f36036d = readLine;
+                if (readLine == null) {
+                    this.f36037e = true;
+                }
+            }
+            if (this.f36036d != null) {
+                return true;
+            }
+            return false;
+        }
+
+        @Override // java.util.Iterator
+        public void remove() {
+            throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+        }
+    }
+
+    public o(BufferedReader reader) {
+        Intrinsics.checkNotNullParameter(reader, "reader");
+        this.f36035a = reader;
+    }
+
+    @Override // kotlin.sequences.Sequence
+    public Iterator iterator() {
+        return new a();
     }
 }

@@ -7,20 +7,20 @@ import l5.w;
 class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final HashSet f7927a = new HashSet();
+    private final HashSet f8504a = new HashSet();
 
     public boolean a(w wVar, boolean z10) {
         if (z10) {
-            if (Build.VERSION.SDK_INT < wVar.f35778d) {
-                y5.d.c(String.format("%s is not supported pre SDK %d", wVar.name(), Integer.valueOf(wVar.f35778d)));
+            if (Build.VERSION.SDK_INT < wVar.f35675d) {
+                y5.d.c(String.format("%s is not supported pre SDK %d", wVar.name(), Integer.valueOf(wVar.f35675d)));
                 return false;
             }
-            return this.f7927a.add(wVar);
+            return this.f8504a.add(wVar);
         }
-        return this.f7927a.remove(wVar);
+        return this.f8504a.remove(wVar);
     }
 
     public boolean b(w wVar) {
-        return this.f7927a.contains(wVar);
+        return this.f8504a.contains(wVar);
     }
 }

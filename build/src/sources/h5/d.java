@@ -9,15 +9,15 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d implements j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f24969a;
+    private final Context f26187a;
 
     public d(Context context) {
-        this.f24969a = context;
+        this.f26187a = context;
     }
 
     @Override // h5.j
     public Object a(Continuation continuation) {
-        DisplayMetrics displayMetrics = this.f24969a.getResources().getDisplayMetrics();
+        DisplayMetrics displayMetrics = this.f26187a.getResources().getDisplayMetrics();
         c.a a10 = a.a(Math.max(displayMetrics.widthPixels, displayMetrics.heightPixels));
         return new i(a10, a10);
     }
@@ -26,13 +26,13 @@ public final class d implements j {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof d) && Intrinsics.areEqual(this.f24969a, ((d) obj).f24969a)) {
+        if ((obj instanceof d) && Intrinsics.areEqual(this.f26187a, ((d) obj).f26187a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f24969a.hashCode();
+        return this.f26187a.hashCode();
     }
 }

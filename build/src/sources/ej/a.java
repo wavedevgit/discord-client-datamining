@@ -1,56 +1,81 @@
 package ej;
 
-import java.util.List;
+import ej.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class a extends l {
+public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f21707a;
+    private int f22862a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f21708b;
+    private d.a f22863b = d.a.DEFAULT;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public a(String str, List list) {
-        if (str != null) {
-            this.f21707a = str;
-            if (list != null) {
-                this.f21708b = list;
-                return;
-            }
-            throw new NullPointerException("Null usedDates");
+    /* renamed from: ej.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static final class C0303a implements d {
+
+        /* renamed from: b  reason: collision with root package name */
+        private final int f22864b;
+
+        /* renamed from: c  reason: collision with root package name */
+        private final d.a f22865c;
+
+        C0303a(int i10, d.a aVar) {
+            this.f22864b = i10;
+            this.f22865c = aVar;
         }
-        throw new NullPointerException("Null userAgent");
-    }
 
-    @Override // ej.l
-    public List b() {
-        return this.f21708b;
-    }
-
-    @Override // ej.l
-    public String c() {
-        return this.f21707a;
-    }
-
-    public boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
+        @Override // java.lang.annotation.Annotation
+        public Class annotationType() {
+            return d.class;
         }
-        if (obj instanceof l) {
-            l lVar = (l) obj;
-            if (this.f21707a.equals(lVar.c()) && this.f21708b.equals(lVar.b())) {
+
+        @Override // java.lang.annotation.Annotation
+        public boolean equals(Object obj) {
+            if (this == obj) {
                 return true;
             }
+            if (!(obj instanceof d)) {
+                return false;
+            }
+            d dVar = (d) obj;
+            if (this.f22864b == dVar.tag() && this.f22865c.equals(dVar.intEncoding())) {
+                return true;
+            }
+            return false;
         }
-        return false;
+
+        @Override // java.lang.annotation.Annotation
+        public int hashCode() {
+            return (14552422 ^ this.f22864b) + (this.f22865c.hashCode() ^ 2041407134);
+        }
+
+        @Override // ej.d
+        public d.a intEncoding() {
+            return this.f22865c;
+        }
+
+        @Override // ej.d
+        public int tag() {
+            return this.f22864b;
+        }
+
+        @Override // java.lang.annotation.Annotation
+        public String toString() {
+            return "@com.google.firebase.encoders.proto.Protobuf(tag=" + this.f22864b + "intEncoding=" + this.f22865c + ')';
+        }
     }
 
-    public int hashCode() {
-        return ((this.f21707a.hashCode() ^ 1000003) * 1000003) ^ this.f21708b.hashCode();
+    public static a b() {
+        return new a();
     }
 
-    public String toString() {
-        return "HeartBeatResult{userAgent=" + this.f21707a + ", usedDates=" + this.f21708b + "}";
+    public d a() {
+        return new C0303a(this.f22862a, this.f22863b);
+    }
+
+    public a c(int i10) {
+        this.f22862a = i10;
+        return this;
     }
 }

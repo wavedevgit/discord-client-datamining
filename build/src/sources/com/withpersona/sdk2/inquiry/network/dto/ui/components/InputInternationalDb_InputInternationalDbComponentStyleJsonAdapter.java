@@ -60,7 +60,7 @@ public final class InputInternationalDb_InputInternationalDbComponentStyleJsonAd
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 inputSelectComponentStyle = (InputSelectComponentStyle) this.nullableInputSelectComponentStyleAdapter.fromJson(reader);
@@ -78,7 +78,7 @@ public final class InputInternationalDb_InputInternationalDbComponentStyleJsonAd
     public void toJson(@NotNull t writer, InputInternationalDb.InputInternationalDbComponentStyle inputInternationalDbComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputInternationalDbComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("inputSelectStyle");
             this.nullableInputSelectComponentStyleAdapter.toJson(writer, inputInternationalDbComponentStyle.getInputSelectStyle());
             writer.J("inputTextStyle");

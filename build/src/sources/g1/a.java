@@ -3,6 +3,7 @@ package g1;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.Choreographer;
+import as.l;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Lazy;
@@ -18,81 +19,80 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
-import ps.g;
-import ps.m0;
-import rr.l;
 import w0.n;
+import ys.g;
+import ys.m0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class a extends CoroutineDispatcher {
 
     /* renamed from: i  reason: collision with root package name */
-    private final Choreographer f23310i;
+    private final Choreographer f24610i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Handler f23311o;
+    private final Handler f24611o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Object f23312p;
+    private final Object f24612p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final ArrayDeque f23313q;
+    private final ArrayDeque f24613q;
 
     /* renamed from: r  reason: collision with root package name */
-    private List f23314r;
+    private List f24614r;
 
     /* renamed from: s  reason: collision with root package name */
-    private List f23315s;
+    private List f24615s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f23316t;
+    private boolean f24616t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f23317u;
+    private boolean f24617u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final d f23318v;
+    private final d f24618v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final n f23319w;
+    private final n f24619w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final c f23307x = new c(null);
+    public static final c f24607x = new c(null);
 
     /* renamed from: y  reason: collision with root package name */
-    public static final int f23308y = 8;
+    public static final int f24608y = 8;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final Lazy f23309z = l.a(C0364a.f23320d);
+    private static final Lazy f24609z = l.b(C0335a.f24620d);
     private static final ThreadLocal A = new b();
 
     /* renamed from: g1.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    static final class C0364a extends Lambda implements Function0 {
+    static final class C0335a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0364a f23320d = new C0364a();
+        public static final C0335a f24620d = new C0335a();
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: g1.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0365a extends k implements Function2 {
+        public static final class C0336a extends k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f23321d;
+            int f24621d;
 
-            C0365a(Continuation continuation) {
+            C0336a(Continuation continuation) {
                 super(2, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new C0365a(continuation);
+                return new C0336a(continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                xr.b.f();
-                if (this.f23321d == 0) {
+                gs.b.f();
+                if (this.f24621d == 0) {
                     kotlin.c.b(obj);
                     return Choreographer.getInstance();
                 }
@@ -101,11 +101,11 @@ public final class a extends CoroutineDispatcher {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((C0365a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
+                return ((C0336a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
             }
         }
 
-        C0364a() {
+        C0335a() {
             super(0);
         }
 
@@ -118,13 +118,13 @@ public final class a extends CoroutineDispatcher {
             if (b10) {
                 choreographer = Choreographer.getInstance();
             } else {
-                choreographer = (Choreographer) g.e(m0.c(), new C0365a(null));
+                choreographer = (Choreographer) g.e(m0.c(), new C0336a(null));
             }
             Intrinsics.checkNotNullExpressionValue(choreographer, "if (isMainThread()) Chor…eographer.getInstance() }");
             Handler a10 = w1.g.a(Looper.getMainLooper());
             Intrinsics.checkNotNullExpressionValue(a10, "createAsync(Looper.getMainLooper())");
             a aVar = new a(choreographer, a10, null);
-            return aVar.V0(aVar.s2());
+            return aVar.O0(aVar.o2());
         }
     }
 
@@ -144,7 +144,7 @@ public final class a extends CoroutineDispatcher {
                 Handler a10 = w1.g.a(myLooper);
                 Intrinsics.checkNotNullExpressionValue(a10, "createAsync(\n           …d\")\n                    )");
                 a aVar = new a(choreographer, a10, null);
-                return aVar.V0(aVar.s2());
+                return aVar.O0(aVar.o2());
             }
             throw new IllegalStateException("no Looper on this thread");
         }
@@ -157,7 +157,7 @@ public final class a extends CoroutineDispatcher {
         }
 
         public final CoroutineContext a() {
-            return (CoroutineContext) a.f23309z.getValue();
+            return (CoroutineContext) a.f24609z.getValue();
         }
 
         private c() {
@@ -171,7 +171,7 @@ public final class a extends CoroutineDispatcher {
 
         @Override // android.view.Choreographer.FrameCallback
         public void doFrame(long j10) {
-            a.this.f23311o.removeCallbacks(this);
+            a.this.f24611o.removeCallbacks(this);
             a.this.v2();
             a.this.u2(j10);
         }
@@ -179,15 +179,15 @@ public final class a extends CoroutineDispatcher {
         @Override // java.lang.Runnable
         public void run() {
             a.this.v2();
-            Object obj = a.this.f23312p;
+            Object obj = a.this.f24612p;
             a aVar = a.this;
             synchronized (obj) {
                 try {
-                    if (aVar.f23314r.isEmpty()) {
-                        aVar.r2().removeFrameCallback(this);
-                        aVar.f23317u = false;
+                    if (aVar.f24614r.isEmpty()) {
+                        aVar.m2().removeFrameCallback(this);
+                        aVar.f24617u = false;
                     }
-                    Unit unit = Unit.f31765a;
+                    Unit unit = Unit.f31987a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -201,22 +201,22 @@ public final class a extends CoroutineDispatcher {
 
     private final Runnable t2() {
         Runnable runnable;
-        synchronized (this.f23312p) {
-            runnable = (Runnable) this.f23313q.p();
+        synchronized (this.f24612p) {
+            runnable = (Runnable) this.f24613q.p();
         }
         return runnable;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void u2(long j10) {
-        synchronized (this.f23312p) {
-            if (!this.f23317u) {
+        synchronized (this.f24612p) {
+            if (!this.f24617u) {
                 return;
             }
-            this.f23317u = false;
-            List list = this.f23314r;
-            this.f23314r = this.f23315s;
-            this.f23315s = list;
+            this.f24617u = false;
+            List list = this.f24614r;
+            this.f24614r = this.f24615s;
+            this.f24615s = list;
             int size = list.size();
             for (int i10 = 0; i10 < size; i10++) {
                 ((Choreographer.FrameCallback) list.get(i10)).doFrame(j10);
@@ -234,10 +234,10 @@ public final class a extends CoroutineDispatcher {
                 t22.run();
                 t22 = t2();
             }
-            synchronized (this.f23312p) {
-                if (this.f23313q.isEmpty()) {
+            synchronized (this.f24612p) {
+                if (this.f24613q.isEmpty()) {
                     z10 = false;
-                    this.f23316t = false;
+                    this.f24616t = false;
                 } else {
                     z10 = true;
                 }
@@ -245,24 +245,46 @@ public final class a extends CoroutineDispatcher {
         } while (z10);
     }
 
-    public final Choreographer r2() {
-        return this.f23310i;
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void b1(CoroutineContext context, Runnable block) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        Intrinsics.checkNotNullParameter(block, "block");
+        synchronized (this.f24612p) {
+            try {
+                this.f24613q.addLast(block);
+                if (!this.f24616t) {
+                    this.f24616t = true;
+                    this.f24611o.post(this.f24618v);
+                    if (!this.f24617u) {
+                        this.f24617u = true;
+                        this.f24610i.postFrameCallback(this.f24618v);
+                    }
+                }
+                Unit unit = Unit.f31987a;
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
     }
 
-    public final n s2() {
-        return this.f23319w;
+    public final Choreographer m2() {
+        return this.f24610i;
+    }
+
+    public final n o2() {
+        return this.f24619w;
     }
 
     public final void w2(Choreographer.FrameCallback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        synchronized (this.f23312p) {
+        synchronized (this.f24612p) {
             try {
-                this.f23314r.add(callback);
-                if (!this.f23317u) {
-                    this.f23317u = true;
-                    this.f23310i.postFrameCallback(this.f23318v);
+                this.f24614r.add(callback);
+                if (!this.f24617u) {
+                    this.f24617u = true;
+                    this.f24610i.postFrameCallback(this.f24618v);
                 }
-                Unit unit = Unit.f31765a;
+                Unit unit = Unit.f31987a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -271,41 +293,19 @@ public final class a extends CoroutineDispatcher {
 
     public final void x2(Choreographer.FrameCallback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        synchronized (this.f23312p) {
-            this.f23314r.remove(callback);
-        }
-    }
-
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public void z1(CoroutineContext context, Runnable block) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        Intrinsics.checkNotNullParameter(block, "block");
-        synchronized (this.f23312p) {
-            try {
-                this.f23313q.addLast(block);
-                if (!this.f23316t) {
-                    this.f23316t = true;
-                    this.f23311o.post(this.f23318v);
-                    if (!this.f23317u) {
-                        this.f23317u = true;
-                        this.f23310i.postFrameCallback(this.f23318v);
-                    }
-                }
-                Unit unit = Unit.f31765a;
-            } catch (Throwable th2) {
-                throw th2;
-            }
+        synchronized (this.f24612p) {
+            this.f24614r.remove(callback);
         }
     }
 
     private a(Choreographer choreographer, Handler handler) {
-        this.f23310i = choreographer;
-        this.f23311o = handler;
-        this.f23312p = new Object();
-        this.f23313q = new ArrayDeque();
-        this.f23314r = new ArrayList();
-        this.f23315s = new ArrayList();
-        this.f23318v = new d();
-        this.f23319w = new g1.c(choreographer, this);
+        this.f24610i = choreographer;
+        this.f24611o = handler;
+        this.f24612p = new Object();
+        this.f24613q = new ArrayDeque();
+        this.f24614r = new ArrayList();
+        this.f24615s = new ArrayList();
+        this.f24618v = new d();
+        this.f24619w = new g1.c(choreographer, this);
     }
 }

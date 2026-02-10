@@ -1,20 +1,20 @@
 package defpackage;
 
+import cv.b;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
 import kotlin.text.StringsKt;
-import tu.b;
 /* renamed from: j  reason: default package */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class j implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j f29673a = new j();
+    public static final j f30473a = new j();
 
     private j() {
     }
 
-    @Override // tu.b
+    @Override // cv.b
     public Object f(Object obj, Object obj2) {
         if (obj instanceof String) {
             return StringsKt.v1((String) obj).toString();

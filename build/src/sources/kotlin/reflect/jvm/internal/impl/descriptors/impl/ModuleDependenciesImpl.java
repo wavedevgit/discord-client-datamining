@@ -8,43 +8,43 @@ import org.jetbrains.annotations.NotNull;
 public final class ModuleDependenciesImpl implements ModuleDependencies {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f32267a;
+    private final List f32489a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f32268b;
+    private final Set f32490b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f32269c;
+    private final List f32491c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Set f32270d;
+    private final Set f32492d;
 
     public ModuleDependenciesImpl(@NotNull List<ModuleDescriptorImpl> allDependencies, @NotNull Set<ModuleDescriptorImpl> modulesWhoseInternalsAreVisible, @NotNull List<ModuleDescriptorImpl> directExpectedByDependencies, @NotNull Set<ModuleDescriptorImpl> allExpectedByDependencies) {
         Intrinsics.checkNotNullParameter(allDependencies, "allDependencies");
         Intrinsics.checkNotNullParameter(modulesWhoseInternalsAreVisible, "modulesWhoseInternalsAreVisible");
         Intrinsics.checkNotNullParameter(directExpectedByDependencies, "directExpectedByDependencies");
         Intrinsics.checkNotNullParameter(allExpectedByDependencies, "allExpectedByDependencies");
-        this.f32267a = allDependencies;
-        this.f32268b = modulesWhoseInternalsAreVisible;
-        this.f32269c = directExpectedByDependencies;
-        this.f32270d = allExpectedByDependencies;
+        this.f32489a = allDependencies;
+        this.f32490b = modulesWhoseInternalsAreVisible;
+        this.f32491c = directExpectedByDependencies;
+        this.f32492d = allExpectedByDependencies;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.ModuleDependencies
     @NotNull
     public List<ModuleDescriptorImpl> getAllDependencies() {
-        return this.f32267a;
+        return this.f32489a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.ModuleDependencies
     @NotNull
     public List<ModuleDescriptorImpl> getDirectExpectedByDependencies() {
-        return this.f32269c;
+        return this.f32491c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.ModuleDependencies
     @NotNull
     public Set<ModuleDescriptorImpl> getModulesWhoseInternalsAreVisible() {
-        return this.f32268b;
+        return this.f32490b;
     }
 }

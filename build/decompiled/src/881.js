@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.name;
                 var3 = var5[var1];
                 if (var3) {
-                    _fun9347_ip = 391;
+                    _fun9347_ip = 392;
                     continue _fun9347
                 }
             case 33:
@@ -129,7 +129,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.bind(var4)(var2);
                 var2 = var2.DEBUG_BUILD;
                 if (!var2) {
-                    _fun9347_ip = 487;
+                    _fun9347_ip = 489;
                     continue _fun9347
                 }
             case 324:
@@ -147,9 +147,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 'Integration installed: ';
                 var2 = var5.bind(var2)(var6);
                 var2 = var3.bind(var4)(var2);
-                _fun9347_ip = 487;
+                _fun9347_ip = 489;
                 continue _fun9347;
-            case 391:
+            case 392:
                 var4 = _closure1_slot0;
                 var3 = _closure1_slot1;
                 var2 = 1;
@@ -158,10 +158,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.bind(var3)(var2);
                 var2 = var2.DEBUG_BUILD;
                 if (!var2) {
-                    _fun9347_ip = 487;
+                    _fun9347_ip = 489;
                     continue _fun9347
                 }
-            case 422:
+            case 423:
                 var2 = _closure1_slot0;
                 var4 = _closure1_slot1;
                 var1 = 2;
@@ -176,7 +176,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'Integration skipped because it was already installed: ';
                 var0 = var3.bind(var0)(var4);
                 var0 = var1.bind(var2)(var0);
-            case 487:
+            case 489:
                 var0 = undefined;
                 return var0;
         }

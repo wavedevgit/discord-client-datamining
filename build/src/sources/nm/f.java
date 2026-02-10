@@ -1,339 +1,154 @@
 package nm;
 
-import android.os.CancellationSignal;
-import android.view.View;
-import android.view.animation.LinearInterpolator;
-import androidx.core.graphics.Insets;
-import androidx.core.view.WindowInsetsCompat;
-import androidx.core.view.WindowInsetsControllerCompat;
-import androidx.core.view.c1;
-import androidx.core.view.d1;
-import androidx.core.view.h0;
-import androidx.dynamicanimation.animation.SpringAnimation;
-import androidx.dynamicanimation.animation.b;
-import kotlin.Lazy;
-import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.functions.Function1;
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.events.Event;
+import com.facebook.react.views.progressbar.ReactProgressBarViewManager;
+import kotlin.enums.EnumEntries;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import nm.f;
-import rr.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f {
-
-    /* renamed from: a  reason: collision with root package name */
-    private d1 f38958a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private CancellationSignal f38959b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private Function1 f38960c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Lazy f38961d = l.a(new Function0() { // from class: nm.e
-        @Override // kotlin.jvm.functions.Function0
-        public final Object invoke() {
-            f.a m10;
-            m10 = f.m(f.this);
-            return m10;
-        }
-    });
-
-    /* renamed from: e  reason: collision with root package name */
-    private boolean f38962e;
+public final class f extends Event {
 
     /* renamed from: f  reason: collision with root package name */
-    private SpringAnimation f38963f;
+    public static final a f37984f = new a(null);
+
+    /* renamed from: g  reason: collision with root package name */
+    private static final a.EnumC0535a f37985g = a.EnumC0535a.f37994e;
+
+    /* renamed from: h  reason: collision with root package name */
+    private static final a.EnumC0535a f37986h = a.EnumC0535a.f37995i;
+
+    /* renamed from: i  reason: collision with root package name */
+    private static final a.EnumC0535a f37987i = a.EnumC0535a.f37996o;
+
+    /* renamed from: j  reason: collision with root package name */
+    private static final a.EnumC0535a f37988j = a.EnumC0535a.f37997p;
+
+    /* renamed from: a  reason: collision with root package name */
+    private final a.EnumC0535a f37989a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final double f37990b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final double f37991c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final int f37992d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final int f37993e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements c1 {
-        a() {
-        }
+    public static final class a {
 
-        @Override // androidx.core.view.c1
-        public void a(d1 d1Var) {
-            f.this.w();
-        }
+        /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+        /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+        /* renamed from: nm.f$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class EnumC0535a {
 
-        @Override // androidx.core.view.c1
-        public void b(d1 controller, int i10) {
-            Intrinsics.checkNotNullParameter(controller, "controller");
-            f.this.v(controller);
-        }
+            /* renamed from: e  reason: collision with root package name */
+            public static final EnumC0535a f37994e = new EnumC0535a("Move", 0, "topKeyboardMove");
 
-        @Override // androidx.core.view.c1
-        public void c(d1 controller) {
-            Intrinsics.checkNotNullParameter(controller, "controller");
-            f.this.w();
-        }
-    }
+            /* renamed from: i  reason: collision with root package name */
+            public static final EnumC0535a f37995i = new EnumC0535a("Start", 1, "topKeyboardMoveStart");
 
-    private final void g(boolean z10, Float f10) {
-        int i10;
-        final d1 d1Var = this.f38958a;
-        if (d1Var != null) {
-            Function1 function1 = new Function1() { // from class: nm.b
-                @Override // kotlin.jvm.functions.Function1
-                public final Object invoke(Object obj) {
-                    Unit i11;
-                    i11 = f.i(f.this, ((Float) obj).floatValue());
-                    return i11;
-                }
-            };
-            Function0 function0 = new Function0() { // from class: nm.c
-                @Override // kotlin.jvm.functions.Function0
-                public final Object invoke() {
-                    float j10;
-                    j10 = f.j(d1.this);
-                    return Float.valueOf(j10);
-                }
-            };
-            if (z10) {
-                i10 = d1Var.e().f3304d;
-            } else {
-                i10 = d1Var.d().f3304d;
+            /* renamed from: o  reason: collision with root package name */
+            public static final EnumC0535a f37996o = new EnumC0535a("End", 2, "topKeyboardMoveEnd");
+
+            /* renamed from: p  reason: collision with root package name */
+            public static final EnumC0535a f37997p = new EnumC0535a("Interactive", 3, "topKeyboardMoveInteractive");
+
+            /* renamed from: q  reason: collision with root package name */
+            private static final /* synthetic */ EnumC0535a[] f37998q;
+
+            /* renamed from: r  reason: collision with root package name */
+            private static final /* synthetic */ EnumEntries f37999r;
+
+            /* renamed from: d  reason: collision with root package name */
+            private final String f38000d;
+
+            static {
+                EnumC0535a[] a10 = a();
+                f37998q = a10;
+                f37999r = hs.a.a(a10);
             }
-            SpringAnimation b10 = b3.a.b(function1, function0, i10);
-            if (b10.v() == null) {
-                b10.y(new androidx.dynamicanimation.animation.c());
+
+            private EnumC0535a(String str, int i10, String str2) {
+                this.f38000d = str2;
             }
-            androidx.dynamicanimation.animation.c spring = b10.v();
-            Intrinsics.checkExpressionValueIsNotNull(spring, "spring");
-            spring.d(1.0f);
-            spring.f(1500.0f);
-            if (f10 != null) {
-                b10.o(f10.floatValue());
+
+            private static final /* synthetic */ EnumC0535a[] a() {
+                return new EnumC0535a[]{f37994e, f37995i, f37996o, f37997p};
             }
-            b10.b(new b.q() { // from class: nm.d
-                @Override // androidx.dynamicanimation.animation.b.q
-                public final void a(androidx.dynamicanimation.animation.b bVar, boolean z11, float f11, float f12) {
-                    f.k(f.this, bVar, z11, f11, f12);
-                }
-            });
-            b10.q();
-            this.f38963f = b10;
-            return;
-        }
-        throw new IllegalStateException("Controller should not be null");
-    }
 
-    static /* synthetic */ void h(f fVar, boolean z10, Float f10, int i10, Object obj) {
-        if ((i10 & 2) != 0) {
-            f10 = null;
-        }
-        fVar.g(z10, f10);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit i(f fVar, float f10) {
-        fVar.s(gs.a.c(f10));
-        return Unit.f31765a;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final float j(d1 d1Var) {
-        return d1Var.c().f3304d;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void k(f fVar, androidx.dynamicanimation.animation.b bVar, boolean z10, float f10, float f11) {
-        if (Intrinsics.areEqual(bVar, fVar.f38963f)) {
-            fVar.f38963f = null;
-        }
-        fVar.o();
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final a m(f fVar) {
-        return new a();
-    }
-
-    private final a p() {
-        return (a) this.f38961d.getValue();
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final void v(d1 d1Var) {
-        this.f38959b = null;
-        this.f38958a = d1Var;
-        Function1 function1 = this.f38960c;
-        if (function1 != null) {
-            function1.invoke(d1Var);
-        }
-        this.f38960c = null;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final void w() {
-        this.f38958a = null;
-        this.f38959b = null;
-        this.f38962e = false;
-        SpringAnimation springAnimation = this.f38963f;
-        if (springAnimation != null) {
-            springAnimation.d();
-        }
-        this.f38963f = null;
-        this.f38960c = null;
-    }
-
-    public static /* synthetic */ void y(f fVar, View view, Function1 function1, int i10, Object obj) {
-        if ((i10 & 2) != 0) {
-            function1 = null;
-        }
-        fVar.x(view, function1);
-    }
-
-    public final void l(Float f10) {
-        d1 d1Var = this.f38958a;
-        if (d1Var == null) {
-            CancellationSignal cancellationSignal = this.f38959b;
-            if (cancellationSignal != null) {
-                cancellationSignal.cancel();
-                return;
+            public static EnumC0535a valueOf(String str) {
+                return (EnumC0535a) Enum.valueOf(EnumC0535a.class, str);
             }
-            return;
-        }
-        boolean z10 = false;
-        nm.a.f38952a.b(false);
-        int i10 = d1Var.c().f3304d;
-        int i11 = d1Var.e().f3304d;
-        int i12 = d1Var.d().f3304d;
-        if (f10 != null) {
-            if (f10.floatValue() < 0.0f) {
-                z10 = true;
+
+            public static EnumC0535a[] values() {
+                return (EnumC0535a[]) f37998q.clone();
             }
-            g(z10, f10);
-        } else if (i10 == i11) {
-            d1Var.a(true);
-        } else if (i10 == i12) {
-            d1Var.a(false);
-        } else if (d1Var.b() >= 0.15f) {
-            h(this, !this.f38962e, null, 2, null);
-        } else {
-            h(this, this.f38962e, null, 2, null);
-        }
-    }
 
-    public final void n() {
-        d1 d1Var = this.f38958a;
-        if (d1Var != null) {
-            d1Var.a(this.f38962e);
-        }
-        CancellationSignal cancellationSignal = this.f38959b;
-        if (cancellationSignal != null) {
-            cancellationSignal.cancel();
-        }
-        SpringAnimation springAnimation = this.f38963f;
-        if (springAnimation != null) {
-            springAnimation.d();
-        }
-        w();
-    }
-
-    public final void o() {
-        d1 d1Var = this.f38958a;
-        if (d1Var == null) {
-            CancellationSignal cancellationSignal = this.f38959b;
-            if (cancellationSignal != null) {
-                cancellationSignal.cancel();
-                return;
+            public final String d() {
+                return this.f38000d;
             }
-            return;
         }
-        int i10 = d1Var.c().f3304d;
-        int i11 = d1Var.e().f3304d;
-        int i12 = d1Var.d().f3304d;
-        if (i10 == i11) {
-            d1Var.a(true);
-        } else if (i10 == i12) {
-            d1Var.a(false);
-        } else if (d1Var.b() >= 0.15f) {
-            d1Var.a(!this.f38962e);
-        } else {
-            d1Var.a(this.f38962e);
+
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final EnumC0535a a() {
+            return f.f37987i;
+        }
+
+        public final EnumC0535a b() {
+            return f.f37988j;
+        }
+
+        public final EnumC0535a c() {
+            return f.f37985g;
+        }
+
+        public final EnumC0535a d() {
+            return f.f37986h;
+        }
+
+        private a() {
         }
     }
 
-    public final int q() {
-        d1 d1Var = this.f38958a;
-        if (d1Var != null) {
-            return d1Var.c().f3304d;
-        }
-        throw new IllegalStateException("Current WindowInsetsAnimationController is null.This should only be called if isAnimationInProgress() returns true");
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public f(int i10, int i11, a.EnumC0535a event, double d10, double d11, int i12, int i13) {
+        super(i10, i11);
+        Intrinsics.checkNotNullParameter(event, "event");
+        this.f37989a = event;
+        this.f37990b = d10;
+        this.f37991c = d11;
+        this.f37992d = i12;
+        this.f37993e = i13;
     }
 
-    public final int r(int i10) {
-        d1 d1Var = this.f38958a;
-        if (d1Var != null) {
-            nm.a.f38952a.b(true);
-            return s(d1Var.c().f3304d - i10);
-        }
-        throw new IllegalStateException("Current WindowInsetsAnimationController is null.This should only be called if isAnimationInProgress() returns true");
+    @Override // com.facebook.react.uimanager.events.Event
+    public short getCoalescingKey() {
+        return (short) 0;
     }
 
-    public final int s(int i10) {
-        int i11;
-        int i12;
-        d1 d1Var = this.f38958a;
-        if (d1Var != null) {
-            int i13 = d1Var.d().f3304d;
-            int i14 = d1Var.e().f3304d;
-            boolean z10 = this.f38962e;
-            if (z10) {
-                i11 = i14;
-            } else {
-                i11 = i13;
-            }
-            if (z10) {
-                i12 = i13;
-            } else {
-                i12 = i14;
-            }
-            int m10 = kotlin.ranges.d.m(i10, i13, i14);
-            int i15 = d1Var.c().f3304d - m10;
-            d1Var.f(Insets.c(0, 0, 0, m10), 1.0f, (m10 - i11) / (i12 - i11));
-            return i15;
-        }
-        throw new IllegalStateException("Current WindowInsetsAnimationController is null.This should only be called if isAnimationInProgress() returns true");
+    @Override // com.facebook.react.uimanager.events.Event
+    protected WritableMap getEventData() {
+        WritableMap createMap = Arguments.createMap();
+        createMap.putDouble(ReactProgressBarViewManager.PROP_PROGRESS, this.f37991c);
+        createMap.putDouble("height", this.f37990b);
+        createMap.putInt("duration", this.f37992d);
+        createMap.putInt("target", this.f37993e);
+        return createMap;
     }
 
-    public final boolean t() {
-        if (this.f38958a != null) {
-            return true;
-        }
-        return false;
-    }
-
-    public final boolean u() {
-        if (this.f38959b != null) {
-            return true;
-        }
-        return false;
-    }
-
-    public final void x(View view, Function1 function1) {
-        LinearInterpolator linearInterpolator;
-        Intrinsics.checkNotNullParameter(view, "view");
-        if (!t()) {
-            WindowInsetsCompat G = h0.G(view);
-            boolean z10 = false;
-            if (G != null && G.u(WindowInsetsCompat.p.c())) {
-                z10 = true;
-            }
-            this.f38962e = z10;
-            this.f38959b = new CancellationSignal();
-            this.f38960c = function1;
-            nm.a.f38952a.b(true);
-            WindowInsetsControllerCompat K = h0.K(view);
-            if (K != null) {
-                int c10 = WindowInsetsCompat.p.c();
-                linearInterpolator = g.f38965a;
-                K.a(c10, -1L, linearInterpolator, this.f38959b, p());
-                return;
-            }
-            return;
-        }
-        throw new IllegalStateException("Animation in progress. Can not start a new request to controlWindowInsetsAnimation()");
+    @Override // com.facebook.react.uimanager.events.Event
+    public String getEventName() {
+        return this.f37989a.d();
     }
 }

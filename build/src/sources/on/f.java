@@ -1,41 +1,25 @@
 package on;
 
-import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.events.Event;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import nn.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f extends Event {
+public final class f extends b {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f42400a = new a(null);
+    /* renamed from: e  reason: collision with root package name */
+    private final boolean f40647e;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        private a() {
-        }
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public f(q handler) {
+        super(handler);
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        this.f40647e = handler.f0();
     }
 
-    public f(int i10, int i11) {
-        super(i10, i11);
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public short getCoalescingKey() {
-        return (short) 0;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    protected WritableMap getEventData() {
-        return Arguments.createMap();
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public String getEventName() {
-        return "topAppear";
+    @Override // on.b
+    public void a(WritableMap eventData) {
+        Intrinsics.checkNotNullParameter(eventData, "eventData");
+        super.a(eventData);
+        eventData.putBoolean("pointerInside", this.f40647e);
     }
 }

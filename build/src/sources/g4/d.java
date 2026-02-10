@@ -5,17 +5,17 @@ import org.chromium.support_lib_boundary.WebSettingsBoundaryInterface;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private WebSettingsBoundaryInterface f23433a;
+    private WebSettingsBoundaryInterface f24733a;
 
     public d(WebSettingsBoundaryInterface webSettingsBoundaryInterface) {
-        this.f23433a = webSettingsBoundaryInterface;
+        this.f24733a = webSettingsBoundaryInterface;
     }
 
     public void a(int i10) {
-        this.f23433a.setForceDark(i10);
+        this.f24733a.setForceDark(i10);
     }
 
     public void b(int i10) {
-        this.f23433a.setForceDarkBehavior(i10);
+        this.f24733a.setForceDarkBehavior(i10);
     }
 }

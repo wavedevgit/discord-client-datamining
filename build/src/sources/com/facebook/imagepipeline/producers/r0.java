@@ -17,75 +17,75 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class r0 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Supplier f10942a;
+    private final Supplier f11519a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ma.k f10943b;
+    private final ma.k f11520b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final s8.i f10944c;
+    private final s8.i f11521c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final s8.a f10945d;
+    private final s8.a f11522d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final w0 f10946e;
+    private final w0 f11523e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public class a implements u4.d {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ y0 f10947a;
+        final /* synthetic */ y0 f11524a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ProducerContext f10948b;
+        final /* synthetic */ ProducerContext f11525b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Consumer f10949c;
+        final /* synthetic */ Consumer f11526c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ CacheKey f10950d;
+        final /* synthetic */ CacheKey f11527d;
 
         a(y0 y0Var, ProducerContext producerContext, Consumer consumer, CacheKey cacheKey) {
-            this.f10947a = y0Var;
-            this.f10948b = producerContext;
-            this.f10949c = consumer;
-            this.f10950d = cacheKey;
+            this.f11524a = y0Var;
+            this.f11525b = producerContext;
+            this.f11526c = consumer;
+            this.f11527d = cacheKey;
         }
 
         @Override // u4.d
         /* renamed from: b */
         public Void a(u4.f fVar) {
             if (r0.g(fVar)) {
-                this.f10947a.c(this.f10948b, "PartialDiskCacheProducer", null);
-                this.f10949c.a();
+                this.f11524a.c(this.f11525b, "PartialDiskCacheProducer", null);
+                this.f11526c.a();
             } else if (fVar.n()) {
-                this.f10947a.k(this.f10948b, "PartialDiskCacheProducer", fVar.i(), null);
-                r0.this.i(this.f10949c, this.f10948b, this.f10950d, null);
+                this.f11524a.k(this.f11525b, "PartialDiskCacheProducer", fVar.i(), null);
+                r0.this.i(this.f11526c, this.f11525b, this.f11527d, null);
             } else {
                 ta.k kVar = (ta.k) fVar.j();
                 if (kVar != null) {
-                    y0 y0Var = this.f10947a;
-                    ProducerContext producerContext = this.f10948b;
+                    y0 y0Var = this.f11524a;
+                    ProducerContext producerContext = this.f11525b;
                     y0Var.j(producerContext, "PartialDiskCacheProducer", r0.f(y0Var, producerContext, true, kVar.Q()));
                     BytesRange g10 = BytesRange.g(kVar.Q() - 1);
-                    kVar.r1(g10);
+                    kVar.V0(g10);
                     int Q = kVar.Q();
-                    ImageRequest I = this.f10948b.I();
+                    ImageRequest I = this.f11525b.I();
                     if (g10.c(I.getBytesRange())) {
-                        this.f10948b.m("disk", "partial");
-                        this.f10947a.b(this.f10948b, "PartialDiskCacheProducer", true);
-                        this.f10949c.b(kVar, 9);
+                        this.f11525b.m("disk", "partial");
+                        this.f11524a.b(this.f11525b, "PartialDiskCacheProducer", true);
+                        this.f11526c.b(kVar, 9);
                     } else {
-                        this.f10949c.b(kVar, 8);
-                        r0.this.i(this.f10949c, new d1(ImageRequestBuilder.b(I).z(BytesRange.d(Q - 1)).a(), this.f10948b), this.f10950d, kVar);
+                        this.f11526c.b(kVar, 8);
+                        r0.this.i(this.f11526c, new d1(ImageRequestBuilder.b(I).z(BytesRange.d(Q - 1)).a(), this.f11525b), this.f11527d, kVar);
                     }
                 } else {
-                    y0 y0Var2 = this.f10947a;
-                    ProducerContext producerContext2 = this.f10948b;
+                    y0 y0Var2 = this.f11524a;
+                    ProducerContext producerContext2 = this.f11525b;
                     y0Var2.j(producerContext2, "PartialDiskCacheProducer", r0.f(y0Var2, producerContext2, false, 0));
-                    r0.this.i(this.f10949c, this.f10948b, this.f10950d, kVar);
+                    r0.this.i(this.f11526c, this.f11525b, this.f11527d, kVar);
                 }
             }
             return null;
@@ -97,15 +97,15 @@ public class r0 implements w0 {
     public class b extends f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ AtomicBoolean f10952a;
+        final /* synthetic */ AtomicBoolean f11529a;
 
         b(AtomicBoolean atomicBoolean) {
-            this.f10952a = atomicBoolean;
+            this.f11529a = atomicBoolean;
         }
 
         @Override // com.facebook.imagepipeline.producers.x0
         public void b() {
-            this.f10952a.set(true);
+            this.f11529a.set(true);
         }
     }
 
@@ -114,25 +114,25 @@ public class r0 implements w0 {
     public static class c extends s {
 
         /* renamed from: c  reason: collision with root package name */
-        private final Supplier f10954c;
+        private final Supplier f11531c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final CacheKey f10955d;
+        private final CacheKey f11532d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final s8.i f10956e;
+        private final s8.i f11533e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final s8.a f10957f;
+        private final s8.a f11534f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final ta.k f10958g;
+        private final ta.k f11535g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final boolean f10959h;
+        private final boolean f11536h;
 
         private void p(InputStream inputStream, OutputStream outputStream, int i10) {
-            byte[] bArr = (byte[]) this.f10957f.get(16384);
+            byte[] bArr = (byte[]) this.f11534f.get(16384);
             int i11 = i10;
             while (i11 > 0) {
                 try {
@@ -144,7 +144,7 @@ public class r0 implements w0 {
                         i11 -= read;
                     }
                 } finally {
-                    this.f10957f.release(bArr);
+                    this.f11534f.release(bArr);
                 }
             }
             if (i11 <= 0) {
@@ -154,8 +154,8 @@ public class r0 implements w0 {
         }
 
         private s8.k q(ta.k kVar, ta.k kVar2) {
-            int i10 = ((BytesRange) p8.j.g(kVar2.p())).f10464a;
-            s8.k e10 = this.f10956e.e(kVar2.Q() + i10);
+            int i10 = ((BytesRange) p8.j.g(kVar2.p())).f11041a;
+            s8.k e10 = this.f11533e.e(kVar2.Q() + i10);
             p(kVar.I(), e10, i10);
             p(kVar2.I(), e10, kVar2.Q());
             return e10;
@@ -164,18 +164,18 @@ public class r0 implements w0 {
         private void s(s8.k kVar) {
             ta.k kVar2;
             Throwable th2;
-            CloseableReference H0 = CloseableReference.H0(kVar.a());
+            CloseableReference E0 = CloseableReference.E0(kVar.a());
             try {
-                kVar2 = new ta.k(H0);
+                kVar2 = new ta.k(E0);
                 try {
-                    kVar2.R0();
+                    kVar2.L0();
                     o().b(kVar2, 1);
-                    ta.k.k(kVar2);
-                    CloseableReference.z(H0);
+                    ta.k.i(kVar2);
+                    CloseableReference.z(E0);
                 } catch (Throwable th3) {
                     th2 = th3;
-                    ta.k.k(kVar2);
-                    CloseableReference.z(H0);
+                    ta.k.i(kVar2);
+                    CloseableReference.z(E0);
                     throw th2;
                 }
             } catch (Throwable th4) {
@@ -190,21 +190,21 @@ public class r0 implements w0 {
             if (com.facebook.imagepipeline.producers.c.e(i10)) {
                 return;
             }
-            if (this.f10958g != null && kVar != null && kVar.p() != null) {
+            if (this.f11535g != null && kVar != null && kVar.p() != null) {
                 try {
                     try {
-                        s(q(this.f10958g, kVar));
+                        s(q(this.f11535g, kVar));
                     } catch (IOException e10) {
                         q8.a.n("PartialDiskCacheProducer", "Error while merging image data", e10);
                         o().onFailure(e10);
                     }
-                    ((oa.b) this.f10954c.get()).b().s(this.f10955d);
+                    ((oa.b) this.f11531c.get()).b().s(this.f11532d);
                 } finally {
                     kVar.close();
-                    this.f10958g.close();
+                    this.f11535g.close();
                 }
-            } else if (this.f10959h && com.facebook.imagepipeline.producers.c.m(i10, 8) && com.facebook.imagepipeline.producers.c.d(i10) && kVar != null && kVar.z() != ga.c.f24098d) {
-                ((oa.b) this.f10954c.get()).b().p(this.f10955d, kVar);
+            } else if (this.f11536h && com.facebook.imagepipeline.producers.c.m(i10, 8) && com.facebook.imagepipeline.producers.c.d(i10) && kVar != null && kVar.z() != ga.c.f25398d) {
+                ((oa.b) this.f11531c.get()).b().p(this.f11532d, kVar);
                 o().b(kVar, i10);
             } else {
                 o().b(kVar, i10);
@@ -213,21 +213,21 @@ public class r0 implements w0 {
 
         private c(Consumer consumer, Supplier supplier, CacheKey cacheKey, s8.i iVar, s8.a aVar, ta.k kVar, boolean z10) {
             super(consumer);
-            this.f10954c = supplier;
-            this.f10955d = cacheKey;
-            this.f10956e = iVar;
-            this.f10957f = aVar;
-            this.f10958g = kVar;
-            this.f10959h = z10;
+            this.f11531c = supplier;
+            this.f11532d = cacheKey;
+            this.f11533e = iVar;
+            this.f11534f = aVar;
+            this.f11535g = kVar;
+            this.f11536h = z10;
         }
     }
 
     public r0(Supplier supplier, ma.k kVar, s8.i iVar, s8.a aVar, w0 w0Var) {
-        this.f10942a = supplier;
-        this.f10943b = kVar;
-        this.f10944c = iVar;
-        this.f10945d = aVar;
-        this.f10946e = w0Var;
+        this.f11519a = supplier;
+        this.f11520b = kVar;
+        this.f11521c = iVar;
+        this.f11522d = aVar;
+        this.f11523e = w0Var;
     }
 
     private static Uri e(ImageRequest imageRequest) {
@@ -261,11 +261,11 @@ public class r0 implements w0 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void i(Consumer consumer, ProducerContext producerContext, CacheKey cacheKey, ta.k kVar) {
-        this.f10946e.b(new c(consumer, this.f10942a, cacheKey, this.f10944c, this.f10945d, kVar, producerContext.I().isCacheEnabled(32)), producerContext);
+        this.f11523e.b(new c(consumer, this.f11519a, cacheKey, this.f11521c, this.f11522d, kVar, producerContext.I().isCacheEnabled(32)), producerContext);
     }
 
     private void j(AtomicBoolean atomicBoolean, ProducerContext producerContext) {
-        producerContext.g(new b(atomicBoolean));
+        producerContext.h(new b(atomicBoolean));
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -274,19 +274,19 @@ public class r0 implements w0 {
         boolean isCacheEnabled = producerContext.I().isCacheEnabled(16);
         boolean isCacheEnabled2 = producerContext.I().isCacheEnabled(32);
         if (!isCacheEnabled && !isCacheEnabled2) {
-            this.f10946e.b(consumer, producerContext);
+            this.f11523e.b(consumer, producerContext);
             return;
         }
         y0 y10 = producerContext.y();
         y10.d(producerContext, "PartialDiskCacheProducer");
-        CacheKey encodedCacheKey = this.f10943b.getEncodedCacheKey(I, e(I), producerContext.a());
+        CacheKey encodedCacheKey = this.f11520b.getEncodedCacheKey(I, e(I), producerContext.a());
         if (!isCacheEnabled) {
             y10.j(producerContext, "PartialDiskCacheProducer", f(y10, producerContext, false, 0));
             i(consumer, producerContext, encodedCacheKey, null);
             return;
         }
         AtomicBoolean atomicBoolean = new AtomicBoolean(false);
-        ((oa.b) this.f10942a.get()).b().m(encodedCacheKey, atomicBoolean).e(h(consumer, producerContext, encodedCacheKey));
+        ((oa.b) this.f11519a.get()).b().m(encodedCacheKey, atomicBoolean).e(h(consumer, producerContext, encodedCacheKey));
         j(atomicBoolean, producerContext);
     }
 }

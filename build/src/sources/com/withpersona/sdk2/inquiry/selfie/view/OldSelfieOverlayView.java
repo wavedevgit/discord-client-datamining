@@ -12,6 +12,10 @@ import android.view.View;
 import android.view.ViewPropertyAnimator;
 import android.widget.ImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import as.l;
+import as.p;
+import bq.h;
+import bq.s;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.RemoteImage;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyles;
 import com.withpersona.sdk2.inquiry.selfie.view.OldSelfieOverlayView;
@@ -29,53 +33,49 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import l5.a0;
 import l5.i;
-import np.v0;
-import np.y0;
 import org.jetbrains.annotations.NotNull;
-import rr.l;
-import rr.p;
-import sp.h;
-import sp.s;
-@Metadata(d1 = {"\u0000\u0080\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0014\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010!\n\u0002\b\u000b\u0018\u00002\u00020\u0001:\u0001^B'\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\b\u0010\tJ\u0015\u0010\r\u001a\u00020\f2\u0006\u0010\u000b\u001a\u00020\n¢\u0006\u0004\b\r\u0010\u000eJ\u0015\u0010\u0011\u001a\u00020\f2\u0006\u0010\u0010\u001a\u00020\u000f¢\u0006\u0004\b\u0011\u0010\u0012J1\u0010\u0019\u001a\u00020\f2\u0006\u0010\u0014\u001a\u00020\u00132\b\b\u0002\u0010\u0016\u001a\u00020\u00152\u0010\b\u0002\u0010\u0018\u001a\n\u0012\u0004\u0012\u00020\f\u0018\u00010\u0017¢\u0006\u0004\b\u0019\u0010\u001aJ\u0019\u0010\u001d\u001a\u00020\u00152\b\u0010\u001c\u001a\u0004\u0018\u00010\u001bH\u0016¢\u0006\u0004\b\u001d\u0010\u001eJ\r\u0010\u001f\u001a\u00020\u0015¢\u0006\u0004\b\u001f\u0010 J\u001b\u0010\"\u001a\u00020\f2\f\u0010!\u001a\b\u0012\u0004\u0012\u00020\f0\u0017¢\u0006\u0004\b\"\u0010#J-\u0010&\u001a\u00020\f*\u00020$2\b\b\u0001\u0010%\u001a\u00020\u00062\u000e\u0010\u0018\u001a\n\u0012\u0004\u0012\u00020\f\u0018\u00010\u0017H\u0002¢\u0006\u0004\b&\u0010'J#\u0010(\u001a\u00020\f*\u00020$2\u000e\u0010\u0018\u001a\n\u0012\u0004\u0012\u00020\f\u0018\u00010\u0017H\u0002¢\u0006\u0004\b(\u0010)J\u001d\u0010-\u001a\u00020,*\u00020\n2\b\b\u0002\u0010+\u001a\u00020*H\u0002¢\u0006\u0004\b-\u0010.J\u001d\u0010/\u001a\u00020,*\u00020\n2\b\b\u0002\u0010+\u001a\u00020*H\u0002¢\u0006\u0004\b/\u0010.J\u001d\u00103\u001a\u00020\f*\u0002002\b\u00102\u001a\u0004\u0018\u000101H\u0002¢\u0006\u0004\b3\u00104J\u0017\u00105\u001a\u00020\u00152\u0006\u0010\u0003\u001a\u00020\u0002H\u0002¢\u0006\u0004\b5\u00106R\u0014\u00109\u001a\u00020$8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b7\u00108R\u001d\u0010>\u001a\u0004\u0018\u0001018BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b:\u0010;\u001a\u0004\b<\u0010=R\u001d\u0010A\u001a\u0004\u0018\u0001018BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b?\u0010;\u001a\u0004\b@\u0010=R\u0014\u0010C\u001a\u00020\u00068\u0002X\u0083\u0004¢\u0006\u0006\n\u0004\bB\u0010\u0019R\u0014\u0010E\u001a\u00020\u00068\u0002X\u0083\u0004¢\u0006\u0006\n\u0004\bD\u0010\u0019R$\u0010M\u001a\u0004\u0018\u00010F8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\bG\u0010H\u001a\u0004\bI\u0010J\"\u0004\bK\u0010LR$\u0010Q\u001a\u0004\u0018\u00010F8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\bN\u0010H\u001a\u0004\bO\u0010J\"\u0004\bP\u0010LR\u0016\u0010\u000b\u001a\u00020\n8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\bR\u0010SR \u0010W\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u00170T8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bU\u0010VR \u0010Y\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u00170T8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bX\u0010VR\u0018\u0010Z\u001a\u0004\u0018\u00010\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b-\u0010SR\u0018\u0010]\u001a\u0004\u0018\u00010\u00138\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b[\u0010\\¨\u0006_"}, d2 = {"Lcom/withpersona/sdk2/inquiry/selfie/view/OldSelfieOverlayView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "", "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "Landroid/view/View;", "previewView", "", "setPreviewView", "(Landroid/view/View;)V", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StepStyles$SelfieStepStyle;", "styles", "A", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StepStyles$SelfieStepStyle;)V", "Lcom/withpersona/sdk2/inquiry/selfie/view/OldSelfieOverlayView$b;", "viewState", "", "showProgress", "Lkotlin/Function0;", "onAnimationEnd", "I", "(Lcom/withpersona/sdk2/inquiry/selfie/view/OldSelfieOverlayView$b;ZLkotlin/jvm/functions/Function0;)V", "Landroid/view/MotionEvent;", "event", "onTouchEvent", "(Landroid/view/MotionEvent;)Z", "E", "()Z", "onComplete", "B", "(Lkotlin/jvm/functions/Function0;)V", "Lop/b;", "rawRes", "M", "(Lop/b;ILkotlin/jvm/functions/Function0;)V", "F", "(Lop/b;Lkotlin/jvm/functions/Function0;)V", "", "duration", "Landroid/view/ViewPropertyAnimator;", "v", "(Landroid/view/View;J)Landroid/view/ViewPropertyAnimator;", "y", "Landroid/widget/ImageView;", "Landroid/graphics/drawable/Drawable;", "drawable", "R", "(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;)V", "T", "(Landroid/content/Context;)Z", "d", "Lop/b;", "binding", "e", "Lkotlin/Lazy;", "getDrawableLeft", "()Landroid/graphics/drawable/Drawable;", "drawableLeft", "i", "getDrawableRight", "drawableRight", "o", "leftPoseAnimation", "p", "rightPoseAnimation", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/RemoteImage;", "q", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/RemoteImage;", "getLeftPoseImage", "()Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/RemoteImage;", "setLeftPoseImage", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/RemoteImage;)V", "leftPoseImage", "r", "getRightPoseImage", "setRightPoseImage", "rightPoseImage", "s", "Landroid/view/View;", "", "t", "Ljava/util/List;", "oneShotOnCompositionLoadedListeners", "u", "oneShotOnAnimationCompleteListeners", "remoteImageView", "w", "Lcom/withpersona/sdk2/inquiry/selfie/view/OldSelfieOverlayView$b;", "currentViewState", "b", "selfie_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import wp.v0;
+import wp.y0;
+@Metadata(d1 = {"\u0000\u0080\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0014\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010!\n\u0002\b\u000b\u0018\u00002\u00020\u0001:\u0001^B'\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\b\u0010\tJ\u0015\u0010\r\u001a\u00020\f2\u0006\u0010\u000b\u001a\u00020\n¢\u0006\u0004\b\r\u0010\u000eJ\u0015\u0010\u0011\u001a\u00020\f2\u0006\u0010\u0010\u001a\u00020\u000f¢\u0006\u0004\b\u0011\u0010\u0012J1\u0010\u0019\u001a\u00020\f2\u0006\u0010\u0014\u001a\u00020\u00132\b\b\u0002\u0010\u0016\u001a\u00020\u00152\u0010\b\u0002\u0010\u0018\u001a\n\u0012\u0004\u0012\u00020\f\u0018\u00010\u0017¢\u0006\u0004\b\u0019\u0010\u001aJ\u0019\u0010\u001d\u001a\u00020\u00152\b\u0010\u001c\u001a\u0004\u0018\u00010\u001bH\u0016¢\u0006\u0004\b\u001d\u0010\u001eJ\r\u0010\u001f\u001a\u00020\u0015¢\u0006\u0004\b\u001f\u0010 J\u001b\u0010\"\u001a\u00020\f2\f\u0010!\u001a\b\u0012\u0004\u0012\u00020\f0\u0017¢\u0006\u0004\b\"\u0010#J-\u0010&\u001a\u00020\f*\u00020$2\b\b\u0001\u0010%\u001a\u00020\u00062\u000e\u0010\u0018\u001a\n\u0012\u0004\u0012\u00020\f\u0018\u00010\u0017H\u0002¢\u0006\u0004\b&\u0010'J#\u0010(\u001a\u00020\f*\u00020$2\u000e\u0010\u0018\u001a\n\u0012\u0004\u0012\u00020\f\u0018\u00010\u0017H\u0002¢\u0006\u0004\b(\u0010)J\u001d\u0010-\u001a\u00020,*\u00020\n2\b\b\u0002\u0010+\u001a\u00020*H\u0002¢\u0006\u0004\b-\u0010.J\u001d\u0010/\u001a\u00020,*\u00020\n2\b\b\u0002\u0010+\u001a\u00020*H\u0002¢\u0006\u0004\b/\u0010.J\u001d\u00103\u001a\u00020\f*\u0002002\b\u00102\u001a\u0004\u0018\u000101H\u0002¢\u0006\u0004\b3\u00104J\u0017\u00105\u001a\u00020\u00152\u0006\u0010\u0003\u001a\u00020\u0002H\u0002¢\u0006\u0004\b5\u00106R\u0014\u00109\u001a\u00020$8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b7\u00108R\u001d\u0010>\u001a\u0004\u0018\u0001018BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b:\u0010;\u001a\u0004\b<\u0010=R\u001d\u0010A\u001a\u0004\u0018\u0001018BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b?\u0010;\u001a\u0004\b@\u0010=R\u0014\u0010C\u001a\u00020\u00068\u0002X\u0083\u0004¢\u0006\u0006\n\u0004\bB\u0010\u0019R\u0014\u0010E\u001a\u00020\u00068\u0002X\u0083\u0004¢\u0006\u0006\n\u0004\bD\u0010\u0019R$\u0010M\u001a\u0004\u0018\u00010F8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\bG\u0010H\u001a\u0004\bI\u0010J\"\u0004\bK\u0010LR$\u0010Q\u001a\u0004\u0018\u00010F8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\bN\u0010H\u001a\u0004\bO\u0010J\"\u0004\bP\u0010LR\u0016\u0010\u000b\u001a\u00020\n8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\bR\u0010SR \u0010W\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u00170T8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bU\u0010VR \u0010Y\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u00170T8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bX\u0010VR\u0018\u0010Z\u001a\u0004\u0018\u00010\n8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b-\u0010SR\u0018\u0010]\u001a\u0004\u0018\u00010\u00138\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b[\u0010\\¨\u0006_"}, d2 = {"Lcom/withpersona/sdk2/inquiry/selfie/view/OldSelfieOverlayView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "", "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "Landroid/view/View;", "previewView", "", "setPreviewView", "(Landroid/view/View;)V", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StepStyles$SelfieStepStyle;", "styles", "A", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StepStyles$SelfieStepStyle;)V", "Lcom/withpersona/sdk2/inquiry/selfie/view/OldSelfieOverlayView$b;", "viewState", "", "showProgress", "Lkotlin/Function0;", "onAnimationEnd", "I", "(Lcom/withpersona/sdk2/inquiry/selfie/view/OldSelfieOverlayView$b;ZLkotlin/jvm/functions/Function0;)V", "Landroid/view/MotionEvent;", "event", "onTouchEvent", "(Landroid/view/MotionEvent;)Z", "E", "()Z", "onComplete", "B", "(Lkotlin/jvm/functions/Function0;)V", "Lxp/b;", "rawRes", "M", "(Lxp/b;ILkotlin/jvm/functions/Function0;)V", "F", "(Lxp/b;Lkotlin/jvm/functions/Function0;)V", "", "duration", "Landroid/view/ViewPropertyAnimator;", "v", "(Landroid/view/View;J)Landroid/view/ViewPropertyAnimator;", "y", "Landroid/widget/ImageView;", "Landroid/graphics/drawable/Drawable;", "drawable", "R", "(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;)V", "T", "(Landroid/content/Context;)Z", "d", "Lxp/b;", "binding", "e", "Lkotlin/Lazy;", "getDrawableLeft", "()Landroid/graphics/drawable/Drawable;", "drawableLeft", "i", "getDrawableRight", "drawableRight", "o", "leftPoseAnimation", "p", "rightPoseAnimation", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/RemoteImage;", "q", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/RemoteImage;", "getLeftPoseImage", "()Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/RemoteImage;", "setLeftPoseImage", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/RemoteImage;)V", "leftPoseImage", "r", "getRightPoseImage", "setRightPoseImage", "rightPoseImage", "s", "Landroid/view/View;", "", "t", "Ljava/util/List;", "oneShotOnCompositionLoadedListeners", "u", "oneShotOnAnimationCompleteListeners", "remoteImageView", "w", "Lcom/withpersona/sdk2/inquiry/selfie/view/OldSelfieOverlayView$b;", "currentViewState", "b", "selfie_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nOldSelfieOverlayView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 OldSelfieOverlayView.kt\ncom/withpersona/sdk2/inquiry/selfie/view/OldSelfieOverlayView\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,423:1\n1863#2,2:424\n*S KotlinDebug\n*F\n+ 1 OldSelfieOverlayView.kt\ncom/withpersona/sdk2/inquiry/selfie/view/OldSelfieOverlayView\n*L\n96#1:424,2\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class OldSelfieOverlayView extends ConstraintLayout {
 
     /* renamed from: d */
-    private final op.b f19557d;
+    private final xp.b f20437d;
 
     /* renamed from: e */
-    private final Lazy f19558e;
+    private final Lazy f20438e;
 
     /* renamed from: i */
-    private final Lazy f19559i;
+    private final Lazy f20439i;
 
     /* renamed from: o */
-    private final int f19560o;
+    private final int f20440o;
 
     /* renamed from: p */
-    private final int f19561p;
+    private final int f20441p;
 
     /* renamed from: q */
-    private RemoteImage f19562q;
+    private RemoteImage f20442q;
 
     /* renamed from: r */
-    private RemoteImage f19563r;
+    private RemoteImage f20443r;
 
     /* renamed from: s */
-    private View f19564s;
+    private View f20444s;
 
     /* renamed from: t */
-    private final List f19565t;
+    private final List f20445t;
 
     /* renamed from: u */
-    private final List f19566u;
+    private final List f20446u;
 
     /* renamed from: v */
-    private View f19567v;
+    private View f20447v;
 
     /* renamed from: w */
-    private b f19568w;
+    private b f20448w;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends AnimatorListenerAdapter {
@@ -86,8 +86,8 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animation) {
             Intrinsics.checkNotNullParameter(animation, "animation");
-            List<Function0> h12 = CollectionsKt.h1(OldSelfieOverlayView.this.f19566u);
-            OldSelfieOverlayView.this.f19566u.clear();
+            List<Function0> h12 = CollectionsKt.h1(OldSelfieOverlayView.this.f20446u);
+            OldSelfieOverlayView.this.f20446u.clear();
             for (Function0 function0 : h12) {
                 function0.invoke();
             }
@@ -98,51 +98,51 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     public static final class b {
 
         /* renamed from: d */
-        public static final b f19570d = new b("CLEAR", 0);
+        public static final b f20450d = new b("CLEAR", 0);
 
         /* renamed from: e */
-        public static final b f19571e = new b("CENTER", 1);
+        public static final b f20451e = new b("CENTER", 1);
 
         /* renamed from: i */
-        public static final b f19572i = new b("CENTER_COMPLETE", 2);
+        public static final b f20452i = new b("CENTER_COMPLETE", 2);
 
         /* renamed from: o */
-        public static final b f19573o = new b("LOOK_LEFT_HINT", 3);
+        public static final b f20453o = new b("LOOK_LEFT_HINT", 3);
 
         /* renamed from: p */
-        public static final b f19574p = new b("LOOK_LEFT", 4);
+        public static final b f20454p = new b("LOOK_LEFT", 4);
 
         /* renamed from: q */
-        public static final b f19575q = new b("LOOK_LEFT_COMPLETE", 5);
+        public static final b f20455q = new b("LOOK_LEFT_COMPLETE", 5);
 
         /* renamed from: r */
-        public static final b f19576r = new b("LOOK_RIGHT_HINT", 6);
+        public static final b f20456r = new b("LOOK_RIGHT_HINT", 6);
 
         /* renamed from: s */
-        public static final b f19577s = new b("LOOK_RIGHT", 7);
+        public static final b f20457s = new b("LOOK_RIGHT", 7);
 
         /* renamed from: t */
-        public static final b f19578t = new b("LOOK_RIGHT_COMPLETE", 8);
+        public static final b f20458t = new b("LOOK_RIGHT_COMPLETE", 8);
 
         /* renamed from: u */
-        public static final b f19579u = new b("FINALIZING", 9);
+        public static final b f20459u = new b("FINALIZING", 9);
 
         /* renamed from: v */
-        public static final b f19580v = new b("COMPLETE_WITH_CAPTURE", 10);
+        public static final b f20460v = new b("COMPLETE_WITH_CAPTURE", 10);
 
         /* renamed from: w */
-        public static final b f19581w = new b("COMPLETE", 11);
+        public static final b f20461w = new b("COMPLETE", 11);
 
         /* renamed from: x */
-        private static final /* synthetic */ b[] f19582x;
+        private static final /* synthetic */ b[] f20462x;
 
         /* renamed from: y */
-        private static final /* synthetic */ EnumEntries f19583y;
+        private static final /* synthetic */ EnumEntries f20463y;
 
         static {
             b[] a10 = a();
-            f19582x = a10;
-            f19583y = yr.a.a(a10);
+            f20462x = a10;
+            f20463y = hs.a.a(a10);
         }
 
         private b(String str, int i10) {
@@ -150,7 +150,7 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         }
 
         private static final /* synthetic */ b[] a() {
-            return new b[]{f19570d, f19571e, f19572i, f19573o, f19574p, f19575q, f19576r, f19577s, f19578t, f19579u, f19580v, f19581w};
+            return new b[]{f20450d, f20451e, f20452i, f20453o, f20454p, f20455q, f20456r, f20457s, f20458t, f20459u, f20460v, f20461w};
         }
 
         public static b valueOf(String str) {
@@ -158,7 +158,7 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         }
 
         public static b[] values() {
-            return (b[]) f19582x.clone();
+            return (b[]) f20462x.clone();
         }
     }
 
@@ -166,59 +166,59 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     public /* synthetic */ class c {
 
         /* renamed from: a */
-        public static final /* synthetic */ int[] f19584a;
+        public static final /* synthetic */ int[] f20464a;
 
         static {
             int[] iArr = new int[b.values().length];
             try {
-                iArr[b.f19570d.ordinal()] = 1;
+                iArr[b.f20450d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[b.f19571e.ordinal()] = 2;
+                iArr[b.f20451e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[b.f19572i.ordinal()] = 3;
+                iArr[b.f20452i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[b.f19573o.ordinal()] = 4;
+                iArr[b.f20453o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[b.f19574p.ordinal()] = 5;
+                iArr[b.f20454p.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr[b.f19575q.ordinal()] = 6;
+                iArr[b.f20455q.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                iArr[b.f19576r.ordinal()] = 7;
+                iArr[b.f20456r.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr[b.f19577s.ordinal()] = 8;
+                iArr[b.f20457s.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                iArr[b.f19578t.ordinal()] = 9;
+                iArr[b.f20458t.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                iArr[b.f19579u.ordinal()] = 10;
+                iArr[b.f20459u.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                iArr[b.f19580v.ordinal()] = 11;
+                iArr[b.f20460v.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                iArr[b.f19581w.ordinal()] = 12;
+                iArr[b.f20461w.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
-            f19584a = iArr;
+            f20464a = iArr;
         }
     }
 
@@ -229,25 +229,25 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     }
 
     public static final Drawable C(Context context) {
-        Integer f10 = s.f(context, kp.a.f34917q, null, false, 6, null);
+        Integer f10 = s.f(context, tp.a.f49768q, null, false, 6, null);
         if (f10 != null) {
             return androidx.core.content.a.e(context, f10.intValue());
         }
-        return androidx.core.content.a.e(context, v0.f39440a);
+        return androidx.core.content.a.e(context, v0.f53390a);
     }
 
     public static final Drawable D(Context context) {
-        Integer f10 = s.f(context, kp.a.f34919s, null, false, 6, null);
+        Integer f10 = s.f(context, tp.a.f49770s, null, false, 6, null);
         if (f10 != null) {
             return androidx.core.content.a.e(context, f10.intValue());
         }
-        return androidx.core.content.a.e(context, v0.f39441b);
+        return androidx.core.content.a.e(context, v0.f53391b);
     }
 
-    private final void F(final op.b bVar, final Function0 function0) {
-        View blindsView = bVar.f42558b;
+    private final void F(final xp.b bVar, final Function0 function0) {
+        View blindsView = bVar.f55081b;
         Intrinsics.checkNotNullExpressionValue(blindsView, "blindsView");
-        y(blindsView, 80L).withEndAction(new Runnable() { // from class: rp.k
+        y(blindsView, 80L).withEndAction(new Runnable() { // from class: aq.k
             @Override // java.lang.Runnable
             public final void run() {
                 OldSelfieOverlayView.G(OldSelfieOverlayView.this, bVar, function0);
@@ -255,10 +255,10 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         });
     }
 
-    public static final void G(OldSelfieOverlayView oldSelfieOverlayView, op.b bVar, final Function0 function0) {
-        View blindsView = bVar.f42558b;
+    public static final void G(OldSelfieOverlayView oldSelfieOverlayView, xp.b bVar, final Function0 function0) {
+        View blindsView = bVar.f55081b;
         Intrinsics.checkNotNullExpressionValue(blindsView, "blindsView");
-        oldSelfieOverlayView.v(blindsView, 80L).withEndAction(new Runnable() { // from class: rp.b
+        oldSelfieOverlayView.v(blindsView, 80L).withEndAction(new Runnable() { // from class: aq.b
             @Override // java.lang.Runnable
             public final void run() {
                 OldSelfieOverlayView.H(Function0.this);
@@ -283,45 +283,45 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     }
 
     public static final Unit K(OldSelfieOverlayView oldSelfieOverlayView, Function0 function0) {
-        oldSelfieOverlayView.M(oldSelfieOverlayView.f19557d, y0.f39975a, function0);
-        return Unit.f31765a;
+        oldSelfieOverlayView.M(oldSelfieOverlayView.f20437d, y0.f53925a, function0);
+        return Unit.f31987a;
     }
 
     public static final Unit L(OldSelfieOverlayView oldSelfieOverlayView, Function0 function0) {
-        oldSelfieOverlayView.M(oldSelfieOverlayView.f19557d, y0.f39975a, function0);
-        return Unit.f31765a;
+        oldSelfieOverlayView.M(oldSelfieOverlayView.f20437d, y0.f53925a, function0);
+        return Unit.f31987a;
     }
 
-    private final void M(final op.b bVar, int i10, final Function0 function0) {
-        this.f19565t.add(new Function0() { // from class: rp.i
+    private final void M(final xp.b bVar, int i10, final Function0 function0) {
+        this.f20445t.add(new Function0() { // from class: aq.i
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit N;
-                N = OldSelfieOverlayView.N(op.b.this, this, function0);
+                N = OldSelfieOverlayView.N(xp.b.this, this, function0);
                 return N;
             }
         });
-        bVar.f42560d.setAnimation(i10);
+        bVar.f55083d.setAnimation(i10);
     }
 
-    public static final Unit N(final op.b bVar, OldSelfieOverlayView oldSelfieOverlayView, final Function0 function0) {
-        bVar.f42560d.setFrame(0);
-        ThemeableLottieAnimationView hintAnimation = bVar.f42560d;
+    public static final Unit N(final xp.b bVar, OldSelfieOverlayView oldSelfieOverlayView, final Function0 function0) {
+        bVar.f55083d.setFrame(0);
+        ThemeableLottieAnimationView hintAnimation = bVar.f55083d;
         Intrinsics.checkNotNullExpressionValue(hintAnimation, "hintAnimation");
-        z(oldSelfieOverlayView, hintAnimation, 0L, 1, null).withEndAction(new Runnable() { // from class: rp.l
+        z(oldSelfieOverlayView, hintAnimation, 0L, 1, null).withEndAction(new Runnable() { // from class: aq.l
             @Override // java.lang.Runnable
             public final void run() {
                 OldSelfieOverlayView.O(OldSelfieOverlayView.this, bVar, function0);
             }
         });
-        View hintOverlayView = bVar.f42562f;
+        View hintOverlayView = bVar.f55085f;
         Intrinsics.checkNotNullExpressionValue(hintOverlayView, "hintOverlayView");
         z(oldSelfieOverlayView, hintOverlayView, 0L, 1, null);
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
-    public static final void O(OldSelfieOverlayView oldSelfieOverlayView, final op.b bVar, final Function0 function0) {
-        oldSelfieOverlayView.f19566u.add(new Function0() { // from class: rp.c
+    public static final void O(OldSelfieOverlayView oldSelfieOverlayView, final xp.b bVar, final Function0 function0) {
+        oldSelfieOverlayView.f20446u.add(new Function0() { // from class: aq.c
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit P;
@@ -329,22 +329,22 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                 return P;
             }
         });
-        bVar.f42560d.playAnimation();
+        bVar.f55083d.playAnimation();
     }
 
-    public static final Unit P(OldSelfieOverlayView oldSelfieOverlayView, op.b bVar, final Function0 function0) {
-        ThemeableLottieAnimationView hintAnimation = bVar.f42560d;
+    public static final Unit P(OldSelfieOverlayView oldSelfieOverlayView, xp.b bVar, final Function0 function0) {
+        ThemeableLottieAnimationView hintAnimation = bVar.f55083d;
         Intrinsics.checkNotNullExpressionValue(hintAnimation, "hintAnimation");
-        w(oldSelfieOverlayView, hintAnimation, 0L, 1, null).withEndAction(new Runnable() { // from class: rp.d
+        w(oldSelfieOverlayView, hintAnimation, 0L, 1, null).withEndAction(new Runnable() { // from class: aq.d
             @Override // java.lang.Runnable
             public final void run() {
                 OldSelfieOverlayView.Q(Function0.this);
             }
         });
-        View hintOverlayView = bVar.f42562f;
+        View hintOverlayView = bVar.f55085f;
         Intrinsics.checkNotNullExpressionValue(hintOverlayView, "hintOverlayView");
         w(oldSelfieOverlayView, hintOverlayView, 0L, 1, null);
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     public static final void Q(Function0 function0) {
@@ -358,7 +358,7 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
             return;
         }
         if (drawable == null) {
-            w(this, imageView, 0L, 1, null).withEndAction(new Runnable() { // from class: rp.j
+            w(this, imageView, 0L, 1, null).withEndAction(new Runnable() { // from class: aq.j
                 @Override // java.lang.Runnable
                 public final void run() {
                     OldSelfieOverlayView.S(imageView);
@@ -376,32 +376,32 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     }
 
     private final boolean T(Context context) {
-        Integer f10 = s.f(context, kp.a.f34917q, null, false, 6, null);
-        Integer f11 = s.f(context, kp.a.f34919s, null, false, 6, null);
-        if ((f10 == null || f11 == null) && this.f19562q == null && this.f19563r == null) {
+        Integer f10 = s.f(context, tp.a.f49768q, null, false, 6, null);
+        Integer f11 = s.f(context, tp.a.f49770s, null, false, 6, null);
+        if ((f10 == null || f11 == null) && this.f20442q == null && this.f20443r == null) {
             return true;
         }
         return false;
     }
 
     private final Drawable getDrawableLeft() {
-        return (Drawable) this.f19558e.getValue();
+        return (Drawable) this.f20438e.getValue();
     }
 
     private final Drawable getDrawableRight() {
-        return (Drawable) this.f19559i.getValue();
+        return (Drawable) this.f20439i.getValue();
     }
 
     public static void k(OldSelfieOverlayView oldSelfieOverlayView, i iVar) {
-        List<Function0> h12 = CollectionsKt.h1(oldSelfieOverlayView.f19565t);
-        oldSelfieOverlayView.f19565t.clear();
+        List<Function0> h12 = CollectionsKt.h1(oldSelfieOverlayView.f20445t);
+        oldSelfieOverlayView.f20445t.clear();
         for (Function0 function0 : h12) {
             function0.invoke();
         }
     }
 
     private final ViewPropertyAnimator v(final View view, long j10) {
-        ViewPropertyAnimator withEndAction = view.animate().alpha(0.0f).setDuration(j10).withEndAction(new Runnable() { // from class: rp.m
+        ViewPropertyAnimator withEndAction = view.animate().alpha(0.0f).setDuration(j10).withEndAction(new Runnable() { // from class: aq.m
             @Override // java.lang.Runnable
             public final void run() {
                 OldSelfieOverlayView.x(view);
@@ -443,72 +443,72 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         Intrinsics.checkNotNullParameter(styles, "styles");
         Integer selfieCaptureFeedBoxBorderColorValue = styles.getSelfieCaptureFeedBoxBorderColorValue();
         if (selfieCaptureFeedBoxBorderColorValue != null) {
-            this.f19557d.f42564h.setStrokeColor(selfieCaptureFeedBoxBorderColorValue.intValue());
+            this.f20437d.f55087h.setStrokeColor(selfieCaptureFeedBoxBorderColorValue.intValue());
         }
         Double selfieCaptureFeedBoxBorderWidthValue = styles.getSelfieCaptureFeedBoxBorderWidthValue();
         if (selfieCaptureFeedBoxBorderWidthValue != null) {
-            this.f19557d.f42564h.setStrokeWidth((float) h.a(selfieCaptureFeedBoxBorderWidthValue.doubleValue()));
+            this.f20437d.f55087h.setStrokeWidth((float) h.a(selfieCaptureFeedBoxBorderWidthValue.doubleValue()));
         }
         Integer selfieCaptureIconStrokeColor = styles.getSelfieCaptureIconStrokeColor();
         if (selfieCaptureIconStrokeColor != null) {
             int intValue = selfieCaptureIconStrokeColor.intValue();
-            this.f19557d.f42560d.I(Color.parseColor("#022050"), intValue);
-            this.f19557d.f42560d.I(Color.parseColor("#280087"), intValue);
+            this.f20437d.f55083d.I(Color.parseColor("#022050"), intValue);
+            this.f20437d.f55083d.I(Color.parseColor("#280087"), intValue);
         }
         Integer selfieCaptureIconFillColor = styles.getSelfieCaptureIconFillColor();
         if (selfieCaptureIconFillColor != null) {
             int intValue2 = selfieCaptureIconFillColor.intValue();
-            this.f19557d.f42560d.I(Color.parseColor("#AA85FF"), intValue2);
-            this.f19557d.f42560d.I(Color.parseColor("#8552FF"), intValue2);
+            this.f20437d.f55083d.I(Color.parseColor("#AA85FF"), intValue2);
+            this.f20437d.f55083d.I(Color.parseColor("#8552FF"), intValue2);
         }
         Integer selfieCaptureIconBackgroundFillColor = styles.getSelfieCaptureIconBackgroundFillColor();
         if (selfieCaptureIconBackgroundFillColor != null) {
-            this.f19557d.f42560d.I(Color.parseColor("#DBCCFF"), selfieCaptureIconBackgroundFillColor.intValue());
+            this.f20437d.f55083d.I(Color.parseColor("#DBCCFF"), selfieCaptureIconBackgroundFillColor.intValue());
         }
     }
 
     public final void B(Function0 onComplete) {
         Intrinsics.checkNotNullParameter(onComplete, "onComplete");
-        Pi2CircleMaskView.e(this.f19557d.f42559c, false, onComplete, 1, null);
+        Pi2CircleMaskView.e(this.f20437d.f55082c, false, onComplete, 1, null);
     }
 
     public final boolean E() {
-        return this.f19557d.f42559c.g();
+        return this.f20437d.f55082c.g();
     }
 
     public final void I(b viewState, boolean z10, final Function0 function0) {
         Intrinsics.checkNotNullParameter(viewState, "viewState");
-        if (this.f19568w != viewState) {
-            this.f19568w = viewState;
-            removeView(this.f19567v);
+        if (this.f20448w != viewState) {
+            this.f20448w = viewState;
+            removeView(this.f20447v);
             Context context = getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
             boolean T = T(context);
-            op.b bVar = this.f19557d;
+            xp.b bVar = this.f20437d;
             if (z10) {
-                bVar.f42564h.setVisibility(0);
+                bVar.f55087h.setVisibility(0);
             } else {
-                bVar.f42564h.setVisibility(8);
+                bVar.f55087h.setVisibility(8);
             }
-            switch (c.f19584a[viewState.ordinal()]) {
+            switch (c.f20464a[viewState.ordinal()]) {
                 case 1:
-                    bVar.f42559c.h();
-                    bVar.f42564h.f(0.0f, function0);
+                    bVar.f55082c.h();
+                    bVar.f55087h.f(0.0f, function0);
                     return;
                 case 2:
-                    Pi2CircleMaskView.e(bVar.f42559c, false, null, 3, null);
-                    bVar.f42564h.f(0.0f, function0);
+                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
+                    bVar.f55087h.f(0.0f, function0);
                     return;
                 case 3:
-                    Pi2CircleMaskView.e(bVar.f42559c, false, null, 3, null);
-                    Pi2ProgressArcView.g(bVar.f42564h, 0.0f, null, 2, null);
-                    F(this.f19557d, function0);
+                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
+                    Pi2ProgressArcView.g(bVar.f55087h, 0.0f, null, 2, null);
+                    F(this.f20437d, function0);
                     return;
                 case 4:
-                    Pi2CircleMaskView.e(bVar.f42559c, false, null, 3, null);
-                    Pi2ProgressArcView.g(bVar.f42564h, 0.0f, null, 2, null);
+                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
+                    Pi2ProgressArcView.g(bVar.f55087h, 0.0f, null, 2, null);
                     if (T) {
-                        M(this.f19557d, this.f19560o, function0);
+                        M(this.f20437d, this.f20440o, function0);
                         return;
                     } else if (function0 != null) {
                         function0.invoke();
@@ -517,31 +517,31 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                         return;
                     }
                 case 5:
-                    Pi2CircleMaskView.e(bVar.f42559c, false, null, 3, null);
-                    bVar.f42564h.f(0.0f, function0);
+                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
+                    bVar.f55087h.f(0.0f, function0);
                     if (!T) {
-                        RemoteImage remoteImage = this.f19562q;
+                        RemoteImage remoteImage = this.f20442q;
                         if (remoteImage != null) {
-                            this.f19567v = nq.b.b(remoteImage, this, true);
+                            this.f20447v = wq.b.b(remoteImage, this, true);
                             return;
                         }
-                        bVar.f42563g.setVisibility(0);
-                        ImageView hintImage = bVar.f42561e;
+                        bVar.f55086g.setVisibility(0);
+                        ImageView hintImage = bVar.f55084e;
                         Intrinsics.checkNotNullExpressionValue(hintImage, "hintImage");
                         R(hintImage, getDrawableLeft());
                         return;
                     }
                     return;
                 case 6:
-                    Pi2CircleMaskView.e(bVar.f42559c, false, null, 3, null);
-                    Pi2ProgressArcView.g(bVar.f42564h, 50.0f, null, 2, null);
-                    F(this.f19557d, function0);
+                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
+                    Pi2ProgressArcView.g(bVar.f55087h, 50.0f, null, 2, null);
+                    F(this.f20437d, function0);
                     return;
                 case 7:
-                    Pi2CircleMaskView.e(bVar.f42559c, false, null, 3, null);
-                    Pi2ProgressArcView.g(bVar.f42564h, 50.0f, null, 2, null);
+                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
+                    Pi2ProgressArcView.g(bVar.f55087h, 50.0f, null, 2, null);
                     if (T) {
-                        M(this.f19557d, this.f19561p, function0);
+                        M(this.f20437d, this.f20441p, function0);
                         return;
                     } else if (function0 != null) {
                         function0.invoke();
@@ -550,34 +550,34 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                         return;
                     }
                 case 8:
-                    Pi2CircleMaskView.e(bVar.f42559c, false, null, 3, null);
-                    bVar.f42564h.f(50.0f, function0);
+                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
+                    bVar.f55087h.f(50.0f, function0);
                     if (!T) {
-                        RemoteImage remoteImage2 = this.f19563r;
+                        RemoteImage remoteImage2 = this.f20443r;
                         if (remoteImage2 != null) {
-                            this.f19567v = nq.b.b(remoteImage2, this, true);
+                            this.f20447v = wq.b.b(remoteImage2, this, true);
                             return;
                         }
-                        bVar.f42563g.setVisibility(0);
-                        ImageView hintImage2 = bVar.f42561e;
+                        bVar.f55086g.setVisibility(0);
+                        ImageView hintImage2 = bVar.f55084e;
                         Intrinsics.checkNotNullExpressionValue(hintImage2, "hintImage");
                         R(hintImage2, getDrawableRight());
                         return;
                     }
                     return;
                 case 9:
-                    Pi2CircleMaskView.e(bVar.f42559c, false, null, 3, null);
-                    Pi2ProgressArcView.g(bVar.f42564h, 100.0f, null, 2, null);
-                    F(this.f19557d, function0);
+                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
+                    Pi2ProgressArcView.g(bVar.f55087h, 100.0f, null, 2, null);
+                    F(this.f20437d, function0);
                     return;
                 case 10:
-                    Pi2CircleMaskView.e(bVar.f42559c, false, null, 3, null);
-                    bVar.f42564h.e();
+                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
+                    bVar.f55087h.e();
                     return;
                 case 11:
-                    Pi2CircleMaskView.e(bVar.f42559c, false, null, 3, null);
-                    Pi2ProgressArcView.g(bVar.f42564h, 100.0f, null, 2, null);
-                    F(this.f19557d, new Function0() { // from class: rp.g
+                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
+                    Pi2ProgressArcView.g(bVar.f55087h, 100.0f, null, 2, null);
+                    F(this.f20437d, new Function0() { // from class: aq.g
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
                             Unit K;
@@ -587,8 +587,8 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                     });
                     return;
                 case 12:
-                    Pi2CircleMaskView.e(bVar.f42559c, false, null, 3, null);
-                    bVar.f42564h.f(100.0f, new Function0() { // from class: rp.h
+                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
+                    bVar.f55087h.f(100.0f, new Function0() { // from class: aq.h
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
                             Unit L;
@@ -604,11 +604,11 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     }
 
     public final RemoteImage getLeftPoseImage() {
-        return this.f19562q;
+        return this.f20442q;
     }
 
     public final RemoteImage getRightPoseImage() {
-        return this.f19563r;
+        return this.f20443r;
     }
 
     @Override // android.view.View
@@ -617,16 +617,16 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     }
 
     public final void setLeftPoseImage(RemoteImage remoteImage) {
-        this.f19562q = remoteImage;
+        this.f20442q = remoteImage;
     }
 
     public final void setPreviewView(@NotNull View previewView) {
         Intrinsics.checkNotNullParameter(previewView, "previewView");
-        this.f19564s = previewView;
+        this.f20444s = previewView;
     }
 
     public final void setRightPoseImage(RemoteImage remoteImage) {
-        this.f19563r = remoteImage;
+        this.f20443r = remoteImage;
     }
 
     public /* synthetic */ OldSelfieOverlayView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -637,10 +637,10 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     public OldSelfieOverlayView(final Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         Intrinsics.checkNotNullParameter(context, "context");
-        op.b b10 = op.b.b(LayoutInflater.from(context), this);
+        xp.b b10 = xp.b.b(LayoutInflater.from(context), this);
         Intrinsics.checkNotNullExpressionValue(b10, "inflate(...)");
-        this.f19557d = b10;
-        this.f19558e = l.a(new Function0() { // from class: rp.a
+        this.f20437d = b10;
+        this.f20438e = l.b(new Function0() { // from class: aq.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Drawable C;
@@ -648,7 +648,7 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                 return C;
             }
         });
-        this.f19559i = l.a(new Function0() { // from class: rp.e
+        this.f20439i = l.b(new Function0() { // from class: aq.e
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Drawable D;
@@ -656,14 +656,14 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                 return D;
             }
         });
-        Integer f10 = s.f(context, kp.a.f34918r, null, false, 6, null);
-        this.f19560o = f10 != null ? f10.intValue() : y0.f39976b;
-        Integer f11 = s.f(context, kp.a.f34918r, null, false, 6, null);
-        this.f19561p = f11 != null ? f11.intValue() : y0.f39977c;
-        this.f19565t = new ArrayList();
-        this.f19566u = new ArrayList();
-        ThemeableLottieAnimationView themeableLottieAnimationView = b10.f42560d;
-        themeableLottieAnimationView.j(new a0() { // from class: rp.f
+        Integer f10 = s.f(context, tp.a.f49769r, null, false, 6, null);
+        this.f20440o = f10 != null ? f10.intValue() : y0.f53926b;
+        Integer f11 = s.f(context, tp.a.f49769r, null, false, 6, null);
+        this.f20441p = f11 != null ? f11.intValue() : y0.f53927c;
+        this.f20445t = new ArrayList();
+        this.f20446u = new ArrayList();
+        ThemeableLottieAnimationView themeableLottieAnimationView = b10.f55083d;
+        themeableLottieAnimationView.j(new a0() { // from class: aq.f
             @Override // l5.a0
             public final void a(l5.i iVar) {
                 OldSelfieOverlayView.k(OldSelfieOverlayView.this, iVar);
@@ -673,24 +673,24 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         int parseColor = Color.parseColor("#022050");
         Context context2 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor, s.d(context2, bh.b.f6639m, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor, s.d(context2, bh.b.f6745l, null, false, 6, null));
         int parseColor2 = Color.parseColor("#AA85FF");
         Context context3 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context3, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor2, s.d(context3, bh.b.f6640n, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor2, s.d(context3, bh.b.f6747m, null, false, 6, null));
         int parseColor3 = Color.parseColor("#280087");
         Context context4 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context4, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor3, s.d(context4, bh.b.f6639m, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor3, s.d(context4, bh.b.f6745l, null, false, 6, null));
         int parseColor4 = Color.parseColor("#8552FF");
         Context context5 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context5, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor4, s.d(context5, bh.b.f6640n, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor4, s.d(context5, bh.b.f6747m, null, false, 6, null));
         Context context6 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context6, "getContext(...)");
-        int d10 = s.d(context6, bh.b.f6640n, null, false, 6, null);
+        int d10 = s.d(context6, bh.b.f6747m, null, false, 6, null);
         Context context7 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context7, "getContext(...)");
-        themeableLottieAnimationView.I(Color.parseColor("#DBCCFF"), r1.c.c(d10, s.d(context7, bh.b.f6641o, null, false, 6, null), 0.66f));
+        themeableLottieAnimationView.I(Color.parseColor("#DBCCFF"), r1.c.c(d10, s.d(context7, bh.b.f6751o, null, false, 6, null), 0.66f));
     }
 }

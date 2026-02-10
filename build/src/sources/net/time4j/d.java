@@ -3,18 +3,18 @@ package net.time4j;
 import java.text.ParsePosition;
 import java.util.Locale;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-enum d implements d1, vt.e {
+enum d implements d1, eu.e {
     AM_PM_OF_DAY;
 
-    private tt.s a(Locale locale, tt.v vVar, tt.m mVar) {
-        return tt.b.d(locale).h(vVar, mVar);
+    private cu.s a(bu.d dVar) {
+        return cu.b.d((Locale) dVar.b(cu.a.f21110c, Locale.ROOT)).h((cu.v) dVar.b(cu.a.f21114g, cu.v.WIDE), (cu.m) dVar.b(cu.a.f21115h, cu.m.FORMAT));
     }
 
-    private tt.s g(st.d dVar) {
-        return tt.b.d((Locale) dVar.b(tt.a.f51004c, Locale.ROOT)).h((tt.v) dVar.b(tt.a.f51008g, tt.v.WIDE), (tt.m) dVar.b(tt.a.f51009h, tt.m.FORMAT));
+    private cu.s h(Locale locale, cu.v vVar, cu.m mVar) {
+        return cu.b.d(locale).h(vVar, mVar);
     }
 
-    static z s(CharSequence charSequence, ParsePosition parsePosition) {
+    static z x(CharSequence charSequence, ParsePosition parsePosition) {
         int index = parsePosition.getIndex();
         int i10 = index + 2;
         if (charSequence.length() >= i10) {
@@ -36,76 +36,76 @@ enum d implements d1, vt.e {
         return null;
     }
 
-    @Override // st.p
+    @Override // bu.p
     public boolean A() {
         return false;
     }
 
-    @Override // st.p
-    public boolean D() {
+    @Override // bu.p
+    public boolean C() {
         return true;
     }
 
-    @Override // st.p
+    @Override // bu.p
     public char d() {
         return 'a';
     }
 
-    @Override // st.p
-    public boolean f() {
-        return false;
+    @Override // eu.e
+    public void g(bu.o oVar, Appendable appendable, Locale locale, cu.v vVar, cu.m mVar) {
+        appendable.append(h(locale, vVar, mVar).f((Enum) oVar.k(this)));
     }
 
-    @Override // st.p
+    @Override // bu.p
     public Class getType() {
         return z.class;
     }
 
-    @Override // java.util.Comparator
-    /* renamed from: h */
-    public int compare(st.o oVar, st.o oVar2) {
-        return ((z) oVar.t(this)).compareTo((z) oVar2.t(this));
+    @Override // bu.p
+    public boolean k() {
+        return false;
     }
 
-    @Override // st.p
-    /* renamed from: i */
-    public z e() {
+    @Override // java.util.Comparator
+    /* renamed from: m */
+    public int compare(bu.o oVar, bu.o oVar2) {
+        return ((z) oVar.k(this)).compareTo((z) oVar2.k(this));
+    }
+
+    @Override // bu.p
+    /* renamed from: n */
+    public z f() {
         return z.PM;
     }
 
-    @Override // st.p
-    /* renamed from: k */
+    @Override // bu.p
+    /* renamed from: o */
     public z B() {
         return z.AM;
     }
 
-    @Override // vt.e
-    /* renamed from: m */
-    public z w(CharSequence charSequence, ParsePosition parsePosition, Locale locale, tt.v vVar, tt.m mVar, tt.g gVar) {
-        z s10 = s(charSequence, parsePosition);
-        if (s10 == null) {
-            return (z) a(locale, vVar, mVar).d(charSequence, parsePosition, getType(), gVar);
+    @Override // cu.t
+    /* renamed from: q */
+    public z l(CharSequence charSequence, ParsePosition parsePosition, bu.d dVar) {
+        z x10 = x(charSequence, parsePosition);
+        if (x10 == null) {
+            return (z) a(dVar).c(charSequence, parsePosition, getType(), dVar);
         }
-        return s10;
+        return x10;
     }
 
-    @Override // tt.t
-    /* renamed from: n */
-    public z l(CharSequence charSequence, ParsePosition parsePosition, st.d dVar) {
-        z s10 = s(charSequence, parsePosition);
-        if (s10 == null) {
-            return (z) g(dVar).c(charSequence, parsePosition, getType(), dVar);
+    @Override // eu.e
+    /* renamed from: u */
+    public z v(CharSequence charSequence, ParsePosition parsePosition, Locale locale, cu.v vVar, cu.m mVar, cu.g gVar) {
+        z x10 = x(charSequence, parsePosition);
+        if (x10 == null) {
+            return (z) h(locale, vVar, mVar).d(charSequence, parsePosition, getType(), gVar);
         }
-        return s10;
+        return x10;
     }
 
-    @Override // tt.t
-    public void o(st.o oVar, Appendable appendable, st.d dVar) {
-        appendable.append(g(dVar).f((Enum) oVar.t(this)));
-    }
-
-    @Override // vt.e
-    public void q(st.o oVar, Appendable appendable, Locale locale, tt.v vVar, tt.m mVar) {
-        appendable.append(a(locale, vVar, mVar).f((Enum) oVar.t(this)));
+    @Override // cu.t
+    public void w(bu.o oVar, Appendable appendable, bu.d dVar) {
+        appendable.append(a(dVar).f((Enum) oVar.k(this)));
     }
 }

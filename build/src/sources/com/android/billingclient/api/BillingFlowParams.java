@@ -8,51 +8,51 @@ import java.util.List;
 public class BillingFlowParams {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f7942a;
+    private boolean f8519a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f7943b;
+    private String f8520b;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f7944c;
+    private String f8521c;
 
     /* renamed from: d  reason: collision with root package name */
-    private c f7945d;
+    private c f8522d;
 
     /* renamed from: e  reason: collision with root package name */
-    private com.google.android.gms.internal.play_billing.j f7946e;
+    private com.google.android.gms.internal.play_billing.j f8523e;
 
     /* renamed from: f  reason: collision with root package name */
-    private ArrayList f7947f;
+    private ArrayList f8524f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f7948g;
+    private boolean f8525g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f7949a;
+        private String f8526a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f7950b;
+        private String f8527b;
 
         /* renamed from: c  reason: collision with root package name */
-        private List f7951c;
+        private List f8528c;
 
         /* renamed from: d  reason: collision with root package name */
-        private ArrayList f7952d;
+        private ArrayList f8529d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f7953e;
+        private boolean f8530e;
 
         /* renamed from: f  reason: collision with root package name */
-        private c.a f7954f;
+        private c.a f8531f;
 
         /* synthetic */ a(b6.s sVar) {
             c.a a10 = c.a();
             c.a.e(a10);
-            this.f7954f = a10;
+            this.f8531f = a10;
         }
 
         public BillingFlowParams a() {
@@ -60,14 +60,14 @@ public class BillingFlowParams {
             boolean z11;
             ArrayList arrayList;
             com.google.android.gms.internal.play_billing.j l10;
-            ArrayList arrayList2 = this.f7952d;
+            ArrayList arrayList2 = this.f8529d;
             boolean z12 = true;
             if (arrayList2 != null && !arrayList2.isEmpty()) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            List list = this.f7951c;
+            List list = this.f8528c;
             if (list != null && !list.isEmpty()) {
                 z11 = true;
             } else {
@@ -80,18 +80,18 @@ public class BillingFlowParams {
                 throw new IllegalArgumentException("Set SkuDetails or ProductDetailsParams, not both.");
             }
             if (z10) {
-                if (!this.f7952d.contains(null)) {
-                    if (this.f7952d.size() > 1) {
-                        android.support.v4.media.session.b.a(this.f7952d.get(0));
+                if (!this.f8529d.contains(null)) {
+                    if (this.f8529d.size() > 1) {
+                        android.support.v4.media.session.b.a(this.f8529d.get(0));
                         throw null;
                     }
                 } else {
                     throw new IllegalArgumentException("SKU cannot be null.");
                 }
             } else {
-                b bVar = (b) this.f7951c.get(0);
-                for (int i10 = 0; i10 < this.f7951c.size(); i10++) {
-                    b bVar2 = (b) this.f7951c.get(i10);
+                b bVar = (b) this.f8528c.get(0);
+                for (int i10 = 0; i10 < this.f8528c.size(); i10++) {
+                    b bVar2 = (b) this.f8528c.get(i10);
                     if (bVar2 != null) {
                         if (i10 != 0 && !bVar2.b().e().equals(bVar.b().e()) && !bVar2.b().e().equals("play_pass_subs")) {
                             throw new IllegalArgumentException("All products should have same ProductType.");
@@ -101,7 +101,7 @@ public class BillingFlowParams {
                     }
                 }
                 String h10 = bVar.b().h();
-                for (b bVar3 : this.f7951c) {
+                for (b bVar3 : this.f8528c) {
                     if (!bVar.b().e().equals("play_pass_subs") && !bVar3.b().e().equals("play_pass_subs") && !h10.equals(bVar3.b().h())) {
                         throw new IllegalArgumentException("All products must have the same package name.");
                     }
@@ -109,53 +109,53 @@ public class BillingFlowParams {
             }
             BillingFlowParams billingFlowParams = new BillingFlowParams(null);
             if (!z10) {
-                billingFlowParams.f7942a = (!z11 || ((b) this.f7951c.get(0)).b().h().isEmpty()) ? false : false;
-                billingFlowParams.f7943b = this.f7949a;
-                billingFlowParams.f7944c = this.f7950b;
-                billingFlowParams.f7945d = this.f7954f.a();
-                ArrayList arrayList3 = this.f7952d;
+                billingFlowParams.f8519a = (!z11 || ((b) this.f8528c.get(0)).b().h().isEmpty()) ? false : false;
+                billingFlowParams.f8520b = this.f8526a;
+                billingFlowParams.f8521c = this.f8527b;
+                billingFlowParams.f8522d = this.f8531f.a();
+                ArrayList arrayList3 = this.f8529d;
                 if (arrayList3 != null) {
                     arrayList = new ArrayList(arrayList3);
                 } else {
                     arrayList = new ArrayList();
                 }
-                billingFlowParams.f7947f = arrayList;
-                billingFlowParams.f7948g = this.f7953e;
-                List list2 = this.f7951c;
+                billingFlowParams.f8524f = arrayList;
+                billingFlowParams.f8525g = this.f8530e;
+                List list2 = this.f8528c;
                 if (list2 != null) {
-                    l10 = com.google.android.gms.internal.play_billing.j.j(list2);
+                    l10 = com.google.android.gms.internal.play_billing.j.k(list2);
                 } else {
                     l10 = com.google.android.gms.internal.play_billing.j.l();
                 }
-                billingFlowParams.f7946e = l10;
+                billingFlowParams.f8523e = l10;
                 return billingFlowParams;
             }
-            android.support.v4.media.session.b.a(this.f7952d.get(0));
+            android.support.v4.media.session.b.a(this.f8529d.get(0));
             throw null;
         }
 
         public a b(boolean z10) {
-            this.f7953e = z10;
+            this.f8530e = z10;
             return this;
         }
 
         public a c(String str) {
-            this.f7949a = str;
+            this.f8526a = str;
             return this;
         }
 
         public a d(String str) {
-            this.f7950b = str;
+            this.f8527b = str;
             return this;
         }
 
         public a e(List list) {
-            this.f7951c = new ArrayList(list);
+            this.f8528c = new ArrayList(list);
             return this;
         }
 
         public a f(c cVar) {
-            this.f7954f = c.c(cVar);
+            this.f8531f = c.c(cVar);
             return this;
         }
     }
@@ -164,46 +164,46 @@ public class BillingFlowParams {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ProductDetails f7955a;
+        private final ProductDetails f8532a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f7956b;
+        private final String f8533b;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private ProductDetails f7957a;
+            private ProductDetails f8534a;
 
             /* renamed from: b  reason: collision with root package name */
-            private String f7958b;
+            private String f8535b;
 
             /* synthetic */ a(b6.t tVar) {
             }
 
             public b a() {
-                com.google.android.gms.internal.play_billing.b.c(this.f7957a, "ProductDetails is required for constructing ProductDetailsParams.");
-                if (this.f7957a.f() != null) {
-                    com.google.android.gms.internal.play_billing.b.c(this.f7958b, "offerToken is required for constructing ProductDetailsParams for subscriptions.");
+                com.google.android.gms.internal.play_billing.b.c(this.f8534a, "ProductDetails is required for constructing ProductDetailsParams.");
+                if (this.f8534a.f() != null) {
+                    com.google.android.gms.internal.play_billing.b.c(this.f8535b, "offerToken is required for constructing ProductDetailsParams for subscriptions.");
                 }
                 return new b(this, null);
             }
 
             public a b(String str) {
                 if (!TextUtils.isEmpty(str)) {
-                    this.f7958b = str;
+                    this.f8535b = str;
                     return this;
                 }
                 throw new IllegalArgumentException("offerToken can not be empty");
             }
 
             public a c(ProductDetails productDetails) {
-                this.f7957a = productDetails;
+                this.f8534a = productDetails;
                 if (productDetails.c() != null) {
                     productDetails.c().getClass();
                     ProductDetails.b c10 = productDetails.c();
                     if (c10.d() != null) {
-                        this.f7958b = c10.d();
+                        this.f8535b = c10.d();
                     }
                 }
                 return this;
@@ -211,8 +211,8 @@ public class BillingFlowParams {
         }
 
         /* synthetic */ b(a aVar, b6.u uVar) {
-            this.f7955a = aVar.f7957a;
-            this.f7956b = aVar.f7958b;
+            this.f8532a = aVar.f8534a;
+            this.f8533b = aVar.f8535b;
         }
 
         public static a a() {
@@ -220,11 +220,11 @@ public class BillingFlowParams {
         }
 
         public final ProductDetails b() {
-            return this.f7955a;
+            return this.f8532a;
         }
 
         public final String c() {
-            return this.f7956b;
+            return this.f8533b;
         }
     }
 
@@ -232,73 +232,73 @@ public class BillingFlowParams {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f7959a;
+        private String f8536a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f7960b;
+        private String f8537b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f7961c = 0;
+        private int f8538c = 0;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private String f7962a;
+            private String f8539a;
 
             /* renamed from: b  reason: collision with root package name */
-            private String f7963b;
+            private String f8540b;
 
             /* renamed from: c  reason: collision with root package name */
-            private boolean f7964c;
+            private boolean f8541c;
 
             /* renamed from: d  reason: collision with root package name */
-            private int f7965d = 0;
+            private int f8542d = 0;
 
             /* synthetic */ a(b6.v vVar) {
             }
 
             static /* synthetic */ a e(a aVar) {
-                aVar.f7964c = true;
+                aVar.f8541c = true;
                 return aVar;
             }
 
             public c a() {
                 boolean z10 = true;
-                if (TextUtils.isEmpty(this.f7962a) && TextUtils.isEmpty(null)) {
+                if (TextUtils.isEmpty(this.f8539a) && TextUtils.isEmpty(null)) {
                     z10 = false;
                 }
-                boolean isEmpty = TextUtils.isEmpty(this.f7963b);
+                boolean isEmpty = TextUtils.isEmpty(this.f8540b);
                 if (z10 && !isEmpty) {
                     throw new IllegalArgumentException("Please provide Old SKU purchase information(token/id) or original external transaction id, not both.");
                 }
-                if (!this.f7964c && !z10 && isEmpty) {
+                if (!this.f8541c && !z10 && isEmpty) {
                     throw new IllegalArgumentException("Old SKU purchase information(token/id) or original external transaction id must be provided.");
                 }
                 c cVar = new c(null);
-                cVar.f7959a = this.f7962a;
-                cVar.f7961c = this.f7965d;
-                cVar.f7960b = this.f7963b;
+                cVar.f8536a = this.f8539a;
+                cVar.f8538c = this.f8542d;
+                cVar.f8537b = this.f8540b;
                 return cVar;
             }
 
             public a b(String str) {
-                this.f7962a = str;
+                this.f8539a = str;
                 return this;
             }
 
             public a c(String str) {
-                this.f7963b = str;
+                this.f8540b = str;
                 return this;
             }
 
             public a d(int i10) {
-                this.f7965d = i10;
+                this.f8542d = i10;
                 return this;
             }
 
             public final a f(String str) {
-                this.f7962a = str;
+                this.f8539a = str;
                 return this;
             }
         }
@@ -312,22 +312,22 @@ public class BillingFlowParams {
 
         static /* bridge */ /* synthetic */ a c(c cVar) {
             a a10 = a();
-            a10.f(cVar.f7959a);
-            a10.d(cVar.f7961c);
-            a10.c(cVar.f7960b);
+            a10.f(cVar.f8536a);
+            a10.d(cVar.f8538c);
+            a10.c(cVar.f8537b);
             return a10;
         }
 
         final int b() {
-            return this.f7961c;
+            return this.f8538c;
         }
 
         final String d() {
-            return this.f7959a;
+            return this.f8536a;
         }
 
         final String e() {
-            return this.f7960b;
+            return this.f8537b;
         }
     }
 
@@ -339,42 +339,42 @@ public class BillingFlowParams {
     }
 
     public final int b() {
-        return this.f7945d.b();
+        return this.f8522d.b();
     }
 
     public final String c() {
-        return this.f7943b;
+        return this.f8520b;
     }
 
     public final String d() {
-        return this.f7944c;
+        return this.f8521c;
     }
 
     public final String e() {
-        return this.f7945d.d();
+        return this.f8522d.d();
     }
 
     public final String f() {
-        return this.f7945d.e();
+        return this.f8522d.e();
     }
 
     public final ArrayList g() {
         ArrayList arrayList = new ArrayList();
-        arrayList.addAll(this.f7947f);
+        arrayList.addAll(this.f8524f);
         return arrayList;
     }
 
     public final List h() {
-        return this.f7946e;
+        return this.f8523e;
     }
 
     public final boolean p() {
-        return this.f7948g;
+        return this.f8525g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final boolean q() {
-        if (this.f7943b == null && this.f7944c == null && this.f7945d.e() == null && this.f7945d.b() == 0 && !this.f7942a && !this.f7948g) {
+        if (this.f8520b == null && this.f8521c == null && this.f8522d.e() == null && this.f8522d.b() == 0 && !this.f8519a && !this.f8525g) {
             return false;
         }
         return true;

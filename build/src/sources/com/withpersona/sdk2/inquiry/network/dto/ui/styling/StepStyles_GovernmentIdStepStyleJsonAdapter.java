@@ -149,7 +149,7 @@ public final class StepStyles_GovernmentIdStepStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -216,7 +216,7 @@ public final class StepStyles_GovernmentIdStepStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.GovernmentIdStepStyle governmentIdStepStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("textColor");
             this.nullableHeaderButtonColorStyleAdapter.toJson(writer, governmentIdStepStyle.getHeaderButtonColor());
             writer.J(ViewProps.BACKGROUND_COLOR);

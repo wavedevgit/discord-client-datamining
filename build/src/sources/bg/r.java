@@ -6,14 +6,14 @@ import com.google.android.gms.tasks.Task;
 public final class r implements ue.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ue.b f6611a;
+    private final ue.b f6717a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ue.b f6612b;
+    private final ue.b f6718b;
 
     public r(Context context) {
-        this.f6611a = new p(context, com.google.android.gms.common.g.f());
-        this.f6612b = l.c(context);
+        this.f6717a = new p(context, com.google.android.gms.common.g.f());
+        this.f6718b = l.c(context);
     }
 
     public static /* synthetic */ Task a(r rVar, Task task) {
@@ -29,7 +29,7 @@ public final class r implements ue.b {
                         return zg.m.e(new Exception("The operation to get app set ID timed out. Please try again later."));
                     }
                 } else {
-                    return rVar.f6612b.g();
+                    return rVar.f6718b.g();
                 }
             }
         }
@@ -38,7 +38,7 @@ public final class r implements ue.b {
 
     @Override // ue.b
     public final Task g() {
-        return this.f6611a.g().j(new zg.c() { // from class: bg.q
+        return this.f6717a.g().j(new zg.c() { // from class: bg.q
             @Override // zg.c
             public final Object a(Task task) {
                 return r.a(r.this, task);

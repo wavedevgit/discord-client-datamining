@@ -85,8 +85,8 @@ public class RNSSearchBarManagerDelegate<T extends View, U extends BaseViewManag
     @Override // com.facebook.react.uimanager.BaseViewManagerDelegate, com.facebook.react.uimanager.ViewManagerDelegate
     public void setProperty(T t10, String str, Object obj) {
         str.getClass();
-        boolean z10 = true;
-        boolean z11 = false;
+        boolean z10 = false;
+        boolean z11 = true;
         char c10 = 65535;
         switch (str.hashCode()) {
             case -1619312835:
@@ -161,21 +161,33 @@ public class RNSSearchBarManagerDelegate<T extends View, U extends BaseViewManag
                     break;
                 }
                 break;
+            case 1399891586:
+                if (str.equals("allowToolbarIntegration")) {
+                    c10 = '\f';
+                    break;
+                }
+                break;
             case 1584806451:
                 if (str.equals("obscureBackground")) {
-                    c10 = '\f';
+                    c10 = '\r';
+                    break;
+                }
+                break;
+            case 1638055017:
+                if (str.equals("autoFocus")) {
+                    c10 = 14;
                     break;
                 }
                 break;
             case 1706976804:
                 if (str.equals("inputType")) {
-                    c10 = '\r';
+                    c10 = 15;
                     break;
                 }
                 break;
             case 1792938725:
                 if (str.equals(AdRevenueScheme.PLACEMENT)) {
-                    c10 = 14;
+                    c10 = 16;
                     break;
                 }
                 break;
@@ -183,11 +195,7 @@ public class RNSSearchBarManagerDelegate<T extends View, U extends BaseViewManag
         String str2 = null;
         switch (c10) {
             case 0:
-                RNSSearchBarManagerInterface rNSSearchBarManagerInterface = (RNSSearchBarManagerInterface) this.mViewManager;
-                if (obj != null) {
-                    z11 = ((Boolean) obj).booleanValue();
-                }
-                rNSSearchBarManagerInterface.setHideNavigationBar(t10, z11);
+                ((RNSSearchBarManagerInterface) this.mViewManager).setHideNavigationBar(t10, (String) obj);
                 return;
             case 1:
                 ((RNSSearchBarManagerInterface) this.mViewManager).setHeaderIconColor(t10, ColorPropConverter.getColor(obj, t10.getContext()));
@@ -205,58 +213,68 @@ public class RNSSearchBarManagerDelegate<T extends View, U extends BaseViewManag
                 ((RNSSearchBarManagerInterface) this.mViewManager).setHintTextColor(t10, ColorPropConverter.getColor(obj, t10.getContext()));
                 return;
             case 6:
-                RNSSearchBarManagerInterface rNSSearchBarManagerInterface2 = (RNSSearchBarManagerInterface) this.mViewManager;
+                RNSSearchBarManagerInterface rNSSearchBarManagerInterface = (RNSSearchBarManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z11 = ((Boolean) obj).booleanValue();
                 }
-                rNSSearchBarManagerInterface2.setHideWhenScrolling(t10, z11);
+                rNSSearchBarManagerInterface.setHideWhenScrolling(t10, z11);
                 return;
             case 7:
-                RNSSearchBarManagerInterface rNSSearchBarManagerInterface3 = (RNSSearchBarManagerInterface) this.mViewManager;
+                RNSSearchBarManagerInterface rNSSearchBarManagerInterface2 = (RNSSearchBarManagerInterface) this.mViewManager;
                 if (obj != null) {
                     str2 = (String) obj;
                 }
-                rNSSearchBarManagerInterface3.setCancelButtonText(t10, str2);
+                rNSSearchBarManagerInterface2.setCancelButtonText(t10, str2);
                 return;
             case '\b':
+                RNSSearchBarManagerInterface rNSSearchBarManagerInterface3 = (RNSSearchBarManagerInterface) this.mViewManager;
+                if (obj != null) {
+                    z10 = ((Boolean) obj).booleanValue();
+                }
+                rNSSearchBarManagerInterface3.setDisableBackButtonOverride(t10, z10);
+                return;
+            case '\t':
                 RNSSearchBarManagerInterface rNSSearchBarManagerInterface4 = (RNSSearchBarManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z11 = ((Boolean) obj).booleanValue();
                 }
-                rNSSearchBarManagerInterface4.setDisableBackButtonOverride(t10, z11);
-                return;
-            case '\t':
-                RNSSearchBarManagerInterface rNSSearchBarManagerInterface5 = (RNSSearchBarManagerInterface) this.mViewManager;
-                if (obj != null) {
-                    z10 = ((Boolean) obj).booleanValue();
-                }
-                rNSSearchBarManagerInterface5.setShouldShowHintSearchIcon(t10, z10);
+                rNSSearchBarManagerInterface4.setShouldShowHintSearchIcon(t10, z11);
                 return;
             case '\n':
-                RNSSearchBarManagerInterface rNSSearchBarManagerInterface6 = (RNSSearchBarManagerInterface) this.mViewManager;
+                RNSSearchBarManagerInterface rNSSearchBarManagerInterface5 = (RNSSearchBarManagerInterface) this.mViewManager;
                 if (obj != null) {
                     str2 = (String) obj;
                 }
-                rNSSearchBarManagerInterface6.setPlaceholder(t10, str2);
+                rNSSearchBarManagerInterface5.setPlaceholder(t10, str2);
                 return;
             case 11:
                 ((RNSSearchBarManagerInterface) this.mViewManager).setTintColor(t10, ColorPropConverter.getColor(obj, t10.getContext()));
                 return;
             case '\f':
-                RNSSearchBarManagerInterface rNSSearchBarManagerInterface7 = (RNSSearchBarManagerInterface) this.mViewManager;
+                RNSSearchBarManagerInterface rNSSearchBarManagerInterface6 = (RNSSearchBarManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z11 = ((Boolean) obj).booleanValue();
                 }
-                rNSSearchBarManagerInterface7.setObscureBackground(t10, z11);
+                rNSSearchBarManagerInterface6.setAllowToolbarIntegration(t10, z11);
                 return;
             case '\r':
+                ((RNSSearchBarManagerInterface) this.mViewManager).setObscureBackground(t10, (String) obj);
+                return;
+            case 14:
+                RNSSearchBarManagerInterface rNSSearchBarManagerInterface7 = (RNSSearchBarManagerInterface) this.mViewManager;
+                if (obj != null) {
+                    z10 = ((Boolean) obj).booleanValue();
+                }
+                rNSSearchBarManagerInterface7.setAutoFocus(t10, z10);
+                return;
+            case 15:
                 RNSSearchBarManagerInterface rNSSearchBarManagerInterface8 = (RNSSearchBarManagerInterface) this.mViewManager;
                 if (obj != null) {
                     str2 = (String) obj;
                 }
                 rNSSearchBarManagerInterface8.setInputType(t10, str2);
                 return;
-            case 14:
+            case 16:
                 ((RNSSearchBarManagerInterface) this.mViewManager).setPlacement(t10, (String) obj);
                 return;
             default:

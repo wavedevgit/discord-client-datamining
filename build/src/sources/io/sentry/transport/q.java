@@ -5,7 +5,7 @@ import io.sentry.l5;
 import java.io.Closeable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public interface q extends Closeable {
-    default void P1(l5 l5Var) {
+    default void V1(l5 l5Var) {
         d0(l5Var, new Hint());
     }
 
@@ -15,9 +15,9 @@ public interface q extends Closeable {
 
     void d0(l5 l5Var, Hint hint);
 
-    default boolean f() {
+    default boolean g() {
         return true;
     }
 
-    a0 j();
+    a0 k();
 }

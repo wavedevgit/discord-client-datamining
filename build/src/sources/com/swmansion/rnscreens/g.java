@@ -1,47 +1,74 @@
 package com.swmansion.rnscreens;
 
+import android.content.Context;
 import android.view.ViewGroup;
-import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.uimanager.PixelUtil;
 import com.facebook.react.uimanager.StateWrapper;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class g extends ViewGroup {
-    private float lastHeaderHeight;
-    private float lastHeight;
-    private float lastWidth;
-    private StateWrapper mStateWrapper;
 
-    public g(ReactContext reactContext) {
-        super(reactContext);
+    /* renamed from: q  reason: collision with root package name */
+    public static final a f19165q = new a(null);
+
+    /* renamed from: d  reason: collision with root package name */
+    private StateWrapper f19166d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private float f19167e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private float f19168i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private float f19169o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private float f19170p;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private a() {
+        }
     }
 
-    public final void setStateWrapper(StateWrapper stateWrapper) {
-        this.mStateWrapper = stateWrapper;
+    public g(Context context) {
+        super(context);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final void updateScreenSizeFabric(int i10, int i11, int i12) {
-        updateState(i10, i11, i12);
-    }
-
-    public final void updateState(int i10, int i11, int i12) {
+    public final void a(int i10, int i11, int i12, int i13) {
         float dIPFromPixel = PixelUtil.toDIPFromPixel(i10);
         float dIPFromPixel2 = PixelUtil.toDIPFromPixel(i11);
         float dIPFromPixel3 = PixelUtil.toDIPFromPixel(i12);
-        if (Math.abs(this.lastWidth - dIPFromPixel) >= 0.9f || Math.abs(this.lastHeight - dIPFromPixel2) >= 0.9f || Math.abs(this.lastHeaderHeight - dIPFromPixel3) >= 0.9f) {
-            this.lastWidth = dIPFromPixel;
-            this.lastHeight = dIPFromPixel2;
-            this.lastHeaderHeight = dIPFromPixel3;
+        float dIPFromPixel4 = PixelUtil.toDIPFromPixel(i13);
+        if (Math.abs(this.f19167e - dIPFromPixel) >= 0.9f || Math.abs(this.f19168i - dIPFromPixel2) >= 0.9f || Math.abs(this.f19169o - dIPFromPixel3) >= 0.9f || Math.abs(this.f19170p - dIPFromPixel4) >= 0.9f) {
+            this.f19167e = dIPFromPixel;
+            this.f19168i = dIPFromPixel2;
+            this.f19169o = dIPFromPixel3;
+            this.f19170p = dIPFromPixel4;
             WritableNativeMap writableNativeMap = new WritableNativeMap();
             writableNativeMap.putDouble("frameWidth", dIPFromPixel);
             writableNativeMap.putDouble("frameHeight", dIPFromPixel2);
-            writableNativeMap.putDouble("contentOffsetX", 0.0d);
-            writableNativeMap.putDouble("contentOffsetY", dIPFromPixel3);
-            StateWrapper stateWrapper = this.mStateWrapper;
+            writableNativeMap.putDouble("contentOffsetX", dIPFromPixel3);
+            writableNativeMap.putDouble("contentOffsetY", dIPFromPixel4);
+            StateWrapper stateWrapper = this.f19166d;
             if (stateWrapper != null) {
                 stateWrapper.updateState(writableNativeMap);
             }
         }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void b(int i10, int i11, int i12, int i13) {
+        a(i10, i11, i12, i13);
+    }
+
+    public final void setStateWrapper(StateWrapper stateWrapper) {
+        this.f19166d = stateWrapper;
     }
 }

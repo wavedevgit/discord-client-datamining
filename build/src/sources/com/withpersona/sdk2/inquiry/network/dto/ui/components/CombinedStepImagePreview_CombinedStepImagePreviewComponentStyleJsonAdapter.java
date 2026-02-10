@@ -65,7 +65,7 @@ public final class CombinedStepImagePreview_CombinedStepImagePreviewComponentSty
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 remoteImageHeightStyle = (AttributeStyles.RemoteImageHeightStyle) this.nullableRemoteImageHeightStyleAdapter.fromJson(reader);
@@ -85,7 +85,7 @@ public final class CombinedStepImagePreview_CombinedStepImagePreviewComponentSty
     public void toJson(@NotNull t writer, CombinedStepImagePreview.CombinedStepImagePreviewComponentStyle combinedStepImagePreviewComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (combinedStepImagePreviewComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("height");
             this.nullableRemoteImageHeightStyleAdapter.toJson(writer, combinedStepImagePreviewComponentStyle.getHeight());
             writer.J("width");

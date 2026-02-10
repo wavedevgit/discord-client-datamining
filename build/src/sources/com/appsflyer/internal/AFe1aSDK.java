@@ -124,7 +124,7 @@ public final class AFe1aSDK extends AFe1lSDK<Unit> {
                 if (component4 == null) {
                     component4 = "";
                 }
-                Map n10 = o0.n(rr.v.a("event_name", this.areAllFieldsValid.getMediationNetwork), rr.v.a("app_id", this.component1.getRevenue.getRevenue.getPackageName()), rr.v.a("app_version", this.component1.n_().versionName), rr.v.a("sdk_version", AFc1pSDK.getCurrencyIso4217Code()), rr.v.a("api_version", AFc1pSDK.AFAdRevenueData()), rr.v.a("timestamp", String.valueOf(this.component2.getCurrencyIso4217Code())), rr.v.a("request_id", AFc1pSDK.getMonetizationNetwork()), rr.v.a("gaid", component4));
+                Map n10 = o0.n(as.v.a("event_name", this.areAllFieldsValid.getMediationNetwork), as.v.a("app_id", this.component1.getRevenue.getRevenue.getPackageName()), as.v.a("app_version", this.component1.n_().versionName), as.v.a("sdk_version", AFc1pSDK.getCurrencyIso4217Code()), as.v.a("api_version", AFc1pSDK.AFAdRevenueData()), as.v.a("timestamp", String.valueOf(this.component2.getCurrencyIso4217Code())), as.v.a("request_id", AFc1pSDK.getMonetizationNetwork()), as.v.a("gaid", component4));
                 String revenue = AFb1jSDK.getRevenue(this.component1.getMonetizationNetwork);
                 if (revenue != null) {
                     n10.put("appsflyer_id", revenue);

@@ -1,27 +1,19 @@
 package tp;
-
-import cr.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements cr.d {
+public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f50893a;
+    public static int f49775a = 2131166269;
 
-    public c(b bVar) {
-        this.f50893a = bVar;
-    }
+    /* renamed from: b  reason: collision with root package name */
+    public static int f49776b = 2131166274;
 
-    public static c a(b bVar) {
-        return new c(bVar);
-    }
+    /* renamed from: c  reason: collision with root package name */
+    public static int f49777c = 2131166275;
 
-    public static a b(b bVar) {
-        return (a) g.d(bVar.a());
-    }
+    /* renamed from: d  reason: collision with root package name */
+    public static int f49778d = 2131166279;
 
-    @Override // javax.inject.Provider
-    /* renamed from: c */
-    public a get() {
-        return b(this.f50893a);
-    }
+    /* renamed from: e  reason: collision with root package name */
+    public static int f49779e = 2131166280;
 }

@@ -1,10 +1,10 @@
 package com.withpersona.sdk2.inquiry.network.core;
 
 import com.squareup.moshi.h;
-import cr.g;
 import java.util.Set;
+import lr.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class NetworkCoreModule_ProvideMoshiJsonAdapterFactoryFactory implements cr.d {
+public final class NetworkCoreModule_ProvideMoshiJsonAdapterFactoryFactory implements lr.d {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class InstanceHolder {

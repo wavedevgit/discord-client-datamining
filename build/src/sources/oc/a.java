@@ -9,27 +9,27 @@ import oe.y;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f40440a = {96000, 88200, 64000, 48000, 44100, 32000, 24000, 22050, 16000, 12000, 11025, 8000, 7350};
+    private static final int[] f38766a = {96000, 88200, 64000, 48000, 44100, 32000, 24000, 22050, 16000, 12000, 11025, 8000, 7350};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f40441b = {0, 1, 2, 3, 4, 5, 6, 8, -1, -1, -1, 7, 8, -1, 8, -1};
+    private static final int[] f38767b = {0, 1, 2, 3, 4, 5, 6, 8, -1, -1, -1, 7, 8, -1, 8, -1};
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f40442a;
+        public final int f38768a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f40443b;
+        public final int f38769b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final String f40444c;
+        public final String f38770c;
 
         private b(int i10, int i11, String str) {
-            this.f40442a = i10;
-            this.f40443b = i11;
-            this.f40444c = str;
+            this.f38768a = i10;
+            this.f38769b = i11;
+            this.f38770c = str;
         }
     }
 
@@ -38,7 +38,7 @@ public abstract class a {
         int i13 = -1;
         int i14 = 0;
         while (true) {
-            int[] iArr = f40440a;
+            int[] iArr = f38766a;
             if (i14 >= iArr.length) {
                 break;
             }
@@ -49,7 +49,7 @@ public abstract class a {
         }
         int i15 = -1;
         while (true) {
-            int[] iArr2 = f40441b;
+            int[] iArr2 = f38767b;
             if (i12 >= iArr2.length) {
                 break;
             }
@@ -84,7 +84,7 @@ public abstract class a {
             }
             throw l0.a("AAC header insufficient data", null);
         } else if (h10 < 13) {
-            return f40440a[h10];
+            return f38766a[h10];
         } else {
             throw l0.a("AAC header wrong Sampling Frequency Index", null);
         }
@@ -129,7 +129,7 @@ public abstract class a {
                     }
             }
         }
-        int i10 = f40441b[h10];
+        int i10 = f38767b[h10];
         if (i10 != -1) {
             return new b(d10, i10, str);
         }

@@ -1,6 +1,5 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import bn.c;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -8,6 +7,7 @@ import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.ui.BasicButtonAttributes;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.ButtonSubmitComponentStyle;
+import dn.c;
 import java.lang.reflect.Constructor;
 import kotlin.Metadata;
 import kotlin.collections.x0;
@@ -63,7 +63,7 @@ public final class SubmitButtonJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
@@ -86,7 +86,7 @@ public final class SubmitButtonJsonAdapter extends h {
         }
         Constructor<SubmitButton> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = SubmitButton.class.getDeclaredConstructor(String.class, BasicButtonAttributes.class, ButtonSubmitComponentStyle.class, Integer.TYPE, c.f7152c);
+            constructor = SubmitButton.class.getDeclaredConstructor(String.class, BasicButtonAttributes.class, ButtonSubmitComponentStyle.class, Integer.TYPE, c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -102,7 +102,7 @@ public final class SubmitButtonJsonAdapter extends h {
     public void toJson(@NotNull t writer, SubmitButton submitButton) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (submitButton != null) {
-            writer.k();
+            writer.i();
             writer.J(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(writer, submitButton.getName());
             writer.J("attributes");

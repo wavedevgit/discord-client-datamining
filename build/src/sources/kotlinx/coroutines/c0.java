@@ -1,29 +1,29 @@
 package kotlinx.coroutines;
 
-import ps.w0;
+import ys.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final us.e0 f34795a = new us.e0("COMPLETING_ALREADY");
+    private static final dt.e0 f35017a = new dt.e0("COMPLETING_ALREADY");
 
     /* renamed from: b  reason: collision with root package name */
-    public static final us.e0 f34796b = new us.e0("COMPLETING_WAITING_CHILDREN");
+    public static final dt.e0 f35018b = new dt.e0("COMPLETING_WAITING_CHILDREN");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final us.e0 f34797c = new us.e0("COMPLETING_RETRY");
+    private static final dt.e0 f35019c = new dt.e0("COMPLETING_RETRY");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final us.e0 f34798d = new us.e0("TOO_LATE_TO_CANCEL");
+    private static final dt.e0 f35020d = new dt.e0("TOO_LATE_TO_CANCEL");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final us.e0 f34799e = new us.e0("SEALED");
+    private static final dt.e0 f35021e = new dt.e0("SEALED");
 
     /* renamed from: f  reason: collision with root package name */
-    private static final p f34800f = new p(false);
+    private static final p f35022f = new p(false);
 
     /* renamed from: g  reason: collision with root package name */
-    private static final p f34801g = new p(true);
+    private static final p f35023g = new p(true);
 
     public static final Object g(Object obj) {
         if (obj instanceof w0) {
@@ -40,7 +40,7 @@ public abstract class c0 {
         } else {
             vVar = null;
         }
-        if (vVar != null && (w0Var = vVar.f34842a) != null) {
+        if (vVar != null && (w0Var = vVar.f35064a) != null) {
             return w0Var;
         }
         return obj;

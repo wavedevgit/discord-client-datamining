@@ -118,7 +118,7 @@ public final class InputSelectComponentStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -170,7 +170,7 @@ public final class InputSelectComponentStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, InputSelectComponentStyle inputSelectComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputSelectComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J(ViewProps.MARGIN);
             this.nullableInputMarginStyleAdapter.toJson(writer, inputSelectComponentStyle.getMargin());
             writer.J("justify");

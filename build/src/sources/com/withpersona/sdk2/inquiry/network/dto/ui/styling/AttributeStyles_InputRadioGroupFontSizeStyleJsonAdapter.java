@@ -48,7 +48,7 @@ public final class AttributeStyles_InputRadioGroupFontSizeStyleJsonAdapter exten
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
@@ -66,7 +66,7 @@ public final class AttributeStyles_InputRadioGroupFontSizeStyleJsonAdapter exten
     public void toJson(@NotNull t writer, AttributeStyles.InputRadioGroupFontSizeStyle inputRadioGroupFontSizeStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputRadioGroupFontSizeStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableMeasurementAdapter.toJson(writer, inputRadioGroupFontSizeStyle.getBase());
             writer.J("description");

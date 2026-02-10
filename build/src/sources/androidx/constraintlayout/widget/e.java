@@ -10,10 +10,10 @@ import androidx.constraintlayout.core.widgets.h;
 public abstract class e extends b {
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f2980u;
+    private boolean f2983u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f2981v;
+    private boolean f2984v;
 
     public e(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -34,10 +34,10 @@ public abstract class e extends b {
             int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i10 = 0; i10 < indexCount; i10++) {
                 int index = obtainStyledAttributes.getIndex(i10);
-                if (index == d.f2790c1) {
-                    this.f2980u = true;
-                } else if (index == d.f2846j1) {
-                    this.f2981v = true;
+                if (index == d.f2793c1) {
+                    this.f2983u = true;
+                } else if (index == d.f2849j1) {
+                    this.f2984v = true;
                 }
             }
             obtainStyledAttributes.recycle();
@@ -47,19 +47,19 @@ public abstract class e extends b {
     @Override // androidx.constraintlayout.widget.b, android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        if (this.f2980u || this.f2981v) {
+        if (this.f2983u || this.f2984v) {
             ViewParent parent = getParent();
             if (parent instanceof ConstraintLayout) {
                 ConstraintLayout constraintLayout = (ConstraintLayout) parent;
                 int visibility = getVisibility();
                 float elevation = getElevation();
-                for (int i10 = 0; i10 < this.f2762e; i10++) {
-                    View viewById = constraintLayout.getViewById(this.f2761d[i10]);
+                for (int i10 = 0; i10 < this.f2765e; i10++) {
+                    View viewById = constraintLayout.getViewById(this.f2764d[i10]);
                     if (viewById != null) {
-                        if (this.f2980u) {
+                        if (this.f2983u) {
                             viewById.setVisibility(visibility);
                         }
-                        if (this.f2981v && elevation > 0.0f) {
+                        if (this.f2984v && elevation > 0.0f) {
                             viewById.setTranslationZ(viewById.getTranslationZ() + elevation);
                         }
                     }

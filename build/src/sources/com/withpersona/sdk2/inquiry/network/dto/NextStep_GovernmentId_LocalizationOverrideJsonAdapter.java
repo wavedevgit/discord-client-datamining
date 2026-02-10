@@ -55,7 +55,7 @@ public final class NextStep_GovernmentId_LocalizationOverrideJsonAdapter extends
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -72,21 +72,21 @@ public final class NextStep_GovernmentId_LocalizationOverrideJsonAdapter extends
                     if (str4 != null) {
                         break;
                     } else {
-                        throw bn.c.x("page", "page", reader);
+                        throw dn.c.x("page", "page", reader);
                     }
                 case 4:
                     str5 = (String) this.stringAdapter.fromJson(reader);
                     if (str5 != null) {
                         break;
                     } else {
-                        throw bn.c.x("key", "key", reader);
+                        throw dn.c.x("key", "key", reader);
                     }
                 case 5:
                     str6 = (String) this.stringAdapter.fromJson(reader);
                     if (str6 != null) {
                         break;
                     } else {
-                        throw bn.c.x("text", "text", reader);
+                        throw dn.c.x("text", "text", reader);
                     }
             }
         }
@@ -96,18 +96,18 @@ public final class NextStep_GovernmentId_LocalizationOverrideJsonAdapter extends
                 if (str6 != null) {
                     return new NextStep.GovernmentId.LocalizationOverride(str, str2, str3, str4, str5, str6);
                 }
-                throw bn.c.o("text", "text", reader);
+                throw dn.c.o("text", "text", reader);
             }
-            throw bn.c.o("key", "key", reader);
+            throw dn.c.o("key", "key", reader);
         }
-        throw bn.c.o("page", "page", reader);
+        throw dn.c.o("page", "page", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.GovernmentId.LocalizationOverride localizationOverride) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (localizationOverride != null) {
-            writer.k();
+            writer.i();
             writer.J("countryCode");
             this.nullableStringAdapter.toJson(writer, localizationOverride.getCountryCode());
             writer.J("idClass");

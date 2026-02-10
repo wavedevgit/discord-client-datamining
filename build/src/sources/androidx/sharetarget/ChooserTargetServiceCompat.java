@@ -24,14 +24,14 @@ public class ChooserTargetServiceCompat extends ChooserTargetService {
     public static class a implements Comparable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final ShortcutInfoCompat f5204d;
+        private final ShortcutInfoCompat f5214d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ComponentName f5205e;
+        private final ComponentName f5215e;
 
         a(ShortcutInfoCompat shortcutInfoCompat, ComponentName componentName) {
-            this.f5204d = shortcutInfoCompat;
-            this.f5205e = componentName;
+            this.f5214d = shortcutInfoCompat;
+            this.f5215e = componentName;
         }
 
         @Override // java.lang.Comparable
@@ -41,11 +41,11 @@ public class ChooserTargetServiceCompat extends ChooserTargetService {
         }
 
         ShortcutInfoCompat d() {
-            return this.f5204d;
+            return this.f5214d;
         }
 
         ComponentName e() {
-            return this.f5205e;
+            return this.f5215e;
         }
     }
 
@@ -93,14 +93,14 @@ public class ChooserTargetServiceCompat extends ChooserTargetService {
         ArrayList<androidx.sharetarget.a> b10 = b.b(applicationContext);
         ArrayList arrayList = new ArrayList();
         for (androidx.sharetarget.a aVar : b10) {
-            if (aVar.f5207b.equals(componentName.getClassName())) {
-                a.C0070a[] c0070aArr = aVar.f5206a;
-                int length = c0070aArr.length;
+            if (aVar.f5217b.equals(componentName.getClassName())) {
+                a.C0066a[] c0066aArr = aVar.f5216a;
+                int length = c0066aArr.length;
                 int i10 = 0;
                 while (true) {
                     if (i10 >= length) {
                         break;
-                    } else if (intentFilter.hasDataType(c0070aArr[i10].f5215g)) {
+                    } else if (intentFilter.hasDataType(c0066aArr[i10].f5225g)) {
                         arrayList.add(aVar);
                         break;
                     } else {
@@ -122,8 +122,8 @@ public class ChooserTargetServiceCompat extends ChooserTargetService {
                     while (true) {
                         if (it.hasNext()) {
                             androidx.sharetarget.a aVar2 = (androidx.sharetarget.a) it.next();
-                            if (shortcutInfoCompat.d().containsAll(Arrays.asList(aVar2.f5208c))) {
-                                arrayList2.add(new a(shortcutInfoCompat, new ComponentName(applicationContext.getPackageName(), aVar2.f5207b)));
+                            if (shortcutInfoCompat.d().containsAll(Arrays.asList(aVar2.f5218c))) {
+                                arrayList2.add(new a(shortcutInfoCompat, new ComponentName(applicationContext.getPackageName(), aVar2.f5217b)));
                                 break;
                             }
                         }

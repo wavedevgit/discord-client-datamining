@@ -2,16 +2,16 @@ package kotlin.properties;
 
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.KProperty;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class b implements ReadWriteProperty {
 
     /* renamed from: a  reason: collision with root package name */
-    private Object f31853a;
+    private Object f32075a;
 
     @Override // kotlin.properties.ReadWriteProperty, kotlin.properties.d
     public Object getValue(Object obj, KProperty property) {
         Intrinsics.checkNotNullParameter(property, "property");
-        Object obj2 = this.f31853a;
+        Object obj2 = this.f32075a;
         if (obj2 != null) {
             return obj2;
         }
@@ -22,15 +22,15 @@ final class b implements ReadWriteProperty {
     public void setValue(Object obj, KProperty property, Object value) {
         Intrinsics.checkNotNullParameter(property, "property");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f31853a = value;
+        this.f32075a = value;
     }
 
     public String toString() {
         String str;
         StringBuilder sb2 = new StringBuilder();
         sb2.append("NotNullProperty(");
-        if (this.f31853a != null) {
-            str = "value=" + this.f31853a;
+        if (this.f32075a != null) {
+            str = "value=" + this.f32075a;
         } else {
             str = "value not initialized yet";
         }

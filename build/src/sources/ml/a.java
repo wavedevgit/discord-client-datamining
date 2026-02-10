@@ -1,15 +1,50 @@
 package ml;
 
-import java.util.List;
+import android.graphics.Paint;
+import com.henninghall.date_picker.n;
+import java.util.ArrayList;
+import java.util.Calendar;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
-    void onCancelled(String str, List list);
+public class a extends g {
+    public a(com.henninghall.date_picker.pickers.a aVar, n nVar) {
+        super(aVar, nVar);
+    }
 
-    void onCompleted(String str, List list);
+    @Override // ml.g
+    public String e() {
+        if (this.f36544a.f17586o.g()) {
+            return " a ";
+        }
+        return "";
+    }
 
-    void onError(String str, Throwable th2, List list);
+    @Override // ml.g
+    public Paint.Align k() {
+        return Paint.Align.RIGHT;
+    }
 
-    void onProgress(String str, float f10);
+    @Override // ml.g
+    public ArrayList n() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2000, 0, 0, 0, 0, 0);
+        ArrayList arrayList = new ArrayList();
+        calendar.set(11, 0);
+        arrayList.add(this.f36548e.format(calendar.getTime()));
+        calendar.add(11, 12);
+        arrayList.add(this.f36548e.format(calendar.getTime()));
+        return arrayList;
+    }
 
-    void onStarted(String str);
+    @Override // ml.g
+    public boolean u() {
+        if (this.f36544a.f17586o.g() && this.f36544a.z() != il.b.date) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override // ml.g
+    public boolean v() {
+        return false;
+    }
 }

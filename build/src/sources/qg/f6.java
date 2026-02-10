@@ -1,50 +1,50 @@
 package qg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class f6 implements zi.d {
+final class f6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final f6 f45771a = new f6();
+    static final f6 f44439a = new f6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f45772b;
+    private static final bj.c f44440b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f45773c;
+    private static final bj.c f44441c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f45774d;
+    private static final bj.c f44442d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final zi.c f45775e;
+    private static final bj.c f44443e;
 
     static {
-        c.b a10 = zi.c.a("category");
+        c.b a10 = bj.c.a("category");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f45772b = a10.b(s1Var.b()).a();
-        c.b a11 = zi.c.a("classificationConfidence");
+        f44440b = a10.b(s1Var.b()).a();
+        c.b a11 = bj.c.a("classificationConfidence");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f45773c = a11.b(s1Var2.b()).a();
-        c.b a12 = zi.c.a("trackingId");
+        f44441c = a11.b(s1Var2.b()).a();
+        c.b a12 = bj.c.a("trackingId");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f45774d = a12.b(s1Var3.b()).a();
-        c.b a13 = zi.c.a("labelCount");
+        f44442d = a12.b(s1Var3.b()).a();
+        c.b a13 = bj.c.a("labelCount");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f45775e = a13.b(s1Var4.b()).a();
+        f44443e = a13.b(s1Var4.b()).a();
     }
 
     private f6() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

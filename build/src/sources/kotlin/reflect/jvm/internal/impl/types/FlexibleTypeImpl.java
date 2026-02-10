@@ -19,7 +19,7 @@ public final class FlexibleTypeImpl extends FlexibleType implements CustomTypePa
     public static boolean RUN_SLOW_ASSERTIONS;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f34327o;
+    private boolean f34549o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -39,8 +39,8 @@ public final class FlexibleTypeImpl extends FlexibleType implements CustomTypePa
     }
 
     private final void b() {
-        if (RUN_SLOW_ASSERTIONS && !this.f34327o) {
-            this.f34327o = true;
+        if (RUN_SLOW_ASSERTIONS && !this.f34549o) {
+            this.f34549o = true;
             FlexibleTypesKt.isFlexible(getLowerBound());
             FlexibleTypesKt.isFlexible(getUpperBound());
             Intrinsics.areEqual(getLowerBound(), getUpperBound());
@@ -57,7 +57,7 @@ public final class FlexibleTypeImpl extends FlexibleType implements CustomTypePa
 
     @Override // kotlin.reflect.jvm.internal.impl.types.CustomTypeParameter
     public boolean isTypeParameter() {
-        if ((getLowerBound().getConstructor().mo1199getDeclarationDescriptor() instanceof TypeParameterDescriptor) && Intrinsics.areEqual(getLowerBound().getConstructor(), getUpperBound().getConstructor())) {
+        if ((getLowerBound().getConstructor().mo1202getDeclarationDescriptor() instanceof TypeParameterDescriptor) && Intrinsics.areEqual(getLowerBound().getConstructor(), getUpperBound().getConstructor())) {
             return true;
         }
         return false;
@@ -99,7 +99,7 @@ public final class FlexibleTypeImpl extends FlexibleType implements CustomTypePa
             SimpleType simpleType = (SimpleType) unwrap;
             flexibleType = KotlinTypeFactory.flexibleType(simpleType, simpleType.makeNullableAsSpecified(true));
         } else {
-            throw new rr.p();
+            throw new as.p();
         }
         return TypeWithEnhancementKt.inheritEnhancement(flexibleType, unwrap);
     }

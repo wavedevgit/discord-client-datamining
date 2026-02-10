@@ -1,5 +1,6 @@
 package okhttp3;
 
+import av.x;
 import java.io.File;
 import java.nio.charset.Charset;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -10,7 +11,6 @@ import okio.BufferedSink;
 import okio.ByteString;
 import okio.Source;
 import org.jetbrains.annotations.NotNull;
-import ru.x;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class RequestBody {
     @NotNull
@@ -23,33 +23,33 @@ public abstract class RequestBody {
         public static final class a extends RequestBody {
 
             /* renamed from: a */
-            final /* synthetic */ MediaType f42126a;
+            final /* synthetic */ MediaType f40376a;
 
             /* renamed from: b */
-            final /* synthetic */ File f42127b;
+            final /* synthetic */ File f40377b;
 
             a(MediaType mediaType, File file) {
-                this.f42126a = mediaType;
-                this.f42127b = file;
+                this.f40376a = mediaType;
+                this.f40377b = file;
             }
 
             @Override // okhttp3.RequestBody
             public long contentLength() {
-                return this.f42127b.length();
+                return this.f40377b.length();
             }
 
             @Override // okhttp3.RequestBody
             public MediaType contentType() {
-                return this.f42126a;
+                return this.f40376a;
             }
 
             @Override // okhttp3.RequestBody
             public void writeTo(BufferedSink sink) {
                 Intrinsics.checkNotNullParameter(sink, "sink");
-                Source j10 = x.j(this.f42127b);
+                Source j10 = x.j(this.f40377b);
                 try {
-                    sink.z0(j10);
-                    cs.c.a(j10, null);
+                    sink.A0(j10);
+                    ls.c.a(j10, null);
                 } finally {
                 }
             }
@@ -59,30 +59,30 @@ public abstract class RequestBody {
         public static final class b extends RequestBody {
 
             /* renamed from: a */
-            final /* synthetic */ MediaType f42128a;
+            final /* synthetic */ MediaType f40378a;
 
             /* renamed from: b */
-            final /* synthetic */ ByteString f42129b;
+            final /* synthetic */ ByteString f40379b;
 
             b(MediaType mediaType, ByteString byteString) {
-                this.f42128a = mediaType;
-                this.f42129b = byteString;
+                this.f40378a = mediaType;
+                this.f40379b = byteString;
             }
 
             @Override // okhttp3.RequestBody
             public long contentLength() {
-                return this.f42129b.G();
+                return this.f40379b.G();
             }
 
             @Override // okhttp3.RequestBody
             public MediaType contentType() {
-                return this.f42128a;
+                return this.f40378a;
             }
 
             @Override // okhttp3.RequestBody
             public void writeTo(BufferedSink sink) {
                 Intrinsics.checkNotNullParameter(sink, "sink");
-                sink.Y1(this.f42129b);
+                sink.e2(this.f40379b);
             }
         }
 
@@ -90,38 +90,38 @@ public abstract class RequestBody {
         public static final class c extends RequestBody {
 
             /* renamed from: a */
-            final /* synthetic */ MediaType f42130a;
+            final /* synthetic */ MediaType f40380a;
 
             /* renamed from: b */
-            final /* synthetic */ int f42131b;
+            final /* synthetic */ int f40381b;
 
             /* renamed from: c */
-            final /* synthetic */ byte[] f42132c;
+            final /* synthetic */ byte[] f40382c;
 
             /* renamed from: d */
-            final /* synthetic */ int f42133d;
+            final /* synthetic */ int f40383d;
 
             c(MediaType mediaType, int i10, byte[] bArr, int i11) {
-                this.f42130a = mediaType;
-                this.f42131b = i10;
-                this.f42132c = bArr;
-                this.f42133d = i11;
+                this.f40380a = mediaType;
+                this.f40381b = i10;
+                this.f40382c = bArr;
+                this.f40383d = i11;
             }
 
             @Override // okhttp3.RequestBody
             public long contentLength() {
-                return this.f42131b;
+                return this.f40381b;
             }
 
             @Override // okhttp3.RequestBody
             public MediaType contentType() {
-                return this.f42130a;
+                return this.f40380a;
             }
 
             @Override // okhttp3.RequestBody
             public void writeTo(BufferedSink sink) {
                 Intrinsics.checkNotNullParameter(sink, "sink");
-                sink.write(this.f42132c, this.f42133d, this.f42131b);
+                sink.write(this.f40382c, this.f40383d, this.f40381b);
             }
         }
 
@@ -170,7 +170,7 @@ public abstract class RequestBody {
             if (mediaType != null) {
                 Charset d10 = MediaType.d(mediaType, null, 1, null);
                 if (d10 == null) {
-                    MediaType.a aVar = MediaType.f42047e;
+                    MediaType.a aVar = MediaType.f40297e;
                     mediaType = aVar.c(mediaType + "; charset=utf-8");
                 } else {
                     charset = d10;
@@ -233,7 +233,7 @@ public abstract class RequestBody {
 
         public final RequestBody m(byte[] bArr, MediaType mediaType, int i10, int i11) {
             Intrinsics.checkNotNullParameter(bArr, "<this>");
-            du.e.l(bArr.length, i10, i11);
+            mu.e.l(bArr.length, i10, i11);
             return new c(mediaType, i11, bArr, i10);
         }
 
@@ -267,37 +267,37 @@ public abstract class RequestBody {
         return Companion.b(str, mediaType);
     }
 
-    @rr.c
+    @as.c
     @NotNull
     public static final RequestBody create(MediaType mediaType, @NotNull File file) {
         return Companion.c(mediaType, file);
     }
 
-    @rr.c
+    @as.c
     @NotNull
     public static final RequestBody create(MediaType mediaType, @NotNull String str) {
         return Companion.d(mediaType, str);
     }
 
-    @rr.c
+    @as.c
     @NotNull
     public static final RequestBody create(MediaType mediaType, @NotNull ByteString byteString) {
         return Companion.e(mediaType, byteString);
     }
 
-    @rr.c
+    @as.c
     @NotNull
     public static final RequestBody create(MediaType mediaType, @NotNull byte[] bArr) {
         return Companion.f(mediaType, bArr);
     }
 
-    @rr.c
+    @as.c
     @NotNull
     public static final RequestBody create(MediaType mediaType, @NotNull byte[] bArr, int i10) {
         return Companion.g(mediaType, bArr, i10);
     }
 
-    @rr.c
+    @as.c
     @NotNull
     public static final RequestBody create(MediaType mediaType, @NotNull byte[] bArr, int i10, int i11) {
         return Companion.h(mediaType, bArr, i10, i11);

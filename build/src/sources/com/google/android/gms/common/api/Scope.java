@@ -12,20 +12,20 @@ public final class Scope extends jf.a implements ReflectedParcelable {
     public static final Parcelable.Creator<Scope> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    final int f13871d;
+    final int f14448d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f13872e;
+    private final String f14449e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Scope(int i10, String str) {
         q.g(str, "scopeUri must not be null or empty");
-        this.f13871d = i10;
-        this.f13872e = str;
+        this.f14448d = i10;
+        this.f14449e = str;
     }
 
     public String b() {
-        return this.f13872e;
+        return this.f14449e;
     }
 
     public boolean equals(Object obj) {
@@ -35,20 +35,20 @@ public final class Scope extends jf.a implements ReflectedParcelable {
         if (!(obj instanceof Scope)) {
             return false;
         }
-        return this.f13872e.equals(((Scope) obj).f13872e);
+        return this.f14449e.equals(((Scope) obj).f14449e);
     }
 
     public int hashCode() {
-        return this.f13872e.hashCode();
+        return this.f14449e.hashCode();
     }
 
     public String toString() {
-        return this.f13872e;
+        return this.f14449e;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        int i11 = this.f13871d;
+        int i11 = this.f14448d;
         int a10 = c.a(parcel);
         c.l(parcel, 1, i11);
         c.s(parcel, 2, b(), false);

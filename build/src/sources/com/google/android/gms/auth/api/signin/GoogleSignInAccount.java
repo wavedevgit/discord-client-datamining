@@ -27,68 +27,68 @@ public class GoogleSignInAccount extends jf.a implements ReflectedParcelable {
     public static final Parcelable.Creator<GoogleSignInAccount> CREATOR = new c();
 
     /* renamed from: y  reason: collision with root package name */
-    public static final com.google.android.gms.common.util.d f13791y = com.google.android.gms.common.util.f.c();
+    public static final com.google.android.gms.common.util.d f14368y = com.google.android.gms.common.util.f.c();
 
     /* renamed from: d  reason: collision with root package name */
-    final int f13792d;
+    final int f14369d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f13793e;
+    private final String f14370e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f13794i;
+    private final String f14371i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f13795o;
+    private final String f14372o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f13796p;
+    private final String f14373p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Uri f13797q;
+    private final Uri f14374q;
 
     /* renamed from: r  reason: collision with root package name */
-    private String f13798r;
+    private String f14375r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final long f13799s;
+    private final long f14376s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final String f13800t;
+    private final String f14377t;
 
     /* renamed from: u  reason: collision with root package name */
-    final List f13801u;
+    final List f14378u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final String f13802v;
+    private final String f14379v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final String f13803w;
+    private final String f14380w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final Set f13804x = new HashSet();
+    private final Set f14381x = new HashSet();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public GoogleSignInAccount(int i10, String str, String str2, String str3, String str4, Uri uri, String str5, long j10, String str6, List list, String str7, String str8) {
-        this.f13792d = i10;
-        this.f13793e = str;
-        this.f13794i = str2;
-        this.f13795o = str3;
-        this.f13796p = str4;
-        this.f13797q = uri;
-        this.f13798r = str5;
-        this.f13799s = j10;
-        this.f13800t = str6;
-        this.f13801u = list;
-        this.f13802v = str7;
-        this.f13803w = str8;
+        this.f14369d = i10;
+        this.f14370e = str;
+        this.f14371i = str2;
+        this.f14372o = str3;
+        this.f14373p = str4;
+        this.f14374q = uri;
+        this.f14375r = str5;
+        this.f14376s = j10;
+        this.f14377t = str6;
+        this.f14378u = list;
+        this.f14379v = str7;
+        this.f14380w = str8;
     }
 
-    public static GoogleSignInAccount o(String str, String str2, String str3, String str4, String str5, String str6, Uri uri, Long l10, String str7, Set set) {
+    public static GoogleSignInAccount l(String str, String str2, String str3, String str4, String str5, String str6, Uri uri, Long l10, String str7, Set set) {
         return new GoogleSignInAccount(3, str, str2, str3, str4, uri, null, l10.longValue(), q.f(str7), new ArrayList((Collection) q.l(set)), str5, str6);
     }
 
-    public static GoogleSignInAccount p(String str) {
+    public static GoogleSignInAccount o(String str) {
         Uri uri;
         String str2;
         String str3;
@@ -139,28 +139,28 @@ public class GoogleSignInAccount extends jf.a implements ReflectedParcelable {
         } else {
             str6 = null;
         }
-        GoogleSignInAccount o10 = o(optString2, str2, str3, str4, str5, str6, uri, Long.valueOf(parseLong), jSONObject.getString("obfuscatedIdentifier"), hashSet);
+        GoogleSignInAccount l10 = l(optString2, str2, str3, str4, str5, str6, uri, Long.valueOf(parseLong), jSONObject.getString("obfuscatedIdentifier"), hashSet);
         if (jSONObject.has("serverAuthCode")) {
             str7 = jSONObject.optString("serverAuthCode");
         }
-        o10.f13798r = str7;
-        return o10;
+        l10.f14375r = str7;
+        return l10;
     }
 
     public String b() {
-        return this.f13796p;
+        return this.f14373p;
     }
 
     public String c() {
-        return this.f13795o;
+        return this.f14372o;
     }
 
     public String d() {
-        return this.f13803w;
+        return this.f14380w;
     }
 
     public String e() {
-        return this.f13802v;
+        return this.f14379v;
     }
 
     public boolean equals(Object obj) {
@@ -174,50 +174,50 @@ public class GoogleSignInAccount extends jf.a implements ReflectedParcelable {
             return false;
         }
         GoogleSignInAccount googleSignInAccount = (GoogleSignInAccount) obj;
-        if (!googleSignInAccount.f13800t.equals(this.f13800t) || !googleSignInAccount.j().equals(j())) {
+        if (!googleSignInAccount.f14377t.equals(this.f14377t) || !googleSignInAccount.j().equals(j())) {
             return false;
         }
         return true;
     }
 
     public String f() {
-        return this.f13793e;
+        return this.f14370e;
     }
 
-    public String h() {
-        return this.f13794i;
+    public String g() {
+        return this.f14371i;
     }
 
     public int hashCode() {
-        return ((this.f13800t.hashCode() + 527) * 31) + j().hashCode();
+        return ((this.f14377t.hashCode() + 527) * 31) + j().hashCode();
     }
 
     public Uri i() {
-        return this.f13797q;
+        return this.f14374q;
     }
 
     public Set j() {
-        HashSet hashSet = new HashSet(this.f13801u);
-        hashSet.addAll(this.f13804x);
+        HashSet hashSet = new HashSet(this.f14378u);
+        hashSet.addAll(this.f14381x);
         return hashSet;
     }
 
-    public String l() {
-        return this.f13798r;
+    public String k() {
+        return this.f14375r;
+    }
+
+    public final String p() {
+        return this.f14377t;
     }
 
     public final String q() {
-        return this.f13800t;
-    }
-
-    public final String r() {
         JSONObject jSONObject = new JSONObject();
         try {
             if (f() != null) {
                 jSONObject.put(StackTraceHelper.ID_KEY, f());
             }
-            if (h() != null) {
-                jSONObject.put("tokenId", h());
+            if (g() != null) {
+                jSONObject.put("tokenId", g());
             }
             if (c() != null) {
                 jSONObject.put("email", c());
@@ -235,13 +235,13 @@ public class GoogleSignInAccount extends jf.a implements ReflectedParcelable {
             if (i10 != null) {
                 jSONObject.put("photoUrl", i10.toString());
             }
-            if (l() != null) {
-                jSONObject.put("serverAuthCode", l());
+            if (k() != null) {
+                jSONObject.put("serverAuthCode", k());
             }
-            jSONObject.put("expirationTime", this.f13799s);
-            jSONObject.put("obfuscatedIdentifier", this.f13800t);
+            jSONObject.put("expirationTime", this.f14376s);
+            jSONObject.put("obfuscatedIdentifier", this.f14377t);
             JSONArray jSONArray = new JSONArray();
-            List list = this.f13801u;
+            List list = this.f14378u;
             Scope[] scopeArr = (Scope[]) list.toArray(new Scope[list.size()]);
             Arrays.sort(scopeArr, new Comparator() { // from class: ze.b
                 @Override // java.util.Comparator
@@ -264,16 +264,16 @@ public class GoogleSignInAccount extends jf.a implements ReflectedParcelable {
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
         int a10 = jf.c.a(parcel);
-        jf.c.l(parcel, 1, this.f13792d);
+        jf.c.l(parcel, 1, this.f14369d);
         jf.c.s(parcel, 2, f(), false);
-        jf.c.s(parcel, 3, h(), false);
+        jf.c.s(parcel, 3, g(), false);
         jf.c.s(parcel, 4, c(), false);
         jf.c.s(parcel, 5, b(), false);
         jf.c.q(parcel, 6, i(), i10, false);
-        jf.c.s(parcel, 7, l(), false);
-        jf.c.o(parcel, 8, this.f13799s);
-        jf.c.s(parcel, 9, this.f13800t, false);
-        jf.c.w(parcel, 10, this.f13801u, false);
+        jf.c.s(parcel, 7, k(), false);
+        jf.c.o(parcel, 8, this.f14376s);
+        jf.c.s(parcel, 9, this.f14377t, false);
+        jf.c.w(parcel, 10, this.f14378u, false);
         jf.c.s(parcel, 11, e(), false);
         jf.c.s(parcel, 12, d(), false);
         jf.c.b(parcel, a10);

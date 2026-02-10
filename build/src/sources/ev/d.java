@@ -1,70 +1,82 @@
 package ev;
 
-import ev.e;
+import ev.f;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements tu.b, e {
+public final class d implements cv.a, f {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f22150a = new d();
+    public static final d f23272a = new d();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f22151d = new a();
-
-        a() {
-            super(2);
-        }
-
-        public final Boolean a(int i10, int i11) {
-            boolean z10;
-            if (i10 <= i11) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            return Boolean.valueOf(z10);
+    /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
+        a(Object obj) {
+            super(2, obj, d.class, "mapOrEmptyList", "mapOrEmptyList(Loperations/array/ArrayOperationInputData;LLogicEvaluator;)Ljava/util/List;", 0);
         }
 
         @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+        /* renamed from: a */
+        public final List invoke(b p02, h p12) {
+            Intrinsics.checkNotNullParameter(p02, "p0");
+            Intrinsics.checkNotNullParameter(p12, "p1");
+            return ((d) this.receiver).h(p02, p12);
         }
     }
 
     private d() {
     }
 
-    @Override // uu.c
-    public boolean b(List list, Function2 function2) {
-        return e.a.b(this, list, function2);
+    /* JADX INFO: Access modifiers changed from: private */
+    public final List h(b bVar, h hVar) {
+        List b10 = bVar.b();
+        if (b10 == null) {
+            b10 = CollectionsKt.l();
+        }
+        List<Object> list = b10;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+        for (Object obj : list) {
+            arrayList.add(f23272a.i(hVar, obj, bVar.a(), bVar.c()));
+        }
+        return arrayList;
     }
 
-    @Override // uu.a
-    public Boolean c(Object obj) {
-        return e.a.f(this, obj);
+    private final Object i(h hVar, Object obj, Map map, Object obj2) {
+        Object a10;
+        if (map != null && (a10 = hVar.a(map, obj)) != null) {
+            return a10;
+        }
+        return obj2;
     }
 
-    @Override // uu.b
-    public List d(Comparable comparable, Comparable comparable2) {
-        return e.a.e(this, comparable, comparable2);
+    @Override // ev.a
+    public Object a(Map map, List list) {
+        return f.a.b(this, map, list);
     }
 
-    public boolean e(List list, Function2 function2) {
-        return e.a.c(this, list, function2);
+    @Override // ev.f
+    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
+        return f.a.c(this, obj, obj2, hVar, function2);
     }
 
-    @Override // tu.b
-    public Object f(Object obj, Object obj2) {
-        return Boolean.valueOf(e(dw.a.c(obj), a.f22151d));
+    @Override // ev.a
+    public b d(List list, Object obj, h hVar) {
+        return f.a.a(this, list, obj, hVar);
     }
 
-    @Override // uu.b
-    public List g(Comparable comparable, Comparable comparable2) {
-        return e.a.d(this, comparable, comparable2);
+    @Override // cv.a
+    public Object e(Object obj, Object obj2, h evaluator) {
+        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+        return b(obj, obj2, evaluator, new a(this));
+    }
+
+    @Override // lw.a
+    public List f(List list, Object obj, h hVar) {
+        return f.a.d(this, list, obj, hVar);
     }
 }

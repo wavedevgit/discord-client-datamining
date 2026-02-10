@@ -1,114 +1,249 @@
 package oo;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
-import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.viewbinding.ViewBinding;
-import com.google.android.material.button.MaterialButton;
-import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
-import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
-import ko.m4;
-import ko.n4;
+import android.os.Parcel;
+import android.os.Parcelable;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements ViewBinding {
+public abstract class d implements Parcelable {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f42467a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a extends d {
+        @NotNull
+        public static final Parcelable.Creator<a> CREATOR = new C0564a();
 
-    /* renamed from: b  reason: collision with root package name */
-    public final TextView f42468b;
+        /* renamed from: d  reason: collision with root package name */
+        private final String f40711d;
 
-    /* renamed from: c  reason: collision with root package name */
-    public final MaterialButton f42469c;
+        /* renamed from: e  reason: collision with root package name */
+        private final oo.a f40712e;
 
-    /* renamed from: d  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f42470d;
+        /* renamed from: i  reason: collision with root package name */
+        private final int f40713i;
 
-    /* renamed from: e  reason: collision with root package name */
-    public final View f42471e;
+        /* renamed from: oo.d$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0564a implements Parcelable.Creator {
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: a */
+            public final a createFromParcel(Parcel parcel) {
+                Intrinsics.checkNotNullParameter(parcel, "parcel");
+                return new a(parcel.readString(), oo.a.CREATOR.createFromParcel(parcel), parcel.readInt());
+            }
 
-    /* renamed from: f  reason: collision with root package name */
-    public final ConstraintLayout f42472f;
-
-    /* renamed from: g  reason: collision with root package name */
-    public final CardView f42473g;
-
-    /* renamed from: h  reason: collision with root package name */
-    public final Pi2NavigationBar f42474h;
-
-    /* renamed from: i  reason: collision with root package name */
-    public final TextView f42475i;
-
-    /* renamed from: j  reason: collision with root package name */
-    public final Button f42476j;
-
-    private d(CoordinatorLayout coordinatorLayout, TextView textView, MaterialButton materialButton, ThemeableLottieAnimationView themeableLottieAnimationView, View view, ConstraintLayout constraintLayout, CardView cardView, Pi2NavigationBar pi2NavigationBar, TextView textView2, Button button) {
-        this.f42467a = coordinatorLayout;
-        this.f42468b = textView;
-        this.f42469c = materialButton;
-        this.f42470d = themeableLottieAnimationView;
-        this.f42471e = view;
-        this.f42472f = constraintLayout;
-        this.f42473g = cardView;
-        this.f42474h = pi2NavigationBar;
-        this.f42475i = textView2;
-        this.f42476j = button;
-    }
-
-    public static d a(View view) {
-        View a10;
-        int i10 = m4.f31380d;
-        TextView textView = (TextView) e4.a.a(view, i10);
-        if (textView != null) {
-            i10 = m4.f31392j;
-            MaterialButton materialButton = (MaterialButton) e4.a.a(view, i10);
-            if (materialButton != null) {
-                i10 = m4.N;
-                ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
-                if (themeableLottieAnimationView != null && (a10 = e4.a.a(view, (i10 = m4.O))) != null) {
-                    i10 = m4.S;
-                    ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
-                    if (constraintLayout != null) {
-                        i10 = m4.X;
-                        CardView cardView = (CardView) e4.a.a(view, i10);
-                        if (cardView != null) {
-                            i10 = m4.Y;
-                            Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
-                            if (pi2NavigationBar != null) {
-                                i10 = m4.D0;
-                                TextView textView2 = (TextView) e4.a.a(view, i10);
-                                if (textView2 != null) {
-                                    i10 = m4.F0;
-                                    Button button = (Button) e4.a.a(view, i10);
-                                    if (button != null) {
-                                        return new d((CoordinatorLayout) view, textView, materialButton, themeableLottieAnimationView, a10, constraintLayout, cardView, pi2NavigationBar, textView2, button);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: b */
+            public final a[] newArray(int i10) {
+                return new a[i10];
             }
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
-    }
 
-    public static d c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n4.f31547d, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
+        public /* synthetic */ a(String str, oo.a aVar, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+            this(str, aVar, (i11 & 4) != 0 ? 0 : i10);
         }
-        return a(inflate);
+
+        public static /* synthetic */ a b(a aVar, String str, oo.a aVar2, int i10, int i11, Object obj) {
+            if ((i11 & 1) != 0) {
+                str = aVar.f40711d;
+            }
+            if ((i11 & 2) != 0) {
+                aVar2 = aVar.f40712e;
+            }
+            if ((i11 & 4) != 0) {
+                i10 = aVar.f40713i;
+            }
+            return aVar.a(str, aVar2, i10);
+        }
+
+        public final a a(String absoluteFilePath, oo.a captureMethod, int i10) {
+            Intrinsics.checkNotNullParameter(absoluteFilePath, "absoluteFilePath");
+            Intrinsics.checkNotNullParameter(captureMethod, "captureMethod");
+            return new a(absoluteFilePath, captureMethod, i10);
+        }
+
+        public final String c() {
+            return this.f40711d;
+        }
+
+        public final oo.a d() {
+            return this.f40712e;
+        }
+
+        @Override // android.os.Parcelable
+        public final int describeContents() {
+            return 0;
+        }
+
+        public final int e() {
+            return this.f40713i;
+        }
+
+        public boolean equals(Object obj) {
+            Class<?> cls;
+            if (this == obj) {
+                return true;
+            }
+            if (obj != null) {
+                cls = obj.getClass();
+            } else {
+                cls = null;
+            }
+            if (!Intrinsics.areEqual(a.class, cls)) {
+                return false;
+            }
+            Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.document.DocumentFile.Local");
+            return Intrinsics.areEqual(this.f40711d, ((a) obj).f40711d);
+        }
+
+        public int hashCode() {
+            return this.f40711d.hashCode();
+        }
+
+        public String toString() {
+            String str = this.f40711d;
+            oo.a aVar = this.f40712e;
+            int i10 = this.f40713i;
+            return "Local(absoluteFilePath=" + str + ", captureMethod=" + aVar + ", uploadProgress=" + i10 + ")";
+        }
+
+        @Override // android.os.Parcelable
+        public final void writeToParcel(Parcel dest, int i10) {
+            Intrinsics.checkNotNullParameter(dest, "dest");
+            dest.writeString(this.f40711d);
+            this.f40712e.writeToParcel(dest, i10);
+            dest.writeInt(this.f40713i);
+        }
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public a(String absoluteFilePath, oo.a captureMethod, int i10) {
+            super(null);
+            Intrinsics.checkNotNullParameter(absoluteFilePath, "absoluteFilePath");
+            Intrinsics.checkNotNullParameter(captureMethod, "captureMethod");
+            this.f40711d = absoluteFilePath;
+            this.f40712e = captureMethod;
+            this.f40713i = i10;
+        }
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public CoordinatorLayout getRoot() {
-        return this.f42467a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b extends d {
+        @NotNull
+        public static final Parcelable.Creator<b> CREATOR = new a();
+
+        /* renamed from: d  reason: collision with root package name */
+        private final String f40714d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private final String f40715e;
+
+        /* renamed from: i  reason: collision with root package name */
+        private final String f40716i;
+
+        /* renamed from: o  reason: collision with root package name */
+        private final String f40717o;
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class a implements Parcelable.Creator {
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: a */
+            public final b createFromParcel(Parcel parcel) {
+                Intrinsics.checkNotNullParameter(parcel, "parcel");
+                return new b(parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString());
+            }
+
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: b */
+            public final b[] newArray(int i10) {
+                return new b[i10];
+            }
+        }
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public b(String str, String str2, String remoteUrl, String documentFileId) {
+            super(null);
+            Intrinsics.checkNotNullParameter(remoteUrl, "remoteUrl");
+            Intrinsics.checkNotNullParameter(documentFileId, "documentFileId");
+            this.f40714d = str;
+            this.f40715e = str2;
+            this.f40716i = remoteUrl;
+            this.f40717o = documentFileId;
+        }
+
+        public final String a() {
+            return this.f40714d;
+        }
+
+        public final String b() {
+            return this.f40717o;
+        }
+
+        public final String c() {
+            return this.f40715e;
+        }
+
+        public final String d() {
+            return this.f40716i;
+        }
+
+        @Override // android.os.Parcelable
+        public final int describeContents() {
+            return 0;
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if (!(obj instanceof b)) {
+                return false;
+            }
+            b bVar = (b) obj;
+            if (Intrinsics.areEqual(this.f40714d, bVar.f40714d) && Intrinsics.areEqual(this.f40715e, bVar.f40715e) && Intrinsics.areEqual(this.f40716i, bVar.f40716i) && Intrinsics.areEqual(this.f40717o, bVar.f40717o)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            int hashCode;
+            String str = this.f40714d;
+            int i10 = 0;
+            if (str == null) {
+                hashCode = 0;
+            } else {
+                hashCode = str.hashCode();
+            }
+            int i11 = hashCode * 31;
+            String str2 = this.f40715e;
+            if (str2 != null) {
+                i10 = str2.hashCode();
+            }
+            return ((((i11 + i10) * 31) + this.f40716i.hashCode()) * 31) + this.f40717o.hashCode();
+        }
+
+        public String toString() {
+            String str = this.f40714d;
+            String str2 = this.f40715e;
+            String str3 = this.f40716i;
+            String str4 = this.f40717o;
+            return "Remote(absoluteFilePath=" + str + ", filename=" + str2 + ", remoteUrl=" + str3 + ", documentFileId=" + str4 + ")";
+        }
+
+        @Override // android.os.Parcelable
+        public final void writeToParcel(Parcel dest, int i10) {
+            Intrinsics.checkNotNullParameter(dest, "dest");
+            dest.writeString(this.f40714d);
+            dest.writeString(this.f40715e);
+            dest.writeString(this.f40716i);
+            dest.writeString(this.f40717o);
+        }
+    }
+
+    public /* synthetic */ d(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    private d() {
     }
 }

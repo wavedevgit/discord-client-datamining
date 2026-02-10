@@ -6,21 +6,21 @@ import java.util.List;
 public final class i0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f6416a;
+    private final List f6522a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final BillingResult f6417b;
+    private final BillingResult f6523b;
 
     public i0(BillingResult billingResult, List list) {
-        this.f6416a = list;
-        this.f6417b = billingResult;
+        this.f6522a = list;
+        this.f6523b = billingResult;
     }
 
     public final BillingResult a() {
-        return this.f6417b;
+        return this.f6523b;
     }
 
     public final List b() {
-        return this.f6416a;
+        return this.f6522a;
     }
 }

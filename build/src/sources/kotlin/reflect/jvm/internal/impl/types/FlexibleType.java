@@ -11,18 +11,18 @@ import org.jetbrains.annotations.NotNull;
 public abstract class FlexibleType extends UnwrappedType implements FlexibleTypeMarker {
 
     /* renamed from: e  reason: collision with root package name */
-    private final SimpleType f34325e;
+    private final SimpleType f34547e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final SimpleType f34326i;
+    private final SimpleType f34548i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public FlexibleType(@NotNull SimpleType lowerBound, @NotNull SimpleType upperBound) {
         super(null);
         Intrinsics.checkNotNullParameter(lowerBound, "lowerBound");
         Intrinsics.checkNotNullParameter(upperBound, "upperBound");
-        this.f34325e = lowerBound;
-        this.f34326i = upperBound;
+        this.f34547e = lowerBound;
+        this.f34548i = upperBound;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -48,7 +48,7 @@ public abstract class FlexibleType extends UnwrappedType implements FlexibleType
 
     @NotNull
     public final SimpleType getLowerBound() {
-        return this.f34325e;
+        return this.f34547e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -59,7 +59,7 @@ public abstract class FlexibleType extends UnwrappedType implements FlexibleType
 
     @NotNull
     public final SimpleType getUpperBound() {
-        return this.f34326i;
+        return this.f34548i;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType

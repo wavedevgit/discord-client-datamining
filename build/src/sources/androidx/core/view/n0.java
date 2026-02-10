@@ -2,123 +2,75 @@ package androidx.core.view;
 
 import android.view.View;
 import android.view.ViewGroup;
-import java.util.Iterator;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.markers.KMutableIterator;
-import kotlin.sequences.Sequence;
+import android.view.WindowInsets;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class n0 {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class a implements Sequence {
+    /* renamed from: a  reason: collision with root package name */
+    private static final WindowInsets f3534a = WindowInsetsCompat.f3405b.B();
 
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ ViewGroup f3531a;
-
-        a(ViewGroup viewGroup) {
-            this.f3531a = viewGroup;
-        }
-
-        @Override // kotlin.sequences.Sequence
-        public Iterator iterator() {
-            return n0.c(this.f3531a);
-        }
-    }
+    /* renamed from: b  reason: collision with root package name */
+    static boolean f3535b = false;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    static final class b implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final b f3532d = new b();
-
-        b() {
+    static class a {
+        static boolean a(ViewGroup viewGroup) {
+            return viewGroup.isTransitionGroup();
         }
+    }
 
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final Iterator invoke(View view) {
-            ViewGroup viewGroup;
-            Sequence a10;
-            if (view instanceof ViewGroup) {
-                viewGroup = (ViewGroup) view;
-            } else {
-                viewGroup = null;
+    public static /* synthetic */ WindowInsets a(WindowInsets[] windowInsetsArr, View.OnApplyWindowInsetsListener onApplyWindowInsetsListener, View view, WindowInsets windowInsets) {
+        WindowInsets onApplyWindowInsets;
+        if (onApplyWindowInsetsListener != null) {
+            onApplyWindowInsets = onApplyWindowInsetsListener.onApplyWindowInsets(view, windowInsets);
+        } else {
+            onApplyWindowInsets = view.onApplyWindowInsets(windowInsets);
+        }
+        windowInsetsArr[0] = onApplyWindowInsets;
+        return f3534a;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static WindowInsets b(View view, WindowInsets windowInsets) {
+        final View.OnApplyWindowInsetsListener onApplyWindowInsetsListener;
+        Object tag = view.getTag(o1.e.M);
+        Object tag2 = view.getTag(o1.e.T);
+        if (tag instanceof View.OnApplyWindowInsetsListener) {
+            onApplyWindowInsetsListener = (View.OnApplyWindowInsetsListener) tag;
+        } else if (tag2 instanceof View.OnApplyWindowInsetsListener) {
+            onApplyWindowInsetsListener = (View.OnApplyWindowInsetsListener) tag2;
+        } else {
+            onApplyWindowInsetsListener = null;
+        }
+        final WindowInsets[] windowInsetsArr = {f3534a};
+        view.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() { // from class: androidx.core.view.m0
+            @Override // android.view.View.OnApplyWindowInsetsListener
+            public final WindowInsets onApplyWindowInsets(View view2, WindowInsets windowInsets2) {
+                return n0.a(windowInsetsArr, onApplyWindowInsetsListener, view2, windowInsets2);
             }
-            if (viewGroup == null || (a10 = n0.a(viewGroup)) == null) {
-                return null;
+        });
+        view.dispatchApplyWindowInsets(windowInsets);
+        Object tag3 = view.getTag(o1.e.L);
+        if (tag3 instanceof View.OnApplyWindowInsetsListener) {
+            onApplyWindowInsetsListener = (View.OnApplyWindowInsetsListener) tag3;
+        }
+        view.setOnApplyWindowInsetsListener(onApplyWindowInsetsListener);
+        WindowInsets windowInsets2 = windowInsetsArr[0];
+        if (windowInsets2 != null && !windowInsets2.isConsumed() && (view instanceof ViewGroup)) {
+            ViewGroup viewGroup = (ViewGroup) view;
+            int childCount = viewGroup.getChildCount();
+            for (int i10 = 0; i10 < childCount; i10++) {
+                b(viewGroup.getChildAt(i10), windowInsetsArr[0]);
             }
-            return a10.iterator();
         }
+        WindowInsets windowInsets3 = windowInsetsArr[0];
+        if (windowInsets3 != null) {
+            return windowInsets3;
+        }
+        return f3534a;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class c implements Iterator, KMutableIterator {
-
-        /* renamed from: d  reason: collision with root package name */
-        private int f3533d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ ViewGroup f3534e;
-
-        c(ViewGroup viewGroup) {
-            this.f3534e = viewGroup;
-        }
-
-        @Override // java.util.Iterator
-        /* renamed from: a */
-        public View next() {
-            ViewGroup viewGroup = this.f3534e;
-            int i10 = this.f3533d;
-            this.f3533d = i10 + 1;
-            View childAt = viewGroup.getChildAt(i10);
-            if (childAt != null) {
-                return childAt;
-            }
-            throw new IndexOutOfBoundsException();
-        }
-
-        @Override // java.util.Iterator
-        public boolean hasNext() {
-            if (this.f3533d < this.f3534e.getChildCount()) {
-                return true;
-            }
-            return false;
-        }
-
-        @Override // java.util.Iterator
-        public void remove() {
-            ViewGroup viewGroup = this.f3534e;
-            int i10 = this.f3533d - 1;
-            this.f3533d = i10;
-            viewGroup.removeViewAt(i10);
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class d implements Sequence {
-
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ ViewGroup f3535a;
-
-        public d(ViewGroup viewGroup) {
-            this.f3535a = viewGroup;
-        }
-
-        @Override // kotlin.sequences.Sequence
-        public Iterator iterator() {
-            return new d0(n0.a(this.f3535a).iterator(), b.f3532d);
-        }
-    }
-
-    public static final Sequence a(ViewGroup viewGroup) {
-        return new a(viewGroup);
-    }
-
-    public static final Sequence b(ViewGroup viewGroup) {
-        return new d(viewGroup);
-    }
-
-    public static final Iterator c(ViewGroup viewGroup) {
-        return new c(viewGroup);
+    public static boolean c(ViewGroup viewGroup) {
+        return a.a(viewGroup);
     }
 }

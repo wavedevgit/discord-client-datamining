@@ -10,22 +10,22 @@ public final class UploadDataProviders {
     }
 
     public static UploadDataProvider create(File file) {
-        return jv.a.b(file);
+        return sv.a.b(file);
     }
 
     public static UploadDataProvider create(ParcelFileDescriptor parcelFileDescriptor) {
-        return jv.a.a(parcelFileDescriptor);
+        return sv.a.a(parcelFileDescriptor);
     }
 
     public static UploadDataProvider create(ByteBuffer byteBuffer) {
-        return jv.a.c(byteBuffer);
+        return sv.a.c(byteBuffer);
     }
 
     public static UploadDataProvider create(byte[] bArr, int i10, int i11) {
-        return jv.a.e(bArr, i10, i11);
+        return sv.a.e(bArr, i10, i11);
     }
 
     public static UploadDataProvider create(byte[] bArr) {
-        return jv.a.d(bArr);
+        return sv.a.d(bArr);
     }
 }

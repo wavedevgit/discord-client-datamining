@@ -5,7 +5,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
 import org.jetbrains.annotations.NotNull;
-@gt.m(with = Serializer.class)
+@qt.m(with = Serializer.class)
 @Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bw\u0018\u0000 \n*\b\b\u0000\u0010\u0001*\u00020\u00022\u00020\u0003:\u0004\u0007\b\t\nR\u0014\u0010\u0004\u001a\u0004\u0018\u00018\u0000X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006\u0082\u0001\u0002\u000b\f¨\u0006\r"}, d2 = {"Lcom/discord/chat/bridge/botuikit/SectionChildComponent;", "T", "Lcom/discord/chat/bridge/botuikit/Component;", "", "component", "getComponent", "()Lcom/discord/chat/bridge/botuikit/Component;", "TextDisplay", "Unknown", "Serializer", "Companion", "Lcom/discord/chat/bridge/botuikit/SectionChildComponent$TextDisplay;", "Lcom/discord/chat/bridge/botuikit/SectionChildComponent$Unknown;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface SectionChildComponent<T extends Component> {
@@ -56,7 +56,7 @@ public interface SectionChildComponent<T extends Component> {
         @NotNull
         public SectionChildComponent<?> toValue(@NotNull Component component) {
             Intrinsics.checkNotNullParameter(component, "component");
-            return component instanceof TextDisplayComponent ? TextDisplay.m285boximpl(TextDisplay.m286constructorimpl((TextDisplayComponent) component)) : new Unknown();
+            return component instanceof TextDisplayComponent ? TextDisplay.m286boximpl(TextDisplay.m287constructorimpl((TextDisplayComponent) component)) : new Unknown();
         }
     }
 
@@ -71,51 +71,51 @@ public interface SectionChildComponent<T extends Component> {
         }
 
         /* renamed from: box-impl  reason: not valid java name */
-        public static final /* synthetic */ TextDisplay m285boximpl(TextDisplayComponent textDisplayComponent) {
+        public static final /* synthetic */ TextDisplay m286boximpl(TextDisplayComponent textDisplayComponent) {
             return new TextDisplay(textDisplayComponent);
         }
 
         @NotNull
         /* renamed from: constructor-impl  reason: not valid java name */
-        public static TextDisplayComponent m286constructorimpl(@NotNull TextDisplayComponent component) {
+        public static TextDisplayComponent m287constructorimpl(@NotNull TextDisplayComponent component) {
             Intrinsics.checkNotNullParameter(component, "component");
             return component;
         }
 
         /* renamed from: equals-impl  reason: not valid java name */
-        public static boolean m287equalsimpl(TextDisplayComponent textDisplayComponent, Object obj) {
-            return (obj instanceof TextDisplay) && Intrinsics.areEqual(textDisplayComponent, ((TextDisplay) obj).m291unboximpl());
+        public static boolean m288equalsimpl(TextDisplayComponent textDisplayComponent, Object obj) {
+            return (obj instanceof TextDisplay) && Intrinsics.areEqual(textDisplayComponent, ((TextDisplay) obj).m292unboximpl());
         }
 
         /* renamed from: equals-impl0  reason: not valid java name */
-        public static final boolean m288equalsimpl0(TextDisplayComponent textDisplayComponent, TextDisplayComponent textDisplayComponent2) {
+        public static final boolean m289equalsimpl0(TextDisplayComponent textDisplayComponent, TextDisplayComponent textDisplayComponent2) {
             return Intrinsics.areEqual(textDisplayComponent, textDisplayComponent2);
         }
 
         /* renamed from: hashCode-impl  reason: not valid java name */
-        public static int m289hashCodeimpl(TextDisplayComponent textDisplayComponent) {
+        public static int m290hashCodeimpl(TextDisplayComponent textDisplayComponent) {
             return textDisplayComponent.hashCode();
         }
 
         /* renamed from: toString-impl  reason: not valid java name */
-        public static String m290toStringimpl(TextDisplayComponent textDisplayComponent) {
+        public static String m291toStringimpl(TextDisplayComponent textDisplayComponent) {
             return "TextDisplay(component=" + textDisplayComponent + ")";
         }
 
         public boolean equals(Object obj) {
-            return m287equalsimpl(this.component, obj);
+            return m288equalsimpl(this.component, obj);
         }
 
         public int hashCode() {
-            return m289hashCodeimpl(this.component);
+            return m290hashCodeimpl(this.component);
         }
 
         public String toString() {
-            return m290toStringimpl(this.component);
+            return m291toStringimpl(this.component);
         }
 
         /* renamed from: unbox-impl  reason: not valid java name */
-        public final /* synthetic */ TextDisplayComponent m291unboximpl() {
+        public final /* synthetic */ TextDisplayComponent m292unboximpl() {
             return this.component;
         }
 

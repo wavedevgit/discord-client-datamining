@@ -14,16 +14,16 @@ public class f extends g {
     int r(z5.a aVar, float f10) {
         int e10;
         float f11;
-        if (aVar.f56053b != null) {
-            if (aVar.f56054c == null) {
+        if (aVar.f56092b != null) {
+            if (aVar.f56093c == null) {
                 e10 = aVar.h();
             } else {
                 e10 = aVar.e();
             }
-            z5.c cVar = this.f40260e;
+            z5.c cVar = this.f38586e;
             if (cVar != null) {
                 f11 = f10;
-                Integer num = (Integer) cVar.b(aVar.f56058g, aVar.f56059h.floatValue(), (Integer) aVar.f56053b, Integer.valueOf(e10), f11, e(), f());
+                Integer num = (Integer) cVar.b(aVar.f56097g, aVar.f56098h.floatValue(), (Integer) aVar.f56092b, Integer.valueOf(e10), f11, e(), f());
                 if (num != null) {
                     return num.intValue();
                 }

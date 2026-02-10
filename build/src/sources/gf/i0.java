@@ -8,52 +8,52 @@ import java.util.Map;
 import java.util.Set;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class i0 implements c.InterfaceC0382c, t0 {
+public final class i0 implements c.InterfaceC0361c, t0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a.f f24328a;
+    private final a.f f25628a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f24329b;
+    private final b f25629b;
 
     /* renamed from: c  reason: collision with root package name */
-    private hf.j f24330c = null;
+    private hf.j f25630c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private Set f24331d = null;
+    private Set f25631d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f24332e = false;
+    private boolean f25632e = false;
 
     /* renamed from: f  reason: collision with root package name */
-    final /* synthetic */ e f24333f;
+    final /* synthetic */ e f25633f;
 
     public i0(e eVar, a.f fVar, b bVar) {
-        this.f24333f = eVar;
-        this.f24328a = fVar;
-        this.f24329b = bVar;
+        this.f25633f = eVar;
+        this.f25628a = fVar;
+        this.f25629b = bVar;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void i() {
         hf.j jVar;
-        if (this.f24332e && (jVar = this.f24330c) != null) {
-            this.f24328a.m(jVar, this.f24331d);
+        if (this.f25632e && (jVar = this.f25630c) != null) {
+            this.f25628a.m(jVar, this.f25631d);
         }
     }
 
-    @Override // hf.c.InterfaceC0382c
+    @Override // hf.c.InterfaceC0361c
     public final void a(com.google.android.gms.common.b bVar) {
         Handler handler;
-        handler = this.f24333f.f24296y;
+        handler = this.f25633f.f25596y;
         handler.post(new h0(this, bVar));
     }
 
     @Override // gf.t0
     public final void b(hf.j jVar, Set set) {
         if (jVar != null && set != null) {
-            this.f24330c = jVar;
-            this.f24331d = set;
+            this.f25630c = jVar;
+            this.f25631d = set;
             i();
             return;
         }
@@ -64,8 +64,8 @@ public final class i0 implements c.InterfaceC0382c, t0 {
     @Override // gf.t0
     public final void c(com.google.android.gms.common.b bVar) {
         Map map;
-        map = this.f24333f.f24292u;
-        e0 e0Var = (e0) map.get(this.f24329b);
+        map = this.f25633f.f25592u;
+        e0 e0Var = (e0) map.get(this.f25629b);
         if (e0Var != null) {
             e0Var.I(bVar);
         }
@@ -75,10 +75,10 @@ public final class i0 implements c.InterfaceC0382c, t0 {
     public final void d(int i10) {
         Map map;
         boolean z10;
-        map = this.f24333f.f24292u;
-        e0 e0Var = (e0) map.get(this.f24329b);
+        map = this.f25633f.f25592u;
+        e0 e0Var = (e0) map.get(this.f25629b);
         if (e0Var != null) {
-            z10 = e0Var.f24306k;
+            z10 = e0Var.f25606k;
             if (z10) {
                 e0Var.I(new com.google.android.gms.common.b(17));
             } else {

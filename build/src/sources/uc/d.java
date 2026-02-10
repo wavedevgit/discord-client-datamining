@@ -5,49 +5,49 @@ import uc.z;
 public class d implements z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f51451a;
+    private final long f50630a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f51452b;
+    private final long f50631b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f51453c;
+    private final int f50632c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f51454d;
+    private final long f50633d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f51455e;
+    private final int f50634e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final long f51456f;
+    private final long f50635f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f51457g;
+    private final boolean f50636g;
 
     public d(long j10, long j11, int i10, int i11, boolean z10) {
-        this.f51451a = j10;
-        this.f51452b = j11;
-        this.f51453c = i11 == -1 ? 1 : i11;
-        this.f51455e = i10;
-        this.f51457g = z10;
+        this.f50630a = j10;
+        this.f50631b = j11;
+        this.f50632c = i11 == -1 ? 1 : i11;
+        this.f50634e = i10;
+        this.f50636g = z10;
         if (j10 == -1) {
-            this.f51454d = -1L;
-            this.f51456f = -9223372036854775807L;
+            this.f50633d = -1L;
+            this.f50635f = -9223372036854775807L;
             return;
         }
-        this.f51454d = j10 - j11;
-        this.f51456f = d(j10, j11, i10);
+        this.f50633d = j10 - j11;
+        this.f50635f = d(j10, j11, i10);
     }
 
     private long a(long j10) {
-        int i10 = this.f51453c;
-        long j11 = (((j10 * this.f51455e) / 8000000) / i10) * i10;
-        long j12 = this.f51454d;
+        int i10 = this.f50632c;
+        long j11 = (((j10 * this.f50634e) / 8000000) / i10) * i10;
+        long j12 = this.f50633d;
         if (j12 != -1) {
             j11 = Math.min(j11, j12 - i10);
         }
-        return this.f51452b + Math.max(j11, 0L);
+        return this.f50631b + Math.max(j11, 0L);
     }
 
     private static long d(long j10, long j11, int i10) {
@@ -55,20 +55,20 @@ public class d implements z {
     }
 
     public long c(long j10) {
-        return d(j10, this.f51452b, this.f51455e);
+        return d(j10, this.f50631b, this.f50634e);
     }
 
     @Override // uc.z
     public z.a e(long j10) {
-        if (this.f51454d == -1 && !this.f51457g) {
-            return new z.a(new a0(0L, this.f51452b));
+        if (this.f50633d == -1 && !this.f50636g) {
+            return new z.a(new a0(0L, this.f50631b));
         }
         long a10 = a(j10);
         long c10 = c(a10);
         a0 a0Var = new a0(c10, a10);
-        if (this.f51454d != -1 && c10 < j10) {
-            int i10 = this.f51453c;
-            if (i10 + a10 < this.f51451a) {
+        if (this.f50633d != -1 && c10 < j10) {
+            int i10 = this.f50632c;
+            if (i10 + a10 < this.f50630a) {
                 long j11 = a10 + i10;
                 return new z.a(a0Var, new a0(c(j11), j11));
             }
@@ -78,7 +78,7 @@ public class d implements z {
 
     @Override // uc.z
     public boolean g() {
-        if (this.f51454d == -1 && !this.f51457g) {
+        if (this.f50633d == -1 && !this.f50636g) {
             return false;
         }
         return true;
@@ -86,6 +86,6 @@ public class d implements z {
 
     @Override // uc.z
     public long i() {
-        return this.f51456f;
+        return this.f50635f;
     }
 }

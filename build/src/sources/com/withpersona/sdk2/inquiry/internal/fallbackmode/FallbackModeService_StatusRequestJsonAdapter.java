@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_StatusRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18962a;
+    private final m.b f19842a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18963b;
+    private final com.squareup.moshi.h f19843b;
 
     public FallbackModeService_StatusRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("inquiry-template-id");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18962a = a10;
+        this.f19842a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "inquiryTemplateId");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18963b = f10;
+        this.f19843b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,13 +35,13 @@ public final class FallbackModeService_StatusRequestJsonAdapter extends com.squa
         reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18962a);
+            int J = reader.J(this.f19842a);
             if (J != -1) {
                 if (J == 0) {
-                    str = (String) this.f18963b.fromJson(reader);
+                    str = (String) this.f19843b.fromJson(reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -54,9 +54,9 @@ public final class FallbackModeService_StatusRequestJsonAdapter extends com.squa
     public void toJson(t writer, FallbackModeService.StatusRequest statusRequest) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (statusRequest != null) {
-            writer.k();
+            writer.i();
             writer.J("inquiry-template-id");
-            this.f18963b.toJson(writer, statusRequest.a());
+            this.f19843b.toJson(writer, statusRequest.a());
             writer.s();
             return;
         }

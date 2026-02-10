@@ -25,13 +25,13 @@ public abstract class InternalErrorInfo implements Parcelable {
         @Override // com.squareup.moshi.h
         public void toJson(t tVar, Object obj) {
             String str;
-            t J = tVar.k().J("message");
+            t J = tVar.i().J("message");
             if (obj != null) {
                 str = obj.getClass().getCanonicalName();
             } else {
                 str = null;
             }
-            J.r1("Error with class '" + str + "' does not have a json adapter registered.").s();
+            J.V0("Error with class '" + str + "' does not have a json adapter registered.").s();
         }
     }.nullSafe();
 
@@ -121,7 +121,7 @@ public abstract class InternalErrorInfo implements Parcelable {
 
         @NotNull
         public final h.e createAdapter() {
-            return an.b.b(InternalErrorInfo.class, "type").e(NetworkErrorInfo.class, "network").e(IntegrationErrorInfo.class, "integration").e(PermissionErrorInfo.class, "permission").e(CameraErrorInfo.class, "camera").e(ConfigurationErrorInfo.class, "configuration").e(InvalidOneTimeLinkCode.class, "one_time_link_code").e(UnknownErrorInfo.class, "unknown").d(InternalErrorInfo.fallbackAdapter);
+            return cn.b.b(InternalErrorInfo.class, "type").e(NetworkErrorInfo.class, "network").e(IntegrationErrorInfo.class, "integration").e(PermissionErrorInfo.class, "permission").e(CameraErrorInfo.class, "camera").e(ConfigurationErrorInfo.class, "configuration").e(InvalidOneTimeLinkCode.class, "one_time_link_code").e(UnknownErrorInfo.class, "unknown").d(InternalErrorInfo.fallbackAdapter);
         }
 
         private Companion() {

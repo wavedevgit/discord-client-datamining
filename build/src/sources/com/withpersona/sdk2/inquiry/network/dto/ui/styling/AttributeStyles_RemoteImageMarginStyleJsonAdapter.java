@@ -46,7 +46,7 @@ public final class AttributeStyles_RemoteImageMarginStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 measurementSet = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
@@ -60,7 +60,7 @@ public final class AttributeStyles_RemoteImageMarginStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, AttributeStyles.RemoteImageMarginStyle remoteImageMarginStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (remoteImageMarginStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableMeasurementSetAdapter.toJson(writer, remoteImageMarginStyle.getBase());
             writer.s();

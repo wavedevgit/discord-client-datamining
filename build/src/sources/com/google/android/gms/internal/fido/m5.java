@@ -46,37 +46,37 @@ public abstract class m5 {
                                         c(a10, length, inputStream, o5Var);
                                         return new e5(v4.o(s10, 0, length));
                                     }
-                                    long g10 = o5Var.g();
-                                    if (g10 > 0) {
-                                        j10 = g10;
+                                    long h10 = o5Var.h();
+                                    if (h10 > 0) {
+                                        j10 = h10;
                                     } else {
-                                        j10 = ~g10;
+                                        j10 = ~h10;
                                     }
                                     c(a10, j10, inputStream, o5Var);
-                                    return new g5(g10);
+                                    return new g5(h10);
                                 }
                                 return new d5(o5Var.p());
                             }
                             throw new f5("Tags are currently unsupported");
                         }
-                        long k10 = o5Var.k();
-                        if (k10 <= 1000) {
-                            c(a10, k10, inputStream, o5Var);
-                            int i11 = (int) k10;
-                            h5[] h5VarArr = new h5[i11];
+                        long i11 = o5Var.i();
+                        if (i11 <= 1000) {
+                            c(a10, i11, inputStream, o5Var);
+                            int i12 = (int) i11;
+                            h5[] h5VarArr = new h5[i12];
                             l5 l5Var = null;
-                            int i12 = 0;
-                            while (i12 < k10) {
+                            int i13 = 0;
+                            while (i13 < i11) {
                                 l5 b11 = b(inputStream, o5Var);
                                 if (l5Var != null && b11.compareTo(l5Var) <= 0) {
                                     throw new b5(String.format("Keys in CBOR Map not in strictly ascending natural order:\nPrevious key: %s\nCurrent key: %s", l5Var.toString(), b11.toString()));
                                 }
-                                h5VarArr[i12] = new h5(b11, b(inputStream, o5Var));
-                                i12++;
+                                h5VarArr[i13] = new h5(b11, b(inputStream, o5Var));
+                                i13++;
                                 l5Var = b11;
                             }
                             TreeMap treeMap = new TreeMap();
-                            while (i10 < i11) {
+                            while (i10 < i12) {
                                 h5 h5Var = h5VarArr[i10];
                                 if (!treeMap.containsKey(h5Var.a())) {
                                     treeMap.put(h5Var.a(), h5Var.b());
@@ -97,7 +97,7 @@ public abstract class m5 {
                             l5VarArr[i10] = b(inputStream, o5Var);
                             i10++;
                         }
-                        return new c5(e1.j(l5VarArr));
+                        return new c5(e1.k(l5VarArr));
                     }
                     throw new f5("Parser being asked to read a large CBOR array");
                 } catch (IOException e10) {

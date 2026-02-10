@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/ReactionsSpotIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53341: for (var _fun53341_ip = 0;;) switch (_fun53341_ip) {
+        _fun53394: for (var _fun53394_ip = 0;;) switch (_fun53394_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun53341_ip = 35;
-                    continue _fun53341
+                    _fun53394_ip = 35;
+                    continue _fun53394
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun53341_ip = 47;
-                    continue _fun53341
+                    _fun53394_ip = 47;
+                    continue _fun53394
                 }
             case 44:
                 var7 = 192;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ReactionsSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6364, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4714, 6374, 2]);

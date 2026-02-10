@@ -4,8 +4,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.core.graphics.Insets;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.core.view.h0;
-import androidx.core.view.v;
+import androidx.core.view.i0;
+import androidx.core.view.w;
 import com.facebook.react.bridge.GuardedRunnable;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.common.build.ReactBuildConfig;
@@ -38,7 +38,7 @@ public final class ReactSafeAreaView extends ViewGroup {
         Insets f10 = windowInsets.f(WindowInsetsCompat.p.h() | WindowInsetsCompat.p.b());
         Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
         reactSafeAreaView.updateState(f10);
-        return WindowInsetsCompat.f3402b;
+        return WindowInsetsCompat.f3405b;
     }
 
     private final void updateState(final Insets insets) {
@@ -46,10 +46,10 @@ public final class ReactSafeAreaView extends ViewGroup {
         if (stateWrapper != null) {
             WritableNativeMap writableNativeMap = new WritableNativeMap();
             PixelUtil pixelUtil = PixelUtil.INSTANCE;
-            writableNativeMap.putDouble(ViewProps.LEFT, pixelUtil.pxToDp(insets.f3301a));
-            writableNativeMap.putDouble(ViewProps.TOP, pixelUtil.pxToDp(insets.f3302b));
-            writableNativeMap.putDouble(ViewProps.BOTTOM, pixelUtil.pxToDp(insets.f3304d));
-            writableNativeMap.putDouble(ViewProps.RIGHT, pixelUtil.pxToDp(insets.f3303c));
+            writableNativeMap.putDouble(ViewProps.LEFT, pixelUtil.pxToDp(insets.f3304a));
+            writableNativeMap.putDouble(ViewProps.TOP, pixelUtil.pxToDp(insets.f3305b));
+            writableNativeMap.putDouble(ViewProps.BOTTOM, pixelUtil.pxToDp(insets.f3307d));
+            writableNativeMap.putDouble(ViewProps.RIGHT, pixelUtil.pxToDp(insets.f3306c));
             stateWrapper.updateState(writableNativeMap);
         } else if (!ReactBuildConfig.UNSTABLE_ENABLE_MINIFY_LEGACY_ARCHITECTURE) {
             final ThemedReactContext themedReactContext = this.reactContext;
@@ -60,7 +60,7 @@ public final class ReactSafeAreaView extends ViewGroup {
                     if (uIManagerModule != null) {
                         int id2 = ReactSafeAreaView.this.getId();
                         Insets insets2 = insets;
-                        uIManagerModule.updateInsetsPadding(id2, insets2.f3302b, insets2.f3301a, insets2.f3304d, insets2.f3303c);
+                        uIManagerModule.updateInsetsPadding(id2, insets2.f3305b, insets2.f3304a, insets2.f3307d, insets2.f3306c);
                     }
                 }
             });
@@ -79,8 +79,8 @@ public final class ReactSafeAreaView extends ViewGroup {
     @Override // android.view.ViewGroup, android.view.View
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        h0.D0(this, new v() { // from class: com.facebook.react.views.safeareaview.a
-            @Override // androidx.core.view.v
+        i0.x0(this, new w() { // from class: com.facebook.react.views.safeareaview.a
+            @Override // androidx.core.view.w
             public final WindowInsetsCompat a(View view, WindowInsetsCompat windowInsetsCompat) {
                 WindowInsetsCompat onAttachedToWindow$lambda$0;
                 onAttachedToWindow$lambda$0 = ReactSafeAreaView.onAttachedToWindow$lambda$0(ReactSafeAreaView.this, view, windowInsetsCompat);

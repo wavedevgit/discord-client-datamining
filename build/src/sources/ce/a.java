@@ -8,19 +8,19 @@ import oe.h0;
 public final class a extends f {
 
     /* renamed from: o  reason: collision with root package name */
-    private final b f7529o;
+    private final b f8210o;
 
     public a(List list) {
         super("DvbDecoder");
         h0 h0Var = new h0((byte[]) list.get(0));
-        this.f7529o = new b(h0Var.N(), h0Var.N());
+        this.f8210o = new b(h0Var.N(), h0Var.N());
     }
 
     @Override // ae.f
     protected g z(byte[] bArr, int i10, boolean z10) {
         if (z10) {
-            this.f7529o.r();
+            this.f8210o.r();
         }
-        return new c(this.f7529o.b(bArr, i10));
+        return new c(this.f8210o.b(bArr, i10));
     }
 }

@@ -6,30 +6,30 @@ import java.util.List;
 public final class n2 {
 
     /* renamed from: a  reason: collision with root package name */
-    final String f16048a;
+    final String f16797a;
 
     /* renamed from: b  reason: collision with root package name */
-    final long f16049b;
+    final long f16798b;
 
     /* renamed from: c  reason: collision with root package name */
-    final String f16050c;
+    final String f16799c;
 
     /* renamed from: d  reason: collision with root package name */
-    int f16051d;
+    int f16800d;
 
     /* renamed from: e  reason: collision with root package name */
-    final long f16052e;
+    final long f16801e;
 
     /* renamed from: f  reason: collision with root package name */
-    final List f16053f;
+    final List f16802f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n2(String str, long j10, int i10, long j11, List list, String str2) {
-        this.f16048a = str;
-        this.f16049b = j10;
-        this.f16051d = i10;
-        this.f16052e = j11;
-        this.f16053f = list;
-        this.f16050c = str2;
+        this.f16797a = str;
+        this.f16798b = j10;
+        this.f16800d = i10;
+        this.f16801e = j11;
+        this.f16802f = list;
+        this.f16799c = str2;
     }
 }

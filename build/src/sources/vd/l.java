@@ -3,25 +3,25 @@ package vd;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f52305a;
+    public final long f51547a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final long f52306b;
+    public final long f51548b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final long f52307c;
+    public final long f51549c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final float f52308d;
+    public final float f51550d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final float f52309e;
+    public final float f51551e;
 
     public l(long j10, long j11, long j12, float f10, float f11) {
-        this.f52305a = j10;
-        this.f52306b = j11;
-        this.f52307c = j12;
-        this.f52308d = f10;
-        this.f52309e = f11;
+        this.f51547a = j10;
+        this.f51548b = j11;
+        this.f51549c = j12;
+        this.f51550d = f10;
+        this.f51551e = f11;
     }
 }

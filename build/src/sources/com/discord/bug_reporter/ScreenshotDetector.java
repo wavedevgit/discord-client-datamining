@@ -33,7 +33,7 @@ public final class ScreenshotDetector {
         if (function0 != null) {
             function0.invoke();
         }
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     private final void toggleScreenshotObserver() {

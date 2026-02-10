@@ -10,21 +10,21 @@ import java.util.Objects;
 public final class a1 implements ServiceConnection {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f25961d;
+    private final int f27179d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ c f25962e;
+    final /* synthetic */ c f27180e;
 
     public a1(c cVar, int i10) {
         Objects.requireNonNull(cVar);
-        this.f25962e = cVar;
-        this.f25961d = i10;
+        this.f27180e = cVar;
+        this.f27179d = i10;
     }
 
     @Override // android.content.ServiceConnection
     public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
         l s0Var;
-        c cVar = this.f25962e;
+        c cVar = this.f27180e;
         if (iBinder == null) {
             cVar.W(16);
             return;
@@ -42,18 +42,18 @@ public final class a1 implements ServiceConnection {
                 throw th2;
             }
         }
-        this.f25962e.S(0, null, this.f25961d);
+        this.f27180e.S(0, null, this.f27179d);
     }
 
     @Override // android.content.ServiceConnection
     public final void onServiceDisconnected(ComponentName componentName) {
-        c cVar = this.f25962e;
+        c cVar = this.f27180e;
         synchronized (cVar.Y()) {
             cVar.Z(null);
         }
-        c cVar2 = this.f25962e;
-        int i10 = this.f25961d;
-        Handler handler = cVar2.f25978w;
+        c cVar2 = this.f27180e;
+        int i10 = this.f27179d;
+        Handler handler = cVar2.f27196w;
         handler.sendMessage(handler.obtainMessage(6, i10, 1));
     }
 }

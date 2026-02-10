@@ -1,9 +1,9 @@
 package fh;
 
-import android.view.autofill.AutofillManager;
+import android.graphics.Canvas;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final /* synthetic */ class a {
-    public static /* bridge */ /* synthetic */ Class a() {
-        return AutofillManager.class;
+public abstract class a {
+    public static int a(Canvas canvas, float f10, float f11, float f12, float f13, int i10) {
+        return canvas.saveLayerAlpha(f10, f11, f12, f13, i10);
     }
 }

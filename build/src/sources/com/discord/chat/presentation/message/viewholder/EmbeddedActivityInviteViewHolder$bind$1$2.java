@@ -19,7 +19,7 @@ public /* synthetic */ class EmbeddedActivityInviteViewHolder$bind$1$2 extends F
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((LinkContentNode) obj);
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     public final void invoke(LinkContentNode p02) {

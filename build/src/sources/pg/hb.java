@@ -3,7 +3,7 @@ package pg;
 final class hb extends jb {
 
     /* renamed from: t  reason: collision with root package name */
-    private static final hb f43610t = new hb("unusedTag");
+    private static final hb f42068t = new hb("unusedTag");
 
     private hb(String str) {
         super();
@@ -14,12 +14,12 @@ final class hb extends jb {
     }
 
     @Override // pg.jb
-    public final /* bridge */ /* synthetic */ jb g() {
+    public final /* bridge */ /* synthetic */ jb h() {
         return this;
     }
 
     @Override // pg.jb
-    public final void k(long j10) {
+    public final void i(long j10) {
     }
 
     @Override // pg.jb

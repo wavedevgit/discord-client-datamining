@@ -1,105 +1,83 @@
 package hq;
 
-import java.util.Locale;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import kotlin.collections.CollectionsKt;
+import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.ranges.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final String f26465a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final String f26466b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final String f26467c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final String f26468d;
-
-    public b(String prefix, String countryCode, String str, String defaultFlagEmoji) {
-        Intrinsics.checkNotNullParameter(prefix, "prefix");
-        Intrinsics.checkNotNullParameter(countryCode, "countryCode");
-        Intrinsics.checkNotNullParameter(defaultFlagEmoji, "defaultFlagEmoji");
-        this.f26465a = prefix;
-        this.f26466b = countryCode;
-        this.f26467c = str;
-        this.f26468d = defaultFlagEmoji;
-    }
-
-    private final String b() {
-        String displayCountry = new Locale("", this.f26466b).getDisplayCountry(Locale.getDefault());
-        Intrinsics.checkNotNullExpressionValue(displayCountry, "getDisplayCountry(...)");
-        return displayCountry;
-    }
-
-    private final String c() {
-        if (this.f26466b.length() != 2) {
-            return this.f26468d;
+public final class b implements a {
+    private final int b(BitmapFactory.Options options, int i10, int i11) {
+        int i12 = options.outHeight;
+        int i13 = options.outWidth;
+        if (i12 <= i11 && i13 <= i10) {
+            return 1;
         }
-        String str = this.f26466b;
-        Locale locale = Locale.getDefault();
-        Intrinsics.checkNotNullExpressionValue(locale, "getDefault(...)");
-        String upperCase = str.toUpperCase(locale);
-        Intrinsics.checkNotNullExpressionValue(upperCase, "toUpperCase(...)");
-        char[] chars = Character.toChars(Character.codePointAt(upperCase, 0) - (-127397));
-        Intrinsics.checkNotNullExpressionValue(chars, "toChars(...)");
-        char[] chars2 = Character.toChars(Character.codePointAt(upperCase, 1) - (-127397));
-        Intrinsics.checkNotNullExpressionValue(chars2, "toChars(...)");
-        return new String(kotlin.collections.i.B(chars, chars2));
+        return Math.min(ps.a.c(i12 / i11), ps.a.c(i13 / i10));
     }
 
-    public final String a() {
-        return this.f26466b;
-    }
-
-    public final String d() {
-        String c10 = c();
-        String b10 = b();
-        String str = this.f26465a;
-        return c10 + " " + b10 + " " + str;
-    }
-
-    public final String e() {
-        return this.f26465a;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    private final Map c(File file) {
+        try {
+            List o10 = CollectionsKt.o("DateTime", "DateTimeDigitized", "ExposureTime", "Flash", "FocalLength", "GPSAltitude", "GPSAltitudeRef", "GPSDateStamp", "GPSLatitude", "GPSLatitudeRef", "GPSLongitude", "GPSLongitudeRef", "GPSProcessingMethod", "GPSTimeStamp", "Make", "Model", "Orientation", "SubSecTime", "WhiteBalance");
+            FileInputStream fileInputStream = new FileInputStream(file);
+            e3.a aVar = new e3.a(fileInputStream);
+            List list = o10;
+            LinkedHashMap linkedHashMap = new LinkedHashMap(d.d(o0.e(CollectionsKt.w(list, 10)), 16));
+            for (Object obj : list) {
+                linkedHashMap.put(obj, aVar.k((String) obj));
+            }
+            ls.c.a(fileInputStream, null);
+            return linkedHashMap;
+        } catch (IOException unused) {
+            return o0.i();
         }
-        if (!(obj instanceof b)) {
-            return false;
-        }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f26465a, bVar.f26465a) && Intrinsics.areEqual(this.f26466b, bVar.f26466b) && Intrinsics.areEqual(this.f26467c, bVar.f26467c) && Intrinsics.areEqual(this.f26468d, bVar.f26468d)) {
-            return true;
-        }
-        return false;
     }
 
-    public int hashCode() {
-        int hashCode;
-        int hashCode2 = ((this.f26465a.hashCode() * 31) + this.f26466b.hashCode()) * 31;
-        String str = this.f26467c;
-        if (str == null) {
-            hashCode = 0;
-        } else {
-            hashCode = str.hashCode();
+    private final void d(File file, Map map) {
+        try {
+            e3.a aVar = new e3.a(file.getAbsolutePath());
+            for (Map.Entry entry : map.entrySet()) {
+                String str = (String) entry.getKey();
+                String str2 = (String) entry.getValue();
+                if (str2 != null) {
+                    aVar.h0(str, str2);
+                }
+            }
+            aVar.c0();
+        } catch (IOException unused) {
         }
-        return ((hashCode2 + hashCode) * 31) + this.f26468d.hashCode();
     }
 
-    public String toString() {
-        String str = this.f26465a;
-        String str2 = this.f26466b;
-        String str3 = this.f26467c;
-        String str4 = this.f26468d;
-        return "CountryCodeMetadata(prefix=" + str + ", countryCode=" + str2 + ", pattern=" + str3 + ", defaultFlagEmoji=" + str4 + ")";
-    }
-
-    public /* synthetic */ b(String str, String str2, String str3, String str4, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(str, str2, (i10 & 4) != 0 ? null : str3, (i10 & 8) != 0 ? "🌐" : str4);
+    @Override // hq.a
+    public void a(File file) {
+        Intrinsics.checkNotNullParameter(file, "file");
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(file.getAbsolutePath(), options);
+        Map c10 = c(file);
+        try {
+            String absolutePath = file.getAbsolutePath();
+            BitmapFactory.Options options2 = new BitmapFactory.Options();
+            options2.inSampleSize = b(options, 2000, 2000);
+            Bitmap decodeFile = BitmapFactory.decodeFile(absolutePath, options2);
+            FileOutputStream fileOutputStream = new FileOutputStream(file);
+            if (decodeFile != null) {
+                decodeFile.compress(Bitmap.CompressFormat.JPEG, 80, fileOutputStream);
+            }
+            ls.c.a(fileOutputStream, null);
+            if (decodeFile != null) {
+                decodeFile.recycle();
+            }
+        } catch (IllegalArgumentException unused) {
+        }
+        d(file, c10);
     }
 }

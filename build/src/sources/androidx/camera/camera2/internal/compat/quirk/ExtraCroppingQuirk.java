@@ -12,27 +12,27 @@ import java.util.Map;
 public class ExtraCroppingQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f2049a;
+    private static final Map f2052a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f2050a;
+        static final /* synthetic */ int[] f2053a;
 
         static {
             int[] iArr = new int[o2.b.values().length];
-            f2050a = iArr;
+            f2053a = iArr;
             try {
                 iArr[o2.b.PRIV.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f2050a[o2.b.YUV.ordinal()] = 2;
+                f2053a[o2.b.YUV.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f2050a[o2.b.JPEG.ordinal()] = 3;
+                f2053a[o2.b.JPEG.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -40,7 +40,7 @@ public class ExtraCroppingQuirk implements y1 {
 
     static {
         HashMap hashMap = new HashMap();
-        f2049a = hashMap;
+        f2052a = hashMap;
         hashMap.put("SM-T580", null);
         hashMap.put("SM-J710MN", new Range(21, 26));
         hashMap.put("SM-A320FL", null);
@@ -51,7 +51,7 @@ public class ExtraCroppingQuirk implements y1 {
 
     private static boolean d() {
         if ("samsung".equalsIgnoreCase(Build.BRAND)) {
-            Map map = f2049a;
+            Map map = f2052a;
             String str = Build.MODEL;
             Locale locale = Locale.US;
             if (map.containsKey(str.toUpperCase(locale))) {
@@ -75,7 +75,7 @@ public class ExtraCroppingQuirk implements y1 {
         if (!d()) {
             return null;
         }
-        int i10 = a.f2050a[bVar.ordinal()];
+        int i10 = a.f2053a[bVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {

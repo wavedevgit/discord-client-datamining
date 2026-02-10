@@ -72,21 +72,21 @@ public abstract class RenderableView extends VirtualView implements ReactHitSlop
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f16852a;
+        static final /* synthetic */ int[] f17601a;
 
         static {
             int[] iArr = new int[p0.values().length];
-            f16852a = iArr;
+            f17601a = iArr;
             try {
                 iArr[p0.kStartMarker.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f16852a[p0.kMidMarker.ordinal()] = 2;
+                f17601a[p0.kMidMarker.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f16852a[p0.kEndMarker.ordinal()] = 3;
+                f17601a[p0.kEndMarker.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -387,10 +387,10 @@ public abstract class RenderableView extends VirtualView implements ReactHitSlop
             initBounds();
             RectF clientRect = getClientRect();
             if (!(this instanceof d0) || clientRect != null) {
-                Bitmap c10 = xVar.c(createBitmap, currentBitmap, clientRect);
+                Bitmap d10 = xVar.d(createBitmap, currentBitmap, clientRect);
                 int save = canvas.save();
                 canvas.setMatrix(null);
-                canvas.drawBitmap(c10, 0.0f, 0.0f, paint2);
+                canvas.drawBitmap(d10, 0.0f, 0.0f, paint2);
                 canvas.restoreToCount(save);
             } else {
                 return;
@@ -403,28 +403,28 @@ public abstract class RenderableView extends VirtualView implements ReactHitSlop
             Paint paint3 = new Paint();
             paint3.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
             canvas.saveLayer(null, paint3);
-            if (h0Var.n() == h0.a.LUMINANCE) {
+            if (h0Var.o() == h0.a.LUMINANCE) {
                 Paint paint4 = new Paint();
                 paint4.setColorFilter(new ColorMatrixColorFilter(new ColorMatrix(new float[]{0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.2125f, 0.7154f, 0.0721f, 0.0f, 0.0f})));
                 canvas.saveLayer(null, paint4);
             } else {
                 canvas.saveLayer(null, paint);
             }
-            if (h0Var.o() == a.b.USER_SPACE_ON_USE) {
-                float relativeOnWidth = (float) relativeOnWidth(h0Var.f17034q);
-                float relativeOnHeight = (float) relativeOnHeight(h0Var.f17035r);
-                rectF = new RectF(relativeOnWidth, relativeOnHeight, ((float) relativeOnWidth(h0Var.f17036s)) + relativeOnWidth, ((float) relativeOnHeight(h0Var.f17037t)) + relativeOnHeight);
+            if (h0Var.p() == a.b.USER_SPACE_ON_USE) {
+                float relativeOnWidth = (float) relativeOnWidth(h0Var.f17783q);
+                float relativeOnHeight = (float) relativeOnHeight(h0Var.f17784r);
+                rectF = new RectF(relativeOnWidth, relativeOnHeight, ((float) relativeOnWidth(h0Var.f17785s)) + relativeOnWidth, ((float) relativeOnHeight(h0Var.f17786t)) + relativeOnHeight);
             } else {
                 RectF clientRect2 = getClientRect();
                 if ((this instanceof d0) && clientRect2 == null) {
                     return;
                 }
                 this.mInvCTM.mapRect(clientRect2);
-                float relativeOnFraction = (float) relativeOnFraction(h0Var.f17034q, clientRect2.width());
-                float relativeOnFraction2 = (float) relativeOnFraction(h0Var.f17035r, clientRect2.height());
+                float relativeOnFraction = (float) relativeOnFraction(h0Var.f17783q, clientRect2.width());
+                float relativeOnFraction2 = (float) relativeOnFraction(h0Var.f17784r, clientRect2.height());
                 float f11 = clientRect2.left;
                 float f12 = clientRect2.top;
-                rectF = new RectF(f11 + relativeOnFraction, f12 + relativeOnFraction2, f11 + relativeOnFraction + ((float) relativeOnFraction(h0Var.f17036s, clientRect2.width())), f12 + relativeOnFraction2 + ((float) relativeOnFraction(h0Var.f17037t, clientRect2.height())));
+                rectF = new RectF(f11 + relativeOnFraction, f12 + relativeOnFraction2, f11 + relativeOnFraction + ((float) relativeOnFraction(h0Var.f17785s, clientRect2.width())), f12 + relativeOnFraction2 + ((float) relativeOnFraction(h0Var.f17786t, clientRect2.height())));
             }
             canvas.clipRect(rectF);
             h0Var.draw(canvas, paint, 1.0f);
@@ -461,7 +461,7 @@ public abstract class RenderableView extends VirtualView implements ReactHitSlop
                 Iterator it = h10.iterator();
                 while (it.hasNext()) {
                     o0 o0Var = (o0) it.next();
-                    int i10 = a.f16852a[o0Var.f17125a.ordinal()];
+                    int i10 = a.f17601a[o0Var.f17874a.ordinal()];
                     if (i10 != 1) {
                         if (i10 != 2) {
                             if (i10 != 3) {
@@ -479,7 +479,7 @@ public abstract class RenderableView extends VirtualView implements ReactHitSlop
                         Canvas canvas2 = canvas;
                         Paint paint2 = paint;
                         float f12 = f10;
-                        g0Var.n(canvas2, paint2, f12, o0Var, f11);
+                        g0Var.o(canvas2, paint2, f12, o0Var, f11);
                         this.mMarkerPath.addPath(g0Var.getPath(canvas2, paint2), g0Var.C);
                         canvas = canvas2;
                         paint = paint2;

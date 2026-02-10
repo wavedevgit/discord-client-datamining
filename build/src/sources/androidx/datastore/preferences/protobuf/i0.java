@@ -9,19 +9,19 @@ import java.util.Set;
 public final class i0 extends LinkedHashMap {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final i0 f3810e;
+    private static final i0 f3816e;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f3811d;
+    private boolean f3817d;
 
     static {
         i0 i0Var = new i0();
-        f3810e = i0Var;
+        f3816e = i0Var;
         i0Var.j();
     }
 
     private i0() {
-        this.f3811d = true;
+        this.f3817d = true;
     }
 
     static int a(Map map) {
@@ -47,11 +47,11 @@ public final class i0 extends LinkedHashMap {
     }
 
     public static i0 d() {
-        return f3810e;
+        return f3816e;
     }
 
     private void e() {
-        if (i()) {
+        if (h()) {
             return;
         }
         throw new UnsupportedOperationException();
@@ -69,7 +69,7 @@ public final class i0 extends LinkedHashMap {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    static boolean h(java.util.Map r4, java.util.Map r5) {
+    static boolean g(java.util.Map r4, java.util.Map r5) {
         /*
             r0 = 1
             if (r4 != r5) goto L4
@@ -102,7 +102,7 @@ public final class i0 extends LinkedHashMap {
         L42:
             return r0
         */
-        throw new UnsupportedOperationException("Method not decompiled: androidx.datastore.preferences.protobuf.i0.h(java.util.Map, java.util.Map):boolean");
+        throw new UnsupportedOperationException("Method not decompiled: androidx.datastore.preferences.protobuf.i0.g(java.util.Map, java.util.Map):boolean");
     }
 
     @Override // java.util.LinkedHashMap, java.util.HashMap, java.util.AbstractMap, java.util.Map
@@ -121,10 +121,14 @@ public final class i0 extends LinkedHashMap {
 
     @Override // java.util.AbstractMap, java.util.Map
     public boolean equals(Object obj) {
-        if ((obj instanceof Map) && h(this, (Map) obj)) {
+        if ((obj instanceof Map) && g(this, (Map) obj)) {
             return true;
         }
         return false;
+    }
+
+    public boolean h() {
+        return this.f3817d;
     }
 
     @Override // java.util.AbstractMap, java.util.Map
@@ -132,12 +136,8 @@ public final class i0 extends LinkedHashMap {
         return a(this);
     }
 
-    public boolean i() {
-        return this.f3811d;
-    }
-
     public void j() {
-        this.f3811d = false;
+        this.f3817d = false;
     }
 
     public void k(i0 i0Var) {
@@ -177,6 +177,6 @@ public final class i0 extends LinkedHashMap {
 
     private i0(Map map) {
         super(map);
-        this.f3811d = true;
+        this.f3817d = true;
     }
 }

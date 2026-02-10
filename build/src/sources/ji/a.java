@@ -1,33 +1,38 @@
 package ji;
 
+import android.app.Activity;
 import android.app.PendingIntent;
-import android.os.Bundle;
-import com.discord.js_watchdog.SharedPreferencesKey;
-import java.util.List;
+import android.content.Context;
+import android.content.Intent;
+import com.google.android.gms.tasks.Task;
+import com.google.android.play.core.review.ReviewManager;
+import gi.b;
+import zg.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-    public static a j(Bundle bundle) {
-        return new b(bundle.getInt(SharedPreferencesKey.SESSION_ID), bundle.getInt("status"), bundle.getInt("error_code"), bundle.getLong("bytes_downloaded"), bundle.getLong("total_bytes_to_download"), bundle.getStringArrayList("module_names"), bundle.getStringArrayList("languages"), (PendingIntent) bundle.getParcelable("user_confirmation_intent"), bundle.getParcelableArrayList("split_file_intents"));
+public class a implements ReviewManager {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Context f30966a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private b f30967b;
+
+    public a(Context context) {
+        this.f30966a = context;
     }
 
-    public abstract long a();
+    @Override // com.google.android.play.core.review.ReviewManager
+    public Task a(Activity activity, b bVar) {
+        if (bVar != this.f30967b) {
+            return m.e(new gi.a(-2));
+        }
+        return m.f(null);
+    }
 
-    public abstract int b();
-
-    public abstract PendingIntent c();
-
-    public abstract int d();
-
-    public abstract int e();
-
-    public abstract long f();
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public abstract List g();
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public abstract List h();
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public abstract List i();
+    @Override // com.google.android.play.core.review.ReviewManager
+    public Task b() {
+        b c10 = b.c(PendingIntent.getBroadcast(this.f30966a, 0, new Intent(), 67108864), false);
+        this.f30967b = c10;
+        return m.f(c10);
+    }
 }

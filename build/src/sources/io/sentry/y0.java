@@ -13,11 +13,11 @@ public interface y0 {
         return l(sentryEvent, iScope, null);
     }
 
-    default boolean f() {
+    void f(z7 z7Var, Hint hint);
+
+    default boolean g() {
         return true;
     }
-
-    void g(z7 z7Var, Hint hint);
 
     void h(z6 z6Var);
 
@@ -32,11 +32,11 @@ public interface y0 {
 
     boolean isEnabled();
 
-    io.sentry.transport.a0 j();
+    io.sentry.protocol.x j(m3 m3Var, IScope iScope);
 
-    io.sentry.protocol.x k(m3 m3Var, IScope iScope);
+    io.sentry.transport.a0 k();
 
     io.sentry.protocol.x l(SentryEvent sentryEvent, IScope iScope, Hint hint);
 
-    io.sentry.protocol.x m(l5 l5Var, Hint hint);
+    io.sentry.protocol.x n(l5 l5Var, Hint hint);
 }

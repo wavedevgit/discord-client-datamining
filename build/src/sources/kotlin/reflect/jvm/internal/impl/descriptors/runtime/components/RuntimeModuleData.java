@@ -13,10 +13,10 @@ public final class RuntimeModuleData {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final DeserializationComponents f32367a;
+    private final DeserializationComponents f32589a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final PackagePartScopeCache f32368b;
+    private final PackagePartScopeCache f32590b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -47,21 +47,21 @@ public final class RuntimeModuleData {
 
     @NotNull
     public final DeserializationComponents getDeserialization() {
-        return this.f32367a;
+        return this.f32589a;
     }
 
     @NotNull
     public final ModuleDescriptor getModule() {
-        return this.f32367a.getModuleDescriptor();
+        return this.f32589a.getModuleDescriptor();
     }
 
     @NotNull
     public final PackagePartScopeCache getPackagePartScopeCache() {
-        return this.f32368b;
+        return this.f32590b;
     }
 
     private RuntimeModuleData(DeserializationComponents deserializationComponents, PackagePartScopeCache packagePartScopeCache) {
-        this.f32367a = deserializationComponents;
-        this.f32368b = packagePartScopeCache;
+        this.f32589a = deserializationComponents;
+        this.f32590b = packagePartScopeCache;
     }
 }

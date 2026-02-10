@@ -5,7 +5,7 @@ import android.content.Context;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.core.view.n0;
+import androidx.core.view.o0;
 import com.discord.misc.utilities.activity.ActivityExtensionsKt;
 import com.discord.react_gesture_handler.DiscordGestureHandlerEnabledRootView;
 import com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchListener;
@@ -48,7 +48,7 @@ public final class DiscordGestureHandlerEnabledRootView extends RNGestureHandler
                 return (DiscordGestureHandlerEnabledRootView) view;
             }
             if (view instanceof ViewGroup) {
-                for (View view2 : n0.a((ViewGroup) view)) {
+                for (View view2 : o0.a((ViewGroup) view)) {
                     DiscordGestureHandlerEnabledRootView find = DiscordGestureHandlerEnabledRootView.Companion.find(view2);
                     if (find != null) {
                         return find;
@@ -89,7 +89,7 @@ public final class DiscordGestureHandlerEnabledRootView extends RNGestureHandler
             if (nullable$react_gesture_handler_release != null && (map = nullable$react_gesture_handler_release.supplementalMotionEventReceivedCallbacks) != null) {
                 map.put(callback, Boolean.TRUE);
             }
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -101,7 +101,7 @@ public final class DiscordGestureHandlerEnabledRootView extends RNGestureHandler
             if (nullable$react_gesture_handler_release != null && (map = nullable$react_gesture_handler_release.supplementalMotionEventReceivedCallbacks) != null) {
                 map.put(callback, Boolean.FALSE);
             }
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
 
         public final DiscordGestureHandlerEnabledRootView getNullable$react_gesture_handler_release(@NotNull View view) {

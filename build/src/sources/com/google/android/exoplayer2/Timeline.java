@@ -7,25 +7,25 @@ import android.util.Pair;
 import com.google.android.exoplayer2.MediaItem;
 import com.google.android.exoplayer2.Timeline;
 import com.google.android.exoplayer2.g;
-import oi.s;
+import qi.s;
 import sd.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class Timeline implements g {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final Timeline f12004d = new a();
+    public static final Timeline f12581d = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String f12005e = oe.w0.B0(0);
+    private static final String f12582e = oe.w0.B0(0);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final String f12006i = oe.w0.B0(1);
+    private static final String f12583i = oe.w0.B0(1);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String f12007o = oe.w0.B0(2);
+    private static final String f12584o = oe.w0.B0(2);
 
     /* renamed from: p  reason: collision with root package name */
-    public static final g.a f12008p = new g.a() { // from class: mc.w0
+    public static final g.a f12585p = new g.a() { // from class: mc.w0
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             Timeline b10;
@@ -74,22 +74,22 @@ public abstract class Timeline implements g {
     public static final class b implements g {
 
         /* renamed from: s  reason: collision with root package name */
-        private static final String f12009s = oe.w0.B0(0);
+        private static final String f12586s = oe.w0.B0(0);
 
         /* renamed from: t  reason: collision with root package name */
-        private static final String f12010t = oe.w0.B0(1);
+        private static final String f12587t = oe.w0.B0(1);
 
         /* renamed from: u  reason: collision with root package name */
-        private static final String f12011u = oe.w0.B0(2);
+        private static final String f12588u = oe.w0.B0(2);
 
         /* renamed from: v  reason: collision with root package name */
-        private static final String f12012v = oe.w0.B0(3);
+        private static final String f12589v = oe.w0.B0(3);
 
         /* renamed from: w  reason: collision with root package name */
-        private static final String f12013w = oe.w0.B0(4);
+        private static final String f12590w = oe.w0.B0(4);
 
         /* renamed from: x  reason: collision with root package name */
-        public static final g.a f12014x = new g.a() { // from class: mc.x0
+        public static final g.a f12591x = new g.a() { // from class: mc.x0
             @Override // com.google.android.exoplayer2.g.a
             public final com.google.android.exoplayer2.g a(Bundle bundle) {
                 Timeline.b c10;
@@ -99,38 +99,38 @@ public abstract class Timeline implements g {
         };
 
         /* renamed from: d  reason: collision with root package name */
-        public Object f12015d;
+        public Object f12592d;
 
         /* renamed from: e  reason: collision with root package name */
-        public Object f12016e;
+        public Object f12593e;
 
         /* renamed from: i  reason: collision with root package name */
-        public int f12017i;
+        public int f12594i;
 
         /* renamed from: o  reason: collision with root package name */
-        public long f12018o;
+        public long f12595o;
 
         /* renamed from: p  reason: collision with root package name */
-        public long f12019p;
+        public long f12596p;
 
         /* renamed from: q  reason: collision with root package name */
-        public boolean f12020q;
+        public boolean f12597q;
 
         /* renamed from: r  reason: collision with root package name */
-        private sd.c f12021r = sd.c.f49740r;
+        private sd.c f12598r = sd.c.f48056r;
 
         /* JADX INFO: Access modifiers changed from: private */
         public static b c(Bundle bundle) {
             sd.c cVar;
-            int i10 = bundle.getInt(f12009s, 0);
-            long j10 = bundle.getLong(f12010t, -9223372036854775807L);
-            long j11 = bundle.getLong(f12011u, 0L);
-            boolean z10 = bundle.getBoolean(f12012v, false);
-            Bundle bundle2 = bundle.getBundle(f12013w);
+            int i10 = bundle.getInt(f12586s, 0);
+            long j10 = bundle.getLong(f12587t, -9223372036854775807L);
+            long j11 = bundle.getLong(f12588u, 0L);
+            boolean z10 = bundle.getBoolean(f12589v, false);
+            Bundle bundle2 = bundle.getBundle(f12590w);
             if (bundle2 != null) {
-                cVar = (sd.c) sd.c.f49746x.a(bundle2);
+                cVar = (sd.c) sd.c.f48062x.a(bundle2);
             } else {
-                cVar = sd.c.f49740r;
+                cVar = sd.c.f48056r;
             }
             sd.c cVar2 = cVar;
             b bVar = new b();
@@ -139,13 +139,13 @@ public abstract class Timeline implements g {
         }
 
         public int d(int i10) {
-            return this.f12021r.c(i10).f49761e;
+            return this.f12598r.c(i10).f48077e;
         }
 
         public long e(int i10, int i11) {
-            c.a c10 = this.f12021r.c(i10);
-            if (c10.f49761e != -1) {
-                return c10.f49765q[i11];
+            c.a c10 = this.f12598r.c(i10);
+            if (c10.f48077e != -1) {
+                return c10.f48081q[i11];
             }
             return -9223372036854775807L;
         }
@@ -156,7 +156,7 @@ public abstract class Timeline implements g {
             }
             if (obj != null && b.class.equals(obj.getClass())) {
                 b bVar = (b) obj;
-                if (oe.w0.c(this.f12015d, bVar.f12015d) && oe.w0.c(this.f12016e, bVar.f12016e) && this.f12017i == bVar.f12017i && this.f12018o == bVar.f12018o && this.f12019p == bVar.f12019p && this.f12020q == bVar.f12020q && oe.w0.c(this.f12021r, bVar.f12021r)) {
+                if (oe.w0.c(this.f12592d, bVar.f12592d) && oe.w0.c(this.f12593e, bVar.f12593e) && this.f12594i == bVar.f12594i && this.f12595o == bVar.f12595o && this.f12596p == bVar.f12596p && this.f12597q == bVar.f12597q && oe.w0.c(this.f12598r, bVar.f12598r)) {
                     return true;
                 }
             }
@@ -164,20 +164,20 @@ public abstract class Timeline implements g {
         }
 
         public int f() {
-            return this.f12021r.f49748e;
+            return this.f12598r.f48064e;
         }
 
         public int g(long j10) {
-            return this.f12021r.d(j10, this.f12018o);
+            return this.f12598r.d(j10, this.f12595o);
         }
 
         public int h(long j10) {
-            return this.f12021r.e(j10, this.f12018o);
+            return this.f12598r.e(j10, this.f12595o);
         }
 
         public int hashCode() {
             int hashCode;
-            Object obj = this.f12015d;
+            Object obj = this.f12592d;
             int i10 = 0;
             if (obj == null) {
                 hashCode = 0;
@@ -185,86 +185,86 @@ public abstract class Timeline implements g {
                 hashCode = obj.hashCode();
             }
             int i11 = (217 + hashCode) * 31;
-            Object obj2 = this.f12016e;
+            Object obj2 = this.f12593e;
             if (obj2 != null) {
                 i10 = obj2.hashCode();
             }
-            long j10 = this.f12018o;
-            long j11 = this.f12019p;
-            return ((((((((((i11 + i10) * 31) + this.f12017i) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + (this.f12020q ? 1 : 0)) * 31) + this.f12021r.hashCode();
+            long j10 = this.f12595o;
+            long j11 = this.f12596p;
+            return ((((((((((i11 + i10) * 31) + this.f12594i) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + (this.f12597q ? 1 : 0)) * 31) + this.f12598r.hashCode();
         }
 
         public long i(int i10) {
-            return this.f12021r.c(i10).f49760d;
+            return this.f12598r.c(i10).f48076d;
         }
 
         public long j() {
-            return this.f12021r.f49749i;
+            return this.f12598r.f48065i;
         }
 
         public int k(int i10, int i11) {
-            c.a c10 = this.f12021r.c(i10);
-            if (c10.f49761e != -1) {
-                return c10.f49764p[i11];
+            c.a c10 = this.f12598r.c(i10);
+            if (c10.f48077e != -1) {
+                return c10.f48080p[i11];
             }
             return 0;
         }
 
         public long l(int i10) {
-            return this.f12021r.c(i10).f49766r;
+            return this.f12598r.c(i10).f48082r;
         }
 
         public long m() {
-            return this.f12018o;
+            return this.f12595o;
         }
 
         public int n(int i10) {
-            return this.f12021r.c(i10).f();
+            return this.f12598r.c(i10).f();
         }
 
         public int o(int i10, int i11) {
-            return this.f12021r.c(i10).g(i11);
+            return this.f12598r.c(i10).g(i11);
         }
 
         public long p() {
-            return oe.w0.p1(this.f12019p);
+            return oe.w0.p1(this.f12596p);
         }
 
         public long q() {
-            return this.f12019p;
+            return this.f12596p;
         }
 
         public int r() {
-            return this.f12021r.f49751p;
+            return this.f12598r.f48067p;
         }
 
         public boolean s(int i10) {
-            return !this.f12021r.c(i10).h();
+            return !this.f12598r.c(i10).h();
         }
 
         public boolean t(int i10) {
-            if (i10 == f() - 1 && this.f12021r.f(i10)) {
+            if (i10 == f() - 1 && this.f12598r.f(i10)) {
                 return true;
             }
             return false;
         }
 
         public boolean u(int i10) {
-            return this.f12021r.c(i10).f49767s;
+            return this.f12598r.c(i10).f48083s;
         }
 
         public b v(Object obj, Object obj2, int i10, long j10, long j11) {
-            return w(obj, obj2, i10, j10, j11, sd.c.f49740r, false);
+            return w(obj, obj2, i10, j10, j11, sd.c.f48056r, false);
         }
 
         public b w(Object obj, Object obj2, int i10, long j10, long j11, sd.c cVar, boolean z10) {
-            this.f12015d = obj;
-            this.f12016e = obj2;
-            this.f12017i = i10;
-            this.f12018o = j10;
-            this.f12019p = j11;
-            this.f12021r = cVar;
-            this.f12020q = z10;
+            this.f12592d = obj;
+            this.f12593e = obj2;
+            this.f12594i = i10;
+            this.f12595o = j10;
+            this.f12596p = j11;
+            this.f12598r = cVar;
+            this.f12597q = z10;
             return this;
         }
     }
@@ -273,18 +273,18 @@ public abstract class Timeline implements g {
     public static final class c extends Timeline {
 
         /* renamed from: q  reason: collision with root package name */
-        private final oi.s f12022q;
+        private final qi.s f12599q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final oi.s f12023r;
+        private final qi.s f12600r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final int[] f12024s;
+        private final int[] f12601s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final int[] f12025t;
+        private final int[] f12602t;
 
-        public c(oi.s sVar, oi.s sVar2, int[] iArr) {
+        public c(qi.s sVar, qi.s sVar2, int[] iArr) {
             boolean z10;
             if (sVar.size() == iArr.length) {
                 z10 = true;
@@ -292,12 +292,12 @@ public abstract class Timeline implements g {
                 z10 = false;
             }
             oe.a.a(z10);
-            this.f12022q = sVar;
-            this.f12023r = sVar2;
-            this.f12024s = iArr;
-            this.f12025t = new int[iArr.length];
+            this.f12599q = sVar;
+            this.f12600r = sVar2;
+            this.f12601s = iArr;
+            this.f12602t = new int[iArr.length];
             for (int i10 = 0; i10 < iArr.length; i10++) {
-                this.f12025t[iArr[i10]] = i10;
+                this.f12602t[iArr[i10]] = i10;
             }
         }
 
@@ -309,7 +309,7 @@ public abstract class Timeline implements g {
             if (!z10) {
                 return 0;
             }
-            return this.f12024s[0];
+            return this.f12601s[0];
         }
 
         @Override // com.google.android.exoplayer2.Timeline
@@ -323,7 +323,7 @@ public abstract class Timeline implements g {
                 return -1;
             }
             if (z10) {
-                return this.f12024s[t() - 1];
+                return this.f12601s[t() - 1];
             }
             return t() - 1;
         }
@@ -339,7 +339,7 @@ public abstract class Timeline implements g {
                 }
                 return -1;
             } else if (z10) {
-                return this.f12024s[this.f12025t[i10] + 1];
+                return this.f12601s[this.f12602t[i10] + 1];
             } else {
                 return i10 + 1;
             }
@@ -347,14 +347,14 @@ public abstract class Timeline implements g {
 
         @Override // com.google.android.exoplayer2.Timeline
         public b k(int i10, b bVar, boolean z10) {
-            b bVar2 = (b) this.f12023r.get(i10);
-            bVar.w(bVar2.f12015d, bVar2.f12016e, bVar2.f12017i, bVar2.f12018o, bVar2.f12019p, bVar2.f12021r, bVar2.f12020q);
+            b bVar2 = (b) this.f12600r.get(i10);
+            bVar.w(bVar2.f12592d, bVar2.f12593e, bVar2.f12594i, bVar2.f12595o, bVar2.f12596p, bVar2.f12598r, bVar2.f12597q);
             return bVar;
         }
 
         @Override // com.google.android.exoplayer2.Timeline
         public int m() {
-            return this.f12023r.size();
+            return this.f12600r.size();
         }
 
         @Override // com.google.android.exoplayer2.Timeline
@@ -368,7 +368,7 @@ public abstract class Timeline implements g {
                 }
                 return -1;
             } else if (z10) {
-                return this.f12024s[this.f12025t[i10] - 1];
+                return this.f12601s[this.f12602t[i10] - 1];
             } else {
                 return i10 - 1;
             }
@@ -381,15 +381,15 @@ public abstract class Timeline implements g {
 
         @Override // com.google.android.exoplayer2.Timeline
         public d s(int i10, d dVar, long j10) {
-            d dVar2 = (d) this.f12022q.get(i10);
-            dVar.h(dVar2.f12026d, dVar2.f12028i, dVar2.f12029o, dVar2.f12030p, dVar2.f12031q, dVar2.f12032r, dVar2.f12033s, dVar2.f12034t, dVar2.f12036v, dVar2.f12038x, dVar2.f12039y, dVar2.f12040z, dVar2.A, dVar2.B);
-            dVar.f12037w = dVar2.f12037w;
+            d dVar2 = (d) this.f12599q.get(i10);
+            dVar.h(dVar2.f12603d, dVar2.f12605i, dVar2.f12606o, dVar2.f12607p, dVar2.f12608q, dVar2.f12609r, dVar2.f12610s, dVar2.f12611t, dVar2.f12613v, dVar2.f12615x, dVar2.f12616y, dVar2.f12617z, dVar2.A, dVar2.B);
+            dVar.f12614w = dVar2.f12614w;
             return dVar;
         }
 
         @Override // com.google.android.exoplayer2.Timeline
         public int t() {
-            return this.f12022q.size();
+            return this.f12599q.size();
         }
     }
 
@@ -423,49 +423,49 @@ public abstract class Timeline implements g {
         public long B;
 
         /* renamed from: e  reason: collision with root package name */
-        public Object f12027e;
+        public Object f12604e;
 
         /* renamed from: o  reason: collision with root package name */
-        public Object f12029o;
+        public Object f12606o;
 
         /* renamed from: p  reason: collision with root package name */
-        public long f12030p;
+        public long f12607p;
 
         /* renamed from: q  reason: collision with root package name */
-        public long f12031q;
+        public long f12608q;
 
         /* renamed from: r  reason: collision with root package name */
-        public long f12032r;
+        public long f12609r;
 
         /* renamed from: s  reason: collision with root package name */
-        public boolean f12033s;
+        public boolean f12610s;
 
         /* renamed from: t  reason: collision with root package name */
-        public boolean f12034t;
+        public boolean f12611t;
 
         /* renamed from: u  reason: collision with root package name */
-        public boolean f12035u;
+        public boolean f12612u;
 
         /* renamed from: v  reason: collision with root package name */
-        public MediaItem.g f12036v;
+        public MediaItem.g f12613v;
 
         /* renamed from: w  reason: collision with root package name */
-        public boolean f12037w;
+        public boolean f12614w;
 
         /* renamed from: x  reason: collision with root package name */
-        public long f12038x;
+        public long f12615x;
 
         /* renamed from: y  reason: collision with root package name */
-        public long f12039y;
+        public long f12616y;
 
         /* renamed from: z  reason: collision with root package name */
-        public int f12040z;
+        public int f12617z;
 
         /* renamed from: d  reason: collision with root package name */
-        public Object f12026d = C;
+        public Object f12603d = C;
 
         /* renamed from: i  reason: collision with root package name */
-        public MediaItem f12028i = E;
+        public MediaItem f12605i = E;
 
         /* JADX INFO: Access modifiers changed from: private */
         public static d b(Bundle bundle) {
@@ -475,7 +475,7 @@ public abstract class Timeline implements g {
             if (bundle2 != null) {
                 mediaItem = (MediaItem) MediaItem.A.a(bundle2);
             } else {
-                mediaItem = MediaItem.f11757t;
+                mediaItem = MediaItem.f12334t;
             }
             MediaItem mediaItem2 = mediaItem;
             long j10 = bundle.getLong(G, -9223372036854775807L);
@@ -485,7 +485,7 @@ public abstract class Timeline implements g {
             boolean z11 = bundle.getBoolean(K, false);
             Bundle bundle3 = bundle.getBundle(L);
             if (bundle3 != null) {
-                gVar = (MediaItem.g) MediaItem.g.f11838w.a(bundle3);
+                gVar = (MediaItem.g) MediaItem.g.f12415w.a(bundle3);
             } else {
                 gVar = null;
             }
@@ -498,20 +498,20 @@ public abstract class Timeline implements g {
             long j15 = bundle.getLong(R, 0L);
             d dVar = new d();
             dVar.h(D, mediaItem2, null, j10, j11, j12, z10, z11, gVar2, j13, j14, i10, i11, j15);
-            dVar.f12037w = z12;
+            dVar.f12614w = z12;
             return dVar;
         }
 
         public long c() {
-            return oe.w0.f0(this.f12032r);
+            return oe.w0.f0(this.f12609r);
         }
 
         public long d() {
-            return oe.w0.p1(this.f12038x);
+            return oe.w0.p1(this.f12615x);
         }
 
         public long e() {
-            return this.f12038x;
+            return this.f12615x;
         }
 
         public boolean equals(Object obj) {
@@ -520,7 +520,7 @@ public abstract class Timeline implements g {
             }
             if (obj != null && d.class.equals(obj.getClass())) {
                 d dVar = (d) obj;
-                if (oe.w0.c(this.f12026d, dVar.f12026d) && oe.w0.c(this.f12028i, dVar.f12028i) && oe.w0.c(this.f12029o, dVar.f12029o) && oe.w0.c(this.f12036v, dVar.f12036v) && this.f12030p == dVar.f12030p && this.f12031q == dVar.f12031q && this.f12032r == dVar.f12032r && this.f12033s == dVar.f12033s && this.f12034t == dVar.f12034t && this.f12037w == dVar.f12037w && this.f12038x == dVar.f12038x && this.f12039y == dVar.f12039y && this.f12040z == dVar.f12040z && this.A == dVar.A && this.B == dVar.B) {
+                if (oe.w0.c(this.f12603d, dVar.f12603d) && oe.w0.c(this.f12605i, dVar.f12605i) && oe.w0.c(this.f12606o, dVar.f12606o) && oe.w0.c(this.f12613v, dVar.f12613v) && this.f12607p == dVar.f12607p && this.f12608q == dVar.f12608q && this.f12609r == dVar.f12609r && this.f12610s == dVar.f12610s && this.f12611t == dVar.f12611t && this.f12614w == dVar.f12614w && this.f12615x == dVar.f12615x && this.f12616y == dVar.f12616y && this.f12617z == dVar.f12617z && this.A == dVar.A && this.B == dVar.B) {
                     return true;
                 }
             }
@@ -528,14 +528,14 @@ public abstract class Timeline implements g {
         }
 
         public long f() {
-            return oe.w0.p1(this.f12039y);
+            return oe.w0.p1(this.f12616y);
         }
 
         public boolean g() {
             boolean z10;
             boolean z11;
-            boolean z12 = this.f12035u;
-            if (this.f12036v != null) {
+            boolean z12 = this.f12612u;
+            if (this.f12613v != null) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -546,7 +546,7 @@ public abstract class Timeline implements g {
                 z11 = false;
             }
             oe.a.g(z11);
-            if (this.f12036v == null) {
+            if (this.f12613v == null) {
                 return false;
             }
             return true;
@@ -557,45 +557,45 @@ public abstract class Timeline implements g {
             Object obj3;
             boolean z12;
             MediaItem.h hVar;
-            this.f12026d = obj;
+            this.f12603d = obj;
             if (mediaItem != null) {
                 mediaItem2 = mediaItem;
             } else {
                 mediaItem2 = E;
             }
-            this.f12028i = mediaItem2;
-            if (mediaItem != null && (hVar = mediaItem.f11765e) != null) {
-                obj3 = hVar.f11863t;
+            this.f12605i = mediaItem2;
+            if (mediaItem != null && (hVar = mediaItem.f12342e) != null) {
+                obj3 = hVar.f12440t;
             } else {
                 obj3 = null;
             }
-            this.f12027e = obj3;
-            this.f12029o = obj2;
-            this.f12030p = j10;
-            this.f12031q = j11;
-            this.f12032r = j12;
-            this.f12033s = z10;
-            this.f12034t = z11;
+            this.f12604e = obj3;
+            this.f12606o = obj2;
+            this.f12607p = j10;
+            this.f12608q = j11;
+            this.f12609r = j12;
+            this.f12610s = z10;
+            this.f12611t = z11;
             if (gVar != null) {
                 z12 = true;
             } else {
                 z12 = false;
             }
-            this.f12035u = z12;
-            this.f12036v = gVar;
-            this.f12038x = j13;
-            this.f12039y = j14;
-            this.f12040z = i10;
+            this.f12612u = z12;
+            this.f12613v = gVar;
+            this.f12615x = j13;
+            this.f12616y = j14;
+            this.f12617z = i10;
             this.A = i11;
             this.B = j15;
-            this.f12037w = false;
+            this.f12614w = false;
             return this;
         }
 
         public int hashCode() {
             int hashCode;
-            int hashCode2 = (((217 + this.f12026d.hashCode()) * 31) + this.f12028i.hashCode()) * 31;
-            Object obj = this.f12029o;
+            int hashCode2 = (((217 + this.f12603d.hashCode()) * 31) + this.f12605i.hashCode()) * 31;
+            Object obj = this.f12606o;
             int i10 = 0;
             if (obj == null) {
                 hashCode = 0;
@@ -603,37 +603,37 @@ public abstract class Timeline implements g {
                 hashCode = obj.hashCode();
             }
             int i11 = (hashCode2 + hashCode) * 31;
-            MediaItem.g gVar = this.f12036v;
+            MediaItem.g gVar = this.f12613v;
             if (gVar != null) {
                 i10 = gVar.hashCode();
             }
-            long j10 = this.f12030p;
-            long j11 = this.f12031q;
-            long j12 = this.f12032r;
-            long j13 = this.f12038x;
-            long j14 = this.f12039y;
+            long j10 = this.f12607p;
+            long j11 = this.f12608q;
+            long j12 = this.f12609r;
+            long j13 = this.f12615x;
+            long j14 = this.f12616y;
             long j15 = this.B;
-            return ((((((((((((((((((((((i11 + i10) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + ((int) (j12 ^ (j12 >>> 32)))) * 31) + (this.f12033s ? 1 : 0)) * 31) + (this.f12034t ? 1 : 0)) * 31) + (this.f12037w ? 1 : 0)) * 31) + ((int) (j13 ^ (j13 >>> 32)))) * 31) + ((int) (j14 ^ (j14 >>> 32)))) * 31) + this.f12040z) * 31) + this.A) * 31) + ((int) (j15 ^ (j15 >>> 32)));
+            return ((((((((((((((((((((((i11 + i10) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + ((int) (j12 ^ (j12 >>> 32)))) * 31) + (this.f12610s ? 1 : 0)) * 31) + (this.f12611t ? 1 : 0)) * 31) + (this.f12614w ? 1 : 0)) * 31) + ((int) (j13 ^ (j13 >>> 32)))) * 31) + ((int) (j14 ^ (j14 >>> 32)))) * 31) + this.f12617z) * 31) + this.A) * 31) + ((int) (j15 ^ (j15 >>> 32)));
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static Timeline b(Bundle bundle) {
-        oi.s c10 = c(d.S, oe.c.a(bundle, f12005e));
-        oi.s c11 = c(b.f12014x, oe.c.a(bundle, f12006i));
-        int[] intArray = bundle.getIntArray(f12007o);
+        qi.s c10 = c(d.S, oe.c.a(bundle, f12582e));
+        qi.s c11 = c(b.f12591x, oe.c.a(bundle, f12583i));
+        int[] intArray = bundle.getIntArray(f12584o);
         if (intArray == null) {
             intArray = d(c10.size());
         }
         return new c(c10, c11, intArray);
     }
 
-    private static oi.s c(g.a aVar, IBinder iBinder) {
+    private static qi.s c(g.a aVar, IBinder iBinder) {
         if (iBinder == null) {
-            return oi.s.t();
+            return qi.s.t();
         }
         s.a aVar2 = new s.a();
-        oi.s a10 = mc.c.a(iBinder);
+        qi.s a10 = mc.c.a(iBinder);
         for (int i10 = 0; i10 < a10.size(); i10++) {
             aVar2.a(aVar.a((Bundle) a10.get(i10)));
         }
@@ -705,13 +705,13 @@ public abstract class Timeline implements g {
     }
 
     public final int h(int i10, b bVar, d dVar, int i11, boolean z10) {
-        int i12 = j(i10, bVar).f12017i;
+        int i12 = j(i10, bVar).f12594i;
         if (r(i12, dVar).A == i10) {
             int i13 = i(i12, i11, z10);
             if (i13 == -1) {
                 return -1;
             }
-            return r(i13, dVar).f12040z;
+            return r(i13, dVar).f12617z;
         }
         return i10 + 1;
     }
@@ -779,22 +779,22 @@ public abstract class Timeline implements g {
                 return null;
             }
         }
-        int i11 = dVar.f12040z;
+        int i11 = dVar.f12617z;
         j(i11, bVar);
-        while (i11 < dVar.A && bVar.f12019p != j10) {
+        while (i11 < dVar.A && bVar.f12596p != j10) {
             int i12 = i11 + 1;
-            if (j(i12, bVar).f12019p > j10) {
+            if (j(i12, bVar).f12596p > j10) {
                 break;
             }
             i11 = i12;
         }
         k(i11, bVar, true);
-        long j12 = j10 - bVar.f12019p;
-        long j13 = bVar.f12018o;
+        long j12 = j10 - bVar.f12596p;
+        long j13 = bVar.f12595o;
         if (j13 != -9223372036854775807L) {
             j12 = Math.min(j12, j13 - 1);
         }
-        return Pair.create(oe.a.e(bVar.f12016e), Long.valueOf(Math.max(0L, j12)));
+        return Pair.create(oe.a.e(bVar.f12593e), Long.valueOf(Math.max(0L, j12)));
     }
 
     public int p(int i10, int i11, boolean z10) {

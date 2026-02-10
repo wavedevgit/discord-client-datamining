@@ -14,6 +14,18 @@ public class RNSScreenStackManagerDelegate<T extends View, U extends BaseViewMan
 
     @Override // com.facebook.react.uimanager.BaseViewManagerDelegate, com.facebook.react.uimanager.ViewManagerDelegate
     public void setProperty(T t10, String str, Object obj) {
-        super.kotlinCompat$setProperty(t10, str, obj);
+        boolean booleanValue;
+        str.getClass();
+        if (!str.equals("iosPreventReattachmentOfDismissedScreens")) {
+            super.kotlinCompat$setProperty(t10, str, obj);
+            return;
+        }
+        RNSScreenStackManagerInterface rNSScreenStackManagerInterface = (RNSScreenStackManagerInterface) this.mViewManager;
+        if (obj == null) {
+            booleanValue = false;
+        } else {
+            booleanValue = ((Boolean) obj).booleanValue();
+        }
+        rNSScreenStackManagerInterface.setIosPreventReattachmentOfDismissedScreens(t10, booleanValue);
     }
 }

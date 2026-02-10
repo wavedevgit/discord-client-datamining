@@ -6,14 +6,14 @@ import javax.inject.Provider;
 public final class l implements cc.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Provider f6461a;
+    private final Provider f6567a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Provider f6462b;
+    private final Provider f6568b;
 
     public l(Provider provider, Provider provider2) {
-        this.f6461a = provider;
-        this.f6462b = provider2;
+        this.f6567a = provider;
+        this.f6568b = provider2;
     }
 
     public static l a(Provider provider, Provider provider2) {
@@ -27,6 +27,6 @@ public final class l implements cc.b {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public k get() {
-        return c((Context) this.f6461a.get(), this.f6462b.get());
+        return c((Context) this.f6567a.get(), this.f6568b.get());
     }
 }

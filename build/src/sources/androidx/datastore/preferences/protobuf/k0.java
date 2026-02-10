@@ -21,7 +21,7 @@ class k0 implements j0 {
         i0 i0Var = (i0) obj;
         i0 i0Var2 = (i0) obj2;
         if (!i0Var2.isEmpty()) {
-            if (!i0Var.i()) {
+            if (!i0Var.h()) {
                 i0Var = i0Var.l();
             }
             i0Var.k(i0Var2);
@@ -62,7 +62,7 @@ class k0 implements j0 {
 
     @Override // androidx.datastore.preferences.protobuf.j0
     public boolean g(Object obj) {
-        return !((i0) obj).i();
+        return !((i0) obj).h();
     }
 
     @Override // androidx.datastore.preferences.protobuf.j0

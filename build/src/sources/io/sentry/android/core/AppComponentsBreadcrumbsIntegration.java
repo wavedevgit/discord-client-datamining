@@ -17,29 +17,29 @@ import java.util.Locale;
 public final class AppComponentsBreadcrumbsIntegration implements io.sentry.k1, Closeable, ComponentCallbacks2 {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Hint f27171p = new Hint();
+    private static final Hint f28106p = new Hint();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f27172d;
+    private final Context f28107d;
 
     /* renamed from: e  reason: collision with root package name */
-    private io.sentry.w0 f27173e;
+    private io.sentry.w0 f28108e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SentryAndroidOptions f27174i;
+    private SentryAndroidOptions f28109i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final io.sentry.android.core.internal.util.n f27175o = new io.sentry.android.core.internal.util.n(io.sentry.android.core.internal.util.f.b(), LogThrottleSingleton.RATE_LIMIT_ONE_MINUTE, 0);
+    private final io.sentry.android.core.internal.util.n f28110o = new io.sentry.android.core.internal.util.n(io.sentry.android.core.internal.util.f.b(), LogThrottleSingleton.RATE_LIMIT_ONE_MINUTE, 0);
 
     public AppComponentsBreadcrumbsIntegration(Context context) {
-        this.f27172d = (Context) io.sentry.util.y.c(e1.g(context), "Context is required");
+        this.f28107d = (Context) io.sentry.util.y.c(e1.g(context), "Context is required");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void m(long j10, Configuration configuration) {
         String str;
-        if (this.f27173e != null) {
-            e.b a10 = io.sentry.android.core.internal.util.o.a(this.f27172d.getResources().getConfiguration().orientation);
+        if (this.f28108e != null) {
+            e.b a10 = io.sentry.android.core.internal.util.o.a(this.f28107d.getResources().getConfiguration().orientation);
             if (a10 != null) {
                 str = a10.name().toLowerCase(Locale.ROOT);
             } else {
@@ -52,13 +52,13 @@ public final class AppComponentsBreadcrumbsIntegration implements io.sentry.k1, 
             breadcrumb.B(SentryLevel.INFO);
             Hint hint = new Hint();
             hint.k("android:configuration", configuration);
-            this.f27173e.h(breadcrumb, hint);
+            this.f28108e.i(breadcrumb, hint);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void n(long j10, int i10) {
-        if (this.f27173e != null) {
+        if (this.f28108e != null) {
             Breadcrumb breadcrumb = new Breadcrumb(j10);
             breadcrumb.E("system");
             breadcrumb.z("device.event");
@@ -66,17 +66,17 @@ public final class AppComponentsBreadcrumbsIntegration implements io.sentry.k1, 
             breadcrumb.A("action", "LOW_MEMORY");
             breadcrumb.A("level", Integer.valueOf(i10));
             breadcrumb.B(SentryLevel.WARNING);
-            this.f27173e.h(breadcrumb, f27171p);
+            this.f28108e.i(breadcrumb, f28106p);
         }
     }
 
     private void p(Runnable runnable) {
-        SentryAndroidOptions sentryAndroidOptions = this.f27174i;
+        SentryAndroidOptions sentryAndroidOptions = this.f28109i;
         if (sentryAndroidOptions != null) {
             try {
                 sentryAndroidOptions.getExecutorService().submit(runnable);
             } catch (Throwable th2) {
-                this.f27174i.getLogger().a(SentryLevel.ERROR, th2, "Failed to submit app components breadcrumb task", new Object[0]);
+                this.f28109i.getLogger().a(SentryLevel.ERROR, th2, "Failed to submit app components breadcrumb task", new Object[0]);
             }
         }
     }
@@ -84,40 +84,40 @@ public final class AppComponentsBreadcrumbsIntegration implements io.sentry.k1, 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
         try {
-            this.f27172d.unregisterComponentCallbacks(this);
+            this.f28107d.unregisterComponentCallbacks(this);
         } catch (Throwable th2) {
-            SentryAndroidOptions sentryAndroidOptions = this.f27174i;
+            SentryAndroidOptions sentryAndroidOptions = this.f28109i;
             if (sentryAndroidOptions != null) {
                 sentryAndroidOptions.getLogger().a(SentryLevel.DEBUG, th2, "It was not possible to unregisterComponentCallbacks", new Object[0]);
             }
         }
-        SentryAndroidOptions sentryAndroidOptions2 = this.f27174i;
+        SentryAndroidOptions sentryAndroidOptions2 = this.f28109i;
         if (sentryAndroidOptions2 != null) {
             sentryAndroidOptions2.getLogger().c(SentryLevel.DEBUG, "AppComponentsBreadcrumbsIntegration removed.", new Object[0]);
         }
     }
 
     @Override // io.sentry.k1
-    public void g(io.sentry.w0 w0Var, k7 k7Var) {
+    public void h(io.sentry.w0 w0Var, k7 k7Var) {
         SentryAndroidOptions sentryAndroidOptions;
-        this.f27173e = (io.sentry.w0) io.sentry.util.y.c(w0Var, "Scopes are required");
+        this.f28108e = (io.sentry.w0) io.sentry.util.y.c(w0Var, "Scopes are required");
         if (k7Var instanceof SentryAndroidOptions) {
             sentryAndroidOptions = (SentryAndroidOptions) k7Var;
         } else {
             sentryAndroidOptions = null;
         }
         SentryAndroidOptions sentryAndroidOptions2 = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
-        this.f27174i = sentryAndroidOptions2;
+        this.f28109i = sentryAndroidOptions2;
         ILogger logger = sentryAndroidOptions2.getLogger();
         SentryLevel sentryLevel = SentryLevel.DEBUG;
-        logger.c(sentryLevel, "AppComponentsBreadcrumbsIntegration enabled: %s", Boolean.valueOf(this.f27174i.isEnableAppComponentBreadcrumbs()));
-        if (this.f27174i.isEnableAppComponentBreadcrumbs()) {
+        logger.c(sentryLevel, "AppComponentsBreadcrumbsIntegration enabled: %s", Boolean.valueOf(this.f28109i.isEnableAppComponentBreadcrumbs()));
+        if (this.f28109i.isEnableAppComponentBreadcrumbs()) {
             try {
-                this.f27172d.registerComponentCallbacks(this);
+                this.f28107d.registerComponentCallbacks(this);
                 k7Var.getLogger().c(sentryLevel, "AppComponentsBreadcrumbsIntegration installed.", new Object[0]);
                 io.sentry.util.p.a("AppComponentsBreadcrumbs");
             } catch (Throwable th2) {
-                this.f27174i.setEnableAppComponentBreadcrumbs(false);
+                this.f28109i.setEnableAppComponentBreadcrumbs(false);
                 k7Var.getLogger().a(SentryLevel.INFO, th2, "ComponentCallbacks2 is not available.", new Object[0]);
             }
         }
@@ -140,7 +140,7 @@ public final class AppComponentsBreadcrumbsIntegration implements io.sentry.k1, 
 
     @Override // android.content.ComponentCallbacks2
     public void onTrimMemory(final int i10) {
-        if (i10 < 40 || this.f27175o.a()) {
+        if (i10 < 40 || this.f28110o.a()) {
             return;
         }
         final long currentTimeMillis = System.currentTimeMillis();

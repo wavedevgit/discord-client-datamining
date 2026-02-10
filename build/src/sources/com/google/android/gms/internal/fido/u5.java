@@ -48,7 +48,7 @@ public final class u5 extends hf.g {
 
     @Override // hf.c
     public final com.google.android.gms.common.d[] u() {
-        return new com.google.android.gms.common.d[]{vf.b.f52339b, vf.b.f52338a};
+        return new com.google.android.gms.common.d[]{vf.b.f51581b, vf.b.f51580a};
     }
 
     @Override // hf.c

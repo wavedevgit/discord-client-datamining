@@ -1233,7 +1233,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var9.bind(var10)(var2);
                     var0 = _closure3_slot4;
                     if (!(var7 === var0)) {
-                        _fun25009_ip = 403;
+                        _fun25009_ip = 399;
                         continue _fun25009
                     }
                 case 130:
@@ -1245,7 +1245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var7.ReactionTypes;
                     var7 = var7.BURST;
                     if (!(var1 !== var7)) {
-                        _fun25009_ip = 342;
+                        _fun25009_ip = 338;
                         continue _fun25009
                     }
                 case 172:
@@ -1279,7 +1279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = new Array(0);
                     var0.burst_colors = var7;
                     var0 = var1.bind(var2)(var0);
-                    _fun25009_ip = 403;
+                    _fun25009_ip = 399;
                     continue _fun25009;
                 case 275:
                     var1 = var2.push;
@@ -1303,9 +1303,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = new Array(0);
                     var0.burst_colors = var7;
                     var0 = var1.bind(var2)(var0);
-                    _fun25009_ip = 403;
+                    _fun25009_ip = 399;
                     continue _fun25009;
-                case 342:
+                case 338:
                     var1 = var2.push;
                     var0 = {
                         'emoji': null,
@@ -1324,7 +1324,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.count_details = var5;
                     var0.burst_colors = var4;
                     var0 = var1.bind(var2)(var0);
-                case 403:
+                case 399:
                     var1 = var3.set;
                     var0 = 'reactions';
                     var0 = var1.bind(var3)(var0, var2);
@@ -2008,4 +2008,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isMessageComponentsV2 = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1629, 660, 1384, 3104, 4282, 6622, 5403, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1629, 660, 1384, 3104, 4292, 6632, 5413, 2]);

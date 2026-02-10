@@ -3,32 +3,32 @@ package com.google.android.gms.internal.fido;
 final class w4 extends y4 {
 
     /* renamed from: b  reason: collision with root package name */
-    private int f14246b;
+    private int f14823b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f14247c;
+    private int f14824c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f14248d;
+    private int f14825d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ w4(byte[] bArr, int i10, int i11, boolean z10, x4 x4Var) {
         super(null);
-        this.f14248d = Integer.MAX_VALUE;
-        this.f14246b = 0;
+        this.f14825d = Integer.MAX_VALUE;
+        this.f14823b = 0;
     }
 
     public final int a(int i10) {
-        int i11 = this.f14248d;
-        this.f14248d = 0;
-        int i12 = this.f14246b + this.f14247c;
-        this.f14246b = i12;
+        int i11 = this.f14825d;
+        this.f14825d = 0;
+        int i12 = this.f14823b + this.f14824c;
+        this.f14823b = i12;
         if (i12 <= 0) {
-            this.f14247c = 0;
+            this.f14824c = 0;
             return i11;
         }
-        this.f14247c = i12;
-        this.f14246b = 0;
+        this.f14824c = i12;
+        this.f14823b = 0;
         return i11;
     }
 }

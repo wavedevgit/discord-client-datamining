@@ -6,13 +6,13 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class f {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f4778b = new a(null);
+    public static final a f4788b = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static long f4779c = -1;
+    private static long f4789c = -1;
 
     /* renamed from: a  reason: collision with root package name */
-    private final JankStats f4780a;
+    private final JankStats f4790a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -21,11 +21,11 @@ public abstract class f {
         }
 
         public final long a() {
-            return f.f4779c;
+            return f.f4789c;
         }
 
         public final void b(long j10) {
-            f.f4779c = j10;
+            f.f4789c = j10;
         }
 
         private a() {
@@ -34,7 +34,7 @@ public abstract class f {
 
     public f(JankStats jankStats) {
         Intrinsics.checkNotNullParameter(jankStats, "jankStats");
-        this.f4780a = jankStats;
+        this.f4790a = jankStats;
     }
 
     public abstract void c(boolean z10);

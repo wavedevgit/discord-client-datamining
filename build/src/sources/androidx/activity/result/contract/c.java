@@ -33,7 +33,7 @@ public class c extends ActivityResultContract {
         if (i10 != -1) {
             intent = null;
         }
-        if (intent != null && (a10 = a.f1032a.a(intent)) != null) {
+        if (intent != null && (a10 = a.f1033a.a(intent)) != null) {
             return a10;
         }
         return CollectionsKt.l();

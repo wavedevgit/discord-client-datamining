@@ -1,9 +1,36 @@
 package st;
+
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface d {
-    Object a(c cVar);
+public abstract class d extends k {
 
-    Object b(c cVar, Object obj);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a extends d {
 
-    boolean c(c cVar);
+        /* renamed from: a  reason: collision with root package name */
+        public static final a f48358a = new a();
+
+        private a() {
+            super(null);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b extends d {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final b f48359a = new b();
+
+        private b() {
+            super(null);
+        }
+    }
+
+    public /* synthetic */ d(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    private d() {
+        super(null);
+    }
 }

@@ -6,7 +6,7 @@ import java.util.concurrent.ScheduledExecutorService;
 public interface b {
     ScheduledExecutorService a();
 
-    io.sentry.android.replay.util.g k();
+    io.sentry.android.replay.util.g i();
 
     Handler m();
 }

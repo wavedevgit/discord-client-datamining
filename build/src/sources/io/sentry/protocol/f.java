@@ -12,13 +12,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class f implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28734d;
+    private String f29669d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f28735e;
+    private boolean f29670e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f28736i;
+    private Map f29671i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -37,9 +37,9 @@ public final class f implements w1 {
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.p1(iLogger, concurrentHashMap, o02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                     } else {
-                        str = e3Var.m1();
+                        str = e3Var.r1();
                     }
                 } else {
                     bool = e3Var.w0();
@@ -63,20 +63,20 @@ public final class f implements w1 {
     }
 
     public f(String str, boolean z10) {
-        this.f28734d = str;
-        this.f28735e = z10;
+        this.f29669d = str;
+        this.f29670e = z10;
     }
 
     public String a() {
-        return this.f28734d;
+        return this.f29669d;
     }
 
     public Boolean b() {
-        return Boolean.valueOf(this.f28735e);
+        return Boolean.valueOf(this.f29670e);
     }
 
     public void c(Map map) {
-        this.f28736i = map;
+        this.f29671i = map;
     }
 
     public boolean equals(Object obj) {
@@ -85,7 +85,7 @@ public final class f implements w1 {
         }
         if (obj != null && f.class == obj.getClass()) {
             f fVar = (f) obj;
-            if (io.sentry.util.y.a(this.f28734d, fVar.f28734d) && io.sentry.util.y.a(Boolean.valueOf(this.f28735e), Boolean.valueOf(fVar.f28735e))) {
+            if (io.sentry.util.y.a(this.f29669d, fVar.f29669d) && io.sentry.util.y.a(Boolean.valueOf(this.f29670e), Boolean.valueOf(fVar.f29670e))) {
                 return true;
             }
         }
@@ -93,18 +93,18 @@ public final class f implements w1 {
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f28734d, Boolean.valueOf(this.f28735e));
+        return io.sentry.util.y.b(this.f29669d, Boolean.valueOf(this.f29670e));
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("flag").f(this.f28734d);
-        f3Var.e("result").d(this.f28735e);
-        Map map = this.f28736i;
+        f3Var.e("flag").f(this.f29669d);
+        f3Var.e("result").d(this.f29670e);
+        Map map = this.f29671i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f28736i.get(str));
+                f3Var.e(str).j(iLogger, this.f29671i.get(str));
             }
         }
         f3Var.D();

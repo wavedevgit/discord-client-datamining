@@ -19,14 +19,14 @@ public /* synthetic */ class EphemeralIndicationViewHolder$bind$1$1 extends Func
 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-        m724invokentcYbpo(((MessageId) obj).m1092unboximpl(), (LinkContentNode) obj2);
-        return Unit.f31765a;
+        m725invokentcYbpo(((MessageId) obj).m1093unboximpl(), (LinkContentNode) obj2);
+        return Unit.f31987a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */
-    public final void m724invokentcYbpo(String p02, LinkContentNode p12) {
+    public final void m725invokentcYbpo(String p02, LinkContentNode p12) {
         Intrinsics.checkNotNullParameter(p02, "p0");
         Intrinsics.checkNotNullParameter(p12, "p1");
-        ((ChatEventHandler) this.receiver).mo437onLinkClickedntcYbpo(p02, p12);
+        ((ChatEventHandler) this.receiver).mo438onLinkClickedntcYbpo(p02, p12);
     }
 }

@@ -1,28 +1,23 @@
 package ep;
-
-import android.content.Context;
-import cr.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements cr.d {
+public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f21959a;
+    private final lr.h f23070a;
 
-    public d(h hVar) {
-        this.f21959a = hVar;
+    public d(lr.h hVar) {
+        this.f23070a = hVar;
     }
 
-    public static d a(h hVar) {
+    public static d a(lr.h hVar) {
         return new d(hVar);
     }
 
-    public static b c(Context context) {
-        return new b(context);
+    public static com.withpersona.sdk2.inquiry.internal.c c(kp.d dVar, com.withpersona.sdk2.inquiry.internal.network.e eVar) {
+        return new com.withpersona.sdk2.inquiry.internal.c(dVar, eVar);
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public b get() {
-        return c((Context) this.f21959a.get());
+    public com.withpersona.sdk2.inquiry.internal.c b(kp.d dVar) {
+        return c(dVar, (com.withpersona.sdk2.inquiry.internal.network.e) this.f23070a.get());
     }
 }

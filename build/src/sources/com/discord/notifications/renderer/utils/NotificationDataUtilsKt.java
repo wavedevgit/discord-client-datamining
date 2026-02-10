@@ -75,27 +75,27 @@ public final class NotificationDataUtilsKt {
     public static final JsonObject getAuthor(@NotNull NotificationData notificationData) {
         Intrinsics.checkNotNullParameter(notificationData, "<this>");
         String userAvatar = notificationData.getUserAvatar();
-        UserId m1025getUserIdwUX8bhU = notificationData.m1025getUserIdwUX8bhU();
-        Intrinsics.checkNotNull(m1025getUserIdwUX8bhU);
-        long m1144unboximpl = m1025getUserIdwUX8bhU.m1144unboximpl();
+        UserId m1026getUserIdwUX8bhU = notificationData.m1026getUserIdwUX8bhU();
+        Intrinsics.checkNotNull(m1026getUserIdwUX8bhU);
+        long m1145unboximpl = m1026getUserIdwUX8bhU.m1145unboximpl();
         String userUsername = notificationData.getUserUsername();
         Intrinsics.checkNotNull(userUsername);
-        lt.x xVar = new lt.x();
+        ut.x xVar = new ut.x();
         if (userAvatar != null) {
-            lt.g.c(xVar, "avatar", userAvatar);
+            ut.g.c(xVar, "avatar", userAvatar);
         }
-        lt.g.c(xVar, StackTraceHelper.ID_KEY, UserId.m1142toStringimpl(m1144unboximpl));
-        lt.g.c(xVar, NotificationRenderer.USERNAME, userUsername);
-        lt.g.c(xVar, "globalName", notificationData.getUserGlobalName());
-        lt.g.a(xVar, "incomplete", Boolean.TRUE);
+        ut.g.c(xVar, StackTraceHelper.ID_KEY, UserId.m1143toStringimpl(m1145unboximpl));
+        ut.g.c(xVar, NotificationRenderer.USERNAME, userUsername);
+        ut.g.c(xVar, "globalName", notificationData.getUserGlobalName());
+        ut.g.a(xVar, "incomplete", Boolean.TRUE);
         return xVar.a();
     }
 
     public static final NotificationCompat.Action getBotDMMuteAction(@NotNull final NotificationData notificationData, @NotNull Context context) {
-        ChannelId m1020getChannelIdqMVnFVQ;
+        ChannelId m1021getChannelIdqMVnFVQ;
         Intrinsics.checkNotNullParameter(notificationData, "<this>");
         Intrinsics.checkNotNullParameter(context, "context");
-        if (!Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || !notificationData.getAppDm() || (m1020getChannelIdqMVnFVQ = notificationData.m1020getChannelIdqMVnFVQ()) == null) {
+        if (!Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || !notificationData.getAppDm() || (m1021getChannelIdqMVnFVQ = notificationData.m1021getChannelIdqMVnFVQ()) == null) {
             return null;
         }
         return new NotificationCompat.Action.a(R.drawable.ic_notifications_off_24dp, I18nUtilsKt.i18nFormat(context, I18nMessage.NOTIFICATION_MUTE_APP_DM, new Function1() { // from class: com.discord.notifications.renderer.utils.s
@@ -105,14 +105,14 @@ public final class NotificationDataUtilsKt {
                 botDMMuteAction$lambda$32 = NotificationDataUtilsKt.getBotDMMuteAction$lambda$32(NotificationData.this, (RenderContext) obj);
                 return botDMMuteAction$lambda$32;
             }
-        }), NotificationAction.DefaultImpls.toPendingIntent$default(new MuteAction(getTag(notificationData), notificationData.m1021getGuildIdqOKuAAo(), m1020getChannelIdqMVnFVQ.m1066unboximpl(), -1, null), context, 0, false, 6, null)).c();
+        }), NotificationAction.DefaultImpls.toPendingIntent$default(new MuteAction(getTag(notificationData), notificationData.m1022getGuildIdqOKuAAo(), m1021getChannelIdqMVnFVQ.m1067unboximpl(), -1, null), context, 0, false, 6, null)).c();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getBotDMMuteAction$lambda$32(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("app", notificationData.getUserUsername());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     @NotNull
@@ -125,7 +125,7 @@ public final class NotificationDataUtilsKt {
     }
 
     public static final NotificationCompat.Action getCallAction(@NotNull NotificationData notificationData, @NotNull Context context, boolean z10, @NotNull Map<String, String> notificationDataMap) {
-        ChannelId m1020getChannelIdqMVnFVQ;
+        ChannelId m1021getChannelIdqMVnFVQ;
         Context context2;
         PendingIntent pendingIntent$default;
         Pair a10;
@@ -133,11 +133,11 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(notificationData, "<this>");
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(notificationDataMap, "notificationDataMap");
-        if (Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_CALL_RING) && (m1020getChannelIdqMVnFVQ = notificationData.m1020getChannelIdqMVnFVQ()) != null) {
-            long m1066unboximpl = m1020getChannelIdqMVnFVQ.m1066unboximpl();
-            UserId m1025getUserIdwUX8bhU = notificationData.m1025getUserIdwUX8bhU();
-            if (m1025getUserIdwUX8bhU != null) {
-                long m1144unboximpl = m1025getUserIdwUX8bhU.m1144unboximpl();
+        if (Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_CALL_RING) && (m1021getChannelIdqMVnFVQ = notificationData.m1021getChannelIdqMVnFVQ()) != null) {
+            long m1067unboximpl = m1021getChannelIdqMVnFVQ.m1067unboximpl();
+            UserId m1026getUserIdwUX8bhU = notificationData.m1026getUserIdwUX8bhU();
+            if (m1026getUserIdwUX8bhU != null) {
+                long m1145unboximpl = m1026getUserIdwUX8bhU.m1145unboximpl();
                 if (z10) {
                     Map y10 = o0.y(notificationDataMap);
                     y10.put("type", NotificationData.TYPE_CALL_CONNECT);
@@ -145,12 +145,12 @@ public final class NotificationDataUtilsKt {
                     context2 = context;
                 } else {
                     context2 = context;
-                    pendingIntent$default = NotificationAction.DefaultImpls.toPendingIntent$default(new DismissCallAction(getTag(notificationData), m1066unboximpl, false, notificationData.m1021getGuildIdqOKuAAo(), m1144unboximpl, null), context2, 0, false, 6, null);
+                    pendingIntent$default = NotificationAction.DefaultImpls.toPendingIntent$default(new DismissCallAction(getTag(notificationData), m1067unboximpl, false, notificationData.m1022getGuildIdqOKuAAo(), m1145unboximpl, null), context2, 0, false, 6, null);
                 }
                 if (z10) {
-                    a10 = rr.v.a(I18nUtilsKt.i18nFormat$default(context2, I18nMessage.JOIN_CALL, null, 2, null), Integer.valueOf(ColorUtilsKt.getColorCompat(context2, com.discord.theme.R.color.green_360)));
+                    a10 = as.v.a(I18nUtilsKt.i18nFormat$default(context2, I18nMessage.JOIN_CALL, null, 2, null), Integer.valueOf(ColorUtilsKt.getColorCompat(context2, com.discord.theme.R.color.green_360)));
                 } else {
-                    a10 = rr.v.a(I18nUtilsKt.i18nFormat$default(context2, I18nMessage.DECLINE, null, 2, null), Integer.valueOf(ColorUtilsKt.getColorCompat(context2, com.discord.theme.R.color.red_400)));
+                    a10 = as.v.a(I18nUtilsKt.i18nFormat$default(context2, I18nMessage.DECLINE, null, 2, null), Integer.valueOf(ColorUtilsKt.getColorCompat(context2, com.discord.theme.R.color.red_400)));
                 }
                 int intValue = ((Number) a10.b()).intValue();
                 SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
@@ -297,7 +297,7 @@ public final class NotificationDataUtilsKt {
                     }
                     Integer messageType = notificationData.getMessageType();
                     if (messageType != null && messageType.intValue() == 7) {
-                        return m1042getSystemMessageUserJoin_NTlnE(context, notificationData.m1025getUserIdwUX8bhU(), notificationData.getUserUsername());
+                        return m1043getSystemMessageUserJoin_NTlnE(context, notificationData.m1026getUserIdwUX8bhU(), notificationData.getUserUsername());
                     }
                     Integer messageActivityType2 = notificationData.getMessageActivityType();
                     if (messageActivityType2 != null && messageActivityType2.intValue() == 1) {
@@ -334,7 +334,7 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("user", notificationData.getUserUsername());
         i18nFormat.getArgs().put("game", notificationData.getMessageApplicationName());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -342,7 +342,7 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("user", notificationData.getUserUsername());
         i18nFormat.getArgs().put("game", notificationData.getMessageApplicationName());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -350,21 +350,21 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(NotificationRenderer.USERNAME, notificationData.getUserUsername());
         i18nFormat.getArgs().put("gameName", notificationData.getActivityName());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getContent$lambda$19(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(StackTraceHelper.NAME_KEY, notificationData.getUserUsername());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getContent$lambda$20(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(StackTraceHelper.NAME_KEY, notificationData.getApplicationName());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -372,7 +372,7 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(NotificationRenderer.USERNAME, notificationData.getUserUsername());
         i18nFormat.getArgs().put("topic", notificationData.getStageInstanceTopic());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -380,7 +380,7 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(NotificationRenderer.CHANNEL_NAME, notificationData.getChannelName());
         i18nFormat.getArgs().put("userUsername", notificationData.getUserUsername());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -388,14 +388,14 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("topic", notificationData.getStageInstanceTopic());
         i18nFormat.getArgs().put(NotificationRenderer.USERNAME, notificationData.getUserUsername());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getContent$lambda$24(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("topic", notificationData.getStageInstanceTopic());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     @NotNull
@@ -436,13 +436,13 @@ public final class NotificationDataUtilsKt {
     }
 
     public static final NotificationCompat.Action getDirectReplyAction(@NotNull NotificationData notificationData, @NotNull Context context) {
-        ChannelId m1020getChannelIdqMVnFVQ;
+        ChannelId m1021getChannelIdqMVnFVQ;
         Intrinsics.checkNotNullParameter(notificationData, "<this>");
         Intrinsics.checkNotNullParameter(context, "context");
-        if (!Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || !notificationData.getCanReply() || notificationData.getAppDm() || (m1020getChannelIdqMVnFVQ = notificationData.m1020getChannelIdqMVnFVQ()) == null || IsMetaQuestKt.isMetaQuest()) {
+        if (!Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || !notificationData.getCanReply() || notificationData.getAppDm() || (m1021getChannelIdqMVnFVQ = notificationData.m1021getChannelIdqMVnFVQ()) == null || IsMetaQuestKt.isMetaQuest()) {
             return null;
         }
-        return new NotificationCompat.Action.a(R.drawable.ic_send_white_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_REPLY, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new DirectReplyAction(getTag(notificationData), m1020getChannelIdqMVnFVQ.m1066unboximpl(), notificationData.getChannelName(), notificationData.getChannelType(), notificationData.getGuildName(), null), context, PendingIntentUtils.mutablePendingIntentFlag$default(PendingIntentUtils.INSTANCE, 0, 1, null), false, 4, null)).b(DirectReplyAction.Companion.toRemoteInput(I18nUtilsKt.i18nFormat$default(context, I18nMessage.SEND_MESSAGE, null, 2, null).toString())).f(true).i(1).j(false).c();
+        return new NotificationCompat.Action.a(R.drawable.ic_send_white_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_REPLY, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new DirectReplyAction(getTag(notificationData), m1021getChannelIdqMVnFVQ.m1067unboximpl(), notificationData.getChannelName(), notificationData.getChannelType(), notificationData.getGuildName(), null), context, PendingIntentUtils.mutablePendingIntentFlag$default(PendingIntentUtils.INSTANCE, 0, 1, null), false, 4, null)).b(DirectReplyAction.Companion.toRemoteInput(I18nUtilsKt.i18nFormat$default(context, I18nMessage.SEND_MESSAGE, null, 2, null).toString())).f(true).i(1).j(false).c();
     }
 
     @NotNull
@@ -463,7 +463,7 @@ public final class NotificationDataUtilsKt {
         if (r0.intValue() != 1) goto L7;
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0054, code lost:
-        return com.discord.icons.IconUrlUtils.m915getForUser_fRzTXg$default(com.discord.icons.IconUrlUtils.INSTANCE, r14, r13.m1025getUserIdwUX8bhU(), r13.getUserAvatar(), r13.getUserDiscriminator(), false, null, 32, null);
+        return com.discord.icons.IconUrlUtils.m916getForUser_fRzTXg$default(com.discord.icons.IconUrlUtils.INSTANCE, r14, r13.m1026getUserIdwUX8bhU(), r13.getUserAvatar(), r13.getUserDiscriminator(), false, null, 32, null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x0055, code lost:
         if (r0 != null) goto L9;
@@ -503,7 +503,7 @@ public final class NotificationDataUtilsKt {
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x0094, code lost:
         r0 = com.discord.icons.IconUrlUtils.INSTANCE;
-        r2 = r13.m1020getChannelIdqMVnFVQ();
+        r2 = r13.m1021getChannelIdqMVnFVQ();
         r3 = r13.getChannelIcon();
         r13 = r13.getChannelType();
      */
@@ -517,10 +517,10 @@ public final class NotificationDataUtilsKt {
         r1 = false;
      */
     /* JADX WARN: Code restructure failed: missing block: B:51:0x00b9, code lost:
-        return com.discord.icons.IconUrlUtils.m912getForChannelJYSGpIY$default(r0, r14, r2, r3, r1, null, 16, null);
+        return com.discord.icons.IconUrlUtils.m913getForChannelJYSGpIY$default(r0, r14, r2, r3, r1, null, 16, null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:53:0x00cf, code lost:
-        return com.discord.icons.IconUrlUtils.m913getForGuild14CJxO4$default(com.discord.icons.IconUrlUtils.INSTANCE, r13.m1021getGuildIdqOKuAAo(), r13.getGuildIcon(), "", false, null, 24, null);
+        return com.discord.icons.IconUrlUtils.m914getForGuild14CJxO4$default(com.discord.icons.IconUrlUtils.INSTANCE, r13.m1022getGuildIdqOKuAAo(), r13.getGuildIcon(), "", false, null, 24, null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:55:0x00d6, code lost:
         if (r0.equals(com.discord.notifications.api.NotificationData.TYPE_ACTIVITY_START) == false) goto L68;
@@ -541,13 +541,13 @@ public final class NotificationDataUtilsKt {
         if (r0.equals(com.discord.notifications.api.NotificationData.TYPE_RELATIONSHIP_ADD) == false) goto L68;
      */
     /* JADX WARN: Code restructure failed: missing block: B:75:0x012f, code lost:
-        return com.discord.icons.IconUrlUtils.m911getApplicationIconweIltyw$default(com.discord.icons.IconUrlUtils.INSTANCE, r13.m1019getApplicationIdUtIrSio(), r13.getApplicationIcon(), 0, 4, null);
+        return com.discord.icons.IconUrlUtils.m912getApplicationIconweIltyw$default(com.discord.icons.IconUrlUtils.INSTANCE, r13.m1020getApplicationIdUtIrSio(), r13.getApplicationIcon(), 0, 4, null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:77:0x0136, code lost:
         if (r0.equals(com.discord.notifications.api.NotificationData.TYPE_GUILD_SCHEDULED_EVENT_UPDATE) == false) goto L68;
      */
     /* JADX WARN: Code restructure failed: missing block: B:80:0x014e, code lost:
-        return com.discord.icons.IconUrlUtils.m913getForGuild14CJxO4$default(com.discord.icons.IconUrlUtils.INSTANCE, r13.m1021getGuildIdqOKuAAo(), r13.getGuildIcon(), "", false, null, 24, null);
+        return com.discord.icons.IconUrlUtils.m914getForGuild14CJxO4$default(com.discord.icons.IconUrlUtils.INSTANCE, r13.m1022getGuildIdqOKuAAo(), r13.getGuildIcon(), "", false, null, 24, null);
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0029, code lost:
         if (r0.equals(com.discord.notifications.api.NotificationData.TYPE_MESSAGE_CREATE) == false) goto L68;
@@ -570,21 +570,21 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(notificationData, "<this>");
         Intrinsics.checkNotNullParameter(context, "context");
         IconUrlUtils iconUrlUtils = IconUrlUtils.INSTANCE;
-        String m914getForGuildMember2tNb6hE$default = IconUrlUtils.m914getForGuildMember2tNb6hE$default(iconUrlUtils, notificationData.getUserGuildAvatar(), notificationData.m1021getGuildIdqOKuAAo(), notificationData.m1025getUserIdwUX8bhU(), null, false, 24, null);
-        if (m914getForGuildMember2tNb6hE$default.length() == 0) {
-            return IconUrlUtils.m915getForUser_fRzTXg$default(iconUrlUtils, context, notificationData.m1025getUserIdwUX8bhU(), notificationData.getUserAvatar(), notificationData.getUserDiscriminator(), false, null, 32, null);
+        String m915getForGuildMember2tNb6hE$default = IconUrlUtils.m915getForGuildMember2tNb6hE$default(iconUrlUtils, notificationData.getUserGuildAvatar(), notificationData.m1022getGuildIdqOKuAAo(), notificationData.m1026getUserIdwUX8bhU(), null, false, 24, null);
+        if (m915getForGuildMember2tNb6hE$default.length() == 0) {
+            return IconUrlUtils.m916getForUser_fRzTXg$default(iconUrlUtils, context, notificationData.m1026getUserIdwUX8bhU(), notificationData.getUserAvatar(), notificationData.getUserDiscriminator(), false, null, 32, null);
         }
-        return m914getForGuildMember2tNb6hE$default;
+        return m915getForGuildMember2tNb6hE$default;
     }
 
     public static final KvMessageEntry getKvMessage(@NotNull NotificationData notificationData, String str) {
         Intrinsics.checkNotNullParameter(notificationData, "<this>");
-        String m1022getMessageIdN_6c4I0 = notificationData.m1022getMessageIdN_6c4I0();
-        ChannelId m1020getChannelIdqMVnFVQ = notificationData.m1020getChannelIdqMVnFVQ();
-        if (m1022getMessageIdN_6c4I0 != null && m1020getChannelIdqMVnFVQ != null && Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE)) {
+        String m1023getMessageIdN_6c4I0 = notificationData.m1023getMessageIdN_6c4I0();
+        ChannelId m1021getChannelIdqMVnFVQ = notificationData.m1021getChannelIdqMVnFVQ();
+        if (m1023getMessageIdN_6c4I0 != null && m1021getChannelIdqMVnFVQ != null && Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE)) {
             NotificationMessage message = notificationData.getMessage();
             if (str != null && message != null) {
-                JsonElement g10 = Json.f34877d.g(str);
+                JsonElement g10 = Json.f35099d.g(str);
                 List l10 = CollectionsKt.l();
                 JsonObject author = message.getAuthor();
                 Intrinsics.checkNotNull(author);
@@ -592,14 +592,14 @@ public final class NotificationDataUtilsKt {
                 ArrayList arrayList = new ArrayList(CollectionsKt.w(L0, 10));
                 for (JsonObject jsonObject : L0) {
                     Map y10 = o0.y(jsonObject);
-                    y10.put("incomplete", lt.h.b(Boolean.TRUE));
+                    y10.put("incomplete", ut.h.b(Boolean.TRUE));
                     arrayList.add(new JsonObject(y10));
                 }
-                return new KvMessageEntry(l10, arrayList, lt.h.n(g10), m1022getMessageIdN_6c4I0, m1020getChannelIdqMVnFVQ.m1066unboximpl(), null);
+                return new KvMessageEntry(l10, arrayList, ut.h.n(g10), m1023getMessageIdN_6c4I0, m1021getChannelIdqMVnFVQ.m1067unboximpl(), null);
             }
             try {
                 JsonObject author2 = getAuthor(notificationData);
-                return new KvMessageEntry(CollectionsKt.l(), CollectionsKt.e(author2), toNotificationMessage(notificationData, author2), m1022getMessageIdN_6c4I0, m1020getChannelIdqMVnFVQ.m1066unboximpl(), null);
+                return new KvMessageEntry(CollectionsKt.l(), CollectionsKt.e(author2), toNotificationMessage(notificationData, author2), m1023getMessageIdN_6c4I0, m1021getChannelIdqMVnFVQ.m1067unboximpl(), null);
             } catch (Exception e10) {
                 CrashReporting.captureException$default(CrashReporting.INSTANCE, e10, false, 2, null);
             }
@@ -608,18 +608,18 @@ public final class NotificationDataUtilsKt {
     }
 
     public static final NotificationCompat.Action getMarkAsReadAction(@NotNull NotificationData notificationData, @NotNull Context context) {
-        ChannelId m1020getChannelIdqMVnFVQ;
+        ChannelId m1021getChannelIdqMVnFVQ;
         Intrinsics.checkNotNullParameter(notificationData, "<this>");
         Intrinsics.checkNotNullParameter(context, "context");
-        if (!Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || (m1020getChannelIdqMVnFVQ = notificationData.m1020getChannelIdqMVnFVQ()) == null) {
+        if (!Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || (m1021getChannelIdqMVnFVQ = notificationData.m1021getChannelIdqMVnFVQ()) == null) {
             return null;
         }
-        long m1066unboximpl = m1020getChannelIdqMVnFVQ.m1066unboximpl();
-        String m1022getMessageIdN_6c4I0 = notificationData.m1022getMessageIdN_6c4I0();
-        if (m1022getMessageIdN_6c4I0 == null) {
+        long m1067unboximpl = m1021getChannelIdqMVnFVQ.m1067unboximpl();
+        String m1023getMessageIdN_6c4I0 = notificationData.m1023getMessageIdN_6c4I0();
+        if (m1023getMessageIdN_6c4I0 == null) {
             return null;
         }
-        return new NotificationCompat.Action.a(R.drawable.ic_check_grey_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.MARK_AS_READ, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new MarkAsReadAction(getTag(notificationData), m1066unboximpl, m1022getMessageIdN_6c4I0, null), context, 0, false, 6, null)).i(2).j(false).c();
+        return new NotificationCompat.Action.a(R.drawable.ic_check_grey_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.MARK_AS_READ, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new MarkAsReadAction(getTag(notificationData), m1067unboximpl, m1023getMessageIdN_6c4I0, null), context, 0, false, 6, null)).i(2).j(false).c();
     }
 
     @NotNull
@@ -643,7 +643,7 @@ public final class NotificationDataUtilsKt {
     public static final Unit getMissedCallText$lambda$37(String str, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(StackTraceHelper.NAME_KEY, str);
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     @NotNull
@@ -706,11 +706,11 @@ public final class NotificationDataUtilsKt {
     }
 
     public static final long getSendTime(@NotNull NotificationData notificationData) {
-        MessageIdSnowflake m1089toSnowflakewDbSOA;
+        MessageIdSnowflake m1090toSnowflakewDbSOA;
         Intrinsics.checkNotNullParameter(notificationData, "<this>");
-        String m1022getMessageIdN_6c4I0 = notificationData.m1022getMessageIdN_6c4I0();
-        if (m1022getMessageIdN_6c4I0 != null && (m1089toSnowflakewDbSOA = MessageId.m1089toSnowflakewDbSOA(m1022getMessageIdN_6c4I0)) != null) {
-            return SnowflakeUtilsKt.toTimestamp(m1089toSnowflakewDbSOA);
+        String m1023getMessageIdN_6c4I0 = notificationData.m1023getMessageIdN_6c4I0();
+        if (m1023getMessageIdN_6c4I0 != null && (m1090toSnowflakewDbSOA = MessageId.m1090toSnowflakewDbSOA(m1023getMessageIdN_6c4I0)) != null) {
+            return SnowflakeUtilsKt.toTimestamp(m1090toSnowflakewDbSOA);
         }
         return System.currentTimeMillis();
     }
@@ -734,7 +734,7 @@ public final class NotificationDataUtilsKt {
             java.lang.String r1 = ""
         L12:
             androidx.core.app.Person$c r0 = r0.f(r1)
-            com.discord.primitives.UserId r1 = r2.m1025getUserIdwUX8bhU()
+            com.discord.primitives.UserId r1 = r2.m1026getUserIdwUX8bhU()
             java.lang.String r1 = java.lang.String.valueOf(r1)
             androidx.core.app.Person$c r0 = r0.e(r1)
             java.lang.Integer r2 = r2.getRelationshipType()
@@ -777,7 +777,7 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(notificationData, "<this>");
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(notificationDataMap, "notificationDataMap");
-        return ShortcutUtilsKt.createShortcut$default(context, String.valueOf(notificationData.m1020getChannelIdqMVnFVQ()), getTitle(notificationData, context), getTitle(notificationData, context), bitmap, CollectionsKt.e(getSender(notificationData, bitmap2)), ShortcutData.Companion.createShortcutIntent(context, "android.intent.action.VIEW", NotificationAction.Companion.getActivityClass(), getTag(notificationData), notificationDataMap), 0, 64, null);
+        return ShortcutUtilsKt.createShortcut$default(context, String.valueOf(notificationData.m1021getChannelIdqMVnFVQ()), getTitle(notificationData, context), getTitle(notificationData, context), bitmap, CollectionsKt.e(getSender(notificationData, bitmap2)), ShortcutData.Companion.createShortcutIntent(context, "android.intent.action.VIEW", NotificationAction.Companion.getActivityClass(), getTag(notificationData), notificationDataMap), 0, 64, null);
     }
 
     public static final int getSmallIcon(@NotNull NotificationData notificationData) {
@@ -825,11 +825,11 @@ public final class NotificationDataUtilsKt {
     }
 
     /* renamed from: getSystemMessageUserJoin-_NT-lnE  reason: not valid java name */
-    private static final CharSequence m1042getSystemMessageUserJoin_NTlnE(Context context, UserId userId, final String str) {
+    private static final CharSequence m1043getSystemMessageUserJoin_NTlnE(Context context, UserId userId, final String str) {
         long j10;
         List o10 = CollectionsKt.o(I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_001, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_002, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_003, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_004, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_005, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_006, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_007, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_008, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_009, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_010, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_011, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_012, I18nMessage.SYSTEM_MESSAGE_GUILD_MEMBER_JOIN_013);
         if (userId != null) {
-            j10 = userId.m1144unboximpl();
+            j10 = userId.m1145unboximpl();
         } else {
             j10 = 0;
         }
@@ -847,7 +847,7 @@ public final class NotificationDataUtilsKt {
     public static final Unit getSystemMessageUserJoin__NT_lnE$lambda$26$lambda$25(String str, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(NotificationRenderer.USERNAME, str);
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0051, code lost:
@@ -858,7 +858,7 @@ public final class NotificationDataUtilsKt {
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x0084, code lost:
         r0 = r3.getType();
-        r1 = r3.m1020getChannelIdqMVnFVQ();
+        r1 = r3.m1021getChannelIdqMVnFVQ();
         r3 = r3.getTimeReceived();
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x00a2, code lost:
@@ -875,7 +875,7 @@ public final class NotificationDataUtilsKt {
      */
     /* JADX WARN: Code restructure failed: missing block: B:47:0x011d, code lost:
         r0 = r3.getType();
-        r3 = r3.m1020getChannelIdqMVnFVQ();
+        r3 = r3.m1021getChannelIdqMVnFVQ();
      */
     /* JADX WARN: Code restructure failed: missing block: B:48:0x0134, code lost:
         return r0 + r3;
@@ -897,13 +897,13 @@ public final class NotificationDataUtilsKt {
     }
 
     public static final NotificationCompat.Action getTimedMuteAction(@NotNull NotificationData notificationData, @NotNull Context context, int i10) {
-        ChannelId m1020getChannelIdqMVnFVQ;
+        ChannelId m1021getChannelIdqMVnFVQ;
         Intrinsics.checkNotNullParameter(notificationData, "<this>");
         Intrinsics.checkNotNullParameter(context, "context");
-        if (!Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || i10 < 2 || notificationData.getAppDm() || (m1020getChannelIdqMVnFVQ = notificationData.m1020getChannelIdqMVnFVQ()) == null) {
+        if (!Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || i10 < 2 || notificationData.getAppDm() || (m1021getChannelIdqMVnFVQ = notificationData.m1021getChannelIdqMVnFVQ()) == null) {
             return null;
         }
-        return new NotificationCompat.Action.a(R.drawable.ic_notifications_off_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_MUTE_1_HOUR, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new MuteAction(getTag(notificationData), notificationData.m1021getGuildIdqOKuAAo(), m1020getChannelIdqMVnFVQ.m1066unboximpl(), null, null), context, 0, false, 6, null)).c();
+        return new NotificationCompat.Action.a(R.drawable.ic_notifications_off_24dp, I18nUtilsKt.i18nFormat$default(context, I18nMessage.NOTIFICATION_MUTE_1_HOUR, null, 2, null), NotificationAction.DefaultImpls.toPendingIntent$default(new MuteAction(getTag(notificationData), notificationData.m1022getGuildIdqOKuAAo(), m1021getChannelIdqMVnFVQ.m1067unboximpl(), null, null), context, 0, false, 6, null)).c();
     }
 
     @NotNull
@@ -1085,21 +1085,21 @@ public final class NotificationDataUtilsKt {
     public static final Unit getTitle$lambda$0(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("userName", notificationData.getUserUsername());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getTitle$lambda$1(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("userName", notificationData.getUserUsername());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getTitle$lambda$2(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("guildName", notificationData.getGuildName());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1107,28 +1107,28 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("guildName", notificationData.getGuildName());
         i18nFormat.getArgs().put(NotificationRenderer.CHANNEL_NAME, notificationData.getParentName());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getTitle$lambda$4(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("guildName", notificationData.getGuildName());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getTitle$lambda$5(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("contact", notificationData.getPlatformUserUsername());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getTitle$lambda$6(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("contact", notificationData.getPlatformUserUsername());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     public static final boolean isCall(@NotNull NotificationData notificationData) {
@@ -1309,7 +1309,7 @@ public final class NotificationDataUtilsKt {
     public static final Unit renderMessageContent$lambda$10(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("user", notificationData.getUserUsername());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1320,7 +1320,7 @@ public final class NotificationDataUtilsKt {
         Map<String, String> args = i18nFormat.getArgs();
         NotificationMessage message = notificationData.getMessage();
         args.put("question", (message == null || (poll = message.getPoll()) == null || (question = poll.getQuestion()) == null || (r1 = question.getText()) == null) ? "???" : "???");
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1366,7 +1366,7 @@ public final class NotificationDataUtilsKt {
         L44:
             java.lang.String r4 = "question"
             r5.put(r4, r3)
-            kotlin.Unit r3 = kotlin.Unit.f31765a
+            kotlin.Unit r3 = kotlin.Unit.f31987a
             return r3
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.notifications.renderer.utils.NotificationDataUtilsKt.renderMessageContent$lambda$13(com.discord.notifications.api.Embed, com.discord.notifications.api.NotificationData, com.discord.react_strings.RenderContext):kotlin.Unit");
@@ -1388,7 +1388,7 @@ public final class NotificationDataUtilsKt {
             str = guildName;
         }
         args2.put("guildName", str);
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1396,28 +1396,28 @@ public final class NotificationDataUtilsKt {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(NotificationRenderer.CHANNEL_NAME, notificationData.getInviteChannelName());
         i18nFormat.getArgs().put("guildName", notificationData.getInviteGuildName());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit renderMessageContent$lambda$7(Sticker sticker, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("stickerName", sticker.getName());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit renderMessageContent$lambda$8(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("count", String.valueOf(notificationData.getImageAttachmentCount()));
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit renderMessageContent$lambda$9(NotificationData notificationData, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("count", String.valueOf(notificationData.getVideoAttachmentCount()));
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     public static final boolean shouldUseBigText(@NotNull NotificationData notificationData) {
@@ -1461,23 +1461,23 @@ public final class NotificationDataUtilsKt {
         Integer messageType = notificationData.getMessageType();
         Intrinsics.checkNotNull(messageType);
         messageType.intValue();
-        String m1022getMessageIdN_6c4I0 = notificationData.m1022getMessageIdN_6c4I0();
-        Intrinsics.checkNotNull(m1022getMessageIdN_6c4I0);
-        ChannelId m1020getChannelIdqMVnFVQ = notificationData.m1020getChannelIdqMVnFVQ();
-        Intrinsics.checkNotNull(m1020getChannelIdqMVnFVQ);
-        long m1066unboximpl = m1020getChannelIdqMVnFVQ.m1066unboximpl();
-        GuildId m1021getGuildIdqOKuAAo = notificationData.m1021getGuildIdqOKuAAo();
+        String m1023getMessageIdN_6c4I0 = notificationData.m1023getMessageIdN_6c4I0();
+        Intrinsics.checkNotNull(m1023getMessageIdN_6c4I0);
+        ChannelId m1021getChannelIdqMVnFVQ = notificationData.m1021getChannelIdqMVnFVQ();
+        Intrinsics.checkNotNull(m1021getChannelIdqMVnFVQ);
+        long m1067unboximpl = m1021getChannelIdqMVnFVQ.m1067unboximpl();
+        GuildId m1022getGuildIdqOKuAAo = notificationData.m1022getGuildIdqOKuAAo();
         String format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSS", Locale.getDefault()).format(new Date());
-        lt.x xVar = new lt.x();
-        lt.g.c(xVar, "content", messageContent);
-        lt.g.b(xVar, "flags", Long.valueOf(j10));
-        lt.g.b(xVar, "type", messageType);
-        lt.g.c(xVar, StackTraceHelper.ID_KEY, MessageId.m1090toStringimpl(m1022getMessageIdN_6c4I0));
-        lt.g.c(xVar, "channel_id", ChannelId.m1064toStringimpl(m1066unboximpl));
-        lt.g.c(xVar, "timestamp", format);
+        ut.x xVar = new ut.x();
+        ut.g.c(xVar, "content", messageContent);
+        ut.g.b(xVar, "flags", Long.valueOf(j10));
+        ut.g.b(xVar, "type", messageType);
+        ut.g.c(xVar, StackTraceHelper.ID_KEY, MessageId.m1091toStringimpl(m1023getMessageIdN_6c4I0));
+        ut.g.c(xVar, "channel_id", ChannelId.m1065toStringimpl(m1067unboximpl));
+        ut.g.c(xVar, "timestamp", format);
         xVar.b("author", author);
-        if (m1021getGuildIdqOKuAAo != null) {
-            lt.g.c(xVar, "guild_id", GuildId.m1077toStringimpl(m1021getGuildIdqOKuAAo.m1079unboximpl()));
+        if (m1022getGuildIdqOKuAAo != null) {
+            ut.g.c(xVar, "guild_id", GuildId.m1078toStringimpl(m1022getGuildIdqOKuAAo.m1080unboximpl()));
         }
         return xVar.a();
     }

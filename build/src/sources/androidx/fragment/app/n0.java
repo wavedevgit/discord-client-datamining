@@ -16,15 +16,15 @@ class n0 extends o0 {
     class a extends Transition.EpicenterCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Rect f4456a;
+        final /* synthetic */ Rect f4466a;
 
         a(Rect rect) {
-            this.f4456a = rect;
+            this.f4466a = rect;
         }
 
         @Override // android.transition.Transition.EpicenterCallback
         public Rect onGetEpicenter(Transition transition) {
-            return this.f4456a;
+            return this.f4466a;
         }
     }
 
@@ -32,14 +32,14 @@ class n0 extends o0 {
     class b implements Transition.TransitionListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ View f4458a;
+        final /* synthetic */ View f4468a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4459b;
+        final /* synthetic */ ArrayList f4469b;
 
         b(View view, ArrayList arrayList) {
-            this.f4458a = view;
-            this.f4459b = arrayList;
+            this.f4468a = view;
+            this.f4469b = arrayList;
         }
 
         @Override // android.transition.Transition.TransitionListener
@@ -49,10 +49,10 @@ class n0 extends o0 {
         @Override // android.transition.Transition.TransitionListener
         public void onTransitionEnd(Transition transition) {
             transition.removeListener(this);
-            this.f4458a.setVisibility(8);
-            int size = this.f4459b.size();
+            this.f4468a.setVisibility(8);
+            int size = this.f4469b.size();
             for (int i10 = 0; i10 < size; i10++) {
-                ((View) this.f4459b.get(i10)).setVisibility(0);
+                ((View) this.f4469b.get(i10)).setVisibility(0);
             }
         }
 
@@ -75,30 +75,30 @@ class n0 extends o0 {
     class c implements Transition.TransitionListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Object f4461a;
+        final /* synthetic */ Object f4471a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4462b;
+        final /* synthetic */ ArrayList f4472b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Object f4463c;
+        final /* synthetic */ Object f4473c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4464d;
+        final /* synthetic */ ArrayList f4474d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Object f4465e;
+        final /* synthetic */ Object f4475e;
 
         /* renamed from: f  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4466f;
+        final /* synthetic */ ArrayList f4476f;
 
         c(Object obj, ArrayList arrayList, Object obj2, ArrayList arrayList2, Object obj3, ArrayList arrayList3) {
-            this.f4461a = obj;
-            this.f4462b = arrayList;
-            this.f4463c = obj2;
-            this.f4464d = arrayList2;
-            this.f4465e = obj3;
-            this.f4466f = arrayList3;
+            this.f4471a = obj;
+            this.f4472b = arrayList;
+            this.f4473c = obj2;
+            this.f4474d = arrayList2;
+            this.f4475e = obj3;
+            this.f4476f = arrayList3;
         }
 
         @Override // android.transition.Transition.TransitionListener
@@ -120,17 +120,17 @@ class n0 extends o0 {
 
         @Override // android.transition.Transition.TransitionListener
         public void onTransitionStart(Transition transition) {
-            Object obj = this.f4461a;
+            Object obj = this.f4471a;
             if (obj != null) {
-                n0.this.D(obj, this.f4462b, null);
+                n0.this.D(obj, this.f4472b, null);
             }
-            Object obj2 = this.f4463c;
+            Object obj2 = this.f4473c;
             if (obj2 != null) {
-                n0.this.D(obj2, this.f4464d, null);
+                n0.this.D(obj2, this.f4474d, null);
             }
-            Object obj3 = this.f4465e;
+            Object obj3 = this.f4475e;
             if (obj3 != null) {
-                n0.this.D(obj3, this.f4466f, null);
+                n0.this.D(obj3, this.f4476f, null);
             }
         }
     }
@@ -139,10 +139,10 @@ class n0 extends o0 {
     class d implements Transition.TransitionListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Runnable f4468a;
+        final /* synthetic */ Runnable f4478a;
 
         d(Runnable runnable) {
-            this.f4468a = runnable;
+            this.f4478a = runnable;
         }
 
         @Override // android.transition.Transition.TransitionListener
@@ -151,7 +151,7 @@ class n0 extends o0 {
 
         @Override // android.transition.Transition.TransitionListener
         public void onTransitionEnd(Transition transition) {
-            this.f4468a.run();
+            this.f4478a.run();
         }
 
         @Override // android.transition.Transition.TransitionListener
@@ -171,17 +171,17 @@ class n0 extends o0 {
     class e extends Transition.EpicenterCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Rect f4470a;
+        final /* synthetic */ Rect f4480a;
 
         e(Rect rect) {
-            this.f4470a = rect;
+            this.f4480a = rect;
         }
 
         @Override // android.transition.Transition.EpicenterCallback
         public Rect onGetEpicenter(Transition transition) {
-            Rect rect = this.f4470a;
+            Rect rect = this.f4480a;
             if (rect != null && !rect.isEmpty()) {
-                return this.f4470a;
+                return this.f4480a;
             }
             return null;
         }
@@ -291,7 +291,7 @@ class n0 extends o0 {
 
     @Override // androidx.fragment.app.o0
     public boolean m() {
-        if (FragmentManager.O0(4)) {
+        if (FragmentManager.P0(4)) {
             Log.i("FragmentManager", "Predictive back not available using Framework Transitions. Please switch to AndroidX Transition 1.5.0 or higher to enable seeking.");
             return false;
         }
@@ -300,7 +300,7 @@ class n0 extends o0 {
 
     @Override // androidx.fragment.app.o0
     public boolean n(Object obj) {
-        if (FragmentManager.O0(2)) {
+        if (FragmentManager.P0(2)) {
             Log.v("FragmentManager", "Predictive back not available for framework transition " + obj + ". Please switch to AndroidX Transition 1.5.0 or higher to enable seeking.");
             return false;
         }

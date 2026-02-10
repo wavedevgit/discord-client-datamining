@@ -10,19 +10,19 @@ import oe.w0;
 public final class v {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final byte[] f40512d = {79, 103, 103, 83, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, -43, -59, -9, 1, 19, 79, 112, 117, 115, 72, 101, 97, 100, 1, 2, 56, 1, ByteCompanionObject.MIN_VALUE, -69, 0, 0, 0, 0, 0};
+    private static final byte[] f38838d = {79, 103, 103, 83, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, -43, -59, -9, 1, 19, 79, 112, 117, 115, 72, 101, 97, 100, 1, 2, 56, 1, ByteCompanionObject.MIN_VALUE, -69, 0, 0, 0, 0, 0};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final byte[] f40513e = {79, 103, 103, 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 11, -103, 87, 83, 1, 16, 79, 112, 117, 115, 84, 97, 103, 115, 0, 0, 0, 0, 0, 0, 0, 0};
+    private static final byte[] f38839e = {79, 103, 103, 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 11, -103, 87, 83, 1, 16, 79, 112, 117, 115, 84, 97, 103, 115, 0, 0, 0, 0, 0, 0, 0, 0};
 
     /* renamed from: a  reason: collision with root package name */
-    private ByteBuffer f40514a = com.google.android.exoplayer2.audio.d.f12258a;
+    private ByteBuffer f38840a = com.google.android.exoplayer2.audio.d.f12835a;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f40516c = 0;
+    private int f38842c = 0;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f40515b = 2;
+    private int f38841b = 2;
 
     private ByteBuffer b(ByteBuffer byteBuffer, byte[] bArr) {
         int i10;
@@ -32,29 +32,29 @@ public final class v {
         int i11 = limit - position;
         int i12 = (i11 + SetSpanOperation.SPAN_MAX_PRIORITY) / SetSpanOperation.SPAN_MAX_PRIORITY;
         int i13 = i12 + 27 + i11;
-        if (this.f40515b == 2) {
+        if (this.f38841b == 2) {
             if (bArr != null) {
                 length = bArr.length + 28;
             } else {
-                length = f40512d.length;
+                length = f38838d.length;
             }
-            i13 += f40513e.length + length;
+            i13 += f38839e.length + length;
             i10 = length;
         } else {
             i10 = 0;
         }
         ByteBuffer c10 = c(i13);
-        if (this.f40515b == 2) {
+        if (this.f38841b == 2) {
             if (bArr != null) {
                 e(c10, bArr);
             } else {
-                c10.put(f40512d);
+                c10.put(f38838d);
             }
-            c10.put(f40513e);
+            c10.put(f38839e);
         }
-        int i14 = this.f40516c + w.i(byteBuffer);
-        this.f40516c = i14;
-        f(c10, i14, this.f40515b, i12, false);
+        int i14 = this.f38842c + w.i(byteBuffer);
+        this.f38842c = i14;
+        f(c10, i14, this.f38841b, i12, false);
         for (int i15 = 0; i15 < i12; i15++) {
             if (i11 >= 255) {
                 c10.put((byte) -1);
@@ -70,29 +70,29 @@ public final class v {
         }
         byteBuffer.position(byteBuffer.limit());
         c10.flip();
-        if (this.f40515b == 2) {
+        if (this.f38841b == 2) {
             byte[] array = c10.array();
-            byte[] bArr2 = f40513e;
+            byte[] bArr2 = f38839e;
             c10.putInt(i10 + bArr2.length + 22, w0.t(array, c10.arrayOffset() + i10 + bArr2.length, c10.limit() - c10.position(), 0));
         } else {
             c10.putInt(22, w0.t(c10.array(), c10.arrayOffset(), c10.limit() - c10.position(), 0));
         }
-        this.f40515b++;
+        this.f38841b++;
         return c10;
     }
 
     private ByteBuffer c(int i10) {
-        if (this.f40514a.capacity() < i10) {
-            this.f40514a = ByteBuffer.allocate(i10).order(ByteOrder.LITTLE_ENDIAN);
+        if (this.f38840a.capacity() < i10) {
+            this.f38840a = ByteBuffer.allocate(i10).order(ByteOrder.LITTLE_ENDIAN);
         } else {
-            this.f40514a.clear();
+            this.f38840a.clear();
         }
-        return this.f40514a;
+        return this.f38840a;
     }
 
     private void e(ByteBuffer byteBuffer, byte[] bArr) {
         f(byteBuffer, 0L, 0, 1, true);
-        byteBuffer.put(qi.h.a(bArr.length));
+        byteBuffer.put(si.h.a(bArr.length));
         byteBuffer.put(bArr);
         byteBuffer.putInt(22, w0.t(byteBuffer.array(), byteBuffer.arrayOffset(), bArr.length + 28, 0));
         byteBuffer.position(bArr.length + 28);
@@ -115,30 +115,30 @@ public final class v {
         byteBuffer.putInt(0);
         byteBuffer.putInt(i10);
         byteBuffer.putInt(0);
-        byteBuffer.put(qi.h.a(i11));
+        byteBuffer.put(si.h.a(i11));
     }
 
     public void a(rc.f fVar, List list) {
         byte[] bArr;
-        oe.a.e(fVar.f47775i);
-        if (fVar.f47775i.limit() - fVar.f47775i.position() == 0) {
+        oe.a.e(fVar.f46229i);
+        if (fVar.f46229i.limit() - fVar.f46229i.position() == 0) {
             return;
         }
-        if (this.f40515b == 2 && (list.size() == 1 || list.size() == 3)) {
+        if (this.f38841b == 2 && (list.size() == 1 || list.size() == 3)) {
             bArr = (byte[]) list.get(0);
         } else {
             bArr = null;
         }
-        this.f40514a = b(fVar.f47775i, bArr);
+        this.f38840a = b(fVar.f46229i, bArr);
         fVar.h();
-        fVar.u(this.f40514a.remaining());
-        fVar.f47775i.put(this.f40514a);
+        fVar.u(this.f38840a.remaining());
+        fVar.f46229i.put(this.f38840a);
         fVar.v();
     }
 
     public void d() {
-        this.f40514a = com.google.android.exoplayer2.audio.d.f12258a;
-        this.f40516c = 0;
-        this.f40515b = 2;
+        this.f38840a = com.google.android.exoplayer2.audio.d.f12835a;
+        this.f38842c = 0;
+        this.f38841b = 2;
     }
 }

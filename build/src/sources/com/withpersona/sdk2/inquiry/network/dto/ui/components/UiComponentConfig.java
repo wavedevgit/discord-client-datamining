@@ -1,7 +1,7 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import an.b;
 import android.os.Parcelable;
+import cn.b;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.squareup.moshi.h;
 import com.withpersona.sdk2.inquiry.network.dto.ui.UiComponentAttributes;

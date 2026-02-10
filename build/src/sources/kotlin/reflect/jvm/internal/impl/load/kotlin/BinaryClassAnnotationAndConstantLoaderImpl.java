@@ -45,16 +45,16 @@ import org.jetbrains.annotations.NotNull;
 public final class BinaryClassAnnotationAndConstantLoaderImpl extends AbstractBinaryClassAnnotationAndConstantLoader<AnnotationDescriptor, ConstantValue<?>> {
 
     /* renamed from: c  reason: collision with root package name */
-    private final ModuleDescriptor f32940c;
+    private final ModuleDescriptor f33162c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final NotFoundClasses f32941d;
+    private final NotFoundClasses f33163d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AnnotationDeserializer f32942e;
+    private final AnnotationDeserializer f33164e;
 
     /* renamed from: f  reason: collision with root package name */
-    private MetadataVersion f32943f;
+    private MetadataVersion f33165f;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -79,58 +79,58 @@ public final class BinaryClassAnnotationAndConstantLoaderImpl extends AbstractBi
             return new KotlinJvmBinaryClass.AnnotationArgumentVisitor(this, name, arrayList) { // from class: kotlin.reflect.jvm.internal.impl.load.kotlin.BinaryClassAnnotationAndConstantLoaderImpl$AbstractAnnotationArgumentVisitor$visitAnnotation$1
 
                 /* renamed from: a  reason: collision with root package name */
-                private final /* synthetic */ KotlinJvmBinaryClass.AnnotationArgumentVisitor f32945a;
+                private final /* synthetic */ KotlinJvmBinaryClass.AnnotationArgumentVisitor f33167a;
 
                 /* renamed from: c  reason: collision with root package name */
-                final /* synthetic */ BinaryClassAnnotationAndConstantLoaderImpl.AbstractAnnotationArgumentVisitor f32947c;
+                final /* synthetic */ BinaryClassAnnotationAndConstantLoaderImpl.AbstractAnnotationArgumentVisitor f33169c;
 
                 /* renamed from: d  reason: collision with root package name */
-                final /* synthetic */ Name f32948d;
+                final /* synthetic */ Name f33170d;
 
                 /* renamed from: e  reason: collision with root package name */
-                final /* synthetic */ ArrayList f32949e;
+                final /* synthetic */ ArrayList f33171e;
 
                 /* JADX INFO: Access modifiers changed from: package-private */
                 {
-                    this.f32947c = this;
-                    this.f32948d = name;
-                    this.f32949e = arrayList;
-                    this.f32945a = KotlinJvmBinaryClass.AnnotationArgumentVisitor.this;
+                    this.f33169c = this;
+                    this.f33170d = name;
+                    this.f33171e = arrayList;
+                    this.f33167a = KotlinJvmBinaryClass.AnnotationArgumentVisitor.this;
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass.AnnotationArgumentVisitor
                 public void visit(Name name2, Object obj) {
-                    this.f32945a.visit(name2, obj);
+                    this.f33167a.visit(name2, obj);
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass.AnnotationArgumentVisitor
                 public KotlinJvmBinaryClass.AnnotationArgumentVisitor visitAnnotation(Name name2, ClassId classId2) {
                     Intrinsics.checkNotNullParameter(classId2, "classId");
-                    return this.f32945a.visitAnnotation(name2, classId2);
+                    return this.f33167a.visitAnnotation(name2, classId2);
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass.AnnotationArgumentVisitor
                 public KotlinJvmBinaryClass.AnnotationArrayArgumentVisitor visitArray(Name name2) {
-                    return this.f32945a.visitArray(name2);
+                    return this.f33167a.visitArray(name2);
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass.AnnotationArgumentVisitor
                 public void visitClassLiteral(Name name2, ClassLiteralValue value) {
                     Intrinsics.checkNotNullParameter(value, "value");
-                    this.f32945a.visitClassLiteral(name2, value);
+                    this.f33167a.visitClassLiteral(name2, value);
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass.AnnotationArgumentVisitor
                 public void visitEnd() {
                     KotlinJvmBinaryClass.AnnotationArgumentVisitor.this.visitEnd();
-                    this.f32947c.visitConstantValue(this.f32948d, new AnnotationValue((AnnotationDescriptor) CollectionsKt.Q0(this.f32949e)));
+                    this.f33169c.visitConstantValue(this.f33170d, new AnnotationValue((AnnotationDescriptor) CollectionsKt.Q0(this.f33171e)));
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass.AnnotationArgumentVisitor
                 public void visitEnum(Name name2, ClassId enumClassId, Name enumEntryName) {
                     Intrinsics.checkNotNullParameter(enumClassId, "enumClassId");
                     Intrinsics.checkNotNullParameter(enumEntryName, "enumEntryName");
-                    this.f32945a.visitEnum(name2, enumClassId, enumEntryName);
+                    this.f33167a.visitEnum(name2, enumClassId, enumEntryName);
                 }
             };
         }
@@ -165,15 +165,15 @@ public final class BinaryClassAnnotationAndConstantLoaderImpl extends AbstractBi
         Intrinsics.checkNotNullParameter(notFoundClasses, "notFoundClasses");
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(kotlinClassFinder, "kotlinClassFinder");
-        this.f32940c = module;
-        this.f32941d = notFoundClasses;
-        this.f32942e = new AnnotationDeserializer(module, notFoundClasses);
-        this.f32943f = MetadataVersion.INSTANCE;
+        this.f33162c = module;
+        this.f33163d = notFoundClasses;
+        this.f33164e = new AnnotationDeserializer(module, notFoundClasses);
+        this.f33165f = MetadataVersion.INSTANCE;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final ConstantValue w(Name name, Object obj) {
-        ConstantValue<?> createConstantValue = ConstantValueFactory.INSTANCE.createConstantValue(obj, this.f32940c);
+        ConstantValue<?> createConstantValue = ConstantValueFactory.INSTANCE.createConstantValue(obj, this.f33162c);
         if (createConstantValue == null) {
             ErrorValue.Companion companion = ErrorValue.Companion;
             return companion.create("Unsupported annotation argument: " + name);
@@ -182,13 +182,13 @@ public final class BinaryClassAnnotationAndConstantLoaderImpl extends AbstractBi
     }
 
     private final ClassDescriptor y(ClassId classId) {
-        return FindClassInModuleKt.findNonGenericClassAcrossDependencies(this.f32940c, classId, this.f32941d);
+        return FindClassInModuleKt.findNonGenericClassAcrossDependencies(this.f33162c, classId, this.f33163d);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.AbstractBinaryClassAnnotationLoader
     @NotNull
     public MetadataVersion getMetadataVersion() {
-        return this.f32943f;
+        return this.f33165f;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -201,13 +201,13 @@ public final class BinaryClassAnnotationAndConstantLoaderImpl extends AbstractBi
         return new AbstractAnnotationArgumentVisitor() { // from class: kotlin.reflect.jvm.internal.impl.load.kotlin.BinaryClassAnnotationAndConstantLoaderImpl$loadAnnotation$1
 
             /* renamed from: b  reason: collision with root package name */
-            private final HashMap f32958b;
+            private final HashMap f33180b;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             {
                 super();
-                this.f32958b = new HashMap();
+                this.f33180b = new HashMap();
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.BinaryClassAnnotationAndConstantLoaderImpl.AbstractAnnotationArgumentVisitor
@@ -216,7 +216,7 @@ public final class BinaryClassAnnotationAndConstantLoaderImpl extends AbstractBi
                 if (name != null) {
                     ValueParameterDescriptor annotationParameterByName = DescriptorResolverUtils.getAnnotationParameterByName(name, y10);
                     if (annotationParameterByName != null) {
-                        HashMap hashMap = this.f32958b;
+                        HashMap hashMap = this.f33180b;
                         ConstantValueFactory constantValueFactory = ConstantValueFactory.INSTANCE;
                         List<? extends ConstantValue<?>> compact = kotlin.reflect.jvm.internal.impl.utils.CollectionsKt.compact(elements);
                         KotlinType type = annotationParameterByName.getType();
@@ -241,23 +241,23 @@ public final class BinaryClassAnnotationAndConstantLoaderImpl extends AbstractBi
             public void visitConstantValue(Name name, ConstantValue<?> value) {
                 Intrinsics.checkNotNullParameter(value, "value");
                 if (name != null) {
-                    this.f32958b.put(name, value);
+                    this.f33180b.put(name, value);
                 }
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinJvmBinaryClass.AnnotationArgumentVisitor
             public void visitEnd() {
-                if (BinaryClassAnnotationAndConstantLoaderImpl.this.q(annotationClassId, this.f32958b) || BinaryClassAnnotationAndConstantLoaderImpl.this.h(annotationClassId)) {
+                if (BinaryClassAnnotationAndConstantLoaderImpl.this.q(annotationClassId, this.f33180b) || BinaryClassAnnotationAndConstantLoaderImpl.this.h(annotationClassId)) {
                     return;
                 }
-                result.add(new AnnotationDescriptorImpl(y10.getDefaultType(), this.f32958b, source));
+                result.add(new AnnotationDescriptorImpl(y10.getDefaultType(), this.f33180b, source));
             }
         };
     }
 
     public void setMetadataVersion(@NotNull MetadataVersion metadataVersion) {
         Intrinsics.checkNotNullParameter(metadataVersion, "<set-?>");
-        this.f32943f = metadataVersion;
+        this.f33165f = metadataVersion;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -296,7 +296,7 @@ public final class BinaryClassAnnotationAndConstantLoaderImpl extends AbstractBi
             }
             throw new AssertionError(desc);
         }
-        return ConstantValueFactory.INSTANCE.createConstantValue(initializer, this.f32940c);
+        return ConstantValueFactory.INSTANCE.createConstantValue(initializer, this.f33162c);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -324,6 +324,6 @@ public final class BinaryClassAnnotationAndConstantLoaderImpl extends AbstractBi
     public AnnotationDescriptor loadAnnotation(@NotNull ProtoBuf.Annotation proto, @NotNull NameResolver nameResolver) {
         Intrinsics.checkNotNullParameter(proto, "proto");
         Intrinsics.checkNotNullParameter(nameResolver, "nameResolver");
-        return this.f32942e.deserializeAnnotation(proto, nameResolver);
+        return this.f33164e.deserializeAnnotation(proto, nameResolver);
     }
 }

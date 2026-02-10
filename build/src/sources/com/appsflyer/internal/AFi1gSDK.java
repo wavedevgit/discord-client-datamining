@@ -14,7 +14,7 @@ public final class AFi1gSDK implements AFi1lSDK {
     @Override // com.appsflyer.internal.AFi1lSDK
     @NotNull
     public final Map<String, Object> AFAdRevenueData() {
-        Map<String, Object> n10 = o0.n(rr.v.a("platform", this.getMediationNetwork.getPlugin().getPluginName()), rr.v.a("version", this.getMediationNetwork.getVersion()));
+        Map<String, Object> n10 = o0.n(as.v.a("platform", this.getMediationNetwork.getPlugin().getPluginName()), as.v.a("version", this.getMediationNetwork.getVersion()));
         if (!this.getMediationNetwork.getAdditionalParams().isEmpty()) {
             n10.put("extras", this.getMediationNetwork.getAdditionalParams());
         }

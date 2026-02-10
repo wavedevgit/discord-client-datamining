@@ -1,11 +1,11 @@
 package com.withpersona.sdk2.inquiry.ui.network;
 
-import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.ui.network.TransitionInquiryRequest;
+import dn.c;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class TransitionInquiryRequest_MetaJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19981a;
+    private final m.b f20861a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19982b;
+    private final h f20862b;
 
     public TransitionInquiryRequest_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("fromComponent", "fromStep");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19981a = a10;
+        this.f20861a = a10;
         h f10 = moshi.f(String.class, x0.d(), "fromComponent");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19982b = f10;
+        this.f20862b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,20 +37,20 @@ public final class TransitionInquiryRequest_MetaJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19981a);
+            int J = reader.J(this.f20861a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str2 = (String) this.f19982b.fromJson(reader)) == null) {
+                    if (J == 1 && (str2 = (String) this.f20862b.fromJson(reader)) == null) {
                         throw c.x("fromStep", "fromStep", reader);
                     }
                 } else {
-                    str = (String) this.f19982b.fromJson(reader);
+                    str = (String) this.f20862b.fromJson(reader);
                     if (str == null) {
                         throw c.x("fromComponent", "fromComponent", reader);
                     }
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -69,11 +69,11 @@ public final class TransitionInquiryRequest_MetaJsonAdapter extends h {
     public void toJson(t writer, TransitionInquiryRequest.Meta meta) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (meta != null) {
-            writer.k();
+            writer.i();
             writer.J("fromComponent");
-            this.f19982b.toJson(writer, meta.a());
+            this.f20862b.toJson(writer, meta.a());
             writer.J("fromStep");
-            this.f19982b.toJson(writer, meta.b());
+            this.f20862b.toJson(writer, meta.b());
             writer.s();
             return;
         }

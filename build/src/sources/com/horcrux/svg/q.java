@@ -9,18 +9,18 @@ import java.util.HashMap;
 public abstract class q extends e {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f17137d;
+    private String f17886d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final FilterRegion f17138e;
+    public final FilterRegion f17887e;
 
     public q(ReactContext reactContext) {
         super(reactContext);
-        this.f17138e = new FilterRegion();
+        this.f17887e = new FilterRegion();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public static Bitmap e(HashMap hashMap, Bitmap bitmap, String str) {
+    public static Bitmap f(HashMap hashMap, Bitmap bitmap, String str) {
         Bitmap bitmap2;
         if (str != null) {
             bitmap2 = (Bitmap) hashMap.get(str);
@@ -33,34 +33,34 @@ public abstract class q extends e {
         return bitmap;
     }
 
-    public abstract Bitmap c(HashMap hashMap, Bitmap bitmap);
+    public abstract Bitmap d(HashMap hashMap, Bitmap bitmap);
 
-    public String d() {
-        return this.f17137d;
+    public String e() {
+        return this.f17886d;
     }
 
-    public void f(Dynamic dynamic) {
-        this.f17138e.setHeight(dynamic);
+    public void g(Dynamic dynamic) {
+        this.f17887e.setHeight(dynamic);
         invalidate();
     }
 
-    public void g(String str) {
-        this.f17137d = str;
-        invalidate();
-    }
-
-    public void h(Dynamic dynamic) {
-        this.f17138e.setWidth(dynamic);
+    public void h(String str) {
+        this.f17886d = str;
         invalidate();
     }
 
     public void i(Dynamic dynamic) {
-        this.f17138e.setX(dynamic);
+        this.f17887e.setWidth(dynamic);
         invalidate();
     }
 
     public void j(Dynamic dynamic) {
-        this.f17138e.setY(dynamic);
+        this.f17887e.setX(dynamic);
+        invalidate();
+    }
+
+    public void k(Dynamic dynamic) {
+        this.f17887e.setY(dynamic);
         invalidate();
     }
 

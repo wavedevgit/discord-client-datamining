@@ -17,29 +17,29 @@ import java.util.concurrent.Future;
 public class e0 implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final URL f16588d;
+    private final URL f17337d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile Future f16589e;
+    private volatile Future f17338e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Task f16590i;
+    private Task f17339i;
 
     private e0(URL url) {
-        this.f16588d = url;
+        this.f17337d = url;
     }
 
     public static /* synthetic */ void a(e0 e0Var, zg.k kVar) {
         e0Var.getClass();
         try {
-            kVar.c(e0Var.g());
+            kVar.c(e0Var.h());
         } catch (Exception e10) {
             kVar.b(e10);
         }
     }
 
-    private byte[] k() {
-        URLConnection openConnection = this.f16588d.openConnection();
+    private byte[] i() {
+        URLConnection openConnection = this.f17337d.openConnection();
         if (openConnection.getContentLength() <= 1048576) {
             InputStream inputStream = openConnection.getInputStream();
             try {
@@ -48,7 +48,7 @@ public class e0 implements Closeable {
                     inputStream.close();
                 }
                 if (Log.isLoggable("FirebaseMessaging", 2)) {
-                    Log.v("FirebaseMessaging", "Downloaded " + d10.length + " bytes from " + this.f16588d);
+                    Log.v("FirebaseMessaging", "Downloaded " + d10.length + " bytes from " + this.f17337d);
                 }
                 if (d10.length <= 1048576) {
                     return d10;
@@ -82,36 +82,36 @@ public class e0 implements Closeable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f16589e.cancel(true);
+        this.f17338e.cancel(true);
     }
 
-    public Bitmap g() {
+    public Bitmap h() {
         if (Log.isLoggable("FirebaseMessaging", 4)) {
-            Log.i("FirebaseMessaging", "Starting download of: " + this.f16588d);
+            Log.i("FirebaseMessaging", "Starting download of: " + this.f17337d);
         }
-        byte[] k10 = k();
-        Bitmap decodeByteArray = BitmapFactory.decodeByteArray(k10, 0, k10.length);
+        byte[] i10 = i();
+        Bitmap decodeByteArray = BitmapFactory.decodeByteArray(i10, 0, i10.length);
         if (decodeByteArray != null) {
             if (Log.isLoggable("FirebaseMessaging", 3)) {
-                Log.d("FirebaseMessaging", "Successfully downloaded image: " + this.f16588d);
+                Log.d("FirebaseMessaging", "Successfully downloaded image: " + this.f17337d);
             }
             return decodeByteArray;
         }
-        throw new IOException("Failed to decode image: " + this.f16588d);
+        throw new IOException("Failed to decode image: " + this.f17337d);
     }
 
     public Task n() {
-        return (Task) hf.q.l(this.f16590i);
+        return (Task) hf.q.l(this.f17339i);
     }
 
     public void p(ExecutorService executorService) {
         final zg.k kVar = new zg.k();
-        this.f16589e = executorService.submit(new Runnable() { // from class: com.google.firebase.messaging.d0
+        this.f17338e = executorService.submit(new Runnable() { // from class: com.google.firebase.messaging.d0
             @Override // java.lang.Runnable
             public final void run() {
                 e0.a(e0.this, kVar);
             }
         });
-        this.f16590i = kVar.a();
+        this.f17339i = kVar.a();
     }
 }

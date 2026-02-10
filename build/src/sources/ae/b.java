@@ -364,7 +364,7 @@ public final class b implements com.google.android.exoplayer2.g {
     }
 
     public int hashCode() {
-        return ni.j.b(this.f706d, this.f707e, this.f708i, this.f709o, Float.valueOf(this.f710p), Integer.valueOf(this.f711q), Integer.valueOf(this.f712r), Float.valueOf(this.f713s), Integer.valueOf(this.f714t), Float.valueOf(this.f715u), Float.valueOf(this.f716v), Boolean.valueOf(this.f717w), Integer.valueOf(this.f718x), Integer.valueOf(this.f719y), Float.valueOf(this.f720z), Integer.valueOf(this.A), Float.valueOf(this.B));
+        return pi.j.b(this.f706d, this.f707e, this.f708i, this.f709o, Float.valueOf(this.f710p), Integer.valueOf(this.f711q), Integer.valueOf(this.f712r), Float.valueOf(this.f713s), Integer.valueOf(this.f714t), Float.valueOf(this.f715u), Float.valueOf(this.f716v), Boolean.valueOf(this.f717w), Integer.valueOf(this.f718x), Integer.valueOf(this.f719y), Float.valueOf(this.f720z), Integer.valueOf(this.A), Float.valueOf(this.B));
     }
 
     private b(CharSequence charSequence, Layout.Alignment alignment, Layout.Alignment alignment2, Bitmap bitmap, float f10, int i10, int i11, float f11, int i12, int i13, float f12, float f13, float f14, boolean z10, int i14, int i15, float f15) {

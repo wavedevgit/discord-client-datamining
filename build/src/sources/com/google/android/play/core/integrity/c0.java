@@ -6,40 +6,40 @@ import android.os.RemoteException;
 public final class c0 extends i0 {
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ long f16262i;
+    final /* synthetic */ long f17011i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ zg.k f16263o;
+    final /* synthetic */ zg.k f17012o;
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ j0 f16264p;
+    final /* synthetic */ j0 f17013p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c0(j0 j0Var, zg.k kVar, int i10, long j10, zg.k kVar2) {
         super(j0Var, kVar);
-        this.f16262i = j10;
-        this.f16263o = kVar2;
-        this.f16264p = j0Var;
+        this.f17011i = j10;
+        this.f17012o = kVar2;
+        this.f17013p = j0Var;
     }
 
-    @Override // li.u0
+    @Override // ni.u0
     protected final void b() {
-        li.t0 t0Var;
-        if (j0.j(this.f16264p)) {
+        ni.t0 t0Var;
+        if (j0.j(this.f17013p)) {
             super.a(new b(-2, null));
-        } else if (j0.i(this.f16264p, 0)) {
+        } else if (j0.i(this.f17013p, 0)) {
             super.a(new b(-14, null));
         } else {
             try {
-                j0 j0Var = this.f16264p;
-                ((li.l0) j0Var.f16317f.e()).f0(j0.b(j0Var, this.f16262i, 0), new h0(this.f16264p, this.f16263o));
+                j0 j0Var = this.f17013p;
+                ((ni.l0) j0Var.f17066f.e()).V0(j0.b(j0Var, this.f17011i, 0), new h0(this.f17013p, this.f17012o));
             } catch (RemoteException e10) {
-                j0 j0Var2 = this.f16264p;
-                long j10 = this.f16262i;
-                t0Var = j0Var2.f16312a;
+                j0 j0Var2 = this.f17013p;
+                long j10 = this.f17011i;
+                t0Var = j0Var2.f17061a;
                 t0Var.b(e10, "warmUpIntegrityToken(%s)", Long.valueOf(j10));
-                this.f16263o.d(new b(-100, e10));
+                this.f17012o.d(new b(-100, e10));
             }
         }
     }

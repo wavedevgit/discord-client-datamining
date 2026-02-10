@@ -1,10 +1,10 @@
 package com.withpersona.sdk2.inquiry.ui.network;
 
+import as.p;
+import as.v;
 import com.withpersona.sdk2.inquiry.ui.network.ComponentParam;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
-import rr.p;
-import rr.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class a {
     public static final Object a(ComponentParam componentParam) {

@@ -11,7 +11,7 @@ public abstract class e extends b implements f {
     @Override // bg.b
     protected final boolean e(int i10, Parcel parcel, Parcel parcel2, int i11) {
         if (i10 == 1) {
-            j((Status) c.a(parcel, Status.CREATOR), (ue.f) c.a(parcel, ue.f.CREATOR));
+            l((Status) c.a(parcel, Status.CREATOR), (ue.f) c.a(parcel, ue.f.CREATOR));
             return true;
         }
         return false;

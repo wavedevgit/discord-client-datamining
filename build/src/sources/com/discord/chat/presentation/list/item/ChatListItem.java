@@ -1,5 +1,7 @@
 package com.discord.chat.presentation.list.item;
 
+import as.l;
+import as.o;
 import com.discord.chat.presentation.list.item.ChatListItem;
 import com.discord.misc.utilities.ids.IdUtilsKt;
 import com.facebook.react.devsupport.StackTraceHelper;
@@ -8,15 +10,13 @@ import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-import rr.l;
-import rr.o;
 @Metadata(d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\t\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001B\u0011\b\u0004\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u001b\u0010\b\u001a\u00020\t8FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\f\u0010\r\u001a\u0004\b\n\u0010\u000b\u0082\u0001\u000b\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018¨\u0006\u0019"}, d2 = {"Lcom/discord/chat/presentation/list/item/ChatListItem;", "", StackTraceHelper.ID_KEY, "", "<init>", "(Ljava/lang/String;)V", "getId", "()Ljava/lang/String;", "recyclerItemId", "", "getRecyclerItemId", "()J", "recyclerItemId$delegate", "Lkotlin/Lazy;", "Lcom/discord/chat/presentation/list/item/AutomodSystemMessageItem;", "Lcom/discord/chat/presentation/list/item/BlockedGroupChatListItem;", "Lcom/discord/chat/presentation/list/item/CallSystemMessageItem;", "Lcom/discord/chat/presentation/list/item/DeserializationErrorChatListItem;", "Lcom/discord/chat/presentation/list/item/DeserializationErrorMessageItem;", "Lcom/discord/chat/presentation/list/item/LoadingChatListItem;", "Lcom/discord/chat/presentation/list/item/MessageItem;", "Lcom/discord/chat/presentation/list/item/PortalViewChatListItem;", "Lcom/discord/chat/presentation/list/item/SeparatorChatListItem;", "Lcom/discord/chat/presentation/list/item/SummarySeparatorChatListItem;", "Lcom/discord/chat/presentation/list/item/SystemMessageItem;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class ChatListItem {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8745id;
+    private final String f9322id;
     @NotNull
     private final Lazy recyclerItemId$delegate;
 
@@ -31,7 +31,7 @@ public abstract class ChatListItem {
 
     @NotNull
     public String getId() {
-        return this.f8745id;
+        return this.f9322id;
     }
 
     public final long getRecyclerItemId() {
@@ -39,8 +39,8 @@ public abstract class ChatListItem {
     }
 
     private ChatListItem(String str) {
-        this.f8745id = str;
-        this.recyclerItemId$delegate = l.b(o.f49211i, new Function0() { // from class: v6.a
+        this.f9322id = str;
+        this.recyclerItemId$delegate = l.a(o.f6083i, new Function0() { // from class: v6.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 long recyclerItemId_delegate$lambda$0;

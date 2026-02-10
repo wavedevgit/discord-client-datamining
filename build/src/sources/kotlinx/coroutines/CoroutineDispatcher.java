@@ -11,7 +11,7 @@ import kotlinx.coroutines.CoroutineDispatcher;
 public abstract class CoroutineDispatcher extends kotlin.coroutines.a implements kotlin.coroutines.d {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f34773e = new a(null);
+    public static final a f34995e = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.coroutines.b {
@@ -28,7 +28,7 @@ public abstract class CoroutineDispatcher extends kotlin.coroutines.a implements
         }
 
         private a() {
-            super(kotlin.coroutines.d.f31837g, new Function1() { // from class: ps.y
+            super(kotlin.coroutines.d.f32059j, new Function1() { // from class: ys.y
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     CoroutineDispatcher d10;
@@ -40,35 +40,30 @@ public abstract class CoroutineDispatcher extends kotlin.coroutines.a implements
     }
 
     public CoroutineDispatcher() {
-        super(kotlin.coroutines.d.f31837g);
+        super(kotlin.coroutines.d.f32059j);
     }
 
-    public static /* synthetic */ CoroutineDispatcher a2(CoroutineDispatcher coroutineDispatcher, int i10, String str, int i11, Object obj) {
+    public static /* synthetic */ CoroutineDispatcher E1(CoroutineDispatcher coroutineDispatcher, int i10, String str, int i11, Object obj) {
         if (obj == null) {
             if ((i11 & 2) != 0) {
                 str = null;
             }
-            return coroutineDispatcher.Z1(i10, str);
+            return coroutineDispatcher.B1(i10, str);
         }
         throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: limitedParallelism");
     }
 
-    public void S1(CoroutineContext coroutineContext, Runnable runnable) {
-        us.j.c(this, coroutineContext, runnable);
+    public CoroutineDispatcher B1(int i10, String str) {
+        dt.m.a(i10);
+        return new dt.l(this, i10, str);
     }
 
-    public boolean U1(CoroutineContext coroutineContext) {
-        return true;
+    @Override // kotlin.coroutines.a, kotlin.coroutines.CoroutineContext
+    public CoroutineContext Z0(CoroutineContext.b bVar) {
+        return d.a.b(this, bVar);
     }
 
-    public /* synthetic */ CoroutineDispatcher W1(int i10) {
-        return Z1(i10, null);
-    }
-
-    public CoroutineDispatcher Z1(int i10, String str) {
-        us.m.a(i10);
-        return new us.l(this, i10, str);
-    }
+    public abstract void b1(CoroutineContext coroutineContext, Runnable runnable);
 
     @Override // kotlin.coroutines.a, kotlin.coroutines.CoroutineContext.Element, kotlin.coroutines.CoroutineContext
     public CoroutineContext.Element m(CoroutineContext.b bVar) {
@@ -78,22 +73,27 @@ public abstract class CoroutineDispatcher extends kotlin.coroutines.a implements
     @Override // kotlin.coroutines.d
     public final void n(Continuation continuation) {
         Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlinx.coroutines.internal.DispatchedContinuation<*>");
-        ((us.i) continuation).v();
+        ((dt.i) continuation).v();
     }
 
     @Override // kotlin.coroutines.d
     public final Continuation s(Continuation continuation) {
-        return new us.i(this, continuation);
-    }
-
-    @Override // kotlin.coroutines.a, kotlin.coroutines.CoroutineContext
-    public CoroutineContext s1(CoroutineContext.b bVar) {
-        return d.a.b(this, bVar);
+        return new dt.i(this, continuation);
     }
 
     public String toString() {
-        return ps.e0.a(this) + '@' + ps.e0.b(this);
+        return ys.e0.a(this) + '@' + ys.e0.b(this);
     }
 
-    public abstract void z1(CoroutineContext coroutineContext, Runnable runnable);
+    public void w1(CoroutineContext coroutineContext, Runnable runnable) {
+        dt.j.c(this, coroutineContext, runnable);
+    }
+
+    public boolean x1(CoroutineContext coroutineContext) {
+        return true;
+    }
+
+    public /* synthetic */ CoroutineDispatcher z1(int i10) {
+        return B1(i10, null);
+    }
 }

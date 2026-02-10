@@ -5,26 +5,26 @@ import java.util.concurrent.Executor;
 final class b implements Executor {
 
     /* renamed from: d  reason: collision with root package name */
-    private static volatile b f7250d;
+    private static volatile b f7932d;
 
     b() {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Executor a() {
-        if (f7250d != null) {
-            return f7250d;
+        if (f7932d != null) {
+            return f7932d;
         }
         synchronized (b.class) {
             try {
-                if (f7250d == null) {
-                    f7250d = new b();
+                if (f7932d == null) {
+                    f7932d = new b();
                 }
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        return f7250d;
+        return f7932d;
     }
 
     @Override // java.util.concurrent.Executor

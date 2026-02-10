@@ -10,10 +10,10 @@ import android.os.ResultReceiver;
 public class PlayCoreDialogWrapperActivity extends Activity {
 
     /* renamed from: d  reason: collision with root package name */
-    private ResultReceiver f16255d;
+    private ResultReceiver f17004d;
 
     private final void a() {
-        ResultReceiver resultReceiver = this.f16255d;
+        ResultReceiver resultReceiver = this.f17004d;
         if (resultReceiver != null) {
             resultReceiver.send(3, new Bundle());
         }
@@ -23,7 +23,7 @@ public class PlayCoreDialogWrapperActivity extends Activity {
     protected final void onActivityResult(int i10, int i11, Intent intent) {
         ResultReceiver resultReceiver;
         super.onActivityResult(i10, i11, intent);
-        if (i10 == 0 && (resultReceiver = this.f16255d) != null) {
+        if (i10 == 0 && (resultReceiver = this.f17004d) != null) {
             if (i11 == -1) {
                 resultReceiver.send(1, new Bundle());
             } else if (i11 == 0) {
@@ -48,7 +48,7 @@ public class PlayCoreDialogWrapperActivity extends Activity {
         }
         super.onCreate(bundle);
         if (bundle == null) {
-            this.f16255d = (ResultReceiver) getIntent().getParcelableExtra("result_receiver");
+            this.f17004d = (ResultReceiver) getIntent().getParcelableExtra("result_receiver");
             Bundle extras = getIntent().getExtras();
             if (extras != null) {
                 pendingIntent = (PendingIntent) extras.get("confirmation_intent");
@@ -68,12 +68,12 @@ public class PlayCoreDialogWrapperActivity extends Activity {
                 finish();
             }
         } else {
-            this.f16255d = (ResultReceiver) bundle.getParcelable("result_receiver");
+            this.f17004d = (ResultReceiver) bundle.getParcelable("result_receiver");
         }
     }
 
     @Override // android.app.Activity
     protected final void onSaveInstanceState(Bundle bundle) {
-        bundle.putParcelable("result_receiver", this.f16255d);
+        bundle.putParcelable("result_receiver", this.f17004d);
     }
 }

@@ -1,61 +1,33 @@
 package bs;
 
-import kotlin.random.c;
-import org.jetbrains.annotations.NotNull;
+import java.util.Map;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a extends as.a {
-
-    /* JADX INFO: Access modifiers changed from: private */
-    /* renamed from: bs.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0138a {
-        @NotNull
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final C0138a f7208a = new C0138a();
-
-        /* renamed from: b  reason: collision with root package name */
-        public static final Integer f7209b;
-
-        static {
-            Integer num;
-            Object obj;
-            Integer num2 = null;
-            try {
-                obj = Class.forName("android.os.Build$VERSION").getField("SDK_INT").get(null);
-            } catch (Throwable unused) {
-            }
-            if (obj instanceof Integer) {
-                num = (Integer) obj;
-                if (num != null && num.intValue() > 0) {
-                    num2 = num;
-                }
-                f7209b = num2;
-            }
-            num = null;
-            if (num != null) {
-                num2 = num;
-            }
-            f7209b = num2;
-        }
-
-        private C0138a() {
-        }
+public abstract class a extends kotlin.collections.g {
+    public final boolean b(Map.Entry element) {
+        Intrinsics.checkNotNullParameter(element, "element");
+        return c(element);
     }
 
-    private final boolean c(int i10) {
-        Integer num = C0138a.f7209b;
-        if (num != null && num.intValue() < i10) {
+    public abstract boolean c(Map.Entry entry);
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final /* bridge */ boolean contains(Object obj) {
+        if (!(obj instanceof Map.Entry)) {
             return false;
         }
-        return true;
+        return b((Map.Entry) obj);
     }
 
-    @Override // zr.a
-    public c b() {
-        if (c(34)) {
-            return new hs.a();
+    public /* bridge */ boolean d(Map.Entry entry) {
+        return super.remove(entry);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final /* bridge */ boolean remove(Object obj) {
+        if (!(obj instanceof Map.Entry)) {
+            return false;
         }
-        return super.b();
+        return d((Map.Entry) obj);
     }
 }

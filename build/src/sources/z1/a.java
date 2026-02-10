@@ -9,30 +9,30 @@ import z1.g;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g.c f55961a;
+    private final g.c f56000a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Executor f55962b;
+    private final Executor f56001b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: z1.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public class RunnableC0786a implements Runnable {
+    public class RunnableC0787a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ g.c f55963d;
+        final /* synthetic */ g.c f56002d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Typeface f55964e;
+        final /* synthetic */ Typeface f56003e;
 
-        RunnableC0786a(g.c cVar, Typeface typeface) {
-            this.f55963d = cVar;
-            this.f55964e = typeface;
+        RunnableC0787a(g.c cVar, Typeface typeface) {
+            this.f56002d = cVar;
+            this.f56003e = typeface;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f55963d.b(this.f55964e);
+            this.f56002d.b(this.f56003e);
         }
     }
 
@@ -41,42 +41,42 @@ public class a {
     public class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ g.c f55966d;
+        final /* synthetic */ g.c f56005d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f55967e;
+        final /* synthetic */ int f56006e;
 
         b(g.c cVar, int i10) {
-            this.f55966d = cVar;
-            this.f55967e = i10;
+            this.f56005d = cVar;
+            this.f56006e = i10;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f55966d.a(this.f55967e);
+            this.f56005d.a(this.f56006e);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(g.c cVar, Executor executor) {
-        this.f55961a = cVar;
-        this.f55962b = executor;
+        this.f56000a = cVar;
+        this.f56001b = executor;
     }
 
     private void a(int i10) {
-        this.f55962b.execute(new b(this.f55961a, i10));
+        this.f56001b.execute(new b(this.f56000a, i10));
     }
 
     private void c(Typeface typeface) {
-        this.f55962b.execute(new RunnableC0786a(this.f55961a, typeface));
+        this.f56001b.execute(new RunnableC0787a(this.f56000a, typeface));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b(f.e eVar) {
         if (eVar.a()) {
-            c(eVar.f55997a);
+            c(eVar.f56036a);
         } else {
-            a(eVar.f55998b);
+            a(eVar.f56037b);
         }
     }
 }

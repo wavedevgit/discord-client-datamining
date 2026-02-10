@@ -10,31 +10,31 @@ import org.jetbrains.annotations.NotNull;
 public final class a extends jf.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Bundle f6588d;
+    private final Bundle f6694d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final C0135a f6587e = new C0135a(null);
+    public static final C0099a f6693e = new C0099a(null);
     @NotNull
     public static final Parcelable.Creator<a> CREATOR = new b();
 
     /* renamed from: bf.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0135a {
-        private C0135a() {
+    public static final class C0099a {
+        private C0099a() {
         }
 
-        public /* synthetic */ C0135a(DefaultConstructorMarker defaultConstructorMarker) {
+        public /* synthetic */ C0099a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
     }
 
     public a(Bundle requestBundle) {
         Intrinsics.checkNotNullParameter(requestBundle, "requestBundle");
-        this.f6588d = requestBundle;
+        this.f6694d = requestBundle;
     }
 
     public final Bundle b() {
-        return this.f6588d;
+        return this.f6694d;
     }
 
     @Override // android.os.Parcelable

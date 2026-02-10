@@ -1,69 +1,67 @@
 package ni;
 
-import java.io.Serializable;
-import java.util.Arrays;
-import java.util.List;
+import java.util.NoSuchElementException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class o {
+abstract class o extends x {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static class b implements n, Serializable {
+    /* renamed from: d  reason: collision with root package name */
+    private final int f37920d;
 
-        /* renamed from: d  reason: collision with root package name */
-        private final List f38919d;
+    /* renamed from: e  reason: collision with root package name */
+    private int f37921e;
 
-        @Override // ni.n
-        public boolean apply(Object obj) {
-            for (int i10 = 0; i10 < this.f38919d.size(); i10++) {
-                if (!((n) this.f38919d.get(i10)).apply(obj)) {
-                    return false;
-                }
-            }
+    /* JADX INFO: Access modifiers changed from: protected */
+    public o(int i10, int i11) {
+        m.b(i11, i10, "index");
+        this.f37920d = i10;
+        this.f37921e = i11;
+    }
+
+    protected abstract Object a(int i10);
+
+    @Override // java.util.Iterator, java.util.ListIterator
+    public final boolean hasNext() {
+        if (this.f37921e < this.f37920d) {
             return true;
         }
-
-        public boolean equals(Object obj) {
-            if (obj instanceof b) {
-                return this.f38919d.equals(((b) obj).f38919d);
-            }
-            return false;
-        }
-
-        public int hashCode() {
-            return this.f38919d.hashCode() + 306654252;
-        }
-
-        public String toString() {
-            return o.d("and", this.f38919d);
-        }
-
-        private b(List list) {
-            this.f38919d = list;
-        }
+        return false;
     }
 
-    public static n b(n nVar, n nVar2) {
-        return new b(c((n) m.j(nVar), (n) m.j(nVar2)));
-    }
-
-    private static List c(n nVar, n nVar2) {
-        return Arrays.asList(nVar, nVar2);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static String d(String str, Iterable iterable) {
-        StringBuilder sb2 = new StringBuilder("Predicates.");
-        sb2.append(str);
-        sb2.append('(');
-        boolean z10 = true;
-        for (Object obj : iterable) {
-            if (!z10) {
-                sb2.append(',');
-            }
-            sb2.append(obj);
-            z10 = false;
+    @Override // java.util.ListIterator
+    public final boolean hasPrevious() {
+        if (this.f37921e > 0) {
+            return true;
         }
-        sb2.append(')');
-        return sb2.toString();
+        return false;
+    }
+
+    @Override // java.util.Iterator, java.util.ListIterator
+    public final Object next() {
+        if (hasNext()) {
+            int i10 = this.f37921e;
+            this.f37921e = i10 + 1;
+            return a(i10);
+        }
+        throw new NoSuchElementException();
+    }
+
+    @Override // java.util.ListIterator
+    public final int nextIndex() {
+        return this.f37921e;
+    }
+
+    @Override // java.util.ListIterator
+    public final Object previous() {
+        if (hasPrevious()) {
+            int i10 = this.f37921e - 1;
+            this.f37921e = i10;
+            return a(i10);
+        }
+        throw new NoSuchElementException();
+    }
+
+    @Override // java.util.ListIterator
+    public final int previousIndex() {
+        return this.f37921e - 1;
     }
 }

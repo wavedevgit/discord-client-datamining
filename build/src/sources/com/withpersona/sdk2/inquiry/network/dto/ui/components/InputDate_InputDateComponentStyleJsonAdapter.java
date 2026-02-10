@@ -119,7 +119,7 @@ public final class InputDate_InputDateComponentStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -171,7 +171,7 @@ public final class InputDate_InputDateComponentStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, InputDate.InputDateComponentStyle inputDateComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputDateComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J(ViewProps.FONT_FAMILY);
             this.nullableComplexTextBasedFontFamilyStyleAdapter.toJson(writer, inputDateComponentStyle.getFontFamily());
             writer.J(ViewProps.FONT_SIZE);

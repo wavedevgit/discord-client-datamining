@@ -1,10 +1,10 @@
 package com.withpersona.sdk2.inquiry.steps.ui.network;
 
-import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
+import dn.c;
 import kotlin.Metadata;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.Intrinsics;
@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AddressAutocompleteResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19887a;
+    private final m.b f20767a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19888b;
+    private final h f20768b;
 
     public AddressAutocompleteResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19887a = a10;
+        this.f20767a = a10;
         h f10 = moshi.f(Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19888b = f10;
+        this.f20768b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -36,13 +36,13 @@ public final class AddressAutocompleteResponseJsonAdapter extends h {
         reader.u();
         Meta meta = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19887a);
+            int J = reader.J(this.f20767a);
             if (J != -1) {
-                if (J == 0 && (meta = (Meta) this.f19888b.fromJson(reader)) == null) {
+                if (J == 0 && (meta = (Meta) this.f20768b.fromJson(reader)) == null) {
                     throw c.x("meta", "meta", reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -58,9 +58,9 @@ public final class AddressAutocompleteResponseJsonAdapter extends h {
     public void toJson(t writer, AddressAutocompleteResponse addressAutocompleteResponse) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (addressAutocompleteResponse != null) {
-            writer.k();
+            writer.i();
             writer.J("meta");
-            this.f19888b.toJson(writer, addressAutocompleteResponse.a());
+            this.f20768b.toJson(writer, addressAutocompleteResponse.a());
             writer.s();
             return;
         }

@@ -1,39 +1,32 @@
 package com.google.android.material.internal;
 
 import android.content.Context;
-import android.graphics.Point;
-import android.graphics.Rect;
-import android.os.Build;
-import android.view.Display;
-import android.view.WindowManager;
+import android.util.AttributeSet;
+import android.widget.ImageButton;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class q {
+public abstract class q extends ImageButton {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static class a {
-        static Rect a(WindowManager windowManager) {
-            Display defaultDisplay = windowManager.getDefaultDisplay();
-            Point point = new Point();
-            defaultDisplay.getRealSize(point);
-            Rect rect = new Rect();
-            rect.right = point.x;
-            rect.bottom = point.y;
-            return rect;
+    /* renamed from: d  reason: collision with root package name */
+    private int f15939d;
+
+    public q(Context context, AttributeSet attributeSet, int i10) {
+        super(context, attributeSet, i10);
+        this.f15939d = getVisibility();
+    }
+
+    public final void b(int i10, boolean z10) {
+        super.setVisibility(i10);
+        if (z10) {
+            this.f15939d = i10;
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static class b {
-        static Rect a(WindowManager windowManager) {
-            return windowManager.getCurrentWindowMetrics().getBounds();
-        }
+    public final int getUserSetVisibility() {
+        return this.f15939d;
     }
 
-    public static Rect a(Context context) {
-        WindowManager windowManager = (WindowManager) context.getSystemService("window");
-        if (Build.VERSION.SDK_INT >= 30) {
-            return b.a(windowManager);
-        }
-        return a.a(windowManager);
+    @Override // android.widget.ImageView, android.view.View
+    public void setVisibility(int i10) {
+        b(i10, true);
     }
 }

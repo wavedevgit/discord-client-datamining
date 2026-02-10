@@ -3,5 +3,5 @@ package mg;
 import android.os.IInterface;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface f0 extends IInterface {
-    void L0(vg.d dVar, c cVar, String str);
+    void N0(vg.d dVar, c cVar, String str);
 }

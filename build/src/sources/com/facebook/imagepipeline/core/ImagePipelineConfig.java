@@ -50,82 +50,82 @@ public final class ImagePipelineConfig implements r {
     private final Map L;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Bitmap.Config f10525a;
+    private final Bitmap.Config f11102a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Supplier f10526b;
+    private final Supplier f11103b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w.a f10527c;
+    private final w.a f11104c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final w.a f10528d;
+    private final w.a f11105d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final n.b f10529e;
+    private final n.b f11106e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final k f10530f;
+    private final k f11107f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Context f10531g;
+    private final Context f11108g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final DownsampleMode f10532h;
+    private final DownsampleMode f11109h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Supplier f10533i;
+    private final Supplier f11110i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Supplier f10534j;
+    private final Supplier f11111j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final oa.n f10535k;
+    private final oa.n f11112k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final s f10536l;
+    private final s f11113l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final c f10537m;
+    private final c f11114m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final d f10538n;
+    private final d f11115n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Supplier f10539o;
+    private final Supplier f11116o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Integer f10540p;
+    private final Integer f11117p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Supplier f10541q;
+    private final Supplier f11118q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final DiskCacheConfig f10542r;
+    private final DiskCacheConfig f11119r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final s8.d f10543s;
+    private final s8.d f11120s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final int f10544t;
+    private final int f11121t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final NetworkFetcher f10545u;
+    private final NetworkFetcher f11122u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final int f10546v;
+    private final int f11123v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final PlatformBitmapFactory f10547w;
+    private final PlatformBitmapFactory f11124w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final y f10548x;
+    private final y f11125x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final e f10549y;
+    private final e f11126y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final Set f10550z;
+    private final Set f11127z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class Builder {
@@ -134,7 +134,7 @@ public final class ImagePipelineConfig implements r {
         private o C;
         private Supplier D;
         private int E;
-        private final a.C0177a F;
+        private final a.C0154a F;
         private boolean G;
         private qa.a H;
         private w I;
@@ -144,96 +144,96 @@ public final class ImagePipelineConfig implements r {
         private Map M;
 
         /* renamed from: a  reason: collision with root package name */
-        private Bitmap.Config f10551a;
+        private Bitmap.Config f11128a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Supplier f10552b;
+        private Supplier f11129b;
 
         /* renamed from: c  reason: collision with root package name */
-        private n.b f10553c;
+        private n.b f11130c;
 
         /* renamed from: d  reason: collision with root package name */
-        private w.a f10554d;
+        private w.a f11131d;
 
         /* renamed from: e  reason: collision with root package name */
-        private w.a f10555e;
+        private w.a f11132e;
 
         /* renamed from: f  reason: collision with root package name */
-        private k f10556f;
+        private k f11133f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final Context f10557g;
+        private final Context f11134g;
 
         /* renamed from: h  reason: collision with root package name */
-        private DownsampleMode f10558h;
+        private DownsampleMode f11135h;
 
         /* renamed from: i  reason: collision with root package name */
-        private Supplier f10559i;
+        private Supplier f11136i;
 
         /* renamed from: j  reason: collision with root package name */
-        private oa.n f10560j;
+        private oa.n f11137j;
 
         /* renamed from: k  reason: collision with root package name */
-        private s f10561k;
+        private s f11138k;
 
         /* renamed from: l  reason: collision with root package name */
-        private c f10562l;
+        private c f11139l;
 
         /* renamed from: m  reason: collision with root package name */
-        private Supplier f10563m;
+        private Supplier f11140m;
 
         /* renamed from: n  reason: collision with root package name */
-        private d f10564n;
+        private d f11141n;
 
         /* renamed from: o  reason: collision with root package name */
-        private Integer f10565o;
+        private Integer f11142o;
 
         /* renamed from: p  reason: collision with root package name */
-        private Supplier f10566p;
+        private Supplier f11143p;
 
         /* renamed from: q  reason: collision with root package name */
-        private DiskCacheConfig f10567q;
+        private DiskCacheConfig f11144q;
 
         /* renamed from: r  reason: collision with root package name */
-        private s8.d f10568r;
+        private s8.d f11145r;
 
         /* renamed from: s  reason: collision with root package name */
-        private Integer f10569s;
+        private Integer f11146s;
 
         /* renamed from: t  reason: collision with root package name */
-        private NetworkFetcher f10570t;
+        private NetworkFetcher f11147t;
 
         /* renamed from: u  reason: collision with root package name */
-        private PlatformBitmapFactory f10571u;
+        private PlatformBitmapFactory f11148u;
 
         /* renamed from: v  reason: collision with root package name */
-        private y f10572v;
+        private y f11149v;
 
         /* renamed from: w  reason: collision with root package name */
-        private e f10573w;
+        private e f11150w;
 
         /* renamed from: x  reason: collision with root package name */
-        private Set f10574x;
+        private Set f11151x;
 
         /* renamed from: y  reason: collision with root package name */
-        private Set f10575y;
+        private Set f11152y;
 
         /* renamed from: z  reason: collision with root package name */
-        private Set f10576z;
+        private Set f11153z;
 
         public Builder(Context context) {
             Intrinsics.checkNotNullParameter(context, "context");
-            this.f10558h = DownsampleMode.f10503e;
+            this.f11135h = DownsampleMode.f11080e;
             this.A = true;
             this.E = -1;
-            this.F = new a.C0177a(this);
+            this.F = new a.C0154a(this);
             this.G = true;
             this.H = new qa.b();
-            this.f10557g = context;
+            this.f11134g = context;
         }
 
         public final c A() {
-            return this.f10562l;
+            return this.f11139l;
         }
 
         public final ra.d B() {
@@ -241,47 +241,47 @@ public final class ImagePipelineConfig implements r {
         }
 
         public final d C() {
-            return this.f10564n;
+            return this.f11141n;
         }
 
         public final Integer D() {
-            return this.f10565o;
+            return this.f11142o;
         }
 
         public final DiskCacheConfig E() {
-            return this.f10567q;
+            return this.f11144q;
         }
 
         public final Integer F() {
-            return this.f10569s;
+            return this.f11146s;
         }
 
         public final s8.d G() {
-            return this.f10568r;
+            return this.f11145r;
         }
 
         public final NetworkFetcher H() {
-            return this.f10570t;
+            return this.f11147t;
         }
 
         public final PlatformBitmapFactory I() {
-            return this.f10571u;
+            return this.f11148u;
         }
 
         public final y J() {
-            return this.f10572v;
+            return this.f11149v;
         }
 
         public final e K() {
-            return this.f10573w;
+            return this.f11150w;
         }
 
         public final Set L() {
-            return this.f10575y;
+            return this.f11152y;
         }
 
         public final Set M() {
-            return this.f10574x;
+            return this.f11151x;
         }
 
         public final boolean N() {
@@ -297,54 +297,54 @@ public final class ImagePipelineConfig implements r {
         }
 
         public final Supplier Q() {
-            return this.f10566p;
+            return this.f11143p;
         }
 
         public final Builder R(Supplier supplier) {
             if (supplier != null) {
-                this.f10552b = supplier;
+                this.f11129b = supplier;
                 return this;
             }
             throw new IllegalStateException("Required value was null.");
         }
 
         public final Builder S(k kVar) {
-            this.f10556f = kVar;
+            this.f11133f = kVar;
             return this;
         }
 
         public final Builder T(boolean z10) {
             if (z10) {
-                U(DownsampleMode.f10502d);
+                U(DownsampleMode.f11079d);
                 return this;
             }
-            U(DownsampleMode.f10503e);
+            U(DownsampleMode.f11080e);
             return this;
         }
 
         public final Builder U(DownsampleMode downsampleMode) {
             Intrinsics.checkNotNullParameter(downsampleMode, "downsampleMode");
-            this.f10558h = downsampleMode;
+            this.f11135h = downsampleMode;
             return this;
         }
 
         public final Builder V(DiskCacheConfig diskCacheConfig) {
-            this.f10567q = diskCacheConfig;
+            this.f11144q = diskCacheConfig;
             return this;
         }
 
         public final Builder W(NetworkFetcher networkFetcher) {
-            this.f10570t = networkFetcher;
+            this.f11147t = networkFetcher;
             return this;
         }
 
         public final Builder X(y yVar) {
-            this.f10572v = yVar;
+            this.f11149v = yVar;
             return this;
         }
 
         public final Builder Y(Set set) {
-            this.f10574x = set;
+            this.f11151x = set;
             return this;
         }
 
@@ -357,12 +357,12 @@ public final class ImagePipelineConfig implements r {
             return new ImagePipelineConfig(this, null);
         }
 
-        public final a.C0177a b() {
+        public final a.C0154a b() {
             return this.F;
         }
 
         public final Bitmap.Config c() {
-            return this.f10551a;
+            return this.f11128a;
         }
 
         public final w d() {
@@ -370,7 +370,7 @@ public final class ImagePipelineConfig implements r {
         }
 
         public final n.b e() {
-            return this.f10553c;
+            return this.f11130c;
         }
 
         public final ma.a f() {
@@ -378,15 +378,15 @@ public final class ImagePipelineConfig implements r {
         }
 
         public final Supplier g() {
-            return this.f10552b;
+            return this.f11129b;
         }
 
         public final w.a h() {
-            return this.f10554d;
+            return this.f11131d;
         }
 
         public final k i() {
-            return this.f10556f;
+            return this.f11133f;
         }
 
         public final l8.a j() {
@@ -398,11 +398,11 @@ public final class ImagePipelineConfig implements r {
         }
 
         public final Context l() {
-            return this.f10557g;
+            return this.f11134g;
         }
 
         public final Set m() {
-            return this.f10576z;
+            return this.f11153z;
         }
 
         public final boolean n() {
@@ -414,7 +414,7 @@ public final class ImagePipelineConfig implements r {
         }
 
         public final DownsampleMode p() {
-            return this.f10558h;
+            return this.f11135h;
         }
 
         public final Map q() {
@@ -422,7 +422,7 @@ public final class ImagePipelineConfig implements r {
         }
 
         public final Supplier r() {
-            return this.f10563m;
+            return this.f11140m;
         }
 
         public final w s() {
@@ -430,18 +430,18 @@ public final class ImagePipelineConfig implements r {
         }
 
         public final Supplier t() {
-            return this.f10559i;
+            return this.f11136i;
         }
 
         public final w.a u() {
-            return this.f10555e;
+            return this.f11132e;
         }
 
         public final oa.n v() {
-            return this.f10560j;
+            return this.f11137j;
         }
 
-        public final a.C0177a w() {
+        public final a.C0154a w() {
             return this.F;
         }
 
@@ -454,7 +454,7 @@ public final class ImagePipelineConfig implements r {
         }
 
         public final s z() {
-            return this.f10561k;
+            return this.f11138k;
         }
     }
 
@@ -507,7 +507,7 @@ public final class ImagePipelineConfig implements r {
 
         /* JADX INFO: Access modifiers changed from: private */
         public final void j(y8.b bVar, com.facebook.imagepipeline.core.a aVar, y8.a aVar2) {
-            y8.c.f55542c = bVar;
+            y8.c.f55473c = bVar;
             aVar.z();
             if (aVar2 != null) {
                 bVar.b(aVar2);
@@ -531,10 +531,10 @@ public final class ImagePipelineConfig implements r {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f10577a;
+        private boolean f11154a;
 
         public final boolean a() {
-            return this.f10577a;
+            return this.f11154a;
         }
     }
 
@@ -557,22 +557,22 @@ public final class ImagePipelineConfig implements r {
 
     @Override // oa.r
     public s B() {
-        return this.f10536l;
+        return this.f11113l;
     }
 
     @Override // oa.r
     public Supplier C() {
-        return this.f10541q;
+        return this.f11118q;
     }
 
     @Override // oa.r
     public s8.d D() {
-        return this.f10543s;
+        return this.f11120s;
     }
 
     @Override // oa.r
     public DownsampleMode E() {
-        return this.f10532h;
+        return this.f11109h;
     }
 
     @Override // oa.r
@@ -587,7 +587,7 @@ public final class ImagePipelineConfig implements r {
 
     @Override // oa.r
     public oa.n H() {
-        return this.f10535k;
+        return this.f11112k;
     }
 
     @Override // oa.r
@@ -597,7 +597,7 @@ public final class ImagePipelineConfig implements r {
 
     @Override // oa.r
     public NetworkFetcher b() {
-        return this.f10545u;
+        return this.f11122u;
     }
 
     @Override // oa.r
@@ -607,32 +607,32 @@ public final class ImagePipelineConfig implements r {
 
     @Override // oa.r
     public DiskCacheConfig d() {
-        return this.f10542r;
+        return this.f11119r;
     }
 
     @Override // oa.r
     public Set e() {
-        return this.f10550z;
+        return this.f11127z;
     }
 
     @Override // oa.r
     public w.a f() {
-        return this.f10528d;
+        return this.f11105d;
     }
 
     @Override // oa.r
     public w.a g() {
-        return this.f10527c;
+        return this.f11104c;
     }
 
     @Override // oa.r
     public Context getContext() {
-        return this.f10531g;
+        return this.f11108g;
     }
 
     @Override // oa.r
     public e h() {
-        return this.f10549y;
+        return this.f11126y;
     }
 
     @Override // oa.r
@@ -647,7 +647,7 @@ public final class ImagePipelineConfig implements r {
 
     @Override // oa.r
     public n.b k() {
-        return this.f10529e;
+        return this.f11106e;
     }
 
     @Override // oa.r
@@ -657,12 +657,12 @@ public final class ImagePipelineConfig implements r {
 
     @Override // oa.r
     public Integer m() {
-        return this.f10540p;
+        return this.f11117p;
     }
 
     @Override // oa.r
     public d n() {
-        return this.f10538n;
+        return this.f11115n;
     }
 
     @Override // oa.r
@@ -677,32 +677,32 @@ public final class ImagePipelineConfig implements r {
 
     @Override // oa.r
     public Supplier q() {
-        return this.f10526b;
+        return this.f11103b;
     }
 
     @Override // oa.r
     public c r() {
-        return this.f10537m;
+        return this.f11114m;
     }
 
     @Override // oa.r
     public Supplier s() {
-        return this.f10534j;
+        return this.f11111j;
     }
 
     @Override // oa.r
     public y t() {
-        return this.f10548x;
+        return this.f11125x;
     }
 
     @Override // oa.r
     public int u() {
-        return this.f10544t;
+        return this.f11121t;
     }
 
     @Override // oa.r
     public Supplier v() {
-        return this.f10533i;
+        return this.f11110i;
     }
 
     @Override // oa.r
@@ -717,7 +717,7 @@ public final class ImagePipelineConfig implements r {
 
     @Override // oa.r
     public k y() {
-        return this.f10530f;
+        return this.f11107f;
     }
 
     @Override // oa.r
@@ -741,59 +741,59 @@ public final class ImagePipelineConfig implements r {
                 throw new IllegalStateException("Required value was null.");
             }
         }
-        this.f10526b = g10;
+        this.f11103b = g10;
         w.a h10 = builder.h();
-        this.f10527c = h10 == null ? new ma.c() : h10;
+        this.f11104c = h10 == null ? new ma.c() : h10;
         w.a u10 = builder.u();
-        this.f10528d = u10 == null ? new ma.y() : u10;
-        this.f10529e = builder.e();
+        this.f11105d = u10 == null ? new ma.y() : u10;
+        this.f11106e = builder.e();
         Bitmap.Config c10 = builder.c();
-        this.f10525a = c10 == null ? Bitmap.Config.ARGB_8888 : c10;
+        this.f11102a = c10 == null ? Bitmap.Config.ARGB_8888 : c10;
         k i10 = builder.i();
         if (i10 == null) {
             i10 = DefaultCacheKeyFactory.getInstance();
             Intrinsics.checkNotNullExpressionValue(i10, "getInstance(...)");
         }
-        this.f10530f = i10;
+        this.f11107f = i10;
         Context l10 = builder.l();
         if (l10 != null) {
-            this.f10531g = l10;
-            this.f10532h = builder.p();
+            this.f11108g = l10;
+            this.f11109h = builder.p();
             Supplier t10 = builder.t();
-            this.f10534j = t10 == null ? new p() : t10;
+            this.f11111j = t10 == null ? new p() : t10;
             s z10 = builder.z();
             if (z10 == null) {
                 z10 = z.o();
                 Intrinsics.checkNotNullExpressionValue(z10, "getInstance(...)");
             }
-            this.f10536l = z10;
-            this.f10537m = builder.A();
+            this.f11113l = z10;
+            this.f11114m = builder.A();
             Supplier BOOLEAN_FALSE = builder.r();
             if (BOOLEAN_FALSE == null) {
-                BOOLEAN_FALSE = m.f43065b;
+                BOOLEAN_FALSE = m.f41523b;
                 Intrinsics.checkNotNullExpressionValue(BOOLEAN_FALSE, "BOOLEAN_FALSE");
             }
-            this.f10539o = BOOLEAN_FALSE;
+            this.f11116o = BOOLEAN_FALSE;
             a aVar = M;
-            this.f10538n = aVar.g(builder);
-            this.f10540p = builder.D();
+            this.f11115n = aVar.g(builder);
+            this.f11117p = builder.D();
             Supplier BOOLEAN_TRUE = builder.Q();
             if (BOOLEAN_TRUE == null) {
-                BOOLEAN_TRUE = m.f43064a;
+                BOOLEAN_TRUE = m.f41522a;
                 Intrinsics.checkNotNullExpressionValue(BOOLEAN_TRUE, "BOOLEAN_TRUE");
             }
-            this.f10541q = BOOLEAN_TRUE;
+            this.f11118q = BOOLEAN_TRUE;
             DiskCacheConfig E = builder.E();
-            this.f10542r = E == null ? aVar.f(builder.l()) : E;
+            this.f11119r = E == null ? aVar.f(builder.l()) : E;
             s8.d G = builder.G();
             if (G == null) {
                 G = s8.e.b();
                 Intrinsics.checkNotNullExpressionValue(G, "getInstance(...)");
             }
-            this.f10543s = G;
-            this.f10544t = aVar.h(builder, G());
+            this.f11120s = G;
+            this.f11121t = aVar.h(builder, G());
             int y10 = builder.y() < 0 ? 30000 : builder.y();
-            this.f10546v = y10;
+            this.f11123v = y10;
             if (!za.b.d()) {
                 H = builder.H();
                 if (H == null) {
@@ -808,14 +808,14 @@ public final class ImagePipelineConfig implements r {
                     za.b.b();
                 }
             }
-            this.f10545u = H;
-            this.f10547w = builder.I();
+            this.f11122u = H;
+            this.f11124w = builder.I();
             y J = builder.J();
-            this.f10548x = J == null ? new y(wa.w.n().m()) : J;
+            this.f11125x = J == null ? new y(wa.w.n().m()) : J;
             e K = builder.K();
-            this.f10549y = K == null ? new ra.g() : K;
+            this.f11126y = K == null ? new ra.g() : K;
             Set M2 = builder.M();
-            this.f10550z = M2 == null ? x0.d() : M2;
+            this.f11127z = M2 == null ? x0.d() : M2;
             Set L = builder.L();
             this.A = L == null ? x0.d() : L;
             Set m10 = builder.m();
@@ -826,7 +826,7 @@ public final class ImagePipelineConfig implements r {
             builder.B();
             int e10 = t().e();
             oa.n v10 = builder.v();
-            this.f10535k = v10 == null ? new DefaultExecutorSupplier(e10) : v10;
+            this.f11112k = v10 == null ? new DefaultExecutorSupplier(e10) : v10;
             this.F = builder.n();
             builder.j();
             this.G = builder.k();
@@ -841,7 +841,7 @@ public final class ImagePipelineConfig implements r {
                 o x10 = builder.x();
                 o10 = new j(x10 == null ? new oa.k(new oa.m()) : x10, this);
             }
-            this.f10533i = o10;
+            this.f11110i = o10;
             y8.b y11 = G().y();
             if (y11 != null) {
                 aVar.j(y11, G(), new la.c(t()));

@@ -1,56 +1,65 @@
 package com.google.android.material.internal;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.animation.ValueAnimator;
-import java.util.ArrayList;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.util.SparseArray;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final ArrayList f15287a = new ArrayList();
-
-    /* renamed from: b  reason: collision with root package name */
-    private b f15288b = null;
-
-    /* renamed from: c  reason: collision with root package name */
-    ValueAnimator f15289c = null;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Animator.AnimatorListener f15290d = new a();
+public class g extends SparseArray implements Parcelable {
+    public static final Parcelable.Creator<g> CREATOR = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class a extends AnimatorListenerAdapter {
+    class a implements Parcelable.ClassLoaderCreator {
         a() {
         }
 
-        @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
-        public void onAnimationEnd(Animator animator) {
-            g gVar = g.this;
-            if (gVar.f15289c == animator) {
-                gVar.f15289c = null;
-            }
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public g createFromParcel(Parcel parcel) {
+            return new g(parcel, null);
+        }
+
+        @Override // android.os.Parcelable.ClassLoaderCreator
+        /* renamed from: b */
+        public g createFromParcel(Parcel parcel, ClassLoader classLoader) {
+            return new g(parcel, classLoader);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: c */
+        public g[] newArray(int i10) {
+            return new g[i10];
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static class b {
-
-        /* renamed from: a  reason: collision with root package name */
-        final int[] f15292a;
-
-        /* renamed from: b  reason: collision with root package name */
-        final ValueAnimator f15293b;
-
-        b(int[] iArr, ValueAnimator valueAnimator) {
-            this.f15292a = iArr;
-            this.f15293b = valueAnimator;
-        }
+    public g() {
     }
 
-    public void a(int[] iArr, ValueAnimator valueAnimator) {
-        b bVar = new b(iArr, valueAnimator);
-        valueAnimator.addListener(this.f15290d);
-        this.f15287a.add(bVar);
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i10) {
+        int size = size();
+        int[] iArr = new int[size];
+        Parcelable[] parcelableArr = new Parcelable[size];
+        for (int i11 = 0; i11 < size; i11++) {
+            iArr[i11] = keyAt(i11);
+            parcelableArr[i11] = (Parcelable) valueAt(i11);
+        }
+        parcel.writeInt(size);
+        parcel.writeIntArray(iArr);
+        parcel.writeParcelableArray(parcelableArr, i10);
+    }
+
+    public g(Parcel parcel, ClassLoader classLoader) {
+        int readInt = parcel.readInt();
+        int[] iArr = new int[readInt];
+        parcel.readIntArray(iArr);
+        Parcelable[] readParcelableArray = parcel.readParcelableArray(classLoader);
+        for (int i10 = 0; i10 < readInt; i10++) {
+            put(iArr[i10], readParcelableArray[i10]);
+        }
     }
 }

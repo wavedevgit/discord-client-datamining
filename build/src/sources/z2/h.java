@@ -1,6 +1,7 @@
 package z2;
 
 import androidx.datastore.preferences.protobuf.w;
+import as.p;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
@@ -10,7 +11,6 @@ import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
 import kotlin.jvm.internal.Intrinsics;
-import rr.p;
 import w2.k;
 import y2.d;
 import y2.f;
@@ -19,16 +19,16 @@ import z2.d;
 public final class h implements k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f56030a = new h();
+    public static final h f56069a = new h();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String f56031b = "preferences_pb";
+    private static final String f56070b = "preferences_pb";
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f56032a;
+        public static final /* synthetic */ int[] f56071a;
 
         static {
             int[] iArr = new int[f.b.values().length];
@@ -40,7 +40,7 @@ public final class h implements k {
             iArr[f.b.STRING.ordinal()] = 6;
             iArr[f.b.STRING_SET.ordinal()] = 7;
             iArr[f.b.VALUE_NOT_SET.ordinal()] = 8;
-            f56032a = iArr;
+            f56071a = iArr;
         }
     }
 
@@ -53,7 +53,7 @@ public final class h implements k {
         if (T == null) {
             i10 = -1;
         } else {
-            i10 = a.f56032a[T.ordinal()];
+            i10 = a.f56071a[T.ordinal()];
         }
         switch (i10) {
             case -1:
@@ -95,33 +95,33 @@ public final class h implements k {
 
     private final y2.f g(Object obj) {
         if (obj instanceof Boolean) {
-            w h10 = y2.f.U().q(((Boolean) obj).booleanValue()).h();
-            Intrinsics.checkNotNullExpressionValue(h10, "newBuilder().setBoolean(value).build()");
-            return (y2.f) h10;
+            w g10 = y2.f.U().q(((Boolean) obj).booleanValue()).g();
+            Intrinsics.checkNotNullExpressionValue(g10, "newBuilder().setBoolean(value).build()");
+            return (y2.f) g10;
         } else if (obj instanceof Float) {
-            w h11 = y2.f.U().t(((Number) obj).floatValue()).h();
-            Intrinsics.checkNotNullExpressionValue(h11, "newBuilder().setFloat(value).build()");
-            return (y2.f) h11;
+            w g11 = y2.f.U().t(((Number) obj).floatValue()).g();
+            Intrinsics.checkNotNullExpressionValue(g11, "newBuilder().setFloat(value).build()");
+            return (y2.f) g11;
         } else if (obj instanceof Double) {
-            w h12 = y2.f.U().r(((Number) obj).doubleValue()).h();
-            Intrinsics.checkNotNullExpressionValue(h12, "newBuilder().setDouble(value).build()");
-            return (y2.f) h12;
+            w g12 = y2.f.U().r(((Number) obj).doubleValue()).g();
+            Intrinsics.checkNotNullExpressionValue(g12, "newBuilder().setDouble(value).build()");
+            return (y2.f) g12;
         } else if (obj instanceof Integer) {
-            w h13 = y2.f.U().u(((Number) obj).intValue()).h();
-            Intrinsics.checkNotNullExpressionValue(h13, "newBuilder().setInteger(value).build()");
-            return (y2.f) h13;
+            w g13 = y2.f.U().u(((Number) obj).intValue()).g();
+            Intrinsics.checkNotNullExpressionValue(g13, "newBuilder().setInteger(value).build()");
+            return (y2.f) g13;
         } else if (obj instanceof Long) {
-            w h14 = y2.f.U().v(((Number) obj).longValue()).h();
-            Intrinsics.checkNotNullExpressionValue(h14, "newBuilder().setLong(value).build()");
-            return (y2.f) h14;
+            w g14 = y2.f.U().v(((Number) obj).longValue()).g();
+            Intrinsics.checkNotNullExpressionValue(g14, "newBuilder().setLong(value).build()");
+            return (y2.f) g14;
         } else if (obj instanceof String) {
-            w h15 = y2.f.U().w((String) obj).h();
-            Intrinsics.checkNotNullExpressionValue(h15, "newBuilder().setString(value).build()");
-            return (y2.f) h15;
+            w g15 = y2.f.U().w((String) obj).g();
+            Intrinsics.checkNotNullExpressionValue(g15, "newBuilder().setString(value).build()");
+            return (y2.f) g15;
         } else if (obj instanceof Set) {
-            w h16 = y2.f.U().x(y2.e.I().q((Set) obj)).h();
-            Intrinsics.checkNotNullExpressionValue(h16, "newBuilder().setStringSet(\n                    StringSet.newBuilder().addAllStrings(value as Set<String>)\n                ).build()");
-            return (y2.f) h16;
+            w g16 = y2.f.U().x(y2.e.I().q((Set) obj)).g();
+            Intrinsics.checkNotNullExpressionValue(g16, "newBuilder().setStringSet(\n                    StringSet.newBuilder().addAllStrings(value as Set<String>)\n                ).build()");
+            return (y2.f) g16;
         } else {
             throw new IllegalStateException(Intrinsics.stringPlus("PreferencesSerializer does not support type: ", obj.getClass().getName()));
         }
@@ -129,14 +129,14 @@ public final class h implements k {
 
     @Override // w2.k
     public Object c(InputStream inputStream, Continuation continuation) {
-        y2.d a10 = y2.b.f55402a.a(inputStream);
+        y2.d a10 = y2.b.f55333a.a(inputStream);
         z2.a b10 = e.b(new d.b[0]);
         Map F = a10.F();
         Intrinsics.checkNotNullExpressionValue(F, "preferencesProto.preferencesMap");
         for (Map.Entry entry : F.entrySet()) {
             String name = (String) entry.getKey();
             y2.f value = (y2.f) entry.getValue();
-            h hVar = f56030a;
+            h hVar = f56069a;
             Intrinsics.checkNotNullExpressionValue(name, "name");
             Intrinsics.checkNotNullExpressionValue(value, "value");
             hVar.d(name, value, b10);
@@ -151,7 +151,7 @@ public final class h implements k {
     }
 
     public final String f() {
-        return f56031b;
+        return f56070b;
     }
 
     @Override // w2.k
@@ -162,7 +162,7 @@ public final class h implements k {
         for (Map.Entry entry : a10.entrySet()) {
             I.q(((d.a) entry.getKey()).a(), g(entry.getValue()));
         }
-        ((y2.d) I.h()).g(outputStream);
-        return Unit.f31765a;
+        ((y2.d) I.g()).g(outputStream);
+        return Unit.f31987a;
     }
 }

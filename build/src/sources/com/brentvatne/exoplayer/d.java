@@ -22,37 +22,37 @@ import java.util.List;
 public final class d extends FrameLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private View f8352d;
+    private View f8929d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final View f8353e;
+    private final View f8930e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final SubtitleView f8354i;
+    private final SubtitleView f8931i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final com.brentvatne.exoplayer.a f8355o;
+    private final com.brentvatne.exoplayer.a f8932o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final b f8356p;
+    private final b f8933p;
 
     /* renamed from: q  reason: collision with root package name */
-    private SimpleExoPlayer f8357q;
+    private SimpleExoPlayer f8934q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Context f8358r;
+    private Context f8935r;
 
     /* renamed from: s  reason: collision with root package name */
-    private ViewGroup.LayoutParams f8359s;
+    private ViewGroup.LayoutParams f8936s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f8360t;
+    private boolean f8937t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f8361u;
+    private boolean f8938u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Runnable f8362v;
+    private final Runnable f8939v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Runnable {
@@ -73,7 +73,7 @@ public final class d extends FrameLayout {
     public final class b implements Player.b, m {
         @Override // com.google.android.exoplayer2.Player.b, ae.m
         public void onCues(CueGroup cueGroup) {
-            d.this.f8354i.setCues(cueGroup.f13078d);
+            d.this.f8931i.setCues(cueGroup.f13655d);
         }
 
         @Override // com.google.android.exoplayer2.Player.b
@@ -98,7 +98,7 @@ public final class d extends FrameLayout {
 
         @Override // com.google.android.exoplayer2.Player.b
         public void onRenderedFirstFrame() {
-            d.this.f8353e.setVisibility(4);
+            d.this.f8930e.setVisibility(4);
         }
 
         @Override // com.google.android.exoplayer2.Player.b
@@ -122,23 +122,23 @@ public final class d extends FrameLayout {
         public void onVideoSizeChanged(VideoSize videoSize) {
             boolean z10;
             float f10;
-            if (videoSize.f13602d != 0 || videoSize.f13603e != 0) {
-                if (d.this.f8355o.getAspectRatio() == 0.0f) {
+            if (videoSize.f14179d != 0 || videoSize.f14180e != 0) {
+                if (d.this.f8932o.getAspectRatio() == 0.0f) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
-                com.brentvatne.exoplayer.a aVar = d.this.f8355o;
-                int i10 = videoSize.f13603e;
+                com.brentvatne.exoplayer.a aVar = d.this.f8932o;
+                int i10 = videoSize.f14180e;
                 if (i10 == 0) {
                     f10 = 1.0f;
                 } else {
-                    f10 = (videoSize.f13602d * videoSize.f13605o) / i10;
+                    f10 = (videoSize.f14179d * videoSize.f14182o) / i10;
                 }
                 aVar.setAspectRatio(f10);
                 if (z10) {
                     d dVar = d.this;
-                    dVar.post(dVar.f8362v);
+                    dVar.post(dVar.f8939v);
                 }
             }
         }
@@ -148,7 +148,7 @@ public final class d extends FrameLayout {
 
         @Override // com.google.android.exoplayer2.Player.b, ae.m
         public void onCues(List list) {
-            d.this.f8354i.setCues(list);
+            d.this.f8931i.setCues(list);
         }
 
         @Override // com.google.android.exoplayer2.Player.b
@@ -161,41 +161,41 @@ public final class d extends FrameLayout {
     }
 
     private void f() {
-        View view = this.f8352d;
+        View view = this.f8929d;
         if (view instanceof TextureView) {
-            this.f8357q.F((TextureView) view);
+            this.f8934q.F((TextureView) view);
         } else if (view instanceof SurfaceView) {
-            this.f8357q.S((SurfaceView) view);
+            this.f8934q.S((SurfaceView) view);
         }
     }
 
     private void h() {
-        View view = this.f8352d;
+        View view = this.f8929d;
         if (view instanceof TextureView) {
-            this.f8357q.y((TextureView) view);
+            this.f8934q.y((TextureView) view);
         } else if (view instanceof SurfaceView) {
-            this.f8357q.j((SurfaceView) view);
+            this.f8934q.j((SurfaceView) view);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void i() {
-        SimpleExoPlayer simpleExoPlayer = this.f8357q;
+        SimpleExoPlayer simpleExoPlayer = this.f8934q;
         if (simpleExoPlayer != null) {
             ke.m t02 = simpleExoPlayer.t0();
-            for (int i10 = 0; i10 < t02.f30854a; i10++) {
-                if (this.f8357q.w0(i10) == 2 && t02.a(i10) != null) {
+            for (int i10 = 0; i10 < t02.f31712a; i10++) {
+                if (this.f8934q.w0(i10) == 2 && t02.a(i10) != null) {
                     return;
                 }
             }
-            this.f8353e.setVisibility(0);
+            this.f8930e.setVisibility(0);
         }
     }
 
     private void j() {
         int i10;
-        View view = this.f8353e;
-        if (this.f8361u) {
+        View view = this.f8930e;
+        if (this.f8938u) {
             i10 = 4;
         } else {
             i10 = 0;
@@ -205,61 +205,61 @@ public final class d extends FrameLayout {
 
     private void k() {
         View surfaceView;
-        if (this.f8360t) {
-            surfaceView = new TextureView(this.f8358r);
+        if (this.f8937t) {
+            surfaceView = new TextureView(this.f8935r);
         } else {
-            surfaceView = new SurfaceView(this.f8358r);
+            surfaceView = new SurfaceView(this.f8935r);
         }
-        surfaceView.setLayoutParams(this.f8359s);
-        this.f8352d = surfaceView;
-        if (this.f8355o.getChildAt(0) != null) {
-            this.f8355o.removeViewAt(0);
+        surfaceView.setLayoutParams(this.f8936s);
+        this.f8929d = surfaceView;
+        if (this.f8932o.getChildAt(0) != null) {
+            this.f8932o.removeViewAt(0);
         }
-        this.f8355o.addView(this.f8352d, 0, this.f8359s);
-        if (this.f8357q != null) {
+        this.f8932o.addView(this.f8929d, 0, this.f8936s);
+        if (this.f8934q != null) {
             h();
         }
     }
 
     public void g() {
-        this.f8355o.a();
+        this.f8932o.a();
     }
 
     public View getVideoSurfaceView() {
-        return this.f8352d;
+        return this.f8929d;
     }
 
     public void setHideShutterView(boolean z10) {
-        this.f8361u = z10;
+        this.f8938u = z10;
         j();
     }
 
     public void setPlayer(SimpleExoPlayer simpleExoPlayer) {
-        SimpleExoPlayer simpleExoPlayer2 = this.f8357q;
+        SimpleExoPlayer simpleExoPlayer2 = this.f8934q;
         if (simpleExoPlayer2 != simpleExoPlayer) {
             if (simpleExoPlayer2 != null) {
-                simpleExoPlayer2.h(this.f8356p);
+                simpleExoPlayer2.h(this.f8933p);
                 f();
             }
-            this.f8357q = simpleExoPlayer;
-            this.f8353e.setVisibility(0);
+            this.f8934q = simpleExoPlayer;
+            this.f8930e.setVisibility(0);
             if (simpleExoPlayer != null) {
                 h();
-                simpleExoPlayer.L(this.f8356p);
+                simpleExoPlayer.L(this.f8933p);
             }
         }
     }
 
     public void setResizeMode(int i10) {
-        if (this.f8355o.getResizeMode() != i10) {
-            this.f8355o.setResizeMode(i10);
-            post(this.f8362v);
+        if (this.f8932o.getResizeMode() != i10) {
+            this.f8932o.setResizeMode(i10);
+            post(this.f8939v);
         }
     }
 
     public void setUseTextureView(boolean z10) {
-        if (z10 != this.f8360t) {
-            this.f8360t = z10;
+        if (z10 != this.f8937t) {
+            this.f8937t = z10;
             k();
         }
     }
@@ -270,29 +270,29 @@ public final class d extends FrameLayout {
 
     public d(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f8360t = true;
-        this.f8361u = false;
-        this.f8362v = new a();
-        this.f8358r = context;
-        this.f8359s = new ViewGroup.LayoutParams(-1, -1);
-        this.f8356p = new b();
+        this.f8937t = true;
+        this.f8938u = false;
+        this.f8939v = new a();
+        this.f8935r = context;
+        this.f8936s = new ViewGroup.LayoutParams(-1, -1);
+        this.f8933p = new b();
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
         layoutParams.gravity = 17;
         com.brentvatne.exoplayer.a aVar = new com.brentvatne.exoplayer.a(context);
-        this.f8355o = aVar;
+        this.f8932o = aVar;
         aVar.setLayoutParams(layoutParams);
         View view = new View(getContext());
-        this.f8353e = view;
-        view.setLayoutParams(this.f8359s);
+        this.f8930e = view;
+        view.setLayoutParams(this.f8936s);
         view.setBackgroundColor(androidx.core.content.a.c(context, 17170444));
         SubtitleView subtitleView = new SubtitleView(context);
-        this.f8354i = subtitleView;
-        subtitleView.setLayoutParams(this.f8359s);
+        this.f8931i = subtitleView;
+        subtitleView.setLayoutParams(this.f8936s);
         subtitleView.d();
         subtitleView.e();
         k();
-        aVar.addView(view, 1, this.f8359s);
-        aVar.addView(subtitleView, 2, this.f8359s);
+        aVar.addView(view, 1, this.f8936s);
+        aVar.addView(subtitleView, 2, this.f8936s);
         addViewInLayout(aVar, 0, layoutParams);
     }
 }

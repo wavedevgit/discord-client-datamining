@@ -17,32 +17,32 @@ import java.util.concurrent.locks.ReentrantLock;
 public final class r2 {
 
     /* renamed from: g  reason: collision with root package name */
-    private static final yh.k0 f16102g = new yh.k0("ExtractorSessionStoreView");
+    private static final ai.k0 f16851g = new ai.k0("ExtractorSessionStoreView");
 
     /* renamed from: a  reason: collision with root package name */
-    private final n0 f16103a;
+    private final n0 f16852a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b2 f16104b;
+    private final b2 f16853b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f16105c = new HashMap();
+    private final Map f16854c = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final ReentrantLock f16106d = new ReentrantLock();
+    private final ReentrantLock f16855d = new ReentrantLock();
 
     /* renamed from: e  reason: collision with root package name */
-    private final yh.r f16107e;
+    private final ai.r f16856e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final yh.r f16108f;
+    private final ai.r f16857f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public r2(n0 n0Var, yh.r rVar, b2 b2Var, yh.r rVar2) {
-        this.f16103a = n0Var;
-        this.f16107e = rVar;
-        this.f16104b = b2Var;
-        this.f16108f = rVar2;
+    public r2(n0 n0Var, ai.r rVar, b2 b2Var, ai.r rVar2) {
+        this.f16852a = n0Var;
+        this.f16856e = rVar;
+        this.f16853b = b2Var;
+        this.f16857f = rVar2;
     }
 
     public static /* synthetic */ Boolean a(r2 r2Var, Bundle bundle) {
@@ -52,38 +52,38 @@ public final class r2 {
         if (i10 == 0) {
             return Boolean.FALSE;
         }
-        Map map = r2Var.f16105c;
+        Map map = r2Var.f16854c;
         Integer valueOf = Integer.valueOf(i10);
         if (map.containsKey(valueOf)) {
             o2 q10 = r2Var.q(i10);
-            int i11 = bundle.getInt(zh.b.a("status", q10.f16063c.f16048a));
-            n2 n2Var = q10.f16063c;
-            int i12 = n2Var.f16051d;
+            int i11 = bundle.getInt(bi.b.a("status", q10.f16812c.f16797a));
+            n2 n2Var = q10.f16812c;
+            int i12 = n2Var.f16800d;
             if (m0.c(i12, i11)) {
-                f16102g.a("Found stale update for session %s with status %d.", valueOf, Integer.valueOf(i12));
-                n2 n2Var2 = q10.f16063c;
-                int i13 = n2Var2.f16051d;
-                String str = n2Var2.f16048a;
+                f16851g.a("Found stale update for session %s with status %d.", valueOf, Integer.valueOf(i12));
+                n2 n2Var2 = q10.f16812c;
+                int i13 = n2Var2.f16800d;
+                String str = n2Var2.f16797a;
                 if (i13 == 4) {
-                    ((t4) r2Var.f16107e.a()).b(i10, str);
+                    ((t4) r2Var.f16856e.a()).b(i10, str);
                 } else if (i13 == 5) {
-                    ((t4) r2Var.f16107e.a()).a(i10);
+                    ((t4) r2Var.f16856e.a()).a(i10);
                 } else if (i13 == 6) {
-                    ((t4) r2Var.f16107e.a()).f(Arrays.asList(str));
+                    ((t4) r2Var.f16856e.a()).f(Arrays.asList(str));
                 }
             } else {
-                n2Var.f16051d = i11;
+                n2Var.f16800d = i11;
                 if (m0.d(i11)) {
                     r2Var.n(i10);
-                    r2Var.f16104b.c(q10.f16063c.f16048a);
+                    r2Var.f16853b.c(q10.f16812c.f16797a);
                 } else {
-                    for (p2 p2Var2 : n2Var.f16053f) {
-                        n2 n2Var3 = q10.f16063c;
-                        ArrayList parcelableArrayList = bundle.getParcelableArrayList(zh.b.b("chunk_intents", n2Var3.f16048a, p2Var2.f16076a));
+                    for (p2 p2Var2 : n2Var.f16802f) {
+                        n2 n2Var3 = q10.f16812c;
+                        ArrayList parcelableArrayList = bundle.getParcelableArrayList(bi.b.b("chunk_intents", n2Var3.f16797a, p2Var2.f16825a));
                         if (parcelableArrayList != null) {
                             for (int i14 = 0; i14 < parcelableArrayList.size(); i14++) {
                                 if (parcelableArrayList.get(i14) != null && ((Intent) parcelableArrayList.get(i14)).getData() != null) {
-                                    ((m2) p2Var2.f16079d.get(i14)).f16032a = true;
+                                    ((m2) p2Var2.f16828d.get(i14)).f16781a = true;
                                 }
                             }
                         }
@@ -92,16 +92,16 @@ public final class r2 {
             }
         } else {
             String s10 = s(bundle);
-            long j10 = bundle.getLong(zh.b.a("pack_version", s10));
-            String string = bundle.getString(zh.b.a("pack_version_tag", s10), "");
-            int i15 = bundle.getInt(zh.b.a("status", s10));
-            long j11 = bundle.getLong(zh.b.a("total_bytes_to_download", s10));
-            ArrayList<String> stringArrayList = bundle.getStringArrayList(zh.b.a("slice_ids", s10));
+            long j10 = bundle.getLong(bi.b.a("pack_version", s10));
+            String string = bundle.getString(bi.b.a("pack_version_tag", s10), "");
+            int i15 = bundle.getInt(bi.b.a("status", s10));
+            long j11 = bundle.getLong(bi.b.a("total_bytes_to_download", s10));
+            ArrayList<String> stringArrayList = bundle.getStringArrayList(bi.b.a("slice_ids", s10));
             ArrayList arrayList = new ArrayList();
             Iterator it = t(stringArrayList).iterator();
             while (it.hasNext()) {
                 String str2 = (String) it.next();
-                ArrayList parcelableArrayList2 = bundle.getParcelableArrayList(zh.b.b("chunk_intents", s10, str2));
+                ArrayList parcelableArrayList2 = bundle.getParcelableArrayList(bi.b.b("chunk_intents", s10, str2));
                 ArrayList arrayList2 = new ArrayList();
                 for (Intent intent : t(parcelableArrayList2)) {
                     if (intent != null) {
@@ -114,18 +114,18 @@ public final class r2 {
                     it = it2;
                 }
                 Iterator it3 = it;
-                String string2 = bundle.getString(zh.b.b("uncompressed_hash_sha256", s10, str2));
-                long j12 = bundle.getLong(zh.b.b("uncompressed_size", s10, str2));
-                int i16 = bundle.getInt(zh.b.b("patch_format", s10, str2), 0);
+                String string2 = bundle.getString(bi.b.b("uncompressed_hash_sha256", s10, str2));
+                long j12 = bundle.getLong(bi.b.b("uncompressed_size", s10, str2));
+                int i16 = bundle.getInt(bi.b.b("patch_format", s10, str2), 0);
                 if (i16 != 0) {
                     p2Var = new p2(str2, string2, j12, arrayList2, 0, i16);
                 } else {
-                    p2Var = new p2(str2, string2, j12, arrayList2, bundle.getInt(zh.b.b("compression_format", s10, str2), 0), 0);
+                    p2Var = new p2(str2, string2, j12, arrayList2, bundle.getInt(bi.b.b("compression_format", s10, str2), 0), 0);
                 }
                 arrayList.add(p2Var);
                 it = it3;
             }
-            r2Var.f16105c.put(Integer.valueOf(i10), new o2(i10, bundle.getInt("app_version_code"), new n2(s10, j10, i15, j11, arrayList, string)));
+            r2Var.f16854c.put(Integer.valueOf(i10), new o2(i10, bundle.getInt("app_version_code"), new n2(s10, j10, i15, j11, arrayList, string)));
         }
         return Boolean.TRUE;
     }
@@ -135,37 +135,37 @@ public final class r2 {
         if (i10 == 0) {
             return Boolean.TRUE;
         }
-        Map map = r2Var.f16105c;
+        Map map = r2Var.f16854c;
         Integer valueOf = Integer.valueOf(i10);
         if (!map.containsKey(valueOf)) {
             return Boolean.TRUE;
         }
-        o2 o2Var = (o2) r2Var.f16105c.get(valueOf);
-        if (o2Var.f16063c.f16051d == 6) {
+        o2 o2Var = (o2) r2Var.f16854c.get(valueOf);
+        if (o2Var.f16812c.f16800d == 6) {
             return Boolean.FALSE;
         }
-        return Boolean.valueOf(!m0.c(o2Var.f16063c.f16051d, bundle.getInt(zh.b.a("status", s(bundle)))));
+        return Boolean.valueOf(!m0.c(o2Var.f16812c.f16800d, bundle.getInt(bi.b.a("status", s(bundle)))));
     }
 
     public static /* synthetic */ Object c(r2 r2Var, String str, int i10, long j10) {
         o2 o2Var = (o2) r2Var.u(Arrays.asList(str)).get(str);
-        if (o2Var == null || m0.d(o2Var.f16063c.f16051d)) {
-            f16102g.b(String.format("Could not find pack %s while trying to complete it", str), new Object[0]);
+        if (o2Var == null || m0.d(o2Var.f16812c.f16800d)) {
+            f16851g.b(String.format("Could not find pack %s while trying to complete it", str), new Object[0]);
         }
-        r2Var.f16103a.d(str, i10, j10);
-        o2Var.f16063c.f16051d = 4;
+        r2Var.f16852a.d(str, i10, j10);
+        o2Var.f16812c.f16800d = 4;
         return null;
     }
 
     public static /* synthetic */ Object d(r2 r2Var, int i10) {
         o2 q10 = r2Var.q(i10);
-        n2 n2Var = q10.f16063c;
-        if (m0.d(n2Var.f16051d)) {
-            r2Var.f16103a.d(n2Var.f16048a, q10.f16062b, n2Var.f16049b);
-            n2 n2Var2 = q10.f16063c;
-            int i11 = n2Var2.f16051d;
+        n2 n2Var = q10.f16812c;
+        if (m0.d(n2Var.f16800d)) {
+            r2Var.f16852a.d(n2Var.f16797a, q10.f16811b, n2Var.f16798b);
+            n2 n2Var2 = q10.f16812c;
+            int i11 = n2Var2.f16800d;
             if (i11 == 5 || i11 == 6) {
-                r2Var.f16103a.e(n2Var2.f16048a, q10.f16062b, n2Var2.f16049b);
+                r2Var.f16852a.e(n2Var2.f16797a, q10.f16811b, n2Var2.f16798b);
                 return null;
             }
             return null;
@@ -174,23 +174,23 @@ public final class r2 {
     }
 
     public static /* synthetic */ Object e(r2 r2Var, int i10, int i11) {
-        r2Var.q(i10).f16063c.f16051d = 5;
+        r2Var.q(i10).f16812c.f16800d = 5;
         return null;
     }
 
     public static /* synthetic */ Map f(r2 r2Var, List list) {
         int i10;
         HashMap hashMap = new HashMap();
-        for (o2 o2Var : r2Var.f16105c.values()) {
-            String str = o2Var.f16063c.f16048a;
+        for (o2 o2Var : r2Var.f16854c.values()) {
+            String str = o2Var.f16812c.f16797a;
             if (list.contains(str)) {
                 o2 o2Var2 = (o2) hashMap.get(str);
                 if (o2Var2 == null) {
                     i10 = -1;
                 } else {
-                    i10 = o2Var2.f16061a;
+                    i10 = o2Var2.f16810a;
                 }
-                if (i10 < o2Var.f16061a) {
+                if (i10 < o2Var.f16810a) {
                     hashMap.put(str, o2Var);
                 }
             }
@@ -208,29 +208,29 @@ public final class r2 {
             if (o2Var == null) {
                 hashMap.put(str, 8);
             } else {
-                n2 n2Var = o2Var.f16063c;
-                if (m0.a(n2Var.f16051d)) {
+                n2 n2Var = o2Var.f16812c;
+                if (m0.a(n2Var.f16800d)) {
                     try {
-                        n2Var.f16051d = 6;
-                        ((Executor) r2Var.f16108f.a()).execute(new Runnable() { // from class: com.google.android.play.core.assetpacks.k2
+                        n2Var.f16800d = 6;
+                        ((Executor) r2Var.f16857f.a()).execute(new Runnable() { // from class: com.google.android.play.core.assetpacks.k2
                             @Override // java.lang.Runnable
                             public final void run() {
-                                r2.this.n(o2Var.f16061a);
+                                r2.this.n(o2Var.f16810a);
                             }
                         });
-                        r2Var.f16104b.c(str);
+                        r2Var.f16853b.c(str);
                     } catch (w1 unused) {
-                        f16102g.d("Session %d with pack %s does not exist, no need to cancel.", Integer.valueOf(o2Var.f16061a), str);
+                        f16851g.d("Session %d with pack %s does not exist, no need to cancel.", Integer.valueOf(o2Var.f16810a), str);
                     }
                 }
-                hashMap.put(str, Integer.valueOf(o2Var.f16063c.f16051d));
+                hashMap.put(str, Integer.valueOf(o2Var.f16812c.f16800d));
             }
         }
         return hashMap;
     }
 
     private final o2 q(int i10) {
-        Map map = this.f16105c;
+        Map map = this.f16854c;
         Integer valueOf = Integer.valueOf(i10);
         o2 o2Var = (o2) map.get(valueOf);
         if (o2Var != null) {
@@ -241,10 +241,10 @@ public final class r2 {
 
     private final Object r(q2 q2Var) {
         try {
-            this.f16106d.lock();
+            this.f16855d.lock();
             return q2Var.a();
         } finally {
-            this.f16106d.unlock();
+            this.f16855d.unlock();
         }
     }
 
@@ -284,12 +284,12 @@ public final class r2 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final Map i() {
-        return this.f16105c;
+        return this.f16854c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void j() {
-        this.f16106d.lock();
+        this.f16855d.lock();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -305,7 +305,7 @@ public final class r2 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void l() {
-        this.f16106d.unlock();
+        this.f16855d.unlock();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -313,11 +313,11 @@ public final class r2 {
         r(new q2(i10, 5) { // from class: com.google.android.play.core.assetpacks.g2
 
             /* renamed from: b  reason: collision with root package name */
-            public final /* synthetic */ int f15898b;
+            public final /* synthetic */ int f16647b;
 
             @Override // com.google.android.play.core.assetpacks.q2
             public final Object a() {
-                r2.e(r2.this, this.f15898b, 5);
+                r2.e(r2.this, this.f16647b, 5);
                 return null;
             }
         });

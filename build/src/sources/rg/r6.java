@@ -1,54 +1,54 @@
 package rg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class r6 implements zi.d {
+final class r6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r6 f48648a = new r6();
+    static final r6 f47102a = new r6();
 
     static {
-        c.b a10 = zi.c.a("sdkVersion");
+        c.b a10 = bj.c.a("sdkVersion");
         v1 v1Var = new v1();
         v1Var.a(1);
         a10.b(v1Var.b()).a();
-        c.b a11 = zi.c.a("osBuild");
+        c.b a11 = bj.c.a("osBuild");
         v1 v1Var2 = new v1();
         v1Var2.a(2);
         a11.b(v1Var2.b()).a();
-        c.b a12 = zi.c.a("brand");
+        c.b a12 = bj.c.a("brand");
         v1 v1Var3 = new v1();
         v1Var3.a(3);
         a12.b(v1Var3.b()).a();
-        c.b a13 = zi.c.a("device");
+        c.b a13 = bj.c.a("device");
         v1 v1Var4 = new v1();
         v1Var4.a(4);
         a13.b(v1Var4.b()).a();
-        c.b a14 = zi.c.a("hardware");
+        c.b a14 = bj.c.a("hardware");
         v1 v1Var5 = new v1();
         v1Var5.a(5);
         a14.b(v1Var5.b()).a();
-        c.b a15 = zi.c.a("manufacturer");
+        c.b a15 = bj.c.a("manufacturer");
         v1 v1Var6 = new v1();
         v1Var6.a(6);
         a15.b(v1Var6.b()).a();
-        c.b a16 = zi.c.a("model");
+        c.b a16 = bj.c.a("model");
         v1 v1Var7 = new v1();
         v1Var7.a(7);
         a16.b(v1Var7.b()).a();
-        c.b a17 = zi.c.a("product");
+        c.b a17 = bj.c.a("product");
         v1 v1Var8 = new v1();
         v1Var8.a(8);
         a17.b(v1Var8.b()).a();
-        c.b a18 = zi.c.a("soc");
+        c.b a18 = bj.c.a("soc");
         v1 v1Var9 = new v1();
         v1Var9.a(9);
         a18.b(v1Var9.b()).a();
-        c.b a19 = zi.c.a("socMetaBuildId");
+        c.b a19 = bj.c.a("socMetaBuildId");
         v1 v1Var10 = new v1();
         v1Var10.a(10);
         a19.b(v1Var10.b()).a();
-        c.b a20 = zi.c.a("fingerprint");
+        c.b a20 = bj.c.a("fingerprint");
         v1 v1Var11 = new v1();
         v1Var11.a(11);
         a20.b(v1Var11.b()).a();
@@ -57,10 +57,10 @@ final class r6 implements zi.d {
     private r6() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

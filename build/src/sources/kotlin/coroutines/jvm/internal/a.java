@@ -20,7 +20,6 @@ public abstract class a implements Continuation, CoroutineStackFrame, Serializab
         throw new UnsupportedOperationException("create(Continuation) has not been overridden");
     }
 
-    @Override // kotlin.coroutines.jvm.internal.CoroutineStackFrame
     public CoroutineStackFrame getCallerFrame() {
         Continuation<Object> continuation = this.completion;
         if (continuation instanceof CoroutineStackFrame) {
@@ -55,10 +54,10 @@ public abstract class a implements Continuation, CoroutineStackFrame, Serializab
             try {
                 invokeSuspend = aVar.invokeSuspend(obj);
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f31762e;
+                Result.a aVar2 = Result.f31984e;
                 obj = Result.b(kotlin.c.a(th2));
             }
-            if (invokeSuspend == xr.b.f()) {
+            if (invokeSuspend == gs.b.f()) {
                 return;
             }
             obj = Result.b(invokeSuspend);

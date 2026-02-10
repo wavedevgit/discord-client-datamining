@@ -14,13 +14,13 @@ import java.util.Objects;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final androidx.concurrent.futures.d f4820a = androidx.concurrent.futures.d.w();
+    private static final androidx.concurrent.futures.d f4830a = androidx.concurrent.futures.d.w();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object f4821b = new Object();
+    private static final Object f4831b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private static c f4822c = null;
+    private static c f4832c = null;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -34,22 +34,22 @@ public abstract class h {
     static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        final int f4823a;
+        final int f4833a;
 
         /* renamed from: b  reason: collision with root package name */
-        final int f4824b;
+        final int f4834b;
 
         /* renamed from: c  reason: collision with root package name */
-        final long f4825c;
+        final long f4835c;
 
         /* renamed from: d  reason: collision with root package name */
-        final long f4826d;
+        final long f4836d;
 
         b(int i10, int i11, long j10, long j11) {
-            this.f4823a = i10;
-            this.f4824b = i11;
-            this.f4825c = j10;
-            this.f4826d = j11;
+            this.f4833a = i10;
+            this.f4834b = i11;
+            this.f4835c = j10;
+            this.f4836d = j11;
         }
 
         static b a(File file) {
@@ -72,10 +72,10 @@ public abstract class h {
             file.delete();
             DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream(file));
             try {
-                dataOutputStream.writeInt(this.f4823a);
-                dataOutputStream.writeInt(this.f4824b);
-                dataOutputStream.writeLong(this.f4825c);
-                dataOutputStream.writeLong(this.f4826d);
+                dataOutputStream.writeInt(this.f4833a);
+                dataOutputStream.writeInt(this.f4834b);
+                dataOutputStream.writeLong(this.f4835c);
+                dataOutputStream.writeLong(this.f4836d);
                 dataOutputStream.close();
             } catch (Throwable th2) {
                 try {
@@ -93,7 +93,7 @@ public abstract class h {
             }
             if (obj != null && (obj instanceof b)) {
                 b bVar = (b) obj;
-                if (this.f4824b == bVar.f4824b && this.f4825c == bVar.f4825c && this.f4823a == bVar.f4823a && this.f4826d == bVar.f4826d) {
+                if (this.f4834b == bVar.f4834b && this.f4835c == bVar.f4835c && this.f4833a == bVar.f4833a && this.f4836d == bVar.f4836d) {
                     return true;
                 }
             }
@@ -101,7 +101,7 @@ public abstract class h {
         }
 
         public int hashCode() {
-            return Objects.hash(Integer.valueOf(this.f4824b), Long.valueOf(this.f4825c), Integer.valueOf(this.f4823a), Long.valueOf(this.f4826d));
+            return Objects.hash(Integer.valueOf(this.f4834b), Long.valueOf(this.f4835c), Integer.valueOf(this.f4833a), Long.valueOf(this.f4836d));
         }
     }
 
@@ -109,22 +109,22 @@ public abstract class h {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        final int f4827a;
+        final int f4837a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f4828b;
+        private final boolean f4838b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final boolean f4829c;
+        private final boolean f4839c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f4830d;
+        private final boolean f4840d;
 
         c(int i10, boolean z10, boolean z11, boolean z12) {
-            this.f4827a = i10;
-            this.f4829c = z11;
-            this.f4828b = z10;
-            this.f4830d = z12;
+            this.f4837a = i10;
+            this.f4839c = z11;
+            this.f4838b = z10;
+            this.f4840d = z12;
         }
     }
 
@@ -138,9 +138,9 @@ public abstract class h {
 
     private static c b(int i10, boolean z10, boolean z11, boolean z12) {
         c cVar = new c(i10, z10, z11, z12);
-        f4822c = cVar;
-        f4820a.s(cVar);
-        return f4822c;
+        f4832c = cVar;
+        f4830a.s(cVar);
+        return f4832c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

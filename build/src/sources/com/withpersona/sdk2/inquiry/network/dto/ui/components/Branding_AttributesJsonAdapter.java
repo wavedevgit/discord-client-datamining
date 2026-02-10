@@ -45,7 +45,7 @@ public final class Branding_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 bool = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class Branding_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, Branding.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("hideLogo");
             this.nullableBooleanAdapter.toJson(writer, attributes.getHideLogo());
             writer.s();

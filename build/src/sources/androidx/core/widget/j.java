@@ -9,7 +9,6 @@ import android.content.pm.ResolveInfo;
 import android.content.res.ColorStateList;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
 import android.icu.text.DecimalFormatSymbols;
 import android.os.Build;
 import android.text.Editable;
@@ -120,26 +119,26 @@ public abstract class j {
     public static class f implements ActionMode.Callback {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ActionMode.Callback f3632a;
+        private final ActionMode.Callback f3638a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final TextView f3633b;
+        private final TextView f3639b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Class f3634c;
+        private Class f3640c;
 
         /* renamed from: d  reason: collision with root package name */
-        private Method f3635d;
+        private Method f3641d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f3636e;
+        private boolean f3642e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f3637f = false;
+        private boolean f3643f = false;
 
         f(ActionMode.Callback callback, TextView textView) {
-            this.f3632a = callback;
-            this.f3633b = textView;
+            this.f3638a = callback;
+            this.f3639b = textView;
         }
 
         private Intent a() {
@@ -188,26 +187,26 @@ public abstract class j {
 
         private void g(Menu menu) {
             Method declaredMethod;
-            Context context = this.f3633b.getContext();
+            Context context = this.f3639b.getContext();
             PackageManager packageManager = context.getPackageManager();
-            boolean z10 = this.f3637f;
+            boolean z10 = this.f3643f;
             Class cls = Integer.TYPE;
             if (!z10) {
-                this.f3637f = true;
+                this.f3643f = true;
                 try {
                     Class<?> cls2 = Class.forName("com.android.internal.view.menu.MenuBuilder");
-                    this.f3634c = cls2;
-                    this.f3635d = cls2.getDeclaredMethod("removeItemAt", cls);
-                    this.f3636e = true;
+                    this.f3640c = cls2;
+                    this.f3641d = cls2.getDeclaredMethod("removeItemAt", cls);
+                    this.f3642e = true;
                 } catch (ClassNotFoundException | NoSuchMethodException unused) {
-                    this.f3634c = null;
-                    this.f3635d = null;
-                    this.f3636e = false;
+                    this.f3640c = null;
+                    this.f3641d = null;
+                    this.f3642e = false;
                 }
             }
             try {
-                if (this.f3636e && this.f3634c.isInstance(menu)) {
-                    declaredMethod = this.f3635d;
+                if (this.f3642e && this.f3640c.isInstance(menu)) {
+                    declaredMethod = this.f3641d;
                 } else {
                     declaredMethod = menu.getClass().getDeclaredMethod("removeItemAt", cls);
                 }
@@ -220,35 +219,35 @@ public abstract class j {
                 List c10 = c(context, packageManager);
                 for (int i10 = 0; i10 < c10.size(); i10++) {
                     ResolveInfo resolveInfo = (ResolveInfo) c10.get(i10);
-                    menu.add(0, 0, i10 + 100, resolveInfo.loadLabel(packageManager)).setIntent(b(resolveInfo, this.f3633b)).setShowAsAction(1);
+                    menu.add(0, 0, i10 + 100, resolveInfo.loadLabel(packageManager)).setIntent(b(resolveInfo, this.f3639b)).setShowAsAction(1);
                 }
             } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException unused2) {
             }
         }
 
         ActionMode.Callback d() {
-            return this.f3632a;
+            return this.f3638a;
         }
 
         @Override // android.view.ActionMode.Callback
         public boolean onActionItemClicked(ActionMode actionMode, MenuItem menuItem) {
-            return this.f3632a.onActionItemClicked(actionMode, menuItem);
+            return this.f3638a.onActionItemClicked(actionMode, menuItem);
         }
 
         @Override // android.view.ActionMode.Callback
         public boolean onCreateActionMode(ActionMode actionMode, Menu menu) {
-            return this.f3632a.onCreateActionMode(actionMode, menu);
+            return this.f3638a.onCreateActionMode(actionMode, menu);
         }
 
         @Override // android.view.ActionMode.Callback
         public void onDestroyActionMode(ActionMode actionMode) {
-            this.f3632a.onDestroyActionMode(actionMode);
+            this.f3638a.onDestroyActionMode(actionMode);
         }
 
         @Override // android.view.ActionMode.Callback
         public boolean onPrepareActionMode(ActionMode actionMode, Menu menu) {
             g(menu);
-            return this.f3632a.onPrepareActionMode(actionMode, menu);
+            return this.f3638a.onPrepareActionMode(actionMode, menu);
         }
     }
 
@@ -282,19 +281,15 @@ public abstract class j {
         return 0;
     }
 
-    public static Drawable[] d(TextView textView) {
-        return textView.getCompoundDrawablesRelative();
-    }
-
-    public static int e(TextView textView) {
+    public static int d(TextView textView) {
         return textView.getPaddingTop() - textView.getPaint().getFontMetricsInt().top;
     }
 
-    public static int f(TextView textView) {
+    public static int e(TextView textView) {
         return textView.getPaddingBottom() + textView.getPaint().getFontMetricsInt().bottom;
     }
 
-    private static int g(TextDirectionHeuristic textDirectionHeuristic) {
+    private static int f(TextDirectionHeuristic textDirectionHeuristic) {
         TextDirectionHeuristic textDirectionHeuristic2;
         TextDirectionHeuristic textDirectionHeuristic3 = TextDirectionHeuristics.FIRSTSTRONG_RTL;
         if (textDirectionHeuristic == textDirectionHeuristic3 || textDirectionHeuristic == (textDirectionHeuristic2 = TextDirectionHeuristics.FIRSTSTRONG_LTR)) {
@@ -321,7 +316,7 @@ public abstract class j {
         return 7;
     }
 
-    private static TextDirectionHeuristic h(TextView textView) {
+    private static TextDirectionHeuristic g(TextView textView) {
         if (textView.getTransformationMethod() instanceof PasswordTransformationMethod) {
             return TextDirectionHeuristics.LTR;
         }
@@ -357,18 +352,18 @@ public abstract class j {
         }
     }
 
-    public static PrecomputedTextCompat.Params i(TextView textView) {
+    public static PrecomputedTextCompat.Params h(TextView textView) {
         if (Build.VERSION.SDK_INT >= 28) {
             return new PrecomputedTextCompat.Params(d.c(textView));
         }
         PrecomputedTextCompat.Params.a aVar = new PrecomputedTextCompat.Params.a(new TextPaint(textView.getPaint()));
         aVar.b(a.a(textView));
         aVar.c(a.b(textView));
-        aVar.d(h(textView));
+        aVar.d(g(textView));
         return aVar.a();
     }
 
-    public static void j(TextView textView, int i10, int i11, int i12, int i13) {
+    public static void i(TextView textView, int i10, int i11, int i12, int i13) {
         if (Build.VERSION.SDK_INT >= 27) {
             c.d(textView, i10, i11, i12, i13);
         } else if (textView instanceof androidx.core.widget.b) {
@@ -376,21 +371,17 @@ public abstract class j {
         }
     }
 
-    public static void k(TextView textView, ColorStateList colorStateList) {
+    public static void j(TextView textView, ColorStateList colorStateList) {
         b2.e.g(textView);
         a.d(textView, colorStateList);
     }
 
-    public static void l(TextView textView, PorterDuff.Mode mode) {
+    public static void k(TextView textView, PorterDuff.Mode mode) {
         b2.e.g(textView);
         a.e(textView, mode);
     }
 
-    public static void m(TextView textView, Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
-        textView.setCompoundDrawablesRelative(drawable, drawable2, drawable3, drawable4);
-    }
-
-    public static void n(TextView textView, int i10) {
+    public static void l(TextView textView, int i10) {
         int i11;
         b2.e.d(i10);
         if (Build.VERSION.SDK_INT >= 28) {
@@ -408,7 +399,7 @@ public abstract class j {
         }
     }
 
-    public static void o(TextView textView, int i10) {
+    public static void m(TextView textView, int i10) {
         int i11;
         b2.e.d(i10);
         Paint.FontMetricsInt fontMetricsInt = textView.getPaint().getFontMetricsInt();
@@ -422,7 +413,7 @@ public abstract class j {
         }
     }
 
-    public static void p(TextView textView, int i10) {
+    public static void n(TextView textView, int i10) {
         b2.e.d(i10);
         int fontMetricsInt = textView.getPaint().getFontMetricsInt(null);
         if (i10 != fontMetricsInt) {
@@ -430,43 +421,43 @@ public abstract class j {
         }
     }
 
-    public static void q(TextView textView, int i10, float f10) {
+    public static void o(TextView textView, int i10, float f10) {
         if (Build.VERSION.SDK_INT >= 34) {
             e.a(textView, i10, f10);
         } else {
-            p(textView, Math.round(TypedValue.applyDimension(i10, f10, textView.getResources().getDisplayMetrics())));
+            n(textView, Math.round(TypedValue.applyDimension(i10, f10, textView.getResources().getDisplayMetrics())));
         }
     }
 
-    public static void r(TextView textView, PrecomputedTextCompat precomputedTextCompat) {
+    public static void p(TextView textView, PrecomputedTextCompat precomputedTextCompat) {
         if (Build.VERSION.SDK_INT >= 29) {
             textView.setText(d.a(precomputedTextCompat.b()));
-        } else if (i(textView).a(precomputedTextCompat.a())) {
+        } else if (h(textView).a(precomputedTextCompat.a())) {
             textView.setText(precomputedTextCompat);
         } else {
             throw new IllegalArgumentException("Given text can not be applied to TextView.");
         }
     }
 
-    public static void s(TextView textView, int i10) {
+    public static void q(TextView textView, int i10) {
         textView.setTextAppearance(i10);
     }
 
-    public static void t(TextView textView, PrecomputedTextCompat.Params params) {
-        textView.setTextDirection(g(params.d()));
+    public static void r(TextView textView, PrecomputedTextCompat.Params params) {
+        textView.setTextDirection(f(params.d()));
         textView.getPaint().set(params.e());
         a.c(textView, params.b());
         a.f(textView, params.c());
     }
 
-    public static ActionMode.Callback u(ActionMode.Callback callback) {
+    public static ActionMode.Callback s(ActionMode.Callback callback) {
         if ((callback instanceof f) && Build.VERSION.SDK_INT >= 26) {
             return ((f) callback).d();
         }
         return callback;
     }
 
-    public static ActionMode.Callback v(TextView textView, ActionMode.Callback callback) {
+    public static ActionMode.Callback t(TextView textView, ActionMode.Callback callback) {
         int i10 = Build.VERSION.SDK_INT;
         if (i10 >= 26 && i10 <= 27 && !(callback instanceof f) && callback != null) {
             return new f(callback, textView);

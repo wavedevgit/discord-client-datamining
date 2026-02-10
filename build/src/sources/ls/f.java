@@ -1,17 +1,12 @@
 package ls;
 
-import kotlin.jvm.functions.Function1;
-import kotlin.reflect.KType;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class f implements Function1 {
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final f f36429d = new f();
-
-    @Override // kotlin.jvm.functions.Function1
-    public Object invoke(Object obj) {
-        KType c10;
-        c10 = h.c((Class) obj);
-        return c10;
+import java.io.File;
+import kotlin.jvm.internal.Intrinsics;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class f extends h {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public f(File file, File file2, String str) {
+        super(file, file2, str);
+        Intrinsics.checkNotNullParameter(file, "file");
     }
 }

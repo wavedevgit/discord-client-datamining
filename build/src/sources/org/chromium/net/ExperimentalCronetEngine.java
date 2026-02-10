@@ -6,7 +6,6 @@ import java.net.URLConnection;
 import java.util.Date;
 import java.util.Set;
 import java.util.concurrent.Executor;
-import kv.f;
 import org.chromium.net.BidirectionalStream;
 import org.chromium.net.ConnectionMigrationOptions;
 import org.chromium.net.CronetEngine;
@@ -15,6 +14,7 @@ import org.chromium.net.ExperimentalBidirectionalStream;
 import org.chromium.net.ExperimentalUrlRequest;
 import org.chromium.net.QuicOptions;
 import org.chromium.net.UrlRequest;
+import tv.f;
 @Deprecated
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class ExperimentalCronetEngine extends CronetEngine {

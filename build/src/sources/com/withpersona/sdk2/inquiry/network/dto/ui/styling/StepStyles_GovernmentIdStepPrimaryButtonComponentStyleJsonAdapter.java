@@ -47,7 +47,7 @@ public final class StepStyles_GovernmentIdStepPrimaryButtonComponentStyleJsonAda
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 stepSubmitButtonComponentStyleContainer = (StepStyles.StepSubmitButtonComponentStyleContainer) this.nullableStepSubmitButtonComponentStyleContainerAdapter.fromJson(reader);
@@ -65,7 +65,7 @@ public final class StepStyles_GovernmentIdStepPrimaryButtonComponentStyleJsonAda
     public void toJson(@NotNull t writer, StepStyles.GovernmentIdStepPrimaryButtonComponentStyle governmentIdStepPrimaryButtonComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepPrimaryButtonComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableStepSubmitButtonComponentStyleContainerAdapter.toJson(writer, governmentIdStepPrimaryButtonComponentStyle.getBase());
             writer.J("cancelDialogClose");

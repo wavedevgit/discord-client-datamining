@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_UploadUrlResponseJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18969a;
+    private final m.b f19849a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f18970b;
+    private final com.squareup.moshi.h f19850b;
 
     public FallbackModeService_UploadUrlResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("location");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18969a = a10;
+        this.f19849a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "location");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18970b = f10;
+        this.f19850b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,13 +35,13 @@ public final class FallbackModeService_UploadUrlResponseJsonAdapter extends com.
         reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18969a);
+            int J = reader.J(this.f19849a);
             if (J != -1) {
-                if (J == 0 && (str = (String) this.f18970b.fromJson(reader)) == null) {
-                    throw bn.c.x("location", "location", reader);
+                if (J == 0 && (str = (String) this.f19850b.fromJson(reader)) == null) {
+                    throw dn.c.x("location", "location", reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -49,7 +49,7 @@ public final class FallbackModeService_UploadUrlResponseJsonAdapter extends com.
         if (str != null) {
             return new FallbackModeService.UploadUrlResponse(str);
         }
-        throw bn.c.o("location", "location", reader);
+        throw dn.c.o("location", "location", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -57,9 +57,9 @@ public final class FallbackModeService_UploadUrlResponseJsonAdapter extends com.
     public void toJson(t writer, FallbackModeService.UploadUrlResponse uploadUrlResponse) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (uploadUrlResponse != null) {
-            writer.k();
+            writer.i();
             writer.J("location");
-            this.f18970b.toJson(writer, uploadUrlResponse.a());
+            this.f19850b.toJson(writer, uploadUrlResponse.a());
             writer.s();
             return;
         }

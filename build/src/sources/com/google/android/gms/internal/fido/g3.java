@@ -6,16 +6,16 @@ import java.util.concurrent.Executor;
 public final class g3 {
 
     /* renamed from: d  reason: collision with root package name */
-    static final g3 f14107d = new g3();
+    static final g3 f14684d = new g3();
 
     /* renamed from: a  reason: collision with root package name */
-    final Runnable f14108a = null;
+    final Runnable f14685a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    final Executor f14109b = null;
+    final Executor f14686b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    g3 f14110c;
+    g3 f14687c;
 
     g3() {
     }

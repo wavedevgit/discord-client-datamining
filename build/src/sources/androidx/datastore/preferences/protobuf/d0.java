@@ -3,9 +3,9 @@ package androidx.datastore.preferences.protobuf;
 import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface d0 extends List {
-    void G0(g gVar);
+    void C0(g gVar);
 
-    Object R0(int i10);
+    Object G0(int i10);
 
     List getUnderlyingElements();
 

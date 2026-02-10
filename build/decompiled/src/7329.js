@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/images/native/premium/illustrations',
-        'width': 180.5,
-        'height': 88,
+        'httpServerLocation': '/assets/images/native/premium/logos',
+        'width': 605.5,
+        'height': 244.5,
         'scales': null,
-        'hash': '170926482058c89c2a2a9d537ff237a4',
-        'name': 'img_what_you_lose_emojis',
+        'hash': 'fdaf8ab7fb8f1ab3047aef93e706bcc1',
+        'name': 'img_discord_nitro_logo_left_light',
         'type': 'png'
     };
     var4 = [2, 3];

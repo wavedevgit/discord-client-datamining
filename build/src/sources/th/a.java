@@ -1,79 +1,41 @@
 package th;
 
-import android.os.Bundle;
-import android.os.Parcel;
-import android.os.Parcelable;
-import androidx.collection.SimpleArrayMap;
+import android.graphics.RectF;
+import java.util.Arrays;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a extends u2.a {
-    public static final Parcelable.Creator<a> CREATOR = new C0695a();
+public final class a implements d {
 
-    /* renamed from: i  reason: collision with root package name */
-    public final SimpleArrayMap f50854i;
+    /* renamed from: a  reason: collision with root package name */
+    private final float f48786a;
 
-    /* renamed from: th.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class C0695a implements Parcelable.ClassLoaderCreator {
-        C0695a() {
-        }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public a createFromParcel(Parcel parcel) {
-            return new a(parcel, null, null);
-        }
-
-        @Override // android.os.Parcelable.ClassLoaderCreator
-        /* renamed from: b */
-        public a createFromParcel(Parcel parcel, ClassLoader classLoader) {
-            return new a(parcel, classLoader, null);
-        }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: c */
-        public a[] newArray(int i10) {
-            return new a[i10];
-        }
+    public a(float f10) {
+        this.f48786a = f10;
     }
 
-    /* synthetic */ a(Parcel parcel, ClassLoader classLoader, C0695a c0695a) {
-        this(parcel, classLoader);
+    @Override // th.d
+    public float a(RectF rectF) {
+        return this.f48786a;
+    }
+
+    public float b() {
+        return this.f48786a;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if ((obj instanceof a) && this.f48786a == ((a) obj).f48786a) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return Arrays.hashCode(new Object[]{Float.valueOf(this.f48786a)});
     }
 
     public String toString() {
-        return "ExtendableSavedState{" + Integer.toHexString(System.identityHashCode(this)) + " states=" + this.f50854i + "}";
-    }
-
-    @Override // u2.a, android.os.Parcelable
-    public void writeToParcel(Parcel parcel, int i10) {
-        super.writeToParcel(parcel, i10);
-        int size = this.f50854i.size();
-        parcel.writeInt(size);
-        String[] strArr = new String[size];
-        Bundle[] bundleArr = new Bundle[size];
-        for (int i11 = 0; i11 < size; i11++) {
-            strArr[i11] = (String) this.f50854i.f(i11);
-            bundleArr[i11] = (Bundle) this.f50854i.j(i11);
-        }
-        parcel.writeStringArray(strArr);
-        parcel.writeTypedArray(bundleArr, 0);
-    }
-
-    public a(Parcelable parcelable) {
-        super(parcelable);
-        this.f50854i = new SimpleArrayMap();
-    }
-
-    private a(Parcel parcel, ClassLoader classLoader) {
-        super(parcel, classLoader);
-        int readInt = parcel.readInt();
-        String[] strArr = new String[readInt];
-        parcel.readStringArray(strArr);
-        Bundle[] bundleArr = new Bundle[readInt];
-        parcel.readTypedArray(bundleArr, Bundle.CREATOR);
-        this.f50854i = new SimpleArrayMap(readInt);
-        for (int i10 = 0; i10 < readInt; i10++) {
-            this.f50854i.put(strArr[i10], bundleArr[i10]);
-        }
+        return b() + "px";
     }
 }

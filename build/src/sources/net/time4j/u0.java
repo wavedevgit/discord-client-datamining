@@ -1,25 +1,25 @@
 package net.time4j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class u0 implements st.v {
+final class u0 implements bu.v {
 
     /* renamed from: d  reason: collision with root package name */
-    private final st.v f38785d;
+    private final bu.v f37789d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object f38786e;
+    private final Object f37790e;
 
-    private u0(st.v vVar, Object obj) {
-        this.f38785d = vVar;
-        this.f38786e = obj;
+    private u0(bu.v vVar, Object obj) {
+        this.f37789d = vVar;
+        this.f37790e = obj;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static u0 a(st.v vVar, Object obj) {
+    public static u0 a(bu.v vVar, Object obj) {
         return new u0(vVar, obj);
     }
 
-    @Override // st.v
+    @Override // bu.v
     public Object apply(Object obj) {
-        return this.f38785d.apply(obj);
+        return this.f37789d.apply(obj);
     }
 }

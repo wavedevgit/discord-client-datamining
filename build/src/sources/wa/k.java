@@ -5,10 +5,10 @@ import android.util.SparseIntArray;
 public final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final k f53384a = new k();
+    public static final k f52413a = new k();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int f53385b = Runtime.getRuntime().availableProcessors();
+    private static final int f52414b = Runtime.getRuntime().availableProcessors();
 
     private k() {
     }
@@ -23,7 +23,7 @@ public final class k {
     }
 
     public static final z b() {
-        int i10 = f53385b;
+        int i10 = f52414b;
         return new z(4194304, i10 * 4194304, a(131072, 4194304, i10), 131072, 4194304, i10);
     }
 }

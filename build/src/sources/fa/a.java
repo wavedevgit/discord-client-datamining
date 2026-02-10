@@ -9,14 +9,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements JavaScriptExecutorFactory {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f22508a = true;
+    private boolean f23633a = true;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f22509b = "";
+    private String f23634b = "";
 
     @Override // com.facebook.react.bridge.JavaScriptExecutorFactory
     public JavaScriptExecutor create() {
-        return new HermesExecutor(this.f22508a, this.f22509b);
+        return new HermesExecutor(this.f23633a, this.f23634b);
     }
 
     @Override // com.facebook.react.bridge.JavaScriptExecutorFactory

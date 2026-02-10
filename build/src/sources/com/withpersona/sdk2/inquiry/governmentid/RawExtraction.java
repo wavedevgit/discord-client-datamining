@@ -14,10 +14,10 @@ public final class RawExtraction implements Parcelable {
     public static final Parcelable.Creator<RawExtraction> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f18738d;
+    private final String f19618d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f18739e;
+    private final String f19619e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -38,16 +38,16 @@ public final class RawExtraction implements Parcelable {
     public RawExtraction(String type, String value) {
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f18738d = type;
-        this.f18739e = value;
+        this.f19618d = type;
+        this.f19619e = value;
     }
 
     public final String a() {
-        return this.f18738d;
+        return this.f19618d;
     }
 
     public final String b() {
-        return this.f18739e;
+        return this.f19619e;
     }
 
     @Override // android.os.Parcelable
@@ -58,7 +58,7 @@ public final class RawExtraction implements Parcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f18738d);
-        dest.writeString(this.f18739e);
+        dest.writeString(this.f19618d);
+        dest.writeString(this.f19619e);
     }
 }

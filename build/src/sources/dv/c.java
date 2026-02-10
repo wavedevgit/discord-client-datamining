@@ -1,45 +1,69 @@
 package dv;
 
+import dv.b;
+import java.util.Collection;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface c {
+public interface c extends b {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
-        public static Double a(c cVar, Object obj, Function1 operation) {
-            List list;
-            List list2;
-            Integer num;
-            Integer num2;
-            List l02;
-            Intrinsics.checkNotNullParameter(operation, "operation");
-            if (obj != null) {
-                list = dw.a.b(obj);
-            } else {
-                list = null;
+        private static boolean a(c cVar, List list, Function2 function2) {
+            Integer c10 = c(cVar, (Comparable) CollectionsKt.firstOrNull(list), (Comparable) mw.c.b(list));
+            if (c10 == null) {
+                return false;
             }
-            if (list != null) {
-                list2 = CollectionsKt.l0(list);
-            } else {
-                list2 = null;
+            return ((Boolean) function2.invoke(Integer.valueOf(c10.intValue()), 0)).booleanValue();
+        }
+
+        public static boolean b(c cVar, List list, Function2 operator) {
+            List d10;
+            Intrinsics.checkNotNullParameter(operator, "operator");
+            if (list != null && (d10 = mw.a.d(list)) != null) {
+                return a(cVar, d10, operator);
             }
-            if (list2 != null) {
-                num = Integer.valueOf(list2.size());
-            } else {
-                num = null;
-            }
-            if (list != null) {
-                num2 = Integer.valueOf(list.size());
-            } else {
-                num2 = null;
-            }
-            if (!Intrinsics.areEqual(num, num2) || list == null || (l02 = CollectionsKt.l0(list)) == null) {
+            return false;
+        }
+
+        private static Integer c(c cVar, Comparable comparable, Comparable comparable2) {
+            List g10 = cVar.g(comparable, comparable2);
+            if (g10 == null) {
                 return null;
             }
-            return (Double) operation.invoke(l02);
+            List<Comparable> list = g10;
+            boolean z10 = list instanceof Collection;
+            if (!z10 || !list.isEmpty()) {
+                for (Comparable comparable3 : list) {
+                    if (comparable3 != null) {
+                        if (!z10 || !list.isEmpty()) {
+                            for (Comparable comparable4 : list) {
+                                if (comparable4 == null) {
+                                    return null;
+                                }
+                            }
+                        }
+                        return Integer.valueOf(ds.a.d((Comparable) CollectionsKt.firstOrNull(g10), (Comparable) mw.c.b(g10)));
+                    }
+                }
+            }
+            return Integer.valueOf(ds.a.d((Comparable) CollectionsKt.firstOrNull(g10), (Comparable) mw.c.b(g10)));
+        }
+
+        public static List d(c cVar, Comparable comparable, Comparable comparable2) {
+            return b.a.a(cVar, comparable, comparable2);
+        }
+
+        public static List e(c cVar, Comparable comparable, Comparable comparable2) {
+            return b.a.b(cVar, comparable, comparable2);
+        }
+
+        public static Boolean f(c cVar, Object obj) {
+            return b.a.c(cVar, obj);
         }
     }
+
+    boolean b(List list, Function2 function2);
 }

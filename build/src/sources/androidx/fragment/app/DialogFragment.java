@@ -97,7 +97,7 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
                 View requireView = DialogFragment.this.requireView();
                 if (requireView.getParent() == null) {
                     if (DialogFragment.this.mDialog != null) {
-                        if (FragmentManager.O0(3)) {
+                        if (FragmentManager.P0(3)) {
                             Log.d("FragmentManager", "DialogFragment " + this + " setting the content view on " + DialogFragment.this.mDialog);
                         }
                         DialogFragment.this.mDialog.setContentView(requireView);
@@ -114,23 +114,23 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
     class e extends FragmentContainer {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ FragmentContainer f4180d;
+        final /* synthetic */ FragmentContainer f4190d;
 
         e(FragmentContainer fragmentContainer) {
-            this.f4180d = fragmentContainer;
+            this.f4190d = fragmentContainer;
         }
 
         @Override // androidx.fragment.app.FragmentContainer
         public View c(int i10) {
-            if (this.f4180d.d()) {
-                return this.f4180d.c(i10);
+            if (this.f4190d.d()) {
+                return this.f4190d.c(i10);
             }
             return DialogFragment.this.onFindViewById(i10);
         }
 
         @Override // androidx.fragment.app.FragmentContainer
         public boolean d() {
-            if (!this.f4180d.d() && !DialogFragment.this.onHasView()) {
+            if (!this.f4190d.d() && !DialogFragment.this.onHasView()) {
                 return false;
             }
             return true;
@@ -158,22 +158,22 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
         this.mViewDestroyed = true;
         if (this.mBackStackId >= 0) {
             if (z12) {
-                getParentFragmentManager().g1(this.mBackStackId, 1);
+                getParentFragmentManager().i1(this.mBackStackId, 1);
             } else {
-                getParentFragmentManager().e1(this.mBackStackId, 1, z10);
+                getParentFragmentManager().f1(this.mBackStackId, 1, z10);
             }
             this.mBackStackId = -1;
             return;
         }
-        FragmentTransaction r10 = getParentFragmentManager().r();
-        r10.t(true);
-        r10.m(this);
+        FragmentTransaction s10 = getParentFragmentManager().s();
+        s10.v(true);
+        s10.n(this);
         if (z12) {
-            r10.i();
+            s10.j();
         } else if (z10) {
-            r10.h();
+            s10.i();
         } else {
-            r10.g();
+            s10.h();
         }
     }
 
@@ -279,7 +279,7 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
     }
 
     public Dialog onCreateDialog(Bundle bundle) {
-        if (FragmentManager.O0(3)) {
+        if (FragmentManager.P0(3)) {
             Log.d("FragmentManager", "onCreateDialog called for DialogFragment " + this);
         }
         return new ComponentDialog(requireContext(), getTheme());
@@ -313,7 +313,7 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
     @Override // android.content.DialogInterface.OnDismissListener
     public void onDismiss(DialogInterface dialogInterface) {
         if (!this.mViewDestroyed) {
-            if (FragmentManager.O0(3)) {
+            if (FragmentManager.P0(3)) {
                 Log.d("FragmentManager", "onDismiss called for DialogFragment " + this);
             }
             x(true, true, false);
@@ -334,14 +334,14 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
         LayoutInflater onGetLayoutInflater = super.onGetLayoutInflater(bundle);
         if (this.mShowsDialog && !this.mCreatingDialog) {
             y(bundle);
-            if (FragmentManager.O0(2)) {
+            if (FragmentManager.P0(2)) {
                 Log.d("FragmentManager", "get layout inflater for DialogFragment " + this + " from dialog context");
             }
             Dialog dialog = this.mDialog;
             if (dialog != null) {
                 return onGetLayoutInflater.cloneInContext(dialog.getContext());
             }
-        } else if (FragmentManager.O0(2)) {
+        } else if (FragmentManager.P0(2)) {
             String str = "getting layout inflater for DialogFragment " + this;
             if (!this.mShowsDialog) {
                 Log.d("FragmentManager", "mShowsDialog = false: " + str);
@@ -460,7 +460,7 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
     }
 
     public void setStyle(int i10, int i11) {
-        if (FragmentManager.O0(2)) {
+        if (FragmentManager.P0(2)) {
             Log.d("FragmentManager", "Setting style and theme for DialogFragment " + this + " to " + i10 + ", " + i11);
         }
         this.mStyle = i10;
@@ -488,19 +488,19 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
     public void show(@NonNull FragmentManager fragmentManager, String str) {
         this.mDismissed = false;
         this.mShownByMe = true;
-        FragmentTransaction r10 = fragmentManager.r();
-        r10.t(true);
-        r10.e(this, str);
-        r10.g();
+        FragmentTransaction s10 = fragmentManager.s();
+        s10.v(true);
+        s10.e(this, str);
+        s10.h();
     }
 
     public void showNow(@NonNull FragmentManager fragmentManager, String str) {
         this.mDismissed = false;
         this.mShownByMe = true;
-        FragmentTransaction r10 = fragmentManager.r();
-        r10.t(true);
-        r10.e(this, str);
-        r10.i();
+        FragmentTransaction s10 = fragmentManager.s();
+        s10.v(true);
+        s10.e(this, str);
+        s10.j();
     }
 
     public int show(@NonNull FragmentTransaction fragmentTransaction, String str) {
@@ -508,8 +508,8 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
         this.mShownByMe = true;
         fragmentTransaction.e(this, str);
         this.mViewDestroyed = false;
-        int g10 = fragmentTransaction.g();
-        this.mBackStackId = g10;
-        return g10;
+        int h10 = fragmentTransaction.h();
+        this.mBackStackId = h10;
+        return h10;
     }
 }

@@ -11,36 +11,36 @@ public abstract class BillingClient {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private volatile c f7934a;
+        private volatile c f8511a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Context f7935b;
+        private final Context f8512b;
 
         /* renamed from: c  reason: collision with root package name */
-        private volatile b6.k f7936c;
+        private volatile b6.k f8513c;
 
         /* renamed from: d  reason: collision with root package name */
-        private volatile boolean f7937d;
+        private volatile boolean f8514d;
 
         /* renamed from: e  reason: collision with root package name */
-        private volatile boolean f7938e;
+        private volatile boolean f8515e;
 
         /* synthetic */ a(Context context, r0 r0Var) {
-            this.f7935b = context;
+            this.f8512b = context;
         }
 
         public BillingClient a() {
-            if (this.f7935b != null) {
-                if (this.f7936c == null) {
-                    if (!this.f7937d && !this.f7938e) {
+            if (this.f8512b != null) {
+                if (this.f8513c == null) {
+                    if (!this.f8514d && !this.f8515e) {
                         throw new IllegalArgumentException("Please provide a valid listener for purchases updates.");
                     }
-                    return new b(null, this.f7935b, null, null);
-                } else if (this.f7934a != null && this.f7934a.a()) {
-                    if (this.f7936c != null) {
-                        return new b(null, this.f7934a, this.f7935b, this.f7936c, null, null, null);
+                    return new b(null, this.f8512b, null, null);
+                } else if (this.f8511a != null && this.f8511a.a()) {
+                    if (this.f8513c != null) {
+                        return new b(null, this.f8511a, this.f8512b, this.f8513c, null, null, null);
                     }
-                    return new b(null, this.f7934a, this.f7935b, null, null, null);
+                    return new b(null, this.f8511a, this.f8512b, null, null, null);
                 } else {
                     throw new IllegalArgumentException("Pending purchases for one-time products must be supported.");
                 }
@@ -56,12 +56,12 @@ public abstract class BillingClient {
         }
 
         public a c(c cVar) {
-            this.f7934a = cVar;
+            this.f8511a = cVar;
             return this;
         }
 
         public a d(b6.k kVar) {
-            this.f7936c = kVar;
+            this.f8513c = kVar;
             return this;
         }
     }

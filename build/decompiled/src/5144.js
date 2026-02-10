@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun45901: for (var _fun45901_ip = 0;;) switch (_fun45901_ip) {
+        _fun45885: for (var _fun45885_ip = 0;;) switch (_fun45885_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun45901_ip = 74;
-                continue _fun45901;
+                _fun45885_ip = 74;
+                continue _fun45885;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -36,13 +36,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = !var0;
                     return var0;
                 };
-                _closure1_slot6 = var1;
+                _closure1_slot7 = var1;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
                 return var0;
         }
     };
-    var _closure1_slot6 = var0;
+    var _closure1_slot7 = var0;
     var0 = global;
     var7 = var0.Object;
     var6 = var7.defineProperty;
@@ -77,87 +77,111 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var0)(var3);
     var _closure1_slot5 = var3;
     var3 = 6;
+    var3 = var4[var3];
+    var3 = var5.bind(var0)(var3);
+    var _closure1_slot6 = var3;
+    var3 = 7;
     var4 = var4[var3];
     var3 = arg1;
     var3 = var3.bind(var0)(var4);
     var3 = var3.RVLayoutManager;
     var1 = function(arg0) { // Environment: var1
         var3 = function arg0, arg1() {
-            _fun45905: for (var _fun45905_ip = 0;;) switch (_fun45905_ip) {
+            _fun45889: for (var _fun45889_ip = 0;;) switch (_fun45889_ip) {
                 case 0:
                     var1 = arg0;
-                    var4 = this;
-                    var0 = _closure1_slot0;
+                    var3 = this;
+                    var0 = _closure1_slot1;
                     var2 = _closure2_slot0;
-                    var3 = undefined;
-                    var0 = var0.bind(var3)(var4, var2);
+                    var5 = undefined;
+                    var0 = var0.bind(var5)(var3, var2);
                     var9 = new Array(2);
                     var9[0] = var1;
                     var0 = arg1;
                     var9[1] = var0;
-                    var0 = _closure1_slot3;
-                    var8 = var0.bind(var3)(var2);
-                    var2 = _closure1_slot2;
-                    var0 = _closure1_slot6;
-                    var0 = var0.bind(var3)();
+                    var0 = _closure1_slot4;
+                    var8 = var0.bind(var5)(var2);
+                    var2 = _closure1_slot3;
+                    var0 = _closure1_slot7;
+                    var0 = var0.bind(var5)();
                     if (var0) {
-                        _fun45905_ip = 80;
-                        continue _fun45905
+                        _fun45889_ip = 80;
+                        continue _fun45889
                     }
                 case 67:
                     var0 = var8.apply;
-                    var0 = var0.bind(var8)(var4, var9);
-                    _fun45905_ip = 114;
-                    continue _fun45905;
+                    var0 = var0.bind(var8)(var3, var9);
+                    _fun45889_ip = 114;
+                    continue _fun45889;
                 case 80:
                     var6 = global;
                     var7 = var6.Reflect;
                     var6 = var7.construct;
-                    var5 = _closure1_slot3;
-                    var5 = var5.bind(var3)(var4);
-                    var5 = var5.constructor;
-                    var0 = var6.bind(var7)(var8, var9, var5);
+                    var4 = _closure1_slot4;
+                    var4 = var4.bind(var5)(var3);
+                    var4 = var4.constructor;
+                    var0 = var6.bind(var7)(var8, var9, var4);
                 case 114:
-                    var0 = var2.bind(var3)(var4, var0);
+                    var0 = var2.bind(var5)(var3, var0);
+                    var4 = 0;
+                    var0.currentColumn = var4;
                     var2 = false;
                     var0.fullRelayoutRequired = var2;
-                    var1 = var1.windowSize;
-                    var1 = var1.width;
-                    var0.boundedSize = var1;
+                    var2 = var1.windowSize;
+                    var2 = var2.width;
+                    var0.boundedSize = var2;
+                    var1 = var1.optimizeItemArrangement;
+                    var0.optimizeItemArrangement = var1;
+                    var1 = var0.columnHeights;
+                    var2 = null;
+                    if (!(var2 == var1)) {
+                        _fun45889_ip = 207;
+                        continue _fun45889
+                    }
+                case 177:
+                    var2 = global;
+                    var3 = var2.Array;
+                    var2 = var0.maxColumns;
+                    var3 = var3.bind(var5)(var2);
+                    var2 = var3.fill;
+                    var1 = var2.bind(var3)(var4);
+                case 207:
+                    var0.columnHeights = var1;
                     return var0;
             }
         };
         var _closure2_slot0 = var3;
-        var4 = _closure1_slot5;
+        var4 = _closure1_slot6;
         var2 = undefined;
         var1 = arg0;
         var1 = var4.bind(var2)(var3, var1);
-        var1 = _closure1_slot1;
+        var1 = _closure1_slot2;
         var4 = {};
         var0 = 'updateLayoutParams';
         var4.key = var0;
         var0 = function arg0() {
-            _fun45906: for (var _fun45906_ip = 0;;) switch (_fun45906_ip) {
+            _fun45890: for (var _fun45890_ip = 0;;) switch (_fun45890_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = this;
-                    var5 = var2.maxColumns;
-                    var11 = _closure2_slot0;
-                    var6 = function arg0, arg1, arg2, arg3() {
-                        _fun45907: for (var _fun45907_ip = 0;;) switch (_fun45907_ip) {
+                    var6 = var2.maxColumns;
+                    var5 = var2.optimizeItemArrangement;
+                    var12 = _closure2_slot0;
+                    var7 = function arg0, arg1, arg2, arg3() {
+                        _fun45891: for (var _fun45891_ip = 0;;) switch (_fun45891_ip) {
                             case 0:
                                 var4 = arg0;
                                 var6 = arg2;
                                 var _closure4_slot0 = var6;
-                                var5 = _closure1_slot4;
-                                var3 = _closure1_slot3;
+                                var5 = _closure1_slot5;
+                                var3 = _closure1_slot4;
                                 var0 = 1;
                                 var2 = 3;
                                 var7 = var0 & var2;
                                 var0 = var4;
                                 if (!var7) {
-                                    _fun45907_ip = 44;
-                                    continue _fun45907
+                                    _fun45891_ip = 44;
+                                    continue _fun45891
                                 }
                             case 39:
                                 var0 = var4.prototype;
@@ -171,16 +195,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var2 = var0 & var2;
                                 var0 = var4;
                                 if (!var2) {
-                                    _fun45907_ip = 98;
-                                    continue _fun45907
+                                    _fun45891_ip = 98;
+                                    continue _fun45891
                                 }
                             case 79:
                                 var3 = 'function';
                                 var2 = typeof var4;
                                 var0 = var4;
                                 if (!(var3 === var2)) {
-                                    _fun45907_ip = 98;
-                                    continue _fun45907
+                                    _fun45891_ip = 98;
+                                    continue _fun45891
                                 }
                             case 93:
                                 var0 = function(arg0) { // Environment: var1
@@ -196,11 +220,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var0 = undefined;
-                    var10 = 'updateLayoutParams';
-                    var8 = 3;
-                    var12 = undefined;
-                    var9 = var2;
-                    var4 = var12[var6](var11, var10, var9, var8, var7);
+                    var11 = 'updateLayoutParams';
+                    var9 = 3;
+                    var13 = undefined;
+                    var10 = var2;
+                    var4 = var13[var7](var12, var11, var10, var9, var8);
                     var3 = new Array(1);
                     var3[0] = var1;
                     var3 = var4.bind(var0)(var3);
@@ -210,18 +234,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var3.width;
                     var3 = var4 === var3;
                     if (!var3) {
-                        _fun45906_ip = 94;
-                        continue _fun45906
+                        _fun45890_ip = 100;
+                        continue _fun45890
                     }
-                case 84:
+                case 90:
                     var4 = var1.maxColumns;
-                    var3 = var5 === var4;
-                case 94:
-                    if (var3) {
-                        _fun45906_ip = 179;
-                        continue _fun45906
+                    var3 = var6 === var4;
+                case 100:
+                    if (!var3) {
+                        _fun45890_ip = 113;
+                        continue _fun45890
                     }
-                case 97:
+                case 103:
+                    var4 = var1.optimizeItemArrangement;
+                    var3 = var5 === var4;
+                case 113:
+                    if (var3) {
+                        _fun45890_ip = 198;
+                        continue _fun45890
+                    }
+                case 116:
                     var1 = var1.windowSize;
                     var1 = var1.width;
                     var2.boundedSize = var1;
@@ -229,10 +261,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var1.length;
                     var4 = 0;
                     if (!(var1 > var4)) {
-                        _fun45906_ip = 179;
-                        continue _fun45906
+                        _fun45890_ip = 198;
+                        continue _fun45890
                     }
-                case 131:
+                case 150:
                     var1 = var2.updateAllWidths;
                     var1 = var1.bind(var2)();
                     var3 = var2.recomputeLayouts;
@@ -243,7 +275,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var3.bind(var2)(var4, var1);
                     var1 = true;
                     var2.requiresRepaint = var1;
-                case 179:
+                case 198:
                     return var0;
             }
         };
@@ -254,7 +286,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = 'processLayoutInfo';
         var4.key = var6;
         var6 = function arg0, arg1() {
-            _fun45909: for (var _fun45909_ip = 0;;) switch (_fun45909_ip) {
+            _fun45893: for (var _fun45893_ip = 0;;) switch (_fun45893_ip) {
                 case 0:
                     var1 = this;
                     var4 = arg0;
@@ -266,34 +298,36 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var4().value;
                     var6 = var3;
                     if (!(var6 !== var0)) {
-                        _fun45909_ip = 77;
-                        continue _fun45909
+                        _fun45893_ip = 87;
+                        continue _fun45893
                     }
                 case 24: // try_start_0
                     var7 = var5.index;
-                    var6 = var5.dimensions;
+                    var5 = var5.dimensions;
+                    var6 = var1.layouts;
+                    var6 = var6[var7];
+                    var5 = var5.height;
+                    var6.height = var5;
+                    var6.isHeightMeasured = var2;
+                    var6.isWidthMeasured = var2;
                     var5 = var1.layouts;
-                    var5 = var5[var7];
-                    var6 = var6.height;
-                    var5.height = var6;
-                    var5.isHeightMeasured = var2;
-                    var5.isWidthMeasured = var2;
-                case 68: // try_end0
-                    _fun45909_ip = 13;
-                    continue _fun45909;
-                case 70: // catch_target0
+                    var5[var7] = var6;
+                case 78: // try_end0
+                    _fun45893_ip = 13;
+                    continue _fun45893;
+                case 80: // catch_target0
                     CatchBlockStart(arg_register = 2);
                     var3.return();
                     throw var2;
-                case 77:
+                case 87:
                     var2 = var1.fullRelayoutRequired;
                     if (var2) {
-                        _fun45909_ip = 88;
-                        continue _fun45909
+                        _fun45893_ip = 98;
+                        continue _fun45893
                     }
-                case 86:
+                case 96:
                     return var0;
-                case 88:
+                case 98:
                     var0 = var1.updateAllWidths;
                     var0 = var0.bind(var1)();
                     var0 = false;
@@ -342,29 +376,33 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = 'getLayoutSize';
         var4.key = var6;
         var6 = function() {
-            _fun45912: for (var _fun45912_ip = 0;;) switch (_fun45912_ip) {
+            _fun45896: for (var _fun45896_ip = 0;;) switch (_fun45896_ip) {
                 case 0:
                     var2 = this;
                     var0 = var2.layouts;
                     var1 = var0.length;
                     var0 = 0;
                     if (!(var0 !== var1)) {
-                        _fun45912_ip = 69;
-                        continue _fun45912
+                        _fun45896_ip = 88;
+                        continue _fun45896
                     }
                 case 20:
-                    var1 = var2.computeTotalHeightTillRow;
-                    var0 = var2.layouts;
-                    var3 = var0.length;
-                    var0 = 1;
-                    var0 = var3 - var0;
-                    var1 = var1.bind(var2)(var0);
+                    var0 = global;
+                    var1 = var0.Math;
+                    var4 = var1.max;
+                    var3 = var4.apply;
+                    var1 = var0.Math;
+                    var6 = _closure1_slot0;
+                    var5 = var2.columnHeights;
+                    var0 = undefined;
+                    var0 = var6.bind(var0)(var5);
+                    var1 = var3.bind(var4)(var1, var0);
                     var0 = {};
                     var2 = var2.boundedSize;
                     var0.width = var2;
                     var0.height = var1;
                     return var0;
-                case 69:
+                case 88:
                     var0 = {
                         'width': 0,
                         'height': 0
@@ -378,70 +416,75 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = 'recomputeLayouts';
         var4.key = var6;
         var6 = function arg0, arg1() {
-            _fun45913: for (var _fun45913_ip = 0;;) switch (_fun45913_ip) {
+            _fun45897: for (var _fun45897_ip = 0;;) switch (_fun45897_ip) {
                 case 0:
-                    var2 = arg1;
-                    var1 = this;
-                    var4 = var1.locateFirstIndexInRow;
-                    var0 = global;
-                    var7 = var0.Math;
-                    var5 = var7.max;
                     var0 = arg0;
-                    var3 = 1;
-                    var0 = var0 - var3;
-                    var6 = 0;
-                    var0 = var5.bind(var7)(var6, var0);
-                    var0 = var4.bind(var1)(var0);
-                    var4 = var1.getLayout;
-                    var4 = var4.bind(var1)(var0);
-                    var5 = var4.x;
-                    var4 = var4.y;
-                    if (!(var0 <= var2)) {
-                        _fun45913_ip = 169;
-                        continue _fun45913
+                    var4 = this;
+                    var1 = 0;
+                    if (!(var1 !== var0)) {
+                        _fun45897_ip = 27;
+                        continue _fun45897
                     }
-                case 73:
-                    var7 = var1.getLayout;
-                    var8 = var7.bind(var1)(var0);
-                    var9 = var1.checkBounds;
-                    var7 = var8.width;
-                    var10 = var9.bind(var1)(var5, var7);
-                    var9 = var5;
-                    var7 = var0;
-                    if (var10) {
-                        _fun45913_ip = 141;
-                        continue _fun45913
+                case 12:
+                    var2 = var4.updateColumnHeightsToIndex;
+                    var2 = var2.bind(var4)(var0);
+                    _fun45897_ip = 71;
+                    continue _fun45897;
+                case 27:
+                    var2 = global;
+                    var5 = var2.Array;
+                    var3 = var4.maxColumns;
+                    var2 = undefined;
+                    var3 = var5.bind(var2)(var3);
+                    var2 = var3.fill;
+                    var2 = var2.bind(var3)(var1);
+                    var4.columnHeights = var2;
+                    var4.currentColumn = var1;
+                case 71:
+                    var1 = var4.layouts;
+                    var3 = var1.length;
+                    var2 = 1;
+                    var1 = true;
+                    if (!(var0 < var3)) {
+                        _fun45897_ip = 182;
+                        continue _fun45897
                     }
-                case 110:
-                    var11 = var1.processAndReturnTallestItemInRow;
-                    var10 = var7 - var3;
-                    var10 = var11.bind(var1)(var10);
-                    var11 = var10.y;
-                    var10 = var10.height;
-                    var4 = var11 + var10;
-                    var9 = 0;
-                case 141:
-                    var8.x = var9;
-                    var8.y = var4;
-                    var8 = var8.width;
-                    var5 = var9 + var8;
-                    var0 = var7 + 1;
-                    if (var0 <= var2) {
-                        _fun45913_ip = 73;
-                        continue _fun45913
+                case 91:
+                    var5 = var4.getLayout;
+                    var7 = var5.bind(var4)(var0);
+                    var5 = var4.getSpan;
+                    var8 = var5.bind(var4)(var0, var1);
+                    var6 = var4.optimizeItemArrangement;
+                    var5 = var0;
+                    if (var6) {
+                        _fun45897_ip = 142;
+                        continue _fun45897
                     }
-                case 169:
-                    var0 = var1.layouts;
-                    var0 = var0.length;
-                    var0 = var0 - var3;
-                    if (!(var2 === var0)) {
-                        _fun45913_ip = 199;
-                        continue _fun45913
+                case 126:
+                    var6 = var4.placeItemSequentially;
+                    var6 = var6.bind(var4)(var7, var8);
+                    _fun45897_ip = 175;
+                    continue _fun45897;
+                case 142:
+                    if (!(var2 !== var8)) {
+                        _fun45897_ip = 162;
+                        continue _fun45897
                     }
-                case 188:
-                    var0 = var1.processAndReturnTallestItemInRow;
-                    var0 = var0.bind(var1)(var2);
-                case 199:
+                case 146:
+                    var6 = var4.placeOptimizedMultiColumnItem;
+                    var6 = var6.bind(var4)(var7, var8);
+                    _fun45897_ip = 175;
+                    continue _fun45897;
+                case 162:
+                    var6 = var4.placeSingleColumnItem;
+                    var6 = var6.bind(var4)(var7);
+                case 175:
+                    var0 = var5 + 1;
+                    if (var0 < var3) {
+                        _fun45897_ip = 91;
+                        continue _fun45897
+                    }
+                case 182:
                     var0 = undefined;
                     return var0;
             }
@@ -465,319 +508,207 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4.value = var6;
         var0[6] = var4;
         var4 = {};
-        var6 = 'processAndReturnTallestItemInRow';
+        var6 = 'updateAllWidths';
         var4.key = var6;
-        var6 = function arg0() {
-            _fun45915: for (var _fun45915_ip = 0;;) switch (_fun45915_ip) {
+        var6 = function() {
+            _fun45899: for (var _fun45899_ip = 0;;) switch (_fun45899_ip) {
                 case 0:
-                    var6 = arg0;
-                    var5 = this;
-                    var0 = var5.locateFirstIndexInRow;
-                    var2 = var0.bind(var5)(var6);
-                    var16 = var2 <= var6;
-                    var15 = undefined;
-                    var1 = 0;
-                    var11 = false;
-                    var4 = null;
-                    var8 = global;
-                    var14 = undefined;
-                    var13 = 0;
-                    var12 = var2;
-                    var10 = undefined;
-                    var9 = undefined;
+                    var3 = this;
+                    var0 = var3.layouts;
+                    var0 = var0.length;
+                    var2 = 0;
+                    var1 = var2 < var0;
                     var0 = undefined;
-                    var7 = 0;
-                    var3 = false;
-                    if (!var16) {
-                        _fun45915_ip = 241;
-                        continue _fun45915
+                    if (!var1) {
+                        _fun45899_ip = 86;
+                        continue _fun45899
                     }
-                case 54:
-                    var16 = var5.layouts;
-                    var18 = var16[var12];
-                    if (var11) {
-                        _fun45915_ip = 84;
-                        continue _fun45915
+                case 25:
+                    var1 = var3.layouts;
+                    var4 = var1[var2];
+                    var1 = var3.getWidth;
+                    var1 = var1.bind(var3)(var2);
+                    var4.width = var1;
+                    var1 = var3.layouts;
+                    var1 = var1[var2];
+                    var1.minHeight = var0;
+                    var2 = var2 + 1;
+                    var1 = var3.layouts;
+                    var1 = var1.length;
+                    if (var2 < var1) {
+                        _fun45899_ip = 25;
+                        continue _fun45899
                     }
-                case 67:
-                    var17 = var8.Boolean;
-                    var16 = var18.isHeightMeasured;
-                    var11 = var17.bind(var15)(var16);
-                case 84:
-                    var19 = var8.Math;
-                    var17 = var19.max;
-                    var16 = var18.height;
-                    var17 = var17.bind(var19)(var13, var16);
-                    var20 = var18.height;
-                    var21 = var18.minHeight;
-                    var22 = var4 != var21;
-                    var16 = var11;
-                    var19 = 0;
-                    if (!var22) {
-                        _fun45915_ip = 132;
-                        continue _fun45915
-                    }
-                case 129:
-                    var19 = var21;
-                case 132:
-                    var19 = var20 > var19;
-                    if (!var19) {
-                        _fun45915_ip = 180;
-                        continue _fun45915
-                    }
-                case 139:
-                    var22 = var18.height;
-                    var21 = var4 == var14;
-                    var20 = undefined;
-                    if (var21) {
-                        _fun45915_ip = 158;
-                        continue _fun45915
-                    }
-                case 153:
-                    var20 = var14.height;
-                case 158:
-                    var23 = var4 != var20;
-                    var21 = 0;
-                    if (!var23) {
-                        _fun45915_ip = 170;
-                        continue _fun45915
-                    }
-                case 167:
-                    var21 = var20;
-                case 170:
-                    var19 = var22 > var21;
-                    var10 = var20;
-                    var9 = var14;
-                case 180:
-                    if (!var19) {
-                        _fun45915_ip = 186;
-                        continue _fun45915
-                    }
-                case 183:
-                    var14 = var18;
-                case 186:
-                    var12 = var12 + 1;
-                    var18 = var5.layouts;
-                    var19 = var18.length;
-                    var18 = var14;
-                    var0 = var18;
-                    var7 = var17;
-                    var3 = var16;
-                    if (!(!(var12 >= var19))) {
-                        _fun45915_ip = 241;
-                        continue _fun45915
-                    }
-                case 216:
-                    var14 = var18;
-                    var13 = var17;
-                    var11 = var16;
-                    var0 = var14;
-                    var7 = var13;
-                    var3 = var11;
-                    if (var12 <= var6) {
-                        _fun45915_ip = 54;
-                        continue _fun45915
-                    }
-                case 241:
-                    var9 = !var0;
-                    if (!var9) {
-                        _fun45915_ip = 251;
-                        continue _fun45915
-                    }
-                case 247:
-                    var9 = var7 > var1;
-                case 251:
-                    if (!var9) {
-                        _fun45915_ip = 266;
-                        continue _fun45915
-                    }
-                case 254:
-                    var8 = var8.Number;
-                    var7 = var8.MAX_SAFE_INTEGER;
-                case 266:
-                    if (!(var4 == var0)) {
-                        _fun45915_ip = 280;
-                        continue _fun45915
-                    }
-                case 270:
-                    var4 = var5.layouts;
-                    var0 = var4[var2];
-                case 280:
-                    if (var3) {
-                        _fun45915_ip = 285;
-                        continue _fun45915
-                    }
-                case 283:
-                    return var0;
-                case 285:
-                    if (!var0) {
-                        _fun45915_ip = 444;
-                        continue _fun45915
-                    }
-                case 291:
-                    var4 = var0.height;
-                    var3 = var0.height;
-                    var7 = var7 - var3;
-                    var3 = 1;
-                    if (!(var7 > var3)) {
-                        _fun45915_ip = 322;
-                        continue _fun45915
-                    }
-                case 312:
-                    var3 = true;
-                    var5.requiresRepaint = var3;
-                    var4 = 0;
-                case 322:
-                    if (!(var2 <= var6)) {
-                        _fun45915_ip = 438;
-                        continue _fun45915
-                    }
-                case 326:
-                    var3 = var5.layouts;
-                    var3 = var3[var2];
-                    var3.minHeight = var4;
-                    if (!(var4 > var1)) {
-                        _fun45915_ip = 362;
-                        continue _fun45915
-                    }
-                case 346:
-                    var3 = var5.layouts;
-                    var3 = var3[var2];
-                    var3.height = var4;
-                case 362:
-                    var3 = var2 + 1;
-                    var2 = var5.layouts;
-                    var2 = var2.length;
-                    if (!(!(var3 >= var2))) {
-                        _fun45915_ip = 438;
-                        continue _fun45915
-                    }
-                case 380:
-                    if (!(var3 <= var6)) {
-                        _fun45915_ip = 438;
-                        continue _fun45915
-                    }
-                case 384:
-                    var2 = var5.layouts;
-                    var2 = var2[var3];
-                    var2.minHeight = var4;
-                    if (!(var4 > var1)) {
-                        _fun45915_ip = 420;
-                        continue _fun45915
-                    }
-                case 404:
-                    var2 = var5.layouts;
-                    var2 = var2[var3];
-                    var2.height = var4;
-                case 420:
-                    var3 = var3 + 1;
-                    var2 = var5.layouts;
-                    var2 = var2.length;
-                    if (!(var3 >= var2)) {
-                        _fun45915_ip = 380;
-                        continue _fun45915
-                    }
-                case 438:
-                    var0.minHeight = var1;
-                case 444:
+                case 86:
                     return var0;
             }
         };
         var4.value = var6;
         var0[7] = var4;
         var4 = {};
-        var6 = 'computeTotalHeightTillRow';
+        var6 = 'placeItemSequentially';
         var4.key = var6;
-        var6 = function arg0() {
-            _fun45916: for (var _fun45916_ip = 0;;) switch (_fun45916_ip) {
+        var6 = function arg0, arg1() {
+            _fun45900: for (var _fun45900_ip = 0;;) switch (_fun45900_ip) {
                 case 0:
-                    var7 = arg0;
-                    var6 = this;
-                    var0 = var6.locateFirstIndexInRow;
-                    var2 = var0.bind(var6)(var7);
-                    var0 = var6.layouts;
-                    var0 = var0[var2];
-                    var1 = var0.y;
-                    var3 = var2 <= var7;
-                    var9 = 0;
+                    var5 = arg0;
+                    var2 = arg1;
+                    var1 = this;
+                    var0 = var1.currentColumn;
+                    var3 = var0 + var2;
+                    var0 = var1.maxColumns;
+                    if (!(var3 > var0)) {
+                        _fun45900_ip = 37;
+                        continue _fun45900
+                    }
+                case 29:
                     var0 = 0;
-                    if (!var3) {
-                        _fun45916_ip = 158;
-                        continue _fun45916
+                    var1.currentColumn = var0;
+                case 37:
+                    var3 = var1.columnHeights;
+                    var0 = var1.currentColumn;
+                    var4 = var3[var0];
+                    var3 = var1.currentColumn;
+                    var0 = 1;
+                    var7 = var3 + var0;
+                    var0 = var1.currentColumn;
+                    var0 = var0 + var2;
+                    var6 = global;
+                    var3 = var4;
+                    var4 = var3;
+                    if (!(var7 < var0)) {
+                        _fun45900_ip = 151;
+                        continue _fun45900
                     }
-                case 43:
-                    var5 = global;
-                    var8 = var5.Math;
-                    var4 = var8.max;
-                    var3 = var6.layouts;
-                    var3 = var3[var2];
-                    var3 = var3.height;
-                    var3 = var4.bind(var8)(var9, var3);
-                    var4 = var2 + 1;
-                    var2 = var6.layouts;
-                    var2 = var2.length;
-                    var0 = var3;
-                    if (!(!(var4 >= var2))) {
-                        _fun45916_ip = 158;
-                        continue _fun45916
+                case 88:
+                    var0 = var1.maxColumns;
+                    var8 = var3;
+                    if (!(var7 < var0)) {
+                        _fun45900_ip = 128;
+                        continue _fun45900
                     }
-                case 98:
-                    var0 = var3;
-                    if (!(var4 <= var7)) {
-                        _fun45916_ip = 158;
-                        continue _fun45916
+                case 101:
+                    var10 = var6.Math;
+                    var9 = var10.max;
+                    var0 = var1.columnHeights;
+                    var0 = var0[var7];
+                    var8 = var9.bind(var10)(var3, var0);
+                case 128:
+                    var7 = var7 + 1;
+                    var0 = var1.currentColumn;
+                    var0 = var0 + var2;
+                    var3 = var8;
+                    var4 = var3;
+                    if (var7 < var0) {
+                        _fun45900_ip = 88;
+                        continue _fun45900
                     }
-                case 105:
-                    var9 = var5.Math;
-                    var8 = var9.max;
-                    var2 = var6.layouts;
-                    var2 = var2[var4];
-                    var2 = var2.height;
-                    var3 = var8.bind(var9)(var3, var2);
-                    var4 = var4 + 1;
-                    var2 = var6.layouts;
-                    var2 = var2.length;
-                    var0 = var3;
-                    if (!(var4 >= var2)) {
-                        _fun45916_ip = 98;
-                        continue _fun45916
+                case 151:
+                    var3 = var1.boundedSize;
+                    var0 = var1.maxColumns;
+                    var3 = var3 / var0;
+                    var0 = var1.currentColumn;
+                    var0 = var3 * var0;
+                    var5.x = var0;
+                    var5.y = var4;
+                    var3 = var1.currentColumn;
+                    var0 = var1.currentColumn;
+                    var0 = var0 + var2;
+                    if (!(var3 < var0)) {
+                        _fun45900_ip = 255;
+                        continue _fun45900
                     }
-                case 158:
-                    var0 = var1 + var0;
+                case 209:
+                    var0 = var1.maxColumns;
+                    if (!(var3 < var0)) {
+                        _fun45900_ip = 238;
+                        continue _fun45900
+                    }
+                case 219:
+                    var6 = var1.columnHeights;
+                    var0 = var5.height;
+                    var0 = var4 + var0;
+                    var6[var3] = var0;
+                case 238:
+                    var3 = var3 + 1;
+                    var0 = var1.currentColumn;
+                    var0 = var0 + var2;
+                    if (var3 < var0) {
+                        _fun45900_ip = 209;
+                        continue _fun45900
+                    }
+                case 255:
+                    var0 = var1.currentColumn;
+                    var0 = var0 + var2;
+                    var1.currentColumn = var0;
+                    var2 = var1.currentColumn;
+                    var0 = var1.maxColumns;
+                    if (!(var2 >= var0)) {
+                        _fun45900_ip = 295;
+                        continue _fun45900
+                    }
+                case 287:
+                    var0 = 0;
+                    var1.currentColumn = var0;
+                case 295:
+                    var0 = undefined;
                     return var0;
             }
         };
         var4.value = var6;
         var0[8] = var4;
         var4 = {};
-        var6 = 'updateAllWidths';
+        var6 = 'placeSingleColumnItem';
         var4.key = var6;
-        var6 = function() {
-            _fun45917: for (var _fun45917_ip = 0;;) switch (_fun45917_ip) {
+        var6 = function arg0() {
+            _fun45901: for (var _fun45901_ip = 0;;) switch (_fun45901_ip) {
                 case 0:
-                    var2 = this;
-                    var0 = var2.layouts;
-                    var0 = var0.length;
-                    var1 = 0;
-                    var0 = var1 < var0;
-                    if (!var0) {
-                        _fun45917_ip = 68;
-                        continue _fun45917
+                    var0 = arg0;
+                    var1 = this;
+                    var3 = var1.columnHeights;
+                    var2 = 0;
+                    var6 = var3[var2];
+                    var3 = var1.maxColumns;
+                    var5 = 1;
+                    var3 = var5 < var3;
+                    var4 = 0;
+                    if (!var3) {
+                        _fun45901_ip = 79;
+                        continue _fun45901
                     }
-                case 23:
-                    var0 = var2.layouts;
-                    var3 = var0[var1];
-                    var0 = var2.getWidth;
-                    var0 = var0.bind(var2)(var1);
-                    var3.width = var0;
-                    var1 = var1 + 1;
-                    var0 = var2.layouts;
-                    var0 = var0.length;
-                    if (var1 < var0) {
-                        _fun45917_ip = 23;
-                        continue _fun45917
+                case 36:
+                    var3 = var1.columnHeights;
+                    var3 = var3[var5];
+                    if (!(var3 < var6)) {
+                        _fun45901_ip = 63;
+                        continue _fun45901
                     }
-                case 68:
+                case 50:
+                    var3 = var1.columnHeights;
+                    var6 = var3[var5];
+                    var4 = var5;
+                case 63:
+                    var5 = var5 + 1;
+                    var3 = var1.maxColumns;
+                    var2 = var4;
+                    if (var5 < var3) {
+                        _fun45901_ip = 36;
+                        continue _fun45901
+                    }
+                case 79:
+                    var4 = var1.boundedSize;
+                    var3 = var1.maxColumns;
+                    var3 = var4 / var3;
+                    var3 = var3 * var2;
+                    var0.x = var3;
+                    var3 = var1.columnHeights;
+                    var3 = var3[var2];
+                    var0.y = var3;
+                    var1 = var1.columnHeights;
+                    var3 = var1[var2];
+                    var0 = var0.height;
+                    var0 = var3 + var0;
+                    var1[var2] = var0;
                     var0 = undefined;
                     return var0;
             }
@@ -785,74 +716,232 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4.value = var6;
         var0[9] = var4;
         var4 = {};
-        var6 = 'checkBounds';
+        var6 = 'placeOptimizedMultiColumnItem';
         var4.key = var6;
         var6 = function arg0, arg1() {
-            var1 = arg0;
-            var0 = arg1;
-            var1 = var1 + var0;
-            var0 = this;
-            var2 = var0.boundedSize;
-            var0 = 0.9;
-            var0 = var2 + var0;
-            var0 = var1 <= var0;
-            return var0;
+            _fun45902: for (var _fun45902_ip = 0;;) switch (_fun45902_ip) {
+                case 0:
+                    var7 = arg0;
+                    var6 = arg1;
+                    var5 = this;
+                    var0 = global;
+                    var1 = var0.Number;
+                    var10 = var1.MAX_VALUE;
+                    var1 = var5.maxColumns;
+                    var1 = var1 - var6;
+                    var9 = 0;
+                    var8 = 1;
+                    var4 = 0;
+                    var3 = 0;
+                    var2 = 0;
+                    if (!(var2 <= var1)) {
+                        _fun45902_ip = 222;
+                        continue _fun45902
+                    }
+                case 51:
+                    var1 = var5.columnHeights;
+                    var11 = var1[var3];
+                    var12 = var3 + var8;
+                    var1 = var3 + var6;
+                    var14 = var11;
+                    if (!(var12 < var1)) {
+                        _fun45902_ip = 117;
+                        continue _fun45902
+                    }
+                case 76:
+                    var15 = var0.Math;
+                    var13 = var15.max;
+                    var1 = var5.columnHeights;
+                    var1 = var1[var12];
+                    var11 = var13.bind(var15)(var11, var1);
+                    var12 = var12 + 1;
+                    var1 = var3 + var6;
+                    var14 = var11;
+                    if (var12 < var1) {
+                        _fun45902_ip = 76;
+                        continue _fun45902
+                    }
+                case 117:
+                    var1 = var5.maxColumns;
+                    var11 = var9 < var1;
+                    var13 = 0;
+                    var12 = 0;
+                    var1 = 0;
+                    if (!var11) {
+                        _fun45902_ip = 189;
+                        continue _fun45902
+                    }
+                case 136:
+                    if (!(var12 >= var3)) {
+                        _fun45902_ip = 148;
+                        continue _fun45902
+                    }
+                case 140:
+                    var11 = var3 + var6;
+                    if (!(!(var12 < var11))) {
+                        _fun45902_ip = 160;
+                        continue _fun45902
+                    }
+                case 148:
+                    var11 = var5.columnHeights;
+                    var11 = var11[var12];
+                    _fun45902_ip = 169;
+                    continue _fun45902;
+                case 160:
+                    var15 = var7.height;
+                    var11 = var14 + var15;
+                case 169:
+                    var13 = var13 + var11;
+                    var12 = var12 + 1;
+                    var11 = var5.maxColumns;
+                    var1 = var13;
+                    if (var12 < var11) {
+                        _fun45902_ip = 136;
+                        continue _fun45902
+                    }
+                case 189:
+                    if (!(var1 < var10)) {
+                        _fun45902_ip = 199;
+                        continue _fun45902
+                    }
+                case 193:
+                    var4 = var3;
+                    var10 = var1;
+                case 199:
+                    var3 = var3 + 1;
+                    var1 = var5.maxColumns;
+                    var1 = var1 - var6;
+                    var2 = var4;
+                    if (var3 <= var1) {
+                        _fun45902_ip = 51;
+                        continue _fun45902
+                    }
+                case 222:
+                    var1 = var0.Math;
+                    var8 = var1.max;
+                    var4 = var8.apply;
+                    var3 = var0.Math;
+                    var9 = _closure1_slot0;
+                    var10 = var5.columnHeights;
+                    var1 = var10.slice;
+                    var0 = var2 + var6;
+                    var1 = var1.bind(var10)(var2, var0);
+                    var0 = undefined;
+                    var1 = var9.bind(var0)(var1);
+                    var4 = var4.bind(var8)(var3, var1);
+                    var3 = var5.boundedSize;
+                    var1 = var5.maxColumns;
+                    var1 = var3 / var1;
+                    var1 = var1 * var2;
+                    var7.x = var1;
+                    var7.y = var4;
+                    var1 = var2 + var6;
+                    var3 = var2;
+                    var2 = var3;
+                    if (!(var2 < var1)) {
+                        _fun45902_ip = 361;
+                        continue _fun45902
+                    }
+                case 331:
+                    var8 = var5.columnHeights;
+                    var1 = var7.height;
+                    var1 = var4 + var1;
+                    var8[var2] = var1;
+                    var2 = var2 + 1;
+                    var1 = var3 + var6;
+                    if (var2 < var1) {
+                        _fun45902_ip = 331;
+                        continue _fun45902
+                    }
+                case 361:
+                    return var0;
+            }
         };
         var4.value = var6;
         var0[10] = var4;
         var4 = {};
-        var6 = 'locateFirstIndexInRow';
+        var6 = 'updateColumnHeightsToIndex';
         var4.key = var6;
         var5 = function arg0() {
-            _fun45919: for (var _fun45919_ip = 0;;) switch (_fun45919_ip) {
+            _fun45903: for (var _fun45903_ip = 0;;) switch (_fun45903_ip) {
                 case 0:
-                    var5 = arg0;
-                    var4 = this;
-                    var0 = 0;
-                    if (!(var0 !== var5)) {
-                        _fun45919_ip = 100;
-                        continue _fun45919
+                    var4 = arg0;
+                    var3 = this;
+                    var2 = global;
+                    var5 = var2.Array;
+                    var1 = var3.maxColumns;
+                    var0 = undefined;
+                    var6 = var5.bind(var0)(var1);
+                    var5 = var6.fill;
+                    var1 = 0;
+                    var5 = var5.bind(var6)(var1);
+                    var3.columnHeights = var5;
+                    var3.currentColumn = var1;
+                    var5 = var1 < var4;
+                    if (!var5) {
+                        _fun45903_ip = 269;
+                        continue _fun45903
                     }
-                case 12:
-                    var3 = var5;
-                    if (!(var5 >= var0)) {
-                        _fun45919_ip = 79;
-                        continue _fun45919
+                case 62:
+                    var5 = var3.layouts;
+                    var9 = var5[var1];
+                    var5 = var9.width;
+                    var7 = var3.boundedSize;
+                    var6 = var3.maxColumns;
+                    var10 = var7 / var6;
+                    var7 = var2.Math;
+                    var6 = var7.round;
+                    var5 = var5 / var10;
+                    var6 = var6.bind(var7)(var5);
+                    var8 = var2.Math;
+                    var7 = var8.round;
+                    var5 = var9.x;
+                    var5 = var5 / var10;
+                    var5 = var7.bind(var8)(var5);
+                    var11 = var2.Math;
+                    var10 = var11.min;
+                    var8 = var5 + var6;
+                    var7 = var3.maxColumns;
+                    var8 = var10.bind(var11)(var8, var7);
+                    var7 = var5;
+                    if (!(var7 < var8)) {
+                        _fun45903_ip = 230;
+                        continue _fun45903
                     }
-                case 19:
-                    var1 = var4.layouts;
-                    var1 = var1[var5];
-                    var1 = var1.x;
-                    var2 = var5;
-                    var3 = var2;
-                    if (!(var0 !== var1)) {
-                        _fun45919_ip = 79;
-                        continue _fun45919
+                case 172:
+                    var11 = var3.columnHeights;
+                    var14 = var2.Math;
+                    var13 = var14.max;
+                    var10 = var3.columnHeights;
+                    var12 = var10[var7];
+                    var15 = var9.y;
+                    var10 = var9.height;
+                    var10 = var15 + var10;
+                    var10 = var13.bind(var14)(var12, var10);
+                    var11[var7] = var10;
+                    var7 = var7 + 1;
+                    if (var7 < var8) {
+                        _fun45903_ip = 172;
+                        continue _fun45903
                     }
-                case 44:
-                    var5 = var2 - 1;
-                    var3 = var5;
-                    if (!(var5 >= var0)) {
-                        _fun45919_ip = 79;
-                        continue _fun45919
+                case 230:
+                    var7 = var3.optimizeItemArrangement;
+                    if (var7) {
+                        _fun45903_ip = 259;
+                        continue _fun45903
                     }
-                case 54:
-                    var1 = var4.layouts;
-                    var1 = var1[var5];
-                    var1 = var1.x;
-                    var2 = var5;
-                    var3 = var2;
-                    if (var0 !== var1) {
-                        _fun45919_ip = 44;
-                        continue _fun45919
+                case 239:
+                    var6 = var5 + var6;
+                    var5 = var3.maxColumns;
+                    var5 = var6 % var5;
+                    var3.currentColumn = var5;
+                case 259:
+                    var1 = var1 + 1;
+                    if (var1 < var4) {
+                        _fun45903_ip = 62;
+                        continue _fun45903
                     }
-                case 79:
-                    var1 = global;
-                    var2 = var1.Math;
-                    var1 = var2.max;
-                    var1 = var1.bind(var2)(var3, var0);
-                    return var1;
-                case 100:
+                case 269:
                     return var0;
             }
         };
@@ -862,6 +951,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1 = var1.bind(var0)(var3);
-    var2.RVGridLayoutManagerImpl = var1;
+    var2.RVMasonryLayoutManagerImpl = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5113, 5114, 5135, 5137, 5138, 5140, 5141]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5135, 5123, 5124, 5145, 5147, 5148, 5150, 5151]);

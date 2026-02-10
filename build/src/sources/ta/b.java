@@ -6,108 +6,108 @@ import com.facebook.common.references.CloseableReference;
 public class b extends a implements f {
 
     /* renamed from: t  reason: collision with root package name */
-    private static boolean f50710t = false;
+    private static boolean f48642t = false;
 
     /* renamed from: o  reason: collision with root package name */
-    private CloseableReference f50711o;
+    private CloseableReference f48643o;
 
     /* renamed from: p  reason: collision with root package name */
-    private volatile Bitmap f50712p;
+    private volatile Bitmap f48644p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final o f50713q;
+    private final o f48645q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final int f50714r;
+    private final int f48646r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final int f50715s;
+    private final int f48647s;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public b(Bitmap bitmap, t8.c cVar, o oVar, int i10, int i11) {
-        this.f50712p = (Bitmap) p8.j.g(bitmap);
-        this.f50711o = CloseableReference.R0(this.f50712p, (t8.c) p8.j.g(cVar));
-        this.f50713q = oVar;
-        this.f50714r = i10;
-        this.f50715s = i11;
+        this.f48644p = (Bitmap) p8.j.g(bitmap);
+        this.f48643o = CloseableReference.G0(this.f48644p, (t8.c) p8.j.g(cVar));
+        this.f48645q = oVar;
+        this.f48646r = i10;
+        this.f48647s = i11;
     }
 
-    private synchronized CloseableReference D0() {
+    private synchronized CloseableReference C0() {
         CloseableReference closeableReference;
-        closeableReference = this.f50711o;
-        this.f50711o = null;
-        this.f50712p = null;
+        closeableReference = this.f48643o;
+        this.f48643o = null;
+        this.f48644p = null;
         return closeableReference;
     }
 
-    private static int G0(Bitmap bitmap) {
+    private static int E0(Bitmap bitmap) {
         if (bitmap == null) {
             return 0;
         }
         return bitmap.getHeight();
     }
 
-    private static int H0(Bitmap bitmap) {
+    private static int F0(Bitmap bitmap) {
         if (bitmap == null) {
             return 0;
         }
         return bitmap.getWidth();
     }
 
-    public static boolean J0() {
-        return f50710t;
+    public static boolean G0() {
+        return f48642t;
     }
 
     @Override // ta.a, ta.e
-    public o F1() {
-        return this.f50713q;
+    public o J1() {
+        return this.f48645q;
     }
 
     @Override // ta.d
-    public Bitmap L1() {
-        return this.f50712p;
+    public Bitmap Q1() {
+        return this.f48644p;
     }
 
     @Override // ta.f
     public synchronized CloseableReference U() {
-        return CloseableReference.n(this.f50711o);
+        return CloseableReference.n(this.f48643o);
     }
 
     @Override // ta.f
-    public int X0() {
-        return this.f50715s;
+    public int c1() {
+        return this.f48647s;
     }
 
     @Override // ta.e, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        CloseableReference D0 = D0();
-        if (D0 != null) {
-            D0.close();
+        CloseableReference C0 = C0();
+        if (C0 != null) {
+            C0.close();
         }
     }
 
     @Override // ta.e, com.facebook.imagepipeline.image.ImageInfo
     public int getHeight() {
         int i10;
-        if (this.f50714r % 180 == 0 && (i10 = this.f50715s) != 5 && i10 != 7) {
-            return G0(this.f50712p);
+        if (this.f48646r % 180 == 0 && (i10 = this.f48647s) != 5 && i10 != 7) {
+            return E0(this.f48644p);
         }
-        return H0(this.f50712p);
+        return F0(this.f48644p);
     }
 
     @Override // ta.e, com.facebook.imagepipeline.image.ImageInfo
     public int getWidth() {
         int i10;
-        if (this.f50714r % 180 == 0 && (i10 = this.f50715s) != 5 && i10 != 7) {
-            return H0(this.f50712p);
+        if (this.f48646r % 180 == 0 && (i10 = this.f48647s) != 5 && i10 != 7) {
+            return F0(this.f48644p);
         }
-        return G0(this.f50712p);
+        return E0(this.f48644p);
     }
 
     @Override // ta.e
     public synchronized boolean isClosed() {
         boolean z10;
-        if (this.f50711o == null) {
+        if (this.f48643o == null) {
             z10 = true;
         } else {
             z10 = false;
@@ -116,22 +116,22 @@ public class b extends a implements f {
     }
 
     @Override // ta.f
-    public int l1() {
-        return this.f50714r;
+    public int q1() {
+        return this.f48646r;
     }
 
     @Override // ta.e
     public int w() {
-        return db.d.j(this.f50712p);
+        return db.d.j(this.f48644p);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public b(CloseableReference closeableReference, o oVar, int i10, int i11) {
         CloseableReference closeableReference2 = (CloseableReference) p8.j.g(closeableReference.m());
-        this.f50711o = closeableReference2;
-        this.f50712p = (Bitmap) closeableReference2.J();
-        this.f50713q = oVar;
-        this.f50714r = i10;
-        this.f50715s = i11;
+        this.f48643o = closeableReference2;
+        this.f48644p = (Bitmap) closeableReference2.J();
+        this.f48645q = oVar;
+        this.f48646r = i10;
+        this.f48647s = i11;
     }
 }

@@ -1,203 +1,218 @@
 package ck;
 
+import android.graphics.Bitmap;
 import android.graphics.Matrix;
-import android.graphics.PointF;
-import android.graphics.Rect;
-import android.util.SparseArray;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import qg.c2;
-import qg.e4;
-import qg.fe;
-import qg.je;
-import qg.mc;
-import qg.qe;
-import qg.xe;
-import qg.ye;
+import android.media.Image;
+import android.os.SystemClock;
+import dk.c;
+import hf.q;
+import java.nio.ByteBuffer;
+import pg.fc;
+import pg.hc;
+import wj.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a {
+public class a implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Rect f7650a;
+    private volatile Bitmap f8297a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f7651b;
+    private volatile ByteBuffer f8298b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f7652c;
+    private volatile b f8299c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f7653d;
+    private final int f8300d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f7654e;
+    private final int f8301e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f7655f;
+    private final int f8302f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f7656g;
+    private final int f8303g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final float f7657h;
+    private final Matrix f8304h;
 
-    /* renamed from: i  reason: collision with root package name */
-    private final SparseArray f7658i = new SparseArray();
+    private a(Bitmap bitmap, int i10) {
+        this.f8297a = (Bitmap) q.l(bitmap);
+        this.f8300d = bitmap.getWidth();
+        this.f8301e = bitmap.getHeight();
+        m(i10);
+        this.f8302f = i10;
+        this.f8303g = -1;
+        this.f8304h = null;
+    }
 
-    /* renamed from: j  reason: collision with root package name */
-    private final SparseArray f7659j = new SparseArray();
+    public static a a(Bitmap bitmap, int i10) {
+        long elapsedRealtime = SystemClock.elapsedRealtime();
+        a aVar = new a(bitmap, i10);
+        o(-1, 1, elapsedRealtime, bitmap.getHeight(), bitmap.getWidth(), bitmap.getAllocationByteCount(), i10);
+        return aVar;
+    }
 
-    public a(e4 e4Var, Matrix matrix) {
-        mc[] mcVarArr;
-        c2[] c2VarArr;
-        int length;
-        float f10 = e4Var.f45715i;
-        float f11 = e4Var.f45717p / 2.0f;
-        float f12 = e4Var.f45716o;
-        float f13 = e4Var.f45718q / 2.0f;
-        Rect rect = new Rect((int) (f10 - f11), (int) (f12 - f13), (int) (f10 + f11), (int) (f12 + f13));
-        this.f7650a = rect;
-        if (matrix != null) {
-            bk.b.e(rect, matrix);
+    public static a b(ByteBuffer byteBuffer, int i10, int i11, int i12, int i13) {
+        long elapsedRealtime = SystemClock.elapsedRealtime();
+        a aVar = new a(byteBuffer, i10, i11, i12, i13);
+        o(i13, 3, elapsedRealtime, i11, i10, byteBuffer.limit(), i12);
+        return aVar;
+    }
+
+    public static a c(Image image, int i10) {
+        return n(image, i10, null);
+    }
+
+    private static int m(int i10) {
+        boolean z10 = true;
+        if (i10 != 0 && i10 != 90 && i10 != 180) {
+            if (i10 == 270) {
+                i10 = 270;
+            } else {
+                z10 = false;
+            }
         }
-        this.f7651b = e4Var.f45714e;
-        for (mc mcVar : e4Var.f45722u) {
-            if (i(mcVar.f46051o)) {
-                PointF pointF = new PointF(mcVar.f46049e, mcVar.f46050i);
-                if (matrix != null) {
-                    bk.b.c(pointF, matrix);
+        q.b(z10, "Invalid rotation. Only 0, 90, 180, 270 are supported currently.");
+        return i10;
+    }
+
+    private static a n(Image image, int i10, Matrix matrix) {
+        Image image2;
+        int i11;
+        int limit;
+        a aVar;
+        long elapsedRealtime = SystemClock.elapsedRealtime();
+        q.m(image, "Please provide a valid image");
+        m(i10);
+        boolean z10 = true;
+        if (image.getFormat() != 256 && image.getFormat() != 35) {
+            z10 = false;
+        }
+        q.b(z10, "Only JPEG and YUV_420_888 are supported now");
+        Image.Plane[] planes = image.getPlanes();
+        if (image.getFormat() == 256) {
+            limit = image.getPlanes()[0].getBuffer().limit();
+            image2 = image;
+            i11 = i10;
+            aVar = new a(c.f().c(image, i10), 0);
+        } else {
+            for (Image.Plane plane : planes) {
+                if (plane.getBuffer() != null) {
+                    plane.getBuffer().rewind();
                 }
-                SparseArray sparseArray = this.f7658i;
-                int i10 = mcVar.f46051o;
-                sparseArray.put(i10, new f(i10, pointF));
             }
+            image2 = image;
+            i11 = i10;
+            a aVar2 = new a(image2, image.getWidth(), image.getHeight(), i11, matrix);
+            limit = (image2.getPlanes()[0].getBuffer().limit() * 3) / 2;
+            aVar = aVar2;
         }
-        for (c2 c2Var : e4Var.f45726y) {
-            int i11 = c2Var.f45527e;
-            if (h(i11)) {
-                PointF[] pointFArr = c2Var.f45526d;
-                pointFArr.getClass();
-                long length2 = pointFArr.length + 5 + (length / 10);
-                ArrayList arrayList = new ArrayList(length2 > 2147483647L ? Integer.MAX_VALUE : (int) length2);
-                Collections.addAll(arrayList, pointFArr);
-                if (matrix != null) {
-                    bk.b.d(arrayList, matrix);
-                }
-                this.f7659j.put(i11, new b(i11, arrayList));
-            }
+        o(image2.getFormat(), 5, elapsedRealtime, image2.getHeight(), image2.getWidth(), limit, i11);
+        return aVar;
+    }
+
+    private static void o(int i10, int i11, long j10, int i12, int i13, int i14, int i15) {
+        hc.a(fc.b("vision-common"), i10, i11, j10, i12, i13, i14, i15);
+    }
+
+    public Bitmap d() {
+        return this.f8297a;
+    }
+
+    public ByteBuffer e() {
+        return this.f8298b;
+    }
+
+    public Matrix f() {
+        return this.f8304h;
+    }
+
+    public int g() {
+        return this.f8303g;
+    }
+
+    public int h() {
+        return this.f8301e;
+    }
+
+    public Image i() {
+        if (this.f8299c == null) {
+            return null;
         }
-        this.f7655f = e4Var.f45721t;
-        this.f7656g = e4Var.f45719r;
-        this.f7657h = e4Var.f45720s;
-        this.f7654e = e4Var.f45725x;
-        this.f7653d = e4Var.f45723v;
-        this.f7652c = e4Var.f45724w;
+        return this.f8299c.a();
     }
 
-    private static boolean h(int i10) {
-        if (i10 <= 15 && i10 > 0) {
-            return true;
+    public Image.Plane[] j() {
+        if (this.f8299c == null) {
+            return null;
         }
-        return false;
+        return this.f8299c.b();
     }
 
-    private static boolean i(int i10) {
-        if (i10 == 0 || i10 == 1 || i10 == 7 || i10 == 3 || i10 == 9 || i10 == 4 || i10 == 10 || i10 == 5 || i10 == 11 || i10 == 6) {
-            return true;
-        }
-        return false;
+    public int k() {
+        return this.f8302f;
     }
 
-    public Rect a() {
-        return this.f7650a;
+    public int l() {
+        return this.f8300d;
     }
 
-    public b b(int i10) {
-        return (b) this.f7659j.get(i10);
+    private a(Image image, int i10, int i11, int i12, Matrix matrix) {
+        q.l(image);
+        this.f8299c = new b(image);
+        this.f8300d = i10;
+        this.f8301e = i11;
+        m(i12);
+        this.f8302f = i12;
+        this.f8303g = 35;
+        this.f8304h = matrix;
     }
 
-    public float c() {
-        return this.f7656g;
-    }
-
-    public f d(int i10) {
-        return (f) this.f7658i.get(i10);
-    }
-
-    public final SparseArray e() {
-        return this.f7659j;
-    }
-
-    public final void f(SparseArray sparseArray) {
-        this.f7659j.clear();
-        for (int i10 = 0; i10 < sparseArray.size(); i10++) {
-            this.f7659j.put(sparseArray.keyAt(i10), (b) sparseArray.valueAt(i10));
-        }
-    }
-
-    public final void g(int i10) {
-        this.f7651b = -1;
-    }
-
-    public String toString() {
-        xe a10 = ye.a("Face");
-        a10.c("boundingBox", this.f7650a);
-        a10.b("trackingId", this.f7651b);
-        a10.a("rightEyeOpenProbability", this.f7652c);
-        a10.a("leftEyeOpenProbability", this.f7653d);
-        a10.a("smileProbability", this.f7654e);
-        a10.a("eulerX", this.f7655f);
-        a10.a("eulerY", this.f7656g);
-        a10.a("eulerZ", this.f7657h);
-        xe a11 = ye.a("Landmarks");
-        for (int i10 = 0; i10 <= 11; i10++) {
-            if (i(i10)) {
-                a11.c("landmark_" + i10, d(i10));
-            }
-        }
-        a10.c("landmarks", a11.toString());
-        xe a12 = ye.a("Contours");
-        for (int i11 = 1; i11 <= 15; i11++) {
-            a12.c("Contour_" + i11, b(i11));
-        }
-        a10.c("contours", a12.toString());
-        return a10.toString();
-    }
-
-    public a(je jeVar, Matrix matrix) {
-        Rect j10 = jeVar.j();
-        this.f7650a = j10;
-        if (matrix != null) {
-            bk.b.e(j10, matrix);
-        }
-        this.f7651b = jeVar.i();
-        for (qe qeVar : jeVar.o()) {
-            if (i(qeVar.b())) {
-                PointF c10 = qeVar.c();
-                if (matrix != null) {
-                    bk.b.c(c10, matrix);
-                }
-                this.f7658i.put(qeVar.b(), new f(qeVar.b(), c10));
-            }
-        }
-        for (fe feVar : jeVar.l()) {
-            int b10 = feVar.b();
-            if (h(b10)) {
-                List c11 = feVar.c();
-                c11.getClass();
-                ArrayList arrayList = new ArrayList(c11);
-                if (matrix != null) {
-                    bk.b.d(arrayList, matrix);
-                }
-                this.f7659j.put(b10, new b(b10, arrayList));
-            }
-        }
-        this.f7655f = jeVar.h();
-        this.f7656g = jeVar.c();
-        this.f7657h = -jeVar.e();
-        this.f7654e = jeVar.f();
-        this.f7653d = jeVar.b();
-        this.f7652c = jeVar.d();
+    /* JADX WARN: Removed duplicated region for block: B:11:0x0025  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private a(java.nio.ByteBuffer r5, int r6, int r7, int r8, int r9) {
+        /*
+            r4 = this;
+            r4.<init>()
+            r0 = 842094169(0x32315659, float:1.0322389E-8)
+            r1 = 0
+            r2 = 1
+            if (r9 == r0) goto Lf
+            r0 = 17
+            if (r9 != r0) goto L11
+            r9 = r0
+        Lf:
+            r0 = r2
+            goto L12
+        L11:
+            r0 = r1
+        L12:
+            hf.q.a(r0)
+            java.lang.Object r0 = hf.q.l(r5)
+            java.nio.ByteBuffer r0 = (java.nio.ByteBuffer) r0
+            r4.f8298b = r0
+            int r0 = r5.limit()
+            int r3 = r6 * r7
+            if (r0 <= r3) goto L26
+            r1 = r2
+        L26:
+            java.lang.String r0 = "Image dimension, ByteBuffer size and format don't match. Please check if the ByteBuffer is in the decalred format."
+            hf.q.b(r1, r0)
+            r5.rewind()
+            r4.f8300d = r6
+            r4.f8301e = r7
+            m(r8)
+            r4.f8302f = r8
+            r4.f8303g = r9
+            r5 = 0
+            r4.f8304h = r5
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ck.a.<init>(java.nio.ByteBuffer, int, int, int, int):void");
     }
 }

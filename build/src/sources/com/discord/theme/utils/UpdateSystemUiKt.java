@@ -5,7 +5,7 @@ import android.os.Build;
 import android.view.View;
 import android.view.WindowInsetsController;
 import androidx.core.view.WindowInsetsControllerCompat;
-import androidx.core.view.w0;
+import androidx.core.view.x0;
 import com.discord.misc.utilities.activity.ActivityExtensionsKt;
 import com.discord.theme.ThemeManager;
 import kotlin.Metadata;
@@ -41,7 +41,7 @@ public final class UpdateSystemUiKt {
             boolean isThemeLight = themeManager.isThemeLight();
             View rootView = ActivityExtensionsKt.getRootView(activity);
             if (rootView != null) {
-                WindowInsetsControllerCompat b10 = w0.b(activity.getWindow(), rootView);
+                WindowInsetsControllerCompat b10 = x0.b(activity.getWindow(), rootView);
                 Intrinsics.checkNotNullExpressionValue(b10, "getInsetsController(...)");
                 setLightTheme(b10, isThemeLight);
             }

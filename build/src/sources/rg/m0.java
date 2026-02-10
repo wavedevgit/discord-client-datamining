@@ -9,24 +9,24 @@ import java.util.RandomAccess;
 public abstract class m0 extends h0 implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final r1 f48542e = new k0(g1.f48213q, 0);
+    private static final r1 f46996e = new k0(g1.f46667q, 0);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final /* synthetic */ int f48543i = 0;
+    public static final /* synthetic */ int f46997i = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static m0 g(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return g1.f48213q;
+            return g1.f46667q;
         }
         return new g1(objArr, i10);
     }
 
-    public static m0 h() {
-        return g1.f48213q;
+    public static m0 i() {
+        return g1.f46667q;
     }
 
-    public static m0 i(Object obj, Object obj2) {
+    public static m0 j(Object obj, Object obj2) {
         Object[] objArr = {obj, obj2};
         for (int i10 = 0; i10 < 2; i10++) {
             if (objArr[i10] == null) {
@@ -137,7 +137,7 @@ public abstract class m0 extends h0 implements List, RandomAccess {
             return this;
         }
         if (i12 == 0) {
-            return g1.f48213q;
+            return g1.f46667q;
         }
         return new l0(this, i10, i12);
     }
@@ -172,11 +172,11 @@ public abstract class m0 extends h0 implements List, RandomAccess {
     }
 
     @Override // java.util.List
-    /* renamed from: j */
+    /* renamed from: k */
     public final r1 listIterator(int i10) {
         el.b(i10, size(), "index");
         if (isEmpty()) {
-            return f48542e;
+            return f46996e;
         }
         return new k0(this, i10);
     }

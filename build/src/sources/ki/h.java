@@ -1,10 +1,22 @@
 package ki;
 
 import java.io.File;
-import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface h {
-    boolean a(ClassLoader classLoader, File file, File file2, boolean z10);
+final class h implements m {
 
-    void b(ClassLoader classLoader, Set set);
+    /* renamed from: a  reason: collision with root package name */
+    final /* synthetic */ i f31755a;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public h(i iVar) {
+        this.f31755a = iVar;
+    }
+
+    @Override // ki.m
+    public final void a(n nVar, File file, boolean z10) {
+        this.f31755a.f31757b.add(file);
+        if (!z10) {
+            this.f31755a.f31758c.set(false);
+        }
+    }
 }

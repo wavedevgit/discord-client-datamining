@@ -1,56 +1,56 @@
 package com.google.android.material.appbar;
 
 import android.view.View;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f14650a;
+    private final View f15226a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f14651b;
+    private int f15227b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f14652c;
+    private int f15228c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f14653d;
+    private int f15229d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f14654e;
+    private int f15230e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f14655f = true;
+    private boolean f15231f = true;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f14656g = true;
+    private boolean f15232g = true;
 
     public f(View view) {
-        this.f14650a = view;
+        this.f15226a = view;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a() {
-        View view = this.f14650a;
-        h0.Y(view, this.f14653d - (view.getTop() - this.f14651b));
-        View view2 = this.f14650a;
-        h0.X(view2, this.f14654e - (view2.getLeft() - this.f14652c));
+        View view = this.f15226a;
+        i0.V(view, this.f15229d - (view.getTop() - this.f15227b));
+        View view2 = this.f15226a;
+        i0.U(view2, this.f15230e - (view2.getLeft() - this.f15228c));
     }
 
     public int b() {
-        return this.f14653d;
+        return this.f15229d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c() {
-        this.f14651b = this.f14650a.getTop();
-        this.f14652c = this.f14650a.getLeft();
+        this.f15227b = this.f15226a.getTop();
+        this.f15228c = this.f15226a.getLeft();
     }
 
     public boolean d(int i10) {
-        if (this.f14656g && this.f14654e != i10) {
-            this.f14654e = i10;
+        if (this.f15232g && this.f15230e != i10) {
+            this.f15230e = i10;
             a();
             return true;
         }
@@ -58,8 +58,8 @@ class f {
     }
 
     public boolean e(int i10) {
-        if (this.f14655f && this.f14653d != i10) {
-            this.f14653d = i10;
+        if (this.f15231f && this.f15229d != i10) {
+            this.f15229d = i10;
             a();
             return true;
         }

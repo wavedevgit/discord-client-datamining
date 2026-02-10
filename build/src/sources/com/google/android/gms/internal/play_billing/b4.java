@@ -9,30 +9,30 @@ import java.util.RandomAccess;
 public final class b4 extends AbstractList implements RandomAccess, e2 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final e2 f14296d;
+    private final e2 f14873d;
 
     public b4(e2 e2Var) {
-        this.f14296d = e2Var;
+        this.f14873d = e2Var;
     }
 
     @Override // com.google.android.gms.internal.play_billing.e2
     public final Object Z(int i10) {
-        return this.f14296d.Z(i10);
+        return this.f14873d.Z(i10);
     }
 
     @Override // java.util.AbstractList, java.util.List
     public final /* bridge */ /* synthetic */ Object get(int i10) {
-        return ((d2) this.f14296d).get(i10);
+        return ((d2) this.f14873d).get(i10);
+    }
+
+    @Override // com.google.android.gms.internal.play_billing.e2
+    public final e2 h() {
+        return this;
     }
 
     @Override // java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.List
     public final Iterator iterator() {
         return new a4(this);
-    }
-
-    @Override // com.google.android.gms.internal.play_billing.e2
-    public final e2 k() {
-        return this;
     }
 
     @Override // java.util.AbstractList, java.util.List
@@ -42,11 +42,11 @@ public final class b4 extends AbstractList implements RandomAccess, e2 {
 
     @Override // com.google.android.gms.internal.play_billing.e2
     public final List n() {
-        return this.f14296d.n();
+        return this.f14873d.n();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f14296d.size();
+        return this.f14873d.size();
     }
 }

@@ -13,12 +13,12 @@ import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.z;
 import com.withpersona.sdk2.inquiry.network.dto.RgbaHexColor;
+import hs.a;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import yr.a;
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0014\u0018\u0000 \u00042\u00020\u0001:\u0011\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0015"}, d2 = {"Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements;", "", "<init>", "()V", "Companion", "Size", "Measurement", "MeasurementSet", "Position", "DPSize", "SizeSet", "SimpleElementColor", "SimpleElementColorValue", "ComplexElementColor", "PositionType", "FontName", "FontWeightContainer", "FontWeight", "ChildSizes", "AxisContainer", "Axis", "network-inquiry_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class StyleElements {
@@ -207,7 +207,7 @@ public final class StyleElements {
         /* JADX INFO: Access modifiers changed from: private */
         public final String getStringFromJsonReader(m mVar) {
             if (mVar.s() != m.c.NULL) {
-                return mVar.b1();
+                return mVar.g1();
             }
             mVar.T();
             return null;
@@ -366,7 +366,7 @@ public final class StyleElements {
     public static final class DPSize implements Parcelable, Size {
 
         /* renamed from: dp  reason: collision with root package name */
-        private final Double f19548dp;
+        private final Double f20428dp;
         @NotNull
         public static final Companion Companion = new Companion(null);
         @NotNull
@@ -445,7 +445,7 @@ public final class StyleElements {
         }
 
         public DPSize(Double d10) {
-            this.f19548dp = d10;
+            this.f20428dp = d10;
         }
 
         @Override // android.os.Parcelable
@@ -455,13 +455,13 @@ public final class StyleElements {
 
         @Override // com.withpersona.sdk2.inquiry.network.dto.ui.styling.StyleElements.Size
         public Double getDp() {
-            return this.f19548dp;
+            return this.f20428dp;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(@NotNull Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            Double d10 = this.f19548dp;
+            Double d10 = this.f20428dp;
             if (d10 == null) {
                 dest.writeInt(0);
                 return;

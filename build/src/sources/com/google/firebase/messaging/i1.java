@@ -19,40 +19,40 @@ import java.util.concurrent.TimeUnit;
 class i1 implements ServiceConnection {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f16611d;
+    private final Context f17360d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Intent f16612e;
+    private final Intent f17361e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ScheduledExecutorService f16613i;
+    private final ScheduledExecutorService f17362i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Queue f16614o;
+    private final Queue f17363o;
 
     /* renamed from: p  reason: collision with root package name */
-    private f1 f16615p;
+    private f1 f17364p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f16616q;
+    private boolean f17365q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final Intent f16617a;
+        final Intent f17366a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final zg.k f16618b = new zg.k();
+        private final zg.k f17367b = new zg.k();
 
         a(Intent intent) {
-            this.f16617a = intent;
+            this.f17366a = intent;
         }
 
         public static /* synthetic */ void b(a aVar) {
             aVar.getClass();
-            Log.w("FirebaseMessaging", "Service took too long to process intent: " + aVar.f16617a.getAction() + " finishing.");
+            Log.w("FirebaseMessaging", "Service took too long to process intent: " + aVar.f17366a.getAction() + " finishing.");
             aVar.d();
         }
 
@@ -73,11 +73,11 @@ class i1 implements ServiceConnection {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public void d() {
-            this.f16618b.e(null);
+            this.f17367b.e(null);
         }
 
         Task e() {
-            return this.f16618b.a();
+            return this.f17367b.a();
         }
     }
 
@@ -87,8 +87,8 @@ class i1 implements ServiceConnection {
     }
 
     private void a() {
-        while (!this.f16614o.isEmpty()) {
-            ((a) this.f16614o.poll()).d();
+        while (!this.f17363o.isEmpty()) {
+            ((a) this.f17363o.poll()).d();
         }
     }
 
@@ -97,16 +97,16 @@ class i1 implements ServiceConnection {
             if (Log.isLoggable("FirebaseMessaging", 3)) {
                 Log.d("FirebaseMessaging", "flush queue called");
             }
-            while (!this.f16614o.isEmpty()) {
+            while (!this.f17363o.isEmpty()) {
                 if (Log.isLoggable("FirebaseMessaging", 3)) {
                     Log.d("FirebaseMessaging", "found intent to be delivered");
                 }
-                f1 f1Var = this.f16615p;
+                f1 f1Var = this.f17364p;
                 if (f1Var != null && f1Var.isBinderAlive()) {
                     if (Log.isLoggable("FirebaseMessaging", 3)) {
                         Log.d("FirebaseMessaging", "binder is alive, sending the intent.");
                     }
-                    this.f16615p.b((a) this.f16614o.poll());
+                    this.f17364p.b((a) this.f17363o.poll());
                 } else {
                     d();
                     return;
@@ -121,20 +121,20 @@ class i1 implements ServiceConnection {
         if (Log.isLoggable("FirebaseMessaging", 3)) {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("binder is dead. start connection? ");
-            sb2.append(!this.f16616q);
+            sb2.append(!this.f17365q);
             Log.d("FirebaseMessaging", sb2.toString());
         }
-        if (!this.f16616q) {
-            this.f16616q = true;
+        if (!this.f17365q) {
+            this.f17365q = true;
             try {
             } catch (SecurityException e10) {
                 Log.e("FirebaseMessaging", "Exception while binding the service", e10);
             }
-            if (of.a.b().a(this.f16611d, this.f16612e, this, 65)) {
+            if (of.a.b().a(this.f17360d, this.f17361e, this, 65)) {
                 return;
             }
             Log.e("FirebaseMessaging", "binding to the service failed");
-            this.f16616q = false;
+            this.f17365q = false;
             a();
         }
     }
@@ -147,8 +147,8 @@ class i1 implements ServiceConnection {
                 Log.d("FirebaseMessaging", "new intent queued in the bind-strategy delivery");
             }
             aVar = new a(intent);
-            aVar.c(this.f16613i);
-            this.f16614o.add(aVar);
+            aVar.c(this.f17362i);
+            this.f17363o.add(aVar);
             b();
         } catch (Throwable th2) {
             throw th2;
@@ -162,13 +162,13 @@ class i1 implements ServiceConnection {
             if (Log.isLoggable("FirebaseMessaging", 3)) {
                 Log.d("FirebaseMessaging", "onServiceConnected: " + componentName);
             }
-            this.f16616q = false;
+            this.f17365q = false;
             if (!(iBinder instanceof f1)) {
                 Log.e("FirebaseMessaging", "Invalid service connection: " + iBinder);
                 a();
                 return;
             }
-            this.f16615p = (f1) iBinder;
+            this.f17364p = (f1) iBinder;
             b();
         } catch (Throwable th2) {
             throw th2;
@@ -184,11 +184,11 @@ class i1 implements ServiceConnection {
     }
 
     i1(Context context, String str, ScheduledExecutorService scheduledExecutorService) {
-        this.f16614o = new ArrayDeque();
-        this.f16616q = false;
+        this.f17363o = new ArrayDeque();
+        this.f17365q = false;
         Context applicationContext = context.getApplicationContext();
-        this.f16611d = applicationContext;
-        this.f16612e = new Intent(str).setPackage(applicationContext.getPackageName());
-        this.f16613i = scheduledExecutorService;
+        this.f17360d = applicationContext;
+        this.f17361e = new Intent(str).setPackage(applicationContext.getPackageName());
+        this.f17362i = scheduledExecutorService;
     }
 }

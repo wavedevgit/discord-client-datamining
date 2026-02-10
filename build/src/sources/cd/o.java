@@ -5,54 +5,54 @@ import com.google.android.exoplayer2.Format;
 public final class o {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f7487a;
+    public final int f8168a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f7488b;
+    public final int f8169b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final long f7489c;
+    public final long f8170c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f7490d;
+    public final long f8171d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f7491e;
+    public final long f8172e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final Format f7492f;
+    public final Format f8173f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final int f7493g;
+    public final int f8174g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final long[] f7494h;
+    public final long[] f8175h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final long[] f7495i;
+    public final long[] f8176i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final int f7496j;
+    public final int f8177j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final p[] f7497k;
+    private final p[] f8178k;
 
     public o(int i10, int i11, long j10, long j11, long j12, Format format, int i12, p[] pVarArr, int i13, long[] jArr, long[] jArr2) {
-        this.f7487a = i10;
-        this.f7488b = i11;
-        this.f7489c = j10;
-        this.f7490d = j11;
-        this.f7491e = j12;
-        this.f7492f = format;
-        this.f7493g = i12;
-        this.f7497k = pVarArr;
-        this.f7496j = i13;
-        this.f7494h = jArr;
-        this.f7495i = jArr2;
+        this.f8168a = i10;
+        this.f8169b = i11;
+        this.f8170c = j10;
+        this.f8171d = j11;
+        this.f8172e = j12;
+        this.f8173f = format;
+        this.f8174g = i12;
+        this.f8178k = pVarArr;
+        this.f8177j = i13;
+        this.f8175h = jArr;
+        this.f8176i = jArr2;
     }
 
     public p a(int i10) {
-        p[] pVarArr = this.f7497k;
+        p[] pVarArr = this.f8178k;
         if (pVarArr == null) {
             return null;
         }

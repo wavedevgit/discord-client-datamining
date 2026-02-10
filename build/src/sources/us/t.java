@@ -1,59 +1,22 @@
 package us;
 
-import java.util.Iterator;
 import java.util.List;
-import java.util.ServiceLoader;
-import ps.c1;
+import kotlin.jvm.functions.Function0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class t {
+public class t implements Function0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final t f51819a;
+    /* renamed from: d  reason: collision with root package name */
+    private final a0 f51144d;
 
-    /* renamed from: b  reason: collision with root package name */
-    public static final c1 f51820b;
-
-    static {
-        t tVar = new t();
-        f51819a = tVar;
-        f0.f("kotlinx.coroutines.fast.service.loader", true);
-        f51820b = tVar.a();
+    public t(a0 a0Var) {
+        this.f51144d = a0Var;
     }
 
-    private t() {
-    }
-
-    private final c1 a() {
-        Object next;
-        c1 e10;
-        try {
-            List Y = kotlin.sequences.k.Y(kotlin.sequences.k.h(ServiceLoader.load(s.class, s.class.getClassLoader()).iterator()));
-            Iterator it = Y.iterator();
-            if (!it.hasNext()) {
-                next = null;
-            } else {
-                next = it.next();
-                if (it.hasNext()) {
-                    int c10 = ((s) next).c();
-                    do {
-                        Object next2 = it.next();
-                        int c11 = ((s) next2).c();
-                        if (c10 < c11) {
-                            next = next2;
-                            c10 = c11;
-                        }
-                    } while (it.hasNext());
-                }
-            }
-            s sVar = (s) next;
-            if (sVar != null && (e10 = u.e(sVar, Y)) != null) {
-                return e10;
-            }
-            u.b(null, null, 3, null);
-            return null;
-        } catch (Throwable th2) {
-            u.b(th2, null, 2, null);
-            return null;
-        }
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        List k10;
+        k10 = a0.k(this.f51144d);
+        return k10;
     }
 }

@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     });
     var11 = function arg0() {
-        _fun44000: for (var _fun44000_ip = 0;;) switch (_fun44000_ip) {
+        _fun44053: for (var _fun44053_ip = 0;;) switch (_fun44053_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = arg0;
                 var1 = var1[var0];
                 if (!(var2 === var1)) {
-                    _fun44000_ip = 65;
-                    continue _fun44000
+                    _fun44053_ip = 65;
+                    continue _fun44053
                 }
             case 42:
                 var0 = global;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.resolve;
                 var0 = {};
                 var0 = var3.bind(var4)(var0);
-                _fun44000_ip = 86;
-                continue _fun44000;
+                _fun44053_ip = 86;
+                continue _fun44053;
             case 65:
                 var3 = var1.bind(var2)();
                 var2 = var3.then;
@@ -83,20 +83,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.setEmojiLocale = var6;
     var3 = function arg0() {
-        _fun44003: for (var _fun44003_ip = 0;;) switch (_fun44003_ip) {
+        _fun44056: for (var _fun44056_ip = 0;;) switch (_fun44056_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var0 = var1.get;
                 var2 = var0.bind(var1)();
                 var0 = undefined;
                 if (!(var0 === var2)) {
-                    _fun44003_ip = 28;
-                    continue _fun44003
+                    _fun44056_ip = 28;
+                    continue _fun44056
                 }
             case 22:
                 var0 = new Array(0);
-                _fun44003_ip = 35;
-                continue _fun44003;
+                _fun44056_ip = 35;
+                continue _fun44056;
             case 28:
                 var1 = arg0;
                 var0 = var2[var1];
@@ -113,4 +113,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 4748, 4749, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 4758, 4759, 2]);

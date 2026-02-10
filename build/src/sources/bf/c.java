@@ -10,10 +10,10 @@ import org.jetbrains.annotations.NotNull;
 public final class c extends jf.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Bundle f6590d;
+    private final Bundle f6696d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f6589e = new a(null);
+    public static final a f6695e = new a(null);
     @NotNull
     public static final Parcelable.Creator<c> CREATOR = new d();
 
@@ -29,11 +29,11 @@ public final class c extends jf.a {
 
     public c(Bundle responseBundle) {
         Intrinsics.checkNotNullParameter(responseBundle, "responseBundle");
-        this.f6590d = responseBundle;
+        this.f6696d = responseBundle;
     }
 
     public final Bundle b() {
-        return this.f6590d;
+        return this.f6696d;
     }
 
     @Override // android.os.Parcelable

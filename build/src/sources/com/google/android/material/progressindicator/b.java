@@ -3,54 +3,92 @@ package com.google.android.material.progressindicator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import bh.k;
-import com.google.android.material.internal.l;
+import android.util.TypedValue;
+import bh.l;
+import com.google.android.material.internal.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public int f15362a;
+    public int f16070a;
 
     /* renamed from: b  reason: collision with root package name */
-    public int f15363b;
+    public int f16071b;
 
     /* renamed from: c  reason: collision with root package name */
-    public int[] f15364c = new int[0];
+    public float f16072c;
 
     /* renamed from: d  reason: collision with root package name */
-    public int f15365d;
+    public boolean f16073d;
 
     /* renamed from: e  reason: collision with root package name */
-    public int f15366e;
+    public int[] f16074e = new int[0];
 
     /* renamed from: f  reason: collision with root package name */
-    public int f15367f;
+    public int f16075f;
 
     /* renamed from: g  reason: collision with root package name */
-    public int f15368g;
+    public int f16076g;
+
+    /* renamed from: h  reason: collision with root package name */
+    public int f16077h;
+
+    /* renamed from: i  reason: collision with root package name */
+    public int f16078i;
+
+    /* renamed from: j  reason: collision with root package name */
+    public int f16079j;
+
+    /* renamed from: k  reason: collision with root package name */
+    public int f16080k;
+
+    /* renamed from: l  reason: collision with root package name */
+    public int f16081l;
+
+    /* renamed from: m  reason: collision with root package name */
+    public int f16082m;
+
+    /* renamed from: n  reason: collision with root package name */
+    public float f16083n;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public b(Context context, AttributeSet attributeSet, int i10, int i11) {
-        int dimensionPixelSize = context.getResources().getDimensionPixelSize(bh.d.f6666b0);
-        TypedArray i12 = l.i(context, attributeSet, k.G, i10, i11, new int[0]);
-        this.f15362a = oh.c.c(context, i12, k.P, dimensionPixelSize);
-        this.f15363b = Math.min(oh.c.c(context, i12, k.O, 0), this.f15362a / 2);
-        this.f15366e = i12.getInt(k.L, 0);
-        this.f15367f = i12.getInt(k.H, 0);
-        this.f15368g = i12.getDimensionPixelSize(k.J, 0);
-        c(context, i12);
-        d(context, i12);
+        int dimensionPixelSize = context.getResources().getDimensionPixelSize(bh.d.f6815u0);
+        TypedArray i12 = m.i(context, attributeSet, l.S, i10, i11, new int[0]);
+        this.f16070a = qh.c.d(context, i12, l.f6973c0, dimensionPixelSize);
+        TypedValue peekValue = i12.peekValue(l.f6963b0);
+        if (peekValue != null) {
+            int i13 = peekValue.type;
+            if (i13 == 5) {
+                this.f16071b = Math.min(TypedValue.complexToDimensionPixelSize(peekValue.data, i12.getResources().getDisplayMetrics()), this.f16070a / 2);
+                this.f16073d = false;
+            } else if (i13 == 6) {
+                this.f16072c = Math.min(peekValue.getFraction(1.0f, 1.0f), 0.5f);
+                this.f16073d = true;
+            }
+        }
+        this.f16076g = i12.getInt(l.Y, 0);
+        this.f16077h = i12.getInt(l.T, 0);
+        this.f16078i = i12.getDimensionPixelSize(l.W, 0);
+        int abs = Math.abs(i12.getDimensionPixelSize(l.f7003f0, 0));
+        this.f16079j = Math.abs(i12.getDimensionPixelSize(l.f7013g0, abs));
+        this.f16080k = Math.abs(i12.getDimensionPixelSize(l.f7023h0, abs));
+        this.f16081l = Math.abs(i12.getDimensionPixelSize(l.f6983d0, 0));
+        this.f16082m = i12.getDimensionPixelSize(l.f6993e0, 0);
+        this.f16083n = i12.getFloat(l.U, 1.0f);
+        e(context, i12);
+        f(context, i12);
         i12.recycle();
     }
 
-    private void c(Context context, TypedArray typedArray) {
-        if (!typedArray.hasValue(k.I)) {
-            this.f15364c = new int[]{hh.a.b(context, bh.b.f6638l, -1)};
-        } else if (typedArray.peekValue(k.I).type != 1) {
-            this.f15364c = new int[]{typedArray.getColor(k.I, -1)};
+    private void e(Context context, TypedArray typedArray) {
+        if (!typedArray.hasValue(l.V)) {
+            this.f16074e = new int[]{jh.a.b(context, f.a.f23298w, -1)};
+        } else if (typedArray.peekValue(l.V).type != 1) {
+            this.f16074e = new int[]{typedArray.getColor(l.V, -1)};
         } else {
-            int[] intArray = context.getResources().getIntArray(typedArray.getResourceId(k.I, -1));
-            this.f15364c = intArray;
+            int[] intArray = context.getResources().getIntArray(typedArray.getResourceId(l.V, -1));
+            this.f16074e = intArray;
             if (intArray.length != 0) {
                 return;
             }
@@ -58,35 +96,62 @@ public abstract class b {
         }
     }
 
-    private void d(Context context, TypedArray typedArray) {
-        if (typedArray.hasValue(k.N)) {
-            this.f15365d = typedArray.getColor(k.N, -1);
+    private void f(Context context, TypedArray typedArray) {
+        if (typedArray.hasValue(l.f6953a0)) {
+            this.f16075f = typedArray.getColor(l.f6953a0, -1);
             return;
         }
-        this.f15365d = this.f15364c[0];
+        this.f16075f = this.f16074e[0];
         TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(new int[]{16842803});
         float f10 = obtainStyledAttributes.getFloat(0, 0.2f);
         obtainStyledAttributes.recycle();
-        this.f15365d = hh.a.a(this.f15365d, (int) (f10 * 255.0f));
+        this.f16075f = jh.a.a(this.f16075f, (int) (f10 * 255.0f));
     }
 
-    public boolean a() {
-        if (this.f15367f != 0) {
+    public int a() {
+        if (this.f16073d) {
+            return (int) (this.f16070a * this.f16072c);
+        }
+        return this.f16071b;
+    }
+
+    public boolean b(boolean z10) {
+        if (this.f16081l > 0) {
+            if (z10 || this.f16080k <= 0) {
+                if (z10 && this.f16079j > 0) {
+                    return true;
+                }
+                return false;
+            }
             return true;
         }
         return false;
     }
 
-    public boolean b() {
-        if (this.f15366e != 0) {
+    public boolean c() {
+        if (this.f16077h != 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean d() {
+        if (this.f16076g != 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean g() {
+        if (this.f16073d && this.f16072c == 0.5f) {
             return true;
         }
         return false;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void e() {
-        if (this.f15368g >= 0) {
+    public void h() {
+        if (this.f16078i >= 0) {
             return;
         }
         throw new IllegalArgumentException("indicatorTrackGapSize must be >= 0.");

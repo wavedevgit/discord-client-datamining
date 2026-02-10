@@ -14,49 +14,49 @@ import java.util.Arrays;
 public class j extends Drawable implements h {
 
     /* renamed from: i  reason: collision with root package name */
-    float[] f10094i;
+    float[] f10671i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float[] f10092d = new float[8];
+    private final float[] f10669d = new float[8];
 
     /* renamed from: e  reason: collision with root package name */
-    final float[] f10093e = new float[8];
+    final float[] f10670e = new float[8];
 
     /* renamed from: o  reason: collision with root package name */
-    final Paint f10095o = new Paint(1);
+    final Paint f10672o = new Paint(1);
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f10096p = false;
+    private boolean f10673p = false;
 
     /* renamed from: q  reason: collision with root package name */
-    private float f10097q = 0.0f;
+    private float f10674q = 0.0f;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f10098r = 0.0f;
+    private float f10675r = 0.0f;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f10099s = 0;
+    private int f10676s = 0;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f10100t = false;
+    private boolean f10677t = false;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f10101u = false;
+    private boolean f10678u = false;
 
     /* renamed from: v  reason: collision with root package name */
-    final Path f10102v = new Path();
+    final Path f10679v = new Path();
 
     /* renamed from: w  reason: collision with root package name */
-    final Path f10103w = new Path();
+    final Path f10680w = new Path();
 
     /* renamed from: x  reason: collision with root package name */
-    private int f10104x = 0;
+    private int f10681x = 0;
 
     /* renamed from: y  reason: collision with root package name */
-    private final RectF f10105y = new RectF();
+    private final RectF f10682y = new RectF();
 
     /* renamed from: z  reason: collision with root package name */
-    private int f10106z = SetSpanOperation.SPAN_MAX_PRIORITY;
+    private int f10683z = SetSpanOperation.SPAN_MAX_PRIORITY;
 
     public j(int i10) {
         j(i10);
@@ -70,71 +70,71 @@ public class j extends Drawable implements h {
         float[] fArr;
         float f10;
         float[] fArr2;
-        this.f10102v.reset();
-        this.f10103w.reset();
-        this.f10105y.set(getBounds());
-        RectF rectF = this.f10105y;
-        float f11 = this.f10097q;
+        this.f10679v.reset();
+        this.f10680w.reset();
+        this.f10682y.set(getBounds());
+        RectF rectF = this.f10682y;
+        float f11 = this.f10674q;
         rectF.inset(f11 / 2.0f, f11 / 2.0f);
         int i10 = 0;
-        if (this.f10096p) {
-            this.f10103w.addCircle(this.f10105y.centerX(), this.f10105y.centerY(), Math.min(this.f10105y.width(), this.f10105y.height()) / 2.0f, Path.Direction.CW);
+        if (this.f10673p) {
+            this.f10680w.addCircle(this.f10682y.centerX(), this.f10682y.centerY(), Math.min(this.f10682y.width(), this.f10682y.height()) / 2.0f, Path.Direction.CW);
         } else {
             int i11 = 0;
             while (true) {
-                fArr = this.f10093e;
+                fArr = this.f10670e;
                 if (i11 >= fArr.length) {
                     break;
                 }
-                fArr[i11] = (this.f10092d[i11] + this.f10098r) - (this.f10097q / 2.0f);
+                fArr[i11] = (this.f10669d[i11] + this.f10675r) - (this.f10674q / 2.0f);
                 i11++;
             }
-            this.f10103w.addRoundRect(this.f10105y, fArr, Path.Direction.CW);
+            this.f10680w.addRoundRect(this.f10682y, fArr, Path.Direction.CW);
         }
-        RectF rectF2 = this.f10105y;
-        float f12 = this.f10097q;
+        RectF rectF2 = this.f10682y;
+        float f12 = this.f10674q;
         rectF2.inset((-f12) / 2.0f, (-f12) / 2.0f);
-        float f13 = this.f10098r;
-        if (this.f10100t) {
-            f10 = this.f10097q;
+        float f13 = this.f10675r;
+        if (this.f10677t) {
+            f10 = this.f10674q;
         } else {
             f10 = 0.0f;
         }
         float f14 = f13 + f10;
-        this.f10105y.inset(f14, f14);
-        if (this.f10096p) {
-            this.f10102v.addCircle(this.f10105y.centerX(), this.f10105y.centerY(), Math.min(this.f10105y.width(), this.f10105y.height()) / 2.0f, Path.Direction.CW);
-        } else if (this.f10100t) {
-            if (this.f10094i == null) {
-                this.f10094i = new float[8];
+        this.f10682y.inset(f14, f14);
+        if (this.f10673p) {
+            this.f10679v.addCircle(this.f10682y.centerX(), this.f10682y.centerY(), Math.min(this.f10682y.width(), this.f10682y.height()) / 2.0f, Path.Direction.CW);
+        } else if (this.f10677t) {
+            if (this.f10671i == null) {
+                this.f10671i = new float[8];
             }
             while (true) {
-                fArr2 = this.f10094i;
+                fArr2 = this.f10671i;
                 if (i10 >= fArr2.length) {
                     break;
                 }
-                fArr2[i10] = this.f10092d[i10] - this.f10097q;
+                fArr2[i10] = this.f10669d[i10] - this.f10674q;
                 i10++;
             }
-            this.f10102v.addRoundRect(this.f10105y, fArr2, Path.Direction.CW);
+            this.f10679v.addRoundRect(this.f10682y, fArr2, Path.Direction.CW);
         } else {
-            this.f10102v.addRoundRect(this.f10105y, this.f10092d, Path.Direction.CW);
+            this.f10679v.addRoundRect(this.f10682y, this.f10669d, Path.Direction.CW);
         }
         float f15 = -f14;
-        this.f10105y.inset(f15, f15);
+        this.f10682y.inset(f15, f15);
     }
 
     @Override // com.facebook.drawee.drawable.h
     public void a(boolean z10) {
-        this.f10096p = z10;
+        this.f10673p = z10;
         k();
         invalidateSelf();
     }
 
     @Override // com.facebook.drawee.drawable.h
     public void b(float f10) {
-        if (this.f10098r != f10) {
-            this.f10098r = f10;
+        if (this.f10675r != f10) {
+            this.f10675r = f10;
             k();
             invalidateSelf();
         }
@@ -149,7 +149,7 @@ public class j extends Drawable implements h {
             z10 = false;
         }
         p8.j.c(z10, "radius should be non negative");
-        Arrays.fill(this.f10092d, f10);
+        Arrays.fill(this.f10669d, f10);
         k();
         invalidateSelf();
     }
@@ -160,30 +160,30 @@ public class j extends Drawable implements h {
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
-        this.f10095o.setColor(d.c(this.f10104x, this.f10106z));
-        this.f10095o.setStyle(Paint.Style.FILL);
-        this.f10095o.setFilterBitmap(i());
-        canvas.drawPath(this.f10102v, this.f10095o);
-        if (this.f10097q != 0.0f) {
-            this.f10095o.setColor(d.c(this.f10099s, this.f10106z));
-            this.f10095o.setStyle(Paint.Style.STROKE);
-            this.f10095o.setStrokeWidth(this.f10097q);
-            canvas.drawPath(this.f10103w, this.f10095o);
+        this.f10672o.setColor(d.c(this.f10681x, this.f10683z));
+        this.f10672o.setStyle(Paint.Style.FILL);
+        this.f10672o.setFilterBitmap(i());
+        canvas.drawPath(this.f10679v, this.f10672o);
+        if (this.f10674q != 0.0f) {
+            this.f10672o.setColor(d.c(this.f10676s, this.f10683z));
+            this.f10672o.setStyle(Paint.Style.STROKE);
+            this.f10672o.setStrokeWidth(this.f10674q);
+            canvas.drawPath(this.f10680w, this.f10672o);
         }
     }
 
     @Override // com.facebook.drawee.drawable.h
     public void e(boolean z10) {
-        if (this.f10101u != z10) {
-            this.f10101u = z10;
+        if (this.f10678u != z10) {
+            this.f10678u = z10;
             invalidateSelf();
         }
     }
 
     @Override // com.facebook.drawee.drawable.h
     public void f(boolean z10) {
-        if (this.f10100t != z10) {
-            this.f10100t = z10;
+        if (this.f10677t != z10) {
+            this.f10677t = z10;
             k();
             invalidateSelf();
         }
@@ -191,19 +191,19 @@ public class j extends Drawable implements h {
 
     @Override // android.graphics.drawable.Drawable
     public int getAlpha() {
-        return this.f10106z;
+        return this.f10683z;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getOpacity() {
-        return d.b(d.c(this.f10104x, this.f10106z));
+        return d.b(d.c(this.f10681x, this.f10683z));
     }
 
     @Override // com.facebook.drawee.drawable.h
     public void h(float[] fArr) {
         boolean z10;
         if (fArr == null) {
-            Arrays.fill(this.f10092d, 0.0f);
+            Arrays.fill(this.f10669d, 0.0f);
         } else {
             if (fArr.length == 8) {
                 z10 = true;
@@ -211,19 +211,19 @@ public class j extends Drawable implements h {
                 z10 = false;
             }
             p8.j.c(z10, "radii should have exactly 8 values");
-            System.arraycopy(fArr, 0, this.f10092d, 0, 8);
+            System.arraycopy(fArr, 0, this.f10669d, 0, 8);
         }
         k();
         invalidateSelf();
     }
 
     public boolean i() {
-        return this.f10101u;
+        return this.f10678u;
     }
 
     public void j(int i10) {
-        if (this.f10104x != i10) {
-            this.f10104x = i10;
+        if (this.f10681x != i10) {
+            this.f10681x = i10;
             invalidateSelf();
         }
     }
@@ -236,20 +236,20 @@ public class j extends Drawable implements h {
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        if (i10 != this.f10106z) {
-            this.f10106z = i10;
+        if (i10 != this.f10683z) {
+            this.f10683z = i10;
             invalidateSelf();
         }
     }
 
     @Override // com.facebook.drawee.drawable.h
     public void setBorder(int i10, float f10) {
-        if (this.f10099s != i10) {
-            this.f10099s = i10;
+        if (this.f10676s != i10) {
+            this.f10676s = i10;
             invalidateSelf();
         }
-        if (this.f10097q != f10) {
-            this.f10097q = f10;
+        if (this.f10674q != f10) {
+            this.f10674q = f10;
             k();
             invalidateSelf();
         }

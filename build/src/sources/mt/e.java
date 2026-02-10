@@ -1,39 +1,43 @@
 package mt;
 
-import kotlin.Result;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class e {
+public final class e implements s {
 
-    /* renamed from: a */
-    private static final int f37527a;
+    /* renamed from: a  reason: collision with root package name */
+    private final l f36615a;
 
-    static {
-        Object b10;
-        int i10;
-        try {
-            Result.a aVar = Result.f31762e;
-            String property = System.getProperty("kotlinx.serialization.json.pool.size");
-            Intrinsics.checkNotNullExpressionValue(property, "getProperty(...)");
-            b10 = Result.b(StringsKt.toIntOrNull(property));
-        } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31762e;
-            b10 = Result.b(kotlin.c.a(th2));
-        }
-        if (Result.g(b10)) {
-            b10 = null;
-        }
-        Integer num = (Integer) b10;
-        if (num != null) {
-            i10 = num.intValue();
-        } else {
-            i10 = 2097152;
-        }
-        f37527a = i10;
+    public e(l directive) {
+        Intrinsics.checkNotNullParameter(directive, "directive");
+        this.f36615a = directive;
     }
 
-    public static final /* synthetic */ int a() {
-        return f37527a;
+    @Override // mt.o
+    public nt.e a() {
+        return this.f36615a.a();
+    }
+
+    @Override // mt.o
+    public ot.q b() {
+        return this.f36615a.b();
+    }
+
+    public final l c() {
+        return this.f36615a;
+    }
+
+    public boolean equals(Object obj) {
+        if ((obj instanceof e) && Intrinsics.areEqual(this.f36615a, ((e) obj).f36615a)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return this.f36615a.hashCode();
+    }
+
+    public String toString() {
+        return "BasicFormatStructure(" + this.f36615a + ')';
     }
 }

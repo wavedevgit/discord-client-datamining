@@ -55,34 +55,34 @@ public class OverridingUtil {
     public static final OverridingUtil DEFAULT;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final List f33854e = CollectionsKt.h1(ServiceLoader.load(ExternalOverridabilityCondition.class, ExternalOverridabilityCondition.class.getClassLoader()));
+    private static final List f34076e = CollectionsKt.h1(ServiceLoader.load(ExternalOverridabilityCondition.class, ExternalOverridabilityCondition.class.getClassLoader()));
 
     /* renamed from: f  reason: collision with root package name */
-    private static final KotlinTypeChecker.TypeConstructorEquality f33855f;
+    private static final KotlinTypeChecker.TypeConstructorEquality f34077f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final KotlinTypeRefiner f33856a;
+    private final KotlinTypeRefiner f34078a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final KotlinTypePreparator f33857b;
+    private final KotlinTypePreparator f34079b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final KotlinTypeChecker.TypeConstructorEquality f33858c;
+    private final KotlinTypeChecker.TypeConstructorEquality f34080c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function2 f33859d;
+    private final Function2 f34081d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class OverrideCompatibilityInfo {
 
         /* renamed from: c  reason: collision with root package name */
-        private static final OverrideCompatibilityInfo f33860c = new OverrideCompatibilityInfo(Result.OVERRIDABLE, "SUCCESS");
+        private static final OverrideCompatibilityInfo f34082c = new OverrideCompatibilityInfo(Result.OVERRIDABLE, "SUCCESS");
 
         /* renamed from: a  reason: collision with root package name */
-        private final Result f33861a;
+        private final Result f34083a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f33862b;
+        private final String f34084b;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public enum Result {
@@ -98,8 +98,8 @@ public class OverridingUtil {
             if (str == null) {
                 a(4);
             }
-            this.f33861a = result;
-            this.f33862b = str;
+            this.f34083a = result;
+            this.f34084b = str;
         }
 
         /* JADX WARN: Removed duplicated region for block: B:24:0x0038  */
@@ -228,7 +228,7 @@ public class OverridingUtil {
 
         @NotNull
         public static OverrideCompatibilityInfo success() {
-            OverrideCompatibilityInfo overrideCompatibilityInfo = f33860c;
+            OverrideCompatibilityInfo overrideCompatibilityInfo = f34082c;
             if (overrideCompatibilityInfo == null) {
                 a(0);
             }
@@ -237,7 +237,7 @@ public class OverridingUtil {
 
         @NotNull
         public Result getResult() {
-            Result result = this.f33861a;
+            Result result = this.f34083a;
             if (result == null) {
                 a(5);
             }
@@ -245,7 +245,7 @@ public class OverridingUtil {
         }
 
         public String toString() {
-            return this.f33861a + ": " + this.f33862b;
+            return this.f34083a + ": " + this.f34084b;
         }
     }
 
@@ -296,17 +296,17 @@ public class OverridingUtil {
     public static class c implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ DeclarationDescriptor f33864d;
+        final /* synthetic */ DeclarationDescriptor f34086d;
 
         c(DeclarationDescriptor declarationDescriptor) {
-            this.f33864d = declarationDescriptor;
+            this.f34086d = declarationDescriptor;
         }
 
         @Override // kotlin.jvm.functions.Function1
         /* renamed from: a */
         public Boolean invoke(CallableMemberDescriptor callableMemberDescriptor) {
             boolean z10;
-            if (callableMemberDescriptor.getContainingDeclaration() == this.f33864d) {
+            if (callableMemberDescriptor.getContainingDeclaration() == this.f34086d) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -333,17 +333,17 @@ public class OverridingUtil {
     public static class e implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ClassDescriptor f33865d;
+        final /* synthetic */ ClassDescriptor f34087d;
 
         e(ClassDescriptor classDescriptor) {
-            this.f33865d = classDescriptor;
+            this.f34087d = classDescriptor;
         }
 
         @Override // kotlin.jvm.functions.Function1
         /* renamed from: a */
         public Boolean invoke(CallableMemberDescriptor callableMemberDescriptor) {
             boolean z10 = false;
-            if (!DescriptorVisibilities.isPrivate(callableMemberDescriptor.getVisibility()) && DescriptorVisibilities.isVisibleIgnoringReceiver(callableMemberDescriptor, this.f33865d, false)) {
+            if (!DescriptorVisibilities.isPrivate(callableMemberDescriptor.getVisibility()) && DescriptorVisibilities.isVisibleIgnoringReceiver(callableMemberDescriptor, this.f34087d, false)) {
                 z10 = true;
             }
             return Boolean.valueOf(z10);
@@ -368,21 +368,21 @@ public class OverridingUtil {
     public static class g implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ OverridingStrategy f33866d;
+        final /* synthetic */ OverridingStrategy f34088d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ CallableMemberDescriptor f33867e;
+        final /* synthetic */ CallableMemberDescriptor f34089e;
 
         g(OverridingStrategy overridingStrategy, CallableMemberDescriptor callableMemberDescriptor) {
-            this.f33866d = overridingStrategy;
-            this.f33867e = callableMemberDescriptor;
+            this.f34088d = overridingStrategy;
+            this.f34089e = callableMemberDescriptor;
         }
 
         @Override // kotlin.jvm.functions.Function1
         /* renamed from: a */
         public Unit invoke(CallableMemberDescriptor callableMemberDescriptor) {
-            this.f33866d.inheritanceConflict(this.f33867e, callableMemberDescriptor);
-            return Unit.f31765a;
+            this.f34088d.inheritanceConflict(this.f34089e, callableMemberDescriptor);
+            return Unit.f31987a;
         }
     }
 
@@ -391,59 +391,59 @@ public class OverridingUtil {
     public static /* synthetic */ class h {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f33868a;
+        static final /* synthetic */ int[] f34090a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f33869b;
+        static final /* synthetic */ int[] f34091b;
 
         /* renamed from: c  reason: collision with root package name */
-        static final /* synthetic */ int[] f33870c;
+        static final /* synthetic */ int[] f34092c;
 
         static {
             int[] iArr = new int[Modality.values().length];
-            f33870c = iArr;
+            f34092c = iArr;
             try {
                 iArr[Modality.FINAL.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f33870c[Modality.SEALED.ordinal()] = 2;
+                f34092c[Modality.SEALED.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f33870c[Modality.OPEN.ordinal()] = 3;
+                f34092c[Modality.OPEN.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f33870c[Modality.ABSTRACT.ordinal()] = 4;
+                f34092c[Modality.ABSTRACT.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             int[] iArr2 = new int[OverrideCompatibilityInfo.Result.values().length];
-            f33869b = iArr2;
+            f34091b = iArr2;
             try {
                 iArr2[OverrideCompatibilityInfo.Result.OVERRIDABLE.ordinal()] = 1;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f33869b[OverrideCompatibilityInfo.Result.CONFLICT.ordinal()] = 2;
+                f34091b[OverrideCompatibilityInfo.Result.CONFLICT.ordinal()] = 2;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f33869b[OverrideCompatibilityInfo.Result.INCOMPATIBLE.ordinal()] = 3;
+                f34091b[OverrideCompatibilityInfo.Result.INCOMPATIBLE.ordinal()] = 3;
             } catch (NoSuchFieldError unused7) {
             }
             int[] iArr3 = new int[ExternalOverridabilityCondition.Result.values().length];
-            f33868a = iArr3;
+            f34090a = iArr3;
             try {
                 iArr3[ExternalOverridabilityCondition.Result.OVERRIDABLE.ordinal()] = 1;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f33868a[ExternalOverridabilityCondition.Result.INCOMPATIBLE.ordinal()] = 2;
+                f34090a[ExternalOverridabilityCondition.Result.INCOMPATIBLE.ordinal()] = 2;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f33868a[ExternalOverridabilityCondition.Result.UNKNOWN.ordinal()] = 3;
+                f34090a[ExternalOverridabilityCondition.Result.UNKNOWN.ordinal()] = 3;
             } catch (NoSuchFieldError unused10) {
             }
         }
@@ -451,7 +451,7 @@ public class OverridingUtil {
 
     static {
         a aVar = new a();
-        f33855f = aVar;
+        f34077f = aVar;
         DEFAULT = new OverridingUtil(aVar, KotlinTypeRefiner.Default.INSTANCE, KotlinTypePreparator.Default.INSTANCE, null);
     }
 
@@ -465,10 +465,10 @@ public class OverridingUtil {
         if (kotlinTypePreparator == null) {
             a(7);
         }
-        this.f33858c = typeConstructorEquality;
-        this.f33856a = kotlinTypeRefiner;
-        this.f33857b = kotlinTypePreparator;
-        this.f33859d = function2;
+        this.f34080c = typeConstructorEquality;
+        this.f34078a = kotlinTypeRefiner;
+        this.f34079b = kotlinTypePreparator;
+        this.f34081d = function2;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:107:0x01b0  */
@@ -649,7 +649,7 @@ public class OverridingUtil {
         if (kotlinTypeRefiner == null) {
             a(0);
         }
-        return new OverridingUtil(f33855f, kotlinTypeRefiner, KotlinTypePreparator.Default.INSTANCE, null);
+        return new OverridingUtil(f34077f, kotlinTypeRefiner, KotlinTypePreparator.Default.INSTANCE, null);
     }
 
     private static boolean d(KotlinType kotlinType, KotlinType kotlinType2, TypeCheckerState typeCheckerState) {
@@ -1057,7 +1057,7 @@ public class OverridingUtil {
             a(41);
         }
         if (list.isEmpty()) {
-            TypeCheckerState newTypeCheckerState = new OverridingUtilTypeSystemContext(null, this.f33858c, this.f33856a, this.f33857b, this.f33859d).newTypeCheckerState(true, true, false);
+            TypeCheckerState newTypeCheckerState = new OverridingUtilTypeSystemContext(null, this.f34080c, this.f34078a, this.f34079b, this.f34081d).newTypeCheckerState(true, true, false);
             if (newTypeCheckerState == null) {
                 a(42);
             }
@@ -1067,7 +1067,7 @@ public class OverridingUtil {
         for (int i10 = 0; i10 < list.size(); i10++) {
             hashMap.put(((TypeParameterDescriptor) list.get(i10)).getTypeConstructor(), ((TypeParameterDescriptor) list2.get(i10)).getTypeConstructor());
         }
-        TypeCheckerState newTypeCheckerState2 = new OverridingUtilTypeSystemContext(hashMap, this.f33858c, this.f33856a, this.f33857b, this.f33859d).newTypeCheckerState(true, true, false);
+        TypeCheckerState newTypeCheckerState2 = new OverridingUtilTypeSystemContext(hashMap, this.f34080c, this.f34078a, this.f34079b, this.f34081d).newTypeCheckerState(true, true, false);
         if (newTypeCheckerState2 == null) {
             a(43);
         }
@@ -1088,7 +1088,7 @@ public class OverridingUtil {
         boolean z12 = false;
         while (it.hasNext()) {
             CallableMemberDescriptor callableMemberDescriptor = (CallableMemberDescriptor) it.next();
-            int i10 = h.f33870c[callableMemberDescriptor.getModality().ordinal()];
+            int i10 = h.f34092c[callableMemberDescriptor.getModality().ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
@@ -1158,7 +1158,7 @@ public class OverridingUtil {
             CallableMemberDescriptor callableMemberDescriptor2 = (CallableMemberDescriptor) it.next();
             OverrideCompatibilityInfo.Result result = isOverridableBy(callableMemberDescriptor2, callableMemberDescriptor, classDescriptor).getResult();
             boolean isVisibleForOverride = isVisibleForOverride(callableMemberDescriptor, callableMemberDescriptor2, false);
-            int i10 = h.f33869b[result.ordinal()];
+            int i10 = h.f34091b[result.ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
                     if (isVisibleForOverride) {
@@ -1526,9 +1526,9 @@ public class OverridingUtil {
         }
         OverrideCompatibilityInfo isOverridableByWithoutExternalConditions = isOverridableByWithoutExternalConditions(callableDescriptor, callableDescriptor2, z10);
         boolean z11 = isOverridableByWithoutExternalConditions.getResult() == OverrideCompatibilityInfo.Result.OVERRIDABLE;
-        for (ExternalOverridabilityCondition externalOverridabilityCondition : f33854e) {
+        for (ExternalOverridabilityCondition externalOverridabilityCondition : f34076e) {
             if (externalOverridabilityCondition.getContract() != ExternalOverridabilityCondition.Contract.CONFLICTS_ONLY && (!z11 || externalOverridabilityCondition.getContract() != ExternalOverridabilityCondition.Contract.SUCCESS_ONLY)) {
-                int i10 = h.f33868a[externalOverridabilityCondition.isOverridable(callableDescriptor, callableDescriptor2, classDescriptor).ordinal()];
+                int i10 = h.f34090a[externalOverridabilityCondition.isOverridable(callableDescriptor, callableDescriptor2, classDescriptor).ordinal()];
                 if (i10 == 1) {
                     z11 = true;
                 } else if (i10 == 2) {
@@ -1541,9 +1541,9 @@ public class OverridingUtil {
             }
         }
         if (z11) {
-            for (ExternalOverridabilityCondition externalOverridabilityCondition2 : f33854e) {
+            for (ExternalOverridabilityCondition externalOverridabilityCondition2 : f34076e) {
                 if (externalOverridabilityCondition2.getContract() == ExternalOverridabilityCondition.Contract.CONFLICTS_ONLY) {
-                    int i11 = h.f33868a[externalOverridabilityCondition2.isOverridable(callableDescriptor, callableDescriptor2, classDescriptor).ordinal()];
+                    int i11 = h.f34090a[externalOverridabilityCondition2.isOverridable(callableDescriptor, callableDescriptor2, classDescriptor).ordinal()];
                     if (i11 == 1) {
                         throw new IllegalStateException("Contract violation in " + externalOverridabilityCondition2.getClass().getName() + " condition. It's not supposed to end with success");
                     } else if (i11 == 2) {

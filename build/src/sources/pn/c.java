@@ -1,29 +1,29 @@
 package pn;
 
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.ViewParent;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.w;
+import java.util.ArrayList;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
-    public static final ViewGroup a(View view) {
-        Intrinsics.checkNotNullParameter(view, "<this>");
-        ViewParent parent = view.getParent();
-        if (parent instanceof ViewGroup) {
-            return (ViewGroup) parent;
+public final class c implements w {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final List f42801d = new ArrayList();
+
+    @Override // androidx.core.view.w
+    public WindowInsetsCompat a(View v10, WindowInsetsCompat insets) {
+        Intrinsics.checkNotNullParameter(v10, "v");
+        Intrinsics.checkNotNullParameter(insets, "insets");
+        for (w wVar : this.f42801d) {
+            wVar.a(v10, insets);
         }
-        return null;
+        return insets;
     }
 
-    public static final View b(View view) {
-        Intrinsics.checkNotNullParameter(view, "<this>");
-        ViewGroup a10 = a(view);
-        if (a10 != null) {
-            a10.endViewTransition(view);
-            a10.removeView(view);
-        }
-        view.setVisibility(0);
-        view.setTranslationY(0.0f);
-        return view;
+    public final void b(w listener) {
+        Intrinsics.checkNotNullParameter(listener, "listener");
+        this.f42801d.add(listener);
     }
 }

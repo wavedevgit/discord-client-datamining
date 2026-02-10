@@ -9,13 +9,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e0 extends l {
 
     /* renamed from: k  reason: collision with root package name */
-    public static final a f23360k = new a(null);
+    public static final a f24660k = new a(null);
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f23361i;
+    private final String f24661i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final byte[] f23362j;
+    private final byte[] f24662j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -41,14 +41,14 @@ public final class e0 extends l {
     }
 
     public final String f() {
-        return this.f23361i;
+        return this.f24661i;
     }
 
     private e0(String str, byte[] bArr, Set set, Bundle bundle, Bundle bundle2, int i10) {
         super("androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL", bundle, bundle2, false, true, set, i10);
-        this.f23361i = str;
-        this.f23362j = bArr;
-        if (!k2.c.f30621a.a(str)) {
+        this.f24661i = str;
+        this.f24662j = bArr;
+        if (!k2.c.f31479a.a(str)) {
             throw new IllegalArgumentException("requestJson must not be empty, and must be a valid JSON");
         }
     }
@@ -69,7 +69,7 @@ public final class e0 extends l {
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r11, r0)
             java.lang.String r0 = "allowedProviders"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r13, r0)
-            g2.e0$a r0 = g2.e0.f23360k
+            g2.e0$a r0 = g2.e0.f24660k
             android.os.Bundle r5 = r0.a(r11, r12)
             android.os.Bundle r6 = r0.a(r11, r12)
             r8 = 32

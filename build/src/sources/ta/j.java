@@ -5,19 +5,19 @@ import android.graphics.drawable.Drawable;
 public final class j extends h implements g {
 
     /* renamed from: o  reason: collision with root package name */
-    private Drawable f50718o;
+    private Drawable f48650o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f50719p;
+    private boolean f48651p;
 
     public j(Drawable drawable) {
-        this.f50718o = drawable;
+        this.f48650o = drawable;
     }
 
     @Override // ta.g
-    public Drawable A1() {
+    public Drawable F1() {
         Drawable.ConstantState constantState;
-        Drawable drawable = this.f50718o;
+        Drawable drawable = this.f48650o;
         if (drawable != null && (constantState = drawable.getConstantState()) != null) {
             return constantState.newDrawable();
         }
@@ -26,13 +26,13 @@ public final class j extends h implements g {
 
     @Override // ta.e, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f50718o = null;
-        this.f50719p = true;
+        this.f48650o = null;
+        this.f48651p = true;
     }
 
     @Override // ta.e, com.facebook.imagepipeline.image.ImageInfo
     public int getHeight() {
-        Drawable drawable = this.f50718o;
+        Drawable drawable = this.f48650o;
         if (drawable != null) {
             Integer valueOf = Integer.valueOf(drawable.getIntrinsicHeight());
             if (valueOf.intValue() < 0) {
@@ -48,7 +48,7 @@ public final class j extends h implements g {
 
     @Override // ta.e, com.facebook.imagepipeline.image.ImageInfo
     public int getWidth() {
-        Drawable drawable = this.f50718o;
+        Drawable drawable = this.f48650o;
         if (drawable != null) {
             Integer valueOf = Integer.valueOf(drawable.getIntrinsicWidth());
             if (valueOf.intValue() < 0) {
@@ -64,7 +64,7 @@ public final class j extends h implements g {
 
     @Override // ta.e
     public boolean isClosed() {
-        return this.f50719p;
+        return this.f48651p;
     }
 
     @Override // ta.e

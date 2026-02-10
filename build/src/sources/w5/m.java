@@ -7,10 +7,10 @@ import x5.c;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f53290a = c.a.a("ch", "size", "w", "style", "fFamily", "data");
+    private static final c.a f52319a = c.a.a("ch", "size", "w", "style", "fFamily", "data");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f53291b = c.a.a("shapes");
+    private static final c.a f52320b = c.a.a("shapes");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static r5.d a(x5.c cVar, l5.i iVar) {
@@ -22,7 +22,7 @@ public abstract class m {
         char c10 = 0;
         double d11 = 0.0d;
         while (cVar.hasNext()) {
-            int p10 = cVar.p(f53290a);
+            int p10 = cVar.p(f52319a);
             if (p10 != 0) {
                 if (p10 != 1) {
                     if (p10 != 2) {
@@ -34,7 +34,7 @@ public abstract class m {
                                 } else {
                                     cVar.u();
                                     while (cVar.hasNext()) {
-                                        if (cVar.p(f53291b) != 0) {
+                                        if (cVar.p(f52320b) != 0) {
                                             cVar.s();
                                             cVar.T();
                                         } else {
@@ -48,10 +48,10 @@ public abstract class m {
                                     cVar.D();
                                 }
                             } else {
-                                str2 = cVar.b1();
+                                str2 = cVar.g1();
                             }
                         } else {
-                            str = cVar.b1();
+                            str = cVar.g1();
                         }
                     } else {
                         d10 = cVar.nextDouble();
@@ -60,7 +60,7 @@ public abstract class m {
                     d11 = cVar.nextDouble();
                 }
             } else {
-                c10 = cVar.b1().charAt(0);
+                c10 = cVar.g1().charAt(0);
             }
         }
         cVar.D();

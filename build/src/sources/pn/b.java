@@ -1,17 +1,32 @@
 package pn;
+
+import com.swmansion.rnscreens.Screen;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-    public static final boolean a(float f10, float f11, float f12) {
-        if (Math.abs(f10 - f11) <= f12) {
-            return true;
+public final class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    private boolean f42799a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private boolean f42800b;
+
+    private final void c(Screen screen) {
+        if (this.f42799a && this.f42800b) {
+            screen.requestTriggeringPostponedEnterTransition$react_native_screens_release();
+            screen.triggerPostponedEnterTransitionIfNeeded$react_native_screens_release();
         }
-        return false;
     }
 
-    public static /* synthetic */ boolean b(float f10, float f11, float f12, int i10, Object obj) {
-        if ((i10 & 2) != 0) {
-            f12 = 1.0E-4f;
-        }
-        return a(f10, f11, f12);
+    public final void a(Screen screen) {
+        Intrinsics.checkNotNullParameter(screen, "screen");
+        this.f42800b = true;
+        c(screen);
+    }
+
+    public final void b(Screen screen) {
+        Intrinsics.checkNotNullParameter(screen, "screen");
+        this.f42799a = true;
+        c(screen);
     }
 }

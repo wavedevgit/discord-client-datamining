@@ -4,7 +4,7 @@ import java.io.Closeable;
 import java.io.InputStream;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface d extends Closeable {
-    String B1();
+    String G1();
 
     boolean isSuccessful();
 

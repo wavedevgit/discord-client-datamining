@@ -1,12 +1,12 @@
 package kotlinx.coroutines.flow;
 
-import ss.j0;
+import bt.j0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface MutableStateFlow extends j0, MutableSharedFlow {
-    boolean g(Object obj, Object obj2);
-
-    @Override // ss.j0
+    @Override // bt.j0
     Object getValue();
+
+    boolean h(Object obj, Object obj2);
 
     void setValue(Object obj);
 }

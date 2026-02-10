@@ -9,24 +9,24 @@ import q4.t;
 public class SystemAlarmService extends s implements g.c {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String f5678o = m.i("SystemAlarmService");
+    private static final String f5688o = m.i("SystemAlarmService");
 
     /* renamed from: e  reason: collision with root package name */
-    private g f5679e;
+    private g f5689e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f5680i;
+    private boolean f5690i;
 
-    private void f() {
+    private void e() {
         g gVar = new g(this);
-        this.f5679e = gVar;
+        this.f5689e = gVar;
         gVar.m(this);
     }
 
     @Override // androidx.work.impl.background.systemalarm.g.c
     public void b() {
-        this.f5680i = true;
-        m.e().a(f5678o, "All commands completed in dispatcher");
+        this.f5690i = true;
+        m.e().a(f5688o, "All commands completed in dispatcher");
         t.a();
         stopSelf();
     }
@@ -34,28 +34,28 @@ public class SystemAlarmService extends s implements g.c {
     @Override // androidx.lifecycle.s, android.app.Service
     public void onCreate() {
         super.onCreate();
-        f();
-        this.f5680i = false;
+        e();
+        this.f5690i = false;
     }
 
     @Override // androidx.lifecycle.s, android.app.Service
     public void onDestroy() {
         super.onDestroy();
-        this.f5680i = true;
-        this.f5679e.k();
+        this.f5690i = true;
+        this.f5689e.k();
     }
 
     @Override // androidx.lifecycle.s, android.app.Service
     public int onStartCommand(Intent intent, int i10, int i11) {
         super.onStartCommand(intent, i10, i11);
-        if (this.f5680i) {
-            m.e().f(f5678o, "Re-initializing SystemAlarmDispatcher after a request to shut-down.");
-            this.f5679e.k();
-            f();
-            this.f5680i = false;
+        if (this.f5690i) {
+            m.e().f(f5688o, "Re-initializing SystemAlarmDispatcher after a request to shut-down.");
+            this.f5689e.k();
+            e();
+            this.f5690i = false;
         }
         if (intent != null) {
-            this.f5679e.a(intent, i11);
+            this.f5689e.a(intent, i11);
             return 3;
         }
         return 3;

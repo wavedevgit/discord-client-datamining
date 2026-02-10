@@ -3,6 +3,7 @@ package com.facebook.imagepipeline.backends.okhttp3;
 import android.net.Uri;
 import android.os.Looper;
 import android.os.SystemClock;
+import as.v;
 import com.facebook.imagepipeline.backends.okhttp3.OkHttpNetworkFetcher;
 import com.facebook.imagepipeline.common.BytesRange;
 import com.facebook.imagepipeline.producers.Consumer;
@@ -24,7 +25,6 @@ import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 import org.jetbrains.annotations.NotNull;
-import rr.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class OkHttpNetworkFetcher extends d {
     @NotNull
@@ -57,13 +57,13 @@ public class OkHttpNetworkFetcher extends d {
     public static final class OkHttpNetworkFetchState extends FetchState {
 
         /* renamed from: f  reason: collision with root package name */
-        public long f10443f;
+        public long f11020f;
 
         /* renamed from: g  reason: collision with root package name */
-        public long f10444g;
+        public long f11021g;
 
         /* renamed from: h  reason: collision with root package name */
-        public long f10445h;
+        public long f11022h;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public OkHttpNetworkFetchState(Consumer consumer, ProducerContext producerContext) {
@@ -77,14 +77,14 @@ public class OkHttpNetworkFetcher extends d {
     public static final class a extends f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Call f10446a;
+        final /* synthetic */ Call f11023a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ OkHttpNetworkFetcher f10447b;
+        final /* synthetic */ OkHttpNetworkFetcher f11024b;
 
         a(Call call, OkHttpNetworkFetcher okHttpNetworkFetcher) {
-            this.f10446a = call;
-            this.f10447b = okHttpNetworkFetcher;
+            this.f11023a = call;
+            this.f11024b = okHttpNetworkFetcher;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -95,8 +95,8 @@ public class OkHttpNetworkFetcher extends d {
         @Override // com.facebook.imagepipeline.producers.x0
         public void b() {
             if (Intrinsics.areEqual(Looper.myLooper(), Looper.getMainLooper())) {
-                Executor executor = this.f10447b.cancellationExecutor;
-                final Call call = this.f10446a;
+                Executor executor = this.f11024b.cancellationExecutor;
+                final Call call = this.f11023a;
                 executor.execute(new Runnable() { // from class: com.facebook.imagepipeline.backends.okhttp3.b
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -105,53 +105,53 @@ public class OkHttpNetworkFetcher extends d {
                 });
                 return;
             }
-            this.f10446a.cancel();
+            this.f11023a.cancel();
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class b implements cu.b {
+    public static final class b implements lu.b {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ OkHttpNetworkFetchState f10448d;
+        final /* synthetic */ OkHttpNetworkFetchState f11025d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ OkHttpNetworkFetcher f10449e;
+        final /* synthetic */ OkHttpNetworkFetcher f11026e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ NetworkFetcher.Callback f10450i;
+        final /* synthetic */ NetworkFetcher.Callback f11027i;
 
         b(OkHttpNetworkFetchState okHttpNetworkFetchState, OkHttpNetworkFetcher okHttpNetworkFetcher, NetworkFetcher.Callback callback) {
-            this.f10448d = okHttpNetworkFetchState;
-            this.f10449e = okHttpNetworkFetcher;
-            this.f10450i = callback;
+            this.f11025d = okHttpNetworkFetchState;
+            this.f11026e = okHttpNetworkFetcher;
+            this.f11027i = callback;
         }
 
-        @Override // cu.b
+        @Override // lu.b
         public void onFailure(Call call, IOException e10) {
             Intrinsics.checkNotNullParameter(call, "call");
             Intrinsics.checkNotNullParameter(e10, "e");
-            this.f10449e.a(call, e10, this.f10450i);
+            this.f11026e.a(call, e10, this.f11027i);
         }
 
-        @Override // cu.b
+        @Override // lu.b
         public void onResponse(Call call, Response response) {
             int contentLength;
             Intrinsics.checkNotNullParameter(call, "call");
             Intrinsics.checkNotNullParameter(response, "response");
-            this.f10448d.f10444g = SystemClock.elapsedRealtime();
+            this.f11025d.f11021g = SystemClock.elapsedRealtime();
             ResponseBody n10 = response.n();
             if (n10 != null) {
-                OkHttpNetworkFetcher okHttpNetworkFetcher = this.f10449e;
-                NetworkFetcher.Callback callback = this.f10450i;
-                OkHttpNetworkFetchState okHttpNetworkFetchState = this.f10448d;
+                OkHttpNetworkFetcher okHttpNetworkFetcher = this.f11026e;
+                NetworkFetcher.Callback callback = this.f11027i;
+                OkHttpNetworkFetchState okHttpNetworkFetchState = this.f11025d;
                 try {
                     try {
                         if (!response.isSuccessful()) {
                             okHttpNetworkFetcher.a(call, okHttpNetworkFetcher.b("Unexpected HTTP code " + response, response), callback);
                         } else {
-                            BytesRange c10 = BytesRange.f10462c.c(response.J("Content-Range"));
-                            if (c10 != null && (c10.f10464a != 0 || c10.f10465b != Integer.MAX_VALUE)) {
+                            BytesRange c10 = BytesRange.f11039c.c(response.J("Content-Range"));
+                            if (c10 != null && (c10.f11041a != 0 || c10.f11042b != Integer.MAX_VALUE)) {
                                 okHttpNetworkFetchState.j(c10);
                                 okHttpNetworkFetchState.i(8);
                             }
@@ -165,13 +165,13 @@ public class OkHttpNetworkFetcher extends d {
                     } catch (Exception e10) {
                         okHttpNetworkFetcher.a(call, e10, callback);
                     }
-                    Unit unit = Unit.f31765a;
-                    cs.c.a(n10, null);
+                    Unit unit = Unit.f31987a;
+                    ls.c.a(n10, null);
                 } finally {
                 }
             } else {
-                OkHttpNetworkFetcher okHttpNetworkFetcher2 = this.f10449e;
-                okHttpNetworkFetcher2.a(call, okHttpNetworkFetcher2.b("Response body null: " + response, response), this.f10450i);
+                OkHttpNetworkFetcher okHttpNetworkFetcher2 = this.f11026e;
+                okHttpNetworkFetcher2.a(call, okHttpNetworkFetcher2.b("Response body null: " + response, response), this.f11027i);
             }
         }
     }
@@ -191,7 +191,7 @@ public class OkHttpNetworkFetcher extends d {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final IOException b(String str, Response response) {
-        return new IOException(str, c.f10453i.a(response));
+        return new IOException(str, c.f11030i.a(response));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -200,8 +200,8 @@ public class OkHttpNetworkFetcher extends d {
         Intrinsics.checkNotNullParameter(callback, "callback");
         Intrinsics.checkNotNullParameter(request, "request");
         Call a10 = this.callFactory.a(request);
-        fetchState.b().g(new a(a10, this));
-        a10.J0(new b(fetchState, this, callback));
+        fetchState.b().h(new a(a10, this));
+        a10.b1(new b(fetchState, this, callback));
     }
 
     public OkHttpNetworkFetcher(Call.Factory callFactory, Executor cancellationExecutor, boolean z10) {
@@ -224,7 +224,7 @@ public class OkHttpNetworkFetcher extends d {
     public void fetch(OkHttpNetworkFetchState fetchState, NetworkFetcher.Callback callback) {
         Intrinsics.checkNotNullParameter(fetchState, "fetchState");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        fetchState.f10443f = SystemClock.elapsedRealtime();
+        fetchState.f11020f = SystemClock.elapsedRealtime();
         Uri g10 = fetchState.g();
         Intrinsics.checkNotNullExpressionValue(g10, "getUri(...)");
         try {
@@ -248,13 +248,13 @@ public class OkHttpNetworkFetcher extends d {
     @Override // com.facebook.imagepipeline.producers.NetworkFetcher
     public Map<String, String> getExtraMap(@NotNull OkHttpNetworkFetchState fetchState, int i10) {
         Intrinsics.checkNotNullParameter(fetchState, "fetchState");
-        return o0.m(v.a(QUEUE_TIME, String.valueOf(fetchState.f10444g - fetchState.f10443f)), v.a(FETCH_TIME, String.valueOf(fetchState.f10445h - fetchState.f10444g)), v.a(TOTAL_TIME, String.valueOf(fetchState.f10445h - fetchState.f10443f)), v.a(IMAGE_SIZE, String.valueOf(i10)));
+        return o0.m(v.a(QUEUE_TIME, String.valueOf(fetchState.f11021g - fetchState.f11020f)), v.a(FETCH_TIME, String.valueOf(fetchState.f11022h - fetchState.f11021g)), v.a(TOTAL_TIME, String.valueOf(fetchState.f11022h - fetchState.f11020f)), v.a(IMAGE_SIZE, String.valueOf(i10)));
     }
 
     @Override // com.facebook.imagepipeline.producers.NetworkFetcher
     public void onFetchCompletion(@NotNull OkHttpNetworkFetchState fetchState, int i10) {
         Intrinsics.checkNotNullParameter(fetchState, "fetchState");
-        fetchState.f10445h = SystemClock.elapsedRealtime();
+        fetchState.f11022h = SystemClock.elapsedRealtime();
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

@@ -41,15 +41,15 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Disabled
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.C0();
+                mVar.z0();
                 mVar.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw bn.c.x("uploadedFileType", "uploaded_file_type", mVar);
+                    throw dn.c.x("uploadedFileType", "uploaded_file_type", mVar);
                 }
             } else if (J == 1 && (list = (List) this.listOfStringAdapter.fromJson(mVar)) == null) {
-                throw bn.c.x("enabledFileTypes", "enabled_file_types", mVar);
+                throw dn.c.x("enabledFileTypes", "enabled_file_types", mVar);
             }
         }
         mVar.D();
@@ -57,15 +57,15 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Disabled
             if (list != null) {
                 return new GenericFileUploadErrorResponse.DocumentErrorResponse.DisabledFileTypeError.Details(str, list);
             }
-            throw bn.c.o("enabledFileTypes", "enabled_file_types", mVar);
+            throw dn.c.o("enabledFileTypes", "enabled_file_types", mVar);
         }
-        throw bn.c.o("uploadedFileType", "uploaded_file_type", mVar);
+        throw dn.c.o("uploadedFileType", "uploaded_file_type", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.DisabledFileTypeError.Details details) {
         if (details != null) {
-            tVar.k();
+            tVar.i();
             tVar.J("uploaded_file_type");
             this.stringAdapter.toJson(tVar, details.getUploadedFileType());
             tVar.J("enabled_file_types");

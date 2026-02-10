@@ -4,80 +4,80 @@ public abstract class k {
     public static int A = 25;
 
     /* renamed from: a  reason: collision with root package name */
-    public static int[] f8514a = {2130968655, 2130968656, 2130968657, 2130968658, 2130968659, 2130968660, 2130968661, 2130969100, 2130969101, 2130969102, 2130969103, 2130969104, 2130969105, 2130969106, 2130969160, 2130969161, 2130969162, 2130969163, 2130969164, 2130969165, 2130969167, 2130969168, 2130969169, 2130969170, 2130969430, 2130969431};
+    public static int[] f9091a = {2130968655, 2130968656, 2130968657, 2130968658, 2130968659, 2130968660, 2130968661, 2130969149, 2130969150, 2130969151, 2130969152, 2130969153, 2130969154, 2130969155, 2130969212, 2130969213, 2130969214, 2130969215, 2130969216, 2130969217, 2130969219, 2130969220, 2130969221, 2130969222, 2130969499, 2130969500};
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f8515b = 0;
+    public static int f9092b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    public static int f8516c = 1;
+    public static int f9093c = 1;
 
     /* renamed from: d  reason: collision with root package name */
-    public static int f8517d = 2;
+    public static int f9094d = 2;
 
     /* renamed from: e  reason: collision with root package name */
-    public static int f8518e = 3;
+    public static int f9095e = 3;
 
     /* renamed from: f  reason: collision with root package name */
-    public static int f8519f = 4;
+    public static int f9096f = 4;
 
     /* renamed from: g  reason: collision with root package name */
-    public static int f8520g = 5;
+    public static int f9097g = 5;
 
     /* renamed from: h  reason: collision with root package name */
-    public static int f8521h = 6;
+    public static int f9098h = 6;
 
     /* renamed from: i  reason: collision with root package name */
-    public static int f8522i = 7;
+    public static int f9099i = 7;
 
     /* renamed from: j  reason: collision with root package name */
-    public static int f8523j = 8;
+    public static int f9100j = 8;
 
     /* renamed from: k  reason: collision with root package name */
-    public static int f8524k = 9;
+    public static int f9101k = 9;
 
     /* renamed from: l  reason: collision with root package name */
-    public static int f8525l = 10;
+    public static int f9102l = 10;
 
     /* renamed from: m  reason: collision with root package name */
-    public static int f8526m = 11;
+    public static int f9103m = 11;
 
     /* renamed from: n  reason: collision with root package name */
-    public static int f8527n = 12;
+    public static int f9104n = 12;
 
     /* renamed from: o  reason: collision with root package name */
-    public static int f8528o = 13;
+    public static int f9105o = 13;
 
     /* renamed from: p  reason: collision with root package name */
-    public static int f8529p = 14;
+    public static int f9106p = 14;
 
     /* renamed from: q  reason: collision with root package name */
-    public static int f8530q = 15;
+    public static int f9107q = 15;
 
     /* renamed from: r  reason: collision with root package name */
-    public static int f8531r = 16;
+    public static int f9108r = 16;
 
     /* renamed from: s  reason: collision with root package name */
-    public static int f8532s = 17;
+    public static int f9109s = 17;
 
     /* renamed from: t  reason: collision with root package name */
-    public static int f8533t = 18;
+    public static int f9110t = 18;
 
     /* renamed from: u  reason: collision with root package name */
-    public static int f8534u = 19;
+    public static int f9111u = 19;
 
     /* renamed from: v  reason: collision with root package name */
-    public static int f8535v = 20;
+    public static int f9112v = 20;
 
     /* renamed from: w  reason: collision with root package name */
-    public static int f8536w = 21;
+    public static int f9113w = 21;
 
     /* renamed from: x  reason: collision with root package name */
-    public static int f8537x = 22;
+    public static int f9114x = 22;
 
     /* renamed from: y  reason: collision with root package name */
-    public static int f8538y = 23;
+    public static int f9115y = 23;
 
     /* renamed from: z  reason: collision with root package name */
-    public static int f8539z = 24;
+    public static int f9116z = 24;
 }

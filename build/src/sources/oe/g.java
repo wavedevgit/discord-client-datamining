@@ -11,20 +11,20 @@ import java.util.regex.Pattern;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Pattern f40616a = Pattern.compile("^rgb\\((\\d{1,3}),(\\d{1,3}),(\\d{1,3})\\)$");
+    private static final Pattern f38942a = Pattern.compile("^rgb\\((\\d{1,3}),(\\d{1,3}),(\\d{1,3})\\)$");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f40617b = Pattern.compile("^rgba\\((\\d{1,3}),(\\d{1,3}),(\\d{1,3}),(\\d{1,3})\\)$");
+    private static final Pattern f38943b = Pattern.compile("^rgba\\((\\d{1,3}),(\\d{1,3}),(\\d{1,3}),(\\d{1,3})\\)$");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f40618c = Pattern.compile("^rgba\\((\\d{1,3}),(\\d{1,3}),(\\d{1,3}),(\\d*\\.?\\d*?)\\)$");
+    private static final Pattern f38944c = Pattern.compile("^rgba\\((\\d{1,3}),(\\d{1,3}),(\\d{1,3}),(\\d*\\.?\\d*?)\\)$");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f40619d;
+    private static final Map f38945d;
 
     static {
         HashMap hashMap = new HashMap();
-        f40619d = hashMap;
+        f38945d = hashMap;
         hashMap.put("aliceblue", -984833);
         hashMap.put("antiquewhite", -332841);
         hashMap.put("aqua", -16711681);
@@ -193,9 +193,9 @@ public abstract class g {
         }
         if (replace.startsWith("rgba")) {
             if (z10) {
-                pattern = f40618c;
+                pattern = f38944c;
             } else {
-                pattern = f40617b;
+                pattern = f38943b;
             }
             Matcher matcher = pattern.matcher(replace);
             if (matcher.matches()) {
@@ -207,12 +207,12 @@ public abstract class g {
                 return Color.argb(parseInt, Integer.parseInt((String) a.e(matcher.group(1)), 10), Integer.parseInt((String) a.e(matcher.group(2)), 10), Integer.parseInt((String) a.e(matcher.group(3)), 10));
             }
         } else if (replace.startsWith("rgb")) {
-            Matcher matcher2 = f40616a.matcher(replace);
+            Matcher matcher2 = f38942a.matcher(replace);
             if (matcher2.matches()) {
                 return Color.rgb(Integer.parseInt((String) a.e(matcher2.group(1)), 10), Integer.parseInt((String) a.e(matcher2.group(2)), 10), Integer.parseInt((String) a.e(matcher2.group(3)), 10));
             }
         } else {
-            Integer num = (Integer) f40619d.get(ni.b.e(replace));
+            Integer num = (Integer) f38945d.get(pi.b.e(replace));
             if (num != null) {
                 return num.intValue();
             }

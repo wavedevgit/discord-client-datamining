@@ -15,75 +15,75 @@ import p8.j;
 public class GenericDraweeHierarchyBuilder {
 
     /* renamed from: t  reason: collision with root package name */
-    public static final ScalingUtils$ScaleType f10165t = ScalingUtils$ScaleType.f10061h;
+    public static final ScalingUtils$ScaleType f10742t = ScalingUtils$ScaleType.f10638h;
 
     /* renamed from: u  reason: collision with root package name */
-    public static final ScalingUtils$ScaleType f10166u = ScalingUtils$ScaleType.f10062i;
+    public static final ScalingUtils$ScaleType f10743u = ScalingUtils$ScaleType.f10639i;
 
     /* renamed from: a  reason: collision with root package name */
-    private Resources f10167a;
+    private Resources f10744a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f10168b;
+    private int f10745b;
 
     /* renamed from: c  reason: collision with root package name */
-    private float f10169c;
+    private float f10746c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Drawable f10170d;
+    private Drawable f10747d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ScalingUtils$ScaleType f10171e;
+    private ScalingUtils$ScaleType f10748e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Drawable f10172f;
+    private Drawable f10749f;
 
     /* renamed from: g  reason: collision with root package name */
-    private ScalingUtils$ScaleType f10173g;
+    private ScalingUtils$ScaleType f10750g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Drawable f10174h;
+    private Drawable f10751h;
 
     /* renamed from: i  reason: collision with root package name */
-    private ScalingUtils$ScaleType f10175i;
+    private ScalingUtils$ScaleType f10752i;
 
     /* renamed from: j  reason: collision with root package name */
-    private Drawable f10176j;
+    private Drawable f10753j;
 
     /* renamed from: k  reason: collision with root package name */
-    private ScalingUtils$ScaleType f10177k;
+    private ScalingUtils$ScaleType f10754k;
 
     /* renamed from: l  reason: collision with root package name */
-    private ScalingUtils$ScaleType f10178l;
+    private ScalingUtils$ScaleType f10755l;
 
     /* renamed from: m  reason: collision with root package name */
-    private Matrix f10179m;
+    private Matrix f10756m;
 
     /* renamed from: n  reason: collision with root package name */
-    private PointF f10180n;
+    private PointF f10757n;
 
     /* renamed from: o  reason: collision with root package name */
-    private ColorFilter f10181o;
+    private ColorFilter f10758o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Drawable f10182p;
+    private Drawable f10759p;
 
     /* renamed from: q  reason: collision with root package name */
-    private List f10183q;
+    private List f10760q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Drawable f10184r;
+    private Drawable f10761r;
 
     /* renamed from: s  reason: collision with root package name */
-    private a f10185s;
+    private a f10762s;
 
     public GenericDraweeHierarchyBuilder(Resources resources) {
-        this.f10167a = resources;
+        this.f10744a = resources;
         t();
     }
 
     private void L() {
-        List<Drawable> list = this.f10183q;
+        List<Drawable> list = this.f10760q;
         if (list != null) {
             for (Drawable drawable : list) {
                 j.g(drawable);
@@ -92,25 +92,25 @@ public class GenericDraweeHierarchyBuilder {
     }
 
     private void t() {
-        this.f10168b = ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS;
-        this.f10169c = 0.0f;
-        this.f10170d = null;
-        ScalingUtils$ScaleType scalingUtils$ScaleType = f10165t;
-        this.f10171e = scalingUtils$ScaleType;
-        this.f10172f = null;
-        this.f10173g = scalingUtils$ScaleType;
-        this.f10174h = null;
-        this.f10175i = scalingUtils$ScaleType;
-        this.f10176j = null;
-        this.f10177k = scalingUtils$ScaleType;
-        this.f10178l = f10166u;
-        this.f10179m = null;
-        this.f10180n = null;
-        this.f10181o = null;
-        this.f10182p = null;
-        this.f10183q = null;
-        this.f10184r = null;
-        this.f10185s = null;
+        this.f10745b = ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS;
+        this.f10746c = 0.0f;
+        this.f10747d = null;
+        ScalingUtils$ScaleType scalingUtils$ScaleType = f10742t;
+        this.f10748e = scalingUtils$ScaleType;
+        this.f10749f = null;
+        this.f10750g = scalingUtils$ScaleType;
+        this.f10751h = null;
+        this.f10752i = scalingUtils$ScaleType;
+        this.f10753j = null;
+        this.f10754k = scalingUtils$ScaleType;
+        this.f10755l = f10743u;
+        this.f10756m = null;
+        this.f10757n = null;
+        this.f10758o = null;
+        this.f10759p = null;
+        this.f10760q = null;
+        this.f10761r = null;
+        this.f10762s = null;
     }
 
     public static GenericDraweeHierarchyBuilder u(Resources resources) {
@@ -118,67 +118,67 @@ public class GenericDraweeHierarchyBuilder {
     }
 
     public GenericDraweeHierarchyBuilder A(Drawable drawable) {
-        this.f10174h = drawable;
+        this.f10751h = drawable;
         return this;
     }
 
     public GenericDraweeHierarchyBuilder B(ScalingUtils$ScaleType scalingUtils$ScaleType) {
-        this.f10175i = scalingUtils$ScaleType;
+        this.f10752i = scalingUtils$ScaleType;
         return this;
     }
 
     public GenericDraweeHierarchyBuilder C(Drawable drawable) {
         if (drawable == null) {
-            this.f10183q = null;
+            this.f10760q = null;
             return this;
         }
-        this.f10183q = Arrays.asList(drawable);
+        this.f10760q = Arrays.asList(drawable);
         return this;
     }
 
     public GenericDraweeHierarchyBuilder D(Drawable drawable) {
-        this.f10170d = drawable;
+        this.f10747d = drawable;
         return this;
     }
 
     public GenericDraweeHierarchyBuilder E(ScalingUtils$ScaleType scalingUtils$ScaleType) {
-        this.f10171e = scalingUtils$ScaleType;
+        this.f10748e = scalingUtils$ScaleType;
         return this;
     }
 
     public GenericDraweeHierarchyBuilder F(Drawable drawable) {
         if (drawable == null) {
-            this.f10184r = null;
+            this.f10761r = null;
             return this;
         }
         StateListDrawable stateListDrawable = new StateListDrawable();
         stateListDrawable.addState(new int[]{16842919}, drawable);
-        this.f10184r = stateListDrawable;
+        this.f10761r = stateListDrawable;
         return this;
     }
 
     public GenericDraweeHierarchyBuilder G(Drawable drawable) {
-        this.f10176j = drawable;
+        this.f10753j = drawable;
         return this;
     }
 
     public GenericDraweeHierarchyBuilder H(ScalingUtils$ScaleType scalingUtils$ScaleType) {
-        this.f10177k = scalingUtils$ScaleType;
+        this.f10754k = scalingUtils$ScaleType;
         return this;
     }
 
     public GenericDraweeHierarchyBuilder I(Drawable drawable) {
-        this.f10172f = drawable;
+        this.f10749f = drawable;
         return this;
     }
 
     public GenericDraweeHierarchyBuilder J(ScalingUtils$ScaleType scalingUtils$ScaleType) {
-        this.f10173g = scalingUtils$ScaleType;
+        this.f10750g = scalingUtils$ScaleType;
         return this;
     }
 
     public GenericDraweeHierarchyBuilder K(a aVar) {
-        this.f10185s = aVar;
+        this.f10762s = aVar;
         return this;
     }
 
@@ -188,100 +188,100 @@ public class GenericDraweeHierarchyBuilder {
     }
 
     public ColorFilter b() {
-        return this.f10181o;
+        return this.f10758o;
     }
 
     public PointF c() {
-        return this.f10180n;
+        return this.f10757n;
     }
 
     public ScalingUtils$ScaleType d() {
-        return this.f10178l;
+        return this.f10755l;
     }
 
     public Drawable e() {
-        return this.f10182p;
+        return this.f10759p;
     }
 
     public float f() {
-        return this.f10169c;
+        return this.f10746c;
     }
 
     public int g() {
-        return this.f10168b;
+        return this.f10745b;
     }
 
     public Drawable h() {
-        return this.f10174h;
+        return this.f10751h;
     }
 
     public ScalingUtils$ScaleType i() {
-        return this.f10175i;
+        return this.f10752i;
     }
 
     public List j() {
-        return this.f10183q;
+        return this.f10760q;
     }
 
     public Drawable k() {
-        return this.f10170d;
+        return this.f10747d;
     }
 
     public ScalingUtils$ScaleType l() {
-        return this.f10171e;
+        return this.f10748e;
     }
 
     public Drawable m() {
-        return this.f10184r;
+        return this.f10761r;
     }
 
     public Drawable n() {
-        return this.f10176j;
+        return this.f10753j;
     }
 
     public ScalingUtils$ScaleType o() {
-        return this.f10177k;
+        return this.f10754k;
     }
 
     public Resources p() {
-        return this.f10167a;
+        return this.f10744a;
     }
 
     public Drawable q() {
-        return this.f10172f;
+        return this.f10749f;
     }
 
     public ScalingUtils$ScaleType r() {
-        return this.f10173g;
+        return this.f10750g;
     }
 
     public a s() {
-        return this.f10185s;
+        return this.f10762s;
     }
 
     public GenericDraweeHierarchyBuilder v(ColorFilter colorFilter) {
-        this.f10181o = colorFilter;
+        this.f10758o = colorFilter;
         return this;
     }
 
     public GenericDraweeHierarchyBuilder w(ScalingUtils$ScaleType scalingUtils$ScaleType) {
-        this.f10178l = scalingUtils$ScaleType;
-        this.f10179m = null;
+        this.f10755l = scalingUtils$ScaleType;
+        this.f10756m = null;
         return this;
     }
 
     public GenericDraweeHierarchyBuilder x(Drawable drawable) {
-        this.f10182p = drawable;
+        this.f10759p = drawable;
         return this;
     }
 
     public GenericDraweeHierarchyBuilder y(float f10) {
-        this.f10169c = f10;
+        this.f10746c = f10;
         return this;
     }
 
     public GenericDraweeHierarchyBuilder z(int i10) {
-        this.f10168b = i10;
+        this.f10745b = i10;
         return this;
     }
 }

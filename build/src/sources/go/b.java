@@ -1,45 +1,35 @@
 package go;
 
-import android.view.View;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.viewbinding.ViewBinding;
-import com.google.android.material.card.MaterialCardView;
-import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
-import fo.y2;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements ViewBinding {
+public abstract class b extends RuntimeException {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f24460a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f24461b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final MaterialCardView f24462c;
-
-    private b(ConstraintLayout constraintLayout, ThemeableLottieAnimationView themeableLottieAnimationView, MaterialCardView materialCardView) {
-        this.f24460a = constraintLayout;
-        this.f24461b = themeableLottieAnimationView;
-        this.f24462c = materialCardView;
-    }
-
-    public static b a(View view) {
-        int i10 = y2.f23139a;
-        ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
-        if (themeableLottieAnimationView != null) {
-            i10 = y2.f23143e;
-            MaterialCardView materialCardView = (MaterialCardView) e4.a.a(view, i10);
-            if (materialCardView != null) {
-                return new b((ConstraintLayout) view, themeableLottieAnimationView, materialCardView);
-            }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a extends b {
+        public a() {
+            super(null);
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public ConstraintLayout getRoot() {
-        return this.f24460a;
+    /* renamed from: go.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0356b extends b {
+        public C0356b() {
+            super(null);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c extends b {
+        public c() {
+            super(null);
+        }
+    }
+
+    public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    private b() {
     }
 }

@@ -11,27 +11,27 @@ import androidx.transition.Transition;
 public class c extends Transition {
 
     /* renamed from: b0  reason: collision with root package name */
-    private static final String[] f5360b0 = {"android:clipBounds:clip"};
+    private static final String[] f5370b0 = {"android:clipBounds:clip"};
 
     /* renamed from: c0  reason: collision with root package name */
-    static final Rect f5361c0 = new Rect();
+    static final Rect f5371c0 = new Rect();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    private static class a extends AnimatorListenerAdapter implements Transition.h {
+    private static class a extends AnimatorListenerAdapter implements Transition.i {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Rect f5362a;
+        private final Rect f5372a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Rect f5363b;
+        private final Rect f5373b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final View f5364c;
+        private final View f5374c;
 
         a(View view, Rect rect, Rect rect2) {
-            this.f5364c = view;
-            this.f5362a = rect;
-            this.f5363b = rect2;
+            this.f5374c = view;
+            this.f5372a = rect;
+            this.f5373b = rect2;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
@@ -39,115 +39,115 @@ public class c extends Transition {
             onAnimationEnd(animator, false);
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionCancel(Transition transition) {
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionEnd(Transition transition) {
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionPause(Transition transition) {
-            Rect clipBounds = this.f5364c.getClipBounds();
+            Rect clipBounds = this.f5374c.getClipBounds();
             if (clipBounds == null) {
-                clipBounds = c.f5361c0;
+                clipBounds = c.f5371c0;
             }
-            this.f5364c.setTag(l.f5425b, clipBounds);
-            this.f5364c.setClipBounds(this.f5363b);
+            this.f5374c.setTag(l.f5435b, clipBounds);
+            this.f5374c.setClipBounds(this.f5373b);
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionResume(Transition transition) {
-            this.f5364c.setClipBounds((Rect) this.f5364c.getTag(l.f5425b));
-            this.f5364c.setTag(l.f5425b, null);
+            this.f5374c.setClipBounds((Rect) this.f5374c.getTag(l.f5435b));
+            this.f5374c.setTag(l.f5435b, null);
         }
 
-        @Override // androidx.transition.Transition.h
+        @Override // androidx.transition.Transition.i
         public void onTransitionStart(Transition transition) {
         }
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator, boolean z10) {
             if (!z10) {
-                this.f5364c.setClipBounds(this.f5363b);
+                this.f5374c.setClipBounds(this.f5373b);
             } else {
-                this.f5364c.setClipBounds(this.f5362a);
+                this.f5374c.setClipBounds(this.f5372a);
             }
         }
     }
 
-    private void u0(c0 c0Var, boolean z10) {
+    private void w0(c0 c0Var, boolean z10) {
         Rect rect;
-        View view = c0Var.f5366b;
+        View view = c0Var.f5376b;
         if (view.getVisibility() != 8) {
             Rect rect2 = null;
             if (z10) {
-                rect = (Rect) view.getTag(l.f5425b);
+                rect = (Rect) view.getTag(l.f5435b);
             } else {
                 rect = null;
             }
             if (rect == null) {
                 rect = view.getClipBounds();
             }
-            if (rect != f5361c0) {
+            if (rect != f5371c0) {
                 rect2 = rect;
             }
-            c0Var.f5365a.put("android:clipBounds:clip", rect2);
+            c0Var.f5375a.put("android:clipBounds:clip", rect2);
             if (rect2 == null) {
-                c0Var.f5365a.put("android:clipBounds:bounds", new Rect(0, 0, view.getWidth(), view.getHeight()));
+                c0Var.f5375a.put("android:clipBounds:bounds", new Rect(0, 0, view.getWidth(), view.getHeight()));
             }
         }
     }
 
     @Override // androidx.transition.Transition
-    public String[] N() {
-        return f5360b0;
+    public String[] P() {
+        return f5370b0;
     }
 
     @Override // androidx.transition.Transition
-    public boolean R() {
+    public boolean T() {
         return true;
     }
 
     @Override // androidx.transition.Transition
-    public void i(c0 c0Var) {
-        u0(c0Var, false);
+    public void h(c0 c0Var) {
+        w0(c0Var, false);
     }
 
     @Override // androidx.transition.Transition
     public void l(c0 c0Var) {
-        u0(c0Var, true);
+        w0(c0Var, true);
     }
 
     @Override // androidx.transition.Transition
     public Animator q(ViewGroup viewGroup, c0 c0Var, c0 c0Var2) {
         Rect rect;
         Rect rect2;
-        if (c0Var == null || c0Var2 == null || !c0Var.f5365a.containsKey("android:clipBounds:clip") || !c0Var2.f5365a.containsKey("android:clipBounds:clip")) {
+        if (c0Var == null || c0Var2 == null || !c0Var.f5375a.containsKey("android:clipBounds:clip") || !c0Var2.f5375a.containsKey("android:clipBounds:clip")) {
             return null;
         }
-        Rect rect3 = (Rect) c0Var.f5365a.get("android:clipBounds:clip");
-        Rect rect4 = (Rect) c0Var2.f5365a.get("android:clipBounds:clip");
+        Rect rect3 = (Rect) c0Var.f5375a.get("android:clipBounds:clip");
+        Rect rect4 = (Rect) c0Var2.f5375a.get("android:clipBounds:clip");
         if (rect3 == null && rect4 == null) {
             return null;
         }
         if (rect3 == null) {
-            rect = (Rect) c0Var.f5365a.get("android:clipBounds:bounds");
+            rect = (Rect) c0Var.f5375a.get("android:clipBounds:bounds");
         } else {
             rect = rect3;
         }
         if (rect4 == null) {
-            rect2 = (Rect) c0Var2.f5365a.get("android:clipBounds:bounds");
+            rect2 = (Rect) c0Var2.f5375a.get("android:clipBounds:bounds");
         } else {
             rect2 = rect4;
         }
         if (rect.equals(rect2)) {
             return null;
         }
-        c0Var2.f5366b.setClipBounds(rect3);
-        ObjectAnimator ofObject = ObjectAnimator.ofObject(c0Var2.f5366b, h0.f5416c, new m(new Rect()), rect, rect2);
-        a aVar = new a(c0Var2.f5366b, rect3, rect4);
+        c0Var2.f5376b.setClipBounds(rect3);
+        ObjectAnimator ofObject = ObjectAnimator.ofObject(c0Var2.f5376b, h0.f5426c, new m(new Rect()), rect, rect2);
+        a aVar = new a(c0Var2.f5376b, rect3, rect4);
         ofObject.addListener(aVar);
         c(aVar);
         return ofObject;

@@ -28,44 +28,44 @@ import kotlin.jvm.internal.Intrinsics;
 final class l extends Canvas {
 
     /* renamed from: a  reason: collision with root package name */
-    public Canvas f28024a;
+    public Canvas f28959a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Paint f28025b = new Paint();
+    private final Paint f28960b = new Paint();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Paint f28026c = new Paint();
+    private final Paint f28961c = new Paint();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Rect f28027d = new Rect();
+    private final Rect f28962d = new Rect();
 
     /* renamed from: e  reason: collision with root package name */
-    private final Bitmap f28028e;
+    private final Bitmap f28963e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Canvas f28029f;
+    private final Canvas f28964f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Rect f28030g;
+    private final Rect f28965g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final WeakHashMap f28031h;
+    private final WeakHashMap f28966h;
 
     public l() {
         Bitmap createBitmap = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
         Intrinsics.checkNotNullExpressionValue(createBitmap, "createBitmap(...)");
-        this.f28028e = createBitmap;
-        this.f28029f = new Canvas(createBitmap);
-        this.f28030g = new Rect(0, 0, 1, 1);
-        this.f28031h = new WeakHashMap();
+        this.f28963e = createBitmap;
+        this.f28964f = new Canvas(createBitmap);
+        this.f28965g = new Rect(0, 0, 1, 1);
+        this.f28966h = new WeakHashMap();
     }
 
     private final void a(Paint paint, float f10, float f11) {
-        this.f28026c.setColorFilter(paint.getColorFilter());
+        this.f28961c.setColorFilter(paint.getColorFilter());
         int color = paint.getColor();
-        this.f28026c.setColor(Color.argb(100, Color.red(color), Color.green(color), Color.blue(color)));
-        Rect rect = this.f28027d;
-        drawRoundRect(rect.left + f10, rect.top + f11, rect.right + f10, rect.bottom + f11, 10.0f, 10.0f, this.f28026c);
+        this.f28961c.setColor(Color.argb(100, Color.red(color), Color.green(color), Color.blue(color)));
+        Rect rect = this.f28962d;
+        drawRoundRect(rect.left + f10, rect.top + f11, rect.right + f10, rect.bottom + f11, 10.0f, 10.0f, this.f28961c);
     }
 
     private final BitmapShader c(Paint paint) {
@@ -86,7 +86,7 @@ final class l extends Canvas {
         if (bitmap.isRecycled()) {
             return -16777216;
         }
-        Pair pair = (Pair) this.f28031h.get(bitmap);
+        Pair pair = (Pair) this.f28966h.get(bitmap);
         if (pair != null && ((Number) pair.c()).intValue() == bitmap.getGenerationId()) {
             return ((Number) pair.d()).intValue();
         }
@@ -94,25 +94,25 @@ final class l extends Canvas {
         config = Bitmap.Config.HARDWARE;
         if (config2 == config && Build.VERSION.SDK_INT >= 31) {
             BitmapShader c10 = c(paint);
-            this.f28029f.drawBitmap(bitmap.asShared(), rect, this.f28030g, paint);
+            this.f28964f.drawBitmap(bitmap.asShared(), rect, this.f28965g, paint);
             if (c10 != null && paint != null) {
                 paint.setShader(c10);
             }
-            i10 = this.f28028e.getPixel(0, 0);
+            i10 = this.f28963e.getPixel(0, 0);
         } else if (bitmap.getConfig() != config) {
             BitmapShader c11 = c(paint);
-            this.f28029f.drawBitmap(bitmap, rect, this.f28030g, paint);
+            this.f28964f.drawBitmap(bitmap, rect, this.f28965g, paint);
             if (c11 != null && paint != null) {
                 paint.setShader(c11);
             }
-            i10 = this.f28028e.getPixel(0, 0);
+            i10 = this.f28963e.getPixel(0, 0);
         }
-        this.f28031h.put(bitmap, new Pair(Integer.valueOf(bitmap.getGenerationId()), Integer.valueOf(i10)));
+        this.f28966h.put(bitmap, new Pair(Integer.valueOf(bitmap.getGenerationId()), Integer.valueOf(i10)));
         return i10;
     }
 
     public final Canvas b() {
-        Canvas canvas = this.f28024a;
+        Canvas canvas = this.f28959a;
         if (canvas != null) {
             return canvas;
         }
@@ -275,9 +275,9 @@ final class l extends Canvas {
     @Override // android.graphics.Canvas
     public void drawPicture(Picture picture) {
         Intrinsics.checkNotNullParameter(picture, "picture");
-        this.f28025b.setColorFilter(null);
-        this.f28025b.setColor(-16777216);
-        b().drawRect(0.0f, 0.0f, picture.getWidth(), picture.getHeight(), this.f28025b);
+        this.f28960b.setColorFilter(null);
+        this.f28960b.setColor(-16777216);
+        b().drawRect(0.0f, 0.0f, picture.getWidth(), picture.getHeight(), this.f28960b);
     }
 
     @Override // android.graphics.Canvas
@@ -335,7 +335,7 @@ final class l extends Canvas {
     public void drawText(char[] text, int i10, int i11, float f10, float f11, Paint paint) {
         Intrinsics.checkNotNullParameter(text, "text");
         Intrinsics.checkNotNullParameter(paint, "paint");
-        paint.getTextBounds(text, i10, i11, this.f28027d);
+        paint.getTextBounds(text, i10, i11, this.f28962d);
         a(paint, f10, f11);
     }
 
@@ -350,7 +350,7 @@ final class l extends Canvas {
     public void drawTextRun(char[] text, int i10, int i11, int i12, int i13, float f10, float f11, boolean z10, Paint paint) {
         Intrinsics.checkNotNullParameter(text, "text");
         Intrinsics.checkNotNullParameter(paint, "paint");
-        paint.getTextBounds(text, 0, i10 + i11, this.f28027d);
+        paint.getTextBounds(text, 0, i10 + i11, this.f28962d);
         a(paint, f10, f11);
     }
 
@@ -363,7 +363,7 @@ final class l extends Canvas {
 
     public final void e(Canvas canvas) {
         Intrinsics.checkNotNullParameter(canvas, "<set-?>");
-        this.f28024a = canvas;
+        this.f28959a = canvas;
     }
 
     @Override // android.graphics.Canvas
@@ -574,9 +574,9 @@ final class l extends Canvas {
     @Override // android.graphics.Canvas
     public void drawBitmap(Bitmap bitmap, float f10, float f11, Paint paint) {
         Intrinsics.checkNotNullParameter(bitmap, "bitmap");
-        this.f28025b.setColor(d(bitmap, paint, null));
-        this.f28025b.setColorFilter(null);
-        b().drawRect(f10, f11, f10 + bitmap.getWidth(), f11 + bitmap.getHeight(), this.f28025b);
+        this.f28960b.setColor(d(bitmap, paint, null));
+        this.f28960b.setColorFilter(null);
+        b().drawRect(f10, f11, f10 + bitmap.getWidth(), f11 + bitmap.getHeight(), this.f28960b);
     }
 
     @Override // android.graphics.Canvas
@@ -589,7 +589,7 @@ final class l extends Canvas {
     public void drawText(String text, float f10, float f11, Paint paint) {
         Intrinsics.checkNotNullParameter(text, "text");
         Intrinsics.checkNotNullParameter(paint, "paint");
-        paint.getTextBounds(text, 0, text.length(), this.f28027d);
+        paint.getTextBounds(text, 0, text.length(), this.f28962d);
         a(paint, f10, f11);
     }
 
@@ -597,7 +597,7 @@ final class l extends Canvas {
     public void drawTextRun(CharSequence text, int i10, int i11, int i12, int i13, float f10, float f11, boolean z10, Paint paint) {
         Intrinsics.checkNotNullParameter(text, "text");
         Intrinsics.checkNotNullParameter(paint, "paint");
-        paint.getTextBounds(text.toString(), i10, i11, this.f28027d);
+        paint.getTextBounds(text.toString(), i10, i11, this.f28962d);
         a(paint, f10, f11);
     }
 
@@ -683,9 +683,9 @@ final class l extends Canvas {
     public void drawPicture(Picture picture, RectF dst) {
         Intrinsics.checkNotNullParameter(picture, "picture");
         Intrinsics.checkNotNullParameter(dst, "dst");
-        this.f28025b.setColorFilter(null);
-        this.f28025b.setColor(-16777216);
-        b().drawRect(dst, this.f28025b);
+        this.f28960b.setColorFilter(null);
+        this.f28960b.setColor(-16777216);
+        b().drawRect(dst, this.f28960b);
     }
 
     @Override // android.graphics.Canvas
@@ -752,7 +752,7 @@ final class l extends Canvas {
     public void drawText(String text, int i10, int i11, float f10, float f11, Paint paint) {
         Intrinsics.checkNotNullParameter(text, "text");
         Intrinsics.checkNotNullParameter(paint, "paint");
-        paint.getTextBounds(text, i10, i11, this.f28027d);
+        paint.getTextBounds(text, i10, i11, this.f28962d);
         a(paint, f10, f11);
     }
 
@@ -760,7 +760,7 @@ final class l extends Canvas {
     public void drawTextRun(MeasuredText text, int i10, int i11, int i12, int i13, float f10, float f11, boolean z10, Paint paint) {
         Intrinsics.checkNotNullParameter(text, "text");
         Intrinsics.checkNotNullParameter(paint, "paint");
-        paint.getTextBounds(text.toString(), i10, i11, this.f28027d);
+        paint.getTextBounds(text.toString(), i10, i11, this.f28962d);
         a(paint, f10, f11);
     }
 
@@ -789,18 +789,18 @@ final class l extends Canvas {
     public void drawBitmap(Bitmap bitmap, Rect rect, RectF dst, Paint paint) {
         Intrinsics.checkNotNullParameter(bitmap, "bitmap");
         Intrinsics.checkNotNullParameter(dst, "dst");
-        this.f28025b.setColor(d(bitmap, paint, rect));
-        this.f28025b.setColorFilter(null);
-        b().drawRect(dst, this.f28025b);
+        this.f28960b.setColor(d(bitmap, paint, rect));
+        this.f28960b.setColorFilter(null);
+        b().drawRect(dst, this.f28960b);
     }
 
     @Override // android.graphics.Canvas
     public void drawPicture(Picture picture, Rect dst) {
         Intrinsics.checkNotNullParameter(picture, "picture");
         Intrinsics.checkNotNullParameter(dst, "dst");
-        this.f28025b.setColorFilter(null);
-        this.f28025b.setColor(-16777216);
-        b().drawRect(dst, this.f28025b);
+        this.f28960b.setColorFilter(null);
+        this.f28960b.setColor(-16777216);
+        b().drawRect(dst, this.f28960b);
     }
 
     @Override // android.graphics.Canvas
@@ -815,7 +815,7 @@ final class l extends Canvas {
     public void drawText(CharSequence text, int i10, int i11, float f10, float f11, Paint paint) {
         Intrinsics.checkNotNullParameter(text, "text");
         Intrinsics.checkNotNullParameter(paint, "paint");
-        paint.getTextBounds(text.toString(), 0, text.length(), this.f28027d);
+        paint.getTextBounds(text.toString(), 0, text.length(), this.f28962d);
         a(paint, f10, f11);
     }
 
@@ -845,20 +845,20 @@ final class l extends Canvas {
     public void drawBitmap(Bitmap bitmap, Rect rect, Rect dst, Paint paint) {
         Intrinsics.checkNotNullParameter(bitmap, "bitmap");
         Intrinsics.checkNotNullParameter(dst, "dst");
-        this.f28025b.setColor(d(bitmap, paint, rect));
-        this.f28025b.setColorFilter(null);
-        b().drawRect(dst, this.f28025b);
+        this.f28960b.setColor(d(bitmap, paint, rect));
+        this.f28960b.setColorFilter(null);
+        b().drawRect(dst, this.f28960b);
     }
 
     @Override // android.graphics.Canvas
     public void drawBitmap(Bitmap bitmap, Matrix matrix, Paint paint) {
         Intrinsics.checkNotNullParameter(bitmap, "bitmap");
         Intrinsics.checkNotNullParameter(matrix, "matrix");
-        this.f28025b.setColor(d(bitmap, paint, null));
-        this.f28025b.setColorFilter(null);
+        this.f28960b.setColor(d(bitmap, paint, null));
+        this.f28960b.setColorFilter(null);
         int save = b().save();
         b().setMatrix(matrix);
-        b().drawRect(0.0f, 0.0f, bitmap.getWidth(), bitmap.getHeight(), this.f28025b);
+        b().drawRect(0.0f, 0.0f, bitmap.getWidth(), bitmap.getHeight(), this.f28960b);
         b().restoreToCount(save);
     }
 }

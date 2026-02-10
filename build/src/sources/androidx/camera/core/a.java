@@ -12,93 +12,93 @@ import x.v0;
 final class a implements n {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Image f2083d;
+    private final Image f2086d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final C0025a[] f2084e;
+    private final C0022a[] f2087e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final p0 f2085i;
+    private final p0 f2088i;
 
     /* renamed from: androidx.camera.core.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    private static final class C0025a implements n.a {
+    private static final class C0022a implements n.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Image.Plane f2086a;
+        private final Image.Plane f2089a;
 
-        C0025a(Image.Plane plane) {
-            this.f2086a = plane;
+        C0022a(Image.Plane plane) {
+            this.f2089a = plane;
         }
 
         @Override // androidx.camera.core.n.a
-        public ByteBuffer e() {
-            return this.f2086a.getBuffer();
-        }
-
-        @Override // androidx.camera.core.n.a
-        public int f() {
-            return this.f2086a.getRowStride();
+        public ByteBuffer f() {
+            return this.f2089a.getBuffer();
         }
 
         @Override // androidx.camera.core.n.a
         public int g() {
-            return this.f2086a.getPixelStride();
+            return this.f2089a.getRowStride();
+        }
+
+        @Override // androidx.camera.core.n.a
+        public int h() {
+            return this.f2089a.getPixelStride();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(Image image) {
-        this.f2083d = image;
+        this.f2086d = image;
         Image.Plane[] planes = image.getPlanes();
         if (planes != null) {
-            this.f2084e = new C0025a[planes.length];
+            this.f2087e = new C0022a[planes.length];
             for (int i10 = 0; i10 < planes.length; i10++) {
-                this.f2084e[i10] = new C0025a(planes[i10]);
+                this.f2087e[i10] = new C0022a(planes[i10]);
             }
         } else {
-            this.f2084e = new C0025a[0];
+            this.f2087e = new C0022a[0];
         }
-        this.f2085i = v0.e(q2.b(), image.getTimestamp(), 0, new Matrix());
+        this.f2088i = v0.e(q2.b(), image.getTimestamp(), 0, new Matrix());
     }
 
     @Override // androidx.camera.core.n
-    public void A0(Rect rect) {
-        this.f2083d.setCropRect(rect);
+    public void B0(Rect rect) {
+        this.f2086d.setCropRect(rect);
     }
 
     @Override // androidx.camera.core.n
     public p0 E() {
-        return this.f2085i;
+        return this.f2088i;
     }
 
     @Override // androidx.camera.core.n
     public Image F() {
-        return this.f2083d;
-    }
-
-    @Override // androidx.camera.core.n
-    public n.a[] Z0() {
-        return this.f2084e;
+        return this.f2086d;
     }
 
     @Override // androidx.camera.core.n, java.lang.AutoCloseable
     public void close() {
-        this.f2083d.close();
+        this.f2086d.close();
+    }
+
+    @Override // androidx.camera.core.n
+    public n.a[] e1() {
+        return this.f2087e;
     }
 
     @Override // androidx.camera.core.n
     public int getFormat() {
-        return this.f2083d.getFormat();
+        return this.f2086d.getFormat();
     }
 
     @Override // androidx.camera.core.n
     public int getHeight() {
-        return this.f2083d.getHeight();
+        return this.f2086d.getHeight();
     }
 
     @Override // androidx.camera.core.n
     public int getWidth() {
-        return this.f2083d.getWidth();
+        return this.f2086d.getWidth();
     }
 }

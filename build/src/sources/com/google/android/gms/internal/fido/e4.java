@@ -5,10 +5,10 @@ import com.facebook.react.devsupport.StackTraceHelper;
 public abstract class e4 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j5 f14095a = l5.k(StackTraceHelper.ID_KEY);
+    public static final j5 f14672a = l5.k(StackTraceHelper.ID_KEY);
 
     /* renamed from: b  reason: collision with root package name */
-    public static final j5 f14096b = l5.k("type");
+    public static final j5 f14673b = l5.k("type");
 
     static {
         l5.k("transports");

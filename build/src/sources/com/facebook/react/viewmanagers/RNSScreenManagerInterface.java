@@ -8,9 +8,13 @@ import com.facebook.react.uimanager.ViewManagerWithGeneratedInterface;
 public interface RNSScreenManagerInterface<T extends View> extends ViewManagerWithGeneratedInterface {
     void setActivityState(T t10, float f10);
 
+    void setAndroidResetScreenShadowStateOnOrientationChangeEnabled(T t10, boolean z10);
+
+    void setBottomScrollEdgeEffect(T t10, String str);
+
     void setCustomAnimationOnSwipe(T t10, boolean z10);
 
-    void setFullScreenSwipeEnabled(T t10, boolean z10);
+    void setFullScreenSwipeEnabled(T t10, String str);
 
     void setFullScreenSwipeShadowEnabled(T t10, boolean z10);
 
@@ -21,6 +25,8 @@ public interface RNSScreenManagerInterface<T extends View> extends ViewManagerWi
     void setHideKeyboardOnSwipe(T t10, boolean z10);
 
     void setHomeIndicatorHidden(T t10, boolean z10);
+
+    void setLeftScrollEdgeEffect(T t10, String str);
 
     void setNativeBackButtonDismissalEnabled(T t10, boolean z10);
 
@@ -34,11 +40,17 @@ public interface RNSScreenManagerInterface<T extends View> extends ViewManagerWi
 
     void setReplaceAnimation(T t10, String str);
 
+    void setRightScrollEdgeEffect(T t10, String str);
+
+    void setScreenId(T t10, String str);
+
     void setScreenOrientation(T t10, String str);
 
     void setSheetAllowedDetents(T t10, ReadableArray readableArray);
 
     void setSheetCornerRadius(T t10, float f10);
+
+    void setSheetDefaultResizeAnimationEnabled(T t10, boolean z10);
 
     void setSheetElevation(T t10, int i10);
 
@@ -49,6 +61,8 @@ public interface RNSScreenManagerInterface<T extends View> extends ViewManagerWi
     void setSheetInitialDetent(T t10, int i10);
 
     void setSheetLargestUndimmedDetent(T t10, int i10);
+
+    void setSheetShouldOverflowTopInset(T t10, boolean z10);
 
     void setStackAnimation(T t10, String str);
 
@@ -65,6 +79,10 @@ public interface RNSScreenManagerInterface<T extends View> extends ViewManagerWi
     void setStatusBarTranslucent(T t10, boolean z10);
 
     void setSwipeDirection(T t10, String str);
+
+    void setSynchronousShadowStateUpdatesEnabled(T t10, boolean z10);
+
+    void setTopScrollEdgeEffect(T t10, String str);
 
     void setTransitionDuration(T t10, int i10);
 }

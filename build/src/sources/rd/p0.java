@@ -12,34 +12,34 @@ public final class p0 extends Timeline {
     private final MediaItem.g C;
 
     /* renamed from: q  reason: collision with root package name */
-    private final long f47973q;
+    private final long f46427q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final long f47974r;
+    private final long f46428r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final long f47975s;
+    private final long f46429s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final long f47976t;
+    private final long f46430t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final long f47977u;
+    private final long f46431u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final long f47978v;
+    private final long f46432v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final long f47979w;
+    private final long f46433w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final boolean f47980x;
+    private final boolean f46434x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final boolean f47981y;
+    private final boolean f46435y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final boolean f47982z;
+    private final boolean f46436z;
 
     public p0(long j10, boolean z10, boolean z11, boolean z12, Object obj, MediaItem mediaItem) {
         this(j10, j10, 0L, 0L, z10, z11, z12, obj, mediaItem);
@@ -62,7 +62,7 @@ public final class p0 extends Timeline {
         } else {
             obj = null;
         }
-        return bVar.v(null, obj, 0, this.f47976t, -this.f47978v);
+        return bVar.v(null, obj, 0, this.f46430t, -this.f46432v);
     }
 
     @Override // com.google.android.exoplayer2.Timeline
@@ -92,15 +92,15 @@ public final class p0 extends Timeline {
             r2 = 1
             r3 = r25
             oe.a.c(r3, r1, r2)
-            long r1 = r0.f47979w
-            boolean r14 = r0.f47981y
+            long r1 = r0.f46433w
+            boolean r14 = r0.f46435y
             if (r14 == 0) goto L2e
-            boolean r3 = r0.f47982z
+            boolean r3 = r0.f46436z
             if (r3 != 0) goto L2e
             r3 = 0
             int r3 = (r27 > r3 ? 1 : (r27 == r3 ? 0 : -1))
             if (r3 == 0) goto L2e
-            long r3 = r0.f47977u
+            long r3 = r0.f46431u
             r5 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
             int r7 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
             if (r7 != 0) goto L27
@@ -118,15 +118,15 @@ public final class p0 extends Timeline {
             java.lang.Object r4 = com.google.android.exoplayer2.Timeline.d.C
             com.google.android.exoplayer2.MediaItem r5 = r0.B
             java.lang.Object r6 = r0.A
-            long r7 = r0.f47973q
-            long r9 = r0.f47974r
-            long r11 = r0.f47975s
-            boolean r13 = r0.f47980x
+            long r7 = r0.f46427q
+            long r9 = r0.f46428r
+            long r11 = r0.f46429s
+            boolean r13 = r0.f46434x
             com.google.android.exoplayer2.MediaItem$g r15 = r0.C
-            long r1 = r0.f47977u
+            long r1 = r0.f46431u
             r21 = 0
             r18 = r1
-            long r1 = r0.f47978v
+            long r1 = r0.f46432v
             r20 = 0
             r3 = r26
             r22 = r1
@@ -142,20 +142,20 @@ public final class p0 extends Timeline {
     }
 
     public p0(long j10, long j11, long j12, long j13, boolean z10, boolean z11, boolean z12, Object obj, MediaItem mediaItem) {
-        this(-9223372036854775807L, -9223372036854775807L, -9223372036854775807L, j10, j11, j12, j13, z10, z11, false, obj, mediaItem, z12 ? mediaItem.f11767o : null);
+        this(-9223372036854775807L, -9223372036854775807L, -9223372036854775807L, j10, j11, j12, j13, z10, z11, false, obj, mediaItem, z12 ? mediaItem.f12344o : null);
     }
 
     public p0(long j10, long j11, long j12, long j13, long j14, long j15, long j16, boolean z10, boolean z11, boolean z12, Object obj, MediaItem mediaItem, MediaItem.g gVar) {
-        this.f47973q = j10;
-        this.f47974r = j11;
-        this.f47975s = j12;
-        this.f47976t = j13;
-        this.f47977u = j14;
-        this.f47978v = j15;
-        this.f47979w = j16;
-        this.f47980x = z10;
-        this.f47981y = z11;
-        this.f47982z = z12;
+        this.f46427q = j10;
+        this.f46428r = j11;
+        this.f46429s = j12;
+        this.f46430t = j13;
+        this.f46431u = j14;
+        this.f46432v = j15;
+        this.f46433w = j16;
+        this.f46434x = z10;
+        this.f46435y = z11;
+        this.f46436z = z12;
         this.A = obj;
         this.B = (MediaItem) oe.a.e(mediaItem);
         this.C = gVar;

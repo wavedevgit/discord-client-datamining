@@ -8,73 +8,73 @@ import java.util.Map;
 public final class a0 implements DataSource {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DataSource f36957a;
+    private final DataSource f36332a;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f36958b;
+    private long f36333b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Uri f36959c = Uri.EMPTY;
+    private Uri f36334c = Uri.EMPTY;
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f36960d = Collections.EMPTY_MAP;
+    private Map f36335d = Collections.EMPTY_MAP;
 
     public a0(DataSource dataSource) {
-        this.f36957a = (DataSource) oe.a.e(dataSource);
+        this.f36332a = (DataSource) oe.a.e(dataSource);
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public long b(com.google.android.exoplayer2.upstream.a aVar) {
-        this.f36959c = aVar.f13405a;
-        this.f36960d = Collections.EMPTY_MAP;
-        long b10 = this.f36957a.b(aVar);
-        this.f36959c = (Uri) oe.a.e(m());
-        this.f36960d = d();
+        this.f36334c = aVar.f13982a;
+        this.f36335d = Collections.EMPTY_MAP;
+        long b10 = this.f36332a.b(aVar);
+        this.f36334c = (Uri) oe.a.e(m());
+        this.f36335d = d();
         return b10;
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void close() {
-        this.f36957a.close();
+        this.f36332a.close();
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Map d() {
-        return this.f36957a.d();
+        return this.f36332a.d();
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void i(c0 c0Var) {
         oe.a.e(c0Var);
-        this.f36957a.i(c0Var);
+        this.f36332a.i(c0Var);
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Uri m() {
-        return this.f36957a.m();
+        return this.f36332a.m();
     }
 
     public long o() {
-        return this.f36958b;
+        return this.f36333b;
     }
 
     public Uri p() {
-        return this.f36959c;
+        return this.f36334c;
     }
 
     public Map q() {
-        return this.f36960d;
+        return this.f36335d;
     }
 
     public void r() {
-        this.f36958b = 0L;
+        this.f36333b = 0L;
     }
 
     @Override // me.j
     public int read(byte[] bArr, int i10, int i11) {
-        int read = this.f36957a.read(bArr, i10, i11);
+        int read = this.f36332a.read(bArr, i10, i11);
         if (read != -1) {
-            this.f36958b += read;
+            this.f36333b += read;
         }
         return read;
     }

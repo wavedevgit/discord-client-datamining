@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot14 = var3;
     var6 = var7.memo;
     var3 = function(arg0) { // Environment: var1
-        _fun102236: for (var _fun102236_ip = 0;;) switch (_fun102236_ip) {
+        _fun102288: for (var _fun102288_ip = 0;;) switch (_fun102288_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.text;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0.panelVariant;
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun102236_ip = 33;
-                    continue _fun102236
+                    _fun102288_ip = 33;
+                    continue _fun102288
                 }
             case 31:
                 var4 = false;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowActions.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun102237: for (var _fun102237_ip = 0;;) switch (_fun102237_ip) {
+        _fun102289: for (var _fun102289_ip = 0;;) switch (_fun102289_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.guildId;
@@ -214,8 +214,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1.panelVariant;
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun102237_ip = 28;
-                    continue _fun102237
+                    _fun102289_ip = 28;
+                    continue _fun102289
                 }
             case 26:
                 var4 = false;
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HappeningNowCardCreateChannel = var3;
     var3 = function arg0() {
-        _fun102239: for (var _fun102239_ip = 0;;) switch (_fun102239_ip) {
+        _fun102291: for (var _fun102291_ip = 0;;) switch (_fun102291_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.guildId;
@@ -283,8 +283,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1.panelVariant;
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun102239_ip = 28;
-                    continue _fun102239
+                    _fun102291_ip = 28;
+                    continue _fun102291
                 }
             case 26:
                 var4 = false;
@@ -329,7 +329,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HappeningNowCardCustomizeGuild = var3;
     var3 = function arg0() {
-        _fun102241: for (var _fun102241_ip = 0;;) switch (_fun102241_ip) {
+        _fun102293: for (var _fun102293_ip = 0;;) switch (_fun102293_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.guildId;
@@ -337,8 +337,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1.panelVariant;
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun102241_ip = 28;
-                    continue _fun102241
+                    _fun102293_ip = 28;
+                    continue _fun102293
                 }
             case 26:
                 var4 = false;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var7;
                 var0 = function() { // Environment: var0
-                    _fun102242: for (var _fun102242_ip = 0;;) switch (_fun102242_ip) {
+                    _fun102294: for (var _fun102294_ip = 0;;) switch (_fun102294_ip) {
                         case 0:
                             var3 = _closure1_slot7;
                             var2 = var3.getGuild;
@@ -362,8 +362,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var2.bind(var3)(var6);
                             var2 = null;
                             if (!(var2 != var5)) {
-                                _fun102242_ip = 138;
-                                continue _fun102242
+                                _fun102294_ip = 138;
+                                continue _fun102294
                             }
                         case 60:
                             var7 = _closure1_slot16;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HappeningNowCardInvite = var3;
     var1 = function arg0() {
-        _fun102243: for (var _fun102243_ip = 0;;) switch (_fun102243_ip) {
+        _fun102295: for (var _fun102295_ip = 0;;) switch (_fun102295_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.guildId;
@@ -428,8 +428,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1.panelVariant;
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun102243_ip = 28;
-                    continue _fun102243
+                    _fun102295_ip = 28;
+                    continue _fun102295
                 }
             case 26:
                 var4 = false;
@@ -439,7 +439,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var7;
                 var0 = function() { // Environment: var0
-                    _fun102244: for (var _fun102244_ip = 0;;) switch (_fun102244_ip) {
+                    _fun102296: for (var _fun102296_ip = 0;;) switch (_fun102296_ip) {
                         case 0:
                             var3 = _closure1_slot7;
                             var2 = var3.getGuild;
@@ -451,15 +451,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = null;
                             var2 = var5 != var4;
                             if (!var2) {
-                                _fun102244_ip = 52;
-                                continue _fun102244
+                                _fun102296_ip = 52;
+                                continue _fun102296
                             }
                         case 48:
                             var2 = var5 != var3;
                         case 52:
                             if (!var2) {
-                                _fun102244_ip = 144;
-                                continue _fun102244
+                                _fun102296_ip = 144;
+                                continue _fun102296
                             }
                         case 55:
                             var6 = _closure1_slot16;
@@ -517,4 +517,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HappeningNowStudentHubAddServer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1673, 1410, 1672, 10955, 660, 33, 1297, 671, 795, 8179, 13310, 1234, 8199, 13311, 8375, 13312, 8982, 11479, 10956, 3942, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1673, 1410, 1672, 10966, 660, 33, 1297, 671, 795, 8189, 13319, 1234, 8209, 13320, 8385, 13321, 8993, 11490, 10967, 3942, 2]);

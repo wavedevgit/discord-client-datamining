@@ -12,43 +12,43 @@ import org.jetbrains.annotations.NotNull;
 public final class PredefinedFunctionEnhancementInfo {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TypeEnhancementInfo f32833a;
+    private final TypeEnhancementInfo f33055a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f32834b;
+    private final List f33056b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f32835c;
+    private final String f33057c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final PredefinedFunctionEnhancementInfo f32836d;
+    private final PredefinedFunctionEnhancementInfo f33058d;
 
     public PredefinedFunctionEnhancementInfo() {
         this(null, null, null, 7, null);
     }
 
     public final String getErrorsSinceLanguageVersion() {
-        return this.f32835c;
+        return this.f33057c;
     }
 
     @NotNull
     public final List<TypeEnhancementInfo> getParametersInfo() {
-        return this.f32834b;
+        return this.f33056b;
     }
 
     public final TypeEnhancementInfo getReturnTypeInfo() {
-        return this.f32833a;
+        return this.f33055a;
     }
 
     public final PredefinedFunctionEnhancementInfo getWarningModeClone() {
-        return this.f32836d;
+        return this.f33058d;
     }
 
     public PredefinedFunctionEnhancementInfo(TypeEnhancementInfo typeEnhancementInfo, @NotNull List<TypeEnhancementInfo> parametersInfo, String str) {
         Intrinsics.checkNotNullParameter(parametersInfo, "parametersInfo");
-        this.f32833a = typeEnhancementInfo;
-        this.f32834b = parametersInfo;
-        this.f32835c = str;
+        this.f33055a = typeEnhancementInfo;
+        this.f33056b = parametersInfo;
+        this.f33057c = str;
         PredefinedFunctionEnhancementInfo predefinedFunctionEnhancementInfo = null;
         if (str != null) {
             TypeEnhancementInfo copyForWarnings = typeEnhancementInfo != null ? typeEnhancementInfo.copyForWarnings() : null;
@@ -59,7 +59,7 @@ public final class PredefinedFunctionEnhancementInfo {
             }
             predefinedFunctionEnhancementInfo = new PredefinedFunctionEnhancementInfo(copyForWarnings, arrayList, null);
         }
-        this.f32836d = predefinedFunctionEnhancementInfo;
+        this.f33058d = predefinedFunctionEnhancementInfo;
     }
 
     public /* synthetic */ PredefinedFunctionEnhancementInfo(TypeEnhancementInfo typeEnhancementInfo, List list, String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {

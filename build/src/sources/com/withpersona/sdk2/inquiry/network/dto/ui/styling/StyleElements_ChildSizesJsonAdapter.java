@@ -45,7 +45,7 @@ public final class StyleElements_ChildSizesJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 iArr = (int[]) this.nullableIntArrayAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class StyleElements_ChildSizesJsonAdapter extends h {
     public void toJson(@NotNull t writer, StyleElements.ChildSizes childSizes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (childSizes != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableIntArrayAdapter.toJson(writer, childSizes.getBase());
             writer.s();

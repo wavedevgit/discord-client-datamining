@@ -1,56 +1,97 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = module;
-    var1 = function arg0, arg1() {
-        _fun45645: for (var _fun45645_ip = 0;;) switch (_fun45645_ip) {
+    var2 = exports;
+    var0 = global;
+    var _closure1_slot0 = var0;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var3 = dependencyMap;
+    var0 = 0;
+    var4 = var3[var0];
+    var3 = require;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var4);
+    var3 = var3.Platform;
+    var1 = function() {
+        _fun45648: for (var _fun45648_ip = 0;;) switch (_fun45648_ip) {
             case 0:
-                var8 = arg0;
-                var7 = arg1;
-                var0 = null;
-                if (!(var0 != var8)) {
-                    _fun45645_ip = 92;
-                    continue _fun45645
+                var5 = undefined;
+                var9 = undefined;
+                var6 = undefined;
+                var4 = undefined;
+                var3 = undefined;
+                var1 = _closure1_slot1;
+                if (!(var5 === var1)) {
+                    _fun45648_ip = 128;
+                    continue _fun45648
                 }
-            case 12:
-                var0 = {};
-                var5 = var8;
-                var1 = -1;
-                for (var2 in var5)
-                    case 31: {
-                        case 40: var10 = var2;
-                        var9 = {};
-                        var11 = var9.hasOwnProperty;
-                        var9 = var11.call;
-                        var9 = var9.bind(var11)(var8, var10);
-                        if (!var9) {
-                            _fun45645_ip = 31;
-                            continue _fun45645
-                        }
-                        case 65: var9 = var7.indexOf;
-                        var9 = var9.bind(var7)(var10);
-                        if (var1 !== var9) {
-                            _fun45645_ip = 31;
-                            continue _fun45645
-                        }
-                        case 80: var9 = var8[var10];
-                        var0[var10] = var9;
-                        _fun45645_ip = 31;
-                        continue _fun45645;
-                    }
-            case 90:
-                return var0;
-            case 92:
-                var0 = {};
+            case 21: // try_start_0
+                var1 = global;
+                var8 = var1.Boolean;
+                var2 = _closure1_slot0;
+                var9 = var2;
+                var7 = null;
+                var10 = var7 == var2;
+                var2 = undefined;
+                if (var10) {
+                    _fun45648_ip = 53;
+                    continue _fun45648
+                }
+            case 47:
+                var2 = var9.nativeFabricUIManager;
+            case 53:
+                var4 = var8.bind(var5)(var2);
+                var2 = var1.Boolean;
+                var1 = _closure1_slot0;
+                var6 = var1;
+                var7 = var7 == var1;
+                var1 = undefined;
+                if (var7) {
+                    _fun45648_ip = 86;
+                    continue _fun45648
+                }
+            case 80:
+                var1 = var6.__turboModuleProxy;
+            case 86:
+                var3 = var2.bind(var5)(var1);
+                var2 = var4;
+                if (var4) {
+                    _fun45648_ip = 100;
+                    continue _fun45648
+                }
+            case 97:
+                var2 = var3;
+            case 100:
+                var1 = var2;
+                if (var2) {
+                    _fun45648_ip = 108;
+                    continue _fun45648
+                }
+            case 106:
+                var1 = false;
+            case 108:
+                var _closure1_slot1 = var1;
+            case 112: // try_end0
+                _fun45648_ip = 122;
+                continue _fun45648;
+            case 114: // catch_target0
+                CatchBlockStart(arg_register = 1);
+                var1 = true;
+                _closure1_slot1 = var1;
+            case 122:
+                var1 = _closure1_slot1;
+                return var1;
+            case 128:
+                var0 = _closure1_slot1;
                 return var0;
         }
     };
-    var0.exports = var1;
-    var2 = var0.exports;
-    var1 = true;
-    var2.__esModule = var1;
-    var1 = var0.exports;
-    var0 = var0.exports;
-    var1.default = var0;
-    var0 = undefined;
+    var2.isNewArch = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

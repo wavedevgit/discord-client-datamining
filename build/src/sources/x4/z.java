@@ -10,22 +10,22 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import okio.BufferedSource;
-import ps.x0;
 import x4.k;
+import ys.x0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class z implements k {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f54656d = new a(null);
+    public static final a f54388d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final r f54657a;
+    private final r f54389a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final g5.m f54658b;
+    private final g5.m f54390b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f54659c;
+    private final boolean f54391c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -38,9 +38,9 @@ public final class z implements k {
     }
 
     public z(r rVar, g5.m mVar, boolean z10) {
-        this.f54657a = rVar;
-        this.f54658b = mVar;
-        this.f54659c = z10;
+        this.f54389a = rVar;
+        this.f54390b = mVar;
+        this.f54391c = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -49,59 +49,59 @@ public final class z implements k {
         float f10;
         int c10;
         int c11;
-        BufferedSource g10 = zVar.f54657a.g();
+        BufferedSource h11 = zVar.f54389a.h();
         try {
-            g6.g l10 = g6.g.l(g10.n2());
+            g6.g l10 = g6.g.l(h11.s2());
             g6.f fVar = null;
-            cs.c.a(g10, null);
-            RectF g11 = l10.g();
-            if (zVar.f54659c && g11 != null) {
-                h10 = g11.width();
-                f10 = g11.height();
+            ls.c.a(h11, null);
+            RectF g10 = l10.g();
+            if (zVar.f54391c && g10 != null) {
+                h10 = g10.width();
+                f10 = g10.height();
             } else {
                 h10 = l10.h();
                 f10 = l10.f();
             }
-            Pair d10 = zVar.d(h10, f10, zVar.f54658b.n());
+            Pair d10 = zVar.d(h10, f10, zVar.f54390b.n());
             float floatValue = ((Number) d10.a()).floatValue();
             float floatValue2 = ((Number) d10.b()).floatValue();
             int i10 = (h10 > 0.0f ? 1 : (h10 == 0.0f ? 0 : -1));
             if (i10 > 0 && f10 > 0.0f) {
-                float d11 = j.d(h10, f10, floatValue, floatValue2, zVar.f54658b.n());
+                float d11 = j.d(h10, f10, floatValue, floatValue2, zVar.f54390b.n());
                 c10 = (int) (d11 * h10);
                 c11 = (int) (d11 * f10);
             } else {
-                c10 = gs.a.c(floatValue);
-                c11 = gs.a.c(floatValue2);
+                c10 = ps.a.c(floatValue);
+                c11 = ps.a.c(floatValue2);
             }
-            if (g11 == null && i10 > 0 && f10 > 0.0f) {
+            if (g10 == null && i10 > 0 && f10 > 0.0f) {
                 l10.s(0.0f, 0.0f, h10, f10);
             }
             l10.t("100%");
             l10.r("100%");
-            Bitmap createBitmap = Bitmap.createBitmap(c10, c11, k5.j.d(zVar.f54658b.f()));
-            String a10 = g5.r.a(zVar.f54658b.l());
+            Bitmap createBitmap = Bitmap.createBitmap(c10, c11, k5.j.d(zVar.f54390b.f()));
+            String a10 = g5.r.a(zVar.f54390b.l());
             if (a10 != null) {
                 fVar = new g6.f().a(a10);
             }
             l10.o(new Canvas(createBitmap), fVar);
-            return new i(new BitmapDrawable(zVar.f54658b.g().getResources(), createBitmap), true);
+            return new i(new BitmapDrawable(zVar.f54390b.g().getResources(), createBitmap), true);
         } finally {
         }
     }
 
     private final Pair d(float f10, float f11, h5.h hVar) {
-        if (h5.b.b(this.f54658b.o())) {
+        if (h5.b.b(this.f54390b.o())) {
             if (f10 <= 0.0f) {
                 f10 = 512.0f;
             }
             if (f11 <= 0.0f) {
                 f11 = 512.0f;
             }
-            return rr.v.a(Float.valueOf(f10), Float.valueOf(f11));
+            return as.v.a(Float.valueOf(f10), Float.valueOf(f11));
         }
-        h5.i o10 = this.f54658b.o();
-        return rr.v.a(Float.valueOf(k5.j.c(o10.a(), hVar)), Float.valueOf(k5.j.c(o10.b(), hVar)));
+        h5.i o10 = this.f54390b.o();
+        return as.v.a(Float.valueOf(k5.j.c(o10.a(), hVar)), Float.valueOf(k5.j.c(o10.b(), hVar)));
     }
 
     @Override // x4.k
@@ -120,14 +120,14 @@ public final class z implements k {
     public static final class b implements k.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean f54660a;
+        private final boolean f54392a;
 
         public b(boolean z10) {
-            this.f54660a = z10;
+            this.f54392a = z10;
         }
 
         private final boolean b(a5.l lVar) {
-            if (!Intrinsics.areEqual(lVar.b(), "image/svg+xml") && !x.a(j.f54619a, lVar.c().g())) {
+            if (!Intrinsics.areEqual(lVar.b(), "image/svg+xml") && !x.a(j.f54351a, lVar.c().h())) {
                 return false;
             }
             return true;
@@ -138,21 +138,21 @@ public final class z implements k {
             if (!b(lVar)) {
                 return null;
             }
-            return new z(lVar.c(), mVar, this.f54660a);
+            return new z(lVar.c(), mVar, this.f54392a);
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof b) && this.f54660a == ((b) obj).f54660a) {
+            if ((obj instanceof b) && this.f54392a == ((b) obj).f54392a) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Boolean.hashCode(this.f54660a);
+            return Boolean.hashCode(this.f54392a);
         }
 
         public /* synthetic */ b(boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {

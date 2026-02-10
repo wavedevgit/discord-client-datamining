@@ -3,54 +3,66 @@ package qg;
 public final class ga {
 
     /* renamed from: a  reason: collision with root package name */
-    private final hc f45824a;
+    private final hc f44492a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final da f45825b;
+    private final da f44493b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ba f45826c;
+    private final ba f44494c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final wa f45827d;
+    private final wa f44495d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final za f45828e;
+    private final za f44496e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final s2 f45829f;
+    private final s2 f44497f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ ga(ea eaVar, fa faVar) {
-        this.f45824a = eaVar.f45750a;
-        this.f45825b = eaVar.f45751b;
-        this.f45826c = eaVar.f45752c;
-        this.f45827d = eaVar.f45753d;
-        this.f45828e = eaVar.f45754e;
-        this.f45829f = eaVar.f45755f;
+        hc hcVar;
+        da daVar;
+        ba baVar;
+        wa waVar;
+        za zaVar;
+        s2 s2Var;
+        hcVar = eaVar.f44418a;
+        this.f44492a = hcVar;
+        daVar = eaVar.f44419b;
+        this.f44493b = daVar;
+        baVar = eaVar.f44420c;
+        this.f44494c = baVar;
+        waVar = eaVar.f44421d;
+        this.f44495d = waVar;
+        zaVar = eaVar.f44422e;
+        this.f44496e = zaVar;
+        s2Var = eaVar.f44423f;
+        this.f44497f = s2Var;
     }
 
     public final s2 a() {
-        return this.f45829f;
+        return this.f44497f;
     }
 
     public final ba b() {
-        return this.f45826c;
+        return this.f44494c;
     }
 
     public final da c() {
-        return this.f45825b;
+        return this.f44493b;
     }
 
     public final wa d() {
-        return this.f45827d;
+        return this.f44495d;
     }
 
     public final za e() {
-        return this.f45828e;
+        return this.f44496e;
     }
 
     public final hc f() {
-        return this.f45824a;
+        return this.f44492a;
     }
 }

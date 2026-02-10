@@ -12,11 +12,11 @@ final class DebugPrintBuilder {
     @NotNull
 
     /* renamed from: sb  reason: collision with root package name */
-    private final StringBuilder f9321sb;
+    private final StringBuilder f9898sb;
 
     public DebugPrintBuilder(@NotNull StringBuilder sb2) {
         Intrinsics.checkNotNullParameter(sb2, "sb");
-        this.f9321sb = sb2;
+        this.f9898sb = sb2;
     }
 
     public static /* synthetic */ void appendLine$default(DebugPrintBuilder debugPrintBuilder, String str, int i10, Object obj) {
@@ -30,23 +30,23 @@ final class DebugPrintBuilder {
         Intrinsics.checkNotNullParameter(key, "key");
         int i10 = this.indentation;
         for (int i11 = 0; i11 < i10; i11++) {
-            this.f9321sb.append("  ");
+            this.f9898sb.append("  ");
         }
-        this.f9321sb.append(" - ");
-        this.f9321sb.append(key);
-        this.f9321sb.append(": ");
-        this.f9321sb.append((obj == null || (r6 = obj.toString()) == null) ? "{null}" : "{null}");
-        this.f9321sb.append('\n');
+        this.f9898sb.append(" - ");
+        this.f9898sb.append(key);
+        this.f9898sb.append(": ");
+        this.f9898sb.append((obj == null || (r6 = obj.toString()) == null) ? "{null}" : "{null}");
+        this.f9898sb.append('\n');
     }
 
     public final void appendLine(String str) {
-        StringBuilder sb2 = this.f9321sb;
+        StringBuilder sb2 = this.f9898sb;
         sb2.append(str);
         sb2.append('\n');
     }
 
     @NotNull
     public final StringBuilder getSb() {
-        return this.f9321sb;
+        return this.f9898sb;
     }
 }

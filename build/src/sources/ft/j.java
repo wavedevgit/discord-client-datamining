@@ -1,41 +1,55 @@
 package ft;
 
-import jt.e;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import zs.k;
+import dt.f0;
+import dt.h0;
+import java.util.concurrent.TimeUnit;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class j implements KSerializer {
+public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j f23237a = new j();
+    public static final String f24374a = f0.e("kotlinx.coroutines.scheduler.default.name", "DefaultDispatcher");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f23238b = jt.j.b("kotlinx.datetime.UtcOffset", e.i.f30484a);
+    public static final long f24375b;
 
-    private j() {
+    /* renamed from: c  reason: collision with root package name */
+    public static final int f24376c;
+
+    /* renamed from: d  reason: collision with root package name */
+    public static final int f24377d;
+
+    /* renamed from: e  reason: collision with root package name */
+    public static final long f24378e;
+
+    /* renamed from: f  reason: collision with root package name */
+    public static g f24379f;
+
+    static {
+        long f10;
+        int e10;
+        int e11;
+        long f11;
+        f10 = h0.f("kotlinx.coroutines.scheduler.resolution.ns", 100000L, 0L, 0L, 12, null);
+        f24375b = f10;
+        e10 = h0.e("kotlinx.coroutines.scheduler.core.pool.size", kotlin.ranges.d.d(f0.a(), 2), 1, 0, 8, null);
+        f24376c = e10;
+        e11 = h0.e("kotlinx.coroutines.scheduler.max.pool.size", 2097150, 0, 2097150, 4, null);
+        f24377d = e11;
+        TimeUnit timeUnit = TimeUnit.SECONDS;
+        f11 = h0.f("kotlinx.coroutines.scheduler.keep.alive.sec", 60L, 0L, 0L, 12, null);
+        f24378e = timeUnit.toNanos(f11);
+        f24379f = e.f24365a;
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public k deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return k.a.b(k.Companion, decoder.z(), null, 2, null);
+    public static final h b(Runnable runnable, long j10, boolean z10) {
+        return new i(runnable, j10, z10);
     }
 
-    @Override // gt.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, k value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        encoder.E(value.toString());
-    }
-
-    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f23238b;
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final String c(boolean z10) {
+        if (z10) {
+            return "Blocking";
+        }
+        return "Non-blocking";
     }
 }

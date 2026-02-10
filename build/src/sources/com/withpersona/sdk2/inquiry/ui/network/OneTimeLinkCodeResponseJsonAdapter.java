@@ -12,19 +12,19 @@ import org.jetbrains.annotations.NotNull;
 public final class OneTimeLinkCodeResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19965a;
+    private final m.b f20845a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19966b;
+    private final h f20846b;
 
     public OneTimeLinkCodeResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19965a = a10;
+        this.f20845a = a10;
         h f10 = moshi.f(Metadata.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19966b = f10;
+        this.f20846b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -34,13 +34,13 @@ public final class OneTimeLinkCodeResponseJsonAdapter extends h {
         reader.u();
         Metadata metadata = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19965a);
+            int J = reader.J(this.f20845a);
             if (J != -1) {
                 if (J == 0) {
-                    metadata = (Metadata) this.f19966b.fromJson(reader);
+                    metadata = (Metadata) this.f20846b.fromJson(reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -53,9 +53,9 @@ public final class OneTimeLinkCodeResponseJsonAdapter extends h {
     public void toJson(t writer, OneTimeLinkCodeResponse oneTimeLinkCodeResponse) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (oneTimeLinkCodeResponse != null) {
-            writer.k();
+            writer.i();
             writer.J("meta");
-            this.f19966b.toJson(writer, oneTimeLinkCodeResponse.a());
+            this.f20846b.toJson(writer, oneTimeLinkCodeResponse.a());
             writer.s();
             return;
         }

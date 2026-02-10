@@ -18,19 +18,19 @@ public final class o extends ig.a implements IInterface {
         f10.writeInt(i10);
         ig.o.b(f10, aVar2);
         Parcel e10 = e(3, f10);
-        tf.a f11 = a.AbstractBinderC0694a.f(e10.readStrongBinder());
+        tf.a f11 = a.AbstractBinderC0660a.f(e10.readStrongBinder());
         e10.recycle();
         return f11;
     }
 
-    public final tf.a h(tf.a aVar, String str, int i10, tf.a aVar2) {
+    public final tf.a i(tf.a aVar, String str, int i10, tf.a aVar2) {
         Parcel f10 = f();
         ig.o.b(f10, aVar);
         f10.writeString(str);
         f10.writeInt(i10);
         ig.o.b(f10, aVar2);
         Parcel e10 = e(2, f10);
-        tf.a f11 = a.AbstractBinderC0694a.f(e10.readStrongBinder());
+        tf.a f11 = a.AbstractBinderC0660a.f(e10.readStrongBinder());
         e10.recycle();
         return f11;
     }

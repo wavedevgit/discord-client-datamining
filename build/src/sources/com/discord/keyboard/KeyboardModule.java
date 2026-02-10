@@ -11,7 +11,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import qm.a;
+import sm.a;
 @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\b\u0010\b\u001a\u00020\tH\u0016J\b\u0010\n\u001a\u00020\tH\u0016J\b\u0010\u000b\u001a\u00020\tH\u0016J\u0010\u0010\f\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\u000eH\u0016J\b\u0010\u000f\u001a\u00020\tH\u0016R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007¨\u0006\u0010"}, d2 = {"Lcom/discord/keyboard/KeyboardModule;", "Lcom/discord/codegen/NativeKeyboardModuleSpec;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "getReactContext", "()Lcom/facebook/react/bridge/ReactApplicationContext;", "initialize", "", "invalidate", "dismissGlobalKeyboard", "onKeyboardChanged", "opened", "", "clearCurrentFocusAndDismissKeyboard", "keyboard_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class KeyboardModule extends NativeKeyboardModuleSpec {
@@ -56,13 +56,13 @@ public final class KeyboardModule extends NativeKeyboardModuleSpec {
     @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule, com.facebook.react.turbomodule.core.interfaces.TurboModule
     public void initialize() {
         super.initialize();
-        a.f46623a.d(this.reactContext);
+        a.f48171a.d(this.reactContext);
     }
 
     @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule, com.facebook.react.turbomodule.core.interfaces.TurboModule
     public void invalidate() {
         super.invalidate();
-        a.f46623a.d(null);
+        a.f48171a.d(null);
     }
 
     @Override // com.discord.codegen.NativeKeyboardModuleSpec

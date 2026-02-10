@@ -4,32 +4,32 @@ import android.content.Context;
 import android.text.Editable;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
+import android.view.accessibility.AccessibilityManager;
 import android.widget.EditText;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import c2.c;
 import com.google.android.material.internal.CheckableImageButton;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class s {
 
     /* renamed from: a  reason: collision with root package name */
-    final TextInputLayout f15646a;
+    final TextInputLayout f16395a;
 
     /* renamed from: b  reason: collision with root package name */
-    final r f15647b;
+    final r f16396b;
 
     /* renamed from: c  reason: collision with root package name */
-    final Context f15648c;
+    final Context f16397c;
 
     /* renamed from: d  reason: collision with root package name */
-    final CheckableImageButton f15649d;
+    final CheckableImageButton f16398d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s(r rVar) {
-        this.f15646a = rVar.f15624d;
-        this.f15647b = rVar;
-        this.f15648c = rVar.getContext();
-        this.f15649d = rVar.r();
+        this.f16395a = rVar.f16373d;
+        this.f16396b = rVar;
+        this.f16397c = rVar.getContext();
+        this.f16398d = rVar.r();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -66,7 +66,7 @@ public abstract class s {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public c.a h() {
+    public AccessibilityManager.TouchExplorationStateChangeListener h() {
         return null;
     }
 
@@ -113,7 +113,7 @@ public abstract class s {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void r() {
-        this.f15647b.L(false);
+        this.f16396b.L(false);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

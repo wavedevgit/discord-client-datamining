@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var3 = function arg0() {
-        _fun40889: for (var _fun40889_ip = 0;;) switch (_fun40889_ip) {
+        _fun40942: for (var _fun40942_ip = 0;;) switch (_fun40942_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var1 = var3.getUser;
@@ -17,8 +17,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var4;
                 var1 = undefined;
                 if (var3) {
-                    _fun40889_ip = 53;
-                    continue _fun40889
+                    _fun40942_ip = 53;
+                    continue _fun40942
                 }
             case 32:
                 var3 = var4.hasFlag;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 53:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun40889_ip = 63;
-                    continue _fun40889
+                    _fun40942_ip = 63;
+                    continue _fun40942
                 }
             case 60:
                 var0 = var1;
@@ -66,14 +66,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/messages/isSpam.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function arg0() {
-        _fun40890: for (var _fun40890_ip = 0;;) switch (_fun40890_ip) {
+        _fun40943: for (var _fun40943_ip = 0;;) switch (_fun40943_ip) {
             case 0:
                 var1 = arg0;
                 var0 = undefined;
                 var0 = var0 !== var1;
                 if (!var0) {
-                    _fun40890_ip = 34;
-                    continue _fun40890
+                    _fun40943_ip = 34;
+                    continue _fun40943
                 }
             case 12:
                 var2 = var1.type;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isSpamSupported = var4;
     var2.isSpammer = var3;
     var1 = function arg0() {
-        _fun40891: for (var _fun40891_ip = 0;;) switch (_fun40891_ip) {
+        _fun40944: for (var _fun40944_ip = 0;;) switch (_fun40944_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot5;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var0 = var2.bind(var4)(var0);
                 if (!var0) {
-                    _fun40891_ip = 65;
-                    continue _fun40891
+                    _fun40944_ip = 65;
+                    continue _fun40944
                 }
             case 31:
                 var2 = _closure1_slot0;
@@ -114,4 +114,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isSpam = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 660, 4530, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 660, 4540, 2]);

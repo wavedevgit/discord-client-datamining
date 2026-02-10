@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.load.java.lazy.LazyJavaResolverContext;
 public class j implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaClassMemberScope f32747d;
+    private final LazyJavaClassMemberScope f32969d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final LazyJavaResolverContext f32748e;
+    private final LazyJavaResolverContext f32970e;
 
     public j(LazyJavaClassMemberScope lazyJavaClassMemberScope, LazyJavaResolverContext lazyJavaResolverContext) {
-        this.f32747d = lazyJavaClassMemberScope;
-        this.f32748e = lazyJavaResolverContext;
+        this.f32969d = lazyJavaClassMemberScope;
+        this.f32970e = lazyJavaResolverContext;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List r02;
-        r02 = LazyJavaClassMemberScope.r0(this.f32747d, this.f32748e);
+        r02 = LazyJavaClassMemberScope.r0(this.f32969d, this.f32970e);
         return r02;
     }
 }

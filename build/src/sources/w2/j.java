@@ -5,16 +5,16 @@ import kotlin.jvm.internal.Intrinsics;
 final class j extends n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Throwable f53097a;
+    private final Throwable f52126a;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public j(Throwable readException) {
         super(null);
         Intrinsics.checkNotNullParameter(readException, "readException");
-        this.f53097a = readException;
+        this.f52126a = readException;
     }
 
     public final Throwable a() {
-        return this.f53097a;
+        return this.f52126a;
     }
 }

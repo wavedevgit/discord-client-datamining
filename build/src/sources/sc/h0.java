@@ -16,16 +16,16 @@ import sc.b0;
 public final class h0 implements j0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DataSource.Factory f49690a;
+    private final DataSource.Factory f48006a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f49691b;
+    private final String f48007b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f49692c;
+    private final boolean f48008c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f49693d;
+    private final Map f48009d;
 
     public h0(String str, boolean z10, DataSource.Factory factory) {
         boolean z11;
@@ -35,10 +35,10 @@ public final class h0 implements j0 {
             z11 = true;
         }
         oe.a.a(z11);
-        this.f49690a = factory;
-        this.f49691b = str;
-        this.f49692c = z10;
-        this.f49693d = new HashMap();
+        this.f48006a = factory;
+        this.f48007b = str;
+        this.f48008c = z10;
+        this.f48009d = new HashMap();
     }
 
     private static byte[] c(DataSource.Factory factory, String str, byte[] bArr, Map map) {
@@ -72,8 +72,8 @@ public final class h0 implements j0 {
     private static String d(h.f fVar, int i10) {
         Map map;
         List list;
-        int i11 = fVar.f13550o;
-        if ((i11 != 307 && i11 != 308) || i10 >= 5 || (map = fVar.f13552q) == null || (list = (List) map.get("Location")) == null || list.isEmpty()) {
+        int i11 = fVar.f14127o;
+        if ((i11 != 307 && i11 != 308) || i10 >= 5 || (map = fVar.f14129q) == null || (list = (List) map.get("Location")) == null || list.isEmpty()) {
             return null;
         }
         return (String) list.get(0);
@@ -83,15 +83,15 @@ public final class h0 implements j0 {
     public byte[] a(UUID uuid, b0.a aVar) {
         String str;
         String b10 = aVar.b();
-        if (this.f49692c || TextUtils.isEmpty(b10)) {
-            b10 = this.f49691b;
+        if (this.f48008c || TextUtils.isEmpty(b10)) {
+            b10 = this.f48007b;
         }
         if (!TextUtils.isEmpty(b10)) {
             HashMap hashMap = new HashMap();
-            UUID uuid2 = mc.d.f36854e;
+            UUID uuid2 = mc.d.f36229e;
             if (uuid2.equals(uuid)) {
                 str = "text/xml";
-            } else if (mc.d.f36852c.equals(uuid)) {
+            } else if (mc.d.f36227c.equals(uuid)) {
                 str = "application/json";
             } else {
                 str = "application/octet-stream";
@@ -100,26 +100,26 @@ public final class h0 implements j0 {
             if (uuid2.equals(uuid)) {
                 hashMap.put("SOAPAction", "http://schemas.microsoft.com/DRM/2007/03/protocols/AcquireLicense");
             }
-            synchronized (this.f49693d) {
-                hashMap.putAll(this.f49693d);
+            synchronized (this.f48009d) {
+                hashMap.putAll(this.f48009d);
             }
-            return c(this.f49690a, b10, aVar.a(), hashMap);
+            return c(this.f48006a, b10, aVar.a(), hashMap);
         }
         a.b bVar = new a.b();
         Uri uri = Uri.EMPTY;
-        throw new k0(bVar.i(uri).a(), uri, oi.t.j(), 0L, new IllegalStateException("No license URL"));
+        throw new k0(bVar.i(uri).a(), uri, qi.t.j(), 0L, new IllegalStateException("No license URL"));
     }
 
     @Override // sc.j0
     public byte[] b(UUID uuid, b0.d dVar) {
-        return c(this.f49690a, dVar.b() + "&signedRequest=" + w0.E(dVar.a()), null, Collections.EMPTY_MAP);
+        return c(this.f48006a, dVar.b() + "&signedRequest=" + w0.E(dVar.a()), null, Collections.EMPTY_MAP);
     }
 
     public void e(String str, String str2) {
         oe.a.e(str);
         oe.a.e(str2);
-        synchronized (this.f49693d) {
-            this.f49693d.put(str, str2);
+        synchronized (this.f48009d) {
+            this.f48009d.put(str, str2);
         }
     }
 }

@@ -67,7 +67,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var1.bind(var2)(var5);
             case 110:
                 if (!var3) {
-                    _fun9063_ip = 298;
+                    _fun9063_ip = 299;
                     continue _fun9063
                 }
             case 116:
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var5.bind(var0)(var2);
                 var2 = var2.DEBUG_BUILD;
                 if (!var2) {
-                    _fun9063_ip = 225;
+                    _fun9063_ip = 226;
                     continue _fun9063
                 }
             case 148:
@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var12 = var7;
                 var2 = var17[var10](var16, var15, var14, var13, var12, var11);
                 var2 = var5.bind(var6)(var2);
-            case 225:
+            case 226:
                 var2 = var3.addEvent;
                 var6 = _closure1_slot2;
                 var8 = _closure1_slot0;
@@ -115,7 +115,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT;
                 var1 = var6.bind(var0)(var5, var1, var7);
                 var1 = var2.bind(var3)(var4, var1);
-            case 298:
+            case 299:
                 return var0;
         }
     };

@@ -6,10 +6,10 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatTextView;
-import bh.k;
-import oh.b;
-import oh.c;
-import uh.a;
+import bh.l;
+import qh.b;
+import qh.c;
+import wh.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class MaterialTextView extends AppCompatTextView {
     public MaterialTextView(Context context) {
@@ -17,8 +17,8 @@ public class MaterialTextView extends AppCompatTextView {
     }
 
     private void f(Resources.Theme theme, int i10) {
-        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(i10, k.f7053z4);
-        int j10 = j(getContext(), obtainStyledAttributes, k.B4, k.C4);
+        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(i10, l.G4);
+        int j10 = j(getContext(), obtainStyledAttributes, l.J4, l.L4);
         obtainStyledAttributes.recycle();
         if (j10 >= 0) {
             setLineHeight(j10);
@@ -26,12 +26,12 @@ public class MaterialTextView extends AppCompatTextView {
     }
 
     private static boolean g(Context context) {
-        return b.b(context, bh.b.f6630g0, true);
+        return b.b(context, bh.b.f6748m0, true);
     }
 
     private static int h(Resources.Theme theme, AttributeSet attributeSet, int i10, int i11) {
-        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, k.D4, i10, i11);
-        int resourceId = obtainStyledAttributes.getResourceId(k.E4, -1);
+        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, l.M4, i10, i11);
+        int resourceId = obtainStyledAttributes.getResourceId(l.N4, -1);
         obtainStyledAttributes.recycle();
         return resourceId;
     }
@@ -50,14 +50,14 @@ public class MaterialTextView extends AppCompatTextView {
     private static int j(Context context, TypedArray typedArray, int... iArr) {
         int i10 = -1;
         for (int i11 = 0; i11 < iArr.length && i10 < 0; i11++) {
-            i10 = c.c(context, typedArray, iArr[i11], -1);
+            i10 = c.d(context, typedArray, iArr[i11], -1);
         }
         return i10;
     }
 
     private static boolean k(Context context, Resources.Theme theme, AttributeSet attributeSet, int i10, int i11) {
-        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, k.D4, i10, i11);
-        int j10 = j(context, obtainStyledAttributes, k.F4, k.G4);
+        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, l.M4, i10, i11);
+        int j10 = j(context, obtainStyledAttributes, l.O4, l.P4);
         obtainStyledAttributes.recycle();
         if (j10 != -1) {
             return true;
@@ -78,7 +78,7 @@ public class MaterialTextView extends AppCompatTextView {
     }
 
     public MaterialTextView(Context context, AttributeSet attributeSet, int i10) {
-        super(a.c(context, attributeSet, i10, 0), attributeSet, i10);
+        super(a.d(context, attributeSet, i10, 0), attributeSet, i10);
         i(attributeSet, i10, 0);
     }
 }

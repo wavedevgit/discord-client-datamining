@@ -3,29 +3,29 @@ package b6;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f6414a;
+    private String f6520a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f6415a;
+        private String f6521a;
 
         /* synthetic */ a(a0 a0Var) {
         }
 
         public e a() {
-            String str = this.f6415a;
+            String str = this.f6521a;
             if (str != null) {
                 e eVar = new e(null);
-                eVar.f6414a = str;
+                eVar.f6520a = str;
                 return eVar;
             }
             throw new IllegalArgumentException("Purchase token must be set");
         }
 
         public a b(String str) {
-            this.f6415a = str;
+            this.f6521a = str;
             return this;
         }
     }
@@ -38,6 +38,6 @@ public final class e {
     }
 
     public String a() {
-        return this.f6414a;
+        return this.f6520a;
     }
 }

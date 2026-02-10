@@ -6,11 +6,11 @@ public final class g implements cc.b {
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final g f26742a = new g();
+        private static final g f27861a = new g();
     }
 
     public static g a() {
-        return a.f26742a;
+        return a.f27861a;
     }
 
     public static String b() {

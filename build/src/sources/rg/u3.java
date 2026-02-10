@@ -3,26 +3,26 @@ package rg;
 public final class u3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private ie f48724a;
+    private ie f47178a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Boolean f48725b;
+    private Boolean f47179b;
 
     /* renamed from: c  reason: collision with root package name */
-    private wh f48726c;
+    private wh f47180c;
 
     public final u3 a(ie ieVar) {
-        this.f48724a = ieVar;
+        this.f47178a = ieVar;
         return this;
     }
 
     public final u3 b(Boolean bool) {
-        this.f48725b = bool;
+        this.f47179b = bool;
         return this;
     }
 
     public final u3 c(wh whVar) {
-        this.f48726c = whVar;
+        this.f47180c = whVar;
         return this;
     }
 

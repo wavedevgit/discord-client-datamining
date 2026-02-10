@@ -51,7 +51,7 @@ public final class AttributeStyles_ComplexTextBasedLetterSpacingStyleJsonAdapter
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
@@ -73,7 +73,7 @@ public final class AttributeStyles_ComplexTextBasedLetterSpacingStyleJsonAdapter
     public void toJson(@NotNull t writer, AttributeStyles.ComplexTextBasedLetterSpacingStyle complexTextBasedLetterSpacingStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complexTextBasedLetterSpacingStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLetterSpacingStyle.getBase());
             writer.J("value");

@@ -6,8 +6,8 @@ import java.util.HashMap;
 public class SharedValues {
 
     /* renamed from: a  reason: collision with root package name */
-    private SparseIntArray f2742a = new SparseIntArray();
+    private SparseIntArray f2745a = new SparseIntArray();
 
     /* renamed from: b  reason: collision with root package name */
-    private HashMap f2743b = new HashMap();
+    private HashMap f2746b = new HashMap();
 }

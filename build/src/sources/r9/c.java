@@ -8,13 +8,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c implements q9.b {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f47727c = new a(null);
+    public static final a f46181c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private int f47728a = -1;
+    private int f46182a = -1;
 
     /* renamed from: b  reason: collision with root package name */
-    private CloseableReference f47729b;
+    private CloseableReference f46183b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -27,9 +27,9 @@ public final class c implements q9.b {
     }
 
     private final synchronized void f() {
-        CloseableReference.z(this.f47729b);
-        this.f47729b = null;
-        this.f47728a = -1;
+        CloseableReference.z(this.f46183b);
+        this.f46183b = null;
+        this.f46182a = -1;
     }
 
     @Override // q9.b
@@ -42,9 +42,9 @@ public final class c implements q9.b {
         Bitmap bitmap;
         try {
             Intrinsics.checkNotNullParameter(bitmapReference, "bitmapReference");
-            if (this.f47729b != null) {
+            if (this.f46183b != null) {
                 Object J = bitmapReference.J();
-                CloseableReference closeableReference = this.f47729b;
+                CloseableReference closeableReference = this.f46183b;
                 if (closeableReference != null) {
                     bitmap = (Bitmap) closeableReference.J();
                 } else {
@@ -54,9 +54,9 @@ public final class c implements q9.b {
                     return;
                 }
             }
-            CloseableReference.z(this.f47729b);
-            this.f47729b = CloseableReference.n(bitmapReference);
-            this.f47728a = i10;
+            CloseableReference.z(this.f46183b);
+            this.f46183b = CloseableReference.n(bitmapReference);
+            this.f46182a = i10;
         } catch (Throwable th2) {
             throw th2;
         }
@@ -64,7 +64,7 @@ public final class c implements q9.b {
 
     @Override // q9.b
     public synchronized CloseableReference c(int i10) {
-        return CloseableReference.n(this.f47729b);
+        return CloseableReference.n(this.f46183b);
     }
 
     @Override // q9.b
@@ -75,8 +75,8 @@ public final class c implements q9.b {
     @Override // q9.b
     public synchronized boolean contains(int i10) {
         boolean z10;
-        if (i10 == this.f47728a) {
-            if (CloseableReference.G0(this.f47729b)) {
+        if (i10 == this.f46182a) {
+            if (CloseableReference.C0(this.f46183b)) {
                 z10 = true;
             }
         }
@@ -87,7 +87,7 @@ public final class c implements q9.b {
     @Override // q9.b
     public synchronized CloseableReference d(int i10, int i11, int i12) {
         CloseableReference n10;
-        n10 = CloseableReference.n(this.f47729b);
+        n10 = CloseableReference.n(this.f46183b);
         f();
         return n10;
     }
@@ -95,8 +95,8 @@ public final class c implements q9.b {
     @Override // q9.b
     public synchronized CloseableReference e(int i10) {
         CloseableReference closeableReference;
-        if (this.f47728a == i10) {
-            closeableReference = CloseableReference.n(this.f47729b);
+        if (this.f46182a == i10) {
+            closeableReference = CloseableReference.n(this.f46183b);
         } else {
             closeableReference = null;
         }

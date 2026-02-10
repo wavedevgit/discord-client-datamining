@@ -1,6 +1,5 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import bn.c;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -8,6 +7,7 @@ import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.QRCode;
+import dn.c;
 import java.lang.reflect.Constructor;
 import kotlin.Metadata;
 import kotlin.collections.x0;
@@ -59,7 +59,7 @@ public final class QRCode_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -74,7 +74,7 @@ public final class QRCode_AttributesJsonAdapter extends h {
         }
         Constructor<QRCode.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = QRCode.Attributes.class.getDeclaredConstructor(String.class, JsonLogicBoolean.class, Integer.TYPE, c.f7152c);
+            constructor = QRCode.Attributes.class.getDeclaredConstructor(String.class, JsonLogicBoolean.class, Integer.TYPE, c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -87,7 +87,7 @@ public final class QRCode_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, QRCode.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("value");
             this.nullableStringAdapter.toJson(writer, attributes.getValue());
             writer.J(ViewProps.HIDDEN);

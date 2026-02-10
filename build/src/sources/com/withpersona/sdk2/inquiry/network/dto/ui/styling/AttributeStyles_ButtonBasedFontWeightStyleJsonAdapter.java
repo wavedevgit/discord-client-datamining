@@ -46,7 +46,7 @@ public final class AttributeStyles_ButtonBasedFontWeightStyleJsonAdapter extends
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 fontWeightContainer = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
@@ -60,7 +60,7 @@ public final class AttributeStyles_ButtonBasedFontWeightStyleJsonAdapter extends
     public void toJson(@NotNull t writer, AttributeStyles.ButtonBasedFontWeightStyle buttonBasedFontWeightStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (buttonBasedFontWeightStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableFontWeightContainerAdapter.toJson(writer, buttonBasedFontWeightStyle.getBase());
             writer.s();

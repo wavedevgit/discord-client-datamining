@@ -99,7 +99,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                 Boolean bool4 = bool2;
                 switch (reader.J(this.options)) {
                     case -1:
-                        reader.C0();
+                        reader.z0();
                         reader.T();
                         num = num2;
                         bool2 = bool4;
@@ -116,7 +116,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                     case 2:
                         num = (Integer) this.intAdapter.fromJson(reader);
                         if (num == null) {
-                            throw bn.c.x("documentFileLimit", "documentFileLimit", reader);
+                            throw dn.c.x("documentFileLimit", "documentFileLimit", reader);
                         }
                         bool2 = bool4;
                         break;
@@ -128,7 +128,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                     case 4:
                         startPage = (NextStep.Document.StartPage) this.startPageAdapter.fromJson(reader);
                         if (startPage == null) {
-                            throw bn.c.x("startPage", "startPage", reader);
+                            throw dn.c.x("startPage", "startPage", reader);
                         }
                         num = num2;
                         bool2 = bool4;
@@ -136,7 +136,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                     case 5:
                         str2 = (String) this.stringAdapter.fromJson(reader);
                         if (str2 == null) {
-                            throw bn.c.x("fieldKeyDocument", "fieldKeyDocument", reader);
+                            throw dn.c.x("fieldKeyDocument", "fieldKeyDocument", reader);
                         }
                         num = num2;
                         bool2 = bool4;
@@ -144,7 +144,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                     case 6:
                         str3 = (String) this.stringAdapter.fromJson(reader);
                         if (str3 == null) {
-                            throw bn.c.x("kind", "kind", reader);
+                            throw dn.c.x("kind", "kind", reader);
                         }
                         num = num2;
                         bool2 = bool4;
@@ -152,7 +152,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                     case 7:
                         localizations = (NextStep.Document.Localizations) this.localizationsAdapter.fromJson(reader);
                         if (localizations == null) {
-                            throw bn.c.x("localizations", "localizations", reader);
+                            throw dn.c.x("localizations", "localizations", reader);
                         }
                         num = num2;
                         bool2 = bool4;
@@ -189,15 +189,15 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
                                 if (localizations != null) {
                                     return new NextStep.Document.Config(bool3, bool5, intValue, str, startPage, str2, str3, localizations, pages, assetConfig, pendingPageTextPosition);
                                 }
-                                throw bn.c.o("localizations", "localizations", reader);
+                                throw dn.c.o("localizations", "localizations", reader);
                             }
-                            throw bn.c.o("kind", "kind", reader);
+                            throw dn.c.o("kind", "kind", reader);
                         }
-                        throw bn.c.o("fieldKeyDocument", "fieldKeyDocument", reader);
+                        throw dn.c.o("fieldKeyDocument", "fieldKeyDocument", reader);
                     }
-                    throw bn.c.o("startPage", "startPage", reader);
+                    throw dn.c.o("startPage", "startPage", reader);
                 }
-                throw bn.c.o("documentFileLimit", "documentFileLimit", reader);
+                throw dn.c.o("documentFileLimit", "documentFileLimit", reader);
             }
         }
     }
@@ -206,7 +206,7 @@ public final class NextStep_Document_ConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Document.Config config) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (config != null) {
-            writer.k();
+            writer.i();
             writer.J("backStepEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getBackStepEnabled());
             writer.J("cancelButtonEnabled");

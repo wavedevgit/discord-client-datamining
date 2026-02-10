@@ -20,29 +20,29 @@ import java.util.concurrent.TimeoutException;
 class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ExecutorService f16592a;
+    private final ExecutorService f17341a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f16593b;
+    private final Context f17342b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final i0 f16594c;
+    private final i0 f17343c;
 
     public f(Context context, i0 i0Var, ExecutorService executorService) {
-        this.f16592a = executorService;
-        this.f16593b = context;
-        this.f16594c = i0Var;
+        this.f17341a = executorService;
+        this.f17342b = context;
+        this.f17343c = i0Var;
     }
 
     private boolean b() {
-        if (((KeyguardManager) this.f16593b.getSystemService("keyguard")).inKeyguardRestrictedInputMode()) {
+        if (((KeyguardManager) this.f17342b.getSystemService("keyguard")).inKeyguardRestrictedInputMode()) {
             return false;
         }
         if (!com.google.android.gms.common.util.k.c()) {
             SystemClock.sleep(10L);
         }
         int myPid = Process.myPid();
-        List<ActivityManager.RunningAppProcessInfo> runningAppProcesses = ((ActivityManager) this.f16593b.getSystemService("activity")).getRunningAppProcesses();
+        List<ActivityManager.RunningAppProcessInfo> runningAppProcesses = ((ActivityManager) this.f17342b.getSystemService("activity")).getRunningAppProcesses();
         if (runningAppProcesses != null) {
             Iterator<ActivityManager.RunningAppProcessInfo> it = runningAppProcesses.iterator();
             while (true) {
@@ -64,13 +64,13 @@ class f {
         if (Log.isLoggable("FirebaseMessaging", 3)) {
             Log.d("FirebaseMessaging", "Showing notification");
         }
-        ((NotificationManager) this.f16593b.getSystemService("notification")).notify(aVar.f16580b, aVar.f16581c, aVar.f16579a.g());
+        ((NotificationManager) this.f17342b.getSystemService("notification")).notify(aVar.f17329b, aVar.f17330c, aVar.f17328a.g());
     }
 
     private e0 d() {
-        e0 m10 = e0.m(this.f16594c.p("gcm.n.image"));
+        e0 m10 = e0.m(this.f17343c.p("gcm.n.image"));
         if (m10 != null) {
-            m10.p(this.f16592a);
+            m10.p(this.f17341a);
         }
         return m10;
     }
@@ -96,15 +96,15 @@ class f {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean a() {
-        if (this.f16594c.a("gcm.n.noui")) {
+        if (this.f17343c.a("gcm.n.noui")) {
             return true;
         }
         if (b()) {
             return false;
         }
         e0 d10 = d();
-        d.a e10 = d.e(this.f16593b, this.f16594c);
-        e(e10.f16579a, d10);
+        d.a e10 = d.e(this.f17342b, this.f17343c);
+        e(e10.f17328a, d10);
         c(e10);
         return true;
     }

@@ -11,13 +11,13 @@ public interface q {
 
     void close();
 
-    int g(int i10, byte[] bArr, int i11, int i12);
-
     int getSize();
 
-    boolean isClosed();
+    int h(int i10, byte[] bArr, int i11, int i12);
 
-    void k(int i10, q qVar, int i11, int i12);
+    void i(int i10, q qVar, int i11, int i12);
+
+    boolean isClosed();
 
     int q(int i10, byte[] bArr, int i11, int i12);
 

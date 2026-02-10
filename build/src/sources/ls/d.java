@@ -1,16 +1,20 @@
 package ls;
 
-import kotlin.jvm.functions.Function1;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class d implements Function1 {
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final d f36414d = new d();
-
-    @Override // kotlin.jvm.functions.Function1
-    public Object invoke(Object obj) {
-        u1 e10;
-        e10 = h.e((Class) obj);
-        return e10;
+import java.io.File;
+import kotlin.jvm.internal.Intrinsics;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public abstract class d {
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final String b(File file, File file2, String str) {
+        StringBuilder sb2 = new StringBuilder(file.toString());
+        if (file2 != null) {
+            sb2.append(" -> " + file2);
+        }
+        if (str != null) {
+            sb2.append(": " + str);
+        }
+        String sb3 = sb2.toString();
+        Intrinsics.checkNotNullExpressionValue(sb3, "toString(...)");
+        return sb3;
     }
 }

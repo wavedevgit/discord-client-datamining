@@ -1,19 +1,35 @@
 package tt;
 
-import java.util.Locale;
+import java.util.concurrent.ConcurrentHashMap;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KClass;
+import kotlinx.serialization.KSerializer;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface u {
-    String[] a(String str, Locale locale, v vVar, m mVar, boolean z10);
+final class u implements k2 {
 
-    boolean c(Locale locale);
+    /* renamed from: a  reason: collision with root package name */
+    private final Function1 f50071a;
 
-    String[] e(String str, Locale locale, v vVar, m mVar);
+    /* renamed from: b  reason: collision with root package name */
+    private final ConcurrentHashMap f50072b;
 
-    boolean h(String str);
+    public u(Function1 compute) {
+        Intrinsics.checkNotNullParameter(compute, "compute");
+        this.f50071a = compute;
+        this.f50072b = new ConcurrentHashMap();
+    }
 
-    String[] i(String str, Locale locale, v vVar);
-
-    String[] j(String str, Locale locale, v vVar, m mVar);
-
-    String[] k(String str, Locale locale, v vVar, m mVar);
+    @Override // tt.k2
+    public KSerializer a(KClass key) {
+        Object putIfAbsent;
+        Intrinsics.checkNotNullParameter(key, "key");
+        ConcurrentHashMap concurrentHashMap = this.f50072b;
+        Class b10 = ns.a.b(key);
+        Object obj = concurrentHashMap.get(b10);
+        if (obj == null && (putIfAbsent = concurrentHashMap.putIfAbsent(b10, (obj = new k((KSerializer) this.f50071a.invoke(key))))) != null) {
+            obj = putIfAbsent;
+        }
+        return ((k) obj).f50014a;
+    }
 }

@@ -1,11 +1,11 @@
 package com.withpersona.sdk2.inquiry.steps.ui.network;
 
-import bn.c;
 import com.squareup.moshi.a0;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
+import dn.c;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.collections.x0;
@@ -16,19 +16,19 @@ import org.jetbrains.annotations.NotNull;
 public final class MetaJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19890a;
+    private final m.b f20770a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19891b;
+    private final h f20771b;
 
     public MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("predictions");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19890a = a10;
+        this.f20770a = a10;
         h f10 = moshi.f(a0.j(List.class, Suggestion.class), x0.d(), "predictions");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19891b = f10;
+        this.f20771b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -38,13 +38,13 @@ public final class MetaJsonAdapter extends h {
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19890a);
+            int J = reader.J(this.f20770a);
             if (J != -1) {
-                if (J == 0 && (list = (List) this.f19891b.fromJson(reader)) == null) {
+                if (J == 0 && (list = (List) this.f20771b.fromJson(reader)) == null) {
                     throw c.x("predictions", "predictions", reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -60,9 +60,9 @@ public final class MetaJsonAdapter extends h {
     public void toJson(t writer, Meta meta) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (meta != null) {
-            writer.k();
+            writer.i();
             writer.J("predictions");
-            this.f19891b.toJson(writer, meta.a());
+            this.f20771b.toJson(writer, meta.a());
             writer.s();
             return;
         }

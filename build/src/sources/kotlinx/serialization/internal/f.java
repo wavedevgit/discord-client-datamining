@@ -4,20 +4,20 @@ import kotlin.jvm.internal.IntCompanionObject;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.encoding.CompositeEncoder;
-import kt.f2;
-import kt.o0;
+import tt.f2;
+import tt.o0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class f extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final f f34870c = new f();
+    public static final f f35092c = new f();
 
     private f() {
-        super(ht.a.B(IntCompanionObject.INSTANCE));
+        super(rt.a.F(IntCompanionObject.INSTANCE));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.a
+    @Override // tt.a
     /* renamed from: v */
     public int e(int[] iArr) {
         Intrinsics.checkNotNullParameter(iArr, "<this>");
@@ -25,14 +25,14 @@ public final class f extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.f2
+    @Override // tt.f2
     /* renamed from: w */
     public int[] r() {
         return new int[0];
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.s, kt.a
+    @Override // tt.s, tt.a
     /* renamed from: x */
     public void h(kotlinx.serialization.encoding.c decoder, int i10, o0 builder, boolean z10) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
@@ -41,7 +41,7 @@ public final class f extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.a
+    @Override // tt.a
     /* renamed from: y */
     public o0 k(int[] iArr) {
         Intrinsics.checkNotNullParameter(iArr, "<this>");
@@ -49,7 +49,7 @@ public final class f extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.f2
+    @Override // tt.f2
     /* renamed from: z */
     public void u(CompositeEncoder encoder, int[] content, int i10) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");

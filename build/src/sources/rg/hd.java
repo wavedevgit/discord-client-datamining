@@ -5,50 +5,50 @@ import kotlin.jvm.internal.LongCompanionObject;
 public final class hd {
 
     /* renamed from: a  reason: collision with root package name */
-    private Long f48242a;
+    private Long f46696a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Long f48243b;
+    private Long f46697b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Long f48244c;
+    private Long f46698c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Long f48245d;
+    private Long f46699d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Long f48246e;
+    private Long f46700e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Long f48247f;
+    private Long f46701f;
 
     public final hd a(Long l10) {
-        this.f48244c = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f46698c = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final hd b(Long l10) {
-        this.f48245d = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f46699d = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final hd c(Long l10) {
-        this.f48242a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f46696a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final hd d(Long l10) {
-        this.f48246e = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f46700e = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final hd e(Long l10) {
-        this.f48243b = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f46697b = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final hd f(Long l10) {
-        this.f48247f = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f46701f = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 

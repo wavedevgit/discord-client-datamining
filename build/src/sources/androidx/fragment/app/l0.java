@@ -16,35 +16,35 @@ import java.util.List;
 public class l0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayList f4446a = new ArrayList();
+    private final ArrayList f4456a = new ArrayList();
 
     /* renamed from: b  reason: collision with root package name */
-    private final HashMap f4447b = new HashMap();
+    private final HashMap f4457b = new HashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private final HashMap f4448c = new HashMap();
+    private final HashMap f4458c = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private g0 f4449d;
+    private g0 f4459d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void A(g0 g0Var) {
-        this.f4449d = g0Var;
+        this.f4459d = g0Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Bundle B(String str, Bundle bundle) {
         if (bundle != null) {
-            return (Bundle) this.f4448c.put(str, bundle);
+            return (Bundle) this.f4458c.put(str, bundle);
         }
-        return (Bundle) this.f4448c.remove(str);
+        return (Bundle) this.f4458c.remove(str);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a(Fragment fragment) {
-        if (!this.f4446a.contains(fragment)) {
-            synchronized (this.f4446a) {
-                this.f4446a.add(fragment);
+        if (!this.f4456a.contains(fragment)) {
+            synchronized (this.f4456a) {
+                this.f4456a.add(fragment);
             }
             fragment.mAdded = true;
             return;
@@ -54,12 +54,12 @@ public class l0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b() {
-        this.f4447b.values().removeAll(Collections.singleton(null));
+        this.f4457b.values().removeAll(Collections.singleton(null));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean c(String str) {
-        if (this.f4447b.get(str) != null) {
+        if (this.f4457b.get(str) != null) {
             return true;
         }
         return false;
@@ -67,7 +67,7 @@ public class l0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d(int i10) {
-        for (k0 k0Var : this.f4447b.values()) {
+        for (k0 k0Var : this.f4457b.values()) {
             if (k0Var != null) {
                 k0Var.s(i10);
             }
@@ -77,10 +77,10 @@ public class l0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         String str2 = str + "    ";
-        if (!this.f4447b.isEmpty()) {
+        if (!this.f4457b.isEmpty()) {
             printWriter.print(str);
             printWriter.println("Active Fragments:");
-            for (k0 k0Var : this.f4447b.values()) {
+            for (k0 k0Var : this.f4457b.values()) {
                 printWriter.print(str);
                 if (k0Var != null) {
                     Fragment k10 = k0Var.k();
@@ -91,7 +91,7 @@ public class l0 {
                 }
             }
         }
-        int size = this.f4446a.size();
+        int size = this.f4456a.size();
         if (size > 0) {
             printWriter.print(str);
             printWriter.println("Added Fragments:");
@@ -100,14 +100,14 @@ public class l0 {
                 printWriter.print("  #");
                 printWriter.print(i10);
                 printWriter.print(": ");
-                printWriter.println(((Fragment) this.f4446a.get(i10)).toString());
+                printWriter.println(((Fragment) this.f4456a.get(i10)).toString());
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Fragment f(String str) {
-        k0 k0Var = (k0) this.f4447b.get(str);
+        k0 k0Var = (k0) this.f4457b.get(str);
         if (k0Var != null) {
             return k0Var.k();
         }
@@ -116,13 +116,13 @@ public class l0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Fragment g(int i10) {
-        for (int size = this.f4446a.size() - 1; size >= 0; size--) {
-            Fragment fragment = (Fragment) this.f4446a.get(size);
+        for (int size = this.f4456a.size() - 1; size >= 0; size--) {
+            Fragment fragment = (Fragment) this.f4456a.get(size);
             if (fragment != null && fragment.mFragmentId == i10) {
                 return fragment;
             }
         }
-        for (k0 k0Var : this.f4447b.values()) {
+        for (k0 k0Var : this.f4457b.values()) {
             if (k0Var != null) {
                 Fragment k10 = k0Var.k();
                 if (k10.mFragmentId == i10) {
@@ -136,15 +136,15 @@ public class l0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public Fragment h(String str) {
         if (str != null) {
-            for (int size = this.f4446a.size() - 1; size >= 0; size--) {
-                Fragment fragment = (Fragment) this.f4446a.get(size);
+            for (int size = this.f4456a.size() - 1; size >= 0; size--) {
+                Fragment fragment = (Fragment) this.f4456a.get(size);
                 if (fragment != null && str.equals(fragment.mTag)) {
                     return fragment;
                 }
             }
         }
         if (str != null) {
-            for (k0 k0Var : this.f4447b.values()) {
+            for (k0 k0Var : this.f4457b.values()) {
                 if (k0Var != null) {
                     Fragment k10 = k0Var.k();
                     if (str.equals(k10.mTag)) {
@@ -160,7 +160,7 @@ public class l0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public Fragment i(String str) {
         Fragment findFragmentByWho;
-        for (k0 k0Var : this.f4447b.values()) {
+        for (k0 k0Var : this.f4457b.values()) {
             if (k0Var != null && (findFragmentByWho = k0Var.k().findFragmentByWho(str)) != null) {
                 return findFragmentByWho;
             }
@@ -176,19 +176,19 @@ public class l0 {
         if (viewGroup == null) {
             return -1;
         }
-        int indexOf = this.f4446a.indexOf(fragment);
+        int indexOf = this.f4456a.indexOf(fragment);
         for (int i10 = indexOf - 1; i10 >= 0; i10--) {
-            Fragment fragment2 = (Fragment) this.f4446a.get(i10);
+            Fragment fragment2 = (Fragment) this.f4456a.get(i10);
             if (fragment2.mContainer == viewGroup && (view2 = fragment2.mView) != null) {
                 return viewGroup.indexOfChild(view2) + 1;
             }
         }
         while (true) {
             indexOf++;
-            if (indexOf >= this.f4446a.size()) {
+            if (indexOf >= this.f4456a.size()) {
                 return -1;
             }
-            Fragment fragment3 = (Fragment) this.f4446a.get(indexOf);
+            Fragment fragment3 = (Fragment) this.f4456a.get(indexOf);
             if (fragment3.mContainer == viewGroup && (view = fragment3.mView) != null) {
                 return viewGroup.indexOfChild(view);
             }
@@ -198,7 +198,7 @@ public class l0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public List k() {
         ArrayList arrayList = new ArrayList();
-        for (k0 k0Var : this.f4447b.values()) {
+        for (k0 k0Var : this.f4457b.values()) {
             if (k0Var != null) {
                 arrayList.add(k0Var);
             }
@@ -209,7 +209,7 @@ public class l0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public List l() {
         ArrayList arrayList = new ArrayList();
-        for (k0 k0Var : this.f4447b.values()) {
+        for (k0 k0Var : this.f4457b.values()) {
             if (k0Var != null) {
                 arrayList.add(k0Var.k());
             } else {
@@ -221,50 +221,50 @@ public class l0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public HashMap m() {
-        return this.f4448c;
+        return this.f4458c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k0 n(String str) {
-        return (k0) this.f4447b.get(str);
+        return (k0) this.f4457b.get(str);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List o() {
         ArrayList arrayList;
-        if (this.f4446a.isEmpty()) {
+        if (this.f4456a.isEmpty()) {
             return Collections.EMPTY_LIST;
         }
-        synchronized (this.f4446a) {
-            arrayList = new ArrayList(this.f4446a);
+        synchronized (this.f4456a) {
+            arrayList = new ArrayList(this.f4456a);
         }
         return arrayList;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g0 p() {
-        return this.f4449d;
+        return this.f4459d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Bundle q(String str) {
-        return (Bundle) this.f4448c.get(str);
+        return (Bundle) this.f4458c.get(str);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void r(k0 k0Var) {
         Fragment k10 = k0Var.k();
         if (!c(k10.mWho)) {
-            this.f4447b.put(k10.mWho, k0Var);
+            this.f4457b.put(k10.mWho, k0Var);
             if (k10.mRetainInstanceChangedWhileDetached) {
                 if (k10.mRetainInstance) {
-                    this.f4449d.e(k10);
+                    this.f4459d.e(k10);
                 } else {
-                    this.f4449d.o(k10);
+                    this.f4459d.o(k10);
                 }
                 k10.mRetainInstanceChangedWhileDetached = false;
             }
-            if (FragmentManager.O0(2)) {
+            if (FragmentManager.P0(2)) {
                 Log.v("FragmentManager", "Added fragment to active set " + k10);
             }
         }
@@ -274,28 +274,28 @@ public class l0 {
     public void s(k0 k0Var) {
         Fragment k10 = k0Var.k();
         if (k10.mRetainInstance) {
-            this.f4449d.o(k10);
+            this.f4459d.o(k10);
         }
-        if (this.f4447b.get(k10.mWho) == k0Var && ((k0) this.f4447b.put(k10.mWho, null)) != null && FragmentManager.O0(2)) {
+        if (this.f4457b.get(k10.mWho) == k0Var && ((k0) this.f4457b.put(k10.mWho, null)) != null && FragmentManager.P0(2)) {
             Log.v("FragmentManager", "Removed fragment from active set " + k10);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void t() {
-        Iterator it = this.f4446a.iterator();
+        Iterator it = this.f4456a.iterator();
         while (it.hasNext()) {
-            k0 k0Var = (k0) this.f4447b.get(((Fragment) it.next()).mWho);
+            k0 k0Var = (k0) this.f4457b.get(((Fragment) it.next()).mWho);
             if (k0Var != null) {
                 k0Var.m();
             }
         }
-        for (k0 k0Var2 : this.f4447b.values()) {
+        for (k0 k0Var2 : this.f4457b.values()) {
             if (k0Var2 != null) {
                 k0Var2.m();
                 Fragment k10 = k0Var2.k();
                 if (k10.mRemoving && !k10.isInBackStack()) {
-                    if (k10.mBeingSaved && !this.f4448c.containsKey(k10.mWho)) {
+                    if (k10.mBeingSaved && !this.f4458c.containsKey(k10.mWho)) {
                         B(k10.mWho, k0Var2.q());
                     }
                     s(k0Var2);
@@ -306,27 +306,27 @@ public class l0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void u(Fragment fragment) {
-        synchronized (this.f4446a) {
-            this.f4446a.remove(fragment);
+        synchronized (this.f4456a) {
+            this.f4456a.remove(fragment);
         }
         fragment.mAdded = false;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void v() {
-        this.f4447b.clear();
+        this.f4457b.clear();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void w(List list) {
-        this.f4446a.clear();
+        this.f4456a.clear();
         if (list != null) {
             Iterator it = list.iterator();
             while (it.hasNext()) {
                 String str = (String) it.next();
                 Fragment f10 = f(str);
                 if (f10 != null) {
-                    if (FragmentManager.O0(2)) {
+                    if (FragmentManager.P0(2)) {
                         Log.v("FragmentManager", "restoreSaveState: added (" + str + "): " + f10);
                     }
                     a(f10);
@@ -339,19 +339,19 @@ public class l0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void x(HashMap hashMap) {
-        this.f4448c.clear();
-        this.f4448c.putAll(hashMap);
+        this.f4458c.clear();
+        this.f4458c.putAll(hashMap);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ArrayList y() {
-        ArrayList arrayList = new ArrayList(this.f4447b.size());
-        for (k0 k0Var : this.f4447b.values()) {
+        ArrayList arrayList = new ArrayList(this.f4457b.size());
+        for (k0 k0Var : this.f4457b.values()) {
             if (k0Var != null) {
                 Fragment k10 = k0Var.k();
                 B(k10.mWho, k0Var.q());
                 arrayList.add(k10.mWho);
-                if (FragmentManager.O0(2)) {
+                if (FragmentManager.P0(2)) {
                     Log.v("FragmentManager", "Saved state of " + k10 + ": " + k10.mSavedFragmentState);
                 }
             }
@@ -361,17 +361,17 @@ public class l0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ArrayList z() {
-        synchronized (this.f4446a) {
+        synchronized (this.f4456a) {
             try {
-                if (this.f4446a.isEmpty()) {
+                if (this.f4456a.isEmpty()) {
                     return null;
                 }
-                ArrayList arrayList = new ArrayList(this.f4446a.size());
-                Iterator it = this.f4446a.iterator();
+                ArrayList arrayList = new ArrayList(this.f4456a.size());
+                Iterator it = this.f4456a.iterator();
                 while (it.hasNext()) {
                     Fragment fragment = (Fragment) it.next();
                     arrayList.add(fragment.mWho);
-                    if (FragmentManager.O0(2)) {
+                    if (FragmentManager.P0(2)) {
                         Log.v("FragmentManager", "saveAllState: adding fragment (" + fragment.mWho + "): " + fragment);
                     }
                 }

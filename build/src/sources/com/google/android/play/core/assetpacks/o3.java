@@ -10,27 +10,27 @@ import java.util.Properties;
 public final class o3 {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yh.k0 f16064c = new yh.k0("PackMetadataManager");
+    private static final ai.k0 f16813c = new ai.k0("PackMetadataManager");
 
     /* renamed from: a  reason: collision with root package name */
-    private final n0 f16065a;
+    private final n0 f16814a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final q3 f16066b;
+    private final q3 f16815b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o3(n0 n0Var, q3 q3Var) {
-        this.f16065a = n0Var;
-        this.f16066b = q3Var;
+        this.f16814a = n0Var;
+        this.f16815b = q3Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final String a(String str) {
-        if (!this.f16065a.f(str)) {
+        if (!this.f16814a.f(str)) {
             return "";
         }
-        q3 q3Var = this.f16066b;
-        n0 n0Var = this.f16065a;
+        q3 q3Var = this.f16815b;
+        n0 n0Var = this.f16814a;
         int a10 = q3Var.a();
         File x10 = n0Var.x(str, a10, n0Var.r(str));
         try {
@@ -47,7 +47,7 @@ public final class o3 {
             }
             return property;
         } catch (IOException unused) {
-            f16064c.b("Failed to read pack version tag for pack %s", str);
+            f16813c.b("Failed to read pack version tag for pack %s", str);
             return "";
         }
     }
@@ -59,7 +59,7 @@ public final class o3 {
         }
         Properties properties = new Properties();
         properties.put("moduleVersionTag", str2);
-        File x10 = this.f16065a.x(str, i10, j10);
+        File x10 = this.f16814a.x(str, i10, j10);
         x10.getParentFile().mkdirs();
         x10.createNewFile();
         FileOutputStream fileOutputStream = new FileOutputStream(x10);

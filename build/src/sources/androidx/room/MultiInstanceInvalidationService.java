@@ -18,16 +18,16 @@ import r3.k;
 public final class MultiInstanceInvalidationService extends Service {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f5190d;
+    private int f5200d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f5191e = new LinkedHashMap();
+    private final Map f5201e = new LinkedHashMap();
 
     /* renamed from: i  reason: collision with root package name */
-    private final RemoteCallbackList f5192i = new b();
+    private final RemoteCallbackList f5202i = new b();
 
     /* renamed from: o  reason: collision with root package name */
-    private final k.a f5193o = new a();
+    private final k.a f5203o = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends k.a {
@@ -62,7 +62,7 @@ public final class MultiInstanceInvalidationService extends Service {
         }
 
         @Override // r3.k
-        public void Y(int i10, String[] tables) {
+        public void a0(int i10, String[] tables) {
             Intrinsics.checkNotNullParameter(tables, "tables");
             RemoteCallbackList a10 = MultiInstanceInvalidationService.this.a();
             MultiInstanceInvalidationService multiInstanceInvalidationService = MultiInstanceInvalidationService.this;
@@ -81,19 +81,19 @@ public final class MultiInstanceInvalidationService extends Service {
                     String str2 = (String) multiInstanceInvalidationService.b().get(num);
                     if (i10 != intValue && Intrinsics.areEqual(str, str2)) {
                         try {
-                            ((j) multiInstanceInvalidationService.a().getBroadcastItem(i11)).p(tables);
+                            ((j) multiInstanceInvalidationService.a().getBroadcastItem(i11)).s(tables);
                         } catch (RemoteException e10) {
                             Log.w("ROOM", "Error invoking a remote callback", e10);
                         }
                     }
                 }
                 multiInstanceInvalidationService.a().finishBroadcast();
-                Unit unit = Unit.f31765a;
+                Unit unit = Unit.f31987a;
             }
         }
 
         @Override // r3.k
-        public void c0(j callback, int i10) {
+        public void e0(j callback, int i10) {
             Intrinsics.checkNotNullParameter(callback, "callback");
             RemoteCallbackList a10 = MultiInstanceInvalidationService.this.a();
             MultiInstanceInvalidationService multiInstanceInvalidationService = MultiInstanceInvalidationService.this;
@@ -119,24 +119,24 @@ public final class MultiInstanceInvalidationService extends Service {
     }
 
     public final RemoteCallbackList a() {
-        return this.f5192i;
+        return this.f5202i;
     }
 
     public final Map b() {
-        return this.f5191e;
+        return this.f5201e;
     }
 
     public final int c() {
-        return this.f5190d;
+        return this.f5200d;
     }
 
     public final void d(int i10) {
-        this.f5190d = i10;
+        this.f5200d = i10;
     }
 
     @Override // android.app.Service
     public IBinder onBind(Intent intent) {
         Intrinsics.checkNotNullParameter(intent, "intent");
-        return this.f5193o;
+        return this.f5203o;
     }
 }

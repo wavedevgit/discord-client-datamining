@@ -3,16 +3,16 @@ package pc;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.exoplayer2.metadata.Metadata;
-import qi.c;
+import si.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class b implements Metadata.b {
     public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final float f43088d;
+    public final float f41546d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final float f43089e;
+    public final float f41547e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -47,7 +47,7 @@ public final class b implements Metadata.b {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (this.f43088d == bVar.f43088d && this.f43089e == bVar.f43089e) {
+            if (this.f41546d == bVar.f41546d && this.f41547e == bVar.f41547e) {
                 return true;
             }
         }
@@ -55,27 +55,27 @@ public final class b implements Metadata.b {
     }
 
     public int hashCode() {
-        return ((527 + c.a(this.f43088d)) * 31) + c.a(this.f43089e);
+        return ((527 + c.a(this.f41546d)) * 31) + c.a(this.f41547e);
     }
 
     public String toString() {
-        return "xyz: latitude=" + this.f43088d + ", longitude=" + this.f43089e;
+        return "xyz: latitude=" + this.f41546d + ", longitude=" + this.f41547e;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeFloat(this.f43088d);
-        parcel.writeFloat(this.f43089e);
+        parcel.writeFloat(this.f41546d);
+        parcel.writeFloat(this.f41547e);
     }
 
     public b(float f10, float f11) {
         oe.a.b(f10 >= -90.0f && f10 <= 90.0f && f11 >= -180.0f && f11 <= 180.0f, "Invalid latitude or longitude");
-        this.f43088d = f10;
-        this.f43089e = f11;
+        this.f41546d = f10;
+        this.f41547e = f11;
     }
 
     private b(Parcel parcel) {
-        this.f43088d = parcel.readFloat();
-        this.f43089e = parcel.readFloat();
+        this.f41546d = parcel.readFloat();
+        this.f41547e = parcel.readFloat();
     }
 }

@@ -5,65 +5,53 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var2;
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
-    var1 = function arg0, arg1() {
-        _fun45852: for (var _fun45852_ip = 0;;) switch (_fun45852_ip) {
+    var1 = function arg0() {
+        _fun45811: for (var _fun45811_ip = 0;;) switch (_fun45811_ip) {
             case 0:
-                var0 = arg1;
-                if (!var0) {
-                    _fun45852_ip = 59;
-                    continue _fun45852
-                }
-            case 6:
+                var4 = arg0;
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
-                var1 = 0;
-                var2 = var2[var1];
-                var1 = undefined;
-                var2 = var3.bind(var1)(var2);
-                var1 = var2.default;
-                var2 = var1.bind(var2)(var0);
-                var1 = 'object';
-                if (!(var1 != var2)) {
-                    _fun45852_ip = 134;
-                    continue _fun45852
+                var0 = 0;
+                var0 = var2[var0];
+                var2 = undefined;
+                var0 = var3.bind(var2)(var0);
+                var0 = var0.bind(var2)(var4);
+                if (var0) {
+                    _fun45811_ip = 60;
+                    continue _fun45811
                 }
-            case 48:
-                var2 = 'function';
-                var1 = typeof var0;
-                if (!(var2 !== var1)) {
-                    _fun45852_ip = 134;
-                    continue _fun45852
+            case 35:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var3 = 1;
+                var3 = var6[var3];
+                var3 = var5.bind(var2)(var3);
+                var0 = var3.bind(var2)(var4);
+            case 60:
+                if (var0) {
+                    _fun45811_ip = 88;
+                    continue _fun45811
                 }
-            case 59:
-                var3 = undefined;
-                if (!(var3 === var0)) {
-                    _fun45852_ip = 98;
-                    continue _fun45852
+            case 63:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var3 = 2;
+                var3 = var6[var3];
+                var3 = var5.bind(var2)(var3);
+                var0 = var3.bind(var2)(var4);
+            case 88:
+                if (var0) {
+                    _fun45811_ip = 115;
+                    continue _fun45811
                 }
-            case 65:
-                var2 = _closure1_slot0;
+            case 91:
+                var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
-                var1 = 1;
+                var1 = 3;
                 var1 = var4[var1];
-                var2 = var2.bind(var3)(var1);
-                var1 = arg0;
-                var1 = var2.bind(var3)(var1);
-                return var1;
-            case 98:
-                var1 = global;
-                var3 = var1.TypeError;
-                var1 = var3.prototype;
-                var2 = Object.create(var1, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var5 = 'Derived constructors may only return object or undefined';
-                var6 = var2;
-                var1 = new var6[var3](var5, var4);
-                var1 = var1 instanceof Object ? var1 : var2;
-                throw var1;
-            case 134:
+                var1 = var3.bind(var2)(var1);
+                var0 = var1.bind(var2)();
+            case 115:
                 return var0;
         }
     };
@@ -76,4 +64,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5117, 5136]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5136, 5137, 5117, 5138]);

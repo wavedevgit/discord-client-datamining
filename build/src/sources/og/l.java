@@ -11,7 +11,7 @@ public final class l extends a implements n {
     }
 
     @Override // og.n
-    public final k i(tf.a aVar, i iVar) {
+    public final k k(tf.a aVar, i iVar) {
         k kVar;
         Parcel e10 = e();
         p0.b(e10, aVar);

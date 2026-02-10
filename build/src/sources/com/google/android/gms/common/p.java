@@ -8,10 +8,10 @@ import android.util.Log;
 public final class p extends gg.h {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f13932b;
+    private final Context f14509b;
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ f f13933c;
+    final /* synthetic */ f f14510c;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -21,7 +21,7 @@ public final class p extends gg.h {
     public p(com.google.android.gms.common.f r1, android.content.Context r2) {
         /*
             r0 = this;
-            r0.f13933c = r1
+            r0.f14510c = r1
             android.os.Looper r1 = android.os.Looper.myLooper()
             if (r1 != 0) goto Ld
             android.os.Looper r1 = android.os.Looper.getMainLooper()
@@ -31,7 +31,7 @@ public final class p extends gg.h {
         L11:
             r0.<init>(r1)
             android.content.Context r1 = r2.getApplicationContext()
-            r0.f13932b = r1
+            r0.f14509b = r1
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.common.p.<init>(com.google.android.gms.common.f, android.content.Context):void");
@@ -44,10 +44,10 @@ public final class p extends gg.h {
             Log.w("GoogleApiAvailability", "Don't know how to handle this message: " + i10);
             return;
         }
-        f fVar = this.f13933c;
-        int g10 = fVar.g(this.f13932b);
+        f fVar = this.f14510c;
+        int g10 = fVar.g(this.f14509b);
         if (fVar.j(g10)) {
-            this.f13933c.p(this.f13932b, g10);
+            this.f14510c.p(this.f14509b, g10);
         }
     }
 }

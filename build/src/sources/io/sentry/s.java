@@ -10,81 +10,81 @@ import java.util.concurrent.TimeUnit;
 public abstract class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w0 f29081a;
+    private final w0 f30016a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ILogger f29082b;
+    private final ILogger f30017b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f29083c;
+    private final long f30018c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Queue f29084d;
+    private final Queue f30019d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static final class a implements io.sentry.hints.e, io.sentry.hints.k, io.sentry.hints.p, io.sentry.hints.i, io.sentry.hints.g {
 
         /* renamed from: a  reason: collision with root package name */
-        boolean f29085a = false;
+        boolean f30020a = false;
 
         /* renamed from: b  reason: collision with root package name */
-        boolean f29086b = false;
+        boolean f30021b = false;
 
         /* renamed from: c  reason: collision with root package name */
-        private final CountDownLatch f29087c = new CountDownLatch(1);
+        private final CountDownLatch f30022c = new CountDownLatch(1);
 
         /* renamed from: d  reason: collision with root package name */
-        private final long f29088d;
+        private final long f30023d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ILogger f29089e;
+        private final ILogger f30024e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final String f29090f;
+        private final String f30025f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final Queue f29091g;
+        private final Queue f30026g;
 
         public a(long j10, ILogger iLogger, String str, Queue queue) {
-            this.f29088d = j10;
-            this.f29090f = str;
-            this.f29091g = queue;
-            this.f29089e = iLogger;
+            this.f30023d = j10;
+            this.f30025f = str;
+            this.f30026g = queue;
+            this.f30024e = iLogger;
         }
 
         @Override // io.sentry.hints.k
         public boolean a() {
-            return this.f29085a;
+            return this.f30020a;
         }
 
         @Override // io.sentry.hints.g
         public void b() {
-            this.f29091g.add(this.f29090f);
+            this.f30026g.add(this.f30025f);
         }
 
         @Override // io.sentry.hints.p
         public void c(boolean z10) {
-            this.f29086b = z10;
-            this.f29087c.countDown();
+            this.f30021b = z10;
+            this.f30022c.countDown();
         }
 
         @Override // io.sentry.hints.k
         public void d(boolean z10) {
-            this.f29085a = z10;
+            this.f30020a = z10;
         }
 
         @Override // io.sentry.hints.p
         public boolean e() {
-            return this.f29086b;
+            return this.f30021b;
         }
 
         @Override // io.sentry.hints.i
         public boolean g() {
             try {
-                return this.f29087c.await(this.f29088d, TimeUnit.MILLISECONDS);
+                return this.f30022c.await(this.f30023d, TimeUnit.MILLISECONDS);
             } catch (InterruptedException e10) {
                 Thread.currentThread().interrupt();
-                this.f29089e.b(SentryLevel.ERROR, "Exception while awaiting on lock.", e10);
+                this.f30024e.b(SentryLevel.ERROR, "Exception while awaiting on lock.", e10);
                 return false;
             }
         }
@@ -92,10 +92,10 @@ public abstract class s {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s(w0 w0Var, ILogger iLogger, long j10, int i10) {
-        this.f29081a = w0Var;
-        this.f29082b = iLogger;
-        this.f29083c = j10;
-        this.f29084d = o8.d(new e(i10));
+        this.f30016a = w0Var;
+        this.f30017b = iLogger;
+        this.f30018c = j10;
+        this.f30019d = o8.d(new e(i10));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -103,7 +103,7 @@ public abstract class s {
 
     public void d(File file) {
         try {
-            ILogger iLogger = this.f29082b;
+            ILogger iLogger = this.f30017b;
             SentryLevel sentryLevel = SentryLevel.DEBUG;
             iLogger.c(sentryLevel, "Processing dir. %s", file.getAbsolutePath());
             File[] listFiles = file.listFiles(new FilenameFilter() { // from class: io.sentry.r
@@ -115,31 +115,31 @@ public abstract class s {
                 }
             });
             if (listFiles == null) {
-                this.f29082b.c(SentryLevel.ERROR, "Cache dir %s is null or is not a directory.", file.getAbsolutePath());
+                this.f30017b.c(SentryLevel.ERROR, "Cache dir %s is null or is not a directory.", file.getAbsolutePath());
                 return;
             }
-            this.f29082b.c(sentryLevel, "Processing %d items from cache dir %s", Integer.valueOf(listFiles.length), file.getAbsolutePath());
+            this.f30017b.c(sentryLevel, "Processing %d items from cache dir %s", Integer.valueOf(listFiles.length), file.getAbsolutePath());
             for (File file2 : listFiles) {
                 if (!file2.isFile()) {
-                    this.f29082b.c(SentryLevel.DEBUG, "File %s is not a File.", file2.getAbsolutePath());
+                    this.f30017b.c(SentryLevel.DEBUG, "File %s is not a File.", file2.getAbsolutePath());
                 } else {
                     String absolutePath = file2.getAbsolutePath();
-                    if (this.f29084d.contains(absolutePath)) {
-                        this.f29082b.c(SentryLevel.DEBUG, "File '%s' has already been processed so it will not be processed again.", absolutePath);
+                    if (this.f30019d.contains(absolutePath)) {
+                        this.f30017b.c(SentryLevel.DEBUG, "File '%s' has already been processed so it will not be processed again.", absolutePath);
                     } else {
-                        io.sentry.transport.a0 j10 = this.f29081a.j();
-                        if (j10 != null && j10.z(j.All)) {
-                            this.f29082b.c(SentryLevel.INFO, "DirectoryProcessor, rate limiting active.", new Object[0]);
+                        io.sentry.transport.a0 k10 = this.f30016a.k();
+                        if (k10 != null && k10.z(j.All)) {
+                            this.f30017b.c(SentryLevel.INFO, "DirectoryProcessor, rate limiting active.", new Object[0]);
                             return;
                         }
-                        this.f29082b.c(SentryLevel.DEBUG, "Processing file: %s", absolutePath);
-                        e(file2, io.sentry.util.n.e(new a(this.f29083c, this.f29082b, absolutePath, this.f29084d)));
+                        this.f30017b.c(SentryLevel.DEBUG, "Processing file: %s", absolutePath);
+                        e(file2, io.sentry.util.n.e(new a(this.f30018c, this.f30017b, absolutePath, this.f30019d)));
                         Thread.sleep(100L);
                     }
                 }
             }
         } catch (Throwable th2) {
-            this.f29082b.a(SentryLevel.ERROR, th2, "Failed processing '%s'", file.getAbsolutePath());
+            this.f30017b.a(SentryLevel.ERROR, th2, "Failed processing '%s'", file.getAbsolutePath());
         }
     }
 

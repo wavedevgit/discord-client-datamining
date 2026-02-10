@@ -6,23 +6,23 @@ import kotlin.coroutines.CoroutineContext;
 final class v implements u, q {
 
     /* renamed from: d  reason: collision with root package name */
-    private final /* synthetic */ q f53054d;
+    private final /* synthetic */ q f52083d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CoroutineContext f53055e;
+    private final CoroutineContext f52084e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f53056d;
+        Object f52085d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f53057e;
+        /* synthetic */ Object f52086e;
 
         /* renamed from: o  reason: collision with root package name */
-        int f53059o;
+        int f52088o;
 
         a(Continuation continuation) {
             super(continuation);
@@ -30,15 +30,15 @@ final class v implements u, q {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f53057e = obj;
-            this.f53059o |= Integer.MIN_VALUE;
-            return v.this.e2(null, this);
+            this.f52086e = obj;
+            this.f52088o |= Integer.MIN_VALUE;
+            return v.this.b1(null, this);
         }
     }
 
     public v(q qVar, CoroutineContext coroutineContext) {
-        this.f53054d = qVar;
-        this.f53055e = coroutineContext;
+        this.f52083d = qVar;
+        this.f52084e = coroutineContext;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -48,27 +48,27 @@ final class v implements u, q {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public java.lang.Object e2(kotlin.jvm.functions.Function0 r5, kotlin.coroutines.Continuation r6) {
+    public java.lang.Object b1(kotlin.jvm.functions.Function0 r5, kotlin.coroutines.Continuation r6) {
         /*
             r4 = this;
             boolean r0 = r6 instanceof w0.v.a
             if (r0 == 0) goto L13
             r0 = r6
             w0.v$a r0 = (w0.v.a) r0
-            int r1 = r0.f53059o
+            int r1 = r0.f52088o
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f53059o = r1
+            r0.f52088o = r1
             goto L18
         L13:
             w0.v$a r0 = new w0.v$a
             r0.<init>(r6)
         L18:
-            java.lang.Object r6 = r0.f53057e
-            java.lang.Object r1 = xr.b.f()
-            int r2 = r0.f53059o
+            java.lang.Object r6 = r0.f52086e
+            java.lang.Object r1 = gs.b.f()
+            int r2 = r0.f52088o
             r3 = 1
             if (r2 == 0) goto L37
             if (r2 == r3) goto L2d
@@ -77,7 +77,7 @@ final class v implements u, q {
             r5.<init>(r6)
             throw r5
         L2d:
-            java.lang.Object r5 = r0.f53056d
+            java.lang.Object r5 = r0.f52085d
             kotlin.jvm.functions.Function0 r5 = (kotlin.jvm.functions.Function0) r5
             kotlin.c.b(r6)     // Catch: java.lang.Throwable -> L35
             goto L5a
@@ -86,42 +86,42 @@ final class v implements u, q {
             goto L60
         L37:
             kotlin.c.b(r6)
-            r0.f53056d = r5     // Catch: java.lang.Throwable -> L35
-            r0.f53059o = r3     // Catch: java.lang.Throwable -> L35
+            r0.f52085d = r5     // Catch: java.lang.Throwable -> L35
+            r0.f52088o = r3     // Catch: java.lang.Throwable -> L35
             kotlinx.coroutines.e r6 = new kotlinx.coroutines.e     // Catch: java.lang.Throwable -> L35
-            kotlin.coroutines.Continuation r2 = xr.b.c(r0)     // Catch: java.lang.Throwable -> L35
+            kotlin.coroutines.Continuation r2 = gs.b.c(r0)     // Catch: java.lang.Throwable -> L35
             r6.<init>(r2, r3)     // Catch: java.lang.Throwable -> L35
             r6.H()     // Catch: java.lang.Throwable -> L35
             java.lang.Object r6 = r6.B()     // Catch: java.lang.Throwable -> L35
-            java.lang.Object r2 = xr.b.f()     // Catch: java.lang.Throwable -> L35
+            java.lang.Object r2 = gs.b.f()     // Catch: java.lang.Throwable -> L35
             if (r6 != r2) goto L57
             kotlin.coroutines.jvm.internal.g.c(r0)     // Catch: java.lang.Throwable -> L35
         L57:
             if (r6 != r1) goto L5a
             return r1
         L5a:
-            rr.h r6 = new rr.h     // Catch: java.lang.Throwable -> L35
+            as.h r6 = new as.h     // Catch: java.lang.Throwable -> L35
             r6.<init>()     // Catch: java.lang.Throwable -> L35
             throw r6     // Catch: java.lang.Throwable -> L35
         L60:
             r5.invoke()
             throw r6
         */
-        throw new UnsupportedOperationException("Method not decompiled: w0.v.e2(kotlin.jvm.functions.Function0, kotlin.coroutines.Continuation):java.lang.Object");
+        throw new UnsupportedOperationException("Method not decompiled: w0.v.b1(kotlin.jvm.functions.Function0, kotlin.coroutines.Continuation):java.lang.Object");
     }
 
     @Override // kotlinx.coroutines.CoroutineScope
     public CoroutineContext getCoroutineContext() {
-        return this.f53055e;
+        return this.f52084e;
     }
 
     @Override // w0.q, w0.g0
     public Object getValue() {
-        return this.f53054d.getValue();
+        return this.f52083d.getValue();
     }
 
     @Override // w0.q
     public void setValue(Object obj) {
-        this.f53054d.setValue(obj);
+        this.f52083d.setValue(obj);
     }
 }

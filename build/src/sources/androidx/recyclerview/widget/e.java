@@ -13,7 +13,7 @@ import java.util.List;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Comparator f5111a = new a();
+    private static final Comparator f5121a = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Comparator {
@@ -23,7 +23,7 @@ public abstract class e {
         @Override // java.util.Comparator
         /* renamed from: a */
         public int compare(d dVar, d dVar2) {
-            return dVar.f5114a - dVar2.f5114a;
+            return dVar.f5124a - dVar2.f5124a;
         }
     }
 
@@ -47,27 +47,27 @@ public abstract class e {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int[] f5112a;
+        private final int[] f5122a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f5113b;
+        private final int f5123b;
 
         c(int i10) {
             int[] iArr = new int[i10];
-            this.f5112a = iArr;
-            this.f5113b = iArr.length / 2;
+            this.f5122a = iArr;
+            this.f5123b = iArr.length / 2;
         }
 
         int[] a() {
-            return this.f5112a;
+            return this.f5122a;
         }
 
         int b(int i10) {
-            return this.f5112a[i10 + this.f5113b];
+            return this.f5122a[i10 + this.f5123b];
         }
 
         void c(int i10, int i11) {
-            this.f5112a[i10 + this.f5113b] = i11;
+            this.f5122a[i10 + this.f5123b] = i11;
         }
     }
 
@@ -76,96 +76,96 @@ public abstract class e {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f5114a;
+        public final int f5124a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f5115b;
+        public final int f5125b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f5116c;
+        public final int f5126c;
 
         d(int i10, int i11, int i12) {
-            this.f5114a = i10;
-            this.f5115b = i11;
-            this.f5116c = i12;
+            this.f5124a = i10;
+            this.f5125b = i11;
+            this.f5126c = i12;
         }
 
         int a() {
-            return this.f5114a + this.f5116c;
+            return this.f5124a + this.f5126c;
         }
 
         int b() {
-            return this.f5115b + this.f5116c;
+            return this.f5125b + this.f5126c;
         }
     }
 
     /* renamed from: androidx.recyclerview.widget.e$e  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class C0068e {
+    public static class C0064e {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f5117a;
+        private final List f5127a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int[] f5118b;
+        private final int[] f5128b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int[] f5119c;
+        private final int[] f5129c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final b f5120d;
+        private final b f5130d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f5121e;
+        private final int f5131e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final int f5122f;
+        private final int f5132f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final boolean f5123g;
+        private final boolean f5133g;
 
-        C0068e(b bVar, List list, int[] iArr, int[] iArr2, boolean z10) {
-            this.f5117a = list;
-            this.f5118b = iArr;
-            this.f5119c = iArr2;
+        C0064e(b bVar, List list, int[] iArr, int[] iArr2, boolean z10) {
+            this.f5127a = list;
+            this.f5128b = iArr;
+            this.f5129c = iArr2;
             Arrays.fill(iArr, 0);
             Arrays.fill(iArr2, 0);
-            this.f5120d = bVar;
-            this.f5121e = bVar.getOldListSize();
-            this.f5122f = bVar.getNewListSize();
-            this.f5123g = z10;
+            this.f5130d = bVar;
+            this.f5131e = bVar.getOldListSize();
+            this.f5132f = bVar.getNewListSize();
+            this.f5133g = z10;
             a();
             e();
         }
 
         private void a() {
             d dVar;
-            if (this.f5117a.isEmpty()) {
+            if (this.f5127a.isEmpty()) {
                 dVar = null;
             } else {
-                dVar = (d) this.f5117a.get(0);
+                dVar = (d) this.f5127a.get(0);
             }
-            if (dVar == null || dVar.f5114a != 0 || dVar.f5115b != 0) {
-                this.f5117a.add(0, new d(0, 0, 0));
+            if (dVar == null || dVar.f5124a != 0 || dVar.f5125b != 0) {
+                this.f5127a.add(0, new d(0, 0, 0));
             }
-            this.f5117a.add(new d(this.f5121e, this.f5122f, 0));
+            this.f5127a.add(new d(this.f5131e, this.f5132f, 0));
         }
 
         private void d(int i10) {
             int i11;
-            int size = this.f5117a.size();
+            int size = this.f5127a.size();
             int i12 = 0;
             for (int i13 = 0; i13 < size; i13++) {
-                d dVar = (d) this.f5117a.get(i13);
-                while (i12 < dVar.f5115b) {
-                    if (this.f5119c[i12] == 0 && this.f5120d.areItemsTheSame(i10, i12)) {
-                        if (this.f5120d.areContentsTheSame(i10, i12)) {
+                d dVar = (d) this.f5127a.get(i13);
+                while (i12 < dVar.f5125b) {
+                    if (this.f5129c[i12] == 0 && this.f5130d.areItemsTheSame(i10, i12)) {
+                        if (this.f5130d.areContentsTheSame(i10, i12)) {
                             i11 = 8;
                         } else {
                             i11 = 4;
                         }
-                        this.f5118b[i10] = (i12 << 4) | i11;
-                        this.f5119c[i12] = (i10 << 4) | i11;
+                        this.f5128b[i10] = (i12 << 4) | i11;
+                        this.f5129c[i12] = (i10 << 4) | i11;
                         return;
                     }
                     i12++;
@@ -176,29 +176,29 @@ public abstract class e {
 
         private void e() {
             int i10;
-            for (d dVar : this.f5117a) {
-                for (int i11 = 0; i11 < dVar.f5116c; i11++) {
-                    int i12 = dVar.f5114a + i11;
-                    int i13 = dVar.f5115b + i11;
-                    if (this.f5120d.areContentsTheSame(i12, i13)) {
+            for (d dVar : this.f5127a) {
+                for (int i11 = 0; i11 < dVar.f5126c; i11++) {
+                    int i12 = dVar.f5124a + i11;
+                    int i13 = dVar.f5125b + i11;
+                    if (this.f5130d.areContentsTheSame(i12, i13)) {
                         i10 = 1;
                     } else {
                         i10 = 2;
                     }
-                    this.f5118b[i12] = (i13 << 4) | i10;
-                    this.f5119c[i13] = (i12 << 4) | i10;
+                    this.f5128b[i12] = (i13 << 4) | i10;
+                    this.f5129c[i13] = (i12 << 4) | i10;
                 }
             }
-            if (this.f5123g) {
+            if (this.f5133g) {
                 f();
             }
         }
 
         private void f() {
             int i10 = 0;
-            for (d dVar : this.f5117a) {
-                while (i10 < dVar.f5114a) {
-                    if (this.f5118b[i10] == 0) {
+            for (d dVar : this.f5127a) {
+                while (i10 < dVar.f5124a) {
+                    if (this.f5128b[i10] == 0) {
                         d(i10);
                     }
                     i10++;
@@ -213,7 +213,7 @@ public abstract class e {
             while (true) {
                 if (it.hasNext()) {
                     gVar = (g) it.next();
-                    if (gVar.f5124a == i10 && gVar.f5126c == z10) {
+                    if (gVar.f5134a == i10 && gVar.f5136c == z10) {
                         it.remove();
                         break;
                     }
@@ -225,9 +225,9 @@ public abstract class e {
             while (it.hasNext()) {
                 g gVar2 = (g) it.next();
                 if (z10) {
-                    gVar2.f5125b--;
+                    gVar2.f5135b--;
                 } else {
-                    gVar2.f5125b++;
+                    gVar2.f5135b++;
                 }
             }
             return gVar;
@@ -241,12 +241,12 @@ public abstract class e {
             } else {
                 dVar = new androidx.recyclerview.widget.d(mVar);
             }
-            int i11 = this.f5121e;
+            int i11 = this.f5131e;
             ArrayDeque arrayDeque = new ArrayDeque();
-            int i12 = this.f5121e;
-            int i13 = this.f5122f;
-            for (int size = this.f5117a.size() - 1; size >= 0; size--) {
-                d dVar2 = (d) this.f5117a.get(size);
+            int i12 = this.f5131e;
+            int i13 = this.f5132f;
+            for (int size = this.f5127a.size() - 1; size >= 0; size--) {
+                d dVar2 = (d) this.f5127a.get(size);
                 int a10 = dVar2.a();
                 int b10 = dVar2.b();
                 while (true) {
@@ -254,15 +254,15 @@ public abstract class e {
                         break;
                     }
                     i12--;
-                    int i14 = this.f5118b[i12];
+                    int i14 = this.f5128b[i12];
                     if ((i14 & 12) != 0) {
                         int i15 = i14 >> 4;
                         g g10 = g(arrayDeque, i15, false);
                         if (g10 != null) {
-                            int i16 = (i11 - g10.f5125b) - 1;
+                            int i16 = (i11 - g10.f5135b) - 1;
                             dVar.d(i12, i16);
                             if ((i14 & 4) != 0) {
-                                dVar.c(i16, 1, this.f5120d.getChangePayload(i12, i15));
+                                dVar.c(i16, 1, this.f5130d.getChangePayload(i12, i15));
                             }
                         } else {
                             arrayDeque.add(new g(i12, (i11 - i12) - 1, true));
@@ -274,16 +274,16 @@ public abstract class e {
                 }
                 while (i13 > b10) {
                     i13--;
-                    int i17 = this.f5119c[i13];
+                    int i17 = this.f5129c[i13];
                     if ((i17 & 12) != 0) {
                         int i18 = i17 >> 4;
                         g g11 = g(arrayDeque, i18, true);
                         if (g11 == null) {
                             arrayDeque.add(new g(i13, i11 - i12, false));
                         } else {
-                            dVar.d((i11 - g11.f5125b) - 1, i12);
+                            dVar.d((i11 - g11.f5135b) - 1, i12);
                             if ((i17 & 4) != 0) {
-                                dVar.c(i12, 1, this.f5120d.getChangePayload(i18, i13));
+                                dVar.c(i12, 1, this.f5130d.getChangePayload(i18, i13));
                             }
                         }
                     } else {
@@ -291,17 +291,17 @@ public abstract class e {
                         i11++;
                     }
                 }
-                int i19 = dVar2.f5114a;
-                int i20 = dVar2.f5115b;
-                for (i10 = 0; i10 < dVar2.f5116c; i10++) {
-                    if ((this.f5118b[i19] & 15) == 2) {
-                        dVar.c(i19, 1, this.f5120d.getChangePayload(i19, i20));
+                int i19 = dVar2.f5124a;
+                int i20 = dVar2.f5125b;
+                for (i10 = 0; i10 < dVar2.f5126c; i10++) {
+                    if ((this.f5128b[i19] & 15) == 2) {
+                        dVar.c(i19, 1, this.f5130d.getChangePayload(i19, i20));
                     }
                     i19++;
                     i20++;
                 }
-                i12 = dVar2.f5114a;
-                i13 = dVar2.f5115b;
+                i12 = dVar2.f5124a;
+                i13 = dVar2.f5125b;
             }
             dVar.e();
         }
@@ -327,18 +327,18 @@ public abstract class e {
     public static class g {
 
         /* renamed from: a  reason: collision with root package name */
-        int f5124a;
+        int f5134a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f5125b;
+        int f5135b;
 
         /* renamed from: c  reason: collision with root package name */
-        boolean f5126c;
+        boolean f5136c;
 
         g(int i10, int i11, boolean z10) {
-            this.f5124a = i10;
-            this.f5125b = i11;
-            this.f5126c = z10;
+            this.f5134a = i10;
+            this.f5135b = i11;
+            this.f5136c = z10;
         }
     }
 
@@ -347,33 +347,33 @@ public abstract class e {
     public static class h {
 
         /* renamed from: a  reason: collision with root package name */
-        int f5127a;
+        int f5137a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f5128b;
+        int f5138b;
 
         /* renamed from: c  reason: collision with root package name */
-        int f5129c;
+        int f5139c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f5130d;
+        int f5140d;
 
         public h() {
         }
 
         int a() {
-            return this.f5130d - this.f5129c;
+            return this.f5140d - this.f5139c;
         }
 
         int b() {
-            return this.f5128b - this.f5127a;
+            return this.f5138b - this.f5137a;
         }
 
         public h(int i10, int i11, int i12, int i13) {
-            this.f5127a = i10;
-            this.f5128b = i11;
-            this.f5129c = i12;
-            this.f5130d = i13;
+            this.f5137a = i10;
+            this.f5138b = i11;
+            this.f5139c = i12;
+            this.f5140d = i13;
         }
     }
 
@@ -382,36 +382,36 @@ public abstract class e {
     public static class i {
 
         /* renamed from: a  reason: collision with root package name */
-        public int f5131a;
+        public int f5141a;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f5132b;
+        public int f5142b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f5133c;
+        public int f5143c;
 
         /* renamed from: d  reason: collision with root package name */
-        public int f5134d;
+        public int f5144d;
 
         /* renamed from: e  reason: collision with root package name */
-        public boolean f5135e;
+        public boolean f5145e;
 
         i() {
         }
 
         int a() {
-            return Math.min(this.f5133c - this.f5131a, this.f5134d - this.f5132b);
+            return Math.min(this.f5143c - this.f5141a, this.f5144d - this.f5142b);
         }
 
         boolean b() {
-            if (this.f5134d - this.f5132b != this.f5133c - this.f5131a) {
+            if (this.f5144d - this.f5142b != this.f5143c - this.f5141a) {
                 return true;
             }
             return false;
         }
 
         boolean c() {
-            if (this.f5134d - this.f5132b > this.f5133c - this.f5131a) {
+            if (this.f5144d - this.f5142b > this.f5143c - this.f5141a) {
                 return true;
             }
             return false;
@@ -419,16 +419,16 @@ public abstract class e {
 
         d d() {
             if (b()) {
-                if (this.f5135e) {
-                    return new d(this.f5131a, this.f5132b, a());
+                if (this.f5145e) {
+                    return new d(this.f5141a, this.f5142b, a());
                 }
                 if (c()) {
-                    return new d(this.f5131a, this.f5132b + 1, a());
+                    return new d(this.f5141a, this.f5142b + 1, a());
                 }
-                return new d(this.f5131a + 1, this.f5132b, a());
+                return new d(this.f5141a + 1, this.f5142b, a());
             }
-            int i10 = this.f5131a;
-            return new d(i10, this.f5132b, this.f5133c - i10);
+            int i10 = this.f5141a;
+            return new d(i10, this.f5142b, this.f5143c - i10);
         }
     }
 
@@ -453,35 +453,35 @@ public abstract class e {
                 b10 = cVar2.b(i15 + 1);
                 i11 = b10;
             }
-            int i16 = hVar.f5130d - ((hVar.f5128b - i11) - i15);
+            int i16 = hVar.f5140d - ((hVar.f5138b - i11) - i15);
             if (i10 != 0 && i11 == b10) {
                 i12 = i16 + 1;
             } else {
                 i12 = i16;
             }
-            while (i11 > hVar.f5127a && i16 > hVar.f5129c && bVar.areItemsTheSame(i11 - 1, i16 - 1)) {
+            while (i11 > hVar.f5137a && i16 > hVar.f5139c && bVar.areItemsTheSame(i11 - 1, i16 - 1)) {
                 i11--;
                 i16--;
             }
             cVar2.c(i15, i11);
             if (z10 && (i13 = b11 - i15) >= i14 && i13 <= i10 && cVar.b(i13) >= i11) {
                 i iVar = new i();
-                iVar.f5131a = i11;
-                iVar.f5132b = i16;
-                iVar.f5133c = b10;
-                iVar.f5134d = i12;
-                iVar.f5135e = true;
+                iVar.f5141a = i11;
+                iVar.f5142b = i16;
+                iVar.f5143c = b10;
+                iVar.f5144d = i12;
+                iVar.f5145e = true;
                 return iVar;
             }
         }
         return null;
     }
 
-    public static C0068e b(b bVar) {
+    public static C0064e b(b bVar) {
         return c(bVar, true);
     }
 
-    public static C0068e c(b bVar, boolean z10) {
+    public static C0064e c(b bVar, boolean z10) {
         h hVar;
         int oldListSize = bVar.getOldListSize();
         int newListSize = bVar.getNewListSize();
@@ -504,22 +504,22 @@ public abstract class e {
                 } else {
                     hVar = (h) arrayList3.remove(arrayList3.size() - 1);
                 }
-                hVar.f5127a = hVar2.f5127a;
-                hVar.f5129c = hVar2.f5129c;
-                hVar.f5128b = e10.f5131a;
-                hVar.f5130d = e10.f5132b;
+                hVar.f5137a = hVar2.f5137a;
+                hVar.f5139c = hVar2.f5139c;
+                hVar.f5138b = e10.f5141a;
+                hVar.f5140d = e10.f5142b;
                 arrayList2.add(hVar);
-                hVar2.f5128b = hVar2.f5128b;
-                hVar2.f5130d = hVar2.f5130d;
-                hVar2.f5127a = e10.f5133c;
-                hVar2.f5129c = e10.f5134d;
+                hVar2.f5138b = hVar2.f5138b;
+                hVar2.f5140d = hVar2.f5140d;
+                hVar2.f5137a = e10.f5143c;
+                hVar2.f5139c = e10.f5144d;
                 arrayList2.add(hVar2);
             } else {
                 arrayList3.add(hVar2);
             }
         }
-        Collections.sort(arrayList, f5111a);
-        return new C0068e(bVar, arrayList, cVar.a(), cVar2.a(), z10);
+        Collections.sort(arrayList, f5121a);
+        return new C0064e(bVar, arrayList, cVar.a(), cVar2.a(), z10);
     }
 
     private static i d(h hVar, b bVar, c cVar, c cVar2, int i10) {
@@ -540,20 +540,20 @@ public abstract class e {
                 b10 = cVar.b(i14 + 1);
                 i11 = b10;
             }
-            int i15 = (hVar.f5129c + (i11 - hVar.f5127a)) - i14;
+            int i15 = (hVar.f5139c + (i11 - hVar.f5137a)) - i14;
             int i16 = (i10 != 0 && i11 == b10) ? i15 - 1 : i15;
-            while (i11 < hVar.f5128b && i15 < hVar.f5130d && bVar.areItemsTheSame(i11, i15)) {
+            while (i11 < hVar.f5138b && i15 < hVar.f5140d && bVar.areItemsTheSame(i11, i15)) {
                 i11++;
                 i15++;
             }
             cVar.c(i14, i11);
             if (z10 && (i12 = b11 - i14) >= i13 + 1 && i12 <= i10 - 1 && cVar2.b(i12) <= i11) {
                 i iVar = new i();
-                iVar.f5131a = b10;
-                iVar.f5132b = i16;
-                iVar.f5133c = i11;
-                iVar.f5134d = i15;
-                iVar.f5135e = false;
+                iVar.f5141a = b10;
+                iVar.f5142b = i16;
+                iVar.f5143c = i11;
+                iVar.f5144d = i15;
+                iVar.f5145e = false;
                 return iVar;
             }
         }
@@ -563,8 +563,8 @@ public abstract class e {
     private static i e(h hVar, b bVar, c cVar, c cVar2) {
         if (hVar.b() >= 1 && hVar.a() >= 1) {
             int b10 = ((hVar.b() + hVar.a()) + 1) / 2;
-            cVar.c(1, hVar.f5127a);
-            cVar2.c(1, hVar.f5128b);
+            cVar.c(1, hVar.f5137a);
+            cVar2.c(1, hVar.f5138b);
             for (int i10 = 0; i10 < b10; i10++) {
                 i d10 = d(hVar, bVar, cVar, cVar2, i10);
                 if (d10 != null) {

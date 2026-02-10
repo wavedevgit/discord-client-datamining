@@ -5,6 +5,7 @@ import android.media.AudioAttributes;
 import android.media.AudioFocusRequest;
 import android.media.AudioManager;
 import android.os.Build;
+import bt.l0;
 import com.discord.chat.presentation.message.view.voicemessages.AudioPlayerManager;
 import com.discord.media_player.MediaPlayer;
 import com.discord.media_player.MediaSource;
@@ -22,7 +23,6 @@ import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.MutableStateFlow;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.MediaStreamTrack;
-import ss.l0;
 @Metadata(d1 = {"\u0000z\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\t\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\r\bÆ\u0002\u0018\u00002\u00020\u0001:\u0002<=B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#J\u0010\u0010$\u001a\u00020\u001f2\b\u0010%\u001a\u0004\u0018\u00010\u000fJ\u0012\u0010&\u001a\u0004\u0018\u00010\u00102\b\u0010'\u001a\u0004\u0018\u00010\u000fJ\u001e\u0010(\u001a\u00020!2\u0006\u0010'\u001a\u00020\u000f2\u0006\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020,J\u0012\u0010-\u001a\u0004\u0018\u00010\u00142\b\u0010'\u001a\u0004\u0018\u00010\u000fJ\u0012\u0010.\u001a\u0004\u0018\u00010\u00122\b\u0010'\u001a\u0004\u0018\u00010\u000fJ2\u0010/\u001a\u00020!2\u0006\u0010\"\u001a\u00020#2\u0006\u0010'\u001a\u00020\u000f2\u0006\u0010+\u001a\u00020,2\u0012\u00100\u001a\u000e\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020!01J\u0010\u00102\u001a\u00020!2\b\u0010'\u001a\u0004\u0018\u00010\u000fJ\u000e\u00103\u001a\u00020!2\u0006\u00104\u001a\u00020\u001fJ\u0006\u00105\u001a\u00020!J\u001a\u00106\u001a\u0004\u0018\u00010\u00102\u0006\u0010'\u001a\u00020\u000f2\u0006\u0010+\u001a\u00020,H\u0002J\u0010\u00107\u001a\u00020!2\b\u0010'\u001a\u0004\u0018\u00010\u000fJ\b\u00108\u001a\u00020!H\u0002J\b\u00109\u001a\u00020!H\u0002J\u0010\u00108\u001a\u00020!2\b\u0010%\u001a\u0004\u0018\u00010\u000fJ\u0010\u00109\u001a\u00020!2\b\u0010%\u001a\u0004\u0018\u00010\u000fJ\b\u0010:\u001a\u00020\u001fH\u0002J\b\u0010;\u001a\u00020!H\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\b\u001a\n \n*\u0004\u0018\u00010\t0\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082.¢\u0006\u0002\n\u0000R\u001a\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u00100\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u0014X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u0015\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u000f0\u0016X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0017\u001a\u0004\u0018\u00010\u000f8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0018\u0010\u0019R\u0019\u0010\u001a\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u000f0\u001b¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u000e\u0010\u001e\u001a\u00020\u001fX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006>"}, d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager;", "", "<init>", "()V", "audioManager", "Landroid/media/AudioManager;", "focusListener", "Landroid/media/AudioManager$OnAudioFocusChangeListener;", "playbackAttributes", "Landroid/media/AudioAttributes;", "kotlin.jvm.PlatformType", "focusRequest", "Landroid/media/AudioFocusRequest;", "currentProgressMap", "", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager$AudioSource;", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager$CurrentProgress;", "mediaPlayerState", "Lcom/discord/media_player/MediaPlayer$Event;", "mediaPlayer", "Lcom/discord/media_player/MediaPlayer;", "_currentPlayerSourceFlow", "Lkotlinx/coroutines/flow/MutableStateFlow;", "currentPlayerSource", "getCurrentPlayerSource", "()Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager$AudioSource;", "currentPlayerSourceFlow", "Lkotlinx/coroutines/flow/Flow;", "getCurrentPlayerSourceFlow", "()Lkotlinx/coroutines/flow/Flow;", "wasPlayingBeforePause", "", "init", "", "context", "Landroid/content/Context;", "hasCurrentPlayer", "audioSource", "getCurrentProgress", "source", "setCurrentProgress", ReactProgressBarViewManager.PROP_PROGRESS, "", "durationMs", "", "getPlayer", "getState", "setupPlayer", "onStateChanged", "Lkotlin/Function1;", "releasePlayer", "pauseCurrentPlayer", "storePauseState", "maybePlayCurrentPlayer", "maybeCreateDuration", "storeDuration", "playOrReset", "pause", "requestAudioFocus", "abandonAudioFocus", "AudioSource", "CurrentProgress", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class AudioPlayerManager {
@@ -63,7 +63,7 @@ public final class AudioPlayerManager {
         }
 
         /* renamed from: copy-fxiT1bo$default  reason: not valid java name */
-        public static /* synthetic */ AudioSource m710copyfxiT1bo$default(AudioSource audioSource, ChannelId channelId, String str, String str2, Integer num, int i10, Object obj) {
+        public static /* synthetic */ AudioSource m711copyfxiT1bo$default(AudioSource audioSource, ChannelId channelId, String str, String str2, Integer num, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 channelId = audioSource.channelId;
             }
@@ -76,17 +76,17 @@ public final class AudioPlayerManager {
             if ((i10 & 8) != 0) {
                 num = audioSource.index;
             }
-            return audioSource.m713copyfxiT1bo(channelId, str, str2, num);
+            return audioSource.m714copyfxiT1bo(channelId, str, str2, num);
         }
 
         /* renamed from: component1-qMVnFVQ  reason: not valid java name */
-        public final ChannelId m711component1qMVnFVQ() {
+        public final ChannelId m712component1qMVnFVQ() {
             return this.channelId;
         }
 
         @NotNull
         /* renamed from: component2-3Eiw7ao  reason: not valid java name */
-        public final String m712component23Eiw7ao() {
+        public final String m713component23Eiw7ao() {
             return this.messageId;
         }
 
@@ -101,7 +101,7 @@ public final class AudioPlayerManager {
 
         @NotNull
         /* renamed from: copy-fxiT1bo  reason: not valid java name */
-        public final AudioSource m713copyfxiT1bo(ChannelId channelId, @NotNull String messageId, @NotNull String url, Integer num) {
+        public final AudioSource m714copyfxiT1bo(ChannelId channelId, @NotNull String messageId, @NotNull String url, Integer num) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(url, "url");
             return new AudioSource(channelId, messageId, url, num, null);
@@ -113,13 +113,13 @@ public final class AudioPlayerManager {
             }
             if (obj instanceof AudioSource) {
                 AudioSource audioSource = (AudioSource) obj;
-                return Intrinsics.areEqual(this.channelId, audioSource.channelId) && MessageId.m1087equalsimpl0(this.messageId, audioSource.messageId) && Intrinsics.areEqual(this.url, audioSource.url) && Intrinsics.areEqual(this.index, audioSource.index);
+                return Intrinsics.areEqual(this.channelId, audioSource.channelId) && MessageId.m1088equalsimpl0(this.messageId, audioSource.messageId) && Intrinsics.areEqual(this.url, audioSource.url) && Intrinsics.areEqual(this.index, audioSource.index);
             }
             return false;
         }
 
         /* renamed from: getChannelId-qMVnFVQ  reason: not valid java name */
-        public final ChannelId m714getChannelIdqMVnFVQ() {
+        public final ChannelId m715getChannelIdqMVnFVQ() {
             return this.channelId;
         }
 
@@ -129,7 +129,7 @@ public final class AudioPlayerManager {
 
         @NotNull
         /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-        public final String m715getMessageId3Eiw7ao() {
+        public final String m716getMessageId3Eiw7ao() {
             return this.messageId;
         }
 
@@ -140,18 +140,18 @@ public final class AudioPlayerManager {
 
         public int hashCode() {
             ChannelId channelId = this.channelId;
-            int m1062hashCodeimpl = (((((channelId == null ? 0 : ChannelId.m1062hashCodeimpl(channelId.m1066unboximpl())) * 31) + MessageId.m1088hashCodeimpl(this.messageId)) * 31) + this.url.hashCode()) * 31;
+            int m1063hashCodeimpl = (((((channelId == null ? 0 : ChannelId.m1063hashCodeimpl(channelId.m1067unboximpl())) * 31) + MessageId.m1089hashCodeimpl(this.messageId)) * 31) + this.url.hashCode()) * 31;
             Integer num = this.index;
-            return m1062hashCodeimpl + (num != null ? num.hashCode() : 0);
+            return m1063hashCodeimpl + (num != null ? num.hashCode() : 0);
         }
 
         @NotNull
         public String toString() {
             ChannelId channelId = this.channelId;
-            String m1090toStringimpl = MessageId.m1090toStringimpl(this.messageId);
+            String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
             String str = this.url;
             Integer num = this.index;
-            return "AudioSource(channelId=" + channelId + ", messageId=" + m1090toStringimpl + ", url=" + str + ", index=" + num + ")";
+            return "AudioSource(channelId=" + channelId + ", messageId=" + m1091toStringimpl + ", url=" + str + ", index=" + num + ")";
         }
 
         private AudioSource(ChannelId channelId, String messageId, String url, Integer num) {
@@ -358,7 +358,7 @@ public final class AudioPlayerManager {
             mediaPlayerState = event;
             function1.invoke(event);
         }
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     @NotNull

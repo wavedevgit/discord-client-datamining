@@ -1,94 +1,140 @@
 package kt;
 
-import jt.k;
-import jt.l;
 import kotlin.Lazy;
-import kotlin.collections.CollectionsKt;
+import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlin.jvm.internal.Lambda;
+import kt.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b0 extends a2 {
+public abstract class b0 {
 
-    /* renamed from: m  reason: collision with root package name */
-    private final jt.k f35108m;
+    /* renamed from: a */
+    private static final Lazy f35170a = as.l.b(a.f35172d);
 
-    /* renamed from: n  reason: collision with root package name */
-    private final Lazy f35109n;
+    /* renamed from: b */
+    private static final w f35171b = new w(null, null, null, null, null, null, 63, null);
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public b0(final String name, final int i10) {
-        super(name, null, i10, 2, null);
-        Intrinsics.checkNotNullParameter(name, "name");
-        this.f35108m = k.b.f30494a;
-        this.f35109n = rr.l.a(new Function0() { // from class: kt.a0
-            @Override // kotlin.jvm.functions.Function0
-            public final Object invoke() {
-                SerialDescriptor[] A;
-                A = b0.A(i10, name, this);
-                return A;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class a extends Lambda implements Function0 {
+
+        /* renamed from: d */
+        public static final a f35172d = new a();
+
+        /* renamed from: kt.b0$a$a */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class C0466a extends Lambda implements Function1 {
+
+            /* renamed from: d */
+            public static final C0466a f35173d = new C0466a();
+
+            /* renamed from: kt.b0$a$a$a */
+            /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+            public static final class C0467a extends Lambda implements Function1 {
+
+                /* renamed from: d */
+                public static final C0467a f35174d = new C0467a();
+
+                C0467a() {
+                    super(1);
+                }
+
+                public final void a(o.c alternativeParsing) {
+                    Intrinsics.checkNotNullParameter(alternativeParsing, "$this$alternativeParsing");
+                }
+
+                @Override // kotlin.jvm.functions.Function1
+                public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                    a((o.c) obj);
+                    return Unit.f31987a;
+                }
             }
-        });
-    }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final SerialDescriptor[] A(int i10, String str, b0 b0Var) {
-        SerialDescriptor[] serialDescriptorArr = new SerialDescriptor[i10];
-        for (int i11 = 0; i11 < i10; i11++) {
-            serialDescriptorArr[i11] = jt.j.e(str + '.' + b0Var.e(i11), l.d.f30498a, new SerialDescriptor[0], null, 8, null);
-        }
-        return serialDescriptorArr;
-    }
+            /* renamed from: kt.b0$a$a$b */
+            /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+            public static final class b extends Lambda implements Function1 {
 
-    private final SerialDescriptor[] B() {
-        return (SerialDescriptor[]) this.f35109n.getValue();
-    }
+                /* renamed from: d */
+                public static final b f35175d = new b();
 
-    @Override // kt.a2
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || !(obj instanceof SerialDescriptor)) {
-            return false;
-        }
-        SerialDescriptor serialDescriptor = (SerialDescriptor) obj;
-        if (serialDescriptor.getKind() == k.b.f30494a && Intrinsics.areEqual(h(), serialDescriptor.h()) && Intrinsics.areEqual(u1.a(this), u1.a(serialDescriptor))) {
-            return true;
-        }
-        return false;
-    }
+                /* renamed from: kt.b0$a$a$b$a */
+                /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+                public static final class C0468a extends Lambda implements Function1 {
 
-    @Override // kt.a2, kotlinx.serialization.descriptors.SerialDescriptor
-    public SerialDescriptor g(int i10) {
-        return B()[i10];
-    }
+                    /* renamed from: d */
+                    public static final C0468a f35176d = new C0468a();
 
-    @Override // kt.a2, kotlinx.serialization.descriptors.SerialDescriptor
-    public jt.k getKind() {
-        return this.f35108m;
-    }
+                    C0468a() {
+                        super(1);
+                    }
 
-    @Override // kt.a2
-    public int hashCode() {
-        int i10;
-        int hashCode = h().hashCode();
-        int i11 = 1;
-        for (String str : jt.h.b(this)) {
-            int i12 = i11 * 31;
-            if (str != null) {
-                i10 = str.hashCode();
-            } else {
-                i10 = 0;
+                    public final void a(o.c optional) {
+                        Intrinsics.checkNotNullParameter(optional, "$this$optional");
+                        p.b(optional, '.');
+                        optional.o(1, 9);
+                    }
+
+                    @Override // kotlin.jvm.functions.Function1
+                    public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                        a((o.c) obj);
+                        return Unit.f31987a;
+                    }
+                }
+
+                b() {
+                    super(1);
+                }
+
+                public final void a(o.c alternativeParsing) {
+                    Intrinsics.checkNotNullParameter(alternativeParsing, "$this$alternativeParsing");
+                    p.b(alternativeParsing, ':');
+                    o.c.a.c(alternativeParsing, null, 1, null);
+                    p.d(alternativeParsing, null, C0468a.f35176d, 1, null);
+                }
+
+                @Override // kotlin.jvm.functions.Function1
+                public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                    a((o.c) obj);
+                    return Unit.f31987a;
+                }
             }
-            i11 = i12 + i10;
+
+            C0466a() {
+                super(1);
+            }
+
+            public final void a(o.c build) {
+                Intrinsics.checkNotNullParameter(build, "$this$build");
+                o.c.a.a(build, null, 1, null);
+                p.b(build, ':');
+                o.c.a.b(build, null, 1, null);
+                p.a(build, new Function1[]{C0467a.f35174d}, b.f35175d);
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                a((o.c) obj);
+                return Unit.f31987a;
+            }
         }
-        return (hashCode * 31) + i11;
+
+        a() {
+            super(0);
+        }
+
+        @Override // kotlin.jvm.functions.Function0
+        /* renamed from: a */
+        public final a0 invoke() {
+            return a0.f35167b.a(C0466a.f35173d);
+        }
     }
 
-    @Override // kt.a2
-    public String toString() {
-        Iterable b10 = jt.h.b(this);
-        return CollectionsKt.x0(b10, ", ", h() + '(', ")", 0, null, null, 56, null);
+    public static final /* synthetic */ w a() {
+        return f35171b;
+    }
+
+    public static final a0 b() {
+        return (a0) f35170a.getValue();
     }
 }

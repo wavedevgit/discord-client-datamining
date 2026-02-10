@@ -1,22 +1,51 @@
 package vt;
-
-import tt.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class b {
-    public static String a(j jVar, char c10, int i10) {
-        if (jVar.o()) {
-            int i11 = c10 - '0';
-            String num = Integer.toString(i10);
-            if (i11 == 0) {
-                return num;
-            }
-            StringBuilder sb2 = new StringBuilder();
-            int length = num.length();
-            for (int i12 = 0; i12 < length; i12++) {
-                sb2.append((char) (num.charAt(i12) + i11));
-            }
-            return sb2.toString();
+    public static final byte a(char c10) {
+        if (c10 < '~') {
+            return k.f51913c[c10];
         }
-        return jVar.t(i10);
+        return (byte) 0;
+    }
+
+    public static final char b(int i10) {
+        if (i10 < 117) {
+            return k.f51912b[i10];
+        }
+        return (char) 0;
+    }
+
+    public static final String c(byte b10) {
+        if (b10 == 1) {
+            return "quotation mark '\"'";
+        }
+        if (b10 == 2) {
+            return "string escape sequence '\\'";
+        }
+        if (b10 == 4) {
+            return "comma ','";
+        }
+        if (b10 == 5) {
+            return "colon ':'";
+        }
+        if (b10 == 6) {
+            return "start of the object '{'";
+        }
+        if (b10 == 7) {
+            return "end of the object '}'";
+        }
+        if (b10 == 8) {
+            return "start of the array '['";
+        }
+        if (b10 == 9) {
+            return "end of the array ']'";
+        }
+        if (b10 == 10) {
+            return "end of the input";
+        }
+        if (b10 == Byte.MAX_VALUE) {
+            return "invalid token";
+        }
+        return "valid token";
     }
 }

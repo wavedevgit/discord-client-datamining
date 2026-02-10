@@ -45,7 +45,7 @@ public final class StepStyles_StepCancelButtonComponentStyleContainerJsonAdapter
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 buttonCancelComponentStyle = (ButtonCancelComponentStyle) this.nullableButtonCancelComponentStyleAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class StepStyles_StepCancelButtonComponentStyleContainerJsonAdapter
     public void toJson(@NotNull t writer, StepStyles.StepCancelButtonComponentStyleContainer stepCancelButtonComponentStyleContainer) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepCancelButtonComponentStyleContainer != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableButtonCancelComponentStyleAdapter.toJson(writer, stepCancelButtonComponentStyleContainer.getBase());
             writer.s();

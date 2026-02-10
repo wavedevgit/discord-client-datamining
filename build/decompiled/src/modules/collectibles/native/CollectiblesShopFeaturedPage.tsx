@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/CollectiblesShopFeaturedPage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun89171: for (var _fun89171_ip = 0;;) switch (_fun89171_ip) {
+        _fun89227: for (var _fun89227_ip = 0;;) switch (_fun89227_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.shopBlock;
@@ -66,13 +66,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.bind(var4)();
                 var0 = null;
                 if (!(var0 === var1)) {
-                    _fun89171_ip = 95;
-                    continue _fun89171
+                    _fun89227_ip = 95;
+                    continue _fun89227
                 }
             case 34:
                 if (!(var4 !== var3)) {
-                    _fun89171_ip = 95;
-                    continue _fun89171
+                    _fun89227_ip = 95;
+                    continue _fun89227
                 }
             case 38:
                 var2 = _closure1_slot5;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.FEATURED_PAGE;
                 var0.screen = var3;
                 var0 = var2.bind(var4)(var1, var0);
-                _fun89171_ip = 243;
-                continue _fun89171;
+                _fun89227_ip = 243;
+                continue _fun89227;
             case 95:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot3;
@@ -131,4 +131,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3284, 33, 1297, 7405, 7406, 1234, 11539, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3284, 33, 1297, 7415, 7416, 1234, 11550, 2]);

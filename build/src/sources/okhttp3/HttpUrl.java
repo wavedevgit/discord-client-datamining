@@ -19,75 +19,75 @@ import okio.Buffer;
 public final class HttpUrl {
 
     /* renamed from: k  reason: collision with root package name */
-    public static final b f42026k = new b(null);
+    public static final b f40276k = new b(null);
 
     /* renamed from: l  reason: collision with root package name */
-    private static final char[] f42027l = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+    private static final char[] f40277l = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f42028a;
+    private final String f40278a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f42029b;
+    private final String f40279b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f42030c;
+    private final String f40280c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f42031d;
+    private final String f40281d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f42032e;
+    private final int f40282e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final List f42033f;
+    private final List f40283f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f42034g;
+    private final List f40284g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f42035h;
+    private final String f40285h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f42036i;
+    private final String f40286i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final boolean f42037j;
+    private final boolean f40287j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: i  reason: collision with root package name */
-        public static final C0597a f42038i = new C0597a(null);
+        public static final C0555a f40288i = new C0555a(null);
 
         /* renamed from: a  reason: collision with root package name */
-        private String f42039a;
+        private String f40289a;
 
         /* renamed from: d  reason: collision with root package name */
-        private String f42042d;
+        private String f40292d;
 
         /* renamed from: f  reason: collision with root package name */
-        private final List f42044f;
+        private final List f40294f;
 
         /* renamed from: g  reason: collision with root package name */
-        private List f42045g;
+        private List f40295g;
 
         /* renamed from: h  reason: collision with root package name */
-        private String f42046h;
+        private String f40296h;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f42040b = "";
+        private String f40290b = "";
 
         /* renamed from: c  reason: collision with root package name */
-        private String f42041c = "";
+        private String f40291c = "";
 
         /* renamed from: e  reason: collision with root package name */
-        private int f42043e = -1;
+        private int f40293e = -1;
 
         /* renamed from: okhttp3.HttpUrl$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class C0597a {
-            public /* synthetic */ C0597a(DefaultConstructorMarker defaultConstructorMarker) {
+        public static final class C0555a {
+            public /* synthetic */ C0555a(DefaultConstructorMarker defaultConstructorMarker) {
                 this();
             }
 
@@ -95,7 +95,7 @@ public final class HttpUrl {
             public final int e(String str, int i10, int i11) {
                 int parseInt;
                 try {
-                    parseInt = Integer.parseInt(b.b(HttpUrl.f42026k, str, i10, i11, "", false, false, false, false, null, 248, null));
+                    parseInt = Integer.parseInt(b.b(HttpUrl.f40276k, str, i10, i11, "", false, false, false, false, null, 248, null));
                 } catch (NumberFormatException unused) {
                 }
                 if (1 > parseInt || parseInt >= 65536) {
@@ -165,23 +165,23 @@ public final class HttpUrl {
                 return i12;
             }
 
-            private C0597a() {
+            private C0555a() {
             }
         }
 
         public a() {
             ArrayList arrayList = new ArrayList();
-            this.f42044f = arrayList;
+            this.f40294f = arrayList;
             arrayList.add("");
         }
 
         private final int d() {
-            int i10 = this.f42043e;
+            int i10 = this.f40293e;
             if (i10 != -1) {
                 return i10;
             }
-            b bVar = HttpUrl.f42026k;
-            String str = this.f42039a;
+            b bVar = HttpUrl.f40276k;
+            String str = this.f40289a;
             Intrinsics.checkNotNull(str);
             return bVar.c(str);
         }
@@ -201,31 +201,31 @@ public final class HttpUrl {
         }
 
         private final void l() {
-            List list = this.f42044f;
-            if (((String) list.remove(list.size() - 1)).length() == 0 && !this.f42044f.isEmpty()) {
-                List list2 = this.f42044f;
+            List list = this.f40294f;
+            if (((String) list.remove(list.size() - 1)).length() == 0 && !this.f40294f.isEmpty()) {
+                List list2 = this.f40294f;
                 list2.set(list2.size() - 1, "");
                 return;
             }
-            this.f42044f.add("");
+            this.f40294f.add("");
         }
 
         private final void n(String str, int i10, int i11, boolean z10, boolean z11) {
-            String b10 = b.b(HttpUrl.f42026k, str, i10, i11, " \"<>^`{}|/\\?#", z11, false, false, false, null, 240, null);
+            String b10 = b.b(HttpUrl.f40276k, str, i10, i11, " \"<>^`{}|/\\?#", z11, false, false, false, null, 240, null);
             if (!h(b10)) {
                 if (i(b10)) {
                     l();
                     return;
                 }
-                List list = this.f42044f;
+                List list = this.f40294f;
                 if (((CharSequence) list.get(list.size() - 1)).length() == 0) {
-                    List list2 = this.f42044f;
+                    List list2 = this.f40294f;
                     list2.set(list2.size() - 1, b10);
                 } else {
-                    this.f42044f.add(b10);
+                    this.f40294f.add(b10);
                 }
                 if (z10) {
-                    this.f42044f.add("");
+                    this.f40294f.add("");
                 }
             }
         }
@@ -235,16 +235,16 @@ public final class HttpUrl {
             if (i10 != i11) {
                 char charAt = str.charAt(i10);
                 if (charAt != '/' && charAt != '\\') {
-                    List list = this.f42044f;
+                    List list = this.f40294f;
                     list.set(list.size() - 1, "");
                 } else {
-                    this.f42044f.clear();
-                    this.f42044f.add("");
+                    this.f40294f.clear();
+                    this.f40294f.add("");
                     i10++;
                 }
                 int i12 = i10;
                 while (i12 < i11) {
-                    int q10 = du.e.q(str, "/\\", i12, i11);
+                    int q10 = mu.e.q(str, "/\\", i12, i11);
                     if (q10 < i11) {
                         z10 = true;
                     } else {
@@ -266,14 +266,14 @@ public final class HttpUrl {
         public final a a(String encodedName, String str) {
             String str2;
             Intrinsics.checkNotNullParameter(encodedName, "encodedName");
-            if (this.f42045g == null) {
-                this.f42045g = new ArrayList();
+            if (this.f40295g == null) {
+                this.f40295g = new ArrayList();
             }
-            List list = this.f42045g;
+            List list = this.f40295g;
             Intrinsics.checkNotNull(list);
-            b bVar = HttpUrl.f42026k;
+            b bVar = HttpUrl.f40276k;
             list.add(b.b(bVar, encodedName, 0, 0, " \"'<>#&=", true, false, true, false, null, 211, null));
-            List list2 = this.f42045g;
+            List list2 = this.f40295g;
             Intrinsics.checkNotNull(list2);
             if (str != null) {
                 str2 = b.b(bVar, str, 0, 0, " \"'<>#&=", true, false, true, false, null, 211, null);
@@ -287,14 +287,14 @@ public final class HttpUrl {
         public final a b(String name, String str) {
             String str2;
             Intrinsics.checkNotNullParameter(name, "name");
-            if (this.f42045g == null) {
-                this.f42045g = new ArrayList();
+            if (this.f40295g == null) {
+                this.f40295g = new ArrayList();
             }
-            List list = this.f42045g;
+            List list = this.f40295g;
             Intrinsics.checkNotNull(list);
-            b bVar = HttpUrl.f42026k;
+            b bVar = HttpUrl.f40276k;
             list.add(b.b(bVar, name, 0, 0, " !\"#$&'(),/:;<=>?@[]\\^`{|}~", false, false, true, false, null, 219, null));
-            List list2 = this.f42045g;
+            List list2 = this.f40295g;
             Intrinsics.checkNotNull(list2);
             if (str != null) {
                 str2 = b.b(bVar, str, 0, 0, " !\"#$&'(),/:;<=>?@[]\\^`{|}~", false, false, true, false, null, 219, null);
@@ -308,27 +308,27 @@ public final class HttpUrl {
         public final HttpUrl c() {
             ArrayList arrayList;
             String str;
-            String str2 = this.f42039a;
+            String str2 = this.f40289a;
             if (str2 != null) {
-                b bVar = HttpUrl.f42026k;
-                String h10 = b.h(bVar, this.f42040b, 0, 0, false, 7, null);
-                String h11 = b.h(bVar, this.f42041c, 0, 0, false, 7, null);
-                String str3 = this.f42042d;
+                b bVar = HttpUrl.f40276k;
+                String h10 = b.h(bVar, this.f40290b, 0, 0, false, 7, null);
+                String h11 = b.h(bVar, this.f40291c, 0, 0, false, 7, null);
+                String str3 = this.f40292d;
                 if (str3 != null) {
                     int d10 = d();
-                    List<String> list = this.f42044f;
+                    List<String> list = this.f40294f;
                     ArrayList arrayList2 = new ArrayList(CollectionsKt.w(list, 10));
                     for (String str4 : list) {
-                        arrayList2.add(b.h(HttpUrl.f42026k, str4, 0, 0, false, 7, null));
+                        arrayList2.add(b.h(HttpUrl.f40276k, str4, 0, 0, false, 7, null));
                     }
-                    List list2 = this.f42045g;
+                    List list2 = this.f40295g;
                     String str5 = null;
                     if (list2 != null) {
                         List<String> list3 = list2;
                         ArrayList arrayList3 = new ArrayList(CollectionsKt.w(list3, 10));
                         for (String str6 : list3) {
                             if (str6 != null) {
-                                str = b.h(HttpUrl.f42026k, str6, 0, 0, true, 3, null);
+                                str = b.h(HttpUrl.f40276k, str6, 0, 0, true, 3, null);
                             } else {
                                 str = null;
                             }
@@ -338,9 +338,9 @@ public final class HttpUrl {
                     } else {
                         arrayList = null;
                     }
-                    String str7 = this.f42046h;
+                    String str7 = this.f40296h;
                     if (str7 != null) {
-                        str5 = b.h(HttpUrl.f42026k, str7, 0, 0, false, 7, null);
+                        str5 = b.h(HttpUrl.f40276k, str7, 0, 0, false, 7, null);
                     }
                     return new HttpUrl(str2, h10, h11, str3, d10, arrayList2, arrayList, str5, toString());
                 }
@@ -353,24 +353,24 @@ public final class HttpUrl {
             List list;
             b bVar;
             String b10;
-            if (str != null && (b10 = b.b((bVar = HttpUrl.f42026k), str, 0, 0, " \"'<>#", true, false, true, false, null, 211, null)) != null) {
+            if (str != null && (b10 = b.b((bVar = HttpUrl.f40276k), str, 0, 0, " \"'<>#", true, false, true, false, null, 211, null)) != null) {
                 list = bVar.j(b10);
             } else {
                 list = null;
             }
-            this.f42045g = list;
+            this.f40295g = list;
             return this;
         }
 
         public final List f() {
-            return this.f42044f;
+            return this.f40294f;
         }
 
         public final a g(String host) {
             Intrinsics.checkNotNullParameter(host, "host");
-            String e10 = du.a.e(b.h(HttpUrl.f42026k, host, 0, 0, false, 7, null));
+            String e10 = mu.a.e(b.h(HttpUrl.f40276k, host, 0, 0, false, 7, null));
             if (e10 != null) {
-                this.f42042d = e10;
+                this.f40292d = e10;
                 return this;
             }
             throw new IllegalArgumentException("unexpected host: " + host);
@@ -391,19 +391,19 @@ public final class HttpUrl {
             int i14;
             String input = str;
             Intrinsics.checkNotNullParameter(input, "input");
-            int A = du.e.A(input, 0, 0, 3, null);
-            int C = du.e.C(input, A, 0, 2, null);
-            C0597a c0597a = f42038i;
-            int g10 = c0597a.g(input, A, C);
+            int A = mu.e.A(input, 0, 0, 3, null);
+            int C = mu.e.C(input, A, 0, 2, null);
+            C0555a c0555a = f40288i;
+            int g10 = c0555a.g(input, A, C);
             String str5 = "this as java.lang.String…ing(startIndex, endIndex)";
             boolean z11 = true;
             char c12 = 65535;
             if (g10 != -1) {
                 if (StringsKt.M(input, "https:", A, true)) {
-                    this.f42039a = "https";
+                    this.f40289a = "https";
                     A += 6;
                 } else if (StringsKt.M(input, "http:", A, true)) {
-                    this.f42039a = "http";
+                    this.f40289a = "http";
                     A += 5;
                 } else {
                     StringBuilder sb2 = new StringBuilder();
@@ -415,7 +415,7 @@ public final class HttpUrl {
                     throw new IllegalArgumentException(sb2.toString());
                 }
             } else if (httpUrl != null) {
-                this.f42039a = httpUrl.s();
+                this.f40289a = httpUrl.s();
             } else {
                 if (input.length() > 6) {
                     str2 = StringsKt.x1(input, 6) + "...";
@@ -424,16 +424,16 @@ public final class HttpUrl {
                 }
                 throw new IllegalArgumentException("Expected URL scheme 'http' or 'https' but no scheme was found for " + str2);
             }
-            int h10 = c0597a.h(input, A, C);
+            int h10 = c0555a.h(input, A, C);
             char c13 = '?';
             char c14 = '#';
-            if (h10 < 2 && httpUrl != null && Intrinsics.areEqual(httpUrl.s(), this.f42039a)) {
-                this.f42040b = httpUrl.g();
-                this.f42041c = httpUrl.c();
-                this.f42042d = httpUrl.i();
-                this.f42043e = httpUrl.o();
-                this.f42044f.clear();
-                this.f42044f.addAll(httpUrl.e());
+            if (h10 < 2 && httpUrl != null && Intrinsics.areEqual(httpUrl.s(), this.f40289a)) {
+                this.f40290b = httpUrl.g();
+                this.f40291c = httpUrl.c();
+                this.f40292d = httpUrl.i();
+                this.f40293e = httpUrl.o();
+                this.f40294f.clear();
+                this.f40294f.addAll(httpUrl.e());
                 if (A == C || input.charAt(A) == '#') {
                     e(httpUrl.f());
                 }
@@ -443,26 +443,26 @@ public final class HttpUrl {
                 boolean z12 = false;
                 boolean z13 = false;
                 while (true) {
-                    q10 = du.e.q(input, "@/\\?#", i15, C);
+                    q10 = mu.e.q(input, "@/\\?#", i15, C);
                     char charAt = q10 != C ? input.charAt(q10) : c12;
                     if (charAt == c12 || charAt == c14 || charAt == '/' || charAt == '\\' || charAt == c13) {
                         break;
                     } else if (charAt == '@') {
                         if (!z12) {
-                            int p10 = du.e.p(input, ':', i15, q10);
-                            b bVar = HttpUrl.f42026k;
+                            int p10 = mu.e.p(input, ':', i15, q10);
+                            b bVar = HttpUrl.f40276k;
                             str4 = str5;
                             c10 = c12;
                             i11 = C;
                             z10 = z11;
                             String b10 = b.b(bVar, input, i15, p10, " \"':;<=>@[]^`{}|/\\?#", true, false, false, false, null, 240, null);
                             if (z13) {
-                                b10 = this.f42040b + "%40" + b10;
+                                b10 = this.f40290b + "%40" + b10;
                             }
-                            this.f42040b = b10;
+                            this.f40290b = b10;
                             if (p10 != q10) {
                                 i13 = q10;
-                                this.f42041c = b.b(bVar, str, p10 + 1, i13, " \"':;<=>@[]^`{}|/\\?#", true, false, false, false, null, 240, null);
+                                this.f40291c = b.b(bVar, str, p10 + 1, i13, " \"':;<=>@[]^`{}|/\\?#", true, false, false, false, null, 240, null);
                                 z12 = z10;
                             } else {
                                 i13 = q10;
@@ -476,12 +476,12 @@ public final class HttpUrl {
                             z10 = z11;
                             c10 = c12;
                             StringBuilder sb3 = new StringBuilder();
-                            sb3.append(this.f42041c);
+                            sb3.append(this.f40291c);
                             sb3.append("%40");
                             input = str;
                             i12 = q10;
-                            sb3.append(b.b(HttpUrl.f42026k, input, i15, q10, " \"':;<=>@[]^`{}|/\\?#", true, false, false, false, null, 240, null));
-                            this.f42041c = sb3.toString();
+                            sb3.append(b.b(HttpUrl.f40276k, input, i15, q10, " \"':;<=>@[]^`{}|/\\?#", true, false, false, false, null, 240, null));
+                            this.f40291c = sb3.toString();
                         }
                         i15 = i12 + 1;
                         c12 = c10;
@@ -495,13 +495,13 @@ public final class HttpUrl {
                 i10 = C;
                 String str6 = str5;
                 char c15 = c12;
-                C0597a c0597a2 = f42038i;
-                int f10 = c0597a2.f(input, i15, q10);
+                C0555a c0555a2 = f40288i;
+                int f10 = c0555a2.f(input, i15, q10);
                 int i16 = f10 + 1;
                 if (i16 < q10) {
-                    this.f42042d = du.a.e(b.h(HttpUrl.f42026k, input, i15, f10, false, 4, null));
-                    int e10 = c0597a2.e(input, i16, q10);
-                    this.f42043e = e10;
+                    this.f40292d = mu.a.e(b.h(HttpUrl.f40276k, input, i15, f10, false, 4, null));
+                    int e10 = c0555a2.e(input, i16, q10);
+                    this.f40293e = e10;
                     if (e10 == c15) {
                         StringBuilder sb4 = new StringBuilder();
                         sb4.append("Invalid URL port: \"");
@@ -514,13 +514,13 @@ public final class HttpUrl {
                     str3 = str6;
                 } else {
                     str3 = str6;
-                    b bVar2 = HttpUrl.f42026k;
-                    this.f42042d = du.a.e(b.h(bVar2, input, i15, f10, false, 4, null));
-                    String str7 = this.f42039a;
+                    b bVar2 = HttpUrl.f40276k;
+                    this.f40292d = mu.a.e(b.h(bVar2, input, i15, f10, false, 4, null));
+                    String str7 = this.f40289a;
                     Intrinsics.checkNotNull(str7);
-                    this.f42043e = bVar2.c(str7);
+                    this.f40293e = bVar2.c(str7);
                 }
-                if (this.f42042d == null) {
+                if (this.f40292d == null) {
                     StringBuilder sb5 = new StringBuilder();
                     sb5.append("Invalid URL host: \"");
                     String substring3 = input.substring(i15, f10);
@@ -532,33 +532,33 @@ public final class HttpUrl {
                 A = q10;
             }
             int i17 = i10;
-            int q11 = du.e.q(input, "?#", A, i17);
+            int q11 = mu.e.q(input, "?#", A, i17);
             p(input, A, q11);
             if (q11 >= i17 || input.charAt(q11) != '?') {
                 c11 = '#';
                 i14 = q11;
             } else {
                 c11 = '#';
-                int p11 = du.e.p(input, '#', q11, i17);
-                b bVar3 = HttpUrl.f42026k;
-                this.f42045g = bVar3.j(b.b(bVar3, input, q11 + 1, p11, " \"'<>#", true, false, true, false, null, 208, null));
+                int p11 = mu.e.p(input, '#', q11, i17);
+                b bVar3 = HttpUrl.f40276k;
+                this.f40295g = bVar3.j(b.b(bVar3, input, q11 + 1, p11, " \"'<>#", true, false, true, false, null, 208, null));
                 i14 = p11;
             }
             if (i14 < i17 && input.charAt(i14) == c11) {
-                this.f42046h = b.b(HttpUrl.f42026k, input, i14 + 1, i17, "", true, false, false, true, null, 176, null);
+                this.f40296h = b.b(HttpUrl.f40276k, input, i14 + 1, i17, "", true, false, false, true, null, 176, null);
             }
             return this;
         }
 
         public final a k(String password) {
             Intrinsics.checkNotNullParameter(password, "password");
-            this.f42041c = b.b(HttpUrl.f42026k, password, 0, 0, " \"':;<=>@[]^`{}|/\\?#", false, false, false, false, null, 251, null);
+            this.f40291c = b.b(HttpUrl.f40276k, password, 0, 0, " \"':;<=>@[]^`{}|/\\?#", false, false, false, false, null, 251, null);
             return this;
         }
 
         public final a m(int i10) {
             if (1 <= i10 && i10 < 65536) {
-                this.f42043e = i10;
+                this.f40293e = i10;
                 return this;
             }
             throw new IllegalArgumentException(("unexpected port: " + i10).toString());
@@ -567,47 +567,47 @@ public final class HttpUrl {
         public final a o() {
             String str;
             String str2;
-            String str3 = this.f42042d;
+            String str3 = this.f40292d;
             String str4 = null;
             if (str3 != null) {
                 str = new Regex("[\"<>^`{|}]").replace(str3, "");
             } else {
                 str = null;
             }
-            this.f42042d = str;
-            int size = this.f42044f.size();
+            this.f40292d = str;
+            int size = this.f40294f.size();
             for (int i10 = 0; i10 < size; i10++) {
-                List list = this.f42044f;
-                list.set(i10, b.b(HttpUrl.f42026k, (String) list.get(i10), 0, 0, "[]", true, true, false, false, null, 227, null));
+                List list = this.f40294f;
+                list.set(i10, b.b(HttpUrl.f40276k, (String) list.get(i10), 0, 0, "[]", true, true, false, false, null, 227, null));
             }
-            List list2 = this.f42045g;
+            List list2 = this.f40295g;
             if (list2 != null) {
                 int size2 = list2.size();
                 for (int i11 = 0; i11 < size2; i11++) {
                     String str5 = (String) list2.get(i11);
                     if (str5 != null) {
-                        str2 = b.b(HttpUrl.f42026k, str5, 0, 0, "\\^`{|}", true, true, true, false, null, 195, null);
+                        str2 = b.b(HttpUrl.f40276k, str5, 0, 0, "\\^`{|}", true, true, true, false, null, 195, null);
                     } else {
                         str2 = null;
                     }
                     list2.set(i11, str2);
                 }
             }
-            String str6 = this.f42046h;
+            String str6 = this.f40296h;
             if (str6 != null) {
-                str4 = b.b(HttpUrl.f42026k, str6, 0, 0, " \"#<>\\^`{|}", true, true, false, true, null, 163, null);
+                str4 = b.b(HttpUrl.f40276k, str6, 0, 0, " \"#<>\\^`{|}", true, true, false, true, null, 163, null);
             }
-            this.f42046h = str4;
+            this.f40296h = str4;
             return this;
         }
 
         public final a q(String scheme) {
             Intrinsics.checkNotNullParameter(scheme, "scheme");
             if (StringsKt.A(scheme, "http", true)) {
-                this.f42039a = "http";
+                this.f40289a = "http";
                 return this;
             } else if (StringsKt.A(scheme, "https", true)) {
-                this.f42039a = "https";
+                this.f40289a = "https";
                 return this;
             } else {
                 throw new IllegalArgumentException("unexpected scheme: " + scheme);
@@ -615,17 +615,17 @@ public final class HttpUrl {
         }
 
         public final void r(String str) {
-            this.f42046h = str;
+            this.f40296h = str;
         }
 
         public final void s(String str) {
             Intrinsics.checkNotNullParameter(str, "<set-?>");
-            this.f42041c = str;
+            this.f40291c = str;
         }
 
         public final void t(String str) {
             Intrinsics.checkNotNullParameter(str, "<set-?>");
-            this.f42040b = str;
+            this.f40290b = str;
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:28:0x0083, code lost:
@@ -640,7 +640,7 @@ public final class HttpUrl {
                 r6 = this;
                 java.lang.StringBuilder r0 = new java.lang.StringBuilder
                 r0.<init>()
-                java.lang.String r1 = r6.f42039a
+                java.lang.String r1 = r6.f40289a
                 if (r1 == 0) goto L12
                 r0.append(r1)
                 java.lang.String r1 = "://"
@@ -650,29 +650,29 @@ public final class HttpUrl {
                 java.lang.String r1 = "//"
                 r0.append(r1)
             L17:
-                java.lang.String r1 = r6.f42040b
+                java.lang.String r1 = r6.f40290b
                 int r1 = r1.length()
                 r2 = 58
                 if (r1 <= 0) goto L22
                 goto L2a
             L22:
-                java.lang.String r1 = r6.f42041c
+                java.lang.String r1 = r6.f40291c
                 int r1 = r1.length()
                 if (r1 <= 0) goto L44
             L2a:
-                java.lang.String r1 = r6.f42040b
+                java.lang.String r1 = r6.f40290b
                 r0.append(r1)
-                java.lang.String r1 = r6.f42041c
+                java.lang.String r1 = r6.f40291c
                 int r1 = r1.length()
                 if (r1 <= 0) goto L3f
                 r0.append(r2)
-                java.lang.String r1 = r6.f42041c
+                java.lang.String r1 = r6.f40291c
                 r0.append(r1)
             L3f:
                 r1 = 64
                 r0.append(r1)
             L44:
-                java.lang.String r1 = r6.f42042d
+                java.lang.String r1 = r6.f40292d
                 if (r1 == 0) goto L69
                 kotlin.jvm.internal.Intrinsics.checkNotNull(r1)
                 r3 = 2
@@ -682,25 +682,25 @@ public final class HttpUrl {
                 if (r1 == 0) goto L64
                 r1 = 91
                 r0.append(r1)
-                java.lang.String r1 = r6.f42042d
+                java.lang.String r1 = r6.f40292d
                 r0.append(r1)
                 r1 = 93
                 r0.append(r1)
                 goto L69
             L64:
-                java.lang.String r1 = r6.f42042d
+                java.lang.String r1 = r6.f40292d
                 r0.append(r1)
             L69:
-                int r1 = r6.f42043e
+                int r1 = r6.f40293e
                 r3 = -1
                 if (r1 != r3) goto L72
-                java.lang.String r1 = r6.f42039a
+                java.lang.String r1 = r6.f40289a
                 if (r1 == 0) goto L8b
             L72:
                 int r1 = r6.d()
-                java.lang.String r3 = r6.f42039a
+                java.lang.String r3 = r6.f40289a
                 if (r3 == 0) goto L85
-                okhttp3.HttpUrl$b r4 = okhttp3.HttpUrl.f42026k
+                okhttp3.HttpUrl$b r4 = okhttp3.HttpUrl.f40276k
                 kotlin.jvm.internal.Intrinsics.checkNotNull(r3)
                 int r3 = r4.c(r3)
                 if (r1 == r3) goto L8b
@@ -708,22 +708,22 @@ public final class HttpUrl {
                 r0.append(r2)
                 r0.append(r1)
             L8b:
-                okhttp3.HttpUrl$b r1 = okhttp3.HttpUrl.f42026k
-                java.util.List r2 = r6.f42044f
+                okhttp3.HttpUrl$b r1 = okhttp3.HttpUrl.f40276k
+                java.util.List r2 = r6.f40294f
                 r1.i(r2, r0)
-                java.util.List r2 = r6.f42045g
+                java.util.List r2 = r6.f40295g
                 if (r2 == 0) goto La3
                 r2 = 63
                 r0.append(r2)
-                java.util.List r2 = r6.f42045g
+                java.util.List r2 = r6.f40295g
                 kotlin.jvm.internal.Intrinsics.checkNotNull(r2)
                 r1.k(r2, r0)
             La3:
-                java.lang.String r1 = r6.f42046h
+                java.lang.String r1 = r6.f40296h
                 if (r1 == 0) goto Lb1
                 r1 = 35
                 r0.append(r1)
-                java.lang.String r1 = r6.f42046h
+                java.lang.String r1 = r6.f40296h
                 r0.append(r1)
             Lb1:
                 java.lang.String r0 = r0.toString()
@@ -735,20 +735,20 @@ public final class HttpUrl {
         }
 
         public final void u(String str) {
-            this.f42042d = str;
+            this.f40292d = str;
         }
 
         public final void v(int i10) {
-            this.f42043e = i10;
+            this.f40293e = i10;
         }
 
         public final void w(String str) {
-            this.f42039a = str;
+            this.f40289a = str;
         }
 
         public final a x(String username) {
             Intrinsics.checkNotNullParameter(username, "username");
-            this.f42040b = b.b(HttpUrl.f42026k, username, 0, 0, " \"':;<=>@[]^`{}|/\\?#", false, false, false, false, null, 251, null);
+            this.f40290b = b.b(HttpUrl.f40276k, username, 0, 0, " \"':;<=>@[]^`{}|/\\?#", false, false, false, false, null, 251, null);
             return this;
         }
     }
@@ -786,7 +786,7 @@ public final class HttpUrl {
 
         private final boolean e(String str, int i10, int i11) {
             int i12 = i10 + 2;
-            if (i12 < i11 && str.charAt(i10) == '%' && du.e.I(str.charAt(i10 + 1)) != -1 && du.e.I(str.charAt(i12)) != -1) {
+            if (i12 < i11 && str.charAt(i10) == '%' && mu.e.I(str.charAt(i10 + 1)) != -1 && mu.e.I(str.charAt(i12)) != -1) {
                 return true;
             }
             return false;
@@ -822,7 +822,7 @@ public final class HttpUrl {
                     } else {
                         if (codePointAt >= 32 && codePointAt != 127 && (codePointAt < 128 || z13)) {
                             if (!StringsKt.U(str2, (char) codePointAt, false, 2, null) && (codePointAt != 37 || (z10 && (!z11 || e(str, i12, i11))))) {
-                                buffer.p2(codePointAt);
+                                buffer.g2(codePointAt);
                                 i12 += Character.charCount(codePointAt);
                             }
                         }
@@ -830,15 +830,15 @@ public final class HttpUrl {
                             buffer2 = new Buffer();
                         }
                         if (charset != null && !Intrinsics.areEqual(charset, StandardCharsets.UTF_8)) {
-                            buffer2.g2(str, i12, Character.charCount(codePointAt) + i12, charset);
+                            buffer2.Y1(str, i12, Character.charCount(codePointAt) + i12, charset);
                         } else {
-                            buffer2.p2(codePointAt);
+                            buffer2.g2(codePointAt);
                         }
-                        while (!buffer2.k1()) {
+                        while (!buffer2.p1()) {
                             byte readByte = buffer2.readByte();
                             buffer.writeByte(37);
-                            buffer.writeByte(HttpUrl.f42027l[((readByte & 255) >> 4) & 15]);
-                            buffer.writeByte(HttpUrl.f42027l[readByte & 15]);
+                            buffer.writeByte(HttpUrl.f40277l[((readByte & 255) >> 4) & 15]);
+                            buffer.writeByte(HttpUrl.f40277l[readByte & 15]);
                         }
                         i12 += Character.charCount(codePointAt);
                     }
@@ -852,20 +852,20 @@ public final class HttpUrl {
             while (i10 < i11) {
                 int codePointAt = str.codePointAt(i10);
                 if (codePointAt == 37 && (i12 = i10 + 2) < i11) {
-                    int I = du.e.I(str.charAt(i10 + 1));
-                    int I2 = du.e.I(str.charAt(i12));
+                    int I = mu.e.I(str.charAt(i10 + 1));
+                    int I2 = mu.e.I(str.charAt(i12));
                     if (I != -1 && I2 != -1) {
                         buffer.writeByte((I << 4) + I2);
                         i10 = Character.charCount(codePointAt) + i12;
                     }
-                    buffer.p2(codePointAt);
+                    buffer.g2(codePointAt);
                     i10 += Character.charCount(codePointAt);
                 } else {
                     if (codePointAt == 43 && z10) {
                         buffer.writeByte(32);
                         i10++;
                     }
-                    buffer.p2(codePointAt);
+                    buffer.g2(codePointAt);
                     i10 += Character.charCount(codePointAt);
                 }
             }
@@ -883,7 +883,7 @@ public final class HttpUrl {
                     Buffer buffer = new Buffer();
                     buffer.x0(str, i10, i12);
                     l(buffer, str, i12, i11, encodeSet, z10, z11, z12, z13, charset);
-                    return buffer.R1();
+                    return buffer.X1();
                 }
             }
             String substring = str.substring(i10, i11);
@@ -924,7 +924,7 @@ public final class HttpUrl {
                     Buffer buffer = new Buffer();
                     buffer.x0(str, i10, i12);
                     m(buffer, str, i12, i11, z10);
-                    return buffer.R1();
+                    return buffer.X1();
                 }
             }
             String substring = str.substring(i10, i11);
@@ -1012,62 +1012,62 @@ public final class HttpUrl {
         Intrinsics.checkNotNullParameter(host, "host");
         Intrinsics.checkNotNullParameter(pathSegments, "pathSegments");
         Intrinsics.checkNotNullParameter(url, "url");
-        this.f42028a = scheme;
-        this.f42029b = username;
-        this.f42030c = password;
-        this.f42031d = host;
-        this.f42032e = i10;
-        this.f42033f = pathSegments;
-        this.f42034g = list;
-        this.f42035h = str;
-        this.f42036i = url;
-        this.f42037j = Intrinsics.areEqual(scheme, "https");
+        this.f40278a = scheme;
+        this.f40279b = username;
+        this.f40280c = password;
+        this.f40281d = host;
+        this.f40282e = i10;
+        this.f40283f = pathSegments;
+        this.f40284g = list;
+        this.f40285h = str;
+        this.f40286i = url;
+        this.f40287j = Intrinsics.areEqual(scheme, "https");
     }
 
     public static final HttpUrl h(String str) {
-        return f42026k.d(str);
+        return f40276k.d(str);
     }
 
     public static final HttpUrl m(String str) {
-        return f42026k.f(str);
+        return f40276k.f(str);
     }
 
     public final String b() {
-        if (this.f42035h == null) {
+        if (this.f40285h == null) {
             return null;
         }
-        String substring = this.f42036i.substring(StringsKt.h0(this.f42036i, '#', 0, false, 6, null) + 1);
+        String substring = this.f40286i.substring(StringsKt.h0(this.f40286i, '#', 0, false, 6, null) + 1);
         Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String).substring(startIndex)");
         return substring;
     }
 
     public final String c() {
-        if (this.f42030c.length() == 0) {
+        if (this.f40280c.length() == 0) {
             return "";
         }
-        int h02 = StringsKt.h0(this.f42036i, '@', 0, false, 6, null);
-        String substring = this.f42036i.substring(StringsKt.h0(this.f42036i, ':', this.f42028a.length() + 3, false, 4, null) + 1, h02);
+        int h02 = StringsKt.h0(this.f40286i, '@', 0, false, 6, null);
+        String substring = this.f40286i.substring(StringsKt.h0(this.f40286i, ':', this.f40278a.length() + 3, false, 4, null) + 1, h02);
         Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
         return substring;
     }
 
     public final String d() {
-        int h02 = StringsKt.h0(this.f42036i, '/', this.f42028a.length() + 3, false, 4, null);
-        String str = this.f42036i;
-        String substring = this.f42036i.substring(h02, du.e.q(str, "?#", h02, str.length()));
+        int h02 = StringsKt.h0(this.f40286i, '/', this.f40278a.length() + 3, false, 4, null);
+        String str = this.f40286i;
+        String substring = this.f40286i.substring(h02, mu.e.q(str, "?#", h02, str.length()));
         Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
         return substring;
     }
 
     public final List e() {
-        int h02 = StringsKt.h0(this.f42036i, '/', this.f42028a.length() + 3, false, 4, null);
-        String str = this.f42036i;
-        int q10 = du.e.q(str, "?#", h02, str.length());
+        int h02 = StringsKt.h0(this.f40286i, '/', this.f40278a.length() + 3, false, 4, null);
+        String str = this.f40286i;
+        int q10 = mu.e.q(str, "?#", h02, str.length());
         ArrayList arrayList = new ArrayList();
         while (h02 < q10) {
             int i10 = h02 + 1;
-            int p10 = du.e.p(this.f42036i, '/', i10, q10);
-            String substring = this.f42036i.substring(i10, p10);
+            int p10 = mu.e.p(this.f40286i, '/', i10, q10);
+            String substring = this.f40286i.substring(i10, p10);
             Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
             arrayList.add(substring);
             h02 = p10;
@@ -1076,55 +1076,55 @@ public final class HttpUrl {
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof HttpUrl) && Intrinsics.areEqual(((HttpUrl) obj).f42036i, this.f42036i)) {
+        if ((obj instanceof HttpUrl) && Intrinsics.areEqual(((HttpUrl) obj).f40286i, this.f40286i)) {
             return true;
         }
         return false;
     }
 
     public final String f() {
-        if (this.f42034g == null) {
+        if (this.f40284g == null) {
             return null;
         }
-        int h02 = StringsKt.h0(this.f42036i, '?', 0, false, 6, null) + 1;
-        String str = this.f42036i;
-        String substring = this.f42036i.substring(h02, du.e.p(str, '#', h02, str.length()));
+        int h02 = StringsKt.h0(this.f40286i, '?', 0, false, 6, null) + 1;
+        String str = this.f40286i;
+        String substring = this.f40286i.substring(h02, mu.e.p(str, '#', h02, str.length()));
         Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
         return substring;
     }
 
     public final String g() {
-        if (this.f42029b.length() == 0) {
+        if (this.f40279b.length() == 0) {
             return "";
         }
-        int length = this.f42028a.length() + 3;
-        String str = this.f42036i;
-        String substring = this.f42036i.substring(length, du.e.q(str, ":@", length, str.length()));
+        int length = this.f40278a.length() + 3;
+        String str = this.f40286i;
+        String substring = this.f40286i.substring(length, mu.e.q(str, ":@", length, str.length()));
         Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
         return substring;
     }
 
     public int hashCode() {
-        return this.f42036i.hashCode();
+        return this.f40286i.hashCode();
     }
 
     public final String i() {
-        return this.f42031d;
+        return this.f40281d;
     }
 
     public final boolean j() {
-        return this.f42037j;
+        return this.f40287j;
     }
 
     public final a k() {
         int i10;
         a aVar = new a();
-        aVar.w(this.f42028a);
+        aVar.w(this.f40278a);
         aVar.t(g());
         aVar.s(c());
-        aVar.u(this.f42031d);
-        if (this.f42032e != f42026k.c(this.f42028a)) {
-            i10 = this.f42032e;
+        aVar.u(this.f40281d);
+        if (this.f40282e != f40276k.c(this.f40278a)) {
+            i10 = this.f40282e;
         } else {
             i10 = -1;
         }
@@ -1146,19 +1146,19 @@ public final class HttpUrl {
     }
 
     public final List n() {
-        return this.f42033f;
+        return this.f40283f;
     }
 
     public final int o() {
-        return this.f42032e;
+        return this.f40282e;
     }
 
     public final String p() {
-        if (this.f42034g == null) {
+        if (this.f40284g == null) {
             return null;
         }
         StringBuilder sb2 = new StringBuilder();
-        f42026k.k(this.f42034g, sb2);
+        f40276k.k(this.f40284g, sb2);
         return sb2.toString();
     }
 
@@ -1178,7 +1178,7 @@ public final class HttpUrl {
     }
 
     public final String s() {
-        return this.f42028a;
+        return this.f40278a;
     }
 
     public final URI t() {
@@ -1197,12 +1197,12 @@ public final class HttpUrl {
     }
 
     public String toString() {
-        return this.f42036i;
+        return this.f40286i;
     }
 
     public final URL u() {
         try {
-            return new URL(this.f42036i);
+            return new URL(this.f40286i);
         } catch (MalformedURLException e10) {
             throw new RuntimeException(e10);
         }

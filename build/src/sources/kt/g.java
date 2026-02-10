@@ -1,51 +1,41 @@
 package kt;
 
-import java.util.Arrays;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g extends d2 {
+public final class g {
 
-    /* renamed from: a  reason: collision with root package name */
-    private boolean[] f35139a;
+    /* renamed from: d  reason: collision with root package name */
+    public static final g f35185d = new g("AM", 0);
 
-    /* renamed from: b  reason: collision with root package name */
-    private int f35140b;
+    /* renamed from: e  reason: collision with root package name */
+    public static final g f35186e = new g("PM", 1);
 
-    public g(boolean[] bufferWithData) {
-        Intrinsics.checkNotNullParameter(bufferWithData, "bufferWithData");
-        this.f35139a = bufferWithData;
-        this.f35140b = bufferWithData.length;
-        b(10);
+    /* renamed from: i  reason: collision with root package name */
+    private static final /* synthetic */ g[] f35187i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f35188o;
+
+    static {
+        g[] a10 = a();
+        f35187i = a10;
+        f35188o = hs.a.a(a10);
     }
 
-    @Override // kt.d2
-    public void b(int i10) {
-        boolean[] zArr = this.f35139a;
-        if (zArr.length < i10) {
-            boolean[] copyOf = Arrays.copyOf(zArr, kotlin.ranges.d.d(i10, zArr.length * 2));
-            Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f35139a = copyOf;
-        }
+    private g(String str, int i10) {
     }
 
-    @Override // kt.d2
-    public int d() {
-        return this.f35140b;
+    private static final /* synthetic */ g[] a() {
+        return new g[]{f35185d, f35186e};
     }
 
-    public final void e(boolean z10) {
-        d2.c(this, 0, 1, null);
-        boolean[] zArr = this.f35139a;
-        int d10 = d();
-        this.f35140b = d10 + 1;
-        zArr[d10] = z10;
+    public static g valueOf(String str) {
+        return (g) Enum.valueOf(g.class, str);
     }
 
-    @Override // kt.d2
-    /* renamed from: f */
-    public boolean[] a() {
-        boolean[] copyOf = Arrays.copyOf(this.f35139a, d());
-        Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-        return copyOf;
+    public static g[] values() {
+        return (g[]) f35187i.clone();
     }
 }

@@ -130,7 +130,7 @@ public final class ButtonVerifyPersonaComponentStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -188,7 +188,7 @@ public final class ButtonVerifyPersonaComponentStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, ButtonVerifyPersonaComponentStyle buttonVerifyPersonaComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (buttonVerifyPersonaComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J(ViewProps.PADDING);
             this.nullableButtonBasedPaddingStyleAdapter.toJson(writer, buttonVerifyPersonaComponentStyle.getPadding());
             writer.J(ViewProps.MARGIN);

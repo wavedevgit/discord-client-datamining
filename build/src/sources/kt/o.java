@@ -1,42 +1,159 @@
 package kt;
-
-import jt.e;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class o implements KSerializer {
+public interface o {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final o f35183a = new o();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public interface a extends o {
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f35184b = new g2("kotlin.Char", e.c.f30478a);
+        /* renamed from: kt.o$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class C0474a {
+            public static /* synthetic */ void a(a aVar, h0 h0Var, int i10, Object obj) {
+                if (obj == null) {
+                    if ((i10 & 1) != 0) {
+                        h0Var = h0.f35200e;
+                    }
+                    aVar.w(h0Var);
+                    return;
+                }
+                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: dayOfMonth");
+            }
 
-    private o() {
+            public static /* synthetic */ void b(a aVar, h0 h0Var, int i10, Object obj) {
+                if (obj == null) {
+                    if ((i10 & 1) != 0) {
+                        h0Var = h0.f35200e;
+                    }
+                    aVar.c(h0Var);
+                    return;
+                }
+                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: monthNumber");
+            }
+
+            public static /* synthetic */ void c(a aVar, h0 h0Var, int i10, Object obj) {
+                if (obj == null) {
+                    if ((i10 & 1) != 0) {
+                        h0Var = h0.f35200e;
+                    }
+                    aVar.m(h0Var);
+                    return;
+                }
+                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: year");
+            }
+        }
+
+        void c(h0 h0Var);
+
+        void h(f0 f0Var);
+
+        void i(s sVar);
+
+        void l(n nVar);
+
+        void m(h0 h0Var);
+
+        void w(h0 h0Var);
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public Character deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return Character.valueOf(decoder.x());
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public interface b extends a, c, d {
     }
 
-    public void b(Encoder encoder, char c10) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        encoder.u(c10);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public interface c extends o {
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class a {
+            public static /* synthetic */ void a(c cVar, h0 h0Var, int i10, Object obj) {
+                if (obj == null) {
+                    if ((i10 & 1) != 0) {
+                        h0Var = h0.f35200e;
+                    }
+                    cVar.v(h0Var);
+                    return;
+                }
+                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: hour");
+            }
+
+            public static /* synthetic */ void b(c cVar, h0 h0Var, int i10, Object obj) {
+                if (obj == null) {
+                    if ((i10 & 1) != 0) {
+                        h0Var = h0.f35200e;
+                    }
+                    cVar.p(h0Var);
+                    return;
+                }
+                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: minute");
+            }
+
+            public static /* synthetic */ void c(c cVar, h0 h0Var, int i10, Object obj) {
+                if (obj == null) {
+                    if ((i10 & 1) != 0) {
+                        h0Var = h0.f35200e;
+                    }
+                    cVar.t(h0Var);
+                    return;
+                }
+                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: second");
+            }
+        }
+
+        void o(int i10, int i11);
+
+        void p(h0 h0Var);
+
+        void t(h0 h0Var);
+
+        void v(h0 h0Var);
     }
 
-    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f35184b;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public interface d extends o {
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class a {
+            public static /* synthetic */ void a(d dVar, h0 h0Var, int i10, Object obj) {
+                if (obj == null) {
+                    if ((i10 & 1) != 0) {
+                        h0Var = h0.f35200e;
+                    }
+                    dVar.j(h0Var);
+                    return;
+                }
+                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: offsetHours");
+            }
+
+            public static /* synthetic */ void b(d dVar, h0 h0Var, int i10, Object obj) {
+                if (obj == null) {
+                    if ((i10 & 1) != 0) {
+                        h0Var = h0.f35200e;
+                    }
+                    dVar.n(h0Var);
+                    return;
+                }
+                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: offsetMinutesOfHour");
+            }
+
+            public static /* synthetic */ void c(d dVar, h0 h0Var, int i10, Object obj) {
+                if (obj == null) {
+                    if ((i10 & 1) != 0) {
+                        h0Var = h0.f35200e;
+                    }
+                    dVar.r(h0Var);
+                    return;
+                }
+                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: offsetSecondsOfMinute");
+            }
+        }
+
+        void j(h0 h0Var);
+
+        void n(h0 h0Var);
+
+        void q(n nVar);
+
+        void r(h0 h0Var);
     }
 
-    @Override // gt.o
-    public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
-        b(encoder, ((Character) obj).charValue());
-    }
+    void k(String str);
 }

@@ -124,7 +124,7 @@ public final class HeadlessTasks {
     }
 
     static {
-        int i10 = HeadlessTasksService.f9762d;
+        int i10 = HeadlessTasksService.f10339d;
         SERVICE_CLASS = HeadlessTasksService.class;
     }
 

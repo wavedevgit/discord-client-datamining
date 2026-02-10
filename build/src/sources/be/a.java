@@ -25,52 +25,52 @@ import oe.y;
 public final class a extends e {
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f6505h;
+    private final int f6611h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f6506i;
+    private final int f6612i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final int f6507j;
+    private final int f6613j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final long f6508k;
+    private final long f6614k;
 
     /* renamed from: n  reason: collision with root package name */
-    private List f6511n;
+    private List f6617n;
 
     /* renamed from: o  reason: collision with root package name */
-    private List f6512o;
+    private List f6618o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f6513p;
+    private int f6619p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f6514q;
+    private int f6620q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f6515r;
+    private boolean f6621r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f6516s;
+    private boolean f6622s;
 
     /* renamed from: t  reason: collision with root package name */
-    private byte f6517t;
+    private byte f6623t;
 
     /* renamed from: u  reason: collision with root package name */
-    private byte f6518u;
+    private byte f6624u;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f6520w;
+    private boolean f6626w;
 
     /* renamed from: x  reason: collision with root package name */
-    private long f6521x;
+    private long f6627x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final int[] f6502y = {11, 1, 3, 12, 14, 5, 7, 9};
+    private static final int[] f6608y = {11, 1, 3, 12, 14, 5, 7, 9};
 
     /* renamed from: z  reason: collision with root package name */
-    private static final int[] f6503z = {0, 4, 8, 12, 16, 20, 24, 28};
+    private static final int[] f6609z = {0, 4, 8, 12, 16, 20, 24, 28};
     private static final int[] A = {-1, -16711936, -16776961, -16711681, -65536, -256, -65281};
     private static final int[] B = {32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 225, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 233, 93, 237, 243, h.DEFAULT_SWIPE_ANIMATION_DURATION, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, MediaEngine.MAX_SUPPORTED_PROTOCOL_VERSION, 115, 116, 117, 118, 119, 120, 121, 122, 231, 247, 209, 241, 9632};
     private static final int[] C = {174, 176, 189, 191, 8482, 162, 163, 9834, 224, 32, 232, 226, 234, 238, 244, 251};
@@ -79,76 +79,76 @@ public final class a extends e {
     private static final boolean[] F = {false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, true, false, true, true, false, true, false, false, true, true, false, false, true, false, true, true, false};
 
     /* renamed from: g  reason: collision with root package name */
-    private final h0 f6504g = new h0();
+    private final h0 f6610g = new h0();
 
     /* renamed from: l  reason: collision with root package name */
-    private final ArrayList f6509l = new ArrayList();
+    private final ArrayList f6615l = new ArrayList();
 
     /* renamed from: m  reason: collision with root package name */
-    private C0132a f6510m = new C0132a(0, 4);
+    private C0096a f6616m = new C0096a(0, 4);
 
     /* renamed from: v  reason: collision with root package name */
-    private int f6519v = 0;
+    private int f6625v = 0;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: be.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0132a {
+    public static final class C0096a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f6522a = new ArrayList();
+        private final List f6628a = new ArrayList();
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f6523b = new ArrayList();
+        private final List f6629b = new ArrayList();
 
         /* renamed from: c  reason: collision with root package name */
-        private final StringBuilder f6524c = new StringBuilder();
+        private final StringBuilder f6630c = new StringBuilder();
 
         /* renamed from: d  reason: collision with root package name */
-        private int f6525d;
+        private int f6631d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f6526e;
+        private int f6632e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f6527f;
+        private int f6633f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f6528g;
+        private int f6634g;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f6529h;
+        private int f6635h;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* renamed from: be.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static class C0133a {
+        public static class C0097a {
 
             /* renamed from: a  reason: collision with root package name */
-            public final int f6530a;
+            public final int f6636a;
 
             /* renamed from: b  reason: collision with root package name */
-            public final boolean f6531b;
+            public final boolean f6637b;
 
             /* renamed from: c  reason: collision with root package name */
-            public int f6532c;
+            public int f6638c;
 
-            public C0133a(int i10, boolean z10, int i11) {
-                this.f6530a = i10;
-                this.f6531b = z10;
-                this.f6532c = i11;
+            public C0097a(int i10, boolean z10, int i11) {
+                this.f6636a = i10;
+                this.f6637b = z10;
+                this.f6638c = i11;
             }
         }
 
-        public C0132a(int i10, int i11) {
+        public C0096a(int i10, int i11) {
             j(i10);
-            this.f6529h = i11;
+            this.f6635h = i11;
         }
 
         private SpannableString h() {
             int i10;
             boolean z10;
-            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(this.f6524c);
+            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(this.f6630c);
             int length = spannableStringBuilder.length();
             int i11 = -1;
             int i12 = -1;
@@ -157,10 +157,10 @@ public final class a extends e {
             int i15 = 0;
             int i16 = 0;
             boolean z11 = false;
-            while (i15 < this.f6522a.size()) {
-                C0133a c0133a = (C0133a) this.f6522a.get(i15);
-                boolean z12 = c0133a.f6531b;
-                int i17 = c0133a.f6530a;
+            while (i15 < this.f6628a.size()) {
+                C0097a c0097a = (C0097a) this.f6628a.get(i15);
+                boolean z12 = c0097a.f6637b;
+                int i17 = c0097a.f6636a;
                 if (i17 != 8) {
                     if (i17 == 7) {
                         z10 = true;
@@ -172,10 +172,10 @@ public final class a extends e {
                     }
                     z11 = z10;
                 }
-                int i18 = c0133a.f6532c;
+                int i18 = c0097a.f6638c;
                 i15++;
-                if (i15 < this.f6522a.size()) {
-                    i10 = ((C0133a) this.f6522a.get(i15)).f6532c;
+                if (i15 < this.f6628a.size()) {
+                    i10 = ((C0097a) this.f6628a.get(i15)).f6638c;
                 } else {
                     i10 = length;
                 }
@@ -227,20 +227,20 @@ public final class a extends e {
         }
 
         public void e(char c10) {
-            if (this.f6524c.length() < 32) {
-                this.f6524c.append(c10);
+            if (this.f6630c.length() < 32) {
+                this.f6630c.append(c10);
             }
         }
 
         public void f() {
-            int length = this.f6524c.length();
+            int length = this.f6630c.length();
             if (length > 0) {
-                this.f6524c.delete(length - 1, length);
-                for (int size = this.f6522a.size() - 1; size >= 0; size--) {
-                    C0133a c0133a = (C0133a) this.f6522a.get(size);
-                    int i10 = c0133a.f6532c;
+                this.f6630c.delete(length - 1, length);
+                for (int size = this.f6628a.size() - 1; size >= 0; size--) {
+                    C0097a c0097a = (C0097a) this.f6628a.get(size);
+                    int i10 = c0097a.f6638c;
                     if (i10 == length) {
-                        c0133a.f6532c = i10 - 1;
+                        c0097a.f6638c = i10 - 1;
                     } else {
                         return;
                     }
@@ -251,21 +251,21 @@ public final class a extends e {
         public ae.b g(int i10) {
             float f10;
             SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
-            for (int i11 = 0; i11 < this.f6523b.size(); i11++) {
-                spannableStringBuilder.append((CharSequence) this.f6523b.get(i11));
+            for (int i11 = 0; i11 < this.f6629b.size(); i11++) {
+                spannableStringBuilder.append((CharSequence) this.f6629b.get(i11));
                 spannableStringBuilder.append('\n');
             }
             spannableStringBuilder.append((CharSequence) h());
             if (spannableStringBuilder.length() == 0) {
                 return null;
             }
-            int i12 = this.f6526e + this.f6527f;
+            int i12 = this.f6632e + this.f6633f;
             int length = (32 - i12) - spannableStringBuilder.length();
             int i13 = i12 - length;
             if (i10 == Integer.MIN_VALUE) {
-                if (this.f6528g == 2 && (Math.abs(i13) < 3 || length < 0)) {
+                if (this.f6634g == 2 && (Math.abs(i13) < 3 || length < 0)) {
                     i10 = 1;
-                } else if (this.f6528g == 2 && i13 > 0) {
+                } else if (this.f6634g == 2 && i13 > 0) {
                     i10 = 2;
                 } else {
                     i10 = 0;
@@ -279,52 +279,52 @@ public final class a extends e {
             } else {
                 f10 = 0.5f;
             }
-            int i14 = this.f6525d;
+            int i14 = this.f6631d;
             if (i14 > 7) {
                 i14 -= 17;
-            } else if (this.f6528g == 1) {
-                i14 -= this.f6529h - 1;
+            } else if (this.f6634g == 1) {
+                i14 -= this.f6635h - 1;
             }
             return new b.C0009b().o(spannableStringBuilder).p(Layout.Alignment.ALIGN_NORMAL).h(i14, 1).k(f10).l(i10).a();
         }
 
         public boolean i() {
-            if (this.f6522a.isEmpty() && this.f6523b.isEmpty() && this.f6524c.length() == 0) {
+            if (this.f6628a.isEmpty() && this.f6629b.isEmpty() && this.f6630c.length() == 0) {
                 return true;
             }
             return false;
         }
 
         public void j(int i10) {
-            this.f6528g = i10;
-            this.f6522a.clear();
-            this.f6523b.clear();
-            this.f6524c.setLength(0);
-            this.f6525d = 15;
-            this.f6526e = 0;
-            this.f6527f = 0;
+            this.f6634g = i10;
+            this.f6628a.clear();
+            this.f6629b.clear();
+            this.f6630c.setLength(0);
+            this.f6631d = 15;
+            this.f6632e = 0;
+            this.f6633f = 0;
         }
 
         public void k() {
-            this.f6523b.add(h());
-            this.f6524c.setLength(0);
-            this.f6522a.clear();
-            int min = Math.min(this.f6529h, this.f6525d);
-            while (this.f6523b.size() >= min) {
-                this.f6523b.remove(0);
+            this.f6629b.add(h());
+            this.f6630c.setLength(0);
+            this.f6628a.clear();
+            int min = Math.min(this.f6635h, this.f6631d);
+            while (this.f6629b.size() >= min) {
+                this.f6629b.remove(0);
             }
         }
 
         public void l(int i10) {
-            this.f6528g = i10;
+            this.f6634g = i10;
         }
 
         public void m(int i10) {
-            this.f6529h = i10;
+            this.f6635h = i10;
         }
 
         public void p(int i10, boolean z10) {
-            this.f6522a.add(new C0133a(i10, z10, this.f6524c.length()));
+            this.f6628a.add(new C0097a(i10, z10, this.f6630c.length()));
         }
     }
 
@@ -336,40 +336,40 @@ public final class a extends e {
         } else {
             j11 = -9223372036854775807L;
         }
-        this.f6508k = j11;
+        this.f6614k = j11;
         if ("application/x-mp4-cea-608".equals(str)) {
             i11 = 2;
         } else {
             i11 = 3;
         }
-        this.f6505h = i11;
+        this.f6611h = i11;
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 != 4) {
                         y.i("Cea608Decoder", "Invalid channel. Defaulting to CC1.");
-                        this.f6507j = 0;
-                        this.f6506i = 0;
+                        this.f6613j = 0;
+                        this.f6612i = 0;
                     } else {
-                        this.f6507j = 1;
-                        this.f6506i = 1;
+                        this.f6613j = 1;
+                        this.f6612i = 1;
                     }
                 } else {
-                    this.f6507j = 0;
-                    this.f6506i = 1;
+                    this.f6613j = 0;
+                    this.f6612i = 1;
                 }
             } else {
-                this.f6507j = 1;
-                this.f6506i = 0;
+                this.f6613j = 1;
+                this.f6612i = 0;
             }
         } else {
-            this.f6507j = 0;
-            this.f6506i = 0;
+            this.f6613j = 0;
+            this.f6612i = 0;
         }
         M(0);
         L();
-        this.f6520w = true;
-        this.f6521x = -9223372036854775807L;
+        this.f6626w = true;
+        this.f6627x = -9223372036854775807L;
     }
 
     private static boolean A(byte b10, byte b11) {
@@ -409,15 +409,15 @@ public final class a extends e {
 
     private boolean F(boolean z10, byte b10, byte b11) {
         if (z10 && E(b10)) {
-            if (this.f6516s && this.f6517t == b10 && this.f6518u == b11) {
-                this.f6516s = false;
+            if (this.f6622s && this.f6623t == b10 && this.f6624u == b11) {
+                this.f6622s = false;
                 return true;
             }
-            this.f6516s = true;
-            this.f6517t = b10;
-            this.f6518u = b11;
+            this.f6622s = true;
+            this.f6623t = b10;
+            this.f6624u = b11;
         } else {
-            this.f6516s = false;
+            this.f6622s = false;
         }
         return false;
     }
@@ -452,7 +452,7 @@ public final class a extends e {
 
     private void K(byte b10, byte b11) {
         if (J(b10)) {
-            this.f6520w = false;
+            this.f6626w = false;
         } else if (G(b10)) {
             if (b11 != 32 && b11 != 47) {
                 switch (b11) {
@@ -466,30 +466,30 @@ public final class a extends e {
                                 break;
                             case 42:
                             case ChatViewRecyclerTypes.FORWARD_HEADER /* 43 */:
-                                this.f6520w = false;
+                                this.f6626w = false;
                                 return;
                             default:
                                 return;
                         }
                 }
             }
-            this.f6520w = true;
+            this.f6626w = true;
         }
     }
 
     private void L() {
-        this.f6510m.j(this.f6513p);
-        this.f6509l.clear();
-        this.f6509l.add(this.f6510m);
+        this.f6616m.j(this.f6619p);
+        this.f6615l.clear();
+        this.f6615l.add(this.f6616m);
     }
 
     private void M(int i10) {
-        int i11 = this.f6513p;
+        int i11 = this.f6619p;
         if (i11 != i10) {
-            this.f6513p = i10;
+            this.f6619p = i10;
             if (i10 == 3) {
-                for (int i12 = 0; i12 < this.f6509l.size(); i12++) {
-                    ((C0132a) this.f6509l.get(i12)).l(i10);
+                for (int i12 = 0; i12 < this.f6615l.size(); i12++) {
+                    ((C0096a) this.f6615l.get(i12)).l(i10);
                 }
                 return;
             }
@@ -497,17 +497,17 @@ public final class a extends e {
             if (i11 != 3 && i10 != 1 && i10 != 0) {
                 return;
             }
-            this.f6511n = Collections.EMPTY_LIST;
+            this.f6617n = Collections.EMPTY_LIST;
         }
     }
 
     private void N(int i10) {
-        this.f6514q = i10;
-        this.f6510m.m(i10);
+        this.f6620q = i10;
+        this.f6616m.m(i10);
     }
 
     private boolean O() {
-        if (this.f6508k == -9223372036854775807L || this.f6521x == -9223372036854775807L || j() - this.f6521x < this.f6508k) {
+        if (this.f6614k == -9223372036854775807L || this.f6627x == -9223372036854775807L || j() - this.f6627x < this.f6614k) {
             return false;
         }
         return true;
@@ -515,9 +515,9 @@ public final class a extends e {
 
     private boolean P(byte b10) {
         if (z(b10)) {
-            this.f6519v = q(b10);
+            this.f6625v = q(b10);
         }
-        if (this.f6519v == this.f6507j) {
+        if (this.f6625v == this.f6613j) {
             return true;
         }
         return false;
@@ -532,11 +532,11 @@ public final class a extends e {
     }
 
     private List r() {
-        int size = this.f6509l.size();
+        int size = this.f6615l.size();
         ArrayList arrayList = new ArrayList(size);
         int i10 = 2;
         for (int i11 = 0; i11 < size; i11++) {
-            ae.b g10 = ((C0132a) this.f6509l.get(i11)).g(Integer.MIN_VALUE);
+            ae.b g10 = ((C0096a) this.f6615l.get(i11)).g(Integer.MIN_VALUE);
             arrayList.add(g10);
             if (g10 != null) {
                 i10 = Math.min(i10, g10.f714t);
@@ -547,7 +547,7 @@ public final class a extends e {
             ae.b bVar = (ae.b) arrayList.get(i12);
             if (bVar != null) {
                 if (bVar.f714t != i10) {
-                    bVar = (ae.b) oe.a.e(((C0132a) this.f6509l.get(i12)).g(i10));
+                    bVar = (ae.b) oe.a.e(((C0096a) this.f6615l.get(i12)).g(i10));
                 }
                 arrayList2.add(bVar);
             }
@@ -576,13 +576,13 @@ public final class a extends e {
 
     private void w(byte b10) {
         boolean z10;
-        this.f6510m.e(' ');
+        this.f6616m.e(' ');
         if ((b10 & 1) == 1) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f6510m.p((b10 >> 1) & 7, z10);
+        this.f6616m.p((b10 >> 1) & 7, z10);
     }
 
     private void x(byte b10) {
@@ -602,20 +602,20 @@ public final class a extends e {
                         N(4);
                         return;
                     default:
-                        int i10 = this.f6513p;
+                        int i10 = this.f6619p;
                         if (i10 != 0) {
                             if (b10 != 33) {
                                 switch (b10) {
                                     case ChatViewRecyclerTypes.FORWARD_BREADCRUMB /* 44 */:
-                                        this.f6511n = Collections.EMPTY_LIST;
+                                        this.f6617n = Collections.EMPTY_LIST;
                                         if (i10 != 1 && i10 != 3) {
                                             return;
                                         }
                                         L();
                                         return;
                                     case ChatViewRecyclerTypes.REACTION_BURST_REACTION /* 45 */:
-                                        if (i10 == 1 && !this.f6510m.i()) {
-                                            this.f6510m.k();
+                                        if (i10 == 1 && !this.f6616m.i()) {
+                                            this.f6616m.k();
                                             return;
                                         }
                                         return;
@@ -623,14 +623,14 @@ public final class a extends e {
                                         L();
                                         return;
                                     case ChatViewRecyclerTypes.REACTION_ADD_REACTION /* 47 */:
-                                        this.f6511n = r();
+                                        this.f6617n = r();
                                         L();
                                         return;
                                     default:
                                         return;
                                 }
                             }
-                            this.f6510m.f();
+                            this.f6616m.f();
                             return;
                         }
                         return;
@@ -645,17 +645,17 @@ public final class a extends e {
     private void y(byte b10, byte b11) {
         boolean z10;
         int i10;
-        int i11 = f6502y[b10 & 7];
+        int i11 = f6608y[b10 & 7];
         if ((b11 & 32) != 0) {
             i11++;
         }
-        if (i11 != this.f6510m.f6525d) {
-            if (this.f6513p != 1 && !this.f6510m.i()) {
-                C0132a c0132a = new C0132a(this.f6513p, this.f6514q);
-                this.f6510m = c0132a;
-                this.f6509l.add(c0132a);
+        if (i11 != this.f6616m.f6631d) {
+            if (this.f6619p != 1 && !this.f6616m.i()) {
+                C0096a c0096a = new C0096a(this.f6619p, this.f6620q);
+                this.f6616m = c0096a;
+                this.f6615l.add(c0096a);
             }
-            this.f6510m.f6525d = i11;
+            this.f6616m.f6631d = i11;
         }
         boolean z11 = false;
         if ((b11 & 16) == 16) {
@@ -667,15 +667,15 @@ public final class a extends e {
             z11 = true;
         }
         int i12 = (b11 >> 1) & 7;
-        C0132a c0132a2 = this.f6510m;
+        C0096a c0096a2 = this.f6616m;
         if (z10) {
             i10 = 8;
         } else {
             i10 = i12;
         }
-        c0132a2.p(i10, z11);
+        c0096a2.p(i10, z11);
         if (z10) {
-            this.f6510m.f6526e = f6503z[i12];
+            this.f6616m.f6632e = f6609z[i12];
         }
     }
 
@@ -693,8 +693,8 @@ public final class a extends e {
 
     @Override // be.e
     protected g e() {
-        List list = this.f6511n;
-        this.f6512o = list;
+        List list = this.f6617n;
+        this.f6618o = list;
         return new f((List) oe.a.e(list));
     }
 
@@ -716,18 +716,18 @@ public final class a extends e {
     @Override // be.e, rc.d
     public void flush() {
         super.flush();
-        this.f6511n = null;
-        this.f6512o = null;
+        this.f6617n = null;
+        this.f6618o = null;
         M(0);
         N(4);
         L();
-        this.f6515r = false;
-        this.f6516s = false;
-        this.f6517t = (byte) 0;
-        this.f6518u = (byte) 0;
-        this.f6519v = 0;
-        this.f6520w = true;
-        this.f6521x = -9223372036854775807L;
+        this.f6621r = false;
+        this.f6622s = false;
+        this.f6623t = (byte) 0;
+        this.f6624u = (byte) 0;
+        this.f6625v = 0;
+        this.f6626w = true;
+        this.f6627x = -9223372036854775807L;
     }
 
     @Override // be.e
@@ -744,8 +744,8 @@ public final class a extends e {
             return b10;
         }
         if (O() && (i10 = i()) != null) {
-            this.f6511n = Collections.EMPTY_LIST;
-            this.f6521x = -9223372036854775807L;
+            this.f6617n = Collections.EMPTY_LIST;
+            this.f6627x = -9223372036854775807L;
             i10.u(j(), e(), LongCompanionObject.MAX_VALUE);
             return i10;
         }
@@ -754,7 +754,7 @@ public final class a extends e {
 
     @Override // be.e
     protected boolean k() {
-        if (this.f6511n != this.f6512o) {
+        if (this.f6617n != this.f6618o) {
             return true;
         }
         return false;

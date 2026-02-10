@@ -13,9 +13,9 @@ public abstract class q extends dg.o implements r {
             if (i10 != 2) {
                 return false;
             }
-            l();
+            n();
         } else {
-            r();
+            u();
         }
         return true;
     }

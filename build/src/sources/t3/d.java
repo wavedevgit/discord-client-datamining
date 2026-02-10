@@ -14,51 +14,51 @@ import x3.g;
 public final class d {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final b f50508e = new b(null);
+    public static final b f48440e = new b(null);
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f50509a;
+    public final String f48441a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Map f50510b;
+    public final Map f48442b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Set f50511c;
+    public final Set f48443c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Set f50512d;
+    public final Set f48444d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: h  reason: collision with root package name */
-        public static final C0692a f50513h = new C0692a(null);
+        public static final C0658a f48445h = new C0658a(null);
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f50514a;
+        public final String f48446a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final String f50515b;
+        public final String f48447b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final boolean f50516c;
+        public final boolean f48448c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f50517d;
+        public final int f48449d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final String f50518e;
+        public final String f48450e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final int f50519f;
+        public final int f48451f;
 
         /* renamed from: g  reason: collision with root package name */
-        public final int f50520g;
+        public final int f48452g;
 
         /* renamed from: t3.d$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0692a {
-            public /* synthetic */ C0692a(DefaultConstructorMarker defaultConstructorMarker) {
+        public static final class C0658a {
+            public /* synthetic */ C0658a(DefaultConstructorMarker defaultConstructorMarker) {
                 this();
             }
 
@@ -102,20 +102,20 @@ public final class d {
                 return false;
             }
 
-            private C0692a() {
+            private C0658a() {
             }
         }
 
         public a(String name, String type, boolean z10, int i10, String str, int i11) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(type, "type");
-            this.f50514a = name;
-            this.f50515b = type;
-            this.f50516c = z10;
-            this.f50517d = i10;
-            this.f50518e = str;
-            this.f50519f = i11;
-            this.f50520g = a(type);
+            this.f48446a = name;
+            this.f48447b = type;
+            this.f48448c = z10;
+            this.f48449d = i10;
+            this.f48450e = str;
+            this.f48451f = i11;
+            this.f48452g = a(type);
         }
 
         private final int a(String str) {
@@ -148,21 +148,21 @@ public final class d {
             if (this == obj) {
                 return true;
             }
-            if (!(obj instanceof a) || this.f50517d != ((a) obj).f50517d) {
+            if (!(obj instanceof a) || this.f48449d != ((a) obj).f48449d) {
                 return false;
             }
             a aVar = (a) obj;
-            if (!Intrinsics.areEqual(this.f50514a, aVar.f50514a) || this.f50516c != aVar.f50516c) {
+            if (!Intrinsics.areEqual(this.f48446a, aVar.f48446a) || this.f48448c != aVar.f48448c) {
                 return false;
             }
-            if (this.f50519f == 1 && aVar.f50519f == 2 && (str3 = this.f50518e) != null && !f50513h.b(str3, aVar.f50518e)) {
+            if (this.f48451f == 1 && aVar.f48451f == 2 && (str3 = this.f48450e) != null && !f48445h.b(str3, aVar.f48450e)) {
                 return false;
             }
-            if (this.f50519f == 2 && aVar.f50519f == 1 && (str2 = aVar.f50518e) != null && !f50513h.b(str2, this.f50518e)) {
+            if (this.f48451f == 2 && aVar.f48451f == 1 && (str2 = aVar.f48450e) != null && !f48445h.b(str2, this.f48450e)) {
                 return false;
             }
-            int i10 = this.f50519f;
-            if ((i10 == 0 || i10 != aVar.f50519f || ((str = this.f50518e) == null ? aVar.f50518e == null : f50513h.b(str, aVar.f50518e))) && this.f50520g == aVar.f50520g) {
+            int i10 = this.f48451f;
+            if ((i10 == 0 || i10 != aVar.f48451f || ((str = this.f48450e) == null ? aVar.f48450e == null : f48445h.b(str, aVar.f48450e))) && this.f48452g == aVar.f48452g) {
                 return true;
             }
             return false;
@@ -170,29 +170,29 @@ public final class d {
 
         public int hashCode() {
             int i10;
-            int hashCode = ((this.f50514a.hashCode() * 31) + this.f50520g) * 31;
-            if (this.f50516c) {
+            int hashCode = ((this.f48446a.hashCode() * 31) + this.f48452g) * 31;
+            if (this.f48448c) {
                 i10 = 1231;
             } else {
                 i10 = 1237;
             }
-            return ((hashCode + i10) * 31) + this.f50517d;
+            return ((hashCode + i10) * 31) + this.f48449d;
         }
 
         public String toString() {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("Column{name='");
-            sb2.append(this.f50514a);
+            sb2.append(this.f48446a);
             sb2.append("', type='");
-            sb2.append(this.f50515b);
+            sb2.append(this.f48447b);
             sb2.append("', affinity='");
-            sb2.append(this.f50520g);
+            sb2.append(this.f48452g);
             sb2.append("', notNull=");
-            sb2.append(this.f50516c);
+            sb2.append(this.f48448c);
             sb2.append(", primaryKeyPosition=");
-            sb2.append(this.f50517d);
+            sb2.append(this.f48449d);
             sb2.append(", defaultValue='");
-            String str = this.f50518e;
+            String str = this.f48450e;
             if (str == null) {
                 str = "undefined";
             }
@@ -222,19 +222,19 @@ public final class d {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f50521a;
+        public final String f48453a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final String f50522b;
+        public final String f48454b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final String f50523c;
+        public final String f48455c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final List f50524d;
+        public final List f48456d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final List f50525e;
+        public final List f48457e;
 
         public c(String referenceTable, String onDelete, String onUpdate, List columnNames, List referenceColumnNames) {
             Intrinsics.checkNotNullParameter(referenceTable, "referenceTable");
@@ -242,11 +242,11 @@ public final class d {
             Intrinsics.checkNotNullParameter(onUpdate, "onUpdate");
             Intrinsics.checkNotNullParameter(columnNames, "columnNames");
             Intrinsics.checkNotNullParameter(referenceColumnNames, "referenceColumnNames");
-            this.f50521a = referenceTable;
-            this.f50522b = onDelete;
-            this.f50523c = onUpdate;
-            this.f50524d = columnNames;
-            this.f50525e = referenceColumnNames;
+            this.f48453a = referenceTable;
+            this.f48454b = onDelete;
+            this.f48455c = onUpdate;
+            this.f48456d = columnNames;
+            this.f48457e = referenceColumnNames;
         }
 
         public boolean equals(Object obj) {
@@ -257,67 +257,67 @@ public final class d {
                 return false;
             }
             c cVar = (c) obj;
-            if (!Intrinsics.areEqual(this.f50521a, cVar.f50521a) || !Intrinsics.areEqual(this.f50522b, cVar.f50522b) || !Intrinsics.areEqual(this.f50523c, cVar.f50523c) || !Intrinsics.areEqual(this.f50524d, cVar.f50524d)) {
+            if (!Intrinsics.areEqual(this.f48453a, cVar.f48453a) || !Intrinsics.areEqual(this.f48454b, cVar.f48454b) || !Intrinsics.areEqual(this.f48455c, cVar.f48455c) || !Intrinsics.areEqual(this.f48456d, cVar.f48456d)) {
                 return false;
             }
-            return Intrinsics.areEqual(this.f50525e, cVar.f50525e);
+            return Intrinsics.areEqual(this.f48457e, cVar.f48457e);
         }
 
         public int hashCode() {
-            return (((((((this.f50521a.hashCode() * 31) + this.f50522b.hashCode()) * 31) + this.f50523c.hashCode()) * 31) + this.f50524d.hashCode()) * 31) + this.f50525e.hashCode();
+            return (((((((this.f48453a.hashCode() * 31) + this.f48454b.hashCode()) * 31) + this.f48455c.hashCode()) * 31) + this.f48456d.hashCode()) * 31) + this.f48457e.hashCode();
         }
 
         public String toString() {
-            return "ForeignKey{referenceTable='" + this.f50521a + "', onDelete='" + this.f50522b + " +', onUpdate='" + this.f50523c + "', columnNames=" + this.f50524d + ", referenceColumnNames=" + this.f50525e + '}';
+            return "ForeignKey{referenceTable='" + this.f48453a + "', onDelete='" + this.f48454b + " +', onUpdate='" + this.f48455c + "', columnNames=" + this.f48456d + ", referenceColumnNames=" + this.f48457e + '}';
         }
     }
 
     /* renamed from: t3.d$d  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0693d implements Comparable {
+    public static final class C0659d implements Comparable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f50526d;
+        private final int f48458d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f50527e;
+        private final int f48459e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f50528i;
+        private final String f48460i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final String f50529o;
+        private final String f48461o;
 
-        public C0693d(int i10, int i11, String from, String to2) {
+        public C0659d(int i10, int i11, String from, String to2) {
             Intrinsics.checkNotNullParameter(from, "from");
             Intrinsics.checkNotNullParameter(to2, "to");
-            this.f50526d = i10;
-            this.f50527e = i11;
-            this.f50528i = from;
-            this.f50529o = to2;
+            this.f48458d = i10;
+            this.f48459e = i11;
+            this.f48460i = from;
+            this.f48461o = to2;
         }
 
         @Override // java.lang.Comparable
         /* renamed from: a */
-        public int compareTo(C0693d other) {
+        public int compareTo(C0659d other) {
             Intrinsics.checkNotNullParameter(other, "other");
-            int i10 = this.f50526d - other.f50526d;
+            int i10 = this.f48458d - other.f48458d;
             if (i10 == 0) {
-                return this.f50527e - other.f50527e;
+                return this.f48459e - other.f48459e;
             }
             return i10;
         }
 
         public final String d() {
-            return this.f50528i;
+            return this.f48460i;
         }
 
         public final int e() {
-            return this.f50526d;
+            return this.f48458d;
         }
 
         public final String f() {
-            return this.f50529o;
+            return this.f48461o;
         }
     }
 
@@ -325,19 +325,19 @@ public final class d {
     public static final class e {
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f50530e = new a(null);
+        public static final a f48462e = new a(null);
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f50531a;
+        public final String f48463a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final boolean f50532b;
+        public final boolean f48464b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final List f50533c;
+        public final List f48465c;
 
         /* renamed from: d  reason: collision with root package name */
-        public List f50534d;
+        public List f48466d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class a {
@@ -357,10 +357,10 @@ public final class d {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(columns, "columns");
             Intrinsics.checkNotNullParameter(orders, "orders");
-            this.f50531a = name;
-            this.f50532b = z10;
-            this.f50533c = columns;
-            this.f50534d = orders;
+            this.f48463a = name;
+            this.f48464b = z10;
+            this.f48465c = columns;
+            this.f48466d = orders;
             List list = orders;
             if (list.isEmpty()) {
                 int size = columns.size();
@@ -369,7 +369,7 @@ public final class d {
                     list.add(l.ASC.name());
                 }
             }
-            this.f50534d = (List) list;
+            this.f48466d = (List) list;
         }
 
         public boolean equals(Object obj) {
@@ -380,27 +380,27 @@ public final class d {
                 return false;
             }
             e eVar = (e) obj;
-            if (this.f50532b != eVar.f50532b || !Intrinsics.areEqual(this.f50533c, eVar.f50533c) || !Intrinsics.areEqual(this.f50534d, eVar.f50534d)) {
+            if (this.f48464b != eVar.f48464b || !Intrinsics.areEqual(this.f48465c, eVar.f48465c) || !Intrinsics.areEqual(this.f48466d, eVar.f48466d)) {
                 return false;
             }
-            if (StringsKt.P(this.f50531a, "index_", false, 2, null)) {
-                return StringsKt.P(eVar.f50531a, "index_", false, 2, null);
+            if (StringsKt.P(this.f48463a, "index_", false, 2, null)) {
+                return StringsKt.P(eVar.f48463a, "index_", false, 2, null);
             }
-            return Intrinsics.areEqual(this.f50531a, eVar.f50531a);
+            return Intrinsics.areEqual(this.f48463a, eVar.f48463a);
         }
 
         public int hashCode() {
             int hashCode;
-            if (StringsKt.P(this.f50531a, "index_", false, 2, null)) {
+            if (StringsKt.P(this.f48463a, "index_", false, 2, null)) {
                 hashCode = -1184239155;
             } else {
-                hashCode = this.f50531a.hashCode();
+                hashCode = this.f48463a.hashCode();
             }
-            return (((((hashCode * 31) + (this.f50532b ? 1 : 0)) * 31) + this.f50533c.hashCode()) * 31) + this.f50534d.hashCode();
+            return (((((hashCode * 31) + (this.f48464b ? 1 : 0)) * 31) + this.f48465c.hashCode()) * 31) + this.f48466d.hashCode();
         }
 
         public String toString() {
-            return "Index{name='" + this.f50531a + "', unique=" + this.f50532b + ", columns=" + this.f50533c + ", orders=" + this.f50534d + "'}";
+            return "Index{name='" + this.f48463a + "', unique=" + this.f48464b + ", columns=" + this.f48465c + ", orders=" + this.f48466d + "'}";
         }
     }
 
@@ -408,14 +408,14 @@ public final class d {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(columns, "columns");
         Intrinsics.checkNotNullParameter(foreignKeys, "foreignKeys");
-        this.f50509a = name;
-        this.f50510b = columns;
-        this.f50511c = foreignKeys;
-        this.f50512d = set;
+        this.f48441a = name;
+        this.f48442b = columns;
+        this.f48443c = foreignKeys;
+        this.f48444d = set;
     }
 
     public static final d a(g gVar, String str) {
-        return f50508e.a(gVar, str);
+        return f48440e.a(gVar, str);
     }
 
     public boolean equals(Object obj) {
@@ -427,21 +427,21 @@ public final class d {
             return false;
         }
         d dVar = (d) obj;
-        if (!Intrinsics.areEqual(this.f50509a, dVar.f50509a) || !Intrinsics.areEqual(this.f50510b, dVar.f50510b) || !Intrinsics.areEqual(this.f50511c, dVar.f50511c)) {
+        if (!Intrinsics.areEqual(this.f48441a, dVar.f48441a) || !Intrinsics.areEqual(this.f48442b, dVar.f48442b) || !Intrinsics.areEqual(this.f48443c, dVar.f48443c)) {
             return false;
         }
-        Set set2 = this.f50512d;
-        if (set2 == null || (set = dVar.f50512d) == null) {
+        Set set2 = this.f48444d;
+        if (set2 == null || (set = dVar.f48444d) == null) {
             return true;
         }
         return Intrinsics.areEqual(set2, set);
     }
 
     public int hashCode() {
-        return (((this.f50509a.hashCode() * 31) + this.f50510b.hashCode()) * 31) + this.f50511c.hashCode();
+        return (((this.f48441a.hashCode() * 31) + this.f48442b.hashCode()) * 31) + this.f48443c.hashCode();
     }
 
     public String toString() {
-        return "TableInfo{name='" + this.f50509a + "', columns=" + this.f50510b + ", foreignKeys=" + this.f50511c + ", indices=" + this.f50512d + '}';
+        return "TableInfo{name='" + this.f48441a + "', columns=" + this.f48442b + ", foreignKeys=" + this.f48443c + ", indices=" + this.f48444d + '}';
     }
 }

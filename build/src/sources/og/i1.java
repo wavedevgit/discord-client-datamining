@@ -9,20 +9,20 @@ import java.util.RandomAccess;
 public abstract class i1 extends d1 implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final h2 f40950e = new g1(x1.f41456q, 0);
+    private static final h2 f39276e = new g1(x1.f39782q, 0);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final /* synthetic */ int f40951i = 0;
+    public static final /* synthetic */ int f39277i = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static i1 g(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return x1.f41456q;
+            return x1.f39782q;
         }
         return new x1(objArr, i10);
     }
 
-    public static i1 h(Object obj, Object obj2) {
+    public static i1 i(Object obj, Object obj2) {
         Object[] objArr = {obj, obj2};
         w1.a(objArr, 2);
         return g(objArr, 2);
@@ -129,7 +129,7 @@ public abstract class i1 extends d1 implements List, RandomAccess {
             return this;
         }
         if (i12 == 0) {
-            return x1.f41456q;
+            return x1.f39782q;
         }
         return new h1(this, i10, i12);
     }
@@ -142,16 +142,6 @@ public abstract class i1 extends d1 implements List, RandomAccess {
             i10 = (i10 * 31) + get(i11).hashCode();
         }
         return i10;
-    }
-
-    @Override // java.util.List
-    /* renamed from: i */
-    public final h2 listIterator(int i10) {
-        t.b(i10, size(), "index");
-        if (isEmpty()) {
-            return f40950e;
-        }
-        return new g1(this, i10);
     }
 
     @Override // java.util.List
@@ -171,6 +161,16 @@ public abstract class i1 extends d1 implements List, RandomAccess {
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.List
     public final /* synthetic */ Iterator iterator() {
         return listIterator(0);
+    }
+
+    @Override // java.util.List
+    /* renamed from: j */
+    public final h2 listIterator(int i10) {
+        t.b(i10, size(), "index");
+        if (isEmpty()) {
+            return f39276e;
+        }
+        return new g1(this, i10);
     }
 
     @Override // java.util.List

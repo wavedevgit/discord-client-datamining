@@ -3,7 +3,6 @@ package com.discord.serialization;
 import com.discord.serialization.SerializerUtils;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import js.c;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -16,6 +15,7 @@ import kotlinx.serialization.json.JsonElement;
 import kotlinx.serialization.json.JsonObject;
 import kotlinx.serialization.json.b;
 import org.jetbrains.annotations.NotNull;
+import ss.c;
 @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001\nB\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u001a\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\n\u0010\b\u001a\u0006\u0012\u0002\b\u00030\t¨\u0006\u000b"}, d2 = {"Lcom/discord/serialization/SerializerUtils;", "", "<init>", "()V", "findErroringFields", "Lcom/discord/serialization/SerializerUtils$SerializerError;", "jsonString", "", "deserializerClass", "Lkotlin/reflect/KClass;", "SerializerError", "serialization_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class SerializerUtils {
@@ -120,7 +120,7 @@ public final class SerializerUtils {
     public static final Unit findErroringFields$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     @NotNull

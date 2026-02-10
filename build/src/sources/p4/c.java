@@ -8,10 +8,10 @@ import java.util.List;
 public final class c implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f42953a;
+    private final r3.u f41411a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f42954b;
+    private final r3.i f41412b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -28,21 +28,21 @@ public final class c implements b {
         /* renamed from: k */
         public void i(x3.k kVar, p4.a aVar) {
             if (aVar.b() == null) {
-                kVar.N1(1);
+                kVar.S1(1);
             } else {
-                kVar.d1(1, aVar.b());
+                kVar.i1(1, aVar.b());
             }
             if (aVar.a() == null) {
-                kVar.N1(2);
+                kVar.S1(2);
             } else {
-                kVar.d1(2, aVar.a());
+                kVar.i1(2, aVar.a());
             }
         }
     }
 
     public c(r3.u uVar) {
-        this.f42953a = uVar;
-        this.f42954b = new a(uVar);
+        this.f41411a = uVar;
+        this.f41412b = new a(uVar);
     }
 
     public static List e() {
@@ -52,14 +52,14 @@ public final class c implements b {
     @Override // p4.b
     public List a(String str) {
         String string;
-        r3.x k10 = r3.x.k("SELECT work_spec_id FROM dependency WHERE prerequisite_id=?", 1);
+        r3.x i10 = r3.x.i("SELECT work_spec_id FROM dependency WHERE prerequisite_id=?", 1);
         if (str == null) {
-            k10.N1(1);
+            i10.S1(1);
         } else {
-            k10.d1(1, str);
+            i10.i1(1, str);
         }
-        this.f42953a.d();
-        Cursor b10 = t3.b.b(this.f42953a, k10, false, null);
+        this.f41411a.d();
+        Cursor b10 = t3.b.b(this.f41411a, i10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -73,22 +73,22 @@ public final class c implements b {
             return arrayList;
         } finally {
             b10.close();
-            k10.p();
+            i10.p();
         }
     }
 
     @Override // p4.b
     public boolean b(String str) {
         boolean z10 = true;
-        r3.x k10 = r3.x.k("SELECT COUNT(*)=0 FROM dependency WHERE work_spec_id=? AND prerequisite_id IN (SELECT id FROM workspec WHERE state!=2)", 1);
+        r3.x i10 = r3.x.i("SELECT COUNT(*)=0 FROM dependency WHERE work_spec_id=? AND prerequisite_id IN (SELECT id FROM workspec WHERE state!=2)", 1);
         if (str == null) {
-            k10.N1(1);
+            i10.S1(1);
         } else {
-            k10.d1(1, str);
+            i10.i1(1, str);
         }
-        this.f42953a.d();
+        this.f41411a.d();
         boolean z11 = false;
-        Cursor b10 = t3.b.b(this.f42953a, k10, false, null);
+        Cursor b10 = t3.b.b(this.f41411a, i10, false, null);
         try {
             if (b10.moveToFirst()) {
                 if (b10.getInt(0) == 0) {
@@ -99,34 +99,34 @@ public final class c implements b {
             return z11;
         } finally {
             b10.close();
-            k10.p();
+            i10.p();
         }
     }
 
     @Override // p4.b
     public void c(p4.a aVar) {
-        this.f42953a.d();
-        this.f42953a.e();
+        this.f41411a.d();
+        this.f41411a.e();
         try {
-            this.f42954b.j(aVar);
-            this.f42953a.A();
+            this.f41412b.j(aVar);
+            this.f41411a.A();
         } finally {
-            this.f42953a.i();
+            this.f41411a.i();
         }
     }
 
     @Override // p4.b
     public boolean d(String str) {
         boolean z10 = true;
-        r3.x k10 = r3.x.k("SELECT COUNT(*)>0 FROM dependency WHERE prerequisite_id=?", 1);
+        r3.x i10 = r3.x.i("SELECT COUNT(*)>0 FROM dependency WHERE prerequisite_id=?", 1);
         if (str == null) {
-            k10.N1(1);
+            i10.S1(1);
         } else {
-            k10.d1(1, str);
+            i10.i1(1, str);
         }
-        this.f42953a.d();
+        this.f41411a.d();
         boolean z11 = false;
-        Cursor b10 = t3.b.b(this.f42953a, k10, false, null);
+        Cursor b10 = t3.b.b(this.f41411a, i10, false, null);
         try {
             if (b10.moveToFirst()) {
                 if (b10.getInt(0) == 0) {
@@ -137,7 +137,7 @@ public final class c implements b {
             return z11;
         } finally {
             b10.close();
-            k10.p();
+            i10.p();
         }
     }
 }

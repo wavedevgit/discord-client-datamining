@@ -6,44 +6,44 @@ import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.g;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
-import gq.e0;
-import gq.k5;
-import gq.s;
-import gq.v;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-@Metadata(d1 = {"\u0000j\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0013\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\t\b\u0087\b\u0018\u00002\u00020\u00012\b\u0012\u0004\u0012\u00020\u00000\u00022\u00020\u00032\u00020\u0004BE\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\b\u0010\n\u001a\u0004\u0018\u00010\b\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00050\f¢\u0006\u0004\b\u000e\u0010\u000fB\u0011\b\u0016\u0012\u0006\u0010\u0011\u001a\u00020\u0010¢\u0006\u0004\b\u000e\u0010\u0012J\u0019\u0010\u0014\u001a\u00020\u00002\b\u0010\u0013\u001a\u0004\u0018\u00010\u0005H\u0016¢\u0006\u0004\b\u0014\u0010\u0015J\u001d\u0010\u001b\u001a\u00020\u001a2\u0006\u0010\u0017\u001a\u00020\u00162\u0006\u0010\u0019\u001a\u00020\u0018¢\u0006\u0004\b\u001b\u0010\u001cJ\r\u0010\u001d\u001a\u00020\u0018¢\u0006\u0004\b\u001d\u0010\u001eJZ\u0010\u001f\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00052\u000e\b\u0002\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00050\fHÆ\u0001¢\u0006\u0004\b\u001f\u0010 J\u0010\u0010!\u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b!\u0010\"J\u0010\u0010#\u001a\u00020\u0018HÖ\u0001¢\u0006\u0004\b#\u0010\u001eJ\u001a\u0010'\u001a\u00020&2\b\u0010%\u001a\u0004\u0018\u00010$HÖ\u0003¢\u0006\u0004\b'\u0010(R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b)\u0010*\u001a\u0004\b+\u0010\"R\u0019\u0010\u0007\u001a\u0004\u0018\u00010\u00058\u0006¢\u0006\f\n\u0004\b,\u0010*\u001a\u0004\b-\u0010\"R\u001c\u0010\t\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b.\u0010/\u001a\u0004\b0\u00101R\u001c\u0010\n\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b2\u0010/\u001a\u0004\b3\u00101R\u0019\u0010\u000b\u001a\u0004\u0018\u00010\u00058\u0006¢\u0006\f\n\u0004\b4\u0010*\u001a\u0004\b5\u0010\"R\u001d\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00050\f8\u0006¢\u0006\f\n\u0004\b6\u00107\u001a\u0004\b8\u00109R&\u0010?\u001a\b\u0012\u0004\u0012\u00020;0:8\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\b<\u00107\u0012\u0004\b=\u0010>\u001a\u0004\b)\u00109R(\u0010H\u001a\u00020@8\u0016@\u0016X\u0097\u000e¢\u0006\u0018\n\u0004\bA\u0010B\u0012\u0004\bG\u0010>\u001a\u0004\bC\u0010D\"\u0004\bE\u0010F¨\u0006I"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputDateComponent;", "Lgq/k5;", "Lgq/s;", "Lgq/v;", "Lgq/e0;", "", StackTraceHelper.NAME_KEY, "value", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "monthPlaceholder", "", "monthList", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Ljava/lang/String;Ljava/util/List;)V", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputDate;", "config", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputDate;)V", "newDate", "h", "(Ljava/lang/String;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputDateComponent;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "c", "(Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Ljava/lang/String;Ljava/util/List;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputDateComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "getValue", "i", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "o", "getDisabled", "p", "getMonthPlaceholder", "q", "Ljava/util/List;", "getMonthList", "()Ljava/util/List;", "", "Loq/a;", "r", "getAssociatedViews$annotations", "()V", "associatedViews", "Lhq/e;", "s", "Lhq/e;", "b", "()Lhq/e;", "f", "(Lhq/e;)V", "getDateController$annotations", "dateController", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import pq.e0;
+import pq.k5;
+import pq.s;
+import pq.v;
+@Metadata(d1 = {"\u0000j\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0013\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\t\b\u0087\b\u0018\u00002\u00020\u00012\b\u0012\u0004\u0012\u00020\u00000\u00022\u00020\u00032\u00020\u0004BE\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\b\u0010\n\u001a\u0004\u0018\u00010\b\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00050\f¢\u0006\u0004\b\u000e\u0010\u000fB\u0011\b\u0016\u0012\u0006\u0010\u0011\u001a\u00020\u0010¢\u0006\u0004\b\u000e\u0010\u0012J\u0019\u0010\u0014\u001a\u00020\u00002\b\u0010\u0013\u001a\u0004\u0018\u00010\u0005H\u0016¢\u0006\u0004\b\u0014\u0010\u0015J\u001d\u0010\u001b\u001a\u00020\u001a2\u0006\u0010\u0017\u001a\u00020\u00162\u0006\u0010\u0019\u001a\u00020\u0018¢\u0006\u0004\b\u001b\u0010\u001cJ\r\u0010\u001d\u001a\u00020\u0018¢\u0006\u0004\b\u001d\u0010\u001eJZ\u0010\u001f\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00052\u000e\b\u0002\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00050\fHÆ\u0001¢\u0006\u0004\b\u001f\u0010 J\u0010\u0010!\u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b!\u0010\"J\u0010\u0010#\u001a\u00020\u0018HÖ\u0001¢\u0006\u0004\b#\u0010\u001eJ\u001a\u0010'\u001a\u00020&2\b\u0010%\u001a\u0004\u0018\u00010$HÖ\u0003¢\u0006\u0004\b'\u0010(R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b)\u0010*\u001a\u0004\b+\u0010\"R\u0019\u0010\u0007\u001a\u0004\u0018\u00010\u00058\u0006¢\u0006\f\n\u0004\b,\u0010*\u001a\u0004\b-\u0010\"R\u001c\u0010\t\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b.\u0010/\u001a\u0004\b0\u00101R\u001c\u0010\n\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b2\u0010/\u001a\u0004\b3\u00101R\u0019\u0010\u000b\u001a\u0004\u0018\u00010\u00058\u0006¢\u0006\f\n\u0004\b4\u0010*\u001a\u0004\b5\u0010\"R\u001d\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00050\f8\u0006¢\u0006\f\n\u0004\b6\u00107\u001a\u0004\b8\u00109R&\u0010?\u001a\b\u0012\u0004\u0012\u00020;0:8\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\b<\u00107\u0012\u0004\b=\u0010>\u001a\u0004\b)\u00109R(\u0010H\u001a\u00020@8\u0016@\u0016X\u0097\u000e¢\u0006\u0018\n\u0004\bA\u0010B\u0012\u0004\bG\u0010>\u001a\u0004\bC\u0010D\"\u0004\bE\u0010F¨\u0006I"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputDateComponent;", "Lpq/k5;", "Lpq/s;", "Lpq/v;", "Lpq/e0;", "", StackTraceHelper.NAME_KEY, "value", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "monthPlaceholder", "", "monthList", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Ljava/lang/String;Ljava/util/List;)V", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputDate;", "config", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputDate;)V", "newDate", "g", "(Ljava/lang/String;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputDateComponent;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "c", "(Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Ljava/lang/String;Ljava/util/List;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputDateComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "getValue", "i", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "o", "getDisabled", "p", "getMonthPlaceholder", "q", "Ljava/util/List;", "getMonthList", "()Ljava/util/List;", "", "Lxq/a;", "r", "getAssociatedViews$annotations", "()V", "associatedViews", "Lqq/e;", "s", "Lqq/e;", "b", "()Lqq/e;", "f", "(Lqq/e;)V", "getDateController$annotations", "dateController", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class InputDateComponent implements k5, s, v, e0 {
     @NotNull
     public static final Parcelable.Creator<InputDateComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19775d;
+    private final String f20655d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f19776e;
+    private final String f20656e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f19777i;
+    private final JsonLogicBoolean f20657i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f19778o;
+    private final JsonLogicBoolean f20658o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f19779p;
+    private final String f20659p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f19780q;
+    private final List f20660q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final List f19781r;
+    private final List f20661r;
 
     /* renamed from: s  reason: collision with root package name */
-    private hq.e f19782s;
+    private qq.e f20662s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -64,34 +64,34 @@ public final class InputDateComponent implements k5, s, v, e0 {
     public InputDateComponent(String name, String str, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str2, List monthList) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(monthList, "monthList");
-        this.f19775d = name;
-        this.f19776e = str;
-        this.f19777i = jsonLogicBoolean;
-        this.f19778o = jsonLogicBoolean2;
-        this.f19779p = str2;
-        this.f19780q = monthList;
-        this.f19781r = new ArrayList();
-        this.f19782s = new hq.e(str, str2, monthList);
+        this.f20655d = name;
+        this.f20656e = str;
+        this.f20657i = jsonLogicBoolean;
+        this.f20658o = jsonLogicBoolean2;
+        this.f20659p = str2;
+        this.f20660q = monthList;
+        this.f20661r = new ArrayList();
+        this.f20662s = new qq.e(str, str2, monthList);
     }
 
     public static /* synthetic */ InputDateComponent e(InputDateComponent inputDateComponent, String str, String str2, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str3, List list, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputDateComponent.f19775d;
+            str = inputDateComponent.f20655d;
         }
         if ((i10 & 2) != 0) {
-            str2 = inputDateComponent.f19776e;
+            str2 = inputDateComponent.f20656e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputDateComponent.f19777i;
+            jsonLogicBoolean = inputDateComponent.f20657i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputDateComponent.f19778o;
+            jsonLogicBoolean2 = inputDateComponent.f20658o;
         }
         if ((i10 & 16) != 0) {
-            str3 = inputDateComponent.f19779p;
+            str3 = inputDateComponent.f20659p;
         }
         if ((i10 & 32) != 0) {
-            list = inputDateComponent.f19780q;
+            list = inputDateComponent.f20660q;
         }
         String str4 = str3;
         List list2 = list;
@@ -102,9 +102,9 @@ public final class InputDateComponent implements k5, s, v, e0 {
     public static /* synthetic */ void getDateController$annotations() {
     }
 
-    @Override // gq.s
-    public hq.e b() {
-        return this.f19782s;
+    @Override // pq.s
+    public qq.e b() {
+        return this.f20662s;
     }
 
     public final InputDateComponent c(String name, String str, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str2, List monthList) {
@@ -113,9 +113,9 @@ public final class InputDateComponent implements k5, s, v, e0 {
         return new InputDateComponent(name, str, jsonLogicBoolean, jsonLogicBoolean2, str2, monthList);
     }
 
-    @Override // gq.e0
+    @Override // pq.e0
     public List d() {
-        return this.f19781r;
+        return this.f20661r;
     }
 
     @Override // android.os.Parcelable
@@ -129,70 +129,70 @@ public final class InputDateComponent implements k5, s, v, e0 {
         }
         if (obj instanceof InputDateComponent) {
             InputDateComponent inputDateComponent = (InputDateComponent) obj;
-            return Intrinsics.areEqual(this.f19775d, inputDateComponent.f19775d) && Intrinsics.areEqual(this.f19776e, inputDateComponent.f19776e) && Intrinsics.areEqual(this.f19777i, inputDateComponent.f19777i) && Intrinsics.areEqual(this.f19778o, inputDateComponent.f19778o) && Intrinsics.areEqual(this.f19779p, inputDateComponent.f19779p) && Intrinsics.areEqual(this.f19780q, inputDateComponent.f19780q);
+            return Intrinsics.areEqual(this.f20655d, inputDateComponent.f20655d) && Intrinsics.areEqual(this.f20656e, inputDateComponent.f20656e) && Intrinsics.areEqual(this.f20657i, inputDateComponent.f20657i) && Intrinsics.areEqual(this.f20658o, inputDateComponent.f20658o) && Intrinsics.areEqual(this.f20659p, inputDateComponent.f20659p) && Intrinsics.areEqual(this.f20660q, inputDateComponent.f20660q);
         }
         return false;
     }
 
-    public void f(hq.e eVar) {
+    public void f(qq.e eVar) {
         Intrinsics.checkNotNullParameter(eVar, "<set-?>");
-        this.f19782s = eVar;
+        this.f20662s = eVar;
     }
 
-    @Override // gq.v
-    public JsonLogicBoolean getDisabled() {
-        return this.f19778o;
-    }
-
-    @Override // gq.e0
-    public JsonLogicBoolean getHidden() {
-        return this.f19777i;
-    }
-
-    @Override // gq.k5
-    public String getName() {
-        return this.f19775d;
-    }
-
-    @Override // gq.s
-    /* renamed from: h */
+    @Override // pq.s
+    /* renamed from: g */
     public InputDateComponent a(String str) {
         InputDateComponent e10 = e(this, null, str, null, null, null, null, 61, null);
         e10.f(b());
         return e10;
     }
 
+    @Override // pq.v
+    public JsonLogicBoolean getDisabled() {
+        return this.f20658o;
+    }
+
+    @Override // pq.e0
+    public JsonLogicBoolean getHidden() {
+        return this.f20657i;
+    }
+
+    @Override // pq.k5
+    public String getName() {
+        return this.f20655d;
+    }
+
     public int hashCode() {
-        int hashCode = this.f19775d.hashCode() * 31;
-        String str = this.f19776e;
+        int hashCode = this.f20655d.hashCode() * 31;
+        String str = this.f20656e;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f19777i;
+        JsonLogicBoolean jsonLogicBoolean = this.f20657i;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19778o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20658o;
         int hashCode4 = (hashCode3 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        String str2 = this.f19779p;
-        return ((hashCode4 + (str2 != null ? str2.hashCode() : 0)) * 31) + this.f19780q.hashCode();
+        String str2 = this.f20659p;
+        return ((hashCode4 + (str2 != null ? str2.hashCode() : 0)) * 31) + this.f20660q.hashCode();
     }
 
     public String toString() {
-        String str = this.f19775d;
-        String str2 = this.f19776e;
-        JsonLogicBoolean jsonLogicBoolean = this.f19777i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f19778o;
-        String str3 = this.f19779p;
-        List list = this.f19780q;
+        String str = this.f20655d;
+        String str2 = this.f20656e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20657i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20658o;
+        String str3 = this.f20659p;
+        List list = this.f20660q;
         return "InputDateComponent(name=" + str + ", value=" + str2 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", monthPlaceholder=" + str3 + ", monthList=" + list + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f19775d);
-        dest.writeString(this.f19776e);
-        dest.writeParcelable(this.f19777i, i10);
-        dest.writeParcelable(this.f19778o, i10);
-        dest.writeString(this.f19779p);
-        dest.writeStringList(this.f19780q);
+        dest.writeString(this.f20655d);
+        dest.writeString(this.f20656e);
+        dest.writeParcelable(this.f20657i, i10);
+        dest.writeParcelable(this.f20658o, i10);
+        dest.writeString(this.f20659p);
+        dest.writeStringList(this.f20660q);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

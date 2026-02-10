@@ -6,22 +6,22 @@ import java.util.Arrays;
 public final class l1 {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final l1 f3827f = new l1(0, new int[0], new Object[0], false);
+    private static final l1 f3833f = new l1(0, new int[0], new Object[0], false);
 
     /* renamed from: a  reason: collision with root package name */
-    private int f3828a;
+    private int f3834a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int[] f3829b;
+    private int[] f3835b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Object[] f3830c;
+    private Object[] f3836c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f3831d;
+    private int f3837d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f3832e;
+    private boolean f3838e;
 
     private l1() {
         this(0, new int[8], new Object[8], true);
@@ -29,8 +29,8 @@ public final class l1 {
 
     private void b() {
         int i10;
-        int i11 = this.f3828a;
-        int[] iArr = this.f3829b;
+        int i11 = this.f3834a;
+        int[] iArr = this.f3835b;
         if (i11 == iArr.length) {
             if (i11 < 4) {
                 i10 = 8;
@@ -38,8 +38,8 @@ public final class l1 {
                 i10 = i11 >> 1;
             }
             int i12 = i11 + i10;
-            this.f3829b = Arrays.copyOf(iArr, i12);
-            this.f3830c = Arrays.copyOf(this.f3830c, i12);
+            this.f3835b = Arrays.copyOf(iArr, i12);
+            this.f3836c = Arrays.copyOf(this.f3836c, i12);
         }
     }
 
@@ -62,7 +62,7 @@ public final class l1 {
     }
 
     public static l1 e() {
-        return f3827f;
+        return f3833f;
     }
 
     private static int h(int[] iArr, int i10) {
@@ -83,11 +83,11 @@ public final class l1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static l1 k(l1 l1Var, l1 l1Var2) {
-        int i10 = l1Var.f3828a + l1Var2.f3828a;
-        int[] copyOf = Arrays.copyOf(l1Var.f3829b, i10);
-        System.arraycopy(l1Var2.f3829b, 0, copyOf, l1Var.f3828a, l1Var2.f3828a);
-        Object[] copyOf2 = Arrays.copyOf(l1Var.f3830c, i10);
-        System.arraycopy(l1Var2.f3830c, 0, copyOf2, l1Var.f3828a, l1Var2.f3828a);
+        int i10 = l1Var.f3834a + l1Var2.f3834a;
+        int[] copyOf = Arrays.copyOf(l1Var.f3835b, i10);
+        System.arraycopy(l1Var2.f3835b, 0, copyOf, l1Var.f3834a, l1Var2.f3834a);
+        Object[] copyOf2 = Arrays.copyOf(l1Var.f3836c, i10);
+        System.arraycopy(l1Var2.f3836c, 0, copyOf2, l1Var.f3834a, l1Var2.f3834a);
         return new l1(i10, copyOf, copyOf2, true);
     }
 
@@ -130,7 +130,7 @@ public final class l1 {
     }
 
     void a() {
-        if (this.f3832e) {
+        if (this.f3838e) {
             return;
         }
         throw new UnsupportedOperationException();
@@ -144,8 +144,8 @@ public final class l1 {
             return false;
         }
         l1 l1Var = (l1) obj;
-        int i10 = this.f3828a;
-        if (i10 == l1Var.f3828a && c(this.f3829b, l1Var.f3829b, i10) && d(this.f3830c, l1Var.f3830c, this.f3828a)) {
+        int i10 = this.f3834a;
+        if (i10 == l1Var.f3834a && c(this.f3835b, l1Var.f3835b, i10) && d(this.f3836c, l1Var.f3836c, this.f3834a)) {
             return true;
         }
         return false;
@@ -153,13 +153,13 @@ public final class l1 {
 
     public int f() {
         int S;
-        int i10 = this.f3831d;
+        int i10 = this.f3837d;
         if (i10 != -1) {
             return i10;
         }
         int i11 = 0;
-        for (int i12 = 0; i12 < this.f3828a; i12++) {
-            int i13 = this.f3829b[i12];
+        for (int i12 = 0; i12 < this.f3834a; i12++) {
+            int i13 = this.f3835b[i12];
             int a10 = q1.a(i13);
             int b10 = q1.b(i13);
             if (b10 != 0) {
@@ -167,54 +167,54 @@ public final class l1 {
                     if (b10 != 2) {
                         if (b10 != 3) {
                             if (b10 == 5) {
-                                S = j.l(a10, ((Integer) this.f3830c[i12]).intValue());
+                                S = j.l(a10, ((Integer) this.f3836c[i12]).intValue());
                             } else {
                                 throw new IllegalStateException(z.d());
                             }
                         } else {
-                            S = (j.P(a10) * 2) + ((l1) this.f3830c[i12]).f();
+                            S = (j.P(a10) * 2) + ((l1) this.f3836c[i12]).f();
                         }
                     } else {
-                        S = j.f(a10, (g) this.f3830c[i12]);
+                        S = j.f(a10, (g) this.f3836c[i12]);
                     }
                 } else {
-                    S = j.n(a10, ((Long) this.f3830c[i12]).longValue());
+                    S = j.n(a10, ((Long) this.f3836c[i12]).longValue());
                 }
             } else {
-                S = j.S(a10, ((Long) this.f3830c[i12]).longValue());
+                S = j.S(a10, ((Long) this.f3836c[i12]).longValue());
             }
             i11 += S;
         }
-        this.f3831d = i11;
+        this.f3837d = i11;
         return i11;
     }
 
     public int g() {
-        int i10 = this.f3831d;
+        int i10 = this.f3837d;
         if (i10 != -1) {
             return i10;
         }
         int i11 = 0;
-        for (int i12 = 0; i12 < this.f3828a; i12++) {
-            i11 += j.D(q1.a(this.f3829b[i12]), (g) this.f3830c[i12]);
+        for (int i12 = 0; i12 < this.f3834a; i12++) {
+            i11 += j.D(q1.a(this.f3835b[i12]), (g) this.f3836c[i12]);
         }
-        this.f3831d = i11;
+        this.f3837d = i11;
         return i11;
     }
 
     public int hashCode() {
-        int i10 = this.f3828a;
-        return ((((527 + i10) * 31) + h(this.f3829b, i10)) * 31) + i(this.f3830c, this.f3828a);
+        int i10 = this.f3834a;
+        return ((((527 + i10) * 31) + h(this.f3835b, i10)) * 31) + i(this.f3836c, this.f3834a);
     }
 
     public void j() {
-        this.f3832e = false;
+        this.f3838e = false;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void m(StringBuilder sb2, int i10) {
-        for (int i11 = 0; i11 < this.f3828a; i11++) {
-            q0.c(sb2, i10, String.valueOf(q1.a(this.f3829b[i11])), this.f3830c[i11]);
+        for (int i11 = 0; i11 < this.f3834a; i11++) {
+            q0.c(sb2, i10, String.valueOf(q1.a(this.f3835b[i11])), this.f3836c[i11]);
         }
     }
 
@@ -222,45 +222,45 @@ public final class l1 {
     public void n(int i10, Object obj) {
         a();
         b();
-        int[] iArr = this.f3829b;
-        int i11 = this.f3828a;
+        int[] iArr = this.f3835b;
+        int i11 = this.f3834a;
         iArr[i11] = i10;
-        this.f3830c[i11] = obj;
-        this.f3828a = i11 + 1;
+        this.f3836c[i11] = obj;
+        this.f3834a = i11 + 1;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void o(r1 r1Var) {
         if (r1Var.y() == r1.a.DESCENDING) {
-            for (int i10 = this.f3828a - 1; i10 >= 0; i10--) {
-                r1Var.b(q1.a(this.f3829b[i10]), this.f3830c[i10]);
+            for (int i10 = this.f3834a - 1; i10 >= 0; i10--) {
+                r1Var.b(q1.a(this.f3835b[i10]), this.f3836c[i10]);
             }
             return;
         }
-        for (int i11 = 0; i11 < this.f3828a; i11++) {
-            r1Var.b(q1.a(this.f3829b[i11]), this.f3830c[i11]);
+        for (int i11 = 0; i11 < this.f3834a; i11++) {
+            r1Var.b(q1.a(this.f3835b[i11]), this.f3836c[i11]);
         }
     }
 
     public void q(r1 r1Var) {
-        if (this.f3828a != 0) {
+        if (this.f3834a != 0) {
             if (r1Var.y() == r1.a.ASCENDING) {
-                for (int i10 = 0; i10 < this.f3828a; i10++) {
-                    p(this.f3829b[i10], this.f3830c[i10], r1Var);
+                for (int i10 = 0; i10 < this.f3834a; i10++) {
+                    p(this.f3835b[i10], this.f3836c[i10], r1Var);
                 }
                 return;
             }
-            for (int i11 = this.f3828a - 1; i11 >= 0; i11--) {
-                p(this.f3829b[i11], this.f3830c[i11], r1Var);
+            for (int i11 = this.f3834a - 1; i11 >= 0; i11--) {
+                p(this.f3835b[i11], this.f3836c[i11], r1Var);
             }
         }
     }
 
     private l1(int i10, int[] iArr, Object[] objArr, boolean z10) {
-        this.f3831d = -1;
-        this.f3828a = i10;
-        this.f3829b = iArr;
-        this.f3830c = objArr;
-        this.f3832e = z10;
+        this.f3837d = -1;
+        this.f3834a = i10;
+        this.f3835b = iArr;
+        this.f3836c = objArr;
+        this.f3838e = z10;
     }
 }

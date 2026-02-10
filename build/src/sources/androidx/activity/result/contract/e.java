@@ -8,15 +8,15 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.ext.SdkExtensions;
 import androidx.activity.result.contract.ActivityResultContract;
+import as.p;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import rr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public class e extends ActivityResultContract {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f1035a = new a(null);
+    public static final a f1036a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -34,7 +34,7 @@ public class e extends ActivityResultContract {
             if (input instanceof d) {
                 return "image/*";
             }
-            if (input instanceof C0016e) {
+            if (input instanceof C0013e) {
                 return "video/*";
             }
             if (input instanceof c) {
@@ -73,10 +73,10 @@ public class e extends ActivityResultContract {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final a f1036a = new a();
+            public static final a f1037a = new a();
 
             /* renamed from: b  reason: collision with root package name */
-            private static final int f1037b = 1;
+            private static final int f1038b = 1;
 
             private a() {
                 super(null);
@@ -84,7 +84,7 @@ public class e extends ActivityResultContract {
 
             @Override // androidx.activity.result.contract.e.b
             public int a() {
-                return f1037b;
+                return f1038b;
             }
         }
 
@@ -102,7 +102,7 @@ public class e extends ActivityResultContract {
     public static final class c implements f {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final c f1038a = new c();
+        public static final c f1039a = new c();
 
         private c() {
         }
@@ -112,7 +112,7 @@ public class e extends ActivityResultContract {
     public static final class d implements f {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final d f1039a = new d();
+        public static final d f1040a = new d();
 
         private d() {
         }
@@ -120,12 +120,12 @@ public class e extends ActivityResultContract {
 
     /* renamed from: androidx.activity.result.contract.e$e  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0016e implements f {
+    public static final class C0013e implements f {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0016e f1040a = new C0016e();
+        public static final C0013e f1041a = new C0013e();
 
-        private C0016e() {
+        private C0013e() {
         }
     }
 
@@ -138,7 +138,7 @@ public class e extends ActivityResultContract {
     public Intent createIntent(Context context, d.f input) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(input, "input");
-        a aVar = f1035a;
+        a aVar = f1036a;
         if (aVar.d()) {
             Intent intent = new Intent("android.provider.action.PICK_IMAGES");
             intent.setType(aVar.b(input.d()));
@@ -191,7 +191,7 @@ public class e extends ActivityResultContract {
         }
         Uri data = intent.getData();
         if (data == null) {
-            return (Uri) CollectionsKt.firstOrNull(androidx.activity.result.contract.a.f1032a.a(intent));
+            return (Uri) CollectionsKt.firstOrNull(androidx.activity.result.contract.a.f1033a.a(intent));
         }
         return data;
     }

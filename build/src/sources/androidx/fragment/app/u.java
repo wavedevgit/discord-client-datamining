@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment;
 public abstract class u {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final SimpleArrayMap f4532a = new SimpleArrayMap();
+    private static final SimpleArrayMap f4542a = new SimpleArrayMap();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean b(ClassLoader classLoader, String str) {
@@ -18,7 +18,7 @@ public abstract class u {
     }
 
     private static Class c(ClassLoader classLoader, String str) {
-        SimpleArrayMap simpleArrayMap = f4532a;
+        SimpleArrayMap simpleArrayMap = f4542a;
         SimpleArrayMap simpleArrayMap2 = (SimpleArrayMap) simpleArrayMap.get(classLoader);
         if (simpleArrayMap2 == null) {
             simpleArrayMap2 = new SimpleArrayMap();

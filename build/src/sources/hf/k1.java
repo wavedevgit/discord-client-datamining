@@ -12,51 +12,51 @@ import java.util.concurrent.Executor;
 public final class k1 extends h {
 
     /* renamed from: g  reason: collision with root package name */
-    private final HashMap f26058g = new HashMap();
+    private final HashMap f27276g = new HashMap();
 
     /* renamed from: h  reason: collision with root package name */
-    private final Context f26059h;
+    private final Context f27277h;
 
     /* renamed from: i  reason: collision with root package name */
-    private volatile Handler f26060i;
+    private volatile Handler f27278i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final j1 f26061j;
+    private final j1 f27279j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final of.a f26062k;
+    private final of.a f27280k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final long f26063l;
+    private final long f27281l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final long f26064m;
+    private final long f27282m;
 
     /* renamed from: n  reason: collision with root package name */
-    private volatile Executor f26065n;
+    private volatile Executor f27283n;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k1(Context context, Looper looper, Executor executor) {
         j1 j1Var = new j1(this, null);
-        this.f26061j = j1Var;
-        this.f26059h = context.getApplicationContext();
-        this.f26060i = new ig.p(looper, j1Var);
-        this.f26062k = of.a.b();
-        this.f26063l = 5000L;
-        this.f26064m = LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES;
-        this.f26065n = executor;
+        this.f27279j = j1Var;
+        this.f27277h = context.getApplicationContext();
+        this.f27278i = new ig.p(looper, j1Var);
+        this.f27280k = of.a.b();
+        this.f27281l = 5000L;
+        this.f27282m = LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES;
+        this.f27283n = executor;
     }
 
     @Override // hf.h
     protected final com.google.android.gms.common.b c(h1 h1Var, ServiceConnection serviceConnection, String str, Executor executor) {
         com.google.android.gms.common.b bVar;
         q.m(serviceConnection, "ServiceConnection must not be null");
-        HashMap hashMap = this.f26058g;
+        HashMap hashMap = this.f27276g;
         synchronized (hashMap) {
             try {
                 i1 i1Var = (i1) hashMap.get(h1Var);
                 if (executor == null) {
-                    executor = this.f26065n;
+                    executor = this.f27283n;
                 }
                 if (i1Var == null) {
                     i1Var = new i1(this, h1Var);
@@ -64,7 +64,7 @@ public final class k1 extends h {
                     bVar = i1Var.j(str, executor);
                     hashMap.put(h1Var, i1Var);
                 } else {
-                    this.f26060i.removeMessages(0, h1Var);
+                    this.f27278i.removeMessages(0, h1Var);
                     if (!i1Var.f(serviceConnection)) {
                         i1Var.b(serviceConnection, serviceConnection, str);
                         int e10 = i1Var.e();
@@ -85,7 +85,7 @@ public final class k1 extends h {
                     }
                 }
                 if (i1Var.d()) {
-                    return com.google.android.gms.common.b.f13887q;
+                    return com.google.android.gms.common.b.f14464q;
                 }
                 if (bVar == null) {
                     bVar = new com.google.android.gms.common.b(-1);
@@ -100,7 +100,7 @@ public final class k1 extends h {
     @Override // hf.h
     protected final void e(h1 h1Var, ServiceConnection serviceConnection, String str) {
         q.m(serviceConnection, "ServiceConnection must not be null");
-        HashMap hashMap = this.f26058g;
+        HashMap hashMap = this.f27276g;
         synchronized (hashMap) {
             try {
                 i1 i1Var = (i1) hashMap.get(h1Var);
@@ -108,7 +108,7 @@ public final class k1 extends h {
                     if (i1Var.f(serviceConnection)) {
                         i1Var.c(serviceConnection, str);
                         if (i1Var.g()) {
-                            this.f26060i.sendMessageDelayed(this.f26060i.obtainMessage(0, h1Var), this.f26063l);
+                            this.f27278i.sendMessageDelayed(this.f27278i.obtainMessage(0, h1Var), this.f27281l);
                         }
                     } else {
                         String obj = h1Var.toString();
@@ -132,26 +132,26 @@ public final class k1 extends h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ HashMap f() {
-        return this.f26058g;
+        return this.f27276g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ Context g() {
-        return this.f26059h;
+        return this.f27277h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ Handler h() {
-        return this.f26060i;
+        return this.f27278i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ of.a i() {
-        return this.f26062k;
+        return this.f27280k;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ long j() {
-        return this.f26064m;
+        return this.f27282m;
     }
 }

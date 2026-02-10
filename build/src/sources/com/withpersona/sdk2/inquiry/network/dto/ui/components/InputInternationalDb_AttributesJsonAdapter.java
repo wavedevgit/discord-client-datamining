@@ -1,6 +1,5 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import bn.c;
 import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.a0;
@@ -10,6 +9,7 @@ import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.InputInternationalDb;
+import dn.c;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.collections.x0;
@@ -85,7 +85,7 @@ public final class InputInternationalDb_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -165,7 +165,7 @@ public final class InputInternationalDb_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, InputInternationalDb.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("prefillIdbCountry");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillIdbCountry());
             writer.J("prefillIdbType");

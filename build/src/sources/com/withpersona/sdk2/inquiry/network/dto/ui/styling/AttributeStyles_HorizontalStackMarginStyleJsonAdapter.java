@@ -46,7 +46,7 @@ public final class AttributeStyles_HorizontalStackMarginStyleJsonAdapter extends
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 measurementSet = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
@@ -60,7 +60,7 @@ public final class AttributeStyles_HorizontalStackMarginStyleJsonAdapter extends
     public void toJson(@NotNull t writer, AttributeStyles.HorizontalStackMarginStyle horizontalStackMarginStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (horizontalStackMarginStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableMeasurementSetAdapter.toJson(writer, horizontalStackMarginStyle.getBase());
             writer.s();

@@ -1,27 +1,27 @@
 package qg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class n6 implements zi.d {
+final class n6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n6 f46079a = new n6();
+    static final n6 f44747a = new n6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f46080b;
+    private static final bj.c f44748b;
 
     static {
-        c.b a10 = zi.c.a("errorCode");
+        c.b a10 = bj.c.a("errorCode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f46080b = a10.b(s1Var.b()).a();
+        f44748b = a10.b(s1Var.b()).a();
     }
 
     private n6() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        ((zi.e) obj2).d(f46080b, ((za) obj).a());
+        ((bj.e) obj2).e(f44748b, ((za) obj).a());
     }
 }

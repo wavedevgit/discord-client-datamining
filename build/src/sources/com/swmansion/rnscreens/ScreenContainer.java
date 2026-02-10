@@ -63,7 +63,7 @@ public class ScreenContainer extends ViewGroup {
     }
 
     private final void c(FragmentTransaction fragmentTransaction, Fragment fragment) {
-        fragmentTransaction.m(fragment);
+        fragmentTransaction.n(fragment);
     }
 
     private final FragmentManager d(ReactRootView reactRootView) {
@@ -78,13 +78,13 @@ public class ScreenContainer extends ViewGroup {
         }
         if (z10) {
             FragmentActivity fragmentActivity = (FragmentActivity) context;
-            if (fragmentActivity.getSupportFragmentManager().A0().isEmpty()) {
+            if (fragmentActivity.getSupportFragmentManager().B0().isEmpty()) {
                 FragmentManager supportFragmentManager = fragmentActivity.getSupportFragmentManager();
                 Intrinsics.checkNotNull(supportFragmentManager);
                 return supportFragmentManager;
             }
             try {
-                FragmentManager childFragmentManager = FragmentManager.m0(reactRootView).getChildFragmentManager();
+                FragmentManager childFragmentManager = FragmentManager.n0(reactRootView).getChildFragmentManager();
                 Intrinsics.checkNotNull(childFragmentManager);
                 return childFragmentManager;
             } catch (IllegalStateException unused) {
@@ -97,14 +97,14 @@ public class ScreenContainer extends ViewGroup {
     }
 
     private final Screen.ActivityState e(ScreenFragmentWrapper screenFragmentWrapper) {
-        return screenFragmentWrapper.g().getActivityState();
+        return screenFragmentWrapper.h().getActivityState();
     }
 
     private final void f() {
         this.needsUpdate = true;
         Context context = getContext();
         Intrinsics.checkNotNull(context, "null cannot be cast to non-null type com.facebook.react.uimanager.ThemedReactContext");
-        ((ThemedReactContext) context).getReactApplicationContext().runOnUiQueueThread(new Runnable() { // from class: com.swmansion.rnscreens.t
+        ((ThemedReactContext) context).getReactApplicationContext().runOnUiQueueThread(new Runnable() { // from class: com.swmansion.rnscreens.y
             @Override // java.lang.Runnable
             public final void run() {
                 ScreenContainer.g(ScreenContainer.this);
@@ -118,17 +118,17 @@ public class ScreenContainer extends ViewGroup {
     }
 
     private final void h(FragmentManager fragmentManager) {
-        FragmentTransaction r10 = fragmentManager.r();
-        Intrinsics.checkNotNullExpressionValue(r10, "beginTransaction(...)");
+        FragmentTransaction s10 = fragmentManager.s();
+        Intrinsics.checkNotNullExpressionValue(s10, "beginTransaction(...)");
         boolean z10 = false;
-        for (Fragment fragment : fragmentManager.A0()) {
-            if ((fragment instanceof w) && ((w) fragment).g().getContainer() == this) {
-                r10.m(fragment);
+        for (Fragment fragment : fragmentManager.B0()) {
+            if ((fragment instanceof b0) && ((b0) fragment).h().getContainer() == this) {
+                s10.n(fragment);
                 z10 = true;
             }
         }
         if (z10) {
-            r10.j();
+            s10.k();
         }
     }
 
@@ -138,7 +138,7 @@ public class ScreenContainer extends ViewGroup {
         ViewParent viewParent = this;
         while (true) {
             z10 = viewParent instanceof ReactRootView;
-            if (z10 || (viewParent instanceof Screen) || viewParent.getParent() == null) {
+            if (z10 || (viewParent instanceof sn.a) || viewParent.getParent() == null) {
                 break;
             }
             viewParent = viewParent.getParent();
@@ -148,11 +148,11 @@ public class ScreenContainer extends ViewGroup {
             ScreenFragmentWrapper fragmentWrapper = ((Screen) viewParent).getFragmentWrapper();
             if (fragmentWrapper != null) {
                 this.parentScreenWrapper = fragmentWrapper;
-                fragmentWrapper.k(this);
+                fragmentWrapper.l(this);
                 FragmentManager childFragmentManager = fragmentWrapper.a().getChildFragmentManager();
                 Intrinsics.checkNotNullExpressionValue(childFragmentManager, "getChildFragmentManager(...)");
                 setFragmentManager(childFragmentManager);
-                unit = Unit.f31765a;
+                unit = Unit.f31987a;
             } else {
                 unit = null;
             }
@@ -160,6 +160,15 @@ public class ScreenContainer extends ViewGroup {
                 return;
             }
             throw new IllegalStateException("Parent Screen does not have its Fragment attached");
+        } else if (viewParent instanceof sn.a) {
+            Fragment associatedFragment = ((sn.a) viewParent).getAssociatedFragment();
+            if (associatedFragment != null) {
+                FragmentManager childFragmentManager2 = associatedFragment.getChildFragmentManager();
+                Intrinsics.checkNotNullExpressionValue(childFragmentManager2, "getChildFragmentManager(...)");
+                setFragmentManager(childFragmentManager2);
+                return;
+            }
+            throw new IllegalStateException(("[RNScreens] Parent " + viewParent + " returned nullish fragment").toString());
         } else if (z10) {
             setFragmentManager(d((ReactRootView) viewParent));
         } else {
@@ -174,7 +183,7 @@ public class ScreenContainer extends ViewGroup {
 
     protected ScreenFragmentWrapper adapt(Screen screen) {
         Intrinsics.checkNotNullParameter(screen, "screen");
-        return new w(screen);
+        return new b0(screen);
     }
 
     public final void addScreen(@NotNull Screen screen, int i10) {
@@ -199,7 +208,7 @@ public class ScreenContainer extends ViewGroup {
             Fragment fragment2 = topScreen.getFragment();
             Intrinsics.checkNotNull(fragment2, "null cannot be cast to non-null type androidx.fragment.app.Fragment");
             b(createTransaction, fragment2);
-            createTransaction.j();
+            createTransaction.k();
             return;
         }
         throw new RuntimeException("[RNScreens] Unable to run transition for less than 2 screens.");
@@ -210,9 +219,9 @@ public class ScreenContainer extends ViewGroup {
     public final FragmentTransaction createTransaction() {
         FragmentManager fragmentManager = this.fragmentManager;
         if (fragmentManager != null) {
-            FragmentTransaction t10 = fragmentManager.r().t(true);
-            Intrinsics.checkNotNullExpressionValue(t10, "setReorderingAllowed(...)");
-            return t10;
+            FragmentTransaction v10 = fragmentManager.s().v(true);
+            Intrinsics.checkNotNullExpressionValue(v10, "setReorderingAllowed(...)");
+            return v10;
         }
         throw new IllegalArgumentException("fragment manager is null when creating transaction");
     }
@@ -222,7 +231,7 @@ public class ScreenContainer extends ViewGroup {
             FragmentTransaction createTransaction = createTransaction();
             ArrayList<ScreenFragmentWrapper> arrayList = this.screenWrappers;
             c(createTransaction, arrayList.get(arrayList.size() - 2).a());
-            createTransaction.j();
+            createTransaction.k();
             return;
         }
         throw new RuntimeException("[RNScreens] Unable to run transition for less than 2 screens.");
@@ -230,7 +239,7 @@ public class ScreenContainer extends ViewGroup {
 
     @NotNull
     public final Screen getScreenAt(int i10) {
-        return this.screenWrappers.get(i10).g();
+        return this.screenWrappers.get(i10).h();
     }
 
     public final int getScreenCount() {
@@ -250,7 +259,7 @@ public class ScreenContainer extends ViewGroup {
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();
-                if (e((ScreenFragmentWrapper) obj) == Screen.ActivityState.f18285i) {
+                if (e((ScreenFragmentWrapper) obj) == Screen.ActivityState.f19034i) {
                     break;
                 }
             } else {
@@ -262,7 +271,7 @@ public class ScreenContainer extends ViewGroup {
         if (screenFragmentWrapper == null) {
             return null;
         }
-        return screenFragmentWrapper.g();
+        return screenFragmentWrapper.h();
     }
 
     public boolean hasScreen(ScreenFragmentWrapper screenFragmentWrapper) {
@@ -280,7 +289,20 @@ public class ScreenContainer extends ViewGroup {
         ScreenFragmentWrapper fragmentWrapper;
         Screen topScreen = getTopScreen();
         if (topScreen != null && (fragmentWrapper = topScreen.getFragmentWrapper()) != null) {
-            fragmentWrapper.l();
+            fragmentWrapper.m();
+        }
+    }
+
+    public final void notifyScreenDetached(@NotNull Screen screen) {
+        Intrinsics.checkNotNullParameter(screen, "screen");
+        if (getContext() instanceof ReactContext) {
+            int surfaceId = UIManagerHelper.getSurfaceId(getContext());
+            Context context = getContext();
+            Intrinsics.checkNotNull(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
+            EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag((ReactContext) context, screen.getId());
+            if (eventDispatcherForReactTag != null) {
+                eventDispatcherForReactTag.dispatchEvent(new qn.h(surfaceId, screen.getId()));
+            }
         }
     }
 
@@ -293,7 +315,7 @@ public class ScreenContainer extends ViewGroup {
             Intrinsics.checkNotNull(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
             EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag((ReactContext) context, topScreen.getId());
             if (eventDispatcherForReactTag != null) {
-                eventDispatcherForReactTag.dispatchEvent(new on.h(surfaceId, topScreen.getId()));
+                eventDispatcherForReactTag.dispatchEvent(new qn.h(surfaceId, topScreen.getId()));
             }
         }
     }
@@ -312,13 +334,13 @@ public class ScreenContainer extends ViewGroup {
     @Override // android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
         FragmentManager fragmentManager = this.fragmentManager;
-        if (fragmentManager != null && !fragmentManager.N0()) {
+        if (fragmentManager != null && !fragmentManager.O0()) {
             h(fragmentManager);
-            fragmentManager.j0();
+            fragmentManager.k0();
         }
         ScreenFragmentWrapper screenFragmentWrapper = this.parentScreenWrapper;
         if (screenFragmentWrapper != null) {
-            screenFragmentWrapper.m(this);
+            screenFragmentWrapper.n(this);
         }
         this.parentScreenWrapper = null;
         super.onDetachedFromWindow();
@@ -357,14 +379,14 @@ public class ScreenContainer extends ViewGroup {
         FragmentTransaction createTransaction = createTransaction();
         FragmentManager fragmentManager = this.fragmentManager;
         if (fragmentManager != null) {
-            HashSet hashSet = new HashSet(fragmentManager.A0());
+            HashSet hashSet = new HashSet(fragmentManager.B0());
             Iterator<ScreenFragmentWrapper> it = this.screenWrappers.iterator();
             Intrinsics.checkNotNullExpressionValue(it, "iterator(...)");
             while (it.hasNext()) {
                 ScreenFragmentWrapper next = it.next();
                 Intrinsics.checkNotNullExpressionValue(next, "next(...)");
                 ScreenFragmentWrapper screenFragmentWrapper = next;
-                if (e(screenFragmentWrapper) == Screen.ActivityState.f18283d && screenFragmentWrapper.a().isAdded()) {
+                if (e(screenFragmentWrapper) == Screen.ActivityState.f19032d && screenFragmentWrapper.a().isAdded()) {
                     c(createTransaction, screenFragmentWrapper.a());
                 }
                 hashSet.remove(screenFragmentWrapper.a());
@@ -372,7 +394,7 @@ public class ScreenContainer extends ViewGroup {
             boolean z11 = false;
             if (!hashSet.isEmpty()) {
                 for (Fragment fragment : (Fragment[]) hashSet.toArray(new Fragment[0])) {
-                    if ((fragment instanceof w) && ((w) fragment).g().getContainer() == null) {
+                    if ((fragment instanceof b0) && ((b0) fragment).h().getContainer() == null) {
                         c(createTransaction, fragment);
                     }
                 }
@@ -389,16 +411,20 @@ public class ScreenContainer extends ViewGroup {
                 ScreenFragmentWrapper next2 = it2.next();
                 Intrinsics.checkNotNullExpressionValue(next2, "next(...)");
                 ScreenFragmentWrapper screenFragmentWrapper2 = next2;
-                Screen.ActivityState e10 = e(screenFragmentWrapper2);
-                Screen.ActivityState activityState = Screen.ActivityState.f18283d;
-                if (e10 != activityState && !screenFragmentWrapper2.a().isAdded()) {
-                    b(createTransaction, screenFragmentWrapper2.a());
-                    z11 = true;
-                } else if (e10 != activityState && z11) {
-                    c(createTransaction, screenFragmentWrapper2.a());
-                    arrayList.add(screenFragmentWrapper2);
+                screenFragmentWrapper2.h().setTransitioning(z10);
+                if (e(screenFragmentWrapper2) != Screen.ActivityState.f19032d) {
+                    if (screenFragmentWrapper2.a().isAdded()) {
+                        if (z11) {
+                            c(createTransaction, screenFragmentWrapper2.a());
+                            arrayList.add(screenFragmentWrapper2);
+                        }
+                    } else if (z11) {
+                        arrayList.add(screenFragmentWrapper2);
+                    } else {
+                        b(createTransaction, screenFragmentWrapper2.a());
+                        z11 = true;
+                    }
                 }
-                screenFragmentWrapper2.g().setTransitioning(z10);
             }
             Iterator it3 = arrayList.iterator();
             Intrinsics.checkNotNullExpressionValue(it3, "iterator(...)");
@@ -407,7 +433,7 @@ public class ScreenContainer extends ViewGroup {
                 Intrinsics.checkNotNullExpressionValue(next3, "next(...)");
                 b(createTransaction, ((ScreenFragmentWrapper) next3).a());
             }
-            createTransaction.j();
+            createTransaction.k();
             return;
         }
         throw new IllegalArgumentException("fragment manager is null when performing update in ScreenContainer");
@@ -416,7 +442,7 @@ public class ScreenContainer extends ViewGroup {
     public final void performUpdates() {
         FragmentManager fragmentManager;
         if (this.needsUpdate && this.isAttached && (fragmentManager = this.fragmentManager) != null) {
-            if (fragmentManager != null && fragmentManager.N0()) {
+            if (fragmentManager != null && fragmentManager.O0()) {
                 return;
             }
             this.needsUpdate = false;
@@ -437,14 +463,14 @@ public class ScreenContainer extends ViewGroup {
         while (it.hasNext()) {
             ScreenFragmentWrapper next = it.next();
             Intrinsics.checkNotNullExpressionValue(next, "next(...)");
-            next.g().setContainer(null);
+            next.h().setContainer(null);
         }
         this.screenWrappers.clear();
         f();
     }
 
     public void removeScreenAt(int i10) {
-        this.screenWrappers.get(i10).g().setContainer(null);
+        this.screenWrappers.get(i10).h().setContainer(null);
         this.screenWrappers.remove(i10);
         f();
     }

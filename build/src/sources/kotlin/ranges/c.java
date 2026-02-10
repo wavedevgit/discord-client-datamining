@@ -2,24 +2,24 @@ package kotlin.ranges;
 
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c extends b implements is.a {
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class c extends b implements rs.a {
     @NotNull
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f31867p = new a(null);
+    public static final a f32089p = new a(null);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final c f31868q = new c(1, 0);
+    private static final c f32090q = new c(1, 0);
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
         public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
         public final c a() {
-            return c.f31868q;
+            return c.f32090q;
         }
 
         private a() {
@@ -53,13 +53,7 @@ public final class c extends b implements is.a {
         return (int) ((31 * (d() ^ (d() >>> 32))) + (e() ^ (e() >>> 32)));
     }
 
-    @Override // is.a
-    /* renamed from: i */
-    public Long c() {
-        return Long.valueOf(e());
-    }
-
-    @Override // kotlin.ranges.b, is.a
+    @Override // kotlin.ranges.b, rs.a
     public boolean isEmpty() {
         if (d() > e()) {
             return true;
@@ -67,8 +61,14 @@ public final class c extends b implements is.a {
         return false;
     }
 
-    @Override // is.a
+    @Override // rs.a
     /* renamed from: j */
+    public Long c() {
+        return Long.valueOf(e());
+    }
+
+    @Override // rs.a
+    /* renamed from: k */
     public Long b() {
         return Long.valueOf(d());
     }

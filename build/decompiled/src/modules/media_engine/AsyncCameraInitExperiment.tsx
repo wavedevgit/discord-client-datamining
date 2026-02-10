@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_engine/AsyncCameraInitExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun94559: for (var _fun94559_ip = 0;;) switch (_fun94559_ip) {
+        _fun94615: for (var _fun94615_ip = 0;;) switch (_fun94615_ip) {
             case 0:
                 var5 = arguments[1];
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun94559_ip = 11;
-                    continue _fun94559
+                    _fun94615_ip = 11;
+                    continue _fun94615
                 }
             case 9:
                 var5 = true;
@@ -55,4 +55,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAsyncCameraInitExperimentConfig = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8062, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8072, 2]);

@@ -8,26 +8,26 @@ import java.nio.ByteBuffer;
 public final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c3.b f4158a;
+    private final c3.b f4168a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final char[] f4159b;
+    private final char[] f4169b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a f4160c = new a(IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET);
+    private final a f4170c = new a(IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Typeface f4161d;
+    private final Typeface f4171d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final SparseArray f4162a;
+        private final SparseArray f4172a;
 
         /* renamed from: b  reason: collision with root package name */
-        private o f4163b;
+        private o f4173b;
 
         private a() {
             this(1);
@@ -35,7 +35,7 @@ public final class m {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a a(int i10) {
-            SparseArray sparseArray = this.f4162a;
+            SparseArray sparseArray = this.f4172a;
             if (sparseArray == null) {
                 return null;
             }
@@ -44,31 +44,31 @@ public final class m {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public final o b() {
-            return this.f4163b;
+            return this.f4173b;
         }
 
         void c(o oVar, int i10, int i11) {
             a a10 = a(oVar.b(i10));
             if (a10 == null) {
                 a10 = new a();
-                this.f4162a.put(oVar.b(i10), a10);
+                this.f4172a.put(oVar.b(i10), a10);
             }
             if (i11 > i10) {
                 a10.c(oVar, i10 + 1, i11);
             } else {
-                a10.f4163b = oVar;
+                a10.f4173b = oVar;
             }
         }
 
         a(int i10) {
-            this.f4162a = new SparseArray(i10);
+            this.f4172a = new SparseArray(i10);
         }
     }
 
     private m(Typeface typeface, c3.b bVar) {
-        this.f4161d = typeface;
-        this.f4158a = bVar;
-        this.f4159b = new char[bVar.k() * 2];
+        this.f4171d = typeface;
+        this.f4168a = bVar;
+        this.f4169b = new char[bVar.k() * 2];
         a(bVar);
     }
 
@@ -76,7 +76,7 @@ public final class m {
         int k10 = bVar.k();
         for (int i10 = 0; i10 < k10; i10++) {
             o oVar = new o(this, i10);
-            Character.toChars(oVar.f(), this.f4159b, i10 * 2);
+            Character.toChars(oVar.f(), this.f4169b, i10 * 2);
             h(oVar);
         }
     }
@@ -91,26 +91,26 @@ public final class m {
     }
 
     public char[] c() {
-        return this.f4159b;
+        return this.f4169b;
     }
 
     public c3.b d() {
-        return this.f4158a;
+        return this.f4168a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int e() {
-        return this.f4158a.l();
+        return this.f4168a.l();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a f() {
-        return this.f4160c;
+        return this.f4170c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Typeface g() {
-        return this.f4161d;
+        return this.f4171d;
     }
 
     void h(o oVar) {
@@ -122,6 +122,6 @@ public final class m {
             z10 = false;
         }
         b2.e.b(z10, "invalid metadata codepoint length");
-        this.f4160c.c(oVar, 0, oVar.c() - 1);
+        this.f4170c.c(oVar, 0, oVar.c() - 1);
     }
 }

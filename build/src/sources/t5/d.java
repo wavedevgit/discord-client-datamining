@@ -5,23 +5,23 @@ import java.util.Arrays;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float[] f50557a;
+    private final float[] f48489a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int[] f50558b;
+    private final int[] f48490b;
 
     public d(float[] fArr, int[] iArr) {
-        this.f50557a = fArr;
-        this.f50558b = iArr;
+        this.f48489a = fArr;
+        this.f48490b = iArr;
     }
 
     private void a(d dVar) {
         int i10 = 0;
         while (true) {
-            int[] iArr = dVar.f50558b;
+            int[] iArr = dVar.f48490b;
             if (i10 < iArr.length) {
-                this.f50557a[i10] = dVar.f50557a[i10];
-                this.f50558b[i10] = iArr[i10];
+                this.f48489a[i10] = dVar.f48489a[i10];
+                this.f48490b[i10] = iArr[i10];
                 i10++;
             } else {
                 return;
@@ -30,19 +30,19 @@ public class d {
     }
 
     private int c(float f10) {
-        int binarySearch = Arrays.binarySearch(this.f50557a, f10);
+        int binarySearch = Arrays.binarySearch(this.f48489a, f10);
         if (binarySearch >= 0) {
-            return this.f50558b[binarySearch];
+            return this.f48490b[binarySearch];
         }
         int i10 = -(binarySearch + 1);
         if (i10 == 0) {
-            return this.f50558b[0];
+            return this.f48490b[0];
         }
-        int[] iArr = this.f50558b;
+        int[] iArr = this.f48490b;
         if (i10 == iArr.length - 1) {
             return iArr[iArr.length - 1];
         }
-        float[] fArr = this.f50557a;
+        float[] fArr = this.f48489a;
         int i11 = i10 - 1;
         float f11 = fArr[i11];
         return y5.b.c((f10 - f11) / (fArr[i10] - f11), iArr[i11], iArr[i10]);
@@ -57,11 +57,11 @@ public class d {
     }
 
     public int[] d() {
-        return this.f50558b;
+        return this.f48490b;
     }
 
     public float[] e() {
-        return this.f50557a;
+        return this.f48489a;
     }
 
     public boolean equals(Object obj) {
@@ -70,7 +70,7 @@ public class d {
         }
         if (obj != null && getClass() == obj.getClass()) {
             d dVar = (d) obj;
-            if (Arrays.equals(this.f50557a, dVar.f50557a) && Arrays.equals(this.f50558b, dVar.f50558b)) {
+            if (Arrays.equals(this.f48489a, dVar.f48489a) && Arrays.equals(this.f48490b, dVar.f48490b)) {
                 return true;
             }
         }
@@ -78,7 +78,7 @@ public class d {
     }
 
     public int f() {
-        return this.f50558b.length;
+        return this.f48490b.length;
     }
 
     public void g(d dVar, d dVar2, float f10) {
@@ -89,24 +89,24 @@ public class d {
             a(dVar);
         } else if (f10 >= 1.0f) {
             a(dVar2);
-        } else if (dVar.f50558b.length == dVar2.f50558b.length) {
+        } else if (dVar.f48490b.length == dVar2.f48490b.length) {
             int i10 = 0;
             while (true) {
-                iArr = dVar.f50558b;
+                iArr = dVar.f48490b;
                 if (i10 >= iArr.length) {
                     break;
                 }
-                this.f50557a[i10] = y5.i.i(dVar.f50557a[i10], dVar2.f50557a[i10], f10);
-                this.f50558b[i10] = y5.b.c(f10, dVar.f50558b[i10], dVar2.f50558b[i10]);
+                this.f48489a[i10] = y5.i.i(dVar.f48489a[i10], dVar2.f48489a[i10], f10);
+                this.f48490b[i10] = y5.b.c(f10, dVar.f48490b[i10], dVar2.f48490b[i10]);
                 i10++;
             }
             int length = iArr.length;
             while (true) {
-                float[] fArr = this.f50557a;
+                float[] fArr = this.f48489a;
                 if (length < fArr.length) {
-                    int[] iArr2 = dVar.f50558b;
+                    int[] iArr2 = dVar.f48490b;
                     fArr[length] = fArr[iArr2.length - 1];
-                    int[] iArr3 = this.f50558b;
+                    int[] iArr3 = this.f48490b;
                     iArr3[length] = iArr3[iArr2.length - 1];
                     length++;
                 } else {
@@ -114,11 +114,11 @@ public class d {
                 }
             }
         } else {
-            throw new IllegalArgumentException("Cannot interpolate between gradients. Lengths vary (" + dVar.f50558b.length + " vs " + dVar2.f50558b.length + ")");
+            throw new IllegalArgumentException("Cannot interpolate between gradients. Lengths vary (" + dVar.f48490b.length + " vs " + dVar2.f48490b.length + ")");
         }
     }
 
     public int hashCode() {
-        return (Arrays.hashCode(this.f50557a) * 31) + Arrays.hashCode(this.f50558b);
+        return (Arrays.hashCode(this.f48489a) * 31) + Arrays.hashCode(this.f48490b);
     }
 }

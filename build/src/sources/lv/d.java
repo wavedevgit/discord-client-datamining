@@ -1,33 +1,39 @@
 package lv;
 
-import android.content.Context;
-import android.os.Build;
-import android.util.Log;
-import lv.a;
+import java.util.Collection;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d {
+public interface d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final String f36696a = "d";
-
-    /* renamed from: b  reason: collision with root package name */
-    private static a f36697b;
-
-    public static a a(Context context, a.b bVar) {
-        a aVar;
-        synchronized (d.class) {
-            if (f36697b == null && Build.VERSION.SDK_INT >= 30 && e.c(context, bVar)) {
-                try {
-                    f36697b = new mv.a(1);
-                } catch (Exception e10) {
-                    Log.e(f36696a, "Exception creating an instance of CronetLoggerImpl", e10);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static boolean a(d dVar, Object obj) {
+            if (obj == null) {
+                return false;
+            }
+            if (obj instanceof Boolean) {
+                return ((Boolean) obj).booleanValue();
+            }
+            if (obj instanceof Number) {
+                if (((Number) obj).doubleValue() == 0.0d) {
+                    return false;
                 }
+                return true;
+            } else if (obj instanceof String) {
+                if (((CharSequence) obj).length() <= 0 || Intrinsics.areEqual(obj, "[]") || Intrinsics.areEqual(obj, "null")) {
+                    return false;
+                }
+                return true;
+            } else if (obj instanceof Collection) {
+                if (((Collection) obj).isEmpty()) {
+                    return false;
+                }
+                return true;
+            } else if ((obj instanceof Object[]) && ((Object[]) obj).length == 0) {
+                return false;
+            } else {
+                return true;
             }
-            if (f36697b == null) {
-                f36697b = new f();
-            }
-            aVar = f36697b;
         }
-        return aVar;
     }
 }

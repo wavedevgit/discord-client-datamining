@@ -4,15 +4,15 @@ import com.google.android.exoplayer2.Format;
 import oe.h0;
 import oe.w0;
 import oe.y;
-import oi.s;
+import qi.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class g implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Format f53504a;
+    public final Format f52533a;
 
     public g(Format format) {
-        this.f53504a = format;
+        this.f52533a = format;
     }
 
     private static String a(int i10) {

@@ -6,7 +6,7 @@ import x5.c;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f53250a = c.a.a("k", "x", "y");
+    private static final c.a f52279a = c.a.a("k", "x", "y");
 
     public static s5.e a(x5.c cVar, l5.i iVar) {
         ArrayList arrayList = new ArrayList();
@@ -31,7 +31,7 @@ public abstract class a {
         boolean z10 = false;
         s5.b bVar2 = null;
         while (cVar.m() != c.b.END_OBJECT) {
-            int p10 = cVar.p(f53250a);
+            int p10 = cVar.p(f52279a);
             if (p10 != 0) {
                 if (p10 != 1) {
                     if (p10 != 2) {

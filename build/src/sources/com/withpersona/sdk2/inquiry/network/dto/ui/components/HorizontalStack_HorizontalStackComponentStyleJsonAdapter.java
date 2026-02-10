@@ -107,7 +107,7 @@ public final class HorizontalStack_HorizontalStackComponentStyleJsonAdapter exte
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -153,7 +153,7 @@ public final class HorizontalStack_HorizontalStackComponentStyleJsonAdapter exte
     public void toJson(@NotNull t writer, HorizontalStack.HorizontalStackComponentStyle horizontalStackComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (horizontalStackComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J(ViewProps.BACKGROUND_COLOR);
             this.nullableHorizontalStackBackgroundColorStyleAdapter.toJson(writer, horizontalStackComponentStyle.getBackgroundColor());
             writer.J(ViewProps.BORDER_WIDTH);

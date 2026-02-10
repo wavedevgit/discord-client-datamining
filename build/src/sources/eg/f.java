@@ -10,7 +10,7 @@ public final class f extends a implements IInterface {
         super(iBinder, "com.google.android.gms.auth.api.phone.internal.ISmsRetrieverApiService");
     }
 
-    public final void h(h hVar) {
+    public final void i(h hVar) {
         Parcel e10 = e();
         e.c(e10, hVar);
         f(1, e10);

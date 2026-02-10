@@ -1,6 +1,5 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import bn.c;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -8,6 +7,7 @@ import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.RemoteImage;
+import dn.c;
 import java.lang.reflect.Constructor;
 import kotlin.Metadata;
 import kotlin.collections.x0;
@@ -77,7 +77,7 @@ public final class RemoteImage_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -135,7 +135,7 @@ public final class RemoteImage_AttributesJsonAdapter extends h {
         String str12 = str;
         Constructor<RemoteImage.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = RemoteImage.Attributes.class.getDeclaredConstructor(String.class, RemoteImage.ContentType.class, String.class, String.class, String.class, RemoteImage.ContentType.class, JsonLogicBoolean.class, Integer.TYPE, c.f7152c);
+            constructor = RemoteImage.Attributes.class.getDeclaredConstructor(String.class, RemoteImage.ContentType.class, String.class, String.class, String.class, RemoteImage.ContentType.class, JsonLogicBoolean.class, Integer.TYPE, c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -152,7 +152,7 @@ public final class RemoteImage_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, RemoteImage.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("localAssetName");
             this.nullableStringAdapter.toJson(writer, attributes.getLocalAssetName());
             writer.J("localAssetContentType");

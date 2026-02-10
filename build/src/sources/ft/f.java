@@ -1,41 +1,53 @@
 package ft;
 
-import jt.e;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import zs.f;
+import java.util.concurrent.Executor;
+import kotlin.coroutines.CoroutineContext;
+import kotlinx.coroutines.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class f implements KSerializer {
+public abstract class f extends s {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final f f23225a = new f();
+    /* renamed from: o  reason: collision with root package name */
+    private final int f24366o;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f23226b = jt.j.b("kotlinx.datetime.LocalDate", e.i.f30484a);
+    /* renamed from: p  reason: collision with root package name */
+    private final int f24367p;
 
-    private f() {
+    /* renamed from: q  reason: collision with root package name */
+    private final long f24368q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private final String f24369r;
+
+    /* renamed from: s  reason: collision with root package name */
+    private a f24370s = Y1();
+
+    public f(int i10, int i11, long j10, String str) {
+        this.f24366o = i10;
+        this.f24367p = i11;
+        this.f24368q = j10;
+        this.f24369r = str;
     }
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public zs.f deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return f.a.b(zs.f.Companion, decoder.z(), null, 2, null);
+    private final a Y1() {
+        return new a(this.f24366o, this.f24367p, this.f24368q, this.f24369r);
     }
 
-    @Override // gt.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, zs.f value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        encoder.E(value.toString());
+    @Override // kotlinx.coroutines.s
+    public Executor P1() {
+        return this.f24370s;
     }
 
-    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f23226b;
+    public final void a2(Runnable runnable, boolean z10, boolean z11) {
+        this.f24370s.s(runnable, z10, z11);
+    }
+
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void b1(CoroutineContext coroutineContext, Runnable runnable) {
+        a.y(this.f24370s, runnable, false, false, 6, null);
+    }
+
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void w1(CoroutineContext coroutineContext, Runnable runnable) {
+        a.y(this.f24370s, runnable, false, true, 2, null);
     }
 }

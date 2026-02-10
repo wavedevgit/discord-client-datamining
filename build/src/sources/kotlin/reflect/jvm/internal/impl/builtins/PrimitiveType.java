@@ -1,5 +1,7 @@
 package kotlin.reflect.jvm.internal.impl.builtins;
 
+import as.l;
+import as.o;
 import java.util.Set;
 import kotlin.Lazy;
 import kotlin.collections.x0;
@@ -9,8 +11,6 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.name.FqName;
 import kotlin.reflect.jvm.internal.impl.name.Name;
 import org.jetbrains.annotations.NotNull;
-import rr.l;
-import rr.o;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -29,22 +29,22 @@ public final class PrimitiveType {
     public static final PrimitiveType SHORT;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ PrimitiveType[] f31907p;
+    private static final /* synthetic */ PrimitiveType[] f32129p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f31908q;
+    private static final /* synthetic */ EnumEntries f32130q;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Name f31909d;
+    private final Name f32131d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Name f31910e;
+    private final Name f32132e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Lazy f31911i;
+    private final Lazy f32133i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Lazy f31912o;
+    private final Lazy f32134o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -72,8 +72,8 @@ public final class PrimitiveType {
         PrimitiveType primitiveType7 = new PrimitiveType("DOUBLE", 7, "Double");
         DOUBLE = primitiveType7;
         PrimitiveType[] a10 = a();
-        f31907p = a10;
-        f31908q = yr.a.a(a10);
+        f32129p = a10;
+        f32130q = hs.a.a(a10);
         Companion = new Companion(null);
         NUMBER_TYPES = x0.i(primitiveType, primitiveType2, primitiveType3, primitiveType4, primitiveType5, primitiveType6, primitiveType7);
     }
@@ -81,13 +81,13 @@ public final class PrimitiveType {
     private PrimitiveType(String str, int i10, String str2) {
         Name identifier = Name.identifier(str2);
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-        this.f31909d = identifier;
+        this.f32131d = identifier;
         Name identifier2 = Name.identifier(str2 + "Array");
         Intrinsics.checkNotNullExpressionValue(identifier2, "identifier(...)");
-        this.f31910e = identifier2;
-        o oVar = o.f49210e;
-        this.f31911i = l.b(oVar, new c(this));
-        this.f31912o = l.b(oVar, new d(this));
+        this.f32132e = identifier2;
+        o oVar = o.f6082e;
+        this.f32133i = l.a(oVar, new c(this));
+        this.f32134o = l.a(oVar, new d(this));
     }
 
     private static final /* synthetic */ PrimitiveType[] a() {
@@ -96,12 +96,12 @@ public final class PrimitiveType {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final FqName f(PrimitiveType primitiveType) {
-        return StandardNames.BUILT_INS_PACKAGE_FQ_NAME.child(primitiveType.f31910e);
+        return StandardNames.BUILT_INS_PACKAGE_FQ_NAME.child(primitiveType.f32132e);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final FqName g(PrimitiveType primitiveType) {
-        return StandardNames.BUILT_INS_PACKAGE_FQ_NAME.child(primitiveType.f31909d);
+        return StandardNames.BUILT_INS_PACKAGE_FQ_NAME.child(primitiveType.f32131d);
     }
 
     public static PrimitiveType valueOf(String str) {
@@ -109,26 +109,26 @@ public final class PrimitiveType {
     }
 
     public static PrimitiveType[] values() {
-        return (PrimitiveType[]) f31907p.clone();
+        return (PrimitiveType[]) f32129p.clone();
     }
 
     @NotNull
     public final FqName getArrayTypeFqName() {
-        return (FqName) this.f31912o.getValue();
+        return (FqName) this.f32134o.getValue();
     }
 
     @NotNull
     public final Name getArrayTypeName() {
-        return this.f31910e;
+        return this.f32132e;
     }
 
     @NotNull
     public final FqName getTypeFqName() {
-        return (FqName) this.f31911i.getValue();
+        return (FqName) this.f32133i.getValue();
     }
 
     @NotNull
     public final Name getTypeName() {
-        return this.f31909d;
+        return this.f32131d;
     }
 }

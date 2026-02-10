@@ -61,7 +61,7 @@ public final class InputCheckbox_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 bool = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
@@ -83,7 +83,7 @@ public final class InputCheckbox_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, InputCheckbox.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("prefill");
             this.nullableBooleanAdapter.toJson(writer, attributes.getPrefill());
             writer.J("label");

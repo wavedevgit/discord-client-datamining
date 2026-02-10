@@ -13,24 +13,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements LifecycleEventListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ReactContext f53443d;
+    private final ReactContext f52472d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function1 f53444e;
+    private final Function1 f52473e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Uri f53445i;
+    private final Uri f52474i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f53446o;
+    private final String f52475o;
 
     /* renamed from: p  reason: collision with root package name */
-    private ContentObserver f53447p;
+    private ContentObserver f52476p;
 
     /* renamed from: wb.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0739a extends ContentObserver {
-        C0739a(Handler handler) {
+    public static final class C0728a extends ContentObserver {
+        C0728a(Handler handler) {
             super(handler);
         }
 
@@ -42,29 +42,29 @@ public final class a implements LifecycleEventListener {
         @Override // android.database.ContentObserver
         public void onChange(boolean z10) {
             super.onChange(z10);
-            a.this.f53444e.invoke(Boolean.valueOf(a.this.d()));
+            a.this.f52473e.invoke(Boolean.valueOf(a.this.d()));
         }
     }
 
     public a(ReactContext reactContext, Function1 onAutoRotateEnabled) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         Intrinsics.checkNotNullParameter(onAutoRotateEnabled, "onAutoRotateEnabled");
-        this.f53443d = reactContext;
-        this.f53444e = onAutoRotateEnabled;
-        this.f53445i = Settings.System.getUriFor("accelerometer_rotation");
-        this.f53446o = "accelerometer_rotation";
+        this.f52472d = reactContext;
+        this.f52473e = onAutoRotateEnabled;
+        this.f52474i = Settings.System.getUriFor("accelerometer_rotation");
+        this.f52475o = "accelerometer_rotation";
         onAutoRotateEnabled.invoke(Boolean.valueOf(d()));
     }
 
-    private final C0739a c() {
+    private final C0728a c() {
         Looper myLooper = Looper.myLooper();
         Intrinsics.checkNotNull(myLooper);
-        return new C0739a(new Handler(myLooper));
+        return new C0728a(new Handler(myLooper));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final boolean d() {
-        if (Settings.System.getInt(this.f53443d.getContentResolver(), this.f53446o, 0) != 1) {
+        if (Settings.System.getInt(this.f52472d.getContentResolver(), this.f52475o, 0) != 1) {
             return false;
         }
         return true;
@@ -72,21 +72,21 @@ public final class a implements LifecycleEventListener {
 
     @Override // com.facebook.react.bridge.LifecycleEventListener
     public void onHostPause() {
-        ContentObserver contentObserver = this.f53447p;
+        ContentObserver contentObserver = this.f52476p;
         if (contentObserver != null) {
-            this.f53443d.getContentResolver().unregisterContentObserver(contentObserver);
+            this.f52472d.getContentResolver().unregisterContentObserver(contentObserver);
         }
-        this.f53447p = null;
+        this.f52476p = null;
     }
 
     @Override // com.facebook.react.bridge.LifecycleEventListener
     public void onHostResume() {
-        C0739a c10 = c();
-        this.f53447p = c10;
+        C0728a c10 = c();
+        this.f52476p = c10;
         if (c10 != null) {
-            this.f53443d.getContentResolver().registerContentObserver(this.f53445i, false, c10);
+            this.f52472d.getContentResolver().registerContentObserver(this.f52474i, false, c10);
         }
-        this.f53444e.invoke(Boolean.valueOf(d()));
+        this.f52473e.invoke(Boolean.valueOf(d()));
     }
 
     @Override // com.facebook.react.bridge.LifecycleEventListener

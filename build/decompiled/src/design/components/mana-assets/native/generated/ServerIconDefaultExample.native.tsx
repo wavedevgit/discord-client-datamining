@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/ServerIconDefaultExample.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53392: for (var _fun53392_ip = 0;;) switch (_fun53392_ip) {
+        _fun53445: for (var _fun53445_ip = 0;;) switch (_fun53445_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun53392_ip = 32;
-                    continue _fun53392
+                    _fun53445_ip = 32;
+                    continue _fun53445
                 }
             case 29:
                 var9 = 100;
             case 32:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun53392_ip = 44;
-                    continue _fun53392
+                    _fun53445_ip = 44;
+                    continue _fun53445
                 }
             case 41:
                 var7 = 100;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ServerIconDefaultExample = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6398, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4714, 6408, 2]);

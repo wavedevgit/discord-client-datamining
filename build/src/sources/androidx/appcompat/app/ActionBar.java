@@ -78,30 +78,30 @@ public abstract class ActionBar {
     public static class a extends ViewGroup.MarginLayoutParams {
 
         /* renamed from: a  reason: collision with root package name */
-        public int f1044a;
+        public int f1045a;
 
         public a(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            this.f1044a = 0;
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f22386t);
-            this.f1044a = obtainStyledAttributes.getInt(f.j.f22391u, 0);
+            this.f1045a = 0;
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23511t);
+            this.f1045a = obtainStyledAttributes.getInt(f.j.f23516u, 0);
             obtainStyledAttributes.recycle();
         }
 
         public a(int i10, int i11) {
             super(i10, i11);
-            this.f1044a = 8388627;
+            this.f1045a = 8388627;
         }
 
         public a(a aVar) {
             super((ViewGroup.MarginLayoutParams) aVar);
-            this.f1044a = 0;
-            this.f1044a = aVar.f1044a;
+            this.f1045a = 0;
+            this.f1045a = aVar.f1045a;
         }
 
         public a(ViewGroup.LayoutParams layoutParams) {
             super(layoutParams);
-            this.f1044a = 0;
+            this.f1045a = 0;
         }
     }
 }

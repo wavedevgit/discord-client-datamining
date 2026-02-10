@@ -3,29 +3,29 @@ package b0;
 final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f6297a;
+    private final long f6401a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f6298b;
+    private final long f6402b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k(long j10, long j11) {
-        this.f6297a = j10;
-        this.f6298b = j11;
+        this.f6401a = j10;
+        this.f6402b = j11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public long a() {
-        return this.f6298b;
+        return this.f6402b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public long b() {
-        return this.f6297a;
+        return this.f6401a;
     }
 
     public String toString() {
-        return this.f6297a + "/" + this.f6298b;
+        return this.f6401a + "/" + this.f6402b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

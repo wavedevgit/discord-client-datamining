@@ -13,13 +13,13 @@ import org.jetbrains.annotations.NotNull;
 public final class AutoClassifyWorker_SupplementaryDataJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18789a;
+    private final m.b f19669a;
 
     public AutoClassifyWorker_SupplementaryDataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(new String[0]);
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18789a = a10;
+        this.f19669a = a10;
     }
 
     @Override // com.squareup.moshi.h
@@ -28,8 +28,8 @@ public final class AutoClassifyWorker_SupplementaryDataJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(reader, "reader");
         reader.u();
         while (reader.hasNext()) {
-            if (reader.J(this.f18789a) == -1) {
-                reader.C0();
+            if (reader.J(this.f19669a) == -1) {
+                reader.z0();
                 reader.T();
             }
         }
@@ -42,7 +42,7 @@ public final class AutoClassifyWorker_SupplementaryDataJsonAdapter extends h {
     public void toJson(t writer, AutoClassifyWorker.SupplementaryData supplementaryData) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (supplementaryData != null) {
-            writer.k();
+            writer.i();
             writer.s();
             return;
         }

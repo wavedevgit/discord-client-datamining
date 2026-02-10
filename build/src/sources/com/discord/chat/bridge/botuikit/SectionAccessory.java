@@ -5,7 +5,7 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
 import org.jetbrains.annotations.NotNull;
-@gt.m(with = Serializer.class)
+@qt.m(with = Serializer.class)
 @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bw\u0018\u0000 \u000b*\b\b\u0000\u0010\u0001*\u00020\u00022\u00020\u0003:\u0005\u0007\b\t\n\u000bR\u0014\u0010\u0004\u001a\u0004\u0018\u00018\u0000X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006\u0082\u0001\u0003\f\r\u000e¨\u0006\u000f"}, d2 = {"Lcom/discord/chat/bridge/botuikit/SectionAccessory;", "T", "Lcom/discord/chat/bridge/botuikit/Component;", "", "component", "getComponent", "()Lcom/discord/chat/bridge/botuikit/Component;", "Button", "Thumbnail", "Unknown", "Serializer", "Companion", "Lcom/discord/chat/bridge/botuikit/SectionAccessory$Button;", "Lcom/discord/chat/bridge/botuikit/SectionAccessory$Thumbnail;", "Lcom/discord/chat/bridge/botuikit/SectionAccessory$Unknown;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface SectionAccessory<T extends Component> {
@@ -23,51 +23,51 @@ public interface SectionAccessory<T extends Component> {
         }
 
         /* renamed from: box-impl  reason: not valid java name */
-        public static final /* synthetic */ Button m271boximpl(ButtonComponent buttonComponent) {
+        public static final /* synthetic */ Button m272boximpl(ButtonComponent buttonComponent) {
             return new Button(buttonComponent);
         }
 
         @NotNull
         /* renamed from: constructor-impl  reason: not valid java name */
-        public static ButtonComponent m272constructorimpl(@NotNull ButtonComponent component) {
+        public static ButtonComponent m273constructorimpl(@NotNull ButtonComponent component) {
             Intrinsics.checkNotNullParameter(component, "component");
             return component;
         }
 
         /* renamed from: equals-impl  reason: not valid java name */
-        public static boolean m273equalsimpl(ButtonComponent buttonComponent, Object obj) {
-            return (obj instanceof Button) && Intrinsics.areEqual(buttonComponent, ((Button) obj).m277unboximpl());
+        public static boolean m274equalsimpl(ButtonComponent buttonComponent, Object obj) {
+            return (obj instanceof Button) && Intrinsics.areEqual(buttonComponent, ((Button) obj).m278unboximpl());
         }
 
         /* renamed from: equals-impl0  reason: not valid java name */
-        public static final boolean m274equalsimpl0(ButtonComponent buttonComponent, ButtonComponent buttonComponent2) {
+        public static final boolean m275equalsimpl0(ButtonComponent buttonComponent, ButtonComponent buttonComponent2) {
             return Intrinsics.areEqual(buttonComponent, buttonComponent2);
         }
 
         /* renamed from: hashCode-impl  reason: not valid java name */
-        public static int m275hashCodeimpl(ButtonComponent buttonComponent) {
+        public static int m276hashCodeimpl(ButtonComponent buttonComponent) {
             return buttonComponent.hashCode();
         }
 
         /* renamed from: toString-impl  reason: not valid java name */
-        public static String m276toStringimpl(ButtonComponent buttonComponent) {
+        public static String m277toStringimpl(ButtonComponent buttonComponent) {
             return "Button(component=" + buttonComponent + ")";
         }
 
         public boolean equals(Object obj) {
-            return m273equalsimpl(this.component, obj);
+            return m274equalsimpl(this.component, obj);
         }
 
         public int hashCode() {
-            return m275hashCodeimpl(this.component);
+            return m276hashCodeimpl(this.component);
         }
 
         public String toString() {
-            return m276toStringimpl(this.component);
+            return m277toStringimpl(this.component);
         }
 
         /* renamed from: unbox-impl  reason: not valid java name */
-        public final /* synthetic */ ButtonComponent m277unboximpl() {
+        public final /* synthetic */ ButtonComponent m278unboximpl() {
             return this.component;
         }
 
@@ -123,7 +123,7 @@ public interface SectionAccessory<T extends Component> {
         @NotNull
         public SectionAccessory<?> toValue(@NotNull Component component) {
             Intrinsics.checkNotNullParameter(component, "component");
-            return component instanceof ButtonComponent ? Button.m271boximpl(Button.m272constructorimpl((ButtonComponent) component)) : component instanceof ThumbnailDisplayComponent ? Thumbnail.m278boximpl(Thumbnail.m279constructorimpl((ThumbnailDisplayComponent) component)) : new Unknown();
+            return component instanceof ButtonComponent ? Button.m272boximpl(Button.m273constructorimpl((ButtonComponent) component)) : component instanceof ThumbnailDisplayComponent ? Thumbnail.m279boximpl(Thumbnail.m280constructorimpl((ThumbnailDisplayComponent) component)) : new Unknown();
         }
     }
 
@@ -138,51 +138,51 @@ public interface SectionAccessory<T extends Component> {
         }
 
         /* renamed from: box-impl  reason: not valid java name */
-        public static final /* synthetic */ Thumbnail m278boximpl(ThumbnailDisplayComponent thumbnailDisplayComponent) {
+        public static final /* synthetic */ Thumbnail m279boximpl(ThumbnailDisplayComponent thumbnailDisplayComponent) {
             return new Thumbnail(thumbnailDisplayComponent);
         }
 
         @NotNull
         /* renamed from: constructor-impl  reason: not valid java name */
-        public static ThumbnailDisplayComponent m279constructorimpl(@NotNull ThumbnailDisplayComponent component) {
+        public static ThumbnailDisplayComponent m280constructorimpl(@NotNull ThumbnailDisplayComponent component) {
             Intrinsics.checkNotNullParameter(component, "component");
             return component;
         }
 
         /* renamed from: equals-impl  reason: not valid java name */
-        public static boolean m280equalsimpl(ThumbnailDisplayComponent thumbnailDisplayComponent, Object obj) {
-            return (obj instanceof Thumbnail) && Intrinsics.areEqual(thumbnailDisplayComponent, ((Thumbnail) obj).m284unboximpl());
+        public static boolean m281equalsimpl(ThumbnailDisplayComponent thumbnailDisplayComponent, Object obj) {
+            return (obj instanceof Thumbnail) && Intrinsics.areEqual(thumbnailDisplayComponent, ((Thumbnail) obj).m285unboximpl());
         }
 
         /* renamed from: equals-impl0  reason: not valid java name */
-        public static final boolean m281equalsimpl0(ThumbnailDisplayComponent thumbnailDisplayComponent, ThumbnailDisplayComponent thumbnailDisplayComponent2) {
+        public static final boolean m282equalsimpl0(ThumbnailDisplayComponent thumbnailDisplayComponent, ThumbnailDisplayComponent thumbnailDisplayComponent2) {
             return Intrinsics.areEqual(thumbnailDisplayComponent, thumbnailDisplayComponent2);
         }
 
         /* renamed from: hashCode-impl  reason: not valid java name */
-        public static int m282hashCodeimpl(ThumbnailDisplayComponent thumbnailDisplayComponent) {
+        public static int m283hashCodeimpl(ThumbnailDisplayComponent thumbnailDisplayComponent) {
             return thumbnailDisplayComponent.hashCode();
         }
 
         /* renamed from: toString-impl  reason: not valid java name */
-        public static String m283toStringimpl(ThumbnailDisplayComponent thumbnailDisplayComponent) {
+        public static String m284toStringimpl(ThumbnailDisplayComponent thumbnailDisplayComponent) {
             return "Thumbnail(component=" + thumbnailDisplayComponent + ")";
         }
 
         public boolean equals(Object obj) {
-            return m280equalsimpl(this.component, obj);
+            return m281equalsimpl(this.component, obj);
         }
 
         public int hashCode() {
-            return m282hashCodeimpl(this.component);
+            return m283hashCodeimpl(this.component);
         }
 
         public String toString() {
-            return m283toStringimpl(this.component);
+            return m284toStringimpl(this.component);
         }
 
         /* renamed from: unbox-impl  reason: not valid java name */
-        public final /* synthetic */ ThumbnailDisplayComponent m284unboximpl() {
+        public final /* synthetic */ ThumbnailDisplayComponent m285unboximpl() {
             return this.component;
         }
 

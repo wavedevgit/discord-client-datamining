@@ -15,7 +15,7 @@ import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputConnectionWrapper;
 import android.view.inputmethod.InputContentInfo;
 import androidx.core.view.ContentInfoCompat;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class e {
 
@@ -24,17 +24,17 @@ public abstract class e {
     public class a extends InputConnectionWrapper {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c f21059a;
+        final /* synthetic */ c f22226a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(InputConnection inputConnection, boolean z10, c cVar) {
             super(inputConnection, z10);
-            this.f21059a = cVar;
+            this.f22226a = cVar;
         }
 
         @Override // android.view.inputmethod.InputConnectionWrapper, android.view.inputmethod.InputConnection
         public boolean commitContent(InputContentInfo inputContentInfo, int i10, Bundle bundle) {
-            if (this.f21059a.a(f.f(inputContentInfo), i10, bundle)) {
+            if (this.f22226a.a(f.f(inputContentInfo), i10, bundle)) {
                 return true;
             }
             return super.commitContent(inputContentInfo, i10, bundle);
@@ -46,17 +46,17 @@ public abstract class e {
     public class b extends InputConnectionWrapper {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c f21060a;
+        final /* synthetic */ c f22227a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(InputConnection inputConnection, boolean z10, c cVar) {
             super(inputConnection, z10);
-            this.f21060a = cVar;
+            this.f22227a = cVar;
         }
 
         @Override // android.view.inputmethod.InputConnectionWrapper, android.view.inputmethod.InputConnection
         public boolean performPrivateCommand(String str, Bundle bundle) {
-            if (e.e(str, bundle, this.f21060a)) {
+            if (e.e(str, bundle, this.f22227a)) {
                 return true;
             }
             return super.performPrivateCommand(str, bundle);
@@ -84,7 +84,7 @@ public abstract class e {
                 return false;
             }
         }
-        if (h0.d0(view, new ContentInfoCompat.a(new ClipData(fVar.b(), new ClipData.Item(fVar.a())), 2).e(fVar.c()).c(bundle).a()) != null) {
+        if (i0.a0(view, new ContentInfoCompat.a(new ClipData(fVar.b(), new ClipData.Item(fVar.a())), 2).e(fVar.c()).c(bundle).a()) != null) {
             return false;
         }
         return true;

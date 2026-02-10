@@ -1,15 +1,11 @@
 package ek;
 
-import androidx.lifecycle.Lifecycle;
-import androidx.lifecycle.o;
-import androidx.lifecycle.w;
-import com.google.android.gms.tasks.Task;
-import java.io.Closeable;
+import hf.q;
+import wj.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface c extends Closeable, o, ff.f {
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    @w(Lifecycle.a.ON_DESTROY)
-    void close();
-
-    Task h(ak.a aVar);
+public abstract class c {
+    public static d a(e eVar) {
+        q.m(eVar, "You must provide a valid FaceDetectorOptions.");
+        return ((fk.d) i.c().a(fk.d.class)).a(eVar);
+    }
 }

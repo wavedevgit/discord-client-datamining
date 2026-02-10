@@ -15,25 +15,25 @@ import java.util.Map;
 public final class h implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28741d;
+    private String f29676d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f28742e;
+    private String f29677e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f28743i;
+    private String f29678i;
 
     /* renamed from: o  reason: collision with root package name */
-    private x f28744o;
+    private x f29679o;
 
     /* renamed from: p  reason: collision with root package name */
-    private x f28745p;
+    private x f29680p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f28746q;
+    private String f29681q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f28747r;
+    private Map f29682r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -98,34 +98,34 @@ public final class h implements w1 {
                         xVar2 = new x.a().a(e3Var, iLogger);
                         break;
                     case 2:
-                        str4 = e3Var.m1();
+                        str4 = e3Var.r1();
                         break;
                     case 3:
-                        str3 = e3Var.m1();
+                        str3 = e3Var.r1();
                         break;
                     case 4:
-                        str2 = e3Var.m1();
+                        str2 = e3Var.r1();
                         break;
                     case 5:
-                        str = e3Var.m1();
+                        str = e3Var.r1();
                         break;
                     default:
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.p1(iLogger, hashMap, o02);
+                        e3Var.u1(iLogger, hashMap, o02);
                         break;
                 }
             }
             e3Var.D();
             if (str != null) {
                 h hVar = new h(str);
-                hVar.f28742e = str2;
-                hVar.f28743i = str3;
-                hVar.f28744o = xVar;
-                hVar.f28745p = xVar2;
-                hVar.f28746q = str4;
-                hVar.f28747r = hashMap;
+                hVar.f29677e = str2;
+                hVar.f29678i = str3;
+                hVar.f29679o = xVar;
+                hVar.f29680p = xVar2;
+                hVar.f29681q = str4;
+                hVar.f29682r = hashMap;
                 return hVar;
             }
             IllegalStateException illegalStateException = new IllegalStateException("Missing required field \"message\"");
@@ -146,7 +146,7 @@ public final class h implements w1 {
             return false;
         }
         h hVar = (h) obj;
-        if (io.sentry.util.y.a(this.f28741d, hVar.f28741d) && io.sentry.util.y.a(this.f28742e, hVar.f28742e) && io.sentry.util.y.a(this.f28743i, hVar.f28743i) && io.sentry.util.y.a(this.f28744o, hVar.f28744o) && io.sentry.util.y.a(this.f28745p, hVar.f28745p) && io.sentry.util.y.a(this.f28746q, hVar.f28746q) && io.sentry.util.y.a(this.f28747r, hVar.f28747r)) {
+        if (io.sentry.util.y.a(this.f29676d, hVar.f29676d) && io.sentry.util.y.a(this.f29677e, hVar.f29677e) && io.sentry.util.y.a(this.f29678i, hVar.f29678i) && io.sentry.util.y.a(this.f29679o, hVar.f29679o) && io.sentry.util.y.a(this.f29680p, hVar.f29680p) && io.sentry.util.y.a(this.f29681q, hVar.f29681q) && io.sentry.util.y.a(this.f29682r, hVar.f29682r)) {
             return true;
         }
         return false;
@@ -154,57 +154,57 @@ public final class h implements w1 {
 
     public void g(String str) {
         if (str.length() > 4096) {
-            this.f28741d = str.substring(0, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT);
+            this.f29676d = str.substring(0, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT);
         } else {
-            this.f28741d = str;
+            this.f29676d = str;
         }
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f28741d, this.f28742e, this.f28743i, this.f28744o, this.f28745p, this.f28746q, this.f28747r);
+        return io.sentry.util.y.b(this.f29676d, this.f29677e, this.f29678i, this.f29679o, this.f29680p, this.f29681q, this.f29682r);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("message").f(this.f28741d);
-        if (this.f28742e != null) {
-            f3Var.e("contact_email").f(this.f28742e);
+        f3Var.e("message").f(this.f29676d);
+        if (this.f29677e != null) {
+            f3Var.e("contact_email").f(this.f29677e);
         }
-        if (this.f28743i != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28743i);
+        if (this.f29678i != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29678i);
         }
-        if (this.f28744o != null) {
+        if (this.f29679o != null) {
             f3Var.e("associated_event_id");
-            this.f28744o.serialize(f3Var, iLogger);
+            this.f29679o.serialize(f3Var, iLogger);
         }
-        if (this.f28745p != null) {
+        if (this.f29680p != null) {
             f3Var.e("replay_id");
-            this.f28745p.serialize(f3Var, iLogger);
+            this.f29680p.serialize(f3Var, iLogger);
         }
-        if (this.f28746q != null) {
-            f3Var.e("url").f(this.f28746q);
+        if (this.f29681q != null) {
+            f3Var.e("url").f(this.f29681q);
         }
-        Map map = this.f28747r;
+        Map map = this.f29682r;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f28747r.get(str));
+                f3Var.e(str).j(iLogger, this.f29682r.get(str));
             }
         }
         f3Var.D();
     }
 
     public String toString() {
-        return "Feedback{message='" + this.f28741d + "', contactEmail='" + this.f28742e + "', name='" + this.f28743i + "', associatedEventId=" + this.f28744o + ", replayId=" + this.f28745p + ", url='" + this.f28746q + "', unknown=" + this.f28747r + '}';
+        return "Feedback{message='" + this.f29676d + "', contactEmail='" + this.f29677e + "', name='" + this.f29678i + "', associatedEventId=" + this.f29679o + ", replayId=" + this.f29680p + ", url='" + this.f29681q + "', unknown=" + this.f29682r + '}';
     }
 
     public h(h hVar) {
-        this.f28741d = hVar.f28741d;
-        this.f28742e = hVar.f28742e;
-        this.f28743i = hVar.f28743i;
-        this.f28744o = hVar.f28744o;
-        this.f28745p = hVar.f28745p;
-        this.f28746q = hVar.f28746q;
-        this.f28747r = io.sentry.util.c.b(hVar.f28747r);
+        this.f29676d = hVar.f29676d;
+        this.f29677e = hVar.f29677e;
+        this.f29678i = hVar.f29678i;
+        this.f29679o = hVar.f29679o;
+        this.f29680p = hVar.f29680p;
+        this.f29681q = hVar.f29681q;
+        this.f29682r = io.sentry.util.c.b(hVar.f29682r);
     }
 }

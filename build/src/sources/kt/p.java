@@ -1,55 +1,42 @@
 package kt;
 
-import kotlin.jvm.functions.Function0;
+import java.util.Arrays;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.reflect.KClass;
-import kotlinx.serialization.KSerializer;
+import kotlin.jvm.internal.TypeIntrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class p implements k2 {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Function1 f35193a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final r f35194b;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a implements Function0 {
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ KClass f35196e;
-
-        public a(KClass kClass) {
-            this.f35196e = kClass;
+public abstract class p {
+    public static final void a(o oVar, Function1[] alternativeFormats, Function1 primaryFormat) {
+        Intrinsics.checkNotNullParameter(oVar, "<this>");
+        Intrinsics.checkNotNullParameter(alternativeFormats, "alternativeFormats");
+        Intrinsics.checkNotNullParameter(primaryFormat, "primaryFormat");
+        if (oVar instanceof b) {
+            ((b) oVar).e((Function1[]) Arrays.copyOf(alternativeFormats, alternativeFormats.length), (Function1) TypeIntrinsics.beforeCheckcastToFunctionOfArity(primaryFormat, 1));
+            return;
         }
-
-        @Override // kotlin.jvm.functions.Function0
-        public final Object invoke() {
-            return new k((KSerializer) p.this.b().invoke(this.f35196e));
-        }
+        throw new IllegalStateException("impossible");
     }
 
-    public p(Function1 compute) {
-        Intrinsics.checkNotNullParameter(compute, "compute");
-        this.f35193a = compute;
-        this.f35194b = new r();
+    public static final void b(o oVar, char c10) {
+        Intrinsics.checkNotNullParameter(oVar, "<this>");
+        oVar.k(String.valueOf(c10));
     }
 
-    @Override // kt.k2
-    public KSerializer a(KClass key) {
-        Intrinsics.checkNotNullParameter(key, "key");
-        Object obj = this.f35194b.get(es.a.b(key));
-        Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
-        e1 e1Var = (e1) obj;
-        Object obj2 = e1Var.f35131a.get();
-        if (obj2 == null) {
-            obj2 = e1Var.a(new a(key));
+    public static final void c(o oVar, String ifZero, Function1 format) {
+        Intrinsics.checkNotNullParameter(oVar, "<this>");
+        Intrinsics.checkNotNullParameter(ifZero, "ifZero");
+        Intrinsics.checkNotNullParameter(format, "format");
+        if (oVar instanceof b) {
+            ((b) oVar).b(ifZero, (Function1) TypeIntrinsics.beforeCheckcastToFunctionOfArity(format, 1));
+            return;
         }
-        return ((k) obj2).f35163a;
+        throw new IllegalStateException("impossible");
     }
 
-    public final Function1 b() {
-        return this.f35193a;
+    public static /* synthetic */ void d(o oVar, String str, Function1 function1, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            str = "";
+        }
+        c(oVar, str, function1);
     }
 }

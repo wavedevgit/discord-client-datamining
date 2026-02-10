@@ -16,19 +16,19 @@ import org.jetbrains.annotations.NotNull;
 public final class DocumentFileData_AttributesJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18636a;
+    private final m.b f19516a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18637b;
+    private final h f19517b;
 
     public DocumentFileData_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("originals");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18636a = a10;
+        this.f19516a = a10;
         h f10 = moshi.f(a0.j(List.class, DocumentFileData.RemoteDocumentFile.class), x0.d(), "originals");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18637b = f10;
+        this.f19517b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -38,13 +38,13 @@ public final class DocumentFileData_AttributesJsonAdapter extends h {
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18636a);
+            int J = reader.J(this.f19516a);
             if (J != -1) {
                 if (J == 0) {
-                    list = (List) this.f18637b.fromJson(reader);
+                    list = (List) this.f19517b.fromJson(reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -57,9 +57,9 @@ public final class DocumentFileData_AttributesJsonAdapter extends h {
     public void toJson(t writer, DocumentFileData.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("originals");
-            this.f18637b.toJson(writer, attributes.a());
+            this.f19517b.toJson(writer, attributes.a());
             writer.s();
             return;
         }

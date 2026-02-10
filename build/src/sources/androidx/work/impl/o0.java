@@ -6,27 +6,27 @@ import kotlin.jvm.internal.Intrinsics;
 public final class o0 implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f5800a;
+    private final u f5810a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r4.b f5801b;
+    private final r4.b f5811b;
 
     public o0(u processor, r4.b workTaskExecutor) {
         Intrinsics.checkNotNullParameter(processor, "processor");
         Intrinsics.checkNotNullParameter(workTaskExecutor, "workTaskExecutor");
-        this.f5800a = processor;
-        this.f5801b = workTaskExecutor;
+        this.f5810a = processor;
+        this.f5811b = workTaskExecutor;
     }
 
     @Override // androidx.work.impl.n0
     public void a(a0 workSpecId, WorkerParameters.a aVar) {
         Intrinsics.checkNotNullParameter(workSpecId, "workSpecId");
-        this.f5801b.d(new q4.q(this.f5800a, workSpecId, aVar));
+        this.f5811b.d(new q4.q(this.f5810a, workSpecId, aVar));
     }
 
     @Override // androidx.work.impl.n0
     public void d(a0 workSpecId, int i10) {
         Intrinsics.checkNotNullParameter(workSpecId, "workSpecId");
-        this.f5801b.d(new q4.r(this.f5800a, workSpecId, false, i10));
+        this.f5811b.d(new q4.r(this.f5810a, workSpecId, false, i10));
     }
 }

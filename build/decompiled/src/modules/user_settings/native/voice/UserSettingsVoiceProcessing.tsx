@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot14 = var0;
     var0 = function() {
-        _fun85344: for (var _fun85344_ip = 0;;) switch (_fun85344_ip) {
+        _fun85400: for (var _fun85400_ip = 0;;) switch (_fun85400_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -165,8 +165,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var1.noiseCancellation;
                 var12 = var1.noiseSuppression;
                 if (var0) {
-                    _fun85344_ip = 241;
-                    continue _fun85344
+                    _fun85400_ip = 241;
+                    continue _fun85400
                 }
             case 82:
                 var2 = _closure1_slot6;
@@ -200,19 +200,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.subLabel = var5;
                 var0.value = var12;
                 var3 = function arg0() {
-                    _fun85346: for (var _fun85346_ip = 0;;) switch (_fun85346_ip) {
+                    _fun85402: for (var _fun85402_ip = 0;;) switch (_fun85402_ip) {
                         case 0:
                             var2 = _closure1_slot13;
                             var0 = _closure1_slot10;
                             var1 = arg0;
                             if (var1) {
-                                _fun85346_ip = 25;
-                                continue _fun85346
+                                _fun85402_ip = 25;
+                                continue _fun85402
                             }
                         case 17:
                             var1 = var0.NONE;
-                            _fun85346_ip = 31;
-                            continue _fun85346;
+                            _fun85402_ip = 31;
+                            continue _fun85402;
                         case 25:
                             var1 = var0.STANDARD;
                         case 31:
@@ -223,8 +223,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0.onValueChange = var3;
                 var0 = var2.bind(var4)(var1, var0);
-                _fun85344_ip = 743;
-                continue _fun85344;
+                _fun85400_ip = 743;
+                continue _fun85400;
             case 241:
                 var3 = _closure1_slot8;
                 var2 = _closure1_slot7;
@@ -315,8 +315,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.label = var13;
                 var11 = !var11;
                 if (!var11) {
-                    _fun85344_ip = 647;
-                    continue _fun85344
+                    _fun85400_ip = 647;
+                    continue _fun85400
                 }
             case 644:
                 var11 = !var12;
@@ -407,7 +407,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 'modules/user_settings/native/voice/UserSettingsVoiceProcessing.tsx';
     var7 = var8.bind(var9)(var7);
     var6 = function() {
-        _fun85347: for (var _fun85347_ip = 0;;) switch (_fun85347_ip) {
+        _fun85403: for (var _fun85403_ip = 0;;) switch (_fun85403_ip) {
             case 0:
                 var11 = _closure1_slot0;
                 var8 = _closure1_slot2;
@@ -553,8 +553,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var12.bind(var3)(var11, var8);
                 var4[6] = var8;
                 if (!var5) {
-                    _fun85347_ip = 702;
-                    continue _fun85347
+                    _fun85403_ip = 702;
+                    continue _fun85403
                 }
             case 554:
                 var8 = _closure1_slot6;
@@ -615,4 +615,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.handleNoiseSuppressionChange = var3;
     var2.NoiseSuppressionOpt = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3477, 660, 33, 8255, 1297, 5431, 566, 1234, 8528, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3477, 660, 33, 8265, 1297, 5441, 566, 1234, 8538, 2]);

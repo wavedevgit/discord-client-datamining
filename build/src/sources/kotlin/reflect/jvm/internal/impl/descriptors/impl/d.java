@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class d implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyPackageViewDescriptorImpl f32347d;
+    private final LazyPackageViewDescriptorImpl f32569d;
 
     public d(LazyPackageViewDescriptorImpl lazyPackageViewDescriptorImpl) {
-        this.f32347d = lazyPackageViewDescriptorImpl;
+        this.f32569d = lazyPackageViewDescriptorImpl;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List f10;
-        f10 = LazyPackageViewDescriptorImpl.f(this.f32347d);
+        f10 = LazyPackageViewDescriptorImpl.f(this.f32569d);
         return f10;
     }
 }

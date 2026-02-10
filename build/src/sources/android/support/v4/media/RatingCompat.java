@@ -9,10 +9,10 @@ public final class RatingCompat implements Parcelable {
     public static final Parcelable.Creator<RatingCompat> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f894d;
+    private final int f895d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f895e;
+    private final float f896e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Parcelable.Creator {
@@ -33,22 +33,22 @@ public final class RatingCompat implements Parcelable {
     }
 
     RatingCompat(int i10, float f10) {
-        this.f894d = i10;
-        this.f895e = f10;
+        this.f895d = i10;
+        this.f896e = f10;
     }
 
     @Override // android.os.Parcelable
     public int describeContents() {
-        return this.f894d;
+        return this.f895d;
     }
 
     public String toString() {
         String valueOf;
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Rating:style=");
-        sb2.append(this.f894d);
+        sb2.append(this.f895d);
         sb2.append(" rating=");
-        float f10 = this.f895e;
+        float f10 = this.f896e;
         if (f10 < 0.0f) {
             valueOf = "unrated";
         } else {
@@ -60,7 +60,7 @@ public final class RatingCompat implements Parcelable {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeInt(this.f894d);
-        parcel.writeFloat(this.f895e);
+        parcel.writeInt(this.f895d);
+        parcel.writeFloat(this.f896e);
     }
 }

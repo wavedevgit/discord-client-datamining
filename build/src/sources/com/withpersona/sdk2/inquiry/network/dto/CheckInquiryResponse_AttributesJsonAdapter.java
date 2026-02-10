@@ -67,7 +67,7 @@ public final class CheckInquiryResponse_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -81,7 +81,7 @@ public final class CheckInquiryResponse_AttributesJsonAdapter extends h {
                     if (nextStep != null) {
                         break;
                     } else {
-                        throw bn.c.x("nextStep", "nextStep", reader);
+                        throw dn.c.x("nextStep", "nextStep", reader);
                     }
                 case 3:
                     map = (Map) this.nullableMapOfStringInquiryFieldAdapter.fromJson(reader);
@@ -91,7 +91,7 @@ public final class CheckInquiryResponse_AttributesJsonAdapter extends h {
                     if (waitForTransitionConfig != null) {
                         break;
                     } else {
-                        throw bn.c.x("waitForTransitionConfig", "waitForTransition", reader);
+                        throw dn.c.x("waitForTransitionConfig", "waitForTransition", reader);
                     }
                 case 5:
                     str3 = (String) this.nullableStringAdapter.fromJson(reader);
@@ -103,16 +103,16 @@ public final class CheckInquiryResponse_AttributesJsonAdapter extends h {
             if (waitForTransitionConfig != null) {
                 return new CheckInquiryResponse.Attributes(str, str2, nextStep, map, waitForTransitionConfig, str3);
             }
-            throw bn.c.o("waitForTransitionConfig", "waitForTransition", reader);
+            throw dn.c.o("waitForTransitionConfig", "waitForTransition", reader);
         }
-        throw bn.c.o("nextStep", "nextStep", reader);
+        throw dn.c.o("nextStep", "nextStep", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, CheckInquiryResponse.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("selectedCountryCode");
             this.nullableStringAdapter.toJson(writer, attributes.getSelectedCountryCode());
             writer.J("status");

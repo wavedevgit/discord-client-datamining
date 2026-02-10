@@ -63,7 +63,7 @@ public final class CapturePageConfigJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -83,7 +83,7 @@ public final class CapturePageConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, CapturePageConfig capturePageConfig) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (capturePageConfig != null) {
-            writer.k();
+            writer.i();
             writer.J("side");
             this.nullableStringAdapter.toJson(writer, capturePageConfig.getSide());
             writer.J("manualCaptureConfig");

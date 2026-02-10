@@ -22,22 +22,22 @@ import org.jetbrains.annotations.NotNull;
 public final class NewCapturedType extends SimpleType implements CapturedTypeMarker {
 
     /* renamed from: e  reason: collision with root package name */
-    private final CaptureStatus f34416e;
+    private final CaptureStatus f34638e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final NewCapturedTypeConstructor f34417i;
+    private final NewCapturedTypeConstructor f34639i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final UnwrappedType f34418o;
+    private final UnwrappedType f34640o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final TypeAttributes f34419p;
+    private final TypeAttributes f34641p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f34420q;
+    private final boolean f34642q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f34421r;
+    private final boolean f34643r;
 
     public /* synthetic */ NewCapturedType(CaptureStatus captureStatus, NewCapturedTypeConstructor newCapturedTypeConstructor, UnwrappedType unwrappedType, TypeAttributes typeAttributes, boolean z10, boolean z11, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(captureStatus, newCapturedTypeConstructor, unwrappedType, (i10 & 8) != 0 ? TypeAttributes.Companion.getEmpty() : typeAttributes, (i10 & 16) != 0 ? false : z10, (i10 & 32) != 0 ? false : z11);
@@ -52,16 +52,16 @@ public final class NewCapturedType extends SimpleType implements CapturedTypeMar
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     @NotNull
     public TypeAttributes getAttributes() {
-        return this.f34419p;
+        return this.f34641p;
     }
 
     @NotNull
     public final CaptureStatus getCaptureStatus() {
-        return this.f34416e;
+        return this.f34638e;
     }
 
     public final UnwrappedType getLowerType() {
-        return this.f34418o;
+        return this.f34640o;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -72,51 +72,51 @@ public final class NewCapturedType extends SimpleType implements CapturedTypeMar
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     public boolean isMarkedNullable() {
-        return this.f34420q;
+        return this.f34642q;
     }
 
     public final boolean isProjectionNotNull() {
-        return this.f34421r;
+        return this.f34643r;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     @NotNull
     public NewCapturedTypeConstructor getConstructor() {
-        return this.f34417i;
+        return this.f34639i;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
     @NotNull
     public SimpleType replaceAttributes(@NotNull TypeAttributes newAttributes) {
         Intrinsics.checkNotNullParameter(newAttributes, "newAttributes");
-        return new NewCapturedType(this.f34416e, getConstructor(), this.f34418o, newAttributes, isMarkedNullable(), this.f34421r);
+        return new NewCapturedType(this.f34638e, getConstructor(), this.f34640o, newAttributes, isMarkedNullable(), this.f34643r);
     }
 
     public NewCapturedType(@NotNull CaptureStatus captureStatus, @NotNull NewCapturedTypeConstructor constructor, UnwrappedType unwrappedType, @NotNull TypeAttributes attributes, boolean z10, boolean z11) {
         Intrinsics.checkNotNullParameter(captureStatus, "captureStatus");
         Intrinsics.checkNotNullParameter(constructor, "constructor");
         Intrinsics.checkNotNullParameter(attributes, "attributes");
-        this.f34416e = captureStatus;
-        this.f34417i = constructor;
-        this.f34418o = unwrappedType;
-        this.f34419p = attributes;
-        this.f34420q = z10;
-        this.f34421r = z11;
+        this.f34638e = captureStatus;
+        this.f34639i = constructor;
+        this.f34640o = unwrappedType;
+        this.f34641p = attributes;
+        this.f34642q = z10;
+        this.f34643r = z11;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
     @NotNull
     public NewCapturedType makeNullableAsSpecified(boolean z10) {
-        return new NewCapturedType(this.f34416e, getConstructor(), this.f34418o, getAttributes(), z10, false, 32, null);
+        return new NewCapturedType(this.f34638e, getConstructor(), this.f34640o, getAttributes(), z10, false, 32, null);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType, kotlin.reflect.jvm.internal.impl.types.KotlinType
     @NotNull
     public NewCapturedType refine(@NotNull KotlinTypeRefiner kotlinTypeRefiner) {
         Intrinsics.checkNotNullParameter(kotlinTypeRefiner, "kotlinTypeRefiner");
-        CaptureStatus captureStatus = this.f34416e;
+        CaptureStatus captureStatus = this.f34638e;
         NewCapturedTypeConstructor refine = getConstructor().refine(kotlinTypeRefiner);
-        UnwrappedType unwrappedType = this.f34418o;
+        UnwrappedType unwrappedType = this.f34640o;
         return new NewCapturedType(captureStatus, refine, unwrappedType != null ? kotlinTypeRefiner.refineType((KotlinTypeMarker) unwrappedType).unwrap() : null, getAttributes(), isMarkedNullable(), false, 32, null);
     }
 

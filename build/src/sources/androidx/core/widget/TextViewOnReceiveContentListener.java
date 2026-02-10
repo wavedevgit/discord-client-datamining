@@ -9,10 +9,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import androidx.core.view.ContentInfoCompat;
-import androidx.core.view.w;
+import androidx.core.view.x;
 import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public final class TextViewOnReceiveContentListener implements w {
+public final class TextViewOnReceiveContentListener implements x {
     private static CharSequence b(Context context, ClipData.Item item, int i10) {
         if ((i10 & 1) != 0) {
             CharSequence coerceToText = item.coerceToText(context);
@@ -33,7 +33,7 @@ public final class TextViewOnReceiveContentListener implements w {
         editable.replace(max, max2, charSequence);
     }
 
-    @Override // androidx.core.view.w
+    @Override // androidx.core.view.x
     public ContentInfoCompat a(View view, ContentInfoCompat contentInfoCompat) {
         if (Log.isLoggable("ReceiveContent", 3)) {
             Log.d("ReceiveContent", "onReceive: " + contentInfoCompat);

@@ -1,7 +1,7 @@
 package com.discord.chat.presentation.message.view.botuikit.components;
 
 import android.view.View;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import com.discord.chat.bridge.botuikit.CheckpointCardClickable;
 import com.discord.chat.bridge.botuikit.CheckpointDataV2025;
 import com.discord.chat.presentation.message.view.botuikit.ComponentContext;
@@ -29,12 +29,12 @@ public final class CheckpointCardComponentViewKt {
         } else {
             z10 = false;
         }
-        h0.G0(view, z10);
+        i0.z0(view, z10);
         view.setClickable(z10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void applyClickable$lambda$0(ComponentContext componentContext, CheckpointDataV2025 checkpointDataV2025, View view) {
-        componentContext.getComponentActionEventHandlers().getOnTapCheckpointCard().invoke(UserId.m1135boximpl(checkpointDataV2025.m260getAuthorIdre6GcUE()));
+        componentContext.getComponentActionEventHandlers().getOnTapCheckpointCard().invoke(UserId.m1136boximpl(checkpointDataV2025.m261getAuthorIdre6GcUE()));
     }
 }

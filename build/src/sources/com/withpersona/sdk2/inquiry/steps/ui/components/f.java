@@ -1,5 +1,6 @@
 package com.withpersona.sdk2.inquiry.steps.ui.components;
 
+import as.p;
 import com.google.android.material.button.MaterialButton;
 import com.withpersona.sdk2.inquiry.network.dto.ui.BaseButtonAttributes;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.ActionButton;
@@ -44,25 +45,6 @@ import com.withpersona.sdk2.inquiry.network.dto.ui.components.UnknownComponentCo
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.VerifyPersonaButton;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.BaseButtonComponentStyle;
 import com.withpersona.sdk2.inquiry.shared.ui.ButtonWithLoadingIndicator;
-import gq.c4;
-import gq.c5;
-import gq.e5;
-import gq.f0;
-import gq.f4;
-import gq.h;
-import gq.h5;
-import gq.i;
-import gq.i0;
-import gq.i4;
-import gq.k2;
-import gq.k5;
-import gq.l5;
-import gq.m;
-import gq.m5;
-import gq.o;
-import gq.q5;
-import gq.x4;
-import gq.y;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -75,7 +57,25 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
-import rr.p;
+import pq.c4;
+import pq.c5;
+import pq.e5;
+import pq.f0;
+import pq.f4;
+import pq.h;
+import pq.h5;
+import pq.i;
+import pq.i0;
+import pq.i4;
+import pq.k2;
+import pq.k5;
+import pq.l5;
+import pq.m;
+import pq.m5;
+import pq.o;
+import pq.q5;
+import pq.x4;
+import pq.y;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class f {
 
@@ -83,7 +83,7 @@ public abstract class f {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f19885a;
+        public static final /* synthetic */ int[] f20765a;
 
         static {
             int[] iArr = new int[Button.ButtonType.values().length];
@@ -95,7 +95,7 @@ public abstract class f {
                 iArr[Button.ButtonType.SECONDARY.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f19885a = iArr;
+            f20765a = iArr;
         }
     }
 
@@ -162,7 +162,7 @@ public abstract class f {
             if (attributes != null) {
                 materialButton.setText(attributes.getText());
             }
-            uiComponentHelper.d(new Function0() { // from class: gq.o5
+            uiComponentHelper.d(new Function0() { // from class: pq.o5
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit e10;
@@ -182,8 +182,8 @@ public abstract class f {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit e(MaterialButton materialButton, BaseButtonComponentStyle baseButtonComponentStyle) {
-        lq.e.f(materialButton, baseButtonComponentStyle, false, false, 6, null);
-        return Unit.f31765a;
+        uq.e.f(materialButton, baseButtonComponentStyle, false, false, 6, null);
+        return Unit.f31987a;
     }
 
     public static final ButtonWithLoadingIndicator f(h hVar, m5 uiComponentHelper, Button config) {
@@ -197,7 +197,7 @@ public abstract class f {
             if (attributes != null) {
                 buttonWithLoadingIndicator.setText(attributes.getText());
             }
-            uiComponentHelper.d(new Function0() { // from class: gq.n5
+            uiComponentHelper.d(new Function0() { // from class: pq.n5
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit g10;
@@ -217,8 +217,8 @@ public abstract class f {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit g(ButtonWithLoadingIndicator buttonWithLoadingIndicator, BaseButtonComponentStyle baseButtonComponentStyle) {
-        lq.e.d(buttonWithLoadingIndicator, baseButtonComponentStyle);
-        return Unit.f31765a;
+        uq.e.d(buttonWithLoadingIndicator, baseButtonComponentStyle);
+        return Unit.f31987a;
     }
 
     private static final int h(Button button) {
@@ -233,18 +233,18 @@ public abstract class f {
         if (buttonType == null) {
             i10 = -1;
         } else {
-            i10 = a.f19885a[buttonType.ordinal()];
+            i10 = a.f20765a[buttonType.ordinal()];
         }
         if (i10 != -1) {
             if (i10 != 1) {
                 if (i10 == 2) {
-                    return kp.a.f34901a;
+                    return tp.a.f49752a;
                 }
                 throw new p();
             }
-            return bh.b.f6650x;
+            return bh.b.f6763z;
         }
-        return bh.b.f6650x;
+        return bh.b.f6763z;
     }
 
     public static final List i(List list) {
@@ -289,12 +289,12 @@ public abstract class f {
     public static final k5 l(UiComponentConfig uiComponentConfig) {
         Intrinsics.checkNotNullParameter(uiComponentConfig, "<this>");
         if (uiComponentConfig instanceof Branding) {
-            return new gq.e((Branding) uiComponentConfig);
+            return new pq.e((Branding) uiComponentConfig);
         }
         if (uiComponentConfig instanceof Button) {
             Button button = (Button) uiComponentConfig;
             if (button instanceof ActionButton) {
-                return new gq.a((ActionButton) uiComponentConfig);
+                return new pq.a((ActionButton) uiComponentConfig);
             }
             if (button instanceof CancelButton) {
                 return new i((CancelButton) uiComponentConfig);
@@ -352,19 +352,19 @@ public abstract class f {
                     return new InputMaskedTextComponent((InputMaskedText) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputMultiSelect) {
-                    return d.f19861w.a((InputMultiSelect) uiComponentConfig);
+                    return d.f20741w.a((InputMultiSelect) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputNumber) {
                     return new InputNumberComponent((InputNumber) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputPhoneNumber) {
-                    return InputPhoneNumberComponent.f19796w.a((InputPhoneNumber) uiComponentConfig);
+                    return InputPhoneNumberComponent.f20676w.a((InputPhoneNumber) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputRadioGroup) {
                     return new InputRadioGroupComponent((InputRadioGroup) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputSelect) {
-                    return e.f19873w.a((InputSelect) uiComponentConfig);
+                    return e.f20753w.a((InputSelect) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputText) {
                     return new InputTextComponent((InputText) uiComponentConfig);
@@ -394,7 +394,7 @@ public abstract class f {
                     return new h5((Title) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof CreatePersonaSheet) {
-                    return com.withpersona.sdk2.inquiry.steps.ui.components.a.f19829t.a((CreatePersonaSheet) uiComponentConfig);
+                    return com.withpersona.sdk2.inquiry.steps.ui.components.a.f20709t.a((CreatePersonaSheet) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputCurrency) {
                     return new InputCurrencyComponent((InputCurrency) uiComponentConfig);
@@ -420,7 +420,7 @@ public abstract class f {
             if (k5Var2 instanceof l5) {
                 if (!Intrinsics.areEqual(k5Var2, old)) {
                     l5 l5Var = (l5) k5Var2;
-                    k5Var2 = l5Var.O0(m(l5Var.getChildren(), old, k5Var));
+                    k5Var2 = l5Var.S0(m(l5Var.getChildren(), old, k5Var));
                     arrayList.add(k5Var2);
                 }
                 k5Var2 = k5Var;

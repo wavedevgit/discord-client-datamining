@@ -57,17 +57,17 @@ public final class NextStep_Document_LocalizationsJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 pendingPage = (NextStep.Document.PendingPage) this.pendingPageAdapter.fromJson(reader);
                 if (pendingPage == null) {
-                    throw bn.c.x("pendingPage", "pendingPage", reader);
+                    throw dn.c.x("pendingPage", "pendingPage", reader);
                 }
             } else if (J == 1) {
                 promptPage = (NextStep.Document.PromptPage) this.promptPageAdapter.fromJson(reader);
                 if (promptPage == null) {
-                    throw bn.c.x("promptPage", "promptPage", reader);
+                    throw dn.c.x("promptPage", "promptPage", reader);
                 }
             } else if (J == 2) {
                 cancelDialog = (NextStep.CancelDialog) this.nullableCancelDialogAdapter.fromJson(reader);
@@ -78,16 +78,16 @@ public final class NextStep_Document_LocalizationsJsonAdapter extends h {
             if (promptPage != null) {
                 return new NextStep.Document.Localizations(pendingPage, promptPage, cancelDialog);
             }
-            throw bn.c.o("promptPage", "promptPage", reader);
+            throw dn.c.o("promptPage", "promptPage", reader);
         }
-        throw bn.c.o("pendingPage", "pendingPage", reader);
+        throw dn.c.o("pendingPage", "pendingPage", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.Document.Localizations localizations) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (localizations != null) {
-            writer.k();
+            writer.i();
             writer.J("pendingPage");
             this.pendingPageAdapter.toJson(writer, localizations.getPendingPage());
             writer.J("promptPage");

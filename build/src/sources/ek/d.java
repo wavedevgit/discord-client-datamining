@@ -1,23 +1,15 @@
 package ek;
 
-import java.util.concurrent.Executor;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.o;
+import androidx.lifecycle.w;
+import com.google.android.gms.tasks.Task;
+import java.io.Closeable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface d {
-    Executor a();
+public interface d extends Closeable, o, ff.f {
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    @w(Lifecycle.a.ON_DESTROY)
+    void close();
 
-    String b();
-
-    String c();
-
-    boolean d();
-
-    int e();
-
-    String f();
-
-    String g();
-
-    int h();
-
-    String i();
+    Task e(ck.a aVar);
 }

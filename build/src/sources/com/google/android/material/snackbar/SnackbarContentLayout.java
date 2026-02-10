@@ -9,33 +9,32 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
-import androidx.core.view.h0;
 import bh.d;
 import bh.f;
-import mh.g;
+import oh.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class SnackbarContentLayout extends LinearLayout implements a {
 
     /* renamed from: d  reason: collision with root package name */
-    private TextView f15508d;
+    private TextView f16256d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Button f15509e;
+    private Button f16257e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final TimeInterpolator f15510i;
+    private final TimeInterpolator f16258i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f15511o;
+    private int f16259o;
 
     public SnackbarContentLayout(@NonNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f15510i = g.g(context, bh.b.P, ch.a.f7596b);
+        this.f16258i = g.g(context, bh.b.T, ch.a.f8277b);
     }
 
     private static void d(View view, int i10, int i11) {
-        if (h0.U(view)) {
-            h0.F0(view, h0.E(view), i10, h0.D(view), i11);
+        if (view.isPaddingRelative()) {
+            view.setPaddingRelative(view.getPaddingStart(), i10, view.getPaddingEnd(), i11);
         } else {
             view.setPadding(view.getPaddingLeft(), i10, view.getPaddingRight(), i11);
         }
@@ -49,57 +48,57 @@ public class SnackbarContentLayout extends LinearLayout implements a {
         } else {
             z10 = false;
         }
-        if (this.f15508d.getPaddingTop() == i11 && this.f15508d.getPaddingBottom() == i12) {
+        if (this.f16256d.getPaddingTop() == i11 && this.f16256d.getPaddingBottom() == i12) {
             return z10;
         }
-        d(this.f15508d, i11, i12);
+        d(this.f16256d, i11, i12);
         return true;
     }
 
     @Override // com.google.android.material.snackbar.a
     public void a(int i10, int i11) {
-        this.f15508d.setAlpha(0.0f);
+        this.f16256d.setAlpha(0.0f);
         long j10 = i11;
         long j11 = i10;
-        this.f15508d.animate().alpha(1.0f).setDuration(j10).setInterpolator(this.f15510i).setStartDelay(j11).start();
-        if (this.f15509e.getVisibility() == 0) {
-            this.f15509e.setAlpha(0.0f);
-            this.f15509e.animate().alpha(1.0f).setDuration(j10).setInterpolator(this.f15510i).setStartDelay(j11).start();
+        this.f16256d.animate().alpha(1.0f).setDuration(j10).setInterpolator(this.f16258i).setStartDelay(j11).start();
+        if (this.f16257e.getVisibility() == 0) {
+            this.f16257e.setAlpha(0.0f);
+            this.f16257e.animate().alpha(1.0f).setDuration(j10).setInterpolator(this.f16258i).setStartDelay(j11).start();
         }
     }
 
     @Override // com.google.android.material.snackbar.a
     public void b(int i10, int i11) {
-        this.f15508d.setAlpha(1.0f);
+        this.f16256d.setAlpha(1.0f);
         long j10 = i11;
         long j11 = i10;
-        this.f15508d.animate().alpha(0.0f).setDuration(j10).setInterpolator(this.f15510i).setStartDelay(j11).start();
-        if (this.f15509e.getVisibility() == 0) {
-            this.f15509e.setAlpha(1.0f);
-            this.f15509e.animate().alpha(0.0f).setDuration(j10).setInterpolator(this.f15510i).setStartDelay(j11).start();
+        this.f16256d.animate().alpha(0.0f).setDuration(j10).setInterpolator(this.f16258i).setStartDelay(j11).start();
+        if (this.f16257e.getVisibility() == 0) {
+            this.f16257e.setAlpha(1.0f);
+            this.f16257e.animate().alpha(0.0f).setDuration(j10).setInterpolator(this.f16258i).setStartDelay(j11).start();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c(float f10) {
         if (f10 != 1.0f) {
-            this.f15509e.setTextColor(hh.a.j(hh.a.d(this, bh.b.f6641o), this.f15509e.getCurrentTextColor(), f10));
+            this.f16257e.setTextColor(jh.a.j(jh.a.d(this, bh.b.f6751o), this.f16257e.getCurrentTextColor(), f10));
         }
     }
 
     public Button getActionView() {
-        return this.f15509e;
+        return this.f16257e;
     }
 
     public TextView getMessageView() {
-        return this.f15508d;
+        return this.f16256d;
     }
 
     @Override // android.view.View
     protected void onFinishInflate() {
         super.onFinishInflate();
-        this.f15508d = (TextView) findViewById(f.L);
-        this.f15509e = (Button) findViewById(f.K);
+        this.f16256d = (TextView) findViewById(f.U);
+        this.f16257e = (Button) findViewById(f.T);
     }
 
     @Override // android.widget.LinearLayout, android.view.View
@@ -107,15 +106,15 @@ public class SnackbarContentLayout extends LinearLayout implements a {
         boolean z10;
         super.onMeasure(i10, i11);
         if (getOrientation() != 1) {
-            int dimensionPixelSize = getResources().getDimensionPixelSize(d.f6675g);
-            int dimensionPixelSize2 = getResources().getDimensionPixelSize(d.f6673f);
-            Layout layout = this.f15508d.getLayout();
+            int dimensionPixelSize = getResources().getDimensionPixelSize(d.f6802o);
+            int dimensionPixelSize2 = getResources().getDimensionPixelSize(d.f6800n);
+            Layout layout = this.f16256d.getLayout();
             if (layout != null && layout.getLineCount() > 1) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            if (z10 && this.f15511o > 0 && this.f15509e.getMeasuredWidth() > this.f15511o) {
+            if (z10 && this.f16259o > 0 && this.f16257e.getMeasuredWidth() > this.f16259o) {
                 if (!e(1, dimensionPixelSize, dimensionPixelSize - dimensionPixelSize2)) {
                     return;
                 }
@@ -132,6 +131,6 @@ public class SnackbarContentLayout extends LinearLayout implements a {
     }
 
     public void setMaxInlineActionWidth(int i10) {
-        this.f15511o = i10;
+        this.f16259o = i10;
     }
 }

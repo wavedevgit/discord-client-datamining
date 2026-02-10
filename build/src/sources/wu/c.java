@@ -1,70 +1,115 @@
 package wu;
 
-import java.util.List;
+import android.util.Log;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.concurrent.CopyOnWriteArraySet;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
+import okhttp3.OkHttpClient;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f54067a;
+    public static final c f53985a = new c();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f54068b;
+    private static final CopyOnWriteArraySet f53986b = new CopyOnWriteArraySet();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f54069c;
+    private static final Map f53987c;
 
-    public c(List operationData, Map mappingOperation, Object obj) {
-        Intrinsics.checkNotNullParameter(operationData, "operationData");
-        Intrinsics.checkNotNullParameter(mappingOperation, "mappingOperation");
-        this.f54067a = operationData;
-        this.f54068b = mappingOperation;
-        this.f54069c = obj;
-    }
-
-    public final Map a() {
-        return this.f54068b;
-    }
-
-    public final List b() {
-        return this.f54067a;
-    }
-
-    public final Object c() {
-        return this.f54069c;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof c)) {
-            return false;
-        }
-        c cVar = (c) obj;
-        if (Intrinsics.areEqual(this.f54067a, cVar.f54067a) && Intrinsics.areEqual(this.f54068b, cVar.f54068b) && Intrinsics.areEqual(this.f54069c, cVar.f54069c)) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        int hashCode;
-        int hashCode2 = ((this.f54067a.hashCode() * 31) + this.f54068b.hashCode()) * 31;
-        Object obj = this.f54069c;
-        if (obj == null) {
-            hashCode = 0;
+    static {
+        String str;
+        LinkedHashMap linkedHashMap = new LinkedHashMap();
+        Package r22 = OkHttpClient.class.getPackage();
+        if (r22 != null) {
+            str = r22.getName();
         } else {
-            hashCode = obj.hashCode();
+            str = null;
         }
-        return hashCode2 + hashCode;
+        if (str != null) {
+            linkedHashMap.put(str, "OkHttp");
+        }
+        String name = OkHttpClient.class.getName();
+        Intrinsics.checkNotNullExpressionValue(name, "OkHttpClient::class.java.name");
+        linkedHashMap.put(name, "okhttp.OkHttpClient");
+        String name2 = tu.e.class.getName();
+        Intrinsics.checkNotNullExpressionValue(name2, "Http2::class.java.name");
+        linkedHashMap.put(name2, "okhttp.Http2");
+        String name3 = pu.e.class.getName();
+        Intrinsics.checkNotNullExpressionValue(name3, "TaskRunner::class.java.name");
+        linkedHashMap.put(name3, "okhttp.TaskRunner");
+        linkedHashMap.put("okhttp3.mockwebserver.MockWebServer", "okhttp.MockWebServer");
+        f53987c = o0.w(linkedHashMap);
     }
 
-    public String toString() {
-        List list = this.f54067a;
-        Map map = this.f54068b;
-        Object obj = this.f54069c;
-        return "OccurrenceCheckInputData(operationData=" + list + ", mappingOperation=" + map + ", operationDefault=" + obj + ")";
+    private c() {
+    }
+
+    private final void c(String str, String str2) {
+        Level level;
+        Logger logger = Logger.getLogger(str);
+        if (f53986b.add(logger)) {
+            logger.setUseParentHandlers(false);
+            if (Log.isLoggable(str2, 3)) {
+                level = Level.FINE;
+            } else if (Log.isLoggable(str2, 4)) {
+                level = Level.INFO;
+            } else {
+                level = Level.WARNING;
+            }
+            logger.setLevel(level);
+            logger.addHandler(d.f53988a);
+        }
+    }
+
+    private final String d(String str) {
+        String str2 = (String) f53987c.get(str);
+        if (str2 == null) {
+            return StringsKt.x1(str, 23);
+        }
+        return str2;
+    }
+
+    public final void a(String loggerName, int i10, String message, Throwable th2) {
+        int min;
+        Intrinsics.checkNotNullParameter(loggerName, "loggerName");
+        Intrinsics.checkNotNullParameter(message, "message");
+        String d10 = d(loggerName);
+        if (Log.isLoggable(d10, i10)) {
+            if (th2 != null) {
+                message = message + '\n' + Log.getStackTraceString(th2);
+            }
+            String str = message;
+            int length = str.length();
+            int i11 = 0;
+            while (i11 < length) {
+                int h02 = StringsKt.h0(str, '\n', i11, false, 4, null);
+                if (h02 == -1) {
+                    h02 = length;
+                }
+                while (true) {
+                    min = Math.min(h02, i11 + 4000);
+                    String substring = str.substring(i11, min);
+                    Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
+                    Log.println(i10, d10, substring);
+                    if (min >= h02) {
+                        break;
+                    }
+                    i11 = min;
+                }
+                i11 = min + 1;
+            }
+        }
+    }
+
+    public final void b() {
+        for (Map.Entry entry : f53987c.entrySet()) {
+            c((String) entry.getKey(), (String) entry.getValue());
+        }
     }
 }

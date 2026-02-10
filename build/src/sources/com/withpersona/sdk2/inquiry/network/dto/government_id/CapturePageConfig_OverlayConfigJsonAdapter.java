@@ -52,7 +52,7 @@ public final class CapturePageConfig_OverlayConfigJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
@@ -68,7 +68,7 @@ public final class CapturePageConfig_OverlayConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, CapturePageConfig.OverlayConfig overlayConfig) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (overlayConfig != null) {
-            writer.k();
+            writer.i();
             writer.J("overlay");
             this.nullableRemoteImageAdapter.toJson(writer, overlayConfig.getOverlay());
             writer.J("overlayFallback");

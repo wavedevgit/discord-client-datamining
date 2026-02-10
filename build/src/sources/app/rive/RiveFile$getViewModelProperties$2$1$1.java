@@ -2,6 +2,7 @@ package app.rive;
 
 import app.rive.core.CommandQueue;
 import app.rive.runtime.kotlin.core.ViewModel;
+import gs.b;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -11,7 +12,6 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function1;
 import org.jetbrains.annotations.NotNull;
-import xr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001H\u008a@"}, d2 = {"<anonymous>", "", "Lapp/rive/runtime/kotlin/core/ViewModel$Property;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @e(c = "app.rive.RiveFile$getViewModelProperties$2$1$1", f = "RiveFile.kt", l = {125}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -59,6 +59,6 @@ final class RiveFile$getViewModelProperties$2$1$1 extends k implements Function1
 
     @Override // kotlin.jvm.functions.Function1
     public final Object invoke(Continuation<? super List<ViewModel.Property>> continuation) {
-        return ((RiveFile$getViewModelProperties$2$1$1) create(continuation)).invokeSuspend(Unit.f31765a);
+        return ((RiveFile$getViewModelProperties$2$1$1) create(continuation)).invokeSuspend(Unit.f31987a);
     }
 }

@@ -7,15 +7,15 @@ import android.view.View;
 class h implements TransformationMethod {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TransformationMethod f20507d;
+    private final TransformationMethod f21454d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(TransformationMethod transformationMethod) {
-        this.f20507d = transformationMethod;
+        this.f21454d = transformationMethod;
     }
 
     public TransformationMethod a() {
-        return this.f20507d;
+        return this.f21454d;
     }
 
     @Override // android.text.method.TransformationMethod
@@ -23,7 +23,7 @@ class h implements TransformationMethod {
         if (view.isInEditMode()) {
             return charSequence;
         }
-        TransformationMethod transformationMethod = this.f20507d;
+        TransformationMethod transformationMethod = this.f21454d;
         if (transformationMethod != null) {
             charSequence = transformationMethod.getTransformation(charSequence, view);
         }
@@ -35,7 +35,7 @@ class h implements TransformationMethod {
 
     @Override // android.text.method.TransformationMethod
     public void onFocusChanged(View view, CharSequence charSequence, boolean z10, int i10, Rect rect) {
-        TransformationMethod transformationMethod = this.f20507d;
+        TransformationMethod transformationMethod = this.f21454d;
         if (transformationMethod != null) {
             transformationMethod.onFocusChanged(view, charSequence, z10, i10, rect);
         }

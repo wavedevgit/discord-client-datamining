@@ -45,24 +45,24 @@ public final class Included_FontJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0 && (fontAttributes = (Included.Font.FontAttributes) this.fontAttributesAdapter.fromJson(reader)) == null) {
-                throw bn.c.x("attributes", "attributes", reader);
+                throw dn.c.x("attributes", "attributes", reader);
             }
         }
         reader.D();
         if (fontAttributes != null) {
             return new Included.Font(fontAttributes);
         }
-        throw bn.c.o("attributes", "attributes", reader);
+        throw dn.c.o("attributes", "attributes", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, Included.Font font) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (font != null) {
-            writer.k();
+            writer.i();
             writer.J("attributes");
             this.fontAttributesAdapter.toJson(writer, font.getAttributes());
             writer.s();

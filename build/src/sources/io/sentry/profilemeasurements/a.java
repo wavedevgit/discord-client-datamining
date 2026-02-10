@@ -16,17 +16,17 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class a implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f28645d;
+    private Map f29580d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f28646e;
+    private String f29581e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Collection f28647i;
+    private Collection f29582i;
 
     /* renamed from: io.sentry.profilemeasurements.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0427a implements m1 {
+    public static final class C0402a implements m1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public a a(e3 e3Var, ILogger iLogger) {
@@ -41,17 +41,17 @@ public final class a implements w1 {
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.p1(iLogger, concurrentHashMap, o02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                     } else {
-                        String m12 = e3Var.m1();
-                        if (m12 != null) {
-                            aVar.f28646e = m12;
+                        String r12 = e3Var.r1();
+                        if (r12 != null) {
+                            aVar.f29581e = r12;
                         }
                     }
                 } else {
-                    List f22 = e3Var.f2(iLogger, new b.a());
-                    if (f22 != null) {
-                        aVar.f28647i = f22;
+                    List k22 = e3Var.k2(iLogger, new b.a());
+                    if (k22 != null) {
+                        aVar.f29582i = k22;
                     }
                 }
             }
@@ -66,7 +66,7 @@ public final class a implements w1 {
     }
 
     public void c(Map map) {
-        this.f28645d = map;
+        this.f29580d = map;
     }
 
     public boolean equals(Object obj) {
@@ -75,7 +75,7 @@ public final class a implements w1 {
         }
         if (obj != null && a.class == obj.getClass()) {
             a aVar = (a) obj;
-            if (y.a(this.f28645d, aVar.f28645d) && this.f28646e.equals(aVar.f28646e) && new ArrayList(this.f28647i).equals(new ArrayList(aVar.f28647i))) {
+            if (y.a(this.f29580d, aVar.f29580d) && this.f29581e.equals(aVar.f29581e) && new ArrayList(this.f29582i).equals(new ArrayList(aVar.f29582i))) {
                 return true;
             }
         }
@@ -83,18 +83,18 @@ public final class a implements w1 {
     }
 
     public int hashCode() {
-        return y.b(this.f28645d, this.f28646e, this.f28647i);
+        return y.b(this.f29580d, this.f29581e, this.f29582i);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("unit").j(iLogger, this.f28646e);
-        f3Var.e("values").j(iLogger, this.f28647i);
-        Map map = this.f28645d;
+        f3Var.e("unit").j(iLogger, this.f29581e);
+        f3Var.e("values").j(iLogger, this.f29582i);
+        Map map = this.f29580d;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28645d.get(str);
+                Object obj = this.f29580d.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -103,7 +103,7 @@ public final class a implements w1 {
     }
 
     public a(String str, Collection collection) {
-        this.f28646e = str;
-        this.f28647i = collection;
+        this.f29581e = str;
+        this.f29582i = collection;
     }
 }

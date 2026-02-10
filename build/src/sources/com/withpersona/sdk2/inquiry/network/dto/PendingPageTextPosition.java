@@ -58,7 +58,7 @@ public final class PendingPageTextPosition {
     static {
         PendingPageTextPosition[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = yr.a.a($values);
+        $ENTRIES = hs.a.a($values);
         Companion = new Companion(null);
     }
 

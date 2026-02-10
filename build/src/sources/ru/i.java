@@ -1,105 +1,50 @@
 package ru;
 
-import java.util.ArrayList;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import java.net.Proxy;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Reflection;
-import okio.Sink;
-import okio.Source;
+import okhttp3.HttpUrl;
+import okhttp3.Request;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class i extends h {
+public final class i {
 
-    /* renamed from: e  reason: collision with root package name */
-    private final h f49406e;
+    /* renamed from: a  reason: collision with root package name */
+    public static final i f47772a = new i();
 
-    public i(h delegate) {
-        Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f49406e = delegate;
+    private i() {
     }
 
-    @Override // ru.h
-    public Sink b(c0 file, boolean z10) {
-        Intrinsics.checkNotNullParameter(file, "file");
-        return this.f49406e.b(r(file, "appendingSink", "file"), z10);
-    }
-
-    @Override // ru.h
-    public void c(c0 source, c0 target) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        Intrinsics.checkNotNullParameter(target, "target");
-        this.f49406e.c(r(source, "atomicMove", "source"), r(target, "atomicMove", "target"));
-    }
-
-    @Override // ru.h
-    public void g(c0 dir, boolean z10) {
-        Intrinsics.checkNotNullParameter(dir, "dir");
-        this.f49406e.g(r(dir, "createDirectory", "dir"), z10);
-    }
-
-    @Override // ru.h
-    public void i(c0 path, boolean z10) {
-        Intrinsics.checkNotNullParameter(path, "path");
-        this.f49406e.i(r(path, "delete", "path"), z10);
-    }
-
-    @Override // ru.h
-    public List k(c0 dir) {
-        Intrinsics.checkNotNullParameter(dir, "dir");
-        c0 r10 = r(dir, "list", "dir");
-        ArrayList arrayList = new ArrayList();
-        for (c0 c0Var : this.f49406e.k(r10)) {
-            arrayList.add(s(c0Var, "list"));
+    private final boolean b(Request request, Proxy.Type type) {
+        if (!request.i() && type == Proxy.Type.HTTP) {
+            return true;
         }
-        CollectionsKt.z(arrayList);
-        return arrayList;
+        return false;
     }
 
-    @Override // ru.h
-    public g m(c0 path) {
-        Intrinsics.checkNotNullParameter(path, "path");
-        g m10 = this.f49406e.m(r(path, "metadataOrNull", "path"));
-        if (m10 == null) {
-            return null;
+    public final String a(Request request, Proxy.Type proxyType) {
+        Intrinsics.checkNotNullParameter(request, "request");
+        Intrinsics.checkNotNullParameter(proxyType, "proxyType");
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append(request.j());
+        sb2.append(' ');
+        i iVar = f47772a;
+        if (iVar.b(request, proxyType)) {
+            sb2.append(request.n());
+        } else {
+            sb2.append(iVar.c(request.n()));
         }
-        if (m10.d() == null) {
-            return m10;
+        sb2.append(" HTTP/1.1");
+        String sb3 = sb2.toString();
+        Intrinsics.checkNotNullExpressionValue(sb3, "StringBuilder().apply(builderAction).toString()");
+        return sb3;
+    }
+
+    public final String c(HttpUrl url) {
+        Intrinsics.checkNotNullParameter(url, "url");
+        String d10 = url.d();
+        String f10 = url.f();
+        if (f10 != null) {
+            return d10 + '?' + f10;
         }
-        return g.b(m10, false, false, s(m10.d(), "metadataOrNull"), null, null, null, null, null, 251, null);
-    }
-
-    @Override // ru.h
-    public f n(c0 file) {
-        Intrinsics.checkNotNullParameter(file, "file");
-        return this.f49406e.n(r(file, "openReadOnly", "file"));
-    }
-
-    @Override // ru.h
-    public Sink p(c0 file, boolean z10) {
-        Intrinsics.checkNotNullParameter(file, "file");
-        return this.f49406e.p(r(file, "sink", "file"), z10);
-    }
-
-    @Override // ru.h
-    public Source q(c0 file) {
-        Intrinsics.checkNotNullParameter(file, "file");
-        return this.f49406e.q(r(file, "source", "file"));
-    }
-
-    public c0 r(c0 path, String functionName, String parameterName) {
-        Intrinsics.checkNotNullParameter(path, "path");
-        Intrinsics.checkNotNullParameter(functionName, "functionName");
-        Intrinsics.checkNotNullParameter(parameterName, "parameterName");
-        return path;
-    }
-
-    public c0 s(c0 path, String functionName) {
-        Intrinsics.checkNotNullParameter(path, "path");
-        Intrinsics.checkNotNullParameter(functionName, "functionName");
-        return path;
-    }
-
-    public String toString() {
-        return Reflection.getOrCreateKotlinClass(getClass()).getSimpleName() + '(' + this.f49406e + ')';
+        return d10;
     }
 }

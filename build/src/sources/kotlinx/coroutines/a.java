@@ -7,33 +7,33 @@ import kotlin.jvm.functions.Function2;
 public abstract class a extends b0 implements Job, Continuation, CoroutineScope {
 
     /* renamed from: i  reason: collision with root package name */
-    private final CoroutineContext f34776i;
+    private final CoroutineContext f34998i;
 
     public a(CoroutineContext coroutineContext, boolean z10, boolean z11) {
         super(z11);
         if (z10) {
-            j0((Job) coroutineContext.m(Job.f34774h));
+            k0((Job) coroutineContext.m(Job.f34996k));
         }
-        this.f34776i = coroutineContext.V0(this);
+        this.f34998i = coroutineContext.O0(this);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // kotlinx.coroutines.b0
     public String P() {
-        return ps.e0.a(this) + " was cancelled";
+        return ys.e0.a(this) + " was cancelled";
     }
 
-    protected void S0(Object obj) {
+    protected void V0(Object obj) {
         F(obj);
     }
 
-    protected void T0(Throwable th2, boolean z10) {
+    protected void W0(Throwable th2, boolean z10) {
     }
 
-    protected void U0(Object obj) {
+    protected void X0(Object obj) {
     }
 
-    public final void X0(ps.c0 c0Var, Object obj, Function2 function2) {
+    public final void Y0(ys.c0 c0Var, Object obj, Function2 function2) {
         c0Var.d(function2, obj, this);
     }
 
@@ -44,44 +44,44 @@ public abstract class a extends b0 implements Job, Continuation, CoroutineScope 
 
     @Override // kotlin.coroutines.Continuation
     public final CoroutineContext getContext() {
-        return this.f34776i;
+        return this.f34998i;
     }
 
     @Override // kotlinx.coroutines.CoroutineScope
     public CoroutineContext getCoroutineContext() {
-        return this.f34776i;
+        return this.f34998i;
     }
 
     @Override // kotlinx.coroutines.b0
-    public final void i0(Throwable th2) {
-        ps.a0.a(this.f34776i, th2);
-    }
-
-    @Override // kotlinx.coroutines.b0
-    public String r0() {
-        String g10 = ps.x.g(this.f34776i);
-        if (g10 == null) {
-            return super.r0();
-        }
-        return '\"' + g10 + "\":" + super.r0();
+    public final void j0(Throwable th2) {
+        ys.a0.a(this.f34998i, th2);
     }
 
     @Override // kotlin.coroutines.Continuation
     public final void resumeWith(Object obj) {
-        Object q02 = q0(ps.t.b(obj));
-        if (q02 == c0.f34796b) {
+        Object r02 = r0(ys.t.b(obj));
+        if (r02 == c0.f35018b) {
             return;
         }
-        S0(q02);
+        V0(r02);
     }
 
     @Override // kotlinx.coroutines.b0
-    protected final void w0(Object obj) {
-        if (obj instanceof ps.r) {
-            ps.r rVar = (ps.r) obj;
-            T0(rVar.f44530a, rVar.a());
+    public String s0() {
+        String g10 = ys.x.g(this.f34998i);
+        if (g10 == null) {
+            return super.s0();
+        }
+        return '\"' + g10 + "\":" + super.s0();
+    }
+
+    @Override // kotlinx.coroutines.b0
+    protected final void x0(Object obj) {
+        if (obj instanceof ys.r) {
+            ys.r rVar = (ys.r) obj;
+            W0(rVar.f55816a, rVar.a());
             return;
         }
-        U0(obj);
+        X0(obj);
     }
 }

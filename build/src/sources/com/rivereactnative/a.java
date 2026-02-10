@@ -7,33 +7,33 @@ public abstract class a {
 
     /* renamed from: com.rivereactnative.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0235a extends a {
+    public static final class C0216a extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean f17723a;
+        private final boolean f18472a;
 
-        public C0235a(boolean z10) {
+        public C0216a(boolean z10) {
             super(null);
-            this.f17723a = z10;
+            this.f18472a = z10;
         }
 
         public final boolean a() {
-            return this.f17723a;
+            return this.f18472a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof C0235a) && this.f17723a == ((C0235a) obj).f17723a;
+            return (obj instanceof C0216a) && this.f18472a == ((C0216a) obj).f18472a;
         }
 
         public int hashCode() {
-            return Boolean.hashCode(this.f17723a);
+            return Boolean.hashCode(this.f18472a);
         }
 
         public String toString() {
-            boolean z10 = this.f17723a;
+            boolean z10 = this.f18472a;
             return "AutoBind(autoBind=" + z10 + ")";
         }
     }
@@ -42,7 +42,7 @@ public abstract class a {
     public static final class b extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f17724a = new b();
+        public static final b f18473a = new b();
 
         private b() {
             super(null);
@@ -65,30 +65,30 @@ public abstract class a {
     public static final class c extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f17725a;
+        private final int f18474a;
 
         public c(int i10) {
             super(null);
-            this.f17725a = i10;
+            this.f18474a = i10;
         }
 
         public final int a() {
-            return this.f17725a;
+            return this.f18474a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof c) && this.f17725a == ((c) obj).f17725a;
+            return (obj instanceof c) && this.f18474a == ((c) obj).f18474a;
         }
 
         public int hashCode() {
-            return Integer.hashCode(this.f17725a);
+            return Integer.hashCode(this.f18474a);
         }
 
         public String toString() {
-            int i10 = this.f17725a;
+            int i10 = this.f18474a;
             return "Index(index=" + i10 + ")";
         }
     }
@@ -97,32 +97,32 @@ public abstract class a {
     public static final class d extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f17726a;
+        private final String f18475a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public d(String name) {
             super(null);
             Intrinsics.checkNotNullParameter(name, "name");
-            this.f17726a = name;
+            this.f18475a = name;
         }
 
         public final String a() {
-            return this.f17726a;
+            return this.f18475a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof d) && Intrinsics.areEqual(this.f17726a, ((d) obj).f17726a);
+            return (obj instanceof d) && Intrinsics.areEqual(this.f18475a, ((d) obj).f18475a);
         }
 
         public int hashCode() {
-            return this.f17726a.hashCode();
+            return this.f18475a.hashCode();
         }
 
         public String toString() {
-            String str = this.f17726a;
+            String str = this.f18475a;
             return "Name(name=" + str + ")";
         }
     }

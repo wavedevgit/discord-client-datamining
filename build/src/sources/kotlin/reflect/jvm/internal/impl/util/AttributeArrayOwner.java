@@ -11,11 +11,11 @@ import kotlin.jvm.internal.SourceDebugExtension;
 public abstract class AttributeArrayOwner<K, T> extends AbstractArrayMapOwner<K, T> {
 
     /* renamed from: d  reason: collision with root package name */
-    private ArrayMap f34537d;
+    private ArrayMap f34759d;
 
     protected AttributeArrayOwner(ArrayMap arrayMap) {
         Intrinsics.checkNotNullParameter(arrayMap, "arrayMap");
-        this.f34537d = arrayMap;
+        this.f34759d = arrayMap;
     }
 
     private final String f(ArrayMap arrayMap, int i10, String str) {
@@ -67,7 +67,7 @@ public abstract class AttributeArrayOwner<K, T> extends AbstractArrayMapOwner<K,
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // kotlin.reflect.jvm.internal.impl.util.AbstractArrayMapOwner
     public final ArrayMap b() {
-        return this.f34537d;
+        return this.f34759d;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -76,30 +76,30 @@ public abstract class AttributeArrayOwner<K, T> extends AbstractArrayMapOwner<K,
         Intrinsics.checkNotNullParameter(keyQualifiedName, "keyQualifiedName");
         Intrinsics.checkNotNullParameter(value, "value");
         int id2 = c().getId(keyQualifiedName);
-        int size = this.f34537d.getSize();
+        int size = this.f34759d.getSize();
         if (size != 0) {
             if (size == 1) {
-                ArrayMap arrayMap = this.f34537d;
+                ArrayMap arrayMap = this.f34759d;
                 try {
                     Intrinsics.checkNotNull(arrayMap, "null cannot be cast to non-null type org.jetbrains.kotlin.util.OneElementArrayMap<T of org.jetbrains.kotlin.util.AttributeArrayOwner>");
                     OneElementArrayMap oneElementArrayMap = (OneElementArrayMap) arrayMap;
                     if (oneElementArrayMap.getIndex() == id2) {
-                        this.f34537d = new OneElementArrayMap(value, id2);
+                        this.f34759d = new OneElementArrayMap(value, id2);
                         return;
                     }
                     ArrayMapImpl arrayMapImpl = new ArrayMapImpl();
                     arrayMapImpl.set(oneElementArrayMap.getIndex(), oneElementArrayMap.getValue());
-                    this.f34537d = arrayMapImpl;
+                    this.f34759d = arrayMapImpl;
                 } catch (ClassCastException e10) {
                     throw new IllegalStateException(f(arrayMap, 1, "OneElementArrayMap"), e10);
                 }
             }
-            this.f34537d.set(id2, value);
+            this.f34759d.set(id2, value);
             return;
         }
-        ArrayMap arrayMap2 = this.f34537d;
+        ArrayMap arrayMap2 = this.f34759d;
         if (arrayMap2 instanceof EmptyArrayMap) {
-            this.f34537d = new OneElementArrayMap(value, id2);
+            this.f34759d = new OneElementArrayMap(value, id2);
             return;
         }
         throw new IllegalStateException(f(arrayMap2, 0, "EmptyArrayMap"));

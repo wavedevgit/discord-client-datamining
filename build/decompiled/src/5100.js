@@ -1,282 +1,102 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun45593: for (var _fun45593_ip = 0;;) switch (_fun45593_ip) {
-        case 0:
-            var3 = require;
-            var5 = metroImportDefault;
-            var2 = exports;
-            var4 = dependencyMap;
-            var0 = global;
-            var7 = var0.Object;
-            var6 = var7.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var6.bind(var7)(var2, var0, var1);
-            var0 = 0;
-            var1 = var4[var0];
-            var0 = undefined;
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.Platform;
-            var1 = 1;
-            var1 = var4[var1];
-            var6 = var3.bind(var0)(var1);
-            var1 = var6.isNewArch;
-            var1 = var1.bind(var6)();
-            if (!var1) {
-                _fun45593_ip = 90;
-                continue _fun45593
-            }
-        case 88:
-            var1 = false;
-        case 90:
-            if (var1) {
-                _fun45593_ip = 113;
-                continue _fun45593
-            }
-        case 93:
-            var6 = 3;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var10 = var6.FlashList;
-            _fun45593_ip = 131;
-            continue _fun45593;
-        case 113:
-            var6 = 2;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var10 = var6.FlashList;
-        case 131:
-            if (var1) {
-                _fun45593_ip = 154;
-                continue _fun45593
-            }
-        case 134:
-            var6 = 5;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var9 = var6.useBenchmark;
-            _fun45593_ip = 172;
-            continue _fun45593;
-        case 154:
-            var6 = 4;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var9 = var6.useBenchmark;
-        case 172:
-            if (var1) {
-                _fun45593_ip = 195;
-                continue _fun45593
-            }
-        case 175:
-            var6 = 7;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var8 = var6.MasonryFlashList;
-            _fun45593_ip = 213;
-            continue _fun45593;
-        case 195:
-            var6 = 6;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var8 = var6.MasonryFlashListV2;
-        case 213:
-            if (var1) {
-                _fun45593_ip = 236;
-                continue _fun45593
-            }
-        case 216:
-            var6 = 9;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var7 = var6.JSFPSMonitor;
-            _fun45593_ip = 254;
-            continue _fun45593;
-        case 236:
-            var6 = 8;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var7 = var6.JSFPSMonitor;
-        case 254:
-            if (var1) {
-                _fun45593_ip = 277;
-                continue _fun45593
-            }
-        case 257:
-            var6 = 11;
-            var6 = var4[var6];
-            var6 = var3.bind(var0)(var6);
-            var6 = var6.autoScroll;
-            _fun45593_ip = 295;
-            continue _fun45593;
-        case 277:
-            var11 = 10;
-            var11 = var4[var11];
-            var11 = var3.bind(var0)(var11);
-            var6 = var11.autoScroll;
-        case 295:
-            if (var1) {
-                _fun45593_ip = 318;
-                continue _fun45593
-            }
-        case 298:
-            var1 = 11;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.Cancellable;
-            _fun45593_ip = 336;
-            continue _fun45593;
-        case 318:
-            var11 = 10;
-            var11 = var4[var11];
-            var11 = var3.bind(var0)(var11);
-            var1 = var11.Cancellable;
-        case 336:
-            var2.FlashList = var10;
-            var10 = 3;
-            var10 = var4[var10];
-            var10 = var3.bind(var0)(var10);
-            var10 = var10.FlashList;
-            var2.FlashListV1 = var10;
-            var10 = 12;
-            var11 = var4[var10];
-            var11 = var3.bind(var0)(var11);
-            var11 = var11.ContentStyle;
-            var2.ContentStyle = var11;
-            var11 = var4[var10];
-            var11 = var3.bind(var0)(var11);
-            var11 = var11.ListRenderItem;
-            var2.ListRenderItem = var11;
-            var11 = var4[var10];
-            var11 = var3.bind(var0)(var11);
-            var11 = var11.ListRenderItemInfo;
-            var2.ListRenderItemInfo = var11;
-            var11 = var4[var10];
-            var11 = var3.bind(var0)(var11);
-            var11 = var11.RenderTarget;
-            var2.RenderTarget = var11;
-            var10 = var4[var10];
-            var10 = var3.bind(var0)(var10);
-            var10 = var10.RenderTargetOptions;
-            var2.RenderTargetOptions = var10;
-            var10 = 13;
-            var11 = var4[var10];
-            var11 = var3.bind(var0)(var11);
-            var11 = var11.useOnNativeBlankAreaEvents;
-            var2.useOnNativeBlankAreaEvents = var11;
-            var11 = var4[var10];
-            var11 = var3.bind(var0)(var11);
-            var11 = var11.BlankAreaEventHandler;
-            var2.BlankAreaEventHandler = var11;
-            var10 = var4[var10];
-            var10 = var3.bind(var0)(var10);
-            var10 = var10.BlankAreaEvent;
-            var2.BlankAreaEvent = var10;
-            var2.useBenchmark = var9;
-            var9 = 14;
-            var9 = var4[var9];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.useDataMultiplier;
-            var2.useDataMultiplier = var9;
-            var9 = 15;
-            var10 = var4[var9];
-            var10 = var3.bind(var0)(var10);
-            var10 = var10.useFlatListBenchmark;
-            var2.useFlatListBenchmark = var10;
-            var9 = var4[var9];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.FlatListBenchmarkParams;
-            var2.FlatListBenchmarkParams = var9;
-            var9 = 16;
-            var10 = var4[var9];
-            var10 = var3.bind(var0)(var10);
-            var10 = var10.useBlankAreaTracker;
-            var2.useBlankAreaTracker = var10;
-            var10 = var4[var9];
-            var10 = var3.bind(var0)(var10);
-            var10 = var10.BlankAreaTrackerResult;
-            var2.BlankAreaTrackerResult = var10;
-            var9 = var4[var9];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.BlankAreaTrackerConfig;
-            var2.BlankAreaTrackerConfig = var9;
-            var2.MasonryFlashList = var8;
-            var8 = 7;
-            var9 = var4[var8];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.MasonryFlashListProps;
-            var2.MasonryFlashListProps = var9;
-            var9 = var4[var8];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.MasonryFlashListScrollEvent;
-            var2.MasonryFlashListScrollEvent = var9;
-            var9 = var4[var8];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.MasonryFlashListRef;
-            var2.MasonryFlashListRef = var9;
-            var9 = var4[var8];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.MasonryListItem;
-            var2.MasonryListItem = var9;
-            var9 = var4[var8];
-            var9 = var3.bind(var0)(var9);
-            var9 = var9.MasonryListRenderItem;
-            var2.MasonryListRenderItem = var9;
-            var8 = var4[var8];
-            var8 = var3.bind(var0)(var8);
-            var8 = var8.MasonryListRenderItemInfo;
-            var2.MasonryListRenderItemInfo = var8;
-            var2.JSFPSMonitor = var7;
-            var7 = 9;
-            var7 = var4[var7];
-            var7 = var3.bind(var0)(var7);
-            var7 = var7.JSFPSResult;
-            var2.JSFPSResult = var7;
-            var2.autoScroll = var6;
-            var2.Cancellable = var1;
-            var1 = 17;
-            var1 = var4[var1];
-            var1 = var5.bind(var0)(var1);
-            var2.ViewToken = var1;
-            var1 = 18;
-            var1 = var4[var1];
-            var1 = var5.bind(var0)(var1);
-            var2.CellContainer = var1;
-            var1 = 19;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useLayoutState;
-            var2.useLayoutState = var1;
-            var1 = 20;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useRecyclingState;
-            var2.useRecyclingState = var1;
-            var1 = 21;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useMappingHelper;
-            var2.useMappingHelper = var1;
-            var1 = 22;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useFlashListContext;
-            var2.useFlashListContext = var1;
-            var1 = 23;
-            var5 = var4[var1];
-            var5 = var3.bind(var0)(var5);
-            var5 = var5.LayoutCommitObserver;
-            var2.LayoutCommitObserver = var5;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.LayoutCommitObserverProps;
-            var2.LayoutCommitObserverProps = var1;
-            var1 = 24;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.FlashListRef;
-            var2.FlashListRef = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5101, 5102, 5162, 5230, 5221, 5234, 5228, 5232, 5224, 5231, 5223, 5169, 5166, 5226, 5227, 5222, 5229, 5168, 5120, 5235, 5236, 5121, 5237, 5238]);
+    var5 = require;
+    var7 = metroImportDefault;
+    var2 = exports;
+    var6 = dependencyMap;
+    var _closure1_slot0 = var5;
+    var _closure1_slot1 = var7;
+    var _closure1_slot2 = var6;
+    var0 = ['nativeGesture', 'refreshControl', 'refreshing', 'progressViewOffset', 'onRefresh', 'ScrollableComponent'];
+    var _closure1_slot3 = var0;
+    var0 = global;
+    var8 = var0.Object;
+    var4 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var6[var0];
+    var0 = undefined;
+    var3 = var7.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 1;
+    var4 = var6[var3];
+    var4 = var7.bind(var0)(var4);
+    var3 = var6[var3];
+    var3 = var5.bind(var0)(var3);
+    var3 = var3.forwardRef;
+    var4 = 2;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var4 = var4.jsx;
+    var _closure1_slot5 = var4;
+    var1 = function arg0, arg1() {
+        _fun45628: for (var _fun45628_ip = 0;;) switch (_fun45628_ip) {
+            case 0:
+                var2 = arg0;
+                var11 = var2.nativeGesture;
+                var0 = var2.refreshControl;
+                var10 = var2.refreshing;
+                var9 = var2.progressViewOffset;
+                var7 = var2.onRefresh;
+                var5 = var2.ScrollableComponent;
+                var1 = _closure1_slot4;
+                var0 = _closure1_slot3;
+                var4 = undefined;
+                var13 = var1.bind(var4)(var2, var0);
+                var2 = _closure1_slot5;
+                var1 = _closure1_slot0;
+                var3 = _closure1_slot2;
+                var0 = 3;
+                var0 = var3[var0];
+                var0 = var1.bind(var4)(var0);
+                var1 = var0.BottomSheetDraggableScrollable;
+                var0 = {};
+                var0.scrollableGesture = var11;
+                var3 = global;
+                var12 = var3.Object;
+                var8 = var12.assign;
+                var3 = {};
+                var14 = arg1;
+                var3.ref = var14;
+                var3 = var8.bind(var12)(var3, var13);
+                var3 = var2.bind(var4)(var5, var3);
+                var0.children = var3;
+                var5 = var2.bind(var4)(var1, var0);
+                var0 = var5;
+                if (!var7) {
+                    _fun45628_ip = 232;
+                    continue _fun45628
+                }
+            case 145:
+                var3 = _closure1_slot5;
+                var2 = _closure1_slot1;
+                var8 = _closure1_slot2;
+                var1 = 4;
+                var1 = var8[var1];
+                var2 = var2.bind(var4)(var1);
+                var1 = {};
+                var1.scrollableGesture = var11;
+                var1.refreshing = var10;
+                var1.progressViewOffset = var9;
+                var1.onRefresh = var7;
+                var7 = _closure1_slot0;
+                var6 = 5;
+                var6 = var8[var6];
+                var6 = var7.bind(var4)(var6);
+                var6 = var6.styles;
+                var6 = var6.container;
+                var1.style = var6;
+                var1.children = var5;
+                var0 = var3.bind(var4)(var2, var1);
+            case 232:
+                return var0;
+        }
+    };
+    var1 = var3.bind(var0)(var1);
+    var2.ScrollableContainer = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 33, 5101, 5102, 5104]);

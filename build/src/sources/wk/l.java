@@ -1,0 +1,48 @@
+package wk;
+
+import com.google.zxing.Result;
+import java.util.Map;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class l extends p {
+
+    /* renamed from: i  reason: collision with root package name */
+    private final p f52882i = new e();
+
+    private static Result r(Result result) {
+        String f10 = result.f();
+        if (f10.charAt(0) == '0') {
+            Result result2 = new Result(f10.substring(1), null, result.e(), kk.a.UPC_A);
+            if (result.d() != null) {
+                result2.g(result.d());
+            }
+            return result2;
+        }
+        throw kk.g.a();
+    }
+
+    @Override // wk.k, kk.m
+    public Result a(kk.c cVar, Map map) {
+        return r(this.f52882i.a(cVar, map));
+    }
+
+    @Override // wk.p, wk.k
+    public Result b(int i10, ok.a aVar, Map map) {
+        return r(this.f52882i.b(i10, aVar, map));
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // wk.p
+    public int k(ok.a aVar, int[] iArr, StringBuilder sb2) {
+        return this.f52882i.k(aVar, iArr, sb2);
+    }
+
+    @Override // wk.p
+    public Result l(int i10, ok.a aVar, int[] iArr, Map map) {
+        return r(this.f52882i.l(i10, aVar, iArr, map));
+    }
+
+    @Override // wk.p
+    kk.a p() {
+        return kk.a.UPC_A;
+    }
+}

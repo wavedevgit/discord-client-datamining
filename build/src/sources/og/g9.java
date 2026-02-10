@@ -1,18 +1,18 @@
 package og;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class g9 implements zi.d {
+final class g9 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final g9 f40896a = new g9();
+    static final g9 f39222a = new g9();
 
     static {
-        c.b a10 = zi.c.a("handwritingRecognitionStrategy");
+        c.b a10 = bj.c.a("handwritingRecognitionStrategy");
         l2 l2Var = new l2();
         l2Var.a(1);
         a10.b(l2Var.b()).a();
-        c.b a11 = zi.c.a("recognitionSchedulingStrategy");
+        c.b a11 = bj.c.a("recognitionSchedulingStrategy");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
         a11.b(l2Var2.b()).a();
@@ -21,10 +21,10 @@ final class g9 implements zi.d {
     private g9() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

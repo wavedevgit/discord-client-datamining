@@ -21,102 +21,102 @@ import p8.f;
 import p8.h;
 import p8.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class a implements DraweeController, a.InterfaceC0399a, a.InterfaceC0550a {
+public abstract class a implements DraweeController, a.InterfaceC0378a, a.InterfaceC0527a {
 
     /* renamed from: w  reason: collision with root package name */
-    private static final Map f10020w = f.of("component_tag", "drawee");
+    private static final Map f10597w = f.of("component_tag", "drawee");
 
     /* renamed from: x  reason: collision with root package name */
-    private static final Map f10021x = f.of("origin", "memory_bitmap", "origin_sub", "shortcut");
+    private static final Map f10598x = f.of("origin", "memory_bitmap", "origin_sub", "shortcut");
 
     /* renamed from: y  reason: collision with root package name */
-    private static final Class f10022y = a.class;
+    private static final Class f10599y = a.class;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i9.a f10024b;
+    private final i9.a f10601b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Executor f10025c;
+    private final Executor f10602c;
 
     /* renamed from: d  reason: collision with root package name */
-    private d f10026d;
+    private d f10603d;
 
     /* renamed from: e  reason: collision with root package name */
-    private n9.a f10027e;
+    private n9.a f10604e;
 
     /* renamed from: f  reason: collision with root package name */
-    protected ControllerListener f10028f;
+    protected ControllerListener f10605f;
 
     /* renamed from: h  reason: collision with root package name */
-    private o9.a f10030h;
+    private o9.a f10607h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Drawable f10031i;
+    private Drawable f10608i;
 
     /* renamed from: j  reason: collision with root package name */
-    private String f10032j;
+    private String f10609j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Object f10033k;
+    private Object f10610k;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f10034l;
+    private boolean f10611l;
 
     /* renamed from: m  reason: collision with root package name */
-    private boolean f10035m;
+    private boolean f10612m;
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f10036n;
+    private boolean f10613n;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f10037o;
+    private boolean f10614o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f10038p;
+    private boolean f10615p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f10039q;
+    private String f10616q;
 
     /* renamed from: r  reason: collision with root package name */
-    private DataSource f10040r;
+    private DataSource f10617r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Object f10041s;
+    private Object f10618s;
 
     /* renamed from: v  reason: collision with root package name */
-    protected Drawable f10044v;
+    protected Drawable f10621v;
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f10023a = c.a();
+    private final c f10600a = c.a();
 
     /* renamed from: g  reason: collision with root package name */
-    protected aa.d f10029g = new aa.d();
+    protected aa.d f10606g = new aa.d();
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f10042t = true;
+    private boolean f10619t = true;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f10043u = false;
+    private boolean f10620u = false;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: com.facebook.drawee.controller.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public class C0171a extends z8.b {
+    public class C0148a extends z8.b {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ String f10045a;
+        final /* synthetic */ String f10622a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ boolean f10046b;
+        final /* synthetic */ boolean f10623b;
 
-        C0171a(String str, boolean z10) {
-            this.f10045a = str;
-            this.f10046b = z10;
+        C0148a(String str, boolean z10) {
+            this.f10622a = str;
+            this.f10623b = z10;
         }
 
         @Override // z8.b
         public void onFailureImpl(DataSource dataSource) {
-            a.this.F(this.f10045a, dataSource, dataSource.b(), true);
+            a.this.F(this.f10622a, dataSource, dataSource.b(), true);
         }
 
         @Override // z8.b
@@ -126,16 +126,16 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
             float d10 = dataSource.d();
             Object result = dataSource.getResult();
             if (result != null) {
-                a.this.H(this.f10045a, dataSource, result, d10, isFinished, this.f10046b, e10);
+                a.this.H(this.f10622a, dataSource, result, d10, isFinished, this.f10623b, e10);
             } else if (isFinished) {
-                a.this.F(this.f10045a, dataSource, new NullPointerException(), true);
+                a.this.F(this.f10622a, dataSource, new NullPointerException(), true);
             }
         }
 
         @Override // z8.b, z8.e
         public void onProgressUpdate(DataSource dataSource) {
             boolean isFinished = dataSource.isFinished();
-            a.this.I(this.f10045a, dataSource, dataSource.d(), isFinished);
+            a.this.I(this.f10622a, dataSource, dataSource.d(), isFinished);
         }
     }
 
@@ -160,20 +160,20 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
     }
 
     public a(i9.a aVar, Executor executor, String str, Object obj) {
-        this.f10024b = aVar;
-        this.f10025c = executor;
+        this.f10601b = aVar;
+        this.f10602c = executor;
         w(str, obj);
     }
 
     private void A(String str, Throwable th2) {
         if (q8.a.w(2)) {
-            q8.a.C(f10022y, "controller %x %s: %s: failure: %s", Integer.valueOf(System.identityHashCode(this)), this.f10032j, str, th2);
+            q8.a.C(f10599y, "controller %x %s: %s: failure: %s", Integer.valueOf(System.identityHashCode(this)), this.f10609j, str, th2);
         }
     }
 
     private void B(String str, Object obj) {
         if (q8.a.w(2)) {
-            q8.a.D(f10022y, "controller %x %s: %s: image: %s %x", Integer.valueOf(System.identityHashCode(this)), this.f10032j, str, q(obj), Integer.valueOf(r(obj)));
+            q8.a.D(f10599y, "controller %x %s: %s: image: %s %x", Integer.valueOf(System.identityHashCode(this)), this.f10609j, str, q(obj), Integer.valueOf(r(obj)));
         }
     }
 
@@ -190,7 +190,7 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
     private b.a D(Map map, Map map2, Uri uri) {
         String str;
         PointF pointF;
-        o9.a aVar = this.f10030h;
+        o9.a aVar = this.f10607h;
         if (aVar instanceof GenericDraweeHierarchy) {
             GenericDraweeHierarchy genericDraweeHierarchy = (GenericDraweeHierarchy) aVar;
             String valueOf = String.valueOf(genericDraweeHierarchy.m());
@@ -200,7 +200,7 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
             str = null;
             pointF = null;
         }
-        return z9.b.a(f10020w, f10021x, map, null, n(), str, pointF, map2, i(), z(), uri);
+        return z9.b.a(f10597w, f10598x, map, null, n(), str, pointF, map2, i(), z(), uri);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -219,7 +219,7 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
             }
             return;
         }
-        c cVar = this.f10023a;
+        c cVar = this.f10600a;
         if (z10) {
             aVar = c.a.ON_DATASOURCE_FAILURE;
         } else {
@@ -228,11 +228,11 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
         cVar.b(aVar);
         if (z10) {
             A("final_failed @ onFailure", th2);
-            this.f10040r = null;
-            this.f10037o = true;
-            o9.a aVar2 = this.f10030h;
+            this.f10617r = null;
+            this.f10614o = true;
+            o9.a aVar2 = this.f10607h;
             if (aVar2 != null) {
-                if (this.f10038p && (drawable = this.f10044v) != null) {
+                if (this.f10615p && (drawable = this.f10621v) != null) {
                     aVar2.e(drawable, 1.0f, true);
                 } else if (a0()) {
                     aVar2.a(th2);
@@ -267,7 +267,7 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
                 }
                 return;
             }
-            c cVar = this.f10023a;
+            c cVar = this.f10600a;
             if (z10) {
                 aVar = c.a.ON_DATASOURCE_RESULT;
             } else {
@@ -276,13 +276,13 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
             cVar.b(aVar);
             try {
                 Drawable g10 = g(obj);
-                Object obj2 = this.f10041s;
-                Drawable drawable = this.f10044v;
-                this.f10041s = obj;
-                this.f10044v = g10;
+                Object obj2 = this.f10618s;
+                Drawable drawable = this.f10621v;
+                this.f10618s = obj;
+                this.f10621v = g10;
                 if (z10) {
                     B("set_final_result @ onNewResult", obj);
-                    this.f10040r = null;
+                    this.f10617r = null;
                     v().e(g10, 1.0f, z11);
                     S(str, obj, dataSource);
                 } else if (z12) {
@@ -326,38 +326,38 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
             A("ignore_old_datasource @ onProgress", null);
             dataSource.close();
         } else if (!z10) {
-            this.f10030h.c(f10, false);
+            this.f10607h.c(f10, false);
         }
     }
 
     private void K() {
         Map map;
-        boolean z10 = this.f10035m;
-        this.f10035m = false;
-        this.f10037o = false;
-        DataSource dataSource = this.f10040r;
+        boolean z10 = this.f10612m;
+        this.f10612m = false;
+        this.f10614o = false;
+        DataSource dataSource = this.f10617r;
         Map map2 = null;
         if (dataSource != null) {
             map = dataSource.getExtras();
-            this.f10040r.close();
-            this.f10040r = null;
+            this.f10617r.close();
+            this.f10617r = null;
         } else {
             map = null;
         }
-        Drawable drawable = this.f10044v;
+        Drawable drawable = this.f10621v;
         if (drawable != null) {
             J(drawable);
         }
-        if (this.f10039q != null) {
-            this.f10039q = null;
+        if (this.f10616q != null) {
+            this.f10616q = null;
         }
-        this.f10044v = null;
-        Object obj = this.f10041s;
+        this.f10621v = null;
+        Object obj = this.f10618s;
         if (obj != null) {
             Map E = E(s(obj));
-            B("release", this.f10041s);
-            L(this.f10041s);
-            this.f10041s = null;
+            B("release", this.f10618s);
+            L(this.f10618s);
+            this.f10618s = null;
             map2 = E;
         }
         if (z10) {
@@ -367,13 +367,13 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
 
     private void N(Throwable th2, DataSource dataSource) {
         b.a C = C(dataSource, null, null);
-        j().onFailure(this.f10032j, th2);
-        k().a(this.f10032j, th2, C);
+        j().onFailure(this.f10609j, th2);
+        k().a(this.f10609j, th2, C);
     }
 
     private void O(Throwable th2) {
-        j().onIntermediateImageFailed(this.f10032j, th2);
-        k().m(this.f10032j);
+        j().onIntermediateImageFailed(this.f10609j, th2);
+        k().m(this.f10609j);
     }
 
     private void P(String str, Object obj) {
@@ -383,8 +383,8 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
     }
 
     private void Q(Map map, Map map2) {
-        j().onRelease(this.f10032j);
-        k().g(this.f10032j, D(map, map2, null));
+        j().onRelease(this.f10609j);
+        k().h(this.f10609j, D(map, map2, null));
     }
 
     private void S(String str, Object obj, DataSource dataSource) {
@@ -395,14 +395,14 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
 
     private boolean a0() {
         d dVar;
-        if (this.f10037o && (dVar = this.f10026d) != null && dVar.e()) {
+        if (this.f10614o && (dVar = this.f10603d) != null && dVar.e()) {
             return true;
         }
         return false;
     }
 
     private Rect n() {
-        o9.a aVar = this.f10030h;
+        o9.a aVar = this.f10607h;
         if (aVar == null) {
             return null;
         }
@@ -410,11 +410,11 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
     }
 
     private o9.a v() {
-        o9.a aVar = this.f10030h;
+        o9.a aVar = this.f10607h;
         if (aVar != null) {
             return aVar;
         }
-        throw new IllegalStateException("mSettableDraweeHierarchy is null; Caller context: " + this.f10033k);
+        throw new IllegalStateException("mSettableDraweeHierarchy is null; Caller context: " + this.f10610k);
     }
 
     private synchronized void w(String str, Object obj) {
@@ -423,41 +423,41 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
             if (za.b.d()) {
                 za.b.a("AbstractDraweeController#init");
             }
-            this.f10023a.b(c.a.ON_INIT_CONTROLLER);
-            if (!this.f10042t && (aVar = this.f10024b) != null) {
+            this.f10600a.b(c.a.ON_INIT_CONTROLLER);
+            if (!this.f10619t && (aVar = this.f10601b) != null) {
                 aVar.a(this);
             }
-            this.f10034l = false;
-            this.f10036n = false;
+            this.f10611l = false;
+            this.f10613n = false;
             K();
-            this.f10038p = false;
-            d dVar = this.f10026d;
+            this.f10615p = false;
+            d dVar = this.f10603d;
             if (dVar != null) {
                 dVar.a();
             }
-            n9.a aVar2 = this.f10027e;
+            n9.a aVar2 = this.f10604e;
             if (aVar2 != null) {
                 aVar2.a();
-                this.f10027e.f(this);
+                this.f10604e.f(this);
             }
-            ControllerListener controllerListener = this.f10028f;
+            ControllerListener controllerListener = this.f10605f;
             if (controllerListener instanceof b) {
                 ((b) controllerListener).b();
             } else {
-                this.f10028f = null;
+                this.f10605f = null;
             }
-            o9.a aVar3 = this.f10030h;
+            o9.a aVar3 = this.f10607h;
             if (aVar3 != null) {
                 aVar3.reset();
-                this.f10030h.f(null);
-                this.f10030h = null;
+                this.f10607h.f(null);
+                this.f10607h = null;
             }
-            this.f10031i = null;
+            this.f10608i = null;
             if (q8.a.w(2)) {
-                q8.a.B(f10022y, "controller %x %s -> %s: initialize", Integer.valueOf(System.identityHashCode(this)), this.f10032j, str);
+                q8.a.B(f10599y, "controller %x %s -> %s: initialize", Integer.valueOf(System.identityHashCode(this)), this.f10609j, str);
             }
-            this.f10032j = str;
-            this.f10033k = obj;
+            this.f10609j = str;
+            this.f10610k = obj;
             if (za.b.d()) {
                 za.b.b();
             }
@@ -467,10 +467,10 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
     }
 
     private boolean y(String str, DataSource dataSource) {
-        if (dataSource == null && this.f10040r == null) {
+        if (dataSource == null && this.f10617r == null) {
             return true;
         }
-        if (str.equals(this.f10032j) && dataSource == this.f10040r && this.f10035m) {
+        if (str.equals(this.f10609j) && dataSource == this.f10617r && this.f10612m) {
             return true;
         }
         return false;
@@ -487,22 +487,22 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
     protected abstract void L(Object obj);
 
     public void M(aa.b bVar) {
-        this.f10029g.y(bVar);
+        this.f10606g.y(bVar);
     }
 
     protected void R(DataSource dataSource, Object obj) {
-        j().onSubmit(this.f10032j, this.f10033k);
-        k().k(this.f10032j, this.f10033k, C(dataSource, obj, t()));
+        j().onSubmit(this.f10609j, this.f10610k);
+        k().i(this.f10609j, this.f10610k, C(dataSource, obj, t()));
     }
 
     public void T(String str) {
-        this.f10039q = str;
+        this.f10616q = str;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void U(Drawable drawable) {
-        this.f10031i = drawable;
-        o9.a aVar = this.f10030h;
+        this.f10608i = drawable;
+        o9.a aVar = this.f10607h;
         if (aVar != null) {
             aVar.f(drawable);
         }
@@ -510,7 +510,7 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void W(n9.a aVar) {
-        this.f10027e = aVar;
+        this.f10604e = aVar;
         if (aVar != null) {
             aVar.f(this);
         }
@@ -518,26 +518,26 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void X(boolean z10) {
-        this.f10043u = z10;
+        this.f10620u = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void Y(boolean z10) {
-        this.f10038p = z10;
+        this.f10615p = z10;
     }
 
     protected boolean Z() {
         return a0();
     }
 
-    @Override // n9.a.InterfaceC0550a
+    @Override // n9.a.InterfaceC0527a
     public boolean a() {
         if (q8.a.w(2)) {
-            q8.a.A(f10022y, "controller %x %s: onClick", Integer.valueOf(System.identityHashCode(this)), this.f10032j);
+            q8.a.A(f10599y, "controller %x %s: onClick", Integer.valueOf(System.identityHashCode(this)), this.f10609j);
         }
         if (a0()) {
-            this.f10026d.b();
-            this.f10030h.reset();
+            this.f10603d.b();
+            this.f10607h.reset();
             b0();
             return true;
         }
@@ -553,13 +553,13 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
             if (za.b.d()) {
                 za.b.a("AbstractDraweeController#submitRequest->cache");
             }
-            this.f10040r = null;
-            this.f10035m = true;
-            this.f10037o = false;
-            this.f10023a.b(c.a.ON_SUBMIT_CACHE_HIT);
-            R(this.f10040r, s(h10));
-            G(this.f10032j, h10);
-            H(this.f10032j, this.f10040r, h10, 1.0f, true, true, true);
+            this.f10617r = null;
+            this.f10612m = true;
+            this.f10614o = false;
+            this.f10600a.b(c.a.ON_SUBMIT_CACHE_HIT);
+            R(this.f10617r, s(h10));
+            G(this.f10609j, h10);
+            H(this.f10609j, this.f10617r, h10, 1.0f, true, true, true);
             if (za.b.d()) {
                 za.b.b();
             }
@@ -569,17 +569,17 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
             }
             return;
         }
-        this.f10023a.b(c.a.ON_DATASOURCE_SUBMIT);
-        this.f10030h.c(0.0f, true);
-        this.f10035m = true;
-        this.f10037o = false;
+        this.f10600a.b(c.a.ON_DATASOURCE_SUBMIT);
+        this.f10607h.c(0.0f, true);
+        this.f10612m = true;
+        this.f10614o = false;
         DataSource m10 = m();
-        this.f10040r = m10;
+        this.f10617r = m10;
         R(m10, null);
         if (q8.a.w(2)) {
-            q8.a.B(f10022y, "controller %x %s: submitRequest: dataSource: %x", Integer.valueOf(System.identityHashCode(this)), this.f10032j, Integer.valueOf(System.identityHashCode(this.f10040r)));
+            q8.a.B(f10599y, "controller %x %s: submitRequest: dataSource: %x", Integer.valueOf(System.identityHashCode(this)), this.f10609j, Integer.valueOf(System.identityHashCode(this.f10617r)));
         }
-        this.f10040r.c(new C0171a(this.f10032j, this.f10040r.a()), this.f10025c);
+        this.f10617r.c(new C0148a(this.f10609j, this.f10617r.a()), this.f10602c);
         if (za.b.d()) {
             za.b.b();
         }
@@ -587,25 +587,25 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
 
     public void e(ControllerListener controllerListener) {
         j.g(controllerListener);
-        ControllerListener controllerListener2 = this.f10028f;
+        ControllerListener controllerListener2 = this.f10605f;
         if (controllerListener2 instanceof b) {
             ((b) controllerListener2).a(controllerListener);
         } else if (controllerListener2 != null) {
-            this.f10028f = b.d(controllerListener2, controllerListener);
+            this.f10605f = b.d(controllerListener2, controllerListener);
         } else {
-            this.f10028f = controllerListener;
+            this.f10605f = controllerListener;
         }
     }
 
     public void f(aa.b bVar) {
-        this.f10029g.s(bVar);
+        this.f10606g.s(bVar);
     }
 
     protected abstract Drawable g(Object obj);
 
     @Override // com.facebook.drawee.interfaces.DraweeController
     public Animatable getAnimatable() {
-        Drawable drawable = this.f10044v;
+        Drawable drawable = this.f10621v;
         if (drawable instanceof Animatable) {
             return (Animatable) drawable;
         }
@@ -614,17 +614,17 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
 
     @Override // com.facebook.drawee.interfaces.DraweeController
     public DraweeHierarchy getHierarchy() {
-        return this.f10030h;
+        return this.f10607h;
     }
 
     protected abstract Object h();
 
     public Object i() {
-        return this.f10033k;
+        return this.f10610k;
     }
 
     protected ControllerListener j() {
-        ControllerListener controllerListener = this.f10028f;
+        ControllerListener controllerListener = this.f10605f;
         if (controllerListener == null) {
             return j9.a.getNoOpListener();
         }
@@ -632,19 +632,19 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
     }
 
     protected aa.b k() {
-        return this.f10029g;
+        return this.f10606g;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public Drawable l() {
-        return this.f10031i;
+        return this.f10608i;
     }
 
     protected abstract DataSource m();
 
     /* JADX INFO: Access modifiers changed from: protected */
     public n9.a o() {
-        return this.f10027e;
+        return this.f10604e;
     }
 
     @Override // com.facebook.drawee.interfaces.DraweeController
@@ -654,21 +654,21 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
             za.b.a("AbstractDraweeController#onAttach");
         }
         if (q8.a.w(2)) {
-            Class cls = f10022y;
+            Class cls = f10599y;
             Integer valueOf = Integer.valueOf(System.identityHashCode(this));
-            String str2 = this.f10032j;
-            if (this.f10035m) {
+            String str2 = this.f10609j;
+            if (this.f10612m) {
                 str = "request already submitted";
             } else {
                 str = "request needs submit";
             }
             q8.a.B(cls, "controller %x %s: onAttach: %s", valueOf, str2, str);
         }
-        this.f10023a.b(c.a.ON_ATTACH_CONTROLLER);
-        j.g(this.f10030h);
-        this.f10024b.a(this);
-        this.f10034l = true;
-        if (!this.f10035m) {
+        this.f10600a.b(c.a.ON_ATTACH_CONTROLLER);
+        j.g(this.f10607h);
+        this.f10601b.a(this);
+        this.f10611l = true;
+        if (!this.f10612m) {
             b0();
         }
         if (za.b.d()) {
@@ -682,11 +682,11 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
             za.b.a("AbstractDraweeController#onDetach");
         }
         if (q8.a.w(2)) {
-            q8.a.A(f10022y, "controller %x %s: onDetach", Integer.valueOf(System.identityHashCode(this)), this.f10032j);
+            q8.a.A(f10599y, "controller %x %s: onDetach", Integer.valueOf(System.identityHashCode(this)), this.f10609j);
         }
-        this.f10023a.b(c.a.ON_DETACH_CONTROLLER);
-        this.f10034l = false;
-        this.f10024b.d(this);
+        this.f10600a.b(c.a.ON_DETACH_CONTROLLER);
+        this.f10611l = false;
+        this.f10601b.d(this);
         if (za.b.d()) {
             za.b.b();
         }
@@ -695,21 +695,21 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
     @Override // com.facebook.drawee.interfaces.DraweeController
     public boolean onTouchEvent(MotionEvent motionEvent) {
         if (q8.a.w(2)) {
-            q8.a.B(f10022y, "controller %x %s: onTouchEvent %s", Integer.valueOf(System.identityHashCode(this)), this.f10032j, motionEvent);
+            q8.a.B(f10599y, "controller %x %s: onTouchEvent %s", Integer.valueOf(System.identityHashCode(this)), this.f10609j, motionEvent);
         }
-        n9.a aVar = this.f10027e;
+        n9.a aVar = this.f10604e;
         if (aVar == null) {
             return false;
         }
         if (!aVar.b() && !Z()) {
             return false;
         }
-        this.f10027e.d(motionEvent);
+        this.f10604e.d(motionEvent);
         return true;
     }
 
     public String p() {
-        return this.f10032j;
+        return this.f10609j;
     }
 
     protected String q(Object obj) {
@@ -721,18 +721,18 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
 
     protected abstract int r(Object obj);
 
-    @Override // i9.a.InterfaceC0399a
+    @Override // i9.a.InterfaceC0378a
     public void release() {
-        this.f10023a.b(c.a.ON_RELEASE_CONTROLLER);
-        d dVar = this.f10026d;
+        this.f10600a.b(c.a.ON_RELEASE_CONTROLLER);
+        d dVar = this.f10603d;
         if (dVar != null) {
             dVar.c();
         }
-        n9.a aVar = this.f10027e;
+        n9.a aVar = this.f10604e;
         if (aVar != null) {
             aVar.e();
         }
-        o9.a aVar2 = this.f10030h;
+        o9.a aVar2 = this.f10607h;
         if (aVar2 != null) {
             aVar2.reset();
         }
@@ -745,55 +745,55 @@ public abstract class a implements DraweeController, a.InterfaceC0399a, a.Interf
     public void setHierarchy(DraweeHierarchy draweeHierarchy) {
         c.a aVar;
         if (q8.a.w(2)) {
-            q8.a.B(f10022y, "controller %x %s: setHierarchy: %s", Integer.valueOf(System.identityHashCode(this)), this.f10032j, draweeHierarchy);
+            q8.a.B(f10599y, "controller %x %s: setHierarchy: %s", Integer.valueOf(System.identityHashCode(this)), this.f10609j, draweeHierarchy);
         }
-        c cVar = this.f10023a;
+        c cVar = this.f10600a;
         if (draweeHierarchy != null) {
             aVar = c.a.ON_SET_HIERARCHY;
         } else {
             aVar = c.a.ON_CLEAR_HIERARCHY;
         }
         cVar.b(aVar);
-        if (this.f10035m) {
-            this.f10024b.a(this);
+        if (this.f10612m) {
+            this.f10601b.a(this);
             release();
         }
-        o9.a aVar2 = this.f10030h;
+        o9.a aVar2 = this.f10607h;
         if (aVar2 != null) {
             aVar2.f(null);
-            this.f10030h = null;
+            this.f10607h = null;
         }
         if (draweeHierarchy != null) {
             j.b(Boolean.valueOf(draweeHierarchy instanceof o9.a));
             o9.a aVar3 = (o9.a) draweeHierarchy;
-            this.f10030h = aVar3;
-            aVar3.f(this.f10031i);
+            this.f10607h = aVar3;
+            aVar3.f(this.f10608i);
         }
     }
 
     protected abstract Uri t();
 
     public String toString() {
-        return h.b(this).c("isAttached", this.f10034l).c("isRequestSubmitted", this.f10035m).c("hasFetchFailed", this.f10037o).a("fetchedImage", r(this.f10041s)).b("events", this.f10023a.toString()).toString();
+        return h.b(this).c("isAttached", this.f10611l).c("isRequestSubmitted", this.f10612m).c("hasFetchFailed", this.f10614o).a("fetchedImage", r(this.f10618s)).b("events", this.f10600a.toString()).toString();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public d u() {
-        if (this.f10026d == null) {
-            this.f10026d = new d();
+        if (this.f10603d == null) {
+            this.f10603d = new d();
         }
-        return this.f10026d;
+        return this.f10603d;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void x(String str, Object obj) {
         w(str, obj);
-        this.f10042t = false;
-        this.f10043u = false;
+        this.f10619t = false;
+        this.f10620u = false;
     }
 
     protected boolean z() {
-        return this.f10043u;
+        return this.f10620u;
     }
 
     public void V(j9.b bVar) {

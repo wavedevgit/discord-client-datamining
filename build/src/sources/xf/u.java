@@ -9,26 +9,26 @@ public class u extends jf.a {
     public static final Parcelable.Creator<u> CREATOR = new w0();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f55004d;
+    private final String f54736d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f55005e;
+    private final String f54737e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f55006i;
+    private final String f54738i;
 
     public u(String str, String str2, String str3) {
-        this.f55004d = (String) hf.q.l(str);
-        this.f55005e = (String) hf.q.l(str2);
-        this.f55006i = str3;
+        this.f54736d = (String) hf.q.l(str);
+        this.f54737e = (String) hf.q.l(str2);
+        this.f54738i = str3;
     }
 
     public String b() {
-        return this.f55006i;
+        return this.f54738i;
     }
 
     public String c() {
-        return this.f55004d;
+        return this.f54736d;
     }
 
     public boolean equals(Object obj) {
@@ -36,22 +36,22 @@ public class u extends jf.a {
             return false;
         }
         u uVar = (u) obj;
-        if (!hf.o.a(this.f55004d, uVar.f55004d) || !hf.o.a(this.f55005e, uVar.f55005e) || !hf.o.a(this.f55006i, uVar.f55006i)) {
+        if (!hf.o.a(this.f54736d, uVar.f54736d) || !hf.o.a(this.f54737e, uVar.f54737e) || !hf.o.a(this.f54738i, uVar.f54738i)) {
             return false;
         }
         return true;
     }
 
     public String getName() {
-        return this.f55005e;
+        return this.f54737e;
     }
 
     public int hashCode() {
-        return hf.o.b(this.f55004d, this.f55005e, this.f55006i);
+        return hf.o.b(this.f54736d, this.f54737e, this.f54738i);
     }
 
     public final String toString() {
-        return "PublicKeyCredentialRpEntity{\n id='" + this.f55004d + "', \n name='" + this.f55005e + "', \n icon='" + this.f55006i + "'}";
+        return "PublicKeyCredentialRpEntity{\n id='" + this.f54736d + "', \n name='" + this.f54737e + "', \n icon='" + this.f54738i + "'}";
     }
 
     @Override // android.os.Parcelable

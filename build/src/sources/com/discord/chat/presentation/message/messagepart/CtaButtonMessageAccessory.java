@@ -21,7 +21,7 @@ public final class CtaButtonMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-sekaTiM$default  reason: not valid java name */
-    public static /* synthetic */ CtaButtonMessageAccessory m553copysekaTiM$default(CtaButtonMessageAccessory ctaButtonMessageAccessory, long j10, String str, CtaButton ctaButton, int i10, Object obj) {
+    public static /* synthetic */ CtaButtonMessageAccessory m554copysekaTiM$default(CtaButtonMessageAccessory ctaButtonMessageAccessory, long j10, String str, CtaButton ctaButton, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             j10 = ctaButtonMessageAccessory.channelId;
         }
@@ -31,17 +31,17 @@ public final class CtaButtonMessageAccessory extends MessageAccessory {
         if ((i10 & 4) != 0) {
             ctaButton = ctaButtonMessageAccessory.ctaButton;
         }
-        return ctaButtonMessageAccessory.m556copysekaTiM(j10, str, ctaButton);
+        return ctaButtonMessageAccessory.m557copysekaTiM(j10, str, ctaButton);
     }
 
     /* renamed from: component1-o4g7jtM  reason: not valid java name */
-    public final long m554component1o4g7jtM() {
+    public final long m555component1o4g7jtM() {
         return this.channelId;
     }
 
     @NotNull
     /* renamed from: component2-3Eiw7ao  reason: not valid java name */
-    public final String m555component23Eiw7ao() {
+    public final String m556component23Eiw7ao() {
         return this.messageId;
     }
 
@@ -52,7 +52,7 @@ public final class CtaButtonMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-sekaTiM  reason: not valid java name */
-    public final CtaButtonMessageAccessory m556copysekaTiM(long j10, @NotNull String messageId, @NotNull CtaButton ctaButton) {
+    public final CtaButtonMessageAccessory m557copysekaTiM(long j10, @NotNull String messageId, @NotNull CtaButton ctaButton) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(ctaButton, "ctaButton");
         return new CtaButtonMessageAccessory(j10, messageId, ctaButton, null);
@@ -64,13 +64,13 @@ public final class CtaButtonMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof CtaButtonMessageAccessory) {
             CtaButtonMessageAccessory ctaButtonMessageAccessory = (CtaButtonMessageAccessory) obj;
-            return ChannelId.m1061equalsimpl0(this.channelId, ctaButtonMessageAccessory.channelId) && MessageId.m1087equalsimpl0(this.messageId, ctaButtonMessageAccessory.messageId) && Intrinsics.areEqual(this.ctaButton, ctaButtonMessageAccessory.ctaButton);
+            return ChannelId.m1062equalsimpl0(this.channelId, ctaButtonMessageAccessory.channelId) && MessageId.m1088equalsimpl0(this.messageId, ctaButtonMessageAccessory.messageId) && Intrinsics.areEqual(this.ctaButton, ctaButtonMessageAccessory.ctaButton);
         }
         return false;
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m557getChannelIdo4g7jtM() {
+    public final long m558getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -82,20 +82,20 @@ public final class CtaButtonMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo537getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((ChannelId.m1062hashCodeimpl(this.channelId) * 31) + MessageId.m1088hashCodeimpl(this.messageId)) * 31) + this.ctaButton.hashCode();
+        return (((ChannelId.m1063hashCodeimpl(this.channelId) * 31) + MessageId.m1089hashCodeimpl(this.messageId)) * 31) + this.ctaButton.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1064toStringimpl = ChannelId.m1064toStringimpl(this.channelId);
-        String m1090toStringimpl = MessageId.m1090toStringimpl(this.messageId);
+        String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
+        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
         CtaButton ctaButton = this.ctaButton;
-        return "CtaButtonMessageAccessory(channelId=" + m1064toStringimpl + ", messageId=" + m1090toStringimpl + ", ctaButton=" + ctaButton + ")";
+        return "CtaButtonMessageAccessory(channelId=" + m1065toStringimpl + ", messageId=" + m1091toStringimpl + ", ctaButton=" + ctaButton + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

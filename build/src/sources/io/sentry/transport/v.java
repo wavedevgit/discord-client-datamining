@@ -6,21 +6,21 @@ import java.net.PasswordAuthentication;
 final class v extends Authenticator {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f29161a;
+    private final String f30096a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f29162b;
+    private final String f30097b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public v(String str, String str2) {
-        this.f29161a = (String) io.sentry.util.y.c(str, "user is required");
-        this.f29162b = (String) io.sentry.util.y.c(str2, "password is required");
+        this.f30096a = (String) io.sentry.util.y.c(str, "user is required");
+        this.f30097b = (String) io.sentry.util.y.c(str2, "password is required");
     }
 
     @Override // java.net.Authenticator
     protected PasswordAuthentication getPasswordAuthentication() {
         if (getRequestorType() == Authenticator.RequestorType.PROXY) {
-            return new PasswordAuthentication(this.f29161a, this.f29162b.toCharArray());
+            return new PasswordAuthentication(this.f30096a, this.f30097b.toCharArray());
         }
         return null;
     }

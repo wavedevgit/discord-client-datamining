@@ -1,12 +1,12 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.styling;
 
-import bn.c;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.AttributeStyles;
+import dn.c;
 import java.lang.reflect.Constructor;
 import kotlin.Metadata;
 import kotlin.collections.x0;
@@ -82,7 +82,7 @@ public final class LocalImageComponentStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -126,7 +126,7 @@ public final class LocalImageComponentStyleJsonAdapter extends h {
         AttributeStyles.LocalImageStrokeColorStyle localImageStrokeColorStyle2 = localImageStrokeColorStyle;
         Constructor<LocalImageComponentStyle> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = LocalImageComponentStyle.class.getDeclaredConstructor(AttributeStyles.LocalImageStrokeColorStyle.class, AttributeStyles.LocalImageFillColorStyle.class, AttributeStyles.LocalImageHeightStyle.class, AttributeStyles.LocalImageWidthStyle.class, AttributeStyles.LocalImageJustifyStyle.class, AttributeStyles.LocalImageMarginStyle.class, Integer.TYPE, c.f7152c);
+            constructor = LocalImageComponentStyle.class.getDeclaredConstructor(AttributeStyles.LocalImageStrokeColorStyle.class, AttributeStyles.LocalImageFillColorStyle.class, AttributeStyles.LocalImageHeightStyle.class, AttributeStyles.LocalImageWidthStyle.class, AttributeStyles.LocalImageJustifyStyle.class, AttributeStyles.LocalImageMarginStyle.class, Integer.TYPE, c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -139,7 +139,7 @@ public final class LocalImageComponentStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, LocalImageComponentStyle localImageComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (localImageComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("strokeColor");
             this.nullableLocalImageStrokeColorStyleAdapter.toJson(writer, localImageComponentStyle.getStrokeColor());
             writer.J("fillColor");

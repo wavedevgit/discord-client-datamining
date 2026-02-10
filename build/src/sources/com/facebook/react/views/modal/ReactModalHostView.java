@@ -21,7 +21,7 @@ import androidx.activity.ComponentDialog;
 import androidx.activity.OnBackPressedCallback;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
-import androidx.core.view.w0;
+import androidx.core.view.x0;
 import com.facebook.react.R;
 import com.facebook.react.bridge.GuardedRunnable;
 import com.facebook.react.bridge.LifecycleEventListener;
@@ -369,7 +369,7 @@ public final class ReactModalHostView extends ViewGroup implements LifecycleEven
         OnRequestCloseListener onRequestCloseListener = reactModalHostView.onRequestCloseListener;
         if (onRequestCloseListener != null) {
             onRequestCloseListener.onRequestClose(componentDialog);
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
         throw new IllegalStateException("onRequestClose callback must be set if back key is expected to close the modal");
     }
@@ -696,7 +696,7 @@ public final class ReactModalHostView extends ViewGroup implements LifecycleEven
                 if (this.transparent && getStatusBarTranslucent() && (window = componentDialog.getWindow()) != null) {
                     window.addFlags(IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING);
                     window.setNavigationBarColor(androidx.core.content.a.c(getContext(), 17170445));
-                    w0.c(window, false);
+                    x0.c(window, false);
                 }
                 componentDialog.setContentView(getContentView());
                 updateProperties();

@@ -1,33 +1,37 @@
 package sr;
 
-import java.util.Map;
-import kotlin.jvm.internal.Intrinsics;
+import bw.d;
+import sr.g;
+import sr.i;
+import tr.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a extends kotlin.collections.g {
-    public final boolean b(Map.Entry element) {
-        Intrinsics.checkNotNullParameter(element, "element");
-        return c(element);
+public abstract class a implements i {
+    @Override // sr.i
+    public void a(d.b bVar) {
     }
 
-    public abstract boolean c(Map.Entry entry);
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final /* bridge */ boolean contains(Object obj) {
-        if (!(obj instanceof Map.Entry)) {
-            return false;
-        }
-        return b((Map.Entry) obj);
+    @Override // sr.i
+    public void b(aw.r rVar) {
     }
 
-    public /* bridge */ boolean d(Map.Entry entry) {
-        return super.remove(entry);
+    @Override // sr.i
+    public String f(String str) {
+        return str;
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final /* bridge */ boolean remove(Object obj) {
-        if (!(obj instanceof Map.Entry)) {
-            return false;
-        }
-        return d((Map.Entry) obj);
+    @Override // sr.i
+    public void g(c.a aVar) {
+    }
+
+    @Override // sr.i
+    public void i(i.a aVar) {
+    }
+
+    @Override // sr.i
+    public void k(g.b bVar) {
+    }
+
+    @Override // sr.i
+    public void e(aw.r rVar, l lVar) {
     }
 }

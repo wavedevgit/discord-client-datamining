@@ -1,151 +1,139 @@
 package kl;
 
-import android.graphics.Paint;
+import android.view.View;
 import com.henninghall.date_picker.n;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Iterator;
-import java.util.Locale;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TimeZone;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class g {
+public class g implements f {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final n f30943a;
+    private final i f31892a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Calendar f30944b;
+    private final n f31893b;
 
     /* renamed from: c  reason: collision with root package name */
-    private ArrayList f30945c = new ArrayList();
+    private final e f31894c;
 
     /* renamed from: d  reason: collision with root package name */
-    public com.henninghall.date_picker.pickers.a f30946d;
+    private final View f31895d;
 
     /* renamed from: e  reason: collision with root package name */
-    public SimpleDateFormat f30947e;
+    private c f31896e;
 
-    public g(com.henninghall.date_picker.pickers.a aVar, n nVar) {
-        this.f30943a = nVar;
-        this.f30946d = aVar;
-        this.f30947e = new SimpleDateFormat(e(), nVar.u());
-        aVar.setTextAlign(k());
-        aVar.setWrapSelectorWheel(v());
-    }
-
-    private String[] c(ArrayList arrayList) {
-        ArrayList arrayList2 = new ArrayList();
-        Iterator it = arrayList.iterator();
-        while (it.hasNext()) {
-            arrayList2.add(s((String) it.next()));
-        }
-        return (String[]) arrayList2.toArray(new String[0]);
-    }
-
-    private SimpleDateFormat d(Locale locale) {
-        return new SimpleDateFormat(e(), locale);
-    }
-
-    private int f() {
-        return this.f30946d.getValue();
-    }
-
-    private int g(Calendar calendar) {
-        this.f30947e.setTimeZone(this.f30943a.D());
-        return this.f30945c.indexOf(this.f30947e.format(calendar.getTime()));
-    }
-
-    private String j(Calendar calendar, Locale locale) {
-        return d(locale).format(calendar.getTime());
-    }
-
-    private void o() {
-        this.f30946d.setMinValue(0);
-        this.f30946d.setMaxValue(0);
-        ArrayList n10 = n();
-        this.f30945c = n10;
-        this.f30946d.setDisplayedValues(c(n10));
-        this.f30946d.setMaxValue(this.f30945c.size() - 1);
-    }
-
-    public void a(Calendar calendar) {
-        this.f30946d.b(g(calendar));
-    }
-
-    public String b() {
-        return s(m(f()));
-    }
-
-    public abstract String e();
+    /* renamed from: f  reason: collision with root package name */
+    private Set f31897f = new HashSet();
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public String h(Calendar calendar) {
-        return j(calendar, this.f30943a.u());
+    public g(i iVar, n nVar, e eVar, View view) {
+        this.f31892a = iVar;
+        this.f31894c = eVar;
+        this.f31893b = nVar;
+        this.f31895d = view;
     }
 
-    public String i(int i10) {
-        if (!u()) {
-            return this.f30947e.format(this.f30944b.getTime());
+    private boolean d() {
+        SimpleDateFormat f10 = f();
+        String r10 = this.f31892a.r();
+        try {
+            f10.setLenient(false);
+            f10.parse(r10);
+            return true;
+        } catch (ParseException unused) {
+            return false;
         }
-        int size = this.f30945c.size();
-        return m(((f() + size) - i10) % size);
     }
 
-    public abstract Paint.Align k();
-
-    public String l() {
-        if (!u()) {
-            return this.f30947e.format(this.f30944b.getTime());
+    private Calendar e() {
+        SimpleDateFormat f10 = f();
+        f10.setLenient(false);
+        for (int i10 = 0; i10 < 10; i10++) {
+            try {
+                String s10 = this.f31892a.s(i10);
+                Calendar calendar = Calendar.getInstance(this.f31893b.D());
+                calendar.setTime(f10.parse(s10));
+                return calendar;
+            } catch (ParseException unused) {
+            }
         }
-        return m(f());
+        return null;
     }
 
-    public String m(int i10) {
-        return (String) this.f30945c.get(i10);
+    private SimpleDateFormat f() {
+        TimeZone D = this.f31893b.D();
+        SimpleDateFormat d10 = this.f31894c.d();
+        d10.setTimeZone(D);
+        return d10;
     }
 
-    public abstract ArrayList n();
-
-    public void p() {
-        this.f30947e = new SimpleDateFormat(e(), this.f30943a.u());
-        if (!u()) {
-            return;
+    private Calendar g() {
+        SimpleDateFormat f10 = f();
+        String r10 = this.f31892a.r();
+        Calendar calendar = Calendar.getInstance(this.f31893b.D());
+        try {
+            f10.setLenient(true);
+            calendar.setTime(f10.parse(r10));
+            return calendar;
+        } catch (ParseException e10) {
+            e10.printStackTrace();
+            return null;
         }
-        o();
     }
 
-    public void q(String str) {
-        this.f30946d.setDividerColor(str);
-    }
-
-    public void r(Calendar calendar) {
-        this.f30947e.setTimeZone(this.f30943a.D());
-        this.f30944b = calendar;
-        int g10 = g(calendar);
-        if (g10 > -1) {
-            if (this.f30946d.getValue() == 0) {
-                this.f30946d.setValue(g10);
-            } else {
-                this.f30946d.b(g10);
+    @Override // kl.f
+    public void a(ml.g gVar) {
+        c cVar;
+        if (this.f31892a.A()) {
+            cVar = c.spinning;
+        } else {
+            cVar = c.idle;
+        }
+        if (!cVar.equals(this.f31896e)) {
+            this.f31896e = cVar;
+            com.henninghall.date_picker.e.e(cVar, this.f31893b.q(), this.f31895d);
+            for (d dVar : this.f31897f) {
+                dVar.a(cVar);
             }
         }
     }
 
-    public void t() {
-        int i10;
-        if (u()) {
-            i10 = 0;
-        } else {
-            i10 = 8;
+    @Override // kl.f
+    public void b(ml.g gVar) {
+        if (!this.f31892a.A()) {
+            if (!d()) {
+                Calendar e10 = e();
+                if (e10 != null) {
+                    this.f31894c.c(e10);
+                    return;
+                }
+                return;
+            }
+            Calendar g10 = g();
+            if (g10 == null) {
+                return;
+            }
+            Calendar x10 = this.f31893b.x();
+            if (x10 != null && g10.before(x10)) {
+                this.f31894c.c(x10);
+                return;
+            }
+            Calendar w10 = this.f31893b.w();
+            if (w10 != null && g10.after(w10)) {
+                this.f31894c.c(w10);
+                return;
+            }
+            String e11 = this.f31894c.e();
+            this.f31894c.i(g10);
+            com.henninghall.date_picker.e.d(g10, e11, this.f31893b.q(), this.f31895d);
         }
-        this.f30946d.setVisibility(i10);
     }
 
-    public abstract boolean u();
-
-    public abstract boolean v();
-
-    public String s(String str) {
-        return str;
+    public void c(d dVar) {
+        this.f31897f.add(dVar);
     }
 }

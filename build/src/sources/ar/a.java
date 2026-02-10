@@ -1,125 +1,134 @@
 package ar;
 
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.Matrix;
-import android.graphics.Point;
-import android.net.Uri;
-import android.os.AsyncTask;
-import android.util.Log;
-import android.view.WindowManager;
-import java.io.Closeable;
-import java.io.IOException;
-import java.io.InputStream;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.widget.NestedScrollView;
+import androidx.viewbinding.ViewBinding;
+import com.google.android.material.divider.MaterialDivider;
+import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
+import com.withpersona.sdk2.inquiry.steps.ui.view.ShadowedNestedScrollView;
+import zq.f1;
+import zq.g1;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-    public static int a(BitmapFactory.Options options, int i10, int i11) {
-        int i12 = options.outHeight;
-        int i13 = options.outWidth;
-        int i14 = 1;
-        if (i12 <= i11 && i13 <= i10) {
-            return 1;
-        }
-        while (true) {
-            if (i12 / i14 <= i11 && i13 / i14 <= i10) {
-                return i14;
-            }
-            i14 *= 2;
-        }
+public final class a implements ViewBinding {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final CoordinatorLayout f6027a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final ConstraintLayout f6028b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final FrameLayout f6029c;
+
+    /* renamed from: d  reason: collision with root package name */
+    public final MaterialDivider f6030d;
+
+    /* renamed from: e  reason: collision with root package name */
+    public final LinearLayout f6031e;
+
+    /* renamed from: f  reason: collision with root package name */
+    public final CoordinatorLayout f6032f;
+
+    /* renamed from: g  reason: collision with root package name */
+    public final View f6033g;
+
+    /* renamed from: h  reason: collision with root package name */
+    public final NestedScrollView f6034h;
+
+    /* renamed from: i  reason: collision with root package name */
+    public final Pi2NavigationBar f6035i;
+
+    /* renamed from: j  reason: collision with root package name */
+    public final ShadowedNestedScrollView f6036j;
+
+    /* renamed from: k  reason: collision with root package name */
+    public final ConstraintLayout f6037k;
+
+    /* renamed from: l  reason: collision with root package name */
+    public final FrameLayout f6038l;
+
+    private a(CoordinatorLayout coordinatorLayout, ConstraintLayout constraintLayout, FrameLayout frameLayout, MaterialDivider materialDivider, LinearLayout linearLayout, CoordinatorLayout coordinatorLayout2, View view, NestedScrollView nestedScrollView, Pi2NavigationBar pi2NavigationBar, ShadowedNestedScrollView shadowedNestedScrollView, ConstraintLayout constraintLayout2, FrameLayout frameLayout2) {
+        this.f6027a = coordinatorLayout;
+        this.f6028b = constraintLayout;
+        this.f6029c = frameLayout;
+        this.f6030d = materialDivider;
+        this.f6031e = linearLayout;
+        this.f6032f = coordinatorLayout2;
+        this.f6033g = view;
+        this.f6034h = nestedScrollView;
+        this.f6035i = pi2NavigationBar;
+        this.f6036j = shadowedNestedScrollView;
+        this.f6037k = constraintLayout2;
+        this.f6038l = frameLayout2;
     }
 
-    public static int b(Context context) {
-        WindowManager windowManager = (WindowManager) context.getSystemService("window");
-        Point point = new Point();
-        if (windowManager != null) {
-            windowManager.getDefaultDisplay().getSize(point);
-        }
-        int sqrt = (int) Math.sqrt(Math.pow(point.x, 2.0d) + Math.pow(point.y, 2.0d));
-        Canvas canvas = new Canvas();
-        int min = Math.min(canvas.getMaximumBitmapWidth(), canvas.getMaximumBitmapHeight());
-        if (min > 0) {
-            sqrt = Math.min(sqrt, min);
-        }
-        int b10 = c.b();
-        if (b10 > 0) {
-            sqrt = Math.min(sqrt, b10);
-        }
-        Log.d("BitmapLoadUtils", "maxBitmapSize: " + sqrt);
-        return sqrt;
-    }
-
-    public static void c(Closeable closeable) {
-        if (closeable != null) {
-            try {
-                closeable.close();
-            } catch (IOException unused) {
-            }
-        }
-    }
-
-    public static void d(Context context, Uri uri, Uri uri2, int i10, int i11, xq.b bVar) {
-        new zq.a(context, uri, uri2, i10, i11, bVar).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new Void[0]);
-    }
-
-    public static int e(int i10) {
-        switch (i10) {
-            case 3:
-            case 4:
-                return 180;
-            case 5:
-            case 6:
-                return 90;
-            case 7:
-            case 8:
-                return 270;
-            default:
-                return 0;
-        }
-    }
-
-    public static int f(int i10) {
-        if (i10 != 2 && i10 != 7 && i10 != 4 && i10 != 5) {
-            return 1;
-        }
-        return -1;
-    }
-
-    public static int g(Context context, Uri uri) {
-        int i10 = 0;
-        try {
-            InputStream openInputStream = context.getContentResolver().openInputStream(uri);
-            if (openInputStream == null) {
-                return 0;
-            }
-            i10 = new f(openInputStream).c();
-            c(openInputStream);
-            return i10;
-        } catch (IOException e10) {
-            Log.e("BitmapLoadUtils", "getExifOrientation: " + uri.toString(), e10);
-            return i10;
-        }
-    }
-
-    public static Bitmap h(Bitmap bitmap, Matrix matrix) {
-        Bitmap bitmap2;
-        try {
-            bitmap2 = bitmap;
-            try {
-                Bitmap createBitmap = Bitmap.createBitmap(bitmap2, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
-                if (!bitmap2.sameAs(createBitmap)) {
-                    return createBitmap;
+    public static a a(View view) {
+        View a10;
+        int i10 = f1.f56655d;
+        ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
+        if (constraintLayout != null) {
+            i10 = f1.f56657f;
+            FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
+            if (frameLayout != null) {
+                i10 = f1.f56658g;
+                MaterialDivider materialDivider = (MaterialDivider) e4.a.a(view, i10);
+                if (materialDivider != null) {
+                    i10 = f1.f56659h;
+                    LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
+                    if (linearLayout != null) {
+                        i10 = f1.f56660i;
+                        CoordinatorLayout coordinatorLayout = (CoordinatorLayout) e4.a.a(view, i10);
+                        if (coordinatorLayout != null && (a10 = e4.a.a(view, (i10 = f1.f56661j))) != null) {
+                            i10 = f1.f56663l;
+                            NestedScrollView nestedScrollView = (NestedScrollView) e4.a.a(view, i10);
+                            if (nestedScrollView != null) {
+                                i10 = f1.f56664m;
+                                Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
+                                if (pi2NavigationBar != null) {
+                                    i10 = f1.f56665n;
+                                    ShadowedNestedScrollView shadowedNestedScrollView = (ShadowedNestedScrollView) e4.a.a(view, i10);
+                                    if (shadowedNestedScrollView != null) {
+                                        i10 = f1.f56666o;
+                                        ConstraintLayout constraintLayout2 = (ConstraintLayout) e4.a.a(view, i10);
+                                        if (constraintLayout2 != null) {
+                                            i10 = f1.f56673v;
+                                            FrameLayout frameLayout2 = (FrameLayout) e4.a.a(view, i10);
+                                            if (frameLayout2 != null) {
+                                                return new a((CoordinatorLayout) view, constraintLayout, frameLayout, materialDivider, linearLayout, coordinatorLayout, a10, nestedScrollView, pi2NavigationBar, shadowedNestedScrollView, constraintLayout2, frameLayout2);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-                return bitmap2;
-            } catch (OutOfMemoryError e10) {
-                e = e10;
-                Log.e("BitmapLoadUtils", "transformBitmap: ", e);
-                return bitmap2;
             }
-        } catch (OutOfMemoryError e11) {
-            e = e11;
-            bitmap2 = bitmap;
         }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+    }
+
+    public static a c(LayoutInflater layoutInflater) {
+        return d(layoutInflater, null, false);
+    }
+
+    public static a d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(g1.f56701a, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return a(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public CoordinatorLayout getRoot() {
+        return this.f6027a;
     }
 }

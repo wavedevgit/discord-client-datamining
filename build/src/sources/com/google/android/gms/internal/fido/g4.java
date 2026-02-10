@@ -7,29 +7,29 @@ import java.util.concurrent.TimeUnit;
 final class g4 extends u3 implements ScheduledFuture, c4 {
 
     /* renamed from: e  reason: collision with root package name */
-    private final ScheduledFuture f14111e;
+    private final ScheduledFuture f14688e;
 
     public g4(c4 c4Var, ScheduledFuture scheduledFuture) {
         super(c4Var);
-        this.f14111e = scheduledFuture;
+        this.f14688e = scheduledFuture;
     }
 
     @Override // java.util.concurrent.Future
     public final boolean cancel(boolean z10) {
         boolean cancel = e().cancel(z10);
         if (cancel) {
-            this.f14111e.cancel(z10);
+            this.f14688e.cancel(z10);
         }
         return cancel;
     }
 
     @Override // java.lang.Comparable
     public final /* bridge */ /* synthetic */ int compareTo(Delayed delayed) {
-        return this.f14111e.compareTo(delayed);
+        return this.f14688e.compareTo(delayed);
     }
 
     @Override // java.util.concurrent.Delayed
     public final long getDelay(TimeUnit timeUnit) {
-        return this.f14111e.getDelay(timeUnit);
+        return this.f14688e.getDelay(timeUnit);
     }
 }

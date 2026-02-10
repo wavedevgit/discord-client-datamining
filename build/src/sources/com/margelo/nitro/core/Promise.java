@@ -2,6 +2,7 @@ package com.margelo.nitro.core;
 
 import androidx.annotation.Keep;
 import com.facebook.jni.HybridData;
+import fs.d;
 import kotlin.Metadata;
 import kotlin.Result;
 import kotlin.Unit;
@@ -15,8 +16,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.i;
 import org.jetbrains.annotations.NotNull;
-import ps.m0;
-import wr.d;
+import ys.m0;
 @Keep
 @Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u0003\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\r\b\u0007\u0018\u0000 $*\u0004\b\u0000\u0010\u00012\u00020\u0002:\u0003%&'B\t\b\u0016¢\u0006\u0004\b\u0003\u0010\u0004B\u0011\b\u0013\u0012\u0006\u0010\u0006\u001a\u00020\u0005¢\u0006\u0004\b\u0003\u0010\u0007J\u001a\u0010\n\u001a\u00020\t2\b\u0010\b\u001a\u0004\u0018\u00010\u0002H\u0082 ¢\u0006\u0004\b\n\u0010\u000bJ\u0018\u0010\u000e\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\fH\u0082 ¢\u0006\u0004\b\u000e\u0010\u000fJ\u0018\u0010\u0012\u001a\u00020\t2\u0006\u0010\u0011\u001a\u00020\u0010H\u0082 ¢\u0006\u0004\b\u0012\u0010\u0013J\u0018\u0010\u0015\u001a\u00020\t2\u0006\u0010\u0011\u001a\u00020\u0014H\u0082 ¢\u0006\u0004\b\u0015\u0010\u0016J\u0010\u0010\u0017\u001a\u00020\u0005H\u0082 ¢\u0006\u0004\b\u0017\u0010\u0018J\u0015\u0010\u0019\u001a\u00020\t2\u0006\u0010\b\u001a\u00028\u0000¢\u0006\u0004\b\u0019\u0010\u000bJ\u0015\u0010\u001a\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\f¢\u0006\u0004\b\u001a\u0010\u000fJ'\u0010\u001d\u001a\b\u0012\u0004\u0012\u00028\u00000\u00002\u0012\u0010\u001c\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\t0\u001b¢\u0006\u0004\b\u001d\u0010\u001eJ'\u0010\u001f\u001a\b\u0012\u0004\u0012\u00028\u00000\u00002\u0012\u0010\u001c\u001a\u000e\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\t0\u001b¢\u0006\u0004\b\u001f\u0010\u001eJ\u0010\u0010 \u001a\u00028\u0000H\u0086@¢\u0006\u0004\b \u0010!R\u0014\u0010\"\u001a\u00020\u00058\u0002X\u0083\u0004¢\u0006\u0006\n\u0004\b\"\u0010#¨\u0006("}, d2 = {"Lcom/margelo/nitro/core/Promise;", "T", "", "<init>", "()V", "Lcom/facebook/jni/HybridData;", "hybridData", "(Lcom/facebook/jni/HybridData;)V", "result", "", "nativeResolve", "(Ljava/lang/Object;)V", "", "error", "nativeReject", "(Ljava/lang/Throwable;)V", "Lcom/margelo/nitro/core/Promise$OnResolvedCallback;", "callback", "addOnResolvedListener", "(Lcom/margelo/nitro/core/Promise$OnResolvedCallback;)V", "Lcom/margelo/nitro/core/Promise$OnRejectedCallback;", "addOnRejectedListener", "(Lcom/margelo/nitro/core/Promise$OnRejectedCallback;)V", "initHybrid", "()Lcom/facebook/jni/HybridData;", "resolve", "reject", "Lkotlin/Function1;", "listener", "then", "(Lkotlin/jvm/functions/Function1;)Lcom/margelo/nitro/core/Promise;", "catch", "await", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "mHybridData", "Lcom/facebook/jni/HybridData;", "Companion", "OnResolvedCallback", "OnRejectedCallback", "a", "react-native-nitro-modules_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @gb.a
@@ -59,34 +59,34 @@ public final class Promise<T> {
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: com.margelo.nitro.core.Promise$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0225a extends k implements Function2 {
+        public static final class C0206a extends k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f17371d;
+            int f18120d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Function1 f17372e;
+            final /* synthetic */ Function1 f18121e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Promise f17373i;
+            final /* synthetic */ Promise f18122i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0225a(Function1 function1, Promise promise, Continuation continuation) {
+            C0206a(Function1 function1, Promise promise, Continuation continuation) {
                 super(2, continuation);
-                this.f17372e = function1;
-                this.f17373i = promise;
+                this.f18121e = function1;
+                this.f18122i = promise;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new C0225a(this.f17372e, this.f17373i, continuation);
+                return new C0206a(this.f18121e, this.f18122i, continuation);
             }
 
             /* JADX WARN: Multi-variable type inference failed */
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                Object f10 = xr.b.f();
-                int i10 = this.f17371d;
+                Object f10 = gs.b.f();
+                int i10 = this.f18120d;
                 try {
                     if (i10 != 0) {
                         if (i10 == 1) {
@@ -96,23 +96,23 @@ public final class Promise<T> {
                         }
                     } else {
                         kotlin.c.b(obj);
-                        Function1 function1 = this.f17372e;
-                        this.f17371d = 1;
+                        Function1 function1 = this.f18121e;
+                        this.f18120d = 1;
                         obj = function1.invoke(this);
                         if (obj == f10) {
                             return f10;
                         }
                     }
-                    this.f17373i.resolve(obj);
+                    this.f18122i.resolve(obj);
                 } catch (Throwable th2) {
-                    this.f17373i.reject(th2);
+                    this.f18122i.reject(th2);
                 }
-                return Unit.f31765a;
+                return Unit.f31987a;
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((C0225a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
+                return ((C0206a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
             }
         }
 
@@ -131,7 +131,7 @@ public final class Promise<T> {
             Intrinsics.checkNotNullParameter(scope, "scope");
             Intrinsics.checkNotNullParameter(run, "run");
             Promise promise = new Promise();
-            ps.i.d(scope, null, null, new C0225a(run, promise, null), 3, null);
+            ys.i.d(scope, null, null, new C0206a(run, promise, null), 3, null);
             return promise;
         }
 
@@ -143,20 +143,20 @@ public final class Promise<T> {
     static final class b implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Continuation f17374d;
+        final /* synthetic */ Continuation f18123d;
 
         b(Continuation continuation) {
-            this.f17374d = continuation;
+            this.f18123d = continuation;
         }
 
         public final void a(Object obj) {
-            this.f17374d.resumeWith(Result.b(obj));
+            this.f18123d.resumeWith(Result.b(obj));
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a(obj);
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
     }
 
@@ -164,23 +164,23 @@ public final class Promise<T> {
     static final class c implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Continuation f17375d;
+        final /* synthetic */ Continuation f18124d;
 
         c(Continuation continuation) {
-            this.f17375d = continuation;
+            this.f18124d = continuation;
         }
 
         public final void a(Throwable error) {
             Intrinsics.checkNotNullParameter(error, "error");
-            Continuation continuation = this.f17375d;
-            Result.a aVar = Result.f31762e;
+            Continuation continuation = this.f18124d;
+            Result.a aVar = Result.f31984e;
             continuation.resumeWith(Result.b(kotlin.c.a(error)));
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((Throwable) obj);
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
     }
 
@@ -211,11 +211,11 @@ public final class Promise<T> {
     }
 
     public final Object await(@NotNull Continuation<? super T> continuation) {
-        d dVar = new d(xr.b.c(continuation));
+        d dVar = new d(gs.b.c(continuation));
         then(new b(dVar));
-        m1169catch(new c(dVar));
+        m1170catch(new c(dVar));
         Object b10 = dVar.b();
-        if (b10 == xr.b.f()) {
+        if (b10 == gs.b.f()) {
             g.c(continuation);
         }
         return b10;
@@ -223,7 +223,7 @@ public final class Promise<T> {
 
     @NotNull
     /* renamed from: catch  reason: not valid java name */
-    public final Promise<T> m1169catch(@NotNull Function1<? super Throwable, Unit> listener) {
+    public final Promise<T> m1170catch(@NotNull Function1<? super Throwable, Unit> listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
         addOnRejectedListener(new com.margelo.nitro.core.c(listener));
         return this;

@@ -31,14 +31,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/row_data/embeds/PremiumGroupInviteEmbed.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2, arg3() {
-        _fun56495: for (var _fun56495_ip = 0;;) switch (_fun56495_ip) {
+        _fun56548: for (var _fun56548_ip = 0;;) switch (_fun56548_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.author;
                 var1 = null;
                 if (!(var1 != var2)) {
-                    _fun56495_ip = 371;
-                    continue _fun56495
+                    _fun56548_ip = 371;
+                    continue _fun56548
                 }
             case 18:
                 var3 = _closure1_slot0;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.inviteState = var9;
                 var0 = var3.bind(var6)(var0);
                 if (!(var1 == var0)) {
-                    _fun56495_ip = 375;
-                    continue _fun56495
+                    _fun56548_ip = 375;
+                    continue _fun56548
                 }
             case 371:
                 var1 = undefined;
@@ -174,4 +174,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createPremiumGroupInviteEmbed = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3126, 1297, 671, 6713, 6839, 6840, 1234, 2438, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3126, 1297, 671, 6723, 6849, 6850, 1234, 2438, 2]);

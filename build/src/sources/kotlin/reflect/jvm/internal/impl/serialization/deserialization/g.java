@@ -8,24 +8,24 @@ import kotlin.reflect.jvm.internal.impl.protobuf.MessageLite;
 public class g implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final MemberDeserializer f34239d;
+    private final MemberDeserializer f34461d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final MessageLite f34240e;
+    private final MessageLite f34462e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final AnnotatedCallableKind f34241i;
+    private final AnnotatedCallableKind f34463i;
 
     public g(MemberDeserializer memberDeserializer, MessageLite messageLite, AnnotatedCallableKind annotatedCallableKind) {
-        this.f34239d = memberDeserializer;
-        this.f34240e = messageLite;
-        this.f34241i = annotatedCallableKind;
+        this.f34461d = memberDeserializer;
+        this.f34462e = messageLite;
+        this.f34463i = annotatedCallableKind;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List k10;
-        k10 = MemberDeserializer.k(this.f34239d, this.f34240e, this.f34241i);
+        k10 = MemberDeserializer.k(this.f34461d, this.f34462e, this.f34463i);
         return k10;
     }
 }

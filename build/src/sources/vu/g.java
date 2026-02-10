@@ -1,68 +1,108 @@
 package vu;
 
+import java.security.KeyStore;
+import java.security.Provider;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import kotlin.collections.o0;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.TrustManagerFactory;
+import javax.net.ssl.X509TrustManager;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import rr.v;
-import vu.a;
+import org.openjsse.net.ssl.OpenJSSE;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g implements tu.a, a {
+public final class g extends h {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final g f53002a = new g();
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f52012e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final boolean f52013f;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Provider f52014d;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final g a() {
+            if (!b()) {
+                return null;
+            }
+            return new g(null);
+        }
+
+        public final boolean b() {
+            return g.f52013f;
+        }
+
+        private a() {
+        }
+    }
+
+    static {
+        a aVar = new a(null);
+        f52012e = aVar;
+        boolean z10 = false;
+        try {
+            Class.forName("org.openjsse.net.ssl.OpenJSSE", false, aVar.getClass().getClassLoader());
+            z10 = true;
+        } catch (ClassNotFoundException unused) {
+        }
+        f52013f = z10;
+    }
+
+    public /* synthetic */ g(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    @Override // vu.h
+    public void e(SSLSocket sslSocket, String str, List protocols) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Intrinsics.checkNotNullParameter(protocols, "protocols");
+        super.e(sslSocket, str, protocols);
+    }
+
+    @Override // vu.h
+    public String h(SSLSocket sslSocket) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        return super.h(sslSocket);
+    }
+
+    @Override // vu.h
+    public SSLContext n() {
+        SSLContext sSLContext = SSLContext.getInstance("TLSv1.3", this.f52014d);
+        Intrinsics.checkNotNullExpressionValue(sSLContext, "getInstance(\"TLSv1.3\", provider)");
+        return sSLContext;
+    }
+
+    @Override // vu.h
+    public X509TrustManager p() {
+        TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm(), this.f52014d);
+        trustManagerFactory.init((KeyStore) null);
+        TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();
+        Intrinsics.checkNotNull(trustManagers);
+        if (trustManagers.length == 1) {
+            TrustManager trustManager = trustManagers[0];
+            if (trustManager instanceof X509TrustManager) {
+                Intrinsics.checkNotNull(trustManager, "null cannot be cast to non-null type javax.net.ssl.X509TrustManager");
+                return (X509TrustManager) trustManager;
+            }
+        }
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("Unexpected default trust managers: ");
+        String arrays = Arrays.toString(trustManagers);
+        Intrinsics.checkNotNullExpressionValue(arrays, "toString(this)");
+        sb2.append(arrays);
+        throw new IllegalStateException(sb2.toString().toString());
+    }
 
     private g() {
-    }
-
-    private final Object g(b bVar, Object obj, h hVar) {
-        List<Object> b10 = bVar.b();
-        if (b10 != null) {
-            Object obj2 = obj;
-            for (Object obj3 : b10) {
-                obj2 = f53002a.h(hVar, obj2, obj3, bVar.a());
-                if (obj2 == null) {
-                    return bVar.c();
-                }
-            }
-            if (obj2 != null) {
-                return obj2;
-            }
-        }
-        return obj;
-    }
-
-    private final Object h(h hVar, Object obj, Object obj2, Map map) {
-        if (map != null) {
-            return hVar.a(map, f53002a.i(obj, obj2));
-        }
-        return null;
-    }
-
-    private final Map i(Object obj, Object obj2) {
-        return o0.m(v.a("accumulator", obj), v.a("current", obj2));
-    }
-
-    @Override // vu.a
-    public Object a(Map map, List list) {
-        return a.C0728a.b(this, map, list);
-    }
-
-    @Override // vu.a
-    public b c(List list, Object obj, h hVar) {
-        return a.C0728a.a(this, list, obj, hVar);
-    }
-
-    @Override // tu.a
-    public Object d(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        List c10 = dw.a.c(obj);
-        g gVar = f53002a;
-        return gVar.g(gVar.c(c10, obj2, evaluator), dw.c.c(c10), evaluator);
-    }
-
-    @Override // cw.a
-    public List f(List list, Object obj, h hVar) {
-        return a.C0728a.c(this, list, obj, hVar);
+        this.f52014d = new OpenJSSE();
     }
 }

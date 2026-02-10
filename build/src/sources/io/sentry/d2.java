@@ -4,7 +4,7 @@ import io.sentry.k0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class d2 implements k0 {
     @Override // io.sentry.k0
-    public boolean K1(k0.b bVar) {
+    public boolean O1(k0.b bVar) {
         return false;
     }
 
@@ -13,12 +13,12 @@ public final class d2 implements k0 {
         return null;
     }
 
-    @Override // io.sentry.k0
-    public void X1(k0.b bVar) {
-    }
-
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
+    }
+
+    @Override // io.sentry.k0
+    public void d2(k0.b bVar) {
     }
 
     @Override // io.sentry.k0

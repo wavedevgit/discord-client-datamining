@@ -8,10 +8,10 @@ import android.view.View;
 public class FragmentController {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FragmentHostCallback f4229a;
+    private final FragmentHostCallback f4239a;
 
     private FragmentController(FragmentHostCallback fragmentHostCallback) {
-        this.f4229a = fragmentHostCallback;
+        this.f4239a = fragmentHostCallback;
     }
 
     public static FragmentController b(FragmentHostCallback fragmentHostCallback) {
@@ -19,56 +19,56 @@ public class FragmentController {
     }
 
     public void a(Fragment fragment) {
-        FragmentManager h10 = this.f4229a.h();
-        FragmentHostCallback fragmentHostCallback = this.f4229a;
-        h10.p(fragmentHostCallback, fragmentHostCallback, fragment);
+        FragmentManager h10 = this.f4239a.h();
+        FragmentHostCallback fragmentHostCallback = this.f4239a;
+        h10.q(fragmentHostCallback, fragmentHostCallback, fragment);
     }
 
     public void c() {
-        this.f4229a.h().C();
+        this.f4239a.h().D();
     }
 
     public boolean d(MenuItem menuItem) {
-        return this.f4229a.h().F(menuItem);
+        return this.f4239a.h().G(menuItem);
     }
 
     public void e() {
-        this.f4229a.h().G();
+        this.f4239a.h().H();
     }
 
     public void f() {
-        this.f4229a.h().I();
+        this.f4239a.h().J();
     }
 
     public void g() {
-        this.f4229a.h().R();
+        this.f4239a.h().S();
     }
 
     public void h() {
-        this.f4229a.h().V();
+        this.f4239a.h().W();
     }
 
     public void i() {
-        this.f4229a.h().W();
+        this.f4239a.h().X();
     }
 
     public void j() {
-        this.f4229a.h().Y();
+        this.f4239a.h().Z();
     }
 
     public boolean k() {
-        return this.f4229a.h().f0(true);
+        return this.f4239a.h().g0(true);
     }
 
     public FragmentManager l() {
-        return this.f4229a.h();
+        return this.f4239a.h();
     }
 
     public void m() {
-        this.f4229a.h().a1();
+        this.f4239a.h().b1();
     }
 
     public View n(View view, String str, Context context, AttributeSet attributeSet) {
-        return this.f4229a.h().C0().onCreateView(view, str, context, attributeSet);
+        return this.f4239a.h().D0().onCreateView(view, str, context, attributeSet);
     }
 }

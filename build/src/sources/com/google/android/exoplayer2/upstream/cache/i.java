@@ -8,22 +8,22 @@ import oe.w0;
 public final class i extends BufferedOutputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f13517d;
+    private boolean f14094d;
 
     public i(OutputStream outputStream) {
         super(outputStream);
     }
 
     public void a(OutputStream outputStream) {
-        oe.a.g(this.f13517d);
+        oe.a.g(this.f14094d);
         ((BufferedOutputStream) this).out = outputStream;
         ((BufferedOutputStream) this).count = 0;
-        this.f13517d = false;
+        this.f14094d = false;
     }
 
     @Override // java.io.FilterOutputStream, java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f13517d = true;
+        this.f14094d = true;
         try {
             flush();
             th = null;

@@ -5,13 +5,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile n f27948a = n.INITIAL;
+    private volatile n f28883a = n.INITIAL;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f27949a;
+        public static final /* synthetic */ int[] f28884a;
 
         static {
             int[] iArr = new int[n.values().length];
@@ -39,17 +39,17 @@ public final class m {
                 iArr[n.CLOSED.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
-            f27949a = iArr;
+            f28884a = iArr;
         }
     }
 
     public final n a() {
-        return this.f27948a;
+        return this.f28883a;
     }
 
     public final boolean b(n newState) {
         Intrinsics.checkNotNullParameter(newState, "newState");
-        switch (a.f27949a[this.f27948a.ordinal()]) {
+        switch (a.f28884a[this.f28883a.ordinal()]) {
             case 1:
                 if (newState == n.STARTED || newState == n.CLOSED) {
                     return true;
@@ -78,12 +78,12 @@ public final class m {
             case 6:
                 return false;
             default:
-                throw new rr.p();
+                throw new as.p();
         }
     }
 
     public final boolean c() {
-        if (this.f27948a != n.STARTED && this.f27948a != n.RESUMED) {
+        if (this.f28883a != n.STARTED && this.f28883a != n.RESUMED) {
             return false;
         }
         return true;
@@ -91,6 +91,6 @@ public final class m {
 
     public final void d(n nVar) {
         Intrinsics.checkNotNullParameter(nVar, "<set-?>");
-        this.f27948a = nVar;
+        this.f28883a = nVar;
     }
 }

@@ -1,21 +1,16 @@
 package qr;
 
-import android.content.Context;
+import android.graphics.Bitmap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class b {
+public abstract /* synthetic */ class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f47210a;
+    public static final /* synthetic */ int[] f45649a;
 
-    public b(float f10) {
-        this.f47210a = f10;
-    }
-
-    public static b a(Context context) {
-        return new b(context.getResources().getDisplayMetrics().density);
-    }
-
-    public int b(int i10) {
-        return (int) ((i10 * this.f47210a) + 0.5f);
+    static {
+        int[] iArr = new int[Bitmap.CompressFormat.values().length];
+        f45649a = iArr;
+        iArr[Bitmap.CompressFormat.PNG.ordinal()] = 1;
+        iArr[Bitmap.CompressFormat.WEBP.ordinal()] = 2;
     }
 }

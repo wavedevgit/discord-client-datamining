@@ -11,19 +11,19 @@ import java.util.concurrent.TimeUnit;
 public class f implements RunnableFuture, ScheduledFuture {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Handler f37987d;
+    private final Handler f36991d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final FutureTask f37988e;
+    private final FutureTask f36992e;
 
     public f(Handler handler, Callable callable) {
-        this.f37987d = handler;
-        this.f37988e = new FutureTask(callable);
+        this.f36991d = handler;
+        this.f36992e = new FutureTask(callable);
     }
 
     @Override // java.util.concurrent.Future
     public boolean cancel(boolean z10) {
-        return this.f37988e.cancel(z10);
+        return this.f36992e.cancel(z10);
     }
 
     @Override // java.lang.Comparable
@@ -34,7 +34,7 @@ public class f implements RunnableFuture, ScheduledFuture {
 
     @Override // java.util.concurrent.Future
     public Object get() {
-        return this.f37988e.get();
+        return this.f36992e.get();
     }
 
     @Override // java.util.concurrent.Delayed
@@ -44,26 +44,26 @@ public class f implements RunnableFuture, ScheduledFuture {
 
     @Override // java.util.concurrent.Future
     public boolean isCancelled() {
-        return this.f37988e.isCancelled();
+        return this.f36992e.isCancelled();
     }
 
     @Override // java.util.concurrent.Future
     public boolean isDone() {
-        return this.f37988e.isDone();
+        return this.f36992e.isDone();
     }
 
     @Override // java.util.concurrent.RunnableFuture, java.lang.Runnable
     public void run() {
-        this.f37988e.run();
+        this.f36992e.run();
     }
 
     @Override // java.util.concurrent.Future
     public Object get(long j10, TimeUnit timeUnit) {
-        return this.f37988e.get(j10, timeUnit);
+        return this.f36992e.get(j10, timeUnit);
     }
 
     public f(Handler handler, Runnable runnable, Object obj) {
-        this.f37987d = handler;
-        this.f37988e = new FutureTask(runnable, obj);
+        this.f36991d = handler;
+        this.f36992e = new FutureTask(runnable, obj);
     }
 }

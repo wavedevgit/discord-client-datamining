@@ -5,39 +5,39 @@ import e5.c;
 public final class e implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f21149a;
+    private final h f22316a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i f21150b;
+    private final i f22317b;
 
     public e(h hVar, i iVar) {
-        this.f21149a = hVar;
-        this.f21150b = iVar;
+        this.f22316a = hVar;
+        this.f22317b = iVar;
     }
 
     @Override // e5.c
     public void a(int i10) {
-        this.f21149a.a(i10);
-        this.f21150b.a(i10);
+        this.f22316a.a(i10);
+        this.f22317b.a(i10);
     }
 
     @Override // e5.c
-    public c.C0315c b(c.b bVar) {
-        c.C0315c b10 = this.f21149a.b(bVar);
+    public c.C0302c b(c.b bVar) {
+        c.C0302c b10 = this.f22316a.b(bVar);
         if (b10 == null) {
-            return this.f21150b.b(bVar);
+            return this.f22317b.b(bVar);
         }
         return b10;
     }
 
     @Override // e5.c
-    public void c(c.b bVar, c.C0315c c0315c) {
-        this.f21149a.d(c.b.b(bVar, null, k5.c.b(bVar.c()), 1, null), c0315c.a(), k5.c.b(c0315c.b()));
+    public void c(c.b bVar, c.C0302c c0302c) {
+        this.f22316a.d(c.b.b(bVar, null, k5.c.b(bVar.c()), 1, null), c0302c.a(), k5.c.b(c0302c.b()));
     }
 
     @Override // e5.c
     public void clear() {
-        this.f21149a.c();
-        this.f21150b.c();
+        this.f22316a.c();
+        this.f22317b.c();
     }
 }

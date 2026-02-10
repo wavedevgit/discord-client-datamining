@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.utils.DFS;
 public class c implements DFS.Neighbors {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f33928a;
+    private final boolean f34150a;
 
     public c(boolean z10) {
-        this.f33928a = z10;
+        this.f34150a = z10;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.utils.DFS.Neighbors
     public Iterable getNeighbors(Object obj) {
         Iterable g10;
-        g10 = DescriptorUtilsKt.g(this.f33928a, (CallableMemberDescriptor) obj);
+        g10 = DescriptorUtilsKt.g(this.f34150a, (CallableMemberDescriptor) obj);
         return g10;
     }
 }

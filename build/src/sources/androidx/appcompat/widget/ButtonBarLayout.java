@@ -10,23 +10,23 @@ import androidx.annotation.NonNull;
 public class ButtonBarLayout extends LinearLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f1614d;
+    private boolean f1616d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f1615e;
+    private boolean f1617e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f1616i;
+    private int f1618i;
 
     public ButtonBarLayout(@NonNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f1616i = -1;
+        this.f1618i = -1;
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.N0);
-        androidx.core.view.h0.l0(this, context, f.j.N0, attributeSet, obtainStyledAttributes, 0, 0);
-        this.f1614d = obtainStyledAttributes.getBoolean(f.j.O0, true);
+        androidx.core.view.i0.i0(this, context, f.j.N0, attributeSet, obtainStyledAttributes, 0, 0);
+        this.f1616d = obtainStyledAttributes.getBoolean(f.j.O0, true);
         obtainStyledAttributes.recycle();
         if (getOrientation() == 1) {
-            setStacked(this.f1614d);
+            setStacked(this.f1616d);
         }
     }
 
@@ -42,15 +42,15 @@ public class ButtonBarLayout extends LinearLayout {
     }
 
     private boolean b() {
-        return this.f1615e;
+        return this.f1617e;
     }
 
     private void setStacked(boolean z10) {
         int i10;
         int i11;
-        if (this.f1615e != z10) {
-            if (!z10 || this.f1614d) {
-                this.f1615e = z10;
+        if (this.f1617e != z10) {
+            if (!z10 || this.f1616d) {
+                this.f1617e = z10;
                 setOrientation(z10 ? 1 : 0);
                 if (z10) {
                     i10 = 8388613;
@@ -80,11 +80,11 @@ public class ButtonBarLayout extends LinearLayout {
         boolean z10;
         int size = View.MeasureSpec.getSize(i10);
         int i13 = 0;
-        if (this.f1614d) {
-            if (size > this.f1616i && b()) {
+        if (this.f1616d) {
+            if (size > this.f1618i && b()) {
                 setStacked(false);
             }
-            this.f1616i = size;
+            this.f1618i = size;
         }
         if (!b() && View.MeasureSpec.getMode(i10) == 1073741824) {
             i12 = View.MeasureSpec.makeMeasureSpec(size, Integer.MIN_VALUE);
@@ -94,7 +94,7 @@ public class ButtonBarLayout extends LinearLayout {
             z10 = false;
         }
         super.onMeasure(i12, i11);
-        if (this.f1614d && !b() && (getMeasuredWidthAndState() & (-16777216)) == 16777216) {
+        if (this.f1616d && !b() && (getMeasuredWidthAndState() & (-16777216)) == 16777216) {
             setStacked(true);
             z10 = true;
         }
@@ -116,7 +116,7 @@ public class ButtonBarLayout extends LinearLayout {
                 i13 = paddingTop + getPaddingBottom();
             }
         }
-        if (androidx.core.view.h0.A(this) != i13) {
+        if (androidx.core.view.i0.z(this) != i13) {
             setMinimumHeight(i13);
             if (i11 == 0) {
                 super.onMeasure(i10, i11);
@@ -125,8 +125,8 @@ public class ButtonBarLayout extends LinearLayout {
     }
 
     public void setAllowStacking(boolean z10) {
-        if (this.f1614d != z10) {
-            this.f1614d = z10;
+        if (this.f1616d != z10) {
+            this.f1616d = z10;
             if (!z10 && b()) {
                 setStacked(false);
             }

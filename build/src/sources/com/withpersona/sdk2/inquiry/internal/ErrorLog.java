@@ -8,25 +8,25 @@ import kotlin.jvm.internal.Intrinsics;
 public final class ErrorLog {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f18809a;
+    private final String f19689a;
 
     public ErrorLog(String str) {
-        this.f18809a = str;
+        this.f19689a = str;
     }
 
     public final String a() {
-        return this.f18809a;
+        return this.f19689a;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof ErrorLog) && Intrinsics.areEqual(this.f18809a, ((ErrorLog) obj).f18809a);
+        return (obj instanceof ErrorLog) && Intrinsics.areEqual(this.f19689a, ((ErrorLog) obj).f19689a);
     }
 
     public int hashCode() {
-        String str = this.f18809a;
+        String str = this.f19689a;
         if (str == null) {
             return 0;
         }
@@ -34,7 +34,7 @@ public final class ErrorLog {
     }
 
     public String toString() {
-        String str = this.f18809a;
+        String str = this.f19689a;
         return "ErrorLog(info=" + str + ")";
     }
 }

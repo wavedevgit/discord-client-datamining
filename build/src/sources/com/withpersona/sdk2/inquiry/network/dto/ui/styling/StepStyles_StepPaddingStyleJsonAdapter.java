@@ -45,7 +45,7 @@ public final class StepStyles_StepPaddingStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 stepPaddingStyleContainer = (StepStyles.StepPaddingStyleContainer) this.nullableStepPaddingStyleContainerAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class StepStyles_StepPaddingStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.StepPaddingStyle stepPaddingStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepPaddingStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("modal");
             this.nullableStepPaddingStyleContainerAdapter.toJson(writer, stepPaddingStyle.getModal());
             writer.s();

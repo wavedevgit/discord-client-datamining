@@ -11,31 +11,31 @@ public class d extends jf.a {
     public static final Parcelable.Creator<d> CREATOR = new r();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f13907d;
+    private final String f14484d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f13908e;
+    private final int f14485e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final long f13909i;
+    private final long f14486i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f13910o;
+    private final boolean f14487o;
 
     public d(String str, int i10, long j10, boolean z10) {
-        this.f13907d = str;
-        this.f13908e = i10;
-        this.f13909i = j10;
-        this.f13910o = z10;
+        this.f14484d = str;
+        this.f14485e = i10;
+        this.f14486i = j10;
+        this.f14487o = z10;
     }
 
     public boolean b() {
-        return this.f13910o;
+        return this.f14487o;
     }
 
     public long c() {
-        long j10 = this.f13909i;
-        return j10 == -1 ? this.f13908e : j10;
+        long j10 = this.f14486i;
+        return j10 == -1 ? this.f14485e : j10;
     }
 
     public final boolean equals(Object obj) {
@@ -49,7 +49,7 @@ public class d extends jf.a {
     }
 
     public String getName() {
-        return this.f13907d;
+        return this.f14484d;
     }
 
     public final int hashCode() {
@@ -68,7 +68,7 @@ public class d extends jf.a {
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = jf.c.a(parcel);
         jf.c.s(parcel, 1, getName(), false);
-        jf.c.l(parcel, 2, this.f13908e);
+        jf.c.l(parcel, 2, this.f14485e);
         jf.c.o(parcel, 3, c());
         jf.c.c(parcel, 4, b());
         jf.c.b(parcel, a10);

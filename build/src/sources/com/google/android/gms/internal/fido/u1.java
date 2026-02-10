@@ -5,62 +5,62 @@ import java.util.Iterator;
 final class u1 extends h1 {
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Object[] f14227s;
+    private static final Object[] f14804s;
 
     /* renamed from: t  reason: collision with root package name */
-    static final u1 f14228t;
+    static final u1 f14805t;
 
     /* renamed from: i  reason: collision with root package name */
-    final transient Object[] f14229i;
+    final transient Object[] f14806i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f14230o;
+    private final transient int f14807o;
 
     /* renamed from: p  reason: collision with root package name */
-    final transient Object[] f14231p;
+    final transient Object[] f14808p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient int f14232q;
+    private final transient int f14809q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient int f14233r;
+    private final transient int f14810r;
 
     static {
         Object[] objArr = new Object[0];
-        f14227s = objArr;
-        f14228t = new u1(objArr, 0, objArr, 0, 0);
+        f14804s = objArr;
+        f14805t = new u1(objArr, 0, objArr, 0, 0);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u1(Object[] objArr, int i10, Object[] objArr2, int i11, int i12) {
-        this.f14229i = objArr;
-        this.f14230o = i10;
-        this.f14231p = objArr2;
-        this.f14232q = i11;
-        this.f14233r = i12;
+        this.f14806i = objArr;
+        this.f14807o = i10;
+        this.f14808p = objArr2;
+        this.f14809q = i11;
+        this.f14810r = i12;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final int b(Object[] objArr, int i10) {
-        System.arraycopy(this.f14229i, 0, objArr, 0, this.f14233r);
-        return this.f14233r;
+        System.arraycopy(this.f14806i, 0, objArr, 0, this.f14810r);
+        return this.f14810r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final int c() {
-        return this.f14233r;
+        return this.f14810r;
     }
 
     @Override // com.google.android.gms.internal.fido.z0, java.util.AbstractCollection, java.util.Collection, java.util.List
     public final boolean contains(Object obj) {
         if (obj != null) {
-            Object[] objArr = this.f14231p;
+            Object[] objArr = this.f14808p;
             if (objArr.length != 0) {
                 int a10 = y0.a(obj.hashCode());
                 while (true) {
-                    int i10 = a10 & this.f14232q;
+                    int i10 = a10 & this.f14809q;
                     Object obj2 = objArr[i10];
                     if (obj2 == null) {
                         return false;
@@ -83,37 +83,37 @@ final class u1 extends h1 {
 
     @Override // com.google.android.gms.internal.fido.h1, com.google.android.gms.internal.fido.z0
     public final c2 e() {
-        return j().listIterator(0);
+        return k().listIterator(0);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final Object[] f() {
-        return this.f14229i;
-    }
-
-    @Override // com.google.android.gms.internal.fido.h1
-    final boolean h() {
-        return true;
+        return this.f14806i;
     }
 
     @Override // com.google.android.gms.internal.fido.h1, java.util.Collection, java.util.Set
     public final int hashCode() {
-        return this.f14230o;
+        return this.f14807o;
+    }
+
+    @Override // com.google.android.gms.internal.fido.h1
+    final boolean i() {
+        return true;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final /* synthetic */ Iterator iterator() {
-        return j().listIterator(0);
+        return k().listIterator(0);
     }
 
     @Override // com.google.android.gms.internal.fido.h1
     final e1 l() {
-        return e1.i(this.f14229i, this.f14233r);
+        return e1.j(this.f14806i, this.f14810r);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f14233r;
+        return this.f14810r;
     }
 }

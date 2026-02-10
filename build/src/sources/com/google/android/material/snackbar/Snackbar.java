@@ -19,10 +19,10 @@ import bh.h;
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class Snackbar extends BaseTransientBottomBar {
+    private static final int[] I;
     private static final int[] J;
-    private static final int[] K;
-    private final AccessibilityManager H;
-    private boolean I;
+    private final AccessibilityManager G;
+    private boolean H;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class SnackbarLayout extends BaseTransientBottomBar.t {
@@ -84,17 +84,17 @@ public class Snackbar extends BaseTransientBottomBar {
     }
 
     static {
-        int i10 = bh.b.V;
-        J = new int[]{i10};
-        K = new int[]{i10, bh.b.X};
+        int i10 = bh.b.f6726b0;
+        I = new int[]{i10};
+        J = new int[]{i10, bh.b.f6730d0};
     }
 
     private Snackbar(Context context, ViewGroup viewGroup, View view, com.google.android.material.snackbar.a aVar) {
         super(context, viewGroup, view, aVar);
-        this.H = (AccessibilityManager) viewGroup.getContext().getSystemService("accessibility");
+        this.G = (AccessibilityManager) viewGroup.getContext().getSystemService("accessibility");
     }
 
-    private static ViewGroup h0(View view) {
+    private static ViewGroup g0(View view) {
         ViewGroup viewGroup = null;
         while (!(view instanceof CoordinatorLayout)) {
             if (view instanceof FrameLayout) {
@@ -120,16 +120,16 @@ public class Snackbar extends BaseTransientBottomBar {
         return (ViewGroup) view;
     }
 
-    private SnackbarContentLayout i0() {
-        return (SnackbarContentLayout) this.f15454i.getChildAt(0);
+    private SnackbarContentLayout h0() {
+        return (SnackbarContentLayout) this.f16205i.getChildAt(0);
     }
 
-    private TextView j0() {
-        return i0().getMessageView();
+    private TextView i0() {
+        return h0().getMessageView();
     }
 
-    private static boolean k0(Context context) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(K);
+    private static boolean j0(Context context) {
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(J);
         int resourceId = obtainStyledAttributes.getResourceId(0, -1);
         int resourceId2 = obtainStyledAttributes.getResourceId(1, -1);
         obtainStyledAttributes.recycle();
@@ -139,70 +139,70 @@ public class Snackbar extends BaseTransientBottomBar {
         return true;
     }
 
-    public static Snackbar l0(View view, CharSequence charSequence, int i10) {
-        return m0(null, view, charSequence, i10);
+    public static Snackbar k0(View view, CharSequence charSequence, int i10) {
+        return l0(null, view, charSequence, i10);
     }
 
-    private static Snackbar m0(Context context, View view, CharSequence charSequence, int i10) {
+    private static Snackbar l0(Context context, View view, CharSequence charSequence, int i10) {
         int i11;
-        ViewGroup h02 = h0(view);
-        if (h02 != null) {
+        ViewGroup g02 = g0(view);
+        if (g02 != null) {
             if (context == null) {
-                context = h02.getContext();
+                context = g02.getContext();
             }
             LayoutInflater from = LayoutInflater.from(context);
-            if (k0(context)) {
-                i11 = h.f6759u;
+            if (j0(context)) {
+                i11 = h.f6896x;
             } else {
-                i11 = h.f6741c;
+                i11 = h.f6876d;
             }
-            SnackbarContentLayout snackbarContentLayout = (SnackbarContentLayout) from.inflate(i11, h02, false);
-            Snackbar snackbar = new Snackbar(context, h02, snackbarContentLayout, snackbarContentLayout);
-            snackbar.n0(charSequence);
-            snackbar.V(i10);
+            SnackbarContentLayout snackbarContentLayout = (SnackbarContentLayout) from.inflate(i11, g02, false);
+            Snackbar snackbar = new Snackbar(context, g02, snackbarContentLayout, snackbarContentLayout);
+            snackbar.m0(charSequence);
+            snackbar.U(i10);
             return snackbar;
         }
         throw new IllegalArgumentException("No suitable parent found from the given view. Please provide a valid view.");
     }
 
     @Override // com.google.android.material.snackbar.BaseTransientBottomBar
-    public void A() {
-        super.A();
-    }
-
-    @Override // com.google.android.material.snackbar.BaseTransientBottomBar
-    public int E() {
+    public int D() {
         int i10;
-        int E = super.E();
-        if (E == -2) {
+        int D = super.D();
+        if (D == -2) {
             return -2;
         }
         if (Build.VERSION.SDK_INT >= 29) {
-            if (this.I) {
+            if (this.H) {
                 i10 = 4;
             } else {
                 i10 = 0;
             }
-            return this.H.getRecommendedTimeoutMillis(E, i10 | 3);
-        } else if (this.I && this.H.isTouchExplorationEnabled()) {
+            return this.G.getRecommendedTimeoutMillis(D, i10 | 3);
+        } else if (this.H && this.G.isTouchExplorationEnabled()) {
             return -2;
         } else {
-            return E;
+            return D;
         }
     }
 
     @Override // com.google.android.material.snackbar.BaseTransientBottomBar
-    public void Z() {
-        super.Z();
+    public void Y() {
+        super.Y();
     }
 
-    public Snackbar n0(CharSequence charSequence) {
-        j0().setText(charSequence);
+    public Snackbar m0(CharSequence charSequence) {
+        i0().setText(charSequence);
         return this;
     }
 
-    public Snackbar o0(int i10) {
-        j0().setMaxLines(i10);
+    public Snackbar n0(int i10) {
+        i0().setMaxLines(i10);
         return this;
+    }
+
+    @Override // com.google.android.material.snackbar.BaseTransientBottomBar
+    public void z() {
+        super.z();
     }
 }

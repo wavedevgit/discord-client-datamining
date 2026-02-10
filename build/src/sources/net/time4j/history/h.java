@@ -3,30 +3,30 @@ package net.time4j.history;
 public final class h implements Comparable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final j f38543d;
+    private final j f37547d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f38544e;
+    private final int f37548e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f38545i;
+    private final int f37549i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f38546o;
+    private final int f37550o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(j jVar, int i10, int i11, int i12) {
-        this.f38543d = jVar;
-        this.f38544e = i10;
-        this.f38545i = i11;
-        this.f38546o = i12;
+        this.f37547d = jVar;
+        this.f37548e = i10;
+        this.f37549i = i11;
+        this.f37550o = i12;
     }
 
     public static h i(j jVar, int i10, int i11, int i12) {
-        return k(jVar, i10, i11, i12, wt.a.DUAL_DATING, o.f38570d);
+        return k(jVar, i10, i11, i12, fu.a.DUAL_DATING, o.f37574d);
     }
 
-    public static h k(j jVar, int i10, int i11, int i12, wt.a aVar, o oVar) {
+    public static h k(j jVar, int i10, int i11, int i12, fu.a aVar, o oVar) {
         j jVar2;
         int i13;
         int i14;
@@ -41,9 +41,9 @@ public final class h implements Comparable {
                     } else if (i10 < 1) {
                         throw new IllegalArgumentException("Year of era must be positive: " + l(jVar, i10, i11, i12));
                     }
-                    if (!aVar.equals(wt.a.DUAL_DATING)) {
+                    if (!aVar.equals(fu.a.DUAL_DATING)) {
                         n f10 = oVar.f(jVar, i10);
-                        if (aVar != wt.a.AFTER_NEW_YEAR) {
+                        if (aVar != fu.a.AFTER_NEW_YEAR) {
                             z10 = false;
                         }
                         jVar2 = jVar;
@@ -89,8 +89,8 @@ public final class h implements Comparable {
     @Override // java.lang.Comparable
     /* renamed from: a */
     public int compareTo(h hVar) {
-        int a10 = this.f38543d.a(this.f38544e);
-        int a11 = hVar.f38543d.a(hVar.f38544e);
+        int a10 = this.f37547d.a(this.f37548e);
+        int a11 = hVar.f37547d.a(hVar.f37548e);
         if (a10 < a11) {
             return -1;
         }
@@ -111,11 +111,11 @@ public final class h implements Comparable {
     }
 
     public int d() {
-        return this.f38546o;
+        return this.f37550o;
     }
 
     public j e() {
-        return this.f38543d;
+        return this.f37547d;
     }
 
     public boolean equals(Object obj) {
@@ -124,7 +124,7 @@ public final class h implements Comparable {
         }
         if (obj instanceof h) {
             h hVar = (h) obj;
-            if (this.f38543d == hVar.f38543d && this.f38544e == hVar.f38544e && this.f38545i == hVar.f38545i && this.f38546o == hVar.f38546o) {
+            if (this.f37547d == hVar.f37547d && this.f37548e == hVar.f37548e && this.f37549i == hVar.f37549i && this.f37550o == hVar.f37550o) {
                 return true;
             }
         }
@@ -132,11 +132,11 @@ public final class h implements Comparable {
     }
 
     public int f() {
-        return this.f38545i;
+        return this.f37549i;
     }
 
     public int g() {
-        return this.f38544e;
+        return this.f37548e;
     }
 
     public int h(o oVar) {
@@ -144,14 +144,14 @@ public final class h implements Comparable {
     }
 
     public int hashCode() {
-        int i10 = (this.f38544e * 1000) + (this.f38545i * 32) + this.f38546o;
-        if (this.f38543d == j.AD) {
+        int i10 = (this.f37548e * 1000) + (this.f37549i * 32) + this.f37550o;
+        if (this.f37547d == j.AD) {
             return i10;
         }
         return -i10;
     }
 
     public String toString() {
-        return l(this.f38543d, this.f38544e, this.f38545i, this.f38546o);
+        return l(this.f37547d, this.f37548e, this.f37549i, this.f37550o);
     }
 }

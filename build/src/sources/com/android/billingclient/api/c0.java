@@ -7,37 +7,37 @@ import org.json.JSONObject;
 public final class c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f8066a;
+    private final String f8643a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f8067b;
+    private final String f8644b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f8068c;
+    private final String f8645c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f8069d;
+    private final String f8646d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f8070e;
+    private final String f8647e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final ProductDetails.PricingPhase f8071f;
+    private final ProductDetails.PricingPhase f8648f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c0(JSONObject jSONObject) {
         ProductDetails.PricingPhase pricingPhase;
-        this.f8066a = jSONObject.getString("productId");
-        this.f8067b = jSONObject.optString("title");
-        this.f8068c = jSONObject.optString(StackTraceHelper.NAME_KEY);
-        this.f8069d = jSONObject.optString("description");
-        this.f8070e = jSONObject.optString("basePlanId");
+        this.f8643a = jSONObject.getString("productId");
+        this.f8644b = jSONObject.optString("title");
+        this.f8645c = jSONObject.optString(StackTraceHelper.NAME_KEY);
+        this.f8646d = jSONObject.optString("description");
+        this.f8647e = jSONObject.optString("basePlanId");
         JSONObject optJSONObject = jSONObject.optJSONObject("pricingPhase");
         if (optJSONObject == null) {
             pricingPhase = null;
         } else {
             pricingPhase = new ProductDetails.PricingPhase(optJSONObject);
         }
-        this.f8071f = pricingPhase;
+        this.f8648f = pricingPhase;
     }
 }

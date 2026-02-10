@@ -1,126 +1,113 @@
 package androidx.core.view;
 
-import android.util.Log;
 import android.view.View;
-import android.view.ViewParent;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.functions.Function2;
+import kotlin.sequences.Sequence;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class p0 {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    static class a {
-        static boolean a(ViewParent viewParent, View view, float f10, float f11, boolean z10) {
-            return viewParent.onNestedFling(view, f10, f11, z10);
+    static final class a extends kotlin.coroutines.jvm.internal.j implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        int f3546d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private /* synthetic */ Object f3547e;
+
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ View f3548i;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        a(View view, Continuation continuation) {
+            super(2, continuation);
+            this.f3548i = view;
         }
 
-        static boolean b(ViewParent viewParent, View view, float f10, float f11) {
-            return viewParent.onNestedPreFling(view, f10, f11);
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            a aVar = new a(this.f3548i, continuation);
+            aVar.f3547e = obj;
+            return aVar;
         }
 
-        static void c(ViewParent viewParent, View view, int i10, int i11, int[] iArr) {
-            viewParent.onNestedPreScroll(view, i10, i11, iArr);
+        /* JADX WARN: Code restructure failed: missing block: B:11:0x0034, code lost:
+            if (r1.b(r5, r4) == r0) goto L16;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:16:0x004c, code lost:
+            if (r1.h(r5, r4) == r0) goto L16;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:17:0x004e, code lost:
+            return r0;
+         */
+        @Override // kotlin.coroutines.jvm.internal.a
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public final java.lang.Object invokeSuspend(java.lang.Object r5) {
+            /*
+                r4 = this;
+                java.lang.Object r0 = gs.b.f()
+                int r1 = r4.f3546d
+                r2 = 2
+                r3 = 1
+                if (r1 == 0) goto L22
+                if (r1 == r3) goto L1a
+                if (r1 != r2) goto L12
+                kotlin.c.b(r5)
+                goto L4f
+            L12:
+                java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
+                java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
+                r5.<init>(r0)
+                throw r5
+            L1a:
+                java.lang.Object r1 = r4.f3547e
+                kotlin.sequences.j r1 = (kotlin.sequences.j) r1
+                kotlin.c.b(r5)
+                goto L37
+            L22:
+                kotlin.c.b(r5)
+                java.lang.Object r5 = r4.f3547e
+                r1 = r5
+                kotlin.sequences.j r1 = (kotlin.sequences.j) r1
+                android.view.View r5 = r4.f3548i
+                r4.f3547e = r1
+                r4.f3546d = r3
+                java.lang.Object r5 = r1.b(r5, r4)
+                if (r5 != r0) goto L37
+                goto L4e
+            L37:
+                android.view.View r5 = r4.f3548i
+                boolean r3 = r5 instanceof android.view.ViewGroup
+                if (r3 == 0) goto L4f
+                android.view.ViewGroup r5 = (android.view.ViewGroup) r5
+                kotlin.sequences.Sequence r5 = androidx.core.view.o0.b(r5)
+                r3 = 0
+                r4.f3547e = r3
+                r4.f3546d = r2
+                java.lang.Object r5 = r1.h(r5, r4)
+                if (r5 != r0) goto L4f
+            L4e:
+                return r0
+            L4f:
+                kotlin.Unit r5 = kotlin.Unit.f31987a
+                return r5
+            */
+            throw new UnsupportedOperationException("Method not decompiled: androidx.core.view.p0.a.invokeSuspend(java.lang.Object):java.lang.Object");
         }
 
-        static void d(ViewParent viewParent, View view, int i10, int i11, int i12, int i13) {
-            viewParent.onNestedScroll(view, i10, i11, i12, i13);
-        }
-
-        static void e(ViewParent viewParent, View view, View view2, int i10) {
-            viewParent.onNestedScrollAccepted(view, view2, i10);
-        }
-
-        static boolean f(ViewParent viewParent, View view, View view2, int i10) {
-            return viewParent.onStartNestedScroll(view, view2, i10);
-        }
-
-        static void g(ViewParent viewParent, View view) {
-            viewParent.onStopNestedScroll(view);
+        @Override // kotlin.jvm.functions.Function2
+        /* renamed from: j */
+        public final Object invoke(kotlin.sequences.j jVar, Continuation continuation) {
+            return ((a) create(jVar, continuation)).invokeSuspend(Unit.f31987a);
         }
     }
 
-    public static boolean a(ViewParent viewParent, View view, float f10, float f11, boolean z10) {
-        try {
-            return a.a(viewParent, view, f10, f11, z10);
-        } catch (AbstractMethodError e10) {
-            Log.e("ViewParentCompat", "ViewParent " + viewParent + " does not implement interface method onNestedFling", e10);
-            return false;
-        }
-    }
-
-    public static boolean b(ViewParent viewParent, View view, float f10, float f11) {
-        try {
-            return a.b(viewParent, view, f10, f11);
-        } catch (AbstractMethodError e10) {
-            Log.e("ViewParentCompat", "ViewParent " + viewParent + " does not implement interface method onNestedPreFling", e10);
-            return false;
-        }
-    }
-
-    public static void c(ViewParent viewParent, View view, int i10, int i11, int[] iArr, int i12) {
-        if (viewParent instanceof t) {
-            ((t) viewParent).onNestedPreScroll(view, i10, i11, iArr, i12);
-        } else if (i12 == 0) {
-            try {
-                a.c(viewParent, view, i10, i11, iArr);
-            } catch (AbstractMethodError e10) {
-                Log.e("ViewParentCompat", "ViewParent " + viewParent + " does not implement interface method onNestedPreScroll", e10);
-            }
-        }
-    }
-
-    public static void d(ViewParent viewParent, View view, int i10, int i11, int i12, int i13, int i14, int[] iArr) {
-        if (viewParent instanceof u) {
-            ((u) viewParent).onNestedScroll(view, i10, i11, i12, i13, i14, iArr);
-            return;
-        }
-        iArr[0] = iArr[0] + i12;
-        iArr[1] = iArr[1] + i13;
-        if (viewParent instanceof t) {
-            ((t) viewParent).onNestedScroll(view, i10, i11, i12, i13, i14);
-        } else if (i14 == 0) {
-            try {
-                a.d(viewParent, view, i10, i11, i12, i13);
-            } catch (AbstractMethodError e10) {
-                Log.e("ViewParentCompat", "ViewParent " + viewParent + " does not implement interface method onNestedScroll", e10);
-            }
-        }
-    }
-
-    public static void e(ViewParent viewParent, View view, View view2, int i10, int i11) {
-        if (viewParent instanceof t) {
-            ((t) viewParent).onNestedScrollAccepted(view, view2, i10, i11);
-        } else if (i11 == 0) {
-            try {
-                a.e(viewParent, view, view2, i10);
-            } catch (AbstractMethodError e10) {
-                Log.e("ViewParentCompat", "ViewParent " + viewParent + " does not implement interface method onNestedScrollAccepted", e10);
-            }
-        }
-    }
-
-    public static boolean f(ViewParent viewParent, View view, View view2, int i10, int i11) {
-        if (viewParent instanceof t) {
-            return ((t) viewParent).onStartNestedScroll(view, view2, i10, i11);
-        }
-        if (i11 == 0) {
-            try {
-                return a.f(viewParent, view, view2, i10);
-            } catch (AbstractMethodError e10) {
-                Log.e("ViewParentCompat", "ViewParent " + viewParent + " does not implement interface method onStartNestedScroll", e10);
-                return false;
-            }
-        }
-        return false;
-    }
-
-    public static void g(ViewParent viewParent, View view, int i10) {
-        if (viewParent instanceof t) {
-            ((t) viewParent).onStopNestedScroll(view, i10);
-        } else if (i10 == 0) {
-            try {
-                a.g(viewParent, view);
-            } catch (AbstractMethodError e10) {
-                Log.e("ViewParentCompat", "ViewParent " + viewParent + " does not implement interface method onStopNestedScroll", e10);
-            }
-        }
+    public static final Sequence a(View view) {
+        return kotlin.sequences.k.b(new a(view, null));
     }
 }

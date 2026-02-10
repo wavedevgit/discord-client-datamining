@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_member_verification/native/components/form_fields/TermsField.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun60889: for (var _fun60889_ip = 0;;) switch (_fun60889_ip) {
+        _fun60942: for (var _fun60942_ip = 0;;) switch (_fun60942_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.field;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var10 = var1 != var0;
                 if (!var10) {
-                    _fun60889_ip = 67;
-                    continue _fun60889
+                    _fun60942_ip = 67;
+                    continue _fun60942
                 }
             case 64:
                 var10 = var0;
@@ -158,4 +158,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4782, 5431, 3942, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4792, 5441, 3942, 1234, 2]);

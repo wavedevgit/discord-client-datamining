@@ -46,19 +46,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     StartGenerator();
                                     ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                     if (var1) {
-                                        _fun12116_ip = 208;
+                                        _fun12116_ip = 209;
                                         continue _fun12116
                                     }
                                 case 12:
                                     var3 = _closure2_slot0;
                                     if (!var3) {
-                                        _fun12116_ip = 203;
+                                        _fun12116_ip = 204;
                                         continue _fun12116
                                     }
                                 case 25:
                                     var3 = _closure2_slot1;
                                     if (!var3) {
-                                        _fun12116_ip = 203;
+                                        _fun12116_ip = 204;
                                         continue _fun12116
                                     }
                                 case 35:
@@ -102,7 +102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var3 = var5.bind(var0)(var3);
                                                 var3 = var3.DEBUG_BUILD;
                                                 if (!var3) {
-                                                    _fun12117_ip = 186;
+                                                    _fun12117_ip = 187;
                                                     continue _fun12117
                                                 }
                                             case 97:
@@ -125,22 +125,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var3 = '[Profiling] stopped profiling of span: ';
                                                 var3 = var8.bind(var3)(var9);
                                                 var3 = var5.bind(var7)(var3);
-                                            case 186:
+                                            case 187:
                                                 if (var4) {
-                                                    _fun12117_ip = 319;
+                                                    _fun12117_ip = 321;
                                                     continue _fun12117
                                                 }
-                                            case 192:
+                                            case 193:
                                                 var5 = _closure1_slot0;
                                                 var3 = _closure1_slot1;
                                                 var3 = var3[var6];
                                                 var3 = var5.bind(var0)(var3);
                                                 var3 = var3.DEBUG_BUILD;
                                                 if (!var3) {
-                                                    _fun12117_ip = 359;
+                                                    _fun12117_ip = 361;
                                                     continue _fun12117
                                                 }
-                                            case 221:
+                                            case 222:
                                                 var5 = _closure1_slot0;
                                                 var8 = _closure1_slot1;
                                                 var3 = 2;
@@ -161,9 +161,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var5 = var5.bind(var3)(var8);
                                                 var3 = 'this may indicate an overlapping span or a call to stopProfiling with a profile title that was never started';
                                                 var3 = var6.bind(var7)(var5, var3);
-                                                _fun12117_ip = 359;
+                                                _fun12117_ip = 361;
                                                 continue _fun12117;
-                                            case 319:
+                                            case 321:
                                                 _closure2_slot3 = var4;
                                                 var3 = _closure1_slot0;
                                                 var5 = _closure1_slot1;
@@ -173,7 +173,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var2 = var3.addProfileToGlobalCache;
                                                 var1 = _closure2_slot2;
                                                 var1 = var2.bind(var3)(var1, var4);
-                                            case 359:
+                                            case 361:
                                                 return var0;
                                         }
                                     };
@@ -190,7 +190,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var2 = var3.bind(var0)(var2);
                                                 var2 = var2.DEBUG_BUILD;
                                                 if (!var2) {
-                                                    _fun12118_ip = 80;
+                                                    _fun12118_ip = 81;
                                                     continue _fun12118
                                                 }
                                             case 34:
@@ -204,7 +204,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var2 = '[Profiling] error while stopping profiler:';
                                                 var1 = arg0;
                                                 var1 = var3.bind(var4)(var2, var1);
-                                            case 80:
+                                            case 81:
                                                 return var0;
                                         }
                                     };
@@ -219,7 +219,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var3 = var4.bind(var6)(var3);
                                     var3 = var3.DEBUG_BUILD;
                                     if (!var3) {
-                                        _fun12116_ip = 203;
+                                        _fun12116_ip = 204;
                                         continue _fun12116
                                     }
                                 case 124:
@@ -239,10 +239,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var2 = '[Profiling] profile for:';
                                     var1 = 'already exists, returning early';
                                     var1 = var4.bind(var5)(var2, var3, var1);
-                                case 203:
+                                case 204:
                                     var1 = undefined;
                                     return var1;
-                                case 208:
+                                case 209:
                                     return var0;
                             }
                         };
@@ -290,7 +290,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.bind(var6)();
                 var _closure2_slot1 = var4;
                 if (!var4) {
-                    _fun12112_ip = 429;
+                    _fun12112_ip = 430;
                     continue _fun12112
                 }
             case 145:
@@ -301,7 +301,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var6.bind(var0)(var4);
                 var4 = var4.DEBUG_BUILD;
                 if (!var4) {
-                    _fun12112_ip = 259;
+                    _fun12112_ip = 260;
                     continue _fun12112
                 }
             case 174:
@@ -323,7 +323,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = '[Profiling] started profiling span: ';
                 var4 = var9.bind(var4)(var10);
                 var4 = var6.bind(var8)(var4);
-            case 259:
+            case 260:
                 var4 = _closure1_slot0;
                 var3 = _closure1_slot1;
                 var6 = 2;
@@ -363,7 +363,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var3.bind(var0)(var2);
                             var2 = var2.DEBUG_BUILD;
                             if (!var2) {
-                                _fun12119_ip = 109;
+                                _fun12119_ip = 110;
                                 continue _fun12119
                             }
                         case 34:
@@ -382,7 +382,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var1.description;
                             var1 = '[Profiling] max profile duration elapsed, stopping profiling for:';
                             var1 = var3.bind(var4)(var1, var2);
-                        case 109:
+                        case 110:
                             var1 = _closure2_slot6;
                             var1 = var1.bind(var0)();
                             return var0;
@@ -432,7 +432,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var2.end = var1;
-            case 429:
+            case 430:
                 return var0;
         }
     };

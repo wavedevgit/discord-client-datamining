@@ -1,6 +1,8 @@
 package com.discord.chat.bridge.row;
 
 import androidx.recyclerview.widget.RecyclerView;
+import as.l;
+import as.o;
 import com.discord.chat.bridge.BackgroundHighlight;
 import com.discord.chat.bridge.BackgroundHighlight$$serializer;
 import com.discord.chat.bridge.ChangeType;
@@ -12,7 +14,6 @@ import com.discord.chat.bridge.truncation.Truncation;
 import com.discord.chat.bridge.truncation.Truncation$$serializer;
 import com.discord.chat.presentation.root.MessageContextType;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import gt.m;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -22,13 +23,12 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import kt.h;
-import kt.n2;
-import kt.p0;
-import kt.v1;
 import org.jetbrains.annotations.NotNull;
-import rr.l;
-import rr.o;
+import qt.m;
+import tt.h;
+import tt.n2;
+import tt.p0;
+import tt.v1;
 @m
 @Metadata(d1 = {"\u0000r\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b1\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 \\2\u00020\u0001:\u0002[\\B\u009f\u0001\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\b\u001a\u00020\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0007\u0012\b\b\u0002\u0010\u0010\u001a\u00020\u0007\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0013\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0015\u0012\b\b\u0002\u0010\u0016\u001a\u00020\u0017\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0019¢\u0006\u0004\b\u001a\u0010\u001bB£\u0001\b\u0010\u0012\u0006\u0010\u001c\u001a\u00020\u0003\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\u0010\u001a\u00020\u0007\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0013\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015\u0012\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017\u0012\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u0012\b\u0010\u001d\u001a\u0004\u0018\u00010\u001e¢\u0006\u0004\b\u001a\u0010\u001fJ\t\u0010>\u001a\u00020\u0003HÆ\u0003J\t\u0010?\u001a\u00020\u0005HÆ\u0003J\u0010\u0010@\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010%J\t\u0010A\u001a\u00020\tHÆ\u0003J\u0010\u0010B\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010%J\u000b\u0010C\u001a\u0004\u0018\u00010\fHÆ\u0003J\u000b\u0010D\u001a\u0004\u0018\u00010\u000eHÆ\u0003J\u0010\u0010E\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010%J\t\u0010F\u001a\u00020\u0007HÆ\u0003J\u0010\u0010G\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u00104J\u000b\u0010H\u001a\u0004\u0018\u00010\u0013HÆ\u0003J\u000b\u0010I\u001a\u0004\u0018\u00010\u0015HÆ\u0003J\t\u0010J\u001a\u00020\u0017HÆ\u0003J\u000b\u0010K\u001a\u0004\u0018\u00010\u0019HÆ\u0003J¬\u0001\u0010L\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00072\b\b\u0002\u0010\u0010\u001a\u00020\u00072\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00132\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00152\b\b\u0002\u0010\u0016\u001a\u00020\u00172\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0019HÆ\u0001¢\u0006\u0002\u0010MJ\u0013\u0010N\u001a\u00020\u00072\b\u0010O\u001a\u0004\u0018\u00010PHÖ\u0003J\t\u0010Q\u001a\u00020\u0003HÖ\u0001J\t\u0010R\u001a\u00020\fHÖ\u0001J%\u0010S\u001a\u00020T2\u0006\u0010U\u001a\u00020\u00002\u0006\u0010V\u001a\u00020W2\u0006\u0010X\u001a\u00020YH\u0001¢\u0006\u0002\bZR\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b \u0010!R\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010#R\u0015\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\n\n\u0002\u0010&\u001a\u0004\b$\u0010%R\u001c\u0010\b\u001a\u00020\t8\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b'\u0010(\u001a\u0004\b)\u0010*R\u0015\u0010\n\u001a\u0004\u0018\u00010\u0007¢\u0006\n\n\u0002\u0010&\u001a\u0004\b+\u0010%R\u0013\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b,\u0010-R\u0013\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\b\n\u0000\u001a\u0004\b.\u0010/R\u0015\u0010\u000f\u001a\u0004\u0018\u00010\u0007¢\u0006\n\n\u0002\u0010&\u001a\u0004\b0\u0010%R\u0011\u0010\u0010\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b1\u00102R\u0015\u0010\u0011\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u00105\u001a\u0004\b3\u00104R\u0013\u0010\u0012\u001a\u0004\u0018\u00010\u0013¢\u0006\b\n\u0000\u001a\u0004\b6\u00107R\u0013\u0010\u0014\u001a\u0004\u0018\u00010\u0015¢\u0006\b\n\u0000\u001a\u0004\b8\u00109R\u0011\u0010\u0016\u001a\u00020\u0017¢\u0006\b\n\u0000\u001a\u0004\b:\u0010;R\u0013\u0010\u0018\u001a\u0004\u0018\u00010\u0019¢\u0006\b\n\u0000\u001a\u0004\b<\u0010=¨\u0006]"}, d2 = {"Lcom/discord/chat/bridge/row/MessageRow;", "Lcom/discord/chat/bridge/row/Row;", "index", "", "changeType", "Lcom/discord/chat/bridge/ChangeType;", "jumped", "", "message", "Lcom/discord/chat/bridge/MessageBase;", "canAddNewReactions", "addNewReactionAccessibilityLabel", "", "reactionsTheme", "Lcom/discord/chat/bridge/reaction/ReactionsTheme;", "showReplyButton", "renderContentOnly", "reactTag", "truncation", "Lcom/discord/chat/bridge/truncation/Truncation;", "backgroundHighlight", "Lcom/discord/chat/bridge/BackgroundHighlight;", "swipeActions", "Lcom/discord/chat/bridge/SwipeActionsType;", "contextType", "Lcom/discord/chat/presentation/root/MessageContextType;", "<init>", "(ILcom/discord/chat/bridge/ChangeType;Ljava/lang/Boolean;Lcom/discord/chat/bridge/MessageBase;Ljava/lang/Boolean;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Ljava/lang/Boolean;ZLjava/lang/Integer;Lcom/discord/chat/bridge/truncation/Truncation;Lcom/discord/chat/bridge/BackgroundHighlight;Lcom/discord/chat/bridge/SwipeActionsType;Lcom/discord/chat/presentation/root/MessageContextType;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILcom/discord/chat/bridge/ChangeType;Ljava/lang/Boolean;Lcom/discord/chat/bridge/MessageBase;Ljava/lang/Boolean;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Ljava/lang/Boolean;ZLjava/lang/Integer;Lcom/discord/chat/bridge/truncation/Truncation;Lcom/discord/chat/bridge/BackgroundHighlight;Lcom/discord/chat/bridge/SwipeActionsType;Lcom/discord/chat/presentation/root/MessageContextType;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getIndex", "()I", "getChangeType", "()Lcom/discord/chat/bridge/ChangeType;", "getJumped", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getMessage$annotations", "()V", "getMessage", "()Lcom/discord/chat/bridge/MessageBase;", "getCanAddNewReactions", "getAddNewReactionAccessibilityLabel", "()Ljava/lang/String;", "getReactionsTheme", "()Lcom/discord/chat/bridge/reaction/ReactionsTheme;", "getShowReplyButton", "getRenderContentOnly", "()Z", "getReactTag", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getTruncation", "()Lcom/discord/chat/bridge/truncation/Truncation;", "getBackgroundHighlight", "()Lcom/discord/chat/bridge/BackgroundHighlight;", "getSwipeActions", "()Lcom/discord/chat/bridge/SwipeActionsType;", "getContextType", "()Lcom/discord/chat/presentation/root/MessageContextType;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "component13", "component14", "copy", "(ILcom/discord/chat/bridge/ChangeType;Ljava/lang/Boolean;Lcom/discord/chat/bridge/MessageBase;Ljava/lang/Boolean;Ljava/lang/String;Lcom/discord/chat/bridge/reaction/ReactionsTheme;Ljava/lang/Boolean;ZLjava/lang/Integer;Lcom/discord/chat/bridge/truncation/Truncation;Lcom/discord/chat/bridge/BackgroundHighlight;Lcom/discord/chat/bridge/SwipeActionsType;Lcom/discord/chat/presentation/root/MessageContextType;)Lcom/discord/chat/bridge/row/MessageRow;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -53,7 +53,7 @@ public final class MessageRow extends Row {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, null, null, null, null, l.b(o.f49210e, new Function0() { // from class: com.discord.chat.bridge.row.d
+    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, null, null, null, null, l.a(o.f6082e, new Function0() { // from class: com.discord.chat.bridge.row.d
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -152,40 +152,40 @@ public final class MessageRow extends Row {
     public static final /* synthetic */ void write$Self$chat_release(MessageRow messageRow, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
         compositeEncoder.w(serialDescriptor, 0, messageRow.getIndex());
-        compositeEncoder.F(serialDescriptor, 1, ChangeType.Serializer.INSTANCE, messageRow.getChangeType());
+        compositeEncoder.k(serialDescriptor, 1, ChangeType.Serializer.INSTANCE, messageRow.getChangeType());
         if (compositeEncoder.z(serialDescriptor, 2) || messageRow.jumped != null) {
-            compositeEncoder.i(serialDescriptor, 2, h.f35145a, messageRow.jumped);
+            compositeEncoder.o(serialDescriptor, 2, h.f49996a, messageRow.jumped);
         }
-        compositeEncoder.F(serialDescriptor, 3, MessageSerializer.INSTANCE, messageRow.message);
+        compositeEncoder.k(serialDescriptor, 3, MessageSerializer.INSTANCE, messageRow.message);
         if (compositeEncoder.z(serialDescriptor, 4) || messageRow.canAddNewReactions != null) {
-            compositeEncoder.i(serialDescriptor, 4, h.f35145a, messageRow.canAddNewReactions);
+            compositeEncoder.o(serialDescriptor, 4, h.f49996a, messageRow.canAddNewReactions);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || messageRow.addNewReactionAccessibilityLabel != null) {
-            compositeEncoder.i(serialDescriptor, 5, n2.f35181a, messageRow.addNewReactionAccessibilityLabel);
+            compositeEncoder.o(serialDescriptor, 5, n2.f50032a, messageRow.addNewReactionAccessibilityLabel);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || messageRow.reactionsTheme != null) {
-            compositeEncoder.i(serialDescriptor, 6, ReactionsTheme$$serializer.INSTANCE, messageRow.reactionsTheme);
+            compositeEncoder.o(serialDescriptor, 6, ReactionsTheme$$serializer.INSTANCE, messageRow.reactionsTheme);
         }
         if (compositeEncoder.z(serialDescriptor, 7) || messageRow.showReplyButton != null) {
-            compositeEncoder.i(serialDescriptor, 7, h.f35145a, messageRow.showReplyButton);
+            compositeEncoder.o(serialDescriptor, 7, h.f49996a, messageRow.showReplyButton);
         }
         if (compositeEncoder.z(serialDescriptor, 8) || messageRow.renderContentOnly) {
             compositeEncoder.x(serialDescriptor, 8, messageRow.renderContentOnly);
         }
         if (compositeEncoder.z(serialDescriptor, 9) || messageRow.reactTag != null) {
-            compositeEncoder.i(serialDescriptor, 9, p0.f35197a, messageRow.reactTag);
+            compositeEncoder.o(serialDescriptor, 9, p0.f50048a, messageRow.reactTag);
         }
         if (compositeEncoder.z(serialDescriptor, 10) || messageRow.truncation != null) {
-            compositeEncoder.i(serialDescriptor, 10, Truncation$$serializer.INSTANCE, messageRow.truncation);
+            compositeEncoder.o(serialDescriptor, 10, Truncation$$serializer.INSTANCE, messageRow.truncation);
         }
         if (compositeEncoder.z(serialDescriptor, 11) || messageRow.backgroundHighlight != null) {
-            compositeEncoder.i(serialDescriptor, 11, BackgroundHighlight$$serializer.INSTANCE, messageRow.backgroundHighlight);
+            compositeEncoder.o(serialDescriptor, 11, BackgroundHighlight$$serializer.INSTANCE, messageRow.backgroundHighlight);
         }
         if (compositeEncoder.z(serialDescriptor, 12) || messageRow.swipeActions != SwipeActionsType.NONE) {
-            compositeEncoder.F(serialDescriptor, 12, SwipeActionsType.Serializer.INSTANCE, messageRow.swipeActions);
+            compositeEncoder.k(serialDescriptor, 12, SwipeActionsType.Serializer.INSTANCE, messageRow.swipeActions);
         }
         if (compositeEncoder.z(serialDescriptor, 13) || messageRow.contextType != null) {
-            compositeEncoder.i(serialDescriptor, 13, (gt.o) lazyArr[13].getValue(), messageRow.contextType);
+            compositeEncoder.o(serialDescriptor, 13, (qt.o) lazyArr[13].getValue(), messageRow.contextType);
         }
     }
 

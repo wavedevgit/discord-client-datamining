@@ -73,13 +73,13 @@ public abstract class YogaNode {
 
     public abstract void f0(float f10);
 
+    public abstract float g();
+
     public abstract void g0(YogaOverflow yogaOverflow);
 
-    public abstract float h();
+    public abstract float h(e eVar);
 
     public abstract void h0(e eVar, float f10);
-
-    public abstract float i(e eVar);
 
     public abstract void i0(e eVar, float f10);
 

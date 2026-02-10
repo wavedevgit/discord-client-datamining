@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/TableRow/native/TableRowIcon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun44607: for (var _fun44607_ip = 0;;) switch (_fun44607_ip) {
+        _fun44660: for (var _fun44660_ip = 0;;) switch (_fun44660_ip) {
             case 0:
                 var0 = arg0;
                 var13 = var0.source;
@@ -195,8 +195,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.variant;
                 var4 = undefined;
                 if (!(var1 === var4)) {
-                    _fun44607_ip = 28;
-                    continue _fun44607
+                    _fun44660_ip = 28;
+                    continue _fun44660
                 }
             case 24:
                 var1 = 'default';
@@ -205,120 +205,120 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.bind(var4)();
                 var0 = 'default';
                 if (!(var0 !== var1)) {
-                    _fun44607_ip = 247;
-                    continue _fun44607
+                    _fun44660_ip = 247;
+                    continue _fun44660
                 }
             case 50:
                 var2 = 'blurple';
                 if (!(var2 !== var1)) {
-                    _fun44607_ip = 239;
-                    continue _fun44607
+                    _fun44660_ip = 239;
+                    continue _fun44660
                 }
             case 61:
                 var2 = 'boosting-pink';
                 if (!(var2 !== var1)) {
-                    _fun44607_ip = 231;
-                    continue _fun44607
+                    _fun44660_ip = 231;
+                    continue _fun44660
                 }
             case 74:
                 var2 = 'text-status-online';
                 if (!(var2 !== var1)) {
-                    _fun44607_ip = 223;
-                    continue _fun44607
+                    _fun44660_ip = 223;
+                    continue _fun44660
                 }
             case 87:
                 var2 = 'text-status-idle';
                 if (!(var2 !== var1)) {
-                    _fun44607_ip = 215;
-                    continue _fun44607
+                    _fun44660_ip = 215;
+                    continue _fun44660
                 }
             case 97:
                 var2 = 'text-status-dnd';
                 if (!(var2 !== var1)) {
-                    _fun44607_ip = 207;
-                    continue _fun44607
+                    _fun44660_ip = 207;
+                    continue _fun44660
                 }
             case 107:
                 var2 = 'text-status-offline';
                 if (!(var2 !== var1)) {
-                    _fun44607_ip = 199;
-                    continue _fun44607
+                    _fun44660_ip = 199;
+                    continue _fun44660
                 }
             case 117:
                 var2 = 'xbox';
                 if (!(var2 !== var1)) {
-                    _fun44607_ip = 191;
-                    continue _fun44607
+                    _fun44660_ip = 191;
+                    continue _fun44660
                 }
             case 125:
                 var2 = 'playstation';
                 if (!(var2 !== var1)) {
-                    _fun44607_ip = 183;
-                    continue _fun44607
+                    _fun44660_ip = 183;
+                    continue _fun44660
                 }
             case 133:
                 var2 = 'danger';
                 if (!(var2 !== var1)) {
-                    _fun44607_ip = 175;
-                    continue _fun44607
+                    _fun44660_ip = 175;
+                    continue _fun44660
                 }
             case 141:
                 var2 = 'secondary';
                 if (!(var2 !== var1)) {
-                    _fun44607_ip = 167;
-                    continue _fun44607
+                    _fun44660_ip = 167;
+                    continue _fun44660
                 }
             case 149:
                 var2 = 'translucent';
                 var5 = undefined;
                 if (!(var2 === var1)) {
-                    _fun44607_ip = 252;
-                    continue _fun44607
+                    _fun44660_ip = 252;
+                    continue _fun44660
                 }
             case 159:
                 var5 = var7.translucent;
-                _fun44607_ip = 252;
-                continue _fun44607;
+                _fun44660_ip = 252;
+                continue _fun44660;
             case 167:
                 var5 = var7.secondary;
-                _fun44607_ip = 252;
-                continue _fun44607;
+                _fun44660_ip = 252;
+                continue _fun44660;
             case 175:
                 var5 = var7.danger;
-                _fun44607_ip = 252;
-                continue _fun44607;
+                _fun44660_ip = 252;
+                continue _fun44660;
             case 183:
                 var5 = var7.playstation;
-                _fun44607_ip = 252;
-                continue _fun44607;
+                _fun44660_ip = 252;
+                continue _fun44660;
             case 191:
                 var5 = var7.xbox;
-                _fun44607_ip = 252;
-                continue _fun44607;
+                _fun44660_ip = 252;
+                continue _fun44660;
             case 199:
                 var5 = var7.statusOffline;
-                _fun44607_ip = 252;
-                continue _fun44607;
+                _fun44660_ip = 252;
+                continue _fun44660;
             case 207:
                 var5 = var7.statusDND;
-                _fun44607_ip = 252;
-                continue _fun44607;
+                _fun44660_ip = 252;
+                continue _fun44660;
             case 215:
                 var5 = var7.statusIdle;
-                _fun44607_ip = 252;
-                continue _fun44607;
+                _fun44660_ip = 252;
+                continue _fun44660;
             case 223:
                 var5 = var7.statusOnline;
-                _fun44607_ip = 252;
-                continue _fun44607;
+                _fun44660_ip = 252;
+                continue _fun44660;
             case 231:
                 var5 = var7.boostingPink;
-                _fun44607_ip = 252;
-                continue _fun44607;
+                _fun44660_ip = 252;
+                continue _fun44660;
             case 239:
                 var5 = var7.blurple;
-                _fun44607_ip = 252;
-                continue _fun44607;
+                _fun44660_ip = 252;
+                continue _fun44660;
             case 247:
                 var5 = var7.default;
             case 252:
@@ -334,35 +334,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var4)(var1);
                 var1 = var1.IconSizes;
                 if (var0) {
-                    _fun44607_ip = 312;
-                    continue _fun44607
+                    _fun44660_ip = 312;
+                    continue _fun44660
                 }
             case 304:
                 var12 = var1.REFRESH_SMALL_16;
-                _fun44607_ip = 318;
-                continue _fun44607;
+                _fun44660_ip = 318;
+                continue _fun44660;
             case 312:
                 var12 = var1.MEDIUM;
             case 318:
                 var10 = 'sm';
                 if (!var0) {
-                    _fun44607_ip = 329;
-                    continue _fun44607
+                    _fun44660_ip = 329;
+                    continue _fun44660
                 }
             case 325:
                 var10 = 'md';
             case 329:
                 var5 = null;
                 if (!(var5 == var13)) {
-                    _fun44607_ip = 344;
-                    continue _fun44607
+                    _fun44660_ip = 344;
+                    continue _fun44660
                 }
             case 335:
                 var1 = var5 == var8;
                 var0 = null;
                 if (var1) {
-                    _fun44607_ip = 452;
-                    continue _fun44607
+                    _fun44660_ip = 452;
+                    continue _fun44660
                 }
             case 344:
                 var3 = _closure1_slot6;
@@ -374,8 +374,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7[1] = var11;
                 var1.style = var7;
                 if (!(var5 == var8)) {
-                    _fun44607_ip = 422;
-                    continue _fun44607
+                    _fun44660_ip = 422;
+                    continue _fun44660
                 }
             case 379:
                 var11 = _closure1_slot6;
@@ -388,8 +388,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.source = var13;
                 var5.size = var12;
                 var5 = var11.bind(var4)(var7, var5);
-                _fun44607_ip = 442;
-                continue _fun44607;
+                _fun44660_ip = 442;
+                continue _fun44660;
             case 422:
                 var7 = _closure1_slot6;
                 var6 = {};
@@ -405,4 +405,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TableRowIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 4872, 33, 1297, 671, 4086, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 4882, 33, 1297, 671, 4096, 2]);

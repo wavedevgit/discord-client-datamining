@@ -5,31 +5,31 @@ import com.facebook.imagepipeline.common.ResizeOptions;
 public class l1 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m1[] f10863a;
+    private final m1[] f11440a;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public class a extends s {
 
         /* renamed from: c  reason: collision with root package name */
-        private final ProducerContext f10864c;
+        private final ProducerContext f11441c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f10865d;
+        private final int f11442d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ResizeOptions f10866e;
+        private final ResizeOptions f11443e;
 
         public a(Consumer consumer, ProducerContext producerContext, int i10) {
             super(consumer);
-            this.f10864c = producerContext;
-            this.f10865d = i10;
-            this.f10866e = producerContext.I().getResizeOptions();
+            this.f11441c = producerContext;
+            this.f11442d = i10;
+            this.f11443e = producerContext.I().getResizeOptions();
         }
 
         @Override // com.facebook.imagepipeline.producers.s, com.facebook.imagepipeline.producers.c
         protected void g(Throwable th2) {
-            if (!l1.this.e(this.f10865d + 1, o(), this.f10864c)) {
+            if (!l1.this.e(this.f11442d + 1, o(), this.f11441c)) {
                 o().onFailure(th2);
             }
         }
@@ -38,11 +38,11 @@ public class l1 implements w0 {
         @Override // com.facebook.imagepipeline.producers.c
         /* renamed from: p */
         public void h(ta.k kVar, int i10) {
-            if (kVar != null && (c.e(i10) || n1.c(kVar, this.f10866e))) {
+            if (kVar != null && (c.e(i10) || n1.c(kVar, this.f11443e))) {
                 o().b(kVar, i10);
             } else if (c.d(i10)) {
-                ta.k.k(kVar);
-                if (!l1.this.e(this.f10865d + 1, o(), this.f10864c)) {
+                ta.k.i(kVar);
+                if (!l1.this.e(this.f11442d + 1, o(), this.f11441c)) {
                     o().b(null, 1);
                 }
             }
@@ -51,13 +51,13 @@ public class l1 implements w0 {
 
     public l1(m1... m1VarArr) {
         m1[] m1VarArr2 = (m1[]) p8.j.g(m1VarArr);
-        this.f10863a = m1VarArr2;
+        this.f11440a = m1VarArr2;
         p8.j.e(0, m1VarArr2.length);
     }
 
     private int d(int i10, ResizeOptions resizeOptions) {
         while (true) {
-            m1[] m1VarArr = this.f10863a;
+            m1[] m1VarArr = this.f11440a;
             if (i10 < m1VarArr.length) {
                 if (m1VarArr[i10].a(resizeOptions)) {
                     return i10;
@@ -75,7 +75,7 @@ public class l1 implements w0 {
         if (d10 == -1) {
             return false;
         }
-        this.f10863a[d10].b(new a(consumer, producerContext, d10), producerContext);
+        this.f11440a[d10].b(new a(consumer, producerContext, d10), producerContext);
         return true;
     }
 

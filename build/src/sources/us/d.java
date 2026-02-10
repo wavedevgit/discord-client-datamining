@@ -1,13 +1,16 @@
 package us;
 
-import java.util.concurrent.atomic.AtomicReference;
+import kotlin.jvm.functions.Function1;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d {
-    public static final Object a(AtomicReference atomicReference) {
-        return atomicReference.get();
-    }
+class d implements Function1 {
 
-    public static final void b(AtomicReference atomicReference, Object obj) {
-        atomicReference.set(obj);
+    /* renamed from: d  reason: collision with root package name */
+    public static final d f51019d = new d();
+
+    @Override // kotlin.jvm.functions.Function1
+    public Object invoke(Object obj) {
+        u1 e10;
+        e10 = h.e((Class) obj);
+        return e10;
     }
 }

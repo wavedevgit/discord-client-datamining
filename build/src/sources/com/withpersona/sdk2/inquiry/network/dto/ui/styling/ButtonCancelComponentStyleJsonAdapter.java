@@ -130,7 +130,7 @@ public final class ButtonCancelComponentStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -188,7 +188,7 @@ public final class ButtonCancelComponentStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, ButtonCancelComponentStyle buttonCancelComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (buttonCancelComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J(ViewProps.PADDING);
             this.nullableButtonBasedPaddingStyleAdapter.toJson(writer, buttonCancelComponentStyle.getPadding());
             writer.J(ViewProps.MARGIN);

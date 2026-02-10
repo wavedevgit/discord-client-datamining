@@ -17,7 +17,7 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.HorizontalScrollView;
 import android.widget.OverScroller;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import com.facebook.react.R;
 import com.facebook.react.animated.NativeAnimatedModule;
 import com.facebook.react.bridge.ReactContext;
@@ -190,7 +190,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
         if (this.mDisableIntervalMomentum) {
             predictFinalScrollPosition = getScrollX();
         }
-        int width = (getWidth() - h0.E(this)) - h0.D(this);
+        int width = (getWidth() - i0.D(this)) - i0.C(this);
         if (getLayoutDirection() == 1) {
             predictFinalScrollPosition = max - predictFinalScrollPosition;
             i11 = -i10;
@@ -403,7 +403,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
                 if (ReactHorizontalScrollView.this.mActivelyScrolling) {
                     ReactHorizontalScrollView.this.mActivelyScrolling = false;
                     this.mStableFrames = 0;
-                    h0.g0(ReactHorizontalScrollView.this, this, 20L);
+                    i0.d0(ReactHorizontalScrollView.this, this, 20L);
                     return;
                 }
                 ReactScrollViewHelper.updateFabricScrollState(ReactHorizontalScrollView.this);
@@ -425,11 +425,11 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
                     this.mSnappingToPage = true;
                     ReactHorizontalScrollView.this.flingAndSnap(0);
                 }
-                h0.g0(ReactHorizontalScrollView.this, this, 20L);
+                i0.d0(ReactHorizontalScrollView.this, this, 20L);
             }
         };
         this.mPostTouchRunnable = runnable;
-        h0.g0(this, runnable, 20L);
+        i0.d0(this, runnable, 20L);
     }
 
     private boolean isContentReady() {
@@ -637,7 +637,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
                     }
                 };
                 this.mPostTouchRunnable = runnable2;
-                h0.g0(this, runnable2, 20L);
+                i0.d0(this, runnable2, 20L);
             }
             return dispatchGenericMotionEvent;
         }
@@ -681,8 +681,8 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
         if (this.mPagingEnabled) {
             flingAndSnap(i11);
         } else if (this.mScroller != null) {
-            this.mScroller.fling(getScrollX(), getScrollY(), i11, 0, 0, Integer.MAX_VALUE, 0, 0, ((getWidth() - h0.E(this)) - h0.D(this)) / 2, 0);
-            h0.e0(this);
+            this.mScroller.fling(getScrollX(), getScrollY(), i11, 0, 0, Integer.MAX_VALUE, 0, 0, ((getWidth() - i0.D(this)) - i0.C(this)) / 2, 0);
+            i0.b0(this);
         } else {
             super.fling(i11);
         }
@@ -1279,7 +1279,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
         this.mFadingEdgeLengthEnd = 0;
         this.mTempRect = new Rect();
         this.mFpsListener = fpsListener;
-        h0.n0(this, new ReactScrollViewAccessibilityDelegate());
+        i0.k0(this, new ReactScrollViewAccessibilityDelegate());
         this.mScroller = getOverScrollerFromParent();
         this.mReactScrollViewScrollState = new ReactScrollViewHelper.ReactScrollViewScrollState();
         setOnHierarchyChangeListener(this);
@@ -1293,7 +1293,7 @@ public class ReactHorizontalScrollView extends HorizontalScrollView implements R
         Rect rect = new Rect();
         view.getGlobalVisibleRect(rect);
         if (rect.contains((int) motionEvent.getRawX(), (int) motionEvent.getRawY())) {
-            if (!z10 && (view instanceof HorizontalScrollView) && h0.T(view) && (view instanceof ReactHorizontalScrollView) && ((ReactHorizontalScrollView) view).mScrollEnabled) {
+            if (!z10 && (view instanceof HorizontalScrollView) && i0.R(view) && (view instanceof ReactHorizontalScrollView) && ((ReactHorizontalScrollView) view).mScrollEnabled) {
                 return (HorizontalScrollView) view;
             }
             if (view instanceof ViewGroup) {

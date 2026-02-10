@@ -45,96 +45,96 @@ import java.util.zip.Deflater;
 public class a implements UIBlock {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String f23185o = "a";
+    private static final String f24282o = "a";
 
     /* renamed from: p  reason: collision with root package name */
-    private static byte[] f23186p = new byte[65536];
+    private static byte[] f24283p = new byte[65536];
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Object f23187q = new Object();
+    private static final Object f24284q = new Object();
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Set f23188r = Collections.newSetFromMap(new WeakHashMap());
+    private static final Set f24285r = Collections.newSetFromMap(new WeakHashMap());
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f23189a;
+    private final int f24286a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f23190b;
+    private final String f24287b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f23191c;
+    private final int f24288c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final double f23192d;
+    private final double f24289d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Integer f23193e;
+    private final Integer f24290e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Integer f23194f;
+    private final Integer f24291f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final File f23195g;
+    private final File f24292g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f23196h;
+    private final String f24293h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Promise f23197i;
+    private final Promise f24294i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Boolean f23198j;
+    private final Boolean f24295j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final ReactApplicationContext f23199k;
+    private final ReactApplicationContext f24296k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final boolean f23200l;
+    private final boolean f24297l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Activity f23201m;
+    private final Activity f24298m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final Executor f23202n;
+    private final Executor f24299n;
 
     /* renamed from: fr.greweb.reactnativeviewshot.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class RunnableC0355a implements Runnable {
+    class RunnableC0328a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ NativeViewHierarchyManager f23203d;
+        final /* synthetic */ NativeViewHierarchyManager f24300d;
 
-        RunnableC0355a(NativeViewHierarchyManager nativeViewHierarchyManager) {
-            this.f23203d = nativeViewHierarchyManager;
+        RunnableC0328a(NativeViewHierarchyManager nativeViewHierarchyManager) {
+            this.f24300d = nativeViewHierarchyManager;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             View resolveView;
             try {
-                if (a.this.f23189a == -1) {
-                    resolveView = a.this.f23201m.getWindow().getDecorView().findViewById(16908290);
+                if (a.this.f24286a == -1) {
+                    resolveView = a.this.f24298m.getWindow().getDecorView().findViewById(16908290);
                 } else {
-                    resolveView = this.f23203d.resolveView(a.this.f23189a);
+                    resolveView = this.f24300d.resolveView(a.this.f24286a);
                 }
                 if (resolveView == null) {
-                    String str = a.f23185o;
-                    Log.e(str, "No view found with reactTag: " + a.this.f23189a, new AssertionError());
-                    Promise promise = a.this.f23197i;
-                    promise.reject("E_UNABLE_TO_SNAPSHOT", "No view found with reactTag: " + a.this.f23189a);
+                    String str = a.f24282o;
+                    Log.e(str, "No view found with reactTag: " + a.this.f24286a, new AssertionError());
+                    Promise promise = a.this.f24294i;
+                    promise.reject("E_UNABLE_TO_SNAPSHOT", "No view found with reactTag: " + a.this.f24286a);
                     return;
                 }
-                d dVar = new d(a.f23186p);
+                d dVar = new d(a.f24283p);
                 dVar.n(a.w(resolveView));
-                a.f23186p = dVar.m();
-                if ("tmpfile".equals(a.this.f23196h) && -1 == a.this.f23191c) {
+                a.f24283p = dVar.m();
+                if ("tmpfile".equals(a.this.f24293h) && -1 == a.this.f24288c) {
                     a.this.A(resolveView);
-                } else if ("tmpfile".equals(a.this.f23196h) && -1 != a.this.f23191c) {
+                } else if ("tmpfile".equals(a.this.f24293h) && -1 != a.this.f24288c) {
                     a.this.B(resolveView);
                 } else {
-                    if (!"base64".equals(a.this.f23196h) && !"zip-base64".equals(a.this.f23196h)) {
-                        if ("data-uri".equals(a.this.f23196h)) {
+                    if (!"base64".equals(a.this.f24293h) && !"zip-base64".equals(a.this.f24293h)) {
+                        if ("data-uri".equals(a.this.f24293h)) {
                             a.this.z(resolveView);
                             return;
                         }
@@ -143,8 +143,8 @@ public class a implements UIBlock {
                     a.this.y(resolveView);
                 }
             } catch (Throwable th2) {
-                Log.e(a.f23185o, "Failed to capture view snapshot", th2);
-                a.this.f23197i.reject("E_UNABLE_TO_SNAPSHOT", "Failed to capture view snapshot");
+                Log.e(a.f24282o, "Failed to capture view snapshot", th2);
+                a.this.f24294i.reject("E_UNABLE_TO_SNAPSHOT", "Failed to capture view snapshot");
             }
         }
     }
@@ -154,40 +154,40 @@ public class a implements UIBlock {
     public class b implements PixelCopy.OnPixelCopyFinishedListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Canvas f23205a;
+        final /* synthetic */ Canvas f24302a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ View f23206b;
+        final /* synthetic */ View f24303b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ View f23207c;
+        final /* synthetic */ View f24304c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Bitmap f23208d;
+        final /* synthetic */ Bitmap f24305d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Paint f23209e;
+        final /* synthetic */ Paint f24306e;
 
         /* renamed from: f  reason: collision with root package name */
-        final /* synthetic */ CountDownLatch f23210f;
+        final /* synthetic */ CountDownLatch f24307f;
 
         b(Canvas canvas, View view, View view2, Bitmap bitmap, Paint paint, CountDownLatch countDownLatch) {
-            this.f23205a = canvas;
-            this.f23206b = view;
-            this.f23207c = view2;
-            this.f23208d = bitmap;
-            this.f23209e = paint;
-            this.f23210f = countDownLatch;
+            this.f24302a = canvas;
+            this.f24303b = view;
+            this.f24304c = view2;
+            this.f24305d = bitmap;
+            this.f24306e = paint;
+            this.f24307f = countDownLatch;
         }
 
         @Override // android.view.PixelCopy.OnPixelCopyFinishedListener
         public void onPixelCopyFinished(int i10) {
-            int save = this.f23205a.save();
-            a.this.p(this.f23205a, this.f23206b, this.f23207c);
-            this.f23205a.drawBitmap(this.f23208d, 0.0f, 0.0f, this.f23209e);
-            this.f23205a.restoreToCount(save);
-            a.x(this.f23208d);
-            this.f23210f.countDown();
+            int save = this.f24302a.save();
+            a.this.p(this.f24302a, this.f24303b, this.f24304c);
+            this.f24302a.drawBitmap(this.f24305d, 0.0f, 0.0f, this.f24306e);
+            this.f24302a.restoreToCount(save);
+            a.x(this.f24305d);
+            this.f24307f.countDown();
         }
     }
 
@@ -195,7 +195,7 @@ public class a implements UIBlock {
     public @interface c {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final Bitmap.CompressFormat[] f23212a = {Bitmap.CompressFormat.JPEG, Bitmap.CompressFormat.PNG, Bitmap.CompressFormat.WEBP};
+        public static final Bitmap.CompressFormat[] f24309a = {Bitmap.CompressFormat.JPEG, Bitmap.CompressFormat.PNG, Bitmap.CompressFormat.WEBP};
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -205,7 +205,7 @@ public class a implements UIBlock {
             ((ByteArrayOutputStream) this).buf = bArr;
         }
 
-        protected static int k(int i10) {
+        protected static int i(int i10) {
             if (i10 >= 0) {
                 if (i10 <= 2147483639) {
                     return 2147483639;
@@ -217,18 +217,18 @@ public class a implements UIBlock {
 
         public ByteBuffer a(int i10) {
             if (((ByteArrayOutputStream) this).buf.length < i10) {
-                g(i10);
+                h(i10);
             }
             return ByteBuffer.wrap(((ByteArrayOutputStream) this).buf);
         }
 
-        protected void g(int i10) {
+        protected void h(int i10) {
             int length = ((ByteArrayOutputStream) this).buf.length << 1;
             if (length - i10 < 0) {
                 length = i10;
             }
             if (length - 2147483639 > 0) {
-                length = k(i10);
+                length = i(i10);
             }
             ((ByteArrayOutputStream) this).buf = Arrays.copyOf(((ByteArrayOutputStream) this).buf, length);
         }
@@ -243,40 +243,40 @@ public class a implements UIBlock {
     }
 
     public a(int i10, String str, int i11, double d10, Integer num, Integer num2, File file, String str2, Boolean bool, ReactApplicationContext reactApplicationContext, Activity activity, boolean z10, Promise promise, Executor executor) {
-        this.f23189a = i10;
-        this.f23190b = str;
-        this.f23191c = i11;
-        this.f23192d = d10;
-        this.f23193e = num;
-        this.f23194f = num2;
-        this.f23195g = file;
-        this.f23196h = str2;
-        this.f23198j = bool;
-        this.f23199k = reactApplicationContext;
-        this.f23201m = activity;
-        this.f23200l = z10;
-        this.f23197i = promise;
-        this.f23202n = executor;
+        this.f24286a = i10;
+        this.f24287b = str;
+        this.f24288c = i11;
+        this.f24289d = d10;
+        this.f24290e = num;
+        this.f24291f = num2;
+        this.f24292g = file;
+        this.f24293h = str2;
+        this.f24295j = bool;
+        this.f24296k = reactApplicationContext;
+        this.f24298m = activity;
+        this.f24297l = z10;
+        this.f24294i = promise;
+        this.f24299n = executor;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void A(View view) {
-        String uri = Uri.fromFile(this.f23195g).toString();
-        FileOutputStream fileOutputStream = new FileOutputStream(this.f23195g);
-        d dVar = new d(f23186p);
+        String uri = Uri.fromFile(this.f24292g).toString();
+        FileOutputStream fileOutputStream = new FileOutputStream(this.f24292g);
+        d dVar = new d(f24283p);
         Point q10 = q(view, dVar);
-        f23186p = dVar.m();
+        f24283p = dVar.m();
         int size = dVar.size();
         fileOutputStream.write(String.format(Locale.US, "%d:%d|", Integer.valueOf(q10.x), Integer.valueOf(q10.y)).getBytes(Charset.forName("US-ASCII")));
-        fileOutputStream.write(f23186p, 0, size);
+        fileOutputStream.write(f24283p, 0, size);
         fileOutputStream.close();
-        this.f23197i.resolve(uri);
+        this.f24294i.resolve(uri);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void B(View view) {
-        q(view, new FileOutputStream(this.f23195g));
-        this.f23197i.resolve(Uri.fromFile(this.f23195g).toString());
+        q(view, new FileOutputStream(this.f24292g));
+        this.f24294i.resolve(Uri.fromFile(this.f24292g).toString());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -332,7 +332,7 @@ public class a implements UIBlock {
         int height = view2.getHeight();
         if (width > 0 && height > 0) {
             boolean z10 = false;
-            if (this.f23198j.booleanValue()) {
+            if (this.f24295j.booleanValue()) {
                 ScrollView scrollView = (ScrollView) view2;
                 int i11 = 0;
                 for (int i12 = 0; i12 < scrollView.getChildCount(); i12++) {
@@ -362,7 +362,7 @@ public class a implements UIBlock {
                         canvas.restoreToCount(save);
                         x(bitmap);
                     }
-                } else if ((view3 instanceof SurfaceView) && this.f23200l) {
+                } else if ((view3 instanceof SurfaceView) && this.f24297l) {
                     SurfaceView surfaceView = (SurfaceView) view3;
                     CountDownLatch countDownLatch = new CountDownLatch(1);
                     Bitmap v10 = v(view3.getWidth(), view3.getHeight());
@@ -370,26 +370,26 @@ public class a implements UIBlock {
                         PixelCopy.request(surfaceView, v10, new b(canvas, view2, view3, v10, paint, countDownLatch), new Handler(Looper.getMainLooper()));
                         countDownLatch.await(5L, TimeUnit.SECONDS);
                     } catch (Exception e10) {
-                        Log.e(f23185o, "Cannot PixelCopy for " + surfaceView, e10);
+                        Log.e(f24282o, "Cannot PixelCopy for " + surfaceView, e10);
                     }
                 }
                 view2 = view;
                 z10 = false;
             }
-            Integer num = this.f23193e;
-            if (num != null && this.f23194f != null && (num.intValue() != width || this.f23194f.intValue() != i10)) {
-                Bitmap createScaledBitmap = Bitmap.createScaledBitmap(u10, this.f23193e.intValue(), this.f23194f.intValue(), true);
+            Integer num = this.f24290e;
+            if (num != null && this.f24291f != null && (num.intValue() != width || this.f24291f.intValue() != i10)) {
+                Bitmap createScaledBitmap = Bitmap.createScaledBitmap(u10, this.f24290e.intValue(), this.f24291f.intValue(), true);
                 x(u10);
                 u10 = createScaledBitmap;
             }
-            int i13 = this.f23191c;
+            int i13 = this.f24288c;
             if (-1 == i13 && (outputStream instanceof d)) {
                 int i14 = width * i10 * 4;
                 d dVar = (d) s(outputStream);
                 u10.copyPixelsToBuffer(dVar.a(i14));
                 dVar.n(i14);
             } else {
-                u10.compress(c.f23212a[i13], (int) (this.f23192d * 100.0d), outputStream);
+                u10.compress(c.f24309a[i13], (int) (this.f24289d * 100.0d), outputStream);
             }
             x(u10);
             return point;
@@ -416,11 +416,11 @@ public class a implements UIBlock {
     }
 
     private static Bitmap u(int i10, int i11) {
-        synchronized (f23187q) {
+        synchronized (f24284q) {
             try {
-                for (Bitmap bitmap : f23188r) {
+                for (Bitmap bitmap : f24285r) {
                     if (bitmap.getWidth() == i10 && bitmap.getHeight() == i11) {
-                        f23188r.remove(bitmap);
+                        f24285r.remove(bitmap);
                         bitmap.eraseColor(0);
                         return bitmap;
                     }
@@ -433,11 +433,11 @@ public class a implements UIBlock {
     }
 
     private static Bitmap v(int i10, int i11) {
-        synchronized (f23187q) {
+        synchronized (f24284q) {
             try {
-                for (Bitmap bitmap : f23188r) {
+                for (Bitmap bitmap : f24285r) {
                     if (bitmap.getWidth() == i10 && bitmap.getHeight() == i11) {
-                        f23188r.remove(bitmap);
+                        f24285r.remove(bitmap);
                         bitmap.eraseColor(0);
                         return bitmap;
                     }
@@ -456,8 +456,8 @@ public class a implements UIBlock {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static void x(Bitmap bitmap) {
-        synchronized (f23187q) {
-            f23188r.add(bitmap);
+        synchronized (f24284q) {
+            f24285r.add(bitmap);
         }
     }
 
@@ -465,15 +465,15 @@ public class a implements UIBlock {
     public void y(View view) {
         boolean z10;
         String str;
-        if (-1 == this.f23191c) {
+        if (-1 == this.f24288c) {
             z10 = true;
         } else {
             z10 = false;
         }
-        boolean equals = "zip-base64".equals(this.f23196h);
-        d dVar = new d(f23186p);
+        boolean equals = "zip-base64".equals(this.f24293h);
+        d dVar = new d(f24283p);
         Point q10 = q(view, dVar);
-        f23186p = dVar.m();
+        f24283p = dVar.m();
         int size = dVar.size();
         String format = String.format(Locale.US, "%d:%d|", Integer.valueOf(q10.x), Integer.valueOf(q10.y));
         if (!z10) {
@@ -481,7 +481,7 @@ public class a implements UIBlock {
         }
         if (equals) {
             Deflater deflater = new Deflater();
-            deflater.setInput(f23186p, 0, size);
+            deflater.setInput(f24283p, 0, size);
             deflater.finish();
             d dVar2 = new d(new byte[32]);
             byte[] bArr = new byte[IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET];
@@ -490,29 +490,29 @@ public class a implements UIBlock {
             }
             str = format + Base64.encodeToString(dVar2.m(), 0, dVar2.size(), 2);
         } else {
-            str = format + Base64.encodeToString(f23186p, 0, size, 2);
+            str = format + Base64.encodeToString(f24283p, 0, size, 2);
         }
-        this.f23197i.resolve(str);
+        this.f24294i.resolve(str);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void z(View view) {
         String str;
-        d dVar = new d(f23186p);
+        d dVar = new d(f24283p);
         q(view, dVar);
-        f23186p = dVar.m();
-        String encodeToString = Base64.encodeToString(f23186p, 0, dVar.size(), 2);
-        if ("jpg".equals(this.f23190b)) {
+        f24283p = dVar.m();
+        String encodeToString = Base64.encodeToString(f24283p, 0, dVar.size(), 2);
+        if ("jpg".equals(this.f24287b)) {
             str = "jpeg";
         } else {
-            str = this.f23190b;
+            str = this.f24287b;
         }
-        Promise promise = this.f23197i;
+        Promise promise = this.f24294i;
         promise.resolve("data:image/" + str + ";base64," + encodeToString);
     }
 
     @Override // com.facebook.react.uimanager.UIBlock
     public void execute(NativeViewHierarchyManager nativeViewHierarchyManager) {
-        this.f23202n.execute(new RunnableC0355a(nativeViewHierarchyManager));
+        this.f24299n.execute(new RunnableC0328a(nativeViewHierarchyManager));
     }
 }

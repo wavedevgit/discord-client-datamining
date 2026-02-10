@@ -1,150 +1,102 @@
 package qt;
 
-import kotlin.jvm.internal.LongCompanionObject;
+import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class c {
-    public static int a(int i10, int i11) {
-        if (i10 >= 0) {
-            return i10 / i11;
-        }
-        return ((i10 + 1) / i11) - 1;
+public final class c extends n {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final List f45656d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public c(List missingFields, String str, Throwable th2) {
+        super(str, th2);
+        Intrinsics.checkNotNullParameter(missingFields, "missingFields");
+        this.f45656d = missingFields;
     }
 
-    public static long b(long j10, int i10) {
-        if (j10 >= 0) {
-            return j10 / i10;
-        }
-        return ((j10 + 1) / i10) - 1;
+    public final List a() {
+        return this.f45656d;
     }
 
-    public static int c(int i10, int i11) {
-        return i10 - (i11 * a(i10, i11));
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public c(java.util.List r3, java.lang.String r4) {
+        /*
+            r2 = this;
+            java.lang.String r0 = "missingFields"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r3, r0)
+            java.lang.String r0 = "serialName"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r4, r0)
+            int r0 = r3.size()
+            r1 = 1
+            if (r0 != r1) goto L37
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            java.lang.String r1 = "Field '"
+            r0.append(r1)
+            r1 = 0
+            java.lang.Object r1 = r3.get(r1)
+            java.lang.String r1 = (java.lang.String) r1
+            r0.append(r1)
+            java.lang.String r1 = "' is required for type with serial name '"
+            r0.append(r1)
+            r0.append(r4)
+            java.lang.String r4 = "', but it was missing"
+            r0.append(r4)
+            java.lang.String r4 = r0.toString()
+            goto L55
+        L37:
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            java.lang.String r1 = "Fields "
+            r0.append(r1)
+            r0.append(r3)
+            java.lang.String r1 = " are required for type with serial name '"
+            r0.append(r1)
+            r0.append(r4)
+            java.lang.String r4 = "', but they were missing"
+            r0.append(r4)
+            java.lang.String r4 = r0.toString()
+        L55:
+            r0 = 0
+            r2.<init>(r3, r4, r0)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: qt.c.<init>(java.util.List, java.lang.String):void");
     }
 
-    public static int d(long j10, int i10) {
-        return (int) (j10 - (i10 * b(j10, i10)));
-    }
-
-    public static int e(int i10, int i11) {
-        if (i11 == 0) {
-            return i10;
-        }
-        long j10 = i10 + i11;
-        if (j10 >= -2147483648L && j10 <= 2147483647L) {
-            return (int) j10;
-        }
-        StringBuilder sb2 = new StringBuilder(32);
-        sb2.append("Integer overflow: (");
-        sb2.append(i10);
-        sb2.append(',');
-        sb2.append(i11);
-        sb2.append(')');
-        throw new ArithmeticException(sb2.toString());
-    }
-
-    public static long f(long j10, long j11) {
-        int i10 = (j11 > 0L ? 1 : (j11 == 0L ? 0 : -1));
-        if (i10 == 0) {
-            return j10;
-        }
-        if (i10 <= 0 ? j10 >= Long.MIN_VALUE - j11 : j10 <= LongCompanionObject.MAX_VALUE - j11) {
-            return j10 + j11;
-        }
-        StringBuilder sb2 = new StringBuilder(32);
-        sb2.append("Long overflow: (");
-        sb2.append(j10);
-        sb2.append(',');
-        sb2.append(j11);
-        sb2.append(')');
-        throw new ArithmeticException(sb2.toString());
-    }
-
-    public static int g(long j10) {
-        if (j10 >= -2147483648L && j10 <= 2147483647L) {
-            return (int) j10;
-        }
-        throw new ArithmeticException("Out of range: " + j10);
-    }
-
-    public static int h(int i10, int i11) {
-        if (i11 == 1) {
-            return i10;
-        }
-        long j10 = i10 * i11;
-        if (j10 >= -2147483648L && j10 <= 2147483647L) {
-            return (int) j10;
-        }
-        StringBuilder sb2 = new StringBuilder(32);
-        sb2.append("Integer overflow: (");
-        sb2.append(i10);
-        sb2.append(',');
-        sb2.append(i11);
-        sb2.append(')');
-        throw new ArithmeticException(sb2.toString());
-    }
-
-    public static long i(long j10, long j11) {
-        int i10;
-        if (j11 == 1) {
-            return j10;
-        }
-        if (j11 <= 0 ? !(j11 >= -1 ? i10 != 0 || j10 != Long.MIN_VALUE : j10 <= Long.MIN_VALUE / j11 && j10 >= LongCompanionObject.MAX_VALUE / j11) : !(j10 <= LongCompanionObject.MAX_VALUE / j11 && j10 >= Long.MIN_VALUE / j11)) {
-            StringBuilder sb2 = new StringBuilder(32);
-            sb2.append("Long overflow: (");
-            sb2.append(j10);
-            sb2.append(',');
-            sb2.append(j11);
-            sb2.append(')');
-            throw new ArithmeticException(sb2.toString());
-        }
-        return j10 * j11;
-    }
-
-    public static int j(int i10) {
-        if (i10 != Integer.MIN_VALUE) {
-            return -i10;
-        }
-        throw new ArithmeticException("Not negatable: " + i10);
-    }
-
-    public static long k(long j10) {
-        if (j10 != Long.MIN_VALUE) {
-            return -j10;
-        }
-        throw new ArithmeticException("Not negatable: " + j10);
-    }
-
-    public static int l(int i10, int i11) {
-        if (i11 == 0) {
-            return i10;
-        }
-        long j10 = i10 - i11;
-        if (j10 >= -2147483648L && j10 <= 2147483647L) {
-            return (int) j10;
-        }
-        StringBuilder sb2 = new StringBuilder(32);
-        sb2.append("Integer overflow: (");
-        sb2.append(i10);
-        sb2.append(',');
-        sb2.append(i11);
-        sb2.append(')');
-        throw new ArithmeticException(sb2.toString());
-    }
-
-    public static long m(long j10, long j11) {
-        int i10 = (j11 > 0L ? 1 : (j11 == 0L ? 0 : -1));
-        if (i10 == 0) {
-            return j10;
-        }
-        if (i10 <= 0 ? j10 <= LongCompanionObject.MAX_VALUE + j11 : j10 >= Long.MIN_VALUE + j11) {
-            return j10 - j11;
-        }
-        StringBuilder sb2 = new StringBuilder(32);
-        sb2.append("Long overflow: (");
-        sb2.append(j10);
-        sb2.append(',');
-        sb2.append(j11);
-        sb2.append(')');
-        throw new ArithmeticException(sb2.toString());
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public c(java.lang.String r4, java.lang.String r5) {
+        /*
+            r3 = this;
+            java.lang.String r0 = "missingField"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r4, r0)
+            java.lang.String r0 = "serialName"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
+            java.util.List r0 = kotlin.collections.CollectionsKt.e(r4)
+            java.lang.StringBuilder r1 = new java.lang.StringBuilder
+            r1.<init>()
+            java.lang.String r2 = "Field '"
+            r1.append(r2)
+            r1.append(r4)
+            java.lang.String r4 = "' is required for type with serial name '"
+            r1.append(r4)
+            r1.append(r5)
+            java.lang.String r4 = "', but it was missing"
+            r1.append(r4)
+            java.lang.String r4 = r1.toString()
+            r5 = 0
+            r3.<init>(r0, r4, r5)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: qt.c.<init>(java.lang.String, java.lang.String):void");
     }
 }

@@ -12,7 +12,7 @@ import androidx.constraintlayout.widget.e;
 public class Flow extends e {
 
     /* renamed from: w  reason: collision with root package name */
-    private androidx.constraintlayout.core.widgets.e f2553w;
+    private androidx.constraintlayout.core.widgets.e f2556w;
 
     public Flow(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -22,80 +22,80 @@ public class Flow extends e {
     @Override // androidx.constraintlayout.widget.e, androidx.constraintlayout.widget.b
     public void i(AttributeSet attributeSet) {
         super.i(attributeSet);
-        this.f2553w = new androidx.constraintlayout.core.widgets.e();
+        this.f2556w = new androidx.constraintlayout.core.widgets.e();
         if (attributeSet != null) {
             TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, d.V0);
             int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i10 = 0; i10 < indexCount; i10++) {
                 int index = obtainStyledAttributes.getIndex(i10);
                 if (index == d.W0) {
-                    this.f2553w.E2(obtainStyledAttributes.getInt(index, 0));
+                    this.f2556w.E2(obtainStyledAttributes.getInt(index, 0));
                 } else if (index == d.X0) {
-                    this.f2553w.J1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
-                } else if (index == d.f2830h1) {
-                    this.f2553w.O1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
-                } else if (index == d.f2838i1) {
-                    this.f2553w.L1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
+                    this.f2556w.J1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
+                } else if (index == d.f2833h1) {
+                    this.f2556w.O1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
+                } else if (index == d.f2841i1) {
+                    this.f2556w.L1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
                 } else if (index == d.Y0) {
-                    this.f2553w.M1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
+                    this.f2556w.M1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
                 } else if (index == d.Z0) {
-                    this.f2553w.P1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
-                } else if (index == d.f2772a1) {
-                    this.f2553w.N1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
-                } else if (index == d.f2781b1) {
-                    this.f2553w.K1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
+                    this.f2556w.P1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
+                } else if (index == d.f2775a1) {
+                    this.f2556w.N1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
+                } else if (index == d.f2784b1) {
+                    this.f2556w.K1(obtainStyledAttributes.getDimensionPixelSize(index, 0));
                 } else if (index == d.H1) {
-                    this.f2553w.J2(obtainStyledAttributes.getInt(index, 0));
-                } else if (index == d.f2958x1) {
-                    this.f2553w.y2(obtainStyledAttributes.getInt(index, 0));
+                    this.f2556w.J2(obtainStyledAttributes.getInt(index, 0));
+                } else if (index == d.f2961x1) {
+                    this.f2556w.y2(obtainStyledAttributes.getInt(index, 0));
                 } else if (index == d.G1) {
-                    this.f2553w.I2(obtainStyledAttributes.getInt(index, 0));
-                } else if (index == d.f2910r1) {
-                    this.f2553w.s2(obtainStyledAttributes.getInt(index, 0));
-                } else if (index == d.f2974z1) {
-                    this.f2553w.A2(obtainStyledAttributes.getInt(index, 0));
-                } else if (index == d.f2926t1) {
-                    this.f2553w.u2(obtainStyledAttributes.getInt(index, 0));
+                    this.f2556w.I2(obtainStyledAttributes.getInt(index, 0));
+                } else if (index == d.f2913r1) {
+                    this.f2556w.s2(obtainStyledAttributes.getInt(index, 0));
+                } else if (index == d.f2977z1) {
+                    this.f2556w.A2(obtainStyledAttributes.getInt(index, 0));
+                } else if (index == d.f2929t1) {
+                    this.f2556w.u2(obtainStyledAttributes.getInt(index, 0));
                 } else if (index == d.B1) {
-                    this.f2553w.C2(obtainStyledAttributes.getInt(index, 0));
-                } else if (index == d.f2942v1) {
-                    this.f2553w.w2(obtainStyledAttributes.getFloat(index, 0.5f));
-                } else if (index == d.f2902q1) {
-                    this.f2553w.r2(obtainStyledAttributes.getFloat(index, 0.5f));
-                } else if (index == d.f2966y1) {
-                    this.f2553w.z2(obtainStyledAttributes.getFloat(index, 0.5f));
-                } else if (index == d.f2918s1) {
-                    this.f2553w.t2(obtainStyledAttributes.getFloat(index, 0.5f));
+                    this.f2556w.C2(obtainStyledAttributes.getInt(index, 0));
+                } else if (index == d.f2945v1) {
+                    this.f2556w.w2(obtainStyledAttributes.getFloat(index, 0.5f));
+                } else if (index == d.f2905q1) {
+                    this.f2556w.r2(obtainStyledAttributes.getFloat(index, 0.5f));
+                } else if (index == d.f2969y1) {
+                    this.f2556w.z2(obtainStyledAttributes.getFloat(index, 0.5f));
+                } else if (index == d.f2921s1) {
+                    this.f2556w.t2(obtainStyledAttributes.getFloat(index, 0.5f));
                 } else if (index == d.A1) {
-                    this.f2553w.B2(obtainStyledAttributes.getFloat(index, 0.5f));
+                    this.f2556w.B2(obtainStyledAttributes.getFloat(index, 0.5f));
                 } else if (index == d.E1) {
-                    this.f2553w.G2(obtainStyledAttributes.getFloat(index, 0.5f));
-                } else if (index == d.f2934u1) {
-                    this.f2553w.v2(obtainStyledAttributes.getInt(index, 2));
+                    this.f2556w.G2(obtainStyledAttributes.getFloat(index, 0.5f));
+                } else if (index == d.f2937u1) {
+                    this.f2556w.v2(obtainStyledAttributes.getInt(index, 2));
                 } else if (index == d.D1) {
-                    this.f2553w.F2(obtainStyledAttributes.getInt(index, 2));
-                } else if (index == d.f2950w1) {
-                    this.f2553w.x2(obtainStyledAttributes.getDimensionPixelSize(index, 0));
+                    this.f2556w.F2(obtainStyledAttributes.getInt(index, 2));
+                } else if (index == d.f2953w1) {
+                    this.f2556w.x2(obtainStyledAttributes.getDimensionPixelSize(index, 0));
                 } else if (index == d.F1) {
-                    this.f2553w.H2(obtainStyledAttributes.getDimensionPixelSize(index, 0));
+                    this.f2556w.H2(obtainStyledAttributes.getDimensionPixelSize(index, 0));
                 } else if (index == d.C1) {
-                    this.f2553w.D2(obtainStyledAttributes.getInt(index, -1));
+                    this.f2556w.D2(obtainStyledAttributes.getInt(index, -1));
                 }
             }
             obtainStyledAttributes.recycle();
         }
-        this.f2764o = this.f2553w;
+        this.f2767o = this.f2556w;
         o();
     }
 
     @Override // androidx.constraintlayout.widget.b
     public void j(ConstraintWidget constraintWidget, boolean z10) {
-        this.f2553w.u1(z10);
+        this.f2556w.u1(z10);
     }
 
     @Override // androidx.constraintlayout.widget.b, android.view.View
     protected void onMeasure(int i10, int i11) {
-        p(this.f2553w, i10, i11);
+        p(this.f2556w, i10, i11);
     }
 
     @Override // androidx.constraintlayout.widget.e
@@ -113,122 +113,122 @@ public class Flow extends e {
     }
 
     public void setFirstHorizontalBias(float f10) {
-        this.f2553w.r2(f10);
+        this.f2556w.r2(f10);
         requestLayout();
     }
 
     public void setFirstHorizontalStyle(int i10) {
-        this.f2553w.s2(i10);
+        this.f2556w.s2(i10);
         requestLayout();
     }
 
     public void setFirstVerticalBias(float f10) {
-        this.f2553w.t2(f10);
+        this.f2556w.t2(f10);
         requestLayout();
     }
 
     public void setFirstVerticalStyle(int i10) {
-        this.f2553w.u2(i10);
+        this.f2556w.u2(i10);
         requestLayout();
     }
 
     public void setHorizontalAlign(int i10) {
-        this.f2553w.v2(i10);
+        this.f2556w.v2(i10);
         requestLayout();
     }
 
     public void setHorizontalBias(float f10) {
-        this.f2553w.w2(f10);
+        this.f2556w.w2(f10);
         requestLayout();
     }
 
     public void setHorizontalGap(int i10) {
-        this.f2553w.x2(i10);
+        this.f2556w.x2(i10);
         requestLayout();
     }
 
     public void setHorizontalStyle(int i10) {
-        this.f2553w.y2(i10);
+        this.f2556w.y2(i10);
         requestLayout();
     }
 
     public void setLastHorizontalBias(float f10) {
-        this.f2553w.z2(f10);
+        this.f2556w.z2(f10);
         requestLayout();
     }
 
     public void setLastHorizontalStyle(int i10) {
-        this.f2553w.A2(i10);
+        this.f2556w.A2(i10);
         requestLayout();
     }
 
     public void setLastVerticalBias(float f10) {
-        this.f2553w.B2(f10);
+        this.f2556w.B2(f10);
         requestLayout();
     }
 
     public void setLastVerticalStyle(int i10) {
-        this.f2553w.C2(i10);
+        this.f2556w.C2(i10);
         requestLayout();
     }
 
     public void setMaxElementsWrap(int i10) {
-        this.f2553w.D2(i10);
+        this.f2556w.D2(i10);
         requestLayout();
     }
 
     public void setOrientation(int i10) {
-        this.f2553w.E2(i10);
+        this.f2556w.E2(i10);
         requestLayout();
     }
 
     public void setPadding(int i10) {
-        this.f2553w.J1(i10);
+        this.f2556w.J1(i10);
         requestLayout();
     }
 
     public void setPaddingBottom(int i10) {
-        this.f2553w.K1(i10);
+        this.f2556w.K1(i10);
         requestLayout();
     }
 
     public void setPaddingLeft(int i10) {
-        this.f2553w.M1(i10);
+        this.f2556w.M1(i10);
         requestLayout();
     }
 
     public void setPaddingRight(int i10) {
-        this.f2553w.N1(i10);
+        this.f2556w.N1(i10);
         requestLayout();
     }
 
     public void setPaddingTop(int i10) {
-        this.f2553w.P1(i10);
+        this.f2556w.P1(i10);
         requestLayout();
     }
 
     public void setVerticalAlign(int i10) {
-        this.f2553w.F2(i10);
+        this.f2556w.F2(i10);
         requestLayout();
     }
 
     public void setVerticalBias(float f10) {
-        this.f2553w.G2(f10);
+        this.f2556w.G2(f10);
         requestLayout();
     }
 
     public void setVerticalGap(int i10) {
-        this.f2553w.H2(i10);
+        this.f2556w.H2(i10);
         requestLayout();
     }
 
     public void setVerticalStyle(int i10) {
-        this.f2553w.I2(i10);
+        this.f2556w.I2(i10);
         requestLayout();
     }
 
     public void setWrapMode(int i10) {
-        this.f2553w.J2(i10);
+        this.f2556w.J2(i10);
         requestLayout();
     }
 }

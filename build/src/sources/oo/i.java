@@ -1,107 +1,307 @@
 package oo;
 
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.viewbinding.ViewBinding;
-import com.google.android.material.textfield.TextInputLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
-import ko.m4;
-import ko.n4;
+import gn.k;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import kotlin.Pair;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.functions.Function4;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Reflection;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class i implements ViewBinding {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f42528a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final LinearLayout f42529b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final Button f42530c;
+public final class i implements gn.b, Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<i> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextInputLayout f42531d;
+    private final nq.g f40750d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f42532e;
-
-    /* renamed from: f  reason: collision with root package name */
-    public final TextInputLayout f42533f;
-
-    /* renamed from: g  reason: collision with root package name */
-    public final TextView f42534g;
-
-    /* renamed from: h  reason: collision with root package name */
-    public final Pi2NavigationBar f42535h;
+    private final List f40751e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextView f42536i;
+    private final jq.a f40752i;
 
-    private i(CoordinatorLayout coordinatorLayout, LinearLayout linearLayout, Button button, TextInputLayout textInputLayout, TextView textView, TextInputLayout textInputLayout2, TextView textView2, Pi2NavigationBar pi2NavigationBar, TextView textView3) {
-        this.f42528a = coordinatorLayout;
-        this.f42529b = linearLayout;
-        this.f42530c = button;
-        this.f42531d = textInputLayout;
-        this.f42532e = textView;
-        this.f42533f = textInputLayout2;
-        this.f42534g = textView2;
-        this.f42535h = pi2NavigationBar;
-        this.f42536i = textView3;
+    /* renamed from: o  reason: collision with root package name */
+    private final Function0 f40753o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private final Function0 f40754p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private final gn.c0 f40755q;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final i createFromParcel(Parcel parcel) {
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            nq.g gVar = (nq.g) parcel.readParcelable(i.class.getClassLoader());
+            int readInt = parcel.readInt();
+            ArrayList arrayList = new ArrayList(readInt);
+            for (int i10 = 0; i10 != readInt; i10++) {
+                arrayList.add(parcel.readSerializable());
+            }
+            return new i(gVar, arrayList, (jq.a) parcel.readParcelable(i.class.getClassLoader()), (Function0) parcel.readSerializable(), (Function0) parcel.readSerializable());
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final i[] newArray(int i10) {
+            return new i[i10];
+        }
     }
 
-    public static i a(View view) {
-        int i10 = m4.f31412t;
-        LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
-        if (linearLayout != null) {
-            i10 = m4.f31414u;
-            Button button = (Button) e4.a.a(view, i10);
-            if (button != null) {
-                i10 = m4.f31416v;
-                TextInputLayout textInputLayout = (TextInputLayout) e4.a.a(view, i10);
-                if (textInputLayout != null) {
-                    i10 = m4.f31418w;
-                    TextView textView = (TextView) e4.a.a(view, i10);
-                    if (textView != null) {
-                        i10 = m4.L;
-                        TextInputLayout textInputLayout2 = (TextInputLayout) e4.a.a(view, i10);
-                        if (textInputLayout2 != null) {
-                            i10 = m4.M;
-                            TextView textView2 = (TextView) e4.a.a(view, i10);
-                            if (textView2 != null) {
-                                i10 = m4.Y;
-                                Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
-                                if (pi2NavigationBar != null) {
-                                    i10 = m4.D0;
-                                    TextView textView3 = (TextView) e4.a.a(view, i10);
-                                    if (textView3 != null) {
-                                        return new i((CoordinatorLayout) view, linearLayout, button, textInputLayout, textView, textInputLayout2, textView2, pi2NavigationBar, textView3);
-                                    }
-                                }
-                            }
-                        }
-                    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public /* synthetic */ class b extends FunctionReferenceImpl implements Function3 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final b f40756d = new b();
+
+        public b() {
+            super(3, dq.b.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/shared/databinding/Pi2GenericUiStepScreenBinding;", 0);
+        }
+
+        public final dq.b a(LayoutInflater p02, ViewGroup viewGroup, boolean z10) {
+            Intrinsics.checkNotNullParameter(p02, "p0");
+            return dq.b.c(p02, viewGroup, z10);
+        }
+
+        @Override // kotlin.jvm.functions.Function3
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
+            return a((LayoutInflater) obj, (ViewGroup) obj2, ((Boolean) obj3).booleanValue());
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c implements Function1 {
+
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ nq.g f40757d;
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ Function2 f40758e;
+
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ boolean f40759i;
+
+        /* renamed from: o  reason: collision with root package name */
+        final /* synthetic */ Function4 f40760o;
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class a implements gn.k {
+
+            /* renamed from: b  reason: collision with root package name */
+            final /* synthetic */ nq.g f40761b;
+
+            /* renamed from: c  reason: collision with root package name */
+            final /* synthetic */ dq.b f40762c;
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ Function4 f40763d;
+
+            /* renamed from: e  reason: collision with root package name */
+            final /* synthetic */ nq.h f40764e;
+
+            public a(nq.g gVar, dq.b bVar, Function4 function4, nq.h hVar) {
+                this.f40761b = gVar;
+                this.f40762c = bVar;
+                this.f40763d = function4;
+                this.f40764e = hVar;
+            }
+
+            @Override // gn.k
+            public final void a(Object rendering, gn.a0 viewEnvironment) {
+                Intrinsics.checkNotNullParameter(rendering, "rendering");
+                Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
+                Integer d10 = this.f40761b.d();
+                if (d10 != null) {
+                    dq.b bVar = this.f40762c;
+                    int intValue = d10.intValue();
+                    bVar.getRoot().setBackgroundColor(intValue);
+                    kq.c.a(viewEnvironment, intValue);
                 }
+                nq.g gVar = this.f40761b;
+                Context context = this.f40762c.getRoot().getContext();
+                Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
+                Drawable a10 = gVar.a(context);
+                if (a10 != null) {
+                    dq.b bVar2 = this.f40762c;
+                    bVar2.getRoot().setBackground(a10);
+                    bVar2.f21851d.setBackgroundColor(0);
+                }
+                Function4 function4 = this.f40763d;
+                dq.b bVar3 = this.f40762c;
+                Intrinsics.checkNotNull(bVar3);
+                function4.invoke(bVar3, rendering, viewEnvironment, this.f40764e.c().a());
             }
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
-    }
 
-    public static i c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n4.f31553j, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
+        public c(nq.g gVar, Function2 function2, boolean z10, Function4 function4) {
+            this.f40757d = gVar;
+            this.f40758e = function2;
+            this.f40759i = z10;
+            this.f40760o = function4;
         }
-        return a(inflate);
+
+        @Override // kotlin.jvm.functions.Function1
+        /* renamed from: a */
+        public final gn.k invoke(dq.b binding) {
+            Intrinsics.checkNotNullParameter(binding, "binding");
+            return new a(this.f40757d, binding, this.f40760o, nq.m.f38354a.l(binding, this.f40757d, this.f40758e, this.f40759i));
+        }
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public CoordinatorLayout getRoot() {
-        return this.f42528a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    /* synthetic */ class d extends FunctionReferenceImpl implements Function4 {
+        d(Object obj) {
+            super(4, obj, i.class, "showRendering", "showRendering(Lcom/withpersona/sdk2/inquiry/shared/databinding/Pi2GenericUiStepScreenBinding;Lcom/withpersona/sdk2/inquiry/document/DocumentInstructionsView;Lcom/squareup/workflow1/ui/ViewEnvironment;Ljava/util/Map;)V", 0);
+        }
+
+        public final void a(dq.b p02, i p12, gn.a0 p22, Map p32) {
+            Intrinsics.checkNotNullParameter(p02, "p0");
+            Intrinsics.checkNotNullParameter(p12, "p1");
+            Intrinsics.checkNotNullParameter(p22, "p2");
+            Intrinsics.checkNotNullParameter(p32, "p3");
+            ((i) this.receiver).g(p02, p12, p22, p32);
+        }
+
+        @Override // kotlin.jvm.functions.Function4
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
+            a((dq.b) obj, (i) obj2, (gn.a0) obj3, (Map) obj4);
+            return Unit.f31987a;
+        }
+    }
+
+    public i(nq.g uiScreen, List componentNamesToActions, jq.a navigationState, Function0 onBack, Function0 onCancel) {
+        Intrinsics.checkNotNullParameter(uiScreen, "uiScreen");
+        Intrinsics.checkNotNullParameter(componentNamesToActions, "componentNamesToActions");
+        Intrinsics.checkNotNullParameter(navigationState, "navigationState");
+        Intrinsics.checkNotNullParameter(onBack, "onBack");
+        Intrinsics.checkNotNullParameter(onCancel, "onCancel");
+        this.f40750d = uiScreen;
+        this.f40751e = componentNamesToActions;
+        this.f40752i = navigationState;
+        this.f40753o = onBack;
+        this.f40754p = onCancel;
+        nq.m mVar = nq.m.f38354a;
+        Function2 function2 = new Function2() { // from class: oo.e
+            @Override // kotlin.jvm.functions.Function2
+            public final Object invoke(Object obj, Object obj2) {
+                Unit l10;
+                l10 = i.l((dq.b) obj, (Map) obj2);
+                return l10;
+            }
+        };
+        d dVar = new d(this);
+        k.a aVar = gn.k.f25848a;
+        this.f40755q = new gn.z(Reflection.getOrCreateKotlinClass(i.class), b.f40756d, new c(uiScreen, function2, true, dVar));
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final void g(dq.b bVar, final i iVar, gn.a0 a0Var, Map map) {
+        for (Pair pair : this.f40751e) {
+            final Function1 function1 = (Function1) pair.d();
+            final nq.a aVar = (nq.a) map.get((String) pair.c());
+            if (aVar != null) {
+                aVar.d().setOnClickListener(new View.OnClickListener() { // from class: oo.f
+                    @Override // android.view.View.OnClickListener
+                    public final void onClick(View view) {
+                        i.i(Function1.this, aVar, view);
+                    }
+                });
+            }
+        }
+        jq.a aVar2 = iVar.f40752i;
+        Function0 function0 = new Function0() { // from class: oo.g
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                Unit j10;
+                j10 = i.j(i.this);
+                return j10;
+            }
+        };
+        Function0 function02 = new Function0() { // from class: oo.h
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                Unit k10;
+                k10 = i.k(i.this);
+                return k10;
+            }
+        };
+        Pi2NavigationBar navigationBar = bVar.f21852e;
+        Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
+        ConstraintLayout root = bVar.getRoot();
+        Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
+        jq.e.b(aVar2, function0, function02, navigationBar, root);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void i(Function1 function1, nq.a aVar, View view) {
+        function1.invoke(aVar.c());
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit j(i iVar) {
+        iVar.f40753o.invoke();
+        return Unit.f31987a;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit k(i iVar) {
+        iVar.f40754p.invoke();
+        return Unit.f31987a;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit l(dq.b binding, Map map) {
+        Intrinsics.checkNotNullParameter(binding, "binding");
+        Intrinsics.checkNotNullParameter(map, "<unused var>");
+        ConstraintLayout root = binding.getRoot();
+        Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
+        lq.f.d(root, false, false, false, false, 15, null);
+        return Unit.f31987a;
+    }
+
+    @Override // gn.b
+    public gn.c0 a() {
+        return this.f40755q;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeParcelable(this.f40750d, i10);
+        List<Serializable> list = this.f40751e;
+        dest.writeInt(list.size());
+        for (Serializable serializable : list) {
+            dest.writeSerializable(serializable);
+        }
+        dest.writeParcelable(this.f40752i, i10);
+        dest.writeSerializable((Serializable) this.f40753o);
+        dest.writeSerializable((Serializable) this.f40754p);
     }
 }

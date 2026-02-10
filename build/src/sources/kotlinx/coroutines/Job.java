@@ -6,12 +6,12 @@ import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.sequences.Sequence;
-import ps.n0;
+import ys.n0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface Job extends CoroutineContext.Element {
 
-    /* renamed from: h  reason: collision with root package name */
-    public static final b f34774h = b.f34775d;
+    /* renamed from: k  reason: collision with root package name */
+    public static final b f34996k = b.f34997d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -20,7 +20,7 @@ public interface Job extends CoroutineContext.Element {
                 if ((i10 & 1) != 0) {
                     cancellationException = null;
                 }
-                job.k(cancellationException);
+                job.i(cancellationException);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: cancel");
@@ -47,31 +47,31 @@ public interface Job extends CoroutineContext.Element {
     public static final class b implements CoroutineContext.b {
 
         /* renamed from: d  reason: collision with root package name */
-        static final /* synthetic */ b f34775d = new b();
+        static final /* synthetic */ b f34997d = new b();
 
         private b() {
         }
     }
 
-    CancellationException C();
+    n0 C(boolean z10, boolean z11, Function1 function1);
 
-    n0 Q(Function1 function1);
+    CancellationException I();
 
-    Object W0(Continuation continuation);
+    Object S0(Continuation continuation);
 
     boolean a();
 
-    ps.n a1(ps.o oVar);
-
     Sequence getChildren();
+
+    void i(CancellationException cancellationException);
 
     boolean isCancelled();
 
     boolean isCompleted();
 
-    void k(CancellationException cancellationException);
-
     boolean start();
 
-    n0 z(boolean z10, boolean z11, Function1 function1);
+    ys.n y(ys.o oVar);
+
+    n0 z0(Function1 function1);
 }

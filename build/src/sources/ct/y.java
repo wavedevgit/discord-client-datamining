@@ -1,133 +1,54 @@
 package ct;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import kotlin.Unit;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function1;
+import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
+import kotlinx.coroutines.Job;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class y implements s {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final o f20245a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final boolean f20246b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final Set f20247c;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
-        a() {
-            super(1, Intrinsics.Kotlin.class, "checkIfAllNegative", "formatter$checkIfAllNegative(Lkotlinx/datetime/internal/format/SignedFormatStructure;Ljava/lang/Object;)Z", 0);
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final Boolean invoke(Object obj) {
-            return Boolean.valueOf(y.e(y.this, obj));
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class b extends Lambda implements Function2 {
-        b() {
-            super(2);
-        }
-
-        public final void a(Object obj, boolean z10) {
-            boolean z11;
-            for (m mVar : y.this.f20247c) {
-                boolean areEqual = Intrinsics.areEqual(mVar.isNegative().a(obj), Boolean.TRUE);
-                ct.b isNegative = mVar.isNegative();
-                if (z10 != areEqual) {
-                    z11 = true;
-                } else {
-                    z11 = false;
-                }
-                isNegative.c(obj, Boolean.valueOf(z11));
+public abstract class y {
+    public static final void b(final v vVar, CoroutineContext coroutineContext) {
+        if (((Number) coroutineContext.a1(0, new Function2() { // from class: ct.x
+            @Override // kotlin.jvm.functions.Function2
+            public final Object invoke(Object obj, Object obj2) {
+                int c10;
+                c10 = y.c(v.this, ((Integer) obj).intValue(), (CoroutineContext.Element) obj2);
+                return Integer.valueOf(c10);
             }
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            a(obj, ((Boolean) obj2).booleanValue());
-            return Unit.f31765a;
-        }
-    }
-
-    public y(o format, boolean z10) {
-        List<l> b10;
-        Intrinsics.checkNotNullParameter(format, "format");
-        this.f20245a = format;
-        this.f20246b = z10;
-        b10 = p.b(format);
-        ArrayList arrayList = new ArrayList();
-        for (l lVar : b10) {
-            m c10 = lVar.c().c();
-            if (c10 != null) {
-                arrayList.add(c10);
-            }
-        }
-        Set l12 = CollectionsKt.l1(arrayList);
-        this.f20247c = l12;
-        if (!l12.isEmpty()) {
+        })).intValue() == vVar.f21102i) {
             return;
         }
-        throw new IllegalArgumentException("Signed format must contain at least one field with a sign");
+        throw new IllegalStateException(("Flow invariant is violated:\n\t\tFlow was collected in " + vVar.f21101e + ",\n\t\tbut emission happened in " + coroutineContext + ".\n\t\tPlease refer to 'flow' documentation or use 'flowOn' instead").toString());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final boolean e(y yVar, Object obj) {
-        boolean z10 = false;
-        for (m mVar : yVar.f20247c) {
-            if (Intrinsics.areEqual(mVar.isNegative().a(obj), Boolean.TRUE)) {
-                z10 = true;
-            } else if (!mVar.a(obj)) {
-                return false;
+    public static final int c(v vVar, int i10, CoroutineContext.Element element) {
+        CoroutineContext.b key = element.getKey();
+        CoroutineContext.Element m10 = vVar.f21101e.m(key);
+        if (key != Job.f34996k) {
+            if (element != m10) {
+                return Integer.MIN_VALUE;
             }
+            return i10 + 1;
         }
-        return z10;
-    }
-
-    @Override // ct.o
-    public dt.e a() {
-        return new dt.f(this.f20245a.a(), new a(), this.f20246b);
-    }
-
-    @Override // ct.o
-    public et.q b() {
-        b bVar = new b();
-        boolean z10 = this.f20246b;
-        return et.n.b(CollectionsKt.o(new et.q(CollectionsKt.e(new et.s(bVar, z10, "sign for " + this.f20247c)), CollectionsKt.l()), this.f20245a.b()));
-    }
-
-    public boolean equals(Object obj) {
-        if (obj instanceof y) {
-            y yVar = (y) obj;
-            if (Intrinsics.areEqual(this.f20245a, yVar.f20245a) && this.f20246b == yVar.f20246b) {
-                return true;
+        Job job = (Job) m10;
+        Intrinsics.checkNotNull(element, "null cannot be cast to non-null type kotlinx.coroutines.Job");
+        Job d10 = d((Job) element, job);
+        if (d10 == job) {
+            if (job == null) {
+                return i10;
             }
-            return false;
+            return i10 + 1;
         }
-        return false;
+        throw new IllegalStateException(("Flow invariant is violated:\n\t\tEmission from another coroutine is detected.\n\t\tChild of " + d10 + ", expected child of " + job + ".\n\t\tFlowCollector is not thread-safe and concurrent emissions are prohibited.\n\t\tTo mitigate this restriction please use 'channelFlow' builder instead of 'flow'").toString());
     }
 
-    public final o f() {
-        return this.f20245a;
-    }
-
-    public int hashCode() {
-        return (this.f20245a.hashCode() * 31) + Boolean.hashCode(this.f20246b);
-    }
-
-    public String toString() {
-        return "SignedFormatStructure(" + this.f20245a + ')';
+    public static final Job d(Job job, Job job2) {
+        while (job != null) {
+            if (job == job2 || !(job instanceof dt.a0)) {
+                return job;
+            }
+            job = ((dt.a0) job).d0();
+        }
+        return null;
     }
 }

@@ -6,11 +6,11 @@ import org.jetbrains.annotations.NotNull;
 public final class InvalidModuleExceptionKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ModuleCapability f32067a = new ModuleCapability("InvalidModuleNotifier");
+    private static final ModuleCapability f32289a = new ModuleCapability("InvalidModuleNotifier");
 
     public static final void moduleInvalidated(@NotNull ModuleDescriptor moduleDescriptor) {
         Intrinsics.checkNotNullParameter(moduleDescriptor, "<this>");
-        InvalidModuleNotifier invalidModuleNotifier = (InvalidModuleNotifier) moduleDescriptor.getCapability(f32067a);
+        InvalidModuleNotifier invalidModuleNotifier = (InvalidModuleNotifier) moduleDescriptor.getCapability(f32289a);
         if (invalidModuleNotifier != null) {
             invalidModuleNotifier.notifyModuleInvalidated(moduleDescriptor);
             return;

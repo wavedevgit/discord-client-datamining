@@ -38,7 +38,7 @@ public abstract class l extends rc.g implements g {
     }
 
     public void u(long j10, g gVar, long j11) {
-        this.f47783e = j10;
+        this.f46237e = j10;
         this.f750o = gVar;
         if (j11 != LongCompanionObject.MAX_VALUE) {
             j10 = j11;

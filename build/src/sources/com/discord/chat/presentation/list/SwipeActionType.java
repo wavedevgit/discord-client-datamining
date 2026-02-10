@@ -20,7 +20,7 @@ public final class SwipeActionType {
     static {
         SwipeActionType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = yr.a.a($values);
+        $ENTRIES = hs.a.a($values);
     }
 
     private SwipeActionType(String str, int i10) {

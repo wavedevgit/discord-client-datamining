@@ -274,7 +274,7 @@ public class MediaImageView extends FrameLayout implements MosaicView {
 
     public final void setRole(final String str) {
         if (str != null) {
-            androidx.core.view.h0.n0(this.binding.image, new androidx.core.view.a() { // from class: com.discord.chat.presentation.message.view.MediaImageView$setRole$1
+            androidx.core.view.i0.k0(this.binding.image, new androidx.core.view.a() { // from class: com.discord.chat.presentation.message.view.MediaImageView$setRole$1
                 @Override // androidx.core.view.a
                 public void onInitializeAccessibilityNodeInfo(View host, AccessibilityNodeInfoCompat info) {
                     Intrinsics.checkNotNullParameter(host, "host");

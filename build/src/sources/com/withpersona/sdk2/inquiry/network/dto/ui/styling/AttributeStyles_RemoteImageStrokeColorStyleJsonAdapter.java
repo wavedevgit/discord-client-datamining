@@ -47,7 +47,7 @@ public final class AttributeStyles_RemoteImageStrokeColorStyleJsonAdapter extend
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
@@ -63,7 +63,7 @@ public final class AttributeStyles_RemoteImageStrokeColorStyleJsonAdapter extend
     public void toJson(@NotNull t writer, AttributeStyles.RemoteImageStrokeColorStyle remoteImageStrokeColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (remoteImageStrokeColorStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("stroke");
             this.nullableSimpleElementColorAdapter.toJson(writer, remoteImageStrokeColorStyle.getStroke());
             writer.J("originalStroke");

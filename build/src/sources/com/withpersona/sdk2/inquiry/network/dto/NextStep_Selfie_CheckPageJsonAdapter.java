@@ -51,7 +51,7 @@ public final class NextStep_Selfie_CheckPageJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -85,7 +85,7 @@ public final class NextStep_Selfie_CheckPageJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Selfie.CheckPage checkPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkPage != null) {
-            writer.k();
+            writer.i();
             writer.J("title");
             this.nullableStringAdapter.toJson(writer, checkPage.getTitle());
             writer.J("description");

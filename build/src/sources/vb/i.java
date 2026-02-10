@@ -14,14 +14,14 @@ import java.util.List;
 public class i implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f52192d = 1179403647;
+    private final int f51434d = 1179403647;
 
     /* renamed from: e  reason: collision with root package name */
-    private final FileChannel f52193e;
+    private final FileChannel f51435e;
 
     public i(File file) {
         if (file != null && file.exists()) {
-            this.f52193e = new FileInputStream(file).getChannel();
+            this.f51435e = new FileInputStream(file).getChannel();
             return;
         }
         throw new IllegalArgumentException("File is null or does not exist");
@@ -30,10 +30,10 @@ public class i implements Closeable {
     private long a(d dVar, long j10, long j11) {
         for (long j12 = 0; j12 < j10; j12++) {
             e b10 = dVar.b(j12);
-            if (b10.f52185a == 1) {
-                long j13 = b10.f52187c;
-                if (j13 <= j11 && j11 <= b10.f52188d + j13) {
-                    return (j11 - j13) + b10.f52186b;
+            if (b10.f51427a == 1) {
+                long j13 = b10.f51429c;
+                if (j13 <= j11 && j11 <= b10.f51430d + j13) {
+                    return (j11 - j13) + b10.f51428b;
                 }
             }
         }
@@ -42,12 +42,12 @@ public class i implements Closeable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f52193e.close();
+        this.f51435e.close();
     }
 
-    public d g() {
+    public d h() {
         boolean z10;
-        this.f52193e.position(0L);
+        this.f51435e.position(0L);
         ByteBuffer allocate = ByteBuffer.allocate(8);
         allocate.order(ByteOrder.LITTLE_ENDIAN);
         if (z(allocate, 0L) == 1179403647) {
@@ -68,32 +68,32 @@ public class i implements Closeable {
         throw new IllegalArgumentException("Invalid ELF Magic!");
     }
 
-    public List k() {
+    public List i() {
         ByteOrder byteOrder;
         long j10;
         long j11;
-        this.f52193e.position(0L);
+        this.f51435e.position(0L);
         ArrayList arrayList = new ArrayList();
-        d g10 = g();
+        d h10 = h();
         ByteBuffer allocate = ByteBuffer.allocate(8);
-        if (g10.f52176a) {
+        if (h10.f51418a) {
             byteOrder = ByteOrder.BIG_ENDIAN;
         } else {
             byteOrder = ByteOrder.LITTLE_ENDIAN;
         }
         allocate.order(byteOrder);
-        long j12 = g10.f52181f;
+        long j12 = h10.f51423f;
         int i10 = 0;
         if (j12 == 65535) {
-            j12 = g10.c(0).f52189a;
+            j12 = h10.c(0).f51431a;
         }
         long j13 = 0;
         while (true) {
             j10 = 1;
             if (j13 < j12) {
-                e b10 = g10.b(j13);
-                if (b10.f52185a == 2) {
-                    j11 = b10.f52186b;
+                e b10 = h10.b(j13);
+                if (b10.f51427a == 2) {
+                    j11 = b10.f51428b;
                     break;
                 }
                 j13++;
@@ -108,23 +108,23 @@ public class i implements Closeable {
         ArrayList<Long> arrayList2 = new ArrayList();
         long j14 = 0;
         while (true) {
-            c a10 = g10.a(j11, i10);
+            c a10 = h10.a(j11, i10);
             long j15 = j10;
-            long j16 = a10.f52174a;
+            long j16 = a10.f51416a;
             if (j16 == j15) {
-                arrayList2.add(Long.valueOf(a10.f52175b));
+                arrayList2.add(Long.valueOf(a10.f51417b));
             } else if (j16 == 5) {
-                j14 = a10.f52175b;
+                j14 = a10.f51417b;
             }
             i10++;
-            if (a10.f52174a == 0) {
+            if (a10.f51416a == 0) {
                 break;
             }
             j10 = j15;
             j12 = j12;
         }
         if (j14 != 0) {
-            long a11 = a(g10, j12, j14);
+            long a11 = a(h10, j12, j14);
             for (Long l10 : arrayList2) {
                 arrayList.add(y(allocate, l10.longValue() + a11));
             }
@@ -138,7 +138,7 @@ public class i implements Closeable {
         byteBuffer.limit(i10);
         long j11 = 0;
         while (j11 < i10) {
-            int read = this.f52193e.read(byteBuffer, j10 + j11);
+            int read = this.f51435e.read(byteBuffer, j10 + j11);
             if (read != -1) {
                 j11 += read;
             } else {

@@ -45,7 +45,7 @@ public final class AttributeStyles_GovernmentIdNfcScanInputDateStylesJsonAdapter
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 governmentIdNfcScanInputDateStylesContainer = (AttributeStyles.GovernmentIdNfcScanInputDateStylesContainer) this.nullableGovernmentIdNfcScanInputDateStylesContainerAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class AttributeStyles_GovernmentIdNfcScanInputDateStylesJsonAdapter
     public void toJson(@NotNull t writer, AttributeStyles.GovernmentIdNfcScanInputDateStyles governmentIdNfcScanInputDateStyles) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdNfcScanInputDateStyles != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableGovernmentIdNfcScanInputDateStylesContainerAdapter.toJson(writer, governmentIdNfcScanInputDateStyles.getBase());
             writer.s();

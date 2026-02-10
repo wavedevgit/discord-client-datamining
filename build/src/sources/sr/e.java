@@ -1,82 +1,33 @@
 package sr;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Map;
-import kotlin.jvm.internal.Intrinsics;
+import android.content.Context;
+import android.text.Spanned;
+import android.widget.TextView;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e extends a {
+public abstract class e {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final d f50082d;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public interface a {
+        a a(i iVar);
 
-    public e(d backing) {
-        Intrinsics.checkNotNullParameter(backing, "backing");
-        this.f50082d = backing;
+        e build();
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean addAll(Collection elements) {
-        Intrinsics.checkNotNullParameter(elements, "elements");
-        throw new UnsupportedOperationException();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public interface b {
     }
 
-    @Override // sr.a
-    public boolean c(Map.Entry element) {
-        Intrinsics.checkNotNullParameter(element, "element");
-        return this.f50082d.o(element);
+    public static a a(Context context) {
+        return new f(context).a(tr.a.r());
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public void clear() {
-        this.f50082d.clear();
+    public static e b(Context context) {
+        return a(context).a(tr.a.r()).build();
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean containsAll(Collection elements) {
-        Intrinsics.checkNotNullParameter(elements, "elements");
-        return this.f50082d.n(elements);
-    }
+    public abstract void c(TextView textView, String str);
 
-    @Override // sr.a
-    public boolean d(Map.Entry element) {
-        Intrinsics.checkNotNullParameter(element, "element");
-        return this.f50082d.I(element);
-    }
+    public abstract void d(TextView textView, Spanned spanned);
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    /* renamed from: e */
-    public boolean add(Map.Entry element) {
-        Intrinsics.checkNotNullParameter(element, "element");
-        throw new UnsupportedOperationException();
-    }
-
-    @Override // kotlin.collections.g
-    public int getSize() {
-        return this.f50082d.size();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean isEmpty() {
-        return this.f50082d.isEmpty();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
-    public Iterator iterator() {
-        return this.f50082d.s();
-    }
-
-    @Override // java.util.AbstractSet, java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean removeAll(Collection elements) {
-        Intrinsics.checkNotNullParameter(elements, "elements");
-        this.f50082d.l();
-        return super.removeAll(elements);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean retainAll(Collection elements) {
-        Intrinsics.checkNotNullParameter(elements, "elements");
-        this.f50082d.l();
-        return super.retainAll(elements);
-    }
+    public abstract Spanned e(String str);
 }

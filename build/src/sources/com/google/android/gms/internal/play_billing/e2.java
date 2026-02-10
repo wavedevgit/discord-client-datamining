@@ -5,7 +5,7 @@ import java.util.List;
 public interface e2 extends List {
     Object Z(int i10);
 
-    e2 k();
+    e2 h();
 
     List n();
 }

@@ -9,13 +9,13 @@ import x5.c;
 public abstract class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f53297a = c.a.a("nm", "g", "o", "t", "s", "e", "w", "lc", "lj", "ml", "hd", "d");
+    private static final c.a f52326a = c.a.a("nm", "g", "o", "t", "s", "e", "w", "lc", "lj", "ml", "hd", "d");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f53298b = c.a.a("p", "k");
+    private static final c.a f52327b = c.a.a("p", "k");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c.a f53299c = c.a.a("n", "v");
+    private static final c.a f52328c = c.a.a("n", "v");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static t5.f a(x5.c cVar, l5.i iVar) {
@@ -37,16 +37,16 @@ public abstract class q {
         s5.d dVar3 = null;
         while (cVar.hasNext()) {
             t5.g gVar3 = gVar2;
-            switch (cVar.p(f53297a)) {
+            switch (cVar.p(f52326a)) {
                 case 0:
-                    str = cVar.b1();
+                    str = cVar.g1();
                     gVar2 = gVar3;
                 case 1:
                     dVar2 = dVar3;
                     cVar.u();
                     int i10 = -1;
                     while (cVar.hasNext()) {
-                        int p10 = cVar.p(f53298b);
+                        int p10 = cVar.p(f52327b);
                         if (p10 != 0) {
                             if (p10 != 1) {
                                 cVar.s();
@@ -98,7 +98,7 @@ public abstract class q {
                     gVar2 = gVar3;
                     dVar3 = dVar2;
                 case 10:
-                    z10 = cVar.g();
+                    z10 = cVar.h();
                     gVar2 = gVar3;
                 case 11:
                     cVar.x();
@@ -107,7 +107,7 @@ public abstract class q {
                         String str2 = null;
                         s5.b bVar4 = null;
                         while (cVar.hasNext()) {
-                            int p11 = cVar.p(f53299c);
+                            int p11 = cVar.p(f52328c);
                             if (p11 != 0) {
                                 s5.d dVar4 = dVar3;
                                 if (p11 != 1) {
@@ -118,7 +118,7 @@ public abstract class q {
                                 }
                                 dVar3 = dVar4;
                             } else {
-                                str2 = cVar.b1();
+                                str2 = cVar.g1();
                             }
                         }
                         s5.d dVar5 = dVar3;

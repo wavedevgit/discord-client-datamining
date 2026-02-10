@@ -6,10 +6,10 @@ import java.util.Map;
 abstract class r0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f38882a = new HashMap();
+    private static final Map f37886a = new HashMap();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void a() {
-        f38882a.clear();
+        f37886a.clear();
     }
 }

@@ -7,22 +7,22 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class DrawableProperties {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f10048f = new a(null);
+    public static final a f10625f = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f10050b;
+    private boolean f10627b;
 
     /* renamed from: c  reason: collision with root package name */
-    private ColorFilter f10051c;
+    private ColorFilter f10628c;
 
     /* renamed from: a  reason: collision with root package name */
-    private int f10049a = -1;
+    private int f10626a = -1;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f10052d = -1;
+    private int f10629d = -1;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f10053e = -1;
+    private int f10630e = -1;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -37,14 +37,14 @@ public final class DrawableProperties {
     public final void a(Drawable drawable) {
         boolean z10;
         if (drawable != null) {
-            int i10 = this.f10049a;
+            int i10 = this.f10626a;
             if (i10 != -1) {
                 drawable.setAlpha(i10);
             }
-            if (this.f10050b) {
-                drawable.setColorFilter(this.f10051c);
+            if (this.f10627b) {
+                drawable.setColorFilter(this.f10628c);
             }
-            int i11 = this.f10052d;
+            int i11 = this.f10629d;
             boolean z11 = false;
             if (i11 != -1) {
                 if (i11 != 0) {
@@ -54,7 +54,7 @@ public final class DrawableProperties {
                 }
                 drawable.setDither(z10);
             }
-            int i12 = this.f10053e;
+            int i12 = this.f10630e;
             if (i12 != -1) {
                 if (i12 != 0) {
                     z11 = true;
@@ -65,25 +65,25 @@ public final class DrawableProperties {
     }
 
     public final void b(int i10) {
-        this.f10049a = i10;
+        this.f10626a = i10;
     }
 
     public final void c(ColorFilter colorFilter) {
         boolean z10;
-        this.f10051c = colorFilter;
+        this.f10628c = colorFilter;
         if (colorFilter != null) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f10050b = z10;
+        this.f10627b = z10;
     }
 
     public final void d(boolean z10) {
-        this.f10052d = z10 ? 1 : 0;
+        this.f10629d = z10 ? 1 : 0;
     }
 
     public final void e(boolean z10) {
-        this.f10053e = z10 ? 1 : 0;
+        this.f10630e = z10 ? 1 : 0;
     }
 }

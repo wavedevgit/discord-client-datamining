@@ -1,9 +1,7 @@
 package com.discord.chat.bridge.sticker;
 
-import gt.m;
+import hs.a;
 import java.util.NoSuchElementException;
-import jt.e;
-import jt.j;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -14,7 +12,9 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import org.jetbrains.annotations.NotNull;
-import yr.a;
+import qt.m;
+import st.e;
+import st.j;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @m(with = StickerFormatTypeSerializer.class)
@@ -57,10 +57,10 @@ public final class StickerFormatType {
         private StickerFormatTypeSerializer() {
         }
 
-        @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
+        @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
         @NotNull
         public SerialDescriptor getDescriptor() {
-            return j.b("StickerFormatType", e.f.f30481a);
+            return j.b("StickerFormatType", e.f.f48365a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy
@@ -77,7 +77,7 @@ public final class StickerFormatType {
             throw new NoSuchElementException("Array contains no element matching the predicate.");
         }
 
-        @Override // gt.o
+        @Override // qt.o
         public void serialize(@NotNull Encoder encoder, @NotNull StickerFormatType value) {
             Intrinsics.checkNotNullParameter(encoder, "encoder");
             Intrinsics.checkNotNullParameter(value, "value");

@@ -1,64 +1,79 @@
 package wu;
 
+import android.net.http.X509TrustManagerExtensions;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 import java.util.List;
-import java.util.Map;
-import kotlin.jvm.functions.Function2;
+import javax.net.ssl.SSLPeerUnverifiedException;
+import javax.net.ssl.X509TrustManager;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import wu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements tu.a, d {
+public final class b extends yu.c {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final b f54066a = new b();
+    /* renamed from: d  reason: collision with root package name */
+    public static final a f53982d = new a(null);
 
-    private b() {
-    }
+    /* renamed from: b  reason: collision with root package name */
+    private final X509TrustManager f53983b;
 
-    @Override // vu.f
-    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
-        return d.a.f(this, obj, obj2, hVar, function2);
-    }
+    /* renamed from: c  reason: collision with root package name */
+    private final X509TrustManagerExtensions f53984c;
 
-    @Override // vu.a
-    public vu.b c(List list, Object obj, h hVar) {
-        return d.a.c(this, list, obj, hVar);
-    }
-
-    @Override // tu.a
-    public Object d(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        return g(obj, obj2, evaluator);
-    }
-
-    @Override // wu.d
-    public Object e(c data, h evaluator) {
-        Intrinsics.checkNotNullParameter(data, "data");
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        for (Object obj : data.b()) {
-            if (f54066a.i(evaluator.a(data.a(), obj))) {
-                return Boolean.FALSE;
-            }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        return data.c();
+
+        public final b a(X509TrustManager trustManager) {
+            X509TrustManagerExtensions x509TrustManagerExtensions;
+            Intrinsics.checkNotNullParameter(trustManager, "trustManager");
+            try {
+                x509TrustManagerExtensions = new X509TrustManagerExtensions(trustManager);
+            } catch (IllegalArgumentException unused) {
+                x509TrustManagerExtensions = null;
+            }
+            if (x509TrustManagerExtensions == null) {
+                return null;
+            }
+            return new b(trustManager, x509TrustManagerExtensions);
+        }
+
+        private a() {
+        }
     }
 
-    @Override // cw.a
-    public List f(List list, Object obj, h hVar) {
-        return d.a.h(this, list, obj, hVar);
+    public b(X509TrustManager trustManager, X509TrustManagerExtensions x509TrustManagerExtensions) {
+        Intrinsics.checkNotNullParameter(trustManager, "trustManager");
+        Intrinsics.checkNotNullParameter(x509TrustManagerExtensions, "x509TrustManagerExtensions");
+        this.f53983b = trustManager;
+        this.f53984c = x509TrustManagerExtensions;
     }
 
-    public Object g(Object obj, Object obj2, h hVar) {
-        return d.a.b(this, obj, obj2, hVar);
+    @Override // yu.c
+    public List a(List chain, String hostname) {
+        Intrinsics.checkNotNullParameter(chain, "chain");
+        Intrinsics.checkNotNullParameter(hostname, "hostname");
+        try {
+            List<X509Certificate> checkServerTrusted = this.f53984c.checkServerTrusted((X509Certificate[]) chain.toArray(new X509Certificate[0]), "RSA", hostname);
+            Intrinsics.checkNotNullExpressionValue(checkServerTrusted, "x509TrustManagerExtensio…ficates, \"RSA\", hostname)");
+            return checkServerTrusted;
+        } catch (CertificateException e10) {
+            SSLPeerUnverifiedException sSLPeerUnverifiedException = new SSLPeerUnverifiedException(e10.getMessage());
+            sSLPeerUnverifiedException.initCause(e10);
+            throw sSLPeerUnverifiedException;
+        }
     }
 
-    @Override // vu.a
-    /* renamed from: h */
-    public Boolean a(Map map, List expressionValues) {
-        Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
-        return Boolean.TRUE;
+    public boolean equals(Object obj) {
+        if ((obj instanceof b) && ((b) obj).f53983b == this.f53983b) {
+            return true;
+        }
+        return false;
     }
 
-    public boolean i(Object obj) {
-        return d.a.i(this, obj);
+    public int hashCode() {
+        return System.identityHashCode(this.f53983b);
     }
 }

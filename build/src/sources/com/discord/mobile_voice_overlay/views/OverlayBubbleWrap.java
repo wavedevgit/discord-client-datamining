@@ -68,7 +68,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        kotlin.properties.a aVar = kotlin.properties.a.f31852a;
+        kotlin.properties.a aVar = kotlin.properties.a.f32074a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new kotlin.properties.c(bool) { // from class: com.discord.mobile_voice_overlay.views.OverlayBubbleWrap$special$$inlined$observable$1
             @Override // kotlin.properties.c
@@ -92,15 +92,15 @@ public abstract class OverlayBubbleWrap extends OverlayView {
             }
         };
         this.screenOffset = new int[2];
-        SpringAnimation springAnimation = new SpringAnimation(this, androidx.dynamicanimation.animation.b.f4043u, 0.0f);
-        springAnimation.o(50.0f);
-        springAnimation.v().f(200.0f);
-        springAnimation.v().d(0.75f);
+        SpringAnimation springAnimation = new SpringAnimation(this, androidx.dynamicanimation.animation.c.f4053v, 0.0f);
+        springAnimation.p(50.0f);
+        springAnimation.w().h(200.0f);
+        springAnimation.w().f(0.75f);
         this.springAnimationX = springAnimation;
-        SpringAnimation springAnimation2 = new SpringAnimation(this, androidx.dynamicanimation.animation.b.f4044v, 0.0f);
-        springAnimation2.o(50.0f);
-        springAnimation2.v().d(0.75f);
-        springAnimation2.v().f(200.0f);
+        SpringAnimation springAnimation2 = new SpringAnimation(this, androidx.dynamicanimation.animation.c.f4054w, 0.0f);
+        springAnimation2.p(50.0f);
+        springAnimation2.w().f(0.75f);
+        springAnimation2.w().h(200.0f);
         this.springAnimationY = springAnimation2;
         WindowManager.LayoutParams layoutParams = this.windowLayoutParams;
         this.actualPosition = new Point(layoutParams.x, layoutParams.y);
@@ -119,8 +119,8 @@ public abstract class OverlayBubbleWrap extends OverlayView {
 
     private final void animateTo(SpringAnimation springAnimation, float f10, float f11) {
         springAnimation.d();
-        springAnimation.n(f10);
-        springAnimation.t(f11);
+        springAnimation.o(f10);
+        springAnimation.u(f11);
     }
 
     public static /* synthetic */ void animateToCoordinate$default(OverlayBubbleWrap overlayBubbleWrap, int i10, int i11, Rect rect, int i12, Object obj) {
@@ -171,7 +171,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit touchDispatchSideEffectHandler$lambda$1(MotionEvent it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     public void anchorOff(boolean z10) {
@@ -421,7 +421,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        kotlin.properties.a aVar = kotlin.properties.a.f31852a;
+        kotlin.properties.a aVar = kotlin.properties.a.f32074a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new kotlin.properties.c(bool) { // from class: com.discord.mobile_voice_overlay.views.OverlayBubbleWrap$special$$inlined$observable$2
             @Override // kotlin.properties.c
@@ -445,15 +445,15 @@ public abstract class OverlayBubbleWrap extends OverlayView {
             }
         };
         this.screenOffset = new int[2];
-        SpringAnimation springAnimation = new SpringAnimation(this, androidx.dynamicanimation.animation.b.f4043u, 0.0f);
-        springAnimation.o(50.0f);
-        springAnimation.v().f(200.0f);
-        springAnimation.v().d(0.75f);
+        SpringAnimation springAnimation = new SpringAnimation(this, androidx.dynamicanimation.animation.c.f4053v, 0.0f);
+        springAnimation.p(50.0f);
+        springAnimation.w().h(200.0f);
+        springAnimation.w().f(0.75f);
         this.springAnimationX = springAnimation;
-        SpringAnimation springAnimation2 = new SpringAnimation(this, androidx.dynamicanimation.animation.b.f4044v, 0.0f);
-        springAnimation2.o(50.0f);
-        springAnimation2.v().d(0.75f);
-        springAnimation2.v().f(200.0f);
+        SpringAnimation springAnimation2 = new SpringAnimation(this, androidx.dynamicanimation.animation.c.f4054w, 0.0f);
+        springAnimation2.p(50.0f);
+        springAnimation2.w().f(0.75f);
+        springAnimation2.w().h(200.0f);
         this.springAnimationY = springAnimation2;
         WindowManager.LayoutParams layoutParams = this.windowLayoutParams;
         this.actualPosition = new Point(layoutParams.x, layoutParams.y);
@@ -477,7 +477,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        kotlin.properties.a aVar = kotlin.properties.a.f31852a;
+        kotlin.properties.a aVar = kotlin.properties.a.f32074a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new kotlin.properties.c(bool) { // from class: com.discord.mobile_voice_overlay.views.OverlayBubbleWrap$special$$inlined$observable$3
             @Override // kotlin.properties.c
@@ -501,15 +501,15 @@ public abstract class OverlayBubbleWrap extends OverlayView {
             }
         };
         this.screenOffset = new int[2];
-        SpringAnimation springAnimation = new SpringAnimation(this, androidx.dynamicanimation.animation.b.f4043u, 0.0f);
-        springAnimation.o(50.0f);
-        springAnimation.v().f(200.0f);
-        springAnimation.v().d(0.75f);
+        SpringAnimation springAnimation = new SpringAnimation(this, androidx.dynamicanimation.animation.c.f4053v, 0.0f);
+        springAnimation.p(50.0f);
+        springAnimation.w().h(200.0f);
+        springAnimation.w().f(0.75f);
         this.springAnimationX = springAnimation;
-        SpringAnimation springAnimation2 = new SpringAnimation(this, androidx.dynamicanimation.animation.b.f4044v, 0.0f);
-        springAnimation2.o(50.0f);
-        springAnimation2.v().d(0.75f);
-        springAnimation2.v().f(200.0f);
+        SpringAnimation springAnimation2 = new SpringAnimation(this, androidx.dynamicanimation.animation.c.f4054w, 0.0f);
+        springAnimation2.p(50.0f);
+        springAnimation2.w().f(0.75f);
+        springAnimation2.w().h(200.0f);
         this.springAnimationY = springAnimation2;
         WindowManager.LayoutParams layoutParams = this.windowLayoutParams;
         this.actualPosition = new Point(layoutParams.x, layoutParams.y);

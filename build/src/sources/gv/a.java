@@ -1,23 +1,38 @@
 package gv;
 
-import gv.b;
+import java.util.ArrayList;
 import java.util.List;
-import kotlin.collections.CollectionsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements tu.b, b {
+public final class a implements cv.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f24831a = new a();
+    public static final a f26040a = new a();
 
     private a() {
     }
 
-    public List a(Object obj) {
-        return b.a.d(this, obj);
+    private final boolean b(Object obj) {
+        if (obj != null) {
+            if (!(obj instanceof String) || ((CharSequence) obj).length() != 0) {
+                return false;
+            }
+            return true;
+        }
+        return true;
     }
 
-    @Override // tu.b
-    public Object f(Object obj, Object obj2) {
-        return CollectionsKt.x0(a(obj), "", null, null, 0, null, null, 62, null);
+    @Override // cv.b
+    /* renamed from: a */
+    public List f(Object obj, Object obj2) {
+        ArrayList arrayList = new ArrayList();
+        for (Object obj3 : mw.a.c(obj)) {
+            if (!f26040a.b(c.f26042a.f(obj3, obj2))) {
+                obj3 = null;
+            }
+            if (obj3 != null) {
+                arrayList.add(obj3);
+            }
+        }
+        return arrayList;
     }
 }

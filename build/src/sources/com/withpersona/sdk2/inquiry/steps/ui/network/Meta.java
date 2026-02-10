@@ -10,14 +10,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class Meta {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f19889a;
+    private final List f20769a;
 
     public Meta(List predictions) {
         Intrinsics.checkNotNullParameter(predictions, "predictions");
-        this.f19889a = predictions;
+        this.f20769a = predictions;
     }
 
     public final List a() {
-        return this.f19889a;
+        return this.f20769a;
     }
 }

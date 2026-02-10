@@ -5,54 +5,54 @@ import android.view.Choreographer;
 public class g extends a implements Choreographer.FrameCallback {
 
     /* renamed from: w  reason: collision with root package name */
-    private l5.i f55525w;
+    private l5.i f55456w;
 
     /* renamed from: o  reason: collision with root package name */
-    private float f55517o = 1.0f;
+    private float f55448o = 1.0f;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f55518p = false;
+    private boolean f55449p = false;
 
     /* renamed from: q  reason: collision with root package name */
-    private long f55519q = 0;
+    private long f55450q = 0;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f55520r = 0.0f;
+    private float f55451r = 0.0f;
 
     /* renamed from: s  reason: collision with root package name */
-    private float f55521s = 0.0f;
+    private float f55452s = 0.0f;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f55522t = 0;
+    private int f55453t = 0;
 
     /* renamed from: u  reason: collision with root package name */
-    private float f55523u = -2.14748365E9f;
+    private float f55454u = -2.14748365E9f;
 
     /* renamed from: v  reason: collision with root package name */
-    private float f55524v = 2.14748365E9f;
+    private float f55455v = 2.14748365E9f;
 
     /* renamed from: x  reason: collision with root package name */
-    protected boolean f55526x = false;
+    protected boolean f55457x = false;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f55527y = false;
+    private boolean f55458y = false;
 
     private void I() {
-        if (this.f55525w != null) {
-            float f10 = this.f55521s;
-            if (f10 >= this.f55523u && f10 <= this.f55524v) {
+        if (this.f55456w != null) {
+            float f10 = this.f55452s;
+            if (f10 >= this.f55454u && f10 <= this.f55455v) {
                 return;
             }
-            throw new IllegalStateException(String.format("Frame must be [%f,%f]. It is %f", Float.valueOf(this.f55523u), Float.valueOf(this.f55524v), Float.valueOf(this.f55521s)));
+            throw new IllegalStateException(String.format("Frame must be [%f,%f]. It is %f", Float.valueOf(this.f55454u), Float.valueOf(this.f55455v), Float.valueOf(this.f55452s)));
         }
     }
 
     private float m() {
-        l5.i iVar = this.f55525w;
+        l5.i iVar = this.f55456w;
         if (iVar == null) {
             return Float.MAX_VALUE;
         }
-        return (1.0E9f / iVar.i()) / Math.abs(this.f55517o);
+        return (1.0E9f / iVar.i()) / Math.abs(this.f55448o);
     }
 
     private boolean r() {
@@ -64,53 +64,53 @@ public class g extends a implements Choreographer.FrameCallback {
 
     public void A(l5.i iVar) {
         boolean z10;
-        if (this.f55525w == null) {
+        if (this.f55456w == null) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f55525w = iVar;
+        this.f55456w = iVar;
         if (z10) {
-            E(Math.max(this.f55523u, iVar.p()), Math.min(this.f55524v, iVar.f()));
+            E(Math.max(this.f55454u, iVar.p()), Math.min(this.f55455v, iVar.f()));
         } else {
             E((int) iVar.p(), (int) iVar.f());
         }
-        float f10 = this.f55521s;
-        this.f55521s = 0.0f;
-        this.f55520r = 0.0f;
+        float f10 = this.f55452s;
+        this.f55452s = 0.0f;
+        this.f55451r = 0.0f;
         B((int) f10);
-        h();
+        g();
     }
 
     public void B(float f10) {
-        if (this.f55520r == f10) {
+        if (this.f55451r == f10) {
             return;
         }
         float b10 = i.b(f10, o(), n());
-        this.f55520r = b10;
-        if (this.f55527y) {
+        this.f55451r = b10;
+        if (this.f55458y) {
             b10 = (float) Math.floor(b10);
         }
-        this.f55521s = b10;
-        this.f55519q = 0L;
-        h();
+        this.f55452s = b10;
+        this.f55450q = 0L;
+        g();
     }
 
     public void D(float f10) {
-        E(this.f55523u, f10);
+        E(this.f55454u, f10);
     }
 
     public void E(float f10, float f11) {
         float p10;
         float f12;
         if (f10 <= f11) {
-            l5.i iVar = this.f55525w;
+            l5.i iVar = this.f55456w;
             if (iVar == null) {
                 p10 = -3.4028235E38f;
             } else {
                 p10 = iVar.p();
             }
-            l5.i iVar2 = this.f55525w;
+            l5.i iVar2 = this.f55456w;
             if (iVar2 == null) {
                 f12 = Float.MAX_VALUE;
             } else {
@@ -118,27 +118,27 @@ public class g extends a implements Choreographer.FrameCallback {
             }
             float b10 = i.b(f10, p10, f12);
             float b11 = i.b(f11, p10, f12);
-            if (b10 == this.f55523u && b11 == this.f55524v) {
+            if (b10 == this.f55454u && b11 == this.f55455v) {
                 return;
             }
-            this.f55523u = b10;
-            this.f55524v = b11;
-            B((int) i.b(this.f55521s, b10, b11));
+            this.f55454u = b10;
+            this.f55455v = b11;
+            B((int) i.b(this.f55452s, b10, b11));
             return;
         }
         throw new IllegalArgumentException(String.format("minFrame (%s) must be <= maxFrame (%s)", Float.valueOf(f10), Float.valueOf(f11)));
     }
 
     public void F(int i10) {
-        E(i10, (int) this.f55524v);
+        E(i10, (int) this.f55455v);
     }
 
     public void G(float f10) {
-        this.f55517o = f10;
+        this.f55448o = f10;
     }
 
     public void H(boolean z10) {
-        this.f55527y = z10;
+        this.f55458y = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -159,49 +159,49 @@ public class g extends a implements Choreographer.FrameCallback {
         float o10;
         float n10;
         v();
-        if (this.f55525w != null && isRunning()) {
+        if (this.f55456w != null && isRunning()) {
             if (l5.e.h()) {
                 l5.e.b("LottieValueAnimator#doFrame");
             }
-            long j11 = this.f55519q;
+            long j11 = this.f55450q;
             long j12 = 0;
             if (j11 != 0) {
                 j12 = j10 - j11;
             }
             float m10 = ((float) j12) / m();
-            float f10 = this.f55520r;
+            float f10 = this.f55451r;
             if (r()) {
                 m10 = -m10;
             }
             float f11 = f10 + m10;
             boolean d10 = i.d(f11, o(), n());
-            float f12 = this.f55520r;
+            float f12 = this.f55451r;
             float b10 = i.b(f11, o(), n());
-            this.f55520r = b10;
-            if (this.f55527y) {
+            this.f55451r = b10;
+            if (this.f55458y) {
                 b10 = (float) Math.floor(b10);
             }
-            this.f55521s = b10;
-            this.f55519q = j10;
-            if (!this.f55527y || this.f55520r != f12) {
-                h();
+            this.f55452s = b10;
+            this.f55450q = j10;
+            if (!this.f55458y || this.f55451r != f12) {
+                g();
             }
             if (!d10) {
-                if (getRepeatCount() != -1 && this.f55522t >= getRepeatCount()) {
-                    if (this.f55517o < 0.0f) {
+                if (getRepeatCount() != -1 && this.f55453t >= getRepeatCount()) {
+                    if (this.f55448o < 0.0f) {
                         n10 = o();
                     } else {
                         n10 = n();
                     }
-                    this.f55520r = n10;
-                    this.f55521s = n10;
+                    this.f55451r = n10;
+                    this.f55452s = n10;
                     w();
                     b(r());
                 } else {
                     d();
-                    this.f55522t++;
+                    this.f55453t++;
                     if (getRepeatMode() == 2) {
-                        this.f55518p = !this.f55518p;
+                        this.f55449p = !this.f55449p;
                         z();
                     } else {
                         if (r()) {
@@ -209,10 +209,10 @@ public class g extends a implements Choreographer.FrameCallback {
                         } else {
                             o10 = o();
                         }
-                        this.f55520r = o10;
-                        this.f55521s = o10;
+                        this.f55451r = o10;
+                        this.f55452s = o10;
                     }
-                    this.f55519q = j10;
+                    this.f55450q = j10;
                 }
             }
             I();
@@ -227,15 +227,15 @@ public class g extends a implements Choreographer.FrameCallback {
         float o10;
         float n10;
         float o11;
-        if (this.f55525w == null) {
+        if (this.f55456w == null) {
             return 0.0f;
         }
         if (r()) {
-            o10 = n() - this.f55521s;
+            o10 = n() - this.f55452s;
             n10 = n();
             o11 = o();
         } else {
-            o10 = this.f55521s - o();
+            o10 = this.f55452s - o();
             n10 = n();
             o11 = o();
         }
@@ -249,22 +249,22 @@ public class g extends a implements Choreographer.FrameCallback {
 
     @Override // android.animation.ValueAnimator, android.animation.Animator
     public long getDuration() {
-        l5.i iVar = this.f55525w;
+        l5.i iVar = this.f55456w;
         if (iVar == null) {
             return 0L;
         }
         return iVar.d();
     }
 
-    public void i() {
-        this.f55525w = null;
-        this.f55523u = -2.14748365E9f;
-        this.f55524v = 2.14748365E9f;
+    public void h() {
+        this.f55456w = null;
+        this.f55454u = -2.14748365E9f;
+        this.f55455v = 2.14748365E9f;
     }
 
     @Override // android.animation.ValueAnimator, android.animation.Animator
     public boolean isRunning() {
-        return this.f55526x;
+        return this.f55457x;
     }
 
     public void j() {
@@ -273,23 +273,23 @@ public class g extends a implements Choreographer.FrameCallback {
     }
 
     public float k() {
-        l5.i iVar = this.f55525w;
+        l5.i iVar = this.f55456w;
         if (iVar == null) {
             return 0.0f;
         }
-        return (this.f55521s - iVar.p()) / (this.f55525w.f() - this.f55525w.p());
+        return (this.f55452s - iVar.p()) / (this.f55456w.f() - this.f55456w.p());
     }
 
     public float l() {
-        return this.f55521s;
+        return this.f55452s;
     }
 
     public float n() {
-        l5.i iVar = this.f55525w;
+        l5.i iVar = this.f55456w;
         if (iVar == null) {
             return 0.0f;
         }
-        float f10 = this.f55524v;
+        float f10 = this.f55455v;
         if (f10 == 2.14748365E9f) {
             return iVar.f();
         }
@@ -297,11 +297,11 @@ public class g extends a implements Choreographer.FrameCallback {
     }
 
     public float o() {
-        l5.i iVar = this.f55525w;
+        l5.i iVar = this.f55456w;
         if (iVar == null) {
             return 0.0f;
         }
-        float f10 = this.f55523u;
+        float f10 = this.f55454u;
         if (f10 == -2.14748365E9f) {
             return iVar.p();
         }
@@ -309,14 +309,14 @@ public class g extends a implements Choreographer.FrameCallback {
     }
 
     public float q() {
-        return this.f55517o;
+        return this.f55448o;
     }
 
     @Override // android.animation.ValueAnimator
     public void setRepeatMode(int i10) {
         super.setRepeatMode(i10);
-        if (i10 != 2 && this.f55518p) {
-            this.f55518p = false;
+        if (i10 != 2 && this.f55449p) {
+            this.f55449p = false;
             z();
         }
     }
@@ -328,7 +328,7 @@ public class g extends a implements Choreographer.FrameCallback {
 
     public void u() {
         float o10;
-        this.f55526x = true;
+        this.f55457x = true;
         f(r());
         if (r()) {
             o10 = n();
@@ -336,8 +336,8 @@ public class g extends a implements Choreographer.FrameCallback {
             o10 = o();
         }
         B((int) o10);
-        this.f55519q = 0L;
-        this.f55522t = 0;
+        this.f55450q = 0L;
+        this.f55453t = 0;
         v();
     }
 
@@ -355,14 +355,14 @@ public class g extends a implements Choreographer.FrameCallback {
     protected void x(boolean z10) {
         Choreographer.getInstance().removeFrameCallback(this);
         if (z10) {
-            this.f55526x = false;
+            this.f55457x = false;
         }
     }
 
     public void y() {
-        this.f55526x = true;
+        this.f55457x = true;
         v();
-        this.f55519q = 0L;
+        this.f55450q = 0L;
         if (r() && l() == o()) {
             B(n());
         } else if (!r() && l() == n()) {

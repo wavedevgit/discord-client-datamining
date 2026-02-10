@@ -17,11 +17,11 @@ public interface k0 extends Closeable {
         void a(a aVar);
     }
 
-    boolean K1(b bVar);
+    boolean O1(b bVar);
 
     String W();
 
-    void X1(b bVar);
+    void d2(b bVar);
 
     a y0();
 }

@@ -1,123 +1,68 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var2);
+    var0 = {};
     var2 = function arg0() {
-        var2 = arg0;
-        var1 = var2.map;
-        var0 = function(arg0) { // Environment: var0
-            var0 = global;
-            var2 = var0.String;
-            var1 = var2.fromCharCode;
-            var0 = arg0;
-            var0 = var1.bind(var2)(var0);
-            return var0;
-        };
-        var2 = var1.bind(var2)(var0);
-        var1 = var2.join;
-        var0 = '';
-        var0 = var1.bind(var2)(var0);
-        return var0;
-    };
-    var _closure1_slot0 = var2;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var1, var3, var4);
-    var1.getStringValue = var2;
-    var2 = function arg0() {
-        _fun38266: for (var _fun38266_ip = 0;;) switch (_fun38266_ip) {
+        _fun38187: for (var _fun38187_ip = 0;;) switch (_fun38187_ip) {
             case 0:
-                var4 = arg0;
-                var0 = var4.length;
-                var3 = 8;
-                if (!(var0 >= var3)) {
-                    _fun38266_ip = 82;
-                    continue _fun38266
+                var6 = arg0;
+                var1 = !var6;
+                var0 = !var1;
+                if (var1) {
+                    _fun38187_ip = 70;
+                    continue _fun38187
                 }
-            case 15:
-                var5 = _closure1_slot0;
-                var2 = var4.slice;
-                var1 = 0;
-                var1 = var2.bind(var4)(var1, var3);
+            case 12:
+                var4 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var2 = 0;
+                var3 = var3[var2];
                 var2 = undefined;
-                var5 = var5.bind(var2)(var1);
-                var1 = 'ASCII\x00\x00\x00';
-                if (!(var1 !== var5)) {
-                    _fun38266_ip = 114;
-                    continue _fun38266
-                }
-            case 52:
-                var1 = 'JIS\x00\x00\x00\x00\x00';
-                if (!(var1 !== var5)) {
-                    _fun38266_ip = 106;
-                    continue _fun38266
-                }
-            case 62:
-                var1 = 'UNICODE\x00';
-                if (!(var1 !== var5)) {
-                    _fun38266_ip = 98;
-                    continue _fun38266
-                }
-            case 72:
-                var1 = '\x00\x00\x00\x00\x00\x00\x00\x00';
-                if (!(var1 !== var5)) {
-                    _fun38266_ip = 90;
-                    continue _fun38266
-                }
-            case 82:
-                var1 = 'Undefined';
-                return var1;
-            case 90:
-                var1 = '[Undefined encoding]';
-                return var1;
-            case 98:
-                var1 = '[Unicode encoded text]';
-                return var1;
-            case 106:
-                var1 = '[JIS encoded text]';
-                return var1;
-            case 114:
-                var1 = _closure1_slot0;
-                var0 = var4.slice;
-                var0 = var0.bind(var4)(var3);
-                var0 = var1.bind(var2)(var0);
+                var5 = var4.bind(var2)(var3);
+                var4 = var5.getStringFromDataView;
+                var3 = _closure1_slot2;
+                var2 = _closure1_slot3;
+                var2 = var2.length;
+                var2 = var4.bind(var5)(var6, var3, var2);
+                var1 = _closure1_slot3;
+                var0 = var2 === var1;
+            case 70:
                 return var0;
         }
     };
-    var1.getEncodedString = var2;
-    var0 = function arg0() {
-        var4 = arg0;
-        var5 = 0;
-        var0 = var4[var5];
-        var1 = var0[var5];
-        var0 = var4[var5];
-        var3 = 1;
-        var0 = var0[var3];
-        var1 = var1 / var0;
-        var0 = var4[var3];
-        var2 = var0[var5];
-        var0 = var4[var3];
-        var0 = var0[var3];
-        var2 = var2 / var0;
-        var0 = 60;
-        var0 = var2 / var0;
-        var1 = var1 + var0;
-        var0 = 2;
-        var2 = var4[var0];
-        var2 = var2[var5];
-        var0 = var4[var0];
-        var0 = var0[var3];
-        var2 = var2 / var0;
-        var0 = 3600;
-        var0 = var2 / var0;
-        var0 = var1 + var0;
+    var0.isXMLFile = var2;
+    var2 = function arg0() {
+        var1 = new Array(0);
+        var2 = var1.push;
+        var0 = {};
+        var3 = _closure1_slot2;
+        var0.dataOffset = var3;
+        var3 = arg0;
+        var3 = var3.byteLength;
+        var0.length = var3;
+        var0 = var2.bind(var1)(var0);
+        var0 = {};
+        var0.xmpChunks = var1;
         return var0;
     };
-    var1.getCalculatedGpsValue = var0;
+    var0.findOffsets = var2;
+    var2 = 0;
+    var _closure1_slot2 = var2;
+    var2 = '<?xpacket begin';
+    var _closure1_slot3 = var2;
+    var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4175]);

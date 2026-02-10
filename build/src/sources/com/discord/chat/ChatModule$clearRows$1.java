@@ -4,6 +4,7 @@ import com.discord.chat.ChatModule;
 import com.discord.chat.listmanager.ChatListManager;
 import com.discord.chatreplay.logger.RowLogger;
 import com.facebook.react.bridge.ReactApplicationContext;
+import gs.b;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.c;
@@ -11,7 +12,6 @@ import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
-import xr.b;
 @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n"}, d2 = {"<anonymous>", "", "manager", "Lcom/discord/chat/listmanager/ChatListManager;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.chat.ChatModule$clearRows$1", f = "ChatModule.kt", l = {}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -40,7 +40,7 @@ final class ChatModule$clearRows$1 extends k implements Function2<ChatListManage
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(ChatListManager chatListManager, Continuation<? super Unit> continuation) {
-        return ((ChatModule$clearRows$1) create(chatListManager, continuation)).invokeSuspend(Unit.f31765a);
+        return ((ChatModule$clearRows$1) create(chatListManager, continuation)).invokeSuspend(Unit.f31987a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -55,7 +55,7 @@ final class ChatModule$clearRows$1 extends k implements Function2<ChatListManage
             rowUpdateLoggerFor = companion.rowUpdateLoggerFor(reactApplicationContext, this.$tag);
             rowUpdateLoggerFor.logRowsClear();
             ((ChatListManager) this.L$0).clearRows(this.$changesetUpdateId);
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

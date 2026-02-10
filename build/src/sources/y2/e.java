@@ -20,7 +20,7 @@ public final class e extends w implements p0 {
 
         public a q(Iterable iterable) {
             k();
-            ((e) this.f3982e).E(iterable);
+            ((e) this.f3988e).E(iterable);
             return this;
         }
 
@@ -65,7 +65,7 @@ public final class e extends w implements p0 {
     @Override // androidx.datastore.preferences.protobuf.w
     protected final Object m(w.d dVar, Object obj, Object obj2) {
         w0 w0Var;
-        switch (c.f55403a[dVar.ordinal()]) {
+        switch (c.f55334a[dVar.ordinal()]) {
             case 1:
                 return new e();
             case 2:

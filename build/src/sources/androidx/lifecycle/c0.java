@@ -6,20 +6,20 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c0 implements m {
 
     /* renamed from: d  reason: collision with root package name */
-    private final h0 f4624d;
+    private final h0 f4634d;
 
     public c0(h0 provider) {
         Intrinsics.checkNotNullParameter(provider, "provider");
-        this.f4624d = provider;
+        this.f4634d = provider;
     }
 
     @Override // androidx.lifecycle.m
-    public void k(LifecycleOwner source, Lifecycle.a event) {
+    public void i(LifecycleOwner source, Lifecycle.a event) {
         Intrinsics.checkNotNullParameter(source, "source");
         Intrinsics.checkNotNullParameter(event, "event");
         if (event == Lifecycle.a.ON_CREATE) {
             source.getLifecycle().d(this);
-            this.f4624d.e();
+            this.f4634d.e();
             return;
         }
         throw new IllegalStateException(("Next event must be ON_CREATE, it was " + event).toString());

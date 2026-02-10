@@ -1,8 +1,8 @@
 package kotlinx.serialization.encoding;
 
-import gt.o;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.descriptors.SerialDescriptor;
+import qt.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface CompositeEncoder {
 
@@ -14,21 +14,21 @@ public interface CompositeEncoder {
         }
     }
 
-    void B(SerialDescriptor serialDescriptor, int i10, short s10);
+    void C(SerialDescriptor serialDescriptor, int i10, short s10);
 
-    void C(SerialDescriptor serialDescriptor, int i10, double d10);
+    void D(SerialDescriptor serialDescriptor, int i10, double d10);
 
-    void D(SerialDescriptor serialDescriptor, int i10, long j10);
-
-    void F(SerialDescriptor serialDescriptor, int i10, o oVar, Object obj);
+    void E(SerialDescriptor serialDescriptor, int i10, long j10);
 
     void c(SerialDescriptor serialDescriptor);
 
     Encoder e(SerialDescriptor serialDescriptor, int i10);
 
-    void i(SerialDescriptor serialDescriptor, int i10, o oVar, Object obj);
+    void k(SerialDescriptor serialDescriptor, int i10, o oVar, Object obj);
 
-    void n(SerialDescriptor serialDescriptor, int i10, char c10);
+    void m(SerialDescriptor serialDescriptor, int i10, char c10);
+
+    void o(SerialDescriptor serialDescriptor, int i10, o oVar, Object obj);
 
     void p(SerialDescriptor serialDescriptor, int i10, byte b10);
 

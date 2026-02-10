@@ -3,24 +3,24 @@ package eightbitlab.com.blurview;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f21703a;
+    private final float f22858a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final int f21704a;
+        final int f22859a;
 
         /* renamed from: b  reason: collision with root package name */
-        final int f21705b;
+        final int f22860b;
 
         /* renamed from: c  reason: collision with root package name */
-        final float f21706c;
+        final float f22861c;
 
         a(int i10, int i11, float f10) {
-            this.f21704a = i10;
-            this.f21705b = i11;
-            this.f21706c = f10;
+            this.f22859a = i10;
+            this.f22860b = i11;
+            this.f22861c = f10;
         }
 
         public boolean equals(Object obj) {
@@ -29,7 +29,7 @@ public class g {
             }
             if (obj != null && getClass() == obj.getClass()) {
                 a aVar = (a) obj;
-                if (this.f21704a == aVar.f21704a && this.f21705b == aVar.f21705b && Float.compare(aVar.f21706c, this.f21706c) == 0) {
+                if (this.f22859a == aVar.f22859a && this.f22860b == aVar.f22860b && Float.compare(aVar.f22861c, this.f22861c) == 0) {
                     return true;
                 }
             }
@@ -38,8 +38,8 @@ public class g {
 
         public int hashCode() {
             int i10;
-            int i11 = ((this.f21704a * 31) + this.f21705b) * 31;
-            float f10 = this.f21706c;
+            int i11 = ((this.f22859a * 31) + this.f22860b) * 31;
+            float f10 = this.f22861c;
             if (f10 != 0.0f) {
                 i10 = Float.floatToIntBits(f10);
             } else {
@@ -49,16 +49,16 @@ public class g {
         }
 
         public String toString() {
-            return "Size{width=" + this.f21704a + ", height=" + this.f21705b + ", scaleFactor=" + this.f21706c + '}';
+            return "Size{width=" + this.f22859a + ", height=" + this.f22860b + ", scaleFactor=" + this.f22861c + '}';
         }
     }
 
     public g(float f10) {
-        this.f21703a = f10;
+        this.f22858a = f10;
     }
 
     private int a(float f10) {
-        return (int) Math.ceil(f10 / this.f21703a);
+        return (int) Math.ceil(f10 / this.f22858a);
     }
 
     private int c(int i10) {

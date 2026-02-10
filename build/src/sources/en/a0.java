@@ -1,64 +1,122 @@
 package en;
 
-import java.util.Map;
-import kotlin.Pair;
-import kotlin.collections.o0;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Lambda;
+import kotlin.text.StringsKt;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.flow.Flow;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a0 {
+public abstract /* synthetic */ class a0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Map f21773a;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
-    public a0(Map map) {
-        Intrinsics.checkNotNullParameter(map, "map");
-        this.f21773a = map;
-    }
+        /* renamed from: d  reason: collision with root package name */
+        int f22950d;
 
-    public final Object a(b0 key) {
-        Intrinsics.checkNotNullParameter(key, "key");
-        Object obj = this.f21773a.get(key);
-        if (obj == null) {
-            obj = null;
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ o f22951e;
+
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ h f22952i;
+
+        /* renamed from: o  reason: collision with root package name */
+        final /* synthetic */ String f22953o;
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: en.a0$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0306a extends Lambda implements Function1 {
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ o f22954d;
+
+            /* renamed from: e  reason: collision with root package name */
+            final /* synthetic */ String f22955e;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            C0306a(o oVar, String str) {
+                super(1);
+                this.f22954d = oVar;
+                this.f22955e = str;
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            /* renamed from: a */
+            public final r invoke(Object obj) {
+                return new b(this.f22954d, this.f22955e, obj);
+            }
         }
-        if (obj == null) {
-            return key.a();
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        a(o oVar, h hVar, String str, Continuation continuation) {
+            super(2, continuation);
+            this.f22951e = oVar;
+            this.f22952i = hVar;
+            this.f22953o = str;
         }
-        return obj;
-    }
 
-    public final Map b() {
-        return this.f21773a;
-    }
-
-    public final a0 c(Pair pair) {
-        Intrinsics.checkNotNullParameter(pair, "pair");
-        return new a0(o0.r(this.f21773a, pair));
-    }
-
-    public boolean equals(Object obj) {
-        a0 a0Var;
-        if (obj instanceof a0) {
-            a0Var = (a0) obj;
-        } else {
-            a0Var = null;
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            return new a(this.f22951e, this.f22952i, this.f22953o, continuation);
         }
-        if (a0Var == null) {
-            return false;
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            Object f10 = gs.b.f();
+            int i10 = this.f22950d;
+            if (i10 != 0) {
+                if (i10 == 1) {
+                    kotlin.c.b(obj);
+                } else {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+            } else {
+                kotlin.c.b(obj);
+                Flow c10 = a0.c(this.f22951e);
+                h hVar = this.f22952i;
+                C0306a c0306a = new C0306a(this.f22951e, this.f22953o);
+                this.f22950d = 1;
+                if (w.i(c10, hVar, c0306a, this) == f10) {
+                    return f10;
+                }
+            }
+            return Unit.f31987a;
         }
-        return Intrinsics.areEqual(a0Var.b(), b());
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        }
     }
 
-    public int hashCode() {
-        return this.f21773a.hashCode();
+    private static final String b(o oVar, String str) {
+        String obj = oVar.toString();
+        if (StringsKt.k0(str)) {
+            return obj;
+        }
+        return obj + ':' + str;
     }
 
-    public String toString() {
-        return "ViewEnvironment(" + this.f21773a + ')';
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Flow c(o oVar) {
+        Flow run = oVar.run();
+        if (run != null) {
+            return run;
+        }
+        throw new NullPointerException("Worker " + oVar + " returned a null Flow. If this is a test mock, make sure you mock the run() method!");
     }
 
-    public /* synthetic */ a0(Map map, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? o0.i() : map);
+    public static final Object d(o oVar, String str, h hVar, Continuation continuation) {
+        Object g10 = ys.g.g(new ys.b0(b(oVar, str)), new a(oVar, hVar, str, null), continuation);
+        if (g10 == gs.b.f()) {
+            return g10;
+        }
+        return Unit.f31987a;
     }
 }

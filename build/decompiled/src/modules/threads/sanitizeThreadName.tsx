@@ -20,14 +20,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/threads/sanitizeThreadName.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0, arg1() {
-        _fun61859: for (var _fun61859_ip = 0;;) switch (_fun61859_ip) {
+        _fun61912: for (var _fun61912_ip = 0;;) switch (_fun61912_ip) {
             case 0:
                 var2 = arg0;
                 var1 = arg1;
                 var0 = var2;
                 if (!var1) {
-                    _fun61859_ip = 22;
-                    continue _fun61859
+                    _fun61912_ip = 22;
+                    continue _fun61912
                 }
             case 12:
                 var1 = var2.trim;

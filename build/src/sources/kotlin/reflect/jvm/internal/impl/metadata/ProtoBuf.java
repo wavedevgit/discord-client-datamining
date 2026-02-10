@@ -35,62 +35,62 @@ public final class ProtoBuf {
         public static Parser<Annotation> PARSER = new a();
 
         /* renamed from: s  reason: collision with root package name */
-        private static final Annotation f33053s;
+        private static final Annotation f33275s;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33054e;
+        private final ByteString f33276e;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f33055i;
+        private int f33277i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33056o;
+        private int f33278o;
 
         /* renamed from: p  reason: collision with root package name */
-        private List f33057p;
+        private List f33279p;
 
         /* renamed from: q  reason: collision with root package name */
-        private byte f33058q;
+        private byte f33280q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f33059r;
+        private int f33281r;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Argument extends GeneratedMessageLite implements ArgumentOrBuilder {
             public static Parser<Argument> PARSER = new a();
 
             /* renamed from: s  reason: collision with root package name */
-            private static final Argument f33060s;
+            private static final Argument f33282s;
 
             /* renamed from: e  reason: collision with root package name */
-            private final ByteString f33061e;
+            private final ByteString f33283e;
 
             /* renamed from: i  reason: collision with root package name */
-            private int f33062i;
+            private int f33284i;
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33063o;
+            private int f33285o;
 
             /* renamed from: p  reason: collision with root package name */
-            private Value f33064p;
+            private Value f33286p;
 
             /* renamed from: q  reason: collision with root package name */
-            private byte f33065q;
+            private byte f33287q;
 
             /* renamed from: r  reason: collision with root package name */
-            private int f33066r;
+            private int f33288r;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
             public static final class Builder extends GeneratedMessageLite.Builder<Argument, Builder> implements ArgumentOrBuilder {
 
                 /* renamed from: e  reason: collision with root package name */
-                private int f33067e;
+                private int f33289e;
 
                 /* renamed from: i  reason: collision with root package name */
-                private int f33068i;
+                private int f33290i;
 
                 /* renamed from: o  reason: collision with root package name */
-                private Value f33069o = Value.getDefaultInstance();
+                private Value f33291o = Value.getDefaultInstance();
 
                 private Builder() {
                     d();
@@ -109,33 +109,33 @@ public final class ProtoBuf {
 
                 public Argument buildPartial() {
                     Argument argument = new Argument(this);
-                    int i10 = this.f33067e;
+                    int i10 = this.f33289e;
                     int i11 = 1;
                     if ((i10 & 1) != 1) {
                         i11 = 0;
                     }
-                    argument.f33063o = this.f33068i;
+                    argument.f33285o = this.f33290i;
                     if ((i10 & 2) == 2) {
                         i11 |= 2;
                     }
-                    argument.f33064p = this.f33069o;
-                    argument.f33062i = i11;
+                    argument.f33286p = this.f33291o;
+                    argument.f33284i = i11;
                     return argument;
                 }
 
                 public Value getValue() {
-                    return this.f33069o;
+                    return this.f33291o;
                 }
 
                 public boolean hasNameId() {
-                    if ((this.f33067e & 1) == 1) {
+                    if ((this.f33289e & 1) == 1) {
                         return true;
                     }
                     return false;
                 }
 
                 public boolean hasValue() {
-                    if ((this.f33067e & 2) == 2) {
+                    if ((this.f33289e & 2) == 2) {
                         return true;
                     }
                     return false;
@@ -150,18 +150,18 @@ public final class ProtoBuf {
                 }
 
                 public Builder mergeValue(Value value) {
-                    if ((this.f33067e & 2) == 2 && this.f33069o != Value.getDefaultInstance()) {
-                        this.f33069o = Value.newBuilder(this.f33069o).mergeFrom(value).buildPartial();
+                    if ((this.f33289e & 2) == 2 && this.f33291o != Value.getDefaultInstance()) {
+                        this.f33291o = Value.newBuilder(this.f33291o).mergeFrom(value).buildPartial();
                     } else {
-                        this.f33069o = value;
+                        this.f33291o = value;
                     }
-                    this.f33067e |= 2;
+                    this.f33289e |= 2;
                     return this;
                 }
 
                 public Builder setNameId(int i10) {
-                    this.f33067e |= 1;
-                    this.f33068i = i10;
+                    this.f33289e |= 1;
+                    this.f33290i = i10;
                     return this;
                 }
 
@@ -195,7 +195,7 @@ public final class ProtoBuf {
                     if (argument.hasValue()) {
                         mergeValue(argument.getValue());
                     }
-                    setUnknownFields(getUnknownFields().concat(argument.f33061e));
+                    setUnknownFields(getUnknownFields().concat(argument.f33283e));
                     return this;
                 }
 
@@ -244,85 +244,85 @@ public final class ProtoBuf {
                 private int A;
 
                 /* renamed from: e  reason: collision with root package name */
-                private final ByteString f33070e;
+                private final ByteString f33292e;
 
                 /* renamed from: i  reason: collision with root package name */
-                private int f33071i;
+                private int f33293i;
 
                 /* renamed from: o  reason: collision with root package name */
-                private Type f33072o;
+                private Type f33294o;
 
                 /* renamed from: p  reason: collision with root package name */
-                private long f33073p;
+                private long f33295p;
 
                 /* renamed from: q  reason: collision with root package name */
-                private float f33074q;
+                private float f33296q;
 
                 /* renamed from: r  reason: collision with root package name */
-                private double f33075r;
+                private double f33297r;
 
                 /* renamed from: s  reason: collision with root package name */
-                private int f33076s;
+                private int f33298s;
 
                 /* renamed from: t  reason: collision with root package name */
-                private int f33077t;
+                private int f33299t;
 
                 /* renamed from: u  reason: collision with root package name */
-                private int f33078u;
+                private int f33300u;
 
                 /* renamed from: v  reason: collision with root package name */
-                private Annotation f33079v;
+                private Annotation f33301v;
 
                 /* renamed from: w  reason: collision with root package name */
-                private List f33080w;
+                private List f33302w;
 
                 /* renamed from: x  reason: collision with root package name */
-                private int f33081x;
+                private int f33303x;
 
                 /* renamed from: y  reason: collision with root package name */
-                private int f33082y;
+                private int f33304y;
 
                 /* renamed from: z  reason: collision with root package name */
-                private byte f33083z;
+                private byte f33305z;
 
                 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
                 public static final class Builder extends GeneratedMessageLite.Builder<Value, Builder> implements ValueOrBuilder {
 
                     /* renamed from: e  reason: collision with root package name */
-                    private int f33084e;
+                    private int f33306e;
 
                     /* renamed from: o  reason: collision with root package name */
-                    private long f33086o;
+                    private long f33308o;
 
                     /* renamed from: p  reason: collision with root package name */
-                    private float f33087p;
+                    private float f33309p;
 
                     /* renamed from: q  reason: collision with root package name */
-                    private double f33088q;
+                    private double f33310q;
 
                     /* renamed from: r  reason: collision with root package name */
-                    private int f33089r;
+                    private int f33311r;
 
                     /* renamed from: s  reason: collision with root package name */
-                    private int f33090s;
+                    private int f33312s;
 
                     /* renamed from: t  reason: collision with root package name */
-                    private int f33091t;
+                    private int f33313t;
 
                     /* renamed from: w  reason: collision with root package name */
-                    private int f33094w;
+                    private int f33316w;
 
                     /* renamed from: x  reason: collision with root package name */
-                    private int f33095x;
+                    private int f33317x;
 
                     /* renamed from: i  reason: collision with root package name */
-                    private Type f33085i = Type.BYTE;
+                    private Type f33307i = Type.BYTE;
 
                     /* renamed from: u  reason: collision with root package name */
-                    private Annotation f33092u = Annotation.getDefaultInstance();
+                    private Annotation f33314u = Annotation.getDefaultInstance();
 
                     /* renamed from: v  reason: collision with root package name */
-                    private List f33093v = Collections.EMPTY_LIST;
+                    private List f33315v = Collections.EMPTY_LIST;
 
                     private Builder() {
                         e();
@@ -337,9 +337,9 @@ public final class ProtoBuf {
                     }
 
                     private void d() {
-                        if ((this.f33084e & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 256) {
-                            this.f33093v = new ArrayList(this.f33093v);
-                            this.f33084e |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
+                        if ((this.f33306e & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 256) {
+                            this.f33315v = new ArrayList(this.f33315v);
+                            this.f33306e |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         }
                     }
 
@@ -348,71 +348,71 @@ public final class ProtoBuf {
 
                     public Value buildPartial() {
                         Value value = new Value(this);
-                        int i10 = this.f33084e;
+                        int i10 = this.f33306e;
                         int i11 = 1;
                         if ((i10 & 1) != 1) {
                             i11 = 0;
                         }
-                        value.f33072o = this.f33085i;
+                        value.f33294o = this.f33307i;
                         if ((i10 & 2) == 2) {
                             i11 |= 2;
                         }
-                        value.f33073p = this.f33086o;
+                        value.f33295p = this.f33308o;
                         if ((i10 & 4) == 4) {
                             i11 |= 4;
                         }
-                        value.f33074q = this.f33087p;
+                        value.f33296q = this.f33309p;
                         if ((i10 & 8) == 8) {
                             i11 |= 8;
                         }
-                        value.f33075r = this.f33088q;
+                        value.f33297r = this.f33310q;
                         if ((i10 & 16) == 16) {
                             i11 |= 16;
                         }
-                        value.f33076s = this.f33089r;
+                        value.f33298s = this.f33311r;
                         if ((i10 & 32) == 32) {
                             i11 |= 32;
                         }
-                        value.f33077t = this.f33090s;
+                        value.f33299t = this.f33312s;
                         if ((i10 & 64) == 64) {
                             i11 |= 64;
                         }
-                        value.f33078u = this.f33091t;
+                        value.f33300u = this.f33313t;
                         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                             i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         }
-                        value.f33079v = this.f33092u;
-                        if ((this.f33084e & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
-                            this.f33093v = Collections.unmodifiableList(this.f33093v);
-                            this.f33084e &= -257;
+                        value.f33301v = this.f33314u;
+                        if ((this.f33306e & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+                            this.f33315v = Collections.unmodifiableList(this.f33315v);
+                            this.f33306e &= -257;
                         }
-                        value.f33080w = this.f33093v;
+                        value.f33302w = this.f33315v;
                         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
                             i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         }
-                        value.f33081x = this.f33094w;
+                        value.f33303x = this.f33316w;
                         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
                             i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                         }
-                        value.f33082y = this.f33095x;
-                        value.f33071i = i11;
+                        value.f33304y = this.f33317x;
+                        value.f33293i = i11;
                         return value;
                     }
 
                     public Annotation getAnnotation() {
-                        return this.f33092u;
+                        return this.f33314u;
                     }
 
                     public Value getArrayElement(int i10) {
-                        return (Value) this.f33093v.get(i10);
+                        return (Value) this.f33315v.get(i10);
                     }
 
                     public int getArrayElementCount() {
-                        return this.f33093v.size();
+                        return this.f33315v.size();
                     }
 
                     public boolean hasAnnotation() {
-                        if ((this.f33084e & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+                        if ((this.f33306e & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                             return true;
                         }
                         return false;
@@ -432,67 +432,67 @@ public final class ProtoBuf {
                     }
 
                     public Builder mergeAnnotation(Annotation annotation) {
-                        if ((this.f33084e & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128 && this.f33092u != Annotation.getDefaultInstance()) {
-                            this.f33092u = Annotation.newBuilder(this.f33092u).mergeFrom(annotation).buildPartial();
+                        if ((this.f33306e & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128 && this.f33314u != Annotation.getDefaultInstance()) {
+                            this.f33314u = Annotation.newBuilder(this.f33314u).mergeFrom(annotation).buildPartial();
                         } else {
-                            this.f33092u = annotation;
+                            this.f33314u = annotation;
                         }
-                        this.f33084e |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                        this.f33306e |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         return this;
                     }
 
                     public Builder setArrayDimensionCount(int i10) {
-                        this.f33084e |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                        this.f33094w = i10;
+                        this.f33306e |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
+                        this.f33316w = i10;
                         return this;
                     }
 
                     public Builder setClassId(int i10) {
-                        this.f33084e |= 32;
-                        this.f33090s = i10;
+                        this.f33306e |= 32;
+                        this.f33312s = i10;
                         return this;
                     }
 
                     public Builder setDoubleValue(double d10) {
-                        this.f33084e |= 8;
-                        this.f33088q = d10;
+                        this.f33306e |= 8;
+                        this.f33310q = d10;
                         return this;
                     }
 
                     public Builder setEnumValueId(int i10) {
-                        this.f33084e |= 64;
-                        this.f33091t = i10;
+                        this.f33306e |= 64;
+                        this.f33313t = i10;
                         return this;
                     }
 
                     public Builder setFlags(int i10) {
-                        this.f33084e |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-                        this.f33095x = i10;
+                        this.f33306e |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
+                        this.f33317x = i10;
                         return this;
                     }
 
                     public Builder setFloatValue(float f10) {
-                        this.f33084e |= 4;
-                        this.f33087p = f10;
+                        this.f33306e |= 4;
+                        this.f33309p = f10;
                         return this;
                     }
 
                     public Builder setIntValue(long j10) {
-                        this.f33084e |= 2;
-                        this.f33086o = j10;
+                        this.f33306e |= 2;
+                        this.f33308o = j10;
                         return this;
                     }
 
                     public Builder setStringValue(int i10) {
-                        this.f33084e |= 16;
-                        this.f33089r = i10;
+                        this.f33306e |= 16;
+                        this.f33311r = i10;
                         return this;
                     }
 
                     public Builder setType(Type type) {
                         type.getClass();
-                        this.f33084e |= 1;
-                        this.f33085i = type;
+                        this.f33306e |= 1;
+                        this.f33307i = type;
                         return this;
                     }
 
@@ -544,13 +544,13 @@ public final class ProtoBuf {
                         if (value.hasAnnotation()) {
                             mergeAnnotation(value.getAnnotation());
                         }
-                        if (!value.f33080w.isEmpty()) {
-                            if (this.f33093v.isEmpty()) {
-                                this.f33093v = value.f33080w;
-                                this.f33084e &= -257;
+                        if (!value.f33302w.isEmpty()) {
+                            if (this.f33315v.isEmpty()) {
+                                this.f33315v = value.f33302w;
+                                this.f33306e &= -257;
                             } else {
                                 d();
-                                this.f33093v.addAll(value.f33080w);
+                                this.f33315v.addAll(value.f33302w);
                             }
                         }
                         if (value.hasArrayDimensionCount()) {
@@ -559,7 +559,7 @@ public final class ProtoBuf {
                         if (value.hasFlags()) {
                             setFlags(value.getFlags());
                         }
-                        setUnknownFields(getUnknownFields().concat(value.f33070e));
+                        setUnknownFields(getUnknownFields().concat(value.f33292e));
                         return this;
                     }
 
@@ -619,10 +619,10 @@ public final class ProtoBuf {
                     
 
                     /* renamed from: e  reason: collision with root package name */
-                    private static Internal.EnumLiteMap f33096e = new a();
+                    private static Internal.EnumLiteMap f33318e = new a();
 
                     /* renamed from: d  reason: collision with root package name */
-                    private final int f33098d;
+                    private final int f33320d;
 
                     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
                     static class a implements Internal.EnumLiteMap {
@@ -637,12 +637,12 @@ public final class ProtoBuf {
                     }
 
                     Type(int i10, int i11) {
-                        this.f33098d = i11;
+                        this.f33320d = i11;
                     }
 
                     @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
                     public final int getNumber() {
-                        return this.f33098d;
+                        return this.f33320d;
                     }
 
                     public static Type valueOf(int i10) {
@@ -706,61 +706,61 @@ public final class ProtoBuf {
                 }
 
                 private void v() {
-                    this.f33072o = Type.BYTE;
-                    this.f33073p = 0L;
-                    this.f33074q = 0.0f;
-                    this.f33075r = 0.0d;
-                    this.f33076s = 0;
-                    this.f33077t = 0;
-                    this.f33078u = 0;
-                    this.f33079v = Annotation.getDefaultInstance();
-                    this.f33080w = Collections.EMPTY_LIST;
-                    this.f33081x = 0;
-                    this.f33082y = 0;
+                    this.f33294o = Type.BYTE;
+                    this.f33295p = 0L;
+                    this.f33296q = 0.0f;
+                    this.f33297r = 0.0d;
+                    this.f33298s = 0;
+                    this.f33299t = 0;
+                    this.f33300u = 0;
+                    this.f33301v = Annotation.getDefaultInstance();
+                    this.f33302w = Collections.EMPTY_LIST;
+                    this.f33303x = 0;
+                    this.f33304y = 0;
                 }
 
                 public Annotation getAnnotation() {
-                    return this.f33079v;
+                    return this.f33301v;
                 }
 
                 public int getArrayDimensionCount() {
-                    return this.f33081x;
+                    return this.f33303x;
                 }
 
                 public Value getArrayElement(int i10) {
-                    return (Value) this.f33080w.get(i10);
+                    return (Value) this.f33302w.get(i10);
                 }
 
                 public int getArrayElementCount() {
-                    return this.f33080w.size();
+                    return this.f33302w.size();
                 }
 
                 public List<Value> getArrayElementList() {
-                    return this.f33080w;
+                    return this.f33302w;
                 }
 
                 public int getClassId() {
-                    return this.f33077t;
+                    return this.f33299t;
                 }
 
                 public double getDoubleValue() {
-                    return this.f33075r;
+                    return this.f33297r;
                 }
 
                 public int getEnumValueId() {
-                    return this.f33078u;
+                    return this.f33300u;
                 }
 
                 public int getFlags() {
-                    return this.f33082y;
+                    return this.f33304y;
                 }
 
                 public float getFloatValue() {
-                    return this.f33074q;
+                    return this.f33296q;
                 }
 
                 public long getIntValue() {
-                    return this.f33073p;
+                    return this.f33295p;
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -775,119 +775,119 @@ public final class ProtoBuf {
                     if (i11 != -1) {
                         return i11;
                     }
-                    if ((this.f33071i & 1) == 1) {
-                        i10 = CodedOutputStream.computeEnumSize(1, this.f33072o.getNumber());
+                    if ((this.f33293i & 1) == 1) {
+                        i10 = CodedOutputStream.computeEnumSize(1, this.f33294o.getNumber());
                     } else {
                         i10 = 0;
                     }
-                    if ((this.f33071i & 2) == 2) {
-                        i10 += CodedOutputStream.computeSInt64Size(2, this.f33073p);
+                    if ((this.f33293i & 2) == 2) {
+                        i10 += CodedOutputStream.computeSInt64Size(2, this.f33295p);
                     }
-                    if ((this.f33071i & 4) == 4) {
-                        i10 += CodedOutputStream.computeFloatSize(3, this.f33074q);
+                    if ((this.f33293i & 4) == 4) {
+                        i10 += CodedOutputStream.computeFloatSize(3, this.f33296q);
                     }
-                    if ((this.f33071i & 8) == 8) {
-                        i10 += CodedOutputStream.computeDoubleSize(4, this.f33075r);
+                    if ((this.f33293i & 8) == 8) {
+                        i10 += CodedOutputStream.computeDoubleSize(4, this.f33297r);
                     }
-                    if ((this.f33071i & 16) == 16) {
-                        i10 += CodedOutputStream.computeInt32Size(5, this.f33076s);
+                    if ((this.f33293i & 16) == 16) {
+                        i10 += CodedOutputStream.computeInt32Size(5, this.f33298s);
                     }
-                    if ((this.f33071i & 32) == 32) {
-                        i10 += CodedOutputStream.computeInt32Size(6, this.f33077t);
+                    if ((this.f33293i & 32) == 32) {
+                        i10 += CodedOutputStream.computeInt32Size(6, this.f33299t);
                     }
-                    if ((this.f33071i & 64) == 64) {
-                        i10 += CodedOutputStream.computeInt32Size(7, this.f33078u);
+                    if ((this.f33293i & 64) == 64) {
+                        i10 += CodedOutputStream.computeInt32Size(7, this.f33300u);
                     }
-                    if ((this.f33071i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
-                        i10 += CodedOutputStream.computeMessageSize(8, this.f33079v);
+                    if ((this.f33293i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+                        i10 += CodedOutputStream.computeMessageSize(8, this.f33301v);
                     }
-                    for (int i12 = 0; i12 < this.f33080w.size(); i12++) {
-                        i10 += CodedOutputStream.computeMessageSize(9, (MessageLite) this.f33080w.get(i12));
+                    for (int i12 = 0; i12 < this.f33302w.size(); i12++) {
+                        i10 += CodedOutputStream.computeMessageSize(9, (MessageLite) this.f33302w.get(i12));
                     }
-                    if ((this.f33071i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
-                        i10 += CodedOutputStream.computeInt32Size(10, this.f33082y);
+                    if ((this.f33293i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+                        i10 += CodedOutputStream.computeInt32Size(10, this.f33304y);
                     }
-                    if ((this.f33071i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
-                        i10 += CodedOutputStream.computeInt32Size(11, this.f33081x);
+                    if ((this.f33293i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+                        i10 += CodedOutputStream.computeInt32Size(11, this.f33303x);
                     }
-                    int size = i10 + this.f33070e.size();
+                    int size = i10 + this.f33292e.size();
                     this.A = size;
                     return size;
                 }
 
                 public int getStringValue() {
-                    return this.f33076s;
+                    return this.f33298s;
                 }
 
                 public Type getType() {
-                    return this.f33072o;
+                    return this.f33294o;
                 }
 
                 public boolean hasAnnotation() {
-                    if ((this.f33071i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+                    if ((this.f33293i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                         return true;
                     }
                     return false;
                 }
 
                 public boolean hasArrayDimensionCount() {
-                    if ((this.f33071i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+                    if ((this.f33293i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
                         return true;
                     }
                     return false;
                 }
 
                 public boolean hasClassId() {
-                    if ((this.f33071i & 32) == 32) {
+                    if ((this.f33293i & 32) == 32) {
                         return true;
                     }
                     return false;
                 }
 
                 public boolean hasDoubleValue() {
-                    if ((this.f33071i & 8) == 8) {
+                    if ((this.f33293i & 8) == 8) {
                         return true;
                     }
                     return false;
                 }
 
                 public boolean hasEnumValueId() {
-                    if ((this.f33071i & 64) == 64) {
+                    if ((this.f33293i & 64) == 64) {
                         return true;
                     }
                     return false;
                 }
 
                 public boolean hasFlags() {
-                    if ((this.f33071i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+                    if ((this.f33293i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
                         return true;
                     }
                     return false;
                 }
 
                 public boolean hasFloatValue() {
-                    if ((this.f33071i & 4) == 4) {
+                    if ((this.f33293i & 4) == 4) {
                         return true;
                     }
                     return false;
                 }
 
                 public boolean hasIntValue() {
-                    if ((this.f33071i & 2) == 2) {
+                    if ((this.f33293i & 2) == 2) {
                         return true;
                     }
                     return false;
                 }
 
                 public boolean hasStringValue() {
-                    if ((this.f33071i & 16) == 16) {
+                    if ((this.f33293i & 16) == 16) {
                         return true;
                     }
                     return false;
                 }
 
                 public boolean hasType() {
-                    if ((this.f33071i & 1) == 1) {
+                    if ((this.f33293i & 1) == 1) {
                         return true;
                     }
                     return false;
@@ -895,7 +895,7 @@ public final class ProtoBuf {
 
                 @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
                 public final boolean isInitialized() {
-                    byte b10 = this.f33083z;
+                    byte b10 = this.f33305z;
                     if (b10 == 1) {
                         return true;
                     }
@@ -903,56 +903,56 @@ public final class ProtoBuf {
                         return false;
                     }
                     if (hasAnnotation() && !getAnnotation().isInitialized()) {
-                        this.f33083z = (byte) 0;
+                        this.f33305z = (byte) 0;
                         return false;
                     }
                     for (int i10 = 0; i10 < getArrayElementCount(); i10++) {
                         if (!getArrayElement(i10).isInitialized()) {
-                            this.f33083z = (byte) 0;
+                            this.f33305z = (byte) 0;
                             return false;
                         }
                     }
-                    this.f33083z = (byte) 1;
+                    this.f33305z = (byte) 1;
                     return true;
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
                 public void writeTo(CodedOutputStream codedOutputStream) {
                     getSerializedSize();
-                    if ((this.f33071i & 1) == 1) {
-                        codedOutputStream.writeEnum(1, this.f33072o.getNumber());
+                    if ((this.f33293i & 1) == 1) {
+                        codedOutputStream.writeEnum(1, this.f33294o.getNumber());
                     }
-                    if ((this.f33071i & 2) == 2) {
-                        codedOutputStream.writeSInt64(2, this.f33073p);
+                    if ((this.f33293i & 2) == 2) {
+                        codedOutputStream.writeSInt64(2, this.f33295p);
                     }
-                    if ((this.f33071i & 4) == 4) {
-                        codedOutputStream.writeFloat(3, this.f33074q);
+                    if ((this.f33293i & 4) == 4) {
+                        codedOutputStream.writeFloat(3, this.f33296q);
                     }
-                    if ((this.f33071i & 8) == 8) {
-                        codedOutputStream.writeDouble(4, this.f33075r);
+                    if ((this.f33293i & 8) == 8) {
+                        codedOutputStream.writeDouble(4, this.f33297r);
                     }
-                    if ((this.f33071i & 16) == 16) {
-                        codedOutputStream.writeInt32(5, this.f33076s);
+                    if ((this.f33293i & 16) == 16) {
+                        codedOutputStream.writeInt32(5, this.f33298s);
                     }
-                    if ((this.f33071i & 32) == 32) {
-                        codedOutputStream.writeInt32(6, this.f33077t);
+                    if ((this.f33293i & 32) == 32) {
+                        codedOutputStream.writeInt32(6, this.f33299t);
                     }
-                    if ((this.f33071i & 64) == 64) {
-                        codedOutputStream.writeInt32(7, this.f33078u);
+                    if ((this.f33293i & 64) == 64) {
+                        codedOutputStream.writeInt32(7, this.f33300u);
                     }
-                    if ((this.f33071i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
-                        codedOutputStream.writeMessage(8, this.f33079v);
+                    if ((this.f33293i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+                        codedOutputStream.writeMessage(8, this.f33301v);
                     }
-                    for (int i10 = 0; i10 < this.f33080w.size(); i10++) {
-                        codedOutputStream.writeMessage(9, (MessageLite) this.f33080w.get(i10));
+                    for (int i10 = 0; i10 < this.f33302w.size(); i10++) {
+                        codedOutputStream.writeMessage(9, (MessageLite) this.f33302w.get(i10));
                     }
-                    if ((this.f33071i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
-                        codedOutputStream.writeInt32(10, this.f33082y);
+                    if ((this.f33293i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+                        codedOutputStream.writeInt32(10, this.f33304y);
                     }
-                    if ((this.f33071i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
-                        codedOutputStream.writeInt32(11, this.f33081x);
+                    if ((this.f33293i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+                        codedOutputStream.writeInt32(11, this.f33303x);
                     }
-                    codedOutputStream.writeRawBytes(this.f33070e);
+                    codedOutputStream.writeRawBytes(this.f33292e);
                 }
 
                 public static Builder newBuilder(Value value) {
@@ -976,15 +976,15 @@ public final class ProtoBuf {
 
                 private Value(GeneratedMessageLite.Builder builder) {
                     super(builder);
-                    this.f33083z = (byte) -1;
+                    this.f33305z = (byte) -1;
                     this.A = -1;
-                    this.f33070e = builder.getUnknownFields();
+                    this.f33292e = builder.getUnknownFields();
                 }
 
                 private Value(boolean z10) {
-                    this.f33083z = (byte) -1;
+                    this.f33305z = (byte) -1;
                     this.A = -1;
-                    this.f33070e = ByteString.EMPTY;
+                    this.f33292e = ByteString.EMPTY;
                 }
 
                 /* JADX WARN: Multi-variable type inference failed */
@@ -992,7 +992,7 @@ public final class ProtoBuf {
                 /* JADX WARN: Type inference failed for: r5v1 */
                 /* JADX WARN: Type inference failed for: r5v2, types: [boolean] */
                 private Value(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-                    this.f33083z = (byte) -1;
+                    this.f33305z = (byte) -1;
                     this.A = -1;
                     v();
                     ByteString.Output newOutput = ByteString.newOutput();
@@ -1015,58 +1015,58 @@ public final class ProtoBuf {
                                                 newInstance.writeRawVarint32(readTag);
                                                 newInstance.writeRawVarint32(readEnum);
                                             } else {
-                                                this.f33071i |= 1;
-                                                this.f33072o = valueOf;
+                                                this.f33293i |= 1;
+                                                this.f33294o = valueOf;
                                                 continue;
                                             }
                                         case 16:
-                                            this.f33071i |= 2;
-                                            this.f33073p = codedInputStream.readSInt64();
+                                            this.f33293i |= 2;
+                                            this.f33295p = codedInputStream.readSInt64();
                                             continue;
                                         case 29:
-                                            this.f33071i |= 4;
-                                            this.f33074q = codedInputStream.readFloat();
+                                            this.f33293i |= 4;
+                                            this.f33296q = codedInputStream.readFloat();
                                             continue;
                                         case ChatViewRecyclerTypes.AUTO_MODERATION_NOTIFICATION_EMBED /* 33 */:
-                                            this.f33071i |= 8;
-                                            this.f33075r = codedInputStream.readDouble();
+                                            this.f33293i |= 8;
+                                            this.f33297r = codedInputStream.readDouble();
                                             continue;
                                         case 40:
-                                            this.f33071i |= 16;
-                                            this.f33076s = codedInputStream.readInt32();
+                                            this.f33293i |= 16;
+                                            this.f33298s = codedInputStream.readInt32();
                                             continue;
                                         case 48:
-                                            this.f33071i |= 32;
-                                            this.f33077t = codedInputStream.readInt32();
+                                            this.f33293i |= 32;
+                                            this.f33299t = codedInputStream.readInt32();
                                             continue;
                                         case ChatViewRecyclerTypes.SHARED_CUSTOM_THEME_EMBED /* 56 */:
-                                            this.f33071i |= 64;
-                                            this.f33078u = codedInputStream.readInt32();
+                                            this.f33293i |= 64;
+                                            this.f33300u = codedInputStream.readInt32();
                                             continue;
                                         case 66:
-                                            Builder builder = (this.f33071i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128 ? this.f33079v.toBuilder() : null;
+                                            Builder builder = (this.f33293i & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128 ? this.f33301v.toBuilder() : null;
                                             Annotation annotation = (Annotation) codedInputStream.readMessage(Annotation.PARSER, extensionRegistryLite);
-                                            this.f33079v = annotation;
+                                            this.f33301v = annotation;
                                             if (builder != null) {
                                                 builder.mergeFrom(annotation);
-                                                this.f33079v = builder.buildPartial();
+                                                this.f33301v = builder.buildPartial();
                                             }
-                                            this.f33071i |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                                            this.f33293i |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                                             continue;
                                         case 74:
                                             if (!(z11 & true)) {
-                                                this.f33080w = new ArrayList();
+                                                this.f33302w = new ArrayList();
                                                 z11 = true;
                                             }
-                                            this.f33080w.add(codedInputStream.readMessage(PARSER, extensionRegistryLite));
+                                            this.f33302w.add(codedInputStream.readMessage(PARSER, extensionRegistryLite));
                                             continue;
                                         case 80:
-                                            this.f33071i |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                                            this.f33082y = codedInputStream.readInt32();
+                                            this.f33293i |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
+                                            this.f33304y = codedInputStream.readInt32();
                                             continue;
                                         case 88:
-                                            this.f33071i |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
-                                            this.f33081x = codedInputStream.readInt32();
+                                            this.f33293i |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
+                                            this.f33303x = codedInputStream.readInt32();
                                             continue;
                                         default:
                                             r52 = f(codedInputStream, newInstance, extensionRegistryLite, readTag);
@@ -1079,16 +1079,16 @@ public final class ProtoBuf {
                                     z10 = true;
                                 } catch (Throwable th2) {
                                     if ((z11 & true) == r52) {
-                                        this.f33080w = Collections.unmodifiableList(this.f33080w);
+                                        this.f33302w = Collections.unmodifiableList(this.f33302w);
                                     }
                                     try {
                                         newInstance.flush();
                                     } catch (IOException unused) {
                                     } catch (Throwable th3) {
-                                        this.f33070e = newOutput.toByteString();
+                                        this.f33292e = newOutput.toByteString();
                                         throw th3;
                                     }
-                                    this.f33070e = newOutput.toByteString();
+                                    this.f33292e = newOutput.toByteString();
                                     e();
                                     throw th2;
                                 }
@@ -1099,16 +1099,16 @@ public final class ProtoBuf {
                             }
                         } else {
                             if (z11 & true) {
-                                this.f33080w = Collections.unmodifiableList(this.f33080w);
+                                this.f33302w = Collections.unmodifiableList(this.f33302w);
                             }
                             try {
                                 newInstance.flush();
                             } catch (IOException unused2) {
                             } catch (Throwable th4) {
-                                this.f33070e = newOutput.toByteString();
+                                this.f33292e = newOutput.toByteString();
                                 throw th4;
                             }
-                            this.f33070e = newOutput.toByteString();
+                            this.f33292e = newOutput.toByteString();
                             e();
                             return;
                         }
@@ -1134,17 +1134,17 @@ public final class ProtoBuf {
 
             static {
                 Argument argument = new Argument(true);
-                f33060s = argument;
+                f33282s = argument;
                 argument.l();
             }
 
             public static Argument getDefaultInstance() {
-                return f33060s;
+                return f33282s;
             }
 
             private void l() {
-                this.f33063o = 0;
-                this.f33064p = Value.getDefaultInstance();
+                this.f33285o = 0;
+                this.f33286p = Value.getDefaultInstance();
             }
 
             public static Builder newBuilder() {
@@ -1152,7 +1152,7 @@ public final class ProtoBuf {
             }
 
             public int getNameId() {
-                return this.f33063o;
+                return this.f33285o;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -1163,36 +1163,36 @@ public final class ProtoBuf {
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
             public int getSerializedSize() {
                 int i10;
-                int i11 = this.f33066r;
+                int i11 = this.f33288r;
                 if (i11 != -1) {
                     return i11;
                 }
-                if ((this.f33062i & 1) == 1) {
-                    i10 = CodedOutputStream.computeInt32Size(1, this.f33063o);
+                if ((this.f33284i & 1) == 1) {
+                    i10 = CodedOutputStream.computeInt32Size(1, this.f33285o);
                 } else {
                     i10 = 0;
                 }
-                if ((this.f33062i & 2) == 2) {
-                    i10 += CodedOutputStream.computeMessageSize(2, this.f33064p);
+                if ((this.f33284i & 2) == 2) {
+                    i10 += CodedOutputStream.computeMessageSize(2, this.f33286p);
                 }
-                int size = i10 + this.f33061e.size();
-                this.f33066r = size;
+                int size = i10 + this.f33283e.size();
+                this.f33288r = size;
                 return size;
             }
 
             public Value getValue() {
-                return this.f33064p;
+                return this.f33286p;
             }
 
             public boolean hasNameId() {
-                if ((this.f33062i & 1) == 1) {
+                if ((this.f33284i & 1) == 1) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasValue() {
-                if ((this.f33062i & 2) == 2) {
+                if ((this.f33284i & 2) == 2) {
                     return true;
                 }
                 return false;
@@ -1200,7 +1200,7 @@ public final class ProtoBuf {
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
             public final boolean isInitialized() {
-                byte b10 = this.f33065q;
+                byte b10 = this.f33287q;
                 if (b10 == 1) {
                     return true;
                 }
@@ -1208,16 +1208,16 @@ public final class ProtoBuf {
                     return false;
                 }
                 if (!hasNameId()) {
-                    this.f33065q = (byte) 0;
+                    this.f33287q = (byte) 0;
                     return false;
                 } else if (!hasValue()) {
-                    this.f33065q = (byte) 0;
+                    this.f33287q = (byte) 0;
                     return false;
                 } else if (!getValue().isInitialized()) {
-                    this.f33065q = (byte) 0;
+                    this.f33287q = (byte) 0;
                     return false;
                 } else {
-                    this.f33065q = (byte) 1;
+                    this.f33287q = (byte) 1;
                     return true;
                 }
             }
@@ -1225,13 +1225,13 @@ public final class ProtoBuf {
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
             public void writeTo(CodedOutputStream codedOutputStream) {
                 getSerializedSize();
-                if ((this.f33062i & 1) == 1) {
-                    codedOutputStream.writeInt32(1, this.f33063o);
+                if ((this.f33284i & 1) == 1) {
+                    codedOutputStream.writeInt32(1, this.f33285o);
                 }
-                if ((this.f33062i & 2) == 2) {
-                    codedOutputStream.writeMessage(2, this.f33064p);
+                if ((this.f33284i & 2) == 2) {
+                    codedOutputStream.writeMessage(2, this.f33286p);
                 }
-                codedOutputStream.writeRawBytes(this.f33061e);
+                codedOutputStream.writeRawBytes(this.f33283e);
             }
 
             public static Builder newBuilder(Argument argument) {
@@ -1240,7 +1240,7 @@ public final class ProtoBuf {
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
             public Argument getDefaultInstanceForType() {
-                return f33060s;
+                return f33282s;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -1255,20 +1255,20 @@ public final class ProtoBuf {
 
             private Argument(GeneratedMessageLite.Builder builder) {
                 super(builder);
-                this.f33065q = (byte) -1;
-                this.f33066r = -1;
-                this.f33061e = builder.getUnknownFields();
+                this.f33287q = (byte) -1;
+                this.f33288r = -1;
+                this.f33283e = builder.getUnknownFields();
             }
 
             private Argument(boolean z10) {
-                this.f33065q = (byte) -1;
-                this.f33066r = -1;
-                this.f33061e = ByteString.EMPTY;
+                this.f33287q = (byte) -1;
+                this.f33288r = -1;
+                this.f33283e = ByteString.EMPTY;
             }
 
             private Argument(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-                this.f33065q = (byte) -1;
-                this.f33066r = -1;
+                this.f33287q = (byte) -1;
+                this.f33288r = -1;
                 l();
                 ByteString.Output newOutput = ByteString.newOutput();
                 CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -1279,20 +1279,20 @@ public final class ProtoBuf {
                             int readTag = codedInputStream.readTag();
                             if (readTag != 0) {
                                 if (readTag == 8) {
-                                    this.f33062i |= 1;
-                                    this.f33063o = codedInputStream.readInt32();
+                                    this.f33284i |= 1;
+                                    this.f33285o = codedInputStream.readInt32();
                                 } else if (readTag != 18) {
                                     if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                     }
                                 } else {
-                                    Value.Builder builder = (this.f33062i & 2) == 2 ? this.f33064p.toBuilder() : null;
+                                    Value.Builder builder = (this.f33284i & 2) == 2 ? this.f33286p.toBuilder() : null;
                                     Value value = (Value) codedInputStream.readMessage(Value.PARSER, extensionRegistryLite);
-                                    this.f33064p = value;
+                                    this.f33286p = value;
                                     if (builder != null) {
                                         builder.mergeFrom(value);
-                                        this.f33064p = builder.buildPartial();
+                                        this.f33286p = builder.buildPartial();
                                     }
-                                    this.f33062i |= 2;
+                                    this.f33284i |= 2;
                                 }
                             }
                             z10 = true;
@@ -1301,10 +1301,10 @@ public final class ProtoBuf {
                                 newInstance.flush();
                             } catch (IOException unused) {
                             } catch (Throwable th3) {
-                                this.f33061e = newOutput.toByteString();
+                                this.f33283e = newOutput.toByteString();
                                 throw th3;
                             }
-                            this.f33061e = newOutput.toByteString();
+                            this.f33283e = newOutput.toByteString();
                             e();
                             throw th2;
                         }
@@ -1318,10 +1318,10 @@ public final class ProtoBuf {
                     newInstance.flush();
                 } catch (IOException unused2) {
                 } catch (Throwable th4) {
-                    this.f33061e = newOutput.toByteString();
+                    this.f33283e = newOutput.toByteString();
                     throw th4;
                 }
-                this.f33061e = newOutput.toByteString();
+                this.f33283e = newOutput.toByteString();
                 e();
             }
         }
@@ -1334,13 +1334,13 @@ public final class ProtoBuf {
         public static final class Builder extends GeneratedMessageLite.Builder<Annotation, Builder> implements AnnotationOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33099e;
+            private int f33321e;
 
             /* renamed from: i  reason: collision with root package name */
-            private int f33100i;
+            private int f33322i;
 
             /* renamed from: o  reason: collision with root package name */
-            private List f33101o = Collections.EMPTY_LIST;
+            private List f33323o = Collections.EMPTY_LIST;
 
             private Builder() {
                 e();
@@ -1355,9 +1355,9 @@ public final class ProtoBuf {
             }
 
             private void d() {
-                if ((this.f33099e & 2) != 2) {
-                    this.f33101o = new ArrayList(this.f33101o);
-                    this.f33099e |= 2;
+                if ((this.f33321e & 2) != 2) {
+                    this.f33323o = new ArrayList(this.f33323o);
+                    this.f33321e |= 2;
                 }
             }
 
@@ -1367,29 +1367,29 @@ public final class ProtoBuf {
             public Annotation buildPartial() {
                 Annotation annotation = new Annotation(this);
                 int i10 = 1;
-                if ((this.f33099e & 1) != 1) {
+                if ((this.f33321e & 1) != 1) {
                     i10 = 0;
                 }
-                annotation.f33056o = this.f33100i;
-                if ((this.f33099e & 2) == 2) {
-                    this.f33101o = Collections.unmodifiableList(this.f33101o);
-                    this.f33099e &= -3;
+                annotation.f33278o = this.f33322i;
+                if ((this.f33321e & 2) == 2) {
+                    this.f33323o = Collections.unmodifiableList(this.f33323o);
+                    this.f33321e &= -3;
                 }
-                annotation.f33057p = this.f33101o;
-                annotation.f33055i = i10;
+                annotation.f33279p = this.f33323o;
+                annotation.f33277i = i10;
                 return annotation;
             }
 
             public Argument getArgument(int i10) {
-                return (Argument) this.f33101o.get(i10);
+                return (Argument) this.f33323o.get(i10);
             }
 
             public int getArgumentCount() {
-                return this.f33101o.size();
+                return this.f33323o.size();
             }
 
             public boolean hasId() {
-                if ((this.f33099e & 1) == 1) {
+                if ((this.f33321e & 1) == 1) {
                     return true;
                 }
                 return false;
@@ -1409,8 +1409,8 @@ public final class ProtoBuf {
             }
 
             public Builder setId(int i10) {
-                this.f33099e |= 1;
-                this.f33100i = i10;
+                this.f33321e |= 1;
+                this.f33322i = i10;
                 return this;
             }
 
@@ -1441,16 +1441,16 @@ public final class ProtoBuf {
                 if (annotation.hasId()) {
                     setId(annotation.getId());
                 }
-                if (!annotation.f33057p.isEmpty()) {
-                    if (this.f33101o.isEmpty()) {
-                        this.f33101o = annotation.f33057p;
-                        this.f33099e &= -3;
+                if (!annotation.f33279p.isEmpty()) {
+                    if (this.f33323o.isEmpty()) {
+                        this.f33323o = annotation.f33279p;
+                        this.f33321e &= -3;
                     } else {
                         d();
-                        this.f33101o.addAll(annotation.f33057p);
+                        this.f33323o.addAll(annotation.f33279p);
                     }
                 }
-                setUnknownFields(getUnknownFields().concat(annotation.f33054e));
+                setUnknownFields(getUnknownFields().concat(annotation.f33276e));
                 return this;
             }
 
@@ -1506,17 +1506,17 @@ public final class ProtoBuf {
 
         static {
             Annotation annotation = new Annotation(true);
-            f33053s = annotation;
+            f33275s = annotation;
             annotation.m();
         }
 
         public static Annotation getDefaultInstance() {
-            return f33053s;
+            return f33275s;
         }
 
         private void m() {
-            this.f33056o = 0;
-            this.f33057p = Collections.EMPTY_LIST;
+            this.f33278o = 0;
+            this.f33279p = Collections.EMPTY_LIST;
         }
 
         public static Builder newBuilder() {
@@ -1524,19 +1524,19 @@ public final class ProtoBuf {
         }
 
         public Argument getArgument(int i10) {
-            return (Argument) this.f33057p.get(i10);
+            return (Argument) this.f33279p.get(i10);
         }
 
         public int getArgumentCount() {
-            return this.f33057p.size();
+            return this.f33279p.size();
         }
 
         public List<Argument> getArgumentList() {
-            return this.f33057p;
+            return this.f33279p;
         }
 
         public int getId() {
-            return this.f33056o;
+            return this.f33278o;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -1547,25 +1547,25 @@ public final class ProtoBuf {
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
             int i10;
-            int i11 = this.f33059r;
+            int i11 = this.f33281r;
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33055i & 1) == 1) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33056o);
+            if ((this.f33277i & 1) == 1) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33278o);
             } else {
                 i10 = 0;
             }
-            for (int i12 = 0; i12 < this.f33057p.size(); i12++) {
-                i10 += CodedOutputStream.computeMessageSize(2, (MessageLite) this.f33057p.get(i12));
+            for (int i12 = 0; i12 < this.f33279p.size(); i12++) {
+                i10 += CodedOutputStream.computeMessageSize(2, (MessageLite) this.f33279p.get(i12));
             }
-            int size = i10 + this.f33054e.size();
-            this.f33059r = size;
+            int size = i10 + this.f33276e.size();
+            this.f33281r = size;
             return size;
         }
 
         public boolean hasId() {
-            if ((this.f33055i & 1) == 1) {
+            if ((this.f33277i & 1) == 1) {
                 return true;
             }
             return false;
@@ -1573,7 +1573,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33058q;
+            byte b10 = this.f33280q;
             if (b10 == 1) {
                 return true;
             }
@@ -1581,29 +1581,29 @@ public final class ProtoBuf {
                 return false;
             }
             if (!hasId()) {
-                this.f33058q = (byte) 0;
+                this.f33280q = (byte) 0;
                 return false;
             }
             for (int i10 = 0; i10 < getArgumentCount(); i10++) {
                 if (!getArgument(i10).isInitialized()) {
-                    this.f33058q = (byte) 0;
+                    this.f33280q = (byte) 0;
                     return false;
                 }
             }
-            this.f33058q = (byte) 1;
+            this.f33280q = (byte) 1;
             return true;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            if ((this.f33055i & 1) == 1) {
-                codedOutputStream.writeInt32(1, this.f33056o);
+            if ((this.f33277i & 1) == 1) {
+                codedOutputStream.writeInt32(1, this.f33278o);
             }
-            for (int i10 = 0; i10 < this.f33057p.size(); i10++) {
-                codedOutputStream.writeMessage(2, (MessageLite) this.f33057p.get(i10));
+            for (int i10 = 0; i10 < this.f33279p.size(); i10++) {
+                codedOutputStream.writeMessage(2, (MessageLite) this.f33279p.get(i10));
             }
-            codedOutputStream.writeRawBytes(this.f33054e);
+            codedOutputStream.writeRawBytes(this.f33276e);
         }
 
         public static Builder newBuilder(Annotation annotation) {
@@ -1612,7 +1612,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public Annotation getDefaultInstanceForType() {
-            return f33053s;
+            return f33275s;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -1627,20 +1627,20 @@ public final class ProtoBuf {
 
         private Annotation(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33058q = (byte) -1;
-            this.f33059r = -1;
-            this.f33054e = builder.getUnknownFields();
+            this.f33280q = (byte) -1;
+            this.f33281r = -1;
+            this.f33276e = builder.getUnknownFields();
         }
 
         private Annotation(boolean z10) {
-            this.f33058q = (byte) -1;
-            this.f33059r = -1;
-            this.f33054e = ByteString.EMPTY;
+            this.f33280q = (byte) -1;
+            this.f33281r = -1;
+            this.f33276e = ByteString.EMPTY;
         }
 
         private Annotation(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33058q = (byte) -1;
-            this.f33059r = -1;
+            this.f33280q = (byte) -1;
+            this.f33281r = -1;
             m();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -1652,32 +1652,32 @@ public final class ProtoBuf {
                         int readTag = codedInputStream.readTag();
                         if (readTag != 0) {
                             if (readTag == 8) {
-                                this.f33055i |= 1;
-                                this.f33056o = codedInputStream.readInt32();
+                                this.f33277i |= 1;
+                                this.f33278o = codedInputStream.readInt32();
                             } else if (readTag != 18) {
                                 if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                 }
                             } else {
                                 if (!(z11 & true)) {
-                                    this.f33057p = new ArrayList();
+                                    this.f33279p = new ArrayList();
                                     z11 = true;
                                 }
-                                this.f33057p.add(codedInputStream.readMessage(Argument.PARSER, extensionRegistryLite));
+                                this.f33279p.add(codedInputStream.readMessage(Argument.PARSER, extensionRegistryLite));
                             }
                         }
                         z10 = true;
                     } catch (Throwable th2) {
                         if (z11 & true) {
-                            this.f33057p = Collections.unmodifiableList(this.f33057p);
+                            this.f33279p = Collections.unmodifiableList(this.f33279p);
                         }
                         try {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33054e = newOutput.toByteString();
+                            this.f33276e = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33054e = newOutput.toByteString();
+                        this.f33276e = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -1688,16 +1688,16 @@ public final class ProtoBuf {
                 }
             }
             if (z11 & true) {
-                this.f33057p = Collections.unmodifiableList(this.f33057p);
+                this.f33279p = Collections.unmodifiableList(this.f33279p);
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33054e = newOutput.toByteString();
+                this.f33276e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33054e = newOutput.toByteString();
+            this.f33276e = newOutput.toByteString();
             e();
         }
     }
@@ -1734,43 +1734,43 @@ public final class ProtoBuf {
         private int V;
 
         /* renamed from: i  reason: collision with root package name */
-        private final ByteString f33102i;
+        private final ByteString f33324i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33103o;
+        private int f33325o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33104p;
+        private int f33326p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f33105q;
+        private int f33327q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f33106r;
+        private int f33328r;
 
         /* renamed from: s  reason: collision with root package name */
-        private List f33107s;
+        private List f33329s;
 
         /* renamed from: t  reason: collision with root package name */
-        private List f33108t;
+        private List f33330t;
 
         /* renamed from: u  reason: collision with root package name */
-        private List f33109u;
+        private List f33331u;
 
         /* renamed from: v  reason: collision with root package name */
-        private int f33110v;
+        private int f33332v;
 
         /* renamed from: w  reason: collision with root package name */
-        private List f33111w;
+        private List f33333w;
 
         /* renamed from: x  reason: collision with root package name */
-        private int f33112x;
+        private int f33334x;
 
         /* renamed from: y  reason: collision with root package name */
-        private List f33113y;
+        private List f33335y;
 
         /* renamed from: z  reason: collision with root package name */
-        private List f33114z;
+        private List f33336z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.ExtendableBuilder<Class, Builder> implements ClassOrBuilder {
@@ -1790,51 +1790,51 @@ public final class ProtoBuf {
             private List N;
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33115o;
+            private int f33337o;
 
             /* renamed from: p  reason: collision with root package name */
-            private int f33116p = 6;
+            private int f33338p = 6;
 
             /* renamed from: q  reason: collision with root package name */
-            private int f33117q;
+            private int f33339q;
 
             /* renamed from: r  reason: collision with root package name */
-            private int f33118r;
+            private int f33340r;
 
             /* renamed from: s  reason: collision with root package name */
-            private List f33119s;
+            private List f33341s;
 
             /* renamed from: t  reason: collision with root package name */
-            private List f33120t;
+            private List f33342t;
 
             /* renamed from: u  reason: collision with root package name */
-            private List f33121u;
+            private List f33343u;
 
             /* renamed from: v  reason: collision with root package name */
-            private List f33122v;
+            private List f33344v;
 
             /* renamed from: w  reason: collision with root package name */
-            private List f33123w;
+            private List f33345w;
 
             /* renamed from: x  reason: collision with root package name */
-            private List f33124x;
+            private List f33346x;
 
             /* renamed from: y  reason: collision with root package name */
-            private List f33125y;
+            private List f33347y;
 
             /* renamed from: z  reason: collision with root package name */
-            private List f33126z;
+            private List f33348z;
 
             private Builder() {
                 List list = Collections.EMPTY_LIST;
-                this.f33119s = list;
-                this.f33120t = list;
-                this.f33121u = list;
-                this.f33122v = list;
-                this.f33123w = list;
-                this.f33124x = list;
-                this.f33125y = list;
-                this.f33126z = list;
+                this.f33341s = list;
+                this.f33342t = list;
+                this.f33343u = list;
+                this.f33344v = list;
+                this.f33345w = list;
+                this.f33346x = list;
+                this.f33347y = list;
+                this.f33348z = list;
                 this.A = list;
                 this.B = list;
                 this.C = list;
@@ -1851,209 +1851,209 @@ public final class ProtoBuf {
             }
 
             private void A() {
-                if ((this.f33115o & 8) != 8) {
-                    this.f33119s = new ArrayList(this.f33119s);
-                    this.f33115o |= 8;
+                if ((this.f33337o & 8) != 8) {
+                    this.f33341s = new ArrayList(this.f33341s);
+                    this.f33337o |= 8;
                 }
             }
 
             private void B() {
-                if ((this.f33115o & 4194304) != 4194304) {
+                if ((this.f33337o & 4194304) != 4194304) {
                     this.L = new ArrayList(this.L);
-                    this.f33115o |= 4194304;
+                    this.f33337o |= 4194304;
                 }
             }
 
             private void D() {
             }
 
-            static /* synthetic */ Builder h() {
-                return i();
+            static /* synthetic */ Builder g() {
+                return h();
             }
 
-            private static Builder i() {
+            private static Builder h() {
                 return new Builder();
             }
 
             private void j() {
-                if ((this.f33115o & PointerEventHelper.X_FLAG_SUPPORTS_HOVER) != 16777216) {
+                if ((this.f33337o & PointerEventHelper.X_FLAG_SUPPORTS_HOVER) != 16777216) {
                     this.N = new ArrayList(this.N);
-                    this.f33115o |= PointerEventHelper.X_FLAG_SUPPORTS_HOVER;
+                    this.f33337o |= PointerEventHelper.X_FLAG_SUPPORTS_HOVER;
                 }
             }
 
             private void k() {
-                if ((this.f33115o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 512) {
-                    this.f33125y = new ArrayList(this.f33125y);
-                    this.f33115o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
+                if ((this.f33337o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 512) {
+                    this.f33347y = new ArrayList(this.f33347y);
+                    this.f33337o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                 }
             }
 
             private void l() {
-                if ((this.f33115o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 256) {
-                    this.f33124x = new ArrayList(this.f33124x);
-                    this.f33115o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
+                if ((this.f33337o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 256) {
+                    this.f33346x = new ArrayList(this.f33346x);
+                    this.f33337o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                 }
             }
 
             private void m() {
-                if ((this.f33115o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 128) {
-                    this.f33123w = new ArrayList(this.f33123w);
-                    this.f33115o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                if ((this.f33337o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 128) {
+                    this.f33345w = new ArrayList(this.f33345w);
+                    this.f33337o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 }
             }
 
             private void n() {
-                if ((this.f33115o & 8192) != 8192) {
+                if ((this.f33337o & 8192) != 8192) {
                     this.C = new ArrayList(this.C);
-                    this.f33115o |= 8192;
+                    this.f33337o |= 8192;
                 }
             }
 
             private void o() {
-                if ((this.f33115o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 1024) {
-                    this.f33126z = new ArrayList(this.f33126z);
-                    this.f33115o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
+                if ((this.f33337o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 1024) {
+                    this.f33348z = new ArrayList(this.f33348z);
+                    this.f33337o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                 }
             }
 
             private void q() {
-                if ((this.f33115o & 262144) != 262144) {
+                if ((this.f33337o & 262144) != 262144) {
                     this.H = new ArrayList(this.H);
-                    this.f33115o |= 262144;
+                    this.f33337o |= 262144;
                 }
             }
 
             private void r() {
-                if ((this.f33115o & 1048576) != 1048576) {
+                if ((this.f33337o & 1048576) != 1048576) {
                     this.J = new ArrayList(this.J);
-                    this.f33115o |= 1048576;
+                    this.f33337o |= 1048576;
                 }
             }
 
             private void t() {
-                if ((this.f33115o & 524288) != 524288) {
+                if ((this.f33337o & 524288) != 524288) {
                     this.I = new ArrayList(this.I);
-                    this.f33115o |= 524288;
+                    this.f33337o |= 524288;
                 }
             }
 
             private void u() {
-                if ((this.f33115o & 64) != 64) {
-                    this.f33122v = new ArrayList(this.f33122v);
-                    this.f33115o |= 64;
+                if ((this.f33337o & 64) != 64) {
+                    this.f33344v = new ArrayList(this.f33344v);
+                    this.f33337o |= 64;
                 }
             }
 
             private void v() {
-                if ((this.f33115o & RecyclerView.ItemAnimator.FLAG_MOVED) != 2048) {
+                if ((this.f33337o & RecyclerView.ItemAnimator.FLAG_MOVED) != 2048) {
                     this.A = new ArrayList(this.A);
-                    this.f33115o |= RecyclerView.ItemAnimator.FLAG_MOVED;
+                    this.f33337o |= RecyclerView.ItemAnimator.FLAG_MOVED;
                 }
             }
 
             private void w() {
-                if ((this.f33115o & 16384) != 16384) {
+                if ((this.f33337o & 16384) != 16384) {
                     this.D = new ArrayList(this.D);
-                    this.f33115o |= 16384;
+                    this.f33337o |= 16384;
                 }
             }
 
             private void x() {
-                if ((this.f33115o & 32) != 32) {
-                    this.f33121u = new ArrayList(this.f33121u);
-                    this.f33115o |= 32;
+                if ((this.f33337o & 32) != 32) {
+                    this.f33343u = new ArrayList(this.f33343u);
+                    this.f33337o |= 32;
                 }
             }
 
             private void y() {
-                if ((this.f33115o & 16) != 16) {
-                    this.f33120t = new ArrayList(this.f33120t);
-                    this.f33115o |= 16;
+                if ((this.f33337o & 16) != 16) {
+                    this.f33342t = new ArrayList(this.f33342t);
+                    this.f33337o |= 16;
                 }
             }
 
             private void z() {
-                if ((this.f33115o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 4096) {
+                if ((this.f33337o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 4096) {
                     this.B = new ArrayList(this.B);
-                    this.f33115o |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
+                    this.f33337o |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                 }
             }
 
             public Class buildPartial() {
                 Class r02 = new Class(this);
-                int i10 = this.f33115o;
+                int i10 = this.f33337o;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                r02.f33104p = this.f33116p;
+                r02.f33326p = this.f33338p;
                 if ((i10 & 2) == 2) {
                     i11 |= 2;
                 }
-                r02.f33105q = this.f33117q;
+                r02.f33327q = this.f33339q;
                 if ((i10 & 4) == 4) {
                     i11 |= 4;
                 }
-                r02.f33106r = this.f33118r;
-                if ((this.f33115o & 8) == 8) {
-                    this.f33119s = Collections.unmodifiableList(this.f33119s);
-                    this.f33115o &= -9;
+                r02.f33328r = this.f33340r;
+                if ((this.f33337o & 8) == 8) {
+                    this.f33341s = Collections.unmodifiableList(this.f33341s);
+                    this.f33337o &= -9;
                 }
-                r02.f33107s = this.f33119s;
-                if ((this.f33115o & 16) == 16) {
-                    this.f33120t = Collections.unmodifiableList(this.f33120t);
-                    this.f33115o &= -17;
+                r02.f33329s = this.f33341s;
+                if ((this.f33337o & 16) == 16) {
+                    this.f33342t = Collections.unmodifiableList(this.f33342t);
+                    this.f33337o &= -17;
                 }
-                r02.f33108t = this.f33120t;
-                if ((this.f33115o & 32) == 32) {
-                    this.f33121u = Collections.unmodifiableList(this.f33121u);
-                    this.f33115o &= -33;
+                r02.f33330t = this.f33342t;
+                if ((this.f33337o & 32) == 32) {
+                    this.f33343u = Collections.unmodifiableList(this.f33343u);
+                    this.f33337o &= -33;
                 }
-                r02.f33109u = this.f33121u;
-                if ((this.f33115o & 64) == 64) {
-                    this.f33122v = Collections.unmodifiableList(this.f33122v);
-                    this.f33115o &= -65;
+                r02.f33331u = this.f33343u;
+                if ((this.f33337o & 64) == 64) {
+                    this.f33344v = Collections.unmodifiableList(this.f33344v);
+                    this.f33337o &= -65;
                 }
-                r02.f33111w = this.f33122v;
-                if ((this.f33115o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
-                    this.f33123w = Collections.unmodifiableList(this.f33123w);
-                    this.f33115o &= -129;
+                r02.f33333w = this.f33344v;
+                if ((this.f33337o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+                    this.f33345w = Collections.unmodifiableList(this.f33345w);
+                    this.f33337o &= -129;
                 }
-                r02.f33113y = this.f33123w;
-                if ((this.f33115o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
-                    this.f33124x = Collections.unmodifiableList(this.f33124x);
-                    this.f33115o &= -257;
+                r02.f33335y = this.f33345w;
+                if ((this.f33337o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+                    this.f33346x = Collections.unmodifiableList(this.f33346x);
+                    this.f33337o &= -257;
                 }
-                r02.f33114z = this.f33124x;
-                if ((this.f33115o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
-                    this.f33125y = Collections.unmodifiableList(this.f33125y);
-                    this.f33115o &= -513;
+                r02.f33336z = this.f33346x;
+                if ((this.f33337o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+                    this.f33347y = Collections.unmodifiableList(this.f33347y);
+                    this.f33337o &= -513;
                 }
-                r02.B = this.f33125y;
-                if ((this.f33115o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
-                    this.f33126z = Collections.unmodifiableList(this.f33126z);
-                    this.f33115o &= -1025;
+                r02.B = this.f33347y;
+                if ((this.f33337o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
+                    this.f33348z = Collections.unmodifiableList(this.f33348z);
+                    this.f33337o &= -1025;
                 }
-                r02.C = this.f33126z;
-                if ((this.f33115o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
+                r02.C = this.f33348z;
+                if ((this.f33337o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
                     this.A = Collections.unmodifiableList(this.A);
-                    this.f33115o &= -2049;
+                    this.f33337o &= -2049;
                 }
                 r02.D = this.A;
-                if ((this.f33115o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) == 4096) {
+                if ((this.f33337o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) == 4096) {
                     this.B = Collections.unmodifiableList(this.B);
-                    this.f33115o &= -4097;
+                    this.f33337o &= -4097;
                 }
                 r02.E = this.B;
-                if ((this.f33115o & 8192) == 8192) {
+                if ((this.f33337o & 8192) == 8192) {
                     this.C = Collections.unmodifiableList(this.C);
-                    this.f33115o &= -8193;
+                    this.f33337o &= -8193;
                 }
                 r02.F = this.C;
-                if ((this.f33115o & 16384) == 16384) {
+                if ((this.f33337o & 16384) == 16384) {
                     this.D = Collections.unmodifiableList(this.D);
-                    this.f33115o &= -16385;
+                    this.f33337o &= -16385;
                 }
                 r02.G = this.D;
                 if ((i10 & PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS) == 32768) {
@@ -2068,40 +2068,40 @@ public final class ProtoBuf {
                     i11 |= 32;
                 }
                 r02.K = this.G;
-                if ((this.f33115o & 262144) == 262144) {
+                if ((this.f33337o & 262144) == 262144) {
                     this.H = Collections.unmodifiableList(this.H);
-                    this.f33115o &= -262145;
+                    this.f33337o &= -262145;
                 }
                 r02.L = this.H;
-                if ((this.f33115o & 524288) == 524288) {
+                if ((this.f33337o & 524288) == 524288) {
                     this.I = Collections.unmodifiableList(this.I);
-                    this.f33115o &= -524289;
+                    this.f33337o &= -524289;
                 }
                 r02.N = this.I;
-                if ((this.f33115o & 1048576) == 1048576) {
+                if ((this.f33337o & 1048576) == 1048576) {
                     this.J = Collections.unmodifiableList(this.J);
-                    this.f33115o &= -1048577;
+                    this.f33337o &= -1048577;
                 }
                 r02.O = this.J;
                 if ((i10 & 2097152) == 2097152) {
                     i11 |= 64;
                 }
                 r02.Q = this.K;
-                if ((this.f33115o & 4194304) == 4194304) {
+                if ((this.f33337o & 4194304) == 4194304) {
                     this.L = Collections.unmodifiableList(this.L);
-                    this.f33115o &= -4194305;
+                    this.f33337o &= -4194305;
                 }
                 r02.R = this.L;
                 if ((i10 & 8388608) == 8388608) {
                     i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 }
                 r02.S = this.M;
-                if ((this.f33115o & PointerEventHelper.X_FLAG_SUPPORTS_HOVER) == 16777216) {
+                if ((this.f33337o & PointerEventHelper.X_FLAG_SUPPORTS_HOVER) == 16777216) {
                     this.N = Collections.unmodifiableList(this.N);
-                    this.f33115o &= -16777217;
+                    this.f33337o &= -16777217;
                 }
                 r02.T = this.N;
-                r02.f33103o = i11;
+                r02.f33325o = i11;
                 return r02;
             }
 
@@ -2114,19 +2114,19 @@ public final class ProtoBuf {
             }
 
             public Constructor getConstructor(int i10) {
-                return (Constructor) this.f33125y.get(i10);
+                return (Constructor) this.f33347y.get(i10);
             }
 
             public int getConstructorCount() {
-                return this.f33125y.size();
+                return this.f33347y.size();
             }
 
             public Type getContextReceiverType(int i10) {
-                return (Type) this.f33123w.get(i10);
+                return (Type) this.f33345w.get(i10);
             }
 
             public int getContextReceiverTypeCount() {
-                return this.f33123w.size();
+                return this.f33345w.size();
             }
 
             public EnumEntry getEnumEntry(int i10) {
@@ -2138,11 +2138,11 @@ public final class ProtoBuf {
             }
 
             public Function getFunction(int i10) {
-                return (Function) this.f33126z.get(i10);
+                return (Function) this.f33348z.get(i10);
             }
 
             public int getFunctionCount() {
-                return this.f33126z.size();
+                return this.f33348z.size();
             }
 
             public Type getInlineClassUnderlyingType() {
@@ -2166,11 +2166,11 @@ public final class ProtoBuf {
             }
 
             public Type getSupertype(int i10) {
-                return (Type) this.f33120t.get(i10);
+                return (Type) this.f33342t.get(i10);
             }
 
             public int getSupertypeCount() {
-                return this.f33120t.size();
+                return this.f33342t.size();
             }
 
             public TypeAlias getTypeAlias(int i10) {
@@ -2182,11 +2182,11 @@ public final class ProtoBuf {
             }
 
             public TypeParameter getTypeParameter(int i10) {
-                return (TypeParameter) this.f33119s.get(i10);
+                return (TypeParameter) this.f33341s.get(i10);
             }
 
             public int getTypeParameterCount() {
-                return this.f33119s.size();
+                return this.f33341s.size();
             }
 
             public TypeTable getTypeTable() {
@@ -2194,21 +2194,21 @@ public final class ProtoBuf {
             }
 
             public boolean hasFqName() {
-                if ((this.f33115o & 2) == 2) {
+                if ((this.f33337o & 2) == 2) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasInlineClassUnderlyingType() {
-                if ((this.f33115o & 65536) == 65536) {
+                if ((this.f33337o & 65536) == 65536) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasTypeTable() {
-                if ((this.f33115o & 2097152) == 2097152) {
+                if ((this.f33337o & 2097152) == 2097152) {
                     return true;
                 }
                 return false;
@@ -2282,61 +2282,61 @@ public final class ProtoBuf {
             }
 
             public Builder mergeInlineClassUnderlyingType(Type type) {
-                if ((this.f33115o & 65536) == 65536 && this.F != Type.getDefaultInstance()) {
+                if ((this.f33337o & 65536) == 65536 && this.F != Type.getDefaultInstance()) {
                     this.F = Type.newBuilder(this.F).mergeFrom(type).buildPartial();
                 } else {
                     this.F = type;
                 }
-                this.f33115o |= 65536;
+                this.f33337o |= 65536;
                 return this;
             }
 
             public Builder mergeTypeTable(TypeTable typeTable) {
-                if ((this.f33115o & 2097152) == 2097152 && this.K != TypeTable.getDefaultInstance()) {
+                if ((this.f33337o & 2097152) == 2097152 && this.K != TypeTable.getDefaultInstance()) {
                     this.K = TypeTable.newBuilder(this.K).mergeFrom(typeTable).buildPartial();
                 } else {
                     this.K = typeTable;
                 }
-                this.f33115o |= 2097152;
+                this.f33337o |= 2097152;
                 return this;
             }
 
             public Builder mergeVersionRequirementTable(VersionRequirementTable versionRequirementTable) {
-                if ((this.f33115o & 8388608) == 8388608 && this.M != VersionRequirementTable.getDefaultInstance()) {
+                if ((this.f33337o & 8388608) == 8388608 && this.M != VersionRequirementTable.getDefaultInstance()) {
                     this.M = VersionRequirementTable.newBuilder(this.M).mergeFrom(versionRequirementTable).buildPartial();
                 } else {
                     this.M = versionRequirementTable;
                 }
-                this.f33115o |= 8388608;
+                this.f33337o |= 8388608;
                 return this;
             }
 
             public Builder setCompanionObjectName(int i10) {
-                this.f33115o |= 4;
-                this.f33118r = i10;
+                this.f33337o |= 4;
+                this.f33340r = i10;
                 return this;
             }
 
             public Builder setFlags(int i10) {
-                this.f33115o |= 1;
-                this.f33116p = i10;
+                this.f33337o |= 1;
+                this.f33338p = i10;
                 return this;
             }
 
             public Builder setFqName(int i10) {
-                this.f33115o |= 2;
-                this.f33117q = i10;
+                this.f33337o |= 2;
+                this.f33339q = i10;
                 return this;
             }
 
             public Builder setInlineClassUnderlyingPropertyName(int i10) {
-                this.f33115o |= PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
+                this.f33337o |= PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
                 this.E = i10;
                 return this;
             }
 
             public Builder setInlineClassUnderlyingTypeId(int i10) {
-                this.f33115o |= 131072;
+                this.f33337o |= 131072;
                 this.G = i10;
                 return this;
             }
@@ -2369,82 +2369,82 @@ public final class ProtoBuf {
                 if (r32.hasCompanionObjectName()) {
                     setCompanionObjectName(r32.getCompanionObjectName());
                 }
-                if (!r32.f33107s.isEmpty()) {
-                    if (this.f33119s.isEmpty()) {
-                        this.f33119s = r32.f33107s;
-                        this.f33115o &= -9;
+                if (!r32.f33329s.isEmpty()) {
+                    if (this.f33341s.isEmpty()) {
+                        this.f33341s = r32.f33329s;
+                        this.f33337o &= -9;
                     } else {
                         A();
-                        this.f33119s.addAll(r32.f33107s);
+                        this.f33341s.addAll(r32.f33329s);
                     }
                 }
-                if (!r32.f33108t.isEmpty()) {
-                    if (this.f33120t.isEmpty()) {
-                        this.f33120t = r32.f33108t;
-                        this.f33115o &= -17;
+                if (!r32.f33330t.isEmpty()) {
+                    if (this.f33342t.isEmpty()) {
+                        this.f33342t = r32.f33330t;
+                        this.f33337o &= -17;
                     } else {
                         y();
-                        this.f33120t.addAll(r32.f33108t);
+                        this.f33342t.addAll(r32.f33330t);
                     }
                 }
-                if (!r32.f33109u.isEmpty()) {
-                    if (this.f33121u.isEmpty()) {
-                        this.f33121u = r32.f33109u;
-                        this.f33115o &= -33;
+                if (!r32.f33331u.isEmpty()) {
+                    if (this.f33343u.isEmpty()) {
+                        this.f33343u = r32.f33331u;
+                        this.f33337o &= -33;
                     } else {
                         x();
-                        this.f33121u.addAll(r32.f33109u);
+                        this.f33343u.addAll(r32.f33331u);
                     }
                 }
-                if (!r32.f33111w.isEmpty()) {
-                    if (this.f33122v.isEmpty()) {
-                        this.f33122v = r32.f33111w;
-                        this.f33115o &= -65;
+                if (!r32.f33333w.isEmpty()) {
+                    if (this.f33344v.isEmpty()) {
+                        this.f33344v = r32.f33333w;
+                        this.f33337o &= -65;
                     } else {
                         u();
-                        this.f33122v.addAll(r32.f33111w);
+                        this.f33344v.addAll(r32.f33333w);
                     }
                 }
-                if (!r32.f33113y.isEmpty()) {
-                    if (this.f33123w.isEmpty()) {
-                        this.f33123w = r32.f33113y;
-                        this.f33115o &= -129;
+                if (!r32.f33335y.isEmpty()) {
+                    if (this.f33345w.isEmpty()) {
+                        this.f33345w = r32.f33335y;
+                        this.f33337o &= -129;
                     } else {
                         m();
-                        this.f33123w.addAll(r32.f33113y);
+                        this.f33345w.addAll(r32.f33335y);
                     }
                 }
-                if (!r32.f33114z.isEmpty()) {
-                    if (this.f33124x.isEmpty()) {
-                        this.f33124x = r32.f33114z;
-                        this.f33115o &= -257;
+                if (!r32.f33336z.isEmpty()) {
+                    if (this.f33346x.isEmpty()) {
+                        this.f33346x = r32.f33336z;
+                        this.f33337o &= -257;
                     } else {
                         l();
-                        this.f33124x.addAll(r32.f33114z);
+                        this.f33346x.addAll(r32.f33336z);
                     }
                 }
                 if (!r32.B.isEmpty()) {
-                    if (this.f33125y.isEmpty()) {
-                        this.f33125y = r32.B;
-                        this.f33115o &= -513;
+                    if (this.f33347y.isEmpty()) {
+                        this.f33347y = r32.B;
+                        this.f33337o &= -513;
                     } else {
                         k();
-                        this.f33125y.addAll(r32.B);
+                        this.f33347y.addAll(r32.B);
                     }
                 }
                 if (!r32.C.isEmpty()) {
-                    if (this.f33126z.isEmpty()) {
-                        this.f33126z = r32.C;
-                        this.f33115o &= -1025;
+                    if (this.f33348z.isEmpty()) {
+                        this.f33348z = r32.C;
+                        this.f33337o &= -1025;
                     } else {
                         o();
-                        this.f33126z.addAll(r32.C);
+                        this.f33348z.addAll(r32.C);
                     }
                 }
                 if (!r32.D.isEmpty()) {
                     if (this.A.isEmpty()) {
                         this.A = r32.D;
-                        this.f33115o &= -2049;
+                        this.f33337o &= -2049;
                     } else {
                         v();
                         this.A.addAll(r32.D);
@@ -2453,7 +2453,7 @@ public final class ProtoBuf {
                 if (!r32.E.isEmpty()) {
                     if (this.B.isEmpty()) {
                         this.B = r32.E;
-                        this.f33115o &= -4097;
+                        this.f33337o &= -4097;
                     } else {
                         z();
                         this.B.addAll(r32.E);
@@ -2462,7 +2462,7 @@ public final class ProtoBuf {
                 if (!r32.F.isEmpty()) {
                     if (this.C.isEmpty()) {
                         this.C = r32.F;
-                        this.f33115o &= -8193;
+                        this.f33337o &= -8193;
                     } else {
                         n();
                         this.C.addAll(r32.F);
@@ -2471,7 +2471,7 @@ public final class ProtoBuf {
                 if (!r32.G.isEmpty()) {
                     if (this.D.isEmpty()) {
                         this.D = r32.G;
-                        this.f33115o &= -16385;
+                        this.f33337o &= -16385;
                     } else {
                         w();
                         this.D.addAll(r32.G);
@@ -2489,7 +2489,7 @@ public final class ProtoBuf {
                 if (!r32.L.isEmpty()) {
                     if (this.H.isEmpty()) {
                         this.H = r32.L;
-                        this.f33115o &= -262145;
+                        this.f33337o &= -262145;
                     } else {
                         q();
                         this.H.addAll(r32.L);
@@ -2498,7 +2498,7 @@ public final class ProtoBuf {
                 if (!r32.N.isEmpty()) {
                     if (this.I.isEmpty()) {
                         this.I = r32.N;
-                        this.f33115o &= -524289;
+                        this.f33337o &= -524289;
                     } else {
                         t();
                         this.I.addAll(r32.N);
@@ -2507,7 +2507,7 @@ public final class ProtoBuf {
                 if (!r32.O.isEmpty()) {
                     if (this.J.isEmpty()) {
                         this.J = r32.O;
-                        this.f33115o &= -1048577;
+                        this.f33337o &= -1048577;
                     } else {
                         r();
                         this.J.addAll(r32.O);
@@ -2519,7 +2519,7 @@ public final class ProtoBuf {
                 if (!r32.R.isEmpty()) {
                     if (this.L.isEmpty()) {
                         this.L = r32.R;
-                        this.f33115o &= -4194305;
+                        this.f33337o &= -4194305;
                     } else {
                         B();
                         this.L.addAll(r32.R);
@@ -2531,20 +2531,20 @@ public final class ProtoBuf {
                 if (!r32.T.isEmpty()) {
                     if (this.N.isEmpty()) {
                         this.N = r32.T;
-                        this.f33115o &= -16777217;
+                        this.f33337o &= -16777217;
                     } else {
                         j();
                         this.N.addAll(r32.T);
                     }
                 }
                 f(r32);
-                setUnknownFields(getUnknownFields().concat(r32.f33102i));
+                setUnknownFields(getUnknownFields().concat(r32.f33324i));
                 return this;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.ExtendableBuilder, kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.Builder, kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite.Builder
             public Builder clone() {
-                return i().mergeFrom(buildPartial());
+                return h().mergeFrom(buildPartial());
             }
 
             /* JADX WARN: Removed duplicated region for block: B:15:0x001d  */
@@ -2597,10 +2597,10 @@ public final class ProtoBuf {
             
 
             /* renamed from: e  reason: collision with root package name */
-            private static Internal.EnumLiteMap f33127e = new a();
+            private static Internal.EnumLiteMap f33349e = new a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final int f33129d;
+            private final int f33351d;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
             static class a implements Internal.EnumLiteMap {
@@ -2615,12 +2615,12 @@ public final class ProtoBuf {
             }
 
             Kind(int i10, int i11) {
-                this.f33129d = i11;
+                this.f33351d = i11;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
             public final int getNumber() {
-                return this.f33129d;
+                return this.f33351d;
             }
 
             public static Kind valueOf(int i10) {
@@ -2664,16 +2664,16 @@ public final class ProtoBuf {
         }
 
         private void e0() {
-            this.f33104p = 6;
-            this.f33105q = 0;
-            this.f33106r = 0;
+            this.f33326p = 6;
+            this.f33327q = 0;
+            this.f33328r = 0;
             List list = Collections.EMPTY_LIST;
-            this.f33107s = list;
-            this.f33108t = list;
-            this.f33109u = list;
-            this.f33111w = list;
-            this.f33113y = list;
-            this.f33114z = list;
+            this.f33329s = list;
+            this.f33330t = list;
+            this.f33331u = list;
+            this.f33333w = list;
+            this.f33335y = list;
+            this.f33336z = list;
             this.B = list;
             this.C = list;
             this.D = list;
@@ -2697,7 +2697,7 @@ public final class ProtoBuf {
         }
 
         public static Builder newBuilder() {
-            return Builder.h();
+            return Builder.g();
         }
 
         public static Class parseFrom(InputStream inputStream, ExtensionRegistryLite extensionRegistryLite) {
@@ -2705,7 +2705,7 @@ public final class ProtoBuf {
         }
 
         public int getCompanionObjectName() {
-            return this.f33106r;
+            return this.f33328r;
         }
 
         public CompilerPluginData getCompilerPluginData(int i10) {
@@ -2729,19 +2729,19 @@ public final class ProtoBuf {
         }
 
         public Type getContextReceiverType(int i10) {
-            return (Type) this.f33113y.get(i10);
+            return (Type) this.f33335y.get(i10);
         }
 
         public int getContextReceiverTypeCount() {
-            return this.f33113y.size();
+            return this.f33335y.size();
         }
 
         public List<Integer> getContextReceiverTypeIdList() {
-            return this.f33114z;
+            return this.f33336z;
         }
 
         public List<Type> getContextReceiverTypeList() {
-            return this.f33113y;
+            return this.f33335y;
         }
 
         public EnumEntry getEnumEntry(int i10) {
@@ -2757,11 +2757,11 @@ public final class ProtoBuf {
         }
 
         public int getFlags() {
-            return this.f33104p;
+            return this.f33326p;
         }
 
         public int getFqName() {
-            return this.f33105q;
+            return this.f33327q;
         }
 
         public Function getFunction(int i10) {
@@ -2817,7 +2817,7 @@ public final class ProtoBuf {
         }
 
         public List<Integer> getNestedClassNameList() {
-            return this.f33111w;
+            return this.f33333w;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -2848,41 +2848,41 @@ public final class ProtoBuf {
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33103o & 1) == 1) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33104p);
+            if ((this.f33325o & 1) == 1) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33326p);
             } else {
                 i10 = 0;
             }
             int i12 = 0;
-            for (int i13 = 0; i13 < this.f33109u.size(); i13++) {
-                i12 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33109u.get(i13)).intValue());
+            for (int i13 = 0; i13 < this.f33331u.size(); i13++) {
+                i12 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33331u.get(i13)).intValue());
             }
             int i14 = i10 + i12;
             if (!getSupertypeIdList().isEmpty()) {
                 i14 = i14 + 1 + CodedOutputStream.computeInt32SizeNoTag(i12);
             }
-            this.f33110v = i12;
-            if ((this.f33103o & 2) == 2) {
-                i14 += CodedOutputStream.computeInt32Size(3, this.f33105q);
+            this.f33332v = i12;
+            if ((this.f33325o & 2) == 2) {
+                i14 += CodedOutputStream.computeInt32Size(3, this.f33327q);
             }
-            if ((this.f33103o & 4) == 4) {
-                i14 += CodedOutputStream.computeInt32Size(4, this.f33106r);
+            if ((this.f33325o & 4) == 4) {
+                i14 += CodedOutputStream.computeInt32Size(4, this.f33328r);
             }
-            for (int i15 = 0; i15 < this.f33107s.size(); i15++) {
-                i14 += CodedOutputStream.computeMessageSize(5, (MessageLite) this.f33107s.get(i15));
+            for (int i15 = 0; i15 < this.f33329s.size(); i15++) {
+                i14 += CodedOutputStream.computeMessageSize(5, (MessageLite) this.f33329s.get(i15));
             }
-            for (int i16 = 0; i16 < this.f33108t.size(); i16++) {
-                i14 += CodedOutputStream.computeMessageSize(6, (MessageLite) this.f33108t.get(i16));
+            for (int i16 = 0; i16 < this.f33330t.size(); i16++) {
+                i14 += CodedOutputStream.computeMessageSize(6, (MessageLite) this.f33330t.get(i16));
             }
             int i17 = 0;
-            for (int i18 = 0; i18 < this.f33111w.size(); i18++) {
-                i17 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33111w.get(i18)).intValue());
+            for (int i18 = 0; i18 < this.f33333w.size(); i18++) {
+                i17 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33333w.get(i18)).intValue());
             }
             int i19 = i14 + i17;
             if (!getNestedClassNameList().isEmpty()) {
                 i19 = i19 + 1 + CodedOutputStream.computeInt32SizeNoTag(i17);
             }
-            this.f33112x = i17;
+            this.f33334x = i17;
             for (int i20 = 0; i20 < this.B.size(); i20++) {
                 i19 += CodedOutputStream.computeMessageSize(8, (MessageLite) this.B.get(i20));
             }
@@ -2907,21 +2907,21 @@ public final class ProtoBuf {
                 i27 = i27 + 2 + CodedOutputStream.computeInt32SizeNoTag(i25);
             }
             this.H = i25;
-            if ((this.f33103o & 8) == 8) {
+            if ((this.f33325o & 8) == 8) {
                 i27 += CodedOutputStream.computeInt32Size(17, this.I);
             }
-            if ((this.f33103o & 16) == 16) {
+            if ((this.f33325o & 16) == 16) {
                 i27 += CodedOutputStream.computeMessageSize(18, this.J);
             }
-            if ((this.f33103o & 32) == 32) {
+            if ((this.f33325o & 32) == 32) {
                 i27 += CodedOutputStream.computeInt32Size(19, this.K);
             }
-            for (int i28 = 0; i28 < this.f33113y.size(); i28++) {
-                i27 += CodedOutputStream.computeMessageSize(20, (MessageLite) this.f33113y.get(i28));
+            for (int i28 = 0; i28 < this.f33335y.size(); i28++) {
+                i27 += CodedOutputStream.computeMessageSize(20, (MessageLite) this.f33335y.get(i28));
             }
             int i29 = 0;
-            for (int i30 = 0; i30 < this.f33114z.size(); i30++) {
-                i29 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33114z.get(i30)).intValue());
+            for (int i30 = 0; i30 < this.f33336z.size(); i30++) {
+                i29 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33336z.get(i30)).intValue());
             }
             int i31 = i27 + i29;
             if (!getContextReceiverTypeIdList().isEmpty()) {
@@ -2949,7 +2949,7 @@ public final class ProtoBuf {
                 i38 = i38 + 2 + CodedOutputStream.computeInt32SizeNoTag(i36);
             }
             this.P = i36;
-            if ((this.f33103o & 64) == 64) {
+            if ((this.f33325o & 64) == 64) {
                 i38 += CodedOutputStream.computeMessageSize(30, this.Q);
             }
             int i39 = 0;
@@ -2957,31 +2957,31 @@ public final class ProtoBuf {
                 i39 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.R.get(i40)).intValue());
             }
             int size = i38 + i39 + (getVersionRequirementList().size() * 2);
-            if ((this.f33103o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+            if ((this.f33325o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                 size += CodedOutputStream.computeMessageSize(32, this.S);
             }
             for (int i41 = 0; i41 < this.T.size(); i41++) {
                 size += CodedOutputStream.computeMessageSize(33, (MessageLite) this.T.get(i41));
             }
-            int j10 = size + j() + this.f33102i.size();
+            int j10 = size + j() + this.f33324i.size();
             this.V = j10;
             return j10;
         }
 
         public Type getSupertype(int i10) {
-            return (Type) this.f33108t.get(i10);
+            return (Type) this.f33330t.get(i10);
         }
 
         public int getSupertypeCount() {
-            return this.f33108t.size();
+            return this.f33330t.size();
         }
 
         public List<Integer> getSupertypeIdList() {
-            return this.f33109u;
+            return this.f33331u;
         }
 
         public List<Type> getSupertypeList() {
-            return this.f33108t;
+            return this.f33330t;
         }
 
         public TypeAlias getTypeAlias(int i10) {
@@ -2997,15 +2997,15 @@ public final class ProtoBuf {
         }
 
         public TypeParameter getTypeParameter(int i10) {
-            return (TypeParameter) this.f33107s.get(i10);
+            return (TypeParameter) this.f33329s.get(i10);
         }
 
         public int getTypeParameterCount() {
-            return this.f33107s.size();
+            return this.f33329s.size();
         }
 
         public List<TypeParameter> getTypeParameterList() {
-            return this.f33107s;
+            return this.f33329s;
         }
 
         public TypeTable getTypeTable() {
@@ -3021,56 +3021,56 @@ public final class ProtoBuf {
         }
 
         public boolean hasCompanionObjectName() {
-            if ((this.f33103o & 4) == 4) {
+            if ((this.f33325o & 4) == 4) {
                 return true;
             }
             return false;
         }
 
         public boolean hasFlags() {
-            if ((this.f33103o & 1) == 1) {
+            if ((this.f33325o & 1) == 1) {
                 return true;
             }
             return false;
         }
 
         public boolean hasFqName() {
-            if ((this.f33103o & 2) == 2) {
+            if ((this.f33325o & 2) == 2) {
                 return true;
             }
             return false;
         }
 
         public boolean hasInlineClassUnderlyingPropertyName() {
-            if ((this.f33103o & 8) == 8) {
+            if ((this.f33325o & 8) == 8) {
                 return true;
             }
             return false;
         }
 
         public boolean hasInlineClassUnderlyingType() {
-            if ((this.f33103o & 16) == 16) {
+            if ((this.f33325o & 16) == 16) {
                 return true;
             }
             return false;
         }
 
         public boolean hasInlineClassUnderlyingTypeId() {
-            if ((this.f33103o & 32) == 32) {
+            if ((this.f33325o & 32) == 32) {
                 return true;
             }
             return false;
         }
 
         public boolean hasTypeTable() {
-            if ((this.f33103o & 64) == 64) {
+            if ((this.f33325o & 64) == 64) {
                 return true;
             }
             return false;
         }
 
         public boolean hasVersionRequirementTable() {
-            if ((this.f33103o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+            if ((this.f33325o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                 return true;
             }
             return false;
@@ -3169,34 +3169,34 @@ public final class ProtoBuf {
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
             GeneratedMessageLite.ExtendableMessage.ExtensionWriter k10 = k();
-            if ((this.f33103o & 1) == 1) {
-                codedOutputStream.writeInt32(1, this.f33104p);
+            if ((this.f33325o & 1) == 1) {
+                codedOutputStream.writeInt32(1, this.f33326p);
             }
             if (getSupertypeIdList().size() > 0) {
                 codedOutputStream.writeRawVarint32(18);
-                codedOutputStream.writeRawVarint32(this.f33110v);
+                codedOutputStream.writeRawVarint32(this.f33332v);
             }
-            for (int i10 = 0; i10 < this.f33109u.size(); i10++) {
-                codedOutputStream.writeInt32NoTag(((Integer) this.f33109u.get(i10)).intValue());
+            for (int i10 = 0; i10 < this.f33331u.size(); i10++) {
+                codedOutputStream.writeInt32NoTag(((Integer) this.f33331u.get(i10)).intValue());
             }
-            if ((this.f33103o & 2) == 2) {
-                codedOutputStream.writeInt32(3, this.f33105q);
+            if ((this.f33325o & 2) == 2) {
+                codedOutputStream.writeInt32(3, this.f33327q);
             }
-            if ((this.f33103o & 4) == 4) {
-                codedOutputStream.writeInt32(4, this.f33106r);
+            if ((this.f33325o & 4) == 4) {
+                codedOutputStream.writeInt32(4, this.f33328r);
             }
-            for (int i11 = 0; i11 < this.f33107s.size(); i11++) {
-                codedOutputStream.writeMessage(5, (MessageLite) this.f33107s.get(i11));
+            for (int i11 = 0; i11 < this.f33329s.size(); i11++) {
+                codedOutputStream.writeMessage(5, (MessageLite) this.f33329s.get(i11));
             }
-            for (int i12 = 0; i12 < this.f33108t.size(); i12++) {
-                codedOutputStream.writeMessage(6, (MessageLite) this.f33108t.get(i12));
+            for (int i12 = 0; i12 < this.f33330t.size(); i12++) {
+                codedOutputStream.writeMessage(6, (MessageLite) this.f33330t.get(i12));
             }
             if (getNestedClassNameList().size() > 0) {
                 codedOutputStream.writeRawVarint32(58);
-                codedOutputStream.writeRawVarint32(this.f33112x);
+                codedOutputStream.writeRawVarint32(this.f33334x);
             }
-            for (int i13 = 0; i13 < this.f33111w.size(); i13++) {
-                codedOutputStream.writeInt32NoTag(((Integer) this.f33111w.get(i13)).intValue());
+            for (int i13 = 0; i13 < this.f33333w.size(); i13++) {
+                codedOutputStream.writeInt32NoTag(((Integer) this.f33333w.get(i13)).intValue());
             }
             for (int i14 = 0; i14 < this.B.size(); i14++) {
                 codedOutputStream.writeMessage(8, (MessageLite) this.B.get(i14));
@@ -3220,24 +3220,24 @@ public final class ProtoBuf {
             for (int i19 = 0; i19 < this.G.size(); i19++) {
                 codedOutputStream.writeInt32NoTag(((Integer) this.G.get(i19)).intValue());
             }
-            if ((this.f33103o & 8) == 8) {
+            if ((this.f33325o & 8) == 8) {
                 codedOutputStream.writeInt32(17, this.I);
             }
-            if ((this.f33103o & 16) == 16) {
+            if ((this.f33325o & 16) == 16) {
                 codedOutputStream.writeMessage(18, this.J);
             }
-            if ((this.f33103o & 32) == 32) {
+            if ((this.f33325o & 32) == 32) {
                 codedOutputStream.writeInt32(19, this.K);
             }
-            for (int i20 = 0; i20 < this.f33113y.size(); i20++) {
-                codedOutputStream.writeMessage(20, (MessageLite) this.f33113y.get(i20));
+            for (int i20 = 0; i20 < this.f33335y.size(); i20++) {
+                codedOutputStream.writeMessage(20, (MessageLite) this.f33335y.get(i20));
             }
             if (getContextReceiverTypeIdList().size() > 0) {
                 codedOutputStream.writeRawVarint32(170);
                 codedOutputStream.writeRawVarint32(this.A);
             }
-            for (int i21 = 0; i21 < this.f33114z.size(); i21++) {
-                codedOutputStream.writeInt32NoTag(((Integer) this.f33114z.get(i21)).intValue());
+            for (int i21 = 0; i21 < this.f33336z.size(); i21++) {
+                codedOutputStream.writeInt32NoTag(((Integer) this.f33336z.get(i21)).intValue());
             }
             if (getMultiFieldValueClassUnderlyingNameList().size() > 0) {
                 codedOutputStream.writeRawVarint32(178);
@@ -3256,20 +3256,20 @@ public final class ProtoBuf {
             for (int i24 = 0; i24 < this.O.size(); i24++) {
                 codedOutputStream.writeInt32NoTag(((Integer) this.O.get(i24)).intValue());
             }
-            if ((this.f33103o & 64) == 64) {
+            if ((this.f33325o & 64) == 64) {
                 codedOutputStream.writeMessage(30, this.Q);
             }
             for (int i25 = 0; i25 < this.R.size(); i25++) {
                 codedOutputStream.writeInt32(31, ((Integer) this.R.get(i25)).intValue());
             }
-            if ((this.f33103o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+            if ((this.f33325o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                 codedOutputStream.writeMessage(32, this.S);
             }
             for (int i26 = 0; i26 < this.T.size(); i26++) {
                 codedOutputStream.writeMessage(33, (MessageLite) this.T.get(i26));
             }
             k10.writeUntil(19000, codedOutputStream);
-            codedOutputStream.writeRawBytes(this.f33102i);
+            codedOutputStream.writeRawBytes(this.f33324i);
         }
 
         public static Builder newBuilder(Class r12) {
@@ -3293,27 +3293,27 @@ public final class ProtoBuf {
 
         private Class(GeneratedMessageLite.ExtendableBuilder extendableBuilder) {
             super(extendableBuilder);
-            this.f33110v = -1;
-            this.f33112x = -1;
+            this.f33332v = -1;
+            this.f33334x = -1;
             this.A = -1;
             this.H = -1;
             this.M = -1;
             this.P = -1;
             this.U = (byte) -1;
             this.V = -1;
-            this.f33102i = extendableBuilder.getUnknownFields();
+            this.f33324i = extendableBuilder.getUnknownFields();
         }
 
         private Class(boolean z10) {
-            this.f33110v = -1;
-            this.f33112x = -1;
+            this.f33332v = -1;
+            this.f33334x = -1;
             this.A = -1;
             this.H = -1;
             this.M = -1;
             this.P = -1;
             this.U = (byte) -1;
             this.V = -1;
-            this.f33102i = ByteString.EMPTY;
+            this.f33324i = ByteString.EMPTY;
         }
 
         /* JADX WARN: Type inference failed for: r4v2 */
@@ -3322,8 +3322,8 @@ public final class ProtoBuf {
         private Class(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
             boolean z10;
             boolean z11;
-            this.f33110v = -1;
-            this.f33112x = -1;
+            this.f33332v = -1;
+            this.f33334x = -1;
             this.A = -1;
             this.H = -1;
             this.M = -1;
@@ -3347,8 +3347,8 @@ public final class ProtoBuf {
                             case 0:
                                 break;
                             case 8:
-                                this.f33103o |= 1;
-                                this.f33104p = codedInputStream.readInt32();
+                                this.f33325o |= 1;
+                                this.f33326p = codedInputStream.readInt32();
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
@@ -3356,10 +3356,10 @@ public final class ProtoBuf {
                                 boolean z16 = (z14 ? 1 : 0) & true;
                                 z14 = z14;
                                 if (!z16) {
-                                    this.f33109u = new ArrayList();
+                                    this.f33331u = new ArrayList();
                                     z14 = (z14 ? 1 : 0) | true;
                                 }
-                                this.f33109u.add(Integer.valueOf(codedInputStream.readInt32()));
+                                this.f33331u.add(Integer.valueOf(codedInputStream.readInt32()));
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
@@ -3370,26 +3370,26 @@ public final class ProtoBuf {
                                 if (!z17) {
                                     z14 = z14;
                                     if (codedInputStream.getBytesUntilLimit() > 0) {
-                                        this.f33109u = new ArrayList();
+                                        this.f33331u = new ArrayList();
                                         z14 = (z14 ? 1 : 0) | true;
                                     }
                                 }
                                 while (codedInputStream.getBytesUntilLimit() > 0) {
-                                    this.f33109u.add(Integer.valueOf(codedInputStream.readInt32()));
+                                    this.f33331u.add(Integer.valueOf(codedInputStream.readInt32()));
                                 }
                                 codedInputStream.popLimit(pushLimit);
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
                             case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
-                                this.f33103o |= 2;
-                                this.f33105q = codedInputStream.readInt32();
+                                this.f33325o |= 2;
+                                this.f33327q = codedInputStream.readInt32();
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
                             case 32:
-                                this.f33103o |= 4;
-                                this.f33106r = codedInputStream.readInt32();
+                                this.f33325o |= 4;
+                                this.f33328r = codedInputStream.readInt32();
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
@@ -3397,10 +3397,10 @@ public final class ProtoBuf {
                                 boolean z18 = (z14 ? 1 : 0) & true;
                                 z14 = z14;
                                 if (!z18) {
-                                    this.f33107s = new ArrayList();
+                                    this.f33329s = new ArrayList();
                                     z14 = (z14 ? 1 : 0) | true;
                                 }
-                                this.f33107s.add(codedInputStream.readMessage(TypeParameter.PARSER, extensionRegistryLite));
+                                this.f33329s.add(codedInputStream.readMessage(TypeParameter.PARSER, extensionRegistryLite));
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
@@ -3408,10 +3408,10 @@ public final class ProtoBuf {
                                 boolean z19 = (z14 ? 1 : 0) & true;
                                 z14 = z14;
                                 if (!z19) {
-                                    this.f33108t = new ArrayList();
+                                    this.f33330t = new ArrayList();
                                     z14 = (z14 ? 1 : 0) | true;
                                 }
-                                this.f33108t.add(codedInputStream.readMessage(Type.PARSER, extensionRegistryLite));
+                                this.f33330t.add(codedInputStream.readMessage(Type.PARSER, extensionRegistryLite));
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
@@ -3419,10 +3419,10 @@ public final class ProtoBuf {
                                 boolean z20 = (z14 ? 1 : 0) & true;
                                 z14 = z14;
                                 if (!z20) {
-                                    this.f33111w = new ArrayList();
+                                    this.f33333w = new ArrayList();
                                     z14 = (z14 ? 1 : 0) | true;
                                 }
-                                this.f33111w.add(Integer.valueOf(codedInputStream.readInt32()));
+                                this.f33333w.add(Integer.valueOf(codedInputStream.readInt32()));
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
@@ -3433,12 +3433,12 @@ public final class ProtoBuf {
                                 if (!z21) {
                                     z14 = z14;
                                     if (codedInputStream.getBytesUntilLimit() > 0) {
-                                        this.f33111w = new ArrayList();
+                                        this.f33333w = new ArrayList();
                                         z14 = (z14 ? 1 : 0) | true;
                                     }
                                 }
                                 while (codedInputStream.getBytesUntilLimit() > 0) {
-                                    this.f33111w.add(Integer.valueOf(codedInputStream.readInt32()));
+                                    this.f33333w.add(Integer.valueOf(codedInputStream.readInt32()));
                                 }
                                 codedInputStream.popLimit(pushLimit2);
                                 continue;
@@ -3529,25 +3529,25 @@ public final class ProtoBuf {
                                 z12 = z15;
                                 z14 = z14;
                             case 136:
-                                this.f33103o |= 8;
+                                this.f33325o |= 8;
                                 this.I = codedInputStream.readInt32();
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
                             case MediaImageViewKt.OBSCURED_IMAGE_MIN_WIDTH /* 146 */:
-                                Type.Builder builder = (this.f33103o & 16) == 16 ? this.J.toBuilder() : null;
+                                Type.Builder builder = (this.f33325o & 16) == 16 ? this.J.toBuilder() : null;
                                 Type type = (Type) codedInputStream.readMessage(Type.PARSER, extensionRegistryLite);
                                 this.J = type;
                                 if (builder != null) {
                                     builder.mergeFrom(type);
                                     this.J = builder.buildPartial();
                                 }
-                                this.f33103o |= 16;
+                                this.f33325o |= 16;
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
                             case 152:
-                                this.f33103o |= 32;
+                                this.f33325o |= 32;
                                 this.K = codedInputStream.readInt32();
                                 continue;
                                 z12 = z15;
@@ -3556,10 +3556,10 @@ public final class ProtoBuf {
                                 boolean z29 = (z14 ? 1 : 0) & true;
                                 z14 = z14;
                                 if (!z29) {
-                                    this.f33113y = new ArrayList();
+                                    this.f33335y = new ArrayList();
                                     z14 = (z14 ? 1 : 0) | true;
                                 }
-                                this.f33113y.add(codedInputStream.readMessage(Type.PARSER, extensionRegistryLite));
+                                this.f33335y.add(codedInputStream.readMessage(Type.PARSER, extensionRegistryLite));
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
@@ -3567,10 +3567,10 @@ public final class ProtoBuf {
                                 boolean z30 = (z14 ? 1 : 0) & true;
                                 z14 = z14;
                                 if (!z30) {
-                                    this.f33114z = new ArrayList();
+                                    this.f33336z = new ArrayList();
                                     z14 = (z14 ? 1 : 0) | true;
                                 }
-                                this.f33114z.add(Integer.valueOf(codedInputStream.readInt32()));
+                                this.f33336z.add(Integer.valueOf(codedInputStream.readInt32()));
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
@@ -3581,12 +3581,12 @@ public final class ProtoBuf {
                                 if (!z31) {
                                     z14 = z14;
                                     if (codedInputStream.getBytesUntilLimit() > 0) {
-                                        this.f33114z = new ArrayList();
+                                        this.f33336z = new ArrayList();
                                         z14 = (z14 ? 1 : 0) | true;
                                     }
                                 }
                                 while (codedInputStream.getBytesUntilLimit() > 0) {
-                                    this.f33114z.add(Integer.valueOf(codedInputStream.readInt32()));
+                                    this.f33336z.add(Integer.valueOf(codedInputStream.readInt32()));
                                 }
                                 codedInputStream.popLimit(pushLimit4);
                                 continue;
@@ -3662,14 +3662,14 @@ public final class ProtoBuf {
                                 z12 = z15;
                                 z14 = z14;
                             case 242:
-                                TypeTable.Builder builder2 = (this.f33103o & 64) == 64 ? this.Q.toBuilder() : null;
+                                TypeTable.Builder builder2 = (this.f33325o & 64) == 64 ? this.Q.toBuilder() : null;
                                 TypeTable typeTable = (TypeTable) codedInputStream.readMessage(TypeTable.PARSER, extensionRegistryLite);
                                 this.Q = typeTable;
                                 if (builder2 != null) {
                                     builder2.mergeFrom(typeTable);
                                     this.Q = builder2.buildPartial();
                                 }
-                                this.f33103o |= 64;
+                                this.f33325o |= 64;
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
@@ -3703,14 +3703,14 @@ public final class ProtoBuf {
                                 z12 = z15;
                                 z14 = z14;
                             case 258:
-                                VersionRequirementTable.Builder builder3 = (this.f33103o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128 ? this.S.toBuilder() : null;
+                                VersionRequirementTable.Builder builder3 = (this.f33325o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128 ? this.S.toBuilder() : null;
                                 VersionRequirementTable versionRequirementTable = (VersionRequirementTable) codedInputStream.readMessage(VersionRequirementTable.PARSER, extensionRegistryLite);
                                 this.S = versionRequirementTable;
                                 if (builder3 != null) {
                                     builder3.mergeFrom(versionRequirementTable);
                                     this.S = builder3.buildPartial();
                                 }
-                                this.f33103o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                                this.f33325o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                                 continue;
                                 z12 = z15;
                                 z14 = z14;
@@ -3732,16 +3732,16 @@ public final class ProtoBuf {
                                         th = th2;
                                         z11 = z14;
                                         if (z11 & true) {
-                                            this.f33109u = Collections.unmodifiableList(this.f33109u);
+                                            this.f33331u = Collections.unmodifiableList(this.f33331u);
                                         }
                                         if (z11 & true) {
-                                            this.f33107s = Collections.unmodifiableList(this.f33107s);
+                                            this.f33329s = Collections.unmodifiableList(this.f33329s);
                                         }
                                         if (z11 & true) {
-                                            this.f33108t = Collections.unmodifiableList(this.f33108t);
+                                            this.f33330t = Collections.unmodifiableList(this.f33330t);
                                         }
                                         if ((z11 & true) == c10) {
-                                            this.f33111w = Collections.unmodifiableList(this.f33111w);
+                                            this.f33333w = Collections.unmodifiableList(this.f33333w);
                                         }
                                         if (z11 & true) {
                                             this.B = Collections.unmodifiableList(this.B);
@@ -3762,10 +3762,10 @@ public final class ProtoBuf {
                                             this.G = Collections.unmodifiableList(this.G);
                                         }
                                         if (z11 & true) {
-                                            this.f33113y = Collections.unmodifiableList(this.f33113y);
+                                            this.f33335y = Collections.unmodifiableList(this.f33335y);
                                         }
                                         if (z11 & true) {
-                                            this.f33114z = Collections.unmodifiableList(this.f33114z);
+                                            this.f33336z = Collections.unmodifiableList(this.f33336z);
                                         }
                                         if (z11 & true) {
                                             this.L = Collections.unmodifiableList(this.L);
@@ -3786,10 +3786,10 @@ public final class ProtoBuf {
                                             newInstance.flush();
                                         } catch (IOException unused) {
                                         } catch (Throwable th3) {
-                                            this.f33102i = newOutput.toByteString();
+                                            this.f33324i = newOutput.toByteString();
                                             throw th3;
                                         }
-                                        this.f33102i = newOutput.toByteString();
+                                        this.f33324i = newOutput.toByteString();
                                         e();
                                         throw th;
                                     }
@@ -3824,16 +3824,16 @@ public final class ProtoBuf {
                     }
                 } else {
                     if ((z14 ? 1 : 0) & true) {
-                        this.f33109u = Collections.unmodifiableList(this.f33109u);
+                        this.f33331u = Collections.unmodifiableList(this.f33331u);
                     }
                     if ((z14 ? 1 : 0) & true) {
-                        this.f33107s = Collections.unmodifiableList(this.f33107s);
+                        this.f33329s = Collections.unmodifiableList(this.f33329s);
                     }
                     if ((z14 ? 1 : 0) & true) {
-                        this.f33108t = Collections.unmodifiableList(this.f33108t);
+                        this.f33330t = Collections.unmodifiableList(this.f33330t);
                     }
                     if ((z14 ? 1 : 0) & true) {
-                        this.f33111w = Collections.unmodifiableList(this.f33111w);
+                        this.f33333w = Collections.unmodifiableList(this.f33333w);
                     }
                     if ((z14 ? 1 : 0) & true) {
                         this.B = Collections.unmodifiableList(this.B);
@@ -3854,10 +3854,10 @@ public final class ProtoBuf {
                         this.G = Collections.unmodifiableList(this.G);
                     }
                     if ((z14 ? 1 : 0) & true) {
-                        this.f33113y = Collections.unmodifiableList(this.f33113y);
+                        this.f33335y = Collections.unmodifiableList(this.f33335y);
                     }
                     if ((z14 ? 1 : 0) & true) {
-                        this.f33114z = Collections.unmodifiableList(this.f33114z);
+                        this.f33336z = Collections.unmodifiableList(this.f33336z);
                     }
                     if ((z14 ? 1 : 0) & true) {
                         this.L = Collections.unmodifiableList(this.L);
@@ -3878,10 +3878,10 @@ public final class ProtoBuf {
                         newInstance.flush();
                     } catch (IOException unused2) {
                     } catch (Throwable th5) {
-                        this.f33102i = newOutput.toByteString();
+                        this.f33324i = newOutput.toByteString();
                         throw th5;
                     }
-                    this.f33102i = newOutput.toByteString();
+                    this.f33324i = newOutput.toByteString();
                     e();
                     return;
                 }
@@ -3898,37 +3898,37 @@ public final class ProtoBuf {
         public static Parser<CompilerPluginData> PARSER = new a();
 
         /* renamed from: s  reason: collision with root package name */
-        private static final CompilerPluginData f33130s;
+        private static final CompilerPluginData f33352s;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33131e;
+        private final ByteString f33353e;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f33132i;
+        private int f33354i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33133o;
+        private int f33355o;
 
         /* renamed from: p  reason: collision with root package name */
-        private ByteString f33134p;
+        private ByteString f33356p;
 
         /* renamed from: q  reason: collision with root package name */
-        private byte f33135q;
+        private byte f33357q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f33136r;
+        private int f33358r;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.Builder<CompilerPluginData, Builder> implements CompilerPluginDataOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33137e;
+            private int f33359e;
 
             /* renamed from: i  reason: collision with root package name */
-            private int f33138i;
+            private int f33360i;
 
             /* renamed from: o  reason: collision with root package name */
-            private ByteString f33139o = ByteString.EMPTY;
+            private ByteString f33361o = ByteString.EMPTY;
 
             private Builder() {
                 d();
@@ -3947,29 +3947,29 @@ public final class ProtoBuf {
 
             public CompilerPluginData buildPartial() {
                 CompilerPluginData compilerPluginData = new CompilerPluginData(this);
-                int i10 = this.f33137e;
+                int i10 = this.f33359e;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                compilerPluginData.f33133o = this.f33138i;
+                compilerPluginData.f33355o = this.f33360i;
                 if ((i10 & 2) == 2) {
                     i11 |= 2;
                 }
-                compilerPluginData.f33134p = this.f33139o;
-                compilerPluginData.f33132i = i11;
+                compilerPluginData.f33356p = this.f33361o;
+                compilerPluginData.f33354i = i11;
                 return compilerPluginData;
             }
 
             public boolean hasData() {
-                if ((this.f33137e & 2) == 2) {
+                if ((this.f33359e & 2) == 2) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasPluginId() {
-                if ((this.f33137e & 1) == 1) {
+                if ((this.f33359e & 1) == 1) {
                     return true;
                 }
                 return false;
@@ -3985,14 +3985,14 @@ public final class ProtoBuf {
 
             public Builder setData(ByteString byteString) {
                 byteString.getClass();
-                this.f33137e |= 2;
-                this.f33139o = byteString;
+                this.f33359e |= 2;
+                this.f33361o = byteString;
                 return this;
             }
 
             public Builder setPluginId(int i10) {
-                this.f33137e |= 1;
-                this.f33138i = i10;
+                this.f33359e |= 1;
+                this.f33360i = i10;
                 return this;
             }
 
@@ -4026,7 +4026,7 @@ public final class ProtoBuf {
                 if (compilerPluginData.hasData()) {
                     setData(compilerPluginData.getData());
                 }
-                setUnknownFields(getUnknownFields().concat(compilerPluginData.f33131e));
+                setUnknownFields(getUnknownFields().concat(compilerPluginData.f33353e));
                 return this;
             }
 
@@ -4082,17 +4082,17 @@ public final class ProtoBuf {
 
         static {
             CompilerPluginData compilerPluginData = new CompilerPluginData(true);
-            f33130s = compilerPluginData;
+            f33352s = compilerPluginData;
             compilerPluginData.l();
         }
 
         public static CompilerPluginData getDefaultInstance() {
-            return f33130s;
+            return f33352s;
         }
 
         private void l() {
-            this.f33133o = 0;
-            this.f33134p = ByteString.EMPTY;
+            this.f33355o = 0;
+            this.f33356p = ByteString.EMPTY;
         }
 
         public static Builder newBuilder() {
@@ -4100,7 +4100,7 @@ public final class ProtoBuf {
         }
 
         public ByteString getData() {
-            return this.f33134p;
+            return this.f33356p;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -4109,38 +4109,38 @@ public final class ProtoBuf {
         }
 
         public int getPluginId() {
-            return this.f33133o;
+            return this.f33355o;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
             int i10;
-            int i11 = this.f33136r;
+            int i11 = this.f33358r;
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33132i & 1) == 1) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33133o);
+            if ((this.f33354i & 1) == 1) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33355o);
             } else {
                 i10 = 0;
             }
-            if ((this.f33132i & 2) == 2) {
-                i10 += CodedOutputStream.computeBytesSize(2, this.f33134p);
+            if ((this.f33354i & 2) == 2) {
+                i10 += CodedOutputStream.computeBytesSize(2, this.f33356p);
             }
-            int size = i10 + this.f33131e.size();
-            this.f33136r = size;
+            int size = i10 + this.f33353e.size();
+            this.f33358r = size;
             return size;
         }
 
         public boolean hasData() {
-            if ((this.f33132i & 2) == 2) {
+            if ((this.f33354i & 2) == 2) {
                 return true;
             }
             return false;
         }
 
         public boolean hasPluginId() {
-            if ((this.f33132i & 1) == 1) {
+            if ((this.f33354i & 1) == 1) {
                 return true;
             }
             return false;
@@ -4148,7 +4148,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33135q;
+            byte b10 = this.f33357q;
             if (b10 == 1) {
                 return true;
             }
@@ -4156,13 +4156,13 @@ public final class ProtoBuf {
                 return false;
             }
             if (!hasPluginId()) {
-                this.f33135q = (byte) 0;
+                this.f33357q = (byte) 0;
                 return false;
             } else if (!hasData()) {
-                this.f33135q = (byte) 0;
+                this.f33357q = (byte) 0;
                 return false;
             } else {
-                this.f33135q = (byte) 1;
+                this.f33357q = (byte) 1;
                 return true;
             }
         }
@@ -4170,13 +4170,13 @@ public final class ProtoBuf {
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            if ((this.f33132i & 1) == 1) {
-                codedOutputStream.writeInt32(1, this.f33133o);
+            if ((this.f33354i & 1) == 1) {
+                codedOutputStream.writeInt32(1, this.f33355o);
             }
-            if ((this.f33132i & 2) == 2) {
-                codedOutputStream.writeBytes(2, this.f33134p);
+            if ((this.f33354i & 2) == 2) {
+                codedOutputStream.writeBytes(2, this.f33356p);
             }
-            codedOutputStream.writeRawBytes(this.f33131e);
+            codedOutputStream.writeRawBytes(this.f33353e);
         }
 
         public static Builder newBuilder(CompilerPluginData compilerPluginData) {
@@ -4185,7 +4185,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public CompilerPluginData getDefaultInstanceForType() {
-            return f33130s;
+            return f33352s;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -4200,20 +4200,20 @@ public final class ProtoBuf {
 
         private CompilerPluginData(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33135q = (byte) -1;
-            this.f33136r = -1;
-            this.f33131e = builder.getUnknownFields();
+            this.f33357q = (byte) -1;
+            this.f33358r = -1;
+            this.f33353e = builder.getUnknownFields();
         }
 
         private CompilerPluginData(boolean z10) {
-            this.f33135q = (byte) -1;
-            this.f33136r = -1;
-            this.f33131e = ByteString.EMPTY;
+            this.f33357q = (byte) -1;
+            this.f33358r = -1;
+            this.f33353e = ByteString.EMPTY;
         }
 
         private CompilerPluginData(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33135q = (byte) -1;
-            this.f33136r = -1;
+            this.f33357q = (byte) -1;
+            this.f33358r = -1;
             l();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -4224,14 +4224,14 @@ public final class ProtoBuf {
                         int readTag = codedInputStream.readTag();
                         if (readTag != 0) {
                             if (readTag == 8) {
-                                this.f33132i |= 1;
-                                this.f33133o = codedInputStream.readInt32();
+                                this.f33354i |= 1;
+                                this.f33355o = codedInputStream.readInt32();
                             } else if (readTag != 18) {
                                 if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                 }
                             } else {
-                                this.f33132i |= 2;
-                                this.f33134p = codedInputStream.readBytes();
+                                this.f33354i |= 2;
+                                this.f33356p = codedInputStream.readBytes();
                             }
                         }
                         z10 = true;
@@ -4240,10 +4240,10 @@ public final class ProtoBuf {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33131e = newOutput.toByteString();
+                            this.f33353e = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33131e = newOutput.toByteString();
+                        this.f33353e = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -4257,10 +4257,10 @@ public final class ProtoBuf {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33131e = newOutput.toByteString();
+                this.f33353e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33131e = newOutput.toByteString();
+            this.f33353e = newOutput.toByteString();
             e();
         }
     }
@@ -4274,84 +4274,84 @@ public final class ProtoBuf {
         public static Parser<Constructor> PARSER = new a();
 
         /* renamed from: v  reason: collision with root package name */
-        private static final Constructor f33140v;
+        private static final Constructor f33362v;
 
         /* renamed from: i  reason: collision with root package name */
-        private final ByteString f33141i;
+        private final ByteString f33363i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33142o;
+        private int f33364o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33143p;
+        private int f33365p;
 
         /* renamed from: q  reason: collision with root package name */
-        private List f33144q;
+        private List f33366q;
 
         /* renamed from: r  reason: collision with root package name */
-        private List f33145r;
+        private List f33367r;
 
         /* renamed from: s  reason: collision with root package name */
-        private List f33146s;
+        private List f33368s;
 
         /* renamed from: t  reason: collision with root package name */
-        private byte f33147t;
+        private byte f33369t;
 
         /* renamed from: u  reason: collision with root package name */
-        private int f33148u;
+        private int f33370u;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.ExtendableBuilder<Constructor, Builder> implements ConstructorOrBuilder {
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33149o;
+            private int f33371o;
 
             /* renamed from: p  reason: collision with root package name */
-            private int f33150p = 6;
+            private int f33372p = 6;
 
             /* renamed from: q  reason: collision with root package name */
-            private List f33151q;
+            private List f33373q;
 
             /* renamed from: r  reason: collision with root package name */
-            private List f33152r;
+            private List f33374r;
 
             /* renamed from: s  reason: collision with root package name */
-            private List f33153s;
+            private List f33375s;
 
             private Builder() {
                 List list = Collections.EMPTY_LIST;
-                this.f33151q = list;
-                this.f33152r = list;
-                this.f33153s = list;
+                this.f33373q = list;
+                this.f33374r = list;
+                this.f33375s = list;
                 m();
             }
 
-            static /* synthetic */ Builder h() {
-                return i();
+            static /* synthetic */ Builder g() {
+                return h();
             }
 
-            private static Builder i() {
+            private static Builder h() {
                 return new Builder();
             }
 
             private void j() {
-                if ((this.f33149o & 8) != 8) {
-                    this.f33153s = new ArrayList(this.f33153s);
-                    this.f33149o |= 8;
+                if ((this.f33371o & 8) != 8) {
+                    this.f33375s = new ArrayList(this.f33375s);
+                    this.f33371o |= 8;
                 }
             }
 
             private void k() {
-                if ((this.f33149o & 2) != 2) {
-                    this.f33151q = new ArrayList(this.f33151q);
-                    this.f33149o |= 2;
+                if ((this.f33371o & 2) != 2) {
+                    this.f33373q = new ArrayList(this.f33373q);
+                    this.f33371o |= 2;
                 }
             }
 
             private void l() {
-                if ((this.f33149o & 4) != 4) {
-                    this.f33152r = new ArrayList(this.f33152r);
-                    this.f33149o |= 4;
+                if ((this.f33371o & 4) != 4) {
+                    this.f33374r = new ArrayList(this.f33374r);
+                    this.f33371o |= 4;
                 }
             }
 
@@ -4361,43 +4361,43 @@ public final class ProtoBuf {
             public Constructor buildPartial() {
                 Constructor constructor = new Constructor(this);
                 int i10 = 1;
-                if ((this.f33149o & 1) != 1) {
+                if ((this.f33371o & 1) != 1) {
                     i10 = 0;
                 }
-                constructor.f33143p = this.f33150p;
-                if ((this.f33149o & 2) == 2) {
-                    this.f33151q = Collections.unmodifiableList(this.f33151q);
-                    this.f33149o &= -3;
+                constructor.f33365p = this.f33372p;
+                if ((this.f33371o & 2) == 2) {
+                    this.f33373q = Collections.unmodifiableList(this.f33373q);
+                    this.f33371o &= -3;
                 }
-                constructor.f33144q = this.f33151q;
-                if ((this.f33149o & 4) == 4) {
-                    this.f33152r = Collections.unmodifiableList(this.f33152r);
-                    this.f33149o &= -5;
+                constructor.f33366q = this.f33373q;
+                if ((this.f33371o & 4) == 4) {
+                    this.f33374r = Collections.unmodifiableList(this.f33374r);
+                    this.f33371o &= -5;
                 }
-                constructor.f33145r = this.f33152r;
-                if ((this.f33149o & 8) == 8) {
-                    this.f33153s = Collections.unmodifiableList(this.f33153s);
-                    this.f33149o &= -9;
+                constructor.f33367r = this.f33374r;
+                if ((this.f33371o & 8) == 8) {
+                    this.f33375s = Collections.unmodifiableList(this.f33375s);
+                    this.f33371o &= -9;
                 }
-                constructor.f33146s = this.f33153s;
-                constructor.f33142o = i10;
+                constructor.f33368s = this.f33375s;
+                constructor.f33364o = i10;
                 return constructor;
             }
 
             public CompilerPluginData getCompilerPluginData(int i10) {
-                return (CompilerPluginData) this.f33153s.get(i10);
+                return (CompilerPluginData) this.f33375s.get(i10);
             }
 
             public int getCompilerPluginDataCount() {
-                return this.f33153s.size();
+                return this.f33375s.size();
             }
 
             public ValueParameter getValueParameter(int i10) {
-                return (ValueParameter) this.f33151q.get(i10);
+                return (ValueParameter) this.f33373q.get(i10);
             }
 
             public int getValueParameterCount() {
-                return this.f33151q.size();
+                return this.f33373q.size();
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
@@ -4419,8 +4419,8 @@ public final class ProtoBuf {
             }
 
             public Builder setFlags(int i10) {
-                this.f33149o |= 1;
-                this.f33150p = i10;
+                this.f33371o |= 1;
+                this.f33372p = i10;
                 return this;
             }
 
@@ -4446,41 +4446,41 @@ public final class ProtoBuf {
                 if (constructor.hasFlags()) {
                     setFlags(constructor.getFlags());
                 }
-                if (!constructor.f33144q.isEmpty()) {
-                    if (this.f33151q.isEmpty()) {
-                        this.f33151q = constructor.f33144q;
-                        this.f33149o &= -3;
+                if (!constructor.f33366q.isEmpty()) {
+                    if (this.f33373q.isEmpty()) {
+                        this.f33373q = constructor.f33366q;
+                        this.f33371o &= -3;
                     } else {
                         k();
-                        this.f33151q.addAll(constructor.f33144q);
+                        this.f33373q.addAll(constructor.f33366q);
                     }
                 }
-                if (!constructor.f33145r.isEmpty()) {
-                    if (this.f33152r.isEmpty()) {
-                        this.f33152r = constructor.f33145r;
-                        this.f33149o &= -5;
+                if (!constructor.f33367r.isEmpty()) {
+                    if (this.f33374r.isEmpty()) {
+                        this.f33374r = constructor.f33367r;
+                        this.f33371o &= -5;
                     } else {
                         l();
-                        this.f33152r.addAll(constructor.f33145r);
+                        this.f33374r.addAll(constructor.f33367r);
                     }
                 }
-                if (!constructor.f33146s.isEmpty()) {
-                    if (this.f33153s.isEmpty()) {
-                        this.f33153s = constructor.f33146s;
-                        this.f33149o &= -9;
+                if (!constructor.f33368s.isEmpty()) {
+                    if (this.f33375s.isEmpty()) {
+                        this.f33375s = constructor.f33368s;
+                        this.f33371o &= -9;
                     } else {
                         j();
-                        this.f33153s.addAll(constructor.f33146s);
+                        this.f33375s.addAll(constructor.f33368s);
                     }
                 }
                 f(constructor);
-                setUnknownFields(getUnknownFields().concat(constructor.f33141i));
+                setUnknownFields(getUnknownFields().concat(constructor.f33363i));
                 return this;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.ExtendableBuilder, kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.Builder, kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite.Builder
             public Builder clone() {
-                return i().mergeFrom(buildPartial());
+                return h().mergeFrom(buildPartial());
             }
 
             /* JADX WARN: Removed duplicated region for block: B:15:0x001d  */
@@ -4535,36 +4535,36 @@ public final class ProtoBuf {
 
         static {
             Constructor constructor = new Constructor(true);
-            f33140v = constructor;
+            f33362v = constructor;
             constructor.v();
         }
 
         public static Constructor getDefaultInstance() {
-            return f33140v;
+            return f33362v;
         }
 
         public static Builder newBuilder() {
-            return Builder.h();
+            return Builder.g();
         }
 
         private void v() {
-            this.f33143p = 6;
+            this.f33365p = 6;
             List list = Collections.EMPTY_LIST;
-            this.f33144q = list;
-            this.f33145r = list;
-            this.f33146s = list;
+            this.f33366q = list;
+            this.f33367r = list;
+            this.f33368s = list;
         }
 
         public CompilerPluginData getCompilerPluginData(int i10) {
-            return (CompilerPluginData) this.f33146s.get(i10);
+            return (CompilerPluginData) this.f33368s.get(i10);
         }
 
         public int getCompilerPluginDataCount() {
-            return this.f33146s.size();
+            return this.f33368s.size();
         }
 
         public int getFlags() {
-            return this.f33143p;
+            return this.f33365p;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -4575,49 +4575,49 @@ public final class ProtoBuf {
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
             int i10;
-            int i11 = this.f33148u;
+            int i11 = this.f33370u;
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33142o & 1) == 1) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33143p);
+            if ((this.f33364o & 1) == 1) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33365p);
             } else {
                 i10 = 0;
             }
-            for (int i12 = 0; i12 < this.f33144q.size(); i12++) {
-                i10 += CodedOutputStream.computeMessageSize(2, (MessageLite) this.f33144q.get(i12));
+            for (int i12 = 0; i12 < this.f33366q.size(); i12++) {
+                i10 += CodedOutputStream.computeMessageSize(2, (MessageLite) this.f33366q.get(i12));
             }
             int i13 = 0;
-            for (int i14 = 0; i14 < this.f33145r.size(); i14++) {
-                i13 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33145r.get(i14)).intValue());
+            for (int i14 = 0; i14 < this.f33367r.size(); i14++) {
+                i13 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33367r.get(i14)).intValue());
             }
             int size = i10 + i13 + (getVersionRequirementList().size() * 2);
-            for (int i15 = 0; i15 < this.f33146s.size(); i15++) {
-                size += CodedOutputStream.computeMessageSize(32, (MessageLite) this.f33146s.get(i15));
+            for (int i15 = 0; i15 < this.f33368s.size(); i15++) {
+                size += CodedOutputStream.computeMessageSize(32, (MessageLite) this.f33368s.get(i15));
             }
-            int j10 = size + j() + this.f33141i.size();
-            this.f33148u = j10;
+            int j10 = size + j() + this.f33363i.size();
+            this.f33370u = j10;
             return j10;
         }
 
         public ValueParameter getValueParameter(int i10) {
-            return (ValueParameter) this.f33144q.get(i10);
+            return (ValueParameter) this.f33366q.get(i10);
         }
 
         public int getValueParameterCount() {
-            return this.f33144q.size();
+            return this.f33366q.size();
         }
 
         public List<ValueParameter> getValueParameterList() {
-            return this.f33144q;
+            return this.f33366q;
         }
 
         public List<Integer> getVersionRequirementList() {
-            return this.f33145r;
+            return this.f33367r;
         }
 
         public boolean hasFlags() {
-            if ((this.f33142o & 1) == 1) {
+            if ((this.f33364o & 1) == 1) {
                 return true;
             }
             return false;
@@ -4625,7 +4625,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33147t;
+            byte b10 = this.f33369t;
             if (b10 == 1) {
                 return true;
             }
@@ -4634,21 +4634,21 @@ public final class ProtoBuf {
             }
             for (int i10 = 0; i10 < getValueParameterCount(); i10++) {
                 if (!getValueParameter(i10).isInitialized()) {
-                    this.f33147t = (byte) 0;
+                    this.f33369t = (byte) 0;
                     return false;
                 }
             }
             for (int i11 = 0; i11 < getCompilerPluginDataCount(); i11++) {
                 if (!getCompilerPluginData(i11).isInitialized()) {
-                    this.f33147t = (byte) 0;
+                    this.f33369t = (byte) 0;
                     return false;
                 }
             }
             if (!i()) {
-                this.f33147t = (byte) 0;
+                this.f33369t = (byte) 0;
                 return false;
             }
-            this.f33147t = (byte) 1;
+            this.f33369t = (byte) 1;
             return true;
         }
 
@@ -4656,20 +4656,20 @@ public final class ProtoBuf {
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
             GeneratedMessageLite.ExtendableMessage.ExtensionWriter k10 = k();
-            if ((this.f33142o & 1) == 1) {
-                codedOutputStream.writeInt32(1, this.f33143p);
+            if ((this.f33364o & 1) == 1) {
+                codedOutputStream.writeInt32(1, this.f33365p);
             }
-            for (int i10 = 0; i10 < this.f33144q.size(); i10++) {
-                codedOutputStream.writeMessage(2, (MessageLite) this.f33144q.get(i10));
+            for (int i10 = 0; i10 < this.f33366q.size(); i10++) {
+                codedOutputStream.writeMessage(2, (MessageLite) this.f33366q.get(i10));
             }
-            for (int i11 = 0; i11 < this.f33145r.size(); i11++) {
-                codedOutputStream.writeInt32(31, ((Integer) this.f33145r.get(i11)).intValue());
+            for (int i11 = 0; i11 < this.f33367r.size(); i11++) {
+                codedOutputStream.writeInt32(31, ((Integer) this.f33367r.get(i11)).intValue());
             }
-            for (int i12 = 0; i12 < this.f33146s.size(); i12++) {
-                codedOutputStream.writeMessage(32, (MessageLite) this.f33146s.get(i12));
+            for (int i12 = 0; i12 < this.f33368s.size(); i12++) {
+                codedOutputStream.writeMessage(32, (MessageLite) this.f33368s.get(i12));
             }
             k10.writeUntil(19000, codedOutputStream);
-            codedOutputStream.writeRawBytes(this.f33141i);
+            codedOutputStream.writeRawBytes(this.f33363i);
         }
 
         public static Builder newBuilder(Constructor constructor) {
@@ -4678,7 +4678,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public Constructor getDefaultInstanceForType() {
-            return f33140v;
+            return f33362v;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -4693,20 +4693,20 @@ public final class ProtoBuf {
 
         private Constructor(GeneratedMessageLite.ExtendableBuilder extendableBuilder) {
             super(extendableBuilder);
-            this.f33147t = (byte) -1;
-            this.f33148u = -1;
-            this.f33141i = extendableBuilder.getUnknownFields();
+            this.f33369t = (byte) -1;
+            this.f33370u = -1;
+            this.f33363i = extendableBuilder.getUnknownFields();
         }
 
         private Constructor(boolean z10) {
-            this.f33147t = (byte) -1;
-            this.f33148u = -1;
-            this.f33141i = ByteString.EMPTY;
+            this.f33369t = (byte) -1;
+            this.f33370u = -1;
+            this.f33363i = ByteString.EMPTY;
         }
 
         private Constructor(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33147t = (byte) -1;
-            this.f33148u = -1;
+            this.f33369t = (byte) -1;
+            this.f33370u = -1;
             v();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -4718,28 +4718,28 @@ public final class ProtoBuf {
                         int readTag = codedInputStream.readTag();
                         if (readTag != 0) {
                             if (readTag == 8) {
-                                this.f33142o |= 1;
-                                this.f33143p = codedInputStream.readInt32();
+                                this.f33364o |= 1;
+                                this.f33365p = codedInputStream.readInt32();
                             } else if (readTag == 18) {
                                 if (!(z11 & true)) {
-                                    this.f33144q = new ArrayList();
+                                    this.f33366q = new ArrayList();
                                     z11 |= true;
                                 }
-                                this.f33144q.add(codedInputStream.readMessage(ValueParameter.PARSER, extensionRegistryLite));
+                                this.f33366q.add(codedInputStream.readMessage(ValueParameter.PARSER, extensionRegistryLite));
                             } else if (readTag == 248) {
                                 if (!(z11 & true)) {
-                                    this.f33145r = new ArrayList();
+                                    this.f33367r = new ArrayList();
                                     z11 |= true;
                                 }
-                                this.f33145r.add(Integer.valueOf(codedInputStream.readInt32()));
+                                this.f33367r.add(Integer.valueOf(codedInputStream.readInt32()));
                             } else if (readTag == 250) {
                                 int pushLimit = codedInputStream.pushLimit(codedInputStream.readRawVarint32());
                                 if (!(z11 & true) && codedInputStream.getBytesUntilLimit() > 0) {
-                                    this.f33145r = new ArrayList();
+                                    this.f33367r = new ArrayList();
                                     z11 |= true;
                                 }
                                 while (codedInputStream.getBytesUntilLimit() > 0) {
-                                    this.f33145r.add(Integer.valueOf(codedInputStream.readInt32()));
+                                    this.f33367r.add(Integer.valueOf(codedInputStream.readInt32()));
                                 }
                                 codedInputStream.popLimit(pushLimit);
                             } else if (readTag != 258) {
@@ -4747,31 +4747,31 @@ public final class ProtoBuf {
                                 }
                             } else {
                                 if (!(z11 & true)) {
-                                    this.f33146s = new ArrayList();
+                                    this.f33368s = new ArrayList();
                                     z11 |= true;
                                 }
-                                this.f33146s.add(codedInputStream.readMessage(CompilerPluginData.PARSER, extensionRegistryLite));
+                                this.f33368s.add(codedInputStream.readMessage(CompilerPluginData.PARSER, extensionRegistryLite));
                             }
                         }
                         z10 = true;
                     } catch (Throwable th2) {
                         if (z11 & true) {
-                            this.f33144q = Collections.unmodifiableList(this.f33144q);
+                            this.f33366q = Collections.unmodifiableList(this.f33366q);
                         }
                         if (z11 & true) {
-                            this.f33145r = Collections.unmodifiableList(this.f33145r);
+                            this.f33367r = Collections.unmodifiableList(this.f33367r);
                         }
                         if (z11 & true) {
-                            this.f33146s = Collections.unmodifiableList(this.f33146s);
+                            this.f33368s = Collections.unmodifiableList(this.f33368s);
                         }
                         try {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33141i = newOutput.toByteString();
+                            this.f33363i = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33141i = newOutput.toByteString();
+                        this.f33363i = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -4782,22 +4782,22 @@ public final class ProtoBuf {
                 }
             }
             if (z11 & true) {
-                this.f33144q = Collections.unmodifiableList(this.f33144q);
+                this.f33366q = Collections.unmodifiableList(this.f33366q);
             }
             if (z11 & true) {
-                this.f33145r = Collections.unmodifiableList(this.f33145r);
+                this.f33367r = Collections.unmodifiableList(this.f33367r);
             }
             if (z11 & true) {
-                this.f33146s = Collections.unmodifiableList(this.f33146s);
+                this.f33368s = Collections.unmodifiableList(this.f33368s);
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33141i = newOutput.toByteString();
+                this.f33363i = newOutput.toByteString();
                 throw th4;
             }
-            this.f33141i = newOutput.toByteString();
+            this.f33363i = newOutput.toByteString();
             e();
         }
     }
@@ -4811,28 +4811,28 @@ public final class ProtoBuf {
         public static Parser<Contract> PARSER = new a();
 
         /* renamed from: q  reason: collision with root package name */
-        private static final Contract f33154q;
+        private static final Contract f33376q;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33155e;
+        private final ByteString f33377e;
 
         /* renamed from: i  reason: collision with root package name */
-        private List f33156i;
+        private List f33378i;
 
         /* renamed from: o  reason: collision with root package name */
-        private byte f33157o;
+        private byte f33379o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33158p;
+        private int f33380p;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.Builder<Contract, Builder> implements ContractOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33159e;
+            private int f33381e;
 
             /* renamed from: i  reason: collision with root package name */
-            private List f33160i = Collections.EMPTY_LIST;
+            private List f33382i = Collections.EMPTY_LIST;
 
             private Builder() {
                 e();
@@ -4847,9 +4847,9 @@ public final class ProtoBuf {
             }
 
             private void d() {
-                if ((this.f33159e & 1) != 1) {
-                    this.f33160i = new ArrayList(this.f33160i);
-                    this.f33159e |= 1;
+                if ((this.f33381e & 1) != 1) {
+                    this.f33382i = new ArrayList(this.f33382i);
+                    this.f33381e |= 1;
                 }
             }
 
@@ -4858,20 +4858,20 @@ public final class ProtoBuf {
 
             public Contract buildPartial() {
                 Contract contract = new Contract(this);
-                if ((this.f33159e & 1) == 1) {
-                    this.f33160i = Collections.unmodifiableList(this.f33160i);
-                    this.f33159e &= -2;
+                if ((this.f33381e & 1) == 1) {
+                    this.f33382i = Collections.unmodifiableList(this.f33382i);
+                    this.f33381e &= -2;
                 }
-                contract.f33156i = this.f33160i;
+                contract.f33378i = this.f33382i;
                 return contract;
             }
 
             public Effect getEffect(int i10) {
-                return (Effect) this.f33160i.get(i10);
+                return (Effect) this.f33382i.get(i10);
             }
 
             public int getEffectCount() {
-                return this.f33160i.size();
+                return this.f33382i.size();
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
@@ -4908,16 +4908,16 @@ public final class ProtoBuf {
                 if (contract == Contract.getDefaultInstance()) {
                     return this;
                 }
-                if (!contract.f33156i.isEmpty()) {
-                    if (this.f33160i.isEmpty()) {
-                        this.f33160i = contract.f33156i;
-                        this.f33159e &= -2;
+                if (!contract.f33378i.isEmpty()) {
+                    if (this.f33382i.isEmpty()) {
+                        this.f33382i = contract.f33378i;
+                        this.f33381e &= -2;
                     } else {
                         d();
-                        this.f33160i.addAll(contract.f33156i);
+                        this.f33382i.addAll(contract.f33378i);
                     }
                 }
-                setUnknownFields(getUnknownFields().concat(contract.f33155e));
+                setUnknownFields(getUnknownFields().concat(contract.f33377e));
                 return this;
             }
 
@@ -4973,16 +4973,16 @@ public final class ProtoBuf {
 
         static {
             Contract contract = new Contract(true);
-            f33154q = contract;
+            f33376q = contract;
             contract.k();
         }
 
         public static Contract getDefaultInstance() {
-            return f33154q;
+            return f33376q;
         }
 
         private void k() {
-            this.f33156i = Collections.EMPTY_LIST;
+            this.f33378i = Collections.EMPTY_LIST;
         }
 
         public static Builder newBuilder() {
@@ -4990,11 +4990,11 @@ public final class ProtoBuf {
         }
 
         public Effect getEffect(int i10) {
-            return (Effect) this.f33156i.get(i10);
+            return (Effect) this.f33378i.get(i10);
         }
 
         public int getEffectCount() {
-            return this.f33156i.size();
+            return this.f33378i.size();
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -5004,22 +5004,22 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
-            int i10 = this.f33158p;
+            int i10 = this.f33380p;
             if (i10 != -1) {
                 return i10;
             }
             int i11 = 0;
-            for (int i12 = 0; i12 < this.f33156i.size(); i12++) {
-                i11 += CodedOutputStream.computeMessageSize(1, (MessageLite) this.f33156i.get(i12));
+            for (int i12 = 0; i12 < this.f33378i.size(); i12++) {
+                i11 += CodedOutputStream.computeMessageSize(1, (MessageLite) this.f33378i.get(i12));
             }
-            int size = i11 + this.f33155e.size();
-            this.f33158p = size;
+            int size = i11 + this.f33377e.size();
+            this.f33380p = size;
             return size;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33157o;
+            byte b10 = this.f33379o;
             if (b10 == 1) {
                 return true;
             }
@@ -5028,21 +5028,21 @@ public final class ProtoBuf {
             }
             for (int i10 = 0; i10 < getEffectCount(); i10++) {
                 if (!getEffect(i10).isInitialized()) {
-                    this.f33157o = (byte) 0;
+                    this.f33379o = (byte) 0;
                     return false;
                 }
             }
-            this.f33157o = (byte) 1;
+            this.f33379o = (byte) 1;
             return true;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            for (int i10 = 0; i10 < this.f33156i.size(); i10++) {
-                codedOutputStream.writeMessage(1, (MessageLite) this.f33156i.get(i10));
+            for (int i10 = 0; i10 < this.f33378i.size(); i10++) {
+                codedOutputStream.writeMessage(1, (MessageLite) this.f33378i.get(i10));
             }
-            codedOutputStream.writeRawBytes(this.f33155e);
+            codedOutputStream.writeRawBytes(this.f33377e);
         }
 
         public static Builder newBuilder(Contract contract) {
@@ -5051,7 +5051,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public Contract getDefaultInstanceForType() {
-            return f33154q;
+            return f33376q;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -5066,20 +5066,20 @@ public final class ProtoBuf {
 
         private Contract(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33157o = (byte) -1;
-            this.f33158p = -1;
-            this.f33155e = builder.getUnknownFields();
+            this.f33379o = (byte) -1;
+            this.f33380p = -1;
+            this.f33377e = builder.getUnknownFields();
         }
 
         private Contract(boolean z10) {
-            this.f33157o = (byte) -1;
-            this.f33158p = -1;
-            this.f33155e = ByteString.EMPTY;
+            this.f33379o = (byte) -1;
+            this.f33380p = -1;
+            this.f33377e = ByteString.EMPTY;
         }
 
         private Contract(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33157o = (byte) -1;
-            this.f33158p = -1;
+            this.f33379o = (byte) -1;
+            this.f33380p = -1;
             k();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -5096,10 +5096,10 @@ public final class ProtoBuf {
                                     }
                                 } else {
                                     if (!z11) {
-                                        this.f33156i = new ArrayList();
+                                        this.f33378i = new ArrayList();
                                         z11 = true;
                                     }
-                                    this.f33156i.add(codedInputStream.readMessage(Effect.PARSER, extensionRegistryLite));
+                                    this.f33378i.add(codedInputStream.readMessage(Effect.PARSER, extensionRegistryLite));
                                 }
                             }
                             z10 = true;
@@ -5111,31 +5111,31 @@ public final class ProtoBuf {
                     }
                 } catch (Throwable th2) {
                     if (z11) {
-                        this.f33156i = Collections.unmodifiableList(this.f33156i);
+                        this.f33378i = Collections.unmodifiableList(this.f33378i);
                     }
                     try {
                         newInstance.flush();
                     } catch (IOException unused) {
                     } catch (Throwable th3) {
-                        this.f33155e = newOutput.toByteString();
+                        this.f33377e = newOutput.toByteString();
                         throw th3;
                     }
-                    this.f33155e = newOutput.toByteString();
+                    this.f33377e = newOutput.toByteString();
                     e();
                     throw th2;
                 }
             }
             if (z11) {
-                this.f33156i = Collections.unmodifiableList(this.f33156i);
+                this.f33378i = Collections.unmodifiableList(this.f33378i);
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33155e = newOutput.toByteString();
+                this.f33377e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33155e = newOutput.toByteString();
+            this.f33377e = newOutput.toByteString();
             e();
         }
     }
@@ -5149,49 +5149,49 @@ public final class ProtoBuf {
         public static Parser<Effect> PARSER = new a();
 
         /* renamed from: u  reason: collision with root package name */
-        private static final Effect f33161u;
+        private static final Effect f33383u;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33162e;
+        private final ByteString f33384e;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f33163i;
+        private int f33385i;
 
         /* renamed from: o  reason: collision with root package name */
-        private EffectType f33164o;
+        private EffectType f33386o;
 
         /* renamed from: p  reason: collision with root package name */
-        private List f33165p;
+        private List f33387p;
 
         /* renamed from: q  reason: collision with root package name */
-        private Expression f33166q;
+        private Expression f33388q;
 
         /* renamed from: r  reason: collision with root package name */
-        private InvocationKind f33167r;
+        private InvocationKind f33389r;
 
         /* renamed from: s  reason: collision with root package name */
-        private byte f33168s;
+        private byte f33390s;
 
         /* renamed from: t  reason: collision with root package name */
-        private int f33169t;
+        private int f33391t;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.Builder<Effect, Builder> implements EffectOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33170e;
+            private int f33392e;
 
             /* renamed from: i  reason: collision with root package name */
-            private EffectType f33171i = EffectType.RETURNS_CONSTANT;
+            private EffectType f33393i = EffectType.RETURNS_CONSTANT;
 
             /* renamed from: o  reason: collision with root package name */
-            private List f33172o = Collections.EMPTY_LIST;
+            private List f33394o = Collections.EMPTY_LIST;
 
             /* renamed from: p  reason: collision with root package name */
-            private Expression f33173p = Expression.getDefaultInstance();
+            private Expression f33395p = Expression.getDefaultInstance();
 
             /* renamed from: q  reason: collision with root package name */
-            private InvocationKind f33174q = InvocationKind.AT_MOST_ONCE;
+            private InvocationKind f33396q = InvocationKind.AT_MOST_ONCE;
 
             private Builder() {
                 e();
@@ -5206,9 +5206,9 @@ public final class ProtoBuf {
             }
 
             private void d() {
-                if ((this.f33170e & 2) != 2) {
-                    this.f33172o = new ArrayList(this.f33172o);
-                    this.f33170e |= 2;
+                if ((this.f33392e & 2) != 2) {
+                    this.f33394o = new ArrayList(this.f33394o);
+                    this.f33392e |= 2;
                 }
             }
 
@@ -5217,43 +5217,43 @@ public final class ProtoBuf {
 
             public Effect buildPartial() {
                 Effect effect = new Effect(this);
-                int i10 = this.f33170e;
+                int i10 = this.f33392e;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                effect.f33164o = this.f33171i;
-                if ((this.f33170e & 2) == 2) {
-                    this.f33172o = Collections.unmodifiableList(this.f33172o);
-                    this.f33170e &= -3;
+                effect.f33386o = this.f33393i;
+                if ((this.f33392e & 2) == 2) {
+                    this.f33394o = Collections.unmodifiableList(this.f33394o);
+                    this.f33392e &= -3;
                 }
-                effect.f33165p = this.f33172o;
+                effect.f33387p = this.f33394o;
                 if ((i10 & 4) == 4) {
                     i11 |= 2;
                 }
-                effect.f33166q = this.f33173p;
+                effect.f33388q = this.f33395p;
                 if ((i10 & 8) == 8) {
                     i11 |= 4;
                 }
-                effect.f33167r = this.f33174q;
-                effect.f33163i = i11;
+                effect.f33389r = this.f33396q;
+                effect.f33385i = i11;
                 return effect;
             }
 
             public Expression getConclusionOfConditionalEffect() {
-                return this.f33173p;
+                return this.f33395p;
             }
 
             public Expression getEffectConstructorArgument(int i10) {
-                return (Expression) this.f33172o.get(i10);
+                return (Expression) this.f33394o.get(i10);
             }
 
             public int getEffectConstructorArgumentCount() {
-                return this.f33172o.size();
+                return this.f33394o.size();
             }
 
             public boolean hasConclusionOfConditionalEffect() {
-                if ((this.f33170e & 4) == 4) {
+                if ((this.f33392e & 4) == 4) {
                     return true;
                 }
                 return false;
@@ -5273,26 +5273,26 @@ public final class ProtoBuf {
             }
 
             public Builder mergeConclusionOfConditionalEffect(Expression expression) {
-                if ((this.f33170e & 4) == 4 && this.f33173p != Expression.getDefaultInstance()) {
-                    this.f33173p = Expression.newBuilder(this.f33173p).mergeFrom(expression).buildPartial();
+                if ((this.f33392e & 4) == 4 && this.f33395p != Expression.getDefaultInstance()) {
+                    this.f33395p = Expression.newBuilder(this.f33395p).mergeFrom(expression).buildPartial();
                 } else {
-                    this.f33173p = expression;
+                    this.f33395p = expression;
                 }
-                this.f33170e |= 4;
+                this.f33392e |= 4;
                 return this;
             }
 
             public Builder setEffectType(EffectType effectType) {
                 effectType.getClass();
-                this.f33170e |= 1;
-                this.f33171i = effectType;
+                this.f33392e |= 1;
+                this.f33393i = effectType;
                 return this;
             }
 
             public Builder setKind(InvocationKind invocationKind) {
                 invocationKind.getClass();
-                this.f33170e |= 8;
-                this.f33174q = invocationKind;
+                this.f33392e |= 8;
+                this.f33396q = invocationKind;
                 return this;
             }
 
@@ -5323,13 +5323,13 @@ public final class ProtoBuf {
                 if (effect.hasEffectType()) {
                     setEffectType(effect.getEffectType());
                 }
-                if (!effect.f33165p.isEmpty()) {
-                    if (this.f33172o.isEmpty()) {
-                        this.f33172o = effect.f33165p;
-                        this.f33170e &= -3;
+                if (!effect.f33387p.isEmpty()) {
+                    if (this.f33394o.isEmpty()) {
+                        this.f33394o = effect.f33387p;
+                        this.f33392e &= -3;
                     } else {
                         d();
-                        this.f33172o.addAll(effect.f33165p);
+                        this.f33394o.addAll(effect.f33387p);
                     }
                 }
                 if (effect.hasConclusionOfConditionalEffect()) {
@@ -5338,7 +5338,7 @@ public final class ProtoBuf {
                 if (effect.hasKind()) {
                     setKind(effect.getKind());
                 }
-                setUnknownFields(getUnknownFields().concat(effect.f33162e));
+                setUnknownFields(getUnknownFields().concat(effect.f33384e));
                 return this;
             }
 
@@ -5388,10 +5388,10 @@ public final class ProtoBuf {
             
 
             /* renamed from: e  reason: collision with root package name */
-            private static Internal.EnumLiteMap f33175e = new a();
+            private static Internal.EnumLiteMap f33397e = new a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final int f33177d;
+            private final int f33399d;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
             static class a implements Internal.EnumLiteMap {
@@ -5406,12 +5406,12 @@ public final class ProtoBuf {
             }
 
             EffectType(int i10, int i11) {
-                this.f33177d = i11;
+                this.f33399d = i11;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
             public final int getNumber() {
-                return this.f33177d;
+                return this.f33399d;
             }
 
             public static EffectType valueOf(int i10) {
@@ -5436,10 +5436,10 @@ public final class ProtoBuf {
             
 
             /* renamed from: e  reason: collision with root package name */
-            private static Internal.EnumLiteMap f33178e = new a();
+            private static Internal.EnumLiteMap f33400e = new a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final int f33180d;
+            private final int f33402d;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
             static class a implements Internal.EnumLiteMap {
@@ -5454,12 +5454,12 @@ public final class ProtoBuf {
             }
 
             InvocationKind(int i10, int i11) {
-                this.f33180d = i11;
+                this.f33402d = i11;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
             public final int getNumber() {
-                return this.f33180d;
+                return this.f33402d;
             }
 
             public static InvocationKind valueOf(int i10) {
@@ -5490,12 +5490,12 @@ public final class ProtoBuf {
 
         static {
             Effect effect = new Effect(true);
-            f33161u = effect;
+            f33383u = effect;
             effect.o();
         }
 
         public static Effect getDefaultInstance() {
-            return f33161u;
+            return f33383u;
         }
 
         public static Builder newBuilder() {
@@ -5503,30 +5503,30 @@ public final class ProtoBuf {
         }
 
         private void o() {
-            this.f33164o = EffectType.RETURNS_CONSTANT;
-            this.f33165p = Collections.EMPTY_LIST;
-            this.f33166q = Expression.getDefaultInstance();
-            this.f33167r = InvocationKind.AT_MOST_ONCE;
+            this.f33386o = EffectType.RETURNS_CONSTANT;
+            this.f33387p = Collections.EMPTY_LIST;
+            this.f33388q = Expression.getDefaultInstance();
+            this.f33389r = InvocationKind.AT_MOST_ONCE;
         }
 
         public Expression getConclusionOfConditionalEffect() {
-            return this.f33166q;
+            return this.f33388q;
         }
 
         public Expression getEffectConstructorArgument(int i10) {
-            return (Expression) this.f33165p.get(i10);
+            return (Expression) this.f33387p.get(i10);
         }
 
         public int getEffectConstructorArgumentCount() {
-            return this.f33165p.size();
+            return this.f33387p.size();
         }
 
         public EffectType getEffectType() {
-            return this.f33164o;
+            return this.f33386o;
         }
 
         public InvocationKind getKind() {
-            return this.f33167r;
+            return this.f33389r;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -5537,45 +5537,45 @@ public final class ProtoBuf {
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
             int i10;
-            int i11 = this.f33169t;
+            int i11 = this.f33391t;
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33163i & 1) == 1) {
-                i10 = CodedOutputStream.computeEnumSize(1, this.f33164o.getNumber());
+            if ((this.f33385i & 1) == 1) {
+                i10 = CodedOutputStream.computeEnumSize(1, this.f33386o.getNumber());
             } else {
                 i10 = 0;
             }
-            for (int i12 = 0; i12 < this.f33165p.size(); i12++) {
-                i10 += CodedOutputStream.computeMessageSize(2, (MessageLite) this.f33165p.get(i12));
+            for (int i12 = 0; i12 < this.f33387p.size(); i12++) {
+                i10 += CodedOutputStream.computeMessageSize(2, (MessageLite) this.f33387p.get(i12));
             }
-            if ((this.f33163i & 2) == 2) {
-                i10 += CodedOutputStream.computeMessageSize(3, this.f33166q);
+            if ((this.f33385i & 2) == 2) {
+                i10 += CodedOutputStream.computeMessageSize(3, this.f33388q);
             }
-            if ((this.f33163i & 4) == 4) {
-                i10 += CodedOutputStream.computeEnumSize(4, this.f33167r.getNumber());
+            if ((this.f33385i & 4) == 4) {
+                i10 += CodedOutputStream.computeEnumSize(4, this.f33389r.getNumber());
             }
-            int size = i10 + this.f33162e.size();
-            this.f33169t = size;
+            int size = i10 + this.f33384e.size();
+            this.f33391t = size;
             return size;
         }
 
         public boolean hasConclusionOfConditionalEffect() {
-            if ((this.f33163i & 2) == 2) {
+            if ((this.f33385i & 2) == 2) {
                 return true;
             }
             return false;
         }
 
         public boolean hasEffectType() {
-            if ((this.f33163i & 1) == 1) {
+            if ((this.f33385i & 1) == 1) {
                 return true;
             }
             return false;
         }
 
         public boolean hasKind() {
-            if ((this.f33163i & 4) == 4) {
+            if ((this.f33385i & 4) == 4) {
                 return true;
             }
             return false;
@@ -5583,7 +5583,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33168s;
+            byte b10 = this.f33390s;
             if (b10 == 1) {
                 return true;
             }
@@ -5592,34 +5592,34 @@ public final class ProtoBuf {
             }
             for (int i10 = 0; i10 < getEffectConstructorArgumentCount(); i10++) {
                 if (!getEffectConstructorArgument(i10).isInitialized()) {
-                    this.f33168s = (byte) 0;
+                    this.f33390s = (byte) 0;
                     return false;
                 }
             }
             if (hasConclusionOfConditionalEffect() && !getConclusionOfConditionalEffect().isInitialized()) {
-                this.f33168s = (byte) 0;
+                this.f33390s = (byte) 0;
                 return false;
             }
-            this.f33168s = (byte) 1;
+            this.f33390s = (byte) 1;
             return true;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            if ((this.f33163i & 1) == 1) {
-                codedOutputStream.writeEnum(1, this.f33164o.getNumber());
+            if ((this.f33385i & 1) == 1) {
+                codedOutputStream.writeEnum(1, this.f33386o.getNumber());
             }
-            for (int i10 = 0; i10 < this.f33165p.size(); i10++) {
-                codedOutputStream.writeMessage(2, (MessageLite) this.f33165p.get(i10));
+            for (int i10 = 0; i10 < this.f33387p.size(); i10++) {
+                codedOutputStream.writeMessage(2, (MessageLite) this.f33387p.get(i10));
             }
-            if ((this.f33163i & 2) == 2) {
-                codedOutputStream.writeMessage(3, this.f33166q);
+            if ((this.f33385i & 2) == 2) {
+                codedOutputStream.writeMessage(3, this.f33388q);
             }
-            if ((this.f33163i & 4) == 4) {
-                codedOutputStream.writeEnum(4, this.f33167r.getNumber());
+            if ((this.f33385i & 4) == 4) {
+                codedOutputStream.writeEnum(4, this.f33389r.getNumber());
             }
-            codedOutputStream.writeRawBytes(this.f33162e);
+            codedOutputStream.writeRawBytes(this.f33384e);
         }
 
         public static Builder newBuilder(Effect effect) {
@@ -5628,7 +5628,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public Effect getDefaultInstanceForType() {
-            return f33161u;
+            return f33383u;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -5643,20 +5643,20 @@ public final class ProtoBuf {
 
         private Effect(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33168s = (byte) -1;
-            this.f33169t = -1;
-            this.f33162e = builder.getUnknownFields();
+            this.f33390s = (byte) -1;
+            this.f33391t = -1;
+            this.f33384e = builder.getUnknownFields();
         }
 
         private Effect(boolean z10) {
-            this.f33168s = (byte) -1;
-            this.f33169t = -1;
-            this.f33162e = ByteString.EMPTY;
+            this.f33390s = (byte) -1;
+            this.f33391t = -1;
+            this.f33384e = ByteString.EMPTY;
         }
 
         private Effect(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33168s = (byte) -1;
-            this.f33169t = -1;
+            this.f33390s = (byte) -1;
+            this.f33391t = -1;
             o();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -5674,24 +5674,24 @@ public final class ProtoBuf {
                                     newInstance.writeRawVarint32(readTag);
                                     newInstance.writeRawVarint32(readEnum);
                                 } else {
-                                    this.f33163i |= 1;
-                                    this.f33164o = valueOf;
+                                    this.f33385i |= 1;
+                                    this.f33386o = valueOf;
                                 }
                             } else if (readTag == 18) {
                                 if (!(z11 & true)) {
-                                    this.f33165p = new ArrayList();
+                                    this.f33387p = new ArrayList();
                                     z11 = true;
                                 }
-                                this.f33165p.add(codedInputStream.readMessage(Expression.PARSER, extensionRegistryLite));
+                                this.f33387p.add(codedInputStream.readMessage(Expression.PARSER, extensionRegistryLite));
                             } else if (readTag == 26) {
-                                Expression.Builder builder = (this.f33163i & 2) == 2 ? this.f33166q.toBuilder() : null;
+                                Expression.Builder builder = (this.f33385i & 2) == 2 ? this.f33388q.toBuilder() : null;
                                 Expression expression = (Expression) codedInputStream.readMessage(Expression.PARSER, extensionRegistryLite);
-                                this.f33166q = expression;
+                                this.f33388q = expression;
                                 if (builder != null) {
                                     builder.mergeFrom(expression);
-                                    this.f33166q = builder.buildPartial();
+                                    this.f33388q = builder.buildPartial();
                                 }
-                                this.f33163i |= 2;
+                                this.f33385i |= 2;
                             } else if (readTag != 32) {
                                 if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                 }
@@ -5702,24 +5702,24 @@ public final class ProtoBuf {
                                     newInstance.writeRawVarint32(readTag);
                                     newInstance.writeRawVarint32(readEnum2);
                                 } else {
-                                    this.f33163i |= 4;
-                                    this.f33167r = valueOf2;
+                                    this.f33385i |= 4;
+                                    this.f33389r = valueOf2;
                                 }
                             }
                         }
                         z10 = true;
                     } catch (Throwable th2) {
                         if (z11 & true) {
-                            this.f33165p = Collections.unmodifiableList(this.f33165p);
+                            this.f33387p = Collections.unmodifiableList(this.f33387p);
                         }
                         try {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33162e = newOutput.toByteString();
+                            this.f33384e = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33162e = newOutput.toByteString();
+                        this.f33384e = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -5730,16 +5730,16 @@ public final class ProtoBuf {
                 }
             }
             if (z11 & true) {
-                this.f33165p = Collections.unmodifiableList(this.f33165p);
+                this.f33387p = Collections.unmodifiableList(this.f33387p);
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33162e = newOutput.toByteString();
+                this.f33384e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33162e = newOutput.toByteString();
+            this.f33384e = newOutput.toByteString();
             e();
         }
     }
@@ -5753,41 +5753,41 @@ public final class ProtoBuf {
         public static Parser<EnumEntry> PARSER = new a();
 
         /* renamed from: s  reason: collision with root package name */
-        private static final EnumEntry f33181s;
+        private static final EnumEntry f33403s;
 
         /* renamed from: i  reason: collision with root package name */
-        private final ByteString f33182i;
+        private final ByteString f33404i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33183o;
+        private int f33405o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33184p;
+        private int f33406p;
 
         /* renamed from: q  reason: collision with root package name */
-        private byte f33185q;
+        private byte f33407q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f33186r;
+        private int f33408r;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.ExtendableBuilder<EnumEntry, Builder> implements EnumEntryOrBuilder {
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33187o;
+            private int f33409o;
 
             /* renamed from: p  reason: collision with root package name */
-            private int f33188p;
+            private int f33410p;
 
             private Builder() {
                 j();
             }
 
-            static /* synthetic */ Builder h() {
-                return i();
+            static /* synthetic */ Builder g() {
+                return h();
             }
 
-            private static Builder i() {
+            private static Builder h() {
                 return new Builder();
             }
 
@@ -5797,11 +5797,11 @@ public final class ProtoBuf {
             public EnumEntry buildPartial() {
                 EnumEntry enumEntry = new EnumEntry(this);
                 int i10 = 1;
-                if ((this.f33187o & 1) != 1) {
+                if ((this.f33409o & 1) != 1) {
                     i10 = 0;
                 }
-                enumEntry.f33184p = this.f33188p;
-                enumEntry.f33183o = i10;
+                enumEntry.f33406p = this.f33410p;
+                enumEntry.f33405o = i10;
                 return enumEntry;
             }
 
@@ -5814,8 +5814,8 @@ public final class ProtoBuf {
             }
 
             public Builder setName(int i10) {
-                this.f33187o |= 1;
-                this.f33188p = i10;
+                this.f33409o |= 1;
+                this.f33410p = i10;
                 return this;
             }
 
@@ -5842,13 +5842,13 @@ public final class ProtoBuf {
                     setName(enumEntry.getName());
                 }
                 f(enumEntry);
-                setUnknownFields(getUnknownFields().concat(enumEntry.f33182i));
+                setUnknownFields(getUnknownFields().concat(enumEntry.f33404i));
                 return this;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.ExtendableBuilder, kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.Builder, kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite.Builder
             public Builder clone() {
-                return i().mergeFrom(buildPartial());
+                return h().mergeFrom(buildPartial());
             }
 
             /* JADX WARN: Removed duplicated region for block: B:15:0x001d  */
@@ -5903,24 +5903,24 @@ public final class ProtoBuf {
 
         static {
             EnumEntry enumEntry = new EnumEntry(true);
-            f33181s = enumEntry;
+            f33403s = enumEntry;
             enumEntry.p();
         }
 
         public static EnumEntry getDefaultInstance() {
-            return f33181s;
+            return f33403s;
         }
 
         public static Builder newBuilder() {
-            return Builder.h();
+            return Builder.g();
         }
 
         private void p() {
-            this.f33184p = 0;
+            this.f33406p = 0;
         }
 
         public int getName() {
-            return this.f33184p;
+            return this.f33406p;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -5931,22 +5931,22 @@ public final class ProtoBuf {
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
             int i10;
-            int i11 = this.f33186r;
+            int i11 = this.f33408r;
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33183o & 1) == 1) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33184p);
+            if ((this.f33405o & 1) == 1) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33406p);
             } else {
                 i10 = 0;
             }
-            int j10 = i10 + j() + this.f33182i.size();
-            this.f33186r = j10;
+            int j10 = i10 + j() + this.f33404i.size();
+            this.f33408r = j10;
             return j10;
         }
 
         public boolean hasName() {
-            if ((this.f33183o & 1) == 1) {
+            if ((this.f33405o & 1) == 1) {
                 return true;
             }
             return false;
@@ -5954,7 +5954,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33185q;
+            byte b10 = this.f33407q;
             if (b10 == 1) {
                 return true;
             }
@@ -5962,10 +5962,10 @@ public final class ProtoBuf {
                 return false;
             }
             if (!i()) {
-                this.f33185q = (byte) 0;
+                this.f33407q = (byte) 0;
                 return false;
             }
-            this.f33185q = (byte) 1;
+            this.f33407q = (byte) 1;
             return true;
         }
 
@@ -5973,11 +5973,11 @@ public final class ProtoBuf {
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
             GeneratedMessageLite.ExtendableMessage.ExtensionWriter k10 = k();
-            if ((this.f33183o & 1) == 1) {
-                codedOutputStream.writeInt32(1, this.f33184p);
+            if ((this.f33405o & 1) == 1) {
+                codedOutputStream.writeInt32(1, this.f33406p);
             }
             k10.writeUntil(h.DEFAULT_DRAG_ANIMATION_DURATION, codedOutputStream);
-            codedOutputStream.writeRawBytes(this.f33182i);
+            codedOutputStream.writeRawBytes(this.f33404i);
         }
 
         public static Builder newBuilder(EnumEntry enumEntry) {
@@ -5986,7 +5986,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public EnumEntry getDefaultInstanceForType() {
-            return f33181s;
+            return f33403s;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -6001,20 +6001,20 @@ public final class ProtoBuf {
 
         private EnumEntry(GeneratedMessageLite.ExtendableBuilder extendableBuilder) {
             super(extendableBuilder);
-            this.f33185q = (byte) -1;
-            this.f33186r = -1;
-            this.f33182i = extendableBuilder.getUnknownFields();
+            this.f33407q = (byte) -1;
+            this.f33408r = -1;
+            this.f33404i = extendableBuilder.getUnknownFields();
         }
 
         private EnumEntry(boolean z10) {
-            this.f33185q = (byte) -1;
-            this.f33186r = -1;
-            this.f33182i = ByteString.EMPTY;
+            this.f33407q = (byte) -1;
+            this.f33408r = -1;
+            this.f33404i = ByteString.EMPTY;
         }
 
         private EnumEntry(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33185q = (byte) -1;
-            this.f33186r = -1;
+            this.f33407q = (byte) -1;
+            this.f33408r = -1;
             p();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -6029,8 +6029,8 @@ public final class ProtoBuf {
                                     if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                     }
                                 } else {
-                                    this.f33183o |= 1;
-                                    this.f33184p = codedInputStream.readInt32();
+                                    this.f33405o |= 1;
+                                    this.f33406p = codedInputStream.readInt32();
                                 }
                             }
                             z10 = true;
@@ -6045,10 +6045,10 @@ public final class ProtoBuf {
                         newInstance.flush();
                     } catch (IOException unused) {
                     } catch (Throwable th3) {
-                        this.f33182i = newOutput.toByteString();
+                        this.f33404i = newOutput.toByteString();
                         throw th3;
                     }
-                    this.f33182i = newOutput.toByteString();
+                    this.f33404i = newOutput.toByteString();
                     e();
                     throw th2;
                 }
@@ -6057,10 +6057,10 @@ public final class ProtoBuf {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33182i = newOutput.toByteString();
+                this.f33404i = newOutput.toByteString();
                 throw th4;
             }
-            this.f33182i = newOutput.toByteString();
+            this.f33404i = newOutput.toByteString();
             e();
         }
     }
@@ -6074,72 +6074,72 @@ public final class ProtoBuf {
         public static Parser<Expression> PARSER = new a();
 
         /* renamed from: x  reason: collision with root package name */
-        private static final Expression f33189x;
+        private static final Expression f33411x;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33190e;
+        private final ByteString f33412e;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f33191i;
+        private int f33413i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33192o;
+        private int f33414o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33193p;
+        private int f33415p;
 
         /* renamed from: q  reason: collision with root package name */
-        private ConstantValue f33194q;
+        private ConstantValue f33416q;
 
         /* renamed from: r  reason: collision with root package name */
-        private Type f33195r;
+        private Type f33417r;
 
         /* renamed from: s  reason: collision with root package name */
-        private int f33196s;
+        private int f33418s;
 
         /* renamed from: t  reason: collision with root package name */
-        private List f33197t;
+        private List f33419t;
 
         /* renamed from: u  reason: collision with root package name */
-        private List f33198u;
+        private List f33420u;
 
         /* renamed from: v  reason: collision with root package name */
-        private byte f33199v;
+        private byte f33421v;
 
         /* renamed from: w  reason: collision with root package name */
-        private int f33200w;
+        private int f33422w;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.Builder<Expression, Builder> implements ExpressionOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33201e;
+            private int f33423e;
 
             /* renamed from: i  reason: collision with root package name */
-            private int f33202i;
+            private int f33424i;
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33203o;
+            private int f33425o;
 
             /* renamed from: p  reason: collision with root package name */
-            private ConstantValue f33204p = ConstantValue.TRUE;
+            private ConstantValue f33426p = ConstantValue.TRUE;
 
             /* renamed from: q  reason: collision with root package name */
-            private Type f33205q = Type.getDefaultInstance();
+            private Type f33427q = Type.getDefaultInstance();
 
             /* renamed from: r  reason: collision with root package name */
-            private int f33206r;
+            private int f33428r;
 
             /* renamed from: s  reason: collision with root package name */
-            private List f33207s;
+            private List f33429s;
 
             /* renamed from: t  reason: collision with root package name */
-            private List f33208t;
+            private List f33430t;
 
             private Builder() {
                 List list = Collections.EMPTY_LIST;
-                this.f33207s = list;
-                this.f33208t = list;
+                this.f33429s = list;
+                this.f33430t = list;
                 f();
             }
 
@@ -6152,16 +6152,16 @@ public final class ProtoBuf {
             }
 
             private void d() {
-                if ((this.f33201e & 32) != 32) {
-                    this.f33207s = new ArrayList(this.f33207s);
-                    this.f33201e |= 32;
+                if ((this.f33423e & 32) != 32) {
+                    this.f33429s = new ArrayList(this.f33429s);
+                    this.f33423e |= 32;
                 }
             }
 
             private void e() {
-                if ((this.f33201e & 64) != 64) {
-                    this.f33208t = new ArrayList(this.f33208t);
-                    this.f33201e |= 64;
+                if ((this.f33423e & 64) != 64) {
+                    this.f33430t = new ArrayList(this.f33430t);
+                    this.f33423e |= 64;
                 }
             }
 
@@ -6170,64 +6170,64 @@ public final class ProtoBuf {
 
             public Expression buildPartial() {
                 Expression expression = new Expression(this);
-                int i10 = this.f33201e;
+                int i10 = this.f33423e;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                expression.f33192o = this.f33202i;
+                expression.f33414o = this.f33424i;
                 if ((i10 & 2) == 2) {
                     i11 |= 2;
                 }
-                expression.f33193p = this.f33203o;
+                expression.f33415p = this.f33425o;
                 if ((i10 & 4) == 4) {
                     i11 |= 4;
                 }
-                expression.f33194q = this.f33204p;
+                expression.f33416q = this.f33426p;
                 if ((i10 & 8) == 8) {
                     i11 |= 8;
                 }
-                expression.f33195r = this.f33205q;
+                expression.f33417r = this.f33427q;
                 if ((i10 & 16) == 16) {
                     i11 |= 16;
                 }
-                expression.f33196s = this.f33206r;
-                if ((this.f33201e & 32) == 32) {
-                    this.f33207s = Collections.unmodifiableList(this.f33207s);
-                    this.f33201e &= -33;
+                expression.f33418s = this.f33428r;
+                if ((this.f33423e & 32) == 32) {
+                    this.f33429s = Collections.unmodifiableList(this.f33429s);
+                    this.f33423e &= -33;
                 }
-                expression.f33197t = this.f33207s;
-                if ((this.f33201e & 64) == 64) {
-                    this.f33208t = Collections.unmodifiableList(this.f33208t);
-                    this.f33201e &= -65;
+                expression.f33419t = this.f33429s;
+                if ((this.f33423e & 64) == 64) {
+                    this.f33430t = Collections.unmodifiableList(this.f33430t);
+                    this.f33423e &= -65;
                 }
-                expression.f33198u = this.f33208t;
-                expression.f33191i = i11;
+                expression.f33420u = this.f33430t;
+                expression.f33413i = i11;
                 return expression;
             }
 
             public Expression getAndArgument(int i10) {
-                return (Expression) this.f33207s.get(i10);
+                return (Expression) this.f33429s.get(i10);
             }
 
             public int getAndArgumentCount() {
-                return this.f33207s.size();
+                return this.f33429s.size();
             }
 
             public Type getIsInstanceType() {
-                return this.f33205q;
+                return this.f33427q;
             }
 
             public Expression getOrArgument(int i10) {
-                return (Expression) this.f33208t.get(i10);
+                return (Expression) this.f33430t.get(i10);
             }
 
             public int getOrArgumentCount() {
-                return this.f33208t.size();
+                return this.f33430t.size();
             }
 
             public boolean hasIsInstanceType() {
-                if ((this.f33201e & 8) == 8) {
+                if ((this.f33423e & 8) == 8) {
                     return true;
                 }
                 return false;
@@ -6252,37 +6252,37 @@ public final class ProtoBuf {
             }
 
             public Builder mergeIsInstanceType(Type type) {
-                if ((this.f33201e & 8) == 8 && this.f33205q != Type.getDefaultInstance()) {
-                    this.f33205q = Type.newBuilder(this.f33205q).mergeFrom(type).buildPartial();
+                if ((this.f33423e & 8) == 8 && this.f33427q != Type.getDefaultInstance()) {
+                    this.f33427q = Type.newBuilder(this.f33427q).mergeFrom(type).buildPartial();
                 } else {
-                    this.f33205q = type;
+                    this.f33427q = type;
                 }
-                this.f33201e |= 8;
+                this.f33423e |= 8;
                 return this;
             }
 
             public Builder setConstantValue(ConstantValue constantValue) {
                 constantValue.getClass();
-                this.f33201e |= 4;
-                this.f33204p = constantValue;
+                this.f33423e |= 4;
+                this.f33426p = constantValue;
                 return this;
             }
 
             public Builder setFlags(int i10) {
-                this.f33201e |= 1;
-                this.f33202i = i10;
+                this.f33423e |= 1;
+                this.f33424i = i10;
                 return this;
             }
 
             public Builder setIsInstanceTypeId(int i10) {
-                this.f33201e |= 16;
-                this.f33206r = i10;
+                this.f33423e |= 16;
+                this.f33428r = i10;
                 return this;
             }
 
             public Builder setValueParameterReference(int i10) {
-                this.f33201e |= 2;
-                this.f33203o = i10;
+                this.f33423e |= 2;
+                this.f33425o = i10;
                 return this;
             }
 
@@ -6325,25 +6325,25 @@ public final class ProtoBuf {
                 if (expression.hasIsInstanceTypeId()) {
                     setIsInstanceTypeId(expression.getIsInstanceTypeId());
                 }
-                if (!expression.f33197t.isEmpty()) {
-                    if (this.f33207s.isEmpty()) {
-                        this.f33207s = expression.f33197t;
-                        this.f33201e &= -33;
+                if (!expression.f33419t.isEmpty()) {
+                    if (this.f33429s.isEmpty()) {
+                        this.f33429s = expression.f33419t;
+                        this.f33423e &= -33;
                     } else {
                         d();
-                        this.f33207s.addAll(expression.f33197t);
+                        this.f33429s.addAll(expression.f33419t);
                     }
                 }
-                if (!expression.f33198u.isEmpty()) {
-                    if (this.f33208t.isEmpty()) {
-                        this.f33208t = expression.f33198u;
-                        this.f33201e &= -65;
+                if (!expression.f33420u.isEmpty()) {
+                    if (this.f33430t.isEmpty()) {
+                        this.f33430t = expression.f33420u;
+                        this.f33423e &= -65;
                     } else {
                         e();
-                        this.f33208t.addAll(expression.f33198u);
+                        this.f33430t.addAll(expression.f33420u);
                     }
                 }
-                setUnknownFields(getUnknownFields().concat(expression.f33190e));
+                setUnknownFields(getUnknownFields().concat(expression.f33412e));
                 return this;
             }
 
@@ -6393,10 +6393,10 @@ public final class ProtoBuf {
             
 
             /* renamed from: e  reason: collision with root package name */
-            private static Internal.EnumLiteMap f33209e = new a();
+            private static Internal.EnumLiteMap f33431e = new a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final int f33211d;
+            private final int f33433d;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
             static class a implements Internal.EnumLiteMap {
@@ -6411,12 +6411,12 @@ public final class ProtoBuf {
             }
 
             ConstantValue(int i10, int i11) {
-                this.f33211d = i11;
+                this.f33433d = i11;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
             public final int getNumber() {
-                return this.f33211d;
+                return this.f33433d;
             }
 
             public static ConstantValue valueOf(int i10) {
@@ -6447,12 +6447,12 @@ public final class ProtoBuf {
 
         static {
             Expression expression = new Expression(true);
-            f33189x = expression;
+            f33411x = expression;
             expression.s();
         }
 
         public static Expression getDefaultInstance() {
-            return f33189x;
+            return f33411x;
         }
 
         public static Builder newBuilder() {
@@ -6460,46 +6460,46 @@ public final class ProtoBuf {
         }
 
         private void s() {
-            this.f33192o = 0;
-            this.f33193p = 0;
-            this.f33194q = ConstantValue.TRUE;
-            this.f33195r = Type.getDefaultInstance();
-            this.f33196s = 0;
+            this.f33414o = 0;
+            this.f33415p = 0;
+            this.f33416q = ConstantValue.TRUE;
+            this.f33417r = Type.getDefaultInstance();
+            this.f33418s = 0;
             List list = Collections.EMPTY_LIST;
-            this.f33197t = list;
-            this.f33198u = list;
+            this.f33419t = list;
+            this.f33420u = list;
         }
 
         public Expression getAndArgument(int i10) {
-            return (Expression) this.f33197t.get(i10);
+            return (Expression) this.f33419t.get(i10);
         }
 
         public int getAndArgumentCount() {
-            return this.f33197t.size();
+            return this.f33419t.size();
         }
 
         public ConstantValue getConstantValue() {
-            return this.f33194q;
+            return this.f33416q;
         }
 
         public int getFlags() {
-            return this.f33192o;
+            return this.f33414o;
         }
 
         public Type getIsInstanceType() {
-            return this.f33195r;
+            return this.f33417r;
         }
 
         public int getIsInstanceTypeId() {
-            return this.f33196s;
+            return this.f33418s;
         }
 
         public Expression getOrArgument(int i10) {
-            return (Expression) this.f33198u.get(i10);
+            return (Expression) this.f33420u.get(i10);
         }
 
         public int getOrArgumentCount() {
-            return this.f33198u.size();
+            return this.f33420u.size();
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -6510,72 +6510,72 @@ public final class ProtoBuf {
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
             int i10;
-            int i11 = this.f33200w;
+            int i11 = this.f33422w;
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33191i & 1) == 1) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33192o);
+            if ((this.f33413i & 1) == 1) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33414o);
             } else {
                 i10 = 0;
             }
-            if ((this.f33191i & 2) == 2) {
-                i10 += CodedOutputStream.computeInt32Size(2, this.f33193p);
+            if ((this.f33413i & 2) == 2) {
+                i10 += CodedOutputStream.computeInt32Size(2, this.f33415p);
             }
-            if ((this.f33191i & 4) == 4) {
-                i10 += CodedOutputStream.computeEnumSize(3, this.f33194q.getNumber());
+            if ((this.f33413i & 4) == 4) {
+                i10 += CodedOutputStream.computeEnumSize(3, this.f33416q.getNumber());
             }
-            if ((this.f33191i & 8) == 8) {
-                i10 += CodedOutputStream.computeMessageSize(4, this.f33195r);
+            if ((this.f33413i & 8) == 8) {
+                i10 += CodedOutputStream.computeMessageSize(4, this.f33417r);
             }
-            if ((this.f33191i & 16) == 16) {
-                i10 += CodedOutputStream.computeInt32Size(5, this.f33196s);
+            if ((this.f33413i & 16) == 16) {
+                i10 += CodedOutputStream.computeInt32Size(5, this.f33418s);
             }
-            for (int i12 = 0; i12 < this.f33197t.size(); i12++) {
-                i10 += CodedOutputStream.computeMessageSize(6, (MessageLite) this.f33197t.get(i12));
+            for (int i12 = 0; i12 < this.f33419t.size(); i12++) {
+                i10 += CodedOutputStream.computeMessageSize(6, (MessageLite) this.f33419t.get(i12));
             }
-            for (int i13 = 0; i13 < this.f33198u.size(); i13++) {
-                i10 += CodedOutputStream.computeMessageSize(7, (MessageLite) this.f33198u.get(i13));
+            for (int i13 = 0; i13 < this.f33420u.size(); i13++) {
+                i10 += CodedOutputStream.computeMessageSize(7, (MessageLite) this.f33420u.get(i13));
             }
-            int size = i10 + this.f33190e.size();
-            this.f33200w = size;
+            int size = i10 + this.f33412e.size();
+            this.f33422w = size;
             return size;
         }
 
         public int getValueParameterReference() {
-            return this.f33193p;
+            return this.f33415p;
         }
 
         public boolean hasConstantValue() {
-            if ((this.f33191i & 4) == 4) {
+            if ((this.f33413i & 4) == 4) {
                 return true;
             }
             return false;
         }
 
         public boolean hasFlags() {
-            if ((this.f33191i & 1) == 1) {
+            if ((this.f33413i & 1) == 1) {
                 return true;
             }
             return false;
         }
 
         public boolean hasIsInstanceType() {
-            if ((this.f33191i & 8) == 8) {
+            if ((this.f33413i & 8) == 8) {
                 return true;
             }
             return false;
         }
 
         public boolean hasIsInstanceTypeId() {
-            if ((this.f33191i & 16) == 16) {
+            if ((this.f33413i & 16) == 16) {
                 return true;
             }
             return false;
         }
 
         public boolean hasValueParameterReference() {
-            if ((this.f33191i & 2) == 2) {
+            if ((this.f33413i & 2) == 2) {
                 return true;
             }
             return false;
@@ -6583,7 +6583,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33199v;
+            byte b10 = this.f33421v;
             if (b10 == 1) {
                 return true;
             }
@@ -6591,50 +6591,50 @@ public final class ProtoBuf {
                 return false;
             }
             if (hasIsInstanceType() && !getIsInstanceType().isInitialized()) {
-                this.f33199v = (byte) 0;
+                this.f33421v = (byte) 0;
                 return false;
             }
             for (int i10 = 0; i10 < getAndArgumentCount(); i10++) {
                 if (!getAndArgument(i10).isInitialized()) {
-                    this.f33199v = (byte) 0;
+                    this.f33421v = (byte) 0;
                     return false;
                 }
             }
             for (int i11 = 0; i11 < getOrArgumentCount(); i11++) {
                 if (!getOrArgument(i11).isInitialized()) {
-                    this.f33199v = (byte) 0;
+                    this.f33421v = (byte) 0;
                     return false;
                 }
             }
-            this.f33199v = (byte) 1;
+            this.f33421v = (byte) 1;
             return true;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            if ((this.f33191i & 1) == 1) {
-                codedOutputStream.writeInt32(1, this.f33192o);
+            if ((this.f33413i & 1) == 1) {
+                codedOutputStream.writeInt32(1, this.f33414o);
             }
-            if ((this.f33191i & 2) == 2) {
-                codedOutputStream.writeInt32(2, this.f33193p);
+            if ((this.f33413i & 2) == 2) {
+                codedOutputStream.writeInt32(2, this.f33415p);
             }
-            if ((this.f33191i & 4) == 4) {
-                codedOutputStream.writeEnum(3, this.f33194q.getNumber());
+            if ((this.f33413i & 4) == 4) {
+                codedOutputStream.writeEnum(3, this.f33416q.getNumber());
             }
-            if ((this.f33191i & 8) == 8) {
-                codedOutputStream.writeMessage(4, this.f33195r);
+            if ((this.f33413i & 8) == 8) {
+                codedOutputStream.writeMessage(4, this.f33417r);
             }
-            if ((this.f33191i & 16) == 16) {
-                codedOutputStream.writeInt32(5, this.f33196s);
+            if ((this.f33413i & 16) == 16) {
+                codedOutputStream.writeInt32(5, this.f33418s);
             }
-            for (int i10 = 0; i10 < this.f33197t.size(); i10++) {
-                codedOutputStream.writeMessage(6, (MessageLite) this.f33197t.get(i10));
+            for (int i10 = 0; i10 < this.f33419t.size(); i10++) {
+                codedOutputStream.writeMessage(6, (MessageLite) this.f33419t.get(i10));
             }
-            for (int i11 = 0; i11 < this.f33198u.size(); i11++) {
-                codedOutputStream.writeMessage(7, (MessageLite) this.f33198u.get(i11));
+            for (int i11 = 0; i11 < this.f33420u.size(); i11++) {
+                codedOutputStream.writeMessage(7, (MessageLite) this.f33420u.get(i11));
             }
-            codedOutputStream.writeRawBytes(this.f33190e);
+            codedOutputStream.writeRawBytes(this.f33412e);
         }
 
         public static Builder newBuilder(Expression expression) {
@@ -6643,7 +6643,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public Expression getDefaultInstanceForType() {
-            return f33189x;
+            return f33411x;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -6658,20 +6658,20 @@ public final class ProtoBuf {
 
         private Expression(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33199v = (byte) -1;
-            this.f33200w = -1;
-            this.f33190e = builder.getUnknownFields();
+            this.f33421v = (byte) -1;
+            this.f33422w = -1;
+            this.f33412e = builder.getUnknownFields();
         }
 
         private Expression(boolean z10) {
-            this.f33199v = (byte) -1;
-            this.f33200w = -1;
-            this.f33190e = ByteString.EMPTY;
+            this.f33421v = (byte) -1;
+            this.f33422w = -1;
+            this.f33412e = ByteString.EMPTY;
         }
 
         private Expression(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33199v = (byte) -1;
-            this.f33200w = -1;
+            this.f33421v = (byte) -1;
+            this.f33422w = -1;
             s();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -6683,11 +6683,11 @@ public final class ProtoBuf {
                         int readTag = codedInputStream.readTag();
                         if (readTag != 0) {
                             if (readTag == 8) {
-                                this.f33191i |= 1;
-                                this.f33192o = codedInputStream.readInt32();
+                                this.f33413i |= 1;
+                                this.f33414o = codedInputStream.readInt32();
                             } else if (readTag == 16) {
-                                this.f33191i |= 2;
-                                this.f33193p = codedInputStream.readInt32();
+                                this.f33413i |= 2;
+                                this.f33415p = codedInputStream.readInt32();
                             } else if (readTag == 24) {
                                 int readEnum = codedInputStream.readEnum();
                                 ConstantValue valueOf = ConstantValue.valueOf(readEnum);
@@ -6695,54 +6695,54 @@ public final class ProtoBuf {
                                     newInstance.writeRawVarint32(readTag);
                                     newInstance.writeRawVarint32(readEnum);
                                 } else {
-                                    this.f33191i |= 4;
-                                    this.f33194q = valueOf;
+                                    this.f33413i |= 4;
+                                    this.f33416q = valueOf;
                                 }
                             } else if (readTag == 34) {
-                                Type.Builder builder = (this.f33191i & 8) == 8 ? this.f33195r.toBuilder() : null;
+                                Type.Builder builder = (this.f33413i & 8) == 8 ? this.f33417r.toBuilder() : null;
                                 Type type = (Type) codedInputStream.readMessage(Type.PARSER, extensionRegistryLite);
-                                this.f33195r = type;
+                                this.f33417r = type;
                                 if (builder != null) {
                                     builder.mergeFrom(type);
-                                    this.f33195r = builder.buildPartial();
+                                    this.f33417r = builder.buildPartial();
                                 }
-                                this.f33191i |= 8;
+                                this.f33413i |= 8;
                             } else if (readTag == 40) {
-                                this.f33191i |= 16;
-                                this.f33196s = codedInputStream.readInt32();
+                                this.f33413i |= 16;
+                                this.f33418s = codedInputStream.readInt32();
                             } else if (readTag == 50) {
                                 if (!(z11 & true)) {
-                                    this.f33197t = new ArrayList();
+                                    this.f33419t = new ArrayList();
                                     z11 |= true;
                                 }
-                                this.f33197t.add(codedInputStream.readMessage(PARSER, extensionRegistryLite));
+                                this.f33419t.add(codedInputStream.readMessage(PARSER, extensionRegistryLite));
                             } else if (readTag != 58) {
                                 if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                 }
                             } else {
                                 if (!(z11 & true)) {
-                                    this.f33198u = new ArrayList();
+                                    this.f33420u = new ArrayList();
                                     z11 |= true;
                                 }
-                                this.f33198u.add(codedInputStream.readMessage(PARSER, extensionRegistryLite));
+                                this.f33420u.add(codedInputStream.readMessage(PARSER, extensionRegistryLite));
                             }
                         }
                         z10 = true;
                     } catch (Throwable th2) {
                         if (z11 & true) {
-                            this.f33197t = Collections.unmodifiableList(this.f33197t);
+                            this.f33419t = Collections.unmodifiableList(this.f33419t);
                         }
                         if (z11 & true) {
-                            this.f33198u = Collections.unmodifiableList(this.f33198u);
+                            this.f33420u = Collections.unmodifiableList(this.f33420u);
                         }
                         try {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33190e = newOutput.toByteString();
+                            this.f33412e = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33190e = newOutput.toByteString();
+                        this.f33412e = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -6753,19 +6753,19 @@ public final class ProtoBuf {
                 }
             }
             if (z11 & true) {
-                this.f33197t = Collections.unmodifiableList(this.f33197t);
+                this.f33419t = Collections.unmodifiableList(this.f33419t);
             }
             if (z11 & true) {
-                this.f33198u = Collections.unmodifiableList(this.f33198u);
+                this.f33420u = Collections.unmodifiableList(this.f33420u);
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33190e = newOutput.toByteString();
+                this.f33412e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33190e = newOutput.toByteString();
+            this.f33412e = newOutput.toByteString();
             e();
         }
     }
@@ -6787,43 +6787,43 @@ public final class ProtoBuf {
         private int G;
 
         /* renamed from: i  reason: collision with root package name */
-        private final ByteString f33212i;
+        private final ByteString f33434i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33213o;
+        private int f33435o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33214p;
+        private int f33436p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f33215q;
+        private int f33437q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f33216r;
+        private int f33438r;
 
         /* renamed from: s  reason: collision with root package name */
-        private Type f33217s;
+        private Type f33439s;
 
         /* renamed from: t  reason: collision with root package name */
-        private int f33218t;
+        private int f33440t;
 
         /* renamed from: u  reason: collision with root package name */
-        private List f33219u;
+        private List f33441u;
 
         /* renamed from: v  reason: collision with root package name */
-        private Type f33220v;
+        private Type f33442v;
 
         /* renamed from: w  reason: collision with root package name */
-        private int f33221w;
+        private int f33443w;
 
         /* renamed from: x  reason: collision with root package name */
-        private List f33222x;
+        private List f33444x;
 
         /* renamed from: y  reason: collision with root package name */
-        private List f33223y;
+        private List f33445y;
 
         /* renamed from: z  reason: collision with root package name */
-        private int f33224z;
+        private int f33446z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.ExtendableBuilder<Function, Builder> implements FunctionOrBuilder {
@@ -6833,48 +6833,48 @@ public final class ProtoBuf {
             private List D;
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33225o;
+            private int f33447o;
 
             /* renamed from: r  reason: collision with root package name */
-            private int f33228r;
+            private int f33450r;
 
             /* renamed from: t  reason: collision with root package name */
-            private int f33230t;
+            private int f33452t;
 
             /* renamed from: u  reason: collision with root package name */
-            private List f33231u;
+            private List f33453u;
 
             /* renamed from: v  reason: collision with root package name */
-            private Type f33232v;
+            private Type f33454v;
 
             /* renamed from: w  reason: collision with root package name */
-            private int f33233w;
+            private int f33455w;
 
             /* renamed from: x  reason: collision with root package name */
-            private List f33234x;
+            private List f33456x;
 
             /* renamed from: y  reason: collision with root package name */
-            private List f33235y;
+            private List f33457y;
 
             /* renamed from: z  reason: collision with root package name */
-            private List f33236z;
+            private List f33458z;
 
             /* renamed from: p  reason: collision with root package name */
-            private int f33226p = 6;
+            private int f33448p = 6;
 
             /* renamed from: q  reason: collision with root package name */
-            private int f33227q = 6;
+            private int f33449q = 6;
 
             /* renamed from: s  reason: collision with root package name */
-            private Type f33229s = Type.getDefaultInstance();
+            private Type f33451s = Type.getDefaultInstance();
 
             private Builder() {
                 List list = Collections.EMPTY_LIST;
-                this.f33231u = list;
-                this.f33232v = Type.getDefaultInstance();
-                this.f33234x = list;
-                this.f33235y = list;
-                this.f33236z = list;
+                this.f33453u = list;
+                this.f33454v = Type.getDefaultInstance();
+                this.f33456x = list;
+                this.f33457y = list;
+                this.f33458z = list;
                 this.A = TypeTable.getDefaultInstance();
                 this.B = list;
                 this.C = Contract.getDefaultInstance();
@@ -6882,53 +6882,53 @@ public final class ProtoBuf {
                 q();
             }
 
-            static /* synthetic */ Builder h() {
-                return i();
+            static /* synthetic */ Builder g() {
+                return h();
             }
 
-            private static Builder i() {
+            private static Builder h() {
                 return new Builder();
             }
 
             private void j() {
-                if ((this.f33225o & 16384) != 16384) {
+                if ((this.f33447o & 16384) != 16384) {
                     this.D = new ArrayList(this.D);
-                    this.f33225o |= 16384;
+                    this.f33447o |= 16384;
                 }
             }
 
             private void k() {
-                if ((this.f33225o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 512) {
-                    this.f33235y = new ArrayList(this.f33235y);
-                    this.f33225o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
+                if ((this.f33447o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 512) {
+                    this.f33457y = new ArrayList(this.f33457y);
+                    this.f33447o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                 }
             }
 
             private void l() {
-                if ((this.f33225o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 256) {
-                    this.f33234x = new ArrayList(this.f33234x);
-                    this.f33225o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
+                if ((this.f33447o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 256) {
+                    this.f33456x = new ArrayList(this.f33456x);
+                    this.f33447o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                 }
             }
 
             private void m() {
-                if ((this.f33225o & 32) != 32) {
-                    this.f33231u = new ArrayList(this.f33231u);
-                    this.f33225o |= 32;
+                if ((this.f33447o & 32) != 32) {
+                    this.f33453u = new ArrayList(this.f33453u);
+                    this.f33447o |= 32;
                 }
             }
 
             private void n() {
-                if ((this.f33225o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 1024) {
-                    this.f33236z = new ArrayList(this.f33236z);
-                    this.f33225o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
+                if ((this.f33447o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 1024) {
+                    this.f33458z = new ArrayList(this.f33458z);
+                    this.f33447o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                 }
             }
 
             private void o() {
-                if ((this.f33225o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 4096) {
+                if ((this.f33447o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 4096) {
                     this.B = new ArrayList(this.B);
-                    this.f33225o |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
+                    this.f33447o |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                 }
             }
 
@@ -6937,75 +6937,75 @@ public final class ProtoBuf {
 
             public Function buildPartial() {
                 Function function = new Function(this);
-                int i10 = this.f33225o;
+                int i10 = this.f33447o;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                function.f33214p = this.f33226p;
+                function.f33436p = this.f33448p;
                 if ((i10 & 2) == 2) {
                     i11 |= 2;
                 }
-                function.f33215q = this.f33227q;
+                function.f33437q = this.f33449q;
                 if ((i10 & 4) == 4) {
                     i11 |= 4;
                 }
-                function.f33216r = this.f33228r;
+                function.f33438r = this.f33450r;
                 if ((i10 & 8) == 8) {
                     i11 |= 8;
                 }
-                function.f33217s = this.f33229s;
+                function.f33439s = this.f33451s;
                 if ((i10 & 16) == 16) {
                     i11 |= 16;
                 }
-                function.f33218t = this.f33230t;
-                if ((this.f33225o & 32) == 32) {
-                    this.f33231u = Collections.unmodifiableList(this.f33231u);
-                    this.f33225o &= -33;
+                function.f33440t = this.f33452t;
+                if ((this.f33447o & 32) == 32) {
+                    this.f33453u = Collections.unmodifiableList(this.f33453u);
+                    this.f33447o &= -33;
                 }
-                function.f33219u = this.f33231u;
+                function.f33441u = this.f33453u;
                 if ((i10 & 64) == 64) {
                     i11 |= 32;
                 }
-                function.f33220v = this.f33232v;
+                function.f33442v = this.f33454v;
                 if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                     i11 |= 64;
                 }
-                function.f33221w = this.f33233w;
-                if ((this.f33225o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
-                    this.f33234x = Collections.unmodifiableList(this.f33234x);
-                    this.f33225o &= -257;
+                function.f33443w = this.f33455w;
+                if ((this.f33447o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+                    this.f33456x = Collections.unmodifiableList(this.f33456x);
+                    this.f33447o &= -257;
                 }
-                function.f33222x = this.f33234x;
-                if ((this.f33225o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
-                    this.f33235y = Collections.unmodifiableList(this.f33235y);
-                    this.f33225o &= -513;
+                function.f33444x = this.f33456x;
+                if ((this.f33447o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+                    this.f33457y = Collections.unmodifiableList(this.f33457y);
+                    this.f33447o &= -513;
                 }
-                function.f33223y = this.f33235y;
-                if ((this.f33225o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
-                    this.f33236z = Collections.unmodifiableList(this.f33236z);
-                    this.f33225o &= -1025;
+                function.f33445y = this.f33457y;
+                if ((this.f33447o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
+                    this.f33458z = Collections.unmodifiableList(this.f33458z);
+                    this.f33447o &= -1025;
                 }
-                function.A = this.f33236z;
+                function.A = this.f33458z;
                 if ((i10 & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
                     i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 }
                 function.B = this.A;
-                if ((this.f33225o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) == 4096) {
+                if ((this.f33447o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) == 4096) {
                     this.B = Collections.unmodifiableList(this.B);
-                    this.f33225o &= -4097;
+                    this.f33447o &= -4097;
                 }
                 function.C = this.B;
                 if ((i10 & 8192) == 8192) {
                     i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                 }
                 function.D = this.C;
-                if ((this.f33225o & 16384) == 16384) {
+                if ((this.f33447o & 16384) == 16384) {
                     this.D = Collections.unmodifiableList(this.D);
-                    this.f33225o &= -16385;
+                    this.f33447o &= -16385;
                 }
                 function.E = this.D;
-                function.f33213o = i11;
+                function.f33435o = i11;
                 return function;
             }
 
@@ -7018,11 +7018,11 @@ public final class ProtoBuf {
             }
 
             public Type getContextReceiverType(int i10) {
-                return (Type) this.f33234x.get(i10);
+                return (Type) this.f33456x.get(i10);
             }
 
             public int getContextReceiverTypeCount() {
-                return this.f33234x.size();
+                return this.f33456x.size();
             }
 
             public Contract getContract() {
@@ -7030,19 +7030,19 @@ public final class ProtoBuf {
             }
 
             public Type getReceiverType() {
-                return this.f33232v;
+                return this.f33454v;
             }
 
             public Type getReturnType() {
-                return this.f33229s;
+                return this.f33451s;
             }
 
             public TypeParameter getTypeParameter(int i10) {
-                return (TypeParameter) this.f33231u.get(i10);
+                return (TypeParameter) this.f33453u.get(i10);
             }
 
             public int getTypeParameterCount() {
-                return this.f33231u.size();
+                return this.f33453u.size();
             }
 
             public TypeTable getTypeTable() {
@@ -7050,43 +7050,43 @@ public final class ProtoBuf {
             }
 
             public ValueParameter getValueParameter(int i10) {
-                return (ValueParameter) this.f33236z.get(i10);
+                return (ValueParameter) this.f33458z.get(i10);
             }
 
             public int getValueParameterCount() {
-                return this.f33236z.size();
+                return this.f33458z.size();
             }
 
             public boolean hasContract() {
-                if ((this.f33225o & 8192) == 8192) {
+                if ((this.f33447o & 8192) == 8192) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasName() {
-                if ((this.f33225o & 4) == 4) {
+                if ((this.f33447o & 4) == 4) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasReceiverType() {
-                if ((this.f33225o & 64) == 64) {
+                if ((this.f33447o & 64) == 64) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasReturnType() {
-                if ((this.f33225o & 8) == 8) {
+                if ((this.f33447o & 8) == 8) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasTypeTable() {
-                if ((this.f33225o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
+                if ((this.f33447o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
                     return true;
                 }
                 return false;
@@ -7136,72 +7136,72 @@ public final class ProtoBuf {
             }
 
             public Builder mergeContract(Contract contract) {
-                if ((this.f33225o & 8192) == 8192 && this.C != Contract.getDefaultInstance()) {
+                if ((this.f33447o & 8192) == 8192 && this.C != Contract.getDefaultInstance()) {
                     this.C = Contract.newBuilder(this.C).mergeFrom(contract).buildPartial();
                 } else {
                     this.C = contract;
                 }
-                this.f33225o |= 8192;
+                this.f33447o |= 8192;
                 return this;
             }
 
             public Builder mergeReceiverType(Type type) {
-                if ((this.f33225o & 64) == 64 && this.f33232v != Type.getDefaultInstance()) {
-                    this.f33232v = Type.newBuilder(this.f33232v).mergeFrom(type).buildPartial();
+                if ((this.f33447o & 64) == 64 && this.f33454v != Type.getDefaultInstance()) {
+                    this.f33454v = Type.newBuilder(this.f33454v).mergeFrom(type).buildPartial();
                 } else {
-                    this.f33232v = type;
+                    this.f33454v = type;
                 }
-                this.f33225o |= 64;
+                this.f33447o |= 64;
                 return this;
             }
 
             public Builder mergeReturnType(Type type) {
-                if ((this.f33225o & 8) == 8 && this.f33229s != Type.getDefaultInstance()) {
-                    this.f33229s = Type.newBuilder(this.f33229s).mergeFrom(type).buildPartial();
+                if ((this.f33447o & 8) == 8 && this.f33451s != Type.getDefaultInstance()) {
+                    this.f33451s = Type.newBuilder(this.f33451s).mergeFrom(type).buildPartial();
                 } else {
-                    this.f33229s = type;
+                    this.f33451s = type;
                 }
-                this.f33225o |= 8;
+                this.f33447o |= 8;
                 return this;
             }
 
             public Builder mergeTypeTable(TypeTable typeTable) {
-                if ((this.f33225o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048 && this.A != TypeTable.getDefaultInstance()) {
+                if ((this.f33447o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048 && this.A != TypeTable.getDefaultInstance()) {
                     this.A = TypeTable.newBuilder(this.A).mergeFrom(typeTable).buildPartial();
                 } else {
                     this.A = typeTable;
                 }
-                this.f33225o |= RecyclerView.ItemAnimator.FLAG_MOVED;
+                this.f33447o |= RecyclerView.ItemAnimator.FLAG_MOVED;
                 return this;
             }
 
             public Builder setFlags(int i10) {
-                this.f33225o |= 1;
-                this.f33226p = i10;
+                this.f33447o |= 1;
+                this.f33448p = i10;
                 return this;
             }
 
             public Builder setName(int i10) {
-                this.f33225o |= 4;
-                this.f33228r = i10;
+                this.f33447o |= 4;
+                this.f33450r = i10;
                 return this;
             }
 
             public Builder setOldFlags(int i10) {
-                this.f33225o |= 2;
-                this.f33227q = i10;
+                this.f33447o |= 2;
+                this.f33449q = i10;
                 return this;
             }
 
             public Builder setReceiverTypeId(int i10) {
-                this.f33225o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                this.f33233w = i10;
+                this.f33447o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                this.f33455w = i10;
                 return this;
             }
 
             public Builder setReturnTypeId(int i10) {
-                this.f33225o |= 16;
-                this.f33230t = i10;
+                this.f33447o |= 16;
+                this.f33452t = i10;
                 return this;
             }
 
@@ -7239,13 +7239,13 @@ public final class ProtoBuf {
                 if (function.hasReturnTypeId()) {
                     setReturnTypeId(function.getReturnTypeId());
                 }
-                if (!function.f33219u.isEmpty()) {
-                    if (this.f33231u.isEmpty()) {
-                        this.f33231u = function.f33219u;
-                        this.f33225o &= -33;
+                if (!function.f33441u.isEmpty()) {
+                    if (this.f33453u.isEmpty()) {
+                        this.f33453u = function.f33441u;
+                        this.f33447o &= -33;
                     } else {
                         m();
-                        this.f33231u.addAll(function.f33219u);
+                        this.f33453u.addAll(function.f33441u);
                     }
                 }
                 if (function.hasReceiverType()) {
@@ -7254,31 +7254,31 @@ public final class ProtoBuf {
                 if (function.hasReceiverTypeId()) {
                     setReceiverTypeId(function.getReceiverTypeId());
                 }
-                if (!function.f33222x.isEmpty()) {
-                    if (this.f33234x.isEmpty()) {
-                        this.f33234x = function.f33222x;
-                        this.f33225o &= -257;
+                if (!function.f33444x.isEmpty()) {
+                    if (this.f33456x.isEmpty()) {
+                        this.f33456x = function.f33444x;
+                        this.f33447o &= -257;
                     } else {
                         l();
-                        this.f33234x.addAll(function.f33222x);
+                        this.f33456x.addAll(function.f33444x);
                     }
                 }
-                if (!function.f33223y.isEmpty()) {
-                    if (this.f33235y.isEmpty()) {
-                        this.f33235y = function.f33223y;
-                        this.f33225o &= -513;
+                if (!function.f33445y.isEmpty()) {
+                    if (this.f33457y.isEmpty()) {
+                        this.f33457y = function.f33445y;
+                        this.f33447o &= -513;
                     } else {
                         k();
-                        this.f33235y.addAll(function.f33223y);
+                        this.f33457y.addAll(function.f33445y);
                     }
                 }
                 if (!function.A.isEmpty()) {
-                    if (this.f33236z.isEmpty()) {
-                        this.f33236z = function.A;
-                        this.f33225o &= -1025;
+                    if (this.f33458z.isEmpty()) {
+                        this.f33458z = function.A;
+                        this.f33447o &= -1025;
                     } else {
                         n();
-                        this.f33236z.addAll(function.A);
+                        this.f33458z.addAll(function.A);
                     }
                 }
                 if (function.hasTypeTable()) {
@@ -7287,7 +7287,7 @@ public final class ProtoBuf {
                 if (!function.C.isEmpty()) {
                     if (this.B.isEmpty()) {
                         this.B = function.C;
-                        this.f33225o &= -4097;
+                        this.f33447o &= -4097;
                     } else {
                         o();
                         this.B.addAll(function.C);
@@ -7299,20 +7299,20 @@ public final class ProtoBuf {
                 if (!function.E.isEmpty()) {
                     if (this.D.isEmpty()) {
                         this.D = function.E;
-                        this.f33225o &= -16385;
+                        this.f33447o &= -16385;
                     } else {
                         j();
                         this.D.addAll(function.E);
                     }
                 }
                 f(function);
-                setUnknownFields(getUnknownFields().concat(function.f33212i));
+                setUnknownFields(getUnknownFields().concat(function.f33434i));
                 return this;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.ExtendableBuilder, kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.Builder, kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite.Builder
             public Builder clone() {
-                return i().mergeFrom(buildPartial());
+                return h().mergeFrom(buildPartial());
             }
 
             /* JADX WARN: Removed duplicated region for block: B:15:0x001d  */
@@ -7372,17 +7372,17 @@ public final class ProtoBuf {
         }
 
         private void J() {
-            this.f33214p = 6;
-            this.f33215q = 6;
-            this.f33216r = 0;
-            this.f33217s = Type.getDefaultInstance();
-            this.f33218t = 0;
+            this.f33436p = 6;
+            this.f33437q = 6;
+            this.f33438r = 0;
+            this.f33439s = Type.getDefaultInstance();
+            this.f33440t = 0;
             List list = Collections.EMPTY_LIST;
-            this.f33219u = list;
-            this.f33220v = Type.getDefaultInstance();
-            this.f33221w = 0;
-            this.f33222x = list;
-            this.f33223y = list;
+            this.f33441u = list;
+            this.f33442v = Type.getDefaultInstance();
+            this.f33443w = 0;
+            this.f33444x = list;
+            this.f33445y = list;
             this.A = list;
             this.B = TypeTable.getDefaultInstance();
             this.C = list;
@@ -7395,7 +7395,7 @@ public final class ProtoBuf {
         }
 
         public static Builder newBuilder() {
-            return Builder.h();
+            return Builder.g();
         }
 
         public static Function parseFrom(InputStream inputStream, ExtensionRegistryLite extensionRegistryLite) {
@@ -7411,19 +7411,19 @@ public final class ProtoBuf {
         }
 
         public Type getContextReceiverType(int i10) {
-            return (Type) this.f33222x.get(i10);
+            return (Type) this.f33444x.get(i10);
         }
 
         public int getContextReceiverTypeCount() {
-            return this.f33222x.size();
+            return this.f33444x.size();
         }
 
         public List<Integer> getContextReceiverTypeIdList() {
-            return this.f33223y;
+            return this.f33445y;
         }
 
         public List<Type> getContextReceiverTypeList() {
-            return this.f33222x;
+            return this.f33444x;
         }
 
         public Contract getContract() {
@@ -7431,15 +7431,15 @@ public final class ProtoBuf {
         }
 
         public int getFlags() {
-            return this.f33214p;
+            return this.f33436p;
         }
 
         public int getName() {
-            return this.f33216r;
+            return this.f33438r;
         }
 
         public int getOldFlags() {
-            return this.f33215q;
+            return this.f33437q;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -7448,19 +7448,19 @@ public final class ProtoBuf {
         }
 
         public Type getReceiverType() {
-            return this.f33220v;
+            return this.f33442v;
         }
 
         public int getReceiverTypeId() {
-            return this.f33221w;
+            return this.f33443w;
         }
 
         public Type getReturnType() {
-            return this.f33217s;
+            return this.f33439s;
         }
 
         public int getReturnTypeId() {
-            return this.f33218t;
+            return this.f33440t;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -7470,48 +7470,48 @@ public final class ProtoBuf {
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33213o & 2) == 2) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33215q);
+            if ((this.f33435o & 2) == 2) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33437q);
             } else {
                 i10 = 0;
             }
-            if ((this.f33213o & 4) == 4) {
-                i10 += CodedOutputStream.computeInt32Size(2, this.f33216r);
+            if ((this.f33435o & 4) == 4) {
+                i10 += CodedOutputStream.computeInt32Size(2, this.f33438r);
             }
-            if ((this.f33213o & 8) == 8) {
-                i10 += CodedOutputStream.computeMessageSize(3, this.f33217s);
+            if ((this.f33435o & 8) == 8) {
+                i10 += CodedOutputStream.computeMessageSize(3, this.f33439s);
             }
-            for (int i12 = 0; i12 < this.f33219u.size(); i12++) {
-                i10 += CodedOutputStream.computeMessageSize(4, (MessageLite) this.f33219u.get(i12));
+            for (int i12 = 0; i12 < this.f33441u.size(); i12++) {
+                i10 += CodedOutputStream.computeMessageSize(4, (MessageLite) this.f33441u.get(i12));
             }
-            if ((this.f33213o & 32) == 32) {
-                i10 += CodedOutputStream.computeMessageSize(5, this.f33220v);
+            if ((this.f33435o & 32) == 32) {
+                i10 += CodedOutputStream.computeMessageSize(5, this.f33442v);
             }
             for (int i13 = 0; i13 < this.A.size(); i13++) {
                 i10 += CodedOutputStream.computeMessageSize(6, (MessageLite) this.A.get(i13));
             }
-            if ((this.f33213o & 16) == 16) {
-                i10 += CodedOutputStream.computeInt32Size(7, this.f33218t);
+            if ((this.f33435o & 16) == 16) {
+                i10 += CodedOutputStream.computeInt32Size(7, this.f33440t);
             }
-            if ((this.f33213o & 64) == 64) {
-                i10 += CodedOutputStream.computeInt32Size(8, this.f33221w);
+            if ((this.f33435o & 64) == 64) {
+                i10 += CodedOutputStream.computeInt32Size(8, this.f33443w);
             }
-            if ((this.f33213o & 1) == 1) {
-                i10 += CodedOutputStream.computeInt32Size(9, this.f33214p);
+            if ((this.f33435o & 1) == 1) {
+                i10 += CodedOutputStream.computeInt32Size(9, this.f33436p);
             }
-            for (int i14 = 0; i14 < this.f33222x.size(); i14++) {
-                i10 += CodedOutputStream.computeMessageSize(10, (MessageLite) this.f33222x.get(i14));
+            for (int i14 = 0; i14 < this.f33444x.size(); i14++) {
+                i10 += CodedOutputStream.computeMessageSize(10, (MessageLite) this.f33444x.get(i14));
             }
             int i15 = 0;
-            for (int i16 = 0; i16 < this.f33223y.size(); i16++) {
-                i15 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33223y.get(i16)).intValue());
+            for (int i16 = 0; i16 < this.f33445y.size(); i16++) {
+                i15 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33445y.get(i16)).intValue());
             }
             int i17 = i10 + i15;
             if (!getContextReceiverTypeIdList().isEmpty()) {
                 i17 = i17 + 1 + CodedOutputStream.computeInt32SizeNoTag(i15);
             }
-            this.f33224z = i15;
-            if ((this.f33213o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+            this.f33446z = i15;
+            if ((this.f33435o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                 i17 += CodedOutputStream.computeMessageSize(30, this.B);
             }
             int i18 = 0;
@@ -7519,27 +7519,27 @@ public final class ProtoBuf {
                 i18 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.C.get(i19)).intValue());
             }
             int size = i17 + i18 + (getVersionRequirementList().size() * 2);
-            if ((this.f33213o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+            if ((this.f33435o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
                 size += CodedOutputStream.computeMessageSize(32, this.D);
             }
             for (int i20 = 0; i20 < this.E.size(); i20++) {
                 size += CodedOutputStream.computeMessageSize(33, (MessageLite) this.E.get(i20));
             }
-            int j10 = size + j() + this.f33212i.size();
+            int j10 = size + j() + this.f33434i.size();
             this.G = j10;
             return j10;
         }
 
         public TypeParameter getTypeParameter(int i10) {
-            return (TypeParameter) this.f33219u.get(i10);
+            return (TypeParameter) this.f33441u.get(i10);
         }
 
         public int getTypeParameterCount() {
-            return this.f33219u.size();
+            return this.f33441u.size();
         }
 
         public List<TypeParameter> getTypeParameterList() {
-            return this.f33219u;
+            return this.f33441u;
         }
 
         public TypeTable getTypeTable() {
@@ -7563,63 +7563,63 @@ public final class ProtoBuf {
         }
 
         public boolean hasContract() {
-            if ((this.f33213o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+            if ((this.f33435o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
                 return true;
             }
             return false;
         }
 
         public boolean hasFlags() {
-            if ((this.f33213o & 1) == 1) {
+            if ((this.f33435o & 1) == 1) {
                 return true;
             }
             return false;
         }
 
         public boolean hasName() {
-            if ((this.f33213o & 4) == 4) {
+            if ((this.f33435o & 4) == 4) {
                 return true;
             }
             return false;
         }
 
         public boolean hasOldFlags() {
-            if ((this.f33213o & 2) == 2) {
+            if ((this.f33435o & 2) == 2) {
                 return true;
             }
             return false;
         }
 
         public boolean hasReceiverType() {
-            if ((this.f33213o & 32) == 32) {
+            if ((this.f33435o & 32) == 32) {
                 return true;
             }
             return false;
         }
 
         public boolean hasReceiverTypeId() {
-            if ((this.f33213o & 64) == 64) {
+            if ((this.f33435o & 64) == 64) {
                 return true;
             }
             return false;
         }
 
         public boolean hasReturnType() {
-            if ((this.f33213o & 8) == 8) {
+            if ((this.f33435o & 8) == 8) {
                 return true;
             }
             return false;
         }
 
         public boolean hasReturnTypeId() {
-            if ((this.f33213o & 16) == 16) {
+            if ((this.f33435o & 16) == 16) {
                 return true;
             }
             return false;
         }
 
         public boolean hasTypeTable() {
-            if ((this.f33213o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+            if ((this.f33435o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                 return true;
             }
             return false;
@@ -7690,57 +7690,57 @@ public final class ProtoBuf {
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
             GeneratedMessageLite.ExtendableMessage.ExtensionWriter k10 = k();
-            if ((this.f33213o & 2) == 2) {
-                codedOutputStream.writeInt32(1, this.f33215q);
+            if ((this.f33435o & 2) == 2) {
+                codedOutputStream.writeInt32(1, this.f33437q);
             }
-            if ((this.f33213o & 4) == 4) {
-                codedOutputStream.writeInt32(2, this.f33216r);
+            if ((this.f33435o & 4) == 4) {
+                codedOutputStream.writeInt32(2, this.f33438r);
             }
-            if ((this.f33213o & 8) == 8) {
-                codedOutputStream.writeMessage(3, this.f33217s);
+            if ((this.f33435o & 8) == 8) {
+                codedOutputStream.writeMessage(3, this.f33439s);
             }
-            for (int i10 = 0; i10 < this.f33219u.size(); i10++) {
-                codedOutputStream.writeMessage(4, (MessageLite) this.f33219u.get(i10));
+            for (int i10 = 0; i10 < this.f33441u.size(); i10++) {
+                codedOutputStream.writeMessage(4, (MessageLite) this.f33441u.get(i10));
             }
-            if ((this.f33213o & 32) == 32) {
-                codedOutputStream.writeMessage(5, this.f33220v);
+            if ((this.f33435o & 32) == 32) {
+                codedOutputStream.writeMessage(5, this.f33442v);
             }
             for (int i11 = 0; i11 < this.A.size(); i11++) {
                 codedOutputStream.writeMessage(6, (MessageLite) this.A.get(i11));
             }
-            if ((this.f33213o & 16) == 16) {
-                codedOutputStream.writeInt32(7, this.f33218t);
+            if ((this.f33435o & 16) == 16) {
+                codedOutputStream.writeInt32(7, this.f33440t);
             }
-            if ((this.f33213o & 64) == 64) {
-                codedOutputStream.writeInt32(8, this.f33221w);
+            if ((this.f33435o & 64) == 64) {
+                codedOutputStream.writeInt32(8, this.f33443w);
             }
-            if ((this.f33213o & 1) == 1) {
-                codedOutputStream.writeInt32(9, this.f33214p);
+            if ((this.f33435o & 1) == 1) {
+                codedOutputStream.writeInt32(9, this.f33436p);
             }
-            for (int i12 = 0; i12 < this.f33222x.size(); i12++) {
-                codedOutputStream.writeMessage(10, (MessageLite) this.f33222x.get(i12));
+            for (int i12 = 0; i12 < this.f33444x.size(); i12++) {
+                codedOutputStream.writeMessage(10, (MessageLite) this.f33444x.get(i12));
             }
             if (getContextReceiverTypeIdList().size() > 0) {
                 codedOutputStream.writeRawVarint32(90);
-                codedOutputStream.writeRawVarint32(this.f33224z);
+                codedOutputStream.writeRawVarint32(this.f33446z);
             }
-            for (int i13 = 0; i13 < this.f33223y.size(); i13++) {
-                codedOutputStream.writeInt32NoTag(((Integer) this.f33223y.get(i13)).intValue());
+            for (int i13 = 0; i13 < this.f33445y.size(); i13++) {
+                codedOutputStream.writeInt32NoTag(((Integer) this.f33445y.get(i13)).intValue());
             }
-            if ((this.f33213o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+            if ((this.f33435o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                 codedOutputStream.writeMessage(30, this.B);
             }
             for (int i14 = 0; i14 < this.C.size(); i14++) {
                 codedOutputStream.writeInt32(31, ((Integer) this.C.get(i14)).intValue());
             }
-            if ((this.f33213o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+            if ((this.f33435o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
                 codedOutputStream.writeMessage(32, this.D);
             }
             for (int i15 = 0; i15 < this.E.size(); i15++) {
                 codedOutputStream.writeMessage(33, (MessageLite) this.E.get(i15));
             }
             k10.writeUntil(19000, codedOutputStream);
-            codedOutputStream.writeRawBytes(this.f33212i);
+            codedOutputStream.writeRawBytes(this.f33434i);
         }
 
         public static Builder newBuilder(Function function) {
@@ -7764,17 +7764,17 @@ public final class ProtoBuf {
 
         private Function(GeneratedMessageLite.ExtendableBuilder extendableBuilder) {
             super(extendableBuilder);
-            this.f33224z = -1;
+            this.f33446z = -1;
             this.F = (byte) -1;
             this.G = -1;
-            this.f33212i = extendableBuilder.getUnknownFields();
+            this.f33434i = extendableBuilder.getUnknownFields();
         }
 
         private Function(boolean z10) {
-            this.f33224z = -1;
+            this.f33446z = -1;
             this.F = (byte) -1;
             this.G = -1;
-            this.f33212i = ByteString.EMPTY;
+            this.f33434i = ByteString.EMPTY;
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -7783,7 +7783,7 @@ public final class ProtoBuf {
         /* JADX WARN: Type inference failed for: r8v2, types: [boolean] */
         private Function(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
             boolean z10;
-            this.f33224z = -1;
+            this.f33446z = -1;
             this.F = (byte) -1;
             this.G = -1;
             J();
@@ -7807,28 +7807,28 @@ public final class ProtoBuf {
                                     z13 = z13;
                                 case 8:
                                     z10 = z11;
-                                    this.f33213o |= 2;
-                                    this.f33215q = codedInputStream.readInt32();
+                                    this.f33435o |= 2;
+                                    this.f33437q = codedInputStream.readInt32();
                                     continue;
                                     z11 = z10;
                                     z13 = z13;
                                 case 16:
                                     z10 = z11;
-                                    this.f33213o |= 4;
-                                    this.f33216r = codedInputStream.readInt32();
+                                    this.f33435o |= 4;
+                                    this.f33438r = codedInputStream.readInt32();
                                     continue;
                                     z11 = z10;
                                     z13 = z13;
                                 case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
                                     z10 = z11;
-                                    Type.Builder builder = (this.f33213o & 8) == 8 ? this.f33217s.toBuilder() : null;
+                                    Type.Builder builder = (this.f33435o & 8) == 8 ? this.f33439s.toBuilder() : null;
                                     Type type = (Type) codedInputStream.readMessage(Type.PARSER, extensionRegistryLite);
-                                    this.f33217s = type;
+                                    this.f33439s = type;
                                     if (builder != null) {
                                         builder.mergeFrom(type);
-                                        this.f33217s = builder.buildPartial();
+                                        this.f33439s = builder.buildPartial();
                                     }
-                                    this.f33213o |= 8;
+                                    this.f33435o |= 8;
                                     continue;
                                     z11 = z10;
                                     z13 = z13;
@@ -7837,23 +7837,23 @@ public final class ProtoBuf {
                                     boolean z14 = (z13 ? 1 : 0) & true;
                                     z13 = z13;
                                     if (!z14) {
-                                        this.f33219u = new ArrayList();
+                                        this.f33441u = new ArrayList();
                                         z13 = (z13 ? 1 : 0) | true;
                                     }
-                                    this.f33219u.add(codedInputStream.readMessage(TypeParameter.PARSER, extensionRegistryLite));
+                                    this.f33441u.add(codedInputStream.readMessage(TypeParameter.PARSER, extensionRegistryLite));
                                     continue;
                                     z11 = z10;
                                     z13 = z13;
                                 case 42:
                                     z10 = z11;
-                                    Type.Builder builder2 = (this.f33213o & 32) == 32 ? this.f33220v.toBuilder() : null;
+                                    Type.Builder builder2 = (this.f33435o & 32) == 32 ? this.f33442v.toBuilder() : null;
                                     Type type2 = (Type) codedInputStream.readMessage(Type.PARSER, extensionRegistryLite);
-                                    this.f33220v = type2;
+                                    this.f33442v = type2;
                                     if (builder2 != null) {
                                         builder2.mergeFrom(type2);
-                                        this.f33220v = builder2.buildPartial();
+                                        this.f33442v = builder2.buildPartial();
                                     }
-                                    this.f33213o |= 32;
+                                    this.f33435o |= 32;
                                     continue;
                                     z11 = z10;
                                     z13 = z13;
@@ -7871,22 +7871,22 @@ public final class ProtoBuf {
                                     z13 = z13;
                                 case ChatViewRecyclerTypes.SHARED_CUSTOM_THEME_EMBED /* 56 */:
                                     z10 = z11;
-                                    this.f33213o |= 16;
-                                    this.f33218t = codedInputStream.readInt32();
+                                    this.f33435o |= 16;
+                                    this.f33440t = codedInputStream.readInt32();
                                     continue;
                                     z11 = z10;
                                     z13 = z13;
                                 case 64:
                                     z10 = z11;
-                                    this.f33213o |= 64;
-                                    this.f33221w = codedInputStream.readInt32();
+                                    this.f33435o |= 64;
+                                    this.f33443w = codedInputStream.readInt32();
                                     continue;
                                     z11 = z10;
                                     z13 = z13;
                                 case 72:
                                     z10 = z11;
-                                    this.f33213o |= 1;
-                                    this.f33214p = codedInputStream.readInt32();
+                                    this.f33435o |= 1;
+                                    this.f33436p = codedInputStream.readInt32();
                                     continue;
                                     z11 = z10;
                                     z13 = z13;
@@ -7895,10 +7895,10 @@ public final class ProtoBuf {
                                     boolean z16 = (z13 ? 1 : 0) & true;
                                     z13 = z13;
                                     if (!z16) {
-                                        this.f33222x = new ArrayList();
+                                        this.f33444x = new ArrayList();
                                         z13 = (z13 ? 1 : 0) | true;
                                     }
-                                    this.f33222x.add(codedInputStream.readMessage(Type.PARSER, extensionRegistryLite));
+                                    this.f33444x.add(codedInputStream.readMessage(Type.PARSER, extensionRegistryLite));
                                     continue;
                                     z11 = z10;
                                     z13 = z13;
@@ -7907,10 +7907,10 @@ public final class ProtoBuf {
                                     boolean z17 = (z13 ? 1 : 0) & true;
                                     z13 = z13;
                                     if (!z17) {
-                                        this.f33223y = new ArrayList();
+                                        this.f33445y = new ArrayList();
                                         z13 = (z13 ? 1 : 0) | true;
                                     }
-                                    this.f33223y.add(Integer.valueOf(codedInputStream.readInt32()));
+                                    this.f33445y.add(Integer.valueOf(codedInputStream.readInt32()));
                                     continue;
                                     z11 = z10;
                                     z13 = z13;
@@ -7922,12 +7922,12 @@ public final class ProtoBuf {
                                     if (!z18) {
                                         z13 = z13;
                                         if (codedInputStream.getBytesUntilLimit() > 0) {
-                                            this.f33223y = new ArrayList();
+                                            this.f33445y = new ArrayList();
                                             z13 = (z13 ? 1 : 0) | true;
                                         }
                                     }
                                     while (codedInputStream.getBytesUntilLimit() > 0) {
-                                        this.f33223y.add(Integer.valueOf(codedInputStream.readInt32()));
+                                        this.f33445y.add(Integer.valueOf(codedInputStream.readInt32()));
                                     }
                                     codedInputStream.popLimit(pushLimit);
                                     continue;
@@ -7935,14 +7935,14 @@ public final class ProtoBuf {
                                     z13 = z13;
                                 case 242:
                                     z10 = z11;
-                                    TypeTable.Builder builder3 = (this.f33213o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128 ? this.B.toBuilder() : null;
+                                    TypeTable.Builder builder3 = (this.f33435o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128 ? this.B.toBuilder() : null;
                                     TypeTable typeTable = (TypeTable) codedInputStream.readMessage(TypeTable.PARSER, extensionRegistryLite);
                                     this.B = typeTable;
                                     if (builder3 != null) {
                                         builder3.mergeFrom(typeTable);
                                         this.B = builder3.buildPartial();
                                     }
-                                    this.f33213o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                                    this.f33435o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                                     continue;
                                     z11 = z10;
                                     z13 = z13;
@@ -7979,14 +7979,14 @@ public final class ProtoBuf {
                                     z11 = z10;
                                     z13 = z13;
                                 case 258:
-                                    Contract.Builder builder4 = (this.f33213o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256 ? this.D.toBuilder() : null;
+                                    Contract.Builder builder4 = (this.f33435o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256 ? this.D.toBuilder() : null;
                                     Contract contract = (Contract) codedInputStream.readMessage(Contract.PARSER, extensionRegistryLite);
                                     this.D = contract;
                                     if (builder4 != null) {
                                         builder4.mergeFrom(contract);
                                         this.D = builder4.buildPartial();
                                     }
-                                    this.f33213o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
+                                    this.f33435o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                                     z13 = z13;
                                     break;
                                 case 266:
@@ -8016,16 +8016,16 @@ public final class ProtoBuf {
                             z13 = z13;
                         } catch (Throwable th2) {
                             if ((z13 ? 1 : 0) & true) {
-                                this.f33219u = Collections.unmodifiableList(this.f33219u);
+                                this.f33441u = Collections.unmodifiableList(this.f33441u);
                             }
                             if (((z13 ? 1 : 0) & true) == r82) {
                                 this.A = Collections.unmodifiableList(this.A);
                             }
                             if ((z13 ? 1 : 0) & true) {
-                                this.f33222x = Collections.unmodifiableList(this.f33222x);
+                                this.f33444x = Collections.unmodifiableList(this.f33444x);
                             }
                             if ((z13 ? 1 : 0) & true) {
-                                this.f33223y = Collections.unmodifiableList(this.f33223y);
+                                this.f33445y = Collections.unmodifiableList(this.f33445y);
                             }
                             if ((z13 ? 1 : 0) & true) {
                                 this.C = Collections.unmodifiableList(this.C);
@@ -8037,10 +8037,10 @@ public final class ProtoBuf {
                                 newInstance.flush();
                             } catch (IOException unused) {
                             } catch (Throwable th3) {
-                                this.f33212i = newOutput.toByteString();
+                                this.f33434i = newOutput.toByteString();
                                 throw th3;
                             }
-                            this.f33212i = newOutput.toByteString();
+                            this.f33434i = newOutput.toByteString();
                             e();
                             throw th2;
                         }
@@ -8051,16 +8051,16 @@ public final class ProtoBuf {
                     }
                 } else {
                     if ((z13 ? 1 : 0) & true) {
-                        this.f33219u = Collections.unmodifiableList(this.f33219u);
+                        this.f33441u = Collections.unmodifiableList(this.f33441u);
                     }
                     if ((z13 ? 1 : 0) & true) {
                         this.A = Collections.unmodifiableList(this.A);
                     }
                     if ((z13 ? 1 : 0) & true) {
-                        this.f33222x = Collections.unmodifiableList(this.f33222x);
+                        this.f33444x = Collections.unmodifiableList(this.f33444x);
                     }
                     if ((z13 ? 1 : 0) & true) {
-                        this.f33223y = Collections.unmodifiableList(this.f33223y);
+                        this.f33445y = Collections.unmodifiableList(this.f33445y);
                     }
                     if ((z13 ? 1 : 0) & true) {
                         this.C = Collections.unmodifiableList(this.C);
@@ -8072,10 +8072,10 @@ public final class ProtoBuf {
                         newInstance.flush();
                     } catch (IOException unused2) {
                     } catch (Throwable th4) {
-                        this.f33212i = newOutput.toByteString();
+                        this.f33434i = newOutput.toByteString();
                         throw th4;
                     }
-                    this.f33212i = newOutput.toByteString();
+                    this.f33434i = newOutput.toByteString();
                     e();
                     return;
                 }
@@ -8096,10 +8096,10 @@ public final class ProtoBuf {
         
 
         /* renamed from: e  reason: collision with root package name */
-        private static Internal.EnumLiteMap f33237e = new a();
+        private static Internal.EnumLiteMap f33459e = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f33239d;
+        private final int f33461d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         static class a implements Internal.EnumLiteMap {
@@ -8114,12 +8114,12 @@ public final class ProtoBuf {
         }
 
         MemberKind(int i10, int i11) {
-            this.f33239d = i11;
+            this.f33461d = i11;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
         public final int getNumber() {
-            return this.f33239d;
+            return this.f33461d;
         }
 
         public static MemberKind valueOf(int i10) {
@@ -8148,10 +8148,10 @@ public final class ProtoBuf {
         
 
         /* renamed from: e  reason: collision with root package name */
-        private static Internal.EnumLiteMap f33240e = new a();
+        private static Internal.EnumLiteMap f33462e = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f33242d;
+        private final int f33464d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         static class a implements Internal.EnumLiteMap {
@@ -8166,12 +8166,12 @@ public final class ProtoBuf {
         }
 
         Modality(int i10, int i11) {
-            this.f33242d = i11;
+            this.f33464d = i11;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
         public final int getNumber() {
-            return this.f33242d;
+            return this.f33464d;
         }
 
         public static Modality valueOf(int i10) {
@@ -8196,92 +8196,92 @@ public final class ProtoBuf {
         public static Parser<Package> PARSER = new a();
 
         /* renamed from: w  reason: collision with root package name */
-        private static final Package f33243w;
+        private static final Package f33465w;
 
         /* renamed from: i  reason: collision with root package name */
-        private final ByteString f33244i;
+        private final ByteString f33466i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33245o;
+        private int f33467o;
 
         /* renamed from: p  reason: collision with root package name */
-        private List f33246p;
+        private List f33468p;
 
         /* renamed from: q  reason: collision with root package name */
-        private List f33247q;
+        private List f33469q;
 
         /* renamed from: r  reason: collision with root package name */
-        private List f33248r;
+        private List f33470r;
 
         /* renamed from: s  reason: collision with root package name */
-        private TypeTable f33249s;
+        private TypeTable f33471s;
 
         /* renamed from: t  reason: collision with root package name */
-        private VersionRequirementTable f33250t;
+        private VersionRequirementTable f33472t;
 
         /* renamed from: u  reason: collision with root package name */
-        private byte f33251u;
+        private byte f33473u;
 
         /* renamed from: v  reason: collision with root package name */
-        private int f33252v;
+        private int f33474v;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.ExtendableBuilder<Package, Builder> implements PackageOrBuilder {
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33253o;
+            private int f33475o;
 
             /* renamed from: p  reason: collision with root package name */
-            private List f33254p;
+            private List f33476p;
 
             /* renamed from: q  reason: collision with root package name */
-            private List f33255q;
+            private List f33477q;
 
             /* renamed from: r  reason: collision with root package name */
-            private List f33256r;
+            private List f33478r;
 
             /* renamed from: s  reason: collision with root package name */
-            private TypeTable f33257s;
+            private TypeTable f33479s;
 
             /* renamed from: t  reason: collision with root package name */
-            private VersionRequirementTable f33258t;
+            private VersionRequirementTable f33480t;
 
             private Builder() {
                 List list = Collections.EMPTY_LIST;
-                this.f33254p = list;
-                this.f33255q = list;
-                this.f33256r = list;
-                this.f33257s = TypeTable.getDefaultInstance();
-                this.f33258t = VersionRequirementTable.getDefaultInstance();
+                this.f33476p = list;
+                this.f33477q = list;
+                this.f33478r = list;
+                this.f33479s = TypeTable.getDefaultInstance();
+                this.f33480t = VersionRequirementTable.getDefaultInstance();
                 m();
             }
 
-            static /* synthetic */ Builder h() {
-                return i();
+            static /* synthetic */ Builder g() {
+                return h();
             }
 
-            private static Builder i() {
+            private static Builder h() {
                 return new Builder();
             }
 
             private void j() {
-                if ((this.f33253o & 1) != 1) {
-                    this.f33254p = new ArrayList(this.f33254p);
-                    this.f33253o |= 1;
+                if ((this.f33475o & 1) != 1) {
+                    this.f33476p = new ArrayList(this.f33476p);
+                    this.f33475o |= 1;
                 }
             }
 
             private void k() {
-                if ((this.f33253o & 2) != 2) {
-                    this.f33255q = new ArrayList(this.f33255q);
-                    this.f33253o |= 2;
+                if ((this.f33475o & 2) != 2) {
+                    this.f33477q = new ArrayList(this.f33477q);
+                    this.f33475o |= 2;
                 }
             }
 
             private void l() {
-                if ((this.f33253o & 4) != 4) {
-                    this.f33256r = new ArrayList(this.f33256r);
-                    this.f33253o |= 4;
+                if ((this.f33475o & 4) != 4) {
+                    this.f33478r = new ArrayList(this.f33478r);
+                    this.f33475o |= 4;
                 }
             }
 
@@ -8290,65 +8290,65 @@ public final class ProtoBuf {
 
             public Package buildPartial() {
                 Package r02 = new Package(this);
-                int i10 = this.f33253o;
+                int i10 = this.f33475o;
                 int i11 = 1;
                 if ((i10 & 1) == 1) {
-                    this.f33254p = Collections.unmodifiableList(this.f33254p);
-                    this.f33253o &= -2;
+                    this.f33476p = Collections.unmodifiableList(this.f33476p);
+                    this.f33475o &= -2;
                 }
-                r02.f33246p = this.f33254p;
-                if ((this.f33253o & 2) == 2) {
-                    this.f33255q = Collections.unmodifiableList(this.f33255q);
-                    this.f33253o &= -3;
+                r02.f33468p = this.f33476p;
+                if ((this.f33475o & 2) == 2) {
+                    this.f33477q = Collections.unmodifiableList(this.f33477q);
+                    this.f33475o &= -3;
                 }
-                r02.f33247q = this.f33255q;
-                if ((this.f33253o & 4) == 4) {
-                    this.f33256r = Collections.unmodifiableList(this.f33256r);
-                    this.f33253o &= -5;
+                r02.f33469q = this.f33477q;
+                if ((this.f33475o & 4) == 4) {
+                    this.f33478r = Collections.unmodifiableList(this.f33478r);
+                    this.f33475o &= -5;
                 }
-                r02.f33248r = this.f33256r;
+                r02.f33470r = this.f33478r;
                 if ((i10 & 8) != 8) {
                     i11 = 0;
                 }
-                r02.f33249s = this.f33257s;
+                r02.f33471s = this.f33479s;
                 if ((i10 & 16) == 16) {
                     i11 |= 2;
                 }
-                r02.f33250t = this.f33258t;
-                r02.f33245o = i11;
+                r02.f33472t = this.f33480t;
+                r02.f33467o = i11;
                 return r02;
             }
 
             public Function getFunction(int i10) {
-                return (Function) this.f33254p.get(i10);
+                return (Function) this.f33476p.get(i10);
             }
 
             public int getFunctionCount() {
-                return this.f33254p.size();
+                return this.f33476p.size();
             }
 
             public Property getProperty(int i10) {
-                return (Property) this.f33255q.get(i10);
+                return (Property) this.f33477q.get(i10);
             }
 
             public int getPropertyCount() {
-                return this.f33255q.size();
+                return this.f33477q.size();
             }
 
             public TypeAlias getTypeAlias(int i10) {
-                return (TypeAlias) this.f33256r.get(i10);
+                return (TypeAlias) this.f33478r.get(i10);
             }
 
             public int getTypeAliasCount() {
-                return this.f33256r.size();
+                return this.f33478r.size();
             }
 
             public TypeTable getTypeTable() {
-                return this.f33257s;
+                return this.f33479s;
             }
 
             public boolean hasTypeTable() {
-                if ((this.f33253o & 8) == 8) {
+                if ((this.f33475o & 8) == 8) {
                     return true;
                 }
                 return false;
@@ -8378,22 +8378,22 @@ public final class ProtoBuf {
             }
 
             public Builder mergeTypeTable(TypeTable typeTable) {
-                if ((this.f33253o & 8) == 8 && this.f33257s != TypeTable.getDefaultInstance()) {
-                    this.f33257s = TypeTable.newBuilder(this.f33257s).mergeFrom(typeTable).buildPartial();
+                if ((this.f33475o & 8) == 8 && this.f33479s != TypeTable.getDefaultInstance()) {
+                    this.f33479s = TypeTable.newBuilder(this.f33479s).mergeFrom(typeTable).buildPartial();
                 } else {
-                    this.f33257s = typeTable;
+                    this.f33479s = typeTable;
                 }
-                this.f33253o |= 8;
+                this.f33475o |= 8;
                 return this;
             }
 
             public Builder mergeVersionRequirementTable(VersionRequirementTable versionRequirementTable) {
-                if ((this.f33253o & 16) == 16 && this.f33258t != VersionRequirementTable.getDefaultInstance()) {
-                    this.f33258t = VersionRequirementTable.newBuilder(this.f33258t).mergeFrom(versionRequirementTable).buildPartial();
+                if ((this.f33475o & 16) == 16 && this.f33480t != VersionRequirementTable.getDefaultInstance()) {
+                    this.f33480t = VersionRequirementTable.newBuilder(this.f33480t).mergeFrom(versionRequirementTable).buildPartial();
                 } else {
-                    this.f33258t = versionRequirementTable;
+                    this.f33480t = versionRequirementTable;
                 }
-                this.f33253o |= 16;
+                this.f33475o |= 16;
                 return this;
             }
 
@@ -8416,31 +8416,31 @@ public final class ProtoBuf {
                 if (r32 == Package.getDefaultInstance()) {
                     return this;
                 }
-                if (!r32.f33246p.isEmpty()) {
-                    if (this.f33254p.isEmpty()) {
-                        this.f33254p = r32.f33246p;
-                        this.f33253o &= -2;
+                if (!r32.f33468p.isEmpty()) {
+                    if (this.f33476p.isEmpty()) {
+                        this.f33476p = r32.f33468p;
+                        this.f33475o &= -2;
                     } else {
                         j();
-                        this.f33254p.addAll(r32.f33246p);
+                        this.f33476p.addAll(r32.f33468p);
                     }
                 }
-                if (!r32.f33247q.isEmpty()) {
-                    if (this.f33255q.isEmpty()) {
-                        this.f33255q = r32.f33247q;
-                        this.f33253o &= -3;
+                if (!r32.f33469q.isEmpty()) {
+                    if (this.f33477q.isEmpty()) {
+                        this.f33477q = r32.f33469q;
+                        this.f33475o &= -3;
                     } else {
                         k();
-                        this.f33255q.addAll(r32.f33247q);
+                        this.f33477q.addAll(r32.f33469q);
                     }
                 }
-                if (!r32.f33248r.isEmpty()) {
-                    if (this.f33256r.isEmpty()) {
-                        this.f33256r = r32.f33248r;
-                        this.f33253o &= -5;
+                if (!r32.f33470r.isEmpty()) {
+                    if (this.f33478r.isEmpty()) {
+                        this.f33478r = r32.f33470r;
+                        this.f33475o &= -5;
                     } else {
                         l();
-                        this.f33256r.addAll(r32.f33248r);
+                        this.f33478r.addAll(r32.f33470r);
                     }
                 }
                 if (r32.hasTypeTable()) {
@@ -8450,13 +8450,13 @@ public final class ProtoBuf {
                     mergeVersionRequirementTable(r32.getVersionRequirementTable());
                 }
                 f(r32);
-                setUnknownFields(getUnknownFields().concat(r32.f33244i));
+                setUnknownFields(getUnknownFields().concat(r32.f33466i));
                 return this;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.ExtendableBuilder, kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.Builder, kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite.Builder
             public Builder clone() {
-                return i().mergeFrom(buildPartial());
+                return h().mergeFrom(buildPartial());
             }
 
             /* JADX WARN: Removed duplicated region for block: B:15:0x001d  */
@@ -8511,16 +8511,16 @@ public final class ProtoBuf {
 
         static {
             Package r02 = new Package(true);
-            f33243w = r02;
+            f33465w = r02;
             r02.w();
         }
 
         public static Package getDefaultInstance() {
-            return f33243w;
+            return f33465w;
         }
 
         public static Builder newBuilder() {
-            return Builder.h();
+            return Builder.g();
         }
 
         public static Package parseFrom(InputStream inputStream, ExtensionRegistryLite extensionRegistryLite) {
@@ -8529,23 +8529,23 @@ public final class ProtoBuf {
 
         private void w() {
             List list = Collections.EMPTY_LIST;
-            this.f33246p = list;
-            this.f33247q = list;
-            this.f33248r = list;
-            this.f33249s = TypeTable.getDefaultInstance();
-            this.f33250t = VersionRequirementTable.getDefaultInstance();
+            this.f33468p = list;
+            this.f33469q = list;
+            this.f33470r = list;
+            this.f33471s = TypeTable.getDefaultInstance();
+            this.f33472t = VersionRequirementTable.getDefaultInstance();
         }
 
         public Function getFunction(int i10) {
-            return (Function) this.f33246p.get(i10);
+            return (Function) this.f33468p.get(i10);
         }
 
         public int getFunctionCount() {
-            return this.f33246p.size();
+            return this.f33468p.size();
         }
 
         public List<Function> getFunctionList() {
-            return this.f33246p;
+            return this.f33468p;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -8554,73 +8554,73 @@ public final class ProtoBuf {
         }
 
         public Property getProperty(int i10) {
-            return (Property) this.f33247q.get(i10);
+            return (Property) this.f33469q.get(i10);
         }
 
         public int getPropertyCount() {
-            return this.f33247q.size();
+            return this.f33469q.size();
         }
 
         public List<Property> getPropertyList() {
-            return this.f33247q;
+            return this.f33469q;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
-            int i10 = this.f33252v;
+            int i10 = this.f33474v;
             if (i10 != -1) {
                 return i10;
             }
             int i11 = 0;
-            for (int i12 = 0; i12 < this.f33246p.size(); i12++) {
-                i11 += CodedOutputStream.computeMessageSize(3, (MessageLite) this.f33246p.get(i12));
+            for (int i12 = 0; i12 < this.f33468p.size(); i12++) {
+                i11 += CodedOutputStream.computeMessageSize(3, (MessageLite) this.f33468p.get(i12));
             }
-            for (int i13 = 0; i13 < this.f33247q.size(); i13++) {
-                i11 += CodedOutputStream.computeMessageSize(4, (MessageLite) this.f33247q.get(i13));
+            for (int i13 = 0; i13 < this.f33469q.size(); i13++) {
+                i11 += CodedOutputStream.computeMessageSize(4, (MessageLite) this.f33469q.get(i13));
             }
-            for (int i14 = 0; i14 < this.f33248r.size(); i14++) {
-                i11 += CodedOutputStream.computeMessageSize(5, (MessageLite) this.f33248r.get(i14));
+            for (int i14 = 0; i14 < this.f33470r.size(); i14++) {
+                i11 += CodedOutputStream.computeMessageSize(5, (MessageLite) this.f33470r.get(i14));
             }
-            if ((this.f33245o & 1) == 1) {
-                i11 += CodedOutputStream.computeMessageSize(30, this.f33249s);
+            if ((this.f33467o & 1) == 1) {
+                i11 += CodedOutputStream.computeMessageSize(30, this.f33471s);
             }
-            if ((this.f33245o & 2) == 2) {
-                i11 += CodedOutputStream.computeMessageSize(32, this.f33250t);
+            if ((this.f33467o & 2) == 2) {
+                i11 += CodedOutputStream.computeMessageSize(32, this.f33472t);
             }
-            int j10 = i11 + j() + this.f33244i.size();
-            this.f33252v = j10;
+            int j10 = i11 + j() + this.f33466i.size();
+            this.f33474v = j10;
             return j10;
         }
 
         public TypeAlias getTypeAlias(int i10) {
-            return (TypeAlias) this.f33248r.get(i10);
+            return (TypeAlias) this.f33470r.get(i10);
         }
 
         public int getTypeAliasCount() {
-            return this.f33248r.size();
+            return this.f33470r.size();
         }
 
         public List<TypeAlias> getTypeAliasList() {
-            return this.f33248r;
+            return this.f33470r;
         }
 
         public TypeTable getTypeTable() {
-            return this.f33249s;
+            return this.f33471s;
         }
 
         public VersionRequirementTable getVersionRequirementTable() {
-            return this.f33250t;
+            return this.f33472t;
         }
 
         public boolean hasTypeTable() {
-            if ((this.f33245o & 1) == 1) {
+            if ((this.f33467o & 1) == 1) {
                 return true;
             }
             return false;
         }
 
         public boolean hasVersionRequirementTable() {
-            if ((this.f33245o & 2) == 2) {
+            if ((this.f33467o & 2) == 2) {
                 return true;
             }
             return false;
@@ -8628,7 +8628,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33251u;
+            byte b10 = this.f33473u;
             if (b10 == 1) {
                 return true;
             }
@@ -8637,30 +8637,30 @@ public final class ProtoBuf {
             }
             for (int i10 = 0; i10 < getFunctionCount(); i10++) {
                 if (!getFunction(i10).isInitialized()) {
-                    this.f33251u = (byte) 0;
+                    this.f33473u = (byte) 0;
                     return false;
                 }
             }
             for (int i11 = 0; i11 < getPropertyCount(); i11++) {
                 if (!getProperty(i11).isInitialized()) {
-                    this.f33251u = (byte) 0;
+                    this.f33473u = (byte) 0;
                     return false;
                 }
             }
             for (int i12 = 0; i12 < getTypeAliasCount(); i12++) {
                 if (!getTypeAlias(i12).isInitialized()) {
-                    this.f33251u = (byte) 0;
+                    this.f33473u = (byte) 0;
                     return false;
                 }
             }
             if (hasTypeTable() && !getTypeTable().isInitialized()) {
-                this.f33251u = (byte) 0;
+                this.f33473u = (byte) 0;
                 return false;
             } else if (!i()) {
-                this.f33251u = (byte) 0;
+                this.f33473u = (byte) 0;
                 return false;
             } else {
-                this.f33251u = (byte) 1;
+                this.f33473u = (byte) 1;
                 return true;
             }
         }
@@ -8669,23 +8669,23 @@ public final class ProtoBuf {
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
             GeneratedMessageLite.ExtendableMessage.ExtensionWriter k10 = k();
-            for (int i10 = 0; i10 < this.f33246p.size(); i10++) {
-                codedOutputStream.writeMessage(3, (MessageLite) this.f33246p.get(i10));
+            for (int i10 = 0; i10 < this.f33468p.size(); i10++) {
+                codedOutputStream.writeMessage(3, (MessageLite) this.f33468p.get(i10));
             }
-            for (int i11 = 0; i11 < this.f33247q.size(); i11++) {
-                codedOutputStream.writeMessage(4, (MessageLite) this.f33247q.get(i11));
+            for (int i11 = 0; i11 < this.f33469q.size(); i11++) {
+                codedOutputStream.writeMessage(4, (MessageLite) this.f33469q.get(i11));
             }
-            for (int i12 = 0; i12 < this.f33248r.size(); i12++) {
-                codedOutputStream.writeMessage(5, (MessageLite) this.f33248r.get(i12));
+            for (int i12 = 0; i12 < this.f33470r.size(); i12++) {
+                codedOutputStream.writeMessage(5, (MessageLite) this.f33470r.get(i12));
             }
-            if ((this.f33245o & 1) == 1) {
-                codedOutputStream.writeMessage(30, this.f33249s);
+            if ((this.f33467o & 1) == 1) {
+                codedOutputStream.writeMessage(30, this.f33471s);
             }
-            if ((this.f33245o & 2) == 2) {
-                codedOutputStream.writeMessage(32, this.f33250t);
+            if ((this.f33467o & 2) == 2) {
+                codedOutputStream.writeMessage(32, this.f33472t);
             }
             k10.writeUntil(h.DEFAULT_DRAG_ANIMATION_DURATION, codedOutputStream);
-            codedOutputStream.writeRawBytes(this.f33244i);
+            codedOutputStream.writeRawBytes(this.f33466i);
         }
 
         public static Builder newBuilder(Package r12) {
@@ -8694,7 +8694,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public Package getDefaultInstanceForType() {
-            return f33243w;
+            return f33465w;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -8709,20 +8709,20 @@ public final class ProtoBuf {
 
         private Package(GeneratedMessageLite.ExtendableBuilder extendableBuilder) {
             super(extendableBuilder);
-            this.f33251u = (byte) -1;
-            this.f33252v = -1;
-            this.f33244i = extendableBuilder.getUnknownFields();
+            this.f33473u = (byte) -1;
+            this.f33474v = -1;
+            this.f33466i = extendableBuilder.getUnknownFields();
         }
 
         private Package(boolean z10) {
-            this.f33251u = (byte) -1;
-            this.f33252v = -1;
-            this.f33244i = ByteString.EMPTY;
+            this.f33473u = (byte) -1;
+            this.f33474v = -1;
+            this.f33466i = ByteString.EMPTY;
         }
 
         private Package(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33251u = (byte) -1;
-            this.f33252v = -1;
+            this.f33473u = (byte) -1;
+            this.f33474v = -1;
             w();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -8737,70 +8737,70 @@ public final class ProtoBuf {
                                 boolean z12 = (z11 ? 1 : 0) & true;
                                 z11 = z11;
                                 if (!z12) {
-                                    this.f33246p = new ArrayList();
+                                    this.f33468p = new ArrayList();
                                     z11 = (z11 ? 1 : 0) | true;
                                 }
-                                this.f33246p.add(codedInputStream.readMessage(Function.PARSER, extensionRegistryLite));
+                                this.f33468p.add(codedInputStream.readMessage(Function.PARSER, extensionRegistryLite));
                             } else if (readTag == 34) {
                                 boolean z13 = (z11 ? 1 : 0) & true;
                                 z11 = z11;
                                 if (!z13) {
-                                    this.f33247q = new ArrayList();
+                                    this.f33469q = new ArrayList();
                                     z11 = (z11 ? 1 : 0) | true;
                                 }
-                                this.f33247q.add(codedInputStream.readMessage(Property.PARSER, extensionRegistryLite));
+                                this.f33469q.add(codedInputStream.readMessage(Property.PARSER, extensionRegistryLite));
                             } else if (readTag != 42) {
                                 if (readTag == 242) {
-                                    TypeTable.Builder builder = (this.f33245o & 1) == 1 ? this.f33249s.toBuilder() : null;
+                                    TypeTable.Builder builder = (this.f33467o & 1) == 1 ? this.f33471s.toBuilder() : null;
                                     TypeTable typeTable = (TypeTable) codedInputStream.readMessage(TypeTable.PARSER, extensionRegistryLite);
-                                    this.f33249s = typeTable;
+                                    this.f33471s = typeTable;
                                     if (builder != null) {
                                         builder.mergeFrom(typeTable);
-                                        this.f33249s = builder.buildPartial();
+                                        this.f33471s = builder.buildPartial();
                                     }
-                                    this.f33245o |= 1;
+                                    this.f33467o |= 1;
                                 } else if (readTag != 258) {
                                     if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                     }
                                 } else {
-                                    VersionRequirementTable.Builder builder2 = (this.f33245o & 2) == 2 ? this.f33250t.toBuilder() : null;
+                                    VersionRequirementTable.Builder builder2 = (this.f33467o & 2) == 2 ? this.f33472t.toBuilder() : null;
                                     VersionRequirementTable versionRequirementTable = (VersionRequirementTable) codedInputStream.readMessage(VersionRequirementTable.PARSER, extensionRegistryLite);
-                                    this.f33250t = versionRequirementTable;
+                                    this.f33472t = versionRequirementTable;
                                     if (builder2 != null) {
                                         builder2.mergeFrom(versionRequirementTable);
-                                        this.f33250t = builder2.buildPartial();
+                                        this.f33472t = builder2.buildPartial();
                                     }
-                                    this.f33245o |= 2;
+                                    this.f33467o |= 2;
                                 }
                             } else {
                                 boolean z14 = (z11 ? 1 : 0) & true;
                                 z11 = z11;
                                 if (!z14) {
-                                    this.f33248r = new ArrayList();
+                                    this.f33470r = new ArrayList();
                                     z11 = (z11 ? 1 : 0) | true;
                                 }
-                                this.f33248r.add(codedInputStream.readMessage(TypeAlias.PARSER, extensionRegistryLite));
+                                this.f33470r.add(codedInputStream.readMessage(TypeAlias.PARSER, extensionRegistryLite));
                             }
                         }
                         z10 = true;
                     } catch (Throwable th2) {
                         if ((z11 ? 1 : 0) & true) {
-                            this.f33246p = Collections.unmodifiableList(this.f33246p);
+                            this.f33468p = Collections.unmodifiableList(this.f33468p);
                         }
                         if ((z11 ? 1 : 0) & true) {
-                            this.f33247q = Collections.unmodifiableList(this.f33247q);
+                            this.f33469q = Collections.unmodifiableList(this.f33469q);
                         }
                         if ((z11 ? 1 : 0) & true) {
-                            this.f33248r = Collections.unmodifiableList(this.f33248r);
+                            this.f33470r = Collections.unmodifiableList(this.f33470r);
                         }
                         try {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33244i = newOutput.toByteString();
+                            this.f33466i = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33244i = newOutput.toByteString();
+                        this.f33466i = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -8811,22 +8811,22 @@ public final class ProtoBuf {
                 }
             }
             if ((z11 ? 1 : 0) & true) {
-                this.f33246p = Collections.unmodifiableList(this.f33246p);
+                this.f33468p = Collections.unmodifiableList(this.f33468p);
             }
             if ((z11 ? 1 : 0) & true) {
-                this.f33247q = Collections.unmodifiableList(this.f33247q);
+                this.f33469q = Collections.unmodifiableList(this.f33469q);
             }
             if ((z11 ? 1 : 0) & true) {
-                this.f33248r = Collections.unmodifiableList(this.f33248r);
+                this.f33470r = Collections.unmodifiableList(this.f33470r);
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33244i = newOutput.toByteString();
+                this.f33466i = newOutput.toByteString();
                 throw th4;
             }
-            this.f33244i = newOutput.toByteString();
+            this.f33466i = newOutput.toByteString();
             e();
         }
     }
@@ -8836,66 +8836,66 @@ public final class ProtoBuf {
         public static Parser<PackageFragment> PARSER = new a();
 
         /* renamed from: v  reason: collision with root package name */
-        private static final PackageFragment f33259v;
+        private static final PackageFragment f33481v;
 
         /* renamed from: i  reason: collision with root package name */
-        private final ByteString f33260i;
+        private final ByteString f33482i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33261o;
+        private int f33483o;
 
         /* renamed from: p  reason: collision with root package name */
-        private StringTable f33262p;
+        private StringTable f33484p;
 
         /* renamed from: q  reason: collision with root package name */
-        private QualifiedNameTable f33263q;
+        private QualifiedNameTable f33485q;
 
         /* renamed from: r  reason: collision with root package name */
-        private Package f33264r;
+        private Package f33486r;
 
         /* renamed from: s  reason: collision with root package name */
-        private List f33265s;
+        private List f33487s;
 
         /* renamed from: t  reason: collision with root package name */
-        private byte f33266t;
+        private byte f33488t;
 
         /* renamed from: u  reason: collision with root package name */
-        private int f33267u;
+        private int f33489u;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.ExtendableBuilder<PackageFragment, Builder> implements PackageFragmentOrBuilder {
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33268o;
+            private int f33490o;
 
             /* renamed from: p  reason: collision with root package name */
-            private StringTable f33269p = StringTable.getDefaultInstance();
+            private StringTable f33491p = StringTable.getDefaultInstance();
 
             /* renamed from: q  reason: collision with root package name */
-            private QualifiedNameTable f33270q = QualifiedNameTable.getDefaultInstance();
+            private QualifiedNameTable f33492q = QualifiedNameTable.getDefaultInstance();
 
             /* renamed from: r  reason: collision with root package name */
-            private Package f33271r = Package.getDefaultInstance();
+            private Package f33493r = Package.getDefaultInstance();
 
             /* renamed from: s  reason: collision with root package name */
-            private List f33272s = Collections.EMPTY_LIST;
+            private List f33494s = Collections.EMPTY_LIST;
 
             private Builder() {
                 k();
             }
 
-            static /* synthetic */ Builder h() {
-                return i();
+            static /* synthetic */ Builder g() {
+                return h();
             }
 
-            private static Builder i() {
+            private static Builder h() {
                 return new Builder();
             }
 
             private void j() {
-                if ((this.f33268o & 8) != 8) {
-                    this.f33272s = new ArrayList(this.f33272s);
-                    this.f33268o |= 8;
+                if ((this.f33490o & 8) != 8) {
+                    this.f33494s = new ArrayList(this.f33494s);
+                    this.f33490o |= 8;
                 }
             }
 
@@ -8904,54 +8904,54 @@ public final class ProtoBuf {
 
             public PackageFragment buildPartial() {
                 PackageFragment packageFragment = new PackageFragment(this);
-                int i10 = this.f33268o;
+                int i10 = this.f33490o;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                packageFragment.f33262p = this.f33269p;
+                packageFragment.f33484p = this.f33491p;
                 if ((i10 & 2) == 2) {
                     i11 |= 2;
                 }
-                packageFragment.f33263q = this.f33270q;
+                packageFragment.f33485q = this.f33492q;
                 if ((i10 & 4) == 4) {
                     i11 |= 4;
                 }
-                packageFragment.f33264r = this.f33271r;
-                if ((this.f33268o & 8) == 8) {
-                    this.f33272s = Collections.unmodifiableList(this.f33272s);
-                    this.f33268o &= -9;
+                packageFragment.f33486r = this.f33493r;
+                if ((this.f33490o & 8) == 8) {
+                    this.f33494s = Collections.unmodifiableList(this.f33494s);
+                    this.f33490o &= -9;
                 }
-                packageFragment.f33265s = this.f33272s;
-                packageFragment.f33261o = i11;
+                packageFragment.f33487s = this.f33494s;
+                packageFragment.f33483o = i11;
                 return packageFragment;
             }
 
             public Class getClass_(int i10) {
-                return (Class) this.f33272s.get(i10);
+                return (Class) this.f33494s.get(i10);
             }
 
             public int getClass_Count() {
-                return this.f33272s.size();
+                return this.f33494s.size();
             }
 
             public Package getPackage() {
-                return this.f33271r;
+                return this.f33493r;
             }
 
             public QualifiedNameTable getQualifiedNames() {
-                return this.f33270q;
+                return this.f33492q;
             }
 
             public boolean hasPackage() {
-                if ((this.f33268o & 4) == 4) {
+                if ((this.f33490o & 4) == 4) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasQualifiedNames() {
-                if ((this.f33268o & 2) == 2) {
+                if ((this.f33490o & 2) == 2) {
                     return true;
                 }
                 return false;
@@ -8977,32 +8977,32 @@ public final class ProtoBuf {
             }
 
             public Builder mergePackage(Package r42) {
-                if ((this.f33268o & 4) == 4 && this.f33271r != Package.getDefaultInstance()) {
-                    this.f33271r = Package.newBuilder(this.f33271r).mergeFrom(r42).buildPartial();
+                if ((this.f33490o & 4) == 4 && this.f33493r != Package.getDefaultInstance()) {
+                    this.f33493r = Package.newBuilder(this.f33493r).mergeFrom(r42).buildPartial();
                 } else {
-                    this.f33271r = r42;
+                    this.f33493r = r42;
                 }
-                this.f33268o |= 4;
+                this.f33490o |= 4;
                 return this;
             }
 
             public Builder mergeQualifiedNames(QualifiedNameTable qualifiedNameTable) {
-                if ((this.f33268o & 2) == 2 && this.f33270q != QualifiedNameTable.getDefaultInstance()) {
-                    this.f33270q = QualifiedNameTable.newBuilder(this.f33270q).mergeFrom(qualifiedNameTable).buildPartial();
+                if ((this.f33490o & 2) == 2 && this.f33492q != QualifiedNameTable.getDefaultInstance()) {
+                    this.f33492q = QualifiedNameTable.newBuilder(this.f33492q).mergeFrom(qualifiedNameTable).buildPartial();
                 } else {
-                    this.f33270q = qualifiedNameTable;
+                    this.f33492q = qualifiedNameTable;
                 }
-                this.f33268o |= 2;
+                this.f33490o |= 2;
                 return this;
             }
 
             public Builder mergeStrings(StringTable stringTable) {
-                if ((this.f33268o & 1) == 1 && this.f33269p != StringTable.getDefaultInstance()) {
-                    this.f33269p = StringTable.newBuilder(this.f33269p).mergeFrom(stringTable).buildPartial();
+                if ((this.f33490o & 1) == 1 && this.f33491p != StringTable.getDefaultInstance()) {
+                    this.f33491p = StringTable.newBuilder(this.f33491p).mergeFrom(stringTable).buildPartial();
                 } else {
-                    this.f33269p = stringTable;
+                    this.f33491p = stringTable;
                 }
-                this.f33268o |= 1;
+                this.f33490o |= 1;
                 return this;
             }
 
@@ -9034,23 +9034,23 @@ public final class ProtoBuf {
                 if (packageFragment.hasPackage()) {
                     mergePackage(packageFragment.getPackage());
                 }
-                if (!packageFragment.f33265s.isEmpty()) {
-                    if (this.f33272s.isEmpty()) {
-                        this.f33272s = packageFragment.f33265s;
-                        this.f33268o &= -9;
+                if (!packageFragment.f33487s.isEmpty()) {
+                    if (this.f33494s.isEmpty()) {
+                        this.f33494s = packageFragment.f33487s;
+                        this.f33490o &= -9;
                     } else {
                         j();
-                        this.f33272s.addAll(packageFragment.f33265s);
+                        this.f33494s.addAll(packageFragment.f33487s);
                     }
                 }
                 f(packageFragment);
-                setUnknownFields(getUnknownFields().concat(packageFragment.f33260i));
+                setUnknownFields(getUnknownFields().concat(packageFragment.f33482i));
                 return this;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.ExtendableBuilder, kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.Builder, kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite.Builder
             public Builder clone() {
-                return i().mergeFrom(buildPartial());
+                return h().mergeFrom(buildPartial());
             }
 
             /* JADX WARN: Removed duplicated region for block: B:15:0x001d  */
@@ -9105,16 +9105,16 @@ public final class ProtoBuf {
 
         static {
             PackageFragment packageFragment = new PackageFragment(true);
-            f33259v = packageFragment;
+            f33481v = packageFragment;
             packageFragment.t();
         }
 
         public static PackageFragment getDefaultInstance() {
-            return f33259v;
+            return f33481v;
         }
 
         public static Builder newBuilder() {
-            return Builder.h();
+            return Builder.g();
         }
 
         public static PackageFragment parseFrom(InputStream inputStream, ExtensionRegistryLite extensionRegistryLite) {
@@ -9122,26 +9122,26 @@ public final class ProtoBuf {
         }
 
         private void t() {
-            this.f33262p = StringTable.getDefaultInstance();
-            this.f33263q = QualifiedNameTable.getDefaultInstance();
-            this.f33264r = Package.getDefaultInstance();
-            this.f33265s = Collections.EMPTY_LIST;
+            this.f33484p = StringTable.getDefaultInstance();
+            this.f33485q = QualifiedNameTable.getDefaultInstance();
+            this.f33486r = Package.getDefaultInstance();
+            this.f33487s = Collections.EMPTY_LIST;
         }
 
         public Class getClass_(int i10) {
-            return (Class) this.f33265s.get(i10);
+            return (Class) this.f33487s.get(i10);
         }
 
         public int getClass_Count() {
-            return this.f33265s.size();
+            return this.f33487s.size();
         }
 
         public List<Class> getClass_List() {
-            return this.f33265s;
+            return this.f33487s;
         }
 
         public Package getPackage() {
-            return this.f33264r;
+            return this.f33486r;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -9150,55 +9150,55 @@ public final class ProtoBuf {
         }
 
         public QualifiedNameTable getQualifiedNames() {
-            return this.f33263q;
+            return this.f33485q;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
             int i10;
-            int i11 = this.f33267u;
+            int i11 = this.f33489u;
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33261o & 1) == 1) {
-                i10 = CodedOutputStream.computeMessageSize(1, this.f33262p);
+            if ((this.f33483o & 1) == 1) {
+                i10 = CodedOutputStream.computeMessageSize(1, this.f33484p);
             } else {
                 i10 = 0;
             }
-            if ((this.f33261o & 2) == 2) {
-                i10 += CodedOutputStream.computeMessageSize(2, this.f33263q);
+            if ((this.f33483o & 2) == 2) {
+                i10 += CodedOutputStream.computeMessageSize(2, this.f33485q);
             }
-            if ((this.f33261o & 4) == 4) {
-                i10 += CodedOutputStream.computeMessageSize(3, this.f33264r);
+            if ((this.f33483o & 4) == 4) {
+                i10 += CodedOutputStream.computeMessageSize(3, this.f33486r);
             }
-            for (int i12 = 0; i12 < this.f33265s.size(); i12++) {
-                i10 += CodedOutputStream.computeMessageSize(4, (MessageLite) this.f33265s.get(i12));
+            for (int i12 = 0; i12 < this.f33487s.size(); i12++) {
+                i10 += CodedOutputStream.computeMessageSize(4, (MessageLite) this.f33487s.get(i12));
             }
-            int j10 = i10 + j() + this.f33260i.size();
-            this.f33267u = j10;
+            int j10 = i10 + j() + this.f33482i.size();
+            this.f33489u = j10;
             return j10;
         }
 
         public StringTable getStrings() {
-            return this.f33262p;
+            return this.f33484p;
         }
 
         public boolean hasPackage() {
-            if ((this.f33261o & 4) == 4) {
+            if ((this.f33483o & 4) == 4) {
                 return true;
             }
             return false;
         }
 
         public boolean hasQualifiedNames() {
-            if ((this.f33261o & 2) == 2) {
+            if ((this.f33483o & 2) == 2) {
                 return true;
             }
             return false;
         }
 
         public boolean hasStrings() {
-            if ((this.f33261o & 1) == 1) {
+            if ((this.f33483o & 1) == 1) {
                 return true;
             }
             return false;
@@ -9206,7 +9206,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33266t;
+            byte b10 = this.f33488t;
             if (b10 == 1) {
                 return true;
             }
@@ -9214,23 +9214,23 @@ public final class ProtoBuf {
                 return false;
             }
             if (hasQualifiedNames() && !getQualifiedNames().isInitialized()) {
-                this.f33266t = (byte) 0;
+                this.f33488t = (byte) 0;
                 return false;
             } else if (hasPackage() && !getPackage().isInitialized()) {
-                this.f33266t = (byte) 0;
+                this.f33488t = (byte) 0;
                 return false;
             } else {
                 for (int i10 = 0; i10 < getClass_Count(); i10++) {
                     if (!getClass_(i10).isInitialized()) {
-                        this.f33266t = (byte) 0;
+                        this.f33488t = (byte) 0;
                         return false;
                     }
                 }
                 if (!i()) {
-                    this.f33266t = (byte) 0;
+                    this.f33488t = (byte) 0;
                     return false;
                 }
-                this.f33266t = (byte) 1;
+                this.f33488t = (byte) 1;
                 return true;
             }
         }
@@ -9239,20 +9239,20 @@ public final class ProtoBuf {
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
             GeneratedMessageLite.ExtendableMessage.ExtensionWriter k10 = k();
-            if ((this.f33261o & 1) == 1) {
-                codedOutputStream.writeMessage(1, this.f33262p);
+            if ((this.f33483o & 1) == 1) {
+                codedOutputStream.writeMessage(1, this.f33484p);
             }
-            if ((this.f33261o & 2) == 2) {
-                codedOutputStream.writeMessage(2, this.f33263q);
+            if ((this.f33483o & 2) == 2) {
+                codedOutputStream.writeMessage(2, this.f33485q);
             }
-            if ((this.f33261o & 4) == 4) {
-                codedOutputStream.writeMessage(3, this.f33264r);
+            if ((this.f33483o & 4) == 4) {
+                codedOutputStream.writeMessage(3, this.f33486r);
             }
-            for (int i10 = 0; i10 < this.f33265s.size(); i10++) {
-                codedOutputStream.writeMessage(4, (MessageLite) this.f33265s.get(i10));
+            for (int i10 = 0; i10 < this.f33487s.size(); i10++) {
+                codedOutputStream.writeMessage(4, (MessageLite) this.f33487s.get(i10));
             }
             k10.writeUntil(h.DEFAULT_DRAG_ANIMATION_DURATION, codedOutputStream);
-            codedOutputStream.writeRawBytes(this.f33260i);
+            codedOutputStream.writeRawBytes(this.f33482i);
         }
 
         public static Builder newBuilder(PackageFragment packageFragment) {
@@ -9261,7 +9261,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public PackageFragment getDefaultInstanceForType() {
-            return f33259v;
+            return f33481v;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -9276,20 +9276,20 @@ public final class ProtoBuf {
 
         private PackageFragment(GeneratedMessageLite.ExtendableBuilder extendableBuilder) {
             super(extendableBuilder);
-            this.f33266t = (byte) -1;
-            this.f33267u = -1;
-            this.f33260i = extendableBuilder.getUnknownFields();
+            this.f33488t = (byte) -1;
+            this.f33489u = -1;
+            this.f33482i = extendableBuilder.getUnknownFields();
         }
 
         private PackageFragment(boolean z10) {
-            this.f33266t = (byte) -1;
-            this.f33267u = -1;
-            this.f33260i = ByteString.EMPTY;
+            this.f33488t = (byte) -1;
+            this.f33489u = -1;
+            this.f33482i = ByteString.EMPTY;
         }
 
         private PackageFragment(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33266t = (byte) -1;
-            this.f33267u = -1;
+            this.f33488t = (byte) -1;
+            this.f33489u = -1;
             t();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -9301,32 +9301,32 @@ public final class ProtoBuf {
                         int readTag = codedInputStream.readTag();
                         if (readTag != 0) {
                             if (readTag == 10) {
-                                StringTable.Builder builder = (this.f33261o & 1) == 1 ? this.f33262p.toBuilder() : null;
+                                StringTable.Builder builder = (this.f33483o & 1) == 1 ? this.f33484p.toBuilder() : null;
                                 StringTable stringTable = (StringTable) codedInputStream.readMessage(StringTable.PARSER, extensionRegistryLite);
-                                this.f33262p = stringTable;
+                                this.f33484p = stringTable;
                                 if (builder != null) {
                                     builder.mergeFrom(stringTable);
-                                    this.f33262p = builder.buildPartial();
+                                    this.f33484p = builder.buildPartial();
                                 }
-                                this.f33261o |= 1;
+                                this.f33483o |= 1;
                             } else if (readTag == 18) {
-                                QualifiedNameTable.Builder builder2 = (this.f33261o & 2) == 2 ? this.f33263q.toBuilder() : null;
+                                QualifiedNameTable.Builder builder2 = (this.f33483o & 2) == 2 ? this.f33485q.toBuilder() : null;
                                 QualifiedNameTable qualifiedNameTable = (QualifiedNameTable) codedInputStream.readMessage(QualifiedNameTable.PARSER, extensionRegistryLite);
-                                this.f33263q = qualifiedNameTable;
+                                this.f33485q = qualifiedNameTable;
                                 if (builder2 != null) {
                                     builder2.mergeFrom(qualifiedNameTable);
-                                    this.f33263q = builder2.buildPartial();
+                                    this.f33485q = builder2.buildPartial();
                                 }
-                                this.f33261o |= 2;
+                                this.f33483o |= 2;
                             } else if (readTag == 26) {
-                                Package.Builder builder3 = (this.f33261o & 4) == 4 ? this.f33264r.toBuilder() : null;
+                                Package.Builder builder3 = (this.f33483o & 4) == 4 ? this.f33486r.toBuilder() : null;
                                 Package r62 = (Package) codedInputStream.readMessage(Package.PARSER, extensionRegistryLite);
-                                this.f33264r = r62;
+                                this.f33486r = r62;
                                 if (builder3 != null) {
                                     builder3.mergeFrom(r62);
-                                    this.f33264r = builder3.buildPartial();
+                                    this.f33486r = builder3.buildPartial();
                                 }
-                                this.f33261o |= 4;
+                                this.f33483o |= 4;
                             } else if (readTag != 34) {
                                 if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                 }
@@ -9334,25 +9334,25 @@ public final class ProtoBuf {
                                 boolean z12 = (z11 ? 1 : 0) & true;
                                 z11 = z11;
                                 if (!z12) {
-                                    this.f33265s = new ArrayList();
+                                    this.f33487s = new ArrayList();
                                     z11 = true;
                                 }
-                                this.f33265s.add(codedInputStream.readMessage(Class.PARSER, extensionRegistryLite));
+                                this.f33487s.add(codedInputStream.readMessage(Class.PARSER, extensionRegistryLite));
                             }
                         }
                         z10 = true;
                     } catch (Throwable th2) {
                         if ((z11 ? 1 : 0) & true) {
-                            this.f33265s = Collections.unmodifiableList(this.f33265s);
+                            this.f33487s = Collections.unmodifiableList(this.f33487s);
                         }
                         try {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33260i = newOutput.toByteString();
+                            this.f33482i = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33260i = newOutput.toByteString();
+                        this.f33482i = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -9363,16 +9363,16 @@ public final class ProtoBuf {
                 }
             }
             if ((z11 ? 1 : 0) & true) {
-                this.f33265s = Collections.unmodifiableList(this.f33265s);
+                this.f33487s = Collections.unmodifiableList(this.f33487s);
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33260i = newOutput.toByteString();
+                this.f33482i = newOutput.toByteString();
                 throw th4;
             }
-            this.f33260i = newOutput.toByteString();
+            this.f33482i = newOutput.toByteString();
             e();
         }
     }
@@ -9398,43 +9398,43 @@ public final class ProtoBuf {
         private int G;
 
         /* renamed from: i  reason: collision with root package name */
-        private final ByteString f33273i;
+        private final ByteString f33495i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33274o;
+        private int f33496o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33275p;
+        private int f33497p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f33276q;
+        private int f33498q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f33277r;
+        private int f33499r;
 
         /* renamed from: s  reason: collision with root package name */
-        private Type f33278s;
+        private Type f33500s;
 
         /* renamed from: t  reason: collision with root package name */
-        private int f33279t;
+        private int f33501t;
 
         /* renamed from: u  reason: collision with root package name */
-        private List f33280u;
+        private List f33502u;
 
         /* renamed from: v  reason: collision with root package name */
-        private Type f33281v;
+        private Type f33503v;
 
         /* renamed from: w  reason: collision with root package name */
-        private int f33282w;
+        private int f33504w;
 
         /* renamed from: x  reason: collision with root package name */
-        private List f33283x;
+        private List f33505x;
 
         /* renamed from: y  reason: collision with root package name */
-        private List f33284y;
+        private List f33506y;
 
         /* renamed from: z  reason: collision with root package name */
-        private int f33285z;
+        private int f33507z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.ExtendableBuilder<Property, Builder> implements PropertyOrBuilder {
@@ -9444,93 +9444,93 @@ public final class ProtoBuf {
             private List D;
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33286o;
+            private int f33508o;
 
             /* renamed from: r  reason: collision with root package name */
-            private int f33289r;
+            private int f33511r;
 
             /* renamed from: t  reason: collision with root package name */
-            private int f33291t;
+            private int f33513t;
 
             /* renamed from: u  reason: collision with root package name */
-            private List f33292u;
+            private List f33514u;
 
             /* renamed from: v  reason: collision with root package name */
-            private Type f33293v;
+            private Type f33515v;
 
             /* renamed from: w  reason: collision with root package name */
-            private int f33294w;
+            private int f33516w;
 
             /* renamed from: x  reason: collision with root package name */
-            private List f33295x;
+            private List f33517x;
 
             /* renamed from: y  reason: collision with root package name */
-            private List f33296y;
+            private List f33518y;
 
             /* renamed from: z  reason: collision with root package name */
-            private ValueParameter f33297z;
+            private ValueParameter f33519z;
 
             /* renamed from: p  reason: collision with root package name */
-            private int f33287p = 518;
+            private int f33509p = 518;
 
             /* renamed from: q  reason: collision with root package name */
-            private int f33288q = 2054;
+            private int f33510q = 2054;
 
             /* renamed from: s  reason: collision with root package name */
-            private Type f33290s = Type.getDefaultInstance();
+            private Type f33512s = Type.getDefaultInstance();
 
             private Builder() {
                 List list = Collections.EMPTY_LIST;
-                this.f33292u = list;
-                this.f33293v = Type.getDefaultInstance();
-                this.f33295x = list;
-                this.f33296y = list;
-                this.f33297z = ValueParameter.getDefaultInstance();
+                this.f33514u = list;
+                this.f33515v = Type.getDefaultInstance();
+                this.f33517x = list;
+                this.f33518y = list;
+                this.f33519z = ValueParameter.getDefaultInstance();
                 this.C = list;
                 this.D = list;
                 o();
             }
 
-            static /* synthetic */ Builder h() {
-                return i();
+            static /* synthetic */ Builder g() {
+                return h();
             }
 
-            private static Builder i() {
+            private static Builder h() {
                 return new Builder();
             }
 
             private void j() {
-                if ((this.f33286o & 16384) != 16384) {
+                if ((this.f33508o & 16384) != 16384) {
                     this.D = new ArrayList(this.D);
-                    this.f33286o |= 16384;
+                    this.f33508o |= 16384;
                 }
             }
 
             private void k() {
-                if ((this.f33286o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 512) {
-                    this.f33296y = new ArrayList(this.f33296y);
-                    this.f33286o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
+                if ((this.f33508o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 512) {
+                    this.f33518y = new ArrayList(this.f33518y);
+                    this.f33508o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                 }
             }
 
             private void l() {
-                if ((this.f33286o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 256) {
-                    this.f33295x = new ArrayList(this.f33295x);
-                    this.f33286o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
+                if ((this.f33508o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 256) {
+                    this.f33517x = new ArrayList(this.f33517x);
+                    this.f33508o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                 }
             }
 
             private void m() {
-                if ((this.f33286o & 32) != 32) {
-                    this.f33292u = new ArrayList(this.f33292u);
-                    this.f33286o |= 32;
+                if ((this.f33508o & 32) != 32) {
+                    this.f33514u = new ArrayList(this.f33514u);
+                    this.f33508o |= 32;
                 }
             }
 
             private void n() {
-                if ((this.f33286o & 8192) != 8192) {
+                if ((this.f33508o & 8192) != 8192) {
                     this.C = new ArrayList(this.C);
-                    this.f33286o |= 8192;
+                    this.f33508o |= 8192;
                 }
             }
 
@@ -9539,55 +9539,55 @@ public final class ProtoBuf {
 
             public Property buildPartial() {
                 Property property = new Property(this);
-                int i10 = this.f33286o;
+                int i10 = this.f33508o;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                property.f33275p = this.f33287p;
+                property.f33497p = this.f33509p;
                 if ((i10 & 2) == 2) {
                     i11 |= 2;
                 }
-                property.f33276q = this.f33288q;
+                property.f33498q = this.f33510q;
                 if ((i10 & 4) == 4) {
                     i11 |= 4;
                 }
-                property.f33277r = this.f33289r;
+                property.f33499r = this.f33511r;
                 if ((i10 & 8) == 8) {
                     i11 |= 8;
                 }
-                property.f33278s = this.f33290s;
+                property.f33500s = this.f33512s;
                 if ((i10 & 16) == 16) {
                     i11 |= 16;
                 }
-                property.f33279t = this.f33291t;
-                if ((this.f33286o & 32) == 32) {
-                    this.f33292u = Collections.unmodifiableList(this.f33292u);
-                    this.f33286o &= -33;
+                property.f33501t = this.f33513t;
+                if ((this.f33508o & 32) == 32) {
+                    this.f33514u = Collections.unmodifiableList(this.f33514u);
+                    this.f33508o &= -33;
                 }
-                property.f33280u = this.f33292u;
+                property.f33502u = this.f33514u;
                 if ((i10 & 64) == 64) {
                     i11 |= 32;
                 }
-                property.f33281v = this.f33293v;
+                property.f33503v = this.f33515v;
                 if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                     i11 |= 64;
                 }
-                property.f33282w = this.f33294w;
-                if ((this.f33286o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
-                    this.f33295x = Collections.unmodifiableList(this.f33295x);
-                    this.f33286o &= -257;
+                property.f33504w = this.f33516w;
+                if ((this.f33508o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+                    this.f33517x = Collections.unmodifiableList(this.f33517x);
+                    this.f33508o &= -257;
                 }
-                property.f33283x = this.f33295x;
-                if ((this.f33286o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
-                    this.f33296y = Collections.unmodifiableList(this.f33296y);
-                    this.f33286o &= -513;
+                property.f33505x = this.f33517x;
+                if ((this.f33508o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+                    this.f33518y = Collections.unmodifiableList(this.f33518y);
+                    this.f33508o &= -513;
                 }
-                property.f33284y = this.f33296y;
+                property.f33506y = this.f33518y;
                 if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
                     i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 }
-                property.A = this.f33297z;
+                property.A = this.f33519z;
                 if ((i10 & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
                     i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                 }
@@ -9596,17 +9596,17 @@ public final class ProtoBuf {
                     i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                 }
                 property.C = this.B;
-                if ((this.f33286o & 8192) == 8192) {
+                if ((this.f33508o & 8192) == 8192) {
                     this.C = Collections.unmodifiableList(this.C);
-                    this.f33286o &= -8193;
+                    this.f33508o &= -8193;
                 }
                 property.D = this.C;
-                if ((this.f33286o & 16384) == 16384) {
+                if ((this.f33508o & 16384) == 16384) {
                     this.D = Collections.unmodifiableList(this.D);
-                    this.f33286o &= -16385;
+                    this.f33508o &= -16385;
                 }
                 property.E = this.D;
-                property.f33274o = i11;
+                property.f33496o = i11;
                 return property;
             }
 
@@ -9619,56 +9619,56 @@ public final class ProtoBuf {
             }
 
             public Type getContextReceiverType(int i10) {
-                return (Type) this.f33295x.get(i10);
+                return (Type) this.f33517x.get(i10);
             }
 
             public int getContextReceiverTypeCount() {
-                return this.f33295x.size();
+                return this.f33517x.size();
             }
 
             public Type getReceiverType() {
-                return this.f33293v;
+                return this.f33515v;
             }
 
             public Type getReturnType() {
-                return this.f33290s;
+                return this.f33512s;
             }
 
             public ValueParameter getSetterValueParameter() {
-                return this.f33297z;
+                return this.f33519z;
             }
 
             public TypeParameter getTypeParameter(int i10) {
-                return (TypeParameter) this.f33292u.get(i10);
+                return (TypeParameter) this.f33514u.get(i10);
             }
 
             public int getTypeParameterCount() {
-                return this.f33292u.size();
+                return this.f33514u.size();
             }
 
             public boolean hasName() {
-                if ((this.f33286o & 4) == 4) {
+                if ((this.f33508o & 4) == 4) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasReceiverType() {
-                if ((this.f33286o & 64) == 64) {
+                if ((this.f33508o & 64) == 64) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasReturnType() {
-                if ((this.f33286o & 8) == 8) {
+                if ((this.f33508o & 8) == 8) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasSetterValueParameter() {
-                if ((this.f33286o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
+                if ((this.f33508o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
                     return true;
                 }
                 return false;
@@ -9710,73 +9710,73 @@ public final class ProtoBuf {
             }
 
             public Builder mergeReceiverType(Type type) {
-                if ((this.f33286o & 64) == 64 && this.f33293v != Type.getDefaultInstance()) {
-                    this.f33293v = Type.newBuilder(this.f33293v).mergeFrom(type).buildPartial();
+                if ((this.f33508o & 64) == 64 && this.f33515v != Type.getDefaultInstance()) {
+                    this.f33515v = Type.newBuilder(this.f33515v).mergeFrom(type).buildPartial();
                 } else {
-                    this.f33293v = type;
+                    this.f33515v = type;
                 }
-                this.f33286o |= 64;
+                this.f33508o |= 64;
                 return this;
             }
 
             public Builder mergeReturnType(Type type) {
-                if ((this.f33286o & 8) == 8 && this.f33290s != Type.getDefaultInstance()) {
-                    this.f33290s = Type.newBuilder(this.f33290s).mergeFrom(type).buildPartial();
+                if ((this.f33508o & 8) == 8 && this.f33512s != Type.getDefaultInstance()) {
+                    this.f33512s = Type.newBuilder(this.f33512s).mergeFrom(type).buildPartial();
                 } else {
-                    this.f33290s = type;
+                    this.f33512s = type;
                 }
-                this.f33286o |= 8;
+                this.f33508o |= 8;
                 return this;
             }
 
             public Builder mergeSetterValueParameter(ValueParameter valueParameter) {
-                if ((this.f33286o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024 && this.f33297z != ValueParameter.getDefaultInstance()) {
-                    this.f33297z = ValueParameter.newBuilder(this.f33297z).mergeFrom(valueParameter).buildPartial();
+                if ((this.f33508o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024 && this.f33519z != ValueParameter.getDefaultInstance()) {
+                    this.f33519z = ValueParameter.newBuilder(this.f33519z).mergeFrom(valueParameter).buildPartial();
                 } else {
-                    this.f33297z = valueParameter;
+                    this.f33519z = valueParameter;
                 }
-                this.f33286o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
+                this.f33508o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                 return this;
             }
 
             public Builder setFlags(int i10) {
-                this.f33286o |= 1;
-                this.f33287p = i10;
+                this.f33508o |= 1;
+                this.f33509p = i10;
                 return this;
             }
 
             public Builder setGetterFlags(int i10) {
-                this.f33286o |= RecyclerView.ItemAnimator.FLAG_MOVED;
+                this.f33508o |= RecyclerView.ItemAnimator.FLAG_MOVED;
                 this.A = i10;
                 return this;
             }
 
             public Builder setName(int i10) {
-                this.f33286o |= 4;
-                this.f33289r = i10;
+                this.f33508o |= 4;
+                this.f33511r = i10;
                 return this;
             }
 
             public Builder setOldFlags(int i10) {
-                this.f33286o |= 2;
-                this.f33288q = i10;
+                this.f33508o |= 2;
+                this.f33510q = i10;
                 return this;
             }
 
             public Builder setReceiverTypeId(int i10) {
-                this.f33286o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                this.f33294w = i10;
+                this.f33508o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                this.f33516w = i10;
                 return this;
             }
 
             public Builder setReturnTypeId(int i10) {
-                this.f33286o |= 16;
-                this.f33291t = i10;
+                this.f33508o |= 16;
+                this.f33513t = i10;
                 return this;
             }
 
             public Builder setSetterFlags(int i10) {
-                this.f33286o |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
+                this.f33508o |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                 this.B = i10;
                 return this;
             }
@@ -9815,13 +9815,13 @@ public final class ProtoBuf {
                 if (property.hasReturnTypeId()) {
                     setReturnTypeId(property.getReturnTypeId());
                 }
-                if (!property.f33280u.isEmpty()) {
-                    if (this.f33292u.isEmpty()) {
-                        this.f33292u = property.f33280u;
-                        this.f33286o &= -33;
+                if (!property.f33502u.isEmpty()) {
+                    if (this.f33514u.isEmpty()) {
+                        this.f33514u = property.f33502u;
+                        this.f33508o &= -33;
                     } else {
                         m();
-                        this.f33292u.addAll(property.f33280u);
+                        this.f33514u.addAll(property.f33502u);
                     }
                 }
                 if (property.hasReceiverType()) {
@@ -9830,22 +9830,22 @@ public final class ProtoBuf {
                 if (property.hasReceiverTypeId()) {
                     setReceiverTypeId(property.getReceiverTypeId());
                 }
-                if (!property.f33283x.isEmpty()) {
-                    if (this.f33295x.isEmpty()) {
-                        this.f33295x = property.f33283x;
-                        this.f33286o &= -257;
+                if (!property.f33505x.isEmpty()) {
+                    if (this.f33517x.isEmpty()) {
+                        this.f33517x = property.f33505x;
+                        this.f33508o &= -257;
                     } else {
                         l();
-                        this.f33295x.addAll(property.f33283x);
+                        this.f33517x.addAll(property.f33505x);
                     }
                 }
-                if (!property.f33284y.isEmpty()) {
-                    if (this.f33296y.isEmpty()) {
-                        this.f33296y = property.f33284y;
-                        this.f33286o &= -513;
+                if (!property.f33506y.isEmpty()) {
+                    if (this.f33518y.isEmpty()) {
+                        this.f33518y = property.f33506y;
+                        this.f33508o &= -513;
                     } else {
                         k();
-                        this.f33296y.addAll(property.f33284y);
+                        this.f33518y.addAll(property.f33506y);
                     }
                 }
                 if (property.hasSetterValueParameter()) {
@@ -9860,7 +9860,7 @@ public final class ProtoBuf {
                 if (!property.D.isEmpty()) {
                     if (this.C.isEmpty()) {
                         this.C = property.D;
-                        this.f33286o &= -8193;
+                        this.f33508o &= -8193;
                     } else {
                         n();
                         this.C.addAll(property.D);
@@ -9869,20 +9869,20 @@ public final class ProtoBuf {
                 if (!property.E.isEmpty()) {
                     if (this.D.isEmpty()) {
                         this.D = property.E;
-                        this.f33286o &= -16385;
+                        this.f33508o &= -16385;
                     } else {
                         j();
                         this.D.addAll(property.E);
                     }
                 }
                 f(property);
-                setUnknownFields(getUnknownFields().concat(property.f33273i));
+                setUnknownFields(getUnknownFields().concat(property.f33495i));
                 return this;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.ExtendableBuilder, kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.Builder, kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite.Builder
             public Builder clone() {
-                return i().mergeFrom(buildPartial());
+                return h().mergeFrom(buildPartial());
             }
 
             /* JADX WARN: Removed duplicated region for block: B:15:0x001d  */
@@ -9942,17 +9942,17 @@ public final class ProtoBuf {
         }
 
         private void I() {
-            this.f33275p = 518;
-            this.f33276q = 2054;
-            this.f33277r = 0;
-            this.f33278s = Type.getDefaultInstance();
-            this.f33279t = 0;
+            this.f33497p = 518;
+            this.f33498q = 2054;
+            this.f33499r = 0;
+            this.f33500s = Type.getDefaultInstance();
+            this.f33501t = 0;
             List list = Collections.EMPTY_LIST;
-            this.f33280u = list;
-            this.f33281v = Type.getDefaultInstance();
-            this.f33282w = 0;
-            this.f33283x = list;
-            this.f33284y = list;
+            this.f33502u = list;
+            this.f33503v = Type.getDefaultInstance();
+            this.f33504w = 0;
+            this.f33505x = list;
+            this.f33506y = list;
             this.A = ValueParameter.getDefaultInstance();
             this.B = 0;
             this.C = 0;
@@ -9965,7 +9965,7 @@ public final class ProtoBuf {
         }
 
         public static Builder newBuilder() {
-            return Builder.h();
+            return Builder.g();
         }
 
         public CompilerPluginData getCompilerPluginData(int i10) {
@@ -9977,23 +9977,23 @@ public final class ProtoBuf {
         }
 
         public Type getContextReceiverType(int i10) {
-            return (Type) this.f33283x.get(i10);
+            return (Type) this.f33505x.get(i10);
         }
 
         public int getContextReceiverTypeCount() {
-            return this.f33283x.size();
+            return this.f33505x.size();
         }
 
         public List<Integer> getContextReceiverTypeIdList() {
-            return this.f33284y;
+            return this.f33506y;
         }
 
         public List<Type> getContextReceiverTypeList() {
-            return this.f33283x;
+            return this.f33505x;
         }
 
         public int getFlags() {
-            return this.f33275p;
+            return this.f33497p;
         }
 
         public int getGetterFlags() {
@@ -10001,11 +10001,11 @@ public final class ProtoBuf {
         }
 
         public int getName() {
-            return this.f33277r;
+            return this.f33499r;
         }
 
         public int getOldFlags() {
-            return this.f33276q;
+            return this.f33498q;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -10014,19 +10014,19 @@ public final class ProtoBuf {
         }
 
         public Type getReceiverType() {
-            return this.f33281v;
+            return this.f33503v;
         }
 
         public int getReceiverTypeId() {
-            return this.f33282w;
+            return this.f33504w;
         }
 
         public Type getReturnType() {
-            return this.f33278s;
+            return this.f33500s;
         }
 
         public int getReturnTypeId() {
-            return this.f33279t;
+            return this.f33501t;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -10036,53 +10036,53 @@ public final class ProtoBuf {
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33274o & 2) == 2) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33276q);
+            if ((this.f33496o & 2) == 2) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33498q);
             } else {
                 i10 = 0;
             }
-            if ((this.f33274o & 4) == 4) {
-                i10 += CodedOutputStream.computeInt32Size(2, this.f33277r);
+            if ((this.f33496o & 4) == 4) {
+                i10 += CodedOutputStream.computeInt32Size(2, this.f33499r);
             }
-            if ((this.f33274o & 8) == 8) {
-                i10 += CodedOutputStream.computeMessageSize(3, this.f33278s);
+            if ((this.f33496o & 8) == 8) {
+                i10 += CodedOutputStream.computeMessageSize(3, this.f33500s);
             }
-            for (int i12 = 0; i12 < this.f33280u.size(); i12++) {
-                i10 += CodedOutputStream.computeMessageSize(4, (MessageLite) this.f33280u.get(i12));
+            for (int i12 = 0; i12 < this.f33502u.size(); i12++) {
+                i10 += CodedOutputStream.computeMessageSize(4, (MessageLite) this.f33502u.get(i12));
             }
-            if ((this.f33274o & 32) == 32) {
-                i10 += CodedOutputStream.computeMessageSize(5, this.f33281v);
+            if ((this.f33496o & 32) == 32) {
+                i10 += CodedOutputStream.computeMessageSize(5, this.f33503v);
             }
-            if ((this.f33274o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+            if ((this.f33496o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                 i10 += CodedOutputStream.computeMessageSize(6, this.A);
             }
-            if ((this.f33274o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+            if ((this.f33496o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
                 i10 += CodedOutputStream.computeInt32Size(7, this.B);
             }
-            if ((this.f33274o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+            if ((this.f33496o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
                 i10 += CodedOutputStream.computeInt32Size(8, this.C);
             }
-            if ((this.f33274o & 16) == 16) {
-                i10 += CodedOutputStream.computeInt32Size(9, this.f33279t);
+            if ((this.f33496o & 16) == 16) {
+                i10 += CodedOutputStream.computeInt32Size(9, this.f33501t);
             }
-            if ((this.f33274o & 64) == 64) {
-                i10 += CodedOutputStream.computeInt32Size(10, this.f33282w);
+            if ((this.f33496o & 64) == 64) {
+                i10 += CodedOutputStream.computeInt32Size(10, this.f33504w);
             }
-            if ((this.f33274o & 1) == 1) {
-                i10 += CodedOutputStream.computeInt32Size(11, this.f33275p);
+            if ((this.f33496o & 1) == 1) {
+                i10 += CodedOutputStream.computeInt32Size(11, this.f33497p);
             }
-            for (int i13 = 0; i13 < this.f33283x.size(); i13++) {
-                i10 += CodedOutputStream.computeMessageSize(12, (MessageLite) this.f33283x.get(i13));
+            for (int i13 = 0; i13 < this.f33505x.size(); i13++) {
+                i10 += CodedOutputStream.computeMessageSize(12, (MessageLite) this.f33505x.get(i13));
             }
             int i14 = 0;
-            for (int i15 = 0; i15 < this.f33284y.size(); i15++) {
-                i14 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33284y.get(i15)).intValue());
+            for (int i15 = 0; i15 < this.f33506y.size(); i15++) {
+                i14 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33506y.get(i15)).intValue());
             }
             int i16 = i10 + i14;
             if (!getContextReceiverTypeIdList().isEmpty()) {
                 i16 = i16 + 1 + CodedOutputStream.computeInt32SizeNoTag(i14);
             }
-            this.f33285z = i14;
+            this.f33507z = i14;
             int i17 = 0;
             for (int i18 = 0; i18 < this.D.size(); i18++) {
                 i17 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.D.get(i18)).intValue());
@@ -10091,7 +10091,7 @@ public final class ProtoBuf {
             for (int i19 = 0; i19 < this.E.size(); i19++) {
                 size += CodedOutputStream.computeMessageSize(32, (MessageLite) this.E.get(i19));
             }
-            int j10 = size + j() + this.f33273i.size();
+            int j10 = size + j() + this.f33495i.size();
             this.G = j10;
             return j10;
         }
@@ -10105,15 +10105,15 @@ public final class ProtoBuf {
         }
 
         public TypeParameter getTypeParameter(int i10) {
-            return (TypeParameter) this.f33280u.get(i10);
+            return (TypeParameter) this.f33502u.get(i10);
         }
 
         public int getTypeParameterCount() {
-            return this.f33280u.size();
+            return this.f33502u.size();
         }
 
         public List<TypeParameter> getTypeParameterList() {
-            return this.f33280u;
+            return this.f33502u;
         }
 
         public List<Integer> getVersionRequirementList() {
@@ -10121,70 +10121,70 @@ public final class ProtoBuf {
         }
 
         public boolean hasFlags() {
-            if ((this.f33274o & 1) == 1) {
+            if ((this.f33496o & 1) == 1) {
                 return true;
             }
             return false;
         }
 
         public boolean hasGetterFlags() {
-            if ((this.f33274o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+            if ((this.f33496o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
                 return true;
             }
             return false;
         }
 
         public boolean hasName() {
-            if ((this.f33274o & 4) == 4) {
+            if ((this.f33496o & 4) == 4) {
                 return true;
             }
             return false;
         }
 
         public boolean hasOldFlags() {
-            if ((this.f33274o & 2) == 2) {
+            if ((this.f33496o & 2) == 2) {
                 return true;
             }
             return false;
         }
 
         public boolean hasReceiverType() {
-            if ((this.f33274o & 32) == 32) {
+            if ((this.f33496o & 32) == 32) {
                 return true;
             }
             return false;
         }
 
         public boolean hasReceiverTypeId() {
-            if ((this.f33274o & 64) == 64) {
+            if ((this.f33496o & 64) == 64) {
                 return true;
             }
             return false;
         }
 
         public boolean hasReturnType() {
-            if ((this.f33274o & 8) == 8) {
+            if ((this.f33496o & 8) == 8) {
                 return true;
             }
             return false;
         }
 
         public boolean hasReturnTypeId() {
-            if ((this.f33274o & 16) == 16) {
+            if ((this.f33496o & 16) == 16) {
                 return true;
             }
             return false;
         }
 
         public boolean hasSetterFlags() {
-            if ((this.f33274o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+            if ((this.f33496o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
                 return true;
             }
             return false;
         }
 
         public boolean hasSetterValueParameter() {
-            if ((this.f33274o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+            if ((this.f33496o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                 return true;
             }
             return false;
@@ -10245,48 +10245,48 @@ public final class ProtoBuf {
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
             GeneratedMessageLite.ExtendableMessage.ExtensionWriter k10 = k();
-            if ((this.f33274o & 2) == 2) {
-                codedOutputStream.writeInt32(1, this.f33276q);
+            if ((this.f33496o & 2) == 2) {
+                codedOutputStream.writeInt32(1, this.f33498q);
             }
-            if ((this.f33274o & 4) == 4) {
-                codedOutputStream.writeInt32(2, this.f33277r);
+            if ((this.f33496o & 4) == 4) {
+                codedOutputStream.writeInt32(2, this.f33499r);
             }
-            if ((this.f33274o & 8) == 8) {
-                codedOutputStream.writeMessage(3, this.f33278s);
+            if ((this.f33496o & 8) == 8) {
+                codedOutputStream.writeMessage(3, this.f33500s);
             }
-            for (int i10 = 0; i10 < this.f33280u.size(); i10++) {
-                codedOutputStream.writeMessage(4, (MessageLite) this.f33280u.get(i10));
+            for (int i10 = 0; i10 < this.f33502u.size(); i10++) {
+                codedOutputStream.writeMessage(4, (MessageLite) this.f33502u.get(i10));
             }
-            if ((this.f33274o & 32) == 32) {
-                codedOutputStream.writeMessage(5, this.f33281v);
+            if ((this.f33496o & 32) == 32) {
+                codedOutputStream.writeMessage(5, this.f33503v);
             }
-            if ((this.f33274o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+            if ((this.f33496o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                 codedOutputStream.writeMessage(6, this.A);
             }
-            if ((this.f33274o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+            if ((this.f33496o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
                 codedOutputStream.writeInt32(7, this.B);
             }
-            if ((this.f33274o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+            if ((this.f33496o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
                 codedOutputStream.writeInt32(8, this.C);
             }
-            if ((this.f33274o & 16) == 16) {
-                codedOutputStream.writeInt32(9, this.f33279t);
+            if ((this.f33496o & 16) == 16) {
+                codedOutputStream.writeInt32(9, this.f33501t);
             }
-            if ((this.f33274o & 64) == 64) {
-                codedOutputStream.writeInt32(10, this.f33282w);
+            if ((this.f33496o & 64) == 64) {
+                codedOutputStream.writeInt32(10, this.f33504w);
             }
-            if ((this.f33274o & 1) == 1) {
-                codedOutputStream.writeInt32(11, this.f33275p);
+            if ((this.f33496o & 1) == 1) {
+                codedOutputStream.writeInt32(11, this.f33497p);
             }
-            for (int i11 = 0; i11 < this.f33283x.size(); i11++) {
-                codedOutputStream.writeMessage(12, (MessageLite) this.f33283x.get(i11));
+            for (int i11 = 0; i11 < this.f33505x.size(); i11++) {
+                codedOutputStream.writeMessage(12, (MessageLite) this.f33505x.get(i11));
             }
             if (getContextReceiverTypeIdList().size() > 0) {
                 codedOutputStream.writeRawVarint32(106);
-                codedOutputStream.writeRawVarint32(this.f33285z);
+                codedOutputStream.writeRawVarint32(this.f33507z);
             }
-            for (int i12 = 0; i12 < this.f33284y.size(); i12++) {
-                codedOutputStream.writeInt32NoTag(((Integer) this.f33284y.get(i12)).intValue());
+            for (int i12 = 0; i12 < this.f33506y.size(); i12++) {
+                codedOutputStream.writeInt32NoTag(((Integer) this.f33506y.get(i12)).intValue());
             }
             for (int i13 = 0; i13 < this.D.size(); i13++) {
                 codedOutputStream.writeInt32(31, ((Integer) this.D.get(i13)).intValue());
@@ -10295,7 +10295,7 @@ public final class ProtoBuf {
                 codedOutputStream.writeMessage(32, (MessageLite) this.E.get(i14));
             }
             k10.writeUntil(19000, codedOutputStream);
-            codedOutputStream.writeRawBytes(this.f33273i);
+            codedOutputStream.writeRawBytes(this.f33495i);
         }
 
         public static Builder newBuilder(Property property) {
@@ -10319,17 +10319,17 @@ public final class ProtoBuf {
 
         private Property(GeneratedMessageLite.ExtendableBuilder extendableBuilder) {
             super(extendableBuilder);
-            this.f33285z = -1;
+            this.f33507z = -1;
             this.F = (byte) -1;
             this.G = -1;
-            this.f33273i = extendableBuilder.getUnknownFields();
+            this.f33495i = extendableBuilder.getUnknownFields();
         }
 
         private Property(boolean z10) {
-            this.f33285z = -1;
+            this.f33507z = -1;
             this.F = (byte) -1;
             this.G = -1;
-            this.f33273i = ByteString.EMPTY;
+            this.f33495i = ByteString.EMPTY;
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -10337,7 +10337,7 @@ public final class ProtoBuf {
         /* JADX WARN: Type inference failed for: r5v1 */
         /* JADX WARN: Type inference failed for: r5v2, types: [boolean] */
         private Property(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33285z = -1;
+            this.f33507z = -1;
             this.F = (byte) -1;
             this.G = -1;
             I();
@@ -10355,89 +10355,89 @@ public final class ProtoBuf {
                                 case 0:
                                     break;
                                 case 8:
-                                    this.f33274o |= 2;
-                                    this.f33276q = codedInputStream.readInt32();
+                                    this.f33496o |= 2;
+                                    this.f33498q = codedInputStream.readInt32();
                                     continue;
                                 case 16:
-                                    this.f33274o |= 4;
-                                    this.f33277r = codedInputStream.readInt32();
+                                    this.f33496o |= 4;
+                                    this.f33499r = codedInputStream.readInt32();
                                     continue;
                                 case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
-                                    Type.Builder builder = (this.f33274o & 8) == 8 ? this.f33278s.toBuilder() : null;
+                                    Type.Builder builder = (this.f33496o & 8) == 8 ? this.f33500s.toBuilder() : null;
                                     Type type = (Type) codedInputStream.readMessage(Type.PARSER, extensionRegistryLite);
-                                    this.f33278s = type;
+                                    this.f33500s = type;
                                     if (builder != null) {
                                         builder.mergeFrom(type);
-                                        this.f33278s = builder.buildPartial();
+                                        this.f33500s = builder.buildPartial();
                                     }
-                                    this.f33274o |= 8;
+                                    this.f33496o |= 8;
                                     continue;
                                 case ChatViewRecyclerTypes.CHANNEL_DEADCHAT_PROMPT_ACTIONS /* 34 */:
                                     boolean z12 = (z11 ? 1 : 0) & true;
                                     z11 = z11;
                                     if (!z12) {
-                                        this.f33280u = new ArrayList();
+                                        this.f33502u = new ArrayList();
                                         z11 = (z11 ? 1 : 0) | true;
                                     }
-                                    this.f33280u.add(codedInputStream.readMessage(TypeParameter.PARSER, extensionRegistryLite));
+                                    this.f33502u.add(codedInputStream.readMessage(TypeParameter.PARSER, extensionRegistryLite));
                                     continue;
                                 case 42:
-                                    Type.Builder builder2 = (this.f33274o & 32) == 32 ? this.f33281v.toBuilder() : null;
+                                    Type.Builder builder2 = (this.f33496o & 32) == 32 ? this.f33503v.toBuilder() : null;
                                     Type type2 = (Type) codedInputStream.readMessage(Type.PARSER, extensionRegistryLite);
-                                    this.f33281v = type2;
+                                    this.f33503v = type2;
                                     if (builder2 != null) {
                                         builder2.mergeFrom(type2);
-                                        this.f33281v = builder2.buildPartial();
+                                        this.f33503v = builder2.buildPartial();
                                     }
-                                    this.f33274o |= 32;
+                                    this.f33496o |= 32;
                                     continue;
                                 case 50:
-                                    ValueParameter.Builder builder3 = (this.f33274o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128 ? this.A.toBuilder() : null;
+                                    ValueParameter.Builder builder3 = (this.f33496o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128 ? this.A.toBuilder() : null;
                                     ValueParameter valueParameter = (ValueParameter) codedInputStream.readMessage(ValueParameter.PARSER, extensionRegistryLite);
                                     this.A = valueParameter;
                                     if (builder3 != null) {
                                         builder3.mergeFrom(valueParameter);
                                         this.A = builder3.buildPartial();
                                     }
-                                    this.f33274o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                                    this.f33496o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                                     continue;
                                 case ChatViewRecyclerTypes.SHARED_CUSTOM_THEME_EMBED /* 56 */:
-                                    this.f33274o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
+                                    this.f33496o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                                     this.B = codedInputStream.readInt32();
                                     continue;
                                 case 64:
-                                    this.f33274o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
+                                    this.f33496o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                                     this.C = codedInputStream.readInt32();
                                     continue;
                                 case 72:
-                                    this.f33274o |= 16;
-                                    this.f33279t = codedInputStream.readInt32();
+                                    this.f33496o |= 16;
+                                    this.f33501t = codedInputStream.readInt32();
                                     continue;
                                 case 80:
-                                    this.f33274o |= 64;
-                                    this.f33282w = codedInputStream.readInt32();
+                                    this.f33496o |= 64;
+                                    this.f33504w = codedInputStream.readInt32();
                                     continue;
                                 case 88:
-                                    this.f33274o |= 1;
-                                    this.f33275p = codedInputStream.readInt32();
+                                    this.f33496o |= 1;
+                                    this.f33497p = codedInputStream.readInt32();
                                     continue;
                                 case 98:
                                     boolean z13 = (z11 ? 1 : 0) & true;
                                     z11 = z11;
                                     if (!z13) {
-                                        this.f33283x = new ArrayList();
+                                        this.f33505x = new ArrayList();
                                         z11 = (z11 ? 1 : 0) | true;
                                     }
-                                    this.f33283x.add(codedInputStream.readMessage(Type.PARSER, extensionRegistryLite));
+                                    this.f33505x.add(codedInputStream.readMessage(Type.PARSER, extensionRegistryLite));
                                     continue;
                                 case 104:
                                     boolean z14 = (z11 ? 1 : 0) & true;
                                     z11 = z11;
                                     if (!z14) {
-                                        this.f33284y = new ArrayList();
+                                        this.f33506y = new ArrayList();
                                         z11 = (z11 ? 1 : 0) | true;
                                     }
-                                    this.f33284y.add(Integer.valueOf(codedInputStream.readInt32()));
+                                    this.f33506y.add(Integer.valueOf(codedInputStream.readInt32()));
                                     continue;
                                 case 106:
                                     int pushLimit = codedInputStream.pushLimit(codedInputStream.readRawVarint32());
@@ -10446,12 +10446,12 @@ public final class ProtoBuf {
                                     if (!z15) {
                                         z11 = z11;
                                         if (codedInputStream.getBytesUntilLimit() > 0) {
-                                            this.f33284y = new ArrayList();
+                                            this.f33506y = new ArrayList();
                                             z11 = (z11 ? 1 : 0) | true;
                                         }
                                     }
                                     while (codedInputStream.getBytesUntilLimit() > 0) {
-                                        this.f33284y.add(Integer.valueOf(codedInputStream.readInt32()));
+                                        this.f33506y.add(Integer.valueOf(codedInputStream.readInt32()));
                                     }
                                     codedInputStream.popLimit(pushLimit);
                                     continue;
@@ -10505,13 +10505,13 @@ public final class ProtoBuf {
                         }
                     } catch (Throwable th2) {
                         if ((z11 ? 1 : 0) & true) {
-                            this.f33280u = Collections.unmodifiableList(this.f33280u);
+                            this.f33502u = Collections.unmodifiableList(this.f33502u);
                         }
                         if ((z11 ? 1 : 0) & true) {
-                            this.f33283x = Collections.unmodifiableList(this.f33283x);
+                            this.f33505x = Collections.unmodifiableList(this.f33505x);
                         }
                         if ((z11 ? 1 : 0) & true) {
-                            this.f33284y = Collections.unmodifiableList(this.f33284y);
+                            this.f33506y = Collections.unmodifiableList(this.f33506y);
                         }
                         if ((z11 ? 1 : 0) & true) {
                             this.D = Collections.unmodifiableList(this.D);
@@ -10523,22 +10523,22 @@ public final class ProtoBuf {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33273i = newOutput.toByteString();
+                            this.f33495i = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33273i = newOutput.toByteString();
+                        this.f33495i = newOutput.toByteString();
                         e();
                         throw th2;
                     }
                 } else {
                     if ((z11 ? 1 : 0) & true) {
-                        this.f33280u = Collections.unmodifiableList(this.f33280u);
+                        this.f33502u = Collections.unmodifiableList(this.f33502u);
                     }
                     if ((z11 ? 1 : 0) & true) {
-                        this.f33283x = Collections.unmodifiableList(this.f33283x);
+                        this.f33505x = Collections.unmodifiableList(this.f33505x);
                     }
                     if ((z11 ? 1 : 0) & true) {
-                        this.f33284y = Collections.unmodifiableList(this.f33284y);
+                        this.f33506y = Collections.unmodifiableList(this.f33506y);
                     }
                     if ((z11 ? 1 : 0) & true) {
                         this.D = Collections.unmodifiableList(this.D);
@@ -10550,10 +10550,10 @@ public final class ProtoBuf {
                         newInstance.flush();
                     } catch (IOException unused2) {
                     } catch (Throwable th4) {
-                        this.f33273i = newOutput.toByteString();
+                        this.f33495i = newOutput.toByteString();
                         throw th4;
                     }
-                    this.f33273i = newOutput.toByteString();
+                    this.f33495i = newOutput.toByteString();
                     e();
                     return;
                 }
@@ -10570,28 +10570,28 @@ public final class ProtoBuf {
         public static Parser<QualifiedNameTable> PARSER = new a();
 
         /* renamed from: q  reason: collision with root package name */
-        private static final QualifiedNameTable f33298q;
+        private static final QualifiedNameTable f33520q;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33299e;
+        private final ByteString f33521e;
 
         /* renamed from: i  reason: collision with root package name */
-        private List f33300i;
+        private List f33522i;
 
         /* renamed from: o  reason: collision with root package name */
-        private byte f33301o;
+        private byte f33523o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33302p;
+        private int f33524p;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.Builder<QualifiedNameTable, Builder> implements QualifiedNameTableOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33303e;
+            private int f33525e;
 
             /* renamed from: i  reason: collision with root package name */
-            private List f33304i = Collections.EMPTY_LIST;
+            private List f33526i = Collections.EMPTY_LIST;
 
             private Builder() {
                 e();
@@ -10606,9 +10606,9 @@ public final class ProtoBuf {
             }
 
             private void d() {
-                if ((this.f33303e & 1) != 1) {
-                    this.f33304i = new ArrayList(this.f33304i);
-                    this.f33303e |= 1;
+                if ((this.f33525e & 1) != 1) {
+                    this.f33526i = new ArrayList(this.f33526i);
+                    this.f33525e |= 1;
                 }
             }
 
@@ -10617,20 +10617,20 @@ public final class ProtoBuf {
 
             public QualifiedNameTable buildPartial() {
                 QualifiedNameTable qualifiedNameTable = new QualifiedNameTable(this);
-                if ((this.f33303e & 1) == 1) {
-                    this.f33304i = Collections.unmodifiableList(this.f33304i);
-                    this.f33303e &= -2;
+                if ((this.f33525e & 1) == 1) {
+                    this.f33526i = Collections.unmodifiableList(this.f33526i);
+                    this.f33525e &= -2;
                 }
-                qualifiedNameTable.f33300i = this.f33304i;
+                qualifiedNameTable.f33522i = this.f33526i;
                 return qualifiedNameTable;
             }
 
             public QualifiedName getQualifiedName(int i10) {
-                return (QualifiedName) this.f33304i.get(i10);
+                return (QualifiedName) this.f33526i.get(i10);
             }
 
             public int getQualifiedNameCount() {
-                return this.f33304i.size();
+                return this.f33526i.size();
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
@@ -10667,16 +10667,16 @@ public final class ProtoBuf {
                 if (qualifiedNameTable == QualifiedNameTable.getDefaultInstance()) {
                     return this;
                 }
-                if (!qualifiedNameTable.f33300i.isEmpty()) {
-                    if (this.f33304i.isEmpty()) {
-                        this.f33304i = qualifiedNameTable.f33300i;
-                        this.f33303e &= -2;
+                if (!qualifiedNameTable.f33522i.isEmpty()) {
+                    if (this.f33526i.isEmpty()) {
+                        this.f33526i = qualifiedNameTable.f33522i;
+                        this.f33525e &= -2;
                     } else {
                         d();
-                        this.f33304i.addAll(qualifiedNameTable.f33300i);
+                        this.f33526i.addAll(qualifiedNameTable.f33522i);
                     }
                 }
-                setUnknownFields(getUnknownFields().concat(qualifiedNameTable.f33299e));
+                setUnknownFields(getUnknownFields().concat(qualifiedNameTable.f33521e));
                 return this;
             }
 
@@ -10723,43 +10723,43 @@ public final class ProtoBuf {
             public static Parser<QualifiedName> PARSER = new a();
 
             /* renamed from: t  reason: collision with root package name */
-            private static final QualifiedName f33305t;
+            private static final QualifiedName f33527t;
 
             /* renamed from: e  reason: collision with root package name */
-            private final ByteString f33306e;
+            private final ByteString f33528e;
 
             /* renamed from: i  reason: collision with root package name */
-            private int f33307i;
+            private int f33529i;
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33308o;
+            private int f33530o;
 
             /* renamed from: p  reason: collision with root package name */
-            private int f33309p;
+            private int f33531p;
 
             /* renamed from: q  reason: collision with root package name */
-            private Kind f33310q;
+            private Kind f33532q;
 
             /* renamed from: r  reason: collision with root package name */
-            private byte f33311r;
+            private byte f33533r;
 
             /* renamed from: s  reason: collision with root package name */
-            private int f33312s;
+            private int f33534s;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
             public static final class Builder extends GeneratedMessageLite.Builder<QualifiedName, Builder> implements QualifiedNameOrBuilder {
 
                 /* renamed from: e  reason: collision with root package name */
-                private int f33313e;
+                private int f33535e;
 
                 /* renamed from: o  reason: collision with root package name */
-                private int f33315o;
+                private int f33537o;
 
                 /* renamed from: i  reason: collision with root package name */
-                private int f33314i = -1;
+                private int f33536i = -1;
 
                 /* renamed from: p  reason: collision with root package name */
-                private Kind f33316p = Kind.PACKAGE;
+                private Kind f33538p = Kind.PACKAGE;
 
                 private Builder() {
                     d();
@@ -10778,26 +10778,26 @@ public final class ProtoBuf {
 
                 public QualifiedName buildPartial() {
                     QualifiedName qualifiedName = new QualifiedName(this);
-                    int i10 = this.f33313e;
+                    int i10 = this.f33535e;
                     int i11 = 1;
                     if ((i10 & 1) != 1) {
                         i11 = 0;
                     }
-                    qualifiedName.f33308o = this.f33314i;
+                    qualifiedName.f33530o = this.f33536i;
                     if ((i10 & 2) == 2) {
                         i11 |= 2;
                     }
-                    qualifiedName.f33309p = this.f33315o;
+                    qualifiedName.f33531p = this.f33537o;
                     if ((i10 & 4) == 4) {
                         i11 |= 4;
                     }
-                    qualifiedName.f33310q = this.f33316p;
-                    qualifiedName.f33307i = i11;
+                    qualifiedName.f33532q = this.f33538p;
+                    qualifiedName.f33529i = i11;
                     return qualifiedName;
                 }
 
                 public boolean hasShortName() {
-                    if ((this.f33313e & 2) == 2) {
+                    if ((this.f33535e & 2) == 2) {
                         return true;
                     }
                     return false;
@@ -10813,20 +10813,20 @@ public final class ProtoBuf {
 
                 public Builder setKind(Kind kind) {
                     kind.getClass();
-                    this.f33313e |= 4;
-                    this.f33316p = kind;
+                    this.f33535e |= 4;
+                    this.f33538p = kind;
                     return this;
                 }
 
                 public Builder setParentQualifiedName(int i10) {
-                    this.f33313e |= 1;
-                    this.f33314i = i10;
+                    this.f33535e |= 1;
+                    this.f33536i = i10;
                     return this;
                 }
 
                 public Builder setShortName(int i10) {
-                    this.f33313e |= 2;
-                    this.f33315o = i10;
+                    this.f33535e |= 2;
+                    this.f33537o = i10;
                     return this;
                 }
 
@@ -10863,7 +10863,7 @@ public final class ProtoBuf {
                     if (qualifiedName.hasKind()) {
                         setKind(qualifiedName.getKind());
                     }
-                    setUnknownFields(getUnknownFields().concat(qualifiedName.f33306e));
+                    setUnknownFields(getUnknownFields().concat(qualifiedName.f33528e));
                     return this;
                 }
 
@@ -10913,10 +10913,10 @@ public final class ProtoBuf {
                 
 
                 /* renamed from: e  reason: collision with root package name */
-                private static Internal.EnumLiteMap f33317e = new a();
+                private static Internal.EnumLiteMap f33539e = new a();
 
                 /* renamed from: d  reason: collision with root package name */
-                private final int f33319d;
+                private final int f33541d;
 
                 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
                 static class a implements Internal.EnumLiteMap {
@@ -10931,12 +10931,12 @@ public final class ProtoBuf {
                 }
 
                 Kind(int i10, int i11) {
-                    this.f33319d = i11;
+                    this.f33541d = i11;
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
                 public final int getNumber() {
-                    return this.f33319d;
+                    return this.f33541d;
                 }
 
                 public static Kind valueOf(int i10) {
@@ -10967,18 +10967,18 @@ public final class ProtoBuf {
 
             static {
                 QualifiedName qualifiedName = new QualifiedName(true);
-                f33305t = qualifiedName;
+                f33527t = qualifiedName;
                 qualifiedName.m();
             }
 
             public static QualifiedName getDefaultInstance() {
-                return f33305t;
+                return f33527t;
             }
 
             private void m() {
-                this.f33308o = -1;
-                this.f33309p = 0;
-                this.f33310q = Kind.PACKAGE;
+                this.f33530o = -1;
+                this.f33531p = 0;
+                this.f33532q = Kind.PACKAGE;
             }
 
             public static Builder newBuilder() {
@@ -10986,11 +10986,11 @@ public final class ProtoBuf {
             }
 
             public Kind getKind() {
-                return this.f33310q;
+                return this.f33532q;
             }
 
             public int getParentQualifiedName() {
-                return this.f33308o;
+                return this.f33530o;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -11001,46 +11001,46 @@ public final class ProtoBuf {
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
             public int getSerializedSize() {
                 int i10;
-                int i11 = this.f33312s;
+                int i11 = this.f33534s;
                 if (i11 != -1) {
                     return i11;
                 }
-                if ((this.f33307i & 1) == 1) {
-                    i10 = CodedOutputStream.computeInt32Size(1, this.f33308o);
+                if ((this.f33529i & 1) == 1) {
+                    i10 = CodedOutputStream.computeInt32Size(1, this.f33530o);
                 } else {
                     i10 = 0;
                 }
-                if ((this.f33307i & 2) == 2) {
-                    i10 += CodedOutputStream.computeInt32Size(2, this.f33309p);
+                if ((this.f33529i & 2) == 2) {
+                    i10 += CodedOutputStream.computeInt32Size(2, this.f33531p);
                 }
-                if ((this.f33307i & 4) == 4) {
-                    i10 += CodedOutputStream.computeEnumSize(3, this.f33310q.getNumber());
+                if ((this.f33529i & 4) == 4) {
+                    i10 += CodedOutputStream.computeEnumSize(3, this.f33532q.getNumber());
                 }
-                int size = i10 + this.f33306e.size();
-                this.f33312s = size;
+                int size = i10 + this.f33528e.size();
+                this.f33534s = size;
                 return size;
             }
 
             public int getShortName() {
-                return this.f33309p;
+                return this.f33531p;
             }
 
             public boolean hasKind() {
-                if ((this.f33307i & 4) == 4) {
+                if ((this.f33529i & 4) == 4) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasParentQualifiedName() {
-                if ((this.f33307i & 1) == 1) {
+                if ((this.f33529i & 1) == 1) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasShortName() {
-                if ((this.f33307i & 2) == 2) {
+                if ((this.f33529i & 2) == 2) {
                     return true;
                 }
                 return false;
@@ -11048,7 +11048,7 @@ public final class ProtoBuf {
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
             public final boolean isInitialized() {
-                byte b10 = this.f33311r;
+                byte b10 = this.f33533r;
                 if (b10 == 1) {
                     return true;
                 }
@@ -11056,26 +11056,26 @@ public final class ProtoBuf {
                     return false;
                 }
                 if (!hasShortName()) {
-                    this.f33311r = (byte) 0;
+                    this.f33533r = (byte) 0;
                     return false;
                 }
-                this.f33311r = (byte) 1;
+                this.f33533r = (byte) 1;
                 return true;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
             public void writeTo(CodedOutputStream codedOutputStream) {
                 getSerializedSize();
-                if ((this.f33307i & 1) == 1) {
-                    codedOutputStream.writeInt32(1, this.f33308o);
+                if ((this.f33529i & 1) == 1) {
+                    codedOutputStream.writeInt32(1, this.f33530o);
                 }
-                if ((this.f33307i & 2) == 2) {
-                    codedOutputStream.writeInt32(2, this.f33309p);
+                if ((this.f33529i & 2) == 2) {
+                    codedOutputStream.writeInt32(2, this.f33531p);
                 }
-                if ((this.f33307i & 4) == 4) {
-                    codedOutputStream.writeEnum(3, this.f33310q.getNumber());
+                if ((this.f33529i & 4) == 4) {
+                    codedOutputStream.writeEnum(3, this.f33532q.getNumber());
                 }
-                codedOutputStream.writeRawBytes(this.f33306e);
+                codedOutputStream.writeRawBytes(this.f33528e);
             }
 
             public static Builder newBuilder(QualifiedName qualifiedName) {
@@ -11084,7 +11084,7 @@ public final class ProtoBuf {
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
             public QualifiedName getDefaultInstanceForType() {
-                return f33305t;
+                return f33527t;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -11099,20 +11099,20 @@ public final class ProtoBuf {
 
             private QualifiedName(GeneratedMessageLite.Builder builder) {
                 super(builder);
-                this.f33311r = (byte) -1;
-                this.f33312s = -1;
-                this.f33306e = builder.getUnknownFields();
+                this.f33533r = (byte) -1;
+                this.f33534s = -1;
+                this.f33528e = builder.getUnknownFields();
             }
 
             private QualifiedName(boolean z10) {
-                this.f33311r = (byte) -1;
-                this.f33312s = -1;
-                this.f33306e = ByteString.EMPTY;
+                this.f33533r = (byte) -1;
+                this.f33534s = -1;
+                this.f33528e = ByteString.EMPTY;
             }
 
             private QualifiedName(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-                this.f33311r = (byte) -1;
-                this.f33312s = -1;
+                this.f33533r = (byte) -1;
+                this.f33534s = -1;
                 m();
                 ByteString.Output newOutput = ByteString.newOutput();
                 CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -11124,11 +11124,11 @@ public final class ProtoBuf {
                                 int readTag = codedInputStream.readTag();
                                 if (readTag != 0) {
                                     if (readTag == 8) {
-                                        this.f33307i |= 1;
-                                        this.f33308o = codedInputStream.readInt32();
+                                        this.f33529i |= 1;
+                                        this.f33530o = codedInputStream.readInt32();
                                     } else if (readTag == 16) {
-                                        this.f33307i |= 2;
-                                        this.f33309p = codedInputStream.readInt32();
+                                        this.f33529i |= 2;
+                                        this.f33531p = codedInputStream.readInt32();
                                     } else if (readTag != 24) {
                                         if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                         }
@@ -11139,8 +11139,8 @@ public final class ProtoBuf {
                                             newInstance.writeRawVarint32(readTag);
                                             newInstance.writeRawVarint32(readEnum);
                                         } else {
-                                            this.f33307i |= 4;
-                                            this.f33310q = valueOf;
+                                            this.f33529i |= 4;
+                                            this.f33532q = valueOf;
                                         }
                                     }
                                 }
@@ -11156,10 +11156,10 @@ public final class ProtoBuf {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33306e = newOutput.toByteString();
+                            this.f33528e = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33306e = newOutput.toByteString();
+                        this.f33528e = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -11168,10 +11168,10 @@ public final class ProtoBuf {
                     newInstance.flush();
                 } catch (IOException unused2) {
                 } catch (Throwable th4) {
-                    this.f33306e = newOutput.toByteString();
+                    this.f33528e = newOutput.toByteString();
                     throw th4;
                 }
-                this.f33306e = newOutput.toByteString();
+                this.f33528e = newOutput.toByteString();
                 e();
             }
         }
@@ -11194,16 +11194,16 @@ public final class ProtoBuf {
 
         static {
             QualifiedNameTable qualifiedNameTable = new QualifiedNameTable(true);
-            f33298q = qualifiedNameTable;
+            f33520q = qualifiedNameTable;
             qualifiedNameTable.k();
         }
 
         public static QualifiedNameTable getDefaultInstance() {
-            return f33298q;
+            return f33520q;
         }
 
         private void k() {
-            this.f33300i = Collections.EMPTY_LIST;
+            this.f33522i = Collections.EMPTY_LIST;
         }
 
         public static Builder newBuilder() {
@@ -11216,31 +11216,31 @@ public final class ProtoBuf {
         }
 
         public QualifiedName getQualifiedName(int i10) {
-            return (QualifiedName) this.f33300i.get(i10);
+            return (QualifiedName) this.f33522i.get(i10);
         }
 
         public int getQualifiedNameCount() {
-            return this.f33300i.size();
+            return this.f33522i.size();
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
-            int i10 = this.f33302p;
+            int i10 = this.f33524p;
             if (i10 != -1) {
                 return i10;
             }
             int i11 = 0;
-            for (int i12 = 0; i12 < this.f33300i.size(); i12++) {
-                i11 += CodedOutputStream.computeMessageSize(1, (MessageLite) this.f33300i.get(i12));
+            for (int i12 = 0; i12 < this.f33522i.size(); i12++) {
+                i11 += CodedOutputStream.computeMessageSize(1, (MessageLite) this.f33522i.get(i12));
             }
-            int size = i11 + this.f33299e.size();
-            this.f33302p = size;
+            int size = i11 + this.f33521e.size();
+            this.f33524p = size;
             return size;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33301o;
+            byte b10 = this.f33523o;
             if (b10 == 1) {
                 return true;
             }
@@ -11249,21 +11249,21 @@ public final class ProtoBuf {
             }
             for (int i10 = 0; i10 < getQualifiedNameCount(); i10++) {
                 if (!getQualifiedName(i10).isInitialized()) {
-                    this.f33301o = (byte) 0;
+                    this.f33523o = (byte) 0;
                     return false;
                 }
             }
-            this.f33301o = (byte) 1;
+            this.f33523o = (byte) 1;
             return true;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            for (int i10 = 0; i10 < this.f33300i.size(); i10++) {
-                codedOutputStream.writeMessage(1, (MessageLite) this.f33300i.get(i10));
+            for (int i10 = 0; i10 < this.f33522i.size(); i10++) {
+                codedOutputStream.writeMessage(1, (MessageLite) this.f33522i.get(i10));
             }
-            codedOutputStream.writeRawBytes(this.f33299e);
+            codedOutputStream.writeRawBytes(this.f33521e);
         }
 
         public static Builder newBuilder(QualifiedNameTable qualifiedNameTable) {
@@ -11272,7 +11272,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public QualifiedNameTable getDefaultInstanceForType() {
-            return f33298q;
+            return f33520q;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -11287,20 +11287,20 @@ public final class ProtoBuf {
 
         private QualifiedNameTable(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33301o = (byte) -1;
-            this.f33302p = -1;
-            this.f33299e = builder.getUnknownFields();
+            this.f33523o = (byte) -1;
+            this.f33524p = -1;
+            this.f33521e = builder.getUnknownFields();
         }
 
         private QualifiedNameTable(boolean z10) {
-            this.f33301o = (byte) -1;
-            this.f33302p = -1;
-            this.f33299e = ByteString.EMPTY;
+            this.f33523o = (byte) -1;
+            this.f33524p = -1;
+            this.f33521e = ByteString.EMPTY;
         }
 
         private QualifiedNameTable(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33301o = (byte) -1;
-            this.f33302p = -1;
+            this.f33523o = (byte) -1;
+            this.f33524p = -1;
             k();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -11317,10 +11317,10 @@ public final class ProtoBuf {
                                     }
                                 } else {
                                     if (!z11) {
-                                        this.f33300i = new ArrayList();
+                                        this.f33522i = new ArrayList();
                                         z11 = true;
                                     }
-                                    this.f33300i.add(codedInputStream.readMessage(QualifiedName.PARSER, extensionRegistryLite));
+                                    this.f33522i.add(codedInputStream.readMessage(QualifiedName.PARSER, extensionRegistryLite));
                                 }
                             }
                             z10 = true;
@@ -11332,31 +11332,31 @@ public final class ProtoBuf {
                     }
                 } catch (Throwable th2) {
                     if (z11) {
-                        this.f33300i = Collections.unmodifiableList(this.f33300i);
+                        this.f33522i = Collections.unmodifiableList(this.f33522i);
                     }
                     try {
                         newInstance.flush();
                     } catch (IOException unused) {
                     } catch (Throwable th3) {
-                        this.f33299e = newOutput.toByteString();
+                        this.f33521e = newOutput.toByteString();
                         throw th3;
                     }
-                    this.f33299e = newOutput.toByteString();
+                    this.f33521e = newOutput.toByteString();
                     e();
                     throw th2;
                 }
             }
             if (z11) {
-                this.f33300i = Collections.unmodifiableList(this.f33300i);
+                this.f33522i = Collections.unmodifiableList(this.f33522i);
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33299e = newOutput.toByteString();
+                this.f33521e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33299e = newOutput.toByteString();
+            this.f33521e = newOutput.toByteString();
             e();
         }
     }
@@ -11370,28 +11370,28 @@ public final class ProtoBuf {
         public static Parser<StringTable> PARSER = new a();
 
         /* renamed from: q  reason: collision with root package name */
-        private static final StringTable f33320q;
+        private static final StringTable f33542q;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33321e;
+        private final ByteString f33543e;
 
         /* renamed from: i  reason: collision with root package name */
-        private LazyStringList f33322i;
+        private LazyStringList f33544i;
 
         /* renamed from: o  reason: collision with root package name */
-        private byte f33323o;
+        private byte f33545o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33324p;
+        private int f33546p;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.Builder<StringTable, Builder> implements StringTableOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33325e;
+            private int f33547e;
 
             /* renamed from: i  reason: collision with root package name */
-            private LazyStringList f33326i = LazyStringArrayList.EMPTY;
+            private LazyStringList f33548i = LazyStringArrayList.EMPTY;
 
             private Builder() {
                 e();
@@ -11406,9 +11406,9 @@ public final class ProtoBuf {
             }
 
             private void d() {
-                if ((this.f33325e & 1) != 1) {
-                    this.f33326i = new LazyStringArrayList(this.f33326i);
-                    this.f33325e |= 1;
+                if ((this.f33547e & 1) != 1) {
+                    this.f33548i = new LazyStringArrayList(this.f33548i);
+                    this.f33547e |= 1;
                 }
             }
 
@@ -11417,11 +11417,11 @@ public final class ProtoBuf {
 
             public StringTable buildPartial() {
                 StringTable stringTable = new StringTable(this);
-                if ((this.f33325e & 1) == 1) {
-                    this.f33326i = this.f33326i.getUnmodifiableView();
-                    this.f33325e &= -2;
+                if ((this.f33547e & 1) == 1) {
+                    this.f33548i = this.f33548i.getUnmodifiableView();
+                    this.f33547e &= -2;
                 }
-                stringTable.f33322i = this.f33326i;
+                stringTable.f33544i = this.f33548i;
                 return stringTable;
             }
 
@@ -11454,16 +11454,16 @@ public final class ProtoBuf {
                 if (stringTable == StringTable.getDefaultInstance()) {
                     return this;
                 }
-                if (!stringTable.f33322i.isEmpty()) {
-                    if (this.f33326i.isEmpty()) {
-                        this.f33326i = stringTable.f33322i;
-                        this.f33325e &= -2;
+                if (!stringTable.f33544i.isEmpty()) {
+                    if (this.f33548i.isEmpty()) {
+                        this.f33548i = stringTable.f33544i;
+                        this.f33547e &= -2;
                     } else {
                         d();
-                        this.f33326i.addAll(stringTable.f33322i);
+                        this.f33548i.addAll(stringTable.f33544i);
                     }
                 }
-                setUnknownFields(getUnknownFields().concat(stringTable.f33321e));
+                setUnknownFields(getUnknownFields().concat(stringTable.f33543e));
                 return this;
             }
 
@@ -11519,16 +11519,16 @@ public final class ProtoBuf {
 
         static {
             StringTable stringTable = new StringTable(true);
-            f33320q = stringTable;
+            f33542q = stringTable;
             stringTable.k();
         }
 
         public static StringTable getDefaultInstance() {
-            return f33320q;
+            return f33542q;
         }
 
         private void k() {
-            this.f33322i = LazyStringArrayList.EMPTY;
+            this.f33544i = LazyStringArrayList.EMPTY;
         }
 
         public static Builder newBuilder() {
@@ -11542,47 +11542,47 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
-            int i10 = this.f33324p;
+            int i10 = this.f33546p;
             if (i10 != -1) {
                 return i10;
             }
             int i11 = 0;
-            for (int i12 = 0; i12 < this.f33322i.size(); i12++) {
-                i11 += CodedOutputStream.computeBytesSizeNoTag(this.f33322i.getByteString(i12));
+            for (int i12 = 0; i12 < this.f33544i.size(); i12++) {
+                i11 += CodedOutputStream.computeBytesSizeNoTag(this.f33544i.getByteString(i12));
             }
-            int size = i11 + getStringList().size() + this.f33321e.size();
-            this.f33324p = size;
+            int size = i11 + getStringList().size() + this.f33543e.size();
+            this.f33546p = size;
             return size;
         }
 
         public String getString(int i10) {
-            return this.f33322i.get(i10);
+            return this.f33544i.get(i10);
         }
 
         public ProtocolStringList getStringList() {
-            return this.f33322i;
+            return this.f33544i;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33323o;
+            byte b10 = this.f33545o;
             if (b10 == 1) {
                 return true;
             }
             if (b10 == 0) {
                 return false;
             }
-            this.f33323o = (byte) 1;
+            this.f33545o = (byte) 1;
             return true;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            for (int i10 = 0; i10 < this.f33322i.size(); i10++) {
-                codedOutputStream.writeBytes(1, this.f33322i.getByteString(i10));
+            for (int i10 = 0; i10 < this.f33544i.size(); i10++) {
+                codedOutputStream.writeBytes(1, this.f33544i.getByteString(i10));
             }
-            codedOutputStream.writeRawBytes(this.f33321e);
+            codedOutputStream.writeRawBytes(this.f33543e);
         }
 
         public static Builder newBuilder(StringTable stringTable) {
@@ -11591,7 +11591,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public StringTable getDefaultInstanceForType() {
-            return f33320q;
+            return f33542q;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -11606,20 +11606,20 @@ public final class ProtoBuf {
 
         private StringTable(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33323o = (byte) -1;
-            this.f33324p = -1;
-            this.f33321e = builder.getUnknownFields();
+            this.f33545o = (byte) -1;
+            this.f33546p = -1;
+            this.f33543e = builder.getUnknownFields();
         }
 
         private StringTable(boolean z10) {
-            this.f33323o = (byte) -1;
-            this.f33324p = -1;
-            this.f33321e = ByteString.EMPTY;
+            this.f33545o = (byte) -1;
+            this.f33546p = -1;
+            this.f33543e = ByteString.EMPTY;
         }
 
         private StringTable(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33323o = (byte) -1;
-            this.f33324p = -1;
+            this.f33545o = (byte) -1;
+            this.f33546p = -1;
             k();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -11637,10 +11637,10 @@ public final class ProtoBuf {
                                 } else {
                                     ByteString readBytes = codedInputStream.readBytes();
                                     if (!z11) {
-                                        this.f33322i = new LazyStringArrayList();
+                                        this.f33544i = new LazyStringArrayList();
                                         z11 = true;
                                     }
-                                    this.f33322i.add(readBytes);
+                                    this.f33544i.add(readBytes);
                                 }
                             }
                             z10 = true;
@@ -11652,31 +11652,31 @@ public final class ProtoBuf {
                     }
                 } catch (Throwable th2) {
                     if (z11) {
-                        this.f33322i = this.f33322i.getUnmodifiableView();
+                        this.f33544i = this.f33544i.getUnmodifiableView();
                     }
                     try {
                         newInstance.flush();
                     } catch (IOException unused) {
                     } catch (Throwable th3) {
-                        this.f33321e = newOutput.toByteString();
+                        this.f33543e = newOutput.toByteString();
                         throw th3;
                     }
-                    this.f33321e = newOutput.toByteString();
+                    this.f33543e = newOutput.toByteString();
                     e();
                     throw th2;
                 }
             }
             if (z11) {
-                this.f33322i = this.f33322i.getUnmodifiableView();
+                this.f33544i = this.f33544i.getUnmodifiableView();
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33321e = newOutput.toByteString();
+                this.f33543e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33321e = newOutput.toByteString();
+            this.f33543e = newOutput.toByteString();
             e();
         }
     }
@@ -11696,86 +11696,86 @@ public final class ProtoBuf {
         private int E;
 
         /* renamed from: i  reason: collision with root package name */
-        private final ByteString f33327i;
+        private final ByteString f33549i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33328o;
+        private int f33550o;
 
         /* renamed from: p  reason: collision with root package name */
-        private List f33329p;
+        private List f33551p;
 
         /* renamed from: q  reason: collision with root package name */
-        private boolean f33330q;
+        private boolean f33552q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f33331r;
+        private int f33553r;
 
         /* renamed from: s  reason: collision with root package name */
-        private Type f33332s;
+        private Type f33554s;
 
         /* renamed from: t  reason: collision with root package name */
-        private int f33333t;
+        private int f33555t;
 
         /* renamed from: u  reason: collision with root package name */
-        private int f33334u;
+        private int f33556u;
 
         /* renamed from: v  reason: collision with root package name */
-        private int f33335v;
+        private int f33557v;
 
         /* renamed from: w  reason: collision with root package name */
-        private int f33336w;
+        private int f33558w;
 
         /* renamed from: x  reason: collision with root package name */
-        private int f33337x;
+        private int f33559x;
 
         /* renamed from: y  reason: collision with root package name */
-        private Type f33338y;
+        private Type f33560y;
 
         /* renamed from: z  reason: collision with root package name */
-        private int f33339z;
+        private int f33561z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Argument extends GeneratedMessageLite implements ArgumentOrBuilder {
             public static Parser<Argument> PARSER = new a();
 
             /* renamed from: t  reason: collision with root package name */
-            private static final Argument f33340t;
+            private static final Argument f33562t;
 
             /* renamed from: e  reason: collision with root package name */
-            private final ByteString f33341e;
+            private final ByteString f33563e;
 
             /* renamed from: i  reason: collision with root package name */
-            private int f33342i;
+            private int f33564i;
 
             /* renamed from: o  reason: collision with root package name */
-            private Projection f33343o;
+            private Projection f33565o;
 
             /* renamed from: p  reason: collision with root package name */
-            private Type f33344p;
+            private Type f33566p;
 
             /* renamed from: q  reason: collision with root package name */
-            private int f33345q;
+            private int f33567q;
 
             /* renamed from: r  reason: collision with root package name */
-            private byte f33346r;
+            private byte f33568r;
 
             /* renamed from: s  reason: collision with root package name */
-            private int f33347s;
+            private int f33569s;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
             public static final class Builder extends GeneratedMessageLite.Builder<Argument, Builder> implements ArgumentOrBuilder {
 
                 /* renamed from: e  reason: collision with root package name */
-                private int f33348e;
+                private int f33570e;
 
                 /* renamed from: i  reason: collision with root package name */
-                private Projection f33349i = Projection.INV;
+                private Projection f33571i = Projection.INV;
 
                 /* renamed from: o  reason: collision with root package name */
-                private Type f33350o = Type.getDefaultInstance();
+                private Type f33572o = Type.getDefaultInstance();
 
                 /* renamed from: p  reason: collision with root package name */
-                private int f33351p;
+                private int f33573p;
 
                 private Builder() {
                     d();
@@ -11794,30 +11794,30 @@ public final class ProtoBuf {
 
                 public Argument buildPartial() {
                     Argument argument = new Argument(this);
-                    int i10 = this.f33348e;
+                    int i10 = this.f33570e;
                     int i11 = 1;
                     if ((i10 & 1) != 1) {
                         i11 = 0;
                     }
-                    argument.f33343o = this.f33349i;
+                    argument.f33565o = this.f33571i;
                     if ((i10 & 2) == 2) {
                         i11 |= 2;
                     }
-                    argument.f33344p = this.f33350o;
+                    argument.f33566p = this.f33572o;
                     if ((i10 & 4) == 4) {
                         i11 |= 4;
                     }
-                    argument.f33345q = this.f33351p;
-                    argument.f33342i = i11;
+                    argument.f33567q = this.f33573p;
+                    argument.f33564i = i11;
                     return argument;
                 }
 
                 public Type getType() {
-                    return this.f33350o;
+                    return this.f33572o;
                 }
 
                 public boolean hasType() {
-                    if ((this.f33348e & 2) == 2) {
+                    if ((this.f33570e & 2) == 2) {
                         return true;
                     }
                     return false;
@@ -11832,25 +11832,25 @@ public final class ProtoBuf {
                 }
 
                 public Builder mergeType(Type type) {
-                    if ((this.f33348e & 2) == 2 && this.f33350o != Type.getDefaultInstance()) {
-                        this.f33350o = Type.newBuilder(this.f33350o).mergeFrom(type).buildPartial();
+                    if ((this.f33570e & 2) == 2 && this.f33572o != Type.getDefaultInstance()) {
+                        this.f33572o = Type.newBuilder(this.f33572o).mergeFrom(type).buildPartial();
                     } else {
-                        this.f33350o = type;
+                        this.f33572o = type;
                     }
-                    this.f33348e |= 2;
+                    this.f33570e |= 2;
                     return this;
                 }
 
                 public Builder setProjection(Projection projection) {
                     projection.getClass();
-                    this.f33348e |= 1;
-                    this.f33349i = projection;
+                    this.f33570e |= 1;
+                    this.f33571i = projection;
                     return this;
                 }
 
                 public Builder setTypeId(int i10) {
-                    this.f33348e |= 4;
-                    this.f33351p = i10;
+                    this.f33570e |= 4;
+                    this.f33573p = i10;
                     return this;
                 }
 
@@ -11887,7 +11887,7 @@ public final class ProtoBuf {
                     if (argument.hasTypeId()) {
                         setTypeId(argument.getTypeId());
                     }
-                    setUnknownFields(getUnknownFields().concat(argument.f33341e));
+                    setUnknownFields(getUnknownFields().concat(argument.f33563e));
                     return this;
                 }
 
@@ -11938,10 +11938,10 @@ public final class ProtoBuf {
                 
 
                 /* renamed from: e  reason: collision with root package name */
-                private static Internal.EnumLiteMap f33352e = new a();
+                private static Internal.EnumLiteMap f33574e = new a();
 
                 /* renamed from: d  reason: collision with root package name */
-                private final int f33354d;
+                private final int f33576d;
 
                 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
                 static class a implements Internal.EnumLiteMap {
@@ -11956,12 +11956,12 @@ public final class ProtoBuf {
                 }
 
                 Projection(int i10, int i11) {
-                    this.f33354d = i11;
+                    this.f33576d = i11;
                 }
 
                 @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
                 public final int getNumber() {
-                    return this.f33354d;
+                    return this.f33576d;
                 }
 
                 public static Projection valueOf(int i10) {
@@ -11995,18 +11995,18 @@ public final class ProtoBuf {
 
             static {
                 Argument argument = new Argument(true);
-                f33340t = argument;
+                f33562t = argument;
                 argument.m();
             }
 
             public static Argument getDefaultInstance() {
-                return f33340t;
+                return f33562t;
             }
 
             private void m() {
-                this.f33343o = Projection.INV;
-                this.f33344p = Type.getDefaultInstance();
-                this.f33345q = 0;
+                this.f33565o = Projection.INV;
+                this.f33566p = Type.getDefaultInstance();
+                this.f33567q = 0;
             }
 
             public static Builder newBuilder() {
@@ -12019,56 +12019,56 @@ public final class ProtoBuf {
             }
 
             public Projection getProjection() {
-                return this.f33343o;
+                return this.f33565o;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
             public int getSerializedSize() {
                 int i10;
-                int i11 = this.f33347s;
+                int i11 = this.f33569s;
                 if (i11 != -1) {
                     return i11;
                 }
-                if ((this.f33342i & 1) == 1) {
-                    i10 = CodedOutputStream.computeEnumSize(1, this.f33343o.getNumber());
+                if ((this.f33564i & 1) == 1) {
+                    i10 = CodedOutputStream.computeEnumSize(1, this.f33565o.getNumber());
                 } else {
                     i10 = 0;
                 }
-                if ((this.f33342i & 2) == 2) {
-                    i10 += CodedOutputStream.computeMessageSize(2, this.f33344p);
+                if ((this.f33564i & 2) == 2) {
+                    i10 += CodedOutputStream.computeMessageSize(2, this.f33566p);
                 }
-                if ((this.f33342i & 4) == 4) {
-                    i10 += CodedOutputStream.computeInt32Size(3, this.f33345q);
+                if ((this.f33564i & 4) == 4) {
+                    i10 += CodedOutputStream.computeInt32Size(3, this.f33567q);
                 }
-                int size = i10 + this.f33341e.size();
-                this.f33347s = size;
+                int size = i10 + this.f33563e.size();
+                this.f33569s = size;
                 return size;
             }
 
             public Type getType() {
-                return this.f33344p;
+                return this.f33566p;
             }
 
             public int getTypeId() {
-                return this.f33345q;
+                return this.f33567q;
             }
 
             public boolean hasProjection() {
-                if ((this.f33342i & 1) == 1) {
+                if ((this.f33564i & 1) == 1) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasType() {
-                if ((this.f33342i & 2) == 2) {
+                if ((this.f33564i & 2) == 2) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasTypeId() {
-                if ((this.f33342i & 4) == 4) {
+                if ((this.f33564i & 4) == 4) {
                     return true;
                 }
                 return false;
@@ -12076,7 +12076,7 @@ public final class ProtoBuf {
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
             public final boolean isInitialized() {
-                byte b10 = this.f33346r;
+                byte b10 = this.f33568r;
                 if (b10 == 1) {
                     return true;
                 }
@@ -12084,26 +12084,26 @@ public final class ProtoBuf {
                     return false;
                 }
                 if (hasType() && !getType().isInitialized()) {
-                    this.f33346r = (byte) 0;
+                    this.f33568r = (byte) 0;
                     return false;
                 }
-                this.f33346r = (byte) 1;
+                this.f33568r = (byte) 1;
                 return true;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
             public void writeTo(CodedOutputStream codedOutputStream) {
                 getSerializedSize();
-                if ((this.f33342i & 1) == 1) {
-                    codedOutputStream.writeEnum(1, this.f33343o.getNumber());
+                if ((this.f33564i & 1) == 1) {
+                    codedOutputStream.writeEnum(1, this.f33565o.getNumber());
                 }
-                if ((this.f33342i & 2) == 2) {
-                    codedOutputStream.writeMessage(2, this.f33344p);
+                if ((this.f33564i & 2) == 2) {
+                    codedOutputStream.writeMessage(2, this.f33566p);
                 }
-                if ((this.f33342i & 4) == 4) {
-                    codedOutputStream.writeInt32(3, this.f33345q);
+                if ((this.f33564i & 4) == 4) {
+                    codedOutputStream.writeInt32(3, this.f33567q);
                 }
-                codedOutputStream.writeRawBytes(this.f33341e);
+                codedOutputStream.writeRawBytes(this.f33563e);
             }
 
             public static Builder newBuilder(Argument argument) {
@@ -12112,7 +12112,7 @@ public final class ProtoBuf {
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
             public Argument getDefaultInstanceForType() {
-                return f33340t;
+                return f33562t;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -12127,20 +12127,20 @@ public final class ProtoBuf {
 
             private Argument(GeneratedMessageLite.Builder builder) {
                 super(builder);
-                this.f33346r = (byte) -1;
-                this.f33347s = -1;
-                this.f33341e = builder.getUnknownFields();
+                this.f33568r = (byte) -1;
+                this.f33569s = -1;
+                this.f33563e = builder.getUnknownFields();
             }
 
             private Argument(boolean z10) {
-                this.f33346r = (byte) -1;
-                this.f33347s = -1;
-                this.f33341e = ByteString.EMPTY;
+                this.f33568r = (byte) -1;
+                this.f33569s = -1;
+                this.f33563e = ByteString.EMPTY;
             }
 
             private Argument(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-                this.f33346r = (byte) -1;
-                this.f33347s = -1;
+                this.f33568r = (byte) -1;
+                this.f33569s = -1;
                 m();
                 ByteString.Output newOutput = ByteString.newOutput();
                 CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -12158,24 +12158,24 @@ public final class ProtoBuf {
                                             newInstance.writeRawVarint32(readTag);
                                             newInstance.writeRawVarint32(readEnum);
                                         } else {
-                                            this.f33342i |= 1;
-                                            this.f33343o = valueOf;
+                                            this.f33564i |= 1;
+                                            this.f33565o = valueOf;
                                         }
                                     } else if (readTag == 18) {
-                                        Builder builder = (this.f33342i & 2) == 2 ? this.f33344p.toBuilder() : null;
+                                        Builder builder = (this.f33564i & 2) == 2 ? this.f33566p.toBuilder() : null;
                                         Type type = (Type) codedInputStream.readMessage(Type.PARSER, extensionRegistryLite);
-                                        this.f33344p = type;
+                                        this.f33566p = type;
                                         if (builder != null) {
                                             builder.mergeFrom(type);
-                                            this.f33344p = builder.buildPartial();
+                                            this.f33566p = builder.buildPartial();
                                         }
-                                        this.f33342i |= 2;
+                                        this.f33564i |= 2;
                                     } else if (readTag != 24) {
                                         if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                         }
                                     } else {
-                                        this.f33342i |= 4;
-                                        this.f33345q = codedInputStream.readInt32();
+                                        this.f33564i |= 4;
+                                        this.f33567q = codedInputStream.readInt32();
                                     }
                                 }
                                 z10 = true;
@@ -12190,10 +12190,10 @@ public final class ProtoBuf {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33341e = newOutput.toByteString();
+                            this.f33563e = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33341e = newOutput.toByteString();
+                        this.f33563e = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -12202,10 +12202,10 @@ public final class ProtoBuf {
                     newInstance.flush();
                 } catch (IOException unused2) {
                 } catch (Throwable th4) {
-                    this.f33341e = newOutput.toByteString();
+                    this.f33563e = newOutput.toByteString();
                     throw th4;
                 }
-                this.f33341e = newOutput.toByteString();
+                this.f33563e = newOutput.toByteString();
                 e();
             }
         }
@@ -12220,58 +12220,58 @@ public final class ProtoBuf {
             private int C;
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33355o;
+            private int f33577o;
 
             /* renamed from: q  reason: collision with root package name */
-            private boolean f33357q;
+            private boolean f33579q;
 
             /* renamed from: r  reason: collision with root package name */
-            private int f33358r;
+            private int f33580r;
 
             /* renamed from: t  reason: collision with root package name */
-            private int f33360t;
+            private int f33582t;
 
             /* renamed from: u  reason: collision with root package name */
-            private int f33361u;
+            private int f33583u;
 
             /* renamed from: v  reason: collision with root package name */
-            private int f33362v;
+            private int f33584v;
 
             /* renamed from: w  reason: collision with root package name */
-            private int f33363w;
+            private int f33585w;
 
             /* renamed from: x  reason: collision with root package name */
-            private int f33364x;
+            private int f33586x;
 
             /* renamed from: z  reason: collision with root package name */
-            private int f33366z;
+            private int f33588z;
 
             /* renamed from: p  reason: collision with root package name */
-            private List f33356p = Collections.EMPTY_LIST;
+            private List f33578p = Collections.EMPTY_LIST;
 
             /* renamed from: s  reason: collision with root package name */
-            private Type f33359s = Type.getDefaultInstance();
+            private Type f33581s = Type.getDefaultInstance();
 
             /* renamed from: y  reason: collision with root package name */
-            private Type f33365y = Type.getDefaultInstance();
+            private Type f33587y = Type.getDefaultInstance();
             private Type A = Type.getDefaultInstance();
 
             private Builder() {
                 k();
             }
 
-            static /* synthetic */ Builder h() {
-                return i();
+            static /* synthetic */ Builder g() {
+                return h();
             }
 
-            private static Builder i() {
+            private static Builder h() {
                 return new Builder();
             }
 
             private void j() {
-                if ((this.f33355o & 1) != 1) {
-                    this.f33356p = new ArrayList(this.f33356p);
-                    this.f33355o |= 1;
+                if ((this.f33577o & 1) != 1) {
+                    this.f33578p = new ArrayList(this.f33578p);
+                    this.f33577o |= 1;
                 }
             }
 
@@ -12280,53 +12280,53 @@ public final class ProtoBuf {
 
             public Type buildPartial() {
                 Type type = new Type(this);
-                int i10 = this.f33355o;
+                int i10 = this.f33577o;
                 int i11 = 1;
                 if ((i10 & 1) == 1) {
-                    this.f33356p = Collections.unmodifiableList(this.f33356p);
-                    this.f33355o &= -2;
+                    this.f33578p = Collections.unmodifiableList(this.f33578p);
+                    this.f33577o &= -2;
                 }
-                type.f33329p = this.f33356p;
+                type.f33551p = this.f33578p;
                 if ((i10 & 2) != 2) {
                     i11 = 0;
                 }
-                type.f33330q = this.f33357q;
+                type.f33552q = this.f33579q;
                 if ((i10 & 4) == 4) {
                     i11 |= 2;
                 }
-                type.f33331r = this.f33358r;
+                type.f33553r = this.f33580r;
                 if ((i10 & 8) == 8) {
                     i11 |= 4;
                 }
-                type.f33332s = this.f33359s;
+                type.f33554s = this.f33581s;
                 if ((i10 & 16) == 16) {
                     i11 |= 8;
                 }
-                type.f33333t = this.f33360t;
+                type.f33555t = this.f33582t;
                 if ((i10 & 32) == 32) {
                     i11 |= 16;
                 }
-                type.f33334u = this.f33361u;
+                type.f33556u = this.f33583u;
                 if ((i10 & 64) == 64) {
                     i11 |= 32;
                 }
-                type.f33335v = this.f33362v;
+                type.f33557v = this.f33584v;
                 if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                     i11 |= 64;
                 }
-                type.f33336w = this.f33363w;
+                type.f33558w = this.f33585w;
                 if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
                     i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 }
-                type.f33337x = this.f33364x;
+                type.f33559x = this.f33586x;
                 if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
                     i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                 }
-                type.f33338y = this.f33365y;
+                type.f33560y = this.f33587y;
                 if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
                     i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                 }
-                type.f33339z = this.f33366z;
+                type.f33561z = this.f33588z;
                 if ((i10 & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
                     i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                 }
@@ -12339,7 +12339,7 @@ public final class ProtoBuf {
                     i11 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                 }
                 type.C = this.C;
-                type.f33328o = i11;
+                type.f33550o = i11;
                 return type;
             }
 
@@ -12348,37 +12348,37 @@ public final class ProtoBuf {
             }
 
             public Argument getArgument(int i10) {
-                return (Argument) this.f33356p.get(i10);
+                return (Argument) this.f33578p.get(i10);
             }
 
             public int getArgumentCount() {
-                return this.f33356p.size();
+                return this.f33578p.size();
             }
 
             public Type getFlexibleUpperBound() {
-                return this.f33359s;
+                return this.f33581s;
             }
 
             public Type getOuterType() {
-                return this.f33365y;
+                return this.f33587y;
             }
 
             public boolean hasAbbreviatedType() {
-                if ((this.f33355o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
+                if ((this.f33577o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasFlexibleUpperBound() {
-                if ((this.f33355o & 8) == 8) {
+                if ((this.f33577o & 8) == 8) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasOuterType() {
-                if ((this.f33355o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+                if ((this.f33577o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
                     return true;
                 }
                 return false;
@@ -12404,92 +12404,92 @@ public final class ProtoBuf {
             }
 
             public Builder mergeAbbreviatedType(Type type) {
-                if ((this.f33355o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048 && this.A != Type.getDefaultInstance()) {
+                if ((this.f33577o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048 && this.A != Type.getDefaultInstance()) {
                     this.A = Type.newBuilder(this.A).mergeFrom(type).buildPartial();
                 } else {
                     this.A = type;
                 }
-                this.f33355o |= RecyclerView.ItemAnimator.FLAG_MOVED;
+                this.f33577o |= RecyclerView.ItemAnimator.FLAG_MOVED;
                 return this;
             }
 
             public Builder mergeFlexibleUpperBound(Type type) {
-                if ((this.f33355o & 8) == 8 && this.f33359s != Type.getDefaultInstance()) {
-                    this.f33359s = Type.newBuilder(this.f33359s).mergeFrom(type).buildPartial();
+                if ((this.f33577o & 8) == 8 && this.f33581s != Type.getDefaultInstance()) {
+                    this.f33581s = Type.newBuilder(this.f33581s).mergeFrom(type).buildPartial();
                 } else {
-                    this.f33359s = type;
+                    this.f33581s = type;
                 }
-                this.f33355o |= 8;
+                this.f33577o |= 8;
                 return this;
             }
 
             public Builder mergeOuterType(Type type) {
-                if ((this.f33355o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512 && this.f33365y != Type.getDefaultInstance()) {
-                    this.f33365y = Type.newBuilder(this.f33365y).mergeFrom(type).buildPartial();
+                if ((this.f33577o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512 && this.f33587y != Type.getDefaultInstance()) {
+                    this.f33587y = Type.newBuilder(this.f33587y).mergeFrom(type).buildPartial();
                 } else {
-                    this.f33365y = type;
+                    this.f33587y = type;
                 }
-                this.f33355o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
+                this.f33577o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                 return this;
             }
 
             public Builder setAbbreviatedTypeId(int i10) {
-                this.f33355o |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
+                this.f33577o |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                 this.B = i10;
                 return this;
             }
 
             public Builder setClassName(int i10) {
-                this.f33355o |= 32;
-                this.f33361u = i10;
+                this.f33577o |= 32;
+                this.f33583u = i10;
                 return this;
             }
 
             public Builder setFlags(int i10) {
-                this.f33355o |= 8192;
+                this.f33577o |= 8192;
                 this.C = i10;
                 return this;
             }
 
             public Builder setFlexibleTypeCapabilitiesId(int i10) {
-                this.f33355o |= 4;
-                this.f33358r = i10;
+                this.f33577o |= 4;
+                this.f33580r = i10;
                 return this;
             }
 
             public Builder setFlexibleUpperBoundId(int i10) {
-                this.f33355o |= 16;
-                this.f33360t = i10;
+                this.f33577o |= 16;
+                this.f33582t = i10;
                 return this;
             }
 
             public Builder setNullable(boolean z10) {
-                this.f33355o |= 2;
-                this.f33357q = z10;
+                this.f33577o |= 2;
+                this.f33579q = z10;
                 return this;
             }
 
             public Builder setOuterTypeId(int i10) {
-                this.f33355o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-                this.f33366z = i10;
+                this.f33577o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
+                this.f33588z = i10;
                 return this;
             }
 
             public Builder setTypeAliasName(int i10) {
-                this.f33355o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
-                this.f33364x = i10;
+                this.f33577o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
+                this.f33586x = i10;
                 return this;
             }
 
             public Builder setTypeParameter(int i10) {
-                this.f33355o |= 64;
-                this.f33362v = i10;
+                this.f33577o |= 64;
+                this.f33584v = i10;
                 return this;
             }
 
             public Builder setTypeParameterName(int i10) {
-                this.f33355o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                this.f33363w = i10;
+                this.f33577o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                this.f33585w = i10;
                 return this;
             }
 
@@ -12512,13 +12512,13 @@ public final class ProtoBuf {
                 if (type == Type.getDefaultInstance()) {
                     return this;
                 }
-                if (!type.f33329p.isEmpty()) {
-                    if (this.f33356p.isEmpty()) {
-                        this.f33356p = type.f33329p;
-                        this.f33355o &= -2;
+                if (!type.f33551p.isEmpty()) {
+                    if (this.f33578p.isEmpty()) {
+                        this.f33578p = type.f33551p;
+                        this.f33577o &= -2;
                     } else {
                         j();
-                        this.f33356p.addAll(type.f33329p);
+                        this.f33578p.addAll(type.f33551p);
                     }
                 }
                 if (type.hasNullable()) {
@@ -12561,13 +12561,13 @@ public final class ProtoBuf {
                     setFlags(type.getFlags());
                 }
                 f(type);
-                setUnknownFields(getUnknownFields().concat(type.f33327i));
+                setUnknownFields(getUnknownFields().concat(type.f33549i));
                 return this;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.ExtendableBuilder, kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.Builder, kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite.Builder
             public Builder clone() {
-                return i().mergeFrom(buildPartial());
+                return h().mergeFrom(buildPartial());
             }
 
             /* JADX WARN: Removed duplicated region for block: B:15:0x001d  */
@@ -12627,17 +12627,17 @@ public final class ProtoBuf {
         }
 
         private void D() {
-            this.f33329p = Collections.EMPTY_LIST;
-            this.f33330q = false;
-            this.f33331r = 0;
-            this.f33332s = getDefaultInstance();
-            this.f33333t = 0;
-            this.f33334u = 0;
-            this.f33335v = 0;
-            this.f33336w = 0;
-            this.f33337x = 0;
-            this.f33338y = getDefaultInstance();
-            this.f33339z = 0;
+            this.f33551p = Collections.EMPTY_LIST;
+            this.f33552q = false;
+            this.f33553r = 0;
+            this.f33554s = getDefaultInstance();
+            this.f33555t = 0;
+            this.f33556u = 0;
+            this.f33557v = 0;
+            this.f33558w = 0;
+            this.f33559x = 0;
+            this.f33560y = getDefaultInstance();
+            this.f33561z = 0;
             this.A = getDefaultInstance();
             this.B = 0;
             this.C = 0;
@@ -12648,7 +12648,7 @@ public final class ProtoBuf {
         }
 
         public static Builder newBuilder() {
-            return Builder.h();
+            return Builder.g();
         }
 
         public Type getAbbreviatedType() {
@@ -12660,19 +12660,19 @@ public final class ProtoBuf {
         }
 
         public Argument getArgument(int i10) {
-            return (Argument) this.f33329p.get(i10);
+            return (Argument) this.f33551p.get(i10);
         }
 
         public int getArgumentCount() {
-            return this.f33329p.size();
+            return this.f33551p.size();
         }
 
         public List<Argument> getArgumentList() {
-            return this.f33329p;
+            return this.f33551p;
         }
 
         public int getClassName() {
-            return this.f33334u;
+            return this.f33556u;
         }
 
         public int getFlags() {
@@ -12680,27 +12680,27 @@ public final class ProtoBuf {
         }
 
         public int getFlexibleTypeCapabilitiesId() {
-            return this.f33331r;
+            return this.f33553r;
         }
 
         public Type getFlexibleUpperBound() {
-            return this.f33332s;
+            return this.f33554s;
         }
 
         public int getFlexibleUpperBoundId() {
-            return this.f33333t;
+            return this.f33555t;
         }
 
         public boolean getNullable() {
-            return this.f33330q;
+            return this.f33552q;
         }
 
         public Type getOuterType() {
-            return this.f33338y;
+            return this.f33560y;
         }
 
         public int getOuterTypeId() {
-            return this.f33339z;
+            return this.f33561z;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -12715,153 +12715,153 @@ public final class ProtoBuf {
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33328o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) == 4096) {
+            if ((this.f33550o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) == 4096) {
                 i10 = CodedOutputStream.computeInt32Size(1, this.C);
             } else {
                 i10 = 0;
             }
-            for (int i12 = 0; i12 < this.f33329p.size(); i12++) {
-                i10 += CodedOutputStream.computeMessageSize(2, (MessageLite) this.f33329p.get(i12));
+            for (int i12 = 0; i12 < this.f33551p.size(); i12++) {
+                i10 += CodedOutputStream.computeMessageSize(2, (MessageLite) this.f33551p.get(i12));
             }
-            if ((this.f33328o & 1) == 1) {
-                i10 += CodedOutputStream.computeBoolSize(3, this.f33330q);
+            if ((this.f33550o & 1) == 1) {
+                i10 += CodedOutputStream.computeBoolSize(3, this.f33552q);
             }
-            if ((this.f33328o & 2) == 2) {
-                i10 += CodedOutputStream.computeInt32Size(4, this.f33331r);
+            if ((this.f33550o & 2) == 2) {
+                i10 += CodedOutputStream.computeInt32Size(4, this.f33553r);
             }
-            if ((this.f33328o & 4) == 4) {
-                i10 += CodedOutputStream.computeMessageSize(5, this.f33332s);
+            if ((this.f33550o & 4) == 4) {
+                i10 += CodedOutputStream.computeMessageSize(5, this.f33554s);
             }
-            if ((this.f33328o & 16) == 16) {
-                i10 += CodedOutputStream.computeInt32Size(6, this.f33334u);
+            if ((this.f33550o & 16) == 16) {
+                i10 += CodedOutputStream.computeInt32Size(6, this.f33556u);
             }
-            if ((this.f33328o & 32) == 32) {
-                i10 += CodedOutputStream.computeInt32Size(7, this.f33335v);
+            if ((this.f33550o & 32) == 32) {
+                i10 += CodedOutputStream.computeInt32Size(7, this.f33557v);
             }
-            if ((this.f33328o & 8) == 8) {
-                i10 += CodedOutputStream.computeInt32Size(8, this.f33333t);
+            if ((this.f33550o & 8) == 8) {
+                i10 += CodedOutputStream.computeInt32Size(8, this.f33555t);
             }
-            if ((this.f33328o & 64) == 64) {
-                i10 += CodedOutputStream.computeInt32Size(9, this.f33336w);
+            if ((this.f33550o & 64) == 64) {
+                i10 += CodedOutputStream.computeInt32Size(9, this.f33558w);
             }
-            if ((this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
-                i10 += CodedOutputStream.computeMessageSize(10, this.f33338y);
+            if ((this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+                i10 += CodedOutputStream.computeMessageSize(10, this.f33560y);
             }
-            if ((this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
-                i10 += CodedOutputStream.computeInt32Size(11, this.f33339z);
+            if ((this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+                i10 += CodedOutputStream.computeInt32Size(11, this.f33561z);
             }
-            if ((this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
-                i10 += CodedOutputStream.computeInt32Size(12, this.f33337x);
+            if ((this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+                i10 += CodedOutputStream.computeInt32Size(12, this.f33559x);
             }
-            if ((this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
+            if ((this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
                 i10 += CodedOutputStream.computeMessageSize(13, this.A);
             }
-            if ((this.f33328o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
+            if ((this.f33550o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
                 i10 += CodedOutputStream.computeInt32Size(14, this.B);
             }
-            int j10 = i10 + j() + this.f33327i.size();
+            int j10 = i10 + j() + this.f33549i.size();
             this.E = j10;
             return j10;
         }
 
         public int getTypeAliasName() {
-            return this.f33337x;
+            return this.f33559x;
         }
 
         public int getTypeParameter() {
-            return this.f33335v;
+            return this.f33557v;
         }
 
         public int getTypeParameterName() {
-            return this.f33336w;
+            return this.f33558w;
         }
 
         public boolean hasAbbreviatedType() {
-            if ((this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
+            if ((this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
                 return true;
             }
             return false;
         }
 
         public boolean hasAbbreviatedTypeId() {
-            if ((this.f33328o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
+            if ((this.f33550o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
                 return true;
             }
             return false;
         }
 
         public boolean hasClassName() {
-            if ((this.f33328o & 16) == 16) {
+            if ((this.f33550o & 16) == 16) {
                 return true;
             }
             return false;
         }
 
         public boolean hasFlags() {
-            if ((this.f33328o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) == 4096) {
+            if ((this.f33550o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) == 4096) {
                 return true;
             }
             return false;
         }
 
         public boolean hasFlexibleTypeCapabilitiesId() {
-            if ((this.f33328o & 2) == 2) {
+            if ((this.f33550o & 2) == 2) {
                 return true;
             }
             return false;
         }
 
         public boolean hasFlexibleUpperBound() {
-            if ((this.f33328o & 4) == 4) {
+            if ((this.f33550o & 4) == 4) {
                 return true;
             }
             return false;
         }
 
         public boolean hasFlexibleUpperBoundId() {
-            if ((this.f33328o & 8) == 8) {
+            if ((this.f33550o & 8) == 8) {
                 return true;
             }
             return false;
         }
 
         public boolean hasNullable() {
-            if ((this.f33328o & 1) == 1) {
+            if ((this.f33550o & 1) == 1) {
                 return true;
             }
             return false;
         }
 
         public boolean hasOuterType() {
-            if ((this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+            if ((this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
                 return true;
             }
             return false;
         }
 
         public boolean hasOuterTypeId() {
-            if ((this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+            if ((this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
                 return true;
             }
             return false;
         }
 
         public boolean hasTypeAliasName() {
-            if ((this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+            if ((this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
                 return true;
             }
             return false;
         }
 
         public boolean hasTypeParameter() {
-            if ((this.f33328o & 32) == 32) {
+            if ((this.f33550o & 32) == 32) {
                 return true;
             }
             return false;
         }
 
         public boolean hasTypeParameterName() {
-            if ((this.f33328o & 64) == 64) {
+            if ((this.f33550o & 64) == 64) {
                 return true;
             }
             return false;
@@ -12904,50 +12904,50 @@ public final class ProtoBuf {
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
             GeneratedMessageLite.ExtendableMessage.ExtensionWriter k10 = k();
-            if ((this.f33328o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) == 4096) {
+            if ((this.f33550o & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) == 4096) {
                 codedOutputStream.writeInt32(1, this.C);
             }
-            for (int i10 = 0; i10 < this.f33329p.size(); i10++) {
-                codedOutputStream.writeMessage(2, (MessageLite) this.f33329p.get(i10));
+            for (int i10 = 0; i10 < this.f33551p.size(); i10++) {
+                codedOutputStream.writeMessage(2, (MessageLite) this.f33551p.get(i10));
             }
-            if ((this.f33328o & 1) == 1) {
-                codedOutputStream.writeBool(3, this.f33330q);
+            if ((this.f33550o & 1) == 1) {
+                codedOutputStream.writeBool(3, this.f33552q);
             }
-            if ((this.f33328o & 2) == 2) {
-                codedOutputStream.writeInt32(4, this.f33331r);
+            if ((this.f33550o & 2) == 2) {
+                codedOutputStream.writeInt32(4, this.f33553r);
             }
-            if ((this.f33328o & 4) == 4) {
-                codedOutputStream.writeMessage(5, this.f33332s);
+            if ((this.f33550o & 4) == 4) {
+                codedOutputStream.writeMessage(5, this.f33554s);
             }
-            if ((this.f33328o & 16) == 16) {
-                codedOutputStream.writeInt32(6, this.f33334u);
+            if ((this.f33550o & 16) == 16) {
+                codedOutputStream.writeInt32(6, this.f33556u);
             }
-            if ((this.f33328o & 32) == 32) {
-                codedOutputStream.writeInt32(7, this.f33335v);
+            if ((this.f33550o & 32) == 32) {
+                codedOutputStream.writeInt32(7, this.f33557v);
             }
-            if ((this.f33328o & 8) == 8) {
-                codedOutputStream.writeInt32(8, this.f33333t);
+            if ((this.f33550o & 8) == 8) {
+                codedOutputStream.writeInt32(8, this.f33555t);
             }
-            if ((this.f33328o & 64) == 64) {
-                codedOutputStream.writeInt32(9, this.f33336w);
+            if ((this.f33550o & 64) == 64) {
+                codedOutputStream.writeInt32(9, this.f33558w);
             }
-            if ((this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
-                codedOutputStream.writeMessage(10, this.f33338y);
+            if ((this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+                codedOutputStream.writeMessage(10, this.f33560y);
             }
-            if ((this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
-                codedOutputStream.writeInt32(11, this.f33339z);
+            if ((this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+                codedOutputStream.writeInt32(11, this.f33561z);
             }
-            if ((this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
-                codedOutputStream.writeInt32(12, this.f33337x);
+            if ((this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+                codedOutputStream.writeInt32(12, this.f33559x);
             }
-            if ((this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
+            if ((this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024) {
                 codedOutputStream.writeMessage(13, this.A);
             }
-            if ((this.f33328o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
+            if ((this.f33550o & RecyclerView.ItemAnimator.FLAG_MOVED) == 2048) {
                 codedOutputStream.writeInt32(14, this.B);
             }
             k10.writeUntil(h.DEFAULT_DRAG_ANIMATION_DURATION, codedOutputStream);
-            codedOutputStream.writeRawBytes(this.f33327i);
+            codedOutputStream.writeRawBytes(this.f33549i);
         }
 
         public static Builder newBuilder(Type type) {
@@ -12973,13 +12973,13 @@ public final class ProtoBuf {
             super(extendableBuilder);
             this.D = (byte) -1;
             this.E = -1;
-            this.f33327i = extendableBuilder.getUnknownFields();
+            this.f33549i = extendableBuilder.getUnknownFields();
         }
 
         private Type(boolean z10) {
             this.D = (byte) -1;
             this.E = -1;
-            this.f33327i = ByteString.EMPTY;
+            this.f33549i = ByteString.EMPTY;
         }
 
         private Type(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
@@ -13000,80 +13000,80 @@ public final class ProtoBuf {
                                 case 0:
                                     break;
                                 case 8:
-                                    this.f33328o |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
+                                    this.f33550o |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                                     this.C = codedInputStream.readInt32();
                                     continue;
                                 case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                                     if (!z11) {
-                                        this.f33329p = new ArrayList();
+                                        this.f33551p = new ArrayList();
                                         z11 = true;
                                     }
-                                    this.f33329p.add(codedInputStream.readMessage(Argument.PARSER, extensionRegistryLite));
+                                    this.f33551p.add(codedInputStream.readMessage(Argument.PARSER, extensionRegistryLite));
                                     continue;
                                 case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
-                                    this.f33328o |= 1;
-                                    this.f33330q = codedInputStream.readBool();
+                                    this.f33550o |= 1;
+                                    this.f33552q = codedInputStream.readBool();
                                     continue;
                                 case 32:
-                                    this.f33328o |= 2;
-                                    this.f33331r = codedInputStream.readInt32();
+                                    this.f33550o |= 2;
+                                    this.f33553r = codedInputStream.readInt32();
                                     continue;
                                 case 42:
-                                    builder = (this.f33328o & 4) == 4 ? this.f33332s.toBuilder() : null;
+                                    builder = (this.f33550o & 4) == 4 ? this.f33554s.toBuilder() : null;
                                     Type type = (Type) codedInputStream.readMessage(PARSER, extensionRegistryLite);
-                                    this.f33332s = type;
+                                    this.f33554s = type;
                                     if (builder != null) {
                                         builder.mergeFrom(type);
-                                        this.f33332s = builder.buildPartial();
+                                        this.f33554s = builder.buildPartial();
                                     }
-                                    this.f33328o |= 4;
+                                    this.f33550o |= 4;
                                     continue;
                                 case 48:
-                                    this.f33328o |= 16;
-                                    this.f33334u = codedInputStream.readInt32();
+                                    this.f33550o |= 16;
+                                    this.f33556u = codedInputStream.readInt32();
                                     continue;
                                 case ChatViewRecyclerTypes.SHARED_CUSTOM_THEME_EMBED /* 56 */:
-                                    this.f33328o |= 32;
-                                    this.f33335v = codedInputStream.readInt32();
+                                    this.f33550o |= 32;
+                                    this.f33557v = codedInputStream.readInt32();
                                     continue;
                                 case 64:
-                                    this.f33328o |= 8;
-                                    this.f33333t = codedInputStream.readInt32();
+                                    this.f33550o |= 8;
+                                    this.f33555t = codedInputStream.readInt32();
                                     continue;
                                 case 72:
-                                    this.f33328o |= 64;
-                                    this.f33336w = codedInputStream.readInt32();
+                                    this.f33550o |= 64;
+                                    this.f33558w = codedInputStream.readInt32();
                                     continue;
                                 case 82:
-                                    builder = (this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256 ? this.f33338y.toBuilder() : null;
+                                    builder = (this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256 ? this.f33560y.toBuilder() : null;
                                     Type type2 = (Type) codedInputStream.readMessage(PARSER, extensionRegistryLite);
-                                    this.f33338y = type2;
+                                    this.f33560y = type2;
                                     if (builder != null) {
                                         builder.mergeFrom(type2);
-                                        this.f33338y = builder.buildPartial();
+                                        this.f33560y = builder.buildPartial();
                                     }
-                                    this.f33328o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
+                                    this.f33550o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                                     continue;
                                 case 88:
-                                    this.f33328o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                                    this.f33339z = codedInputStream.readInt32();
+                                    this.f33550o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
+                                    this.f33561z = codedInputStream.readInt32();
                                     continue;
                                 case 96:
-                                    this.f33328o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                                    this.f33337x = codedInputStream.readInt32();
+                                    this.f33550o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                                    this.f33559x = codedInputStream.readInt32();
                                     continue;
                                 case 106:
-                                    builder = (this.f33328o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024 ? this.A.toBuilder() : null;
+                                    builder = (this.f33550o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) == 1024 ? this.A.toBuilder() : null;
                                     Type type3 = (Type) codedInputStream.readMessage(PARSER, extensionRegistryLite);
                                     this.A = type3;
                                     if (builder != null) {
                                         builder.mergeFrom(type3);
                                         this.A = builder.buildPartial();
                                     }
-                                    this.f33328o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
+                                    this.f33550o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                                     continue;
                                 case 112:
-                                    this.f33328o |= RecyclerView.ItemAnimator.FLAG_MOVED;
+                                    this.f33550o |= RecyclerView.ItemAnimator.FLAG_MOVED;
                                     this.B = codedInputStream.readInt32();
                                     continue;
                                 default:
@@ -13092,31 +13092,31 @@ public final class ProtoBuf {
                     }
                 } catch (Throwable th2) {
                     if (z11) {
-                        this.f33329p = Collections.unmodifiableList(this.f33329p);
+                        this.f33551p = Collections.unmodifiableList(this.f33551p);
                     }
                     try {
                         newInstance.flush();
                     } catch (IOException unused) {
                     } catch (Throwable th3) {
-                        this.f33327i = newOutput.toByteString();
+                        this.f33549i = newOutput.toByteString();
                         throw th3;
                     }
-                    this.f33327i = newOutput.toByteString();
+                    this.f33549i = newOutput.toByteString();
                     e();
                     throw th2;
                 }
             }
             if (z11) {
-                this.f33329p = Collections.unmodifiableList(this.f33329p);
+                this.f33551p = Collections.unmodifiableList(this.f33551p);
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33327i = newOutput.toByteString();
+                this.f33549i = newOutput.toByteString();
                 throw th4;
             }
-            this.f33327i = newOutput.toByteString();
+            this.f33549i = newOutput.toByteString();
             e();
         }
     }
@@ -13128,124 +13128,124 @@ public final class ProtoBuf {
         private int A;
 
         /* renamed from: i  reason: collision with root package name */
-        private final ByteString f33367i;
+        private final ByteString f33589i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33368o;
+        private int f33590o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33369p;
+        private int f33591p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f33370q;
+        private int f33592q;
 
         /* renamed from: r  reason: collision with root package name */
-        private List f33371r;
+        private List f33593r;
 
         /* renamed from: s  reason: collision with root package name */
-        private Type f33372s;
+        private Type f33594s;
 
         /* renamed from: t  reason: collision with root package name */
-        private int f33373t;
+        private int f33595t;
 
         /* renamed from: u  reason: collision with root package name */
-        private Type f33374u;
+        private Type f33596u;
 
         /* renamed from: v  reason: collision with root package name */
-        private int f33375v;
+        private int f33597v;
 
         /* renamed from: w  reason: collision with root package name */
-        private List f33376w;
+        private List f33598w;
 
         /* renamed from: x  reason: collision with root package name */
-        private List f33377x;
+        private List f33599x;
 
         /* renamed from: y  reason: collision with root package name */
-        private List f33378y;
+        private List f33600y;
 
         /* renamed from: z  reason: collision with root package name */
-        private byte f33379z;
+        private byte f33601z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.ExtendableBuilder<TypeAlias, Builder> implements TypeAliasOrBuilder {
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33380o;
+            private int f33602o;
 
             /* renamed from: p  reason: collision with root package name */
-            private int f33381p = 6;
+            private int f33603p = 6;
 
             /* renamed from: q  reason: collision with root package name */
-            private int f33382q;
+            private int f33604q;
 
             /* renamed from: r  reason: collision with root package name */
-            private List f33383r;
+            private List f33605r;
 
             /* renamed from: s  reason: collision with root package name */
-            private Type f33384s;
+            private Type f33606s;
 
             /* renamed from: t  reason: collision with root package name */
-            private int f33385t;
+            private int f33607t;
 
             /* renamed from: u  reason: collision with root package name */
-            private Type f33386u;
+            private Type f33608u;
 
             /* renamed from: v  reason: collision with root package name */
-            private int f33387v;
+            private int f33609v;
 
             /* renamed from: w  reason: collision with root package name */
-            private List f33388w;
+            private List f33610w;
 
             /* renamed from: x  reason: collision with root package name */
-            private List f33389x;
+            private List f33611x;
 
             /* renamed from: y  reason: collision with root package name */
-            private List f33390y;
+            private List f33612y;
 
             private Builder() {
                 List list = Collections.EMPTY_LIST;
-                this.f33383r = list;
-                this.f33384s = Type.getDefaultInstance();
-                this.f33386u = Type.getDefaultInstance();
-                this.f33388w = list;
-                this.f33389x = list;
-                this.f33390y = list;
+                this.f33605r = list;
+                this.f33606s = Type.getDefaultInstance();
+                this.f33608u = Type.getDefaultInstance();
+                this.f33610w = list;
+                this.f33611x = list;
+                this.f33612y = list;
                 n();
             }
 
-            static /* synthetic */ Builder h() {
-                return i();
+            static /* synthetic */ Builder g() {
+                return h();
             }
 
-            private static Builder i() {
+            private static Builder h() {
                 return new Builder();
             }
 
             private void j() {
-                if ((this.f33380o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 128) {
-                    this.f33388w = new ArrayList(this.f33388w);
-                    this.f33380o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                if ((this.f33602o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 128) {
+                    this.f33610w = new ArrayList(this.f33610w);
+                    this.f33602o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 }
             }
 
             private void k() {
-                if ((this.f33380o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 512) {
-                    this.f33390y = new ArrayList(this.f33390y);
-                    this.f33380o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
+                if ((this.f33602o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 512) {
+                    this.f33612y = new ArrayList(this.f33612y);
+                    this.f33602o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                 }
             }
 
             private void l() {
-                if ((this.f33380o & 4) != 4) {
-                    this.f33383r = new ArrayList(this.f33383r);
-                    this.f33380o |= 4;
+                if ((this.f33602o & 4) != 4) {
+                    this.f33605r = new ArrayList(this.f33605r);
+                    this.f33602o |= 4;
                 }
             }
 
             private void m() {
-                if ((this.f33380o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 256) {
-                    this.f33389x = new ArrayList(this.f33389x);
-                    this.f33380o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
+                if ((this.f33602o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 256) {
+                    this.f33611x = new ArrayList(this.f33611x);
+                    this.f33602o |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                 }
             }
 
@@ -13254,104 +13254,104 @@ public final class ProtoBuf {
 
             public TypeAlias buildPartial() {
                 TypeAlias typeAlias = new TypeAlias(this);
-                int i10 = this.f33380o;
+                int i10 = this.f33602o;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                typeAlias.f33369p = this.f33381p;
+                typeAlias.f33591p = this.f33603p;
                 if ((i10 & 2) == 2) {
                     i11 |= 2;
                 }
-                typeAlias.f33370q = this.f33382q;
-                if ((this.f33380o & 4) == 4) {
-                    this.f33383r = Collections.unmodifiableList(this.f33383r);
-                    this.f33380o &= -5;
+                typeAlias.f33592q = this.f33604q;
+                if ((this.f33602o & 4) == 4) {
+                    this.f33605r = Collections.unmodifiableList(this.f33605r);
+                    this.f33602o &= -5;
                 }
-                typeAlias.f33371r = this.f33383r;
+                typeAlias.f33593r = this.f33605r;
                 if ((i10 & 8) == 8) {
                     i11 |= 4;
                 }
-                typeAlias.f33372s = this.f33384s;
+                typeAlias.f33594s = this.f33606s;
                 if ((i10 & 16) == 16) {
                     i11 |= 8;
                 }
-                typeAlias.f33373t = this.f33385t;
+                typeAlias.f33595t = this.f33607t;
                 if ((i10 & 32) == 32) {
                     i11 |= 16;
                 }
-                typeAlias.f33374u = this.f33386u;
+                typeAlias.f33596u = this.f33608u;
                 if ((i10 & 64) == 64) {
                     i11 |= 32;
                 }
-                typeAlias.f33375v = this.f33387v;
-                if ((this.f33380o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
-                    this.f33388w = Collections.unmodifiableList(this.f33388w);
-                    this.f33380o &= -129;
+                typeAlias.f33597v = this.f33609v;
+                if ((this.f33602o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 128) {
+                    this.f33610w = Collections.unmodifiableList(this.f33610w);
+                    this.f33602o &= -129;
                 }
-                typeAlias.f33376w = this.f33388w;
-                if ((this.f33380o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
-                    this.f33389x = Collections.unmodifiableList(this.f33389x);
-                    this.f33380o &= -257;
+                typeAlias.f33598w = this.f33610w;
+                if ((this.f33602o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) == 256) {
+                    this.f33611x = Collections.unmodifiableList(this.f33611x);
+                    this.f33602o &= -257;
                 }
-                typeAlias.f33377x = this.f33389x;
-                if ((this.f33380o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
-                    this.f33390y = Collections.unmodifiableList(this.f33390y);
-                    this.f33380o &= -513;
+                typeAlias.f33599x = this.f33611x;
+                if ((this.f33602o & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 512) {
+                    this.f33612y = Collections.unmodifiableList(this.f33612y);
+                    this.f33602o &= -513;
                 }
-                typeAlias.f33378y = this.f33390y;
-                typeAlias.f33368o = i11;
+                typeAlias.f33600y = this.f33612y;
+                typeAlias.f33590o = i11;
                 return typeAlias;
             }
 
             public Annotation getAnnotation(int i10) {
-                return (Annotation) this.f33388w.get(i10);
+                return (Annotation) this.f33610w.get(i10);
             }
 
             public int getAnnotationCount() {
-                return this.f33388w.size();
+                return this.f33610w.size();
             }
 
             public CompilerPluginData getCompilerPluginData(int i10) {
-                return (CompilerPluginData) this.f33390y.get(i10);
+                return (CompilerPluginData) this.f33612y.get(i10);
             }
 
             public int getCompilerPluginDataCount() {
-                return this.f33390y.size();
+                return this.f33612y.size();
             }
 
             public Type getExpandedType() {
-                return this.f33386u;
+                return this.f33608u;
             }
 
             public TypeParameter getTypeParameter(int i10) {
-                return (TypeParameter) this.f33383r.get(i10);
+                return (TypeParameter) this.f33605r.get(i10);
             }
 
             public int getTypeParameterCount() {
-                return this.f33383r.size();
+                return this.f33605r.size();
             }
 
             public Type getUnderlyingType() {
-                return this.f33384s;
+                return this.f33606s;
             }
 
             public boolean hasExpandedType() {
-                if ((this.f33380o & 32) == 32) {
+                if ((this.f33602o & 32) == 32) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasName() {
-                if ((this.f33380o & 2) == 2) {
+                if ((this.f33602o & 2) == 2) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasUnderlyingType() {
-                if ((this.f33380o & 8) == 8) {
+                if ((this.f33602o & 8) == 8) {
                     return true;
                 }
                 return false;
@@ -13390,46 +13390,46 @@ public final class ProtoBuf {
             }
 
             public Builder mergeExpandedType(Type type) {
-                if ((this.f33380o & 32) == 32 && this.f33386u != Type.getDefaultInstance()) {
-                    this.f33386u = Type.newBuilder(this.f33386u).mergeFrom(type).buildPartial();
+                if ((this.f33602o & 32) == 32 && this.f33608u != Type.getDefaultInstance()) {
+                    this.f33608u = Type.newBuilder(this.f33608u).mergeFrom(type).buildPartial();
                 } else {
-                    this.f33386u = type;
+                    this.f33608u = type;
                 }
-                this.f33380o |= 32;
+                this.f33602o |= 32;
                 return this;
             }
 
             public Builder mergeUnderlyingType(Type type) {
-                if ((this.f33380o & 8) == 8 && this.f33384s != Type.getDefaultInstance()) {
-                    this.f33384s = Type.newBuilder(this.f33384s).mergeFrom(type).buildPartial();
+                if ((this.f33602o & 8) == 8 && this.f33606s != Type.getDefaultInstance()) {
+                    this.f33606s = Type.newBuilder(this.f33606s).mergeFrom(type).buildPartial();
                 } else {
-                    this.f33384s = type;
+                    this.f33606s = type;
                 }
-                this.f33380o |= 8;
+                this.f33602o |= 8;
                 return this;
             }
 
             public Builder setExpandedTypeId(int i10) {
-                this.f33380o |= 64;
-                this.f33387v = i10;
+                this.f33602o |= 64;
+                this.f33609v = i10;
                 return this;
             }
 
             public Builder setFlags(int i10) {
-                this.f33380o |= 1;
-                this.f33381p = i10;
+                this.f33602o |= 1;
+                this.f33603p = i10;
                 return this;
             }
 
             public Builder setName(int i10) {
-                this.f33380o |= 2;
-                this.f33382q = i10;
+                this.f33602o |= 2;
+                this.f33604q = i10;
                 return this;
             }
 
             public Builder setUnderlyingTypeId(int i10) {
-                this.f33380o |= 16;
-                this.f33385t = i10;
+                this.f33602o |= 16;
+                this.f33607t = i10;
                 return this;
             }
 
@@ -13458,13 +13458,13 @@ public final class ProtoBuf {
                 if (typeAlias.hasName()) {
                     setName(typeAlias.getName());
                 }
-                if (!typeAlias.f33371r.isEmpty()) {
-                    if (this.f33383r.isEmpty()) {
-                        this.f33383r = typeAlias.f33371r;
-                        this.f33380o &= -5;
+                if (!typeAlias.f33593r.isEmpty()) {
+                    if (this.f33605r.isEmpty()) {
+                        this.f33605r = typeAlias.f33593r;
+                        this.f33602o &= -5;
                     } else {
                         l();
-                        this.f33383r.addAll(typeAlias.f33371r);
+                        this.f33605r.addAll(typeAlias.f33593r);
                     }
                 }
                 if (typeAlias.hasUnderlyingType()) {
@@ -13479,41 +13479,41 @@ public final class ProtoBuf {
                 if (typeAlias.hasExpandedTypeId()) {
                     setExpandedTypeId(typeAlias.getExpandedTypeId());
                 }
-                if (!typeAlias.f33376w.isEmpty()) {
-                    if (this.f33388w.isEmpty()) {
-                        this.f33388w = typeAlias.f33376w;
-                        this.f33380o &= -129;
+                if (!typeAlias.f33598w.isEmpty()) {
+                    if (this.f33610w.isEmpty()) {
+                        this.f33610w = typeAlias.f33598w;
+                        this.f33602o &= -129;
                     } else {
                         j();
-                        this.f33388w.addAll(typeAlias.f33376w);
+                        this.f33610w.addAll(typeAlias.f33598w);
                     }
                 }
-                if (!typeAlias.f33377x.isEmpty()) {
-                    if (this.f33389x.isEmpty()) {
-                        this.f33389x = typeAlias.f33377x;
-                        this.f33380o &= -257;
+                if (!typeAlias.f33599x.isEmpty()) {
+                    if (this.f33611x.isEmpty()) {
+                        this.f33611x = typeAlias.f33599x;
+                        this.f33602o &= -257;
                     } else {
                         m();
-                        this.f33389x.addAll(typeAlias.f33377x);
+                        this.f33611x.addAll(typeAlias.f33599x);
                     }
                 }
-                if (!typeAlias.f33378y.isEmpty()) {
-                    if (this.f33390y.isEmpty()) {
-                        this.f33390y = typeAlias.f33378y;
-                        this.f33380o &= -513;
+                if (!typeAlias.f33600y.isEmpty()) {
+                    if (this.f33612y.isEmpty()) {
+                        this.f33612y = typeAlias.f33600y;
+                        this.f33602o &= -513;
                     } else {
                         k();
-                        this.f33390y.addAll(typeAlias.f33378y);
+                        this.f33612y.addAll(typeAlias.f33600y);
                     }
                 }
                 f(typeAlias);
-                setUnknownFields(getUnknownFields().concat(typeAlias.f33367i));
+                setUnknownFields(getUnknownFields().concat(typeAlias.f33589i));
                 return this;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.ExtendableBuilder, kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.Builder, kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite.Builder
             public Builder clone() {
-                return i().mergeFrom(buildPartial());
+                return h().mergeFrom(buildPartial());
             }
 
             /* JADX WARN: Removed duplicated region for block: B:15:0x001d  */
@@ -13573,17 +13573,17 @@ public final class ProtoBuf {
         }
 
         private void C() {
-            this.f33369p = 6;
-            this.f33370q = 0;
+            this.f33591p = 6;
+            this.f33592q = 0;
             List list = Collections.EMPTY_LIST;
-            this.f33371r = list;
-            this.f33372s = Type.getDefaultInstance();
-            this.f33373t = 0;
-            this.f33374u = Type.getDefaultInstance();
-            this.f33375v = 0;
-            this.f33376w = list;
-            this.f33377x = list;
-            this.f33378y = list;
+            this.f33593r = list;
+            this.f33594s = Type.getDefaultInstance();
+            this.f33595t = 0;
+            this.f33596u = Type.getDefaultInstance();
+            this.f33597v = 0;
+            this.f33598w = list;
+            this.f33599x = list;
+            this.f33600y = list;
         }
 
         public static TypeAlias getDefaultInstance() {
@@ -13591,7 +13591,7 @@ public final class ProtoBuf {
         }
 
         public static Builder newBuilder() {
-            return Builder.h();
+            return Builder.g();
         }
 
         public static TypeAlias parseDelimitedFrom(InputStream inputStream, ExtensionRegistryLite extensionRegistryLite) {
@@ -13599,39 +13599,39 @@ public final class ProtoBuf {
         }
 
         public Annotation getAnnotation(int i10) {
-            return (Annotation) this.f33376w.get(i10);
+            return (Annotation) this.f33598w.get(i10);
         }
 
         public int getAnnotationCount() {
-            return this.f33376w.size();
+            return this.f33598w.size();
         }
 
         public List<Annotation> getAnnotationList() {
-            return this.f33376w;
+            return this.f33598w;
         }
 
         public CompilerPluginData getCompilerPluginData(int i10) {
-            return (CompilerPluginData) this.f33378y.get(i10);
+            return (CompilerPluginData) this.f33600y.get(i10);
         }
 
         public int getCompilerPluginDataCount() {
-            return this.f33378y.size();
+            return this.f33600y.size();
         }
 
         public Type getExpandedType() {
-            return this.f33374u;
+            return this.f33596u;
         }
 
         public int getExpandedTypeId() {
-            return this.f33375v;
+            return this.f33597v;
         }
 
         public int getFlags() {
-            return this.f33369p;
+            return this.f33591p;
         }
 
         public int getName() {
-            return this.f33370q;
+            return this.f33592q;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -13646,106 +13646,106 @@ public final class ProtoBuf {
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33368o & 1) == 1) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33369p);
+            if ((this.f33590o & 1) == 1) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33591p);
             } else {
                 i10 = 0;
             }
-            if ((this.f33368o & 2) == 2) {
-                i10 += CodedOutputStream.computeInt32Size(2, this.f33370q);
+            if ((this.f33590o & 2) == 2) {
+                i10 += CodedOutputStream.computeInt32Size(2, this.f33592q);
             }
-            for (int i12 = 0; i12 < this.f33371r.size(); i12++) {
-                i10 += CodedOutputStream.computeMessageSize(3, (MessageLite) this.f33371r.get(i12));
+            for (int i12 = 0; i12 < this.f33593r.size(); i12++) {
+                i10 += CodedOutputStream.computeMessageSize(3, (MessageLite) this.f33593r.get(i12));
             }
-            if ((this.f33368o & 4) == 4) {
-                i10 += CodedOutputStream.computeMessageSize(4, this.f33372s);
+            if ((this.f33590o & 4) == 4) {
+                i10 += CodedOutputStream.computeMessageSize(4, this.f33594s);
             }
-            if ((this.f33368o & 8) == 8) {
-                i10 += CodedOutputStream.computeInt32Size(5, this.f33373t);
+            if ((this.f33590o & 8) == 8) {
+                i10 += CodedOutputStream.computeInt32Size(5, this.f33595t);
             }
-            if ((this.f33368o & 16) == 16) {
-                i10 += CodedOutputStream.computeMessageSize(6, this.f33374u);
+            if ((this.f33590o & 16) == 16) {
+                i10 += CodedOutputStream.computeMessageSize(6, this.f33596u);
             }
-            if ((this.f33368o & 32) == 32) {
-                i10 += CodedOutputStream.computeInt32Size(7, this.f33375v);
+            if ((this.f33590o & 32) == 32) {
+                i10 += CodedOutputStream.computeInt32Size(7, this.f33597v);
             }
-            for (int i13 = 0; i13 < this.f33376w.size(); i13++) {
-                i10 += CodedOutputStream.computeMessageSize(8, (MessageLite) this.f33376w.get(i13));
+            for (int i13 = 0; i13 < this.f33598w.size(); i13++) {
+                i10 += CodedOutputStream.computeMessageSize(8, (MessageLite) this.f33598w.get(i13));
             }
             int i14 = 0;
-            for (int i15 = 0; i15 < this.f33377x.size(); i15++) {
-                i14 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33377x.get(i15)).intValue());
+            for (int i15 = 0; i15 < this.f33599x.size(); i15++) {
+                i14 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33599x.get(i15)).intValue());
             }
             int size = i10 + i14 + (getVersionRequirementList().size() * 2);
-            for (int i16 = 0; i16 < this.f33378y.size(); i16++) {
-                size += CodedOutputStream.computeMessageSize(32, (MessageLite) this.f33378y.get(i16));
+            for (int i16 = 0; i16 < this.f33600y.size(); i16++) {
+                size += CodedOutputStream.computeMessageSize(32, (MessageLite) this.f33600y.get(i16));
             }
-            int j10 = size + j() + this.f33367i.size();
+            int j10 = size + j() + this.f33589i.size();
             this.A = j10;
             return j10;
         }
 
         public TypeParameter getTypeParameter(int i10) {
-            return (TypeParameter) this.f33371r.get(i10);
+            return (TypeParameter) this.f33593r.get(i10);
         }
 
         public int getTypeParameterCount() {
-            return this.f33371r.size();
+            return this.f33593r.size();
         }
 
         public List<TypeParameter> getTypeParameterList() {
-            return this.f33371r;
+            return this.f33593r;
         }
 
         public Type getUnderlyingType() {
-            return this.f33372s;
+            return this.f33594s;
         }
 
         public int getUnderlyingTypeId() {
-            return this.f33373t;
+            return this.f33595t;
         }
 
         public List<Integer> getVersionRequirementList() {
-            return this.f33377x;
+            return this.f33599x;
         }
 
         public boolean hasExpandedType() {
-            if ((this.f33368o & 16) == 16) {
+            if ((this.f33590o & 16) == 16) {
                 return true;
             }
             return false;
         }
 
         public boolean hasExpandedTypeId() {
-            if ((this.f33368o & 32) == 32) {
+            if ((this.f33590o & 32) == 32) {
                 return true;
             }
             return false;
         }
 
         public boolean hasFlags() {
-            if ((this.f33368o & 1) == 1) {
+            if ((this.f33590o & 1) == 1) {
                 return true;
             }
             return false;
         }
 
         public boolean hasName() {
-            if ((this.f33368o & 2) == 2) {
+            if ((this.f33590o & 2) == 2) {
                 return true;
             }
             return false;
         }
 
         public boolean hasUnderlyingType() {
-            if ((this.f33368o & 4) == 4) {
+            if ((this.f33590o & 4) == 4) {
                 return true;
             }
             return false;
         }
 
         public boolean hasUnderlyingTypeId() {
-            if ((this.f33368o & 8) == 8) {
+            if ((this.f33590o & 8) == 8) {
                 return true;
             }
             return false;
@@ -13753,7 +13753,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33379z;
+            byte b10 = this.f33601z;
             if (b10 == 1) {
                 return true;
             }
@@ -13761,39 +13761,39 @@ public final class ProtoBuf {
                 return false;
             }
             if (!hasName()) {
-                this.f33379z = (byte) 0;
+                this.f33601z = (byte) 0;
                 return false;
             }
             for (int i10 = 0; i10 < getTypeParameterCount(); i10++) {
                 if (!getTypeParameter(i10).isInitialized()) {
-                    this.f33379z = (byte) 0;
+                    this.f33601z = (byte) 0;
                     return false;
                 }
             }
             if (hasUnderlyingType() && !getUnderlyingType().isInitialized()) {
-                this.f33379z = (byte) 0;
+                this.f33601z = (byte) 0;
                 return false;
             } else if (hasExpandedType() && !getExpandedType().isInitialized()) {
-                this.f33379z = (byte) 0;
+                this.f33601z = (byte) 0;
                 return false;
             } else {
                 for (int i11 = 0; i11 < getAnnotationCount(); i11++) {
                     if (!getAnnotation(i11).isInitialized()) {
-                        this.f33379z = (byte) 0;
+                        this.f33601z = (byte) 0;
                         return false;
                     }
                 }
                 for (int i12 = 0; i12 < getCompilerPluginDataCount(); i12++) {
                     if (!getCompilerPluginData(i12).isInitialized()) {
-                        this.f33379z = (byte) 0;
+                        this.f33601z = (byte) 0;
                         return false;
                     }
                 }
                 if (!i()) {
-                    this.f33379z = (byte) 0;
+                    this.f33601z = (byte) 0;
                     return false;
                 }
-                this.f33379z = (byte) 1;
+                this.f33601z = (byte) 1;
                 return true;
             }
         }
@@ -13802,38 +13802,38 @@ public final class ProtoBuf {
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
             GeneratedMessageLite.ExtendableMessage.ExtensionWriter k10 = k();
-            if ((this.f33368o & 1) == 1) {
-                codedOutputStream.writeInt32(1, this.f33369p);
+            if ((this.f33590o & 1) == 1) {
+                codedOutputStream.writeInt32(1, this.f33591p);
             }
-            if ((this.f33368o & 2) == 2) {
-                codedOutputStream.writeInt32(2, this.f33370q);
+            if ((this.f33590o & 2) == 2) {
+                codedOutputStream.writeInt32(2, this.f33592q);
             }
-            for (int i10 = 0; i10 < this.f33371r.size(); i10++) {
-                codedOutputStream.writeMessage(3, (MessageLite) this.f33371r.get(i10));
+            for (int i10 = 0; i10 < this.f33593r.size(); i10++) {
+                codedOutputStream.writeMessage(3, (MessageLite) this.f33593r.get(i10));
             }
-            if ((this.f33368o & 4) == 4) {
-                codedOutputStream.writeMessage(4, this.f33372s);
+            if ((this.f33590o & 4) == 4) {
+                codedOutputStream.writeMessage(4, this.f33594s);
             }
-            if ((this.f33368o & 8) == 8) {
-                codedOutputStream.writeInt32(5, this.f33373t);
+            if ((this.f33590o & 8) == 8) {
+                codedOutputStream.writeInt32(5, this.f33595t);
             }
-            if ((this.f33368o & 16) == 16) {
-                codedOutputStream.writeMessage(6, this.f33374u);
+            if ((this.f33590o & 16) == 16) {
+                codedOutputStream.writeMessage(6, this.f33596u);
             }
-            if ((this.f33368o & 32) == 32) {
-                codedOutputStream.writeInt32(7, this.f33375v);
+            if ((this.f33590o & 32) == 32) {
+                codedOutputStream.writeInt32(7, this.f33597v);
             }
-            for (int i11 = 0; i11 < this.f33376w.size(); i11++) {
-                codedOutputStream.writeMessage(8, (MessageLite) this.f33376w.get(i11));
+            for (int i11 = 0; i11 < this.f33598w.size(); i11++) {
+                codedOutputStream.writeMessage(8, (MessageLite) this.f33598w.get(i11));
             }
-            for (int i12 = 0; i12 < this.f33377x.size(); i12++) {
-                codedOutputStream.writeInt32(31, ((Integer) this.f33377x.get(i12)).intValue());
+            for (int i12 = 0; i12 < this.f33599x.size(); i12++) {
+                codedOutputStream.writeInt32(31, ((Integer) this.f33599x.get(i12)).intValue());
             }
-            for (int i13 = 0; i13 < this.f33378y.size(); i13++) {
-                codedOutputStream.writeMessage(32, (MessageLite) this.f33378y.get(i13));
+            for (int i13 = 0; i13 < this.f33600y.size(); i13++) {
+                codedOutputStream.writeMessage(32, (MessageLite) this.f33600y.get(i13));
             }
             k10.writeUntil(h.DEFAULT_DRAG_ANIMATION_DURATION, codedOutputStream);
-            codedOutputStream.writeRawBytes(this.f33367i);
+            codedOutputStream.writeRawBytes(this.f33589i);
         }
 
         public static Builder newBuilder(TypeAlias typeAlias) {
@@ -13857,15 +13857,15 @@ public final class ProtoBuf {
 
         private TypeAlias(GeneratedMessageLite.ExtendableBuilder extendableBuilder) {
             super(extendableBuilder);
-            this.f33379z = (byte) -1;
+            this.f33601z = (byte) -1;
             this.A = -1;
-            this.f33367i = extendableBuilder.getUnknownFields();
+            this.f33589i = extendableBuilder.getUnknownFields();
         }
 
         private TypeAlias(boolean z10) {
-            this.f33379z = (byte) -1;
+            this.f33601z = (byte) -1;
             this.A = -1;
-            this.f33367i = ByteString.EMPTY;
+            this.f33589i = ByteString.EMPTY;
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -13874,7 +13874,7 @@ public final class ProtoBuf {
         /* JADX WARN: Type inference failed for: r5v2, types: [boolean] */
         private TypeAlias(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
             Type.Builder builder;
-            this.f33379z = (byte) -1;
+            this.f33601z = (byte) -1;
             this.A = -1;
             C();
             ByteString.Output newOutput = ByteString.newOutput();
@@ -13891,80 +13891,80 @@ public final class ProtoBuf {
                                 case 0:
                                     break;
                                 case 8:
-                                    this.f33368o |= 1;
-                                    this.f33369p = codedInputStream.readInt32();
+                                    this.f33590o |= 1;
+                                    this.f33591p = codedInputStream.readInt32();
                                     continue;
                                 case 16:
-                                    this.f33368o |= 2;
-                                    this.f33370q = codedInputStream.readInt32();
+                                    this.f33590o |= 2;
+                                    this.f33592q = codedInputStream.readInt32();
                                     continue;
                                 case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
                                     if (!(z11 & true)) {
-                                        this.f33371r = new ArrayList();
+                                        this.f33593r = new ArrayList();
                                         z11 |= true;
                                     }
-                                    this.f33371r.add(codedInputStream.readMessage(TypeParameter.PARSER, extensionRegistryLite));
+                                    this.f33593r.add(codedInputStream.readMessage(TypeParameter.PARSER, extensionRegistryLite));
                                     continue;
                                 case ChatViewRecyclerTypes.CHANNEL_DEADCHAT_PROMPT_ACTIONS /* 34 */:
-                                    builder = (this.f33368o & 4) == 4 ? this.f33372s.toBuilder() : null;
+                                    builder = (this.f33590o & 4) == 4 ? this.f33594s.toBuilder() : null;
                                     Type type = (Type) codedInputStream.readMessage(Type.PARSER, extensionRegistryLite);
-                                    this.f33372s = type;
+                                    this.f33594s = type;
                                     if (builder != null) {
                                         builder.mergeFrom(type);
-                                        this.f33372s = builder.buildPartial();
+                                        this.f33594s = builder.buildPartial();
                                     }
-                                    this.f33368o |= 4;
+                                    this.f33590o |= 4;
                                     continue;
                                 case 40:
-                                    this.f33368o |= 8;
-                                    this.f33373t = codedInputStream.readInt32();
+                                    this.f33590o |= 8;
+                                    this.f33595t = codedInputStream.readInt32();
                                     continue;
                                 case 50:
-                                    builder = (this.f33368o & 16) == 16 ? this.f33374u.toBuilder() : null;
+                                    builder = (this.f33590o & 16) == 16 ? this.f33596u.toBuilder() : null;
                                     Type type2 = (Type) codedInputStream.readMessage(Type.PARSER, extensionRegistryLite);
-                                    this.f33374u = type2;
+                                    this.f33596u = type2;
                                     if (builder != null) {
                                         builder.mergeFrom(type2);
-                                        this.f33374u = builder.buildPartial();
+                                        this.f33596u = builder.buildPartial();
                                     }
-                                    this.f33368o |= 16;
+                                    this.f33590o |= 16;
                                     continue;
                                 case ChatViewRecyclerTypes.SHARED_CUSTOM_THEME_EMBED /* 56 */:
-                                    this.f33368o |= 32;
-                                    this.f33375v = codedInputStream.readInt32();
+                                    this.f33590o |= 32;
+                                    this.f33597v = codedInputStream.readInt32();
                                     continue;
                                 case 66:
                                     if (!(z11 & true)) {
-                                        this.f33376w = new ArrayList();
+                                        this.f33598w = new ArrayList();
                                         z11 |= true;
                                     }
-                                    this.f33376w.add(codedInputStream.readMessage(Annotation.PARSER, extensionRegistryLite));
+                                    this.f33598w.add(codedInputStream.readMessage(Annotation.PARSER, extensionRegistryLite));
                                     continue;
                                 case 248:
                                     if (!(z11 & true)) {
-                                        this.f33377x = new ArrayList();
+                                        this.f33599x = new ArrayList();
                                         z11 |= true;
                                     }
-                                    this.f33377x.add(Integer.valueOf(codedInputStream.readInt32()));
+                                    this.f33599x.add(Integer.valueOf(codedInputStream.readInt32()));
                                     continue;
                                 case h.DEFAULT_SWIPE_ANIMATION_DURATION /* 250 */:
                                     int pushLimit = codedInputStream.pushLimit(codedInputStream.readRawVarint32());
                                     if (!(z11 & true) && codedInputStream.getBytesUntilLimit() > 0) {
-                                        this.f33377x = new ArrayList();
+                                        this.f33599x = new ArrayList();
                                         z11 |= true;
                                     }
                                     while (codedInputStream.getBytesUntilLimit() > 0) {
-                                        this.f33377x.add(Integer.valueOf(codedInputStream.readInt32()));
+                                        this.f33599x.add(Integer.valueOf(codedInputStream.readInt32()));
                                     }
                                     codedInputStream.popLimit(pushLimit);
                                     continue;
                                     break;
                                 case 258:
                                     if (!(z11 & true)) {
-                                        this.f33378y = new ArrayList();
+                                        this.f33600y = new ArrayList();
                                         z11 |= true;
                                     }
-                                    this.f33378y.add(codedInputStream.readMessage(CompilerPluginData.PARSER, extensionRegistryLite));
+                                    this.f33600y.add(codedInputStream.readMessage(CompilerPluginData.PARSER, extensionRegistryLite));
                                     continue;
                                 default:
                                     r52 = f(codedInputStream, newInstance, extensionRegistryLite, readTag);
@@ -13977,25 +13977,25 @@ public final class ProtoBuf {
                             z10 = true;
                         } catch (Throwable th2) {
                             if (z11 & true) {
-                                this.f33371r = Collections.unmodifiableList(this.f33371r);
+                                this.f33593r = Collections.unmodifiableList(this.f33593r);
                             }
                             if ((z11 & true) == r52) {
-                                this.f33376w = Collections.unmodifiableList(this.f33376w);
+                                this.f33598w = Collections.unmodifiableList(this.f33598w);
                             }
                             if (z11 & true) {
-                                this.f33377x = Collections.unmodifiableList(this.f33377x);
+                                this.f33599x = Collections.unmodifiableList(this.f33599x);
                             }
                             if (z11 & true) {
-                                this.f33378y = Collections.unmodifiableList(this.f33378y);
+                                this.f33600y = Collections.unmodifiableList(this.f33600y);
                             }
                             try {
                                 newInstance.flush();
                             } catch (IOException unused) {
                             } catch (Throwable th3) {
-                                this.f33367i = newOutput.toByteString();
+                                this.f33589i = newOutput.toByteString();
                                 throw th3;
                             }
-                            this.f33367i = newOutput.toByteString();
+                            this.f33589i = newOutput.toByteString();
                             e();
                             throw th2;
                         }
@@ -14006,25 +14006,25 @@ public final class ProtoBuf {
                     }
                 } else {
                     if (z11 & true) {
-                        this.f33371r = Collections.unmodifiableList(this.f33371r);
+                        this.f33593r = Collections.unmodifiableList(this.f33593r);
                     }
                     if (z11 & true) {
-                        this.f33376w = Collections.unmodifiableList(this.f33376w);
+                        this.f33598w = Collections.unmodifiableList(this.f33598w);
                     }
                     if (z11 & true) {
-                        this.f33377x = Collections.unmodifiableList(this.f33377x);
+                        this.f33599x = Collections.unmodifiableList(this.f33599x);
                     }
                     if (z11 & true) {
-                        this.f33378y = Collections.unmodifiableList(this.f33378y);
+                        this.f33600y = Collections.unmodifiableList(this.f33600y);
                     }
                     try {
                         newInstance.flush();
                     } catch (IOException unused2) {
                     } catch (Throwable th4) {
-                        this.f33367i = newOutput.toByteString();
+                        this.f33589i = newOutput.toByteString();
                         throw th4;
                     }
-                    this.f33367i = newOutput.toByteString();
+                    this.f33589i = newOutput.toByteString();
                     e();
                     return;
                 }
@@ -14045,91 +14045,91 @@ public final class ProtoBuf {
         public static Parser<TypeParameter> PARSER = new a();
 
         /* renamed from: y  reason: collision with root package name */
-        private static final TypeParameter f33391y;
+        private static final TypeParameter f33613y;
 
         /* renamed from: i  reason: collision with root package name */
-        private final ByteString f33392i;
+        private final ByteString f33614i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33393o;
+        private int f33615o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33394p;
+        private int f33616p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f33395q;
+        private int f33617q;
 
         /* renamed from: r  reason: collision with root package name */
-        private boolean f33396r;
+        private boolean f33618r;
 
         /* renamed from: s  reason: collision with root package name */
-        private Variance f33397s;
+        private Variance f33619s;
 
         /* renamed from: t  reason: collision with root package name */
-        private List f33398t;
+        private List f33620t;
 
         /* renamed from: u  reason: collision with root package name */
-        private List f33399u;
+        private List f33621u;
 
         /* renamed from: v  reason: collision with root package name */
-        private int f33400v;
+        private int f33622v;
 
         /* renamed from: w  reason: collision with root package name */
-        private byte f33401w;
+        private byte f33623w;
 
         /* renamed from: x  reason: collision with root package name */
-        private int f33402x;
+        private int f33624x;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.ExtendableBuilder<TypeParameter, Builder> implements TypeParameterOrBuilder {
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33403o;
+            private int f33625o;
 
             /* renamed from: p  reason: collision with root package name */
-            private int f33404p;
+            private int f33626p;
 
             /* renamed from: q  reason: collision with root package name */
-            private int f33405q;
+            private int f33627q;
 
             /* renamed from: r  reason: collision with root package name */
-            private boolean f33406r;
+            private boolean f33628r;
 
             /* renamed from: s  reason: collision with root package name */
-            private Variance f33407s = Variance.INV;
+            private Variance f33629s = Variance.INV;
 
             /* renamed from: t  reason: collision with root package name */
-            private List f33408t;
+            private List f33630t;
 
             /* renamed from: u  reason: collision with root package name */
-            private List f33409u;
+            private List f33631u;
 
             private Builder() {
                 List list = Collections.EMPTY_LIST;
-                this.f33408t = list;
-                this.f33409u = list;
+                this.f33630t = list;
+                this.f33631u = list;
                 l();
             }
 
-            static /* synthetic */ Builder h() {
-                return i();
+            static /* synthetic */ Builder g() {
+                return h();
             }
 
-            private static Builder i() {
+            private static Builder h() {
                 return new Builder();
             }
 
             private void j() {
-                if ((this.f33403o & 32) != 32) {
-                    this.f33409u = new ArrayList(this.f33409u);
-                    this.f33403o |= 32;
+                if ((this.f33625o & 32) != 32) {
+                    this.f33631u = new ArrayList(this.f33631u);
+                    this.f33625o |= 32;
                 }
             }
 
             private void k() {
-                if ((this.f33403o & 16) != 16) {
-                    this.f33408t = new ArrayList(this.f33408t);
-                    this.f33403o |= 16;
+                if ((this.f33625o & 16) != 16) {
+                    this.f33630t = new ArrayList(this.f33630t);
+                    this.f33625o |= 16;
                 }
             }
 
@@ -14138,55 +14138,55 @@ public final class ProtoBuf {
 
             public TypeParameter buildPartial() {
                 TypeParameter typeParameter = new TypeParameter(this);
-                int i10 = this.f33403o;
+                int i10 = this.f33625o;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                typeParameter.f33394p = this.f33404p;
+                typeParameter.f33616p = this.f33626p;
                 if ((i10 & 2) == 2) {
                     i11 |= 2;
                 }
-                typeParameter.f33395q = this.f33405q;
+                typeParameter.f33617q = this.f33627q;
                 if ((i10 & 4) == 4) {
                     i11 |= 4;
                 }
-                typeParameter.f33396r = this.f33406r;
+                typeParameter.f33618r = this.f33628r;
                 if ((i10 & 8) == 8) {
                     i11 |= 8;
                 }
-                typeParameter.f33397s = this.f33407s;
-                if ((this.f33403o & 16) == 16) {
-                    this.f33408t = Collections.unmodifiableList(this.f33408t);
-                    this.f33403o &= -17;
+                typeParameter.f33619s = this.f33629s;
+                if ((this.f33625o & 16) == 16) {
+                    this.f33630t = Collections.unmodifiableList(this.f33630t);
+                    this.f33625o &= -17;
                 }
-                typeParameter.f33398t = this.f33408t;
-                if ((this.f33403o & 32) == 32) {
-                    this.f33409u = Collections.unmodifiableList(this.f33409u);
-                    this.f33403o &= -33;
+                typeParameter.f33620t = this.f33630t;
+                if ((this.f33625o & 32) == 32) {
+                    this.f33631u = Collections.unmodifiableList(this.f33631u);
+                    this.f33625o &= -33;
                 }
-                typeParameter.f33399u = this.f33409u;
-                typeParameter.f33393o = i11;
+                typeParameter.f33621u = this.f33631u;
+                typeParameter.f33615o = i11;
                 return typeParameter;
             }
 
             public Type getUpperBound(int i10) {
-                return (Type) this.f33408t.get(i10);
+                return (Type) this.f33630t.get(i10);
             }
 
             public int getUpperBoundCount() {
-                return this.f33408t.size();
+                return this.f33630t.size();
             }
 
             public boolean hasId() {
-                if ((this.f33403o & 1) == 1) {
+                if ((this.f33625o & 1) == 1) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasName() {
-                if ((this.f33403o & 2) == 2) {
+                if ((this.f33625o & 2) == 2) {
                     return true;
                 }
                 return false;
@@ -14209,27 +14209,27 @@ public final class ProtoBuf {
             }
 
             public Builder setId(int i10) {
-                this.f33403o |= 1;
-                this.f33404p = i10;
+                this.f33625o |= 1;
+                this.f33626p = i10;
                 return this;
             }
 
             public Builder setName(int i10) {
-                this.f33403o |= 2;
-                this.f33405q = i10;
+                this.f33625o |= 2;
+                this.f33627q = i10;
                 return this;
             }
 
             public Builder setReified(boolean z10) {
-                this.f33403o |= 4;
-                this.f33406r = z10;
+                this.f33625o |= 4;
+                this.f33628r = z10;
                 return this;
             }
 
             public Builder setVariance(Variance variance) {
                 variance.getClass();
-                this.f33403o |= 8;
-                this.f33407s = variance;
+                this.f33625o |= 8;
+                this.f33629s = variance;
                 return this;
             }
 
@@ -14264,32 +14264,32 @@ public final class ProtoBuf {
                 if (typeParameter.hasVariance()) {
                     setVariance(typeParameter.getVariance());
                 }
-                if (!typeParameter.f33398t.isEmpty()) {
-                    if (this.f33408t.isEmpty()) {
-                        this.f33408t = typeParameter.f33398t;
-                        this.f33403o &= -17;
+                if (!typeParameter.f33620t.isEmpty()) {
+                    if (this.f33630t.isEmpty()) {
+                        this.f33630t = typeParameter.f33620t;
+                        this.f33625o &= -17;
                     } else {
                         k();
-                        this.f33408t.addAll(typeParameter.f33398t);
+                        this.f33630t.addAll(typeParameter.f33620t);
                     }
                 }
-                if (!typeParameter.f33399u.isEmpty()) {
-                    if (this.f33409u.isEmpty()) {
-                        this.f33409u = typeParameter.f33399u;
-                        this.f33403o &= -33;
+                if (!typeParameter.f33621u.isEmpty()) {
+                    if (this.f33631u.isEmpty()) {
+                        this.f33631u = typeParameter.f33621u;
+                        this.f33625o &= -33;
                     } else {
                         j();
-                        this.f33409u.addAll(typeParameter.f33399u);
+                        this.f33631u.addAll(typeParameter.f33621u);
                     }
                 }
                 f(typeParameter);
-                setUnknownFields(getUnknownFields().concat(typeParameter.f33392i));
+                setUnknownFields(getUnknownFields().concat(typeParameter.f33614i));
                 return this;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.ExtendableBuilder, kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.Builder, kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite.Builder
             public Builder clone() {
-                return i().mergeFrom(buildPartial());
+                return h().mergeFrom(buildPartial());
             }
 
             /* JADX WARN: Removed duplicated region for block: B:15:0x001d  */
@@ -14338,10 +14338,10 @@ public final class ProtoBuf {
             
 
             /* renamed from: e  reason: collision with root package name */
-            private static Internal.EnumLiteMap f33410e = new a();
+            private static Internal.EnumLiteMap f33632e = new a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final int f33412d;
+            private final int f33634d;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
             static class a implements Internal.EnumLiteMap {
@@ -14356,12 +14356,12 @@ public final class ProtoBuf {
             }
 
             Variance(int i10, int i11) {
-                this.f33412d = i11;
+                this.f33634d = i11;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
             public final int getNumber() {
-                return this.f33412d;
+                return this.f33634d;
             }
 
             public static Variance valueOf(int i10) {
@@ -14392,34 +14392,34 @@ public final class ProtoBuf {
 
         static {
             TypeParameter typeParameter = new TypeParameter(true);
-            f33391y = typeParameter;
+            f33613y = typeParameter;
             typeParameter.w();
         }
 
         public static TypeParameter getDefaultInstance() {
-            return f33391y;
+            return f33613y;
         }
 
         public static Builder newBuilder() {
-            return Builder.h();
+            return Builder.g();
         }
 
         private void w() {
-            this.f33394p = 0;
-            this.f33395q = 0;
-            this.f33396r = false;
-            this.f33397s = Variance.INV;
+            this.f33616p = 0;
+            this.f33617q = 0;
+            this.f33618r = false;
+            this.f33619s = Variance.INV;
             List list = Collections.EMPTY_LIST;
-            this.f33398t = list;
-            this.f33399u = list;
+            this.f33620t = list;
+            this.f33621u = list;
         }
 
         public int getId() {
-            return this.f33394p;
+            return this.f33616p;
         }
 
         public int getName() {
-            return this.f33395q;
+            return this.f33617q;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -14428,90 +14428,90 @@ public final class ProtoBuf {
         }
 
         public boolean getReified() {
-            return this.f33396r;
+            return this.f33618r;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
             int i10;
-            int i11 = this.f33402x;
+            int i11 = this.f33624x;
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33393o & 1) == 1) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33394p);
+            if ((this.f33615o & 1) == 1) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33616p);
             } else {
                 i10 = 0;
             }
-            if ((this.f33393o & 2) == 2) {
-                i10 += CodedOutputStream.computeInt32Size(2, this.f33395q);
+            if ((this.f33615o & 2) == 2) {
+                i10 += CodedOutputStream.computeInt32Size(2, this.f33617q);
             }
-            if ((this.f33393o & 4) == 4) {
-                i10 += CodedOutputStream.computeBoolSize(3, this.f33396r);
+            if ((this.f33615o & 4) == 4) {
+                i10 += CodedOutputStream.computeBoolSize(3, this.f33618r);
             }
-            if ((this.f33393o & 8) == 8) {
-                i10 += CodedOutputStream.computeEnumSize(4, this.f33397s.getNumber());
+            if ((this.f33615o & 8) == 8) {
+                i10 += CodedOutputStream.computeEnumSize(4, this.f33619s.getNumber());
             }
-            for (int i12 = 0; i12 < this.f33398t.size(); i12++) {
-                i10 += CodedOutputStream.computeMessageSize(5, (MessageLite) this.f33398t.get(i12));
+            for (int i12 = 0; i12 < this.f33620t.size(); i12++) {
+                i10 += CodedOutputStream.computeMessageSize(5, (MessageLite) this.f33620t.get(i12));
             }
             int i13 = 0;
-            for (int i14 = 0; i14 < this.f33399u.size(); i14++) {
-                i13 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33399u.get(i14)).intValue());
+            for (int i14 = 0; i14 < this.f33621u.size(); i14++) {
+                i13 += CodedOutputStream.computeInt32SizeNoTag(((Integer) this.f33621u.get(i14)).intValue());
             }
             int i15 = i10 + i13;
             if (!getUpperBoundIdList().isEmpty()) {
                 i15 = i15 + 1 + CodedOutputStream.computeInt32SizeNoTag(i13);
             }
-            this.f33400v = i13;
-            int j10 = i15 + j() + this.f33392i.size();
-            this.f33402x = j10;
+            this.f33622v = i13;
+            int j10 = i15 + j() + this.f33614i.size();
+            this.f33624x = j10;
             return j10;
         }
 
         public Type getUpperBound(int i10) {
-            return (Type) this.f33398t.get(i10);
+            return (Type) this.f33620t.get(i10);
         }
 
         public int getUpperBoundCount() {
-            return this.f33398t.size();
+            return this.f33620t.size();
         }
 
         public List<Integer> getUpperBoundIdList() {
-            return this.f33399u;
+            return this.f33621u;
         }
 
         public List<Type> getUpperBoundList() {
-            return this.f33398t;
+            return this.f33620t;
         }
 
         public Variance getVariance() {
-            return this.f33397s;
+            return this.f33619s;
         }
 
         public boolean hasId() {
-            if ((this.f33393o & 1) == 1) {
+            if ((this.f33615o & 1) == 1) {
                 return true;
             }
             return false;
         }
 
         public boolean hasName() {
-            if ((this.f33393o & 2) == 2) {
+            if ((this.f33615o & 2) == 2) {
                 return true;
             }
             return false;
         }
 
         public boolean hasReified() {
-            if ((this.f33393o & 4) == 4) {
+            if ((this.f33615o & 4) == 4) {
                 return true;
             }
             return false;
         }
 
         public boolean hasVariance() {
-            if ((this.f33393o & 8) == 8) {
+            if ((this.f33615o & 8) == 8) {
                 return true;
             }
             return false;
@@ -14519,7 +14519,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33401w;
+            byte b10 = this.f33623w;
             if (b10 == 1) {
                 return true;
             }
@@ -14527,23 +14527,23 @@ public final class ProtoBuf {
                 return false;
             }
             if (!hasId()) {
-                this.f33401w = (byte) 0;
+                this.f33623w = (byte) 0;
                 return false;
             } else if (!hasName()) {
-                this.f33401w = (byte) 0;
+                this.f33623w = (byte) 0;
                 return false;
             } else {
                 for (int i10 = 0; i10 < getUpperBoundCount(); i10++) {
                     if (!getUpperBound(i10).isInitialized()) {
-                        this.f33401w = (byte) 0;
+                        this.f33623w = (byte) 0;
                         return false;
                     }
                 }
                 if (!i()) {
-                    this.f33401w = (byte) 0;
+                    this.f33623w = (byte) 0;
                     return false;
                 }
-                this.f33401w = (byte) 1;
+                this.f33623w = (byte) 1;
                 return true;
             }
         }
@@ -14552,30 +14552,30 @@ public final class ProtoBuf {
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
             GeneratedMessageLite.ExtendableMessage.ExtensionWriter k10 = k();
-            if ((this.f33393o & 1) == 1) {
-                codedOutputStream.writeInt32(1, this.f33394p);
+            if ((this.f33615o & 1) == 1) {
+                codedOutputStream.writeInt32(1, this.f33616p);
             }
-            if ((this.f33393o & 2) == 2) {
-                codedOutputStream.writeInt32(2, this.f33395q);
+            if ((this.f33615o & 2) == 2) {
+                codedOutputStream.writeInt32(2, this.f33617q);
             }
-            if ((this.f33393o & 4) == 4) {
-                codedOutputStream.writeBool(3, this.f33396r);
+            if ((this.f33615o & 4) == 4) {
+                codedOutputStream.writeBool(3, this.f33618r);
             }
-            if ((this.f33393o & 8) == 8) {
-                codedOutputStream.writeEnum(4, this.f33397s.getNumber());
+            if ((this.f33615o & 8) == 8) {
+                codedOutputStream.writeEnum(4, this.f33619s.getNumber());
             }
-            for (int i10 = 0; i10 < this.f33398t.size(); i10++) {
-                codedOutputStream.writeMessage(5, (MessageLite) this.f33398t.get(i10));
+            for (int i10 = 0; i10 < this.f33620t.size(); i10++) {
+                codedOutputStream.writeMessage(5, (MessageLite) this.f33620t.get(i10));
             }
             if (getUpperBoundIdList().size() > 0) {
                 codedOutputStream.writeRawVarint32(50);
-                codedOutputStream.writeRawVarint32(this.f33400v);
+                codedOutputStream.writeRawVarint32(this.f33622v);
             }
-            for (int i11 = 0; i11 < this.f33399u.size(); i11++) {
-                codedOutputStream.writeInt32NoTag(((Integer) this.f33399u.get(i11)).intValue());
+            for (int i11 = 0; i11 < this.f33621u.size(); i11++) {
+                codedOutputStream.writeInt32NoTag(((Integer) this.f33621u.get(i11)).intValue());
             }
             k10.writeUntil(1000, codedOutputStream);
-            codedOutputStream.writeRawBytes(this.f33392i);
+            codedOutputStream.writeRawBytes(this.f33614i);
         }
 
         public static Builder newBuilder(TypeParameter typeParameter) {
@@ -14584,7 +14584,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public TypeParameter getDefaultInstanceForType() {
-            return f33391y;
+            return f33613y;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -14599,23 +14599,23 @@ public final class ProtoBuf {
 
         private TypeParameter(GeneratedMessageLite.ExtendableBuilder extendableBuilder) {
             super(extendableBuilder);
-            this.f33400v = -1;
-            this.f33401w = (byte) -1;
-            this.f33402x = -1;
-            this.f33392i = extendableBuilder.getUnknownFields();
+            this.f33622v = -1;
+            this.f33623w = (byte) -1;
+            this.f33624x = -1;
+            this.f33614i = extendableBuilder.getUnknownFields();
         }
 
         private TypeParameter(boolean z10) {
-            this.f33400v = -1;
-            this.f33401w = (byte) -1;
-            this.f33402x = -1;
-            this.f33392i = ByteString.EMPTY;
+            this.f33622v = -1;
+            this.f33623w = (byte) -1;
+            this.f33624x = -1;
+            this.f33614i = ByteString.EMPTY;
         }
 
         private TypeParameter(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33400v = -1;
-            this.f33401w = (byte) -1;
-            this.f33402x = -1;
+            this.f33622v = -1;
+            this.f33623w = (byte) -1;
+            this.f33624x = -1;
             w();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -14627,14 +14627,14 @@ public final class ProtoBuf {
                         int readTag = codedInputStream.readTag();
                         if (readTag != 0) {
                             if (readTag == 8) {
-                                this.f33393o |= 1;
-                                this.f33394p = codedInputStream.readInt32();
+                                this.f33615o |= 1;
+                                this.f33616p = codedInputStream.readInt32();
                             } else if (readTag == 16) {
-                                this.f33393o |= 2;
-                                this.f33395q = codedInputStream.readInt32();
+                                this.f33615o |= 2;
+                                this.f33617q = codedInputStream.readInt32();
                             } else if (readTag == 24) {
-                                this.f33393o |= 4;
-                                this.f33396r = codedInputStream.readBool();
+                                this.f33615o |= 4;
+                                this.f33618r = codedInputStream.readBool();
                             } else if (readTag == 32) {
                                 int readEnum = codedInputStream.readEnum();
                                 Variance valueOf = Variance.valueOf(readEnum);
@@ -14642,32 +14642,32 @@ public final class ProtoBuf {
                                     newInstance.writeRawVarint32(readTag);
                                     newInstance.writeRawVarint32(readEnum);
                                 } else {
-                                    this.f33393o |= 8;
-                                    this.f33397s = valueOf;
+                                    this.f33615o |= 8;
+                                    this.f33619s = valueOf;
                                 }
                             } else if (readTag == 42) {
                                 if (!(z11 & true)) {
-                                    this.f33398t = new ArrayList();
+                                    this.f33620t = new ArrayList();
                                     z11 |= true;
                                 }
-                                this.f33398t.add(codedInputStream.readMessage(Type.PARSER, extensionRegistryLite));
+                                this.f33620t.add(codedInputStream.readMessage(Type.PARSER, extensionRegistryLite));
                             } else if (readTag == 48) {
                                 if (!(z11 & true)) {
-                                    this.f33399u = new ArrayList();
+                                    this.f33621u = new ArrayList();
                                     z11 |= true;
                                 }
-                                this.f33399u.add(Integer.valueOf(codedInputStream.readInt32()));
+                                this.f33621u.add(Integer.valueOf(codedInputStream.readInt32()));
                             } else if (readTag != 50) {
                                 if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                 }
                             } else {
                                 int pushLimit = codedInputStream.pushLimit(codedInputStream.readRawVarint32());
                                 if (!(z11 & true) && codedInputStream.getBytesUntilLimit() > 0) {
-                                    this.f33399u = new ArrayList();
+                                    this.f33621u = new ArrayList();
                                     z11 |= true;
                                 }
                                 while (codedInputStream.getBytesUntilLimit() > 0) {
-                                    this.f33399u.add(Integer.valueOf(codedInputStream.readInt32()));
+                                    this.f33621u.add(Integer.valueOf(codedInputStream.readInt32()));
                                 }
                                 codedInputStream.popLimit(pushLimit);
                             }
@@ -14680,37 +14680,37 @@ public final class ProtoBuf {
                     }
                 } catch (Throwable th2) {
                     if (z11 & true) {
-                        this.f33398t = Collections.unmodifiableList(this.f33398t);
+                        this.f33620t = Collections.unmodifiableList(this.f33620t);
                     }
                     if (z11 & true) {
-                        this.f33399u = Collections.unmodifiableList(this.f33399u);
+                        this.f33621u = Collections.unmodifiableList(this.f33621u);
                     }
                     try {
                         newInstance.flush();
                     } catch (IOException unused) {
                     } catch (Throwable th3) {
-                        this.f33392i = newOutput.toByteString();
+                        this.f33614i = newOutput.toByteString();
                         throw th3;
                     }
-                    this.f33392i = newOutput.toByteString();
+                    this.f33614i = newOutput.toByteString();
                     e();
                     throw th2;
                 }
             }
             if (z11 & true) {
-                this.f33398t = Collections.unmodifiableList(this.f33398t);
+                this.f33620t = Collections.unmodifiableList(this.f33620t);
             }
             if (z11 & true) {
-                this.f33399u = Collections.unmodifiableList(this.f33399u);
+                this.f33621u = Collections.unmodifiableList(this.f33621u);
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33392i = newOutput.toByteString();
+                this.f33614i = newOutput.toByteString();
                 throw th4;
             }
-            this.f33392i = newOutput.toByteString();
+            this.f33614i = newOutput.toByteString();
             e();
         }
     }
@@ -14724,37 +14724,37 @@ public final class ProtoBuf {
         public static Parser<TypeTable> PARSER = new a();
 
         /* renamed from: s  reason: collision with root package name */
-        private static final TypeTable f33413s;
+        private static final TypeTable f33635s;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33414e;
+        private final ByteString f33636e;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f33415i;
+        private int f33637i;
 
         /* renamed from: o  reason: collision with root package name */
-        private List f33416o;
+        private List f33638o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33417p;
+        private int f33639p;
 
         /* renamed from: q  reason: collision with root package name */
-        private byte f33418q;
+        private byte f33640q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f33419r;
+        private int f33641r;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.Builder<TypeTable, Builder> implements TypeTableOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33420e;
+            private int f33642e;
 
             /* renamed from: i  reason: collision with root package name */
-            private List f33421i = Collections.EMPTY_LIST;
+            private List f33643i = Collections.EMPTY_LIST;
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33422o = -1;
+            private int f33644o = -1;
 
             private Builder() {
                 e();
@@ -14769,9 +14769,9 @@ public final class ProtoBuf {
             }
 
             private void d() {
-                if ((this.f33420e & 1) != 1) {
-                    this.f33421i = new ArrayList(this.f33421i);
-                    this.f33420e |= 1;
+                if ((this.f33642e & 1) != 1) {
+                    this.f33643i = new ArrayList(this.f33643i);
+                    this.f33642e |= 1;
                 }
             }
 
@@ -14780,27 +14780,27 @@ public final class ProtoBuf {
 
             public TypeTable buildPartial() {
                 TypeTable typeTable = new TypeTable(this);
-                int i10 = this.f33420e;
+                int i10 = this.f33642e;
                 int i11 = 1;
                 if ((i10 & 1) == 1) {
-                    this.f33421i = Collections.unmodifiableList(this.f33421i);
-                    this.f33420e &= -2;
+                    this.f33643i = Collections.unmodifiableList(this.f33643i);
+                    this.f33642e &= -2;
                 }
-                typeTable.f33416o = this.f33421i;
+                typeTable.f33638o = this.f33643i;
                 if ((i10 & 2) != 2) {
                     i11 = 0;
                 }
-                typeTable.f33417p = this.f33422o;
-                typeTable.f33415i = i11;
+                typeTable.f33639p = this.f33644o;
+                typeTable.f33637i = i11;
                 return typeTable;
             }
 
             public Type getType(int i10) {
-                return (Type) this.f33421i.get(i10);
+                return (Type) this.f33643i.get(i10);
             }
 
             public int getTypeCount() {
-                return this.f33421i.size();
+                return this.f33643i.size();
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
@@ -14814,8 +14814,8 @@ public final class ProtoBuf {
             }
 
             public Builder setFirstNullable(int i10) {
-                this.f33420e |= 2;
-                this.f33422o = i10;
+                this.f33642e |= 2;
+                this.f33644o = i10;
                 return this;
             }
 
@@ -14843,19 +14843,19 @@ public final class ProtoBuf {
                 if (typeTable == TypeTable.getDefaultInstance()) {
                     return this;
                 }
-                if (!typeTable.f33416o.isEmpty()) {
-                    if (this.f33421i.isEmpty()) {
-                        this.f33421i = typeTable.f33416o;
-                        this.f33420e &= -2;
+                if (!typeTable.f33638o.isEmpty()) {
+                    if (this.f33643i.isEmpty()) {
+                        this.f33643i = typeTable.f33638o;
+                        this.f33642e &= -2;
                     } else {
                         d();
-                        this.f33421i.addAll(typeTable.f33416o);
+                        this.f33643i.addAll(typeTable.f33638o);
                     }
                 }
                 if (typeTable.hasFirstNullable()) {
                     setFirstNullable(typeTable.getFirstNullable());
                 }
-                setUnknownFields(getUnknownFields().concat(typeTable.f33414e));
+                setUnknownFields(getUnknownFields().concat(typeTable.f33636e));
                 return this;
             }
 
@@ -14911,17 +14911,17 @@ public final class ProtoBuf {
 
         static {
             TypeTable typeTable = new TypeTable(true);
-            f33413s = typeTable;
+            f33635s = typeTable;
             typeTable.m();
         }
 
         public static TypeTable getDefaultInstance() {
-            return f33413s;
+            return f33635s;
         }
 
         private void m() {
-            this.f33416o = Collections.EMPTY_LIST;
-            this.f33417p = -1;
+            this.f33638o = Collections.EMPTY_LIST;
+            this.f33639p = -1;
         }
 
         public static Builder newBuilder() {
@@ -14929,7 +14929,7 @@ public final class ProtoBuf {
         }
 
         public int getFirstNullable() {
-            return this.f33417p;
+            return this.f33639p;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -14939,36 +14939,36 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
-            int i10 = this.f33419r;
+            int i10 = this.f33641r;
             if (i10 != -1) {
                 return i10;
             }
             int i11 = 0;
-            for (int i12 = 0; i12 < this.f33416o.size(); i12++) {
-                i11 += CodedOutputStream.computeMessageSize(1, (MessageLite) this.f33416o.get(i12));
+            for (int i12 = 0; i12 < this.f33638o.size(); i12++) {
+                i11 += CodedOutputStream.computeMessageSize(1, (MessageLite) this.f33638o.get(i12));
             }
-            if ((this.f33415i & 1) == 1) {
-                i11 += CodedOutputStream.computeInt32Size(2, this.f33417p);
+            if ((this.f33637i & 1) == 1) {
+                i11 += CodedOutputStream.computeInt32Size(2, this.f33639p);
             }
-            int size = i11 + this.f33414e.size();
-            this.f33419r = size;
+            int size = i11 + this.f33636e.size();
+            this.f33641r = size;
             return size;
         }
 
         public Type getType(int i10) {
-            return (Type) this.f33416o.get(i10);
+            return (Type) this.f33638o.get(i10);
         }
 
         public int getTypeCount() {
-            return this.f33416o.size();
+            return this.f33638o.size();
         }
 
         public List<Type> getTypeList() {
-            return this.f33416o;
+            return this.f33638o;
         }
 
         public boolean hasFirstNullable() {
-            if ((this.f33415i & 1) == 1) {
+            if ((this.f33637i & 1) == 1) {
                 return true;
             }
             return false;
@@ -14976,7 +14976,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33418q;
+            byte b10 = this.f33640q;
             if (b10 == 1) {
                 return true;
             }
@@ -14985,24 +14985,24 @@ public final class ProtoBuf {
             }
             for (int i10 = 0; i10 < getTypeCount(); i10++) {
                 if (!getType(i10).isInitialized()) {
-                    this.f33418q = (byte) 0;
+                    this.f33640q = (byte) 0;
                     return false;
                 }
             }
-            this.f33418q = (byte) 1;
+            this.f33640q = (byte) 1;
             return true;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            for (int i10 = 0; i10 < this.f33416o.size(); i10++) {
-                codedOutputStream.writeMessage(1, (MessageLite) this.f33416o.get(i10));
+            for (int i10 = 0; i10 < this.f33638o.size(); i10++) {
+                codedOutputStream.writeMessage(1, (MessageLite) this.f33638o.get(i10));
             }
-            if ((this.f33415i & 1) == 1) {
-                codedOutputStream.writeInt32(2, this.f33417p);
+            if ((this.f33637i & 1) == 1) {
+                codedOutputStream.writeInt32(2, this.f33639p);
             }
-            codedOutputStream.writeRawBytes(this.f33414e);
+            codedOutputStream.writeRawBytes(this.f33636e);
         }
 
         public static Builder newBuilder(TypeTable typeTable) {
@@ -15011,7 +15011,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public TypeTable getDefaultInstanceForType() {
-            return f33413s;
+            return f33635s;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -15026,20 +15026,20 @@ public final class ProtoBuf {
 
         private TypeTable(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33418q = (byte) -1;
-            this.f33419r = -1;
-            this.f33414e = builder.getUnknownFields();
+            this.f33640q = (byte) -1;
+            this.f33641r = -1;
+            this.f33636e = builder.getUnknownFields();
         }
 
         private TypeTable(boolean z10) {
-            this.f33418q = (byte) -1;
-            this.f33419r = -1;
-            this.f33414e = ByteString.EMPTY;
+            this.f33640q = (byte) -1;
+            this.f33641r = -1;
+            this.f33636e = ByteString.EMPTY;
         }
 
         private TypeTable(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33418q = (byte) -1;
-            this.f33419r = -1;
+            this.f33640q = (byte) -1;
+            this.f33641r = -1;
             m();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -15052,31 +15052,31 @@ public final class ProtoBuf {
                         if (readTag != 0) {
                             if (readTag == 10) {
                                 if (!z11) {
-                                    this.f33416o = new ArrayList();
+                                    this.f33638o = new ArrayList();
                                     z11 = true;
                                 }
-                                this.f33416o.add(codedInputStream.readMessage(Type.PARSER, extensionRegistryLite));
+                                this.f33638o.add(codedInputStream.readMessage(Type.PARSER, extensionRegistryLite));
                             } else if (readTag != 16) {
                                 if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                 }
                             } else {
-                                this.f33415i |= 1;
-                                this.f33417p = codedInputStream.readInt32();
+                                this.f33637i |= 1;
+                                this.f33639p = codedInputStream.readInt32();
                             }
                         }
                         z10 = true;
                     } catch (Throwable th2) {
                         if (z11) {
-                            this.f33416o = Collections.unmodifiableList(this.f33416o);
+                            this.f33638o = Collections.unmodifiableList(this.f33638o);
                         }
                         try {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33414e = newOutput.toByteString();
+                            this.f33636e = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33414e = newOutput.toByteString();
+                        this.f33636e = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -15087,16 +15087,16 @@ public final class ProtoBuf {
                 }
             }
             if (z11) {
-                this.f33416o = Collections.unmodifiableList(this.f33416o);
+                this.f33638o = Collections.unmodifiableList(this.f33638o);
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33414e = newOutput.toByteString();
+                this.f33636e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33414e = newOutput.toByteString();
+            this.f33636e = newOutput.toByteString();
             e();
         }
     }
@@ -15110,71 +15110,71 @@ public final class ProtoBuf {
         public static Parser<ValueParameter> PARSER = new a();
 
         /* renamed from: x  reason: collision with root package name */
-        private static final ValueParameter f33423x;
+        private static final ValueParameter f33645x;
 
         /* renamed from: i  reason: collision with root package name */
-        private final ByteString f33424i;
+        private final ByteString f33646i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33425o;
+        private int f33647o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33426p;
+        private int f33648p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f33427q;
+        private int f33649q;
 
         /* renamed from: r  reason: collision with root package name */
-        private Type f33428r;
+        private Type f33650r;
 
         /* renamed from: s  reason: collision with root package name */
-        private int f33429s;
+        private int f33651s;
 
         /* renamed from: t  reason: collision with root package name */
-        private Type f33430t;
+        private Type f33652t;
 
         /* renamed from: u  reason: collision with root package name */
-        private int f33431u;
+        private int f33653u;
 
         /* renamed from: v  reason: collision with root package name */
-        private byte f33432v;
+        private byte f33654v;
 
         /* renamed from: w  reason: collision with root package name */
-        private int f33433w;
+        private int f33655w;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.ExtendableBuilder<ValueParameter, Builder> implements ValueParameterOrBuilder {
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33434o;
+            private int f33656o;
 
             /* renamed from: p  reason: collision with root package name */
-            private int f33435p;
+            private int f33657p;
 
             /* renamed from: q  reason: collision with root package name */
-            private int f33436q;
+            private int f33658q;
 
             /* renamed from: s  reason: collision with root package name */
-            private int f33438s;
+            private int f33660s;
 
             /* renamed from: u  reason: collision with root package name */
-            private int f33440u;
+            private int f33662u;
 
             /* renamed from: r  reason: collision with root package name */
-            private Type f33437r = Type.getDefaultInstance();
+            private Type f33659r = Type.getDefaultInstance();
 
             /* renamed from: t  reason: collision with root package name */
-            private Type f33439t = Type.getDefaultInstance();
+            private Type f33661t = Type.getDefaultInstance();
 
             private Builder() {
                 j();
             }
 
-            static /* synthetic */ Builder h() {
-                return i();
+            static /* synthetic */ Builder g() {
+                return h();
             }
 
-            private static Builder i() {
+            private static Builder h() {
                 return new Builder();
             }
 
@@ -15183,60 +15183,60 @@ public final class ProtoBuf {
 
             public ValueParameter buildPartial() {
                 ValueParameter valueParameter = new ValueParameter(this);
-                int i10 = this.f33434o;
+                int i10 = this.f33656o;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                valueParameter.f33426p = this.f33435p;
+                valueParameter.f33648p = this.f33657p;
                 if ((i10 & 2) == 2) {
                     i11 |= 2;
                 }
-                valueParameter.f33427q = this.f33436q;
+                valueParameter.f33649q = this.f33658q;
                 if ((i10 & 4) == 4) {
                     i11 |= 4;
                 }
-                valueParameter.f33428r = this.f33437r;
+                valueParameter.f33650r = this.f33659r;
                 if ((i10 & 8) == 8) {
                     i11 |= 8;
                 }
-                valueParameter.f33429s = this.f33438s;
+                valueParameter.f33651s = this.f33660s;
                 if ((i10 & 16) == 16) {
                     i11 |= 16;
                 }
-                valueParameter.f33430t = this.f33439t;
+                valueParameter.f33652t = this.f33661t;
                 if ((i10 & 32) == 32) {
                     i11 |= 32;
                 }
-                valueParameter.f33431u = this.f33440u;
-                valueParameter.f33425o = i11;
+                valueParameter.f33653u = this.f33662u;
+                valueParameter.f33647o = i11;
                 return valueParameter;
             }
 
             public Type getType() {
-                return this.f33437r;
+                return this.f33659r;
             }
 
             public Type getVarargElementType() {
-                return this.f33439t;
+                return this.f33661t;
             }
 
             public boolean hasName() {
-                if ((this.f33434o & 2) == 2) {
+                if ((this.f33656o & 2) == 2) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasType() {
-                if ((this.f33434o & 4) == 4) {
+                if ((this.f33656o & 4) == 4) {
                     return true;
                 }
                 return false;
             }
 
             public boolean hasVarargElementType() {
-                if ((this.f33434o & 16) == 16) {
+                if ((this.f33656o & 16) == 16) {
                     return true;
                 }
                 return false;
@@ -15257,46 +15257,46 @@ public final class ProtoBuf {
             }
 
             public Builder mergeType(Type type) {
-                if ((this.f33434o & 4) == 4 && this.f33437r != Type.getDefaultInstance()) {
-                    this.f33437r = Type.newBuilder(this.f33437r).mergeFrom(type).buildPartial();
+                if ((this.f33656o & 4) == 4 && this.f33659r != Type.getDefaultInstance()) {
+                    this.f33659r = Type.newBuilder(this.f33659r).mergeFrom(type).buildPartial();
                 } else {
-                    this.f33437r = type;
+                    this.f33659r = type;
                 }
-                this.f33434o |= 4;
+                this.f33656o |= 4;
                 return this;
             }
 
             public Builder mergeVarargElementType(Type type) {
-                if ((this.f33434o & 16) == 16 && this.f33439t != Type.getDefaultInstance()) {
-                    this.f33439t = Type.newBuilder(this.f33439t).mergeFrom(type).buildPartial();
+                if ((this.f33656o & 16) == 16 && this.f33661t != Type.getDefaultInstance()) {
+                    this.f33661t = Type.newBuilder(this.f33661t).mergeFrom(type).buildPartial();
                 } else {
-                    this.f33439t = type;
+                    this.f33661t = type;
                 }
-                this.f33434o |= 16;
+                this.f33656o |= 16;
                 return this;
             }
 
             public Builder setFlags(int i10) {
-                this.f33434o |= 1;
-                this.f33435p = i10;
+                this.f33656o |= 1;
+                this.f33657p = i10;
                 return this;
             }
 
             public Builder setName(int i10) {
-                this.f33434o |= 2;
-                this.f33436q = i10;
+                this.f33656o |= 2;
+                this.f33658q = i10;
                 return this;
             }
 
             public Builder setTypeId(int i10) {
-                this.f33434o |= 8;
-                this.f33438s = i10;
+                this.f33656o |= 8;
+                this.f33660s = i10;
                 return this;
             }
 
             public Builder setVarargElementTypeId(int i10) {
-                this.f33434o |= 32;
-                this.f33440u = i10;
+                this.f33656o |= 32;
+                this.f33662u = i10;
                 return this;
             }
 
@@ -15338,13 +15338,13 @@ public final class ProtoBuf {
                     setVarargElementTypeId(valueParameter.getVarargElementTypeId());
                 }
                 f(valueParameter);
-                setUnknownFields(getUnknownFields().concat(valueParameter.f33424i));
+                setUnknownFields(getUnknownFields().concat(valueParameter.f33646i));
                 return this;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.ExtendableBuilder, kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.Builder, kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite.Builder
             public Builder clone() {
-                return i().mergeFrom(buildPartial());
+                return h().mergeFrom(buildPartial());
             }
 
             /* JADX WARN: Removed duplicated region for block: B:15:0x001d  */
@@ -15399,33 +15399,33 @@ public final class ProtoBuf {
 
         static {
             ValueParameter valueParameter = new ValueParameter(true);
-            f33423x = valueParameter;
+            f33645x = valueParameter;
             valueParameter.u();
         }
 
         public static ValueParameter getDefaultInstance() {
-            return f33423x;
+            return f33645x;
         }
 
         public static Builder newBuilder() {
-            return Builder.h();
+            return Builder.g();
         }
 
         private void u() {
-            this.f33426p = 0;
-            this.f33427q = 0;
-            this.f33428r = Type.getDefaultInstance();
-            this.f33429s = 0;
-            this.f33430t = Type.getDefaultInstance();
-            this.f33431u = 0;
+            this.f33648p = 0;
+            this.f33649q = 0;
+            this.f33650r = Type.getDefaultInstance();
+            this.f33651s = 0;
+            this.f33652t = Type.getDefaultInstance();
+            this.f33653u = 0;
         }
 
         public int getFlags() {
-            return this.f33426p;
+            return this.f33648p;
         }
 
         public int getName() {
-            return this.f33427q;
+            return this.f33649q;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -15436,88 +15436,88 @@ public final class ProtoBuf {
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
             int i10;
-            int i11 = this.f33433w;
+            int i11 = this.f33655w;
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33425o & 1) == 1) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33426p);
+            if ((this.f33647o & 1) == 1) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33648p);
             } else {
                 i10 = 0;
             }
-            if ((this.f33425o & 2) == 2) {
-                i10 += CodedOutputStream.computeInt32Size(2, this.f33427q);
+            if ((this.f33647o & 2) == 2) {
+                i10 += CodedOutputStream.computeInt32Size(2, this.f33649q);
             }
-            if ((this.f33425o & 4) == 4) {
-                i10 += CodedOutputStream.computeMessageSize(3, this.f33428r);
+            if ((this.f33647o & 4) == 4) {
+                i10 += CodedOutputStream.computeMessageSize(3, this.f33650r);
             }
-            if ((this.f33425o & 16) == 16) {
-                i10 += CodedOutputStream.computeMessageSize(4, this.f33430t);
+            if ((this.f33647o & 16) == 16) {
+                i10 += CodedOutputStream.computeMessageSize(4, this.f33652t);
             }
-            if ((this.f33425o & 8) == 8) {
-                i10 += CodedOutputStream.computeInt32Size(5, this.f33429s);
+            if ((this.f33647o & 8) == 8) {
+                i10 += CodedOutputStream.computeInt32Size(5, this.f33651s);
             }
-            if ((this.f33425o & 32) == 32) {
-                i10 += CodedOutputStream.computeInt32Size(6, this.f33431u);
+            if ((this.f33647o & 32) == 32) {
+                i10 += CodedOutputStream.computeInt32Size(6, this.f33653u);
             }
-            int j10 = i10 + j() + this.f33424i.size();
-            this.f33433w = j10;
+            int j10 = i10 + j() + this.f33646i.size();
+            this.f33655w = j10;
             return j10;
         }
 
         public Type getType() {
-            return this.f33428r;
+            return this.f33650r;
         }
 
         public int getTypeId() {
-            return this.f33429s;
+            return this.f33651s;
         }
 
         public Type getVarargElementType() {
-            return this.f33430t;
+            return this.f33652t;
         }
 
         public int getVarargElementTypeId() {
-            return this.f33431u;
+            return this.f33653u;
         }
 
         public boolean hasFlags() {
-            if ((this.f33425o & 1) == 1) {
+            if ((this.f33647o & 1) == 1) {
                 return true;
             }
             return false;
         }
 
         public boolean hasName() {
-            if ((this.f33425o & 2) == 2) {
+            if ((this.f33647o & 2) == 2) {
                 return true;
             }
             return false;
         }
 
         public boolean hasType() {
-            if ((this.f33425o & 4) == 4) {
+            if ((this.f33647o & 4) == 4) {
                 return true;
             }
             return false;
         }
 
         public boolean hasTypeId() {
-            if ((this.f33425o & 8) == 8) {
+            if ((this.f33647o & 8) == 8) {
                 return true;
             }
             return false;
         }
 
         public boolean hasVarargElementType() {
-            if ((this.f33425o & 16) == 16) {
+            if ((this.f33647o & 16) == 16) {
                 return true;
             }
             return false;
         }
 
         public boolean hasVarargElementTypeId() {
-            if ((this.f33425o & 32) == 32) {
+            if ((this.f33647o & 32) == 32) {
                 return true;
             }
             return false;
@@ -15525,7 +15525,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33432v;
+            byte b10 = this.f33654v;
             if (b10 == 1) {
                 return true;
             }
@@ -15533,19 +15533,19 @@ public final class ProtoBuf {
                 return false;
             }
             if (!hasName()) {
-                this.f33432v = (byte) 0;
+                this.f33654v = (byte) 0;
                 return false;
             } else if (hasType() && !getType().isInitialized()) {
-                this.f33432v = (byte) 0;
+                this.f33654v = (byte) 0;
                 return false;
             } else if (hasVarargElementType() && !getVarargElementType().isInitialized()) {
-                this.f33432v = (byte) 0;
+                this.f33654v = (byte) 0;
                 return false;
             } else if (!i()) {
-                this.f33432v = (byte) 0;
+                this.f33654v = (byte) 0;
                 return false;
             } else {
-                this.f33432v = (byte) 1;
+                this.f33654v = (byte) 1;
                 return true;
             }
         }
@@ -15554,26 +15554,26 @@ public final class ProtoBuf {
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
             GeneratedMessageLite.ExtendableMessage.ExtensionWriter k10 = k();
-            if ((this.f33425o & 1) == 1) {
-                codedOutputStream.writeInt32(1, this.f33426p);
+            if ((this.f33647o & 1) == 1) {
+                codedOutputStream.writeInt32(1, this.f33648p);
             }
-            if ((this.f33425o & 2) == 2) {
-                codedOutputStream.writeInt32(2, this.f33427q);
+            if ((this.f33647o & 2) == 2) {
+                codedOutputStream.writeInt32(2, this.f33649q);
             }
-            if ((this.f33425o & 4) == 4) {
-                codedOutputStream.writeMessage(3, this.f33428r);
+            if ((this.f33647o & 4) == 4) {
+                codedOutputStream.writeMessage(3, this.f33650r);
             }
-            if ((this.f33425o & 16) == 16) {
-                codedOutputStream.writeMessage(4, this.f33430t);
+            if ((this.f33647o & 16) == 16) {
+                codedOutputStream.writeMessage(4, this.f33652t);
             }
-            if ((this.f33425o & 8) == 8) {
-                codedOutputStream.writeInt32(5, this.f33429s);
+            if ((this.f33647o & 8) == 8) {
+                codedOutputStream.writeInt32(5, this.f33651s);
             }
-            if ((this.f33425o & 32) == 32) {
-                codedOutputStream.writeInt32(6, this.f33431u);
+            if ((this.f33647o & 32) == 32) {
+                codedOutputStream.writeInt32(6, this.f33653u);
             }
             k10.writeUntil(h.DEFAULT_DRAG_ANIMATION_DURATION, codedOutputStream);
-            codedOutputStream.writeRawBytes(this.f33424i);
+            codedOutputStream.writeRawBytes(this.f33646i);
         }
 
         public static Builder newBuilder(ValueParameter valueParameter) {
@@ -15582,7 +15582,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public ValueParameter getDefaultInstanceForType() {
-            return f33423x;
+            return f33645x;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -15597,21 +15597,21 @@ public final class ProtoBuf {
 
         private ValueParameter(GeneratedMessageLite.ExtendableBuilder extendableBuilder) {
             super(extendableBuilder);
-            this.f33432v = (byte) -1;
-            this.f33433w = -1;
-            this.f33424i = extendableBuilder.getUnknownFields();
+            this.f33654v = (byte) -1;
+            this.f33655w = -1;
+            this.f33646i = extendableBuilder.getUnknownFields();
         }
 
         private ValueParameter(boolean z10) {
-            this.f33432v = (byte) -1;
-            this.f33433w = -1;
-            this.f33424i = ByteString.EMPTY;
+            this.f33654v = (byte) -1;
+            this.f33655w = -1;
+            this.f33646i = ByteString.EMPTY;
         }
 
         private ValueParameter(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
             Type.Builder builder;
-            this.f33432v = (byte) -1;
-            this.f33433w = -1;
+            this.f33654v = (byte) -1;
+            this.f33655w = -1;
             u();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -15622,40 +15622,40 @@ public final class ProtoBuf {
                         int readTag = codedInputStream.readTag();
                         if (readTag != 0) {
                             if (readTag == 8) {
-                                this.f33425o |= 1;
-                                this.f33426p = codedInputStream.readInt32();
+                                this.f33647o |= 1;
+                                this.f33648p = codedInputStream.readInt32();
                             } else if (readTag != 16) {
                                 if (readTag == 26) {
-                                    builder = (this.f33425o & 4) == 4 ? this.f33428r.toBuilder() : null;
+                                    builder = (this.f33647o & 4) == 4 ? this.f33650r.toBuilder() : null;
                                     Type type = (Type) codedInputStream.readMessage(Type.PARSER, extensionRegistryLite);
-                                    this.f33428r = type;
+                                    this.f33650r = type;
                                     if (builder != null) {
                                         builder.mergeFrom(type);
-                                        this.f33428r = builder.buildPartial();
+                                        this.f33650r = builder.buildPartial();
                                     }
-                                    this.f33425o |= 4;
+                                    this.f33647o |= 4;
                                 } else if (readTag == 34) {
-                                    builder = (this.f33425o & 16) == 16 ? this.f33430t.toBuilder() : null;
+                                    builder = (this.f33647o & 16) == 16 ? this.f33652t.toBuilder() : null;
                                     Type type2 = (Type) codedInputStream.readMessage(Type.PARSER, extensionRegistryLite);
-                                    this.f33430t = type2;
+                                    this.f33652t = type2;
                                     if (builder != null) {
                                         builder.mergeFrom(type2);
-                                        this.f33430t = builder.buildPartial();
+                                        this.f33652t = builder.buildPartial();
                                     }
-                                    this.f33425o |= 16;
+                                    this.f33647o |= 16;
                                 } else if (readTag == 40) {
-                                    this.f33425o |= 8;
-                                    this.f33429s = codedInputStream.readInt32();
+                                    this.f33647o |= 8;
+                                    this.f33651s = codedInputStream.readInt32();
                                 } else if (readTag != 48) {
                                     if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                     }
                                 } else {
-                                    this.f33425o |= 32;
-                                    this.f33431u = codedInputStream.readInt32();
+                                    this.f33647o |= 32;
+                                    this.f33653u = codedInputStream.readInt32();
                                 }
                             } else {
-                                this.f33425o |= 2;
-                                this.f33427q = codedInputStream.readInt32();
+                                this.f33647o |= 2;
+                                this.f33649q = codedInputStream.readInt32();
                             }
                         }
                         z10 = true;
@@ -15664,10 +15664,10 @@ public final class ProtoBuf {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33424i = newOutput.toByteString();
+                            this.f33646i = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33424i = newOutput.toByteString();
+                        this.f33646i = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -15681,10 +15681,10 @@ public final class ProtoBuf {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33424i = newOutput.toByteString();
+                this.f33646i = newOutput.toByteString();
                 throw th4;
             }
-            this.f33424i = newOutput.toByteString();
+            this.f33646i = newOutput.toByteString();
             e();
         }
     }
@@ -15698,61 +15698,61 @@ public final class ProtoBuf {
         public static Parser<VersionRequirement> PARSER = new a();
 
         /* renamed from: w  reason: collision with root package name */
-        private static final VersionRequirement f33441w;
+        private static final VersionRequirement f33663w;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33442e;
+        private final ByteString f33664e;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f33443i;
+        private int f33665i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f33444o;
+        private int f33666o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33445p;
+        private int f33667p;
 
         /* renamed from: q  reason: collision with root package name */
-        private Level f33446q;
+        private Level f33668q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f33447r;
+        private int f33669r;
 
         /* renamed from: s  reason: collision with root package name */
-        private int f33448s;
+        private int f33670s;
 
         /* renamed from: t  reason: collision with root package name */
-        private VersionKind f33449t;
+        private VersionKind f33671t;
 
         /* renamed from: u  reason: collision with root package name */
-        private byte f33450u;
+        private byte f33672u;
 
         /* renamed from: v  reason: collision with root package name */
-        private int f33451v;
+        private int f33673v;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.Builder<VersionRequirement, Builder> implements VersionRequirementOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33452e;
+            private int f33674e;
 
             /* renamed from: i  reason: collision with root package name */
-            private int f33453i;
+            private int f33675i;
 
             /* renamed from: o  reason: collision with root package name */
-            private int f33454o;
+            private int f33676o;
 
             /* renamed from: q  reason: collision with root package name */
-            private int f33456q;
+            private int f33678q;
 
             /* renamed from: r  reason: collision with root package name */
-            private int f33457r;
+            private int f33679r;
 
             /* renamed from: p  reason: collision with root package name */
-            private Level f33455p = Level.ERROR;
+            private Level f33677p = Level.ERROR;
 
             /* renamed from: s  reason: collision with root package name */
-            private VersionKind f33458s = VersionKind.LANGUAGE_VERSION;
+            private VersionKind f33680s = VersionKind.LANGUAGE_VERSION;
 
             private Builder() {
                 d();
@@ -15771,33 +15771,33 @@ public final class ProtoBuf {
 
             public VersionRequirement buildPartial() {
                 VersionRequirement versionRequirement = new VersionRequirement(this);
-                int i10 = this.f33452e;
+                int i10 = this.f33674e;
                 int i11 = 1;
                 if ((i10 & 1) != 1) {
                     i11 = 0;
                 }
-                versionRequirement.f33444o = this.f33453i;
+                versionRequirement.f33666o = this.f33675i;
                 if ((i10 & 2) == 2) {
                     i11 |= 2;
                 }
-                versionRequirement.f33445p = this.f33454o;
+                versionRequirement.f33667p = this.f33676o;
                 if ((i10 & 4) == 4) {
                     i11 |= 4;
                 }
-                versionRequirement.f33446q = this.f33455p;
+                versionRequirement.f33668q = this.f33677p;
                 if ((i10 & 8) == 8) {
                     i11 |= 8;
                 }
-                versionRequirement.f33447r = this.f33456q;
+                versionRequirement.f33669r = this.f33678q;
                 if ((i10 & 16) == 16) {
                     i11 |= 16;
                 }
-                versionRequirement.f33448s = this.f33457r;
+                versionRequirement.f33670s = this.f33679r;
                 if ((i10 & 32) == 32) {
                     i11 |= 32;
                 }
-                versionRequirement.f33449t = this.f33458s;
-                versionRequirement.f33443i = i11;
+                versionRequirement.f33671t = this.f33680s;
+                versionRequirement.f33665i = i11;
                 return versionRequirement;
             }
 
@@ -15807,40 +15807,40 @@ public final class ProtoBuf {
             }
 
             public Builder setErrorCode(int i10) {
-                this.f33452e |= 8;
-                this.f33456q = i10;
+                this.f33674e |= 8;
+                this.f33678q = i10;
                 return this;
             }
 
             public Builder setLevel(Level level) {
                 level.getClass();
-                this.f33452e |= 4;
-                this.f33455p = level;
+                this.f33674e |= 4;
+                this.f33677p = level;
                 return this;
             }
 
             public Builder setMessage(int i10) {
-                this.f33452e |= 16;
-                this.f33457r = i10;
+                this.f33674e |= 16;
+                this.f33679r = i10;
                 return this;
             }
 
             public Builder setVersion(int i10) {
-                this.f33452e |= 1;
-                this.f33453i = i10;
+                this.f33674e |= 1;
+                this.f33675i = i10;
                 return this;
             }
 
             public Builder setVersionFull(int i10) {
-                this.f33452e |= 2;
-                this.f33454o = i10;
+                this.f33674e |= 2;
+                this.f33676o = i10;
                 return this;
             }
 
             public Builder setVersionKind(VersionKind versionKind) {
                 versionKind.getClass();
-                this.f33452e |= 32;
-                this.f33458s = versionKind;
+                this.f33674e |= 32;
+                this.f33680s = versionKind;
                 return this;
             }
 
@@ -15886,7 +15886,7 @@ public final class ProtoBuf {
                 if (versionRequirement.hasVersionKind()) {
                     setVersionKind(versionRequirement.getVersionKind());
                 }
-                setUnknownFields(getUnknownFields().concat(versionRequirement.f33442e));
+                setUnknownFields(getUnknownFields().concat(versionRequirement.f33664e));
                 return this;
             }
 
@@ -15936,10 +15936,10 @@ public final class ProtoBuf {
             
 
             /* renamed from: e  reason: collision with root package name */
-            private static Internal.EnumLiteMap f33459e = new a();
+            private static Internal.EnumLiteMap f33681e = new a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final int f33461d;
+            private final int f33683d;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
             static class a implements Internal.EnumLiteMap {
@@ -15954,12 +15954,12 @@ public final class ProtoBuf {
             }
 
             Level(int i10, int i11) {
-                this.f33461d = i11;
+                this.f33683d = i11;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
             public final int getNumber() {
-                return this.f33461d;
+                return this.f33683d;
             }
 
             public static Level valueOf(int i10) {
@@ -15984,10 +15984,10 @@ public final class ProtoBuf {
             
 
             /* renamed from: e  reason: collision with root package name */
-            private static Internal.EnumLiteMap f33462e = new a();
+            private static Internal.EnumLiteMap f33684e = new a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final int f33464d;
+            private final int f33686d;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
             static class a implements Internal.EnumLiteMap {
@@ -16002,12 +16002,12 @@ public final class ProtoBuf {
             }
 
             VersionKind(int i10, int i11) {
-                this.f33464d = i11;
+                this.f33686d = i11;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
             public final int getNumber() {
-                return this.f33464d;
+                return this.f33686d;
             }
 
             public static VersionKind valueOf(int i10) {
@@ -16038,12 +16038,12 @@ public final class ProtoBuf {
 
         static {
             VersionRequirement versionRequirement = new VersionRequirement(true);
-            f33441w = versionRequirement;
+            f33663w = versionRequirement;
             versionRequirement.p();
         }
 
         public static VersionRequirement getDefaultInstance() {
-            return f33441w;
+            return f33663w;
         }
 
         public static Builder newBuilder() {
@@ -16051,24 +16051,24 @@ public final class ProtoBuf {
         }
 
         private void p() {
-            this.f33444o = 0;
-            this.f33445p = 0;
-            this.f33446q = Level.ERROR;
-            this.f33447r = 0;
-            this.f33448s = 0;
-            this.f33449t = VersionKind.LANGUAGE_VERSION;
+            this.f33666o = 0;
+            this.f33667p = 0;
+            this.f33668q = Level.ERROR;
+            this.f33669r = 0;
+            this.f33670s = 0;
+            this.f33671t = VersionKind.LANGUAGE_VERSION;
         }
 
         public int getErrorCode() {
-            return this.f33447r;
+            return this.f33669r;
         }
 
         public Level getLevel() {
-            return this.f33446q;
+            return this.f33668q;
         }
 
         public int getMessage() {
-            return this.f33448s;
+            return this.f33670s;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite, kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -16079,84 +16079,84 @@ public final class ProtoBuf {
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
             int i10;
-            int i11 = this.f33451v;
+            int i11 = this.f33673v;
             if (i11 != -1) {
                 return i11;
             }
-            if ((this.f33443i & 1) == 1) {
-                i10 = CodedOutputStream.computeInt32Size(1, this.f33444o);
+            if ((this.f33665i & 1) == 1) {
+                i10 = CodedOutputStream.computeInt32Size(1, this.f33666o);
             } else {
                 i10 = 0;
             }
-            if ((this.f33443i & 2) == 2) {
-                i10 += CodedOutputStream.computeInt32Size(2, this.f33445p);
+            if ((this.f33665i & 2) == 2) {
+                i10 += CodedOutputStream.computeInt32Size(2, this.f33667p);
             }
-            if ((this.f33443i & 4) == 4) {
-                i10 += CodedOutputStream.computeEnumSize(3, this.f33446q.getNumber());
+            if ((this.f33665i & 4) == 4) {
+                i10 += CodedOutputStream.computeEnumSize(3, this.f33668q.getNumber());
             }
-            if ((this.f33443i & 8) == 8) {
-                i10 += CodedOutputStream.computeInt32Size(4, this.f33447r);
+            if ((this.f33665i & 8) == 8) {
+                i10 += CodedOutputStream.computeInt32Size(4, this.f33669r);
             }
-            if ((this.f33443i & 16) == 16) {
-                i10 += CodedOutputStream.computeInt32Size(5, this.f33448s);
+            if ((this.f33665i & 16) == 16) {
+                i10 += CodedOutputStream.computeInt32Size(5, this.f33670s);
             }
-            if ((this.f33443i & 32) == 32) {
-                i10 += CodedOutputStream.computeEnumSize(6, this.f33449t.getNumber());
+            if ((this.f33665i & 32) == 32) {
+                i10 += CodedOutputStream.computeEnumSize(6, this.f33671t.getNumber());
             }
-            int size = i10 + this.f33442e.size();
-            this.f33451v = size;
+            int size = i10 + this.f33664e.size();
+            this.f33673v = size;
             return size;
         }
 
         public int getVersion() {
-            return this.f33444o;
+            return this.f33666o;
         }
 
         public int getVersionFull() {
-            return this.f33445p;
+            return this.f33667p;
         }
 
         public VersionKind getVersionKind() {
-            return this.f33449t;
+            return this.f33671t;
         }
 
         public boolean hasErrorCode() {
-            if ((this.f33443i & 8) == 8) {
+            if ((this.f33665i & 8) == 8) {
                 return true;
             }
             return false;
         }
 
         public boolean hasLevel() {
-            if ((this.f33443i & 4) == 4) {
+            if ((this.f33665i & 4) == 4) {
                 return true;
             }
             return false;
         }
 
         public boolean hasMessage() {
-            if ((this.f33443i & 16) == 16) {
+            if ((this.f33665i & 16) == 16) {
                 return true;
             }
             return false;
         }
 
         public boolean hasVersion() {
-            if ((this.f33443i & 1) == 1) {
+            if ((this.f33665i & 1) == 1) {
                 return true;
             }
             return false;
         }
 
         public boolean hasVersionFull() {
-            if ((this.f33443i & 2) == 2) {
+            if ((this.f33665i & 2) == 2) {
                 return true;
             }
             return false;
         }
 
         public boolean hasVersionKind() {
-            if ((this.f33443i & 32) == 32) {
+            if ((this.f33665i & 32) == 32) {
                 return true;
             }
             return false;
@@ -16164,39 +16164,39 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33450u;
+            byte b10 = this.f33672u;
             if (b10 == 1) {
                 return true;
             }
             if (b10 == 0) {
                 return false;
             }
-            this.f33450u = (byte) 1;
+            this.f33672u = (byte) 1;
             return true;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            if ((this.f33443i & 1) == 1) {
-                codedOutputStream.writeInt32(1, this.f33444o);
+            if ((this.f33665i & 1) == 1) {
+                codedOutputStream.writeInt32(1, this.f33666o);
             }
-            if ((this.f33443i & 2) == 2) {
-                codedOutputStream.writeInt32(2, this.f33445p);
+            if ((this.f33665i & 2) == 2) {
+                codedOutputStream.writeInt32(2, this.f33667p);
             }
-            if ((this.f33443i & 4) == 4) {
-                codedOutputStream.writeEnum(3, this.f33446q.getNumber());
+            if ((this.f33665i & 4) == 4) {
+                codedOutputStream.writeEnum(3, this.f33668q.getNumber());
             }
-            if ((this.f33443i & 8) == 8) {
-                codedOutputStream.writeInt32(4, this.f33447r);
+            if ((this.f33665i & 8) == 8) {
+                codedOutputStream.writeInt32(4, this.f33669r);
             }
-            if ((this.f33443i & 16) == 16) {
-                codedOutputStream.writeInt32(5, this.f33448s);
+            if ((this.f33665i & 16) == 16) {
+                codedOutputStream.writeInt32(5, this.f33670s);
             }
-            if ((this.f33443i & 32) == 32) {
-                codedOutputStream.writeEnum(6, this.f33449t.getNumber());
+            if ((this.f33665i & 32) == 32) {
+                codedOutputStream.writeEnum(6, this.f33671t.getNumber());
             }
-            codedOutputStream.writeRawBytes(this.f33442e);
+            codedOutputStream.writeRawBytes(this.f33664e);
         }
 
         public static Builder newBuilder(VersionRequirement versionRequirement) {
@@ -16205,7 +16205,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public VersionRequirement getDefaultInstanceForType() {
-            return f33441w;
+            return f33663w;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -16220,20 +16220,20 @@ public final class ProtoBuf {
 
         private VersionRequirement(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33450u = (byte) -1;
-            this.f33451v = -1;
-            this.f33442e = builder.getUnknownFields();
+            this.f33672u = (byte) -1;
+            this.f33673v = -1;
+            this.f33664e = builder.getUnknownFields();
         }
 
         private VersionRequirement(boolean z10) {
-            this.f33450u = (byte) -1;
-            this.f33451v = -1;
-            this.f33442e = ByteString.EMPTY;
+            this.f33672u = (byte) -1;
+            this.f33673v = -1;
+            this.f33664e = ByteString.EMPTY;
         }
 
         private VersionRequirement(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33450u = (byte) -1;
-            this.f33451v = -1;
+            this.f33672u = (byte) -1;
+            this.f33673v = -1;
             p();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -16244,11 +16244,11 @@ public final class ProtoBuf {
                         int readTag = codedInputStream.readTag();
                         if (readTag != 0) {
                             if (readTag == 8) {
-                                this.f33443i |= 1;
-                                this.f33444o = codedInputStream.readInt32();
+                                this.f33665i |= 1;
+                                this.f33666o = codedInputStream.readInt32();
                             } else if (readTag == 16) {
-                                this.f33443i |= 2;
-                                this.f33445p = codedInputStream.readInt32();
+                                this.f33665i |= 2;
+                                this.f33667p = codedInputStream.readInt32();
                             } else if (readTag == 24) {
                                 int readEnum = codedInputStream.readEnum();
                                 Level valueOf = Level.valueOf(readEnum);
@@ -16256,15 +16256,15 @@ public final class ProtoBuf {
                                     newInstance.writeRawVarint32(readTag);
                                     newInstance.writeRawVarint32(readEnum);
                                 } else {
-                                    this.f33443i |= 4;
-                                    this.f33446q = valueOf;
+                                    this.f33665i |= 4;
+                                    this.f33668q = valueOf;
                                 }
                             } else if (readTag == 32) {
-                                this.f33443i |= 8;
-                                this.f33447r = codedInputStream.readInt32();
+                                this.f33665i |= 8;
+                                this.f33669r = codedInputStream.readInt32();
                             } else if (readTag == 40) {
-                                this.f33443i |= 16;
-                                this.f33448s = codedInputStream.readInt32();
+                                this.f33665i |= 16;
+                                this.f33670s = codedInputStream.readInt32();
                             } else if (readTag != 48) {
                                 if (!f(codedInputStream, newInstance, extensionRegistryLite, readTag)) {
                                 }
@@ -16275,8 +16275,8 @@ public final class ProtoBuf {
                                     newInstance.writeRawVarint32(readTag);
                                     newInstance.writeRawVarint32(readEnum2);
                                 } else {
-                                    this.f33443i |= 32;
-                                    this.f33449t = valueOf2;
+                                    this.f33665i |= 32;
+                                    this.f33671t = valueOf2;
                                 }
                             }
                         }
@@ -16286,10 +16286,10 @@ public final class ProtoBuf {
                             newInstance.flush();
                         } catch (IOException unused) {
                         } catch (Throwable th3) {
-                            this.f33442e = newOutput.toByteString();
+                            this.f33664e = newOutput.toByteString();
                             throw th3;
                         }
-                        this.f33442e = newOutput.toByteString();
+                        this.f33664e = newOutput.toByteString();
                         e();
                         throw th2;
                     }
@@ -16303,10 +16303,10 @@ public final class ProtoBuf {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33442e = newOutput.toByteString();
+                this.f33664e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33442e = newOutput.toByteString();
+            this.f33664e = newOutput.toByteString();
             e();
         }
     }
@@ -16320,28 +16320,28 @@ public final class ProtoBuf {
         public static Parser<VersionRequirementTable> PARSER = new a();
 
         /* renamed from: q  reason: collision with root package name */
-        private static final VersionRequirementTable f33465q;
+        private static final VersionRequirementTable f33687q;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ByteString f33466e;
+        private final ByteString f33688e;
 
         /* renamed from: i  reason: collision with root package name */
-        private List f33467i;
+        private List f33689i;
 
         /* renamed from: o  reason: collision with root package name */
-        private byte f33468o;
+        private byte f33690o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33469p;
+        private int f33691p;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class Builder extends GeneratedMessageLite.Builder<VersionRequirementTable, Builder> implements VersionRequirementTableOrBuilder {
 
             /* renamed from: e  reason: collision with root package name */
-            private int f33470e;
+            private int f33692e;
 
             /* renamed from: i  reason: collision with root package name */
-            private List f33471i = Collections.EMPTY_LIST;
+            private List f33693i = Collections.EMPTY_LIST;
 
             private Builder() {
                 e();
@@ -16356,9 +16356,9 @@ public final class ProtoBuf {
             }
 
             private void d() {
-                if ((this.f33470e & 1) != 1) {
-                    this.f33471i = new ArrayList(this.f33471i);
-                    this.f33470e |= 1;
+                if ((this.f33692e & 1) != 1) {
+                    this.f33693i = new ArrayList(this.f33693i);
+                    this.f33692e |= 1;
                 }
             }
 
@@ -16367,11 +16367,11 @@ public final class ProtoBuf {
 
             public VersionRequirementTable buildPartial() {
                 VersionRequirementTable versionRequirementTable = new VersionRequirementTable(this);
-                if ((this.f33470e & 1) == 1) {
-                    this.f33471i = Collections.unmodifiableList(this.f33471i);
-                    this.f33470e &= -2;
+                if ((this.f33692e & 1) == 1) {
+                    this.f33693i = Collections.unmodifiableList(this.f33693i);
+                    this.f33692e &= -2;
                 }
-                versionRequirementTable.f33467i = this.f33471i;
+                versionRequirementTable.f33689i = this.f33693i;
                 return versionRequirementTable;
             }
 
@@ -16404,16 +16404,16 @@ public final class ProtoBuf {
                 if (versionRequirementTable == VersionRequirementTable.getDefaultInstance()) {
                     return this;
                 }
-                if (!versionRequirementTable.f33467i.isEmpty()) {
-                    if (this.f33471i.isEmpty()) {
-                        this.f33471i = versionRequirementTable.f33467i;
-                        this.f33470e &= -2;
+                if (!versionRequirementTable.f33689i.isEmpty()) {
+                    if (this.f33693i.isEmpty()) {
+                        this.f33693i = versionRequirementTable.f33689i;
+                        this.f33692e &= -2;
                     } else {
                         d();
-                        this.f33471i.addAll(versionRequirementTable.f33467i);
+                        this.f33693i.addAll(versionRequirementTable.f33689i);
                     }
                 }
-                setUnknownFields(getUnknownFields().concat(versionRequirementTable.f33466e));
+                setUnknownFields(getUnknownFields().concat(versionRequirementTable.f33688e));
                 return this;
             }
 
@@ -16469,16 +16469,16 @@ public final class ProtoBuf {
 
         static {
             VersionRequirementTable versionRequirementTable = new VersionRequirementTable(true);
-            f33465q = versionRequirementTable;
+            f33687q = versionRequirementTable;
             versionRequirementTable.k();
         }
 
         public static VersionRequirementTable getDefaultInstance() {
-            return f33465q;
+            return f33687q;
         }
 
         private void k() {
-            this.f33467i = Collections.EMPTY_LIST;
+            this.f33689i = Collections.EMPTY_LIST;
         }
 
         public static Builder newBuilder() {
@@ -16491,48 +16491,48 @@ public final class ProtoBuf {
         }
 
         public int getRequirementCount() {
-            return this.f33467i.size();
+            return this.f33689i.size();
         }
 
         public List<VersionRequirement> getRequirementList() {
-            return this.f33467i;
+            return this.f33689i;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public int getSerializedSize() {
-            int i10 = this.f33469p;
+            int i10 = this.f33691p;
             if (i10 != -1) {
                 return i10;
             }
             int i11 = 0;
-            for (int i12 = 0; i12 < this.f33467i.size(); i12++) {
-                i11 += CodedOutputStream.computeMessageSize(1, (MessageLite) this.f33467i.get(i12));
+            for (int i12 = 0; i12 < this.f33689i.size(); i12++) {
+                i11 += CodedOutputStream.computeMessageSize(1, (MessageLite) this.f33689i.get(i12));
             }
-            int size = i11 + this.f33466e.size();
-            this.f33469p = size;
+            int size = i11 + this.f33688e.size();
+            this.f33691p = size;
             return size;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public final boolean isInitialized() {
-            byte b10 = this.f33468o;
+            byte b10 = this.f33690o;
             if (b10 == 1) {
                 return true;
             }
             if (b10 == 0) {
                 return false;
             }
-            this.f33468o = (byte) 1;
+            this.f33690o = (byte) 1;
             return true;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
         public void writeTo(CodedOutputStream codedOutputStream) {
             getSerializedSize();
-            for (int i10 = 0; i10 < this.f33467i.size(); i10++) {
-                codedOutputStream.writeMessage(1, (MessageLite) this.f33467i.get(i10));
+            for (int i10 = 0; i10 < this.f33689i.size(); i10++) {
+                codedOutputStream.writeMessage(1, (MessageLite) this.f33689i.get(i10));
             }
-            codedOutputStream.writeRawBytes(this.f33466e);
+            codedOutputStream.writeRawBytes(this.f33688e);
         }
 
         public static Builder newBuilder(VersionRequirementTable versionRequirementTable) {
@@ -16541,7 +16541,7 @@ public final class ProtoBuf {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public VersionRequirementTable getDefaultInstanceForType() {
-            return f33465q;
+            return f33687q;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLite
@@ -16556,20 +16556,20 @@ public final class ProtoBuf {
 
         private VersionRequirementTable(GeneratedMessageLite.Builder builder) {
             super(builder);
-            this.f33468o = (byte) -1;
-            this.f33469p = -1;
-            this.f33466e = builder.getUnknownFields();
+            this.f33690o = (byte) -1;
+            this.f33691p = -1;
+            this.f33688e = builder.getUnknownFields();
         }
 
         private VersionRequirementTable(boolean z10) {
-            this.f33468o = (byte) -1;
-            this.f33469p = -1;
-            this.f33466e = ByteString.EMPTY;
+            this.f33690o = (byte) -1;
+            this.f33691p = -1;
+            this.f33688e = ByteString.EMPTY;
         }
 
         private VersionRequirementTable(CodedInputStream codedInputStream, ExtensionRegistryLite extensionRegistryLite) {
-            this.f33468o = (byte) -1;
-            this.f33469p = -1;
+            this.f33690o = (byte) -1;
+            this.f33691p = -1;
             k();
             ByteString.Output newOutput = ByteString.newOutput();
             CodedOutputStream newInstance = CodedOutputStream.newInstance(newOutput, 1);
@@ -16586,10 +16586,10 @@ public final class ProtoBuf {
                                     }
                                 } else {
                                     if (!z11) {
-                                        this.f33467i = new ArrayList();
+                                        this.f33689i = new ArrayList();
                                         z11 = true;
                                     }
-                                    this.f33467i.add(codedInputStream.readMessage(VersionRequirement.PARSER, extensionRegistryLite));
+                                    this.f33689i.add(codedInputStream.readMessage(VersionRequirement.PARSER, extensionRegistryLite));
                                 }
                             }
                             z10 = true;
@@ -16601,31 +16601,31 @@ public final class ProtoBuf {
                     }
                 } catch (Throwable th2) {
                     if (z11) {
-                        this.f33467i = Collections.unmodifiableList(this.f33467i);
+                        this.f33689i = Collections.unmodifiableList(this.f33689i);
                     }
                     try {
                         newInstance.flush();
                     } catch (IOException unused) {
                     } catch (Throwable th3) {
-                        this.f33466e = newOutput.toByteString();
+                        this.f33688e = newOutput.toByteString();
                         throw th3;
                     }
-                    this.f33466e = newOutput.toByteString();
+                    this.f33688e = newOutput.toByteString();
                     e();
                     throw th2;
                 }
             }
             if (z11) {
-                this.f33467i = Collections.unmodifiableList(this.f33467i);
+                this.f33689i = Collections.unmodifiableList(this.f33689i);
             }
             try {
                 newInstance.flush();
             } catch (IOException unused2) {
             } catch (Throwable th4) {
-                this.f33466e = newOutput.toByteString();
+                this.f33688e = newOutput.toByteString();
                 throw th4;
             }
-            this.f33466e = newOutput.toByteString();
+            this.f33688e = newOutput.toByteString();
             e();
         }
     }
@@ -16645,10 +16645,10 @@ public final class ProtoBuf {
         
 
         /* renamed from: e  reason: collision with root package name */
-        private static Internal.EnumLiteMap f33472e = new a();
+        private static Internal.EnumLiteMap f33694e = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f33474d;
+        private final int f33696d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         static class a implements Internal.EnumLiteMap {
@@ -16663,12 +16663,12 @@ public final class ProtoBuf {
         }
 
         Visibility(int i10, int i11) {
-            this.f33474d = i11;
+            this.f33696d = i11;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.Internal.EnumLite
         public final int getNumber() {
-            return this.f33474d;
+            return this.f33696d;
         }
 
         public static Visibility valueOf(int i10) {

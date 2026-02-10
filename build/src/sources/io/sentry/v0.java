@@ -22,13 +22,13 @@ public interface v0 {
 
     void i(e8 e8Var, IScope iScope);
 
-    void j(io.sentry.protocol.h0 h0Var);
+    void j(io.sentry.protocol.c cVar);
 
-    void k(io.sentry.protocol.c cVar);
+    void k(io.sentry.protocol.h0 h0Var);
 
     void l(Map map);
 
     void m(String str);
 
-    void o(io.sentry.protocol.x xVar);
+    void p(io.sentry.protocol.x xVar);
 }

@@ -6,21 +6,21 @@ import android.os.Looper;
 public abstract class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private static volatile Handler f6299a;
+    private static volatile Handler f6403a;
 
     public static Handler a() {
-        if (f6299a != null) {
-            return f6299a;
+        if (f6403a != null) {
+            return f6403a;
         }
         synchronized (l.class) {
             try {
-                if (f6299a == null) {
-                    f6299a = w1.g.a(Looper.getMainLooper());
+                if (f6403a == null) {
+                    f6403a = w1.g.a(Looper.getMainLooper());
                 }
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        return f6299a;
+        return f6403a;
     }
 }

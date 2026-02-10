@@ -20,6 +20,7 @@ public class RNSScreenManagerDelegate<T extends View, U extends BaseViewManager<
     @Override // com.facebook.react.uimanager.BaseViewManagerDelegate, com.facebook.react.uimanager.ViewManagerDelegate
     public void setProperty(T t10, String str, Object obj) {
         char c10;
+        String str2;
         int intValue;
         str.getClass();
         int i10 = 24;
@@ -37,221 +38,285 @@ public class RNSScreenManagerDelegate<T extends View, U extends BaseViewManager<
         boolean z20 = false;
         boolean z21 = false;
         boolean z22 = false;
+        boolean z23 = false;
         int i12 = -1;
         switch (str.hashCode()) {
+            case -2035671681:
+                if (str.equals("synchronousShadowStateUpdatesEnabled")) {
+                    c10 = 0;
+                    break;
+                }
+                c10 = 65535;
+                break;
+            case -1991728986:
+                if (str.equals("bottomScrollEdgeEffect")) {
+                    c10 = 1;
+                    break;
+                }
+                c10 = 65535;
+                break;
             case -1937389126:
                 if (str.equals("homeIndicatorHidden")) {
-                    c10 = 0;
+                    c10 = 2;
+                    break;
+                }
+                c10 = 65535;
+                break;
+            case -1871891504:
+                if (str.equals("topScrollEdgeEffect")) {
+                    c10 = 3;
                     break;
                 }
                 c10 = 65535;
                 break;
             case -1853558344:
                 if (str.equals("gestureEnabled")) {
-                    c10 = 1;
+                    c10 = 4;
+                    break;
+                }
+                c10 = 65535;
+                break;
+            case -1791070590:
+                if (str.equals("leftScrollEdgeEffect")) {
+                    c10 = 5;
                     break;
                 }
                 c10 = 65535;
                 break;
             case -1734097646:
                 if (str.equals("hideKeyboardOnSwipe")) {
-                    c10 = 2;
+                    c10 = 6;
+                    break;
+                }
+                c10 = 65535;
+                break;
+            case -1628518761:
+                if (str.equals("rightScrollEdgeEffect")) {
+                    c10 = 7;
                     break;
                 }
                 c10 = 65535;
                 break;
             case -1349152186:
                 if (str.equals("sheetCornerRadius")) {
-                    c10 = 3;
+                    c10 = '\b';
                     break;
                 }
                 c10 = 65535;
                 break;
             case -1322084375:
                 if (str.equals("navigationBarHidden")) {
-                    c10 = 4;
+                    c10 = '\t';
                     break;
                 }
                 c10 = 65535;
                 break;
             case -1156137512:
                 if (str.equals("statusBarTranslucent")) {
-                    c10 = 5;
+                    c10 = '\n';
                     break;
                 }
                 c10 = 65535;
                 break;
             case -1150711358:
                 if (str.equals("stackPresentation")) {
-                    c10 = 6;
+                    c10 = 11;
                     break;
                 }
                 c10 = 65535;
                 break;
             case -1047235902:
                 if (str.equals("activityState")) {
-                    c10 = 7;
+                    c10 = '\f';
                     break;
                 }
                 c10 = 65535;
                 break;
             case -973702878:
                 if (str.equals("statusBarColor")) {
-                    c10 = '\b';
+                    c10 = '\r';
                     break;
                 }
                 c10 = 65535;
                 break;
             case -958765200:
                 if (str.equals("statusBarStyle")) {
-                    c10 = '\t';
+                    c10 = 14;
                     break;
                 }
                 c10 = 65535;
                 break;
             case -952227806:
                 if (str.equals("fullScreenSwipeShadowEnabled")) {
-                    c10 = '\n';
+                    c10 = 15;
                     break;
                 }
                 c10 = 65535;
                 break;
             case -577711652:
                 if (str.equals("stackAnimation")) {
-                    c10 = 11;
+                    c10 = 16;
                     break;
                 }
                 c10 = 65535;
                 break;
             case -462720700:
                 if (str.equals("navigationBarColor")) {
-                    c10 = '\f';
+                    c10 = 17;
+                    break;
+                }
+                c10 = 65535;
+                break;
+            case -411607385:
+                if (str.equals("screenId")) {
+                    c10 = 18;
                     break;
                 }
                 c10 = 65535;
                 break;
             case -381571779:
                 if (str.equals("sheetInitialDetent")) {
-                    c10 = '\r';
+                    c10 = 19;
                     break;
                 }
                 c10 = 65535;
                 break;
             case -274098190:
                 if (str.equals("sheetAllowedDetents")) {
-                    c10 = 14;
+                    c10 = 20;
                     break;
                 }
                 c10 = 65535;
                 break;
             case -257141968:
                 if (str.equals("replaceAnimation")) {
-                    c10 = 15;
+                    c10 = 21;
                     break;
                 }
                 c10 = 65535;
                 break;
             case -166356101:
                 if (str.equals("preventNativeDismiss")) {
-                    c10 = 16;
+                    c10 = 22;
                     break;
                 }
                 c10 = 65535;
                 break;
             case 17337291:
                 if (str.equals("statusBarHidden")) {
-                    c10 = 17;
+                    c10 = 23;
                     break;
                 }
                 c10 = 65535;
                 break;
             case 129956386:
                 if (str.equals("fullScreenSwipeEnabled")) {
-                    c10 = 18;
+                    c10 = 24;
                     break;
                 }
                 c10 = 65535;
                 break;
             case 187703999:
                 if (str.equals("gestureResponseDistance")) {
-                    c10 = 19;
+                    c10 = 25;
                     break;
                 }
                 c10 = 65535;
                 break;
             case 227582404:
                 if (str.equals("screenOrientation")) {
-                    c10 = 20;
+                    c10 = 26;
                     break;
                 }
                 c10 = 65535;
                 break;
             case 241896530:
                 if (str.equals("sheetLargestUndimmedDetent")) {
-                    c10 = 21;
+                    c10 = 27;
                     break;
                 }
                 c10 = 65535;
                 break;
             case 425064969:
                 if (str.equals("transitionDuration")) {
-                    c10 = 22;
+                    c10 = 28;
+                    break;
+                }
+                c10 = 65535;
+                break;
+            case 658632444:
+                if (str.equals("sheetShouldOverflowTopInset")) {
+                    c10 = 29;
                     break;
                 }
                 c10 = 65535;
                 break;
             case 1082157413:
                 if (str.equals("swipeDirection")) {
-                    c10 = 23;
+                    c10 = 30;
                     break;
                 }
                 c10 = 65535;
                 break;
             case 1110843912:
                 if (str.equals("customAnimationOnSwipe")) {
-                    c10 = 24;
+                    c10 = 31;
                     break;
                 }
                 c10 = 65535;
                 break;
             case 1116050554:
                 if (str.equals("navigationBarTranslucent")) {
-                    c10 = 25;
+                    c10 = ' ';
                     break;
                 }
                 c10 = 65535;
                 break;
             case 1269009342:
                 if (str.equals("sheetElevation")) {
-                    c10 = 26;
+                    c10 = '!';
+                    break;
+                }
+                c10 = 65535;
+                break;
+            case 1287164531:
+                if (str.equals("sheetDefaultResizeAnimationEnabled")) {
+                    c10 = '\"';
                     break;
                 }
                 c10 = 65535;
                 break;
             case 1357942638:
                 if (str.equals("sheetGrabberVisible")) {
-                    c10 = 27;
+                    c10 = '#';
                     break;
                 }
                 c10 = 65535;
                 break;
             case 1387359683:
                 if (str.equals("statusBarAnimation")) {
-                    c10 = 28;
+                    c10 = '$';
                     break;
                 }
                 c10 = 65535;
                 break;
             case 1729091548:
                 if (str.equals("nativeBackButtonDismissalEnabled")) {
-                    c10 = 29;
+                    c10 = '%';
+                    break;
+                }
+                c10 = 65535;
+                break;
+            case 2029667685:
+                if (str.equals("androidResetScreenShadowStateOnOrientationChangeEnabled")) {
+                    c10 = '&';
                     break;
                 }
                 c10 = 65535;
                 break;
             case 2097450072:
                 if (str.equals("sheetExpandsWhenScrolledToEdge")) {
-                    c10 = 30;
+                    c10 = '\'';
                     break;
                 }
                 c10 = 65535;
@@ -261,194 +326,239 @@ public class RNSScreenManagerDelegate<T extends View, U extends BaseViewManager<
                 break;
         }
         float f10 = -1.0f;
-        String str2 = null;
+        String str3 = null;
         switch (c10) {
             case 0:
                 RNSScreenManagerInterface rNSScreenManagerInterface = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z11 = ((Boolean) obj).booleanValue();
                 }
-                rNSScreenManagerInterface.setHomeIndicatorHidden(t10, z11);
+                rNSScreenManagerInterface.setSynchronousShadowStateUpdatesEnabled(t10, z11);
                 return;
             case 1:
+                ((RNSScreenManagerInterface) this.mViewManager).setBottomScrollEdgeEffect(t10, (String) obj);
+                return;
+            case 2:
                 RNSScreenManagerInterface rNSScreenManagerInterface2 = (RNSScreenManagerInterface) this.mViewManager;
+                if (obj != null) {
+                    z23 = ((Boolean) obj).booleanValue();
+                }
+                rNSScreenManagerInterface2.setHomeIndicatorHidden(t10, z23);
+                return;
+            case 3:
+                ((RNSScreenManagerInterface) this.mViewManager).setTopScrollEdgeEffect(t10, (String) obj);
+                return;
+            case 4:
+                RNSScreenManagerInterface rNSScreenManagerInterface3 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z10 = ((Boolean) obj).booleanValue();
                 }
-                rNSScreenManagerInterface2.setGestureEnabled(t10, z10);
+                rNSScreenManagerInterface3.setGestureEnabled(t10, z10);
                 return;
-            case 2:
-                RNSScreenManagerInterface rNSScreenManagerInterface3 = (RNSScreenManagerInterface) this.mViewManager;
+            case 5:
+                ((RNSScreenManagerInterface) this.mViewManager).setLeftScrollEdgeEffect(t10, (String) obj);
+                return;
+            case 6:
+                RNSScreenManagerInterface rNSScreenManagerInterface4 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z22 = ((Boolean) obj).booleanValue();
                 }
-                rNSScreenManagerInterface3.setHideKeyboardOnSwipe(t10, z22);
+                rNSScreenManagerInterface4.setHideKeyboardOnSwipe(t10, z22);
                 return;
-            case 3:
-                RNSScreenManagerInterface rNSScreenManagerInterface4 = (RNSScreenManagerInterface) this.mViewManager;
+            case 7:
+                ((RNSScreenManagerInterface) this.mViewManager).setRightScrollEdgeEffect(t10, (String) obj);
+                return;
+            case '\b':
+                RNSScreenManagerInterface rNSScreenManagerInterface5 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     f10 = ((Double) obj).floatValue();
                 }
-                rNSScreenManagerInterface4.setSheetCornerRadius(t10, f10);
+                rNSScreenManagerInterface5.setSheetCornerRadius(t10, f10);
                 return;
-            case 4:
-                RNSScreenManagerInterface rNSScreenManagerInterface5 = (RNSScreenManagerInterface) this.mViewManager;
+            case '\t':
+                RNSScreenManagerInterface rNSScreenManagerInterface6 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z21 = ((Boolean) obj).booleanValue();
                 }
-                rNSScreenManagerInterface5.setNavigationBarHidden(t10, z21);
+                rNSScreenManagerInterface6.setNavigationBarHidden(t10, z21);
                 return;
-            case 5:
-                RNSScreenManagerInterface rNSScreenManagerInterface6 = (RNSScreenManagerInterface) this.mViewManager;
+            case '\n':
+                RNSScreenManagerInterface rNSScreenManagerInterface7 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z20 = ((Boolean) obj).booleanValue();
                 }
-                rNSScreenManagerInterface6.setStatusBarTranslucent(t10, z20);
+                rNSScreenManagerInterface7.setStatusBarTranslucent(t10, z20);
                 return;
-            case 6:
+            case 11:
                 ((RNSScreenManagerInterface) this.mViewManager).setStackPresentation(t10, (String) obj);
                 return;
-            case 7:
-                RNSScreenManagerInterface rNSScreenManagerInterface7 = (RNSScreenManagerInterface) this.mViewManager;
+            case '\f':
+                RNSScreenManagerInterface rNSScreenManagerInterface8 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     f10 = ((Double) obj).floatValue();
                 }
-                rNSScreenManagerInterface7.setActivityState(t10, f10);
+                rNSScreenManagerInterface8.setActivityState(t10, f10);
                 return;
-            case '\b':
+            case '\r':
                 ((RNSScreenManagerInterface) this.mViewManager).setStatusBarColor(t10, ColorPropConverter.getColor(obj, t10.getContext()));
                 return;
-            case '\t':
-                RNSScreenManagerInterface rNSScreenManagerInterface8 = (RNSScreenManagerInterface) this.mViewManager;
-                if (obj != null) {
-                    str2 = (String) obj;
-                }
-                rNSScreenManagerInterface8.setStatusBarStyle(t10, str2);
-                return;
-            case '\n':
+            case 14:
                 RNSScreenManagerInterface rNSScreenManagerInterface9 = (RNSScreenManagerInterface) this.mViewManager;
+                if (obj != null) {
+                    str3 = (String) obj;
+                }
+                rNSScreenManagerInterface9.setStatusBarStyle(t10, str3);
+                return;
+            case 15:
+                RNSScreenManagerInterface rNSScreenManagerInterface10 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z10 = ((Boolean) obj).booleanValue();
                 }
-                rNSScreenManagerInterface9.setFullScreenSwipeShadowEnabled(t10, z10);
+                rNSScreenManagerInterface10.setFullScreenSwipeShadowEnabled(t10, z10);
                 return;
-            case 11:
+            case 16:
                 ((RNSScreenManagerInterface) this.mViewManager).setStackAnimation(t10, (String) obj);
                 return;
-            case '\f':
+            case 17:
                 ((RNSScreenManagerInterface) this.mViewManager).setNavigationBarColor(t10, ColorPropConverter.getColor(obj, t10.getContext()));
                 return;
-            case '\r':
-                RNSScreenManagerInterface rNSScreenManagerInterface10 = (RNSScreenManagerInterface) this.mViewManager;
+            case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
+                RNSScreenManagerInterface rNSScreenManagerInterface11 = (RNSScreenManagerInterface) this.mViewManager;
+                if (obj == null) {
+                    str2 = "";
+                } else {
+                    str2 = (String) obj;
+                }
+                rNSScreenManagerInterface11.setScreenId(t10, str2);
+                return;
+            case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
+                RNSScreenManagerInterface rNSScreenManagerInterface12 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     i11 = ((Double) obj).intValue();
                 }
-                rNSScreenManagerInterface10.setSheetInitialDetent(t10, i11);
+                rNSScreenManagerInterface12.setSheetInitialDetent(t10, i11);
                 return;
-            case 14:
+            case 20:
                 ((RNSScreenManagerInterface) this.mViewManager).setSheetAllowedDetents(t10, (ReadableArray) obj);
                 return;
-            case 15:
+            case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
                 ((RNSScreenManagerInterface) this.mViewManager).setReplaceAnimation(t10, (String) obj);
                 return;
-            case 16:
-                RNSScreenManagerInterface rNSScreenManagerInterface11 = (RNSScreenManagerInterface) this.mViewManager;
+            case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
+                RNSScreenManagerInterface rNSScreenManagerInterface13 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z19 = ((Boolean) obj).booleanValue();
                 }
-                rNSScreenManagerInterface11.setPreventNativeDismiss(t10, z19);
+                rNSScreenManagerInterface13.setPreventNativeDismiss(t10, z19);
                 return;
-            case 17:
-                RNSScreenManagerInterface rNSScreenManagerInterface12 = (RNSScreenManagerInterface) this.mViewManager;
+            case 23:
+                RNSScreenManagerInterface rNSScreenManagerInterface14 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z18 = ((Boolean) obj).booleanValue();
                 }
-                rNSScreenManagerInterface12.setStatusBarHidden(t10, z18);
+                rNSScreenManagerInterface14.setStatusBarHidden(t10, z18);
                 return;
-            case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
-                RNSScreenManagerInterface rNSScreenManagerInterface13 = (RNSScreenManagerInterface) this.mViewManager;
-                if (obj != null) {
-                    z17 = ((Boolean) obj).booleanValue();
-                }
-                rNSScreenManagerInterface13.setFullScreenSwipeEnabled(t10, z17);
+            case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
+                ((RNSScreenManagerInterface) this.mViewManager).setFullScreenSwipeEnabled(t10, (String) obj);
                 return;
-            case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
+            case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
                 ((RNSScreenManagerInterface) this.mViewManager).setGestureResponseDistance(t10, (ReadableMap) obj);
                 return;
-            case 20:
-                RNSScreenManagerInterface rNSScreenManagerInterface14 = (RNSScreenManagerInterface) this.mViewManager;
-                if (obj != null) {
-                    str2 = (String) obj;
-                }
-                rNSScreenManagerInterface14.setScreenOrientation(t10, str2);
-                return;
-            case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
+            case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
                 RNSScreenManagerInterface rNSScreenManagerInterface15 = (RNSScreenManagerInterface) this.mViewManager;
+                if (obj != null) {
+                    str3 = (String) obj;
+                }
+                rNSScreenManagerInterface15.setScreenOrientation(t10, str3);
+                return;
+            case 27:
+                RNSScreenManagerInterface rNSScreenManagerInterface16 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     i12 = ((Double) obj).intValue();
                 }
-                rNSScreenManagerInterface15.setSheetLargestUndimmedDetent(t10, i12);
+                rNSScreenManagerInterface16.setSheetLargestUndimmedDetent(t10, i12);
                 return;
-            case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
-                RNSScreenManagerInterface rNSScreenManagerInterface16 = (RNSScreenManagerInterface) this.mViewManager;
+            case 28:
+                RNSScreenManagerInterface rNSScreenManagerInterface17 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj == null) {
                     intValue = 500;
                 } else {
                     intValue = ((Double) obj).intValue();
                 }
-                rNSScreenManagerInterface16.setTransitionDuration(t10, intValue);
+                rNSScreenManagerInterface17.setTransitionDuration(t10, intValue);
                 return;
-            case 23:
+            case 29:
+                RNSScreenManagerInterface rNSScreenManagerInterface18 = (RNSScreenManagerInterface) this.mViewManager;
+                if (obj != null) {
+                    z17 = ((Boolean) obj).booleanValue();
+                }
+                rNSScreenManagerInterface18.setSheetShouldOverflowTopInset(t10, z17);
+                return;
+            case 30:
                 ((RNSScreenManagerInterface) this.mViewManager).setSwipeDirection(t10, (String) obj);
                 return;
-            case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
-                RNSScreenManagerInterface rNSScreenManagerInterface17 = (RNSScreenManagerInterface) this.mViewManager;
+            case ChatViewRecyclerTypes.EMBEDDED_ACTIVITY_INVITE /* 31 */:
+                RNSScreenManagerInterface rNSScreenManagerInterface19 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z16 = ((Boolean) obj).booleanValue();
                 }
-                rNSScreenManagerInterface17.setCustomAnimationOnSwipe(t10, z16);
+                rNSScreenManagerInterface19.setCustomAnimationOnSwipe(t10, z16);
                 return;
-            case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
-                RNSScreenManagerInterface rNSScreenManagerInterface18 = (RNSScreenManagerInterface) this.mViewManager;
+            case ' ':
+                RNSScreenManagerInterface rNSScreenManagerInterface20 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z15 = ((Boolean) obj).booleanValue();
                 }
-                rNSScreenManagerInterface18.setNavigationBarTranslucent(t10, z15);
+                rNSScreenManagerInterface20.setNavigationBarTranslucent(t10, z15);
                 return;
-            case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
-                RNSScreenManagerInterface rNSScreenManagerInterface19 = (RNSScreenManagerInterface) this.mViewManager;
+            case ChatViewRecyclerTypes.AUTO_MODERATION_NOTIFICATION_EMBED /* 33 */:
+                RNSScreenManagerInterface rNSScreenManagerInterface21 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     i10 = ((Double) obj).intValue();
                 }
-                rNSScreenManagerInterface19.setSheetElevation(t10, i10);
+                rNSScreenManagerInterface21.setSheetElevation(t10, i10);
                 return;
-            case 27:
-                RNSScreenManagerInterface rNSScreenManagerInterface20 = (RNSScreenManagerInterface) this.mViewManager;
+            case ChatViewRecyclerTypes.CHANNEL_DEADCHAT_PROMPT_ACTIONS /* 34 */:
+                RNSScreenManagerInterface rNSScreenManagerInterface22 = (RNSScreenManagerInterface) this.mViewManager;
+                if (obj != null) {
+                    z10 = ((Boolean) obj).booleanValue();
+                }
+                rNSScreenManagerInterface22.setSheetDefaultResizeAnimationEnabled(t10, z10);
+                return;
+            case ChatViewRecyclerTypes.INFO_LINK /* 35 */:
+                RNSScreenManagerInterface rNSScreenManagerInterface23 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z14 = ((Boolean) obj).booleanValue();
                 }
-                rNSScreenManagerInterface20.setSheetGrabberVisible(t10, z14);
+                rNSScreenManagerInterface23.setSheetGrabberVisible(t10, z14);
                 return;
-            case 28:
-                RNSScreenManagerInterface rNSScreenManagerInterface21 = (RNSScreenManagerInterface) this.mViewManager;
+            case ChatViewRecyclerTypes.SAFETY_POLICY_NOTICE /* 36 */:
+                RNSScreenManagerInterface rNSScreenManagerInterface24 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    str2 = (String) obj;
+                    str3 = (String) obj;
                 }
-                rNSScreenManagerInterface21.setStatusBarAnimation(t10, str2);
+                rNSScreenManagerInterface24.setStatusBarAnimation(t10, str3);
                 return;
-            case 29:
-                RNSScreenManagerInterface rNSScreenManagerInterface22 = (RNSScreenManagerInterface) this.mViewManager;
+            case ChatViewRecyclerTypes.POLL_TEXT_AND_IMAGE /* 37 */:
+                RNSScreenManagerInterface rNSScreenManagerInterface25 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z13 = ((Boolean) obj).booleanValue();
                 }
-                rNSScreenManagerInterface22.setNativeBackButtonDismissalEnabled(t10, z13);
+                rNSScreenManagerInterface25.setNativeBackButtonDismissalEnabled(t10, z13);
                 return;
-            case 30:
-                RNSScreenManagerInterface rNSScreenManagerInterface23 = (RNSScreenManagerInterface) this.mViewManager;
+            case ChatViewRecyclerTypes.POLL_IMAGE_ONLY /* 38 */:
+                RNSScreenManagerInterface rNSScreenManagerInterface26 = (RNSScreenManagerInterface) this.mViewManager;
+                if (obj != null) {
+                    z10 = ((Boolean) obj).booleanValue();
+                }
+                rNSScreenManagerInterface26.setAndroidResetScreenShadowStateOnOrientationChangeEnabled(t10, z10);
+                return;
+            case ChatViewRecyclerTypes.SAFETY_SYSTEM_NOTIFICATION /* 39 */:
+                RNSScreenManagerInterface rNSScreenManagerInterface27 = (RNSScreenManagerInterface) this.mViewManager;
                 if (obj != null) {
                     z12 = ((Boolean) obj).booleanValue();
                 }
-                rNSScreenManagerInterface23.setSheetExpandsWhenScrolledToEdge(t10, z12);
+                rNSScreenManagerInterface27.setSheetExpandsWhenScrolledToEdge(t10, z12);
                 return;
             default:
                 super.kotlinCompat$setProperty(t10, str, obj);

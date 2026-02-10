@@ -5,21 +5,21 @@ import t5.u;
 public class l {
 
     /* renamed from: a  reason: collision with root package name */
-    public final d f49521a;
+    public final d f47837a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final d f49522b;
+    public final d f47838b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final d f49523c;
+    public final d f47839c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final u f49524d;
+    public final u f47840d;
 
     public l(d dVar, d dVar2, d dVar3, u uVar) {
-        this.f49521a = dVar;
-        this.f49522b = dVar2;
-        this.f49523c = dVar3;
-        this.f49524d = uVar;
+        this.f47837a = dVar;
+        this.f47838b = dVar2;
+        this.f47839c = dVar3;
+        this.f47840d = uVar;
     }
 }

@@ -1,29 +1,44 @@
 package kt;
 
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.reflect.KClass;
+import kt.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class c {
-    public static final Void a(String str, KClass baseClass) {
-        String str2;
-        Intrinsics.checkNotNullParameter(baseClass, "baseClass");
-        String str3 = "in the polymorphic scope of '" + baseClass.getSimpleName() + '\'';
-        if (str == null) {
-            str2 = "Class discriminator was missing and no default serializers were registered " + str3 + '.';
-        } else {
-            str2 = "Serializer for subclass '" + str + "' is not found " + str3 + ".\nCheck if class with serial name '" + str + "' exists and serializer is registered in a corresponding SerializersModule.\nTo be registered automatically, class '" + str + "' has to be '@Serializable', and the base class '" + baseClass.getSimpleName() + "' has to be sealed and '@Serializable'.";
+public interface c extends o.a {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static void a(c cVar, n format) {
+            Intrinsics.checkNotNullParameter(format, "format");
+            if (format instanceof y) {
+                cVar.f(((y) format).b());
+            }
         }
-        throw new gt.n(str2);
+
+        public static void b(c cVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            cVar.f(new mt.e(new q(padding)));
+        }
+
+        public static void c(c cVar, s names) {
+            Intrinsics.checkNotNullParameter(names, "names");
+            cVar.f(new mt.e(new r(names)));
+        }
+
+        public static void d(c cVar, f0 names) {
+            Intrinsics.checkNotNullParameter(names, "names");
+            cVar.f(new mt.e(new e0(names)));
+        }
+
+        public static void e(c cVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            cVar.f(new mt.e(new d0(padding)));
+        }
+
+        public static void f(c cVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            cVar.f(new mt.e(new t0(padding, false, 2, null)));
+        }
     }
 
-    public static final Void b(KClass subClass, KClass baseClass) {
-        Intrinsics.checkNotNullParameter(subClass, "subClass");
-        Intrinsics.checkNotNullParameter(baseClass, "baseClass");
-        String simpleName = subClass.getSimpleName();
-        if (simpleName == null) {
-            simpleName = String.valueOf(subClass);
-        }
-        a(simpleName, baseClass);
-        throw new rr.h();
-    }
+    void f(mt.o oVar);
 }

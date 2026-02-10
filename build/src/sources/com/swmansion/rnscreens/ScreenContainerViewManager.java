@@ -62,7 +62,7 @@ public final class ScreenContainerViewManager extends ViewGroupManager<ScreenCon
     @NotNull
     public LayoutShadowNode createShadowNodeInstance(@NotNull ReactApplicationContext context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        return new y0(context);
+        return new a1(context);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

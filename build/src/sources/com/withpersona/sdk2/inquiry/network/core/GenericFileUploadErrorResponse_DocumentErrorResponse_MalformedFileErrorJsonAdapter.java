@@ -40,20 +40,20 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Malforme
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.C0();
+                mVar.z0();
                 mVar.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw bn.c.x("title", "title", mVar);
+                    throw dn.c.x("title", "title", mVar);
                 }
             } else if (J == 1) {
                 str2 = (String) this.stringAdapter.fromJson(mVar);
                 if (str2 == null) {
-                    throw bn.c.x("code", "code", mVar);
+                    throw dn.c.x("code", "code", mVar);
                 }
             } else if (J == 2 && (details = (GenericFileUploadErrorResponse.DocumentErrorResponse.MalformedFileError.Details) this.detailsAdapter.fromJson(mVar)) == null) {
-                throw bn.c.x("details", "details", mVar);
+                throw dn.c.x("details", "details", mVar);
             }
         }
         mVar.D();
@@ -62,17 +62,17 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Malforme
                 if (details != null) {
                     return new GenericFileUploadErrorResponse.DocumentErrorResponse.MalformedFileError(str, str2, details);
                 }
-                throw bn.c.o("details", "details", mVar);
+                throw dn.c.o("details", "details", mVar);
             }
-            throw bn.c.o("code", "code", mVar);
+            throw dn.c.o("code", "code", mVar);
         }
-        throw bn.c.o("title", "title", mVar);
+        throw dn.c.o("title", "title", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.MalformedFileError malformedFileError) {
         if (malformedFileError != null) {
-            tVar.k();
+            tVar.i();
             tVar.J("title");
             this.stringAdapter.toJson(tVar, malformedFileError.getTitle());
             tVar.J("code");

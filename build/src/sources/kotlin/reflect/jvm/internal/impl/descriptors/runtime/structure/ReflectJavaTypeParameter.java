@@ -20,15 +20,15 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaTypeParameter extends ReflectJavaElement implements ReflectJavaAnnotationOwner, JavaTypeParameter {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TypeVariable f32417a;
+    private final TypeVariable f32639a;
 
     public ReflectJavaTypeParameter(@NotNull TypeVariable<?> typeVariable) {
         Intrinsics.checkNotNullParameter(typeVariable, "typeVariable");
-        this.f32417a = typeVariable;
+        this.f32639a = typeVariable;
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof ReflectJavaTypeParameter) && Intrinsics.areEqual(this.f32417a, ((ReflectJavaTypeParameter) obj).f32417a)) {
+        if ((obj instanceof ReflectJavaTypeParameter) && Intrinsics.areEqual(this.f32639a, ((ReflectJavaTypeParameter) obj).f32639a)) {
             return true;
         }
         return false;
@@ -46,7 +46,7 @@ public final class ReflectJavaTypeParameter extends ReflectJavaElement implement
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaAnnotationOwner
     public AnnotatedElement getElement() {
-        TypeVariable typeVariable = this.f32417a;
+        TypeVariable typeVariable = this.f32639a;
         if (typeVariable instanceof AnnotatedElement) {
             return (AnnotatedElement) typeVariable;
         }
@@ -56,13 +56,13 @@ public final class ReflectJavaTypeParameter extends ReflectJavaElement implement
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaNamedElement
     @NotNull
     public Name getName() {
-        Name identifier = Name.identifier(this.f32417a.getName());
+        Name identifier = Name.identifier(this.f32639a.getName());
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
         return identifier;
     }
 
     public int hashCode() {
-        return this.f32417a.hashCode();
+        return this.f32639a.hashCode();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationOwner
@@ -72,7 +72,7 @@ public final class ReflectJavaTypeParameter extends ReflectJavaElement implement
 
     @NotNull
     public String toString() {
-        return ReflectJavaTypeParameter.class.getName() + ": " + this.f32417a;
+        return ReflectJavaTypeParameter.class.getName() + ": " + this.f32639a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaAnnotationOwner, kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationOwner
@@ -98,7 +98,7 @@ public final class ReflectJavaTypeParameter extends ReflectJavaElement implement
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaTypeParameter
     @NotNull
     public List<ReflectJavaClassifierType> getUpperBounds() {
-        Type[] bounds = this.f32417a.getBounds();
+        Type[] bounds = this.f32639a.getBounds();
         Intrinsics.checkNotNullExpressionValue(bounds, "getBounds(...)");
         ArrayList arrayList = new ArrayList(bounds.length);
         for (Type type : bounds) {

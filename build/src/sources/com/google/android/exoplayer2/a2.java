@@ -7,13 +7,13 @@ import com.google.android.exoplayer2.g;
 public final class a2 extends u1 {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f12059p = oe.w0.B0(1);
+    private static final String f12636p = oe.w0.B0(1);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String f12060q = oe.w0.B0(2);
+    private static final String f12637q = oe.w0.B0(2);
 
     /* renamed from: r  reason: collision with root package name */
-    public static final g.a f12061r = new g.a() { // from class: mc.v0
+    public static final g.a f12638r = new g.a() { // from class: mc.v0
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             a2 d10;
@@ -23,27 +23,27 @@ public final class a2 extends u1 {
     };
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f12062i;
+    private final boolean f12639i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f12063o;
+    private final boolean f12640o;
 
     public a2() {
-        this.f12062i = false;
-        this.f12063o = false;
+        this.f12639i = false;
+        this.f12640o = false;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static a2 d(Bundle bundle) {
         boolean z10;
-        if (bundle.getInt(u1.f13250d, -1) == 3) {
+        if (bundle.getInt(u1.f13827d, -1) == 3) {
             z10 = true;
         } else {
             z10 = false;
         }
         oe.a.a(z10);
-        if (bundle.getBoolean(f12059p, false)) {
-            return new a2(bundle.getBoolean(f12060q, false));
+        if (bundle.getBoolean(f12636p, false)) {
+            return new a2(bundle.getBoolean(f12637q, false));
         }
         return new a2();
     }
@@ -53,18 +53,18 @@ public final class a2 extends u1 {
             return false;
         }
         a2 a2Var = (a2) obj;
-        if (this.f12063o != a2Var.f12063o || this.f12062i != a2Var.f12062i) {
+        if (this.f12640o != a2Var.f12640o || this.f12639i != a2Var.f12639i) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return ni.j.b(Boolean.valueOf(this.f12062i), Boolean.valueOf(this.f12063o));
+        return pi.j.b(Boolean.valueOf(this.f12639i), Boolean.valueOf(this.f12640o));
     }
 
     public a2(boolean z10) {
-        this.f12062i = true;
-        this.f12063o = z10;
+        this.f12639i = true;
+        this.f12640o = z10;
     }
 }

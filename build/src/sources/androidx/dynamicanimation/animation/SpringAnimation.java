@@ -1,27 +1,27 @@
 package androidx.dynamicanimation.animation;
 
-import android.os.Looper;
 import android.util.AndroidRuntimeException;
-import androidx.dynamicanimation.animation.b;
+import androidx.dynamicanimation.animation.c;
+import b3.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public final class SpringAnimation extends b {
-    private c A;
-    private float B;
-    private boolean C;
+public final class SpringAnimation extends c {
+    private d B;
+    private float C;
+    private boolean D;
 
-    public SpringAnimation(b3.c cVar) {
-        super(cVar);
-        this.A = null;
-        this.B = Float.MAX_VALUE;
-        this.C = false;
+    public SpringAnimation(e eVar) {
+        super(eVar);
+        this.B = null;
+        this.C = Float.MAX_VALUE;
+        this.D = false;
     }
 
-    private void x() {
-        c cVar = this.A;
-        if (cVar != null) {
-            double a10 = cVar.a();
-            if (a10 <= this.f4055g) {
-                if (a10 >= this.f4056h) {
+    private void y() {
+        d dVar = this.B;
+        if (dVar != null) {
+            double b10 = dVar.b();
+            if (b10 <= this.f4064g) {
+                if (b10 >= this.f4065h) {
                     return;
                 }
                 throw new UnsupportedOperationException("Final position of the spring cannot be less than the min value.");
@@ -31,136 +31,136 @@ public final class SpringAnimation extends b {
         throw new UnsupportedOperationException("Incomplete SpringAnimation: Either final position or a spring force needs to be set.");
     }
 
-    @Override // androidx.dynamicanimation.animation.b
+    public void A() {
+        if (v()) {
+            if (f().j()) {
+                if (this.f4063f) {
+                    this.D = true;
+                    return;
+                }
+                return;
+            }
+            throw new AndroidRuntimeException("Animations may only be started on the same thread as the animation handler");
+        }
+        throw new UnsupportedOperationException("Spring animations can only come to an end when there is damping");
+    }
+
+    @Override // androidx.dynamicanimation.animation.c
     public void d() {
         super.d();
-        float f10 = this.B;
+        float f10 = this.C;
         if (f10 != Float.MAX_VALUE) {
-            c cVar = this.A;
-            if (cVar == null) {
-                this.A = new c(f10);
+            d dVar = this.B;
+            if (dVar == null) {
+                this.B = new d(f10);
             } else {
-                cVar.e(f10);
+                dVar.g(f10);
             }
-            this.B = Float.MAX_VALUE;
+            this.C = Float.MAX_VALUE;
         }
     }
 
-    @Override // androidx.dynamicanimation.animation.b
-    void p(float f10) {
+    @Override // androidx.dynamicanimation.animation.c
+    void q(float f10) {
     }
 
-    @Override // androidx.dynamicanimation.animation.b
-    public void q() {
-        x();
-        this.A.g(g());
-        super.q();
+    @Override // androidx.dynamicanimation.animation.c
+    public void r() {
+        y();
+        this.B.i(h());
+        super.r();
     }
 
-    @Override // androidx.dynamicanimation.animation.b
-    boolean s(long j10) {
-        if (this.C) {
-            float f10 = this.B;
+    @Override // androidx.dynamicanimation.animation.c
+    boolean t(long j10) {
+        if (this.D) {
+            float f10 = this.C;
             if (f10 != Float.MAX_VALUE) {
-                this.A.e(f10);
-                this.B = Float.MAX_VALUE;
+                this.B.g(f10);
+                this.C = Float.MAX_VALUE;
             }
-            this.f4050b = this.A.a();
-            this.f4049a = 0.0f;
-            this.C = false;
+            this.f4059b = this.B.b();
+            this.f4058a = 0.0f;
+            this.D = false;
             return true;
         }
-        if (this.B != Float.MAX_VALUE) {
+        if (this.C != Float.MAX_VALUE) {
             long j11 = j10 / 2;
-            b.p h10 = this.A.h(this.f4050b, this.f4049a, j11);
-            this.A.e(this.B);
-            this.B = Float.MAX_VALUE;
-            b.p h11 = this.A.h(h10.f4063a, h10.f4064b, j11);
-            this.f4050b = h11.f4063a;
-            this.f4049a = h11.f4064b;
+            c.p j12 = this.B.j(this.f4059b, this.f4058a, j11);
+            this.B.g(this.C);
+            this.C = Float.MAX_VALUE;
+            c.p j13 = this.B.j(j12.f4073a, j12.f4074b, j11);
+            this.f4059b = j13.f4073a;
+            this.f4058a = j13.f4074b;
         } else {
-            b.p h12 = this.A.h(this.f4050b, this.f4049a, j10);
-            this.f4050b = h12.f4063a;
-            this.f4049a = h12.f4064b;
+            c.p j14 = this.B.j(this.f4059b, this.f4058a, j10);
+            this.f4059b = j14.f4073a;
+            this.f4058a = j14.f4074b;
         }
-        float max = Math.max(this.f4050b, this.f4056h);
-        this.f4050b = max;
-        float min = Math.min(max, this.f4055g);
-        this.f4050b = min;
-        if (!w(min, this.f4049a)) {
+        float max = Math.max(this.f4059b, this.f4065h);
+        this.f4059b = max;
+        float min = Math.min(max, this.f4064g);
+        this.f4059b = min;
+        if (!x(min, this.f4058a)) {
             return false;
         }
-        this.f4050b = this.A.a();
-        this.f4049a = 0.0f;
+        this.f4059b = this.B.b();
+        this.f4058a = 0.0f;
         return true;
     }
 
-    public void t(float f10) {
-        if (h()) {
-            this.B = f10;
+    public void u(float f10) {
+        if (i()) {
+            this.C = f10;
             return;
         }
-        if (this.A == null) {
-            this.A = new c(f10);
+        if (this.B == null) {
+            this.B = new d(f10);
         }
-        this.A.e(f10);
-        q();
+        this.B.g(f10);
+        r();
     }
 
-    public boolean u() {
-        if (this.A.f4066b > 0.0d) {
+    public boolean v() {
+        if (this.B.f4076b > 0.0d) {
             return true;
         }
         return false;
     }
 
-    public c v() {
-        return this.A;
+    public d w() {
+        return this.B;
     }
 
-    boolean w(float f10, float f11) {
-        return this.A.c(f10, f11);
+    boolean x(float f10, float f11) {
+        return this.B.e(f10, f11);
     }
 
-    public SpringAnimation y(c cVar) {
-        this.A = cVar;
+    public SpringAnimation z(d dVar) {
+        this.B = dVar;
         return this;
     }
 
-    public void z() {
-        if (u()) {
-            if (Looper.myLooper() == Looper.getMainLooper()) {
-                if (this.f4054f) {
-                    this.C = true;
-                    return;
-                }
-                return;
-            }
-            throw new AndroidRuntimeException("Animations may only be started on the main thread");
-        }
-        throw new UnsupportedOperationException("Spring animations can only come to an end when there is damping");
+    public SpringAnimation(e eVar, float f10) {
+        super(eVar);
+        this.B = null;
+        this.C = Float.MAX_VALUE;
+        this.D = false;
+        this.B = new d(f10);
     }
 
-    public SpringAnimation(b3.c cVar, float f10) {
-        super(cVar);
-        this.A = null;
-        this.B = Float.MAX_VALUE;
-        this.C = false;
-        this.A = new c(f10);
+    public SpringAnimation(Object obj, b3.d dVar) {
+        super(obj, dVar);
+        this.B = null;
+        this.C = Float.MAX_VALUE;
+        this.D = false;
     }
 
-    public SpringAnimation(Object obj, b3.b bVar) {
-        super(obj, bVar);
-        this.A = null;
-        this.B = Float.MAX_VALUE;
-        this.C = false;
-    }
-
-    public SpringAnimation(Object obj, b3.b bVar, float f10) {
-        super(obj, bVar);
-        this.A = null;
-        this.B = Float.MAX_VALUE;
-        this.C = false;
-        this.A = new c(f10);
+    public SpringAnimation(Object obj, b3.d dVar, float f10) {
+        super(obj, dVar);
+        this.B = null;
+        this.C = Float.MAX_VALUE;
+        this.D = false;
+        this.B = new d(f10);
     }
 }

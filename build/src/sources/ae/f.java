@@ -32,8 +32,8 @@ public abstract class f extends rc.h implements h {
     /* renamed from: A */
     public final i j(k kVar, l lVar, boolean z10) {
         try {
-            ByteBuffer byteBuffer = (ByteBuffer) oe.a.e(kVar.f47775i);
-            lVar.u(kVar.f47777p, z(byteBuffer.array(), byteBuffer.limit(), z10), kVar.f749t);
+            ByteBuffer byteBuffer = (ByteBuffer) oe.a.e(kVar.f46229i);
+            lVar.u(kVar.f46231p, z(byteBuffer.array(), byteBuffer.limit(), z10), kVar.f749t);
             lVar.i(Integer.MIN_VALUE);
             return null;
         } catch (i e10) {

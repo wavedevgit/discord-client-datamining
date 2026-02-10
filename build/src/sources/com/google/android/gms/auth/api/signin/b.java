@@ -11,33 +11,33 @@ import hf.p;
 public class b extends ff.d {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final f f13832k = new f(null);
+    private static final f f14409k = new f(null);
 
     /* renamed from: l  reason: collision with root package name */
-    static int f13833l = 1;
+    static int f14410l = 1;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Context context, GoogleSignInOptions googleSignInOptions) {
-        super(context, ve.a.f52318b, googleSignInOptions, new d.a.C0333a().c(new gf.a()).a());
+        super(context, ve.a.f51560b, googleSignInOptions, new d.a.C0318a().c(new gf.a()).a());
     }
 
     private final synchronized int E() {
         int i10;
         try {
-            i10 = f13833l;
+            i10 = f14410l;
             if (i10 == 1) {
                 Context u10 = u();
                 com.google.android.gms.common.f n10 = com.google.android.gms.common.f.n();
-                int h10 = n10.h(u10, k.f13920a);
+                int h10 = n10.h(u10, k.f14497a);
                 if (h10 == 0) {
                     i10 = 4;
-                    f13833l = 4;
+                    f14410l = 4;
                 } else if (n10.b(u10, h10, null) == null && DynamiteModule.a(u10, "com.google.android.gms.auth.api.fallback") != 0) {
                     i10 = 3;
-                    f13833l = 3;
+                    f14410l = 3;
                 } else {
                     i10 = 2;
-                    f13833l = 2;
+                    f14410l = 2;
                 }
             }
         } catch (Throwable th2) {

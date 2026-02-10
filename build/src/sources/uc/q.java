@@ -11,12 +11,12 @@ public abstract class q {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public long f51508a;
+        public long f50687a;
     }
 
     private static boolean a(h0 h0Var, t tVar, int i10) {
         int j10 = j(h0Var, i10);
-        if (j10 != -1 && j10 <= tVar.f51513b) {
+        if (j10 != -1 && j10 <= tVar.f50692b) {
             return true;
         }
         return false;
@@ -33,9 +33,9 @@ public abstract class q {
         try {
             long O = h0Var.O();
             if (!z10) {
-                O *= tVar.f51513b;
+                O *= tVar.f50692b;
             }
-            aVar.f51508a = O;
+            aVar.f50687a = O;
             return true;
         } catch (NumberFormatException unused) {
             return false;
@@ -72,12 +72,12 @@ public abstract class q {
     }
 
     private static boolean e(h0 h0Var, t tVar, int i10) {
-        int i11 = tVar.f51516e;
+        int i11 = tVar.f50695e;
         if (i10 == 0) {
             return true;
         }
         if (i10 <= 11) {
-            if (i10 == tVar.f51517f) {
+            if (i10 == tVar.f50696f) {
                 return true;
             }
             return false;
@@ -101,7 +101,7 @@ public abstract class q {
     }
 
     private static boolean f(int i10, t tVar) {
-        if (i10 == 0 || i10 == tVar.f51520i) {
+        if (i10 == 0 || i10 == tVar.f50699i) {
             return true;
         }
         return false;
@@ -109,11 +109,11 @@ public abstract class q {
 
     private static boolean g(int i10, t tVar) {
         if (i10 <= 7) {
-            if (i10 != tVar.f51518g - 1) {
+            if (i10 != tVar.f50697g - 1) {
                 return false;
             }
             return true;
-        } else if (i10 > 10 || tVar.f51518g != 2) {
+        } else if (i10 > 10 || tVar.f50697g != 2) {
             return false;
         } else {
             return true;
@@ -158,7 +158,7 @@ public abstract class q {
         lVar.e();
         a aVar = new a();
         if (c(h0Var, tVar, z10, aVar)) {
-            return aVar.f51508a;
+            return aVar.f50687a;
         }
         throw l0.a(null, null);
     }

@@ -1,35 +1,588 @@
 package hl;
 
-import com.facebook.react.bridge.Dynamic;
-import java.util.Locale;
+import fl.j;
+import java.lang.reflect.Array;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.List;
+import kk.r;
+import ok.h;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class f extends k {
+public final class f {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final String f27421a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f26347b;
+    private final boolean f27422b;
 
-    public f() {
-        super(e());
-        this.f26347b = d();
+    /* renamed from: c  reason: collision with root package name */
+    private final h f27423c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final fl.f f27424d;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static /* synthetic */ class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ int[] f27425a;
+
+        /* renamed from: b  reason: collision with root package name */
+        static final /* synthetic */ int[] f27426b;
+
+        static {
+            int[] iArr = new int[fl.h.values().length];
+            f27426b = iArr;
+            try {
+                iArr[fl.h.KANJI.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f27426b[fl.h.ALPHANUMERIC.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f27426b[fl.h.NUMERIC.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            try {
+                f27426b[fl.h.BYTE.ordinal()] = 4;
+            } catch (NoSuchFieldError unused4) {
+            }
+            try {
+                f27426b[fl.h.ECI.ordinal()] = 5;
+            } catch (NoSuchFieldError unused5) {
+            }
+            int[] iArr2 = new int[d.values().length];
+            f27425a = iArr2;
+            try {
+                iArr2[d.SMALL.ordinal()] = 1;
+            } catch (NoSuchFieldError unused6) {
+            }
+            try {
+                f27425a[d.MEDIUM.ordinal()] = 2;
+            } catch (NoSuchFieldError unused7) {
+            }
+            try {
+                f27425a[d.LARGE.ordinal()] = 3;
+            } catch (NoSuchFieldError unused8) {
+            }
+        }
     }
 
-    private static String d() {
-        return Locale.getDefault().toLanguageTag().replace('-', '_');
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public final class b {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final fl.h f27427a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final int f27428b;
+
+        /* renamed from: c  reason: collision with root package name */
+        private final int f27429c;
+
+        /* renamed from: d  reason: collision with root package name */
+        private final int f27430d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private final b f27431e;
+
+        /* renamed from: f  reason: collision with root package name */
+        private final int f27432f;
+
+        /* synthetic */ b(f fVar, fl.h hVar, int i10, int i11, int i12, b bVar, j jVar, a aVar) {
+            this(hVar, i10, i11, i12, bVar, jVar);
+        }
+
+        private b(fl.h hVar, int i10, int i11, int i12, b bVar, j jVar) {
+            this.f27427a = hVar;
+            this.f27428b = i10;
+            fl.h hVar2 = fl.h.BYTE;
+            int i13 = (hVar == hVar2 || bVar == null) ? i11 : bVar.f27429c;
+            this.f27429c = i13;
+            this.f27430d = i12;
+            this.f27431e = bVar;
+            boolean z10 = false;
+            int i14 = bVar != null ? bVar.f27432f : 0;
+            if ((hVar == hVar2 && bVar == null && i13 != 0) || (bVar != null && i13 != bVar.f27429c)) {
+                z10 = true;
+            }
+            i14 = (bVar == null || hVar != bVar.f27427a || z10) ? i14 + hVar.e(jVar) + 4 : i14;
+            int i15 = a.f27426b[hVar.ordinal()];
+            if (i15 == 1) {
+                i14 += 13;
+            } else if (i15 == 2) {
+                i14 += i12 == 1 ? 6 : 11;
+            } else if (i15 == 3) {
+                i14 += i12 != 1 ? i12 == 2 ? 7 : 10 : 4;
+            } else if (i15 == 4) {
+                i14 += f.this.f27423c.b(f.this.f27421a.substring(i10, i12 + i10), i11).length * 8;
+                if (z10) {
+                    i14 += 12;
+                }
+            }
+            this.f27432f = i14;
+        }
     }
 
-    private static Locale e() {
-        return com.henninghall.date_picker.h.f(d());
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public final class c {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final List f27434a = new ArrayList();
+
+        /* renamed from: b  reason: collision with root package name */
+        private final j f27435b;
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public final class a {
+
+            /* renamed from: a  reason: collision with root package name */
+            private final fl.h f27437a;
+
+            /* renamed from: b  reason: collision with root package name */
+            private final int f27438b;
+
+            /* renamed from: c  reason: collision with root package name */
+            private final int f27439c;
+
+            /* renamed from: d  reason: collision with root package name */
+            private final int f27440d;
+
+            a(fl.h hVar, int i10, int i11, int i12) {
+                this.f27437a = hVar;
+                this.f27438b = i10;
+                this.f27439c = i11;
+                this.f27440d = i12;
+            }
+
+            /* JADX INFO: Access modifiers changed from: private */
+            public void d(ok.a aVar) {
+                aVar.c(this.f27437a.d(), 4);
+                if (this.f27440d > 0) {
+                    aVar.c(e(), this.f27437a.e(c.this.f27435b));
+                }
+                if (this.f27437a == fl.h.ECI) {
+                    aVar.c(f.this.f27423c.d(this.f27439c), 8);
+                } else if (this.f27440d > 0) {
+                    String str = f.this.f27421a;
+                    int i10 = this.f27438b;
+                    hl.c.c(str.substring(i10, this.f27440d + i10), this.f27437a, aVar, f.this.f27423c.c(this.f27439c));
+                }
+            }
+
+            private int e() {
+                if (this.f27437a == fl.h.BYTE) {
+                    h hVar = f.this.f27423c;
+                    String str = f.this.f27421a;
+                    int i10 = this.f27438b;
+                    return hVar.b(str.substring(i10, this.f27440d + i10), this.f27439c).length;
+                }
+                return this.f27440d;
+            }
+
+            /* JADX INFO: Access modifiers changed from: private */
+            public int f(j jVar) {
+                int i10;
+                int e10 = this.f27437a.e(jVar);
+                int i11 = e10 + 4;
+                int i12 = a.f27426b[this.f27437a.ordinal()];
+                if (i12 != 1) {
+                    int i13 = 0;
+                    if (i12 != 2) {
+                        if (i12 != 3) {
+                            if (i12 != 4) {
+                                if (i12 != 5) {
+                                    return i11;
+                                }
+                                return e10 + 12;
+                            }
+                            i10 = e() * 8;
+                        } else {
+                            int i14 = this.f27440d;
+                            int i15 = i11 + ((i14 / 3) * 10);
+                            int i16 = i14 % 3;
+                            if (i16 == 1) {
+                                i13 = 4;
+                            } else if (i16 == 2) {
+                                i13 = 7;
+                            }
+                            return i15 + i13;
+                        }
+                    } else {
+                        int i17 = this.f27440d;
+                        int i18 = i11 + ((i17 / 2) * 11);
+                        if (i17 % 2 == 1) {
+                            i13 = 6;
+                        }
+                        return i18 + i13;
+                    }
+                } else {
+                    i10 = this.f27440d * 13;
+                }
+                return i11 + i10;
+            }
+
+            private String g(String str) {
+                StringBuilder sb2 = new StringBuilder();
+                for (int i10 = 0; i10 < str.length(); i10++) {
+                    if (str.charAt(i10) >= ' ' && str.charAt(i10) <= '~') {
+                        sb2.append(str.charAt(i10));
+                    } else {
+                        sb2.append('.');
+                    }
+                }
+                return sb2.toString();
+            }
+
+            public String toString() {
+                StringBuilder sb2 = new StringBuilder();
+                sb2.append(this.f27437a);
+                sb2.append('(');
+                if (this.f27437a != fl.h.ECI) {
+                    String str = f.this.f27421a;
+                    int i10 = this.f27438b;
+                    sb2.append(g(str.substring(i10, this.f27440d + i10)));
+                } else {
+                    sb2.append(f.this.f27423c.c(this.f27439c).displayName());
+                }
+                sb2.append(')');
+                return sb2.toString();
+            }
+        }
+
+        c(j jVar, b bVar) {
+            int i10;
+            int i11;
+            boolean z10;
+            int i12;
+            b bVar2 = bVar;
+            int i13 = 0;
+            int i14 = 0;
+            while (true) {
+                if (bVar2 == null) {
+                    break;
+                }
+                int i15 = i13 + bVar2.f27430d;
+                b bVar3 = bVar2.f27431e;
+                if ((bVar2.f27427a == fl.h.BYTE && bVar3 == null && bVar2.f27429c != 0) || (bVar3 != null && bVar2.f27429c != bVar3.f27429c)) {
+                    z10 = true;
+                } else {
+                    z10 = false;
+                }
+                i10 = z10 ? 1 : i14;
+                if (bVar3 != null && bVar3.f27427a == bVar2.f27427a && !z10) {
+                    i12 = i15;
+                } else {
+                    this.f27434a.add(0, new a(bVar2.f27427a, bVar2.f27428b, bVar2.f27429c, i15));
+                    i12 = 0;
+                }
+                if (z10) {
+                    this.f27434a.add(0, new a(fl.h.ECI, bVar2.f27428b, bVar2.f27429c, 0));
+                }
+                i14 = i10;
+                bVar2 = bVar3;
+                i13 = i12;
+            }
+            if (f.this.f27422b) {
+                a aVar = (a) this.f27434a.get(0);
+                if (aVar != null) {
+                    fl.h hVar = aVar.f27437a;
+                    int i16 = i14;
+                    fl.h hVar2 = fl.h.ECI;
+                    if (hVar != hVar2 && i16 != 0) {
+                        this.f27434a.add(0, new a(hVar2, 0, 0, 0));
+                    }
+                }
+                this.f27434a.add(((a) this.f27434a.get(0)).f27437a == fl.h.ECI ? 1 : 0, new a(fl.h.FNC1_FIRST_POSITION, 0, 0, 0));
+            }
+            int j10 = jVar.j();
+            int i17 = a.f27425a[f.m(jVar).ordinal()];
+            if (i17 != 1) {
+                if (i17 != 2) {
+                    i10 = 27;
+                    i11 = 40;
+                } else {
+                    i10 = 10;
+                    i11 = 26;
+                }
+            } else {
+                i11 = 9;
+            }
+            int d10 = d(jVar);
+            while (j10 < i11 && !hl.c.v(d10, j.i(j10), f.this.f27424d)) {
+                j10++;
+            }
+            while (j10 > i10 && hl.c.v(d10, j.i(j10 - 1), f.this.f27424d)) {
+                j10--;
+            }
+            this.f27435b = j.i(j10);
+        }
+
+        private int d(j jVar) {
+            int i10 = 0;
+            for (a aVar : this.f27434a) {
+                i10 += aVar.f(jVar);
+            }
+            return i10;
+        }
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        public void b(ok.a aVar) {
+            for (a aVar2 : this.f27434a) {
+                aVar2.d(aVar);
+            }
+        }
+
+        int c() {
+            return d(this.f27435b);
+        }
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        public j e() {
+            return this.f27435b;
+        }
+
+        public String toString() {
+            StringBuilder sb2 = new StringBuilder();
+            a aVar = null;
+            for (a aVar2 : this.f27434a) {
+                if (aVar != null) {
+                    sb2.append(",");
+                }
+                sb2.append(aVar2.toString());
+                aVar = aVar2;
+            }
+            return sb2.toString();
+        }
     }
 
-    public String f() {
-        return this.f26347b;
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public enum d {
+        SMALL("version 1-9"),
+        MEDIUM("version 10-26"),
+        LARGE("version 27-40");
+        
+
+        /* renamed from: d  reason: collision with root package name */
+        private final String f27446d;
+
+        d(String str) {
+            this.f27446d = str;
+        }
+
+        @Override // java.lang.Enum
+        public String toString() {
+            return this.f27446d;
+        }
     }
 
-    @Override // hl.k
-    /* renamed from: g */
-    public Locale c(Dynamic dynamic) {
-        String replace = dynamic.asString().replace('-', '_');
-        this.f26347b = replace;
-        return com.henninghall.date_picker.h.f(replace);
+    f(String str, Charset charset, boolean z10, fl.f fVar) {
+        this.f27421a = str;
+        this.f27422b = z10;
+        this.f27423c = new h(str, charset, -1);
+        this.f27424d = fVar;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static c i(String str, j jVar, Charset charset, boolean z10, fl.f fVar) {
+        return new f(str, charset, z10, fVar).h(jVar);
+    }
+
+    static int k(fl.h hVar) {
+        int i10;
+        if (hVar == null || (i10 = a.f27426b[hVar.ordinal()]) == 1) {
+            return 0;
+        }
+        if (i10 == 2) {
+            return 1;
+        }
+        if (i10 == 3) {
+            return 2;
+        }
+        if (i10 == 4) {
+            return 3;
+        }
+        throw new IllegalStateException("Illegal mode " + hVar);
+    }
+
+    static j l(d dVar) {
+        int i10 = a.f27425a[dVar.ordinal()];
+        if (i10 != 1) {
+            if (i10 != 2) {
+                return j.i(40);
+            }
+            return j.i(26);
+        }
+        return j.i(9);
+    }
+
+    static d m(j jVar) {
+        if (jVar.j() <= 9) {
+            return d.SMALL;
+        }
+        if (jVar.j() <= 26) {
+            return d.MEDIUM;
+        }
+        return d.LARGE;
+    }
+
+    static boolean n(char c10) {
+        if (hl.c.p(c10) != -1) {
+            return true;
+        }
+        return false;
+    }
+
+    static boolean o(char c10) {
+        return hl.c.s(String.valueOf(c10));
+    }
+
+    static boolean p(char c10) {
+        if (c10 >= '0' && c10 <= '9') {
+            return true;
+        }
+        return false;
+    }
+
+    void e(b[][][] bVarArr, int i10, b bVar) {
+        b[] bVarArr2 = bVarArr[i10 + bVar.f27430d][bVar.f27429c];
+        int k10 = k(bVar.f27427a);
+        b bVar2 = bVarArr2[k10];
+        if (bVar2 != null && bVar2.f27432f <= bVar.f27432f) {
+            return;
+        }
+        bVarArr2[k10] = bVar;
+    }
+
+    void f(j jVar, b[][][] bVarArr, int i10, b bVar) {
+        int i11;
+        int i12;
+        int f10 = this.f27423c.f();
+        int e10 = this.f27423c.e();
+        if (e10 >= 0 && this.f27423c.a(this.f27421a.charAt(i10), e10)) {
+            f10 = e10 + 1;
+        } else {
+            e10 = 0;
+        }
+        int i13 = f10;
+        for (int i14 = e10; i14 < i13; i14++) {
+            if (this.f27423c.a(this.f27421a.charAt(i10), i14)) {
+                e(bVarArr, i10, new b(this, fl.h.BYTE, i10, i14, 1, bVar, jVar, null));
+            }
+        }
+        fl.h hVar = fl.h.KANJI;
+        if (g(hVar, this.f27421a.charAt(i10))) {
+            e(bVarArr, i10, new b(this, hVar, i10, 0, 1, bVar, jVar, null));
+        }
+        int length = this.f27421a.length();
+        fl.h hVar2 = fl.h.ALPHANUMERIC;
+        int i15 = 2;
+        if (g(hVar2, this.f27421a.charAt(i10))) {
+            int i16 = i10 + 1;
+            if (i16 < length && g(hVar2, this.f27421a.charAt(i16))) {
+                i12 = 2;
+            } else {
+                i12 = 1;
+            }
+            e(bVarArr, i10, new b(this, hVar2, i10, 0, i12, bVar, jVar, null));
+        }
+        fl.h hVar3 = fl.h.NUMERIC;
+        if (g(hVar3, this.f27421a.charAt(i10))) {
+            int i17 = i10 + 1;
+            if (i17 < length && g(hVar3, this.f27421a.charAt(i17))) {
+                int i18 = i10 + 2;
+                if (i18 < length && g(hVar3, this.f27421a.charAt(i18))) {
+                    i15 = 3;
+                }
+                i11 = i15;
+            } else {
+                i11 = 1;
+            }
+            e(bVarArr, i10, new b(this, hVar3, i10, 0, i11, bVar, jVar, null));
+        }
+    }
+
+    boolean g(fl.h hVar, char c10) {
+        int i10 = a.f27426b[hVar.ordinal()];
+        if (i10 != 1) {
+            if (i10 != 2) {
+                if (i10 != 3) {
+                    if (i10 == 4) {
+                        return true;
+                    }
+                    return false;
+                }
+                return p(c10);
+            }
+            return n(c10);
+        }
+        return o(c10);
+    }
+
+    c h(j jVar) {
+        if (jVar == null) {
+            j[] jVarArr = {l(d.SMALL), l(d.MEDIUM), l(d.LARGE)};
+            c[] cVarArr = {j(jVarArr[0]), j(jVarArr[1]), j(jVarArr[2])};
+            int i10 = Integer.MAX_VALUE;
+            int i11 = -1;
+            for (int i12 = 0; i12 < 3; i12++) {
+                int c10 = cVarArr[i12].c();
+                if (hl.c.v(c10, jVarArr[i12], this.f27424d) && c10 < i10) {
+                    i11 = i12;
+                    i10 = c10;
+                }
+            }
+            if (i11 >= 0) {
+                return cVarArr[i11];
+            }
+            throw new r("Data too big for any version");
+        }
+        c j10 = j(jVar);
+        if (hl.c.v(j10.c(), l(m(j10.e())), this.f27424d)) {
+            return j10;
+        }
+        throw new r("Data too big for version" + jVar);
+    }
+
+    c j(j jVar) {
+        int length = this.f27421a.length();
+        b[][][] bVarArr = (b[][][]) Array.newInstance(b.class, length + 1, this.f27423c.f(), 4);
+        f(jVar, bVarArr, 0, null);
+        for (int i10 = 1; i10 <= length; i10++) {
+            for (int i11 = 0; i11 < this.f27423c.f(); i11++) {
+                for (int i12 = 0; i12 < 4; i12++) {
+                    b bVar = bVarArr[i10][i11][i12];
+                    if (bVar != null && i10 < length) {
+                        f(jVar, bVarArr, i10, bVar);
+                    }
+                }
+            }
+        }
+        int i13 = -1;
+        int i14 = Integer.MAX_VALUE;
+        int i15 = -1;
+        for (int i16 = 0; i16 < this.f27423c.f(); i16++) {
+            for (int i17 = 0; i17 < 4; i17++) {
+                b bVar2 = bVarArr[length][i16][i17];
+                if (bVar2 != null && bVar2.f27432f < i14) {
+                    i14 = bVar2.f27432f;
+                    i13 = i16;
+                    i15 = i17;
+                }
+            }
+        }
+        if (i13 >= 0) {
+            return new c(jVar, bVarArr[length][i13][i15]);
+        }
+        throw new r("Internal error: failed to encode \"" + this.f27421a + "\"");
     }
 }

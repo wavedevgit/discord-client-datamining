@@ -6,7 +6,7 @@ public class a extends a0 {
     }
 
     private void K0() {
-        G0(1);
-        w0(new e(2)).w0(new b()).w0(new e(1));
+        H0(1);
+        y0(new e(2)).y0(new b()).y0(new e(1));
     }
 }

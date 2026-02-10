@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor;
 public class e implements Function2 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final CallableDescriptor f33930d;
+    private final CallableDescriptor f34152d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CallableDescriptor f33931e;
+    private final CallableDescriptor f34153e;
 
     public e(CallableDescriptor callableDescriptor, CallableDescriptor callableDescriptor2) {
-        this.f33930d = callableDescriptor;
-        this.f33931e = callableDescriptor2;
+        this.f34152d = callableDescriptor;
+        this.f34153e = callableDescriptor2;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public Object invoke(Object obj, Object obj2) {
         boolean g10;
-        g10 = DescriptorEquivalenceForOverrides.g(this.f33930d, this.f33931e, (DeclarationDescriptor) obj, (DeclarationDescriptor) obj2);
+        g10 = DescriptorEquivalenceForOverrides.g(this.f34152d, this.f34153e, (DeclarationDescriptor) obj, (DeclarationDescriptor) obj2);
         return Boolean.valueOf(g10);
     }
 }

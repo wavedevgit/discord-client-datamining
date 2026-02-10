@@ -1,16 +1,19 @@
 package ls;
 
-import kotlin.jvm.functions.Function1;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class c implements Function1 {
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final c f36398d = new c();
-
-    @Override // kotlin.jvm.functions.Function1
-    public Object invoke(Object obj) {
-        w0 d10;
-        d10 = h.d((Class) obj);
-        return d10;
+import java.io.Closeable;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public abstract class c {
+    public static final void a(Closeable closeable, Throwable th2) {
+        if (closeable != null) {
+            if (th2 == null) {
+                closeable.close();
+                return;
+            }
+            try {
+                closeable.close();
+            } catch (Throwable th3) {
+                as.e.a(th2, th3);
+            }
+        }
     }
 }

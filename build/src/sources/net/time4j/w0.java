@@ -5,27 +5,27 @@ import java.util.Locale;
 import java.util.Set;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class w0 implements st.s {
-    @Override // st.s
-    public Set b(Locale locale, st.d dVar) {
+public class w0 implements bu.s {
+    @Override // bu.s
+    public Set a(Locale locale, bu.d dVar) {
         if (locale.getCountry().isEmpty()) {
             return Collections.EMPTY_SET;
         }
         return a1.j(locale).d();
     }
 
-    @Override // st.s
-    public boolean c(Class cls) {
+    @Override // bu.s
+    public boolean b(bu.p pVar) {
         return false;
     }
 
-    @Override // st.s
-    public boolean d(st.p pVar) {
+    @Override // bu.s
+    public boolean d(Class cls) {
         return false;
     }
 
-    @Override // st.s
-    public st.q a(st.q qVar, Locale locale, st.d dVar) {
+    @Override // bu.s
+    public bu.q c(bu.q qVar, Locale locale, bu.d dVar) {
         return qVar;
     }
 }

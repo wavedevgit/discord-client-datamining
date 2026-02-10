@@ -1,28 +1,26 @@
 package ru;
 
-import kotlin.jvm.internal.Intrinsics;
-import okio.Buffer;
+import okhttp3.Request;
+import okhttp3.Response;
 import okio.Sink;
-import okio.Timeout;
-/* JADX INFO: Access modifiers changed from: package-private */
+import okio.Source;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements Sink {
-    @Override // okio.Sink
-    public Timeout timeout() {
-        return Timeout.f42347e;
-    }
+public interface d {
+    void a();
 
-    @Override // okio.Sink
-    public void u0(Buffer source, long j10) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        source.skip(j10);
-    }
+    Source b(Response response);
 
-    @Override // okio.Sink, java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-    }
+    qu.f c();
 
-    @Override // okio.Sink, java.io.Flushable
-    public void flush() {
-    }
+    void cancel();
+
+    long d(Response response);
+
+    Sink e(Request request, long j10);
+
+    void f(Request request);
+
+    Response.a g(boolean z10);
+
+    void h();
 }

@@ -18,47 +18,47 @@ import u.h;
 public class q4 extends m4 {
 
     /* renamed from: o  reason: collision with root package name */
-    private final ScheduledExecutorService f44878o;
+    private final ScheduledExecutorService f43546o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Object f44879p;
+    private final Object f43547p;
 
     /* renamed from: q  reason: collision with root package name */
-    private List f44880q;
+    private List f43548q;
 
     /* renamed from: r  reason: collision with root package name */
-    ListenableFuture f44881r;
+    ListenableFuture f43549r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final u.i f44882s;
+    private final u.i f43550s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final u.h f44883t;
+    private final u.h f43551t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final u.t f44884u;
+    private final u.t f43552u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final u.v f44885v;
+    private final u.v f43553v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final AtomicBoolean f44886w;
+    private final AtomicBoolean f43554w;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q4(a0.d2 d2Var, a0.d2 d2Var2, c3 c3Var, Executor executor, ScheduledExecutorService scheduledExecutorService, Handler handler) {
         super(c3Var, executor, scheduledExecutorService, handler);
-        this.f44879p = new Object();
+        this.f43547p = new Object();
         boolean z10 = false;
-        this.f44886w = new AtomicBoolean(false);
-        this.f44882s = new u.i(d2Var, d2Var2);
-        this.f44884u = new u.t((d2Var.a(CaptureSessionStuckQuirk.class) || d2Var.a(IncorrectCaptureStateQuirk.class)) ? true : true);
-        this.f44883t = new u.h(d2Var2);
-        this.f44885v = new u.v(d2Var2);
-        this.f44878o = scheduledExecutorService;
+        this.f43554w = new AtomicBoolean(false);
+        this.f43550s = new u.i(d2Var, d2Var2);
+        this.f43552u = new u.t((d2Var.a(CaptureSessionStuckQuirk.class) || d2Var.a(IncorrectCaptureStateQuirk.class)) ? true : true);
+        this.f43551t = new u.h(d2Var2);
+        this.f43553v = new u.v(d2Var2);
+        this.f43546o = scheduledExecutorService;
     }
 
     public static /* synthetic */ ListenableFuture G(q4 q4Var, CameraDevice cameraDevice, s.p pVar, List list, List list2) {
-        if (q4Var.f44885v.a()) {
+        if (q4Var.f43553v.a()) {
             q4Var.I();
         }
         q4Var.J("start openCaptureSession");
@@ -71,7 +71,7 @@ public class q4 extends m4 {
     }
 
     private void I() {
-        for (g4 g4Var : this.f44832b.d()) {
+        for (g4 g4Var : this.f43500b.d()) {
             g4Var.close();
         }
     }
@@ -83,8 +83,8 @@ public class q4 extends m4 {
     @Override // q.m4, q.g4.a
     public ListenableFuture b(List list, long j10) {
         ListenableFuture b10;
-        synchronized (this.f44879p) {
-            this.f44880q = list;
+        synchronized (this.f43547p) {
+            this.f43548q = list;
             b10 = super.b(list, j10);
         }
         return b10;
@@ -92,11 +92,11 @@ public class q4 extends m4 {
 
     @Override // q.m4, q.g4
     public void close() {
-        if (!this.f44886w.compareAndSet(false, true)) {
+        if (!this.f43554w.compareAndSet(false, true)) {
             J("close() has been called. Skip this invocation.");
             return;
         }
-        if (this.f44885v.a()) {
+        if (this.f43553v.a()) {
             try {
                 J("Call abortCaptures() before closing session.");
                 f();
@@ -105,7 +105,7 @@ public class q4 extends m4 {
             }
         }
         J("Session call close()");
-        this.f44884u.e().a(new Runnable() { // from class: q.o4
+        this.f43552u.e().a(new Runnable() { // from class: q.o4
             @Override // java.lang.Runnable
             public final void run() {
                 q4.H(q4.this);
@@ -116,18 +116,18 @@ public class q4 extends m4 {
     @Override // q.m4, q.g4
     public void d() {
         super.d();
-        this.f44884u.g();
+        this.f43552u.g();
     }
 
     @Override // q.m4, q.g4
     public void e(int i10) {
         super.e(i10);
         if (i10 == 5) {
-            synchronized (this.f44879p) {
+            synchronized (this.f43547p) {
                 try {
-                    if (D() && this.f44880q != null) {
+                    if (D() && this.f43548q != null) {
                         J("Close DeferrableSurfaces for CameraDevice error.");
-                        for (a0.w0 w0Var : this.f44880q) {
+                        for (a0.w0 w0Var : this.f43548q) {
                             w0Var.d();
                         }
                     }
@@ -140,21 +140,21 @@ public class q4 extends m4 {
 
     @Override // q.m4, q.g4
     public int h(CaptureRequest captureRequest, CameraCaptureSession.CaptureCallback captureCallback) {
-        return super.h(captureRequest, this.f44884u.d(captureCallback));
+        return super.h(captureRequest, this.f43552u.d(captureCallback));
     }
 
     @Override // q.m4, q.g4.a
     public ListenableFuture i(final CameraDevice cameraDevice, final s.p pVar, final List list) {
         ListenableFuture s10;
-        synchronized (this.f44879p) {
+        synchronized (this.f43547p) {
             try {
-                List<g4> d10 = this.f44832b.d();
+                List<g4> d10 = this.f43500b.d();
                 ArrayList arrayList = new ArrayList();
                 for (g4 g4Var : d10) {
                     arrayList.add(g4Var.n());
                 }
                 ListenableFuture w10 = d0.n.w(arrayList);
-                this.f44881r = w10;
+                this.f43549r = w10;
                 s10 = d0.n.s(d0.d.b(w10).f(new d0.a() { // from class: q.p4
                     @Override // d0.a
                     public final ListenableFuture apply(Object obj) {
@@ -170,18 +170,18 @@ public class q4 extends m4 {
 
     @Override // q.m4, q.g4
     public int j(List list, CameraCaptureSession.CaptureCallback captureCallback) {
-        return super.j(list, this.f44884u.d(captureCallback));
+        return super.j(list, this.f43552u.d(captureCallback));
     }
 
     @Override // q.g4
     public ListenableFuture n() {
-        return d0.n.q(1500L, this.f44878o, this.f44884u.e());
+        return d0.n.q(1500L, this.f43546o, this.f43552u.e());
     }
 
     @Override // q.m4, q.g4.c
     public void q(g4 g4Var) {
-        synchronized (this.f44879p) {
-            this.f44882s.a(this.f44880q);
+        synchronized (this.f43547p) {
+            this.f43550s.a(this.f43548q);
         }
         J("onClosed()");
         super.q(g4Var);
@@ -190,7 +190,7 @@ public class q4 extends m4 {
     @Override // q.m4, q.g4.c
     public void s(g4 g4Var) {
         J("Session onConfigured()");
-        this.f44883t.c(g4Var, this.f44832b.e(), this.f44832b.d(), new h.a() { // from class: q.n4
+        this.f43551t.c(g4Var, this.f43500b.e(), this.f43500b.d(), new h.a() { // from class: q.n4
             @Override // u.h.a
             public final void a(g4 g4Var2) {
                 super/*q.m4*/.s(g4Var2);
@@ -201,12 +201,12 @@ public class q4 extends m4 {
     @Override // q.m4, q.g4.a
     public boolean stop() {
         boolean stop;
-        synchronized (this.f44879p) {
+        synchronized (this.f43547p) {
             try {
                 if (D()) {
-                    this.f44882s.a(this.f44880q);
+                    this.f43550s.a(this.f43548q);
                 } else {
-                    ListenableFuture listenableFuture = this.f44881r;
+                    ListenableFuture listenableFuture = this.f43549r;
                     if (listenableFuture != null) {
                         listenableFuture.cancel(true);
                     }

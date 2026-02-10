@@ -13,7 +13,7 @@ import android.text.style.ClickableSpan;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.ViewGroup;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import com.facebook.react.uimanager.BackgroundStyleApplicator;
 import com.facebook.react.uimanager.ReactCompoundView;
 import com.facebook.react.uimanager.ViewProps;
@@ -216,7 +216,7 @@ public final class PreparedLayoutTextView extends ViewGroup implements ReactComp
         PreparedLayout preparedLayout = this.preparedLayout;
         boolean z10 = false;
         if (preparedLayout != null) {
-            i12 = gs.a.c(preparedLayout.getVerticalOffset());
+            i12 = ps.a.c(preparedLayout.getVerticalOffset());
         } else {
             i12 = 0;
         }
@@ -295,8 +295,8 @@ public final class PreparedLayoutTextView extends ViewGroup implements ReactComp
     @Override // android.view.ViewGroup, android.view.View
     public boolean dispatchKeyEvent(@NotNull KeyEvent event) {
         Intrinsics.checkNotNullParameter(event, "event");
-        androidx.core.view.a l10 = h0.l(this);
-        if (((l10 instanceof ReactTextViewAccessibilityDelegate) && ((ReactTextViewAccessibilityDelegate) l10).dispatchKeyEvent(event)) || super.dispatchKeyEvent(event)) {
+        androidx.core.view.a k10 = i0.k(this);
+        if (((k10 instanceof ReactTextViewAccessibilityDelegate) && ((ReactTextViewAccessibilityDelegate) k10).dispatchKeyEvent(event)) || super.dispatchKeyEvent(event)) {
             return true;
         }
         return false;
@@ -398,9 +398,9 @@ public final class PreparedLayoutTextView extends ViewGroup implements ReactComp
             clearSelection();
         }
         super.onFocusChanged(z10, i10, rect);
-        androidx.core.view.a l10 = h0.l(this);
-        if (l10 != null && (l10 instanceof ReactTextViewAccessibilityDelegate)) {
-            ((ReactTextViewAccessibilityDelegate) l10).onFocusChanged(z10, i10, rect);
+        androidx.core.view.a k10 = i0.k(this);
+        if (k10 != null && (k10 instanceof ReactTextViewAccessibilityDelegate)) {
+            ((ReactTextViewAccessibilityDelegate) k10).onFocusChanged(z10, i10, rect);
         }
     }
 
@@ -448,7 +448,7 @@ public final class PreparedLayoutTextView extends ViewGroup implements ReactComp
 
     @Override // com.facebook.react.uimanager.ReactCompoundView
     public int reactTagForTouch(float f10, float f11) {
-        ReactTagSpan reactTagSpan = (ReactTagSpan) getSpanInCoords(gs.a.c(f10), gs.a.c(f11), ReactTagSpan.class);
+        ReactTagSpan reactTagSpan = (ReactTagSpan) getSpanInCoords(ps.a.c(f10), ps.a.c(f11), ReactTagSpan.class);
         if (reactTagSpan != null) {
             return reactTagSpan.getReactTag();
         }

@@ -1,44 +1,44 @@
 package x4;
 
+import av.c0;
 import java.io.Closeable;
 import okio.BufferedSource;
-import ru.c0;
 import x4.r;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class q extends r {
 
     /* renamed from: d  reason: collision with root package name */
-    private final c0 f54636d;
+    private final c0 f54368d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ru.h f54637e;
+    private final av.h f54369e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f54638i;
+    private final String f54370i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Closeable f54639o;
+    private final Closeable f54371o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final r.a f54640p;
+    private final r.a f54372p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f54641q;
+    private boolean f54373q;
 
     /* renamed from: r  reason: collision with root package name */
-    private BufferedSource f54642r;
+    private BufferedSource f54374r;
 
-    public q(c0 c0Var, ru.h hVar, String str, Closeable closeable, r.a aVar) {
+    public q(c0 c0Var, av.h hVar, String str, Closeable closeable, r.a aVar) {
         super(null);
-        this.f54636d = c0Var;
-        this.f54637e = hVar;
-        this.f54638i = str;
-        this.f54639o = closeable;
-        this.f54640p = aVar;
+        this.f54368d = c0Var;
+        this.f54369e = hVar;
+        this.f54370i = str;
+        this.f54371o = closeable;
+        this.f54372p = aVar;
     }
 
-    private final void k() {
-        if (!this.f54641q) {
+    private final void i() {
+        if (!this.f54373q) {
             return;
         }
         throw new IllegalStateException("closed");
@@ -46,18 +46,18 @@ public final class q extends r {
 
     @Override // x4.r
     public r.a a() {
-        return this.f54640p;
+        return this.f54372p;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public synchronized void close() {
         try {
-            this.f54641q = true;
-            BufferedSource bufferedSource = this.f54642r;
+            this.f54373q = true;
+            BufferedSource bufferedSource = this.f54374r;
             if (bufferedSource != null) {
                 k5.k.d(bufferedSource);
             }
-            Closeable closeable = this.f54639o;
+            Closeable closeable = this.f54371o;
             if (closeable != null) {
                 k5.k.d(closeable);
             }
@@ -67,22 +67,22 @@ public final class q extends r {
     }
 
     @Override // x4.r
-    public synchronized BufferedSource g() {
-        k();
-        BufferedSource bufferedSource = this.f54642r;
+    public synchronized BufferedSource h() {
+        i();
+        BufferedSource bufferedSource = this.f54374r;
         if (bufferedSource != null) {
             return bufferedSource;
         }
-        BufferedSource d10 = ru.x.d(n().q(this.f54636d));
-        this.f54642r = d10;
+        BufferedSource d10 = av.x.d(n().q(this.f54368d));
+        this.f54374r = d10;
         return d10;
     }
 
     public final String m() {
-        return this.f54638i;
+        return this.f54370i;
     }
 
-    public ru.h n() {
-        return this.f54637e;
+    public av.h n() {
+        return this.f54369e;
     }
 }

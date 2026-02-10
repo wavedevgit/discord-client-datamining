@@ -496,16 +496,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = _closure2_slot0;
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun12638_ip = 113;
+                        _fun12638_ip = 114;
                         continue _fun12638
                     }
-                case 89:
+                case 90:
                     var4 = _closure2_slot0;
                     var3 = var4.recordDroppedEvent;
                     var2 = 'sample_rate';
                     var1 = 'transaction';
                     var1 = var3.bind(var4)(var2, var1);
-                case 113:
+                case 114:
                     return var0;
             }
         };
@@ -565,7 +565,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = _closure2_slot0;
                             var0 = arg0;
                             if (!(var0 === var2)) {
-                                _fun12640_ip = 170;
+                                _fun12640_ip = 171;
                                 continue _fun12640
                             }
                         case 17:
@@ -581,7 +581,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var2.length;
                             var2 = 1;
                             if (!(var3 <= var2)) {
-                                _fun12640_ip = 170;
+                                _fun12640_ip = 171;
                                 continue _fun12640
                             }
                         case 69:
@@ -606,7 +606,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = var2.bind(var3)(var0);
                             var0 = false;
                             var1._sampled = var0;
-                        case 170:
+                        case 171:
                             var0 = undefined;
                             return var0;
                     }
@@ -632,7 +632,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = 'background';
                             var0 = arg0;
                             if (!(var1 === var0)) {
-                                _fun12642_ip = 167;
+                                _fun12642_ip = 168;
                                 continue _fun12642
                             }
                         case 14:
@@ -668,7 +668,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = var2.bind(var1)(var0);
                             var0 = var1.end;
                             var0 = var0.bind(var1)();
-                        case 167:
+                        case 168:
                             var0 = undefined;
                             return var0;
                     }
@@ -688,7 +688,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = _closure2_slot0;
                             var1 = arg0;
                             if (!(var1 === var2)) {
-                                _fun12643_ip = 171;
+                                _fun12643_ip = 172;
                                 continue _fun12643
                             }
                         case 17:
@@ -718,30 +718,30 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = var1 == var2;
                             var2 = undefined;
                             if (var4) {
-                                _fun12643_ip = 143;
+                                _fun12643_ip = 144;
                                 continue _fun12643
                             }
-                        case 133:
+                        case 134:
                             var4 = _closure2_slot1;
                             var2 = var4.remove;
-                        case 143:
+                        case 144:
                             var1 = var1 === var2;
                             if (var1) {
-                                _fun12643_ip = 154;
+                                _fun12643_ip = 155;
                                 continue _fun12643
                             }
-                        case 150:
+                        case 151:
                             var1 = var3 === var2;
-                        case 154:
+                        case 155:
                             if (var1) {
-                                _fun12643_ip = 171;
+                                _fun12643_ip = 172;
                                 continue _fun12643
                             }
-                        case 157:
+                        case 158:
                             var1 = var2.call;
                             var0 = _closure2_slot1;
                             var0 = var1.bind(var2)(var0);
-                        case 171:
+                        case 172:
                             var0 = undefined;
                             return var0;
                     }

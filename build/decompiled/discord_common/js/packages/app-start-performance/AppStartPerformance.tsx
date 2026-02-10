@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = this;
                             var0 = var1.isTracing;
                             if (!var0) {
-                                _fun268_ip = 116;
+                                _fun268_ip = 117;
                                 continue _fun268
                             }
                         case 12:
@@ -238,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var2.bind(var3)(var0);
                             var0 = var1.addImportLogDetail;
                             var0 = var0.bind(var1)();
-                        case 116:
+                        case 117:
                             var0 = undefined;
                             return var0;
                     }
@@ -258,10 +258,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.bind(var2)(var4);
                             var0 = var1.isTracing;
                             if (!var0) {
-                                _fun269_ip = 109;
+                                _fun269_ip = 111;
                                 continue _fun269
                             }
-                        case 28:
+                        case 29:
                             var3 = var1.logs;
                             var2 = var3.push;
                             var0 = {};
@@ -280,7 +280,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var2.bind(var3)(var0);
                             var0 = var1.addImportLogDetail;
                             var0 = var0.bind(var1)();
-                        case 109:
+                        case 111:
                             var0 = undefined;
                             return var0;
                     }
@@ -377,7 +377,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = this;
                             var0 = var6.isTracing;
                             if (!var0) {
-                                _fun272_ip = 177;
+                                _fun272_ip = 178;
                                 continue _fun272
                             }
                         case 18:
@@ -429,24 +429,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var5 == var7;
                             var6 = undefined;
                             if (var8) {
-                                _fun272_ip = 151;
+                                _fun272_ip = 152;
                                 continue _fun272
                             }
-                        case 145:
+                        case 146:
                             var6 = var7.prefix;
-                        case 151:
+                        case 152:
                             var7 = var5 != var6;
                             var5 = '';
                             if (!var7) {
-                                _fun272_ip = 165;
+                                _fun272_ip = 166;
                                 continue _fun272
                             }
-                        case 162:
+                        case 163:
                             var5 = var6;
-                        case 165:
+                        case 166:
                             var0.prefix = var5;
                             var0 = var1.bind(var2)(var3, var4, var0);
-                        case 177:
+                        case 178:
                             var0 = undefined;
                             return var0;
                     }
@@ -462,7 +462,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = this;
                             var0 = var3.isTracing;
                             if (!var0) {
-                                _fun273_ip = 122;
+                                _fun273_ip = 123;
                                 continue _fun273
                             }
                         case 12:
@@ -489,7 +489,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var7.bind(var6)(var5, var4, var3);
                             var0.log = var3;
                             var0 = var1.bind(var2)(var0);
-                        case 122:
+                        case 123:
                             var0 = undefined;
                             return var0;
                     }

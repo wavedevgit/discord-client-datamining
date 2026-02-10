@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun110214: for (var _fun110214_ip = 0;;) switch (_fun110214_ip) {
+        _fun110266: for (var _fun110266_ip = 0;;) switch (_fun110266_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun110214_ip = 76;
-                continue _fun110214;
+                _fun110266_ip = 76;
+                continue _fun110266;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.Component;
     var1 = function(arg0) { // Environment: var1
         var3 = function arg0() {
-            _fun110218: for (var _fun110218_ip = 0;;) switch (_fun110218_ip) {
+            _fun110270: for (var _fun110270_ip = 0;;) switch (_fun110270_ip) {
                 case 0:
                     var3 = this;
                     var11 = 0;
@@ -113,14 +113,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot10;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun110218_ip = 84;
-                        continue _fun110218
+                        _fun110270_ip = 84;
+                        continue _fun110270
                     }
                 case 71:
                     var0 = var7.apply;
                     var0 = var0.bind(var7)(var3, var8);
-                    _fun110218_ip = 118;
-                    continue _fun110218;
+                    _fun110270_ip = 118;
+                    continue _fun110270;
                 case 84:
                     var5 = global;
                     var6 = var5.Reflect;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'render';
         var4.key = var5;
         var0 = function() {
-            _fun110220: for (var _fun110220_ip = 0;;) switch (_fun110220_ip) {
+            _fun110272: for (var _fun110272_ip = 0;;) switch (_fun110272_ip) {
                 case 0:
                     var2 = _closure1_slot8;
                     var1 = var2.isAFKChannel;
@@ -173,8 +173,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var10.bind(var3)(var2);
                     var2 = var2.t;
                     if (var4) {
-                        _fun110220_ip = 141;
-                        continue _fun110220
+                        _fun110272_ip = 141;
+                        continue _fun110272
                     }
                 case 68:
                     var4 = var2.FJSZVM;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = 11;
                     var4 = var9[var4];
                     var4 = var11.bind(var3)(var4);
-                    _fun110220_ip = 214;
-                    continue _fun110220;
+                    _fun110272_ip = 214;
+                    continue _fun110272;
                 case 141:
                     var2 = var2.KuYcnU;
                     var6 = var7.bind(var8)(var2);
@@ -243,4 +243,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 12566, 33, 14168, 1234, 14169, 14170, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 12577, 33, 14177, 1234, 14178, 14179, 3938, 2]);

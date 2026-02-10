@@ -93,15 +93,15 @@ public abstract class SwitchCompat extends CompoundButton {
     public static class EmojiCompatInitCallback extends e.f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Reference f1678a;
+        private final Reference f1680a;
 
         EmojiCompatInitCallback(SwitchCompat switchCompat) {
-            this.f1678a = new WeakReference(switchCompat);
+            this.f1680a = new WeakReference(switchCompat);
         }
 
         @Override // androidx.emoji2.text.e.f
         public void a(Throwable th2) {
-            SwitchCompat switchCompat = (SwitchCompat) this.f1678a.get();
+            SwitchCompat switchCompat = (SwitchCompat) this.f1680a.get();
             if (switchCompat != null) {
                 switchCompat.onEmojiCompatInitializedForSwitchText();
             }
@@ -109,7 +109,7 @@ public abstract class SwitchCompat extends CompoundButton {
 
         @Override // androidx.emoji2.text.e.f
         public void b() {
-            SwitchCompat switchCompat = (SwitchCompat) this.f1678a.get();
+            SwitchCompat switchCompat = (SwitchCompat) this.f1680a.get();
             if (switchCompat != null) {
                 switchCompat.onEmojiCompatInitializedForSwitchText();
             }
@@ -252,7 +252,7 @@ public abstract class SwitchCompat extends CompoundButton {
             if (drawable2 != null) {
                 rect = e0.d(drawable2);
             } else {
-                rect = e0.f1765c;
+                rect = e0.f1768c;
             }
             return ((((this.mSwitchWidth - this.mThumbWidth) - rect2.left) - rect2.right) - rect.left) - rect.right;
         }
@@ -293,9 +293,9 @@ public abstract class SwitchCompat extends CompoundButton {
         if (Build.VERSION.SDK_INT >= 30) {
             CharSequence charSequence = this.mTextOff;
             if (charSequence == null) {
-                charSequence = getResources().getString(f.h.f22274b);
+                charSequence = getResources().getString(f.h.f23397b);
             }
-            androidx.core.view.h0.I0(this, charSequence);
+            androidx.core.view.i0.B0(this, charSequence);
         }
     }
 
@@ -303,9 +303,9 @@ public abstract class SwitchCompat extends CompoundButton {
         if (Build.VERSION.SDK_INT >= 30) {
             CharSequence charSequence = this.mTextOn;
             if (charSequence == null) {
-                charSequence = getResources().getString(f.h.f22275c);
+                charSequence = getResources().getString(f.h.f23398c);
             }
-            androidx.core.view.h0.I0(this, charSequence);
+            androidx.core.view.i0.B0(this, charSequence);
         }
     }
 
@@ -402,7 +402,7 @@ public abstract class SwitchCompat extends CompoundButton {
         if (drawable != null) {
             rect = e0.d(drawable);
         } else {
-            rect = e0.f1765c;
+            rect = e0.f1768c;
         }
         Drawable drawable2 = this.mTrackDrawable;
         if (drawable2 != null) {
@@ -511,7 +511,7 @@ public abstract class SwitchCompat extends CompoundButton {
 
     @Override // android.widget.TextView
     public ActionMode.Callback getCustomSelectionActionModeCallback() {
-        return androidx.core.widget.j.u(super.getCustomSelectionActionModeCallback());
+        return androidx.core.widget.j.s(super.getCustomSelectionActionModeCallback());
     }
 
     public boolean getShowText() {
@@ -974,7 +974,7 @@ public abstract class SwitchCompat extends CompoundButton {
 
     @Override // android.widget.TextView
     public void setCustomSelectionActionModeCallback(ActionMode.Callback callback) {
-        super.setCustomSelectionActionModeCallback(androidx.core.widget.j.v(this, callback));
+        super.setCustomSelectionActionModeCallback(androidx.core.widget.j.t(this, callback));
     }
 
     public void setEmojiCompatEnabled(boolean z10) {
@@ -1037,7 +1037,7 @@ public abstract class SwitchCompat extends CompoundButton {
             }
         }
         l(t10.k(f.j.U2, -1), t10.k(f.j.V2, -1));
-        if (t10.a(f.j.f22300b3, false)) {
+        if (t10.a(f.j.f23455h3, false)) {
             this.mSwitchTransformationMethod = new j.a(getContext());
         } else {
             this.mSwitchTransformationMethod = null;
@@ -1162,7 +1162,7 @@ public abstract class SwitchCompat extends CompoundButton {
     }
 
     public SwitchCompat(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.J);
+        this(context, attributeSet, f.a.K);
     }
 
     public SwitchCompat(Context context, AttributeSet attributeSet, int i10) {
@@ -1183,7 +1183,7 @@ public abstract class SwitchCompat extends CompoundButton {
         this.mTextPaint = textPaint;
         textPaint.density = getResources().getDisplayMetrics().density;
         v0 v10 = v0.v(context, attributeSet, f.j.D2, i10, 0);
-        androidx.core.view.h0.l0(this, context, f.j.D2, attributeSet, v10.r(), i10, 0);
+        androidx.core.view.i0.i0(this, context, f.j.D2, attributeSet, v10.r(), i10, 0);
         Drawable g10 = v10.g(f.j.G2);
         this.mThumbDrawable = g10;
         if (g10 != null) {

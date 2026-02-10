@@ -5,22 +5,22 @@ import hf.q;
 import java.lang.reflect.Field;
 import tf.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class b extends a.AbstractBinderC0694a {
+public final class b extends a.AbstractBinderC0660a {
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f50850c;
+    private final Object f48782c;
 
     private b(Object obj) {
-        this.f50850c = obj;
+        this.f48782c = obj;
     }
 
     public static a W0(Object obj) {
         return new b(obj);
     }
 
-    public static Object h(a aVar) {
+    public static Object i(a aVar) {
         if (aVar instanceof b) {
-            return ((b) aVar).f50850c;
+            return ((b) aVar).f48782c;
         }
         IBinder asBinder = aVar.asBinder();
         Field[] declaredFields = asBinder.getClass().getDeclaredFields();

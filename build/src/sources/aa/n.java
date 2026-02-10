@@ -44,7 +44,7 @@ public final class n {
     static {
         n[] a10 = a();
         f524r = a10;
-        f525s = yr.a.a(a10);
+        f525s = hs.a.a(a10);
         f519e = new a(null);
         f520i = values();
     }

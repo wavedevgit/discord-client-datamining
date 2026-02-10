@@ -51,7 +51,7 @@ public abstract class BasePendingResult<R extends k> extends g {
                     Log.wtf("BasePendingResult", "Don't know how to handle message: " + i10, new Exception());
                     return;
                 }
-                ((BasePendingResult) message.obj).forceFailureUnlessReady(Status.f13877t);
+                ((BasePendingResult) message.obj).forceFailureUnlessReady(Status.f14454t);
                 return;
             }
             Pair pair = (Pair) message.obj;
@@ -139,10 +139,10 @@ public abstract class BasePendingResult<R extends k> extends g {
         q.o(true, "Cannot await if then() has been called.");
         try {
             if (!this.zaf.await(j10, timeUnit)) {
-                forceFailureUnlessReady(Status.f13877t);
+                forceFailureUnlessReady(Status.f14454t);
             }
         } catch (InterruptedException unused) {
-            forceFailureUnlessReady(Status.f13875r);
+            forceFailureUnlessReady(Status.f14452r);
         }
         q.o(isReady(), "Result is not ready.");
         return (R) b();

@@ -1,17 +1,44 @@
 package kt;
 
-import kotlinx.serialization.KSerializer;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface h0 extends KSerializer {
+public final class h0 {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static KSerializer[] a(h0 h0Var) {
-            return c2.f35121a;
-        }
+    /* renamed from: d  reason: collision with root package name */
+    public static final h0 f35199d = new h0("NONE", 0);
+
+    /* renamed from: e  reason: collision with root package name */
+    public static final h0 f35200e = new h0("ZERO", 1);
+
+    /* renamed from: i  reason: collision with root package name */
+    public static final h0 f35201i = new h0("SPACE", 2);
+
+    /* renamed from: o  reason: collision with root package name */
+    private static final /* synthetic */ h0[] f35202o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f35203p;
+
+    static {
+        h0[] a10 = a();
+        f35202o = a10;
+        f35203p = hs.a.a(a10);
     }
 
-    KSerializer[] childSerializers();
+    private h0(String str, int i10) {
+    }
 
-    KSerializer[] typeParametersSerializers();
+    private static final /* synthetic */ h0[] a() {
+        return new h0[]{f35199d, f35200e, f35201i};
+    }
+
+    public static h0 valueOf(String str) {
+        return (h0) Enum.valueOf(h0.class, str);
+    }
+
+    public static h0[] values() {
+        return (h0[]) f35202o.clone();
+    }
 }

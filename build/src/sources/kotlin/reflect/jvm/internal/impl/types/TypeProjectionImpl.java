@@ -7,10 +7,10 @@ import org.jetbrains.annotations.NotNull;
 public class TypeProjectionImpl extends TypeProjectionBase {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Variance f34386a;
+    private final Variance f34608a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final KotlinType f34387b;
+    private final KotlinType f34609b;
 
     public TypeProjectionImpl(@NotNull Variance variance, @NotNull KotlinType kotlinType) {
         if (variance == null) {
@@ -19,8 +19,8 @@ public class TypeProjectionImpl extends TypeProjectionBase {
         if (kotlinType == null) {
             a(1);
         }
-        this.f34386a = variance;
-        this.f34387b = kotlinType;
+        this.f34608a = variance;
+        this.f34609b = kotlinType;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -69,7 +69,7 @@ public class TypeProjectionImpl extends TypeProjectionBase {
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeProjection
     @NotNull
     public Variance getProjectionKind() {
-        Variance variance = this.f34386a;
+        Variance variance = this.f34608a;
         if (variance == null) {
             a(4);
         }
@@ -79,7 +79,7 @@ public class TypeProjectionImpl extends TypeProjectionBase {
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeProjection
     @NotNull
     public KotlinType getType() {
-        KotlinType kotlinType = this.f34387b;
+        KotlinType kotlinType = this.f34609b;
         if (kotlinType == null) {
             a(5);
         }
@@ -97,7 +97,7 @@ public class TypeProjectionImpl extends TypeProjectionBase {
         if (kotlinTypeRefiner == null) {
             a(6);
         }
-        return new TypeProjectionImpl(this.f34386a, kotlinTypeRefiner.refineType((KotlinTypeMarker) this.f34387b));
+        return new TypeProjectionImpl(this.f34608a, kotlinTypeRefiner.refineType((KotlinTypeMarker) this.f34609b));
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

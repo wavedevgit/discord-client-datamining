@@ -1,12 +1,12 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import bn.c;
 import com.squareup.moshi.a0;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.Footer;
+import dn.c;
 import java.lang.reflect.Constructor;
 import java.util.List;
 import kotlin.Metadata;
@@ -59,7 +59,7 @@ public final class Footer_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 list = (List) this.listOfUiComponentConfigAdapter.fromJson(reader);
@@ -79,7 +79,7 @@ public final class Footer_AttributesJsonAdapter extends h {
         }
         Constructor<Footer.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = Footer.Attributes.class.getDeclaredConstructor(List.class, Integer.class, Integer.TYPE, c.f7152c);
+            constructor = Footer.Attributes.class.getDeclaredConstructor(List.class, Integer.class, Integer.TYPE, c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -92,7 +92,7 @@ public final class Footer_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, Footer.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("children");
             this.listOfUiComponentConfigAdapter.toJson(writer, attributes.getChildren());
             writer.J("firstBelowTheFoldChildIndex");

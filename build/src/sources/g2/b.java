@@ -9,31 +9,31 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class b {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f23332i = new a(null);
+    public static final a f24632i = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f23333a;
+    private final String f24633a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Bundle f23334b;
+    private final Bundle f24634b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Bundle f23335c;
+    private final Bundle f24635c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f23336d;
+    private final boolean f24636d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f23337e;
+    private final boolean f24637e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final C0367b f23338f;
+    private final C0338b f24638f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f23339g;
+    private final String f24639g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f23340h;
+    private final boolean f24640h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -47,22 +47,22 @@ public abstract class b {
 
     /* renamed from: g2.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0367b {
+    public static final class C0338b {
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f23341e = new a(null);
+        public static final a f24641e = new a(null);
 
         /* renamed from: a  reason: collision with root package name */
-        private final CharSequence f23342a;
+        private final CharSequence f24642a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final CharSequence f23343b;
+        private final CharSequence f24643b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Icon f23344c;
+        private final Icon f24644c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f23345d;
+        private final String f24645d;
 
         /* renamed from: g2.b$b$a */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -75,12 +75,12 @@ public abstract class b {
             }
         }
 
-        public C0367b(CharSequence userId, CharSequence charSequence, Icon icon, String str) {
+        public C0338b(CharSequence userId, CharSequence charSequence, Icon icon, String str) {
             Intrinsics.checkNotNullParameter(userId, "userId");
-            this.f23342a = userId;
-            this.f23343b = charSequence;
-            this.f23344c = icon;
-            this.f23345d = str;
+            this.f24642a = userId;
+            this.f24643b = charSequence;
+            this.f24644c = icon;
+            this.f24645d = str;
             if (userId.length() > 0) {
                 return;
             }
@@ -89,56 +89,56 @@ public abstract class b {
 
         public final Bundle a() {
             Bundle bundle = new Bundle();
-            bundle.putCharSequence("androidx.credentials.BUNDLE_KEY_USER_ID", this.f23342a);
-            if (!TextUtils.isEmpty(this.f23343b)) {
-                bundle.putCharSequence("androidx.credentials.BUNDLE_KEY_USER_DISPLAY_NAME", this.f23343b);
+            bundle.putCharSequence("androidx.credentials.BUNDLE_KEY_USER_ID", this.f24642a);
+            if (!TextUtils.isEmpty(this.f24643b)) {
+                bundle.putCharSequence("androidx.credentials.BUNDLE_KEY_USER_DISPLAY_NAME", this.f24643b);
             }
-            if (!TextUtils.isEmpty(this.f23345d)) {
-                bundle.putString("androidx.credentials.BUNDLE_KEY_DEFAULT_PROVIDER", this.f23345d);
+            if (!TextUtils.isEmpty(this.f24645d)) {
+                bundle.putString("androidx.credentials.BUNDLE_KEY_DEFAULT_PROVIDER", this.f24645d);
             }
             return bundle;
         }
     }
 
-    public b(String type, Bundle credentialData, Bundle candidateQueryData, boolean z10, boolean z11, C0367b displayInfo, String str, boolean z12) {
+    public b(String type, Bundle credentialData, Bundle candidateQueryData, boolean z10, boolean z11, C0338b displayInfo, String str, boolean z12) {
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(credentialData, "credentialData");
         Intrinsics.checkNotNullParameter(candidateQueryData, "candidateQueryData");
         Intrinsics.checkNotNullParameter(displayInfo, "displayInfo");
-        this.f23333a = type;
-        this.f23334b = credentialData;
-        this.f23335c = candidateQueryData;
-        this.f23336d = z10;
-        this.f23337e = z11;
-        this.f23338f = displayInfo;
-        this.f23339g = str;
-        this.f23340h = z12;
+        this.f24633a = type;
+        this.f24634b = credentialData;
+        this.f24635c = candidateQueryData;
+        this.f24636d = z10;
+        this.f24637e = z11;
+        this.f24638f = displayInfo;
+        this.f24639g = str;
+        this.f24640h = z12;
         credentialData.putBoolean("androidx.credentials.BUNDLE_KEY_IS_AUTO_SELECT_ALLOWED", z11);
         credentialData.putBoolean("androidx.credentials.BUNDLE_KEY_PREFER_IMMEDIATELY_AVAILABLE_CREDENTIALS", z12);
         candidateQueryData.putBoolean("androidx.credentials.BUNDLE_KEY_IS_AUTO_SELECT_ALLOWED", z11);
     }
 
     public final Bundle a() {
-        return this.f23335c;
+        return this.f24635c;
     }
 
     public final Bundle b() {
-        return this.f23334b;
+        return this.f24634b;
     }
 
-    public final C0367b c() {
-        return this.f23338f;
+    public final C0338b c() {
+        return this.f24638f;
     }
 
     public final String d() {
-        return this.f23339g;
+        return this.f24639g;
     }
 
     public final String e() {
-        return this.f23333a;
+        return this.f24633a;
     }
 
     public final boolean f() {
-        return this.f23336d;
+        return this.f24636d;
     }
 }

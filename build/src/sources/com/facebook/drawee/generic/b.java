@@ -20,7 +20,7 @@ import com.facebook.drawee.generic.a;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Drawable f10199a = new ColorDrawable(0);
+    private static final Drawable f10776a = new ColorDrawable(0);
 
     private static Drawable a(Drawable drawable, a aVar, Resources resources) {
         if (drawable instanceof BitmapDrawable) {
@@ -69,10 +69,10 @@ public abstract class b {
             if (za.b.d()) {
                 za.b.a("WrappingUtils#maybeApplyLeafRounding");
             }
-            if (drawable != null && aVar != null && aVar.m() == a.EnumC0173a.BITMAP_ONLY) {
+            if (drawable != null && aVar != null && aVar.m() == a.EnumC0150a.BITMAP_ONLY) {
                 if (drawable instanceof f) {
                     c c10 = c((f) drawable);
-                    c10.setDrawable(a(c10.setDrawable(f10199a), aVar, resources));
+                    c10.setDrawable(a(c10.setDrawable(f10776a), aVar, resources));
                     return drawable;
                 }
                 Drawable a10 = a(drawable, aVar, resources);
@@ -98,7 +98,7 @@ public abstract class b {
             if (za.b.d()) {
                 za.b.a("WrappingUtils#maybeWrapWithRoundedOverlayColor");
             }
-            if (drawable != null && aVar != null && aVar.m() == a.EnumC0173a.OVERLAY_COLOR) {
+            if (drawable != null && aVar != null && aVar.m() == a.EnumC0150a.OVERLAY_COLOR) {
                 k kVar = new k(drawable);
                 b(kVar, aVar);
                 kVar.j(aVar.h());
@@ -155,11 +155,11 @@ public abstract class b {
     public static void i(c cVar, a aVar, Resources resources) {
         c c10 = c(cVar);
         Drawable drawable = c10.getDrawable();
-        if (aVar != null && aVar.m() == a.EnumC0173a.BITMAP_ONLY) {
+        if (aVar != null && aVar.m() == a.EnumC0150a.BITMAP_ONLY) {
             if (drawable instanceof h) {
                 b((h) drawable, aVar);
             } else if (drawable != null) {
-                c10.setDrawable(f10199a);
+                c10.setDrawable(f10776a);
                 c10.setDrawable(a(drawable, aVar, resources));
             }
         } else if (drawable instanceof h) {
@@ -170,16 +170,16 @@ public abstract class b {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void j(c cVar, a aVar) {
         Drawable drawable = cVar.getDrawable();
-        if (aVar != null && aVar.m() == a.EnumC0173a.OVERLAY_COLOR) {
+        if (aVar != null && aVar.m() == a.EnumC0150a.OVERLAY_COLOR) {
             if (drawable instanceof k) {
                 k kVar = (k) drawable;
                 b(kVar, aVar);
                 kVar.j(aVar.h());
                 return;
             }
-            cVar.setDrawable(e(cVar.setDrawable(f10199a), aVar));
+            cVar.setDrawable(e(cVar.setDrawable(f10776a), aVar));
         } else if (drawable instanceof k) {
-            Drawable drawable2 = f10199a;
+            Drawable drawable2 = f10776a;
             cVar.setDrawable(((k) drawable).setCurrent(drawable2));
             drawable2.setCallback(null);
         }
@@ -187,7 +187,7 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static n k(c cVar, ScalingUtils$ScaleType scalingUtils$ScaleType) {
-        Drawable f10 = f(cVar.setDrawable(f10199a), scalingUtils$ScaleType);
+        Drawable f10 = f(cVar.setDrawable(f10776a), scalingUtils$ScaleType);
         cVar.setDrawable(f10);
         p8.j.h(f10, "Parent has no child drawable!");
         return (n) f10;

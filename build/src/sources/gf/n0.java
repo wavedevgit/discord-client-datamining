@@ -9,26 +9,26 @@ import com.google.android.gms.tasks.Task;
 public final class n0 implements OnCompleteListener {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f24342a;
+    private final e f25642a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f24343b;
+    private final int f25643b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b f24344c;
+    private final b f25644c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f24345d;
+    private final long f25645d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f24346e;
+    private final long f25646e;
 
     n0(e eVar, int i10, b bVar, long j10, long j11, String str, String str2) {
-        this.f24342a = eVar;
-        this.f24343b = i10;
-        this.f24344c = bVar;
-        this.f24345d = j10;
-        this.f24346e = j11;
+        this.f25642a = eVar;
+        this.f25643b = i10;
+        this.f25644c = bVar;
+        this.f25645d = j10;
+        this.f25646e = j11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -97,13 +97,13 @@ public final class n0 implements OnCompleteListener {
         int c10;
         long j10;
         long j11;
-        if (this.f24342a.e()) {
+        if (this.f25642a.e()) {
             hf.s a10 = hf.r.b().a();
-            if ((a10 == null || a10.d()) && (t10 = this.f24342a.t(this.f24344c)) != null && (t10.v() instanceof hf.c)) {
+            if ((a10 == null || a10.d()) && (t10 = this.f25642a.t(this.f25644c)) != null && (t10.v() instanceof hf.c)) {
                 hf.c cVar = (hf.c) t10.v();
                 boolean z11 = true;
                 int i13 = 0;
-                if (this.f24345d > 0) {
+                if (this.f25645d > 0) {
                     z10 = true;
                 } else {
                     z10 = false;
@@ -116,9 +116,9 @@ public final class n0 implements OnCompleteListener {
                     int c11 = a10.c();
                     i10 = a10.f();
                     if (cVar.I() && !cVar.d()) {
-                        hf.e b11 = b(t10, cVar, this.f24343b);
+                        hf.e b11 = b(t10, cVar, this.f25643b);
                         if (b11 != null) {
-                            if (!b11.f() || this.f24345d <= 0) {
+                            if (!b11.f() || this.f25645d <= 0) {
                                 z11 = false;
                             }
                             c11 = b11.b();
@@ -134,7 +134,7 @@ public final class n0 implements OnCompleteListener {
                     i11 = 100;
                     i12 = 5000;
                 }
-                e eVar = this.f24342a;
+                e eVar = this.f25642a;
                 int i15 = -1;
                 if (task.p()) {
                     c10 = 0;
@@ -158,8 +158,8 @@ public final class n0 implements OnCompleteListener {
                     c10 = -1;
                 }
                 if (z10) {
-                    long j12 = this.f24345d;
-                    long j13 = this.f24346e;
+                    long j12 = this.f25645d;
+                    long j13 = this.f25646e;
                     long currentTimeMillis = System.currentTimeMillis();
                     i15 = (int) (SystemClock.elapsedRealtime() - j13);
                     j11 = currentTimeMillis;
@@ -168,7 +168,7 @@ public final class n0 implements OnCompleteListener {
                     j10 = 0;
                     j11 = 0;
                 }
-                eVar.C(new hf.n(this.f24343b, i13, c10, j10, j11, null, null, y10, i15), i10, i12, i11);
+                eVar.C(new hf.n(this.f25643b, i13, c10, j10, j11, null, null, y10, i15), i10, i12, i11);
             }
         }
     }

@@ -1,11 +1,11 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.styling;
 
-import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StyleElements;
+import dn.c;
 import kotlin.Metadata;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.Intrinsics;
@@ -46,7 +46,7 @@ public final class StyleElements_Size_PercentSizeJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0 && (d10 = (Double) this.doubleAdapter.fromJson(reader)) == null) {
                 throw c.x("percent", "percent", reader);
@@ -63,7 +63,7 @@ public final class StyleElements_Size_PercentSizeJsonAdapter extends h {
     public void toJson(@NotNull t writer, StyleElements.Size.PercentSize percentSize) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (percentSize != null) {
-            writer.k();
+            writer.i();
             writer.J("percent");
             this.doubleAdapter.toJson(writer, Double.valueOf(percentSize.getPercent()));
             writer.s();

@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class n implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function0 f34218d;
+    private final Function0 f34440d;
 
     public n(Function0 function0) {
-        this.f34218d = function0;
+        this.f34440d = function0;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Set d10;
-        d10 = DeserializedMemberScope.d(this.f34218d);
+        d10 = DeserializedMemberScope.d(this.f34440d);
         return d10;
     }
 }

@@ -1,5 +1,6 @@
 package kotlin.reflect.jvm.internal.impl.load.java.components;
 
+import as.v;
 import java.util.Map;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
@@ -15,21 +16,20 @@ import kotlin.reflect.jvm.internal.impl.resolve.constants.StringValue;
 import kotlin.reflect.jvm.internal.impl.storage.NotNullLazyValue;
 import kotlin.reflect.jvm.internal.impl.storage.StorageKt;
 import org.jetbrains.annotations.NotNull;
-import rr.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class JavaDeprecatedAnnotationDescriptor extends JavaAnnotationDescriptor {
 
     /* renamed from: h  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f32566h = {Reflection.property1(new PropertyReference1Impl(JavaDeprecatedAnnotationDescriptor.class, "allValueArguments", "getAllValueArguments()Ljava/util/Map;", 0))};
+    static final /* synthetic */ KProperty[] f32788h = {Reflection.property1(new PropertyReference1Impl(JavaDeprecatedAnnotationDescriptor.class, "allValueArguments", "getAllValueArguments()Ljava/util/Map;", 0))};
 
     /* renamed from: g  reason: collision with root package name */
-    private final NotNullLazyValue f32567g;
+    private final NotNullLazyValue f32789g;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public JavaDeprecatedAnnotationDescriptor(JavaAnnotation javaAnnotation, @NotNull LazyJavaResolverContext c10) {
         super(c10, javaAnnotation, StandardNames.FqNames.deprecated);
         Intrinsics.checkNotNullParameter(c10, "c");
-        this.f32567g = c10.getStorageManager().createLazyValue(c.f32581d);
+        this.f32789g = c10.getStorageManager().createLazyValue(c.f32803d);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -40,6 +40,6 @@ public final class JavaDeprecatedAnnotationDescriptor extends JavaAnnotationDesc
     @Override // kotlin.reflect.jvm.internal.impl.load.java.components.JavaAnnotationDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public Map<Name, ConstantValue<?>> getAllValueArguments() {
-        return (Map) StorageKt.getValue(this.f32567g, this, f32566h[0]);
+        return (Map) StorageKt.getValue(this.f32789g, this, f32788h[0]);
     }
 }

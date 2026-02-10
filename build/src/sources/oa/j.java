@@ -13,56 +13,56 @@ import oa.j;
 public final class j implements Supplier {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o f40352a;
+    private final o f38678a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final wa.y f40353b;
+    private final wa.y f38679b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final n f40354c;
+    private final n f38680c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ma.s f40355d;
+    private final ma.s f38681d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f40356e;
+    private final int f38682e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final DiskCacheConfig f40357f;
+    private final DiskCacheConfig f38683f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final DiskCacheConfig f40358g;
+    private final DiskCacheConfig f38684g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Map f40359h;
+    private final Map f38685h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Lazy f40360i;
+    private final Lazy f38686i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a implements b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Lazy f40361a;
+        private final Lazy f38687a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Lazy f40362b;
+        private final Lazy f38688b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Lazy f40363c;
+        private final Lazy f38689c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Lazy f40364d;
+        private final Lazy f38690d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Lazy f40365e;
+        private final Lazy f38691e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final Lazy f40366f;
+        private final Lazy f38692f;
 
         a(final j jVar) {
-            rr.o oVar = rr.o.f49209d;
-            this.f40361a = rr.l.b(oVar, new Function0() { // from class: oa.d
+            as.o oVar = as.o.f6081d;
+            this.f38687a = as.l.a(oVar, new Function0() { // from class: oa.d
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     k8.j p10;
@@ -70,7 +70,7 @@ public final class j implements Supplier {
                     return p10;
                 }
             });
-            this.f40362b = rr.l.b(oVar, new Function0() { // from class: oa.e
+            this.f38688b = as.l.a(oVar, new Function0() { // from class: oa.e
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     ma.j o10;
@@ -78,7 +78,7 @@ public final class j implements Supplier {
                     return o10;
                 }
             });
-            this.f40363c = rr.l.b(oVar, new Function0() { // from class: oa.f
+            this.f38689c = as.l.a(oVar, new Function0() { // from class: oa.f
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     k8.j r10;
@@ -86,7 +86,7 @@ public final class j implements Supplier {
                     return r10;
                 }
             });
-            this.f40364d = rr.l.b(oVar, new Function0() { // from class: oa.g
+            this.f38690d = as.l.a(oVar, new Function0() { // from class: oa.g
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     ma.j q10;
@@ -94,7 +94,7 @@ public final class j implements Supplier {
                     return q10;
                 }
             });
-            this.f40365e = rr.l.b(oVar, new Function0() { // from class: oa.h
+            this.f38691e = as.l.a(oVar, new Function0() { // from class: oa.h
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Map k10;
@@ -102,7 +102,7 @@ public final class j implements Supplier {
                     return k10;
                 }
             });
-            this.f40366f = rr.l.b(oVar, new Function0() { // from class: oa.i
+            this.f38692f = as.l.a(oVar, new Function0() { // from class: oa.i
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     p8.f j10;
@@ -121,15 +121,15 @@ public final class j implements Supplier {
             for (Map.Entry entry : l10.entrySet()) {
                 Object key = entry.getKey();
                 k8.j jVar = (k8.j) entry.getValue();
-                s8.i i10 = this$1.f40353b.i(this$1.f40356e);
+                s8.i i10 = this$1.f38679b.i(this$1.f38682e);
                 Intrinsics.checkNotNullExpressionValue(i10, "getPooledByteBufferFactory(...)");
-                s8.l j10 = this$1.f40353b.j();
+                s8.l j10 = this$1.f38679b.j();
                 Intrinsics.checkNotNullExpressionValue(j10, "getPooledByteStreams(...)");
-                Executor f10 = this$1.f40354c.f();
+                Executor f10 = this$1.f38680c.f();
                 Intrinsics.checkNotNullExpressionValue(f10, "forLocalStorageRead(...)");
-                Executor b10 = this$1.f40354c.b();
+                Executor b10 = this$1.f38680c.b();
                 Intrinsics.checkNotNullExpressionValue(b10, "forLocalStorageWrite(...)");
-                linkedHashMap.put(key, new ma.j(jVar, i10, j10, f10, b10, this$1.f40355d));
+                linkedHashMap.put(key, new ma.j(jVar, i10, j10, f10, b10, this$1.f38681d));
             }
             return p8.f.a(linkedHashMap);
         }
@@ -138,11 +138,11 @@ public final class j implements Supplier {
         public static final Map k(j this$0, a this$1) {
             Intrinsics.checkNotNullParameter(this$0, "this$0");
             Intrinsics.checkNotNullParameter(this$1, "this$1");
-            Map map = this$0.f40359h;
+            Map map = this$0.f38685h;
             if (map != null) {
                 LinkedHashMap linkedHashMap = new LinkedHashMap(kotlin.collections.o0.e(map.size()));
                 for (Map.Entry entry : map.entrySet()) {
-                    linkedHashMap.put(entry.getKey(), this$0.f40352a.a((DiskCacheConfig) entry.getValue()));
+                    linkedHashMap.put(entry.getKey(), this$0.f38678a.a((DiskCacheConfig) entry.getValue()));
                 }
                 return linkedHashMap;
             }
@@ -154,21 +154,21 @@ public final class j implements Supplier {
             Intrinsics.checkNotNullParameter(this$0, "this$0");
             Intrinsics.checkNotNullParameter(this$1, "this$1");
             k8.j m10 = this$0.m();
-            s8.i i10 = this$1.f40353b.i(this$1.f40356e);
+            s8.i i10 = this$1.f38679b.i(this$1.f38682e);
             Intrinsics.checkNotNullExpressionValue(i10, "getPooledByteBufferFactory(...)");
-            s8.l j10 = this$1.f40353b.j();
+            s8.l j10 = this$1.f38679b.j();
             Intrinsics.checkNotNullExpressionValue(j10, "getPooledByteStreams(...)");
-            Executor f10 = this$1.f40354c.f();
+            Executor f10 = this$1.f38680c.f();
             Intrinsics.checkNotNullExpressionValue(f10, "forLocalStorageRead(...)");
-            Executor b10 = this$1.f40354c.b();
+            Executor b10 = this$1.f38680c.b();
             Intrinsics.checkNotNullExpressionValue(b10, "forLocalStorageWrite(...)");
-            return new ma.j(m10, i10, j10, f10, b10, this$1.f40355d);
+            return new ma.j(m10, i10, j10, f10, b10, this$1.f38681d);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final k8.j p(j this$0) {
             Intrinsics.checkNotNullParameter(this$0, "this$0");
-            return this$0.f40352a.a(this$0.f40357f);
+            return this$0.f38678a.a(this$0.f38683f);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -176,50 +176,50 @@ public final class j implements Supplier {
             Intrinsics.checkNotNullParameter(this$0, "this$0");
             Intrinsics.checkNotNullParameter(this$1, "this$1");
             k8.j n10 = this$0.n();
-            s8.i i10 = this$1.f40353b.i(this$1.f40356e);
+            s8.i i10 = this$1.f38679b.i(this$1.f38682e);
             Intrinsics.checkNotNullExpressionValue(i10, "getPooledByteBufferFactory(...)");
-            s8.l j10 = this$1.f40353b.j();
+            s8.l j10 = this$1.f38679b.j();
             Intrinsics.checkNotNullExpressionValue(j10, "getPooledByteStreams(...)");
-            Executor f10 = this$1.f40354c.f();
+            Executor f10 = this$1.f38680c.f();
             Intrinsics.checkNotNullExpressionValue(f10, "forLocalStorageRead(...)");
-            Executor b10 = this$1.f40354c.b();
+            Executor b10 = this$1.f38680c.b();
             Intrinsics.checkNotNullExpressionValue(b10, "forLocalStorageWrite(...)");
-            return new ma.j(n10, i10, j10, f10, b10, this$1.f40355d);
+            return new ma.j(n10, i10, j10, f10, b10, this$1.f38681d);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final k8.j r(j this$0) {
             Intrinsics.checkNotNullParameter(this$0, "this$0");
-            return this$0.f40352a.a(this$0.f40358g);
+            return this$0.f38678a.a(this$0.f38684g);
         }
 
         @Override // oa.b
         public ma.j a() {
-            return (ma.j) this.f40364d.getValue();
+            return (ma.j) this.f38690d.getValue();
         }
 
         @Override // oa.b
         public ma.j b() {
-            return (ma.j) this.f40362b.getValue();
+            return (ma.j) this.f38688b.getValue();
         }
 
         @Override // oa.b
         public p8.f c() {
-            Object value = this.f40366f.getValue();
+            Object value = this.f38692f.getValue();
             Intrinsics.checkNotNullExpressionValue(value, "getValue(...)");
             return (p8.f) value;
         }
 
         public Map l() {
-            return (Map) this.f40365e.getValue();
+            return (Map) this.f38691e.getValue();
         }
 
         public k8.j m() {
-            return (k8.j) this.f40361a.getValue();
+            return (k8.j) this.f38687a.getValue();
         }
 
         public k8.j n() {
-            return (k8.j) this.f40363c.getValue();
+            return (k8.j) this.f38689c.getValue();
         }
     }
 
@@ -230,15 +230,15 @@ public final class j implements Supplier {
         Intrinsics.checkNotNullParameter(imageCacheStatsTracker, "imageCacheStatsTracker");
         Intrinsics.checkNotNullParameter(mainDiskCacheConfig, "mainDiskCacheConfig");
         Intrinsics.checkNotNullParameter(smallImageDiskCacheConfig, "smallImageDiskCacheConfig");
-        this.f40352a = fileCacheFactory;
-        this.f40353b = poolFactory;
-        this.f40354c = executorSupplier;
-        this.f40355d = imageCacheStatsTracker;
-        this.f40356e = i10;
-        this.f40357f = mainDiskCacheConfig;
-        this.f40358g = smallImageDiskCacheConfig;
-        this.f40359h = map;
-        this.f40360i = rr.l.b(rr.o.f49209d, new Function0() { // from class: oa.c
+        this.f38678a = fileCacheFactory;
+        this.f38679b = poolFactory;
+        this.f38680c = executorSupplier;
+        this.f38681d = imageCacheStatsTracker;
+        this.f38682e = i10;
+        this.f38683f = mainDiskCacheConfig;
+        this.f38684g = smallImageDiskCacheConfig;
+        this.f38685h = map;
+        this.f38686i = as.l.a(as.o.f6081d, new Function0() { // from class: oa.c
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 j.a j10;
@@ -255,7 +255,7 @@ public final class j implements Supplier {
     }
 
     private final b l() {
-        return (b) this.f40360i.getValue();
+        return (b) this.f38686i.getValue();
     }
 
     @Override // com.facebook.common.internal.Supplier

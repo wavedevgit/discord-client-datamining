@@ -107,7 +107,7 @@ public final class ClickableStack_ClickableStackComponentStyleJsonAdapter extend
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -153,7 +153,7 @@ public final class ClickableStack_ClickableStackComponentStyleJsonAdapter extend
     public void toJson(@NotNull t writer, ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (clickableStackComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J(ViewProps.BACKGROUND_COLOR);
             this.nullableClickableStackBackgroundColorStyleAdapter.toJson(writer, clickableStackComponentStyle.getBackgroundColor());
             writer.J(ViewProps.BORDER_WIDTH);

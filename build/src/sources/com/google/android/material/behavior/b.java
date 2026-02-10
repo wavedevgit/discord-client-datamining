@@ -1,0 +1,37 @@
+package com.google.android.material.behavior;
+
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewPropertyAnimator;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+final class b extends d {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // com.google.android.material.behavior.d
+    public int a(View view, ViewGroup.MarginLayoutParams marginLayoutParams) {
+        return view.getMeasuredWidth() + marginLayoutParams.leftMargin;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // com.google.android.material.behavior.d
+    public int b() {
+        return 0;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // com.google.android.material.behavior.d
+    public int c() {
+        return 2;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // com.google.android.material.behavior.d
+    public ViewPropertyAnimator d(View view, int i10) {
+        return view.animate().translationX(-i10);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    @Override // com.google.android.material.behavior.d
+    public void e(View view, int i10) {
+        view.setTranslationX(-i10);
+    }
+}

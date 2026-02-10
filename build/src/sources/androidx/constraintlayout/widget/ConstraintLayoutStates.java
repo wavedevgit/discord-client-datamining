@@ -12,58 +12,58 @@ import org.xmlpull.v1.XmlPullParser;
 public class ConstraintLayoutStates {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f2616a;
+    private final ConstraintLayout f2619a;
 
     /* renamed from: b  reason: collision with root package name */
-    ConstraintSet f2617b;
+    ConstraintSet f2620b;
 
     /* renamed from: c  reason: collision with root package name */
-    int f2618c = -1;
+    int f2621c = -1;
 
     /* renamed from: d  reason: collision with root package name */
-    int f2619d = -1;
+    int f2622d = -1;
 
     /* renamed from: e  reason: collision with root package name */
-    private SparseArray f2620e = new SparseArray();
+    private SparseArray f2623e = new SparseArray();
 
     /* renamed from: f  reason: collision with root package name */
-    private SparseArray f2621f = new SparseArray();
+    private SparseArray f2624f = new SparseArray();
 
     /* renamed from: g  reason: collision with root package name */
-    private ConstraintsChangedListener f2622g = null;
+    private ConstraintsChangedListener f2625g = null;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        int f2623a;
+        int f2626a;
 
         /* renamed from: b  reason: collision with root package name */
-        ArrayList f2624b = new ArrayList();
+        ArrayList f2627b = new ArrayList();
 
         /* renamed from: c  reason: collision with root package name */
-        int f2625c;
+        int f2628c;
 
         /* renamed from: d  reason: collision with root package name */
-        ConstraintSet f2626d;
+        ConstraintSet f2629d;
 
         a(Context context, XmlPullParser xmlPullParser) {
-            this.f2625c = -1;
+            this.f2628c = -1;
             TypedArray obtainStyledAttributes = context.obtainStyledAttributes(Xml.asAttributeSet(xmlPullParser), d.B6);
             int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i10 = 0; i10 < indexCount; i10++) {
                 int index = obtainStyledAttributes.getIndex(i10);
                 if (index == d.C6) {
-                    this.f2623a = obtainStyledAttributes.getResourceId(index, this.f2623a);
+                    this.f2626a = obtainStyledAttributes.getResourceId(index, this.f2626a);
                 } else if (index == d.D6) {
-                    this.f2625c = obtainStyledAttributes.getResourceId(index, this.f2625c);
-                    String resourceTypeName = context.getResources().getResourceTypeName(this.f2625c);
-                    context.getResources().getResourceName(this.f2625c);
+                    this.f2628c = obtainStyledAttributes.getResourceId(index, this.f2628c);
+                    String resourceTypeName = context.getResources().getResourceTypeName(this.f2628c);
+                    context.getResources().getResourceName(this.f2628c);
                     if ("layout".equals(resourceTypeName)) {
                         ConstraintSet constraintSet = new ConstraintSet();
-                        this.f2626d = constraintSet;
-                        constraintSet.e(context, this.f2625c);
+                        this.f2629d = constraintSet;
+                        constraintSet.e(context, this.f2628c);
                     }
                 }
             }
@@ -71,12 +71,12 @@ public class ConstraintLayoutStates {
         }
 
         void a(b bVar) {
-            this.f2624b.add(bVar);
+            this.f2627b.add(bVar);
         }
 
         public int b(float f10, float f11) {
-            for (int i10 = 0; i10 < this.f2624b.size(); i10++) {
-                if (((b) this.f2624b.get(i10)).a(f10, f11)) {
+            for (int i10 = 0; i10 < this.f2627b.size(); i10++) {
+                if (((b) this.f2627b.get(i10)).a(f10, f11)) {
                     return i10;
                 }
             }
@@ -89,50 +89,50 @@ public class ConstraintLayoutStates {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        float f2627a;
+        float f2630a;
 
         /* renamed from: b  reason: collision with root package name */
-        float f2628b;
+        float f2631b;
 
         /* renamed from: c  reason: collision with root package name */
-        float f2629c;
+        float f2632c;
 
         /* renamed from: d  reason: collision with root package name */
-        float f2630d;
+        float f2633d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f2631e;
+        int f2634e;
 
         /* renamed from: f  reason: collision with root package name */
-        ConstraintSet f2632f;
+        ConstraintSet f2635f;
 
         b(Context context, XmlPullParser xmlPullParser) {
-            this.f2627a = Float.NaN;
-            this.f2628b = Float.NaN;
-            this.f2629c = Float.NaN;
-            this.f2630d = Float.NaN;
-            this.f2631e = -1;
+            this.f2630a = Float.NaN;
+            this.f2631b = Float.NaN;
+            this.f2632c = Float.NaN;
+            this.f2633d = Float.NaN;
+            this.f2634e = -1;
             TypedArray obtainStyledAttributes = context.obtainStyledAttributes(Xml.asAttributeSet(xmlPullParser), d.U6);
             int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i10 = 0; i10 < indexCount; i10++) {
                 int index = obtainStyledAttributes.getIndex(i10);
                 if (index == d.V6) {
-                    this.f2631e = obtainStyledAttributes.getResourceId(index, this.f2631e);
-                    String resourceTypeName = context.getResources().getResourceTypeName(this.f2631e);
-                    context.getResources().getResourceName(this.f2631e);
+                    this.f2634e = obtainStyledAttributes.getResourceId(index, this.f2634e);
+                    String resourceTypeName = context.getResources().getResourceTypeName(this.f2634e);
+                    context.getResources().getResourceName(this.f2634e);
                     if ("layout".equals(resourceTypeName)) {
                         ConstraintSet constraintSet = new ConstraintSet();
-                        this.f2632f = constraintSet;
-                        constraintSet.e(context, this.f2631e);
+                        this.f2635f = constraintSet;
+                        constraintSet.e(context, this.f2634e);
                     }
                 } else if (index == d.W6) {
-                    this.f2630d = obtainStyledAttributes.getDimension(index, this.f2630d);
+                    this.f2633d = obtainStyledAttributes.getDimension(index, this.f2633d);
                 } else if (index == d.X6) {
-                    this.f2628b = obtainStyledAttributes.getDimension(index, this.f2628b);
+                    this.f2631b = obtainStyledAttributes.getDimension(index, this.f2631b);
                 } else if (index == d.Y6) {
-                    this.f2629c = obtainStyledAttributes.getDimension(index, this.f2629c);
+                    this.f2632c = obtainStyledAttributes.getDimension(index, this.f2632c);
                 } else if (index == d.Z6) {
-                    this.f2627a = obtainStyledAttributes.getDimension(index, this.f2627a);
+                    this.f2630a = obtainStyledAttributes.getDimension(index, this.f2630a);
                 } else {
                     Log.v("ConstraintLayoutStates", "Unknown tag");
                 }
@@ -141,16 +141,16 @@ public class ConstraintLayoutStates {
         }
 
         boolean a(float f10, float f11) {
-            if (!Float.isNaN(this.f2627a) && f10 < this.f2627a) {
+            if (!Float.isNaN(this.f2630a) && f10 < this.f2630a) {
                 return false;
             }
-            if (!Float.isNaN(this.f2628b) && f11 < this.f2628b) {
+            if (!Float.isNaN(this.f2631b) && f11 < this.f2631b) {
                 return false;
             }
-            if (!Float.isNaN(this.f2629c) && f10 > this.f2629c) {
+            if (!Float.isNaN(this.f2632c) && f10 > this.f2632c) {
                 return false;
             }
-            if (!Float.isNaN(this.f2630d) && f11 > this.f2630d) {
+            if (!Float.isNaN(this.f2633d) && f11 > this.f2633d) {
                 return false;
             }
             return true;
@@ -159,7 +159,7 @@ public class ConstraintLayoutStates {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ConstraintLayoutStates(Context context, ConstraintLayout constraintLayout, int i10) {
-        this.f2616a = constraintLayout;
+        this.f2619a = constraintLayout;
         a(context, i10);
     }
 
@@ -227,8 +227,8 @@ public class ConstraintLayoutStates {
             if (r3 == 0) goto L65
             androidx.constraintlayout.widget.ConstraintLayoutStates$a r3 = new androidx.constraintlayout.widget.ConstraintLayoutStates$a     // Catch: java.io.IOException -> L37 org.xmlpull.v1.XmlPullParserException -> L39
             r3.<init>(r7, r2)     // Catch: java.io.IOException -> L37 org.xmlpull.v1.XmlPullParserException -> L39
-            android.util.SparseArray r4 = r6.f2620e     // Catch: java.io.IOException -> L37 org.xmlpull.v1.XmlPullParserException -> L39
-            int r5 = r3.f2623a     // Catch: java.io.IOException -> L37 org.xmlpull.v1.XmlPullParserException -> L39
+            android.util.SparseArray r4 = r6.f2623e     // Catch: java.io.IOException -> L37 org.xmlpull.v1.XmlPullParserException -> L39
+            int r5 = r3.f2626a     // Catch: java.io.IOException -> L37 org.xmlpull.v1.XmlPullParserException -> L39
             r4.put(r5, r3)     // Catch: java.io.IOException -> L37 org.xmlpull.v1.XmlPullParserException -> L39
             r4 = r3
             goto L65
@@ -282,14 +282,14 @@ public class ConstraintLayoutStates {
                     }
                 }
                 constraintSet.t(context, xmlPullParser);
-                this.f2621f.put(i10, constraintSet);
+                this.f2624f.put(i10, constraintSet);
                 return;
             }
         }
     }
 
     public void c(ConstraintsChangedListener constraintsChangedListener) {
-        this.f2622g = constraintsChangedListener;
+        this.f2625g = constraintsChangedListener;
     }
 
     public void d(int i10, float f10, float f11) {
@@ -299,33 +299,33 @@ public class ConstraintLayoutStates {
         int b10;
         ConstraintSet constraintSet2;
         int i12;
-        int i13 = this.f2618c;
+        int i13 = this.f2621c;
         if (i13 == i10) {
             if (i10 == -1) {
-                aVar = (a) this.f2620e.valueAt(0);
+                aVar = (a) this.f2623e.valueAt(0);
             } else {
-                aVar = (a) this.f2620e.get(i13);
+                aVar = (a) this.f2623e.get(i13);
             }
-            int i14 = this.f2619d;
-            if ((i14 == -1 || !((b) aVar.f2624b.get(i14)).a(f10, f11)) && this.f2619d != (b10 = aVar.b(f10, f11))) {
+            int i14 = this.f2622d;
+            if ((i14 == -1 || !((b) aVar.f2627b.get(i14)).a(f10, f11)) && this.f2622d != (b10 = aVar.b(f10, f11))) {
                 if (b10 == -1) {
-                    constraintSet2 = this.f2617b;
+                    constraintSet2 = this.f2620b;
                 } else {
-                    constraintSet2 = ((b) aVar.f2624b.get(b10)).f2632f;
+                    constraintSet2 = ((b) aVar.f2627b.get(b10)).f2635f;
                 }
                 if (b10 == -1) {
-                    i12 = aVar.f2625c;
+                    i12 = aVar.f2628c;
                 } else {
-                    i12 = ((b) aVar.f2624b.get(b10)).f2631e;
+                    i12 = ((b) aVar.f2627b.get(b10)).f2634e;
                 }
                 if (constraintSet2 != null) {
-                    this.f2619d = b10;
-                    ConstraintsChangedListener constraintsChangedListener = this.f2622g;
+                    this.f2622d = b10;
+                    ConstraintsChangedListener constraintsChangedListener = this.f2625g;
                     if (constraintsChangedListener != null) {
                         constraintsChangedListener.b(-1, i12);
                     }
-                    constraintSet2.c(this.f2616a);
-                    ConstraintsChangedListener constraintsChangedListener2 = this.f2622g;
+                    constraintSet2.c(this.f2619a);
+                    ConstraintsChangedListener constraintsChangedListener2 = this.f2625g;
                     if (constraintsChangedListener2 != null) {
                         constraintsChangedListener2.a(-1, i12);
                         return;
@@ -336,30 +336,30 @@ public class ConstraintLayoutStates {
             }
             return;
         }
-        this.f2618c = i10;
-        a aVar2 = (a) this.f2620e.get(i10);
+        this.f2621c = i10;
+        a aVar2 = (a) this.f2623e.get(i10);
         int b11 = aVar2.b(f10, f11);
         if (b11 == -1) {
-            constraintSet = aVar2.f2626d;
+            constraintSet = aVar2.f2629d;
         } else {
-            constraintSet = ((b) aVar2.f2624b.get(b11)).f2632f;
+            constraintSet = ((b) aVar2.f2627b.get(b11)).f2635f;
         }
         if (b11 == -1) {
-            i11 = aVar2.f2625c;
+            i11 = aVar2.f2628c;
         } else {
-            i11 = ((b) aVar2.f2624b.get(b11)).f2631e;
+            i11 = ((b) aVar2.f2627b.get(b11)).f2634e;
         }
         if (constraintSet == null) {
             Log.v("ConstraintLayoutStates", "NO Constraint set found ! id=" + i10 + ", dim =" + f10 + ", " + f11);
             return;
         }
-        this.f2619d = b11;
-        ConstraintsChangedListener constraintsChangedListener3 = this.f2622g;
+        this.f2622d = b11;
+        ConstraintsChangedListener constraintsChangedListener3 = this.f2625g;
         if (constraintsChangedListener3 != null) {
             constraintsChangedListener3.b(i10, i11);
         }
-        constraintSet.c(this.f2616a);
-        ConstraintsChangedListener constraintsChangedListener4 = this.f2622g;
+        constraintSet.c(this.f2619a);
+        ConstraintsChangedListener constraintsChangedListener4 = this.f2625g;
         if (constraintsChangedListener4 != null) {
             constraintsChangedListener4.a(i10, i11);
         }

@@ -30,7 +30,7 @@ import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
 import androidx.appcompat.widget.AppCompatEditText;
 import androidx.core.util.Predicate;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactSoftExceptionLogger;
 import com.facebook.react.common.build.ReactBuildConfig;
@@ -292,7 +292,7 @@ public class ReactEditText extends AppCompatEditText {
         }
         final boolean isFocusable = isFocusable();
         final int importantForAccessibility = getImportantForAccessibility();
-        h0.n0(this, new ReactAccessibilityDelegate(isFocusable, importantForAccessibility) { // from class: com.facebook.react.views.textinput.ReactEditText$editTextAccessibilityDelegate$1
+        i0.k0(this, new ReactAccessibilityDelegate(isFocusable, importantForAccessibility) { // from class: com.facebook.react.views.textinput.ReactEditText$editTextAccessibilityDelegate$1
             @Override // com.facebook.react.uimanager.ReactAccessibilityDelegate, androidx.core.view.a
             public boolean performAccessibilityAction(View host, int i11, Bundle bundle) {
                 boolean requestFocusProgrammatically;

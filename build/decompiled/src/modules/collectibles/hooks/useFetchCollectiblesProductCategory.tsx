@@ -74,4 +74,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useFetchCollectiblesProductCategory = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 4598, 5782, 632, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 4608, 5792, 632, 2]);

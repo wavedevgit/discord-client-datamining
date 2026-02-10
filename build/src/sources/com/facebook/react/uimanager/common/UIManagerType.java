@@ -1,10 +1,10 @@
 package com.facebook.react.uimanager.common;
 
+import as.c;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import kotlin.Metadata;
 import org.jetbrains.annotations.NotNull;
-import rr.c;
 @Retention(RetentionPolicy.SOURCE)
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u001b\n\u0002\b\u0002\b\u0087\u0002\u0018\u0000 \u00022\u00020\u0001:\u0001\u0002B\u0000¨\u0006\u0003"}, d2 = {"Lcom/facebook/react/uimanager/common/UIManagerType;", "", "Companion", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */

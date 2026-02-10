@@ -4,10 +4,10 @@ package com.google.android.gms.internal.play_billing;
 public final class o2 implements h3 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final t2 f14447b = new m2();
+    private static final t2 f15024b = new m2();
 
     /* renamed from: a  reason: collision with root package name */
-    private final t2 f14448a;
+    private final t2 f15025a;
 
     public o2() {
         t2 t2Var;
@@ -15,11 +15,11 @@ public final class o2 implements h3 {
         try {
             t2Var = (t2) Class.forName("com.google.protobuf.DescriptorMessageInfoFactory").getDeclaredMethod("getInstance", null).invoke(null, null);
         } catch (Exception unused) {
-            t2Var = f14447b;
+            t2Var = f15024b;
         }
         n2 n2Var = new n2(c10, t2Var);
-        byte[] bArr = y1.f14507d;
-        this.f14448a = n2Var;
+        byte[] bArr = y1.f15084d;
+        this.f15025a = n2Var;
     }
 
     private static boolean b(s2 s2Var) {
@@ -32,12 +32,12 @@ public final class o2 implements h3 {
     @Override // com.google.android.gms.internal.play_billing.h3
     public final g3 a(Class cls) {
         i3.y(cls);
-        s2 a10 = this.f14448a.a(cls);
+        s2 a10 = this.f15025a.a(cls);
         if (a10.zzb()) {
             if (q1.class.isAssignableFrom(cls)) {
-                return z2.i(i3.u(), h1.b(), a10.zza());
+                return z2.j(i3.u(), h1.b(), a10.zza());
             }
-            return z2.i(i3.t(), h1.a(), a10.zza());
+            return z2.j(i3.t(), h1.a(), a10.zza());
         } else if (q1.class.isAssignableFrom(cls)) {
             if (b(a10)) {
                 return y2.A(cls, a10, b3.b(), k2.d(), i3.u(), h1.b(), r2.b());

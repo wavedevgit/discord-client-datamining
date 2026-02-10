@@ -16,22 +16,22 @@ import java.util.concurrent.TimeUnit;
 final class w extends ThreadPoolExecutor implements AutoCloseable {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final long f29163q = io.sentry.k.i(2000);
+    private static final long f30098q = io.sentry.k.i(2000);
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f29164d;
+    private final int f30099d;
 
     /* renamed from: e  reason: collision with root package name */
-    private j5 f29165e;
+    private j5 f30100e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ILogger f29166i;
+    private final ILogger f30101i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final k5 f29167o;
+    private final k5 f30102o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final b0 f29168p;
+    private final b0 f30103p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a implements Future {
@@ -66,16 +66,16 @@ final class w extends ThreadPoolExecutor implements AutoCloseable {
 
     public w(int i10, int i11, ThreadFactory threadFactory, RejectedExecutionHandler rejectedExecutionHandler, ILogger iLogger, k5 k5Var) {
         super(i10, i10, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue(), threadFactory, rejectedExecutionHandler);
-        this.f29165e = null;
-        this.f29168p = new b0();
-        this.f29164d = i11;
-        this.f29166i = iLogger;
-        this.f29167o = k5Var;
+        this.f30100e = null;
+        this.f30103p = new b0();
+        this.f30099d = i11;
+        this.f30101i = iLogger;
+        this.f30102o = k5Var;
     }
 
     public boolean a() {
-        j5 j5Var = this.f29165e;
-        if (j5Var == null || this.f29167o.now().d(j5Var) >= f29163q) {
+        j5 j5Var = this.f30100e;
+        if (j5Var == null || this.f30102o.now().d(j5Var) >= f30098q) {
             return false;
         }
         return true;
@@ -86,7 +86,7 @@ final class w extends ThreadPoolExecutor implements AutoCloseable {
         try {
             super.afterExecute(runnable, th2);
         } finally {
-            this.f29168p.a();
+            this.f30103p.a();
         }
     }
 
@@ -95,8 +95,8 @@ final class w extends ThreadPoolExecutor implements AutoCloseable {
         c0.c.a(this);
     }
 
-    public boolean k() {
-        if (this.f29168p.b() < this.f29164d) {
+    public boolean i() {
+        if (this.f30103p.b() < this.f30099d) {
             return true;
         }
         return false;
@@ -105,28 +105,28 @@ final class w extends ThreadPoolExecutor implements AutoCloseable {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void m(long j10) {
         try {
-            this.f29168p.d(j10, TimeUnit.MILLISECONDS);
+            this.f30103p.d(j10, TimeUnit.MILLISECONDS);
         } catch (InterruptedException e10) {
-            this.f29166i.b(SentryLevel.ERROR, "Failed to wait till idle", e10);
+            this.f30101i.b(SentryLevel.ERROR, "Failed to wait till idle", e10);
             Thread.currentThread().interrupt();
         }
     }
 
     @Override // java.util.concurrent.AbstractExecutorService, java.util.concurrent.ExecutorService
     public Future submit(Runnable runnable) {
-        if (k()) {
-            this.f29168p.c();
+        if (i()) {
+            this.f30103p.c();
             try {
                 return super.submit(runnable);
             } catch (RejectedExecutionException e10) {
-                this.f29168p.a();
-                this.f29165e = this.f29167o.now();
-                this.f29166i.b(SentryLevel.WARNING, "Submit rejected by thread pool executor", e10);
+                this.f30103p.a();
+                this.f30100e = this.f30102o.now();
+                this.f30101i.b(SentryLevel.WARNING, "Submit rejected by thread pool executor", e10);
                 return new a();
             }
         }
-        this.f29165e = this.f29167o.now();
-        this.f29166i.c(SentryLevel.WARNING, "Submit cancelled", new Object[0]);
+        this.f30100e = this.f30102o.now();
+        this.f30101i.c(SentryLevel.WARNING, "Submit cancelled", new Object[0]);
         return new a();
     }
 }

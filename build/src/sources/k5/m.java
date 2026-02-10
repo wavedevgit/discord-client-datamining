@@ -8,22 +8,22 @@ import kotlinx.coroutines.CancellableContinuation;
 import okhttp3.Call;
 import okhttp3.Response;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-final class m implements cu.b, Function1 {
+final class m implements lu.b, Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Call f30707d;
+    private final Call f31565d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CancellableContinuation f30708e;
+    private final CancellableContinuation f31566e;
 
     public m(Call call, CancellableContinuation cancellableContinuation) {
-        this.f30707d = call;
-        this.f30708e = cancellableContinuation;
+        this.f31565d = call;
+        this.f31566e = cancellableContinuation;
     }
 
     public void a(Throwable th2) {
         try {
-            this.f30707d.cancel();
+            this.f31565d.cancel();
         } catch (Throwable unused) {
         }
     }
@@ -31,20 +31,20 @@ final class m implements cu.b, Function1 {
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         a((Throwable) obj);
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
-    @Override // cu.b
+    @Override // lu.b
     public void onFailure(Call call, IOException iOException) {
         if (!call.C()) {
-            CancellableContinuation cancellableContinuation = this.f30708e;
-            Result.a aVar = Result.f31762e;
+            CancellableContinuation cancellableContinuation = this.f31566e;
+            Result.a aVar = Result.f31984e;
             cancellableContinuation.resumeWith(Result.b(kotlin.c.a(iOException)));
         }
     }
 
-    @Override // cu.b
+    @Override // lu.b
     public void onResponse(Call call, Response response) {
-        this.f30708e.resumeWith(Result.b(response));
+        this.f31566e.resumeWith(Result.b(response));
     }
 }

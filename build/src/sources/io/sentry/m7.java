@@ -13,67 +13,67 @@ import org.jetbrains.annotations.NotNull;
 public final class m7 {
 
     /* renamed from: u  reason: collision with root package name */
-    private static final List f28596u = Collections.unmodifiableList(Arrays.asList("Content-Type", "Content-Length", "Accept"));
+    private static final List f29531u = Collections.unmodifiableList(Arrays.asList("Content-Type", "Content-Length", "Accept"));
 
     /* renamed from: a  reason: collision with root package name */
-    private Double f28597a;
+    private Double f29532a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Double f28598b;
+    private Double f29533b;
 
     /* renamed from: m  reason: collision with root package name */
-    private io.sentry.protocol.r f28609m;
+    private io.sentry.protocol.r f29544m;
 
     /* renamed from: s  reason: collision with root package name */
-    private String[] f28615s;
+    private String[] f29550s;
 
     /* renamed from: t  reason: collision with root package name */
-    private String[] f28616t;
+    private String[] f29551t;
 
     /* renamed from: c  reason: collision with root package name */
-    private Set f28599c = new CopyOnWriteArraySet();
+    private Set f29534c = new CopyOnWriteArraySet();
 
     /* renamed from: d  reason: collision with root package name */
-    private Set f28600d = new CopyOnWriteArraySet();
+    private Set f29535d = new CopyOnWriteArraySet();
 
     /* renamed from: e  reason: collision with root package name */
-    private String f28601e = null;
+    private String f29536e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private String f28602f = null;
+    private String f29537f = null;
 
     /* renamed from: g  reason: collision with root package name */
-    private a f28603g = a.MEDIUM;
+    private a f29538g = a.MEDIUM;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f28604h = 1;
+    private int f29539h = 1;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f28605i = 30000;
+    private long f29540i = 30000;
 
     /* renamed from: j  reason: collision with root package name */
-    private long f28606j = 5000;
+    private long f29541j = 5000;
 
     /* renamed from: k  reason: collision with root package name */
-    private long f28607k = LogThrottleSingleton.RATE_LIMIT_ONE_HOUR;
+    private long f29542k = LogThrottleSingleton.RATE_LIMIT_ONE_HOUR;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f28608l = true;
+    private boolean f29543l = true;
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f28610n = false;
+    private boolean f29545n = false;
 
     /* renamed from: o  reason: collision with root package name */
-    private n4 f28611o = n4.PIXEL_COPY;
+    private n4 f29546o = n4.PIXEL_COPY;
 
     /* renamed from: p  reason: collision with root package name */
-    private String[] f28612p = new String[0];
+    private String[] f29547p = new String[0];
 
     /* renamed from: q  reason: collision with root package name */
-    private String[] f28613q = new String[0];
+    private String[] f29548q = new String[0];
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f28614r = true;
+    private boolean f29549r = true;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public enum a {
@@ -98,23 +98,23 @@ public final class m7 {
     }
 
     public m7(boolean z10, io.sentry.protocol.r rVar) {
-        List list = f28596u;
-        this.f28615s = (String[]) list.toArray(new String[0]);
-        this.f28616t = (String[]) list.toArray(new String[0]);
+        List list = f29531u;
+        this.f29550s = (String[]) list.toArray(new String[0]);
+        this.f29551t = (String[]) list.toArray(new String[0]);
         if (!z10) {
             C(true);
             B(true);
-            this.f28599c.add("android.webkit.WebView");
-            this.f28599c.add("android.widget.VideoView");
-            this.f28599c.add("androidx.media3.ui.PlayerView");
-            this.f28599c.add("com.google.android.exoplayer2.ui.PlayerView");
-            this.f28599c.add("com.google.android.exoplayer2.ui.StyledPlayerView");
-            this.f28609m = rVar;
+            this.f29534c.add("android.webkit.WebView");
+            this.f29534c.add("android.widget.VideoView");
+            this.f29534c.add("androidx.media3.ui.PlayerView");
+            this.f29534c.add("com.google.android.exoplayer2.ui.PlayerView");
+            this.f29534c.add("com.google.android.exoplayer2.ui.StyledPlayerView");
+            this.f29544m = rVar;
         }
     }
 
     public static List i() {
-        return f28596u;
+        return f29531u;
     }
 
     private static String[] z(List list, List list2) {
@@ -125,168 +125,168 @@ public final class m7 {
     }
 
     public void A(boolean z10) {
-        this.f28610n = z10;
+        this.f29545n = z10;
     }
 
     public void B(boolean z10) {
         if (z10) {
             a("android.widget.ImageView");
-            this.f28600d.remove("android.widget.ImageView");
+            this.f29535d.remove("android.widget.ImageView");
             return;
         }
         b("android.widget.ImageView");
-        this.f28599c.remove("android.widget.ImageView");
+        this.f29534c.remove("android.widget.ImageView");
     }
 
     public void C(boolean z10) {
         if (z10) {
             a("android.widget.TextView");
-            this.f28600d.remove("android.widget.TextView");
+            this.f29535d.remove("android.widget.TextView");
             return;
         }
         b("android.widget.TextView");
-        this.f28599c.remove("android.widget.TextView");
+        this.f29534c.remove("android.widget.TextView");
     }
 
     public void D(String str) {
         a(str);
-        this.f28601e = str;
+        this.f29536e = str;
     }
 
     public void E(boolean z10) {
-        this.f28614r = z10;
+        this.f29549r = z10;
     }
 
     public void F(String[] strArr) {
-        this.f28612p = strArr;
+        this.f29547p = strArr;
     }
 
     public void G(String[] strArr) {
-        this.f28613q = strArr;
+        this.f29548q = strArr;
     }
 
     public void H(List list) {
-        this.f28615s = z(f28596u, list);
+        this.f29550s = z(f29531u, list);
     }
 
     public void I(List list) {
-        this.f28616t = z(f28596u, list);
+        this.f29551t = z(f29531u, list);
     }
 
     public void J(Double d10) {
         if (io.sentry.util.c0.f(d10)) {
-            this.f28598b = d10;
+            this.f29533b = d10;
             return;
         }
         throw new IllegalArgumentException("The value " + d10 + " is not valid. Use null to disable or values >= 0.0 and <= 1.0.");
     }
 
     public void K(a aVar) {
-        this.f28603g = aVar;
+        this.f29538g = aVar;
     }
 
     public void L(n4 n4Var) {
-        this.f28611o = n4Var;
+        this.f29546o = n4Var;
     }
 
     public void M(io.sentry.protocol.r rVar) {
-        this.f28609m = rVar;
+        this.f29544m = rVar;
     }
 
     public void N(Double d10) {
         if (io.sentry.util.c0.f(d10)) {
-            this.f28597a = d10;
+            this.f29532a = d10;
             return;
         }
         throw new IllegalArgumentException("The value " + d10 + " is not valid. Use null to disable or values >= 0.0 and <= 1.0.");
     }
 
     public void O(String str) {
-        this.f28602f = str;
+        this.f29537f = str;
     }
 
     public void a(String str) {
-        this.f28599c.add(str);
+        this.f29534c.add(str);
     }
 
     public void b(String str) {
-        this.f28600d.add(str);
+        this.f29535d.add(str);
     }
 
     public long c() {
-        return this.f28605i;
+        return this.f29540i;
     }
 
     public int d() {
-        return this.f28604h;
+        return this.f29539h;
     }
 
     public Set e() {
-        return this.f28599c;
+        return this.f29534c;
     }
 
     public String f() {
-        return this.f28601e;
+        return this.f29536e;
     }
 
     public String[] g() {
-        return this.f28612p;
+        return this.f29547p;
     }
 
     public String[] h() {
-        return this.f28613q;
+        return this.f29548q;
     }
 
     public String[] j() {
-        return this.f28615s;
+        return this.f29550s;
     }
 
     public String[] k() {
-        return this.f28616t;
+        return this.f29551t;
     }
 
     public Double l() {
-        return this.f28598b;
+        return this.f29533b;
     }
 
     public a m() {
-        return this.f28603g;
+        return this.f29538g;
     }
 
     public n4 n() {
-        return this.f28611o;
+        return this.f29546o;
     }
 
     public io.sentry.protocol.r o() {
-        return this.f28609m;
+        return this.f29544m;
     }
 
     public long p() {
-        return this.f28607k;
+        return this.f29542k;
     }
 
     public Double q() {
-        return this.f28597a;
+        return this.f29532a;
     }
 
     public long r() {
-        return this.f28606j;
+        return this.f29541j;
     }
 
     public Set s() {
-        return this.f28600d;
+        return this.f29535d;
     }
 
     public String t() {
-        return this.f28602f;
+        return this.f29537f;
     }
 
     public boolean u() {
-        return this.f28610n;
+        return this.f29545n;
     }
 
     public boolean v() {
-        return this.f28614r;
+        return this.f29549r;
     }
 
     public boolean w() {
@@ -304,6 +304,6 @@ public final class m7 {
     }
 
     public boolean y() {
-        return this.f28608l;
+        return this.f29543l;
     }
 }

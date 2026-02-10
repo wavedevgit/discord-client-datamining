@@ -25,7 +25,7 @@ public final class ReadableType {
     static {
         ReadableType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = yr.a.a($values);
+        $ENTRIES = hs.a.a($values);
     }
 
     private ReadableType(String str, int i10) {

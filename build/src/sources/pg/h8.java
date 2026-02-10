@@ -3,36 +3,36 @@ package pg;
 public final class h8 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ma f43607a;
+    private final ma f42065a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e8 f43608b;
+    private final e8 f42066b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final z7 f43609c;
+    private final z7 f42067c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ h8(f8 f8Var, g8 g8Var) {
         ma maVar;
         e8 e8Var;
         z7 z7Var;
-        maVar = f8Var.f43545a;
-        this.f43607a = maVar;
-        e8Var = f8Var.f43546b;
-        this.f43608b = e8Var;
-        z7Var = f8Var.f43547c;
-        this.f43609c = z7Var;
+        maVar = f8Var.f42003a;
+        this.f42065a = maVar;
+        e8Var = f8Var.f42004b;
+        this.f42066b = e8Var;
+        z7Var = f8Var.f42005c;
+        this.f42067c = z7Var;
     }
 
     public final z7 a() {
-        return this.f43609c;
+        return this.f42067c;
     }
 
     public final e8 b() {
-        return this.f43608b;
+        return this.f42066b;
     }
 
     public final ma c() {
-        return this.f43607a;
+        return this.f42065a;
     }
 }

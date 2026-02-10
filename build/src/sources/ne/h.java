@@ -6,10 +6,10 @@ import java.util.TreeSet;
 public final class h implements com.google.android.exoplayer2.upstream.cache.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f38184a;
+    private final long f37188a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TreeSet f38185b = new TreeSet(new Comparator() { // from class: ne.g
+    private final TreeSet f37189b = new TreeSet(new Comparator() { // from class: ne.g
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
             int h10;
@@ -19,16 +19,16 @@ public final class h implements com.google.android.exoplayer2.upstream.cache.d {
     });
 
     /* renamed from: c  reason: collision with root package name */
-    private long f38186c;
+    private long f37190c;
 
     public h(long j10) {
-        this.f38184a = j10;
+        this.f37188a = j10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static int h(c cVar, c cVar2) {
-        long j10 = cVar.f38178q;
-        long j11 = cVar2.f38178q;
+        long j10 = cVar.f37182q;
+        long j11 = cVar2.f37182q;
         if (j10 - j11 == 0) {
             return cVar.compareTo(cVar2);
         }
@@ -39,8 +39,8 @@ public final class h implements com.google.android.exoplayer2.upstream.cache.d {
     }
 
     private void i(com.google.android.exoplayer2.upstream.cache.a aVar, long j10) {
-        while (this.f38186c + j10 > this.f38184a && !this.f38185b.isEmpty()) {
-            aVar.e((c) this.f38185b.first());
+        while (this.f37190c + j10 > this.f37188a && !this.f37189b.isEmpty()) {
+            aVar.e((c) this.f37189b.first());
         }
     }
 
@@ -51,8 +51,8 @@ public final class h implements com.google.android.exoplayer2.upstream.cache.d {
 
     @Override // com.google.android.exoplayer2.upstream.cache.a.b
     public void b(com.google.android.exoplayer2.upstream.cache.a aVar, c cVar) {
-        this.f38185b.remove(cVar);
-        this.f38186c -= cVar.f38175i;
+        this.f37189b.remove(cVar);
+        this.f37190c -= cVar.f37179i;
     }
 
     @Override // com.google.android.exoplayer2.upstream.cache.a.b
@@ -70,8 +70,8 @@ public final class h implements com.google.android.exoplayer2.upstream.cache.d {
 
     @Override // com.google.android.exoplayer2.upstream.cache.a.b
     public void f(com.google.android.exoplayer2.upstream.cache.a aVar, c cVar) {
-        this.f38185b.add(cVar);
-        this.f38186c += cVar.f38175i;
+        this.f37189b.add(cVar);
+        this.f37190c += cVar.f37179i;
         i(aVar, 0L);
     }
 

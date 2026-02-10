@@ -20,13 +20,13 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$56 exten
 
     @Override // kotlin.jvm.functions.Function4
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
-        m515invokekUTrps(((GuildId) obj).m1079unboximpl(), ((ChannelId) obj2).m1066unboximpl(), ((ChannelId) obj3).m1066unboximpl(), ((MessageId) obj4).m1092unboximpl());
-        return Unit.f31765a;
+        m516invokekUTrps(((GuildId) obj).m1080unboximpl(), ((ChannelId) obj2).m1067unboximpl(), ((ChannelId) obj3).m1067unboximpl(), ((MessageId) obj4).m1093unboximpl());
+        return Unit.f31987a;
     }
 
     /* renamed from: invoke-kUTrp-s  reason: not valid java name */
-    public final void m515invokekUTrps(long j10, long j11, long j12, String p32) {
+    public final void m516invokekUTrps(long j10, long j11, long j12, String p32) {
         Intrinsics.checkNotNullParameter(p32, "p3");
-        ((ChatEventHandler) this.receiver).mo473onTapPostPreviewEmbedkUTrps(j10, j11, j12, p32);
+        ((ChatEventHandler) this.receiver).mo474onTapPostPreviewEmbedkUTrps(j10, j11, j12, p32);
     }
 }

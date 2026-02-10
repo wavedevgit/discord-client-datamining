@@ -3,5 +3,5 @@ package vb;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public long f52189a;
+    public long f51431a;
 }

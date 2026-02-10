@@ -15,16 +15,16 @@ import java.util.Map;
 public final class f extends d implements w1 {
 
     /* renamed from: o  reason: collision with root package name */
-    private int f29041o;
+    private int f29976o;
 
     /* renamed from: p  reason: collision with root package name */
-    private List f29042p;
+    private List f29977p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f29043q;
+    private Map f29978q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f29044r;
+    private Map f29979r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -36,14 +36,14 @@ public final class f extends d implements w1 {
                 String o02 = e3Var.o0();
                 o02.getClass();
                 if (o02.equals("pointerId")) {
-                    fVar.f29041o = e3Var.nextInt();
+                    fVar.f29976o = e3Var.nextInt();
                 } else if (o02.equals("positions")) {
-                    fVar.f29042p = e3Var.f2(iLogger, new b.a());
+                    fVar.f29977p = e3Var.k2(iLogger, new b.a());
                 } else if (!aVar.a(fVar, o02, e3Var, iLogger)) {
                     if (hashMap == null) {
                         hashMap = new HashMap();
                     }
-                    e3Var.p1(iLogger, hashMap, o02);
+                    e3Var.u1(iLogger, hashMap, o02);
                 }
             }
             fVar.l(hashMap);
@@ -65,7 +65,7 @@ public final class f extends d implements w1 {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.p1(iLogger, hashMap, o02);
+                        e3Var.u1(iLogger, hashMap, o02);
                     }
                 } else {
                     c(fVar, e3Var, iLogger);
@@ -81,19 +81,19 @@ public final class f extends d implements w1 {
     public static final class b implements w1 {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f29045d;
+        private int f29980d;
 
         /* renamed from: e  reason: collision with root package name */
-        private float f29046e;
+        private float f29981e;
 
         /* renamed from: i  reason: collision with root package name */
-        private float f29047i;
+        private float f29982i;
 
         /* renamed from: o  reason: collision with root package name */
-        private long f29048o;
+        private long f29983o;
 
         /* renamed from: p  reason: collision with root package name */
-        private Map f29049p;
+        private Map f29984p;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements m1 {
@@ -135,22 +135,22 @@ public final class f extends d implements w1 {
                     }
                     switch (c10) {
                         case 0:
-                            bVar.f29046e = e3Var.nextFloat();
+                            bVar.f29981e = e3Var.nextFloat();
                             break;
                         case 1:
-                            bVar.f29047i = e3Var.nextFloat();
+                            bVar.f29982i = e3Var.nextFloat();
                             break;
                         case 2:
-                            bVar.f29045d = e3Var.nextInt();
+                            bVar.f29980d = e3Var.nextInt();
                             break;
                         case 3:
-                            bVar.f29048o = e3Var.nextLong();
+                            bVar.f29983o = e3Var.nextLong();
                             break;
                         default:
                             if (hashMap == null) {
                                 hashMap = new HashMap();
                             }
-                            e3Var.p1(iLogger, hashMap, o02);
+                            e3Var.u1(iLogger, hashMap, o02);
                             break;
                     }
                 }
@@ -161,40 +161,40 @@ public final class f extends d implements w1 {
         }
 
         public long e() {
-            return this.f29048o;
+            return this.f29983o;
         }
 
         public void f(int i10) {
-            this.f29045d = i10;
+            this.f29980d = i10;
         }
 
         public void g(long j10) {
-            this.f29048o = j10;
+            this.f29983o = j10;
         }
 
         public void h(Map map) {
-            this.f29049p = map;
+            this.f29984p = map;
         }
 
         public void i(float f10) {
-            this.f29046e = f10;
+            this.f29981e = f10;
         }
 
         public void j(float f10) {
-            this.f29047i = f10;
+            this.f29982i = f10;
         }
 
         @Override // io.sentry.w1
         public void serialize(f3 f3Var, ILogger iLogger) {
             f3Var.u();
-            f3Var.e(StackTraceHelper.ID_KEY).b(this.f29045d);
-            f3Var.e("x").c(this.f29046e);
-            f3Var.e("y").c(this.f29047i);
-            f3Var.e("timeOffset").b(this.f29048o);
-            Map map = this.f29049p;
+            f3Var.e(StackTraceHelper.ID_KEY).b(this.f29980d);
+            f3Var.e("x").c(this.f29981e);
+            f3Var.e("y").c(this.f29982i);
+            f3Var.e("timeOffset").b(this.f29983o);
+            Map map = this.f29984p;
             if (map != null) {
                 for (String str : map.keySet()) {
-                    Object obj = this.f29049p.get(str);
+                    Object obj = this.f29984p.get(str);
                     f3Var.e(str);
                     f3Var.j(iLogger, obj);
                 }
@@ -210,15 +210,15 @@ public final class f extends d implements w1 {
     private void k(f3 f3Var, ILogger iLogger) {
         f3Var.u();
         new d.c().a(this, f3Var, iLogger);
-        List list = this.f29042p;
+        List list = this.f29977p;
         if (list != null && !list.isEmpty()) {
-            f3Var.e("positions").j(iLogger, this.f29042p);
+            f3Var.e("positions").j(iLogger, this.f29977p);
         }
-        f3Var.e("pointerId").b(this.f29041o);
-        Map map = this.f29044r;
+        f3Var.e("pointerId").b(this.f29976o);
+        Map map = this.f29979r;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29044r.get(str);
+                Object obj = this.f29979r.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -227,31 +227,31 @@ public final class f extends d implements w1 {
     }
 
     public void l(Map map) {
-        this.f29044r = map;
+        this.f29979r = map;
     }
 
     public void m(int i10) {
-        this.f29041o = i10;
+        this.f29976o = i10;
     }
 
     public void n(List list) {
-        this.f29042p = list;
+        this.f29977p = list;
     }
 
     public void o(Map map) {
-        this.f29043q = map;
+        this.f29978q = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        new b.C0432b().a(this, f3Var, iLogger);
+        new b.C0407b().a(this, f3Var, iLogger);
         f3Var.e("data");
         k(f3Var, iLogger);
-        Map map = this.f29043q;
+        Map map = this.f29978q;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29043q.get(str);
+                Object obj = this.f29978q.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }

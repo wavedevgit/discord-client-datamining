@@ -4,24 +4,24 @@ package com.android.billingclient.api;
 public final class f0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final BillingResult f8082a;
+    private final BillingResult f8659a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f8083b;
+    private final int f8660b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f0(BillingResult billingResult, int i10) {
-        this.f8082a = billingResult;
-        this.f8083b = i10;
+        this.f8659a = billingResult;
+        this.f8660b = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final BillingResult a() {
-        return this.f8082a;
+        return this.f8659a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int b() {
-        return this.f8083b;
+        return this.f8660b;
     }
 }

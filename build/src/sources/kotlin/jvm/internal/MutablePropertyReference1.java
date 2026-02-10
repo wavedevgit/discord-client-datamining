@@ -3,7 +3,7 @@ package kotlin.jvm.internal;
 import kotlin.reflect.KCallable;
 import kotlin.reflect.KProperty1;
 import kotlin.reflect.g;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class MutablePropertyReference1 extends MutablePropertyReference implements g {
     public MutablePropertyReference1() {
     }
@@ -13,6 +13,7 @@ public abstract class MutablePropertyReference1 extends MutablePropertyReference
         return Reflection.mutableProperty1(this);
     }
 
+    @Override // kotlin.reflect.KProperty1
     public abstract /* synthetic */ Object get(Object obj);
 
     @Override // kotlin.reflect.KProperty1
@@ -25,6 +26,7 @@ public abstract class MutablePropertyReference1 extends MutablePropertyReference
         return get(obj);
     }
 
+    @Override // kotlin.reflect.g
     public abstract /* synthetic */ void set(Object obj, Object obj2);
 
     public MutablePropertyReference1(Object obj) {

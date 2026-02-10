@@ -654,7 +654,6 @@
     <item type="id" name="mosaic" />
     <item type="id" name="motion_base" />
     <item type="id" name="move_to_speaker_icon" />
-    <item type="id" name="mtrl_anchor_parent" />
     <item type="id" name="mtrl_calendar_day_selector_frame" />
     <item type="id" name="mtrl_calendar_days_of_week" />
     <item type="id" name="mtrl_calendar_frame" />
@@ -683,12 +682,15 @@
     <item type="id" name="nav_bar_cancel_button" />
     <item type="id" name="navigation_bar" />
     <item type="id" name="navigation_bar_item_active_indicator_view" />
+    <item type="id" name="navigation_bar_item_content_container" />
     <item type="id" name="navigation_bar_item_icon_container" />
     <item type="id" name="navigation_bar_item_icon_view" />
+    <item type="id" name="navigation_bar_item_inner_content_container" />
     <item type="id" name="navigation_bar_item_labels_group" />
     <item type="id" name="navigation_bar_item_large_label_view" />
     <item type="id" name="navigation_bar_item_small_label_view" />
     <item type="id" name="navigation_header_container" />
+    <item type="id" name="navigation_menu_subheader_label" />
     <item type="id" name="negative_button" />
     <item type="id" name="nestedScroll" />
     <item type="id" name="nested_ui_container" />
@@ -703,7 +705,9 @@
     <item type="id" name="obscure" />
     <item type="id" name="on" />
     <item type="id" name="opaque_background" />
+    <item type="id" name="open_search_bar_placeholder_text_view" />
     <item type="id" name="open_search_bar_text_view" />
+    <item type="id" name="open_search_bar_text_view_container" />
     <item type="id" name="open_search_view_background" />
     <item type="id" name="open_search_view_clear_button" />
     <item type="id" name="open_search_view_content_container" />
@@ -715,6 +719,7 @@
     <item type="id" name="open_search_view_scrim" />
     <item type="id" name="open_search_view_search_prefix" />
     <item type="id" name="open_search_view_status_bar_spacer" />
+    <item type="id" name="open_search_view_text_container" />
     <item type="id" name="open_search_view_toolbar" />
     <item type="id" name="open_search_view_toolbar_container" />
     <item type="id" name="original_focusability" />

@@ -11,41 +11,41 @@ import kotlin.coroutines.jvm.internal.d;
 public final class c implements b.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f6400a;
+    private final h f6506a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f6401b;
+    private final List f6507b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f6402c;
+    private final int f6508c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f6403d;
+    private final h f6509d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final i f6404e;
+    private final i f6510e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final v4.c f6405f;
+    private final v4.c f6511f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f6406g;
+    private final boolean f6512g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f6407d;
+        Object f6513d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f6408e;
+        Object f6514e;
 
         /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f6409i;
+        /* synthetic */ Object f6515i;
 
         /* renamed from: p  reason: collision with root package name */
-        int f6411p;
+        int f6517p;
 
         a(Continuation continuation) {
             super(continuation);
@@ -53,28 +53,28 @@ public final class c implements b.a {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f6409i = obj;
-            this.f6411p |= Integer.MIN_VALUE;
+            this.f6515i = obj;
+            this.f6517p |= Integer.MIN_VALUE;
             return c.this.g(null, this);
         }
     }
 
     public c(h hVar, List list, int i10, h hVar2, i iVar, v4.c cVar, boolean z10) {
-        this.f6400a = hVar;
-        this.f6401b = list;
-        this.f6402c = i10;
-        this.f6403d = hVar2;
-        this.f6404e = iVar;
-        this.f6405f = cVar;
-        this.f6406g = z10;
+        this.f6506a = hVar;
+        this.f6507b = list;
+        this.f6508c = i10;
+        this.f6509d = hVar2;
+        this.f6510e = iVar;
+        this.f6511f = cVar;
+        this.f6512g = z10;
     }
 
     private final void a(h hVar, b bVar) {
-        if (hVar.l() == this.f6400a.l()) {
-            if (hVar.m() != j.f23559a) {
-                if (hVar.M() == this.f6400a.M()) {
-                    if (hVar.z() == this.f6400a.z()) {
-                        if (hVar.K() == this.f6400a.K()) {
+        if (hVar.l() == this.f6506a.l()) {
+            if (hVar.m() != j.f24859a) {
+                if (hVar.M() == this.f6506a.M()) {
+                    if (hVar.z() == this.f6506a.z()) {
+                        if (hVar.K() == this.f6506a.K()) {
                             return;
                         }
                         throw new IllegalStateException(("Interceptor '" + bVar + "' cannot modify the request's size resolver. Use `Interceptor.Chain.withSize` instead.").toString());
@@ -89,12 +89,12 @@ public final class c implements b.a {
     }
 
     private final c b(int i10, h hVar, i iVar) {
-        return new c(this.f6400a, this.f6401b, i10, hVar, iVar, this.f6405f, this.f6406g);
+        return new c(this.f6506a, this.f6507b, i10, hVar, iVar, this.f6511f, this.f6512g);
     }
 
     static /* synthetic */ c d(c cVar, int i10, h hVar, i iVar, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            i10 = cVar.f6402c;
+            i10 = cVar.f6508c;
         }
         if ((i11 & 2) != 0) {
             hVar = cVar.c();
@@ -107,15 +107,15 @@ public final class c implements b.a {
 
     @Override // b5.b.a
     public h c() {
-        return this.f6403d;
+        return this.f6509d;
     }
 
     public final v4.c e() {
-        return this.f6405f;
+        return this.f6511f;
     }
 
     public final boolean f() {
-        return this.f6406g;
+        return this.f6512g;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -131,26 +131,26 @@ public final class c implements b.a {
             if (r0 == 0) goto L13
             r0 = r12
             b5.c$a r0 = (b5.c.a) r0
-            int r1 = r0.f6411p
+            int r1 = r0.f6517p
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f6411p = r1
+            r0.f6517p = r1
             goto L18
         L13:
             b5.c$a r0 = new b5.c$a
             r0.<init>(r12)
         L18:
-            java.lang.Object r12 = r0.f6409i
-            java.lang.Object r1 = xr.b.f()
-            int r2 = r0.f6411p
+            java.lang.Object r12 = r0.f6515i
+            java.lang.Object r1 = gs.b.f()
+            int r2 = r0.f6517p
             r3 = 1
             if (r2 == 0) goto L3a
             if (r2 != r3) goto L32
-            java.lang.Object r11 = r0.f6408e
+            java.lang.Object r11 = r0.f6514e
             b5.b r11 = (b5.b) r11
-            java.lang.Object r0 = r0.f6407d
+            java.lang.Object r0 = r0.f6513d
             b5.c r0 = (b5.c) r0
             kotlin.c.b(r12)
             r4 = r10
@@ -162,19 +162,19 @@ public final class c implements b.a {
             throw r11
         L3a:
             kotlin.c.b(r12)
-            int r12 = r10.f6402c
+            int r12 = r10.f6508c
             if (r12 <= 0) goto L4d
-            java.util.List r2 = r10.f6401b
+            java.util.List r2 = r10.f6507b
             int r12 = r12 - r3
             java.lang.Object r12 = r2.get(r12)
             b5.b r12 = (b5.b) r12
             r10.a(r11, r12)
         L4d:
-            java.util.List r12 = r10.f6401b
-            int r2 = r10.f6402c
+            java.util.List r12 = r10.f6507b
+            int r2 = r10.f6508c
             java.lang.Object r12 = r12.get(r2)
             b5.b r12 = (b5.b) r12
-            int r2 = r10.f6402c
+            int r2 = r10.f6508c
             int r5 = r2 + 1
             r8 = 4
             r9 = 0
@@ -182,9 +182,9 @@ public final class c implements b.a {
             r4 = r10
             r6 = r11
             b5.c r11 = d(r4, r5, r6, r7, r8, r9)
-            r0.f6407d = r4
-            r0.f6408e = r12
-            r0.f6411p = r3
+            r0.f6513d = r4
+            r0.f6514e = r12
+            r0.f6517p = r3
             java.lang.Object r11 = r12.a(r11, r0)
             if (r11 != r1) goto L71
             return r1
@@ -204,6 +204,6 @@ public final class c implements b.a {
 
     @Override // b5.b.a
     public i getSize() {
-        return this.f6404e;
+        return this.f6510e;
     }
 }

@@ -16,8 +16,8 @@ import java.util.Set;
 import java.util.UUID;
 import nc.t1;
 import oe.w0;
-import oi.q0;
-import oi.t0;
+import qi.q0;
+import qi.t0;
 import sc.b0;
 import sc.g;
 import sc.h;
@@ -29,115 +29,115 @@ import sc.v;
 public class h implements v {
 
     /* renamed from: c  reason: collision with root package name */
-    private final UUID f49648c;
+    private final UUID f47964c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b0.c f49649d;
+    private final b0.c f47965d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final j0 f49650e;
+    private final j0 f47966e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final HashMap f49651f;
+    private final HashMap f47967f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f49652g;
+    private final boolean f47968g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int[] f49653h;
+    private final int[] f47969h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f49654i;
+    private final boolean f47970i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final g f49655j;
+    private final g f47971j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.i f49656k;
+    private final com.google.android.exoplayer2.upstream.i f47972k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final C0665h f49657l;
+    private final C0650h f47973l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final long f49658m;
+    private final long f47974m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final List f49659n;
+    private final List f47975n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Set f49660o;
+    private final Set f47976o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Set f49661p;
+    private final Set f47977p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f49662q;
+    private int f47978q;
 
     /* renamed from: r  reason: collision with root package name */
-    private b0 f49663r;
+    private b0 f47979r;
 
     /* renamed from: s  reason: collision with root package name */
-    private sc.g f49664s;
+    private sc.g f47980s;
 
     /* renamed from: t  reason: collision with root package name */
-    private sc.g f49665t;
+    private sc.g f47981t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Looper f49666u;
+    private Looper f47982u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Handler f49667v;
+    private Handler f47983v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f49668w;
+    private int f47984w;
 
     /* renamed from: x  reason: collision with root package name */
-    private byte[] f49669x;
+    private byte[] f47985x;
 
     /* renamed from: y  reason: collision with root package name */
-    private t1 f49670y;
+    private t1 f47986y;
 
     /* renamed from: z  reason: collision with root package name */
-    volatile d f49671z;
+    volatile d f47987z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class b {
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f49675d;
+        private boolean f47991d;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f49677f;
+        private boolean f47993f;
 
         /* renamed from: a  reason: collision with root package name */
-        private final HashMap f49672a = new HashMap();
+        private final HashMap f47988a = new HashMap();
 
         /* renamed from: b  reason: collision with root package name */
-        private UUID f49673b = mc.d.f36853d;
+        private UUID f47989b = mc.d.f36228d;
 
         /* renamed from: c  reason: collision with root package name */
-        private b0.c f49674c = g0.f49644d;
+        private b0.c f47990c = g0.f47960d;
 
         /* renamed from: g  reason: collision with root package name */
-        private com.google.android.exoplayer2.upstream.i f49678g = new com.google.android.exoplayer2.upstream.g();
+        private com.google.android.exoplayer2.upstream.i f47994g = new com.google.android.exoplayer2.upstream.g();
 
         /* renamed from: e  reason: collision with root package name */
-        private int[] f49676e = new int[0];
+        private int[] f47992e = new int[0];
 
         /* renamed from: h  reason: collision with root package name */
-        private long f49679h = LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES;
+        private long f47995h = LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES;
 
         public h a(j0 j0Var) {
-            return new h(this.f49673b, this.f49674c, j0Var, this.f49672a, this.f49675d, this.f49676e, this.f49677f, this.f49678g, this.f49679h);
+            return new h(this.f47989b, this.f47990c, j0Var, this.f47988a, this.f47991d, this.f47992e, this.f47993f, this.f47994g, this.f47995h);
         }
 
         public b b(boolean z10) {
-            this.f49675d = z10;
+            this.f47991d = z10;
             return this;
         }
 
         public b c(boolean z10) {
-            this.f49677f = z10;
+            this.f47993f = z10;
             return this;
         }
 
@@ -149,13 +149,13 @@ public class h implements v {
                 }
                 oe.a.a(z10);
             }
-            this.f49676e = (int[]) iArr.clone();
+            this.f47992e = (int[]) iArr.clone();
             return this;
         }
 
         public b e(UUID uuid, b0.c cVar) {
-            this.f49673b = (UUID) oe.a.e(uuid);
-            this.f49674c = (b0.c) oe.a.e(cVar);
+            this.f47989b = (UUID) oe.a.e(uuid);
+            this.f47990c = (b0.c) oe.a.e(cVar);
             return this;
         }
     }
@@ -167,7 +167,7 @@ public class h implements v {
 
         @Override // sc.b0.b
         public void a(b0 b0Var, byte[] bArr, int i10, int i11, byte[] bArr2) {
-            ((d) oe.a.e(h.this.f49671z)).obtainMessage(i10, bArr).sendToTarget();
+            ((d) oe.a.e(h.this.f47987z)).obtainMessage(i10, bArr).sendToTarget();
         }
     }
 
@@ -182,7 +182,7 @@ public class h implements v {
         public void handleMessage(Message message) {
             byte[] bArr = (byte[]) message.obj;
             if (bArr != null) {
-                for (sc.g gVar : h.this.f49659n) {
+                for (sc.g gVar : h.this.f47975n) {
                     if (gVar.t(bArr)) {
                         gVar.z(message.what);
                         return;
@@ -204,40 +204,40 @@ public class h implements v {
     public class f implements v.b {
 
         /* renamed from: b  reason: collision with root package name */
-        private final u.a f49682b;
+        private final u.a f47998b;
 
         /* renamed from: c  reason: collision with root package name */
-        private n f49683c;
+        private n f47999c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f49684d;
+        private boolean f48000d;
 
         public f(u.a aVar) {
-            this.f49682b = aVar;
+            this.f47998b = aVar;
         }
 
         public static /* synthetic */ void b(f fVar, Format format) {
-            if (h.this.f49662q != 0 && !fVar.f49684d) {
+            if (h.this.f47978q != 0 && !fVar.f48000d) {
                 h hVar = h.this;
-                fVar.f49683c = hVar.t((Looper) oe.a.e(hVar.f49666u), fVar.f49682b, format, false);
-                h.this.f49660o.add(fVar);
+                fVar.f47999c = hVar.t((Looper) oe.a.e(hVar.f47982u), fVar.f47998b, format, false);
+                h.this.f47976o.add(fVar);
             }
         }
 
         public static /* synthetic */ void c(f fVar) {
-            if (fVar.f49684d) {
+            if (fVar.f48000d) {
                 return;
             }
-            n nVar = fVar.f49683c;
+            n nVar = fVar.f47999c;
             if (nVar != null) {
-                nVar.d(fVar.f49682b);
+                nVar.d(fVar.f47998b);
             }
-            h.this.f49660o.remove(fVar);
-            fVar.f49684d = true;
+            h.this.f47976o.remove(fVar);
+            fVar.f48000d = true;
         }
 
         public void d(final Format format) {
-            ((Handler) oe.a.e(h.this.f49667v)).post(new Runnable() { // from class: sc.i
+            ((Handler) oe.a.e(h.this.f47983v)).post(new Runnable() { // from class: sc.i
                 @Override // java.lang.Runnable
                 public final void run() {
                     h.f.b(h.f.this, format);
@@ -247,7 +247,7 @@ public class h implements v {
 
         @Override // sc.v.b
         public void release() {
-            w0.T0((Handler) oe.a.e(h.this.f49667v), new Runnable() { // from class: sc.j
+            w0.T0((Handler) oe.a.e(h.this.f47983v), new Runnable() { // from class: sc.j
                 @Override // java.lang.Runnable
                 public final void run() {
                     h.f.c(h.f.this);
@@ -261,29 +261,29 @@ public class h implements v {
     public class g implements g.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Set f49686a = new HashSet();
+        private final Set f48002a = new HashSet();
 
         /* renamed from: b  reason: collision with root package name */
-        private sc.g f49687b;
+        private sc.g f48003b;
 
         public g() {
         }
 
         @Override // sc.g.a
         public void a(sc.g gVar) {
-            this.f49686a.add(gVar);
-            if (this.f49687b != null) {
+            this.f48002a.add(gVar);
+            if (this.f48003b != null) {
                 return;
             }
-            this.f49687b = gVar;
+            this.f48003b = gVar;
             gVar.F();
         }
 
         @Override // sc.g.a
         public void b(Exception exc, boolean z10) {
-            this.f49687b = null;
-            oi.s o10 = oi.s.o(this.f49686a);
-            this.f49686a.clear();
+            this.f48003b = null;
+            qi.s o10 = qi.s.o(this.f48002a);
+            this.f48002a.clear();
             t0 it = o10.iterator();
             while (it.hasNext()) {
                 ((sc.g) it.next()).B(exc, z10);
@@ -292,9 +292,9 @@ public class h implements v {
 
         @Override // sc.g.a
         public void c() {
-            this.f49687b = null;
-            oi.s o10 = oi.s.o(this.f49686a);
-            this.f49686a.clear();
+            this.f48003b = null;
+            qi.s o10 = qi.s.o(this.f48002a);
+            this.f48002a.clear();
             t0 it = o10.iterator();
             while (it.hasNext()) {
                 ((sc.g) it.next()).A();
@@ -302,12 +302,12 @@ public class h implements v {
         }
 
         public void d(sc.g gVar) {
-            this.f49686a.remove(gVar);
-            if (this.f49687b == gVar) {
-                this.f49687b = null;
-                if (!this.f49686a.isEmpty()) {
-                    sc.g gVar2 = (sc.g) this.f49686a.iterator().next();
-                    this.f49687b = gVar2;
+            this.f48002a.remove(gVar);
+            if (this.f48003b == gVar) {
+                this.f48003b = null;
+                if (!this.f48002a.isEmpty()) {
+                    sc.g gVar2 = (sc.g) this.f48002a.iterator().next();
+                    this.f48003b = gVar2;
                     gVar2.F();
                 }
             }
@@ -317,40 +317,40 @@ public class h implements v {
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: sc.h$h  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public class C0665h implements g.b {
-        private C0665h() {
+    public class C0650h implements g.b {
+        private C0650h() {
         }
 
         @Override // sc.g.b
         public void a(sc.g gVar, int i10) {
-            if (h.this.f49658m != -9223372036854775807L) {
-                h.this.f49661p.remove(gVar);
-                ((Handler) oe.a.e(h.this.f49667v)).removeCallbacksAndMessages(gVar);
+            if (h.this.f47974m != -9223372036854775807L) {
+                h.this.f47977p.remove(gVar);
+                ((Handler) oe.a.e(h.this.f47983v)).removeCallbacksAndMessages(gVar);
             }
         }
 
         @Override // sc.g.b
         public void b(final sc.g gVar, int i10) {
-            if (i10 == 1 && h.this.f49662q > 0 && h.this.f49658m != -9223372036854775807L) {
-                h.this.f49661p.add(gVar);
-                ((Handler) oe.a.e(h.this.f49667v)).postAtTime(new Runnable() { // from class: sc.k
+            if (i10 == 1 && h.this.f47978q > 0 && h.this.f47974m != -9223372036854775807L) {
+                h.this.f47977p.add(gVar);
+                ((Handler) oe.a.e(h.this.f47983v)).postAtTime(new Runnable() { // from class: sc.k
                     @Override // java.lang.Runnable
                     public final void run() {
                         g.this.d(null);
                     }
-                }, gVar, SystemClock.uptimeMillis() + h.this.f49658m);
+                }, gVar, SystemClock.uptimeMillis() + h.this.f47974m);
             } else if (i10 == 0) {
-                h.this.f49659n.remove(gVar);
-                if (h.this.f49664s == gVar) {
-                    h.this.f49664s = null;
+                h.this.f47975n.remove(gVar);
+                if (h.this.f47980s == gVar) {
+                    h.this.f47980s = null;
                 }
-                if (h.this.f49665t == gVar) {
-                    h.this.f49665t = null;
+                if (h.this.f47981t == gVar) {
+                    h.this.f47981t = null;
                 }
-                h.this.f49655j.d(gVar);
-                if (h.this.f49658m != -9223372036854775807L) {
-                    ((Handler) oe.a.e(h.this.f49667v)).removeCallbacksAndMessages(gVar);
-                    h.this.f49661p.remove(gVar);
+                h.this.f47971j.d(gVar);
+                if (h.this.f47974m != -9223372036854775807L) {
+                    ((Handler) oe.a.e(h.this.f47983v)).removeCallbacksAndMessages(gVar);
+                    h.this.f47977p.remove(gVar);
                 }
             }
             h.this.C();
@@ -358,44 +358,44 @@ public class h implements v {
     }
 
     private n A(int i10, boolean z10) {
-        b0 b0Var = (b0) oe.a.e(this.f49663r);
-        if ((b0Var.g() == 2 && c0.f49604d) || w0.I0(this.f49653h, i10) == -1 || b0Var.g() == 1) {
+        b0 b0Var = (b0) oe.a.e(this.f47979r);
+        if ((b0Var.g() == 2 && c0.f47920d) || w0.I0(this.f47969h, i10) == -1 || b0Var.g() == 1) {
             return null;
         }
-        sc.g gVar = this.f49664s;
+        sc.g gVar = this.f47980s;
         if (gVar == null) {
-            sc.g x10 = x(oi.s.t(), true, null, z10);
-            this.f49659n.add(x10);
-            this.f49664s = x10;
+            sc.g x10 = x(qi.s.t(), true, null, z10);
+            this.f47975n.add(x10);
+            this.f47980s = x10;
         } else {
             gVar.c(null);
         }
-        return this.f49664s;
+        return this.f47980s;
     }
 
     private void B(Looper looper) {
-        if (this.f49671z == null) {
-            this.f49671z = new d(looper);
+        if (this.f47987z == null) {
+            this.f47987z = new d(looper);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void C() {
-        if (this.f49663r != null && this.f49662q == 0 && this.f49659n.isEmpty() && this.f49660o.isEmpty()) {
-            ((b0) oe.a.e(this.f49663r)).release();
-            this.f49663r = null;
+        if (this.f47979r != null && this.f47978q == 0 && this.f47975n.isEmpty() && this.f47976o.isEmpty()) {
+            ((b0) oe.a.e(this.f47979r)).release();
+            this.f47979r = null;
         }
     }
 
     private void D() {
-        t0 s10 = oi.u.o(this.f49661p).s();
+        t0 s10 = qi.u.o(this.f47977p).s();
         while (s10.hasNext()) {
             ((n) s10.next()).d(null);
         }
     }
 
     private void E() {
-        t0 s10 = oi.u.o(this.f49660o).s();
+        t0 s10 = qi.u.o(this.f47976o).s();
         while (s10.hasNext()) {
             ((f) s10.next()).release();
         }
@@ -403,16 +403,16 @@ public class h implements v {
 
     private void G(n nVar, u.a aVar) {
         nVar.d(aVar);
-        if (this.f49658m != -9223372036854775807L) {
+        if (this.f47974m != -9223372036854775807L) {
             nVar.d(null);
         }
     }
 
     private void H(boolean z10) {
-        if (z10 && this.f49666u == null) {
+        if (z10 && this.f47982u == null) {
             oe.y.j("DefaultDrmSessionMgr", "DefaultDrmSessionManager accessed before setPlayer(), possibly on the wrong thread.", new IllegalStateException());
-        } else if (Thread.currentThread() != ((Looper) oe.a.e(this.f49666u)).getThread()) {
-            oe.y.j("DefaultDrmSessionMgr", "DefaultDrmSessionManager accessed on the wrong thread.\nCurrent thread: " + Thread.currentThread().getName() + "\nExpected thread: " + this.f49666u.getThread().getName(), new IllegalStateException());
+        } else if (Thread.currentThread() != ((Looper) oe.a.e(this.f47982u)).getThread()) {
+            oe.y.j("DefaultDrmSessionMgr", "DefaultDrmSessionManager accessed on the wrong thread.\nCurrent thread: " + Thread.currentThread().getName() + "\nExpected thread: " + this.f47982u.getThread().getName(), new IllegalStateException());
         }
     }
 
@@ -420,15 +420,15 @@ public class h implements v {
     public n t(Looper looper, u.a aVar, Format format, boolean z10) {
         List list;
         B(looper);
-        m mVar = format.f11730z;
+        m mVar = format.f12307z;
         if (mVar == null) {
-            return A(oe.c0.k(format.f11727w), z10);
+            return A(oe.c0.k(format.f12304w), z10);
         }
         sc.g gVar = null;
-        if (this.f49669x == null) {
-            list = y((m) oe.a.e(mVar), this.f49648c, false);
+        if (this.f47985x == null) {
+            list = y((m) oe.a.e(mVar), this.f47964c, false);
             if (list.isEmpty()) {
-                e eVar = new e(this.f49648c);
+                e eVar = new e(this.f47964c);
                 oe.y.d("DefaultDrmSessionMgr", "DRM error", eVar);
                 if (aVar != null) {
                     aVar.l(eVar);
@@ -438,16 +438,16 @@ public class h implements v {
         } else {
             list = null;
         }
-        if (!this.f49652g) {
-            gVar = this.f49665t;
+        if (!this.f47968g) {
+            gVar = this.f47981t;
         } else {
-            Iterator it = this.f49659n.iterator();
+            Iterator it = this.f47975n.iterator();
             while (true) {
                 if (!it.hasNext()) {
                     break;
                 }
                 sc.g gVar2 = (sc.g) it.next();
-                if (w0.c(gVar2.f49611a, list)) {
+                if (w0.c(gVar2.f47927a, list)) {
                     gVar = gVar2;
                     break;
                 }
@@ -455,10 +455,10 @@ public class h implements v {
         }
         if (gVar == null) {
             sc.g x10 = x(list, false, aVar, z10);
-            if (!this.f49652g) {
-                this.f49665t = x10;
+            if (!this.f47968g) {
+                this.f47981t = x10;
             }
-            this.f49659n.add(x10);
+            this.f47975n.add(x10);
             return x10;
         }
         gVar.c(aVar);
@@ -467,7 +467,7 @@ public class h implements v {
 
     private static boolean u(n nVar) {
         if (nVar.getState() == 1) {
-            if (w0.f40711a < 19 || (((n.a) oe.a.e(nVar.getError())).getCause() instanceof ResourceBusyException)) {
+            if (w0.f39037a < 19 || (((n.a) oe.a.e(nVar.getError())).getCause() instanceof ResourceBusyException)) {
                 return true;
             }
             return false;
@@ -476,21 +476,21 @@ public class h implements v {
     }
 
     private boolean v(m mVar) {
-        if (this.f49669x != null) {
+        if (this.f47985x != null) {
             return true;
         }
-        if (y(mVar, this.f49648c, true).isEmpty()) {
-            if (mVar.f49711o != 1 || !mVar.i(0).d(mc.d.f36851b)) {
+        if (y(mVar, this.f47964c, true).isEmpty()) {
+            if (mVar.f48027o != 1 || !mVar.o(0).d(mc.d.f36226b)) {
                 return false;
             }
-            oe.y.i("DefaultDrmSessionMgr", "DrmInitData only contains common PSSH SchemeData. Assuming support for: " + this.f49648c);
+            oe.y.i("DefaultDrmSessionMgr", "DrmInitData only contains common PSSH SchemeData. Assuming support for: " + this.f47964c);
         }
-        String str = mVar.f49710i;
+        String str = mVar.f48026i;
         if (str == null || "cenc".equals(str)) {
             return true;
         }
         if ("cbcs".equals(str)) {
-            if (w0.f40711a >= 25) {
+            if (w0.f39037a >= 25) {
                 return true;
             }
             return false;
@@ -502,10 +502,10 @@ public class h implements v {
     }
 
     private sc.g w(List list, boolean z10, u.a aVar) {
-        oe.a.e(this.f49663r);
-        sc.g gVar = new sc.g(this.f49648c, this.f49663r, this.f49655j, this.f49657l, list, this.f49668w, this.f49654i | z10, z10, this.f49669x, this.f49651f, this.f49650e, (Looper) oe.a.e(this.f49666u), this.f49656k, (t1) oe.a.e(this.f49670y));
+        oe.a.e(this.f47979r);
+        sc.g gVar = new sc.g(this.f47964c, this.f47979r, this.f47971j, this.f47973l, list, this.f47984w, this.f47970i | z10, z10, this.f47985x, this.f47967f, this.f47966e, (Looper) oe.a.e(this.f47982u), this.f47972k, (t1) oe.a.e(this.f47986y));
         gVar.c(aVar);
-        if (this.f49658m != -9223372036854775807L) {
+        if (this.f47974m != -9223372036854775807L) {
             gVar.c(null);
         }
         return gVar;
@@ -513,14 +513,14 @@ public class h implements v {
 
     private sc.g x(List list, boolean z10, u.a aVar, boolean z11) {
         sc.g w10 = w(list, z10, aVar);
-        if (u(w10) && !this.f49661p.isEmpty()) {
+        if (u(w10) && !this.f47977p.isEmpty()) {
             D();
             G(w10, aVar);
             w10 = w(list, z10, aVar);
         }
-        if (u(w10) && z11 && !this.f49660o.isEmpty()) {
+        if (u(w10) && z11 && !this.f47976o.isEmpty()) {
             E();
-            if (!this.f49661p.isEmpty()) {
+            if (!this.f47977p.isEmpty()) {
                 D();
             }
             G(w10, aVar);
@@ -530,11 +530,11 @@ public class h implements v {
     }
 
     private static List y(m mVar, UUID uuid, boolean z10) {
-        ArrayList arrayList = new ArrayList(mVar.f49711o);
-        for (int i10 = 0; i10 < mVar.f49711o; i10++) {
-            m.b i11 = mVar.i(i10);
-            if ((i11.d(uuid) || (mc.d.f36852c.equals(uuid) && i11.d(mc.d.f36851b))) && (i11.f49716p != null || z10)) {
-                arrayList.add(i11);
+        ArrayList arrayList = new ArrayList(mVar.f48027o);
+        for (int i10 = 0; i10 < mVar.f48027o; i10++) {
+            m.b o10 = mVar.o(i10);
+            if ((o10.d(uuid) || (mc.d.f36227c.equals(uuid) && o10.d(mc.d.f36226b))) && (o10.f48032p != null || z10)) {
+                arrayList.add(o10);
             }
         }
         return arrayList;
@@ -543,10 +543,10 @@ public class h implements v {
     private synchronized void z(Looper looper) {
         boolean z10;
         try {
-            Looper looper2 = this.f49666u;
+            Looper looper2 = this.f47982u;
             if (looper2 == null) {
-                this.f49666u = looper;
-                this.f49667v = new Handler(looper);
+                this.f47982u = looper;
+                this.f47983v = new Handler(looper);
             } else {
                 if (looper2 == looper) {
                     z10 = true;
@@ -554,7 +554,7 @@ public class h implements v {
                     z10 = false;
                 }
                 oe.a.g(z10);
-                oe.a.e(this.f49667v);
+                oe.a.e(this.f47983v);
             }
         } catch (Throwable th2) {
             throw th2;
@@ -562,21 +562,21 @@ public class h implements v {
     }
 
     public void F(int i10, byte[] bArr) {
-        oe.a.g(this.f49659n.isEmpty());
+        oe.a.g(this.f47975n.isEmpty());
         if (i10 == 1 || i10 == 3) {
             oe.a.e(bArr);
         }
-        this.f49668w = i10;
-        this.f49669x = bArr;
+        this.f47984w = i10;
+        this.f47985x = bArr;
     }
 
     @Override // sc.v
     public int a(Format format) {
         H(false);
-        int g10 = ((b0) oe.a.e(this.f49663r)).g();
-        m mVar = format.f11730z;
+        int g10 = ((b0) oe.a.e(this.f47979r)).g();
+        m mVar = format.f12307z;
         if (mVar == null) {
-            if (w0.I0(this.f49653h, oe.c0.k(format.f11727w)) == -1) {
+            if (w0.I0(this.f47969h, oe.c0.k(format.f12304w)) == -1) {
                 return 0;
             }
         } else if (!v(mVar)) {
@@ -588,13 +588,13 @@ public class h implements v {
     @Override // sc.v
     public v.b b(u.a aVar, Format format) {
         boolean z10;
-        if (this.f49662q > 0) {
+        if (this.f47978q > 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         oe.a.g(z10);
-        oe.a.i(this.f49666u);
+        oe.a.i(this.f47982u);
         f fVar = new f(aVar);
         fVar.d(format);
         return fVar;
@@ -604,27 +604,27 @@ public class h implements v {
     public n c(u.a aVar, Format format) {
         boolean z10 = false;
         H(false);
-        if (this.f49662q > 0) {
+        if (this.f47978q > 0) {
             z10 = true;
         }
         oe.a.g(z10);
-        oe.a.i(this.f49666u);
-        return t(this.f49666u, aVar, format, true);
+        oe.a.i(this.f47982u);
+        return t(this.f47982u, aVar, format, true);
     }
 
     @Override // sc.v
     public final void d() {
         H(true);
-        int i10 = this.f49662q;
-        this.f49662q = i10 + 1;
+        int i10 = this.f47978q;
+        this.f47978q = i10 + 1;
         if (i10 == 0) {
-            if (this.f49663r == null) {
-                b0 a10 = this.f49649d.a(this.f49648c);
-                this.f49663r = a10;
+            if (this.f47979r == null) {
+                b0 a10 = this.f47965d.a(this.f47964c);
+                this.f47979r = a10;
                 a10.e(new c());
-            } else if (this.f49658m != -9223372036854775807L) {
-                for (int i11 = 0; i11 < this.f49659n.size(); i11++) {
-                    ((sc.g) this.f49659n.get(i11)).c(null);
+            } else if (this.f47974m != -9223372036854775807L) {
+                for (int i11 = 0; i11 < this.f47975n.size(); i11++) {
+                    ((sc.g) this.f47975n.get(i11)).c(null);
                 }
             }
         }
@@ -633,19 +633,19 @@ public class h implements v {
     @Override // sc.v
     public void e(Looper looper, t1 t1Var) {
         z(looper);
-        this.f49670y = t1Var;
+        this.f47986y = t1Var;
     }
 
     @Override // sc.v
     public final void release() {
         H(true);
-        int i10 = this.f49662q - 1;
-        this.f49662q = i10;
+        int i10 = this.f47978q - 1;
+        this.f47978q = i10;
         if (i10 != 0) {
             return;
         }
-        if (this.f49658m != -9223372036854775807L) {
-            ArrayList arrayList = new ArrayList(this.f49659n);
+        if (this.f47974m != -9223372036854775807L) {
+            ArrayList arrayList = new ArrayList(this.f47975n);
             for (int i11 = 0; i11 < arrayList.size(); i11++) {
                 ((sc.g) arrayList.get(i11)).d(null);
             }
@@ -656,21 +656,21 @@ public class h implements v {
 
     private h(UUID uuid, b0.c cVar, j0 j0Var, HashMap hashMap, boolean z10, int[] iArr, boolean z11, com.google.android.exoplayer2.upstream.i iVar, long j10) {
         oe.a.e(uuid);
-        oe.a.b(!mc.d.f36851b.equals(uuid), "Use C.CLEARKEY_UUID instead");
-        this.f49648c = uuid;
-        this.f49649d = cVar;
-        this.f49650e = j0Var;
-        this.f49651f = hashMap;
-        this.f49652g = z10;
-        this.f49653h = iArr;
-        this.f49654i = z11;
-        this.f49656k = iVar;
-        this.f49655j = new g();
-        this.f49657l = new C0665h();
-        this.f49668w = 0;
-        this.f49659n = new ArrayList();
-        this.f49660o = q0.h();
-        this.f49661p = q0.h();
-        this.f49658m = j10;
+        oe.a.b(!mc.d.f36226b.equals(uuid), "Use C.CLEARKEY_UUID instead");
+        this.f47964c = uuid;
+        this.f47965d = cVar;
+        this.f47966e = j0Var;
+        this.f47967f = hashMap;
+        this.f47968g = z10;
+        this.f47969h = iArr;
+        this.f47970i = z11;
+        this.f47972k = iVar;
+        this.f47971j = new g();
+        this.f47973l = new C0650h();
+        this.f47984w = 0;
+        this.f47975n = new ArrayList();
+        this.f47976o = q0.h();
+        this.f47977p = q0.h();
+        this.f47974m = j10;
     }
 }

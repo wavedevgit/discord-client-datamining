@@ -56,7 +56,7 @@ public final class NextStep_GovernmentId_AssetConfig_PromptPageJsonAdapter exten
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -100,7 +100,7 @@ public final class NextStep_GovernmentId_AssetConfig_PromptPageJsonAdapter exten
         RemoteImage remoteImage15 = remoteImage;
         Constructor<NextStep.GovernmentId.AssetConfig.PromptPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, bn.c.f7152c);
+            constructor = NextStep.GovernmentId.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, dn.c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -113,7 +113,7 @@ public final class NextStep_GovernmentId_AssetConfig_PromptPageJsonAdapter exten
     public void toJson(@NotNull t writer, NextStep.GovernmentId.AssetConfig.PromptPage promptPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
-            writer.k();
+            writer.i();
             writer.J("headerPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getHeaderPictograph());
             writer.J("idFrontPictograph");

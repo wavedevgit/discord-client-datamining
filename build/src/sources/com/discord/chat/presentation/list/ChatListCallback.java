@@ -2,7 +2,7 @@ package com.discord.chat.presentation.list;
 
 import android.graphics.Canvas;
 import android.util.Pair;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.presentation.list.ChatListItemTouchHelper;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
 public abstract class ChatListCallback extends androidx.recyclerview.widget.h {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int getAbsoluteMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
-        return convertToAbsoluteDirection(getMovementFlags(recyclerView, viewHolder), h0.z(recyclerView));
+        return convertToAbsoluteDirection(getMovementFlags(recyclerView, viewHolder), i0.y(recyclerView));
     }
 
     public Pair getEffectiveDxDy(float f10, float f11) {

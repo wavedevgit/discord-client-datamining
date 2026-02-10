@@ -12,16 +12,16 @@ import java.util.Map;
 public final class g implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f28257d;
+    private final String f29192d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f28258e;
+    private final String f29193e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Long f28259i;
+    private final Long f29194i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f28260o;
+    private Map f29195o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -66,19 +66,19 @@ public final class g implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        l10 = e3Var.i1();
+                        l10 = e3Var.n1();
                         break;
                     case 1:
-                        str = e3Var.m1();
+                        str = e3Var.r1();
                         break;
                     case 2:
-                        str2 = e3Var.m1();
+                        str2 = e3Var.r1();
                         break;
                     default:
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.p1(iLogger, hashMap, o02);
+                        e3Var.u1(iLogger, hashMap, o02);
                         break;
                 }
             }
@@ -99,43 +99,43 @@ public final class g implements w1 {
     }
 
     public g(String str, String str2, Long l10) {
-        this.f28257d = str;
-        this.f28258e = str2;
-        this.f28259i = l10;
+        this.f29192d = str;
+        this.f29193e = str2;
+        this.f29194i = l10;
     }
 
     public String a() {
-        return this.f28258e;
+        return this.f29193e;
     }
 
     public Long b() {
-        return this.f28259i;
+        return this.f29194i;
     }
 
     public String c() {
-        return this.f28257d;
+        return this.f29192d;
     }
 
     public void d(Map map) {
-        this.f28260o = map;
+        this.f29195o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("reason").f(this.f28257d);
-        f3Var.e("category").f(this.f28258e);
-        f3Var.e("quantity").i(this.f28259i);
-        Map map = this.f28260o;
+        f3Var.e("reason").f(this.f29192d);
+        f3Var.e("category").f(this.f29193e);
+        f3Var.e("quantity").i(this.f29194i);
+        Map map = this.f29195o;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f28260o.get(str));
+                f3Var.e(str).j(iLogger, this.f29195o.get(str));
             }
         }
         f3Var.D();
     }
 
     public String toString() {
-        return "DiscardedEvent{reason='" + this.f28257d + "', category='" + this.f28258e + "', quantity=" + this.f28259i + '}';
+        return "DiscardedEvent{reason='" + this.f29192d + "', category='" + this.f29193e + "', quantity=" + this.f29194i + '}';
     }
 }

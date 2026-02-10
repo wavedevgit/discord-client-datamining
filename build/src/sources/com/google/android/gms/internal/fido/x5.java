@@ -14,16 +14,16 @@ public final class x5 extends a implements IInterface {
     /* JADX WARN: Multi-variable type inference failed */
     public final void W0(w5 w5Var, PublicKeyCredentialRequestOptions publicKeyCredentialRequestOptions) {
         Parcel e10 = e();
-        int i10 = c1.f14074b;
+        int i10 = c1.f14651b;
         e10.writeStrongBinder(w5Var);
         c1.c(e10, publicKeyCredentialRequestOptions);
         f(2, e10);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public final void h(w5 w5Var, xf.r rVar) {
+    public final void i(w5 w5Var, xf.r rVar) {
         Parcel e10 = e();
-        int i10 = c1.f14074b;
+        int i10 = c1.f14651b;
         e10.writeStrongBinder(w5Var);
         c1.c(e10, rVar);
         f(1, e10);

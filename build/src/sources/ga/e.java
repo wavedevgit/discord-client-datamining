@@ -1,5 +1,7 @@
 package ga;
 
+import as.l;
+import as.o;
 import ga.c;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,16 +11,14 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import p8.n;
-import rr.l;
-import rr.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class e {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f24101e = new a(null);
+    public static final a f25401e = new a(null);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Lazy f24102f = l.b(o.f49209d, new Function0() { // from class: ga.d
+    private static final Lazy f25402f = l.a(o.f6081d, new Function0() { // from class: ga.d
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             e f10;
@@ -28,16 +28,16 @@ public final class e {
     });
 
     /* renamed from: a  reason: collision with root package name */
-    private int f24103a;
+    private int f25403a;
 
     /* renamed from: b  reason: collision with root package name */
-    private List f24104b;
+    private List f25404b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ga.a f24105c = new ga.a();
+    private final ga.a f25405c = new ga.a();
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f24106d;
+    private boolean f25406d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -76,7 +76,7 @@ public final class e {
         }
 
         public final e d() {
-            return (e) e.f24102f.getValue();
+            return (e) e.f25402f.getValue();
         }
 
         private a() {
@@ -88,11 +88,11 @@ public final class e {
     }
 
     public static final c d(InputStream inputStream) {
-        return f24101e.c(inputStream);
+        return f25401e.c(inputStream);
     }
 
     public static final e e() {
-        return f24101e.d();
+        return f25401e.d();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -101,42 +101,42 @@ public final class e {
     }
 
     private final void h() {
-        this.f24103a = this.f24105c.b();
-        List<c.b> list = this.f24104b;
+        this.f25403a = this.f25405c.b();
+        List<c.b> list = this.f25404b;
         if (list != null) {
             Intrinsics.checkNotNull(list);
             for (c.b bVar : list) {
-                this.f24103a = Math.max(this.f24103a, bVar.b());
+                this.f25403a = Math.max(this.f25403a, bVar.b());
             }
         }
     }
 
     public final c c(InputStream is2) {
         Intrinsics.checkNotNullParameter(is2, "is");
-        int i10 = this.f24103a;
+        int i10 = this.f25403a;
         byte[] bArr = new byte[i10];
-        int e10 = f24101e.e(i10, is2, bArr);
-        c a10 = this.f24105c.a(bArr, e10);
-        if (Intrinsics.areEqual(a10, b.f24094n) && !this.f24106d) {
-            a10 = c.f24098d;
+        int e10 = f25401e.e(i10, is2, bArr);
+        c a10 = this.f25405c.a(bArr, e10);
+        if (Intrinsics.areEqual(a10, b.f25394n) && !this.f25406d) {
+            a10 = c.f25398d;
         }
-        if (a10 != c.f24098d) {
+        if (a10 != c.f25398d) {
             return a10;
         }
-        List<c.b> list = this.f24104b;
+        List<c.b> list = this.f25404b;
         if (list != null) {
             for (c.b bVar : list) {
                 c a11 = bVar.a(bArr, e10);
-                if (a11 != c.f24098d) {
+                if (a11 != c.f25398d) {
                     return a11;
                 }
             }
         }
-        return c.f24098d;
+        return c.f25398d;
     }
 
     public final e g(boolean z10) {
-        this.f24106d = z10;
+        this.f25406d = z10;
         return this;
     }
 }

@@ -1,56 +1,47 @@
 package com.swmansion.rnscreens;
 
-import androidx.activity.OnBackPressedCallback;
-import androidx.activity.OnBackPressedDispatcher;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
-import kotlin.jvm.internal.Intrinsics;
+import android.view.ViewGroup;
+import com.facebook.react.bridge.ReactContext;
+import com.facebook.react.bridge.WritableNativeMap;
+import com.facebook.react.uimanager.PixelUtil;
+import com.facebook.react.uimanager.StateWrapper;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class h {
+public abstract class h extends ViewGroup {
+    private float lastHeaderHeight;
+    private float lastHeight;
+    private float lastWidth;
+    private StateWrapper mStateWrapper;
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Fragment f18410a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final OnBackPressedCallback f18411b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private boolean f18412c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private boolean f18413d;
-
-    public h(Fragment fragment, OnBackPressedCallback onBackPressedCallback) {
-        Intrinsics.checkNotNullParameter(fragment, "fragment");
-        Intrinsics.checkNotNullParameter(onBackPressedCallback, "onBackPressedCallback");
-        this.f18410a = fragment;
-        this.f18411b = onBackPressedCallback;
-        this.f18413d = true;
+    public h(ReactContext reactContext) {
+        super(reactContext);
     }
 
-    public final boolean a() {
-        return this.f18413d;
+    public final void setStateWrapper(StateWrapper stateWrapper) {
+        this.mStateWrapper = stateWrapper;
     }
 
-    public final void b() {
-        OnBackPressedDispatcher onBackPressedDispatcher;
-        if (!this.f18412c && this.f18413d) {
-            FragmentActivity activity = this.f18410a.getActivity();
-            if (activity != null && (onBackPressedDispatcher = activity.getOnBackPressedDispatcher()) != null) {
-                onBackPressedDispatcher.h(this.f18410a, this.f18411b);
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void updateScreenSizeFabric(int i10, int i11, int i12) {
+        updateState(i10, i11, i12);
+    }
+
+    public final void updateState(int i10, int i11, int i12) {
+        float dIPFromPixel = PixelUtil.toDIPFromPixel(i10);
+        float dIPFromPixel2 = PixelUtil.toDIPFromPixel(i11);
+        float dIPFromPixel3 = PixelUtil.toDIPFromPixel(i12);
+        if (Math.abs(this.lastWidth - dIPFromPixel) >= 0.9f || Math.abs(this.lastHeight - dIPFromPixel2) >= 0.9f || Math.abs(this.lastHeaderHeight - dIPFromPixel3) >= 0.9f) {
+            this.lastWidth = dIPFromPixel;
+            this.lastHeight = dIPFromPixel2;
+            this.lastHeaderHeight = dIPFromPixel3;
+            WritableNativeMap writableNativeMap = new WritableNativeMap();
+            writableNativeMap.putDouble("frameWidth", dIPFromPixel);
+            writableNativeMap.putDouble("frameHeight", dIPFromPixel2);
+            writableNativeMap.putDouble("contentOffsetX", 0.0d);
+            writableNativeMap.putDouble("contentOffsetY", dIPFromPixel3);
+            StateWrapper stateWrapper = this.mStateWrapper;
+            if (stateWrapper != null) {
+                stateWrapper.updateState(writableNativeMap);
             }
-            this.f18412c = true;
         }
-    }
-
-    public final void c() {
-        if (this.f18412c) {
-            this.f18411b.remove();
-            this.f18412c = false;
-        }
-    }
-
-    public final void d(boolean z10) {
-        this.f18413d = z10;
     }
 }

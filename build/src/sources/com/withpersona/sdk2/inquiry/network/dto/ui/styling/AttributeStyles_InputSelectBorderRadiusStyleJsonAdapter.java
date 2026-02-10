@@ -46,7 +46,7 @@ public final class AttributeStyles_InputSelectBorderRadiusStyleJsonAdapter exten
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
@@ -60,7 +60,7 @@ public final class AttributeStyles_InputSelectBorderRadiusStyleJsonAdapter exten
     public void toJson(@NotNull t writer, AttributeStyles.InputSelectBorderRadiusStyle inputSelectBorderRadiusStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputSelectBorderRadiusStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableMeasurementAdapter.toJson(writer, inputSelectBorderRadiusStyle.getBase());
             writer.s();

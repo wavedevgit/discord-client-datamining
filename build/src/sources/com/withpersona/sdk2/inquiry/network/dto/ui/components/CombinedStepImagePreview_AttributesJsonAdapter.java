@@ -37,7 +37,7 @@ public final class CombinedStepImagePreview_AttributesJsonAdapter extends h {
         reader.u();
         while (reader.hasNext()) {
             if (reader.J(this.options) == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -49,7 +49,7 @@ public final class CombinedStepImagePreview_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, CombinedStepImagePreview.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.s();
             return;
         }

@@ -19,7 +19,7 @@ import androidx.annotation.NonNull;
 import androidx.core.view.ContentInfoCompat;
 import androidx.core.widget.TextViewOnReceiveContentListener;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class AppCompatEditText extends EditText implements androidx.core.view.x {
+public class AppCompatEditText extends EditText implements androidx.core.view.y {
     @NonNull
     private final AppCompatEmojiEditTextHelper mAppCompatEmojiEditTextHelper;
     private final AppCompatBackgroundHelper mBackgroundTintHelper;
@@ -70,7 +70,7 @@ public class AppCompatEditText extends EditText implements androidx.core.view.x 
 
     @Override // android.widget.TextView
     public ActionMode.Callback getCustomSelectionActionModeCallback() {
-        return androidx.core.widget.j.u(super.getCustomSelectionActionModeCallback());
+        return androidx.core.widget.j.s(super.getCustomSelectionActionModeCallback());
     }
 
     public ColorStateList getSupportBackgroundTintList() {
@@ -131,12 +131,12 @@ public class AppCompatEditText extends EditText implements androidx.core.view.x 
 
     @Override // android.widget.TextView, android.view.View
     public InputConnection onCreateInputConnection(@NonNull EditorInfo editorInfo) {
-        String[] C;
+        String[] B;
         InputConnection onCreateInputConnection = super.onCreateInputConnection(editorInfo);
         this.mTextHelper.r(this, onCreateInputConnection, editorInfo);
         InputConnection a10 = k.a(onCreateInputConnection, editorInfo, this);
-        if (a10 != null && Build.VERSION.SDK_INT <= 30 && (C = androidx.core.view.h0.C(this)) != null) {
-            e2.c.d(editorInfo, C);
+        if (a10 != null && Build.VERSION.SDK_INT <= 30 && (B = androidx.core.view.i0.B(this)) != null) {
+            e2.c.d(editorInfo, B);
             a10 = e2.e.c(this, a10, editorInfo);
         }
         return this.mAppCompatEmojiEditTextHelper.e(a10, editorInfo);
@@ -160,7 +160,7 @@ public class AppCompatEditText extends EditText implements androidx.core.view.x 
         return super.onDragEvent(dragEvent);
     }
 
-    @Override // androidx.core.view.x
+    @Override // androidx.core.view.y
     public ContentInfoCompat onReceiveContent(@NonNull ContentInfoCompat contentInfoCompat) {
         return this.mDefaultOnReceiveContentListener.a(this, contentInfoCompat);
     }
@@ -211,7 +211,7 @@ public class AppCompatEditText extends EditText implements androidx.core.view.x 
 
     @Override // android.widget.TextView
     public void setCustomSelectionActionModeCallback(ActionMode.Callback callback) {
-        super.setCustomSelectionActionModeCallback(androidx.core.widget.j.v(this, callback));
+        super.setCustomSelectionActionModeCallback(androidx.core.widget.j.t(this, callback));
     }
 
     public void setEmojiCompatEnabled(boolean z10) {
@@ -267,7 +267,7 @@ public class AppCompatEditText extends EditText implements androidx.core.view.x 
     }
 
     public AppCompatEditText(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.f22178z);
+        this(context, attributeSet, f.a.A);
     }
 
     @Override // android.widget.EditText, android.widget.TextView

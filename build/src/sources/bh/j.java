@@ -1,83 +1,86 @@
 package bh;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class j {
-    public static int A = 2132018380;
+    public static int A = 2131951925;
+    public static int B = 2131951926;
+    public static int C = 2131951944;
+    public static int D = 2131952028;
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f6785a = 2132017447;
+    public static int f6900a = 2131951655;
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f6786b = 2132017642;
+    public static int f6901b = 2131951695;
 
     /* renamed from: c  reason: collision with root package name */
-    public static int f6787c = 2132017793;
+    public static int f6902c = 2131951696;
 
     /* renamed from: d  reason: collision with root package name */
-    public static int f6788d = 2132017811;
+    public static int f6903d = 2131951697;
 
     /* renamed from: e  reason: collision with root package name */
-    public static int f6789e = 2132018006;
+    public static int f6904e = 2131951698;
 
     /* renamed from: f  reason: collision with root package name */
-    public static int f6790f = 2132018077;
+    public static int f6905f = 2131951733;
 
     /* renamed from: g  reason: collision with root package name */
-    public static int f6791g = 2132018079;
+    public static int f6906g = 2131951791;
 
     /* renamed from: h  reason: collision with root package name */
-    public static int f6792h = 2132018081;
+    public static int f6907h = 2131951823;
 
     /* renamed from: i  reason: collision with root package name */
-    public static int f6793i = 2132018086;
+    public static int f6908i = 2131951826;
 
     /* renamed from: j  reason: collision with root package name */
-    public static int f6794j = 2132018087;
+    public static int f6909j = 2131951871;
 
     /* renamed from: k  reason: collision with root package name */
-    public static int f6795k = 2132018152;
+    public static int f6910k = 2131951882;
 
     /* renamed from: l  reason: collision with root package name */
-    public static int f6796l = 2132018229;
+    public static int f6911l = 2131951883;
 
     /* renamed from: m  reason: collision with root package name */
-    public static int f6797m = 2132018272;
+    public static int f6912m = 2131951884;
 
     /* renamed from: n  reason: collision with root package name */
-    public static int f6798n = 2132018280;
+    public static int f6913n = 2131951885;
 
     /* renamed from: o  reason: collision with root package name */
-    public static int f6799o = 2132018292;
+    public static int f6914o = 2131951886;
 
     /* renamed from: p  reason: collision with root package name */
-    public static int f6800p = 2132018294;
+    public static int f6915p = 2131951887;
 
     /* renamed from: q  reason: collision with root package name */
-    public static int f6801q = 2132018299;
+    public static int f6916q = 2131951898;
 
     /* renamed from: r  reason: collision with root package name */
-    public static int f6802r = 2132018304;
+    public static int f6917r = 2131951899;
 
     /* renamed from: s  reason: collision with root package name */
-    public static int f6803s = 2132018305;
+    public static int f6918s = 2131951904;
 
     /* renamed from: t  reason: collision with root package name */
-    public static int f6804t = 2132018308;
+    public static int f6919t = 2131951905;
 
     /* renamed from: u  reason: collision with root package name */
-    public static int f6805u = 2132018312;
+    public static int f6920u = 2131951913;
 
     /* renamed from: v  reason: collision with root package name */
-    public static int f6806v = 2132018313;
+    public static int f6921v = 2131951920;
 
     /* renamed from: w  reason: collision with root package name */
-    public static int f6807w = 2132018337;
+    public static int f6922w = 2131951921;
 
     /* renamed from: x  reason: collision with root package name */
-    public static int f6808x = 2132018348;
+    public static int f6923x = 2131951922;
 
     /* renamed from: y  reason: collision with root package name */
-    public static int f6809y = 2132018349;
+    public static int f6924y = 2131951923;
 
     /* renamed from: z  reason: collision with root package name */
-    public static int f6810z = 2132018372;
+    public static int f6925z = 2131951924;
 }

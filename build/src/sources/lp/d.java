@@ -1,25 +1,37 @@
 package lp;
+
+import gn.g;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements cr.d {
+public final class d implements g {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static final class a {
+    /* renamed from: b  reason: collision with root package name */
+    private final Object f35958b;
 
-        /* renamed from: a  reason: collision with root package name */
-        static final d f36287a = new d();
+    /* renamed from: c  reason: collision with root package name */
+    private final boolean f35959c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final String f35960d;
+
+    public d(Object screen, boolean z10, String name) {
+        Intrinsics.checkNotNullParameter(screen, "screen");
+        Intrinsics.checkNotNullParameter(name, "name");
+        this.f35958b = screen;
+        this.f35959c = z10;
+        this.f35960d = name;
     }
 
-    public static d a() {
-        return a.f36287a;
+    public final Object a() {
+        return this.f35958b;
     }
 
-    public static c c() {
-        return new c();
+    public final boolean b() {
+        return this.f35959c;
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public c get() {
-        return c();
+    @Override // gn.g
+    public String c() {
+        return this.f35960d;
     }
 }

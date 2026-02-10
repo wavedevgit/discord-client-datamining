@@ -1,79 +1,79 @@
 package net.time4j.calendar;
 
+import cu.t;
 import java.io.Serializable;
 import java.text.ParsePosition;
 import java.util.Locale;
-import tt.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 class e implements t, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final e f38314d = new e();
+    static final e f37318d = new e();
     private static final long serialVersionUID = -4211396220263977858L;
 
     e() {
     }
 
-    @Override // st.p
+    @Override // bu.p
     public boolean A() {
         return true;
     }
 
-    @Override // st.p
-    public boolean D() {
+    @Override // bu.p
+    public boolean C() {
         return false;
     }
 
     @Override // java.util.Comparator
     /* renamed from: a */
-    public int compare(st.o oVar, st.o oVar2) {
-        return ((c) oVar.t(this)).compareTo((o) oVar2.t(this));
+    public int compare(bu.o oVar, bu.o oVar2) {
+        return ((c) oVar.k(this)).compareTo((o) oVar2.k(this));
     }
 
-    @Override // st.p
+    @Override // bu.p
     /* renamed from: b */
-    public c e() {
+    public c f() {
         return c.r(60);
     }
 
-    @Override // st.p
+    @Override // bu.p
     /* renamed from: c */
     public c B() {
         return c.r(1);
     }
 
-    @Override // st.p
+    @Override // bu.p
     public char d() {
         return 'U';
     }
 
-    @Override // st.p
-    public boolean f() {
-        return false;
-    }
-
-    @Override // tt.t
-    /* renamed from: g */
-    public c l(CharSequence charSequence, ParsePosition parsePosition, st.d dVar) {
-        return c.s(charSequence, parsePosition, (Locale) dVar.b(tt.a.f51004c, Locale.ROOT), !((tt.g) dVar.b(tt.a.f51007f, tt.g.SMART)).e());
-    }
-
-    @Override // st.p
+    @Override // bu.p
     public Class getType() {
         return c.class;
     }
 
-    @Override // st.p
+    @Override // cu.t
+    /* renamed from: h */
+    public c l(CharSequence charSequence, ParsePosition parsePosition, bu.d dVar) {
+        return c.s(charSequence, parsePosition, (Locale) dVar.b(cu.a.f21110c, Locale.ROOT), !((cu.g) dVar.b(cu.a.f21113f, cu.g.SMART)).e());
+    }
+
+    @Override // bu.p
+    public boolean k() {
+        return false;
+    }
+
+    @Override // bu.p
     public String name() {
         return "CYCLIC_YEAR";
     }
 
-    @Override // tt.t
-    public void o(st.o oVar, Appendable appendable, st.d dVar) {
-        appendable.append(((c) oVar.t(this)).i((Locale) dVar.b(tt.a.f51004c, Locale.ROOT)));
+    protected Object readResolve() {
+        return f37318d;
     }
 
-    protected Object readResolve() {
-        return f38314d;
+    @Override // cu.t
+    public void w(bu.o oVar, Appendable appendable, bu.d dVar) {
+        appendable.append(((c) oVar.k(this)).i((Locale) dVar.b(cu.a.f21110c, Locale.ROOT)));
     }
 }

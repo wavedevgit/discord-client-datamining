@@ -1,89 +1,144 @@
 package go;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.viewbinding.ViewBinding;
-import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
-import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
-import fo.y2;
-import fo.z2;
+import fo.d0;
+import fo.h0;
+import fo.i0;
+import fo.t0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements ViewBinding {
+public abstract class a {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f24453a;
+    /* renamed from: go.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0355a extends a {
 
-    /* renamed from: b  reason: collision with root package name */
-    public final ConstraintLayout f24454b;
+        /* renamed from: a  reason: collision with root package name */
+        private final fo.g f25917a;
 
-    /* renamed from: c  reason: collision with root package name */
-    public final TextView f24455c;
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public C0355a(fo.g extractedBarcode) {
+            super(null);
+            Intrinsics.checkNotNullParameter(extractedBarcode, "extractedBarcode");
+            this.f25917a = extractedBarcode;
+        }
 
-    /* renamed from: d  reason: collision with root package name */
-    public final ConstraintLayout f24456d;
-
-    /* renamed from: e  reason: collision with root package name */
-    public final Pi2NavigationBar f24457e;
-
-    /* renamed from: f  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f24458f;
-
-    /* renamed from: g  reason: collision with root package name */
-    public final TextView f24459g;
-
-    private a(ConstraintLayout constraintLayout, ConstraintLayout constraintLayout2, TextView textView, ConstraintLayout constraintLayout3, Pi2NavigationBar pi2NavigationBar, ThemeableLottieAnimationView themeableLottieAnimationView, TextView textView2) {
-        this.f24453a = constraintLayout;
-        this.f24454b = constraintLayout2;
-        this.f24455c = textView;
-        this.f24456d = constraintLayout3;
-        this.f24457e = pi2NavigationBar;
-        this.f24458f = themeableLottieAnimationView;
-        this.f24459g = textView2;
+        public final fo.g a() {
+            return this.f25917a;
+        }
     }
 
-    public static a a(View view) {
-        int i10 = y2.f23140b;
-        ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
-        if (constraintLayout != null) {
-            i10 = y2.f23141c;
-            TextView textView = (TextView) e4.a.a(view, i10);
-            if (textView != null) {
-                i10 = y2.f23144f;
-                ConstraintLayout constraintLayout2 = (ConstraintLayout) e4.a.a(view, i10);
-                if (constraintLayout2 != null) {
-                    i10 = y2.f23151m;
-                    Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
-                    if (pi2NavigationBar != null) {
-                        i10 = y2.f23152n;
-                        ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
-                        if (themeableLottieAnimationView != null) {
-                            i10 = y2.f23157s;
-                            TextView textView2 = (TextView) e4.a.a(view, i10);
-                            if (textView2 != null) {
-                                return new a((ConstraintLayout) view, constraintLayout, textView, constraintLayout2, pi2NavigationBar, themeableLottieAnimationView, textView2);
-                            }
-                        }
-                    }
-                }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b extends a {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final b f25918a = new b();
+
+        private b() {
+            super(null);
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof b)) {
+                return true;
             }
+            return false;
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+
+        public int hashCode() {
+            return 801215118;
+        }
+
+        public String toString() {
+            return "Empty";
+        }
     }
 
-    public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(z2.f23164a, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c extends a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final t0.c f25919a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final a f25920b;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public c(t0.c side, a frontOrBackData) {
+            super(null);
+            Intrinsics.checkNotNullParameter(side, "side");
+            Intrinsics.checkNotNullParameter(frontOrBackData, "frontOrBackData");
+            this.f25919a = side;
+            this.f25920b = frontOrBackData;
         }
-        return a(inflate);
+
+        public final a a() {
+            return this.f25920b;
+        }
+
+        public final t0.c b() {
+            return this.f25919a;
+        }
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public ConstraintLayout getRoot() {
-        return this.f24453a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class d extends a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final h0 f25921a;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public d(h0 metadata) {
+            super(null);
+            Intrinsics.checkNotNullParameter(metadata, "metadata");
+            this.f25921a = metadata;
+        }
+
+        public final h0 a() {
+            return this.f25921a;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class e extends a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final i0 f25922a;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public e(i0 imageLightCondition) {
+            super(null);
+            Intrinsics.checkNotNullParameter(imageLightCondition, "imageLightCondition");
+            this.f25922a = imageLightCondition;
+        }
+
+        public final i0 a() {
+            return this.f25922a;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class f extends a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final d0 f25923a;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public f(d0 extractedTexts) {
+            super(null);
+            Intrinsics.checkNotNullParameter(extractedTexts, "extractedTexts");
+            this.f25923a = extractedTexts;
+        }
+
+        public final d0 a() {
+            return this.f25923a;
+        }
+    }
+
+    public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    private a() {
     }
 }

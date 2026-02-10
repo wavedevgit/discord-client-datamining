@@ -1,20 +1,17 @@
 package us;
 
-import kotlin.coroutines.CoroutineContext;
+import java.util.concurrent.ConcurrentHashMap;
+import kotlin.jvm.functions.Function1;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class g {
-    public static final void a(CoroutineContext coroutineContext, Throwable th2) {
-        for (ps.z zVar : f.a()) {
-            try {
-                zVar.O0(coroutineContext, th2);
-            } catch (Throwable th3) {
-                f.b(ps.a0.b(th2, th3));
-            }
-        }
-        try {
-            rr.e.a(th2, new h(coroutineContext));
-        } catch (Throwable unused) {
-        }
-        f.b(th2);
+class g implements Function1 {
+
+    /* renamed from: d  reason: collision with root package name */
+    public static final g f51039d = new g();
+
+    @Override // kotlin.jvm.functions.Function1
+    public Object invoke(Object obj) {
+        ConcurrentHashMap b10;
+        b10 = h.b((Class) obj);
+        return b10;
     }
 }

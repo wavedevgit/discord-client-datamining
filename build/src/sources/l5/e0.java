@@ -9,16 +9,16 @@ import java.util.Set;
 public class e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f35689a = false;
+    private boolean f35586a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f35690b = new u0.b();
+    private final Set f35587b = new u0.b();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f35691c = new HashMap();
+    private final Map f35588c = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Comparator f35692d = new a();
+    private final Comparator f35589d = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Comparator {
@@ -28,8 +28,8 @@ public class e0 {
         @Override // java.util.Comparator
         /* renamed from: a */
         public int compare(b2.c cVar, b2.c cVar2) {
-            float floatValue = ((Float) cVar.f6310b).floatValue();
-            float floatValue2 = ((Float) cVar2.f6310b).floatValue();
+            float floatValue = ((Float) cVar.f6414b).floatValue();
+            float floatValue2 = ((Float) cVar2.f6414b).floatValue();
             if (floatValue2 > floatValue) {
                 return 1;
             }
@@ -41,15 +41,15 @@ public class e0 {
     }
 
     public void a(String str, float f10) {
-        if (this.f35689a) {
-            y5.h hVar = (y5.h) this.f35691c.get(str);
+        if (this.f35586a) {
+            y5.h hVar = (y5.h) this.f35588c.get(str);
             if (hVar == null) {
                 hVar = new y5.h();
-                this.f35691c.put(str, hVar);
+                this.f35588c.put(str, hVar);
             }
             hVar.a(f10);
             if (str.equals("__container")) {
-                Iterator it = this.f35690b.iterator();
+                Iterator it = this.f35587b.iterator();
                 if (it.hasNext()) {
                     android.support.v4.media.session.b.a(it.next());
                     throw null;
@@ -60,6 +60,6 @@ public class e0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b(boolean z10) {
-        this.f35689a = z10;
+        this.f35586a = z10;
     }
 }

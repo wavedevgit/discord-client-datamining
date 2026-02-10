@@ -1,7 +1,4 @@
 package ps;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
-    public static final /* synthetic */ a a() {
-        return null;
-    }
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+class b {
 }

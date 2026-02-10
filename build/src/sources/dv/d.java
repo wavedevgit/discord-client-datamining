@@ -1,44 +1,28 @@
 package dv;
 
-import dv.c;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements tu.b, c {
+public final class d implements cv.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f20991a = new d();
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f20992d = new a();
-
-        a() {
-            super(1);
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final Double invoke(List it) {
-            Intrinsics.checkNotNullParameter(it, "it");
-            return CollectionsKt.D0(it);
-        }
-    }
+    public static final d f22164a = new d();
 
     private d() {
     }
 
-    public Double a(Object obj, Function1 function1) {
-        return c.a.a(this, obj, function1);
-    }
-
-    @Override // tu.b
-    public Object f(Object obj, Object obj2) {
-        return a(obj, a.f20992d);
+    @Override // cv.b
+    /* renamed from: a */
+    public Boolean f(Object obj, Object obj2) {
+        Object firstOrNull = CollectionsKt.firstOrNull(mw.a.c(obj));
+        Object b10 = mw.c.b(mw.a.c(obj));
+        if (b10 instanceof String) {
+            return Boolean.valueOf(StringsKt.V((CharSequence) b10, String.valueOf(firstOrNull), false, 2, null));
+        }
+        if (b10 instanceof List) {
+            return Boolean.valueOf(((List) b10).contains(firstOrNull));
+        }
+        return Boolean.FALSE;
     }
 }

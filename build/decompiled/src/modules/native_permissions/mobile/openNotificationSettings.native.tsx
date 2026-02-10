@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/native_permissions/mobile/openNotificationSettings.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun69382: for (var _fun69382_ip = 0;;) switch (_fun69382_ip) {
+        _fun69438: for (var _fun69438_ip = 0;;) switch (_fun69438_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -40,16 +40,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isAndroid;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun69382_ip = 60;
-                    continue _fun69382
+                    _fun69438_ip = 60;
+                    continue _fun69438
                 }
             case 38:
                 var2 = _closure1_slot3;
                 var3 = var2.DeviceSettingsManager;
                 var2 = var3.openPrivacySettings;
                 var2 = var2.bind(var3)();
-                _fun69382_ip = 90;
-                continue _fun69382;
+                _fun69438_ip = 90;
+                continue _fun69438;
             case 60:
                 var2 = _closure1_slot1;
                 var3 = _closure1_slot2;

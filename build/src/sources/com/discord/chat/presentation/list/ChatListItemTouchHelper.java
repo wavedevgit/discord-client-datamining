@@ -14,7 +14,7 @@ import android.view.ViewConfiguration;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import androidx.annotation.NonNull;
 import androidx.core.view.GestureDetectorCompat;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
@@ -79,7 +79,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
                 }
                 ChatListItemTouchHelper chatListItemTouchHelper3 = ChatListItemTouchHelper.this;
                 chatListItemTouchHelper3.mRecyclerView.removeCallbacks(chatListItemTouchHelper3.mScrollRunnable);
-                h0.f0(ChatListItemTouchHelper.this.mRecyclerView, this);
+                i0.c0(ChatListItemTouchHelper.this.mRecyclerView, this);
             }
         }
     };
@@ -579,7 +579,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             return 0;
         }
         int movementFlags = this.mCallback.getMovementFlags(this.mRecyclerView, viewHolder);
-        int convertToAbsoluteDirection = (this.mCallback.convertToAbsoluteDirection(movementFlags, h0.z(this.mRecyclerView)) & ACTION_MODE_SWIPE_MASK) >> 8;
+        int convertToAbsoluteDirection = (this.mCallback.convertToAbsoluteDirection(movementFlags, i0.y(this.mRecyclerView)) & ACTION_MODE_SWIPE_MASK) >> 8;
         if (convertToAbsoluteDirection == 0) {
             return 0;
         }
@@ -588,7 +588,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             int checkHorizontalSwipe = checkHorizontalSwipe(viewHolder, convertToAbsoluteDirection);
             if (checkHorizontalSwipe > 0) {
                 if ((i10 & checkHorizontalSwipe) == 0) {
-                    return androidx.recyclerview.widget.h.convertToRelativeDirection(checkHorizontalSwipe, h0.z(this.mRecyclerView));
+                    return androidx.recyclerview.widget.h.convertToRelativeDirection(checkHorizontalSwipe, i0.y(this.mRecyclerView));
                 }
                 return checkHorizontalSwipe;
             }
@@ -604,7 +604,7 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             int checkHorizontalSwipe2 = checkHorizontalSwipe(viewHolder, convertToAbsoluteDirection);
             if (checkHorizontalSwipe2 > 0) {
                 if ((i10 & checkHorizontalSwipe2) == 0) {
-                    return androidx.recyclerview.widget.h.convertToRelativeDirection(checkHorizontalSwipe2, h0.z(this.mRecyclerView));
+                    return androidx.recyclerview.widget.h.convertToRelativeDirection(checkHorizontalSwipe2, i0.y(this.mRecyclerView));
                 }
                 return checkHorizontalSwipe2;
             }
@@ -621,8 +621,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             this.mRecyclerView = recyclerView;
             if (recyclerView != null) {
                 Resources resources = recyclerView.getResources();
-                this.mSwipeEscapeVelocity = resources.getDimension(q3.b.f45230f);
-                this.mMaxSwipeVelocity = resources.getDimension(q3.b.f45229e);
+                this.mSwipeEscapeVelocity = resources.getDimension(q3.b.f43898f);
+                this.mMaxSwipeVelocity = resources.getDimension(q3.b.f43897e);
                 setupCallbacks();
             }
         }

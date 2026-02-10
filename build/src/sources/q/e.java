@@ -5,43 +5,43 @@ import q.f4;
 final class e extends f4.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f44622a;
+    private final int f43290a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f44623b;
+    private final int f43291b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f44624c;
+    private final boolean f43292c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f44625d;
+    private final boolean f43293d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(int i10, int i11, boolean z10, boolean z11) {
-        this.f44622a = i10;
-        this.f44623b = i11;
-        this.f44624c = z10;
-        this.f44625d = z11;
+        this.f43290a = i10;
+        this.f43291b = i11;
+        this.f43292c = z10;
+        this.f43293d = z11;
     }
 
     @Override // q.f4.b
     int a() {
-        return this.f44622a;
+        return this.f43290a;
     }
 
     @Override // q.f4.b
     int b() {
-        return this.f44623b;
+        return this.f43291b;
     }
 
     @Override // q.f4.b
     boolean c() {
-        return this.f44624c;
+        return this.f43292c;
     }
 
     @Override // q.f4.b
     boolean d() {
-        return this.f44625d;
+        return this.f43293d;
     }
 
     public boolean equals(Object obj) {
@@ -50,7 +50,7 @@ final class e extends f4.b {
         }
         if (obj instanceof f4.b) {
             f4.b bVar = (f4.b) obj;
-            if (this.f44622a == bVar.a() && this.f44623b == bVar.b() && this.f44624c == bVar.c() && this.f44625d == bVar.d()) {
+            if (this.f43290a == bVar.a() && this.f43291b == bVar.b() && this.f43292c == bVar.c() && this.f43293d == bVar.d()) {
                 return true;
             }
         }
@@ -59,21 +59,21 @@ final class e extends f4.b {
 
     public int hashCode() {
         int i10;
-        int i11 = (((this.f44622a ^ 1000003) * 1000003) ^ this.f44623b) * 1000003;
+        int i11 = (((this.f43290a ^ 1000003) * 1000003) ^ this.f43291b) * 1000003;
         int i12 = 1237;
-        if (this.f44624c) {
+        if (this.f43292c) {
             i10 = 1231;
         } else {
             i10 = 1237;
         }
         int i13 = (i11 ^ i10) * 1000003;
-        if (this.f44625d) {
+        if (this.f43293d) {
             i12 = 1231;
         }
         return i13 ^ i12;
     }
 
     public String toString() {
-        return "FeatureSettings{cameraMode=" + this.f44622a + ", requiredMaxBitDepth=" + this.f44623b + ", previewStabilizationOn=" + this.f44624c + ", ultraHdrOn=" + this.f44625d + "}";
+        return "FeatureSettings{cameraMode=" + this.f43290a + ", requiredMaxBitDepth=" + this.f43291b + ", previewStabilizationOn=" + this.f43292c + ", ultraHdrOn=" + this.f43293d + "}";
     }
 }

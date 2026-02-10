@@ -73,7 +73,7 @@ public final class FastestListVisibleItemsTracker {
         static {
             RenderAhead[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = yr.a.a($values);
+            $ENTRIES = hs.a.a($values);
             Companion = new Companion(null);
         }
 
@@ -119,7 +119,7 @@ public final class FastestListVisibleItemsTracker {
         this.positionEndPrev = i10;
         FastestListSections.Entry.SectionItem itemAtPosition = this.sections.getItemAtPosition(i11, false);
         FastestListSections.Entry.SectionItem itemAtPosition2 = this.sections.getItemAtPosition(i10, true);
-        this.onVisibleItemsChanged.invoke(this.sectionsId, Integer.valueOf(itemAtPosition.mo877getSectionsZRFyWU()), Integer.valueOf(itemAtPosition2.mo877getSectionsZRFyWU()), Integer.valueOf(itemAtPosition.m894getItemJXkbwXs()), Integer.valueOf(itemAtPosition2.m894getItemJXkbwXs()));
+        this.onVisibleItemsChanged.invoke(this.sectionsId, Integer.valueOf(itemAtPosition.mo878getSectionsZRFyWU()), Integer.valueOf(itemAtPosition2.mo878getSectionsZRFyWU()), Integer.valueOf(itemAtPosition.m895getItemJXkbwXs()), Integer.valueOf(itemAtPosition2.m895getItemJXkbwXs()));
     }
 
     private final int getItemBuffer() {

@@ -59,7 +59,7 @@ public final class InputInternationalDb_IdTypeJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -96,7 +96,7 @@ public final class InputInternationalDb_IdTypeJsonAdapter extends h {
     public void toJson(@NotNull t writer, InputInternationalDb.IdType idType) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (idType != null) {
-            writer.k();
+            writer.i();
             writer.J("mask");
             this.nullableStringAdapter.toJson(writer, idType.getMask());
             writer.J(ReactTextInputShadowNode.PROP_PLACEHOLDER);

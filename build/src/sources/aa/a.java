@@ -29,12 +29,12 @@ public class a implements b {
     }
 
     @Override // aa.b
-    public void g(String id2, b.a aVar) {
+    public void h(String id2, b.a aVar) {
         Intrinsics.checkNotNullParameter(id2, "id");
     }
 
     @Override // aa.b
-    public void k(String id2, Object obj, b.a aVar) {
+    public void i(String id2, Object obj, b.a aVar) {
         Intrinsics.checkNotNullParameter(id2, "id");
     }
 

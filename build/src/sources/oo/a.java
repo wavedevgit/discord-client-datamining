@@ -1,83 +1,80 @@
 package oo;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.viewbinding.ViewBinding;
-import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
-import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
-import ko.m4;
-import ko.n4;
+import android.os.Parcel;
+import android.os.Parcelable;
+import kotlin.enums.EnumEntries;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements ViewBinding {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f42423a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final LinearLayout f42424b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final Button f42425c;
-
-    /* renamed from: d  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f42426d;
+public final class a implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<a> CREATOR;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Pi2NavigationBar f42427e;
+    public static final a f40669e = new a("UPLOAD", 0, "upload");
 
-    /* renamed from: f  reason: collision with root package name */
-    public final TextView f42428f;
+    /* renamed from: i  reason: collision with root package name */
+    public static final a f40670i = new a("MANUAL", 1, "manual");
 
-    private a(CoordinatorLayout coordinatorLayout, LinearLayout linearLayout, Button button, ThemeableLottieAnimationView themeableLottieAnimationView, Pi2NavigationBar pi2NavigationBar, TextView textView) {
-        this.f42423a = coordinatorLayout;
-        this.f42424b = linearLayout;
-        this.f42425c = button;
-        this.f42426d = themeableLottieAnimationView;
-        this.f42427e = pi2NavigationBar;
-        this.f42428f = textView;
-    }
+    /* renamed from: o  reason: collision with root package name */
+    private static final /* synthetic */ a[] f40671o;
 
-    public static a a(View view) {
-        int i10 = m4.f31412t;
-        LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
-        if (linearLayout != null) {
-            i10 = m4.f31414u;
-            Button button = (Button) e4.a.a(view, i10);
-            if (button != null) {
-                i10 = m4.P;
-                ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
-                if (themeableLottieAnimationView != null) {
-                    i10 = m4.Y;
-                    Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
-                    if (pi2NavigationBar != null) {
-                        i10 = m4.D0;
-                        TextView textView = (TextView) e4.a.a(view, i10);
-                        if (textView != null) {
-                            return new a((CoordinatorLayout) view, linearLayout, button, themeableLottieAnimationView, pi2NavigationBar, textView);
-                        }
-                    }
-                }
+    /* renamed from: p  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f40672p;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final String f40673d;
+
+    static {
+        a[] a10 = a();
+        f40671o = a10;
+        f40672p = hs.a.a(a10);
+        CREATOR = new Parcelable.Creator() { // from class: oo.a.a
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: a */
+            public final a createFromParcel(Parcel parcel) {
+                Intrinsics.checkNotNullParameter(parcel, "parcel");
+                return a.valueOf(parcel.readString());
             }
-        }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: b */
+            public final a[] newArray(int i10) {
+                return new a[i10];
+            }
+        };
     }
 
-    public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n4.f31544a, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
-        }
-        return a(inflate);
+    private a(String str, int i10, String str2) {
+        this.f40673d = str2;
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public CoordinatorLayout getRoot() {
-        return this.f42423a;
+    private static final /* synthetic */ a[] a() {
+        return new a[]{f40669e, f40670i};
+    }
+
+    public static a valueOf(String str) {
+        return (a) Enum.valueOf(a.class, str);
+    }
+
+    public static a[] values() {
+        return (a[]) f40671o.clone();
+    }
+
+    public final String d() {
+        return this.f40673d;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeString(name());
     }
 }

@@ -7,70 +7,70 @@ import l5.i;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f56052a;
+    private final i f56091a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Object f56053b;
+    public final Object f56092b;
 
     /* renamed from: c  reason: collision with root package name */
-    public Object f56054c;
+    public Object f56093c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Interpolator f56055d;
+    public final Interpolator f56094d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Interpolator f56056e;
+    public final Interpolator f56095e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final Interpolator f56057f;
+    public final Interpolator f56096f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final float f56058g;
+    public final float f56097g;
 
     /* renamed from: h  reason: collision with root package name */
-    public Float f56059h;
+    public Float f56098h;
 
     /* renamed from: i  reason: collision with root package name */
-    private float f56060i;
+    private float f56099i;
 
     /* renamed from: j  reason: collision with root package name */
-    private float f56061j;
+    private float f56100j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f56062k;
+    private int f56101k;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f56063l;
+    private int f56102l;
 
     /* renamed from: m  reason: collision with root package name */
-    private float f56064m;
+    private float f56103m;
 
     /* renamed from: n  reason: collision with root package name */
-    private float f56065n;
+    private float f56104n;
 
     /* renamed from: o  reason: collision with root package name */
-    public PointF f56066o;
+    public PointF f56105o;
 
     /* renamed from: p  reason: collision with root package name */
-    public PointF f56067p;
+    public PointF f56106p;
 
     public a(i iVar, Object obj, Object obj2, Interpolator interpolator, float f10, Float f11) {
-        this.f56060i = -3987645.8f;
-        this.f56061j = -3987645.8f;
-        this.f56062k = 784923401;
-        this.f56063l = 784923401;
-        this.f56064m = Float.MIN_VALUE;
-        this.f56065n = Float.MIN_VALUE;
-        this.f56066o = null;
-        this.f56067p = null;
-        this.f56052a = iVar;
-        this.f56053b = obj;
-        this.f56054c = obj2;
-        this.f56055d = interpolator;
-        this.f56056e = null;
-        this.f56057f = null;
-        this.f56058g = f10;
-        this.f56059h = f11;
+        this.f56099i = -3987645.8f;
+        this.f56100j = -3987645.8f;
+        this.f56101k = 784923401;
+        this.f56102l = 784923401;
+        this.f56103m = Float.MIN_VALUE;
+        this.f56104n = Float.MIN_VALUE;
+        this.f56105o = null;
+        this.f56106p = null;
+        this.f56091a = iVar;
+        this.f56092b = obj;
+        this.f56093c = obj2;
+        this.f56094d = interpolator;
+        this.f56095e = null;
+        this.f56096f = null;
+        this.f56097g = f10;
+        this.f56098h = f11;
     }
 
     public boolean a(float f10) {
@@ -85,143 +85,143 @@ public class a {
     }
 
     public float c() {
-        if (this.f56052a == null) {
+        if (this.f56091a == null) {
             return 1.0f;
         }
-        if (this.f56065n == Float.MIN_VALUE) {
-            if (this.f56059h == null) {
-                this.f56065n = 1.0f;
+        if (this.f56104n == Float.MIN_VALUE) {
+            if (this.f56098h == null) {
+                this.f56104n = 1.0f;
             } else {
-                this.f56065n = f() + ((this.f56059h.floatValue() - this.f56058g) / this.f56052a.e());
+                this.f56104n = f() + ((this.f56098h.floatValue() - this.f56097g) / this.f56091a.e());
             }
         }
-        return this.f56065n;
+        return this.f56104n;
     }
 
     public float d() {
-        if (this.f56061j == -3987645.8f) {
-            this.f56061j = ((Float) this.f56054c).floatValue();
+        if (this.f56100j == -3987645.8f) {
+            this.f56100j = ((Float) this.f56093c).floatValue();
         }
-        return this.f56061j;
+        return this.f56100j;
     }
 
     public int e() {
-        if (this.f56063l == 784923401) {
-            this.f56063l = ((Integer) this.f56054c).intValue();
+        if (this.f56102l == 784923401) {
+            this.f56102l = ((Integer) this.f56093c).intValue();
         }
-        return this.f56063l;
+        return this.f56102l;
     }
 
     public float f() {
-        i iVar = this.f56052a;
+        i iVar = this.f56091a;
         if (iVar == null) {
             return 0.0f;
         }
-        if (this.f56064m == Float.MIN_VALUE) {
-            this.f56064m = (this.f56058g - iVar.p()) / this.f56052a.e();
+        if (this.f56103m == Float.MIN_VALUE) {
+            this.f56103m = (this.f56097g - iVar.p()) / this.f56091a.e();
         }
-        return this.f56064m;
+        return this.f56103m;
     }
 
     public float g() {
-        if (this.f56060i == -3987645.8f) {
-            this.f56060i = ((Float) this.f56053b).floatValue();
+        if (this.f56099i == -3987645.8f) {
+            this.f56099i = ((Float) this.f56092b).floatValue();
         }
-        return this.f56060i;
+        return this.f56099i;
     }
 
     public int h() {
-        if (this.f56062k == 784923401) {
-            this.f56062k = ((Integer) this.f56053b).intValue();
+        if (this.f56101k == 784923401) {
+            this.f56101k = ((Integer) this.f56092b).intValue();
         }
-        return this.f56062k;
+        return this.f56101k;
     }
 
     public boolean i() {
-        if (this.f56055d == null && this.f56056e == null && this.f56057f == null) {
+        if (this.f56094d == null && this.f56095e == null && this.f56096f == null) {
             return true;
         }
         return false;
     }
 
     public String toString() {
-        return "Keyframe{startValue=" + this.f56053b + ", endValue=" + this.f56054c + ", startFrame=" + this.f56058g + ", endFrame=" + this.f56059h + ", interpolator=" + this.f56055d + '}';
+        return "Keyframe{startValue=" + this.f56092b + ", endValue=" + this.f56093c + ", startFrame=" + this.f56097g + ", endFrame=" + this.f56098h + ", interpolator=" + this.f56094d + '}';
     }
 
     public a(i iVar, Object obj, Object obj2, Interpolator interpolator, Interpolator interpolator2, float f10, Float f11) {
-        this.f56060i = -3987645.8f;
-        this.f56061j = -3987645.8f;
-        this.f56062k = 784923401;
-        this.f56063l = 784923401;
-        this.f56064m = Float.MIN_VALUE;
-        this.f56065n = Float.MIN_VALUE;
-        this.f56066o = null;
-        this.f56067p = null;
-        this.f56052a = iVar;
-        this.f56053b = obj;
-        this.f56054c = obj2;
-        this.f56055d = null;
-        this.f56056e = interpolator;
-        this.f56057f = interpolator2;
-        this.f56058g = f10;
-        this.f56059h = f11;
+        this.f56099i = -3987645.8f;
+        this.f56100j = -3987645.8f;
+        this.f56101k = 784923401;
+        this.f56102l = 784923401;
+        this.f56103m = Float.MIN_VALUE;
+        this.f56104n = Float.MIN_VALUE;
+        this.f56105o = null;
+        this.f56106p = null;
+        this.f56091a = iVar;
+        this.f56092b = obj;
+        this.f56093c = obj2;
+        this.f56094d = null;
+        this.f56095e = interpolator;
+        this.f56096f = interpolator2;
+        this.f56097g = f10;
+        this.f56098h = f11;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(i iVar, Object obj, Object obj2, Interpolator interpolator, Interpolator interpolator2, Interpolator interpolator3, float f10, Float f11) {
-        this.f56060i = -3987645.8f;
-        this.f56061j = -3987645.8f;
-        this.f56062k = 784923401;
-        this.f56063l = 784923401;
-        this.f56064m = Float.MIN_VALUE;
-        this.f56065n = Float.MIN_VALUE;
-        this.f56066o = null;
-        this.f56067p = null;
-        this.f56052a = iVar;
-        this.f56053b = obj;
-        this.f56054c = obj2;
-        this.f56055d = interpolator;
-        this.f56056e = interpolator2;
-        this.f56057f = interpolator3;
-        this.f56058g = f10;
-        this.f56059h = f11;
+        this.f56099i = -3987645.8f;
+        this.f56100j = -3987645.8f;
+        this.f56101k = 784923401;
+        this.f56102l = 784923401;
+        this.f56103m = Float.MIN_VALUE;
+        this.f56104n = Float.MIN_VALUE;
+        this.f56105o = null;
+        this.f56106p = null;
+        this.f56091a = iVar;
+        this.f56092b = obj;
+        this.f56093c = obj2;
+        this.f56094d = interpolator;
+        this.f56095e = interpolator2;
+        this.f56096f = interpolator3;
+        this.f56097g = f10;
+        this.f56098h = f11;
     }
 
     public a(Object obj) {
-        this.f56060i = -3987645.8f;
-        this.f56061j = -3987645.8f;
-        this.f56062k = 784923401;
-        this.f56063l = 784923401;
-        this.f56064m = Float.MIN_VALUE;
-        this.f56065n = Float.MIN_VALUE;
-        this.f56066o = null;
-        this.f56067p = null;
-        this.f56052a = null;
-        this.f56053b = obj;
-        this.f56054c = obj;
-        this.f56055d = null;
-        this.f56056e = null;
-        this.f56057f = null;
-        this.f56058g = Float.MIN_VALUE;
-        this.f56059h = Float.valueOf(Float.MAX_VALUE);
+        this.f56099i = -3987645.8f;
+        this.f56100j = -3987645.8f;
+        this.f56101k = 784923401;
+        this.f56102l = 784923401;
+        this.f56103m = Float.MIN_VALUE;
+        this.f56104n = Float.MIN_VALUE;
+        this.f56105o = null;
+        this.f56106p = null;
+        this.f56091a = null;
+        this.f56092b = obj;
+        this.f56093c = obj;
+        this.f56094d = null;
+        this.f56095e = null;
+        this.f56096f = null;
+        this.f56097g = Float.MIN_VALUE;
+        this.f56098h = Float.valueOf(Float.MAX_VALUE);
     }
 
     private a(Object obj, Object obj2) {
-        this.f56060i = -3987645.8f;
-        this.f56061j = -3987645.8f;
-        this.f56062k = 784923401;
-        this.f56063l = 784923401;
-        this.f56064m = Float.MIN_VALUE;
-        this.f56065n = Float.MIN_VALUE;
-        this.f56066o = null;
-        this.f56067p = null;
-        this.f56052a = null;
-        this.f56053b = obj;
-        this.f56054c = obj2;
-        this.f56055d = null;
-        this.f56056e = null;
-        this.f56057f = null;
-        this.f56058g = Float.MIN_VALUE;
-        this.f56059h = Float.valueOf(Float.MAX_VALUE);
+        this.f56099i = -3987645.8f;
+        this.f56100j = -3987645.8f;
+        this.f56101k = 784923401;
+        this.f56102l = 784923401;
+        this.f56103m = Float.MIN_VALUE;
+        this.f56104n = Float.MIN_VALUE;
+        this.f56105o = null;
+        this.f56106p = null;
+        this.f56091a = null;
+        this.f56092b = obj;
+        this.f56093c = obj2;
+        this.f56094d = null;
+        this.f56095e = null;
+        this.f56096f = null;
+        this.f56097g = Float.MIN_VALUE;
+        this.f56098h = Float.valueOf(Float.MAX_VALUE);
     }
 }

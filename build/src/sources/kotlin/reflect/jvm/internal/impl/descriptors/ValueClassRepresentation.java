@@ -1,5 +1,7 @@
 package kotlin.reflect.jvm.internal.impl.descriptors;
 
+import as.p;
+import as.v;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -13,8 +15,6 @@ import kotlin.reflect.jvm.internal.impl.name.Name;
 import kotlin.reflect.jvm.internal.impl.types.model.RigidTypeMarker;
 import kotlin.reflect.jvm.internal.impl.types.model.SimpleTypeMarker;
 import org.jetbrains.annotations.NotNull;
-import rr.p;
-import rr.v;
 @SourceDebugExtension({"SMAP\nValueClassRepresentation.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ValueClassRepresentation.kt\norg/jetbrains/kotlin/descriptors/ValueClassRepresentation\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,51:1\n1563#2:52\n1634#2,3:53\n*S KotlinDebug\n*F\n+ 1 ValueClassRepresentation.kt\norg/jetbrains/kotlin/descriptors/ValueClassRepresentation\n*L\n23#1:52\n23#1:53,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class ValueClassRepresentation<Type extends RigidTypeMarker> {

@@ -12,41 +12,41 @@ import x.z;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f49464a;
+    private static final Map f47780a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f49465b;
+    private static final Map f47781b;
 
     static {
         HashMap hashMap = new HashMap();
-        f49464a = hashMap;
+        f47780a = hashMap;
         HashMap hashMap2 = new HashMap();
-        f49465b = hashMap2;
-        z zVar = z.f54542d;
+        f47781b = hashMap2;
+        z zVar = z.f54274d;
         hashMap.put(1L, zVar);
         hashMap2.put(zVar, Collections.singletonList(1L));
-        hashMap.put(2L, z.f54544f);
+        hashMap.put(2L, z.f54276f);
         hashMap2.put((z) hashMap.get(2L), Collections.singletonList(2L));
-        z zVar2 = z.f54545g;
+        z zVar2 = z.f54277g;
         hashMap.put(4L, zVar2);
         hashMap2.put(zVar2, Collections.singletonList(4L));
-        z zVar3 = z.f54546h;
+        z zVar3 = z.f54278h;
         hashMap.put(8L, zVar3);
         hashMap2.put(zVar3, Collections.singletonList(8L));
         List<Long> asList = Arrays.asList(64L, 128L, 16L, 32L);
         for (Long l10 : asList) {
-            f49464a.put(l10, z.f54547i);
+            f47780a.put(l10, z.f54279i);
         }
-        f49465b.put(z.f54547i, asList);
+        f47781b.put(z.f54279i, asList);
         List<Long> asList2 = Arrays.asList(1024L, 2048L, 256L, 512L);
         for (Long l11 : asList2) {
-            f49464a.put(l11, z.f54548j);
+            f47780a.put(l11, z.f54280j);
         }
-        f49465b.put(z.f54548j, asList2);
+        f47781b.put(z.f54280j, asList2);
     }
 
     public static Long a(z zVar, DynamicRangeProfiles dynamicRangeProfiles) {
-        List<Long> list = (List) f49465b.get(zVar);
+        List<Long> list = (List) f47781b.get(zVar);
         if (list != null) {
             Set supportedProfiles = dynamicRangeProfiles.getSupportedProfiles();
             for (Long l10 : list) {
@@ -60,6 +60,6 @@ public abstract class c {
     }
 
     public static z b(long j10) {
-        return (z) f49464a.get(Long.valueOf(j10));
+        return (z) f47780a.get(Long.valueOf(j10));
     }
 }

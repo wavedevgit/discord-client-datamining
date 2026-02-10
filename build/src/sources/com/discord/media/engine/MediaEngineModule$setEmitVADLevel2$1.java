@@ -29,7 +29,7 @@ final class MediaEngineModule$setEmitVADLevel2$1 extends kotlin.coroutines.jvm.i
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object awaitMediaEngine;
-        Object f10 = xr.b.f();
+        Object f10 = gs.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -47,11 +47,11 @@ final class MediaEngineModule$setEmitVADLevel2$1 extends kotlin.coroutines.jvm.i
             }
         }
         this.this$0.getMediaEngine().setEmitVADLevel2$media_engine_release(this.$enable);
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$setEmitVADLevel2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
+        return ((MediaEngineModule$setEmitVADLevel2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
     }
 }

@@ -12,25 +12,25 @@ import java.util.Map;
 public final class i1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f24334a = Collections.synchronizedMap(new u0.a());
+    private final Map f25634a = Collections.synchronizedMap(new u0.a());
 
     /* renamed from: b  reason: collision with root package name */
-    private int f24335b = 0;
+    private int f25635b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private Bundle f24336c;
+    private Bundle f25636c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final g a(String str, Class cls) {
-        return (g) cls.cast(this.f24334a.get(str));
+        return (g) cls.cast(this.f25634a.get(str));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void b(String str, g gVar) {
-        Map map = this.f24334a;
+        Map map = this.f25634a;
         if (!map.containsKey(str)) {
             map.put(str, gVar);
-            if (this.f24335b > 0) {
+            if (this.f25635b > 0) {
                 new ig.p(Looper.getMainLooper()).post(new h1(this, gVar, str));
                 return;
             }
@@ -46,9 +46,9 @@ public final class i1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void c(Bundle bundle) {
         Bundle bundle2;
-        this.f24335b = 1;
-        this.f24336c = bundle;
-        for (Map.Entry entry : this.f24334a.entrySet()) {
+        this.f25635b = 1;
+        this.f25636c = bundle;
+        for (Map.Entry entry : this.f25634a.entrySet()) {
             g gVar = (g) entry.getValue();
             if (bundle != null) {
                 bundle2 = bundle.getBundle((String) entry.getKey());
@@ -61,23 +61,23 @@ public final class i1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void d() {
-        this.f24335b = 2;
-        for (g gVar : this.f24334a.values()) {
+        this.f25635b = 2;
+        for (g gVar : this.f25634a.values()) {
             gVar.j();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void e() {
-        this.f24335b = 3;
-        for (g gVar : this.f24334a.values()) {
+        this.f25635b = 3;
+        for (g gVar : this.f25634a.values()) {
             gVar.h();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void f(int i10, int i11, Intent intent) {
-        for (g gVar : this.f24334a.values()) {
+        for (g gVar : this.f25634a.values()) {
             gVar.e(i10, i11, intent);
         }
     }
@@ -85,7 +85,7 @@ public final class i1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void g(Bundle bundle) {
         if (bundle != null) {
-            for (Map.Entry entry : this.f24334a.entrySet()) {
+            for (Map.Entry entry : this.f25634a.entrySet()) {
                 Bundle bundle2 = new Bundle();
                 ((g) entry.getValue()).i(bundle2);
                 bundle.putBundle((String) entry.getKey(), bundle2);
@@ -95,34 +95,34 @@ public final class i1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void h() {
-        this.f24335b = 4;
-        for (g gVar : this.f24334a.values()) {
+        this.f25635b = 4;
+        for (g gVar : this.f25634a.values()) {
             gVar.k();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void i() {
-        this.f24335b = 5;
-        for (g gVar : this.f24334a.values()) {
+        this.f25635b = 5;
+        for (g gVar : this.f25634a.values()) {
             gVar.g();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void j(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-        for (g gVar : this.f24334a.values()) {
+        for (g gVar : this.f25634a.values()) {
             gVar.a(str, fileDescriptor, printWriter, strArr);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ int k() {
-        return this.f24335b;
+        return this.f25635b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ Bundle l() {
-        return this.f24336c;
+        return this.f25636c;
     }
 }

@@ -6,12 +6,12 @@ import kotlin.jvm.internal.Intrinsics;
 public final class k extends m {
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f23426e;
+    private final boolean f24726e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public k(Fragment fragment, boolean z10) {
         super(fragment, "Attempting to set user visible hint to " + z10 + " for fragment " + fragment);
         Intrinsics.checkNotNullParameter(fragment, "fragment");
-        this.f23426e = z10;
+        this.f24726e = z10;
     }
 }

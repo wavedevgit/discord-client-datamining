@@ -1,6 +1,7 @@
 package com.facebook.react.viewmanagers;
 
 import android.view.View;
+import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.uimanager.ViewManagerWithGeneratedInterface;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface RNSScreenStackHeaderConfigManagerInterface<T extends View> extends ViewManagerWithGeneratedInterface {
@@ -26,6 +27,10 @@ public interface RNSScreenStackHeaderConfigManagerInterface<T extends View> exte
 
     void setDisableBackButtonMenu(T t10, boolean z10);
 
+    void setHeaderLeftBarButtonItems(T t10, ReadableArray readableArray);
+
+    void setHeaderRightBarButtonItems(T t10, ReadableArray readableArray);
+
     void setHidden(T t10, boolean z10);
 
     void setHideBackButton(T t10, boolean z10);
@@ -46,6 +51,8 @@ public interface RNSScreenStackHeaderConfigManagerInterface<T extends View> exte
 
     void setLargeTitleHideShadow(T t10, boolean z10);
 
+    void setSynchronousShadowStateUpdatesEnabled(T t10, boolean z10);
+
     void setTitle(T t10, String str);
 
     void setTitleColor(T t10, Integer num);
@@ -59,4 +66,6 @@ public interface RNSScreenStackHeaderConfigManagerInterface<T extends View> exte
     void setTopInsetEnabled(T t10, boolean z10);
 
     void setTranslucent(T t10, boolean z10);
+
+    void setUserInterfaceStyle(T t10, String str);
 }

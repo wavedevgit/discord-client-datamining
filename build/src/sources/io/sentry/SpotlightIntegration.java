@@ -12,13 +12,13 @@ import java.util.zip.GZIPOutputStream;
 public final class SpotlightIntegration implements k1, k7.b, Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private k7 f27108d;
+    private k7 f28043d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ILogger f27109e = i2.e();
+    private ILogger f28044e = i2.e();
 
     /* renamed from: i  reason: collision with root package name */
-    private z0 f27110i = v2.f();
+    private z0 f28045i = v2.f();
 
     private void m(HttpURLConnection httpURLConnection) {
         try {
@@ -46,66 +46,66 @@ public final class SpotlightIntegration implements k1, k7.b, Closeable {
     /* JADX INFO: Access modifiers changed from: private */
     public void s(l5 l5Var) {
         try {
-            if (this.f27108d != null) {
+            if (this.f28043d != null) {
                 HttpURLConnection n10 = n(p());
                 OutputStream outputStream = n10.getOutputStream();
                 GZIPOutputStream gZIPOutputStream = new GZIPOutputStream(outputStream);
-                this.f27108d.getSerializer().b(l5Var, gZIPOutputStream);
+                this.f28043d.getSerializer().b(l5Var, gZIPOutputStream);
                 gZIPOutputStream.close();
                 if (outputStream != null) {
                     outputStream.close();
                 }
-                this.f27109e.c(SentryLevel.DEBUG, "Envelope sent to spotlight: %d", Integer.valueOf(n10.getResponseCode()));
+                this.f28044e.c(SentryLevel.DEBUG, "Envelope sent to spotlight: %d", Integer.valueOf(n10.getResponseCode()));
                 m(n10);
                 return;
             }
             throw new IllegalArgumentException("SentryOptions are required to send envelopes.");
         } catch (Exception e10) {
-            this.f27109e.b(SentryLevel.ERROR, "An exception occurred while creating the connection to spotlight.", e10);
+            this.f28044e.b(SentryLevel.ERROR, "An exception occurred while creating the connection to spotlight.", e10);
         }
     }
 
     @Override // io.sentry.k7.b
     public void a(final l5 l5Var, Hint hint) {
         try {
-            this.f27110i.submit(new Runnable() { // from class: io.sentry.m8
+            this.f28045i.submit(new Runnable() { // from class: io.sentry.m8
                 @Override // java.lang.Runnable
                 public final void run() {
                     SpotlightIntegration.this.s(l5Var);
                 }
             });
         } catch (RejectedExecutionException e10) {
-            this.f27109e.b(SentryLevel.WARNING, "Spotlight envelope submission rejected.", e10);
+            this.f28044e.b(SentryLevel.WARNING, "Spotlight envelope submission rejected.", e10);
         }
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f27110i.a(0L);
-        k7 k7Var = this.f27108d;
+        this.f28045i.a(0L);
+        k7 k7Var = this.f28043d;
         if (k7Var != null && k7Var.getBeforeEnvelopeCallback() == this) {
-            this.f27108d.setBeforeEnvelopeCallback(null);
+            this.f28043d.setBeforeEnvelopeCallback(null);
         }
     }
 
     @Override // io.sentry.k1
-    public void g(w0 w0Var, k7 k7Var) {
-        this.f27108d = k7Var;
-        this.f27109e = k7Var.getLogger();
+    public void h(w0 w0Var, k7 k7Var) {
+        this.f28043d = k7Var;
+        this.f28044e = k7Var.getLogger();
         if (k7Var.getBeforeEnvelopeCallback() == null && k7Var.isEnableSpotlight()) {
-            this.f27110i = new q6(k7Var);
+            this.f28045i = new q6(k7Var);
             k7Var.setBeforeEnvelopeCallback(this);
-            this.f27109e.c(SentryLevel.DEBUG, "SpotlightIntegration enabled.", new Object[0]);
+            this.f28044e.c(SentryLevel.DEBUG, "SpotlightIntegration enabled.", new Object[0]);
             io.sentry.util.p.a("Spotlight");
             return;
         }
-        this.f27109e.c(SentryLevel.DEBUG, "SpotlightIntegration is not enabled. BeforeEnvelopeCallback is already set or spotlight is not enabled.", new Object[0]);
+        this.f28044e.c(SentryLevel.DEBUG, "SpotlightIntegration is not enabled. BeforeEnvelopeCallback is already set or spotlight is not enabled.", new Object[0]);
     }
 
     public String p() {
-        k7 k7Var = this.f27108d;
+        k7 k7Var = this.f28043d;
         if (k7Var != null && k7Var.getSpotlightConnectionUrl() != null) {
-            return this.f27108d.getSpotlightConnectionUrl();
+            return this.f28043d.getSpotlightConnectionUrl();
         }
         if (io.sentry.util.a0.a()) {
             return "http://10.0.2.2:8969/stream";

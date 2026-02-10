@@ -24,7 +24,7 @@ public abstract class b {
             return bundle2;
         }
         c.a(key);
-        throw new rr.h();
+        throw new as.h();
     }
 
     public static final Bundle d(Bundle bundle, String key) {

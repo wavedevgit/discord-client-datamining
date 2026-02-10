@@ -88,7 +88,7 @@ public final class e {
     static {
         e[] a10 = a();
         f456v = a10;
-        f457w = yr.a.a(a10);
+        f457w = hs.a.a(a10);
         f447e = new a(null);
         f448i = values();
     }

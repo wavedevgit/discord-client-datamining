@@ -9,29 +9,29 @@ import java.util.RandomAccess;
 public abstract class p0 extends k0 implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final o1 f46131e = new n0(e1.f45710p, 0);
+    private static final o1 f44799e = new n0(e1.f44378p, 0);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static p0 g(Object[] objArr) {
-        return h(objArr, objArr.length);
+        return i(objArr, objArr.length);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static p0 h(Object[] objArr, int i10) {
+    public static p0 i(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return e1.f45710p;
+            return e1.f44378p;
         }
         return new e1(objArr, i10);
     }
 
-    public static p0 i(Object obj, Object obj2) {
+    public static p0 j(Object obj, Object obj2) {
         Object[] objArr = {obj, obj2};
         for (int i10 = 0; i10 < 2; i10++) {
             if (objArr[i10] == null) {
                 throw new NullPointerException("at index " + i10);
             }
         }
-        return h(objArr, 2);
+        return i(objArr, 2);
     }
 
     @Override // java.util.List
@@ -135,7 +135,7 @@ public abstract class p0 extends k0 implements List, RandomAccess {
             return this;
         }
         if (i12 == 0) {
-            return e1.f45710p;
+            return e1.f44378p;
         }
         return new o0(this, i10, i12);
     }
@@ -170,11 +170,11 @@ public abstract class p0 extends k0 implements List, RandomAccess {
     }
 
     @Override // java.util.List
-    /* renamed from: j */
+    /* renamed from: k */
     public final o1 listIterator(int i10) {
         c.b(i10, size(), "index");
         if (isEmpty()) {
-            return f46131e;
+            return f44799e;
         }
         return new n0(this, i10);
     }

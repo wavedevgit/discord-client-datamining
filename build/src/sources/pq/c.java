@@ -1,70 +1,29 @@
 package pq;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.io.File;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import com.withpersona.sdk2.inquiry.steps.ui.components.InputAddressComponent;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<c> CREATOR = new a();
+public interface c {
+    gn.t a();
 
-    /* renamed from: d  reason: collision with root package name */
-    private final File f44436d;
+    gn.t b();
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final c createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new c((File) parcel.readSerializable());
-        }
+    gn.t c();
 
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final c[] newArray(int i10) {
-            return new c[i10];
-        }
-    }
+    InputAddressComponent e(String str);
 
-    public c(File data) {
-        Intrinsics.checkNotNullParameter(data, "data");
-        this.f44436d = data;
-    }
+    InputAddressComponent f(String str);
 
-    public final File a() {
-        return this.f44436d;
-    }
+    gn.t g();
 
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
+    gn.t i();
 
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if ((obj instanceof c) && Intrinsics.areEqual(this.f44436d, ((c) obj).f44436d)) {
-            return true;
-        }
-        return false;
-    }
+    InputAddressComponent j(Boolean bool);
 
-    public int hashCode() {
-        return this.f44436d.hashCode();
-    }
+    InputAddressComponent k(String str);
 
-    public String toString() {
-        File file = this.f44436d;
-        return "DocumentFile(data=" + file + ")";
-    }
+    InputAddressComponent l(String str);
 
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeSerializable(this.f44436d);
-    }
+    qq.m o();
+
+    InputAddressComponent p(String str);
 }

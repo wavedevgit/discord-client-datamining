@@ -8,38 +8,38 @@ import ma.w;
 public class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private Resources f22500a;
+    private Resources f23625a;
 
     /* renamed from: b  reason: collision with root package name */
-    private i9.a f22501b;
+    private i9.a f23626b;
 
     /* renamed from: c  reason: collision with root package name */
-    private sa.a f22502c;
+    private sa.a f23627c;
 
     /* renamed from: d  reason: collision with root package name */
-    private sa.a f22503d;
+    private sa.a f23628d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Executor f22504e;
+    private Executor f23629e;
 
     /* renamed from: f  reason: collision with root package name */
-    private w f22505f;
+    private w f23630f;
 
     /* renamed from: g  reason: collision with root package name */
-    private p8.e f22506g;
+    private p8.e f23631g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Supplier f22507h;
+    private Supplier f23632h;
 
     public void a(Resources resources, i9.a aVar, sa.a aVar2, sa.a aVar3, Executor executor, w wVar, p8.e eVar, Supplier supplier) {
-        this.f22500a = resources;
-        this.f22501b = aVar;
-        this.f22502c = aVar2;
-        this.f22503d = aVar3;
-        this.f22504e = executor;
-        this.f22505f = wVar;
-        this.f22506g = eVar;
-        this.f22507h = supplier;
+        this.f23625a = resources;
+        this.f23626b = aVar;
+        this.f23627c = aVar2;
+        this.f23628d = aVar3;
+        this.f23629e = executor;
+        this.f23630f = wVar;
+        this.f23631g = eVar;
+        this.f23632h = supplier;
     }
 
     protected com.facebook.drawee.backends.pipeline.a b(Resources resources, i9.a aVar, sa.a aVar2, sa.a aVar3, Executor executor, w wVar, p8.e eVar) {
@@ -47,8 +47,8 @@ public class f {
     }
 
     public com.facebook.drawee.backends.pipeline.a c() {
-        com.facebook.drawee.backends.pipeline.a b10 = b(this.f22500a, this.f22501b, this.f22502c, this.f22503d, this.f22504e, this.f22505f, this.f22506g);
-        Supplier supplier = this.f22507h;
+        com.facebook.drawee.backends.pipeline.a b10 = b(this.f23625a, this.f23626b, this.f23627c, this.f23628d, this.f23629e, this.f23630f, this.f23631g);
+        Supplier supplier = this.f23632h;
         if (supplier != null) {
             b10.v0(((Boolean) supplier.get()).booleanValue());
         }

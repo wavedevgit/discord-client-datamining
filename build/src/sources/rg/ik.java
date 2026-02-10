@@ -3,16 +3,16 @@ package rg;
 public abstract class ik {
 
     /* renamed from: a  reason: collision with root package name */
-    private static hk f48303a;
+    private static hk f46757a;
 
     public static synchronized xj a(oj ojVar) {
         xj xjVar;
         synchronized (ik.class) {
             try {
-                if (f48303a == null) {
-                    f48303a = new hk(null);
+                if (f46757a == null) {
+                    f46757a = new hk(null);
                 }
-                xjVar = (xj) f48303a.b(ojVar);
+                xjVar = (xj) f46757a.b(ojVar);
             } catch (Throwable th2) {
                 throw th2;
             }

@@ -10,17 +10,17 @@ import java.util.Set;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final AbstractC0331a f22595a;
+    private final AbstractC0316a f23720a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final g f22596b;
+    private final g f23721b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f22597c;
+    private final String f23722c;
 
     /* renamed from: ff.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class AbstractC0331a extends e {
+    public static abstract class AbstractC0316a extends e {
         public f a(Context context, Looper looper, hf.d dVar, Object obj, e.a aVar, e.b bVar) {
             return b(context, looper, dVar, obj, aVar, bVar);
         }
@@ -41,13 +41,13 @@ public final class a {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface d {
 
-        /* renamed from: c  reason: collision with root package name */
-        public static final C0332a f22598c = new C0332a(null);
+        /* renamed from: g  reason: collision with root package name */
+        public static final C0317a f23723g = new C0317a(null);
 
         /* renamed from: ff.a$d$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static final class C0332a implements d {
-            /* synthetic */ C0332a(m mVar) {
+        public static final class C0317a implements d {
+            /* synthetic */ C0317a(m mVar) {
             }
         }
     }
@@ -60,7 +60,7 @@ public final class a {
     public interface f extends b {
         boolean a();
 
-        void b(c.InterfaceC0382c interfaceC0382c);
+        void b(c.InterfaceC0361c interfaceC0361c);
 
         void c(String str);
 
@@ -91,23 +91,23 @@ public final class a {
     public static final class g extends c {
     }
 
-    public a(String str, AbstractC0331a abstractC0331a, g gVar) {
-        q.m(abstractC0331a, "Cannot construct an Api with a null ClientBuilder");
+    public a(String str, AbstractC0316a abstractC0316a, g gVar) {
+        q.m(abstractC0316a, "Cannot construct an Api with a null ClientBuilder");
         q.m(gVar, "Cannot construct an Api with a null ClientKey");
-        this.f22597c = str;
-        this.f22595a = abstractC0331a;
-        this.f22596b = gVar;
+        this.f23722c = str;
+        this.f23720a = abstractC0316a;
+        this.f23721b = gVar;
     }
 
-    public final AbstractC0331a a() {
-        return this.f22595a;
+    public final AbstractC0316a a() {
+        return this.f23720a;
     }
 
     public final c b() {
-        return this.f22596b;
+        return this.f23721b;
     }
 
     public final String c() {
-        return this.f22597c;
+        return this.f23722c;
     }
 }

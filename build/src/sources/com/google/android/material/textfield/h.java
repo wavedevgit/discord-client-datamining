@@ -5,11 +5,11 @@ import android.graphics.RectF;
 import android.graphics.Region;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import rh.g;
+import th.h;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class h extends rh.g {
-    b K;
+public abstract class h extends th.h {
+    b U;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -19,92 +19,92 @@ public abstract class h extends rh.g {
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
-        @Override // rh.g
-        public void r(Canvas canvas) {
-            if (this.K.f15600w.isEmpty()) {
-                super.r(canvas);
+        @Override // th.h
+        public void w(Canvas canvas) {
+            if (this.U.f16350x.isEmpty()) {
+                super.w(canvas);
                 return;
             }
             canvas.save();
             if (Build.VERSION.SDK_INT >= 26) {
-                canvas.clipOutRect(this.K.f15600w);
+                canvas.clipOutRect(this.U.f16350x);
             } else {
-                canvas.clipRect(this.K.f15600w, Region.Op.DIFFERENCE);
+                canvas.clipRect(this.U.f16350x, Region.Op.DIFFERENCE);
             }
-            super.r(canvas);
+            super.w(canvas);
             canvas.restore();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static h l0(b bVar) {
+    public static h y0(b bVar) {
         return new c(bVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static h m0(rh.k kVar) {
-        if (kVar == null) {
-            kVar = new rh.k();
+    public static h z0(th.l lVar) {
+        if (lVar == null) {
+            lVar = new th.l();
         }
-        return l0(new b(kVar, new RectF()));
-    }
-
-    @Override // rh.g, android.graphics.drawable.Drawable
-    public Drawable mutate() {
-        this.K = new b(this.K);
-        return this;
+        return y0(new b(lVar, new RectF()));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public boolean n0() {
-        return !this.K.f15600w.isEmpty();
+    public boolean A0() {
+        return !this.U.f16350x.isEmpty();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void o0() {
-        p0(0.0f, 0.0f, 0.0f, 0.0f);
+    public void B0() {
+        C0(0.0f, 0.0f, 0.0f, 0.0f);
     }
 
-    void p0(float f10, float f11, float f12, float f13) {
-        if (f10 == this.K.f15600w.left && f11 == this.K.f15600w.top && f12 == this.K.f15600w.right && f13 == this.K.f15600w.bottom) {
+    void C0(float f10, float f11, float f12, float f13) {
+        if (f10 == this.U.f16350x.left && f11 == this.U.f16350x.top && f12 == this.U.f16350x.right && f13 == this.U.f16350x.bottom) {
             return;
         }
-        this.K.f15600w.set(f10, f11, f12, f13);
+        this.U.f16350x.set(f10, f11, f12, f13);
         invalidateSelf();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void q0(RectF rectF) {
-        p0(rectF.left, rectF.top, rectF.right, rectF.bottom);
+    public void D0(RectF rectF) {
+        C0(rectF.left, rectF.top, rectF.right, rectF.bottom);
+    }
+
+    @Override // th.h, android.graphics.drawable.Drawable
+    public Drawable mutate() {
+        this.U = new b(this.U);
+        return this;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class b extends g.c {
+    public static final class b extends h.c {
 
-        /* renamed from: w  reason: collision with root package name */
-        private final RectF f15600w;
+        /* renamed from: x  reason: collision with root package name */
+        private final RectF f16350x;
 
-        @Override // rh.g.c, android.graphics.drawable.Drawable.ConstantState
+        @Override // th.h.c, android.graphics.drawable.Drawable.ConstantState
         public Drawable newDrawable() {
-            h l02 = h.l0(this);
-            l02.invalidateSelf();
-            return l02;
+            h y02 = h.y0(this);
+            y02.invalidateSelf();
+            return y02;
         }
 
-        private b(rh.k kVar, RectF rectF) {
-            super(kVar, null);
-            this.f15600w = rectF;
+        private b(th.l lVar, RectF rectF) {
+            super(lVar, null);
+            this.f16350x = rectF;
         }
 
         private b(b bVar) {
             super(bVar);
-            this.f15600w = bVar.f15600w;
+            this.f16350x = bVar.f16350x;
         }
     }
 
     private h(b bVar) {
         super(bVar);
-        this.K = bVar;
+        this.U = bVar;
     }
 }

@@ -20,7 +20,6 @@ import androidx.appcompat.view.menu.k;
 import androidx.appcompat.widget.a1;
 import androidx.appcompat.widget.i0;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import androidx.core.view.h0;
 import androidx.recyclerview.widget.RecyclerView;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class NavigationMenuItemView extends d implements k.a {
@@ -55,7 +54,7 @@ public class NavigationMenuItemView extends d implements k.a {
 
     private StateListDrawable A() {
         TypedValue typedValue = new TypedValue();
-        if (getContext().getTheme().resolveAttribute(f.a.f22172t, typedValue, true)) {
+        if (getContext().getTheme().resolveAttribute(f.a.f23295t, typedValue, true)) {
             StateListDrawable stateListDrawable = new StateListDrawable();
             stateListDrawable.addState(R, new ColorDrawable(typedValue.data));
             stateListDrawable.addState(ViewGroup.EMPTY_STATE_SET, new ColorDrawable(0));
@@ -74,7 +73,7 @@ public class NavigationMenuItemView extends d implements k.a {
     private void setActionView(View view) {
         if (view != null) {
             if (this.L == null) {
-                this.L = (FrameLayout) ((ViewStub) findViewById(bh.f.f6714g)).inflate();
+                this.L = (FrameLayout) ((ViewStub) findViewById(bh.f.f6848g)).inflate();
             }
             if (view.getParent() != null) {
                 ((ViewGroup) view.getParent()).removeView(view);
@@ -119,7 +118,7 @@ public class NavigationMenuItemView extends d implements k.a {
         }
         setVisibility(i11);
         if (getBackground() == null) {
-            h0.r0(this, A());
+            setBackground(A());
         }
         setCheckable(gVar.isCheckable());
         setChecked(gVar.isChecked());
@@ -186,13 +185,13 @@ public class NavigationMenuItemView extends d implements k.a {
                     drawable = constantState.newDrawable();
                 }
                 drawable = s1.a.r(drawable).mutate();
-                s1.a.o(drawable, this.N);
+                drawable.setTintList(this.N);
             }
             int i10 = this.G;
             drawable.setBounds(0, 0, i10, i10);
         } else if (this.H) {
             if (this.P == null) {
-                Drawable f10 = q1.j.f(getResources(), bh.e.f6707k, getContext().getTheme());
+                Drawable f10 = q1.j.f(getResources(), bh.e.f6836k, getContext().getTheme());
                 this.P = f10;
                 if (f10 != null) {
                     int i11 = this.G;
@@ -201,7 +200,7 @@ public class NavigationMenuItemView extends d implements k.a {
             }
             drawable = this.P;
         }
-        androidx.core.widget.j.m(this.K, drawable, null, null, null);
+        this.K.setCompoundDrawablesRelative(drawable, null, null, null);
     }
 
     public void setIconPadding(int i10) {
@@ -236,7 +235,7 @@ public class NavigationMenuItemView extends d implements k.a {
     }
 
     public void setTextAppearance(int i10) {
-        androidx.core.widget.j.s(this.K, i10);
+        androidx.core.widget.j.q(this.K, i10);
     }
 
     public void setTextColor(ColorStateList colorStateList) {
@@ -253,11 +252,10 @@ public class NavigationMenuItemView extends d implements k.a {
         a aVar = new a();
         this.Q = aVar;
         setOrientation(0);
-        LayoutInflater.from(context).inflate(bh.h.f6742d, (ViewGroup) this, true);
-        setIconSize(context.getResources().getDimensionPixelSize(bh.d.f6671e));
-        CheckedTextView checkedTextView = (CheckedTextView) findViewById(bh.f.f6715h);
+        LayoutInflater.from(context).inflate(bh.h.f6877e, (ViewGroup) this, true);
+        setIconSize(context.getResources().getDimensionPixelSize(bh.d.f6798m));
+        CheckedTextView checkedTextView = (CheckedTextView) findViewById(bh.f.f6849h);
         this.K = checkedTextView;
-        checkedTextView.setDuplicateParentStateEnabled(true);
-        h0.n0(checkedTextView, aVar);
+        androidx.core.view.i0.k0(checkedTextView, aVar);
     }
 }

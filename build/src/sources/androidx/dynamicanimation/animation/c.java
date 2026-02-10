@@ -1,160 +1,624 @@
 package androidx.dynamicanimation.animation;
 
-import androidx.dynamicanimation.animation.b;
+import android.util.AndroidRuntimeException;
+import android.view.View;
+import androidx.core.view.i0;
+import androidx.dynamicanimation.animation.a;
+import com.facebook.react.uimanager.ViewProps;
+import java.util.ArrayList;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public final class c {
+public abstract class c implements a.c {
 
     /* renamed from: a  reason: collision with root package name */
-    double f4065a;
+    float f4058a;
 
     /* renamed from: b  reason: collision with root package name */
-    double f4066b;
+    float f4059b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f4067c;
+    boolean f4060c;
 
     /* renamed from: d  reason: collision with root package name */
-    private double f4068d;
+    final Object f4061d;
 
     /* renamed from: e  reason: collision with root package name */
-    private double f4069e;
+    final b3.d f4062e;
 
     /* renamed from: f  reason: collision with root package name */
-    private double f4070f;
+    boolean f4063f;
 
     /* renamed from: g  reason: collision with root package name */
-    private double f4071g;
+    float f4064g;
 
     /* renamed from: h  reason: collision with root package name */
-    private double f4072h;
+    float f4065h;
 
     /* renamed from: i  reason: collision with root package name */
-    private double f4073i;
+    private long f4066i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final b.p f4074j;
+    private float f4067j;
 
-    public c() {
-        this.f4065a = Math.sqrt(1500.0d);
-        this.f4066b = 0.5d;
-        this.f4067c = false;
-        this.f4073i = Double.MAX_VALUE;
-        this.f4074j = new b.p();
+    /* renamed from: k  reason: collision with root package name */
+    private final ArrayList f4068k;
+
+    /* renamed from: l  reason: collision with root package name */
+    private final ArrayList f4069l;
+
+    /* renamed from: m  reason: collision with root package name */
+    private androidx.dynamicanimation.animation.a f4070m;
+
+    /* renamed from: n  reason: collision with root package name */
+    public static final s f4045n = new g("translationX");
+
+    /* renamed from: o  reason: collision with root package name */
+    public static final s f4046o = new h("translationY");
+
+    /* renamed from: p  reason: collision with root package name */
+    public static final s f4047p = new i("translationZ");
+
+    /* renamed from: q  reason: collision with root package name */
+    public static final s f4048q = new j(ViewProps.SCALE_X);
+
+    /* renamed from: r  reason: collision with root package name */
+    public static final s f4049r = new k(ViewProps.SCALE_Y);
+
+    /* renamed from: s  reason: collision with root package name */
+    public static final s f4050s = new l(ViewProps.ROTATION);
+
+    /* renamed from: t  reason: collision with root package name */
+    public static final s f4051t = new m("rotationX");
+
+    /* renamed from: u  reason: collision with root package name */
+    public static final s f4052u = new n("rotationY");
+
+    /* renamed from: v  reason: collision with root package name */
+    public static final s f4053v = new o("x");
+
+    /* renamed from: w  reason: collision with root package name */
+    public static final s f4054w = new a("y");
+
+    /* renamed from: x  reason: collision with root package name */
+    public static final s f4055x = new b("z");
+
+    /* renamed from: y  reason: collision with root package name */
+    public static final s f4056y = new C0045c("alpha");
+
+    /* renamed from: z  reason: collision with root package name */
+    public static final s f4057z = new d("scrollX");
+    public static final s A = new e("scrollY");
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class a extends s {
+        a(String str) {
+            super(str, null);
+        }
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return view.getY();
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            view.setY(f10);
+        }
     }
 
-    private void b() {
-        if (this.f4067c) {
-            return;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class b extends s {
+        b(String str) {
+            super(str, null);
         }
-        if (this.f4073i != Double.MAX_VALUE) {
-            double d10 = this.f4066b;
-            if (d10 > 1.0d) {
-                double d11 = this.f4065a;
-                this.f4070f = ((-d10) * d11) + (d11 * Math.sqrt((d10 * d10) - 1.0d));
-                double d12 = this.f4066b;
-                double d13 = this.f4065a;
-                this.f4071g = ((-d12) * d13) - (d13 * Math.sqrt((d12 * d12) - 1.0d));
-            } else if (d10 >= 0.0d && d10 < 1.0d) {
-                this.f4072h = this.f4065a * Math.sqrt(1.0d - (d10 * d10));
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return i0.L(view);
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            i0.F0(view, f10);
+        }
+    }
+
+    /* renamed from: androidx.dynamicanimation.animation.c$c  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class C0045c extends s {
+        C0045c(String str) {
+            super(str, null);
+        }
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return view.getAlpha();
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            view.setAlpha(f10);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class d extends s {
+        d(String str) {
+            super(str, null);
+        }
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return view.getScrollX();
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            view.setScrollX((int) f10);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class e extends s {
+        e(String str) {
+            super(str, null);
+        }
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return view.getScrollY();
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            view.setScrollY((int) f10);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class f extends b3.d {
+
+        /* renamed from: b  reason: collision with root package name */
+        final /* synthetic */ b3.e f4071b;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        f(String str, b3.e eVar) {
+            super(str);
+            this.f4071b = eVar;
+        }
+
+        @Override // b3.d
+        public float a(Object obj) {
+            return this.f4071b.a();
+        }
+
+        @Override // b3.d
+        public void b(Object obj, float f10) {
+            this.f4071b.b(f10);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class g extends s {
+        g(String str) {
+            super(str, null);
+        }
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return view.getTranslationX();
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            view.setTranslationX(f10);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class h extends s {
+        h(String str) {
+            super(str, null);
+        }
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return view.getTranslationY();
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            view.setTranslationY(f10);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class i extends s {
+        i(String str) {
+            super(str, null);
+        }
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return i0.I(view);
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            i0.D0(view, f10);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class j extends s {
+        j(String str) {
+            super(str, null);
+        }
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return view.getScaleX();
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            view.setScaleX(f10);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class k extends s {
+        k(String str) {
+            super(str, null);
+        }
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return view.getScaleY();
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            view.setScaleY(f10);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class l extends s {
+        l(String str) {
+            super(str, null);
+        }
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return view.getRotation();
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            view.setRotation(f10);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class m extends s {
+        m(String str) {
+            super(str, null);
+        }
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return view.getRotationX();
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            view.setRotationX(f10);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class n extends s {
+        n(String str) {
+            super(str, null);
+        }
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return view.getRotationY();
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            view.setRotationY(f10);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    class o extends s {
+        o(String str) {
+            super(str, null);
+        }
+
+        @Override // b3.d
+        /* renamed from: c */
+        public float a(View view) {
+            return view.getX();
+        }
+
+        @Override // b3.d
+        /* renamed from: d */
+        public void b(View view, float f10) {
+            view.setX(f10);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    static class p {
+
+        /* renamed from: a  reason: collision with root package name */
+        float f4073a;
+
+        /* renamed from: b  reason: collision with root package name */
+        float f4074b;
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    public interface q {
+        void a(c cVar, boolean z10, float f10, float f11);
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    public interface r {
+        void b(c cVar, float f10, float f11);
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    public static abstract class s extends b3.d {
+        /* synthetic */ s(String str, g gVar) {
+            this(str);
+        }
+
+        private s(String str) {
+            super(str);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c(b3.e eVar) {
+        this.f4058a = 0.0f;
+        this.f4059b = Float.MAX_VALUE;
+        this.f4060c = false;
+        this.f4063f = false;
+        this.f4064g = Float.MAX_VALUE;
+        this.f4065h = -Float.MAX_VALUE;
+        this.f4066i = 0L;
+        this.f4068k = new ArrayList();
+        this.f4069l = new ArrayList();
+        this.f4061d = null;
+        this.f4062e = new f("FloatValueHolder", eVar);
+        this.f4067j = 1.0f;
+    }
+
+    private void e(boolean z10) {
+        this.f4063f = false;
+        f().k(this);
+        this.f4066i = 0L;
+        this.f4060c = false;
+        for (int i10 = 0; i10 < this.f4068k.size(); i10++) {
+            if (this.f4068k.get(i10) != null) {
+                ((q) this.f4068k.get(i10)).a(this, z10, this.f4059b, this.f4058a);
             }
-            this.f4067c = true;
-            return;
         }
-        throw new IllegalStateException("Error: Final position of the spring must be set before the animation starts");
+        j(this.f4068k);
     }
 
-    public float a() {
-        return (float) this.f4073i;
+    private float g() {
+        return this.f4062e.a(this.f4061d);
     }
 
-    public boolean c(float f10, float f11) {
-        if (Math.abs(f11) < this.f4069e && Math.abs(f10 - a()) < this.f4068d) {
-            return true;
+    private static void j(ArrayList arrayList) {
+        for (int size = arrayList.size() - 1; size >= 0; size--) {
+            if (arrayList.get(size) == null) {
+                arrayList.remove(size);
+            }
         }
-        return false;
     }
 
-    public c d(float f10) {
-        if (f10 >= 0.0f) {
-            this.f4066b = f10;
-            this.f4067c = false;
-            return this;
+    private void s() {
+        if (!this.f4063f) {
+            this.f4063f = true;
+            if (!this.f4060c) {
+                this.f4059b = g();
+            }
+            float f10 = this.f4059b;
+            if (f10 <= this.f4064g && f10 >= this.f4065h) {
+                f().d(this, 0L);
+                return;
+            }
+            throw new IllegalArgumentException("Starting value need to be in between min value and max value");
         }
-        throw new IllegalArgumentException("Damping ratio must be non-negative");
     }
 
-    public c e(float f10) {
-        this.f4073i = f10;
+    @Override // androidx.dynamicanimation.animation.a.c
+    public boolean a(long j10) {
+        long j11;
+        long j12 = this.f4066i;
+        if (j12 == 0) {
+            this.f4066i = j10;
+            n(this.f4059b);
+            return false;
+        }
+        long j13 = j10 - j12;
+        this.f4066i = j10;
+        float g10 = f().g();
+        if (g10 == 0.0f) {
+            j11 = 2147483647L;
+        } else {
+            j11 = ((float) j13) / g10;
+        }
+        boolean t10 = t(j11);
+        float min = Math.min(this.f4059b, this.f4064g);
+        this.f4059b = min;
+        float max = Math.max(min, this.f4065h);
+        this.f4059b = max;
+        n(max);
+        if (t10) {
+            e(false);
+        }
+        return t10;
+    }
+
+    public c b(q qVar) {
+        if (!this.f4068k.contains(qVar)) {
+            this.f4068k.add(qVar);
+        }
         return this;
     }
 
-    public c f(float f10) {
-        if (f10 > 0.0f) {
-            this.f4065a = Math.sqrt(f10);
-            this.f4067c = false;
+    public c c(r rVar) {
+        if (!i()) {
+            if (!this.f4069l.contains(rVar)) {
+                this.f4069l.add(rVar);
+            }
             return this;
         }
-        throw new IllegalArgumentException("Spring stiffness constant must be positive.");
+        throw new UnsupportedOperationException("Error: Update listeners must be added beforethe animation.");
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public void g(double d10) {
-        double abs = Math.abs(d10);
-        this.f4068d = abs;
-        this.f4069e = abs * 62.5d;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b.p h(double d10, double d11, long j10) {
-        double pow;
-        double cos;
-        b();
-        double d12 = j10 / 1000.0d;
-        double d13 = d10 - this.f4073i;
-        double d14 = this.f4066b;
-        if (d14 > 1.0d) {
-            double d15 = this.f4071g;
-            double d16 = this.f4070f;
-            double d17 = d13 - (((d15 * d13) - d11) / (d15 - d16));
-            double d18 = ((d13 * d15) - d11) / (d15 - d16);
-            pow = (Math.pow(2.718281828459045d, d15 * d12) * d17) + (Math.pow(2.718281828459045d, this.f4070f * d12) * d18);
-            double d19 = this.f4071g;
-            double pow2 = d17 * d19 * Math.pow(2.718281828459045d, d19 * d12);
-            double d20 = this.f4070f;
-            cos = pow2 + (d18 * d20 * Math.pow(2.718281828459045d, d20 * d12));
-        } else if (d14 == 1.0d) {
-            double d21 = this.f4065a;
-            double d22 = d11 + (d21 * d13);
-            double d23 = d13 + (d22 * d12);
-            pow = Math.pow(2.718281828459045d, (-d21) * d12) * d23;
-            double pow3 = d23 * Math.pow(2.718281828459045d, (-this.f4065a) * d12);
-            double d24 = this.f4065a;
-            cos = (d22 * Math.pow(2.718281828459045d, (-d24) * d12)) + (pow3 * (-d24));
-        } else {
-            double d25 = 1.0d / this.f4072h;
-            double d26 = this.f4065a;
-            double d27 = d25 * ((d14 * d26 * d13) + d11);
-            pow = Math.pow(2.718281828459045d, (-d14) * d26 * d12) * ((Math.cos(this.f4072h * d12) * d13) + (Math.sin(this.f4072h * d12) * d27));
-            double d28 = this.f4065a;
-            double d29 = this.f4066b;
-            double pow4 = Math.pow(2.718281828459045d, (-d29) * d28 * d12);
-            double d30 = this.f4072h;
-            double sin = (-d30) * d13 * Math.sin(d30 * d12);
-            double d31 = this.f4072h;
-            cos = ((-d28) * pow * d29) + (pow4 * (sin + (d27 * d31 * Math.cos(d31 * d12))));
+    public void d() {
+        if (f().j()) {
+            if (this.f4063f) {
+                e(true);
+                return;
+            }
+            return;
         }
-        b.p pVar = this.f4074j;
-        pVar.f4063a = (float) (pow + this.f4073i);
-        pVar.f4064b = (float) cos;
-        return pVar;
+        throw new AndroidRuntimeException("Animations may only be canceled from the same thread as the animation handler");
     }
 
-    public c(float f10) {
-        this.f4065a = Math.sqrt(1500.0d);
-        this.f4066b = 0.5d;
-        this.f4067c = false;
-        this.f4073i = Double.MAX_VALUE;
-        this.f4074j = new b.p();
-        this.f4073i = f10;
+    public androidx.dynamicanimation.animation.a f() {
+        androidx.dynamicanimation.animation.a aVar = this.f4070m;
+        if (aVar != null) {
+            return aVar;
+        }
+        return androidx.dynamicanimation.animation.a.h();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public float h() {
+        return this.f4067j * 0.75f;
+    }
+
+    public boolean i() {
+        return this.f4063f;
+    }
+
+    public c k(float f10) {
+        this.f4064g = f10;
+        return this;
+    }
+
+    public c l(float f10) {
+        this.f4065h = f10;
+        return this;
+    }
+
+    public c m(float f10) {
+        if (f10 > 0.0f) {
+            this.f4067j = f10;
+            q(f10 * 0.75f);
+            return this;
+        }
+        throw new IllegalArgumentException("Minimum visible change must be positive.");
+    }
+
+    void n(float f10) {
+        this.f4062e.b(this.f4061d, f10);
+        for (int i10 = 0; i10 < this.f4069l.size(); i10++) {
+            if (this.f4069l.get(i10) != null) {
+                ((r) this.f4069l.get(i10)).b(this, this.f4059b, this.f4058a);
+            }
+        }
+        j(this.f4069l);
+    }
+
+    public c o(float f10) {
+        this.f4059b = f10;
+        this.f4060c = true;
+        return this;
+    }
+
+    public c p(float f10) {
+        this.f4058a = f10;
+        return this;
+    }
+
+    abstract void q(float f10);
+
+    public void r() {
+        if (f().j()) {
+            if (!this.f4063f) {
+                s();
+                return;
+            }
+            return;
+        }
+        throw new AndroidRuntimeException("Animations may only be started on the same thread as the animation handler");
+    }
+
+    abstract boolean t(long j10);
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c(Object obj, b3.d dVar) {
+        this.f4058a = 0.0f;
+        this.f4059b = Float.MAX_VALUE;
+        this.f4060c = false;
+        this.f4063f = false;
+        this.f4064g = Float.MAX_VALUE;
+        this.f4065h = -Float.MAX_VALUE;
+        this.f4066i = 0L;
+        this.f4068k = new ArrayList();
+        this.f4069l = new ArrayList();
+        this.f4061d = obj;
+        this.f4062e = dVar;
+        if (dVar != f4050s && dVar != f4051t && dVar != f4052u) {
+            if (dVar == f4056y) {
+                this.f4067j = 0.00390625f;
+                return;
+            } else if (dVar != f4048q && dVar != f4049r) {
+                this.f4067j = 1.0f;
+                return;
+            } else {
+                this.f4067j = 0.002f;
+                return;
+            }
+        }
+        this.f4067j = 0.1f;
     }
 }

@@ -1,19 +1,21 @@
 package rv;
+
+import android.os.Trace;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a extends r {
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // rv.r
-    public void j(r rVar) {
-        if (rVar instanceof a) {
-            super.j(rVar);
-            return;
+public class a implements AutoCloseable {
+    private a(String str) {
+        if (str.length() > 127) {
+            str = str.substring(0, 124) + "...";
         }
-        throw new IllegalArgumentException("Parent of block must also be block (can not be inline)");
+        Trace.beginSection(str);
     }
 
-    @Override // rv.r
-    /* renamed from: m */
-    public a f() {
-        return (a) super.f();
+    public static a a(String str) {
+        return new a(str);
+    }
+
+    @Override // java.lang.AutoCloseable
+    public void close() {
+        Trace.endSection();
     }
 }

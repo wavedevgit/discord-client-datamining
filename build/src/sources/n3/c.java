@@ -15,19 +15,19 @@ import java.util.concurrent.atomic.AtomicBoolean;
 abstract class c {
 
     /* renamed from: p  reason: collision with root package name */
-    private static Handler f37789p;
+    private static Handler f36793p;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile e f37791e = e.PENDING;
+    private volatile e f36795e = e.PENDING;
 
     /* renamed from: i  reason: collision with root package name */
-    final AtomicBoolean f37792i = new AtomicBoolean();
+    final AtomicBoolean f36796i = new AtomicBoolean();
 
     /* renamed from: o  reason: collision with root package name */
-    final AtomicBoolean f37793o = new AtomicBoolean();
+    final AtomicBoolean f36797o = new AtomicBoolean();
 
     /* renamed from: d  reason: collision with root package name */
-    private final FutureTask f37790d = new b(new a());
+    private final FutureTask f36794d = new b(new a());
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Callable {
@@ -36,7 +36,7 @@ abstract class c {
 
         @Override // java.util.concurrent.Callable
         public Object call() {
-            c.this.f37793o.set(true);
+            c.this.f36797o.set(true);
             Object obj = null;
             try {
                 Process.setThreadPriority(10);
@@ -73,18 +73,18 @@ abstract class c {
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: n3.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public class RunnableC0547c implements Runnable {
+    public class RunnableC0524c implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Object f37796d;
+        final /* synthetic */ Object f36800d;
 
-        RunnableC0547c(Object obj) {
-            this.f37796d = obj;
+        RunnableC0524c(Object obj) {
+            this.f36800d = obj;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            c.this.d(this.f37796d);
+            c.this.d(this.f36800d);
         }
     }
 
@@ -92,17 +92,17 @@ abstract class c {
     static /* synthetic */ class d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f37798a;
+        static final /* synthetic */ int[] f36802a;
 
         static {
             int[] iArr = new int[e.values().length];
-            f37798a = iArr;
+            f36802a = iArr;
             try {
                 iArr[e.RUNNING.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f37798a[e.FINISHED.ordinal()] = 2;
+                f36802a[e.FINISHED.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -119,10 +119,10 @@ abstract class c {
         Handler handler;
         synchronized (c.class) {
             try {
-                if (f37789p == null) {
-                    f37789p = new Handler(Looper.getMainLooper());
+                if (f36793p == null) {
+                    f36793p = new Handler(Looper.getMainLooper());
                 }
-                handler = f37789p;
+                handler = f36793p;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -131,15 +131,15 @@ abstract class c {
     }
 
     public final boolean a(boolean z10) {
-        this.f37792i.set(true);
-        return this.f37790d.cancel(z10);
+        this.f36796i.set(true);
+        return this.f36794d.cancel(z10);
     }
 
     protected abstract Object b();
 
     public final void c(Executor executor) {
-        if (this.f37791e != e.PENDING) {
-            int i10 = d.f37798a[this.f37791e.ordinal()];
+        if (this.f36795e != e.PENDING) {
+            int i10 = d.f36802a[this.f36795e.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     throw new IllegalStateException("We should never reach this state");
@@ -148,8 +148,8 @@ abstract class c {
             }
             throw new IllegalStateException("Cannot execute task: the task is already running.");
         }
-        this.f37791e = e.RUNNING;
-        executor.execute(this.f37790d);
+        this.f36795e = e.RUNNING;
+        executor.execute(this.f36794d);
     }
 
     void d(Object obj) {
@@ -158,11 +158,11 @@ abstract class c {
         } else {
             h(obj);
         }
-        this.f37791e = e.FINISHED;
+        this.f36795e = e.FINISHED;
     }
 
     public final boolean f() {
-        return this.f37792i.get();
+        return this.f36796i.get();
     }
 
     protected abstract void g(Object obj);
@@ -170,11 +170,11 @@ abstract class c {
     protected abstract void h(Object obj);
 
     void i(Object obj) {
-        e().post(new RunnableC0547c(obj));
+        e().post(new RunnableC0524c(obj));
     }
 
     void j(Object obj) {
-        if (!this.f37793o.get()) {
+        if (!this.f36797o.get()) {
             i(obj);
         }
     }

@@ -3,60 +3,60 @@ package m0;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m0.a f36719a;
+    private final m0.a f36094a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d f36720b;
+    private final d f36095b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b f36721c;
+    private final b f36096c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f36722d;
+    private final int f36097d;
 
     c(m0.a aVar, d dVar, b bVar, int i10) {
-        this.f36719a = aVar;
-        this.f36720b = dVar;
-        this.f36721c = bVar;
-        this.f36722d = i10;
+        this.f36094a = aVar;
+        this.f36095b = dVar;
+        this.f36096c = bVar;
+        this.f36097d = i10;
     }
 
     public int a() {
-        return this.f36722d;
+        return this.f36097d;
     }
 
     public m0.a b() {
-        return this.f36719a;
+        return this.f36094a;
     }
 
     public b c() {
-        return this.f36721c;
+        return this.f36096c;
     }
 
     public d d() {
-        return this.f36720b;
+        return this.f36095b;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private m0.a f36723a;
+        private m0.a f36098a;
 
         /* renamed from: b  reason: collision with root package name */
-        private d f36724b;
+        private d f36099b;
 
         /* renamed from: c  reason: collision with root package name */
-        private b f36725c;
+        private b f36100c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f36726d;
+        private int f36101d;
 
         public a() {
-            this.f36723a = m0.a.f36715c;
-            this.f36724b = null;
-            this.f36725c = null;
-            this.f36726d = 0;
+            this.f36098a = m0.a.f36090c;
+            this.f36099b = null;
+            this.f36100c = null;
+            this.f36101d = 0;
         }
 
         public static a b(c cVar) {
@@ -64,38 +64,38 @@ public final class c {
         }
 
         public c a() {
-            return new c(this.f36723a, this.f36724b, this.f36725c, this.f36726d);
+            return new c(this.f36098a, this.f36099b, this.f36100c, this.f36101d);
         }
 
         public a c(int i10) {
-            this.f36726d = i10;
+            this.f36101d = i10;
             return this;
         }
 
         public a d(m0.a aVar) {
-            this.f36723a = aVar;
+            this.f36098a = aVar;
             return this;
         }
 
         public a e(b bVar) {
-            this.f36725c = bVar;
+            this.f36100c = bVar;
             return this;
         }
 
         public a f(d dVar) {
-            this.f36724b = dVar;
+            this.f36099b = dVar;
             return this;
         }
 
         private a(c cVar) {
-            this.f36723a = m0.a.f36715c;
-            this.f36724b = null;
-            this.f36725c = null;
-            this.f36726d = 0;
-            this.f36723a = cVar.b();
-            this.f36724b = cVar.d();
-            this.f36725c = cVar.c();
-            this.f36726d = cVar.a();
+            this.f36098a = m0.a.f36090c;
+            this.f36099b = null;
+            this.f36100c = null;
+            this.f36101d = 0;
+            this.f36098a = cVar.b();
+            this.f36099b = cVar.d();
+            this.f36100c = cVar.c();
+            this.f36101d = cVar.a();
         }
     }
 }

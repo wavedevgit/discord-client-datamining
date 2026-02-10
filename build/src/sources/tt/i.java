@@ -1,68 +1,51 @@
 package tt;
 
-import java.text.DecimalFormatSymbols;
-import java.util.Locale;
+import java.util.Arrays;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface i {
+public final class i extends d2 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f51061a = new a();
+    private byte[] f49999a;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static class a implements i {
-        a() {
-        }
+    /* renamed from: b  reason: collision with root package name */
+    private int f50000b;
 
-        private DecimalFormatSymbols g(Locale locale) {
-            return DecimalFormatSymbols.getInstance(locale);
-        }
+    public i(byte[] bufferWithData) {
+        Intrinsics.checkNotNullParameter(bufferWithData, "bufferWithData");
+        this.f49999a = bufferWithData;
+        this.f50000b = bufferWithData.length;
+        b(10);
+    }
 
-        @Override // tt.i
-        public Locale[] a() {
-            return DecimalFormatSymbols.getAvailableLocales();
-        }
-
-        @Override // tt.i
-        public char b(Locale locale) {
-            return g(locale).getDecimalSeparator();
-        }
-
-        @Override // tt.i
-        public String c(Locale locale) {
-            if (locale.getLanguage().equals("ar")) {
-                return "\u200f+";
-            }
-            return String.valueOf('+');
-        }
-
-        @Override // tt.i
-        public j d(Locale locale) {
-            return j.f51062d;
-        }
-
-        @Override // tt.i
-        public String e(Locale locale) {
-            if (locale.getLanguage().equals("ar")) {
-                return "\u200f-";
-            }
-            return String.valueOf(g(locale).getMinusSign());
-        }
-
-        @Override // tt.i
-        public char f(Locale locale) {
-            return g(locale).getZeroDigit();
+    @Override // tt.d2
+    public void b(int i10) {
+        byte[] bArr = this.f49999a;
+        if (bArr.length < i10) {
+            byte[] copyOf = Arrays.copyOf(bArr, kotlin.ranges.d.d(i10, bArr.length * 2));
+            Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
+            this.f49999a = copyOf;
         }
     }
 
-    Locale[] a();
+    @Override // tt.d2
+    public int d() {
+        return this.f50000b;
+    }
 
-    char b(Locale locale);
+    public final void e(byte b10) {
+        d2.c(this, 0, 1, null);
+        byte[] bArr = this.f49999a;
+        int d10 = d();
+        this.f50000b = d10 + 1;
+        bArr[d10] = b10;
+    }
 
-    String c(Locale locale);
-
-    j d(Locale locale);
-
-    String e(Locale locale);
-
-    char f(Locale locale);
+    @Override // tt.d2
+    /* renamed from: f */
+    public byte[] a() {
+        byte[] copyOf = Arrays.copyOf(this.f49999a, d());
+        Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
+        return copyOf;
+    }
 }

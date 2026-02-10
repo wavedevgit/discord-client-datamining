@@ -1,20 +1,23 @@
 package sj;
 
-import ng.i0;
-import ng.q0;
-import uj.i;
+import hf.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public class a extends Exception {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final i f49839a;
+    /* renamed from: d  reason: collision with root package name */
+    private final int f48134d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final i0 f49840b;
+    public a(String str, int i10) {
+        super(q.g(str, "Provided message must not be empty."));
+        this.f48134d = i10;
+    }
 
-    public a(i iVar) {
-        i0 b10 = q0.b("common");
-        this.f49839a = iVar;
-        this.f49840b = b10;
+    public int a() {
+        return this.f48134d;
+    }
+
+    public a(String str, int i10, Throwable th2) {
+        super(q.g(str, "Provided message must not be empty."), th2);
+        this.f48134d = i10;
     }
 }

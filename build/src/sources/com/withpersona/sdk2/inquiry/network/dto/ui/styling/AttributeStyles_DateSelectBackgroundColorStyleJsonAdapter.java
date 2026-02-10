@@ -46,7 +46,7 @@ public final class AttributeStyles_DateSelectBackgroundColorStyleJsonAdapter ext
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
@@ -60,7 +60,7 @@ public final class AttributeStyles_DateSelectBackgroundColorStyleJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.DateSelectBackgroundColorStyle dateSelectBackgroundColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (dateSelectBackgroundColorStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableComplexElementColorAdapter.toJson(writer, dateSelectBackgroundColorStyle.getBase());
             writer.s();

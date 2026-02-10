@@ -4,17 +4,17 @@ package pg;
 public final class wc extends oc {
 
     /* renamed from: q  reason: collision with root package name */
-    static final oc f44165q = new wc(null, new Object[0], 0);
+    static final oc f42623q = new wc(null, new Object[0], 0);
 
     /* renamed from: o  reason: collision with root package name */
-    final transient Object[] f44166o;
+    final transient Object[] f42624o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient int f44167p;
+    private final transient int f42625p;
 
     private wc(Object obj, Object[] objArr, int i10) {
-        this.f44166o = objArr;
-        this.f44167p = i10;
+        this.f42624o = objArr;
+        this.f42625p = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -29,17 +29,17 @@ public final class wc extends oc {
 
     @Override // pg.oc
     final la a() {
-        return new vc(this.f44166o, 1, this.f44167p);
+        return new vc(this.f42624o, 1, this.f42625p);
     }
 
     @Override // pg.oc
     final pc d() {
-        return new tc(this, this.f44166o, 0, this.f44167p);
+        return new tc(this, this.f42624o, 0, this.f42625p);
     }
 
     @Override // pg.oc
     final pc e() {
-        return new uc(this, new vc(this.f44166o, 0, this.f44167p));
+        return new uc(this, new vc(this.f42624o, 0, this.f42625p));
     }
 
     /* JADX WARN: Removed duplicated region for block: B:11:0x001f A[RETURN] */
@@ -52,8 +52,8 @@ public final class wc extends oc {
     public final java.lang.Object get(java.lang.Object r5) {
         /*
             r4 = this;
-            java.lang.Object[] r0 = r4.f44166o
-            int r1 = r4.f44167p
+            java.lang.Object[] r0 = r4.f42624o
+            int r1 = r4.f42625p
             r2 = 0
             if (r5 != 0) goto L9
         L7:
@@ -80,6 +80,6 @@ public final class wc extends oc {
 
     @Override // java.util.Map
     public final int size() {
-        return this.f44167p;
+        return this.f42625p;
     }
 }

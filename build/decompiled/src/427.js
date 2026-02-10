@@ -109,10 +109,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var9 = var7 == var6;
                                 var6 = null;
                                 if (var9) {
-                                    _fun5944_ip = 149;
+                                    _fun5944_ip = 146;
                                     continue _fun5944
                                 }
-                            case 83:
+                            case 82:
                                 var11 = _closure3_slot0;
                                 var10 = var11.bind;
                                 var9 = {};
@@ -126,34 +126,34 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var12 = var12.thresholdRect;
                                 var9.thresholdRect = var12;
                                 var6 = var10.bind(var11)(var7, var9);
-                            case 149:
+                            case 146:
                                 var _closure4_slot0 = var6;
                                 var9 = var0.VirtualViewMode;
                                 var9 = var9.Visible;
                                 if (!(var3 === var9)) {
-                                    _fun5944_ip = 192;
+                                    _fun5944_ip = 189;
                                     continue _fun5944
                                 }
-                            case 169:
+                            case 166:
                                 var9 = _closure3_slot1;
                                 var8 = _closure1_slot7;
                                 var8 = var9.bind(var2)(var8);
                                 if (!(var7 != var6)) {
-                                    _fun5944_ip = 275;
+                                    _fun5944_ip = 271;
                                     continue _fun5944
                                 }
-                            case 186:
+                            case 183:
                                 var6 = var6.bind(var2)();
-                                _fun5944_ip = 275;
+                                _fun5944_ip = 271;
                                 continue _fun5944;
-                            case 192:
+                            case 189:
                                 var6 = var0.VirtualViewMode;
                                 var6 = var6.Prerender;
                                 if (!(var3 === var6)) {
-                                    _fun5944_ip = 224;
+                                    _fun5944_ip = 221;
                                     continue _fun5944
                                 }
-                            case 208:
+                            case 205:
                                 var7 = _closure1_slot4;
                                 var6 = function() { // Environment: var1
                                     _fun5946: for (var _fun5946_ip = 0;;) switch (_fun5946_ip) {
@@ -176,16 +176,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var6 = var7.bind(var2)(var6);
-                                _fun5944_ip = 275;
+                                _fun5944_ip = 271;
                                 continue _fun5944;
-                            case 224:
+                            case 221:
                                 var6 = var0.VirtualViewMode;
                                 var6 = var6.Hidden;
                                 if (!(var3 === var6)) {
-                                    _fun5944_ip = 277;
+                                    _fun5944_ip = 273;
                                     continue _fun5944
                                 }
-                            case 240:
+                            case 237:
                                 var5 = var5.nativeEvent;
                                 var5 = var5.targetRect;
                                 var5 = var5.height;
@@ -212,9 +212,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     }
                                 };
                                 var1 = var4.bind(var2)(var1);
-                            case 275:
+                            case 271:
                                 return var2;
-                            case 277:
+                            case 273:
                                 var1 = var0.Error;
                                 var0 = "Match: No case succesfully matched. Make exhaustive or add a wildcard case using '_'. Argument: ";
                                 var0 = var0 + var3;

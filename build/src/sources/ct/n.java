@@ -1,11 +1,18 @@
 package ct;
+
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface n {
-    Object a();
+final class n extends dt.a0 {
+    public n(CoroutineContext coroutineContext, Continuation continuation) {
+        super(coroutineContext, continuation);
+    }
 
-    b b();
-
-    m c();
-
-    String getName();
+    @Override // kotlinx.coroutines.b0
+    public boolean R(Throwable th2) {
+        if (th2 instanceof k) {
+            return true;
+        }
+        return L(th2);
+    }
 }

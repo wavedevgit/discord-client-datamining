@@ -1,21 +1,69 @@
 package gu;
 
-import kotlin.jvm.functions.Function0;
+import bu.p;
+import cu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c extends a {
+public class c extends d {
+
+    /* renamed from: p  reason: collision with root package name */
+    public static final p f26036p = new c("YEAR_OF_DISPLAY", 0, 1, 9999);
+    private static final long serialVersionUID = 1;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ Function0 f24812e;
+    private final transient char f26037e;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public c(String str, boolean z10, Function0 function0) {
-        super(str, z10);
-        this.f24812e = function0;
+    /* renamed from: i  reason: collision with root package name */
+    private final transient Integer f26038i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final transient Integer f26039o;
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public c(String str, char c10, int i10, int i11) {
+        super(str);
+        this.f26037e = c10;
+        this.f26038i = Integer.valueOf(i10);
+        this.f26039o = Integer.valueOf(i11);
     }
 
-    @Override // gu.a
-    public long f() {
-        this.f24812e.invoke();
-        return -1L;
+    private Object readResolve() {
+        return f26036p;
+    }
+
+    @Override // bu.p
+    public boolean A() {
+        return true;
+    }
+
+    @Override // bu.p
+    public boolean C() {
+        return false;
+    }
+
+    @Override // bu.e
+    protected boolean E() {
+        return true;
+    }
+
+    @Override // bu.p
+    /* renamed from: F */
+    public Integer f() {
+        return this.f26039o;
+    }
+
+    @Override // bu.p
+    /* renamed from: G */
+    public Integer B() {
+        return this.f26038i;
+    }
+
+    @Override // bu.e, bu.p
+    public char d() {
+        return this.f26037e;
+    }
+
+    @Override // bu.p
+    public final Class getType() {
+        return Integer.class;
     }
 }

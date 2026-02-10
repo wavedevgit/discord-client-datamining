@@ -51,12 +51,12 @@ public final class NextStep_Document_Pages_DocumentStartPageJsonAdapter extends 
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 ui2 = (NextStep.Ui) this.uiAdapter.fromJson(reader);
                 if (ui2 == null) {
-                    throw bn.c.x("uiStep", "uiStep", reader);
+                    throw dn.c.x("uiStep", "uiStep", reader);
                 }
             } else if (J == 1) {
                 componentNameMapping = (NextStep.Document.Pages.DocumentStartPage.ComponentNameMapping) this.nullableComponentNameMappingAdapter.fromJson(reader);
@@ -66,14 +66,14 @@ public final class NextStep_Document_Pages_DocumentStartPageJsonAdapter extends 
         if (ui2 != null) {
             return new NextStep.Document.Pages.DocumentStartPage(ui2, componentNameMapping);
         }
-        throw bn.c.o("uiStep", "uiStep", reader);
+        throw dn.c.o("uiStep", "uiStep", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.Document.Pages.DocumentStartPage documentStartPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStartPage != null) {
-            writer.k();
+            writer.i();
             writer.J("uiStep");
             this.uiAdapter.toJson(writer, documentStartPage.getUiStep());
             writer.J("componentNameMapping");

@@ -2,7 +2,6 @@ package com.discord.chat.bridge.automod;
 
 import androidx.recyclerview.widget.RecyclerView;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import gt.m;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -10,10 +9,11 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import kt.n2;
-import kt.p0;
-import kt.v1;
 import org.jetbrains.annotations.NotNull;
+import qt.m;
+import tt.n2;
+import tt.p0;
+import tt.v1;
 @m
 @Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b'\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 F2\u00020\u0001:\u0002EFB\u008f\u0001\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\b\u0012\u0010\u0013B\u0097\u0001\b\u0010\u0012\u0006\u0010\u0014\u001a\u00020\u0005\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016¢\u0006\u0004\b\u0012\u0010\u0017J\t\u0010*\u001a\u00020\u0003HÆ\u0003J\t\u0010+\u001a\u00020\u0005HÆ\u0003J\t\u0010,\u001a\u00020\u0003HÆ\u0003J\t\u0010-\u001a\u00020\u0005HÆ\u0003J\u000b\u0010.\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010/\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u00100\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u00101\u001a\u00020\fHÆ\u0003J\u000b\u00102\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u00103\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0010\u00104\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010&J\u000b\u00105\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u00106\u001a\u0004\u0018\u00010\u0003HÆ\u0003J \u0001\u00107\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u000b\u001a\u00020\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0003HÆ\u0001¢\u0006\u0002\u00108J\u0013\u00109\u001a\u00020\f2\b\u0010:\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010;\u001a\u00020\u0005HÖ\u0001J\t\u0010<\u001a\u00020\u0003HÖ\u0001J%\u0010=\u001a\u00020>2\u0006\u0010?\u001a\u00020\u00002\u0006\u0010@\u001a\u00020A2\u0006\u0010B\u001a\u00020CH\u0001¢\u0006\u0002\bDR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0019R\u0011\u0010\u0007\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001bR\u0013\u0010\b\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0019R\u0013\u0010\t\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u0019R\u0013\u0010\n\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u0019R\u0011\u0010\u000b\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\"R\u0013\u0010\r\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b#\u0010\u0019R\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b$\u0010\u0019R\u0015\u0010\u000f\u001a\u0004\u0018\u00010\u0005¢\u0006\n\n\u0002\u0010'\u001a\u0004\b%\u0010&R\u0013\u0010\u0010\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b(\u0010\u0019R\u0013\u0010\u0011\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b)\u0010\u0019¨\u0006G"}, d2 = {"Lcom/discord/chat/bridge/automod/AutoModerationNotification;", "", "header", "", "headerColor", "", "headerIconURL", "headerIconColor", "subtitleLeft", "subtitleRight", "body", "shouldShowActions", "", "enabledByUsername", "enabledByAvatarURL", "enabledByColor", "severity", "startTime", "<init>", "(Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getHeader", "()Ljava/lang/String;", "getHeaderColor", "()I", "getHeaderIconURL", "getHeaderIconColor", "getSubtitleLeft", "getSubtitleRight", "getBody", "getShouldShowActions", "()Z", "getEnabledByUsername", "getEnabledByAvatarURL", "getEnabledByColor", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getSeverity", "getStartTime", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "component13", "copy", "(Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/bridge/automod/AutoModerationNotification;", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -116,29 +116,29 @@ public final class AutoModerationNotification {
         compositeEncoder.y(serialDescriptor, 2, autoModerationNotification.headerIconURL);
         compositeEncoder.w(serialDescriptor, 3, autoModerationNotification.headerIconColor);
         if (compositeEncoder.z(serialDescriptor, 4) || autoModerationNotification.subtitleLeft != null) {
-            compositeEncoder.i(serialDescriptor, 4, n2.f35181a, autoModerationNotification.subtitleLeft);
+            compositeEncoder.o(serialDescriptor, 4, n2.f50032a, autoModerationNotification.subtitleLeft);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || autoModerationNotification.subtitleRight != null) {
-            compositeEncoder.i(serialDescriptor, 5, n2.f35181a, autoModerationNotification.subtitleRight);
+            compositeEncoder.o(serialDescriptor, 5, n2.f50032a, autoModerationNotification.subtitleRight);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || autoModerationNotification.body != null) {
-            compositeEncoder.i(serialDescriptor, 6, n2.f35181a, autoModerationNotification.body);
+            compositeEncoder.o(serialDescriptor, 6, n2.f50032a, autoModerationNotification.body);
         }
         compositeEncoder.x(serialDescriptor, 7, autoModerationNotification.shouldShowActions);
         if (compositeEncoder.z(serialDescriptor, 8) || autoModerationNotification.enabledByUsername != null) {
-            compositeEncoder.i(serialDescriptor, 8, n2.f35181a, autoModerationNotification.enabledByUsername);
+            compositeEncoder.o(serialDescriptor, 8, n2.f50032a, autoModerationNotification.enabledByUsername);
         }
         if (compositeEncoder.z(serialDescriptor, 9) || autoModerationNotification.enabledByAvatarURL != null) {
-            compositeEncoder.i(serialDescriptor, 9, n2.f35181a, autoModerationNotification.enabledByAvatarURL);
+            compositeEncoder.o(serialDescriptor, 9, n2.f50032a, autoModerationNotification.enabledByAvatarURL);
         }
         if (compositeEncoder.z(serialDescriptor, 10) || autoModerationNotification.enabledByColor != null) {
-            compositeEncoder.i(serialDescriptor, 10, p0.f35197a, autoModerationNotification.enabledByColor);
+            compositeEncoder.o(serialDescriptor, 10, p0.f50048a, autoModerationNotification.enabledByColor);
         }
         if (compositeEncoder.z(serialDescriptor, 11) || autoModerationNotification.severity != null) {
-            compositeEncoder.i(serialDescriptor, 11, n2.f35181a, autoModerationNotification.severity);
+            compositeEncoder.o(serialDescriptor, 11, n2.f50032a, autoModerationNotification.severity);
         }
         if (compositeEncoder.z(serialDescriptor, 12) || autoModerationNotification.startTime != null) {
-            compositeEncoder.i(serialDescriptor, 12, n2.f35181a, autoModerationNotification.startTime);
+            compositeEncoder.o(serialDescriptor, 12, n2.f50032a, autoModerationNotification.startTime);
         }
     }
 

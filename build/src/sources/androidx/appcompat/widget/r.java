@@ -9,16 +9,16 @@ import android.widget.RatingBar;
 public class r extends RatingBar {
 
     /* renamed from: d  reason: collision with root package name */
-    private final p f1927d;
+    private final p f1930d;
 
     public r(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.F);
+        this(context, attributeSet, f.a.G);
     }
 
     @Override // android.widget.RatingBar, android.widget.AbsSeekBar, android.widget.ProgressBar, android.view.View
     protected synchronized void onMeasure(int i10, int i11) {
         super.onMeasure(i10, i11);
-        Bitmap b10 = this.f1927d.b();
+        Bitmap b10 = this.f1930d.b();
         if (b10 != null) {
             setMeasuredDimension(View.resolveSizeAndState(b10.getWidth() * getNumStars(), i10, 0), getMeasuredHeight());
         }
@@ -28,7 +28,7 @@ public class r extends RatingBar {
         super(context, attributeSet, i10);
         r0.a(this, getContext());
         p pVar = new p(this);
-        this.f1927d = pVar;
+        this.f1930d = pVar;
         pVar.c(attributeSet, i10);
     }
 }

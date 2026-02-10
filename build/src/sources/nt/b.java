@@ -1,38 +1,15 @@
 package nt;
 
-import gt.o;
 import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.reflect.KClass;
-import kotlinx.serialization.DeserializationStrategy;
-import kotlinx.serialization.KSerializer;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
-    public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
-        this();
-    }
+public final class b implements e {
 
-    public static /* synthetic */ KSerializer c(b bVar, KClass kClass, List list, int i10, Object obj) {
-        if (obj == null) {
-            if ((i10 & 2) != 0) {
-                list = CollectionsKt.l();
-            }
-            return bVar.b(kClass, list);
-        }
-        throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: getContextual");
-    }
+    /* renamed from: a  reason: collision with root package name */
+    private final List f38359a;
 
-    public abstract void a(d dVar);
-
-    public abstract KSerializer b(KClass kClass, List list);
-
-    public abstract boolean d();
-
-    public abstract o e(KClass kClass, Object obj);
-
-    public abstract DeserializationStrategy f(KClass kClass, String str);
-
-    private b() {
+    public b(List formatters) {
+        Intrinsics.checkNotNullParameter(formatters, "formatters");
+        this.f38359a = formatters;
     }
 }

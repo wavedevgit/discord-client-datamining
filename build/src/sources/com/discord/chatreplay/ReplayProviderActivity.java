@@ -28,8 +28,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.ranges.IntRange;
 import kotlinx.serialization.json.Json;
-import kt.f;
 import org.jetbrains.annotations.NotNull;
+import tt.f;
 @Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u0000 \u00132\u00020\u0001:\u0001\u0013B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\u0012\u0010\u0004\u001a\u00020\u00052\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007H\u0015J\u0010\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0003J\u000e\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000e0\rH\u0003J\u0018\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u000b2\u0006\u0010\u0012\u001a\u00020\tH\u0002¨\u0006\u0014"}, d2 = {"Lcom/discord/chatreplay/ReplayProviderActivity;", "Landroid/app/Activity;", "<init>", "()V", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "getReplayFile", "Ljava/io/File;", "replayName", "", "getReplaysList", "", "Lcom/discord/chatreplay/Replay;", "grantAccessToFile", "Landroid/net/Uri;", "toPackage", "file", "Companion", "chat_replay_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nReplayProviderActivity.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ReplayProviderActivity.kt\ncom/discord/chatreplay/ReplayProviderActivity\n+ 2 SerialFormat.kt\nkotlinx/serialization/SerialFormatKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,116:1\n113#2:117\n1#3:118\n1563#4:119\n1634#4,3:120\n*S KotlinDebug\n*F\n+ 1 ReplayProviderActivity.kt\ncom/discord/chatreplay/ReplayProviderActivity\n*L\n32#1:117\n63#1:119\n63#1:120,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -52,10 +52,10 @@ public final class ReplayProviderActivity extends Activity {
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit requestReplayList$lambda$0(Activity activity, Unit unit, Throwable th2) {
             if (th2 == null) {
-                return Unit.f31765a;
+                return Unit.f31987a;
             }
             Toast.makeText(activity, "Unable to fetch replay list, activity not available.", 1).show();
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
 
         @NotNull
@@ -71,7 +71,7 @@ public final class ReplayProviderActivity extends Activity {
             Intrinsics.checkNotNullParameter(intent, "intent");
             String stringExtra = intent.getStringExtra(ReplayProviderActivity.INTENT_EXTRA_REPLAYS_LIST);
             Intrinsics.checkNotNull(stringExtra);
-            Json.a aVar = Json.f34877d;
+            Json.a aVar = Json.f35099d;
             aVar.a();
             return (List) aVar.b(new f(Replay.Companion.serializer()), stringExtra);
         }
@@ -153,7 +153,7 @@ public final class ReplayProviderActivity extends Activity {
         if (Intrinsics.areEqual(getIntent().getAction(), "com.discord.GET_REPLAY_LIST")) {
             List<Replay> replaysList = getReplaysList();
             Intent intent = new Intent();
-            Json.a aVar = Json.f34877d;
+            Json.a aVar = Json.f35099d;
             aVar.a();
             intent.putExtra(INTENT_EXTRA_REPLAYS_LIST, aVar.c(new f(Replay.Companion.serializer()), replaysList));
             setResult(-1, intent);
@@ -170,7 +170,7 @@ public final class ReplayProviderActivity extends Activity {
             Uri grantAccessToFile = grantAccessToFile(queryParameter2, getReplayFile(queryParameter));
             Intent intent2 = new Intent();
             intent2.putExtra(INTENT_EXTRA_GRANTED_URI, grantAccessToFile);
-            Unit unit = Unit.f31765a;
+            Unit unit = Unit.f31987a;
             setResult(-1, intent2);
             finish();
         }

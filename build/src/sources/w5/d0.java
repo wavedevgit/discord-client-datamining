@@ -5,7 +5,7 @@ import x5.c;
 abstract class d0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f53259a = c.a.a("nm", "p", "s", "r", "hd");
+    private static final c.a f52288a = c.a.a("nm", "p", "s", "r", "hd");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static t5.l a(x5.c cVar, l5.i iVar) {
@@ -15,7 +15,7 @@ abstract class d0 {
         s5.b bVar = null;
         boolean z10 = false;
         while (cVar.hasNext()) {
-            int p10 = cVar.p(f53259a);
+            int p10 = cVar.p(f52288a);
             if (p10 != 0) {
                 if (p10 != 1) {
                     if (p10 != 2) {
@@ -23,7 +23,7 @@ abstract class d0 {
                             if (p10 != 4) {
                                 cVar.T();
                             } else {
-                                z10 = cVar.g();
+                                z10 = cVar.h();
                             }
                         } else {
                             bVar = d.e(cVar, iVar);
@@ -35,7 +35,7 @@ abstract class d0 {
                     oVar = a.b(cVar, iVar);
                 }
             } else {
-                str = cVar.b1();
+                str = cVar.g1();
             }
         }
         return new t5.l(str, oVar, fVar, bVar, z10);

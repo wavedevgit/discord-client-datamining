@@ -1,18 +1,18 @@
 package rg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class j8 implements zi.d {
+final class j8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j8 f48315a = new j8();
+    static final j8 f46769a = new j8();
 
     static {
-        c.b a10 = zi.c.a("sampledSegmentations");
+        c.b a10 = bj.c.a("sampledSegmentations");
         v1 v1Var = new v1();
         v1Var.a(1);
         a10.b(v1Var.b()).a();
-        c.b a11 = zi.c.a("actualCount");
+        c.b a11 = bj.c.a("actualCount");
         v1 v1Var2 = new v1();
         v1Var2.a(2);
         a11.b(v1Var2.b()).a();
@@ -21,10 +21,10 @@ final class j8 implements zi.d {
     private j8() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

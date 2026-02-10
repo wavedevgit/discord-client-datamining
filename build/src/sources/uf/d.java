@@ -3,10 +3,10 @@ package uf;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static ClassLoader f51556a;
+    private static ClassLoader f50735a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static Thread f51557b;
+    private static Thread f50736b;
 
     /* JADX WARN: Code restructure failed: missing block: B:46:0x00af, code lost:
         if (r2 == null) goto L13;

@@ -1,7 +1,19 @@
 package us;
+
+import java.lang.reflect.Type;
+import kotlin.jvm.functions.Function0;
+import us.w0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class m0 {
-    public static final ThreadLocal a(e0 e0Var) {
-        return new ThreadLocal();
+public class m0 implements Function0 {
+
+    /* renamed from: d  reason: collision with root package name */
+    public static final m0 f51095d = new m0();
+
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        Type c02;
+        c02 = w0.a.c0();
+        return c02;
     }
 }

@@ -21,15 +21,15 @@ public abstract class b {
     public static final void a(g db2) {
         Intrinsics.checkNotNullParameter(db2, "db");
         List c10 = CollectionsKt.c();
-        Cursor C1 = db2.C1("SELECT name FROM sqlite_master WHERE type = 'trigger'");
-        while (C1.moveToNext()) {
+        Cursor H1 = db2.H1("SELECT name FROM sqlite_master WHERE type = 'trigger'");
+        while (H1.moveToNext()) {
             try {
-                c10.add(C1.getString(0));
+                c10.add(H1.getString(0));
             } finally {
             }
         }
-        Unit unit = Unit.f31765a;
-        cs.c.a(C1, null);
+        Unit unit = Unit.f31987a;
+        ls.c.a(H1, null);
         for (String triggerName : CollectionsKt.a(c10)) {
             Intrinsics.checkNotNullExpressionValue(triggerName, "triggerName");
             if (StringsKt.P(triggerName, "room_fts_content_sync_", false, 2, null)) {
@@ -69,7 +69,7 @@ public abstract class b {
             if (channel.read(allocate) == 4) {
                 allocate.rewind();
                 int i10 = allocate.getInt();
-                cs.c.a(channel, null);
+                ls.c.a(channel, null);
                 return i10;
             }
             throw new IOException("Bad database header, unable to read 4 bytes at offset 60");
@@ -77,7 +77,7 @@ public abstract class b {
             try {
                 throw th2;
             } catch (Throwable th3) {
-                cs.c.a(channel, th2);
+                ls.c.a(channel, th2);
                 throw th3;
             }
         }

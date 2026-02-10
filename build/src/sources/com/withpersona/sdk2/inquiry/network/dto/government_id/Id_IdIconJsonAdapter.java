@@ -45,7 +45,7 @@ public final class Id_IdIconJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 idLocalIcon = (Id.IdLocalIcon) this.nullableIdLocalIconAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class Id_IdIconJsonAdapter extends h {
     public void toJson(@NotNull t writer, Id.IdIcon idIcon) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (idIcon != null) {
-            writer.k();
+            writer.i();
             writer.J("iconFallback");
             this.nullableIdLocalIconAdapter.toJson(writer, idIcon.getIconFallback());
             writer.s();

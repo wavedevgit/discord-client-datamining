@@ -7,7 +7,7 @@ import wa.y;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f35797a = new d();
+    public static final d f35694a = new d();
 
     private d() {
     }

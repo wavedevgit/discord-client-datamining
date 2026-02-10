@@ -1,93 +1,53 @@
 package gn;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.util.SparseArray;
-import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g implements Parcelable {
-    @NotNull
-    public static final a CREATOR = new a(null);
+public interface g {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f24451d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final SparseArray f24452e;
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f25810a = a.f25811a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable.Creator {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    public static final class a {
 
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public g createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            String readString = parcel.readString();
-            Intrinsics.checkNotNull(readString);
-            Intrinsics.checkNotNullExpressionValue(readString, "parcel.readString()!!");
-            SparseArray readSparseArray = parcel.readSparseArray(g.class.getClassLoader());
-            Intrinsics.checkNotNull(readSparseArray);
-            Intrinsics.checkNotNullExpressionValue(readSparseArray, "parcel.readSparseArray<P…class.java.classLoader)!!");
-            return new g(readString, readSparseArray);
-        }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public g[] newArray(int i10) {
-            return new g[i10];
-        }
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ a f25811a = new a();
 
         private a() {
         }
-    }
 
-    public g(String key, SparseArray viewState) {
-        Intrinsics.checkNotNullParameter(key, "key");
-        Intrinsics.checkNotNullParameter(viewState, "viewState");
-        this.f24451d = key;
-        this.f24452e = viewState;
-    }
-
-    public final SparseArray a() {
-        return this.f24452e;
-    }
-
-    @Override // android.os.Parcelable
-    public int describeContents() {
-        return 0;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+        public static /* synthetic */ String b(a aVar, Object obj, String str, int i10, Object obj2) {
+            if ((i10 & 2) != 0) {
+                str = "";
+            }
+            return aVar.a(obj, str);
         }
-        if (!(obj instanceof g)) {
-            return false;
+
+        public final String a(Object value, String name) {
+            g gVar;
+            String stringPlus;
+            Intrinsics.checkNotNullParameter(value, "value");
+            Intrinsics.checkNotNullParameter(name, "name");
+            String str = null;
+            if (value instanceof g) {
+                gVar = (g) value;
+            } else {
+                gVar = null;
+            }
+            if (gVar != null) {
+                str = gVar.c();
+            }
+            if (str == null) {
+                str = value.getClass().getName();
+            }
+            if (name.length() == 0) {
+                stringPlus = "";
+            } else {
+                stringPlus = Intrinsics.stringPlus("+", name);
+            }
+            return Intrinsics.stringPlus(str, stringPlus);
         }
-        g gVar = (g) obj;
-        if (Intrinsics.areEqual(this.f24451d, gVar.f24451d) && Intrinsics.areEqual(this.f24452e, gVar.f24452e)) {
-            return true;
-        }
-        return false;
     }
 
-    public int hashCode() {
-        return (this.f24451d.hashCode() * 31) + this.f24452e.hashCode();
-    }
-
-    public String toString() {
-        return "ViewStateFrame(key=" + this.f24451d + ", viewState=" + this.f24452e + ')';
-    }
-
-    @Override // android.os.Parcelable
-    public void writeToParcel(Parcel parcel, int i10) {
-        Intrinsics.checkNotNullParameter(parcel, "parcel");
-        parcel.writeString(this.f24451d);
-        parcel.writeSparseArray(this.f24452e);
-    }
+    String c();
 }

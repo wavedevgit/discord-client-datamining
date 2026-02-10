@@ -7,25 +7,25 @@ import me.c0;
 public final class c implements DataSource.Factory {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f13440a;
+    private final Context f14017a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c0 f13441b;
+    private final c0 f14018b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final DataSource.Factory f13442c;
+    private final DataSource.Factory f14019c;
 
     public c(Context context, c0 c0Var, DataSource.Factory factory) {
-        this.f13440a = context.getApplicationContext();
-        this.f13441b = c0Var;
-        this.f13442c = factory;
+        this.f14017a = context.getApplicationContext();
+        this.f14018b = c0Var;
+        this.f14019c = factory;
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource.Factory
     /* renamed from: a */
     public b createDataSource() {
-        b bVar = new b(this.f13440a, this.f13442c.createDataSource());
-        c0 c0Var = this.f13441b;
+        b bVar = new b(this.f14017a, this.f14019c.createDataSource());
+        c0 c0Var = this.f14018b;
         if (c0Var != null) {
             bVar.i(c0Var);
         }

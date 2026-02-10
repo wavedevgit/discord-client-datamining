@@ -8,7 +8,7 @@ import androidx.work.c;
 public final class ExtractionWorker extends Worker {
 
     /* renamed from: q  reason: collision with root package name */
-    u1 f15784q;
+    u1 f16533q;
 
     public ExtractionWorker(Context context, WorkerParameters workerParameters) {
         super(context, workerParameters);
@@ -17,11 +17,11 @@ public final class ExtractionWorker extends Worker {
 
     @Override // androidx.work.Worker
     public final c.a p() {
-        return this.f15784q.b(f());
+        return this.f16533q.b(f());
     }
 
     @Override // androidx.work.Worker
     public final k4.g q() {
-        return this.f15784q.a(f());
+        return this.f16533q.a(f());
     }
 }

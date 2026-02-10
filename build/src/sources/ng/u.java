@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public abstract class u extends x0 implements ExecutorService, AutoCloseable {
     @Override // java.util.concurrent.ExecutorService
     public final boolean awaitTermination(long j10, TimeUnit timeUnit) {
-        return k().awaitTermination(j10, timeUnit);
+        return i().awaitTermination(j10, timeUnit);
     }
 
     @Override // java.lang.AutoCloseable
@@ -18,60 +18,60 @@ public abstract class u extends x0 implements ExecutorService, AutoCloseable {
         c0.c.a(this);
     }
 
+    protected abstract ExecutorService i();
+
     @Override // java.util.concurrent.ExecutorService
     public final List invokeAll(Collection collection) {
-        return k().invokeAll(collection);
+        return i().invokeAll(collection);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public final Object invokeAny(Collection collection) {
-        return k().invokeAny(collection);
+        return i().invokeAny(collection);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public final boolean isShutdown() {
-        return k().isShutdown();
+        return i().isShutdown();
     }
 
     @Override // java.util.concurrent.ExecutorService
     public final boolean isTerminated() {
-        return k().isTerminated();
+        return i().isTerminated();
     }
-
-    protected abstract ExecutorService k();
 
     @Override // java.util.concurrent.ExecutorService
     public final void shutdown() {
-        k().shutdown();
+        i().shutdown();
     }
 
     @Override // java.util.concurrent.ExecutorService
     public final List shutdownNow() {
-        return k().shutdownNow();
+        return i().shutdownNow();
     }
 
     @Override // java.util.concurrent.ExecutorService
     public final Future submit(Runnable runnable) {
-        return k().submit(runnable);
+        return i().submit(runnable);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public final List invokeAll(Collection collection, long j10, TimeUnit timeUnit) {
-        return k().invokeAll(collection, j10, timeUnit);
+        return i().invokeAll(collection, j10, timeUnit);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public final Object invokeAny(Collection collection, long j10, TimeUnit timeUnit) {
-        return k().invokeAny(collection, j10, timeUnit);
+        return i().invokeAny(collection, j10, timeUnit);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public final Future submit(Runnable runnable, Object obj) {
-        return k().submit(runnable, obj);
+        return i().submit(runnable, obj);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public final Future submit(Callable callable) {
-        return k().submit(callable);
+        return i().submit(callable);
     }
 }

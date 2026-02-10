@@ -13,7 +13,7 @@ public interface CancellableContinuation extends Continuation {
                 if ((i10 & 1) != 0) {
                     th2 = null;
                 }
-                return cancellableContinuation.h(th2);
+                return cancellableContinuation.g(th2);
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: cancel");
         }
@@ -29,7 +29,7 @@ public interface CancellableContinuation extends Continuation {
 
     void f(CoroutineDispatcher coroutineDispatcher, Throwable th2);
 
-    boolean h(Throwable th2);
+    boolean g(Throwable th2);
 
     boolean isCompleted();
 

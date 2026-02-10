@@ -9,18 +9,18 @@ import java.io.IOException;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f6306a;
+    private final File f6410a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final File f6307b;
+    private final File f6411b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final File f6308c;
+    private final File f6412c;
 
     public a(File file) {
-        this.f6306a = file;
-        this.f6307b = new File(file.getPath() + ".new");
-        this.f6308c = new File(file.getPath() + ".bak");
+        this.f6410a = file;
+        this.f6411b = new File(file.getPath() + ".new");
+        this.f6412c = new File(file.getPath() + ".bak");
     }
 
     private static void d(File file, File file2) {
@@ -51,8 +51,8 @@ public class a {
             } catch (IOException e10) {
                 Log.e("AtomicFile", "Failed to close file output stream", e10);
             }
-            if (!this.f6307b.delete()) {
-                Log.e("AtomicFile", "Failed to delete new file " + this.f6307b);
+            if (!this.f6411b.delete()) {
+                Log.e("AtomicFile", "Failed to delete new file " + this.f6411b);
             }
         }
     }
@@ -69,28 +69,28 @@ public class a {
         } catch (IOException e10) {
             Log.e("AtomicFile", "Failed to close file output stream", e10);
         }
-        d(this.f6307b, this.f6306a);
+        d(this.f6411b, this.f6410a);
     }
 
     public File c() {
-        return this.f6306a;
+        return this.f6410a;
     }
 
     public FileOutputStream e() {
-        if (this.f6308c.exists()) {
-            d(this.f6308c, this.f6306a);
+        if (this.f6412c.exists()) {
+            d(this.f6412c, this.f6410a);
         }
         try {
-            return new FileOutputStream(this.f6307b);
+            return new FileOutputStream(this.f6411b);
         } catch (FileNotFoundException unused) {
-            if (this.f6307b.getParentFile().mkdirs()) {
+            if (this.f6411b.getParentFile().mkdirs()) {
                 try {
-                    return new FileOutputStream(this.f6307b);
+                    return new FileOutputStream(this.f6411b);
                 } catch (FileNotFoundException e10) {
-                    throw new IOException("Failed to create new file " + this.f6307b, e10);
+                    throw new IOException("Failed to create new file " + this.f6411b, e10);
                 }
             }
-            throw new IOException("Failed to create directory for " + this.f6307b);
+            throw new IOException("Failed to create directory for " + this.f6411b);
         }
     }
 }

@@ -23,10 +23,10 @@ public final class SmartSet<T> extends g {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private Object f34591d;
+    private Object f34813d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f34592e;
+    private int f34814e;
 
     @SourceDebugExtension({"SMAP\nSmartSet.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SmartSet.kt\norg/jetbrains/kotlin/utils/SmartSet$Companion\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,110:1\n1#2:111\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -56,11 +56,11 @@ public final class SmartSet<T> extends g {
     private static final class a implements Iterator, KMutableIterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Iterator f34593d;
+        private final Iterator f34815d;
 
         public a(Object[] array) {
             Intrinsics.checkNotNullParameter(array, "array");
-            this.f34593d = ArrayIteratorKt.iterator(array);
+            this.f34815d = ArrayIteratorKt.iterator(array);
         }
 
         @Override // java.util.Iterator
@@ -71,12 +71,12 @@ public final class SmartSet<T> extends g {
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            return this.f34593d.hasNext();
+            return this.f34815d.hasNext();
         }
 
         @Override // java.util.Iterator
         public Object next() {
-            return this.f34593d.next();
+            return this.f34815d.next();
         }
     }
 
@@ -84,13 +84,13 @@ public final class SmartSet<T> extends g {
     private static final class b implements Iterator, KMutableIterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Object f34594d;
+        private final Object f34816d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f34595e = true;
+        private boolean f34817e = true;
 
         public b(Object obj) {
-            this.f34594d = obj;
+            this.f34816d = obj;
         }
 
         @Override // java.util.Iterator
@@ -101,14 +101,14 @@ public final class SmartSet<T> extends g {
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            return this.f34595e;
+            return this.f34817e;
         }
 
         @Override // java.util.Iterator
         public Object next() {
-            if (this.f34595e) {
-                this.f34595e = false;
-                return this.f34594d;
+            if (this.f34817e) {
+                this.f34817e = false;
+                return this.f34816d;
             }
             throw new NoSuchElementException();
         }
@@ -129,14 +129,14 @@ public final class SmartSet<T> extends g {
     public boolean add(T t10) {
         Object[] objArr;
         if (size() == 0) {
-            this.f34591d = t10;
+            this.f34813d = t10;
         } else if (size() == 1) {
-            if (Intrinsics.areEqual(this.f34591d, t10)) {
+            if (Intrinsics.areEqual(this.f34813d, t10)) {
                 return false;
             }
-            this.f34591d = new Object[]{this.f34591d, t10};
+            this.f34813d = new Object[]{this.f34813d, t10};
         } else if (size() < 5) {
-            Object obj = this.f34591d;
+            Object obj = this.f34813d;
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlin.Array<T of org.jetbrains.kotlin.utils.SmartSet>");
             Object[] objArr2 = (Object[]) obj;
             if (i.N(objArr2, t10)) {
@@ -152,9 +152,9 @@ public final class SmartSet<T> extends g {
                 copyOf[copyOf.length - 1] = t10;
                 objArr = copyOf;
             }
-            this.f34591d = objArr;
+            this.f34813d = objArr;
         } else {
-            Object obj2 = this.f34591d;
+            Object obj2 = this.f34813d;
             Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.collections.MutableSet<T of org.jetbrains.kotlin.utils.SmartSet>");
             if (!TypeIntrinsics.asMutableSet(obj2).add(t10)) {
                 return false;
@@ -166,7 +166,7 @@ public final class SmartSet<T> extends g {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public void clear() {
-        this.f34591d = null;
+        this.f34813d = null;
         setSize(0);
     }
 
@@ -176,21 +176,21 @@ public final class SmartSet<T> extends g {
             return false;
         }
         if (size() == 1) {
-            return Intrinsics.areEqual(this.f34591d, obj);
+            return Intrinsics.areEqual(this.f34813d, obj);
         }
         if (size() < 5) {
-            Object obj2 = this.f34591d;
+            Object obj2 = this.f34813d;
             Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.Array<T of org.jetbrains.kotlin.utils.SmartSet>");
             return i.N((Object[]) obj2, obj);
         }
-        Object obj3 = this.f34591d;
+        Object obj3 = this.f34813d;
         Intrinsics.checkNotNull(obj3, "null cannot be cast to non-null type kotlin.collections.Set<T of org.jetbrains.kotlin.utils.SmartSet>");
         return ((Set) obj3).contains(obj);
     }
 
     @Override // kotlin.collections.g
     public int getSize() {
-        return this.f34592e;
+        return this.f34814e;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
@@ -200,20 +200,20 @@ public final class SmartSet<T> extends g {
             return Collections.EMPTY_SET.iterator();
         }
         if (size() == 1) {
-            return new b(this.f34591d);
+            return new b(this.f34813d);
         }
         if (size() < 5) {
-            Object obj = this.f34591d;
+            Object obj = this.f34813d;
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlin.Array<T of org.jetbrains.kotlin.utils.SmartSet>");
             return new a((Object[]) obj);
         }
-        Object obj2 = this.f34591d;
+        Object obj2 = this.f34813d;
         Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.collections.MutableSet<T of org.jetbrains.kotlin.utils.SmartSet>");
         return TypeIntrinsics.asMutableSet(obj2).iterator();
     }
 
     public void setSize(int i10) {
-        this.f34592e = i10;
+        this.f34814e = i10;
     }
 
     private SmartSet() {

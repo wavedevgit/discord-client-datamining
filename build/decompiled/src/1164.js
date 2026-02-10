@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.getClient;
                 var11 = var2.bind(var4)();
                 if (!var11) {
-                    _fun12705_ip = 1073;
+                    _fun12705_ip = 1078;
                     continue _fun12705
                 }
             case 43:
@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.getCurrentReactNativeTracingIntegration;
                 var15 = var2.bind(var4)();
                 if (var15) {
-                    _fun12705_ip = 149;
+                    _fun12705_ip = 150;
                     continue _fun12705
                 }
             case 76:
@@ -63,19 +63,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = '] Tracing integration is not available. Can not start user interaction span.';
                 var2 = var9.bind(var8)(var7, var2);
                 var2 = var4.bind(var5)(var2);
-                _fun12705_ip = 1073;
+                _fun12705_ip = 1078;
                 continue _fun12705;
-            case 149:
+            case 150:
                 var2 = var11.getOptions;
                 var2 = var2.bind(var11)();
                 var8 = var3.elementId;
                 var10 = var3.op;
                 var2 = var2.enableUserInteractionTracing;
                 if (var2) {
-                    _fun12705_ip = 252;
+                    _fun12705_ip = 254;
                     continue _fun12705
                 }
-            case 179:
+            case 180:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 var2 = var2[var6];
@@ -90,14 +90,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = '] User Interaction Tracing is disabled.';
                 var2 = var9.bind(var7)(var5, var2);
                 var2 = var3.bind(var4)(var2);
-                _fun12705_ip = 1073;
+                _fun12705_ip = 1078;
                 continue _fun12705;
-            case 252:
+            case 254:
                 if (var8) {
-                    _fun12705_ip = 328;
+                    _fun12705_ip = 331;
                     continue _fun12705
                 }
-            case 255:
+            case 257:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 var2 = var2[var6];
@@ -112,9 +112,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = '] User Interaction Tracing can not create transaction with undefined elementId.';
                 var2 = var9.bind(var7)(var5, var2);
                 var2 = var3.bind(var4)(var2);
-                _fun12705_ip = 1073;
+                _fun12705_ip = 1078;
                 continue _fun12705;
-            case 328:
+            case 331:
                 var2 = var15.state;
                 var2 = var2.currentRoute;
                 var4 = _closure1_slot0;
@@ -122,10 +122,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3[var6];
                 var3 = var4.bind(var0)(var3);
                 if (var2) {
-                    _fun12705_ip = 415;
+                    _fun12705_ip = 419;
                     continue _fun12705
                 }
-            case 359:
+            case 362:
                 var5 = var3.debug;
                 var4 = var5.log;
                 var2 = global;
@@ -136,17 +136,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = '] User Interaction Tracing can not create transaction without a current route.';
                 var2 = var12.bind(var9)(var7, var2);
                 var2 = var4.bind(var5)(var2);
-                _fun12705_ip = 1073;
+                _fun12705_ip = 1078;
                 continue _fun12705;
-            case 415:
+            case 419:
                 var2 = var3.getActiveSpan;
                 var5 = var2.bind(var3)();
                 var2 = var5;
                 if (!var2) {
-                    _fun12705_ip = 465;
+                    _fun12705_ip = 469;
                     continue _fun12705
                 }
-            case 431:
+            case 435:
                 var4 = _closure1_slot0;
                 var7 = _closure1_slot1;
                 var3 = 2;
@@ -155,17 +155,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.isSentryInteractionSpan;
                 var3 = var3.bind(var4)(var5);
                 var2 = !var3;
-            case 465:
+            case 469:
                 if (!var5) {
-                    _fun12705_ip = 474;
+                    _fun12705_ip = 478;
                     continue _fun12705
                 }
-            case 468:
+            case 472:
                 if (var2) {
-                    _fun12705_ip = 967;
+                    _fun12705_ip = 972;
                     continue _fun12705
                 }
-            case 474:
+            case 478:
                 var2 = var15.state;
                 var7 = var2.currentRoute;
                 var3 = global;
@@ -175,10 +175,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var14 = '.';
                 var13 = var4.bind(var2)(var7, var14, var8);
                 if (!var5) {
-                    _fun12705_ip = 705;
+                    _fun12705_ip = 709;
                     continue _fun12705
                 }
-            case 519:
+            case 523:
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 var2 = var2[var6];
@@ -187,10 +187,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.bind(var4)(var5);
                 var2 = var2.description;
                 if (!(var2 === var13)) {
-                    _fun12705_ip = 705;
+                    _fun12705_ip = 709;
                     continue _fun12705
                 }
-            case 559:
+            case 563:
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 var2 = var2[var6];
@@ -199,10 +199,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.bind(var4)(var5);
                 var2 = var2.op;
                 if (!(var2 === var10)) {
-                    _fun12705_ip = 705;
+                    _fun12705_ip = 709;
                     continue _fun12705
                 }
-            case 596:
+            case 600:
                 var8 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 var4 = var2[var6];
@@ -224,9 +224,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var22 = var10;
                 var2 = var25[var17](var24, var23, var22, var21, var20, var19, var18);
                 var2 = var4.bind(var7)(var2);
-                _fun12705_ip = 1073;
+                _fun12705_ip = 1078;
                 continue _fun12705;
-            case 705:
+            case 709:
                 var7 = _closure1_slot0;
                 var4 = _closure1_slot1;
                 var2 = var4[var6];
@@ -283,7 +283,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var25[var12](var24, var23, var22, var21, var20, var19, var18);
                 var3 = var4.bind(var7)(var3);
                 return var2;
-            case 967:
+            case 972:
                 var4 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var2 = var1[var6];
@@ -306,7 +306,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var22 = var10;
                 var1 = var25[var8](var24, var23, var22, var21, var20, var19, var18);
                 var1 = var2.bind(var3)(var1);
-            case 1073:
+            case 1078:
                 return var0;
         }
     };

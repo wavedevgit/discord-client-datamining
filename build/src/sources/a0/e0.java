@@ -37,7 +37,7 @@ public interface e0 extends x.i, x1.b {
 
     @Override // x.i
     default x.o b() {
-        return m();
+        return l();
     }
 
     u1 c();
@@ -50,11 +50,11 @@ public interface e0 extends x.i, x1.b {
 
     void j(Collection collection);
 
-    void l(Collection collection);
+    void k(Collection collection);
 
-    d0 m();
+    d0 l();
 
-    default boolean o() {
+    default boolean n() {
         if (b().c() == 0) {
             return true;
         }
@@ -65,10 +65,10 @@ public interface e0 extends x.i, x1.b {
         return true;
     }
 
-    default void i(boolean z10) {
+    default void h(boolean z10) {
     }
 
-    default void p(w wVar) {
+    default void o(w wVar) {
     }
 
     default void r(boolean z10) {

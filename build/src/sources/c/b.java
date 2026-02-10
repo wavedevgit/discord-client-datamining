@@ -10,13 +10,13 @@ public class b implements Parcelable {
     public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    final boolean f7239d = false;
+    final boolean f7921d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    final Handler f7240e = null;
+    final Handler f7922e = null;
 
     /* renamed from: i  reason: collision with root package name */
-    c.a f7241i;
+    c.a f7923i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Parcelable.Creator {
@@ -38,14 +38,14 @@ public class b implements Parcelable {
 
     /* renamed from: c.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    class BinderC0143b extends a.AbstractBinderC0141a {
-        BinderC0143b() {
+    class BinderC0126b extends a.AbstractBinderC0124a {
+        BinderC0126b() {
         }
 
         @Override // c.a
-        public void d0(int i10, Bundle bundle) {
+        public void f0(int i10, Bundle bundle) {
             b bVar = b.this;
-            Handler handler = bVar.f7240e;
+            Handler handler = bVar.f7922e;
             if (handler != null) {
                 handler.post(new c(i10, bundle));
             } else {
@@ -58,24 +58,24 @@ public class b implements Parcelable {
     class c implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final int f7243d;
+        final int f7925d;
 
         /* renamed from: e  reason: collision with root package name */
-        final Bundle f7244e;
+        final Bundle f7926e;
 
         c(int i10, Bundle bundle) {
-            this.f7243d = i10;
-            this.f7244e = bundle;
+            this.f7925d = i10;
+            this.f7926e = bundle;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            b.this.a(this.f7243d, this.f7244e);
+            b.this.a(this.f7925d, this.f7926e);
         }
     }
 
     b(Parcel parcel) {
-        this.f7241i = a.AbstractBinderC0141a.e(parcel.readStrongBinder());
+        this.f7923i = a.AbstractBinderC0124a.e(parcel.readStrongBinder());
     }
 
     @Override // android.os.Parcelable
@@ -87,10 +87,10 @@ public class b implements Parcelable {
     public void writeToParcel(Parcel parcel, int i10) {
         synchronized (this) {
             try {
-                if (this.f7241i == null) {
-                    this.f7241i = new BinderC0143b();
+                if (this.f7923i == null) {
+                    this.f7923i = new BinderC0126b();
                 }
-                parcel.writeStrongBinder(this.f7241i.asBinder());
+                parcel.writeStrongBinder(this.f7923i.asBinder());
             } catch (Throwable th2) {
                 throw th2;
             }

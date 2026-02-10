@@ -1,11 +1,11 @@
 package com.withpersona.sdk2.inquiry.ui.network;
 
-import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.ui.network.TransitionInquiryRequest;
+import dn.c;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class TransitionInquiryRequest_DataJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19979a;
+    private final m.b f20859a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19980b;
+    private final h f20860b;
 
     public TransitionInquiryRequest_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("attributes");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19979a = a10;
+        this.f20859a = a10;
         h f10 = moshi.f(TransitionInquiryRequest.Attributes.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19980b = f10;
+        this.f20860b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -36,13 +36,13 @@ public final class TransitionInquiryRequest_DataJsonAdapter extends h {
         reader.u();
         TransitionInquiryRequest.Attributes attributes = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19979a);
+            int J = reader.J(this.f20859a);
             if (J != -1) {
-                if (J == 0 && (attributes = (TransitionInquiryRequest.Attributes) this.f19980b.fromJson(reader)) == null) {
+                if (J == 0 && (attributes = (TransitionInquiryRequest.Attributes) this.f20860b.fromJson(reader)) == null) {
                     throw c.x("attributes", "attributes", reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -58,9 +58,9 @@ public final class TransitionInquiryRequest_DataJsonAdapter extends h {
     public void toJson(t writer, TransitionInquiryRequest.Data data) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (data != null) {
-            writer.k();
+            writer.i();
             writer.J("attributes");
-            this.f19980b.toJson(writer, data.a());
+            this.f20860b.toJson(writer, data.a());
             writer.s();
             return;
         }

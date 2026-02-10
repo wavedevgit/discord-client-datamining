@@ -8,28 +8,28 @@ import android.util.Log;
 public class l {
 
     /* renamed from: b  reason: collision with root package name */
-    private static l f13925b;
+    private static l f14502b;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f13926a;
+    private final Context f14503a;
 
     public l(Context context) {
-        this.f13926a = context.getApplicationContext();
+        this.f14503a = context.getApplicationContext();
     }
 
     public static l a(Context context) {
         hf.q.l(context);
         synchronized (l.class) {
             try {
-                if (f13925b == null) {
+                if (f14502b == null) {
                     c0.a(context);
-                    f13925b = new l(context);
+                    f14502b = new l(context);
                 }
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        return f13925b;
+        return f14502b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -73,7 +73,7 @@ public class l {
             return true;
         }
         if (c(packageInfo, true)) {
-            if (k.e(this.f13926a)) {
+            if (k.e(this.f14503a)) {
                 return true;
             }
             Log.w("GoogleSignatureVerifier", "Test-keys aren't accepted on this build.");

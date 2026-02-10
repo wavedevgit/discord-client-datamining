@@ -17,7 +17,7 @@ public final class b0 extends a implements IInterface {
         f(3, e10);
     }
 
-    public final void h(v vVar, we.a aVar) {
+    public final void i(v vVar, we.a aVar) {
         Parcel e10 = e();
         p.d(e10, vVar);
         p.c(e10, aVar);

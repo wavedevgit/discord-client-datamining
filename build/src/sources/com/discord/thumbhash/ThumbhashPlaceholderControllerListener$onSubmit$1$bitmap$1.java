@@ -2,6 +2,7 @@ package com.discord.thumbhash;
 
 import android.graphics.Bitmap;
 import android.util.Base64;
+import gs.b;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.c;
@@ -10,7 +11,6 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
-import xr.b;
 @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\n \u0002*\u0004\u0018\u00010\u00010\u0001*\u00020\u0003H\n"}, d2 = {"<anonymous>", "Landroid/graphics/Bitmap;", "kotlin.jvm.PlatformType", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.thumbhash.ThumbhashPlaceholderControllerListener$onSubmit$1$bitmap$1", f = "ThumbhashPlaceholderControllerListener.kt", l = {}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -44,6 +44,6 @@ final class ThumbhashPlaceholderControllerListener$onSubmit$1$bitmap$1 extends k
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-        return ((ThumbhashPlaceholderControllerListener$onSubmit$1$bitmap$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
+        return ((ThumbhashPlaceholderControllerListener$onSubmit$1$bitmap$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
     }
 }

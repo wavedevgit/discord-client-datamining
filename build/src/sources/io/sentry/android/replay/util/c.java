@@ -16,28 +16,28 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c extends Drawable {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f28041e = new a(null);
+    public static final a f28976e = new a(null);
 
     /* renamed from: f  reason: collision with root package name */
-    public static final int f28042f = 8;
+    public static final int f28977f = 8;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final int f28043g = Color.argb(32, (int) SetSpanOperation.SPAN_MAX_PRIORITY, 20, 20);
+    private static final int f28978g = Color.argb(32, (int) SetSpanOperation.SPAN_MAX_PRIORITY, 20, 20);
 
     /* renamed from: h  reason: collision with root package name */
-    private static final int f28044h = Color.argb((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, (int) SetSpanOperation.SPAN_MAX_PRIORITY, 20, 20);
+    private static final int f28979h = Color.argb((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, (int) SetSpanOperation.SPAN_MAX_PRIORITY, 20, 20);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Paint f28045a = new Paint(1);
+    private final Paint f28980a = new Paint(1);
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f28046b = 6.0f;
+    private final float f28981b = 6.0f;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Rect f28047c = new Rect();
+    private final Rect f28982c = new Rect();
 
     /* renamed from: d  reason: collision with root package name */
-    private List f28048d = CollectionsKt.l();
+    private List f28983d = CollectionsKt.l();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -50,47 +50,47 @@ public final class c extends Drawable {
     }
 
     private final void a(Canvas canvas, String str, float f10, float f11) {
-        this.f28045a.setColor(-1);
-        this.f28045a.setStyle(Paint.Style.STROKE);
-        canvas.drawText(str, f10, f11, this.f28045a);
-        this.f28045a.setColor(-16777216);
-        this.f28045a.setStyle(Paint.Style.FILL);
-        canvas.drawText(str, f10, f11, this.f28045a);
+        this.f28980a.setColor(-1);
+        this.f28980a.setStyle(Paint.Style.STROKE);
+        canvas.drawText(str, f10, f11, this.f28980a);
+        this.f28980a.setColor(-16777216);
+        this.f28980a.setStyle(Paint.Style.FILL);
+        canvas.drawText(str, f10, f11, this.f28980a);
     }
 
     public final void b(List masks) {
         Intrinsics.checkNotNullParameter(masks, "masks");
-        this.f28048d = masks;
+        this.f28983d = masks;
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        this.f28045a.setTextSize(32.0f);
-        this.f28045a.setColor(-16777216);
-        this.f28045a.setStrokeWidth(6.0f);
-        for (Rect rect : this.f28048d) {
-            this.f28045a.setColor(f28043g);
-            this.f28045a.setStyle(Paint.Style.FILL);
-            canvas.drawRect(rect, this.f28045a);
-            this.f28045a.setColor(f28044h);
-            this.f28045a.setStyle(Paint.Style.STROKE);
-            canvas.drawRect(rect, this.f28045a);
+        this.f28980a.setTextSize(32.0f);
+        this.f28980a.setColor(-16777216);
+        this.f28980a.setStrokeWidth(6.0f);
+        for (Rect rect : this.f28983d) {
+            this.f28980a.setColor(f28978g);
+            this.f28980a.setStyle(Paint.Style.FILL);
+            canvas.drawRect(rect, this.f28980a);
+            this.f28980a.setColor(f28979h);
+            this.f28980a.setStyle(Paint.Style.STROKE);
+            canvas.drawRect(rect, this.f28980a);
             StringBuilder sb2 = new StringBuilder();
             sb2.append(rect.left);
             sb2.append('/');
             sb2.append(rect.top);
             String sb3 = sb2.toString();
-            this.f28045a.getTextBounds(sb3, 0, sb3.length(), this.f28047c);
+            this.f28980a.getTextBounds(sb3, 0, sb3.length(), this.f28982c);
             a(canvas, sb3, rect.left, rect.top);
             StringBuilder sb4 = new StringBuilder();
             sb4.append(rect.right);
             sb4.append('/');
             sb4.append(rect.bottom);
             String sb5 = sb4.toString();
-            this.f28045a.getTextBounds(sb5, 0, sb5.length(), this.f28047c);
-            a(canvas, sb5, rect.right - this.f28047c.width(), rect.bottom + this.f28047c.height());
+            this.f28980a.getTextBounds(sb5, 0, sb5.length(), this.f28982c);
+            a(canvas, sb5, rect.right - this.f28982c.width(), rect.bottom + this.f28982c.height());
         }
     }
 

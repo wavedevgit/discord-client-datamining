@@ -11,10 +11,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class UpdateInquirySessionRequest {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f19354b = new a(null);
+    public static final a f20234b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Data f19355a;
+    private final Data f20235a;
 
     @com.squareup.moshi.i(generateAdapter = true)
     @Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u000b\b\u0007\u0018\u00002\u00020\u0001B\u001f\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0002¢\u0006\u0004\b\u0006\u0010\u0007R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\b\u0010\t\u001a\u0004\b\b\u0010\nR\u0017\u0010\u0004\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u000b\u0010\t\u001a\u0004\b\f\u0010\nR\u0017\u0010\u0005\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\f\u0010\t\u001a\u0004\b\u000b\u0010\n¨\u0006\r"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/network/UpdateInquirySessionRequest$AppdomeThreatEvent;", "", "", StackTraceHelper.NAME_KEY, "timestamp", "reasonData", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "a", "Ljava/lang/String;", "()Ljava/lang/String;", "b", "c", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -22,33 +22,33 @@ public final class UpdateInquirySessionRequest {
     public static final class AppdomeThreatEvent {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19356a;
+        private final String f20236a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f19357b;
+        private final String f20237b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f19358c;
+        private final String f20238c;
 
         public AppdomeThreatEvent(String name, String timestamp, String reasonData) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(timestamp, "timestamp");
             Intrinsics.checkNotNullParameter(reasonData, "reasonData");
-            this.f19356a = name;
-            this.f19357b = timestamp;
-            this.f19358c = reasonData;
+            this.f20236a = name;
+            this.f20237b = timestamp;
+            this.f20238c = reasonData;
         }
 
         public final String a() {
-            return this.f19356a;
+            return this.f20236a;
         }
 
         public final String b() {
-            return this.f19358c;
+            return this.f20238c;
         }
 
         public final String c() {
-            return this.f19357b;
+            return this.f20237b;
         }
     }
 
@@ -58,15 +58,15 @@ public final class UpdateInquirySessionRequest {
     public static final class Data {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Attributes f19363a;
+        private final Attributes f20243a;
 
         public Data(Attributes attributes) {
             Intrinsics.checkNotNullParameter(attributes, "attributes");
-            this.f19363a = attributes;
+            this.f20243a = attributes;
         }
 
         public final Attributes a() {
-            return this.f19363a;
+            return this.f20243a;
         }
     }
 
@@ -86,11 +86,11 @@ public final class UpdateInquirySessionRequest {
 
     public UpdateInquirySessionRequest(Data data) {
         Intrinsics.checkNotNullParameter(data, "data");
-        this.f19355a = data;
+        this.f20235a = data;
     }
 
     public final Data a() {
-        return this.f19355a;
+        return this.f20235a;
     }
 
     @com.squareup.moshi.i(generateAdapter = true)
@@ -99,38 +99,38 @@ public final class UpdateInquirySessionRequest {
     public static final class Attributes {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Double f19359a;
+        private final Double f20239a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Double f19360b;
+        private final Double f20240b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f19361c;
+        private final String f20241c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f19362d;
+        private final List f20242d;
 
         public Attributes(Double d10, Double d11, String str, List list) {
-            this.f19359a = d10;
-            this.f19360b = d11;
-            this.f19361c = str;
-            this.f19362d = list;
+            this.f20239a = d10;
+            this.f20240b = d11;
+            this.f20241c = str;
+            this.f20242d = list;
         }
 
         public final List a() {
-            return this.f19362d;
+            return this.f20242d;
         }
 
         public final Double b() {
-            return this.f19360b;
+            return this.f20240b;
         }
 
         public final Double c() {
-            return this.f19359a;
+            return this.f20239a;
         }
 
         public final String d() {
-            return this.f19361c;
+            return this.f20241c;
         }
 
         public /* synthetic */ Attributes(Double d10, Double d11, String str, List list, int i10, DefaultConstructorMarker defaultConstructorMarker) {

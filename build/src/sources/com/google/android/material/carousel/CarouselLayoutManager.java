@@ -14,60 +14,59 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.l;
-import bh.k;
 import com.google.android.material.carousel.CarouselLayoutManager;
-import com.google.android.material.carousel.f;
+import com.google.android.material.carousel.e;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class CarouselLayoutManager extends RecyclerView.LayoutManager implements com.google.android.material.carousel.b, RecyclerView.SmoothScroller.a {
+public class CarouselLayoutManager extends RecyclerView.LayoutManager implements gh.a, RecyclerView.SmoothScroller.a {
 
     /* renamed from: d  reason: collision with root package name */
-    int f14867d;
+    int f15473d;
 
     /* renamed from: e  reason: collision with root package name */
-    int f14868e;
+    int f15474e;
 
     /* renamed from: i  reason: collision with root package name */
-    int f14869i;
+    int f15475i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f14870o;
+    private boolean f15476o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final c f14871p;
+    private final c f15477p;
 
     /* renamed from: q  reason: collision with root package name */
-    private com.google.android.material.carousel.d f14872q;
+    private com.google.android.material.carousel.c f15478q;
 
     /* renamed from: r  reason: collision with root package name */
-    private g f14873r;
+    private f f15479r;
 
     /* renamed from: s  reason: collision with root package name */
-    private f f14874s;
+    private e f15480s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f14875t;
+    private int f15481t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Map f14876u;
+    private Map f15482u;
 
     /* renamed from: v  reason: collision with root package name */
-    private com.google.android.material.carousel.c f14877v;
+    private com.google.android.material.carousel.b f15483v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final View.OnLayoutChangeListener f14878w;
+    private final View.OnLayoutChangeListener f15484w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f14879x;
+    private int f15485x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f14880y;
+    private int f15486y;
 
     /* renamed from: z  reason: collision with root package name */
-    private int f14881z;
+    private int f15487z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends l {
@@ -77,7 +76,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
 
         @Override // androidx.recyclerview.widget.l
         public int calculateDxToMakeVisible(View view, int i10) {
-            if (CarouselLayoutManager.this.f14873r != null && CarouselLayoutManager.this.d()) {
+            if (CarouselLayoutManager.this.f15479r != null && CarouselLayoutManager.this.d()) {
                 CarouselLayoutManager carouselLayoutManager = CarouselLayoutManager.this;
                 return carouselLayoutManager.A(carouselLayoutManager.getPosition(view));
             }
@@ -86,7 +85,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
 
         @Override // androidx.recyclerview.widget.l
         public int calculateDyToMakeVisible(View view, int i10) {
-            if (CarouselLayoutManager.this.f14873r != null && !CarouselLayoutManager.this.d()) {
+            if (CarouselLayoutManager.this.f15479r != null && !CarouselLayoutManager.this.d()) {
                 CarouselLayoutManager carouselLayoutManager = CarouselLayoutManager.this;
                 return carouselLayoutManager.A(carouselLayoutManager.getPosition(view));
             }
@@ -104,22 +103,22 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        final View f14883a;
+        final View f15489a;
 
         /* renamed from: b  reason: collision with root package name */
-        final float f14884b;
+        final float f15490b;
 
         /* renamed from: c  reason: collision with root package name */
-        final float f14885c;
+        final float f15491c;
 
         /* renamed from: d  reason: collision with root package name */
-        final d f14886d;
+        final d f15492d;
 
         b(View view, float f10, float f11, d dVar) {
-            this.f14883a = view;
-            this.f14884b = f10;
-            this.f14885c = f11;
-            this.f14886d = dVar;
+            this.f15489a = view;
+            this.f15490b = f10;
+            this.f15491c = f11;
+            this.f15492d = dVar;
         }
     }
 
@@ -128,33 +127,33 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
     public static class c extends RecyclerView.ItemDecoration {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Paint f14887a;
+        private final Paint f15493a;
 
         /* renamed from: b  reason: collision with root package name */
-        private List f14888b;
+        private List f15494b;
 
         c() {
             Paint paint = new Paint();
-            this.f14887a = paint;
-            this.f14888b = Collections.unmodifiableList(new ArrayList());
+            this.f15493a = paint;
+            this.f15494b = Collections.unmodifiableList(new ArrayList());
             paint.setStrokeWidth(5.0f);
             paint.setColor(-65281);
         }
 
         void a(List list) {
-            this.f14888b = Collections.unmodifiableList(list);
+            this.f15494b = Collections.unmodifiableList(list);
         }
 
         @Override // androidx.recyclerview.widget.RecyclerView.ItemDecoration
         public void onDrawOver(Canvas canvas, RecyclerView recyclerView, RecyclerView.State state) {
             super.onDrawOver(canvas, recyclerView, state);
-            this.f14887a.setStrokeWidth(recyclerView.getResources().getDimension(bh.d.f6684n));
-            for (f.c cVar : this.f14888b) {
-                this.f14887a.setColor(r1.c.c(-65281, -16776961, cVar.f14919c));
+            this.f15493a.setStrokeWidth(recyclerView.getResources().getDimension(bh.d.f6822y));
+            for (e.c cVar : this.f15494b) {
+                this.f15493a.setColor(r1.c.c(-65281, -16776961, cVar.f15530c));
                 if (((CarouselLayoutManager) recyclerView.getLayoutManager()).d()) {
-                    canvas.drawLine(cVar.f14918b, ((CarouselLayoutManager) recyclerView.getLayoutManager()).S(), cVar.f14918b, ((CarouselLayoutManager) recyclerView.getLayoutManager()).N(), this.f14887a);
+                    canvas.drawLine(cVar.f15529b, ((CarouselLayoutManager) recyclerView.getLayoutManager()).S(), cVar.f15529b, ((CarouselLayoutManager) recyclerView.getLayoutManager()).O(), this.f15493a);
                 } else {
-                    canvas.drawLine(((CarouselLayoutManager) recyclerView.getLayoutManager()).P(), cVar.f14918b, ((CarouselLayoutManager) recyclerView.getLayoutManager()).Q(), cVar.f14918b, this.f14887a);
+                    canvas.drawLine(((CarouselLayoutManager) recyclerView.getLayoutManager()).P(), cVar.f15529b, ((CarouselLayoutManager) recyclerView.getLayoutManager()).Q(), cVar.f15529b, this.f15493a);
                 }
             }
         }
@@ -165,26 +164,26 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        final f.c f14889a;
+        final e.c f15495a;
 
         /* renamed from: b  reason: collision with root package name */
-        final f.c f14890b;
+        final e.c f15496b;
 
-        d(f.c cVar, f.c cVar2) {
+        d(e.c cVar, e.c cVar2) {
             boolean z10;
-            if (cVar.f14917a <= cVar2.f14917a) {
+            if (cVar.f15528a <= cVar2.f15528a) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             b2.e.a(z10);
-            this.f14889a = cVar;
-            this.f14890b = cVar2;
+            this.f15495a = cVar;
+            this.f15496b = cVar2;
         }
     }
 
     public CarouselLayoutManager() {
-        this(new h());
+        this(new g());
     }
 
     private static int B(int i10, int i11, int i12, int i13) {
@@ -192,28 +191,28 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         return i14 < i12 ? i12 - i11 : i14 > i13 ? i13 - i11 : i10;
     }
 
-    private int C(g gVar) {
-        f l10;
-        f.c a10;
+    private int C(f fVar) {
+        e l10;
+        e.c b10;
         boolean X = X();
         if (X) {
-            l10 = gVar.h();
+            l10 = fVar.h();
         } else {
-            l10 = gVar.l();
+            l10 = fVar.l();
         }
         if (X) {
-            a10 = l10.h();
+            b10 = l10.i();
         } else {
-            a10 = l10.a();
+            b10 = l10.b();
         }
-        return (int) (R() - t(a10.f14917a, l10.f() / 2.0f));
+        return (int) (R() - t(b10.f15528a, l10.g() / 2.0f));
     }
 
     private void D(RecyclerView.Recycler recycler, RecyclerView.State state) {
         f0(recycler);
         if (getChildCount() == 0) {
-            w(recycler, this.f14875t - 1);
-            v(recycler, state, this.f14875t);
+            w(recycler, this.f15481t - 1);
+            v(recycler, state, this.f15481t);
         } else {
             int position = getPosition(getChildAt(0));
             int position2 = getPosition(getChildAt(getChildCount() - 1));
@@ -269,7 +268,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
             return 0;
         }
         RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) getChildAt(0).getLayoutParams();
-        if (this.f14877v.f14899a == 0) {
+        if (this.f15483v.f15505a == 0) {
             i10 = ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin;
             i11 = ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin;
         } else {
@@ -279,88 +278,91 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         return i10 + i11;
     }
 
-    private f J(int i10) {
-        f fVar;
-        Map map = this.f14876u;
-        if (map != null && (fVar = (f) map.get(Integer.valueOf(u1.a.b(i10, 0, Math.max(0, getItemCount() - 1))))) != null) {
-            return fVar;
+    private e J(f fVar) {
+        if (X()) {
+            return fVar.h();
         }
-        return this.f14873r.g();
+        return fVar.l();
     }
 
-    private int K() {
-        if (!getClipToPadding() && this.f14872q.f()) {
-            if (getOrientation() == 1) {
-                return getPaddingTop();
-            }
-            return getPaddingLeft();
+    private e K(int i10) {
+        e eVar;
+        Map map = this.f15482u;
+        if (map != null && (eVar = (e) map.get(Integer.valueOf(u1.a.b(i10, 0, Math.max(0, getItemCount() - 1))))) != null) {
+            return eVar;
         }
-        return 0;
+        return this.f15479r.g();
     }
 
-    private float L(float f10, d dVar) {
-        f.c cVar = dVar.f14889a;
-        float f11 = cVar.f14920d;
-        f.c cVar2 = dVar.f14890b;
-        return ch.a.b(f11, cVar2.f14920d, cVar.f14918b, cVar2.f14918b, f10);
+    private int L() {
+        if (getClipToPadding()) {
+            return 0;
+        }
+        if (getOrientation() == 1) {
+            return getPaddingTop();
+        }
+        return getPaddingLeft();
+    }
+
+    private float M(float f10, d dVar) {
+        e.c cVar = dVar.f15495a;
+        float f11 = cVar.f15531d;
+        e.c cVar2 = dVar.f15496b;
+        return ch.a.b(f11, cVar2.f15531d, cVar.f15529b, cVar2.f15529b, f10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public int N() {
-        return this.f14877v.e();
-    }
-
-    private int O() {
-        return this.f14877v.f();
+    public int O() {
+        return this.f15483v.d();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public int P() {
-        return this.f14877v.g();
+        return this.f15483v.e();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public int Q() {
-        return this.f14877v.h();
+        return this.f15483v.f();
     }
 
     private int R() {
-        return this.f14877v.i();
+        return this.f15483v.g();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public int S() {
-        return this.f14877v.j();
+        return this.f15483v.h();
     }
 
     private int T() {
-        if (!getClipToPadding() && this.f14872q.f()) {
-            if (getOrientation() == 1) {
-                return getPaddingBottom();
-            }
-            return getPaddingRight();
+        if (getClipToPadding()) {
+            return 0;
         }
-        return 0;
+        if (getOrientation() == 1) {
+            return getPaddingBottom();
+        }
+        return getPaddingRight();
     }
 
-    private int U(int i10, f fVar) {
+    private int U(int i10, e eVar) {
         if (X()) {
-            return (int) (((G() - fVar.h().f14917a) - (i10 * fVar.f())) - (fVar.f() / 2.0f));
+            return (int) (((G() - eVar.i().f15528a) - (i10 * eVar.g())) - (eVar.g() / 2.0f));
         }
-        return (int) (((i10 * fVar.f()) - fVar.a().f14917a) + (fVar.f() / 2.0f));
+        return (int) (((i10 * eVar.g()) - eVar.b().f15528a) + (eVar.g() / 2.0f));
     }
 
-    private int V(int i10, f fVar) {
+    private int V(int i10, e eVar) {
         int i11;
         int i12 = Integer.MAX_VALUE;
-        for (f.c cVar : fVar.e()) {
-            float f10 = (i10 * fVar.f()) + (fVar.f() / 2.0f);
+        for (e.c cVar : eVar.f()) {
+            float g10 = (i10 * eVar.g()) + (eVar.g() / 2.0f);
             if (X()) {
-                i11 = (int) ((G() - cVar.f14917a) - f10);
+                i11 = (int) ((G() - cVar.f15528a) - g10);
             } else {
-                i11 = (int) (f10 - cVar.f14917a);
+                i11 = (int) (g10 - cVar.f15528a);
             }
-            int i13 = i11 - this.f14867d;
+            int i13 = i11 - this.f15473d;
             if (Math.abs(i12) > Math.abs(i13)) {
                 i12 = i13;
             }
@@ -379,11 +381,11 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         float f14 = Float.MAX_VALUE;
         float f15 = Float.MAX_VALUE;
         for (int i14 = 0; i14 < list.size(); i14++) {
-            f.c cVar = (f.c) list.get(i14);
+            e.c cVar = (e.c) list.get(i14);
             if (z10) {
-                f11 = cVar.f14918b;
+                f11 = cVar.f15529b;
             } else {
-                f11 = cVar.f14917a;
+                f11 = cVar.f15528a;
             }
             float abs = Math.abs(f11 - f10);
             if (f11 <= f10 && abs <= f12) {
@@ -409,11 +411,11 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         if (i12 == -1) {
             i12 = i13;
         }
-        return new d((f.c) list.get(i10), (f.c) list.get(i12));
+        return new d((e.c) list.get(i10), (e.c) list.get(i12));
     }
 
     private boolean Y(float f10, d dVar) {
-        float t10 = t(f10, L(f10, dVar) / 2.0f);
+        float t10 = t(f10, M(f10, dVar) / 2.0f);
         if (X()) {
             if (t10 >= 0.0f) {
                 return false;
@@ -427,7 +429,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
     }
 
     private boolean Z(float f10, d dVar) {
-        float s10 = s(f10, L(f10, dVar) / 2.0f);
+        float s10 = s(f10, M(f10, dVar) / 2.0f);
         if (X()) {
             if (s10 <= G()) {
                 return false;
@@ -441,7 +443,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
     }
 
     private void a0() {
-        if (this.f14870o && Log.isLoggable("CarouselLayoutManager", 3)) {
+        if (this.f15476o && Log.isLoggable("CarouselLayoutManager", 3)) {
             Log.d("CarouselLayoutManager", "internal representation of views on the screen");
             for (int i10 = 0; i10 < getChildCount(); i10++) {
                 View childAt = getChildAt(i10);
@@ -455,18 +457,18 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
     private b b0(RecyclerView.Recycler recycler, float f10, int i10) {
         View o10 = recycler.o(i10);
         measureChildWithMargins(o10, 0, 0);
-        float s10 = s(f10, this.f14874s.f() / 2.0f);
-        d W = W(this.f14874s.g(), s10, false);
-        return new b(o10, s10, x(o10, s10, W), W);
+        float s10 = s(f10, this.f15480s.g() / 2.0f);
+        d W = W(this.f15480s.h(), s10, false);
+        return new b(o10, s10, x(s10, W), W);
     }
 
     private float c0(View view, float f10, float f11, Rect rect) {
         float s10 = s(f10, f11);
-        d W = W(this.f14874s.g(), s10, false);
-        float x10 = x(view, s10, W);
+        d W = W(this.f15480s.h(), s10, false);
+        float x10 = x(s10, W);
         super.getDecoratedBoundsWithMargins(view, rect);
         k0(view, s10, W);
-        this.f14877v.l(view, rect, f11, x10);
+        this.f15483v.j(view, rect, f11, x10);
         return x10;
     }
 
@@ -515,16 +517,16 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
     private void d0(RecyclerView.Recycler recycler) {
         View o10 = recycler.o(0);
         measureChildWithMargins(o10, 0, 0);
-        f g10 = this.f14872q.g(this, o10);
+        e g10 = this.f15478q.g(this, o10);
         if (X()) {
-            g10 = f.n(g10, G());
+            g10 = e.p(g10, G());
         }
-        this.f14873r = g.f(this, g10, I(), K(), T());
+        this.f15479r = f.f(this, g10, I(), L(), T(), this.f15478q.e());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e0() {
-        this.f14873r = null;
+        this.f15479r = null;
         requestLayout();
     }
 
@@ -532,7 +534,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         while (getChildCount() > 0) {
             View childAt = getChildAt(0);
             float H = H(childAt);
-            if (!Z(H, W(this.f14874s.g(), H, true))) {
+            if (!Z(H, W(this.f15480s.h(), H, true))) {
                 break;
             }
             removeAndRecycleView(childAt, recycler);
@@ -540,7 +542,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         while (getChildCount() - 1 >= 0) {
             View childAt2 = getChildAt(getChildCount() - 1);
             float H2 = H(childAt2);
-            if (Y(H2, W(this.f14874s.g(), H2, true))) {
+            if (Y(H2, W(this.f15480s.h(), H2, true))) {
                 removeAndRecycleView(childAt2, recycler);
             } else {
                 return;
@@ -558,9 +560,9 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
 
     private void i0(Context context, AttributeSet attributeSet) {
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f7004u0);
-            h0(obtainStyledAttributes.getInt(k.f7013v0, 0));
-            setOrientation(obtainStyledAttributes.getInt(k.f6927l5, 0));
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, bh.l.L0);
+            h0(obtainStyledAttributes.getInt(bh.l.M0, 0));
+            setOrientation(obtainStyledAttributes.getInt(q3.d.f43901b, 0));
             obtainStyledAttributes.recycle();
         }
     }
@@ -570,10 +572,10 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
 
     public static /* synthetic */ void l(final CarouselLayoutManager carouselLayoutManager, View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
         carouselLayoutManager.getClass();
-        if (i10 == i14 && i11 == i15 && i12 == i16 && i13 == i17) {
+        if (i12 - i10 == i16 - i14 && i13 - i11 == i17 - i15) {
             return;
         }
-        view.post(new Runnable() { // from class: eh.b
+        view.post(new Runnable() { // from class: gh.c
             @Override // java.lang.Runnable
             public final void run() {
                 CarouselLayoutManager.this.e0();
@@ -581,36 +583,30 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         });
     }
 
-    private void l0(g gVar) {
-        f l10;
-        int i10 = this.f14869i;
-        int i11 = this.f14868e;
+    private void l0(f fVar) {
+        int i10 = this.f15475i;
+        int i11 = this.f15474e;
         if (i10 <= i11) {
-            if (X()) {
-                l10 = gVar.h();
-            } else {
-                l10 = gVar.l();
-            }
-            this.f14874s = l10;
+            this.f15480s = J(fVar);
         } else {
-            this.f14874s = gVar.j(this.f14867d, i11, i10);
+            this.f15480s = fVar.j(this.f15473d, i11, i10);
         }
-        this.f14871p.a(this.f14874s.g());
+        this.f15477p.a(this.f15480s.h());
     }
 
     private void m0() {
         int itemCount = getItemCount();
-        int i10 = this.f14879x;
-        if (itemCount != i10 && this.f14873r != null) {
-            if (this.f14872q.h(this, i10)) {
+        int i10 = this.f15485x;
+        if (itemCount != i10 && this.f15479r != null) {
+            if (this.f15478q.h(this, i10)) {
                 e0();
             }
-            this.f14879x = itemCount;
+            this.f15485x = itemCount;
         }
     }
 
     private void n0() {
-        if (this.f14870o && getChildCount() >= 1) {
+        if (this.f15476o && getChildCount() >= 1) {
             int i10 = 0;
             while (i10 < getChildCount() - 1) {
                 int position = getPosition(getChildAt(i10));
@@ -627,11 +623,12 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
     }
 
     private void r(View view, int i10, b bVar) {
-        float f10 = this.f14874s.f() / 2.0f;
+        float g10 = this.f15480s.g() / 2.0f;
         addView(view, i10);
-        float f11 = bVar.f14885c;
-        this.f14877v.k(view, (int) (f11 - f10), (int) (f11 + f10));
-        k0(view, bVar.f14884b, bVar.f14886d);
+        measureChildWithMargins(view, 0, 0);
+        float f10 = bVar.f15491c;
+        this.f15483v.i(view, (int) (f10 - g10), (int) (f10 + g10));
+        k0(view, bVar.f15490b, bVar.f15492d);
     }
 
     private float s(float f10, float f11) {
@@ -646,29 +643,32 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         if (getChildCount() == 0 || i10 == 0) {
             return 0;
         }
-        if (this.f14873r == null) {
+        if (this.f15479r == null) {
             d0(recycler);
         }
-        int B = B(i10, this.f14867d, this.f14868e, this.f14869i);
-        this.f14867d += B;
-        l0(this.f14873r);
-        float f11 = this.f14874s.f() / 2.0f;
+        if (getItemCount() <= J(this.f15479r).n()) {
+            return 0;
+        }
+        int B = B(i10, this.f15473d, this.f15474e, this.f15475i);
+        this.f15473d += B;
+        l0(this.f15479r);
+        float g10 = this.f15480s.g() / 2.0f;
         float y10 = y(getPosition(getChildAt(0)));
         Rect rect = new Rect();
         if (X()) {
-            f10 = this.f14874s.h().f14918b;
+            f10 = this.f15480s.i().f15529b;
         } else {
-            f10 = this.f14874s.a().f14918b;
+            f10 = this.f15480s.b().f15529b;
         }
-        float f12 = Float.MAX_VALUE;
+        float f11 = Float.MAX_VALUE;
         for (int i11 = 0; i11 < getChildCount(); i11++) {
             View childAt = getChildAt(i11);
-            float abs = Math.abs(f10 - c0(childAt, y10, f11, rect));
-            if (childAt != null && abs < f12) {
-                this.f14880y = getPosition(childAt);
-                f12 = abs;
+            float abs = Math.abs(f10 - c0(childAt, y10, g10, rect));
+            if (childAt != null && abs < f11) {
+                this.f15486y = getPosition(childAt);
+                f11 = abs;
             }
-            y10 = s(y10, this.f14874s.f());
+            y10 = s(y10, this.f15480s.g());
         }
         D(recycler, state);
         return B;
@@ -684,18 +684,21 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
     private void u(RecyclerView.Recycler recycler, int i10, int i11) {
         if (i10 >= 0 && i10 < getItemCount()) {
             b b02 = b0(recycler, y(i10), i10);
-            r(b02.f14883a, i11, b02);
+            r(b02.f15489a, i11, b02);
         }
     }
 
     private void v(RecyclerView.Recycler recycler, RecyclerView.State state, int i10) {
         float y10 = y(i10);
         while (i10 < state.b()) {
-            b b02 = b0(recycler, y10, i10);
-            if (!Y(b02.f14885c, b02.f14886d)) {
-                y10 = s(y10, this.f14874s.f());
-                if (!Z(b02.f14885c, b02.f14886d)) {
-                    r(b02.f14883a, -1, b02);
+            float s10 = s(y10, this.f15480s.g() / 2.0f);
+            d W = W(this.f15480s.h(), s10, false);
+            float x10 = x(s10, W);
+            if (!Y(x10, W)) {
+                y10 = s(y10, this.f15480s.g());
+                if (!Z(x10, W)) {
+                    View o10 = recycler.o(i10);
+                    r(o10, -1, new b(o10, s10, x10, W));
                 }
                 i10++;
             } else {
@@ -707,11 +710,14 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
     private void w(RecyclerView.Recycler recycler, int i10) {
         float y10 = y(i10);
         while (i10 >= 0) {
-            b b02 = b0(recycler, y10, i10);
-            if (!Z(b02.f14885c, b02.f14886d)) {
-                y10 = t(y10, this.f14874s.f());
-                if (!Y(b02.f14885c, b02.f14886d)) {
-                    r(b02.f14883a, 0, b02);
+            float s10 = s(y10, this.f15480s.g() / 2.0f);
+            d W = W(this.f15480s.h(), s10, false);
+            float x10 = x(s10, W);
+            if (!Z(x10, W)) {
+                y10 = t(y10, this.f15480s.g());
+                if (!Y(x10, W)) {
+                    View o10 = recycler.o(i10);
+                    r(o10, 0, new b(o10, s10, x10, W));
                 }
                 i10--;
             } else {
@@ -720,64 +726,61 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         }
     }
 
-    private float x(View view, float f10, d dVar) {
-        f.c cVar = dVar.f14889a;
-        float f11 = cVar.f14918b;
-        f.c cVar2 = dVar.f14890b;
-        float b10 = ch.a.b(f11, cVar2.f14918b, cVar.f14917a, cVar2.f14917a, f10);
-        if (dVar.f14890b != this.f14874s.c() && dVar.f14889a != this.f14874s.j()) {
+    private float x(float f10, d dVar) {
+        e.c cVar = dVar.f15495a;
+        float f11 = cVar.f15529b;
+        e.c cVar2 = dVar.f15496b;
+        float b10 = ch.a.b(f11, cVar2.f15529b, cVar.f15528a, cVar2.f15528a, f10);
+        if (dVar.f15496b != this.f15480s.d() && dVar.f15495a != this.f15480s.k()) {
             return b10;
         }
-        float d10 = this.f14877v.d((RecyclerView.LayoutParams) view.getLayoutParams()) / this.f14874s.f();
-        f.c cVar3 = dVar.f14890b;
-        return b10 + ((f10 - cVar3.f14917a) * ((1.0f - cVar3.f14919c) + d10));
+        e.c cVar3 = dVar.f15496b;
+        return b10 + ((f10 - cVar3.f15528a) * (1.0f - cVar3.f15530c));
     }
 
     private float y(int i10) {
-        return s(R() - this.f14867d, this.f14874s.f() * i10);
+        return s(R() - this.f15473d, this.f15480s.g() * i10);
     }
 
-    private int z(RecyclerView.State state, g gVar) {
-        f h10;
-        f.c h11;
+    private int z(RecyclerView.State state, f fVar) {
+        e h10;
+        e.c i10;
         float f10;
-        float f11;
         boolean X = X();
         if (X) {
-            h10 = gVar.l();
+            h10 = fVar.l();
         } else {
-            h10 = gVar.h();
+            h10 = fVar.h();
         }
         if (X) {
-            h11 = h10.a();
+            i10 = h10.b();
         } else {
-            h11 = h10.h();
+            i10 = h10.i();
         }
-        float b10 = (state.b() - 1) * h10.f();
+        int i11 = 1;
+        float b10 = (state.b() - 1) * h10.g();
         if (X) {
             f10 = -1.0f;
         } else {
             f10 = 1.0f;
         }
-        float f12 = b10 * f10;
+        float R = (b10 * f10) - (i10.f15528a - R());
         if (X) {
-            f11 = -h11.f14923g;
-        } else {
-            f11 = h11.f14924h;
+            i11 = -1;
         }
-        int R = (int) ((f12 - (h11.f14917a - R())) + (O() - h11.f14917a) + f11);
+        int i12 = (int) (R + ((i11 * i10.f15531d) / 2.0f));
         if (X) {
-            return Math.min(0, R);
+            return Math.min(0, i12);
         }
-        return Math.max(0, R);
+        return Math.max(0, i12);
     }
 
     int A(int i10) {
-        return (int) (this.f14867d - U(i10, J(i10)));
+        return (int) (this.f15473d - U(i10, K(i10)));
     }
 
-    int M(int i10, f fVar) {
-        return U(i10, fVar) - this.f14867d;
+    int N(int i10, e eVar) {
+        return U(i10, eVar) - this.f15473d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -788,19 +791,19 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         return false;
     }
 
-    @Override // com.google.android.material.carousel.b
+    @Override // gh.a
     public int a() {
         return getWidth();
     }
 
-    @Override // com.google.android.material.carousel.b
+    @Override // gh.a
     public int b() {
         return getHeight();
     }
 
-    @Override // com.google.android.material.carousel.b
+    @Override // gh.a
     public int c() {
-        return this.f14881z;
+        return this.f15487z;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
@@ -815,55 +818,55 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public int computeHorizontalScrollExtent(RecyclerView.State state) {
-        if (getChildCount() != 0 && this.f14873r != null && getItemCount() > 1) {
-            return (int) (getWidth() * (this.f14873r.g().f() / computeHorizontalScrollRange(state)));
+        if (getChildCount() != 0 && this.f15479r != null && getItemCount() > 1) {
+            return (int) (getWidth() * (this.f15479r.g().g() / computeHorizontalScrollRange(state)));
         }
         return 0;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public int computeHorizontalScrollOffset(RecyclerView.State state) {
-        return this.f14867d;
+        return this.f15473d;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public int computeHorizontalScrollRange(RecyclerView.State state) {
-        return this.f14869i - this.f14868e;
+        return this.f15475i - this.f15474e;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.SmoothScroller.a
     public PointF computeScrollVectorForPosition(int i10) {
-        if (this.f14873r == null) {
+        if (this.f15479r == null) {
             return null;
         }
-        int M = M(i10, J(i10));
+        int N = N(i10, K(i10));
         if (d()) {
-            return new PointF(M, 0.0f);
+            return new PointF(N, 0.0f);
         }
-        return new PointF(0.0f, M);
+        return new PointF(0.0f, N);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public int computeVerticalScrollExtent(RecyclerView.State state) {
-        if (getChildCount() != 0 && this.f14873r != null && getItemCount() > 1) {
-            return (int) (getHeight() * (this.f14873r.g().f() / computeVerticalScrollRange(state)));
+        if (getChildCount() != 0 && this.f15479r != null && getItemCount() > 1) {
+            return (int) (getHeight() * (this.f15479r.g().g() / computeVerticalScrollRange(state)));
         }
         return 0;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public int computeVerticalScrollOffset(RecyclerView.State state) {
-        return this.f14867d;
+        return this.f15473d;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public int computeVerticalScrollRange(RecyclerView.State state) {
-        return this.f14869i - this.f14868e;
+        return this.f15475i - this.f15474e;
     }
 
-    @Override // com.google.android.material.carousel.b
+    @Override // gh.a
     public boolean d() {
-        if (this.f14877v.f14899a == 0) {
+        if (this.f15483v.f15505a == 0) {
             return true;
         }
         return false;
@@ -882,25 +885,25 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         if (d()) {
             centerY = rect.centerX();
         }
-        float L = L(centerY, W(this.f14874s.g(), centerY, true));
+        float M = M(centerY, W(this.f15480s.h(), centerY, true));
         float f11 = 0.0f;
         if (d()) {
-            f10 = (rect.width() - L) / 2.0f;
+            f10 = (rect.width() - M) / 2.0f;
         } else {
             f10 = 0.0f;
         }
         if (!d()) {
-            f11 = (rect.height() - L) / 2.0f;
+            f11 = (rect.height() - M) / 2.0f;
         }
         rect.set((int) (rect.left + f10), (int) (rect.top + f11), (int) (rect.right - f10), (int) (rect.bottom - f11));
     }
 
     public int getOrientation() {
-        return this.f14877v.f14899a;
+        return this.f15483v.f15505a;
     }
 
     public void h0(int i10) {
-        this.f14881z = i10;
+        this.f15487z = i10;
         e0();
     }
 
@@ -909,8 +912,8 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         return true;
     }
 
-    public void j0(com.google.android.material.carousel.d dVar) {
-        this.f14872q = dVar;
+    public void j0(com.google.android.material.carousel.c cVar) {
+        this.f15478q = cVar;
         e0();
     }
 
@@ -922,15 +925,15 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public void onAttachedToWindow(RecyclerView recyclerView) {
         super.onAttachedToWindow(recyclerView);
-        this.f14872q.e(recyclerView.getContext());
+        this.f15478q.f(recyclerView.getContext());
         e0();
-        recyclerView.addOnLayoutChangeListener(this.f14878w);
+        recyclerView.addOnLayoutChangeListener(this.f15484w);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public void onDetachedFromWindow(RecyclerView recyclerView, RecyclerView.Recycler recycler) {
         super.onDetachedFromWindow(recyclerView, recycler);
-        recyclerView.removeOnLayoutChangeListener(this.f14878w);
+        recyclerView.removeOnLayoutChangeListener(this.f15484w);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
@@ -969,6 +972,12 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
+    public void onItemsChanged(RecyclerView recyclerView) {
+        super.onItemsChanged(recyclerView);
+        m0();
+    }
+
+    @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public void onItemsRemoved(RecyclerView recyclerView, int i10, int i11) {
         super.onItemsRemoved(recyclerView, i10, i11);
         m0();
@@ -980,54 +989,55 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         int i10;
         if (state.b() > 0 && G() > 0.0f) {
             boolean X = X();
-            if (this.f14873r == null) {
+            f fVar = this.f15479r;
+            if (fVar == null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            if (z10) {
+            if (z10 || fVar.g().a() != G()) {
                 d0(recycler);
             }
-            int C = C(this.f14873r);
-            int z11 = z(state, this.f14873r);
+            int C = C(this.f15479r);
+            int z11 = z(state, this.f15479r);
             if (X) {
                 i10 = z11;
             } else {
                 i10 = C;
             }
-            this.f14868e = i10;
+            this.f15474e = i10;
             if (X) {
                 z11 = C;
             }
-            this.f14869i = z11;
+            this.f15475i = z11;
             if (z10) {
-                this.f14867d = C;
-                this.f14876u = this.f14873r.i(getItemCount(), this.f14868e, this.f14869i, X());
-                int i11 = this.f14880y;
+                this.f15473d = C;
+                this.f15482u = this.f15479r.i(getItemCount(), this.f15474e, this.f15475i, X());
+                int i11 = this.f15486y;
                 if (i11 != -1) {
-                    this.f14867d = U(i11, J(i11));
+                    this.f15473d = U(i11, K(i11));
                 }
             }
-            int i12 = this.f14867d;
-            this.f14867d = i12 + B(0, i12, this.f14868e, this.f14869i);
-            this.f14875t = u1.a.b(this.f14875t, 0, state.b());
-            l0(this.f14873r);
+            int i12 = this.f15473d;
+            this.f15473d = i12 + B(0, i12, this.f15474e, this.f15475i);
+            this.f15481t = u1.a.b(this.f15481t, 0, state.b());
+            l0(this.f15479r);
             detachAndScrapAttachedViews(recycler);
             D(recycler, state);
-            this.f14879x = getItemCount();
+            this.f15485x = getItemCount();
             return;
         }
         removeAndRecycleAllViews(recycler);
-        this.f14875t = 0;
+        this.f15481t = 0;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public void onLayoutCompleted(RecyclerView.State state) {
         super.onLayoutCompleted(state);
         if (getChildCount() == 0) {
-            this.f14875t = 0;
+            this.f15481t = 0;
         } else {
-            this.f14875t = getPosition(getChildAt(0));
+            this.f15481t = getPosition(getChildAt(0));
         }
         n0();
     }
@@ -1035,10 +1045,10 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public boolean requestChildRectangleOnScreen(RecyclerView recyclerView, View view, Rect rect, boolean z10, boolean z11) {
         int V;
-        if (this.f14873r == null || (V = V(getPosition(view), J(getPosition(view)))) == 0) {
+        if (this.f15479r == null || (V = V(getPosition(view), K(getPosition(view)))) == 0) {
             return false;
         }
-        g0(recyclerView, V(getPosition(view), this.f14873r.j(this.f14867d + B(V, this.f14867d, this.f14868e, this.f14869i), this.f14868e, this.f14869i)));
+        g0(recyclerView, V(getPosition(view), this.f15479r.j(this.f15473d + B(V, this.f15473d, this.f15474e, this.f15475i), this.f15474e, this.f15475i)));
         return true;
     }
 
@@ -1052,13 +1062,13 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public void scrollToPosition(int i10) {
-        this.f14880y = i10;
-        if (this.f14873r == null) {
+        this.f15486y = i10;
+        if (this.f15479r == null) {
             return;
         }
-        this.f14867d = U(i10, J(i10));
-        this.f14875t = u1.a.b(i10, 0, Math.max(0, getItemCount() - 1));
-        l0(this.f14873r);
+        this.f15473d = U(i10, K(i10));
+        this.f15481t = u1.a.b(i10, 0, Math.max(0, getItemCount() - 1));
+        l0(this.f15479r);
         requestLayout();
     }
 
@@ -1075,11 +1085,11 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
             throw new IllegalArgumentException("invalid orientation:" + i10);
         }
         assertNotInLayoutOrScroll(null);
-        com.google.android.material.carousel.c cVar = this.f14877v;
-        if (cVar != null && i10 == cVar.f14899a) {
+        com.google.android.material.carousel.b bVar = this.f15483v;
+        if (bVar != null && i10 == bVar.f15505a) {
             return;
         }
-        this.f14877v = com.google.android.material.carousel.c.b(this, i10);
+        this.f15483v = com.google.android.material.carousel.b.b(this, i10);
         e0();
     }
 
@@ -1090,40 +1100,40 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         startSmoothScroll(aVar);
     }
 
-    public CarouselLayoutManager(com.google.android.material.carousel.d dVar) {
-        this(dVar, 0);
+    public CarouselLayoutManager(com.google.android.material.carousel.c cVar) {
+        this(cVar, 0);
     }
 
-    public CarouselLayoutManager(com.google.android.material.carousel.d dVar, int i10) {
-        this.f14870o = false;
-        this.f14871p = new c();
-        this.f14875t = 0;
-        this.f14878w = new View.OnLayoutChangeListener() { // from class: eh.a
+    public CarouselLayoutManager(com.google.android.material.carousel.c cVar, int i10) {
+        this.f15476o = false;
+        this.f15477p = new c();
+        this.f15481t = 0;
+        this.f15484w = new View.OnLayoutChangeListener() { // from class: gh.b
             @Override // android.view.View.OnLayoutChangeListener
             public final void onLayoutChange(View view, int i11, int i12, int i13, int i14, int i15, int i16, int i17, int i18) {
                 CarouselLayoutManager.l(CarouselLayoutManager.this, view, i11, i12, i13, i14, i15, i16, i17, i18);
             }
         };
-        this.f14880y = -1;
-        this.f14881z = 0;
-        j0(dVar);
+        this.f15486y = -1;
+        this.f15487z = 0;
+        j0(cVar);
         setOrientation(i10);
     }
 
     @SuppressLint({"UnknownNullness"})
     public CarouselLayoutManager(Context context, AttributeSet attributeSet, int i10, int i11) {
-        this.f14870o = false;
-        this.f14871p = new c();
-        this.f14875t = 0;
-        this.f14878w = new View.OnLayoutChangeListener() { // from class: eh.a
+        this.f15476o = false;
+        this.f15477p = new c();
+        this.f15481t = 0;
+        this.f15484w = new View.OnLayoutChangeListener() { // from class: gh.b
             @Override // android.view.View.OnLayoutChangeListener
             public final void onLayoutChange(View view, int i112, int i12, int i13, int i14, int i15, int i16, int i17, int i18) {
                 CarouselLayoutManager.l(CarouselLayoutManager.this, view, i112, i12, i13, i14, i15, i16, i17, i18);
             }
         };
-        this.f14880y = -1;
-        this.f14881z = 0;
-        j0(new h());
+        this.f15486y = -1;
+        this.f15487z = 0;
+        j0(new g());
         i0(context, attributeSet);
     }
 }

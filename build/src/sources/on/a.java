@@ -1,42 +1,40 @@
 package on;
 
-import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.events.Event;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import com.facebook.react.uimanager.PixelUtil;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a extends Event {
+public final class a extends b {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final C0602a f42379a = new C0602a(null);
+    /* renamed from: e  reason: collision with root package name */
+    private final float f40629e;
 
-    /* renamed from: on.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0602a {
-        public /* synthetic */ C0602a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: f  reason: collision with root package name */
+    private final float f40630f;
 
-        private C0602a() {
-        }
+    /* renamed from: g  reason: collision with root package name */
+    private final float f40631g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final float f40632h;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a(nn.b handler) {
+        super(handler);
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        this.f40629e = handler.L();
+        this.f40630f = handler.M();
+        this.f40631g = handler.J();
+        this.f40632h = handler.K();
     }
 
-    public a(int i10, int i11) {
-        super(i10, i11);
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public short getCoalescingKey() {
-        return (short) 0;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    protected WritableMap getEventData() {
-        return Arguments.createMap();
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public String getEventName() {
-        return "topAttached";
+    @Override // on.b
+    public void a(WritableMap eventData) {
+        Intrinsics.checkNotNullParameter(eventData, "eventData");
+        super.a(eventData);
+        eventData.putDouble("x", PixelUtil.toDIPFromPixel(this.f40629e));
+        eventData.putDouble("y", PixelUtil.toDIPFromPixel(this.f40630f));
+        eventData.putDouble("absoluteX", PixelUtil.toDIPFromPixel(this.f40631g));
+        eventData.putDouble("absoluteY", PixelUtil.toDIPFromPixel(this.f40632h));
     }
 }

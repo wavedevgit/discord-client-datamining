@@ -10,15 +10,15 @@ public abstract class o {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f26085a;
+        private final List f27303a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Object f26086b;
+        private final Object f27304b;
 
         /* synthetic */ a(Object obj, byte[] bArr) {
             q.l(obj);
-            this.f26086b = obj;
-            this.f26085a = new ArrayList();
+            this.f27304b = obj;
+            this.f27303a = new ArrayList();
         }
 
         public a a(String str, Object obj) {
@@ -29,15 +29,15 @@ public abstract class o {
             sb2.append(str);
             sb2.append("=");
             sb2.append(valueOf);
-            this.f26085a.add(sb2.toString());
+            this.f27303a.add(sb2.toString());
             return this;
         }
 
         public String toString() {
             StringBuilder sb2 = new StringBuilder(100);
-            sb2.append(this.f26086b.getClass().getSimpleName());
+            sb2.append(this.f27304b.getClass().getSimpleName());
             sb2.append('{');
-            List list = this.f26085a;
+            List list = this.f27303a;
             int size = list.size();
             for (int i10 = 0; i10 < size; i10++) {
                 sb2.append((String) list.get(i10));

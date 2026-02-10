@@ -1,31 +1,32 @@
 package bc;
 
 import android.content.Context;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class c extends h {
+public final class c extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f6441a;
+    private final Context f6547a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final kc.a f6442b;
+    private final kc.a f6548b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final kc.a f6443c;
+    private final kc.a f6549c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f6444d;
+    private final String f6550d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(Context context, kc.a aVar, kc.a aVar2, String str) {
         if (context != null) {
-            this.f6441a = context;
+            this.f6547a = context;
             if (aVar != null) {
-                this.f6442b = aVar;
+                this.f6548b = aVar;
                 if (aVar2 != null) {
-                    this.f6443c = aVar2;
+                    this.f6549c = aVar2;
                     if (str != null) {
-                        this.f6444d = str;
+                        this.f6550d = str;
                         return;
                     }
                     throw new NullPointerException("Null backendName");
@@ -39,22 +40,22 @@ final class c extends h {
 
     @Override // bc.h
     public Context b() {
-        return this.f6441a;
+        return this.f6547a;
     }
 
     @Override // bc.h
     public String c() {
-        return this.f6444d;
+        return this.f6550d;
     }
 
     @Override // bc.h
     public kc.a d() {
-        return this.f6443c;
+        return this.f6549c;
     }
 
     @Override // bc.h
     public kc.a e() {
-        return this.f6442b;
+        return this.f6548b;
     }
 
     public boolean equals(Object obj) {
@@ -63,7 +64,7 @@ final class c extends h {
         }
         if (obj instanceof h) {
             h hVar = (h) obj;
-            if (this.f6441a.equals(hVar.b()) && this.f6442b.equals(hVar.e()) && this.f6443c.equals(hVar.d()) && this.f6444d.equals(hVar.c())) {
+            if (this.f6547a.equals(hVar.b()) && this.f6548b.equals(hVar.e()) && this.f6549c.equals(hVar.d()) && this.f6550d.equals(hVar.c())) {
                 return true;
             }
         }
@@ -71,10 +72,10 @@ final class c extends h {
     }
 
     public int hashCode() {
-        return ((((((this.f6441a.hashCode() ^ 1000003) * 1000003) ^ this.f6442b.hashCode()) * 1000003) ^ this.f6443c.hashCode()) * 1000003) ^ this.f6444d.hashCode();
+        return ((((((this.f6547a.hashCode() ^ 1000003) * 1000003) ^ this.f6548b.hashCode()) * 1000003) ^ this.f6549c.hashCode()) * 1000003) ^ this.f6550d.hashCode();
     }
 
     public String toString() {
-        return "CreationContext{applicationContext=" + this.f6441a + ", wallClock=" + this.f6442b + ", monotonicClock=" + this.f6443c + ", backendName=" + this.f6444d + "}";
+        return "CreationContext{applicationContext=" + this.f6547a + ", wallClock=" + this.f6548b + ", monotonicClock=" + this.f6549c + ", backendName=" + this.f6550d + "}";
     }
 }

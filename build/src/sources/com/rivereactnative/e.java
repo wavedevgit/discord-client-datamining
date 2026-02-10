@@ -12,86 +12,86 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f17758e;
+    public static final a f18507e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final e f17759i = new e("Cover", 0, "cover");
+    public static final e f18508i = new e("Cover", 0, "cover");
 
     /* renamed from: o  reason: collision with root package name */
-    public static final e f17760o = new e("Contain", 1, "contain");
+    public static final e f18509o = new e("Contain", 1, "contain");
 
     /* renamed from: p  reason: collision with root package name */
-    public static final e f17761p = new e("Fill", 2, "fill");
+    public static final e f18510p = new e("Fill", 2, "fill");
 
     /* renamed from: q  reason: collision with root package name */
-    public static final e f17762q = new e("FitWidth", 3, "fitWidth");
+    public static final e f18511q = new e("FitWidth", 3, "fitWidth");
 
     /* renamed from: r  reason: collision with root package name */
-    public static final e f17763r = new e("FitHeight", 4, "fitHeight");
+    public static final e f18512r = new e("FitHeight", 4, "fitHeight");
 
     /* renamed from: s  reason: collision with root package name */
-    public static final e f17764s = new e("None", 5, ViewProps.NONE);
+    public static final e f18513s = new e("None", 5, ViewProps.NONE);
 
     /* renamed from: t  reason: collision with root package name */
-    public static final e f17765t = new e("ScaleDown", 6, "scaleDown");
+    public static final e f18514t = new e("ScaleDown", 6, "scaleDown");
 
     /* renamed from: u  reason: collision with root package name */
-    public static final e f17766u = new e("Layout", 7, "layout");
+    public static final e f18515u = new e("Layout", 7, "layout");
 
     /* renamed from: v  reason: collision with root package name */
-    private static final /* synthetic */ e[] f17767v;
+    private static final /* synthetic */ e[] f18516v;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f17768w;
+    private static final /* synthetic */ EnumEntries f18517w;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f17769d;
+    private final String f18518d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: com.rivereactnative.e$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public /* synthetic */ class C0238a {
+        public /* synthetic */ class C0219a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f17770a;
+            public static final /* synthetic */ int[] f18519a;
 
             static {
                 int[] iArr = new int[e.values().length];
                 try {
-                    iArr[e.f17759i.ordinal()] = 1;
+                    iArr[e.f18508i.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[e.f17760o.ordinal()] = 2;
+                    iArr[e.f18509o.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
                 try {
-                    iArr[e.f17761p.ordinal()] = 3;
+                    iArr[e.f18510p.ordinal()] = 3;
                 } catch (NoSuchFieldError unused3) {
                 }
                 try {
-                    iArr[e.f17762q.ordinal()] = 4;
+                    iArr[e.f18511q.ordinal()] = 4;
                 } catch (NoSuchFieldError unused4) {
                 }
                 try {
-                    iArr[e.f17763r.ordinal()] = 5;
+                    iArr[e.f18512r.ordinal()] = 5;
                 } catch (NoSuchFieldError unused5) {
                 }
                 try {
-                    iArr[e.f17764s.ordinal()] = 6;
+                    iArr[e.f18513s.ordinal()] = 6;
                 } catch (NoSuchFieldError unused6) {
                 }
                 try {
-                    iArr[e.f17765t.ordinal()] = 7;
+                    iArr[e.f18514t.ordinal()] = 7;
                 } catch (NoSuchFieldError unused7) {
                 }
                 try {
-                    iArr[e.f17766u.ordinal()] = 8;
+                    iArr[e.f18515u.ordinal()] = 8;
                 } catch (NoSuchFieldError unused8) {
                 }
-                f17770a = iArr;
+                f18519a = iArr;
             }
         }
 
@@ -112,7 +112,7 @@ public final class e {
 
         public final Fit b(e rnFit) {
             Intrinsics.checkNotNullParameter(rnFit, "rnFit");
-            switch (C0238a.f17770a[rnFit.ordinal()]) {
+            switch (C0219a.f18519a[rnFit.ordinal()]) {
                 case 1:
                     return Fit.COVER;
                 case 2:
@@ -130,7 +130,7 @@ public final class e {
                 case 8:
                     return Fit.LAYOUT;
                 default:
-                    throw new rr.p();
+                    throw new as.p();
             }
         }
 
@@ -140,17 +140,17 @@ public final class e {
 
     static {
         e[] a10 = a();
-        f17767v = a10;
-        f17768w = yr.a.a(a10);
-        f17758e = new a(null);
+        f18516v = a10;
+        f18517w = hs.a.a(a10);
+        f18507e = new a(null);
     }
 
     private e(String str, int i10, String str2) {
-        this.f17769d = str2;
+        this.f18518d = str2;
     }
 
     private static final /* synthetic */ e[] a() {
-        return new e[]{f17759i, f17760o, f17761p, f17762q, f17763r, f17764s, f17765t, f17766u};
+        return new e[]{f18508i, f18509o, f18510p, f18511q, f18512r, f18513s, f18514t, f18515u};
     }
 
     public static e valueOf(String str) {
@@ -158,11 +158,11 @@ public final class e {
     }
 
     public static e[] values() {
-        return (e[]) f17767v.clone();
+        return (e[]) f18516v.clone();
     }
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f17769d;
+        return this.f18518d;
     }
 }

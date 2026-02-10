@@ -35,7 +35,7 @@ public final class FrescoConfigKt {
         ImagePipelineConfig.Builder W = defaultConfigBuilder.V(frescoDiskCache.newRegularDiskCache(context)).Z(frescoDiskCache.newSmallDiskCache(context)).R(new FrescoBitmapSupplier(context)).W(ReactNetworking.INSTANCE.createReactOkHttpNetworkFetcher());
         w.a n10 = w.n();
         z a10 = j.a();
-        ImagePipelineConfig.Builder T = W.X(new y(n10.n(new z(a10.f53437b, a10.f53436a * 2, a10.f53438c)).m())).S(new DefaultCacheKeyFactory() { // from class: com.discord.image.fresco.config.FrescoConfigKt$frescoConfig$2
+        ImagePipelineConfig.Builder T = W.X(new y(n10.n(new z(a10.f52466b, a10.f52465a * 2, a10.f52467c)).m())).S(new DefaultCacheKeyFactory() { // from class: com.discord.image.fresco.config.FrescoConfigKt$frescoConfig$2
             @Override // com.facebook.imagepipeline.cache.DefaultCacheKeyFactory
             protected Uri getCacheKeySourceUri(Uri sourceUri) {
                 boolean isSignedUrl;

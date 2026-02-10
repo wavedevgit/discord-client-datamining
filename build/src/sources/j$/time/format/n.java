@@ -9,48 +9,48 @@ import java.util.Map;
 public final class n implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    public final j$.time.temporal.n f29766a;
+    public final j$.time.temporal.n f30566a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final x f29767b;
+    public final x f30567b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final a f29768c;
+    public final a f30568c;
 
     /* renamed from: d  reason: collision with root package name */
-    public volatile h f29769d;
+    public volatile h f30569d;
 
     public n(j$.time.temporal.n nVar, x xVar, a aVar) {
-        this.f29766a = nVar;
-        this.f29767b = xVar;
-        this.f29768c = aVar;
+        this.f30566a = nVar;
+        this.f30567b = xVar;
+        this.f30568c = aVar;
     }
 
     @Override // j$.time.format.e
     public final boolean r(q qVar, StringBuilder sb2) {
         j$.time.chrono.k kVar;
         Map map;
-        Long a10 = qVar.a(this.f29766a);
-        DateTimeFormatter dateTimeFormatter = qVar.f29779b;
+        Long a10 = qVar.a(this.f30566a);
+        DateTimeFormatter dateTimeFormatter = qVar.f30579b;
         if (a10 == null) {
             return false;
         }
-        j$.time.chrono.j jVar = (j$.time.chrono.j) qVar.f29778a.a(j$.time.temporal.o.f29820b);
+        j$.time.chrono.j jVar = (j$.time.chrono.j) qVar.f30578a.a(j$.time.temporal.o.f30620b);
         String str = null;
-        if (jVar == null || jVar == (kVar = j$.time.chrono.k.f29718a)) {
-            a aVar = this.f29768c;
-            x xVar = this.f29767b;
-            Locale locale = dateTimeFormatter.f29726b;
-            Map map2 = (Map) aVar.f29737a.f29781a.get(xVar);
+        if (jVar == null || jVar == (kVar = j$.time.chrono.k.f30518a)) {
+            a aVar = this.f30568c;
+            x xVar = this.f30567b;
+            Locale locale = dateTimeFormatter.f30526b;
+            Map map2 = (Map) aVar.f30537a.f30581a.get(xVar);
             if (map2 != null) {
                 str = (String) map2.get(a10);
             }
         } else {
-            a aVar2 = this.f29768c;
-            j$.time.temporal.n nVar = this.f29766a;
-            x xVar2 = this.f29767b;
-            Locale locale2 = dateTimeFormatter.f29726b;
-            if ((jVar == kVar || !(nVar instanceof j$.time.temporal.a)) && (map = (Map) aVar2.f29737a.f29781a.get(xVar2)) != null) {
+            a aVar2 = this.f30568c;
+            j$.time.temporal.n nVar = this.f30566a;
+            x xVar2 = this.f30567b;
+            Locale locale2 = dateTimeFormatter.f30526b;
+            if ((jVar == kVar || !(nVar instanceof j$.time.temporal.a)) && (map = (Map) aVar2.f30537a.f30581a.get(xVar2)) != null) {
                 str = (String) map.get(a10);
             }
         }
@@ -58,39 +58,39 @@ public final class n implements e {
             sb2.append(str);
             return true;
         }
-        if (this.f29769d == null) {
-            this.f29769d = new h(this.f29766a, 1, 19, w.NORMAL);
+        if (this.f30569d == null) {
+            this.f30569d = new h(this.f30566a, 1, 19, w.NORMAL);
         }
-        return this.f29769d.r(qVar, sb2);
+        return this.f30569d.r(qVar, sb2);
     }
 
     @Override // j$.time.format.e
     public final int t(o oVar, CharSequence charSequence, int i10) {
         List list;
-        j$.time.temporal.n nVar = this.f29766a;
-        a aVar = this.f29768c;
+        j$.time.temporal.n nVar = this.f30566a;
+        a aVar = this.f30568c;
         int length = charSequence.length();
         if (i10 < 0 || i10 > length) {
             throw new IndexOutOfBoundsException();
         }
-        boolean z10 = oVar.f29772c;
-        DateTimeFormatter dateTimeFormatter = oVar.f29770a;
+        boolean z10 = oVar.f30572c;
+        DateTimeFormatter dateTimeFormatter = oVar.f30570a;
         Iterator it = null;
-        x xVar = z10 ? this.f29767b : null;
-        Object obj = oVar.c().f29786c;
-        if (obj == null && (obj = oVar.f29770a.f29729e) == null) {
-            obj = j$.time.chrono.k.f29718a;
+        x xVar = z10 ? this.f30567b : null;
+        Object obj = oVar.c().f30586c;
+        if (obj == null && (obj = oVar.f30570a.f30529e) == null) {
+            obj = j$.time.chrono.k.f30518a;
         }
-        Object obj2 = j$.time.chrono.k.f29718a;
+        Object obj2 = j$.time.chrono.k.f30518a;
         if (obj == obj2) {
-            Locale locale = dateTimeFormatter.f29726b;
-            List list2 = (List) ((HashMap) aVar.f29737a.f29782b).get(xVar);
+            Locale locale = dateTimeFormatter.f30526b;
+            List list2 = (List) ((HashMap) aVar.f30537a.f30582b).get(xVar);
             if (list2 != null) {
                 it = list2.iterator();
             }
         } else {
-            Locale locale2 = dateTimeFormatter.f29726b;
-            if ((obj == obj2 || !(nVar instanceof j$.time.temporal.a)) && (list = (List) ((HashMap) aVar.f29737a.f29782b).get(xVar)) != null) {
+            Locale locale2 = dateTimeFormatter.f30526b;
+            if ((obj == obj2 || !(nVar instanceof j$.time.temporal.a)) && (list = (List) ((HashMap) aVar.f30537a.f30582b).get(xVar)) != null) {
                 it = list.iterator();
             }
         }
@@ -99,23 +99,23 @@ public final class n implements e {
                 Map.Entry entry = (Map.Entry) it.next();
                 String str = (String) entry.getKey();
                 if (oVar.g(str, 0, charSequence, i10, str.length())) {
-                    return oVar.f(this.f29766a, ((Long) entry.getValue()).longValue(), i10, str.length() + i10);
+                    return oVar.f(this.f30566a, ((Long) entry.getValue()).longValue(), i10, str.length() + i10);
                 }
             }
-            if (oVar.f29772c) {
+            if (oVar.f30572c) {
                 return ~i10;
             }
         }
-        if (this.f29769d == null) {
-            this.f29769d = new h(this.f29766a, 1, 19, w.NORMAL);
+        if (this.f30569d == null) {
+            this.f30569d = new h(this.f30566a, 1, 19, w.NORMAL);
         }
-        return this.f29769d.t(oVar, charSequence, i10);
+        return this.f30569d.t(oVar, charSequence, i10);
     }
 
     public final String toString() {
         x xVar = x.FULL;
-        j$.time.temporal.n nVar = this.f29766a;
-        x xVar2 = this.f29767b;
+        j$.time.temporal.n nVar = this.f30566a;
+        x xVar2 = this.f30567b;
         if (xVar2 == xVar) {
             return "Text(" + nVar + ")";
         }

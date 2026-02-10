@@ -39,8 +39,8 @@ public final class LogBoxDialog extends Dialog {
         Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
         Intrinsics.checkNotNull(layoutParams, "null cannot be cast to non-null type android.widget.FrameLayout.LayoutParams");
-        ((FrameLayout.LayoutParams) layoutParams).setMargins(f10.f3301a, f10.f3302b, f10.f3303c, f10.f3304d);
-        return WindowInsetsCompat.f3402b;
+        ((FrameLayout.LayoutParams) layoutParams).setMargins(f10.f3304a, f10.f3305b, f10.f3306c, f10.f3307d);
+        return WindowInsetsCompat.f3405b;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -68,8 +68,8 @@ public final class LogBoxDialog extends Dialog {
                     return onCreate$lambda$3$lambda$1;
                 }
             };
-            androidx.core.view.h0.D0(view, new androidx.core.view.v() { // from class: com.facebook.react.devsupport.o0
-                @Override // androidx.core.view.v
+            androidx.core.view.i0.x0(view, new androidx.core.view.w() { // from class: com.facebook.react.devsupport.o0
+                @Override // androidx.core.view.w
                 public final WindowInsetsCompat a(View view2, WindowInsetsCompat windowInsetsCompat) {
                     WindowInsetsCompat onCreate$lambda$3$lambda$2;
                     onCreate$lambda$3$lambda$2 = LogBoxDialog.onCreate$lambda$3$lambda$2(Function2.this, view2, windowInsetsCompat);

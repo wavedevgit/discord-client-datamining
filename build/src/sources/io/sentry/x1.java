@@ -75,19 +75,19 @@ import java.util.Map;
 public final class x1 implements b1 {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Charset f29326c = Charset.forName("UTF-8");
+    private static final Charset f30261c = Charset.forName("UTF-8");
 
     /* renamed from: a  reason: collision with root package name */
-    private final k7 f29327a;
+    private final k7 f30262a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f29328b;
+    private final Map f30263b;
 
     public x1(k7 k7Var) {
-        this.f29327a = k7Var;
+        this.f30262a = k7Var;
         HashMap hashMap = new HashMap();
-        this.f29328b = hashMap;
-        hashMap.put(io.sentry.protocol.a.class, new a.C0428a());
+        this.f30263b = hashMap;
+        hashMap.put(io.sentry.protocol.a.class, new a.C0403a());
         hashMap.put(Breadcrumb.class, new Breadcrumb.a());
         hashMap.put(io.sentry.protocol.b.class, new b.a());
         hashMap.put(io.sentry.protocol.c.class, new c.a());
@@ -105,11 +105,11 @@ public final class x1 implements b1 {
         hashMap.put(n3.class, new n3.a());
         hashMap.put(q3.class, new q3.b());
         hashMap.put(r3.class, new r3.a());
-        hashMap.put(io.sentry.profilemeasurements.a.class, new a.C0427a());
+        hashMap.put(io.sentry.profilemeasurements.a.class, new a.C0402a());
         hashMap.put(io.sentry.profilemeasurements.b.class, new b.a());
         hashMap.put(io.sentry.protocol.o.class, new o.a());
         hashMap.put(v3.class, new v3.b());
-        hashMap.put(io.sentry.rrweb.a.class, new a.C0431a());
+        hashMap.put(io.sentry.rrweb.a.class, new a.C0406a());
         hashMap.put(io.sentry.rrweb.c.class, new c.a());
         hashMap.put(io.sentry.rrweb.e.class, new e.a());
         hashMap.put(io.sentry.rrweb.f.class, new f.a());
@@ -156,11 +156,11 @@ public final class x1 implements b1 {
 
     private String h(Object obj, boolean z10) {
         StringWriter stringWriter = new StringWriter();
-        u1 u1Var = new u1(stringWriter, this.f29327a.getMaxDepth());
+        u1 u1Var = new u1(stringWriter, this.f30262a.getMaxDepth());
         if (z10) {
             u1Var.h("\t");
         }
-        u1Var.j(this.f29327a.getLogger(), obj);
+        u1Var.j(this.f30262a.getLogger(), obj);
         return stringWriter.toString();
     }
 
@@ -168,12 +168,12 @@ public final class x1 implements b1 {
     public void a(Object obj, Writer writer) {
         io.sentry.util.y.c(obj, "The entity is required.");
         io.sentry.util.y.c(writer, "The Writer object is required.");
-        ILogger logger = this.f29327a.getLogger();
+        ILogger logger = this.f30262a.getLogger();
         SentryLevel sentryLevel = SentryLevel.DEBUG;
         if (logger.d(sentryLevel)) {
-            this.f29327a.getLogger().c(sentryLevel, "Serializing object: %s", h(obj, this.f29327a.isEnablePrettySerializationOutput()));
+            this.f30262a.getLogger().c(sentryLevel, "Serializing object: %s", h(obj, this.f30262a.isEnablePrettySerializationOutput()));
         }
-        new u1(writer, this.f29327a.getMaxDepth()).j(this.f29327a.getLogger(), obj);
+        new u1(writer, this.f30262a.getMaxDepth()).j(this.f30262a.getLogger(), obj);
         writer.flush();
     }
 
@@ -181,20 +181,20 @@ public final class x1 implements b1 {
     public void b(l5 l5Var, OutputStream outputStream) {
         io.sentry.util.y.c(l5Var, "The SentryEnvelope object is required.");
         io.sentry.util.y.c(outputStream, "The Stream object is required.");
-        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new BufferedOutputStream(outputStream), f29326c));
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new BufferedOutputStream(outputStream), f30261c));
         try {
-            l5Var.b().serialize(new u1(bufferedWriter, this.f29327a.getMaxDepth()), this.f29327a.getLogger());
+            l5Var.b().serialize(new u1(bufferedWriter, this.f30262a.getMaxDepth()), this.f30262a.getLogger());
             bufferedWriter.write(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
             for (l6 l6Var : l5Var.c()) {
                 try {
                     byte[] I = l6Var.I();
-                    l6Var.K().serialize(new u1(bufferedWriter, this.f29327a.getMaxDepth()), this.f29327a.getLogger());
+                    l6Var.K().serialize(new u1(bufferedWriter, this.f30262a.getMaxDepth()), this.f30262a.getLogger());
                     bufferedWriter.write(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
                     bufferedWriter.flush();
                     outputStream.write(I);
                     bufferedWriter.write(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
                 } catch (Exception e10) {
-                    this.f29327a.getLogger().b(SentryLevel.ERROR, "Failed to create envelope item. Dropping it.", e10);
+                    this.f30262a.getLogger().b(SentryLevel.ERROR, "Failed to create envelope item. Dropping it.", e10);
                 }
             }
         } finally {
@@ -204,22 +204,22 @@ public final class x1 implements b1 {
 
     @Override // io.sentry.b1
     public Object c(Reader reader, Class cls) {
-        Object T1;
+        Object Z1;
         try {
             s1 s1Var = new s1(reader);
-            m1 m1Var = (m1) this.f29328b.get(cls);
+            m1 m1Var = (m1) this.f30263b.get(cls);
             if (m1Var != null) {
-                T1 = cls.cast(m1Var.a(s1Var, this.f29327a.getLogger()));
+                Z1 = cls.cast(m1Var.a(s1Var, this.f30262a.getLogger()));
             } else if (g(cls)) {
-                T1 = s1Var.T1();
+                Z1 = s1Var.Z1();
             } else {
                 s1Var.close();
                 return null;
             }
             s1Var.close();
-            return T1;
+            return Z1;
         } catch (Exception e10) {
-            this.f29327a.getLogger().b(SentryLevel.ERROR, "Error when deserializing", e10);
+            this.f30262a.getLogger().b(SentryLevel.ERROR, "Error when deserializing", e10);
             return null;
         }
     }
@@ -228,31 +228,31 @@ public final class x1 implements b1 {
     public l5 d(InputStream inputStream) {
         io.sentry.util.y.c(inputStream, "The InputStream object is required.");
         try {
-            return this.f29327a.getEnvelopeReader().a(inputStream);
+            return this.f30262a.getEnvelopeReader().a(inputStream);
         } catch (IOException e10) {
-            this.f29327a.getLogger().b(SentryLevel.ERROR, "Error deserializing envelope.", e10);
+            this.f30262a.getLogger().b(SentryLevel.ERROR, "Error deserializing envelope.", e10);
             return null;
         }
     }
 
     @Override // io.sentry.b1
     public Object e(Reader reader, Class cls, m1 m1Var) {
-        Object T1;
+        Object Z1;
         try {
             s1 s1Var = new s1(reader);
             if (Collection.class.isAssignableFrom(cls)) {
                 if (m1Var == null) {
-                    T1 = s1Var.T1();
+                    Z1 = s1Var.Z1();
                 } else {
-                    T1 = s1Var.f2(this.f29327a.getLogger(), m1Var);
+                    Z1 = s1Var.k2(this.f30262a.getLogger(), m1Var);
                 }
             } else {
-                T1 = s1Var.T1();
+                Z1 = s1Var.Z1();
             }
             s1Var.close();
-            return T1;
+            return Z1;
         } catch (Throwable th2) {
-            this.f29327a.getLogger().b(SentryLevel.ERROR, "Error when deserializing", th2);
+            this.f30262a.getLogger().b(SentryLevel.ERROR, "Error when deserializing", th2);
             return null;
         }
     }

@@ -8,80 +8,80 @@ import com.facebook.imagepipeline.request.ImageRequest;
 public class v implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Supplier f10994a;
+    private final Supplier f11571a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ma.k f10995b;
+    private final ma.k f11572b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w0 f10996c;
+    private final w0 f11573c;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a extends s {
 
         /* renamed from: c  reason: collision with root package name */
-        private final ProducerContext f10997c;
+        private final ProducerContext f11574c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Supplier f10998d;
+        private final Supplier f11575d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ma.k f10999e;
+        private final ma.k f11576e;
 
         @Override // com.facebook.imagepipeline.producers.c
         /* renamed from: p */
         public void h(ta.k kVar, int i10) {
-            this.f10997c.y().d(this.f10997c, "DiskCacheWriteProducer");
-            if (!c.e(i10) && kVar != null && !c.l(i10, 10) && kVar.z() != ga.c.f24098d) {
-                ImageRequest I = this.f10997c.I();
-                CacheKey encodedCacheKey = this.f10999e.getEncodedCacheKey(I, this.f10997c.a());
-                oa.b bVar = (oa.b) this.f10998d.get();
+            this.f11574c.y().d(this.f11574c, "DiskCacheWriteProducer");
+            if (!c.e(i10) && kVar != null && !c.l(i10, 10) && kVar.z() != ga.c.f25398d) {
+                ImageRequest I = this.f11574c.I();
+                CacheKey encodedCacheKey = this.f11576e.getEncodedCacheKey(I, this.f11574c.a());
+                oa.b bVar = (oa.b) this.f11575d.get();
                 ma.j a10 = t.a(I, bVar.a(), bVar.b(), bVar.c());
                 if (a10 == null) {
-                    y0 y10 = this.f10997c.y();
-                    ProducerContext producerContext = this.f10997c;
+                    y0 y10 = this.f11574c.y();
+                    ProducerContext producerContext = this.f11574c;
                     y10.k(producerContext, "DiskCacheWriteProducer", new t.a("Got no disk cache for CacheChoice: " + Integer.valueOf(I.getCacheChoice().ordinal()).toString()), null);
                     o().b(kVar, i10);
                     return;
                 }
                 a10.p(encodedCacheKey, kVar);
-                this.f10997c.y().j(this.f10997c, "DiskCacheWriteProducer", null);
+                this.f11574c.y().j(this.f11574c, "DiskCacheWriteProducer", null);
                 o().b(kVar, i10);
                 return;
             }
-            this.f10997c.y().j(this.f10997c, "DiskCacheWriteProducer", null);
+            this.f11574c.y().j(this.f11574c, "DiskCacheWriteProducer", null);
             o().b(kVar, i10);
         }
 
         private a(Consumer consumer, ProducerContext producerContext, Supplier supplier, ma.k kVar) {
             super(consumer);
-            this.f10997c = producerContext;
-            this.f10998d = supplier;
-            this.f10999e = kVar;
+            this.f11574c = producerContext;
+            this.f11575d = supplier;
+            this.f11576e = kVar;
         }
     }
 
     public v(Supplier supplier, ma.k kVar, w0 w0Var) {
-        this.f10994a = supplier;
-        this.f10995b = kVar;
-        this.f10996c = w0Var;
+        this.f11571a = supplier;
+        this.f11572b = kVar;
+        this.f11573c = w0Var;
     }
 
     private void c(Consumer consumer, ProducerContext producerContext) {
         ProducerContext producerContext2;
-        if (producerContext.C0().d() >= ImageRequest.RequestLevel.DISK_CACHE.d()) {
+        if (producerContext.z0().d() >= ImageRequest.RequestLevel.DISK_CACHE.d()) {
             producerContext.m("disk", "nil-result_write");
             consumer.b(null, 1);
             return;
         }
         if (producerContext.I().isCacheEnabled(32)) {
             producerContext2 = producerContext;
-            consumer = new a(consumer, producerContext2, this.f10994a, this.f10995b);
+            consumer = new a(consumer, producerContext2, this.f11571a, this.f11572b);
         } else {
             producerContext2 = producerContext;
         }
-        this.f10996c.b(consumer, producerContext2);
+        this.f11573c.b(consumer, producerContext2);
     }
 
     @Override // com.facebook.imagepipeline.producers.w0

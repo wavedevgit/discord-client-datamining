@@ -1,49 +1,21 @@
 package ut;
+
+import java.io.InputStream;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.DeserializationStrategy;
+import kotlinx.serialization.json.Json;
+import vt.l0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-enum b0 implements st.p {
-    TIMEZONE_ID,
-    TIMEZONE_OFFSET;
-
-    @Override // st.p
-    public boolean A() {
-        return false;
-    }
-
-    @Override // st.p
-    public boolean D() {
-        return false;
-    }
-
-    @Override // java.util.Comparator
-    /* renamed from: a */
-    public int compare(st.o oVar, st.o oVar2) {
-        return oVar.u().a().compareTo(oVar2.u().a());
-    }
-
-    @Override // st.p
-    public char d() {
-        return (char) 0;
-    }
-
-    @Override // st.p
-    public boolean f() {
-        return false;
-    }
-
-    @Override // st.p
-    /* renamed from: g */
-    public net.time4j.tz.k e() {
-        return net.time4j.tz.p.r(net.time4j.tz.f.AHEAD_OF_UTC, 14);
-    }
-
-    @Override // st.p
-    public Class getType() {
-        return net.time4j.tz.k.class;
-    }
-
-    @Override // st.p
-    /* renamed from: h */
-    public net.time4j.tz.k B() {
-        return net.time4j.tz.p.r(net.time4j.tz.f.BEHIND_UTC, 14);
+public abstract class b0 {
+    public static final Object a(Json json, DeserializationStrategy deserializer, InputStream stream) {
+        Intrinsics.checkNotNullParameter(json, "<this>");
+        Intrinsics.checkNotNullParameter(deserializer, "deserializer");
+        Intrinsics.checkNotNullParameter(stream, "stream");
+        vt.a0 a0Var = new vt.a0(stream);
+        try {
+            return l0.a(json, deserializer, a0Var);
+        } finally {
+            a0Var.b();
+        }
     }
 }

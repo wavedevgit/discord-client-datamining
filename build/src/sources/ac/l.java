@@ -3,7 +3,7 @@ package ac;
 public abstract class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final cj.h f608a = cj.h.a().d(a.f541a).c();
+    private static final ej.h f608a = ej.h.a().d(a.f541a).c();
 
     public static byte[] a(Object obj) {
         return f608a.c(obj);

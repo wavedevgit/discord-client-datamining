@@ -9,7 +9,7 @@ import org.jetbrains.annotations.NotNull;
 public final class AddToStdlibKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ConcurrentHashMap f34599a = new ConcurrentHashMap();
+    private static final ConcurrentHashMap f34821a = new ConcurrentHashMap();
 
     @NotNull
     public static final Void shouldNotBeCalled(@NotNull String message) {

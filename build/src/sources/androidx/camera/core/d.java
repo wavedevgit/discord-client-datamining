@@ -10,23 +10,23 @@ import java.util.concurrent.Executor;
 public class d implements j1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ImageReader f2092a;
+    private final ImageReader f2095a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f2093b = new Object();
+    private final Object f2096b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f2094c = true;
+    private boolean f2097c = true;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(ImageReader imageReader) {
-        this.f2092a = imageReader;
+        this.f2095a = imageReader;
     }
 
     public static /* synthetic */ void a(final d dVar, Executor executor, final j1.a aVar, ImageReader imageReader) {
-        synchronized (dVar.f2093b) {
+        synchronized (dVar.f2096b) {
             try {
-                if (!dVar.f2094c) {
+                if (!dVar.f2097c) {
                     executor.execute(new Runnable() { // from class: androidx.camera.core.c
                         @Override // java.lang.Runnable
                         public final void run() {
@@ -52,9 +52,9 @@ public class d implements j1 {
     @Override // a0.j1
     public n b() {
         Image image;
-        synchronized (this.f2093b) {
+        synchronized (this.f2096b) {
             try {
-                image = this.f2092a.acquireLatestImage();
+                image = this.f2095a.acquireLatestImage();
             } catch (RuntimeException e10) {
                 if (i(e10)) {
                     image = null;
@@ -72,32 +72,32 @@ public class d implements j1 {
     @Override // a0.j1
     public int c() {
         int imageFormat;
-        synchronized (this.f2093b) {
-            imageFormat = this.f2092a.getImageFormat();
+        synchronized (this.f2096b) {
+            imageFormat = this.f2095a.getImageFormat();
         }
         return imageFormat;
     }
 
     @Override // a0.j1
     public void close() {
-        synchronized (this.f2093b) {
-            this.f2092a.close();
+        synchronized (this.f2096b) {
+            this.f2095a.close();
         }
     }
 
     @Override // a0.j1
     public void d() {
-        synchronized (this.f2093b) {
-            this.f2094c = true;
-            this.f2092a.setOnImageAvailableListener(null, null);
+        synchronized (this.f2096b) {
+            this.f2097c = true;
+            this.f2095a.setOnImageAvailableListener(null, null);
         }
     }
 
     @Override // a0.j1
     public void e(final j1.a aVar, final Executor executor) {
-        synchronized (this.f2093b) {
-            this.f2094c = false;
-            this.f2092a.setOnImageAvailableListener(new ImageReader.OnImageAvailableListener() { // from class: androidx.camera.core.b
+        synchronized (this.f2096b) {
+            this.f2097c = false;
+            this.f2095a.setOnImageAvailableListener(new ImageReader.OnImageAvailableListener() { // from class: androidx.camera.core.b
                 @Override // android.media.ImageReader.OnImageAvailableListener
                 public final void onImageAvailable(ImageReader imageReader) {
                     d.a(d.this, executor, aVar, imageReader);
@@ -109,8 +109,8 @@ public class d implements j1 {
     @Override // a0.j1
     public int f() {
         int maxImages;
-        synchronized (this.f2093b) {
-            maxImages = this.f2092a.getMaxImages();
+        synchronized (this.f2096b) {
+            maxImages = this.f2095a.getMaxImages();
         }
         return maxImages;
     }
@@ -118,9 +118,9 @@ public class d implements j1 {
     @Override // a0.j1
     public n g() {
         Image image;
-        synchronized (this.f2093b) {
+        synchronized (this.f2096b) {
             try {
-                image = this.f2092a.acquireNextImage();
+                image = this.f2095a.acquireNextImage();
             } catch (RuntimeException e10) {
                 if (i(e10)) {
                     image = null;
@@ -138,8 +138,8 @@ public class d implements j1 {
     @Override // a0.j1
     public int getHeight() {
         int height;
-        synchronized (this.f2093b) {
-            height = this.f2092a.getHeight();
+        synchronized (this.f2096b) {
+            height = this.f2095a.getHeight();
         }
         return height;
     }
@@ -147,8 +147,8 @@ public class d implements j1 {
     @Override // a0.j1
     public Surface getSurface() {
         Surface surface;
-        synchronized (this.f2093b) {
-            surface = this.f2092a.getSurface();
+        synchronized (this.f2096b) {
+            surface = this.f2095a.getSurface();
         }
         return surface;
     }
@@ -156,8 +156,8 @@ public class d implements j1 {
     @Override // a0.j1
     public int getWidth() {
         int width;
-        synchronized (this.f2093b) {
-            width = this.f2092a.getWidth();
+        synchronized (this.f2096b) {
+            width = this.f2095a.getWidth();
         }
         return width;
     }

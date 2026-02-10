@@ -50,7 +50,7 @@ public final class AttributeStyles_ComplexTextBasedTextColorStyleJsonAdapter ext
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
@@ -70,7 +70,7 @@ public final class AttributeStyles_ComplexTextBasedTextColorStyleJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.ComplexTextBasedTextColorStyle complexTextBasedTextColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complexTextBasedTextColorStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("value");
             this.nullableComplexElementColorAdapter.toJson(writer, complexTextBasedTextColorStyle.getValue());
             writer.J(ReactTextInputShadowNode.PROP_PLACEHOLDER);

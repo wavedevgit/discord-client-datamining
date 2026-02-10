@@ -5,21 +5,21 @@ import l5.z;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static z f55508a = new c();
+    private static z f55439a = new c();
 
     public static void a(String str) {
-        f55508a.c(str);
+        f55439a.c(str);
     }
 
     public static void b(String str, Throwable th2) {
-        f55508a.b(str, th2);
+        f55439a.b(str, th2);
     }
 
     public static void c(String str) {
-        f55508a.a(str);
+        f55439a.a(str);
     }
 
     public static void d(String str, Throwable th2) {
-        f55508a.d(str, th2);
+        f55439a.d(str, th2);
     }
 }

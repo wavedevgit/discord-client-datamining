@@ -7,20 +7,20 @@ import java.io.Writer;
 final class q0 extends Writer {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f4482d;
+    private final String f4492d;
 
     /* renamed from: e  reason: collision with root package name */
-    private StringBuilder f4483e = new StringBuilder((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+    private StringBuilder f4493e = new StringBuilder((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q0(String str) {
-        this.f4482d = str;
+        this.f4492d = str;
     }
 
     private void a() {
-        if (this.f4483e.length() > 0) {
-            Log.d(this.f4482d, this.f4483e.toString());
-            StringBuilder sb2 = this.f4483e;
+        if (this.f4493e.length() > 0) {
+            Log.d(this.f4492d, this.f4493e.toString());
+            StringBuilder sb2 = this.f4493e;
             sb2.delete(0, sb2.length());
         }
     }
@@ -42,7 +42,7 @@ final class q0 extends Writer {
             if (c10 == '\n') {
                 a();
             } else {
-                this.f4483e.append(c10);
+                this.f4493e.append(c10);
             }
         }
     }

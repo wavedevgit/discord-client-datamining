@@ -1,38 +1,38 @@
 package kotlinx.serialization.internal;
 
+import as.b0;
+import as.c0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.encoding.CompositeEncoder;
-import kt.f2;
-import kt.z2;
-import rr.b0;
-import rr.c0;
+import tt.f2;
+import tt.z2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class k extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final k f34875c = new k();
+    public static final k f35097c = new k();
 
     private k() {
-        super(ht.a.J(b0.f49182e));
+        super(rt.a.x(b0.f6054e));
     }
 
-    @Override // kt.a
+    @Override // tt.a
     public /* bridge */ /* synthetic */ int e(Object obj) {
         return v(((c0) obj).t());
     }
 
-    @Override // kt.a
+    @Override // tt.a
     public /* bridge */ /* synthetic */ Object k(Object obj) {
         return y(((c0) obj).t());
     }
 
-    @Override // kt.f2
+    @Override // tt.f2
     public /* bridge */ /* synthetic */ Object r() {
         return c0.b(w());
     }
 
-    @Override // kt.f2
+    @Override // tt.f2
     public /* bridge */ /* synthetic */ void u(CompositeEncoder compositeEncoder, Object obj, int i10) {
         z(compositeEncoder, ((c0) obj).t(), i10);
     }
@@ -47,7 +47,7 @@ public final class k extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.s, kt.a
+    @Override // tt.s, tt.a
     /* renamed from: x */
     public void h(kotlinx.serialization.encoding.c decoder, int i10, z2 builder, boolean z10) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
@@ -64,7 +64,7 @@ public final class k extends f2 implements KSerializer {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(content, "content");
         for (int i11 = 0; i11 < i10; i11++) {
-            encoder.e(getDescriptor(), i11).m(c0.i(content, i11));
+            encoder.e(getDescriptor(), i11).l(c0.j(content, i11));
         }
     }
 }

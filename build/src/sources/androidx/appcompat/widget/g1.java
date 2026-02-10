@@ -13,13 +13,13 @@ import java.lang.reflect.Method;
 public abstract class g1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static boolean f1809a;
+    private static boolean f1812a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static Method f1810b;
+    private static Method f1813b;
 
     /* renamed from: c  reason: collision with root package name */
-    static final boolean f1811c;
+    static final boolean f1814c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -36,7 +36,7 @@ public abstract class g1 {
         } else {
             z10 = false;
         }
-        f1811c = z10;
+        f1814c = z10;
     }
 
     public static void a(View view, Rect rect, Rect rect2) {
@@ -44,19 +44,19 @@ public abstract class g1 {
             a.a(view, rect, rect2);
             return;
         }
-        if (!f1809a) {
-            f1809a = true;
+        if (!f1812a) {
+            f1812a = true;
             try {
                 Method declaredMethod = View.class.getDeclaredMethod("computeFitSystemWindows", Rect.class, Rect.class);
-                f1810b = declaredMethod;
+                f1813b = declaredMethod;
                 if (!declaredMethod.isAccessible()) {
-                    f1810b.setAccessible(true);
+                    f1813b.setAccessible(true);
                 }
             } catch (NoSuchMethodException unused) {
                 Log.d("ViewUtils", "Could not find method computeFitSystemWindows. Oh well.");
             }
         }
-        Method method = f1810b;
+        Method method = f1813b;
         if (method != null) {
             try {
                 method.invoke(view, rect, rect2);

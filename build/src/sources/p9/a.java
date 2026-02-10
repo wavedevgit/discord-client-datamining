@@ -9,7 +9,7 @@ public interface a extends d {
 
     /* renamed from: p9.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface InterfaceC0610a {
+    public interface InterfaceC0586a {
     }
 
     int c();
@@ -26,5 +26,5 @@ public interface a extends d {
 
     void l(int i10);
 
-    void n(InterfaceC0610a interfaceC0610a);
+    void n(InterfaceC0586a interfaceC0586a);
 }

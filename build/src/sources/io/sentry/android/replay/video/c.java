@@ -7,6 +7,8 @@ import android.media.MediaCrypto;
 import android.media.MediaFormat;
 import android.util.Range;
 import android.view.Surface;
+import as.l;
+import as.o;
 import io.sentry.ILogger;
 import io.sentry.SentryLevel;
 import io.sentry.k7;
@@ -16,43 +18,41 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.text.StringsKt;
-import rr.l;
-import rr.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k7 f28096a;
+    private final k7 f29031a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final io.sentry.android.replay.video.a f28097b;
+    private final io.sentry.android.replay.video.a f29032b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Function0 f28098c;
+    private final Function0 f29033c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lazy f28099d;
+    private final Lazy f29034d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final MediaCodec f28100e;
+    private final MediaCodec f29035e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Lazy f28101f;
+    private final Lazy f29036f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final MediaCodec.BufferInfo f28102g;
+    private final MediaCodec.BufferInfo f29037g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final io.sentry.android.replay.video.b f28103h;
+    private final io.sentry.android.replay.video.b f29038h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Surface f28104i;
+    private Surface f29039i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f28105d = new a();
+        public static final a f29040d = new a();
 
         a() {
             super(0);
@@ -118,23 +118,23 @@ public final class c {
         MediaCodec createEncoderByType;
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(muxerConfig, "muxerConfig");
-        this.f28096a = options;
-        this.f28097b = muxerConfig;
-        this.f28098c = function0;
-        o oVar = o.f49211i;
-        this.f28099d = l.b(oVar, a.f28105d);
+        this.f29031a = options;
+        this.f29032b = muxerConfig;
+        this.f29033c = function0;
+        o oVar = o.f6083i;
+        this.f29034d = l.a(oVar, a.f29040d);
         if (d()) {
             createEncoderByType = MediaCodec.createByCodecName("c2.android.avc.encoder");
         } else {
             createEncoderByType = MediaCodec.createEncoderByType(muxerConfig.d());
         }
         Intrinsics.checkNotNull(createEncoderByType);
-        this.f28100e = createEncoderByType;
-        this.f28101f = l.b(oVar, new b());
-        this.f28102g = new MediaCodec.BufferInfo();
+        this.f29035e = createEncoderByType;
+        this.f29036f = l.a(oVar, new b());
+        this.f29037g = new MediaCodec.BufferInfo();
         String absolutePath = muxerConfig.b().getAbsolutePath();
         Intrinsics.checkNotNullExpressionValue(absolutePath, "getAbsolutePath(...)");
-        this.f28103h = new io.sentry.android.replay.video.b(absolutePath, muxerConfig.c());
+        this.f29038h = new io.sentry.android.replay.video.b(absolutePath, muxerConfig.c());
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:63:0x01e0, code lost:
@@ -153,11 +153,11 @@ public final class c {
     }
 
     private final boolean d() {
-        return ((Boolean) this.f28099d.getValue()).booleanValue();
+        return ((Boolean) this.f29034d.getValue()).booleanValue();
     }
 
     private final MediaFormat f() {
-        return (MediaFormat) this.f28101f.getValue();
+        return (MediaFormat) this.f29036f.getValue();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x0054  */
@@ -183,7 +183,7 @@ public final class c {
             java.lang.String r1 = "motorola"
             boolean r0 = kotlin.text.StringsKt.T(r0, r1, r3)
             if (r0 != 0) goto L4a
-            io.sentry.android.replay.util.l r0 = io.sentry.android.replay.util.l.f28060a
+            io.sentry.android.replay.util.l r0 = io.sentry.android.replay.util.l.f28995a
             io.sentry.android.replay.util.l$a r1 = io.sentry.android.replay.util.l.a.SOC_MANUFACTURER
             r2 = 2
             java.lang.String r5 = io.sentry.android.replay.util.l.b(r0, r1, r4, r2, r4)
@@ -196,7 +196,7 @@ public final class c {
             if (r0 == 0) goto L3f
             goto L4a
         L3f:
-            android.view.Surface r0 = r7.f28104i
+            android.view.Surface r0 = r7.f29039i
             if (r0 == 0) goto L48
             android.graphics.Canvas r0 = r0.lockHardwareCanvas()
             goto L52
@@ -204,7 +204,7 @@ public final class c {
             r0 = r4
             goto L52
         L4a:
-            android.view.Surface r0 = r7.f28104i
+            android.view.Surface r0 = r7.f29039i
             if (r0 == 0) goto L48
             android.graphics.Canvas r0 = r0.lockCanvas(r4)
         L52:
@@ -212,7 +212,7 @@ public final class c {
             r1 = 0
             r0.drawBitmap(r8, r1, r1, r4)
         L58:
-            android.view.Surface r8 = r7.f28104i
+            android.view.Surface r8 = r7.f29039i
             if (r8 == 0) goto L5f
             r8.unlockCanvasAndPost(r0)
         L5f:
@@ -224,44 +224,44 @@ public final class c {
     }
 
     public final long c() {
-        return this.f28103h.a();
+        return this.f29038h.a();
     }
 
     public final MediaCodec e() {
-        return this.f28100e;
+        return this.f29035e;
     }
 
     public final io.sentry.android.replay.video.a g() {
-        return this.f28097b;
+        return this.f29032b;
     }
 
     public final k7 h() {
-        return this.f28096a;
+        return this.f29031a;
     }
 
     public final void i() {
         try {
-            Function0 function0 = this.f28098c;
+            Function0 function0 = this.f29033c;
             if (function0 != null) {
                 function0.invoke();
             }
             a(true);
-            this.f28100e.stop();
-            this.f28100e.release();
-            Surface surface = this.f28104i;
+            this.f29035e.stop();
+            this.f29035e.release();
+            Surface surface = this.f29039i;
             if (surface != null) {
                 surface.release();
             }
-            this.f28103h.d();
+            this.f29038h.d();
         } catch (Throwable th2) {
-            this.f28096a.getLogger().b(SentryLevel.DEBUG, "Failed to properly release video encoder", th2);
+            this.f29031a.getLogger().b(SentryLevel.DEBUG, "Failed to properly release video encoder", th2);
         }
     }
 
     public final void j() {
-        this.f28100e.configure(f(), (Surface) null, (MediaCrypto) null, 1);
-        this.f28104i = this.f28100e.createInputSurface();
-        this.f28100e.start();
+        this.f29035e.configure(f(), (Surface) null, (MediaCrypto) null, 1);
+        this.f29039i = this.f29035e.createInputSurface();
+        this.f29035e.start();
         a(false);
     }
 

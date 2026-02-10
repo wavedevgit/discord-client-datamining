@@ -1,34 +1,34 @@
 package og;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class h5 implements zi.d {
+final class h5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final h5 f40927a = new h5();
+    static final h5 f39253a = new h5();
 
     static {
-        c.b a10 = zi.c.a("errorCode");
+        c.b a10 = bj.c.a("errorCode");
         l2 l2Var = new l2();
         l2Var.a(1);
         a10.b(l2Var.b()).a();
-        c.b a11 = zi.c.a("isColdCall");
+        c.b a11 = bj.c.a("isColdCall");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
         a11.b(l2Var2.b()).a();
-        c.b a12 = zi.c.a("imageInfo");
+        c.b a12 = bj.c.a("imageInfo");
         l2 l2Var3 = new l2();
         l2Var3.a(3);
         a12.b(l2Var3.b()).a();
-        c.b a13 = zi.c.a("detectorOptions");
+        c.b a13 = bj.c.a("detectorOptions");
         l2 l2Var4 = new l2();
         l2Var4.a(4);
         a13.b(l2Var4.b()).a();
-        c.b a14 = zi.c.a("contourDetectedFaces");
+        c.b a14 = bj.c.a("contourDetectedFaces");
         l2 l2Var5 = new l2();
         l2Var5.a(5);
         a14.b(l2Var5.b()).a();
-        c.b a15 = zi.c.a("nonContourDetectedFaces");
+        c.b a15 = bj.c.a("nonContourDetectedFaces");
         l2 l2Var6 = new l2();
         l2Var6.a(6);
         a15.b(l2Var6.b()).a();
@@ -37,10 +37,10 @@ final class h5 implements zi.d {
     private h5() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

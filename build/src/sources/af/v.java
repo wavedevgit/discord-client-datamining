@@ -23,17 +23,17 @@ public final class v extends q {
     }
 
     @Override // af.r
-    public final void l() {
+    public final void n() {
         f();
         p.a(this.f772c).b();
     }
 
     @Override // af.r
-    public final void r() {
+    public final void u() {
         f();
         c b10 = c.b(this.f772c);
         GoogleSignInAccount c10 = b10.c();
-        GoogleSignInOptions googleSignInOptions = GoogleSignInOptions.f13805w;
+        GoogleSignInOptions googleSignInOptions = GoogleSignInOptions.f14382w;
         if (c10 != null) {
             googleSignInOptions = b10.d();
         }

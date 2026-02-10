@@ -6,16 +6,16 @@ import kotlin.jvm.functions.Function0;
 public class h implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ModuleDescriptorImpl f32351d;
+    private final ModuleDescriptorImpl f32573d;
 
     public h(ModuleDescriptorImpl moduleDescriptorImpl) {
-        this.f32351d = moduleDescriptorImpl;
+        this.f32573d = moduleDescriptorImpl;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         CompositePackageFragmentProvider f10;
-        f10 = ModuleDescriptorImpl.f(this.f32351d);
+        f10 = ModuleDescriptorImpl.f(this.f32573d);
         return f10;
     }
 }

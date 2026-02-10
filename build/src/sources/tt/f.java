@@ -1,11 +1,81 @@
 package tt;
 
-import java.util.Locale;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface f {
-    String b(e eVar, Locale locale);
+public final class f extends t {
 
-    String f(e eVar, e eVar2, Locale locale);
+    /* renamed from: b  reason: collision with root package name */
+    private final SerialDescriptor f49986b;
 
-    String g(e eVar, Locale locale);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public f(KSerializer element) {
+        super(element);
+        Intrinsics.checkNotNullParameter(element, "element");
+        this.f49986b = new e(element.getDescriptor());
+    }
+
+    @Override // tt.s, kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return this.f49986b;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // tt.a
+    /* renamed from: q */
+    public ArrayList a() {
+        return new ArrayList();
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // tt.a
+    /* renamed from: r */
+    public int b(ArrayList arrayList) {
+        Intrinsics.checkNotNullParameter(arrayList, "<this>");
+        return arrayList.size();
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // tt.a
+    /* renamed from: s */
+    public void c(ArrayList arrayList, int i10) {
+        Intrinsics.checkNotNullParameter(arrayList, "<this>");
+        arrayList.ensureCapacity(i10);
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // tt.s
+    /* renamed from: t */
+    public void n(ArrayList arrayList, int i10, Object obj) {
+        Intrinsics.checkNotNullParameter(arrayList, "<this>");
+        arrayList.add(i10, obj);
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // tt.a
+    /* renamed from: u */
+    public ArrayList k(List list) {
+        ArrayList arrayList;
+        Intrinsics.checkNotNullParameter(list, "<this>");
+        if (list instanceof ArrayList) {
+            arrayList = (ArrayList) list;
+        } else {
+            arrayList = null;
+        }
+        if (arrayList == null) {
+            return new ArrayList(list);
+        }
+        return arrayList;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // tt.a
+    /* renamed from: v */
+    public List l(ArrayList arrayList) {
+        Intrinsics.checkNotNullParameter(arrayList, "<this>");
+        return arrayList;
+    }
 }

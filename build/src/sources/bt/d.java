@@ -1,46 +1,114 @@
 package bt;
 
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.FlowCollector;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d {
-    public static final int a(char c10) {
-        return c10 - '0';
-    }
+public final class d implements c {
 
-    public static final boolean b(char c10) {
-        if ('0' > c10 || c10 >= ':') {
-            return false;
-        }
-        return true;
-    }
+    /* renamed from: d  reason: collision with root package name */
+    private final Flow f7547d;
 
-    private static final String c(String str, int i10) {
-        if (str.length() >= i10 + 12) {
-            int i11 = 0;
-            if (StringsKt.U("+-", str.charAt(0), false, 2, null)) {
-                int h02 = StringsKt.h0(str, '-', 1, false, 4, null);
-                if (h02 < 12) {
-                    return str;
-                }
-                while (true) {
-                    int i12 = i11 + 1;
-                    if (str.charAt(i12) != '0') {
-                        break;
-                    }
-                    i11 = i12;
-                }
-                if (h02 - i11 >= 12) {
-                    return str;
-                }
-                return StringsKt.C0(str, 1, h02 - 10).toString();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class a implements FlowCollector {
+
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ FlowCollector f7548d;
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: bt.d$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class C0109a extends kotlin.coroutines.jvm.internal.d {
+
+            /* renamed from: d  reason: collision with root package name */
+            /* synthetic */ Object f7549d;
+
+            /* renamed from: i  reason: collision with root package name */
+            int f7551i;
+
+            C0109a(Continuation continuation) {
+                super(continuation);
+            }
+
+            @Override // kotlin.coroutines.jvm.internal.a
+            public final Object invokeSuspend(Object obj) {
+                this.f7549d = obj;
+                this.f7551i |= Integer.MIN_VALUE;
+                return a.this.emit(null, this);
             }
         }
-        return str;
+
+        a(FlowCollector flowCollector) {
+            this.f7548d = flowCollector;
+        }
+
+        /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
+        /* JADX WARN: Removed duplicated region for block: B:14:0x0031  */
+        @Override // kotlinx.coroutines.flow.FlowCollector
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public final java.lang.Object emit(java.lang.Object r5, kotlin.coroutines.Continuation r6) {
+            /*
+                r4 = this;
+                boolean r0 = r6 instanceof bt.d.a.C0109a
+                if (r0 == 0) goto L13
+                r0 = r6
+                bt.d$a$a r0 = (bt.d.a.C0109a) r0
+                int r1 = r0.f7551i
+                r2 = -2147483648(0xffffffff80000000, float:-0.0)
+                r3 = r1 & r2
+                if (r3 == 0) goto L13
+                int r1 = r1 - r2
+                r0.f7551i = r1
+                goto L18
+            L13:
+                bt.d$a$a r0 = new bt.d$a$a
+                r0.<init>(r6)
+            L18:
+                java.lang.Object r6 = r0.f7549d
+                java.lang.Object r1 = gs.b.f()
+                int r2 = r0.f7551i
+                r3 = 1
+                if (r2 == 0) goto L31
+                if (r2 != r3) goto L29
+                kotlin.c.b(r6)
+                goto L46
+            L29:
+                java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
+                java.lang.String r6 = "call to 'resume' before 'invoke' with coroutine"
+                r5.<init>(r6)
+                throw r5
+            L31:
+                kotlin.c.b(r6)
+                kotlin.coroutines.CoroutineContext r6 = r0.getContext()
+                kotlinx.coroutines.z.k(r6)
+                kotlinx.coroutines.flow.FlowCollector r6 = r4.f7548d
+                r0.f7551i = r3
+                java.lang.Object r5 = r6.emit(r5, r0)
+                if (r5 != r1) goto L46
+                return r1
+            L46:
+                kotlin.Unit r5 = kotlin.Unit.f31987a
+                return r5
+            */
+            throw new UnsupportedOperationException("Method not decompiled: bt.d.a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
+        }
     }
 
-    public static final String d(String input) {
-        Intrinsics.checkNotNullParameter(input, "input");
-        return c(input.toString(), 6);
+    public d(Flow flow) {
+        this.f7547d = flow;
+    }
+
+    @Override // kotlinx.coroutines.flow.Flow
+    public Object collect(FlowCollector flowCollector, Continuation continuation) {
+        Object collect = this.f7547d.collect(new a(flowCollector), continuation);
+        if (collect == gs.b.f()) {
+            return collect;
+        }
+        return Unit.f31987a;
     }
 }

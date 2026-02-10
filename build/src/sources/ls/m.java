@@ -1,18 +1,19 @@
 package ls;
 
-import java.lang.reflect.Method;
-import kotlin.jvm.functions.Function1;
-import ls.n;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class m implements Function1 {
+import java.io.File;
+import kotlin.io.FileWalkDirection;
+import kotlin.jvm.internal.Intrinsics;
+/* JADX INFO: Access modifiers changed from: package-private */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public class m extends l {
+    public static final i n(File file, FileWalkDirection direction) {
+        Intrinsics.checkNotNullParameter(file, "<this>");
+        Intrinsics.checkNotNullParameter(direction, "direction");
+        return new i(file, direction);
+    }
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final m f36489d = new m();
-
-    @Override // kotlin.jvm.functions.Function1
-    public Object invoke(Object obj) {
-        CharSequence c10;
-        c10 = n.a.c((Method) obj);
-        return c10;
+    public static final i o(File file) {
+        Intrinsics.checkNotNullParameter(file, "<this>");
+        return n(file, FileWalkDirection.f32070e);
     }
 }

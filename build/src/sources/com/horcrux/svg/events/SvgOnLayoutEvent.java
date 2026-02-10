@@ -11,15 +11,15 @@ public class SvgOnLayoutEvent extends Event<SvgOnLayoutEvent> {
     public int width;
 
     /* renamed from: x  reason: collision with root package name */
-    public int f16998x;
+    public int f17747x;
 
     /* renamed from: y  reason: collision with root package name */
-    public int f16999y;
+    public int f17748y;
 
     public SvgOnLayoutEvent(int i10, int i11, int i12, int i13, int i14, int i15) {
         super(i10, i11);
-        this.f16998x = i12;
-        this.f16999y = i13;
+        this.f17747x = i12;
+        this.f17748y = i13;
         this.width = i14;
         this.height = i15;
     }
@@ -32,8 +32,8 @@ public class SvgOnLayoutEvent extends Event<SvgOnLayoutEvent> {
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
         WritableMap createMap = Arguments.createMap();
-        createMap.putDouble("x", PixelUtil.toDIPFromPixel(this.f16998x));
-        createMap.putDouble("y", PixelUtil.toDIPFromPixel(this.f16999y));
+        createMap.putDouble("x", PixelUtil.toDIPFromPixel(this.f17747x));
+        createMap.putDouble("y", PixelUtil.toDIPFromPixel(this.f17748y));
         createMap.putDouble("width", PixelUtil.toDIPFromPixel(this.width));
         createMap.putDouble("height", PixelUtil.toDIPFromPixel(this.height));
         WritableMap createMap2 = Arguments.createMap();

@@ -1,32 +1,32 @@
 package com.google.android.play.core.assetpacks;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a1 implements yh.t {
+public final class a1 implements ai.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final yh.w f15792a;
+    private final ai.w f16541a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final yh.w f15793b;
+    private final ai.w f16542b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final yh.w f15794c;
+    private final ai.w f16543c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final yh.w f15795d;
+    private final ai.w f16544d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final yh.w f15796e;
+    private final ai.w f16545e;
 
-    public a1(yh.w wVar, yh.w wVar2, yh.w wVar3, yh.w wVar4, yh.w wVar5) {
-        this.f15792a = wVar;
-        this.f15793b = wVar2;
-        this.f15794c = wVar3;
-        this.f15795d = wVar4;
-        this.f15796e = wVar5;
+    public a1(ai.w wVar, ai.w wVar2, ai.w wVar3, ai.w wVar4, ai.w wVar5) {
+        this.f16541a = wVar;
+        this.f16542b = wVar2;
+        this.f16543c = wVar3;
+        this.f16544d = wVar4;
+        this.f16545e = wVar5;
     }
 
-    @Override // yh.w
+    @Override // ai.w
     public final /* bridge */ /* synthetic */ Object a() {
-        return new a0(((q4) this.f15792a).b(), (n0) this.f15793b.a(), (k4) this.f15794c.a(), (p1) this.f15795d.a(), (m3) this.f15796e.a());
+        return new a0(((q4) this.f16541a).b(), (n0) this.f16542b.a(), (k4) this.f16543c.a(), (p1) this.f16544d.a(), (m3) this.f16545e.a());
     }
 }

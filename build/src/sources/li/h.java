@@ -1,13 +1,20 @@
 package li;
 
-import android.content.Context;
+import java.util.concurrent.atomic.AtomicReference;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class h {
-    public static Context a(Context context) {
-        Context applicationContext = context.getApplicationContext();
-        if (applicationContext != null) {
-            return applicationContext;
-        }
-        return context;
+public enum h implements e {
+    INSTANCE;
+    
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final AtomicReference f35839e = new AtomicReference(null);
+
+    public final void a(f fVar) {
+        f35839e.set(fVar);
+    }
+
+    @Override // li.e
+    public final f zza() {
+        return (f) f35839e.get();
     }
 }

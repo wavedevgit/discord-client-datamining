@@ -1,80 +1,106 @@
 package kt;
 
-import java.util.HashSet;
-import java.util.Set;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlin.jvm.internal.MutablePropertyReference1Impl;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class l0 extends t {
+final class l0 {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final l0 f35253a = new l0();
 
     /* renamed from: b  reason: collision with root package name */
-    private final SerialDescriptor f35166b;
-
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public l0(KSerializer eSerializer) {
-        super(eSerializer);
-        Intrinsics.checkNotNullParameter(eSerializer, "eSerializer");
-        this.f35166b = new k0(eSerializer.getDescriptor());
-    }
-
-    @Override // kt.s, kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return this.f35166b;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.a
-    /* renamed from: q */
-    public HashSet a() {
-        return new HashSet();
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.a
-    /* renamed from: r */
-    public int b(HashSet hashSet) {
-        Intrinsics.checkNotNullParameter(hashSet, "<this>");
-        return hashSet.size();
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.a
-    /* renamed from: s */
-    public void c(HashSet hashSet, int i10) {
-        Intrinsics.checkNotNullParameter(hashSet, "<this>");
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.s
-    /* renamed from: t */
-    public void n(HashSet hashSet, int i10, Object obj) {
-        Intrinsics.checkNotNullParameter(hashSet, "<this>");
-        hashSet.add(obj);
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.a
-    /* renamed from: u */
-    public HashSet k(Set set) {
-        HashSet hashSet;
-        Intrinsics.checkNotNullParameter(set, "<this>");
-        if (set instanceof HashSet) {
-            hashSet = (HashSet) set;
-        } else {
-            hashSet = null;
+    private static final mt.b0 f35254b = new mt.b0(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.l0.c
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
+        public Object get(Object obj) {
+            return ((k0) obj).h();
         }
-        if (hashSet == null) {
-            return new HashSet(set);
+
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
+        public void set(Object obj, Object obj2) {
+            ((k0) obj).D((Integer) obj2);
         }
-        return hashSet;
+    }), 0, 23, null, null, null, 56, null);
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final mt.b0 f35255c = new mt.b0(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.l0.e
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
+        public Object get(Object obj) {
+            return ((k0) obj).e();
+        }
+
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
+        public void set(Object obj, Object obj2) {
+            ((k0) obj).x((Integer) obj2);
+        }
+    }), 0, 59, null, null, null, 56, null);
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final mt.b0 f35256d = new mt.b0(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.l0.f
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
+        public Object get(Object obj) {
+            return ((k0) obj).d();
+        }
+
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
+        public void set(Object obj, Object obj2) {
+            ((k0) obj).n((Integer) obj2);
+        }
+    }), 0, 59, null, 0, null, 40, null);
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final mt.q f35257e = new mt.q(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.l0.b
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
+        public Object get(Object obj) {
+            return ((k0) obj).z();
+        }
+
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
+        public void set(Object obj, Object obj2) {
+            ((k0) obj).r((lt.a) obj2);
+        }
+    }), null, new lt.a(0, 9), null, 10, null);
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final mt.q f35258f = new mt.q(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.l0.a
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
+        public Object get(Object obj) {
+            return ((k0) obj).s();
+        }
+
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
+        public void set(Object obj, Object obj2) {
+            ((k0) obj).i((g) obj2);
+        }
+    }), null, null, null, 14, null);
+
+    /* renamed from: g  reason: collision with root package name */
+    private static final mt.b0 f35259g = new mt.b0(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.l0.d
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
+        public Object get(Object obj) {
+            return ((k0) obj).j();
+        }
+
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
+        public void set(Object obj, Object obj2) {
+            ((k0) obj).t((Integer) obj2);
+        }
+    }), 1, 12, null, null, null, 56, null);
+
+    private l0() {
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.a
-    /* renamed from: v */
-    public Set l(HashSet hashSet) {
-        Intrinsics.checkNotNullParameter(hashSet, "<this>");
-        return hashSet;
+    public final mt.q a() {
+        return f35257e;
+    }
+
+    public final mt.b0 b() {
+        return f35254b;
+    }
+
+    public final mt.b0 c() {
+        return f35255c;
+    }
+
+    public final mt.b0 d() {
+        return f35256d;
     }
 }

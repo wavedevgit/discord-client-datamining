@@ -10,28 +10,28 @@ public final class f0 implements Parcelable {
     public static final Parcelable.Creator<f0> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    ArrayList f4395d;
+    ArrayList f4405d;
 
     /* renamed from: e  reason: collision with root package name */
-    ArrayList f4396e;
+    ArrayList f4406e;
 
     /* renamed from: i  reason: collision with root package name */
-    b[] f4397i;
+    b[] f4407i;
 
     /* renamed from: o  reason: collision with root package name */
-    int f4398o;
+    int f4408o;
 
     /* renamed from: p  reason: collision with root package name */
-    String f4399p;
+    String f4409p;
 
     /* renamed from: q  reason: collision with root package name */
-    ArrayList f4400q;
+    ArrayList f4410q;
 
     /* renamed from: r  reason: collision with root package name */
-    ArrayList f4401r;
+    ArrayList f4411r;
 
     /* renamed from: s  reason: collision with root package name */
-    ArrayList f4402s;
+    ArrayList f4412s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Parcelable.Creator {
@@ -52,9 +52,9 @@ public final class f0 implements Parcelable {
     }
 
     public f0() {
-        this.f4399p = null;
-        this.f4400q = new ArrayList();
-        this.f4401r = new ArrayList();
+        this.f4409p = null;
+        this.f4410q = new ArrayList();
+        this.f4411r = new ArrayList();
     }
 
     @Override // android.os.Parcelable
@@ -64,27 +64,27 @@ public final class f0 implements Parcelable {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeStringList(this.f4395d);
-        parcel.writeStringList(this.f4396e);
-        parcel.writeTypedArray(this.f4397i, i10);
-        parcel.writeInt(this.f4398o);
-        parcel.writeString(this.f4399p);
-        parcel.writeStringList(this.f4400q);
-        parcel.writeTypedList(this.f4401r);
-        parcel.writeTypedList(this.f4402s);
+        parcel.writeStringList(this.f4405d);
+        parcel.writeStringList(this.f4406e);
+        parcel.writeTypedArray(this.f4407i, i10);
+        parcel.writeInt(this.f4408o);
+        parcel.writeString(this.f4409p);
+        parcel.writeStringList(this.f4410q);
+        parcel.writeTypedList(this.f4411r);
+        parcel.writeTypedList(this.f4412s);
     }
 
     public f0(Parcel parcel) {
-        this.f4399p = null;
-        this.f4400q = new ArrayList();
-        this.f4401r = new ArrayList();
-        this.f4395d = parcel.createStringArrayList();
-        this.f4396e = parcel.createStringArrayList();
-        this.f4397i = (b[]) parcel.createTypedArray(b.CREATOR);
-        this.f4398o = parcel.readInt();
-        this.f4399p = parcel.readString();
-        this.f4400q = parcel.createStringArrayList();
-        this.f4401r = parcel.createTypedArrayList(c.CREATOR);
-        this.f4402s = parcel.createTypedArrayList(FragmentManager.m.CREATOR);
+        this.f4409p = null;
+        this.f4410q = new ArrayList();
+        this.f4411r = new ArrayList();
+        this.f4405d = parcel.createStringArrayList();
+        this.f4406e = parcel.createStringArrayList();
+        this.f4407i = (b[]) parcel.createTypedArray(b.CREATOR);
+        this.f4408o = parcel.readInt();
+        this.f4409p = parcel.readString();
+        this.f4410q = parcel.createStringArrayList();
+        this.f4411r = parcel.createTypedArrayList(c.CREATOR);
+        this.f4412s = parcel.createTypedArrayList(FragmentManager.m.CREATOR);
     }
 }

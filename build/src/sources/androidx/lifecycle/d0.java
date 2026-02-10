@@ -7,28 +7,28 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d0 implements m, AutoCloseable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f4626d;
+    private final String f4636d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b0 f4627e;
+    private final b0 f4637e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f4628i;
+    private boolean f4638i;
 
     public d0(String key, b0 handle) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(handle, "handle");
-        this.f4626d = key;
-        this.f4627e = handle;
+        this.f4636d = key;
+        this.f4637e = handle;
     }
 
     public final void a(SavedStateRegistry registry, Lifecycle lifecycle) {
         Intrinsics.checkNotNullParameter(registry, "registry");
         Intrinsics.checkNotNullParameter(lifecycle, "lifecycle");
-        if (!this.f4628i) {
-            this.f4628i = true;
+        if (!this.f4638i) {
+            this.f4638i = true;
             lifecycle.a(this);
-            registry.c(this.f4626d, this.f4627e.g());
+            registry.c(this.f4636d, this.f4637e.g());
             return;
         }
         throw new IllegalStateException("Already attached to lifecycleOwner");
@@ -38,21 +38,21 @@ public final class d0 implements m, AutoCloseable {
     public void close() {
     }
 
-    public final b0 g() {
-        return this.f4627e;
+    public final b0 h() {
+        return this.f4637e;
     }
 
     @Override // androidx.lifecycle.m
-    public void k(LifecycleOwner source, Lifecycle.a event) {
+    public void i(LifecycleOwner source, Lifecycle.a event) {
         Intrinsics.checkNotNullParameter(source, "source");
         Intrinsics.checkNotNullParameter(event, "event");
         if (event == Lifecycle.a.ON_DESTROY) {
-            this.f4628i = false;
+            this.f4638i = false;
             source.getLifecycle().d(this);
         }
     }
 
-    public final boolean m() {
-        return this.f4628i;
+    public final boolean n() {
+        return this.f4638i;
     }
 }

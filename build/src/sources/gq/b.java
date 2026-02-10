@@ -1,14 +1,28 @@
 package gq;
 
-import com.withpersona.sdk2.inquiry.network.dto.ui.components.Button;
-import com.withpersona.sdk2.inquiry.shared.ui.ButtonWithLoadingIndicator;
-import kotlin.jvm.internal.Intrinsics;
+import lr.d;
+import lr.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-    public static final ButtonWithLoadingIndicator a(a aVar, m5 uiComponentHelper, Button config) {
-        Intrinsics.checkNotNullParameter(aVar, "<this>");
-        Intrinsics.checkNotNullParameter(uiComponentHelper, "uiComponentHelper");
-        Intrinsics.checkNotNullParameter(config, "config");
-        return com.withpersona.sdk2.inquiry.steps.ui.components.f.f(aVar, uiComponentHelper, config);
+public final class b implements d {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final a f25964a;
+
+    public b(a aVar) {
+        this.f25964a = aVar;
+    }
+
+    public static b a(a aVar) {
+        return new b(aVar);
+    }
+
+    public static c c(a aVar) {
+        return (c) g.d(aVar.a());
+    }
+
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public c get() {
+        return c(this.f25964a);
     }
 }

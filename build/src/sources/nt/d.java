@@ -1,13 +1,36 @@
 package nt;
 
+import java.util.List;
 import kotlin.jvm.functions.Function1;
-import kotlin.reflect.KClass;
-import kotlinx.serialization.KSerializer;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface d {
-    void a(KClass kClass, KClass kClass2, KSerializer kSerializer);
+public final class d implements e {
 
-    void b(KClass kClass, Function1 function1);
+    /* renamed from: a  reason: collision with root package name */
+    private final Function1 f38361a;
 
-    void c(KClass kClass, Function1 function1);
+    /* renamed from: b  reason: collision with root package name */
+    private final int f38362b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final int f38363c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final List f38364d;
+
+    public d(Function1 number, int i10, int i11, List zerosToAdd) {
+        Intrinsics.checkNotNullParameter(number, "number");
+        Intrinsics.checkNotNullParameter(zerosToAdd, "zerosToAdd");
+        this.f38361a = number;
+        this.f38362b = i10;
+        this.f38363c = i11;
+        this.f38364d = zerosToAdd;
+        if (1 <= i10 && i10 < 10) {
+            if (i10 <= i11 && i11 < 10) {
+                return;
+            }
+            throw new IllegalArgumentException(("The maximum number of digits (" + i11 + ") is not in range " + i10 + "..9").toString());
+        }
+        throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") is not in range 1..9").toString());
+    }
 }

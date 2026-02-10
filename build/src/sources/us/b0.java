@@ -1,58 +1,22 @@
 package us;
 
-import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
-import kotlin.coroutines.CoroutineContext;
-import ps.f1;
+import kotlin.jvm.functions.Function0;
+import us.w0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b0 extends c implements f1 {
+public class b0 implements Function0 {
 
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f51767o = AtomicIntegerFieldUpdater.newUpdater(b0.class, "cleanedAndPointers$volatile");
-    private volatile /* synthetic */ int cleanedAndPointers$volatile;
+    /* renamed from: d  reason: collision with root package name */
+    private final w0 f50999d;
 
-    /* renamed from: i  reason: collision with root package name */
-    public final long f51768i;
-
-    public b0(long j10, b0 b0Var, int i10) {
-        super(b0Var);
-        this.f51768i = j10;
-        this.cleanedAndPointers$volatile = i10 << 16;
+    public b0(w0 w0Var) {
+        this.f50999d = w0Var;
     }
 
-    @Override // us.c
-    public boolean k() {
-        if (f51767o.get(this) == r() && !l()) {
-            return true;
-        }
-        return false;
-    }
-
-    public final boolean p() {
-        if (f51767o.addAndGet(this, -65536) == r() && !l()) {
-            return true;
-        }
-        return false;
-    }
-
-    public abstract int r();
-
-    public abstract void s(int i10, Throwable th2, CoroutineContext coroutineContext);
-
-    public final void t() {
-        if (f51767o.incrementAndGet(this) == r()) {
-            n();
-        }
-    }
-
-    public final boolean u() {
-        int i10;
-        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f51767o;
-        do {
-            i10 = atomicIntegerFieldUpdater.get(this);
-            if (i10 == r() && !l()) {
-                return false;
-            }
-        } while (!atomicIntegerFieldUpdater.compareAndSet(this, i10, 65536 + i10));
-        return true;
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        w0.a H;
+        H = w0.H(this.f50999d);
+        return H;
     }
 }

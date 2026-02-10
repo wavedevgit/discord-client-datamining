@@ -15,54 +15,53 @@ import android.widget.TextView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.v0;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import androidx.core.view.h0;
 import com.google.android.material.internal.CheckableImageButton;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class y extends LinearLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TextInputLayout f15686d;
+    private final TextInputLayout f16435d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final TextView f15687e;
+    private final TextView f16436e;
 
     /* renamed from: i  reason: collision with root package name */
-    private CharSequence f15688i;
+    private CharSequence f16437i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final CheckableImageButton f15689o;
+    private final CheckableImageButton f16438o;
 
     /* renamed from: p  reason: collision with root package name */
-    private ColorStateList f15690p;
+    private ColorStateList f16439p;
 
     /* renamed from: q  reason: collision with root package name */
-    private PorterDuff.Mode f15691q;
+    private PorterDuff.Mode f16440q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f15692r;
+    private int f16441r;
 
     /* renamed from: s  reason: collision with root package name */
-    private ImageView.ScaleType f15693s;
+    private ImageView.ScaleType f16442s;
 
     /* renamed from: t  reason: collision with root package name */
-    private View.OnLongClickListener f15694t;
+    private View.OnLongClickListener f16443t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f15695u;
+    private boolean f16444u;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public y(TextInputLayout textInputLayout, v0 v0Var) {
         super(textInputLayout.getContext());
-        this.f15686d = textInputLayout;
+        this.f16435d = textInputLayout;
         setVisibility(8);
         setOrientation(0);
         setLayoutParams(new FrameLayout.LayoutParams(-2, -1, 8388611));
-        CheckableImageButton checkableImageButton = (CheckableImageButton) LayoutInflater.from(getContext()).inflate(bh.h.f6744f, (ViewGroup) this, false);
-        this.f15689o = checkableImageButton;
+        CheckableImageButton checkableImageButton = (CheckableImageButton) LayoutInflater.from(getContext()).inflate(bh.h.f6879g, (ViewGroup) this, false);
+        this.f16438o = checkableImageButton;
         t.e(checkableImageButton);
         AppCompatTextView appCompatTextView = new AppCompatTextView(getContext());
-        this.f15687e = appCompatTextView;
+        this.f16436e = appCompatTextView;
         j(v0Var);
         i(v0Var);
         addView(checkableImageButton);
@@ -72,128 +71,128 @@ public class y extends LinearLayout {
     private void C() {
         int i10;
         int i11 = 8;
-        if (this.f15688i != null && !this.f15695u) {
+        if (this.f16437i != null && !this.f16444u) {
             i10 = 0;
         } else {
             i10 = 8;
         }
-        if (this.f15689o.getVisibility() == 0 || i10 == 0) {
+        if (this.f16438o.getVisibility() == 0 || i10 == 0) {
             i11 = 0;
         }
         setVisibility(i11);
-        this.f15687e.setVisibility(i10);
-        this.f15686d.n0();
+        this.f16436e.setVisibility(i10);
+        this.f16435d.q0();
     }
 
     private void i(v0 v0Var) {
-        this.f15687e.setVisibility(8);
-        this.f15687e.setId(bh.f.S);
-        this.f15687e.setLayoutParams(new LinearLayout.LayoutParams(-2, -2));
-        h0.p0(this.f15687e, 1);
-        o(v0Var.n(bh.k.N7, 0));
-        if (v0Var.s(bh.k.O7)) {
-            p(v0Var.c(bh.k.O7));
+        this.f16436e.setVisibility(8);
+        this.f16436e.setId(bh.f.f6840b0);
+        this.f16436e.setLayoutParams(new LinearLayout.LayoutParams(-2, -2));
+        this.f16436e.setAccessibilityLiveRegion(1);
+        o(v0Var.n(bh.l.Y7, 0));
+        if (v0Var.s(bh.l.Z7)) {
+            p(v0Var.c(bh.l.Z7));
         }
-        n(v0Var.p(bh.k.M7));
+        n(v0Var.p(bh.l.X7));
     }
 
     private void j(v0 v0Var) {
-        if (oh.c.g(getContext())) {
-            androidx.core.view.m.c((ViewGroup.MarginLayoutParams) this.f15689o.getLayoutParams(), 0);
+        if (qh.c.k(getContext())) {
+            ((ViewGroup.MarginLayoutParams) this.f16438o.getLayoutParams()).setMarginEnd(0);
         }
         u(null);
         v(null);
-        if (v0Var.s(bh.k.U7)) {
-            this.f15690p = oh.c.b(getContext(), v0Var, bh.k.U7);
+        if (v0Var.s(bh.l.f7011f8)) {
+            this.f16439p = qh.c.b(getContext(), v0Var, bh.l.f7011f8);
         }
-        if (v0Var.s(bh.k.V7)) {
-            this.f15691q = com.google.android.material.internal.o.i(v0Var.k(bh.k.V7, -1), null);
+        if (v0Var.s(bh.l.f7021g8)) {
+            this.f16440q = com.google.android.material.internal.p.i(v0Var.k(bh.l.f7021g8, -1), null);
         }
-        if (v0Var.s(bh.k.R7)) {
-            s(v0Var.g(bh.k.R7));
-            if (v0Var.s(bh.k.Q7)) {
-                r(v0Var.p(bh.k.Q7));
+        if (v0Var.s(bh.l.f6981c8)) {
+            s(v0Var.g(bh.l.f6981c8));
+            if (v0Var.s(bh.l.f6971b8)) {
+                r(v0Var.p(bh.l.f6971b8));
             }
-            q(v0Var.a(bh.k.P7, true));
+            q(v0Var.a(bh.l.f6961a8, true));
         }
-        t(v0Var.f(bh.k.S7, getResources().getDimensionPixelSize(bh.d.Y)));
-        if (v0Var.s(bh.k.T7)) {
-            w(t.b(v0Var.k(bh.k.T7, -1)));
+        t(v0Var.f(bh.l.f6991d8, getResources().getDimensionPixelSize(bh.d.f6805p0)));
+        if (v0Var.s(bh.l.f7001e8)) {
+            w(t.b(v0Var.k(bh.l.f7001e8, -1)));
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void A(AccessibilityNodeInfoCompat accessibilityNodeInfoCompat) {
-        if (this.f15687e.getVisibility() == 0) {
-            accessibilityNodeInfoCompat.K0(this.f15687e);
-            accessibilityNodeInfoCompat.d1(this.f15687e);
+        if (this.f16436e.getVisibility() == 0) {
+            accessibilityNodeInfoCompat.K0(this.f16436e);
+            accessibilityNodeInfoCompat.d1(this.f16436e);
             return;
         }
-        accessibilityNodeInfoCompat.d1(this.f15689o);
+        accessibilityNodeInfoCompat.d1(this.f16438o);
     }
 
     void B() {
-        int E;
-        EditText editText = this.f15686d.f15552o;
+        int paddingStart;
+        EditText editText = this.f16435d.f16302p;
         if (editText == null) {
             return;
         }
         if (k()) {
-            E = 0;
+            paddingStart = 0;
         } else {
-            E = h0.E(editText);
+            paddingStart = editText.getPaddingStart();
         }
-        h0.F0(this.f15687e, E, editText.getCompoundPaddingTop(), getContext().getResources().getDimensionPixelSize(bh.d.H), editText.getCompoundPaddingBottom());
+        this.f16436e.setPaddingRelative(paddingStart, editText.getCompoundPaddingTop(), getContext().getResources().getDimensionPixelSize(bh.d.V), editText.getCompoundPaddingBottom());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public CharSequence a() {
-        return this.f15688i;
+        return this.f16437i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ColorStateList b() {
-        return this.f15687e.getTextColors();
+        return this.f16436e.getTextColors();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int c() {
         int i10;
         if (k()) {
-            i10 = this.f15689o.getMeasuredWidth() + androidx.core.view.m.a((ViewGroup.MarginLayoutParams) this.f15689o.getLayoutParams());
+            i10 = this.f16438o.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) this.f16438o.getLayoutParams()).getMarginEnd();
         } else {
             i10 = 0;
         }
-        return h0.E(this) + h0.E(this.f15687e) + i10;
+        return getPaddingStart() + this.f16436e.getPaddingStart() + i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public TextView d() {
-        return this.f15687e;
+        return this.f16436e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public CharSequence e() {
-        return this.f15689o.getContentDescription();
+        return this.f16438o.getContentDescription();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Drawable f() {
-        return this.f15689o.getDrawable();
+        return this.f16438o.getDrawable();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int g() {
-        return this.f15692r;
+        return this.f16441r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ImageView.ScaleType h() {
-        return this.f15693s;
+        return this.f16442s;
     }
 
     boolean k() {
-        if (this.f15689o.getVisibility() == 0) {
+        if (this.f16438o.getVisibility() == 0) {
             return true;
         }
         return false;
@@ -201,13 +200,13 @@ public class y extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void l(boolean z10) {
-        this.f15695u = z10;
+        this.f16444u = z10;
         C();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void m() {
-        t.d(this.f15686d, this.f15689o, this.f15690p);
+        t.d(this.f16435d, this.f16438o, this.f16439p);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -218,14 +217,14 @@ public class y extends LinearLayout {
         } else {
             charSequence2 = charSequence;
         }
-        this.f15688i = charSequence2;
-        this.f15687e.setText(charSequence);
+        this.f16437i = charSequence2;
+        this.f16436e.setText(charSequence);
         C();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void o(int i10) {
-        androidx.core.widget.j.s(this.f15687e, i10);
+        androidx.core.widget.j.q(this.f16436e, i10);
     }
 
     @Override // android.widget.LinearLayout, android.view.View
@@ -236,26 +235,26 @@ public class y extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void p(ColorStateList colorStateList) {
-        this.f15687e.setTextColor(colorStateList);
+        this.f16436e.setTextColor(colorStateList);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void q(boolean z10) {
-        this.f15689o.setCheckable(z10);
+        this.f16438o.setCheckable(z10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void r(CharSequence charSequence) {
         if (e() != charSequence) {
-            this.f15689o.setContentDescription(charSequence);
+            this.f16438o.setContentDescription(charSequence);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void s(Drawable drawable) {
-        this.f15689o.setImageDrawable(drawable);
+        this.f16438o.setImageDrawable(drawable);
         if (drawable != null) {
-            t.a(this.f15686d, this.f15689o, this.f15690p, this.f15691q);
+            t.a(this.f16435d, this.f16438o, this.f16439p, this.f16440q);
             z(true);
             m();
             return;
@@ -269,9 +268,9 @@ public class y extends LinearLayout {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void t(int i10) {
         if (i10 >= 0) {
-            if (i10 != this.f15692r) {
-                this.f15692r = i10;
-                t.g(this.f15689o, i10);
+            if (i10 != this.f16441r) {
+                this.f16441r = i10;
+                t.g(this.f16438o, i10);
                 return;
             }
             return;
@@ -281,34 +280,34 @@ public class y extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void u(View.OnClickListener onClickListener) {
-        t.h(this.f15689o, onClickListener, this.f15694t);
+        t.h(this.f16438o, onClickListener, this.f16443t);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void v(View.OnLongClickListener onLongClickListener) {
-        this.f15694t = onLongClickListener;
-        t.i(this.f15689o, onLongClickListener);
+        this.f16443t = onLongClickListener;
+        t.i(this.f16438o, onLongClickListener);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void w(ImageView.ScaleType scaleType) {
-        this.f15693s = scaleType;
-        t.j(this.f15689o, scaleType);
+        this.f16442s = scaleType;
+        t.j(this.f16438o, scaleType);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void x(ColorStateList colorStateList) {
-        if (this.f15690p != colorStateList) {
-            this.f15690p = colorStateList;
-            t.a(this.f15686d, this.f15689o, colorStateList, this.f15691q);
+        if (this.f16439p != colorStateList) {
+            this.f16439p = colorStateList;
+            t.a(this.f16435d, this.f16438o, colorStateList, this.f16440q);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void y(PorterDuff.Mode mode) {
-        if (this.f15691q != mode) {
-            this.f15691q = mode;
-            t.a(this.f15686d, this.f15689o, this.f15690p, mode);
+        if (this.f16440q != mode) {
+            this.f16440q = mode;
+            t.a(this.f16435d, this.f16438o, this.f16439p, mode);
         }
     }
 
@@ -316,7 +315,7 @@ public class y extends LinearLayout {
     public void z(boolean z10) {
         int i10;
         if (k() != z10) {
-            CheckableImageButton checkableImageButton = this.f15689o;
+            CheckableImageButton checkableImageButton = this.f16438o;
             if (z10) {
                 i10 = 0;
             } else {

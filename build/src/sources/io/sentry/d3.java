@@ -3,13 +3,13 @@ package io.sentry;
 public final class d3 implements h1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final d3 f28307a = new d3();
+    private static final d3 f29242a = new d3();
 
     private d3() {
     }
 
     public static d3 b() {
-        return f28307a;
+        return f29242a;
     }
 
     @Override // io.sentry.h1

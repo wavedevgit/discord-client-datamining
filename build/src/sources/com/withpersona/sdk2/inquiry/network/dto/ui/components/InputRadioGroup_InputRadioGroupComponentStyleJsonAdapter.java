@@ -89,7 +89,7 @@ public final class InputRadioGroup_InputRadioGroupComponentStyleJsonAdapter exte
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -126,7 +126,7 @@ public final class InputRadioGroup_InputRadioGroupComponentStyleJsonAdapter exte
     public void toJson(@NotNull t writer, InputRadioGroup.InputRadioGroupComponentStyle inputRadioGroupComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputRadioGroupComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J(ViewProps.MARGIN);
             this.nullableTextBasedMarginStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getMargin());
             writer.J(ViewProps.FONT_FAMILY);

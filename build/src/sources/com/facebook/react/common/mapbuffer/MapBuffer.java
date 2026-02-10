@@ -49,7 +49,7 @@ public interface MapBuffer extends Iterable<Entry>, KMappedMarker {
         static {
             DataType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = yr.a.a($values);
+            $ENTRIES = hs.a.a($values);
         }
 
         private DataType(String str, int i10) {

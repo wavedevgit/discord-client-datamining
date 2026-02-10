@@ -1,26 +1,11 @@
 package mt;
-
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class n extends m {
+public interface n {
+    Object a();
 
-    /* renamed from: c  reason: collision with root package name */
-    private final boolean f37565c;
+    b b();
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public n(z writer, boolean z10) {
-        super(writer);
-        Intrinsics.checkNotNullParameter(writer, "writer");
-        this.f37565c = z10;
-    }
+    m c();
 
-    @Override // mt.m
-    public void n(String value) {
-        Intrinsics.checkNotNullParameter(value, "value");
-        if (this.f37565c) {
-            super.n(value);
-        } else {
-            super.k(value);
-        }
-    }
+    String getName();
 }

@@ -1,136 +1,40 @@
 package lu;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import kotlin.jvm.internal.Intrinsics;
-import okio.Sink;
-import okio.Source;
-import ru.x;
-import ru.y;
+import okhttp3.Request;
+import okhttp3.Response;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0520a f36663a = C0520a.f36665a;
+    public static final C0500a f36043a = C0500a.f36046a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f36664b = new C0520a.C0521a();
+    public static final a f36044b = new C0500a.C0501a();
+
+    /* renamed from: c  reason: collision with root package name */
+    public static final a f36045c = new nu.a(null, 1, null);
 
     /* renamed from: lu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0520a {
+    public static final class C0500a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ C0520a f36665a = new C0520a();
+        static final /* synthetic */ C0500a f36046a = new C0500a();
 
         /* renamed from: lu.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        private static final class C0521a implements a {
+        private static final class C0501a implements a {
             @Override // lu.a
-            public void a(File directory) {
-                Intrinsics.checkNotNullParameter(directory, "directory");
-                File[] listFiles = directory.listFiles();
-                if (listFiles != null) {
-                    for (File file : listFiles) {
-                        if (file.isDirectory()) {
-                            Intrinsics.checkNotNullExpressionValue(file, "file");
-                            a(file);
-                        }
-                        if (!file.delete()) {
-                            throw new IOException("failed to delete " + file);
-                        }
-                    }
-                    return;
-                }
-                throw new IOException("not a readable directory: " + directory);
-            }
-
-            @Override // lu.a
-            public boolean b(File file) {
-                Intrinsics.checkNotNullParameter(file, "file");
-                return file.exists();
-            }
-
-            @Override // lu.a
-            public Sink c(File file) {
-                Intrinsics.checkNotNullParameter(file, "file");
-                try {
-                    return x.a(file);
-                } catch (FileNotFoundException unused) {
-                    file.getParentFile().mkdirs();
-                    return x.a(file);
-                }
-            }
-
-            @Override // lu.a
-            public long d(File file) {
-                Intrinsics.checkNotNullParameter(file, "file");
-                return file.length();
-            }
-
-            @Override // lu.a
-            public Source e(File file) {
-                Intrinsics.checkNotNullParameter(file, "file");
-                return x.j(file);
-            }
-
-            @Override // lu.a
-            public Sink f(File file) {
-                Sink g10;
-                Sink g11;
-                Intrinsics.checkNotNullParameter(file, "file");
-                try {
-                    g11 = y.g(file, false, 1, null);
-                    return g11;
-                } catch (FileNotFoundException unused) {
-                    file.getParentFile().mkdirs();
-                    g10 = y.g(file, false, 1, null);
-                    return g10;
-                }
-            }
-
-            @Override // lu.a
-            public void g(File from, File to2) {
-                Intrinsics.checkNotNullParameter(from, "from");
-                Intrinsics.checkNotNullParameter(to2, "to");
-                h(to2);
-                if (from.renameTo(to2)) {
-                    return;
-                }
-                throw new IOException("failed to rename " + from + " to " + to2);
-            }
-
-            @Override // lu.a
-            public void h(File file) {
-                Intrinsics.checkNotNullParameter(file, "file");
-                if (!file.delete() && file.exists()) {
-                    throw new IOException("failed to delete " + file);
-                }
-            }
-
-            public String toString() {
-                return "FileSystem.SYSTEM";
+            public Request a(k kVar, Response response) {
+                Intrinsics.checkNotNullParameter(response, "response");
+                return null;
             }
         }
 
-        private C0520a() {
+        private C0500a() {
         }
     }
 
-    void a(File file);
-
-    boolean b(File file);
-
-    Sink c(File file);
-
-    long d(File file);
-
-    Source e(File file);
-
-    Sink f(File file);
-
-    void g(File file, File file2);
-
-    void h(File file);
+    Request a(k kVar, Response response);
 }

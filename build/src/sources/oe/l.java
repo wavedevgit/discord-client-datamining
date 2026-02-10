@@ -3,6 +3,6 @@ package oe;
 public interface l {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l f40640a = new l() { // from class: oe.k
+    public static final l f38966a = new l() { // from class: oe.k
     };
 }

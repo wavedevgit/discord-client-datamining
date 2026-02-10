@@ -138,10 +138,10 @@ public final class BundleDownloader {
 
         /* JADX INFO: Access modifiers changed from: private */
         public final boolean storePlainJSInFile(BufferedSource bufferedSource, File file) {
-            Sink c10 = ru.b.a().c(file);
+            Sink c10 = av.b.a().c(file);
             try {
-                bufferedSource.d2(c10);
-                cs.c.a(c10, null);
+                bufferedSource.j2(c10);
+                ls.c.a(c10, null);
                 return true;
             } finally {
             }
@@ -166,13 +166,13 @@ public final class BundleDownloader {
     /* JADX INFO: Access modifiers changed from: private */
     public final void processBundleResult(String str, int i10, Headers headers, BufferedSource bufferedSource, File file, BundleInfo bundleInfo, DevBundleDownloadListener devBundleDownloadListener) {
         if (i10 != 200) {
-            String R1 = bufferedSource.R1();
-            DebugServerException parse = DebugServerException.Companion.parse(str, R1);
+            String X1 = bufferedSource.X1();
+            DebugServerException parse = DebugServerException.Companion.parse(str, X1);
             if (parse != null) {
                 devBundleDownloadListener.onFailure(parse);
                 return;
             }
-            String str2 = "The development server returned response error code: " + i10 + "\n\nURL: " + str + "\n\nBody:\n" + R1;
+            String str2 = "The development server returned response error code: " + i10 + "\n\nURL: " + str + "\n\nBody:\n" + X1;
             Intrinsics.checkNotNullExpressionValue(str2, "toString(...)");
             devBundleDownloadListener.onFailure(new DebugServerException(str2));
             return;
@@ -191,8 +191,8 @@ public final class BundleDownloader {
     public final void processMultipartResponse(final String str, final Response response, String str2, final File file, final BundleInfo bundleInfo, final DevBundleDownloadListener devBundleDownloadListener) {
         BufferedSource bufferedSource;
         if (response.a() == null) {
-            int g10 = response.g();
-            devBundleDownloadListener.onFailure(new DebugServerException(StringsKt.j("\n                    Error while reading multipart response.\n                    \n                    Response body was empty: " + g10 + "\n                    \n                    URL: " + str + "\n                    \n                    \n                    ")));
+            int h10 = response.h();
+            devBundleDownloadListener.onFailure(new DebugServerException(StringsKt.j("\n                    Error while reading multipart response.\n                    \n                    Response body was empty: " + h10 + "\n                    \n                    URL: " + str + "\n                    \n                    \n                    ")));
             return;
         }
         ResponseBody a10 = response.a();
@@ -210,14 +210,14 @@ public final class BundleDownloader {
                     Intrinsics.checkNotNullParameter(headers, "headers");
                     Intrinsics.checkNotNullParameter(body, "body");
                     if (z10) {
-                        int g11 = Response.this.g();
+                        int h11 = Response.this.h();
                         if (headers.containsKey("X-Http-Status")) {
-                            g11 = Integer.parseInt(headers.getOrDefault("X-Http-Status", "0"));
+                            h11 = Integer.parseInt(headers.getOrDefault("X-Http-Status", "0"));
                         }
-                        this.processBundleResult(str, g11, Headers.f42023e.a(headers), body, file, bundleInfo, devBundleDownloadListener);
+                        this.processBundleResult(str, h11, Headers.f40273e.a(headers), body, file, bundleInfo, devBundleDownloadListener);
                     } else if (headers.containsKey("Content-Type") && Intrinsics.areEqual(headers.get("Content-Type"), "application/json")) {
                         try {
-                            JSONObject jSONObject = new JSONObject(body.R1());
+                            JSONObject jSONObject = new JSONObject(body.X1());
                             if (jSONObject.has("status")) {
                                 str3 = jSONObject.getString("status");
                             } else {
@@ -249,8 +249,8 @@ public final class BundleDownloader {
                     }
                 }
             })) {
-                int g11 = response.g();
-                devBundleDownloadListener.onFailure(new DebugServerException(StringsKt.j("\n                    Error while reading multipart response.\n                    \n                    Response code: " + g11 + "\n                    \n                    URL: " + str + "\n                    \n                    \n                    ")));
+                int h11 = response.h();
+                devBundleDownloadListener.onFailure(new DebugServerException(StringsKt.j("\n                    Error while reading multipart response.\n                    \n                    Response code: " + h11 + "\n                    \n                    URL: " + str + "\n                    \n                    \n                    ")));
                 return;
             }
             return;
@@ -272,11 +272,11 @@ public final class BundleDownloader {
             Call a10 = this.client.a(requestBuilder.l(str).a("Accept", "multipart/mixed").b());
             this.downloadBundleFromURLCall = a10;
             if (a10 != null) {
-                a10.J0(new cu.b() { // from class: com.facebook.react.devsupport.BundleDownloader$downloadBundleFromURL$1
+                a10.b1(new lu.b() { // from class: com.facebook.react.devsupport.BundleDownloader$downloadBundleFromURL$1
                     /* JADX WARN: Code restructure failed: missing block: B:4:0x0013, code lost:
                         r0 = r4.this$0.downloadBundleFromURLCall;
                      */
-                    @Override // cu.b
+                    @Override // lu.b
                     /*
                         Code decompiled incorrectly, please refer to instructions dump.
                         To view partially-correct add '--show-bad-code' argument
@@ -302,7 +302,7 @@ public final class BundleDownloader {
                         L23:
                             com.facebook.react.devsupport.BundleDownloader r0 = com.facebook.react.devsupport.BundleDownloader.this
                             com.facebook.react.devsupport.BundleDownloader.access$setDownloadBundleFromURLCall$p(r0, r1)
-                            okhttp3.Request r5 = r5.g()
+                            okhttp3.Request r5 = r5.i()
                             okhttp3.HttpUrl r5 = r5.b()
                             java.lang.String r5 = r5.toString()
                             com.facebook.react.devsupport.interfaces.DevBundleDownloadListener r0 = r2
@@ -333,7 +333,7 @@ public final class BundleDownloader {
                     /* JADX WARN: Type inference failed for: r11v2 */
                     /* JADX WARN: Type inference failed for: r11v4 */
                     /* JADX WARN: Type inference failed for: r11v5, types: [okhttp3.Call] */
-                    @Override // cu.b
+                    @Override // lu.b
                     /*
                         Code decompiled incorrectly, please refer to instructions dump.
                         To view partially-correct add '--show-bad-code' argument
@@ -410,8 +410,8 @@ public final class BundleDownloader {
                             r11 = r12
                             okhttp3.ResponseBody r12 = r11.a()     // Catch: java.lang.Throwable -> La5
                             if (r12 == 0) goto L9a
-                            int r2 = r11.g()     // Catch: java.lang.Throwable -> L97
-                            okhttp3.Headers r3 = r11.k()     // Catch: java.lang.Throwable -> L97
+                            int r2 = r11.h()     // Catch: java.lang.Throwable -> L97
+                            okhttp3.Headers r3 = r11.i()     // Catch: java.lang.Throwable -> L97
                             r7 = r6
                             r6 = r5
                             r5 = r4
@@ -423,11 +423,11 @@ public final class BundleDownloader {
                             r1 = r0
                             goto La7
                         L9a:
-                            kotlin.Unit r0 = kotlin.Unit.f31765a     // Catch: java.lang.Throwable -> L97
-                            cs.c.a(r12, r8)     // Catch: java.lang.Throwable -> La5
+                            kotlin.Unit r0 = kotlin.Unit.f31987a     // Catch: java.lang.Throwable -> L97
+                            ls.c.a(r12, r8)     // Catch: java.lang.Throwable -> La5
                         L9f:
-                            kotlin.Unit r12 = kotlin.Unit.f31765a     // Catch: java.lang.Throwable -> La5
-                            cs.c.a(r11, r8)
+                            kotlin.Unit r12 = kotlin.Unit.f31987a     // Catch: java.lang.Throwable -> La5
+                            ls.c.a(r11, r8)
                             return
                         La5:
                             r0 = move-exception
@@ -436,17 +436,17 @@ public final class BundleDownloader {
                             throw r1     // Catch: java.lang.Throwable -> La8
                         La8:
                             r0 = move-exception
-                            cs.c.a(r12, r1)     // Catch: java.lang.Throwable -> La5
+                            ls.c.a(r12, r1)     // Catch: java.lang.Throwable -> La5
                             throw r0     // Catch: java.lang.Throwable -> La5
                         Lad:
                             com.facebook.react.devsupport.BundleDownloader.access$setDownloadBundleFromURLCall$p(r0, r8)     // Catch: java.lang.Throwable -> La5
-                            cs.c.a(r11, r8)
+                            ls.c.a(r11, r8)
                             return
                         Lb4:
                             throw r12     // Catch: java.lang.Throwable -> Lb5
                         Lb5:
                             r0 = move-exception
-                            cs.c.a(r11, r12)
+                            ls.c.a(r11, r12)
                             throw r0
                         */
                         throw new UnsupportedOperationException("Method not decompiled: com.facebook.react.devsupport.BundleDownloader$downloadBundleFromURL$1.onResponse(okhttp3.Call, okhttp3.Response):void");

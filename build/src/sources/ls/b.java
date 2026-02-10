@@ -1,33 +1,38 @@
 package ls;
 
-import kotlin.Result;
-import kotlin.jvm.functions.Function1;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
 import kotlin.jvm.internal.Intrinsics;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class b {
-    static {
-        Object b10;
-        try {
-            Result.a aVar = Result.f31762e;
-            b10 = Result.b(Class.forName("java.lang.ClassValue"));
-        } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31762e;
-            b10 = Result.b(kotlin.c.a(th2));
+    public static final long a(InputStream inputStream, OutputStream out, int i10) {
+        Intrinsics.checkNotNullParameter(inputStream, "<this>");
+        Intrinsics.checkNotNullParameter(out, "out");
+        byte[] bArr = new byte[i10];
+        int read = inputStream.read(bArr);
+        long j10 = 0;
+        while (read >= 0) {
+            out.write(bArr, 0, read);
+            j10 += read;
+            read = inputStream.read(bArr);
         }
-        if (Result.h(b10)) {
-            Class cls = (Class) b10;
-            b10 = Boolean.TRUE;
-        }
-        Object b11 = Result.b(b10);
-        Boolean bool = Boolean.FALSE;
-        if (Result.g(b11)) {
-            b11 = bool;
-        }
-        ((Boolean) b11).getClass();
+        return j10;
     }
 
-    public static final a a(Function1 compute) {
-        Intrinsics.checkNotNullParameter(compute, "compute");
-        return new i(compute);
+    public static /* synthetic */ long b(InputStream inputStream, OutputStream outputStream, int i10, int i11, Object obj) {
+        if ((i11 & 2) != 0) {
+            i10 = 8192;
+        }
+        return a(inputStream, outputStream, i10);
+    }
+
+    public static final byte[] c(InputStream inputStream) {
+        Intrinsics.checkNotNullParameter(inputStream, "<this>");
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(Math.max(8192, inputStream.available()));
+        b(inputStream, byteArrayOutputStream, 0, 2, null);
+        byte[] byteArray = byteArrayOutputStream.toByteArray();
+        Intrinsics.checkNotNullExpressionValue(byteArray, "toByteArray(...)");
+        return byteArray;
     }
 }

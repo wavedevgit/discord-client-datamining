@@ -1,133 +1,164 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var0 = dependencyMap;
-    var3 = metroImportDefault;
-    var _closure1_slot0 = var3;
-    var _closure1_slot1 = var0;
     var3 = global;
     var6 = var3.Object;
     var5 = var6.defineProperty;
     var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var2, var3, var4);
-    var4 = 0;
-    var5 = var0[var4];
-    var3 = require;
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var4);
+    var4 = dependencyMap;
+    var0 = 0;
+    var5 = var4[var0];
+    var4 = require;
     var0 = undefined;
-    var3 = var3.bind(var0)(var5);
-    var5 = var3.processColor;
-    var3 = {
-        'evenodd': 0,
-        'nonzero': 1
-    };
-    var _closure1_slot2 = var3;
+    var4 = var4.bind(var0)(var5);
+    var7 = var4.PanResponder;
+    var5 = var3.Object;
+    var4 = var5.keys;
+    var6 = var7.create;
     var3 = {};
-    var3.type = var4;
-    var4 = 'black';
-    var4 = var5.bind(var0)(var4);
-    var3.payload = var4;
-    var _closure1_slot3 = var3;
+    var3 = var6.bind(var7)(var3);
+    var3 = var3.panHandlers;
+    var3 = var4.bind(var5)(var3);
+    var _closure1_slot0 = var3;
+    var3 = var3.length;
+    var _closure1_slot1 = var3;
     var1 = function arg0, arg1, arg2() {
-        _fun49046: for (var _fun49046_ip = 0;;) switch (_fun49046_ip) {
+        _fun48960: for (var _fun48960_ip = 0;;) switch (_fun48960_ip) {
             case 0:
                 var1 = arg0;
-                var0 = arg1;
-                var4 = arg2;
-                var8 = var0.fill;
-                var3 = var0.fillRule;
-                var6 = var0.fillOpacity;
-                var0 = null;
-                if (!(var0 == var8)) {
-                    _fun49046_ip = 48;
-                    continue _fun49046
+                var17 = arg1;
+                var3 = arg2;
+                var11 = var17.onPress;
+                var12 = var17.disabled;
+                var10 = var17.onPressIn;
+                var9 = var17.onPressOut;
+                var8 = var17.onLongPress;
+                var7 = var17.delayPressIn;
+                var6 = var17.delayPressOut;
+                var5 = var17.delayLongPress;
+                var4 = var17.pointerEvents;
+                var0 = _closure1_slot1;
+                var15 = 0;
+                var13 = var15 < var0;
+                var14 = false;
+                var0 = true;
+                var2 = false;
+                if (!var13) {
+                    _fun48960_ip = 118;
+                    continue _fun48960
                 }
-            case 33:
-                var2 = _closure1_slot3;
-                var1.fill = var2;
-                _fun49046_ip = 121;
-                continue _fun49046;
-            case 48:
-                var5 = var4.push;
-                var2 = 'fill';
-                var2 = var5.bind(var4)(var2);
-                if (var8) {
-                    _fun49046_ip = 85;
-                    continue _fun49046
+            case 83:
+                var13 = _closure1_slot0;
+                var18 = var13[var15];
+                var13 = var17[var18];
+                if (!var13) {
+                    _fun48960_ip = 104;
+                    continue _fun48960
                 }
-            case 65:
-                var5 = 'number';
-                var2 = typeof var8;
-                if (!(var5 !== var2)) {
-                    _fun49046_ip = 85;
-                    continue _fun49046
+            case 98:
+                var1[var18] = var13;
+                var14 = true;
+            case 104:
+                var15 = var15 + 1;
+                var13 = _closure1_slot1;
+                var2 = var14;
+                if (var15 < var13) {
+                    _fun48960_ip = 83;
+                    continue _fun48960
                 }
-            case 76:
-                var2 = _closure1_slot3;
-                _fun49046_ip = 115;
-                continue _fun49046;
-            case 85:
-                var9 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var5 = 1;
-                var5 = var7[var5];
-                var7 = undefined;
-                var5 = var9.bind(var7)(var5);
-                var2 = var5.bind(var7)(var8);
-            case 115:
-                var1.fill = var2;
+            case 118:
+                if (!var4) {
+                    _fun48960_ip = 127;
+                    continue _fun48960
+                }
             case 121:
-                if (!(var0 != var6)) {
-                    _fun49046_ip = 175;
-                    continue _fun49046
+                var1.pointerEvents = var4;
+            case 127:
+                var4 = null;
+                var4 = var4 != var12;
+                if (var4) {
+                    _fun48960_ip = 139;
+                    continue _fun48960
                 }
-            case 125:
-                var5 = var4.push;
-                var2 = 'fillOpacity';
-                var2 = var5.bind(var4)(var2);
-                var7 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var2 = 2;
-                var2 = var5[var2];
-                var5 = undefined;
-                var2 = var7.bind(var5)(var2);
-                var2 = var2.bind(var5)(var6);
-                var1.fillOpacity = var2;
+            case 136:
+                var4 = var11;
+            case 139:
+                if (var4) {
+                    _fun48960_ip = 145;
+                    continue _fun48960
+                }
+            case 142:
+                var4 = var10;
+            case 145:
+                if (var4) {
+                    _fun48960_ip = 151;
+                    continue _fun48960
+                }
+            case 148:
+                var4 = var9;
+            case 151:
+                if (var4) {
+                    _fun48960_ip = 157;
+                    continue _fun48960
+                }
+            case 154:
+                var4 = var8;
+            case 157:
+                if (var4) {
+                    _fun48960_ip = 163;
+                    continue _fun48960
+                }
+            case 160:
+                var4 = var7;
+            case 163:
+                if (var4) {
+                    _fun48960_ip = 169;
+                    continue _fun48960
+                }
+            case 166:
+                var4 = var6;
+            case 169:
+                if (var4) {
+                    _fun48960_ip = 175;
+                    continue _fun48960
+                }
+            case 172:
+                var4 = var5;
             case 175:
-                if (!(var0 != var3)) {
-                    _fun49046_ip = 230;
-                    continue _fun49046
+                if (!var4) {
+                    _fun48960_ip = 252;
+                    continue _fun48960
                 }
-            case 179:
-                var2 = var4.push;
-                var0 = 'fillRule';
-                var0 = var2.bind(var4)(var0);
-                var4 = 1;
-                var0 = var4;
-                if (!var3) {
-                    _fun49046_ip = 224;
-                    continue _fun49046
+            case 178:
+                var4 = var3.touchableHandleResponderMove;
+                var1.onResponderMove = var4;
+                var4 = var3.touchableHandleResponderGrant;
+                var1.onResponderGrant = var4;
+                var4 = var3.touchableHandleResponderRelease;
+                var1.onResponderRelease = var4;
+                var4 = var3.touchableHandleResponderTerminate;
+                var1.onResponderTerminate = var4;
+                var4 = var3.touchableHandleStartShouldSetResponder;
+                var1.onStartShouldSetResponder = var4;
+                var3 = var3.touchableHandleResponderTerminationRequest;
+                var1.onResponderTerminationRequest = var3;
+                var2 = true;
+            case 252:
+                if (!var2) {
+                    _fun48960_ip = 261;
+                    continue _fun48960
                 }
-            case 202:
-                var2 = _closure1_slot2;
-                var3 = var2[var3];
-                var2 = 0;
-                var0 = var4;
-                if (!(var2 === var3)) {
-                    _fun49046_ip = 224;
-                    continue _fun49046
-                }
-            case 222:
-                var0 = 0;
-            case 224:
-                var1.fillRule = var0;
-            case 230:
+            case 255:
+                var1.responsible = var0;
+            case 261:
                 var0 = undefined;
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5531, 5519]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

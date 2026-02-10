@@ -3,13 +3,13 @@ package io.sentry;
 public final class l2 implements u3 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final l2 f28521d = new l2();
+    private static final l2 f29456d = new l2();
 
     private l2() {
     }
 
     public static l2 a() {
-        return f28521d;
+        return f29456d;
     }
 
     @Override // io.sentry.u3
@@ -17,7 +17,7 @@ public final class l2 implements u3 {
     }
 
     @Override // io.sentry.u3
-    public void i() {
+    public void j() {
     }
 
     @Override // io.sentry.u3

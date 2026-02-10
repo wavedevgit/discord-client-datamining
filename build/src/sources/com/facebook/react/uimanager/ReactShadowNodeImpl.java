@@ -345,7 +345,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public final float getLayoutHeight() {
-        return this.mYogaNode.h();
+        return this.mYogaNode.g();
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -385,7 +385,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public final float getPadding(int i10) {
-        return this.mYogaNode.i(com.facebook.yoga.e.d(i10));
+        return this.mYogaNode.h(com.facebook.yoga.e.d(i10));
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
@@ -766,7 +766,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     /* renamed from: setPaddingPercent */
-    public void mo910setPaddingPercent(int i10, float f10) {
+    public void mo911setPaddingPercent(int i10, float f10) {
         this.mPadding[i10] = f10;
         this.mPaddingIsPercent[i10] = !com.facebook.yoga.d.a(f10);
         updatePadding();
@@ -912,6 +912,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
         onAfterUpdateTransaction();
     }
 
+    /* JADX WARN: Can't rename method to resolve collision */
     @Override // com.facebook.react.uimanager.ReactShadowNode
     public void addChildAt(ReactShadowNodeImpl reactShadowNodeImpl, int i10) {
         if (this.mChildren == null) {

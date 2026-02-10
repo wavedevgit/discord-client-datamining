@@ -71,7 +71,7 @@ public final class QRCode_QRCodeComponentStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 qRCodeWidthStyle = (AttributeStyles.QRCodeWidthStyle) this.nullableQRCodeWidthStyleAdapter.fromJson(reader);
@@ -93,7 +93,7 @@ public final class QRCode_QRCodeComponentStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, QRCode.QRCodeComponentStyle qRCodeComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (qRCodeComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("width");
             this.nullableQRCodeWidthStyleAdapter.toJson(writer, qRCodeComponentStyle.getWidth());
             writer.J("justify");

@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2.value = var7;
                 var2 = var5.bind(var6)(var4, var3, var2);
             case 51: // try_end0
-                _fun8745_ip = 159;
+                _fun8745_ip = 160;
                 continue _fun8745;
             case 53: // catch_target0
                 CatchBlockStart(arg_register = 2);
@@ -37,7 +37,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var5.bind(var4)(var3);
                 var3 = var3.DEBUG_BUILD;
                 if (!var3) {
-                    _fun8745_ip = 159;
+                    _fun8745_ip = 160;
                     continue _fun8745
                 }
             case 88:
@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = '" to object';
                 var1 = var5.bind(var4)(var6, var1);
                 var0 = var2.bind(var3)(var1, var0);
-            case 159:
+            case 160:
                 var0 = undefined;
                 return var0;
         }
@@ -458,7 +458,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = undefined;
                 var4 = var4 in var5;
                 if (!var4) {
-                    _fun8755_ip = 200;
+                    _fun8755_ip = 201;
                     continue _fun8755
                 }
             case 26:
@@ -468,7 +468,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = 'function';
                 var4 = typeof var6;
                 if (!(var5 === var4)) {
-                    _fun8755_ip = 200;
+                    _fun8755_ip = 201;
                     continue _fun8755
                 }
             case 50:
@@ -489,7 +489,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var2;
                 var5[var4] = var3;
             case 94: // try_end0
-                _fun8755_ip = 200;
+                _fun8755_ip = 201;
                 continue _fun8755;
             case 96: // catch_target0
                 CatchBlockStart(arg_register = 3);
@@ -500,7 +500,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var5.bind(var0)(var4);
                 var4 = var4.DEBUG_BUILD;
                 if (!var4) {
-                    _fun8755_ip = 200;
+                    _fun8755_ip = 201;
                     continue _fun8755
                 }
             case 129:
@@ -519,7 +519,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = '" in object';
                 var2 = var6.bind(var5)(var7, var2);
                 var1 = var3.bind(var4)(var2, var1);
-            case 200:
+            case 201:
                 return var0;
         }
     };

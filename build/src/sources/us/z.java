@@ -1,40 +1,22 @@
 package us;
 
-import java.util.concurrent.atomic.AtomicReferenceArray;
-import org.jetbrains.annotations.NotNull;
+import java.lang.reflect.Type;
+import kotlin.jvm.functions.Function0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class z {
-    @NotNull
-    private volatile AtomicReferenceArray<Object> array;
+public class z implements Function0 {
 
-    public z(int i10) {
-        this.array = new AtomicReferenceArray<>(i10);
+    /* renamed from: d  reason: collision with root package name */
+    private final a0 f51217d;
+
+    public z(a0 a0Var) {
+        this.f51217d = a0Var;
     }
 
-    public final int a() {
-        return this.array.length();
-    }
-
-    public final Object b(int i10) {
-        AtomicReferenceArray<Object> atomicReferenceArray = this.array;
-        if (i10 < atomicReferenceArray.length()) {
-            return atomicReferenceArray.get(i10);
-        }
-        return null;
-    }
-
-    public final void c(int i10, Object obj) {
-        AtomicReferenceArray<Object> atomicReferenceArray = this.array;
-        int length = atomicReferenceArray.length();
-        if (i10 < length) {
-            atomicReferenceArray.set(i10, obj);
-            return;
-        }
-        AtomicReferenceArray<Object> atomicReferenceArray2 = new AtomicReferenceArray<>(kotlin.ranges.d.d(i10 + 1, length * 2));
-        for (int i11 = 0; i11 < length; i11++) {
-            atomicReferenceArray2.set(i11, atomicReferenceArray.get(i11));
-        }
-        atomicReferenceArray2.set(i10, obj);
-        this.array = atomicReferenceArray2;
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        Type j10;
+        j10 = a0.j(this.f51217d);
+        return j10;
     }
 }

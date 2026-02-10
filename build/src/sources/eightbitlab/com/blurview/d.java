@@ -3,8 +3,8 @@ package eightbitlab.com.blurview;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int[] f21689a = {2130968724};
+    public static int[] f22844a = {2130968726};
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f21690b;
+    public static int f22845b;
 }

@@ -7,35 +7,35 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a implements CoroutineContext.Element {
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineContext.b f31832d;
+    private final CoroutineContext.b f32054d;
 
     public a(CoroutineContext.b key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        this.f31832d = key;
+        this.f32054d = key;
     }
 
     @Override // kotlin.coroutines.CoroutineContext
-    public CoroutineContext V0(CoroutineContext coroutineContext) {
+    public CoroutineContext O0(CoroutineContext coroutineContext) {
         return CoroutineContext.Element.a.d(this, coroutineContext);
+    }
+
+    @Override // kotlin.coroutines.CoroutineContext
+    public CoroutineContext Z0(CoroutineContext.b bVar) {
+        return CoroutineContext.Element.a.c(this, bVar);
+    }
+
+    @Override // kotlin.coroutines.CoroutineContext
+    public Object a1(Object obj, Function2 function2) {
+        return CoroutineContext.Element.a.a(this, obj, function2);
     }
 
     @Override // kotlin.coroutines.CoroutineContext.Element
     public CoroutineContext.b getKey() {
-        return this.f31832d;
+        return this.f32054d;
     }
 
     @Override // kotlin.coroutines.CoroutineContext.Element, kotlin.coroutines.CoroutineContext
     public CoroutineContext.Element m(CoroutineContext.b bVar) {
         return CoroutineContext.Element.a.b(this, bVar);
-    }
-
-    @Override // kotlin.coroutines.CoroutineContext
-    public CoroutineContext s1(CoroutineContext.b bVar) {
-        return CoroutineContext.Element.a.c(this, bVar);
-    }
-
-    @Override // kotlin.coroutines.CoroutineContext
-    public Object u1(Object obj, Function2 function2) {
-        return CoroutineContext.Element.a.a(this, obj, function2);
     }
 }

@@ -5,56 +5,81 @@ import android.util.AttributeSet;
 import androidx.annotation.NonNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class CircularProgressIndicator extends a {
-    public static final int A = bh.j.f6801q;
+    public static final int B = bh.k.f6948w;
 
     public CircularProgressIndicator(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, bh.b.f6629g);
+        this(context, attributeSet, bh.b.f6735g);
     }
 
-    private void s() {
-        c cVar = new c((e) this.f15344d);
-        setIndeterminateDrawable(j.t(getContext(), (e) this.f15344d, cVar));
-        setProgressDrawable(f.v(getContext(), (e) this.f15344d, cVar));
+    private void t() {
+        c cVar = new c((f) this.f16051d);
+        setIndeterminateDrawable(k.v(getContext(), (f) this.f16051d, cVar));
+        setProgressDrawable(g.A(getContext(), (f) this.f16051d, cVar));
+    }
+
+    public int getIndeterminateAnimationType() {
+        return ((f) this.f16051d).f16126o;
     }
 
     public int getIndicatorDirection() {
-        return ((e) this.f15344d).f15391j;
+        return ((f) this.f16051d).f16129r;
     }
 
     public int getIndicatorInset() {
-        return ((e) this.f15344d).f15390i;
+        return ((f) this.f16051d).f16128q;
     }
 
     public int getIndicatorSize() {
-        return ((e) this.f15344d).f15389h;
+        return ((f) this.f16051d).f16127p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.progressindicator.a
-    /* renamed from: r */
-    public e i(Context context, AttributeSet attributeSet) {
-        return new e(context, attributeSet);
+    /* renamed from: s */
+    public f i(Context context, AttributeSet attributeSet) {
+        return new f(context, attributeSet);
+    }
+
+    public void setIndeterminateAnimationType(int i10) {
+        j dVar;
+        if (((f) this.f16051d).f16126o == i10) {
+            return;
+        }
+        if (r() && isIndeterminate()) {
+            throw new IllegalStateException("Cannot change indeterminate animation type while the progress indicator is show in indeterminate mode.");
+        }
+        b bVar = this.f16051d;
+        ((f) bVar).f16126o = i10;
+        ((f) bVar).h();
+        if (i10 == 1) {
+            dVar = new e(getContext(), (f) this.f16051d);
+        } else {
+            dVar = new d((f) this.f16051d);
+        }
+        getIndeterminateDrawable().z(dVar);
+        o();
+        invalidate();
     }
 
     public void setIndicatorDirection(int i10) {
-        ((e) this.f15344d).f15391j = i10;
+        ((f) this.f16051d).f16129r = i10;
         invalidate();
     }
 
     public void setIndicatorInset(int i10) {
-        b bVar = this.f15344d;
-        if (((e) bVar).f15390i != i10) {
-            ((e) bVar).f15390i = i10;
+        b bVar = this.f16051d;
+        if (((f) bVar).f16128q != i10) {
+            ((f) bVar).f16128q = i10;
             invalidate();
         }
     }
 
     public void setIndicatorSize(int i10) {
         int max = Math.max(i10, getTrackThickness() * 2);
-        b bVar = this.f15344d;
-        if (((e) bVar).f15389h != max) {
-            ((e) bVar).f15389h = max;
-            ((e) bVar).e();
+        b bVar = this.f16051d;
+        if (((f) bVar).f16127p != max) {
+            ((f) bVar).f16127p = max;
+            ((f) bVar).h();
             requestLayout();
             invalidate();
         }
@@ -63,11 +88,12 @@ public class CircularProgressIndicator extends a {
     @Override // com.google.android.material.progressindicator.a
     public void setTrackThickness(int i10) {
         super.setTrackThickness(i10);
-        ((e) this.f15344d).e();
+        ((f) this.f16051d).h();
     }
 
     public CircularProgressIndicator(Context context, AttributeSet attributeSet, int i10) {
-        super(context, attributeSet, i10, A);
-        s();
+        super(context, attributeSet, i10, B);
+        t();
+        this.f16061v = true;
     }
 }

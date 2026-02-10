@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaClass
 public class i implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaClassDescriptor f32745d;
+    private final LazyJavaClassDescriptor f32967d;
 
     public i(LazyJavaClassDescriptor lazyJavaClassDescriptor) {
-        this.f32745d = lazyJavaClassDescriptor;
+        this.f32967d = lazyJavaClassDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List E;
-        E = LazyJavaClassDescriptor.a.E(this.f32745d);
+        E = LazyJavaClassDescriptor.a.E(this.f32967d);
         return E;
     }
 }

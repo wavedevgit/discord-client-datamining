@@ -12,7 +12,11 @@ public interface RNSSearchBarManagerInterface<T extends View> extends ViewManage
 
     void focus(T t10);
 
+    void setAllowToolbarIntegration(T t10, boolean z10);
+
     void setAutoCapitalize(T t10, String str);
+
+    void setAutoFocus(T t10, boolean z10);
 
     void setBarTintColor(T t10, Integer num);
 
@@ -22,7 +26,7 @@ public interface RNSSearchBarManagerInterface<T extends View> extends ViewManage
 
     void setHeaderIconColor(T t10, Integer num);
 
-    void setHideNavigationBar(T t10, boolean z10);
+    void setHideNavigationBar(T t10, String str);
 
     void setHideWhenScrolling(T t10, boolean z10);
 
@@ -30,7 +34,7 @@ public interface RNSSearchBarManagerInterface<T extends View> extends ViewManage
 
     void setInputType(T t10, String str);
 
-    void setObscureBackground(T t10, boolean z10);
+    void setObscureBackground(T t10, String str);
 
     void setPlaceholder(T t10, String str);
 

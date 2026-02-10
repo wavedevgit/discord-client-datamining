@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.os.Process;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactPackageTurboModuleManagerDelegate;
 import com.facebook.react.bridge.Arguments;
@@ -270,7 +270,7 @@ public class ReactInstanceManager {
         this.mTMMDelegateBuilder = builder;
         synchronized (arrayList) {
             try {
-                b9.c.a().b(c9.a.f7341d, "RNCore: Use Split Packages");
+                b9.c.a().b(c9.a.f8022d, "RNCore: Use Split Packages");
                 arrayList.add(new CoreModulesPackage(this, new DefaultHardwareBackBtnHandler() { // from class: com.facebook.react.ReactInstanceManager.1
                     @Override // com.facebook.react.modules.core.DefaultHardwareBackBtnHandler
                     public void invokeDefaultOnBackPressed() {
@@ -715,13 +715,13 @@ public class ReactInstanceManager {
     /* JADX INFO: Access modifiers changed from: private */
     public void recreateReactContextInBackgroundFromBundleLoader() {
         q8.a.b(TAG, "ReactInstanceManager.recreateReactContextInBackgroundFromBundleLoader()");
-        b9.c.a().b(c9.a.f7341d, "RNCore: load from BundleLoader");
+        b9.c.a().b(c9.a.f8022d, "RNCore: load from BundleLoader");
         recreateReactContextInBackground(this.mJavaScriptExecutorFactory, this.mBundleLoader);
     }
 
     private void recreateReactContextInBackgroundInner() {
         q8.a.b(TAG, "ReactInstanceManager.recreateReactContextInBackgroundInner()");
-        b9.c.a().b(c9.a.f7341d, "RNCore: recreateReactContextInBackground");
+        b9.c.a().b(c9.a.f8022d, "RNCore: recreateReactContextInBackground");
         UiThreadUtil.assertOnUiThread();
         if (this.mUseDeveloperSupport && this.mJSMainModulePath != null) {
             this.mDevSupportManager.getDevSettings();
@@ -912,7 +912,7 @@ public class ReactInstanceManager {
     public void destroy() {
         ReactInstanceManagerInspectorTarget reactInstanceManagerInspectorTarget;
         UiThreadUtil.assertOnUiThread();
-        b9.c.a().b(c9.a.f7341d, "RNCore: Destroy");
+        b9.c.a().b(c9.a.f8022d, "RNCore: Destroy");
         logOnDestroy();
         if (this.mHasStartedDestroying.booleanValue()) {
             q8.a.m(ReactConstants.TAG, "ReactInstanceManager.destroy called: bail out, already destroying");
@@ -1209,7 +1209,7 @@ public class ReactInstanceManager {
         if (this.mUseDeveloperSupport) {
             if (activity != null) {
                 final View decorView = activity.getWindow().getDecorView();
-                if (!h0.R(decorView)) {
+                if (!i0.P(decorView)) {
                     decorView.addOnAttachStateChangeListener(new View.OnAttachStateChangeListener() { // from class: com.facebook.react.ReactInstanceManager.4
                         @Override // android.view.View.OnAttachStateChangeListener
                         public void onViewAttachedToWindow(View view) {

@@ -1,65 +1,303 @@
 package jr;
 
-import android.content.Context;
-import android.widget.TextView;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import jr.e;
-import jr.g;
-import jr.k;
-import jr.n;
-import kr.c;
-import sv.d;
+import android.text.TextUtils;
+import android.util.Log;
+import com.facebook.react.views.text.internal.span.SetSpanOperation;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.charset.Charset;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-class f implements e.a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Context f30417a;
+public class f {
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f30418b = new ArrayList(3);
+    private static final byte[] f31303b = "Exif\u0000\u0000".getBytes(Charset.forName("UTF-8"));
 
     /* renamed from: c  reason: collision with root package name */
-    private TextView.BufferType f30419c = TextView.BufferType.SPANNABLE;
+    private static final int[] f31304c = {0, 1, 1, 2, 4, 8, 1, 1, 2, 4, 8, 4, 8};
 
-    /* renamed from: d  reason: collision with root package name */
-    private boolean f30420d = true;
+    /* renamed from: a  reason: collision with root package name */
+    private final b f31305a;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public f(Context context) {
-        this.f30417a = context;
-    }
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static class a {
 
-    private static List b(List list) {
-        return new p(list).b();
-    }
+        /* renamed from: a  reason: collision with root package name */
+        private final ByteBuffer f31306a;
 
-    @Override // jr.e.a
-    public e.a a(i iVar) {
-        this.f30418b.add(iVar);
-        return this;
-    }
-
-    @Override // jr.e.a
-    public e build() {
-        if (!this.f30418b.isEmpty()) {
-            List<i> b10 = b(this.f30418b);
-            d.b bVar = new d.b();
-            c.a i10 = kr.c.i(this.f30417a);
-            g.b bVar2 = new g.b();
-            n.a aVar = new n.a();
-            k.a aVar2 = new k.a();
-            for (i iVar : b10) {
-                iVar.g(bVar);
-                iVar.j(i10);
-                iVar.a(bVar2);
-                iVar.f(aVar);
-                iVar.b(aVar2);
-            }
-            g h10 = bVar2.h(i10.z(), aVar2.build());
-            return new h(this.f30419c, null, bVar.f(), m.b(aVar, h10), h10, Collections.unmodifiableList(b10), this.f30420d);
+        public a(byte[] bArr, int i10) {
+            this.f31306a = (ByteBuffer) ByteBuffer.wrap(bArr).order(ByteOrder.BIG_ENDIAN).limit(i10);
         }
-        throw new IllegalStateException("No plugins were added to this builder. Use #usePlugin method to add them");
+
+        public short a(int i10) {
+            return this.f31306a.getShort(i10);
+        }
+
+        public int b(int i10) {
+            return this.f31306a.getInt(i10);
+        }
+
+        public int c() {
+            return this.f31306a.remaining();
+        }
+
+        public void d(ByteOrder byteOrder) {
+            this.f31306a.order(byteOrder);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public interface b {
+        int a();
+
+        int b(byte[] bArr, int i10);
+
+        short c();
+
+        long skip(long j10);
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static class c implements b {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final InputStream f31307a;
+
+        public c(InputStream inputStream) {
+            this.f31307a = inputStream;
+        }
+
+        @Override // jr.f.b
+        public int a() {
+            return ((this.f31307a.read() << 8) & 65280) | (this.f31307a.read() & SetSpanOperation.SPAN_MAX_PRIORITY);
+        }
+
+        @Override // jr.f.b
+        public int b(byte[] bArr, int i10) {
+            int i11 = i10;
+            while (i11 > 0) {
+                int read = this.f31307a.read(bArr, i10 - i11, i11);
+                if (read == -1) {
+                    break;
+                }
+                i11 -= read;
+            }
+            return i10 - i11;
+        }
+
+        @Override // jr.f.b
+        public short c() {
+            return (short) (this.f31307a.read() & SetSpanOperation.SPAN_MAX_PRIORITY);
+        }
+
+        @Override // jr.f.b
+        public long skip(long j10) {
+            if (j10 < 0) {
+                return 0L;
+            }
+            long j11 = j10;
+            while (j11 > 0) {
+                long skip = this.f31307a.skip(j11);
+                if (skip <= 0) {
+                    if (this.f31307a.read() == -1) {
+                        break;
+                    }
+                    skip = 1;
+                }
+                j11 -= skip;
+            }
+            return j10 - j11;
+        }
+    }
+
+    public f(InputStream inputStream) {
+        this.f31305a = new c(inputStream);
+    }
+
+    private static int a(int i10, int i11) {
+        return i10 + 2 + (i11 * 12);
+    }
+
+    public static void b(e3.a aVar, int i10, int i11, String str) {
+        String[] strArr = {"FNumber", "DateTime", "DateTimeDigitized", "ExposureTime", "Flash", "FocalLength", "GPSAltitude", "GPSAltitudeRef", "GPSDateStamp", "GPSLatitude", "GPSLatitudeRef", "GPSLongitude", "GPSLongitudeRef", "GPSProcessingMethod", "GPSTimeStamp", "PhotographicSensitivity", "Make", "Model", "SubSecTime", "SubSecTimeDigitized", "SubSecTimeOriginal", "WhiteBalance"};
+        try {
+            e3.a aVar2 = new e3.a(str);
+            for (int i12 = 0; i12 < 22; i12++) {
+                String str2 = strArr[i12];
+                String k10 = aVar.k(str2);
+                if (!TextUtils.isEmpty(k10)) {
+                    aVar2.h0(str2, k10);
+                }
+            }
+            aVar2.h0("ImageWidth", String.valueOf(i10));
+            aVar2.h0("ImageLength", String.valueOf(i11));
+            aVar2.h0("Orientation", "0");
+            aVar2.c0();
+        } catch (IOException e10) {
+            Log.d("ImageHeaderParser", e10.getMessage());
+        }
+    }
+
+    private static boolean d(int i10) {
+        if ((i10 & 65496) != 65496 && i10 != 19789 && i10 != 18761) {
+            return false;
+        }
+        return true;
+    }
+
+    private boolean e(byte[] bArr, int i10) {
+        boolean z10;
+        if (bArr != null && i10 > f31303b.length) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        if (z10) {
+            int i11 = 0;
+            while (true) {
+                byte[] bArr2 = f31303b;
+                if (i11 >= bArr2.length) {
+                    break;
+                } else if (bArr[i11] != bArr2[i11]) {
+                    return false;
+                } else {
+                    i11++;
+                }
+            }
+        }
+        return z10;
+    }
+
+    private int f() {
+        short c10;
+        short c11;
+        int a10;
+        long j10;
+        long skip;
+        do {
+            if (this.f31305a.c() != 255) {
+                if (Log.isLoggable("ImageHeaderParser", 3)) {
+                    Log.d("ImageHeaderParser", "Unknown segmentId=" + ((int) c10));
+                }
+                return -1;
+            }
+            c11 = this.f31305a.c();
+            if (c11 == 218) {
+                return -1;
+            }
+            if (c11 == 217) {
+                if (Log.isLoggable("ImageHeaderParser", 3)) {
+                    Log.d("ImageHeaderParser", "Found MARKER_EOI in exif segment");
+                }
+                return -1;
+            }
+            a10 = this.f31305a.a() - 2;
+            if (c11 != 225) {
+                j10 = a10;
+                skip = this.f31305a.skip(j10);
+            } else {
+                return a10;
+            }
+        } while (skip == j10);
+        if (Log.isLoggable("ImageHeaderParser", 3)) {
+            Log.d("ImageHeaderParser", "Unable to skip enough data, type: " + ((int) c11) + ", wanted to skip: " + a10 + ", but actually skipped: " + skip);
+        }
+        return -1;
+    }
+
+    private static int g(a aVar) {
+        ByteOrder byteOrder;
+        short a10 = aVar.a(6);
+        if (a10 == 19789) {
+            byteOrder = ByteOrder.BIG_ENDIAN;
+        } else if (a10 == 18761) {
+            byteOrder = ByteOrder.LITTLE_ENDIAN;
+        } else {
+            if (Log.isLoggable("ImageHeaderParser", 3)) {
+                Log.d("ImageHeaderParser", "Unknown endianness = " + ((int) a10));
+            }
+            byteOrder = ByteOrder.BIG_ENDIAN;
+        }
+        aVar.d(byteOrder);
+        int b10 = aVar.b(10) + 6;
+        short a11 = aVar.a(b10);
+        for (int i10 = 0; i10 < a11; i10++) {
+            int a12 = a(b10, i10);
+            short a13 = aVar.a(a12);
+            if (a13 == 274) {
+                short a14 = aVar.a(a12 + 2);
+                if (a14 >= 1 && a14 <= 12) {
+                    int b11 = aVar.b(a12 + 4);
+                    if (b11 < 0) {
+                        if (Log.isLoggable("ImageHeaderParser", 3)) {
+                            Log.d("ImageHeaderParser", "Negative tiff component count");
+                        }
+                    } else {
+                        if (Log.isLoggable("ImageHeaderParser", 3)) {
+                            Log.d("ImageHeaderParser", "Got tagIndex=" + i10 + " tagType=" + ((int) a13) + " formatCode=" + ((int) a14) + " componentCount=" + b11);
+                        }
+                        int i11 = b11 + f31304c[a14];
+                        if (i11 > 4) {
+                            if (Log.isLoggable("ImageHeaderParser", 3)) {
+                                Log.d("ImageHeaderParser", "Got byte count > 4, not orientation, continuing, formatCode=" + ((int) a14));
+                            }
+                        } else {
+                            int i12 = a12 + 8;
+                            if (i12 >= 0 && i12 <= aVar.c()) {
+                                if (i11 >= 0 && i11 + i12 <= aVar.c()) {
+                                    return aVar.a(i12);
+                                }
+                                if (Log.isLoggable("ImageHeaderParser", 3)) {
+                                    Log.d("ImageHeaderParser", "Illegal number of bytes for TI tag data tagType=" + ((int) a13));
+                                }
+                            } else if (Log.isLoggable("ImageHeaderParser", 3)) {
+                                Log.d("ImageHeaderParser", "Illegal tagValueOffset=" + i12 + " tagType=" + ((int) a13));
+                            }
+                        }
+                    }
+                } else if (Log.isLoggable("ImageHeaderParser", 3)) {
+                    Log.d("ImageHeaderParser", "Got invalid format code = " + ((int) a14));
+                }
+            }
+        }
+        return -1;
+    }
+
+    private int h(byte[] bArr, int i10) {
+        int b10 = this.f31305a.b(bArr, i10);
+        if (b10 != i10) {
+            if (Log.isLoggable("ImageHeaderParser", 3)) {
+                Log.d("ImageHeaderParser", "Unable to read exif segment data, length: " + i10 + ", actually read: " + b10);
+            }
+            return -1;
+        } else if (e(bArr, i10)) {
+            return g(new a(bArr, i10));
+        } else {
+            if (Log.isLoggable("ImageHeaderParser", 3)) {
+                Log.d("ImageHeaderParser", "Missing jpeg exif preamble");
+            }
+            return -1;
+        }
+    }
+
+    public int c() {
+        int a10 = this.f31305a.a();
+        if (!d(a10)) {
+            if (Log.isLoggable("ImageHeaderParser", 3)) {
+                Log.d("ImageHeaderParser", "Parser doesn't handle magic number: " + a10);
+            }
+            return -1;
+        }
+        int f10 = f();
+        if (f10 == -1) {
+            if (Log.isLoggable("ImageHeaderParser", 3)) {
+                Log.d("ImageHeaderParser", "Failed to parse exif segment length, or exif segment not found");
+            }
+            return -1;
+        }
+        return h(new byte[f10], f10);
     }
 }

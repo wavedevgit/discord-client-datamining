@@ -27,7 +27,7 @@ public interface NestedClickableSpan {
         static {
             TouchPriority[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = yr.a.a($values);
+            $ENTRIES = hs.a.a($values);
         }
 
         private TouchPriority(String str, int i10) {

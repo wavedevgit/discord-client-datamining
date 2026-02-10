@@ -5,7 +5,7 @@ import x5.c;
 abstract class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f53293a = c.a.a("fFamily", "fName", "fStyle", "ascent");
+    private static final c.a f52322a = c.a.a("fFamily", "fName", "fStyle", "ascent");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static r5.c a(x5.c cVar) {
@@ -15,7 +15,7 @@ abstract class n {
         float f10 = 0.0f;
         String str3 = null;
         while (cVar.hasNext()) {
-            int p10 = cVar.p(f53293a);
+            int p10 = cVar.p(f52322a);
             if (p10 != 0) {
                 if (p10 != 1) {
                     if (p10 != 2) {
@@ -26,13 +26,13 @@ abstract class n {
                             f10 = (float) cVar.nextDouble();
                         }
                     } else {
-                        str2 = cVar.b1();
+                        str2 = cVar.g1();
                     }
                 } else {
-                    str3 = cVar.b1();
+                    str3 = cVar.g1();
                 }
             } else {
-                str = cVar.b1();
+                str = cVar.g1();
             }
         }
         cVar.D();

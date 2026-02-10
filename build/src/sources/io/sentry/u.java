@@ -6,19 +6,19 @@ import java.net.URI;
 public final class u {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f29171a;
+    private final String f30106a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f29172b;
+    private final String f30107b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f29173c;
+    private final String f30108c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f29174d;
+    private final String f30109d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final URI f29175e;
+    private final URI f30110e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u(String str) {
@@ -34,14 +34,14 @@ public final class u {
             if (userInfo != null && !userInfo.isEmpty()) {
                 String[] split = userInfo.split(":", -1);
                 String str3 = split[0];
-                this.f29174d = str3;
+                this.f30109d = str3;
                 if (str3 != null && !str3.isEmpty()) {
                     if (split.length > 1) {
                         str2 = split[1];
                     } else {
                         str2 = null;
                     }
-                    this.f29173c = str2;
+                    this.f30108c = str2;
                     String path = normalize.getPath();
                     path = path.endsWith("/") ? path.substring(0, path.length() - 1) : path;
                     int lastIndexOf = path.lastIndexOf("/") + 1;
@@ -49,12 +49,12 @@ public final class u {
                     if (!substring.endsWith("/")) {
                         substring = substring + "/";
                     }
-                    this.f29172b = substring;
+                    this.f30107b = substring;
                     String substring2 = path.substring(lastIndexOf);
-                    this.f29171a = substring2;
+                    this.f30106a = substring2;
                     if (!substring2.isEmpty()) {
                         String str4 = substring;
-                        this.f29175e = new URI(scheme, null, normalize.getHost(), normalize.getPort(), str4 + "api/" + substring2, null, null);
+                        this.f30110e = new URI(scheme, null, normalize.getHost(), normalize.getPort(), str4 + "api/" + substring2, null, null);
                         return;
                     }
                     throw new IllegalArgumentException("Invalid DSN: A Project Id is required.");
@@ -68,15 +68,15 @@ public final class u {
     }
 
     public String a() {
-        return this.f29174d;
+        return this.f30109d;
     }
 
     public String b() {
-        return this.f29173c;
+        return this.f30108c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public URI c() {
-        return this.f29175e;
+        return this.f30110e;
     }
 }

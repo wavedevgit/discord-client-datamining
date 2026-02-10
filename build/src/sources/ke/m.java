@@ -5,21 +5,21 @@ import java.util.Arrays;
 public final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f30854a;
+    public final int f31712a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final l[] f30855b;
+    private final l[] f31713b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f30856c;
+    private int f31714c;
 
     public m(l... lVarArr) {
-        this.f30855b = lVarArr;
-        this.f30854a = lVarArr.length;
+        this.f31713b = lVarArr;
+        this.f31712a = lVarArr.length;
     }
 
     public l a(int i10) {
-        return this.f30855b[i10];
+        return this.f31713b[i10];
     }
 
     public boolean equals(Object obj) {
@@ -27,15 +27,15 @@ public final class m {
             return true;
         }
         if (obj != null && m.class == obj.getClass()) {
-            return Arrays.equals(this.f30855b, ((m) obj).f30855b);
+            return Arrays.equals(this.f31713b, ((m) obj).f31713b);
         }
         return false;
     }
 
     public int hashCode() {
-        if (this.f30856c == 0) {
-            this.f30856c = 527 + Arrays.hashCode(this.f30855b);
+        if (this.f31714c == 0) {
+            this.f31714c = 527 + Arrays.hashCode(this.f31713b);
         }
-        return this.f30856c;
+        return this.f31714c;
     }
 }

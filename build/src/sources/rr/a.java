@@ -1,19 +1,9 @@
 package rr;
 
-import kotlin.jvm.functions.Function3;
-import kotlin.jvm.internal.Intrinsics;
+import java.io.File;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public interface a {
+    boolean isSatisfied(File file);
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Function3 f49178a;
-
-    public a(Function3 block) {
-        Intrinsics.checkNotNullParameter(block, "block");
-        this.f49178a = block;
-    }
-
-    public final Function3 a() {
-        return this.f49178a;
-    }
+    File satisfy(File file);
 }

@@ -2537,7 +2537,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                     var0 = undefined;
                                                                     var0 = var2.bind(var3)(var0, var1);
                                                                 case 27: // try_end0
-                                                                    _fun25758_ip = 71;
+                                                                    _fun25758_ip = 73;
                                                                     continue _fun25758;
                                                                 case 29: // catch_target0
                                                                     CatchBlockStart(arg_register = 2);
@@ -2549,7 +2549,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                     var1 = var0.console;
                                                                     var0 = var1.log;
                                                                     var0 = var0.bind(var1)(var2);
-                                                                case 71:
+                                                                case 73:
                                                                     var0 = undefined;
                                                                     return var0;
                                                             }
@@ -10012,20 +10012,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                     var1._clientApiBaseUrl = var3;
                                                     var3 = var2.graphQL;
                                                     if (!var3) {
-                                                        _fun25960_ip = 337;
+                                                        _fun25960_ip = 335;
                                                         continue _fun25960
                                                     }
-                                                case 187:
+                                                case 185:
                                                     var5 = _closure3_slot3;
                                                     var3 = var2.graphQL;
                                                     var4 = var3.url;
                                                     var3 = undefined;
                                                     var3 = var5.bind(var3)(var4);
                                                     if (var3) {
-                                                        _fun25960_ip = 291;
+                                                        _fun25960_ip = 289;
                                                         continue _fun25960
                                                     }
-                                                case 212:
+                                                case 210:
                                                     var5 = _closure3_slot4;
                                                     var3 = {};
                                                     var4 = _closure3_slot13;
@@ -10049,7 +10049,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                     var3 = new var7[var5](var6, var5);
                                                     var3 = var3 instanceof Object ? var3 : var4;
                                                     throw var3;
-                                                case 291:
+                                                case 289:
                                                     var3 = _closure3_slot1;
                                                     var0 = {};
                                                     var2 = var2.graphQL;
@@ -10065,7 +10065,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                     var0 = new var7[var3](var6, var5);
                                                     var0 = var0 instanceof Object ? var0 : var2;
                                                     var1._graphQL = var0;
-                                                case 337:
+                                                case 335:
                                                     var0 = undefined;
                                                     return var0;
                                             }
@@ -19607,7 +19607,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                     continue _fun26104
                                                 }
                                             case 1080: // try_end1
-                                                _fun26104_ip = 1370;
+                                                _fun26104_ip = 1372;
                                                 continue _fun26104;
                                             case 1085: // try_start_2
                                                 var7 = var6.window;

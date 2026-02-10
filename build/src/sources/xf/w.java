@@ -10,34 +10,34 @@ public class w extends jf.a {
     public static final Parcelable.Creator<w> CREATOR = new y0();
 
     /* renamed from: d  reason: collision with root package name */
-    private final v4 f55010d;
+    private final v4 f54742d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f55011e;
+    private final String f54743e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f55012i;
+    private final String f54744i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f55013o;
+    private final String f54745o;
 
     public w(v4 v4Var, String str, String str2, String str3) {
-        this.f55010d = (v4) hf.q.l(v4Var);
-        this.f55011e = (String) hf.q.l(str);
-        this.f55012i = str2;
-        this.f55013o = (String) hf.q.l(str3);
+        this.f54742d = (v4) hf.q.l(v4Var);
+        this.f54743e = (String) hf.q.l(str);
+        this.f54744i = str2;
+        this.f54745o = (String) hf.q.l(str3);
     }
 
     public String b() {
-        return this.f55013o;
+        return this.f54745o;
     }
 
     public String c() {
-        return this.f55012i;
+        return this.f54744i;
     }
 
     public byte[] d() {
-        return this.f55010d.p();
+        return this.f54742d.p();
     }
 
     public boolean equals(Object obj) {
@@ -45,23 +45,23 @@ public class w extends jf.a {
             return false;
         }
         w wVar = (w) obj;
-        if (!hf.o.a(this.f55010d, wVar.f55010d) || !hf.o.a(this.f55011e, wVar.f55011e) || !hf.o.a(this.f55012i, wVar.f55012i) || !hf.o.a(this.f55013o, wVar.f55013o)) {
+        if (!hf.o.a(this.f54742d, wVar.f54742d) || !hf.o.a(this.f54743e, wVar.f54743e) || !hf.o.a(this.f54744i, wVar.f54744i) || !hf.o.a(this.f54745o, wVar.f54745o)) {
             return false;
         }
         return true;
     }
 
     public String getName() {
-        return this.f55011e;
+        return this.f54743e;
     }
 
     public int hashCode() {
-        return hf.o.b(this.f55010d, this.f55011e, this.f55012i, this.f55013o);
+        return hf.o.b(this.f54742d, this.f54743e, this.f54744i, this.f54745o);
     }
 
     public final String toString() {
-        String b10 = com.google.android.gms.common.util.c.b(this.f55010d.p());
-        return "PublicKeyCredentialUserEntity{\n id=" + b10 + ", \n name='" + this.f55011e + "', \n icon='" + this.f55012i + "', \n displayName='" + this.f55013o + "'}";
+        String b10 = com.google.android.gms.common.util.c.b(this.f54742d.p());
+        return "PublicKeyCredentialUserEntity{\n id=" + b10 + ", \n name='" + this.f54743e + "', \n icon='" + this.f54744i + "', \n displayName='" + this.f54745o + "'}";
     }
 
     @Override // android.os.Parcelable
@@ -84,7 +84,7 @@ public class w extends jf.a {
             r2 = this;
             java.lang.Object r3 = hf.q.l(r3)
             byte[] r3 = (byte[]) r3
-            com.google.android.gms.internal.fido.v4 r0 = com.google.android.gms.internal.fido.v4.f14239e
+            com.google.android.gms.internal.fido.v4 r0 = com.google.android.gms.internal.fido.v4.f14816e
             int r0 = r3.length
             r1 = 0
             com.google.android.gms.internal.fido.v4 r3 = com.google.android.gms.internal.fido.v4.o(r3, r1, r0)

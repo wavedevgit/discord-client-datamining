@@ -72,7 +72,7 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -115,7 +115,7 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
         List list5 = list;
         Constructor<NextStep.Ui.Config> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Ui.Config.class.getDeclaredConstructor(List.class, Boolean.class, Boolean.class, Boolean.class, NextStep.Ui.Localizations.class, List.class, Integer.TYPE, bn.c.f7152c);
+            constructor = NextStep.Ui.Config.class.getDeclaredConstructor(List.class, Boolean.class, Boolean.class, Boolean.class, NextStep.Ui.Localizations.class, List.class, Integer.TYPE, dn.c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -128,7 +128,7 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Ui.Config config) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (config != null) {
-            writer.k();
+            writer.i();
             writer.J("components");
             this.nullableListOfUiComponentConfigAdapter.toJson(writer, config.getComponents());
             writer.J("backStepEnabled");

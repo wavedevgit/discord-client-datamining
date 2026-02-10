@@ -1,50 +1,50 @@
 package pg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class x3 implements zi.d {
+final class x3 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x3 f44186a = new x3();
+    static final x3 f42644a = new x3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f44187b;
+    private static final bj.c f42645b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f44188c;
+    private static final bj.c f42646c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f44189d;
+    private static final bj.c f42647d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final zi.c f44190e;
+    private static final bj.c f42648e;
 
     static {
-        c.b a10 = zi.c.a("isChargingRequired");
+        c.b a10 = bj.c.a("isChargingRequired");
         f fVar = new f();
         fVar.a(1);
-        f44187b = a10.b(fVar.b()).a();
-        c.b a11 = zi.c.a("isWifiRequired");
+        f42645b = a10.b(fVar.b()).a();
+        c.b a11 = bj.c.a("isWifiRequired");
         f fVar2 = new f();
         fVar2.a(2);
-        f44188c = a11.b(fVar2.b()).a();
-        c.b a12 = zi.c.a("isDeviceIdleRequired");
+        f42646c = a11.b(fVar2.b()).a();
+        c.b a12 = bj.c.a("isDeviceIdleRequired");
         f fVar3 = new f();
         fVar3.a(3);
-        f44189d = a12.b(fVar3.b()).a();
-        c.b a13 = zi.c.a("canDownloadInBackground");
+        f42647d = a12.b(fVar3.b()).a();
+        c.b a13 = bj.c.a("canDownloadInBackground");
         f fVar4 = new f();
         fVar4.a(4);
-        f44190e = a13.b(fVar4.b()).a();
+        f42648e = a13.b(fVar4.b()).a();
     }
 
     private x3() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

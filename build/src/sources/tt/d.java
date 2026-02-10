@@ -1,26 +1,17 @@
 package tt;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d extends st.e {
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final Map f51049d;
-
-    static {
-        HashMap hashMap = new HashMap();
-        hashMap.put("YEAR_OF_DISPLAY", "L_year");
-        hashMap.put("MONTH_AS_NUMBER", "L_month");
-        hashMap.put("HOUR_FROM_0_TO_24", "L_hour");
-        hashMap.put("DAY_OF_MONTH", "L_day");
-        hashMap.put("DAY_OF_DIVISION", "L_day");
-        f51049d = Collections.unmodifiableMap(hashMap);
+public final class d extends x0 {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public d(SerialDescriptor elementDesc) {
+        super(elementDesc, null);
+        Intrinsics.checkNotNullParameter(elementDesc, "elementDesc");
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public d(String str) {
-        super(str);
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public String h() {
+        return "kotlin.Array";
     }
 }

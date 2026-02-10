@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
 import androidx.core.view.a;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.facebook.react.R;
 import com.facebook.react.bridge.ReactContext;
@@ -45,7 +45,7 @@ public final class ReactDrawerLayout extends DrawerLayout {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         this.drawerPosition = 8388611;
         this.drawerWidth = -1;
-        h0.n0(this, new a() { // from class: com.facebook.react.views.drawer.ReactDrawerLayout.1
+        i0.k0(this, new a() { // from class: com.facebook.react.views.drawer.ReactDrawerLayout.1
             @Override // androidx.core.view.a
             public void onInitializeAccessibilityEvent(View host, AccessibilityEvent event) {
                 Intrinsics.checkNotNullParameter(host, "host");
@@ -117,7 +117,7 @@ public final class ReactDrawerLayout extends DrawerLayout {
             ViewGroup.LayoutParams layoutParams = childAt.getLayoutParams();
             Intrinsics.checkNotNull(layoutParams, "null cannot be cast to non-null type androidx.drawerlayout.widget.DrawerLayout.LayoutParams");
             DrawerLayout.d dVar = (DrawerLayout.d) layoutParams;
-            dVar.f4014a = this.drawerPosition;
+            dVar.f4020a = this.drawerPosition;
             ((ViewGroup.MarginLayoutParams) dVar).width = this.drawerWidth;
             childAt.setLayoutParams(dVar);
             childAt.setClickable(true);

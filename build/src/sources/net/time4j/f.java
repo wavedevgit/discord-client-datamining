@@ -5,41 +5,41 @@ package net.time4j;
 public abstract class f implements u {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final f f38421d;
+    public static final f f37425d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final f f38422e;
+    public static final f f37426e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final f f38423i;
+    public static final f f37427i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final f f38424o;
+    public static final f f37428o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final f f38425p;
+    public static final f f37429p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final f f38426q;
+    public static final f f37430q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final f f38427r;
+    public static final f f37431r;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final f f38428s;
+    public static final f f37432s;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final /* synthetic */ f[] f38429t;
+    private static final /* synthetic */ f[] f37433t;
 
     /* renamed from: co  reason: collision with root package name */
-    private final u f38430co;
+    private final u f37434co;
     private final u eof;
     private final u joda;
     private final u kld;
     private final u nvd;
 
     /* renamed from: ui  reason: collision with root package name */
-    private final u f38431ui;
+    private final u f37435ui;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     enum a extends f {
@@ -52,7 +52,7 @@ public abstract class f implements u {
             return 'I';
         }
 
-        @Override // st.w
+        @Override // bu.w
         public double getLength() {
             return 3.1556952E10d;
         }
@@ -63,41 +63,41 @@ public abstract class f implements u {
     public static /* synthetic */ class i {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f38432a;
+        static final /* synthetic */ int[] f37436a;
 
         static {
             int[] iArr = new int[f.values().length];
-            f38432a = iArr;
+            f37436a = iArr;
             try {
-                iArr[f.f38427r.ordinal()] = 1;
+                iArr[f.f37431r.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f38432a[f.f38428s.ordinal()] = 2;
+                f37436a[f.f37432s.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f38432a[f.f38421d.ordinal()] = 3;
+                f37436a[f.f37425d.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f38432a[f.f38422e.ordinal()] = 4;
+                f37436a[f.f37426e.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f38432a[f.f38423i.ordinal()] = 5;
+                f37436a[f.f37427i.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f38432a[f.f38424o.ordinal()] = 6;
+                f37436a[f.f37428o.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f38432a[f.f38425p.ordinal()] = 7;
+                f37436a[f.f37429p.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f38432a[f.f38426q.ordinal()] = 8;
+                f37436a[f.f37430q.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
         }
@@ -105,13 +105,13 @@ public abstract class f implements u {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class j implements st.m0 {
+    public static class j implements bu.m0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final f f38433a;
+        private final f f37437a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f38434b;
+        private final int f37438b;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public j(f fVar) {
@@ -127,7 +127,7 @@ public abstract class f implements u {
 
         private long f(f0 f0Var, f0 f0Var2) {
             long D0 = f0Var2.D0() - f0Var.D0();
-            int i10 = this.f38434b;
+            int i10 = this.f37438b;
             if (i10 != 5 && i10 != 2 && i10 != 6) {
                 int i11 = (D0 > 0L ? 1 : (D0 == 0L ? 0 : -1));
                 if (i11 > 0 && f0Var2.g() < f0Var.g()) {
@@ -138,32 +138,32 @@ public abstract class f implements u {
                 }
                 return D0;
             }
-            f fVar = f.f38426q;
+            f fVar = f.f37430q;
             int i12 = (D0 > 0L ? 1 : (D0 == 0L ? 0 : -1));
             if (i12 > 0 && f0.s0(fVar, f0Var, D0, i10).P(f0Var2)) {
                 return D0 - 1;
             }
-            if (i12 < 0 && f0.s0(fVar, f0Var, D0, this.f38434b).Q(f0Var2)) {
+            if (i12 < 0 && f0.s0(fVar, f0Var, D0, this.f37438b).Q(f0Var2)) {
                 return D0 + 1;
             }
             return D0;
         }
 
-        @Override // st.m0
+        @Override // bu.m0
         /* renamed from: c */
-        public st.q b(st.q qVar, long j10) {
-            st.p pVar = f0.f38445y;
-            return qVar.E(pVar, f0.s0(this.f38433a, (f0) qVar.t(pVar), j10, this.f38434b));
+        public bu.q b(bu.q qVar, long j10) {
+            bu.p pVar = f0.f37449y;
+            return qVar.E(pVar, f0.s0(this.f37437a, (f0) qVar.k(pVar), j10, this.f37438b));
         }
 
-        @Override // st.m0
+        @Override // bu.m0
         /* renamed from: d */
-        public long a(st.q qVar, st.q qVar2) {
+        public long a(bu.q qVar, bu.q qVar2) {
             long e10;
-            st.p pVar = f0.f38445y;
-            f0 f0Var = (f0) qVar.t(pVar);
-            f0 f0Var2 = (f0) qVar2.t(pVar);
-            switch (i.f38432a[this.f38433a.ordinal()]) {
+            bu.p pVar = f0.f37449y;
+            f0 f0Var = (f0) qVar.k(pVar);
+            f0 f0Var2 = (f0) qVar2.k(pVar);
+            switch (i.f37436a[this.f37437a.ordinal()]) {
                 case 1:
                     e10 = e(f0Var, f0Var2) / 7;
                     break;
@@ -189,16 +189,16 @@ public abstract class f implements u {
                     e10 = f(f0Var, f0Var2);
                     break;
                 default:
-                    throw new UnsupportedOperationException(this.f38433a.name());
+                    throw new UnsupportedOperationException(this.f37437a.name());
             }
             int i10 = (e10 > 0L ? 1 : (e10 == 0L ? 0 : -1));
             if (i10 != 0) {
-                st.p pVar2 = g0.f38479z;
-                if (qVar.s(pVar2) && qVar2.s(pVar2)) {
-                    f fVar = this.f38433a;
-                    if (fVar == f.f38428s || ((f0) f0Var.K(e10, fVar)).M(f0Var2) == 0) {
-                        g0 g0Var = (g0) qVar.t(pVar2);
-                        g0 g0Var2 = (g0) qVar2.t(pVar2);
+                bu.p pVar2 = g0.f37483z;
+                if (qVar.n(pVar2) && qVar2.n(pVar2)) {
+                    f fVar = this.f37437a;
+                    if (fVar == f.f37432s || ((f0) f0Var.K(e10, fVar)).M(f0Var2) == 0) {
+                        g0 g0Var = (g0) qVar.k(pVar2);
+                        g0 g0Var2 = (g0) qVar2.k(pVar2);
                         if (i10 > 0 && g0Var.x0(g0Var2)) {
                             return e10 - 1;
                         }
@@ -216,112 +216,112 @@ public abstract class f implements u {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public j(f fVar, int i10) {
-            this.f38433a = fVar;
-            this.f38434b = i10;
+            this.f37437a = fVar;
+            this.f37438b = i10;
         }
     }
 
     static {
         a aVar = new a("MILLENNIA", 0);
-        f38421d = aVar;
+        f37425d = aVar;
         f fVar = new f("CENTURIES", 1) { // from class: net.time4j.f.b
             @Override // net.time4j.w
             public char d() {
                 return 'C';
             }
 
-            @Override // st.w
+            @Override // bu.w
             public double getLength() {
                 return 3.1556952E9d;
             }
         };
-        f38422e = fVar;
+        f37426e = fVar;
         f fVar2 = new f("DECADES", 2) { // from class: net.time4j.f.c
             @Override // net.time4j.w
             public char d() {
                 return 'E';
             }
 
-            @Override // st.w
+            @Override // bu.w
             public double getLength() {
                 return 3.1556952E8d;
             }
         };
-        f38423i = fVar2;
+        f37427i = fVar2;
         f fVar3 = new f("YEARS", 3) { // from class: net.time4j.f.d
             @Override // net.time4j.w
             public char d() {
                 return 'Y';
             }
 
-            @Override // st.w
+            @Override // bu.w
             public double getLength() {
                 return 3.1556952E7d;
             }
         };
-        f38424o = fVar3;
+        f37428o = fVar3;
         f fVar4 = new f("QUARTERS", 4) { // from class: net.time4j.f.e
             @Override // net.time4j.w
             public char d() {
                 return 'Q';
             }
 
-            @Override // st.w
+            @Override // bu.w
             public double getLength() {
                 return 7889238.0d;
             }
         };
-        f38425p = fVar4;
+        f37429p = fVar4;
         f fVar5 = new f("MONTHS", 5) { // from class: net.time4j.f.f
             @Override // net.time4j.w
             public char d() {
                 return 'M';
             }
 
-            @Override // st.w
+            @Override // bu.w
             public double getLength() {
                 return 2629746.0d;
             }
         };
-        f38426q = fVar5;
+        f37430q = fVar5;
         f fVar6 = new f("WEEKS", 6) { // from class: net.time4j.f.g
             @Override // net.time4j.w
             public char d() {
                 return 'W';
             }
 
-            @Override // st.w
+            @Override // bu.w
             public double getLength() {
                 return 604800.0d;
             }
         };
-        f38427r = fVar6;
+        f37431r = fVar6;
         f fVar7 = new f("DAYS", 7) { // from class: net.time4j.f.h
             @Override // net.time4j.w
             public char d() {
                 return 'D';
             }
 
-            @Override // st.w
+            @Override // bu.w
             public double getLength() {
                 return 86400.0d;
             }
         };
-        f38428s = fVar7;
-        f38429t = new f[]{aVar, fVar, fVar2, fVar3, fVar4, fVar5, fVar6, fVar7};
+        f37432s = fVar7;
+        f37433t = new f[]{aVar, fVar, fVar2, fVar3, fVar4, fVar5, fVar6, fVar7};
     }
 
     private f(String str, int i10) {
         this.eof = new e0(this, 2);
         this.kld = new e0(this, 5);
-        this.f38431ui = new e0(this, 4);
+        this.f37435ui = new e0(this, 4);
         this.nvd = new e0(this, 1);
-        this.f38430co = new e0(this, 3);
+        this.f37434co = new e0(this, 3);
         this.joda = new e0(this, 6);
     }
 
     public static u f() {
-        return x0.f38791d;
+        return x0.f37795d;
     }
 
     public static f valueOf(String str) {
@@ -329,15 +329,15 @@ public abstract class f implements u {
     }
 
     public static f[] values() {
-        return (f[]) f38429t.clone();
+        return (f[]) f37433t.clone();
     }
 
-    @Override // st.w
+    @Override // bu.w
     public boolean a() {
         return true;
     }
 
-    public long e(st.k0 k0Var, st.k0 k0Var2) {
+    public long e(bu.k0 k0Var, bu.k0 k0Var2) {
         return k0Var.L(k0Var2, this);
     }
 

@@ -23,7 +23,7 @@ public final class AdvanceResult {
     static {
         AdvanceResult[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = yr.a.a($values);
+        $ENTRIES = hs.a.a($values);
     }
 
     private AdvanceResult(String str, int i10) {

@@ -48,7 +48,7 @@ public final class AttributeStyles_InputSelectTextFontWeightStyleJsonAdapter ext
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 fontWeightContainer = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
@@ -66,7 +66,7 @@ public final class AttributeStyles_InputSelectTextFontWeightStyleJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.InputSelectTextFontWeightStyle inputSelectTextFontWeightStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputSelectTextFontWeightStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableFontWeightContainerAdapter.toJson(writer, inputSelectTextFontWeightStyle.getBase());
             writer.J("label");

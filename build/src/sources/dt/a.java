@@ -1,15 +1,40 @@
 package dt;
 
-import java.util.List;
-import kotlin.jvm.internal.Intrinsics;
+import java.lang.reflect.Method;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements e {
+public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f20958a;
+    private static final Method f21866a;
 
-    public a(List formatters) {
-        Intrinsics.checkNotNullParameter(formatters, "formatters");
-        this.f20958a = formatters;
+    static {
+        Method method;
+        try {
+            method = ScheduledThreadPoolExecutor.class.getMethod("setRemoveOnCancelPolicy", Boolean.TYPE);
+        } catch (Throwable unused) {
+            method = null;
+        }
+        f21866a = method;
+    }
+
+    public static final boolean a(Executor executor) {
+        ScheduledThreadPoolExecutor scheduledThreadPoolExecutor;
+        Method method;
+        try {
+            if (executor instanceof ScheduledThreadPoolExecutor) {
+                scheduledThreadPoolExecutor = (ScheduledThreadPoolExecutor) executor;
+            } else {
+                scheduledThreadPoolExecutor = null;
+            }
+            if (scheduledThreadPoolExecutor == null || (method = f21866a) == null) {
+                return false;
+            }
+            method.invoke(scheduledThreadPoolExecutor, Boolean.TRUE);
+            return true;
+        } catch (Throwable unused) {
+            return false;
+        }
     }
 }

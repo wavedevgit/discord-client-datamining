@@ -13,29 +13,29 @@ import java.util.concurrent.TimeUnit;
 public final class l implements ue.b {
 
     /* renamed from: e */
-    private static ue.b f6598e;
+    private static ue.b f6704e;
 
     /* renamed from: a */
-    private final Context f6599a;
+    private final Context f6705a;
 
     /* renamed from: b */
-    private boolean f6600b;
+    private boolean f6706b;
 
     /* renamed from: c */
-    private final ScheduledExecutorService f6601c;
+    private final ScheduledExecutorService f6707c;
 
     /* renamed from: d */
-    private final ExecutorService f6602d;
+    private final ExecutorService f6708d;
 
     l(Context context) {
-        this.f6600b = false;
+        this.f6706b = false;
         ScheduledExecutorService newSingleThreadScheduledExecutor = Executors.newSingleThreadScheduledExecutor();
-        this.f6601c = newSingleThreadScheduledExecutor;
-        this.f6602d = Executors.newSingleThreadExecutor();
-        this.f6599a = context;
-        if (!this.f6600b) {
+        this.f6707c = newSingleThreadScheduledExecutor;
+        this.f6708d = Executors.newSingleThreadExecutor();
+        this.f6705a = context;
+        if (!this.f6706b) {
             newSingleThreadScheduledExecutor.scheduleAtFixedRate(new j(this, null), 0L, 86400L, TimeUnit.SECONDS);
-            this.f6600b = true;
+            this.f6706b = true;
         }
     }
 
@@ -44,10 +44,10 @@ public final class l implements ue.b {
         synchronized (l.class) {
             try {
                 hf.q.m(context, "Context must not be null");
-                if (f6598e == null) {
-                    f6598e = new l(context.getApplicationContext());
+                if (f6704e == null) {
+                    f6704e = new l(context.getApplicationContext());
                 }
-                bVar = f6598e;
+                bVar = f6704e;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -98,7 +98,7 @@ public final class l implements ue.b {
     }
 
     public final long a() {
-        long j10 = f(this.f6599a).getLong("app_set_id_last_used_time", -1L);
+        long j10 = f(this.f6705a).getLong("app_set_id_last_used_time", -1L);
         if (j10 == -1) {
             return -1L;
         }
@@ -108,11 +108,11 @@ public final class l implements ue.b {
     public final /* synthetic */ void d(zg.k kVar) {
         String str;
         String str2;
-        String string = f(this.f6599a).getString("app_set_id", null);
+        String string = f(this.f6705a).getString("app_set_id", null);
         long a10 = a();
         if (string != null && com.google.android.gms.common.util.f.c().a() <= a10) {
             try {
-                h(this.f6599a);
+                h(this.f6705a);
             } catch (k e10) {
                 kVar.b(e10);
                 return;
@@ -120,7 +120,7 @@ public final class l implements ue.b {
         } else {
             string = UUID.randomUUID().toString();
             try {
-                Context context = this.f6599a;
+                Context context = this.f6705a;
                 if (!f(context).edit().putString("app_set_id", string).commit()) {
                     String valueOf = String.valueOf(context.getPackageName());
                     if (valueOf.length() != 0) {
@@ -132,7 +132,7 @@ public final class l implements ue.b {
                     throw new k("Failed to store the app set ID.");
                 }
                 h(context);
-                Context context2 = this.f6599a;
+                Context context2 = this.f6705a;
                 SharedPreferences f10 = f(context2);
                 if (!f10.edit().putLong("app_set_id_creation_time", com.google.android.gms.common.util.f.c().a()).commit()) {
                     String valueOf2 = String.valueOf(context2.getPackageName());
@@ -155,7 +155,7 @@ public final class l implements ue.b {
     @Override // ue.b
     public final Task g() {
         final zg.k kVar = new zg.k();
-        this.f6602d.execute(new Runnable() { // from class: bg.h
+        this.f6708d.execute(new Runnable() { // from class: bg.h
             @Override // java.lang.Runnable
             public final void run() {
                 l.this.d(kVar);

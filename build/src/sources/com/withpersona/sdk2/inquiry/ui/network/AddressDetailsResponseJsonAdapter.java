@@ -1,10 +1,10 @@
 package com.withpersona.sdk2.inquiry.ui.network;
 
-import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
+import dn.c;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AddressDetailsResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19913a;
+    private final m.b f20793a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19914b;
+    private final h f20794b;
 
     public AddressDetailsResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("attributes");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19913a = a10;
+        this.f20793a = a10;
         h f10 = moshi.f(LocationData.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19914b = f10;
+        this.f20794b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,13 +35,13 @@ public final class AddressDetailsResponseJsonAdapter extends h {
         reader.u();
         LocationData locationData = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19913a);
+            int J = reader.J(this.f20793a);
             if (J != -1) {
-                if (J == 0 && (locationData = (LocationData) this.f19914b.fromJson(reader)) == null) {
+                if (J == 0 && (locationData = (LocationData) this.f20794b.fromJson(reader)) == null) {
                     throw c.x("attributes", "attributes", reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -57,9 +57,9 @@ public final class AddressDetailsResponseJsonAdapter extends h {
     public void toJson(t writer, AddressDetailsResponse addressDetailsResponse) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (addressDetailsResponse != null) {
-            writer.k();
+            writer.i();
             writer.J("attributes");
-            this.f19914b.toJson(writer, addressDetailsResponse.a());
+            this.f20794b.toJson(writer, addressDetailsResponse.a());
             writer.s();
             return;
         }

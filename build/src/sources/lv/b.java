@@ -1,7 +1,36 @@
 package lv;
+
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public enum b {
-    UNKNOWN,
-    NETWORK,
-    OTHER
+public final class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Object f36075a;
+
+    public b(Object obj) {
+        this.f36075a = obj;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if ((obj instanceof b) && Intrinsics.areEqual(this.f36075a, ((b) obj).f36075a)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        Object obj = this.f36075a;
+        if (obj == null) {
+            return 0;
+        }
+        return obj.hashCode();
+    }
+
+    public String toString() {
+        Object obj = this.f36075a;
+        return "SingleNestedValue(value=" + obj + ")";
+    }
 }

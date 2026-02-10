@@ -9,25 +9,25 @@ import java.util.RandomAccess;
 public abstract class mc extends la implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final d f43797e = new kc(rc.f43933p, 0);
+    private static final d f42255e = new kc(rc.f42391p, 0);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static mc g(Object[] objArr) {
-        return h(objArr, objArr.length);
+        return i(objArr, objArr.length);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static mc h(Object[] objArr, int i10) {
+    public static mc i(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return rc.f43933p;
+            return rc.f42391p;
         }
         return new rc(objArr, i10);
     }
 
-    public static mc i(Object obj) {
+    public static mc j(Object obj) {
         Object[] objArr = {obj};
         qc.a(objArr, 1);
-        return h(objArr, 1);
+        return i(objArr, 1);
     }
 
     @Override // java.util.List
@@ -131,7 +131,7 @@ public abstract class mc extends la implements List, RandomAccess {
             return this;
         }
         if (i12 == 0) {
-            return rc.f43933p;
+            return rc.f42391p;
         }
         return new lc(this, i10, i12);
     }
@@ -166,11 +166,11 @@ public abstract class mc extends la implements List, RandomAccess {
     }
 
     @Override // java.util.List
-    /* renamed from: j */
+    /* renamed from: k */
     public final d listIterator(int i10) {
         f4.b(i10, size(), "index");
         if (isEmpty()) {
-            return f43797e;
+            return f42255e;
         }
         return new kc(this, i10);
     }

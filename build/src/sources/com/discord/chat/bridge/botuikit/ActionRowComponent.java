@@ -11,10 +11,10 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import kt.n2;
-import kt.v1;
 import org.jetbrains.annotations.NotNull;
-@gt.m
+import tt.n2;
+import tt.v1;
+@qt.m
 @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 +2\u00020\u0001:\u0002*+B1\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\b¢\u0006\u0004\b\n\u0010\u000bBG\b\u0010\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u000e\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\t\u0018\u00010\b\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\u0004\b\n\u0010\u000fJ\t\u0010\u0017\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0005HÆ\u0003J\u000b\u0010\u0019\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\t0\bHÆ\u0003J9\u0010\u001b\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\bHÆ\u0001J\u0013\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fHÖ\u0003J\t\u0010 \u001a\u00020\u0003HÖ\u0001J\t\u0010!\u001a\u00020\u0005HÖ\u0001J%\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u00002\u0006\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020(H\u0001¢\u0006\u0002\b)R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0016\u0010\u0006\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0013R\u0017\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\b¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016¨\u0006,"}, d2 = {"Lcom/discord/chat/bridge/botuikit/ActionRowComponent;", "Lcom/discord/chat/bridge/botuikit/BaseLayoutComponent;", "type", "", StackTraceHelper.ID_KEY, "", "errorText", "components", "", "Lcom/discord/chat/bridge/botuikit/Component;", "<init>", "(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILjava/lang/String;Ljava/lang/String;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getType", "()I", "getId", "()Ljava/lang/String;", "getErrorText", "getComponents", "()Ljava/util/List;", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class ActionRowComponent extends BaseLayoutComponent {
@@ -24,12 +24,12 @@ public final class ActionRowComponent extends BaseLayoutComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8659id;
+    private final String f9236id;
     private final int type;
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, rr.l.b(rr.o.f49210e, new Function0() { // from class: com.discord.chat.bridge.botuikit.a
+    private static final Lazy[] $childSerializers = {null, null, null, as.l.a(as.o.f6082e, new Function0() { // from class: com.discord.chat.bridge.botuikit.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -61,7 +61,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
             v1.b(i10, 11, ActionRowComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8659id = str;
+        this.f9236id = str;
         if ((i10 & 4) == 0) {
             this.errorText = null;
         } else {
@@ -72,7 +72,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new kt.f(ComponentSerializer.INSTANCE);
+        return new tt.f(ComponentSerializer.INSTANCE);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -81,7 +81,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
             i10 = actionRowComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = actionRowComponent.f8659id;
+            str = actionRowComponent.f9236id;
         }
         if ((i11 & 4) != 0) {
             str2 = actionRowComponent.errorText;
@@ -97,9 +97,9 @@ public final class ActionRowComponent extends BaseLayoutComponent {
         compositeEncoder.w(serialDescriptor, 0, actionRowComponent.getType());
         compositeEncoder.y(serialDescriptor, 1, actionRowComponent.getId());
         if (compositeEncoder.z(serialDescriptor, 2) || actionRowComponent.getErrorText() != null) {
-            compositeEncoder.i(serialDescriptor, 2, n2.f35181a, actionRowComponent.getErrorText());
+            compositeEncoder.o(serialDescriptor, 2, n2.f50032a, actionRowComponent.getErrorText());
         }
-        compositeEncoder.F(serialDescriptor, 3, (gt.o) lazyArr[3].getValue(), actionRowComponent.components);
+        compositeEncoder.k(serialDescriptor, 3, (qt.o) lazyArr[3].getValue(), actionRowComponent.components);
     }
 
     public final int component1() {
@@ -108,7 +108,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
 
     @NotNull
     public final String component2() {
-        return this.f8659id;
+        return this.f9236id;
     }
 
     public final String component3() {
@@ -133,7 +133,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
         }
         if (obj instanceof ActionRowComponent) {
             ActionRowComponent actionRowComponent = (ActionRowComponent) obj;
-            return this.type == actionRowComponent.type && Intrinsics.areEqual(this.f8659id, actionRowComponent.f8659id) && Intrinsics.areEqual(this.errorText, actionRowComponent.errorText) && Intrinsics.areEqual(this.components, actionRowComponent.components);
+            return this.type == actionRowComponent.type && Intrinsics.areEqual(this.f9236id, actionRowComponent.f9236id) && Intrinsics.areEqual(this.errorText, actionRowComponent.errorText) && Intrinsics.areEqual(this.components, actionRowComponent.components);
         }
         return false;
     }
@@ -151,7 +151,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8659id;
+        return this.f9236id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.Component
@@ -160,7 +160,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f8659id.hashCode()) * 31;
+        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f9236id.hashCode()) * 31;
         String str = this.errorText;
         return ((hashCode + (str == null ? 0 : str.hashCode())) * 31) + this.components.hashCode();
     }
@@ -168,7 +168,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8659id;
+        String str = this.f9236id;
         String str2 = this.errorText;
         List<Component> list = this.components;
         return "ActionRowComponent(type=" + i10 + ", id=" + str + ", errorText=" + str2 + ", components=" + list + ")";
@@ -185,7 +185,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(components, "components");
         this.type = i10;
-        this.f8659id = id2;
+        this.f9236id = id2;
         this.errorText = str;
         this.components = components;
     }

@@ -3,155 +3,155 @@ package io.sentry;
 public final class j0 implements p0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w0 f28467a;
+    private final w0 f29402a;
 
     public j0(w0 w0Var) {
-        this.f28467a = w0Var;
+        this.f29402a = w0Var;
     }
 
     @Override // io.sentry.w0
-    public Boolean A() {
-        return this.f28467a.A();
+    public e1 A(t8 t8Var, v8 v8Var) {
+        return this.f29402a.A(t8Var, v8Var);
     }
 
     @Override // io.sentry.w0
-    public IScope B() {
-        return this.f28467a.B();
+    public Boolean B() {
+        return this.f29402a.B();
     }
 
     @Override // io.sentry.w0
-    public void C(b4 b4Var) {
-        this.f28467a.C(b4Var);
+    public IScope C() {
+        return this.f29402a.C();
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x E(Throwable th2, Hint hint) {
-        return this.f28467a.E(th2, hint);
+    public void D(b4 b4Var) {
+        this.f29402a.D(b4Var);
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x G(io.sentry.protocol.d0 d0Var, q8 q8Var, Hint hint, q3 q3Var) {
-        return this.f28467a.G(d0Var, q8Var, hint, q3Var);
+    public io.sentry.protocol.x F(Throwable th2, Hint hint) {
+        return this.f29402a.F(th2, hint);
     }
 
     @Override // io.sentry.w0
-    public w0 H(String str) {
-        return this.f28467a.H(str);
+    public io.sentry.protocol.x H(io.sentry.protocol.d0 d0Var, q8 q8Var, Hint hint, q3 q3Var) {
+        return this.f29402a.H(d0Var, q8Var, hint, q3Var);
+    }
+
+    @Override // io.sentry.w0
+    public w0 I(String str) {
+        return this.f29402a.I(str);
     }
 
     @Override // io.sentry.w0
     public void a(String str, String str2) {
-        this.f28467a.a(str, str2);
+        this.f29402a.a(str, str2);
     }
 
     @Override // io.sentry.w0
     public k7 b() {
-        return this.f28467a.b();
+        return this.f29402a.b();
     }
 
     @Override // io.sentry.w0
     public void c(boolean z10) {
-        this.f28467a.c(z10);
+        this.f29402a.c(z10);
     }
 
     @Override // io.sentry.w0
     public void d(long j10) {
-        this.f28467a.d(j10);
+        this.f29402a.d(j10);
     }
 
     @Override // io.sentry.w0
     public void e(Breadcrumb breadcrumb) {
-        this.f28467a.e(breadcrumb);
+        this.f29402a.e(breadcrumb);
     }
 
     @Override // io.sentry.w0
-    public boolean f() {
-        return this.f28467a.f();
+    public boolean g() {
+        return this.f29402a.g();
     }
 
     @Override // io.sentry.w0
-    public void h(Breadcrumb breadcrumb, Hint hint) {
-        this.f28467a.h(breadcrumb, hint);
-    }
-
-    @Override // io.sentry.w0
-    public void i(Throwable th2, ISpan iSpan, String str) {
-        this.f28467a.i(th2, iSpan, str);
+    public void i(Breadcrumb breadcrumb, Hint hint) {
+        this.f29402a.i(breadcrumb, hint);
     }
 
     @Override // io.sentry.w0
     public boolean isEnabled() {
-        return this.f28467a.isEnabled();
+        return this.f29402a.isEnabled();
     }
 
     @Override // io.sentry.w0
-    public io.sentry.transport.a0 j() {
-        return this.f28467a.j();
+    public void j(Throwable th2, ISpan iSpan, String str) {
+        this.f29402a.j(th2, iSpan, str);
     }
 
     @Override // io.sentry.w0
-    public e1 k() {
-        return this.f28467a.k();
+    public io.sentry.transport.a0 k() {
+        return this.f29402a.k();
     }
 
     @Override // io.sentry.w0
-    public void l() {
-        this.f28467a.l();
+    public e1 l() {
+        return this.f29402a.l();
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x m(l5 l5Var, Hint hint) {
-        return this.f28467a.m(l5Var, hint);
+    public void m() {
+        this.f29402a.m();
     }
 
     @Override // io.sentry.w0
     public a1 makeCurrent() {
-        return this.f28467a.makeCurrent();
+        return this.f29402a.makeCurrent();
     }
 
     @Override // io.sentry.w0
-    public void p() {
-        this.f28467a.p();
+    public io.sentry.protocol.x n(l5 l5Var, Hint hint) {
+        return this.f29402a.n(l5Var, hint);
     }
 
     @Override // io.sentry.w0
-    public void r(d4 d4Var, b4 b4Var) {
-        this.f28467a.r(d4Var, b4Var);
+    public void q() {
+        this.f29402a.q();
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x s(l7 l7Var, Hint hint) {
-        return this.f28467a.s(l7Var, hint);
+    public void s(d4 d4Var, b4 b4Var) {
+        this.f29402a.s(d4Var, b4Var);
     }
 
     @Override // io.sentry.w0
-    public IScope t() {
+    public io.sentry.protocol.x t(l7 l7Var, Hint hint) {
+        return this.f29402a.t(l7Var, hint);
+    }
+
+    @Override // io.sentry.w0
+    public IScope u() {
         return b5.w();
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x u(String str, SentryLevel sentryLevel) {
-        return this.f28467a.u(str, sentryLevel);
+    public io.sentry.protocol.x v(String str, SentryLevel sentryLevel) {
+        return this.f29402a.v(str, sentryLevel);
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x v(m3 m3Var) {
-        return this.f28467a.v(m3Var);
+    public io.sentry.protocol.x w(m3 m3Var) {
+        return this.f29402a.w(m3Var);
     }
 
     @Override // io.sentry.w0
-    public io.sentry.protocol.x x(SentryEvent sentryEvent, Hint hint) {
-        return this.f28467a.x(sentryEvent, hint);
-    }
-
-    @Override // io.sentry.w0
-    public e1 z(t8 t8Var, v8 v8Var) {
-        return this.f28467a.z(t8Var, v8Var);
+    public io.sentry.protocol.x y(SentryEvent sentryEvent, Hint hint) {
+        return this.f29402a.y(sentryEvent, hint);
     }
 
     @Override // io.sentry.w0
     /* renamed from: clone */
-    public p0 m1187clone() {
-        return this.f28467a.clone();
+    public p0 m1188clone() {
+        return this.f29402a.clone();
     }
 }

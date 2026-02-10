@@ -4,14 +4,14 @@ package com.google.android.play.core.assetpacks;
 public abstract class t2 {
 
     /* renamed from: a  reason: collision with root package name */
-    final int f16153a;
+    final int f16902a;
 
     /* renamed from: b  reason: collision with root package name */
-    final String f16154b;
+    final String f16903b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public t2(int i10, String str) {
-        this.f16153a = i10;
-        this.f16154b = str;
+        this.f16902a = i10;
+        this.f16903b = str;
     }
 }

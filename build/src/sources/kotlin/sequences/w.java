@@ -27,15 +27,15 @@ public class w extends t {
     public static final class a implements Iterable, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Sequence f34659d;
+        final /* synthetic */ Sequence f34881d;
 
         public a(Sequence sequence) {
-            this.f34659d = sequence;
+            this.f34881d = sequence;
         }
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return this.f34659d.iterator();
+            return this.f34881d.iterator();
         }
     }
 
@@ -44,7 +44,7 @@ public class w extends t {
     public /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f34660d = new b();
+        public static final b f34882d = new b();
 
         b() {
             super(1, Sequence.class, "iterator", "iterator()Ljava/util/Iterator;", 0);
@@ -63,34 +63,34 @@ public class w extends t {
     public static final class c extends kotlin.coroutines.jvm.internal.j implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f34661d;
+        Object f34883d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f34662e;
+        Object f34884e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f34663i;
+        int f34885i;
 
         /* renamed from: o  reason: collision with root package name */
-        private /* synthetic */ Object f34664o;
+        private /* synthetic */ Object f34886o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ Sequence f34665p;
+        final /* synthetic */ Sequence f34887p;
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ Function2 f34666q;
+        final /* synthetic */ Function2 f34888q;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(Sequence sequence, Function2 function2, Continuation continuation) {
             super(2, continuation);
-            this.f34665p = sequence;
-            this.f34666q = function2;
+            this.f34887p = sequence;
+            this.f34888q = function2;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            c cVar = new c(this.f34665p, this.f34666q, continuation);
-            cVar.f34664o = obj;
+            c cVar = new c(this.f34887p, this.f34888q, continuation);
+            cVar.f34886o = obj;
             return cVar;
         }
 
@@ -105,15 +105,15 @@ public class w extends t {
         public final java.lang.Object invokeSuspend(java.lang.Object r7) {
             /*
                 r6 = this;
-                java.lang.Object r0 = xr.b.f()
-                int r1 = r6.f34663i
+                java.lang.Object r0 = gs.b.f()
+                int r1 = r6.f34885i
                 r2 = 1
                 if (r1 == 0) goto L22
                 if (r1 != r2) goto L1a
-                java.lang.Object r1 = r6.f34662e
-                java.lang.Object r3 = r6.f34661d
+                java.lang.Object r1 = r6.f34884e
+                java.lang.Object r3 = r6.f34883d
                 java.util.Iterator r3 = (java.util.Iterator) r3
-                java.lang.Object r4 = r6.f34664o
+                java.lang.Object r4 = r6.f34886o
                 kotlin.sequences.j r4 = (kotlin.sequences.j) r4
                 kotlin.c.b(r7)
             L18:
@@ -126,13 +126,13 @@ public class w extends t {
                 throw r7
             L22:
                 kotlin.c.b(r7)
-                java.lang.Object r7 = r6.f34664o
+                java.lang.Object r7 = r6.f34886o
                 kotlin.sequences.j r7 = (kotlin.sequences.j) r7
-                kotlin.sequences.Sequence r1 = r6.f34665p
+                kotlin.sequences.Sequence r1 = r6.f34887p
                 java.util.Iterator r1 = r1.iterator()
                 boolean r3 = r1.hasNext()
                 if (r3 != 0) goto L38
-                kotlin.Unit r7 = kotlin.Unit.f31765a
+                kotlin.Unit r7 = kotlin.Unit.f31987a
                 return r7
             L38:
                 java.lang.Object r3 = r1.next()
@@ -143,17 +143,17 @@ public class w extends t {
                 boolean r1 = r3.hasNext()
                 if (r1 == 0) goto L5e
                 java.lang.Object r1 = r3.next()
-                kotlin.jvm.functions.Function2 r5 = r6.f34666q
+                kotlin.jvm.functions.Function2 r5 = r6.f34888q
                 java.lang.Object r7 = r5.invoke(r7, r1)
-                r6.f34664o = r4
-                r6.f34661d = r3
-                r6.f34662e = r1
-                r6.f34663i = r2
+                r6.f34886o = r4
+                r6.f34883d = r3
+                r6.f34884e = r1
+                r6.f34885i = r2
                 java.lang.Object r7 = r4.b(r7, r6)
                 if (r7 != r0) goto L18
                 return r0
             L5e:
-                kotlin.Unit r7 = kotlin.Unit.f31765a
+                kotlin.Unit r7 = kotlin.Unit.f31987a
                 return r7
             */
             throw new UnsupportedOperationException("Method not decompiled: kotlin.sequences.w.c.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -162,7 +162,7 @@ public class w extends t {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(j jVar, Continuation continuation) {
-            return ((c) create(jVar, continuation)).invokeSuspend(Unit.f31765a);
+            return ((c) create(jVar, continuation)).invokeSuspend(Unit.f31987a);
         }
     }
 
@@ -265,10 +265,10 @@ public class w extends t {
     public static Sequence L(Sequence sequence, Function1 transform) {
         Intrinsics.checkNotNullParameter(sequence, "<this>");
         Intrinsics.checkNotNullParameter(transform, "transform");
-        return new g(sequence, transform, b.f34660d);
+        return new g(sequence, transform, b.f34882d);
     }
 
-    public static final int M(Sequence sequence, Object obj) {
+    public static int M(Sequence sequence, Object obj) {
         Intrinsics.checkNotNullParameter(sequence, "<this>");
         int i10 = 0;
         for (Object obj2 : sequence) {
@@ -390,7 +390,7 @@ public class w extends t {
         return new x(sequence, predicate);
     }
 
-    public static Collection X(Sequence sequence, Collection destination) {
+    public static final Collection X(Sequence sequence, Collection destination) {
         Intrinsics.checkNotNullParameter(sequence, "<this>");
         Intrinsics.checkNotNullParameter(destination, "destination");
         for (Object obj : sequence) {
@@ -465,7 +465,7 @@ public class w extends t {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Pair e0(Object obj, Object obj2) {
-        return rr.v.a(obj, obj2);
+        return as.v.a(obj, obj2);
     }
 
     public static boolean y(Sequence sequence) {

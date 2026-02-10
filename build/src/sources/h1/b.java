@@ -7,22 +7,22 @@ import java.util.ArrayList;
 public class b implements d.a {
 
     /* renamed from: e  reason: collision with root package name */
-    public a f24855e;
+    public a f26073e;
 
     /* renamed from: a  reason: collision with root package name */
-    h f24851a = null;
+    h f26069a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    float f24852b = 0.0f;
+    float f26070b = 0.0f;
 
     /* renamed from: c  reason: collision with root package name */
-    boolean f24853c = false;
+    boolean f26071c = false;
 
     /* renamed from: d  reason: collision with root package name */
-    ArrayList f24854d = new ArrayList();
+    ArrayList f26072d = new ArrayList();
 
     /* renamed from: f  reason: collision with root package name */
-    boolean f24856f = false;
+    boolean f26074f = false;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -55,7 +55,7 @@ public class b implements d.a {
     }
 
     private boolean u(h hVar, d dVar) {
-        if (hVar.f24911x <= 1) {
+        if (hVar.f26129x <= 1) {
             return true;
         }
         return false;
@@ -63,14 +63,14 @@ public class b implements d.a {
 
     private h w(boolean[] zArr, h hVar) {
         h.a aVar;
-        int h10 = this.f24855e.h();
+        int h10 = this.f26073e.h();
         h hVar2 = null;
         float f10 = 0.0f;
         for (int i10 = 0; i10 < h10; i10++) {
-            float j10 = this.f24855e.j(i10);
+            float j10 = this.f26073e.j(i10);
             if (j10 < 0.0f) {
-                h c10 = this.f24855e.c(i10);
-                if ((zArr == null || !zArr[c10.f24901i]) && c10 != hVar && (((aVar = c10.f24908u) == h.a.SLACK || aVar == h.a.ERROR) && j10 < f10)) {
+                h c10 = this.f26073e.c(i10);
+                if ((zArr == null || !zArr[c10.f26119i]) && c10 != hVar && (((aVar = c10.f26126u) == h.a.SLACK || aVar == h.a.ERROR) && j10 < f10)) {
                     f10 = j10;
                     hVar2 = c10;
                 }
@@ -80,84 +80,84 @@ public class b implements d.a {
     }
 
     public void A(d dVar, h hVar, boolean z10) {
-        if (hVar != null && hVar.f24905r) {
-            this.f24852b += hVar.f24904q * this.f24855e.i(hVar);
-            this.f24855e.f(hVar, z10);
+        if (hVar != null && hVar.f26123r) {
+            this.f26070b += hVar.f26122q * this.f26073e.i(hVar);
+            this.f26073e.f(hVar, z10);
             if (z10) {
                 hVar.f(this);
             }
-            if (d.f24863u && this.f24855e.h() == 0) {
-                this.f24856f = true;
-                dVar.f24870b = true;
+            if (d.f26081u && this.f26073e.h() == 0) {
+                this.f26074f = true;
+                dVar.f26088b = true;
             }
         }
     }
 
     public void B(d dVar, b bVar, boolean z10) {
-        this.f24852b += bVar.f24852b * this.f24855e.e(bVar, z10);
+        this.f26070b += bVar.f26070b * this.f26073e.e(bVar, z10);
         if (z10) {
-            bVar.f24851a.f(this);
+            bVar.f26069a.f(this);
         }
-        if (d.f24863u && this.f24851a != null && this.f24855e.h() == 0) {
-            this.f24856f = true;
-            dVar.f24870b = true;
+        if (d.f26081u && this.f26069a != null && this.f26073e.h() == 0) {
+            this.f26074f = true;
+            dVar.f26088b = true;
         }
     }
 
     public void C(d dVar, h hVar, boolean z10) {
-        if (hVar != null && hVar.f24912y) {
-            float i10 = this.f24855e.i(hVar);
-            this.f24852b += hVar.A * i10;
-            this.f24855e.f(hVar, z10);
+        if (hVar != null && hVar.f26130y) {
+            float i10 = this.f26073e.i(hVar);
+            this.f26070b += hVar.A * i10;
+            this.f26073e.f(hVar, z10);
             if (z10) {
                 hVar.f(this);
             }
-            this.f24855e.b(dVar.f24883o.f24860d[hVar.f24913z], i10, z10);
-            if (d.f24863u && this.f24855e.h() == 0) {
-                this.f24856f = true;
-                dVar.f24870b = true;
+            this.f26073e.b(dVar.f26101o.f26078d[hVar.f26131z], i10, z10);
+            if (d.f26081u && this.f26073e.h() == 0) {
+                this.f26074f = true;
+                dVar.f26088b = true;
             }
         }
     }
 
     public void D(d dVar) {
-        if (dVar.f24876h.length != 0) {
+        if (dVar.f26094h.length != 0) {
             boolean z10 = false;
             while (!z10) {
-                int h10 = this.f24855e.h();
+                int h10 = this.f26073e.h();
                 for (int i10 = 0; i10 < h10; i10++) {
-                    h c10 = this.f24855e.c(i10);
-                    if (c10.f24902o != -1 || c10.f24905r || c10.f24912y) {
-                        this.f24854d.add(c10);
+                    h c10 = this.f26073e.c(i10);
+                    if (c10.f26120o != -1 || c10.f26123r || c10.f26130y) {
+                        this.f26072d.add(c10);
                     }
                 }
-                int size = this.f24854d.size();
+                int size = this.f26072d.size();
                 if (size > 0) {
                     for (int i11 = 0; i11 < size; i11++) {
-                        h hVar = (h) this.f24854d.get(i11);
-                        if (hVar.f24905r) {
+                        h hVar = (h) this.f26072d.get(i11);
+                        if (hVar.f26123r) {
                             A(dVar, hVar, true);
-                        } else if (hVar.f24912y) {
+                        } else if (hVar.f26130y) {
                             C(dVar, hVar, true);
                         } else {
-                            B(dVar, dVar.f24876h[hVar.f24902o], true);
+                            B(dVar, dVar.f26094h[hVar.f26120o], true);
                         }
                     }
-                    this.f24854d.clear();
+                    this.f26072d.clear();
                 } else {
                     z10 = true;
                 }
             }
-            if (d.f24863u && this.f24851a != null && this.f24855e.h() == 0) {
-                this.f24856f = true;
-                dVar.f24870b = true;
+            if (d.f26081u && this.f26069a != null && this.f26073e.h() == 0) {
+                this.f26074f = true;
+                dVar.f26088b = true;
             }
         }
     }
 
     @Override // h1.d.a
     public void a(h hVar) {
-        int i10 = hVar.f24903p;
+        int i10 = hVar.f26121p;
         float f10 = 1.0f;
         if (i10 != 1) {
             if (i10 == 2) {
@@ -170,17 +170,17 @@ public class b implements d.a {
                 f10 = 1.0E12f;
             }
         }
-        this.f24855e.a(hVar, f10);
+        this.f26073e.a(hVar, f10);
     }
 
     @Override // h1.d.a
     public void b(d.a aVar) {
         if (aVar instanceof b) {
             b bVar = (b) aVar;
-            this.f24851a = null;
-            this.f24855e.clear();
-            for (int i10 = 0; i10 < bVar.f24855e.h(); i10++) {
-                this.f24855e.b(bVar.f24855e.c(i10), bVar.f24855e.j(i10), true);
+            this.f26069a = null;
+            this.f26073e.clear();
+            for (int i10 = 0; i10 < bVar.f26073e.h(); i10++) {
+                this.f26073e.b(bVar.f26073e.c(i10), bVar.f26073e.j(i10), true);
             }
         }
     }
@@ -192,20 +192,20 @@ public class b implements d.a {
 
     @Override // h1.d.a
     public void clear() {
-        this.f24855e.clear();
-        this.f24851a = null;
-        this.f24852b = 0.0f;
+        this.f26073e.clear();
+        this.f26069a = null;
+        this.f26070b = 0.0f;
     }
 
     public b d(d dVar, int i10) {
-        this.f24855e.a(dVar.o(i10, "ep"), 1.0f);
-        this.f24855e.a(dVar.o(i10, "em"), -1.0f);
+        this.f26073e.a(dVar.o(i10, "ep"), 1.0f);
+        this.f26073e.a(dVar.o(i10, "em"), -1.0f);
         return this;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b e(h hVar, int i10) {
-        this.f24855e.a(hVar, i10);
+        this.f26073e.a(hVar, i10);
         return this;
     }
 
@@ -219,8 +219,8 @@ public class b implements d.a {
             x(g10);
             z10 = false;
         }
-        if (this.f24855e.h() == 0) {
-            this.f24856f = true;
+        if (this.f26073e.h() == 0) {
+            this.f26074f = true;
         }
         return z10;
     }
@@ -228,7 +228,7 @@ public class b implements d.a {
     h g(d dVar) {
         boolean u10;
         boolean u11;
-        int h10 = this.f24855e.h();
+        int h10 = this.f26073e.h();
         h hVar = null;
         float f10 = 0.0f;
         float f11 = 0.0f;
@@ -236,9 +236,9 @@ public class b implements d.a {
         boolean z11 = false;
         h hVar2 = null;
         for (int i10 = 0; i10 < h10; i10++) {
-            float j10 = this.f24855e.j(i10);
-            h c10 = this.f24855e.c(i10);
-            if (c10.f24908u == h.a.UNRESTRICTED) {
+            float j10 = this.f26073e.j(i10);
+            h c10 = this.f26073e.c(i10);
+            if (c10.f26126u == h.a.UNRESTRICTED) {
                 if (hVar == null) {
                     u11 = u(c10, dVar);
                 } else if (f10 > j10) {
@@ -274,44 +274,44 @@ public class b implements d.a {
 
     @Override // h1.d.a
     public h getKey() {
-        return this.f24851a;
+        return this.f26069a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b h(h hVar, h hVar2, int i10, float f10, h hVar3, h hVar4, int i11) {
         if (hVar2 == hVar3) {
-            this.f24855e.a(hVar, 1.0f);
-            this.f24855e.a(hVar4, 1.0f);
-            this.f24855e.a(hVar2, -2.0f);
+            this.f26073e.a(hVar, 1.0f);
+            this.f26073e.a(hVar4, 1.0f);
+            this.f26073e.a(hVar2, -2.0f);
             return this;
         }
         if (f10 == 0.5f) {
-            this.f24855e.a(hVar, 1.0f);
-            this.f24855e.a(hVar2, -1.0f);
-            this.f24855e.a(hVar3, -1.0f);
-            this.f24855e.a(hVar4, 1.0f);
+            this.f26073e.a(hVar, 1.0f);
+            this.f26073e.a(hVar2, -1.0f);
+            this.f26073e.a(hVar3, -1.0f);
+            this.f26073e.a(hVar4, 1.0f);
             if (i10 > 0 || i11 > 0) {
-                this.f24852b = (-i10) + i11;
+                this.f26070b = (-i10) + i11;
                 return this;
             }
         } else if (f10 <= 0.0f) {
-            this.f24855e.a(hVar, -1.0f);
-            this.f24855e.a(hVar2, 1.0f);
-            this.f24852b = i10;
+            this.f26073e.a(hVar, -1.0f);
+            this.f26073e.a(hVar2, 1.0f);
+            this.f26070b = i10;
             return this;
         } else if (f10 >= 1.0f) {
-            this.f24855e.a(hVar4, -1.0f);
-            this.f24855e.a(hVar3, 1.0f);
-            this.f24852b = -i11;
+            this.f26073e.a(hVar4, -1.0f);
+            this.f26073e.a(hVar3, 1.0f);
+            this.f26070b = -i11;
             return this;
         } else {
             float f11 = 1.0f - f10;
-            this.f24855e.a(hVar, f11 * 1.0f);
-            this.f24855e.a(hVar2, f11 * (-1.0f));
-            this.f24855e.a(hVar3, (-1.0f) * f10);
-            this.f24855e.a(hVar4, 1.0f * f10);
+            this.f26073e.a(hVar, f11 * 1.0f);
+            this.f26073e.a(hVar2, f11 * (-1.0f));
+            this.f26073e.a(hVar3, (-1.0f) * f10);
+            this.f26073e.a(hVar4, 1.0f * f10);
             if (i10 > 0 || i11 > 0) {
-                this.f24852b = ((-i10) * f11) + (i11 * f10);
+                this.f26070b = ((-i10) * f11) + (i11 * f10);
                 return this;
             }
         }
@@ -320,17 +320,17 @@ public class b implements d.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b i(h hVar, int i10) {
-        this.f24851a = hVar;
+        this.f26069a = hVar;
         float f10 = i10;
-        hVar.f24904q = f10;
-        this.f24852b = f10;
-        this.f24856f = true;
+        hVar.f26122q = f10;
+        this.f26070b = f10;
+        this.f26074f = true;
         return this;
     }
 
     @Override // h1.d.a
     public boolean isEmpty() {
-        if (this.f24851a == null && this.f24852b == 0.0f && this.f24855e.h() == 0) {
+        if (this.f26069a == null && this.f26070b == 0.0f && this.f26073e.h() == 0) {
             return true;
         }
         return false;
@@ -338,54 +338,54 @@ public class b implements d.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b j(h hVar, h hVar2, float f10) {
-        this.f24855e.a(hVar, -1.0f);
-        this.f24855e.a(hVar2, f10);
+        this.f26073e.a(hVar, -1.0f);
+        this.f26073e.a(hVar2, f10);
         return this;
     }
 
     public b k(h hVar, h hVar2, h hVar3, h hVar4, float f10) {
-        this.f24855e.a(hVar, -1.0f);
-        this.f24855e.a(hVar2, 1.0f);
-        this.f24855e.a(hVar3, f10);
-        this.f24855e.a(hVar4, -f10);
+        this.f26073e.a(hVar, -1.0f);
+        this.f26073e.a(hVar2, 1.0f);
+        this.f26073e.a(hVar3, f10);
+        this.f26073e.a(hVar4, -f10);
         return this;
     }
 
     public b l(float f10, float f11, float f12, h hVar, h hVar2, h hVar3, h hVar4) {
-        this.f24852b = 0.0f;
+        this.f26070b = 0.0f;
         if (f11 != 0.0f && f10 != f12) {
             if (f10 == 0.0f) {
-                this.f24855e.a(hVar, 1.0f);
-                this.f24855e.a(hVar2, -1.0f);
+                this.f26073e.a(hVar, 1.0f);
+                this.f26073e.a(hVar2, -1.0f);
                 return this;
             } else if (f12 == 0.0f) {
-                this.f24855e.a(hVar3, 1.0f);
-                this.f24855e.a(hVar4, -1.0f);
+                this.f26073e.a(hVar3, 1.0f);
+                this.f26073e.a(hVar4, -1.0f);
                 return this;
             } else {
                 float f13 = (f10 / f11) / (f12 / f11);
-                this.f24855e.a(hVar, 1.0f);
-                this.f24855e.a(hVar2, -1.0f);
-                this.f24855e.a(hVar4, f13);
-                this.f24855e.a(hVar3, -f13);
+                this.f26073e.a(hVar, 1.0f);
+                this.f26073e.a(hVar2, -1.0f);
+                this.f26073e.a(hVar4, f13);
+                this.f26073e.a(hVar3, -f13);
                 return this;
             }
         }
-        this.f24855e.a(hVar, 1.0f);
-        this.f24855e.a(hVar2, -1.0f);
-        this.f24855e.a(hVar4, 1.0f);
-        this.f24855e.a(hVar3, -1.0f);
+        this.f26073e.a(hVar, 1.0f);
+        this.f26073e.a(hVar2, -1.0f);
+        this.f26073e.a(hVar4, 1.0f);
+        this.f26073e.a(hVar3, -1.0f);
         return this;
     }
 
     public b m(h hVar, int i10) {
         if (i10 < 0) {
-            this.f24852b = i10 * (-1);
-            this.f24855e.a(hVar, 1.0f);
+            this.f26070b = i10 * (-1);
+            this.f26073e.a(hVar, 1.0f);
             return this;
         }
-        this.f24852b = i10;
-        this.f24855e.a(hVar, -1.0f);
+        this.f26070b = i10;
+        this.f26073e.a(hVar, -1.0f);
         return this;
     }
 
@@ -396,15 +396,15 @@ public class b implements d.a {
                 i10 *= -1;
                 z10 = true;
             }
-            this.f24852b = i10;
+            this.f26070b = i10;
         }
         if (!z10) {
-            this.f24855e.a(hVar, -1.0f);
-            this.f24855e.a(hVar2, 1.0f);
+            this.f26073e.a(hVar, -1.0f);
+            this.f26073e.a(hVar2, 1.0f);
             return this;
         }
-        this.f24855e.a(hVar, 1.0f);
-        this.f24855e.a(hVar2, -1.0f);
+        this.f26073e.a(hVar, 1.0f);
+        this.f26073e.a(hVar2, -1.0f);
         return this;
     }
 
@@ -415,17 +415,17 @@ public class b implements d.a {
                 i10 *= -1;
                 z10 = true;
             }
-            this.f24852b = i10;
+            this.f26070b = i10;
         }
         if (!z10) {
-            this.f24855e.a(hVar, -1.0f);
-            this.f24855e.a(hVar2, 1.0f);
-            this.f24855e.a(hVar3, 1.0f);
+            this.f26073e.a(hVar, -1.0f);
+            this.f26073e.a(hVar2, 1.0f);
+            this.f26073e.a(hVar3, 1.0f);
             return this;
         }
-        this.f24855e.a(hVar, 1.0f);
-        this.f24855e.a(hVar2, -1.0f);
-        this.f24855e.a(hVar3, -1.0f);
+        this.f26073e.a(hVar, 1.0f);
+        this.f26073e.a(hVar2, -1.0f);
+        this.f26073e.a(hVar3, -1.0f);
         return this;
     }
 
@@ -436,43 +436,43 @@ public class b implements d.a {
                 i10 *= -1;
                 z10 = true;
             }
-            this.f24852b = i10;
+            this.f26070b = i10;
         }
         if (!z10) {
-            this.f24855e.a(hVar, -1.0f);
-            this.f24855e.a(hVar2, 1.0f);
-            this.f24855e.a(hVar3, -1.0f);
+            this.f26073e.a(hVar, -1.0f);
+            this.f26073e.a(hVar2, 1.0f);
+            this.f26073e.a(hVar3, -1.0f);
             return this;
         }
-        this.f24855e.a(hVar, 1.0f);
-        this.f24855e.a(hVar2, -1.0f);
-        this.f24855e.a(hVar3, 1.0f);
+        this.f26073e.a(hVar, 1.0f);
+        this.f26073e.a(hVar2, -1.0f);
+        this.f26073e.a(hVar3, 1.0f);
         return this;
     }
 
     public b q(h hVar, h hVar2, h hVar3, h hVar4, float f10) {
-        this.f24855e.a(hVar3, 0.5f);
-        this.f24855e.a(hVar4, 0.5f);
-        this.f24855e.a(hVar, -0.5f);
-        this.f24855e.a(hVar2, -0.5f);
-        this.f24852b = -f10;
+        this.f26073e.a(hVar3, 0.5f);
+        this.f26073e.a(hVar4, 0.5f);
+        this.f26073e.a(hVar, -0.5f);
+        this.f26073e.a(hVar2, -0.5f);
+        this.f26070b = -f10;
         return this;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void r() {
-        float f10 = this.f24852b;
+        float f10 = this.f26070b;
         if (f10 < 0.0f) {
-            this.f24852b = f10 * (-1.0f);
-            this.f24855e.d();
+            this.f26070b = f10 * (-1.0f);
+            this.f26073e.d();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean s() {
-        h hVar = this.f24851a;
+        h hVar = this.f26069a;
         if (hVar != null) {
-            if (hVar.f24908u == h.a.UNRESTRICTED || this.f24852b >= 0.0f) {
+            if (hVar.f26126u == h.a.UNRESTRICTED || this.f26070b >= 0.0f) {
                 return true;
             }
             return false;
@@ -482,7 +482,7 @@ public class b implements d.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean t(h hVar) {
-        return this.f24855e.g(hVar);
+        return this.f26073e.g(hVar);
     }
 
     public String toString() {
@@ -495,26 +495,26 @@ public class b implements d.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void x(h hVar) {
-        h hVar2 = this.f24851a;
+        h hVar2 = this.f26069a;
         if (hVar2 != null) {
-            this.f24855e.a(hVar2, -1.0f);
-            this.f24851a.f24902o = -1;
-            this.f24851a = null;
+            this.f26073e.a(hVar2, -1.0f);
+            this.f26069a.f26120o = -1;
+            this.f26069a = null;
         }
-        float f10 = this.f24855e.f(hVar, true) * (-1.0f);
-        this.f24851a = hVar;
+        float f10 = this.f26073e.f(hVar, true) * (-1.0f);
+        this.f26069a = hVar;
         if (f10 == 1.0f) {
             return;
         }
-        this.f24852b /= f10;
-        this.f24855e.k(f10);
+        this.f26070b /= f10;
+        this.f26073e.k(f10);
     }
 
     public void y() {
-        this.f24851a = null;
-        this.f24855e.clear();
-        this.f24852b = 0.0f;
-        this.f24856f = false;
+        this.f26069a = null;
+        this.f26073e.clear();
+        this.f26070b = 0.0f;
+        this.f26074f = false;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:29:0x00c0  */
@@ -532,6 +532,6 @@ public class b implements d.a {
     }
 
     public b(c cVar) {
-        this.f24855e = new h1.a(this, cVar);
+        this.f26073e = new h1.a(this, cVar);
     }
 }

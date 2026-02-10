@@ -28,9 +28,9 @@ public class AlertDialogLayout extends i0 {
                 int id2 = childAt.getId();
                 if (id2 == f.f.Q) {
                     view = childAt;
-                } else if (id2 == f.f.f22238l) {
+                } else if (id2 == f.f.f23361l) {
                     view2 = childAt;
-                } else if ((id2 != f.f.f22240n && id2 != f.f.f22242p) || view3 != null) {
+                } else if ((id2 != f.f.f23363n && id2 != f.f.f23365p) || view3 != null) {
                     return false;
                 } else {
                     view3 = childAt;
@@ -132,9 +132,9 @@ public class AlertDialogLayout extends i0 {
     }
 
     private static int z(View view) {
-        int A = androidx.core.view.h0.A(view);
-        if (A > 0) {
-            return A;
+        int z10 = androidx.core.view.i0.z(view);
+        if (z10 > 0) {
+            return z10;
         }
         if (view instanceof ViewGroup) {
             ViewGroup viewGroup = (ViewGroup) view;

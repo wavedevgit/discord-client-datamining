@@ -8,25 +8,25 @@ import java.util.List;
 class i implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    final Iterator f48254d;
+    final Iterator f46708d;
 
     /* renamed from: e  reason: collision with root package name */
-    final Collection f48255e;
+    final Collection f46709e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ j f48256i;
+    final /* synthetic */ j f46710i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(j jVar, Iterator it) {
-        this.f48256i = jVar;
-        this.f48255e = jVar.f48305e;
-        this.f48254d = it;
+        this.f46710i = jVar;
+        this.f46709e = jVar.f46759e;
+        this.f46708d = it;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void a() {
-        this.f48256i.zzb();
-        if (this.f48256i.f48305e == this.f48255e) {
+        this.f46710i.zzb();
+        if (this.f46710i.f46759e == this.f46709e) {
             return;
         }
         throw new ConcurrentModificationException();
@@ -35,36 +35,36 @@ class i implements Iterator {
     @Override // java.util.Iterator
     public final boolean hasNext() {
         a();
-        return this.f48254d.hasNext();
+        return this.f46708d.hasNext();
     }
 
     @Override // java.util.Iterator
     public final Object next() {
         a();
-        return this.f48254d.next();
+        return this.f46708d.next();
     }
 
     @Override // java.util.Iterator
     public final void remove() {
         int i10;
-        this.f48254d.remove();
-        m mVar = this.f48256i.f48308p;
-        i10 = mVar.f48541o;
-        mVar.f48541o = i10 - 1;
-        this.f48256i.c();
+        this.f46708d.remove();
+        m mVar = this.f46710i.f46762p;
+        i10 = mVar.f46995o;
+        mVar.f46995o = i10 - 1;
+        this.f46710i.c();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(j jVar) {
         Iterator it;
-        this.f48256i = jVar;
-        Collection collection = jVar.f48305e;
-        this.f48255e = collection;
+        this.f46710i = jVar;
+        Collection collection = jVar.f46759e;
+        this.f46709e = collection;
         if (collection instanceof List) {
             it = ((List) collection).listIterator();
         } else {
             it = collection.iterator();
         }
-        this.f48254d = it;
+        this.f46708d = it;
     }
 }

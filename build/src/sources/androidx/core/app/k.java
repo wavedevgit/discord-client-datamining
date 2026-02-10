@@ -8,16 +8,16 @@ import java.util.List;
 public class k {
 
     /* renamed from: a  reason: collision with root package name */
-    final String f3244a;
+    final String f3247a;
 
     /* renamed from: b  reason: collision with root package name */
-    CharSequence f3245b;
+    CharSequence f3248b;
 
     /* renamed from: c  reason: collision with root package name */
-    String f3246c;
+    String f3249c;
 
     /* renamed from: d  reason: collision with root package name */
-    private List f3247d = Collections.EMPTY_LIST;
+    private List f3250d = Collections.EMPTY_LIST;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -37,37 +37,37 @@ public class k {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        final k f3248a;
+        final k f3251a;
 
         public c(String str) {
-            this.f3248a = new k(str);
+            this.f3251a = new k(str);
         }
 
         public k a() {
-            return this.f3248a;
+            return this.f3251a;
         }
 
         public c b(String str) {
-            this.f3248a.f3246c = str;
+            this.f3251a.f3249c = str;
             return this;
         }
 
         public c c(CharSequence charSequence) {
-            this.f3248a.f3245b = charSequence;
+            this.f3251a.f3248b = charSequence;
             return this;
         }
     }
 
     k(String str) {
-        this.f3244a = (String) b2.e.g(str);
+        this.f3247a = (String) b2.e.g(str);
     }
 
     public String a() {
-        return this.f3244a;
+        return this.f3247a;
     }
 
     public CharSequence b() {
-        return this.f3245b;
+        return this.f3248b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -76,9 +76,9 @@ public class k {
         if (i10 < 26) {
             return null;
         }
-        NotificationChannelGroup a10 = a.a(this.f3244a, this.f3245b);
+        NotificationChannelGroup a10 = a.a(this.f3247a, this.f3248b);
         if (i10 >= 28) {
-            b.a(a10, this.f3246c);
+            b.a(a10, this.f3249c);
         }
         return a10;
     }

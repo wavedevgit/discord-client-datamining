@@ -1,7 +1,11 @@
 package zt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface g extends qt.f {
-    long l(f fVar);
+public interface g {
+    int a();
 
-    int q(f fVar);
+    int d();
+
+    int e();
+
+    int h();
 }

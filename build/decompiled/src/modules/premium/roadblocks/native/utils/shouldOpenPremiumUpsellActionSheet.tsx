@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/roadblocks/native/utils/shouldOpenPremiumUpsellActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun61901: for (var _fun61901_ip = 0;;) switch (_fun61901_ip) {
+        _fun61954: for (var _fun61954_ip = 0;;) switch (_fun61954_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.initialUpsellKey;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.UPLOAD;
                 if (!(var1 !== var3)) {
-                    _fun61901_ip = 294;
-                    continue _fun61901
+                    _fun61954_ip = 294;
+                    continue _fun61954
                 }
             case 53:
                 var4 = _closure1_slot0;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.GLOBAL_EMOJI;
                 if (!(var1 !== var3)) {
-                    _fun61901_ip = 249;
-                    continue _fun61901
+                    _fun61954_ip = 249;
+                    continue _fun61954
                 }
             case 89:
                 var4 = _closure1_slot0;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.ANIMATED_EMOJI;
                 if (!(var1 !== var3)) {
-                    _fun61901_ip = 204;
-                    continue _fun61901
+                    _fun61954_ip = 204;
+                    continue _fun61954
                 }
             case 122:
                 var4 = _closure1_slot0;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.SOUNDBOARD;
                 if (!(var1 !== var3)) {
-                    _fun61901_ip = 159;
-                    continue _fun61901
+                    _fun61954_ip = 159;
+                    continue _fun61954
                 }
             case 155:
                 var1 = false;
@@ -141,4 +141,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7665, 670, 7667, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7675, 670, 7677, 2]);

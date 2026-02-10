@@ -1,47 +1,47 @@
 package og;
 
+import bj.c;
 import com.facebook.react.devsupport.StackTraceHelper;
-import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class m8 implements zi.d {
+final class m8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final m8 f41158a = new m8();
+    static final m8 f39484a = new m8();
 
     static {
-        c.b a10 = zi.c.a(StackTraceHelper.NAME_KEY);
+        c.b a10 = bj.c.a(StackTraceHelper.NAME_KEY);
         l2 l2Var = new l2();
         l2Var.a(1);
         a10.b(l2Var.b()).a();
-        c.b a11 = zi.c.a("version");
+        c.b a11 = bj.c.a("version");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
         a11.b(l2Var2.b()).a();
-        c.b a12 = zi.c.a("source");
+        c.b a12 = bj.c.a("source");
         l2 l2Var3 = new l2();
         l2Var3.a(3);
         a12.b(l2Var3.b()).a();
-        c.b a13 = zi.c.a("uri");
+        c.b a13 = bj.c.a("uri");
         l2 l2Var4 = new l2();
         l2Var4.a(4);
         a13.b(l2Var4.b()).a();
-        c.b a14 = zi.c.a("hash");
+        c.b a14 = bj.c.a("hash");
         l2 l2Var5 = new l2();
         l2Var5.a(5);
         a14.b(l2Var5.b()).a();
-        c.b a15 = zi.c.a("modelType");
+        c.b a15 = bj.c.a("modelType");
         l2 l2Var6 = new l2();
         l2Var6.a(6);
         a15.b(l2Var6.b()).a();
-        c.b a16 = zi.c.a("size");
+        c.b a16 = bj.c.a("size");
         l2 l2Var7 = new l2();
         l2Var7.a(7);
         a16.b(l2Var7.b()).a();
-        c.b a17 = zi.c.a("hasLabelMap");
+        c.b a17 = bj.c.a("hasLabelMap");
         l2 l2Var8 = new l2();
         l2Var8.a(8);
         a17.b(l2Var8.b()).a();
-        c.b a18 = zi.c.a("isManifestModel");
+        c.b a18 = bj.c.a("isManifestModel");
         l2 l2Var9 = new l2();
         l2Var9.a(9);
         a18.b(l2Var9.b()).a();
@@ -50,10 +50,10 @@ final class m8 implements zi.d {
     private m8() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

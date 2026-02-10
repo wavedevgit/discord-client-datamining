@@ -52,7 +52,7 @@ public final class Transcoder {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit convertCompress$lambda$0(float f10) {
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     public final void cancel(@NotNull String requestId) {
@@ -64,18 +64,18 @@ public final class Transcoder {
     }
 
     public final Object convertCompress(@NotNull final String str, @NotNull Context context, @NotNull DiscordVideoMediaSource discordVideoMediaSource, @NotNull final Uri uri, @NotNull EncodingConfig encodingConfig, @NotNull final Function1<? super Float, Unit> function1, @NotNull Continuation<? super Uri> continuation) {
-        final kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(xr.b.c(continuation), 1);
+        final kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(gs.b.c(continuation), 1);
         eVar.H();
         final MediaTransformer mediaTransformer = new MediaTransformer(context);
         cancelCallbacks.put(str, new Function0<Unit>() { // from class: com.discord.media.utils.Transcoder$convertCompress$3$1
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m941invoke();
-                return Unit.f31765a;
+                m942invoke();
+                return Unit.f31987a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m941invoke() {
+            public final void m942invoke() {
                 MediaTransformer.this.a(str);
             }
         });
@@ -119,50 +119,50 @@ public final class Transcoder {
         }
         com.linkedin.android.litr.d a10 = new d.b().c(true).b(encodingConfig.getProgressUpdateGranularity()).a();
         Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
-        mediaTransformer.h(str, discordVideoMediaSource.getInputUri(), uri, mediaFormat, discordVideoMediaSource.getAudioFormat(), new ml.a() { // from class: com.discord.media.utils.Transcoder$convertCompress$3$2
-            @Override // ml.a
-            public void onCancelled(String id2, List<nl.a> list) {
+        mediaTransformer.h(str, discordVideoMediaSource.getInputUri(), uri, mediaFormat, discordVideoMediaSource.getAudioFormat(), new ol.a() { // from class: com.discord.media.utils.Transcoder$convertCompress$3$2
+            @Override // ol.a
+            public void onCancelled(String id2, List<pl.a> list) {
                 Intrinsics.checkNotNullParameter(id2, "id");
                 mediaTransformer.e();
                 Transcoder.cancelCallbacks.remove(str);
                 if (eVar.a()) {
                     CancellableContinuation cancellableContinuation = eVar;
-                    Result.a aVar = Result.f31762e;
+                    Result.a aVar = Result.f31984e;
                     cancellableContinuation.resumeWith(Result.b(kotlin.c.a(new CancellationException("Video transcoding was cancelled"))));
                 }
             }
 
-            @Override // ml.a
-            public void onCompleted(String id2, List<nl.a> list) {
+            @Override // ol.a
+            public void onCompleted(String id2, List<pl.a> list) {
                 Intrinsics.checkNotNullParameter(id2, "id");
                 mediaTransformer.e();
                 function1.invoke(Float.valueOf(1.0f));
                 Transcoder.cancelCallbacks.remove(str);
                 CancellableContinuation cancellableContinuation = eVar;
-                Result.a aVar = Result.f31762e;
+                Result.a aVar = Result.f31984e;
                 cancellableContinuation.resumeWith(Result.b(uri));
             }
 
-            @Override // ml.a
-            public void onError(String id2, Throwable th2, List<nl.a> list) {
+            @Override // ol.a
+            public void onError(String id2, Throwable th2, List<pl.a> list) {
                 Intrinsics.checkNotNullParameter(id2, "id");
                 mediaTransformer.e();
                 Transcoder.cancelCallbacks.remove(str);
                 CancellableContinuation cancellableContinuation = eVar;
-                Result.a aVar = Result.f31762e;
+                Result.a aVar = Result.f31984e;
                 if (th2 == null) {
                     th2 = new Throwable("Unknown transcoding error");
                 }
                 cancellableContinuation.resumeWith(Result.b(kotlin.c.a(th2)));
             }
 
-            @Override // ml.a
+            @Override // ol.a
             public void onProgress(String id2, float f10) {
                 Intrinsics.checkNotNullParameter(id2, "id");
                 function1.invoke(Float.valueOf(f10));
             }
 
-            @Override // ml.a
+            @Override // ol.a
             public void onStarted(String id2) {
                 Intrinsics.checkNotNullParameter(id2, "id");
                 function1.invoke(Float.valueOf(0.0f));
@@ -172,7 +172,7 @@ public final class Transcoder {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((Throwable) obj);
-                return Unit.f31765a;
+                return Unit.f31987a;
             }
 
             public final void invoke(Throwable th2) {
@@ -180,7 +180,7 @@ public final class Transcoder {
             }
         });
         Object B = eVar.B();
-        if (B == xr.b.f()) {
+        if (B == gs.b.f()) {
             g.c(continuation);
         }
         return B;

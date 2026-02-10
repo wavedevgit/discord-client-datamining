@@ -65,7 +65,7 @@ public final class ModuleHolder {
         SoftAssertions.assertCondition(z10, "Creating an already created module.");
         ReactMarker.logMarker(ReactMarkerConstants.CREATE_MODULE_START, this.name, this.instanceKey);
         rb.b.a(0L, "ModuleHolder.createModule").b(StackTraceHelper.NAME_KEY, this.name).c();
-        b9.c.a().c(c9.a.f7343f, "NativeModule init: %s", this.name);
+        b9.c.a().c(c9.a.f8024f, "NativeModule init: %s", this.name);
         try {
             Provider provider = this.provider;
             if (provider != null) {
@@ -78,7 +78,7 @@ public final class ModuleHolder {
                     if (this.initializable && !this.isInitializing) {
                         z11 = true;
                     }
-                    Unit unit = Unit.f31765a;
+                    Unit unit = Unit.f31987a;
                 }
                 if (z11) {
                     doInitialize(nativeModule);
@@ -109,7 +109,7 @@ public final class ModuleHolder {
                 } else {
                     z10 = false;
                 }
-                Unit unit = Unit.f31765a;
+                Unit unit = Unit.f31987a;
             }
             if (z10) {
                 if (nativeModule != null) {
@@ -158,7 +158,7 @@ public final class ModuleHolder {
                 } else {
                     z10 = false;
                 }
-                Unit unit = Unit.f31765a;
+                Unit unit = Unit.f31987a;
                 if (z10) {
                     NativeModule create = create();
                     synchronized (this) {
@@ -231,7 +231,7 @@ public final class ModuleHolder {
                     z10 = false;
                     nativeModule = null;
                 }
-                Unit unit = Unit.f31765a;
+                Unit unit = Unit.f31987a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -257,6 +257,6 @@ public final class ModuleHolder {
         Intrinsics.checkNotNullExpressionValue(simpleName, "getSimpleName(...)");
         this.reactModuleInfo = new ReactModuleInfo(name2, simpleName, nativeModule.canOverrideExistingModule(), true, CxxModuleWrapper.class.isAssignableFrom(nativeModule.getClass()), ReactModuleInfo.Companion.classIsTurboModule(nativeModule.getClass()));
         this.internalModule = nativeModule;
-        b9.c.a().c(c9.a.f7343f, "NativeModule init: %s", name);
+        b9.c.a().c(c9.a.f8024f, "NativeModule init: %s", name);
     }
 }

@@ -1,108 +1,119 @@
 package jq;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewbinding.ViewBinding;
-import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
+import android.os.Parcel;
+import android.os.Parcelable;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements ViewBinding {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final FrameLayout f30302a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final FrameLayout f30303b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final LinearLayout f30304c;
+public final class a implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<a> CREATOR = new C0435a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final View f30305d;
+    private final boolean f31278d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final RecyclerView f30306e;
-
-    /* renamed from: f  reason: collision with root package name */
-    public final TextInputEditText f30307f;
-
-    /* renamed from: g  reason: collision with root package name */
-    public final TextInputLayout f30308g;
-
-    /* renamed from: h  reason: collision with root package name */
-    public final View f30309h;
+    private final boolean f31279e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextView f30310i;
+    private final boolean f31280i;
 
-    /* renamed from: j  reason: collision with root package name */
-    public final MaterialToolbar f30311j;
+    /* renamed from: o  reason: collision with root package name */
+    private final boolean f31281o;
 
-    private a(FrameLayout frameLayout, FrameLayout frameLayout2, LinearLayout linearLayout, View view, RecyclerView recyclerView, TextInputEditText textInputEditText, TextInputLayout textInputLayout, View view2, TextView textView, MaterialToolbar materialToolbar) {
-        this.f30302a = frameLayout;
-        this.f30303b = frameLayout2;
-        this.f30304c = linearLayout;
-        this.f30305d = view;
-        this.f30306e = recyclerView;
-        this.f30307f = textInputEditText;
-        this.f30308g = textInputLayout;
-        this.f30309h = view2;
-        this.f30310i = textView;
-        this.f30311j = materialToolbar;
-    }
+    /* renamed from: p  reason: collision with root package name */
+    private final boolean f31282p;
 
-    public static a a(View view) {
-        View a10;
-        View a11;
-        int i10 = eq.e.f21998n;
-        FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
-        if (frameLayout != null) {
-            i10 = eq.e.X;
-            LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
-            if (linearLayout != null && (a10 = e4.a.a(view, (i10 = eq.e.Y))) != null) {
-                i10 = eq.e.f22005q0;
-                RecyclerView recyclerView = (RecyclerView) e4.a.a(view, i10);
-                if (recyclerView != null) {
-                    i10 = eq.e.f22009s0;
-                    TextInputEditText textInputEditText = (TextInputEditText) e4.a.a(view, i10);
-                    if (textInputEditText != null) {
-                        i10 = eq.e.f22011t0;
-                        TextInputLayout textInputLayout = (TextInputLayout) e4.a.a(view, i10);
-                        if (textInputLayout != null && (a11 = e4.a.a(view, (i10 = eq.e.f22017w0))) != null) {
-                            i10 = eq.e.A0;
-                            TextView textView = (TextView) e4.a.a(view, i10);
-                            if (textView != null) {
-                                i10 = eq.e.C0;
-                                MaterialToolbar materialToolbar = (MaterialToolbar) e4.a.a(view, i10);
-                                if (materialToolbar != null) {
-                                    return new a((FrameLayout) view, frameLayout, linearLayout, a10, recyclerView, textInputEditText, textInputLayout, a11, textView, materialToolbar);
-                                }
-                            }
-                        }
-                    }
-                }
+    /* renamed from: jq.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0435a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final a createFromParcel(Parcel parcel) {
+            boolean z10;
+            boolean z11;
+            boolean z12;
+            boolean z13;
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            boolean z14 = false;
+            boolean z15 = true;
+            if (parcel.readInt() != 0) {
+                z10 = false;
+                z14 = true;
+            } else {
+                z10 = false;
             }
+            if (parcel.readInt() != 0) {
+                z11 = true;
+            } else {
+                z11 = true;
+                z15 = z10;
+            }
+            if (parcel.readInt() != 0) {
+                z12 = z11;
+            } else {
+                z12 = z11;
+                z11 = z10;
+            }
+            if (parcel.readInt() != 0) {
+                z13 = z12;
+            } else {
+                z13 = z12;
+                z12 = z10;
+            }
+            if (parcel.readInt() == 0) {
+                z13 = z10;
+            }
+            return new a(z14, z15, z11, z12, z13);
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final a[] newArray(int i10) {
+            return new a[i10];
+        }
     }
 
-    public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(eq.f.f22024a, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
-        }
-        return a(inflate);
+    public a(boolean z10, boolean z11, boolean z12, boolean z13, boolean z14) {
+        this.f31278d = z10;
+        this.f31279e = z11;
+        this.f31280i = z12;
+        this.f31281o = z13;
+        this.f31282p = z14;
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public FrameLayout getRoot() {
-        return this.f30302a;
+    public final boolean a() {
+        return this.f31281o;
+    }
+
+    public final boolean b() {
+        return this.f31278d;
+    }
+
+    public final boolean c() {
+        return this.f31279e;
+    }
+
+    public final boolean d() {
+        return this.f31280i;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public final boolean e() {
+        return this.f31282p;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeInt(this.f31278d ? 1 : 0);
+        dest.writeInt(this.f31279e ? 1 : 0);
+        dest.writeInt(this.f31280i ? 1 : 0);
+        dest.writeInt(this.f31281o ? 1 : 0);
+        dest.writeInt(this.f31282p ? 1 : 0);
     }
 }

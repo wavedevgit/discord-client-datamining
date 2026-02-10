@@ -6,24 +6,24 @@ import java.util.Map;
 public class f2 implements a0.a1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f44645a;
+    private final boolean f43313a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f44646b;
+    private final String f43314b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f44647c;
+    private final int f43315c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f44648d = new HashMap();
+    private final Map f43316d = new HashMap();
 
     /* renamed from: e  reason: collision with root package name */
-    private final a0.d2 f44649e;
+    private final a0.d2 f43317e;
 
     public f2(String str, a0.d2 d2Var) {
         boolean z10;
         int i10;
-        this.f44646b = str;
+        this.f43314b = str;
         try {
             i10 = Integer.parseInt(str);
             z10 = true;
@@ -32,8 +32,8 @@ public class f2 implements a0.a1 {
             z10 = false;
             i10 = -1;
         }
-        this.f44645a = z10;
-        this.f44647c = i10;
-        this.f44649e = d2Var;
+        this.f43313a = z10;
+        this.f43315c = i10;
+        this.f43317e = d2Var;
     }
 }

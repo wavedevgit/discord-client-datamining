@@ -1,84 +1,88 @@
 package hp;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.util.Date;
+import android.content.Context;
+import java.io.File;
+import java.lang.Thread;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import ls.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<b> CREATOR = new a();
+public final class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    private boolean f27638a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private boolean f27639b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final ro.a f27640c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f26393d;
+    private List f27641d;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final Date f26394e;
+    public b(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        this.f27639b = true;
+        this.f27640c = new ro.a(context);
+        this.f27641d = CollectionsKt.l();
+    }
 
-    /* renamed from: i  reason: collision with root package name */
-    private final Date f26395i;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final b createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new b(parcel.readString(), (Date) parcel.readSerializable(), (Date) parcel.readSerializable());
-        }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final b[] newArray(int i10) {
-            return new b[i10];
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void e(b bVar, Thread.UncaughtExceptionHandler uncaughtExceptionHandler, Thread thread, Throwable th2) {
+        Intrinsics.checkNotNull(th2);
+        bVar.c(th2);
+        if (uncaughtExceptionHandler != null) {
+            uncaughtExceptionHandler.uncaughtException(thread, th2);
+        } else {
+            System.exit(1);
+            throw new RuntimeException("System.exit returned normally, while it was supposed to halt JVM.");
         }
     }
 
-    public b(String passportNumber, Date expirationDate, Date dateOfBirth) {
-        Intrinsics.checkNotNullParameter(passportNumber, "passportNumber");
-        Intrinsics.checkNotNullParameter(expirationDate, "expirationDate");
-        Intrinsics.checkNotNullParameter(dateOfBirth, "dateOfBirth");
-        this.f26393d = passportNumber;
-        this.f26394e = expirationDate;
-        this.f26395i = dateOfBirth;
+    public final void b() {
+        this.f27640c.a();
     }
 
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    public final void c(Throwable e10) {
+        Intrinsics.checkNotNullParameter(e10, "e");
+        if (this.f27639b) {
+            try {
+                this.f27640c.g(e10);
+            } catch (Exception unused) {
+            }
+            try {
+                for (File file : this.f27641d) {
+                    j.r(file);
+                }
+            } catch (Exception unused2) {
+            }
         }
-        if (!(obj instanceof b)) {
-            return false;
+    }
+
+    public final synchronized void d() {
+        if (this.f27638a) {
+            return;
         }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f26393d, bVar.f26393d) && Intrinsics.areEqual(this.f26394e, bVar.f26394e) && Intrinsics.areEqual(this.f26395i, bVar.f26395i)) {
-            return true;
+        this.f27638a = true;
+        final Thread.UncaughtExceptionHandler defaultUncaughtExceptionHandler = Thread.getDefaultUncaughtExceptionHandler();
+        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() { // from class: hp.a
+            @Override // java.lang.Thread.UncaughtExceptionHandler
+            public final void uncaughtException(Thread thread, Throwable th2) {
+                b.e(b.this, defaultUncaughtExceptionHandler, thread, th2);
+            }
+        });
+    }
+
+    public final void f(List list) {
+        Intrinsics.checkNotNullParameter(list, "<set-?>");
+        this.f27641d = list;
+    }
+
+    public final synchronized void g() {
+        if (this.f27638a) {
+            this.f27639b = false;
         }
-        return false;
-    }
-
-    public int hashCode() {
-        return (((this.f26393d.hashCode() * 31) + this.f26394e.hashCode()) * 31) + this.f26395i.hashCode();
-    }
-
-    public String toString() {
-        String str = this.f26393d;
-        Date date = this.f26394e;
-        Date date2 = this.f26395i;
-        return "MrzKey(passportNumber=" + str + ", expirationDate=" + date + ", dateOfBirth=" + date2 + ")";
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f26393d);
-        dest.writeSerializable(this.f26394e);
-        dest.writeSerializable(this.f26395i);
     }
 }

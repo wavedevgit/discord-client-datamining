@@ -10,34 +10,34 @@ import oe.w0;
 public final class a implements Metadata.b {
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f30102d;
+    public final String f30902d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f30103e;
+    public final String f30903e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final long f30104i;
+    public final long f30904i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final long f30105o;
+    public final long f30905o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final byte[] f30106p;
+    public final byte[] f30906p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f30107q;
+    private int f30907q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Format f30100r = new Format.b().g0("application/id3").G();
+    private static final Format f30900r = new Format.b().g0("application/id3").G();
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Format f30101s = new Format.b().g0("application/x-scte35").G();
-    public static final Parcelable.Creator<a> CREATOR = new C0451a();
+    private static final Format f30901s = new Format.b().g0("application/x-scte35").G();
+    public static final Parcelable.Creator<a> CREATOR = new C0419a();
 
     /* renamed from: jd.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    class C0451a implements Parcelable.Creator {
-        C0451a() {
+    class C0419a implements Parcelable.Creator {
+        C0419a() {
         }
 
         @Override // android.os.Parcelable.Creator
@@ -54,77 +54,16 @@ public final class a implements Metadata.b {
     }
 
     public a(String str, String str2, long j10, long j11, byte[] bArr) {
-        this.f30102d = str;
-        this.f30103e = str2;
-        this.f30104i = j10;
-        this.f30105o = j11;
-        this.f30106p = bArr;
-    }
-
-    @Override // android.os.Parcelable
-    public int describeContents() {
-        return 0;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj != null && a.class == obj.getClass()) {
-            a aVar = (a) obj;
-            if (this.f30104i == aVar.f30104i && this.f30105o == aVar.f30105o && w0.c(this.f30102d, aVar.f30102d) && w0.c(this.f30103e, aVar.f30103e) && Arrays.equals(this.f30106p, aVar.f30106p)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        int i10;
-        if (this.f30107q == 0) {
-            String str = this.f30102d;
-            int i11 = 0;
-            if (str != null) {
-                i10 = str.hashCode();
-            } else {
-                i10 = 0;
-            }
-            int i12 = (527 + i10) * 31;
-            String str2 = this.f30103e;
-            if (str2 != null) {
-                i11 = str2.hashCode();
-            }
-            long j10 = this.f30104i;
-            long j11 = this.f30105o;
-            this.f30107q = ((((((i12 + i11) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + Arrays.hashCode(this.f30106p);
-        }
-        return this.f30107q;
+        this.f30902d = str;
+        this.f30903e = str2;
+        this.f30904i = j10;
+        this.f30905o = j11;
+        this.f30906p = bArr;
     }
 
     @Override // com.google.android.exoplayer2.metadata.Metadata.b
-    public byte[] j2() {
-        if (y() != null) {
-            return this.f30106p;
-        }
-        return null;
-    }
-
-    public String toString() {
-        return "EMSG: scheme=" + this.f30102d + ", id=" + this.f30105o + ", durationMs=" + this.f30104i + ", value=" + this.f30103e;
-    }
-
-    @Override // android.os.Parcelable
-    public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f30102d);
-        parcel.writeString(this.f30103e);
-        parcel.writeLong(this.f30104i);
-        parcel.writeLong(this.f30105o);
-        parcel.writeByteArray(this.f30106p);
-    }
-
-    @Override // com.google.android.exoplayer2.metadata.Metadata.b
-    public Format y() {
-        String str = this.f30102d;
+    public Format I() {
+        String str = this.f30902d;
         str.getClass();
         char c10 = 65535;
         switch (str.hashCode()) {
@@ -149,20 +88,81 @@ public final class a implements Metadata.b {
         }
         switch (c10) {
             case 0:
-                return f30101s;
+                return f30901s;
             case 1:
             case 2:
-                return f30100r;
+                return f30900r;
             default:
                 return null;
         }
     }
 
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj != null && a.class == obj.getClass()) {
+            a aVar = (a) obj;
+            if (this.f30904i == aVar.f30904i && this.f30905o == aVar.f30905o && w0.c(this.f30902d, aVar.f30902d) && w0.c(this.f30903e, aVar.f30903e) && Arrays.equals(this.f30906p, aVar.f30906p)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        int i10;
+        if (this.f30907q == 0) {
+            String str = this.f30902d;
+            int i11 = 0;
+            if (str != null) {
+                i10 = str.hashCode();
+            } else {
+                i10 = 0;
+            }
+            int i12 = (527 + i10) * 31;
+            String str2 = this.f30903e;
+            if (str2 != null) {
+                i11 = str2.hashCode();
+            }
+            long j10 = this.f30904i;
+            long j11 = this.f30905o;
+            this.f30907q = ((((((i12 + i11) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + Arrays.hashCode(this.f30906p);
+        }
+        return this.f30907q;
+    }
+
+    @Override // com.google.android.exoplayer2.metadata.Metadata.b
+    public byte[] o2() {
+        if (I() != null) {
+            return this.f30906p;
+        }
+        return null;
+    }
+
+    public String toString() {
+        return "EMSG: scheme=" + this.f30902d + ", id=" + this.f30905o + ", durationMs=" + this.f30904i + ", value=" + this.f30903e;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i10) {
+        parcel.writeString(this.f30902d);
+        parcel.writeString(this.f30903e);
+        parcel.writeLong(this.f30904i);
+        parcel.writeLong(this.f30905o);
+        parcel.writeByteArray(this.f30906p);
+    }
+
     a(Parcel parcel) {
-        this.f30102d = (String) w0.j(parcel.readString());
-        this.f30103e = (String) w0.j(parcel.readString());
-        this.f30104i = parcel.readLong();
-        this.f30105o = parcel.readLong();
-        this.f30106p = (byte[]) w0.j(parcel.createByteArray());
+        this.f30902d = (String) w0.j(parcel.readString());
+        this.f30903e = (String) w0.j(parcel.readString());
+        this.f30904i = parcel.readLong();
+        this.f30905o = parcel.readLong();
+        this.f30906p = (byte[]) w0.j(parcel.createByteArray());
     }
 }

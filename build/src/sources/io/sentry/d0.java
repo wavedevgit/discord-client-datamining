@@ -28,82 +28,82 @@ public final class d0 {
     private k7.f O;
 
     /* renamed from: a  reason: collision with root package name */
-    private String f28281a;
+    private String f29216a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f28282b;
+    private String f29217b;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f28283c;
+    private String f29218c;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28284d;
+    private String f29219d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f28285e;
+    private String f29220e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Boolean f28286f;
+    private Boolean f29221f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Boolean f28287g;
+    private Boolean f29222g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Boolean f28288h;
+    private Boolean f29223h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Double f28289i;
+    private Double f29224i;
 
     /* renamed from: j  reason: collision with root package name */
-    private Double f28290j;
+    private Double f29225j;
 
     /* renamed from: k  reason: collision with root package name */
-    private k7.m f28291k;
+    private k7.m f29226k;
 
     /* renamed from: m  reason: collision with root package name */
-    private k7.l f28293m;
+    private k7.l f29228m;
 
     /* renamed from: r  reason: collision with root package name */
-    private String f28298r;
+    private String f29233r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Long f28299s;
+    private Long f29234s;
 
     /* renamed from: u  reason: collision with root package name */
-    private List f28301u;
+    private List f29236u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Boolean f28302v;
+    private Boolean f29237v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Boolean f28303w;
+    private Boolean f29238w;
 
     /* renamed from: y  reason: collision with root package name */
-    private Boolean f28305y;
+    private Boolean f29240y;
 
     /* renamed from: z  reason: collision with root package name */
-    private Boolean f28306z;
+    private Boolean f29241z;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Map f28292l = new ConcurrentHashMap();
+    private final Map f29227l = new ConcurrentHashMap();
 
     /* renamed from: n  reason: collision with root package name */
-    private final List f28294n = new CopyOnWriteArrayList();
+    private final List f29229n = new CopyOnWriteArrayList();
 
     /* renamed from: o  reason: collision with root package name */
-    private final List f28295o = new CopyOnWriteArrayList();
+    private final List f29230o = new CopyOnWriteArrayList();
 
     /* renamed from: p  reason: collision with root package name */
-    private List f28296p = null;
+    private List f29231p = null;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f28297q = new CopyOnWriteArrayList();
+    private final List f29232q = new CopyOnWriteArrayList();
 
     /* renamed from: t  reason: collision with root package name */
-    private final Set f28300t = new CopyOnWriteArraySet();
+    private final Set f29235t = new CopyOnWriteArraySet();
 
     /* renamed from: x  reason: collision with root package name */
-    private Set f28304x = new CopyOnWriteArraySet();
+    private Set f29239x = new CopyOnWriteArraySet();
 
     public static d0 g(io.sentry.config.f fVar, ILogger iLogger) {
         List<String> list;
@@ -219,11 +219,11 @@ public final class d0 {
     }
 
     public Double B() {
-        return this.f28290j;
+        return this.f29225j;
     }
 
     public void B0(String str) {
-        this.f28285e = str;
+        this.f29220e = str;
     }
 
     public String C() {
@@ -235,31 +235,31 @@ public final class d0 {
     }
 
     public String D() {
-        return this.f28298r;
+        return this.f29233r;
     }
 
     public void D0(String str, String str2) {
-        this.f28292l.put(str, str2);
+        this.f29227l.put(str, str2);
     }
 
     public k7.l E() {
-        return this.f28293m;
+        return this.f29228m;
     }
 
     public void E0(Double d10) {
-        this.f28289i = d10;
+        this.f29224i = d10;
     }
 
     public String F() {
-        return this.f28283c;
+        return this.f29218c;
     }
 
     public Boolean G() {
-        return this.f28303w;
+        return this.f29238w;
     }
 
     public String H() {
-        return this.f28285e;
+        return this.f29220e;
     }
 
     public String I() {
@@ -267,15 +267,15 @@ public final class d0 {
     }
 
     public Map J() {
-        return this.f28292l;
+        return this.f29227l;
     }
 
     public List K() {
-        return this.f28296p;
+        return this.f29231p;
     }
 
     public Double L() {
-        return this.f28289i;
+        return this.f29224i;
     }
 
     public Boolean M() {
@@ -291,7 +291,7 @@ public final class d0 {
     }
 
     public Boolean P() {
-        return this.f28306z;
+        return this.f29241z;
     }
 
     public Boolean Q() {
@@ -299,7 +299,7 @@ public final class d0 {
     }
 
     public Boolean R() {
-        return this.f28305y;
+        return this.f29240y;
     }
 
     public Boolean S() {
@@ -327,23 +327,23 @@ public final class d0 {
     }
 
     public void Y(Boolean bool) {
-        this.f28287g = bool;
+        this.f29222g = bool;
     }
 
     public void Z(String str) {
-        this.f28284d = str;
+        this.f29219d = str;
     }
 
     public void a(String str) {
-        this.f28304x.add(str);
+        this.f29239x.add(str);
     }
 
     public void a0(String str) {
-        this.f28281a = str;
+        this.f29216a = str;
     }
 
     public void b(String str) {
-        this.f28297q.add(str);
+        this.f29232q.add(str);
     }
 
     public void b0(Boolean bool) {
@@ -351,15 +351,15 @@ public final class d0 {
     }
 
     public void c(Class cls) {
-        this.f28300t.add(cls);
+        this.f29235t.add(cls);
     }
 
     public void c0(Boolean bool) {
-        this.f28288h = bool;
+        this.f29223h = bool;
     }
 
     public void d(String str) {
-        this.f28294n.add(str);
+        this.f29229n.add(str);
     }
 
     public void d0(Boolean bool) {
@@ -367,19 +367,19 @@ public final class d0 {
     }
 
     public void e(String str) {
-        this.f28295o.add(str);
+        this.f29230o.add(str);
     }
 
     public void e0(Boolean bool) {
-        this.f28306z = bool;
+        this.f29241z = bool;
     }
 
     public void f(String str) {
-        if (this.f28296p == null) {
-            this.f28296p = new CopyOnWriteArrayList();
+        if (this.f29231p == null) {
+            this.f29231p = new CopyOnWriteArrayList();
         }
         if (!str.isEmpty()) {
-            this.f28296p.add(str);
+            this.f29231p.add(str);
         }
     }
 
@@ -388,23 +388,23 @@ public final class d0 {
     }
 
     public void g0(Boolean bool) {
-        this.f28286f = bool;
+        this.f29221f = bool;
     }
 
     public Set h() {
-        return this.f28304x;
+        return this.f29239x;
     }
 
     public void h0(Boolean bool) {
-        this.f28305y = bool;
+        this.f29240y = bool;
     }
 
     public List i() {
-        return this.f28297q;
+        return this.f29232q;
     }
 
     public void i0(String str) {
-        this.f28282b = str;
+        this.f29217b = str;
     }
 
     public k7.f j() {
@@ -416,7 +416,7 @@ public final class d0 {
     }
 
     public Boolean k() {
-        return this.f28287g;
+        return this.f29222g;
     }
 
     public void k0(Boolean bool) {
@@ -424,15 +424,15 @@ public final class d0 {
     }
 
     public String l() {
-        return this.f28284d;
+        return this.f29219d;
     }
 
     public void l0(Long l10) {
-        this.f28299s = l10;
+        this.f29234s = l10;
     }
 
     public String m() {
-        return this.f28281a;
+        return this.f29216a;
     }
 
     public void m0(List list) {
@@ -440,15 +440,15 @@ public final class d0 {
     }
 
     public Boolean n() {
-        return this.f28288h;
+        return this.f29223h;
     }
 
     public void n0(List list) {
-        this.f28301u = list;
+        this.f29236u = list;
     }
 
     public Boolean o() {
-        return this.f28286f;
+        return this.f29221f;
     }
 
     public void o0(List list) {
@@ -456,19 +456,19 @@ public final class d0 {
     }
 
     public String p() {
-        return this.f28282b;
+        return this.f29217b;
     }
 
     public void p0(k7.m mVar) {
-        this.f28291k = mVar;
+        this.f29226k = mVar;
     }
 
     public Long q() {
-        return this.f28299s;
+        return this.f29234s;
     }
 
     public void q0(Boolean bool) {
-        this.f28302v = bool;
+        this.f29237v = bool;
     }
 
     public List r() {
@@ -480,7 +480,7 @@ public final class d0 {
     }
 
     public List s() {
-        return this.f28301u;
+        return this.f29236u;
     }
 
     public void s0(Double d10) {
@@ -488,11 +488,11 @@ public final class d0 {
     }
 
     public Set t() {
-        return this.f28300t;
+        return this.f29235t;
     }
 
     public void t0(Double d10) {
-        this.f28290j = d10;
+        this.f29225j = d10;
     }
 
     public List u() {
@@ -504,35 +504,35 @@ public final class d0 {
     }
 
     public List v() {
-        return this.f28294n;
+        return this.f29229n;
     }
 
     public void v0(String str) {
-        this.f28298r = str;
+        this.f29233r = str;
     }
 
     public List w() {
-        return this.f28295o;
+        return this.f29230o;
     }
 
     public void w0(k7.l lVar) {
-        this.f28293m = lVar;
+        this.f29228m = lVar;
     }
 
     public k7.m x() {
-        return this.f28291k;
+        return this.f29226k;
     }
 
     public void x0(String str) {
-        this.f28283c = str;
+        this.f29218c = str;
     }
 
     public Boolean y() {
-        return this.f28302v;
+        return this.f29237v;
     }
 
     public void y0(Boolean bool) {
-        this.f28303w = bool;
+        this.f29238w = bool;
     }
 
     public o3 z() {

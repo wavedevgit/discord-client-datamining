@@ -10,50 +10,50 @@ import java.util.Set;
 public abstract class q extends s implements Serializable {
 
     /* renamed from: i */
-    private transient Map f46176i;
+    private transient Map f44844i;
 
     /* renamed from: o */
-    private transient int f46177o;
+    private transient int f44845o;
 
     public q(Map map) {
         if (map.isEmpty()) {
-            this.f46176i = map;
+            this.f44844i = map;
             return;
         }
         throw new IllegalArgumentException();
     }
 
     public static /* synthetic */ int i(q qVar) {
-        int i10 = qVar.f46177o;
-        qVar.f46177o = i10 + 1;
+        int i10 = qVar.f44845o;
+        qVar.f44845o = i10 + 1;
         return i10;
     }
 
     public static /* synthetic */ int j(q qVar) {
-        int i10 = qVar.f46177o;
-        qVar.f46177o = i10 - 1;
+        int i10 = qVar.f44845o;
+        qVar.f44845o = i10 - 1;
         return i10;
     }
 
     public static /* synthetic */ int k(q qVar, int i10) {
-        int i11 = qVar.f46177o + i10;
-        qVar.f46177o = i11;
+        int i11 = qVar.f44845o + i10;
+        qVar.f44845o = i11;
         return i11;
     }
 
     public static /* synthetic */ int l(q qVar, int i10) {
-        int i11 = qVar.f46177o - i10;
-        qVar.f46177o = i11;
+        int i11 = qVar.f44845o - i10;
+        qVar.f44845o = i11;
         return i11;
     }
 
     public static /* synthetic */ Map o(q qVar) {
-        return qVar.f46176i;
+        return qVar.f44844i;
     }
 
     public static /* synthetic */ void p(q qVar, Object obj) {
         Object obj2;
-        Map map = qVar.f46176i;
+        Map map = qVar.f44844i;
         map.getClass();
         try {
             obj2 = map.remove(obj);
@@ -64,23 +64,23 @@ public abstract class q extends s implements Serializable {
         if (collection != null) {
             int size = collection.size();
             collection.clear();
-            qVar.f46177o -= size;
+            qVar.f44845o -= size;
         }
     }
 
     @Override // qg.c1
     public final boolean d(Object obj, Object obj2) {
-        Collection collection = (Collection) this.f46176i.get(obj);
+        Collection collection = (Collection) this.f44844i.get(obj);
         if (collection == null) {
             Collection g10 = g();
             if (g10.add(obj2)) {
-                this.f46177o++;
-                this.f46176i.put(obj, g10);
+                this.f44845o++;
+                this.f44844i.put(obj, g10);
                 return true;
             }
             throw new AssertionError("New Collection violated the Collection spec");
         } else if (collection.add(obj2)) {
-            this.f46177o++;
+            this.f44845o++;
             return true;
         } else {
             return false;
@@ -89,12 +89,12 @@ public abstract class q extends s implements Serializable {
 
     @Override // qg.s
     final Map e() {
-        return new i(this, this.f46176i);
+        return new i(this, this.f44844i);
     }
 
     @Override // qg.s
     final Set f() {
-        return new k(this, this.f46176i);
+        return new k(this, this.f44844i);
     }
 
     public abstract Collection g();
@@ -102,7 +102,7 @@ public abstract class q extends s implements Serializable {
     public abstract Collection h(Object obj, Collection collection);
 
     public final Collection m(Object obj) {
-        Collection collection = (Collection) this.f46176i.get(obj);
+        Collection collection = (Collection) this.f44844i.get(obj);
         if (collection == null) {
             collection = g();
         }
@@ -117,10 +117,10 @@ public abstract class q extends s implements Serializable {
     }
 
     public final void q() {
-        for (Collection collection : this.f46176i.values()) {
+        for (Collection collection : this.f44844i.values()) {
             collection.clear();
         }
-        this.f46176i.clear();
-        this.f46177o = 0;
+        this.f44844i.clear();
+        this.f44845o = 0;
     }
 }

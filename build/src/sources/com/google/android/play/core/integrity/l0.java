@@ -2,25 +2,25 @@ package com.google.android.play.core.integrity;
 
 import android.content.Context;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class l0 implements li.z {
+public final class l0 implements ni.z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final li.e0 f16326a;
+    private final ni.e0 f17075a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final li.e0 f16327b;
+    private final ni.e0 f17076b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final li.e0 f16328c;
+    private final ni.e0 f17077c;
 
-    public l0(li.e0 e0Var, li.e0 e0Var2, li.e0 e0Var3, li.e0 e0Var4) {
-        this.f16326a = e0Var;
-        this.f16327b = e0Var2;
-        this.f16328c = e0Var3;
+    public l0(ni.e0 e0Var, ni.e0 e0Var2, ni.e0 e0Var3, ni.e0 e0Var4) {
+        this.f17075a = e0Var;
+        this.f17076b = e0Var2;
+        this.f17077c = e0Var3;
     }
 
-    @Override // li.e0
+    @Override // ni.e0
     public final /* bridge */ /* synthetic */ Object a() {
-        return new j0((Context) this.f16326a.a(), (li.t0) this.f16327b.a(), ((s) this.f16328c).a(), new w0());
+        return new j0((Context) this.f17075a.a(), (ni.t0) this.f17076b.a(), ((s) this.f17077c).a(), new w0());
     }
 }

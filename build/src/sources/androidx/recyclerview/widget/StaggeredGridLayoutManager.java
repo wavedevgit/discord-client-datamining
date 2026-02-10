@@ -23,49 +23,49 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     private int[] H;
 
     /* renamed from: e  reason: collision with root package name */
-    f[] f5021e;
+    f[] f5031e;
 
     /* renamed from: i  reason: collision with root package name */
-    OrientationHelper f5022i;
+    OrientationHelper f5032i;
 
     /* renamed from: o  reason: collision with root package name */
-    OrientationHelper f5023o;
+    OrientationHelper f5033o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f5024p;
+    private int f5034p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f5025q;
+    private int f5035q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final k f5026r;
+    private final k f5036r;
 
     /* renamed from: u  reason: collision with root package name */
-    private BitSet f5029u;
+    private BitSet f5039u;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f5034z;
+    private boolean f5044z;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f5020d = -1;
+    private int f5030d = -1;
 
     /* renamed from: s  reason: collision with root package name */
-    boolean f5027s = false;
+    boolean f5037s = false;
 
     /* renamed from: t  reason: collision with root package name */
-    boolean f5028t = false;
+    boolean f5038t = false;
 
     /* renamed from: v  reason: collision with root package name */
-    int f5030v = -1;
+    int f5040v = -1;
 
     /* renamed from: w  reason: collision with root package name */
-    int f5031w = Integer.MIN_VALUE;
+    int f5041w = Integer.MIN_VALUE;
 
     /* renamed from: x  reason: collision with root package name */
-    d f5032x = new d();
+    d f5042x = new d();
 
     /* renamed from: y  reason: collision with root package name */
-    private int f5033y = 2;
+    private int f5043y = 2;
     private final Rect D = new Rect();
     private final b E = new b();
     private boolean F = false;
@@ -88,22 +88,22 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     public class b {
 
         /* renamed from: a  reason: collision with root package name */
-        int f5036a;
+        int f5046a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f5037b;
+        int f5047b;
 
         /* renamed from: c  reason: collision with root package name */
-        boolean f5038c;
+        boolean f5048c;
 
         /* renamed from: d  reason: collision with root package name */
-        boolean f5039d;
+        boolean f5049d;
 
         /* renamed from: e  reason: collision with root package name */
-        boolean f5040e;
+        boolean f5050e;
 
         /* renamed from: f  reason: collision with root package name */
-        int[] f5041f;
+        int[] f5051f;
 
         b() {
             c();
@@ -111,29 +111,29 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
 
         void a() {
             int m10;
-            if (this.f5038c) {
-                m10 = StaggeredGridLayoutManager.this.f5022i.i();
+            if (this.f5048c) {
+                m10 = StaggeredGridLayoutManager.this.f5032i.i();
             } else {
-                m10 = StaggeredGridLayoutManager.this.f5022i.m();
+                m10 = StaggeredGridLayoutManager.this.f5032i.m();
             }
-            this.f5037b = m10;
+            this.f5047b = m10;
         }
 
         void b(int i10) {
-            if (this.f5038c) {
-                this.f5037b = StaggeredGridLayoutManager.this.f5022i.i() - i10;
+            if (this.f5048c) {
+                this.f5047b = StaggeredGridLayoutManager.this.f5032i.i() - i10;
             } else {
-                this.f5037b = StaggeredGridLayoutManager.this.f5022i.m() + i10;
+                this.f5047b = StaggeredGridLayoutManager.this.f5032i.m() + i10;
             }
         }
 
         void c() {
-            this.f5036a = -1;
-            this.f5037b = Integer.MIN_VALUE;
-            this.f5038c = false;
-            this.f5039d = false;
-            this.f5040e = false;
-            int[] iArr = this.f5041f;
+            this.f5046a = -1;
+            this.f5047b = Integer.MIN_VALUE;
+            this.f5048c = false;
+            this.f5049d = false;
+            this.f5050e = false;
+            int[] iArr = this.f5051f;
             if (iArr != null) {
                 Arrays.fill(iArr, -1);
             }
@@ -141,12 +141,12 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
 
         void d(f[] fVarArr) {
             int length = fVarArr.length;
-            int[] iArr = this.f5041f;
+            int[] iArr = this.f5051f;
             if (iArr == null || iArr.length < length) {
-                this.f5041f = new int[StaggeredGridLayoutManager.this.f5021e.length];
+                this.f5051f = new int[StaggeredGridLayoutManager.this.f5031e.length];
             }
             for (int i10 = 0; i10 < length; i10++) {
-                this.f5041f[i10] = fVarArr[i10].p(Integer.MIN_VALUE);
+                this.f5051f[i10] = fVarArr[i10].p(Integer.MIN_VALUE);
             }
         }
     }
@@ -155,25 +155,25 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     public static class c extends RecyclerView.LayoutParams {
 
         /* renamed from: p  reason: collision with root package name */
-        f f5043p;
+        f f5053p;
 
         /* renamed from: q  reason: collision with root package name */
-        boolean f5044q;
+        boolean f5054q;
 
         public c(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
         }
 
         public final int e() {
-            f fVar = this.f5043p;
+            f fVar = this.f5053p;
             if (fVar == null) {
                 return -1;
             }
-            return fVar.f5065e;
+            return fVar.f5075e;
         }
 
         public boolean f() {
-            return this.f5044q;
+            return this.f5054q;
         }
 
         public c(int i10, int i11) {
@@ -194,34 +194,34 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         public static final Parcelable.Creator<e> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        int f5051d;
+        int f5061d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f5052e;
+        int f5062e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f5053i;
+        int f5063i;
 
         /* renamed from: o  reason: collision with root package name */
-        int[] f5054o;
+        int[] f5064o;
 
         /* renamed from: p  reason: collision with root package name */
-        int f5055p;
+        int f5065p;
 
         /* renamed from: q  reason: collision with root package name */
-        int[] f5056q;
+        int[] f5066q;
 
         /* renamed from: r  reason: collision with root package name */
-        List f5057r;
+        List f5067r;
 
         /* renamed from: s  reason: collision with root package name */
-        boolean f5058s;
+        boolean f5068s;
 
         /* renamed from: t  reason: collision with root package name */
-        boolean f5059t;
+        boolean f5069t;
 
         /* renamed from: u  reason: collision with root package name */
-        boolean f5060u;
+        boolean f5070u;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Parcelable.Creator {
@@ -245,18 +245,18 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         }
 
         void a() {
-            this.f5054o = null;
-            this.f5053i = 0;
-            this.f5051d = -1;
-            this.f5052e = -1;
+            this.f5064o = null;
+            this.f5063i = 0;
+            this.f5061d = -1;
+            this.f5062e = -1;
         }
 
         void b() {
-            this.f5054o = null;
-            this.f5053i = 0;
-            this.f5055p = 0;
-            this.f5056q = null;
-            this.f5057r = null;
+            this.f5064o = null;
+            this.f5063i = 0;
+            this.f5065p = 0;
+            this.f5066q = null;
+            this.f5067r = null;
         }
 
         @Override // android.os.Parcelable
@@ -266,56 +266,56 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeInt(this.f5051d);
-            parcel.writeInt(this.f5052e);
-            parcel.writeInt(this.f5053i);
-            if (this.f5053i > 0) {
-                parcel.writeIntArray(this.f5054o);
+            parcel.writeInt(this.f5061d);
+            parcel.writeInt(this.f5062e);
+            parcel.writeInt(this.f5063i);
+            if (this.f5063i > 0) {
+                parcel.writeIntArray(this.f5064o);
             }
-            parcel.writeInt(this.f5055p);
-            if (this.f5055p > 0) {
-                parcel.writeIntArray(this.f5056q);
+            parcel.writeInt(this.f5065p);
+            if (this.f5065p > 0) {
+                parcel.writeIntArray(this.f5066q);
             }
-            parcel.writeInt(this.f5058s ? 1 : 0);
-            parcel.writeInt(this.f5059t ? 1 : 0);
-            parcel.writeInt(this.f5060u ? 1 : 0);
-            parcel.writeList(this.f5057r);
+            parcel.writeInt(this.f5068s ? 1 : 0);
+            parcel.writeInt(this.f5069t ? 1 : 0);
+            parcel.writeInt(this.f5070u ? 1 : 0);
+            parcel.writeList(this.f5067r);
         }
 
         e(Parcel parcel) {
-            this.f5051d = parcel.readInt();
-            this.f5052e = parcel.readInt();
+            this.f5061d = parcel.readInt();
+            this.f5062e = parcel.readInt();
             int readInt = parcel.readInt();
-            this.f5053i = readInt;
+            this.f5063i = readInt;
             if (readInt > 0) {
                 int[] iArr = new int[readInt];
-                this.f5054o = iArr;
+                this.f5064o = iArr;
                 parcel.readIntArray(iArr);
             }
             int readInt2 = parcel.readInt();
-            this.f5055p = readInt2;
+            this.f5065p = readInt2;
             if (readInt2 > 0) {
                 int[] iArr2 = new int[readInt2];
-                this.f5056q = iArr2;
+                this.f5066q = iArr2;
                 parcel.readIntArray(iArr2);
             }
-            this.f5058s = parcel.readInt() == 1;
-            this.f5059t = parcel.readInt() == 1;
-            this.f5060u = parcel.readInt() == 1;
-            this.f5057r = parcel.readArrayList(d.a.class.getClassLoader());
+            this.f5068s = parcel.readInt() == 1;
+            this.f5069t = parcel.readInt() == 1;
+            this.f5070u = parcel.readInt() == 1;
+            this.f5067r = parcel.readArrayList(d.a.class.getClassLoader());
         }
 
         public e(e eVar) {
-            this.f5053i = eVar.f5053i;
-            this.f5051d = eVar.f5051d;
-            this.f5052e = eVar.f5052e;
-            this.f5054o = eVar.f5054o;
-            this.f5055p = eVar.f5055p;
-            this.f5056q = eVar.f5056q;
-            this.f5058s = eVar.f5058s;
-            this.f5059t = eVar.f5059t;
-            this.f5060u = eVar.f5060u;
-            this.f5057r = eVar.f5057r;
+            this.f5063i = eVar.f5063i;
+            this.f5061d = eVar.f5061d;
+            this.f5062e = eVar.f5062e;
+            this.f5064o = eVar.f5064o;
+            this.f5065p = eVar.f5065p;
+            this.f5066q = eVar.f5066q;
+            this.f5068s = eVar.f5068s;
+            this.f5069t = eVar.f5069t;
+            this.f5070u = eVar.f5070u;
+            this.f5067r = eVar.f5067r;
         }
     }
 
@@ -324,36 +324,36 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     public class f {
 
         /* renamed from: a  reason: collision with root package name */
-        ArrayList f5061a = new ArrayList();
+        ArrayList f5071a = new ArrayList();
 
         /* renamed from: b  reason: collision with root package name */
-        int f5062b = Integer.MIN_VALUE;
+        int f5072b = Integer.MIN_VALUE;
 
         /* renamed from: c  reason: collision with root package name */
-        int f5063c = Integer.MIN_VALUE;
+        int f5073c = Integer.MIN_VALUE;
 
         /* renamed from: d  reason: collision with root package name */
-        int f5064d = 0;
+        int f5074d = 0;
 
         /* renamed from: e  reason: collision with root package name */
-        final int f5065e;
+        final int f5075e;
 
         f(int i10) {
-            this.f5065e = i10;
+            this.f5075e = i10;
         }
 
         void a(View view) {
             c n10 = n(view);
-            n10.f5043p = this;
-            this.f5061a.add(view);
-            this.f5063c = Integer.MIN_VALUE;
-            if (this.f5061a.size() == 1) {
-                this.f5062b = Integer.MIN_VALUE;
+            n10.f5053p = this;
+            this.f5071a.add(view);
+            this.f5073c = Integer.MIN_VALUE;
+            if (this.f5071a.size() == 1) {
+                this.f5072b = Integer.MIN_VALUE;
             }
             if (!n10.c() && !n10.b()) {
                 return;
             }
-            this.f5064d += StaggeredGridLayoutManager.this.f5022i.e(view);
+            this.f5074d += StaggeredGridLayoutManager.this.f5032i.e(view);
         }
 
         void b(boolean z10, int i10) {
@@ -365,74 +365,74 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             }
             e();
             if (p10 != Integer.MIN_VALUE) {
-                if (!z10 || p10 >= StaggeredGridLayoutManager.this.f5022i.i()) {
-                    if (!z10 && p10 > StaggeredGridLayoutManager.this.f5022i.m()) {
+                if (!z10 || p10 >= StaggeredGridLayoutManager.this.f5032i.i()) {
+                    if (!z10 && p10 > StaggeredGridLayoutManager.this.f5032i.m()) {
                         return;
                     }
                     if (i10 != Integer.MIN_VALUE) {
                         p10 += i10;
                     }
-                    this.f5063c = p10;
-                    this.f5062b = p10;
+                    this.f5073c = p10;
+                    this.f5072b = p10;
                 }
             }
         }
 
         void c() {
             d.a f10;
-            ArrayList arrayList = this.f5061a;
+            ArrayList arrayList = this.f5071a;
             View view = (View) arrayList.get(arrayList.size() - 1);
             c n10 = n(view);
-            this.f5063c = StaggeredGridLayoutManager.this.f5022i.d(view);
-            if (n10.f5044q && (f10 = StaggeredGridLayoutManager.this.f5032x.f(n10.a())) != null && f10.f5048e == 1) {
-                this.f5063c += f10.a(this.f5065e);
+            this.f5073c = StaggeredGridLayoutManager.this.f5032i.d(view);
+            if (n10.f5054q && (f10 = StaggeredGridLayoutManager.this.f5042x.f(n10.a())) != null && f10.f5058e == 1) {
+                this.f5073c += f10.a(this.f5075e);
             }
         }
 
         void d() {
             d.a f10;
-            View view = (View) this.f5061a.get(0);
+            View view = (View) this.f5071a.get(0);
             c n10 = n(view);
-            this.f5062b = StaggeredGridLayoutManager.this.f5022i.g(view);
-            if (n10.f5044q && (f10 = StaggeredGridLayoutManager.this.f5032x.f(n10.a())) != null && f10.f5048e == -1) {
-                this.f5062b -= f10.a(this.f5065e);
+            this.f5072b = StaggeredGridLayoutManager.this.f5032i.g(view);
+            if (n10.f5054q && (f10 = StaggeredGridLayoutManager.this.f5042x.f(n10.a())) != null && f10.f5058e == -1) {
+                this.f5072b -= f10.a(this.f5075e);
             }
         }
 
         void e() {
-            this.f5061a.clear();
+            this.f5071a.clear();
             q();
-            this.f5064d = 0;
+            this.f5074d = 0;
         }
 
         public int f() {
-            if (StaggeredGridLayoutManager.this.f5027s) {
-                return i(this.f5061a.size() - 1, -1, true);
+            if (StaggeredGridLayoutManager.this.f5037s) {
+                return i(this.f5071a.size() - 1, -1, true);
             }
-            return i(0, this.f5061a.size(), true);
+            return i(0, this.f5071a.size(), true);
         }
 
         public int g() {
-            if (StaggeredGridLayoutManager.this.f5027s) {
-                return i(0, this.f5061a.size(), true);
+            if (StaggeredGridLayoutManager.this.f5037s) {
+                return i(0, this.f5071a.size(), true);
             }
-            return i(this.f5061a.size() - 1, -1, true);
+            return i(this.f5071a.size() - 1, -1, true);
         }
 
         int h(int i10, int i11, boolean z10, boolean z11, boolean z12) {
             int i12;
             boolean z13;
-            int m10 = StaggeredGridLayoutManager.this.f5022i.m();
-            int i13 = StaggeredGridLayoutManager.this.f5022i.i();
+            int m10 = StaggeredGridLayoutManager.this.f5032i.m();
+            int i13 = StaggeredGridLayoutManager.this.f5032i.i();
             if (i11 > i10) {
                 i12 = 1;
             } else {
                 i12 = -1;
             }
             while (i10 != i11) {
-                View view = (View) this.f5061a.get(i10);
-                int g10 = StaggeredGridLayoutManager.this.f5022i.g(view);
-                int d10 = StaggeredGridLayoutManager.this.f5022i.d(view);
+                View view = (View) this.f5071a.get(i10);
+                int g10 = StaggeredGridLayoutManager.this.f5032i.g(view);
+                int d10 = StaggeredGridLayoutManager.this.f5032i.d(view);
                 boolean z14 = false;
                 if (!z12 ? g10 < i13 : g10 <= i13) {
                     z13 = true;
@@ -465,43 +465,43 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         }
 
         public int j() {
-            return this.f5064d;
+            return this.f5074d;
         }
 
         int k() {
-            int i10 = this.f5063c;
+            int i10 = this.f5073c;
             if (i10 != Integer.MIN_VALUE) {
                 return i10;
             }
             c();
-            return this.f5063c;
+            return this.f5073c;
         }
 
         int l(int i10) {
-            int i11 = this.f5063c;
+            int i11 = this.f5073c;
             if (i11 != Integer.MIN_VALUE) {
                 return i11;
             }
-            if (this.f5061a.size() == 0) {
+            if (this.f5071a.size() == 0) {
                 return i10;
             }
             c();
-            return this.f5063c;
+            return this.f5073c;
         }
 
         public View m(int i10, int i11) {
             View view = null;
             if (i11 == -1) {
-                int size = this.f5061a.size();
+                int size = this.f5071a.size();
                 int i12 = 0;
                 while (i12 < size) {
-                    View view2 = (View) this.f5061a.get(i12);
+                    View view2 = (View) this.f5071a.get(i12);
                     StaggeredGridLayoutManager staggeredGridLayoutManager = StaggeredGridLayoutManager.this;
-                    if (staggeredGridLayoutManager.f5027s && staggeredGridLayoutManager.getPosition(view2) <= i10) {
+                    if (staggeredGridLayoutManager.f5037s && staggeredGridLayoutManager.getPosition(view2) <= i10) {
                         break;
                     }
                     StaggeredGridLayoutManager staggeredGridLayoutManager2 = StaggeredGridLayoutManager.this;
-                    if ((!staggeredGridLayoutManager2.f5027s && staggeredGridLayoutManager2.getPosition(view2) >= i10) || !view2.hasFocusable()) {
+                    if ((!staggeredGridLayoutManager2.f5037s && staggeredGridLayoutManager2.getPosition(view2) >= i10) || !view2.hasFocusable()) {
                         break;
                     }
                     i12++;
@@ -509,15 +509,15 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
                 }
                 return view;
             }
-            int size2 = this.f5061a.size() - 1;
+            int size2 = this.f5071a.size() - 1;
             while (size2 >= 0) {
-                View view3 = (View) this.f5061a.get(size2);
+                View view3 = (View) this.f5071a.get(size2);
                 StaggeredGridLayoutManager staggeredGridLayoutManager3 = StaggeredGridLayoutManager.this;
-                if (staggeredGridLayoutManager3.f5027s && staggeredGridLayoutManager3.getPosition(view3) >= i10) {
+                if (staggeredGridLayoutManager3.f5037s && staggeredGridLayoutManager3.getPosition(view3) >= i10) {
                     break;
                 }
                 StaggeredGridLayoutManager staggeredGridLayoutManager4 = StaggeredGridLayoutManager.this;
-                if ((!staggeredGridLayoutManager4.f5027s && staggeredGridLayoutManager4.getPosition(view3) <= i10) || !view3.hasFocusable()) {
+                if ((!staggeredGridLayoutManager4.f5037s && staggeredGridLayoutManager4.getPosition(view3) <= i10) || !view3.hasFocusable()) {
                     break;
                 }
                 size2--;
@@ -531,95 +531,95 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         }
 
         int o() {
-            int i10 = this.f5062b;
+            int i10 = this.f5072b;
             if (i10 != Integer.MIN_VALUE) {
                 return i10;
             }
             d();
-            return this.f5062b;
+            return this.f5072b;
         }
 
         int p(int i10) {
-            int i11 = this.f5062b;
+            int i11 = this.f5072b;
             if (i11 != Integer.MIN_VALUE) {
                 return i11;
             }
-            if (this.f5061a.size() == 0) {
+            if (this.f5071a.size() == 0) {
                 return i10;
             }
             d();
-            return this.f5062b;
+            return this.f5072b;
         }
 
         void q() {
-            this.f5062b = Integer.MIN_VALUE;
-            this.f5063c = Integer.MIN_VALUE;
+            this.f5072b = Integer.MIN_VALUE;
+            this.f5073c = Integer.MIN_VALUE;
         }
 
         void r(int i10) {
-            int i11 = this.f5062b;
+            int i11 = this.f5072b;
             if (i11 != Integer.MIN_VALUE) {
-                this.f5062b = i11 + i10;
+                this.f5072b = i11 + i10;
             }
-            int i12 = this.f5063c;
+            int i12 = this.f5073c;
             if (i12 != Integer.MIN_VALUE) {
-                this.f5063c = i12 + i10;
+                this.f5073c = i12 + i10;
             }
         }
 
         void s() {
-            int size = this.f5061a.size();
-            View view = (View) this.f5061a.remove(size - 1);
+            int size = this.f5071a.size();
+            View view = (View) this.f5071a.remove(size - 1);
             c n10 = n(view);
-            n10.f5043p = null;
+            n10.f5053p = null;
             if (n10.c() || n10.b()) {
-                this.f5064d -= StaggeredGridLayoutManager.this.f5022i.e(view);
+                this.f5074d -= StaggeredGridLayoutManager.this.f5032i.e(view);
             }
             if (size == 1) {
-                this.f5062b = Integer.MIN_VALUE;
+                this.f5072b = Integer.MIN_VALUE;
             }
-            this.f5063c = Integer.MIN_VALUE;
+            this.f5073c = Integer.MIN_VALUE;
         }
 
         void t() {
-            View view = (View) this.f5061a.remove(0);
+            View view = (View) this.f5071a.remove(0);
             c n10 = n(view);
-            n10.f5043p = null;
-            if (this.f5061a.size() == 0) {
-                this.f5063c = Integer.MIN_VALUE;
+            n10.f5053p = null;
+            if (this.f5071a.size() == 0) {
+                this.f5073c = Integer.MIN_VALUE;
             }
             if (n10.c() || n10.b()) {
-                this.f5064d -= StaggeredGridLayoutManager.this.f5022i.e(view);
+                this.f5074d -= StaggeredGridLayoutManager.this.f5032i.e(view);
             }
-            this.f5062b = Integer.MIN_VALUE;
+            this.f5072b = Integer.MIN_VALUE;
         }
 
         void u(View view) {
             c n10 = n(view);
-            n10.f5043p = this;
-            this.f5061a.add(0, view);
-            this.f5062b = Integer.MIN_VALUE;
-            if (this.f5061a.size() == 1) {
-                this.f5063c = Integer.MIN_VALUE;
+            n10.f5053p = this;
+            this.f5071a.add(0, view);
+            this.f5072b = Integer.MIN_VALUE;
+            if (this.f5071a.size() == 1) {
+                this.f5073c = Integer.MIN_VALUE;
             }
             if (!n10.c() && !n10.b()) {
                 return;
             }
-            this.f5064d += StaggeredGridLayoutManager.this.f5022i.e(view);
+            this.f5074d += StaggeredGridLayoutManager.this.f5032i.e(view);
         }
 
         void v(int i10) {
-            this.f5062b = i10;
-            this.f5063c = i10;
+            this.f5072b = i10;
+            this.f5073c = i10;
         }
     }
 
     public StaggeredGridLayoutManager(Context context, AttributeSet attributeSet, int i10, int i11) {
         RecyclerView.LayoutManager.Properties properties = RecyclerView.LayoutManager.getProperties(context, attributeSet, i10, i11);
-        setOrientation(properties.f4953a);
-        setSpanCount(properties.f4954b);
-        setReverseLayout(properties.f4955c);
-        this.f5026r = new k();
+        setOrientation(properties.f4963a);
+        setSpanCount(properties.f4964b);
+        setReverseLayout(properties.f4965c);
+        this.f5036r = new k();
         x();
     }
 
@@ -636,10 +636,10 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     private void E(RecyclerView.Recycler recycler, RecyclerView.State state, boolean z10) {
         int i10;
         int I = I(Integer.MIN_VALUE);
-        if (I != Integer.MIN_VALUE && (i10 = this.f5022i.i() - I) > 0) {
+        if (I != Integer.MIN_VALUE && (i10 = this.f5032i.i() - I) > 0) {
             int i11 = i10 - (-scrollBy(-i10, recycler, state));
             if (z10 && i11 > 0) {
-                this.f5022i.r(i11);
+                this.f5032i.r(i11);
             }
         }
     }
@@ -647,18 +647,18 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     private void F(RecyclerView.Recycler recycler, RecyclerView.State state, boolean z10) {
         int m10;
         int L = L(Integer.MAX_VALUE);
-        if (L != Integer.MAX_VALUE && (m10 = L - this.f5022i.m()) > 0) {
+        if (L != Integer.MAX_VALUE && (m10 = L - this.f5032i.m()) > 0) {
             int scrollBy = m10 - scrollBy(m10, recycler, state);
             if (z10 && scrollBy > 0) {
-                this.f5022i.r(-scrollBy);
+                this.f5032i.r(-scrollBy);
             }
         }
     }
 
     private int I(int i10) {
-        int l10 = this.f5021e[0].l(i10);
-        for (int i11 = 1; i11 < this.f5020d; i11++) {
-            int l11 = this.f5021e[i11].l(i10);
+        int l10 = this.f5031e[0].l(i10);
+        for (int i11 = 1; i11 < this.f5030d; i11++) {
+            int l11 = this.f5031e[i11].l(i10);
             if (l11 > l10) {
                 l10 = l11;
             }
@@ -667,9 +667,9 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     }
 
     private int J(int i10) {
-        int p10 = this.f5021e[0].p(i10);
-        for (int i11 = 1; i11 < this.f5020d; i11++) {
-            int p11 = this.f5021e[i11].p(i10);
+        int p10 = this.f5031e[0].p(i10);
+        for (int i11 = 1; i11 < this.f5030d; i11++) {
+            int p11 = this.f5031e[i11].p(i10);
             if (p11 > p10) {
                 p10 = p11;
             }
@@ -678,9 +678,9 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     }
 
     private int K(int i10) {
-        int l10 = this.f5021e[0].l(i10);
-        for (int i11 = 1; i11 < this.f5020d; i11++) {
-            int l11 = this.f5021e[i11].l(i10);
+        int l10 = this.f5031e[0].l(i10);
+        for (int i11 = 1; i11 < this.f5030d; i11++) {
+            int l11 = this.f5031e[i11].l(i10);
             if (l11 < l10) {
                 l10 = l11;
             }
@@ -689,9 +689,9 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     }
 
     private int L(int i10) {
-        int p10 = this.f5021e[0].p(i10);
-        for (int i11 = 1; i11 < this.f5020d; i11++) {
-            int p11 = this.f5021e[i11].p(i10);
+        int p10 = this.f5031e[0].p(i10);
+        for (int i11 = 1; i11 < this.f5030d; i11++) {
+            int p11 = this.f5031e[i11].p(i10);
             if (p11 < p10) {
                 p10 = p11;
             }
@@ -703,21 +703,21 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         int i10;
         int i11;
         int i12;
-        if (T(kVar.f5176e)) {
-            i11 = this.f5020d - 1;
+        if (T(kVar.f5186e)) {
+            i11 = this.f5030d - 1;
             i10 = -1;
             i12 = -1;
         } else {
-            i10 = this.f5020d;
+            i10 = this.f5030d;
             i11 = 0;
             i12 = 1;
         }
         f fVar = null;
-        if (kVar.f5176e == 1) {
-            int m10 = this.f5022i.m();
+        if (kVar.f5186e == 1) {
+            int m10 = this.f5032i.m();
             int i13 = Integer.MAX_VALUE;
             while (i11 != i10) {
-                f fVar2 = this.f5021e[i11];
+                f fVar2 = this.f5031e[i11];
                 int l10 = fVar2.l(m10);
                 if (l10 < i13) {
                     fVar = fVar2;
@@ -727,10 +727,10 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             }
             return fVar;
         }
-        int i14 = this.f5022i.i();
+        int i14 = this.f5032i.i();
         int i15 = Integer.MIN_VALUE;
         while (i11 != i10) {
-            f fVar3 = this.f5021e[i11];
+            f fVar3 = this.f5031e[i11];
             int p10 = fVar3.p(i14);
             if (p10 > i15) {
                 fVar = fVar3;
@@ -752,7 +752,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     private void N(int r7, int r8, int r9) {
         /*
             r6 = this;
-            boolean r0 = r6.f5028t
+            boolean r0 = r6.f5038t
             if (r0 == 0) goto L9
             int r0 = r6.H()
             goto Ld
@@ -774,7 +774,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             int r2 = r7 + r8
             goto L15
         L1e:
-            androidx.recyclerview.widget.StaggeredGridLayoutManager$d r4 = r6.f5032x
+            androidx.recyclerview.widget.StaggeredGridLayoutManager$d r4 = r6.f5042x
             r4.h(r3)
             r4 = 1
             if (r9 == r4) goto L3d
@@ -783,23 +783,23 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             if (r9 == r1) goto L2c
             goto L42
         L2c:
-            androidx.recyclerview.widget.StaggeredGridLayoutManager$d r9 = r6.f5032x
+            androidx.recyclerview.widget.StaggeredGridLayoutManager$d r9 = r6.f5042x
             r9.k(r7, r4)
-            androidx.recyclerview.widget.StaggeredGridLayoutManager$d r7 = r6.f5032x
+            androidx.recyclerview.widget.StaggeredGridLayoutManager$d r7 = r6.f5042x
             r7.j(r8, r4)
             goto L42
         L37:
-            androidx.recyclerview.widget.StaggeredGridLayoutManager$d r9 = r6.f5032x
+            androidx.recyclerview.widget.StaggeredGridLayoutManager$d r9 = r6.f5042x
             r9.k(r7, r8)
             goto L42
         L3d:
-            androidx.recyclerview.widget.StaggeredGridLayoutManager$d r9 = r6.f5032x
+            androidx.recyclerview.widget.StaggeredGridLayoutManager$d r9 = r6.f5042x
             r9.j(r7, r8)
         L42:
             if (r2 > r0) goto L45
             goto L57
         L45:
-            boolean r7 = r6.f5028t
+            boolean r7 = r6.f5038t
             if (r7 == 0) goto L4e
             int r7 = r6.G()
             goto L52
@@ -835,16 +835,16 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     }
 
     private void R(View view, c cVar, boolean z10) {
-        if (cVar.f5044q) {
-            if (this.f5024p == 1) {
+        if (cVar.f5054q) {
+            if (this.f5034p == 1) {
                 Q(view, this.C, RecyclerView.LayoutManager.getChildMeasureSpec(getHeight(), getHeightMode(), getPaddingTop() + getPaddingBottom(), ((ViewGroup.MarginLayoutParams) cVar).height, true), z10);
             } else {
                 Q(view, RecyclerView.LayoutManager.getChildMeasureSpec(getWidth(), getWidthMode(), getPaddingLeft() + getPaddingRight(), ((ViewGroup.MarginLayoutParams) cVar).width, true), this.C, z10);
             }
-        } else if (this.f5024p == 1) {
-            Q(view, RecyclerView.LayoutManager.getChildMeasureSpec(this.f5025q, getWidthMode(), 0, ((ViewGroup.MarginLayoutParams) cVar).width, false), RecyclerView.LayoutManager.getChildMeasureSpec(getHeight(), getHeightMode(), getPaddingTop() + getPaddingBottom(), ((ViewGroup.MarginLayoutParams) cVar).height, true), z10);
+        } else if (this.f5034p == 1) {
+            Q(view, RecyclerView.LayoutManager.getChildMeasureSpec(this.f5035q, getWidthMode(), 0, ((ViewGroup.MarginLayoutParams) cVar).width, false), RecyclerView.LayoutManager.getChildMeasureSpec(getHeight(), getHeightMode(), getPaddingTop() + getPaddingBottom(), ((ViewGroup.MarginLayoutParams) cVar).height, true), z10);
         } else {
-            Q(view, RecyclerView.LayoutManager.getChildMeasureSpec(getWidth(), getWidthMode(), getPaddingLeft() + getPaddingRight(), ((ViewGroup.MarginLayoutParams) cVar).width, true), RecyclerView.LayoutManager.getChildMeasureSpec(this.f5025q, getHeightMode(), 0, ((ViewGroup.MarginLayoutParams) cVar).height, false), z10);
+            Q(view, RecyclerView.LayoutManager.getChildMeasureSpec(getWidth(), getWidthMode(), getPaddingLeft() + getPaddingRight(), ((ViewGroup.MarginLayoutParams) cVar).width, true), RecyclerView.LayoutManager.getChildMeasureSpec(this.f5035q, getHeightMode(), 0, ((ViewGroup.MarginLayoutParams) cVar).height, false), z10);
         }
     }
 
@@ -867,13 +867,13 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         boolean z10;
         boolean z11;
         boolean z12;
-        if (this.f5024p == 0) {
+        if (this.f5034p == 0) {
             if (i10 == -1) {
                 z12 = true;
             } else {
                 z12 = false;
             }
-            if (z12 == this.f5028t) {
+            if (z12 == this.f5038t) {
                 return false;
             }
             return true;
@@ -883,7 +883,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         } else {
             z10 = false;
         }
-        if (z10 == this.f5028t) {
+        if (z10 == this.f5038t) {
             z11 = true;
         } else {
             z11 = false;
@@ -895,36 +895,36 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     }
 
     private void V(View view) {
-        for (int i10 = this.f5020d - 1; i10 >= 0; i10--) {
-            this.f5021e[i10].u(view);
+        for (int i10 = this.f5030d - 1; i10 >= 0; i10--) {
+            this.f5031e[i10].u(view);
         }
     }
 
     private void W(RecyclerView.Recycler recycler, k kVar) {
         int min;
         int min2;
-        if (kVar.f5172a && !kVar.f5180i) {
-            if (kVar.f5173b == 0) {
-                if (kVar.f5176e == -1) {
-                    X(recycler, kVar.f5178g);
+        if (kVar.f5182a && !kVar.f5190i) {
+            if (kVar.f5183b == 0) {
+                if (kVar.f5186e == -1) {
+                    X(recycler, kVar.f5188g);
                 } else {
-                    Y(recycler, kVar.f5177f);
+                    Y(recycler, kVar.f5187f);
                 }
-            } else if (kVar.f5176e == -1) {
-                int i10 = kVar.f5177f;
+            } else if (kVar.f5186e == -1) {
+                int i10 = kVar.f5187f;
                 int J = i10 - J(i10);
                 if (J < 0) {
-                    min2 = kVar.f5178g;
+                    min2 = kVar.f5188g;
                 } else {
-                    min2 = kVar.f5178g - Math.min(J, kVar.f5173b);
+                    min2 = kVar.f5188g - Math.min(J, kVar.f5183b);
                 }
                 X(recycler, min2);
             } else {
-                int K = K(kVar.f5178g) - kVar.f5178g;
+                int K = K(kVar.f5188g) - kVar.f5188g;
                 if (K < 0) {
-                    min = kVar.f5177f;
+                    min = kVar.f5187f;
                 } else {
-                    min = Math.min(K, kVar.f5173b) + kVar.f5177f;
+                    min = Math.min(K, kVar.f5183b) + kVar.f5187f;
                 }
                 Y(recycler, min);
             }
@@ -934,19 +934,19 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     private void X(RecyclerView.Recycler recycler, int i10) {
         for (int childCount = getChildCount() - 1; childCount >= 0; childCount--) {
             View childAt = getChildAt(childCount);
-            if (this.f5022i.g(childAt) >= i10 && this.f5022i.q(childAt) >= i10) {
+            if (this.f5032i.g(childAt) >= i10 && this.f5032i.q(childAt) >= i10) {
                 c cVar = (c) childAt.getLayoutParams();
-                if (cVar.f5044q) {
-                    for (int i11 = 0; i11 < this.f5020d; i11++) {
-                        if (this.f5021e[i11].f5061a.size() == 1) {
+                if (cVar.f5054q) {
+                    for (int i11 = 0; i11 < this.f5030d; i11++) {
+                        if (this.f5031e[i11].f5071a.size() == 1) {
                             return;
                         }
                     }
-                    for (int i12 = 0; i12 < this.f5020d; i12++) {
-                        this.f5021e[i12].s();
+                    for (int i12 = 0; i12 < this.f5030d; i12++) {
+                        this.f5031e[i12].s();
                     }
-                } else if (cVar.f5043p.f5061a.size() != 1) {
-                    cVar.f5043p.s();
+                } else if (cVar.f5053p.f5071a.size() != 1) {
+                    cVar.f5053p.s();
                 } else {
                     return;
                 }
@@ -960,19 +960,19 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     private void Y(RecyclerView.Recycler recycler, int i10) {
         while (getChildCount() > 0) {
             View childAt = getChildAt(0);
-            if (this.f5022i.d(childAt) <= i10 && this.f5022i.p(childAt) <= i10) {
+            if (this.f5032i.d(childAt) <= i10 && this.f5032i.p(childAt) <= i10) {
                 c cVar = (c) childAt.getLayoutParams();
-                if (cVar.f5044q) {
-                    for (int i11 = 0; i11 < this.f5020d; i11++) {
-                        if (this.f5021e[i11].f5061a.size() == 1) {
+                if (cVar.f5054q) {
+                    for (int i11 = 0; i11 < this.f5030d; i11++) {
+                        if (this.f5031e[i11].f5071a.size() == 1) {
                             return;
                         }
                     }
-                    for (int i12 = 0; i12 < this.f5020d; i12++) {
-                        this.f5021e[i12].t();
+                    for (int i12 = 0; i12 < this.f5030d; i12++) {
+                        this.f5031e[i12].t();
                     }
-                } else if (cVar.f5043p.f5061a.size() != 1) {
-                    cVar.f5043p.t();
+                } else if (cVar.f5053p.f5071a.size() != 1) {
+                    cVar.f5053p.t();
                 } else {
                     return;
                 }
@@ -984,39 +984,39 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     }
 
     private void Z() {
-        if (this.f5023o.k() != 1073741824) {
+        if (this.f5033o.k() != 1073741824) {
             int childCount = getChildCount();
             float f10 = 0.0f;
             for (int i10 = 0; i10 < childCount; i10++) {
                 View childAt = getChildAt(i10);
-                float e10 = this.f5023o.e(childAt);
+                float e10 = this.f5033o.e(childAt);
                 if (e10 >= f10) {
                     if (((c) childAt.getLayoutParams()).f()) {
-                        e10 = (e10 * 1.0f) / this.f5020d;
+                        e10 = (e10 * 1.0f) / this.f5030d;
                     }
                     f10 = Math.max(f10, e10);
                 }
             }
-            int i11 = this.f5025q;
-            int round = Math.round(f10 * this.f5020d);
-            if (this.f5023o.k() == Integer.MIN_VALUE) {
-                round = Math.min(round, this.f5023o.n());
+            int i11 = this.f5035q;
+            int round = Math.round(f10 * this.f5030d);
+            if (this.f5033o.k() == Integer.MIN_VALUE) {
+                round = Math.min(round, this.f5033o.n());
             }
             h0(round);
-            if (this.f5025q != i11) {
+            if (this.f5035q != i11) {
                 for (int i12 = 0; i12 < childCount; i12++) {
                     View childAt2 = getChildAt(i12);
                     c cVar = (c) childAt2.getLayoutParams();
-                    if (!cVar.f5044q) {
-                        if (isLayoutRTL() && this.f5024p == 1) {
-                            int i13 = this.f5020d;
-                            int i14 = cVar.f5043p.f5065e;
-                            childAt2.offsetLeftAndRight(((-((i13 - 1) - i14)) * this.f5025q) - ((-((i13 - 1) - i14)) * i11));
+                    if (!cVar.f5054q) {
+                        if (isLayoutRTL() && this.f5034p == 1) {
+                            int i13 = this.f5030d;
+                            int i14 = cVar.f5053p.f5075e;
+                            childAt2.offsetLeftAndRight(((-((i13 - 1) - i14)) * this.f5035q) - ((-((i13 - 1) - i14)) * i11));
                         } else {
-                            int i15 = cVar.f5043p.f5065e;
-                            int i16 = this.f5025q * i15;
+                            int i15 = cVar.f5053p.f5075e;
+                            int i16 = this.f5035q * i15;
                             int i17 = i15 * i11;
-                            if (this.f5024p == 1) {
+                            if (this.f5034p == 1) {
                                 childAt2.offsetLeftAndRight(i16 - i17);
                             } else {
                                 childAt2.offsetTopAndBottom(i16 - i17);
@@ -1029,18 +1029,18 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     }
 
     private void a0() {
-        if (this.f5024p != 1 && isLayoutRTL()) {
-            this.f5028t = !this.f5027s;
+        if (this.f5034p != 1 && isLayoutRTL()) {
+            this.f5038t = !this.f5037s;
         } else {
-            this.f5028t = this.f5027s;
+            this.f5038t = this.f5037s;
         }
     }
 
     private void b0(int i10) {
         boolean z10;
-        k kVar = this.f5026r;
-        kVar.f5176e = i10;
-        boolean z11 = this.f5028t;
+        k kVar = this.f5036r;
+        kVar.f5186e = i10;
+        boolean z11 = this.f5038t;
         int i11 = 1;
         if (i10 == -1) {
             z10 = true;
@@ -1050,13 +1050,13 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         if (z11 != z10) {
             i11 = -1;
         }
-        kVar.f5175d = i11;
+        kVar.f5185d = i11;
     }
 
     private void c0(int i10, int i11) {
-        for (int i12 = 0; i12 < this.f5020d; i12++) {
-            if (!this.f5021e[i12].f5061a.isEmpty()) {
-                i0(this.f5021e[i12], i10, i11);
+        for (int i12 = 0; i12 < this.f5030d; i12++) {
+            if (!this.f5031e[i12].f5071a.isEmpty()) {
+                i0(this.f5031e[i12], i10, i11);
             }
         }
     }
@@ -1067,31 +1067,31 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
                 if (i10 != 17) {
                     if (i10 != 33) {
                         if (i10 != 66) {
-                            if (i10 == 130 && this.f5024p == 1) {
+                            if (i10 == 130 && this.f5034p == 1) {
                                 return 1;
                             }
                             return Integer.MIN_VALUE;
-                        } else if (this.f5024p == 0) {
+                        } else if (this.f5034p == 0) {
                             return 1;
                         } else {
                             return Integer.MIN_VALUE;
                         }
-                    } else if (this.f5024p == 1) {
+                    } else if (this.f5034p == 1) {
                         return -1;
                     } else {
                         return Integer.MIN_VALUE;
                     }
-                } else if (this.f5024p == 0) {
+                } else if (this.f5034p == 0) {
                     return -1;
                 } else {
                     return Integer.MIN_VALUE;
                 }
-            } else if (this.f5024p != 1 && isLayoutRTL()) {
+            } else if (this.f5034p != 1 && isLayoutRTL()) {
                 return -1;
             } else {
                 return 1;
             }
-        } else if (this.f5024p == 1 || !isLayoutRTL()) {
+        } else if (this.f5034p == 1 || !isLayoutRTL()) {
             return -1;
         } else {
             return 1;
@@ -1100,13 +1100,13 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
 
     private boolean d0(RecyclerView.State state, b bVar) {
         int z10;
-        if (this.f5034z) {
+        if (this.f5044z) {
             z10 = D(state.b());
         } else {
             z10 = z(state.b());
         }
-        bVar.f5036a = z10;
-        bVar.f5037b = Integer.MIN_VALUE;
+        bVar.f5046a = z10;
+        bVar.f5047b = Integer.MIN_VALUE;
         return true;
     }
 
@@ -1115,22 +1115,22 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         int i12;
         int c10;
         boolean z10;
-        k kVar = this.f5026r;
+        k kVar = this.f5036r;
         boolean z11 = false;
-        kVar.f5173b = 0;
-        kVar.f5174c = i10;
+        kVar.f5183b = 0;
+        kVar.f5184c = i10;
         if (isSmoothScrolling() && (c10 = state.c()) != -1) {
-            boolean z12 = this.f5028t;
+            boolean z12 = this.f5038t;
             if (c10 < i10) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             if (z12 == z10) {
-                i11 = this.f5022i.n();
+                i11 = this.f5032i.n();
                 i12 = 0;
             } else {
-                i12 = this.f5022i.n();
+                i12 = this.f5032i.n();
                 i11 = 0;
             }
         } else {
@@ -1138,29 +1138,29 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             i12 = 0;
         }
         if (getClipToPadding()) {
-            this.f5026r.f5177f = this.f5022i.m() - i12;
-            this.f5026r.f5178g = this.f5022i.i() + i11;
+            this.f5036r.f5187f = this.f5032i.m() - i12;
+            this.f5036r.f5188g = this.f5032i.i() + i11;
         } else {
-            this.f5026r.f5178g = this.f5022i.h() + i11;
-            this.f5026r.f5177f = -i12;
+            this.f5036r.f5188g = this.f5032i.h() + i11;
+            this.f5036r.f5187f = -i12;
         }
-        k kVar2 = this.f5026r;
-        kVar2.f5179h = false;
-        kVar2.f5172a = true;
-        if (this.f5022i.k() == 0 && this.f5022i.h() == 0) {
+        k kVar2 = this.f5036r;
+        kVar2.f5189h = false;
+        kVar2.f5182a = true;
+        if (this.f5032i.k() == 0 && this.f5032i.h() == 0) {
             z11 = true;
         }
-        kVar2.f5180i = z11;
+        kVar2.f5190i = z11;
     }
 
     private void i0(f fVar, int i10, int i11) {
         int j10 = fVar.j();
         if (i10 == -1) {
             if (fVar.o() + j10 <= i11) {
-                this.f5029u.set(fVar.f5065e, false);
+                this.f5039u.set(fVar.f5075e, false);
             }
         } else if (fVar.k() - j10 >= i11) {
-            this.f5029u.set(fVar.f5065e, false);
+            this.f5039u.set(fVar.f5075e, false);
         }
     }
 
@@ -1173,74 +1173,74 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     }
 
     private void k(View view) {
-        for (int i10 = this.f5020d - 1; i10 >= 0; i10--) {
-            this.f5021e[i10].a(view);
+        for (int i10 = this.f5030d - 1; i10 >= 0; i10--) {
+            this.f5031e[i10].a(view);
         }
     }
 
     private void l(b bVar) {
         int m10;
         e eVar = this.B;
-        int i10 = eVar.f5053i;
+        int i10 = eVar.f5063i;
         if (i10 > 0) {
-            if (i10 == this.f5020d) {
-                for (int i11 = 0; i11 < this.f5020d; i11++) {
-                    this.f5021e[i11].e();
+            if (i10 == this.f5030d) {
+                for (int i11 = 0; i11 < this.f5030d; i11++) {
+                    this.f5031e[i11].e();
                     e eVar2 = this.B;
-                    int i12 = eVar2.f5054o[i11];
+                    int i12 = eVar2.f5064o[i11];
                     if (i12 != Integer.MIN_VALUE) {
-                        if (eVar2.f5059t) {
-                            m10 = this.f5022i.i();
+                        if (eVar2.f5069t) {
+                            m10 = this.f5032i.i();
                         } else {
-                            m10 = this.f5022i.m();
+                            m10 = this.f5032i.m();
                         }
                         i12 += m10;
                     }
-                    this.f5021e[i11].v(i12);
+                    this.f5031e[i11].v(i12);
                 }
             } else {
                 eVar.b();
                 e eVar3 = this.B;
-                eVar3.f5051d = eVar3.f5052e;
+                eVar3.f5061d = eVar3.f5062e;
             }
         }
         e eVar4 = this.B;
-        this.A = eVar4.f5060u;
-        setReverseLayout(eVar4.f5058s);
+        this.A = eVar4.f5070u;
+        setReverseLayout(eVar4.f5068s);
         a0();
         e eVar5 = this.B;
-        int i13 = eVar5.f5051d;
+        int i13 = eVar5.f5061d;
         if (i13 != -1) {
-            this.f5030v = i13;
-            bVar.f5038c = eVar5.f5059t;
+            this.f5040v = i13;
+            bVar.f5048c = eVar5.f5069t;
         } else {
-            bVar.f5038c = this.f5028t;
+            bVar.f5048c = this.f5038t;
         }
-        if (eVar5.f5055p > 1) {
-            d dVar = this.f5032x;
-            dVar.f5045a = eVar5.f5056q;
-            dVar.f5046b = eVar5.f5057r;
+        if (eVar5.f5065p > 1) {
+            d dVar = this.f5042x;
+            dVar.f5055a = eVar5.f5066q;
+            dVar.f5056b = eVar5.f5067r;
         }
     }
 
     private void o(View view, c cVar, k kVar) {
-        if (kVar.f5176e == 1) {
-            if (cVar.f5044q) {
+        if (kVar.f5186e == 1) {
+            if (cVar.f5054q) {
                 k(view);
             } else {
-                cVar.f5043p.a(view);
+                cVar.f5053p.a(view);
             }
-        } else if (cVar.f5044q) {
+        } else if (cVar.f5054q) {
             V(view);
         } else {
-            cVar.f5043p.u(view);
+            cVar.f5053p.u(view);
         }
     }
 
     private int p(int i10) {
         boolean z10;
         if (getChildCount() == 0) {
-            if (!this.f5028t) {
+            if (!this.f5038t) {
                 return -1;
             }
             return 1;
@@ -1250,7 +1250,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         } else {
             z10 = false;
         }
-        if (z10 != this.f5028t) {
+        if (z10 != this.f5038t) {
             return -1;
         }
         return 1;
@@ -1258,16 +1258,16 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
 
     private boolean r(f fVar) {
         boolean z10;
-        if (this.f5028t) {
-            if (fVar.k() < this.f5022i.i()) {
-                ArrayList arrayList = fVar.f5061a;
-                z10 = fVar.n((View) arrayList.get(arrayList.size() - 1)).f5044q;
+        if (this.f5038t) {
+            if (fVar.k() < this.f5032i.i()) {
+                ArrayList arrayList = fVar.f5071a;
+                z10 = fVar.n((View) arrayList.get(arrayList.size() - 1)).f5054q;
                 return !z10;
             }
             return false;
         }
-        if (fVar.o() > this.f5022i.m()) {
-            z10 = fVar.n((View) fVar.f5061a.get(0)).f5044q;
+        if (fVar.o() > this.f5032i.m()) {
+            z10 = fVar.n((View) fVar.f5071a.get(0)).f5054q;
             return !z10;
         }
         return false;
@@ -1277,44 +1277,44 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         if (getChildCount() == 0) {
             return 0;
         }
-        return p.a(state, this.f5022i, B(!this.G), A(!this.G), this, this.G);
+        return p.a(state, this.f5032i, B(!this.G), A(!this.G), this, this.G);
     }
 
     private int t(RecyclerView.State state) {
         if (getChildCount() == 0) {
             return 0;
         }
-        return p.b(state, this.f5022i, B(!this.G), A(!this.G), this, this.G, this.f5028t);
+        return p.b(state, this.f5032i, B(!this.G), A(!this.G), this, this.G, this.f5038t);
     }
 
     private int u(RecyclerView.State state) {
         if (getChildCount() == 0) {
             return 0;
         }
-        return p.c(state, this.f5022i, B(!this.G), A(!this.G), this, this.G);
+        return p.c(state, this.f5032i, B(!this.G), A(!this.G), this, this.G);
     }
 
     private d.a v(int i10) {
         d.a aVar = new d.a();
-        aVar.f5049i = new int[this.f5020d];
-        for (int i11 = 0; i11 < this.f5020d; i11++) {
-            aVar.f5049i[i11] = i10 - this.f5021e[i11].l(i10);
+        aVar.f5059i = new int[this.f5030d];
+        for (int i11 = 0; i11 < this.f5030d; i11++) {
+            aVar.f5059i[i11] = i10 - this.f5031e[i11].l(i10);
         }
         return aVar;
     }
 
     private d.a w(int i10) {
         d.a aVar = new d.a();
-        aVar.f5049i = new int[this.f5020d];
-        for (int i11 = 0; i11 < this.f5020d; i11++) {
-            aVar.f5049i[i11] = this.f5021e[i11].p(i10) - i10;
+        aVar.f5059i = new int[this.f5030d];
+        for (int i11 = 0; i11 < this.f5030d; i11++) {
+            aVar.f5059i[i11] = this.f5031e[i11].p(i10) - i10;
         }
         return aVar;
     }
 
     private void x() {
-        this.f5022i = OrientationHelper.b(this, this.f5024p);
-        this.f5023o = OrientationHelper.b(this, 1 - this.f5024p);
+        this.f5032i = OrientationHelper.b(this, this.f5034p);
+        this.f5033o = OrientationHelper.b(this, 1 - this.f5034p);
     }
 
     /* JADX WARN: Type inference failed for: r8v0 */
@@ -1335,152 +1335,152 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         boolean n10;
         StaggeredGridLayoutManager staggeredGridLayoutManager = this;
         ?? r82 = 0;
-        staggeredGridLayoutManager.f5029u.set(0, staggeredGridLayoutManager.f5020d, true);
-        if (staggeredGridLayoutManager.f5026r.f5180i) {
-            if (kVar.f5176e == 1) {
+        staggeredGridLayoutManager.f5039u.set(0, staggeredGridLayoutManager.f5030d, true);
+        if (staggeredGridLayoutManager.f5036r.f5190i) {
+            if (kVar.f5186e == 1) {
                 i10 = Integer.MAX_VALUE;
             } else {
                 i10 = Integer.MIN_VALUE;
             }
-        } else if (kVar.f5176e == 1) {
-            i10 = kVar.f5178g + kVar.f5173b;
+        } else if (kVar.f5186e == 1) {
+            i10 = kVar.f5188g + kVar.f5183b;
         } else {
-            i10 = kVar.f5177f - kVar.f5173b;
+            i10 = kVar.f5187f - kVar.f5183b;
         }
         int i13 = i10;
-        staggeredGridLayoutManager.c0(kVar.f5176e, i13);
-        if (staggeredGridLayoutManager.f5028t) {
-            m10 = staggeredGridLayoutManager.f5022i.i();
+        staggeredGridLayoutManager.c0(kVar.f5186e, i13);
+        if (staggeredGridLayoutManager.f5038t) {
+            m10 = staggeredGridLayoutManager.f5032i.i();
         } else {
-            m10 = staggeredGridLayoutManager.f5022i.m();
+            m10 = staggeredGridLayoutManager.f5032i.m();
         }
         int i14 = m10;
         boolean z11 = false;
-        while (kVar.a(state) && (staggeredGridLayoutManager.f5026r.f5180i || !staggeredGridLayoutManager.f5029u.isEmpty())) {
+        while (kVar.a(state) && (staggeredGridLayoutManager.f5036r.f5190i || !staggeredGridLayoutManager.f5039u.isEmpty())) {
             View b10 = kVar.b(recycler);
             c cVar = (c) b10.getLayoutParams();
             int a10 = cVar.a();
-            int g10 = staggeredGridLayoutManager.f5032x.g(a10);
+            int g10 = staggeredGridLayoutManager.f5042x.g(a10);
             if (g10 == -1) {
                 z10 = true;
             } else {
                 z10 = r82;
             }
             if (z10) {
-                if (cVar.f5044q) {
-                    fVar = staggeredGridLayoutManager.f5021e[r82];
+                if (cVar.f5054q) {
+                    fVar = staggeredGridLayoutManager.f5031e[r82];
                 } else {
                     fVar = staggeredGridLayoutManager.M(kVar);
                 }
-                staggeredGridLayoutManager.f5032x.n(a10, fVar);
+                staggeredGridLayoutManager.f5042x.n(a10, fVar);
             } else {
-                fVar = staggeredGridLayoutManager.f5021e[g10];
+                fVar = staggeredGridLayoutManager.f5031e[g10];
             }
             f fVar2 = fVar;
-            cVar.f5043p = fVar2;
-            if (kVar.f5176e == 1) {
+            cVar.f5053p = fVar2;
+            if (kVar.f5186e == 1) {
                 staggeredGridLayoutManager.addView(b10);
             } else {
                 staggeredGridLayoutManager.addView(b10, r82);
             }
             staggeredGridLayoutManager.R(b10, cVar, r82);
-            if (kVar.f5176e == 1) {
-                if (cVar.f5044q) {
+            if (kVar.f5186e == 1) {
+                if (cVar.f5054q) {
                     e10 = staggeredGridLayoutManager.I(i14);
                 } else {
                     e10 = fVar2.l(i14);
                 }
-                i11 = staggeredGridLayoutManager.f5022i.e(b10) + e10;
-                if (z10 && cVar.f5044q) {
+                i11 = staggeredGridLayoutManager.f5032i.e(b10) + e10;
+                if (z10 && cVar.f5054q) {
                     d.a v10 = staggeredGridLayoutManager.v(e10);
-                    v10.f5048e = -1;
-                    v10.f5047d = a10;
-                    staggeredGridLayoutManager.f5032x.a(v10);
+                    v10.f5058e = -1;
+                    v10.f5057d = a10;
+                    staggeredGridLayoutManager.f5042x.a(v10);
                 }
             } else {
-                if (cVar.f5044q) {
+                if (cVar.f5054q) {
                     p10 = staggeredGridLayoutManager.L(i14);
                 } else {
                     p10 = fVar2.p(i14);
                 }
                 i11 = p10;
-                e10 = i11 - staggeredGridLayoutManager.f5022i.e(b10);
-                if (z10 && cVar.f5044q) {
+                e10 = i11 - staggeredGridLayoutManager.f5032i.e(b10);
+                if (z10 && cVar.f5054q) {
                     d.a w10 = staggeredGridLayoutManager.w(i11);
-                    w10.f5048e = 1;
-                    w10.f5047d = a10;
-                    staggeredGridLayoutManager.f5032x.a(w10);
+                    w10.f5058e = 1;
+                    w10.f5057d = a10;
+                    staggeredGridLayoutManager.f5042x.a(w10);
                 }
             }
-            if (cVar.f5044q && kVar.f5175d == -1) {
+            if (cVar.f5054q && kVar.f5185d == -1) {
                 if (z10) {
                     staggeredGridLayoutManager.F = true;
                 } else {
-                    if (kVar.f5176e == 1) {
+                    if (kVar.f5186e == 1) {
                         n10 = staggeredGridLayoutManager.m();
                     } else {
                         n10 = staggeredGridLayoutManager.n();
                     }
                     if (!n10) {
-                        d.a f10 = staggeredGridLayoutManager.f5032x.f(a10);
+                        d.a f10 = staggeredGridLayoutManager.f5042x.f(a10);
                         if (f10 != null) {
-                            f10.f5050o = true;
+                            f10.f5060o = true;
                         }
                         staggeredGridLayoutManager.F = true;
                     }
                 }
             }
             staggeredGridLayoutManager.o(b10, cVar, kVar);
-            if (staggeredGridLayoutManager.isLayoutRTL() && staggeredGridLayoutManager.f5024p == 1) {
-                if (cVar.f5044q) {
-                    e11 = staggeredGridLayoutManager.f5023o.i();
+            if (staggeredGridLayoutManager.isLayoutRTL() && staggeredGridLayoutManager.f5034p == 1) {
+                if (cVar.f5054q) {
+                    e11 = staggeredGridLayoutManager.f5033o.i();
                 } else {
-                    e11 = staggeredGridLayoutManager.f5023o.i() - (((staggeredGridLayoutManager.f5020d - 1) - fVar2.f5065e) * staggeredGridLayoutManager.f5025q);
+                    e11 = staggeredGridLayoutManager.f5033o.i() - (((staggeredGridLayoutManager.f5030d - 1) - fVar2.f5075e) * staggeredGridLayoutManager.f5035q);
                 }
-                i12 = e11 - staggeredGridLayoutManager.f5023o.e(b10);
+                i12 = e11 - staggeredGridLayoutManager.f5033o.e(b10);
             } else {
-                if (cVar.f5044q) {
-                    m11 = staggeredGridLayoutManager.f5023o.m();
+                if (cVar.f5054q) {
+                    m11 = staggeredGridLayoutManager.f5033o.m();
                 } else {
-                    m11 = (fVar2.f5065e * staggeredGridLayoutManager.f5025q) + staggeredGridLayoutManager.f5023o.m();
+                    m11 = (fVar2.f5075e * staggeredGridLayoutManager.f5035q) + staggeredGridLayoutManager.f5033o.m();
                 }
                 i12 = m11;
-                e11 = staggeredGridLayoutManager.f5023o.e(b10) + i12;
+                e11 = staggeredGridLayoutManager.f5033o.e(b10) + i12;
             }
             int i15 = e11;
             int i16 = i12;
-            if (staggeredGridLayoutManager.f5024p == 1) {
+            if (staggeredGridLayoutManager.f5034p == 1) {
                 staggeredGridLayoutManager.layoutDecoratedWithMargins(b10, i16, e10, i15, i11);
                 staggeredGridLayoutManager = this;
             } else {
                 staggeredGridLayoutManager.layoutDecoratedWithMargins(b10, e10, i16, i11, i15);
             }
-            if (cVar.f5044q) {
-                staggeredGridLayoutManager.c0(staggeredGridLayoutManager.f5026r.f5176e, i13);
+            if (cVar.f5054q) {
+                staggeredGridLayoutManager.c0(staggeredGridLayoutManager.f5036r.f5186e, i13);
             } else {
-                staggeredGridLayoutManager.i0(fVar2, staggeredGridLayoutManager.f5026r.f5176e, i13);
+                staggeredGridLayoutManager.i0(fVar2, staggeredGridLayoutManager.f5036r.f5186e, i13);
             }
-            staggeredGridLayoutManager.W(recycler, staggeredGridLayoutManager.f5026r);
-            if (staggeredGridLayoutManager.f5026r.f5179h && b10.hasFocusable()) {
-                if (cVar.f5044q) {
-                    staggeredGridLayoutManager.f5029u.clear();
+            staggeredGridLayoutManager.W(recycler, staggeredGridLayoutManager.f5036r);
+            if (staggeredGridLayoutManager.f5036r.f5189h && b10.hasFocusable()) {
+                if (cVar.f5054q) {
+                    staggeredGridLayoutManager.f5039u.clear();
                 } else {
-                    staggeredGridLayoutManager.f5029u.set(fVar2.f5065e, false);
+                    staggeredGridLayoutManager.f5039u.set(fVar2.f5075e, false);
                 }
             }
             z11 = true;
             r82 = 0;
         }
         if (!z11) {
-            staggeredGridLayoutManager.W(recycler, staggeredGridLayoutManager.f5026r);
+            staggeredGridLayoutManager.W(recycler, staggeredGridLayoutManager.f5036r);
         }
-        if (staggeredGridLayoutManager.f5026r.f5176e == -1) {
-            I = staggeredGridLayoutManager.f5022i.m() - staggeredGridLayoutManager.L(staggeredGridLayoutManager.f5022i.m());
+        if (staggeredGridLayoutManager.f5036r.f5186e == -1) {
+            I = staggeredGridLayoutManager.f5032i.m() - staggeredGridLayoutManager.L(staggeredGridLayoutManager.f5032i.m());
         } else {
-            I = staggeredGridLayoutManager.I(staggeredGridLayoutManager.f5022i.i()) - staggeredGridLayoutManager.f5022i.i();
+            I = staggeredGridLayoutManager.I(staggeredGridLayoutManager.f5032i.i()) - staggeredGridLayoutManager.f5032i.i();
         }
         if (I > 0) {
-            return Math.min(kVar.f5173b, I);
+            return Math.min(kVar.f5183b, I);
         }
         return 0;
     }
@@ -1497,13 +1497,13 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     }
 
     View A(boolean z10) {
-        int m10 = this.f5022i.m();
-        int i10 = this.f5022i.i();
+        int m10 = this.f5032i.m();
+        int i10 = this.f5032i.i();
         View view = null;
         for (int childCount = getChildCount() - 1; childCount >= 0; childCount--) {
             View childAt = getChildAt(childCount);
-            int g10 = this.f5022i.g(childAt);
-            int d10 = this.f5022i.d(childAt);
+            int g10 = this.f5032i.g(childAt);
+            int d10 = this.f5032i.d(childAt);
             if (d10 > m10 && g10 < i10) {
                 if (d10 > i10 && z10) {
                     if (view == null) {
@@ -1518,14 +1518,14 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     }
 
     View B(boolean z10) {
-        int m10 = this.f5022i.m();
-        int i10 = this.f5022i.i();
+        int m10 = this.f5032i.m();
+        int i10 = this.f5032i.i();
         int childCount = getChildCount();
         View view = null;
         for (int i11 = 0; i11 < childCount; i11++) {
             View childAt = getChildAt(i11);
-            int g10 = this.f5022i.g(childAt);
-            if (this.f5022i.d(childAt) > m10 && g10 < i10) {
+            int g10 = this.f5032i.g(childAt);
+            if (this.f5032i.d(childAt) > m10 && g10 < i10) {
                 if (g10 < m10 && z10) {
                     if (view == null) {
                         view = childAt;
@@ -1540,7 +1540,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
 
     int C() {
         View B;
-        if (this.f5028t) {
+        if (this.f5038t) {
             B = A(true);
         } else {
             B = B(true);
@@ -1582,13 +1582,13 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             int r0 = r12.getChildCount()
             int r1 = r0 + (-1)
             java.util.BitSet r2 = new java.util.BitSet
-            int r3 = r12.f5020d
+            int r3 = r12.f5030d
             r2.<init>(r3)
-            int r3 = r12.f5020d
+            int r3 = r12.f5030d
             r4 = 0
             r5 = 1
             r2.set(r4, r3, r5)
-            int r3 = r12.f5024p
+            int r3 = r12.f5034p
             r6 = -1
             if (r3 != r5) goto L21
             boolean r3 = r12.isLayoutRTL()
@@ -1598,7 +1598,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         L21:
             r3 = r6
         L22:
-            boolean r7 = r12.f5028t
+            boolean r7 = r12.f5038t
             if (r7 == 0) goto L28
             r0 = r6
             goto L29
@@ -1612,31 +1612,31 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             android.view.View r7 = r12.getChildAt(r1)
             android.view.ViewGroup$LayoutParams r8 = r7.getLayoutParams()
             androidx.recyclerview.widget.StaggeredGridLayoutManager$c r8 = (androidx.recyclerview.widget.StaggeredGridLayoutManager.c) r8
-            androidx.recyclerview.widget.StaggeredGridLayoutManager$f r9 = r8.f5043p
-            int r9 = r9.f5065e
+            androidx.recyclerview.widget.StaggeredGridLayoutManager$f r9 = r8.f5053p
+            int r9 = r9.f5075e
             boolean r9 = r2.get(r9)
             if (r9 == 0) goto L52
-            androidx.recyclerview.widget.StaggeredGridLayoutManager$f r9 = r8.f5043p
+            androidx.recyclerview.widget.StaggeredGridLayoutManager$f r9 = r8.f5053p
             boolean r9 = r12.r(r9)
             if (r9 == 0) goto L4b
             goto La1
         L4b:
-            androidx.recyclerview.widget.StaggeredGridLayoutManager$f r9 = r8.f5043p
-            int r9 = r9.f5065e
+            androidx.recyclerview.widget.StaggeredGridLayoutManager$f r9 = r8.f5053p
+            int r9 = r9.f5075e
             r2.clear(r9)
         L52:
-            boolean r9 = r8.f5044q
+            boolean r9 = r8.f5054q
             if (r9 == 0) goto L57
             goto La2
         L57:
             int r9 = r1 + r6
             if (r9 == r0) goto La2
             android.view.View r9 = r12.getChildAt(r9)
-            boolean r10 = r12.f5028t
+            boolean r10 = r12.f5038t
             if (r10 == 0) goto L75
-            androidx.recyclerview.widget.OrientationHelper r10 = r12.f5022i
+            androidx.recyclerview.widget.OrientationHelper r10 = r12.f5032i
             int r10 = r10.d(r7)
-            androidx.recyclerview.widget.OrientationHelper r11 = r12.f5022i
+            androidx.recyclerview.widget.OrientationHelper r11 = r12.f5032i
             int r11 = r11.d(r9)
             if (r10 >= r11) goto L72
             goto La1
@@ -1644,9 +1644,9 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             if (r10 != r11) goto La2
             goto L86
         L75:
-            androidx.recyclerview.widget.OrientationHelper r10 = r12.f5022i
+            androidx.recyclerview.widget.OrientationHelper r10 = r12.f5032i
             int r10 = r10.g(r7)
-            androidx.recyclerview.widget.OrientationHelper r11 = r12.f5022i
+            androidx.recyclerview.widget.OrientationHelper r11 = r12.f5032i
             int r11 = r11.g(r9)
             if (r10 <= r11) goto L84
             goto La1
@@ -1655,10 +1655,10 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         L86:
             android.view.ViewGroup$LayoutParams r9 = r9.getLayoutParams()
             androidx.recyclerview.widget.StaggeredGridLayoutManager$c r9 = (androidx.recyclerview.widget.StaggeredGridLayoutManager.c) r9
-            androidx.recyclerview.widget.StaggeredGridLayoutManager$f r8 = r8.f5043p
-            int r8 = r8.f5065e
-            androidx.recyclerview.widget.StaggeredGridLayoutManager$f r9 = r9.f5043p
-            int r9 = r9.f5065e
+            androidx.recyclerview.widget.StaggeredGridLayoutManager$f r8 = r8.f5053p
+            int r8 = r8.f5075e
+            androidx.recyclerview.widget.StaggeredGridLayoutManager$f r9 = r9.f5053p
+            int r9 = r9.f5075e
             int r8 = r8 - r9
             if (r8 >= 0) goto L99
             r8 = r5
@@ -1686,7 +1686,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     }
 
     public void P() {
-        this.f5032x.b();
+        this.f5042x.b();
         requestLayout();
     }
 
@@ -1700,12 +1700,12 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             G = G();
             i11 = -1;
         }
-        this.f5026r.f5172a = true;
+        this.f5036r.f5182a = true;
         g0(G, state);
         b0(i11);
-        k kVar = this.f5026r;
-        kVar.f5174c = G + kVar.f5175d;
-        kVar.f5173b = Math.abs(i10);
+        k kVar = this.f5036r;
+        kVar.f5184c = G + kVar.f5185d;
+        kVar.f5183b = Math.abs(i10);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
@@ -1717,7 +1717,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public boolean canScrollHorizontally() {
-        if (this.f5024p == 0) {
+        if (this.f5034p == 0) {
             return true;
         }
         return false;
@@ -1725,7 +1725,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public boolean canScrollVertically() {
-        if (this.f5024p == 1) {
+        if (this.f5034p == 1) {
             return true;
         }
         return false;
@@ -1740,24 +1740,24 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     public void collectAdjacentPrefetchPositions(int i10, int i11, RecyclerView.State state, RecyclerView.LayoutManager.LayoutPrefetchRegistry layoutPrefetchRegistry) {
         int l10;
         int i12;
-        if (this.f5024p != 0) {
+        if (this.f5034p != 0) {
             i10 = i11;
         }
         if (getChildCount() != 0 && i10 != 0) {
             U(i10, state);
             int[] iArr = this.H;
-            if (iArr == null || iArr.length < this.f5020d) {
-                this.H = new int[this.f5020d];
+            if (iArr == null || iArr.length < this.f5030d) {
+                this.H = new int[this.f5030d];
             }
             int i13 = 0;
-            for (int i14 = 0; i14 < this.f5020d; i14++) {
-                k kVar = this.f5026r;
-                if (kVar.f5175d == -1) {
-                    l10 = kVar.f5177f;
-                    i12 = this.f5021e[i14].p(l10);
+            for (int i14 = 0; i14 < this.f5030d; i14++) {
+                k kVar = this.f5036r;
+                if (kVar.f5185d == -1) {
+                    l10 = kVar.f5187f;
+                    i12 = this.f5031e[i14].p(l10);
                 } else {
-                    l10 = this.f5021e[i14].l(kVar.f5178g);
-                    i12 = this.f5026r.f5178g;
+                    l10 = this.f5031e[i14].l(kVar.f5188g);
+                    i12 = this.f5036r.f5188g;
                 }
                 int i15 = l10 - i12;
                 if (i15 >= 0) {
@@ -1766,10 +1766,10 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
                 }
             }
             Arrays.sort(this.H, 0, i13);
-            for (int i16 = 0; i16 < i13 && this.f5026r.a(state); i16++) {
-                layoutPrefetchRegistry.a(this.f5026r.f5174c, this.H[i16]);
-                k kVar2 = this.f5026r;
-                kVar2.f5174c += kVar2.f5175d;
+            for (int i16 = 0; i16 < i13 && this.f5036r.a(state); i16++) {
+                layoutPrefetchRegistry.a(this.f5036r.f5184c, this.H[i16]);
+                k kVar2 = this.f5036r;
+                kVar2.f5184c += kVar2.f5185d;
             }
         }
     }
@@ -1796,7 +1796,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         if (p10 == 0) {
             return null;
         }
-        if (this.f5024p == 0) {
+        if (this.f5034p == 0) {
             pointF.x = p10;
             pointF.y = 0.0f;
             return pointF;
@@ -1826,69 +1826,69 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         int G;
         int m10;
         boolean z10 = false;
-        if (!state.e() && (i10 = this.f5030v) != -1) {
+        if (!state.e() && (i10 = this.f5040v) != -1) {
             if (i10 >= 0 && i10 < state.b()) {
                 e eVar = this.B;
-                if (eVar != null && eVar.f5051d != -1 && eVar.f5053i >= 1) {
-                    bVar.f5037b = Integer.MIN_VALUE;
-                    bVar.f5036a = this.f5030v;
+                if (eVar != null && eVar.f5061d != -1 && eVar.f5063i >= 1) {
+                    bVar.f5047b = Integer.MIN_VALUE;
+                    bVar.f5046a = this.f5040v;
                 } else {
-                    View findViewByPosition = findViewByPosition(this.f5030v);
+                    View findViewByPosition = findViewByPosition(this.f5040v);
                     if (findViewByPosition != null) {
-                        if (this.f5028t) {
+                        if (this.f5038t) {
                             G = H();
                         } else {
                             G = G();
                         }
-                        bVar.f5036a = G;
-                        if (this.f5031w != Integer.MIN_VALUE) {
-                            if (bVar.f5038c) {
-                                bVar.f5037b = (this.f5022i.i() - this.f5031w) - this.f5022i.d(findViewByPosition);
+                        bVar.f5046a = G;
+                        if (this.f5041w != Integer.MIN_VALUE) {
+                            if (bVar.f5048c) {
+                                bVar.f5047b = (this.f5032i.i() - this.f5041w) - this.f5032i.d(findViewByPosition);
                             } else {
-                                bVar.f5037b = (this.f5022i.m() + this.f5031w) - this.f5022i.g(findViewByPosition);
+                                bVar.f5047b = (this.f5032i.m() + this.f5041w) - this.f5032i.g(findViewByPosition);
                             }
                             return true;
-                        } else if (this.f5022i.e(findViewByPosition) > this.f5022i.n()) {
-                            if (bVar.f5038c) {
-                                m10 = this.f5022i.i();
+                        } else if (this.f5032i.e(findViewByPosition) > this.f5032i.n()) {
+                            if (bVar.f5048c) {
+                                m10 = this.f5032i.i();
                             } else {
-                                m10 = this.f5022i.m();
+                                m10 = this.f5032i.m();
                             }
-                            bVar.f5037b = m10;
+                            bVar.f5047b = m10;
                             return true;
                         } else {
-                            int g10 = this.f5022i.g(findViewByPosition) - this.f5022i.m();
+                            int g10 = this.f5032i.g(findViewByPosition) - this.f5032i.m();
                             if (g10 < 0) {
-                                bVar.f5037b = -g10;
+                                bVar.f5047b = -g10;
                                 return true;
                             }
-                            int i11 = this.f5022i.i() - this.f5022i.d(findViewByPosition);
+                            int i11 = this.f5032i.i() - this.f5032i.d(findViewByPosition);
                             if (i11 < 0) {
-                                bVar.f5037b = i11;
+                                bVar.f5047b = i11;
                                 return true;
                             }
-                            bVar.f5037b = Integer.MIN_VALUE;
+                            bVar.f5047b = Integer.MIN_VALUE;
                         }
                     } else {
-                        int i12 = this.f5030v;
-                        bVar.f5036a = i12;
-                        int i13 = this.f5031w;
+                        int i12 = this.f5040v;
+                        bVar.f5046a = i12;
+                        int i13 = this.f5041w;
                         if (i13 == Integer.MIN_VALUE) {
                             if (p(i12) == 1) {
                                 z10 = true;
                             }
-                            bVar.f5038c = z10;
+                            bVar.f5048c = z10;
                             bVar.a();
                         } else {
                             bVar.b(i13);
                         }
-                        bVar.f5039d = true;
+                        bVar.f5049d = true;
                     }
                 }
                 return true;
             }
-            this.f5030v = -1;
-            this.f5031w = Integer.MIN_VALUE;
+            this.f5040v = -1;
+            this.f5041w = Integer.MIN_VALUE;
         }
         return false;
     }
@@ -1898,12 +1898,12 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             return;
         }
         bVar.a();
-        bVar.f5036a = 0;
+        bVar.f5046a = 0;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public RecyclerView.LayoutParams generateDefaultLayoutParams() {
-        if (this.f5024p == 0) {
+        if (this.f5034p == 0) {
             return new c(-2, -1);
         }
         return new c(-1, -2);
@@ -1916,28 +1916,28 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public int getColumnCountForAccessibility(RecyclerView.Recycler recycler, RecyclerView.State state) {
-        if (this.f5024p == 1) {
-            return Math.min(this.f5020d, state.b());
+        if (this.f5034p == 1) {
+            return Math.min(this.f5030d, state.b());
         }
         return -1;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public int getRowCountForAccessibility(RecyclerView.Recycler recycler, RecyclerView.State state) {
-        if (this.f5024p == 0) {
-            return Math.min(this.f5020d, state.b());
+        if (this.f5034p == 0) {
+            return Math.min(this.f5030d, state.b());
         }
         return -1;
     }
 
     void h0(int i10) {
-        this.f5025q = i10 / this.f5020d;
-        this.C = View.MeasureSpec.makeMeasureSpec(i10, this.f5023o.k());
+        this.f5035q = i10 / this.f5030d;
+        this.C = View.MeasureSpec.makeMeasureSpec(i10, this.f5033o.k());
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public boolean isAutoMeasureEnabled() {
-        if (this.f5033y != 0) {
+        if (this.f5043y != 0) {
             return true;
         }
         return false;
@@ -1952,13 +1952,13 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public boolean isLayoutReversed() {
-        return this.f5027s;
+        return this.f5037s;
     }
 
     boolean m() {
-        int l10 = this.f5021e[0].l(Integer.MIN_VALUE);
-        for (int i10 = 1; i10 < this.f5020d; i10++) {
-            if (this.f5021e[i10].l(Integer.MIN_VALUE) != l10) {
+        int l10 = this.f5031e[0].l(Integer.MIN_VALUE);
+        for (int i10 = 1; i10 < this.f5030d; i10++) {
+            if (this.f5031e[i10].l(Integer.MIN_VALUE) != l10) {
                 return false;
             }
         }
@@ -1966,9 +1966,9 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     }
 
     boolean n() {
-        int p10 = this.f5021e[0].p(Integer.MIN_VALUE);
-        for (int i10 = 1; i10 < this.f5020d; i10++) {
-            if (this.f5021e[i10].p(Integer.MIN_VALUE) != p10) {
+        int p10 = this.f5031e[0].p(Integer.MIN_VALUE);
+        for (int i10 = 1; i10 < this.f5030d; i10++) {
+            if (this.f5031e[i10].p(Integer.MIN_VALUE) != p10) {
                 return false;
             }
         }
@@ -1978,24 +1978,24 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public void offsetChildrenHorizontal(int i10) {
         super.offsetChildrenHorizontal(i10);
-        for (int i11 = 0; i11 < this.f5020d; i11++) {
-            this.f5021e[i11].r(i10);
+        for (int i11 = 0; i11 < this.f5030d; i11++) {
+            this.f5031e[i11].r(i10);
         }
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public void offsetChildrenVertical(int i10) {
         super.offsetChildrenVertical(i10);
-        for (int i11 = 0; i11 < this.f5020d; i11++) {
-            this.f5021e[i11].r(i10);
+        for (int i11 = 0; i11 < this.f5030d; i11++) {
+            this.f5031e[i11].r(i10);
         }
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public void onAdapterChanged(RecyclerView.Adapter adapter, RecyclerView.Adapter adapter2) {
-        this.f5032x.b();
-        for (int i10 = 0; i10 < this.f5020d; i10++) {
-            this.f5021e[i10].e();
+        this.f5042x.b();
+        for (int i10 = 0; i10 < this.f5030d; i10++) {
+            this.f5031e[i10].e();
         }
     }
 
@@ -2003,8 +2003,8 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     public void onDetachedFromWindow(RecyclerView recyclerView, RecyclerView.Recycler recycler) {
         super.onDetachedFromWindow(recyclerView, recycler);
         removeCallbacks(this.I);
-        for (int i10 = 0; i10 < this.f5020d; i10++) {
-            this.f5021e[i10].e();
+        for (int i10 = 0; i10 < this.f5030d; i10++) {
+            this.f5031e[i10].e();
         }
         recyclerView.requestLayout();
     }
@@ -2028,8 +2028,8 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             return null;
         }
         c cVar = (c) findContainingItemView.getLayoutParams();
-        boolean z12 = cVar.f5044q;
-        f fVar = cVar.f5043p;
+        boolean z12 = cVar.f5054q;
+        f fVar = cVar.f5053p;
         if (convertFocusDirectionToLayoutDirection == 1) {
             G = H();
         } else {
@@ -2037,33 +2037,33 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         }
         g0(G, state);
         b0(convertFocusDirectionToLayoutDirection);
-        k kVar = this.f5026r;
-        kVar.f5174c = kVar.f5175d + G;
-        kVar.f5173b = (int) (this.f5022i.n() * 0.33333334f);
-        k kVar2 = this.f5026r;
-        kVar2.f5179h = true;
-        kVar2.f5172a = false;
+        k kVar = this.f5036r;
+        kVar.f5184c = kVar.f5185d + G;
+        kVar.f5183b = (int) (this.f5032i.n() * 0.33333334f);
+        k kVar2 = this.f5036r;
+        kVar2.f5189h = true;
+        kVar2.f5182a = false;
         y(recycler, kVar2, state);
-        this.f5034z = this.f5028t;
+        this.f5044z = this.f5038t;
         if (!z12 && (m10 = fVar.m(G, convertFocusDirectionToLayoutDirection)) != null && m10 != findContainingItemView) {
             return m10;
         }
         if (T(convertFocusDirectionToLayoutDirection)) {
-            for (int i11 = this.f5020d - 1; i11 >= 0; i11--) {
-                View m11 = this.f5021e[i11].m(G, convertFocusDirectionToLayoutDirection);
+            for (int i11 = this.f5030d - 1; i11 >= 0; i11--) {
+                View m11 = this.f5031e[i11].m(G, convertFocusDirectionToLayoutDirection);
                 if (m11 != null && m11 != findContainingItemView) {
                     return m11;
                 }
             }
         } else {
-            for (int i12 = 0; i12 < this.f5020d; i12++) {
-                View m12 = this.f5021e[i12].m(G, convertFocusDirectionToLayoutDirection);
+            for (int i12 = 0; i12 < this.f5030d; i12++) {
+                View m12 = this.f5031e[i12].m(G, convertFocusDirectionToLayoutDirection);
                 if (m12 != null && m12 != findContainingItemView) {
                     return m12;
                 }
             }
         }
-        boolean z13 = !this.f5027s;
+        boolean z13 = !this.f5037s;
         if (convertFocusDirectionToLayoutDirection == -1) {
             z10 = true;
         } else {
@@ -2086,12 +2086,12 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             }
         }
         if (T(convertFocusDirectionToLayoutDirection)) {
-            for (int i13 = this.f5020d - 1; i13 >= 0; i13--) {
-                if (i13 != fVar.f5065e) {
+            for (int i13 = this.f5030d - 1; i13 >= 0; i13--) {
+                if (i13 != fVar.f5075e) {
                     if (z11) {
-                        g11 = this.f5021e[i13].f();
+                        g11 = this.f5031e[i13].f();
                     } else {
-                        g11 = this.f5021e[i13].g();
+                        g11 = this.f5031e[i13].g();
                     }
                     View findViewByPosition2 = findViewByPosition(g11);
                     if (findViewByPosition2 != null && findViewByPosition2 != findContainingItemView) {
@@ -2100,11 +2100,11 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
                 }
             }
         } else {
-            for (int i14 = 0; i14 < this.f5020d; i14++) {
+            for (int i14 = 0; i14 < this.f5030d; i14++) {
                 if (z11) {
-                    g10 = this.f5021e[i14].f();
+                    g10 = this.f5031e[i14].f();
                 } else {
-                    g10 = this.f5021e[i14].g();
+                    g10 = this.f5031e[i14].g();
                 }
                 View findViewByPosition3 = findViewByPosition(g10);
                 if (findViewByPosition3 != null && findViewByPosition3 != findContainingItemView) {
@@ -2150,17 +2150,17 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         }
         c cVar = (c) layoutParams;
         int i10 = 1;
-        if (this.f5024p == 0) {
+        if (this.f5034p == 0) {
             int e10 = cVar.e();
-            if (cVar.f5044q) {
-                i10 = this.f5020d;
+            if (cVar.f5054q) {
+                i10 = this.f5030d;
             }
             accessibilityNodeInfoCompat.z0(AccessibilityNodeInfoCompat.g.b(e10, i10, -1, -1, false, false));
             return;
         }
         int e11 = cVar.e();
-        if (cVar.f5044q) {
-            i10 = this.f5020d;
+        if (cVar.f5054q) {
+            i10 = this.f5030d;
         }
         accessibilityNodeInfoCompat.z0(AccessibilityNodeInfoCompat.g.b(-1, -1, e11, i10, false, false));
     }
@@ -2172,7 +2172,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public void onItemsChanged(RecyclerView recyclerView) {
-        this.f5032x.b();
+        this.f5042x.b();
         requestLayout();
     }
 
@@ -2199,8 +2199,8 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public void onLayoutCompleted(RecyclerView.State state) {
         super.onLayoutCompleted(state);
-        this.f5030v = -1;
-        this.f5031w = Integer.MIN_VALUE;
+        this.f5040v = -1;
+        this.f5041w = Integer.MIN_VALUE;
         this.B = null;
         this.E.c();
     }
@@ -2210,7 +2210,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         if (parcelable instanceof e) {
             e eVar = (e) parcelable;
             this.B = eVar;
-            if (this.f5030v != -1) {
+            if (this.f5040v != -1) {
                 eVar.a();
                 this.B.b();
             }
@@ -2228,54 +2228,54 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             return new e(this.B);
         }
         e eVar = new e();
-        eVar.f5058s = this.f5027s;
-        eVar.f5059t = this.f5034z;
-        eVar.f5060u = this.A;
-        d dVar = this.f5032x;
-        if (dVar != null && (iArr = dVar.f5045a) != null) {
-            eVar.f5056q = iArr;
-            eVar.f5055p = iArr.length;
-            eVar.f5057r = dVar.f5046b;
+        eVar.f5068s = this.f5037s;
+        eVar.f5069t = this.f5044z;
+        eVar.f5070u = this.A;
+        d dVar = this.f5042x;
+        if (dVar != null && (iArr = dVar.f5055a) != null) {
+            eVar.f5066q = iArr;
+            eVar.f5065p = iArr.length;
+            eVar.f5067r = dVar.f5056b;
         } else {
-            eVar.f5055p = 0;
+            eVar.f5065p = 0;
         }
         if (getChildCount() > 0) {
-            if (this.f5034z) {
+            if (this.f5044z) {
                 G = H();
             } else {
                 G = G();
             }
-            eVar.f5051d = G;
-            eVar.f5052e = C();
-            int i10 = this.f5020d;
-            eVar.f5053i = i10;
-            eVar.f5054o = new int[i10];
-            for (int i11 = 0; i11 < this.f5020d; i11++) {
-                if (this.f5034z) {
-                    p10 = this.f5021e[i11].l(Integer.MIN_VALUE);
+            eVar.f5061d = G;
+            eVar.f5062e = C();
+            int i10 = this.f5030d;
+            eVar.f5063i = i10;
+            eVar.f5064o = new int[i10];
+            for (int i11 = 0; i11 < this.f5030d; i11++) {
+                if (this.f5044z) {
+                    p10 = this.f5031e[i11].l(Integer.MIN_VALUE);
                     if (p10 != Integer.MIN_VALUE) {
-                        m10 = this.f5022i.i();
+                        m10 = this.f5032i.i();
                         p10 -= m10;
-                        eVar.f5054o[i11] = p10;
+                        eVar.f5064o[i11] = p10;
                     } else {
-                        eVar.f5054o[i11] = p10;
+                        eVar.f5064o[i11] = p10;
                     }
                 } else {
-                    p10 = this.f5021e[i11].p(Integer.MIN_VALUE);
+                    p10 = this.f5031e[i11].p(Integer.MIN_VALUE);
                     if (p10 != Integer.MIN_VALUE) {
-                        m10 = this.f5022i.m();
+                        m10 = this.f5032i.m();
                         p10 -= m10;
-                        eVar.f5054o[i11] = p10;
+                        eVar.f5064o[i11] = p10;
                     } else {
-                        eVar.f5054o[i11] = p10;
+                        eVar.f5064o[i11] = p10;
                     }
                 }
             }
             return eVar;
         }
-        eVar.f5051d = -1;
-        eVar.f5052e = -1;
-        eVar.f5053i = 0;
+        eVar.f5061d = -1;
+        eVar.f5062e = -1;
+        eVar.f5063i = 0;
         return eVar;
     }
 
@@ -2290,10 +2290,10 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         int G;
         int H;
         int i10;
-        if (getChildCount() == 0 || this.f5033y == 0 || !isAttachedToWindow()) {
+        if (getChildCount() == 0 || this.f5043y == 0 || !isAttachedToWindow()) {
             return false;
         }
-        if (this.f5028t) {
+        if (this.f5038t) {
             G = H();
             H = G();
         } else {
@@ -2301,30 +2301,30 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             H = H();
         }
         if (G == 0 && O() != null) {
-            this.f5032x.b();
+            this.f5042x.b();
             requestSimpleAnimationsInNextLayout();
             requestLayout();
             return true;
         } else if (!this.F) {
             return false;
         } else {
-            if (this.f5028t) {
+            if (this.f5038t) {
                 i10 = -1;
             } else {
                 i10 = 1;
             }
             int i11 = H + 1;
-            d.a e10 = this.f5032x.e(G, i11, i10, true);
+            d.a e10 = this.f5042x.e(G, i11, i10, true);
             if (e10 == null) {
                 this.F = false;
-                this.f5032x.d(i11);
+                this.f5042x.d(i11);
                 return false;
             }
-            d.a e11 = this.f5032x.e(G, e10.f5047d, i10 * (-1), true);
+            d.a e11 = this.f5042x.e(G, e10.f5057d, i10 * (-1), true);
             if (e11 == null) {
-                this.f5032x.d(e10.f5047d);
+                this.f5042x.d(e10.f5057d);
             } else {
-                this.f5032x.d(e11.f5047d + 1);
+                this.f5042x.d(e11.f5057d + 1);
             }
             requestSimpleAnimationsInNextLayout();
             requestLayout();
@@ -2337,18 +2337,18 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             return 0;
         }
         U(i10, state);
-        int y10 = y(recycler, this.f5026r, state);
-        if (this.f5026r.f5173b >= y10) {
+        int y10 = y(recycler, this.f5036r, state);
+        if (this.f5036r.f5183b >= y10) {
             if (i10 < 0) {
                 i10 = -y10;
             } else {
                 i10 = y10;
             }
         }
-        this.f5022i.r(-i10);
-        this.f5034z = this.f5028t;
-        k kVar = this.f5026r;
-        kVar.f5173b = 0;
+        this.f5032i.r(-i10);
+        this.f5044z = this.f5038t;
+        k kVar = this.f5036r;
+        kVar.f5183b = 0;
         W(recycler, kVar);
         return i10;
     }
@@ -2361,11 +2361,11 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public void scrollToPosition(int i10) {
         e eVar = this.B;
-        if (eVar != null && eVar.f5051d != i10) {
+        if (eVar != null && eVar.f5061d != i10) {
             eVar.a();
         }
-        this.f5030v = i10;
-        this.f5031w = Integer.MIN_VALUE;
+        this.f5040v = i10;
+        this.f5041w = Integer.MIN_VALUE;
         requestLayout();
     }
 
@@ -2380,12 +2380,12 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         int chooseSize2;
         int paddingLeft = getPaddingLeft() + getPaddingRight();
         int paddingTop = getPaddingTop() + getPaddingBottom();
-        if (this.f5024p == 1) {
+        if (this.f5034p == 1) {
             chooseSize2 = RecyclerView.LayoutManager.chooseSize(i11, rect.height() + paddingTop, getMinimumHeight());
-            chooseSize = RecyclerView.LayoutManager.chooseSize(i10, (this.f5025q * this.f5020d) + paddingLeft, getMinimumWidth());
+            chooseSize = RecyclerView.LayoutManager.chooseSize(i10, (this.f5035q * this.f5030d) + paddingLeft, getMinimumWidth());
         } else {
             chooseSize = RecyclerView.LayoutManager.chooseSize(i10, rect.width() + paddingLeft, getMinimumWidth());
-            chooseSize2 = RecyclerView.LayoutManager.chooseSize(i11, (this.f5025q * this.f5020d) + paddingTop, getMinimumHeight());
+            chooseSize2 = RecyclerView.LayoutManager.chooseSize(i11, (this.f5035q * this.f5030d) + paddingTop, getMinimumHeight());
         }
         setMeasuredDimension(chooseSize, chooseSize2);
     }
@@ -2395,35 +2395,35 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             throw new IllegalArgumentException("invalid orientation.");
         }
         assertNotInLayoutOrScroll(null);
-        if (i10 == this.f5024p) {
+        if (i10 == this.f5034p) {
             return;
         }
-        this.f5024p = i10;
-        OrientationHelper orientationHelper = this.f5022i;
-        this.f5022i = this.f5023o;
-        this.f5023o = orientationHelper;
+        this.f5034p = i10;
+        OrientationHelper orientationHelper = this.f5032i;
+        this.f5032i = this.f5033o;
+        this.f5033o = orientationHelper;
         requestLayout();
     }
 
     public void setReverseLayout(boolean z10) {
         assertNotInLayoutOrScroll(null);
         e eVar = this.B;
-        if (eVar != null && eVar.f5058s != z10) {
-            eVar.f5058s = z10;
+        if (eVar != null && eVar.f5068s != z10) {
+            eVar.f5068s = z10;
         }
-        this.f5027s = z10;
+        this.f5037s = z10;
         requestLayout();
     }
 
     public void setSpanCount(int i10) {
         assertNotInLayoutOrScroll(null);
-        if (i10 != this.f5020d) {
+        if (i10 != this.f5030d) {
             P();
-            this.f5020d = i10;
-            this.f5029u = new BitSet(this.f5020d);
-            this.f5021e = new f[this.f5020d];
-            for (int i11 = 0; i11 < this.f5020d; i11++) {
-                this.f5021e[i11] = new f(i11);
+            this.f5030d = i10;
+            this.f5039u = new BitSet(this.f5030d);
+            this.f5031e = new f[this.f5030d];
+            for (int i11 = 0; i11 < this.f5030d; i11++) {
+                this.f5031e[i11] = new f(i11);
             }
             requestLayout();
         }
@@ -2457,27 +2457,27 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        int[] f5045a;
+        int[] f5055a;
 
         /* renamed from: b  reason: collision with root package name */
-        List f5046b;
+        List f5056b;
 
         d() {
         }
 
         private int i(int i10) {
-            if (this.f5046b == null) {
+            if (this.f5056b == null) {
                 return -1;
             }
             a f10 = f(i10);
             if (f10 != null) {
-                this.f5046b.remove(f10);
+                this.f5056b.remove(f10);
             }
-            int size = this.f5046b.size();
+            int size = this.f5056b.size();
             int i11 = 0;
             while (true) {
                 if (i11 < size) {
-                    if (((a) this.f5046b.get(i11)).f5047d >= i10) {
+                    if (((a) this.f5056b.get(i11)).f5057d >= i10) {
                         break;
                     }
                     i11++;
@@ -2489,35 +2489,35 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             if (i11 == -1) {
                 return -1;
             }
-            this.f5046b.remove(i11);
-            return ((a) this.f5046b.get(i11)).f5047d;
+            this.f5056b.remove(i11);
+            return ((a) this.f5056b.get(i11)).f5057d;
         }
 
         private void l(int i10, int i11) {
-            List list = this.f5046b;
+            List list = this.f5056b;
             if (list != null) {
                 for (int size = list.size() - 1; size >= 0; size--) {
-                    a aVar = (a) this.f5046b.get(size);
-                    int i12 = aVar.f5047d;
+                    a aVar = (a) this.f5056b.get(size);
+                    int i12 = aVar.f5057d;
                     if (i12 >= i10) {
-                        aVar.f5047d = i12 + i11;
+                        aVar.f5057d = i12 + i11;
                     }
                 }
             }
         }
 
         private void m(int i10, int i11) {
-            List list = this.f5046b;
+            List list = this.f5056b;
             if (list != null) {
                 int i12 = i10 + i11;
                 for (int size = list.size() - 1; size >= 0; size--) {
-                    a aVar = (a) this.f5046b.get(size);
-                    int i13 = aVar.f5047d;
+                    a aVar = (a) this.f5056b.get(size);
+                    int i13 = aVar.f5057d;
                     if (i13 >= i10) {
                         if (i13 < i12) {
-                            this.f5046b.remove(size);
+                            this.f5056b.remove(size);
                         } else {
-                            aVar.f5047d = i13 - i11;
+                            aVar.f5057d = i13 - i11;
                         }
                     }
                 }
@@ -2525,52 +2525,52 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         }
 
         public void a(a aVar) {
-            if (this.f5046b == null) {
-                this.f5046b = new ArrayList();
+            if (this.f5056b == null) {
+                this.f5056b = new ArrayList();
             }
-            int size = this.f5046b.size();
+            int size = this.f5056b.size();
             for (int i10 = 0; i10 < size; i10++) {
-                a aVar2 = (a) this.f5046b.get(i10);
-                if (aVar2.f5047d == aVar.f5047d) {
-                    this.f5046b.remove(i10);
+                a aVar2 = (a) this.f5056b.get(i10);
+                if (aVar2.f5057d == aVar.f5057d) {
+                    this.f5056b.remove(i10);
                 }
-                if (aVar2.f5047d >= aVar.f5047d) {
-                    this.f5046b.add(i10, aVar);
+                if (aVar2.f5057d >= aVar.f5057d) {
+                    this.f5056b.add(i10, aVar);
                     return;
                 }
             }
-            this.f5046b.add(aVar);
+            this.f5056b.add(aVar);
         }
 
         void b() {
-            int[] iArr = this.f5045a;
+            int[] iArr = this.f5055a;
             if (iArr != null) {
                 Arrays.fill(iArr, -1);
             }
-            this.f5046b = null;
+            this.f5056b = null;
         }
 
         void c(int i10) {
-            int[] iArr = this.f5045a;
+            int[] iArr = this.f5055a;
             if (iArr == null) {
                 int[] iArr2 = new int[Math.max(i10, 10) + 1];
-                this.f5045a = iArr2;
+                this.f5055a = iArr2;
                 Arrays.fill(iArr2, -1);
             } else if (i10 >= iArr.length) {
                 int[] iArr3 = new int[o(i10)];
-                this.f5045a = iArr3;
+                this.f5055a = iArr3;
                 System.arraycopy(iArr, 0, iArr3, 0, iArr.length);
-                int[] iArr4 = this.f5045a;
+                int[] iArr4 = this.f5055a;
                 Arrays.fill(iArr4, iArr.length, iArr4.length, -1);
             }
         }
 
         int d(int i10) {
-            List list = this.f5046b;
+            List list = this.f5056b;
             if (list != null) {
                 for (int size = list.size() - 1; size >= 0; size--) {
-                    if (((a) this.f5046b.get(size)).f5047d >= i10) {
-                        this.f5046b.remove(size);
+                    if (((a) this.f5056b.get(size)).f5057d >= i10) {
+                        this.f5056b.remove(size);
                     }
                 }
             }
@@ -2578,18 +2578,18 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         }
 
         public a e(int i10, int i11, int i12, boolean z10) {
-            List list = this.f5046b;
+            List list = this.f5056b;
             if (list == null) {
                 return null;
             }
             int size = list.size();
             for (int i13 = 0; i13 < size; i13++) {
-                a aVar = (a) this.f5046b.get(i13);
-                int i14 = aVar.f5047d;
+                a aVar = (a) this.f5056b.get(i13);
+                int i14 = aVar.f5057d;
                 if (i14 >= i11) {
                     return null;
                 }
-                if (i14 >= i10 && (i12 == 0 || aVar.f5048e == i12 || (z10 && aVar.f5050o))) {
+                if (i14 >= i10 && (i12 == 0 || aVar.f5058e == i12 || (z10 && aVar.f5060o))) {
                     return aVar;
                 }
             }
@@ -2597,13 +2597,13 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         }
 
         public a f(int i10) {
-            List list = this.f5046b;
+            List list = this.f5056b;
             if (list == null) {
                 return null;
             }
             for (int size = list.size() - 1; size >= 0; size--) {
-                a aVar = (a) this.f5046b.get(size);
-                if (aVar.f5047d == i10) {
+                a aVar = (a) this.f5056b.get(size);
+                if (aVar.f5057d == i10) {
                     return aVar;
                 }
             }
@@ -2611,7 +2611,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         }
 
         int g(int i10) {
-            int[] iArr = this.f5045a;
+            int[] iArr = this.f5055a;
             if (iArr != null && i10 < iArr.length) {
                 return iArr[i10];
             }
@@ -2619,41 +2619,41 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         }
 
         int h(int i10) {
-            int[] iArr = this.f5045a;
+            int[] iArr = this.f5055a;
             if (iArr == null || i10 >= iArr.length) {
                 return -1;
             }
             int i11 = i(i10);
             if (i11 == -1) {
-                int[] iArr2 = this.f5045a;
+                int[] iArr2 = this.f5055a;
                 Arrays.fill(iArr2, i10, iArr2.length, -1);
-                return this.f5045a.length;
+                return this.f5055a.length;
             }
-            int min = Math.min(i11 + 1, this.f5045a.length);
-            Arrays.fill(this.f5045a, i10, min, -1);
+            int min = Math.min(i11 + 1, this.f5055a.length);
+            Arrays.fill(this.f5055a, i10, min, -1);
             return min;
         }
 
         void j(int i10, int i11) {
-            int[] iArr = this.f5045a;
+            int[] iArr = this.f5055a;
             if (iArr != null && i10 < iArr.length) {
                 int i12 = i10 + i11;
                 c(i12);
-                int[] iArr2 = this.f5045a;
+                int[] iArr2 = this.f5055a;
                 System.arraycopy(iArr2, i10, iArr2, i12, (iArr2.length - i10) - i11);
-                Arrays.fill(this.f5045a, i10, i12, -1);
+                Arrays.fill(this.f5055a, i10, i12, -1);
                 l(i10, i11);
             }
         }
 
         void k(int i10, int i11) {
-            int[] iArr = this.f5045a;
+            int[] iArr = this.f5055a;
             if (iArr != null && i10 < iArr.length) {
                 int i12 = i10 + i11;
                 c(i12);
-                int[] iArr2 = this.f5045a;
+                int[] iArr2 = this.f5055a;
                 System.arraycopy(iArr2, i12, iArr2, i10, (iArr2.length - i10) - i11);
-                int[] iArr3 = this.f5045a;
+                int[] iArr3 = this.f5055a;
                 Arrays.fill(iArr3, iArr3.length - i11, iArr3.length, -1);
                 m(i10, i11);
             }
@@ -2661,11 +2661,11 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
 
         void n(int i10, f fVar) {
             c(i10);
-            this.f5045a[i10] = fVar.f5065e;
+            this.f5055a[i10] = fVar.f5075e;
         }
 
         int o(int i10) {
-            int length = this.f5045a.length;
+            int length = this.f5055a.length;
             while (length <= i10) {
                 length *= 2;
             }
@@ -2675,24 +2675,24 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static class a implements Parcelable {
-            public static final Parcelable.Creator<a> CREATOR = new C0066a();
+            public static final Parcelable.Creator<a> CREATOR = new C0062a();
 
             /* renamed from: d  reason: collision with root package name */
-            int f5047d;
+            int f5057d;
 
             /* renamed from: e  reason: collision with root package name */
-            int f5048e;
+            int f5058e;
 
             /* renamed from: i  reason: collision with root package name */
-            int[] f5049i;
+            int[] f5059i;
 
             /* renamed from: o  reason: collision with root package name */
-            boolean f5050o;
+            boolean f5060o;
 
             /* renamed from: androidx.recyclerview.widget.StaggeredGridLayoutManager$d$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-            class C0066a implements Parcelable.Creator {
-                C0066a() {
+            class C0062a implements Parcelable.Creator {
+                C0062a() {
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -2709,19 +2709,19 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             }
 
             a(Parcel parcel) {
-                this.f5047d = parcel.readInt();
-                this.f5048e = parcel.readInt();
-                this.f5050o = parcel.readInt() == 1;
+                this.f5057d = parcel.readInt();
+                this.f5058e = parcel.readInt();
+                this.f5060o = parcel.readInt() == 1;
                 int readInt = parcel.readInt();
                 if (readInt > 0) {
                     int[] iArr = new int[readInt];
-                    this.f5049i = iArr;
+                    this.f5059i = iArr;
                     parcel.readIntArray(iArr);
                 }
             }
 
             int a(int i10) {
-                int[] iArr = this.f5049i;
+                int[] iArr = this.f5059i;
                 if (iArr == null) {
                     return 0;
                 }
@@ -2734,18 +2734,18 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             }
 
             public String toString() {
-                return "FullSpanItem{mPosition=" + this.f5047d + ", mGapDir=" + this.f5048e + ", mHasUnwantedGapAfter=" + this.f5050o + ", mGapPerSpan=" + Arrays.toString(this.f5049i) + '}';
+                return "FullSpanItem{mPosition=" + this.f5057d + ", mGapDir=" + this.f5058e + ", mHasUnwantedGapAfter=" + this.f5060o + ", mGapPerSpan=" + Arrays.toString(this.f5059i) + '}';
             }
 
             @Override // android.os.Parcelable
             public void writeToParcel(Parcel parcel, int i10) {
-                parcel.writeInt(this.f5047d);
-                parcel.writeInt(this.f5048e);
-                parcel.writeInt(this.f5050o ? 1 : 0);
-                int[] iArr = this.f5049i;
+                parcel.writeInt(this.f5057d);
+                parcel.writeInt(this.f5058e);
+                parcel.writeInt(this.f5060o ? 1 : 0);
+                int[] iArr = this.f5059i;
                 if (iArr != null && iArr.length > 0) {
                     parcel.writeInt(iArr.length);
-                    parcel.writeIntArray(this.f5049i);
+                    parcel.writeIntArray(this.f5059i);
                     return;
                 }
                 parcel.writeInt(0);

@@ -45,7 +45,7 @@ public final class AttributeStyles_ESignatureTitleStylesContainerJsonAdapter ext
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 eSignatureBaseTextStyle = (AttributeStyles.ESignatureBaseTextStyle) this.nullableESignatureBaseTextStyleAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class AttributeStyles_ESignatureTitleStylesContainerJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.ESignatureTitleStylesContainer eSignatureTitleStylesContainer) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignatureTitleStylesContainer != null) {
-            writer.k();
+            writer.i();
             writer.J("dialogTitle");
             this.nullableESignatureBaseTextStyleAdapter.toJson(writer, eSignatureTitleStylesContainer.getDialogTitle());
             writer.s();

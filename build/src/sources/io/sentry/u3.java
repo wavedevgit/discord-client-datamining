@@ -3,7 +3,7 @@ package io.sentry;
 public interface u3 {
     void b();
 
-    void i();
+    void j();
 
     void n(t3 t3Var);
 

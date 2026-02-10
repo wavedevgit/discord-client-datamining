@@ -12,16 +12,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class m implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28800d;
+    private String f29735d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f28801e;
+    private String f29736e;
 
     /* renamed from: i  reason: collision with root package name */
-    private List f28802i;
+    private List f29737i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f28803o;
+    private Map f29738o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -57,24 +57,24 @@ public final class m implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        List list = (List) e3Var.T1();
+                        List list = (List) e3Var.Z1();
                         if (list == null) {
                             break;
                         } else {
-                            mVar.f28802i = list;
+                            mVar.f29737i = list;
                             break;
                         }
                     case 1:
-                        mVar.f28801e = e3Var.m1();
+                        mVar.f29736e = e3Var.r1();
                         break;
                     case 2:
-                        mVar.f28800d = e3Var.m1();
+                        mVar.f29735d = e3Var.r1();
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.p1(iLogger, concurrentHashMap, o02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
@@ -85,38 +85,38 @@ public final class m implements w1 {
     }
 
     public String d() {
-        return this.f28800d;
+        return this.f29735d;
     }
 
     public String e() {
-        return this.f28801e;
+        return this.f29736e;
     }
 
     public void f(String str) {
-        this.f28800d = str;
+        this.f29735d = str;
     }
 
     public void g(Map map) {
-        this.f28803o = map;
+        this.f29738o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f28800d != null) {
-            f3Var.e("formatted").f(this.f28800d);
+        if (this.f29735d != null) {
+            f3Var.e("formatted").f(this.f29735d);
         }
-        if (this.f28801e != null) {
-            f3Var.e("message").f(this.f28801e);
+        if (this.f29736e != null) {
+            f3Var.e("message").f(this.f29736e);
         }
-        List list = this.f28802i;
+        List list = this.f29737i;
         if (list != null && !list.isEmpty()) {
-            f3Var.e("params").j(iLogger, this.f28802i);
+            f3Var.e("params").j(iLogger, this.f29737i);
         }
-        Map map = this.f28803o;
+        Map map = this.f29738o;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28803o.get(str);
+                Object obj = this.f29738o.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }

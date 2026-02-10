@@ -1,5 +1,6 @@
 package kotlin.reflect.jvm.internal.impl.load.java.components;
 
+import as.v;
 import java.util.Map;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
@@ -15,23 +16,22 @@ import kotlin.reflect.jvm.internal.impl.resolve.constants.ConstantValue;
 import kotlin.reflect.jvm.internal.impl.storage.NotNullLazyValue;
 import kotlin.reflect.jvm.internal.impl.storage.StorageKt;
 import org.jetbrains.annotations.NotNull;
-import rr.v;
 @SourceDebugExtension({"SMAP\nJavaAnnotationMapper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 JavaAnnotationMapper.kt\norg/jetbrains/kotlin/load/java/components/JavaRetentionAnnotationDescriptor\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,182:1\n1#2:183\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class JavaRetentionAnnotationDescriptor extends JavaAnnotationDescriptor {
 
     /* renamed from: h  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f32568h = {Reflection.property1(new PropertyReference1Impl(JavaRetentionAnnotationDescriptor.class, "allValueArguments", "getAllValueArguments()Ljava/util/Map;", 0))};
+    static final /* synthetic */ KProperty[] f32790h = {Reflection.property1(new PropertyReference1Impl(JavaRetentionAnnotationDescriptor.class, "allValueArguments", "getAllValueArguments()Ljava/util/Map;", 0))};
 
     /* renamed from: g  reason: collision with root package name */
-    private final NotNullLazyValue f32569g;
+    private final NotNullLazyValue f32791g;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public JavaRetentionAnnotationDescriptor(@NotNull JavaAnnotation annotation, @NotNull LazyJavaResolverContext c10) {
         super(c10, annotation, StandardNames.FqNames.retention);
         Intrinsics.checkNotNullParameter(annotation, "annotation");
         Intrinsics.checkNotNullParameter(c10, "c");
-        this.f32569g = c10.getStorageManager().createLazyValue(new d(this));
+        this.f32791g = c10.getStorageManager().createLazyValue(new d(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -52,6 +52,6 @@ public final class JavaRetentionAnnotationDescriptor extends JavaAnnotationDescr
     @Override // kotlin.reflect.jvm.internal.impl.load.java.components.JavaAnnotationDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public Map<Name, ConstantValue<?>> getAllValueArguments() {
-        return (Map) StorageKt.getValue(this.f32569g, this, f32568h[0]);
+        return (Map) StorageKt.getValue(this.f32791g, this, f32790h[0]);
     }
 }

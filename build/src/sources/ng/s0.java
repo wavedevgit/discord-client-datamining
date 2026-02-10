@@ -3,7 +3,7 @@ package ng;
 public final class s0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static s0 f38883a;
+    private static s0 f37887a;
 
     private s0() {
     }
@@ -12,10 +12,10 @@ public final class s0 {
         s0 s0Var;
         synchronized (s0.class) {
             try {
-                if (f38883a == null) {
-                    f38883a = new s0();
+                if (f37887a == null) {
+                    f37887a = new s0();
                 }
-                s0Var = f38883a;
+                s0Var = f37887a;
             } catch (Throwable th2) {
                 throw th2;
             }

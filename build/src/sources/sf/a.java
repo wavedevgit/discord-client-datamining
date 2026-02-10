@@ -8,8 +8,8 @@ public interface a extends IInterface {
 
     /* renamed from: sf.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class AbstractBinderC0667a extends kg.b implements a {
-        public AbstractBinderC0667a() {
+    public static abstract class AbstractBinderC0652a extends kg.b implements a {
+        public AbstractBinderC0652a() {
             super("com.google.android.gms.deviceperformance.internal.IDevicePerformanceCallbacks");
         }
 

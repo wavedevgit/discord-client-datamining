@@ -4,22 +4,22 @@ public final class R {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class attr {
-        public static int riveAlignment = 0x7f040473;
-        public static int riveAnimation = 0x7f040474;
-        public static int riveArtboard = 0x7f040475;
-        public static int riveAssetLoaderClass = 0x7f040476;
-        public static int riveAutoBind = 0x7f040477;
-        public static int riveAutoPlay = 0x7f040478;
-        public static int riveFit = 0x7f040479;
-        public static int riveLoop = 0x7f04047a;
-        public static int riveMultiTouchEnabled = 0x7f04047b;
-        public static int riveRenderer = 0x7f04047c;
-        public static int riveResource = 0x7f04047d;
-        public static int riveShouldLoadCDNAssets = 0x7f04047e;
-        public static int riveStateMachine = 0x7f04047f;
-        public static int riveTouchPassThrough = 0x7f040480;
-        public static int riveTraceAnimations = 0x7f040481;
-        public static int riveUrl = 0x7f040482;
+        public static int riveAlignment = 0x7f0404c9;
+        public static int riveAnimation = 0x7f0404ca;
+        public static int riveArtboard = 0x7f0404cb;
+        public static int riveAssetLoaderClass = 0x7f0404cc;
+        public static int riveAutoBind = 0x7f0404cd;
+        public static int riveAutoPlay = 0x7f0404ce;
+        public static int riveFit = 0x7f0404cf;
+        public static int riveLoop = 0x7f0404d0;
+        public static int riveMultiTouchEnabled = 0x7f0404d1;
+        public static int riveRenderer = 0x7f0404d2;
+        public static int riveResource = 0x7f0404d3;
+        public static int riveShouldLoadCDNAssets = 0x7f0404d4;
+        public static int riveStateMachine = 0x7f0404d5;
+        public static int riveTouchPassThrough = 0x7f0404d6;
+        public static int riveTraceAnimations = 0x7f0404d7;
+        public static int riveUrl = 0x7f0404d8;
 
         private attr() {
         }
@@ -89,8 +89,8 @@ public final class R {
         public static int RiveAnimationView_riveTouchPassThrough = 0x0000000d;
         public static int RiveAnimationView_riveTraceAnimations = 0x0000000e;
         public static int RiveAnimationView_riveUrl = 0x0000000f;
-        public static int[] CustomRiveView = {2130969715, 2130969716, 2130969717, 2130969718, 2130969719, 2130969720, 2130969721, 2130969722, 2130969723, 2130969724, 2130969725, 2130969726, 2130969727, 2130969728, 2130969729, 2130969730};
-        public static int[] RiveAnimationView = {2130969715, 2130969716, 2130969717, 2130969718, 2130969719, 2130969720, 2130969721, 2130969722, 2130969723, 2130969724, 2130969725, 2130969726, 2130969727, 2130969728, 2130969729, 2130969730};
+        public static int[] CustomRiveView = {2130969801, 2130969802, 2130969803, 2130969804, 2130969805, 2130969806, 2130969807, 2130969808, 2130969809, 2130969810, 2130969811, 2130969812, 2130969813, 2130969814, 2130969815, 2130969816};
+        public static int[] RiveAnimationView = {2130969801, 2130969802, 2130969803, 2130969804, 2130969805, 2130969806, 2130969807, 2130969808, 2130969809, 2130969810, 2130969811, 2130969812, 2130969813, 2130969814, 2130969815, 2130969816};
 
         private styleable() {
         }

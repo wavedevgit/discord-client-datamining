@@ -46,7 +46,7 @@ public final class StepStyles_GovernmentIdStepRowHeightJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
@@ -60,7 +60,7 @@ public final class StepStyles_GovernmentIdStepRowHeightJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.GovernmentIdStepRowHeight governmentIdStepRowHeight) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepRowHeight != null) {
-            writer.k();
+            writer.i();
             writer.J("governmentIdSelectOptionMinRowHeight");
             this.nullableMeasurementAdapter.toJson(writer, governmentIdStepRowHeight.getGovernmentIdSelectOptionMinRowHeight());
             writer.s();

@@ -25,67 +25,67 @@ import java.util.Set;
 public final class e0 implements e.a, e.b {
 
     /* renamed from: d */
-    private final a.f f24299d;
+    private final a.f f25599d;
 
     /* renamed from: e */
-    private final b f24300e;
+    private final b f25600e;
 
     /* renamed from: f */
-    private final v f24301f;
+    private final v f25601f;
 
     /* renamed from: i */
-    private final int f24304i;
+    private final int f25604i;
 
     /* renamed from: j */
-    private final u0 f24305j;
+    private final u0 f25605j;
 
     /* renamed from: k */
-    private boolean f24306k;
+    private boolean f25606k;
 
     /* renamed from: o */
-    final /* synthetic */ e f24310o;
+    final /* synthetic */ e f25610o;
 
     /* renamed from: c */
-    private final Queue f24298c = new LinkedList();
+    private final Queue f25598c = new LinkedList();
 
     /* renamed from: g */
-    private final Set f24302g = new HashSet();
+    private final Set f25602g = new HashSet();
 
     /* renamed from: h */
-    private final Map f24303h = new HashMap();
+    private final Map f25603h = new HashMap();
 
     /* renamed from: l */
-    private final List f24307l = new ArrayList();
+    private final List f25607l = new ArrayList();
 
     /* renamed from: m */
-    private com.google.android.gms.common.b f24308m = null;
+    private com.google.android.gms.common.b f25608m = null;
 
     /* renamed from: n */
-    private int f24309n = 0;
+    private int f25609n = 0;
 
     public e0(e eVar, ff.d dVar) {
         Handler handler;
         Context context;
         Handler handler2;
-        this.f24310o = eVar;
-        handler = eVar.f24296y;
+        this.f25610o = eVar;
+        handler = eVar.f25596y;
         a.f y10 = dVar.y(handler.getLooper(), this);
-        this.f24299d = y10;
-        this.f24300e = dVar.t();
-        this.f24301f = new v();
-        this.f24304i = dVar.x();
+        this.f25599d = y10;
+        this.f25600e = dVar.t();
+        this.f25601f = new v();
+        this.f25604i = dVar.x();
         if (y10.h()) {
-            context = eVar.f24287p;
-            handler2 = eVar.f24296y;
-            this.f24305j = dVar.z(context, handler2);
+            context = eVar.f25587p;
+            handler2 = eVar.f25596y;
+            this.f25605j = dVar.z(context, handler2);
             return;
         }
-        this.f24305j = null;
+        this.f25605j = null;
     }
 
     public static /* bridge */ /* synthetic */ void B(e0 e0Var, g0 g0Var) {
-        if (e0Var.f24307l.contains(g0Var) && !e0Var.f24306k) {
-            if (!e0Var.f24299d.a()) {
+        if (e0Var.f25607l.contains(g0Var) && !e0Var.f25606k) {
+            if (!e0Var.f25599d.a()) {
                 e0Var.E();
             } else {
                 e0Var.j();
@@ -98,14 +98,14 @@ public final class e0 implements e.a, e.b {
         Handler handler2;
         com.google.android.gms.common.d dVar;
         com.google.android.gms.common.d[] g10;
-        if (e0Var.f24307l.remove(g0Var)) {
-            handler = e0Var.f24310o.f24296y;
+        if (e0Var.f25607l.remove(g0Var)) {
+            handler = e0Var.f25610o.f25596y;
             handler.removeMessages(15, g0Var);
-            handler2 = e0Var.f24310o.f24296y;
+            handler2 = e0Var.f25610o.f25596y;
             handler2.removeMessages(16, g0Var);
-            dVar = g0Var.f24320b;
-            ArrayList arrayList = new ArrayList(e0Var.f24298c.size());
-            for (b1 b1Var : e0Var.f24298c) {
+            dVar = g0Var.f25620b;
+            ArrayList arrayList = new ArrayList(e0Var.f25598c.size());
+            for (b1 b1Var : e0Var.f25598c) {
                 if ((b1Var instanceof m0) && (g10 = ((m0) b1Var).g(e0Var)) != null && com.google.android.gms.common.util.b.b(g10, dVar)) {
                     arrayList.add(b1Var);
                 }
@@ -113,7 +113,7 @@ public final class e0 implements e.a, e.b {
             int size = arrayList.size();
             for (int i10 = 0; i10 < size; i10++) {
                 b1 b1Var2 = (b1) arrayList.get(i10);
-                e0Var.f24298c.remove(b1Var2);
+                e0Var.f25598c.remove(b1Var2);
                 b1Var2.b(new ff.l(dVar));
             }
         }
@@ -121,7 +121,7 @@ public final class e0 implements e.a, e.b {
 
     private final com.google.android.gms.common.d c(com.google.android.gms.common.d[] dVarArr) {
         if (dVarArr != null && dVarArr.length != 0) {
-            com.google.android.gms.common.d[] o10 = this.f24299d.o();
+            com.google.android.gms.common.d[] o10 = this.f25599d.o();
             if (o10 == null) {
                 o10 = new com.google.android.gms.common.d[0];
             }
@@ -140,28 +140,28 @@ public final class e0 implements e.a, e.b {
     }
 
     private final void d(com.google.android.gms.common.b bVar) {
-        Iterator it = this.f24302g.iterator();
+        Iterator it = this.f25602g.iterator();
         if (it.hasNext()) {
             android.support.v4.media.session.b.a(it.next());
-            if (hf.o.a(bVar, com.google.android.gms.common.b.f13887q)) {
-                this.f24299d.e();
+            if (hf.o.a(bVar, com.google.android.gms.common.b.f14464q)) {
+                this.f25599d.e();
             }
             throw null;
         }
-        this.f24302g.clear();
+        this.f25602g.clear();
     }
 
     public final void g(Status status) {
         Handler handler;
-        handler = this.f24310o.f24296y;
+        handler = this.f25610o.f25596y;
         hf.q.d(handler);
-        i(status, null, false);
+        h(status, null, false);
     }
 
-    private final void i(Status status, Exception exc, boolean z10) {
+    private final void h(Status status, Exception exc, boolean z10) {
         Handler handler;
         boolean z11;
-        handler = this.f24310o.f24296y;
+        handler = this.f25610o.f25596y;
         hf.q.d(handler);
         boolean z12 = true;
         if (status != null) {
@@ -173,10 +173,10 @@ public final class e0 implements e.a, e.b {
             z12 = false;
         }
         if (z11 != z12) {
-            Iterator it = this.f24298c.iterator();
+            Iterator it = this.f25598c.iterator();
             while (it.hasNext()) {
                 b1 b1Var = (b1) it.next();
-                if (!z10 || b1Var.f24271a == 2) {
+                if (!z10 || b1Var.f25571a == 2) {
                     if (status != null) {
                         b1Var.a(status);
                     } else {
@@ -191,13 +191,13 @@ public final class e0 implements e.a, e.b {
     }
 
     private final void j() {
-        ArrayList arrayList = new ArrayList(this.f24298c);
+        ArrayList arrayList = new ArrayList(this.f25598c);
         int size = arrayList.size();
         for (int i10 = 0; i10 < size; i10++) {
             b1 b1Var = (b1) arrayList.get(i10);
-            if (this.f24299d.a()) {
+            if (this.f25599d.a()) {
                 if (p(b1Var)) {
-                    this.f24298c.remove(b1Var);
+                    this.f25598c.remove(b1Var);
                 }
             } else {
                 return;
@@ -207,19 +207,19 @@ public final class e0 implements e.a, e.b {
 
     public final void k() {
         D();
-        d(com.google.android.gms.common.b.f13887q);
+        d(com.google.android.gms.common.b.f14464q);
         o();
-        Iterator it = this.f24303h.values().iterator();
+        Iterator it = this.f25603h.values().iterator();
         while (it.hasNext()) {
             q0 q0Var = (q0) it.next();
-            if (c(q0Var.f24361a.b()) != null) {
+            if (c(q0Var.f25661a.b()) != null) {
                 it.remove();
             } else {
                 try {
-                    q0Var.f24361a.c(this.f24299d, new zg.k());
+                    q0Var.f25661a.c(this.f25599d, new zg.k());
                 } catch (DeadObjectException unused) {
                     f(3);
-                    this.f24299d.c("DeadObjectException thrown while calling register listener method.");
+                    this.f25599d.c("DeadObjectException thrown while calling register listener method.");
                 } catch (RemoteException unused2) {
                     it.remove();
                 }
@@ -236,22 +236,22 @@ public final class e0 implements e.a, e.b {
         Handler handler4;
         hf.h0 h0Var;
         D();
-        this.f24306k = true;
-        this.f24301f.e(i10, this.f24299d.p());
-        b bVar = this.f24300e;
-        e eVar = this.f24310o;
-        handler = eVar.f24296y;
-        handler2 = eVar.f24296y;
+        this.f25606k = true;
+        this.f25601f.e(i10, this.f25599d.p());
+        b bVar = this.f25600e;
+        e eVar = this.f25610o;
+        handler = eVar.f25596y;
+        handler2 = eVar.f25596y;
         handler.sendMessageDelayed(Message.obtain(handler2, 9, bVar), 5000L);
-        b bVar2 = this.f24300e;
-        e eVar2 = this.f24310o;
-        handler3 = eVar2.f24296y;
-        handler4 = eVar2.f24296y;
+        b bVar2 = this.f25600e;
+        e eVar2 = this.f25610o;
+        handler3 = eVar2.f25596y;
+        handler4 = eVar2.f25596y;
         handler3.sendMessageDelayed(Message.obtain(handler4, 11, bVar2), 120000L);
-        h0Var = this.f24310o.f24289r;
+        h0Var = this.f25610o.f25589r;
         h0Var.c();
-        for (q0 q0Var : this.f24303h.values()) {
-            q0Var.f24363c.run();
+        for (q0 q0Var : this.f25603h.values()) {
+            q0Var.f25663c.run();
         }
     }
 
@@ -260,41 +260,41 @@ public final class e0 implements e.a, e.b {
         Handler handler2;
         Handler handler3;
         long j10;
-        b bVar = this.f24300e;
-        handler = this.f24310o.f24296y;
+        b bVar = this.f25600e;
+        handler = this.f25610o.f25596y;
         handler.removeMessages(12, bVar);
-        b bVar2 = this.f24300e;
-        e eVar = this.f24310o;
-        handler2 = eVar.f24296y;
-        handler3 = eVar.f24296y;
+        b bVar2 = this.f25600e;
+        e eVar = this.f25610o;
+        handler2 = eVar.f25596y;
+        handler3 = eVar.f25596y;
         Message obtainMessage = handler3.obtainMessage(12, bVar2);
-        j10 = this.f24310o.f24283d;
+        j10 = this.f25610o.f25583d;
         handler2.sendMessageDelayed(obtainMessage, j10);
     }
 
     private final void n(b1 b1Var) {
-        b1Var.d(this.f24301f, a());
+        b1Var.d(this.f25601f, a());
         try {
             b1Var.c(this);
         } catch (DeadObjectException unused) {
             f(1);
-            this.f24299d.c("DeadObjectException thrown while running ApiCallRunner.");
+            this.f25599d.c("DeadObjectException thrown while running ApiCallRunner.");
         }
     }
 
     private final void o() {
         Handler handler;
         Handler handler2;
-        if (this.f24306k) {
-            e eVar = this.f24310o;
-            b bVar = this.f24300e;
-            handler = eVar.f24296y;
+        if (this.f25606k) {
+            e eVar = this.f25610o;
+            b bVar = this.f25600e;
+            handler = eVar.f25596y;
             handler.removeMessages(11, bVar);
-            e eVar2 = this.f24310o;
-            b bVar2 = this.f24300e;
-            handler2 = eVar2.f24296y;
+            e eVar2 = this.f25610o;
+            b bVar2 = this.f25600e;
+            handler2 = eVar2.f25596y;
             handler2.removeMessages(9, bVar2);
-            this.f24306k = false;
+            this.f25606k = false;
         }
     }
 
@@ -317,36 +317,36 @@ public final class e0 implements e.a, e.b {
             n(b1Var);
             return true;
         }
-        String name = this.f24299d.getClass().getName();
+        String name = this.f25599d.getClass().getName();
         String name2 = c10.getName();
         long c11 = c10.c();
         Log.w("GoogleApiManager", name + " could not execute call because it requires feature (" + name2 + ", " + c11 + ").");
-        z10 = this.f24310o.f24297z;
+        z10 = this.f25610o.f25597z;
         if (z10 && m0Var.f(this)) {
-            g0 g0Var = new g0(this.f24300e, c10, null);
-            int indexOf = this.f24307l.indexOf(g0Var);
+            g0 g0Var = new g0(this.f25600e, c10, null);
+            int indexOf = this.f25607l.indexOf(g0Var);
             if (indexOf >= 0) {
-                g0 g0Var2 = (g0) this.f24307l.get(indexOf);
-                handler5 = this.f24310o.f24296y;
+                g0 g0Var2 = (g0) this.f25607l.get(indexOf);
+                handler5 = this.f25610o.f25596y;
                 handler5.removeMessages(15, g0Var2);
-                e eVar = this.f24310o;
-                handler6 = eVar.f24296y;
-                handler7 = eVar.f24296y;
+                e eVar = this.f25610o;
+                handler6 = eVar.f25596y;
+                handler7 = eVar.f25596y;
                 handler6.sendMessageDelayed(Message.obtain(handler7, 15, g0Var2), 5000L);
                 return false;
             }
-            this.f24307l.add(g0Var);
-            e eVar2 = this.f24310o;
-            handler = eVar2.f24296y;
-            handler2 = eVar2.f24296y;
+            this.f25607l.add(g0Var);
+            e eVar2 = this.f25610o;
+            handler = eVar2.f25596y;
+            handler2 = eVar2.f25596y;
             handler.sendMessageDelayed(Message.obtain(handler2, 15, g0Var), 5000L);
-            e eVar3 = this.f24310o;
-            handler3 = eVar3.f24296y;
-            handler4 = eVar3.f24296y;
+            e eVar3 = this.f25610o;
+            handler3 = eVar3.f25596y;
+            handler4 = eVar3.f25596y;
             handler3.sendMessageDelayed(Message.obtain(handler4, 16, g0Var), 120000L);
             com.google.android.gms.common.b bVar = new com.google.android.gms.common.b(2, null);
             if (!q(bVar)) {
-                this.f24310o.f(bVar, this.f24304i);
+                this.f25610o.f(bVar, this.f25604i);
                 return false;
             }
             return false;
@@ -363,13 +363,13 @@ public final class e0 implements e.a, e.b {
         obj = e.C;
         synchronized (obj) {
             try {
-                e eVar = this.f24310o;
-                wVar = eVar.f24293v;
+                e eVar = this.f25610o;
+                wVar = eVar.f25593v;
                 if (wVar != null) {
-                    set = eVar.f24294w;
-                    if (set.contains(this.f24300e)) {
-                        wVar2 = this.f24310o.f24293v;
-                        wVar2.s(bVar, this.f24304i);
+                    set = eVar.f25594w;
+                    if (set.contains(this.f25600e)) {
+                        wVar2 = this.f25610o.f25593v;
+                        wVar2.s(bVar, this.f25604i);
                         return true;
                     }
                 }
@@ -382,24 +382,24 @@ public final class e0 implements e.a, e.b {
 
     private final boolean r(boolean z10) {
         Handler handler;
-        handler = this.f24310o.f24296y;
+        handler = this.f25610o.f25596y;
         hf.q.d(handler);
-        if (this.f24299d.a() && this.f24303h.isEmpty()) {
-            if (this.f24301f.g()) {
+        if (this.f25599d.a() && this.f25603h.isEmpty()) {
+            if (this.f25601f.g()) {
                 if (z10) {
                     m();
                     return false;
                 }
                 return false;
             }
-            this.f24299d.c("Timing out service connection.");
+            this.f25599d.c("Timing out service connection.");
             return true;
         }
         return false;
     }
 
     public static /* bridge */ /* synthetic */ b w(e0 e0Var) {
-        return e0Var.f24300e;
+        return e0Var.f25600e;
     }
 
     public static /* bridge */ /* synthetic */ void y(e0 e0Var, Status status) {
@@ -408,39 +408,39 @@ public final class e0 implements e.a, e.b {
 
     public final void D() {
         Handler handler;
-        handler = this.f24310o.f24296y;
+        handler = this.f25610o.f25596y;
         hf.q.d(handler);
-        this.f24308m = null;
+        this.f25608m = null;
     }
 
     public final void E() {
         Handler handler;
         hf.h0 h0Var;
         Context context;
-        handler = this.f24310o.f24296y;
+        handler = this.f25610o.f25596y;
         hf.q.d(handler);
-        if (!this.f24299d.a() && !this.f24299d.d()) {
+        if (!this.f25599d.a() && !this.f25599d.d()) {
             try {
-                e eVar = this.f24310o;
-                h0Var = eVar.f24289r;
-                context = eVar.f24287p;
-                int b10 = h0Var.b(context, this.f24299d);
+                e eVar = this.f25610o;
+                h0Var = eVar.f25589r;
+                context = eVar.f25587p;
+                int b10 = h0Var.b(context, this.f25599d);
                 if (b10 != 0) {
                     com.google.android.gms.common.b bVar = new com.google.android.gms.common.b(b10, null);
-                    String name = this.f24299d.getClass().getName();
+                    String name = this.f25599d.getClass().getName();
                     String obj = bVar.toString();
                     Log.w("GoogleApiManager", "The service for " + name + " is not available: " + obj);
                     H(bVar, null);
                     return;
                 }
-                e eVar2 = this.f24310o;
-                a.f fVar = this.f24299d;
-                i0 i0Var = new i0(eVar2, fVar, this.f24300e);
+                e eVar2 = this.f25610o;
+                a.f fVar = this.f25599d;
+                i0 i0Var = new i0(eVar2, fVar, this.f25600e);
                 if (fVar.h()) {
-                    ((u0) hf.q.l(this.f24305j)).Z0(i0Var);
+                    ((u0) hf.q.l(this.f25605j)).Z0(i0Var);
                 }
                 try {
-                    this.f24299d.b(i0Var);
+                    this.f25599d.b(i0Var);
                 } catch (SecurityException e10) {
                     H(new com.google.android.gms.common.b(10), e10);
                 }
@@ -452,28 +452,28 @@ public final class e0 implements e.a, e.b {
 
     public final void F(b1 b1Var) {
         Handler handler;
-        handler = this.f24310o.f24296y;
+        handler = this.f25610o.f25596y;
         hf.q.d(handler);
-        if (this.f24299d.a()) {
+        if (this.f25599d.a()) {
             if (p(b1Var)) {
                 m();
                 return;
             } else {
-                this.f24298c.add(b1Var);
+                this.f25598c.add(b1Var);
                 return;
             }
         }
-        this.f24298c.add(b1Var);
-        com.google.android.gms.common.b bVar = this.f24308m;
+        this.f25598c.add(b1Var);
+        com.google.android.gms.common.b bVar = this.f25608m;
         if (bVar != null && bVar.f()) {
-            H(this.f24308m, null);
+            H(this.f25608m, null);
         } else {
             E();
         }
     }
 
     public final void G() {
-        this.f24309n++;
+        this.f25609n++;
     }
 
     public final void H(com.google.android.gms.common.b bVar, Exception exc) {
@@ -489,65 +489,65 @@ public final class e0 implements e.a, e.b {
         Status status;
         Handler handler5;
         Handler handler6;
-        handler = this.f24310o.f24296y;
+        handler = this.f25610o.f25596y;
         hf.q.d(handler);
-        u0 u0Var = this.f24305j;
+        u0 u0Var = this.f25605j;
         if (u0Var != null) {
             u0Var.a1();
         }
         D();
-        h0Var = this.f24310o.f24289r;
+        h0Var = this.f25610o.f25589r;
         h0Var.c();
         d(bVar);
-        if ((this.f24299d instanceof kf.e) && bVar.c() != 24) {
-            this.f24310o.f24284e = true;
-            e eVar = this.f24310o;
-            handler5 = eVar.f24296y;
-            handler6 = eVar.f24296y;
+        if ((this.f25599d instanceof kf.e) && bVar.c() != 24) {
+            this.f25610o.f25584e = true;
+            e eVar = this.f25610o;
+            handler5 = eVar.f25596y;
+            handler6 = eVar.f25596y;
             handler5.sendMessageDelayed(handler6.obtainMessage(19), LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES);
         }
         if (bVar.c() == 4) {
             status = e.B;
             g(status);
-        } else if (this.f24298c.isEmpty()) {
-            this.f24308m = bVar;
+        } else if (this.f25598c.isEmpty()) {
+            this.f25608m = bVar;
         } else if (exc != null) {
-            handler4 = this.f24310o.f24296y;
+            handler4 = this.f25610o.f25596y;
             hf.q.d(handler4);
-            i(null, exc, false);
+            h(null, exc, false);
         } else {
-            z10 = this.f24310o.f24297z;
+            z10 = this.f25610o.f25597z;
             if (z10) {
-                g11 = e.g(this.f24300e, bVar);
-                i(g11, null, true);
-                if (!this.f24298c.isEmpty() && !q(bVar) && !this.f24310o.f(bVar, this.f24304i)) {
+                g11 = e.g(this.f25600e, bVar);
+                h(g11, null, true);
+                if (!this.f25598c.isEmpty() && !q(bVar) && !this.f25610o.f(bVar, this.f25604i)) {
                     if (bVar.c() == 18) {
-                        this.f24306k = true;
+                        this.f25606k = true;
                     }
-                    if (!this.f24306k) {
-                        g12 = e.g(this.f24300e, bVar);
+                    if (!this.f25606k) {
+                        g12 = e.g(this.f25600e, bVar);
                         g(g12);
                         return;
                     }
-                    e eVar2 = this.f24310o;
-                    b bVar2 = this.f24300e;
-                    handler2 = eVar2.f24296y;
-                    handler3 = eVar2.f24296y;
+                    e eVar2 = this.f25610o;
+                    b bVar2 = this.f25600e;
+                    handler2 = eVar2.f25596y;
+                    handler3 = eVar2.f25596y;
                     handler2.sendMessageDelayed(Message.obtain(handler3, 9, bVar2), 5000L);
                     return;
                 }
                 return;
             }
-            g10 = e.g(this.f24300e, bVar);
+            g10 = e.g(this.f25600e, bVar);
             g(g10);
         }
     }
 
     public final void I(com.google.android.gms.common.b bVar) {
         Handler handler;
-        handler = this.f24310o.f24296y;
+        handler = this.f25610o.f25596y;
         hf.q.d(handler);
-        a.f fVar = this.f24299d;
+        a.f fVar = this.f25599d;
         String name = fVar.getClass().getName();
         String valueOf = String.valueOf(bVar);
         fVar.c("onSignInFailed for " + name + " with " + valueOf);
@@ -556,25 +556,25 @@ public final class e0 implements e.a, e.b {
 
     public final void J() {
         Handler handler;
-        handler = this.f24310o.f24296y;
+        handler = this.f25610o.f25596y;
         hf.q.d(handler);
-        if (this.f24306k) {
+        if (this.f25606k) {
             E();
         }
     }
 
     public final void K() {
         Handler handler;
-        handler = this.f24310o.f24296y;
+        handler = this.f25610o.f25596y;
         hf.q.d(handler);
         g(e.A);
-        this.f24301f.f();
-        for (i iVar : (i[]) this.f24303h.keySet().toArray(new i[0])) {
+        this.f25601f.f();
+        for (i iVar : (i[]) this.f25603h.keySet().toArray(new i[0])) {
             F(new a1(iVar, new zg.k()));
         }
         d(new com.google.android.gms.common.b(4));
-        if (this.f24299d.a()) {
-            this.f24299d.g(new d0(this));
+        if (this.f25599d.a()) {
+            this.f25599d.g(new d0(this));
         }
     }
 
@@ -583,25 +583,25 @@ public final class e0 implements e.a, e.b {
         com.google.android.gms.common.f fVar;
         Context context;
         Status status;
-        handler = this.f24310o.f24296y;
+        handler = this.f25610o.f25596y;
         hf.q.d(handler);
-        if (this.f24306k) {
+        if (this.f25606k) {
             o();
-            e eVar = this.f24310o;
-            fVar = eVar.f24288q;
-            context = eVar.f24287p;
+            e eVar = this.f25610o;
+            fVar = eVar.f25588q;
+            context = eVar.f25587p;
             if (fVar.g(context) == 18) {
                 status = new Status(21, "Connection timed out waiting for Google Play services update to complete.");
             } else {
                 status = new Status(22, "API failed to connect while resuming due to an unknown error.");
             }
             g(status);
-            this.f24299d.c("Timing out connection while resuming.");
+            this.f25599d.c("Timing out connection while resuming.");
         }
     }
 
     public final boolean a() {
-        return this.f24299d.h();
+        return this.f25599d.h();
     }
 
     public final boolean b() {
@@ -612,11 +612,11 @@ public final class e0 implements e.a, e.b {
     public final void e(Bundle bundle) {
         Handler handler;
         Handler handler2;
-        e eVar = this.f24310o;
+        e eVar = this.f25610o;
         Looper myLooper = Looper.myLooper();
-        handler = eVar.f24296y;
+        handler = eVar.f25596y;
         if (myLooper != handler.getLooper()) {
-            handler2 = this.f24310o.f24296y;
+            handler2 = this.f25610o.f25596y;
             handler2.post(new a0(this));
             return;
         }
@@ -627,11 +627,11 @@ public final class e0 implements e.a, e.b {
     public final void f(int i10) {
         Handler handler;
         Handler handler2;
-        e eVar = this.f24310o;
+        e eVar = this.f25610o;
         Looper myLooper = Looper.myLooper();
-        handler = eVar.f24296y;
+        handler = eVar.f25596y;
         if (myLooper != handler.getLooper()) {
-            handler2 = this.f24310o.f24296y;
+            handler2 = this.f25610o.f25596y;
             handler2.post(new b0(this, i10));
             return;
         }
@@ -639,23 +639,23 @@ public final class e0 implements e.a, e.b {
     }
 
     @Override // gf.k
-    public final void h(com.google.android.gms.common.b bVar) {
+    public final void i(com.google.android.gms.common.b bVar) {
         H(bVar, null);
     }
 
     public final int s() {
-        return this.f24304i;
+        return this.f25604i;
     }
 
     public final int t() {
-        return this.f24309n;
+        return this.f25609n;
     }
 
     public final a.f v() {
-        return this.f24299d;
+        return this.f25599d;
     }
 
     public final Map x() {
-        return this.f24303h;
+        return this.f25603h;
     }
 }

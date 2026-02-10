@@ -50,7 +50,7 @@ public final class AttributeStyles_ComplexTextBasedFontWeightStyleJsonAdapter ex
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 fontWeightContainer = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
@@ -70,7 +70,7 @@ public final class AttributeStyles_ComplexTextBasedFontWeightStyleJsonAdapter ex
     public void toJson(@NotNull t writer, AttributeStyles.ComplexTextBasedFontWeightStyle complexTextBasedFontWeightStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complexTextBasedFontWeightStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("value");
             this.nullableFontWeightContainerAdapter.toJson(writer, complexTextBasedFontWeightStyle.getValue());
             writer.J(ReactTextInputShadowNode.PROP_PLACEHOLDER);

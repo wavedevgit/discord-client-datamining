@@ -10,18 +10,18 @@ import java.util.Iterator;
 public class h implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private ULocale f21215a;
+    private ULocale f22382a;
 
     /* renamed from: b  reason: collision with root package name */
-    private ULocale.Builder f21216b;
+    private ULocale.Builder f22383b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f21217c;
+    private boolean f22384c;
 
     private h(ULocale uLocale) {
-        this.f21216b = null;
-        this.f21217c = false;
-        this.f21215a = uLocale;
+        this.f22383b = null;
+        this.f22384c = false;
+        this.f22382a = uLocale;
     }
 
     public static b i() {
@@ -37,10 +37,10 @@ public class h implements b {
     }
 
     private void l() {
-        if (this.f21217c) {
+        if (this.f22384c) {
             try {
-                this.f21215a = this.f21216b.build();
-                this.f21217c = false;
+                this.f22382a = this.f22383b.build();
+                this.f22384c = false;
             } catch (RuntimeException e10) {
                 throw new f(e10.getMessage());
             }
@@ -51,11 +51,11 @@ public class h implements b {
     public HashMap a() {
         l();
         HashMap hashMap = new HashMap();
-        Iterator<String> keywords = this.f21215a.getKeywords();
+        Iterator<String> keywords = this.f22382a.getKeywords();
         if (keywords != null) {
             while (keywords.hasNext()) {
                 String next = keywords.next();
-                hashMap.put(i.b(next), this.f21215a.getKeywordValue(next));
+                hashMap.put(i.b(next), this.f22382a.getKeywordValue(next));
             }
         }
         return hashMap;
@@ -66,7 +66,7 @@ public class h implements b {
         l();
         String a10 = i.a(str);
         ArrayList arrayList = new ArrayList();
-        String keywordValue = this.f21215a.getKeywordValue(a10);
+        String keywordValue = this.f22382a.getKeywordValue(a10);
         if (keywordValue != null && !keywordValue.isEmpty()) {
             Collections.addAll(arrayList, keywordValue.split("-|_"));
         }
@@ -76,7 +76,7 @@ public class h implements b {
     @Override // ea.b
     public b d() {
         l();
-        return new h(this.f21215a);
+        return new h(this.f22382a);
     }
 
     @Override // ea.b
@@ -87,12 +87,12 @@ public class h implements b {
     @Override // ea.b
     public void f(String str, ArrayList arrayList) {
         l();
-        if (this.f21216b == null) {
-            this.f21216b = new ULocale.Builder().setLocale(this.f21215a);
+        if (this.f22383b == null) {
+            this.f22383b = new ULocale.Builder().setLocale(this.f22382a);
         }
         try {
-            this.f21216b.setUnicodeLocaleKeyword(str, TextUtils.join("-", arrayList));
-            this.f21217c = true;
+            this.f22383b.setUnicodeLocaleKeyword(str, TextUtils.join("-", arrayList));
+            this.f22384c = true;
         } catch (RuntimeException e10) {
             throw new f(e10.getMessage());
         }
@@ -107,7 +107,7 @@ public class h implements b {
     /* renamed from: m */
     public ULocale h() {
         l();
-        return this.f21215a;
+        return this.f22382a;
     }
 
     @Override // ea.b
@@ -115,20 +115,20 @@ public class h implements b {
     public ULocale c() {
         l();
         ULocale.Builder builder = new ULocale.Builder();
-        builder.setLocale(this.f21215a);
+        builder.setLocale(this.f22382a);
         builder.clearExtensions();
         return builder.build();
     }
 
     private h(String str) {
-        this.f21215a = null;
-        this.f21216b = null;
-        this.f21217c = false;
+        this.f22382a = null;
+        this.f22383b = null;
+        this.f22384c = false;
         ULocale.Builder builder = new ULocale.Builder();
-        this.f21216b = builder;
+        this.f22383b = builder;
         try {
             builder.setLanguageTag(str);
-            this.f21217c = true;
+            this.f22384c = true;
         } catch (RuntimeException e10) {
             throw new f(e10.getMessage());
         }

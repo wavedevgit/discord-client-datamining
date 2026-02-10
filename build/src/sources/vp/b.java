@@ -1,29 +1,54 @@
 package vp;
 
-import cr.d;
-import cr.g;
-import kotlinx.coroutines.CoroutineDispatcher;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.viewbinding.ViewBinding;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.squareup.workflow1.ui.WorkflowViewStub;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements d {
+public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f52992a;
+    private final CoordinatorLayout f51739a;
 
-    public b(a aVar) {
-        this.f52992a = aVar;
+    /* renamed from: b  reason: collision with root package name */
+    public final WorkflowViewStub f51740b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final FloatingActionButton f51741c;
+
+    private b(CoordinatorLayout coordinatorLayout, WorkflowViewStub workflowViewStub, FloatingActionButton floatingActionButton) {
+        this.f51739a = coordinatorLayout;
+        this.f51740b = workflowViewStub;
+        this.f51741c = floatingActionButton;
     }
 
-    public static b a(a aVar) {
-        return new b(aVar);
+    public static b a(View view) {
+        int i10 = up.a.f50876a;
+        WorkflowViewStub workflowViewStub = (WorkflowViewStub) e4.a.a(view, i10);
+        if (workflowViewStub != null) {
+            i10 = up.a.f50877b;
+            FloatingActionButton floatingActionButton = (FloatingActionButton) e4.a.a(view, i10);
+            if (floatingActionButton != null) {
+                return new b((CoordinatorLayout) view, workflowViewStub, floatingActionButton);
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    public static CoroutineDispatcher c(a aVar) {
-        return (CoroutineDispatcher) g.d(aVar.a());
+    public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(up.b.f50881b, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return a(inflate);
     }
 
-    @Override // javax.inject.Provider
+    @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
-    public CoroutineDispatcher get() {
-        return c(this.f52992a);
+    public CoordinatorLayout getRoot() {
+        return this.f51739a;
     }
 }

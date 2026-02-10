@@ -27,16 +27,16 @@ public enum b0 implements Parcelable {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f54888d;
+    private final String f54620d;
 
     b0(String str) {
-        this.f54888d = str;
+        this.f54620d = str;
     }
 
     public static b0 a(String str) {
         b0[] values;
         for (b0 b0Var : values()) {
-            if (str.equals(b0Var.f54888d)) {
+            if (str.equals(b0Var.f54620d)) {
                 return b0Var;
             }
         }
@@ -50,11 +50,11 @@ public enum b0 implements Parcelable {
 
     @Override // java.lang.Enum
     public final String toString() {
-        return this.f54888d;
+        return this.f54620d;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f54888d);
+        parcel.writeString(this.f54620d);
     }
 }

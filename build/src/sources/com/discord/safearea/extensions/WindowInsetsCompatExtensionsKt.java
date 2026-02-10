@@ -9,7 +9,7 @@ import android.view.WindowInsets;
 import androidx.core.graphics.Insets;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
-import androidx.core.view.w0;
+import androidx.core.view.x0;
 import com.discord.misc.utilities.activity.ActivityExtensionsKt;
 import com.facebook.react.uimanager.ViewProps;
 import kotlin.Metadata;
@@ -87,7 +87,7 @@ public final class WindowInsetsCompatExtensionsKt {
         } else {
             i10 = 0;
         }
-        Insets c11 = Insets.c(insets.f3301a, insets.f3302b, insets.f3303c, i10);
+        Insets c11 = Insets.c(insets.f3304a, insets.f3305b, insets.f3306c, i10);
         Intrinsics.checkNotNullExpressionValue(c11, "of(...)");
         return c11;
     }
@@ -111,7 +111,7 @@ public final class WindowInsetsCompatExtensionsKt {
 
     public static final void setInsetsType(@NotNull Window window, int i10, boolean z10) {
         Intrinsics.checkNotNullParameter(window, "<this>");
-        WindowInsetsControllerCompat b10 = w0.b(window, window.getDecorView());
+        WindowInsetsControllerCompat b10 = x0.b(window, window.getDecorView());
         b10.f(2);
         if (z10) {
             b10.g(i10);

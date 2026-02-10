@@ -42,11 +42,11 @@ public interface l1 extends Closeable {
     @Override // java.io.Closeable, java.lang.AutoCloseable
     void close();
 
-    void e1(float[] fArr, float[] fArr2);
-
-    Surface f1(Executor executor, Consumer consumer);
-
     int getFormat();
 
     Size getSize();
+
+    void j1(float[] fArr, float[] fArr2);
+
+    Surface k1(Executor executor, Consumer consumer);
 }

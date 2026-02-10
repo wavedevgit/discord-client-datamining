@@ -1,27 +1,47 @@
 package rm;
-
-import com.facebook.react.uimanager.ThemedReactContext;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0658a f49065a = new C0658a(null);
+    private final double f47464a;
 
-    /* renamed from: rm.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0658a {
-        public /* synthetic */ C0658a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: b  reason: collision with root package name */
+    private final double f47465b;
 
-        private C0658a() {
-        }
+    public a(double d10, double d11) {
+        this.f47464a = d10;
+        this.f47465b = d11;
     }
 
-    public final xm.b a(ThemedReactContext reactContext) {
-        Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        return new xm.b(reactContext);
+    public final double a() {
+        return this.f47465b;
+    }
+
+    public final double b() {
+        return this.f47464a;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof a)) {
+            return false;
+        }
+        a aVar = (a) obj;
+        if (Double.compare(this.f47464a, aVar.f47464a) == 0 && Double.compare(this.f47465b, aVar.f47465b) == 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return (Double.hashCode(this.f47464a) * 31) + Double.hashCode(this.f47465b);
+    }
+
+    public String toString() {
+        double d10 = this.f47464a;
+        double d11 = this.f47465b;
+        return "Dimensions(width=" + d10 + ", height=" + d11 + ")";
     }
 }

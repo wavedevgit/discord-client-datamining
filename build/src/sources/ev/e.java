@@ -1,53 +1,33 @@
 package ev;
 
+import java.util.ArrayList;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import uu.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface e extends uu.c {
+public final class e implements cv.b {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        private static boolean a(e eVar, List list, Function2 function2) {
-            boolean b10 = eVar.b(CollectionsKt.o((Comparable) CollectionsKt.firstOrNull(list), (Comparable) dw.c.b(list)), function2);
-            boolean b11 = eVar.b(CollectionsKt.o((Comparable) dw.c.b(list), (Comparable) dw.c.c(list)), function2);
-            if (!b10 || !b11) {
-                return false;
+    /* renamed from: a  reason: collision with root package name */
+    public static final e f23273a = new e();
+
+    private e() {
+    }
+
+    private final List a(List list) {
+        List e10;
+        ArrayList arrayList = new ArrayList();
+        for (Object obj : list) {
+            if (obj instanceof List) {
+                e10 = (List) obj;
+            } else {
+                e10 = CollectionsKt.e(obj);
             }
-            return true;
+            CollectionsKt.B(arrayList, e10);
         }
+        return arrayList;
+    }
 
-        public static boolean b(e eVar, List list, Function2 operator) {
-            Intrinsics.checkNotNullParameter(operator, "operator");
-            return c.a.b(eVar, list, operator);
-        }
-
-        public static boolean c(e eVar, List list, Function2 operator) {
-            List d10;
-            Intrinsics.checkNotNullParameter(operator, "operator");
-            if (list != null && (d10 = dw.a.d(list)) != null) {
-                if (d10.size() == 2) {
-                    return eVar.b(d10, operator);
-                }
-                if (d10.size() > 2) {
-                    return a(eVar, d10, operator);
-                }
-            }
-            return false;
-        }
-
-        public static List d(e eVar, Comparable comparable, Comparable comparable2) {
-            return c.a.d(eVar, comparable, comparable2);
-        }
-
-        public static List e(e eVar, Comparable comparable, Comparable comparable2) {
-            return c.a.e(eVar, comparable, comparable2);
-        }
-
-        public static Boolean f(e eVar, Object obj) {
-            return c.a.f(eVar, obj);
-        }
+    @Override // cv.b
+    public Object f(Object obj, Object obj2) {
+        return a(mw.a.c(obj));
     }
 }

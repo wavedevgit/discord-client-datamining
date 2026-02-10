@@ -1,38 +1,38 @@
 package og;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class l7 implements zi.d {
+final class l7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l7 f41115a = new l7();
+    static final l7 f39441a = new l7();
 
     static {
-        c.b a10 = zi.c.a("options");
+        c.b a10 = bj.c.a("options");
         l2 l2Var = new l2();
         l2Var.a(1);
         a10.b(l2Var.b()).a();
-        c.b a11 = zi.c.a("sessionId");
+        c.b a11 = bj.c.a("sessionId");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
         a11.b(l2Var2.b()).a();
-        c.b a12 = zi.c.a("sessionDurationMs");
+        c.b a12 = bj.c.a("sessionDurationMs");
         l2 l2Var3 = new l2();
         l2Var3.a(3);
         a12.b(l2Var3.b()).a();
-        c.b a13 = zi.c.a("callerAppId");
+        c.b a13 = bj.c.a("callerAppId");
         l2 l2Var4 = new l2();
         l2Var4.a(4);
         a13.b(l2Var4.b()).a();
-        c.b a14 = zi.c.a("numRetakes");
+        c.b a14 = bj.c.a("numRetakes");
         l2 l2Var5 = new l2();
         l2Var5.a(5);
         a14.b(l2Var5.b()).a();
-        c.b a15 = zi.c.a("pages");
+        c.b a15 = bj.c.a("pages");
         l2 l2Var6 = new l2();
         l2Var6.a(6);
         a15.b(l2Var6.b()).a();
-        c.b a16 = zi.c.a("isSessionCanceled");
+        c.b a16 = bj.c.a("isSessionCanceled");
         l2 l2Var7 = new l2();
         l2Var7.a(7);
         a16.b(l2Var7.b()).a();
@@ -41,10 +41,10 @@ final class l7 implements zi.d {
     private l7() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

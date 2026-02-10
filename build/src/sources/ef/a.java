@@ -25,10 +25,10 @@ import zg.m;
 public abstract class a extends BroadcastReceiver {
 
     /* renamed from: a  reason: collision with root package name */
-    private static SoftReference f21603a;
+    private static SoftReference f22770a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static SoftReference f21604b;
+    private static SoftReference f22771b;
 
     private final int e(Context context, Intent intent) {
         PendingIntent pendingIntent = (PendingIntent) intent.getParcelableExtra("pending_intent");
@@ -57,7 +57,7 @@ public abstract class a extends BroadcastReceiver {
         ExecutorService executorService;
         synchronized (a.class) {
             try {
-                SoftReference softReference = f21603a;
+                SoftReference softReference = f22770a;
                 if (softReference != null) {
                     executorService = (ExecutorService) softReference.get();
                 } else {
@@ -66,7 +66,7 @@ public abstract class a extends BroadcastReceiver {
                 if (executorService == null) {
                     hg.e.a();
                     executorService = Executors.unconfigurableExecutorService(Executors.newCachedThreadPool(new pf.a("firebase-iid-executor")));
-                    f21603a = new SoftReference(executorService);
+                    f22770a = new SoftReference(executorService);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -99,7 +99,7 @@ public abstract class a extends BroadcastReceiver {
                 final com.google.android.gms.cloudmessaging.a aVar = new com.google.android.gms.cloudmessaging.a(intent);
                 final CountDownLatch countDownLatch = new CountDownLatch(1);
                 synchronized (a.class) {
-                    SoftReference softReference = f21604b;
+                    SoftReference softReference = f22771b;
                     if (softReference != null) {
                         executor = (Executor) softReference.get();
                     }
@@ -108,7 +108,7 @@ public abstract class a extends BroadcastReceiver {
                         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 1, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new pf.a("pscm-ack-executor"));
                         threadPoolExecutor.allowCoreThreadTimeOut(true);
                         executor = Executors.unconfigurableExecutorService(threadPoolExecutor);
-                        f21604b = new SoftReference(executor);
+                        f22771b = new SoftReference(executor);
                     }
                 }
                 executor.execute(new Runnable() { // from class: com.google.android.gms.cloudmessaging.d

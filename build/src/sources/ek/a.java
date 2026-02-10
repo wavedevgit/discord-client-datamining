@@ -1,220 +1,203 @@
 package ek;
 
 import android.graphics.Matrix;
-import android.graphics.Point;
+import android.graphics.PointF;
 import android.graphics.Rect;
-import ek.a;
+import android.util.SparseArray;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import rg.bl;
-import rg.qk;
-import rg.tk;
-import rg.uj;
-import rg.vk;
-import rg.w0;
-import rg.xk;
+import qg.c2;
+import qg.e4;
+import qg.fe;
+import qg.je;
+import qg.mc;
+import qg.qe;
+import qg.xe;
+import qg.ye;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f21726a;
+    private final Rect f22892a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f21727b;
+    private int f22893b;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class c extends d {
+    /* renamed from: c  reason: collision with root package name */
+    private final float f22894c;
 
-        /* renamed from: e  reason: collision with root package name */
-        private final float f21734e;
+    /* renamed from: d  reason: collision with root package name */
+    private final float f22895d;
 
-        /* renamed from: f  reason: collision with root package name */
-        private final float f21735f;
+    /* renamed from: e  reason: collision with root package name */
+    private final float f22896e;
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        public c(bl blVar, Matrix matrix) {
-            super(blVar.e(), blVar.d(), blVar.f(), "", matrix);
-            this.f21734e = blVar.c();
-            this.f21735f = blVar.b();
+    /* renamed from: f  reason: collision with root package name */
+    private final float f22897f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final float f22898g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final float f22899h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final SparseArray f22900i = new SparseArray();
+
+    /* renamed from: j  reason: collision with root package name */
+    private final SparseArray f22901j = new SparseArray();
+
+    public a(e4 e4Var, Matrix matrix) {
+        mc[] mcVarArr;
+        c2[] c2VarArr;
+        int length;
+        float f10 = e4Var.f44383i;
+        float f11 = e4Var.f44385p / 2.0f;
+        float f12 = e4Var.f44384o;
+        float f13 = e4Var.f44386q / 2.0f;
+        Rect rect = new Rect((int) (f10 - f11), (int) (f12 - f13), (int) (f10 + f11), (int) (f12 + f13));
+        this.f22892a = rect;
+        if (matrix != null) {
+            dk.b.e(rect, matrix);
         }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class d {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final String f21736a;
-
-        /* renamed from: b  reason: collision with root package name */
-        private final Rect f21737b;
-
-        /* renamed from: c  reason: collision with root package name */
-        private final Point[] f21738c;
-
-        /* renamed from: d  reason: collision with root package name */
-        private final String f21739d;
-
-        d(String str, Rect rect, List list, String str2, Matrix matrix) {
-            this.f21736a = str;
-            Rect rect2 = new Rect(rect);
-            if (matrix != null) {
-                bk.b.e(rect2, matrix);
-            }
-            this.f21737b = rect2;
-            Point[] pointArr = new Point[list.size()];
-            for (int i10 = 0; i10 < list.size(); i10++) {
-                pointArr[i10] = new Point((Point) list.get(i10));
-            }
-            if (matrix != null) {
-                bk.b.b(pointArr, matrix);
-            }
-            this.f21738c = pointArr;
-            this.f21739d = str2;
-        }
-
-        public String a() {
-            return this.f21739d;
-        }
-
-        protected final String b() {
-            String str = this.f21736a;
-            if (str == null) {
-                return "";
-            }
-            return str;
-        }
-    }
-
-    public a(xk xkVar, final Matrix matrix) {
-        ArrayList arrayList = new ArrayList();
-        this.f21726a = arrayList;
-        this.f21727b = xkVar.b();
-        arrayList.addAll(w0.a(xkVar.c(), new uj() { // from class: ek.e
-            @Override // rg.uj
-            public final Object a(Object obj) {
-                return new a.e((qk) obj, matrix);
-            }
-        }));
-    }
-
-    public String a() {
-        return this.f21727b;
-    }
-
-    public List b() {
-        return Collections.unmodifiableList(this.f21726a);
-    }
-
-    public a(String str, List list) {
-        ArrayList arrayList = new ArrayList();
-        this.f21726a = arrayList;
-        arrayList.addAll(list);
-        this.f21727b = str;
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class b extends d {
-
-        /* renamed from: e  reason: collision with root package name */
-        private final List f21731e;
-
-        /* renamed from: f  reason: collision with root package name */
-        private final float f21732f;
-
-        /* renamed from: g  reason: collision with root package name */
-        private final float f21733g;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        public b(vk vkVar, final Matrix matrix, float f10, float f11) {
-            super(vkVar.f(), vkVar.d(), vkVar.h(), vkVar.e(), matrix);
-            this.f21731e = w0.a(vkVar.i(), new uj() { // from class: ek.g
-                @Override // rg.uj
-                public final Object a(Object obj) {
-                    return new a.C0316a((tk) obj, matrix);
+        this.f22893b = e4Var.f44382e;
+        for (mc mcVar : e4Var.f44390u) {
+            if (i(mcVar.f44719o)) {
+                PointF pointF = new PointF(mcVar.f44717e, mcVar.f44718i);
+                if (matrix != null) {
+                    dk.b.c(pointF, matrix);
                 }
-            });
-            this.f21732f = f10;
-            this.f21733g = f11;
+                SparseArray sparseArray = this.f22900i;
+                int i10 = mcVar.f44719o;
+                sparseArray.put(i10, new f(i10, pointF));
+            }
         }
-
-        public String c() {
-            return b();
+        for (c2 c2Var : e4Var.f44394y) {
+            int i11 = c2Var.f44195e;
+            if (h(i11)) {
+                PointF[] pointFArr = c2Var.f44194d;
+                pointFArr.getClass();
+                long length2 = pointFArr.length + 5 + (length / 10);
+                ArrayList arrayList = new ArrayList(length2 > 2147483647L ? Integer.MAX_VALUE : (int) length2);
+                Collections.addAll(arrayList, pointFArr);
+                if (matrix != null) {
+                    dk.b.d(arrayList, matrix);
+                }
+                this.f22901j.put(i11, new b(i11, arrayList));
+            }
         }
+        this.f22897f = e4Var.f44389t;
+        this.f22898g = e4Var.f44387r;
+        this.f22899h = e4Var.f44388s;
+        this.f22896e = e4Var.f44393x;
+        this.f22895d = e4Var.f44391v;
+        this.f22894c = e4Var.f44392w;
+    }
 
-        public b(String str, Rect rect, List list, String str2, Matrix matrix, List list2, float f10, float f11) {
-            super(str, rect, list, str2, matrix);
-            this.f21731e = list2;
-            this.f21732f = f10;
-            this.f21733g = f11;
+    private static boolean h(int i10) {
+        if (i10 <= 15 && i10 > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    private static boolean i(int i10) {
+        if (i10 == 0 || i10 == 1 || i10 == 7 || i10 == 3 || i10 == 9 || i10 == 4 || i10 == 10 || i10 == 5 || i10 == 11 || i10 == 6) {
+            return true;
+        }
+        return false;
+    }
+
+    public Rect a() {
+        return this.f22892a;
+    }
+
+    public b b(int i10) {
+        return (b) this.f22901j.get(i10);
+    }
+
+    public float c() {
+        return this.f22898g;
+    }
+
+    public f d(int i10) {
+        return (f) this.f22900i.get(i10);
+    }
+
+    public final SparseArray e() {
+        return this.f22901j;
+    }
+
+    public final void f(SparseArray sparseArray) {
+        this.f22901j.clear();
+        for (int i10 = 0; i10 < sparseArray.size(); i10++) {
+            this.f22901j.put(sparseArray.keyAt(i10), (b) sparseArray.valueAt(i10));
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class e extends d {
-
-        /* renamed from: e  reason: collision with root package name */
-        private final List f21740e;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        public e(qk qkVar, final Matrix matrix) {
-            super(qkVar.d(), qkVar.b(), qkVar.e(), qkVar.c(), matrix);
-            this.f21740e = w0.a(qkVar.f(), new uj() { // from class: ek.h
-                @Override // rg.uj
-                public final Object a(Object obj) {
-                    vk vkVar = (vk) obj;
-                    return new a.b(vkVar, matrix, vkVar.c(), vkVar.b());
-                }
-            });
-        }
-
-        public synchronized List c() {
-            return this.f21740e;
-        }
-
-        public String d() {
-            return b();
-        }
-
-        public e(String str, Rect rect, List list, String str2, Matrix matrix, List list2) {
-            super(str, rect, list, str2, matrix);
-            this.f21740e = list2;
-        }
+    public final void g(int i10) {
+        this.f22893b = -1;
     }
 
-    /* renamed from: ek.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class C0316a extends d {
+    public String toString() {
+        xe a10 = ye.a("Face");
+        a10.c("boundingBox", this.f22892a);
+        a10.b("trackingId", this.f22893b);
+        a10.a("rightEyeOpenProbability", this.f22894c);
+        a10.a("leftEyeOpenProbability", this.f22895d);
+        a10.a("smileProbability", this.f22896e);
+        a10.a("eulerX", this.f22897f);
+        a10.a("eulerY", this.f22898g);
+        a10.a("eulerZ", this.f22899h);
+        xe a11 = ye.a("Landmarks");
+        for (int i10 = 0; i10 <= 11; i10++) {
+            if (i(i10)) {
+                a11.c("landmark_" + i10, d(i10));
+            }
+        }
+        a10.c("landmarks", a11.toString());
+        xe a12 = ye.a("Contours");
+        for (int i11 = 1; i11 <= 15; i11++) {
+            a12.c("Contour_" + i11, b(i11));
+        }
+        a10.c("contours", a12.toString());
+        return a10.toString();
+    }
 
-        /* renamed from: e  reason: collision with root package name */
-        private final List f21728e;
-
-        /* renamed from: f  reason: collision with root package name */
-        private final float f21729f;
-
-        /* renamed from: g  reason: collision with root package name */
-        private final float f21730g;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        public C0316a(tk tkVar, final Matrix matrix) {
-            super(tkVar.f(), tkVar.d(), tkVar.h(), tkVar.e(), matrix);
-            this.f21729f = tkVar.c();
-            this.f21730g = tkVar.b();
-            List i10 = tkVar.i();
-            this.f21728e = w0.a(i10 == null ? new ArrayList() : i10, new uj() { // from class: ek.f
-                @Override // rg.uj
-                public final Object a(Object obj) {
-                    return new a.c((bl) obj, matrix);
+    public a(je jeVar, Matrix matrix) {
+        Rect j10 = jeVar.j();
+        this.f22892a = j10;
+        if (matrix != null) {
+            dk.b.e(j10, matrix);
+        }
+        this.f22893b = jeVar.i();
+        for (qe qeVar : jeVar.l()) {
+            if (i(qeVar.b())) {
+                PointF c10 = qeVar.c();
+                if (matrix != null) {
+                    dk.b.c(c10, matrix);
                 }
-            });
+                this.f22900i.put(qeVar.b(), new f(qeVar.b(), c10));
+            }
         }
-
-        public C0316a(String str, Rect rect, List list, String str2, Matrix matrix, float f10, float f11, List list2) {
-            super(str, rect, list, str2, matrix);
-            this.f21729f = f10;
-            this.f21730g = f11;
-            this.f21728e = list2;
+        for (fe feVar : jeVar.k()) {
+            int b10 = feVar.b();
+            if (h(b10)) {
+                List c11 = feVar.c();
+                c11.getClass();
+                ArrayList arrayList = new ArrayList(c11);
+                if (matrix != null) {
+                    dk.b.d(arrayList, matrix);
+                }
+                this.f22901j.put(b10, new b(b10, arrayList));
+            }
         }
+        this.f22897f = jeVar.g();
+        this.f22898g = jeVar.c();
+        this.f22899h = -jeVar.e();
+        this.f22896e = jeVar.f();
+        this.f22895d = jeVar.b();
+        this.f22894c = jeVar.d();
     }
 }

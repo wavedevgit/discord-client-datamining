@@ -5,22 +5,22 @@ import java.io.StringReader;
 import mc.l0;
 import oe.y;
 import oe.y0;
-import oi.s;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
+import qi.s;
 import zc.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String[] f56317a = {"Camera:MotionPhoto", "GCamera:MotionPhoto", "Camera:MicroVideo", "GCamera:MicroVideo"};
+    private static final String[] f56356a = {"Camera:MotionPhoto", "GCamera:MotionPhoto", "Camera:MicroVideo", "GCamera:MicroVideo"};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String[] f56318b = {"Camera:MotionPhotoPresentationTimestampUs", "GCamera:MotionPhotoPresentationTimestampUs", "Camera:MicroVideoPresentationTimestampUs", "GCamera:MicroVideoPresentationTimestampUs"};
+    private static final String[] f56357b = {"Camera:MotionPhotoPresentationTimestampUs", "GCamera:MotionPhotoPresentationTimestampUs", "Camera:MicroVideoPresentationTimestampUs", "GCamera:MicroVideoPresentationTimestampUs"};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String[] f56319c = {"Camera:MicroVideoOffset", "GCamera:MicroVideoOffset"};
+    private static final String[] f56358c = {"Camera:MicroVideoOffset", "GCamera:MicroVideoOffset"};
 
     public static b a(String str) {
         try {
@@ -61,7 +61,7 @@ abstract class e {
     }
 
     private static s c(XmlPullParser xmlPullParser) {
-        for (String str : f56319c) {
+        for (String str : f56358c) {
             String a10 = y0.a(xmlPullParser, str);
             if (a10 != null) {
                 return s.v(new b.a(ClipboardModule.MIMETYPE_JPEG, "Primary", 0L, 0L), new b.a("video/mp4", "MotionPhoto", Long.parseLong(a10), 0L));
@@ -71,7 +71,7 @@ abstract class e {
     }
 
     private static boolean d(XmlPullParser xmlPullParser) {
-        for (String str : f56317a) {
+        for (String str : f56356a) {
             String a10 = y0.a(xmlPullParser, str);
             if (a10 != null) {
                 if (Integer.parseInt(a10) != 1) {
@@ -84,7 +84,7 @@ abstract class e {
     }
 
     private static long e(XmlPullParser xmlPullParser) {
-        for (String str : f56318b) {
+        for (String str : f56357b) {
             String a10 = y0.a(xmlPullParser, str);
             if (a10 != null) {
                 long parseLong = Long.parseLong(a10);
@@ -99,7 +99,7 @@ abstract class e {
 
     private static s f(XmlPullParser xmlPullParser, String str, String str2) {
         long j10;
-        s.a j11 = s.j();
+        s.a k10 = s.k();
         String str3 = str + ":Item";
         String str4 = str + ":Directory";
         do {
@@ -110,21 +110,21 @@ abstract class e {
                 String a12 = y0.a(xmlPullParser, str2 + ":Length");
                 String a13 = y0.a(xmlPullParser, str2 + ":Padding");
                 if (a10 != null && a11 != null) {
-                    long j12 = 0;
+                    long j11 = 0;
                     if (a12 != null) {
                         j10 = Long.parseLong(a12);
                     } else {
                         j10 = 0;
                     }
                     if (a13 != null) {
-                        j12 = Long.parseLong(a13);
+                        j11 = Long.parseLong(a13);
                     }
-                    j11.a(new b.a(a10, a11, j10, j12));
+                    k10.a(new b.a(a10, a11, j10, j11));
                 } else {
                     return s.t();
                 }
             }
         } while (!y0.d(xmlPullParser, str4));
-        return j11.k();
+        return k10.k();
     }
 }

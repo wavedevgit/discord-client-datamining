@@ -8,39 +8,39 @@ import java.util.Objects;
 public abstract class r0 extends y0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f26096d;
+    public final int f27314d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Bundle f26097e;
+    public final Bundle f27315e;
 
     /* renamed from: f  reason: collision with root package name */
-    final /* synthetic */ c f26098f;
+    final /* synthetic */ c f27316f;
 
     /* JADX INFO: Access modifiers changed from: protected */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public r0(c cVar, int i10, Bundle bundle) {
         super(cVar, Boolean.TRUE);
         Objects.requireNonNull(cVar);
-        this.f26098f = cVar;
-        this.f26096d = i10;
-        this.f26097e = bundle;
+        this.f27316f = cVar;
+        this.f27314d = i10;
+        this.f27315e = bundle;
     }
 
     @Override // hf.y0
     protected final /* bridge */ /* synthetic */ void a(Object obj) {
         Boolean bool = (Boolean) obj;
-        int i10 = this.f26096d;
+        int i10 = this.f27314d;
         PendingIntent pendingIntent = null;
         if (i10 == 0) {
             if (!e()) {
-                this.f26098f.U(1, null);
+                this.f27316f.U(1, null);
                 f(new com.google.android.gms.common.b(8, null));
                 return;
             }
             return;
         }
-        this.f26098f.U(1, null);
-        Bundle bundle = this.f26097e;
+        this.f27316f.U(1, null);
+        Bundle bundle = this.f27315e;
         if (bundle != null) {
             pendingIntent = (PendingIntent) bundle.getParcelable("pendingIntent");
         }

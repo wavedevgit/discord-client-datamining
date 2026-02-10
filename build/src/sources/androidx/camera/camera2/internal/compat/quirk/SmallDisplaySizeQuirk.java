@@ -10,11 +10,11 @@ import java.util.Map;
 public class SmallDisplaySizeQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f2071a;
+    private static final Map f2074a;
 
     static {
         HashMap hashMap = new HashMap();
-        f2071a = hashMap;
+        f2074a = hashMap;
         hashMap.put("REDMI NOTE 8", new Size(1080, 2340));
         hashMap.put("REDMI NOTE 7", new Size(1080, 2340));
         hashMap.put("SM-A207M", new Size(720, 1560));
@@ -44,10 +44,10 @@ public class SmallDisplaySizeQuirk implements y1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean d() {
-        return f2071a.containsKey(Build.MODEL.toUpperCase(Locale.US));
+        return f2074a.containsKey(Build.MODEL.toUpperCase(Locale.US));
     }
 
     public Size c() {
-        return (Size) f2071a.get(Build.MODEL.toUpperCase(Locale.US));
+        return (Size) f2074a.get(Build.MODEL.toUpperCase(Locale.US));
     }
 }

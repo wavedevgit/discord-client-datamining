@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19962a;
+    private final m.b f20842a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19963b;
+    private final h f20843b;
 
     public OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("componentData");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19962a = a10;
+        this.f20842a = a10;
         h f10 = moshi.f(a0.j(List.class, OneTimeLinkCodeForPersonasRequest.NamedComponentParam.class), x0.d(), "componentData");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19963b = f10;
+        this.f20843b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,13 +37,13 @@ public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19962a);
+            int J = reader.J(this.f20842a);
             if (J != -1) {
                 if (J == 0) {
-                    list = (List) this.f19963b.fromJson(reader);
+                    list = (List) this.f20843b.fromJson(reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -56,9 +56,9 @@ public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter
     public void toJson(t writer, OneTimeLinkCodeForPersonasRequest.TransitionParams transitionParams) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (transitionParams != null) {
-            writer.k();
+            writer.i();
             writer.J("componentData");
-            this.f19963b.toJson(writer, transitionParams.a());
+            this.f20843b.toJson(writer, transitionParams.a());
             writer.s();
             return;
         }

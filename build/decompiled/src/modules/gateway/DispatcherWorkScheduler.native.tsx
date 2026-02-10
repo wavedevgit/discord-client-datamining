@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var0 = function() {
-        _fun95165: for (var _fun95165_ip = 0;;) switch (_fun95165_ip) {
+        _fun95221: for (var _fun95221_ip = 0;;) switch (_fun95221_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun95165_ip = 76;
-                continue _fun95165;
+                _fun95221_ip = 76;
+                continue _fun95221;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var3.BasicWorkScheduler;
     var3 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun95169: for (var _fun95169_ip = 0;;) switch (_fun95169_ip) {
+            _fun95225: for (var _fun95225_ip = 0;;) switch (_fun95225_ip) {
                 case 0:
                     var5 = this;
                     var0 = _closure1_slot2;
@@ -111,14 +111,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot13;
                     var0 = var0.bind(var4)();
                     if (var0) {
-                        _fun95169_ip = 64;
-                        continue _fun95169
+                        _fun95225_ip = 64;
+                        continue _fun95225
                     }
                 case 51:
                     var0 = var10.apply;
                     var0 = var0.bind(var10)(var5, var4);
-                    _fun95169_ip = 102;
-                    continue _fun95169;
+                    _fun95225_ip = 102;
+                    continue _fun95225;
                 case 64:
                     var6 = global;
                     var9 = var6.Reflect;
@@ -164,20 +164,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = '_queueIdleCallback';
         var4.key = var0;
         var0 = function() {
-            _fun95171: for (var _fun95171_ip = 0;;) switch (_fun95171_ip) {
+            _fun95227: for (var _fun95227_ip = 0;;) switch (_fun95227_ip) {
                 case 0:
                     var1 = this;
                     var _closure3_slot0 = var1;
                     var0 = var1._enableRequestIdleCallback;
                     if (!var0) {
-                        _fun95171_ip = 80;
-                        continue _fun95171
+                        _fun95227_ip = 80;
+                        continue _fun95227
                     }
                 case 18:
                     var0 = var1._criticalWorkScheduled;
                     if (var0) {
-                        _fun95171_ip = 80;
-                        continue _fun95171
+                        _fun95227_ip = 80;
+                        continue _fun95227
                     }
                 case 27:
                     var0 = global;
@@ -242,14 +242,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = '_clearIdleCallback';
         var4.key = var6;
         var5 = function() {
-            _fun95173: for (var _fun95173_ip = 0;;) switch (_fun95173_ip) {
+            _fun95229: for (var _fun95229_ip = 0;;) switch (_fun95229_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1._flushIdleHandler;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun95173_ip = 42;
-                        continue _fun95173
+                        _fun95229_ip = 42;
+                        continue _fun95229
                     }
                 case 15:
                     var2 = global;
@@ -291,4 +291,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createDispatcherWorkScheduler = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 12467, 660, 806, 12469, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 12478, 660, 806, 12480, 2]);

@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function1;
 public class e implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ReflectJavaClass f32429d;
+    private final ReflectJavaClass f32651d;
 
     public e(ReflectJavaClass reflectJavaClass) {
-        this.f32429d = reflectJavaClass;
+        this.f32651d = reflectJavaClass;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         boolean c10;
-        c10 = ReflectJavaClass.c(this.f32429d, (Method) obj);
+        c10 = ReflectJavaClass.c(this.f32651d, (Method) obj);
         return Boolean.valueOf(c10);
     }
 }

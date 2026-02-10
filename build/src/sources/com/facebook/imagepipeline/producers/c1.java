@@ -12,54 +12,54 @@ import java.util.concurrent.Executor;
 public class c1 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f10733a;
+    private final Executor f11310a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final s8.i f10734b;
+    private final s8.i f11311b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w0 f10735c;
+    private final w0 f11312c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f10736d;
+    private final boolean f11313d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ab.d f10737e;
+    private final ab.d f11314e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private class a extends s {
 
         /* renamed from: c  reason: collision with root package name */
-        private final boolean f10738c;
+        private final boolean f11315c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final ab.d f10739d;
+        private final ab.d f11316d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ProducerContext f10740e;
+        private final ProducerContext f11317e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f10741f;
+        private boolean f11318f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final e0 f10742g;
+        private final e0 f11319g;
 
         /* renamed from: com.facebook.imagepipeline.producers.c1$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        class C0180a implements e0.d {
+        class C0157a implements e0.d {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ c1 f10744a;
+            final /* synthetic */ c1 f11321a;
 
-            C0180a(c1 c1Var) {
-                this.f10744a = c1Var;
+            C0157a(c1 c1Var) {
+                this.f11321a = c1Var;
             }
 
             @Override // com.facebook.imagepipeline.producers.e0.d
             public void a(ta.k kVar, int i10) {
                 if (kVar != null) {
                     a aVar = a.this;
-                    aVar.v(kVar, i10, (ab.c) p8.j.g(aVar.f10739d.createImageTranscoder(kVar.z(), a.this.f10738c)));
+                    aVar.v(kVar, i10, (ab.c) p8.j.g(aVar.f11316d.createImageTranscoder(kVar.z(), a.this.f11315c)));
                     return;
                 }
                 a.this.o().b(null, i10);
@@ -70,44 +70,44 @@ public class c1 implements w0 {
         class b extends f {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ c1 f10746a;
+            final /* synthetic */ c1 f11323a;
 
             /* renamed from: b  reason: collision with root package name */
-            final /* synthetic */ Consumer f10747b;
+            final /* synthetic */ Consumer f11324b;
 
             b(c1 c1Var, Consumer consumer) {
-                this.f10746a = c1Var;
-                this.f10747b = consumer;
+                this.f11323a = c1Var;
+                this.f11324b = consumer;
             }
 
             @Override // com.facebook.imagepipeline.producers.f, com.facebook.imagepipeline.producers.x0
             public void a() {
-                if (a.this.f10740e.z()) {
-                    a.this.f10742g.h();
+                if (a.this.f11317e.z()) {
+                    a.this.f11319g.h();
                 }
             }
 
             @Override // com.facebook.imagepipeline.producers.x0
             public void b() {
-                a.this.f10742g.c();
-                a.this.f10741f = true;
-                this.f10747b.a();
+                a.this.f11319g.c();
+                a.this.f11318f = true;
+                this.f11324b.a();
             }
         }
 
         a(Consumer consumer, ProducerContext producerContext, boolean z10, ab.d dVar) {
             super(consumer);
-            this.f10741f = false;
-            this.f10740e = producerContext;
+            this.f11318f = false;
+            this.f11317e = producerContext;
             Boolean resizingAllowedOverride = producerContext.I().getResizingAllowedOverride();
-            this.f10738c = resizingAllowedOverride != null ? resizingAllowedOverride.booleanValue() : z10;
-            this.f10739d = dVar;
-            this.f10742g = new e0(c1.this.f10733a, new C0180a(c1.this), 100);
-            producerContext.g(new b(c1.this, consumer));
+            this.f11315c = resizingAllowedOverride != null ? resizingAllowedOverride.booleanValue() : z10;
+            this.f11316d = dVar;
+            this.f11319g = new e0(c1.this.f11310a, new C0157a(c1.this), 100);
+            producerContext.h(new b(c1.this, consumer));
         }
 
         private ta.k A(ta.k kVar) {
-            if (!this.f10740e.I().getRotationOptions().f() && kVar.l1() != 0 && kVar.l1() != -1) {
+            if (!this.f11317e.I().getRotationOptions().f() && kVar.q1() != 0 && kVar.q1() != -1) {
                 return x(kVar, 0);
             }
             return kVar;
@@ -115,36 +115,36 @@ public class c1 implements w0 {
 
         /* JADX INFO: Access modifiers changed from: private */
         public void v(ta.k kVar, int i10, ab.c cVar) {
-            this.f10740e.y().d(this.f10740e, "ResizeAndRotateProducer");
-            ImageRequest I = this.f10740e.I();
-            s8.k c10 = c1.this.f10734b.c();
+            this.f11317e.y().d(this.f11317e, "ResizeAndRotateProducer");
+            ImageRequest I = this.f11317e.I();
+            s8.k c10 = c1.this.f11311b.c();
             try {
                 try {
                     ab.b c11 = cVar.c(kVar, c10, I.getRotationOptions(), I.getResizeOptions(), null, 85, kVar.s());
                     if (c11.a() != 2) {
                         Map y10 = y(kVar, I.getResizeOptions(), c11, cVar.a());
-                        CloseableReference H0 = CloseableReference.H0(c10.a());
+                        CloseableReference E0 = CloseableReference.E0(c10.a());
                         try {
-                            ta.k kVar2 = new ta.k(H0);
-                            kVar2.w1(ga.b.f24082b);
-                            kVar2.R0();
-                            this.f10740e.y().j(this.f10740e, "ResizeAndRotateProducer", y10);
+                            ta.k kVar2 = new ta.k(E0);
+                            kVar2.b1(ga.b.f25382b);
+                            kVar2.L0();
+                            this.f11317e.y().j(this.f11317e, "ResizeAndRotateProducer", y10);
                             if (c11.a() != 1) {
                                 i10 |= 16;
                             }
                             o().b(kVar2, i10);
-                            ta.k.k(kVar2);
-                            CloseableReference.z(H0);
+                            ta.k.i(kVar2);
+                            CloseableReference.z(E0);
                             c10.close();
                             return;
                         } catch (Throwable th2) {
-                            CloseableReference.z(H0);
+                            CloseableReference.z(E0);
                             throw th2;
                         }
                     }
                     throw new RuntimeException("Error while transcoding the image");
                 } catch (Exception e10) {
-                    this.f10740e.y().k(this.f10740e, "ResizeAndRotateProducer", e10, null);
+                    this.f11317e.y().k(this.f11317e, "ResizeAndRotateProducer", e10, null);
                     if (c.d(i10)) {
                         o().onFailure(e10);
                     }
@@ -158,7 +158,7 @@ public class c1 implements w0 {
 
         private void w(ta.k kVar, int i10, ga.c cVar) {
             ta.k A;
-            if (cVar != ga.b.f24082b && cVar != ga.b.f24092l) {
+            if (cVar != ga.b.f25382b && cVar != ga.b.f25392l) {
                 A = z(kVar);
             } else {
                 A = A(kVar);
@@ -167,21 +167,21 @@ public class c1 implements w0 {
         }
 
         private ta.k x(ta.k kVar, int i10) {
-            ta.k g10 = ta.k.g(kVar);
-            if (g10 != null) {
-                g10.z1(i10);
+            ta.k h10 = ta.k.h(kVar);
+            if (h10 != null) {
+                h10.f1(i10);
             }
-            return g10;
+            return h10;
         }
 
         private Map y(ta.k kVar, ResizeOptions resizeOptions, ab.b bVar, String str) {
             String str2;
-            if (!this.f10740e.y().f(this.f10740e, "ResizeAndRotateProducer")) {
+            if (!this.f11317e.y().f(this.f11317e, "ResizeAndRotateProducer")) {
                 return null;
             }
             String str3 = kVar.getWidth() + "x" + kVar.getHeight();
             if (resizeOptions != null) {
-                str2 = resizeOptions.f10486a + "x" + resizeOptions.f10487b;
+                str2 = resizeOptions.f11063a + "x" + resizeOptions.f11064b;
             } else {
                 str2 = "Unspecified";
             }
@@ -189,14 +189,14 @@ public class c1 implements w0 {
             hashMap.put("Image format", String.valueOf(kVar.z()));
             hashMap.put("Original size", str3);
             hashMap.put("Requested size", str2);
-            hashMap.put("queueTime", String.valueOf(this.f10742g.f()));
+            hashMap.put("queueTime", String.valueOf(this.f11319g.f()));
             hashMap.put("Transcoder id", str);
             hashMap.put("Transcoding result", String.valueOf(bVar));
             return p8.f.a(hashMap);
         }
 
         private ta.k z(ta.k kVar) {
-            RotationOptions rotationOptions = this.f10740e.I().getRotationOptions();
+            RotationOptions rotationOptions = this.f11317e.I().getRotationOptions();
             if (!rotationOptions.j() && rotationOptions.i()) {
                 return x(kVar, rotationOptions.h());
             }
@@ -207,7 +207,7 @@ public class c1 implements w0 {
         @Override // com.facebook.imagepipeline.producers.c
         /* renamed from: B */
         public void h(ta.k kVar, int i10) {
-            if (!this.f10741f) {
+            if (!this.f11318f) {
                 boolean d10 = c.d(i10);
                 if (kVar == null) {
                     if (d10) {
@@ -217,15 +217,15 @@ public class c1 implements w0 {
                     return;
                 }
                 ga.c z10 = kVar.z();
-                x8.e h10 = c1.h(this.f10740e.I(), kVar, (ab.c) p8.j.g(this.f10739d.createImageTranscoder(z10, this.f10738c)));
+                x8.e h10 = c1.h(this.f11317e.I(), kVar, (ab.c) p8.j.g(this.f11316d.createImageTranscoder(z10, this.f11315c)));
                 if (d10 || h10 != x8.e.UNSET) {
                     if (h10 != x8.e.YES) {
                         w(kVar, i10, z10);
-                    } else if (this.f10742g.k(kVar, i10)) {
-                        if (!d10 && !this.f10740e.z()) {
+                    } else if (this.f11319g.k(kVar, i10)) {
+                        if (!d10 && !this.f11317e.z()) {
                             return;
                         }
-                        this.f10742g.h();
+                        this.f11319g.h();
                     }
                 }
             }
@@ -233,11 +233,11 @@ public class c1 implements w0 {
     }
 
     public c1(Executor executor, s8.i iVar, w0 w0Var, boolean z10, ab.d dVar) {
-        this.f10733a = (Executor) p8.j.g(executor);
-        this.f10734b = (s8.i) p8.j.g(iVar);
-        this.f10735c = (w0) p8.j.g(w0Var);
-        this.f10737e = (ab.d) p8.j.g(dVar);
-        this.f10736d = z10;
+        this.f11310a = (Executor) p8.j.g(executor);
+        this.f11311b = (s8.i) p8.j.g(iVar);
+        this.f11312c = (w0) p8.j.g(w0Var);
+        this.f11314e = (ab.d) p8.j.g(dVar);
+        this.f11313d = z10;
     }
 
     private static boolean f(RotationOptions rotationOptions, ta.k kVar) {
@@ -252,16 +252,16 @@ public class c1 implements w0 {
 
     private static boolean g(RotationOptions rotationOptions, ta.k kVar) {
         if (rotationOptions.i() && !rotationOptions.f()) {
-            return ab.e.f530b.contains(Integer.valueOf(kVar.X0()));
+            return ab.e.f530b.contains(Integer.valueOf(kVar.c1()));
         }
-        kVar.s1(0);
+        kVar.Z0(0);
         return false;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static x8.e h(ImageRequest imageRequest, ta.k kVar, ab.c cVar) {
         boolean z10;
-        if (kVar != null && kVar.z() != ga.c.f24098d) {
+        if (kVar != null && kVar.z() != ga.c.f25398d) {
             if (!cVar.b(kVar.z())) {
                 return x8.e.NO;
             }
@@ -277,6 +277,6 @@ public class c1 implements w0 {
 
     @Override // com.facebook.imagepipeline.producers.w0
     public void b(Consumer consumer, ProducerContext producerContext) {
-        this.f10735c.b(new a(consumer, producerContext, this.f10736d, this.f10737e), producerContext);
+        this.f11312c.b(new a(consumer, producerContext, this.f11313d, this.f11314e), producerContext);
     }
 }

@@ -11,17 +11,17 @@ import org.jetbrains.annotations.NotNull;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l f4656a = new l();
+    public static final l f4666a = new l();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final AtomicBoolean f4657b = new AtomicBoolean(false);
+    private static final AtomicBoolean f4667b = new AtomicBoolean(false);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends f {
         @Override // androidx.lifecycle.f, android.app.Application.ActivityLifecycleCallbacks
         public void onActivityCreated(@NotNull Activity activity, Bundle bundle) {
             Intrinsics.checkNotNullParameter(activity, "activity");
-            a0.f4609e.c(activity);
+            a0.f4619e.c(activity);
         }
     }
 
@@ -30,7 +30,7 @@ public final class l {
 
     public static final void a(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        if (f4657b.getAndSet(true)) {
+        if (f4667b.getAndSet(true)) {
             return;
         }
         Context applicationContext = context.getApplicationContext();

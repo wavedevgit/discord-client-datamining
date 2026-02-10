@@ -8,71 +8,71 @@ import j5.c;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineDispatcher;
-import ps.m0;
+import ys.m0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class c {
 
     /* renamed from: a */
-    private final CoroutineDispatcher f23472a;
+    private final CoroutineDispatcher f24772a;
 
     /* renamed from: b */
-    private final CoroutineDispatcher f23473b;
+    private final CoroutineDispatcher f24773b;
 
     /* renamed from: c */
-    private final CoroutineDispatcher f23474c;
+    private final CoroutineDispatcher f24774c;
 
     /* renamed from: d */
-    private final CoroutineDispatcher f23475d;
+    private final CoroutineDispatcher f24775d;
 
     /* renamed from: e */
-    private final c.a f23476e;
+    private final c.a f24776e;
 
     /* renamed from: f */
-    private final h5.e f23477f;
+    private final h5.e f24777f;
 
     /* renamed from: g */
-    private final Bitmap.Config f23478g;
+    private final Bitmap.Config f24778g;
 
     /* renamed from: h */
-    private final boolean f23479h;
+    private final boolean f24779h;
 
     /* renamed from: i */
-    private final boolean f23480i;
+    private final boolean f24780i;
 
     /* renamed from: j */
-    private final Drawable f23481j;
+    private final Drawable f24781j;
 
     /* renamed from: k */
-    private final Drawable f23482k;
+    private final Drawable f24782k;
 
     /* renamed from: l */
-    private final Drawable f23483l;
+    private final Drawable f24783l;
 
     /* renamed from: m */
-    private final b f23484m;
+    private final b f24784m;
 
     /* renamed from: n */
-    private final b f23485n;
+    private final b f24785n;
 
     /* renamed from: o */
-    private final b f23486o;
+    private final b f24786o;
 
     public c(CoroutineDispatcher coroutineDispatcher, CoroutineDispatcher coroutineDispatcher2, CoroutineDispatcher coroutineDispatcher3, CoroutineDispatcher coroutineDispatcher4, c.a aVar, h5.e eVar, Bitmap.Config config, boolean z10, boolean z11, Drawable drawable, Drawable drawable2, Drawable drawable3, b bVar, b bVar2, b bVar3) {
-        this.f23472a = coroutineDispatcher;
-        this.f23473b = coroutineDispatcher2;
-        this.f23474c = coroutineDispatcher3;
-        this.f23475d = coroutineDispatcher4;
-        this.f23476e = aVar;
-        this.f23477f = eVar;
-        this.f23478g = config;
-        this.f23479h = z10;
-        this.f23480i = z11;
-        this.f23481j = drawable;
-        this.f23482k = drawable2;
-        this.f23483l = drawable3;
-        this.f23484m = bVar;
-        this.f23485n = bVar2;
-        this.f23486o = bVar3;
+        this.f24772a = coroutineDispatcher;
+        this.f24773b = coroutineDispatcher2;
+        this.f24774c = coroutineDispatcher3;
+        this.f24775d = coroutineDispatcher4;
+        this.f24776e = aVar;
+        this.f24777f = eVar;
+        this.f24778g = config;
+        this.f24779h = z10;
+        this.f24780i = z11;
+        this.f24781j = drawable;
+        this.f24782k = drawable2;
+        this.f24783l = drawable3;
+        this.f24784m = bVar;
+        this.f24785n = bVar2;
+        this.f24786o = bVar3;
     }
 
     public static /* synthetic */ c b(c cVar, CoroutineDispatcher coroutineDispatcher, CoroutineDispatcher coroutineDispatcher2, CoroutineDispatcher coroutineDispatcher3, CoroutineDispatcher coroutineDispatcher4, c.a aVar, h5.e eVar, Bitmap.Config config, boolean z10, boolean z11, Drawable drawable, Drawable drawable2, Drawable drawable3, b bVar, b bVar2, b bVar3, int i10, Object obj) {
@@ -92,77 +92,77 @@ public final class c {
         b bVar5;
         b bVar6;
         if ((i10 & 1) != 0) {
-            coroutineDispatcher5 = cVar.f23472a;
+            coroutineDispatcher5 = cVar.f24772a;
         } else {
             coroutineDispatcher5 = coroutineDispatcher;
         }
         if ((i10 & 2) != 0) {
-            coroutineDispatcher6 = cVar.f23473b;
+            coroutineDispatcher6 = cVar.f24773b;
         } else {
             coroutineDispatcher6 = coroutineDispatcher2;
         }
         if ((i10 & 4) != 0) {
-            coroutineDispatcher7 = cVar.f23474c;
+            coroutineDispatcher7 = cVar.f24774c;
         } else {
             coroutineDispatcher7 = coroutineDispatcher3;
         }
         if ((i10 & 8) != 0) {
-            coroutineDispatcher8 = cVar.f23475d;
+            coroutineDispatcher8 = cVar.f24775d;
         } else {
             coroutineDispatcher8 = coroutineDispatcher4;
         }
         if ((i10 & 16) != 0) {
-            aVar2 = cVar.f23476e;
+            aVar2 = cVar.f24776e;
         } else {
             aVar2 = aVar;
         }
         if ((i10 & 32) != 0) {
-            eVar2 = cVar.f23477f;
+            eVar2 = cVar.f24777f;
         } else {
             eVar2 = eVar;
         }
         if ((i10 & 64) != 0) {
-            config2 = cVar.f23478g;
+            config2 = cVar.f24778g;
         } else {
             config2 = config;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-            z12 = cVar.f23479h;
+            z12 = cVar.f24779h;
         } else {
             z12 = z10;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-            z13 = cVar.f23480i;
+            z13 = cVar.f24780i;
         } else {
             z13 = z11;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
-            drawable4 = cVar.f23481j;
+            drawable4 = cVar.f24781j;
         } else {
             drawable4 = drawable;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0) {
-            drawable5 = cVar.f23482k;
+            drawable5 = cVar.f24782k;
         } else {
             drawable5 = drawable2;
         }
         if ((i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0) {
-            drawable6 = cVar.f23483l;
+            drawable6 = cVar.f24783l;
         } else {
             drawable6 = drawable3;
         }
         if ((i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0) {
-            bVar4 = cVar.f23484m;
+            bVar4 = cVar.f24784m;
         } else {
             bVar4 = bVar;
         }
         if ((i10 & 8192) != 0) {
-            bVar5 = cVar.f23485n;
+            bVar5 = cVar.f24785n;
         } else {
             bVar5 = bVar2;
         }
         if ((i10 & 16384) != 0) {
-            bVar6 = cVar.f23486o;
+            bVar6 = cVar.f24786o;
         } else {
             bVar6 = bVar3;
         }
@@ -174,15 +174,15 @@ public final class c {
     }
 
     public final boolean c() {
-        return this.f23479h;
+        return this.f24779h;
     }
 
     public final boolean d() {
-        return this.f23480i;
+        return this.f24780i;
     }
 
     public final Bitmap.Config e() {
-        return this.f23478g;
+        return this.f24778g;
     }
 
     public boolean equals(Object obj) {
@@ -191,7 +191,7 @@ public final class c {
         }
         if (obj instanceof c) {
             c cVar = (c) obj;
-            if (Intrinsics.areEqual(this.f23472a, cVar.f23472a) && Intrinsics.areEqual(this.f23473b, cVar.f23473b) && Intrinsics.areEqual(this.f23474c, cVar.f23474c) && Intrinsics.areEqual(this.f23475d, cVar.f23475d) && Intrinsics.areEqual(this.f23476e, cVar.f23476e) && this.f23477f == cVar.f23477f && this.f23478g == cVar.f23478g && this.f23479h == cVar.f23479h && this.f23480i == cVar.f23480i && Intrinsics.areEqual(this.f23481j, cVar.f23481j) && Intrinsics.areEqual(this.f23482k, cVar.f23482k) && Intrinsics.areEqual(this.f23483l, cVar.f23483l) && this.f23484m == cVar.f23484m && this.f23485n == cVar.f23485n && this.f23486o == cVar.f23486o) {
+            if (Intrinsics.areEqual(this.f24772a, cVar.f24772a) && Intrinsics.areEqual(this.f24773b, cVar.f24773b) && Intrinsics.areEqual(this.f24774c, cVar.f24774c) && Intrinsics.areEqual(this.f24775d, cVar.f24775d) && Intrinsics.areEqual(this.f24776e, cVar.f24776e) && this.f24777f == cVar.f24777f && this.f24778g == cVar.f24778g && this.f24779h == cVar.f24779h && this.f24780i == cVar.f24780i && Intrinsics.areEqual(this.f24781j, cVar.f24781j) && Intrinsics.areEqual(this.f24782k, cVar.f24782k) && Intrinsics.areEqual(this.f24783l, cVar.f24783l) && this.f24784m == cVar.f24784m && this.f24785n == cVar.f24785n && this.f24786o == cVar.f24786o) {
                 return true;
             }
             return false;
@@ -200,22 +200,22 @@ public final class c {
     }
 
     public final CoroutineDispatcher f() {
-        return this.f23474c;
+        return this.f24774c;
     }
 
     public final b g() {
-        return this.f23485n;
+        return this.f24785n;
     }
 
     public final Drawable h() {
-        return this.f23482k;
+        return this.f24782k;
     }
 
     public int hashCode() {
         int i10;
         int i11;
-        int hashCode = ((((((((((((((((this.f23472a.hashCode() * 31) + this.f23473b.hashCode()) * 31) + this.f23474c.hashCode()) * 31) + this.f23475d.hashCode()) * 31) + this.f23476e.hashCode()) * 31) + this.f23477f.hashCode()) * 31) + this.f23478g.hashCode()) * 31) + Boolean.hashCode(this.f23479h)) * 31) + Boolean.hashCode(this.f23480i)) * 31;
-        Drawable drawable = this.f23481j;
+        int hashCode = ((((((((((((((((this.f24772a.hashCode() * 31) + this.f24773b.hashCode()) * 31) + this.f24774c.hashCode()) * 31) + this.f24775d.hashCode()) * 31) + this.f24776e.hashCode()) * 31) + this.f24777f.hashCode()) * 31) + this.f24778g.hashCode()) * 31) + Boolean.hashCode(this.f24779h)) * 31) + Boolean.hashCode(this.f24780i)) * 31;
+        Drawable drawable = this.f24781j;
         int i12 = 0;
         if (drawable != null) {
             i10 = drawable.hashCode();
@@ -223,57 +223,57 @@ public final class c {
             i10 = 0;
         }
         int i13 = (hashCode + i10) * 31;
-        Drawable drawable2 = this.f23482k;
+        Drawable drawable2 = this.f24782k;
         if (drawable2 != null) {
             i11 = drawable2.hashCode();
         } else {
             i11 = 0;
         }
         int i14 = (i13 + i11) * 31;
-        Drawable drawable3 = this.f23483l;
+        Drawable drawable3 = this.f24783l;
         if (drawable3 != null) {
             i12 = drawable3.hashCode();
         }
-        return ((((((i14 + i12) * 31) + this.f23484m.hashCode()) * 31) + this.f23485n.hashCode()) * 31) + this.f23486o.hashCode();
+        return ((((((i14 + i12) * 31) + this.f24784m.hashCode()) * 31) + this.f24785n.hashCode()) * 31) + this.f24786o.hashCode();
     }
 
     public final Drawable i() {
-        return this.f23483l;
+        return this.f24783l;
     }
 
     public final CoroutineDispatcher j() {
-        return this.f23473b;
+        return this.f24773b;
     }
 
     public final CoroutineDispatcher k() {
-        return this.f23472a;
+        return this.f24772a;
     }
 
     public final b l() {
-        return this.f23484m;
+        return this.f24784m;
     }
 
     public final b m() {
-        return this.f23486o;
+        return this.f24786o;
     }
 
     public final Drawable n() {
-        return this.f23481j;
+        return this.f24781j;
     }
 
     public final h5.e o() {
-        return this.f23477f;
+        return this.f24777f;
     }
 
     public final CoroutineDispatcher p() {
-        return this.f23475d;
+        return this.f24775d;
     }
 
     public final c.a q() {
-        return this.f23476e;
+        return this.f24776e;
     }
 
     public /* synthetic */ c(CoroutineDispatcher coroutineDispatcher, CoroutineDispatcher coroutineDispatcher2, CoroutineDispatcher coroutineDispatcher3, CoroutineDispatcher coroutineDispatcher4, c.a aVar, h5.e eVar, Bitmap.Config config, boolean z10, boolean z11, Drawable drawable, Drawable drawable2, Drawable drawable3, b bVar, b bVar2, b bVar3, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? m0.c().e2() : coroutineDispatcher, (i10 & 2) != 0 ? m0.b() : coroutineDispatcher2, (i10 & 4) != 0 ? m0.b() : coroutineDispatcher3, (i10 & 8) != 0 ? m0.b() : coroutineDispatcher4, (i10 & 16) != 0 ? c.a.f30034b : aVar, (i10 & 32) != 0 ? h5.e.f24972i : eVar, (i10 & 64) != 0 ? k5.k.f() : config, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? true : z10, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? false : z11, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? null : drawable, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? null : drawable2, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) == 0 ? drawable3 : null, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? b.f23464i : bVar, (i10 & 8192) != 0 ? b.f23464i : bVar2, (i10 & 16384) != 0 ? b.f23464i : bVar3);
+        this((i10 & 1) != 0 ? m0.c().P1() : coroutineDispatcher, (i10 & 2) != 0 ? m0.b() : coroutineDispatcher2, (i10 & 4) != 0 ? m0.b() : coroutineDispatcher3, (i10 & 8) != 0 ? m0.b() : coroutineDispatcher4, (i10 & 16) != 0 ? c.a.f30834b : aVar, (i10 & 32) != 0 ? h5.e.f26190i : eVar, (i10 & 64) != 0 ? k5.k.f() : config, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? true : z10, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? false : z11, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? null : drawable, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? null : drawable2, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) == 0 ? drawable3 : null, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? b.f24764i : bVar, (i10 & 8192) != 0 ? b.f24764i : bVar2, (i10 & 16384) != 0 ? b.f24764i : bVar3);
     }
 }

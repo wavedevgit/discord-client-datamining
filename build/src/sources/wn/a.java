@@ -1,144 +1,57 @@
 package wn;
 
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.events.Event;
 import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import vn.d0;
-import vn.h0;
-import vn.i0;
-import vn.t0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
+public final class a extends Event implements tn.b {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final C0738a f52937a = new C0738a(null);
 
     /* renamed from: wn.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0750a extends a {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final vn.g f53844a;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public C0750a(vn.g extractedBarcode) {
-            super(null);
-            Intrinsics.checkNotNullParameter(extractedBarcode, "extractedBarcode");
-            this.f53844a = extractedBarcode;
+    public static final class C0738a implements tn.b {
+        public /* synthetic */ C0738a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
 
-        public final vn.g a() {
-            return this.f53844a;
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class b extends a {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final b f53845a = new b();
-
-        private b() {
-            super(null);
+        @Override // tn.b
+        public String a() {
+            return "onDidAppear";
         }
 
-        public boolean equals(Object obj) {
-            if (this == obj || (obj instanceof b)) {
-                return true;
-            }
-            return false;
+        @Override // tn.b
+        public String getEventName() {
+            return "topDidAppear";
         }
 
-        public int hashCode() {
-            return 801215118;
-        }
-
-        public String toString() {
-            return "Empty";
+        private C0738a() {
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class c extends a {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final t0.c f53846a;
-
-        /* renamed from: b  reason: collision with root package name */
-        private final a f53847b;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public c(t0.c side, a frontOrBackData) {
-            super(null);
-            Intrinsics.checkNotNullParameter(side, "side");
-            Intrinsics.checkNotNullParameter(frontOrBackData, "frontOrBackData");
-            this.f53846a = side;
-            this.f53847b = frontOrBackData;
-        }
-
-        public final a a() {
-            return this.f53847b;
-        }
-
-        public final t0.c b() {
-            return this.f53846a;
-        }
+    public a(int i10, int i11) {
+        super(i10, i11);
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class d extends a {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final h0 f53848a;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public d(h0 metadata) {
-            super(null);
-            Intrinsics.checkNotNullParameter(metadata, "metadata");
-            this.f53848a = metadata;
-        }
-
-        public final h0 a() {
-            return this.f53848a;
-        }
+    @Override // tn.b
+    public String a() {
+        return "onDidAppear";
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class e extends a {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final i0 f53849a;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public e(i0 imageLightCondition) {
-            super(null);
-            Intrinsics.checkNotNullParameter(imageLightCondition, "imageLightCondition");
-            this.f53849a = imageLightCondition;
-        }
-
-        public final i0 a() {
-            return this.f53849a;
-        }
+    @Override // com.facebook.react.uimanager.events.Event
+    public short getCoalescingKey() {
+        return (short) 0;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class f extends a {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final d0 f53850a;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public f(d0 extractedTexts) {
-            super(null);
-            Intrinsics.checkNotNullParameter(extractedTexts, "extractedTexts");
-            this.f53850a = extractedTexts;
-        }
-
-        public final d0 a() {
-            return this.f53850a;
-        }
+    @Override // com.facebook.react.uimanager.events.Event
+    protected WritableMap getEventData() {
+        return Arguments.createMap();
     }
 
-    public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-        this();
-    }
-
-    private a() {
+    @Override // com.facebook.react.uimanager.events.Event
+    public String getEventName() {
+        return "topDidAppear";
     }
 }

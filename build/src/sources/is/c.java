@@ -1,49 +1,59 @@
 package is;
-
-import java.util.NoSuchElementException;
-import kotlin.collections.n0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c extends n0 {
-
-    /* renamed from: d  reason: collision with root package name */
-    private final long f29642d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final long f29643e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private boolean f29644i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private long f29645o;
-
-    public c(long j10, long j11, long j12) {
-        this.f29642d = j12;
-        this.f29643e = j11;
-        boolean z10 = false;
-        if (j12 <= 0 ? j10 >= j11 : j10 <= j11) {
-            z10 = true;
-        }
-        this.f29644i = z10;
-        this.f29645o = z10 ? j10 : j11;
+public abstract class c {
+    private static final int a(int i10, int i11, int i12) {
+        return e(e(i10, i12) - e(i11, i12), i12);
     }
 
-    @Override // java.util.Iterator
-    public boolean hasNext() {
-        return this.f29644i;
+    private static final long b(long j10, long j11, long j12) {
+        return f(f(j10, j12) - f(j11, j12), j12);
     }
 
-    @Override // kotlin.collections.n0
-    public long nextLong() {
-        long j10 = this.f29645o;
-        if (j10 == this.f29643e) {
-            if (this.f29644i) {
-                this.f29644i = false;
-                return j10;
+    public static final int c(int i10, int i11, int i12) {
+        if (i12 > 0) {
+            if (i10 < i11) {
+                return i11 - a(i11, i10, i12);
             }
-            throw new NoSuchElementException();
+        } else if (i12 < 0) {
+            if (i10 > i11) {
+                return i11 + a(i10, i11, -i12);
+            }
+        } else {
+            throw new IllegalArgumentException("Step is zero.");
         }
-        this.f29645o = this.f29642d + j10;
-        return j10;
+        return i11;
+    }
+
+    public static final long d(long j10, long j11, long j12) {
+        int i10 = (j12 > 0L ? 1 : (j12 == 0L ? 0 : -1));
+        if (i10 > 0) {
+            if (j10 >= j11) {
+                return j11;
+            }
+            return j11 - b(j11, j10, j12);
+        } else if (i10 < 0) {
+            if (j10 <= j11) {
+                return j11;
+            }
+            return j11 + b(j10, j11, -j12);
+        } else {
+            throw new IllegalArgumentException("Step is zero.");
+        }
+    }
+
+    private static final int e(int i10, int i11) {
+        int i12 = i10 % i11;
+        if (i12 >= 0) {
+            return i12;
+        }
+        return i12 + i11;
+    }
+
+    private static final long f(long j10, long j11) {
+        long j12 = j10 % j11;
+        if (j12 >= 0) {
+            return j12;
+        }
+        return j12 + j11;
     }
 }

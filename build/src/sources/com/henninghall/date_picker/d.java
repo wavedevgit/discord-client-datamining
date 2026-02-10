@@ -9,28 +9,28 @@ import java.util.Iterator;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f16722a;
+    private final n f17471a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f16723a;
+        static final /* synthetic */ int[] f17472a;
 
         static {
-            int[] iArr = new int[gl.b.values().length];
-            f16723a = iArr;
+            int[] iArr = new int[il.b.values().length];
+            f17472a = iArr;
             try {
-                iArr[gl.b.datetime.ordinal()] = 1;
+                iArr[il.b.datetime.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f16723a[gl.b.time.ordinal()] = 2;
+                f17472a[il.b.time.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f16723a[gl.b.date.ordinal()] = 3;
+                f17472a[il.b.date.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -38,19 +38,19 @@ public class d {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(n nVar) {
-        this.f16722a = nVar;
+        this.f17471a = nVar;
     }
 
     private ArrayList c() {
-        String replaceAll = h.c(this.f16722a.u()).replaceAll("\\('(.+?)'\\)", "\\${$1}").replaceAll("'.+?'", "").replaceAll("\\$\\{(.+?)\\}", "('$1')");
-        ArrayList arrayList = new ArrayList(Arrays.asList(gl.c.values()));
+        String replaceAll = h.c(this.f17471a.u()).replaceAll("\\('(.+?)'\\)", "\\${$1}").replaceAll("'.+?'", "").replaceAll("\\$\\{(.+?)\\}", "('$1')");
+        ArrayList arrayList = new ArrayList(Arrays.asList(il.c.values()));
         ArrayList arrayList2 = new ArrayList();
-        gl.c cVar = gl.c.DAY;
+        il.c cVar = il.c.DAY;
         arrayList.remove(cVar);
         arrayList2.add(cVar);
         for (char c10 : replaceAll.toCharArray()) {
             try {
-                gl.c h10 = o.h(c10);
+                il.c h10 = o.h(c10);
                 if (arrayList.contains(h10)) {
                     arrayList.remove(h10);
                     arrayList2.add(h10);
@@ -58,7 +58,7 @@ public class d {
             } catch (Exception unused) {
             }
         }
-        gl.c cVar2 = gl.c.AM_PM;
+        il.c cVar2 = il.c.AM_PM;
         if (arrayList.contains(cVar2)) {
             arrayList.remove(cVar2);
             arrayList2.add(cVar2);
@@ -70,8 +70,8 @@ public class d {
     }
 
     public String a() {
-        Calendar t10 = this.f16722a.t();
-        String s10 = this.f16722a.s();
+        Calendar t10 = this.f17471a.t();
+        String s10 = this.f17471a.s();
         if (t10 != null) {
             return o.b(t10);
         }
@@ -84,7 +84,7 @@ public class d {
         ArrayList arrayList = new ArrayList();
         Iterator it = c10.iterator();
         while (it.hasNext()) {
-            gl.c cVar = (gl.c) it.next();
+            il.c cVar = (il.c) it.next();
             if (e10.contains(cVar)) {
                 arrayList.add(cVar);
             }
@@ -93,45 +93,45 @@ public class d {
     }
 
     public int d() {
-        return l.f16810a;
+        return l.f17559a;
     }
 
     public ArrayList e() {
         ArrayList arrayList = new ArrayList();
-        gl.b z10 = this.f16722a.z();
-        int i10 = a.f16723a[z10.ordinal()];
+        il.b z10 = this.f17471a.z();
+        int i10 = a.f17472a[z10.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    arrayList.add(gl.c.YEAR);
-                    arrayList.add(gl.c.MONTH);
-                    arrayList.add(gl.c.DATE);
+                    arrayList.add(il.c.YEAR);
+                    arrayList.add(il.c.MONTH);
+                    arrayList.add(il.c.DATE);
                 }
             } else {
-                arrayList.add(gl.c.HOUR);
-                arrayList.add(gl.c.MINUTE);
+                arrayList.add(il.c.HOUR);
+                arrayList.add(il.c.MINUTE);
             }
         } else {
-            arrayList.add(gl.c.DAY);
-            arrayList.add(gl.c.HOUR);
-            arrayList.add(gl.c.MINUTE);
+            arrayList.add(il.c.DAY);
+            arrayList.add(il.c.HOUR);
+            arrayList.add(il.c.MINUTE);
         }
-        if ((z10 == gl.b.time || z10 == gl.b.datetime) && this.f16722a.f16837o.g()) {
-            arrayList.add(gl.c.AM_PM);
+        if ((z10 == il.b.time || z10 == il.b.datetime) && this.f17471a.f17586o.g()) {
+            arrayList.add(il.c.AM_PM);
         }
         return arrayList;
     }
 
     public boolean f() {
-        if (this.f16722a.z() == gl.b.time && !g()) {
+        if (this.f17471a.z() == il.b.time && !g()) {
             return true;
         }
         return false;
     }
 
     public boolean g() {
-        if (this.f16722a.r() == gl.a.locale) {
-            return h.h(this.f16722a.u());
+        if (this.f17471a.r() == il.a.locale) {
+            return h.h(this.f17471a.u());
         }
         return o.c();
     }

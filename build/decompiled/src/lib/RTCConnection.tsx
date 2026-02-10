@@ -5468,7 +5468,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var11.length;
                             var1 = 0;
                             if (!(var1 === var3)) {
-                                _fun31438_ip = 165;
+                                _fun31438_ip = 169;
                                 continue _fun31438
                             }
                         case 103:
@@ -5491,7 +5491,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var16 + var4;
                             var1.rtxSsrc = var4;
                             var1 = var3.bind(var11)(var1);
-                        case 165:
+                        case 169:
                             var3 = _closure1_slot15;
                             var1 = var3.getMediaEngine;
                             var9 = var1.bind(var3)();
@@ -5505,12 +5505,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = undefined;
                             var12 = undefined;
                             if (!var3) {
-                                _fun31438_ip = 221;
+                                _fun31438_ip = 225;
                                 continue _fun31438
                             }
-                        case 218:
+                        case 222:
                             var12 = var1;
-                        case 221:
+                        case 225:
                             var4 = _closure1_slot0;
                             var1 = _closure1_slot3;
                             var3 = 19;
@@ -5536,12 +5536,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.qosEnabled = var11;
                             var11 = undefined;
                             if (!var13) {
-                                _fun31438_ip = 336;
+                                _fun31438_ip = 340;
                                 continue _fun31438
                             }
-                        case 333:
+                        case 337:
                             var11 = var12;
-                        case 336:
+                        case 340:
                             var1.signingKeyId = var11;
                             var11 = var2.getExtraConnectionOptions;
                             var18 = var11.bind(var2)();
@@ -5563,18 +5563,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var4.isWeb;
                             var3 = var3.bind(var4)();
                             if (!var3) {
-                                _fun31438_ip = 439;
+                                _fun31438_ip = 443;
                                 continue _fun31438
                             }
-                        case 432:
+                        case 436:
                             var4 = _closure1_slot24;
                             var3 = !var4;
-                        case 439:
+                        case 443:
                             if (!var3) {
-                                _fun31438_ip = 479;
+                                _fun31438_ip = 483;
                                 continue _fun31438
                             }
-                        case 442:
+                        case 446:
                             var4 = _closure1_slot1;
                             var6 = _closure1_slot3;
                             var3 = 22;
@@ -5583,7 +5583,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var6.captureMessage;
                             var3 = 'Browser does not support Unified Plan';
                             var3 = var4.bind(var6)(var3);
-                        case 479:
+                        case 483:
                             var6 = var1.setUseElectronVideo;
                             var8 = var9.supports;
                             var3 = _closure1_slot25;
@@ -5595,14 +5595,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var3.IMAGE_QUALITY_MEASUREMENT;
                             var3 = var4.bind(var6)(var3);
                             if (!var3) {
-                                _fun31438_ip = 556;
+                                _fun31438_ip = 560;
                                 continue _fun31438
                             }
-                        case 537:
+                        case 541:
                             var4 = var1.setVideoQualityMeasurement;
                             var3 = 'imageQualityWebrtcPsnrDb:5000,imageQualityVmaf_v061:5000,hwdec';
                             var3 = var4.bind(var1)(var3);
-                        case 556:
+                        case 560:
                             var3 = global;
                             var6 = var3.Array;
                             var3 = var6.prototype;
@@ -5622,51 +5622,51 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure1_slot26;
                             var3 = var3.STREAM;
                             if (!(var4 !== var3)) {
-                                _fun31438_ip = 643;
+                                _fun31438_ip = 647;
                                 continue _fun31438
                             }
-                        case 625:
+                        case 629:
                             var4 = var8.push;
                             var3 = 'nvRelaxRc=75';
                             var3 = var4.bind(var8)(var3);
-                            _fun31438_ip = 659;
+                            _fun31438_ip = 663;
                             continue _fun31438;
-                        case 643:
+                        case 647:
                             var4 = var8.push;
                             var3 = 'nvRelaxRc=250';
                             var3 = var4.bind(var8)(var3);
-                        case 659:
+                        case 663:
                             var4 = _closure1_slot15;
                             var3 = var4.getUseVaapiEncoder;
                             var3 = var3.bind(var4)();
                             if (!var3) {
-                                _fun31438_ip = 694;
+                                _fun31438_ip = 698;
                                 continue _fun31438
                             }
-                        case 678:
+                        case 682:
                             var4 = var8.push;
                             var3 = 'vaapi';
                             var3 = var4.bind(var8)(var3);
-                        case 694:
+                        case 698:
                             var4 = var2.context;
                             var3 = _closure1_slot26;
                             var3 = var3.STREAM;
                             var3 = var4 === var3;
                             if (!var3) {
-                                _fun31438_ip = 736;
+                                _fun31438_ip = 740;
                                 continue _fun31438
                             }
-                        case 716:
+                        case 720:
                             var4 = var2.getVoiceParticipantType;
                             var6 = var4.bind(var2)();
                             var4 = 'streamer';
                             var3 = var4 === var6;
-                        case 736:
+                        case 740:
                             if (!var3) {
-                                _fun31438_ip = 781;
+                                _fun31438_ip = 785;
                                 continue _fun31438
                             }
-                        case 739:
+                        case 743:
                             var6 = _closure1_slot0;
                             var9 = _closure1_slot3;
                             var4 = 48;
@@ -5676,16 +5676,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = 'handleReady';
                             var4 = var6.bind(var9)(var4);
                             var3 = var4.enabled;
-                        case 781:
+                        case 785:
                             if (!var3) {
-                                _fun31438_ip = 798;
+                                _fun31438_ip = 802;
                                 continue _fun31438
                             }
-                        case 784:
+                        case 788:
                             var4 = var8.push;
                             var3 = 'useCaptureDeviceForEncode';
                             var3 = var4.bind(var8)(var3);
-                        case 798:
+                        case 802:
                             var4 = var1.setVideoEncoderExperiments;
                             var6 = var8.join;
                             var3 = ',';
@@ -10609,4 +10609,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 6, 7, 15, 17, 18, 3529, 3609, 3514, 1216, 1372, 3477, 3519, 8708, 3628, 1621, 660, 12299, 3511, 3530, 5739, 795, 1207, 3, 12300, 561, 491, 12302, 12303, 8079, 8709, 1444, 478, 3076, 1457, 806, 12305, 1384, 3633, 24, 12306, 12307, 3951, 12309, 12310, 1347, 12280, 12311, 12313, 3634, 8255, 12314, 12315, 12327, 12317, 12328, 4363, 12329, 12331, 7990, 12333, 4002, 1234, 1215, 3708, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 6, 7, 15, 17, 18, 3529, 3609, 3514, 1216, 1372, 3477, 3519, 8719, 3628, 1621, 660, 12310, 3511, 3530, 5749, 795, 1207, 3, 12311, 561, 491, 12313, 12314, 8089, 8720, 1444, 478, 3076, 1457, 806, 12316, 1384, 3633, 24, 12317, 12318, 3951, 12320, 12321, 1347, 12291, 12322, 12324, 3634, 8265, 12325, 12326, 12338, 12328, 12339, 4373, 12340, 12342, 8000, 12344, 4002, 1234, 1215, 3708, 2]);

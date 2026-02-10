@@ -7,9 +7,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.core.view.h0;
-import androidx.core.view.v;
-import androidx.core.view.w0;
+import androidx.core.view.i0;
+import androidx.core.view.w;
+import androidx.core.view.x0;
 import com.facebook.react.bridge.ReactApplicationContext;
 import f.f;
 import java.lang.ref.WeakReference;
@@ -47,7 +47,7 @@ public class WindowsInsetsManager {
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void lambda$updateInsets$1(int i10, int i11) {
         FrameLayout.LayoutParams layoutParams = getLayoutParams(i10, i11);
-        int i12 = f.f22230d;
+        int i12 = f.f23353d;
         Activity currentActivity = getCurrentActivity();
         if (currentActivity == null) {
             Log.e("Reanimated", "Unable to get reference to react activity");
@@ -62,24 +62,24 @@ public class WindowsInsetsManager {
         if (currentActivity == null) {
             Log.e("Reanimated", "Unable to get reference to react activity");
         } else {
-            w0.c(currentActivity.getWindow(), z10);
+            x0.c(currentActivity.getWindow(), z10);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public WindowInsetsCompat onApplyWindowInsetsListener(View view, WindowInsetsCompat windowInsetsCompat) {
-        WindowInsetsCompat Z = h0.Z(view, windowInsetsCompat);
+        WindowInsetsCompat W = i0.W(view, windowInsetsCompat);
         if (this.mKeyboard.getState() == KeyboardState.OPEN) {
             this.mKeyboard.updateHeight(windowInsetsCompat, this.mIsNavigationBarTranslucent);
             this.mNotifyAboutKeyboardChange.call();
         }
-        setWindowInsets(Z);
-        return Z;
+        setWindowInsets(W);
+        return W;
     }
 
     private void setWindowInsets(WindowInsetsCompat windowInsetsCompat) {
         int h10 = WindowInsetsCompat.p.h();
-        updateInsets(windowInsetsCompat.f(h10).f3302b, windowInsetsCompat.f(h10).f3304d);
+        updateInsets(windowInsetsCompat.f(h10).f3305b, windowInsetsCompat.f(h10).f3307d);
     }
 
     private void updateInsets(final int i10, final int i11) {
@@ -110,15 +110,15 @@ public class WindowsInsetsManager {
             return;
         }
         View decorView = currentActivity.getWindow().getDecorView();
-        h0.D0(decorView, new v() { // from class: com.swmansion.reanimated.keyboard.b
-            @Override // androidx.core.view.v
+        i0.x0(decorView, new w() { // from class: com.swmansion.reanimated.keyboard.b
+            @Override // androidx.core.view.w
             public final WindowInsetsCompat a(View view, WindowInsetsCompat windowInsetsCompat) {
                 WindowInsetsCompat onApplyWindowInsetsListener;
                 onApplyWindowInsetsListener = WindowsInsetsManager.this.onApplyWindowInsetsListener(view, windowInsetsCompat);
                 return onApplyWindowInsetsListener;
             }
         });
-        h0.L0(decorView, keyboardAnimationCallback);
+        i0.E0(decorView, keyboardAnimationCallback);
     }
 
     public void stopObservingChanges() {
@@ -136,7 +136,7 @@ public class WindowsInsetsManager {
             return;
         }
         View decorView = currentActivity.getWindow().getDecorView();
-        h0.L0(decorView, null);
-        h0.D0(decorView, null);
+        i0.E0(decorView, null);
+        i0.x0(decorView, null);
     }
 }

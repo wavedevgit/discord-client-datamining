@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun101650: for (var _fun101650_ip = 0;;) switch (_fun101650_ip) {
+            _fun101702: for (var _fun101702_ip = 0;;) switch (_fun101702_ip) {
                 case 0:
                     var0 = {};
                     var5 = _closure1_slot3;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot1;
                     var3 = !var3;
                     if (!var3) {
-                        _fun101650_ip = 71;
-                        continue _fun101650
+                        _fun101702_ip = 71;
+                        continue _fun101702
                     }
                 case 47:
                     var6 = _closure1_slot3;
@@ -157,4 +157,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useChannelUnreadBadgeState = var3;
     var2.useBaseChannelUnreadBadgeState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4573, 3948, 4303, 566, 4579, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4583, 3948, 4313, 566, 4589, 2]);

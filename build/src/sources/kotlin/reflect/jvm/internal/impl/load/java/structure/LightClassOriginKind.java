@@ -1,24 +1,24 @@
 package kotlin.reflect.jvm.internal.impl.load.java.structure;
 
+import hs.a;
 import kotlin.enums.EnumEntries;
-import yr.a;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class LightClassOriginKind {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ LightClassOriginKind[] f32806d;
+    private static final /* synthetic */ LightClassOriginKind[] f33028d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32807e;
+    private static final /* synthetic */ EnumEntries f33029e;
     public static final LightClassOriginKind SOURCE = new LightClassOriginKind("SOURCE", 0);
     public static final LightClassOriginKind BINARY = new LightClassOriginKind("BINARY", 1);
 
     static {
         LightClassOriginKind[] a10 = a();
-        f32806d = a10;
-        f32807e = a.a(a10);
+        f33028d = a10;
+        f33029e = a.a(a10);
     }
 
     private LightClassOriginKind(String str, int i10) {
@@ -33,6 +33,6 @@ public final class LightClassOriginKind {
     }
 
     public static LightClassOriginKind[] values() {
-        return (LightClassOriginKind[]) f32806d.clone();
+        return (LightClassOriginKind[]) f33028d.clone();
     }
 }

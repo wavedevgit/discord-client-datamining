@@ -1,31 +1,31 @@
 package kp;
+
+import fw.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class g {
-
-    /* renamed from: b  reason: collision with root package name */
-    public static int f34961b = 0;
-
-    /* renamed from: c  reason: collision with root package name */
-    public static int f34962c = 1;
-
-    /* renamed from: d  reason: collision with root package name */
-    public static int f34963d = 2;
-
-    /* renamed from: f  reason: collision with root package name */
-    public static int f34965f = 0;
-
-    /* renamed from: g  reason: collision with root package name */
-    public static int f34966g = 1;
-
-    /* renamed from: i  reason: collision with root package name */
-    public static int f34968i = 25;
+public final class g implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int[] f34960a = {2130969649, 2130969657, 2130969658};
+    private final com.withpersona.sdk2.inquiry.internal.network.f f35145a;
 
-    /* renamed from: e  reason: collision with root package name */
-    public static int[] f34964e = {2130969650, 2130969653};
+    /* renamed from: b  reason: collision with root package name */
+    private final lr.h f35146b;
 
-    /* renamed from: h  reason: collision with root package name */
-    public static int[] f34967h = {2130969440, 2130969568, 2130969617, 2130969618, 2130969619, 2130969620, 2130969621, 2130969622, 2130969623, 2130969624, 2130969625, 2130969626, 2130969627, 2130969628, 2130969629, 2130969630, 2130969631, 2130969632, 2130969633, 2130969634, 2130969635, 2130969636, 2130969637, 2130969638, 2130969639, 2130969640, 2130969641, 2130969642, 2130969643, 2130969644, 2130969645};
+    public g(com.withpersona.sdk2.inquiry.internal.network.f fVar, lr.h hVar) {
+        this.f35145a = fVar;
+        this.f35146b = hVar;
+    }
+
+    public static g a(com.withpersona.sdk2.inquiry.internal.network.f fVar, lr.h hVar) {
+        return new g(fVar, hVar);
+    }
+
+    public static com.withpersona.sdk2.inquiry.governmentid.network.a c(com.withpersona.sdk2.inquiry.internal.network.f fVar, a0 a0Var) {
+        return (com.withpersona.sdk2.inquiry.governmentid.network.a) lr.g.d(fVar.c(a0Var));
+    }
+
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public com.withpersona.sdk2.inquiry.governmentid.network.a get() {
+        return c(this.f35145a, (a0) this.f35146b.get());
+    }
 }

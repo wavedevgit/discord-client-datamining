@@ -18,70 +18,70 @@ import java.util.concurrent.TimeUnit;
 public final class xj {
 
     /* renamed from: k  reason: collision with root package name */
-    private static m0 f48887k;
+    private static m0 f47341k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final o0 f48888l = o0.c("optional-module-barcode", "com.google.android.gms.vision.barcode");
+    private static final o0 f47342l = o0.c("optional-module-barcode", "com.google.android.gms.vision.barcode");
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f48889a;
+    private final String f47343a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f48890b;
+    private final String f47344b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final mj f48891c;
+    private final mj f47345c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final uj.m f48892d;
+    private final wj.m f47346d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Task f48893e;
+    private final Task f47347e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Task f48894f;
+    private final Task f47348f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f48895g;
+    private final String f47349g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f48896h;
+    private final int f47350h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Map f48897i = new HashMap();
+    private final Map f47351i = new HashMap();
 
     /* renamed from: j  reason: collision with root package name */
-    private final Map f48898j = new HashMap();
+    private final Map f47352j = new HashMap();
 
-    public xj(Context context, final uj.m mVar, mj mjVar, String str) {
+    public xj(Context context, final wj.m mVar, mj mjVar, String str) {
         int i10;
-        this.f48889a = context.getPackageName();
-        this.f48890b = uj.c.a(context);
-        this.f48892d = mVar;
-        this.f48891c = mjVar;
+        this.f47343a = context.getPackageName();
+        this.f47344b = wj.c.a(context);
+        this.f47346d = mVar;
+        this.f47345c = mjVar;
         jk.a();
-        this.f48895g = str;
-        this.f48893e = uj.g.a().b(new Callable() { // from class: rg.sj
+        this.f47349g = str;
+        this.f47347e = wj.g.a().b(new Callable() { // from class: rg.sj
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 return xj.this.b();
             }
         });
-        uj.g a10 = uj.g.a();
+        wj.g a10 = wj.g.a();
         Objects.requireNonNull(mVar);
-        this.f48894f = a10.b(new Callable() { // from class: rg.tj
+        this.f47348f = a10.b(new Callable() { // from class: rg.tj
             @Override // java.util.concurrent.Callable
             public final Object call() {
-                return uj.m.this.a();
+                return wj.m.this.a();
             }
         });
-        o0 o0Var = f48888l;
+        o0 o0Var = f47342l;
         if (o0Var.containsKey(str)) {
             i10 = DynamiteModule.c(context, (String) o0Var.get(str));
         } else {
             i10 = -1;
         }
-        this.f48896h = i10;
+        this.f47350h = i10;
     }
 
     static long a(List list, double d10) {
@@ -91,17 +91,17 @@ public final class xj {
     private static synchronized m0 i() {
         synchronized (xj.class) {
             try {
-                m0 m0Var = f48887k;
+                m0 m0Var = f47341k;
                 if (m0Var != null) {
                     return m0Var;
                 }
                 LocaleListCompat a10 = w1.e.a(Resources.getSystem().getConfiguration());
                 j0 j0Var = new j0();
                 for (int i10 = 0; i10 < a10.f(); i10++) {
-                    j0Var.a(uj.c.b(a10.c(i10)));
+                    j0Var.a(wj.c.b(a10.c(i10)));
                 }
                 m0 b10 = j0Var.b();
-                f48887k = b10;
+                f47341k = b10;
                 return b10;
             } catch (Throwable th2) {
                 throw th2;
@@ -110,14 +110,14 @@ public final class xj {
     }
 
     private final String j() {
-        if (this.f48893e.p()) {
-            return (String) this.f48893e.l();
+        if (this.f47347e.p()) {
+            return (String) this.f47347e.l();
         }
-        return hf.m.a().b(this.f48895g);
+        return hf.m.a().b(this.f47349g);
     }
 
     private final boolean k(je jeVar, long j10, long j11) {
-        if (this.f48897i.get(jeVar) == null || j10 - ((Long) this.f48897i.get(jeVar)).longValue() > TimeUnit.SECONDS.toMillis(30L)) {
+        if (this.f47351i.get(jeVar) == null || j10 - ((Long) this.f47351i.get(jeVar)).longValue() > TimeUnit.SECONDS.toMillis(30L)) {
             return true;
         }
         return false;
@@ -125,7 +125,7 @@ public final class xj {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ String b() {
-        return hf.m.a().b(this.f48895g);
+        return hf.m.a().b(this.f47349g);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -134,22 +134,22 @@ public final class xj {
         ljVar.d(jeVar);
         String b10 = ljVar.b();
         ki kiVar = new ki();
-        kiVar.b(this.f48889a);
-        kiVar.c(this.f48890b);
+        kiVar.b(this.f47343a);
+        kiVar.c(this.f47344b);
         kiVar.h(i());
         kiVar.g(Boolean.TRUE);
         kiVar.l(b10);
         kiVar.j(str);
-        if (this.f48894f.p()) {
-            a10 = (String) this.f48894f.l();
+        if (this.f47348f.p()) {
+            a10 = (String) this.f47348f.l();
         } else {
-            a10 = this.f48892d.a();
+            a10 = this.f47346d.a();
         }
         kiVar.i(a10);
         kiVar.d(10);
-        kiVar.k(Integer.valueOf(this.f48896h));
+        kiVar.k(Integer.valueOf(this.f47350h));
         ljVar.c(kiVar);
-        this.f48891c.a(ljVar);
+        this.f47345c.a(ljVar);
     }
 
     public final void d(lj ljVar, je jeVar) {
@@ -157,7 +157,7 @@ public final class xj {
     }
 
     public final void e(final lj ljVar, final je jeVar, final String str) {
-        uj.g.d().execute(new Runnable() { // from class: rg.qj
+        wj.g.d().execute(new Runnable() { // from class: rg.qj
             @Override // java.lang.Runnable
             public final void run() {
                 xj.this.c(ljVar, jeVar, str);
@@ -170,13 +170,13 @@ public final class xj {
         if (!k(jeVar, elapsedRealtime, 30L)) {
             return;
         }
-        this.f48897i.put(jeVar, Long.valueOf(elapsedRealtime));
+        this.f47351i.put(jeVar, Long.valueOf(elapsedRealtime));
         e(wjVar.zza(), jeVar, j());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final /* synthetic */ void g(je jeVar, fk.t tVar) {
-        r0 r0Var = (r0) this.f48898j.get(jeVar);
+    public final /* synthetic */ void g(je jeVar, hk.t tVar) {
+        r0 r0Var = (r0) this.f47352j.get(jeVar);
         if (r0Var != null) {
             for (Object obj : r0Var.d()) {
                 ArrayList<Long> arrayList = new ArrayList(r0Var.a(obj));
@@ -194,22 +194,22 @@ public final class xj {
                 hdVar.e(Long.valueOf(a(arrayList, 0.0d)));
                 e(tVar.a(obj, arrayList.size(), hdVar.g()), jeVar, j());
             }
-            this.f48898j.remove(jeVar);
+            this.f47352j.remove(jeVar);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final /* synthetic */ void h(final je jeVar, Object obj, long j10, final fk.t tVar) {
-        if (!this.f48898j.containsKey(jeVar)) {
-            this.f48898j.put(jeVar, p.p());
+    public final /* synthetic */ void h(final je jeVar, Object obj, long j10, final hk.t tVar) {
+        if (!this.f47352j.containsKey(jeVar)) {
+            this.f47352j.put(jeVar, p.p());
         }
-        ((r0) this.f48898j.get(jeVar)).b(obj, Long.valueOf(j10));
+        ((r0) this.f47352j.get(jeVar)).b(obj, Long.valueOf(j10));
         long elapsedRealtime = SystemClock.elapsedRealtime();
         if (!k(jeVar, elapsedRealtime, 30L)) {
             return;
         }
-        this.f48897i.put(jeVar, Long.valueOf(elapsedRealtime));
-        uj.g.d().execute(new Runnable() { // from class: rg.rj
+        this.f47351i.put(jeVar, Long.valueOf(elapsedRealtime));
+        wj.g.d().execute(new Runnable() { // from class: rg.rj
             @Override // java.lang.Runnable
             public final void run() {
                 xj.this.g(jeVar, tVar);

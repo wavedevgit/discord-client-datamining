@@ -11,22 +11,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f4781f = new a(null);
+    public static final a f4791f = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private List f4782a;
+    private List f4792a;
 
     /* renamed from: b  reason: collision with root package name */
-    private List f4783b;
+    private List f4793b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f4784c;
+    private final List f4794c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f4785d;
+    private final List f4795d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f4786e;
+    private final List f4796e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -46,10 +46,10 @@ public final class g {
         public final b b(View view) {
             Intrinsics.checkNotNullParameter(view, "view");
             View c10 = c(view);
-            Object tag = c10.getTag(o3.g.f40233b);
+            Object tag = c10.getTag(o3.g.f38559b);
             if (tag == null) {
                 tag = new b();
-                c10.setTag(o3.g.f40233b, tag);
+                c10.setTag(o3.g.f38559b, tag);
             }
             return (b) tag;
         }
@@ -72,14 +72,14 @@ public final class g {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private g f4787a;
+        private g f4797a;
 
         public final g a() {
-            return this.f4787a;
+            return this.f4797a;
         }
 
         public final void b(g gVar) {
-            this.f4787a = gVar;
+            this.f4797a = gVar;
         }
     }
 
@@ -90,27 +90,27 @@ public final class g {
     private final void a(long j10, long j11, List list, List list2) {
         int size = list2.size() - 1;
         if (size < 0) {
-            if (this.f4784c.size() > 0) {
-                int size2 = this.f4784c.size();
+            if (this.f4794c.size() > 0) {
+                int size2 = this.f4794c.size();
                 for (int i10 = 0; i10 < size2; i10++) {
-                    if (!this.f4785d.contains(Integer.valueOf(i10))) {
-                        android.support.v4.media.session.b.a(this.f4784c.get(i10));
+                    if (!this.f4795d.contains(Integer.valueOf(i10))) {
+                        android.support.v4.media.session.b.a(this.f4794c.get(i10));
                         int i11 = i10 + 1;
-                        if (i11 < this.f4784c.size()) {
-                            android.support.v4.media.session.b.a(this.f4784c.get(i11));
+                        if (i11 < this.f4794c.size()) {
+                            android.support.v4.media.session.b.a(this.f4794c.get(i11));
                             throw null;
                         }
                     }
                 }
-                for (int size3 = this.f4785d.size() - 1; -1 < size3; size3--) {
-                    this.f4784c.remove(((Number) this.f4785d.get(size3)).intValue());
+                for (int size3 = this.f4795d.size() - 1; -1 < size3; size3--) {
+                    this.f4794c.remove(((Number) this.f4795d.get(size3)).intValue());
                 }
-                if (this.f4784c.size() <= 0) {
-                    this.f4784c.clear();
-                    this.f4785d.clear();
+                if (this.f4794c.size() <= 0) {
+                    this.f4794c.clear();
+                    this.f4795d.clear();
                     return;
                 }
-                android.support.v4.media.session.b.a(this.f4784c.get(0));
+                android.support.v4.media.session.b.a(this.f4794c.get(0));
                 throw null;
             }
             return;
@@ -120,12 +120,12 @@ public final class g {
     }
 
     public final void b() {
-        synchronized (this.f4783b) {
-            int size = this.f4783b.size() - 1;
+        synchronized (this.f4793b) {
+            int size = this.f4793b.size() - 1;
             if (-1 >= size) {
-                Unit unit = Unit.f31765a;
+                Unit unit = Unit.f31987a;
             } else {
-                android.support.v4.media.session.b.a(this.f4783b.get(size));
+                android.support.v4.media.session.b.a(this.f4793b.get(size));
                 throw null;
             }
         }
@@ -133,19 +133,19 @@ public final class g {
 
     public final void c(long j10, long j11, List frameStates) {
         Intrinsics.checkNotNullParameter(frameStates, "frameStates");
-        synchronized (this.f4783b) {
+        synchronized (this.f4793b) {
             frameStates.clear();
-            a(j10, j11, frameStates, this.f4782a);
-            a(j10, j11, frameStates, this.f4783b);
-            Unit unit = Unit.f31765a;
+            a(j10, j11, frameStates, this.f4792a);
+            a(j10, j11, frameStates, this.f4793b);
+            Unit unit = Unit.f31987a;
         }
     }
 
     private g() {
-        this.f4782a = new ArrayList();
-        this.f4783b = new ArrayList();
-        this.f4784c = new ArrayList();
-        this.f4785d = new ArrayList();
-        this.f4786e = new ArrayList();
+        this.f4792a = new ArrayList();
+        this.f4793b = new ArrayList();
+        this.f4794c = new ArrayList();
+        this.f4795d = new ArrayList();
+        this.f4796e = new ArrayList();
     }
 }

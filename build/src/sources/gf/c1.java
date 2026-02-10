@@ -3,25 +3,25 @@ package gf;
 final class c1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f24278a;
+    private final int f25578a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.google.android.gms.common.b f24279b;
+    private final com.google.android.gms.common.b f25579b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c1(com.google.android.gms.common.b bVar, int i10) {
         hf.q.l(bVar);
-        this.f24279b = bVar;
-        this.f24278a = i10;
+        this.f25579b = bVar;
+        this.f25578a = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int a() {
-        return this.f24278a;
+        return this.f25578a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final com.google.android.gms.common.b b() {
-        return this.f24279b;
+        return this.f25579b;
     }
 }

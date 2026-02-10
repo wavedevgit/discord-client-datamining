@@ -11,25 +11,25 @@ import sd.c;
 public final class c implements g {
 
     /* renamed from: r  reason: collision with root package name */
-    public static final c f49740r = new c(null, new a[0], 0, -9223372036854775807L, 0);
+    public static final c f48056r = new c(null, new a[0], 0, -9223372036854775807L, 0);
 
     /* renamed from: s  reason: collision with root package name */
-    private static final a f49741s = new a(0).k(0);
+    private static final a f48057s = new a(0).k(0);
 
     /* renamed from: t  reason: collision with root package name */
-    private static final String f49742t = w0.B0(1);
+    private static final String f48058t = w0.B0(1);
 
     /* renamed from: u  reason: collision with root package name */
-    private static final String f49743u = w0.B0(2);
+    private static final String f48059u = w0.B0(2);
 
     /* renamed from: v  reason: collision with root package name */
-    private static final String f49744v = w0.B0(3);
+    private static final String f48060v = w0.B0(3);
 
     /* renamed from: w  reason: collision with root package name */
-    private static final String f49745w = w0.B0(4);
+    private static final String f48061w = w0.B0(4);
 
     /* renamed from: x  reason: collision with root package name */
-    public static final g.a f49746x = new g.a() { // from class: sd.a
+    public static final g.a f48062x = new g.a() { // from class: sd.a
         @Override // com.google.android.exoplayer2.g.a
         public final g a(Bundle bundle) {
             c b10;
@@ -39,70 +39,70 @@ public final class c implements g {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    public final Object f49747d;
+    public final Object f48063d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f49748e;
+    public final int f48064e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final long f49749i;
+    public final long f48065i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final long f49750o;
+    public final long f48066o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final int f49751p;
+    public final int f48067p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final a[] f49752q;
+    private final a[] f48068q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a implements g {
 
         /* renamed from: d  reason: collision with root package name */
-        public final long f49760d;
+        public final long f48076d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f49761e;
+        public final int f48077e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final int f49762i;
+        public final int f48078i;
 
         /* renamed from: o  reason: collision with root package name */
-        public final Uri[] f49763o;
+        public final Uri[] f48079o;
 
         /* renamed from: p  reason: collision with root package name */
-        public final int[] f49764p;
+        public final int[] f48080p;
 
         /* renamed from: q  reason: collision with root package name */
-        public final long[] f49765q;
+        public final long[] f48081q;
 
         /* renamed from: r  reason: collision with root package name */
-        public final long f49766r;
+        public final long f48082r;
 
         /* renamed from: s  reason: collision with root package name */
-        public final boolean f49767s;
+        public final boolean f48083s;
 
         /* renamed from: t  reason: collision with root package name */
-        private static final String f49753t = w0.B0(0);
+        private static final String f48069t = w0.B0(0);
 
         /* renamed from: u  reason: collision with root package name */
-        private static final String f49754u = w0.B0(1);
+        private static final String f48070u = w0.B0(1);
 
         /* renamed from: v  reason: collision with root package name */
-        private static final String f49755v = w0.B0(2);
+        private static final String f48071v = w0.B0(2);
 
         /* renamed from: w  reason: collision with root package name */
-        private static final String f49756w = w0.B0(3);
+        private static final String f48072w = w0.B0(3);
 
         /* renamed from: x  reason: collision with root package name */
-        private static final String f49757x = w0.B0(4);
+        private static final String f48073x = w0.B0(4);
 
         /* renamed from: y  reason: collision with root package name */
-        private static final String f49758y = w0.B0(5);
+        private static final String f48074y = w0.B0(5);
 
         /* renamed from: z  reason: collision with root package name */
-        private static final String f49759z = w0.B0(6);
+        private static final String f48075z = w0.B0(6);
         private static final String A = w0.B0(7);
         public static final g.a B = new g.a() { // from class: sd.b
             @Override // com.google.android.exoplayer2.g.a
@@ -136,14 +136,14 @@ public final class c implements g {
         /* JADX INFO: Access modifiers changed from: private */
         public static a e(Bundle bundle) {
             Uri[] uriArr;
-            long j10 = bundle.getLong(f49753t);
-            int i10 = bundle.getInt(f49754u);
+            long j10 = bundle.getLong(f48069t);
+            int i10 = bundle.getInt(f48070u);
             int i11 = bundle.getInt(A);
-            ArrayList parcelableArrayList = bundle.getParcelableArrayList(f49755v);
-            int[] intArray = bundle.getIntArray(f49756w);
-            long[] longArray = bundle.getLongArray(f49757x);
-            long j11 = bundle.getLong(f49758y);
-            boolean z10 = bundle.getBoolean(f49759z);
+            ArrayList parcelableArrayList = bundle.getParcelableArrayList(f48071v);
+            int[] intArray = bundle.getIntArray(f48072w);
+            long[] longArray = bundle.getLongArray(f48073x);
+            long j11 = bundle.getLong(f48074y);
+            boolean z10 = bundle.getBoolean(f48075z);
             int[] iArr = intArray;
             if (iArr == null) {
                 iArr = new int[0];
@@ -162,7 +162,7 @@ public final class c implements g {
 
         /* JADX INFO: Access modifiers changed from: private */
         public boolean i() {
-            if (this.f49767s && this.f49760d == Long.MIN_VALUE && this.f49761e == -1) {
+            if (this.f48083s && this.f48076d == Long.MIN_VALUE && this.f48077e == -1) {
                 return true;
             }
             return false;
@@ -174,7 +174,7 @@ public final class c implements g {
             }
             if (obj != null && a.class == obj.getClass()) {
                 a aVar = (a) obj;
-                if (this.f49760d == aVar.f49760d && this.f49761e == aVar.f49761e && this.f49762i == aVar.f49762i && Arrays.equals(this.f49763o, aVar.f49763o) && Arrays.equals(this.f49764p, aVar.f49764p) && Arrays.equals(this.f49765q, aVar.f49765q) && this.f49766r == aVar.f49766r && this.f49767s == aVar.f49767s) {
+                if (this.f48076d == aVar.f48076d && this.f48077e == aVar.f48077e && this.f48078i == aVar.f48078i && Arrays.equals(this.f48079o, aVar.f48079o) && Arrays.equals(this.f48080p, aVar.f48080p) && Arrays.equals(this.f48081q, aVar.f48081q) && this.f48082r == aVar.f48082r && this.f48083s == aVar.f48083s) {
                     return true;
                 }
             }
@@ -189,8 +189,8 @@ public final class c implements g {
             int i11;
             int i12 = i10 + 1;
             while (true) {
-                int[] iArr = this.f49764p;
-                if (i12 >= iArr.length || this.f49767s || (i11 = iArr[i12]) == 0 || i11 == 1) {
+                int[] iArr = this.f48080p;
+                if (i12 >= iArr.length || this.f48083s || (i11 = iArr[i12]) == 0 || i11 == 1) {
                     break;
                 }
                 i12++;
@@ -199,11 +199,11 @@ public final class c implements g {
         }
 
         public boolean h() {
-            if (this.f49761e == -1) {
+            if (this.f48077e == -1) {
                 return true;
             }
-            for (int i10 = 0; i10 < this.f49761e; i10++) {
-                int i11 = this.f49764p[i10];
+            for (int i10 = 0; i10 < this.f48077e; i10++) {
+                int i11 = this.f48080p[i10];
                 if (i11 == 0 || i11 == 1) {
                     return true;
                 }
@@ -212,50 +212,50 @@ public final class c implements g {
         }
 
         public int hashCode() {
-            long j10 = this.f49760d;
-            long j11 = this.f49766r;
-            return (((((((((((((this.f49761e * 31) + this.f49762i) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + Arrays.hashCode(this.f49763o)) * 31) + Arrays.hashCode(this.f49764p)) * 31) + Arrays.hashCode(this.f49765q)) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + (this.f49767s ? 1 : 0);
+            long j10 = this.f48076d;
+            long j11 = this.f48082r;
+            return (((((((((((((this.f48077e * 31) + this.f48078i) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + Arrays.hashCode(this.f48079o)) * 31) + Arrays.hashCode(this.f48080p)) * 31) + Arrays.hashCode(this.f48081q)) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + (this.f48083s ? 1 : 0);
         }
 
         public boolean j() {
-            if (this.f49761e != -1 && f() >= this.f49761e) {
+            if (this.f48077e != -1 && f() >= this.f48077e) {
                 return false;
             }
             return true;
         }
 
         public a k(int i10) {
-            int[] d10 = d(this.f49764p, i10);
-            long[] c10 = c(this.f49765q, i10);
-            return new a(this.f49760d, i10, this.f49762i, d10, (Uri[]) Arrays.copyOf(this.f49763o, i10), c10, this.f49766r, this.f49767s);
+            int[] d10 = d(this.f48080p, i10);
+            long[] c10 = c(this.f48081q, i10);
+            return new a(this.f48076d, i10, this.f48078i, d10, (Uri[]) Arrays.copyOf(this.f48079o, i10), c10, this.f48082r, this.f48083s);
         }
 
         private a(long j10, int i10, int i11, int[] iArr, Uri[] uriArr, long[] jArr, long j11, boolean z10) {
             oe.a.a(iArr.length == uriArr.length);
-            this.f49760d = j10;
-            this.f49761e = i10;
-            this.f49762i = i11;
-            this.f49764p = iArr;
-            this.f49763o = uriArr;
-            this.f49765q = jArr;
-            this.f49766r = j11;
-            this.f49767s = z10;
+            this.f48076d = j10;
+            this.f48077e = i10;
+            this.f48078i = i11;
+            this.f48080p = iArr;
+            this.f48079o = uriArr;
+            this.f48081q = jArr;
+            this.f48082r = j11;
+            this.f48083s = z10;
         }
     }
 
     private c(Object obj, a[] aVarArr, long j10, long j11, int i10) {
-        this.f49747d = obj;
-        this.f49749i = j10;
-        this.f49750o = j11;
-        this.f49748e = aVarArr.length + i10;
-        this.f49752q = aVarArr;
-        this.f49751p = i10;
+        this.f48063d = obj;
+        this.f48065i = j10;
+        this.f48066o = j11;
+        this.f48064e = aVarArr.length + i10;
+        this.f48068q = aVarArr;
+        this.f48067p = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static c b(Bundle bundle) {
         a[] aVarArr;
-        ArrayList parcelableArrayList = bundle.getParcelableArrayList(f49742t);
+        ArrayList parcelableArrayList = bundle.getParcelableArrayList(f48058t);
         if (parcelableArrayList == null) {
             aVarArr = new a[0];
         } else {
@@ -265,9 +265,9 @@ public final class c implements g {
             }
             aVarArr = aVarArr2;
         }
-        String str = f49743u;
-        c cVar = f49740r;
-        return new c(null, aVarArr, bundle.getLong(str, cVar.f49749i), bundle.getLong(f49744v, cVar.f49750o), bundle.getInt(f49745w, cVar.f49751p));
+        String str = f48059u;
+        c cVar = f48056r;
+        return new c(null, aVarArr, bundle.getLong(str, cVar.f48065i), bundle.getLong(f48060v, cVar.f48066o), bundle.getInt(f48061w, cVar.f48067p));
     }
 
     private boolean g(long j10, long j11, int i10) {
@@ -275,9 +275,9 @@ public final class c implements g {
             return false;
         }
         a c10 = c(i10);
-        long j12 = c10.f49760d;
+        long j12 = c10.f48076d;
         if (j12 == Long.MIN_VALUE) {
-            if (j11 != -9223372036854775807L && ((!c10.f49767s || c10.f49761e != -1) && j10 >= j11)) {
+            if (j11 != -9223372036854775807L && ((!c10.f48083s || c10.f48077e != -1) && j10 >= j11)) {
                 return false;
             }
             return true;
@@ -289,20 +289,20 @@ public final class c implements g {
     }
 
     public a c(int i10) {
-        int i11 = this.f49751p;
+        int i11 = this.f48067p;
         if (i10 < i11) {
-            return f49741s;
+            return f48057s;
         }
-        return this.f49752q[i10 - i11];
+        return this.f48068q[i10 - i11];
     }
 
     public int d(long j10, long j11) {
         if (j10 != Long.MIN_VALUE && (j11 == -9223372036854775807L || j10 < j11)) {
-            int i10 = this.f49751p;
-            while (i10 < this.f49748e && ((c(i10).f49760d != Long.MIN_VALUE && c(i10).f49760d <= j10) || !c(i10).j())) {
+            int i10 = this.f48067p;
+            while (i10 < this.f48064e && ((c(i10).f48076d != Long.MIN_VALUE && c(i10).f48076d <= j10) || !c(i10).j())) {
                 i10++;
             }
-            if (i10 < this.f49748e) {
+            if (i10 < this.f48064e) {
                 return i10;
             }
         }
@@ -310,7 +310,7 @@ public final class c implements g {
     }
 
     public int e(long j10, long j11) {
-        int i10 = this.f49748e - 1;
+        int i10 = this.f48064e - 1;
         int i11 = i10 - (f(i10) ? 1 : 0);
         while (i11 >= 0) {
             long j12 = j10;
@@ -334,7 +334,7 @@ public final class c implements g {
         }
         if (obj != null && c.class == obj.getClass()) {
             c cVar = (c) obj;
-            if (w0.c(this.f49747d, cVar.f49747d) && this.f49748e == cVar.f49748e && this.f49749i == cVar.f49749i && this.f49750o == cVar.f49750o && this.f49751p == cVar.f49751p && Arrays.equals(this.f49752q, cVar.f49752q)) {
+            if (w0.c(this.f48063d, cVar.f48063d) && this.f48064e == cVar.f48064e && this.f48065i == cVar.f48065i && this.f48066o == cVar.f48066o && this.f48067p == cVar.f48067p && Arrays.equals(this.f48068q, cVar.f48068q)) {
                 return true;
             }
         }
@@ -342,7 +342,7 @@ public final class c implements g {
     }
 
     public boolean f(int i10) {
-        if (i10 == this.f49748e - 1 && c(i10).i()) {
+        if (i10 == this.f48064e - 1 && c(i10).i()) {
             return true;
         }
         return false;
@@ -350,30 +350,30 @@ public final class c implements g {
 
     public int hashCode() {
         int hashCode;
-        int i10 = this.f49748e * 31;
-        Object obj = this.f49747d;
+        int i10 = this.f48064e * 31;
+        Object obj = this.f48063d;
         if (obj == null) {
             hashCode = 0;
         } else {
             hashCode = obj.hashCode();
         }
-        return ((((((((i10 + hashCode) * 31) + ((int) this.f49749i)) * 31) + ((int) this.f49750o)) * 31) + this.f49751p) * 31) + Arrays.hashCode(this.f49752q);
+        return ((((((((i10 + hashCode) * 31) + ((int) this.f48065i)) * 31) + ((int) this.f48066o)) * 31) + this.f48067p) * 31) + Arrays.hashCode(this.f48068q);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
         sb2.append("AdPlaybackState(adsId=");
-        sb2.append(this.f49747d);
+        sb2.append(this.f48063d);
         sb2.append(", adResumePositionUs=");
-        sb2.append(this.f49749i);
+        sb2.append(this.f48065i);
         sb2.append(", adGroups=[");
-        for (int i10 = 0; i10 < this.f49752q.length; i10++) {
+        for (int i10 = 0; i10 < this.f48068q.length; i10++) {
             sb2.append("adGroup(timeUs=");
-            sb2.append(this.f49752q[i10].f49760d);
+            sb2.append(this.f48068q[i10].f48076d);
             sb2.append(", ads=[");
-            for (int i11 = 0; i11 < this.f49752q[i10].f49764p.length; i11++) {
+            for (int i11 = 0; i11 < this.f48068q[i10].f48080p.length; i11++) {
                 sb2.append("ad(state=");
-                int i12 = this.f49752q[i10].f49764p[i11];
+                int i12 = this.f48068q[i10].f48080p[i11];
                 if (i12 != 0) {
                     if (i12 != 1) {
                         if (i12 != 2) {
@@ -396,14 +396,14 @@ public final class c implements g {
                     sb2.append('_');
                 }
                 sb2.append(", durationUs=");
-                sb2.append(this.f49752q[i10].f49765q[i11]);
+                sb2.append(this.f48068q[i10].f48081q[i11]);
                 sb2.append(')');
-                if (i11 < this.f49752q[i10].f49764p.length - 1) {
+                if (i11 < this.f48068q[i10].f48080p.length - 1) {
                     sb2.append(", ");
                 }
             }
             sb2.append("])");
-            if (i10 < this.f49752q.length - 1) {
+            if (i10 < this.f48068q.length - 1) {
                 sb2.append(", ");
             }
         }

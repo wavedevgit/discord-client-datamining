@@ -53,20 +53,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2[0] = var5;
                 var1 = function() { // Environment: var1
                     var1 = global;
-                    var3 = var1.setImmediate;
-                    var2 = undefined;
-                    var1 = function() { // Environment: var0
+                    var4 = var1.setTimeout;
+                    var3 = undefined;
+                    var2 = function() { // Environment: var0
                         var2 = _closure2_slot1;
                         var1 = _closure2_slot0;
                         var0 = undefined;
                         var1 = var2.bind(var0)(var1);
                         return var0;
                     };
-                    var1 = var3.bind(var2)(var1);
+                    var1 = 0;
+                    var1 = var4.bind(var3)(var2, var1);
                     var _closure3_slot0 = var1;
                     var0 = function() { // Environment: var0
                         var0 = global;
-                        var2 = var0.clearImmediate;
+                        var2 = var0.clearTimeout;
                         var1 = _closure3_slot0;
                         var0 = undefined;
                         var1 = var2.bind(var0)(var1);

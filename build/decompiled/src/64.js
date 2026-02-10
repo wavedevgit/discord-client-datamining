@@ -904,26 +904,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var6 = 'JS->N';
                                 var3 = 0;
                                 if (!(var3 === var5)) {
-                                    _fun1432_ip = 39;
+                                    _fun1432_ip = 40;
                                     continue _fun1432
                                 }
-                            case 33:
+                            case 34:
                                 var6 = 'N->JS';
-                            case 39:
+                            case 40:
                                 var5 = var4.module;
                                 var3 = null;
                                 var3 = var3 != var5;
                                 var8 = '';
                                 var7 = var8;
                                 if (!var3) {
-                                    _fun1432_ip = 75;
+                                    _fun1432_ip = 76;
                                     continue _fun1432
                                 }
-                            case 61:
+                            case 62:
                                 var5 = var4.module;
                                 var3 = '.';
                                 var7 = var5 + var3;
-                            case 75:
+                            case 76:
                                 var5 = var4.method;
                                 var3 = var0.HermesInternal;
                                 var3 = var3.concat;

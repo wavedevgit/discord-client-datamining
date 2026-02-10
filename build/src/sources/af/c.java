@@ -62,7 +62,7 @@ public class c {
         String g11 = g("defaultGoogleSignInAccount");
         if (!TextUtils.isEmpty(g11) && (g10 = g(i("googleSignInAccount", g11))) != null) {
             try {
-                return GoogleSignInAccount.p(g10);
+                return GoogleSignInAccount.o(g10);
             } catch (JSONException unused) {
             }
         }
@@ -74,7 +74,7 @@ public class c {
         String g11 = g("defaultGoogleSignInAccount");
         if (!TextUtils.isEmpty(g11) && (g10 = g(i("googleSignInOptions", g11))) != null) {
             try {
-                return GoogleSignInOptions.o(g10);
+                return GoogleSignInOptions.l(g10);
             } catch (JSONException unused) {
             }
         }
@@ -88,12 +88,12 @@ public class c {
     public void f(GoogleSignInAccount googleSignInAccount, GoogleSignInOptions googleSignInOptions) {
         hf.q.l(googleSignInAccount);
         hf.q.l(googleSignInOptions);
-        h("defaultGoogleSignInAccount", googleSignInAccount.q());
+        h("defaultGoogleSignInAccount", googleSignInAccount.p());
         hf.q.l(googleSignInAccount);
         hf.q.l(googleSignInOptions);
-        String q10 = googleSignInAccount.q();
-        h(i("googleSignInAccount", q10), googleSignInAccount.r());
-        h(i("googleSignInOptions", q10), googleSignInOptions.t());
+        String p10 = googleSignInAccount.p();
+        h(i("googleSignInAccount", p10), googleSignInAccount.q());
+        h(i("googleSignInOptions", p10), googleSignInOptions.r());
     }
 
     protected final String g(String str) {

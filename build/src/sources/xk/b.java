@@ -1,25 +1,42 @@
 package xk;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class b extends f {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public b(mk.a aVar) {
-        super(aVar);
+public class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final int f54878a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final int f54879b;
+
+    public b(int i10, int i11) {
+        this.f54878a = i10;
+        this.f54879b = i11;
     }
 
-    @Override // xk.i
-    protected void h(StringBuilder sb2, int i10) {
-        if (i10 < 10000) {
-            sb2.append("(3202)");
-        } else {
-            sb2.append("(3203)");
-        }
+    public final int a() {
+        return this.f54879b;
     }
 
-    @Override // xk.i
-    protected int i(int i10) {
-        if (i10 < 10000) {
-            return i10;
+    public final int b() {
+        return this.f54878a;
+    }
+
+    public final boolean equals(Object obj) {
+        if (!(obj instanceof b)) {
+            return false;
         }
-        return i10 - 10000;
+        b bVar = (b) obj;
+        if (this.f54878a != bVar.f54878a || this.f54879b != bVar.f54879b) {
+            return false;
+        }
+        return true;
+    }
+
+    public final int hashCode() {
+        return this.f54878a ^ this.f54879b;
+    }
+
+    public final String toString() {
+        return this.f54878a + "(" + this.f54879b + ')';
     }
 }

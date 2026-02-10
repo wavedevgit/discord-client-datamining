@@ -7,40 +7,40 @@ import java.nio.ByteOrder;
 public abstract class i implements d {
 
     /* renamed from: b  reason: collision with root package name */
-    protected d.a f12312b;
+    protected d.a f12889b;
 
     /* renamed from: c  reason: collision with root package name */
-    protected d.a f12313c;
+    protected d.a f12890c;
 
     /* renamed from: d  reason: collision with root package name */
-    private d.a f12314d;
+    private d.a f12891d;
 
     /* renamed from: e  reason: collision with root package name */
-    private d.a f12315e;
+    private d.a f12892e;
 
     /* renamed from: f  reason: collision with root package name */
-    private ByteBuffer f12316f;
+    private ByteBuffer f12893f;
 
     /* renamed from: g  reason: collision with root package name */
-    private ByteBuffer f12317g;
+    private ByteBuffer f12894g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f12318h;
+    private boolean f12895h;
 
     public i() {
-        ByteBuffer byteBuffer = d.f12258a;
-        this.f12316f = byteBuffer;
-        this.f12317g = byteBuffer;
-        d.a aVar = d.a.f12259e;
-        this.f12314d = aVar;
-        this.f12315e = aVar;
-        this.f12312b = aVar;
-        this.f12313c = aVar;
+        ByteBuffer byteBuffer = d.f12835a;
+        this.f12893f = byteBuffer;
+        this.f12894g = byteBuffer;
+        d.a aVar = d.a.f12836e;
+        this.f12891d = aVar;
+        this.f12892e = aVar;
+        this.f12889b = aVar;
+        this.f12890c = aVar;
     }
 
     @Override // com.google.android.exoplayer2.audio.d
     public boolean a() {
-        if (this.f12315e != d.a.f12259e) {
+        if (this.f12892e != d.a.f12836e) {
             return true;
         }
         return false;
@@ -48,14 +48,14 @@ public abstract class i implements d {
 
     @Override // com.google.android.exoplayer2.audio.d
     public ByteBuffer b() {
-        ByteBuffer byteBuffer = this.f12317g;
-        this.f12317g = d.f12258a;
+        ByteBuffer byteBuffer = this.f12894g;
+        this.f12894g = d.f12835a;
         return byteBuffer;
     }
 
     @Override // com.google.android.exoplayer2.audio.d
     public boolean d() {
-        if (this.f12318h && this.f12317g == d.f12258a) {
+        if (this.f12895h && this.f12894g == d.f12835a) {
             return true;
         }
         return false;
@@ -63,32 +63,32 @@ public abstract class i implements d {
 
     @Override // com.google.android.exoplayer2.audio.d
     public final d.a e(d.a aVar) {
-        this.f12314d = aVar;
-        this.f12315e = h(aVar);
+        this.f12891d = aVar;
+        this.f12892e = h(aVar);
         if (a()) {
-            return this.f12315e;
+            return this.f12892e;
         }
-        return d.a.f12259e;
+        return d.a.f12836e;
     }
 
     @Override // com.google.android.exoplayer2.audio.d
     public final void f() {
-        this.f12318h = true;
+        this.f12895h = true;
         j();
     }
 
     @Override // com.google.android.exoplayer2.audio.d
     public final void flush() {
-        this.f12317g = d.f12258a;
-        this.f12318h = false;
-        this.f12312b = this.f12314d;
-        this.f12313c = this.f12315e;
+        this.f12894g = d.f12835a;
+        this.f12895h = false;
+        this.f12889b = this.f12891d;
+        this.f12890c = this.f12892e;
         i();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final boolean g() {
-        return this.f12317g.hasRemaining();
+        return this.f12894g.hasRemaining();
     }
 
     protected abstract d.a h(d.a aVar);
@@ -104,25 +104,25 @@ public abstract class i implements d {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final ByteBuffer l(int i10) {
-        if (this.f12316f.capacity() < i10) {
-            this.f12316f = ByteBuffer.allocateDirect(i10).order(ByteOrder.nativeOrder());
+        if (this.f12893f.capacity() < i10) {
+            this.f12893f = ByteBuffer.allocateDirect(i10).order(ByteOrder.nativeOrder());
         } else {
-            this.f12316f.clear();
+            this.f12893f.clear();
         }
-        ByteBuffer byteBuffer = this.f12316f;
-        this.f12317g = byteBuffer;
+        ByteBuffer byteBuffer = this.f12893f;
+        this.f12894g = byteBuffer;
         return byteBuffer;
     }
 
     @Override // com.google.android.exoplayer2.audio.d
     public final void reset() {
         flush();
-        this.f12316f = d.f12258a;
-        d.a aVar = d.a.f12259e;
-        this.f12314d = aVar;
-        this.f12315e = aVar;
-        this.f12312b = aVar;
-        this.f12313c = aVar;
+        this.f12893f = d.f12835a;
+        d.a aVar = d.a.f12836e;
+        this.f12891d = aVar;
+        this.f12892e = aVar;
+        this.f12889b = aVar;
+        this.f12890c = aVar;
         k();
     }
 }

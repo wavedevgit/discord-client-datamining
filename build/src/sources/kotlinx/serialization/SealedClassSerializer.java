@@ -1,13 +1,12 @@
 package kotlinx.serialization;
 
+import as.l;
+import as.o;
 import java.lang.annotation.Annotation;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import jt.d;
-import jt.j;
-import jt.k;
 import kotlin.Lazy;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -24,35 +23,36 @@ import kotlinx.serialization.SealedClassSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.encoding.c;
-import kt.b;
-import rr.l;
-import rr.o;
+import st.d;
+import st.j;
+import st.k;
+import tt.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class SealedClassSerializer extends b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KClass f34847a;
+    private final KClass f35069a;
 
     /* renamed from: b  reason: collision with root package name */
-    private List f34848b;
+    private List f35070b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Lazy f34849c;
+    private final Lazy f35071c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f34850d;
+    private final Map f35072d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f34851e;
+    private final Map f35073e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements j0 {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Iterable f34852a;
+        final /* synthetic */ Iterable f35074a;
 
         public a(Iterable iterable) {
-            this.f34852a = iterable;
+            this.f35074a = iterable;
         }
 
         @Override // kotlin.collections.j0
@@ -62,7 +62,7 @@ public final class SealedClassSerializer extends b {
 
         @Override // kotlin.collections.j0
         public Iterator b() {
-            return this.f34852a.iterator();
+            return this.f35074a.iterator();
         }
     }
 
@@ -71,9 +71,9 @@ public final class SealedClassSerializer extends b {
         Intrinsics.checkNotNullParameter(baseClass, "baseClass");
         Intrinsics.checkNotNullParameter(subclasses, "subclasses");
         Intrinsics.checkNotNullParameter(subclassSerializers, "subclassSerializers");
-        this.f34847a = baseClass;
-        this.f34848b = CollectionsKt.l();
-        this.f34849c = l.b(o.f49210e, new Function0() { // from class: gt.i
+        this.f35069a = baseClass;
+        this.f35070b = CollectionsKt.l();
+        this.f35071c = l.a(o.f6082e, new Function0() { // from class: qt.i
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SerialDescriptor i10;
@@ -83,7 +83,7 @@ public final class SealedClassSerializer extends b {
         });
         if (subclasses.length == subclassSerializers.length) {
             Map u10 = o0.u(i.j1(subclasses, subclassSerializers));
-            this.f34850d = u10;
+            this.f35072d = u10;
             a aVar = new a(u10.entrySet());
             LinkedHashMap linkedHashMap = new LinkedHashMap();
             Iterator b10 = aVar.b();
@@ -106,7 +106,7 @@ public final class SealedClassSerializer extends b {
             for (Map.Entry entry3 : linkedHashMap.entrySet()) {
                 linkedHashMap2.put(entry3.getKey(), (KSerializer) ((Map.Entry) entry3.getValue()).getValue());
             }
-            this.f34851e = linkedHashMap2;
+            this.f35073e = linkedHashMap2;
             return;
         }
         throw new IllegalArgumentException("All subclasses of sealed class " + e().getSimpleName() + " should be marked @Serializable");
@@ -114,76 +114,76 @@ public final class SealedClassSerializer extends b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SerialDescriptor i(String str, final SealedClassSerializer sealedClassSerializer) {
-        return j.d(str, d.b.f30475a, new SerialDescriptor[0], new Function1() { // from class: gt.j
+        return j.d(str, d.b.f48359a, new SerialDescriptor[0], new Function1() { // from class: qt.j
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit j10;
-                j10 = SealedClassSerializer.j(SealedClassSerializer.this, (jt.a) obj);
+                j10 = SealedClassSerializer.j(SealedClassSerializer.this, (st.a) obj);
                 return j10;
             }
         });
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit j(final SealedClassSerializer sealedClassSerializer, jt.a buildSerialDescriptor) {
+    public static final Unit j(final SealedClassSerializer sealedClassSerializer, st.a buildSerialDescriptor) {
         Intrinsics.checkNotNullParameter(buildSerialDescriptor, "$this$buildSerialDescriptor");
-        jt.a.b(buildSerialDescriptor, "type", ht.a.E(StringCompanionObject.INSTANCE).getDescriptor(), null, false, 12, null);
-        jt.a.b(buildSerialDescriptor, "value", j.d("kotlinx.serialization.Sealed<" + sealedClassSerializer.e().getSimpleName() + '>', k.a.f30493a, new SerialDescriptor[0], new Function1() { // from class: gt.k
+        st.a.b(buildSerialDescriptor, "type", rt.a.I(StringCompanionObject.INSTANCE).getDescriptor(), null, false, 12, null);
+        st.a.b(buildSerialDescriptor, "value", j.d("kotlinx.serialization.Sealed<" + sealedClassSerializer.e().getSimpleName() + '>', k.a.f48377a, new SerialDescriptor[0], new Function1() { // from class: qt.k
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit k10;
-                k10 = SealedClassSerializer.k(SealedClassSerializer.this, (jt.a) obj);
+                k10 = SealedClassSerializer.k(SealedClassSerializer.this, (st.a) obj);
                 return k10;
             }
         }), null, false, 12, null);
-        buildSerialDescriptor.h(sealedClassSerializer.f34848b);
-        return Unit.f31765a;
+        buildSerialDescriptor.h(sealedClassSerializer.f35070b);
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit k(SealedClassSerializer sealedClassSerializer, jt.a buildSerialDescriptor) {
+    public static final Unit k(SealedClassSerializer sealedClassSerializer, st.a buildSerialDescriptor) {
         Intrinsics.checkNotNullParameter(buildSerialDescriptor, "$this$buildSerialDescriptor");
-        for (Map.Entry entry : sealedClassSerializer.f34851e.entrySet()) {
-            jt.a.b(buildSerialDescriptor, (String) entry.getKey(), ((KSerializer) entry.getValue()).getDescriptor(), null, false, 12, null);
+        for (Map.Entry entry : sealedClassSerializer.f35073e.entrySet()) {
+            st.a.b(buildSerialDescriptor, (String) entry.getKey(), ((KSerializer) entry.getValue()).getDescriptor(), null, false, 12, null);
         }
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
-    @Override // kt.b
-    public gt.o c(Encoder encoder, Object value) {
-        KSerializer c10;
+    @Override // tt.b
+    public DeserializationStrategy c(c decoder, String str) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        KSerializer kSerializer = (KSerializer) this.f35073e.get(str);
+        if (kSerializer != null) {
+            return kSerializer;
+        }
+        return super.c(decoder, str);
+    }
+
+    @Override // tt.b
+    public qt.o d(Encoder encoder, Object value) {
+        KSerializer d10;
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
-        KSerializer kSerializer = (KSerializer) this.f34850d.get(Reflection.getOrCreateKotlinClass(value.getClass()));
+        KSerializer kSerializer = (KSerializer) this.f35072d.get(Reflection.getOrCreateKotlinClass(value.getClass()));
         if (kSerializer != null) {
-            c10 = kSerializer;
+            d10 = kSerializer;
         } else {
-            c10 = super.c(encoder, value);
+            d10 = super.d(encoder, value);
         }
-        if (c10 != null) {
-            return c10;
+        if (d10 != null) {
+            return d10;
         }
         return null;
     }
 
-    @Override // kt.b
-    public DeserializationStrategy d(c decoder, String str) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        KSerializer kSerializer = (KSerializer) this.f34851e.get(str);
-        if (kSerializer != null) {
-            return kSerializer;
-        }
-        return super.d(decoder, str);
-    }
-
-    @Override // kt.b
+    @Override // tt.b
     public KClass e() {
-        return this.f34847a;
+        return this.f35069a;
     }
 
-    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return (SerialDescriptor) this.f34849c.getValue();
+        return (SerialDescriptor) this.f35071c.getValue();
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
@@ -194,6 +194,6 @@ public final class SealedClassSerializer extends b {
         Intrinsics.checkNotNullParameter(subclasses, "subclasses");
         Intrinsics.checkNotNullParameter(subclassSerializers, "subclassSerializers");
         Intrinsics.checkNotNullParameter(classAnnotations, "classAnnotations");
-        this.f34848b = i.e(classAnnotations);
+        this.f35070b = i.e(classAnnotations);
     }
 }

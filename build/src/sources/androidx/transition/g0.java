@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 abstract class g0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static boolean f5412a = true;
+    private static boolean f5422a = true;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -21,11 +21,11 @@ abstract class g0 {
     }
 
     private static void a(ViewGroup viewGroup, boolean z10) {
-        if (f5412a) {
+        if (f5422a) {
             try {
                 a.b(viewGroup, z10);
             } catch (NoSuchMethodError unused) {
-                f5412a = false;
+                f5422a = false;
             }
         }
     }

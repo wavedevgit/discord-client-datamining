@@ -1,19 +1,13 @@
 package tp;
-
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements a {
+public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f50894a;
+    public static int f49780a = 2131887101;
 
-    @Override // tp.a
-    public boolean a() {
-        return this.f50894a;
-    }
+    /* renamed from: b  reason: collision with root package name */
+    public static int f49781b = 2131887102;
 
-    @Override // tp.a
-    public void b(f stepData) {
-        Intrinsics.checkNotNullParameter(stepData, "stepData");
-    }
+    /* renamed from: c  reason: collision with root package name */
+    public static int f49782c = 2131887103;
 }

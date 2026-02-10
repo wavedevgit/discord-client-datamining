@@ -16,15 +16,15 @@ public final class R {
         public static int controller_background = 0x7f06016d;
         public static int holowaves_background = 0x7f0601cf;
         public static int in_rainbows_background = 0x7f0601fe;
-        public static int manga_background = 0x7f0603c0;
-        public static int matte_dark_background = 0x7f060465;
-        public static int matte_light_background = 0x7f060466;
-        public static int midnight_prism_background = 0x7f06046d;
-        public static int mushroom_background = 0x7f0604a9;
-        public static int pastel_background = 0x7f0604c9;
-        public static int pirate_background = 0x7f060538;
-        public static int sunset_background = 0x7f0605e0;
-        public static int y2k_background = 0x7f060625;
+        public static int manga_background = 0x7f06046b;
+        public static int matte_dark_background = 0x7f060510;
+        public static int matte_light_background = 0x7f060511;
+        public static int midnight_prism_background = 0x7f060518;
+        public static int mushroom_background = 0x7f060554;
+        public static int pastel_background = 0x7f060574;
+        public static int pirate_background = 0x7f0605e3;
+        public static int sunset_background = 0x7f06068b;
+        public static int y2k_background = 0x7f0606d0;
 
         private color() {
         }

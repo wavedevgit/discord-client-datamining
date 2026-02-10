@@ -169,7 +169,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
         if (future != null) {
             try {
                 this.mPrecomputedTextFuture = null;
-                androidx.core.widget.j.r(this, future.get());
+                androidx.core.widget.j.p(this, future.get());
             } catch (InterruptedException | ExecutionException unused) {
             }
         }
@@ -198,7 +198,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView
     public int getAutoSizeMaxTextSize() {
-        if (g1.f1811c) {
+        if (g1.f1814c) {
             return getSuperCaller().f();
         }
         AppCompatTextHelper appCompatTextHelper = this.mTextHelper;
@@ -210,7 +210,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView, androidx.core.widget.b
     public int getAutoSizeMinTextSize() {
-        if (g1.f1811c) {
+        if (g1.f1814c) {
             return getSuperCaller().getAutoSizeMinTextSize();
         }
         AppCompatTextHelper appCompatTextHelper = this.mTextHelper;
@@ -222,7 +222,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView, androidx.core.widget.b
     public int getAutoSizeStepGranularity() {
-        if (g1.f1811c) {
+        if (g1.f1814c) {
             return getSuperCaller().getAutoSizeStepGranularity();
         }
         AppCompatTextHelper appCompatTextHelper = this.mTextHelper;
@@ -234,7 +234,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView
     public int[] getAutoSizeTextAvailableSizes() {
-        if (g1.f1811c) {
+        if (g1.f1814c) {
             return getSuperCaller().d();
         }
         AppCompatTextHelper appCompatTextHelper = this.mTextHelper;
@@ -247,7 +247,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
     @Override // android.widget.TextView, androidx.core.widget.b
     @SuppressLint({"WrongConstant"})
     public int getAutoSizeTextType() {
-        if (g1.f1811c) {
+        if (g1.f1814c) {
             if (getSuperCaller().getAutoSizeTextType() != 1) {
                 return 0;
             }
@@ -262,17 +262,17 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView
     public ActionMode.Callback getCustomSelectionActionModeCallback() {
-        return androidx.core.widget.j.u(super.getCustomSelectionActionModeCallback());
+        return androidx.core.widget.j.s(super.getCustomSelectionActionModeCallback());
     }
 
     @Override // android.widget.TextView
     public int getFirstBaselineToTopHeight() {
-        return androidx.core.widget.j.e(this);
+        return androidx.core.widget.j.d(this);
     }
 
     @Override // android.widget.TextView
     public int getLastBaselineToBottomHeight() {
-        return androidx.core.widget.j.f(this);
+        return androidx.core.widget.j.e(this);
     }
 
     SuperCaller getSuperCaller() {
@@ -331,7 +331,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @NonNull
     public PrecomputedTextCompat.Params getTextMetricsParamsCompat() {
-        return androidx.core.widget.j.i(this);
+        return androidx.core.widget.j.h(this);
     }
 
     public boolean isEmojiCompatEnabled() {
@@ -375,7 +375,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
     protected void onTextChanged(CharSequence charSequence, int i10, int i11, int i12) {
         super.onTextChanged(charSequence, i10, i11, i12);
         AppCompatTextHelper appCompatTextHelper = this.mTextHelper;
-        if (appCompatTextHelper != null && !g1.f1811c && appCompatTextHelper.l()) {
+        if (appCompatTextHelper != null && !g1.f1814c && appCompatTextHelper.l()) {
             this.mTextHelper.c();
         }
     }
@@ -388,7 +388,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView, androidx.core.widget.b
     public void setAutoSizeTextTypeUniformWithConfiguration(int i10, int i11, int i12, int i13) {
-        if (g1.f1811c) {
+        if (g1.f1814c) {
             getSuperCaller().setAutoSizeTextTypeUniformWithConfiguration(i10, i11, i12, i13);
             return;
         }
@@ -400,7 +400,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView
     public void setAutoSizeTextTypeUniformWithPresetSizes(@NonNull int[] iArr, int i10) {
-        if (g1.f1811c) {
+        if (g1.f1814c) {
             getSuperCaller().a(iArr, i10);
             return;
         }
@@ -412,7 +412,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView
     public void setAutoSizeTextTypeWithDefaults(int i10) {
-        if (g1.f1811c) {
+        if (g1.f1814c) {
             getSuperCaller().i(i10);
             return;
         }
@@ -478,7 +478,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView
     public void setCustomSelectionActionModeCallback(ActionMode.Callback callback) {
-        super.setCustomSelectionActionModeCallback(androidx.core.widget.j.v(this, callback));
+        super.setCustomSelectionActionModeCallback(androidx.core.widget.j.t(this, callback));
     }
 
     public void setEmojiCompatEnabled(boolean z10) {
@@ -495,7 +495,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
         if (Build.VERSION.SDK_INT >= 28) {
             getSuperCaller().h(i10);
         } else {
-            androidx.core.widget.j.n(this, i10);
+            androidx.core.widget.j.l(this, i10);
         }
     }
 
@@ -504,17 +504,17 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
         if (Build.VERSION.SDK_INT >= 28) {
             getSuperCaller().b(i10);
         } else {
-            androidx.core.widget.j.o(this, i10);
+            androidx.core.widget.j.m(this, i10);
         }
     }
 
     @Override // android.widget.TextView
     public void setLineHeight(int i10) {
-        androidx.core.widget.j.p(this, i10);
+        androidx.core.widget.j.n(this, i10);
     }
 
     public void setPrecomputedText(@NonNull PrecomputedTextCompat precomputedTextCompat) {
-        androidx.core.widget.j.r(this, precomputedTextCompat);
+        androidx.core.widget.j.p(this, precomputedTextCompat);
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
@@ -568,12 +568,12 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
     }
 
     public void setTextMetricsParamsCompat(@NonNull PrecomputedTextCompat.Params params) {
-        androidx.core.widget.j.t(this, params);
+        androidx.core.widget.j.r(this, params);
     }
 
     @Override // android.widget.TextView
     public void setTextSize(int i10, float f10) {
-        if (g1.f1811c) {
+        if (g1.f1814c) {
             super.setTextSize(i10, f10);
             return;
         }
@@ -613,7 +613,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
         if (Build.VERSION.SDK_INT >= 34) {
             getSuperCaller().c(i10, f10);
         } else {
-            androidx.core.widget.j.q(this, i10, f10);
+            androidx.core.widget.j.o(this, i10, f10);
         }
     }
 

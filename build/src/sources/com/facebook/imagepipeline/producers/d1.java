@@ -5,7 +5,7 @@ import com.facebook.imagepipeline.request.ImageRequest;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class d1 extends e {
     public d1(ImageRequest imageRequest, ProducerContext producerContext) {
-        this(imageRequest, producerContext.getId(), producerContext.n(), producerContext.y(), producerContext.a(), producerContext.C0(), producerContext.Q(), producerContext.z(), producerContext.C(), producerContext.k());
+        this(imageRequest, producerContext.getId(), producerContext.n(), producerContext.y(), producerContext.a(), producerContext.z0(), producerContext.Q(), producerContext.z(), producerContext.C(), producerContext.i());
     }
 
     public d1(ImageRequest imageRequest, String str, y0 y0Var, Object obj, ImageRequest.RequestLevel requestLevel, boolean z10, boolean z11, Priority priority, oa.r rVar) {

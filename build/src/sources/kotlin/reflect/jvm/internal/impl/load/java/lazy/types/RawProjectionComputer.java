@@ -1,5 +1,6 @@
 package kotlin.reflect.jvm.internal.impl.load.java.lazy.types;
 
+import as.p;
 import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor;
@@ -13,7 +14,6 @@ import kotlin.reflect.jvm.internal.impl.types.TypeProjectionImpl;
 import kotlin.reflect.jvm.internal.impl.types.TypeUtils;
 import kotlin.reflect.jvm.internal.impl.types.Variance;
 import org.jetbrains.annotations.NotNull;
-import rr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class RawProjectionComputer extends ErasureProjectionComputer {
 

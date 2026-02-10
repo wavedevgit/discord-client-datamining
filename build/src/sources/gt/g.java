@@ -1,84 +1,52 @@
 package gt;
 
-import java.lang.annotation.Annotation;
-import java.util.List;
-import jt.d;
-import jt.k;
-import kotlin.Lazy;
-import kotlin.Unit;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.StringCompanionObject;
-import kotlin.reflect.KClass;
-import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g extends kt.b {
+public final class g implements f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KClass f24794a;
+    private final Object f25985a;
 
     /* renamed from: b  reason: collision with root package name */
-    private List f24795b;
+    private final Function3 f25986b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Lazy f24796c;
+    private final Function3 f25987c;
 
-    public g(KClass baseClass) {
-        Intrinsics.checkNotNullParameter(baseClass, "baseClass");
-        this.f24794a = baseClass;
-        this.f24795b = CollectionsKt.l();
-        this.f24796c = rr.l.b(rr.o.f49210e, new Function0() { // from class: gt.e
-            @Override // kotlin.jvm.functions.Function0
-            public final Object invoke() {
-                SerialDescriptor h10;
-                h10 = g.h(g.this);
-                return h10;
-            }
-        });
+    /* renamed from: d  reason: collision with root package name */
+    private final Function3 f25988d;
+
+    public g(Object obj, Function3 function3, Function3 function32) {
+        Function3 function33;
+        this.f25985a = obj;
+        this.f25986b = function3;
+        this.f25987c = function32;
+        function33 = m.f26012a;
+        this.f25988d = function33;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final SerialDescriptor h(final g gVar) {
-        return jt.b.c(jt.j.d("kotlinx.serialization.Polymorphic", d.a.f30474a, new SerialDescriptor[0], new Function1() { // from class: gt.f
-            @Override // kotlin.jvm.functions.Function1
-            public final Object invoke(Object obj) {
-                Unit i10;
-                i10 = g.i(g.this, (jt.a) obj);
-                return i10;
-            }
-        }), gVar.e());
+    @Override // gt.j
+    public Function3 a() {
+        return this.f25986b;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit i(g gVar, jt.a buildSerialDescriptor) {
-        Intrinsics.checkNotNullParameter(buildSerialDescriptor, "$this$buildSerialDescriptor");
-        jt.a.b(buildSerialDescriptor, "type", ht.a.E(StringCompanionObject.INSTANCE).getDescriptor(), null, false, 12, null);
-        jt.a.b(buildSerialDescriptor, "value", jt.j.e("kotlinx.serialization.Polymorphic<" + gVar.e().getSimpleName() + '>', k.a.f30493a, new SerialDescriptor[0], null, 8, null), null, false, 12, null);
-        buildSerialDescriptor.h(gVar.f24795b);
-        return Unit.f31765a;
+    @Override // gt.j
+    public Function3 b() {
+        return this.f25987c;
     }
 
-    @Override // kt.b
-    public KClass e() {
-        return this.f24794a;
+    @Override // gt.j
+    public Function3 c() {
+        return this.f25988d;
     }
 
-    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return (SerialDescriptor) this.f24796c.getValue();
+    @Override // gt.j
+    public Object d() {
+        return this.f25985a;
     }
 
-    public String toString() {
-        return "kotlinx.serialization.PolymorphicSerializer(baseClass: " + e() + ')';
-    }
-
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public g(KClass baseClass, Annotation[] classAnnotations) {
-        this(baseClass);
-        Intrinsics.checkNotNullParameter(baseClass, "baseClass");
-        Intrinsics.checkNotNullParameter(classAnnotations, "classAnnotations");
-        this.f24795b = kotlin.collections.i.e(classAnnotations);
+    public /* synthetic */ g(Object obj, Function3 function3, Function3 function32, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(obj, function3, (i10 & 4) != 0 ? null : function32);
     }
 }

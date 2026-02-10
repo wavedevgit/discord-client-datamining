@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/directory_channels/native/components/GuildDirectoryMoreMenu.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun71913: for (var _fun71913_ip = 0;;) switch (_fun71913_ip) {
+        _fun71969: for (var _fun71969_ip = 0;;) switch (_fun71969_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.entry;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.canRemove;
                 var6 = new Array(0);
                 if (!var3) {
-                    _fun71913_ip = 176;
-                    continue _fun71913
+                    _fun71969_ip = 176;
+                    continue _fun71969
                 }
             case 70:
                 var7 = var6.push;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var7.bind(var6)(var3);
             case 176:
                 if (!var2) {
-                    _fun71913_ip = 293;
-                    continue _fun71913
+                    _fun71969_ip = 293;
+                    continue _fun71969
                 }
             case 179:
                 var3 = var6.push;
@@ -214,8 +214,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var6)(var2);
             case 293:
                 if (var0) {
-                    _fun71913_ip = 410;
-                    continue _fun71913
+                    _fun71969_ip = 410;
+                    continue _fun71969
                 }
             case 296:
                 var2 = var6.push;
@@ -259,8 +259,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 0;
                 var0 = null;
                 if (!(var2 !== var3)) {
-                    _fun71913_ip = 476;
-                    continue _fun71913
+                    _fun71969_ip = 476;
+                    continue _fun71969
                 }
             case 423:
                 var3 = _closure1_slot4;
@@ -340,4 +340,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8981, 8988, 3937, 1234, 8990, 4875, 6561, 7560, 3270, 8992, 8994, 7555, 8995, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8992, 8999, 3937, 1234, 9001, 4885, 6571, 7570, 3270, 9003, 9005, 7565, 9006, 671, 2]);

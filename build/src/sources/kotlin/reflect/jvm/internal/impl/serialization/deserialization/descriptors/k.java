@@ -9,20 +9,20 @@ import kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptor
 public class k implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedClassDescriptor.b f34213d;
+    private final DeserializedClassDescriptor.b f34435d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final DeserializedClassDescriptor f34214e;
+    private final DeserializedClassDescriptor f34436e;
 
     public k(DeserializedClassDescriptor.b bVar, DeserializedClassDescriptor deserializedClassDescriptor) {
-        this.f34213d = bVar;
-        this.f34214e = deserializedClassDescriptor;
+        this.f34435d = bVar;
+        this.f34436e = deserializedClassDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         ClassDescriptor f10;
-        f10 = DeserializedClassDescriptor.b.f(this.f34213d, this.f34214e, (Name) obj);
+        f10 = DeserializedClassDescriptor.b.f(this.f34435d, this.f34436e, (Name) obj);
         return f10;
     }
 }

@@ -1,11 +1,5 @@
 package yr;
-
-import kotlin.enums.EnumEntries;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-    public static final EnumEntries a(Enum[] entries) {
-        Intrinsics.checkNotNullParameter(entries, "entries");
-        return new b(entries);
-    }
+public interface a {
+    CharSequence a(String str, String str2);
 }

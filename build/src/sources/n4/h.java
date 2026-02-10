@@ -6,24 +6,24 @@ import p4.u;
 public final class h extends c {
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f37821b;
+    private final int f36825b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public h(o4.h tracker) {
         super(tracker);
         Intrinsics.checkNotNullParameter(tracker, "tracker");
-        this.f37821b = 9;
+        this.f36825b = 9;
     }
 
     @Override // n4.c
     public int b() {
-        return this.f37821b;
+        return this.f36825b;
     }
 
     @Override // n4.c
     public boolean c(u workSpec) {
         Intrinsics.checkNotNullParameter(workSpec, "workSpec");
-        return workSpec.f42997j.i();
+        return workSpec.f41455j.i();
     }
 
     @Override // n4.c

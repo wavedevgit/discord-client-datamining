@@ -1,11 +1,11 @@
 package com.withpersona.sdk2.inquiry.ui.network;
 
-import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.ui.network.AddressAutocompleteRequest;
+import dn.c;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AddressAutocompleteRequest_MetaJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19910a;
+    private final m.b f20790a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19911b;
+    private final h f20791b;
 
     public AddressAutocompleteRequest_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("fromComponent", "searchInput");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19910a = a10;
+        this.f20790a = a10;
         h f10 = moshi.f(String.class, x0.d(), "fromComponent");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19911b = f10;
+        this.f20791b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,20 +37,20 @@ public final class AddressAutocompleteRequest_MetaJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19910a);
+            int J = reader.J(this.f20790a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str2 = (String) this.f19911b.fromJson(reader)) == null) {
+                    if (J == 1 && (str2 = (String) this.f20791b.fromJson(reader)) == null) {
                         throw c.x("searchInput", "searchInput", reader);
                     }
                 } else {
-                    str = (String) this.f19911b.fromJson(reader);
+                    str = (String) this.f20791b.fromJson(reader);
                     if (str == null) {
                         throw c.x("fromComponent", "fromComponent", reader);
                     }
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -69,11 +69,11 @@ public final class AddressAutocompleteRequest_MetaJsonAdapter extends h {
     public void toJson(t writer, AddressAutocompleteRequest.Meta meta) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (meta != null) {
-            writer.k();
+            writer.i();
             writer.J("fromComponent");
-            this.f19911b.toJson(writer, meta.a());
+            this.f20791b.toJson(writer, meta.a());
             writer.J("searchInput");
-            this.f19911b.toJson(writer, meta.b());
+            this.f20791b.toJson(writer, meta.b());
             writer.s();
             return;
         }

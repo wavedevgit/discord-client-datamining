@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/useIsPrivateChannelWithEnabledActivities.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun63407: for (var _fun63407_ip = 0;;) switch (_fun63407_ip) {
+        _fun63460: for (var _fun63460_ip = 0;;) switch (_fun63460_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var3;
                 if (var2) {
-                    _fun63407_ip = 81;
-                    continue _fun63407
+                    _fun63460_ip = 81;
+                    continue _fun63460
                 }
             case 71:
                 var2 = var3.isPrivate;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 81:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun63407_ip = 91;
-                    continue _fun63407
+                    _fun63460_ip = 91;
+                    continue _fun63460
                 }
             case 88:
                 var0 = var1;
@@ -72,13 +72,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0() {
-        _fun63409: for (var _fun63409_ip = 0;;) switch (_fun63409_ip) {
+        _fun63462: for (var _fun63462_ip = 0;;) switch (_fun63462_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun63409_ip = 57;
-                    continue _fun63409
+                    _fun63462_ip = 57;
+                    continue _fun63462
                 }
             case 9:
                 var2 = _closure1_slot2;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 == var3;
                 var1 = undefined;
                 if (var2) {
-                    _fun63409_ip = 45;
-                    continue _fun63409
+                    _fun63462_ip = 45;
+                    continue _fun63462
                 }
             case 35:
                 var2 = var3.isPrivate;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 45:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun63409_ip = 55;
-                    continue _fun63409
+                    _fun63462_ip = 55;
+                    continue _fun63462
                 }
             case 52:
                 var0 = var1;

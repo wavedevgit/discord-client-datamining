@@ -10,16 +10,16 @@ import java.util.concurrent.atomic.AtomicInteger;
 final class f implements Executor {
 
     /* renamed from: e  reason: collision with root package name */
-    private static volatile Executor f7266e;
+    private static volatile Executor f7948e;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ExecutorService f7267d = Executors.newFixedThreadPool(2, new a());
+    private final ExecutorService f7949d = Executors.newFixedThreadPool(2, new a());
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements ThreadFactory {
 
         /* renamed from: a  reason: collision with root package name */
-        private final AtomicInteger f7268a = new AtomicInteger(0);
+        private final AtomicInteger f7950a = new AtomicInteger(0);
 
         a() {
         }
@@ -27,7 +27,7 @@ final class f implements Executor {
         @Override // java.util.concurrent.ThreadFactory
         public Thread newThread(Runnable runnable) {
             Thread thread = new Thread(runnable);
-            thread.setName(String.format(Locale.US, "CameraX-camerax_io_%d", Integer.valueOf(this.f7268a.getAndIncrement())));
+            thread.setName(String.format(Locale.US, "CameraX-camerax_io_%d", Integer.valueOf(this.f7950a.getAndIncrement())));
             return thread;
         }
     }
@@ -37,23 +37,23 @@ final class f implements Executor {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Executor a() {
-        if (f7266e != null) {
-            return f7266e;
+        if (f7948e != null) {
+            return f7948e;
         }
         synchronized (f.class) {
             try {
-                if (f7266e == null) {
-                    f7266e = new f();
+                if (f7948e == null) {
+                    f7948e = new f();
                 }
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        return f7266e;
+        return f7948e;
     }
 
     @Override // java.util.concurrent.Executor
     public void execute(Runnable runnable) {
-        this.f7267d.execute(runnable);
+        this.f7949d.execute(runnable);
     }
 }

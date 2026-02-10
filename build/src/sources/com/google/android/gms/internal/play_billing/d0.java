@@ -3,20 +3,20 @@ package com.google.android.gms.internal.play_billing;
 final class d0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public int f14302a;
+    public int f14879a;
 
     /* renamed from: b  reason: collision with root package name */
-    public long f14303b;
+    public long f14880b;
 
     /* renamed from: c  reason: collision with root package name */
-    public Object f14304c;
+    public Object f14881c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final e1 f14305d;
+    public final e1 f14882d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d0(e1 e1Var) {
         e1Var.getClass();
-        this.f14305d = e1Var;
+        this.f14882d = e1Var;
     }
 }

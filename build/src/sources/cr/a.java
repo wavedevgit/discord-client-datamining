@@ -1,40 +1,15 @@
 package cr;
 
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import com.withpersona.sdk2.inquiry.webrtc.networking.AuthorizeWebRtcResponse;
+import fw.z;
+import hw.f;
+import hw.t;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import org.jetbrains.annotations.NotNull;
+@Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bf\u0018\u00002\u00020\u0001J\"\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u00042\n\b\u0001\u0010\u0003\u001a\u0004\u0018\u00010\u0002H§@¢\u0006\u0004\b\u0006\u0010\u0007¨\u0006\b"}, d2 = {"Lcr/a;", "", "", "jwt", "Lfw/z;", "Lcom/withpersona/sdk2/inquiry/webrtc/networking/AuthorizeWebRtcResponse;", "a", "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "webrtc_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-abstract class a implements d {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Map f20157a;
-
-    /* renamed from: cr.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static abstract class AbstractC0291a {
-
-        /* renamed from: a  reason: collision with root package name */
-        final LinkedHashMap f20158a;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        public AbstractC0291a(int i10) {
-            this.f20158a = b.c(i10);
-        }
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        public AbstractC0291a a(Object obj, h hVar) {
-            this.f20158a.put(g.c(obj, "key"), (h) g.c(hVar, "provider"));
-            return this;
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public a(Map map) {
-        this.f20157a = Collections.unmodifiableMap(map);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final Map a() {
-        return this.f20157a;
-    }
+public interface a {
+    @f("/server-config")
+    Object a(@t("jwt") String str, @NotNull Continuation<? super z<AuthorizeWebRtcResponse>> continuation);
 }

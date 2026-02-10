@@ -6,7 +6,7 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.RelativeSizeSpan;
-import ni.n;
+import pi.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 abstract class i {
     public static /* synthetic */ boolean a(Object obj) {
@@ -27,7 +27,7 @@ abstract class i {
                 c0009b.o(SpannableString.valueOf(c0009b.e()));
             }
             e((Spannable) oe.a.e(c0009b.e()), new n() { // from class: com.google.android.exoplayer2.ui.g
-                @Override // ni.n
+                @Override // pi.n
                 public final boolean apply(Object obj) {
                     return i.b(obj);
                 }
@@ -43,7 +43,7 @@ abstract class i {
                 c0009b.o(SpannableString.valueOf(c0009b.e()));
             }
             e((Spannable) oe.a.e(c0009b.e()), new n() { // from class: com.google.android.exoplayer2.ui.h
-                @Override // ni.n
+                @Override // pi.n
                 public final boolean apply(Object obj) {
                     return i.a(obj);
                 }

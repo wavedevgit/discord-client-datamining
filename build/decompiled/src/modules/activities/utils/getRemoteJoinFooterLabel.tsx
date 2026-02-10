@@ -27,49 +27,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/getRemoteJoinFooterLabel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun93042: for (var _fun93042_ip = 0;;) switch (_fun93042_ip) {
+        _fun93098: for (var _fun93098_ip = 0;;) switch (_fun93098_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot2;
                 var1 = var1.DESKTOP;
                 if (!(var1 !== var2)) {
-                    _fun93042_ip = 347;
-                    continue _fun93042
+                    _fun93098_ip = 347;
+                    continue _fun93098
                 }
             case 23:
                 var1 = _closure1_slot2;
                 var1 = var1.IOS;
                 if (!(var1 !== var2)) {
-                    _fun93042_ip = 286;
-                    continue _fun93042
+                    _fun93098_ip = 286;
+                    continue _fun93098
                 }
             case 40:
                 var1 = _closure1_slot2;
                 var1 = var1.ANDROID;
                 if (!(var1 !== var2)) {
-                    _fun93042_ip = 225;
-                    continue _fun93042
+                    _fun93098_ip = 225;
+                    continue _fun93098
                 }
             case 57:
                 var1 = _closure1_slot2;
                 var1 = var1.XBOX;
                 if (!(var1 !== var2)) {
-                    _fun93042_ip = 164;
-                    continue _fun93042
+                    _fun93098_ip = 164;
+                    continue _fun93098
                 }
             case 71:
                 var1 = _closure1_slot2;
                 var1 = var1.PS4;
                 if (!(var1 !== var2)) {
-                    _fun93042_ip = 103;
-                    continue _fun93042
+                    _fun93098_ip = 103;
+                    continue _fun93098
                 }
             case 85:
                 var1 = _closure1_slot2;
                 var1 = var1.PS5;
                 if (!(var1 !== var2)) {
-                    _fun93042_ip = 103;
-                    continue _fun93042
+                    _fun93098_ip = 103;
+                    continue _fun93098
                 }
             case 99:
                 var1 = undefined;

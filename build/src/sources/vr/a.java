@@ -1,66 +1,40 @@
 package vr;
 
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.Intrinsics;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Rect;
+import android.text.Layout;
+import android.text.style.LeadingMarginSpan;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
+public class a implements LeadingMarginSpan {
 
-    /* renamed from: vr.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0727a extends Thread {
+    /* renamed from: d  reason: collision with root package name */
+    private final tr.c f51780d;
 
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f52994d;
+    /* renamed from: e  reason: collision with root package name */
+    private final Rect f51781e = h.b();
 
-        C0727a(Function0 function0) {
-            this.f52994d = function0;
-        }
+    /* renamed from: i  reason: collision with root package name */
+    private final Paint f51782i = h.a();
 
-        @Override // java.lang.Thread, java.lang.Runnable
-        public void run() {
-            this.f52994d.invoke();
-        }
+    public a(tr.c cVar) {
+        this.f51780d = cVar;
     }
 
-    public static final Thread a(boolean z10, boolean z11, ClassLoader classLoader, String str, int i10, Function0 block) {
-        Intrinsics.checkNotNullParameter(block, "block");
-        C0727a c0727a = new C0727a(block);
-        if (z11) {
-            c0727a.setDaemon(true);
-        }
-        if (i10 > 0) {
-            c0727a.setPriority(i10);
-        }
-        if (str != null) {
-            c0727a.setName(str);
-        }
-        if (classLoader != null) {
-            c0727a.setContextClassLoader(classLoader);
-        }
-        if (z10) {
-            c0727a.start();
-        }
-        return c0727a;
+    @Override // android.text.style.LeadingMarginSpan
+    public void drawLeadingMargin(Canvas canvas, Paint paint, int i10, int i11, int i12, int i13, int i14, CharSequence charSequence, int i15, int i16, boolean z10, Layout layout) {
+        int k10 = this.f51780d.k();
+        this.f51782i.set(paint);
+        this.f51780d.a(this.f51782i);
+        int i17 = i11 * k10;
+        int i18 = i10 + i17;
+        int i19 = i17 + i18;
+        this.f51781e.set(Math.min(i18, i19), i12, Math.max(i18, i19), i14);
+        canvas.drawRect(this.f51781e, this.f51782i);
     }
 
-    public static /* synthetic */ Thread b(boolean z10, boolean z11, ClassLoader classLoader, String str, int i10, Function0 function0, int i11, Object obj) {
-        if ((i11 & 1) != 0) {
-            z10 = true;
-        }
-        if ((i11 & 2) != 0) {
-            z11 = false;
-        }
-        if ((i11 & 4) != 0) {
-            classLoader = null;
-        }
-        if ((i11 & 8) != 0) {
-            str = null;
-        }
-        if ((i11 & 16) != 0) {
-            i10 = -1;
-        }
-        int i12 = i10;
-        String str2 = str;
-        return a(z10, z11, classLoader, str2, i12, function0);
+    @Override // android.text.style.LeadingMarginSpan
+    public int getLeadingMargin(boolean z10) {
+        return this.f51780d.j();
     }
 }

@@ -11,7 +11,7 @@ import android.view.View;
 public abstract class ExpandableTransformationBehavior extends ExpandableBehavior {
 
     /* renamed from: e  reason: collision with root package name */
-    private AnimatorSet f15762e;
+    private AnimatorSet f16511e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends AnimatorListenerAdapter {
@@ -20,7 +20,7 @@ public abstract class ExpandableTransformationBehavior extends ExpandableBehavio
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            ExpandableTransformationBehavior.this.f15762e = null;
+            ExpandableTransformationBehavior.this.f16511e = null;
         }
     }
 
@@ -31,7 +31,7 @@ public abstract class ExpandableTransformationBehavior extends ExpandableBehavio
     @Override // com.google.android.material.transformation.ExpandableBehavior
     public boolean L(View view, View view2, boolean z10, boolean z11) {
         boolean z12;
-        AnimatorSet animatorSet = this.f15762e;
+        AnimatorSet animatorSet = this.f16511e;
         if (animatorSet != null) {
             z12 = true;
         } else {
@@ -41,11 +41,11 @@ public abstract class ExpandableTransformationBehavior extends ExpandableBehavio
             animatorSet.cancel();
         }
         AnimatorSet N = N(view, view2, z10, z12);
-        this.f15762e = N;
+        this.f16511e = N;
         N.addListener(new a());
-        this.f15762e.start();
+        this.f16511e.start();
         if (!z11) {
-            this.f15762e.end();
+            this.f16511e.end();
         }
         return true;
     }

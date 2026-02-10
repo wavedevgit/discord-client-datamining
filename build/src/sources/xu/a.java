@@ -1,38 +1,30 @@
 package xu;
 
-import java.util.ArrayList;
+import java.io.IOException;
+import java.net.Proxy;
+import java.net.ProxySelector;
+import java.net.SocketAddress;
+import java.net.URI;
 import java.util.List;
+import kotlin.collections.CollectionsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements tu.b {
+public final class a extends ProxySelector {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f55338a = new a();
+    public static final a f55165a = new a();
 
     private a() {
     }
 
-    private final boolean b(Object obj) {
-        if (obj != null) {
-            if (!(obj instanceof String) || ((CharSequence) obj).length() != 0) {
-                return false;
-            }
-            return true;
+    @Override // java.net.ProxySelector
+    public List select(URI uri) {
+        if (uri != null) {
+            return CollectionsKt.e(Proxy.NO_PROXY);
         }
-        return true;
+        throw new IllegalArgumentException("uri must not be null");
     }
 
-    @Override // tu.b
-    /* renamed from: a */
-    public List f(Object obj, Object obj2) {
-        ArrayList arrayList = new ArrayList();
-        for (Object obj3 : dw.a.c(obj)) {
-            if (!f55338a.b(c.f55340a.f(obj3, obj2))) {
-                obj3 = null;
-            }
-            if (obj3 != null) {
-                arrayList.add(obj3);
-            }
-        }
-        return arrayList;
+    @Override // java.net.ProxySelector
+    public void connectFailed(URI uri, SocketAddress socketAddress, IOException iOException) {
     }
 }

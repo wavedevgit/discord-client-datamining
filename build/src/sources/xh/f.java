@@ -1,6 +1,9 @@
 package xh;
+
+import android.content.Intent;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract /* synthetic */ class f {
-    public static /* synthetic */ void a() {
-    }
+abstract class f {
+
+    /* renamed from: a  reason: collision with root package name */
+    static final Intent f54772a = new Intent("com.google.android.finsky.ageverification.BIND").setPackage("com.android.vending");
 }

@@ -1,47 +1,50 @@
 package hp;
 
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import android.content.Context;
+import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c {
+public abstract class c {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final c f26396d = new c("Dg1", 0);
+    /* renamed from: a  reason: collision with root package name */
+    private static b f27642a;
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final c f26397e = new c("Dg2", 1);
-
-    /* renamed from: i  reason: collision with root package name */
-    public static final c f26398i = new c("Dg14", 2);
-
-    /* renamed from: o  reason: collision with root package name */
-    public static final c f26399o = new c("Sod", 3);
-
-    /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ c[] f26400p;
-
-    /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f26401q;
-
-    static {
-        c[] a10 = a();
-        f26400p = a10;
-        f26401q = yr.a.a(a10);
+    public static final void a(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        c(context).b();
     }
 
-    private c(String str, int i10) {
+    private static final synchronized b b(Context context) {
+        synchronized (c.class) {
+            b bVar = f27642a;
+            if (bVar != null) {
+                return bVar;
+            }
+            b bVar2 = new b(context);
+            f27642a = bVar2;
+            return bVar2;
+        }
     }
 
-    private static final /* synthetic */ c[] a() {
-        return new c[]{f26396d, f26397e, f26398i, f26399o};
+    public static final b c(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        b bVar = f27642a;
+        if (bVar == null) {
+            return b(context);
+        }
+        return bVar;
     }
 
-    public static c valueOf(String str) {
-        return (c) Enum.valueOf(c.class, str);
+    public static final void d(Context context, List directoriesToDeleteOnError) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        Intrinsics.checkNotNullParameter(directoriesToDeleteOnError, "directoriesToDeleteOnError");
+        b c10 = c(context);
+        c10.d();
+        c10.f(directoriesToDeleteOnError);
     }
 
-    public static c[] values() {
-        return (c[]) f26400p.clone();
+    public static final void e(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        c(context).g();
     }
 }

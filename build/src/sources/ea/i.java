@@ -11,80 +11,80 @@ import java.util.Map;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    public static String f21218a = "calendar";
+    public static String f22385a = "calendar";
 
     /* renamed from: b  reason: collision with root package name */
-    public static String f21219b = "ca";
+    public static String f22386b = "ca";
 
     /* renamed from: c  reason: collision with root package name */
-    public static String f21220c = "numbers";
+    public static String f22387c = "numbers";
 
     /* renamed from: d  reason: collision with root package name */
-    public static String f21221d = "nu";
+    public static String f22388d = "nu";
 
     /* renamed from: e  reason: collision with root package name */
-    public static String f21222e = "hours";
+    public static String f22389e = "hours";
 
     /* renamed from: f  reason: collision with root package name */
-    public static String f21223f = "hc";
+    public static String f22390f = "hc";
 
     /* renamed from: g  reason: collision with root package name */
-    public static String f21224g = "collation";
+    public static String f22391g = "collation";
 
     /* renamed from: h  reason: collision with root package name */
-    public static String f21225h = "co";
+    public static String f22392h = "co";
 
     /* renamed from: i  reason: collision with root package name */
-    public static String f21226i = "colnumeric";
+    public static String f22393i = "colnumeric";
 
     /* renamed from: j  reason: collision with root package name */
-    public static String f21227j = "kn";
+    public static String f22394j = "kn";
 
     /* renamed from: k  reason: collision with root package name */
-    public static String f21228k = "colcasefirst";
+    public static String f22395k = "colcasefirst";
 
     /* renamed from: l  reason: collision with root package name */
-    public static String f21229l = "kf";
+    public static String f22396l = "kf";
 
     /* renamed from: m  reason: collision with root package name */
-    private static HashMap f21230m = new a();
+    private static HashMap f22397m = new a();
 
     /* renamed from: n  reason: collision with root package name */
-    private static HashMap f21231n = new b();
+    private static HashMap f22398n = new b();
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Map f21232o = new c();
+    private static final Map f22399o = new c();
 
     /* renamed from: p  reason: collision with root package name */
-    private static Map f21233p = new d();
+    private static Map f22400p = new d();
 
     /* renamed from: q  reason: collision with root package name */
-    private static Map f21234q = new e();
+    private static Map f22401q = new e();
 
     /* renamed from: r  reason: collision with root package name */
-    private static Map f21235r = new f();
+    private static Map f22402r = new f();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends HashMap {
         a() {
-            put(i.f21219b, i.f21218a);
-            put(i.f21221d, i.f21220c);
-            put(i.f21223f, i.f21222e);
-            put(i.f21225h, i.f21224g);
-            put(i.f21227j, i.f21226i);
-            put(i.f21229l, i.f21228k);
+            put(i.f22386b, i.f22385a);
+            put(i.f22388d, i.f22387c);
+            put(i.f22390f, i.f22389e);
+            put(i.f22392h, i.f22391g);
+            put(i.f22394j, i.f22393i);
+            put(i.f22396l, i.f22395k);
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class b extends HashMap {
         b() {
-            put(i.f21218a, i.f21219b);
-            put(i.f21220c, i.f21221d);
-            put(i.f21222e, i.f21223f);
-            put(i.f21224g, i.f21225h);
-            put(i.f21226i, i.f21227j);
-            put(i.f21228k, i.f21229l);
+            put(i.f22385a, i.f22386b);
+            put(i.f22387c, i.f22388d);
+            put(i.f22389e, i.f22390f);
+            put(i.f22391g, i.f22392h);
+            put(i.f22393i, i.f22394j);
+            put(i.f22395k, i.f22396l);
         }
     }
 
@@ -122,15 +122,15 @@ public abstract class i {
     }
 
     public static String a(String str) {
-        if (f21230m.containsKey(str)) {
-            return (String) f21230m.get(str);
+        if (f22397m.containsKey(str)) {
+            return (String) f22397m.get(str);
         }
         return str;
     }
 
     public static String b(String str) {
-        if (f21231n.containsKey(str)) {
-            return (String) f21231n.get(str);
+        if (f22398n.containsKey(str)) {
+            return (String) f22398n.get(str);
         }
         return str;
     }
@@ -155,14 +155,14 @@ public abstract class i {
     }
 
     public static String d(String str) {
-        if (!f21233p.containsKey(str)) {
+        if (!f22400p.containsKey(str)) {
             return str;
         }
-        return (String) f21233p.get(str);
+        return (String) f22400p.get(str);
     }
 
     public static String e(String str) {
-        Map map = f21232o;
+        Map map = f22399o;
         if (!map.containsKey(str)) {
             return str;
         }
@@ -189,9 +189,9 @@ public abstract class i {
     }
 
     public static String g(String str) {
-        if (!f21234q.containsKey(str)) {
+        if (!f22401q.containsKey(str)) {
             return str;
         }
-        return (String) f21234q.get(str);
+        return (String) f22401q.get(str);
     }
 }

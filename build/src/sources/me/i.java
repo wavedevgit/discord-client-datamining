@@ -14,22 +14,22 @@ import oe.w0;
 public final class i extends f {
 
     /* renamed from: e  reason: collision with root package name */
-    private final ContentResolver f36991e;
+    private final ContentResolver f36366e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Uri f36992f;
+    private Uri f36367f;
 
     /* renamed from: g  reason: collision with root package name */
-    private AssetFileDescriptor f36993g;
+    private AssetFileDescriptor f36368g;
 
     /* renamed from: h  reason: collision with root package name */
-    private FileInputStream f36994h;
+    private FileInputStream f36369h;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f36995i;
+    private long f36370i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f36996j;
+    private boolean f36371j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a extends m {
@@ -40,7 +40,7 @@ public final class i extends f {
 
     public i(Context context) {
         super(false);
-        this.f36991e = context.getContentResolver();
+        this.f36366e = context.getContentResolver();
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
@@ -48,62 +48,62 @@ public final class i extends f {
         AssetFileDescriptor openAssetFileDescriptor;
         int i10 = 2000;
         try {
-            Uri normalizeScheme = aVar.f13405a.normalizeScheme();
-            this.f36992f = normalizeScheme;
+            Uri normalizeScheme = aVar.f13982a.normalizeScheme();
+            this.f36367f = normalizeScheme;
             q(aVar);
             if ("content".equals(normalizeScheme.getScheme())) {
                 Bundle bundle = new Bundle();
                 bundle.putBoolean("android.provider.extra.ACCEPT_ORIGINAL_MEDIA_FORMAT", true);
-                openAssetFileDescriptor = this.f36991e.openTypedAssetFileDescriptor(normalizeScheme, "*/*", bundle);
+                openAssetFileDescriptor = this.f36366e.openTypedAssetFileDescriptor(normalizeScheme, "*/*", bundle);
             } else {
-                openAssetFileDescriptor = this.f36991e.openAssetFileDescriptor(normalizeScheme, "r");
+                openAssetFileDescriptor = this.f36366e.openAssetFileDescriptor(normalizeScheme, "r");
             }
-            this.f36993g = openAssetFileDescriptor;
+            this.f36368g = openAssetFileDescriptor;
             if (openAssetFileDescriptor != null) {
                 long length = openAssetFileDescriptor.getLength();
                 FileInputStream fileInputStream = new FileInputStream(openAssetFileDescriptor.getFileDescriptor());
-                this.f36994h = fileInputStream;
+                this.f36369h = fileInputStream;
                 int i11 = (length > (-1L) ? 1 : (length == (-1L) ? 0 : -1));
-                if (i11 != 0 && aVar.f13411g > length) {
+                if (i11 != 0 && aVar.f13988g > length) {
                     throw new a(null, 2008);
                 }
                 long startOffset = openAssetFileDescriptor.getStartOffset();
-                long skip = fileInputStream.skip(aVar.f13411g + startOffset) - startOffset;
-                if (skip == aVar.f13411g) {
+                long skip = fileInputStream.skip(aVar.f13988g + startOffset) - startOffset;
+                if (skip == aVar.f13988g) {
                     if (i11 == 0) {
                         FileChannel channel = fileInputStream.getChannel();
                         long size = channel.size();
                         if (size == 0) {
-                            this.f36995i = -1L;
+                            this.f36370i = -1L;
                         } else {
                             long position = size - channel.position();
-                            this.f36995i = position;
+                            this.f36370i = position;
                             if (position < 0) {
                                 throw new a(null, 2008);
                             }
                         }
                     } else {
                         long j10 = length - skip;
-                        this.f36995i = j10;
+                        this.f36370i = j10;
                         if (j10 < 0) {
                             throw new a(null, 2008);
                         }
                     }
-                    long j11 = aVar.f13412h;
+                    long j11 = aVar.f13989h;
                     if (j11 != -1) {
-                        long j12 = this.f36995i;
+                        long j12 = this.f36370i;
                         if (j12 != -1) {
                             j11 = Math.min(j12, j11);
                         }
-                        this.f36995i = j11;
+                        this.f36370i = j11;
                     }
-                    this.f36996j = true;
+                    this.f36371j = true;
                     r(aVar);
-                    long j13 = aVar.f13412h;
+                    long j13 = aVar.f13989h;
                     if (j13 != -1) {
                         return j13;
                     }
-                    return this.f36995i;
+                    return this.f36370i;
                 }
                 throw new a(null, 2008);
             }
@@ -120,17 +120,17 @@ public final class i extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void close() {
-        this.f36992f = null;
+        this.f36367f = null;
         try {
             try {
-                FileInputStream fileInputStream = this.f36994h;
+                FileInputStream fileInputStream = this.f36369h;
                 if (fileInputStream != null) {
                     fileInputStream.close();
                 }
-                this.f36994h = null;
+                this.f36369h = null;
                 try {
                     try {
-                        AssetFileDescriptor assetFileDescriptor = this.f36993g;
+                        AssetFileDescriptor assetFileDescriptor = this.f36368g;
                         if (assetFileDescriptor != null) {
                             assetFileDescriptor.close();
                         }
@@ -138,9 +138,9 @@ public final class i extends f {
                         throw new a(e10, 2000);
                     }
                 } finally {
-                    this.f36993g = null;
-                    if (this.f36996j) {
-                        this.f36996j = false;
+                    this.f36368g = null;
+                    if (this.f36371j) {
+                        this.f36371j = false;
                         p();
                     }
                 }
@@ -148,16 +148,16 @@ public final class i extends f {
                 throw new a(e11, 2000);
             }
         } catch (Throwable th2) {
-            this.f36994h = null;
+            this.f36369h = null;
             try {
                 try {
-                    AssetFileDescriptor assetFileDescriptor2 = this.f36993g;
+                    AssetFileDescriptor assetFileDescriptor2 = this.f36368g;
                     if (assetFileDescriptor2 != null) {
                         assetFileDescriptor2.close();
                     }
-                    this.f36993g = null;
-                    if (this.f36996j) {
-                        this.f36996j = false;
+                    this.f36368g = null;
+                    if (this.f36371j) {
+                        this.f36371j = false;
                         p();
                     }
                     throw th2;
@@ -165,9 +165,9 @@ public final class i extends f {
                     throw new a(e12, 2000);
                 }
             } finally {
-                this.f36993g = null;
-                if (this.f36996j) {
-                    this.f36996j = false;
+                this.f36368g = null;
+                if (this.f36371j) {
+                    this.f36371j = false;
                     p();
                 }
             }
@@ -176,7 +176,7 @@ public final class i extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Uri m() {
-        return this.f36992f;
+        return this.f36367f;
     }
 
     @Override // me.j
@@ -184,7 +184,7 @@ public final class i extends f {
         if (i11 == 0) {
             return 0;
         }
-        long j10 = this.f36995i;
+        long j10 = this.f36370i;
         if (j10 == 0) {
             return -1;
         }
@@ -195,13 +195,13 @@ public final class i extends f {
                 throw new a(e10, 2000);
             }
         }
-        int read = ((FileInputStream) w0.j(this.f36994h)).read(bArr, i10, i11);
+        int read = ((FileInputStream) w0.j(this.f36369h)).read(bArr, i10, i11);
         if (read == -1) {
             return -1;
         }
-        long j11 = this.f36995i;
+        long j11 = this.f36370i;
         if (j11 != -1) {
-            this.f36995i = j11 - read;
+            this.f36370i = j11 - read;
         }
         o(read);
         return read;

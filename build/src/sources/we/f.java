@@ -9,51 +9,51 @@ public class f extends jf.a {
     public static final Parcelable.Creator<f> CREATOR = new s();
 
     /* renamed from: d  reason: collision with root package name */
-    private final j f53698d;
+    private final j f52727d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f53699e;
+    private final String f52728e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f53700i;
+    private final int f52729i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private j f53701a;
+        private j f52730a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f53702b;
+        private String f52731b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f53703c;
+        private int f52732c;
 
         public f a() {
-            return new f(this.f53701a, this.f53702b, this.f53703c);
+            return new f(this.f52730a, this.f52731b, this.f52732c);
         }
 
         public a b(j jVar) {
-            this.f53701a = jVar;
+            this.f52730a = jVar;
             return this;
         }
 
         public final a c(String str) {
-            this.f53702b = str;
+            this.f52731b = str;
             return this;
         }
 
         public final a d(int i10) {
-            this.f53703c = i10;
+            this.f52732c = i10;
             return this;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(j jVar, String str, int i10) {
-        this.f53698d = (j) hf.q.l(jVar);
-        this.f53699e = str;
-        this.f53700i = i10;
+        this.f52727d = (j) hf.q.l(jVar);
+        this.f52728e = str;
+        this.f52729i = i10;
     }
 
     public static a b() {
@@ -64,8 +64,8 @@ public class f extends jf.a {
         hf.q.l(fVar);
         a b10 = b();
         b10.b(fVar.c());
-        b10.d(fVar.f53700i);
-        String str = fVar.f53699e;
+        b10.d(fVar.f52729i);
+        String str = fVar.f52728e;
         if (str != null) {
             b10.c(str);
         }
@@ -73,7 +73,7 @@ public class f extends jf.a {
     }
 
     public j c() {
-        return this.f53698d;
+        return this.f52727d;
     }
 
     public boolean equals(Object obj) {
@@ -81,22 +81,22 @@ public class f extends jf.a {
             return false;
         }
         f fVar = (f) obj;
-        if (!hf.o.a(this.f53698d, fVar.f53698d) || !hf.o.a(this.f53699e, fVar.f53699e) || this.f53700i != fVar.f53700i) {
+        if (!hf.o.a(this.f52727d, fVar.f52727d) || !hf.o.a(this.f52728e, fVar.f52728e) || this.f52729i != fVar.f52729i) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return hf.o.b(this.f53698d, this.f53699e);
+        return hf.o.b(this.f52727d, this.f52728e);
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
         int a10 = jf.c.a(parcel);
         jf.c.q(parcel, 1, c(), i10, false);
-        jf.c.s(parcel, 2, this.f53699e, false);
-        jf.c.l(parcel, 3, this.f53700i);
+        jf.c.s(parcel, 2, this.f52728e, false);
+        jf.c.l(parcel, 3, this.f52729i);
         jf.c.b(parcel, a10);
     }
 }

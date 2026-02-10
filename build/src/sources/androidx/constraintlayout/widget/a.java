@@ -16,32 +16,32 @@ import org.xmlpull.v1.XmlPullParser;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f2744a;
+    private boolean f2747a;
 
     /* renamed from: b  reason: collision with root package name */
-    String f2745b;
+    String f2748b;
 
     /* renamed from: c  reason: collision with root package name */
-    private EnumC0031a f2746c;
+    private EnumC0028a f2749c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f2747d;
+    private int f2750d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f2748e;
+    private float f2751e;
 
     /* renamed from: f  reason: collision with root package name */
-    private String f2749f;
+    private String f2752f;
 
     /* renamed from: g  reason: collision with root package name */
-    boolean f2750g;
+    boolean f2753g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f2751h;
+    private int f2754h;
 
     /* renamed from: androidx.constraintlayout.widget.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public enum EnumC0031a {
+    public enum EnumC0028a {
         INT_TYPE,
         FLOAT_TYPE,
         COLOR_TYPE,
@@ -52,10 +52,10 @@ public class a {
         REFERENCE_TYPE
     }
 
-    public a(String str, EnumC0031a enumC0031a, Object obj, boolean z10) {
-        this.f2745b = str;
-        this.f2746c = enumC0031a;
-        this.f2744a = z10;
+    public a(String str, EnumC0028a enumC0028a, Object obj, boolean z10) {
+        this.f2748b = str;
+        this.f2749c = enumC0028a;
+        this.f2747a = z10;
         d(obj);
     }
 
@@ -82,17 +82,17 @@ public class a {
     }
 
     public static void b(Context context, XmlPullParser xmlPullParser, HashMap hashMap) {
-        EnumC0031a enumC0031a;
+        EnumC0028a enumC0028a;
         Object valueOf;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(Xml.asAttributeSet(xmlPullParser), d.f2929t4);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(Xml.asAttributeSet(xmlPullParser), d.f2932t4);
         int indexCount = obtainStyledAttributes.getIndexCount();
         String str = null;
         Object obj = null;
-        EnumC0031a enumC0031a2 = null;
+        EnumC0028a enumC0028a2 = null;
         boolean z10 = false;
         for (int i10 = 0; i10 < indexCount; i10++) {
             int index = obtainStyledAttributes.getIndex(i10);
-            if (index == d.f2937u4) {
+            if (index == d.f2940u4) {
                 str = obtainStyledAttributes.getString(index);
                 if (str != null && str.length() > 0) {
                     str = Character.toUpperCase(str.charAt(0)) + str.substring(1);
@@ -100,33 +100,33 @@ public class a {
             } else if (index == d.E4) {
                 str = obtainStyledAttributes.getString(index);
                 z10 = true;
-            } else if (index == d.f2945v4) {
+            } else if (index == d.f2948v4) {
                 obj = Boolean.valueOf(obtainStyledAttributes.getBoolean(index, false));
-                enumC0031a2 = EnumC0031a.BOOLEAN_TYPE;
+                enumC0028a2 = EnumC0028a.BOOLEAN_TYPE;
             } else {
-                if (index == d.f2961x4) {
-                    enumC0031a = EnumC0031a.COLOR_TYPE;
+                if (index == d.f2964x4) {
+                    enumC0028a = EnumC0028a.COLOR_TYPE;
                     valueOf = Integer.valueOf(obtainStyledAttributes.getColor(index, 0));
-                } else if (index == d.f2953w4) {
-                    enumC0031a = EnumC0031a.COLOR_DRAWABLE_TYPE;
+                } else if (index == d.f2956w4) {
+                    enumC0028a = EnumC0028a.COLOR_DRAWABLE_TYPE;
                     valueOf = Integer.valueOf(obtainStyledAttributes.getColor(index, 0));
                 } else if (index == d.B4) {
-                    enumC0031a = EnumC0031a.DIMENSION_TYPE;
+                    enumC0028a = EnumC0028a.DIMENSION_TYPE;
                     valueOf = Float.valueOf(TypedValue.applyDimension(1, obtainStyledAttributes.getDimension(index, 0.0f), context.getResources().getDisplayMetrics()));
-                } else if (index == d.f2969y4) {
-                    enumC0031a = EnumC0031a.DIMENSION_TYPE;
+                } else if (index == d.f2972y4) {
+                    enumC0028a = EnumC0028a.DIMENSION_TYPE;
                     valueOf = Float.valueOf(obtainStyledAttributes.getDimension(index, 0.0f));
-                } else if (index == d.f2977z4) {
-                    enumC0031a = EnumC0031a.FLOAT_TYPE;
+                } else if (index == d.f2980z4) {
+                    enumC0028a = EnumC0028a.FLOAT_TYPE;
                     valueOf = Float.valueOf(obtainStyledAttributes.getFloat(index, Float.NaN));
                 } else if (index == d.A4) {
-                    enumC0031a = EnumC0031a.INT_TYPE;
+                    enumC0028a = EnumC0028a.INT_TYPE;
                     valueOf = Integer.valueOf(obtainStyledAttributes.getInteger(index, -1));
                 } else if (index == d.D4) {
-                    enumC0031a = EnumC0031a.STRING_TYPE;
+                    enumC0028a = EnumC0028a.STRING_TYPE;
                     valueOf = obtainStyledAttributes.getString(index);
                 } else if (index == d.C4) {
-                    enumC0031a = EnumC0031a.REFERENCE_TYPE;
+                    enumC0028a = EnumC0028a.REFERENCE_TYPE;
                     int resourceId = obtainStyledAttributes.getResourceId(index, -1);
                     if (resourceId == -1) {
                         resourceId = obtainStyledAttributes.getInt(index, -1);
@@ -134,12 +134,12 @@ public class a {
                     valueOf = Integer.valueOf(resourceId);
                 }
                 Object obj2 = valueOf;
-                enumC0031a2 = enumC0031a;
+                enumC0028a2 = enumC0028a;
                 obj = obj2;
             }
         }
         if (str != null && obj != null) {
-            hashMap.put(str, new a(str, enumC0031a2, obj, z10));
+            hashMap.put(str, new a(str, enumC0028a2, obj, z10));
         }
         obtainStyledAttributes.recycle();
     }
@@ -149,42 +149,42 @@ public class a {
         Class<?> cls = view.getClass();
         for (String str2 : hashMap.keySet()) {
             a aVar = (a) hashMap.get(str2);
-            if (!aVar.f2744a) {
+            if (!aVar.f2747a) {
                 str = "set" + str2;
             } else {
                 str = str2;
             }
             try {
-                int ordinal = aVar.f2746c.ordinal();
+                int ordinal = aVar.f2749c.ordinal();
                 Class cls2 = Float.TYPE;
                 Class cls3 = Integer.TYPE;
                 switch (ordinal) {
                     case 0:
-                        cls.getMethod(str, cls3).invoke(view, Integer.valueOf(aVar.f2747d));
+                        cls.getMethod(str, cls3).invoke(view, Integer.valueOf(aVar.f2750d));
                         continue;
                     case 1:
-                        cls.getMethod(str, cls2).invoke(view, Float.valueOf(aVar.f2748e));
+                        cls.getMethod(str, cls2).invoke(view, Float.valueOf(aVar.f2751e));
                         continue;
                     case 2:
-                        cls.getMethod(str, cls3).invoke(view, Integer.valueOf(aVar.f2751h));
+                        cls.getMethod(str, cls3).invoke(view, Integer.valueOf(aVar.f2754h));
                         continue;
                     case 3:
                         Method method = cls.getMethod(str, Drawable.class);
                         ColorDrawable colorDrawable = new ColorDrawable();
-                        colorDrawable.setColor(aVar.f2751h);
+                        colorDrawable.setColor(aVar.f2754h);
                         method.invoke(view, colorDrawable);
                         continue;
                     case 4:
-                        cls.getMethod(str, CharSequence.class).invoke(view, aVar.f2749f);
+                        cls.getMethod(str, CharSequence.class).invoke(view, aVar.f2752f);
                         continue;
                     case 5:
-                        cls.getMethod(str, Boolean.TYPE).invoke(view, Boolean.valueOf(aVar.f2750g));
+                        cls.getMethod(str, Boolean.TYPE).invoke(view, Boolean.valueOf(aVar.f2753g));
                         continue;
                     case 6:
-                        cls.getMethod(str, cls2).invoke(view, Float.valueOf(aVar.f2748e));
+                        cls.getMethod(str, cls2).invoke(view, Float.valueOf(aVar.f2751e));
                         continue;
                     case 7:
-                        cls.getMethod(str, cls3).invoke(view, Integer.valueOf(aVar.f2747d));
+                        cls.getMethod(str, cls3).invoke(view, Integer.valueOf(aVar.f2750d));
                         continue;
                 }
             } catch (IllegalAccessException e10) {
@@ -198,26 +198,26 @@ public class a {
     }
 
     public void d(Object obj) {
-        switch (this.f2746c.ordinal()) {
+        switch (this.f2749c.ordinal()) {
             case 0:
             case 7:
-                this.f2747d = ((Integer) obj).intValue();
+                this.f2750d = ((Integer) obj).intValue();
                 return;
             case 1:
-                this.f2748e = ((Float) obj).floatValue();
+                this.f2751e = ((Float) obj).floatValue();
                 return;
             case 2:
             case 3:
-                this.f2751h = ((Integer) obj).intValue();
+                this.f2754h = ((Integer) obj).intValue();
                 return;
             case 4:
-                this.f2749f = (String) obj;
+                this.f2752f = (String) obj;
                 return;
             case 5:
-                this.f2750g = ((Boolean) obj).booleanValue();
+                this.f2753g = ((Boolean) obj).booleanValue();
                 return;
             case 6:
-                this.f2748e = ((Float) obj).floatValue();
+                this.f2751e = ((Float) obj).floatValue();
                 return;
             default:
                 return;
@@ -225,9 +225,9 @@ public class a {
     }
 
     public a(a aVar, Object obj) {
-        this.f2744a = false;
-        this.f2745b = aVar.f2745b;
-        this.f2746c = aVar.f2746c;
+        this.f2747a = false;
+        this.f2748b = aVar.f2748b;
+        this.f2749c = aVar.f2749c;
         d(obj);
     }
 }

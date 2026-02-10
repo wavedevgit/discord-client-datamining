@@ -3,17 +3,17 @@ package kotlin.random;
 import java.io.Serializable;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class c {
     @NotNull
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f31855d = new a(null);
+    public static final a f32077d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final c f31856e = zr.b.f56641a.b();
+    private static final c f32078e = is.b.f30421a.b();
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends c implements Serializable {
         public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
@@ -21,27 +21,27 @@ public abstract class c {
 
         @Override // kotlin.random.c
         public int b(int i10) {
-            return c.f31856e.b(i10);
+            return c.f32078e.b(i10);
         }
 
         @Override // kotlin.random.c
         public float c() {
-            return c.f31856e.c();
+            return c.f32078e.c();
         }
 
         @Override // kotlin.random.c
         public int d() {
-            return c.f31856e.d();
+            return c.f32078e.d();
         }
 
         @Override // kotlin.random.c
         public int e(int i10) {
-            return c.f31856e.e(i10);
+            return c.f32078e.e(i10);
         }
 
         @Override // kotlin.random.c
         public int f(int i10, int i11) {
-            return c.f31856e.f(i10, i11);
+            return c.f32078e.f(i10, i11);
         }
 
         private a() {

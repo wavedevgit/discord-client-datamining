@@ -50,7 +50,7 @@ public final class AttributeStyles_ESignatureTextColorStyleJsonAdapter extends h
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
@@ -70,7 +70,7 @@ public final class AttributeStyles_ESignatureTextColorStyleJsonAdapter extends h
     public void toJson(@NotNull t writer, AttributeStyles.ESignatureTextColorStyle eSignatureTextColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignatureTextColorStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("value");
             this.nullableComplexElementColorAdapter.toJson(writer, eSignatureTextColorStyle.getValue());
             writer.J(ReactTextInputShadowNode.PROP_PLACEHOLDER);

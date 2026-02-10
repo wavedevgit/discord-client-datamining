@@ -1,9 +1,9 @@
 package androidx.core.view;
+
+import android.view.WindowInsetsAnimation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public interface c1 {
-    void a(d1 d1Var);
-
-    void b(d1 d1Var, int i10);
-
-    void c(d1 d1Var);
+public final /* synthetic */ class c1 {
+    public static /* bridge */ /* synthetic */ WindowInsetsAnimation a(Object obj) {
+        return (WindowInsetsAnimation) obj;
+    }
 }

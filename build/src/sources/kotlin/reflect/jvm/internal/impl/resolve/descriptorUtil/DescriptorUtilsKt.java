@@ -43,13 +43,13 @@ import org.jetbrains.annotations.NotNull;
 public final class DescriptorUtilsKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Name f33922a;
+    private static final Name f34144a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f33923d = new a();
+        public static final a f34145d = new a();
 
         a() {
             super(1, ValueParameterDescriptor.class, "declaresDefaultValue", "declaresDefaultValue()Z", 0);
@@ -66,7 +66,7 @@ public final class DescriptorUtilsKt {
     static {
         Name identifier = Name.identifier("value");
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-        f33922a = identifier;
+        f34144a = identifier;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -77,7 +77,7 @@ public final class DescriptorUtilsKt {
 
     public static final boolean declaresOrInheritsDefaultValue(@NotNull ValueParameterDescriptor valueParameterDescriptor) {
         Intrinsics.checkNotNullParameter(valueParameterDescriptor, "<this>");
-        Boolean ifAny = DFS.ifAny(CollectionsKt.e(valueParameterDescriptor), kotlin.reflect.jvm.internal.impl.resolve.descriptorUtil.a.f33926a, a.f33923d);
+        Boolean ifAny = DFS.ifAny(CollectionsKt.e(valueParameterDescriptor), kotlin.reflect.jvm.internal.impl.resolve.descriptorUtil.a.f34148a, a.f34145d);
         Intrinsics.checkNotNullExpressionValue(ifAny, "ifAny(...)");
         return ifAny.booleanValue();
     }
@@ -156,9 +156,9 @@ public final class DescriptorUtilsKt {
 
     public static final ClassDescriptor getAnnotationClass(@NotNull AnnotationDescriptor annotationDescriptor) {
         Intrinsics.checkNotNullParameter(annotationDescriptor, "<this>");
-        ClassifierDescriptor mo1199getDeclarationDescriptor = annotationDescriptor.getType().getConstructor().mo1199getDeclarationDescriptor();
-        if (mo1199getDeclarationDescriptor instanceof ClassDescriptor) {
-            return (ClassDescriptor) mo1199getDeclarationDescriptor;
+        ClassifierDescriptor mo1202getDeclarationDescriptor = annotationDescriptor.getType().getConstructor().mo1202getDeclarationDescriptor();
+        if (mo1202getDeclarationDescriptor instanceof ClassDescriptor) {
+            return (ClassDescriptor) mo1202getDeclarationDescriptor;
         }
         return null;
     }
@@ -262,7 +262,7 @@ public final class DescriptorUtilsKt {
     @NotNull
     public static final Sequence<DeclarationDescriptor> getParentsWithSelf(@NotNull DeclarationDescriptor declarationDescriptor) {
         Intrinsics.checkNotNullParameter(declarationDescriptor, "<this>");
-        return k.q(declarationDescriptor, b.f33927d);
+        return k.q(declarationDescriptor, b.f34149d);
     }
 
     @NotNull
@@ -280,10 +280,10 @@ public final class DescriptorUtilsKt {
         Intrinsics.checkNotNullParameter(classDescriptor, "<this>");
         for (KotlinType kotlinType : classDescriptor.getDefaultType().getConstructor().getSupertypes()) {
             if (!KotlinBuiltIns.isAnyOrNullableAny(kotlinType)) {
-                ClassifierDescriptor mo1199getDeclarationDescriptor = kotlinType.getConstructor().mo1199getDeclarationDescriptor();
-                if (DescriptorUtils.isClassOrEnumClass(mo1199getDeclarationDescriptor)) {
-                    Intrinsics.checkNotNull(mo1199getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
-                    return (ClassDescriptor) mo1199getDeclarationDescriptor;
+                ClassifierDescriptor mo1202getDeclarationDescriptor = kotlinType.getConstructor().mo1202getDeclarationDescriptor();
+                if (DescriptorUtils.isClassOrEnumClass(mo1202getDeclarationDescriptor)) {
+                    Intrinsics.checkNotNull(mo1202getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
+                    return (ClassDescriptor) mo1202getDeclarationDescriptor;
                 }
             }
         }
@@ -323,9 +323,9 @@ public final class DescriptorUtilsKt {
         Intrinsics.checkNotNullParameter(topLevelClassFqName, "topLevelClassFqName");
         Intrinsics.checkNotNullParameter(location, "location");
         topLevelClassFqName.isRoot();
-        ClassifierDescriptor mo1200getContributedClassifier = moduleDescriptor.getPackage(topLevelClassFqName.parent()).getMemberScope().mo1200getContributedClassifier(topLevelClassFqName.shortName(), location);
-        if (mo1200getContributedClassifier instanceof ClassDescriptor) {
-            return (ClassDescriptor) mo1200getContributedClassifier;
+        ClassifierDescriptor mo1203getContributedClassifier = moduleDescriptor.getPackage(topLevelClassFqName.parent()).getMemberScope().mo1203getContributedClassifier(topLevelClassFqName.shortName(), location);
+        if (mo1203getContributedClassifier instanceof ClassDescriptor) {
+            return (ClassDescriptor) mo1203getContributedClassifier;
         }
         return null;
     }

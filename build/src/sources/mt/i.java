@@ -1,50 +1,30 @@
 package mt;
 
-import kotlin.Unit;
-import kotlin.collections.ArrayDeque;
+import java.util.Collection;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class i {
+final class i implements v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayDeque f37542a = new ArrayDeque();
+    private final List f36621a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private int f37543b;
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final void a(char[] array) {
-        int i10;
-        Intrinsics.checkNotNullParameter(array, "array");
-        synchronized (this) {
-            try {
-                int length = this.f37543b + array.length;
-                i10 = e.f37527a;
-                if (length < i10) {
-                    this.f37543b += array.length;
-                    this.f37542a.addLast(array);
-                }
-                Unit unit = Unit.f31765a;
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
+    public i(List predicates) {
+        Intrinsics.checkNotNullParameter(predicates, "predicates");
+        this.f36621a = predicates;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final char[] b(int i10) {
-        char[] cArr;
-        synchronized (this) {
-            cArr = (char[]) this.f37542a.q();
-            if (cArr != null) {
-                this.f37543b -= cArr.length;
-            } else {
-                cArr = null;
+    @Override // mt.v
+    public boolean test(Object obj) {
+        List<v> list = this.f36621a;
+        if ((list instanceof Collection) && list.isEmpty()) {
+            return true;
+        }
+        for (v vVar : list) {
+            if (!vVar.test(obj)) {
+                return false;
             }
         }
-        if (cArr == null) {
-            return new char[i10];
-        }
-        return cArr;
+        return true;
     }
 }

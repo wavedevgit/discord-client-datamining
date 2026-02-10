@@ -1,6 +1,5 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import bn.c;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -9,6 +8,7 @@ import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.Button;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.VerifyPersonaButton;
+import dn.c;
 import java.lang.reflect.Constructor;
 import kotlin.Metadata;
 import kotlin.collections.x0;
@@ -78,7 +78,7 @@ public final class VerifyPersonaButton_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -133,7 +133,7 @@ public final class VerifyPersonaButton_AttributesJsonAdapter extends h {
         String str9 = str;
         Constructor<VerifyPersonaButton.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = VerifyPersonaButton.Attributes.class.getDeclaredConstructor(String.class, Button.ButtonType.class, String.class, Integer.class, String.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f7152c);
+            constructor = VerifyPersonaButton.Attributes.class.getDeclaredConstructor(String.class, Button.ButtonType.class, String.class, Integer.class, String.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -149,7 +149,7 @@ public final class VerifyPersonaButton_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, VerifyPersonaButton.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("text");
             this.stringAdapter.toJson(writer, attributes.getText());
             writer.J("buttonType");

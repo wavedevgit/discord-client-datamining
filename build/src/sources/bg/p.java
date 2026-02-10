@@ -9,42 +9,42 @@ import ff.d;
 public final class p extends ff.d implements ue.b {
 
     /* renamed from: m  reason: collision with root package name */
-    private static final a.g f6605m;
+    private static final a.g f6711m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final a.AbstractC0331a f6606n;
+    private static final a.AbstractC0316a f6712n;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final ff.a f6607o;
+    private static final ff.a f6713o;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Context f6608k;
+    private final Context f6714k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final com.google.android.gms.common.g f6609l;
+    private final com.google.android.gms.common.g f6715l;
 
     static {
         a.g gVar = new a.g();
-        f6605m = gVar;
+        f6711m = gVar;
         n nVar = new n();
-        f6606n = nVar;
-        f6607o = new ff.a("AppSet.API", nVar, gVar);
+        f6712n = nVar;
+        f6713o = new ff.a("AppSet.API", nVar, gVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(Context context, com.google.android.gms.common.g gVar) {
-        super(context, f6607o, a.d.f22598c, d.a.f22610c);
-        this.f6608k = context;
-        this.f6609l = gVar;
+        super(context, f6713o, a.d.f23723g, d.a.f23735c);
+        this.f6714k = context;
+        this.f6715l = gVar;
     }
 
     @Override // ue.b
     public final Task g() {
-        if (this.f6609l.h(this.f6608k, 212800000) == 0) {
-            return p(gf.q.a().d(ue.h.f51554a).b(new gf.m() { // from class: bg.m
+        if (this.f6715l.h(this.f6714k, 212800000) == 0) {
+            return p(gf.q.a().d(ue.h.f50733a).b(new gf.m() { // from class: bg.m
                 @Override // gf.m
                 public final void accept(Object obj, Object obj2) {
-                    ((g) ((d) obj).C()).h(new ue.d(null, null), new o(p.this, (zg.k) obj2));
+                    ((g) ((d) obj).C()).i(new ue.d(null, null), new o(p.this, (zg.k) obj2));
                 }
             }).c(false).e(27601).a());
         }

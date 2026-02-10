@@ -8,42 +8,42 @@ import java.util.Iterator;
 abstract class f0 extends AbstractCollection {
 
     /* renamed from: d  reason: collision with root package name */
-    final Object f40867d;
+    final Object f39193d;
 
     /* renamed from: e  reason: collision with root package name */
-    Collection f40868e;
+    Collection f39194e;
 
     /* renamed from: i  reason: collision with root package name */
-    final f0 f40869i;
+    final f0 f39195i;
 
     /* renamed from: o  reason: collision with root package name */
-    final Collection f40870o;
+    final Collection f39196o;
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ i0 f40871p;
+    final /* synthetic */ i0 f39197p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f0(i0 i0Var, Object obj, Collection collection, f0 f0Var) {
         Collection collection2;
-        this.f40871p = i0Var;
-        this.f40867d = obj;
-        this.f40868e = collection;
-        this.f40869i = f0Var;
+        this.f39197p = i0Var;
+        this.f39193d = obj;
+        this.f39194e = collection;
+        this.f39195i = f0Var;
         if (f0Var == null) {
             collection2 = null;
         } else {
-            collection2 = f0Var.f40868e;
+            collection2 = f0Var.f39194e;
         }
-        this.f40870o = collection2;
+        this.f39196o = collection2;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean add(Object obj) {
         zzb();
-        boolean isEmpty = this.f40868e.isEmpty();
-        boolean add = this.f40868e.add(obj);
+        boolean isEmpty = this.f39194e.isEmpty();
+        boolean add = this.f39194e.add(obj);
         if (add) {
-            i0 i0Var = this.f40871p;
+            i0 i0Var = this.f39197p;
             i0.m(i0Var, i0.i(i0Var) + 1);
             if (isEmpty) {
                 b();
@@ -59,10 +59,10 @@ abstract class f0 extends AbstractCollection {
             return false;
         }
         int size = size();
-        boolean addAll = this.f40868e.addAll(collection);
+        boolean addAll = this.f39194e.addAll(collection);
         if (addAll) {
-            int size2 = this.f40868e.size();
-            i0 i0Var = this.f40871p;
+            int size2 = this.f39194e.size();
+            i0 i0Var = this.f39197p;
             i0.m(i0Var, i0.i(i0Var) + (size2 - size));
             if (size == 0) {
                 b();
@@ -75,23 +75,23 @@ abstract class f0 extends AbstractCollection {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void b() {
-        f0 f0Var = this.f40869i;
+        f0 f0Var = this.f39195i;
         if (f0Var != null) {
             f0Var.b();
             return;
         }
-        i0 i0Var = this.f40871p;
-        i0.l(i0Var).put(this.f40867d, this.f40868e);
+        i0 i0Var = this.f39197p;
+        i0.l(i0Var).put(this.f39193d, this.f39194e);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void c() {
-        f0 f0Var = this.f40869i;
+        f0 f0Var = this.f39195i;
         if (f0Var != null) {
             f0Var.c();
-        } else if (this.f40868e.isEmpty()) {
-            i0 i0Var = this.f40871p;
-            i0.l(i0Var).remove(this.f40867d);
+        } else if (this.f39194e.isEmpty()) {
+            i0 i0Var = this.f39197p;
+            i0.l(i0Var).remove(this.f39193d);
         }
     }
 
@@ -101,8 +101,8 @@ abstract class f0 extends AbstractCollection {
         if (size == 0) {
             return;
         }
-        this.f40868e.clear();
-        i0 i0Var = this.f40871p;
+        this.f39194e.clear();
+        i0 i0Var = this.f39197p;
         i0.m(i0Var, i0.i(i0Var) - size);
         c();
     }
@@ -110,13 +110,13 @@ abstract class f0 extends AbstractCollection {
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean contains(Object obj) {
         zzb();
-        return this.f40868e.contains(obj);
+        return this.f39194e.contains(obj);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean containsAll(Collection collection) {
         zzb();
-        return this.f40868e.containsAll(collection);
+        return this.f39194e.containsAll(collection);
     }
 
     @Override // java.util.Collection
@@ -125,13 +125,13 @@ abstract class f0 extends AbstractCollection {
             return true;
         }
         zzb();
-        return this.f40868e.equals(obj);
+        return this.f39194e.equals(obj);
     }
 
     @Override // java.util.Collection
     public final int hashCode() {
         zzb();
-        return this.f40868e.hashCode();
+        return this.f39194e.hashCode();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
@@ -143,9 +143,9 @@ abstract class f0 extends AbstractCollection {
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean remove(Object obj) {
         zzb();
-        boolean remove = this.f40868e.remove(obj);
+        boolean remove = this.f39194e.remove(obj);
         if (remove) {
-            i0 i0Var = this.f40871p;
+            i0 i0Var = this.f39197p;
             i0.m(i0Var, i0.i(i0Var) - 1);
             c();
         }
@@ -158,10 +158,10 @@ abstract class f0 extends AbstractCollection {
             return false;
         }
         int size = size();
-        boolean removeAll = this.f40868e.removeAll(collection);
+        boolean removeAll = this.f39194e.removeAll(collection);
         if (removeAll) {
-            int size2 = this.f40868e.size();
-            i0 i0Var = this.f40871p;
+            int size2 = this.f39194e.size();
+            i0 i0Var = this.f39197p;
             i0.m(i0Var, i0.i(i0Var) + (size2 - size));
             c();
         }
@@ -172,10 +172,10 @@ abstract class f0 extends AbstractCollection {
     public final boolean retainAll(Collection collection) {
         collection.getClass();
         int size = size();
-        boolean retainAll = this.f40868e.retainAll(collection);
+        boolean retainAll = this.f39194e.retainAll(collection);
         if (retainAll) {
-            int size2 = this.f40868e.size();
-            i0 i0Var = this.f40871p;
+            int size2 = this.f39194e.size();
+            i0 i0Var = this.f39197p;
             i0.m(i0Var, i0.i(i0Var) + (size2 - size));
             c();
         }
@@ -185,29 +185,29 @@ abstract class f0 extends AbstractCollection {
     @Override // java.util.AbstractCollection, java.util.Collection
     public final int size() {
         zzb();
-        return this.f40868e.size();
+        return this.f39194e.size();
     }
 
     @Override // java.util.AbstractCollection
     public final String toString() {
         zzb();
-        return this.f40868e.toString();
+        return this.f39194e.toString();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void zzb() {
-        f0 f0Var = this.f40869i;
+        f0 f0Var = this.f39195i;
         if (f0Var != null) {
             f0Var.zzb();
-            f0 f0Var2 = this.f40869i;
-            if (f0Var2.f40868e != this.f40870o) {
+            f0 f0Var2 = this.f39195i;
+            if (f0Var2.f39194e != this.f39196o) {
                 throw new ConcurrentModificationException();
             }
-        } else if (this.f40868e.isEmpty()) {
-            i0 i0Var = this.f40871p;
-            Collection collection = (Collection) i0.l(i0Var).get(this.f40867d);
+        } else if (this.f39194e.isEmpty()) {
+            i0 i0Var = this.f39197p;
+            Collection collection = (Collection) i0.l(i0Var).get(this.f39193d);
             if (collection != null) {
-                this.f40868e = collection;
+                this.f39194e = collection;
             }
         }
     }

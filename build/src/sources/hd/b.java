@@ -6,7 +6,7 @@ import md.h;
 public interface b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f25887a = new a();
+    public static final b f27105a = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements b {
@@ -15,7 +15,7 @@ public interface b {
 
         @Override // hd.b
         public boolean a(Format format) {
-            String str = format.f11727w;
+            String str = format.f12304w;
             if (!"application/id3".equals(str) && !"application/x-emsg".equals(str) && !"application/x-scte35".equals(str) && !"application/x-icy".equals(str) && !"application/vnd.dvb.ait".equals(str)) {
                 return false;
             }
@@ -24,7 +24,7 @@ public interface b {
 
         @Override // hd.b
         public hd.a b(Format format) {
-            String str = format.f11727w;
+            String str = format.f12304w;
             if (str != null) {
                 char c10 = 65535;
                 switch (str.hashCode()) {

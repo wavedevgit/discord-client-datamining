@@ -1,217 +1,47 @@
 package com.google.android.material.progressindicator;
 
 import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.ColorFilter;
-import android.graphics.Paint;
-import android.graphics.Rect;
-import androidx.dynamicanimation.animation.SpringAnimation;
-import com.google.android.material.progressindicator.h;
+import android.content.res.TypedArray;
+import android.util.AttributeSet;
+import bh.l;
+import com.google.android.material.internal.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f extends g {
-    private static final b3.b F = new a("indicatorLevel");
-    private h A;
-    private final androidx.dynamicanimation.animation.c B;
-    private final SpringAnimation C;
-    private final h.a D;
-    private boolean E;
+public final class f extends b {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class a extends b3.b {
-        a(String str) {
-            super(str);
-        }
+    /* renamed from: o  reason: collision with root package name */
+    public int f16126o;
 
-        @Override // b3.b
-        /* renamed from: c */
-        public float a(f fVar) {
-            return fVar.x() * 10000.0f;
-        }
+    /* renamed from: p  reason: collision with root package name */
+    public int f16127p;
 
-        @Override // b3.b
-        /* renamed from: d */
-        public void b(f fVar, float f10) {
-            fVar.z(f10 / 10000.0f);
-        }
+    /* renamed from: q  reason: collision with root package name */
+    public int f16128q;
+
+    /* renamed from: r  reason: collision with root package name */
+    public int f16129r;
+
+    /* renamed from: s  reason: collision with root package name */
+    public boolean f16130s;
+
+    public f(Context context, AttributeSet attributeSet) {
+        this(context, attributeSet, bh.b.f6735g);
     }
 
-    f(Context context, b bVar, h hVar) {
-        super(context, bVar);
-        this.E = false;
-        y(hVar);
-        this.D = new h.a();
-        androidx.dynamicanimation.animation.c cVar = new androidx.dynamicanimation.animation.c();
-        this.B = cVar;
-        cVar.d(1.0f);
-        cVar.f(50.0f);
-        SpringAnimation springAnimation = new SpringAnimation(this, F);
-        this.C = springAnimation;
-        springAnimation.y(cVar);
-        n(1.0f);
+    public f(Context context, AttributeSet attributeSet, int i10) {
+        this(context, attributeSet, i10, CircularProgressIndicator.B);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static f v(Context context, e eVar, c cVar) {
-        return new f(context, eVar, cVar);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public float x() {
-        return this.D.f15411b;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public void z(float f10) {
-        this.D.f15411b = f10;
-        invalidateSelf();
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public void A(float f10) {
-        setLevel((int) (f10 * 10000.0f));
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public void draw(Canvas canvas) {
-        Rect rect = new Rect();
-        if (!getBounds().isEmpty() && isVisible() && canvas.getClipBounds(rect)) {
-            canvas.save();
-            this.A.g(canvas, getBounds(), h(), k(), j());
-            this.f15405x.setStyle(Paint.Style.FILL);
-            this.f15405x.setAntiAlias(true);
-            h.a aVar = this.D;
-            b bVar = this.f15394e;
-            aVar.f15412c = bVar.f15364c[0];
-            int i10 = bVar.f15368g;
-            if (i10 > 0) {
-                this.A.d(canvas, this.f15405x, x(), 1.0f, this.f15394e.f15365d, getAlpha(), (int) ((i10 * u1.a.a(x(), 0.0f, 0.01f)) / 0.01f));
-            } else {
-                this.A.d(canvas, this.f15405x, 0.0f, 1.0f, bVar.f15365d, getAlpha(), 0);
-            }
-            this.A.c(canvas, this.f15405x, this.D, getAlpha());
-            this.A.b(canvas, this.f15405x, this.f15394e.f15364c[0], getAlpha());
-            canvas.restore();
-        }
-    }
-
-    @Override // com.google.android.material.progressindicator.g, android.graphics.drawable.Drawable
-    public /* bridge */ /* synthetic */ int getAlpha() {
-        return super.getAlpha();
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public int getIntrinsicHeight() {
-        return this.A.e();
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public int getIntrinsicWidth() {
-        return this.A.f();
-    }
-
-    @Override // com.google.android.material.progressindicator.g, android.graphics.drawable.Drawable
-    public /* bridge */ /* synthetic */ int getOpacity() {
-        return super.getOpacity();
-    }
-
-    @Override // com.google.android.material.progressindicator.g
-    public /* bridge */ /* synthetic */ boolean i() {
-        return super.i();
-    }
-
-    @Override // com.google.android.material.progressindicator.g, android.graphics.drawable.Animatable
-    public /* bridge */ /* synthetic */ boolean isRunning() {
-        return super.isRunning();
-    }
-
-    @Override // com.google.android.material.progressindicator.g
-    public /* bridge */ /* synthetic */ boolean j() {
-        return super.j();
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    public void jumpToCurrentState() {
-        this.C.z();
-        z(getLevel() / 10000.0f);
-    }
-
-    @Override // com.google.android.material.progressindicator.g
-    public /* bridge */ /* synthetic */ boolean k() {
-        return super.k();
-    }
-
-    @Override // com.google.android.material.progressindicator.g
-    public /* bridge */ /* synthetic */ void m(androidx.vectordrawable.graphics.drawable.b bVar) {
-        super.m(bVar);
-    }
-
-    @Override // android.graphics.drawable.Drawable
-    protected boolean onLevelChange(int i10) {
-        if (this.E) {
-            this.C.z();
-            z(i10 / 10000.0f);
-            return true;
-        }
-        this.C.n(x() * 10000.0f);
-        this.C.t(i10);
-        return true;
-    }
-
-    @Override // com.google.android.material.progressindicator.g
-    public /* bridge */ /* synthetic */ boolean q(boolean z10, boolean z11, boolean z12) {
-        return super.q(z10, z11, z12);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    @Override // com.google.android.material.progressindicator.g
-    public boolean r(boolean z10, boolean z11, boolean z12) {
-        boolean r10 = super.r(z10, z11, z12);
-        float a10 = this.f15395i.a(this.f15393d.getContentResolver());
-        if (a10 == 0.0f) {
-            this.E = true;
-            return r10;
-        }
-        this.E = false;
-        this.B.f(50.0f / a10);
-        return r10;
-    }
-
-    @Override // com.google.android.material.progressindicator.g
-    public /* bridge */ /* synthetic */ boolean s(androidx.vectordrawable.graphics.drawable.b bVar) {
-        return super.s(bVar);
-    }
-
-    @Override // com.google.android.material.progressindicator.g, android.graphics.drawable.Drawable
-    public /* bridge */ /* synthetic */ void setAlpha(int i10) {
-        super.setAlpha(i10);
-    }
-
-    @Override // com.google.android.material.progressindicator.g, android.graphics.drawable.Drawable
-    public /* bridge */ /* synthetic */ void setColorFilter(ColorFilter colorFilter) {
-        super.setColorFilter(colorFilter);
-    }
-
-    @Override // com.google.android.material.progressindicator.g, android.graphics.drawable.Drawable
-    public /* bridge */ /* synthetic */ boolean setVisible(boolean z10, boolean z11) {
-        return super.setVisible(z10, z11);
-    }
-
-    @Override // com.google.android.material.progressindicator.g, android.graphics.drawable.Animatable
-    public /* bridge */ /* synthetic */ void start() {
-        super.start();
-    }
-
-    @Override // com.google.android.material.progressindicator.g, android.graphics.drawable.Animatable
-    public /* bridge */ /* synthetic */ void stop() {
-        super.stop();
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public h w() {
-        return this.A;
-    }
-
-    void y(h hVar) {
-        this.A = hVar;
+    public f(Context context, AttributeSet attributeSet, int i10, int i11) {
+        super(context, attributeSet, i10, i11);
+        int dimensionPixelSize = context.getResources().getDimensionPixelSize(bh.d.f6813t0);
+        int dimensionPixelSize2 = context.getResources().getDimensionPixelSize(bh.d.f6811s0);
+        TypedArray i12 = m.i(context, attributeSet, l.D1, i10, i11, new int[0]);
+        this.f16126o = i12.getInt(l.E1, 0);
+        this.f16127p = Math.max(qh.c.d(context, i12, l.I1, dimensionPixelSize), this.f16070a * 2);
+        this.f16128q = qh.c.d(context, i12, l.H1, dimensionPixelSize2);
+        this.f16129r = i12.getInt(l.G1, 0);
+        this.f16130s = i12.getBoolean(l.F1, true);
+        i12.recycle();
+        h();
     }
 }

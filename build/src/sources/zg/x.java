@@ -3,11 +3,11 @@ package zg;
 final class x implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ y f56441d;
+    final /* synthetic */ y f56480d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public x(y yVar) {
-        this.f56441d = yVar;
+        this.f56480d = yVar;
     }
 
     @Override // java.lang.Runnable
@@ -15,13 +15,13 @@ final class x implements Runnable {
         Object obj;
         e eVar;
         e eVar2;
-        obj = this.f56441d.f56443b;
+        obj = this.f56480d.f56482b;
         synchronized (obj) {
             try {
-                y yVar = this.f56441d;
-                eVar = yVar.f56444c;
+                y yVar = this.f56480d;
+                eVar = yVar.f56483c;
                 if (eVar != null) {
-                    eVar2 = yVar.f56444c;
+                    eVar2 = yVar.f56483c;
                     eVar2.a();
                 }
             } catch (Throwable th2) {

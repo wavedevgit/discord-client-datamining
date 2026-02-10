@@ -47,7 +47,7 @@ public final class MemoryPressureRouter implements ComponentCallbacks2 {
     }
 
     @Override // android.content.ComponentCallbacks
-    @rr.c
+    @as.c
     public void onLowMemory() {
     }
 

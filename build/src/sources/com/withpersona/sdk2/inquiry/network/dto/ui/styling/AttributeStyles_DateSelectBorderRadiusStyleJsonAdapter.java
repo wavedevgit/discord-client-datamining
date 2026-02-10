@@ -46,7 +46,7 @@ public final class AttributeStyles_DateSelectBorderRadiusStyleJsonAdapter extend
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
@@ -60,7 +60,7 @@ public final class AttributeStyles_DateSelectBorderRadiusStyleJsonAdapter extend
     public void toJson(@NotNull t writer, AttributeStyles.DateSelectBorderRadiusStyle dateSelectBorderRadiusStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (dateSelectBorderRadiusStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableMeasurementAdapter.toJson(writer, dateSelectBorderRadiusStyle.getBase());
             writer.s();

@@ -47,46 +47,46 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     private boolean W;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Uri f47844d;
+    private final Uri f46298d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final DataSource f47845e;
+    private final DataSource f46299e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final sc.v f47846i;
+    private final sc.v f46300i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.i f47847o;
+    private final com.google.android.exoplayer2.upstream.i f46301o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final y.a f47848p;
+    private final y.a f46302p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final u.a f47849q;
+    private final u.a f46303q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final b f47850r;
+    private final b f46304r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final me.b f47851s;
+    private final me.b f46305s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final String f47852t;
+    private final String f46306t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final long f47853u;
+    private final long f46307u;
 
     /* renamed from: w  reason: collision with root package name */
-    private final b0 f47855w;
+    private final b0 f46309w;
 
     /* renamed from: v  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.j f47854v = new com.google.android.exoplayer2.upstream.j("ProgressiveMediaPeriod");
+    private final com.google.android.exoplayer2.upstream.j f46308v = new com.google.android.exoplayer2.upstream.j("ProgressiveMediaPeriod");
 
     /* renamed from: x  reason: collision with root package name */
-    private final oe.h f47856x = new oe.h();
+    private final oe.h f46310x = new oe.h();
 
     /* renamed from: y  reason: collision with root package name */
-    private final Runnable f47857y = new Runnable() { // from class: rd.c0
+    private final Runnable f46311y = new Runnable() { // from class: rd.c0
         @Override // java.lang.Runnable
         public final void run() {
             g0.this.R();
@@ -94,7 +94,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     };
 
     /* renamed from: z  reason: collision with root package name */
-    private final Runnable f47858z = new Runnable() { // from class: rd.d0
+    private final Runnable f46312z = new Runnable() { // from class: rd.d0
         @Override // java.lang.Runnable
         public final void run() {
             g0.x(g0.this);
@@ -112,102 +112,102 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     public final class a implements j.e, m.a {
 
         /* renamed from: b  reason: collision with root package name */
-        private final Uri f47860b;
+        private final Uri f46314b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final me.a0 f47861c;
+        private final me.a0 f46315c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final b0 f47862d;
+        private final b0 f46316d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final uc.m f47863e;
+        private final uc.m f46317e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final oe.h f47864f;
+        private final oe.h f46318f;
 
         /* renamed from: h  reason: collision with root package name */
-        private volatile boolean f47866h;
+        private volatile boolean f46320h;
 
         /* renamed from: j  reason: collision with root package name */
-        private long f47868j;
+        private long f46322j;
 
         /* renamed from: l  reason: collision with root package name */
-        private uc.b0 f47870l;
+        private uc.b0 f46324l;
 
         /* renamed from: m  reason: collision with root package name */
-        private boolean f47871m;
+        private boolean f46325m;
 
         /* renamed from: g  reason: collision with root package name */
-        private final uc.y f47865g = new uc.y();
+        private final uc.y f46319g = new uc.y();
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f47867i = true;
+        private boolean f46321i = true;
 
         /* renamed from: a  reason: collision with root package name */
-        private final long f47859a = LoadEventInfo.a();
+        private final long f46313a = LoadEventInfo.a();
 
         /* renamed from: k  reason: collision with root package name */
-        private com.google.android.exoplayer2.upstream.a f47869k = i(0);
+        private com.google.android.exoplayer2.upstream.a f46323k = i(0);
 
         public a(Uri uri, DataSource dataSource, b0 b0Var, uc.m mVar, oe.h hVar) {
-            this.f47860b = uri;
-            this.f47861c = new me.a0(dataSource);
-            this.f47862d = b0Var;
-            this.f47863e = mVar;
-            this.f47864f = hVar;
+            this.f46314b = uri;
+            this.f46315c = new me.a0(dataSource);
+            this.f46316d = b0Var;
+            this.f46317e = mVar;
+            this.f46318f = hVar;
         }
 
         private com.google.android.exoplayer2.upstream.a i(long j10) {
-            return new a.b().i(this.f47860b).h(j10).f(g0.this.f47852t).b(6).e(g0.X).a();
+            return new a.b().i(this.f46314b).h(j10).f(g0.this.f46306t).b(6).e(g0.X).a();
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public void j(long j10, long j11) {
-            this.f47865g.f51535a = j10;
-            this.f47868j = j11;
-            this.f47867i = true;
-            this.f47871m = false;
+            this.f46319g.f50714a = j10;
+            this.f46322j = j11;
+            this.f46321i = true;
+            this.f46325m = false;
         }
 
         @Override // com.google.android.exoplayer2.upstream.j.e
         public void a() {
             int i10 = 0;
-            while (i10 == 0 && !this.f47866h) {
+            while (i10 == 0 && !this.f46320h) {
                 try {
-                    long j10 = this.f47865g.f51535a;
+                    long j10 = this.f46319g.f50714a;
                     com.google.android.exoplayer2.upstream.a i11 = i(j10);
-                    this.f47869k = i11;
-                    long b10 = this.f47861c.b(i11);
+                    this.f46323k = i11;
+                    long b10 = this.f46315c.b(i11);
                     if (b10 != -1) {
                         b10 += j10;
                         g0.this.W();
                     }
                     long j11 = b10;
-                    g0.this.C = ld.b.a(this.f47861c.d());
-                    me.j jVar = this.f47861c;
-                    if (g0.this.C != null && g0.this.C.f35812q != -1) {
-                        jVar = new m(this.f47861c, g0.this.C.f35812q, this);
+                    g0.this.C = ld.b.a(this.f46315c.d());
+                    me.j jVar = this.f46315c;
+                    if (g0.this.C != null && g0.this.C.f35709q != -1) {
+                        jVar = new m(this.f46315c, g0.this.C.f35709q, this);
                         uc.b0 O = g0.this.O();
-                        this.f47870l = O;
+                        this.f46324l = O;
                         O.c(g0.Y);
                     }
-                    this.f47862d.e(jVar, this.f47860b, this.f47861c.d(), j10, j11, this.f47863e);
+                    this.f46316d.e(jVar, this.f46314b, this.f46315c.d(), j10, j11, this.f46317e);
                     if (g0.this.C != null) {
-                        this.f47862d.b();
+                        this.f46316d.b();
                     }
-                    if (this.f47867i) {
-                        this.f47862d.a(j10, this.f47868j);
-                        this.f47867i = false;
+                    if (this.f46321i) {
+                        this.f46316d.a(j10, this.f46322j);
+                        this.f46321i = false;
                     }
-                    while (i10 == 0 && !this.f47866h) {
+                    while (i10 == 0 && !this.f46320h) {
                         try {
-                            this.f47864f.a();
-                            i10 = this.f47862d.c(this.f47865g);
-                            long d10 = this.f47862d.d();
-                            if (d10 > g0.this.f47853u + j10) {
-                                this.f47864f.d();
-                                g0.this.A.post(g0.this.f47858z);
+                            this.f46318f.a();
+                            i10 = this.f46316d.c(this.f46319g);
+                            long d10 = this.f46316d.d();
+                            if (d10 > g0.this.f46307u + j10) {
+                                this.f46318f.d();
+                                g0.this.A.post(g0.this.f46312z);
                                 j10 = d10;
                             }
                         } catch (InterruptedException unused) {
@@ -216,15 +216,15 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
                     }
                     if (i10 == 1) {
                         i10 = 0;
-                    } else if (this.f47862d.d() != -1) {
-                        this.f47865g.f51535a = this.f47862d.d();
+                    } else if (this.f46316d.d() != -1) {
+                        this.f46319g.f50714a = this.f46316d.d();
                     }
-                    me.o.a(this.f47861c);
+                    me.o.a(this.f46315c);
                 } catch (Throwable th2) {
-                    if (i10 != 1 && this.f47862d.d() != -1) {
-                        this.f47865g.f51535a = this.f47862d.d();
+                    if (i10 != 1 && this.f46316d.d() != -1) {
+                        this.f46319g.f50714a = this.f46316d.d();
                     }
-                    me.o.a(this.f47861c);
+                    me.o.a(this.f46315c);
                     throw th2;
                 }
             }
@@ -233,22 +233,22 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
         @Override // rd.m.a
         public void b(oe.h0 h0Var) {
             long max;
-            if (!this.f47871m) {
-                max = this.f47868j;
+            if (!this.f46325m) {
+                max = this.f46322j;
             } else {
-                max = Math.max(g0.this.N(true), this.f47868j);
+                max = Math.max(g0.this.N(true), this.f46322j);
             }
             long j10 = max;
             int a10 = h0Var.a();
-            uc.b0 b0Var = (uc.b0) oe.a.e(this.f47870l);
+            uc.b0 b0Var = (uc.b0) oe.a.e(this.f46324l);
             b0Var.e(h0Var, a10);
             b0Var.a(j10, 1, a10, 0, null);
-            this.f47871m = true;
+            this.f46325m = true;
         }
 
         @Override // com.google.android.exoplayer2.upstream.j.e
         public void c() {
-            this.f47866h = true;
+            this.f46320h = true;
         }
     }
 
@@ -262,30 +262,30 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     private final class c implements m0 {
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f47873d;
+        private final int f46327d;
 
         public c(int i10) {
-            this.f47873d = i10;
+            this.f46327d = i10;
         }
 
         @Override // rd.m0
         public void a() {
-            g0.this.V(this.f47873d);
+            g0.this.V(this.f46327d);
         }
 
         @Override // rd.m0
         public int c(mc.x xVar, rc.f fVar, int i10) {
-            return g0.this.b0(this.f47873d, xVar, fVar, i10);
+            return g0.this.b0(this.f46327d, xVar, fVar, i10);
         }
 
         @Override // rd.m0
         public boolean isReady() {
-            return g0.this.Q(this.f47873d);
+            return g0.this.Q(this.f46327d);
         }
 
         @Override // rd.m0
         public int j(long j10) {
-            return g0.this.f0(this.f47873d, j10);
+            return g0.this.f0(this.f46327d, j10);
         }
     }
 
@@ -294,14 +294,14 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f47875a;
+        public final int f46329a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final boolean f47876b;
+        public final boolean f46330b;
 
         public d(int i10, boolean z10) {
-            this.f47875a = i10;
-            this.f47876b = z10;
+            this.f46329a = i10;
+            this.f46330b = z10;
         }
 
         public boolean equals(Object obj) {
@@ -310,7 +310,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
             }
             if (obj != null && d.class == obj.getClass()) {
                 d dVar = (d) obj;
-                if (this.f47875a == dVar.f47875a && this.f47876b == dVar.f47876b) {
+                if (this.f46329a == dVar.f46329a && this.f46330b == dVar.f46330b) {
                     return true;
                 }
             }
@@ -318,7 +318,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
         }
 
         public int hashCode() {
-            return (this.f47875a * 31) + (this.f47876b ? 1 : 0);
+            return (this.f46329a * 31) + (this.f46330b ? 1 : 0);
         }
     }
 
@@ -327,38 +327,38 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     public static final class e {
 
         /* renamed from: a  reason: collision with root package name */
-        public final w0 f47877a;
+        public final w0 f46331a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final boolean[] f47878b;
+        public final boolean[] f46332b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final boolean[] f47879c;
+        public final boolean[] f46333c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final boolean[] f47880d;
+        public final boolean[] f46334d;
 
         public e(w0 w0Var, boolean[] zArr) {
-            this.f47877a = w0Var;
-            this.f47878b = zArr;
-            int i10 = w0Var.f48058d;
-            this.f47879c = new boolean[i10];
-            this.f47880d = new boolean[i10];
+            this.f46331a = w0Var;
+            this.f46332b = zArr;
+            int i10 = w0Var.f46512d;
+            this.f46333c = new boolean[i10];
+            this.f46334d = new boolean[i10];
         }
     }
 
     public g0(Uri uri, DataSource dataSource, b0 b0Var, sc.v vVar, u.a aVar, com.google.android.exoplayer2.upstream.i iVar, y.a aVar2, b bVar, me.b bVar2, String str, int i10) {
-        this.f47844d = uri;
-        this.f47845e = dataSource;
-        this.f47846i = vVar;
-        this.f47849q = aVar;
-        this.f47847o = iVar;
-        this.f47848p = aVar2;
-        this.f47850r = bVar;
-        this.f47851s = bVar2;
-        this.f47852t = str;
-        this.f47853u = i10;
-        this.f47855w = b0Var;
+        this.f46298d = uri;
+        this.f46299e = dataSource;
+        this.f46300i = vVar;
+        this.f46303q = aVar;
+        this.f46301o = iVar;
+        this.f46302p = aVar2;
+        this.f46304r = bVar;
+        this.f46305s = bVar2;
+        this.f46306t = str;
+        this.f46307u = i10;
+        this.f46309w = b0Var;
     }
 
     private void J() {
@@ -405,7 +405,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     public long N(boolean z10) {
         long j10 = Long.MIN_VALUE;
         for (int i10 = 0; i10 < this.D.length; i10++) {
-            if (z10 || ((e) oe.a.e(this.I)).f47879c[i10]) {
+            if (z10 || ((e) oe.a.e(this.I)).f46333c[i10]) {
                 j10 = Math.max(j10, this.D[i10].z());
             }
         }
@@ -429,13 +429,13 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
                     return;
                 }
             }
-            this.f47856x.d();
+            this.f46310x.d();
             int length = this.D.length;
             u0[] u0VarArr = new u0[length];
             boolean[] zArr = new boolean[length];
             for (int i10 = 0; i10 < length; i10++) {
                 Format format = (Format) oe.a.e(this.D[i10].F());
-                String str = format.f11727w;
+                String str = format.f12304w;
                 boolean o10 = oe.c0.o(str);
                 if (!o10 && !oe.c0.s(str)) {
                     z10 = false;
@@ -446,8 +446,8 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
                 this.H = z10 | this.H;
                 ld.b bVar = this.C;
                 if (bVar != null) {
-                    if (o10 || this.E[i10].f47876b) {
-                        Metadata metadata = format.f11725u;
+                    if (o10 || this.E[i10].f46330b) {
+                        Metadata metadata = format.f12302u;
                         if (metadata == null) {
                             a10 = new Metadata(bVar);
                         } else {
@@ -455,11 +455,11 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
                         }
                         format = format.b().Z(a10).G();
                     }
-                    if (o10 && format.f11721q == -1 && format.f11722r == -1 && bVar.f35807d != -1) {
-                        format = format.b().I(bVar.f35807d).G();
+                    if (o10 && format.f12298q == -1 && format.f12299r == -1 && bVar.f35704d != -1) {
+                        format = format.b().I(bVar.f35704d).G();
                     }
                 }
-                u0VarArr[i10] = new u0(Integer.toString(i10), format.c(this.f47846i.a(format)));
+                u0VarArr[i10] = new u0(Integer.toString(i10), format.c(this.f46300i.a(format)));
             }
             this.I = new e(new w0(u0VarArr), zArr);
             this.G = true;
@@ -470,17 +470,17 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     private void S(int i10) {
         J();
         e eVar = this.I;
-        boolean[] zArr = eVar.f47880d;
+        boolean[] zArr = eVar.f46334d;
         if (!zArr[i10]) {
-            Format c10 = eVar.f47877a.b(i10).c(0);
-            this.f47848p.h(oe.c0.k(c10.f11727w), c10, 0, null, this.R);
+            Format c10 = eVar.f46331a.b(i10).c(0);
+            this.f46302p.h(oe.c0.k(c10.f12304w), c10, 0, null, this.R);
             zArr[i10] = true;
         }
     }
 
     private void T(int i10) {
         J();
-        boolean[] zArr = this.I.f47878b;
+        boolean[] zArr = this.I.f46332b;
         if (this.T && zArr[i10]) {
             if (!this.D[i10].K(false)) {
                 this.S = 0L;
@@ -513,7 +513,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
                 return this.D[i10];
             }
         }
-        l0 k10 = l0.k(this.f47851s, this.f47846i, this.f47849q);
+        l0 k10 = l0.k(this.f46305s, this.f46300i, this.f46303q);
         k10.c0(this);
         int i11 = length + 1;
         d[] dVarArr = (d[]) Arrays.copyOf(this.E, i11);
@@ -557,19 +557,19 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
             i10 = 7;
         }
         this.M = i10;
-        this.f47850r.o(this.K, zVar.g(), this.L);
+        this.f46304r.o(this.K, zVar.g(), this.L);
         if (!this.G) {
             R();
         }
     }
 
     private void g0() {
-        a aVar = new a(this.f47844d, this.f47845e, this.f47855w, this, this.f47856x);
+        a aVar = new a(this.f46298d, this.f46299e, this.f46309w, this, this.f46310x);
         if (this.G) {
             oe.a.g(P());
             long j10 = this.K;
             if (j10 == -9223372036854775807L || this.S <= j10) {
-                aVar.j(((uc.z) oe.a.e(this.J)).e(this.S).f51536a.f51433b, this.S);
+                aVar.j(((uc.z) oe.a.e(this.J)).e(this.S).f50715a.f50612b, this.S);
                 for (l0 l0Var : this.D) {
                     l0Var.a0(this.S);
                 }
@@ -581,7 +581,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
             }
         }
         this.U = M();
-        this.f47848p.t(new LoadEventInfo(aVar.f47859a, aVar.f47869k, this.f47854v.n(aVar, this, this.f47847o.b(this.M))), 1, -1, null, 0, null, aVar.f47868j, this.K);
+        this.f46302p.t(new LoadEventInfo(aVar.f46313a, aVar.f46323k, this.f46308v.n(aVar, this, this.f46301o.b(this.M))), 1, -1, null, 0, null, aVar.f46322j, this.K);
     }
 
     private boolean h0() {
@@ -609,7 +609,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     }
 
     void U() {
-        this.f47854v.k(this.f47847o.b(this.M));
+        this.f46308v.k(this.f46301o.b(this.M));
     }
 
     void V(int i10) {
@@ -620,10 +620,10 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     @Override // com.google.android.exoplayer2.upstream.j.b
     /* renamed from: X */
     public void i(a aVar, long j10, long j11, boolean z10) {
-        me.a0 a0Var = aVar.f47861c;
-        LoadEventInfo loadEventInfo = new LoadEventInfo(aVar.f47859a, aVar.f47869k, a0Var.p(), a0Var.q(), j10, j11, a0Var.o());
-        this.f47847o.d(aVar.f47859a);
-        this.f47848p.k(loadEventInfo, 1, -1, null, 0, null, aVar.f47868j, this.K);
+        me.a0 a0Var = aVar.f46315c;
+        LoadEventInfo loadEventInfo = new LoadEventInfo(aVar.f46313a, aVar.f46323k, a0Var.p(), a0Var.q(), j10, j11, a0Var.o());
+        this.f46301o.d(aVar.f46313a);
+        this.f46302p.k(loadEventInfo, 1, -1, null, 0, null, aVar.f46322j, this.K);
         if (!z10) {
             for (l0 l0Var : this.D) {
                 l0Var.U();
@@ -648,12 +648,12 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
                 j12 = N + 10000;
             }
             this.K = j12;
-            this.f47850r.o(j12, g10, this.L);
+            this.f46304r.o(j12, g10, this.L);
         }
-        me.a0 a0Var = aVar.f47861c;
-        LoadEventInfo loadEventInfo = new LoadEventInfo(aVar.f47859a, aVar.f47869k, a0Var.p(), a0Var.q(), j10, j11, a0Var.o());
-        this.f47847o.d(aVar.f47859a);
-        this.f47848p.n(loadEventInfo, 1, -1, null, 0, null, aVar.f47868j, this.K);
+        me.a0 a0Var = aVar.f46315c;
+        LoadEventInfo loadEventInfo = new LoadEventInfo(aVar.f46313a, aVar.f46323k, a0Var.p(), a0Var.q(), j10, j11, a0Var.o());
+        this.f46301o.d(aVar.f46313a);
+        this.f46302p.n(loadEventInfo, 1, -1, null, 0, null, aVar.f46322j, this.K);
         this.V = true;
         ((p.a) oe.a.e(this.B)).i(this);
     }
@@ -664,11 +664,11 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
         boolean z10;
         a aVar2;
         j.c cVar;
-        me.a0 a0Var = aVar.f47861c;
-        LoadEventInfo loadEventInfo = new LoadEventInfo(aVar.f47859a, aVar.f47869k, a0Var.p(), a0Var.q(), j10, j11, a0Var.o());
-        long a10 = this.f47847o.a(new i.c(loadEventInfo, new MediaLoadData(1, -1, null, 0, null, oe.w0.p1(aVar.f47868j), oe.w0.p1(this.K)), iOException, i10));
+        me.a0 a0Var = aVar.f46315c;
+        LoadEventInfo loadEventInfo = new LoadEventInfo(aVar.f46313a, aVar.f46323k, a0Var.p(), a0Var.q(), j10, j11, a0Var.o());
+        long a10 = this.f46301o.a(new i.c(loadEventInfo, new MediaLoadData(1, -1, null, 0, null, oe.w0.p1(aVar.f46322j), oe.w0.p1(this.K)), iOException, i10));
         if (a10 == -9223372036854775807L) {
-            cVar = com.google.android.exoplayer2.upstream.j.f13569g;
+            cVar = com.google.android.exoplayer2.upstream.j.f14146g;
             aVar2 = aVar;
         } else {
             int M = M();
@@ -681,20 +681,20 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
             if (K(aVar2, M)) {
                 cVar = com.google.android.exoplayer2.upstream.j.h(z10, a10);
             } else {
-                cVar = com.google.android.exoplayer2.upstream.j.f13568f;
+                cVar = com.google.android.exoplayer2.upstream.j.f14145f;
             }
         }
         boolean c10 = cVar.c();
-        this.f47848p.p(loadEventInfo, 1, -1, null, 0, null, aVar2.f47868j, this.K, iOException, !c10);
+        this.f46302p.p(loadEventInfo, 1, -1, null, 0, null, aVar2.f46322j, this.K, iOException, !c10);
         if (!c10) {
-            this.f47847o.d(aVar2.f47859a);
+            this.f46301o.d(aVar2.f46313a);
         }
         return cVar;
     }
 
     @Override // rd.l0.d
     public void a(Format format) {
-        this.A.post(this.f47857y);
+        this.A.post(this.f46311y);
     }
 
     @Override // rd.p, rd.n0
@@ -725,7 +725,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
                 l0Var.Q();
             }
         }
-        this.f47854v.m(this);
+        this.f46308v.m(this);
         this.A.removeCallbacksAndMessages(null);
         this.B = null;
         this.W = true;
@@ -733,7 +733,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
 
     @Override // rd.p, rd.n0
     public boolean d() {
-        if (this.f47854v.j() && this.f47856x.e()) {
+        if (this.f46308v.j() && this.f46310x.e()) {
             return true;
         }
         return false;
@@ -746,15 +746,15 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
             return 0L;
         }
         z.a e10 = this.J.e(j10);
-        return t0Var.a(j10, e10.f51536a.f51432a, e10.f51537b.f51432a);
+        return t0Var.a(j10, e10.f50715a.f50611a, e10.f50716b.f50611a);
     }
 
     @Override // rd.p, rd.n0
     public boolean f(long j10) {
-        if (!this.V && !this.f47854v.i() && !this.T) {
+        if (!this.V && !this.f46308v.i() && !this.T) {
             if (!this.G || this.P != 0) {
-                boolean f10 = this.f47856x.f();
-                if (!this.f47854v.j()) {
+                boolean f10 = this.f46310x.f();
+                if (!this.f46308v.j()) {
                     g0();
                     return true;
                 }
@@ -794,7 +794,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
             j10 = Long.MAX_VALUE;
             for (int i10 = 0; i10 < length; i10++) {
                 e eVar = this.I;
-                if (eVar.f47878b[i10] && eVar.f47879c[i10] && !this.D[i10].J()) {
+                if (eVar.f46332b[i10] && eVar.f46333c[i10] && !this.D[i10].J()) {
                     j10 = Math.min(j10, this.D[i10].z());
                 }
             }
@@ -823,7 +823,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     @Override // rd.p
     public long l(long j10) {
         J();
-        boolean[] zArr = this.I.f47878b;
+        boolean[] zArr = this.I.f46332b;
         if (!this.J.g()) {
             j10 = 0;
         }
@@ -838,17 +838,17 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
             this.T = false;
             this.S = j10;
             this.V = false;
-            if (this.f47854v.j()) {
+            if (this.f46308v.j()) {
                 l0[] l0VarArr = this.D;
                 int length = l0VarArr.length;
                 while (i10 < length) {
                     l0VarArr[i10].r();
                     i10++;
                 }
-                this.f47854v.f();
+                this.f46308v.f();
                 return j10;
             }
-            this.f47854v.g();
+            this.f46308v.g();
             l0[] l0VarArr2 = this.D;
             int length2 = l0VarArr2.length;
             while (i10 < length2) {
@@ -876,7 +876,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
         for (l0 l0Var : this.D) {
             l0Var.S();
         }
-        this.f47855w.release();
+        this.f46309w.release();
     }
 
     @Override // rd.p
@@ -890,7 +890,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     @Override // uc.m
     public void q() {
         this.F = true;
-        this.A.post(this.f47857y);
+        this.A.post(this.f46311y);
     }
 
     @Override // rd.p
@@ -901,14 +901,14 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
         boolean z12;
         J();
         e eVar = this.I;
-        w0 w0Var = eVar.f47877a;
-        boolean[] zArr3 = eVar.f47879c;
+        w0 w0Var = eVar.f46331a;
+        boolean[] zArr3 = eVar.f46333c;
         int i10 = this.P;
         int i11 = 0;
         for (int i12 = 0; i12 < gVarArr.length; i12++) {
             m0 m0Var = m0VarArr[i12];
             if (m0Var != null && (gVarArr[i12] == null || !zArr[i12])) {
-                int i13 = ((c) m0Var).f47873d;
+                int i13 = ((c) m0Var).f46327d;
                 oe.a.g(zArr3[i13]);
                 this.P--;
                 zArr3[i13] = false;
@@ -953,14 +953,14 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
         if (this.P == 0) {
             this.T = false;
             this.O = false;
-            if (this.f47854v.j()) {
+            if (this.f46308v.j()) {
                 l0[] l0VarArr = this.D;
                 int length = l0VarArr.length;
                 while (i11 < length) {
                     l0VarArr[i11].r();
                     i11++;
                 }
-                this.f47854v.f();
+                this.f46308v.f();
             } else {
                 l0[] l0VarArr2 = this.D;
                 int length2 = l0VarArr2.length;
@@ -985,14 +985,14 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     @Override // rd.p
     public w0 s() {
         J();
-        return this.I.f47877a;
+        return this.I.f46331a;
     }
 
     @Override // rd.p
     public void t(long j10, boolean z10) {
         J();
         if (!P()) {
-            boolean[] zArr = this.I.f47879c;
+            boolean[] zArr = this.I.f46333c;
             int length = this.D.length;
             for (int i10 = 0; i10 < length; i10++) {
                 this.D[i10].q(j10, z10, zArr[i10]);
@@ -1003,7 +1003,7 @@ public final class g0 implements p, uc.m, j.b, j.f, l0.d {
     @Override // rd.p
     public void u(p.a aVar, long j10) {
         this.B = aVar;
-        this.f47856x.f();
+        this.f46310x.f();
         g0();
     }
 

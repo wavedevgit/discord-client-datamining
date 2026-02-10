@@ -87,14 +87,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 3;
     var2.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = var4;
     var3 = function arg0() {
-        _fun37587: for (var _fun37587_ip = 0;;) switch (_fun37587_ip) {
+        _fun37640: for (var _fun37640_ip = 0;;) switch (_fun37640_ip) {
             case 0:
                 var0 = 'text-sm/semibold';
                 var2 = 'lg';
                 var1 = arg0;
                 if (!(var2 === var1)) {
-                    _fun37587_ip = 21;
-                    continue _fun37587
+                    _fun37640_ip = 21;
+                    continue _fun37640
                 }
             case 17:
                 var0 = 'text-md/semibold';
@@ -105,4 +105,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getButtonDefaultTextVariant = var3;
     var2.getButtonPadding = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4086, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4096, 2]);

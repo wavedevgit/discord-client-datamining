@@ -1,8 +1,17 @@
 package us;
+
+import kotlin.jvm.functions.Function1;
+import us.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class o extends p {
-    @Override // us.p
-    public boolean q() {
-        return false;
+class o implements Function1 {
+
+    /* renamed from: d  reason: collision with root package name */
+    public static final o f51109d = new o();
+
+    @Override // kotlin.jvm.functions.Function1
+    public Object invoke(Object obj) {
+        CharSequence c10;
+        c10 = n.b.c((Class) obj);
+        return c10;
     }
 }

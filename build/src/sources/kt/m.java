@@ -1,38 +1,22 @@
 package kt;
 
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.MutablePropertyReference1Impl;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final boolean f35171a;
-
-    static {
-        boolean z10;
-        try {
-            Class.forName("java.lang.ClassValue");
-            z10 = true;
-        } catch (Throwable unused) {
-            z10 = false;
+    private static final mt.q f35266a = new mt.q(new mt.x(new MutablePropertyReference1Impl() { // from class: kt.m.a
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
+        public Object get(Object obj) {
+            return ((k) obj).J();
         }
-        f35171a = z10;
-    }
 
-    public static final k2 a(Function1 factory) {
-        Intrinsics.checkNotNullParameter(factory, "factory");
-        if (f35171a) {
-            return new p(factory);
+        @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.g
+        public void set(Object obj, Object obj2) {
+            ((k) obj).K((String) obj2);
         }
-        return new u(factory);
-    }
+    }), null, null, null, 14, null);
 
-    public static final s1 b(Function2 factory) {
-        Intrinsics.checkNotNullParameter(factory, "factory");
-        if (f35171a) {
-            return new q(factory);
-        }
-        return new v(factory);
-    }
+    /* renamed from: b  reason: collision with root package name */
+    private static final k f35267b = new k(null, null, null, null, 15, null);
 }

@@ -7,13 +7,13 @@ import com.google.android.exoplayer2.x1;
 public final class x1 extends u1 {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f13633p = oe.w0.B0(1);
+    private static final String f14210p = oe.w0.B0(1);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String f13634q = oe.w0.B0(2);
+    private static final String f14211q = oe.w0.B0(2);
 
     /* renamed from: r  reason: collision with root package name */
-    public static final g.a f13635r = new g.a() { // from class: mc.u0
+    public static final g.a f14212r = new g.a() { // from class: mc.u0
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             x1 d10;
@@ -23,28 +23,28 @@ public final class x1 extends u1 {
     };
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f13636i;
+    private final int f14213i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final float f13637o;
+    private final float f14214o;
 
     public x1(int i10) {
         oe.a.b(i10 > 0, "maxStars must be a positive integer");
-        this.f13636i = i10;
-        this.f13637o = -1.0f;
+        this.f14213i = i10;
+        this.f14214o = -1.0f;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static x1 d(Bundle bundle) {
         boolean z10;
-        if (bundle.getInt(u1.f13250d, -1) == 2) {
+        if (bundle.getInt(u1.f13827d, -1) == 2) {
             z10 = true;
         } else {
             z10 = false;
         }
         oe.a.a(z10);
-        int i10 = bundle.getInt(f13633p, 5);
-        float f10 = bundle.getFloat(f13634q, -1.0f);
+        int i10 = bundle.getInt(f14210p, 5);
+        float f10 = bundle.getFloat(f14211q, -1.0f);
         if (f10 == -1.0f) {
             return new x1(i10);
         }
@@ -56,14 +56,14 @@ public final class x1 extends u1 {
             return false;
         }
         x1 x1Var = (x1) obj;
-        if (this.f13636i != x1Var.f13636i || this.f13637o != x1Var.f13637o) {
+        if (this.f14213i != x1Var.f14213i || this.f14214o != x1Var.f14214o) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return ni.j.b(Integer.valueOf(this.f13636i), Float.valueOf(this.f13637o));
+        return pi.j.b(Integer.valueOf(this.f14213i), Float.valueOf(this.f14214o));
     }
 
     public x1(int i10, float f10) {
@@ -73,7 +73,7 @@ public final class x1 extends u1 {
             z10 = true;
         }
         oe.a.b(z10, "starRating is out of range [0, maxStars]");
-        this.f13636i = i10;
-        this.f13637o = f10;
+        this.f14213i = i10;
+        this.f14214o = f10;
     }
 }

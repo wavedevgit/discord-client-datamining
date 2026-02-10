@@ -6,15 +6,15 @@ import r3.u;
 public final class d extends u.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k4.b f5753a;
+    private final k4.b f5763a;
 
     public d(k4.b clock) {
         Intrinsics.checkNotNullParameter(clock, "clock");
-        this.f5753a = clock;
+        this.f5763a = clock;
     }
 
     private final long d() {
-        return this.f5753a.a() - e0.f5757a;
+        return this.f5763a.a() - e0.f5767a;
     }
 
     private final String e() {

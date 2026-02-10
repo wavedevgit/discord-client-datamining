@@ -5,28 +5,28 @@ import oe.w0;
 final class r {
 
     /* renamed from: a  reason: collision with root package name */
-    public final o f7521a;
+    public final o f8202a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f7522b;
+    public final int f8203b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final long[] f7523c;
+    public final long[] f8204c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int[] f7524d;
+    public final int[] f8205d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f7525e;
+    public final int f8206e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final long[] f7526f;
+    public final long[] f8207f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final int[] f7527g;
+    public final int[] f8208g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final long f7528h;
+    public final long f8209h;
 
     public r(o oVar, long[] jArr, int[] iArr, int i10, long[] jArr2, int[] iArr2, long j10) {
         boolean z10;
@@ -44,14 +44,14 @@ final class r {
         }
         oe.a.a(z11);
         oe.a.a(iArr2.length == jArr2.length);
-        this.f7521a = oVar;
-        this.f7523c = jArr;
-        this.f7524d = iArr;
-        this.f7525e = i10;
-        this.f7526f = jArr2;
-        this.f7527g = iArr2;
-        this.f7528h = j10;
-        this.f7522b = jArr.length;
+        this.f8202a = oVar;
+        this.f8204c = jArr;
+        this.f8205d = iArr;
+        this.f8206e = i10;
+        this.f8207f = jArr2;
+        this.f8208g = iArr2;
+        this.f8209h = j10;
+        this.f8203b = jArr.length;
         if (iArr2.length > 0) {
             int length = iArr2.length - 1;
             iArr2[length] = iArr2[length] | 536870912;
@@ -59,8 +59,8 @@ final class r {
     }
 
     public int a(long j10) {
-        for (int i10 = w0.i(this.f7526f, j10, true, false); i10 >= 0; i10--) {
-            if ((this.f7527g[i10] & 1) != 0) {
+        for (int i10 = w0.i(this.f8207f, j10, true, false); i10 >= 0; i10--) {
+            if ((this.f8208g[i10] & 1) != 0) {
                 return i10;
             }
         }
@@ -68,8 +68,8 @@ final class r {
     }
 
     public int b(long j10) {
-        for (int e10 = w0.e(this.f7526f, j10, true, false); e10 < this.f7526f.length; e10++) {
-            if ((this.f7527g[e10] & 1) != 0) {
+        for (int e10 = w0.e(this.f8207f, j10, true, false); e10 < this.f8207f.length; e10++) {
+            if ((this.f8208g[e10] & 1) != 0) {
                 return e10;
             }
         }

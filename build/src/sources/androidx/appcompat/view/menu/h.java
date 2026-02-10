@@ -15,10 +15,10 @@ import android.widget.PopupWindow;
 public abstract class h implements k.e, j, AdapterView.OnItemClickListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private Rect f1497d;
+    private Rect f1499d;
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public static int l(ListAdapter listAdapter, ViewGroup viewGroup, Context context, int i10) {
+    public static int o(ListAdapter listAdapter, ViewGroup viewGroup, Context context, int i10) {
         int makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, 0);
         int makeMeasureSpec2 = View.MeasureSpec.makeMeasureSpec(0, 0);
         int count = listAdapter.getCount();
@@ -48,7 +48,7 @@ public abstract class h implements k.e, j, AdapterView.OnItemClickListener {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public static boolean v(e eVar) {
+    public static boolean x(e eVar) {
         int size = eVar.size();
         for (int i10 = 0; i10 < size; i10++) {
             MenuItem item = eVar.getItem(i10);
@@ -60,7 +60,7 @@ public abstract class h implements k.e, j, AdapterView.OnItemClickListener {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public static d w(ListAdapter listAdapter) {
+    public static d y(ListAdapter listAdapter) {
         if (listAdapter instanceof HeaderViewListAdapter) {
             return (d) ((HeaderViewListAdapter) listAdapter).getWrappedAdapter();
         }
@@ -73,53 +73,58 @@ public abstract class h implements k.e, j, AdapterView.OnItemClickListener {
     }
 
     @Override // androidx.appcompat.view.menu.j
-    public boolean g(e eVar, g gVar) {
+    public int getId() {
+        return 0;
+    }
+
+    @Override // androidx.appcompat.view.menu.j
+    public boolean i(e eVar, g gVar) {
         return false;
     }
 
     @Override // androidx.appcompat.view.menu.j
-    public void h(Context context, e eVar) {
+    public void j(Context context, e eVar) {
     }
 
-    public abstract void i(e eVar);
+    public abstract void k(e eVar);
 
-    protected boolean j() {
+    protected boolean l() {
         return true;
     }
 
-    public Rect k() {
-        return this.f1497d;
-    }
-
-    public abstract void m(View view);
-
-    public void o(Rect rect) {
-        this.f1497d = rect;
+    public Rect m() {
+        return this.f1499d;
     }
 
     @Override // android.widget.AdapterView.OnItemClickListener
     public void onItemClick(AdapterView adapterView, View view, int i10, long j10) {
         int i11;
         ListAdapter listAdapter = (ListAdapter) adapterView.getAdapter();
-        e eVar = w(listAdapter).f1434d;
+        e eVar = y(listAdapter).f1436d;
         MenuItem menuItem = (MenuItem) listAdapter.getItem(i10);
-        if (j()) {
+        if (l()) {
             i11 = 0;
         } else {
             i11 = 4;
         }
-        eVar.N(menuItem, this, i11);
+        eVar.P(menuItem, this, i11);
     }
 
-    public abstract void p(boolean z10);
+    public abstract void p(View view);
 
-    public abstract void q(int i10);
+    public void q(Rect rect) {
+        this.f1499d = rect;
+    }
 
-    public abstract void r(int i10);
+    public abstract void r(boolean z10);
 
-    public abstract void s(PopupWindow.OnDismissListener onDismissListener);
+    public abstract void s(int i10);
 
-    public abstract void t(boolean z10);
+    public abstract void t(int i10);
 
-    public abstract void u(int i10);
+    public abstract void u(PopupWindow.OnDismissListener onDismissListener);
+
+    public abstract void v(boolean z10);
+
+    public abstract void w(int i10);
 }

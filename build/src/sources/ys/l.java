@@ -1,43 +1,34 @@
 package ys;
 
-import java.util.concurrent.atomic.AtomicReferenceArray;
-import kotlin.coroutines.CoroutineContext;
-import us.b0;
-import us.e0;
-/* JADX INFO: Access modifiers changed from: package-private */
+import kotlin.coroutines.Continuation;
+import kotlinx.coroutines.CancellableContinuation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class l extends b0 {
-
-    /* renamed from: p  reason: collision with root package name */
-    private final /* synthetic */ AtomicReferenceArray f55770p;
-
-    public l(long j10, l lVar, int i10) {
-        super(j10, lVar, i10);
-        int i11;
-        i11 = k.f55769f;
-        this.f55770p = new AtomicReferenceArray(i11);
+public abstract class l {
+    public static final void a(CancellableContinuation cancellableContinuation, n0 n0Var) {
+        c(cancellableContinuation, new o0(n0Var));
     }
 
-    @Override // us.b0
-    public int r() {
-        int i10;
-        i10 = k.f55769f;
-        return i10;
+    public static final kotlinx.coroutines.e b(Continuation continuation) {
+        if (!(continuation instanceof dt.i)) {
+            return new kotlinx.coroutines.e(continuation, 1);
+        }
+        kotlinx.coroutines.e n10 = ((dt.i) continuation).n();
+        if (n10 != null) {
+            if (!n10.Q()) {
+                n10 = null;
+            }
+            if (n10 != null) {
+                return n10;
+            }
+        }
+        return new kotlinx.coroutines.e(continuation, 2);
     }
 
-    @Override // us.b0
-    public void s(int i10, Throwable th2, CoroutineContext coroutineContext) {
-        e0 e0Var;
-        e0Var = k.f55768e;
-        v().set(i10, e0Var);
-        t();
-    }
-
-    public String toString() {
-        return "SemaphoreSegment[id=" + this.f51768i + ", hashCode=" + hashCode() + ']';
-    }
-
-    public final /* synthetic */ AtomicReferenceArray v() {
-        return this.f55770p;
+    public static final void c(CancellableContinuation cancellableContinuation, kotlinx.coroutines.d dVar) {
+        if (cancellableContinuation instanceof kotlinx.coroutines.e) {
+            ((kotlinx.coroutines.e) cancellableContinuation).K(dVar);
+            return;
+        }
+        throw new UnsupportedOperationException("third-party implementation of CancellableContinuation is not supported");
     }
 }

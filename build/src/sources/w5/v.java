@@ -12,30 +12,30 @@ import x5.c;
 public abstract class v {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f53308a = c.a.a("nm", "ind", "refId", "ty", "parent", "sw", "sh", "sc", "ks", "tt", "masksProperties", "shapes", "t", "ef", "sr", "st", "w", "h", "ip", "op", "tm", "cl", "hd", "ao", "bm");
+    private static final c.a f52337a = c.a.a("nm", "ind", "refId", "ty", "parent", "sw", "sh", "sc", "ks", "tt", "masksProperties", "shapes", "t", "ef", "sr", "st", "w", "h", "ip", "op", "tm", "cl", "hd", "ao", "bm");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f53309b = c.a.a("d", "a");
+    private static final c.a f52338b = c.a.a("d", "a");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c.a f53310c = c.a.a("ty", "nm");
+    private static final c.a f52339c = c.a.a("ty", "nm");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f53311a;
+        static final /* synthetic */ int[] f52340a;
 
         static {
             int[] iArr = new int[e.b.values().length];
-            f53311a = iArr;
+            f52340a = iArr;
             try {
                 iArr[e.b.LUMA.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f53311a[e.b.LUMA_INVERTED.ordinal()] = 2;
+                f52340a[e.b.LUMA_INVERTED.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -85,15 +85,15 @@ public abstract class v {
         e.a aVar2 = null;
         boolean z13 = false;
         while (cVar.hasNext()) {
-            switch (cVar.p(f53308a)) {
+            switch (cVar.p(f52337a)) {
                 case 0:
-                    str2 = cVar.b1();
+                    str2 = cVar.g1();
                     break;
                 case 1:
                     j10 = cVar.nextInt();
                     break;
                 case 2:
-                    str = cVar.b1();
+                    str = cVar.g1();
                     break;
                 case 3:
                     f11 = f17;
@@ -114,7 +114,7 @@ public abstract class v {
                     i11 = (int) (cVar.nextInt() * y5.j.e());
                     break;
                 case 7:
-                    i12 = Color.parseColor(cVar.b1());
+                    i12 = Color.parseColor(cVar.g1());
                     break;
                 case 8:
                     nVar = c.g(cVar, iVar);
@@ -126,7 +126,7 @@ public abstract class v {
                         iVar.a("Unsupported matte type: " + nextInt2);
                     } else {
                         bVar2 = e.b.values()[nextInt2];
-                        int i13 = a.f53311a[bVar2.ordinal()];
+                        int i13 = a.f52340a[bVar2.ordinal()];
                         if (i13 != 1) {
                             if (i13 == 2) {
                                 iVar.a("Unsupported matte type: Luma Inverted");
@@ -164,7 +164,7 @@ public abstract class v {
                     f11 = f17;
                     cVar.u();
                     while (cVar.hasNext()) {
-                        int p10 = cVar.p(f53309b);
+                        int p10 = cVar.p(f52338b);
                         if (p10 != 0) {
                             if (p10 != 1) {
                                 cVar.s();
@@ -193,13 +193,13 @@ public abstract class v {
                     while (cVar.hasNext()) {
                         cVar.u();
                         while (cVar.hasNext()) {
-                            int p11 = cVar.p(f53310c);
+                            int p11 = cVar.p(f52339c);
                             if (p11 != 0) {
                                 if (p11 != 1) {
                                     cVar.s();
                                     cVar.T();
                                 } else {
-                                    arrayList3.add(cVar.b1());
+                                    arrayList3.add(cVar.g1());
                                 }
                             } else {
                                 int nextInt3 = cVar.nextInt();
@@ -242,10 +242,10 @@ public abstract class v {
                     bVar3 = d.f(cVar, iVar, z11);
                     continue;
                 case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
-                    str3 = cVar.b1();
+                    str3 = cVar.g1();
                     continue;
                 case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
-                    z12 = cVar.g();
+                    z12 = cVar.h();
                     continue;
                 case 23:
                     if (cVar.nextInt() == 1) {

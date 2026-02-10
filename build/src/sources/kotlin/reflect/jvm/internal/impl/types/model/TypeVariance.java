@@ -1,33 +1,33 @@
 package kotlin.reflect.jvm.internal.impl.types.model;
 
+import hs.a;
 import kotlin.enums.EnumEntries;
 import org.jetbrains.annotations.NotNull;
-import yr.a;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class TypeVariance {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ TypeVariance[] f34499e;
+    private static final /* synthetic */ TypeVariance[] f34721e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f34500i;
+    private static final /* synthetic */ EnumEntries f34722i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f34501d;
+    private final String f34723d;
     public static final TypeVariance IN = new TypeVariance("IN", 0, "in");
     public static final TypeVariance OUT = new TypeVariance("OUT", 1, "out");
     public static final TypeVariance INV = new TypeVariance("INV", 2, "");
 
     static {
         TypeVariance[] a10 = a();
-        f34499e = a10;
-        f34500i = a.a(a10);
+        f34721e = a10;
+        f34722i = a.a(a10);
     }
 
     private TypeVariance(String str, int i10, String str2) {
-        this.f34501d = str2;
+        this.f34723d = str2;
     }
 
     private static final /* synthetic */ TypeVariance[] a() {
@@ -39,12 +39,12 @@ public final class TypeVariance {
     }
 
     public static TypeVariance[] values() {
-        return (TypeVariance[]) f34499e.clone();
+        return (TypeVariance[]) f34721e.clone();
     }
 
     @Override // java.lang.Enum
     @NotNull
     public String toString() {
-        return this.f34501d;
+        return this.f34723d;
     }
 }

@@ -113,9 +113,9 @@ public final class DisplayMetricsHolder {
     public final int getStatusBarHeightPx$ReactAndroid_release(Activity activity) {
         Window window;
         View decorView;
-        WindowInsetsCompat G;
-        if (activity != null && (window = activity.getWindow()) != null && (decorView = window.getDecorView()) != null && (G = androidx.core.view.h0.G(decorView)) != null) {
-            return G.f(WindowInsetsCompat.p.g() | WindowInsetsCompat.p.f() | WindowInsetsCompat.p.b()).f3302b;
+        WindowInsetsCompat F;
+        if (activity != null && (window = activity.getWindow()) != null && (decorView = window.getDecorView()) != null && (F = androidx.core.view.i0.F(decorView)) != null) {
+            return F.f(WindowInsetsCompat.p.g() | WindowInsetsCompat.p.f() | WindowInsetsCompat.p.b()).f3305b;
         }
         return 0;
     }

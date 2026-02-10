@@ -8,10 +8,10 @@ import me.c0;
 public final class l implements DataSource {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l f13592a = new l();
+    public static final l f14169a = new l();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final DataSource.Factory f13593b = new DataSource.Factory() { // from class: me.v
+    public static final DataSource.Factory f14170b = new DataSource.Factory() { // from class: me.v
         @Override // com.google.android.exoplayer2.upstream.DataSource.Factory
         public final DataSource createDataSource() {
             return com.google.android.exoplayer2.upstream.l.o();

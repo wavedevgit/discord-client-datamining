@@ -12,19 +12,19 @@ import org.jetbrains.annotations.NotNull;
 public final class MetadataJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19947a;
+    private final m.b f20827a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19948b;
+    private final h f20828b;
 
     public MetadataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("oneTimeLinkCode");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19947a = a10;
+        this.f20827a = a10;
         h f10 = moshi.f(String.class, x0.d(), "oneTimeLinkCode");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19948b = f10;
+        this.f20828b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -34,13 +34,13 @@ public final class MetadataJsonAdapter extends h {
         reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19947a);
+            int J = reader.J(this.f20827a);
             if (J != -1) {
                 if (J == 0) {
-                    str = (String) this.f19948b.fromJson(reader);
+                    str = (String) this.f20828b.fromJson(reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -53,9 +53,9 @@ public final class MetadataJsonAdapter extends h {
     public void toJson(t writer, Metadata metadata) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (metadata != null) {
-            writer.k();
+            writer.i();
             writer.J("oneTimeLinkCode");
-            this.f19948b.toJson(writer, metadata.a());
+            this.f20828b.toJson(writer, metadata.a());
             writer.s();
             return;
         }

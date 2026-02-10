@@ -13,43 +13,43 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: m  reason: collision with root package name */
-    public static final a f47471m = new a(null);
+    public static final a f45925m = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    public x3.h f47472a;
+    public x3.h f45926a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Handler f47473b;
+    private final Handler f45927b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Runnable f47474c;
+    private Runnable f45928c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f47475d;
+    private final Object f45929d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f47476e;
+    private long f45930e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Executor f47477f;
+    private final Executor f45931f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f47478g;
+    private int f45932g;
 
     /* renamed from: h  reason: collision with root package name */
-    private long f47479h;
+    private long f45933h;
 
     /* renamed from: i  reason: collision with root package name */
-    private x3.g f47480i;
+    private x3.g f45934i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f47481j;
+    private boolean f45935j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Runnable f47482k;
+    private final Runnable f45936k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Runnable f47483l;
+    private final Runnable f45937l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -64,18 +64,18 @@ public final class c {
     public c(long j10, TimeUnit autoCloseTimeUnit, Executor autoCloseExecutor) {
         Intrinsics.checkNotNullParameter(autoCloseTimeUnit, "autoCloseTimeUnit");
         Intrinsics.checkNotNullParameter(autoCloseExecutor, "autoCloseExecutor");
-        this.f47473b = new Handler(Looper.getMainLooper());
-        this.f47475d = new Object();
-        this.f47476e = autoCloseTimeUnit.toMillis(j10);
-        this.f47477f = autoCloseExecutor;
-        this.f47479h = SystemClock.uptimeMillis();
-        this.f47482k = new Runnable() { // from class: r3.a
+        this.f45927b = new Handler(Looper.getMainLooper());
+        this.f45929d = new Object();
+        this.f45930e = autoCloseTimeUnit.toMillis(j10);
+        this.f45931f = autoCloseExecutor;
+        this.f45933h = SystemClock.uptimeMillis();
+        this.f45936k = new Runnable() { // from class: r3.a
             @Override // java.lang.Runnable
             public final void run() {
                 c.f(c.this);
             }
         };
-        this.f47483l = new Runnable() { // from class: r3.b
+        this.f45937l = new Runnable() { // from class: r3.b
             @Override // java.lang.Runnable
             public final void run() {
                 c.c(c.this);
@@ -87,28 +87,28 @@ public final class c {
     public static final void c(c this$0) {
         Unit unit;
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        synchronized (this$0.f47475d) {
+        synchronized (this$0.f45929d) {
             try {
-                if (SystemClock.uptimeMillis() - this$0.f47479h < this$0.f47476e) {
+                if (SystemClock.uptimeMillis() - this$0.f45933h < this$0.f45930e) {
                     return;
                 }
-                if (this$0.f47478g != 0) {
+                if (this$0.f45932g != 0) {
                     return;
                 }
-                Runnable runnable = this$0.f47474c;
+                Runnable runnable = this$0.f45928c;
                 if (runnable != null) {
                     runnable.run();
-                    unit = Unit.f31765a;
+                    unit = Unit.f31987a;
                 } else {
                     unit = null;
                 }
                 if (unit != null) {
-                    x3.g gVar = this$0.f47480i;
+                    x3.g gVar = this$0.f45934i;
                     if (gVar != null && gVar.isOpen()) {
                         gVar.close();
                     }
-                    this$0.f47480i = null;
-                    Unit unit2 = Unit.f31765a;
+                    this$0.f45934i = null;
+                    Unit unit2 = Unit.f31987a;
                     return;
                 }
                 throw new IllegalStateException("onAutoCloseCallback is null but it should have been set before use. Please file a bug against Room at: https://issuetracker.google.com/issues/new?component=413107&template=1096568");
@@ -121,19 +121,19 @@ public final class c {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void f(c this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        this$0.f47477f.execute(this$0.f47483l);
+        this$0.f45931f.execute(this$0.f45937l);
     }
 
     public final void d() {
-        synchronized (this.f47475d) {
+        synchronized (this.f45929d) {
             try {
-                this.f47481j = true;
-                x3.g gVar = this.f47480i;
+                this.f45935j = true;
+                x3.g gVar = this.f45934i;
                 if (gVar != null) {
                     gVar.close();
                 }
-                this.f47480i = null;
-                Unit unit = Unit.f31765a;
+                this.f45934i = null;
+                Unit unit = Unit.f31987a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -141,19 +141,19 @@ public final class c {
     }
 
     public final void e() {
-        synchronized (this.f47475d) {
+        synchronized (this.f45929d) {
             try {
-                int i10 = this.f47478g;
+                int i10 = this.f45932g;
                 if (i10 > 0) {
                     int i11 = i10 - 1;
-                    this.f47478g = i11;
+                    this.f45932g = i11;
                     if (i11 == 0) {
-                        if (this.f47480i == null) {
+                        if (this.f45934i == null) {
                             return;
                         }
-                        this.f47473b.postDelayed(this.f47482k, this.f47476e);
+                        this.f45927b.postDelayed(this.f45936k, this.f45930e);
                     }
-                    Unit unit = Unit.f31765a;
+                    Unit unit = Unit.f31987a;
                     return;
                 }
                 throw new IllegalStateException("ref count is 0 or lower but we're supposed to decrement");
@@ -173,11 +173,11 @@ public final class c {
     }
 
     public final x3.g h() {
-        return this.f47480i;
+        return this.f45934i;
     }
 
     public final x3.h i() {
-        x3.h hVar = this.f47472a;
+        x3.h hVar = this.f45926a;
         if (hVar != null) {
             return hVar;
         }
@@ -186,16 +186,16 @@ public final class c {
     }
 
     public final x3.g j() {
-        synchronized (this.f47475d) {
-            this.f47473b.removeCallbacks(this.f47482k);
-            this.f47478g++;
-            if (!this.f47481j) {
-                x3.g gVar = this.f47480i;
+        synchronized (this.f45929d) {
+            this.f45927b.removeCallbacks(this.f45936k);
+            this.f45932g++;
+            if (!this.f45935j) {
+                x3.g gVar = this.f45934i;
                 if (gVar != null && gVar.isOpen()) {
                     return gVar;
                 }
                 x3.g writableDatabase = i().getWritableDatabase();
-                this.f47480i = writableDatabase;
+                this.f45934i = writableDatabase;
                 return writableDatabase;
             }
             throw new IllegalStateException("Attempting to open already closed database.");
@@ -208,16 +208,16 @@ public final class c {
     }
 
     public final boolean l() {
-        return !this.f47481j;
+        return !this.f45935j;
     }
 
     public final void m(Runnable onAutoClose) {
         Intrinsics.checkNotNullParameter(onAutoClose, "onAutoClose");
-        this.f47474c = onAutoClose;
+        this.f45928c = onAutoClose;
     }
 
     public final void n(x3.h hVar) {
         Intrinsics.checkNotNullParameter(hVar, "<set-?>");
-        this.f47472a = hVar;
+        this.f45926a = hVar;
     }
 }

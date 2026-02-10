@@ -108,15 +108,15 @@ public final class d0 extends e5 implements w1 {
                             }
                         }
                     case 1:
-                        Map o12 = e3Var.o1(iLogger, new k.a());
-                        if (o12 == null) {
+                        Map t12 = e3Var.t1(iLogger, new k.a());
+                        if (t12 == null) {
                             break;
                         } else {
-                            d0Var.F.putAll(o12);
+                            d0Var.F.putAll(t12);
                             break;
                         }
                     case 2:
-                        e3Var.b1();
+                        e3Var.g1();
                         break;
                     case 3:
                         try {
@@ -137,25 +137,25 @@ public final class d0 extends e5 implements w1 {
                             }
                         }
                     case 4:
-                        List f22 = e3Var.f2(iLogger, new a0.a());
-                        if (f22 == null) {
+                        List k22 = e3Var.k2(iLogger, new a0.a());
+                        if (k22 == null) {
                             break;
                         } else {
-                            d0Var.D.addAll(f22);
+                            d0Var.D.addAll(k22);
                             break;
                         }
                     case 5:
                         d0Var.G = new f0.a().a(e3Var, iLogger);
                         break;
                     case 6:
-                        d0Var.A = e3Var.m1();
+                        d0Var.A = e3Var.r1();
                         break;
                     default:
                         if (!aVar.a(d0Var, o02, e3Var, iLogger)) {
                             if (concurrentHashMap == null) {
                                 concurrentHashMap = new ConcurrentHashMap();
                             }
-                            e3Var.p1(iLogger, concurrentHashMap, o02);
+                            e3Var.u1(iLogger, concurrentHashMap, o02);
                             break;
                         } else {
                             break;
@@ -195,9 +195,9 @@ public final class d0 extends e5 implements w1 {
                 e8Var.q((String) entry2.getKey(), entry2.getValue());
             }
         }
-        g n10 = q10.d().n();
-        if (n10 != null) {
-            for (f fVar : n10.a()) {
+        g o10 = q10.d().o();
+        if (o10 != null) {
+            for (f fVar : o10.a()) {
                 e8Var.q("flag.evaluation." + fVar.a(), fVar.b());
             }
         }

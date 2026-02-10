@@ -7,26 +7,26 @@ import android.os.Parcel;
 public abstract class a implements IInterface {
 
     /* renamed from: c  reason: collision with root package name */
-    private final IBinder f48091c;
+    private final IBinder f46545c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f48092d;
+    private final String f46546d;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(IBinder iBinder, String str) {
-        this.f48091c = iBinder;
-        this.f48092d = str;
+        this.f46545c = iBinder;
+        this.f46546d = str;
     }
 
     @Override // android.os.IInterface
     public final IBinder asBinder() {
-        return this.f48091c;
+        return this.f46545c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Parcel e() {
         Parcel obtain = Parcel.obtain();
-        obtain.writeInterfaceToken(this.f48092d);
+        obtain.writeInterfaceToken(this.f46546d);
         return obtain;
     }
 
@@ -35,7 +35,7 @@ public abstract class a implements IInterface {
         Parcel obtain = Parcel.obtain();
         try {
             try {
-                this.f48091c.transact(i10, parcel, obtain, 0);
+                this.f46545c.transact(i10, parcel, obtain, 0);
                 obtain.readException();
                 return obtain;
             } catch (RuntimeException e10) {
@@ -48,10 +48,10 @@ public abstract class a implements IInterface {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public final void h(int i10, Parcel parcel) {
+    public final void i(int i10, Parcel parcel) {
         Parcel obtain = Parcel.obtain();
         try {
-            this.f48091c.transact(i10, parcel, obtain, 0);
+            this.f46545c.transact(i10, parcel, obtain, 0);
             obtain.readException();
         } finally {
             parcel.recycle();

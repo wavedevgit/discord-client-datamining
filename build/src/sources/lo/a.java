@@ -1,118 +1,44 @@
 package lo;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import ko.c4;
-import ko.f5;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements Parcelable {
+public final class a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f36210d;
+    public static final a f35948d = new a("Stream", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f36211e;
+    public static final a f35949e = new a("Upload", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    private final c4.c f36212i;
+    public static final a f35950i = new a("None", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final C0514a f36209o = new C0514a(null);
-    @NotNull
-    public static final Parcelable.Creator<a> CREATOR = new b();
+    private static final /* synthetic */ a[] f35951o;
 
-    /* renamed from: lo.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0514a {
-        public /* synthetic */ C0514a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: p  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f35952p;
 
-        private final c4.c a() {
-            return new c4.c("unknown", c4.e.f31021o, f5.d.b.f31170d, new c4.a(null, 1, null), new c4.d(true, 0L));
-        }
-
-        public final a b(Boolean bool, Boolean bool2, c4.c cVar) {
-            boolean z10;
-            boolean z11;
-            if (bool != null) {
-                z10 = bool.booleanValue();
-            } else {
-                z10 = false;
-            }
-            if (bool2 != null) {
-                z11 = bool2.booleanValue();
-            } else {
-                z11 = true;
-            }
-            if (cVar == null) {
-                cVar = a();
-            }
-            return new a(z10, z11, cVar);
-        }
-
-        private C0514a() {
-        }
+    static {
+        a[] a10 = a();
+        f35951o = a10;
+        f35952p = hs.a.a(a10);
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class b implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final a createFromParcel(Parcel parcel) {
-            boolean z10;
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            boolean z11 = false;
-            if (parcel.readInt() != 0) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            if (parcel.readInt() != 0) {
-                z11 = true;
-            }
-            return new a(z10, z11, c4.c.CREATOR.createFromParcel(parcel));
-        }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final a[] newArray(int i10) {
-            return new a[i10];
-        }
+    private a(String str, int i10) {
     }
 
-    public a(boolean z10, boolean z11, c4.c idSideConfig) {
-        Intrinsics.checkNotNullParameter(idSideConfig, "idSideConfig");
-        this.f36210d = z10;
-        this.f36211e = z11;
-        this.f36212i = idSideConfig;
+    private static final /* synthetic */ a[] a() {
+        return new a[]{f35948d, f35949e, f35950i};
     }
 
-    public final boolean a() {
-        return this.f36211e;
+    public static a valueOf(String str) {
+        return (a) Enum.valueOf(a.class, str);
     }
 
-    public final c4.c b() {
-        return this.f36212i;
-    }
-
-    public final boolean c() {
-        return this.f36210d;
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeInt(this.f36210d ? 1 : 0);
-        dest.writeInt(this.f36211e ? 1 : 0);
-        this.f36212i.writeToParcel(dest, i10);
+    public static a[] values() {
+        return (a[]) f35951o.clone();
     }
 }

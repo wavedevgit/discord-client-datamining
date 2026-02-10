@@ -43,7 +43,7 @@ final class AssetsKt$rememberAsset$1 extends k implements Function2<u, Continuat
         if (r7 == r0) goto L19;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0066, code lost:
-        if (r1.e2(r3, r6) == r0) goto L19;
+        if (r1.b1(r3, r6) == r0) goto L19;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x0068, code lost:
         return r0;
@@ -56,7 +56,7 @@ final class AssetsKt$rememberAsset$1 extends k implements Function2<u, Continuat
     public final java.lang.Object invokeSuspend(@org.jetbrains.annotations.NotNull java.lang.Object r7) {
         /*
             r6 = this;
-            java.lang.Object r0 = xr.b.f()
+            java.lang.Object r0 = gs.b.f()
             int r1 = r6.label
             r2 = 2
             r3 = 1
@@ -108,12 +108,12 @@ final class AssetsKt$rememberAsset$1 extends k implements Function2<u, Continuat
             r7 = 0
             r6.L$0 = r7
             r6.label = r2
-            java.lang.Object r7 = r1.e2(r3, r6)
+            java.lang.Object r7 = r1.b1(r3, r6)
             if (r7 != r0) goto L69
         L68:
             return r0
         L69:
-            rr.h r7 = new rr.h
+            as.h r7 = new as.h
             r7.<init>()
             throw r7
         */
@@ -122,6 +122,6 @@ final class AssetsKt$rememberAsset$1 extends k implements Function2<u, Continuat
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull u uVar, Continuation<? super Unit> continuation) {
-        return ((AssetsKt$rememberAsset$1) create(uVar, continuation)).invokeSuspend(Unit.f31765a);
+        return ((AssetsKt$rememberAsset$1) create(uVar, continuation)).invokeSuspend(Unit.f31987a);
     }
 }

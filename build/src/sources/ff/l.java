@@ -3,14 +3,14 @@ package ff;
 public final class l extends UnsupportedOperationException {
 
     /* renamed from: d  reason: collision with root package name */
-    private final com.google.android.gms.common.d f22617d;
+    private final com.google.android.gms.common.d f23742d;
 
     public l(com.google.android.gms.common.d dVar) {
-        this.f22617d = dVar;
+        this.f23742d = dVar;
     }
 
     @Override // java.lang.Throwable
     public String getMessage() {
-        return "Missing ".concat(String.valueOf(this.f22617d));
+        return "Missing ".concat(String.valueOf(this.f23742d));
     }
 }

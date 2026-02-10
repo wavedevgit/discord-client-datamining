@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/native/VoiceControlsToggleNuxActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun111476: for (var _fun111476_ip = 0;;) switch (_fun111476_ip) {
+        _fun111528: for (var _fun111528_ip = 0;;) switch (_fun111528_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.markAsDismissed;
@@ -139,8 +139,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var4.bind(var5)(var2, var1);
                 var17 = 1.5;
                 if (!var0) {
-                    _fun111476_ip = 171;
-                    continue _fun111476
+                    _fun111528_ip = 171;
+                    continue _fun111528
                 }
             case 161:
                 var17 = 2.0875;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var16.contentContainer;
                 var6.style = var8;
                 var8 = function arg0() {
-                    _fun111479: for (var _fun111479_ip = 0;;) switch (_fun111479_ip) {
+                    _fun111531: for (var _fun111531_ip = 0;;) switch (_fun111531_ip) {
                         case 0:
                             var0 = arg0;
                             var0 = var0.nativeEvent;
@@ -183,13 +183,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = _closure2_slot2;
                             var1 = var3;
                             if (!var0) {
-                                _fun111479_ip = 44;
-                                continue _fun111479
+                                _fun111531_ip = 43;
+                                continue _fun111531
                             }
-                        case 37:
+                        case 36:
                             var0 = 2;
                             var1 = var3 / var0;
-                        case 44:
+                        case 43:
                             var0 = undefined;
                             var0 = var2.bind(var0)(var1);
                             var0 = undefined;
@@ -297,4 +297,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 1369, 33, 1297, 671, 5415, 566, 4933, 8902, 3942, 1234, 4875, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 1369, 33, 1297, 671, 5425, 566, 4943, 8913, 3942, 1234, 4885, 2]);

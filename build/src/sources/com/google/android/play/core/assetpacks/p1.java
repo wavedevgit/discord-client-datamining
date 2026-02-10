@@ -13,51 +13,51 @@ import java.util.List;
 final class p1 implements ServiceConnection {
 
     /* renamed from: d  reason: collision with root package name */
-    private final yh.k0 f16071d = new yh.k0("ExtractionForegroundServiceConnection");
+    private final ai.k0 f16820d = new ai.k0("ExtractionForegroundServiceConnection");
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f16072e = new ArrayList();
+    private final List f16821e = new ArrayList();
 
     /* renamed from: i  reason: collision with root package name */
-    private final Context f16073i;
+    private final Context f16822i;
 
     /* renamed from: o  reason: collision with root package name */
-    private ExtractionForegroundService f16074o;
+    private ExtractionForegroundService f16823o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Notification f16075p;
+    private Notification f16824p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p1(Context context) {
-        this.f16073i = context;
+        this.f16822i = context;
     }
 
     private final void d() {
         ArrayList arrayList;
-        synchronized (this.f16072e) {
-            arrayList = new ArrayList(this.f16072e);
-            this.f16072e.clear();
+        synchronized (this.f16821e) {
+            arrayList = new ArrayList(this.f16821e);
+            this.f16821e.clear();
         }
         int size = arrayList.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
-                ((yh.g0) arrayList.get(i10)).M0(new Bundle(), new Bundle());
+                ((ai.g0) arrayList.get(i10)).O0(new Bundle(), new Bundle());
             } catch (RemoteException unused) {
-                this.f16071d.b("Could not resolve Play Store service state update callback.", new Object[0]);
+                this.f16820d.b("Could not resolve Play Store service state update callback.", new Object[0]);
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void a(Notification notification) {
-        this.f16075p = notification;
+        this.f16824p = notification;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void b() {
-        this.f16071d.a("Stopping foreground installation service.", new Object[0]);
-        this.f16073i.unbindService(this);
-        ExtractionForegroundService extractionForegroundService = this.f16074o;
+        this.f16820d.a("Stopping foreground installation service.", new Object[0]);
+        this.f16822i.unbindService(this);
+        ExtractionForegroundService extractionForegroundService = this.f16823o;
         if (extractionForegroundService != null) {
             extractionForegroundService.a();
         }
@@ -65,18 +65,18 @@ final class p1 implements ServiceConnection {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final void c(yh.g0 g0Var) {
-        synchronized (this.f16072e) {
-            this.f16072e.add(g0Var);
+    public final void c(ai.g0 g0Var) {
+        synchronized (this.f16821e) {
+            this.f16821e.add(g0Var);
         }
     }
 
     @Override // android.content.ServiceConnection
     public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-        this.f16071d.a("Starting foreground installation service.", new Object[0]);
-        ExtractionForegroundService extractionForegroundService = ((o1) iBinder).f16060c;
-        this.f16074o = extractionForegroundService;
-        extractionForegroundService.startForeground(-1883842196, this.f16075p);
+        this.f16820d.a("Starting foreground installation service.", new Object[0]);
+        ExtractionForegroundService extractionForegroundService = ((o1) iBinder).f16809c;
+        this.f16823o = extractionForegroundService;
+        extractionForegroundService.startForeground(-1883842196, this.f16824p);
         d();
     }
 

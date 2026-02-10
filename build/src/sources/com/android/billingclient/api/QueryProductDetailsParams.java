@@ -7,13 +7,13 @@ import java.util.List;
 public final class QueryProductDetailsParams {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.google.android.gms.internal.play_billing.j f8026a;
+    private final com.google.android.gms.internal.play_billing.j f8603a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private com.google.android.gms.internal.play_billing.j f8027a;
+        private com.google.android.gms.internal.play_billing.j f8604a;
 
         /* synthetic */ a(b6.j0 j0Var) {
         }
@@ -33,7 +33,7 @@ public final class QueryProductDetailsParams {
                     }
                 }
                 if (hashSet.size() <= 1) {
-                    this.f8027a = com.google.android.gms.internal.play_billing.j.j(list);
+                    this.f8604a = com.google.android.gms.internal.play_billing.j.k(list);
                     return this;
                 }
                 throw new IllegalArgumentException("All products should be of the same product type.");
@@ -46,27 +46,27 @@ public final class QueryProductDetailsParams {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f8028a;
+        private final String f8605a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f8029b;
+        private final String f8606b;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private String f8030a;
+            private String f8607a;
 
             /* renamed from: b  reason: collision with root package name */
-            private String f8031b;
+            private String f8608b;
 
             /* synthetic */ a(b6.k0 k0Var) {
             }
 
             public b a() {
-                if (!"first_party".equals(this.f8031b)) {
-                    if (this.f8030a != null) {
-                        if (this.f8031b != null) {
+                if (!"first_party".equals(this.f8608b)) {
+                    if (this.f8607a != null) {
+                        if (this.f8608b != null) {
                             return new b(this, null);
                         }
                         throw new IllegalArgumentException("Product type must be provided.");
@@ -77,19 +77,19 @@ public final class QueryProductDetailsParams {
             }
 
             public a b(String str) {
-                this.f8030a = str;
+                this.f8607a = str;
                 return this;
             }
 
             public a c(String str) {
-                this.f8031b = str;
+                this.f8608b = str;
                 return this;
             }
         }
 
         /* synthetic */ b(a aVar, b6.l0 l0Var) {
-            this.f8028a = aVar.f8030a;
-            this.f8029b = aVar.f8031b;
+            this.f8605a = aVar.f8607a;
+            this.f8606b = aVar.f8608b;
         }
 
         public static a a() {
@@ -97,16 +97,16 @@ public final class QueryProductDetailsParams {
         }
 
         public final String b() {
-            return this.f8028a;
+            return this.f8605a;
         }
 
         public final String c() {
-            return this.f8029b;
+            return this.f8606b;
         }
     }
 
     /* synthetic */ QueryProductDetailsParams(a aVar, b6.m0 m0Var) {
-        this.f8026a = aVar.f8027a;
+        this.f8603a = aVar.f8604a;
     }
 
     public static a a() {
@@ -114,10 +114,10 @@ public final class QueryProductDetailsParams {
     }
 
     public final com.google.android.gms.internal.play_billing.j b() {
-        return this.f8026a;
+        return this.f8603a;
     }
 
     public final String c() {
-        return ((b) this.f8026a.get(0)).c();
+        return ((b) this.f8603a.get(0)).c();
     }
 }

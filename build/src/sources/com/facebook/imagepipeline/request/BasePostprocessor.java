@@ -19,7 +19,7 @@ public abstract class BasePostprocessor implements Postprocessor {
         if (u.a() && bitmap.getConfig() == bitmap2.getConfig()) {
             try {
                 if (sCopyBitmap == null) {
-                    int i10 = Bitmaps.f10678a;
+                    int i10 = Bitmaps.f11255a;
                     sCopyBitmap = Bitmaps.class.getDeclaredMethod("copyBitmap", Bitmap.class, Bitmap.class);
                 }
                 sCopyBitmap.invoke(null, bitmap, bitmap2);

@@ -3,10 +3,10 @@ package rg;
 public final class mh {
 
     /* renamed from: a  reason: collision with root package name */
-    private ie f48558a;
+    private ie f47012a;
 
     public final mh b(ie ieVar) {
-        this.f48558a = ieVar;
+        this.f47012a = ieVar;
         return this;
     }
 

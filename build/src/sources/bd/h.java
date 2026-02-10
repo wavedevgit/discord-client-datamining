@@ -10,22 +10,22 @@ import uc.z;
 final class h implements g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long[] f6492a;
+    private final long[] f6598a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long[] f6493b;
+    private final long[] f6599b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f6494c;
+    private final long f6600c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f6495d;
+    private final long f6601d;
 
     private h(long[] jArr, long[] jArr2, long j10, long j11) {
-        this.f6492a = jArr;
-        this.f6493b = jArr2;
-        this.f6494c = j10;
-        this.f6495d = j11;
+        this.f6598a = jArr;
+        this.f6599b = jArr2;
+        this.f6600c = j10;
+        this.f6601d = j11;
     }
 
     public static h a(long j10, long j11, u.a aVar, h0 h0Var) {
@@ -37,7 +37,7 @@ final class h implements g {
         if (q10 <= 0) {
             return null;
         }
-        int i11 = aVar.f40508d;
+        int i11 = aVar.f38834d;
         long j12 = q10;
         if (i11 >= 32000) {
             i10 = 1152;
@@ -50,7 +50,7 @@ final class h implements g {
         int N3 = h0Var.N();
         int i12 = 2;
         h0Var.V(2);
-        long j13 = j11 + aVar.f40507c;
+        long j13 = j11 + aVar.f38833c;
         long[] jArr = new long[N];
         long[] jArr2 = new long[N];
         int i13 = 0;
@@ -94,23 +94,23 @@ final class h implements g {
 
     @Override // bd.g
     public long b(long j10) {
-        return this.f6492a[w0.i(this.f6493b, j10, true, true)];
+        return this.f6598a[w0.i(this.f6599b, j10, true, true)];
     }
 
     @Override // uc.z
     public z.a e(long j10) {
-        int i10 = w0.i(this.f6492a, j10, true, true);
-        a0 a0Var = new a0(this.f6492a[i10], this.f6493b[i10]);
-        if (a0Var.f51432a < j10 && i10 != this.f6492a.length - 1) {
+        int i10 = w0.i(this.f6598a, j10, true, true);
+        a0 a0Var = new a0(this.f6598a[i10], this.f6599b[i10]);
+        if (a0Var.f50611a < j10 && i10 != this.f6598a.length - 1) {
             int i11 = i10 + 1;
-            return new z.a(a0Var, new a0(this.f6492a[i11], this.f6493b[i11]));
+            return new z.a(a0Var, new a0(this.f6598a[i11], this.f6599b[i11]));
         }
         return new z.a(a0Var);
     }
 
     @Override // bd.g
     public long f() {
-        return this.f6495d;
+        return this.f6601d;
     }
 
     @Override // uc.z
@@ -120,6 +120,6 @@ final class h implements g {
 
     @Override // uc.z
     public long i() {
-        return this.f6494c;
+        return this.f6600c;
     }
 }

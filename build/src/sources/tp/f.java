@@ -1,6 +1,10 @@
 package tp;
-
-import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface f extends Parcelable {
+public abstract class f {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static int f49809a = 2132017532;
+
+    /* renamed from: b  reason: collision with root package name */
+    public static int f49810b = 2132017527;
 }

@@ -1,19 +1,17 @@
 package us;
 
-import java.util.Collection;
-import java.util.ServiceLoader;
+import kotlin.jvm.functions.Function1;
+import kotlin.reflect.KType;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class f {
+class f implements Function1 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final Collection f51776a = kotlin.sequences.k.Y(kotlin.sequences.k.h(ServiceLoader.load(ps.z.class, ps.z.class.getClassLoader()).iterator()));
+    /* renamed from: d  reason: collision with root package name */
+    public static final f f51034d = new f();
 
-    public static final Collection a() {
-        return f51776a;
-    }
-
-    public static final void b(Throwable th2) {
-        Thread currentThread = Thread.currentThread();
-        currentThread.getUncaughtExceptionHandler().uncaughtException(currentThread, th2);
+    @Override // kotlin.jvm.functions.Function1
+    public Object invoke(Object obj) {
+        KType c10;
+        c10 = h.c((Class) obj);
+        return c10;
     }
 }

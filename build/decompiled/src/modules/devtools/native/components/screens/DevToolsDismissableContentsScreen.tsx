@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/devtools/native/components/screens/DevToolsDismissableContentsScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun86859: for (var _fun86859_ip = 0;;) switch (_fun86859_ip) {
+        _fun86915: for (var _fun86915_ip = 0;;) switch (_fun86915_ip) {
             case 0:
                 var0 = _closure1_slot9;
                 var3 = undefined;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot4;
                 var13 = var4.useCallback;
                 var12 = function(arg0) { // Environment: var21
-                    _fun86860: for (var _fun86860_ip = 0;;) switch (_fun86860_ip) {
+                    _fun86916: for (var _fun86916_ip = 0;;) switch (_fun86916_ip) {
                         case 0:
                             var11 = arg0;
                             var1 = new Array(0);
@@ -223,8 +223,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     case 68: var13 = var4;
                                     var12 = var0;
                                     if (var12) {
-                                        _fun86860_ip = 120;
-                                        continue _fun86860
+                                        _fun86916_ip = 120;
+                                        continue _fun86916
                                     }
                                     case 77: var15 = _closure1_slot1;
                                     var14 = _closure1_slot2;
@@ -236,21 +236,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var14 = var14.bind(var13)();
                                     var12 = var16.bind(var5)(var15, var14);
                                     case 120: if (!var12) {
-                                        _fun86860_ip = 145;
-                                        continue _fun86860
+                                        _fun86916_ip = 145;
+                                        continue _fun86916
                                     }
                                     case 123: var15 = var3.isNaN;
                                     var14 = var3.Number;
                                     var14 = var14.bind(var5)(var13);
                                     var12 = var15.bind(var5)(var14);
                                     case 145: if (!var12) {
-                                        _fun86860_ip = 59;
-                                        continue _fun86860
+                                        _fun86916_ip = 59;
+                                        continue _fun86916
                                     }
                                     case 148: var12 = var1.push;
                                     var12 = var12.bind(var1)(var13);
-                                    _fun86860_ip = 59;
-                                    continue _fun86860;
+                                    _fun86916_ip = 59;
+                                    continue _fun86916;
                                 }
                         case 160:
                             var2 = var1.sort;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot3 = var0;
                 var12 = var4.useState;
                 var0 = function() { // Environment: var21
-                    _fun86862: for (var _fun86862_ip = 0;;) switch (_fun86862_ip) {
+                    _fun86918: for (var _fun86918_ip = 0;;) switch (_fun86918_ip) {
                         case 0:
                             var2 = _closure2_slot3;
                             var3 = _closure2_slot1;
@@ -284,8 +284,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var1 != var3;
                             var1 = '';
                             if (!var3) {
-                                _fun86862_ip = 28;
-                                continue _fun86862
+                                _fun86918_ip = 28;
+                                continue _fun86918
                             }
                         case 24:
                             var1 = _closure2_slot1;
@@ -511,8 +511,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = null;
                 var24 = var24 != var23;
                 if (!var24) {
-                    _fun86859_ip = 968;
-                    continue _fun86859
+                    _fun86915_ip = 968;
+                    continue _fun86915
                 }
             case 965:
                 var22 = var23;
@@ -536,8 +536,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[2] = var8;
                 var5 = var5.length;
                 if (!(!(var5 > var7))) {
-                    _fun86859_ip = 1174;
-                    continue _fun86859
+                    _fun86915_ip = 1174;
+                    continue _fun86915
                 }
             case 1017:
                 var8 = _closure1_slot8;
@@ -578,8 +578,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12[1] = var13;
                 var5.children = var12;
                 var5 = var8.bind(var3)(var7, var5);
-                _fun86859_ip = 1296;
-                continue _fun86859;
+                _fun86915_ip = 1296;
+                continue _fun86915;
             case 1174:
                 var8 = _closure1_slot7;
                 var12 = _closure1_slot1;
@@ -617,4 +617,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1362, 33, 1297, 671, 1358, 11216, 5469, 4895, 7606, 9149, 8483, 5654, 566, 9148, 3942, 5416, 11217, 4900, 1355, 3270, 4908, 11218, 7082, 7609, 9367, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1362, 33, 1297, 671, 1358, 11227, 5479, 4905, 7616, 9160, 8493, 5664, 566, 9159, 3942, 5426, 11228, 4910, 1355, 3270, 4918, 11229, 7092, 7619, 9378, 2]);

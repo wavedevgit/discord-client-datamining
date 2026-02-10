@@ -48,22 +48,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun68441: for (var _fun68441_ip = 0;;) switch (_fun68441_ip) {
+            _fun68494: for (var _fun68494_ip = 0;;) switch (_fun68494_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var0 = null;
                     var0 = var0 != var1;
                     if (!var0) {
-                        _fun68441_ip = 88;
-                        continue _fun68441
+                        _fun68494_ip = 88;
+                        continue _fun68494
                     }
                 case 16:
                     var2 = _closure2_slot0;
                     var1 = var2.isPrivate;
                     var1 = var1.bind(var2)();
                     if (var1) {
-                        _fun68441_ip = 85;
-                        continue _fun68441
+                        _fun68494_ip = 85;
+                        continue _fun68494
                     }
                 case 33:
                     var6 = _closure1_slot0;
@@ -90,14 +90,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0() {
-        _fun68442: for (var _fun68442_ip = 0;;) switch (_fun68442_ip) {
+        _fun68495: for (var _fun68495_ip = 0;;) switch (_fun68495_ip) {
             case 0:
                 var6 = arg0;
                 var0 = var6.isPrivate;
                 var0 = var0.bind(var6)();
                 if (var0) {
-                    _fun68442_ip = 67;
-                    continue _fun68442
+                    _fun68495_ip = 67;
+                    continue _fun68495
                 }
             case 16:
                 var4 = _closure1_slot0;
@@ -119,4 +119,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getVideoPermission = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3093, 566, 5322, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3093, 566, 5332, 2]);

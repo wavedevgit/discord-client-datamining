@@ -10,7 +10,7 @@ public interface RNSModalScreenManagerInterface<T extends View> extends ViewMana
 
     void setCustomAnimationOnSwipe(T t10, boolean z10);
 
-    void setFullScreenSwipeEnabled(T t10, boolean z10);
+    void setFullScreenSwipeEnabled(T t10, String str);
 
     void setFullScreenSwipeShadowEnabled(T t10, boolean z10);
 
@@ -34,11 +34,15 @@ public interface RNSModalScreenManagerInterface<T extends View> extends ViewMana
 
     void setReplaceAnimation(T t10, String str);
 
+    void setScreenId(T t10, String str);
+
     void setScreenOrientation(T t10, String str);
 
     void setSheetAllowedDetents(T t10, ReadableArray readableArray);
 
     void setSheetCornerRadius(T t10, float f10);
+
+    void setSheetDefaultResizeAnimationEnabled(T t10, boolean z10);
 
     void setSheetElevation(T t10, int i10);
 
@@ -49,6 +53,8 @@ public interface RNSModalScreenManagerInterface<T extends View> extends ViewMana
     void setSheetInitialDetent(T t10, int i10);
 
     void setSheetLargestUndimmedDetent(T t10, int i10);
+
+    void setSheetShouldOverflowTopInset(T t10, boolean z10);
 
     void setStackAnimation(T t10, String str);
 
@@ -65,6 +71,8 @@ public interface RNSModalScreenManagerInterface<T extends View> extends ViewMana
     void setStatusBarTranslucent(T t10, boolean z10);
 
     void setSwipeDirection(T t10, String str);
+
+    void setSynchronousShadowStateUpdatesEnabled(T t10, boolean z10);
 
     void setTransitionDuration(T t10, int i10);
 }

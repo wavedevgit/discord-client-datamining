@@ -134,7 +134,7 @@ public final class ReactMarkerConstants {
     static {
         ReactMarkerConstants[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = yr.a.a($values);
+        $ENTRIES = hs.a.a($values);
     }
 
     private ReactMarkerConstants(String str, int i10, boolean z10) {

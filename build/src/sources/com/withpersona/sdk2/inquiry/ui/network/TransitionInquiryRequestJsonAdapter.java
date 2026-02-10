@@ -1,11 +1,11 @@
 package com.withpersona.sdk2.inquiry.ui.network;
 
-import bn.c;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.ui.network.TransitionInquiryRequest;
+import dn.c;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -14,25 +14,25 @@ import org.jetbrains.annotations.NotNull;
 public final class TransitionInquiryRequestJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19974a;
+    private final m.b f20854a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19975b;
+    private final h f20855b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f19976c;
+    private final h f20856c;
 
     public TransitionInquiryRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data", "meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19974a = a10;
+        this.f20854a = a10;
         h f10 = moshi.f(TransitionInquiryRequest.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19975b = f10;
+        this.f20855b = f10;
         h f11 = moshi.f(TransitionInquiryRequest.Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19976c = f11;
+        this.f20856c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -43,20 +43,20 @@ public final class TransitionInquiryRequestJsonAdapter extends h {
         TransitionInquiryRequest.Data data = null;
         TransitionInquiryRequest.Meta meta = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19974a);
+            int J = reader.J(this.f20854a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (meta = (TransitionInquiryRequest.Meta) this.f19976c.fromJson(reader)) == null) {
+                    if (J == 1 && (meta = (TransitionInquiryRequest.Meta) this.f20856c.fromJson(reader)) == null) {
                         throw c.x("meta", "meta", reader);
                     }
                 } else {
-                    data = (TransitionInquiryRequest.Data) this.f19975b.fromJson(reader);
+                    data = (TransitionInquiryRequest.Data) this.f20855b.fromJson(reader);
                     if (data == null) {
                         throw c.x("data_", "data", reader);
                     }
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -75,11 +75,11 @@ public final class TransitionInquiryRequestJsonAdapter extends h {
     public void toJson(t writer, TransitionInquiryRequest transitionInquiryRequest) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (transitionInquiryRequest != null) {
-            writer.k();
+            writer.i();
             writer.J("data");
-            this.f19975b.toJson(writer, transitionInquiryRequest.a());
+            this.f20855b.toJson(writer, transitionInquiryRequest.a());
             writer.J("meta");
-            this.f19976c.toJson(writer, transitionInquiryRequest.b());
+            this.f20856c.toJson(writer, transitionInquiryRequest.b());
             writer.s();
             return;
         }

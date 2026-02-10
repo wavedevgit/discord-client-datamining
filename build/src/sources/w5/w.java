@@ -13,16 +13,16 @@ import x5.c;
 public abstract class w {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f53312a = c.a.a("w", "h", "ip", "op", "fr", "v", "layers", "assets", "fonts", "chars", "markers");
+    private static final c.a f52341a = c.a.a("w", "h", "ip", "op", "fr", "v", "layers", "assets", "fonts", "chars", "markers");
 
     /* renamed from: b  reason: collision with root package name */
-    static c.a f53313b = c.a.a(StackTraceHelper.ID_KEY, "layers", "w", "h", "p", "u");
+    static c.a f52342b = c.a.a(StackTraceHelper.ID_KEY, "layers", "w", "h", "p", "u");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c.a f53314c = c.a.a("list");
+    private static final c.a f52343c = c.a.a("list");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final c.a f53315d = c.a.a("cm", "tm", "dr");
+    private static final c.a f52344d = c.a.a("cm", "tm", "dr");
 
     public static l5.i a(x5.c cVar) {
         float f10;
@@ -43,7 +43,7 @@ public abstract class w {
         int i10 = 0;
         int i11 = 0;
         while (cVar2.hasNext()) {
-            switch (cVar2.p(f53312a)) {
+            switch (cVar2.p(f52341a)) {
                 case 0:
                     i11 = cVar.nextInt();
                     cVar2 = cVar;
@@ -66,7 +66,7 @@ public abstract class w {
                     cVar2 = cVar;
                     e10 = f10;
                 case 5:
-                    String[] split = cVar2.b1().split("\\.");
+                    String[] split = cVar2.g1().split("\\.");
                     if (!y5.j.j(Integer.parseInt(split[0]), Integer.parseInt(split[1]), Integer.parseInt(split[2]), 4, 4, 0)) {
                         iVar.a("Lottie only supports bodymovin >= 4.4.0");
                     }
@@ -109,7 +109,7 @@ public abstract class w {
             String str2 = null;
             String str3 = null;
             while (cVar.hasNext()) {
-                int p10 = cVar.p(f53313b);
+                int p10 = cVar.p(f52342b);
                 if (p10 != 0) {
                     if (p10 != 1) {
                         if (p10 != 2) {
@@ -119,10 +119,10 @@ public abstract class w {
                                         cVar.s();
                                         cVar.T();
                                     } else {
-                                        str3 = cVar.b1();
+                                        str3 = cVar.g1();
                                     }
                                 } else {
-                                    str2 = cVar.b1();
+                                    str2 = cVar.g1();
                                 }
                             } else {
                                 i11 = cVar.nextInt();
@@ -134,13 +134,13 @@ public abstract class w {
                         cVar.x();
                         while (cVar.hasNext()) {
                             u5.e b10 = v.b(cVar, iVar);
-                            jVar.h(b10.e(), b10);
+                            jVar.g(b10.e(), b10);
                             arrayList.add(b10);
                         }
                         cVar.v();
                     }
                 } else {
-                    str = cVar.b1();
+                    str = cVar.g1();
                 }
             }
             cVar.D();
@@ -166,7 +166,7 @@ public abstract class w {
     private static void d(x5.c cVar, Map map) {
         cVar.u();
         while (cVar.hasNext()) {
-            if (cVar.p(f53314c) != 0) {
+            if (cVar.p(f52343c) != 0) {
                 cVar.s();
                 cVar.T();
             } else {
@@ -190,7 +190,7 @@ public abstract class w {
                 i10++;
             }
             list.add(b10);
-            jVar.h(b10.e(), b10);
+            jVar.g(b10.e(), b10);
             if (i10 > 4) {
                 y5.d.c("You have " + i10 + " images. Lottie should primarily be used with shapes. If you are using Adobe Illustrator, convert the Illustrator layers to shape layers.");
             }
@@ -206,7 +206,7 @@ public abstract class w {
             String str = null;
             float f11 = 0.0f;
             while (cVar.hasNext()) {
-                int p10 = cVar.p(f53315d);
+                int p10 = cVar.p(f52344d);
                 if (p10 != 0) {
                     if (p10 != 1) {
                         if (p10 != 2) {
@@ -219,7 +219,7 @@ public abstract class w {
                         f10 = (float) cVar.nextDouble();
                     }
                 } else {
-                    str = cVar.b1();
+                    str = cVar.g1();
                 }
             }
             cVar.D();

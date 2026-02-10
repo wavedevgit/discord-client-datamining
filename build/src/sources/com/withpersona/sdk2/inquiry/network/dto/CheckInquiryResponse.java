@@ -95,7 +95,7 @@ public final class CheckInquiryResponse {
         static {
             PollingMode[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = yr.a.a($values);
+            $ENTRIES = hs.a.a($values);
         }
 
         private PollingMode(String str, int i10) {
@@ -175,7 +175,7 @@ public final class CheckInquiryResponse {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f19545id;
+        private final String f20425id;
         @NotNull
         private final String type;
 
@@ -183,7 +183,7 @@ public final class CheckInquiryResponse {
             Intrinsics.checkNotNullParameter(id2, "id");
             Intrinsics.checkNotNullParameter(type, "type");
             Intrinsics.checkNotNullParameter(attributes, "attributes");
-            this.f19545id = id2;
+            this.f20425id = id2;
             this.type = type;
             this.attributes = attributes;
         }
@@ -195,7 +195,7 @@ public final class CheckInquiryResponse {
 
         @NotNull
         public final String getId() {
-            return this.f19545id;
+            return this.f20425id;
         }
 
         @NotNull

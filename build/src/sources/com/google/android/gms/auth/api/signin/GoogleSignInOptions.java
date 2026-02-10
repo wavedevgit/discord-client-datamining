@@ -32,49 +32,49 @@ public class GoogleSignInOptions extends jf.a implements a.d, ReflectedParcelabl
     private static final Comparator D;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final GoogleSignInOptions f13805w;
+    public static final GoogleSignInOptions f14382w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final GoogleSignInOptions f13806x;
+    public static final GoogleSignInOptions f14383x;
 
     /* renamed from: d  reason: collision with root package name */
-    final int f13809d;
+    final int f14386d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ArrayList f13810e;
+    private final ArrayList f14387e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Account f13811i;
+    private Account f14388i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f13812o;
+    private boolean f14389o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f13813p;
+    private final boolean f14390p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f13814q;
+    private final boolean f14391q;
 
     /* renamed from: r  reason: collision with root package name */
-    private String f13815r;
+    private String f14392r;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f13816s;
+    private String f14393s;
 
     /* renamed from: t  reason: collision with root package name */
-    private ArrayList f13817t;
+    private ArrayList f14394t;
 
     /* renamed from: u  reason: collision with root package name */
-    private String f13818u;
+    private String f14395u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Map f13819v;
+    private Map f14396v;
 
     /* renamed from: y  reason: collision with root package name */
-    public static final Scope f13807y = new Scope("profile");
+    public static final Scope f14384y = new Scope("profile");
 
     /* renamed from: z  reason: collision with root package name */
-    public static final Scope f13808z = new Scope("email");
+    public static final Scope f14385z = new Scope("email");
     public static final Scope A = new Scope("openid");
 
     static {
@@ -84,16 +84,16 @@ public class GoogleSignInOptions extends jf.a implements a.d, ReflectedParcelabl
         a aVar = new a();
         aVar.b();
         aVar.c();
-        f13805w = aVar.a();
+        f14382w = aVar.a();
         a aVar2 = new a();
         aVar2.d(scope, new Scope[0]);
-        f13806x = aVar2.a();
+        f14383x = aVar2.a();
         CREATOR = new e();
         D = new d();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static Map D(List list) {
+    public static Map A(List list) {
         HashMap hashMap = new HashMap();
         if (list != null) {
             Iterator it = list.iterator();
@@ -105,7 +105,7 @@ public class GoogleSignInOptions extends jf.a implements a.d, ReflectedParcelabl
         return hashMap;
     }
 
-    public static GoogleSignInOptions o(String str) {
+    public static GoogleSignInOptions l(String str) {
         String str2;
         Account account;
         String str3;
@@ -146,19 +146,19 @@ public class GoogleSignInOptions extends jf.a implements a.d, ReflectedParcelabl
     }
 
     public Account b() {
-        return this.f13811i;
+        return this.f14388i;
     }
 
     public ArrayList c() {
-        return this.f13817t;
+        return this.f14394t;
     }
 
     public String d() {
-        return this.f13818u;
+        return this.f14395u;
     }
 
     public ArrayList e() {
-        return new ArrayList(this.f13810e);
+        return new ArrayList(this.f14387e);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0048, code lost:
@@ -176,26 +176,26 @@ public class GoogleSignInOptions extends jf.a implements a.d, ReflectedParcelabl
             return r0
         L4:
             com.google.android.gms.auth.api.signin.GoogleSignInOptions r4 = (com.google.android.gms.auth.api.signin.GoogleSignInOptions) r4     // Catch: java.lang.ClassCastException -> L90
-            java.util.ArrayList r1 = r3.f13817t     // Catch: java.lang.ClassCastException -> L90
+            java.util.ArrayList r1 = r3.f14394t     // Catch: java.lang.ClassCastException -> L90
             boolean r1 = r1.isEmpty()     // Catch: java.lang.ClassCastException -> L90
             if (r1 == 0) goto L90
-            java.util.ArrayList r1 = r4.f13817t     // Catch: java.lang.ClassCastException -> L90
+            java.util.ArrayList r1 = r4.f14394t     // Catch: java.lang.ClassCastException -> L90
             boolean r1 = r1.isEmpty()     // Catch: java.lang.ClassCastException -> L90
             if (r1 != 0) goto L18
             goto L90
         L18:
-            java.util.ArrayList r1 = r3.f13810e     // Catch: java.lang.ClassCastException -> L90
+            java.util.ArrayList r1 = r3.f14387e     // Catch: java.lang.ClassCastException -> L90
             int r1 = r1.size()     // Catch: java.lang.ClassCastException -> L90
             java.util.ArrayList r2 = r4.e()     // Catch: java.lang.ClassCastException -> L90
             int r2 = r2.size()     // Catch: java.lang.ClassCastException -> L90
             if (r1 != r2) goto L90
-            java.util.ArrayList r1 = r3.f13810e     // Catch: java.lang.ClassCastException -> L90
+            java.util.ArrayList r1 = r3.f14387e     // Catch: java.lang.ClassCastException -> L90
             java.util.ArrayList r2 = r4.e()     // Catch: java.lang.ClassCastException -> L90
             boolean r1 = r1.containsAll(r2)     // Catch: java.lang.ClassCastException -> L90
             if (r1 != 0) goto L35
             goto L90
         L35:
-            android.accounts.Account r1 = r3.f13811i     // Catch: java.lang.ClassCastException -> L90
+            android.accounts.Account r1 = r3.f14388i     // Catch: java.lang.ClassCastException -> L90
             if (r1 != 0) goto L40
             android.accounts.Account r1 = r4.b()     // Catch: java.lang.ClassCastException -> L90
             if (r1 != 0) goto L90
@@ -205,7 +205,7 @@ public class GoogleSignInOptions extends jf.a implements a.d, ReflectedParcelabl
             boolean r1 = r1.equals(r2)     // Catch: java.lang.ClassCastException -> L90
             if (r1 == 0) goto L90
         L4a:
-            java.lang.String r1 = r3.f13815r     // Catch: java.lang.ClassCastException -> L90
+            java.lang.String r1 = r3.f14392r     // Catch: java.lang.ClassCastException -> L90
             boolean r1 = android.text.TextUtils.isEmpty(r1)     // Catch: java.lang.ClassCastException -> L90
             if (r1 == 0) goto L5d
             java.lang.String r1 = r4.f()     // Catch: java.lang.ClassCastException -> L90
@@ -213,22 +213,22 @@ public class GoogleSignInOptions extends jf.a implements a.d, ReflectedParcelabl
             if (r1 == 0) goto L90
             goto L6a
         L5d:
-            java.lang.String r1 = r3.f13815r     // Catch: java.lang.ClassCastException -> L90
+            java.lang.String r1 = r3.f14392r     // Catch: java.lang.ClassCastException -> L90
             java.lang.String r2 = r4.f()     // Catch: java.lang.ClassCastException -> L90
             boolean r1 = r1.equals(r2)     // Catch: java.lang.ClassCastException -> L90
             if (r1 != 0) goto L6a
             goto L90
         L6a:
-            boolean r1 = r3.f13814q     // Catch: java.lang.ClassCastException -> L90
-            boolean r2 = r4.h()     // Catch: java.lang.ClassCastException -> L90
+            boolean r1 = r3.f14391q     // Catch: java.lang.ClassCastException -> L90
+            boolean r2 = r4.g()     // Catch: java.lang.ClassCastException -> L90
             if (r1 != r2) goto L90
-            boolean r1 = r3.f13812o     // Catch: java.lang.ClassCastException -> L90
+            boolean r1 = r3.f14389o     // Catch: java.lang.ClassCastException -> L90
             boolean r2 = r4.i()     // Catch: java.lang.ClassCastException -> L90
             if (r1 != r2) goto L90
-            boolean r1 = r3.f13813p     // Catch: java.lang.ClassCastException -> L90
+            boolean r1 = r3.f14390p     // Catch: java.lang.ClassCastException -> L90
             boolean r2 = r4.j()     // Catch: java.lang.ClassCastException -> L90
             if (r1 != r2) goto L90
-            java.lang.String r1 = r3.f13818u     // Catch: java.lang.ClassCastException -> L90
+            java.lang.String r1 = r3.f14395u     // Catch: java.lang.ClassCastException -> L90
             java.lang.String r4 = r4.d()     // Catch: java.lang.ClassCastException -> L90
             boolean r4 = android.text.TextUtils.equals(r1, r4)     // Catch: java.lang.ClassCastException -> L90
             if (r4 == 0) goto L90
@@ -241,16 +241,16 @@ public class GoogleSignInOptions extends jf.a implements a.d, ReflectedParcelabl
     }
 
     public String f() {
-        return this.f13815r;
+        return this.f14392r;
     }
 
-    public boolean h() {
-        return this.f13814q;
+    public boolean g() {
+        return this.f14391q;
     }
 
     public int hashCode() {
         ArrayList arrayList = new ArrayList();
-        ArrayList arrayList2 = this.f13810e;
+        ArrayList arrayList2 = this.f14387e;
         int size = arrayList2.size();
         for (int i10 = 0; i10 < size; i10++) {
             arrayList.add(((Scope) arrayList2.get(i10)).b());
@@ -258,45 +258,45 @@ public class GoogleSignInOptions extends jf.a implements a.d, ReflectedParcelabl
         Collections.sort(arrayList);
         af.b bVar = new af.b();
         bVar.a(arrayList);
-        bVar.a(this.f13811i);
-        bVar.a(this.f13815r);
-        bVar.c(this.f13814q);
-        bVar.c(this.f13812o);
-        bVar.c(this.f13813p);
-        bVar.a(this.f13818u);
+        bVar.a(this.f14388i);
+        bVar.a(this.f14392r);
+        bVar.c(this.f14391q);
+        bVar.c(this.f14389o);
+        bVar.c(this.f14390p);
+        bVar.a(this.f14395u);
         return bVar.b();
     }
 
     public boolean i() {
-        return this.f13812o;
+        return this.f14389o;
     }
 
     public boolean j() {
-        return this.f13813p;
+        return this.f14390p;
     }
 
-    public final String t() {
+    public final String r() {
         JSONObject jSONObject = new JSONObject();
         try {
             JSONArray jSONArray = new JSONArray();
-            Collections.sort(this.f13810e, D);
-            Iterator it = this.f13810e.iterator();
+            Collections.sort(this.f14387e, D);
+            Iterator it = this.f14387e.iterator();
             while (it.hasNext()) {
                 jSONArray.put(((Scope) it.next()).b());
             }
             jSONObject.put("scopes", jSONArray);
-            Account account = this.f13811i;
+            Account account = this.f14388i;
             if (account != null) {
                 jSONObject.put("accountName", account.name);
             }
-            jSONObject.put("idTokenRequested", this.f13812o);
-            jSONObject.put("forceCodeForRefreshToken", this.f13814q);
-            jSONObject.put("serverAuthRequested", this.f13813p);
-            if (!TextUtils.isEmpty(this.f13815r)) {
-                jSONObject.put("serverClientId", this.f13815r);
+            jSONObject.put("idTokenRequested", this.f14389o);
+            jSONObject.put("forceCodeForRefreshToken", this.f14391q);
+            jSONObject.put("serverAuthRequested", this.f14390p);
+            if (!TextUtils.isEmpty(this.f14392r)) {
+                jSONObject.put("serverClientId", this.f14392r);
             }
-            if (!TextUtils.isEmpty(this.f13816s)) {
-                jSONObject.put("hostedDomain", this.f13816s);
+            if (!TextUtils.isEmpty(this.f14393s)) {
+                jSONObject.put("hostedDomain", this.f14393s);
             }
             return jSONObject.toString();
         } catch (JSONException e10) {
@@ -306,16 +306,16 @@ public class GoogleSignInOptions extends jf.a implements a.d, ReflectedParcelabl
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        int i11 = this.f13809d;
+        int i11 = this.f14386d;
         int a10 = jf.c.a(parcel);
         jf.c.l(parcel, 1, i11);
         jf.c.w(parcel, 2, e(), false);
         jf.c.q(parcel, 3, b(), i10, false);
         jf.c.c(parcel, 4, i());
         jf.c.c(parcel, 5, j());
-        jf.c.c(parcel, 6, h());
+        jf.c.c(parcel, 6, g());
         jf.c.s(parcel, 7, f(), false);
-        jf.c.s(parcel, 8, this.f13816s, false);
+        jf.c.s(parcel, 8, this.f14393s, false);
         jf.c.w(parcel, 9, c(), false);
         jf.c.s(parcel, 10, d(), false);
         jf.c.b(parcel, a10);
@@ -325,104 +325,104 @@ public class GoogleSignInOptions extends jf.a implements a.d, ReflectedParcelabl
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private Set f13820a;
+        private Set f14397a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f13821b;
+        private boolean f14398b;
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f13822c;
+        private boolean f14399c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f13823d;
+        private boolean f14400d;
 
         /* renamed from: e  reason: collision with root package name */
-        private String f13824e;
+        private String f14401e;
 
         /* renamed from: f  reason: collision with root package name */
-        private Account f13825f;
+        private Account f14402f;
 
         /* renamed from: g  reason: collision with root package name */
-        private String f13826g;
+        private String f14403g;
 
         /* renamed from: h  reason: collision with root package name */
-        private Map f13827h;
+        private Map f14404h;
 
         /* renamed from: i  reason: collision with root package name */
-        private String f13828i;
+        private String f14405i;
 
         public a() {
-            this.f13820a = new HashSet();
-            this.f13827h = new HashMap();
+            this.f14397a = new HashSet();
+            this.f14404h = new HashMap();
         }
 
         public GoogleSignInOptions a() {
-            if (this.f13820a.contains(GoogleSignInOptions.C)) {
-                Set set = this.f13820a;
+            if (this.f14397a.contains(GoogleSignInOptions.C)) {
+                Set set = this.f14397a;
                 Scope scope = GoogleSignInOptions.B;
                 if (set.contains(scope)) {
-                    this.f13820a.remove(scope);
+                    this.f14397a.remove(scope);
                 }
             }
-            if (this.f13823d && (this.f13825f == null || !this.f13820a.isEmpty())) {
+            if (this.f14400d && (this.f14402f == null || !this.f14397a.isEmpty())) {
                 b();
             }
-            return new GoogleSignInOptions(new ArrayList(this.f13820a), this.f13825f, this.f13823d, this.f13821b, this.f13822c, this.f13824e, this.f13826g, this.f13827h, this.f13828i);
+            return new GoogleSignInOptions(new ArrayList(this.f14397a), this.f14402f, this.f14400d, this.f14398b, this.f14399c, this.f14401e, this.f14403g, this.f14404h, this.f14405i);
         }
 
         public a b() {
-            this.f13820a.add(GoogleSignInOptions.A);
+            this.f14397a.add(GoogleSignInOptions.A);
             return this;
         }
 
         public a c() {
-            this.f13820a.add(GoogleSignInOptions.f13807y);
+            this.f14397a.add(GoogleSignInOptions.f14384y);
             return this;
         }
 
         public a d(Scope scope, Scope... scopeArr) {
-            this.f13820a.add(scope);
-            this.f13820a.addAll(Arrays.asList(scopeArr));
+            this.f14397a.add(scope);
+            this.f14397a.addAll(Arrays.asList(scopeArr));
             return this;
         }
 
         public a e(String str) {
-            this.f13828i = str;
+            this.f14405i = str;
             return this;
         }
 
         public a(GoogleSignInOptions googleSignInOptions) {
-            this.f13820a = new HashSet();
-            this.f13827h = new HashMap();
+            this.f14397a = new HashSet();
+            this.f14404h = new HashMap();
             q.l(googleSignInOptions);
-            this.f13820a = new HashSet(googleSignInOptions.f13810e);
-            this.f13821b = googleSignInOptions.f13813p;
-            this.f13822c = googleSignInOptions.f13814q;
-            this.f13823d = googleSignInOptions.f13812o;
-            this.f13824e = googleSignInOptions.f13815r;
-            this.f13825f = googleSignInOptions.f13811i;
-            this.f13826g = googleSignInOptions.f13816s;
-            this.f13827h = GoogleSignInOptions.D(googleSignInOptions.f13817t);
-            this.f13828i = googleSignInOptions.f13818u;
+            this.f14397a = new HashSet(googleSignInOptions.f14387e);
+            this.f14398b = googleSignInOptions.f14390p;
+            this.f14399c = googleSignInOptions.f14391q;
+            this.f14400d = googleSignInOptions.f14389o;
+            this.f14401e = googleSignInOptions.f14392r;
+            this.f14402f = googleSignInOptions.f14388i;
+            this.f14403g = googleSignInOptions.f14393s;
+            this.f14404h = GoogleSignInOptions.A(googleSignInOptions.f14394t);
+            this.f14405i = googleSignInOptions.f14395u;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public GoogleSignInOptions(int i10, ArrayList arrayList, Account account, boolean z10, boolean z11, boolean z12, String str, String str2, ArrayList arrayList2, String str3) {
-        this(i10, arrayList, account, z10, z11, z12, str, str2, D(arrayList2), str3);
+        this(i10, arrayList, account, z10, z11, z12, str, str2, A(arrayList2), str3);
     }
 
     private GoogleSignInOptions(int i10, ArrayList arrayList, Account account, boolean z10, boolean z11, boolean z12, String str, String str2, Map map, String str3) {
-        this.f13809d = i10;
-        this.f13810e = arrayList;
-        this.f13811i = account;
-        this.f13812o = z10;
-        this.f13813p = z11;
-        this.f13814q = z12;
-        this.f13815r = str;
-        this.f13816s = str2;
-        this.f13817t = new ArrayList(map.values());
-        this.f13819v = map;
-        this.f13818u = str3;
+        this.f14386d = i10;
+        this.f14387e = arrayList;
+        this.f14388i = account;
+        this.f14389o = z10;
+        this.f14390p = z11;
+        this.f14391q = z12;
+        this.f14392r = str;
+        this.f14393s = str2;
+        this.f14394t = new ArrayList(map.values());
+        this.f14396v = map;
+        this.f14395u = str3;
     }
 }

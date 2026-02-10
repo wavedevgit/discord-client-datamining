@@ -9,11 +9,11 @@ public interface Call extends Cloneable {
 
     boolean C();
 
-    void J0(cu.b bVar);
+    void b1(lu.b bVar);
 
     void cancel();
 
     Response execute();
 
-    Request g();
+    Request i();
 }

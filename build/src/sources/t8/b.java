@@ -5,34 +5,34 @@ import java.lang.ref.SoftReference;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    SoftReference f50696a = null;
+    SoftReference f48628a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    SoftReference f50697b = null;
+    SoftReference f48629b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    SoftReference f50698c = null;
+    SoftReference f48630c = null;
 
     public void a() {
-        SoftReference softReference = this.f50696a;
+        SoftReference softReference = this.f48628a;
         if (softReference != null) {
             softReference.clear();
-            this.f50696a = null;
+            this.f48628a = null;
         }
-        SoftReference softReference2 = this.f50697b;
+        SoftReference softReference2 = this.f48629b;
         if (softReference2 != null) {
             softReference2.clear();
-            this.f50697b = null;
+            this.f48629b = null;
         }
-        SoftReference softReference3 = this.f50698c;
+        SoftReference softReference3 = this.f48630c;
         if (softReference3 != null) {
             softReference3.clear();
-            this.f50698c = null;
+            this.f48630c = null;
         }
     }
 
     public Object b() {
-        SoftReference softReference = this.f50696a;
+        SoftReference softReference = this.f48628a;
         if (softReference == null) {
             return null;
         }
@@ -40,8 +40,8 @@ public class b {
     }
 
     public void c(Object obj) {
-        this.f50696a = new SoftReference(obj);
-        this.f50697b = new SoftReference(obj);
-        this.f50698c = new SoftReference(obj);
+        this.f48628a = new SoftReference(obj);
+        this.f48629b = new SoftReference(obj);
+        this.f48630c = new SoftReference(obj);
     }
 }

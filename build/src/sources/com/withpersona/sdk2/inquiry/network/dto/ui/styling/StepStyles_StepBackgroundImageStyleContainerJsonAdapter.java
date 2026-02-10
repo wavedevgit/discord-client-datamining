@@ -45,7 +45,7 @@ public final class StepStyles_StepBackgroundImageStyleContainerJsonAdapter exten
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 stepBackgroundImageNameContainer = (StepStyles.StepBackgroundImageNameContainer) this.nullableStepBackgroundImageNameContainerAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class StepStyles_StepBackgroundImageStyleContainerJsonAdapter exten
     public void toJson(@NotNull t writer, StepStyles.StepBackgroundImageStyleContainer stepBackgroundImageStyleContainer) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepBackgroundImageStyleContainer != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableStepBackgroundImageNameContainerAdapter.toJson(writer, stepBackgroundImageStyleContainer.getBase());
             writer.s();

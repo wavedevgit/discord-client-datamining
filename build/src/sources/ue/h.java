@@ -3,14 +3,14 @@ package ue;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f51554a;
+    public static final com.google.android.gms.common.d f50733a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final com.google.android.gms.common.d[] f51555b;
+    public static final com.google.android.gms.common.d[] f50734b;
 
     static {
         com.google.android.gms.common.d dVar = new com.google.android.gms.common.d("app_set_id", 1L);
-        f51554a = dVar;
-        f51555b = new com.google.android.gms.common.d[]{dVar};
+        f50733a = dVar;
+        f50734b = new com.google.android.gms.common.d[]{dVar};
     }
 }

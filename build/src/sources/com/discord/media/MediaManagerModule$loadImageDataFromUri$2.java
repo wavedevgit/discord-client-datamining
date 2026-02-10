@@ -3,6 +3,7 @@ package com.discord.media;
 import android.net.Uri;
 import com.discord.logging.Log;
 import com.facebook.react.bridge.ReactApplicationContext;
+import gs.b;
 import java.io.InputStream;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -13,7 +14,6 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import xr.b;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0012\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.media.MediaManagerModule$loadImageDataFromUri$2", f = "MediaManagerModule.kt", l = {}, m = "invokeSuspend")
@@ -59,11 +59,11 @@ public final class MediaManagerModule$loadImageDataFromUri$2 extends k implement
                 if (i10 > 52428800) {
                     Log log = Log.INSTANCE;
                     Log.w$default(log, "MediaManagerModule", "Image file too large: " + i10 + " bytes (max: 52428800)", (Throwable) null, 4, (Object) null);
-                    cs.c.a(openInputStream, null);
+                    ls.c.a(openInputStream, null);
                     return null;
                 }
-                byte[] c10 = cs.b.c(openInputStream);
-                cs.c.a(openInputStream, null);
+                byte[] c10 = ls.b.c(openInputStream);
+                ls.c.a(openInputStream, null);
                 return c10;
             } catch (Exception e10) {
                 Log log2 = Log.INSTANCE;
@@ -77,6 +77,6 @@ public final class MediaManagerModule$loadImageDataFromUri$2 extends k implement
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super byte[]> continuation) {
-        return ((MediaManagerModule$loadImageDataFromUri$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
+        return ((MediaManagerModule$loadImageDataFromUri$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
     }
 }

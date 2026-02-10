@@ -1,18 +1,24 @@
 package dt;
 
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.coroutines.CoroutineContext;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class h implements e {
+public final class h extends RuntimeException {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final e f20971a;
+    /* renamed from: d  reason: collision with root package name */
+    private final transient CoroutineContext f21880d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final int f20972b;
+    public h(CoroutineContext coroutineContext) {
+        this.f21880d = coroutineContext;
+    }
 
-    public h(e formatter, int i10) {
-        Intrinsics.checkNotNullParameter(formatter, "formatter");
-        this.f20971a = formatter;
-        this.f20972b = i10;
+    @Override // java.lang.Throwable
+    public Throwable fillInStackTrace() {
+        setStackTrace(new StackTraceElement[0]);
+        return this;
+    }
+
+    @Override // java.lang.Throwable
+    public String getLocalizedMessage() {
+        return String.valueOf(this.f21880d);
     }
 }

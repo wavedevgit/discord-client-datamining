@@ -17,7 +17,6 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.widget.AppCompatTextView;
-import androidx.core.view.h0;
 import java.util.ArrayList;
 import java.util.List;
 /* JADX INFO: Access modifiers changed from: package-private */
@@ -27,130 +26,130 @@ public final class u {
     private Typeface B;
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f15650a;
+    private final int f16399a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f15651b;
+    private final int f16400b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f15652c;
+    private final int f16401c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final TimeInterpolator f15653d;
+    private final TimeInterpolator f16402d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final TimeInterpolator f15654e;
+    private final TimeInterpolator f16403e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final TimeInterpolator f15655f;
+    private final TimeInterpolator f16404f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Context f15656g;
+    private final Context f16405g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final TextInputLayout f15657h;
+    private final TextInputLayout f16406h;
 
     /* renamed from: i  reason: collision with root package name */
-    private LinearLayout f15658i;
+    private LinearLayout f16407i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f15659j;
+    private int f16408j;
 
     /* renamed from: k  reason: collision with root package name */
-    private FrameLayout f15660k;
+    private FrameLayout f16409k;
 
     /* renamed from: l  reason: collision with root package name */
-    private Animator f15661l;
+    private Animator f16410l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final float f15662m;
+    private final float f16411m;
 
     /* renamed from: n  reason: collision with root package name */
-    private int f15663n;
+    private int f16412n;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f15664o;
+    private int f16413o;
 
     /* renamed from: p  reason: collision with root package name */
-    private CharSequence f15665p;
+    private CharSequence f16414p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f15666q;
+    private boolean f16415q;
 
     /* renamed from: r  reason: collision with root package name */
-    private TextView f15667r;
+    private TextView f16416r;
 
     /* renamed from: s  reason: collision with root package name */
-    private CharSequence f15668s;
+    private CharSequence f16417s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f15669t;
+    private int f16418t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f15670u;
+    private int f16419u;
 
     /* renamed from: v  reason: collision with root package name */
-    private ColorStateList f15671v;
+    private ColorStateList f16420v;
 
     /* renamed from: w  reason: collision with root package name */
-    private CharSequence f15672w;
+    private CharSequence f16421w;
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f15673x;
+    private boolean f16422x;
 
     /* renamed from: y  reason: collision with root package name */
-    private TextView f15674y;
+    private TextView f16423y;
 
     /* renamed from: z  reason: collision with root package name */
-    private int f15675z;
+    private int f16424z;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f15676a;
+        final /* synthetic */ int f16425a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ TextView f15677b;
+        final /* synthetic */ TextView f16426b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ int f15678c;
+        final /* synthetic */ int f16427c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ TextView f15679d;
+        final /* synthetic */ TextView f16428d;
 
         a(int i10, TextView textView, int i11, TextView textView2) {
-            this.f15676a = i10;
-            this.f15677b = textView;
-            this.f15678c = i11;
-            this.f15679d = textView2;
+            this.f16425a = i10;
+            this.f16426b = textView;
+            this.f16427c = i11;
+            this.f16428d = textView2;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            u.this.f15663n = this.f15676a;
-            u.this.f15661l = null;
-            TextView textView = this.f15677b;
+            u.this.f16412n = this.f16425a;
+            u.this.f16410l = null;
+            TextView textView = this.f16426b;
             if (textView != null) {
                 textView.setVisibility(4);
-                if (this.f15678c == 1 && u.this.f15667r != null) {
-                    u.this.f15667r.setText((CharSequence) null);
+                if (this.f16427c == 1 && u.this.f16416r != null) {
+                    u.this.f16416r.setText((CharSequence) null);
                 }
             }
-            TextView textView2 = this.f15679d;
+            TextView textView2 = this.f16428d;
             if (textView2 != null) {
                 textView2.setTranslationY(0.0f);
-                this.f15679d.setAlpha(1.0f);
+                this.f16428d.setAlpha(1.0f);
             }
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            TextView textView = this.f15679d;
+            TextView textView = this.f16428d;
             if (textView != null) {
                 textView.setVisibility(0);
-                this.f15679d.setAlpha(0.0f);
+                this.f16428d.setAlpha(0.0f);
             }
         }
     }
@@ -164,7 +163,7 @@ public final class u {
         @Override // android.view.View.AccessibilityDelegate
         public void onInitializeAccessibilityNodeInfo(View view, AccessibilityNodeInfo accessibilityNodeInfo) {
             super.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfo);
-            EditText editText = u.this.f15657h.getEditText();
+            EditText editText = u.this.f16406h.getEditText();
             if (editText != null) {
                 accessibilityNodeInfo.setLabeledBy(editText);
             }
@@ -173,17 +172,17 @@ public final class u {
 
     public u(TextInputLayout textInputLayout) {
         Context context = textInputLayout.getContext();
-        this.f15656g = context;
-        this.f15657h = textInputLayout;
-        this.f15662m = context.getResources().getDimensionPixelSize(bh.d.f6677h);
-        this.f15650a = mh.g.f(context, bh.b.M, 217);
-        this.f15651b = mh.g.f(context, bh.b.I, 167);
-        this.f15652c = mh.g.f(context, bh.b.M, 167);
-        this.f15653d = mh.g.g(context, bh.b.O, ch.a.f7598d);
-        int i10 = bh.b.O;
-        TimeInterpolator timeInterpolator = ch.a.f7595a;
-        this.f15654e = mh.g.g(context, i10, timeInterpolator);
-        this.f15655f = mh.g.g(context, bh.b.Q, timeInterpolator);
+        this.f16405g = context;
+        this.f16406h = textInputLayout;
+        this.f16411m = context.getResources().getDimensionPixelSize(bh.d.f6804p);
+        this.f16399a = oh.g.f(context, bh.b.Q, 217);
+        this.f16400b = oh.g.f(context, bh.b.M, 167);
+        this.f16401c = oh.g.f(context, bh.b.Q, 167);
+        this.f16402d = oh.g.g(context, bh.b.S, ch.a.f8279d);
+        int i10 = bh.b.S;
+        TimeInterpolator timeInterpolator = ch.a.f8276a;
+        this.f16403e = oh.g.g(context, i10, timeInterpolator);
+        this.f16404f = oh.g.g(context, bh.b.U, timeInterpolator);
     }
 
     private void D(int i10, int i11) {
@@ -202,7 +201,7 @@ public final class u {
                 m10.setText((CharSequence) null);
             }
         }
-        this.f15663n = i11;
+        this.f16412n = i11;
     }
 
     private void M(TextView textView, Typeface typeface) {
@@ -218,8 +217,8 @@ public final class u {
     }
 
     private boolean P(TextView textView, CharSequence charSequence) {
-        if (h0.S(this.f15657h) && this.f15657h.isEnabled()) {
-            if (this.f15664o != this.f15663n || textView == null || !TextUtils.equals(textView.getText(), charSequence)) {
+        if (this.f16406h.isLaidOut() && this.f16406h.isEnabled()) {
+            if (this.f16413o != this.f16412n || textView == null || !TextUtils.equals(textView.getText(), charSequence)) {
                 return true;
             }
             return false;
@@ -234,11 +233,11 @@ public final class u {
         }
         if (z10) {
             AnimatorSet animatorSet = new AnimatorSet();
-            this.f15661l = animatorSet;
+            this.f16410l = animatorSet;
             ArrayList arrayList = new ArrayList();
             uVar = this;
-            uVar.i(arrayList, this.f15673x, this.f15674y, 2, i10, i11);
-            uVar.i(arrayList, uVar.f15666q, uVar.f15667r, 1, i10, i11);
+            uVar.i(arrayList, this.f16422x, this.f16423y, 2, i10, i11);
+            uVar.i(arrayList, uVar.f16415q, uVar.f16416r, 1, i10, i11);
             ch.b.a(animatorSet, arrayList);
             animatorSet.addListener(new a(i11, m(i10), i10, m(i11)));
             animatorSet.start();
@@ -246,13 +245,13 @@ public final class u {
             uVar = this;
             D(i10, i11);
         }
-        uVar.f15657h.o0();
-        uVar.f15657h.t0(z10);
-        uVar.f15657h.z0();
+        uVar.f16406h.r0();
+        uVar.f16406h.x0(z10);
+        uVar.f16406h.D0();
     }
 
     private boolean g() {
-        if (this.f15658i != null && this.f15657h.getEditText() != null) {
+        if (this.f16407i != null && this.f16406h.getEditText() != null) {
             return true;
         }
         return false;
@@ -271,12 +270,12 @@ public final class u {
             }
             ObjectAnimator j10 = j(textView, z11);
             if (i10 == i12 && i11 != 0) {
-                j10.setStartDelay(this.f15652c);
+                j10.setStartDelay(this.f16401c);
             }
             list.add(j10);
             if (i12 == i10 && i11 != 0) {
                 ObjectAnimator k10 = k(textView);
-                k10.setStartDelay(this.f15652c);
+                k10.setStartDelay(this.f16401c);
                 list.add(k10);
             }
         }
@@ -293,24 +292,24 @@ public final class u {
         }
         ObjectAnimator ofFloat = ObjectAnimator.ofFloat(textView, View.ALPHA, f10);
         if (z10) {
-            i10 = this.f15651b;
+            i10 = this.f16400b;
         } else {
-            i10 = this.f15652c;
+            i10 = this.f16401c;
         }
         ofFloat.setDuration(i10);
         if (z10) {
-            timeInterpolator = this.f15654e;
+            timeInterpolator = this.f16403e;
         } else {
-            timeInterpolator = this.f15655f;
+            timeInterpolator = this.f16404f;
         }
         ofFloat.setInterpolator(timeInterpolator);
         return ofFloat;
     }
 
     private ObjectAnimator k(TextView textView) {
-        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(textView, View.TRANSLATION_Y, -this.f15662m, 0.0f);
-        ofFloat.setDuration(this.f15650a);
-        ofFloat.setInterpolator(this.f15653d);
+        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(textView, View.TRANSLATION_Y, -this.f16411m, 0.0f);
+        ofFloat.setDuration(this.f16399a);
+        ofFloat.setInterpolator(this.f16402d);
         return ofFloat;
     }
 
@@ -319,20 +318,20 @@ public final class u {
             if (i10 != 2) {
                 return null;
             }
-            return this.f15674y;
+            return this.f16423y;
         }
-        return this.f15667r;
+        return this.f16416r;
     }
 
     private int v(boolean z10, int i10, int i11) {
         if (z10) {
-            return this.f15656g.getResources().getDimensionPixelSize(i10);
+            return this.f16405g.getResources().getDimensionPixelSize(i10);
         }
         return i11;
     }
 
     private boolean y(int i10) {
-        if (i10 == 1 && this.f15667r != null && !TextUtils.isEmpty(this.f15665p)) {
+        if (i10 == 1 && this.f16416r != null && !TextUtils.isEmpty(this.f16414p)) {
             return true;
         }
         return false;
@@ -340,43 +339,43 @@ public final class u {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean A() {
-        return this.f15666q;
+        return this.f16415q;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean B() {
-        return this.f15673x;
+        return this.f16422x;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void C(TextView textView, int i10) {
         FrameLayout frameLayout;
-        if (this.f15658i == null) {
+        if (this.f16407i == null) {
             return;
         }
-        if (z(i10) && (frameLayout = this.f15660k) != null) {
+        if (z(i10) && (frameLayout = this.f16409k) != null) {
             frameLayout.removeView(textView);
         } else {
-            this.f15658i.removeView(textView);
+            this.f16407i.removeView(textView);
         }
-        int i11 = this.f15659j - 1;
-        this.f15659j = i11;
-        O(this.f15658i, i11);
+        int i11 = this.f16408j - 1;
+        this.f16408j = i11;
+        O(this.f16407i, i11);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void E(int i10) {
-        this.f15669t = i10;
-        TextView textView = this.f15667r;
+        this.f16418t = i10;
+        TextView textView = this.f16416r;
         if (textView != null) {
-            h0.p0(textView, i10);
+            textView.setAccessibilityLiveRegion(i10);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void F(CharSequence charSequence) {
-        this.f15668s = charSequence;
-        TextView textView = this.f15667r;
+        this.f16417s = charSequence;
+        TextView textView = this.f16416r;
         if (textView != null) {
             textView.setContentDescription(charSequence);
         }
@@ -384,48 +383,48 @@ public final class u {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void G(boolean z10) {
-        if (this.f15666q == z10) {
+        if (this.f16415q == z10) {
             return;
         }
         h();
         if (z10) {
-            AppCompatTextView appCompatTextView = new AppCompatTextView(this.f15656g);
-            this.f15667r = appCompatTextView;
-            appCompatTextView.setId(bh.f.P);
-            this.f15667r.setTextAlignment(5);
+            AppCompatTextView appCompatTextView = new AppCompatTextView(this.f16405g);
+            this.f16416r = appCompatTextView;
+            appCompatTextView.setId(bh.f.Y);
+            this.f16416r.setTextAlignment(5);
             Typeface typeface = this.B;
             if (typeface != null) {
-                this.f15667r.setTypeface(typeface);
+                this.f16416r.setTypeface(typeface);
             }
-            H(this.f15670u);
-            I(this.f15671v);
-            F(this.f15668s);
-            E(this.f15669t);
-            this.f15667r.setVisibility(4);
-            e(this.f15667r, 0);
+            H(this.f16419u);
+            I(this.f16420v);
+            F(this.f16417s);
+            E(this.f16418t);
+            this.f16416r.setVisibility(4);
+            e(this.f16416r, 0);
         } else {
             w();
-            C(this.f15667r, 0);
-            this.f15667r = null;
-            this.f15657h.o0();
-            this.f15657h.z0();
+            C(this.f16416r, 0);
+            this.f16416r = null;
+            this.f16406h.r0();
+            this.f16406h.D0();
         }
-        this.f15666q = z10;
+        this.f16415q = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void H(int i10) {
-        this.f15670u = i10;
-        TextView textView = this.f15667r;
+        this.f16419u = i10;
+        TextView textView = this.f16416r;
         if (textView != null) {
-            this.f15657h.b0(textView, i10);
+            this.f16406h.d0(textView, i10);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void I(ColorStateList colorStateList) {
-        this.f15671v = colorStateList;
-        TextView textView = this.f15667r;
+        this.f16420v = colorStateList;
+        TextView textView = this.f16416r;
         if (textView != null && colorStateList != null) {
             textView.setTextColor(colorStateList);
         }
@@ -433,48 +432,48 @@ public final class u {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void J(int i10) {
-        this.f15675z = i10;
-        TextView textView = this.f15674y;
+        this.f16424z = i10;
+        TextView textView = this.f16423y;
         if (textView != null) {
-            androidx.core.widget.j.s(textView, i10);
+            androidx.core.widget.j.q(textView, i10);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void K(boolean z10) {
-        if (this.f15673x == z10) {
+        if (this.f16422x == z10) {
             return;
         }
         h();
         if (z10) {
-            AppCompatTextView appCompatTextView = new AppCompatTextView(this.f15656g);
-            this.f15674y = appCompatTextView;
-            appCompatTextView.setId(bh.f.Q);
-            this.f15674y.setTextAlignment(5);
+            AppCompatTextView appCompatTextView = new AppCompatTextView(this.f16405g);
+            this.f16423y = appCompatTextView;
+            appCompatTextView.setId(bh.f.Z);
+            this.f16423y.setTextAlignment(5);
             Typeface typeface = this.B;
             if (typeface != null) {
-                this.f15674y.setTypeface(typeface);
+                this.f16423y.setTypeface(typeface);
             }
-            this.f15674y.setVisibility(4);
-            h0.p0(this.f15674y, 1);
-            J(this.f15675z);
+            this.f16423y.setVisibility(4);
+            this.f16423y.setAccessibilityLiveRegion(1);
+            J(this.f16424z);
             L(this.A);
-            e(this.f15674y, 1);
-            this.f15674y.setAccessibilityDelegate(new b());
+            e(this.f16423y, 1);
+            this.f16423y.setAccessibilityDelegate(new b());
         } else {
             x();
-            C(this.f15674y, 1);
-            this.f15674y = null;
-            this.f15657h.o0();
-            this.f15657h.z0();
+            C(this.f16423y, 1);
+            this.f16423y = null;
+            this.f16406h.r0();
+            this.f16406h.D0();
         }
-        this.f15673x = z10;
+        this.f16422x = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void L(ColorStateList colorStateList) {
         this.A = colorStateList;
-        TextView textView = this.f15674y;
+        TextView textView = this.f16423y;
         if (textView != null && colorStateList != null) {
             textView.setTextColor(colorStateList);
         }
@@ -484,69 +483,69 @@ public final class u {
     public void N(Typeface typeface) {
         if (typeface != this.B) {
             this.B = typeface;
-            M(this.f15667r, typeface);
-            M(this.f15674y, typeface);
+            M(this.f16416r, typeface);
+            M(this.f16423y, typeface);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void Q(CharSequence charSequence) {
         h();
-        this.f15665p = charSequence;
-        this.f15667r.setText(charSequence);
-        int i10 = this.f15663n;
+        this.f16414p = charSequence;
+        this.f16416r.setText(charSequence);
+        int i10 = this.f16412n;
         if (i10 != 1) {
-            this.f15664o = 1;
+            this.f16413o = 1;
         }
-        S(i10, this.f15664o, P(this.f15667r, charSequence));
+        S(i10, this.f16413o, P(this.f16416r, charSequence));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void R(CharSequence charSequence) {
         h();
-        this.f15672w = charSequence;
-        this.f15674y.setText(charSequence);
-        int i10 = this.f15663n;
+        this.f16421w = charSequence;
+        this.f16423y.setText(charSequence);
+        int i10 = this.f16412n;
         if (i10 != 2) {
-            this.f15664o = 2;
+            this.f16413o = 2;
         }
-        S(i10, this.f15664o, P(this.f15674y, charSequence));
+        S(i10, this.f16413o, P(this.f16423y, charSequence));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e(TextView textView, int i10) {
-        if (this.f15658i == null && this.f15660k == null) {
-            LinearLayout linearLayout = new LinearLayout(this.f15656g);
-            this.f15658i = linearLayout;
+        if (this.f16407i == null && this.f16409k == null) {
+            LinearLayout linearLayout = new LinearLayout(this.f16405g);
+            this.f16407i = linearLayout;
             linearLayout.setOrientation(0);
-            this.f15657h.addView(this.f15658i, -1, -2);
-            this.f15660k = new FrameLayout(this.f15656g);
-            this.f15658i.addView(this.f15660k, new LinearLayout.LayoutParams(0, -2, 1.0f));
-            if (this.f15657h.getEditText() != null) {
+            this.f16406h.addView(this.f16407i, -1, -2);
+            this.f16409k = new FrameLayout(this.f16405g);
+            this.f16407i.addView(this.f16409k, new LinearLayout.LayoutParams(0, -2, 1.0f));
+            if (this.f16406h.getEditText() != null) {
                 f();
             }
         }
         if (z(i10)) {
-            this.f15660k.setVisibility(0);
-            this.f15660k.addView(textView);
+            this.f16409k.setVisibility(0);
+            this.f16409k.addView(textView);
         } else {
-            this.f15658i.addView(textView, new LinearLayout.LayoutParams(-2, -2));
+            this.f16407i.addView(textView, new LinearLayout.LayoutParams(-2, -2));
         }
-        this.f15658i.setVisibility(0);
-        this.f15659j++;
+        this.f16407i.setVisibility(0);
+        this.f16408j++;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f() {
         if (g()) {
-            EditText editText = this.f15657h.getEditText();
-            boolean g10 = oh.c.g(this.f15656g);
-            h0.F0(this.f15658i, v(g10, bh.d.F, h0.E(editText)), v(g10, bh.d.G, this.f15656g.getResources().getDimensionPixelSize(bh.d.E)), v(g10, bh.d.F, h0.D(editText)), 0);
+            EditText editText = this.f16406h.getEditText();
+            boolean k10 = qh.c.k(this.f16405g);
+            this.f16407i.setPaddingRelative(v(k10, bh.d.T, editText.getPaddingStart()), v(k10, bh.d.U, this.f16405g.getResources().getDimensionPixelSize(bh.d.S)), v(k10, bh.d.T, editText.getPaddingEnd()), 0);
         }
     }
 
     void h() {
-        Animator animator = this.f15661l;
+        Animator animator = this.f16410l;
         if (animator != null) {
             animator.cancel();
         }
@@ -554,27 +553,27 @@ public final class u {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean l() {
-        return y(this.f15664o);
+        return y(this.f16413o);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int n() {
-        return this.f15669t;
+        return this.f16418t;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public CharSequence o() {
-        return this.f15668s;
+        return this.f16417s;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public CharSequence p() {
-        return this.f15665p;
+        return this.f16414p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int q() {
-        TextView textView = this.f15667r;
+        TextView textView = this.f16416r;
         if (textView != null) {
             return textView.getCurrentTextColor();
         }
@@ -583,7 +582,7 @@ public final class u {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ColorStateList r() {
-        TextView textView = this.f15667r;
+        TextView textView = this.f16416r;
         if (textView != null) {
             return textView.getTextColors();
         }
@@ -592,17 +591,17 @@ public final class u {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public CharSequence s() {
-        return this.f15672w;
+        return this.f16421w;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public View t() {
-        return this.f15674y;
+        return this.f16423y;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int u() {
-        TextView textView = this.f15674y;
+        TextView textView = this.f16423y;
         if (textView != null) {
             return textView.getCurrentTextColor();
         }
@@ -611,25 +610,25 @@ public final class u {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void w() {
-        this.f15665p = null;
+        this.f16414p = null;
         h();
-        if (this.f15663n == 1) {
-            if (this.f15673x && !TextUtils.isEmpty(this.f15672w)) {
-                this.f15664o = 2;
+        if (this.f16412n == 1) {
+            if (this.f16422x && !TextUtils.isEmpty(this.f16421w)) {
+                this.f16413o = 2;
             } else {
-                this.f15664o = 0;
+                this.f16413o = 0;
             }
         }
-        S(this.f15663n, this.f15664o, P(this.f15667r, ""));
+        S(this.f16412n, this.f16413o, P(this.f16416r, ""));
     }
 
     void x() {
         h();
-        int i10 = this.f15663n;
+        int i10 = this.f16412n;
         if (i10 == 2) {
-            this.f15664o = 0;
+            this.f16413o = 0;
         }
-        S(i10, this.f15664o, P(this.f15674y, ""));
+        S(i10, this.f16413o, P(this.f16423y, ""));
     }
 
     boolean z(int i10) {

@@ -603,12 +603,12 @@ public class ReactAccessibilityDelegate extends ExploreByTouchHelper {
         sActionIdMap = hashMap;
         sCounter = 1056964608;
         delimiterLength = 2;
-        hashMap.put("activate", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3454i.b()));
-        hashMap.put("longpress", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3455j.b()));
-        hashMap.put("increment", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3462q.b()));
-        hashMap.put("decrement", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3463r.b()));
-        hashMap.put("expand", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3468w.b()));
-        hashMap.put(StackTraceHelper.COLLAPSE_KEY, Integer.valueOf(AccessibilityNodeInfoCompat.a.f3469x.b()));
+        hashMap.put("activate", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3458i.b()));
+        hashMap.put("longpress", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3459j.b()));
+        hashMap.put("increment", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3466q.b()));
+        hashMap.put("decrement", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3467r.b()));
+        hashMap.put("expand", Integer.valueOf(AccessibilityNodeInfoCompat.a.f3472w.b()));
+        hashMap.put(StackTraceHelper.COLLAPSE_KEY, Integer.valueOf(AccessibilityNodeInfoCompat.a.f3473x.b()));
     }
 
     public ReactAccessibilityDelegate(View view, boolean z10, int i10) {
@@ -622,7 +622,7 @@ public class ReactAccessibilityDelegate extends ExploreByTouchHelper {
             }
         };
         view.setFocusable(z10);
-        androidx.core.view.h0.x0(view, i10);
+        androidx.core.view.i0.s0(view, i10);
     }
 
     public static AccessibilityNodeInfoCompat createNodeInfoFromView(View view) {
@@ -631,7 +631,7 @@ public class ReactAccessibilityDelegate extends ExploreByTouchHelper {
         }
         AccessibilityNodeInfoCompat j02 = AccessibilityNodeInfoCompat.j0();
         try {
-            androidx.core.view.h0.a0(view, j02);
+            androidx.core.view.i0.X(view, j02);
             return j02;
         } catch (NullPointerException unused) {
             if (j02 != null) {
@@ -672,7 +672,7 @@ public class ReactAccessibilityDelegate extends ExploreByTouchHelper {
                 for (int i10 = 0; i10 < childCount; i10++) {
                     View childAt = viewGroup.getChildAt(i10);
                     AccessibilityNodeInfoCompat j02 = AccessibilityNodeInfoCompat.j0();
-                    androidx.core.view.h0.a0(childAt, j02);
+                    androidx.core.view.i0.X(childAt, j02);
                     if (isSpeakingNode(j02, childAt) && !isAccessibilityFocusable(j02, childAt)) {
                         CharSequence talkbackDescription = getTalkbackDescription(childAt, null);
                         if (!TextUtils.isEmpty(talkbackDescription)) {
@@ -697,7 +697,7 @@ public class ReactAccessibilityDelegate extends ExploreByTouchHelper {
                 if (childAt != null) {
                     AccessibilityNodeInfoCompat j02 = AccessibilityNodeInfoCompat.j0();
                     try {
-                        androidx.core.view.h0.a0(childAt, j02);
+                        androidx.core.view.i0.X(childAt, j02);
                         if (j02.i0() && !isAccessibilityFocusable(j02, childAt) && isSpeakingNode(j02, childAt)) {
                             j02.n0();
                             return true;
@@ -773,8 +773,8 @@ public class ReactAccessibilityDelegate extends ExploreByTouchHelper {
     }
 
     public static boolean isSpeakingNode(AccessibilityNodeInfoCompat accessibilityNodeInfoCompat, View view) {
-        int x10;
-        if (accessibilityNodeInfoCompat == null || view == null || (x10 = androidx.core.view.h0.x(view)) == 4 || (x10 == 2 && accessibilityNodeInfoCompat.r() <= 0)) {
+        int w10;
+        if (accessibilityNodeInfoCompat == null || view == null || (w10 = androidx.core.view.i0.w(view)) == 4 || (w10 == 2 && accessibilityNodeInfoCompat.r() <= 0)) {
             return false;
         }
         if (!hasText(accessibilityNodeInfoCompat) && !hasStateDescription(accessibilityNodeInfoCompat) && !accessibilityNodeInfoCompat.R() && !hasNonActionableSpeakingDescendants(accessibilityNodeInfoCompat, view)) {
@@ -792,7 +792,7 @@ public class ReactAccessibilityDelegate extends ExploreByTouchHelper {
     }
 
     public static void resetDelegate(View view, boolean z10, int i10) {
-        androidx.core.view.h0.n0(view, new ReactAccessibilityDelegate(view, z10, i10));
+        androidx.core.view.i0.k0(view, new ReactAccessibilityDelegate(view, z10, i10));
     }
 
     private void scheduleAccessibilityEventSender(View view) {
@@ -803,9 +803,9 @@ public class ReactAccessibilityDelegate extends ExploreByTouchHelper {
     }
 
     public static void setDelegate(View view, boolean z10, int i10) {
-        if (!androidx.core.view.h0.N(view)) {
+        if (!androidx.core.view.i0.M(view)) {
             if (view.getTag(R.id.accessibility_role) != null || view.getTag(R.id.accessibility_state) != null || view.getTag(R.id.accessibility_actions) != null || view.getTag(R.id.react_test_id) != null || view.getTag(R.id.accessibility_collection_item) != null || view.getTag(R.id.accessibility_links) != null || view.getTag(R.id.role) != null) {
-                androidx.core.view.h0.n0(view, new ReactAccessibilityDelegate(view, z10, i10));
+                androidx.core.view.i0.k0(view, new ReactAccessibilityDelegate(view, z10, i10));
             }
         }
     }
@@ -1066,7 +1066,7 @@ public class ReactAccessibilityDelegate extends ExploreByTouchHelper {
             AccessibilityRole accessibilityRole = (AccessibilityRole) view.getTag(R.id.accessibility_role);
             ReadableMap readableMap = (ReadableMap) view.getTag(R.id.accessibility_value);
             if (accessibilityRole == AccessibilityRole.ADJUSTABLE) {
-                if (i10 == AccessibilityNodeInfoCompat.a.f3462q.b() || i10 == AccessibilityNodeInfoCompat.a.f3463r.b()) {
+                if (i10 == AccessibilityNodeInfoCompat.a.f3466q.b() || i10 == AccessibilityNodeInfoCompat.a.f3467r.b()) {
                     if (readableMap != null && !readableMap.hasKey("text")) {
                         scheduleAccessibilityEventSender(view);
                     }

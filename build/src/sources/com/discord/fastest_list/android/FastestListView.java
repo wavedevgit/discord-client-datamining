@@ -203,7 +203,7 @@ public final class FastestListView extends RecyclerView {
         if (compute != null) {
             function2.invoke(fastestListView, compute);
         }
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -216,21 +216,21 @@ public final class FastestListView extends RecyclerView {
                 function22.invoke(fastestListView, compute);
             }
         }
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit typedAdapter$lambda$1(Function3 function3, FastestListView fastestListView, FastestListSections.Entry entry, int i10) {
         Intrinsics.checkNotNullParameter(entry, "entry");
         function3.invoke(fastestListView, entry, Integer.valueOf(i10));
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit typedVisibleItemsTracker$lambda$0(Function6 function6, FastestListView fastestListView, String sectionsId, int i10, int i11, int i12, int i13) {
         Intrinsics.checkNotNullParameter(sectionsId, "sectionsId");
         function6.invoke(fastestListView, sectionsId, Integer.valueOf(i10), Integer.valueOf(i11), Integer.valueOf(i12), Integer.valueOf(i13));
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     @Override // android.view.ViewGroup
@@ -367,9 +367,9 @@ public final class FastestListView extends RecyclerView {
     }
 
     public final void scrollTo(int i10, int i11, boolean z10, int i12) {
-        Integer m876getItemPositionjEcWkE0 = this.sections.m876getItemPositionjEcWkE0(FastestListSections.Section.m903constructorimpl(i10), FastestListSections.Item.m896constructorimpl(i11));
-        if (m876getItemPositionjEcWkE0 != null) {
-            scrollTo(m876getItemPositionjEcWkE0.intValue(), z10, i12);
+        Integer m877getItemPositionjEcWkE0 = this.sections.m877getItemPositionjEcWkE0(FastestListSections.Section.m904constructorimpl(i10), FastestListSections.Item.m897constructorimpl(i11));
+        if (m877getItemPositionjEcWkE0 != null) {
+            scrollTo(m877getItemPositionjEcWkE0.intValue(), z10, i12);
         }
     }
 

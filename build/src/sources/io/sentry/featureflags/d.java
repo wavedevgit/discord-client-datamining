@@ -9,10 +9,10 @@ import java.util.Map;
 public final class d implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private Map f28387a = null;
+    private Map f29322a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private final io.sentry.util.a f28388b = new io.sentry.util.a();
+    private final io.sentry.util.a f29323b = new io.sentry.util.a();
 
     private d() {
     }
@@ -22,13 +22,13 @@ public final class d implements b {
     }
 
     @Override // io.sentry.featureflags.b
-    public g n() {
-        a1 a10 = this.f28388b.a();
+    public g o() {
+        a1 a10 = this.f29323b.a();
         try {
-            Map map = this.f28387a;
+            Map map = this.f29322a;
             if (map != null && !map.isEmpty()) {
-                ArrayList arrayList = new ArrayList(this.f28387a.size());
-                for (Map.Entry entry : this.f28387a.entrySet()) {
+                ArrayList arrayList = new ArrayList(this.f29322a.size());
+                for (Map.Entry entry : this.f29322a.entrySet()) {
                     arrayList.add(new f((String) entry.getKey(), ((Boolean) entry.getValue()).booleanValue()));
                 }
                 g gVar = new g(arrayList);
@@ -55,7 +55,7 @@ public final class d implements b {
 
     @Override // io.sentry.featureflags.b
     /* renamed from: clone */
-    public b m1184clone() {
+    public b m1185clone() {
         return a();
     }
 }

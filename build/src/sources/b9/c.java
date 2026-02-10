@@ -3,15 +3,15 @@ package b9;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f6429a = new c();
+    public static final c f6535a = new c();
 
     /* renamed from: b  reason: collision with root package name */
-    private static b f6430b = a.f6428a;
+    private static b f6536b = a.f6534a;
 
     private c() {
     }
 
     public static final b a() {
-        return f6430b;
+        return f6536b;
     }
 }

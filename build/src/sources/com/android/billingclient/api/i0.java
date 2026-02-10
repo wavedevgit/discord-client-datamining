@@ -7,28 +7,28 @@ import android.content.IntentFilter;
 public final class i0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f8094a;
+    private final Context f8671a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b6.k f8095b;
+    private final b6.k f8672b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final t f8096c;
+    private final t f8673c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final h0 f8097d = new h0(this, true);
+    private final h0 f8674d = new h0(this, true);
 
     /* renamed from: e  reason: collision with root package name */
-    private final h0 f8098e = new h0(this, false);
+    private final h0 f8675e = new h0(this, false);
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f8099f;
+    private boolean f8676f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i0(Context context, b6.k kVar, b6.d0 d0Var, b6.x xVar, b6.n nVar, t tVar) {
-        this.f8094a = context;
-        this.f8095b = kVar;
-        this.f8096c = tVar;
+        this.f8671a = context;
+        this.f8672b = kVar;
+        this.f8673c = tVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -45,13 +45,13 @@ public final class i0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final b6.k d() {
-        return this.f8095b;
+        return this.f8672b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void f() {
-        this.f8097d.c(this.f8094a);
-        this.f8098e.c(this.f8094a);
+        this.f8674d.c(this.f8671a);
+        this.f8675e.c(this.f8671a);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -59,12 +59,12 @@ public final class i0 {
         IntentFilter intentFilter = new IntentFilter("com.android.vending.billing.PURCHASES_UPDATED");
         IntentFilter intentFilter2 = new IntentFilter("com.android.vending.billing.LOCAL_BROADCAST_PURCHASES_UPDATED");
         intentFilter2.addAction("com.android.vending.billing.ALTERNATIVE_BILLING");
-        this.f8099f = z10;
-        this.f8098e.a(this.f8094a, intentFilter2);
-        if (this.f8099f) {
-            this.f8097d.b(this.f8094a, intentFilter, "com.google.android.finsky.permission.PLAY_BILLING_LIBRARY_BROADCAST");
+        this.f8676f = z10;
+        this.f8675e.a(this.f8671a, intentFilter2);
+        if (this.f8676f) {
+            this.f8674d.b(this.f8671a, intentFilter, "com.google.android.finsky.permission.PLAY_BILLING_LIBRARY_BROADCAST");
         } else {
-            this.f8097d.a(this.f8094a, intentFilter);
+            this.f8674d.a(this.f8671a, intentFilter);
         }
     }
 }

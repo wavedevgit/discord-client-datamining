@@ -1,50 +1,50 @@
 package pg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class u1 implements zi.d {
+final class u1 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u1 f44032a = new u1();
+    static final u1 f42490a = new u1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f44033b;
+    private static final bj.c f42491b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f44034c;
+    private static final bj.c f42492c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f44035d;
+    private static final bj.c f42493d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final zi.c f44036e;
+    private static final bj.c f42494e;
 
     static {
-        c.b a10 = zi.c.a("errorCode");
+        c.b a10 = bj.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f44033b = a10.b(fVar.b()).a();
-        c.b a11 = zi.c.a("isColdCall");
+        f42491b = a10.b(fVar.b()).a();
+        c.b a11 = bj.c.a("isColdCall");
         f fVar2 = new f();
         fVar2.a(2);
-        f44034c = a11.b(fVar2.b()).a();
-        c.b a12 = zi.c.a("imageInfo");
+        f42492c = a11.b(fVar2.b()).a();
+        c.b a12 = bj.c.a("imageInfo");
         f fVar3 = new f();
         fVar3.a(3);
-        f44035d = a12.b(fVar3.b()).a();
-        c.b a13 = zi.c.a("detectorOptions");
+        f42493d = a12.b(fVar3.b()).a();
+        c.b a13 = bj.c.a("detectorOptions");
         f fVar4 = new f();
         fVar4.a(4);
-        f44036e = a13.b(fVar4.b()).a();
+        f42494e = a13.b(fVar4.b()).a();
     }
 
     private u1() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

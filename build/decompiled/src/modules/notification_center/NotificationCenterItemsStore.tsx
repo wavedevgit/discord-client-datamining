@@ -111,17 +111,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4 instanceof Object ? var4 : var5;
                 var2.notifCenterIds = var4;
                 if (var3) {
-                    _fun36522_ip = 95;
+                    _fun36522_ip = 99;
                     continue _fun36522
                 }
-            case 89:
+            case 93:
                 var3 = new Array(0);
-                _fun36522_ip = 108;
+                _fun36522_ip = 112;
                 continue _fun36522;
-            case 95:
+            case 99:
                 var4 = _closure1_slot14;
                 var3 = var4.notifCenterLocalItems;
-            case 108:
+            case 112:
                 var2.notifCenterLocalItems = var3;
                 var3 = true;
                 var2.paginationHasMore = var3;
@@ -1964,4 +1964,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1590, 3335, 3103, 3102, 1621, 660, 3970, 3971, 4222, 21, 566, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1590, 3335, 3103, 3102, 1621, 660, 3970, 3971, 4232, 21, 566, 806, 2]);

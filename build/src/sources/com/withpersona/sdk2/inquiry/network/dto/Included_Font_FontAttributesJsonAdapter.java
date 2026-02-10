@@ -54,7 +54,7 @@ public final class Included_Font_FontAttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -72,7 +72,7 @@ public final class Included_Font_FontAttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, Included.Font.FontAttributes fontAttributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (fontAttributes != null) {
-            writer.k();
+            writer.i();
             writer.J("fontFamilyName");
             this.nullableStringAdapter.toJson(writer, fontAttributes.getFontFamilyName());
             writer.J(ViewProps.FONT_WEIGHT);

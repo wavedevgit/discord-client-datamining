@@ -52,28 +52,28 @@ public final class CheckInquiryResponse_WaitForTransitionConfigJsonAdapter exten
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 l10 = (Long) this.nullableLongAdapter.fromJson(reader);
             } else if (J == 1) {
                 l11 = (Long) this.nullableLongAdapter.fromJson(reader);
             } else if (J == 2 && (pollingMode = (CheckInquiryResponse.PollingMode) this.pollingModeAdapter.fromJson(reader)) == null) {
-                throw bn.c.x("pollingMode", "pollingMode", reader);
+                throw dn.c.x("pollingMode", "pollingMode", reader);
             }
         }
         reader.D();
         if (pollingMode != null) {
             return new CheckInquiryResponse.WaitForTransitionConfig(l10, l11, pollingMode);
         }
-        throw bn.c.o("pollingMode", "pollingMode", reader);
+        throw dn.c.o("pollingMode", "pollingMode", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, CheckInquiryResponse.WaitForTransitionConfig waitForTransitionConfig) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (waitForTransitionConfig != null) {
-            writer.k();
+            writer.i();
             writer.J("intervalMs");
             this.nullableLongAdapter.toJson(writer, waitForTransitionConfig.getIntervalMs());
             writer.J("maxAttempts");

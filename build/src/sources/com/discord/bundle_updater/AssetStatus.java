@@ -20,7 +20,7 @@ public final class AssetStatus {
     static {
         AssetStatus[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = yr.a.a($values);
+        $ENTRIES = hs.a.a($values);
     }
 
     private AssetStatus(String str, int i10) {

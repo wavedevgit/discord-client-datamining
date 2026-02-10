@@ -313,7 +313,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = arg0;
                 var0 = 'LogBox';
                 if (!(var0 !== var2)) {
-                    _fun3282_ip = 56;
+                    _fun3282_ip = 57;
                     continue _fun3282
                 }
             case 11:
@@ -326,7 +326,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.console;
                 var0 = var1.log;
                 var0 = var0.bind(var1)(var3);
-            case 56:
+            case 57:
                 var4 = _closure1_slot1;
                 var5 = _closure1_slot2;
                 var0 = 0;
@@ -371,7 +371,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = arg1;
                 var0 = 'LogBox';
                 if (!(var0 !== var2)) {
-                    _fun3283_ip = 73;
+                    _fun3283_ip = 74;
                     continue _fun3283
                 }
             case 14:
@@ -387,7 +387,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.console;
                 var0 = var1.log;
                 var0 = var0.bind(var1)(var3);
-            case 73:
+            case 74:
                 var5 = _closure1_slot1;
                 var6 = _closure1_slot2;
                 var0 = 0;

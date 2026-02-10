@@ -10,13 +10,13 @@ import a0.u;
 public class k implements u {
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f37720a;
+    private final u f36724a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final q2 f37721b;
+    private final q2 f36725b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f37722c;
+    private final long f36726c;
 
     public k(q2 q2Var, u uVar) {
         this(uVar, q2Var, -1L);
@@ -24,11 +24,11 @@ public class k implements u {
 
     @Override // a0.u
     public long a() {
-        u uVar = this.f37720a;
+        u uVar = this.f36724a;
         if (uVar != null) {
             return uVar.a();
         }
-        long j10 = this.f37722c;
+        long j10 = this.f36726c;
         if (j10 != -1) {
             return j10;
         }
@@ -37,12 +37,12 @@ public class k implements u {
 
     @Override // a0.u
     public q2 c() {
-        return this.f37721b;
+        return this.f36725b;
     }
 
     @Override // a0.u
     public t d() {
-        u uVar = this.f37720a;
+        u uVar = this.f36724a;
         if (uVar != null) {
             return uVar.d();
         }
@@ -51,7 +51,7 @@ public class k implements u {
 
     @Override // a0.u
     public r e() {
-        u uVar = this.f37720a;
+        u uVar = this.f36724a;
         if (uVar != null) {
             return uVar.e();
         }
@@ -60,7 +60,7 @@ public class k implements u {
 
     @Override // a0.u
     public a0.n g() {
-        u uVar = this.f37720a;
+        u uVar = this.f36724a;
         if (uVar != null) {
             return uVar.g();
         }
@@ -69,7 +69,7 @@ public class k implements u {
 
     @Override // a0.u
     public q h() {
-        u uVar = this.f37720a;
+        u uVar = this.f36724a;
         if (uVar != null) {
             return uVar.h();
         }
@@ -78,7 +78,7 @@ public class k implements u {
 
     @Override // a0.u
     public s i() {
-        u uVar = this.f37720a;
+        u uVar = this.f36724a;
         if (uVar != null) {
             return uVar.i();
         }
@@ -87,7 +87,7 @@ public class k implements u {
 
     @Override // a0.u
     public a0.p j() {
-        u uVar = this.f37720a;
+        u uVar = this.f36724a;
         if (uVar != null) {
             return uVar.j();
         }
@@ -96,7 +96,7 @@ public class k implements u {
 
     @Override // a0.u
     public a0.o k() {
-        u uVar = this.f37720a;
+        u uVar = this.f36724a;
         if (uVar != null) {
             return uVar.k();
         }
@@ -108,8 +108,8 @@ public class k implements u {
     }
 
     private k(u uVar, q2 q2Var, long j10) {
-        this.f37720a = uVar;
-        this.f37721b = q2Var;
-        this.f37722c = j10;
+        this.f36724a = uVar;
+        this.f36725b = q2Var;
+        this.f36726c = j10;
     }
 }

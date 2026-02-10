@@ -1,16 +1,35 @@
 package jl;
+
+import com.facebook.react.bridge.Dynamic;
+import java.util.Locale;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class f implements h {
+public class f extends k {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final String f30243a;
+    /* renamed from: b  reason: collision with root package name */
+    private String f31185b;
 
-    public f(String str) {
-        this.f30243a = str;
+    public f() {
+        super(e());
+        this.f31185b = d();
     }
 
-    @Override // jl.h
-    public void a(kl.g gVar) {
-        gVar.f30946d.setTextColor(this.f30243a);
+    private static String d() {
+        return Locale.getDefault().toLanguageTag().replace('-', '_');
+    }
+
+    private static Locale e() {
+        return com.henninghall.date_picker.h.f(d());
+    }
+
+    public String f() {
+        return this.f31185b;
+    }
+
+    @Override // jl.k
+    /* renamed from: g */
+    public Locale c(Dynamic dynamic) {
+        String replace = dynamic.asString().replace('-', '_');
+        this.f31185b = replace;
+        return com.henninghall.date_picker.h.f(replace);
     }
 }

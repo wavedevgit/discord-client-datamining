@@ -1,50 +1,50 @@
 package qg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class j4 implements zi.d {
+final class j4 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j4 f45922a = new j4();
+    static final j4 f44590a = new j4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f45923b;
+    private static final bj.c f44591b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f45924c;
+    private static final bj.c f44592c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f45925d;
+    private static final bj.c f44593d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final zi.c f45926e;
+    private static final bj.c f44594e;
 
     static {
-        c.b a10 = zi.c.a("remoteModelOptions");
+        c.b a10 = bj.c.a("remoteModelOptions");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f45923b = a10.b(s1Var.b()).a();
-        c.b a11 = zi.c.a("localModelOptions");
+        f44591b = a10.b(s1Var.b()).a();
+        c.b a11 = bj.c.a("localModelOptions");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f45924c = a11.b(s1Var2.b()).a();
-        c.b a12 = zi.c.a("errorCodes");
+        f44592c = a11.b(s1Var2.b()).a();
+        c.b a12 = bj.c.a("errorCodes");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f45925d = a12.b(s1Var3.b()).a();
-        c.b a13 = zi.c.a("modelInitializationMs");
+        f44593d = a12.b(s1Var3.b()).a();
+        c.b a13 = bj.c.a("modelInitializationMs");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f45926e = a13.b(s1Var4.b()).a();
+        f44594e = a13.b(s1Var4.b()).a();
     }
 
     private j4() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

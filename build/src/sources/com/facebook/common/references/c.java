@@ -6,17 +6,12 @@ public class c extends CloseableReference {
         super(obj, null, null, null, false);
     }
 
-    @Override // com.facebook.common.references.CloseableReference
-    public boolean D0() {
-        return true;
-    }
-
     @Override // com.facebook.common.references.CloseableReference, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
     }
 
     @Override // com.facebook.common.references.CloseableReference
-    /* renamed from: k */
+    /* renamed from: h */
     public CloseableReference clone() {
         return this;
     }
@@ -24,5 +19,10 @@ public class c extends CloseableReference {
     @Override // com.facebook.common.references.CloseableReference
     public CloseableReference m() {
         return this;
+    }
+
+    @Override // com.facebook.common.references.CloseableReference
+    public boolean z0() {
+        return true;
     }
 }

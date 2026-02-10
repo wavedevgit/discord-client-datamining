@@ -36,7 +36,7 @@ public final class ErrorResponse_Error_FieldNotFoundErrorJsonAdapter extends h {
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.C0();
+                mVar.z0();
                 mVar.T();
             } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(mVar);
@@ -51,7 +51,7 @@ public final class ErrorResponse_Error_FieldNotFoundErrorJsonAdapter extends h {
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, ErrorResponse.Error.FieldNotFoundError fieldNotFoundError) {
         if (fieldNotFoundError != null) {
-            tVar.k();
+            tVar.i();
             tVar.J("title");
             this.nullableStringAdapter.toJson(tVar, fieldNotFoundError.getTitle());
             tVar.J("details");

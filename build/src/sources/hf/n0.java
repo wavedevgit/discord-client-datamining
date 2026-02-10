@@ -9,33 +9,33 @@ public final class n0 extends jf.a {
     public static final Parcelable.Creator<n0> CREATOR = new o0();
 
     /* renamed from: d  reason: collision with root package name */
-    final int f26081d;
+    final int f27299d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Account f26082e;
+    private final Account f27300e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f26083i;
+    private final int f27301i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final GoogleSignInAccount f26084o;
+    private final GoogleSignInAccount f27302o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n0(int i10, Account account, int i11, GoogleSignInAccount googleSignInAccount) {
-        this.f26081d = i10;
-        this.f26082e = account;
-        this.f26083i = i11;
-        this.f26084o = googleSignInAccount;
+        this.f27299d = i10;
+        this.f27300e = account;
+        this.f27301i = i11;
+        this.f27302o = googleSignInAccount;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        int i11 = this.f26081d;
+        int i11 = this.f27299d;
         int a10 = jf.c.a(parcel);
         jf.c.l(parcel, 1, i11);
-        jf.c.q(parcel, 2, this.f26082e, i10, false);
-        jf.c.l(parcel, 3, this.f26083i);
-        jf.c.q(parcel, 4, this.f26084o, i10, false);
+        jf.c.q(parcel, 2, this.f27300e, i10, false);
+        jf.c.l(parcel, 3, this.f27301i);
+        jf.c.q(parcel, 4, this.f27302o, i10, false);
         jf.c.b(parcel, a10);
     }
 

@@ -24,7 +24,7 @@ public abstract class c implements Iterable, Closeable {
         return new b(dVar, aVar);
     }
 
-    public abstract void C0(int i10);
+    public abstract void H0(int i10);
 
     public List Q(int i10) {
         int min = Math.min(i10, size());
@@ -37,10 +37,10 @@ public abstract class c implements Iterable, Closeable {
     }
 
     public void clear() {
-        C0(size());
+        H0(size());
     }
 
-    public abstract void g(Object obj);
+    public abstract void i(Object obj);
 
     public List p() {
         return Q(size());

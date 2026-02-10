@@ -1,143 +1,243 @@
 package ru;
 
-import java.io.IOException;
-import java.util.zip.Deflater;
+import java.io.EOFException;
+import java.util.ArrayList;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
+import okhttp3.Cookie;
+import okhttp3.CookieJar;
+import okhttp3.Headers;
+import okhttp3.HttpUrl;
+import okhttp3.Response;
 import okio.Buffer;
-import okio.BufferedSink;
-import okio.Sink;
-import okio.Timeout;
+import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e implements Sink {
+public abstract class e {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final BufferedSink f49363d;
+    /* renamed from: a  reason: collision with root package name */
+    private static final ByteString f47757a;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final Deflater f49364e;
+    /* renamed from: b  reason: collision with root package name */
+    private static final ByteString f47758b;
 
-    /* renamed from: i  reason: collision with root package name */
-    private boolean f49365i;
-
-    public e(BufferedSink sink, Deflater deflater) {
-        Intrinsics.checkNotNullParameter(sink, "sink");
-        Intrinsics.checkNotNullParameter(deflater, "deflater");
-        this.f49363d = sink;
-        this.f49364e = deflater;
+    static {
+        ByteString.a aVar = ByteString.f40591o;
+        f47757a = aVar.g("\"\\");
+        f47758b = aVar.g("\t ,=");
     }
 
-    private final void a(boolean z10) {
-        g0 s12;
-        int deflate;
-        Buffer e10 = this.f49363d.e();
-        while (true) {
-            s12 = e10.s1(1);
-            if (z10) {
+    public static final List a(Headers headers, String headerName) {
+        Intrinsics.checkNotNullParameter(headers, "<this>");
+        Intrinsics.checkNotNullParameter(headerName, "headerName");
+        ArrayList arrayList = new ArrayList();
+        int size = headers.size();
+        for (int i10 = 0; i10 < size; i10++) {
+            if (StringsKt.A(headerName, headers.e(i10), true)) {
                 try {
-                    Deflater deflater = this.f49364e;
-                    byte[] bArr = s12.f49390a;
-                    int i10 = s12.f49392c;
-                    deflate = deflater.deflate(bArr, i10, 8192 - i10, 2);
-                } catch (NullPointerException e11) {
-                    throw new IOException("Deflater already closed", e11);
+                    c(new Buffer().q0(headers.k(i10)), arrayList);
+                } catch (EOFException e10) {
+                    vu.h.f52015a.g().k("Unable to parse challenge", 5, e10);
                 }
-            } else {
-                Deflater deflater2 = this.f49364e;
-                byte[] bArr2 = s12.f49390a;
-                int i11 = s12.f49392c;
-                deflate = deflater2.deflate(bArr2, i11, 8192 - i11);
-            }
-            if (deflate > 0) {
-                s12.f49392c += deflate;
-                e10.W0(e10.size() + deflate);
-                this.f49363d.h0();
-            } else if (this.f49364e.needsInput()) {
-                break;
             }
         }
-        if (s12.f49391b == s12.f49392c) {
-            e10.f42330d = s12.b();
-            h0.b(s12);
+        return arrayList;
+    }
+
+    public static final boolean b(Response response) {
+        Intrinsics.checkNotNullParameter(response, "<this>");
+        if (Intrinsics.areEqual(response.O0().j(), "HEAD")) {
+            return false;
+        }
+        int z10 = response.z();
+        if (((z10 >= 100 && z10 < 200) || z10 == 204 || z10 == 304) && mu.e.v(response) == -1 && !StringsKt.A("chunked", Response.Z(response, "Transfer-Encoding", null, 2, null), true)) {
+            return false;
+        }
+        return true;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:58:0x00bc, code lost:
+        continue;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:59:0x00bc, code lost:
+        continue;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private static final void c(okio.Buffer r7, java.util.List r8) {
+        /*
+            r0 = 0
+        L1:
+            r1 = r0
+        L2:
+            if (r1 != 0) goto Lf
+            g(r7)
+            java.lang.String r1 = e(r7)
+            if (r1 != 0) goto Lf
+            goto Lb9
+        Lf:
+            boolean r2 = g(r7)
+            java.lang.String r3 = e(r7)
+            if (r3 != 0) goto L2e
+            boolean r7 = r7.p1()
+            if (r7 != 0) goto L21
+            goto Lb9
+        L21:
+            lu.d r7 = new lu.d
+            java.util.Map r0 = kotlin.collections.o0.i()
+            r7.<init>(r1, r0)
+            r8.add(r7)
+            return
+        L2e:
+            r4 = 61
+            int r5 = mu.e.L(r7, r4)
+            boolean r6 = g(r7)
+            if (r2 != 0) goto L69
+            if (r6 != 0) goto L42
+            boolean r2 = r7.p1()
+            if (r2 == 0) goto L69
+        L42:
+            lu.d r2 = new lu.d
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            r4.<init>()
+            r4.append(r3)
+            java.lang.String r3 = "="
+            java.lang.String r3 = kotlin.text.StringsKt.F(r3, r5)
+            r4.append(r3)
+            java.lang.String r3 = r4.toString()
+            java.util.Map r3 = java.util.Collections.singletonMap(r0, r3)
+            java.lang.String r4 = "singletonMap<String, Str…ek + \"=\".repeat(eqCount))"
+            kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r3, r4)
+            r2.<init>(r1, r3)
+            r8.add(r2)
+            goto L1
+        L69:
+            java.util.LinkedHashMap r2 = new java.util.LinkedHashMap
+            r2.<init>()
+            int r6 = mu.e.L(r7, r4)
+            int r5 = r5 + r6
+        L73:
+            if (r3 != 0) goto L83
+            java.lang.String r3 = e(r7)
+            boolean r5 = g(r7)
+            if (r5 != 0) goto Lbc
+            int r5 = mu.e.L(r7, r4)
+        L83:
+            if (r5 == 0) goto Lbc
+            r6 = 1
+            if (r5 <= r6) goto L89
+            goto Lb9
+        L89:
+            boolean r6 = g(r7)
+            if (r6 == 0) goto L90
+            goto Lb9
+        L90:
+            r6 = 34
+            boolean r6 = h(r7, r6)
+            if (r6 == 0) goto L9d
+            java.lang.String r6 = d(r7)
+            goto La1
+        L9d:
+            java.lang.String r6 = e(r7)
+        La1:
+            if (r6 != 0) goto La4
+            goto Lb9
+        La4:
+            java.lang.Object r3 = r2.put(r3, r6)
+            java.lang.String r3 = (java.lang.String) r3
+            if (r3 == 0) goto Lad
+            goto Lb9
+        Lad:
+            boolean r3 = g(r7)
+            if (r3 != 0) goto Lba
+            boolean r3 = r7.p1()
+            if (r3 != 0) goto Lba
+        Lb9:
+            return
+        Lba:
+            r3 = r0
+            goto L73
+        Lbc:
+            lu.d r4 = new lu.d
+            r4.<init>(r1, r2)
+            r8.add(r4)
+            r1 = r3
+            goto L2
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ru.e.c(okio.Buffer, java.util.List):void");
+    }
+
+    private static final String d(Buffer buffer) {
+        if (buffer.readByte() == 34) {
+            Buffer buffer2 = new Buffer();
+            while (true) {
+                long g02 = buffer.g0(f47757a);
+                if (g02 == -1) {
+                    return null;
+                }
+                if (buffer.Z(g02) == 34) {
+                    buffer2.u0(buffer, g02);
+                    buffer.readByte();
+                    return buffer2.X1();
+                } else if (buffer.size() == g02 + 1) {
+                    return null;
+                } else {
+                    buffer2.u0(buffer, g02);
+                    buffer.readByte();
+                    buffer2.u0(buffer, 1L);
+                }
+            }
+        } else {
+            throw new IllegalArgumentException("Failed requirement.");
         }
     }
 
-    @Override // okio.Sink, java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        if (!this.f49365i) {
-            try {
-                g();
-                th = null;
-            } catch (Throwable th2) {
-                th = th2;
-            }
-            try {
-                this.f49364e.end();
-            } catch (Throwable th3) {
-                if (th == null) {
-                    th = th3;
-                }
-            }
-            try {
-                this.f49363d.close();
-            } catch (Throwable th4) {
-                if (th == null) {
-                    th = th4;
-                }
-            }
-            this.f49365i = true;
-            if (th == null) {
+    private static final String e(Buffer buffer) {
+        long g02 = buffer.g0(f47758b);
+        if (g02 == -1) {
+            g02 = buffer.size();
+        }
+        if (g02 != 0) {
+            return buffer.d1(g02);
+        }
+        return null;
+    }
+
+    public static final void f(CookieJar cookieJar, HttpUrl url, Headers headers) {
+        Intrinsics.checkNotNullParameter(cookieJar, "<this>");
+        Intrinsics.checkNotNullParameter(url, "url");
+        Intrinsics.checkNotNullParameter(headers, "headers");
+        if (cookieJar != CookieJar.f40264b) {
+            List e10 = Cookie.f40240j.e(url, headers);
+            if (e10.isEmpty()) {
                 return;
             }
-            throw th;
+            cookieJar.saveFromResponse(url, e10);
         }
     }
 
-    @Override // okio.Sink, java.io.Flushable
-    public void flush() {
-        a(true);
-        this.f49363d.flush();
-    }
-
-    public final void g() {
-        this.f49364e.finish();
-        a(false);
-    }
-
-    @Override // okio.Sink
-    public Timeout timeout() {
-        return this.f49363d.timeout();
-    }
-
-    public String toString() {
-        return "DeflaterSink(" + this.f49363d + ')';
-    }
-
-    @Override // okio.Sink
-    public void u0(Buffer source, long j10) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        okio.b.b(source.size(), 0L, j10);
-        while (j10 > 0) {
-            g0 g0Var = source.f42330d;
-            Intrinsics.checkNotNull(g0Var);
-            int min = (int) Math.min(j10, g0Var.f49392c - g0Var.f49391b);
-            this.f49364e.setInput(g0Var.f49390a, g0Var.f49391b, min);
-            a(false);
-            long j11 = min;
-            source.W0(source.size() - j11);
-            int i10 = g0Var.f49391b + min;
-            g0Var.f49391b = i10;
-            if (i10 == g0Var.f49392c) {
-                source.f42330d = g0Var.b();
-                h0.b(g0Var);
+    private static final boolean g(Buffer buffer) {
+        boolean z10 = false;
+        while (!buffer.p1()) {
+            byte Z = buffer.Z(0L);
+            if (Z == 44) {
+                buffer.readByte();
+                z10 = true;
+            } else if (Z != 32 && Z != 9) {
+                break;
+            } else {
+                buffer.readByte();
             }
-            j10 -= j11;
         }
+        return z10;
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public e(Sink sink, Deflater deflater) {
-        this(x.c(sink), deflater);
-        Intrinsics.checkNotNullParameter(sink, "sink");
-        Intrinsics.checkNotNullParameter(deflater, "deflater");
+    private static final boolean h(Buffer buffer, byte b10) {
+        if (!buffer.p1() && buffer.Z(0L) == b10) {
+            return true;
+        }
+        return false;
     }
 }

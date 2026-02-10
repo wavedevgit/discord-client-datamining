@@ -1,6 +1,7 @@
 package com.discord.file_manager;
 
 import com.facebook.react.bridge.Promise;
+import gs.b;
 import java.io.File;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -10,7 +11,6 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
-import xr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.file_manager.FileModule$fileExists$1", f = "FileModule.kt", l = {}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -42,13 +42,13 @@ final class FileModule$fileExists$1 extends k implements Function2<CoroutineScop
             } catch (Throwable th2) {
                 this.$promise.reject(th2);
             }
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$fileExists$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31765a);
+        return ((FileModule$fileExists$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
     }
 }

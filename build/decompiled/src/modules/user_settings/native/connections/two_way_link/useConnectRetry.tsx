@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var5;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun51600: for (var _fun51600_ip = 0;;) switch (_fun51600_ip) {
+            _fun51653: for (var _fun51653_ip = 0;;) switch (_fun51653_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = var2.getState;
@@ -52,15 +52,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3.bind(var0)(var2);
                     var2 = 0;
                     if (!(!(var3 >= var2))) {
-                        _fun51600_ip = 63;
-                        continue _fun51600
+                        _fun51653_ip = 63;
+                        continue _fun51653
                     }
                 case 47:
                     var4 = _closure2_slot0;
                     var2 = var4.popToTop;
                     var2 = var2.bind(var4)();
-                    _fun51600_ip = 94;
-                    continue _fun51600;
+                    _fun51653_ip = 94;
+                    continue _fun51653;
                 case 63:
                     var2 = _closure2_slot0;
                     var1 = var2.pop;

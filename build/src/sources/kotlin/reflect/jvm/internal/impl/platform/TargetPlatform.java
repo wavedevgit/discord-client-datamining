@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 public class TargetPlatform implements Collection<SimplePlatform>, KMappedMarker {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Set f33655d;
+    private final Set f33877d;
 
     @Override // java.util.Collection
     public /* bridge */ /* synthetic */ boolean add(SimplePlatform simplePlatform) {
@@ -31,13 +31,13 @@ public class TargetPlatform implements Collection<SimplePlatform>, KMappedMarker
 
     public boolean contains(@NotNull SimplePlatform element) {
         Intrinsics.checkNotNullParameter(element, "element");
-        return this.f33655d.contains(element);
+        return this.f33877d.contains(element);
     }
 
     @Override // java.util.Collection
     public boolean containsAll(@NotNull Collection<?> elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        return this.f33655d.containsAll(elements);
+        return this.f33877d.containsAll(elements);
     }
 
     @Override // java.util.Collection
@@ -45,7 +45,7 @@ public class TargetPlatform implements Collection<SimplePlatform>, KMappedMarker
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof TargetPlatform) && Intrinsics.areEqual(this.f33655d, ((TargetPlatform) obj).f33655d)) {
+        if ((obj instanceof TargetPlatform) && Intrinsics.areEqual(this.f33877d, ((TargetPlatform) obj).f33877d)) {
             return true;
         }
         return false;
@@ -53,27 +53,27 @@ public class TargetPlatform implements Collection<SimplePlatform>, KMappedMarker
 
     @NotNull
     public final Set<SimplePlatform> getComponentPlatforms() {
-        return this.f33655d;
+        return this.f33877d;
     }
 
     public int getSize() {
-        return this.f33655d.size();
+        return this.f33877d.size();
     }
 
     @Override // java.util.Collection
     public int hashCode() {
-        return this.f33655d.hashCode();
+        return this.f33877d.hashCode();
     }
 
     @Override // java.util.Collection
     public boolean isEmpty() {
-        return this.f33655d.isEmpty();
+        return this.f33877d.isEmpty();
     }
 
     @Override // java.util.Collection, java.lang.Iterable
     @NotNull
     public Iterator<SimplePlatform> iterator() {
-        return this.f33655d.iterator();
+        return this.f33877d.iterator();
     }
 
     @Override // java.util.Collection

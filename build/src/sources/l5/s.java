@@ -28,16 +28,16 @@ import okio.Source;
 public abstract class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f35769a = new HashMap();
+    private static final Map f35666a = new HashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Set f35770b = new HashSet();
+    private static final Set f35667b = new HashSet();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final byte[] f35771c = {80, 75, 3, 4};
+    private static final byte[] f35668c = {80, 75, 3, 4};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final byte[] f35772d = {31, -117, 8};
+    private static final byte[] f35669d = {31, -117, 8};
 
     public static com.airbnb.lottie.p A(Context context, String str) {
         return B(context, str, "url_" + str);
@@ -111,7 +111,7 @@ public abstract class s {
             } else if (nextEntry.getName().equalsIgnoreCase("manifest.json")) {
                 zipInputStream.closeEntry();
             } else if (nextEntry.getName().contains(".json")) {
-                iVar = (i) u(x5.c.k(ru.x.d(ru.x.k(zipInputStream))), null, false).b();
+                iVar = (i) u(x5.c.i(av.x.d(av.x.k(zipInputStream))), null, false).b();
             } else {
                 if (!name.contains(".png") && !name.contains(".webp") && !name.contains(".jpg") && !name.contains(".jpeg")) {
                     if (!name.contains(".ttf") && !name.contains(".otf")) {
@@ -205,7 +205,7 @@ public abstract class s {
     }
 
     private static Boolean H(BufferedSource bufferedSource) {
-        return K(bufferedSource, f35772d);
+        return K(bufferedSource, f35669d);
     }
 
     private static boolean I(Context context) {
@@ -216,7 +216,7 @@ public abstract class s {
     }
 
     private static Boolean J(BufferedSource bufferedSource) {
-        return K(bufferedSource, f35771c);
+        return K(bufferedSource, f35668c);
     }
 
     private static Boolean K(BufferedSource bufferedSource, byte[] bArr) {
@@ -238,7 +238,7 @@ public abstract class s {
     }
 
     private static void L(boolean z10) {
-        ArrayList arrayList = new ArrayList(f35770b);
+        ArrayList arrayList = new ArrayList(f35667b);
         if (arrayList.size() <= 0) {
             return;
         }
@@ -277,7 +277,7 @@ public abstract class s {
     }
 
     public static /* synthetic */ void c(String str, AtomicBoolean atomicBoolean, i iVar) {
-        Map map = f35769a;
+        Map map = f35666a;
         map.remove(str);
         atomicBoolean.set(true);
         if (map.size() == 0) {
@@ -286,7 +286,7 @@ public abstract class s {
     }
 
     public static /* synthetic */ void e(String str, AtomicBoolean atomicBoolean, Throwable th2) {
-        Map map = f35769a;
+        Map map = f35666a;
         map.remove(str);
         atomicBoolean.set(true);
         if (map.size() == 0) {
@@ -306,7 +306,7 @@ public abstract class s {
             pVar = new com.airbnb.lottie.p(a10);
         }
         if (str != null) {
-            Map map = f35769a;
+            Map map = f35666a;
             if (map.containsKey(str)) {
                 pVar = (com.airbnb.lottie.p) map.get(str);
             }
@@ -333,7 +333,7 @@ public abstract class s {
                 }
             });
             if (!atomicBoolean.get()) {
-                Map map2 = f35769a;
+                Map map2 = f35666a;
                 map2.put(str, pVar2);
                 if (map2.size() == 1) {
                     L(false);
@@ -383,14 +383,14 @@ public abstract class s {
             return new c0(a10);
         }
         try {
-            BufferedSource d10 = ru.x.d(ru.x.k(context.getAssets().open(str)));
+            BufferedSource d10 = av.x.d(av.x.k(context.getAssets().open(str)));
             if (J(d10).booleanValue()) {
-                return E(context, new ZipInputStream(d10.n2()), str2);
+                return E(context, new ZipInputStream(d10.s2()), str2);
             }
             if (H(d10).booleanValue()) {
-                return q(new GZIPInputStream(d10.n2()), str2);
+                return q(new GZIPInputStream(d10.s2()), str2);
             }
-            return s(x5.c.k(d10), str2);
+            return s(x5.c.i(d10), str2);
         } catch (IOException e10) {
             return new c0((Throwable) e10);
         }
@@ -417,7 +417,7 @@ public abstract class s {
     }
 
     public static c0 r(InputStream inputStream, String str, boolean z10) {
-        return v(ru.x.k(inputStream), str, z10);
+        return v(av.x.k(inputStream), str, z10);
     }
 
     public static c0 s(x5.c cVar, String str) {
@@ -469,7 +469,7 @@ public abstract class s {
     }
 
     public static c0 v(Source source, String str, boolean z10) {
-        return u(x5.c.k(ru.x.d(source)), str, z10);
+        return u(x5.c.i(av.x.d(source)), str, z10);
     }
 
     public static com.airbnb.lottie.p w(Context context, int i10) {
@@ -502,18 +502,18 @@ public abstract class s {
             return new c0(a10);
         }
         try {
-            BufferedSource d10 = ru.x.d(ru.x.k(context.getResources().openRawResource(i10)));
+            BufferedSource d10 = av.x.d(av.x.k(context.getResources().openRawResource(i10)));
             if (J(d10).booleanValue()) {
-                return E(context, new ZipInputStream(d10.n2()), str);
+                return E(context, new ZipInputStream(d10.s2()), str);
             }
             if (H(d10).booleanValue()) {
                 try {
-                    return q(new GZIPInputStream(d10.n2()), str);
+                    return q(new GZIPInputStream(d10.s2()), str);
                 } catch (IOException e10) {
                     return new c0((Throwable) e10);
                 }
             }
-            return s(x5.c.k(d10), str);
+            return s(x5.c.i(d10), str);
         } catch (Resources.NotFoundException e11) {
             return new c0((Throwable) e11);
         }

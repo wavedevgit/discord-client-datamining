@@ -10,21 +10,21 @@ final class e0 extends uc.a {
     private static final class a implements a.f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final s0 f21284a;
+        private final s0 f22451a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final oe.h0 f21285b = new oe.h0();
+        private final oe.h0 f22452b = new oe.h0();
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f21286c;
+        private final int f22453c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f21287d;
+        private final int f22454d;
 
         public a(int i10, s0 s0Var, int i11) {
-            this.f21286c = i10;
-            this.f21284a = s0Var;
-            this.f21287d = i11;
+            this.f22453c = i10;
+            this.f22451a = s0Var;
+            this.f22454d = i11;
         }
 
         private a.e c(oe.h0 h0Var, long j10, long j11) {
@@ -35,9 +35,9 @@ final class e0 extends uc.a {
             long j13 = -1;
             long j14 = -9223372036854775807L;
             while (h0Var.a() >= 188 && (a11 = (a10 = j0.a(h0Var.e(), h0Var.f(), g10)) + 188) <= g10) {
-                long c10 = j0.c(h0Var, a10, this.f21286c);
+                long c10 = j0.c(h0Var, a10, this.f22453c);
                 if (c10 != -9223372036854775807L) {
-                    long b10 = this.f21284a.b(c10);
+                    long b10 = this.f22451a.b(c10);
                     if (b10 > j10) {
                         if (j14 == -9223372036854775807L) {
                             return a.e.d(b10, j11);
@@ -56,21 +56,21 @@ final class e0 extends uc.a {
             if (j14 != -9223372036854775807L) {
                 return a.e.f(j14, j11 + j12);
             }
-            return a.e.f51427d;
+            return a.e.f50606d;
         }
 
         @Override // uc.a.f
         public a.e a(uc.l lVar, long j10) {
             long position = lVar.getPosition();
-            int min = (int) Math.min(this.f21287d, lVar.getLength() - position);
-            this.f21285b.Q(min);
-            lVar.n(this.f21285b.e(), 0, min);
-            return c(this.f21285b, j10, position);
+            int min = (int) Math.min(this.f22454d, lVar.getLength() - position);
+            this.f22452b.Q(min);
+            lVar.n(this.f22452b.e(), 0, min);
+            return c(this.f22452b, j10, position);
         }
 
         @Override // uc.a.f
         public void b() {
-            this.f21285b.R(w0.f40716f);
+            this.f22452b.R(w0.f39042f);
         }
     }
 

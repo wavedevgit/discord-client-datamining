@@ -55,7 +55,7 @@ public final class NextStep_GovernmentId_AssetConfig_SelectPageJsonAdapter exten
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
@@ -87,7 +87,7 @@ public final class NextStep_GovernmentId_AssetConfig_SelectPageJsonAdapter exten
         RemoteImage remoteImage12 = remoteImage;
         Constructor<NextStep.GovernmentId.AssetConfig.SelectPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.SelectPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, bn.c.f7152c);
+            constructor = NextStep.GovernmentId.AssetConfig.SelectPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, dn.c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -100,7 +100,7 @@ public final class NextStep_GovernmentId_AssetConfig_SelectPageJsonAdapter exten
     public void toJson(@NotNull t writer, NextStep.GovernmentId.AssetConfig.SelectPage selectPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selectPage != null) {
-            writer.k();
+            writer.i();
             writer.J("headerPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, selectPage.getHeaderPictograph());
             writer.J("iconDriversLicense");

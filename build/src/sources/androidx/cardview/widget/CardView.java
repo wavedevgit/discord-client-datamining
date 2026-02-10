@@ -27,7 +27,7 @@ public class CardView extends FrameLayout {
     class a implements CardViewDelegate {
 
         /* renamed from: a  reason: collision with root package name */
-        private Drawable f2304a;
+        private Drawable f2307a;
 
         a() {
         }
@@ -42,7 +42,7 @@ public class CardView extends FrameLayout {
 
         @Override // androidx.cardview.widget.CardViewDelegate
         public void b(Drawable drawable) {
-            this.f2304a = drawable;
+            this.f2307a = drawable;
             CardView.this.setBackgroundDrawable(drawable);
         }
 
@@ -53,7 +53,7 @@ public class CardView extends FrameLayout {
 
         @Override // androidx.cardview.widget.CardViewDelegate
         public Drawable d() {
-            return this.f2304a;
+            return this.f2307a;
         }
 
         @Override // androidx.cardview.widget.CardViewDelegate
@@ -74,7 +74,7 @@ public class CardView extends FrameLayout {
     }
 
     public CardView(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, t0.a.f50485a);
+        this(context, attributeSet, t0.a.f48417a);
     }
 
     @NonNull
@@ -201,9 +201,9 @@ public class CardView extends FrameLayout {
         this.mShadowBounds = new Rect();
         a aVar = new a();
         this.mCardViewDelegate = aVar;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, d.f50489a, i10, t0.c.f50488a);
-        if (obtainStyledAttributes.hasValue(d.f50492d)) {
-            valueOf = obtainStyledAttributes.getColorStateList(d.f50492d);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, d.f48421a, i10, t0.c.f48420a);
+        if (obtainStyledAttributes.hasValue(d.f48424d)) {
+            valueOf = obtainStyledAttributes.getColorStateList(d.f48424d);
         } else {
             TypedArray obtainStyledAttributes2 = getContext().obtainStyledAttributes(COLOR_BACKGROUND_ATTR);
             int color2 = obtainStyledAttributes2.getColor(0, 0);
@@ -211,26 +211,26 @@ public class CardView extends FrameLayout {
             float[] fArr = new float[3];
             Color.colorToHSV(color2, fArr);
             if (fArr[2] > 0.5f) {
-                color = getResources().getColor(t0.b.f50487b);
+                color = getResources().getColor(t0.b.f48419b);
             } else {
-                color = getResources().getColor(t0.b.f50486a);
+                color = getResources().getColor(t0.b.f48418a);
             }
             valueOf = ColorStateList.valueOf(color);
         }
         ColorStateList colorStateList = valueOf;
-        float dimension = obtainStyledAttributes.getDimension(d.f50493e, 0.0f);
-        float dimension2 = obtainStyledAttributes.getDimension(d.f50494f, 0.0f);
-        float dimension3 = obtainStyledAttributes.getDimension(d.f50495g, 0.0f);
-        this.mCompatPadding = obtainStyledAttributes.getBoolean(d.f50497i, false);
-        this.mPreventCornerOverlap = obtainStyledAttributes.getBoolean(d.f50496h, true);
-        int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(d.f50498j, 0);
-        rect.left = obtainStyledAttributes.getDimensionPixelSize(d.f50500l, dimensionPixelSize);
-        rect.top = obtainStyledAttributes.getDimensionPixelSize(d.f50502n, dimensionPixelSize);
-        rect.right = obtainStyledAttributes.getDimensionPixelSize(d.f50501m, dimensionPixelSize);
-        rect.bottom = obtainStyledAttributes.getDimensionPixelSize(d.f50499k, dimensionPixelSize);
+        float dimension = obtainStyledAttributes.getDimension(d.f48425e, 0.0f);
+        float dimension2 = obtainStyledAttributes.getDimension(d.f48426f, 0.0f);
+        float dimension3 = obtainStyledAttributes.getDimension(d.f48427g, 0.0f);
+        this.mCompatPadding = obtainStyledAttributes.getBoolean(d.f48429i, false);
+        this.mPreventCornerOverlap = obtainStyledAttributes.getBoolean(d.f48428h, true);
+        int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(d.f48430j, 0);
+        rect.left = obtainStyledAttributes.getDimensionPixelSize(d.f48432l, dimensionPixelSize);
+        rect.top = obtainStyledAttributes.getDimensionPixelSize(d.f48434n, dimensionPixelSize);
+        rect.right = obtainStyledAttributes.getDimensionPixelSize(d.f48433m, dimensionPixelSize);
+        rect.bottom = obtainStyledAttributes.getDimensionPixelSize(d.f48431k, dimensionPixelSize);
         float f10 = dimension2 > dimension3 ? dimension2 : dimension3;
-        this.mUserSetMinWidth = obtainStyledAttributes.getDimensionPixelSize(d.f50490b, 0);
-        this.mUserSetMinHeight = obtainStyledAttributes.getDimensionPixelSize(d.f50491c, 0);
+        this.mUserSetMinWidth = obtainStyledAttributes.getDimensionPixelSize(d.f48422b, 0);
+        this.mUserSetMinHeight = obtainStyledAttributes.getDimensionPixelSize(d.f48423c, 0);
         obtainStyledAttributes.recycle();
         IMPL.h(aVar, context, colorStateList, dimension, dimension2, f10);
     }

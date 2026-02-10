@@ -1,22 +1,28 @@
 package cu;
-
-import java.nio.charset.Charset;
-import kotlin.jvm.internal.Intrinsics;
-import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g {
+public enum g {
+    STRICT,
+    SMART,
+    LAX;
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final g f20270a = new g();
-
-    private g() {
+    public boolean a() {
+        if (this == LAX) {
+            return true;
+        }
+        return false;
     }
 
-    public static final String a(String username, String password, Charset charset) {
-        Intrinsics.checkNotNullParameter(username, "username");
-        Intrinsics.checkNotNullParameter(password, "password");
-        Intrinsics.checkNotNullParameter(charset, "charset");
-        String d10 = ByteString.f42341o.f(username + ':' + password, charset).d();
-        return "Basic " + d10;
+    public boolean d() {
+        if (this == SMART) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean e() {
+        if (this == STRICT) {
+            return true;
+        }
+        return false;
     }
 }

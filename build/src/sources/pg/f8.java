@@ -3,26 +3,26 @@ package pg;
 public final class f8 {
 
     /* renamed from: a  reason: collision with root package name */
-    private ma f43545a;
+    private ma f42003a;
 
     /* renamed from: b  reason: collision with root package name */
-    private e8 f43546b;
+    private e8 f42004b;
 
     /* renamed from: c  reason: collision with root package name */
-    private z7 f43547c;
+    private z7 f42005c;
 
     public final f8 c(e8 e8Var) {
-        this.f43546b = e8Var;
+        this.f42004b = e8Var;
         return this;
     }
 
     public final f8 d(z7 z7Var) {
-        this.f43547c = z7Var;
+        this.f42005c = z7Var;
         return this;
     }
 
     public final f8 e(ma maVar) {
-        this.f43545a = maVar;
+        this.f42003a = maVar;
         return this;
     }
 

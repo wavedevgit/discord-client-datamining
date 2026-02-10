@@ -6,41 +6,41 @@ import ff.a;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a.g f53734a;
+    public static final a.g f52763a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a.g f53735b;
+    public static final a.g f52764b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a.AbstractC0331a f53736c;
+    public static final a.AbstractC0316a f52765c;
 
     /* renamed from: d  reason: collision with root package name */
-    static final a.AbstractC0331a f53737d;
+    static final a.AbstractC0316a f52766d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final Scope f53738e;
+    public static final Scope f52767e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final Scope f53739f;
+    public static final Scope f52768f;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final ff.a f53740g;
+    public static final ff.a f52769g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final ff.a f53741h;
+    public static final ff.a f52770h;
 
     static {
         a.g gVar = new a.g();
-        f53734a = gVar;
+        f52763a = gVar;
         a.g gVar2 = new a.g();
-        f53735b = gVar2;
+        f52764b = gVar2;
         b bVar = new b();
-        f53736c = bVar;
+        f52765c = bVar;
         c cVar = new c();
-        f53737d = cVar;
-        f53738e = new Scope("profile");
-        f53739f = new Scope("email");
-        f53740g = new ff.a("SignIn.API", bVar, gVar);
-        f53741h = new ff.a("SignIn.INTERNAL_API", cVar, gVar2);
+        f52766d = cVar;
+        f52767e = new Scope("profile");
+        f52768f = new Scope("email");
+        f52769g = new ff.a("SignIn.API", bVar, gVar);
+        f52770h = new ff.a("SignIn.INTERNAL_API", cVar, gVar2);
     }
 }

@@ -8,22 +8,22 @@ import com.facebook.react.bridge.ReactContext;
 class t0 extends c0 {
 
     /* renamed from: q  reason: collision with root package name */
-    private float f17174q;
+    private float f17923q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f17175r;
+    private float f17924r;
 
     /* renamed from: s  reason: collision with root package name */
-    private float f17176s;
+    private float f17925s;
 
     /* renamed from: t  reason: collision with root package name */
-    private float f17177t;
+    private float f17926t;
 
     /* renamed from: u  reason: collision with root package name */
-    private String f17178u;
+    private String f17927u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f17179v;
+    private int f17928v;
 
     public t0(ReactContext reactContext) {
         super(reactContext);
@@ -36,43 +36,43 @@ class t0 extends c0 {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void n(Canvas canvas, Paint paint, float f10, float f11, float f12) {
-        if (this.f17178u != null) {
-            float f13 = this.f17174q;
+    public void o(Canvas canvas, Paint paint, float f10, float f11, float f12) {
+        if (this.f17927u != null) {
+            float f13 = this.f17923q;
             float f14 = this.mScale;
-            float f15 = this.f17175r;
-            canvas.concat(l1.a(new RectF(f13 * f14, f15 * f14, (f13 + this.f17176s) * f14, (f15 + this.f17177t) * f14), new RectF(0.0f, 0.0f, f11, f12), this.f17178u, this.f17179v));
+            float f15 = this.f17924r;
+            canvas.concat(l1.a(new RectF(f13 * f14, f15 * f14, (f13 + this.f17925s) * f14, (f15 + this.f17926t) * f14), new RectF(0.0f, 0.0f, f11, f12), this.f17927u, this.f17928v));
             super.draw(canvas, paint, f10);
         }
     }
 
     public void setAlign(String str) {
-        this.f17178u = str;
+        this.f17927u = str;
         invalidate();
     }
 
     public void setMeetOrSlice(int i10) {
-        this.f17179v = i10;
+        this.f17928v = i10;
         invalidate();
     }
 
     public void setMinX(float f10) {
-        this.f17174q = f10;
+        this.f17923q = f10;
         invalidate();
     }
 
     public void setMinY(float f10) {
-        this.f17175r = f10;
+        this.f17924r = f10;
         invalidate();
     }
 
     public void setVbHeight(float f10) {
-        this.f17177t = f10;
+        this.f17926t = f10;
         invalidate();
     }
 
     public void setVbWidth(float f10) {
-        this.f17176s = f10;
+        this.f17925s = f10;
         invalidate();
     }
 }

@@ -12,50 +12,50 @@ import java.util.concurrent.ConcurrentMap;
 public final class p implements Comparable, k, Serializable {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final ConcurrentMap f38774o;
+    private static final ConcurrentMap f37778o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final BigDecimal f38775p;
+    private static final BigDecimal f37779p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final BigDecimal f38776q;
+    private static final BigDecimal f37780q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final BigDecimal f38777r;
+    private static final BigDecimal f37781r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final BigDecimal f38778s;
+    private static final BigDecimal f37782s;
     private static final long serialVersionUID = -1410512619471503090L;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final BigDecimal f38779t;
+    private static final BigDecimal f37783t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final BigDecimal f38780u;
+    private static final BigDecimal f37784u;
 
     /* renamed from: v  reason: collision with root package name */
-    public static final p f38781v;
+    public static final p f37785v;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient int f38782d;
+    private final transient int f37786d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient int f38783e;
+    private final transient int f37787e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient String f38784i;
+    private final transient String f37788i;
 
     static {
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
-        f38774o = concurrentHashMap;
-        f38775p = new BigDecimal(60);
-        f38776q = new BigDecimal(3600);
-        f38777r = new BigDecimal(-180);
-        f38778s = new BigDecimal(180);
-        f38779t = new BigDecimal(240);
-        f38780u = new BigDecimal(1000000000);
+        f37778o = concurrentHashMap;
+        f37779p = new BigDecimal(60);
+        f37780q = new BigDecimal(3600);
+        f37781r = new BigDecimal(-180);
+        f37782s = new BigDecimal(180);
+        f37783t = new BigDecimal(240);
+        f37784u = new BigDecimal(1000000000);
         p pVar = new p(0, 0);
-        f38781v = pVar;
+        f37785v = pVar;
         concurrentHashMap.put(0, pVar);
     }
 
@@ -118,16 +118,16 @@ public final class p implements Comparable, k, Serializable {
                 sb2.append(valueOf);
             }
         }
-        this.f38784i = sb2.toString();
-        this.f38782d = i10;
-        this.f38783e = i11;
+        this.f37788i = sb2.toString();
+        this.f37786d = i10;
+        this.f37787e = i11;
     }
 
     public static p d(BigDecimal bigDecimal) {
-        if (bigDecimal.compareTo(f38778s) <= 0 && bigDecimal.compareTo(f38777r) >= 0) {
-            BigDecimal multiply = bigDecimal.multiply(f38779t);
+        if (bigDecimal.compareTo(f37782s) <= 0 && bigDecimal.compareTo(f37781r) >= 0) {
+            BigDecimal multiply = bigDecimal.multiply(f37783t);
             BigDecimal scale = multiply.setScale(0, RoundingMode.DOWN);
-            BigDecimal multiply2 = multiply.subtract(scale).setScale(9, RoundingMode.HALF_UP).multiply(f38780u);
+            BigDecimal multiply2 = multiply.subtract(scale).setScale(9, RoundingMode.HALF_UP).multiply(f37784u);
             int intValueExact = scale.intValueExact();
             int intValueExact2 = multiply2.intValueExact();
             if (intValueExact2 == 0) {
@@ -151,10 +151,10 @@ public final class p implements Comparable, k, Serializable {
                     if (Double.compare(d10, 0.0d) >= 0 && Double.compare(d10, 60.0d) < 0) {
                         BigDecimal valueOf = BigDecimal.valueOf(i10);
                         if (i11 != 0) {
-                            valueOf = valueOf.add(BigDecimal.valueOf(i11).setScale(15, RoundingMode.UNNECESSARY).divide(f38775p, RoundingMode.HALF_UP));
+                            valueOf = valueOf.add(BigDecimal.valueOf(i11).setScale(15, RoundingMode.UNNECESSARY).divide(f37779p, RoundingMode.HALF_UP));
                         }
                         if (d10 != 0.0d) {
-                            valueOf = valueOf.add(BigDecimal.valueOf(d10).setScale(15, RoundingMode.FLOOR).divide(f38776q, RoundingMode.HALF_UP));
+                            valueOf = valueOf.add(BigDecimal.valueOf(d10).setScale(15, RoundingMode.FLOOR).divide(f37780q, RoundingMode.HALF_UP));
                         }
                         if (fVar == f.BEHIND_UTC) {
                             valueOf = valueOf.negate();
@@ -211,11 +211,11 @@ public final class p implements Comparable, k, Serializable {
             return new p(i10, i11);
         }
         if (i10 == 0) {
-            return f38781v;
+            return f37785v;
         }
         if (i10 % 900 == 0) {
             Integer valueOf = Integer.valueOf(i10);
-            ConcurrentMap concurrentMap = f38774o;
+            ConcurrentMap concurrentMap = f37778o;
             p pVar = (p) concurrentMap.get(valueOf);
             if (pVar == null) {
                 concurrentMap.putIfAbsent(valueOf, new p(i10, 0));
@@ -261,10 +261,10 @@ public final class p implements Comparable, k, Serializable {
 
     @Override // net.time4j.tz.k
     public String a() {
-        if (this.f38782d == 0 && this.f38783e == 0) {
+        if (this.f37786d == 0 && this.f37787e == 0) {
             return "Z";
         }
-        return "UTC" + this.f38784i;
+        return "UTC" + this.f37788i;
     }
 
     public boolean equals(Object obj) {
@@ -273,7 +273,7 @@ public final class p implements Comparable, k, Serializable {
         }
         if (obj instanceof p) {
             p pVar = (p) obj;
-            if (this.f38782d == pVar.f38782d && this.f38783e == pVar.f38783e) {
+            if (this.f37786d == pVar.f37786d && this.f37787e == pVar.f37787e) {
                 return true;
             }
         }
@@ -283,15 +283,15 @@ public final class p implements Comparable, k, Serializable {
     @Override // java.lang.Comparable
     /* renamed from: f */
     public int compareTo(p pVar) {
-        int i10 = this.f38782d;
-        int i11 = pVar.f38782d;
+        int i10 = this.f37786d;
+        int i11 = pVar.f37786d;
         if (i10 < i11) {
             return -1;
         }
         if (i10 > i11) {
             return 1;
         }
-        int i12 = this.f38783e - pVar.f38783e;
+        int i12 = this.f37787e - pVar.f37787e;
         if (i12 < 0) {
             return -1;
         }
@@ -302,27 +302,27 @@ public final class p implements Comparable, k, Serializable {
     }
 
     public int h() {
-        return Math.abs(this.f38782d) / 3600;
+        return Math.abs(this.f37786d) / 3600;
     }
 
     public int hashCode() {
-        return (~this.f38782d) + (this.f38783e % 64000);
+        return (~this.f37786d) + (this.f37787e % 64000);
     }
 
     public int i() {
-        return (Math.abs(this.f38782d) / 60) % 60;
+        return (Math.abs(this.f37786d) / 60) % 60;
     }
 
     public int k() {
-        return Math.abs(this.f38782d) % 60;
+        return Math.abs(this.f37786d) % 60;
     }
 
     public int l() {
-        return this.f38783e;
+        return this.f37787e;
     }
 
     public int m() {
-        return this.f38782d;
+        return this.f37786d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -331,7 +331,7 @@ public final class p implements Comparable, k, Serializable {
     }
 
     public f o() {
-        if (this.f38782d >= 0 && this.f38783e >= 0) {
+        if (this.f37786d >= 0 && this.f37787e >= 0) {
             return f.AHEAD_OF_UTC;
         }
         return f.BEHIND_UTC;
@@ -339,7 +339,7 @@ public final class p implements Comparable, k, Serializable {
 
     public String q(Locale locale) {
         boolean z10;
-        if (this.f38782d == 0 && this.f38783e == 0) {
+        if (this.f37786d == 0 && this.f37787e == 0) {
             z10 = true;
         } else {
             z10 = false;
@@ -355,6 +355,6 @@ public final class p implements Comparable, k, Serializable {
     }
 
     public String toString() {
-        return this.f38784i;
+        return this.f37788i;
     }
 }

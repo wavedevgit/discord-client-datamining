@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class Lifecycle {
 
     /* renamed from: a  reason: collision with root package name */
-    private b f4542a = new b(null);
+    private b f4552a = new b(null);
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -16,37 +16,37 @@ public abstract class Lifecycle {
     public static final class State {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final State f4543d = new State("DESTROYED", 0);
+        public static final State f4553d = new State("DESTROYED", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final State f4544e = new State("INITIALIZED", 1);
+        public static final State f4554e = new State("INITIALIZED", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final State f4545i = new State("CREATED", 2);
+        public static final State f4555i = new State("CREATED", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final State f4546o = new State("STARTED", 3);
+        public static final State f4556o = new State("STARTED", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        public static final State f4547p = new State("RESUMED", 4);
+        public static final State f4557p = new State("RESUMED", 4);
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ State[] f4548q;
+        private static final /* synthetic */ State[] f4558q;
 
         /* renamed from: r  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f4549r;
+        private static final /* synthetic */ EnumEntries f4559r;
 
         static {
             State[] a10 = a();
-            f4548q = a10;
-            f4549r = yr.a.a(a10);
+            f4558q = a10;
+            f4559r = hs.a.a(a10);
         }
 
         private State(String str, int i10) {
         }
 
         private static final /* synthetic */ State[] a() {
-            return new State[]{f4543d, f4544e, f4545i, f4546o, f4547p};
+            return new State[]{f4553d, f4554e, f4555i, f4556o, f4557p};
         }
 
         public static State valueOf(String str) {
@@ -54,7 +54,7 @@ public abstract class Lifecycle {
         }
 
         public static State[] values() {
-            return (State[]) f4548q.clone();
+            return (State[]) f4558q.clone();
         }
 
         public final boolean d(State state) {
@@ -73,7 +73,7 @@ public abstract class Lifecycle {
         private static final /* synthetic */ EnumEntries $ENTRIES;
         private static final /* synthetic */ a[] $VALUES;
         @NotNull
-        public static final C0056a Companion;
+        public static final C0052a Companion;
         public static final a ON_CREATE = new a("ON_CREATE", 0);
         public static final a ON_START = new a("ON_START", 1);
         public static final a ON_RESUME = new a("ON_RESUME", 2);
@@ -84,48 +84,48 @@ public abstract class Lifecycle {
 
         /* renamed from: androidx.lifecycle.Lifecycle$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0056a {
+        public static final class C0052a {
 
             /* renamed from: androidx.lifecycle.Lifecycle$a$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-            public /* synthetic */ class C0057a {
+            public /* synthetic */ class C0053a {
 
                 /* renamed from: a  reason: collision with root package name */
-                public static final /* synthetic */ int[] f4550a;
+                public static final /* synthetic */ int[] f4560a;
 
                 static {
                     int[] iArr = new int[State.values().length];
                     try {
-                        iArr[State.f4545i.ordinal()] = 1;
+                        iArr[State.f4555i.ordinal()] = 1;
                     } catch (NoSuchFieldError unused) {
                     }
                     try {
-                        iArr[State.f4546o.ordinal()] = 2;
+                        iArr[State.f4556o.ordinal()] = 2;
                     } catch (NoSuchFieldError unused2) {
                     }
                     try {
-                        iArr[State.f4547p.ordinal()] = 3;
+                        iArr[State.f4557p.ordinal()] = 3;
                     } catch (NoSuchFieldError unused3) {
                     }
                     try {
-                        iArr[State.f4543d.ordinal()] = 4;
+                        iArr[State.f4553d.ordinal()] = 4;
                     } catch (NoSuchFieldError unused4) {
                     }
                     try {
-                        iArr[State.f4544e.ordinal()] = 5;
+                        iArr[State.f4554e.ordinal()] = 5;
                     } catch (NoSuchFieldError unused5) {
                     }
-                    f4550a = iArr;
+                    f4560a = iArr;
                 }
             }
 
-            public /* synthetic */ C0056a(DefaultConstructorMarker defaultConstructorMarker) {
+            public /* synthetic */ C0052a(DefaultConstructorMarker defaultConstructorMarker) {
                 this();
             }
 
             public final a a(State state) {
                 Intrinsics.checkNotNullParameter(state, "state");
-                int i10 = C0057a.f4550a[state.ordinal()];
+                int i10 = C0053a.f4560a[state.ordinal()];
                 if (i10 != 1) {
                     if (i10 != 2) {
                         if (i10 != 3) {
@@ -140,7 +140,7 @@ public abstract class Lifecycle {
 
             public final a b(State state) {
                 Intrinsics.checkNotNullParameter(state, "state");
-                int i10 = C0057a.f4550a[state.ordinal()];
+                int i10 = C0053a.f4560a[state.ordinal()];
                 if (i10 != 1) {
                     if (i10 != 2) {
                         if (i10 != 5) {
@@ -155,7 +155,7 @@ public abstract class Lifecycle {
 
             public final a c(State state) {
                 Intrinsics.checkNotNullParameter(state, "state");
-                int i10 = C0057a.f4550a[state.ordinal()];
+                int i10 = C0053a.f4560a[state.ordinal()];
                 if (i10 != 1) {
                     if (i10 != 2) {
                         if (i10 != 3) {
@@ -168,7 +168,7 @@ public abstract class Lifecycle {
                 return a.ON_CREATE;
             }
 
-            private C0056a() {
+            private C0052a() {
             }
         }
 
@@ -176,7 +176,7 @@ public abstract class Lifecycle {
         public /* synthetic */ class b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f4551a;
+            public static final /* synthetic */ int[] f4561a;
 
             static {
                 int[] iArr = new int[a.values().length];
@@ -208,15 +208,15 @@ public abstract class Lifecycle {
                     iArr[a.ON_ANY.ordinal()] = 7;
                 } catch (NoSuchFieldError unused7) {
                 }
-                f4551a = iArr;
+                f4561a = iArr;
             }
         }
 
         static {
             a[] a10 = a();
             $VALUES = a10;
-            $ENTRIES = yr.a.a(a10);
-            Companion = new C0056a(null);
+            $ENTRIES = hs.a.a(a10);
+            Companion = new C0052a(null);
         }
 
         private a(String str, int i10) {
@@ -243,21 +243,21 @@ public abstract class Lifecycle {
         }
 
         public final State e() {
-            switch (b.f4551a[ordinal()]) {
+            switch (b.f4561a[ordinal()]) {
                 case 1:
                 case 2:
-                    return State.f4545i;
+                    return State.f4555i;
                 case 3:
                 case 4:
-                    return State.f4546o;
+                    return State.f4556o;
                 case 5:
-                    return State.f4547p;
+                    return State.f4557p;
                 case 6:
-                    return State.f4543d;
+                    return State.f4553d;
                 case 7:
                     throw new IllegalArgumentException(this + " has no target state");
                 default:
-                    throw new rr.p();
+                    throw new as.p();
             }
         }
     }
@@ -267,7 +267,7 @@ public abstract class Lifecycle {
     public abstract State b();
 
     public final b c() {
-        return this.f4542a;
+        return this.f4552a;
     }
 
     public abstract void d(o oVar);

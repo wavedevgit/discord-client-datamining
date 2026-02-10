@@ -1,27 +1,60 @@
 package zo;
 
-import com.withpersona.sdk2.inquiry.FallbackMode;
+import android.os.Parcel;
+import android.os.Parcelable;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e implements cr.d {
+public final class e implements d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final c f56572a;
+    /* renamed from: d  reason: collision with root package name */
+    public static final e f56556d = new e();
+    @NotNull
+    public static final Parcelable.Creator<e> CREATOR = new a();
 
-    public e(c cVar) {
-        this.f56572a = cVar;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final e createFromParcel(Parcel parcel) {
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            parcel.readInt();
+            return e.f56556d;
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final e[] newArray(int i10) {
+            return new e[i10];
+        }
     }
 
-    public static e a(c cVar) {
-        return new e(cVar);
+    private e() {
     }
 
-    public static FallbackMode b(c cVar) {
-        return (FallbackMode) cr.g.d(cVar.b());
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: c */
-    public FallbackMode get() {
-        return b(this.f56572a);
+    public boolean equals(Object obj) {
+        if (this == obj || (obj instanceof e)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return 1462785890;
+    }
+
+    public String toString() {
+        return "HoldStillHint";
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeInt(1);
     }
 }

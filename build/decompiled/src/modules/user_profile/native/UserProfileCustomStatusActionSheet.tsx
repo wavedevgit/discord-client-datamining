@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileCustomStatusActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun62354: for (var _fun62354_ip = 0;;) switch (_fun62354_ip) {
+        _fun62407: for (var _fun62407_ip = 0;;) switch (_fun62407_ip) {
             case 0:
                 var1 = arg0;
                 var16 = var1.user;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var16;
                 var0 = function() { // Environment: var0
-                    _fun62355: for (var _fun62355_ip = 0;;) switch (_fun62355_ip) {
+                    _fun62408: for (var _fun62408_ip = 0;;) switch (_fun62408_ip) {
                         case 0:
                             var1 = _closure1_slot4;
                             var0 = var1.getCurrentUser;
@@ -124,8 +124,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var1 == var0;
                             var1 = undefined;
                             if (var2) {
-                                _fun62355_ip = 32;
-                                continue _fun62355
+                                _fun62408_ip = 32;
+                                continue _fun62408
                             }
                         case 27:
                             var1 = var0.id;
@@ -155,8 +155,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6.bind(var3)(var2);
                 var2 = var2.intl;
                 if (var1) {
-                    _fun62354_ip = 226;
-                    continue _fun62354
+                    _fun62407_ip = 226;
+                    continue _fun62407
                 }
             case 185:
                 var8 = var2.formatToPlainString;
@@ -167,8 +167,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var1.username = var9;
                 var5 = var8.bind(var2)(var5, var1);
-                _fun62354_ip = 258;
-                continue _fun62354;
+                _fun62407_ip = 258;
+                continue _fun62407;
             case 226:
                 var1 = var2.string;
                 var0 = var7[var0];
@@ -229,4 +229,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 7033, 4934, 33, 1297, 671, 566, 7791, 3960, 1234, 7793, 5786, 7045, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 7043, 4944, 33, 1297, 671, 566, 7801, 3960, 1234, 7803, 5796, 7055, 2]);

@@ -1,109 +1,44 @@
 package ru;
 
-import java.util.List;
-import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import okio.Sink;
-import okio.Source;
-import ru.c0;
+import okhttp3.MediaType;
+import okhttp3.ResponseBody;
+import okio.BufferedSource;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class h {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f49397a = new a(null);
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final h f49398b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final c0 f49399c;
+public final class h extends ResponseBody {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final h f49400d;
+    private final String f47769d;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    /* renamed from: e  reason: collision with root package name */
+    private final long f47770e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final BufferedSource f47771i;
+
+    public h(String str, long j10, BufferedSource source) {
+        Intrinsics.checkNotNullParameter(source, "source");
+        this.f47769d = str;
+        this.f47770e = j10;
+        this.f47771i = source;
+    }
+
+    @Override // okhttp3.ResponseBody
+    public long contentLength() {
+        return this.f47770e;
+    }
+
+    @Override // okhttp3.ResponseBody
+    public MediaType contentType() {
+        String str = this.f47769d;
+        if (str != null) {
+            return MediaType.f40297e.c(str);
         }
-
-        private a() {
-        }
+        return null;
     }
 
-    static {
-        h rVar;
-        try {
-            Class.forName("java.nio.file.Files");
-            rVar = new w();
-        } catch (ClassNotFoundException unused) {
-            rVar = new r();
-        }
-        f49398b = rVar;
-        c0.a aVar = c0.f49354e;
-        String property = System.getProperty("java.io.tmpdir");
-        Intrinsics.checkNotNullExpressionValue(property, "getProperty(...)");
-        f49399c = c0.a.e(aVar, property, false, 1, null);
-        ClassLoader classLoader = su.h.class.getClassLoader();
-        Intrinsics.checkNotNullExpressionValue(classLoader, "getClassLoader(...)");
-        f49400d = new su.h(classLoader, false, null, 4, null);
+    @Override // okhttp3.ResponseBody
+    public BufferedSource source() {
+        return this.f47771i;
     }
-
-    public final Sink a(c0 file) {
-        Intrinsics.checkNotNullParameter(file, "file");
-        return b(file, false);
-    }
-
-    public abstract Sink b(c0 c0Var, boolean z10);
-
-    public abstract void c(c0 c0Var, c0 c0Var2);
-
-    public final void d(c0 dir) {
-        Intrinsics.checkNotNullParameter(dir, "dir");
-        e(dir, false);
-    }
-
-    public final void e(c0 dir, boolean z10) {
-        Intrinsics.checkNotNullParameter(dir, "dir");
-        su.c.a(this, dir, z10);
-    }
-
-    public final void f(c0 dir) {
-        Intrinsics.checkNotNullParameter(dir, "dir");
-        g(dir, false);
-    }
-
-    public abstract void g(c0 c0Var, boolean z10);
-
-    public final void h(c0 path) {
-        Intrinsics.checkNotNullParameter(path, "path");
-        i(path, false);
-    }
-
-    public abstract void i(c0 c0Var, boolean z10);
-
-    public final boolean j(c0 path) {
-        Intrinsics.checkNotNullParameter(path, "path");
-        return su.c.b(this, path);
-    }
-
-    public abstract List k(c0 c0Var);
-
-    public final g l(c0 path) {
-        Intrinsics.checkNotNullParameter(path, "path");
-        return su.c.c(this, path);
-    }
-
-    public abstract g m(c0 c0Var);
-
-    public abstract f n(c0 c0Var);
-
-    public final Sink o(c0 file) {
-        Intrinsics.checkNotNullParameter(file, "file");
-        return p(file, false);
-    }
-
-    public abstract Sink p(c0 c0Var, boolean z10);
-
-    public abstract Source q(c0 c0Var);
 }

@@ -2159,13 +2159,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var3.error;
                         var1 = '[NATIVE] Start Profiling Failed';
                         var1 = var2.bind(var3)(var1, var4);
-                        _fun10274_ip = 144;
+                        _fun10274_ip = 145;
                         continue _fun10274;
                     case 128:
                         var2 = var3.log;
                         var1 = '[NATIVE] Start Profiling';
                         var1 = var2.bind(var3)(var1);
-                    case 144:
+                    case 145:
                         var0 = !var0;
                         var0 = !var0;
                         return var0;

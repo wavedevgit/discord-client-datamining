@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.TimeInterpolator;
 import android.animation.ValueAnimator;
 import android.graphics.drawable.Drawable;
+import android.os.SystemClock;
 import android.text.Editable;
 import android.view.MotionEvent;
 import android.view.View;
@@ -14,58 +15,53 @@ import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.Spinner;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import androidx.core.view.h0;
-import c2.c;
 import com.google.android.material.internal.CheckableImageButton;
 import kotlin.jvm.internal.LongCompanionObject;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class p extends s {
 
-    /* renamed from: s  reason: collision with root package name */
-    private static final boolean f15608s = true;
-
     /* renamed from: e  reason: collision with root package name */
-    private final int f15609e;
+    private final int f16358e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f15610f;
+    private final int f16359f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final TimeInterpolator f15611g;
+    private final TimeInterpolator f16360g;
 
     /* renamed from: h  reason: collision with root package name */
-    private AutoCompleteTextView f15612h;
+    private AutoCompleteTextView f16361h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final View.OnClickListener f15613i;
+    private final View.OnClickListener f16362i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final View.OnFocusChangeListener f15614j;
+    private final View.OnFocusChangeListener f16363j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final c.a f15615k;
+    private final AccessibilityManager.TouchExplorationStateChangeListener f16364k;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f15616l;
+    private boolean f16365l;
 
     /* renamed from: m  reason: collision with root package name */
-    private boolean f15617m;
+    private boolean f16366m;
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f15618n;
+    private boolean f16367n;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f15619o;
+    private long f16368o;
 
     /* renamed from: p  reason: collision with root package name */
-    private AccessibilityManager f15620p;
+    private AccessibilityManager f16369p;
 
     /* renamed from: q  reason: collision with root package name */
-    private ValueAnimator f15621q;
+    private ValueAnimator f16370q;
 
     /* renamed from: r  reason: collision with root package name */
-    private ValueAnimator f15622r;
+    private ValueAnimator f16371r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -76,35 +72,35 @@ public class p extends s {
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
             p.this.r();
-            p.this.f15622r.start();
+            p.this.f16371r.start();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(r rVar) {
         super(rVar);
-        this.f15613i = new View.OnClickListener() { // from class: com.google.android.material.textfield.l
+        this.f16362i = new View.OnClickListener() { // from class: com.google.android.material.textfield.l
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 p.this.J();
             }
         };
-        this.f15614j = new View.OnFocusChangeListener() { // from class: com.google.android.material.textfield.m
+        this.f16363j = new View.OnFocusChangeListener() { // from class: com.google.android.material.textfield.m
             @Override // android.view.View.OnFocusChangeListener
             public final void onFocusChange(View view, boolean z10) {
                 p.y(p.this, view, z10);
             }
         };
-        this.f15615k = new c.a() { // from class: com.google.android.material.textfield.n
-            @Override // c2.c.a
+        this.f16364k = new AccessibilityManager.TouchExplorationStateChangeListener() { // from class: com.google.android.material.textfield.n
+            @Override // android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener
             public final void onTouchExplorationStateChanged(boolean z10) {
                 p.w(p.this, z10);
             }
         };
-        this.f15619o = LongCompanionObject.MAX_VALUE;
-        this.f15610f = mh.g.f(rVar.getContext(), bh.b.L, 67);
-        this.f15609e = mh.g.f(rVar.getContext(), bh.b.L, 50);
-        this.f15611g = mh.g.g(rVar.getContext(), bh.b.Q, ch.a.f7595a);
+        this.f16368o = LongCompanionObject.MAX_VALUE;
+        this.f16359f = oh.g.f(rVar.getContext(), bh.b.P, 67);
+        this.f16358e = oh.g.f(rVar.getContext(), bh.b.P, 50);
+        this.f16360g = oh.g.g(rVar.getContext(), bh.b.U, ch.a.f8276a);
     }
 
     public static /* synthetic */ void A(p pVar) {
@@ -121,7 +117,7 @@ public class p extends s {
 
     private ValueAnimator E(int i10, float... fArr) {
         ValueAnimator ofFloat = ValueAnimator.ofFloat(fArr);
-        ofFloat.setInterpolator(this.f15611g);
+        ofFloat.setInterpolator(this.f16360g);
         ofFloat.setDuration(i10);
         ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.material.textfield.i
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
@@ -133,108 +129,101 @@ public class p extends s {
     }
 
     private void F() {
-        this.f15622r = E(this.f15610f, 0.0f, 1.0f);
-        ValueAnimator E = E(this.f15609e, 1.0f, 0.0f);
-        this.f15621q = E;
+        this.f16371r = E(this.f16359f, 0.0f, 1.0f);
+        ValueAnimator E = E(this.f16358e, 1.0f, 0.0f);
+        this.f16370q = E;
         E.addListener(new a());
     }
 
     private boolean G() {
-        long currentTimeMillis = System.currentTimeMillis() - this.f15619o;
-        if (currentTimeMillis >= 0 && currentTimeMillis <= 300) {
+        long uptimeMillis = SystemClock.uptimeMillis() - this.f16368o;
+        if (uptimeMillis >= 0 && uptimeMillis <= 300) {
             return false;
         }
         return true;
     }
 
     private void H(boolean z10) {
-        if (this.f15618n != z10) {
-            this.f15618n = z10;
-            this.f15622r.cancel();
-            this.f15621q.start();
+        if (this.f16367n != z10) {
+            this.f16367n = z10;
+            this.f16371r.cancel();
+            this.f16370q.start();
         }
     }
 
     private void I() {
-        this.f15612h.setOnTouchListener(new View.OnTouchListener() { // from class: com.google.android.material.textfield.j
+        this.f16361h.setOnTouchListener(new View.OnTouchListener() { // from class: com.google.android.material.textfield.j
             @Override // android.view.View.OnTouchListener
             public final boolean onTouch(View view, MotionEvent motionEvent) {
                 return p.z(p.this, view, motionEvent);
             }
         });
-        if (f15608s) {
-            this.f15612h.setOnDismissListener(new AutoCompleteTextView.OnDismissListener() { // from class: com.google.android.material.textfield.k
-                @Override // android.widget.AutoCompleteTextView.OnDismissListener
-                public final void onDismiss() {
-                    p.A(p.this);
-                }
-            });
-        }
-        this.f15612h.setThreshold(0);
+        this.f16361h.setOnDismissListener(new AutoCompleteTextView.OnDismissListener() { // from class: com.google.android.material.textfield.k
+            @Override // android.widget.AutoCompleteTextView.OnDismissListener
+            public final void onDismiss() {
+                p.A(p.this);
+            }
+        });
+        this.f16361h.setThreshold(0);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void J() {
-        if (this.f15612h == null) {
+        if (this.f16361h == null) {
             return;
         }
         if (G()) {
-            this.f15617m = false;
+            this.f16366m = false;
         }
-        if (!this.f15617m) {
-            if (f15608s) {
-                H(!this.f15618n);
-            } else {
-                this.f15618n = !this.f15618n;
-                r();
-            }
-            if (this.f15618n) {
-                this.f15612h.requestFocus();
-                this.f15612h.showDropDown();
+        if (!this.f16366m) {
+            H(!this.f16367n);
+            if (this.f16367n) {
+                this.f16361h.requestFocus();
+                this.f16361h.showDropDown();
                 return;
             }
-            this.f15612h.dismissDropDown();
+            this.f16361h.dismissDropDown();
             return;
         }
-        this.f15617m = false;
+        this.f16366m = false;
     }
 
     private void K() {
-        this.f15617m = true;
-        this.f15619o = System.currentTimeMillis();
+        this.f16366m = true;
+        this.f16368o = SystemClock.uptimeMillis();
     }
 
     public static /* synthetic */ void v(p pVar) {
-        boolean isPopupShowing = pVar.f15612h.isPopupShowing();
+        boolean isPopupShowing = pVar.f16361h.isPopupShowing();
         pVar.H(isPopupShowing);
-        pVar.f15617m = isPopupShowing;
+        pVar.f16366m = isPopupShowing;
     }
 
     public static /* synthetic */ void w(p pVar, boolean z10) {
         int i10;
-        AutoCompleteTextView autoCompleteTextView = pVar.f15612h;
+        AutoCompleteTextView autoCompleteTextView = pVar.f16361h;
         if (autoCompleteTextView != null && !q.a(autoCompleteTextView)) {
-            CheckableImageButton checkableImageButton = pVar.f15649d;
+            CheckableImageButton checkableImageButton = pVar.f16398d;
             if (z10) {
                 i10 = 2;
             } else {
                 i10 = 1;
             }
-            h0.x0(checkableImageButton, i10);
+            checkableImageButton.setImportantForAccessibility(i10);
         }
     }
 
     public static /* synthetic */ void x(p pVar, ValueAnimator valueAnimator) {
         pVar.getClass();
-        pVar.f15649d.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
+        pVar.f16398d.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
     }
 
     public static /* synthetic */ void y(p pVar, View view, boolean z10) {
-        pVar.f15616l = z10;
+        pVar.f16365l = z10;
         pVar.r();
         if (!z10) {
             pVar.H(false);
-            pVar.f15617m = false;
+            pVar.f16366m = false;
         }
     }
 
@@ -242,7 +231,7 @@ public class p extends s {
         pVar.getClass();
         if (motionEvent.getAction() == 1) {
             if (pVar.G()) {
-                pVar.f15617m = false;
+                pVar.f16366m = false;
             }
             pVar.J();
             pVar.K();
@@ -252,10 +241,10 @@ public class p extends s {
 
     @Override // com.google.android.material.textfield.s
     public void a(Editable editable) {
-        if (this.f15620p.isTouchExplorationEnabled() && q.a(this.f15612h) && !this.f15649d.hasFocus()) {
-            this.f15612h.dismissDropDown();
+        if (this.f16369p.isTouchExplorationEnabled() && q.a(this.f16361h) && !this.f16398d.hasFocus()) {
+            this.f16361h.dismissDropDown();
         }
-        this.f15612h.post(new Runnable() { // from class: com.google.android.material.textfield.o
+        this.f16361h.post(new Runnable() { // from class: com.google.android.material.textfield.o
             @Override // java.lang.Runnable
             public final void run() {
                 p.v(p.this);
@@ -266,33 +255,30 @@ public class p extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public int c() {
-        return bh.i.f6768g;
+        return bh.j.f6906g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public int d() {
-        if (f15608s) {
-            return bh.e.f6704h;
-        }
-        return bh.e.f6705i;
+        return bh.e.f6833h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public View.OnFocusChangeListener e() {
-        return this.f15614j;
+        return this.f16363j;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public View.OnClickListener f() {
-        return this.f15613i;
+        return this.f16362i;
     }
 
     @Override // com.google.android.material.textfield.s
-    public c.a h() {
-        return this.f15615k;
+    public AccessibilityManager.TouchExplorationStateChangeListener h() {
+        return this.f16364k;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -310,7 +296,7 @@ public class p extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public boolean k() {
-        return this.f15616l;
+        return this.f16365l;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -322,23 +308,23 @@ public class p extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public boolean m() {
-        return this.f15618n;
+        return this.f16367n;
     }
 
     @Override // com.google.android.material.textfield.s
     public void n(EditText editText) {
-        this.f15612h = D(editText);
+        this.f16361h = D(editText);
         I();
-        this.f15646a.setErrorIconDrawable((Drawable) null);
-        if (!q.a(editText) && this.f15620p.isTouchExplorationEnabled()) {
-            h0.x0(this.f15649d, 2);
+        this.f16395a.setErrorIconDrawable((Drawable) null);
+        if (!q.a(editText) && this.f16369p.isTouchExplorationEnabled()) {
+            this.f16398d.setImportantForAccessibility(2);
         }
-        this.f15646a.setEndIconVisible(true);
+        this.f16395a.setEndIconVisible(true);
     }
 
     @Override // com.google.android.material.textfield.s
     public void o(View view, AccessibilityNodeInfoCompat accessibilityNodeInfoCompat) {
-        if (!q.a(this.f15612h)) {
+        if (!q.a(this.f16361h)) {
             accessibilityNodeInfoCompat.w0(Spinner.class.getName());
         }
         if (accessibilityNodeInfoCompat.g0()) {
@@ -349,8 +335,8 @@ public class p extends s {
     @Override // com.google.android.material.textfield.s
     public void p(View view, AccessibilityEvent accessibilityEvent) {
         boolean z10;
-        if (this.f15620p.isEnabled() && !q.a(this.f15612h)) {
-            if ((accessibilityEvent.getEventType() == 32768 || accessibilityEvent.getEventType() == 8) && this.f15618n && !this.f15612h.isPopupShowing()) {
+        if (this.f16369p.isEnabled() && !q.a(this.f16361h)) {
+            if ((accessibilityEvent.getEventType() == 32768 || accessibilityEvent.getEventType() == 8) && this.f16367n && !this.f16361h.isPopupShowing()) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -366,7 +352,7 @@ public class p extends s {
     @Override // com.google.android.material.textfield.s
     public void s() {
         F();
-        this.f15620p = (AccessibilityManager) this.f15648c.getSystemService("accessibility");
+        this.f16369p = (AccessibilityManager) this.f16397c.getSystemService("accessibility");
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -378,12 +364,10 @@ public class p extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public void u() {
-        AutoCompleteTextView autoCompleteTextView = this.f15612h;
+        AutoCompleteTextView autoCompleteTextView = this.f16361h;
         if (autoCompleteTextView != null) {
             autoCompleteTextView.setOnTouchListener(null);
-            if (f15608s) {
-                this.f15612h.setOnDismissListener(null);
-            }
+            this.f16361h.setOnDismissListener(null);
         }
     }
 }

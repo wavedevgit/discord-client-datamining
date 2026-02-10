@@ -17,57 +17,57 @@ import java.util.concurrent.ExecutionException;
 public class u implements androidx.work.impl.foreground.a {
 
     /* renamed from: l  reason: collision with root package name */
-    private static final String f5860l = k4.m.i("Processor");
+    private static final String f5870l = k4.m.i("Processor");
 
     /* renamed from: b  reason: collision with root package name */
-    private Context f5862b;
+    private Context f5872b;
 
     /* renamed from: c  reason: collision with root package name */
-    private androidx.work.a f5863c;
+    private androidx.work.a f5873c;
 
     /* renamed from: d  reason: collision with root package name */
-    private r4.b f5864d;
+    private r4.b f5874d;
 
     /* renamed from: e  reason: collision with root package name */
-    private WorkDatabase f5865e;
+    private WorkDatabase f5875e;
 
     /* renamed from: g  reason: collision with root package name */
-    private Map f5867g = new HashMap();
+    private Map f5877g = new HashMap();
 
     /* renamed from: f  reason: collision with root package name */
-    private Map f5866f = new HashMap();
+    private Map f5876f = new HashMap();
 
     /* renamed from: i  reason: collision with root package name */
-    private Set f5869i = new HashSet();
+    private Set f5879i = new HashSet();
 
     /* renamed from: j  reason: collision with root package name */
-    private final List f5870j = new ArrayList();
+    private final List f5880j = new ArrayList();
 
     /* renamed from: a  reason: collision with root package name */
-    private PowerManager.WakeLock f5861a = null;
+    private PowerManager.WakeLock f5871a = null;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Object f5871k = new Object();
+    private final Object f5881k = new Object();
 
     /* renamed from: h  reason: collision with root package name */
-    private Map f5868h = new HashMap();
+    private Map f5878h = new HashMap();
 
     public u(Context context, androidx.work.a aVar, r4.b bVar, WorkDatabase workDatabase) {
-        this.f5862b = context;
-        this.f5863c = aVar;
-        this.f5864d = bVar;
-        this.f5865e = workDatabase;
+        this.f5872b = context;
+        this.f5873c = aVar;
+        this.f5874d = bVar;
+        this.f5875e = workDatabase;
     }
 
     public static /* synthetic */ p4.u b(u uVar, ArrayList arrayList, String str) {
-        arrayList.addAll(uVar.f5865e.I().a(str));
-        return uVar.f5865e.H().i(str);
+        arrayList.addAll(uVar.f5875e.I().a(str));
+        return uVar.f5875e.H().i(str);
     }
 
     public static /* synthetic */ void c(u uVar, p4.m mVar, boolean z10) {
-        synchronized (uVar.f5871k) {
+        synchronized (uVar.f5881k) {
             try {
-                for (f fVar : uVar.f5870j) {
+                for (f fVar : uVar.f5880j) {
                     fVar.b(mVar, z10);
                 }
             } catch (Throwable th2) {
@@ -89,16 +89,16 @@ public class u implements androidx.work.impl.foreground.a {
 
     private t0 f(String str) {
         boolean z10;
-        t0 t0Var = (t0) this.f5866f.remove(str);
+        t0 t0Var = (t0) this.f5876f.remove(str);
         if (t0Var != null) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (!z10) {
-            t0Var = (t0) this.f5867g.remove(str);
+            t0Var = (t0) this.f5877g.remove(str);
         }
-        this.f5868h.remove(str);
+        this.f5878h.remove(str);
         if (z10) {
             r();
         }
@@ -106,9 +106,9 @@ public class u implements androidx.work.impl.foreground.a {
     }
 
     private t0 h(String str) {
-        t0 t0Var = (t0) this.f5866f.get(str);
+        t0 t0Var = (t0) this.f5876f.get(str);
         if (t0Var == null) {
-            return (t0) this.f5867g.get(str);
+            return (t0) this.f5877g.get(str);
         }
         return t0Var;
     }
@@ -117,18 +117,18 @@ public class u implements androidx.work.impl.foreground.a {
         if (t0Var != null) {
             t0Var.g(i10);
             k4.m e10 = k4.m.e();
-            String str2 = f5860l;
+            String str2 = f5870l;
             e10.a(str2, "WorkerWrapper interrupted for " + str);
             return true;
         }
         k4.m e11 = k4.m.e();
-        String str3 = f5860l;
+        String str3 = f5870l;
         e11.a(str3, "WorkerWrapper could not be found for " + str);
         return false;
     }
 
     private void l(t0 t0Var, boolean z10) {
-        synchronized (this.f5871k) {
+        synchronized (this.f5881k) {
             try {
                 p4.m d10 = t0Var.d();
                 String b10 = d10.b();
@@ -136,9 +136,9 @@ public class u implements androidx.work.impl.foreground.a {
                     f(b10);
                 }
                 k4.m e10 = k4.m.e();
-                String str = f5860l;
+                String str = f5870l;
                 e10.a(str, getClass().getSimpleName() + " " + b10 + " executed; reschedule = " + z10);
-                for (f fVar : this.f5870j) {
+                for (f fVar : this.f5880j) {
                     fVar.b(d10, z10);
                 }
             } catch (Throwable th2) {
@@ -148,7 +148,7 @@ public class u implements androidx.work.impl.foreground.a {
     }
 
     private void n(final p4.m mVar, final boolean z10) {
-        this.f5864d.a().execute(new Runnable() { // from class: androidx.work.impl.t
+        this.f5874d.a().execute(new Runnable() { // from class: androidx.work.impl.t
             @Override // java.lang.Runnable
             public final void run() {
                 u.c(u.this, mVar, z10);
@@ -157,14 +157,14 @@ public class u implements androidx.work.impl.foreground.a {
     }
 
     private void r() {
-        synchronized (this.f5871k) {
+        synchronized (this.f5881k) {
             try {
-                if (this.f5866f.isEmpty()) {
-                    this.f5862b.startService(androidx.work.impl.foreground.b.g(this.f5862b));
-                    PowerManager.WakeLock wakeLock = this.f5861a;
+                if (this.f5876f.isEmpty()) {
+                    this.f5872b.startService(androidx.work.impl.foreground.b.g(this.f5872b));
+                    PowerManager.WakeLock wakeLock = this.f5871a;
                     if (wakeLock != null) {
                         wakeLock.release();
-                        this.f5861a = null;
+                        this.f5871a = null;
                     }
                 }
             } catch (Throwable th2) {
@@ -175,20 +175,20 @@ public class u implements androidx.work.impl.foreground.a {
 
     @Override // androidx.work.impl.foreground.a
     public void a(String str, k4.g gVar) {
-        synchronized (this.f5871k) {
+        synchronized (this.f5881k) {
             try {
                 k4.m e10 = k4.m.e();
-                String str2 = f5860l;
+                String str2 = f5870l;
                 e10.f(str2, "Moving WorkSpec (" + str + ") to the foreground");
-                t0 t0Var = (t0) this.f5867g.remove(str);
+                t0 t0Var = (t0) this.f5877g.remove(str);
                 if (t0Var != null) {
-                    if (this.f5861a == null) {
-                        PowerManager.WakeLock b10 = q4.t.b(this.f5862b, "ProcessorForegroundLck");
-                        this.f5861a = b10;
+                    if (this.f5871a == null) {
+                        PowerManager.WakeLock b10 = q4.t.b(this.f5872b, "ProcessorForegroundLck");
+                        this.f5871a = b10;
                         b10.acquire();
                     }
-                    this.f5866f.put(str, t0Var);
-                    androidx.core.content.a.p(this.f5862b, androidx.work.impl.foreground.b.f(this.f5862b, t0Var.d(), gVar));
+                    this.f5876f.put(str, t0Var);
+                    androidx.core.content.a.p(this.f5872b, androidx.work.impl.foreground.b.f(this.f5872b, t0Var.d(), gVar));
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -197,13 +197,13 @@ public class u implements androidx.work.impl.foreground.a {
     }
 
     public void e(f fVar) {
-        synchronized (this.f5871k) {
-            this.f5870j.add(fVar);
+        synchronized (this.f5881k) {
+            this.f5880j.add(fVar);
         }
     }
 
     public p4.u g(String str) {
-        synchronized (this.f5871k) {
+        synchronized (this.f5881k) {
             try {
                 t0 h10 = h(str);
                 if (h10 != null) {
@@ -218,15 +218,15 @@ public class u implements androidx.work.impl.foreground.a {
 
     public boolean j(String str) {
         boolean contains;
-        synchronized (this.f5871k) {
-            contains = this.f5869i.contains(str);
+        synchronized (this.f5881k) {
+            contains = this.f5879i.contains(str);
         }
         return contains;
     }
 
     public boolean k(String str) {
         boolean z10;
-        synchronized (this.f5871k) {
+        synchronized (this.f5881k) {
             if (h(str) != null) {
                 z10 = true;
             } else {
@@ -237,8 +237,8 @@ public class u implements androidx.work.impl.foreground.a {
     }
 
     public void m(f fVar) {
-        synchronized (this.f5871k) {
-            this.f5870j.remove(fVar);
+        synchronized (this.f5881k) {
+            this.f5880j.remove(fVar);
         }
     }
 
@@ -251,7 +251,7 @@ public class u implements androidx.work.impl.foreground.a {
         p4.m a10 = a0Var.a();
         final String b10 = a10.b();
         final ArrayList arrayList = new ArrayList();
-        p4.u uVar = (p4.u) this.f5865e.z(new Callable() { // from class: androidx.work.impl.r
+        p4.u uVar = (p4.u) this.f5875e.z(new Callable() { // from class: androidx.work.impl.r
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 return u.b(u.this, arrayList, b10);
@@ -259,21 +259,21 @@ public class u implements androidx.work.impl.foreground.a {
         });
         if (uVar == null) {
             k4.m e10 = k4.m.e();
-            String str = f5860l;
+            String str = f5870l;
             e10.k(str, "Didn't find WorkSpec for id " + a10);
             n(a10, false);
             return false;
         }
-        synchronized (this.f5871k) {
+        synchronized (this.f5881k) {
             try {
                 try {
                     try {
                         if (k(b10)) {
-                            Set set = (Set) this.f5868h.get(b10);
+                            Set set = (Set) this.f5878h.get(b10);
                             if (((a0) set.iterator().next()).a().a() == a10.a()) {
                                 set.add(a0Var);
                                 k4.m e11 = k4.m.e();
-                                String str2 = f5860l;
+                                String str2 = f5870l;
                                 e11.a(str2, "Work " + a10 + " is already enqueued for processing");
                             } else {
                                 n(a10, false);
@@ -283,21 +283,21 @@ public class u implements androidx.work.impl.foreground.a {
                             n(a10, false);
                             return false;
                         } else {
-                            final t0 b11 = new t0.c(this.f5862b, this.f5863c, this.f5864d, this, this.f5865e, uVar, arrayList).c(aVar).b();
+                            final t0 b11 = new t0.c(this.f5872b, this.f5873c, this.f5874d, this, this.f5875e, uVar, arrayList).c(aVar).b();
                             final ListenableFuture c10 = b11.c();
                             c10.a(new Runnable() { // from class: androidx.work.impl.s
                                 @Override // java.lang.Runnable
                                 public final void run() {
                                     u.d(u.this, c10, b11);
                                 }
-                            }, this.f5864d.a());
-                            this.f5867g.put(b10, b11);
+                            }, this.f5874d.a());
+                            this.f5877g.put(b10, b11);
                             HashSet hashSet = new HashSet();
                             hashSet.add(a0Var);
-                            this.f5868h.put(b10, hashSet);
-                            this.f5864d.c().execute(b11);
+                            this.f5878h.put(b10, hashSet);
+                            this.f5874d.c().execute(b11);
                             k4.m e12 = k4.m.e();
-                            String str3 = f5860l;
+                            String str3 = f5870l;
                             e12.a(str3, getClass().getSimpleName() + ": processing " + a10);
                             return true;
                         }
@@ -320,11 +320,11 @@ public class u implements androidx.work.impl.foreground.a {
 
     public boolean q(String str, int i10) {
         t0 f10;
-        synchronized (this.f5871k) {
+        synchronized (this.f5881k) {
             k4.m e10 = k4.m.e();
-            String str2 = f5860l;
+            String str2 = f5870l;
             e10.a(str2, "Processor cancelling " + str);
-            this.f5869i.add(str);
+            this.f5879i.add(str);
             f10 = f(str);
         }
         return i(str, f10, i10);
@@ -333,7 +333,7 @@ public class u implements androidx.work.impl.foreground.a {
     public boolean s(a0 a0Var, int i10) {
         t0 f10;
         String b10 = a0Var.a().b();
-        synchronized (this.f5871k) {
+        synchronized (this.f5881k) {
             f10 = f(b10);
         }
         return i(b10, f10, i10);
@@ -341,15 +341,15 @@ public class u implements androidx.work.impl.foreground.a {
 
     public boolean t(a0 a0Var, int i10) {
         String b10 = a0Var.a().b();
-        synchronized (this.f5871k) {
+        synchronized (this.f5881k) {
             try {
-                if (this.f5866f.get(b10) != null) {
+                if (this.f5876f.get(b10) != null) {
                     k4.m e10 = k4.m.e();
-                    String str = f5860l;
+                    String str = f5870l;
                     e10.a(str, "Ignored stopWork. WorkerWrapper " + b10 + " is in foreground");
                     return false;
                 }
-                Set set = (Set) this.f5868h.get(b10);
+                Set set = (Set) this.f5878h.get(b10);
                 if (set != null && set.contains(a0Var)) {
                     return i(b10, f(b10), i10);
                 }

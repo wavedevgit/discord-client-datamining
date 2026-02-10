@@ -1,48 +1,62 @@
 package gu;
-
-import java.util.Arrays;
-import java.util.logging.Logger;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.StringCompanionObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
-    public static final /* synthetic */ void a(a aVar, d dVar, String str) {
-        c(aVar, dVar, str);
-    }
+public enum b {
+    PROLEPTIC_JULIAN,
+    PROLEPTIC_GREGORIAN,
+    SWEDEN,
+    INTRODUCTION_ON_1582_10_15,
+    SINGLE_CUTOVER_DATE,
+    PROLEPTIC_BYZANTINE;
 
-    public static final String b(long j10) {
-        String str;
-        if (j10 <= -999500000) {
-            str = ((j10 - 500000000) / 1000000000) + " s ";
-        } else if (j10 <= -999500) {
-            str = ((j10 - 500000) / 1000000) + " ms";
-        } else if (j10 <= 0) {
-            str = ((j10 - 500) / 1000) + " µs";
-        } else if (j10 < 999500) {
-            str = ((j10 + 500) / 1000) + " µs";
-        } else if (j10 < 999500000) {
-            str = ((j10 + 500000) / 1000000) + " ms";
-        } else {
-            str = ((j10 + 500000000) / 1000000000) + " s ";
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static /* synthetic */ class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ int[] f26035a;
+
+        static {
+            int[] iArr = new int[b.values().length];
+            f26035a = iArr;
+            try {
+                iArr[b.PROLEPTIC_JULIAN.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f26035a[b.PROLEPTIC_GREGORIAN.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f26035a[b.SWEDEN.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            try {
+                f26035a[b.INTRODUCTION_ON_1582_10_15.ordinal()] = 4;
+            } catch (NoSuchFieldError unused4) {
+            }
+            try {
+                f26035a[b.PROLEPTIC_BYZANTINE.ordinal()] = 5;
+            } catch (NoSuchFieldError unused5) {
+            }
         }
-        StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
-        String format = String.format("%6s", Arrays.copyOf(new Object[]{str}, 1));
-        Intrinsics.checkNotNullExpressionValue(format, "format(format, *args)");
-        return format;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void c(a aVar, d dVar, String str) {
-        Logger a10 = e.f24819h.a();
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append(dVar.f());
-        sb2.append(' ');
-        StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
-        String format = String.format("%-22s", Arrays.copyOf(new Object[]{str}, 1));
-        Intrinsics.checkNotNullExpressionValue(format, "format(format, *args)");
-        sb2.append(format);
-        sb2.append(": ");
-        sb2.append(aVar.b());
-        a10.fine(sb2.toString());
+    public int a() {
+        int i10 = a.f26035a[ordinal()];
+        if (i10 == 1) {
+            return 2;
+        }
+        if (i10 == 2) {
+            return 1;
+        }
+        if (i10 == 3) {
+            return 4;
+        }
+        if (i10 != 4) {
+            if (i10 == 5) {
+                return 3;
+            }
+            return 0;
+        }
+        return 7;
     }
 }

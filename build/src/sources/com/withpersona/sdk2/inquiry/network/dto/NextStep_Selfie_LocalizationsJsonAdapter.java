@@ -69,22 +69,22 @@ public final class NextStep_Selfie_LocalizationsJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 promptPage = (NextStep.Selfie.PromptPage) this.promptPageAdapter.fromJson(reader);
                 if (promptPage == null) {
-                    throw bn.c.x("promptPage", "promptPage", reader);
+                    throw dn.c.x("promptPage", "promptPage", reader);
                 }
             } else if (J == 1) {
                 capturePage = (NextStep.Selfie.CapturePage) this.capturePageAdapter.fromJson(reader);
                 if (capturePage == null) {
-                    throw bn.c.x("capturePage", "capturePage", reader);
+                    throw dn.c.x("capturePage", "capturePage", reader);
                 }
             } else if (J == 2) {
                 pendingPage = (NextStep.Selfie.PendingPage) this.pendingPageAdapter.fromJson(reader);
                 if (pendingPage == null) {
-                    throw bn.c.x("pendingPage", "pendingPage", reader);
+                    throw dn.c.x("pendingPage", "pendingPage", reader);
                 }
             } else if (J == 3) {
                 cancelDialog = (NextStep.CancelDialog) this.nullableCancelDialogAdapter.fromJson(reader);
@@ -98,18 +98,18 @@ public final class NextStep_Selfie_LocalizationsJsonAdapter extends h {
                 if (pendingPage != null) {
                     return new NextStep.Selfie.Localizations(promptPage, capturePage, pendingPage, cancelDialog, checkPage);
                 }
-                throw bn.c.o("pendingPage", "pendingPage", reader);
+                throw dn.c.o("pendingPage", "pendingPage", reader);
             }
-            throw bn.c.o("capturePage", "capturePage", reader);
+            throw dn.c.o("capturePage", "capturePage", reader);
         }
-        throw bn.c.o("promptPage", "promptPage", reader);
+        throw dn.c.o("promptPage", "promptPage", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.Selfie.Localizations localizations) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (localizations != null) {
-            writer.k();
+            writer.i();
             writer.J("promptPage");
             this.promptPageAdapter.toJson(writer, localizations.getPromptPage());
             writer.J("capturePage");

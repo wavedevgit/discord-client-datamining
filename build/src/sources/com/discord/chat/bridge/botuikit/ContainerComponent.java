@@ -13,9 +13,9 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import kt.v1;
 import org.jetbrains.annotations.NotNull;
-@gt.m
+import tt.v1;
+@qt.m
 @Metadata(d1 = {"\u0000\\\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0010\u0001\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001d\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 A2\u00020\u00012\u00020\u0002:\u0002@AB[\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0006\u0012\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t\u0012\n\b\u0003\u0010\u000b\u001a\u0004\u0018\u00010\u0004\u0012\u0006\u0010\f\u001a\u00020\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0003\u0010\u000f\u001a\u0004\u0018\u00010\u0004¢\u0006\u0004\b\u0010\u0010\u0011B\u0081\u0001\b\u0010\u0012\u0006\u0010\u0012\u001a\u00020\u0004\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0006\u0012\u000e\u0010\b\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u00010\t\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0004\u0012\u0006\u0010\f\u001a\u00020\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015\u0012\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017¢\u0006\u0004\b\u0010\u0010\u0018J\t\u0010)\u001a\u00020\u0004HÆ\u0003J\t\u0010*\u001a\u00020\u0006HÆ\u0003J\u000b\u0010+\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u000f\u0010,\u001a\b\u0012\u0004\u0012\u00020\n0\tHÆ\u0003J\u0010\u0010-\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0002\u0010!J\t\u0010.\u001a\u00020\rHÆ\u0003J\u000b\u0010/\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u0010\u00100\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0002\u0010!Jl\u00101\u001a\u00020\u00002\b\b\u0002\u0010\u0003\u001a\u00020\u00042\b\b\u0002\u0010\u0005\u001a\u00020\u00062\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00062\u000e\b\u0002\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\n\b\u0003\u0010\u000b\u001a\u0004\u0018\u00010\u00042\b\b\u0002\u0010\f\u001a\u00020\r2\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u00062\n\b\u0003\u0010\u000f\u001a\u0004\u0018\u00010\u0004HÆ\u0001¢\u0006\u0002\u00102J\u0013\u00103\u001a\u00020\r2\b\u00104\u001a\u0004\u0018\u000105HÖ\u0003J\t\u00106\u001a\u00020\u0004HÖ\u0001J\t\u00107\u001a\u00020\u0006HÖ\u0001J%\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020\u00002\u0006\u0010;\u001a\u00020<2\u0006\u0010=\u001a\u00020>H\u0001¢\u0006\u0002\b?R\u0014\u0010\u0003\u001a\u00020\u0004X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u0014\u0010\u0005\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u0016\u0010\u0007\u001a\u0004\u0018\u00010\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001cR\u0017\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001fR\u0015\u0010\u000b\u001a\u0004\u0018\u00010\u0004¢\u0006\n\n\u0002\u0010\"\u001a\u0004\b \u0010!R\u0011\u0010\f\u001a\u00020\r¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010#R\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u0006¢\u0006\b\n\u0000\u001a\u0004\b$\u0010\u001cR\u0015\u0010\u000f\u001a\u0004\u0018\u00010\u0004¢\u0006\n\n\u0002\u0010\"\u001a\u0004\b%\u0010!R\u0016\u0010\u0013\u001a\u0004\u0018\u00010\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b&\u0010\u001cR\u0016\u0010\u0014\u001a\u0004\u0018\u00010\u0015X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b'\u0010(¨\u0006B"}, d2 = {"Lcom/discord/chat/bridge/botuikit/ContainerComponent;", "Lcom/discord/chat/bridge/botuikit/BaseLayoutComponent;", "Lcom/discord/chat/bridge/spoiler/SpoilerableData;", "type", "", StackTraceHelper.ID_KEY, "", "errorText", "components", "", "Lcom/discord/chat/bridge/botuikit/Component;", "accentColor", "isSpoiler", "", "spoilerDescription", "themedBackgroundColor", "<init>", "(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Integer;ZLjava/lang/String;Ljava/lang/Integer;)V", "seen0", "spoilerOrNull", "obscureOrNull", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Integer;ZLjava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Void;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getType", "()I", "getId", "()Ljava/lang/String;", "getErrorText", "getComponents", "()Ljava/util/List;", "getAccentColor", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "()Z", "getSpoilerDescription", "getThemedBackgroundColor", "getSpoilerOrNull", "getObscureOrNull", "()Ljava/lang/Void;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "copy", "(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Integer;ZLjava/lang/String;Ljava/lang/Integer;)Lcom/discord/chat/bridge/botuikit/ContainerComponent;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nContainerComponent.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ContainerComponent.kt\ncom/discord/chat/bridge/botuikit/ContainerComponent\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,24:1\n1#2:25\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -27,7 +27,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8664id;
+    private final String f9241id;
     private final boolean isSpoiler;
     private final Void obscureOrNull;
     private final String spoilerDescription;
@@ -37,7 +37,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, rr.l.b(rr.o.f49210e, new Function0() { // from class: com.discord.chat.bridge.botuikit.d
+    private static final Lazy[] $childSerializers = {null, null, null, as.l.a(as.o.f6082e, new Function0() { // from class: com.discord.chat.bridge.botuikit.d
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -69,7 +69,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             v1.b(i10, 107, ContainerComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8664id = str;
+        this.f9241id = str;
         if ((i10 & 4) == 0) {
             this.errorText = null;
         } else {
@@ -102,7 +102,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new kt.f(ComponentSerializer.INSTANCE);
+        return new tt.f(ComponentSerializer.INSTANCE);
     }
 
     public static /* synthetic */ ContainerComponent copy$default(ContainerComponent containerComponent, int i10, String str, String str2, List list, Integer num, boolean z10, String str3, Integer num2, int i11, Object obj) {
@@ -110,7 +110,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             i10 = containerComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = containerComponent.f8664id;
+            str = containerComponent.f9241id;
         }
         if ((i11 & 4) != 0) {
             str2 = containerComponent.errorText;
@@ -162,16 +162,16 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             java.lang.String r4 = r7.getErrorText()
             if (r4 == 0) goto L29
         L20:
-            kt.n2 r4 = kt.n2.f35181a
+            tt.n2 r4 = tt.n2.f50032a
             java.lang.String r5 = r7.getErrorText()
-            r8.i(r9, r1, r4, r5)
+            r8.o(r9, r1, r4, r5)
         L29:
             r1 = 3
             r0 = r0[r1]
             java.lang.Object r0 = r0.getValue()
-            gt.o r0 = (gt.o) r0
+            qt.o r0 = (qt.o) r0
             java.util.List<com.discord.chat.bridge.botuikit.Component> r4 = r7.components
-            r8.F(r9, r1, r0, r4)
+            r8.k(r9, r1, r0, r4)
             r0 = 4
             boolean r1 = r8.z(r9, r0)
             if (r1 == 0) goto L3f
@@ -180,17 +180,17 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             java.lang.Integer r1 = r7.accentColor
             if (r1 == 0) goto L4a
         L43:
-            kt.p0 r1 = kt.p0.f35197a
+            tt.p0 r1 = tt.p0.f50048a
             java.lang.Integer r4 = r7.accentColor
-            r8.i(r9, r0, r1, r4)
+            r8.o(r9, r0, r1, r4)
         L4a:
             r0 = 5
             boolean r1 = r7.isSpoiler
             r8.x(r9, r0, r1)
-            kt.n2 r0 = kt.n2.f35181a
+            tt.n2 r0 = tt.n2.f50032a
             java.lang.String r1 = r7.spoilerDescription
             r4 = 6
-            r8.i(r9, r4, r0, r1)
+            r8.o(r9, r4, r0, r1)
             r1 = 7
             boolean r4 = r8.z(r9, r1)
             if (r4 == 0) goto L60
@@ -199,9 +199,9 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             java.lang.Integer r4 = r7.themedBackgroundColor
             if (r4 == 0) goto L6b
         L64:
-            kt.p0 r4 = kt.p0.f35197a
+            tt.p0 r4 = tt.p0.f50048a
             java.lang.Integer r5 = r7.themedBackgroundColor
-            r8.i(r9, r1, r4, r5)
+            r8.o(r9, r1, r4, r5)
         L6b:
             r1 = 8
             boolean r4 = r8.z(r9, r1)
@@ -225,19 +225,19 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             if (r2 != 0) goto L94
         L8d:
             java.lang.String r2 = r7.getSpoilerOrNull()
-            r8.i(r9, r1, r0, r2)
+            r8.o(r9, r1, r0, r2)
         L94:
             r0 = 9
             boolean r1 = r8.z(r9, r0)
             if (r1 == 0) goto L9d
             goto La3
         L9d:
-            java.lang.Void r1 = r7.m265getObscureOrNull()
+            java.lang.Void r1 = r7.m266getObscureOrNull()
             if (r1 == 0) goto Lac
         La3:
-            kt.k1 r1 = kt.k1.f35164a
-            java.lang.Void r7 = r7.m265getObscureOrNull()
-            r8.i(r9, r0, r1, r7)
+            tt.k1 r1 = tt.k1.f50015a
+            java.lang.Void r7 = r7.m266getObscureOrNull()
+            r8.o(r9, r0, r1, r7)
         Lac:
             return
         */
@@ -250,7 +250,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
 
     @NotNull
     public final String component2() {
-        return this.f8664id;
+        return this.f9241id;
     }
 
     public final String component3() {
@@ -291,7 +291,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
         }
         if (obj instanceof ContainerComponent) {
             ContainerComponent containerComponent = (ContainerComponent) obj;
-            return this.type == containerComponent.type && Intrinsics.areEqual(this.f8664id, containerComponent.f8664id) && Intrinsics.areEqual(this.errorText, containerComponent.errorText) && Intrinsics.areEqual(this.components, containerComponent.components) && Intrinsics.areEqual(this.accentColor, containerComponent.accentColor) && this.isSpoiler == containerComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, containerComponent.spoilerDescription) && Intrinsics.areEqual(this.themedBackgroundColor, containerComponent.themedBackgroundColor);
+            return this.type == containerComponent.type && Intrinsics.areEqual(this.f9241id, containerComponent.f9241id) && Intrinsics.areEqual(this.errorText, containerComponent.errorText) && Intrinsics.areEqual(this.components, containerComponent.components) && Intrinsics.areEqual(this.accentColor, containerComponent.accentColor) && this.isSpoiler == containerComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, containerComponent.spoilerDescription) && Intrinsics.areEqual(this.themedBackgroundColor, containerComponent.themedBackgroundColor);
         }
         return false;
     }
@@ -313,12 +313,12 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8664id;
+        return this.f9241id;
     }
 
     @Override // com.discord.chat.bridge.spoiler.SpoilerableData
     public /* bridge */ /* synthetic */ String getObscureOrNull() {
-        return (String) m265getObscureOrNull();
+        return (String) m266getObscureOrNull();
     }
 
     public final String getSpoilerDescription() {
@@ -340,7 +340,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     }
 
     public int hashCode() {
-        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f8664id.hashCode()) * 31;
+        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f9241id.hashCode()) * 31;
         String str = this.errorText;
         int hashCode2 = (((hashCode + (str == null ? 0 : str.hashCode())) * 31) + this.components.hashCode()) * 31;
         Integer num = this.accentColor;
@@ -358,7 +358,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8664id;
+        String str = this.f9241id;
         String str2 = this.errorText;
         List<Component> list = this.components;
         Integer num = this.accentColor;
@@ -369,7 +369,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     }
 
     /* renamed from: getObscureOrNull  reason: collision with other method in class */
-    public Void m265getObscureOrNull() {
+    public Void m266getObscureOrNull() {
         return this.obscureOrNull;
     }
 
@@ -384,7 +384,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(components, "components");
         this.type = i10;
-        this.f8664id = id2;
+        this.f9241id = id2;
         this.errorText = str;
         this.components = components;
         this.accentColor = num;

@@ -1,299 +1,81 @@
 package ys;
 
-import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
+import java.util.concurrent.locks.LockSupport;
 import kotlin.coroutines.CoroutineContext;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function3;
-import kotlinx.coroutines.CancellableContinuation;
-import kotlinx.coroutines.CoroutineDispatcher;
-import kotlinx.coroutines.sync.Mutex;
-import ps.w1;
-import us.b0;
-import us.e0;
-import ys.e;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.LongCompanionObject;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class e extends i implements Mutex {
+public final class e extends kotlinx.coroutines.a {
 
-    /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f55747i = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "owner$volatile");
+    /* renamed from: o  reason: collision with root package name */
+    private final Thread f55789o;
 
-    /* renamed from: h  reason: collision with root package name */
-    private final Function3 f55748h;
-    private volatile /* synthetic */ Object owner$volatile;
+    /* renamed from: p  reason: collision with root package name */
+    private final p0 f55790p;
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public final class a implements CancellableContinuation, w1 {
+    public e(CoroutineContext coroutineContext, Thread thread, p0 p0Var) {
+        super(coroutineContext, true, true);
+        this.f55789o = thread;
+        this.f55790p = p0Var;
+    }
 
-        /* renamed from: d  reason: collision with root package name */
-        public final kotlinx.coroutines.e f55749d;
-
-        /* renamed from: e  reason: collision with root package name */
-        public final Object f55750e;
-
-        public a(kotlinx.coroutines.e eVar, Object obj) {
-            this.f55749d = eVar;
-            this.f55750e = obj;
-        }
-
-        /* JADX INFO: Access modifiers changed from: private */
-        public static final Unit j(e eVar, a aVar, Throwable th2) {
-            eVar.c(aVar.f55750e);
-            return Unit.f31765a;
-        }
-
-        /* JADX INFO: Access modifiers changed from: private */
-        public static final Unit m(e eVar, a aVar, Throwable th2, Unit unit, CoroutineContext coroutineContext) {
-            e.w().set(eVar, aVar.f55750e);
-            eVar.c(aVar.f55750e);
-            return Unit.f31765a;
-        }
-
-        @Override // kotlinx.coroutines.CancellableContinuation
-        public void A(Object obj) {
-            this.f55749d.A(obj);
-        }
-
-        @Override // kotlinx.coroutines.CancellableContinuation
-        public boolean a() {
-            return this.f55749d.a();
-        }
-
-        @Override // kotlinx.coroutines.CancellableContinuation
-        public void c(Function1 function1) {
-            this.f55749d.c(function1);
-        }
-
-        @Override // ps.w1
-        public void d(b0 b0Var, int i10) {
-            this.f55749d.d(b0Var, i10);
-        }
-
-        @Override // kotlinx.coroutines.CancellableContinuation
-        public Object e(Throwable th2) {
-            return this.f55749d.e(th2);
-        }
-
-        @Override // kotlinx.coroutines.CancellableContinuation
-        public void f(CoroutineDispatcher coroutineDispatcher, Throwable th2) {
-            this.f55749d.f(coroutineDispatcher, th2);
-        }
-
-        @Override // kotlin.coroutines.Continuation
-        public CoroutineContext getContext() {
-            return this.f55749d.getContext();
-        }
-
-        @Override // kotlinx.coroutines.CancellableContinuation
-        public boolean h(Throwable th2) {
-            return this.f55749d.h(th2);
-        }
-
-        @Override // kotlinx.coroutines.CancellableContinuation
-        /* renamed from: i */
-        public void r(Unit unit, Function3 function3) {
-            e.w().set(e.this, this.f55750e);
-            kotlinx.coroutines.e eVar = this.f55749d;
-            final e eVar2 = e.this;
-            eVar.R(unit, new Function1() { // from class: ys.d
-                @Override // kotlin.jvm.functions.Function1
-                public final Object invoke(Object obj) {
-                    Unit j10;
-                    j10 = e.a.j(e.this, this, (Throwable) obj);
-                    return j10;
-                }
-            });
-        }
-
-        @Override // kotlinx.coroutines.CancellableContinuation
-        public boolean isCompleted() {
-            return this.f55749d.isCompleted();
-        }
-
-        @Override // kotlinx.coroutines.CancellableContinuation
-        /* renamed from: k */
-        public void t(CoroutineDispatcher coroutineDispatcher, Unit unit) {
-            this.f55749d.t(coroutineDispatcher, unit);
-        }
-
-        @Override // kotlinx.coroutines.CancellableContinuation
-        /* renamed from: l */
-        public Object w(Unit unit, Object obj, Function3 function3) {
-            final e eVar = e.this;
-            Object w10 = this.f55749d.w(unit, obj, new Function3() { // from class: ys.c
-                @Override // kotlin.jvm.functions.Function3
-                public final Object invoke(Object obj2, Object obj3, Object obj4) {
-                    Unit m10;
-                    m10 = e.a.m(e.this, this, (Throwable) obj2, (Unit) obj3, (CoroutineContext) obj4);
-                    return m10;
-                }
-            });
-            if (w10 != null) {
-                e.w().set(e.this, this.f55750e);
-            }
-            return w10;
-        }
-
-        @Override // kotlin.coroutines.Continuation
-        public void resumeWith(Object obj) {
-            this.f55749d.resumeWith(obj);
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // kotlinx.coroutines.b0
+    public void F(Object obj) {
+        if (!Intrinsics.areEqual(Thread.currentThread(), this.f55789o)) {
+            Thread thread = this.f55789o;
+            b.a();
+            LockSupport.unpark(thread);
         }
     }
 
-    public e(boolean z10) {
-        super(1, z10 ? 1 : 0);
-        e0 e0Var;
-        if (!z10) {
-            e0Var = f.f55752a;
-        } else {
-            e0Var = null;
-        }
-        this.owner$volatile = e0Var;
-        this.f55748h = new Function3() { // from class: ys.a
-            @Override // kotlin.jvm.functions.Function3
-            public final Object invoke(Object obj, Object obj2, Object obj3) {
-                Function3 C;
-                C = e.C(e.this, (xs.l) obj, obj2, obj3);
-                return C;
-            }
-        };
-    }
-
-    static /* synthetic */ Object A(e eVar, Object obj, Continuation continuation) {
-        if (eVar.E(obj)) {
-            return Unit.f31765a;
-        }
-        Object B = eVar.B(obj, continuation);
-        if (B == xr.b.f()) {
-            return B;
-        }
-        return Unit.f31765a;
-    }
-
-    private final Object B(Object obj, Continuation continuation) {
-        kotlinx.coroutines.e b10 = ps.l.b(xr.b.c(continuation));
+    public final Object c1() {
+        long j10;
+        b.a();
         try {
-            f(new a(b10, obj));
-            Object B = b10.B();
-            if (B == xr.b.f()) {
-                kotlin.coroutines.jvm.internal.g.c(continuation);
+            p0 p0Var = this.f55790p;
+            r rVar = null;
+            if (p0Var != null) {
+                p0.l2(p0Var, false, 1, null);
             }
-            if (B == xr.b.f()) {
-                return B;
+            while (true) {
+                p0 p0Var2 = this.f55790p;
+                if (p0Var2 != null) {
+                    j10 = p0Var2.t2();
+                } else {
+                    j10 = LongCompanionObject.MAX_VALUE;
+                }
+                if (isCompleted()) {
+                    break;
+                }
+                b.a();
+                LockSupport.parkNanos(this, j10);
+                if (Thread.interrupted()) {
+                    K(new InterruptedException());
+                }
             }
-            return Unit.f31765a;
+            p0 p0Var3 = this.f55790p;
+            if (p0Var3 != null) {
+                p0.Y1(p0Var3, false, 1, null);
+            }
+            b.a();
+            Object h10 = kotlinx.coroutines.c0.h(f0());
+            if (h10 instanceof r) {
+                rVar = (r) h10;
+            }
+            if (rVar == null) {
+                return h10;
+            }
+            throw rVar.f55816a;
         } catch (Throwable th2) {
-            b10.P();
+            b.a();
             throw th2;
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Function3 C(final e eVar, xs.l lVar, final Object obj, Object obj2) {
-        return new Function3() { // from class: ys.b
-            @Override // kotlin.jvm.functions.Function3
-            public final Object invoke(Object obj3, Object obj4, Object obj5) {
-                Unit D;
-                D = e.D(e.this, obj, (Throwable) obj3, obj4, (CoroutineContext) obj5);
-                return D;
-            }
-        };
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit D(e eVar, Object obj, Throwable th2, Object obj2, CoroutineContext coroutineContext) {
-        eVar.c(obj);
-        return Unit.f31765a;
-    }
-
-    private final int F(Object obj) {
-        while (!r()) {
-            if (obj == null) {
-                return 1;
-            }
-            int y10 = y(obj);
-            if (y10 == 1) {
-                return 2;
-            }
-            if (y10 == 2) {
-                return 1;
-            }
-        }
-        f55747i.set(this, obj);
-        return 0;
-    }
-
-    public static final /* synthetic */ AtomicReferenceFieldUpdater w() {
-        return f55747i;
-    }
-
-    private final int y(Object obj) {
-        e0 e0Var;
-        while (z()) {
-            Object obj2 = f55747i.get(this);
-            e0Var = f.f55752a;
-            if (obj2 != e0Var) {
-                if (obj2 == obj) {
-                    return 1;
-                }
-                return 2;
-            }
-        }
-        return 0;
-    }
-
-    public boolean E(Object obj) {
-        int F = F(obj);
-        if (F == 0) {
-            return true;
-        }
-        if (F != 1) {
-            if (F != 2) {
-                throw new IllegalStateException("unexpected");
-            }
-            throw new IllegalStateException(("This mutex is already locked by the specified owner: " + obj).toString());
-        }
-        return false;
-    }
-
-    @Override // kotlinx.coroutines.sync.Mutex
-    public Object b(Object obj, Continuation continuation) {
-        return A(this, obj, continuation);
-    }
-
-    @Override // kotlinx.coroutines.sync.Mutex
-    public void c(Object obj) {
-        e0 e0Var;
-        e0 e0Var2;
-        while (z()) {
-            Object obj2 = f55747i.get(this);
-            e0Var = f.f55752a;
-            if (obj2 != e0Var) {
-                if (obj2 == obj || obj == null) {
-                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f55747i;
-                    e0Var2 = f.f55752a;
-                    if (androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, this, obj2, e0Var2)) {
-                        release();
-                        return;
-                    }
-                } else {
-                    throw new IllegalStateException(("This mutex is locked by " + obj2 + ", but " + obj + " is expected").toString());
-                }
-            }
-        }
-        throw new IllegalStateException("This mutex is not locked");
-    }
-
-    public String toString() {
-        return "Mutex@" + ps.e0.b(this) + "[isLocked=" + z() + ",owner=" + f55747i.get(this) + ']';
-    }
-
-    public boolean z() {
-        if (k() == 0) {
-            return true;
-        }
-        return false;
+    @Override // kotlinx.coroutines.b0
+    protected boolean m0() {
+        return true;
     }
 }

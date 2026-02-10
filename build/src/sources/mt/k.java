@@ -1,77 +1,59 @@
 package mt;
 
-import kotlin.jvm.internal.ByteCompanionObject;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class k {
+public abstract class k implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final k f37551a;
+    private final n f36623a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final char[] f37552b;
+    private final int f36624b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final byte[] f37553c;
+    private final int f36625c;
 
-    static {
-        k kVar = new k();
-        f37551a = kVar;
-        f37552b = new char[117];
-        f37553c = new byte[126];
-        kVar.f();
-        kVar.e();
-    }
+    /* renamed from: d  reason: collision with root package name */
+    private final List f36626d;
 
-    private k() {
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
+        a(Object obj) {
+            super(1, obj, b.class, "getterNotNull", "getterNotNull(Ljava/lang/Object;)Ljava/lang/Object;", 0);
+        }
 
-    private final void a(char c10, char c11) {
-        b(c10, c11);
-    }
-
-    private final void b(int i10, char c10) {
-        if (c10 != 'u') {
-            f37552b[c10] = (char) i10;
+        @Override // kotlin.jvm.functions.Function1
+        /* renamed from: a */
+        public final lt.a invoke(Object obj) {
+            return (lt.a) ((b) this.receiver).b(obj);
         }
     }
 
-    private final void c(char c10, byte b10) {
-        d(c10, b10);
+    public k(n field, int i10, int i11, List zerosToAdd) {
+        Intrinsics.checkNotNullParameter(field, "field");
+        Intrinsics.checkNotNullParameter(zerosToAdd, "zerosToAdd");
+        this.f36623a = field;
+        this.f36624b = i10;
+        this.f36625c = i11;
+        this.f36626d = zerosToAdd;
     }
 
-    private final void d(int i10, byte b10) {
-        f37553c[i10] = b10;
+    @Override // mt.l
+    public nt.e a() {
+        return new nt.d(new a(this.f36623a.b()), this.f36624b, this.f36625c, this.f36626d);
     }
 
-    private final void e() {
-        for (int i10 = 0; i10 < 33; i10++) {
-            d(i10, ByteCompanionObject.MAX_VALUE);
-        }
-        d(9, (byte) 3);
-        d(10, (byte) 3);
-        d(13, (byte) 3);
-        d(32, (byte) 3);
-        c(',', (byte) 4);
-        c(':', (byte) 5);
-        c('{', (byte) 6);
-        c('}', (byte) 7);
-        c('[', (byte) 8);
-        c(']', (byte) 9);
-        c('\"', (byte) 1);
-        c('\\', (byte) 2);
+    @Override // mt.l
+    public ot.q b() {
+        return new ot.q(CollectionsKt.e(new ot.h(CollectionsKt.e(new ot.d(this.f36624b, this.f36625c, this.f36623a.b(), this.f36623a.getName())))), CollectionsKt.l());
     }
 
-    private final void f() {
-        for (int i10 = 0; i10 < 32; i10++) {
-            b(i10, 'u');
-        }
-        b(8, 'b');
-        b(9, 't');
-        b(10, 'n');
-        b(12, 'f');
-        b(13, 'r');
-        a('/', '/');
-        a('\"', '\"');
-        a('\\', '\\');
+    @Override // mt.l
+    public final n c() {
+        return this.f36623a;
     }
 }

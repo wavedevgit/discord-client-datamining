@@ -4,7 +4,7 @@ import oc.u;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class a extends uc.d implements g {
     public a(long j10, long j11, u.a aVar, boolean z10) {
-        super(j10, j11, aVar.f40510f, aVar.f40507c, z10);
+        super(j10, j11, aVar.f38836f, aVar.f38833c, z10);
     }
 
     @Override // bd.g

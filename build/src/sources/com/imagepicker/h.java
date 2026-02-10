@@ -38,31 +38,31 @@ import org.webrtc.MediaStreamTrack;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static String f17270a = "rn_image_picker_lib_temp_";
+    public static String f18019a = "rn_image_picker_lib_temp_";
 
     /* renamed from: b  reason: collision with root package name */
-    public static String f17271b = "camera_unavailable";
+    public static String f18020b = "camera_unavailable";
 
     /* renamed from: c  reason: collision with root package name */
-    public static String f17272c = "permission";
+    public static String f18021c = "permission";
 
     /* renamed from: d  reason: collision with root package name */
-    public static String f17273d = "others";
+    public static String f18022d = "others";
 
     /* renamed from: e  reason: collision with root package name */
-    public static String f17274e = "photo";
+    public static String f18023e = "photo";
 
     /* renamed from: f  reason: collision with root package name */
-    public static String f17275f = "video";
+    public static String f18024f = "video";
 
     /* renamed from: g  reason: collision with root package name */
-    public static String f17276g = "mixed";
+    public static String f18025g = "mixed";
 
     /* renamed from: h  reason: collision with root package name */
-    public static String f17277h = "any";
+    public static String f18026h = "any";
 
     /* renamed from: i  reason: collision with root package name */
-    public static String f17278i = "This library does not require Manifest.permission.CAMERA, if you add this permission in manifest then you have to obtain the same.";
+    public static String f18027i = "This library does not require Manifest.permission.CAMERA, if you add this permission in manifest then you have to obtain the same.";
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean A(int i10) {
@@ -92,7 +92,7 @@ public abstract class h {
             Bitmap createScaledBitmap = Bitmap.createScaledBitmap(BitmapFactory.decodeStream(openInputStream), n10[0], n10[1], true);
             String s10 = s(uri, context);
             File c10 = c(context, uuid, m(r10));
-            createScaledBitmap.compress(h(r10), gVar.f17262e, context.getContentResolver().openOutputStream(Uri.fromFile(c10)));
+            createScaledBitmap.compress(h(r10), gVar.f18011e, context.getContentResolver().openOutputStream(Uri.fromFile(c10)));
             F(c10, s10, context);
             return Uri.fromFile(c10);
         } catch (Exception e10) {
@@ -137,11 +137,11 @@ public abstract class h {
     }
 
     static boolean G(int i10, int i11, g gVar) {
-        int i12 = gVar.f17263f;
-        if ((i12 == 0 || gVar.f17264g == 0) && gVar.f17262e == 100) {
+        int i12 = gVar.f18012f;
+        if ((i12 == 0 || gVar.f18013g == 0) && gVar.f18011e == 100) {
             return false;
         }
-        if (i12 >= i10 && gVar.f17264g >= i11 && gVar.f17262e == 100) {
+        if (i12 >= i10 && gVar.f18013g >= i11 && gVar.f18011e == 100) {
             return false;
         }
         return true;
@@ -187,7 +187,7 @@ public abstract class h {
                 return null;
             }
         }
-        File file = new File(context.getCacheDir(), f17270a + uuid + "." + str);
+        File file = new File(context.getCacheDir(), f18019a + uuid + "." + str);
         file.createNewFile();
         return file;
     }
@@ -295,8 +295,8 @@ public abstract class h {
 
     static int[] n(int i10, int i11, g gVar) {
         int i12;
-        int i13 = gVar.f17263f;
-        if (i13 != 0 && (i12 = gVar.f17264g) != 0) {
+        int i13 = gVar.f18012f;
+        if (i13 != 0 && (i12 = gVar.f18013g) != 0) {
             if (i13 < i10) {
                 i11 = (int) ((i13 / i10) * i11);
                 i10 = i13;
@@ -336,10 +336,10 @@ public abstract class h {
         createMap.putInt("width", o10[0]);
         createMap.putInt("height", o10[1]);
         createMap.putString("type", q(uri, context));
-        if (gVar.f17259b.booleanValue()) {
+        if (gVar.f18008b.booleanValue()) {
             createMap.putString("base64", g(uri, context));
         }
-        if (gVar.f17260c.booleanValue()) {
+        if (gVar.f18009c.booleanValue()) {
             createMap.putString("timestamp", bVar.b());
             createMap.putString(StackTraceHelper.ID_KEY, lastPathSegment);
         }
@@ -363,10 +363,10 @@ public abstract class h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ReadableMap t(List list, UUID uuid, g gVar, Context context) {
-        boolean equals = gVar.f17269l.equals(f17274e);
-        boolean equals2 = gVar.f17269l.equals(f17275f);
-        boolean equals3 = gVar.f17269l.equals(f17276g);
-        boolean equals4 = gVar.f17269l.equals(f17277h);
+        boolean equals = gVar.f18018l.equals(f18023e);
+        boolean equals2 = gVar.f18018l.equals(f18024f);
+        boolean equals3 = gVar.f18018l.equals(f18025g);
+        boolean equals4 = gVar.f18018l.equals(f18026h);
         WritableArray createArray = Arguments.createArray();
         for (int i10 = 0; i10 < list.size(); i10++) {
             Uri uri = (Uri) list.get(i10);
@@ -400,7 +400,7 @@ public abstract class h {
         createMap.putString("type", q(uri, context));
         createMap.putInt("width", iVar.g());
         createMap.putInt("height", iVar.f());
-        if (gVar.f17260c.booleanValue()) {
+        if (gVar.f18009c.booleanValue()) {
             createMap.putString("timestamp", iVar.d());
             createMap.putString(StackTraceHelper.ID_KEY, a10);
         }

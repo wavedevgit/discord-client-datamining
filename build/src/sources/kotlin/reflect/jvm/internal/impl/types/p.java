@@ -7,20 +7,20 @@ import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
 public class p implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final KotlinTypeRefiner f34511d;
+    private final KotlinTypeRefiner f34733d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final LazyWrappedType f34512e;
+    private final LazyWrappedType f34734e;
 
     public p(KotlinTypeRefiner kotlinTypeRefiner, LazyWrappedType lazyWrappedType) {
-        this.f34511d = kotlinTypeRefiner;
-        this.f34512e = lazyWrappedType;
+        this.f34733d = kotlinTypeRefiner;
+        this.f34734e = lazyWrappedType;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         KotlinType d10;
-        d10 = LazyWrappedType.d(this.f34511d, this.f34512e);
+        d10 = LazyWrappedType.d(this.f34733d, this.f34734e);
         return d10;
     }
 }

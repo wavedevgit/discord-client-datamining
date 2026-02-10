@@ -49,7 +49,7 @@ public final class StyleElements_SizeSetJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 size = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
@@ -69,7 +69,7 @@ public final class StyleElements_SizeSetJsonAdapter extends h {
     public void toJson(@NotNull t writer, StyleElements.SizeSet sizeSet) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (sizeSet != null) {
-            writer.k();
+            writer.i();
             writer.J(ViewProps.TOP);
             this.nullableSizeAdapter.toJson(writer, sizeSet.getTop());
             writer.J(ViewProps.BOTTOM);

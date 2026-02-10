@@ -1,101 +1,51 @@
 package jr;
+
+import android.graphics.RectF;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class g {
+public abstract class g {
+    public static float[] a(RectF rectF) {
+        return new float[]{rectF.centerX(), rectF.centerY()};
+    }
 
-    /* renamed from: a  reason: collision with root package name */
-    private final kr.c f30421a;
+    public static float[] b(RectF rectF) {
+        float f10 = rectF.left;
+        float f11 = rectF.top;
+        float f12 = rectF.right;
+        float f13 = rectF.bottom;
+        return new float[]{f10, f11, f12, f11, f12, f13, f10, f13};
+    }
 
-    /* renamed from: b  reason: collision with root package name */
-    private final nr.a f30422b;
+    public static float[] c(float[] fArr) {
+        return new float[]{(float) Math.sqrt(Math.pow(fArr[0] - fArr[2], 2.0d) + Math.pow(fArr[1] - fArr[3], 2.0d)), (float) Math.sqrt(Math.pow(fArr[2] - fArr[4], 2.0d) + Math.pow(fArr[3] - fArr[5], 2.0d))};
+    }
 
-    /* renamed from: c  reason: collision with root package name */
-    private final pr.a f30423c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final c f30424d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final or.a f30425e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final nr.d f30426f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private final j f30427g;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class b {
-
-        /* renamed from: a  reason: collision with root package name */
-        private kr.c f30428a;
-
-        /* renamed from: b  reason: collision with root package name */
-        private nr.a f30429b;
-
-        /* renamed from: c  reason: collision with root package name */
-        private pr.a f30430c;
-
-        /* renamed from: d  reason: collision with root package name */
-        private c f30431d;
-
-        /* renamed from: e  reason: collision with root package name */
-        private or.a f30432e;
-
-        /* renamed from: f  reason: collision with root package name */
-        private nr.d f30433f;
-
-        /* renamed from: g  reason: collision with root package name */
-        private j f30434g;
-
-        public g h(kr.c cVar, j jVar) {
-            this.f30428a = cVar;
-            this.f30434g = jVar;
-            if (this.f30429b == null) {
-                this.f30429b = nr.a.a();
+    public static RectF d(float[] fArr) {
+        RectF rectF = new RectF(Float.POSITIVE_INFINITY, Float.POSITIVE_INFINITY, Float.NEGATIVE_INFINITY, Float.NEGATIVE_INFINITY);
+        for (int i10 = 1; i10 < fArr.length; i10 += 2) {
+            float round = Math.round(fArr[i10 - 1] * 10.0f) / 10.0f;
+            float round2 = Math.round(fArr[i10] * 10.0f) / 10.0f;
+            float f10 = rectF.left;
+            if (round < f10) {
+                f10 = round;
             }
-            if (this.f30430c == null) {
-                this.f30430c = new pr.b();
+            rectF.left = f10;
+            float f11 = rectF.top;
+            if (round2 < f11) {
+                f11 = round2;
             }
-            if (this.f30431d == null) {
-                this.f30431d = new d();
+            rectF.top = f11;
+            float f12 = rectF.right;
+            if (round <= f12) {
+                round = f12;
             }
-            if (this.f30432e == null) {
-                this.f30432e = or.a.a();
+            rectF.right = round;
+            float f13 = rectF.bottom;
+            if (round2 <= f13) {
+                round2 = f13;
             }
-            if (this.f30433f == null) {
-                this.f30433f = new nr.e();
-            }
-            return new g(this);
+            rectF.bottom = round2;
         }
-    }
-
-    public or.a a() {
-        return this.f30425e;
-    }
-
-    public c b() {
-        return this.f30424d;
-    }
-
-    public j c() {
-        return this.f30427g;
-    }
-
-    public pr.a d() {
-        return this.f30423c;
-    }
-
-    public kr.c e() {
-        return this.f30421a;
-    }
-
-    private g(b bVar) {
-        this.f30421a = bVar.f30428a;
-        this.f30422b = bVar.f30429b;
-        this.f30423c = bVar.f30430c;
-        this.f30424d = bVar.f30431d;
-        this.f30425e = bVar.f30432e;
-        this.f30426f = bVar.f30433f;
-        this.f30427g = bVar.f30434g;
+        rectF.sort();
+        return rectF;
     }
 }

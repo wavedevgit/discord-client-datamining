@@ -1,82 +1,165 @@
 package vu;
 
-import java.util.ArrayList;
+import java.security.KeyStore;
+import java.security.Provider;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.FunctionReferenceImpl;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.TrustManagerFactory;
+import javax.net.ssl.X509TrustManager;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import vu.f;
+import org.conscrypt.Conscrypt;
+import org.conscrypt.ConscryptHostnameVerifier;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements tu.a, f {
+public final class d extends h {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final d f53000a = new d();
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f51997e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final boolean f51998f;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Provider f51999d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
-        a(Object obj) {
-            super(2, obj, d.class, "mapOrEmptyList", "mapOrEmptyList(Loperations/array/ArrayOperationInputData;LLogicEvaluator;)Ljava/util/List;", 0);
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
 
-        @Override // kotlin.jvm.functions.Function2
-        /* renamed from: a */
-        public final List invoke(b p02, h p12) {
-            Intrinsics.checkNotNullParameter(p02, "p0");
-            Intrinsics.checkNotNullParameter(p12, "p1");
-            return ((d) this.receiver).h(p02, p12);
+        public final boolean a(int i10, int i11, int i12) {
+            Conscrypt.Version version = Conscrypt.version();
+            if (version.major() != i10) {
+                if (version.major() <= i10) {
+                    return false;
+                }
+                return true;
+            } else if (version.minor() != i11) {
+                if (version.minor() <= i11) {
+                    return false;
+                }
+                return true;
+            } else if (version.patch() < i12) {
+                return false;
+            } else {
+                return true;
+            }
         }
+
+        public final d b() {
+            if (!c()) {
+                return null;
+            }
+            return new d(null);
+        }
+
+        public final boolean c() {
+            return d.f51998f;
+        }
+
+        private a() {
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b implements ConscryptHostnameVerifier {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final b f52000a = new b();
+
+        private b() {
+        }
+    }
+
+    static {
+        a aVar = new a(null);
+        f51997e = aVar;
+        boolean z10 = false;
+        try {
+            Class.forName("org.conscrypt.Conscrypt$Version", false, aVar.getClass().getClassLoader());
+            if (Conscrypt.isAvailable()) {
+                if (aVar.a(2, 1, 0)) {
+                    z10 = true;
+                }
+            }
+        } catch (ClassNotFoundException | NoClassDefFoundError unused) {
+        }
+        f51998f = z10;
+    }
+
+    public /* synthetic */ d(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    @Override // vu.h
+    public void e(SSLSocket sslSocket, String str, List protocols) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Intrinsics.checkNotNullParameter(protocols, "protocols");
+        if (Conscrypt.isConscrypt(sslSocket)) {
+            Conscrypt.setUseSessionTickets(sslSocket, true);
+            Conscrypt.setApplicationProtocols(sslSocket, (String[]) h.f52015a.b(protocols).toArray(new String[0]));
+            return;
+        }
+        super.e(sslSocket, str, protocols);
+    }
+
+    @Override // vu.h
+    public String h(SSLSocket sslSocket) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        if (Conscrypt.isConscrypt(sslSocket)) {
+            return Conscrypt.getApplicationProtocol(sslSocket);
+        }
+        return super.h(sslSocket);
+    }
+
+    @Override // vu.h
+    public SSLContext n() {
+        SSLContext sSLContext = SSLContext.getInstance("TLS", this.f51999d);
+        Intrinsics.checkNotNullExpressionValue(sSLContext, "getInstance(\"TLS\", provider)");
+        return sSLContext;
+    }
+
+    @Override // vu.h
+    public SSLSocketFactory o(X509TrustManager trustManager) {
+        Intrinsics.checkNotNullParameter(trustManager, "trustManager");
+        SSLContext n10 = n();
+        n10.init(null, new TrustManager[]{trustManager}, null);
+        SSLSocketFactory socketFactory = n10.getSocketFactory();
+        Intrinsics.checkNotNullExpressionValue(socketFactory, "newSSLContext().apply {\n…null)\n    }.socketFactory");
+        return socketFactory;
+    }
+
+    @Override // vu.h
+    public X509TrustManager p() {
+        TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
+        trustManagerFactory.init((KeyStore) null);
+        TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();
+        Intrinsics.checkNotNull(trustManagers);
+        if (trustManagers.length == 1) {
+            TrustManager trustManager = trustManagers[0];
+            if (trustManager instanceof X509TrustManager) {
+                Intrinsics.checkNotNull(trustManager, "null cannot be cast to non-null type javax.net.ssl.X509TrustManager");
+                X509TrustManager x509TrustManager = (X509TrustManager) trustManager;
+                Conscrypt.setHostnameVerifier(x509TrustManager, b.f52000a);
+                return x509TrustManager;
+            }
+        }
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("Unexpected default trust managers: ");
+        String arrays = Arrays.toString(trustManagers);
+        Intrinsics.checkNotNullExpressionValue(arrays, "toString(this)");
+        sb2.append(arrays);
+        throw new IllegalStateException(sb2.toString().toString());
     }
 
     private d() {
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final List h(b bVar, h hVar) {
-        List b10 = bVar.b();
-        if (b10 == null) {
-            b10 = CollectionsKt.l();
-        }
-        List<Object> list = b10;
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-        for (Object obj : list) {
-            arrayList.add(f53000a.i(hVar, obj, bVar.a(), bVar.c()));
-        }
-        return arrayList;
-    }
-
-    private final Object i(h hVar, Object obj, Map map, Object obj2) {
-        Object a10;
-        if (map != null && (a10 = hVar.a(map, obj)) != null) {
-            return a10;
-        }
-        return obj2;
-    }
-
-    @Override // vu.a
-    public Object a(Map map, List list) {
-        return f.a.b(this, map, list);
-    }
-
-    @Override // vu.f
-    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
-        return f.a.c(this, obj, obj2, hVar, function2);
-    }
-
-    @Override // vu.a
-    public b c(List list, Object obj, h hVar) {
-        return f.a.a(this, list, obj, hVar);
-    }
-
-    @Override // tu.a
-    public Object d(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        return b(obj, obj2, evaluator, new a(this));
-    }
-
-    @Override // cw.a
-    public List f(List list, Object obj, h hVar) {
-        return f.a.d(this, list, obj, hVar);
+        Provider newProvider = Conscrypt.newProvider();
+        Intrinsics.checkNotNullExpressionValue(newProvider, "newProvider()");
+        this.f51999d = newProvider;
     }
 }

@@ -1,12 +1,21 @@
 package us;
 
-import java.util.List;
-import ps.c1;
+import kotlin.jvm.functions.Function0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface s {
-    String a();
+public class s implements Function0 {
 
-    c1 b(List list);
+    /* renamed from: d  reason: collision with root package name */
+    private final a0 f51137d;
 
-    int c();
+    public s(a0 a0Var) {
+        this.f51137d = a0Var;
+    }
+
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        t2 i10;
+        i10 = a0.i(this.f51137d);
+        return i10;
+    }
 }

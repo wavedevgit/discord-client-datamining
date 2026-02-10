@@ -20,7 +20,7 @@ public final class LengthPercentageType {
     static {
         LengthPercentageType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = yr.a.a($values);
+        $ENTRIES = hs.a.a($values);
     }
 
     private LengthPercentageType(String str, int i10) {

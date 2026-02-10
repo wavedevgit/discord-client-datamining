@@ -46,7 +46,7 @@ public final class AttributeStyles_ButtonBasedFontFamilyStyleJsonAdapter extends
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 fontName = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
@@ -60,7 +60,7 @@ public final class AttributeStyles_ButtonBasedFontFamilyStyleJsonAdapter extends
     public void toJson(@NotNull t writer, AttributeStyles.ButtonBasedFontFamilyStyle buttonBasedFontFamilyStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (buttonBasedFontFamilyStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableFontNameAdapter.toJson(writer, buttonBasedFontFamilyStyle.getBase());
             writer.s();

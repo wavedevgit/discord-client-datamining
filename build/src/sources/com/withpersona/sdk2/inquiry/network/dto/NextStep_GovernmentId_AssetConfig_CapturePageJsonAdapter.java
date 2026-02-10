@@ -58,7 +58,7 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -114,7 +114,7 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
         RemoteImage remoteImage21 = remoteImage;
         Constructor<NextStep.GovernmentId.AssetConfig.CapturePage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.CapturePage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, bn.c.f7152c);
+            constructor = NextStep.GovernmentId.AssetConfig.CapturePage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, dn.c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -127,7 +127,7 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
     public void toJson(@NotNull t writer, NextStep.GovernmentId.AssetConfig.CapturePage capturePage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (capturePage != null) {
-            writer.k();
+            writer.i();
             writer.J("idFrontPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getIdFrontPictograph());
             writer.J("idBackPictograph");

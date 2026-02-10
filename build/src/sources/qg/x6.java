@@ -1,64 +1,64 @@
 package qg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class x6 implements zi.d {
+final class x6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x6 f46474a = new x6();
+    static final x6 f45142a = new x6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f46475b;
+    private static final bj.c f45143b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f46476c;
+    private static final bj.c f45144c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f46477d;
+    private static final bj.c f45145d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final zi.c f46478e;
+    private static final bj.c f45146e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final zi.c f46479f;
+    private static final bj.c f45147f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final zi.c f46480g;
+    private static final bj.c f45148g;
 
     static {
-        c.b a10 = zi.c.a("detectorMode");
+        c.b a10 = bj.c.a("detectorMode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f46475b = a10.b(s1Var.b()).a();
-        c.b a11 = zi.c.a("multipleObjectsEnabled");
+        f45143b = a10.b(s1Var.b()).a();
+        c.b a11 = bj.c.a("multipleObjectsEnabled");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f46476c = a11.b(s1Var2.b()).a();
-        c.b a12 = zi.c.a("classificationEnabled");
+        f45144c = a11.b(s1Var2.b()).a();
+        c.b a12 = bj.c.a("classificationEnabled");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f46477d = a12.b(s1Var3.b()).a();
-        c.b a13 = zi.c.a("maxPerObjectLabelCount");
+        f45145d = a12.b(s1Var3.b()).a();
+        c.b a13 = bj.c.a("maxPerObjectLabelCount");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f46478e = a13.b(s1Var4.b()).a();
-        c.b a14 = zi.c.a("classificationConfidenceThreshold");
+        f45146e = a13.b(s1Var4.b()).a();
+        c.b a14 = bj.c.a("classificationConfidenceThreshold");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f46479f = a14.b(s1Var5.b()).a();
-        c.b a15 = zi.c.a("customLocalModelOptions");
+        f45147f = a14.b(s1Var5.b()).a();
+        c.b a15 = bj.c.a("customLocalModelOptions");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f46480g = a15.b(s1Var6.b()).a();
+        f45148g = a15.b(s1Var6.b()).a();
     }
 
     private x6() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

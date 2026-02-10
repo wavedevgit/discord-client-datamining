@@ -22,10 +22,10 @@ public abstract class f {
             String str = (String) it.next();
             Object b10 = ea.d.b();
             Object obj2 = b10;
-            if (!c10.f10425b.isEmpty()) {
+            if (!c10.f11002b.isEmpty()) {
                 obj2 = b10;
-                if (c10.f10425b.containsKey(str)) {
-                    String str2 = (String) c10.f10425b.get(str);
+                if (c10.f11002b.containsKey(str)) {
+                    String str2 = (String) c10.f11002b.get(str);
                     boolean isEmpty = str2.isEmpty();
                     String str3 = str2;
                     if (isEmpty) {
@@ -48,7 +48,7 @@ public abstract class f {
             if (!ea.d.j(obj2)) {
                 obj2 = ea.i.f(str, obj2);
             }
-            if (ea.d.m(obj2) && !ea.i.c(str, ea.d.h(obj2), c10.f10424a)) {
+            if (ea.d.m(obj2) && !ea.i.c(str, ea.d.h(obj2), c10.f11001a)) {
                 hashMap.put(str, ea.d.b());
             } else {
                 hashMap.put(str, obj2);
@@ -56,13 +56,13 @@ public abstract class f {
         }
         for (String str4 : hashSet) {
             ArrayList arrayList = new ArrayList();
-            String h10 = ea.d.h(ea.i.f(str4, ea.d.r((String) c10.f10425b.get(str4))));
-            if (!ea.d.m(h10) || ea.i.c(str4, ea.d.h(h10), c10.f10424a)) {
+            String h10 = ea.d.h(ea.i.f(str4, ea.d.r((String) c10.f11002b.get(str4))));
+            if (!ea.d.m(h10) || ea.i.c(str4, ea.d.h(h10), c10.f11001a)) {
                 arrayList.add(h10);
-                c10.f10424a.f(str4, arrayList);
+                c10.f11001a.f(str4, arrayList);
             }
         }
-        hashMap.put("locale", c10.f10424a);
+        hashMap.put("locale", c10.f11001a);
         return hashMap;
     }
 }

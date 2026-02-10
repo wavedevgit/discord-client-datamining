@@ -6,34 +6,34 @@ import android.os.IInterface;
 import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface j extends IInterface {
-    void p(String[] strArr);
+    void s(String[] strArr);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static abstract class a extends Binder implements j {
 
         /* renamed from: r3.j$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        private static class C0650a implements j {
+        private static class C0627a implements j {
 
             /* renamed from: c  reason: collision with root package name */
-            private IBinder f47535c;
+            private IBinder f45989c;
 
-            C0650a(IBinder iBinder) {
-                this.f47535c = iBinder;
+            C0627a(IBinder iBinder) {
+                this.f45989c = iBinder;
             }
 
             @Override // android.os.IInterface
             public IBinder asBinder() {
-                return this.f47535c;
+                return this.f45989c;
             }
 
             @Override // r3.j
-            public void p(String[] strArr) {
+            public void s(String[] strArr) {
                 Parcel obtain = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("androidx.room.IMultiInstanceInvalidationCallback");
                     obtain.writeStringArray(strArr);
-                    this.f47535c.transact(1, obtain, null, 1);
+                    this.f45989c.transact(1, obtain, null, 1);
                 } finally {
                     obtain.recycle();
                 }
@@ -52,7 +52,7 @@ public interface j extends IInterface {
             if (queryLocalInterface != null && (queryLocalInterface instanceof j)) {
                 return (j) queryLocalInterface;
             }
-            return new C0650a(iBinder);
+            return new C0627a(iBinder);
         }
 
         @Override // android.os.Binder
@@ -64,7 +64,7 @@ public interface j extends IInterface {
                 if (i10 != 1) {
                     return super.onTransact(i10, parcel, parcel2, i11);
                 }
-                p(parcel.createStringArray());
+                s(parcel.createStringArray());
                 return true;
             }
             parcel2.writeString("androidx.room.IMultiInstanceInvalidationCallback");

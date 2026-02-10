@@ -8,13 +8,13 @@ public final class e extends i {
     public static final Parcelable.Creator<e> CREATOR = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f36927e;
+    public final String f36302e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final String f36928i;
+    public final String f36303i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final String f36929o;
+    public final String f36304o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -36,9 +36,9 @@ public final class e extends i {
 
     public e(String str, String str2, String str3) {
         super("COMM");
-        this.f36927e = str;
-        this.f36928i = str2;
-        this.f36929o = str3;
+        this.f36302e = str;
+        this.f36303i = str2;
+        this.f36304o = str3;
     }
 
     public boolean equals(Object obj) {
@@ -47,7 +47,7 @@ public final class e extends i {
         }
         if (obj != null && e.class == obj.getClass()) {
             e eVar = (e) obj;
-            if (w0.c(this.f36928i, eVar.f36928i) && w0.c(this.f36927e, eVar.f36927e) && w0.c(this.f36929o, eVar.f36929o)) {
+            if (w0.c(this.f36303i, eVar.f36303i) && w0.c(this.f36302e, eVar.f36302e) && w0.c(this.f36304o, eVar.f36304o)) {
                 return true;
             }
         }
@@ -57,7 +57,7 @@ public final class e extends i {
     public int hashCode() {
         int i10;
         int i11;
-        String str = this.f36927e;
+        String str = this.f36302e;
         int i12 = 0;
         if (str != null) {
             i10 = str.hashCode();
@@ -65,14 +65,14 @@ public final class e extends i {
             i10 = 0;
         }
         int i13 = (527 + i10) * 31;
-        String str2 = this.f36928i;
+        String str2 = this.f36303i;
         if (str2 != null) {
             i11 = str2.hashCode();
         } else {
             i11 = 0;
         }
         int i14 = (i13 + i11) * 31;
-        String str3 = this.f36929o;
+        String str3 = this.f36304o;
         if (str3 != null) {
             i12 = str3.hashCode();
         }
@@ -81,20 +81,20 @@ public final class e extends i {
 
     @Override // md.i
     public String toString() {
-        return this.f36939d + ": language=" + this.f36927e + ", description=" + this.f36928i;
+        return this.f36314d + ": language=" + this.f36302e + ", description=" + this.f36303i;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f36939d);
-        parcel.writeString(this.f36927e);
-        parcel.writeString(this.f36929o);
+        parcel.writeString(this.f36314d);
+        parcel.writeString(this.f36302e);
+        parcel.writeString(this.f36304o);
     }
 
     e(Parcel parcel) {
         super("COMM");
-        this.f36927e = (String) w0.j(parcel.readString());
-        this.f36928i = (String) w0.j(parcel.readString());
-        this.f36929o = (String) w0.j(parcel.readString());
+        this.f36302e = (String) w0.j(parcel.readString());
+        this.f36303i = (String) w0.j(parcel.readString());
+        this.f36304o = (String) w0.j(parcel.readString());
     }
 }

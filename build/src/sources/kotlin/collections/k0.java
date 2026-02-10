@@ -8,15 +8,15 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public final class k0 implements Iterable, KMappedMarker {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function0 f31812d;
+    private final Function0 f32034d;
 
     public k0(Function0 iteratorFactory) {
         Intrinsics.checkNotNullParameter(iteratorFactory, "iteratorFactory");
-        this.f31812d = iteratorFactory;
+        this.f32034d = iteratorFactory;
     }
 
     @Override // java.lang.Iterable
     public Iterator iterator() {
-        return new l0((Iterator) this.f31812d.invoke());
+        return new l0((Iterator) this.f32034d.invoke());
     }
 }

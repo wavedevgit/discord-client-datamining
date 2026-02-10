@@ -1,86 +1,86 @@
 package qg;
 
+import bj.c;
 import com.facebook.react.devsupport.StackTraceHelper;
-import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class y5 implements zi.d {
+final class y5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final y5 f46521a = new y5();
+    static final y5 f45189a = new y5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f46522b;
+    private static final bj.c f45190b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f46523c;
+    private static final bj.c f45191c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f46524d;
+    private static final bj.c f45192d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final zi.c f46525e;
+    private static final bj.c f45193e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final zi.c f46526f;
+    private static final bj.c f45194f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final zi.c f46527g;
+    private static final bj.c f45195g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final zi.c f46528h;
+    private static final bj.c f45196h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final zi.c f46529i;
+    private static final bj.c f45197i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final zi.c f46530j;
+    private static final bj.c f45198j;
 
     static {
-        c.b a10 = zi.c.a(StackTraceHelper.NAME_KEY);
+        c.b a10 = bj.c.a(StackTraceHelper.NAME_KEY);
         s1 s1Var = new s1();
         s1Var.a(1);
-        f46522b = a10.b(s1Var.b()).a();
-        c.b a11 = zi.c.a("version");
+        f45190b = a10.b(s1Var.b()).a();
+        c.b a11 = bj.c.a("version");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f46523c = a11.b(s1Var2.b()).a();
-        c.b a12 = zi.c.a("source");
+        f45191c = a11.b(s1Var2.b()).a();
+        c.b a12 = bj.c.a("source");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f46524d = a12.b(s1Var3.b()).a();
-        c.b a13 = zi.c.a("uri");
+        f45192d = a12.b(s1Var3.b()).a();
+        c.b a13 = bj.c.a("uri");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f46525e = a13.b(s1Var4.b()).a();
-        c.b a14 = zi.c.a("hash");
+        f45193e = a13.b(s1Var4.b()).a();
+        c.b a14 = bj.c.a("hash");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f46526f = a14.b(s1Var5.b()).a();
-        c.b a15 = zi.c.a("modelType");
+        f45194f = a14.b(s1Var5.b()).a();
+        c.b a15 = bj.c.a("modelType");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f46527g = a15.b(s1Var6.b()).a();
-        c.b a16 = zi.c.a("size");
+        f45195g = a15.b(s1Var6.b()).a();
+        c.b a16 = bj.c.a("size");
         s1 s1Var7 = new s1();
         s1Var7.a(7);
-        f46528h = a16.b(s1Var7.b()).a();
-        c.b a17 = zi.c.a("hasLabelMap");
+        f45196h = a16.b(s1Var7.b()).a();
+        c.b a17 = bj.c.a("hasLabelMap");
         s1 s1Var8 = new s1();
         s1Var8.a(8);
-        f46529i = a17.b(s1Var8.b()).a();
-        c.b a18 = zi.c.a("isManifestModel");
+        f45197i = a17.b(s1Var8.b()).a();
+        c.b a18 = bj.c.a("isManifestModel");
         s1 s1Var9 = new s1();
         s1Var9.a(9);
-        f46530j = a18.b(s1Var9.b()).a();
+        f45198j = a18.b(s1Var9.b()).a();
     }
 
     private y5() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

@@ -3,17 +3,17 @@ package je;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public final ae.b f30133a;
+    public final ae.b f30933a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final long f30134b;
+    public final long f30934b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final long f30135c;
+    public final long f30935c;
 
     public e(ae.b bVar, long j10, long j11) {
-        this.f30133a = bVar;
-        this.f30134b = j10;
-        this.f30135c = j11;
+        this.f30933a = bVar;
+        this.f30934b = j10;
+        this.f30935c = j11;
     }
 }

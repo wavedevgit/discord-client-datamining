@@ -1,33 +1,37 @@
 package gn;
 
+import android.content.Context;
 import android.view.View;
-import en.j0;
-import en.k0;
-import en.n;
+import android.view.ViewGroup;
+import kotlin.jvm.functions.Function4;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KClass;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class f {
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final String b(View view) {
-        Object c10;
-        n nVar;
-        j0 d10 = k0.d(view);
-        String str = null;
-        if (d10 == null) {
-            c10 = null;
-        } else {
-            c10 = d10.c();
-        }
-        if (c10 == null) {
-            nVar = null;
-        } else {
-            nVar = (n) c10;
-        }
-        if (nVar != null) {
-            str = nVar.c();
-        }
-        if (str != null) {
-            return str;
-        }
-        throw new IllegalStateException(("Expected " + view + " to be showing a " + ((Object) n.class.getSimpleName()) + "<*> rendering, found " + nVar).toString());
+public final class f implements c0 {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final KClass f25804a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final Function4 f25805b;
+
+    public f(KClass type, Function4 viewConstructor) {
+        Intrinsics.checkNotNullParameter(type, "type");
+        Intrinsics.checkNotNullParameter(viewConstructor, "viewConstructor");
+        this.f25804a = type;
+        this.f25805b = viewConstructor;
+    }
+
+    @Override // gn.c0
+    public View a(Object initialRendering, a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
+        Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
+        Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
+        Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
+        return (View) this.f25805b.invoke(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+    }
+
+    @Override // gn.c0
+    public KClass getType() {
+        return this.f25804a;
     }
 }

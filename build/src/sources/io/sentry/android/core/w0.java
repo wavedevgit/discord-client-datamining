@@ -13,32 +13,32 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public final class w0 implements Closeable {
 
     /* renamed from: p  reason: collision with root package name */
-    private static w0 f27684p = new w0();
+    private static w0 f28619p = new w0();
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile b f27686e;
+    private volatile b f28621e;
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.util.a f27685d = new io.sentry.util.a();
+    private final io.sentry.util.a f28620d = new io.sentry.util.a();
 
     /* renamed from: i  reason: collision with root package name */
-    private a2 f27687i = new a2();
+    private a2 f28622i = new a2();
 
     /* renamed from: o  reason: collision with root package name */
-    private volatile Boolean f27688o = null;
+    private volatile Boolean f28623o = null;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
         void a();
 
-        void k();
+        void i();
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public final class b implements DefaultLifecycleObserver {
 
         /* renamed from: d  reason: collision with root package name */
-        final List f27689d = new a();
+        final List f28624d = new a();
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         class a extends CopyOnWriteArrayList {
@@ -49,12 +49,12 @@ public final class w0 implements Closeable {
             /* renamed from: b */
             public boolean add(a aVar) {
                 boolean add = super.add(aVar);
-                if (Boolean.FALSE.equals(w0.this.f27688o)) {
+                if (Boolean.FALSE.equals(w0.this.f28623o)) {
                     aVar.a();
                     return add;
                 }
-                if (Boolean.TRUE.equals(w0.this.f27688o)) {
-                    aVar.k();
+                if (Boolean.TRUE.equals(w0.this.f28623o)) {
+                    aVar.i();
                 }
                 return add;
             }
@@ -66,7 +66,7 @@ public final class w0 implements Closeable {
         @Override // androidx.lifecycle.DefaultLifecycleObserver
         public void onStart(LifecycleOwner lifecycleOwner) {
             w0.this.J(false);
-            for (a aVar : this.f27689d) {
+            for (a aVar : this.f28624d) {
                 aVar.a();
             }
         }
@@ -74,8 +74,8 @@ public final class w0 implements Closeable {
         @Override // androidx.lifecycle.DefaultLifecycleObserver
         public void onStop(LifecycleOwner lifecycleOwner) {
             w0.this.J(true);
-            for (a aVar : this.f27689d) {
-                aVar.k();
+            for (a aVar : this.f28624d) {
+                aVar.i();
             }
         }
     }
@@ -92,26 +92,26 @@ public final class w0 implements Closeable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void n(ILogger iLogger) {
-        b bVar = this.f27686e;
+        b bVar = this.f28621e;
         if (bVar != null) {
             try {
                 ProcessLifecycleOwner.m().getLifecycle().a(bVar);
             } catch (Throwable th2) {
-                this.f27686e = null;
+                this.f28621e = null;
                 iLogger.b(SentryLevel.ERROR, "AppState failed to get Lifecycle and could not install lifecycle observer.", th2);
             }
         }
     }
 
     private void p(final ILogger iLogger) {
-        if (this.f27686e == null) {
+        if (this.f28621e == null) {
             try {
-                ProcessLifecycleOwner.b bVar = ProcessLifecycleOwner.f4583t;
-                this.f27686e = new b();
+                ProcessLifecycleOwner.b bVar = ProcessLifecycleOwner.f4593t;
+                this.f28621e = new b();
                 if (io.sentry.android.core.internal.util.j.e().a()) {
                     n(iLogger);
                 } else {
-                    this.f27687i.b(new Runnable() { // from class: io.sentry.android.core.u0
+                    this.f28622i.b(new Runnable() { // from class: io.sentry.android.core.u0
                         @Override // java.lang.Runnable
                         public final void run() {
                             w0.this.n(iLogger);
@@ -127,14 +127,14 @@ public final class w0 implements Closeable {
     }
 
     public static w0 s() {
-        return f27684p;
+        return f28619p;
     }
 
     public void C(a aVar) {
-        io.sentry.a1 a10 = this.f27685d.a();
+        io.sentry.a1 a10 = this.f28620d.a();
         try {
-            if (this.f27686e != null) {
-                this.f27686e.f27689d.remove(aVar);
+            if (this.f28621e != null) {
+                this.f28621e.f28624d.remove(aVar);
             }
             if (a10 != null) {
                 a10.close();
@@ -152,25 +152,25 @@ public final class w0 implements Closeable {
     }
 
     void J(boolean z10) {
-        this.f27688o = Boolean.valueOf(z10);
+        this.f28623o = Boolean.valueOf(z10);
     }
 
     public void Q() {
-        if (this.f27686e == null) {
+        if (this.f28621e == null) {
             return;
         }
-        io.sentry.a1 a10 = this.f27685d.a();
+        io.sentry.a1 a10 = this.f28620d.a();
         try {
-            final b bVar = this.f27686e;
-            this.f27686e.f27689d.clear();
-            this.f27686e = null;
+            final b bVar = this.f28621e;
+            this.f28621e.f28624d.clear();
+            this.f28621e = null;
             if (a10 != null) {
                 a10.close();
             }
             if (io.sentry.android.core.internal.util.j.e().a()) {
                 I(bVar);
             } else {
-                this.f27687i.b(new Runnable() { // from class: io.sentry.android.core.v0
+                this.f28622i.b(new Runnable() { // from class: io.sentry.android.core.v0
                     @Override // java.lang.Runnable
                     public final void run() {
                         w0.this.I(bVar);
@@ -195,11 +195,11 @@ public final class w0 implements Closeable {
     }
 
     public void m(a aVar) {
-        io.sentry.a1 a10 = this.f27685d.a();
+        io.sentry.a1 a10 = this.f28620d.a();
         try {
             p(io.sentry.i2.e());
-            if (this.f27686e != null) {
-                this.f27686e.f27689d.add(aVar);
+            if (this.f28621e != null) {
+                this.f28621e.f28624d.add(aVar);
             }
             if (a10 != null) {
                 a10.close();
@@ -217,13 +217,13 @@ public final class w0 implements Closeable {
     }
 
     public Boolean y() {
-        return this.f27688o;
+        return this.f28623o;
     }
 
     public void z(k7 k7Var) {
         ILogger e10;
-        if (this.f27686e == null) {
-            io.sentry.a1 a10 = this.f27685d.a();
+        if (this.f28621e == null) {
+            io.sentry.a1 a10 = this.f28620d.a();
             try {
                 if (k7Var != null) {
                     e10 = k7Var.getLogger();

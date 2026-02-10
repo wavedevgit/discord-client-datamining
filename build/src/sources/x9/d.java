@@ -17,70 +17,70 @@ import u9.k;
 public class d implements sa.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ja.b f54699a;
+    private final ja.b f54431a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ScheduledExecutorService f54700b;
+    private final ScheduledExecutorService f54432b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ExecutorService f54701c;
+    private final ExecutorService f54433c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final w8.b f54702d;
+    private final w8.b f54434d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final PlatformBitmapFactory f54703e;
+    private final PlatformBitmapFactory f54435e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final n f54704f;
+    private final n f54436f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Supplier f54705g;
+    private final Supplier f54437g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Supplier f54706h;
+    private final Supplier f54438h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Supplier f54707i;
+    private final Supplier f54439i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Supplier f54708j;
+    private final Supplier f54440j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Supplier f54709k;
+    private final Supplier f54441k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Supplier f54710l;
+    private final Supplier f54442l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Supplier f54711m;
+    private final Supplier f54443m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final Supplier f54712n = m.f43065b;
+    private final Supplier f54444n = m.f41523b;
 
     public d(ja.b bVar, ScheduledExecutorService scheduledExecutorService, ExecutorService executorService, w8.b bVar2, PlatformBitmapFactory platformBitmapFactory, n nVar, Supplier supplier, Supplier supplier2, Supplier supplier3, Supplier supplier4, Supplier supplier5, Supplier supplier6, Supplier supplier7) {
-        this.f54699a = bVar;
-        this.f54700b = scheduledExecutorService;
-        this.f54701c = executorService;
-        this.f54702d = bVar2;
-        this.f54703e = platformBitmapFactory;
-        this.f54704f = nVar;
-        this.f54705g = supplier;
-        this.f54706h = supplier2;
-        this.f54707i = supplier3;
-        this.f54708j = supplier4;
-        this.f54710l = supplier6;
-        this.f54709k = supplier5;
-        this.f54711m = supplier7;
+        this.f54431a = bVar;
+        this.f54432b = scheduledExecutorService;
+        this.f54433c = executorService;
+        this.f54434d = bVar2;
+        this.f54435e = platformBitmapFactory;
+        this.f54436f = nVar;
+        this.f54437g = supplier;
+        this.f54438h = supplier2;
+        this.f54439i = supplier3;
+        this.f54440j = supplier4;
+        this.f54442l = supplier6;
+        this.f54441k = supplier5;
+        this.f54443m = supplier7;
     }
 
     private ha.a c(e eVar) {
         ha.c d10 = eVar.d();
-        return this.f54699a.a(eVar, new Rect(0, 0, d10.getWidth(), d10.getHeight()));
+        return this.f54431a.a(eVar, new Rect(0, 0, d10.getWidth(), d10.getHeight()));
     }
 
     private ja.c d(e eVar) {
-        return new ja.c(new r9.a(eVar.hashCode(), ((Boolean) this.f54707i.get()).booleanValue()), this.f54704f);
+        return new ja.c(new r9.a(eVar.hashCode(), ((Boolean) this.f54439i.get()).booleanValue()), this.f54436f);
     }
 
     private p9.a e(e eVar, Bitmap.Config config, ca.c cVar) {
@@ -89,8 +89,8 @@ public class d implements sa.a {
         ha.a c10 = c(eVar);
         v9.a aVar2 = new v9.a(c10);
         q9.b f10 = f(eVar);
-        v9.b bVar2 = new v9.b(f10, c10, ((Boolean) this.f54708j.get()).booleanValue());
-        int intValue = ((Integer) this.f54706h.get()).intValue();
+        v9.b bVar2 = new v9.b(f10, c10, ((Boolean) this.f54440j.get()).booleanValue());
+        int intValue = ((Integer) this.f54438h.get()).intValue();
         if (intValue > 0) {
             aVar = new s9.d(intValue);
             bVar = g(bVar2, config);
@@ -98,14 +98,14 @@ public class d implements sa.a {
             aVar = null;
             bVar = null;
         }
-        if (((Boolean) this.f54708j.get()).booleanValue()) {
-            aVar = new f(eVar.e(), aVar2, bVar2, new k(this.f54703e, ((Integer) this.f54710l.get()).intValue(), ((Integer) this.f54711m.get()).intValue()), ((Boolean) this.f54709k.get()).booleanValue());
+        if (((Boolean) this.f54440j.get()).booleanValue()) {
+            aVar = new f(eVar.e(), aVar2, bVar2, new k(this.f54435e, ((Integer) this.f54442l.get()).intValue(), ((Integer) this.f54443m.get()).intValue()), ((Boolean) this.f54441k.get()).booleanValue());
         }
-        return p9.c.s(new q9.a(this.f54703e, f10, aVar2, bVar2, ((Boolean) this.f54708j.get()).booleanValue(), aVar, bVar, null), this.f54702d, this.f54700b);
+        return p9.c.s(new q9.a(this.f54435e, f10, aVar2, bVar2, ((Boolean) this.f54440j.get()).booleanValue(), aVar, bVar, null), this.f54434d, this.f54432b);
     }
 
     private q9.b f(e eVar) {
-        int intValue = ((Integer) this.f54705g.get()).intValue();
+        int intValue = ((Integer) this.f54437g.get()).intValue();
         if (intValue != 1) {
             if (intValue != 2) {
                 if (intValue != 3) {
@@ -119,11 +119,11 @@ public class d implements sa.a {
     }
 
     private s9.b g(q9.c cVar, Bitmap.Config config) {
-        PlatformBitmapFactory platformBitmapFactory = this.f54703e;
+        PlatformBitmapFactory platformBitmapFactory = this.f54435e;
         if (config == null) {
             config = Bitmap.Config.ARGB_8888;
         }
-        return new s9.c(platformBitmapFactory, cVar, config, this.f54701c);
+        return new s9.c(platformBitmapFactory, cVar, config, this.f54433c);
     }
 
     @Override // sa.a
@@ -138,15 +138,15 @@ public class d implements sa.a {
             return null;
         }
         ta.c cVar = (ta.c) eVar;
-        ha.c D0 = cVar.D0();
-        e eVar2 = (e) j.g(cVar.G0());
-        if (D0 != null) {
-            config = D0.y();
+        ha.c C0 = cVar.C0();
+        e eVar2 = (e) j.g(cVar.E0());
+        if (C0 != null) {
+            config = C0.y();
         } else {
             config = null;
         }
         p9.a e10 = e(eVar2, config, null);
-        if (((Boolean) this.f54712n.get()).booleanValue()) {
+        if (((Boolean) this.f54444n.get()).booleanValue()) {
             return new w9.f(e10);
         }
         return new w9.b(e10);

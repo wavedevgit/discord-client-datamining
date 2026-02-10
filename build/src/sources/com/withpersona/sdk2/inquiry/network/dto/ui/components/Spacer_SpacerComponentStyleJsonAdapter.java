@@ -52,7 +52,7 @@ public final class Spacer_SpacerComponentStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 spacerHeightStyle = (AttributeStyles.SpacerHeightStyle) this.nullableSpacerHeightStyleAdapter.fromJson(reader);
@@ -68,7 +68,7 @@ public final class Spacer_SpacerComponentStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, Spacer.SpacerComponentStyle spacerComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (spacerComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("height");
             this.nullableSpacerHeightStyleAdapter.toJson(writer, spacerComponentStyle.getHeight());
             writer.J("width");

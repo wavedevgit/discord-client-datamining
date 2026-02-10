@@ -111,16 +111,28 @@ public abstract class ByteString implements Iterable<Byte> {
     public abstract int g(int i10, int i11, int i12);
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public abstract int h();
+    public abstract int i();
+
+    public boolean isEmpty() {
+        if (size() == 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public abstract boolean isValidUtf8();
+
+    @Override // java.lang.Iterable
+    public abstract Iterator<Byte> iterator();
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void i(OutputStream outputStream, int i10, int i11) {
+    public void j(OutputStream outputStream, int i10, int i11) {
         if (i10 >= 0) {
             if (i11 >= 0) {
                 int i12 = i10 + i11;
                 if (i12 <= size()) {
                     if (i11 > 0) {
-                        j(outputStream, i10, i11);
+                        k(outputStream, i10, i11);
                         return;
                     }
                     return;
@@ -141,20 +153,8 @@ public abstract class ByteString implements Iterable<Byte> {
         throw new IndexOutOfBoundsException(sb4.toString());
     }
 
-    public boolean isEmpty() {
-        if (size() == 0) {
-            return true;
-        }
-        return false;
-    }
-
-    public abstract boolean isValidUtf8();
-
-    @Override // java.lang.Iterable
-    public abstract Iterator<Byte> iterator();
-
     /* JADX INFO: Access modifiers changed from: package-private */
-    public abstract void j(OutputStream outputStream, int i10, int i11);
+    public abstract void k(OutputStream outputStream, int i10, int i11);
 
     public abstract CodedInputStream newCodedInput();
 
@@ -188,28 +188,28 @@ public abstract class ByteString implements Iterable<Byte> {
     public static final class Output extends OutputStream {
 
         /* renamed from: q  reason: collision with root package name */
-        private static final byte[] f33659q = new byte[0];
+        private static final byte[] f33881q = new byte[0];
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f33660d;
+        private final int f33882d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ArrayList f33661e;
+        private final ArrayList f33883e;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f33662i;
+        private int f33884i;
 
         /* renamed from: o  reason: collision with root package name */
-        private byte[] f33663o;
+        private byte[] f33885o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f33664p;
+        private int f33886p;
 
         Output(int i10) {
             if (i10 >= 0) {
-                this.f33660d = i10;
-                this.f33661e = new ArrayList();
-                this.f33663o = new byte[i10];
+                this.f33882d = i10;
+                this.f33883e = new ArrayList();
+                this.f33885o = new byte[i10];
                 return;
             }
             throw new IllegalArgumentException("Buffer size < 0");
@@ -221,36 +221,36 @@ public abstract class ByteString implements Iterable<Byte> {
             return bArr2;
         }
 
-        private void g(int i10) {
-            this.f33661e.add(new b(this.f33663o));
-            int length = this.f33662i + this.f33663o.length;
-            this.f33662i = length;
-            this.f33663o = new byte[Math.max(this.f33660d, Math.max(i10, length >>> 1))];
-            this.f33664p = 0;
+        private void h(int i10) {
+            this.f33883e.add(new b(this.f33885o));
+            int length = this.f33884i + this.f33885o.length;
+            this.f33884i = length;
+            this.f33885o = new byte[Math.max(this.f33882d, Math.max(i10, length >>> 1))];
+            this.f33886p = 0;
         }
 
-        private void k() {
-            int i10 = this.f33664p;
-            byte[] bArr = this.f33663o;
+        private void i() {
+            int i10 = this.f33886p;
+            byte[] bArr = this.f33885o;
             if (i10 < bArr.length) {
                 if (i10 > 0) {
-                    this.f33661e.add(new b(a(bArr, i10)));
+                    this.f33883e.add(new b(a(bArr, i10)));
                 }
             } else {
-                this.f33661e.add(new b(this.f33663o));
-                this.f33663o = f33659q;
+                this.f33883e.add(new b(this.f33885o));
+                this.f33885o = f33881q;
             }
-            this.f33662i += this.f33664p;
-            this.f33664p = 0;
+            this.f33884i += this.f33886p;
+            this.f33886p = 0;
         }
 
         public synchronized int size() {
-            return this.f33662i + this.f33664p;
+            return this.f33884i + this.f33886p;
         }
 
         public synchronized ByteString toByteString() {
-            k();
-            return ByteString.copyFrom(this.f33661e);
+            i();
+            return ByteString.copyFrom(this.f33883e);
         }
 
         public String toString() {
@@ -260,12 +260,12 @@ public abstract class ByteString implements Iterable<Byte> {
         @Override // java.io.OutputStream
         public synchronized void write(int i10) {
             try {
-                if (this.f33664p == this.f33663o.length) {
-                    g(1);
+                if (this.f33886p == this.f33885o.length) {
+                    h(1);
                 }
-                byte[] bArr = this.f33663o;
-                int i11 = this.f33664p;
-                this.f33664p = i11 + 1;
+                byte[] bArr = this.f33885o;
+                int i11 = this.f33886p;
+                this.f33886p = i11 + 1;
                 bArr[i11] = (byte) i10;
             } catch (Throwable th2) {
                 throw th2;
@@ -275,19 +275,19 @@ public abstract class ByteString implements Iterable<Byte> {
         @Override // java.io.OutputStream
         public synchronized void write(byte[] bArr, int i10, int i11) {
             try {
-                byte[] bArr2 = this.f33663o;
+                byte[] bArr2 = this.f33885o;
                 int length = bArr2.length;
-                int i12 = this.f33664p;
+                int i12 = this.f33886p;
                 if (i11 <= length - i12) {
                     System.arraycopy(bArr, i10, bArr2, i12, i11);
-                    this.f33664p += i11;
+                    this.f33886p += i11;
                 } else {
                     int length2 = bArr2.length - i12;
                     System.arraycopy(bArr, i10, bArr2, i12, length2);
                     int i13 = i11 - length2;
-                    g(i13);
-                    System.arraycopy(bArr, i10 + length2, this.f33663o, 0, i13);
-                    this.f33664p = i13;
+                    h(i13);
+                    System.arraycopy(bArr, i10 + length2, this.f33885o, 0, i13);
+                    this.f33886p = i13;
                 }
             } catch (Throwable th2) {
                 throw th2;

@@ -937,14 +937,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = _closure2_slot0;
                             var1 = null;
                             if (!(var1 != var4)) {
-                                _fun27539_ip = 46;
+                                _fun27539_ip = 45;
                                 continue _fun27539
                             }
-                        case 34:
+                        case 33:
                             var1 = _closure2_slot0;
                             var0 = undefined;
                             var0 = var1.bind(var0)(var3, var2);
-                        case 46:
+                        case 45:
                             var0 = undefined;
                             return var0;
                     }
@@ -963,14 +963,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = _closure2_slot1;
                             var1 = null;
                             if (!(var1 != var4)) {
-                                _fun27540_ip = 46;
+                                _fun27540_ip = 45;
                                 continue _fun27540
                             }
-                        case 34:
+                        case 33:
                             var1 = _closure2_slot1;
                             var0 = undefined;
                             var0 = var1.bind(var0)(var3, var2);
-                        case 46:
+                        case 45:
                             var0 = undefined;
                             return var0;
                     }
@@ -989,14 +989,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = _closure2_slot2;
                             var1 = null;
                             if (!(var1 != var4)) {
-                                _fun27541_ip = 46;
+                                _fun27541_ip = 45;
                                 continue _fun27541
                             }
-                        case 34:
+                        case 33:
                             var1 = _closure2_slot2;
                             var0 = undefined;
                             var0 = var1.bind(var0)(var3, var2);
-                        case 46:
+                        case 45:
                             var0 = undefined;
                             return var0;
                     }
@@ -1015,14 +1015,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = _closure2_slot3;
                             var1 = null;
                             if (!(var1 != var4)) {
-                                _fun27542_ip = 48;
+                                _fun27542_ip = 47;
                                 continue _fun27542
                             }
-                        case 36:
+                        case 35:
                             var1 = _closure2_slot3;
                             var0 = undefined;
                             var0 = var1.bind(var0)(var3, var2);
-                        case 48:
+                        case 47:
                             var0 = undefined;
                             return var0;
                     }
@@ -1041,14 +1041,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = _closure2_slot4;
                             var1 = null;
                             if (!(var1 != var4)) {
-                                _fun27543_ip = 48;
+                                _fun27543_ip = 47;
                                 continue _fun27543
                             }
-                        case 36:
+                        case 35:
                             var1 = _closure2_slot4;
                             var0 = undefined;
                             var0 = var1.bind(var0)(var3, var2);
-                        case 48:
+                        case 47:
                             var0 = undefined;
                             return var0;
                     }
@@ -1066,14 +1066,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = _closure2_slot5;
                             var1 = null;
                             if (!(var1 != var3)) {
-                                _fun27544_ip = 41;
+                                _fun27544_ip = 40;
                                 continue _fun27544
                             }
-                        case 30:
+                        case 29:
                             var1 = _closure2_slot5;
                             var0 = undefined;
                             var0 = var1.bind(var0)(var2);
-                        case 41:
+                        case 40:
                             var0 = undefined;
                             return var0;
                     }
@@ -1102,27 +1102,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var2.bind(var3)(var1);
                             var4 = null;
                             if (!(var4 === var2)) {
-                                _fun27545_ip = 98;
+                                _fun27545_ip = 97;
                                 continue _fun27545
                             }
-                        case 71:
+                        case 70:
                             var1 = global;
                             var5 = var1.console;
                             var3 = var5.warn;
                             var1 = '[Rive] Unknown error type received from native: ';
                             var1 = var3.bind(var5)(var1, var6);
-                            _fun27545_ip = 118;
+                            _fun27545_ip = 117;
                             continue _fun27545;
-                        case 98:
+                        case 97:
                             var3 = _closure2_slot6;
                             if (!(var4 != var3)) {
-                                _fun27545_ip = 118;
+                                _fun27545_ip = 117;
                                 continue _fun27545
                             }
-                        case 109:
+                        case 108:
                             var1 = _closure2_slot6;
                             var1 = var1.bind(var0)(var2);
-                        case 118:
+                        case 117:
                             return var0;
                     }
                 };

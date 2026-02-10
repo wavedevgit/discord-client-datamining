@@ -8,31 +8,31 @@ import com.facebook.react.views.textinput.ReactTextChangedEvent;
 public class b extends Event {
 
     /* renamed from: a  reason: collision with root package name */
-    private final double f17556a;
+    private final double f18305a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f17557b;
+    private final boolean f18306b;
 
     public b(int i10, double d10, boolean z10) {
         super(i10);
-        this.f17556a = d10;
-        this.f17557b = z10;
+        this.f18305a = d10;
+        this.f18306b = z10;
     }
 
-    private WritableMap c() {
+    private WritableMap d() {
         WritableMap createMap = Arguments.createMap();
         createMap.putInt("target", getViewTag());
-        createMap.putDouble("value", a());
-        createMap.putBoolean("fromUser", b());
+        createMap.putDouble("value", b());
+        createMap.putBoolean("fromUser", c());
         return createMap;
     }
 
-    public double a() {
-        return this.f17556a;
+    public double b() {
+        return this.f18305a;
     }
 
-    public boolean b() {
-        return this.f17557b;
+    public boolean c() {
+        return this.f18306b;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -42,7 +42,7 @@ public class b extends Event {
 
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
-        return c();
+        return d();
     }
 
     @Override // com.facebook.react.uimanager.events.Event

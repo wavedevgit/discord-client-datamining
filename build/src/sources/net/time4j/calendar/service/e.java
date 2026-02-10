@@ -1,40 +1,40 @@
 package net.time4j.calendar.service;
 
+import bu.o;
+import bu.q;
+import bu.v;
+import cu.l;
+import cu.m;
+import cu.s;
+import cu.t;
 import java.text.ParsePosition;
 import java.util.Locale;
-import st.o;
-import st.q;
-import st.v;
-import tt.l;
-import tt.m;
-import tt.s;
-import tt.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class e extends d implements l, t {
     private static final long serialVersionUID = -2452569351302286113L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Class f38410o;
+    private final transient Class f37414o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient String f38411p;
+    private final transient String f37415p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient v f38412q;
+    private final transient v f37416q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient v f38413r;
+    private final transient v f37417r;
 
     public e(String str, Class cls, Class cls2, char c10) {
         super(str, cls, c10, N(c10));
-        this.f38410o = cls2;
-        this.f38411p = H(cls);
-        this.f38412q = null;
-        this.f38413r = null;
+        this.f37414o = cls2;
+        this.f37415p = H(cls);
+        this.f37416q = null;
+        this.f37417r = null;
     }
 
     private static String H(Class cls) {
-        tt.c cVar = (tt.c) cls.getAnnotation(tt.c.class);
+        cu.c cVar = (cu.c) cls.getAnnotation(cu.c.class);
         if (cVar == null) {
             return "iso8601";
         }
@@ -45,9 +45,9 @@ public abstract class e extends d implements l, t {
         return c10 == 'E';
     }
 
-    protected s G(st.d dVar, m mVar, boolean z10) {
-        tt.v vVar = (tt.v) dVar.b(tt.a.f51008g, tt.v.WIDE);
-        tt.b c10 = tt.b.c(I(dVar), (Locale) dVar.b(tt.a.f51004c, Locale.ROOT));
+    protected s G(bu.d dVar, m mVar, boolean z10) {
+        cu.v vVar = (cu.v) dVar.b(cu.a.f21114g, cu.v.WIDE);
+        cu.b c10 = cu.b.c(I(dVar), (Locale) dVar.b(cu.a.f21110c, Locale.ROOT));
         if (L()) {
             if (z10) {
                 return c10.g(vVar, mVar);
@@ -59,18 +59,18 @@ public abstract class e extends d implements l, t {
             if (K()) {
                 return c10.b(vVar);
             }
-            return c10.n(name(), this.f38410o, new String[0]);
+            return c10.n(name(), this.f37414o, new String[0]);
         }
     }
 
-    protected String I(st.d dVar) {
+    protected String I(bu.d dVar) {
         if (!L() && !K()) {
             if (M()) {
                 return "iso8601";
             }
-            return this.f38411p;
+            return this.f37415p;
         }
-        return (String) dVar.b(tt.a.f51003b, this.f38411p);
+        return (String) dVar.b(cu.a.f21109b, this.f37415p);
     }
 
     protected boolean J(o oVar) {
@@ -97,11 +97,11 @@ public abstract class e extends d implements l, t {
 
     public abstract int O(Enum r12);
 
-    @Override // tt.t
+    @Override // cu.t
     /* renamed from: P */
-    public Enum l(CharSequence charSequence, ParsePosition parsePosition, st.d dVar) {
+    public Enum l(CharSequence charSequence, ParsePosition parsePosition, bu.d dVar) {
         int index = parsePosition.getIndex();
-        st.c cVar = tt.a.f51009h;
+        bu.c cVar = cu.a.f21115h;
         m mVar = m.FORMAT;
         m mVar2 = (m) dVar.b(cVar, mVar);
         Enum c10 = G(dVar, mVar2, false).c(charSequence, parsePosition, getType(), dVar);
@@ -110,7 +110,7 @@ public abstract class e extends d implements l, t {
             parsePosition.setIndex(index);
             c10 = G(dVar, mVar2, true).c(charSequence, parsePosition, getType(), dVar);
         }
-        if (c10 == null && ((Boolean) dVar.b(tt.a.f51012k, Boolean.TRUE)).booleanValue()) {
+        if (c10 == null && ((Boolean) dVar.b(cu.a.f21118k, Boolean.TRUE)).booleanValue()) {
             parsePosition.setErrorIndex(-1);
             parsePosition.setIndex(index);
             if (mVar2 == mVar) {
@@ -127,24 +127,19 @@ public abstract class e extends d implements l, t {
         return c10;
     }
 
-    @Override // tt.l
+    @Override // cu.l
     /* renamed from: Q */
-    public int x(Enum r12, o oVar, st.d dVar) {
+    public int e(Enum r12, o oVar, bu.d dVar) {
         return O(r12);
     }
 
-    @Override // st.p
+    @Override // bu.p
     public Class getType() {
-        return this.f38410o;
+        return this.f37414o;
     }
 
-    @Override // tt.t
-    public void o(o oVar, Appendable appendable, st.d dVar) {
-        appendable.append(G(dVar, (m) dVar.b(tt.a.f51009h, m.FORMAT), J(oVar)).f((Enum) oVar.t(this)));
-    }
-
-    @Override // tt.l
-    public boolean u(q qVar, int i10) {
+    @Override // cu.l
+    public boolean i(q qVar, int i10) {
         Enum[] enumArr;
         for (Enum r42 : (Enum[]) getType().getEnumConstants()) {
             if (O(r42) == i10) {
@@ -153,5 +148,10 @@ public abstract class e extends d implements l, t {
             }
         }
         return false;
+    }
+
+    @Override // cu.t
+    public void w(o oVar, Appendable appendable, bu.d dVar) {
+        appendable.append(G(dVar, (m) dVar.b(cu.a.f21115h, m.FORMAT), J(oVar)).f((Enum) oVar.k(this)));
     }
 }

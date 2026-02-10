@@ -1,41 +1,49 @@
 package yh;
 
+import android.os.Bundle;
 import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
+import sg.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a implements IInterface {
+public interface a extends IInterface {
 
-    /* renamed from: c  reason: collision with root package name */
-    private final IBinder f55633c;
+    /* renamed from: yh.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static abstract class AbstractBinderC0776a extends sg.b implements a {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f55634d;
+        /* renamed from: yh.a$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static class C0777a extends sg.a implements a {
+            C0777a(IBinder iBinder) {
+                super(iBinder, "com.google.android.play.agesignals.protocol.IAgeSignalsService");
+            }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public a(IBinder iBinder, String str) {
-        this.f55633c = iBinder;
-        this.f55634d = str;
-    }
+            @Override // yh.a
+            public void Q(String str, Bundle bundle, b bVar) {
+                Parcel e10 = e();
+                e10.writeString(str);
+                c.c(e10, bundle);
+                if (bVar == null) {
+                    e10.writeStrongBinder(null);
+                } else {
+                    e10.writeStrongBinder(bVar.asBinder());
+                }
+                f(1, e10);
+            }
+        }
 
-    @Override // android.os.IInterface
-    public final IBinder asBinder() {
-        return this.f55633c;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final Parcel e() {
-        Parcel obtain = Parcel.obtain();
-        obtain.writeInterfaceToken(this.f55634d);
-        return obtain;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final void f(int i10, Parcel parcel) {
-        try {
-            this.f55633c.transact(i10, parcel, null, 1);
-        } finally {
-            parcel.recycle();
+        public static a f(IBinder iBinder) {
+            if (iBinder == null) {
+                return null;
+            }
+            IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.play.agesignals.protocol.IAgeSignalsService");
+            if (queryLocalInterface instanceof a) {
+                return (a) queryLocalInterface;
+            }
+            return new C0777a(iBinder);
         }
     }
+
+    void Q(String str, Bundle bundle, b bVar);
 }

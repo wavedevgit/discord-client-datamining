@@ -14,38 +14,38 @@ import zg.k;
 public final class d extends ff.d implements w {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final a.g f30870k;
+    private static final a.g f31728k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final a.AbstractC0331a f30871l;
+    private static final a.AbstractC0316a f31729l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final ff.a f30872m;
+    private static final ff.a f31730m;
 
     /* renamed from: n  reason: collision with root package name */
-    public static final /* synthetic */ int f30873n = 0;
+    public static final /* synthetic */ int f31731n = 0;
 
     static {
         a.g gVar = new a.g();
-        f30870k = gVar;
+        f31728k = gVar;
         c cVar = new c();
-        f30871l = cVar;
-        f30872m = new ff.a("ClientTelemetry.API", cVar, gVar);
+        f31729l = cVar;
+        f31730m = new ff.a("ClientTelemetry.API", cVar, gVar);
     }
 
     public d(Context context, x xVar) {
-        super(context, f30872m, xVar, d.a.f22610c);
+        super(context, f31730m, xVar, d.a.f23735c);
     }
 
     @Override // hf.w
     public final Task k(final u uVar) {
         q.a a10 = q.a();
-        a10.d(gg.d.f24395a);
+        a10.d(gg.d.f25695a);
         a10.c(false);
         a10.b(new m() { // from class: kf.b
             @Override // gf.m
             public final void accept(Object obj, Object obj2) {
-                int i10 = d.f30873n;
+                int i10 = d.f31731n;
                 ((a) ((e) obj).C()).W0(u.this);
                 ((k) obj2).c(null);
             }

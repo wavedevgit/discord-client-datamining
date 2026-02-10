@@ -26,16 +26,16 @@ import java.util.Map;
 public class d implements com.android.volley.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f20516a;
+    private final Map f21463a;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f20517b;
+    private long f21464b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f20518c;
+    private final c f21465c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f20519d;
+    private final int f21466d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface c {
@@ -43,10 +43,10 @@ public class d implements com.android.volley.b {
     }
 
     public d(c cVar, int i10) {
-        this.f20516a = new LinkedHashMap(16, 0.75f, true);
-        this.f20517b = 0L;
-        this.f20518c = cVar;
-        this.f20519d = i10;
+        this.f21463a = new LinkedHashMap(16, 0.75f, true);
+        this.f21464b = 0L;
+        this.f21465c = cVar;
+        this.f21466d = i10;
     }
 
     private String g(String str) {
@@ -56,50 +56,50 @@ public class d implements com.android.volley.b {
     }
 
     private void h() {
-        if (!this.f20518c.get().exists()) {
+        if (!this.f21465c.get().exists()) {
             v.b("Re-initializing cache after external clearing.", new Object[0]);
-            this.f20516a.clear();
-            this.f20517b = 0L;
+            this.f21463a.clear();
+            this.f21464b = 0L;
             initialize();
         }
     }
 
     private void i() {
-        if (this.f20517b >= this.f20519d) {
+        if (this.f21464b >= this.f21466d) {
             int i10 = 0;
-            if (v.f8245b) {
+            if (v.f8822b) {
                 v.e("Pruning old cache entries.", new Object[0]);
             }
-            long j10 = this.f20517b;
+            long j10 = this.f21464b;
             long elapsedRealtime = SystemClock.elapsedRealtime();
-            Iterator it = this.f20516a.entrySet().iterator();
+            Iterator it = this.f21463a.entrySet().iterator();
             while (it.hasNext()) {
                 a aVar = (a) ((Map.Entry) it.next()).getValue();
-                if (f(aVar.f20521b).delete()) {
-                    this.f20517b -= aVar.f20520a;
+                if (f(aVar.f21468b).delete()) {
+                    this.f21464b -= aVar.f21467a;
                 } else {
-                    String str = aVar.f20521b;
+                    String str = aVar.f21468b;
                     v.b("Could not delete cache entry for key=%s, filename=%s", str, g(str));
                 }
                 it.remove();
                 i10++;
-                if (((float) this.f20517b) < this.f20519d * 0.9f) {
+                if (((float) this.f21464b) < this.f21466d * 0.9f) {
                     break;
                 }
             }
-            if (v.f8245b) {
-                v.e("pruned %d files, %d bytes, %d ms", Integer.valueOf(i10), Long.valueOf(this.f20517b - j10), Long.valueOf(SystemClock.elapsedRealtime() - elapsedRealtime));
+            if (v.f8822b) {
+                v.e("pruned %d files, %d bytes, %d ms", Integer.valueOf(i10), Long.valueOf(this.f21464b - j10), Long.valueOf(SystemClock.elapsedRealtime() - elapsedRealtime));
             }
         }
     }
 
     private void j(String str, a aVar) {
-        if (!this.f20516a.containsKey(str)) {
-            this.f20517b += aVar.f20520a;
+        if (!this.f21463a.containsKey(str)) {
+            this.f21464b += aVar.f21467a;
         } else {
-            this.f20517b += aVar.f20520a - ((a) this.f20516a.get(str)).f20520a;
+            this.f21464b += aVar.f21467a - ((a) this.f21463a.get(str)).f21467a;
         }
-        this.f20516a.put(str, aVar);
+        this.f21463a.put(str, aVar);
     }
 
     private static int k(InputStream inputStream) {
@@ -140,9 +140,9 @@ public class d implements com.android.volley.b {
     }
 
     private void q(String str) {
-        a aVar = (a) this.f20516a.remove(str);
+        a aVar = (a) this.f21463a.remove(str);
         if (aVar != null) {
-            this.f20517b -= aVar.f20520a;
+            this.f21464b -= aVar.f21467a;
         }
     }
 
@@ -199,7 +199,7 @@ public class d implements com.android.volley.b {
 
     @Override // com.android.volley.b
     public synchronized b.a a(String str) {
-        a aVar = (a) this.f20516a.get(str);
+        a aVar = (a) this.f21463a.get(str);
         if (aVar == null) {
             return null;
         }
@@ -208,8 +208,8 @@ public class d implements com.android.volley.b {
             b bVar = new b(new BufferedInputStream(d(f10)), f10.length());
             try {
                 a b10 = a.b(bVar);
-                if (!TextUtils.equals(str, b10.f20521b)) {
-                    v.b("%s: key=%s, found=%s", f10.getAbsolutePath(), str, b10.f20521b);
+                if (!TextUtils.equals(str, b10.f21468b)) {
+                    v.b("%s: key=%s, found=%s", f10.getAbsolutePath(), str, b10.f21468b);
                     q(str);
                     return null;
                 }
@@ -229,9 +229,9 @@ public class d implements com.android.volley.b {
         try {
             b.a a10 = a(str);
             if (a10 != null) {
-                a10.f8184f = 0L;
+                a10.f8761f = 0L;
                 if (z10) {
-                    a10.f8183e = 0L;
+                    a10.f8760e = 0L;
                 }
                 c(str, a10);
             }
@@ -244,10 +244,10 @@ public class d implements com.android.volley.b {
     public synchronized void c(String str, b.a aVar) {
         BufferedOutputStream bufferedOutputStream;
         a aVar2;
-        long j10 = this.f20517b;
-        byte[] bArr = aVar.f8179a;
+        long j10 = this.f21464b;
+        byte[] bArr = aVar.f8756a;
         long length = j10 + bArr.length;
-        int i10 = this.f20519d;
+        int i10 = this.f21466d;
         if (length > i10 && bArr.length > i10 * 0.9f) {
             return;
         }
@@ -262,9 +262,9 @@ public class d implements com.android.volley.b {
             h();
         }
         if (aVar2.d(bufferedOutputStream)) {
-            bufferedOutputStream.write(aVar.f8179a);
+            bufferedOutputStream.write(aVar.f8756a);
             bufferedOutputStream.close();
-            aVar2.f20520a = f10.length();
+            aVar2.f21467a = f10.length();
             j(str, aVar2);
             i();
             return;
@@ -283,14 +283,14 @@ public class d implements com.android.volley.b {
     }
 
     public File f(String str) {
-        return new File(this.f20518c.get(), g(str));
+        return new File(this.f21465c.get(), g(str));
     }
 
     @Override // com.android.volley.b
     public synchronized void initialize() {
         long length;
         b bVar;
-        File file = this.f20518c.get();
+        File file = this.f21465c.get();
         if (!file.exists()) {
             if (!file.mkdirs()) {
                 v.c("Unable to create cache dir %s", file.getAbsolutePath());
@@ -310,8 +310,8 @@ public class d implements com.android.volley.b {
             }
             try {
                 a b10 = a.b(bVar);
-                b10.f20520a = length;
-                j(b10.f20521b, b10);
+                b10.f21467a = length;
+                j(b10.f21468b, b10);
                 bVar.close();
             } catch (Throwable th2) {
                 bVar.close();
@@ -334,25 +334,25 @@ public class d implements com.android.volley.b {
     public static class b extends FilterInputStream {
 
         /* renamed from: d  reason: collision with root package name */
-        private final long f20528d;
+        private final long f21475d;
 
         /* renamed from: e  reason: collision with root package name */
-        private long f20529e;
+        private long f21476e;
 
         b(InputStream inputStream, long j10) {
             super(inputStream);
-            this.f20528d = j10;
+            this.f21475d = j10;
         }
 
         long a() {
-            return this.f20528d - this.f20529e;
+            return this.f21475d - this.f21476e;
         }
 
         @Override // java.io.FilterInputStream, java.io.InputStream
         public int read() {
             int read = super.read();
             if (read != -1) {
-                this.f20529e++;
+                this.f21476e++;
             }
             return read;
         }
@@ -361,7 +361,7 @@ public class d implements com.android.volley.b {
         public int read(byte[] bArr, int i10, int i11) {
             int read = super.read(bArr, i10, i11);
             if (read != -1) {
-                this.f20529e += read;
+                this.f21476e += read;
             }
             return read;
         }
@@ -376,45 +376,45 @@ public class d implements com.android.volley.b {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        long f20520a;
+        long f21467a;
 
         /* renamed from: b  reason: collision with root package name */
-        final String f20521b;
+        final String f21468b;
 
         /* renamed from: c  reason: collision with root package name */
-        final String f20522c;
+        final String f21469c;
 
         /* renamed from: d  reason: collision with root package name */
-        final long f20523d;
+        final long f21470d;
 
         /* renamed from: e  reason: collision with root package name */
-        final long f20524e;
+        final long f21471e;
 
         /* renamed from: f  reason: collision with root package name */
-        final long f20525f;
+        final long f21472f;
 
         /* renamed from: g  reason: collision with root package name */
-        final long f20526g;
+        final long f21473g;
 
         /* renamed from: h  reason: collision with root package name */
-        final List f20527h;
+        final List f21474h;
 
         private a(String str, String str2, long j10, long j11, long j12, long j13, List list) {
-            this.f20521b = str;
-            this.f20522c = "".equals(str2) ? null : str2;
-            this.f20523d = j10;
-            this.f20524e = j11;
-            this.f20525f = j12;
-            this.f20526g = j13;
-            this.f20527h = list;
+            this.f21468b = str;
+            this.f21469c = "".equals(str2) ? null : str2;
+            this.f21470d = j10;
+            this.f21471e = j11;
+            this.f21472f = j12;
+            this.f21473g = j13;
+            this.f21474h = list;
         }
 
         private static List a(b.a aVar) {
-            List list = aVar.f8186h;
+            List list = aVar.f8763h;
             if (list != null) {
                 return list;
             }
-            return e.g(aVar.f8185g);
+            return e.g(aVar.f8762g);
         }
 
         static a b(b bVar) {
@@ -426,31 +426,31 @@ public class d implements com.android.volley.b {
 
         b.a c(byte[] bArr) {
             b.a aVar = new b.a();
-            aVar.f8179a = bArr;
-            aVar.f8180b = this.f20522c;
-            aVar.f8181c = this.f20523d;
-            aVar.f8182d = this.f20524e;
-            aVar.f8183e = this.f20525f;
-            aVar.f8184f = this.f20526g;
-            aVar.f8185g = e.h(this.f20527h);
-            aVar.f8186h = Collections.unmodifiableList(this.f20527h);
+            aVar.f8756a = bArr;
+            aVar.f8757b = this.f21469c;
+            aVar.f8758c = this.f21470d;
+            aVar.f8759d = this.f21471e;
+            aVar.f8760e = this.f21472f;
+            aVar.f8761f = this.f21473g;
+            aVar.f8762g = e.h(this.f21474h);
+            aVar.f8763h = Collections.unmodifiableList(this.f21474h);
             return aVar;
         }
 
         boolean d(OutputStream outputStream) {
             try {
                 d.t(outputStream, 538247942);
-                d.v(outputStream, this.f20521b);
-                String str = this.f20522c;
+                d.v(outputStream, this.f21468b);
+                String str = this.f21469c;
                 if (str == null) {
                     str = "";
                 }
                 d.v(outputStream, str);
-                d.u(outputStream, this.f20523d);
-                d.u(outputStream, this.f20524e);
-                d.u(outputStream, this.f20525f);
-                d.u(outputStream, this.f20526g);
-                d.s(this.f20527h, outputStream);
+                d.u(outputStream, this.f21470d);
+                d.u(outputStream, this.f21471e);
+                d.u(outputStream, this.f21472f);
+                d.u(outputStream, this.f21473g);
+                d.s(this.f21474h, outputStream);
                 outputStream.flush();
                 return true;
             } catch (IOException e10) {
@@ -460,7 +460,7 @@ public class d implements com.android.volley.b {
         }
 
         a(String str, b.a aVar) {
-            this(str, aVar.f8180b, aVar.f8181c, aVar.f8182d, aVar.f8183e, aVar.f8184f, a(aVar));
+            this(str, aVar.f8757b, aVar.f8758c, aVar.f8759d, aVar.f8760e, aVar.f8761f, a(aVar));
         }
     }
 }

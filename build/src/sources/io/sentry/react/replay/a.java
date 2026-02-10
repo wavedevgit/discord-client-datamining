@@ -16,38 +16,38 @@ import java.lang.ref.WeakReference;
 public class a extends FragmentManager.l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ILogger f28999a;
+    private final ILogger f29934a;
 
     /* renamed from: b  reason: collision with root package name */
-    private ReplayIntegration f29000b;
+    private ReplayIntegration f29935b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f29001c = -1;
+    private int f29936c = -1;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f29002d = -1;
+    private int f29937d = -1;
 
     /* renamed from: e  reason: collision with root package name */
-    private WeakReference f29003e;
+    private WeakReference f29938e;
 
     /* renamed from: f  reason: collision with root package name */
-    private ViewTreeObserver.OnGlobalLayoutListener f29004f;
+    private ViewTreeObserver.OnGlobalLayoutListener f29939f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: io.sentry.react.replay.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class ViewTreeObserver$OnGlobalLayoutListenerC0430a implements ViewTreeObserver.OnGlobalLayoutListener {
+    public class ViewTreeObserver$OnGlobalLayoutListenerC0405a implements ViewTreeObserver.OnGlobalLayoutListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ WeakReference f29005d;
+        final /* synthetic */ WeakReference f29940d;
 
-        ViewTreeObserver$OnGlobalLayoutListenerC0430a(WeakReference weakReference) {
-            this.f29005d = weakReference;
+        ViewTreeObserver$OnGlobalLayoutListenerC0405a(WeakReference weakReference) {
+            this.f29940d = weakReference;
         }
 
         @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
         public void onGlobalLayout() {
-            View view = (View) this.f29005d.get();
+            View view = (View) this.f29940d.get();
             if (view != null) {
                 a.this.c(view);
             }
@@ -55,14 +55,14 @@ public class a extends FragmentManager.l {
     }
 
     public a(ILogger iLogger) {
-        this.f28999a = iLogger;
+        this.f29934a = iLogger;
     }
 
     private void b(View view) {
-        ViewTreeObserver$OnGlobalLayoutListenerC0430a viewTreeObserver$OnGlobalLayoutListenerC0430a = new ViewTreeObserver$OnGlobalLayoutListenerC0430a(new WeakReference(view));
-        this.f29003e = new WeakReference(view);
-        this.f29004f = viewTreeObserver$OnGlobalLayoutListenerC0430a;
-        view.getViewTreeObserver().addOnGlobalLayoutListener(viewTreeObserver$OnGlobalLayoutListenerC0430a);
+        ViewTreeObserver$OnGlobalLayoutListenerC0405a viewTreeObserver$OnGlobalLayoutListenerC0405a = new ViewTreeObserver$OnGlobalLayoutListenerC0405a(new WeakReference(view));
+        this.f29938e = new WeakReference(view);
+        this.f29939f = viewTreeObserver$OnGlobalLayoutListenerC0405a;
+        view.getViewTreeObserver().addOnGlobalLayoutListener(viewTreeObserver$OnGlobalLayoutListenerC0405a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -71,65 +71,65 @@ public class a extends FragmentManager.l {
             DisplayMetrics displayMetrics = view.getContext().getResources().getDisplayMetrics();
             int i10 = displayMetrics.widthPixels;
             int i11 = displayMetrics.heightPixels;
-            if (this.f29001c == i10 && this.f29002d == i11) {
+            if (this.f29936c == i10 && this.f29937d == i11) {
                 return;
             }
-            this.f29001c = i10;
-            this.f29002d = i11;
+            this.f29936c = i10;
+            this.f29937d = i11;
             f(i10, i11);
         } catch (Exception e10) {
-            this.f28999a.b(SentryLevel.DEBUG, "Failed to check window size", e10);
+            this.f29934a.b(SentryLevel.DEBUG, "Failed to check window size", e10);
         }
     }
 
     private void d() {
         View view;
-        WeakReference weakReference = this.f29003e;
+        WeakReference weakReference = this.f29938e;
         if (weakReference != null) {
             view = (View) weakReference.get();
         } else {
             view = null;
         }
-        if (view != null && this.f29004f != null) {
+        if (view != null && this.f29939f != null) {
             try {
                 ViewTreeObserver viewTreeObserver = view.getViewTreeObserver();
                 if (viewTreeObserver != null) {
-                    viewTreeObserver.removeOnGlobalLayoutListener(this.f29004f);
+                    viewTreeObserver.removeOnGlobalLayoutListener(this.f29939f);
                 }
             } catch (Exception e10) {
-                this.f28999a.b(SentryLevel.DEBUG, "Failed to remove layout change listener", e10);
+                this.f29934a.b(SentryLevel.DEBUG, "Failed to remove layout change listener", e10);
             }
         }
-        this.f29003e = null;
-        this.f29004f = null;
+        this.f29938e = null;
+        this.f29939f = null;
     }
 
     private ReplayIntegration e() {
         try {
-            u3 replayController = l4.g().b().getReplayController();
+            u3 replayController = l4.f().b().getReplayController();
             if (replayController instanceof ReplayIntegration) {
                 return (ReplayIntegration) replayController;
             }
-            this.f28999a.c(SentryLevel.DEBUG, "Error getting replay integration", new Object[0]);
+            this.f29934a.c(SentryLevel.DEBUG, "Error getting replay integration", new Object[0]);
             return null;
         } catch (Exception e10) {
-            this.f28999a.b(SentryLevel.DEBUG, "Error getting replay integration", e10);
+            this.f29934a.b(SentryLevel.DEBUG, "Error getting replay integration", e10);
             return null;
         }
     }
 
     private void f(int i10, int i11) {
-        if (this.f29000b == null) {
-            this.f29000b = e();
+        if (this.f29935b == null) {
+            this.f29935b = e();
         }
-        ReplayIntegration replayIntegration = this.f29000b;
+        ReplayIntegration replayIntegration = this.f29935b;
         if (replayIntegration == null) {
             return;
         }
         try {
-            replayIntegration.k(i10, i11);
+            replayIntegration.i(i10, i11);
         } catch (Exception e10) {
-            this.f28999a.b(SentryLevel.DEBUG, "Failed to notify replay integration of size change", e10);
+            this.f29934a.b(SentryLevel.DEBUG, "Failed to notify replay integration of size change", e10);
         }
     }
 

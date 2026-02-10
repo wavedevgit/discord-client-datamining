@@ -1,104 +1,74 @@
 package pt;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.util.Log;
-import java.util.Locale;
-import java.util.TimeZone;
-import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicBoolean;
-import net.time4j.a0;
-import net.time4j.android.spi.AndroidResourceLoader;
-import net.time4j.f0;
-import net.time4j.g0;
-import net.time4j.i0;
-import net.time4j.q0;
-import net.time4j.tz.k;
-import net.time4j.tz.l;
-import net.time4j.tz.p;
-import qt.d;
-import tt.e;
+import as.l;
+import as.o;
+import jt.c;
+import kotlin.Lazy;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.Reflection;
+import kotlin.reflect.KClass;
+import kotlinx.serialization.DeserializationStrategy;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.SealedClassSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Encoder;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
+public final class a extends tt.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final AtomicBoolean f44552a = new AtomicBoolean(false);
+    public static final a f43177a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final AtomicBoolean f44553b = new AtomicBoolean(false);
+    private static final Lazy f43178b = l.a(o.f6082e, C0595a.f43179d);
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* renamed from: pt.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class b implements Runnable {
-        private b() {
+    static final class C0595a extends Lambda implements Function0 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final C0595a f43179d = new C0595a();
+
+        C0595a() {
+            super(0);
         }
 
-        @Override // java.lang.Runnable
-        public void run() {
-            long nanoTime = System.nanoTime();
-            k t10 = p.t(TimeZone.getDefault().getOffset(System.currentTimeMillis()) / 1000);
-            Locale locale = Locale.getDefault();
-            try {
-                a0 b10 = q0.b();
-                t10 = l.O().z();
-                Log.i("TIME4A", "System time zone at start: [" + t10.a() + "]");
-                Log.i("TIME4A", "System locale at start: [" + locale.toString() + "]");
-                e eVar = e.FULL;
-                Log.i("TIME4A", ut.c.B(eVar, eVar, locale, t10).l(b10));
-                Log.i("TIME4A", "Prefetch thread consumed (in ms): " + ((System.nanoTime() - nanoTime) / 1000000));
-            } catch (Throwable th2) {
-                Log.e("TIME4A", "Error on prefetch thread with: time zone=" + t10.a() + ", locale=" + locale + "!", th2);
-                throw new IllegalStateException(th2);
-            }
+        @Override // kotlin.jvm.functions.Function0
+        /* renamed from: a */
+        public final SealedClassSerializer invoke() {
+            return new SealedClassSerializer("kotlinx.datetime.DateTimeUnit.DateBased", Reflection.getOrCreateKotlinClass(c.b.class), new KClass[]{Reflection.getOrCreateKotlinClass(c.C0437c.class), Reflection.getOrCreateKotlinClass(c.d.class)}, new KSerializer[]{d.f43183a, h.f43193a});
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class c extends BroadcastReceiver {
-        private c() {
-        }
-
-        @Override // android.content.BroadcastReceiver
-        public void onReceive(Context context, Intent intent) {
-            l.b.a();
-            Log.i("TIME4A", "Event ACTION_TIMEZONE_CHANGED received, system timezone changed to: [" + l.O().z().a() + "]. Original tz-id reported by Android: [" + intent.getStringExtra("time-zone") + "]");
-        }
+    private a() {
     }
 
-    public static void a(Context context, Runnable runnable) {
-        long nanoTime = System.nanoTime();
-        c(context, null);
-        d(context.getApplicationContext());
-        i0 o02 = f0.H0(2021, 3, 27).o0(g0.F0());
-        Log.i("TIME4A", "Starting Time4A (v4.8-2021a published on " + o02.f0() + ")");
-        if (runnable != null) {
-            Executors.defaultThreadFactory().newThread(runnable).start();
-        }
-        Log.i("TIME4A", "Main-Thread consumed in ms: " + ((System.nanoTime() - nanoTime) / 1000000));
+    private final SealedClassSerializer g() {
+        return (SealedClassSerializer) f43178b.getValue();
     }
 
-    public static void b(Context context, boolean z10) {
-        b bVar = null;
-        if (z10) {
-            bVar = new b();
-        }
-        a(context, bVar);
+    @Override // tt.b
+    public DeserializationStrategy c(kotlinx.serialization.encoding.c decoder, String str) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        return g().c(decoder, str);
     }
 
-    public static void c(Context context, pt.b bVar) {
-        if (!f44552a.getAndSet(true)) {
-            System.setProperty("net.time4j.base.ResourceLoader", "net.time4j.android.spi.AndroidResourceLoader");
-            ((AndroidResourceLoader) d.c()).j(context, bVar);
-        }
+    @Override // tt.b
+    public KClass e() {
+        return Reflection.getOrCreateKotlinClass(c.b.class);
     }
 
-    public static void d(Context context) {
-        if (context != null && !f44553b.getAndSet(true)) {
-            System.setProperty("net.time4j.allow.system.tz.override", "true");
-            context.registerReceiver(new c(), new IntentFilter("android.intent.action.TIMEZONE_CHANGED"));
-        }
+    @Override // tt.b
+    /* renamed from: f */
+    public qt.o d(Encoder encoder, c.b value) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        Intrinsics.checkNotNullParameter(value, "value");
+        return g().d(encoder, value);
+    }
+
+    @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return g().getDescriptor();
     }
 }

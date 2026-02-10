@@ -132,4 +132,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGuildDiscoveryGracePeriodFinalWarningSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1234, 6746, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1234, 6756, 2]);

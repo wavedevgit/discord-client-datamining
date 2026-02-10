@@ -32,9 +32,9 @@ public abstract class a {
         Bundle b10 = request.b();
         Bundle a10 = request.c().a();
         if (request instanceof f) {
-            i10 = i0.f23377b;
+            i10 = i0.f24677b;
         } else {
-            i10 = i0.f23376a;
+            i10 = i0.f24676a;
         }
         a10.putParcelable("androidx.credentials.BUNDLE_KEY_CREDENTIAL_TYPE_ICON", Icon.createWithResource(context, i10));
         b10.putBundle("androidx.credentials.BUNDLE_KEY_REQUEST_DISPLAY_INFO", a10);
@@ -77,7 +77,7 @@ public abstract class a {
         }
         String str = null;
         if (StringsKt.P(errorType, "androidx.credentials.TYPE_CREATE_PUBLIC_KEY_CREDENTIAL_DOM_EXCEPTION", false, 2, null)) {
-            b.a aVar = j2.b.f30008p;
+            b.a aVar = j2.b.f30808p;
             if (charSequence != null) {
                 str = charSequence.toString();
             }
@@ -122,7 +122,7 @@ public abstract class a {
         }
         String str = null;
         if (StringsKt.P(errorType, "androidx.credentials.TYPE_GET_PUBLIC_KEY_CREDENTIAL_DOM_EXCEPTION", false, 2, null)) {
-            e.a aVar = j2.e.f30013p;
+            e.a aVar = j2.e.f30813p;
             if (charSequence != null) {
                 str = charSequence.toString();
             }

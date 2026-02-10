@@ -1,64 +1,55 @@
 package androidx.core.view;
 
-import android.os.Build;
-import android.view.MotionEvent;
-import android.view.VelocityTracker;
-import java.util.Collections;
-import java.util.Map;
-import java.util.WeakHashMap;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.markers.KMappedMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public abstract class e0 {
+public final class e0 implements Iterator, KMappedMarker {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static Map f3494a = Collections.synchronizedMap(new WeakHashMap());
+    /* renamed from: d  reason: collision with root package name */
+    private final Function1 f3494d;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    private static class a {
-        static float a(VelocityTracker velocityTracker, int i10) {
-            return velocityTracker.getAxisVelocity(i10);
+    /* renamed from: e  reason: collision with root package name */
+    private final List f3495e = new ArrayList();
+
+    /* renamed from: i  reason: collision with root package name */
+    private Iterator f3496i;
+
+    public e0(Iterator it, Function1 function1) {
+        this.f3494d = function1;
+        this.f3496i = it;
+    }
+
+    private final void a(Object obj) {
+        Iterator it = (Iterator) this.f3494d.invoke(obj);
+        if (it != null && it.hasNext()) {
+            this.f3495e.add(this.f3496i);
+            this.f3496i = it;
+            return;
+        }
+        while (!this.f3496i.hasNext() && !this.f3495e.isEmpty()) {
+            this.f3496i = (Iterator) CollectionsKt.z0(this.f3495e);
+            CollectionsKt.L(this.f3495e);
         }
     }
 
-    public static void a(VelocityTracker velocityTracker, MotionEvent motionEvent) {
-        velocityTracker.addMovement(motionEvent);
-        if (Build.VERSION.SDK_INT < 34 && motionEvent.getSource() == 4194304) {
-            if (!f3494a.containsKey(velocityTracker)) {
-                f3494a.put(velocityTracker, new f0());
-            }
-            ((f0) f3494a.get(velocityTracker)).a(motionEvent);
-        }
+    @Override // java.util.Iterator
+    public boolean hasNext() {
+        return this.f3496i.hasNext();
     }
 
-    public static void b(VelocityTracker velocityTracker, int i10) {
-        c(velocityTracker, i10, Float.MAX_VALUE);
+    @Override // java.util.Iterator
+    public Object next() {
+        Object next = this.f3496i.next();
+        a(next);
+        return next;
     }
 
-    public static void c(VelocityTracker velocityTracker, int i10, float f10) {
-        velocityTracker.computeCurrentVelocity(i10, f10);
-        f0 e10 = e(velocityTracker);
-        if (e10 != null) {
-            e10.c(i10, f10);
-        }
-    }
-
-    public static float d(VelocityTracker velocityTracker, int i10) {
-        if (Build.VERSION.SDK_INT >= 34) {
-            return a.a(velocityTracker, i10);
-        }
-        if (i10 == 0) {
-            return velocityTracker.getXVelocity();
-        }
-        if (i10 == 1) {
-            return velocityTracker.getYVelocity();
-        }
-        f0 e10 = e(velocityTracker);
-        if (e10 != null) {
-            return e10.d(i10);
-        }
-        return 0.0f;
-    }
-
-    private static f0 e(VelocityTracker velocityTracker) {
-        return (f0) f3494a.get(velocityTracker);
+    @Override // java.util.Iterator
+    public void remove() {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 }

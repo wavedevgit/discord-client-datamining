@@ -773,7 +773,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var5.type;
                     var5 = var7.bind(var8)(var5);
                     if (!var5) {
-                        _fun7178_ip = 197;
+                        _fun7178_ip = 198;
                         continue _fun7178
                     }
                 case 153:
@@ -786,7 +786,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = 'Dispatching ';
                     var5 = var9.bind(var5)(var10);
                     var5 = var7.bind(var8)(var5);
-                case 197:
+                case 198:
                     var8 = _closure1_slot0;
                     var10 = _closure1_slot3;
                     var5 = 8;
@@ -834,10 +834,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var4.totalTime;
                     var6 = 100;
                     if (!(var7 > var6)) {
-                        _fun7178_ip = 362;
+                        _fun7178_ip = 364;
                         continue _fun7178
                     }
-                case 302:
+                case 304:
                     var7 = _closure1_slot7;
                     var6 = var7.verbose;
                     var8 = var1;
@@ -850,7 +850,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var17 = 'ms';
                     var4 = var21[var10](var20, var19, var18, var17, var16);
                     var4 = var6.bind(var7)(var4);
-                case 362: // try_start_0
+                case 364: // try_start_0
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot3;
                     var3 = var3[var5];
@@ -864,12 +864,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var6.bind(var5)(var7, var2);
                     var1 = var1.type;
                     var1 = var3.bind(var4)(var2, var1);
-                case 428: // try_end0
-                    _fun7178_ip = 432;
+                case 430: // try_end0
+                    _fun7178_ip = 434;
                     continue _fun7178;
-                case 430: // catch_target0
+                case 432: // catch_target0
                     CatchBlockStart(arg_register = 1);
-                case 432:
+                case 434:
                     return var0;
             }
         };

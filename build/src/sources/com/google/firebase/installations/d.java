@@ -1,11 +1,11 @@
 package com.google.firebase.installations;
 
-import si.j;
+import ui.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class d extends j {
 
     /* renamed from: d  reason: collision with root package name */
-    private final a f16488d;
+    private final a f17237d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public enum a {
@@ -15,11 +15,11 @@ public class d extends j {
     }
 
     public d(a aVar) {
-        this.f16488d = aVar;
+        this.f17237d = aVar;
     }
 
     public d(String str, a aVar) {
         super(str);
-        this.f16488d = aVar;
+        this.f17237d = aVar;
     }
 }

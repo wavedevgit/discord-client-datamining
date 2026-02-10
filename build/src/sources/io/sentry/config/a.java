@@ -9,22 +9,22 @@ import java.util.Properties;
 abstract class a implements f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f28261a;
+    private final String f29196a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Properties f28262b;
+    private final Properties f29197b;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(String str, Properties properties) {
-        this.f28261a = (String) y.c(str, "prefix is required");
-        this.f28262b = (Properties) y.c(properties, "properties are required");
+        this.f29196a = (String) y.c(str, "prefix is required");
+        this.f29197b = (Properties) y.c(properties, "properties are required");
     }
 
     @Override // io.sentry.config.f
     public Map getMap(String str) {
-        String str2 = this.f28261a + str + ".";
+        String str2 = this.f29196a + str + ".";
         HashMap hashMap = new HashMap();
-        for (Map.Entry entry : this.f28262b.entrySet()) {
+        for (Map.Entry entry : this.f29197b.entrySet()) {
             if ((entry.getKey() instanceof String) && (entry.getValue() instanceof String)) {
                 String str3 = (String) entry.getKey();
                 if (str3.startsWith(str2)) {
@@ -37,8 +37,8 @@ abstract class a implements f {
 
     @Override // io.sentry.config.f
     public String getProperty(String str) {
-        Properties properties = this.f28262b;
-        return f0.f(properties.getProperty(this.f28261a + str), "\"");
+        Properties properties = this.f29197b;
+        return f0.f(properties.getProperty(this.f29196a + str), "\"");
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

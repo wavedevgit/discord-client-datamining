@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var12;
         var1[1] = var0;
         var0 = function() { // Environment: var13
-            _fun118485: for (var _fun118485_ip = 0;;) switch (_fun118485_ip) {
+            _fun118539: for (var _fun118539_ip = 0;;) switch (_fun118539_ip) {
                 case 0:
                     var2 = _closure2_slot2;
                     var0 = null;
@@ -138,8 +138,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var4 = undefined;
                     if (var2) {
-                        _fun118485_ip = 30;
-                        continue _fun118485
+                        _fun118539_ip = 30;
+                        continue _fun118539
                     }
                 case 20:
                     var2 = _closure2_slot2;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.AgeVerificationStatusUkAndAusOnly;
                     var2 = var2.UNVERIFIED;
                     if (!(var4 !== var2)) {
-                        _fun118485_ip = 116;
-                        continue _fun118485
+                        _fun118539_ip = 116;
+                        continue _fun118539
                     }
                 case 69:
                     var2 = _closure2_slot1;
@@ -313,4 +313,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 660, 33, 1297, 491, 15094, 566, 6504, 15089, 1647, 4555, 15098, 6014, 1234, 2118, 2374, 5984, 1686, 11499, 4557, 3942, 6509, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 660, 33, 1297, 491, 15104, 566, 6514, 15099, 1647, 4565, 15108, 6024, 1234, 2118, 2374, 5994, 1686, 11510, 4567, 3942, 6519, 2]);

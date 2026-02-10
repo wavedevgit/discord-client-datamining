@@ -15,12 +15,12 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
 
     @Override // kotlin.jvm.functions.Function0
     public /* bridge */ /* synthetic */ Object invoke() {
-        m704invoke();
-        return Unit.f31765a;
+        m705invoke();
+        return Unit.f31987a;
     }
 
     /* renamed from: invoke  reason: collision with other method in class */
-    public final void m704invoke() {
+    public final void m705invoke() {
         ((SpoilerConfig) this.receiver).onReveal();
     }
 }

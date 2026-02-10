@@ -16,25 +16,25 @@ import java.util.TreeMap;
 public abstract class g1 extends AbstractMap {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f3755d;
+    private final int f3761d;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f3756e;
+    private List f3762e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f3757i;
+    private Map f3763i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f3758o;
+    private boolean f3764o;
 
     /* renamed from: p  reason: collision with root package name */
-    private volatile g f3759p;
+    private volatile g f3765p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f3760q;
+    private Map f3766q;
 
     /* renamed from: r  reason: collision with root package name */
-    private volatile c f3761r;
+    private volatile c f3767r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -88,10 +88,10 @@ public abstract class g1 extends AbstractMap {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final Iterator f3766a = new a();
+        private static final Iterator f3772a = new a();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Iterable f3767b = new b();
+        private static final Iterable f3773b = new b();
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         static class a implements Iterator {
@@ -121,12 +121,12 @@ public abstract class g1 extends AbstractMap {
 
             @Override // java.lang.Iterable
             public Iterator iterator() {
-                return d.f3766a;
+                return d.f3772a;
             }
         }
 
         static Iterable b() {
-            return f3767b;
+            return f3773b;
         }
     }
 
@@ -135,10 +135,10 @@ public abstract class g1 extends AbstractMap {
     public class e implements Map.Entry, Comparable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Comparable f3768d;
+        private final Comparable f3774d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Object f3769e;
+        private Object f3775e;
 
         e(g1 g1Var, Map.Entry entry) {
             this((Comparable) entry.getKey(), entry.getValue());
@@ -163,7 +163,7 @@ public abstract class g1 extends AbstractMap {
         @Override // java.util.Map.Entry
         /* renamed from: e */
         public Comparable getKey() {
-            return this.f3768d;
+            return this.f3774d;
         }
 
         @Override // java.util.Map.Entry
@@ -175,7 +175,7 @@ public abstract class g1 extends AbstractMap {
                 return false;
             }
             Map.Entry entry = (Map.Entry) obj;
-            if (d(this.f3768d, entry.getKey()) && d(this.f3769e, entry.getValue())) {
+            if (d(this.f3774d, entry.getKey()) && d(this.f3775e, entry.getValue())) {
                 return true;
             }
             return false;
@@ -183,20 +183,20 @@ public abstract class g1 extends AbstractMap {
 
         @Override // java.util.Map.Entry
         public Object getValue() {
-            return this.f3769e;
+            return this.f3775e;
         }
 
         @Override // java.util.Map.Entry
         public int hashCode() {
             int hashCode;
-            Comparable comparable = this.f3768d;
+            Comparable comparable = this.f3774d;
             int i10 = 0;
             if (comparable == null) {
                 hashCode = 0;
             } else {
                 hashCode = comparable.hashCode();
             }
-            Object obj = this.f3769e;
+            Object obj = this.f3775e;
             if (obj != null) {
                 i10 = obj.hashCode();
             }
@@ -206,18 +206,18 @@ public abstract class g1 extends AbstractMap {
         @Override // java.util.Map.Entry
         public Object setValue(Object obj) {
             g1.this.g();
-            Object obj2 = this.f3769e;
-            this.f3769e = obj;
+            Object obj2 = this.f3775e;
+            this.f3775e = obj;
             return obj2;
         }
 
         public String toString() {
-            return this.f3768d + "=" + this.f3769e;
+            return this.f3774d + "=" + this.f3775e;
         }
 
         e(Comparable comparable, Object obj) {
-            this.f3768d = comparable;
-            this.f3769e = obj;
+            this.f3774d = comparable;
+            this.f3775e = obj;
         }
     }
 
@@ -287,10 +287,10 @@ public abstract class g1 extends AbstractMap {
 
     private int f(Comparable comparable) {
         int i10;
-        int size = this.f3756e.size();
+        int size = this.f3762e.size();
         int i11 = size - 1;
         if (i11 >= 0) {
-            int compareTo = comparable.compareTo(((e) this.f3756e.get(i11)).getKey());
+            int compareTo = comparable.compareTo(((e) this.f3762e.get(i11)).getKey());
             if (compareTo > 0) {
                 i10 = size + 1;
                 return -i10;
@@ -301,7 +301,7 @@ public abstract class g1 extends AbstractMap {
         int i12 = 0;
         while (i12 <= i11) {
             int i13 = (i12 + i11) / 2;
-            int compareTo2 = comparable.compareTo(((e) this.f3756e.get(i13)).getKey());
+            int compareTo2 = comparable.compareTo(((e) this.f3762e.get(i13)).getKey());
             if (compareTo2 < 0) {
                 i11 = i13 - 1;
             } else if (compareTo2 > 0) {
@@ -316,7 +316,7 @@ public abstract class g1 extends AbstractMap {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void g() {
-        if (!this.f3758o) {
+        if (!this.f3764o) {
             return;
         }
         throw new UnsupportedOperationException();
@@ -324,19 +324,19 @@ public abstract class g1 extends AbstractMap {
 
     private void i() {
         g();
-        if (this.f3756e.isEmpty() && !(this.f3756e instanceof ArrayList)) {
-            this.f3756e = new ArrayList(this.f3755d);
+        if (this.f3762e.isEmpty() && !(this.f3762e instanceof ArrayList)) {
+            this.f3762e = new ArrayList(this.f3761d);
         }
     }
 
     private SortedMap n() {
         g();
-        if (this.f3757i.isEmpty() && !(this.f3757i instanceof TreeMap)) {
+        if (this.f3763i.isEmpty() && !(this.f3763i instanceof TreeMap)) {
             TreeMap treeMap = new TreeMap();
-            this.f3757i = treeMap;
-            this.f3760q = treeMap.descendingMap();
+            this.f3763i = treeMap;
+            this.f3766q = treeMap.descendingMap();
         }
-        return (SortedMap) this.f3757i;
+        return (SortedMap) this.f3763i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -347,10 +347,10 @@ public abstract class g1 extends AbstractMap {
     /* JADX INFO: Access modifiers changed from: private */
     public Object s(int i10) {
         g();
-        Object value = ((e) this.f3756e.remove(i10)).getValue();
-        if (!this.f3757i.isEmpty()) {
+        Object value = ((e) this.f3762e.remove(i10)).getValue();
+        if (!this.f3763i.isEmpty()) {
             Iterator it = n().entrySet().iterator();
-            this.f3756e.add(new e(this, (Map.Entry) it.next()));
+            this.f3762e.add(new e(this, (Map.Entry) it.next()));
             it.remove();
         }
         return value;
@@ -359,18 +359,18 @@ public abstract class g1 extends AbstractMap {
     @Override // java.util.AbstractMap, java.util.Map
     public void clear() {
         g();
-        if (!this.f3756e.isEmpty()) {
-            this.f3756e.clear();
+        if (!this.f3762e.isEmpty()) {
+            this.f3762e.clear();
         }
-        if (!this.f3757i.isEmpty()) {
-            this.f3757i.clear();
+        if (!this.f3763i.isEmpty()) {
+            this.f3763i.clear();
         }
     }
 
     @Override // java.util.AbstractMap, java.util.Map
     public boolean containsKey(Object obj) {
         Comparable comparable = (Comparable) obj;
-        if (f(comparable) < 0 && !this.f3757i.containsKey(comparable)) {
+        if (f(comparable) < 0 && !this.f3763i.containsKey(comparable)) {
             return false;
         }
         return true;
@@ -378,10 +378,10 @@ public abstract class g1 extends AbstractMap {
 
     @Override // java.util.AbstractMap, java.util.Map
     public Set entrySet() {
-        if (this.f3759p == null) {
-            this.f3759p = new g(this, null);
+        if (this.f3765p == null) {
+            this.f3765p = new g(this, null);
         }
-        return this.f3759p;
+        return this.f3765p;
     }
 
     @Override // java.util.AbstractMap, java.util.Map
@@ -409,7 +409,7 @@ public abstract class g1 extends AbstractMap {
         if (k10 == size) {
             return true;
         }
-        return this.f3757i.equals(g1Var.f3757i);
+        return this.f3763i.equals(g1Var.f3763i);
     }
 
     @Override // java.util.AbstractMap, java.util.Map
@@ -417,17 +417,17 @@ public abstract class g1 extends AbstractMap {
         Comparable comparable = (Comparable) obj;
         int f10 = f(comparable);
         if (f10 >= 0) {
-            return ((e) this.f3756e.get(f10)).getValue();
+            return ((e) this.f3762e.get(f10)).getValue();
         }
-        return this.f3757i.get(comparable);
+        return this.f3763i.get(comparable);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Set h() {
-        if (this.f3761r == null) {
-            this.f3761r = new c(this, null);
+        if (this.f3767r == null) {
+            this.f3767r = new c(this, null);
         }
-        return this.f3761r;
+        return this.f3767r;
     }
 
     @Override // java.util.AbstractMap, java.util.Map
@@ -435,54 +435,54 @@ public abstract class g1 extends AbstractMap {
         int k10 = k();
         int i10 = 0;
         for (int i11 = 0; i11 < k10; i11++) {
-            i10 += ((e) this.f3756e.get(i11)).hashCode();
+            i10 += ((e) this.f3762e.get(i11)).hashCode();
         }
         if (l() > 0) {
-            return i10 + this.f3757i.hashCode();
+            return i10 + this.f3763i.hashCode();
         }
         return i10;
     }
 
     public Map.Entry j(int i10) {
-        return (Map.Entry) this.f3756e.get(i10);
+        return (Map.Entry) this.f3762e.get(i10);
     }
 
     public int k() {
-        return this.f3756e.size();
+        return this.f3762e.size();
     }
 
     public int l() {
-        return this.f3757i.size();
+        return this.f3763i.size();
     }
 
     public Iterable m() {
-        if (this.f3757i.isEmpty()) {
+        if (this.f3763i.isEmpty()) {
             return d.b();
         }
-        return this.f3757i.entrySet();
+        return this.f3763i.entrySet();
     }
 
     public boolean o() {
-        return this.f3758o;
+        return this.f3764o;
     }
 
     public void p() {
         Map unmodifiableMap;
         Map unmodifiableMap2;
-        if (!this.f3758o) {
-            if (this.f3757i.isEmpty()) {
+        if (!this.f3764o) {
+            if (this.f3763i.isEmpty()) {
                 unmodifiableMap = Collections.EMPTY_MAP;
             } else {
-                unmodifiableMap = Collections.unmodifiableMap(this.f3757i);
+                unmodifiableMap = Collections.unmodifiableMap(this.f3763i);
             }
-            this.f3757i = unmodifiableMap;
-            if (this.f3760q.isEmpty()) {
+            this.f3763i = unmodifiableMap;
+            if (this.f3766q.isEmpty()) {
                 unmodifiableMap2 = Collections.EMPTY_MAP;
             } else {
-                unmodifiableMap2 = Collections.unmodifiableMap(this.f3760q);
+                unmodifiableMap2 = Collections.unmodifiableMap(this.f3766q);
             }
-            this.f3760q = unmodifiableMap2;
-            this.f3758o = true;
+            this.f3766q = unmodifiableMap2;
+            this.f3764o = true;
         }
     }
 
@@ -490,20 +490,20 @@ public abstract class g1 extends AbstractMap {
         g();
         int f10 = f(comparable);
         if (f10 >= 0) {
-            return ((e) this.f3756e.get(f10)).setValue(obj);
+            return ((e) this.f3762e.get(f10)).setValue(obj);
         }
         i();
         int i10 = -(f10 + 1);
-        if (i10 >= this.f3755d) {
+        if (i10 >= this.f3761d) {
             return n().put(comparable, obj);
         }
-        int size = this.f3756e.size();
-        int i11 = this.f3755d;
+        int size = this.f3762e.size();
+        int i11 = this.f3761d;
         if (size == i11) {
-            e eVar = (e) this.f3756e.remove(i11 - 1);
+            e eVar = (e) this.f3762e.remove(i11 - 1);
             n().put(eVar.getKey(), eVar.getValue());
         }
-        this.f3756e.add(i10, new e(comparable, obj));
+        this.f3762e.add(i10, new e(comparable, obj));
         return null;
     }
 
@@ -515,44 +515,44 @@ public abstract class g1 extends AbstractMap {
         if (f10 >= 0) {
             return s(f10);
         }
-        if (this.f3757i.isEmpty()) {
+        if (this.f3763i.isEmpty()) {
             return null;
         }
-        return this.f3757i.remove(comparable);
+        return this.f3763i.remove(comparable);
     }
 
     @Override // java.util.AbstractMap, java.util.Map
     public int size() {
-        return this.f3756e.size() + this.f3757i.size();
+        return this.f3762e.size() + this.f3763i.size();
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private class b implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f3762d;
+        private int f3768d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Iterator f3763e;
+        private Iterator f3769e;
 
         private b() {
-            this.f3762d = g1.this.f3756e.size();
+            this.f3768d = g1.this.f3762e.size();
         }
 
         private Iterator a() {
-            if (this.f3763e == null) {
-                this.f3763e = g1.this.f3760q.entrySet().iterator();
+            if (this.f3769e == null) {
+                this.f3769e = g1.this.f3766q.entrySet().iterator();
             }
-            return this.f3763e;
+            return this.f3769e;
         }
 
         @Override // java.util.Iterator
         /* renamed from: b */
         public Map.Entry next() {
             if (!a().hasNext()) {
-                List list = g1.this.f3756e;
-                int i10 = this.f3762d - 1;
-                this.f3762d = i10;
+                List list = g1.this.f3762e;
+                int i10 = this.f3768d - 1;
+                this.f3768d = i10;
                 return (Map.Entry) list.get(i10);
             }
             return (Map.Entry) a().next();
@@ -560,8 +560,8 @@ public abstract class g1 extends AbstractMap {
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            int i10 = this.f3762d;
-            if ((i10 > 0 && i10 <= g1.this.f3756e.size()) || a().hasNext()) {
+            int i10 = this.f3768d;
+            if ((i10 > 0 && i10 <= g1.this.f3762e.size()) || a().hasNext()) {
                 return true;
             }
             return false;
@@ -581,40 +581,40 @@ public abstract class g1 extends AbstractMap {
     private class f implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f3771d;
+        private int f3777d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f3772e;
+        private boolean f3778e;
 
         /* renamed from: i  reason: collision with root package name */
-        private Iterator f3773i;
+        private Iterator f3779i;
 
         private f() {
-            this.f3771d = -1;
+            this.f3777d = -1;
         }
 
         private Iterator a() {
-            if (this.f3773i == null) {
-                this.f3773i = g1.this.f3757i.entrySet().iterator();
+            if (this.f3779i == null) {
+                this.f3779i = g1.this.f3763i.entrySet().iterator();
             }
-            return this.f3773i;
+            return this.f3779i;
         }
 
         @Override // java.util.Iterator
         /* renamed from: b */
         public Map.Entry next() {
-            this.f3772e = true;
-            int i10 = this.f3771d + 1;
-            this.f3771d = i10;
-            if (i10 < g1.this.f3756e.size()) {
-                return (Map.Entry) g1.this.f3756e.get(this.f3771d);
+            this.f3778e = true;
+            int i10 = this.f3777d + 1;
+            this.f3777d = i10;
+            if (i10 < g1.this.f3762e.size()) {
+                return (Map.Entry) g1.this.f3762e.get(this.f3777d);
             }
             return (Map.Entry) a().next();
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f3771d + 1 < g1.this.f3756e.size() || (!g1.this.f3757i.isEmpty() && a().hasNext())) {
+            if (this.f3777d + 1 < g1.this.f3762e.size() || (!g1.this.f3763i.isEmpty() && a().hasNext())) {
                 return true;
             }
             return false;
@@ -622,13 +622,13 @@ public abstract class g1 extends AbstractMap {
 
         @Override // java.util.Iterator
         public void remove() {
-            if (this.f3772e) {
-                this.f3772e = false;
+            if (this.f3778e) {
+                this.f3778e = false;
                 g1.this.g();
-                if (this.f3771d < g1.this.f3756e.size()) {
+                if (this.f3777d < g1.this.f3762e.size()) {
                     g1 g1Var = g1.this;
-                    int i10 = this.f3771d;
-                    this.f3771d = i10 - 1;
+                    int i10 = this.f3777d;
+                    this.f3777d = i10 - 1;
                     g1Var.s(i10);
                     return;
                 }
@@ -644,10 +644,10 @@ public abstract class g1 extends AbstractMap {
     }
 
     private g1(int i10) {
-        this.f3755d = i10;
-        this.f3756e = Collections.EMPTY_LIST;
+        this.f3761d = i10;
+        this.f3762e = Collections.EMPTY_LIST;
         Map map = Collections.EMPTY_MAP;
-        this.f3757i = map;
-        this.f3760q = map;
+        this.f3763i = map;
+        this.f3766q = map;
     }
 }

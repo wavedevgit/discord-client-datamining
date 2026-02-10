@@ -3,7 +3,7 @@ package ae;
 import android.os.Bundle;
 import android.os.Parcel;
 import java.util.ArrayList;
-import oi.s;
+import qi.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class c {
     public s a(byte[] bArr) {

@@ -5,24 +5,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f9884a;
+    private final String f10461a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f9885b;
+    private final String f10462b;
 
     public a(String code, String message) {
         Intrinsics.checkNotNullParameter(code, "code");
         Intrinsics.checkNotNullParameter(message, "message");
-        this.f9884a = code;
-        this.f9885b = message;
+        this.f10461a = code;
+        this.f10462b = message;
     }
 
     public final String a() {
-        return this.f9884a;
+        return this.f10461a;
     }
 
     public final String b() {
-        return this.f9885b;
+        return this.f10462b;
     }
 
     public boolean equals(Object obj) {
@@ -31,18 +31,18 @@ public final class a {
         }
         if (obj instanceof a) {
             a aVar = (a) obj;
-            return Intrinsics.areEqual(this.f9884a, aVar.f9884a) && Intrinsics.areEqual(this.f9885b, aVar.f9885b);
+            return Intrinsics.areEqual(this.f10461a, aVar.f10461a) && Intrinsics.areEqual(this.f10462b, aVar.f10462b);
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f9884a.hashCode() * 31) + this.f9885b.hashCode();
+        return (this.f10461a.hashCode() * 31) + this.f10462b.hashCode();
     }
 
     public String toString() {
-        String str = this.f9884a;
-        String str2 = this.f9885b;
+        String str = this.f10461a;
+        String str2 = this.f10462b;
         return "BillingResponse(code=" + str + ", message=" + str2 + ")";
     }
 }

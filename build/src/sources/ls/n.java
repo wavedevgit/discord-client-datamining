@@ -1,182 +1,187 @@
 package ls;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.util.Comparator;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectClassUtilKt;
-import kotlin.reflect.jvm.internal.impl.metadata.jvm.deserialization.JvmMemberSignature;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class n {
+import kotlin.text.StringsKt;
+/* JADX INFO: Access modifiers changed from: package-private */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public class n extends m {
+    public static final File p(File file, File target, boolean z10, int i10) {
+        Intrinsics.checkNotNullParameter(file, "<this>");
+        Intrinsics.checkNotNullParameter(target, "target");
+        if (file.exists()) {
+            if (target.exists()) {
+                if (z10) {
+                    if (!target.delete()) {
+                        throw new f(file, target, "Tried to overwrite the destination, but failed to delete it.");
+                    }
+                } else {
+                    throw new f(file, target, "The destination file already exists.");
+                }
+            }
+            if (file.isDirectory()) {
+                if (target.mkdirs()) {
+                    return target;
+                }
+                throw new h(file, target, "Failed to create target directory.");
+            }
+            File parentFile = target.getParentFile();
+            if (parentFile != null) {
+                parentFile.mkdirs();
+            }
+            FileInputStream fileInputStream = new FileInputStream(file);
+            try {
+                FileOutputStream fileOutputStream = new FileOutputStream(target);
+                b.a(fileInputStream, fileOutputStream, i10);
+                c.a(fileOutputStream, null);
+                c.a(fileInputStream, null);
+                return target;
+            } finally {
+            }
+        } else {
+            throw new p(file, null, "The source file doesn't exist.", 2, null);
+        }
+    }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a extends n {
+    public static /* synthetic */ File q(File file, File file2, boolean z10, int i10, int i11, Object obj) {
+        if ((i11 & 2) != 0) {
+            z10 = false;
+        }
+        if ((i11 & 4) != 0) {
+            i10 = 8192;
+        }
+        return p(file, file2, z10, i10);
+    }
 
-        /* renamed from: a  reason: collision with root package name */
-        private final Class f36493a;
+    public static boolean r(File file) {
+        Intrinsics.checkNotNullParameter(file, "<this>");
+        while (true) {
+            boolean z10 = true;
+            for (File file2 : m.o(file)) {
+                if (file2.delete() || !file2.exists()) {
+                    if (z10) {
+                        break;
+                    }
+                }
+                z10 = false;
+            }
+            return z10;
+        }
+    }
 
-        /* renamed from: b  reason: collision with root package name */
-        private final List f36494b;
+    public static String s(File file) {
+        Intrinsics.checkNotNullParameter(file, "<this>");
+        String name = file.getName();
+        Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
+        return StringsKt.X0(name, '.', "");
+    }
 
-        /* renamed from: ls.n$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class C0519a implements Comparator {
-            @Override // java.util.Comparator
-            public final int compare(Object obj, Object obj2) {
-                return ur.a.d(((Method) obj).getName(), ((Method) obj2).getName());
+    public static String t(File file) {
+        Intrinsics.checkNotNullParameter(file, "<this>");
+        String name = file.getName();
+        Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
+        return StringsKt.i1(name, ".", null, 2, null);
+    }
+
+    private static final List u(List list) {
+        ArrayList arrayList = new ArrayList(list.size());
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            File file = (File) it.next();
+            String name = file.getName();
+            if (!Intrinsics.areEqual(name, ".")) {
+                if (Intrinsics.areEqual(name, "..")) {
+                    if (!arrayList.isEmpty() && !Intrinsics.areEqual(((File) CollectionsKt.z0(arrayList)).getName(), "..")) {
+                        arrayList.remove(arrayList.size() - 1);
+                    } else {
+                        arrayList.add(file);
+                    }
+                } else {
+                    arrayList.add(file);
+                }
             }
         }
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public a(Class jClass) {
-            super(null);
-            Intrinsics.checkNotNullParameter(jClass, "jClass");
-            this.f36493a = jClass;
-            Method[] declaredMethods = jClass.getDeclaredMethods();
-            Intrinsics.checkNotNullExpressionValue(declaredMethods, "getDeclaredMethods(...)");
-            this.f36494b = kotlin.collections.i.F0(declaredMethods, new C0519a());
-        }
-
-        /* JADX INFO: Access modifiers changed from: private */
-        public static final CharSequence c(Method method) {
-            Class<?> returnType = method.getReturnType();
-            Intrinsics.checkNotNullExpressionValue(returnType, "getReturnType(...)");
-            return ReflectClassUtilKt.getDesc(returnType);
-        }
-
-        @Override // ls.n
-        public String a() {
-            return CollectionsKt.x0(this.f36494b, "", "<init>(", ")V", 0, null, m.f36489d, 24, null);
-        }
-
-        public final List d() {
-            return this.f36494b;
-        }
+        return arrayList;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b extends n {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final Constructor f36495a;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public b(Constructor constructor) {
-            super(null);
-            Intrinsics.checkNotNullParameter(constructor, "constructor");
-            this.f36495a = constructor;
-        }
-
-        /* JADX INFO: Access modifiers changed from: private */
-        public static final CharSequence c(Class cls) {
-            Intrinsics.checkNotNull(cls);
-            return ReflectClassUtilKt.getDesc(cls);
-        }
-
-        @Override // ls.n
-        public String a() {
-            Class<?>[] parameterTypes = this.f36495a.getParameterTypes();
-            Intrinsics.checkNotNullExpressionValue(parameterTypes, "getParameterTypes(...)");
-            return kotlin.collections.i.v0(parameterTypes, "", "<init>(", ")V", 0, null, o.f36504d, 24, null);
-        }
-
-        public final Constructor d() {
-            return this.f36495a;
-        }
+    private static final g v(g gVar) {
+        return new g(gVar.a(), u(gVar.b()));
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class c extends n {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final Method f36496a;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public c(Method method) {
-            super(null);
-            Intrinsics.checkNotNullParameter(method, "method");
-            this.f36496a = method;
+    public static final File w(File file, File relative) {
+        Intrinsics.checkNotNullParameter(file, "<this>");
+        Intrinsics.checkNotNullParameter(relative, "relative");
+        if (k.b(relative)) {
+            return relative;
         }
-
-        @Override // ls.n
-        public String a() {
-            String d10;
-            d10 = g3.d(this.f36496a);
-            return d10;
+        String file2 = file.toString();
+        Intrinsics.checkNotNullExpressionValue(file2, "toString(...)");
+        if (file2.length() != 0) {
+            char c10 = File.separatorChar;
+            if (!StringsKt.Y(file2, c10, false, 2, null)) {
+                return new File(file2 + c10 + relative);
+            }
         }
-
-        public final Method b() {
-            return this.f36496a;
-        }
+        return new File(file2 + relative);
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class d extends n {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final JvmMemberSignature.Method f36497a;
-
-        /* renamed from: b  reason: collision with root package name */
-        private final String f36498b;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public d(JvmMemberSignature.Method signature) {
-            super(null);
-            Intrinsics.checkNotNullParameter(signature, "signature");
-            this.f36497a = signature;
-            this.f36498b = signature.asString();
-        }
-
-        @Override // ls.n
-        public String a() {
-            return this.f36498b;
-        }
-
-        public final String b() {
-            return this.f36497a.getDesc();
-        }
+    public static File x(File file, String relative) {
+        Intrinsics.checkNotNullParameter(file, "<this>");
+        Intrinsics.checkNotNullParameter(relative, "relative");
+        return w(file, new File(relative));
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class e extends n {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final JvmMemberSignature.Method f36499a;
-
-        /* renamed from: b  reason: collision with root package name */
-        private final String f36500b;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public e(JvmMemberSignature.Method signature) {
-            super(null);
-            Intrinsics.checkNotNullParameter(signature, "signature");
-            this.f36499a = signature;
-            this.f36500b = signature.asString();
+    public static String y(File file, File base) {
+        Intrinsics.checkNotNullParameter(file, "<this>");
+        Intrinsics.checkNotNullParameter(base, "base");
+        String z10 = z(file, base);
+        if (z10 != null) {
+            return z10;
         }
-
-        @Override // ls.n
-        public String a() {
-            return this.f36500b;
-        }
-
-        public final String b() {
-            return this.f36499a.getDesc();
-        }
-
-        public final String c() {
-            return this.f36499a.getName();
-        }
+        throw new IllegalArgumentException("this and base files have different roots: " + file + " and " + base + '.');
     }
 
-    public /* synthetic */ n(DefaultConstructorMarker defaultConstructorMarker) {
-        this();
-    }
-
-    public abstract String a();
-
-    private n() {
+    private static final String z(File file, File file2) {
+        g v10 = v(k.c(file));
+        g v11 = v(k.c(file2));
+        if (!Intrinsics.areEqual(v10.a(), v11.a())) {
+            return null;
+        }
+        int c10 = v11.c();
+        int c11 = v10.c();
+        int min = Math.min(c11, c10);
+        int i10 = 0;
+        while (i10 < min && Intrinsics.areEqual(v10.b().get(i10), v11.b().get(i10))) {
+            i10++;
+        }
+        StringBuilder sb2 = new StringBuilder();
+        int i11 = c10 - 1;
+        if (i10 <= i11) {
+            while (!Intrinsics.areEqual(((File) v11.b().get(i11)).getName(), "..")) {
+                sb2.append("..");
+                if (i11 != i10) {
+                    sb2.append(File.separatorChar);
+                }
+                if (i11 != i10) {
+                    i11--;
+                }
+            }
+            return null;
+        }
+        if (i10 < c11) {
+            if (i10 < c10) {
+                sb2.append(File.separatorChar);
+            }
+            String separator = File.separator;
+            Intrinsics.checkNotNullExpressionValue(separator, "separator");
+            CollectionsKt.v0(CollectionsKt.f0(v10.b(), i10), sb2, separator, null, null, 0, null, null, 124, null);
+        }
+        return sb2.toString();
     }
 }

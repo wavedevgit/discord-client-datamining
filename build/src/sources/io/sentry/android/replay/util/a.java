@@ -8,50 +8,50 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Layout f28040a;
+    private final Layout f28975a;
 
     public a(Layout layout) {
         Intrinsics.checkNotNullParameter(layout, "layout");
-        this.f28040a = layout;
+        this.f28975a = layout;
     }
 
     @Override // io.sentry.android.replay.util.m
     public int a(int i10) {
-        return this.f28040a.getLineTop(i10);
+        return this.f28975a.getLineTop(i10);
     }
 
     @Override // io.sentry.android.replay.util.m
     public float b(int i10, int i11) {
-        return this.f28040a.getPrimaryHorizontal(i11);
+        return this.f28975a.getPrimaryHorizontal(i11);
     }
 
     @Override // io.sentry.android.replay.util.m
     public int c(int i10) {
-        return this.f28040a.getLineStart(i10);
+        return this.f28975a.getLineStart(i10);
     }
 
     @Override // io.sentry.android.replay.util.m
     public int d() {
-        return this.f28040a.getLineCount();
+        return this.f28975a.getLineCount();
     }
 
     @Override // io.sentry.android.replay.util.m
     public Integer e() {
         int i10;
-        if (!(this.f28040a.getText() instanceof Spanned)) {
+        if (!(this.f28975a.getText() instanceof Spanned)) {
             return null;
         }
-        CharSequence text = this.f28040a.getText();
+        CharSequence text = this.f28975a.getText();
         Intrinsics.checkNotNull(text, "null cannot be cast to non-null type android.text.Spanned");
-        ForegroundColorSpan[] foregroundColorSpanArr = (ForegroundColorSpan[]) ((Spanned) text).getSpans(0, this.f28040a.getText().length(), ForegroundColorSpan.class);
+        ForegroundColorSpan[] foregroundColorSpanArr = (ForegroundColorSpan[]) ((Spanned) text).getSpans(0, this.f28975a.getText().length(), ForegroundColorSpan.class);
         Intrinsics.checkNotNull(foregroundColorSpanArr);
         int i11 = Integer.MIN_VALUE;
         Integer num = null;
         for (ForegroundColorSpan foregroundColorSpan : foregroundColorSpanArr) {
-            CharSequence text2 = this.f28040a.getText();
+            CharSequence text2 = this.f28975a.getText();
             Intrinsics.checkNotNull(text2, "null cannot be cast to non-null type android.text.Spanned");
             int spanStart = ((Spanned) text2).getSpanStart(foregroundColorSpan);
-            CharSequence text3 = this.f28040a.getText();
+            CharSequence text3 = this.f28975a.getText();
             Intrinsics.checkNotNull(text3, "null cannot be cast to non-null type android.text.Spanned");
             int spanEnd = ((Spanned) text3).getSpanEnd(foregroundColorSpan);
             if (spanStart != -1 && spanEnd != -1 && (i10 = spanEnd - spanStart) > i11) {
@@ -67,16 +67,16 @@ public final class a implements m {
 
     @Override // io.sentry.android.replay.util.m
     public int f(int i10) {
-        return this.f28040a.getLineVisibleEnd(i10);
+        return this.f28975a.getLineVisibleEnd(i10);
     }
 
     @Override // io.sentry.android.replay.util.m
     public int g(int i10) {
-        return this.f28040a.getEllipsisCount(i10);
+        return this.f28975a.getEllipsisCount(i10);
     }
 
     @Override // io.sentry.android.replay.util.m
     public int h(int i10) {
-        return this.f28040a.getLineBottom(i10);
+        return this.f28975a.getLineBottom(i10);
     }
 }

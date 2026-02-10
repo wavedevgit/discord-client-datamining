@@ -1,5 +1,6 @@
 package x5;
 
+import av.a0;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import java.io.Closeable;
 import java.io.IOException;
@@ -7,43 +8,42 @@ import java.util.Arrays;
 import okio.Buffer;
 import okio.BufferedSource;
 import okio.ByteString;
-import ru.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class c implements Closeable {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final String[] f54661r = new String[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
+    private static final String[] f54393r = new String[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
 
     /* renamed from: d  reason: collision with root package name */
-    int f54662d;
+    int f54394d;
 
     /* renamed from: e  reason: collision with root package name */
-    int[] f54663e = new int[32];
+    int[] f54395e = new int[32];
 
     /* renamed from: i  reason: collision with root package name */
-    String[] f54664i = new String[32];
+    String[] f54396i = new String[32];
 
     /* renamed from: o  reason: collision with root package name */
-    int[] f54665o = new int[32];
+    int[] f54397o = new int[32];
 
     /* renamed from: p  reason: collision with root package name */
-    boolean f54666p;
+    boolean f54398p;
 
     /* renamed from: q  reason: collision with root package name */
-    boolean f54667q;
+    boolean f54399q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final String[] f54668a;
+        final String[] f54400a;
 
         /* renamed from: b  reason: collision with root package name */
-        final a0 f54669b;
+        final a0 f54401b;
 
         private a(String[] strArr, a0 a0Var) {
-            this.f54668a = strArr;
-            this.f54669b = a0Var;
+            this.f54400a = strArr;
+            this.f54401b = a0Var;
         }
 
         public static a a(String... strArr) {
@@ -53,7 +53,7 @@ public abstract class c implements Closeable {
                 for (int i10 = 0; i10 < strArr.length; i10++) {
                     c.y(buffer, strArr[i10]);
                     buffer.readByte();
-                    byteStringArr[i10] = buffer.I1();
+                    byteStringArr[i10] = buffer.M1();
                 }
                 return new a((String[]) strArr.clone(), a0.l(byteStringArr));
             } catch (IOException e10) {
@@ -78,9 +78,9 @@ public abstract class c implements Closeable {
 
     static {
         for (int i10 = 0; i10 <= 31; i10++) {
-            f54661r[i10] = String.format("\\u%04x", Integer.valueOf(i10));
+            f54393r[i10] = String.format("\\u%04x", Integer.valueOf(i10));
         }
-        String[] strArr = f54661r;
+        String[] strArr = f54393r;
         strArr[34] = "\\\"";
         strArr[92] = "\\\\";
         strArr[9] = "\\t";
@@ -90,7 +90,7 @@ public abstract class c implements Closeable {
         strArr[12] = "\\f";
     }
 
-    public static c k(BufferedSource bufferedSource) {
+    public static c i(BufferedSource bufferedSource) {
         return new e(bufferedSource);
     }
 
@@ -102,7 +102,7 @@ public abstract class c implements Closeable {
     */
     public static void y(okio.BufferedSink r7, java.lang.String r8) {
         /*
-            java.lang.String[] r0 = x5.c.f54661r
+            java.lang.String[] r0 = x5.c.f54393r
             r1 = 34
             r7.writeByte(r1)
             int r2 = r8.length()
@@ -148,9 +148,9 @@ public abstract class c implements Closeable {
 
     public abstract void T();
 
-    public abstract String b1();
+    public abstract String g1();
 
-    public abstract boolean g();
+    public abstract boolean h();
 
     public abstract boolean hasNext();
 
@@ -158,22 +158,22 @@ public abstract class c implements Closeable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void n(int i10) {
-        int i11 = this.f54662d;
-        int[] iArr = this.f54663e;
+        int i11 = this.f54394d;
+        int[] iArr = this.f54395e;
         if (i11 == iArr.length) {
             if (i11 != 256) {
-                this.f54663e = Arrays.copyOf(iArr, iArr.length * 2);
-                String[] strArr = this.f54664i;
-                this.f54664i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
-                int[] iArr2 = this.f54665o;
-                this.f54665o = Arrays.copyOf(iArr2, iArr2.length * 2);
+                this.f54395e = Arrays.copyOf(iArr, iArr.length * 2);
+                String[] strArr = this.f54396i;
+                this.f54396i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
+                int[] iArr2 = this.f54397o;
+                this.f54397o = Arrays.copyOf(iArr2, iArr2.length * 2);
             } else {
                 throw new x5.a("Nesting too deep at " + t());
             }
         }
-        int[] iArr3 = this.f54663e;
-        int i12 = this.f54662d;
-        this.f54662d = i12 + 1;
+        int[] iArr3 = this.f54395e;
+        int i12 = this.f54394d;
+        this.f54394d = i12 + 1;
         iArr3[i12] = i10;
     }
 
@@ -188,7 +188,7 @@ public abstract class c implements Closeable {
     public abstract void s();
 
     public final String t() {
-        return d.a(this.f54662d, this.f54663e, this.f54664i, this.f54665o);
+        return d.a(this.f54394d, this.f54395e, this.f54396i, this.f54397o);
     }
 
     public abstract void u();

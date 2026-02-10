@@ -1,161 +1,61 @@
 package ks;
 
-import java.lang.reflect.AccessibleObject;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.Member;
-import java.lang.reflect.Method;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.reflect.KCallable;
-import kotlin.reflect.KFunction;
-import kotlin.reflect.KProperty;
-import kotlin.reflect.e;
-import ls.a0;
-import ls.j3;
-import ms.h;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public abstract class a {
-    public static final boolean a(KCallable kCallable) {
-        boolean z10;
-        Member member;
-        boolean z11;
-        boolean z12;
-        h C;
-        boolean z13;
-        boolean z14;
-        boolean z15;
-        boolean z16;
-        boolean z17;
-        boolean z18;
-        boolean z19;
-        boolean z20;
-        boolean z21;
-        Intrinsics.checkNotNullParameter(kCallable, "<this>");
-        if (kCallable instanceof e) {
-            KProperty kProperty = (KProperty) kCallable;
-            Field b10 = c.b(kProperty);
-            if (b10 != null) {
-                z19 = b10.isAccessible();
-            } else {
-                z19 = true;
+import kotlin.random.c;
+import org.jetbrains.annotations.NotNull;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public class a extends js.a {
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* renamed from: ks.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0465a {
+        @NotNull
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final C0465a f35165a = new C0465a();
+
+        /* renamed from: b  reason: collision with root package name */
+        public static final Integer f35166b;
+
+        static {
+            Integer num;
+            Object obj;
+            Integer num2 = null;
+            try {
+                obj = Class.forName("android.os.Build$VERSION").getField("SDK_INT").get(null);
+            } catch (Throwable unused) {
             }
-            if (z19) {
-                Method c10 = c.c(kProperty);
-                if (c10 != null) {
-                    z20 = c10.isAccessible();
-                } else {
-                    z20 = true;
+            if (obj instanceof Integer) {
+                num = (Integer) obj;
+                if (num != null && num.intValue() > 0) {
+                    num2 = num;
                 }
-                if (z20) {
-                    Method e10 = c.e((e) kCallable);
-                    if (e10 != null) {
-                        z21 = e10.isAccessible();
-                    } else {
-                        z21 = true;
-                    }
-                    if (z21) {
-                        return true;
-                    }
-                }
+                f35166b = num2;
             }
-            return false;
-        } else if (kCallable instanceof KProperty) {
-            KProperty kProperty2 = (KProperty) kCallable;
-            Field b11 = c.b(kProperty2);
-            if (b11 != null) {
-                z17 = b11.isAccessible();
-            } else {
-                z17 = true;
+            num = null;
+            if (num != null) {
+                num2 = num;
             }
-            if (z17) {
-                Method c11 = c.c(kProperty2);
-                if (c11 != null) {
-                    z18 = c11.isAccessible();
-                } else {
-                    z18 = true;
-                }
-                if (z18) {
-                    return true;
-                }
-            }
-            return false;
-        } else if (kCallable instanceof KProperty.b) {
-            Field b12 = c.b(((KProperty.b) kCallable).a());
-            if (b12 != null) {
-                z15 = b12.isAccessible();
-            } else {
-                z15 = true;
-            }
-            if (z15) {
-                Method d10 = c.d((KFunction) kCallable);
-                if (d10 != null) {
-                    z16 = d10.isAccessible();
-                } else {
-                    z16 = true;
-                }
-                if (z16) {
-                    return true;
-                }
-            }
-            return false;
-        } else if (kCallable instanceof e.a) {
-            Field b13 = c.b(((e.a) kCallable).a());
-            if (b13 != null) {
-                z13 = b13.isAccessible();
-            } else {
-                z13 = true;
-            }
-            if (z13) {
-                Method d11 = c.d((KFunction) kCallable);
-                if (d11 != null) {
-                    z14 = d11.isAccessible();
-                } else {
-                    z14 = true;
-                }
-                if (z14) {
-                    return true;
-                }
-            }
-            return false;
-        } else if (kCallable instanceof KFunction) {
-            KFunction kFunction = (KFunction) kCallable;
-            Method d12 = c.d(kFunction);
-            if (d12 != null) {
-                z10 = d12.isAccessible();
-            } else {
-                z10 = true;
-            }
-            if (z10) {
-                a0 b14 = j3.b(kCallable);
-                AccessibleObject accessibleObject = null;
-                if (b14 != null && (C = b14.C()) != null) {
-                    member = C.b();
-                } else {
-                    member = null;
-                }
-                if (member instanceof AccessibleObject) {
-                    accessibleObject = (AccessibleObject) member;
-                }
-                if (accessibleObject != null) {
-                    z11 = accessibleObject.isAccessible();
-                } else {
-                    z11 = true;
-                }
-                if (z11) {
-                    Constructor a10 = c.a(kFunction);
-                    if (a10 != null) {
-                        z12 = a10.isAccessible();
-                    } else {
-                        z12 = true;
-                    }
-                    if (z12) {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        } else {
-            throw new UnsupportedOperationException("Unknown callable: " + kCallable + " (" + kCallable.getClass() + ')');
+            f35166b = num2;
         }
+
+        private C0465a() {
+        }
+    }
+
+    private final boolean c(int i10) {
+        Integer num = C0465a.f35166b;
+        if (num != null && num.intValue() < i10) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override // is.a
+    public c b() {
+        if (c(34)) {
+            return new qs.a();
+        }
+        return super.b();
     }
 }

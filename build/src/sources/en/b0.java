@@ -1,40 +1,82 @@
 package en;
 
+import en.r;
+import kotlin.Pair;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Reflection;
-import kotlin.reflect.KClass;
+import kotlin.jvm.internal.Lambda;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b0 {
+public abstract /* synthetic */ class b0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final KClass f21774a;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a extends Lambda implements Function0 {
 
-    public b0(KClass type) {
-        Intrinsics.checkNotNullParameter(type, "type");
-        this.f21774a = type;
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ String f22959d;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        a(String str) {
+            super(0);
+            this.f22959d = str;
+        }
+
+        @Override // kotlin.jvm.functions.Function0
+        public final String invoke() {
+            return this.f22959d;
+        }
     }
 
-    public abstract Object a();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b extends r {
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+        /* renamed from: c  reason: collision with root package name */
+        final /* synthetic */ Function1 f22960c;
+
+        /* renamed from: d  reason: collision with root package name */
+        final /* synthetic */ Function0 f22961d;
+
+        b(Function1 function1, Function0 function0) {
+            this.f22960c = function1;
+            this.f22961d = function0;
         }
-        if (obj != null && !Intrinsics.areEqual(Reflection.getOrCreateKotlinClass(getClass()), Reflection.getOrCreateKotlinClass(obj.getClass()))) {
-            return false;
+
+        @Override // en.r
+        public void a(r.c cVar) {
+            Intrinsics.checkNotNullParameter(cVar, "<this>");
+            this.f22960c.invoke(cVar);
         }
-        KClass kClass = this.f21774a;
-        if (obj != null) {
-            return Intrinsics.areEqual(kClass, ((b0) obj).f21774a);
+
+        public String toString() {
+            return "WorkflowAction(" + ((String) this.f22961d.invoke()) + ")@" + hashCode();
         }
-        throw new NullPointerException("null cannot be cast to non-null type com.squareup.workflow1.ui.ViewEnvironmentKey<*>");
     }
 
-    public final int hashCode() {
-        return this.f21774a.hashCode();
+    public static final r a(String name, Function1 apply) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        Intrinsics.checkNotNullParameter(apply, "apply");
+        return w.e(new a(name), apply);
     }
 
-    public String toString() {
-        return "ViewEnvironmentKey(" + this.f21774a + ")-" + super.toString();
+    public static final r b(Function0 name, Function1 apply) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        Intrinsics.checkNotNullParameter(apply, "apply");
+        return new b(apply, name);
+    }
+
+    public static /* synthetic */ r c(String str, Function1 function1, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            str = "";
+        }
+        return w.d(str, function1);
+    }
+
+    public static final Pair d(r rVar, Object obj, Object obj2) {
+        Intrinsics.checkNotNullParameter(rVar, "<this>");
+        r.c cVar = new r.c(rVar, obj, obj2);
+        rVar.a(cVar);
+        return new Pair(cVar.c(), cVar.a());
     }
 }

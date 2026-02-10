@@ -16,7 +16,7 @@ public final class CompanionObjectMapping {
     public static final CompanionObjectMapping INSTANCE = new CompanionObjectMapping();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f31891a;
+    private static final Set f32113a;
 
     static {
         Set<PrimitiveType> set = PrimitiveType.NUMBER_TYPES;
@@ -29,7 +29,7 @@ public final class CompanionObjectMapping {
         for (FqName fqName : CollectionsKt.M0(CollectionsKt.M0(CollectionsKt.M0(arrayList, StandardNames.FqNames.string.toSafe()), StandardNames.FqNames._boolean.toSafe()), StandardNames.FqNames._enum.toSafe())) {
             linkedHashSet.add(companion.topLevel(fqName));
         }
-        f31891a = linkedHashSet;
+        f32113a = linkedHashSet;
     }
 
     private CompanionObjectMapping() {
@@ -37,11 +37,11 @@ public final class CompanionObjectMapping {
 
     @NotNull
     public final Set<ClassId> allClassesWithIntrinsicCompanions() {
-        return f31891a;
+        return f32113a;
     }
 
     @NotNull
     public final Set<ClassId> getClassIds() {
-        return f31891a;
+        return f32113a;
     }
 }

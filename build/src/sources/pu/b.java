@@ -1,70 +1,48 @@
 package pu;
 
-import java.security.cert.X509Certificate;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.Map;
-import java.util.Set;
-import javax.security.auth.x500.X500Principal;
+import java.util.Arrays;
+import java.util.logging.Logger;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.StringCompanionObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements e {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Map f44556a;
-
-    public b(X509Certificate... caCerts) {
-        Intrinsics.checkNotNullParameter(caCerts, "caCerts");
-        LinkedHashMap linkedHashMap = new LinkedHashMap();
-        for (X509Certificate x509Certificate : caCerts) {
-            X500Principal subjectX500Principal = x509Certificate.getSubjectX500Principal();
-            Intrinsics.checkNotNullExpressionValue(subjectX500Principal, "caCert.subjectX500Principal");
-            Object obj = linkedHashMap.get(subjectX500Principal);
-            if (obj == null) {
-                obj = new LinkedHashSet();
-                linkedHashMap.put(subjectX500Principal, obj);
-            }
-            ((Set) obj).add(x509Certificate);
-        }
-        this.f44556a = linkedHashMap;
+public abstract class b {
+    public static final /* synthetic */ void a(a aVar, d dVar, String str) {
+        c(aVar, dVar, str);
     }
 
-    @Override // pu.e
-    public X509Certificate a(X509Certificate cert) {
-        Intrinsics.checkNotNullParameter(cert, "cert");
-        Set set = (Set) this.f44556a.get(cert.getIssuerX500Principal());
-        Object obj = null;
-        if (set == null) {
-            return null;
+    public static final String b(long j10) {
+        String str;
+        if (j10 <= -999500000) {
+            str = ((j10 - 500000000) / 1000000000) + " s ";
+        } else if (j10 <= -999500) {
+            str = ((j10 - 500000) / 1000000) + " ms";
+        } else if (j10 <= 0) {
+            str = ((j10 - 500) / 1000) + " µs";
+        } else if (j10 < 999500) {
+            str = ((j10 + 500) / 1000) + " µs";
+        } else if (j10 < 999500000) {
+            str = ((j10 + 500000) / 1000000) + " ms";
+        } else {
+            str = ((j10 + 500000000) / 1000000000) + " s ";
         }
-        Iterator it = set.iterator();
-        while (true) {
-            if (!it.hasNext()) {
-                break;
-            }
-            Object next = it.next();
-            try {
-                cert.verify(((X509Certificate) next).getPublicKey());
-                obj = next;
-                break;
-            } catch (Exception unused) {
-            }
-        }
-        return (X509Certificate) obj;
+        StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
+        String format = String.format("%6s", Arrays.copyOf(new Object[]{str}, 1));
+        Intrinsics.checkNotNullExpressionValue(format, "format(format, *args)");
+        return format;
     }
 
-    public boolean equals(Object obj) {
-        if (obj != this) {
-            if (!(obj instanceof b) || !Intrinsics.areEqual(((b) obj).f44556a, this.f44556a)) {
-                return false;
-            }
-            return true;
-        }
-        return true;
-    }
-
-    public int hashCode() {
-        return this.f44556a.hashCode();
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void c(a aVar, d dVar, String str) {
+        Logger a10 = e.f43214h.a();
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append(dVar.f());
+        sb2.append(' ');
+        StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
+        String format = String.format("%-22s", Arrays.copyOf(new Object[]{str}, 1));
+        Intrinsics.checkNotNullExpressionValue(format, "format(format, *args)");
+        sb2.append(format);
+        sb2.append(": ");
+        sb2.append(aVar.b());
+        a10.fine(sb2.toString());
     }
 }

@@ -1,5 +1,6 @@
 package og;
 
+import bj.c;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import java.io.OutputStream;
 import java.nio.ByteBuffer;
@@ -7,83 +8,82 @@ import java.nio.ByteOrder;
 import java.nio.charset.Charset;
 import java.util.Collection;
 import java.util.Map;
-import zi.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class r2 implements zi.e {
+final class r2 implements bj.e {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Charset f41290f = Charset.forName("UTF-8");
+    private static final Charset f39616f = Charset.forName("UTF-8");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final zi.c f41291g;
+    private static final bj.c f39617g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final zi.c f41292h;
+    private static final bj.c f39618h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final zi.d f41293i;
+    private static final bj.d f39619i;
 
     /* renamed from: a  reason: collision with root package name */
-    private OutputStream f41294a;
+    private OutputStream f39620a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f41295b;
+    private final Map f39621b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f41296c;
+    private final Map f39622c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final zi.d f41297d;
+    private final bj.d f39623d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final v2 f41298e = new v2(this);
+    private final v2 f39624e = new v2(this);
 
     static {
-        c.b a10 = zi.c.a("key");
+        c.b a10 = bj.c.a("key");
         l2 l2Var = new l2();
         l2Var.a(1);
-        f41291g = a10.b(l2Var.b()).a();
-        c.b a11 = zi.c.a("value");
+        f39617g = a10.b(l2Var.b()).a();
+        c.b a11 = bj.c.a("value");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
-        f41292h = a11.b(l2Var2.b()).a();
-        f41293i = new zi.d() { // from class: og.q2
-            @Override // zi.d
+        f39618h = a11.b(l2Var2.b()).a();
+        f39619i = new bj.d() { // from class: og.q2
+            @Override // bj.d
             public final void a(Object obj, Object obj2) {
-                r2.j((Map.Entry) obj, (zi.e) obj2);
+                r2.j((Map.Entry) obj, (bj.e) obj2);
             }
         };
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public r2(OutputStream outputStream, Map map, Map map2, zi.d dVar) {
-        this.f41294a = outputStream;
-        this.f41295b = map;
-        this.f41296c = map2;
-        this.f41297d = dVar;
+    public r2(OutputStream outputStream, Map map, Map map2, bj.d dVar) {
+        this.f39620a = outputStream;
+        this.f39621b = map;
+        this.f39622c = map2;
+        this.f39623d = dVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* synthetic */ void j(Map.Entry entry, zi.e eVar) {
-        eVar.d(f41291g, entry.getKey());
-        eVar.d(f41292h, entry.getValue());
+    public static /* synthetic */ void j(Map.Entry entry, bj.e eVar) {
+        eVar.e(f39617g, entry.getKey());
+        eVar.e(f39618h, entry.getValue());
     }
 
-    private static int k(zi.c cVar) {
+    private static int k(bj.c cVar) {
         p2 p2Var = (p2) cVar.c(p2.class);
         if (p2Var != null) {
             return p2Var.zza();
         }
-        throw new zi.b("Field has no @Protobuf config");
+        throw new bj.b("Field has no @Protobuf config");
     }
 
-    private final long l(zi.d dVar, Object obj) {
+    private final long l(bj.d dVar, Object obj) {
         m2 m2Var = new m2();
         try {
-            OutputStream outputStream = this.f41294a;
-            this.f41294a = m2Var;
+            OutputStream outputStream = this.f39620a;
+            this.f39620a = m2Var;
             dVar.a(obj, this);
-            this.f41294a = outputStream;
+            this.f39620a = outputStream;
             long a10 = m2Var.a();
             m2Var.close();
             return a10;
@@ -97,15 +97,15 @@ final class r2 implements zi.e {
         }
     }
 
-    private static p2 m(zi.c cVar) {
+    private static p2 m(bj.c cVar) {
         p2 p2Var = (p2) cVar.c(p2.class);
         if (p2Var != null) {
             return p2Var;
         }
-        throw new zi.b("Field has no @Protobuf config");
+        throw new bj.b("Field has no @Protobuf config");
     }
 
-    private final r2 n(zi.d dVar, zi.c cVar, Object obj, boolean z10) {
+    private final r2 n(bj.d dVar, bj.c cVar, Object obj, boolean z10) {
         long l10 = l(dVar, obj);
         if (z10 && l10 == 0) {
             return this;
@@ -116,9 +116,9 @@ final class r2 implements zi.e {
         return this;
     }
 
-    private final r2 o(zi.f fVar, zi.c cVar, Object obj, boolean z10) {
-        this.f41298e.a(cVar, z10);
-        fVar.a(obj, this.f41298e);
+    private final r2 o(bj.f fVar, bj.c cVar, Object obj, boolean z10) {
+        this.f39624e.b(cVar, z10);
+        fVar.a(obj, this.f39624e);
         return this;
     }
 
@@ -130,10 +130,10 @@ final class r2 implements zi.e {
         while (true) {
             int i11 = i10 & 127;
             if ((i10 & (-128)) != 0) {
-                this.f41294a.write(i11 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+                this.f39620a.write(i11 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
                 i10 >>>= 7;
             } else {
-                this.f41294a.write(i11);
+                this.f39620a.write(i11);
                 return;
             }
         }
@@ -143,61 +143,61 @@ final class r2 implements zi.e {
         while (true) {
             int i10 = ((int) j10) & 127;
             if (((-128) & j10) != 0) {
-                this.f41294a.write(i10 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+                this.f39620a.write(i10 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
                 j10 >>>= 7;
             } else {
-                this.f41294a.write(i10);
+                this.f39620a.write(i10);
                 return;
             }
         }
     }
 
-    @Override // zi.e
-    public final /* synthetic */ zi.e a(zi.c cVar, long j10) {
-        h(cVar, j10, true);
-        return this;
-    }
-
-    @Override // zi.e
-    public final /* synthetic */ zi.e b(zi.c cVar, int i10) {
-        g(cVar, i10, true);
-        return this;
-    }
-
-    final zi.e c(zi.c cVar, double d10, boolean z10) {
+    final bj.e a(bj.c cVar, double d10, boolean z10) {
         if (z10 && d10 == 0.0d) {
             return this;
         }
         q((k(cVar) << 3) | 1);
-        this.f41294a.write(p(8).putDouble(d10).array());
+        this.f39620a.write(p(8).putDouble(d10).array());
         return this;
     }
 
-    @Override // zi.e
-    public final zi.e d(zi.c cVar, Object obj) {
-        f(cVar, obj, true);
+    @Override // bj.e
+    public final /* synthetic */ bj.e b(bj.c cVar, int i10) {
+        g(cVar, i10, true);
         return this;
     }
 
-    final zi.e e(zi.c cVar, float f10, boolean z10) {
+    @Override // bj.e
+    public final /* synthetic */ bj.e c(bj.c cVar, long j10) {
+        h(cVar, j10, true);
+        return this;
+    }
+
+    final bj.e d(bj.c cVar, float f10, boolean z10) {
         if (z10 && f10 == 0.0f) {
             return this;
         }
         q((k(cVar) << 3) | 5);
-        this.f41294a.write(p(4).putFloat(f10).array());
+        this.f39620a.write(p(4).putFloat(f10).array());
+        return this;
+    }
+
+    @Override // bj.e
+    public final bj.e e(bj.c cVar, Object obj) {
+        f(cVar, obj, true);
         return this;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final zi.e f(zi.c cVar, Object obj, boolean z10) {
+    public final bj.e f(bj.c cVar, Object obj, boolean z10) {
         if (obj != null) {
             if (obj instanceof CharSequence) {
                 CharSequence charSequence = (CharSequence) obj;
                 if (!z10 || charSequence.length() != 0) {
                     q((k(cVar) << 3) | 2);
-                    byte[] bytes = charSequence.toString().getBytes(f41290f);
+                    byte[] bytes = charSequence.toString().getBytes(f39616f);
                     q(bytes.length);
-                    this.f41294a.write(bytes);
+                    this.f39620a.write(bytes);
                     return this;
                 }
             } else if (obj instanceof Collection) {
@@ -206,13 +206,13 @@ final class r2 implements zi.e {
                 }
             } else if (obj instanceof Map) {
                 for (Map.Entry entry : ((Map) obj).entrySet()) {
-                    n(f41293i, cVar, entry, false);
+                    n(f39619i, cVar, entry, false);
                 }
             } else if (obj instanceof Double) {
-                c(cVar, ((Double) obj).doubleValue(), z10);
+                a(cVar, ((Double) obj).doubleValue(), z10);
                 return this;
             } else if (obj instanceof Float) {
-                e(cVar, ((Float) obj).floatValue(), z10);
+                d(cVar, ((Float) obj).floatValue(), z10);
                 return this;
             } else if (obj instanceof Number) {
                 h(cVar, ((Number) obj).longValue(), z10);
@@ -225,16 +225,16 @@ final class r2 implements zi.e {
                 if (!z10 || bArr.length != 0) {
                     q((k(cVar) << 3) | 2);
                     q(bArr.length);
-                    this.f41294a.write(bArr);
+                    this.f39620a.write(bArr);
                     return this;
                 }
             } else {
-                zi.d dVar = (zi.d) this.f41295b.get(obj.getClass());
+                bj.d dVar = (bj.d) this.f39621b.get(obj.getClass());
                 if (dVar != null) {
                     n(dVar, cVar, obj, z10);
                     return this;
                 }
-                zi.f fVar = (zi.f) this.f41296c.get(obj.getClass());
+                bj.f fVar = (bj.f) this.f39622c.get(obj.getClass());
                 if (fVar != null) {
                     o(fVar, cVar, obj, z10);
                     return this;
@@ -245,7 +245,7 @@ final class r2 implements zi.e {
                     g(cVar, ((Enum) obj).ordinal(), true);
                     return this;
                 } else {
-                    n(this.f41297d, cVar, obj, z10);
+                    n(this.f39623d, cVar, obj, z10);
                     return this;
                 }
             }
@@ -254,7 +254,7 @@ final class r2 implements zi.e {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final r2 g(zi.c cVar, int i10, boolean z10) {
+    public final r2 g(bj.c cVar, int i10, boolean z10) {
         if (!z10 || i10 != 0) {
             p2 m10 = m(cVar);
             int ordinal = m10.zzb().ordinal();
@@ -262,7 +262,7 @@ final class r2 implements zi.e {
                 if (ordinal != 1) {
                     if (ordinal == 2) {
                         q((m10.zza() << 3) | 5);
-                        this.f41294a.write(p(4).putInt(i10).array());
+                        this.f39620a.write(p(4).putInt(i10).array());
                         return this;
                     }
                 } else {
@@ -279,7 +279,7 @@ final class r2 implements zi.e {
         return this;
     }
 
-    final r2 h(zi.c cVar, long j10, boolean z10) {
+    final r2 h(bj.c cVar, long j10, boolean z10) {
         if (!z10 || j10 != 0) {
             p2 m10 = m(cVar);
             int ordinal = m10.zzb().ordinal();
@@ -287,7 +287,7 @@ final class r2 implements zi.e {
                 if (ordinal != 1) {
                     if (ordinal == 2) {
                         q((m10.zza() << 3) | 1);
-                        this.f41294a.write(p(8).putLong(j10).array());
+                        this.f39620a.write(p(8).putLong(j10).array());
                         return this;
                     }
                 } else {
@@ -309,11 +309,11 @@ final class r2 implements zi.e {
         if (obj == null) {
             return this;
         }
-        zi.d dVar = (zi.d) this.f41295b.get(obj.getClass());
+        bj.d dVar = (bj.d) this.f39621b.get(obj.getClass());
         if (dVar != null) {
             dVar.a(obj, this);
             return this;
         }
-        throw new zi.b("No encoder for ".concat(String.valueOf(obj.getClass())));
+        throw new bj.b("No encoder for ".concat(String.valueOf(obj.getClass())));
     }
 }

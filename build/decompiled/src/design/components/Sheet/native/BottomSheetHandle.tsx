@@ -35,14 +35,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var0
             var0 = {};
             var2 = function() {
-                _fun46913: for (var _fun46913_ip = 0;;) switch (_fun46913_ip) {
+                _fun46966: for (var _fun46966_ip = 0;;) switch (_fun46966_ip) {
                     case 0:
                         var0 = _closure2_slot0;
                         var1 = var0.current;
                         var0 = null;
                         if (!(var0 != var1)) {
-                            _fun46913_ip = 28;
-                            continue _fun46913
+                            _fun46966_ip = 28;
+                            continue _fun46966
                         }
                     case 18:
                         var0 = var1.expand;
@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var0.expandActionSheet = var2;
             var2 = function arg0() {
-                _fun46914: for (var _fun46914_ip = 0;;) switch (_fun46914_ip) {
+                _fun46967: for (var _fun46967_ip = 0;;) switch (_fun46967_ip) {
                     case 0:
                         var2 = arg0;
                         var1 = null;
@@ -62,35 +62,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = undefined;
                         var3 = undefined;
                         if (var4) {
-                            _fun46914_ip = 22;
-                            continue _fun46914
+                            _fun46967_ip = 22;
+                            continue _fun46967
                         }
                     case 16:
                         var3 = var2.force;
                     case 22:
                         var2 = true;
                         if (!(var2 !== var3)) {
-                            _fun46914_ip = 56;
-                            continue _fun46914
+                            _fun46967_ip = 56;
+                            continue _fun46967
                         }
                     case 28:
                         var2 = _closure2_slot0;
                         var3 = var2.current;
                         if (!(var1 != var3)) {
-                            _fun46914_ip = 82;
-                            continue _fun46914
+                            _fun46967_ip = 82;
+                            continue _fun46967
                         }
                     case 44:
                         var2 = var3.close;
                         var2 = var2.bind(var3)();
-                        _fun46914_ip = 82;
-                        continue _fun46914;
+                        _fun46967_ip = 82;
+                        continue _fun46967;
                     case 56:
                         var2 = _closure2_slot0;
                         var2 = var2.current;
                         if (!(var1 != var2)) {
-                            _fun46914_ip = 82;
-                            continue _fun46914
+                            _fun46967_ip = 82;
+                            continue _fun46967
                         }
                     case 72:
                         var1 = var2.forceClose;
@@ -101,14 +101,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var0.closeActionSheet = var2;
             var2 = function() {
-                _fun46915: for (var _fun46915_ip = 0;;) switch (_fun46915_ip) {
+                _fun46968: for (var _fun46968_ip = 0;;) switch (_fun46968_ip) {
                     case 0:
                         var0 = _closure2_slot0;
                         var1 = var0.current;
                         var0 = null;
                         if (!(var0 != var1)) {
-                            _fun46915_ip = 28;
-                            continue _fun46915
+                            _fun46968_ip = 28;
+                            continue _fun46968
                         }
                     case 18:
                         var0 = var1.collapse;
@@ -120,14 +120,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var0.collapseActionSheet = var2;
             var1 = function arg0() {
-                _fun46916: for (var _fun46916_ip = 0;;) switch (_fun46916_ip) {
+                _fun46969: for (var _fun46969_ip = 0;;) switch (_fun46969_ip) {
                     case 0:
                         var0 = _closure2_slot0;
                         var2 = var0.current;
                         var0 = null;
                         if (!(var0 != var2)) {
-                            _fun46916_ip = 32;
-                            continue _fun46916
+                            _fun46969_ip = 32;
+                            continue _fun46969
                         }
                     case 18:
                         var1 = var2.snapToIndex;

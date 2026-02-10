@@ -12,31 +12,31 @@ import java.net.SocketTimeoutException;
 public final class d0 extends f {
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f36974e;
+    private final int f36349e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final byte[] f36975f;
+    private final byte[] f36350f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final DatagramPacket f36976g;
+    private final DatagramPacket f36351g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Uri f36977h;
+    private Uri f36352h;
 
     /* renamed from: i  reason: collision with root package name */
-    private DatagramSocket f36978i;
+    private DatagramSocket f36353i;
 
     /* renamed from: j  reason: collision with root package name */
-    private MulticastSocket f36979j;
+    private MulticastSocket f36354j;
 
     /* renamed from: k  reason: collision with root package name */
-    private InetAddress f36980k;
+    private InetAddress f36355k;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f36981l;
+    private boolean f36356l;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f36982m;
+    private int f36357m;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends m {
@@ -51,24 +51,24 @@ public final class d0 extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public long b(com.google.android.exoplayer2.upstream.a aVar) {
-        Uri uri = aVar.f13405a;
-        this.f36977h = uri;
+        Uri uri = aVar.f13982a;
+        this.f36352h = uri;
         String str = (String) oe.a.e(uri.getHost());
-        int port = this.f36977h.getPort();
+        int port = this.f36352h.getPort();
         q(aVar);
         try {
-            this.f36980k = InetAddress.getByName(str);
-            InetSocketAddress inetSocketAddress = new InetSocketAddress(this.f36980k, port);
-            if (this.f36980k.isMulticastAddress()) {
+            this.f36355k = InetAddress.getByName(str);
+            InetSocketAddress inetSocketAddress = new InetSocketAddress(this.f36355k, port);
+            if (this.f36355k.isMulticastAddress()) {
                 MulticastSocket multicastSocket = new MulticastSocket(inetSocketAddress);
-                this.f36979j = multicastSocket;
-                multicastSocket.joinGroup(this.f36980k);
-                this.f36978i = this.f36979j;
+                this.f36354j = multicastSocket;
+                multicastSocket.joinGroup(this.f36355k);
+                this.f36353i = this.f36354j;
             } else {
-                this.f36978i = new DatagramSocket(inetSocketAddress);
+                this.f36353i = new DatagramSocket(inetSocketAddress);
             }
-            this.f36978i.setSoTimeout(this.f36974e);
-            this.f36981l = true;
+            this.f36353i.setSoTimeout(this.f36349e);
+            this.f36356l = true;
             r(aVar);
             return -1L;
         } catch (IOException e10) {
@@ -80,31 +80,31 @@ public final class d0 extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void close() {
-        this.f36977h = null;
-        MulticastSocket multicastSocket = this.f36979j;
+        this.f36352h = null;
+        MulticastSocket multicastSocket = this.f36354j;
         if (multicastSocket != null) {
             try {
-                multicastSocket.leaveGroup((InetAddress) oe.a.e(this.f36980k));
+                multicastSocket.leaveGroup((InetAddress) oe.a.e(this.f36355k));
             } catch (IOException unused) {
             }
-            this.f36979j = null;
+            this.f36354j = null;
         }
-        DatagramSocket datagramSocket = this.f36978i;
+        DatagramSocket datagramSocket = this.f36353i;
         if (datagramSocket != null) {
             datagramSocket.close();
-            this.f36978i = null;
+            this.f36353i = null;
         }
-        this.f36980k = null;
-        this.f36982m = 0;
-        if (this.f36981l) {
-            this.f36981l = false;
+        this.f36355k = null;
+        this.f36357m = 0;
+        if (this.f36356l) {
+            this.f36356l = false;
             p();
         }
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Uri m() {
-        return this.f36977h;
+        return this.f36352h;
     }
 
     @Override // me.j
@@ -112,11 +112,11 @@ public final class d0 extends f {
         if (i11 == 0) {
             return 0;
         }
-        if (this.f36982m == 0) {
+        if (this.f36357m == 0) {
             try {
-                ((DatagramSocket) oe.a.e(this.f36978i)).receive(this.f36976g);
-                int length = this.f36976g.getLength();
-                this.f36982m = length;
+                ((DatagramSocket) oe.a.e(this.f36353i)).receive(this.f36351g);
+                int length = this.f36351g.getLength();
+                this.f36357m = length;
                 o(length);
             } catch (SocketTimeoutException e10) {
                 throw new a(e10, 2002);
@@ -124,11 +124,11 @@ public final class d0 extends f {
                 throw new a(e11, 2001);
             }
         }
-        int length2 = this.f36976g.getLength();
-        int i12 = this.f36982m;
+        int length2 = this.f36351g.getLength();
+        int i12 = this.f36357m;
         int min = Math.min(i12, i11);
-        System.arraycopy(this.f36975f, length2 - i12, bArr, i10, min);
-        this.f36982m -= min;
+        System.arraycopy(this.f36350f, length2 - i12, bArr, i10, min);
+        this.f36357m -= min;
         return min;
     }
 
@@ -138,9 +138,9 @@ public final class d0 extends f {
 
     public d0(int i10, int i11) {
         super(true);
-        this.f36974e = i11;
+        this.f36349e = i11;
         byte[] bArr = new byte[i10];
-        this.f36975f = bArr;
-        this.f36976g = new DatagramPacket(bArr, 0, i10);
+        this.f36350f = bArr;
+        this.f36351g = new DatagramPacket(bArr, 0, i10);
     }
 }

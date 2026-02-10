@@ -8,25 +8,25 @@ import p8.m;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final p8.e f22486a;
+    private final p8.e f23611a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final f f22487b;
+    private final f f23612b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Supplier f22488c;
+    private final Supplier f23613c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private List f22489a;
+        private List f23614a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Supplier f22490b;
+        private Supplier f23615b;
 
         /* renamed from: c  reason: collision with root package name */
-        private f f22491c;
+        private f f23616c;
 
         static /* bridge */ /* synthetic */ g c(a aVar) {
             aVar.getClass();
@@ -43,11 +43,11 @@ public class b {
     }
 
     public p8.e a() {
-        return this.f22486a;
+        return this.f23611a;
     }
 
     public Supplier b() {
-        return this.f22488c;
+        return this.f23613c;
     }
 
     public g c() {
@@ -55,19 +55,19 @@ public class b {
     }
 
     public f d() {
-        return this.f22487b;
+        return this.f23612b;
     }
 
     private b(a aVar) {
         Supplier a10;
-        this.f22486a = aVar.f22489a != null ? p8.e.b(aVar.f22489a) : null;
-        if (aVar.f22490b != null) {
-            a10 = aVar.f22490b;
+        this.f23611a = aVar.f23614a != null ? p8.e.b(aVar.f23614a) : null;
+        if (aVar.f23615b != null) {
+            a10 = aVar.f23615b;
         } else {
             a10 = m.a(Boolean.FALSE);
         }
-        this.f22488c = a10;
-        this.f22487b = aVar.f22491c;
+        this.f23613c = a10;
+        this.f23612b = aVar.f23616c;
         a.c(aVar);
     }
 }

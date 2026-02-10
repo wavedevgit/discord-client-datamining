@@ -5,21 +5,21 @@ import android.view.View;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final View f35816a;
+    public final View f35713a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f35817b;
+    public final int f35714b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final String f35818c;
+    public final String f35715c;
 
     public a(View view, int i10) {
         this(view, i10, null);
     }
 
     public a(View view, int i10, String str) {
-        this.f35816a = view;
-        this.f35817b = i10;
-        this.f35818c = str;
+        this.f35713a = view;
+        this.f35714b = i10;
+        this.f35715c = str;
     }
 }

@@ -1,43 +1,43 @@
 package qg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class o3 implements zi.d {
+final class o3 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final o3 f46105a = new o3();
+    static final o3 f44773a = new o3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f46106b;
+    private static final bj.c f44774b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f46107c;
+    private static final bj.c f44775c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f46108d;
+    private static final bj.c f44776d;
 
     static {
-        c.b a10 = zi.c.a("logEventKey");
+        c.b a10 = bj.c.a("logEventKey");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f46106b = a10.b(s1Var.b()).a();
-        c.b a11 = zi.c.a("eventCount");
+        f44774b = a10.b(s1Var.b()).a();
+        c.b a11 = bj.c.a("eventCount");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f46107c = a11.b(s1Var2.b()).a();
-        c.b a12 = zi.c.a("inferenceDurationStats");
+        f44775c = a11.b(s1Var2.b()).a();
+        c.b a12 = bj.c.a("inferenceDurationStats");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f46108d = a12.b(s1Var3.b()).a();
+        f44776d = a12.b(s1Var3.b()).a();
     }
 
     private o3() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

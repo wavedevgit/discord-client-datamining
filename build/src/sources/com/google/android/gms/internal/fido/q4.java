@@ -3,48 +3,48 @@ package com.google.android.gms.internal.fido;
 final class q4 extends t4 {
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f14201o;
+    private final int f14778o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f14202p;
+    private final int f14779p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q4(byte[] bArr, int i10, int i11) {
         super(bArr);
-        v4.j(i10, i10 + i11, bArr.length);
-        this.f14201o = i10;
-        this.f14202p = i11;
+        v4.k(i10, i10 + i11, bArr.length);
+        this.f14778o = i10;
+        this.f14779p = i11;
     }
 
     @Override // com.google.android.gms.internal.fido.t4, com.google.android.gms.internal.fido.v4
     public final byte b(int i10) {
-        int i11 = this.f14202p;
+        int i11 = this.f14779p;
         if (((i11 - (i10 + 1)) | i10) < 0) {
             if (i10 < 0) {
                 throw new ArrayIndexOutOfBoundsException("Index < 0: " + i10);
             }
             throw new ArrayIndexOutOfBoundsException("Index > length: " + i10 + ", " + i11);
         }
-        return this.f14224i[this.f14201o + i10];
+        return this.f14801i[this.f14778o + i10];
     }
 
     @Override // com.google.android.gms.internal.fido.t4, com.google.android.gms.internal.fido.v4
     final byte c(int i10) {
-        return this.f14224i[this.f14201o + i10];
+        return this.f14801i[this.f14778o + i10];
     }
 
     @Override // com.google.android.gms.internal.fido.t4, com.google.android.gms.internal.fido.v4
     public final int d() {
-        return this.f14202p;
+        return this.f14779p;
     }
 
     @Override // com.google.android.gms.internal.fido.t4, com.google.android.gms.internal.fido.v4
     protected final void e(byte[] bArr, int i10, int i11, int i12) {
-        System.arraycopy(this.f14224i, this.f14201o, bArr, 0, i12);
+        System.arraycopy(this.f14801i, this.f14778o, bArr, 0, i12);
     }
 
     @Override // com.google.android.gms.internal.fido.t4
     protected final int q() {
-        return this.f14201o;
+        return this.f14778o;
     }
 }

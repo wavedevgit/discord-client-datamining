@@ -3,34 +3,34 @@ package og;
 final class bk extends fk {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f40802a;
+    private final String f39128a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f40803b;
+    private final boolean f39129b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f40804c;
+    private final int f39130c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ bk(String str, boolean z10, int i10, ak akVar) {
-        this.f40802a = str;
-        this.f40803b = z10;
-        this.f40804c = i10;
+        this.f39128a = str;
+        this.f39129b = z10;
+        this.f39130c = i10;
     }
 
     @Override // og.fk
     public final int a() {
-        return this.f40804c;
+        return this.f39130c;
     }
 
     @Override // og.fk
     public final String b() {
-        return this.f40802a;
+        return this.f39128a;
     }
 
     @Override // og.fk
     public final boolean c() {
-        return this.f40803b;
+        return this.f39129b;
     }
 
     public final boolean equals(Object obj) {
@@ -39,7 +39,7 @@ final class bk extends fk {
         }
         if (obj instanceof fk) {
             fk fkVar = (fk) obj;
-            if (this.f40802a.equals(fkVar.b()) && this.f40803b == fkVar.c() && this.f40804c == fkVar.a()) {
+            if (this.f39128a.equals(fkVar.b()) && this.f39129b == fkVar.c() && this.f39130c == fkVar.a()) {
                 return true;
             }
         }
@@ -48,16 +48,16 @@ final class bk extends fk {
 
     public final int hashCode() {
         int i10;
-        int hashCode = this.f40802a.hashCode() ^ 1000003;
-        if (true != this.f40803b) {
+        int hashCode = this.f39128a.hashCode() ^ 1000003;
+        if (true != this.f39129b) {
             i10 = 1237;
         } else {
             i10 = 1231;
         }
-        return (((hashCode * 1000003) ^ i10) * 1000003) ^ this.f40804c;
+        return (((hashCode * 1000003) ^ i10) * 1000003) ^ this.f39130c;
     }
 
     public final String toString() {
-        return "MLKitLoggingOptions{libraryName=" + this.f40802a + ", enableFirelog=" + this.f40803b + ", firelogEventType=" + this.f40804c + "}";
+        return "MLKitLoggingOptions{libraryName=" + this.f39128a + ", enableFirelog=" + this.f39129b + ", firelogEventType=" + this.f39130c + "}";
     }
 }

@@ -1,40 +1,40 @@
 package kotlin.reflect;
 
 import kotlin.enums.EnumEntries;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface i extends b {
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f31881d = new a("INSTANCE", 0);
+        public static final a f32103d = new a("INSTANCE", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f31882e = new a("EXTENSION_RECEIVER", 1);
+        public static final a f32104e = new a("EXTENSION_RECEIVER", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final a f31883i = new a("VALUE", 2);
+        public static final a f32105i = new a("VALUE", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ a[] f31884o;
+        private static final /* synthetic */ a[] f32106o;
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f31885p;
+        private static final /* synthetic */ EnumEntries f32107p;
 
         static {
             a[] a10 = a();
-            f31884o = a10;
-            f31885p = yr.a.a(a10);
+            f32106o = a10;
+            f32107p = hs.a.a(a10);
         }
 
         private a(String str, int i10) {
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f31881d, f31882e, f31883i};
+            return new a[]{f32103d, f32104e, f32105i};
         }
 
         public static a valueOf(String str) {
@@ -42,7 +42,7 @@ public interface i extends b {
         }
 
         public static a[] values() {
-            return (a[]) f31884o.clone();
+            return (a[]) f32106o.clone();
         }
     }
 

@@ -5,10 +5,10 @@ import android.content.Intent;
 public abstract class o extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Intent f13931d;
+    private final Intent f14508d;
 
     public o(String str, Intent intent) {
         super(str);
-        this.f13931d = intent;
+        this.f14508d = intent;
     }
 }

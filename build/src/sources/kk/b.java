@@ -1,0 +1,30 @@
+package kk;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public abstract class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final i f31816a;
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public b(i iVar) {
+        this.f31816a = iVar;
+    }
+
+    public abstract b a(i iVar);
+
+    public abstract ok.b b();
+
+    public abstract ok.a c(int i10, ok.a aVar);
+
+    public final int d() {
+        return this.f31816a.a();
+    }
+
+    public final i e() {
+        return this.f31816a;
+    }
+
+    public final int f() {
+        return this.f31816a.d();
+    }
+}

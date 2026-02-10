@@ -1,64 +1,45 @@
 package bv;
 
-import av.b;
-import java.util.ArrayList;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
+import av.c0;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Iterator;
+import kotlin.collections.ArrayDeque;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface c extends av.b {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static boolean a(c cVar, Object obj, Function2 operator) {
-            Intrinsics.checkNotNullParameter(operator, "operator");
-            List c10 = dw.a.c(obj);
-            if (c10.size() != 1) {
-                List<Object> list = c10;
-                ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-                for (Object obj2 : list) {
-                    arrayList.add(cVar.a(obj2));
-                }
-                return cVar.b(arrayList, operator);
-            }
-            return false;
+public abstract class c {
+    public static final void a(av.h hVar, c0 dir, boolean z10) {
+        Intrinsics.checkNotNullParameter(hVar, "<this>");
+        Intrinsics.checkNotNullParameter(dir, "dir");
+        ArrayDeque arrayDeque = new ArrayDeque();
+        for (c0 c0Var = dir; c0Var != null && !hVar.j(c0Var); c0Var = c0Var.i()) {
+            arrayDeque.addFirst(c0Var);
         }
-
-        public static boolean b(c cVar, List list, Function2 operator) {
-            Intrinsics.checkNotNullParameter(operator, "operator");
-            return b.a.b(cVar, list, operator);
+        if (z10 && arrayDeque.isEmpty()) {
+            throw new IOException(dir + " already exists.");
         }
-
-        public static List c(c cVar, Comparable comparable, Comparable comparable2) {
-            return cVar.d(comparable, comparable2);
-        }
-
-        public static List d(c cVar, Comparable comparable, Comparable comparable2) {
-            return b.a.d(cVar, comparable, comparable2);
-        }
-
-        public static Object e(c cVar, Object obj) {
-            return b.a.e(cVar, obj);
-        }
-
-        public static Object f(c cVar, Object obj) {
-            Number number;
-            if (obj instanceof Number) {
-                number = (Number) obj;
-            } else {
-                number = null;
-            }
-            if (number != null) {
-                return Double.valueOf(number.doubleValue());
-            }
-            return obj;
-        }
-
-        public static Boolean g(c cVar, Object obj) {
-            return b.a.g(cVar, obj);
+        Iterator<E> it = arrayDeque.iterator();
+        while (it.hasNext()) {
+            hVar.f((c0) it.next());
         }
     }
 
-    Object a(Object obj);
+    public static final boolean b(av.h hVar, c0 path) {
+        Intrinsics.checkNotNullParameter(hVar, "<this>");
+        Intrinsics.checkNotNullParameter(path, "path");
+        if (hVar.m(path) != null) {
+            return true;
+        }
+        return false;
+    }
+
+    public static final av.g c(av.h hVar, c0 path) {
+        Intrinsics.checkNotNullParameter(hVar, "<this>");
+        Intrinsics.checkNotNullParameter(path, "path");
+        av.g m10 = hVar.m(path);
+        if (m10 != null) {
+            return m10;
+        }
+        throw new FileNotFoundException("no such file: " + path);
+    }
 }

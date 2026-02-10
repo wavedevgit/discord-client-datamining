@@ -79,7 +79,7 @@ public final class MessageAccessoriesView extends RecyclerView {
     private final int getForwardBarHeight() {
         /*
             r4 = this;
-            kotlin.sequences.Sequence r0 = androidx.core.view.n0.a(r4)
+            kotlin.sequences.Sequence r0 = androidx.core.view.o0.a(r4)
             kotlin.sequences.Sequence r0 = kotlin.sequences.k.c0(r0)
             java.util.Iterator r0 = r0.iterator()
         Lc:
@@ -162,7 +162,7 @@ public final class MessageAccessoriesView extends RecyclerView {
     }
 
     /* renamed from: setAccessories-dvvEyHs  reason: not valid java name */
-    public final void m528setAccessoriesdvvEyHs(@NotNull MessageMargins margins, @NotNull String messageId, long j10, GuildId guildId, @NotNull List<? extends MessageAccessory> items, @NotNull ChatEventHandler eventHandler, ComponentProvider componentProvider, boolean z10) {
+    public final void m529setAccessoriesdvvEyHs(@NotNull MessageMargins margins, @NotNull String messageId, long j10, GuildId guildId, @NotNull List<? extends MessageAccessory> items, @NotNull ChatEventHandler eventHandler, ComponentProvider componentProvider, boolean z10) {
         Intrinsics.checkNotNullParameter(margins, "margins");
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(items, "items");
@@ -189,7 +189,7 @@ public final class MessageAccessoriesView extends RecyclerView {
         threadSpineItemDecoration.setShowThreadSpine(z11);
         this.accessoriesAdapter.setEventHandler(eventHandler);
         this.accessoriesAdapter.setComponentProvider(componentProvider);
-        this.accessoriesAdapter.m505setItemsbo5iIEc(messageId, j10, guildId, items);
+        this.accessoriesAdapter.m506setItemsbo5iIEc(messageId, j10, guildId, items);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView
@@ -220,7 +220,7 @@ public final class MessageAccessoriesView extends RecyclerView {
         this.accessoriesAdapter = messageAccessoriesAdapter;
         TransitionResilientLinearLayoutManager transitionResilientLinearLayoutManager = new TransitionResilientLinearLayoutManager(context, 1, false, null, 8, null);
         this.transitionResilientLinearLayoutManager = transitionResilientLinearLayoutManager;
-        this.forwardBarPaint$delegate = rr.l.a(new Function0() { // from class: com.discord.chat.presentation.message.q0
+        this.forwardBarPaint$delegate = as.l.b(new Function0() { // from class: com.discord.chat.presentation.message.q0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Paint forwardBarPaint_delegate$lambda$1;

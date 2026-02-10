@@ -15,11 +15,11 @@ import org.json.JSONException;
 public class i0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Bundle f16610a;
+    private final Bundle f17359a;
 
     public i0(Bundle bundle) {
         if (bundle != null) {
-            this.f16610a = new Bundle(bundle);
+            this.f17359a = new Bundle(bundle);
             return;
         }
         throw new NullPointerException("data");
@@ -62,9 +62,9 @@ public class i0 {
     }
 
     private String w(String str) {
-        if (!this.f16610a.containsKey(str) && str.startsWith("gcm.n.")) {
+        if (!this.f17359a.containsKey(str) && str.startsWith("gcm.n.")) {
             String v10 = v(str);
-            if (this.f16610a.containsKey(v10)) {
+            if (this.f17359a.containsKey(v10)) {
                 return v10;
             }
         }
@@ -246,7 +246,7 @@ public class i0 {
     }
 
     public String p(String str) {
-        return this.f16610a.getString(w(str));
+        return this.f17359a.getString(w(str));
     }
 
     public long[] q() {
@@ -284,8 +284,8 @@ public class i0 {
     }
 
     public Bundle x() {
-        Bundle bundle = new Bundle(this.f16610a);
-        for (String str : this.f16610a.keySet()) {
+        Bundle bundle = new Bundle(this.f17359a);
+        for (String str : this.f17359a.keySet()) {
             if (!s(str)) {
                 bundle.remove(str);
             }
@@ -294,8 +294,8 @@ public class i0 {
     }
 
     public Bundle y() {
-        Bundle bundle = new Bundle(this.f16610a);
-        for (String str : this.f16610a.keySet()) {
+        Bundle bundle = new Bundle(this.f17359a);
+        for (String str : this.f17359a.keySet()) {
             if (u(str)) {
                 bundle.remove(str);
             }

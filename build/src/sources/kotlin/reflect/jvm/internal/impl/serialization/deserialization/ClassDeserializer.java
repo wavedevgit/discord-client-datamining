@@ -28,13 +28,13 @@ public final class ClassDeserializer {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Set f34044c = x0.c(ClassId.Companion.topLevel(StandardNames.FqNames.cloneable.toSafe()));
+    private static final Set f34266c = x0.c(ClassId.Companion.topLevel(StandardNames.FqNames.cloneable.toSafe()));
 
     /* renamed from: a  reason: collision with root package name */
-    private final DeserializationComponents f34045a;
+    private final DeserializationComponents f34267a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function1 f34046b;
+    private final Function1 f34268b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -44,7 +44,7 @@ public final class ClassDeserializer {
 
         @NotNull
         public final Set<ClassId> getBLACK_LIST() {
-            return ClassDeserializer.f34044c;
+            return ClassDeserializer.f34266c;
         }
 
         private Companion() {
@@ -56,41 +56,41 @@ public final class ClassDeserializer {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ClassId f34047a;
+        private final ClassId f34269a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ClassData f34048b;
+        private final ClassData f34270b;
 
         public a(ClassId classId, ClassData classData) {
             Intrinsics.checkNotNullParameter(classId, "classId");
-            this.f34047a = classId;
-            this.f34048b = classData;
+            this.f34269a = classId;
+            this.f34270b = classData;
         }
 
         public final ClassData a() {
-            return this.f34048b;
+            return this.f34270b;
         }
 
         public final ClassId b() {
-            return this.f34047a;
+            return this.f34269a;
         }
 
         public boolean equals(Object obj) {
-            if ((obj instanceof a) && Intrinsics.areEqual(this.f34047a, ((a) obj).f34047a)) {
+            if ((obj instanceof a) && Intrinsics.areEqual(this.f34269a, ((a) obj).f34269a)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f34047a.hashCode();
+            return this.f34269a.hashCode();
         }
     }
 
     public ClassDeserializer(@NotNull DeserializationComponents components) {
         Intrinsics.checkNotNullParameter(components, "components");
-        this.f34045a = components;
-        this.f34046b = components.getStorageManager().createMemoizedFunctionWithNullableValues(new b(this));
+        this.f34267a = components;
+        this.f34268b = components.getStorageManager().createMemoizedFunctionWithNullableValues(new b(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -104,17 +104,17 @@ public final class ClassDeserializer {
         DeserializationContext createContext;
         DeserializedClassDescriptor deserializedClassDescriptor;
         ClassId b10 = aVar.b();
-        for (ClassDescriptorFactory classDescriptorFactory : this.f34045a.getFictitiousClassDescriptorFactories()) {
+        for (ClassDescriptorFactory classDescriptorFactory : this.f34267a.getFictitiousClassDescriptorFactories()) {
             ClassDescriptor createClass = classDescriptorFactory.createClass(b10);
             if (createClass != null) {
                 return createClass;
             }
         }
-        if (f34044c.contains(b10)) {
+        if (f34266c.contains(b10)) {
             return null;
         }
         ClassData a10 = aVar.a();
-        if (a10 == null && (a10 = this.f34045a.getClassDataFinder().findClassData(b10)) == null) {
+        if (a10 == null && (a10 = this.f34267a.getClassDataFinder().findClassData(b10)) == null) {
             return null;
         }
         NameResolver component1 = a10.component1();
@@ -134,7 +134,7 @@ public final class ClassDeserializer {
             }
             createContext = deserializedClassDescriptor.getC();
         } else {
-            Iterator<T> it = PackageFragmentProviderKt.packageFragments(this.f34045a.getPackageFragmentProvider(), b10.getPackageFqName()).iterator();
+            Iterator<T> it = PackageFragmentProviderKt.packageFragments(this.f34267a.getPackageFragmentProvider(), b10.getPackageFqName()).iterator();
             while (true) {
                 if (it.hasNext()) {
                     obj = it.next();
@@ -155,7 +155,7 @@ public final class ClassDeserializer {
             if (packageFragmentDescriptor2 == null) {
                 return null;
             }
-            DeserializationComponents deserializationComponents = this.f34045a;
+            DeserializationComponents deserializationComponents = this.f34267a;
             ProtoBuf.TypeTable typeTable = component2.getTypeTable();
             Intrinsics.checkNotNullExpressionValue(typeTable, "getTypeTable(...)");
             TypeTable typeTable2 = new TypeTable(typeTable);
@@ -177,6 +177,6 @@ public final class ClassDeserializer {
 
     public final ClassDescriptor deserializeClass(@NotNull ClassId classId, ClassData classData) {
         Intrinsics.checkNotNullParameter(classId, "classId");
-        return (ClassDescriptor) this.f34046b.invoke(new a(classId, classData));
+        return (ClassDescriptor) this.f34268b.invoke(new a(classId, classData));
     }
 }

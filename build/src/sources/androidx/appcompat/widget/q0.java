@@ -40,42 +40,42 @@ class q0 extends s2.c implements View.OnClickListener {
     private int J;
 
     /* renamed from: w  reason: collision with root package name */
-    private final SearchView f1918w;
+    private final SearchView f1921w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final SearchableInfo f1919x;
+    private final SearchableInfo f1922x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Context f1920y;
+    private final Context f1923y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final WeakHashMap f1921z;
+    private final WeakHashMap f1924z;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final TextView f1922a;
+        public final TextView f1925a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final TextView f1923b;
+        public final TextView f1926b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final ImageView f1924c;
+        public final ImageView f1927c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final ImageView f1925d;
+        public final ImageView f1928d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final ImageView f1926e;
+        public final ImageView f1929e;
 
         public a(View view) {
-            this.f1922a = (TextView) view.findViewById(16908308);
-            this.f1923b = (TextView) view.findViewById(16908309);
-            this.f1924c = (ImageView) view.findViewById(16908295);
-            this.f1925d = (ImageView) view.findViewById(16908296);
-            this.f1926e = (ImageView) view.findViewById(f.f.f22244r);
+            this.f1925a = (TextView) view.findViewById(16908308);
+            this.f1926b = (TextView) view.findViewById(16908309);
+            this.f1927c = (ImageView) view.findViewById(16908295);
+            this.f1928d = (ImageView) view.findViewById(16908296);
+            this.f1929e = (ImageView) view.findViewById(f.f.f23367r);
         }
     }
 
@@ -89,11 +89,11 @@ class q0 extends s2.c implements View.OnClickListener {
         this.H = -1;
         this.I = -1;
         this.J = -1;
-        this.f1918w = searchView;
-        this.f1919x = searchableInfo;
+        this.f1921w = searchView;
+        this.f1922x = searchableInfo;
         this.A = searchView.getSuggestionCommitIconResId();
-        this.f1920y = context;
-        this.f1921z = weakHashMap;
+        this.f1923y = context;
+        this.f1924z = weakHashMap;
     }
 
     private void A(Cursor cursor) {
@@ -109,7 +109,7 @@ class q0 extends s2.c implements View.OnClickListener {
     }
 
     private Drawable j(String str) {
-        Drawable.ConstantState constantState = (Drawable.ConstantState) this.f1921z.get(str);
+        Drawable.ConstantState constantState = (Drawable.ConstantState) this.f1924z.get(str);
         if (constantState == null) {
             return null;
         }
@@ -119,8 +119,8 @@ class q0 extends s2.c implements View.OnClickListener {
     private CharSequence k(CharSequence charSequence) {
         if (this.D == null) {
             TypedValue typedValue = new TypedValue();
-            this.f1920y.getTheme().resolveAttribute(f.a.K, typedValue, true);
-            this.D = this.f1920y.getResources().getColorStateList(typedValue.resourceId);
+            this.f1923y.getTheme().resolveAttribute(f.a.L, typedValue, true);
+            this.D = this.f1923y.getResources().getColorStateList(typedValue.resourceId);
         }
         SpannableString spannableString = new SpannableString(charSequence);
         spannableString.setSpan(new TextAppearanceSpan(null, 0, 0, this.D, null), 0, charSequence.length(), 33);
@@ -128,7 +128,7 @@ class q0 extends s2.c implements View.OnClickListener {
     }
 
     private Drawable l(ComponentName componentName) {
-        PackageManager packageManager = this.f1920y.getPackageManager();
+        PackageManager packageManager = this.f1923y.getPackageManager();
         try {
             ActivityInfo activityInfo = packageManager.getActivityInfo(componentName, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
             int iconResource = activityInfo.getIconResource();
@@ -150,18 +150,18 @@ class q0 extends s2.c implements View.OnClickListener {
     private Drawable m(ComponentName componentName) {
         String flattenToShortString = componentName.flattenToShortString();
         Drawable.ConstantState constantState = null;
-        if (this.f1921z.containsKey(flattenToShortString)) {
-            Drawable.ConstantState constantState2 = (Drawable.ConstantState) this.f1921z.get(flattenToShortString);
+        if (this.f1924z.containsKey(flattenToShortString)) {
+            Drawable.ConstantState constantState2 = (Drawable.ConstantState) this.f1924z.get(flattenToShortString);
             if (constantState2 == null) {
                 return null;
             }
-            return constantState2.newDrawable(this.f1920y.getResources());
+            return constantState2.newDrawable(this.f1923y.getResources());
         }
         Drawable l10 = l(componentName);
         if (l10 != null) {
             constantState = l10.getConstantState();
         }
-        this.f1921z.put(flattenToShortString, constantState);
+        this.f1924z.put(flattenToShortString, constantState);
         return l10;
     }
 
@@ -170,11 +170,11 @@ class q0 extends s2.c implements View.OnClickListener {
     }
 
     private Drawable o() {
-        Drawable m10 = m(this.f1919x.getSearchActivity());
+        Drawable m10 = m(this.f1922x.getSearchActivity());
         if (m10 != null) {
             return m10;
         }
-        return this.f1920y.getPackageManager().getDefaultActivityIcon();
+        return this.f1923y.getPackageManager().getDefaultActivityIcon();
     }
 
     private Drawable p(Uri uri) {
@@ -186,7 +186,7 @@ class q0 extends s2.c implements View.OnClickListener {
                     throw new FileNotFoundException("Resource does not exist: " + uri);
                 }
             }
-            InputStream openInputStream = this.f1920y.getContentResolver().openInputStream(uri);
+            InputStream openInputStream = this.f1923y.getContentResolver().openInputStream(uri);
             if (openInputStream != null) {
                 Drawable createFromStream = Drawable.createFromStream(openInputStream, null);
                 try {
@@ -212,12 +212,12 @@ class q0 extends s2.c implements View.OnClickListener {
         }
         try {
             int parseInt = Integer.parseInt(str);
-            String str2 = "android.resource://" + this.f1920y.getPackageName() + "/" + parseInt;
+            String str2 = "android.resource://" + this.f1923y.getPackageName() + "/" + parseInt;
             Drawable j10 = j(str2);
             if (j10 != null) {
                 return j10;
             }
-            Drawable e10 = androidx.core.content.a.e(this.f1920y, parseInt);
+            Drawable e10 = androidx.core.content.a.e(this.f1923y, parseInt);
             z(str2, e10);
             return e10;
         } catch (Resources.NotFoundException unused) {
@@ -288,7 +288,7 @@ class q0 extends s2.c implements View.OnClickListener {
 
     private void z(String str, Drawable drawable) {
         if (drawable != null) {
-            this.f1921z.put(str, drawable.getConstantState());
+            this.f1924z.put(str, drawable.getConstantState());
         }
     }
 
@@ -325,9 +325,9 @@ class q0 extends s2.c implements View.OnClickListener {
         } else {
             charSequence2 = charSequence.toString();
         }
-        if (this.f1918w.getVisibility() == 0 && this.f1918w.getWindowVisibility() == 0) {
+        if (this.f1921w.getVisibility() == 0 && this.f1921w.getWindowVisibility() == 0) {
             try {
-                Cursor u10 = u(this.f1919x, charSequence2, 50);
+                Cursor u10 = u(this.f1922x, charSequence2, 50);
                 if (u10 != null) {
                     u10.getCount();
                     return u10;
@@ -350,10 +350,10 @@ class q0 extends s2.c implements View.OnClickListener {
         if (n12 != null) {
             return n12;
         }
-        if (this.f1919x.shouldRewriteQueryFromData() && (n11 = n(cursor, "suggest_intent_data")) != null) {
+        if (this.f1922x.shouldRewriteQueryFromData() && (n11 = n(cursor, "suggest_intent_data")) != null) {
             return n11;
         }
-        if (!this.f1919x.shouldRewriteQueryFromText() || (n10 = n(cursor, "suggest_text_1")) == null) {
+        if (!this.f1922x.shouldRewriteQueryFromText() || (n10 = n(cursor, "suggest_text_1")) == null) {
             return null;
         }
         return n10;
@@ -370,10 +370,10 @@ class q0 extends s2.c implements View.OnClickListener {
         } else {
             i10 = 0;
         }
-        if (aVar.f1922a != null) {
-            y(aVar.f1922a, v(cursor, this.E));
+        if (aVar.f1925a != null) {
+            y(aVar.f1925a, v(cursor, this.E));
         }
-        if (aVar.f1923b != null) {
+        if (aVar.f1926b != null) {
             String v11 = v(cursor, this.G);
             if (v11 != null) {
                 v10 = k(v11);
@@ -381,43 +381,43 @@ class q0 extends s2.c implements View.OnClickListener {
                 v10 = v(cursor, this.F);
             }
             if (TextUtils.isEmpty(v10)) {
-                TextView textView = aVar.f1922a;
+                TextView textView = aVar.f1925a;
                 if (textView != null) {
                     textView.setSingleLine(false);
-                    aVar.f1922a.setMaxLines(2);
+                    aVar.f1925a.setMaxLines(2);
                 }
             } else {
-                TextView textView2 = aVar.f1922a;
+                TextView textView2 = aVar.f1925a;
                 if (textView2 != null) {
                     textView2.setSingleLine(true);
-                    aVar.f1922a.setMaxLines(1);
+                    aVar.f1925a.setMaxLines(1);
                 }
             }
-            y(aVar.f1923b, v10);
+            y(aVar.f1926b, v10);
         }
-        ImageView imageView = aVar.f1924c;
+        ImageView imageView = aVar.f1927c;
         if (imageView != null) {
             x(imageView, s(cursor), 4);
         }
-        ImageView imageView2 = aVar.f1925d;
+        ImageView imageView2 = aVar.f1928d;
         if (imageView2 != null) {
             x(imageView2, t(cursor), 8);
         }
         int i12 = this.C;
         if (i12 != 2 && (i12 != 1 || (i10 & 1) == 0)) {
-            aVar.f1926e.setVisibility(8);
+            aVar.f1929e.setVisibility(8);
             return;
         }
-        aVar.f1926e.setVisibility(0);
-        aVar.f1926e.setTag(aVar.f1922a.getText());
-        aVar.f1926e.setOnClickListener(this);
+        aVar.f1929e.setVisibility(0);
+        aVar.f1929e.setTag(aVar.f1925a.getText());
+        aVar.f1929e.setOnClickListener(this);
     }
 
     @Override // s2.c, s2.a
     public View g(Context context, Cursor cursor, ViewGroup viewGroup) {
         View g10 = super.g(context, cursor, viewGroup);
         g10.setTag(new a(g10));
-        ((ImageView) g10.findViewById(f.f.f22244r)).setImageResource(this.A);
+        ((ImageView) g10.findViewById(f.f.f23367r)).setImageResource(this.A);
         return g10;
     }
 
@@ -427,9 +427,9 @@ class q0 extends s2.c implements View.OnClickListener {
             return super.getDropDownView(i10, view, viewGroup);
         } catch (RuntimeException e10) {
             Log.w("SuggestionsAdapter", "Search suggestions cursor threw exception.", e10);
-            View f10 = f(this.f1920y, c(), viewGroup);
+            View f10 = f(this.f1923y, c(), viewGroup);
             if (f10 != null) {
-                ((a) f10.getTag()).f1922a.setText(e10.toString());
+                ((a) f10.getTag()).f1925a.setText(e10.toString());
             }
             return f10;
         }
@@ -441,9 +441,9 @@ class q0 extends s2.c implements View.OnClickListener {
             return super.getView(i10, view, viewGroup);
         } catch (RuntimeException e10) {
             Log.w("SuggestionsAdapter", "Search suggestions cursor threw exception.", e10);
-            View g10 = g(this.f1920y, c(), viewGroup);
+            View g10 = g(this.f1923y, c(), viewGroup);
             if (g10 != null) {
-                ((a) g10.getTag()).f1922a.setText(e10.toString());
+                ((a) g10.getTag()).f1925a.setText(e10.toString());
             }
             return g10;
         }
@@ -470,7 +470,7 @@ class q0 extends s2.c implements View.OnClickListener {
     public void onClick(View view) {
         Object tag = view.getTag();
         if (tag instanceof CharSequence) {
-            this.f1918w.S((CharSequence) tag);
+            this.f1921w.S((CharSequence) tag);
         }
     }
 
@@ -479,7 +479,7 @@ class q0 extends s2.c implements View.OnClickListener {
         String authority = uri.getAuthority();
         if (!TextUtils.isEmpty(authority)) {
             try {
-                Resources resourcesForApplication = this.f1920y.getPackageManager().getResourcesForApplication(authority);
+                Resources resourcesForApplication = this.f1923y.getPackageManager().getResourcesForApplication(authority);
                 List<String> pathSegments = uri.getPathSegments();
                 if (pathSegments != null) {
                     int size = pathSegments.size();
@@ -529,7 +529,7 @@ class q0 extends s2.c implements View.OnClickListener {
         if (i10 > 0) {
             fragment.appendQueryParameter("limit", String.valueOf(i10));
         }
-        return this.f1920y.getContentResolver().query(fragment.build(), null, suggestSelection, strArr2, null);
+        return this.f1923y.getContentResolver().query(fragment.build(), null, suggestSelection, strArr2, null);
     }
 
     public void w(int i10) {

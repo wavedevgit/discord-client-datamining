@@ -7,10 +7,10 @@ import java.util.List;
 final class f implements g {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f6586d;
+    private final List f6692d;
 
     public f(List list) {
-        this.f6586d = list;
+        this.f6692d = list;
     }
 
     @Override // ae.g
@@ -24,7 +24,7 @@ final class f implements g {
     @Override // ae.g
     public List d(long j10) {
         if (j10 >= 0) {
-            return this.f6586d;
+            return this.f6692d;
         }
         return Collections.EMPTY_LIST;
     }

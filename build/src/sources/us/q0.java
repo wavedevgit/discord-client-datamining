@@ -1,7 +1,23 @@
 package us;
+
+import java.util.List;
+import kotlin.jvm.functions.Function0;
+import us.w0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class q0 extends RuntimeException {
-    public q0(String str, Throwable th2) {
-        super(str, th2);
+public class q0 implements Function0 {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final w0 f51128d;
+
+    public q0(w0 w0Var) {
+        this.f51128d = w0Var;
+    }
+
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        List C;
+        C = w0.a.C(this.f51128d);
+        return C;
     }
 }

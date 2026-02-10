@@ -1,11 +1,84 @@
 package qt;
+
+import java.lang.annotation.Annotation;
+import java.util.List;
+import kotlin.Lazy;
+import kotlin.Unit;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.StringCompanionObject;
+import kotlin.reflect.KClass;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import st.d;
+import st.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface g {
-    int a();
+public final class g extends tt.b {
 
-    int d();
+    /* renamed from: a  reason: collision with root package name */
+    private final KClass f45659a;
 
-    int e();
+    /* renamed from: b  reason: collision with root package name */
+    private List f45660b;
 
-    int h();
+    /* renamed from: c  reason: collision with root package name */
+    private final Lazy f45661c;
+
+    public g(KClass baseClass) {
+        Intrinsics.checkNotNullParameter(baseClass, "baseClass");
+        this.f45659a = baseClass;
+        this.f45660b = CollectionsKt.l();
+        this.f45661c = as.l.a(as.o.f6082e, new Function0() { // from class: qt.e
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                SerialDescriptor h10;
+                h10 = g.h(g.this);
+                return h10;
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final SerialDescriptor h(final g gVar) {
+        return st.b.c(st.j.d("kotlinx.serialization.Polymorphic", d.a.f48358a, new SerialDescriptor[0], new Function1() { // from class: qt.f
+            @Override // kotlin.jvm.functions.Function1
+            public final Object invoke(Object obj) {
+                Unit i10;
+                i10 = g.i(g.this, (st.a) obj);
+                return i10;
+            }
+        }), gVar.e());
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit i(g gVar, st.a buildSerialDescriptor) {
+        Intrinsics.checkNotNullParameter(buildSerialDescriptor, "$this$buildSerialDescriptor");
+        st.a.b(buildSerialDescriptor, "type", rt.a.I(StringCompanionObject.INSTANCE).getDescriptor(), null, false, 12, null);
+        st.a.b(buildSerialDescriptor, "value", st.j.e("kotlinx.serialization.Polymorphic<" + gVar.e().getSimpleName() + '>', k.a.f48377a, new SerialDescriptor[0], null, 8, null), null, false, 12, null);
+        buildSerialDescriptor.h(gVar.f45660b);
+        return Unit.f31987a;
+    }
+
+    @Override // tt.b
+    public KClass e() {
+        return this.f45659a;
+    }
+
+    @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return (SerialDescriptor) this.f45661c.getValue();
+    }
+
+    public String toString() {
+        return "kotlinx.serialization.PolymorphicSerializer(baseClass: " + e() + ')';
+    }
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public g(KClass baseClass, Annotation[] classAnnotations) {
+        this(baseClass);
+        Intrinsics.checkNotNullParameter(baseClass, "baseClass");
+        Intrinsics.checkNotNullParameter(classAnnotations, "classAnnotations");
+        this.f45660b = kotlin.collections.i.e(classAnnotations);
+    }
 }

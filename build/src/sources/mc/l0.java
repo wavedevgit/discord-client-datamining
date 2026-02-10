@@ -5,16 +5,16 @@ import java.io.IOException;
 public class l0 extends IOException {
 
     /* renamed from: d  reason: collision with root package name */
-    public final boolean f36888d;
+    public final boolean f36263d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f36889e;
+    public final int f36264e;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public l0(String str, Throwable th2, boolean z10, int i10) {
         super(str, th2);
-        this.f36888d = z10;
-        this.f36889e = i10;
+        this.f36263d = z10;
+        this.f36264e = i10;
     }
 
     public static l0 a(String str, Throwable th2) {
@@ -35,6 +35,6 @@ public class l0 extends IOException {
 
     @Override // java.lang.Throwable
     public String getMessage() {
-        return super.getMessage() + "{contentIsMalformed=" + this.f36888d + ", dataType=" + this.f36889e + "}";
+        return super.getMessage() + "{contentIsMalformed=" + this.f36263d + ", dataType=" + this.f36264e + "}";
     }
 }

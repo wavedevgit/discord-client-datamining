@@ -38,12 +38,12 @@ public final class InternalErrorInfo_NoDiskSpaceErrorInfoJsonAdapter extends h {
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.C0();
+                mVar.z0();
                 mVar.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw bn.c.x("message", "message", mVar);
+                    throw dn.c.x("message", "message", mVar);
                 }
                 i10 = -2;
             } else {
@@ -56,7 +56,7 @@ public final class InternalErrorInfo_NoDiskSpaceErrorInfoJsonAdapter extends h {
         }
         Constructor<InternalErrorInfo.NoDiskSpaceErrorInfo> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InternalErrorInfo.NoDiskSpaceErrorInfo.class.getDeclaredConstructor(String.class, Integer.TYPE, bn.c.f7152c);
+            constructor = InternalErrorInfo.NoDiskSpaceErrorInfo.class.getDeclaredConstructor(String.class, Integer.TYPE, dn.c.f21827c);
             this.constructorRef = constructor;
         }
         return constructor.newInstance(str, Integer.valueOf(i10), null);
@@ -65,7 +65,7 @@ public final class InternalErrorInfo_NoDiskSpaceErrorInfoJsonAdapter extends h {
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, InternalErrorInfo.NoDiskSpaceErrorInfo noDiskSpaceErrorInfo) {
         if (noDiskSpaceErrorInfo != null) {
-            tVar.k();
+            tVar.i();
             tVar.J("message");
             this.stringAdapter.toJson(tVar, noDiskSpaceErrorInfo.getMessage());
             tVar.s();

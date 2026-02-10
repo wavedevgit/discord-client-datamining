@@ -1,22 +1,59 @@
 package mt;
 
-import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class h extends i {
+public class h implements o {
 
-    /* renamed from: c  reason: collision with root package name */
-    public static final h f37539c = new h();
+    /* renamed from: a  reason: collision with root package name */
+    private final List f36620a;
 
-    private h() {
+    public h(List formats) {
+        Intrinsics.checkNotNullParameter(formats, "formats");
+        this.f36620a = formats;
     }
 
-    public final void c(char[] array) {
-        Intrinsics.checkNotNullParameter(array, "array");
-        a(array);
+    @Override // mt.o
+    public nt.e a() {
+        List<s> list = this.f36620a;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+        for (s sVar : list) {
+            arrayList.add(sVar.a());
+        }
+        if (arrayList.size() == 1) {
+            return (nt.e) CollectionsKt.Q0(arrayList);
+        }
+        return new nt.a(arrayList);
     }
 
-    public final char[] d() {
-        return super.b(IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+    @Override // mt.o
+    public ot.q b() {
+        List<s> list = this.f36620a;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+        for (s sVar : list) {
+            arrayList.add(sVar.b());
+        }
+        return ot.n.b(arrayList);
+    }
+
+    public final List c() {
+        return this.f36620a;
+    }
+
+    public boolean equals(Object obj) {
+        if ((obj instanceof h) && Intrinsics.areEqual(this.f36620a, ((h) obj).f36620a)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return this.f36620a.hashCode();
+    }
+
+    public String toString() {
+        return "ConcatenatedFormatStructure(" + CollectionsKt.x0(this.f36620a, ", ", null, null, 0, null, null, 62, null) + ')';
     }
 }

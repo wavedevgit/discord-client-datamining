@@ -93,7 +93,7 @@ public class DevServerHelper {
         static {
             BundleType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = yr.a.a($values);
+            $ENTRIES = hs.a.a($values);
         }
 
         private BundleType(String str, int i10, String str2) {
@@ -309,7 +309,7 @@ public class DevServerHelper {
         new AsyncTask<Void, Void, Void>() { // from class: com.facebook.react.devsupport.DevServerHelper$closeInspectorConnection$1
             /* JADX INFO: Access modifiers changed from: protected */
             @Override // android.os.AsyncTask
-            @rr.c
+            @as.c
             public Void doInBackground(Void... params) {
                 IInspectorPackagerConnection iInspectorPackagerConnection;
                 Intrinsics.checkNotNullParameter(params, "params");
@@ -327,7 +327,7 @@ public class DevServerHelper {
         new AsyncTask<Void, Void, Void>() { // from class: com.facebook.react.devsupport.DevServerHelper$closePackagerConnection$1
             /* JADX INFO: Access modifiers changed from: protected */
             @Override // android.os.AsyncTask
-            @rr.c
+            @as.c
             public Void doInBackground(Void... params) {
                 JSPackagerClient jSPackagerClient;
                 Intrinsics.checkNotNullParameter(params, "params");
@@ -361,8 +361,8 @@ public class DevServerHelper {
         try {
             Response execute = this.client.a(new Request.Builder().l(Companion.createResourceURL(this.packagerConnectionSettings.getDebugServerHost(), resourcePath)).b()).execute();
             if (execute.isSuccessful() && execute.a() != null) {
-                Sink c10 = ru.b.a().c(outputFile);
-                ru.a a10 = ru.b.a();
+                Sink c10 = av.b.a().c(outputFile);
+                av.a a10 = av.b.a();
                 ResponseBody a11 = execute.a();
                 if (a11 != null) {
                     bufferedSource = a11.source();
@@ -370,12 +370,12 @@ public class DevServerHelper {
                     bufferedSource = null;
                 }
                 Intrinsics.checkNotNull(bufferedSource);
-                a10.b(bufferedSource).d2(c10);
-                cs.c.a(c10, null);
-                cs.c.a(execute, null);
+                a10.b(bufferedSource).j2(c10);
+                ls.c.a(c10, null);
+                ls.c.a(execute, null);
                 return outputFile;
             }
-            cs.c.a(execute, null);
+            ls.c.a(execute, null);
             return null;
         } catch (Exception e10) {
             q8.a.o(ReactConstants.TAG, "Failed to fetch resource synchronously - resourcePath: \"%s\", outputFile: \"%s\"", resourcePath, outputFile.getAbsolutePath(), e10);
@@ -422,8 +422,8 @@ public class DevServerHelper {
         StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
         String format = String.format(Locale.US, "http://%s/open-debugger?device=%s", Arrays.copyOf(new Object[]{this.packagerConnectionSettings.getDebugServerHost(), Uri.encode(getInspectorDeviceId())}, 2));
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
-        this.client.a(new Request.Builder().l(format).g("POST", RequestBody.Companion.d(null, "")).b()).J0(new cu.b() { // from class: com.facebook.react.devsupport.DevServerHelper$openDebugger$1
-            @Override // cu.b
+        this.client.a(new Request.Builder().l(format).g("POST", RequestBody.Companion.d(null, "")).b()).b1(new lu.b() { // from class: com.facebook.react.devsupport.DevServerHelper$openDebugger$1
+            @Override // lu.b
             public void onFailure(Call call, IOException e10) {
                 Intrinsics.checkNotNullParameter(call, "call");
                 Intrinsics.checkNotNullParameter(e10, "e");
@@ -435,7 +435,7 @@ public class DevServerHelper {
                 RNLog.w(reactContext2, str2);
             }
 
-            @Override // cu.b
+            @Override // lu.b
             public void onResponse(Call call, Response response) {
                 Intrinsics.checkNotNullParameter(call, "call");
                 Intrinsics.checkNotNullParameter(response, "response");
@@ -450,7 +450,7 @@ public class DevServerHelper {
             new AsyncTask<Void, Void, Void>() { // from class: com.facebook.react.devsupport.DevServerHelper$openInspectorConnection$1
                 /* JADX INFO: Access modifiers changed from: protected */
                 @Override // android.os.AsyncTask
-                @rr.c
+                @as.c
                 public Void doInBackground(Void... params) {
                     Context context;
                     String inspectorDeviceUrl;
@@ -482,7 +482,7 @@ public class DevServerHelper {
             new AsyncTask<Void, Void, Void>() { // from class: com.facebook.react.devsupport.DevServerHelper$openPackagerConnection$1
                 /* JADX INFO: Access modifiers changed from: protected */
                 @Override // android.os.AsyncTask
-                @rr.c
+                @as.c
                 public Void doInBackground(Void... backgroundParams) {
                     PackagerConnectionSettings packagerConnectionSettings;
                     Intrinsics.checkNotNullParameter(backgroundParams, "backgroundParams");

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function arg0() {
-        _fun69133: for (var _fun69133_ip = 0;;) switch (_fun69133_ip) {
+        _fun69189: for (var _fun69189_ip = 0;;) switch (_fun69189_ip) {
             case 0:
                 var4 = arg0;
                 var7 = arguments[1];
@@ -16,22 +16,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = arguments[3];
                 var2 = undefined;
                 if (!(var7 === var2)) {
-                    _fun69133_ip = 25;
-                    continue _fun69133
+                    _fun69189_ip = 25;
+                    continue _fun69189
                 }
             case 18:
                 var7 = _closure1_slot4;
             case 25:
                 if (!(var5 === var2)) {
-                    _fun69133_ip = 36;
-                    continue _fun69133
+                    _fun69189_ip = 36;
+                    continue _fun69189
                 }
             case 29:
                 var5 = _closure1_slot3;
             case 36:
                 if (!(var8 === var2)) {
-                    _fun69133_ip = 47;
-                    continue _fun69133
+                    _fun69189_ip = 47;
+                    continue _fun69189
                 }
             case 40:
                 var8 = _closure1_slot2;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1 != var4;
                 var3 = null;
                 if (!var0) {
-                    _fun69133_ip = 90;
-                    continue _fun69133
+                    _fun69189_ip = 90;
+                    continue _fun69189
                 }
             case 58:
                 var6 = var7.getVoiceState;
@@ -58,16 +58,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1 == var3;
                 var2 = undefined;
                 if (var4) {
-                    _fun69133_ip = 122;
-                    continue _fun69133
+                    _fun69189_ip = 122;
+                    continue _fun69189
                 }
             case 116:
                 var2 = var3.deaf;
             case 122:
                 var1 = var1 != var2;
                 if (!var1) {
-                    _fun69133_ip = 132;
-                    continue _fun69133
+                    _fun69189_ip = 132;
+                    continue _fun69189
                 }
             case 129:
                 var1 = var2;

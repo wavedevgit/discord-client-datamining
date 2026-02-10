@@ -1,30 +1,30 @@
 package og;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class fc implements zi.d {
+final class fc implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final fc f40880a = new fc();
+    static final fc f39206a = new fc();
 
     static {
-        c.b a10 = zi.c.a("isForegroundConfidenceMaskEnabled");
+        c.b a10 = bj.c.a("isForegroundConfidenceMaskEnabled");
         l2 l2Var = new l2();
         l2Var.a(1);
         a10.b(l2Var.b()).a();
-        c.b a11 = zi.c.a("isForegroundBitmapEnabled");
+        c.b a11 = bj.c.a("isForegroundBitmapEnabled");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
         a11.b(l2Var2.b()).a();
-        c.b a12 = zi.c.a("isMultipleSubjectsEnabled");
+        c.b a12 = bj.c.a("isMultipleSubjectsEnabled");
         l2 l2Var3 = new l2();
         l2Var3.a(3);
         a12.b(l2Var3.b()).a();
-        c.b a13 = zi.c.a("isSubjectConfidenceMaskEnabled");
+        c.b a13 = bj.c.a("isSubjectConfidenceMaskEnabled");
         l2 l2Var4 = new l2();
         l2Var4.a(4);
         a13.b(l2Var4.b()).a();
-        c.b a14 = zi.c.a("isSubjectBitmapEnabled");
+        c.b a14 = bj.c.a("isSubjectBitmapEnabled");
         l2 l2Var5 = new l2();
         l2Var5.a(5);
         a14.b(l2Var5.b()).a();
@@ -33,10 +33,10 @@ final class fc implements zi.d {
     private fc() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

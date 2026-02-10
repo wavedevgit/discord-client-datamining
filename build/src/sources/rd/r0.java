@@ -12,60 +12,60 @@ public final class r0 extends rd.a {
     private me.c0 A;
 
     /* renamed from: s  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.a f48009s;
+    private final com.google.android.exoplayer2.upstream.a f46463s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final DataSource.Factory f48010t;
+    private final DataSource.Factory f46464t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Format f48011u;
+    private final Format f46465u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final long f48012v;
+    private final long f46466v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.i f48013w;
+    private final com.google.android.exoplayer2.upstream.i f46467w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final boolean f48014x;
+    private final boolean f46468x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Timeline f48015y;
+    private final Timeline f46469y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final MediaItem f48016z;
+    private final MediaItem f46470z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final DataSource.Factory f48017a;
+        private final DataSource.Factory f46471a;
 
         /* renamed from: b  reason: collision with root package name */
-        private com.google.android.exoplayer2.upstream.i f48018b = new com.google.android.exoplayer2.upstream.g();
+        private com.google.android.exoplayer2.upstream.i f46472b = new com.google.android.exoplayer2.upstream.g();
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f48019c = true;
+        private boolean f46473c = true;
 
         /* renamed from: d  reason: collision with root package name */
-        private Object f48020d;
+        private Object f46474d;
 
         /* renamed from: e  reason: collision with root package name */
-        private String f48021e;
+        private String f46475e;
 
         public b(DataSource.Factory factory) {
-            this.f48017a = (DataSource.Factory) oe.a.e(factory);
+            this.f46471a = (DataSource.Factory) oe.a.e(factory);
         }
 
         public r0 a(MediaItem.k kVar, long j10) {
-            return new r0(this.f48021e, kVar, this.f48017a, j10, this.f48018b, this.f48019c, this.f48020d);
+            return new r0(this.f46475e, kVar, this.f46471a, j10, this.f46472b, this.f46473c, this.f46474d);
         }
     }
 
     @Override // rd.a
     protected void B(me.c0 c0Var) {
         this.A = c0Var;
-        C(this.f48015y);
+        C(this.f46469y);
     }
 
     @Override // rd.r
@@ -75,26 +75,26 @@ public final class r0 extends rd.a {
 
     @Override // rd.r
     public MediaItem d() {
-        return this.f48016z;
+        return this.f46470z;
     }
 
     @Override // rd.r
     public p f(r.b bVar, me.b bVar2, long j10) {
-        return new q0(this.f48009s, this.f48010t, this.A, this.f48011u, this.f48012v, this.f48013w, w(bVar), this.f48014x);
+        return new q0(this.f46463s, this.f46464t, this.A, this.f46465u, this.f46466v, this.f46467w, w(bVar), this.f46468x);
     }
 
     private r0(String str, MediaItem.k kVar, DataSource.Factory factory, long j10, com.google.android.exoplayer2.upstream.i iVar, boolean z10, Object obj) {
-        this.f48010t = factory;
-        this.f48012v = j10;
-        this.f48013w = iVar;
-        this.f48014x = z10;
-        MediaItem a10 = new MediaItem.c().e(Uri.EMPTY).b(kVar.f11883d.toString()).c(oi.s.u(kVar)).d(obj).a();
-        this.f48016z = a10;
-        Format.b W = new Format.b().g0((String) ni.h.a(kVar.f11884e, "text/x-unknown")).X(kVar.f11885i).i0(kVar.f11886o).e0(kVar.f11887p).W(kVar.f11888q);
-        String str2 = kVar.f11889r;
-        this.f48011u = W.U(str2 != null ? str2 : str).G();
-        this.f48009s = new a.b().i(kVar.f11883d).b(1).a();
-        this.f48015y = new p0(j10, true, false, false, null, a10);
+        this.f46464t = factory;
+        this.f46466v = j10;
+        this.f46467w = iVar;
+        this.f46468x = z10;
+        MediaItem a10 = new MediaItem.c().e(Uri.EMPTY).b(kVar.f12460d.toString()).c(qi.s.u(kVar)).d(obj).a();
+        this.f46470z = a10;
+        Format.b W = new Format.b().g0((String) pi.h.a(kVar.f12461e, "text/x-unknown")).X(kVar.f12462i).i0(kVar.f12463o).e0(kVar.f12464p).W(kVar.f12465q);
+        String str2 = kVar.f12466r;
+        this.f46465u = W.U(str2 != null ? str2 : str).G();
+        this.f46463s = new a.b().i(kVar.f12460d).b(1).a();
+        this.f46469y = new p0(j10, true, false, false, null, a10);
     }
 
     @Override // rd.a

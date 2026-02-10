@@ -1,93 +1,86 @@
 package hu;
 
-import java.io.IOException;
-import java.io.InterruptedIOException;
-import java.net.ProtocolException;
-import java.net.UnknownServiceException;
-import java.security.cert.CertificateException;
-import java.util.Arrays;
-import java.util.List;
-import javax.net.ssl.SSLException;
-import javax.net.ssl.SSLHandshakeException;
-import javax.net.ssl.SSLPeerUnverifiedException;
-import javax.net.ssl.SSLSocket;
-import kotlin.jvm.internal.Intrinsics;
+import bu.p;
+import bu.q;
+import bu.s;
+import java.util.Locale;
+import java.util.Set;
+import net.time4j.f0;
+import net.time4j.history.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final List f26511a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private int f26512b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private boolean f26513c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private boolean f26514d;
-
-    public b(List connectionSpecs) {
-        Intrinsics.checkNotNullParameter(connectionSpecs, "connectionSpecs");
-        this.f26511a = connectionSpecs;
-    }
-
-    private final boolean c(SSLSocket sSLSocket) {
-        int size = this.f26511a.size();
-        for (int i10 = this.f26512b; i10 < size; i10++) {
-            if (((okhttp3.d) this.f26511a.get(i10)).e(sSLSocket)) {
-                return true;
+public class b implements s {
+    private static net.time4j.history.d e(Locale locale, bu.d dVar) {
+        bu.c cVar = cu.a.f21109b;
+        if (((String) dVar.b(cVar, "iso8601")).equals("julian")) {
+            return net.time4j.history.d.C;
+        }
+        bu.c cVar2 = gu.a.f26025a;
+        if (dVar.a(cVar2)) {
+            return (net.time4j.history.d) dVar.c(cVar2);
+        }
+        if (((String) dVar.b(cVar, "iso8601")).equals("historic")) {
+            bu.c cVar3 = cu.a.f21127t;
+            if (dVar.a(cVar3)) {
+                return net.time4j.history.d.j((String) dVar.c(cVar3));
             }
         }
-        return false;
+        return net.time4j.history.d.D(locale);
     }
 
-    public final okhttp3.d a(SSLSocket sslSocket) {
-        okhttp3.d dVar;
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        int i10 = this.f26512b;
-        int size = this.f26511a.size();
-        while (true) {
-            if (i10 < size) {
-                dVar = (okhttp3.d) this.f26511a.get(i10);
-                if (dVar.e(sslSocket)) {
-                    this.f26512b = i10 + 1;
-                    break;
-                }
-                i10++;
-            } else {
-                dVar = null;
-                break;
-            }
-        }
-        if (dVar != null) {
-            this.f26513c = c(sslSocket);
-            dVar.c(sslSocket, this.f26514d);
-            return dVar;
-        }
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append("Unable to find acceptable protocols. isFallback=");
-        sb2.append(this.f26514d);
-        sb2.append(", modes=");
-        sb2.append(this.f26511a);
-        sb2.append(", supported protocols=");
-        String[] enabledProtocols = sslSocket.getEnabledProtocols();
-        Intrinsics.checkNotNull(enabledProtocols);
-        String arrays = Arrays.toString(enabledProtocols);
-        Intrinsics.checkNotNullExpressionValue(arrays, "toString(this)");
-        sb2.append(arrays);
-        throw new UnknownServiceException(sb2.toString());
+    @Override // bu.s
+    public Set a(Locale locale, bu.d dVar) {
+        return e(locale, dVar).n();
     }
 
-    public final boolean b(IOException e10) {
-        Intrinsics.checkNotNullParameter(e10, "e");
-        this.f26514d = true;
-        if (!this.f26513c || (e10 instanceof ProtocolException) || (e10 instanceof InterruptedIOException)) {
-            return false;
-        }
-        if ((!(e10 instanceof SSLHandshakeException) || !(e10.getCause() instanceof CertificateException)) && !(e10 instanceof SSLPeerUnverifiedException) && (e10 instanceof SSLException)) {
+    @Override // bu.s
+    public boolean b(p pVar) {
+        return pVar instanceof gu.c;
+    }
+
+    @Override // bu.s
+    public q c(q qVar, Locale locale, bu.d dVar) {
+        return f(qVar, e(locale, dVar), dVar);
+    }
+
+    @Override // bu.s
+    public boolean d(Class cls) {
+        if (cls == f0.class) {
             return true;
         }
         return false;
+    }
+
+    public q f(q qVar, net.time4j.history.d dVar, bu.d dVar2) {
+        j jVar;
+        j jVar2;
+        if (qVar.n(dVar.i())) {
+            jVar2 = (j) qVar.k(dVar.i());
+        } else if (((cu.g) dVar2.b(cu.a.f21113f, cu.g.SMART)).a()) {
+            jVar2 = j.AD;
+        } else {
+            jVar = null;
+            if (jVar == null && qVar.n(dVar.M())) {
+                int m10 = qVar.m(dVar.M());
+                if (qVar.n(dVar.C()) && qVar.n(dVar.g())) {
+                    f0 d10 = dVar.d(net.time4j.history.h.k(jVar, m10, qVar.m(dVar.C()), qVar.m(dVar.g()), (fu.a) dVar2.b(net.time4j.history.d.A, fu.a.DUAL_DATING), dVar.v()));
+                    qVar.E(dVar.i(), null);
+                    qVar.E(dVar.M(), null);
+                    qVar.E(dVar.C(), null);
+                    qVar.E(dVar.g(), null);
+                    return qVar.E(f0.f37450z, d10);
+                } else if (qVar.n(dVar.h())) {
+                    int m11 = qVar.m(dVar.h());
+                    p pVar = gu.c.f26036p;
+                    if (qVar.n(pVar)) {
+                        m10 = qVar.m(pVar);
+                    }
+                    return qVar.E(f0.f37450z, (f0) dVar.d(dVar.m(jVar, m10)).C(dVar.h(), m11));
+                } else {
+                    return qVar;
+                }
+            }
+        }
+        jVar = jVar2;
+        return jVar == null ? qVar : qVar;
     }
 }

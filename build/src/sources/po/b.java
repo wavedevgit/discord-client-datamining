@@ -1,73 +1,45 @@
 package po;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
-import ro.e;
+import android.view.View;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewbinding.ViewBinding;
+import com.google.android.material.card.MaterialCardView;
+import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
+import oo.y2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<b> CREATOR = new a();
+public final class b implements ViewBinding {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final e f44392d;
+    /* renamed from: a  reason: collision with root package name */
+    private final ConstraintLayout f42851a;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final String f44393e;
+    /* renamed from: b  reason: collision with root package name */
+    public final ThemeableLottieAnimationView f42852b;
 
-    /* renamed from: i  reason: collision with root package name */
-    private final Map f44394i;
+    /* renamed from: c  reason: collision with root package name */
+    public final MaterialCardView f42853c;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final b createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            e valueOf = e.valueOf(parcel.readString());
-            String readString = parcel.readString();
-            int readInt = parcel.readInt();
-            LinkedHashMap linkedHashMap = new LinkedHashMap(readInt);
-            for (int i10 = 0; i10 != readInt; i10++) {
-                linkedHashMap.put(parcel.readString(), Integer.valueOf(parcel.readInt()));
+    private b(ConstraintLayout constraintLayout, ThemeableLottieAnimationView themeableLottieAnimationView, MaterialCardView materialCardView) {
+        this.f42851a = constraintLayout;
+        this.f42852b = themeableLottieAnimationView;
+        this.f42853c = materialCardView;
+    }
+
+    public static b a(View view) {
+        int i10 = y2.f41047a;
+        ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
+        if (themeableLottieAnimationView != null) {
+            i10 = y2.f41051e;
+            MaterialCardView materialCardView = (MaterialCardView) e4.a.a(view, i10);
+            if (materialCardView != null) {
+                return new b((ConstraintLayout) view, themeableLottieAnimationView, materialCardView);
             }
-            return new b(valueOf, readString, linkedHashMap);
         }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final b[] newArray(int i10) {
-            return new b[i10];
-        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    public b(e idType, String minAge, Map elementToStoreLength) {
-        Intrinsics.checkNotNullParameter(idType, "idType");
-        Intrinsics.checkNotNullParameter(minAge, "minAge");
-        Intrinsics.checkNotNullParameter(elementToStoreLength, "elementToStoreLength");
-        this.f44392d = idType;
-        this.f44393e = minAge;
-        this.f44394i = elementToStoreLength;
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f44392d.name());
-        dest.writeString(this.f44393e);
-        Map map = this.f44394i;
-        dest.writeInt(map.size());
-        for (Map.Entry entry : map.entrySet()) {
-            dest.writeString((String) entry.getKey());
-            dest.writeInt(((Number) entry.getValue()).intValue());
-        }
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public ConstraintLayout getRoot() {
+        return this.f42851a;
     }
 }

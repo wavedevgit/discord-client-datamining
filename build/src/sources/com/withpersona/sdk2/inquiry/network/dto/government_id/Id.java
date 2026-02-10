@@ -1,8 +1,8 @@
 package com.withpersona.sdk2.inquiry.network.dto.government_id;
 
-import an.a;
 import android.os.Parcel;
 import android.os.Parcelable;
+import cn.a;
 import com.squareup.moshi.g;
 import com.squareup.moshi.h;
 import com.squareup.moshi.i;
@@ -58,7 +58,7 @@ public final class Id implements Parcelable {
 
         @NotNull
         public final h.e createAdapter() {
-            return new h.e() { // from class: gp.a
+            return new h.e() { // from class: pp.a
                 @Override // com.squareup.moshi.h.e
                 public final h create(Type type, Set set, w wVar) {
                     h createAdapter$lambda$0;
@@ -213,7 +213,7 @@ public final class Id implements Parcelable {
         static {
             IdLocalIcon[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = yr.a.a($values);
+            $ENTRIES = hs.a.a($values);
         }
 
         private IdLocalIcon(String str, int i10) {

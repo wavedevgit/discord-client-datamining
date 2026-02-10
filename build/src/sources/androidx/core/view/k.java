@@ -15,16 +15,16 @@ import java.lang.reflect.Method;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private static boolean f3522a = false;
+    private static boolean f3526a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private static Method f3523b = null;
+    private static Method f3527b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f3524c = false;
+    private static boolean f3528c = false;
 
     /* renamed from: d  reason: collision with root package name */
-    private static Field f3525d;
+    private static Field f3529d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -32,14 +32,14 @@ public abstract class k {
     }
 
     private static boolean a(ActionBar actionBar, KeyEvent keyEvent) {
-        if (!f3522a) {
+        if (!f3526a) {
             try {
-                f3523b = actionBar.getClass().getMethod("onMenuKeyEvent", KeyEvent.class);
+                f3527b = actionBar.getClass().getMethod("onMenuKeyEvent", KeyEvent.class);
             } catch (NoSuchMethodException unused) {
             }
-            f3522a = true;
+            f3526a = true;
         }
-        Method method = f3523b;
+        Method method = f3527b;
         if (method != null) {
             try {
                 Object invoke = method.invoke(actionBar, keyEvent);
@@ -67,7 +67,7 @@ public abstract class k {
             return true;
         }
         View decorView = window.getDecorView();
-        if (h0.h(decorView, keyEvent)) {
+        if (i0.h(decorView, keyEvent)) {
             return true;
         }
         if (decorView != null) {
@@ -89,7 +89,7 @@ public abstract class k {
             return true;
         }
         View decorView = window.getDecorView();
-        if (h0.h(decorView, keyEvent)) {
+        if (i0.h(decorView, keyEvent)) {
             return true;
         }
         if (decorView != null) {
@@ -101,7 +101,7 @@ public abstract class k {
     }
 
     public static boolean d(View view, KeyEvent keyEvent) {
-        return h0.i(view, keyEvent);
+        return i0.i(view, keyEvent);
     }
 
     public static boolean e(a aVar, View view, Window.Callback callback, KeyEvent keyEvent) {
@@ -117,23 +117,23 @@ public abstract class k {
         if (callback instanceof Dialog) {
             return c((Dialog) callback, keyEvent);
         }
-        if ((view == null || !h0.h(view, keyEvent)) && !aVar.superDispatchKeyEvent(keyEvent)) {
+        if ((view == null || !i0.h(view, keyEvent)) && !aVar.superDispatchKeyEvent(keyEvent)) {
             return false;
         }
         return true;
     }
 
     private static DialogInterface.OnKeyListener f(Dialog dialog) {
-        if (!f3524c) {
+        if (!f3528c) {
             try {
                 Field declaredField = Dialog.class.getDeclaredField("mOnKeyListener");
-                f3525d = declaredField;
+                f3529d = declaredField;
                 declaredField.setAccessible(true);
             } catch (NoSuchFieldException unused) {
             }
-            f3524c = true;
+            f3528c = true;
         }
-        Field field = f3525d;
+        Field field = f3529d;
         if (field != null) {
             try {
                 return (DialogInterface.OnKeyListener) field.get(dialog);

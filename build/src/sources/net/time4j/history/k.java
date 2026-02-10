@@ -1,21 +1,21 @@
 package net.time4j.history;
 
+import bu.p;
+import bu.q;
+import bu.r;
+import bu.x;
+import bu.z;
+import cu.s;
+import cu.t;
+import cu.v;
 import java.text.ParsePosition;
 import java.util.Locale;
 import net.time4j.f0;
-import st.p;
-import st.q;
-import st.r;
-import st.x;
-import st.z;
-import tt.s;
-import tt.t;
-import tt.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class k extends tt.d implements t {
+final class k extends cu.d implements t {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Locale f38555e = new Locale("la");
+    private static final Locale f37559e = new Locale("la");
     private static final long serialVersionUID = 5200533417265981438L;
     private final d history;
 
@@ -23,27 +23,27 @@ final class k extends tt.d implements t {
     private static class a implements z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final d f38556d;
+        private final d f37560d;
 
         a(d dVar) {
-            this.f38556d = dVar;
+            this.f37560d = dVar;
         }
 
-        @Override // st.z
+        @Override // bu.z
         /* renamed from: b */
         public p a(q qVar) {
             throw new UnsupportedOperationException("Never called.");
         }
 
-        @Override // st.z
+        @Override // bu.z
         /* renamed from: c */
-        public p g(q qVar) {
+        public p h(q qVar) {
             throw new UnsupportedOperationException("Never called.");
         }
 
-        @Override // st.z
+        @Override // bu.z
         /* renamed from: d */
-        public j h(q qVar) {
+        public j m(q qVar) {
             j y10 = y(qVar);
             if (y10 == j.BC) {
                 return j.AD;
@@ -51,9 +51,9 @@ final class k extends tt.d implements t {
             return y10;
         }
 
-        @Override // st.z
+        @Override // bu.z
         /* renamed from: e */
-        public j m(q qVar) {
+        public j q(q qVar) {
             j y10 = y(qVar);
             if (y10 == j.AD) {
                 return j.BC;
@@ -61,33 +61,33 @@ final class k extends tt.d implements t {
             return y10;
         }
 
-        @Override // st.z
+        @Override // bu.z
         /* renamed from: f */
         public j y(q qVar) {
             try {
-                return this.f38556d.e((f0) qVar.t(f0.f38446z)).e();
+                return this.f37560d.e((f0) qVar.k(f0.f37450z)).e();
             } catch (IllegalArgumentException e10) {
                 throw new r(e10.getMessage(), e10);
             }
         }
 
-        @Override // st.z
-        /* renamed from: j */
-        public boolean k(q qVar, j jVar) {
+        @Override // bu.z
+        /* renamed from: g */
+        public boolean o(q qVar, j jVar) {
             if (jVar == null) {
                 return false;
             }
-            if (this.f38556d.e((f0) qVar.t(f0.f38446z)).e() != jVar) {
+            if (this.f37560d.e((f0) qVar.k(f0.f37450z)).e() != jVar) {
                 return false;
             }
             return true;
         }
 
-        @Override // st.z
-        /* renamed from: l */
-        public q s(q qVar, j jVar, boolean z10) {
+        @Override // bu.z
+        /* renamed from: i */
+        public q x(q qVar, j jVar, boolean z10) {
             if (jVar != null) {
-                if (this.f38556d.e((f0) qVar.t(f0.f38446z)).e() == jVar) {
+                if (this.f37560d.e((f0) qVar.k(f0.f37450z)).e() == jVar) {
                     return qVar;
                 }
                 throw new IllegalArgumentException(jVar.name());
@@ -102,26 +102,26 @@ final class k extends tt.d implements t {
         this.history = dVar;
     }
 
-    private s F(st.d dVar) {
-        st.c cVar = tt.a.f51008g;
+    private s F(bu.d dVar) {
+        bu.c cVar = cu.a.f21114g;
         v vVar = v.WIDE;
         v vVar2 = (v) dVar.b(cVar, vVar);
-        st.c cVar2 = xt.a.f55325c;
+        bu.c cVar2 = gu.a.f26027c;
         Boolean bool = Boolean.FALSE;
         String str = "a";
         if (((Boolean) dVar.b(cVar2, bool)).booleanValue()) {
-            tt.b c10 = tt.b.c("historic", f38555e);
+            cu.b c10 = cu.b.c("historic", f37559e);
             if (vVar2 == vVar) {
                 str = "w";
             }
-            return c10.o(this, str);
+            return c10.m(this, str);
         }
-        tt.b d10 = tt.b.d((Locale) dVar.b(tt.a.f51004c, Locale.ROOT));
-        if (((Boolean) dVar.b(xt.a.f55324b, bool)).booleanValue()) {
+        cu.b d10 = cu.b.d((Locale) dVar.b(cu.a.f21110c, Locale.ROOT));
+        if (((Boolean) dVar.b(gu.a.f26026b, bool)).booleanValue()) {
             if (vVar2 == vVar) {
                 str = "w";
             }
-            return d10.o(this, str, "alt");
+            return d10.m(this, str, "alt");
         }
         return d10.b(vVar2);
     }
@@ -130,60 +130,60 @@ final class k extends tt.d implements t {
         return this.history.i();
     }
 
-    @Override // st.p
+    @Override // bu.p
     public boolean A() {
         return true;
     }
 
-    @Override // st.p
-    public boolean D() {
+    @Override // bu.p
+    public boolean C() {
         return false;
     }
 
-    @Override // st.p
+    @Override // bu.p
     /* renamed from: G */
-    public j e() {
+    public j f() {
         return j.AD;
     }
 
-    @Override // st.p
+    @Override // bu.p
     /* renamed from: H */
     public j B() {
         return j.BC;
     }
 
-    @Override // tt.t
+    @Override // cu.t
     /* renamed from: I */
-    public j l(CharSequence charSequence, ParsePosition parsePosition, st.d dVar) {
+    public j l(CharSequence charSequence, ParsePosition parsePosition, bu.d dVar) {
         return (j) F(dVar).c(charSequence, parsePosition, getType(), dVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // st.e
+    @Override // bu.e
     public z c(x xVar) {
-        if (xVar.E(f0.f38446z)) {
+        if (xVar.E(f0.f37450z)) {
             return new a(this.history);
         }
         return null;
     }
 
-    @Override // st.e, st.p
+    @Override // bu.e, bu.p
     public char d() {
         return 'G';
     }
 
-    @Override // st.p
+    @Override // bu.p
     public Class getType() {
         return j.class;
     }
 
-    @Override // st.e
-    protected boolean j(st.e eVar) {
+    @Override // bu.e
+    protected boolean j(bu.e eVar) {
         return this.history.equals(((k) eVar).history);
     }
 
-    @Override // tt.t
-    public void o(st.o oVar, Appendable appendable, st.d dVar) {
-        appendable.append(F(dVar).f((Enum) oVar.t(this)));
+    @Override // cu.t
+    public void w(bu.o oVar, Appendable appendable, bu.d dVar) {
+        appendable.append(F(dVar).f((Enum) oVar.k(this)));
     }
 }

@@ -1,96 +1,52 @@
 package kt;
-
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.CompositeEncoder;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import kotlinx.serialization.encoding.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class s0 implements KSerializer {
+public final class s0 extends mt.c0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final KSerializer f35213a;
+    /* renamed from: e  reason: collision with root package name */
+    private final h0 f35301e;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final KSerializer f35214b;
-
-    public /* synthetic */ s0(KSerializer kSerializer, KSerializer kSerializer2, DefaultConstructorMarker defaultConstructorMarker) {
-        this(kSerializer, kSerializer2);
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public s0(kt.h0 r5) {
+        /*
+            r4 = this;
+            java.lang.String r0 = "padding"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
+            kt.g0 r0 = kt.g0.f35189a
+            mt.b0 r0 = r0.c()
+            kt.h0 r1 = kt.h0.f35200e
+            r2 = 2
+            if (r5 != r1) goto L12
+            r1 = r2
+            goto L13
+        L12:
+            r1 = 1
+        L13:
+            kt.h0 r3 = kt.h0.f35201i
+            if (r5 != r3) goto L1c
+            java.lang.Integer r2 = java.lang.Integer.valueOf(r2)
+            goto L1d
+        L1c:
+            r2 = 0
+        L1d:
+            r4.<init>(r0, r1, r2)
+            r4.f35301e = r5
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: kt.s0.<init>(kt.h0):void");
     }
 
-    protected abstract Object a(Object obj);
-
-    protected final KSerializer b() {
-        return this.f35213a;
-    }
-
-    protected abstract Object c(Object obj);
-
-    protected final KSerializer d() {
-        return this.f35214b;
-    }
-
-    @Override // kotlinx.serialization.DeserializationStrategy
-    public Object deserialize(Decoder decoder) {
-        Object obj;
-        Object obj2;
-        Object obj3;
-        Object obj4;
-        Object e10;
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        SerialDescriptor descriptor = getDescriptor();
-        kotlinx.serialization.encoding.c b10 = decoder.b(descriptor);
-        if (!b10.p()) {
-            obj = u2.f35224a;
-            obj2 = u2.f35224a;
-            Object obj5 = obj2;
-            while (true) {
-                int o10 = b10.o(getDescriptor());
-                if (o10 == -1) {
-                    obj3 = u2.f35224a;
-                    if (obj != obj3) {
-                        obj4 = u2.f35224a;
-                        if (obj5 != obj4) {
-                            e10 = e(obj, obj5);
-                        } else {
-                            throw new gt.n("Element 'value' is missing");
-                        }
-                    } else {
-                        throw new gt.n("Element 'key' is missing");
-                    }
-                } else if (o10 != 0) {
-                    if (o10 == 1) {
-                        obj5 = c.a.c(b10, getDescriptor(), 1, d(), null, 8, null);
-                    } else {
-                        throw new gt.n("Invalid index: " + o10);
-                    }
-                } else {
-                    obj = c.a.c(b10, getDescriptor(), 0, b(), null, 8, null);
-                }
-            }
-        } else {
-            e10 = e(c.a.c(b10, getDescriptor(), 0, b(), null, 8, null), c.a.c(b10, getDescriptor(), 1, d(), null, 8, null));
+    public boolean equals(Object obj) {
+        if ((obj instanceof s0) && this.f35301e == ((s0) obj).f35301e) {
+            return true;
         }
-        b10.c(descriptor);
-        return e10;
+        return false;
     }
 
-    protected abstract Object e(Object obj, Object obj2);
-
-    @Override // gt.o
-    public void serialize(Encoder encoder, Object obj) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        CompositeEncoder b10 = encoder.b(getDescriptor());
-        b10.F(getDescriptor(), 0, this.f35213a, a(obj));
-        b10.F(getDescriptor(), 1, this.f35214b, c(obj));
-        b10.c(getDescriptor());
-    }
-
-    private s0(KSerializer kSerializer, KSerializer kSerializer2) {
-        this.f35213a = kSerializer;
-        this.f35214b = kSerializer2;
+    public int hashCode() {
+        return this.f35301e.hashCode();
     }
 }

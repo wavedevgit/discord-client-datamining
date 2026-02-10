@@ -1,6 +1,7 @@
 package androidx.appcompat.view.menu;
 
 import android.content.Context;
+import android.os.Parcelable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface j {
 
@@ -17,13 +18,19 @@ public interface j {
 
     void c(a aVar);
 
-    boolean d(m mVar);
+    void d(Parcelable parcelable);
 
-    void e(boolean z10);
+    boolean e(m mVar);
 
-    boolean f();
+    Parcelable f();
 
-    boolean g(e eVar, g gVar);
+    void g(boolean z10);
 
-    void h(Context context, e eVar);
+    int getId();
+
+    boolean h();
+
+    boolean i(e eVar, g gVar);
+
+    void j(Context context, e eVar);
 }

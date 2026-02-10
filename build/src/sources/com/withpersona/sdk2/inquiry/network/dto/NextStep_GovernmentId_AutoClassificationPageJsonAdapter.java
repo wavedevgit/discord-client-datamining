@@ -53,7 +53,7 @@ public final class NextStep_GovernmentId_AutoClassificationPageJsonAdapter exten
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -93,7 +93,7 @@ public final class NextStep_GovernmentId_AutoClassificationPageJsonAdapter exten
     public void toJson(@NotNull t writer, NextStep.GovernmentId.AutoClassificationPage autoClassificationPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (autoClassificationPage != null) {
-            writer.k();
+            writer.i();
             writer.J("unableToClassifyDocumentTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getUnableToClassifyDocumentTitle());
             writer.J("unableToClassifyDocumentContinueButtonText");

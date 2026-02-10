@@ -4,48 +4,75 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var0.IntlMessageFormat;
     var1 = var2.__addLocaleData;
     var0 = {};
-    var3 = 'hu';
+    var3 = 'cs';
     var0.locale = var3;
     var3 = function arg0, arg1() {
-        _fun112744: for (var _fun112744_ip = 0;;) switch (_fun112744_ip) {
+        _fun112776: for (var _fun112776_ip = 0;;) switch (_fun112776_ip) {
             case 0:
                 var2 = arg0;
+                var0 = global;
+                var1 = var0.String;
+                var0 = undefined;
+                var3 = var1.bind(var0)(var2);
+                var1 = var3.split;
+                var0 = '.';
+                var0 = var1.bind(var3)(var0);
+                var1 = 0;
+                var3 = var0[var1];
                 var1 = 1;
-                var0 = arg1;
-                if (var0) {
-                    _fun112744_ip = 29;
-                    continue _fun112744
+                var0 = var0[var1];
+                var5 = !var0;
+                var4 = 'other';
+                var6 = arg1;
+                var0 = var4;
+                if (var6) {
+                    _fun112776_ip = 112;
+                    continue _fun112776
                 }
-            case 12:
-                var3 = var1 == var2;
-                var0 = 'other';
-                if (!var3) {
-                    _fun112744_ip = 27;
-                    continue _fun112744
+            case 61:
+                if (!(var1 == var2)) {
+                    _fun112776_ip = 72;
+                    continue _fun112776
                 }
-            case 23:
-                var0 = 'one';
-            case 27:
-                _fun112744_ip = 54;
-                continue _fun112744;
-            case 29:
-                if (!(var1 != var2)) {
-                    _fun112744_ip = 47;
-                    continue _fun112744
-                }
-            case 33:
-                var1 = 5;
-                var2 = var1 == var2;
-                var1 = 'other';
-                if (!var2) {
-                    _fun112744_ip = 51;
-                    continue _fun112744
-                }
-            case 47:
+            case 65:
                 var1 = 'one';
-            case 51:
+                if (var5) {
+                    _fun112776_ip = 109;
+                    continue _fun112776
+                }
+            case 72:
+                var2 = 2;
+                if (!(var3 >= var2)) {
+                    _fun112776_ip = 93;
+                    continue _fun112776
+                }
+            case 79:
+                var2 = 4;
+                if (!(var3 <= var2)) {
+                    _fun112776_ip = 93;
+                    continue _fun112776
+                }
+            case 86:
+                var2 = 'few';
+                if (var5) {
+                    _fun112776_ip = 106;
+                    continue _fun112776
+                }
+            case 93:
+                var3 = 'many';
+                if (!var5) {
+                    _fun112776_ip = 103;
+                    continue _fun112776
+                }
+            case 100:
+                var3 = var4;
+            case 103:
+                var2 = var3;
+            case 106:
+                var1 = var2;
+            case 109:
                 var0 = var1;
-            case 54:
+            case 112:
                 return var0;
         }
     };

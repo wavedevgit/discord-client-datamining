@@ -5,23 +5,23 @@ import zg.k;
 class f implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    final k f16495a;
+    final k f17244a;
 
     public f(k kVar) {
-        this.f16495a = kVar;
+        this.f17244a = kVar;
     }
 
     @Override // com.google.firebase.installations.h
-    public boolean a(Exception exc) {
-        return false;
-    }
-
-    @Override // com.google.firebase.installations.h
-    public boolean b(ij.d dVar) {
+    public boolean a(kj.d dVar) {
         if (!dVar.l() && !dVar.k() && !dVar.i()) {
             return false;
         }
-        this.f16495a.e(dVar.d());
+        this.f17244a.e(dVar.d());
         return true;
+    }
+
+    @Override // com.google.firebase.installations.h
+    public boolean b(Exception exc) {
+        return false;
     }
 }

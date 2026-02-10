@@ -3,6 +3,7 @@ package a5;
 import a5.h;
 import android.net.Uri;
 import android.webkit.MimeTypeMap;
+import av.x;
 import g5.m;
 import java.io.IOException;
 import java.util.Map;
@@ -19,7 +20,6 @@ import okhttp3.Response;
 import okhttp3.ResponseBody;
 import okio.BufferedSink;
 import okio.BufferedSource;
-import ru.x;
 import x4.r;
 import x4.u;
 import y4.a;
@@ -183,7 +183,7 @@ public final class j implements h {
             r0.<init>(r6)
         L18:
             java.lang.Object r6 = r0.f409d
-            java.lang.Object r1 = xr.b.f()
+            java.lang.Object r1 = gs.b.f()
             int r2 = r0.f411i
             r3 = 1
             if (r2 == 0) goto L31
@@ -252,7 +252,7 @@ public final class j implements h {
         return h10;
     }
 
-    private final ru.h e() {
+    private final av.h e() {
         Object value = this.f404d.getValue();
         Intrinsics.checkNotNull(value);
         return ((y4.a) value).getFileSystem();
@@ -260,7 +260,7 @@ public final class j implements h {
 
     private final boolean g(Request request, Response response) {
         if (this.f402b.i().e()) {
-            if (!this.f405e || f5.d.f22458c.c(request, response)) {
+            if (!this.f405e || f5.d.f23583c.c(request, response)) {
                 return true;
             }
             return false;
@@ -278,10 +278,10 @@ public final class j implements h {
         boolean d10 = this.f402b.i().d();
         boolean d11 = this.f402b.k().d();
         if (!d11 && d10) {
-            f10.c(CacheControl.f41968p);
+            f10.c(CacheControl.f40218p);
         } else if (d11 && !d10) {
             if (this.f402b.i().e()) {
-                f10.c(CacheControl.f41967o);
+                f10.c(CacheControl.f40217o);
             } else {
                 f10.c(f399g);
             }
@@ -321,18 +321,18 @@ public final class j implements h {
     }
 
     private final x4.h k(Response response) {
-        if (response.H0() != null) {
-            return x4.h.f54614o;
+        if (response.F0() != null) {
+            return x4.h.f54346o;
         }
-        return x4.h.f54613i;
+        return x4.h.f54345i;
     }
 
     private final r l(ResponseBody responseBody) {
-        return u.e(responseBody.source(), this.f402b.g());
+        return u.f(responseBody.source(), this.f402b.g());
     }
 
     private final r m(a.c cVar) {
-        return u.g(cVar.getData(), e(), d(), cVar);
+        return u.e(cVar.getData(), e(), d(), cVar);
     }
 
     private final a.c n(a.c cVar, Request request, Response response, f5.c cVar2) {
@@ -346,7 +346,7 @@ public final class j implements h {
             return null;
         }
         if (cVar != null) {
-            bVar = cVar.x1();
+            bVar = cVar.C1();
         } else {
             y4.a aVar = (y4.a) this.f404d.getValue();
             if (aVar != null) {
@@ -361,11 +361,11 @@ public final class j implements h {
             }
             try {
                 if (response.z() == 304 && cVar2 != null) {
-                    Response c10 = response.J0().k(f5.d.f22458c.a(cVar2.h(), response.C0())).c();
+                    Response c10 = response.G0().k(f5.d.f23583c.a(cVar2.h(), response.z0())).c();
                     BufferedSink c11 = x.c(e().p(bVar.getMetadata(), false));
                     try {
                         new f5.c(c10).k(c11);
-                        Unit unit = Unit.f31765a;
+                        Unit unit = Unit.f31987a;
                         if (c11 != null) {
                             try {
                                 c11.close();
@@ -379,7 +379,7 @@ public final class j implements h {
                             try {
                                 c11.close();
                             } catch (Throwable th6) {
-                                rr.e.a(th3, th6);
+                                as.e.a(th3, th6);
                             }
                         }
                     }
@@ -390,7 +390,7 @@ public final class j implements h {
                     BufferedSink c12 = x.c(e().p(bVar.getMetadata(), false));
                     try {
                         new f5.c(response).k(c12);
-                        Unit unit2 = Unit.f31765a;
+                        Unit unit2 = Unit.f31987a;
                         if (c12 != null) {
                             try {
                                 c12.close();
@@ -404,7 +404,7 @@ public final class j implements h {
                             try {
                                 c12.close();
                             } catch (Throwable th9) {
-                                rr.e.a(th8, th9);
+                                as.e.a(th8, th9);
                             }
                         }
                         th2 = th8;
@@ -414,7 +414,7 @@ public final class j implements h {
                         try {
                             ResponseBody n10 = response.n();
                             Intrinsics.checkNotNull(n10);
-                            n10.source().d2(c13);
+                            n10.source().j2(c13);
                             if (c13 != null) {
                                 try {
                                     c13.close();
@@ -428,7 +428,7 @@ public final class j implements h {
                                 try {
                                     c13.close();
                                 } catch (Throwable th12) {
-                                    rr.e.a(th3, th12);
+                                    as.e.a(th3, th12);
                                 }
                             }
                         }

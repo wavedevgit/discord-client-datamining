@@ -14,138 +14,138 @@ import java.util.Iterator;
 public class FrameMetricsAggregator {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f3025a;
+    private final b f3028a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a extends b {
 
         /* renamed from: e  reason: collision with root package name */
-        private static HandlerThread f3026e;
+        private static HandlerThread f3029e;
 
         /* renamed from: f  reason: collision with root package name */
-        private static Handler f3027f;
+        private static Handler f3030f;
 
         /* renamed from: a  reason: collision with root package name */
-        int f3028a;
+        int f3031a;
 
         /* renamed from: b  reason: collision with root package name */
-        SparseIntArray[] f3029b = new SparseIntArray[9];
+        SparseIntArray[] f3032b = new SparseIntArray[9];
 
         /* renamed from: c  reason: collision with root package name */
-        private final ArrayList f3030c = new ArrayList();
+        private final ArrayList f3033c = new ArrayList();
 
         /* renamed from: d  reason: collision with root package name */
-        Window.OnFrameMetricsAvailableListener f3031d = new Window$OnFrameMetricsAvailableListenerC0032a();
+        Window.OnFrameMetricsAvailableListener f3034d = new Window$OnFrameMetricsAvailableListenerC0029a();
 
         /* renamed from: androidx.core.app.FrameMetricsAggregator$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        class Window$OnFrameMetricsAvailableListenerC0032a implements Window.OnFrameMetricsAvailableListener {
-            Window$OnFrameMetricsAvailableListenerC0032a() {
+        class Window$OnFrameMetricsAvailableListenerC0029a implements Window.OnFrameMetricsAvailableListener {
+            Window$OnFrameMetricsAvailableListenerC0029a() {
             }
 
             @Override // android.view.Window.OnFrameMetricsAvailableListener
             public void onFrameMetricsAvailable(Window window, FrameMetrics frameMetrics, int i10) {
                 a aVar = a.this;
-                if ((aVar.f3028a & 1) != 0) {
-                    aVar.f(aVar.f3029b[0], frameMetrics.getMetric(8));
+                if ((aVar.f3031a & 1) != 0) {
+                    aVar.f(aVar.f3032b[0], frameMetrics.getMetric(8));
                 }
                 a aVar2 = a.this;
-                if ((aVar2.f3028a & 2) != 0) {
-                    aVar2.f(aVar2.f3029b[1], frameMetrics.getMetric(1));
+                if ((aVar2.f3031a & 2) != 0) {
+                    aVar2.f(aVar2.f3032b[1], frameMetrics.getMetric(1));
                 }
                 a aVar3 = a.this;
-                if ((aVar3.f3028a & 4) != 0) {
-                    aVar3.f(aVar3.f3029b[2], frameMetrics.getMetric(3));
+                if ((aVar3.f3031a & 4) != 0) {
+                    aVar3.f(aVar3.f3032b[2], frameMetrics.getMetric(3));
                 }
                 a aVar4 = a.this;
-                if ((aVar4.f3028a & 8) != 0) {
-                    aVar4.f(aVar4.f3029b[3], frameMetrics.getMetric(4));
+                if ((aVar4.f3031a & 8) != 0) {
+                    aVar4.f(aVar4.f3032b[3], frameMetrics.getMetric(4));
                 }
                 a aVar5 = a.this;
-                if ((aVar5.f3028a & 16) != 0) {
-                    aVar5.f(aVar5.f3029b[4], frameMetrics.getMetric(5));
+                if ((aVar5.f3031a & 16) != 0) {
+                    aVar5.f(aVar5.f3032b[4], frameMetrics.getMetric(5));
                 }
                 a aVar6 = a.this;
-                if ((aVar6.f3028a & 64) != 0) {
-                    aVar6.f(aVar6.f3029b[6], frameMetrics.getMetric(7));
+                if ((aVar6.f3031a & 64) != 0) {
+                    aVar6.f(aVar6.f3032b[6], frameMetrics.getMetric(7));
                 }
                 a aVar7 = a.this;
-                if ((aVar7.f3028a & 32) != 0) {
-                    aVar7.f(aVar7.f3029b[5], frameMetrics.getMetric(6));
+                if ((aVar7.f3031a & 32) != 0) {
+                    aVar7.f(aVar7.f3032b[5], frameMetrics.getMetric(6));
                 }
                 a aVar8 = a.this;
-                if ((aVar8.f3028a & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                    aVar8.f(aVar8.f3029b[7], frameMetrics.getMetric(0));
+                if ((aVar8.f3031a & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
+                    aVar8.f(aVar8.f3032b[7], frameMetrics.getMetric(0));
                 }
                 a aVar9 = a.this;
-                if ((aVar9.f3028a & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                    aVar9.f(aVar9.f3029b[8], frameMetrics.getMetric(2));
+                if ((aVar9.f3031a & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
+                    aVar9.f(aVar9.f3032b[8], frameMetrics.getMetric(2));
                 }
             }
         }
 
         a(int i10) {
-            this.f3028a = i10;
+            this.f3031a = i10;
         }
 
         @Override // androidx.core.app.FrameMetricsAggregator.b
         public void a(Activity activity) {
-            if (f3026e == null) {
+            if (f3029e == null) {
                 HandlerThread handlerThread = new HandlerThread("FrameMetricsAggregator");
-                f3026e = handlerThread;
+                f3029e = handlerThread;
                 handlerThread.start();
-                f3027f = new Handler(f3026e.getLooper());
+                f3030f = new Handler(f3029e.getLooper());
             }
             for (int i10 = 0; i10 <= 8; i10++) {
-                SparseIntArray[] sparseIntArrayArr = this.f3029b;
-                if (sparseIntArrayArr[i10] == null && (this.f3028a & (1 << i10)) != 0) {
+                SparseIntArray[] sparseIntArrayArr = this.f3032b;
+                if (sparseIntArrayArr[i10] == null && (this.f3031a & (1 << i10)) != 0) {
                     sparseIntArrayArr[i10] = new SparseIntArray();
                 }
             }
-            activity.getWindow().addOnFrameMetricsAvailableListener(this.f3031d, f3027f);
-            this.f3030c.add(new WeakReference(activity));
+            activity.getWindow().addOnFrameMetricsAvailableListener(this.f3034d, f3030f);
+            this.f3033c.add(new WeakReference(activity));
         }
 
         @Override // androidx.core.app.FrameMetricsAggregator.b
         public SparseIntArray[] b() {
-            return this.f3029b;
+            return this.f3032b;
         }
 
         @Override // androidx.core.app.FrameMetricsAggregator.b
         public SparseIntArray[] c(Activity activity) {
-            Iterator it = this.f3030c.iterator();
+            Iterator it = this.f3033c.iterator();
             while (true) {
                 if (!it.hasNext()) {
                     break;
                 }
                 WeakReference weakReference = (WeakReference) it.next();
                 if (weakReference.get() == activity) {
-                    this.f3030c.remove(weakReference);
+                    this.f3033c.remove(weakReference);
                     break;
                 }
             }
-            activity.getWindow().removeOnFrameMetricsAvailableListener(this.f3031d);
-            return this.f3029b;
+            activity.getWindow().removeOnFrameMetricsAvailableListener(this.f3034d);
+            return this.f3032b;
         }
 
         @Override // androidx.core.app.FrameMetricsAggregator.b
         public SparseIntArray[] d() {
-            SparseIntArray[] sparseIntArrayArr = this.f3029b;
-            this.f3029b = new SparseIntArray[9];
+            SparseIntArray[] sparseIntArrayArr = this.f3032b;
+            this.f3032b = new SparseIntArray[9];
             return sparseIntArrayArr;
         }
 
         @Override // androidx.core.app.FrameMetricsAggregator.b
         public SparseIntArray[] e() {
-            for (int size = this.f3030c.size() - 1; size >= 0; size--) {
-                WeakReference weakReference = (WeakReference) this.f3030c.get(size);
+            for (int size = this.f3033c.size() - 1; size >= 0; size--) {
+                WeakReference weakReference = (WeakReference) this.f3033c.get(size);
                 Activity activity = (Activity) weakReference.get();
                 if (weakReference.get() != null) {
-                    activity.getWindow().removeOnFrameMetricsAvailableListener(this.f3031d);
-                    this.f3030c.remove(size);
+                    activity.getWindow().removeOnFrameMetricsAvailableListener(this.f3034d);
+                    this.f3033c.remove(size);
                 }
             }
-            return this.f3029b;
+            return this.f3032b;
         }
 
         void f(SparseIntArray sparseIntArray, long j10) {
@@ -179,26 +179,26 @@ public class FrameMetricsAggregator {
     }
 
     public void a(Activity activity) {
-        this.f3025a.a(activity);
+        this.f3028a.a(activity);
     }
 
     public SparseIntArray[] b() {
-        return this.f3025a.b();
+        return this.f3028a.b();
     }
 
     public SparseIntArray[] c(Activity activity) {
-        return this.f3025a.c(activity);
+        return this.f3028a.c(activity);
     }
 
     public SparseIntArray[] d() {
-        return this.f3025a.d();
+        return this.f3028a.d();
     }
 
     public SparseIntArray[] e() {
-        return this.f3025a.e();
+        return this.f3028a.e();
     }
 
     public FrameMetricsAggregator(int i10) {
-        this.f3025a = new a(i10);
+        this.f3028a = new a(i10);
     }
 }

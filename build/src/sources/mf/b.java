@@ -9,22 +9,22 @@ public class b extends jf.a {
     public static final Parcelable.Creator<b> CREATOR = new h();
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f37068d;
+    private final boolean f36443d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f37069e;
+    private final int f36444e;
 
     public b(boolean z10, int i10) {
-        this.f37068d = z10;
-        this.f37069e = i10;
+        this.f36443d = z10;
+        this.f36444e = i10;
     }
 
     public boolean b() {
-        return this.f37068d;
+        return this.f36443d;
     }
 
     public int c() {
-        return this.f37069e;
+        return this.f36444e;
     }
 
     @Override // android.os.Parcelable

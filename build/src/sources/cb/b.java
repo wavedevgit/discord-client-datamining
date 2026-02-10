@@ -21,13 +21,13 @@ import x8.f;
 public final class b implements c {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f7345c = new a(null);
+    public static final a f8026c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Resources f7346a;
+    private final Resources f8027a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f7347b;
+    private final Map f8028b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -41,12 +41,12 @@ public final class b implements c {
 
     public b(Resources resources) {
         Intrinsics.checkNotNullParameter(resources, "resources");
-        this.f7346a = resources;
-        this.f7347b = new ConcurrentHashMap();
+        this.f8027a = resources;
+        this.f8028b = new ConcurrentHashMap();
     }
 
     private final int b(String str) {
-        Map map = this.f7347b;
+        Map map = this.f8028b;
         Object obj = map.get(str);
         if (obj == null) {
             Uri parse = Uri.parse(str);
@@ -80,7 +80,7 @@ public final class b implements c {
         try {
             String Z = encodedImage.Z();
             if (Z != null) {
-                Drawable f10 = j.f(this.f7346a, b(Z), null);
+                Drawable f10 = j.f(this.f8027a, b(Z), null);
                 if (f10 == null) {
                     return null;
                 }

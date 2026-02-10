@@ -33,7 +33,7 @@ public enum l8 implements w1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public l8 a(e3 e3Var, ILogger iLogger) {
-            return l8.valueOf(e3Var.b1().toUpperCase(Locale.ROOT));
+            return l8.valueOf(e3Var.g1().toUpperCase(Locale.ROOT));
         }
     }
 

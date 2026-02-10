@@ -1,31 +1,173 @@
 package at;
 
-import at.o;
-import kotlin.jvm.internal.Intrinsics;
+import dt.e0;
+import dt.h0;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.LongCompanionObject;
+import kotlin.reflect.KFunction;
+import kotlinx.coroutines.CancellableContinuation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface f extends o.c {
+public abstract class f {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final m f6144a = new m(-1, null, null, 0);
+
+    /* renamed from: b  reason: collision with root package name */
+    public static final int f6145b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final int f6146c;
+
+    /* renamed from: d  reason: collision with root package name */
+    public static final e0 f6147d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final e0 f6148e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final e0 f6149f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private static final e0 f6150g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private static final e0 f6151h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private static final e0 f6152i;
+
+    /* renamed from: j  reason: collision with root package name */
+    private static final e0 f6153j;
+
+    /* renamed from: k  reason: collision with root package name */
+    private static final e0 f6154k;
+
+    /* renamed from: l  reason: collision with root package name */
+    private static final e0 f6155l;
+
+    /* renamed from: m  reason: collision with root package name */
+    private static final e0 f6156m;
+
+    /* renamed from: n  reason: collision with root package name */
+    private static final e0 f6157n;
+
+    /* renamed from: o  reason: collision with root package name */
+    private static final e0 f6158o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private static final e0 f6159p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private static final e0 f6160q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private static final e0 f6161r;
+
+    /* renamed from: s  reason: collision with root package name */
+    private static final e0 f6162s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static void a(f fVar, h0 padding) {
-            Intrinsics.checkNotNullParameter(padding, "padding");
-            fVar.h(new ct.e(new u(padding)));
+    /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f6163d = new a();
+
+        a() {
+            super(2, f.class, "createSegment", "createSegment(JLkotlinx/coroutines/channels/ChannelSegment;)Lkotlinx/coroutines/channels/ChannelSegment;", 1);
         }
 
-        public static void b(f fVar, h0 padding) {
-            Intrinsics.checkNotNullParameter(padding, "padding");
-            fVar.h(new ct.e(new c0(padding)));
+        public final m a(long j10, m mVar) {
+            return f.x(j10, mVar);
         }
 
-        public static void c(f fVar, h0 padding) {
-            Intrinsics.checkNotNullParameter(padding, "padding");
-            fVar.h(new ct.e(new i0(padding)));
-        }
-
-        public static void d(f fVar, int i10, int i11) {
-            fVar.h(new ct.e(new t(i10, i11, null, 4, null)));
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            return a(((Number) obj).longValue(), (m) obj2);
         }
     }
 
-    void h(ct.o oVar);
+    static {
+        int e10;
+        int e11;
+        e10 = h0.e("kotlinx.coroutines.bufferedChannel.segmentSize", 32, 0, 0, 12, null);
+        f6145b = e10;
+        e11 = h0.e("kotlinx.coroutines.bufferedChannel.expandBufferCompletionWaitIterations", 10000, 0, 0, 12, null);
+        f6146c = e11;
+        f6147d = new e0("BUFFERED");
+        f6148e = new e0("SHOULD_BUFFER");
+        f6149f = new e0("S_RESUMING_BY_RCV");
+        f6150g = new e0("RESUMING_BY_EB");
+        f6151h = new e0("POISONED");
+        f6152i = new e0("DONE_RCV");
+        f6153j = new e0("INTERRUPTED_SEND");
+        f6154k = new e0("INTERRUPTED_RCV");
+        f6155l = new e0("CHANNEL_CLOSED");
+        f6156m = new e0("SUSPEND");
+        f6157n = new e0("SUSPEND_NO_WAITER");
+        f6158o = new e0("FAILED");
+        f6159p = new e0("NO_RECEIVE_RESULT");
+        f6160q = new e0("CLOSE_HANDLER_CLOSED");
+        f6161r = new e0("CLOSE_HANDLER_INVOKED");
+        f6162s = new e0("NO_CLOSE_CAUSE");
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final long A(int i10) {
+        if (i10 != 0) {
+            if (i10 != Integer.MAX_VALUE) {
+                return i10;
+            }
+            return LongCompanionObject.MAX_VALUE;
+        }
+        return 0L;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final boolean B(CancellableContinuation cancellableContinuation, Object obj, Function3 function3) {
+        Object w10 = cancellableContinuation.w(obj, null, function3);
+        if (w10 != null) {
+            cancellableContinuation.A(w10);
+            return true;
+        }
+        return false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static /* synthetic */ boolean C(CancellableContinuation cancellableContinuation, Object obj, Function3 function3, int i10, Object obj2) {
+        if ((i10 & 2) != 0) {
+            function3 = null;
+        }
+        return B(cancellableContinuation, obj, function3);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final long v(long j10, boolean z10) {
+        long j11;
+        if (z10) {
+            j11 = 4611686018427387904L;
+        } else {
+            j11 = 0;
+        }
+        return j11 + j10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final long w(long j10, int i10) {
+        return (i10 << 60) + j10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final m x(long j10, m mVar) {
+        return new m(j10, mVar, mVar.y(), 0);
+    }
+
+    public static final KFunction y() {
+        return a.f6163d;
+    }
+
+    public static final e0 z() {
+        return f6155l;
+    }
 }

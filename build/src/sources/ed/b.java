@@ -6,7 +6,7 @@ import uc.z;
 public final class b implements uc.k {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final uc.p f21256d = new uc.p() { // from class: ed.a
+    public static final uc.p f22423d = new uc.p() { // from class: ed.a
         @Override // uc.p
         public final uc.k[] b() {
             return b.b();
@@ -14,13 +14,13 @@ public final class b implements uc.k {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f21257a = new c();
+    private final c f22424a = new c();
 
     /* renamed from: b  reason: collision with root package name */
-    private final oe.h0 f21258b = new oe.h0(2786);
+    private final oe.h0 f22425b = new oe.h0(2786);
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f21259c;
+    private boolean f22426c;
 
     public static /* synthetic */ uc.k[] b() {
         return new uc.k[]{new b()};
@@ -28,13 +28,13 @@ public final class b implements uc.k {
 
     @Override // uc.k
     public void a(long j10, long j11) {
-        this.f21259c = false;
-        this.f21257a.b();
+        this.f22426c = false;
+        this.f22424a.b();
     }
 
     @Override // uc.k
     public void c(uc.m mVar) {
-        this.f21257a.c(mVar, new i0.d(0, 1));
+        this.f22424a.c(mVar, new i0.d(0, 1));
         mVar.q();
         mVar.j(new z.b(-9223372036854775807L));
     }
@@ -85,17 +85,17 @@ public final class b implements uc.k {
 
     @Override // uc.k
     public int h(uc.l lVar, uc.y yVar) {
-        int read = lVar.read(this.f21258b.e(), 0, 2786);
+        int read = lVar.read(this.f22425b.e(), 0, 2786);
         if (read == -1) {
             return -1;
         }
-        this.f21258b.U(0);
-        this.f21258b.T(read);
-        if (!this.f21259c) {
-            this.f21257a.e(0L, 4);
-            this.f21259c = true;
+        this.f22425b.U(0);
+        this.f22425b.T(read);
+        if (!this.f22426c) {
+            this.f22424a.e(0L, 4);
+            this.f22426c = true;
         }
-        this.f21257a.a(this.f21258b);
+        this.f22424a.a(this.f22425b);
         return 0;
     }
 

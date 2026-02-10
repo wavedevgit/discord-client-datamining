@@ -14,16 +14,16 @@ import kotlin.text.i;
 public final class i implements MatchResult {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Matcher f34738a;
+    private final Matcher f34960a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CharSequence f34739b;
+    private final CharSequence f34961b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f34740c;
+    private final h f34962c;
 
     /* renamed from: d  reason: collision with root package name */
-    private List f34741d;
+    private List f34963d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.collections.d {
@@ -35,7 +35,7 @@ public final class i implements MatchResult {
             return i.this.f().groupCount() + 1;
         }
 
-        @Override // kotlin.collections.b, java.util.Collection
+        @Override // kotlin.collections.b, java.util.Collection, java.util.List
         public final /* bridge */ boolean contains(Object obj) {
             if (!(obj instanceof String)) {
                 return false;
@@ -61,7 +61,7 @@ public final class i implements MatchResult {
             return super.indexOf(str);
         }
 
-        public /* bridge */ int h(String str) {
+        public /* bridge */ int i(String str) {
             return super.lastIndexOf(str);
         }
 
@@ -78,7 +78,7 @@ public final class i implements MatchResult {
             if (!(obj instanceof String)) {
                 return -1;
             }
-            return h((String) obj);
+            return i((String) obj);
         }
     }
 
@@ -97,7 +97,7 @@ public final class i implements MatchResult {
             return i.this.f().groupCount() + 1;
         }
 
-        @Override // kotlin.collections.b, java.util.Collection
+        @Override // kotlin.collections.b, java.util.Collection, java.util.List
         public final /* bridge */ boolean contains(Object obj) {
             boolean z10;
             if (obj == null) {
@@ -148,14 +148,14 @@ public final class i implements MatchResult {
     public i(Matcher matcher, CharSequence input) {
         Intrinsics.checkNotNullParameter(matcher, "matcher");
         Intrinsics.checkNotNullParameter(input, "input");
-        this.f34738a = matcher;
-        this.f34739b = input;
-        this.f34740c = new b();
+        this.f34960a = matcher;
+        this.f34961b = input;
+        this.f34962c = new b();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final java.util.regex.MatchResult f() {
-        return this.f34738a;
+        return this.f34960a;
     }
 
     @Override // kotlin.text.MatchResult
@@ -165,10 +165,10 @@ public final class i implements MatchResult {
 
     @Override // kotlin.text.MatchResult
     public List b() {
-        if (this.f34741d == null) {
-            this.f34741d = new a();
+        if (this.f34963d == null) {
+            this.f34963d = new a();
         }
-        List list = this.f34741d;
+        List list = this.f34963d;
         Intrinsics.checkNotNull(list);
         return list;
     }
@@ -182,7 +182,7 @@ public final class i implements MatchResult {
 
     @Override // kotlin.text.MatchResult
     public h d() {
-        return this.f34740c;
+        return this.f34962c;
     }
 
     @Override // kotlin.text.MatchResult
@@ -203,10 +203,10 @@ public final class i implements MatchResult {
             i10 = 0;
         }
         int i11 = end + i10;
-        if (i11 <= this.f34739b.length()) {
-            Matcher matcher = this.f34738a.pattern().matcher(this.f34739b);
+        if (i11 <= this.f34961b.length()) {
+            Matcher matcher = this.f34960a.pattern().matcher(this.f34961b);
             Intrinsics.checkNotNullExpressionValue(matcher, "matcher(...)");
-            f10 = l.f(matcher, i11, this.f34739b);
+            f10 = l.f(matcher, i11, this.f34961b);
             return f10;
         }
         return null;

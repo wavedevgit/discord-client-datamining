@@ -12,13 +12,13 @@ public final class ReportLevel {
     public static final Companion Companion;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ ReportLevel[] f32519e;
+    private static final /* synthetic */ ReportLevel[] f32741e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32520i;
+    private static final /* synthetic */ EnumEntries f32742i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f32521d;
+    private final String f32743d;
     public static final ReportLevel IGNORE = new ReportLevel("IGNORE", 0, "ignore");
     public static final ReportLevel WARN = new ReportLevel("WARN", 1, "warn");
     public static final ReportLevel STRICT = new ReportLevel("STRICT", 2, "strict");
@@ -36,13 +36,13 @@ public final class ReportLevel {
 
     static {
         ReportLevel[] a10 = a();
-        f32519e = a10;
-        f32520i = yr.a.a(a10);
+        f32741e = a10;
+        f32742i = hs.a.a(a10);
         Companion = new Companion(null);
     }
 
     private ReportLevel(String str, int i10, String str2) {
-        this.f32521d = str2;
+        this.f32743d = str2;
     }
 
     private static final /* synthetic */ ReportLevel[] a() {
@@ -54,12 +54,12 @@ public final class ReportLevel {
     }
 
     public static ReportLevel[] values() {
-        return (ReportLevel[]) f32519e.clone();
+        return (ReportLevel[]) f32741e.clone();
     }
 
     @NotNull
     public final String getDescription() {
-        return this.f32521d;
+        return this.f32743d;
     }
 
     public final boolean isIgnore() {

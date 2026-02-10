@@ -7,34 +7,34 @@ import u0.t;
 public abstract class d extends e {
 
     /* renamed from: m  reason: collision with root package name */
-    private static final a f55349m = new a(null);
+    private static final a f55280m = new a(null);
 
     /* renamed from: n  reason: collision with root package name */
-    public static final int f55350n = 8;
+    public static final int f55281n = 8;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final int[] f55351o = new int[0];
+    private static final int[] f55282o = new int[0];
 
     /* renamed from: f  reason: collision with root package name */
-    private final Function1 f55352f;
+    private final Function1 f55283f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Function1 f55353g;
+    private final Function1 f55284g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f55354h;
+    private int f55285h;
 
     /* renamed from: i  reason: collision with root package name */
-    private u0.p f55355i;
+    private u0.p f55286i;
 
     /* renamed from: j  reason: collision with root package name */
-    private h f55356j;
+    private h f55287j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int[] f55357k;
+    private int[] f55288k;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f55358l;
+    private int f55289l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class a {
@@ -48,11 +48,11 @@ public abstract class d extends e {
 
     public d(long j10, h hVar, Function1 function1, Function1 function12) {
         super(j10, hVar, null);
-        this.f55352f = function1;
-        this.f55353g = function12;
-        this.f55356j = h.f55370p.a();
-        this.f55357k = f55351o;
-        this.f55358l = 1;
+        this.f55283f = function1;
+        this.f55284g = function12;
+        this.f55287j = h.f55301p.a();
+        this.f55288k = f55282o;
+        this.f55289l = 1;
     }
 
     @Override // y0.e
@@ -62,12 +62,12 @@ public abstract class d extends e {
 
     @Override // y0.e
     public int e() {
-        return this.f55354h;
+        return this.f55285h;
     }
 
     @Override // y0.e
     public Function1 f() {
-        return this.f55353g;
+        return this.f55284g;
     }
 
     @Override // y0.e
@@ -82,20 +82,20 @@ public abstract class d extends e {
 
     @Override // y0.e
     public void h(int i10) {
-        this.f55354h = i10;
+        this.f55285h = i10;
     }
 
     public u0.p i() {
-        return this.f55355i;
+        return this.f55286i;
     }
 
     @Override // y0.e
     /* renamed from: j */
     public Function1 b() {
-        return this.f55352f;
+        return this.f55283f;
     }
 
     public void k(u0.p pVar) {
-        this.f55355i = pVar;
+        this.f55286i = pVar;
     }
 }

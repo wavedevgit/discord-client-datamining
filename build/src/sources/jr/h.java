@@ -1,83 +1,117 @@
 package jr;
 
-import android.text.SpannableStringBuilder;
-import android.text.Spanned;
-import android.text.TextUtils;
-import android.widget.TextView;
-import java.util.List;
-import jr.e;
+import android.view.MotionEvent;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-class h extends e {
+public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TextView.BufferType f30435a;
+    private float f31308a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final sv.d f30436b;
+    private float f31309b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final m f30437c;
+    private float f31310c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final g f30438d;
+    private float f31311d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f30439e;
+    private int f31312e = -1;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f30440f;
+    private int f31313f = -1;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public h(TextView.BufferType bufferType, e.b bVar, sv.d dVar, m mVar, g gVar, List list, boolean z10) {
-        this.f30435a = bufferType;
-        this.f30436b = dVar;
-        this.f30437c = mVar;
-        this.f30438d = gVar;
-        this.f30439e = list;
-        this.f30440f = z10;
+    /* renamed from: g  reason: collision with root package name */
+    private float f31314g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private boolean f31315h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private a f31316i;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public interface a {
+        boolean a(h hVar);
     }
 
-    @Override // jr.e
-    public void c(TextView textView, String str) {
-        d(textView, e(str));
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static class b implements a {
     }
 
-    @Override // jr.e
-    public void d(TextView textView, Spanned spanned) {
-        for (i iVar : this.f30439e) {
-            iVar.k(textView, spanned);
-        }
-        textView.setText(spanned, this.f30435a);
-        for (i iVar2 : this.f30439e) {
-            iVar2.c(textView);
-        }
+    public h(a aVar) {
+        this.f31316i = aVar;
     }
 
-    @Override // jr.e
-    public Spanned e(String str) {
-        Spanned g10 = g(f(str));
-        if (TextUtils.isEmpty(g10) && this.f30440f && !TextUtils.isEmpty(str)) {
-            return new SpannableStringBuilder(str);
-        }
-        return g10;
+    private float a(float f10, float f11, float f12, float f13, float f14, float f15, float f16, float f17) {
+        return b((float) Math.toDegrees((float) Math.atan2(f11 - f13, f10 - f12)), (float) Math.toDegrees((float) Math.atan2(f15 - f17, f14 - f16)));
     }
 
-    public rv.r f(String str) {
-        for (i iVar : this.f30439e) {
-            str = iVar.e(str);
+    private float b(float f10, float f11) {
+        float f12 = (f11 % 360.0f) - (f10 % 360.0f);
+        this.f31314g = f12;
+        if (f12 < -180.0f) {
+            this.f31314g = f12 + 360.0f;
+        } else if (f12 > 180.0f) {
+            this.f31314g = f12 - 360.0f;
         }
-        return this.f30436b.b(str);
+        return this.f31314g;
     }
 
-    public Spanned g(rv.r rVar) {
-        for (i iVar : this.f30439e) {
-            iVar.i(rVar);
+    public float c() {
+        return this.f31314g;
+    }
+
+    public boolean d(MotionEvent motionEvent) {
+        h hVar;
+        int actionMasked = motionEvent.getActionMasked();
+        if (actionMasked != 0) {
+            if (actionMasked != 1) {
+                if (actionMasked != 2) {
+                    if (actionMasked != 5) {
+                        if (actionMasked == 6) {
+                            this.f31313f = -1;
+                        }
+                    } else {
+                        this.f31308a = motionEvent.getX();
+                        this.f31309b = motionEvent.getY();
+                        this.f31313f = motionEvent.findPointerIndex(motionEvent.getPointerId(motionEvent.getActionIndex()));
+                        this.f31314g = 0.0f;
+                        this.f31315h = true;
+                    }
+                } else if (this.f31312e != -1 && this.f31313f != -1 && motionEvent.getPointerCount() > this.f31313f) {
+                    float x10 = motionEvent.getX(this.f31312e);
+                    float y10 = motionEvent.getY(this.f31312e);
+                    float x11 = motionEvent.getX(this.f31313f);
+                    float y11 = motionEvent.getY(this.f31313f);
+                    if (this.f31315h) {
+                        this.f31314g = 0.0f;
+                        this.f31315h = false;
+                        hVar = this;
+                    } else {
+                        a(this.f31308a, this.f31309b, this.f31310c, this.f31311d, x11, y11, x10, y10);
+                        hVar = this;
+                    }
+                    a aVar = hVar.f31316i;
+                    if (aVar != null) {
+                        aVar.a(this);
+                    }
+                    hVar.f31308a = x11;
+                    hVar.f31309b = y11;
+                    hVar.f31310c = x10;
+                    hVar.f31311d = y10;
+                }
+            } else {
+                this.f31312e = -1;
+            }
+        } else {
+            this.f31310c = motionEvent.getX();
+            this.f31311d = motionEvent.getY();
+            this.f31312e = motionEvent.findPointerIndex(motionEvent.getPointerId(0));
+            this.f31314g = 0.0f;
+            this.f31315h = true;
         }
-        l a10 = this.f30437c.a();
-        rVar.a(a10);
-        for (i iVar2 : this.f30439e) {
-            iVar2.h(rVar, a10);
-        }
-        return a10.builder().l();
+        return true;
     }
 }

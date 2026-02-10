@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.name.ClassId;
 public class c implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedPackageFragmentImpl f34124d;
+    private final DeserializedPackageFragmentImpl f34346d;
 
     public c(DeserializedPackageFragmentImpl deserializedPackageFragmentImpl) {
-        this.f34124d = deserializedPackageFragmentImpl;
+        this.f34346d = deserializedPackageFragmentImpl;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         SourceElement d10;
-        d10 = DeserializedPackageFragmentImpl.d(this.f34124d, (ClassId) obj);
+        d10 = DeserializedPackageFragmentImpl.d(this.f34346d, (ClassId) obj);
         return d10;
     }
 }

@@ -9,7 +9,7 @@ public final class m0 implements m {
     }
 
     @Override // androidx.lifecycle.m
-    public void k(LifecycleOwner source, Lifecycle.a event) {
+    public void i(LifecycleOwner source, Lifecycle.a event) {
         Intrinsics.checkNotNullParameter(source, "source");
         Intrinsics.checkNotNullParameter(event, "event");
         throw null;

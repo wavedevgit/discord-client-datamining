@@ -8,7 +8,7 @@ import java.util.Locale;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class j extends l implements m {
-    private static final j G = new j(p.f38781v);
+    private static final j G = new j(p.f37785v);
     private static final long serialVersionUID = 7807230388259573234L;
     private final p offset;
 
@@ -38,22 +38,22 @@ public final class j extends l implements m {
     }
 
     @Override // net.time4j.tz.l
-    public p A(qt.a aVar, qt.g gVar) {
+    public p A(zt.a aVar, zt.g gVar) {
         return this.offset;
     }
 
     @Override // net.time4j.tz.l
-    public p B(qt.f fVar) {
+    public p B(zt.f fVar) {
         return this.offset;
     }
 
     @Override // net.time4j.tz.l
     public o E() {
-        return l.f38719o;
+        return l.f37723o;
     }
 
     @Override // net.time4j.tz.l
-    public boolean I(qt.f fVar) {
+    public boolean I(zt.f fVar) {
         return false;
     }
 
@@ -63,7 +63,7 @@ public final class j extends l implements m {
     }
 
     @Override // net.time4j.tz.l
-    public boolean K(qt.a aVar, qt.g gVar) {
+    public boolean K(zt.a aVar, zt.g gVar) {
         return false;
     }
 
@@ -73,13 +73,13 @@ public final class j extends l implements m {
     }
 
     @Override // net.time4j.tz.m
-    public List a(qt.a aVar, qt.g gVar) {
-        return Collections.singletonList(this.offset);
+    public boolean a() {
+        return false;
     }
 
     @Override // net.time4j.tz.m
-    public boolean b() {
-        return false;
+    public q b(zt.f fVar) {
+        return null;
     }
 
     @Override // net.time4j.tz.m
@@ -88,13 +88,13 @@ public final class j extends l implements m {
     }
 
     @Override // net.time4j.tz.m
-    public q d(qt.f fVar) {
+    public q d(zt.a aVar, zt.g gVar) {
         return null;
     }
 
     @Override // net.time4j.tz.m
-    public q e(qt.a aVar, qt.g gVar) {
-        return null;
+    public List e(zt.a aVar, zt.g gVar) {
+        return Collections.singletonList(this.offset);
     }
 
     public boolean equals(Object obj) {

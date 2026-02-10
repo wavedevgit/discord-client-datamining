@@ -1,54 +1,54 @@
 package og;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class k7 implements zi.d {
+final class k7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k7 f41008a = new k7();
+    static final k7 f39334a = new k7();
 
     static {
-        c.b a10 = zi.c.a("screenName");
+        c.b a10 = bj.c.a("screenName");
         l2 l2Var = new l2();
         l2Var.a(1);
         a10.b(l2Var.b()).a();
-        c.b a11 = zi.c.a("sessionId");
+        c.b a11 = bj.c.a("sessionId");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
         a11.b(l2Var2.b()).a();
-        c.b a12 = zi.c.a("timestampMs");
+        c.b a12 = bj.c.a("timestampMs");
         l2 l2Var3 = new l2();
         l2Var3.a(3);
         a12.b(l2Var3.b()).a();
-        c.b a13 = zi.c.a("options");
+        c.b a13 = bj.c.a("options");
         l2 l2Var4 = new l2();
         l2Var4.a(4);
         a13.b(l2Var4.b()).a();
-        c.b a14 = zi.c.a("elementName");
+        c.b a14 = bj.c.a("elementName");
         l2 l2Var5 = new l2();
         l2Var5.a(5);
         a14.b(l2Var5.b()).a();
-        c.b a15 = zi.c.a("isAutoCaptureMode");
+        c.b a15 = bj.c.a("isAutoCaptureMode");
         l2 l2Var6 = new l2();
         l2Var6.a(6);
         a15.b(l2Var6.b()).a();
-        c.b a16 = zi.c.a("pageIndex");
+        c.b a16 = bj.c.a("pageIndex");
         l2 l2Var7 = new l2();
         l2Var7.a(7);
         a16.b(l2Var7.b()).a();
-        c.b a17 = zi.c.a("appliedToAllPages");
+        c.b a17 = bj.c.a("appliedToAllPages");
         l2 l2Var8 = new l2();
         l2Var8.a(8);
         a17.b(l2Var8.b()).a();
-        c.b a18 = zi.c.a("errorCode");
+        c.b a18 = bj.c.a("errorCode");
         l2 l2Var9 = new l2();
         l2Var9.a(9);
         a18.b(l2Var9.b()).a();
-        c.b a19 = zi.c.a("callerAppId");
+        c.b a19 = bj.c.a("callerAppId");
         l2 l2Var10 = new l2();
         l2Var10.a(10);
         a19.b(l2Var10.b()).a();
-        c.b a20 = zi.c.a("cleanUpStrokeSize");
+        c.b a20 = bj.c.a("cleanUpStrokeSize");
         l2 l2Var11 = new l2();
         l2Var11.a(11);
         a20.b(l2Var11.b()).a();
@@ -57,10 +57,10 @@ final class k7 implements zi.d {
     private k7() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

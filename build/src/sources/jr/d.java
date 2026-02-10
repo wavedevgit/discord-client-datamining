@@ -1,32 +1,100 @@
 package jr;
 
-import android.content.ActivityNotFoundException;
-import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.text.TextUtils;
-import android.util.Log;
-import android.view.View;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
+import android.graphics.Paint;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
+import com.facebook.react.views.text.internal.span.SetSpanOperation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class d implements c {
-    private static Uri b(String str) {
-        Uri parse = Uri.parse(str);
-        if (TextUtils.isEmpty(parse.getScheme())) {
-            return parse.buildUpon().scheme("https").build();
-        }
-        return parse;
+public class d extends Drawable {
+
+    /* renamed from: b  reason: collision with root package name */
+    private Bitmap f31299b;
+
+    /* renamed from: d  reason: collision with root package name */
+    private int f31301d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private int f31302e;
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Paint f31298a = new Paint(2);
+
+    /* renamed from: c  reason: collision with root package name */
+    private int f31300c = SetSpanOperation.SPAN_MAX_PRIORITY;
+
+    public d(Bitmap bitmap) {
+        b(bitmap);
     }
 
-    @Override // jr.c
-    public void a(View view, String str) {
-        Uri b10 = b(str);
-        Context context = view.getContext();
-        Intent intent = new Intent("android.intent.action.VIEW", b10);
-        intent.putExtra("com.android.browser.application_id", context.getPackageName());
-        try {
-            context.startActivity(intent);
-        } catch (ActivityNotFoundException unused) {
-            Log.w("LinkResolverDef", "Actvity was not found for the link: '" + str + "'");
+    public Bitmap a() {
+        return this.f31299b;
+    }
+
+    public void b(Bitmap bitmap) {
+        this.f31299b = bitmap;
+        if (bitmap != null) {
+            this.f31301d = bitmap.getWidth();
+            this.f31302e = this.f31299b.getHeight();
+            return;
         }
+        this.f31302e = 0;
+        this.f31301d = 0;
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public void draw(Canvas canvas) {
+        Bitmap bitmap = this.f31299b;
+        if (bitmap != null && !bitmap.isRecycled()) {
+            canvas.drawBitmap(this.f31299b, (Rect) null, getBounds(), this.f31298a);
+        }
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public int getAlpha() {
+        return this.f31300c;
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public int getIntrinsicHeight() {
+        return this.f31302e;
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public int getIntrinsicWidth() {
+        return this.f31301d;
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public int getMinimumHeight() {
+        return this.f31302e;
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public int getMinimumWidth() {
+        return this.f31301d;
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public int getOpacity() {
+        return -3;
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public void setAlpha(int i10) {
+        this.f31300c = i10;
+        this.f31298a.setAlpha(i10);
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public void setColorFilter(ColorFilter colorFilter) {
+        this.f31298a.setColorFilter(colorFilter);
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public void setFilterBitmap(boolean z10) {
+        this.f31298a.setFilterBitmap(z10);
     }
 }

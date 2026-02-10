@@ -1,57 +1,57 @@
 package qg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class j7 implements zi.d {
+final class j7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j7 f45933a = new j7();
+    static final j7 f44601a = new j7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f45934b;
+    private static final bj.c f44602b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f45935c;
+    private static final bj.c f44603c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f45936d;
+    private static final bj.c f44604d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final zi.c f45937e;
+    private static final bj.c f44605e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final zi.c f45938f;
+    private static final bj.c f44606f;
 
     static {
-        c.b a10 = zi.c.a("inferenceCommonLogEvent");
+        c.b a10 = bj.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f45934b = a10.b(s1Var.b()).a();
-        c.b a11 = zi.c.a("smartReplies");
+        f44602b = a10.b(s1Var.b()).a();
+        c.b a11 = bj.c.a("smartReplies");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f45935c = a11.b(s1Var2.b()).a();
-        c.b a12 = zi.c.a("resultStatus");
+        f44603c = a11.b(s1Var2.b()).a();
+        c.b a12 = bj.c.a("resultStatus");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f45936d = a12.b(s1Var3.b()).a();
-        c.b a13 = zi.c.a("suggestionsCount");
+        f44604d = a12.b(s1Var3.b()).a();
+        c.b a13 = bj.c.a("suggestionsCount");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f45937e = a13.b(s1Var4.b()).a();
-        c.b a14 = zi.c.a("blacklistErrorCode");
+        f44605e = a13.b(s1Var4.b()).a();
+        c.b a14 = bj.c.a("blacklistErrorCode");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f45938f = a14.b(s1Var5.b()).a();
+        f44606f = a14.b(s1Var5.b()).a();
     }
 
     private j7() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

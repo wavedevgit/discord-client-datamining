@@ -4,13 +4,13 @@ package com.google.android.gms.internal.fido;
 public final class k3 {
 
     /* renamed from: c  reason: collision with root package name */
-    static final k3 f14139c = new k3(false);
+    static final k3 f14716c = new k3(false);
 
     /* renamed from: a  reason: collision with root package name */
-    volatile Thread f14140a;
+    volatile Thread f14717a;
 
     /* renamed from: b  reason: collision with root package name */
-    volatile k3 f14141b;
+    volatile k3 f14718b;
 
     k3(boolean z10) {
     }
@@ -18,7 +18,7 @@ public final class k3 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public k3() {
         c3 c3Var;
-        c3Var = l3.f14154q;
+        c3Var = l3.f14731q;
         c3Var.d(this, Thread.currentThread());
     }
 }

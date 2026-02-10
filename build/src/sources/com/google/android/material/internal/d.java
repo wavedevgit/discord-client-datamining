@@ -24,13 +24,13 @@ public abstract class d extends i0 {
         this.D = 119;
         this.E = true;
         this.F = false;
-        TypedArray i11 = l.i(context, attributeSet, bh.k.f6914k2, i10, 0, new int[0]);
-        this.D = i11.getInt(bh.k.f6934m2, this.D);
-        Drawable drawable = i11.getDrawable(bh.k.f6924l2);
+        TypedArray i11 = m.i(context, attributeSet, bh.l.f7123r2, i10, 0, new int[0]);
+        this.D = i11.getInt(bh.l.f7141t2, this.D);
+        Drawable drawable = i11.getDrawable(bh.l.f7132s2);
         if (drawable != null) {
             setForeground(drawable);
         }
-        this.E = i11.getBoolean(bh.k.f6943n2, true);
+        this.E = i11.getBoolean(bh.l.f7150u2, true);
         i11.recycle();
     }
 

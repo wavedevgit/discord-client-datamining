@@ -23,13 +23,13 @@ import zg.f;
 public class HiddenActivity extends Activity {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f3656i = new a(null);
+    public static final a f3662i = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private ResultReceiver f3657d;
+    private ResultReceiver f3663d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f3658e;
+    private boolean f3664e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -46,21 +46,21 @@ public class HiddenActivity extends Activity {
     public static final class b extends Lambda implements Function1 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f3660e;
+        final /* synthetic */ int f3666e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(int i10) {
             super(1);
-            this.f3660e = i10;
+            this.f3666e = i10;
         }
 
         public final void a(we.b bVar) {
             try {
-                HiddenActivity.this.f3658e = true;
-                HiddenActivity.this.startIntentSenderForResult(bVar.b().getIntentSender(), this.f3660e, null, 0, 0, 0, null);
+                HiddenActivity.this.f3664e = true;
+                HiddenActivity.this.startIntentSenderForResult(bVar.b().getIntentSender(), this.f3666e, null, 0, 0, 0, null);
             } catch (IntentSender.SendIntentException e10) {
                 HiddenActivity hiddenActivity = HiddenActivity.this;
-                ResultReceiver resultReceiver = hiddenActivity.f3657d;
+                ResultReceiver resultReceiver = hiddenActivity.f3663d;
                 Intrinsics.checkNotNull(resultReceiver);
                 hiddenActivity.y(resultReceiver, "GET_UNKNOWN", "During begin sign in, one tap ui intent sender failure: " + e10.getMessage());
             }
@@ -69,7 +69,7 @@ public class HiddenActivity extends Activity {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((we.b) obj);
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
     }
 
@@ -78,21 +78,21 @@ public class HiddenActivity extends Activity {
     public static final class c extends Lambda implements Function1 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f3662e;
+        final /* synthetic */ int f3668e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(int i10) {
             super(1);
-            this.f3662e = i10;
+            this.f3668e = i10;
         }
 
         public final void a(g gVar) {
             try {
-                HiddenActivity.this.f3658e = true;
-                HiddenActivity.this.startIntentSenderForResult(gVar.b().getIntentSender(), this.f3662e, null, 0, 0, 0, null);
+                HiddenActivity.this.f3664e = true;
+                HiddenActivity.this.startIntentSenderForResult(gVar.b().getIntentSender(), this.f3668e, null, 0, 0, 0, null);
             } catch (IntentSender.SendIntentException e10) {
                 HiddenActivity hiddenActivity = HiddenActivity.this;
-                ResultReceiver resultReceiver = hiddenActivity.f3657d;
+                ResultReceiver resultReceiver = hiddenActivity.f3663d;
                 Intrinsics.checkNotNull(resultReceiver);
                 hiddenActivity.y(resultReceiver, "CREATE_UNKNOWN", "During save password, found UI intent sender failure: " + e10.getMessage());
             }
@@ -101,7 +101,7 @@ public class HiddenActivity extends Activity {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((g) obj);
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
     }
 
@@ -110,22 +110,22 @@ public class HiddenActivity extends Activity {
     public static final class d extends Lambda implements Function1 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f3664e;
+        final /* synthetic */ int f3670e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(int i10) {
             super(1);
-            this.f3664e = i10;
+            this.f3670e = i10;
         }
 
         public final void a(PendingIntent result) {
             Intrinsics.checkNotNullParameter(result, "result");
             try {
-                HiddenActivity.this.f3658e = true;
-                HiddenActivity.this.startIntentSenderForResult(result.getIntentSender(), this.f3664e, null, 0, 0, 0, null);
+                HiddenActivity.this.f3664e = true;
+                HiddenActivity.this.startIntentSenderForResult(result.getIntentSender(), this.f3670e, null, 0, 0, 0, null);
             } catch (IntentSender.SendIntentException e10) {
                 HiddenActivity hiddenActivity = HiddenActivity.this;
-                ResultReceiver resultReceiver = hiddenActivity.f3657d;
+                ResultReceiver resultReceiver = hiddenActivity.f3663d;
                 Intrinsics.checkNotNull(resultReceiver);
                 hiddenActivity.y(resultReceiver, "CREATE_UNKNOWN", "During public key credential, found IntentSender failure on public key creation: " + e10.getMessage());
             }
@@ -134,7 +134,7 @@ public class HiddenActivity extends Activity {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((PendingIntent) obj);
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
     }
 
@@ -143,21 +143,21 @@ public class HiddenActivity extends Activity {
     public static final class e extends Lambda implements Function1 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f3666e;
+        final /* synthetic */ int f3672e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(int i10) {
             super(1);
-            this.f3666e = i10;
+            this.f3672e = i10;
         }
 
         public final void a(PendingIntent pendingIntent) {
             try {
-                HiddenActivity.this.f3658e = true;
-                HiddenActivity.this.startIntentSenderForResult(pendingIntent.getIntentSender(), this.f3666e, null, 0, 0, 0, null);
+                HiddenActivity.this.f3664e = true;
+                HiddenActivity.this.startIntentSenderForResult(pendingIntent.getIntentSender(), this.f3672e, null, 0, 0, 0, null);
             } catch (IntentSender.SendIntentException e10) {
                 HiddenActivity hiddenActivity = HiddenActivity.this;
-                ResultReceiver resultReceiver = hiddenActivity.f3657d;
+                ResultReceiver resultReceiver = hiddenActivity.f3663d;
                 Intrinsics.checkNotNull(resultReceiver);
                 hiddenActivity.y(resultReceiver, "GET_UNKNOWN", "During get sign-in intent, one tap ui intent sender failure: " + e10.getMessage());
             }
@@ -166,7 +166,7 @@ public class HiddenActivity extends Activity {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((PendingIntent) obj);
-            return Unit.f31765a;
+            return Unit.f31987a;
         }
     }
 
@@ -206,12 +206,12 @@ public class HiddenActivity extends Activity {
     public static final void n(HiddenActivity hiddenActivity, Exception e10) {
         String str;
         Intrinsics.checkNotNullParameter(e10, "e");
-        if ((e10 instanceof ff.b) && m2.a.f36731b.d().contains(Integer.valueOf(((ff.b) e10).b()))) {
+        if ((e10 instanceof ff.b) && m2.a.f36106b.d().contains(Integer.valueOf(((ff.b) e10).b()))) {
             str = "GET_INTERRUPTED";
         } else {
             str = "GET_NO_CREDENTIALS";
         }
-        ResultReceiver resultReceiver = hiddenActivity.f3657d;
+        ResultReceiver resultReceiver = hiddenActivity.f3663d;
         Intrinsics.checkNotNull(resultReceiver);
         hiddenActivity.y(resultReceiver, str, "During begin sign in, failure response from one tap: " + e10.getMessage());
     }
@@ -252,12 +252,12 @@ public class HiddenActivity extends Activity {
     public static final void q(HiddenActivity hiddenActivity, Exception e10) {
         String str;
         Intrinsics.checkNotNullParameter(e10, "e");
-        if ((e10 instanceof ff.b) && m2.a.f36731b.d().contains(Integer.valueOf(((ff.b) e10).b()))) {
+        if ((e10 instanceof ff.b) && m2.a.f36106b.d().contains(Integer.valueOf(((ff.b) e10).b()))) {
             str = "CREATE_INTERRUPTED";
         } else {
             str = "CREATE_UNKNOWN";
         }
-        ResultReceiver resultReceiver = hiddenActivity.f3657d;
+        ResultReceiver resultReceiver = hiddenActivity.f3663d;
         Intrinsics.checkNotNull(resultReceiver);
         hiddenActivity.y(resultReceiver, str, "During save password, found password failure response from one tap " + e10.getMessage());
     }
@@ -298,12 +298,12 @@ public class HiddenActivity extends Activity {
     public static final void t(HiddenActivity hiddenActivity, Exception e10) {
         String str;
         Intrinsics.checkNotNullParameter(e10, "e");
-        if ((e10 instanceof ff.b) && m2.a.f36731b.d().contains(Integer.valueOf(((ff.b) e10).b()))) {
+        if ((e10 instanceof ff.b) && m2.a.f36106b.d().contains(Integer.valueOf(((ff.b) e10).b()))) {
             str = "CREATE_INTERRUPTED";
         } else {
             str = "CREATE_UNKNOWN";
         }
-        ResultReceiver resultReceiver = hiddenActivity.f3657d;
+        ResultReceiver resultReceiver = hiddenActivity.f3663d;
         Intrinsics.checkNotNull(resultReceiver);
         hiddenActivity.y(resultReceiver, str, "During create public key credential, fido registration failure: " + e10.getMessage());
     }
@@ -344,36 +344,36 @@ public class HiddenActivity extends Activity {
     public static final void w(HiddenActivity hiddenActivity, Exception e10) {
         String str;
         Intrinsics.checkNotNullParameter(e10, "e");
-        if ((e10 instanceof ff.b) && m2.a.f36731b.d().contains(Integer.valueOf(((ff.b) e10).b()))) {
+        if ((e10 instanceof ff.b) && m2.a.f36106b.d().contains(Integer.valueOf(((ff.b) e10).b()))) {
             str = "GET_INTERRUPTED";
         } else {
             str = "GET_NO_CREDENTIALS";
         }
-        ResultReceiver resultReceiver = hiddenActivity.f3657d;
+        ResultReceiver resultReceiver = hiddenActivity.f3663d;
         Intrinsics.checkNotNull(resultReceiver);
         hiddenActivity.y(resultReceiver, str, "During get sign-in intent, failure response from one tap: " + e10.getMessage());
     }
 
     private final void x(Bundle bundle) {
         if (bundle != null) {
-            this.f3658e = bundle.getBoolean("androidx.credentials.playservices.AWAITING_RESULT", false);
+            this.f3664e = bundle.getBoolean("androidx.credentials.playservices.AWAITING_RESULT", false);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void y(ResultReceiver resultReceiver, String str, String str2) {
-        m2.a.f36731b.e(resultReceiver, str, str2);
+        m2.a.f36106b.e(resultReceiver, str, str2);
         finish();
     }
 
     @Override // android.app.Activity
     protected void onActivityResult(int i10, int i11, Intent intent) {
         super.onActivityResult(i10, i11, intent);
-        ResultReceiver resultReceiver = this.f3657d;
+        ResultReceiver resultReceiver = this.f3663d;
         if (resultReceiver != null) {
-            m2.a.f36731b.f(resultReceiver, i10, i11, intent);
+            m2.a.f36106b.f(resultReceiver, i10, i11, intent);
         }
-        this.f3658e = false;
+        this.f3664e = false;
         finish();
     }
 
@@ -383,12 +383,12 @@ public class HiddenActivity extends Activity {
         overridePendingTransition(0, 0);
         String stringExtra = getIntent().getStringExtra("TYPE");
         ResultReceiver resultReceiver = (ResultReceiver) getIntent().getParcelableExtra("RESULT_RECEIVER");
-        this.f3657d = resultReceiver;
+        this.f3663d = resultReceiver;
         if (resultReceiver == null) {
             finish();
         }
         x(bundle);
-        if (this.f3658e) {
+        if (this.f3664e) {
             return;
         }
         if (stringExtra != null) {
@@ -426,7 +426,7 @@ public class HiddenActivity extends Activity {
     @Override // android.app.Activity
     protected void onSaveInstanceState(Bundle outState) {
         Intrinsics.checkNotNullParameter(outState, "outState");
-        outState.putBoolean("androidx.credentials.playservices.AWAITING_RESULT", this.f3658e);
+        outState.putBoolean("androidx.credentials.playservices.AWAITING_RESULT", this.f3664e);
         super.onSaveInstanceState(outState);
     }
 }

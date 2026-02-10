@@ -9,7 +9,7 @@ import kotlin.reflect.KClass;
 public final class d implements ViewModelProvider.Factory {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final d f36747b = new d();
+    public static final d f36122b = new d();
 
     private d() {
     }
@@ -18,6 +18,6 @@ public final class d implements ViewModelProvider.Factory {
     public n0 b(KClass modelClass, CreationExtras extras) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
         Intrinsics.checkNotNullParameter(extras, "extras");
-        return e.f36748a.a(es.a.b(modelClass));
+        return e.f36123a.a(ns.a.b(modelClass));
     }
 }

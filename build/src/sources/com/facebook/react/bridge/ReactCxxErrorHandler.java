@@ -30,7 +30,7 @@ public final class ReactCxxErrorHandler {
                 method.invoke(handlerObject, new Object[]{new Exception(str)});
             } catch (Exception e10) {
                 q8.a.n("ReactCxxErrorHandler", "Failed to invoke error handler function", e10);
-                Unit unit = Unit.f31765a;
+                Unit unit = Unit.f31987a;
             }
         }
     }

@@ -1,26 +1,9 @@
 package ct;
 
-import java.util.ArrayList;
-import java.util.List;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.coroutines.Continuation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d {
+public abstract class d {
+    public abstract boolean a(Object obj);
 
-    /* renamed from: a  reason: collision with root package name */
-    private final List f20216a = new ArrayList();
-
-    public final void a(o format) {
-        Intrinsics.checkNotNullParameter(format, "format");
-        if (format instanceof s) {
-            this.f20216a.add(format);
-        } else if (format instanceof h) {
-            for (s sVar : ((h) format).c()) {
-                this.f20216a.add(sVar);
-            }
-        }
-    }
-
-    public final h b() {
-        return new h(this.f20216a);
-    }
+    public abstract Continuation[] b(Object obj);
 }

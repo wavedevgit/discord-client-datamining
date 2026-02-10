@@ -14,29 +14,29 @@ import rc.g;
 public abstract class e implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayDeque f6578a = new ArrayDeque();
+    private final ArrayDeque f6684a = new ArrayDeque();
 
     /* renamed from: b  reason: collision with root package name */
-    private final ArrayDeque f6579b;
+    private final ArrayDeque f6685b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final PriorityQueue f6580c;
+    private final PriorityQueue f6686c;
 
     /* renamed from: d  reason: collision with root package name */
-    private b f6581d;
+    private b f6687d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f6582e;
+    private long f6688e;
 
     /* renamed from: f  reason: collision with root package name */
-    private long f6583f;
+    private long f6689f;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class b extends k implements Comparable {
 
         /* renamed from: u  reason: collision with root package name */
-        private long f6584u;
+        private long f6690u;
 
         private b() {
         }
@@ -50,9 +50,9 @@ public abstract class e implements h {
                 }
                 return 1;
             }
-            long j10 = this.f47777p - bVar.f47777p;
+            long j10 = this.f46231p - bVar.f46231p;
             if (j10 == 0) {
-                j10 = this.f6584u - bVar.f6584u;
+                j10 = this.f6690u - bVar.f6690u;
                 if (j10 == 0) {
                     return 0;
                 }
@@ -69,42 +69,42 @@ public abstract class e implements h {
     public static final class c extends l {
 
         /* renamed from: q  reason: collision with root package name */
-        private g.a f6585q;
+        private g.a f6691q;
 
         public c(g.a aVar) {
-            this.f6585q = aVar;
+            this.f6691q = aVar;
         }
 
         @Override // rc.g
         public final void t() {
-            this.f6585q.a(this);
+            this.f6691q.a(this);
         }
     }
 
     public e() {
         for (int i10 = 0; i10 < 10; i10++) {
-            this.f6578a.add(new b());
+            this.f6684a.add(new b());
         }
-        this.f6579b = new ArrayDeque();
+        this.f6685b = new ArrayDeque();
         for (int i11 = 0; i11 < 2; i11++) {
-            this.f6579b.add(new c(new g.a() { // from class: be.d
+            this.f6685b.add(new c(new g.a() { // from class: be.d
                 @Override // rc.g.a
                 public final void a(g gVar) {
                     e.this.n((e.c) gVar);
                 }
             }));
         }
-        this.f6580c = new PriorityQueue();
+        this.f6686c = new PriorityQueue();
     }
 
     private void m(b bVar) {
         bVar.h();
-        this.f6578a.add(bVar);
+        this.f6684a.add(bVar);
     }
 
     @Override // ae.h
     public void a(long j10) {
-        this.f6582e = j10;
+        this.f6688e = j10;
     }
 
     protected abstract ae.g e();
@@ -113,15 +113,15 @@ public abstract class e implements h {
 
     @Override // rc.d
     public void flush() {
-        this.f6583f = 0L;
-        this.f6582e = 0L;
-        while (!this.f6580c.isEmpty()) {
-            m((b) w0.j((b) this.f6580c.poll()));
+        this.f6689f = 0L;
+        this.f6688e = 0L;
+        while (!this.f6686c.isEmpty()) {
+            m((b) w0.j((b) this.f6686c.poll()));
         }
-        b bVar = this.f6581d;
+        b bVar = this.f6687d;
         if (bVar != null) {
             m(bVar);
-            this.f6581d = null;
+            this.f6687d = null;
         }
     }
 
@@ -129,30 +129,30 @@ public abstract class e implements h {
     /* renamed from: g */
     public k d() {
         boolean z10;
-        if (this.f6581d == null) {
+        if (this.f6687d == null) {
             z10 = true;
         } else {
             z10 = false;
         }
         oe.a.g(z10);
-        if (this.f6578a.isEmpty()) {
+        if (this.f6684a.isEmpty()) {
             return null;
         }
-        b bVar = (b) this.f6578a.pollFirst();
-        this.f6581d = bVar;
+        b bVar = (b) this.f6684a.pollFirst();
+        this.f6687d = bVar;
         return bVar;
     }
 
     @Override // rc.d
     /* renamed from: h */
     public l b() {
-        if (this.f6579b.isEmpty()) {
+        if (this.f6685b.isEmpty()) {
             return null;
         }
-        while (!this.f6580c.isEmpty() && ((b) w0.j((b) this.f6580c.peek())).f47777p <= this.f6582e) {
-            b bVar = (b) w0.j((b) this.f6580c.poll());
+        while (!this.f6686c.isEmpty() && ((b) w0.j((b) this.f6686c.peek())).f46231p <= this.f6688e) {
+            b bVar = (b) w0.j((b) this.f6686c.poll());
             if (bVar.n()) {
-                l lVar = (l) w0.j((l) this.f6579b.pollFirst());
+                l lVar = (l) w0.j((l) this.f6685b.pollFirst());
                 lVar.g(4);
                 m(bVar);
                 return lVar;
@@ -160,8 +160,8 @@ public abstract class e implements h {
             f(bVar);
             if (k()) {
                 ae.g e10 = e();
-                l lVar2 = (l) w0.j((l) this.f6579b.pollFirst());
-                lVar2.u(bVar.f47777p, e10, LongCompanionObject.MAX_VALUE);
+                l lVar2 = (l) w0.j((l) this.f6685b.pollFirst());
+                lVar2.u(bVar.f46231p, e10, LongCompanionObject.MAX_VALUE);
                 m(bVar);
                 return lVar2;
             }
@@ -172,12 +172,12 @@ public abstract class e implements h {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final l i() {
-        return (l) this.f6579b.pollFirst();
+        return (l) this.f6685b.pollFirst();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final long j() {
-        return this.f6582e;
+        return this.f6688e;
     }
 
     protected abstract boolean k();
@@ -186,7 +186,7 @@ public abstract class e implements h {
     /* renamed from: l */
     public void c(k kVar) {
         boolean z10;
-        if (kVar == this.f6581d) {
+        if (kVar == this.f6687d) {
             z10 = true;
         } else {
             z10 = false;
@@ -196,18 +196,18 @@ public abstract class e implements h {
         if (bVar.m()) {
             m(bVar);
         } else {
-            long j10 = this.f6583f;
-            this.f6583f = 1 + j10;
-            bVar.f6584u = j10;
-            this.f6580c.add(bVar);
+            long j10 = this.f6689f;
+            this.f6689f = 1 + j10;
+            bVar.f6690u = j10;
+            this.f6686c.add(bVar);
         }
-        this.f6581d = null;
+        this.f6687d = null;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void n(l lVar) {
         lVar.h();
-        this.f6579b.add(lVar);
+        this.f6685b.add(lVar);
     }
 
     @Override // rc.d

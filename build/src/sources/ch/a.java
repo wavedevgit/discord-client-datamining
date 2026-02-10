@@ -7,19 +7,19 @@ import android.view.animation.LinearInterpolator;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final TimeInterpolator f7595a = new LinearInterpolator();
+    public static final TimeInterpolator f8276a = new LinearInterpolator();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final TimeInterpolator f7596b = new h3.b();
+    public static final TimeInterpolator f8277b = new h3.b();
 
     /* renamed from: c  reason: collision with root package name */
-    public static final TimeInterpolator f7597c = new h3.a();
+    public static final TimeInterpolator f8278c = new h3.a();
 
     /* renamed from: d  reason: collision with root package name */
-    public static final TimeInterpolator f7598d = new h3.c();
+    public static final TimeInterpolator f8279d = new h3.c();
 
     /* renamed from: e  reason: collision with root package name */
-    public static final TimeInterpolator f7599e = new DecelerateInterpolator();
+    public static final TimeInterpolator f8280e = new DecelerateInterpolator();
 
     public static float a(float f10, float f11, float f12) {
         return f10 + (f12 * (f11 - f10));

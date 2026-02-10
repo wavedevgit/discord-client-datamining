@@ -20,40 +20,40 @@ import r3.r;
 public final class r {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f47574a;
+    private final String f46028a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final o f47575b;
+    private final o f46029b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Executor f47576c;
+    private final Executor f46030c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f47577d;
+    private final Context f46031d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f47578e;
+    private int f46032e;
 
     /* renamed from: f  reason: collision with root package name */
-    public o.c f47579f;
+    public o.c f46033f;
 
     /* renamed from: g  reason: collision with root package name */
-    private k f47580g;
+    private k f46034g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final j f47581h;
+    private final j f46035h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final AtomicBoolean f47582i;
+    private final AtomicBoolean f46036i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final ServiceConnection f47583j;
+    private final ServiceConnection f46037j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Runnable f47584k;
+    private final Runnable f46038k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Runnable f47585l;
+    private final Runnable f46039l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends o.c {
@@ -76,7 +76,7 @@ public final class r {
                         int c10 = r.this.c();
                         Object[] array = tables.toArray(new String[0]);
                         Intrinsics.checkNotNull(array, "null cannot be cast to non-null type kotlin.Array<T of kotlin.collections.ArraysKt__ArraysJVMKt.toTypedArray>");
-                        h10.Y(c10, (String[]) array);
+                        h10.a0(c10, (String[]) array);
                     }
                 } catch (RemoteException e10) {
                     Log.w("ROOM", "Cannot broadcast invalidation", e10);
@@ -91,21 +91,21 @@ public final class r {
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public static final void h(r this$0, String[] tables) {
+        public static final void i(r this$0, String[] tables) {
             Intrinsics.checkNotNullParameter(this$0, "this$0");
             Intrinsics.checkNotNullParameter(tables, "$tables");
             this$0.e().j((String[]) Arrays.copyOf(tables, tables.length));
         }
 
         @Override // r3.j
-        public void p(final String[] tables) {
+        public void s(final String[] tables) {
             Intrinsics.checkNotNullParameter(tables, "tables");
             Executor d10 = r.this.d();
             final r rVar = r.this;
             d10.execute(new Runnable() { // from class: r3.s
                 @Override // java.lang.Runnable
                 public final void run() {
-                    r.b.h(r.this, tables);
+                    r.b.i(r.this, tables);
                 }
             });
         }
@@ -138,22 +138,22 @@ public final class r {
         Intrinsics.checkNotNullParameter(serviceIntent, "serviceIntent");
         Intrinsics.checkNotNullParameter(invalidationTracker, "invalidationTracker");
         Intrinsics.checkNotNullParameter(executor, "executor");
-        this.f47574a = name;
-        this.f47575b = invalidationTracker;
-        this.f47576c = executor;
+        this.f46028a = name;
+        this.f46029b = invalidationTracker;
+        this.f46030c = executor;
         Context applicationContext = context.getApplicationContext();
-        this.f47577d = applicationContext;
-        this.f47581h = new b();
-        this.f47582i = new AtomicBoolean(false);
+        this.f46031d = applicationContext;
+        this.f46035h = new b();
+        this.f46036i = new AtomicBoolean(false);
         c cVar = new c();
-        this.f47583j = cVar;
-        this.f47584k = new Runnable() { // from class: r3.p
+        this.f46037j = cVar;
+        this.f46038k = new Runnable() { // from class: r3.p
             @Override // java.lang.Runnable
             public final void run() {
                 r.n(r.this);
             }
         };
-        this.f47585l = new Runnable() { // from class: r3.q
+        this.f46039l = new Runnable() { // from class: r3.q
             @Override // java.lang.Runnable
             public final void run() {
                 r.k(r.this);
@@ -168,17 +168,17 @@ public final class r {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void k(r this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        this$0.f47575b.m(this$0.f());
+        this$0.f46029b.m(this$0.f());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void n(r this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         try {
-            k kVar = this$0.f47580g;
+            k kVar = this$0.f46034g;
             if (kVar != null) {
-                this$0.f47578e = kVar.D(this$0.f47581h, this$0.f47574a);
-                this$0.f47575b.b(this$0.f());
+                this$0.f46032e = kVar.D(this$0.f46035h, this$0.f46028a);
+                this$0.f46029b.b(this$0.f());
             }
         } catch (RemoteException e10) {
             Log.w("ROOM", "Cannot register multi-instance invalidation callback", e10);
@@ -186,19 +186,19 @@ public final class r {
     }
 
     public final int c() {
-        return this.f47578e;
+        return this.f46032e;
     }
 
     public final Executor d() {
-        return this.f47576c;
+        return this.f46030c;
     }
 
     public final o e() {
-        return this.f47575b;
+        return this.f46029b;
     }
 
     public final o.c f() {
-        o.c cVar = this.f47579f;
+        o.c cVar = this.f46033f;
         if (cVar != null) {
             return cVar;
         }
@@ -207,27 +207,27 @@ public final class r {
     }
 
     public final Runnable g() {
-        return this.f47585l;
+        return this.f46039l;
     }
 
     public final k h() {
-        return this.f47580g;
+        return this.f46034g;
     }
 
     public final Runnable i() {
-        return this.f47584k;
+        return this.f46038k;
     }
 
     public final AtomicBoolean j() {
-        return this.f47582i;
+        return this.f46036i;
     }
 
     public final void l(o.c cVar) {
         Intrinsics.checkNotNullParameter(cVar, "<set-?>");
-        this.f47579f = cVar;
+        this.f46033f = cVar;
     }
 
     public final void m(k kVar) {
-        this.f47580g = kVar;
+        this.f46034g = kVar;
     }
 }

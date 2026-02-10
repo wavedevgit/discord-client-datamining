@@ -1,149 +1,221 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
+    var6 = require;
+    var3 = metroImportDefault;
+    var2 = exports;
+    var4 = dependencyMap;
     var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var2 = {};
+    var7 = var0.Object;
+    var5 = var7.defineProperty;
+    var1 = {};
     var0 = true;
-    var2.value = var0;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var2);
-    var2 = {
-        'meet': 0,
-        'slice': 1,
-        'none': 2
-    };
-    var _closure1_slot0 = var2;
-    var6 = ['xMinYMin', 'xMidYMin', 'xMaxYMin', 'xMinYMid', 'xMidYMid', 'xMaxYMid', 'xMinYMax', 'xMidYMax', 'xMaxYMax', 'none'];
-    var5 = var6.reduce;
-    var4 = function(arg0, arg1) { // Environment: var3
-        var0 = arg0;
-        var1 = arg1;
-        var0[var1] = var1;
-        return var0;
-    };
-    var0 = {};
-    var0 = var5.bind(var6)(var4, var0);
-    var _closure1_slot1 = var0;
-    var4 = /\s+/;
-    var _closure1_slot2 = var4;
-    var3 = function arg0() {
-        _fun49024: for (var _fun49024_ip = 0;;) switch (_fun49024_ip) {
-            case 0:
-                var0 = arg0;
-                var3 = var0.viewBox;
-                var4 = var0.preserveAspectRatio;
-                if (var3) {
-                    _fun49024_ip = 22;
-                    continue _fun49024
-                }
-            case 18:
-                var0 = null;
-                return var0;
-            case 22:
-                var0 = global;
-                var2 = var0.Array;
-                var1 = var2.isArray;
-                var1 = var1.bind(var2)(var3);
-                var5 = var3;
-                if (var1) {
-                    _fun49024_ip = 104;
-                    continue _fun49024
-                }
-            case 46:
-                var1 = var3.trim;
-                var7 = var1.bind(var3)();
-                var6 = var7.replace;
-                var2 = /,/g;
-                var1 = ' ';
-                var6 = var6.bind(var7)(var2, var1);
-                var2 = var6.split;
-                var1 = _closure1_slot2;
-                var5 = var2.bind(var6)(var1);
-            case 104:
-                var2 = var5.map;
-                var1 = var0.Number;
-                var6 = var2.bind(var5)(var1);
-                var2 = var6.length;
-                var1 = 4;
-                if (!(var1 === var2)) {
-                    _fun49024_ip = 296;
-                    continue _fun49024
-                }
-            case 135:
-                var2 = var6.some;
-                var1 = var0.isNaN;
-                var1 = var2.bind(var6)(var1);
-                if (var1) {
-                    _fun49024_ip = 296;
-                    continue _fun49024
-                }
-            case 158:
-                if (var4) {
-                    _fun49024_ip = 167;
-                    continue _fun49024
-                }
-            case 161:
-                var1 = new Array(0);
-                _fun49024_ip = 194;
-                continue _fun49024;
-            case 167:
-                var2 = var4.trim;
-                var5 = var2.bind(var4)();
-                var4 = var5.split;
-                var2 = _closure1_slot2;
-                var1 = var4.bind(var5)(var2);
-            case 194:
-                var4 = 0;
-                var7 = var1[var4];
-                var2 = 1;
-                var5 = var1[var2];
-                var1 = {};
-                var8 = var6[var4];
-                var1.minX = var8;
-                var2 = var6[var2];
-                var1.minY = var2;
-                var2 = 2;
-                var2 = var6[var2];
-                var1.vbWidth = var2;
-                var2 = 3;
-                var2 = var6[var2];
-                var1.vbHeight = var2;
-                var6 = _closure1_slot1;
-                var6 = var6[var7];
-                if (var6) {
-                    _fun49024_ip = 271;
-                    continue _fun49024
-                }
-            case 265:
-                var6 = 'xMidYMid';
-            case 271:
-                var1.align = var6;
-                var2 = _closure1_slot0;
-                var2 = var2[var5];
-                if (var2) {
-                    _fun49024_ip = 289;
-                    continue _fun49024
-                }
-            case 287:
-                var2 = 0;
-            case 289:
-                var1.meetOrSlice = var2;
-                return var1;
-            case 296:
-                var2 = var0.console;
-                var1 = var2.warn;
-                var0 = 'Invalid `viewBox` prop:';
-                var0 = var0 + var3;
-                var0 = var1.bind(var2)(var0);
-                var0 = null;
-                return var0;
-        }
-    };
-    var1.default = var3;
-    var1.meetOrSliceTypes = var2;
-    var1.alignEnum = var0;
+    var0 = var5.bind(var7)(var2, var0, var1);
+    var1 = 0;
+    var5 = var4[var1];
     var0 = undefined;
+    var5 = var3.bind(var0)(var5);
+    var2.default = var5;
+    var5 = 1;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Circle = var5;
+    var5 = 2;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.ClipPath = var5;
+    var5 = 3;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Defs = var5;
+    var5 = 4;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Ellipse = var5;
+    var5 = 5;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeBlend = var5;
+    var5 = 6;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeColorMatrix = var5;
+    var5 = 7;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeComponentTransfer = var5;
+    var5 = 8;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeComposite = var5;
+    var5 = 9;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeConvolveMatrix = var5;
+    var5 = 10;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeDiffuseLighting = var5;
+    var5 = 11;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeDisplacementMap = var5;
+    var5 = 12;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeDistantLight = var5;
+    var5 = 13;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeDropShadow = var5;
+    var5 = 14;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeFlood = var5;
+    var5 = 15;
+    var7 = var4[var5];
+    var7 = var6.bind(var0)(var7);
+    var7 = var7.FeFuncA;
+    var2.FeFuncA = var7;
+    var7 = var4[var5];
+    var7 = var6.bind(var0)(var7);
+    var7 = var7.FeFuncB;
+    var2.FeFuncB = var7;
+    var7 = var4[var5];
+    var7 = var6.bind(var0)(var7);
+    var7 = var7.FeFuncG;
+    var2.FeFuncG = var7;
+    var5 = var4[var5];
+    var5 = var6.bind(var0)(var5);
+    var5 = var5.FeFuncR;
+    var2.FeFuncR = var5;
+    var5 = 16;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeGaussianBlur = var5;
+    var5 = 17;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeImage = var5;
+    var5 = 18;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeMerge = var5;
+    var5 = 19;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeMergeNode = var5;
+    var5 = 20;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeMorphology = var5;
+    var5 = 21;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeOffset = var5;
+    var5 = 22;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FePointLight = var5;
+    var5 = 23;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeSpecularLighting = var5;
+    var5 = 24;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeSpotLight = var5;
+    var5 = 25;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeTile = var5;
+    var5 = 26;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.FeTurbulence = var5;
+    var5 = 27;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Filter = var5;
+    var5 = 28;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.ForeignObject = var5;
+    var5 = 29;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.G = var5;
+    var5 = 30;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Image = var5;
+    var5 = 31;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Line = var5;
+    var5 = 32;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.LinearGradient = var5;
+    var5 = 33;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Marker = var5;
+    var5 = 34;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Mask = var5;
+    var5 = 35;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Path = var5;
+    var5 = 36;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Pattern = var5;
+    var5 = 37;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Polygon = var5;
+    var5 = 38;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Polyline = var5;
+    var5 = 39;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.RadialGradient = var5;
+    var5 = 40;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Rect = var5;
+    var5 = 41;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var2.Stop = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.Svg = var1;
+    var1 = 42;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.Symbol = var1;
+    var1 = 43;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.Text = var1;
+    var1 = 44;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.TextPath = var1;
+    var1 = 45;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.TSpan = var1;
+    var1 = 46;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.Use = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5527, 5551, 5553, 5555, 5557, 5559, 5563, 5565, 5566, 5568, 5569, 5570, 5571, 5572, 5577, 5582, 5573, 5583, 5579, 5581, 5584, 5575, 5585, 5586, 5587, 5588, 5589, 5590, 5592, 5537, 5594, 5596, 5598, 5602, 5604, 5607, 5609, 5611, 5613, 5614, 5616, 5618, 5619, 5621, 5625, 5622, 5627]);

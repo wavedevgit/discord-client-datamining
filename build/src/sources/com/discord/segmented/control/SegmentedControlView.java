@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import com.discord.fonts.DiscordFont;
 import com.discord.fonts.DiscordFontUtilsKt;
 import com.discord.misc.utilities.measure.ViewMeasureExtensionsKt;
@@ -90,7 +90,7 @@ public final class SegmentedControlView extends FrameLayout {
         }
         if (textView == null) {
             TextView textView2 = new TextView(getContext());
-            h0.n0(textView2, new androidx.core.view.a() { // from class: com.discord.segmented.control.SegmentedControlView$getLabelView$1$1
+            i0.k0(textView2, new androidx.core.view.a() { // from class: com.discord.segmented.control.SegmentedControlView$getLabelView$1$1
                 @Override // androidx.core.view.a
                 public void onInitializeAccessibilityNodeInfo(View host, AccessibilityNodeInfoCompat info) {
                     Intrinsics.checkNotNullParameter(host, "host");
@@ -188,7 +188,7 @@ public final class SegmentedControlView extends FrameLayout {
     }
 
     private final <T> ReadWriteProperty updateViewOnChange(final T t10, final boolean z10) {
-        kotlin.properties.a aVar = kotlin.properties.a.f31852a;
+        kotlin.properties.a aVar = kotlin.properties.a.f32074a;
         return new c(t10) { // from class: com.discord.segmented.control.SegmentedControlView$updateViewOnChange$$inlined$observable$1
             @Override // kotlin.properties.c
             protected void afterChange(KProperty property, T t11, T t12) {

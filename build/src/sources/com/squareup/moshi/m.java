@@ -11,55 +11,55 @@ import okio.ByteString;
 public abstract class m implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    int f18050d;
+    int f18799d;
 
     /* renamed from: e  reason: collision with root package name */
-    int[] f18051e;
+    int[] f18800e;
 
     /* renamed from: i  reason: collision with root package name */
-    String[] f18052i;
+    String[] f18801i;
 
     /* renamed from: o  reason: collision with root package name */
-    int[] f18053o;
+    int[] f18802o;
 
     /* renamed from: p  reason: collision with root package name */
-    boolean f18054p;
+    boolean f18803p;
 
     /* renamed from: q  reason: collision with root package name */
-    boolean f18055q;
+    boolean f18804q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f18056a;
+        static final /* synthetic */ int[] f18805a;
 
         static {
             int[] iArr = new int[c.values().length];
-            f18056a = iArr;
+            f18805a = iArr;
             try {
                 iArr[c.BEGIN_ARRAY.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f18056a[c.BEGIN_OBJECT.ordinal()] = 2;
+                f18805a[c.BEGIN_OBJECT.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f18056a[c.STRING.ordinal()] = 3;
+                f18805a[c.STRING.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f18056a[c.NUMBER.ordinal()] = 4;
+                f18805a[c.NUMBER.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f18056a[c.BOOLEAN.ordinal()] = 5;
+                f18805a[c.BOOLEAN.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f18056a[c.NULL.ordinal()] = 6;
+                f18805a[c.NULL.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
         }
@@ -69,14 +69,14 @@ public abstract class m implements Closeable {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        final String[] f18057a;
+        final String[] f18806a;
 
         /* renamed from: b  reason: collision with root package name */
-        final ru.a0 f18058b;
+        final av.a0 f18807b;
 
-        private b(String[] strArr, ru.a0 a0Var) {
-            this.f18057a = strArr;
-            this.f18058b = a0Var;
+        private b(String[] strArr, av.a0 a0Var) {
+            this.f18806a = strArr;
+            this.f18807b = a0Var;
         }
 
         public static b a(String... strArr) {
@@ -84,11 +84,11 @@ public abstract class m implements Closeable {
                 ByteString[] byteStringArr = new ByteString[strArr.length];
                 Buffer buffer = new Buffer();
                 for (int i10 = 0; i10 < strArr.length; i10++) {
-                    p.W1(buffer, strArr[i10]);
+                    p.z1(buffer, strArr[i10]);
                     buffer.readByte();
-                    byteStringArr[i10] = buffer.I1();
+                    byteStringArr[i10] = buffer.M1();
                 }
-                return new b((String[]) strArr.clone(), ru.a0.l(byteStringArr));
+                return new b((String[]) strArr.clone(), av.a0.l(byteStringArr));
             } catch (IOException e10) {
                 throw new AssertionError(e10);
             }
@@ -111,9 +111,9 @@ public abstract class m implements Closeable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m() {
-        this.f18051e = new int[32];
-        this.f18052i = new String[32];
-        this.f18053o = new int[32];
+        this.f18800e = new int[32];
+        this.f18801i = new String[32];
+        this.f18802o = new int[32];
     }
 
     public static m p(BufferedSource bufferedSource) {
@@ -121,41 +121,39 @@ public abstract class m implements Closeable {
     }
 
     public final void A(boolean z10) {
-        this.f18054p = z10;
+        this.f18803p = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void C(int i10) {
-        int i11 = this.f18050d;
-        int[] iArr = this.f18051e;
+        int i11 = this.f18799d;
+        int[] iArr = this.f18800e;
         if (i11 == iArr.length) {
             if (i11 != 256) {
-                this.f18051e = Arrays.copyOf(iArr, iArr.length * 2);
-                String[] strArr = this.f18052i;
-                this.f18052i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
-                int[] iArr2 = this.f18053o;
-                this.f18053o = Arrays.copyOf(iArr2, iArr2.length * 2);
+                this.f18800e = Arrays.copyOf(iArr, iArr.length * 2);
+                String[] strArr = this.f18801i;
+                this.f18801i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
+                int[] iArr2 = this.f18802o;
+                this.f18802o = Arrays.copyOf(iArr2, iArr2.length * 2);
             } else {
                 throw new j("Nesting too deep at " + t());
             }
         }
-        int[] iArr3 = this.f18051e;
-        int i12 = this.f18050d;
-        this.f18050d = i12 + 1;
+        int[] iArr3 = this.f18800e;
+        int i12 = this.f18799d;
+        this.f18799d = i12 + 1;
         iArr3[i12] = i10;
     }
 
-    public abstract void C0();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public final k C0(String str) {
+        throw new k(str + " at path " + t());
+    }
 
     public abstract void D();
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public final k D0(String str) {
-        throw new k(str + " at path " + t());
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public final j G0(Object obj, Object obj2) {
+    public final j E0(Object obj, Object obj2) {
         if (obj == null) {
             return new j("Expected " + obj2 + " but was null at path " + t());
         }
@@ -163,7 +161,7 @@ public abstract class m implements Closeable {
     }
 
     public final Object I() {
-        switch (a.f18056a[s().ordinal()]) {
+        switch (a.f18805a[s().ordinal()]) {
             case 1:
                 ArrayList arrayList = new ArrayList();
                 x();
@@ -186,11 +184,11 @@ public abstract class m implements Closeable {
                 D();
                 return uVar;
             case 3:
-                return b1();
+                return g1();
             case 4:
                 return Double.valueOf(nextDouble());
             case 5:
-                return Boolean.valueOf(k());
+                return Boolean.valueOf(i());
             case 6:
                 return m();
             default:
@@ -205,22 +203,22 @@ public abstract class m implements Closeable {
     public abstract void T();
 
     public final void Z(boolean z10) {
-        this.f18055q = z10;
+        this.f18804q = z10;
     }
 
     public final boolean a() {
-        return this.f18055q;
+        return this.f18804q;
     }
 
-    public abstract String b1();
+    public abstract String g1();
 
-    public final boolean g() {
-        return this.f18054p;
+    public final boolean h() {
+        return this.f18803p;
     }
 
     public abstract boolean hasNext();
 
-    public abstract boolean k();
+    public abstract boolean i();
 
     public abstract Object m();
 
@@ -237,7 +235,7 @@ public abstract class m implements Closeable {
     public abstract c s();
 
     public final String t() {
-        return n.a(this.f18050d, this.f18051e, this.f18052i, this.f18053o);
+        return n.a(this.f18799d, this.f18800e, this.f18801i, this.f18802o);
     }
 
     public abstract void u();
@@ -250,13 +248,15 @@ public abstract class m implements Closeable {
 
     public abstract void z();
 
+    public abstract void z0();
+
     /* JADX INFO: Access modifiers changed from: package-private */
     public m(m mVar) {
-        this.f18050d = mVar.f18050d;
-        this.f18051e = (int[]) mVar.f18051e.clone();
-        this.f18052i = (String[]) mVar.f18052i.clone();
-        this.f18053o = (int[]) mVar.f18053o.clone();
-        this.f18054p = mVar.f18054p;
-        this.f18055q = mVar.f18055q;
+        this.f18799d = mVar.f18799d;
+        this.f18800e = (int[]) mVar.f18800e.clone();
+        this.f18801i = (String[]) mVar.f18801i.clone();
+        this.f18802o = (int[]) mVar.f18802o.clone();
+        this.f18803p = mVar.f18803p;
+        this.f18804q = mVar.f18804q;
     }
 }

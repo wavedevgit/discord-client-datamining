@@ -34,7 +34,7 @@ public class d extends aa.a {
             try {
                 try {
                     ((b) this.f446i.get(i10)).a(id2, th2, aVar);
-                    Unit unit = Unit.f31765a;
+                    Unit unit = Unit.f31987a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onFailure", e10);
                 }
@@ -45,14 +45,14 @@ public class d extends aa.a {
     }
 
     @Override // aa.a, aa.b
-    public void g(String id2, b.a aVar) {
+    public void h(String id2, b.a aVar) {
         Intrinsics.checkNotNullParameter(id2, "id");
         int size = this.f446i.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
                 try {
-                    ((b) this.f446i.get(i10)).g(id2, aVar);
-                    Unit unit = Unit.f31765a;
+                    ((b) this.f446i.get(i10)).h(id2, aVar);
+                    Unit unit = Unit.f31987a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onRelease", e10);
                 }
@@ -63,14 +63,14 @@ public class d extends aa.a {
     }
 
     @Override // aa.a, aa.b
-    public void k(String id2, Object obj, b.a aVar) {
+    public void i(String id2, Object obj, b.a aVar) {
         Intrinsics.checkNotNullParameter(id2, "id");
         int size = this.f446i.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
                 try {
-                    ((b) this.f446i.get(i10)).k(id2, obj, aVar);
-                    Unit unit = Unit.f31765a;
+                    ((b) this.f446i.get(i10)).i(id2, obj, aVar);
+                    Unit unit = Unit.f31987a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onSubmit", e10);
                 }
@@ -88,7 +88,7 @@ public class d extends aa.a {
             try {
                 try {
                     ((b) this.f446i.get(i10)).m(id2);
-                    Unit unit = Unit.f31765a;
+                    Unit unit = Unit.f31987a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onIntermediateImageFailed", e10);
                 }
@@ -106,7 +106,7 @@ public class d extends aa.a {
             try {
                 try {
                     ((b) this.f446i.get(i10)).onIntermediateImageSet(id2, obj);
-                    Unit unit = Unit.f31765a;
+                    Unit unit = Unit.f31987a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onIntermediateImageSet", e10);
                 }
@@ -124,7 +124,7 @@ public class d extends aa.a {
             try {
                 try {
                     ((b) this.f446i.get(i10)).p(id2, obj, aVar);
-                    Unit unit = Unit.f31765a;
+                    Unit unit = Unit.f31987a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onFinalImageSet", e10);
                 }

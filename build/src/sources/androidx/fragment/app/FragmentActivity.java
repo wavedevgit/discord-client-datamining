@@ -207,17 +207,17 @@ public class FragmentActivity extends ComponentActivity implements b.e {
 
     private static boolean w(FragmentManager fragmentManager, Lifecycle.State state) {
         boolean z10 = false;
-        for (Fragment fragment : fragmentManager.A0()) {
+        for (Fragment fragment : fragmentManager.B0()) {
             if (fragment != null) {
                 if (fragment.getHost() != null) {
                     z10 |= w(fragment.getChildFragmentManager(), state);
                 }
                 FragmentViewLifecycleOwner fragmentViewLifecycleOwner = fragment.mViewLifecycleOwner;
-                if (fragmentViewLifecycleOwner != null && fragmentViewLifecycleOwner.getLifecycle().b().d(Lifecycle.State.f4546o)) {
+                if (fragmentViewLifecycleOwner != null && fragmentViewLifecycleOwner.getLifecycle().b().d(Lifecycle.State.f4556o)) {
                     fragment.mViewLifecycleOwner.g(state);
                     z10 = true;
                 }
-                if (fragment.mLifecycleRegistry.b().d(Lifecycle.State.f4546o)) {
+                if (fragment.mLifecycleRegistry.b().d(Lifecycle.State.f4556o)) {
                     fragment.mLifecycleRegistry.o(state);
                     z10 = true;
                 }
@@ -251,7 +251,7 @@ public class FragmentActivity extends ComponentActivity implements b.e {
         if (getApplication() != null) {
             LoaderManager.b(this).a(str2, fileDescriptor, printWriter, strArr);
         }
-        this.mFragments.l().b0(str, fileDescriptor, printWriter, strArr);
+        this.mFragments.l().c0(str, fileDescriptor, printWriter, strArr);
     }
 
     @NonNull
@@ -267,7 +267,7 @@ public class FragmentActivity extends ComponentActivity implements b.e {
 
     void markFragmentsCreated() {
         do {
-        } while (w(getSupportFragmentManager(), Lifecycle.State.f4545i));
+        } while (w(getSupportFragmentManager(), Lifecycle.State.f4555i));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

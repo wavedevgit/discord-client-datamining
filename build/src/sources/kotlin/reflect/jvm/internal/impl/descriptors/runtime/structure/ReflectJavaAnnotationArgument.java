@@ -12,7 +12,7 @@ public abstract class ReflectJavaAnnotationArgument implements JavaAnnotationArg
     public static final Factory Factory = new Factory(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Name f32391a;
+    private final Name f32613a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Factory {
@@ -48,10 +48,10 @@ public abstract class ReflectJavaAnnotationArgument implements JavaAnnotationArg
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationArgument
     public Name getName() {
-        return this.f32391a;
+        return this.f32613a;
     }
 
     private ReflectJavaAnnotationArgument(Name name) {
-        this.f32391a = name;
+        this.f32613a = name;
     }
 }

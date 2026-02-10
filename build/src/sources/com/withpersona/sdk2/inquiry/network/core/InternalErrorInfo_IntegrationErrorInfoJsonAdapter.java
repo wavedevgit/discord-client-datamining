@@ -35,23 +35,23 @@ public final class InternalErrorInfo_IntegrationErrorInfoJsonAdapter extends h {
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.C0();
+                mVar.z0();
                 mVar.T();
             } else if (J == 0 && (str = (String) this.stringAdapter.fromJson(mVar)) == null) {
-                throw bn.c.x("message", "message", mVar);
+                throw dn.c.x("message", "message", mVar);
             }
         }
         mVar.D();
         if (str != null) {
             return new InternalErrorInfo.IntegrationErrorInfo(str);
         }
-        throw bn.c.o("message", "message", mVar);
+        throw dn.c.o("message", "message", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, InternalErrorInfo.IntegrationErrorInfo integrationErrorInfo) {
         if (integrationErrorInfo != null) {
-            tVar.k();
+            tVar.i();
             tVar.J("message");
             this.stringAdapter.toJson(tVar, integrationErrorInfo.getMessage());
             tVar.s();

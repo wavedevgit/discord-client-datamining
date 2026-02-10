@@ -1,27 +1,23 @@
 package us;
+
+import java.util.Collection;
+import kotlin.jvm.functions.Function0;
+import us.w0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class f0 {
-    public static final int a() {
-        return g0.a();
+public class f0 implements Function0 {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final w0 f51035d;
+
+    public f0(w0 w0Var) {
+        this.f51035d = w0Var;
     }
 
-    public static final int b(String str, int i10, int i11, int i12) {
-        return h0.a(str, i10, i11, i12);
-    }
-
-    public static final long c(String str, long j10, long j11, long j12) {
-        return h0.b(str, j10, j11, j12);
-    }
-
-    public static final String d(String str) {
-        return g0.b(str);
-    }
-
-    public static final String e(String str, String str2) {
-        return h0.c(str, str2);
-    }
-
-    public static final boolean f(String str, boolean z10) {
-        return h0.d(str, z10);
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        Collection T;
+        T = w0.a.T(this.f51035d);
+        return T;
     }
 }

@@ -41,22 +41,22 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorNonRootImpl implements TypeAliasDescriptor {
 
     /* renamed from: u  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f32161u = {Reflection.property1(new PropertyReference1Impl(AbstractTypeAliasDescriptor.class, "constructors", "getConstructors()Ljava/util/Collection;", 0))};
+    static final /* synthetic */ KProperty[] f32383u = {Reflection.property1(new PropertyReference1Impl(AbstractTypeAliasDescriptor.class, "constructors", "getConstructors()Ljava/util/Collection;", 0))};
 
     /* renamed from: p  reason: collision with root package name */
-    private final StorageManager f32162p;
+    private final StorageManager f32384p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final DescriptorVisibility f32163q;
+    private final DescriptorVisibility f32385q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final NotNullLazyValue f32164r;
+    private final NotNullLazyValue f32386r;
 
     /* renamed from: s  reason: collision with root package name */
-    private List f32165s;
+    private List f32387s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final AbstractTypeAliasDescriptor$typeConstructor$1 f32166t;
+    private final AbstractTypeAliasDescriptor$typeConstructor$1 f32388t;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     /* JADX WARN: Type inference failed for: r2v2, types: [kotlin.reflect.jvm.internal.impl.descriptors.impl.AbstractTypeAliasDescriptor$typeConstructor$1] */
@@ -68,13 +68,13 @@ public abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorN
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(sourceElement, "sourceElement");
         Intrinsics.checkNotNullParameter(visibilityImpl, "visibilityImpl");
-        this.f32162p = storageManager;
-        this.f32163q = visibilityImpl;
-        this.f32164r = storageManager.createLazyValue(new a(this));
-        this.f32166t = new TypeConstructor() { // from class: kotlin.reflect.jvm.internal.impl.descriptors.impl.AbstractTypeAliasDescriptor$typeConstructor$1
+        this.f32384p = storageManager;
+        this.f32385q = visibilityImpl;
+        this.f32386r = storageManager.createLazyValue(new a(this));
+        this.f32388t = new TypeConstructor() { // from class: kotlin.reflect.jvm.internal.impl.descriptors.impl.AbstractTypeAliasDescriptor$typeConstructor$1
             @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
             public KotlinBuiltIns getBuiltIns() {
-                return DescriptorUtilsKt.getBuiltIns(mo1199getDeclarationDescriptor());
+                return DescriptorUtilsKt.getBuiltIns(mo1202getDeclarationDescriptor());
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -84,7 +84,7 @@ public abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorN
 
             @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
             public Collection<KotlinType> getSupertypes() {
-                Collection<KotlinType> supertypes = mo1199getDeclarationDescriptor().getUnderlyingType().getConstructor().getSupertypes();
+                Collection<KotlinType> supertypes = mo1202getDeclarationDescriptor().getUnderlyingType().getConstructor().getSupertypes();
                 Intrinsics.checkNotNullExpressionValue(supertypes, "getSupertypes(...)");
                 return supertypes;
             }
@@ -101,12 +101,12 @@ public abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorN
             }
 
             public String toString() {
-                return "[typealias " + mo1199getDeclarationDescriptor().getName().asString() + ']';
+                return "[typealias " + mo1202getDeclarationDescriptor().getName().asString() + ']';
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
             /* renamed from: getDeclarationDescriptor */
-            public TypeAliasDescriptor mo1199getDeclarationDescriptor() {
+            public TypeAliasDescriptor mo1202getDeclarationDescriptor() {
                 return AbstractTypeAliasDescriptor.this;
             }
         };
@@ -131,8 +131,8 @@ public abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorN
         boolean z10;
         Intrinsics.checkNotNull(unwrappedType);
         if (!KotlinTypeKt.isError(unwrappedType)) {
-            ClassifierDescriptor mo1199getDeclarationDescriptor = unwrappedType.getConstructor().mo1199getDeclarationDescriptor();
-            if ((mo1199getDeclarationDescriptor instanceof TypeParameterDescriptor) && !Intrinsics.areEqual(((TypeParameterDescriptor) mo1199getDeclarationDescriptor).getContainingDeclaration(), abstractTypeAliasDescriptor)) {
+            ClassifierDescriptor mo1202getDeclarationDescriptor = unwrappedType.getConstructor().mo1202getDeclarationDescriptor();
+            if ((mo1202getDeclarationDescriptor instanceof TypeParameterDescriptor) && !Intrinsics.areEqual(((TypeParameterDescriptor) mo1202getDeclarationDescriptor).getContainingDeclaration(), abstractTypeAliasDescriptor)) {
                 z10 = true;
                 return Boolean.valueOf(z10);
             }
@@ -162,7 +162,7 @@ public abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorN
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptorWithTypeParameters
     @NotNull
     public List<TypeParameterDescriptor> getDeclaredTypeParameters() {
-        List<TypeParameterDescriptor> list = this.f32165s;
+        List<TypeParameterDescriptor> list = this.f32387s;
         if (list == null) {
             Intrinsics.throwUninitializedPropertyAccessException("declaredTypeParametersImpl");
             return null;
@@ -178,7 +178,7 @@ public abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorN
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final StorageManager getStorageManager() {
-        return this.f32162p;
+        return this.f32384p;
     }
 
     @NotNull
@@ -192,7 +192,7 @@ public abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorN
         ArrayList arrayList = new ArrayList();
         for (ClassConstructorDescriptor classConstructorDescriptor : constructors) {
             TypeAliasConstructorDescriptorImpl.Companion companion = TypeAliasConstructorDescriptorImpl.Companion;
-            StorageManager storageManager = this.f32162p;
+            StorageManager storageManager = this.f32384p;
             Intrinsics.checkNotNull(classConstructorDescriptor);
             TypeAliasConstructorDescriptor createIfAvailable = companion.createIfAvailable(storageManager, this, classConstructorDescriptor);
             if (createIfAvailable != null) {
@@ -205,13 +205,13 @@ public abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorN
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
     @NotNull
     public TypeConstructor getTypeConstructor() {
-        return this.f32166t;
+        return this.f32388t;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithVisibility
     @NotNull
     public DescriptorVisibility getVisibility() {
-        return this.f32163q;
+        return this.f32385q;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -219,7 +219,7 @@ public abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorN
 
     public final void initialize(@NotNull List<? extends TypeParameterDescriptor> declaredTypeParameters) {
         Intrinsics.checkNotNullParameter(declaredTypeParameters, "declaredTypeParameters");
-        this.f32165s = declaredTypeParameters;
+        this.f32387s = declaredTypeParameters;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor

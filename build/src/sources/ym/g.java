@@ -1,13 +1,15 @@
 package ym;
 
-import kotlin.jvm.internal.Reflection;
+import as.v;
+import java.util.Map;
+import kotlin.collections.o0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f55711a = Reflection.getOrCreateKotlinClass(e.class).getQualifiedName();
+    private static final Map f55665a = o0.m(v.a("linear", new qm.c()), v.a("ios", new qm.b()));
 
-    public static final /* synthetic */ String a() {
-        return f55711a;
+    public static final Map a() {
+        return f55665a;
     }
 }

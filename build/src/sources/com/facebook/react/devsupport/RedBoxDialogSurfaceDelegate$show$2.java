@@ -34,8 +34,8 @@ public final class RedBoxDialogSurfaceDelegate$show$2 extends Dialog {
         Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
         ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
         Intrinsics.checkNotNull(layoutParams, "null cannot be cast to non-null type android.widget.FrameLayout.LayoutParams");
-        ((FrameLayout.LayoutParams) layoutParams).setMargins(f10.f3301a, f10.f3302b, f10.f3303c, f10.f3304d);
-        return WindowInsetsCompat.f3402b;
+        ((FrameLayout.LayoutParams) layoutParams).setMargins(f10.f3304a, f10.f3305b, f10.f3306c, f10.f3307d);
+        return WindowInsetsCompat.f3405b;
     }
 
     @Override // android.app.Dialog
@@ -47,8 +47,8 @@ public final class RedBoxDialogSurfaceDelegate$show$2 extends Dialog {
             final int h10 = WindowInsetsCompat.p.h() | WindowInsetsCompat.p.b();
             redBoxContentView = this.this$0.redBoxContentView;
             if (redBoxContentView != null) {
-                androidx.core.view.h0.D0(redBoxContentView, new androidx.core.view.v() { // from class: com.facebook.react.devsupport.z0
-                    @Override // androidx.core.view.v
+                androidx.core.view.i0.x0(redBoxContentView, new androidx.core.view.w() { // from class: com.facebook.react.devsupport.z0
+                    @Override // androidx.core.view.w
                     public final WindowInsetsCompat a(View view, WindowInsetsCompat windowInsetsCompat) {
                         WindowInsetsCompat onCreate$lambda$0;
                         onCreate$lambda$0 = RedBoxDialogSurfaceDelegate$show$2.onCreate$lambda$0(h10, view, windowInsetsCompat);

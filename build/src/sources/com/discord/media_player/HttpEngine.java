@@ -51,7 +51,7 @@ public final class HttpEngine {
     static {
         HttpEngine[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = yr.a.a($values);
+        $ENTRIES = hs.a.a($values);
         Companion = new Companion(null);
     }
 

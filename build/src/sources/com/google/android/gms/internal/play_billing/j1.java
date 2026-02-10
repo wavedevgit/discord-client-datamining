@@ -8,25 +8,25 @@ import java.util.Map;
 final class j1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final j1 f14359d = new j1(true);
+    private static final j1 f14936d = new j1(true);
 
     /* renamed from: a  reason: collision with root package name */
-    final t3 f14360a = new j3(16);
+    final t3 f14937a = new j3(16);
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f14361b;
+    private boolean f14938b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f14362c;
+    private boolean f14939c;
 
     private j1() {
     }
 
     static int a(m4 m4Var, int i10, Object obj) {
         z0.w(i10 << 3);
-        if (m4.f14420v == null) {
+        if (m4.f14997v == null) {
             v2 v2Var = (v2) obj;
-            byte[] bArr = y1.f14507d;
+            byte[] bArr = y1.f15084d;
         }
         n4 n4Var = n4.INT;
         throw null;
@@ -47,7 +47,7 @@ final class j1 {
                     return z0.w(zza << 3) + z0.w(0);
                 }
                 it.next();
-                m4 m4Var = m4.f14411e;
+                m4 m4Var = m4.f14988e;
                 n4 n4Var = n4.INT;
                 throw null;
             }
@@ -84,9 +84,9 @@ final class j1 {
     private static final void l(com.google.android.gms.internal.play_billing.i1 r2, java.lang.Object r3) {
         /*
             com.google.android.gms.internal.play_billing.m4 r0 = r2.b()
-            byte[] r1 = com.google.android.gms.internal.play_billing.y1.f14507d
+            byte[] r1 = com.google.android.gms.internal.play_billing.y1.f15084d
             r3.getClass()
-            com.google.android.gms.internal.play_billing.m4 r1 = com.google.android.gms.internal.play_billing.m4.f14411e
+            com.google.android.gms.internal.play_billing.m4 r1 = com.google.android.gms.internal.play_billing.m4.f14988e
             com.google.android.gms.internal.play_billing.n4 r1 = com.google.android.gms.internal.play_billing.n4.INT
             com.google.android.gms.internal.play_billing.n4 r0 = r0.a()
             int r0 = r0.ordinal()
@@ -161,10 +161,10 @@ final class j1 {
 
     public final int c() {
         int i10 = 0;
-        for (int i11 = 0; i11 < this.f14360a.b(); i11++) {
-            i10 += k(this.f14360a.g(i11));
+        for (int i11 = 0; i11 < this.f14937a.b(); i11++) {
+            i10 += k(this.f14937a.g(i11));
         }
-        for (Map.Entry entry : this.f14360a.c()) {
+        for (Map.Entry entry : this.f14937a.c()) {
             i10 += k(entry);
         }
         return i10;
@@ -172,36 +172,36 @@ final class j1 {
 
     public final /* bridge */ /* synthetic */ Object clone() {
         j1 j1Var = new j1();
-        for (int i10 = 0; i10 < this.f14360a.b(); i10++) {
-            Map.Entry g10 = this.f14360a.g(i10);
+        for (int i10 = 0; i10 < this.f14937a.b(); i10++) {
+            Map.Entry g10 = this.f14937a.g(i10);
             android.support.v4.media.session.b.a(g10.getKey());
             j1Var.g(null, g10.getValue());
         }
-        for (Map.Entry entry : this.f14360a.c()) {
+        for (Map.Entry entry : this.f14937a.c()) {
             android.support.v4.media.session.b.a(entry.getKey());
             j1Var.g(null, entry.getValue());
         }
-        j1Var.f14362c = this.f14362c;
+        j1Var.f14939c = this.f14939c;
         return j1Var;
     }
 
     public final Iterator d() {
-        if (this.f14362c) {
-            return new c2(this.f14360a.entrySet().iterator());
+        if (this.f14939c) {
+            return new c2(this.f14937a.entrySet().iterator());
         }
-        return this.f14360a.entrySet().iterator();
+        return this.f14937a.entrySet().iterator();
     }
 
     public final void e() {
-        if (!this.f14361b) {
-            for (int i10 = 0; i10 < this.f14360a.b(); i10++) {
-                Map.Entry g10 = this.f14360a.g(i10);
+        if (!this.f14938b) {
+            for (int i10 = 0; i10 < this.f14937a.b(); i10++) {
+                Map.Entry g10 = this.f14937a.g(i10);
                 if (g10.getValue() instanceof q1) {
                     ((q1) g10.getValue()).s();
                 }
             }
-            this.f14360a.a();
-            this.f14361b = true;
+            this.f14937a.a();
+            this.f14938b = true;
         }
     }
 
@@ -212,14 +212,14 @@ final class j1 {
         if (!(obj instanceof j1)) {
             return false;
         }
-        return this.f14360a.equals(((j1) obj).f14360a);
+        return this.f14937a.equals(((j1) obj).f14937a);
     }
 
     public final void f(j1 j1Var) {
-        for (int i10 = 0; i10 < j1Var.f14360a.b(); i10++) {
-            i(j1Var.f14360a.g(i10));
+        for (int i10 = 0; i10 < j1Var.f14937a.b(); i10++) {
+            i(j1Var.f14937a.g(i10));
         }
-        for (Map.Entry entry : j1Var.f14360a.c()) {
+        for (Map.Entry entry : j1Var.f14937a.c()) {
             i(entry);
         }
     }
@@ -240,16 +240,16 @@ final class j1 {
         } else {
             l(i1Var, obj);
         }
-        this.f14360a.put(i1Var, obj);
+        this.f14937a.put(i1Var, obj);
     }
 
     public final boolean h() {
-        for (int i10 = 0; i10 < this.f14360a.b(); i10++) {
-            if (!j(this.f14360a.g(i10))) {
+        for (int i10 = 0; i10 < this.f14937a.b(); i10++) {
+            if (!j(this.f14937a.g(i10))) {
                 return false;
             }
         }
-        for (Map.Entry entry : this.f14360a.c()) {
+        for (Map.Entry entry : this.f14937a.c()) {
             if (!j(entry)) {
                 return false;
             }
@@ -258,7 +258,7 @@ final class j1 {
     }
 
     public final int hashCode() {
-        return this.f14360a.hashCode();
+        return this.f14937a.hashCode();
     }
 
     private j1(boolean z10) {

@@ -1,196 +1,60 @@
 package hu;
 
-import hu.e;
-import java.lang.ref.Reference;
-import java.util.Iterator;
-import java.util.List;
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.TimeUnit;
-import kotlin.Unit;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.PushbackInputStream;
+import java.io.Reader;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g {
-
-    /* renamed from: f  reason: collision with root package name */
-    public static final a f26587f = new a(null);
-
-    /* renamed from: a  reason: collision with root package name */
-    private final int f26588a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final long f26589b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final gu.d f26590c;
+class g extends Reader {
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f26591d;
+    private final PushbackInputStream f27721d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ConcurrentLinkedQueue f26592e;
+    private BufferedReader f27722e = null;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        private a() {
-        }
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public g(InputStream inputStream) {
+        this.f27721d = new PushbackInputStream(inputStream, 3);
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b extends gu.a {
-        b(String str) {
-            super(str, false, 2, null);
-        }
-
-        @Override // gu.a
-        public long f() {
-            return g.this.b(System.nanoTime());
-        }
-    }
-
-    public g(gu.e taskRunner, int i10, long j10, TimeUnit timeUnit) {
-        Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
-        Intrinsics.checkNotNullParameter(timeUnit, "timeUnit");
-        this.f26588a = i10;
-        this.f26589b = timeUnit.toNanos(j10);
-        this.f26590c = taskRunner.i();
-        this.f26591d = new b(du.e.f20987i + " ConnectionPool");
-        this.f26592e = new ConcurrentLinkedQueue();
-        if (j10 > 0) {
+    private void a() {
+        if (this.f27722e != null) {
             return;
         }
-        throw new IllegalArgumentException(("keepAliveDuration <= 0: " + j10).toString());
+        byte[] bArr = new byte[3];
+        int read = this.f27721d.read(bArr, 0, 3);
+        if ((read != 3 || bArr[0] != -17 || bArr[1] != -69 || bArr[2] != -65) && read > 0) {
+            this.f27721d.unread(bArr, 0, read);
+        }
+        this.f27722e = new BufferedReader(new InputStreamReader(this.f27721d, "UTF-8"));
     }
 
-    private final int d(f fVar, long j10) {
-        if (du.e.f20986h && !Thread.holdsLock(fVar)) {
-            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + fVar);
-        }
-        List n10 = fVar.n();
-        int i10 = 0;
-        while (i10 < n10.size()) {
-            Reference reference = (Reference) n10.get(i10);
-            if (reference.get() != null) {
-                i10++;
-            } else {
-                Intrinsics.checkNotNull(reference, "null cannot be cast to non-null type okhttp3.internal.connection.RealCall.CallReference");
-                mu.h.f37655a.g().m("A connection to " + fVar.A().a().l() + " was leaked. Did you forget to close a response body?", ((e.b) reference).a());
-                n10.remove(i10);
-                fVar.D(true);
-                if (n10.isEmpty()) {
-                    fVar.C(j10 - this.f26589b);
-                    return 0;
-                }
-            }
-        }
-        return n10.size();
-    }
-
-    public final boolean a(okhttp3.a address, e call, List list, boolean z10) {
-        Intrinsics.checkNotNullParameter(address, "address");
-        Intrinsics.checkNotNullParameter(call, "call");
-        Iterator it = this.f26592e.iterator();
-        while (it.hasNext()) {
-            f connection = (f) it.next();
-            Intrinsics.checkNotNullExpressionValue(connection, "connection");
-            synchronized (connection) {
-                if (z10) {
-                    try {
-                        if (connection.v()) {
-                        }
-                        Unit unit = Unit.f31765a;
-                    } catch (Throwable th2) {
-                        throw th2;
-                    }
-                }
-                if (connection.t(address, list)) {
-                    call.c(connection);
-                    return true;
-                }
-                Unit unit2 = Unit.f31765a;
-            }
-        }
-        return false;
-    }
-
-    public final long b(long j10) {
-        Iterator it = this.f26592e.iterator();
-        int i10 = 0;
-        long j11 = Long.MIN_VALUE;
-        f fVar = null;
-        int i11 = 0;
-        while (it.hasNext()) {
-            f connection = (f) it.next();
-            Intrinsics.checkNotNullExpressionValue(connection, "connection");
-            synchronized (connection) {
-                if (d(connection, j10) > 0) {
-                    i11++;
-                } else {
-                    i10++;
-                    long o10 = j10 - connection.o();
-                    if (o10 > j11) {
-                        fVar = connection;
-                        j11 = o10;
-                    }
-                    Unit unit = Unit.f31765a;
-                }
-            }
-        }
-        long j12 = this.f26589b;
-        if (j11 < j12 && i10 <= this.f26588a) {
-            if (i10 > 0) {
-                return j12 - j11;
-            }
-            if (i11 > 0) {
-                return j12;
-            }
-            return -1L;
-        }
-        Intrinsics.checkNotNull(fVar);
-        synchronized (fVar) {
-            if (!fVar.n().isEmpty()) {
-                return 0L;
-            }
-            if (fVar.o() + j11 != j10) {
-                return 0L;
-            }
-            fVar.D(true);
-            this.f26592e.remove(fVar);
-            du.e.n(fVar.E());
-            if (this.f26592e.isEmpty()) {
-                this.f26590c.a();
-            }
-            return 0L;
-        }
-    }
-
-    public final boolean c(f connection) {
-        Intrinsics.checkNotNullParameter(connection, "connection");
-        if (du.e.f20986h && !Thread.holdsLock(connection)) {
-            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
-        } else if (!connection.p() && this.f26588a != 0) {
-            gu.d.j(this.f26590c, this.f26591d, 0L, 2, null);
-            return false;
+    @Override // java.io.Reader, java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        BufferedReader bufferedReader = this.f27722e;
+        if (bufferedReader == null) {
+            this.f27721d.close();
         } else {
-            connection.D(true);
-            this.f26592e.remove(connection);
-            if (this.f26592e.isEmpty()) {
-                this.f26590c.a();
-            }
-            return true;
+            bufferedReader.close();
         }
     }
 
-    public final void e(f connection) {
-        Intrinsics.checkNotNullParameter(connection, "connection");
-        if (du.e.f20986h && !Thread.holdsLock(connection)) {
-            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
-        }
-        this.f26592e.add(connection);
-        gu.d.j(this.f26590c, this.f26591d, 0L, 2, null);
+    public String h() {
+        a();
+        return this.f27722e.readLine();
+    }
+
+    @Override // java.io.Reader
+    public int read(char[] cArr, int i10, int i11) {
+        a();
+        return this.f27722e.read(cArr, i10, i11);
+    }
+
+    @Override // java.io.Reader
+    public boolean ready() {
+        a();
+        return this.f27722e.ready();
     }
 }

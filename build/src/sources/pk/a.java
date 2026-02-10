@@ -1,102 +1,33 @@
 package pk;
-
-import com.google.zxing.Result;
-import ik.c;
-import ik.k;
-import ik.m;
-import ik.o;
-import ik.p;
-import java.util.List;
-import java.util.Map;
-import mk.b;
-import mk.e;
-import mk.g;
-import qk.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements m {
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final p[] f44297b = new p[0];
-
-    /* renamed from: a  reason: collision with root package name */
-    private final d f44298a = new d();
-
-    private static b b(b bVar) {
-        int[] k10 = bVar.k();
-        int[] f10 = bVar.f();
-        if (k10 != null && f10 != null) {
-            int c10 = c(k10, bVar);
-            int i10 = k10[1];
-            int i11 = f10[1];
-            int i12 = k10[0];
-            int i13 = ((f10[0] - i12) + 1) / c10;
-            int i14 = ((i11 - i10) + 1) / c10;
-            if (i13 > 0 && i14 > 0) {
-                int i15 = c10 / 2;
-                int i16 = i10 + i15;
-                int i17 = i12 + i15;
-                b bVar2 = new b(i13, i14);
-                for (int i18 = 0; i18 < i14; i18++) {
-                    int i19 = (i18 * c10) + i16;
-                    for (int i20 = 0; i20 < i13; i20++) {
-                        if (bVar.e((i20 * c10) + i17, i19)) {
-                            bVar2.q(i20, i18);
-                        }
-                    }
-                }
-                return bVar2;
-            }
-            throw k.a();
-        }
-        throw k.a();
+public abstract class a {
+    public static float a(float f10, float f11, float f12, float f13) {
+        double d10 = f10 - f12;
+        double d11 = f11 - f13;
+        return (float) Math.sqrt((d10 * d10) + (d11 * d11));
     }
 
-    private static int c(int[] iArr, b bVar) {
-        int l10 = bVar.l();
-        int i10 = iArr[0];
-        int i11 = iArr[1];
-        while (i10 < l10 && bVar.e(i10, i11)) {
-            i10++;
-        }
-        if (i10 != l10) {
-            int i12 = i10 - iArr[0];
-            if (i12 != 0) {
-                return i12;
-            }
-            throw k.a();
-        }
-        throw k.a();
+    public static float b(int i10, int i11, int i12, int i13) {
+        double d10 = i10 - i12;
+        double d11 = i11 - i13;
+        return (float) Math.sqrt((d10 * d10) + (d11 * d11));
     }
 
-    @Override // ik.m
-    public Result a(c cVar, Map map) {
-        p[] b10;
-        e eVar;
-        if (map != null && map.containsKey(ik.e.PURE_BARCODE)) {
-            eVar = this.f44298a.b(b(cVar.a()));
-            b10 = f44297b;
+    public static int c(float f10) {
+        float f11;
+        if (f10 < 0.0f) {
+            f11 = -0.5f;
         } else {
-            g b11 = new rk.a(cVar.a()).b();
-            e b12 = this.f44298a.b(b11.a());
-            b10 = b11.b();
-            eVar = b12;
+            f11 = 0.5f;
         }
-        Result result = new Result(eVar.k(), eVar.g(), b10, ik.a.DATA_MATRIX);
-        List a10 = eVar.a();
-        if (a10 != null) {
-            result.h(o.BYTE_SEGMENTS, a10);
-        }
-        String b13 = eVar.b();
-        if (b13 != null) {
-            result.h(o.ERROR_CORRECTION_LEVEL, b13);
-        }
-        result.h(o.ERRORS_CORRECTED, eVar.d());
-        o oVar = o.SYMBOLOGY_IDENTIFIER;
-        result.h(oVar, "]d" + eVar.j());
-        return result;
+        return (int) (f10 + f11);
     }
 
-    @Override // ik.m
-    public void reset() {
+    public static int d(int[] iArr) {
+        int i10 = 0;
+        for (int i11 : iArr) {
+            i10 += i11;
+        }
+        return i10;
     }
 }

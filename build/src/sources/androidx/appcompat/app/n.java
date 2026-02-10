@@ -13,7 +13,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.s0;
 import androidx.appcompat.widget.x;
 import androidx.collection.SimpleArrayMap;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -21,48 +21,48 @@ import java.lang.reflect.Method;
 public class n {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Class[] f1212b = {Context.class, AttributeSet.class};
+    private static final Class[] f1213b = {Context.class, AttributeSet.class};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f1213c = {16843375};
+    private static final int[] f1214c = {16843375};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f1214d = {16844160};
+    private static final int[] f1215d = {16844160};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int[] f1215e = {16844156};
+    private static final int[] f1216e = {16844156};
 
     /* renamed from: f  reason: collision with root package name */
-    private static final int[] f1216f = {16844148};
+    private static final int[] f1217f = {16844148};
 
     /* renamed from: g  reason: collision with root package name */
-    private static final String[] f1217g = {"android.widget.", "android.view.", "android.webkit."};
+    private static final String[] f1218g = {"android.widget.", "android.view.", "android.webkit."};
 
     /* renamed from: h  reason: collision with root package name */
-    private static final SimpleArrayMap f1218h = new SimpleArrayMap();
+    private static final SimpleArrayMap f1219h = new SimpleArrayMap();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object[] f1219a = new Object[2];
+    private final Object[] f1220a = new Object[2];
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a implements View.OnClickListener {
 
         /* renamed from: d  reason: collision with root package name */
-        private final View f1220d;
+        private final View f1221d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f1221e;
+        private final String f1222e;
 
         /* renamed from: i  reason: collision with root package name */
-        private Method f1222i;
+        private Method f1223i;
 
         /* renamed from: o  reason: collision with root package name */
-        private Context f1223o;
+        private Context f1224o;
 
         public a(View view, String str) {
-            this.f1220d = view;
-            this.f1221e = str;
+            this.f1221d = view;
+            this.f1222e = str;
         }
 
         private void a(Context context) {
@@ -71,9 +71,9 @@ public class n {
             Method method;
             while (context != null) {
                 try {
-                    if (!context.isRestricted() && (method = context.getClass().getMethod(this.f1221e, View.class)) != null) {
-                        this.f1222i = method;
-                        this.f1223o = context;
+                    if (!context.isRestricted() && (method = context.getClass().getMethod(this.f1222e, View.class)) != null) {
+                        this.f1223i = method;
+                        this.f1224o = context;
                         return;
                     }
                 } catch (NoSuchMethodException unused) {
@@ -84,21 +84,21 @@ public class n {
                     context = null;
                 }
             }
-            if (this.f1220d.getId() == -1) {
+            if (this.f1221d.getId() == -1) {
                 str = "";
             } else {
-                str = " with id '" + this.f1220d.getContext().getResources().getResourceEntryName(id2) + "'";
+                str = " with id '" + this.f1221d.getContext().getResources().getResourceEntryName(id2) + "'";
             }
-            throw new IllegalStateException("Could not find method " + this.f1221e + "(View) in a parent or ancestor Context for android:onClick attribute defined on view " + this.f1220d.getClass() + str);
+            throw new IllegalStateException("Could not find method " + this.f1222e + "(View) in a parent or ancestor Context for android:onClick attribute defined on view " + this.f1221d.getClass() + str);
         }
 
         @Override // android.view.View.OnClickListener
         public void onClick(View view) {
-            if (this.f1222i == null) {
-                a(this.f1220d.getContext());
+            if (this.f1223i == null) {
+                a(this.f1221d.getContext());
             }
             try {
-                this.f1222i.invoke(this.f1223o, view);
+                this.f1223i.invoke(this.f1224o, view);
             } catch (IllegalAccessException e10) {
                 throw new IllegalStateException("Could not execute non-public method for android:onClick", e10);
             } catch (InvocationTargetException e11) {
@@ -111,19 +111,19 @@ public class n {
         if (Build.VERSION.SDK_INT > 28) {
             return;
         }
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f1214d);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f1215d);
         if (obtainStyledAttributes.hasValue(0)) {
-            h0.o0(view, obtainStyledAttributes.getBoolean(0, false));
+            i0.l0(view, obtainStyledAttributes.getBoolean(0, false));
         }
         obtainStyledAttributes.recycle();
-        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, f1215e);
+        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, f1216e);
         if (obtainStyledAttributes2.hasValue(0)) {
-            h0.q0(view, obtainStyledAttributes2.getString(0));
+            i0.n0(view, obtainStyledAttributes2.getString(0));
         }
         obtainStyledAttributes2.recycle();
-        TypedArray obtainStyledAttributes3 = context.obtainStyledAttributes(attributeSet, f1216f);
+        TypedArray obtainStyledAttributes3 = context.obtainStyledAttributes(attributeSet, f1217f);
         if (obtainStyledAttributes3.hasValue(0)) {
-            h0.G0(view, obtainStyledAttributes3.getBoolean(0, false));
+            i0.z0(view, obtainStyledAttributes3.getBoolean(0, false));
         }
         obtainStyledAttributes3.recycle();
     }
@@ -131,7 +131,7 @@ public class n {
     private void b(View view, AttributeSet attributeSet) {
         Context context = view.getContext();
         if ((context instanceof ContextWrapper) && view.hasOnClickListeners()) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f1213c);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f1214c);
             String string = obtainStyledAttributes.getString(0);
             if (string != null) {
                 view.setOnClickListener(new a(view, string));
@@ -142,7 +142,7 @@ public class n {
 
     private View s(Context context, String str, String str2) {
         String str3;
-        SimpleArrayMap simpleArrayMap = f1218h;
+        SimpleArrayMap simpleArrayMap = f1219h;
         Constructor constructor = (Constructor) simpleArrayMap.get(str);
         if (constructor == null) {
             if (str2 != null) {
@@ -154,11 +154,11 @@ public class n {
             } else {
                 str3 = str;
             }
-            constructor = Class.forName(str3, false, context.getClassLoader()).asSubclass(View.class).getConstructor(f1212b);
+            constructor = Class.forName(str3, false, context.getClassLoader()).asSubclass(View.class).getConstructor(f1213b);
             simpleArrayMap.put(str, constructor);
         }
         constructor.setAccessible(true);
-        return (View) constructor.newInstance(this.f1219a);
+        return (View) constructor.newInstance(this.f1220a);
     }
 
     private View t(Context context, String str, AttributeSet attributeSet) {
@@ -166,13 +166,13 @@ public class n {
             str = attributeSet.getAttributeValue(null, "class");
         }
         try {
-            Object[] objArr = this.f1219a;
+            Object[] objArr = this.f1220a;
             objArr[0] = context;
             objArr[1] = attributeSet;
             if (-1 == str.indexOf(46)) {
                 int i10 = 0;
                 while (true) {
-                    String[] strArr = f1217g;
+                    String[] strArr = f1218g;
                     if (i10 >= strArr.length) {
                         return null;
                     }
@@ -188,7 +188,7 @@ public class n {
         } catch (Exception unused) {
             return null;
         } finally {
-            Object[] objArr2 = this.f1219a;
+            Object[] objArr2 = this.f1220a;
             objArr2[0] = null;
             objArr2[1] = null;
         }
@@ -196,13 +196,13 @@ public class n {
 
     private static Context u(Context context, AttributeSet attributeSet, boolean z10, boolean z11) {
         int i10;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.H3, 0, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.N3, 0, 0);
         if (z10) {
-            i10 = obtainStyledAttributes.getResourceId(f.j.I3, 0);
+            i10 = obtainStyledAttributes.getResourceId(f.j.O3, 0);
         } else {
             i10 = 0;
         }
-        if (z11 && i10 == 0 && (i10 = obtainStyledAttributes.getResourceId(f.j.J3, 0)) != 0) {
+        if (z11 && i10 == 0 && (i10 = obtainStyledAttributes.getResourceId(f.j.P3, 0)) != 0) {
             Log.i("AppCompatViewInflater", "app:theme is now deprecated. Please move to using android:theme instead.");
         }
         obtainStyledAttributes.recycle();

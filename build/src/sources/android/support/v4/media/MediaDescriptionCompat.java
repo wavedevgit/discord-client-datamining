@@ -13,31 +13,31 @@ public final class MediaDescriptionCompat implements Parcelable {
     public static final Parcelable.Creator<MediaDescriptionCompat> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f872d;
+    private final String f873d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CharSequence f873e;
+    private final CharSequence f874e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final CharSequence f874i;
+    private final CharSequence f875i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final CharSequence f875o;
+    private final CharSequence f876o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Bitmap f876p;
+    private final Bitmap f877p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Uri f877q;
+    private final Uri f878q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Bundle f878r;
+    private final Bundle f879r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Uri f879s;
+    private final Uri f880s;
 
     /* renamed from: t  reason: collision with root package name */
-    private MediaDescription f880t;
+    private MediaDescription f881t;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Parcelable.Creator {
@@ -141,83 +141,83 @@ public final class MediaDescriptionCompat implements Parcelable {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f881a;
+        private String f882a;
 
         /* renamed from: b  reason: collision with root package name */
-        private CharSequence f882b;
+        private CharSequence f883b;
 
         /* renamed from: c  reason: collision with root package name */
-        private CharSequence f883c;
+        private CharSequence f884c;
 
         /* renamed from: d  reason: collision with root package name */
-        private CharSequence f884d;
+        private CharSequence f885d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Bitmap f885e;
+        private Bitmap f886e;
 
         /* renamed from: f  reason: collision with root package name */
-        private Uri f886f;
+        private Uri f887f;
 
         /* renamed from: g  reason: collision with root package name */
-        private Bundle f887g;
+        private Bundle f888g;
 
         /* renamed from: h  reason: collision with root package name */
-        private Uri f888h;
+        private Uri f889h;
 
         public MediaDescriptionCompat a() {
-            return new MediaDescriptionCompat(this.f881a, this.f882b, this.f883c, this.f884d, this.f885e, this.f886f, this.f887g, this.f888h);
+            return new MediaDescriptionCompat(this.f882a, this.f883b, this.f884c, this.f885d, this.f886e, this.f887f, this.f888g, this.f889h);
         }
 
         public d b(CharSequence charSequence) {
-            this.f884d = charSequence;
+            this.f885d = charSequence;
             return this;
         }
 
         public d c(Bundle bundle) {
-            this.f887g = bundle;
+            this.f888g = bundle;
             return this;
         }
 
         public d d(Bitmap bitmap) {
-            this.f885e = bitmap;
+            this.f886e = bitmap;
             return this;
         }
 
         public d e(Uri uri) {
-            this.f886f = uri;
+            this.f887f = uri;
             return this;
         }
 
         public d f(String str) {
-            this.f881a = str;
+            this.f882a = str;
             return this;
         }
 
         public d g(Uri uri) {
-            this.f888h = uri;
+            this.f889h = uri;
             return this;
         }
 
         public d h(CharSequence charSequence) {
-            this.f883c = charSequence;
+            this.f884c = charSequence;
             return this;
         }
 
         public d i(CharSequence charSequence) {
-            this.f882b = charSequence;
+            this.f883b = charSequence;
             return this;
         }
     }
 
     MediaDescriptionCompat(String str, CharSequence charSequence, CharSequence charSequence2, CharSequence charSequence3, Bitmap bitmap, Uri uri, Bundle bundle, Uri uri2) {
-        this.f872d = str;
-        this.f873e = charSequence;
-        this.f874i = charSequence2;
-        this.f875o = charSequence3;
-        this.f876p = bitmap;
-        this.f877q = uri;
-        this.f878r = bundle;
-        this.f879s = uri2;
+        this.f873d = str;
+        this.f874e = charSequence;
+        this.f875i = charSequence2;
+        this.f876o = charSequence3;
+        this.f877p = bitmap;
+        this.f878q = uri;
+        this.f879r = bundle;
+        this.f880s = uri2;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:21:0x0068  */
@@ -280,7 +280,7 @@ public final class MediaDescriptionCompat implements Parcelable {
             r1.g(r0)
         L73:
             android.support.v4.media.MediaDescriptionCompat r0 = r1.a()
-            r0.f880t = r8
+            r0.f881t = r8
         L79:
             return r0
         */
@@ -288,19 +288,19 @@ public final class MediaDescriptionCompat implements Parcelable {
     }
 
     public Object b() {
-        MediaDescription mediaDescription = this.f880t;
+        MediaDescription mediaDescription = this.f881t;
         if (mediaDescription == null) {
             MediaDescription.Builder b10 = b.b();
-            b.n(b10, this.f872d);
-            b.p(b10, this.f873e);
-            b.o(b10, this.f874i);
-            b.j(b10, this.f875o);
-            b.l(b10, this.f876p);
-            b.m(b10, this.f877q);
-            b.k(b10, this.f878r);
-            c.b(b10, this.f879s);
+            b.n(b10, this.f873d);
+            b.p(b10, this.f874e);
+            b.o(b10, this.f875i);
+            b.j(b10, this.f876o);
+            b.l(b10, this.f877p);
+            b.m(b10, this.f878q);
+            b.k(b10, this.f879r);
+            c.b(b10, this.f880s);
             MediaDescription a10 = b.a(b10);
-            this.f880t = a10;
+            this.f881t = a10;
             return a10;
         }
         return mediaDescription;
@@ -312,7 +312,7 @@ public final class MediaDescriptionCompat implements Parcelable {
     }
 
     public String toString() {
-        return ((Object) this.f873e) + ", " + ((Object) this.f874i) + ", " + ((Object) this.f875o);
+        return ((Object) this.f874e) + ", " + ((Object) this.f875i) + ", " + ((Object) this.f876o);
     }
 
     @Override // android.os.Parcelable

@@ -6,29 +6,29 @@ import java.util.Objects;
 public final class p extends j {
 
     /* renamed from: q  reason: collision with root package name */
-    static final j f14449q = new p(new Object[0], 0);
+    static final j f15026q = new p(new Object[0], 0);
 
     /* renamed from: o  reason: collision with root package name */
-    final transient Object[] f14450o;
+    final transient Object[] f15027o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient int f14451p;
+    private final transient int f15028p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(Object[] objArr, int i10) {
-        this.f14450o = objArr;
-        this.f14451p = i10;
+        this.f15027o = objArr;
+        this.f15028p = i10;
     }
 
     @Override // com.google.android.gms.internal.play_billing.j, com.google.android.gms.internal.play_billing.g
     final int b(Object[] objArr, int i10) {
-        System.arraycopy(this.f14450o, 0, objArr, 0, this.f14451p);
-        return this.f14451p;
+        System.arraycopy(this.f15027o, 0, objArr, 0, this.f15028p);
+        return this.f15028p;
     }
 
     @Override // com.google.android.gms.internal.play_billing.g
     final int c() {
-        return this.f14451p;
+        return this.f15028p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -46,19 +46,19 @@ public final class p extends j {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.play_billing.g
     public final Object[] g() {
-        return this.f14450o;
+        return this.f15027o;
     }
 
     @Override // java.util.List
     public final Object get(int i10) {
-        b.a(i10, this.f14451p, "index");
-        Object obj = this.f14450o[i10];
+        b.a(i10, this.f15028p, "index");
+        Object obj = this.f15027o[i10];
         Objects.requireNonNull(obj);
         return obj;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f14451p;
+        return this.f15028p;
     }
 }

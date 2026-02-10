@@ -8,10 +8,10 @@ import androidx.annotation.NonNull;
 final class AppCompatTextClassifierHelper {
 
     /* renamed from: a  reason: collision with root package name */
-    private TextView f1588a;
+    private TextView f1590a;
 
     /* renamed from: b  reason: collision with root package name */
-    private TextClassifier f1589b;
+    private TextClassifier f1591b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class a {
@@ -27,18 +27,18 @@ final class AppCompatTextClassifierHelper {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public AppCompatTextClassifierHelper(TextView textView) {
-        this.f1588a = (TextView) b2.e.g(textView);
+        this.f1590a = (TextView) b2.e.g(textView);
     }
 
     public TextClassifier a() {
-        TextClassifier textClassifier = this.f1589b;
+        TextClassifier textClassifier = this.f1591b;
         if (textClassifier == null) {
-            return a.a(this.f1588a);
+            return a.a(this.f1590a);
         }
         return textClassifier;
     }
 
     public void b(TextClassifier textClassifier) {
-        this.f1589b = textClassifier;
+        this.f1591b = textClassifier;
     }
 }

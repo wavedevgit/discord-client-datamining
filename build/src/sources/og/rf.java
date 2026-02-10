@@ -3,16 +3,16 @@ package og;
 public final class rf {
 
     /* renamed from: a  reason: collision with root package name */
-    private final xe f41310a;
+    private final xe f39636a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ rf(pf pfVar, qf qfVar) {
         xe xeVar;
-        xeVar = pfVar.f41257a;
-        this.f41310a = xeVar;
+        xeVar = pfVar.f39583a;
+        this.f39636a = xeVar;
     }
 
     public final xe a() {
-        return this.f41310a;
+        return this.f39636a;
     }
 }

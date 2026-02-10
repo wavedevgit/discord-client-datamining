@@ -37,7 +37,7 @@ public final class UIManagerHelper {
     @NotNull
     public static final float[] getDefaultTextInputPadding(Context context) {
         EditText editText = new EditText(context);
-        return new float[]{PixelUtil.toDIPFromPixel(androidx.core.view.h0.E(editText)), PixelUtil.toDIPFromPixel(androidx.core.view.h0.D(editText)), PixelUtil.toDIPFromPixel(editText.getPaddingTop()), PixelUtil.toDIPFromPixel(editText.getPaddingBottom())};
+        return new float[]{PixelUtil.toDIPFromPixel(androidx.core.view.i0.D(editText)), PixelUtil.toDIPFromPixel(androidx.core.view.i0.C(editText)), PixelUtil.toDIPFromPixel(editText.getPaddingTop()), PixelUtil.toDIPFromPixel(editText.getPaddingBottom())};
     }
 
     public static final EventDispatcher getEventDispatcher(@NotNull ReactContext context, int i10) {

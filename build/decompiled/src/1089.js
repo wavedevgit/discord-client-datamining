@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.trace_id;
                 var0 = var4;
                 if (!(var9 !== var2)) {
-                    _fun11986_ip = 582;
+                    _fun11986_ip = 583;
                     continue _fun11986
                 }
             case 249:
@@ -112,7 +112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = 3600;
                 var0 = var1;
                 if (!(var9 <= var4)) {
-                    _fun11986_ip = 582;
+                    _fun11986_ip = 583;
                     continue _fun11986
                 }
             case 302:
@@ -123,7 +123,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var9.bind(var8)(var4);
                 var4 = var4.DEBUG_BUILD;
                 if (!var4) {
-                    _fun11986_ip = 432;
+                    _fun11986_ip = 433;
                     continue _fun11986
                 }
             case 331:
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = ' link to span ';
                 var3 = var12.bind(var10)(var7, var3, var13);
                 var3 = var4.bind(var9)(var3);
-            case 432:
+            case 433:
                 var4 = var5.addLink;
                 var3 = {};
                 var3.context = var7;
@@ -170,12 +170,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var6.bind(var8)(var7);
                 var8 = 0;
                 if (!var6) {
-                    _fun11986_ip = 535;
+                    _fun11986_ip = 536;
                     continue _fun11986
                 }
-            case 532:
+            case 533:
                 var8 = 1;
-            case 535:
+            case 536:
                 var2 = var2.HermesInternal;
                 var7 = var2.concat;
                 var22 = '';
@@ -188,7 +188,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var22[var7](var21, var20, var19, var18, var17, var16);
                 var2 = var4.bind(var5)(var3, var2);
                 var0 = var1;
-            case 582:
+            case 583:
                 return var0;
         }
     };

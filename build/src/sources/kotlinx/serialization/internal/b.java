@@ -4,19 +4,19 @@ import kotlin.jvm.internal.ByteCompanionObject;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.encoding.CompositeEncoder;
-import kt.f2;
+import tt.f2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class b extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final b f34866c = new b();
+    public static final b f35088c = new b();
 
     private b() {
-        super(ht.a.x(ByteCompanionObject.INSTANCE));
+        super(rt.a.B(ByteCompanionObject.INSTANCE));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.a
+    @Override // tt.a
     /* renamed from: v */
     public int e(byte[] bArr) {
         Intrinsics.checkNotNullParameter(bArr, "<this>");
@@ -24,31 +24,31 @@ public final class b extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.f2
+    @Override // tt.f2
     /* renamed from: w */
     public byte[] r() {
         return new byte[0];
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.s, kt.a
+    @Override // tt.s, tt.a
     /* renamed from: x */
-    public void h(kotlinx.serialization.encoding.c decoder, int i10, kt.i builder, boolean z10) {
+    public void h(kotlinx.serialization.encoding.c decoder, int i10, tt.i builder, boolean z10) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
         Intrinsics.checkNotNullParameter(builder, "builder");
         builder.e(decoder.B(getDescriptor(), i10));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.a
+    @Override // tt.a
     /* renamed from: y */
-    public kt.i k(byte[] bArr) {
+    public tt.i k(byte[] bArr) {
         Intrinsics.checkNotNullParameter(bArr, "<this>");
-        return new kt.i(bArr);
+        return new tt.i(bArr);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // kt.f2
+    @Override // tt.f2
     /* renamed from: z */
     public void u(CompositeEncoder encoder, byte[] content, int i10) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");

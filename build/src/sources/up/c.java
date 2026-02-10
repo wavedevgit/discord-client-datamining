@@ -1,53 +1,162 @@
 package up;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import androidx.viewbinding.ViewBinding;
-import sp.m;
-import sp.n;
+import kotlin.enums.EnumEntries;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements ViewBinding {
+public final class c {
+
+    /* renamed from: d  reason: collision with root package name */
+    public static final a f50882d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f51751a;
+    private boolean f50883a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ImageView f51752b;
+    private b f50884b = b.f50888e;
 
     /* renamed from: c  reason: collision with root package name */
-    public final ImageView f51753c;
+    private boolean f50885c = true;
 
-    private c(View view, ImageView imageView, ImageView imageView2) {
-        this.f51751a = view;
-        this.f51752b = imageView;
-        this.f51753c = imageView2;
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
 
-    public static c a(View view) {
-        int i10 = m.f49964e;
-        ImageView imageView = (ImageView) e4.a.a(view, i10);
-        if (imageView != null) {
-            i10 = m.f49965f;
-            ImageView imageView2 = (ImageView) e4.a.a(view, i10);
-            if (imageView2 != null) {
-                return new c(view, imageView, imageView2);
+        /* renamed from: up.c$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public /* synthetic */ class C0700a {
+
+            /* renamed from: a  reason: collision with root package name */
+            public static final /* synthetic */ int[] f50886a;
+
+            static {
+                int[] iArr = new int[b.values().length];
+                try {
+                    iArr[b.f50887d.ordinal()] = 1;
+                } catch (NoSuchFieldError unused) {
+                }
+                try {
+                    iArr[b.f50888e.ordinal()] = 2;
+                } catch (NoSuchFieldError unused2) {
+                }
+                f50886a = iArr;
             }
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
-    }
 
-    public static c b(LayoutInflater layoutInflater, ViewGroup viewGroup) {
-        if (viewGroup != null) {
-            layoutInflater.inflate(n.f49975c, viewGroup);
-            return a(viewGroup);
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        throw new NullPointerException("parent");
+
+        public final String a(b bVar) {
+            Intrinsics.checkNotNullParameter(bVar, "<this>");
+            int i10 = C0700a.f50886a[bVar.ordinal()];
+            if (i10 != 1) {
+                if (i10 == 2) {
+                    return "passed";
+                }
+                throw new as.p();
+            }
+            return "failed";
+        }
+
+        private a() {
+        }
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    public View getRoot() {
-        return this.f51751a;
+    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final b f50887d = new b("Failed", 0);
+
+        /* renamed from: e  reason: collision with root package name */
+        public static final b f50888e = new b("Passed", 1);
+
+        /* renamed from: i  reason: collision with root package name */
+        private static final /* synthetic */ b[] f50889i;
+
+        /* renamed from: o  reason: collision with root package name */
+        private static final /* synthetic */ EnumEntries f50890o;
+
+        static {
+            b[] a10 = a();
+            f50889i = a10;
+            f50890o = hs.a.a(a10);
+        }
+
+        private b(String str, int i10) {
+        }
+
+        private static final /* synthetic */ b[] a() {
+            return new b[]{f50887d, f50888e};
+        }
+
+        public static b valueOf(String str) {
+            return (b) Enum.valueOf(b.class, str);
+        }
+
+        public static b[] values() {
+            return (b[]) f50889i.clone();
+        }
+    }
+
+    /* renamed from: up.c$c  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public /* synthetic */ class C0701c {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final /* synthetic */ int[] f50891a;
+
+        static {
+            int[] iArr = new int[b.values().length];
+            try {
+                iArr[b.f50887d.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                iArr[b.f50888e.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            f50891a = iArr;
+        }
+    }
+
+    public final b a() {
+        return this.f50884b;
+    }
+
+    public final boolean b() {
+        if (this.f50883a && this.f50885c) {
+            return true;
+        }
+        return false;
+    }
+
+    public final boolean c() {
+        return this.f50883a;
+    }
+
+    public final void d(boolean z10) {
+        this.f50883a = z10;
+    }
+
+    public final void e(boolean z10) {
+        this.f50885c = z10;
+    }
+
+    public final void f() {
+        b bVar;
+        int i10 = C0701c.f50891a[this.f50884b.ordinal()];
+        if (i10 != 1) {
+            if (i10 == 2) {
+                bVar = b.f50887d;
+            } else {
+                throw new as.p();
+            }
+        } else {
+            bVar = b.f50888e;
+        }
+        this.f50884b = bVar;
     }
 }

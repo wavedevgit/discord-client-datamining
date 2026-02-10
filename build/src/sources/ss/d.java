@@ -1,114 +1,140 @@
 package ss;
 
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
-/* JADX INFO: Access modifiers changed from: package-private */
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements c {
+import as.p;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KType;
+import kotlin.reflect.KTypeProjection;
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor;
+import kotlin.reflect.jvm.internal.impl.types.KotlinType;
+import kotlin.reflect.jvm.internal.impl.types.KotlinTypeFactory;
+import kotlin.reflect.jvm.internal.impl.types.SimpleType;
+import kotlin.reflect.jvm.internal.impl.types.StarProjectionImpl;
+import kotlin.reflect.jvm.internal.impl.types.TypeAttributes;
+import kotlin.reflect.jvm.internal.impl.types.TypeConstructor;
+import kotlin.reflect.jvm.internal.impl.types.TypeProjectionBase;
+import kotlin.reflect.jvm.internal.impl.types.TypeProjectionImpl;
+import kotlin.reflect.jvm.internal.impl.types.Variance;
+import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
+import kotlin.reflect.m;
+import us.t2;
+import us.x0;
+import us.x2;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public abstract class d {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final Flow f50118d;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public /* synthetic */ class a {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a implements FlowCollector {
+        /* renamed from: a  reason: collision with root package name */
+        public static final /* synthetic */ int[] f48347a;
 
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ FlowCollector f50119d;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* renamed from: ss.d$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class C0677a extends kotlin.coroutines.jvm.internal.d {
-
-            /* renamed from: d  reason: collision with root package name */
-            /* synthetic */ Object f50120d;
-
-            /* renamed from: i  reason: collision with root package name */
-            int f50122i;
-
-            C0677a(Continuation continuation) {
-                super(continuation);
+        static {
+            int[] iArr = new int[m.values().length];
+            try {
+                iArr[m.f34826d.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
             }
-
-            @Override // kotlin.coroutines.jvm.internal.a
-            public final Object invokeSuspend(Object obj) {
-                this.f50120d = obj;
-                this.f50122i |= Integer.MIN_VALUE;
-                return a.this.emit(null, this);
+            try {
+                iArr[m.f34827e.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
             }
-        }
-
-        a(FlowCollector flowCollector) {
-            this.f50119d = flowCollector;
-        }
-
-        /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
-        /* JADX WARN: Removed duplicated region for block: B:14:0x0031  */
-        @Override // kotlinx.coroutines.flow.FlowCollector
-        /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
-        public final java.lang.Object emit(java.lang.Object r5, kotlin.coroutines.Continuation r6) {
-            /*
-                r4 = this;
-                boolean r0 = r6 instanceof ss.d.a.C0677a
-                if (r0 == 0) goto L13
-                r0 = r6
-                ss.d$a$a r0 = (ss.d.a.C0677a) r0
-                int r1 = r0.f50122i
-                r2 = -2147483648(0xffffffff80000000, float:-0.0)
-                r3 = r1 & r2
-                if (r3 == 0) goto L13
-                int r1 = r1 - r2
-                r0.f50122i = r1
-                goto L18
-            L13:
-                ss.d$a$a r0 = new ss.d$a$a
-                r0.<init>(r6)
-            L18:
-                java.lang.Object r6 = r0.f50120d
-                java.lang.Object r1 = xr.b.f()
-                int r2 = r0.f50122i
-                r3 = 1
-                if (r2 == 0) goto L31
-                if (r2 != r3) goto L29
-                kotlin.c.b(r6)
-                goto L46
-            L29:
-                java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
-                java.lang.String r6 = "call to 'resume' before 'invoke' with coroutine"
-                r5.<init>(r6)
-                throw r5
-            L31:
-                kotlin.c.b(r6)
-                kotlin.coroutines.CoroutineContext r6 = r0.getContext()
-                kotlinx.coroutines.z.k(r6)
-                kotlinx.coroutines.flow.FlowCollector r6 = r4.f50119d
-                r0.f50122i = r3
-                java.lang.Object r5 = r6.emit(r5, r0)
-                if (r5 != r1) goto L46
-                return r1
-            L46:
-                kotlin.Unit r5 = kotlin.Unit.f31765a
-                return r5
-            */
-            throw new UnsupportedOperationException("Method not decompiled: ss.d.a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
+            try {
+                iArr[m.f34828i.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            f48347a = iArr;
         }
     }
 
-    public d(Flow flow) {
-        this.f50118d = flow;
+    private static final SimpleType a(TypeAttributes typeAttributes, TypeConstructor typeConstructor, List list, boolean z10) {
+        KotlinType kotlinType;
+        int i10;
+        TypeProjectionBase starProjectionImpl;
+        List<TypeParameterDescriptor> parameters = typeConstructor.getParameters();
+        Intrinsics.checkNotNullExpressionValue(parameters, "getParameters(...)");
+        List list2 = list;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(list2, 10));
+        int i11 = 0;
+        for (Object obj : list2) {
+            int i12 = i11 + 1;
+            if (i11 < 0) {
+                CollectionsKt.v();
+            }
+            KTypeProjection kTypeProjection = (KTypeProjection) obj;
+            t2 t2Var = (t2) kTypeProjection.c();
+            if (t2Var != null) {
+                kotlinType = t2Var.l();
+            } else {
+                kotlinType = null;
+            }
+            m d10 = kTypeProjection.d();
+            if (d10 == null) {
+                i10 = -1;
+            } else {
+                i10 = a.f48347a[d10.ordinal()];
+            }
+            if (i10 != -1) {
+                if (i10 != 1) {
+                    if (i10 != 2) {
+                        if (i10 == 3) {
+                            Variance variance = Variance.OUT_VARIANCE;
+                            Intrinsics.checkNotNull(kotlinType);
+                            starProjectionImpl = new TypeProjectionImpl(variance, kotlinType);
+                        } else {
+                            throw new p();
+                        }
+                    } else {
+                        Variance variance2 = Variance.IN_VARIANCE;
+                        Intrinsics.checkNotNull(kotlinType);
+                        starProjectionImpl = new TypeProjectionImpl(variance2, kotlinType);
+                    }
+                } else {
+                    Variance variance3 = Variance.INVARIANT;
+                    Intrinsics.checkNotNull(kotlinType);
+                    starProjectionImpl = new TypeProjectionImpl(variance3, kotlinType);
+                }
+            } else {
+                TypeParameterDescriptor typeParameterDescriptor = parameters.get(i11);
+                Intrinsics.checkNotNullExpressionValue(typeParameterDescriptor, "get(...)");
+                starProjectionImpl = new StarProjectionImpl(typeParameterDescriptor);
+            }
+            arrayList.add(starProjectionImpl);
+            i11 = i12;
+        }
+        return KotlinTypeFactory.simpleType$default(typeAttributes, typeConstructor, arrayList, z10, (KotlinTypeRefiner) null, 16, (Object) null);
     }
 
-    @Override // kotlinx.coroutines.flow.Flow
-    public Object collect(FlowCollector flowCollector, Continuation continuation) {
-        Object collect = this.f50118d.collect(new a(flowCollector), continuation);
-        if (collect == xr.b.f()) {
-            return collect;
+    public static final KType b(kotlin.reflect.d dVar, List arguments, boolean z10, List annotations) {
+        x0 x0Var;
+        ClassifierDescriptor descriptor;
+        TypeAttributes empty;
+        Intrinsics.checkNotNullParameter(dVar, "<this>");
+        Intrinsics.checkNotNullParameter(arguments, "arguments");
+        Intrinsics.checkNotNullParameter(annotations, "annotations");
+        if (dVar instanceof x0) {
+            x0Var = (x0) dVar;
+        } else {
+            x0Var = null;
         }
-        return Unit.f31765a;
+        if (x0Var != null && (descriptor = x0Var.getDescriptor()) != null) {
+            TypeConstructor typeConstructor = descriptor.getTypeConstructor();
+            Intrinsics.checkNotNullExpressionValue(typeConstructor, "getTypeConstructor(...)");
+            List<TypeParameterDescriptor> parameters = typeConstructor.getParameters();
+            Intrinsics.checkNotNullExpressionValue(parameters, "getParameters(...)");
+            if (parameters.size() == arguments.size()) {
+                if (annotations.isEmpty()) {
+                    empty = TypeAttributes.Companion.getEmpty();
+                } else {
+                    empty = TypeAttributes.Companion.getEmpty();
+                }
+                return new t2(a(empty, typeConstructor, arguments, z10), null, 2, null);
+            }
+            throw new IllegalArgumentException("Class declares " + parameters.size() + " type parameters, but " + arguments.size() + " were provided.");
+        }
+        throw new x2("Cannot create type for an unsupported classifier: " + dVar + " (" + dVar.getClass() + ')');
     }
 }

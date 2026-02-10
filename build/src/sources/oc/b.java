@@ -11,56 +11,56 @@ import oe.w0;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f40445a = {1, 2, 3, 6};
+    private static final int[] f38771a = {1, 2, 3, 6};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f40446b = {48000, 44100, 32000};
+    private static final int[] f38772b = {48000, 44100, 32000};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f40447c = {24000, 22050, 16000};
+    private static final int[] f38773c = {24000, 22050, 16000};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f40448d = {2, 1, 2, 3, 3, 4, 4, 5};
+    private static final int[] f38774d = {2, 1, 2, 3, 3, 4, 4, 5};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int[] f40449e = {32, 40, 48, 56, 64, 80, 96, 112, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 160, 192, 224, IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, 320, 384, 448, IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, 576, DiscordVideoMediaSource.DEFAULT_WIDTH};
+    private static final int[] f38775e = {32, 40, 48, 56, 64, 80, 96, 112, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 160, 192, 224, IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, 320, 384, 448, IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, 576, DiscordVideoMediaSource.DEFAULT_WIDTH};
 
     /* renamed from: f  reason: collision with root package name */
-    private static final int[] f40450f = {69, 87, 104, 121, 139, 174, 208, 243, 278, 348, 417, 487, 557, 696, 835, 975, 1114, 1253, 1393};
+    private static final int[] f38776f = {69, 87, 104, 121, 139, 174, 208, 243, 278, 348, 417, 487, 557, 696, 835, 975, 1114, 1253, 1393};
 
     /* renamed from: oc.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0586b {
+    public static final class C0548b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f40451a;
+        public final String f38777a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f40452b;
+        public final int f38778b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f40453c;
+        public final int f38779c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f40454d;
+        public final int f38780d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f40455e;
+        public final int f38781e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final int f40456f;
+        public final int f38782f;
 
         /* renamed from: g  reason: collision with root package name */
-        public final int f40457g;
+        public final int f38783g;
 
-        private C0586b(String str, int i10, int i11, int i12, int i13, int i14, int i15) {
-            this.f40451a = str;
-            this.f40452b = i10;
-            this.f40454d = i11;
-            this.f40453c = i12;
-            this.f40455e = i13;
-            this.f40456f = i14;
-            this.f40457g = i15;
+        private C0548b(String str, int i10, int i11, int i12, int i13, int i14, int i15) {
+            this.f38777a = str;
+            this.f38778b = i10;
+            this.f38780d = i11;
+            this.f38779c = i12;
+            this.f38781e = i13;
+            this.f38782f = i14;
+            this.f38783g = i15;
         }
     }
 
@@ -82,15 +82,15 @@ public abstract class b {
     private static int c(int i10, int i11) {
         int i12 = i11 / 2;
         if (i10 >= 0) {
-            int[] iArr = f40446b;
+            int[] iArr = f38772b;
             if (i10 < iArr.length && i11 >= 0) {
-                int[] iArr2 = f40450f;
+                int[] iArr2 = f38776f;
                 if (i12 < iArr2.length) {
                     int i13 = iArr[i10];
                     if (i13 == 44100) {
                         return (iArr2[i12] + (i11 % 2)) * 2;
                     }
-                    int i14 = f40449e[i12];
+                    int i14 = f38775e[i12];
                     if (i13 == 32000) {
                         return i14 * 6;
                     }
@@ -106,13 +106,13 @@ public abstract class b {
     public static Format d(h0 h0Var, String str, String str2, sc.m mVar) {
         g0 g0Var = new g0();
         g0Var.m(h0Var);
-        int i10 = f40446b[g0Var.h(2)];
+        int i10 = f38772b[g0Var.h(2)];
         g0Var.r(8);
-        int i11 = f40448d[g0Var.h(3)];
+        int i11 = f38774d[g0Var.h(3)];
         if (g0Var.h(1) != 0) {
             i11++;
         }
-        int i12 = f40449e[g0Var.h(5)] * 1000;
+        int i12 = f38775e[g0Var.h(5)] * 1000;
         g0Var.c();
         h0Var.U(g0Var.d());
         return new Format.b().U(str).g0("audio/ac3").J(i11).h0(i10).O(mVar).X(str2).I(i12).b0(i12).G();
@@ -124,12 +124,12 @@ public abstract class b {
             if (((byteBuffer.get(byteBuffer.position() + 4) & 192) >> 6) != 3) {
                 i10 = (byteBuffer.get(byteBuffer.position() + 4) & 48) >> 4;
             }
-            return f40445a[i10] * IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
+            return f38771a[i10] * IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
         }
         return 1536;
     }
 
-    public static C0586b f(g0 g0Var) {
+    public static C0548b f(g0 g0Var) {
         boolean z10;
         String str;
         int c10;
@@ -171,21 +171,21 @@ public abstract class b {
             c10 = (g0Var.h(11) + 1) * 2;
             int h11 = g0Var.h(2);
             if (h11 == 3) {
-                i10 = f40447c[g0Var.h(2)];
+                i10 = f38773c[g0Var.h(2)];
                 i14 = 3;
                 i15 = 6;
             } else {
                 int h12 = g0Var.h(2);
-                int i20 = f40445a[h12];
+                int i20 = f38771a[h12];
                 i14 = h12;
-                i10 = f40446b[h11];
+                i10 = f38772b[h11];
                 i15 = i20;
             }
             i12 = i15 * IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
             int a10 = a(c10, i10, i15);
             int h13 = g0Var.h(3);
             boolean g10 = g0Var.g();
-            i11 = f40448d[h13] + (g10 ? 1 : 0);
+            i11 = f38774d[h13] + (g10 ? 1 : 0);
             g0Var.r(10);
             if (g0Var.g()) {
                 g0Var.r(8);
@@ -343,7 +343,7 @@ public abstract class b {
                 str = "audio/ac3";
             }
             int h17 = g0Var.h(6);
-            int i22 = f40449e[h17 / 2] * 1000;
+            int i22 = f38775e[h17 / 2] * 1000;
             c10 = c(h16, h17);
             g0Var.r(8);
             int h18 = g0Var.h(3);
@@ -356,18 +356,18 @@ public abstract class b {
             if (h18 == 2) {
                 g0Var.r(2);
             }
-            int[] iArr = f40446b;
+            int[] iArr = f38772b;
             if (h16 < iArr.length) {
                 i10 = iArr[h16];
             } else {
                 i10 = -1;
             }
-            i11 = f40448d[h18] + (g0Var.g() ? 1 : 0);
+            i11 = f38774d[h18] + (g0Var.g() ? 1 : 0);
             i12 = 1536;
             str2 = str;
             i13 = i22;
         }
-        return new C0586b(str2, i19, i11, i10, c10, i12, i13);
+        return new C0548b(str2, i19, i11, i10, c10, i12, i13);
     }
 
     public static int g(byte[] bArr) {
@@ -387,9 +387,9 @@ public abstract class b {
         g0Var.m(h0Var);
         int h10 = g0Var.h(13) * 1000;
         g0Var.r(3);
-        int i10 = f40446b[g0Var.h(2)];
+        int i10 = f38772b[g0Var.h(2)];
         g0Var.r(10);
-        int i11 = f40448d[g0Var.h(3)];
+        int i11 = f38774d[g0Var.h(3)];
         if (g0Var.h(1) != 0) {
             i11++;
         }

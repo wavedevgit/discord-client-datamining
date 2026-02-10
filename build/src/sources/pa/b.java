@@ -12,7 +12,7 @@ public abstract class b extends z8.b {
         if (dataSource.isFinished()) {
             CloseableReference closeableReference = (CloseableReference) dataSource.getResult();
             try {
-                onNewResultImpl((closeableReference == null || !(closeableReference.J() instanceof ta.d)) ? null : ((ta.d) closeableReference.J()).L1());
+                onNewResultImpl((closeableReference == null || !(closeableReference.J() instanceof ta.d)) ? null : ((ta.d) closeableReference.J()).Q1());
             } finally {
                 CloseableReference.z(closeableReference);
             }

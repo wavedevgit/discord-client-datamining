@@ -2,7 +2,7 @@ package com.discord.misc.utilities.view;
 
 import android.content.res.ColorStateList;
 import android.widget.Button;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import com.facebook.react.uimanager.ViewProps;
 import java.util.ArrayList;
 import kotlin.Metadata;
@@ -24,7 +24,7 @@ public final class ButtonBackgroundUtilsKt {
         }
         arrayList.add(new int[0]);
         arrayList2.add(Integer.valueOf(i10));
-        h0.s0(button, new ColorStateList((int[][]) arrayList.toArray(new int[0]), CollectionsKt.g1(arrayList2)));
+        i0.p0(button, new ColorStateList((int[][]) arrayList.toArray(new int[0]), CollectionsKt.g1(arrayList2)));
     }
 
     public static /* synthetic */ void setBackgroundColors$default(Button button, int i10, Integer num, int i11, Object obj) {

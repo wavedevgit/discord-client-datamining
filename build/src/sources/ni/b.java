@@ -1,80 +1,37 @@
 package ni;
+
+import android.os.IBinder;
+import android.os.IInterface;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-    public static boolean a(CharSequence charSequence, CharSequence charSequence2) {
-        int b10;
-        int length = charSequence.length();
-        if (charSequence == charSequence2) {
-            return true;
-        }
-        if (length != charSequence2.length()) {
-            return false;
-        }
-        for (int i10 = 0; i10 < length; i10++) {
-            char charAt = charSequence.charAt(i10);
-            char charAt2 = charSequence2.charAt(i10);
-            if (charAt != charAt2 && ((b10 = b(charAt)) >= 26 || b10 != b(charAt2))) {
-                return false;
-            }
-        }
-        return true;
+final class b extends u0 {
+
+    /* renamed from: e  reason: collision with root package name */
+    final /* synthetic */ IBinder f37898e;
+
+    /* renamed from: i  reason: collision with root package name */
+    final /* synthetic */ e f37899i;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b(e eVar, IBinder iBinder) {
+        this.f37898e = iBinder;
+        this.f37899i = eVar;
     }
 
-    private static int b(char c10) {
-        return (char) ((c10 | ' ') - 97);
-    }
-
-    public static boolean c(char c10) {
-        if (c10 >= 'a' && c10 <= 'z') {
-            return true;
+    @Override // ni.u0
+    public final void b() {
+        a1 a1Var;
+        List<Runnable> list;
+        List list2;
+        a1Var = this.f37899i.f37901d.f37911i;
+        this.f37899i.f37901d.f37916n = (IInterface) a1Var.a(this.f37898e);
+        f.r(this.f37899i.f37901d);
+        this.f37899i.f37901d.f37909g = false;
+        list = this.f37899i.f37901d.f37906d;
+        for (Runnable runnable : list) {
+            runnable.run();
         }
-        return false;
-    }
-
-    public static boolean d(char c10) {
-        if (c10 >= 'A' && c10 <= 'Z') {
-            return true;
-        }
-        return false;
-    }
-
-    public static String e(String str) {
-        int length = str.length();
-        int i10 = 0;
-        while (i10 < length) {
-            if (d(str.charAt(i10))) {
-                char[] charArray = str.toCharArray();
-                while (i10 < length) {
-                    char c10 = charArray[i10];
-                    if (d(c10)) {
-                        charArray[i10] = (char) (c10 ^ ' ');
-                    }
-                    i10++;
-                }
-                return String.valueOf(charArray);
-            }
-            i10++;
-        }
-        return str;
-    }
-
-    public static String f(String str) {
-        int length = str.length();
-        int i10 = 0;
-        while (i10 < length) {
-            if (c(str.charAt(i10))) {
-                char[] charArray = str.toCharArray();
-                while (i10 < length) {
-                    char c10 = charArray[i10];
-                    if (c(c10)) {
-                        charArray[i10] = (char) (c10 ^ ' ');
-                    }
-                    i10++;
-                }
-                return String.valueOf(charArray);
-            }
-            i10++;
-        }
-        return str;
+        list2 = this.f37899i.f37901d.f37906d;
+        list2.clear();
     }
 }

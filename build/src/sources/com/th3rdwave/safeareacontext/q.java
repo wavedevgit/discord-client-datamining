@@ -1,5 +1,6 @@
 package com.th3rdwave.safeareacontext;
 
+import as.v;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.PixelUtil;
@@ -7,7 +8,6 @@ import com.facebook.react.uimanager.ViewProps;
 import java.util.Map;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
-import rr.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class q {
     public static final Map a(a insets) {

@@ -1,16 +1,11 @@
 package jl;
+
+import com.facebook.react.bridge.Dynamic;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class e implements h {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final String f30242a;
-
-    public e(String str) {
-        this.f30242a = str;
-    }
-
-    @Override // jl.h
-    public void a(kl.g gVar) {
-        gVar.q(this.f30242a);
+public class e extends k {
+    @Override // jl.k
+    /* renamed from: d */
+    public il.a c(Dynamic dynamic) {
+        return il.a.valueOf(dynamic.asString());
     }
 }

@@ -9,28 +9,28 @@ import kotlin.jvm.internal.Intrinsics;
 public class ViewModelStore {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f4607a = new LinkedHashMap();
+    private final Map f4617a = new LinkedHashMap();
 
     public final void a() {
-        for (n0 n0Var : this.f4607a.values()) {
+        for (n0 n0Var : this.f4617a.values()) {
             n0Var.b();
         }
-        this.f4607a.clear();
+        this.f4617a.clear();
     }
 
     public final n0 b(String key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        return (n0) this.f4607a.get(key);
+        return (n0) this.f4617a.get(key);
     }
 
     public final Set c() {
-        return new HashSet(this.f4607a.keySet());
+        return new HashSet(this.f4617a.keySet());
     }
 
     public final void d(String key, n0 viewModel) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(viewModel, "viewModel");
-        n0 n0Var = (n0) this.f4607a.put(key, viewModel);
+        n0 n0Var = (n0) this.f4617a.put(key, viewModel);
         if (n0Var != null) {
             n0Var.b();
         }

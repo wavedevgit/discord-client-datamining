@@ -26,7 +26,7 @@ import oe.h0;
 import oe.w0;
 import oe.y;
 import oe.z;
-import oi.s;
+import qi.s;
 import sc.m;
 import uc.b0;
 import uc.c0;
@@ -817,9 +817,9 @@ public class e implements k {
                     break;
                 case '\n':
                     pe.a b10 = pe.a.b(new h0(g(this.f675b)));
-                    list = b10.f43090a;
-                    this.Y = b10.f43091b;
-                    str2 = b10.f43098i;
+                    list = b10.f41548a;
+                    this.Y = b10.f41549b;
+                    str2 = b10.f41556i;
                     str4 = "video/avc";
                     List list2 = list;
                     str = str2;
@@ -844,9 +844,9 @@ public class e implements k {
                 case '\r':
                     singletonList = Collections.singletonList(g(this.f675b));
                     a.b f11 = oc.a.f(this.f684k);
-                    this.Q = f11.f40442a;
-                    this.O = f11.f40443b;
-                    str = f11.f40444c;
+                    this.Q = f11.f38768a;
+                    this.O = f11.f38769b;
+                    str = f11.f38770c;
                     str4 = "audio/mp4a-latm";
                     i12 = -1;
                     i11 = -1;
@@ -962,9 +962,9 @@ public class e implements k {
                     break;
                 case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
                     pe.f a11 = pe.f.a(new h0(g(this.f675b)));
-                    list = a11.f43132a;
-                    this.Y = a11.f43133b;
-                    str2 = a11.f43140i;
+                    list = a11.f41590a;
+                    this.Y = a11.f41591b;
+                    str2 = a11.f41598i;
                     str4 = "video/hevc";
                     List list22 = list;
                     str = str2;
@@ -1023,7 +1023,7 @@ public class e implements k {
                     throw l0.a("Unrecognized codec identifier.", null);
             }
             if (this.N != null && (a10 = pe.d.a(new h0(this.N))) != null) {
-                str = a10.f43117c;
+                str = a10.f41575c;
                 str4 = "video/dolby-vision";
             }
             String str5 = str4;
@@ -1125,14 +1125,14 @@ public class e implements k {
     private boolean A(uc.y yVar, long j10) {
         if (this.f671y) {
             this.A = j10;
-            yVar.f51535a = this.f672z;
+            yVar.f50714a = this.f672z;
             this.f671y = false;
             return true;
         }
         if (this.f668v) {
             long j11 = this.A;
             if (j11 != -1) {
-                yVar.f51535a = j11;
+                yVar.f50714a = j11;
                 this.A = -1L;
                 return true;
             }
@@ -2052,7 +2052,7 @@ public class e implements k {
                     c cVar2 = this.f667u;
                     if (cVar2.f681h) {
                         if (cVar2.f683j != null) {
-                            cVar2.f685l = new sc.m(new m.b(mc.d.f36850a, "video/webm", this.f667u.f683j.f51435b));
+                            cVar2.f685l = new sc.m(new m.b(mc.d.f36225a, "video/webm", this.f667u.f683j.f50614b));
                             return;
                         }
                         throw l0.a("Encrypted Track found but ContentEncKeyID was not found", null);
@@ -2530,7 +2530,7 @@ public class e implements k {
         this.f653g = new h0(4);
         this.f654h = new h0(ByteBuffer.allocate(4).putInt(-1).array());
         this.f655i = new h0(4);
-        this.f651e = new h0(d0.f40564a);
+        this.f651e = new h0(d0.f38890a);
         this.f652f = new h0(4);
         this.f656j = new h0();
         this.f657k = new h0();

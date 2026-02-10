@@ -192,7 +192,7 @@ public final class GiftView extends CardView {
             i10 = 0;
         }
         ((GenericDraweeHierarchy) this.binding.splash.getHierarchy()).w(i10);
-        int l10 = r1.c.l(valid.getBackgroundColor(), gs.a.c(valid.getSplashOpacity() * ((float) SetSpanOperation.SPAN_MAX_PRIORITY)));
+        int l10 = r1.c.l(valid.getBackgroundColor(), ps.a.c(valid.getSplashOpacity() * ((float) SetSpanOperation.SPAN_MAX_PRIORITY)));
         SimpleDraweeView simpleDraweeView = this.binding.splash;
         ImageRequest fromUri = ImageRequest.fromUri(valid.getSplashUrl());
         if (fromUri != null) {
@@ -361,11 +361,11 @@ public final class GiftView extends CardView {
                 dCDButton.setEnabled(valid.getCanBeAccepted());
                 Intrinsics.checkNotNull(dCDButton);
             } else {
-                throw new rr.p();
+                throw new as.p();
             }
             this.lastState = new Companion.State.Resolved(accessory.getItemId().longValue());
         } else {
-            throw new rr.p();
+            throw new as.p();
         }
     }
 

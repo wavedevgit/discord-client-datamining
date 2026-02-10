@@ -1,16 +1,27 @@
 package us;
+
+import kotlin.jvm.functions.Function0;
+import kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.ParameterDescriptor;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class y {
+public class y implements Function0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    public final p f51824a;
+    /* renamed from: d  reason: collision with root package name */
+    private final CallableMemberDescriptor f51212d;
 
-    public y(p pVar) {
-        this.f51824a = pVar;
+    /* renamed from: e  reason: collision with root package name */
+    private final int f51213e;
+
+    public y(CallableMemberDescriptor callableMemberDescriptor, int i10) {
+        this.f51212d = callableMemberDescriptor;
+        this.f51213e = i10;
     }
 
-    public String toString() {
-        return "Removed[" + this.f51824a + ']';
+    @Override // kotlin.jvm.functions.Function0
+    public Object invoke() {
+        ParameterDescriptor h10;
+        h10 = a0.h(this.f51212d, this.f51213e);
+        return h10;
     }
 }

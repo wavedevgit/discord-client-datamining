@@ -1,30 +1,36 @@
 package mv;
 
-import android.util.StatsEvent;
-import android.util.StatsLog;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
+import ov.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
-    public static void a(int i10, long j10, int i11, int i12, int i13, int i14, int i15, int i16, int i17, int i18, int i19, int i20, int i21, int i22, int i23) {
-        StatsEvent.Builder newBuilder = StatsEvent.newBuilder();
-        newBuilder.setAtomId(i10);
-        newBuilder.writeLong(j10);
-        newBuilder.writeInt(i11);
-        newBuilder.writeInt(i12);
-        newBuilder.writeInt(i13);
-        newBuilder.writeInt(i14);
-        newBuilder.writeInt(i15);
-        newBuilder.writeInt(i16);
-        newBuilder.writeInt(i17);
-        newBuilder.writeInt(i18);
-        newBuilder.writeInt(i19);
-        newBuilder.writeInt(i20);
-        newBuilder.writeInt(i21);
-        newBuilder.writeInt(i22);
-        newBuilder.writeInt(i23);
-        if (762 == i10) {
-            newBuilder.addBooleanAnnotation((byte) 1, true);
+public final class b implements cv.b, ov.a {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f36667a = new b();
+
+    private b() {
+    }
+
+    @Override // cv.b
+    /* renamed from: a */
+    public Double f(Object obj, Object obj2) {
+        List b10 = b(obj);
+        if (b10.size() < 2) {
+            b10 = null;
         }
-        newBuilder.usePooledBuffer();
-        StatsLog.write(newBuilder.build());
+        if (b10 != null) {
+            Double d10 = (Double) b10.get(1);
+            Double d11 = (Double) CollectionsKt.o0(b10);
+            if (d11 != null && d10 != null && !Intrinsics.areEqual(d10, 0.0d)) {
+                return Double.valueOf(d11.doubleValue() / d10.doubleValue());
+            }
+        }
+        return null;
+    }
+
+    public List b(Object obj) {
+        return a.C0581a.c(this, obj);
     }
 }

@@ -16,7 +16,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.Executor;
-import lv.a;
 import org.chromium.net.BidirectionalStream;
 import org.chromium.net.ConnectionMigrationOptions;
 import org.chromium.net.CronetProvider;
@@ -27,6 +26,7 @@ import org.chromium.net.RequestFinishedInfo;
 import org.chromium.net.UrlRequest;
 import org.chromium.net.e;
 import org.json.JSONObject;
+import uv.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class CronetEngine {
     public static final int ACTIVE_REQUEST_COUNT_UNKNOWN = -1;
@@ -65,13 +65,13 @@ public abstract class CronetEngine {
             @Override // java.util.Comparator
             /* renamed from: a */
             public int compare(CronetProvider.a aVar, CronetProvider.a aVar2) {
-                if (CronetProvider.PROVIDER_NAME_FALLBACK.equals(aVar.f42625a.getName())) {
+                if (CronetProvider.PROVIDER_NAME_FALLBACK.equals(aVar.f41091a.getName())) {
                     return 1;
                 }
-                if (CronetProvider.PROVIDER_NAME_FALLBACK.equals(aVar2.f42625a.getName())) {
+                if (CronetProvider.PROVIDER_NAME_FALLBACK.equals(aVar2.f41091a.getName())) {
                     return -1;
                 }
-                return -Builder.compareVersions(aVar.f42625a.getVersion(), aVar2.f42625a.getVersion());
+                return -Builder.compareVersions(aVar.f41091a.getVersion(), aVar2.f41091a.getVersion());
             }
         }
 
@@ -102,29 +102,29 @@ public abstract class CronetEngine {
         }
 
         private static ICronetEngineBuilder createBuilderDelegate(Context context) {
-            iv.a a10 = iv.a.a("CronetEngine#createBuilderDelegate");
+            rv.a a10 = rv.a.a("CronetEngine#createBuilderDelegate");
             try {
                 long uptimeMillis = SystemClock.uptimeMillis();
                 CronetProvider.a aVar = getEnabledCronetProviders(context, new ArrayList(CronetProvider.getAllProviderInfos(context))).get(0);
-                lv.a a11 = lv.d.a(context, aVar.f42626b);
-                a.C0522a c0522a = new a.C0522a();
-                c0522a.f36670e = Boolean.FALSE;
-                c0522a.f36667b = a.C0522a.EnumC0523a.API;
-                c0522a.f36669d = aVar.f42626b;
-                c0522a.f36673h = Process.myUid();
-                c0522a.f36671f = new a.c(ApiVersion.getCronetVersion());
+                uv.a a11 = uv.d.a(context, aVar.f41092b);
+                a.C0706a c0706a = new a.C0706a();
+                c0706a.f51275e = Boolean.FALSE;
+                c0706a.f51272b = a.C0706a.EnumC0707a.API;
+                c0706a.f51274d = aVar.f41092b;
+                c0706a.f51278h = Process.myUid();
+                c0706a.f51276f = new a.c(ApiVersion.getCronetVersion());
                 if (Log.isLoggable(TAG, 3)) {
-                    Log.d(TAG, String.format("Using '%s' provider for creating CronetEngine.Builder.", aVar.f42625a));
+                    Log.d(TAG, String.format("Using '%s' provider for creating CronetEngine.Builder.", aVar.f41091a));
                 }
-                ICronetEngineBuilder iCronetEngineBuilder = aVar.f42625a.createBuilder().mBuilderDelegate;
+                ICronetEngineBuilder iCronetEngineBuilder = aVar.f41091a.createBuilder().mBuilderDelegate;
                 String implCronetVersion = getImplCronetVersion(iCronetEngineBuilder);
                 if (implCronetVersion != null) {
-                    c0522a.f36672g = new a.c(implCronetVersion);
+                    c0706a.f51277g = new a.c(implCronetVersion);
                 }
-                c0522a.f36666a = iCronetEngineBuilder.getLogCronetInitializationRef();
-                c0522a.f36670e = Boolean.TRUE;
-                c0522a.f36668c = (int) (SystemClock.uptimeMillis() - uptimeMillis);
-                a11.a(c0522a);
+                c0706a.f51271a = iCronetEngineBuilder.getLogCronetInitializationRef();
+                c0706a.f51275e = Boolean.TRUE;
+                c0706a.f51273c = (int) (SystemClock.uptimeMillis() - uptimeMillis);
+                a11.a(c0706a);
                 if (a10 != null) {
                     a10.close();
                 }
@@ -145,7 +145,7 @@ public abstract class CronetEngine {
             if (!list.isEmpty()) {
                 Iterator<CronetProvider.a> it = list.iterator();
                 while (it.hasNext()) {
-                    if (!it.next().f42625a.isEnabled()) {
+                    if (!it.next().f41091a.isEnabled()) {
                         it.remove();
                     }
                 }

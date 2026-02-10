@@ -1,151 +1,127 @@
 package com.swmansion.rnscreens;
 
-import android.app.Activity;
 import android.content.Context;
-import android.os.Build;
-import android.view.Choreographer;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowInsets;
-import android.view.WindowManager;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.graphics.Insets;
-import androidx.core.view.WindowInsetsCompat;
-import com.facebook.react.modules.core.ReactChoreographer;
-import com.facebook.react.uimanager.ThemedReactContext;
+import androidx.activity.OnBackPressedCallback;
+import androidx.appcompat.widget.SearchView;
+import androidx.fragment.app.Fragment;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class d extends Toolbar {
-
-    /* renamed from: i0  reason: collision with root package name */
-    private final ScreenStackHeaderConfig f18360i0;
-
-    /* renamed from: j0  reason: collision with root package name */
-    private Insets f18361j0;
-
-    /* renamed from: k0  reason: collision with root package name */
-    private boolean f18362k0;
-
-    /* renamed from: l0  reason: collision with root package name */
-    private boolean f18363l0;
-
-    /* renamed from: m0  reason: collision with root package name */
-    private final Choreographer.FrameCallback f18364m0;
+public final class d extends SearchView {
+    private SearchView.l B0;
+    private View.OnClickListener C0;
+    private OnBackPressedCallback D0;
+    private final i E0;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Choreographer.FrameCallback {
+    public static final class a extends OnBackPressedCallback {
         a() {
+            super(true);
         }
 
-        @Override // android.view.Choreographer.FrameCallback
-        public void doFrame(long j10) {
-            d.this.f18363l0 = false;
-            d dVar = d.this;
-            dVar.measure(View.MeasureSpec.makeMeasureSpec(dVar.getWidth(), Integer.MIN_VALUE), View.MeasureSpec.makeMeasureSpec(d.this.getHeight(), Integer.MIN_VALUE));
-            d dVar2 = d.this;
-            dVar2.layout(dVar2.getLeft(), d.this.getTop(), d.this.getRight(), d.this.getBottom());
+        @Override // androidx.activity.OnBackPressedCallback
+        public void handleOnBackPressed() {
+            d.this.setIconified(true);
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public d(Context context, ScreenStackHeaderConfig config) {
+    public d(Context context, Fragment fragment) {
         super(context);
         Intrinsics.checkNotNullParameter(context, "context");
-        Intrinsics.checkNotNullParameter(config, "config");
-        this.f18360i0 = config;
-        Insets NONE = Insets.f3300e;
-        Intrinsics.checkNotNullExpressionValue(NONE, "NONE");
-        this.f18361j0 = NONE;
-        this.f18364m0 = new a();
+        Intrinsics.checkNotNullParameter(fragment, "fragment");
+        a aVar = new a();
+        this.D0 = aVar;
+        this.E0 = new i(fragment, aVar);
+        super.setOnSearchClickListener(new View.OnClickListener() { // from class: com.swmansion.rnscreens.b
+            @Override // android.view.View.OnClickListener
+            public final void onClick(View view) {
+                d.m0(d.this, view);
+            }
+        });
+        super.setOnCloseListener(new SearchView.l() { // from class: com.swmansion.rnscreens.c
+            @Override // androidx.appcompat.widget.SearchView.l
+            public final boolean a() {
+                boolean n02;
+                n02 = d.n0(d.this);
+                return n02;
+            }
+        });
+        setMaxWidth(Integer.MAX_VALUE);
     }
 
-    private final void T(int i10, int i11, int i12, int i13) {
-        U();
-        setPadding(i10, i11, i12, i13);
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void m0(d dVar, View view) {
+        View.OnClickListener onClickListener = dVar.C0;
+        if (onClickListener != null) {
+            onClickListener.onClick(view);
+        }
+        dVar.E0.b();
     }
 
-    private final void U() {
-        this.f18362k0 = getShouldAvoidDisplayCutout();
-    }
-
-    private final boolean getShouldApplyTopInset() {
-        return this.f18360i0.i();
-    }
-
-    private final boolean getShouldAvoidDisplayCutout() {
-        return this.f18360i0.i();
-    }
-
-    public final void V() {
-        setContentInsetStartWithNavigation(this.f18360i0.getPreferredContentInsetStartWithNavigation());
-        J(this.f18360i0.getPreferredContentInsetStart(), this.f18360i0.getPreferredContentInsetEnd());
-    }
-
-    @NotNull
-    public final ScreenStackHeaderConfig getConfig() {
-        return this.f18360i0;
-    }
-
-    @Override // android.view.View
-    public WindowInsets onApplyWindowInsets(WindowInsets windowInsets) {
-        int i10;
-        WindowInsets onApplyWindowInsets = super.onApplyWindowInsets(windowInsets);
-        WindowInsets rootWindowInsets = getRootWindowInsets();
-        Insets b10 = tn.d.b(this, WindowInsetsCompat.p.b(), rootWindowInsets, false, 4, null);
-        Insets b11 = tn.d.b(this, WindowInsetsCompat.p.h(), rootWindowInsets, false, 4, null);
-        Insets a10 = tn.d.a(this, WindowInsetsCompat.p.h(), rootWindowInsets, true);
-        Insets c10 = Insets.c(b10.f3301a + b11.f3301a, 0, b10.f3303c + b11.f3303c, 0);
-        Intrinsics.checkNotNullExpressionValue(c10, "of(...)");
-        int i11 = b10.f3302b;
-        if (getShouldApplyTopInset()) {
-            i10 = a10.f3302b;
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final boolean n0(d dVar) {
+        boolean z10;
+        SearchView.l lVar = dVar.B0;
+        if (lVar != null) {
+            z10 = lVar.a();
         } else {
-            i10 = 0;
+            z10 = false;
         }
-        Insets c11 = Insets.c(0, Math.max(i11, i10), 0, Math.max(b10.f3304d, 0));
-        Intrinsics.checkNotNullExpressionValue(c11, "of(...)");
-        Insets a11 = Insets.a(c10, c11);
-        Intrinsics.checkNotNullExpressionValue(a11, "add(...)");
-        if (!Intrinsics.areEqual(this.f18361j0, a11)) {
-            this.f18361j0 = a11;
-            T(a11.f3301a, a11.f3302b, a11.f3303c, a11.f3304d);
+        dVar.E0.c();
+        return z10;
+    }
+
+    public final boolean getOverrideBackAction() {
+        return this.E0.a();
+    }
+
+    public final void o0() {
+        p0();
+        setIconified(true);
+    }
+
+    @Override // android.view.ViewGroup, android.view.View
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        if (!J()) {
+            this.E0.b();
         }
-        return onApplyWindowInsets;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // androidx.appcompat.widget.Toolbar, android.view.ViewGroup, android.view.View
-    public void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
-        boolean z11;
-        super.onLayout(z10, i10, i11, i12, i13);
-        ScreenStackHeaderConfig screenStackHeaderConfig = this.f18360i0;
-        if (!z10 && !this.f18362k0) {
-            z11 = false;
-        } else {
-            z11 = true;
-        }
-        screenStackHeaderConfig.k(this, z11);
-        this.f18362k0 = false;
+    @Override // androidx.appcompat.widget.SearchView, android.view.ViewGroup, android.view.View
+    public void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        this.E0.c();
     }
 
-    @Override // android.view.View, android.view.ViewParent
-    public void requestLayout() {
-        Integer num;
-        Window window;
-        WindowManager.LayoutParams attributes;
-        super.requestLayout();
-        Context context = getContext();
-        Intrinsics.checkNotNull(context, "null cannot be cast to non-null type com.facebook.react.uimanager.ThemedReactContext");
-        Activity currentActivity = ((ThemedReactContext) context).getCurrentActivity();
-        if (currentActivity != null && (window = currentActivity.getWindow()) != null && (attributes = window.getAttributes()) != null) {
-            num = Integer.valueOf(attributes.softInputMode);
-        } else {
-            num = null;
-        }
-        if (Build.VERSION.SDK_INT <= 29 && num != null && num.intValue() == 32 && !this.f18363l0 && this.f18364m0 != null) {
-            this.f18363l0 = true;
-            ReactChoreographer.Companion.getInstance().postFrameCallback(ReactChoreographer.CallbackType.NATIVE_ANIMATED_MODULE, this.f18364m0);
-        }
+    public final void p0() {
+        b0("", false);
+    }
+
+    public final void q0() {
+        setIconified(false);
+        requestFocusFromTouch();
+    }
+
+    @Override // androidx.appcompat.widget.SearchView
+    public void setOnCloseListener(SearchView.l lVar) {
+        this.B0 = lVar;
+    }
+
+    @Override // androidx.appcompat.widget.SearchView
+    public void setOnSearchClickListener(View.OnClickListener onClickListener) {
+        this.C0 = onClickListener;
+    }
+
+    public final void setOverrideBackAction(boolean z10) {
+        this.E0.d(z10);
+    }
+
+    public final void setText(@NotNull String text) {
+        Intrinsics.checkNotNullParameter(text, "text");
+        b0(text, false);
     }
 }

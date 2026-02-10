@@ -47,7 +47,7 @@ public final class StepStyles_DocumentStepBorderRadiusJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
@@ -63,7 +63,7 @@ public final class StepStyles_DocumentStepBorderRadiusJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.DocumentStepBorderRadius documentStepBorderRadius) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStepBorderRadius != null) {
-            writer.k();
+            writer.i();
             writer.J("modal");
             this.nullableMeasurementAdapter.toJson(writer, documentStepBorderRadius.getModal());
             writer.J("imagePreview");

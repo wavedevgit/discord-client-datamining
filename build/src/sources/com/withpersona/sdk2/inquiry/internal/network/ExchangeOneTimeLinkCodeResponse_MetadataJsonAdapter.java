@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19341a;
+    private final m.b f20221a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19342b;
+    private final com.squareup.moshi.h f20222b;
 
     public ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("accessToken");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19341a = a10;
+        this.f20221a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "accessToken");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19342b = f10;
+        this.f20222b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,13 +35,13 @@ public final class ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter extends c
         reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19341a);
+            int J = reader.J(this.f20221a);
             if (J != -1) {
                 if (J == 0) {
-                    str = (String) this.f19342b.fromJson(reader);
+                    str = (String) this.f20222b.fromJson(reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -54,9 +54,9 @@ public final class ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter extends c
     public void toJson(t writer, ExchangeOneTimeLinkCodeResponse.Metadata metadata) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (metadata != null) {
-            writer.k();
+            writer.i();
             writer.J("accessToken");
-            this.f19342b.toJson(writer, metadata.a());
+            this.f20222b.toJson(writer, metadata.a());
             writer.s();
             return;
         }

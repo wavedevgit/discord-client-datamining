@@ -23,41 +23,41 @@ import org.jetbrains.annotations.NotNull;
 public final class JvmPackagePartSource implements DeserializedContainerSource {
 
     /* renamed from: a  reason: collision with root package name */
-    private final JvmClassName f32977a;
+    private final JvmClassName f33199a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final JvmClassName f32978b;
+    private final JvmClassName f33200b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final IncompatibleVersionErrorData f32979c;
+    private final IncompatibleVersionErrorData f33201c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f32980d;
+    private final boolean f33202d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final DeserializedContainerAbiStability f32981e;
+    private final DeserializedContainerAbiStability f33203e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final KotlinJvmBinaryClass f32982f;
+    private final KotlinJvmBinaryClass f33204f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f32983g;
+    private final String f33205g;
 
     public JvmPackagePartSource(@NotNull JvmClassName className, JvmClassName jvmClassName, @NotNull ProtoBuf.Package packageProto, @NotNull NameResolver nameResolver, IncompatibleVersionErrorData<MetadataVersion> incompatibleVersionErrorData, boolean z10, @NotNull DeserializedContainerAbiStability abiStability, KotlinJvmBinaryClass kotlinJvmBinaryClass) {
         Intrinsics.checkNotNullParameter(className, "className");
         Intrinsics.checkNotNullParameter(packageProto, "packageProto");
         Intrinsics.checkNotNullParameter(nameResolver, "nameResolver");
         Intrinsics.checkNotNullParameter(abiStability, "abiStability");
-        this.f32977a = className;
-        this.f32978b = jvmClassName;
-        this.f32979c = incompatibleVersionErrorData;
-        this.f32980d = z10;
-        this.f32981e = abiStability;
-        this.f32982f = kotlinJvmBinaryClass;
+        this.f33199a = className;
+        this.f33200b = jvmClassName;
+        this.f33201c = incompatibleVersionErrorData;
+        this.f33202d = z10;
+        this.f33203e = abiStability;
+        this.f33204f = kotlinJvmBinaryClass;
         GeneratedMessageLite.GeneratedExtension<ProtoBuf.Package, Integer> packageModuleName = JvmProtoBuf.packageModuleName;
         Intrinsics.checkNotNullExpressionValue(packageModuleName, "packageModuleName");
         Integer num = (Integer) ProtoBufUtilKt.getExtensionOrNull(packageProto, packageModuleName);
-        this.f32983g = (num == null || (r2 = nameResolver.getString(num.intValue())) == null) ? "main" : "main";
+        this.f33205g = (num == null || (r2 = nameResolver.getString(num.intValue())) == null) ? "main" : "main";
     }
 
     @NotNull
@@ -69,7 +69,7 @@ public final class JvmPackagePartSource implements DeserializedContainerSource {
 
     @NotNull
     public JvmClassName getClassName() {
-        return this.f32977a;
+        return this.f33199a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.SourceElement
@@ -81,11 +81,11 @@ public final class JvmPackagePartSource implements DeserializedContainerSource {
     }
 
     public JvmClassName getFacadeClassName() {
-        return this.f32978b;
+        return this.f33200b;
     }
 
     public final KotlinJvmBinaryClass getKnownJvmBinaryClass() {
-        return this.f32982f;
+        return this.f33204f;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedContainerSource

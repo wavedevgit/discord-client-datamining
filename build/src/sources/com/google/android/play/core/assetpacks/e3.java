@@ -6,43 +6,43 @@ import java.util.Arrays;
 final class e3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private byte[] f15864a = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
+    private byte[] f16613a = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
 
     /* renamed from: b  reason: collision with root package name */
-    private int f15865b;
+    private int f16614b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f15866c;
+    private long f16615c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f15867d;
+    private long f16616d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f15868e;
+    private int f16617e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f15869f;
+    private int f16618f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f15870g;
+    private int f16619g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f15871h;
+    private boolean f16620h;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f15872i;
+    private String f16621i;
 
     public e3() {
         d();
     }
 
     private final int e(int i10, byte[] bArr, int i11, int i12) {
-        int i13 = this.f15865b;
+        int i13 = this.f16614b;
         if (i13 < i10) {
             int min = Math.min(i12, i10 - i13);
-            System.arraycopy(bArr, i11, this.f15864a, this.f15865b, min);
-            int i14 = this.f15865b + min;
-            this.f15865b = i14;
+            System.arraycopy(bArr, i11, this.f16613a, this.f16614b, min);
+            int i14 = this.f16614b + min;
+            this.f16614b = i14;
             if (i14 < i10) {
                 return -1;
             }
@@ -52,7 +52,7 @@ final class e3 {
     }
 
     public final int a() {
-        return this.f15869f;
+        return this.f16618f;
     }
 
     public final int b(byte[] bArr, int i10, int i11) {
@@ -60,57 +60,57 @@ final class e3 {
         if (e10 == -1) {
             return -1;
         }
-        if (this.f15866c == -1) {
-            long b10 = c1.b(this.f15864a, 0);
-            this.f15866c = b10;
+        if (this.f16615c == -1) {
+            long b10 = c1.b(this.f16613a, 0);
+            this.f16615c = b10;
             if (b10 == 67324752) {
-                this.f15871h = false;
-                this.f15867d = c1.b(this.f15864a, 18);
-                this.f15870g = c1.a(this.f15864a, 8);
-                this.f15868e = c1.a(this.f15864a, 26);
-                int a10 = this.f15868e + 30 + c1.a(this.f15864a, 28);
-                this.f15869f = a10;
-                int length = this.f15864a.length;
+                this.f16620h = false;
+                this.f16616d = c1.b(this.f16613a, 18);
+                this.f16619g = c1.a(this.f16613a, 8);
+                this.f16617e = c1.a(this.f16613a, 26);
+                int a10 = this.f16617e + 30 + c1.a(this.f16613a, 28);
+                this.f16618f = a10;
+                int length = this.f16613a.length;
                 if (length < a10) {
                     do {
                         length += length;
                     } while (length < a10);
-                    this.f15864a = Arrays.copyOf(this.f15864a, length);
+                    this.f16613a = Arrays.copyOf(this.f16613a, length);
                 }
             } else {
-                this.f15871h = true;
+                this.f16620h = true;
             }
         }
-        int e11 = e(this.f15869f, bArr, i10 + e10, i11 - e10);
+        int e11 = e(this.f16618f, bArr, i10 + e10, i11 - e10);
         if (e11 == -1) {
             return -1;
         }
         int i12 = e10 + e11;
-        if (!this.f15871h && this.f15872i == null) {
-            this.f15872i = new String(this.f15864a, 30, this.f15868e);
+        if (!this.f16620h && this.f16621i == null) {
+            this.f16621i = new String(this.f16613a, 30, this.f16617e);
         }
         return i12;
     }
 
     public final h4 c() {
-        int i10 = this.f15865b;
-        int i11 = this.f15869f;
+        int i10 = this.f16614b;
+        int i11 = this.f16618f;
         if (i10 < i11) {
-            return new v0(this.f15872i, this.f15867d, this.f15870g, true, this.f15871h, Arrays.copyOf(this.f15864a, i10));
+            return new v0(this.f16621i, this.f16616d, this.f16619g, true, this.f16620h, Arrays.copyOf(this.f16613a, i10));
         }
-        v0 v0Var = new v0(this.f15872i, this.f15867d, this.f15870g, false, this.f15871h, Arrays.copyOf(this.f15864a, i11));
+        v0 v0Var = new v0(this.f16621i, this.f16616d, this.f16619g, false, this.f16620h, Arrays.copyOf(this.f16613a, i11));
         d();
         return v0Var;
     }
 
     public final void d() {
-        this.f15865b = 0;
-        this.f15868e = -1;
-        this.f15866c = -1L;
-        this.f15871h = false;
-        this.f15869f = 30;
-        this.f15867d = -1L;
-        this.f15870g = -1;
-        this.f15872i = null;
+        this.f16614b = 0;
+        this.f16617e = -1;
+        this.f16615c = -1L;
+        this.f16620h = false;
+        this.f16618f = 30;
+        this.f16616d = -1L;
+        this.f16619g = -1;
+        this.f16621i = null;
     }
 }

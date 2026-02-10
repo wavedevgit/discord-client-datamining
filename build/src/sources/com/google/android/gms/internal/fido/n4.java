@@ -3,5 +3,5 @@ package com.google.android.gms.internal.fido;
 abstract class n4 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int f14168a = 0;
+    public static final /* synthetic */ int f14745a = 0;
 }

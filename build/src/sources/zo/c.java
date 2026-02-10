@@ -1,43 +1,24 @@
 package zo;
 
-import androidx.lifecycle.b0;
-import com.withpersona.sdk2.inquiry.FallbackMode;
-import kotlin.jvm.internal.Intrinsics;
+import lr.h;
+import to.c4;
+import zo.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c {
+public final class c implements a.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FallbackMode f56568a;
+    private final b f56555a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final vo.f f56569b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final b0 f56570c;
-
-    public c(FallbackMode fallbackMode, vo.f environment, b0 savedStateHandle) {
-        Intrinsics.checkNotNullParameter(fallbackMode, "fallbackMode");
-        Intrinsics.checkNotNullParameter(environment, "environment");
-        Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
-        this.f56568a = fallbackMode;
-        this.f56569b = environment;
-        this.f56570c = savedStateHandle;
+    c(b bVar) {
+        this.f56555a = bVar;
     }
 
-    public final vo.f a() {
-        return this.f56569b;
+    public static h b(b bVar) {
+        return lr.e.a(new c(bVar));
     }
 
-    public final FallbackMode b() {
-        return this.f56568a;
-    }
-
-    public final jo.a c(i fallbackModeManager) {
-        Intrinsics.checkNotNullParameter(fallbackModeManager, "fallbackModeManager");
-        return fallbackModeManager;
-    }
-
-    public final b0 d() {
-        return this.f56570c;
+    @Override // zo.a.b
+    public a a(c4.e eVar) {
+        return this.f56555a.b(eVar);
     }
 }

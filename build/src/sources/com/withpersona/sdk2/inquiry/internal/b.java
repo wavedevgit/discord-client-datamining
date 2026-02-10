@@ -2,21 +2,21 @@ package com.withpersona.sdk2.inquiry.internal;
 
 import com.withpersona.sdk2.inquiry.internal.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements a.InterfaceC0262a {
+public final class b implements a.InterfaceC0247a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final vo.c f18832a;
+    private final ep.c f19712a;
 
-    b(vo.c cVar) {
-        this.f18832a = cVar;
+    b(ep.c cVar) {
+        this.f19712a = cVar;
     }
 
-    public static cr.h b(vo.c cVar) {
-        return cr.e.a(new b(cVar));
+    public static lr.h b(ep.c cVar) {
+        return lr.e.a(new b(cVar));
     }
 
-    @Override // com.withpersona.sdk2.inquiry.internal.a.InterfaceC0262a
+    @Override // com.withpersona.sdk2.inquiry.internal.a.InterfaceC0247a
     public a a(String str) {
-        return this.f18832a.b(str);
+        return this.f19712a.b(str);
     }
 }

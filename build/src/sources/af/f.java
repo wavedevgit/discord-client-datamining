@@ -31,14 +31,14 @@ public final class f implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
-        Status status = Status.f13876s;
+        Status status = Status.f14453s;
         try {
             String str = this.f761d;
             HttpURLConnection httpURLConnection = (HttpURLConnection) new URL("https://accounts.google.com/o/oauth2/revoke?token=" + str).openConnection();
             httpURLConnection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
             int responseCode = httpURLConnection.getResponseCode();
             if (responseCode == 200) {
-                status = Status.f13874q;
+                status = Status.f14451q;
             } else {
                 f760i.b("Unable to revoke access!", new Object[0]);
             }

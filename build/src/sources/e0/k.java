@@ -21,32 +21,32 @@ import x.y0;
 public class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d0 f21036a;
+    private final d0 f22203a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f21037b;
+    private final int f22204b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f21038c;
+    private final int f22205c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Rational f21039d;
+    private final Rational f22206d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final l f21040e;
+    private final l f22207e;
 
     public k(d0 d0Var, Size size) {
         Rational i10;
-        this.f21036a = d0Var;
-        this.f21037b = d0Var.a();
-        this.f21038c = d0Var.c();
+        this.f22203a = d0Var;
+        this.f22204b = d0Var.a();
+        this.f22205c = d0Var.c();
         if (size != null) {
             i10 = h(size);
         } else {
             i10 = i(d0Var);
         }
-        this.f21039d = i10;
-        this.f21040e = new l(d0Var, i10);
+        this.f22206d = i10;
+        this.f22207e = new l(d0Var, i10);
     }
 
     private static LinkedHashMap a(List list, m0.a aVar, Rational rational) {
@@ -70,7 +70,7 @@ public class k {
             }
         }
         ArrayList<Rational> arrayList = new ArrayList(map.keySet());
-        Collections.sort(arrayList, new a.C0125a(n10, rational));
+        Collections.sort(arrayList, new a.C0090a(n10, rational));
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         for (Rational rational3 : arrayList) {
             linkedHashMap.put(rational3, (List) map.get(rational3));
@@ -82,7 +82,7 @@ public class k {
         if (cVar.a() == 1) {
             ArrayList arrayList = new ArrayList();
             arrayList.addAll(list);
-            arrayList.addAll(this.f21036a.d(i10));
+            arrayList.addAll(this.f22203a.d(i10));
             Collections.sort(arrayList, new b0.d(true));
             return arrayList;
         }
@@ -131,7 +131,7 @@ public class k {
     private static void g(List list, m0.d dVar) {
         if (!list.isEmpty()) {
             int b10 = dVar.b();
-            if (!dVar.equals(m0.d.f36727c)) {
+            if (!dVar.equals(m0.d.f36102c)) {
                 Size a10 = dVar.a();
                 if (b10 != 0) {
                     if (b10 != 1) {
@@ -173,7 +173,7 @@ public class k {
     private List j(List list, int i10) {
         List l10 = l(list, i10);
         if (l10 == null) {
-            l10 = this.f21036a.f(i10);
+            l10 = this.f22203a.f(i10);
         }
         ArrayList arrayList = new ArrayList(l10);
         Collections.sort(arrayList, new b0.d(true));
@@ -186,8 +186,8 @@ public class k {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static List k(List list) {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(b0.a.f6234a);
-        arrayList.add(b0.a.f6236c);
+        arrayList.add(b0.a.f6338a);
+        arrayList.add(b0.a.f6340c);
         Iterator it = list.iterator();
         while (it.hasNext()) {
             Size size = (Size) it.next();
@@ -238,14 +238,14 @@ public class k {
                 y0.c("SupportedOutputSizesCollector", "Undefined target aspect ratio: " + i10);
                 return null;
             } else if (z10) {
-                return b0.a.f6236c;
+                return b0.a.f6340c;
             } else {
-                return b0.a.f6237d;
+                return b0.a.f6341d;
             }
         } else if (z10) {
-            return b0.a.f6234a;
+            return b0.a.f6338a;
         } else {
-            return b0.a.f6235b;
+            return b0.a.f6339b;
         }
     }
 
@@ -333,13 +333,13 @@ public class k {
         m0.c o10 = i1Var.o(null);
         List j10 = j(i1Var.l(null), x2Var.getInputFormat());
         if (o10 == null) {
-            return this.f21040e.f(j10, x2Var);
+            return this.f22207e.f(j10, x2Var);
         }
         Size i10 = ((i1) x2Var).i(null);
         int z10 = i1Var.z(0);
         if (!x2Var.P(false)) {
             j10 = c(j10, o10, x2Var.getInputFormat());
         }
-        return p(i1Var.m(), j10, i10, z10, this.f21039d, this.f21037b, this.f21038c);
+        return p(i1Var.m(), j10, i10, z10, this.f22206d, this.f22204b, this.f22205c);
     }
 }

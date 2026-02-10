@@ -10,58 +10,58 @@ import java.util.Arrays;
 public class a implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Reader f29261d;
+    private final Reader f30196d;
 
     /* renamed from: t  reason: collision with root package name */
-    private long f29269t;
+    private long f30204t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f29270u;
+    private int f30205u;
 
     /* renamed from: v  reason: collision with root package name */
-    private String f29271v;
+    private String f30206v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int[] f29272w;
+    private int[] f30207w;
 
     /* renamed from: y  reason: collision with root package name */
-    private String[] f29274y;
+    private String[] f30209y;
 
     /* renamed from: z  reason: collision with root package name */
-    private int[] f29275z;
+    private int[] f30210z;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f29262e = false;
+    private boolean f30197e = false;
 
     /* renamed from: i  reason: collision with root package name */
-    private final char[] f29263i = new char[IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET];
+    private final char[] f30198i = new char[IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET];
 
     /* renamed from: o  reason: collision with root package name */
-    private int f29264o = 0;
+    private int f30199o = 0;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f29265p = 0;
+    private int f30200p = 0;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f29266q = 0;
+    private int f30201q = 0;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f29267r = 0;
+    private int f30202r = 0;
 
     /* renamed from: s  reason: collision with root package name */
-    int f29268s = 0;
+    int f30203s = 0;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f29273x = 1;
+    private int f30208x = 1;
 
     public a(Reader reader) {
         int[] iArr = new int[32];
-        this.f29272w = iArr;
+        this.f30207w = iArr;
         iArr[0] = 6;
-        this.f29274y = new String[32];
-        this.f29275z = new int[32];
+        this.f30209y = new String[32];
+        this.f30210z = new int[32];
         if (reader != null) {
-            this.f29261d = reader;
+            this.f30196d = reader;
             return;
         }
         throw new NullPointerException("in == null");
@@ -75,7 +75,7 @@ public class a implements Closeable {
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x006a, code lost:
         r1.append(r0, r3, r2 - r3);
-        r9.f29264o = r2;
+        r9.f30199o = r2;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -84,11 +84,11 @@ public class a implements Closeable {
     private java.lang.String C(char r10) {
         /*
             r9 = this;
-            char[] r0 = r9.f29263i
+            char[] r0 = r9.f30198i
             r1 = 0
         L3:
-            int r2 = r9.f29264o
-            int r3 = r9.f29265p
+            int r2 = r9.f30199o
+            int r3 = r9.f30200p
         L7:
             r4 = r3
             r3 = r2
@@ -99,7 +99,7 @@ public class a implements Closeable {
             int r7 = r2 + 1
             char r2 = r0[r2]
             if (r2 != r10) goto L28
-            r9.f29264o = r7
+            r9.f30199o = r7
             int r7 = r7 - r3
             int r7 = r7 - r6
             if (r1 != 0) goto L20
@@ -113,7 +113,7 @@ public class a implements Closeable {
         L28:
             r8 = 92
             if (r2 != r8) goto L4d
-            r9.f29264o = r7
+            r9.f30199o = r7
             int r7 = r7 - r3
             int r2 = r7 + (-1)
             if (r1 != 0) goto L3e
@@ -123,18 +123,18 @@ public class a implements Closeable {
             r1.<init>(r4)
         L3e:
             r1.append(r0, r3, r2)
-            char r2 = r9.C0()
+            char r2 = r9.z0()
             r1.append(r2)
-            int r2 = r9.f29264o
-            int r3 = r9.f29265p
+            int r2 = r9.f30199o
+            int r3 = r9.f30200p
             goto L7
         L4d:
             r5 = 10
             if (r2 != r5) goto L58
-            int r2 = r9.f29266q
+            int r2 = r9.f30201q
             int r2 = r2 + r6
-            r9.f29266q = r2
-            r9.f29267r = r7
+            r9.f30201q = r2
+            r9.f30202r = r7
         L58:
             r2 = r7
             goto L9
@@ -149,149 +149,165 @@ public class a implements Closeable {
         L6a:
             int r4 = r2 - r3
             r1.append(r0, r3, r4)
-            r9.f29264o = r2
+            r9.f30199o = r2
             boolean r2 = r9.m(r6)
             if (r2 == 0) goto L78
             goto L3
         L78:
             java.lang.String r10 = "Unterminated string"
-            java.io.IOException r10 = r9.O0(r10)
+            java.io.IOException r10 = r9.H0(r10)
             throw r10
         */
         throw new UnsupportedOperationException("Method not decompiled: io.sentry.vendor.gson.stream.a.C(char):java.lang.String");
     }
 
-    private char C0() {
-        int i10;
-        if (this.f29264o == this.f29265p && !m(1)) {
-            throw O0("Unterminated escape sequence");
-        }
-        char[] cArr = this.f29263i;
-        int i11 = this.f29264o;
-        int i12 = i11 + 1;
-        this.f29264o = i12;
-        char c10 = cArr[i11];
-        if (c10 != '\n') {
-            if (c10 != '\"' && c10 != '\'' && c10 != '/' && c10 != '\\') {
-                if (c10 != 'b') {
-                    if (c10 != 'f') {
-                        if (c10 == 'n') {
-                            return '\n';
-                        }
-                        if (c10 != 'r') {
-                            if (c10 != 't') {
-                                if (c10 == 'u') {
-                                    if (i11 + 5 > this.f29265p && !m(4)) {
-                                        throw O0("Unterminated escape sequence");
-                                    }
-                                    int i13 = this.f29264o;
-                                    int i14 = i13 + 4;
-                                    char c11 = 0;
-                                    while (i13 < i14) {
-                                        char c12 = this.f29263i[i13];
-                                        char c13 = (char) (c11 << 4);
-                                        if (c12 >= '0' && c12 <= '9') {
-                                            i10 = c12 - '0';
-                                        } else if (c12 >= 'a' && c12 <= 'f') {
-                                            i10 = c12 - 'W';
-                                        } else if (c12 >= 'A' && c12 <= 'F') {
-                                            i10 = c12 - '7';
-                                        } else {
-                                            throw new NumberFormatException("\\u" + new String(this.f29263i, this.f29264o, 4));
-                                        }
-                                        c11 = (char) (c13 + i10);
-                                        i13++;
-                                    }
-                                    this.f29264o += 4;
-                                    return c11;
-                                }
-                                throw O0("Invalid escape sequence");
-                            }
-                            return '\t';
-                        }
-                        return '\r';
-                    }
-                    return '\f';
-                }
-                return '\b';
-            }
-            return c10;
-        }
-        this.f29266q++;
-        this.f29267r = i12;
-        return c10;
-    }
-
-    private void D0(char c10) {
-        char[] cArr = this.f29263i;
+    private void C0(char c10) {
+        char[] cArr = this.f30198i;
         do {
-            int i10 = this.f29264o;
-            int i11 = this.f29265p;
+            int i10 = this.f30199o;
+            int i11 = this.f30200p;
             while (i10 < i11) {
                 int i12 = i10 + 1;
                 char c11 = cArr[i10];
                 if (c11 == c10) {
-                    this.f29264o = i12;
+                    this.f30199o = i12;
                     return;
                 } else if (c11 == '\\') {
-                    this.f29264o = i12;
-                    C0();
-                    i10 = this.f29264o;
-                    i11 = this.f29265p;
+                    this.f30199o = i12;
+                    z0();
+                    i10 = this.f30199o;
+                    i11 = this.f30200p;
                 } else {
                     if (c11 == '\n') {
-                        this.f29266q++;
-                        this.f29267r = i12;
+                        this.f30201q++;
+                        this.f30202r = i12;
                     }
                     i10 = i12;
                 }
             }
-            this.f29264o = i10;
+            this.f30199o = i10;
         } while (m(1));
-        throw O0("Unterminated string");
+        throw H0("Unterminated string");
     }
 
-    private boolean G0(String str) {
+    private boolean E0(String str) {
         int length = str.length();
         while (true) {
-            if (this.f29264o + length > this.f29265p && !m(length)) {
+            if (this.f30199o + length > this.f30200p && !m(length)) {
                 return false;
             }
-            char[] cArr = this.f29263i;
-            int i10 = this.f29264o;
+            char[] cArr = this.f30198i;
+            int i10 = this.f30199o;
             if (cArr[i10] == '\n') {
-                this.f29266q++;
-                this.f29267r = i10 + 1;
+                this.f30201q++;
+                this.f30202r = i10 + 1;
             } else {
                 for (int i11 = 0; i11 < length; i11++) {
-                    if (this.f29263i[this.f29264o + i11] != str.charAt(i11)) {
+                    if (this.f30198i[this.f30199o + i11] != str.charAt(i11)) {
                         break;
                     }
                 }
                 return true;
             }
-            this.f29264o++;
+            this.f30199o++;
         }
     }
 
-    private void H0() {
+    private void F0() {
         char c10;
         do {
-            if (this.f29264o < this.f29265p || m(1)) {
-                char[] cArr = this.f29263i;
-                int i10 = this.f29264o;
+            if (this.f30199o < this.f30200p || m(1)) {
+                char[] cArr = this.f30198i;
+                int i10 = this.f30199o;
                 int i11 = i10 + 1;
-                this.f29264o = i11;
+                this.f30199o = i11;
                 c10 = cArr[i10];
                 if (c10 == '\n') {
-                    this.f29266q++;
-                    this.f29267r = i11;
+                    this.f30201q++;
+                    this.f30202r = i11;
                     return;
                 }
             } else {
                 return;
             }
         } while (c10 != '\r');
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:33:0x0048, code lost:
+        a();
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private void G0() {
+        /*
+            r4 = this;
+        L0:
+            r0 = 0
+        L1:
+            int r1 = r4.f30199o
+            int r2 = r1 + r0
+            int r3 = r4.f30200p
+            if (r2 >= r3) goto L51
+            char[] r2 = r4.f30198i
+            int r1 = r1 + r0
+            char r1 = r2[r1]
+            r2 = 9
+            if (r1 == r2) goto L4b
+            r2 = 10
+            if (r1 == r2) goto L4b
+            r2 = 12
+            if (r1 == r2) goto L4b
+            r2 = 13
+            if (r1 == r2) goto L4b
+            r2 = 32
+            if (r1 == r2) goto L4b
+            r2 = 35
+            if (r1 == r2) goto L48
+            r2 = 44
+            if (r1 == r2) goto L4b
+            r2 = 47
+            if (r1 == r2) goto L48
+            r2 = 61
+            if (r1 == r2) goto L48
+            r2 = 123(0x7b, float:1.72E-43)
+            if (r1 == r2) goto L4b
+            r2 = 125(0x7d, float:1.75E-43)
+            if (r1 == r2) goto L4b
+            r2 = 58
+            if (r1 == r2) goto L4b
+            r2 = 59
+            if (r1 == r2) goto L48
+            switch(r1) {
+                case 91: goto L4b;
+                case 92: goto L48;
+                case 93: goto L4b;
+                default: goto L45;
+            }
+        L45:
+            int r0 = r0 + 1
+            goto L1
+        L48:
+            r4.a()
+        L4b:
+            int r1 = r4.f30199o
+            int r1 = r1 + r0
+            r4.f30199o = r1
+            return
+        L51:
+            int r1 = r1 + r0
+            r4.f30199o = r1
+            r0 = 1
+            boolean r0 = r4.m(r0)
+            if (r0 != 0) goto L0
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: io.sentry.vendor.gson.stream.a.G0():void");
+    }
+
+    private IOException H0(String str) {
+        throw new d(str + p());
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:34:0x004a, code lost:
@@ -311,11 +327,11 @@ public class a implements Closeable {
         L2:
             r2 = r1
         L3:
-            int r3 = r6.f29264o
+            int r3 = r6.f30199o
             int r4 = r3 + r2
-            int r5 = r6.f29265p
+            int r5 = r6.f30200p
             if (r4 >= r5) goto L4e
-            char[] r4 = r6.f29263i
+            char[] r4 = r6.f30198i
             int r3 = r3 + r2
             char r3 = r4[r3]
             r4 = 9
@@ -357,7 +373,7 @@ public class a implements Closeable {
             r6.a()
             goto L5c
         L4e:
-            char[] r3 = r6.f29263i
+            char[] r3 = r6.f30198i
             int r3 = r3.length
             if (r2 >= r3) goto L5e
             int r3 = r2 + 1
@@ -374,31 +390,31 @@ public class a implements Closeable {
             int r3 = java.lang.Math.max(r2, r3)
             r0.<init>(r3)
         L6b:
-            char[] r3 = r6.f29263i
-            int r4 = r6.f29264o
+            char[] r3 = r6.f30198i
+            int r4 = r6.f30199o
             r0.append(r3, r4, r2)
-            int r3 = r6.f29264o
+            int r3 = r6.f30199o
             int r3 = r3 + r2
-            r6.f29264o = r3
+            r6.f30199o = r3
             r2 = 1
             boolean r2 = r6.m(r2)
             if (r2 != 0) goto L2
         L7e:
             if (r0 != 0) goto L8a
             java.lang.String r0 = new java.lang.String
-            char[] r2 = r6.f29263i
-            int r3 = r6.f29264o
+            char[] r2 = r6.f30198i
+            int r3 = r6.f30199o
             r0.<init>(r2, r3, r1)
             goto L95
         L8a:
-            char[] r2 = r6.f29263i
-            int r3 = r6.f29264o
+            char[] r2 = r6.f30198i
+            int r3 = r6.f30199o
             r0.append(r2, r3, r1)
             java.lang.String r0 = r0.toString()
         L95:
-            int r2 = r6.f29264o
+            int r2 = r6.f30199o
             int r2 = r2 + r1
-            r6.f29264o = r2
+            r6.f30199o = r2
             return r0
         */
         throw new UnsupportedOperationException("Method not decompiled: io.sentry.vendor.gson.stream.a.I():java.lang.String");
@@ -408,7 +424,7 @@ public class a implements Closeable {
         String str;
         String str2;
         int i10;
-        char c10 = this.f29263i[this.f29264o];
+        char c10 = this.f30198i[this.f30199o];
         if (c10 != 't' && c10 != 'T') {
             if (c10 != 'f' && c10 != 'F') {
                 if (c10 != 'n' && c10 != 'N') {
@@ -429,97 +445,20 @@ public class a implements Closeable {
         }
         int length = str.length();
         for (int i11 = 1; i11 < length; i11++) {
-            if (this.f29264o + i11 >= this.f29265p && !m(i11 + 1)) {
+            if (this.f30199o + i11 >= this.f30200p && !m(i11 + 1)) {
                 return 0;
             }
-            char c11 = this.f29263i[this.f29264o + i11];
+            char c11 = this.f30198i[this.f30199o + i11];
             if (c11 != str.charAt(i11) && c11 != str2.charAt(i11)) {
                 return 0;
             }
         }
-        if ((this.f29264o + length < this.f29265p || m(length + 1)) && n(this.f29263i[this.f29264o + length])) {
+        if ((this.f30199o + length < this.f30200p || m(length + 1)) && n(this.f30198i[this.f30199o + length])) {
             return 0;
         }
-        this.f29264o += length;
-        this.f29268s = i10;
+        this.f30199o += length;
+        this.f30203s = i10;
         return i10;
-    }
-
-    /* JADX WARN: Code restructure failed: missing block: B:33:0x0048, code lost:
-        a();
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    private void J0() {
-        /*
-            r4 = this;
-        L0:
-            r0 = 0
-        L1:
-            int r1 = r4.f29264o
-            int r2 = r1 + r0
-            int r3 = r4.f29265p
-            if (r2 >= r3) goto L51
-            char[] r2 = r4.f29263i
-            int r1 = r1 + r0
-            char r1 = r2[r1]
-            r2 = 9
-            if (r1 == r2) goto L4b
-            r2 = 10
-            if (r1 == r2) goto L4b
-            r2 = 12
-            if (r1 == r2) goto L4b
-            r2 = 13
-            if (r1 == r2) goto L4b
-            r2 = 32
-            if (r1 == r2) goto L4b
-            r2 = 35
-            if (r1 == r2) goto L48
-            r2 = 44
-            if (r1 == r2) goto L4b
-            r2 = 47
-            if (r1 == r2) goto L48
-            r2 = 61
-            if (r1 == r2) goto L48
-            r2 = 123(0x7b, float:1.72E-43)
-            if (r1 == r2) goto L4b
-            r2 = 125(0x7d, float:1.75E-43)
-            if (r1 == r2) goto L4b
-            r2 = 58
-            if (r1 == r2) goto L4b
-            r2 = 59
-            if (r1 == r2) goto L48
-            switch(r1) {
-                case 91: goto L4b;
-                case 92: goto L48;
-                case 93: goto L4b;
-                default: goto L45;
-            }
-        L45:
-            int r0 = r0 + 1
-            goto L1
-        L48:
-            r4.a()
-        L4b:
-            int r1 = r4.f29264o
-            int r1 = r1 + r0
-            r4.f29264o = r1
-            return
-        L51:
-            int r1 = r1 + r0
-            r4.f29264o = r1
-            r0 = 1
-            boolean r0 = r4.m(r0)
-            if (r0 != 0) goto L0
-            return
-        */
-        throw new UnsupportedOperationException("Method not decompiled: io.sentry.vendor.gson.stream.a.J0():void");
-    }
-
-    private IOException O0(String str) {
-        throw new d(str + p());
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:52:0x0093, code lost:
@@ -550,9 +489,9 @@ public class a implements Closeable {
         r11 = -r11;
      */
     /* JADX WARN: Code restructure failed: missing block: B:64:0x00ab, code lost:
-        r19.f29269t = r11;
-        r19.f29264o += r8;
-        r19.f29268s = 15;
+        r19.f30204t = r11;
+        r19.f30199o += r8;
+        r19.f30203s = 15;
      */
     /* JADX WARN: Code restructure failed: missing block: B:65:0x00b6, code lost:
         return 15;
@@ -570,8 +509,8 @@ public class a implements Closeable {
         return r18;
      */
     /* JADX WARN: Code restructure failed: missing block: B:73:0x00c1, code lost:
-        r19.f29270u = r8;
-        r19.f29268s = 16;
+        r19.f30205u = r8;
+        r19.f30203s = 16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:74:0x00c7, code lost:
         return 16;
@@ -592,36 +531,36 @@ public class a implements Closeable {
     }
 
     private void Z(int i10) {
-        int i11 = this.f29273x;
-        int[] iArr = this.f29272w;
+        int i11 = this.f30208x;
+        int[] iArr = this.f30207w;
         if (i11 == iArr.length) {
             int i12 = i11 * 2;
-            this.f29272w = Arrays.copyOf(iArr, i12);
-            this.f29275z = Arrays.copyOf(this.f29275z, i12);
-            this.f29274y = (String[]) Arrays.copyOf(this.f29274y, i12);
+            this.f30207w = Arrays.copyOf(iArr, i12);
+            this.f30210z = Arrays.copyOf(this.f30210z, i12);
+            this.f30209y = (String[]) Arrays.copyOf(this.f30209y, i12);
         }
-        int[] iArr2 = this.f29272w;
-        int i13 = this.f29273x;
-        this.f29273x = i13 + 1;
+        int[] iArr2 = this.f30207w;
+        int i13 = this.f30208x;
+        this.f30208x = i13 + 1;
         iArr2[i13] = i10;
     }
 
     private void a() {
-        if (this.f29262e) {
+        if (this.f30197e) {
             return;
         }
-        throw O0("Use JsonReader.setLenient(true) to accept malformed JSON");
+        throw H0("Use JsonReader.setLenient(true) to accept malformed JSON");
     }
 
-    private void g() {
+    private void h() {
         y(true);
-        int i10 = this.f29264o;
+        int i10 = this.f30199o;
         int i11 = i10 - 1;
-        this.f29264o = i11;
-        if (i10 + 4 <= this.f29265p || m(5)) {
-            char[] cArr = this.f29263i;
+        this.f30199o = i11;
+        if (i10 + 4 <= this.f30200p || m(5)) {
+            char[] cArr = this.f30198i;
             if (cArr[i11] == ')' && cArr[i10] == ']' && cArr[i10 + 1] == '}' && cArr[i10 + 2] == '\'' && cArr[i10 + 3] == '\n') {
-                this.f29264o += 5;
+                this.f30199o += 5;
             }
         }
     }
@@ -629,31 +568,31 @@ public class a implements Closeable {
     private boolean m(int i10) {
         int i11;
         int i12;
-        char[] cArr = this.f29263i;
-        int i13 = this.f29267r;
-        int i14 = this.f29264o;
-        this.f29267r = i13 - i14;
-        int i15 = this.f29265p;
+        char[] cArr = this.f30198i;
+        int i13 = this.f30202r;
+        int i14 = this.f30199o;
+        this.f30202r = i13 - i14;
+        int i15 = this.f30200p;
         if (i15 != i14) {
             int i16 = i15 - i14;
-            this.f29265p = i16;
+            this.f30200p = i16;
             System.arraycopy(cArr, i14, cArr, 0, i16);
         } else {
-            this.f29265p = 0;
+            this.f30200p = 0;
         }
-        this.f29264o = 0;
+        this.f30199o = 0;
         do {
-            Reader reader = this.f29261d;
-            int i17 = this.f29265p;
+            Reader reader = this.f30196d;
+            int i17 = this.f30200p;
             int read = reader.read(cArr, i17, cArr.length - i17);
             if (read == -1) {
                 return false;
             }
-            i11 = this.f29265p + read;
-            this.f29265p = i11;
-            if (this.f29266q == 0 && (i12 = this.f29267r) == 0 && i11 > 0 && cArr[0] == 65279) {
-                this.f29264o++;
-                this.f29267r = i12 + 1;
+            i11 = this.f30200p + read;
+            this.f30200p = i11;
+            if (this.f30201q == 0 && (i12 = this.f30202r) == 0 && i11 > 0 && cArr[0] == 65279) {
+                this.f30199o++;
+                this.f30202r = i12 + 1;
                 i10++;
                 continue;
             }
@@ -694,65 +633,65 @@ public class a implements Closeable {
 
     private int y(boolean z10) {
         char c10;
-        char[] cArr = this.f29263i;
-        int i10 = this.f29264o;
-        int i11 = this.f29265p;
+        char[] cArr = this.f30198i;
+        int i10 = this.f30199o;
+        int i11 = this.f30200p;
         while (true) {
             if (i10 == i11) {
-                this.f29264o = i10;
+                this.f30199o = i10;
                 if (!m(1)) {
                     if (!z10) {
                         return -1;
                     }
                     throw new EOFException("End of input" + p());
                 }
-                i10 = this.f29264o;
-                i11 = this.f29265p;
+                i10 = this.f30199o;
+                i11 = this.f30200p;
             }
             int i12 = i10 + 1;
             c10 = cArr[i10];
             if (c10 == '\n') {
-                this.f29266q++;
-                this.f29267r = i12;
+                this.f30201q++;
+                this.f30202r = i12;
             } else if (c10 != ' ' && c10 != '\r' && c10 != '\t') {
                 if (c10 == '/') {
-                    this.f29264o = i12;
+                    this.f30199o = i12;
                     if (i12 == i11) {
-                        this.f29264o = i10;
+                        this.f30199o = i10;
                         boolean m10 = m(2);
-                        this.f29264o++;
+                        this.f30199o++;
                         if (!m10) {
                             break;
                         }
                     }
                     a();
-                    int i13 = this.f29264o;
+                    int i13 = this.f30199o;
                     char c11 = cArr[i13];
                     if (c11 != '*') {
                         if (c11 != '/') {
                             break;
                         }
-                        this.f29264o = i13 + 1;
-                        H0();
-                        i10 = this.f29264o;
-                        i11 = this.f29265p;
+                        this.f30199o = i13 + 1;
+                        F0();
+                        i10 = this.f30199o;
+                        i11 = this.f30200p;
                     } else {
-                        this.f29264o = i13 + 1;
-                        if (G0("*/")) {
-                            i10 = this.f29264o + 2;
-                            i11 = this.f29265p;
+                        this.f30199o = i13 + 1;
+                        if (E0("*/")) {
+                            i10 = this.f30199o + 2;
+                            i11 = this.f30200p;
                         } else {
-                            throw O0("Unterminated comment");
+                            throw H0("Unterminated comment");
                         }
                     }
                 } else if (c10 == '#') {
-                    this.f29264o = i12;
+                    this.f30199o = i12;
                     a();
-                    H0();
-                    i10 = this.f29264o;
-                    i11 = this.f29265p;
+                    F0();
+                    i10 = this.f30199o;
+                    i11 = this.f30200p;
                 } else {
-                    this.f29264o = i12;
+                    this.f30199o = i12;
                     return c10;
                 }
             }
@@ -761,24 +700,85 @@ public class a implements Closeable {
         return c10;
     }
 
+    private char z0() {
+        int i10;
+        if (this.f30199o == this.f30200p && !m(1)) {
+            throw H0("Unterminated escape sequence");
+        }
+        char[] cArr = this.f30198i;
+        int i11 = this.f30199o;
+        int i12 = i11 + 1;
+        this.f30199o = i12;
+        char c10 = cArr[i11];
+        if (c10 != '\n') {
+            if (c10 != '\"' && c10 != '\'' && c10 != '/' && c10 != '\\') {
+                if (c10 != 'b') {
+                    if (c10 != 'f') {
+                        if (c10 == 'n') {
+                            return '\n';
+                        }
+                        if (c10 != 'r') {
+                            if (c10 != 't') {
+                                if (c10 == 'u') {
+                                    if (i11 + 5 > this.f30200p && !m(4)) {
+                                        throw H0("Unterminated escape sequence");
+                                    }
+                                    int i13 = this.f30199o;
+                                    int i14 = i13 + 4;
+                                    char c11 = 0;
+                                    while (i13 < i14) {
+                                        char c12 = this.f30198i[i13];
+                                        char c13 = (char) (c11 << 4);
+                                        if (c12 >= '0' && c12 <= '9') {
+                                            i10 = c12 - '0';
+                                        } else if (c12 >= 'a' && c12 <= 'f') {
+                                            i10 = c12 - 'W';
+                                        } else if (c12 >= 'A' && c12 <= 'F') {
+                                            i10 = c12 - '7';
+                                        } else {
+                                            throw new NumberFormatException("\\u" + new String(this.f30198i, this.f30199o, 4));
+                                        }
+                                        c11 = (char) (c13 + i10);
+                                        i13++;
+                                    }
+                                    this.f30199o += 4;
+                                    return c11;
+                                }
+                                throw H0("Invalid escape sequence");
+                            }
+                            return '\t';
+                        }
+                        return '\r';
+                    }
+                    return '\f';
+                }
+                return '\b';
+            }
+            return c10;
+        }
+        this.f30201q++;
+        this.f30202r = i12;
+        return c10;
+    }
+
     public final void A(boolean z10) {
-        this.f29262e = z10;
+        this.f30197e = z10;
     }
 
     public void D() {
-        int i10 = this.f29268s;
+        int i10 = this.f30203s;
         if (i10 == 0) {
-            i10 = k();
+            i10 = i();
         }
         if (i10 == 2) {
-            int i11 = this.f29273x;
+            int i11 = this.f30208x;
             int i12 = i11 - 1;
-            this.f29273x = i12;
-            this.f29274y[i12] = null;
-            int[] iArr = this.f29275z;
+            this.f30208x = i12;
+            this.f30209y[i12] = null;
+            int[] iArr = this.f30210z;
             int i13 = i11 - 2;
             iArr[i13] = iArr[i13] + 1;
-            this.f29268s = 0;
+            this.f30203s = 0;
             return;
         }
         throw new IllegalStateException("Expected END_OBJECT but was " + peek() + p());
@@ -787,9 +787,9 @@ public class a implements Closeable {
     public void T() {
         int i10 = 0;
         do {
-            int i11 = this.f29268s;
+            int i11 = this.f30203s;
             if (i11 == 0) {
-                i11 = k();
+                i11 = i();
             }
             if (i11 == 3) {
                 Z(1);
@@ -797,45 +797,53 @@ public class a implements Closeable {
                 Z(3);
             } else {
                 if (i11 == 4) {
-                    this.f29273x--;
+                    this.f30208x--;
                 } else if (i11 == 2) {
-                    this.f29273x--;
+                    this.f30208x--;
                 } else {
                     if (i11 != 14 && i11 != 10) {
                         if (i11 != 8 && i11 != 12) {
                             if (i11 != 9 && i11 != 13) {
                                 if (i11 == 16) {
-                                    this.f29264o += this.f29270u;
+                                    this.f30199o += this.f30205u;
                                 }
                             } else {
-                                D0('\"');
+                                C0('\"');
                             }
                         } else {
-                            D0('\'');
+                            C0('\'');
                         }
                     } else {
-                        J0();
+                        G0();
                     }
-                    this.f29268s = 0;
+                    this.f30203s = 0;
                 }
                 i10--;
-                this.f29268s = 0;
+                this.f30203s = 0;
             }
             i10++;
-            this.f29268s = 0;
+            this.f30203s = 0;
         } while (i10 != 0);
-        int[] iArr = this.f29275z;
-        int i12 = this.f29273x;
+        int[] iArr = this.f30210z;
+        int i12 = this.f30208x;
         int i13 = i12 - 1;
         iArr[i13] = iArr[i13] + 1;
-        this.f29274y[i12 - 1] = "null";
+        this.f30209y[i12 - 1] = "null";
     }
 
-    public String b1() {
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        this.f30203s = 0;
+        this.f30207w[0] = 8;
+        this.f30208x = 1;
+        this.f30196d.close();
+    }
+
+    public String g1() {
         String str;
-        int i10 = this.f29268s;
+        int i10 = this.f30203s;
         if (i10 == 0) {
-            i10 = k();
+            i10 = i();
         }
         if (i10 == 10) {
             str = I();
@@ -844,35 +852,27 @@ public class a implements Closeable {
         } else if (i10 == 9) {
             str = C('\"');
         } else if (i10 == 11) {
-            str = this.f29271v;
-            this.f29271v = null;
+            str = this.f30206v;
+            this.f30206v = null;
         } else if (i10 == 15) {
-            str = Long.toString(this.f29269t);
+            str = Long.toString(this.f30204t);
         } else if (i10 == 16) {
-            str = new String(this.f29263i, this.f29264o, this.f29270u);
-            this.f29264o += this.f29270u;
+            str = new String(this.f30198i, this.f30199o, this.f30205u);
+            this.f30199o += this.f30205u;
         } else {
             throw new IllegalStateException("Expected a string but was " + peek() + p());
         }
-        this.f29268s = 0;
-        int[] iArr = this.f29275z;
-        int i11 = this.f29273x - 1;
+        this.f30203s = 0;
+        int[] iArr = this.f30210z;
+        int i11 = this.f30208x - 1;
         iArr[i11] = iArr[i11] + 1;
         return str;
     }
 
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        this.f29268s = 0;
-        this.f29272w[0] = 8;
-        this.f29273x = 1;
-        this.f29261d.close();
-    }
-
     public boolean hasNext() {
-        int i10 = this.f29268s;
+        int i10 = this.f30203s;
         if (i10 == 0) {
-            i10 = k();
+            i10 = i();
         }
         if (i10 != 2 && i10 != 4) {
             return true;
@@ -880,10 +880,10 @@ public class a implements Closeable {
         return false;
     }
 
-    int k() {
+    int i() {
         int y10;
-        int[] iArr = this.f29272w;
-        int i10 = this.f29273x;
+        int[] iArr = this.f30207w;
+        int i10 = this.f30208x;
         int i11 = iArr[i10 - 1];
         if (i11 == 1) {
             iArr[i10 - 1] = 2;
@@ -892,10 +892,10 @@ public class a implements Closeable {
             if (y11 != 44) {
                 if (y11 != 59) {
                     if (y11 == 93) {
-                        this.f29268s = 4;
+                        this.f30203s = 4;
                         return 4;
                     }
-                    throw O0("Unterminated array");
+                    throw H0("Unterminated array");
                 }
                 a();
             }
@@ -906,29 +906,29 @@ public class a implements Closeable {
                 if (y12 != 58) {
                     if (y12 == 61) {
                         a();
-                        if (this.f29264o < this.f29265p || m(1)) {
-                            char[] cArr = this.f29263i;
-                            int i12 = this.f29264o;
+                        if (this.f30199o < this.f30200p || m(1)) {
+                            char[] cArr = this.f30198i;
+                            int i12 = this.f30199o;
                             if (cArr[i12] == '>') {
-                                this.f29264o = i12 + 1;
+                                this.f30199o = i12 + 1;
                             }
                         }
                     } else {
-                        throw O0("Expected ':'");
+                        throw H0("Expected ':'");
                     }
                 }
             } else if (i11 == 6) {
-                if (this.f29262e) {
-                    g();
+                if (this.f30197e) {
+                    h();
                 }
-                this.f29272w[this.f29273x - 1] = 7;
+                this.f30207w[this.f30208x - 1] = 7;
             } else if (i11 == 7) {
                 if (y(false) == -1) {
-                    this.f29268s = 17;
+                    this.f30203s = 17;
                     return 17;
                 }
                 a();
-                this.f29264o--;
+                this.f30199o--;
             } else if (i11 == 8) {
                 throw new IllegalStateException("JsonReader is closed");
             }
@@ -937,10 +937,10 @@ public class a implements Closeable {
             if (i11 == 5 && (y10 = y(true)) != 44) {
                 if (y10 != 59) {
                     if (y10 == 125) {
-                        this.f29268s = 2;
+                        this.f30203s = 2;
                         return 2;
                     }
-                    throw O0("Unterminated object");
+                    throw H0("Unterminated object");
                 }
                 a();
             }
@@ -949,24 +949,24 @@ public class a implements Closeable {
                 if (y13 != 39) {
                     if (y13 != 125) {
                         a();
-                        this.f29264o--;
+                        this.f30199o--;
                         if (n((char) y13)) {
-                            this.f29268s = 14;
+                            this.f30203s = 14;
                             return 14;
                         }
-                        throw O0("Expected name");
+                        throw H0("Expected name");
                     } else if (i11 != 5) {
-                        this.f29268s = 2;
+                        this.f30203s = 2;
                         return 2;
                     } else {
-                        throw O0("Expected name");
+                        throw H0("Expected name");
                     }
                 }
                 a();
-                this.f29268s = 12;
+                this.f30203s = 12;
                 return 12;
             }
-            this.f29268s = 13;
+            this.f30203s = 13;
             return 13;
         }
         int y14 = y(true);
@@ -976,7 +976,7 @@ public class a implements Closeable {
                     if (y14 != 91) {
                         if (y14 != 93) {
                             if (y14 != 123) {
-                                this.f29264o--;
+                                this.f30199o--;
                                 int J = J();
                                 if (J != 0) {
                                     return J;
@@ -985,59 +985,59 @@ public class a implements Closeable {
                                 if (Q != 0) {
                                     return Q;
                                 }
-                                if (n(this.f29263i[this.f29264o])) {
+                                if (n(this.f30198i[this.f30199o])) {
                                     a();
-                                    this.f29268s = 10;
+                                    this.f30203s = 10;
                                     return 10;
                                 }
-                                throw O0("Expected value");
+                                throw H0("Expected value");
                             }
-                            this.f29268s = 1;
+                            this.f30203s = 1;
                             return 1;
                         } else if (i11 == 1) {
-                            this.f29268s = 4;
+                            this.f30203s = 4;
                             return 4;
                         }
                     } else {
-                        this.f29268s = 3;
+                        this.f30203s = 3;
                         return 3;
                     }
                 }
                 if (i11 != 1 && i11 != 2) {
-                    throw O0("Unexpected value");
+                    throw H0("Unexpected value");
                 }
                 a();
-                this.f29264o--;
-                this.f29268s = 7;
+                this.f30199o--;
+                this.f30203s = 7;
                 return 7;
             }
             a();
-            this.f29268s = 8;
+            this.f30203s = 8;
             return 8;
         }
-        this.f29268s = 9;
+        this.f30203s = 9;
         return 9;
     }
 
     public double nextDouble() {
         char c10;
-        int i10 = this.f29268s;
+        int i10 = this.f30203s;
         if (i10 == 0) {
-            i10 = k();
+            i10 = i();
         }
         if (i10 == 15) {
-            this.f29268s = 0;
-            int[] iArr = this.f29275z;
-            int i11 = this.f29273x - 1;
+            this.f30203s = 0;
+            int[] iArr = this.f30210z;
+            int i11 = this.f30208x - 1;
             iArr[i11] = iArr[i11] + 1;
-            return this.f29269t;
+            return this.f30204t;
         }
         if (i10 == 16) {
-            this.f29271v = new String(this.f29263i, this.f29264o, this.f29270u);
-            this.f29264o += this.f29270u;
+            this.f30206v = new String(this.f30198i, this.f30199o, this.f30205u);
+            this.f30199o += this.f30205u;
         } else if (i10 != 8 && i10 != 9) {
             if (i10 == 10) {
-                this.f29271v = I();
+                this.f30206v = I();
             } else if (i10 != 11) {
                 throw new IllegalStateException("Expected a double but was " + peek() + p());
             }
@@ -1047,137 +1047,137 @@ public class a implements Closeable {
             } else {
                 c10 = '\"';
             }
-            this.f29271v = C(c10);
+            this.f30206v = C(c10);
         }
-        this.f29268s = 11;
-        double parseDouble = Double.parseDouble(this.f29271v);
-        if (!this.f29262e && (Double.isNaN(parseDouble) || Double.isInfinite(parseDouble))) {
+        this.f30203s = 11;
+        double parseDouble = Double.parseDouble(this.f30206v);
+        if (!this.f30197e && (Double.isNaN(parseDouble) || Double.isInfinite(parseDouble))) {
             throw new d("JSON forbids NaN and infinities: " + parseDouble + p());
         }
-        this.f29271v = null;
-        this.f29268s = 0;
-        int[] iArr2 = this.f29275z;
-        int i12 = this.f29273x - 1;
+        this.f30206v = null;
+        this.f30203s = 0;
+        int[] iArr2 = this.f30210z;
+        int i12 = this.f30208x - 1;
         iArr2[i12] = iArr2[i12] + 1;
         return parseDouble;
     }
 
     public int nextInt() {
         char c10;
-        int i10 = this.f29268s;
+        int i10 = this.f30203s;
         if (i10 == 0) {
-            i10 = k();
+            i10 = i();
         }
         if (i10 == 15) {
-            long j10 = this.f29269t;
+            long j10 = this.f30204t;
             int i11 = (int) j10;
             if (j10 == i11) {
-                this.f29268s = 0;
-                int[] iArr = this.f29275z;
-                int i12 = this.f29273x - 1;
+                this.f30203s = 0;
+                int[] iArr = this.f30210z;
+                int i12 = this.f30208x - 1;
                 iArr[i12] = iArr[i12] + 1;
                 return i11;
             }
-            throw new NumberFormatException("Expected an int but was " + this.f29269t + p());
+            throw new NumberFormatException("Expected an int but was " + this.f30204t + p());
         }
         if (i10 == 16) {
-            this.f29271v = new String(this.f29263i, this.f29264o, this.f29270u);
-            this.f29264o += this.f29270u;
+            this.f30206v = new String(this.f30198i, this.f30199o, this.f30205u);
+            this.f30199o += this.f30205u;
         } else if (i10 != 8 && i10 != 9 && i10 != 10) {
             throw new IllegalStateException("Expected an int but was " + peek() + p());
         } else {
             if (i10 == 10) {
-                this.f29271v = I();
+                this.f30206v = I();
             } else {
                 if (i10 == 8) {
                     c10 = '\'';
                 } else {
                     c10 = '\"';
                 }
-                this.f29271v = C(c10);
+                this.f30206v = C(c10);
             }
             try {
-                int parseInt = Integer.parseInt(this.f29271v);
-                this.f29268s = 0;
-                int[] iArr2 = this.f29275z;
-                int i13 = this.f29273x - 1;
+                int parseInt = Integer.parseInt(this.f30206v);
+                this.f30203s = 0;
+                int[] iArr2 = this.f30210z;
+                int i13 = this.f30208x - 1;
                 iArr2[i13] = iArr2[i13] + 1;
                 return parseInt;
             } catch (NumberFormatException unused) {
             }
         }
-        this.f29268s = 11;
-        double parseDouble = Double.parseDouble(this.f29271v);
+        this.f30203s = 11;
+        double parseDouble = Double.parseDouble(this.f30206v);
         int i14 = (int) parseDouble;
         if (i14 == parseDouble) {
-            this.f29271v = null;
-            this.f29268s = 0;
-            int[] iArr3 = this.f29275z;
-            int i15 = this.f29273x - 1;
+            this.f30206v = null;
+            this.f30203s = 0;
+            int[] iArr3 = this.f30210z;
+            int i15 = this.f30208x - 1;
             iArr3[i15] = iArr3[i15] + 1;
             return i14;
         }
-        throw new NumberFormatException("Expected an int but was " + this.f29271v + p());
+        throw new NumberFormatException("Expected an int but was " + this.f30206v + p());
     }
 
     public long nextLong() {
         char c10;
-        int i10 = this.f29268s;
+        int i10 = this.f30203s;
         if (i10 == 0) {
-            i10 = k();
+            i10 = i();
         }
         if (i10 == 15) {
-            this.f29268s = 0;
-            int[] iArr = this.f29275z;
-            int i11 = this.f29273x - 1;
+            this.f30203s = 0;
+            int[] iArr = this.f30210z;
+            int i11 = this.f30208x - 1;
             iArr[i11] = iArr[i11] + 1;
-            return this.f29269t;
+            return this.f30204t;
         }
         if (i10 == 16) {
-            this.f29271v = new String(this.f29263i, this.f29264o, this.f29270u);
-            this.f29264o += this.f29270u;
+            this.f30206v = new String(this.f30198i, this.f30199o, this.f30205u);
+            this.f30199o += this.f30205u;
         } else if (i10 != 8 && i10 != 9 && i10 != 10) {
             throw new IllegalStateException("Expected a long but was " + peek() + p());
         } else {
             if (i10 == 10) {
-                this.f29271v = I();
+                this.f30206v = I();
             } else {
                 if (i10 == 8) {
                     c10 = '\'';
                 } else {
                     c10 = '\"';
                 }
-                this.f29271v = C(c10);
+                this.f30206v = C(c10);
             }
             try {
-                long parseLong = Long.parseLong(this.f29271v);
-                this.f29268s = 0;
-                int[] iArr2 = this.f29275z;
-                int i12 = this.f29273x - 1;
+                long parseLong = Long.parseLong(this.f30206v);
+                this.f30203s = 0;
+                int[] iArr2 = this.f30210z;
+                int i12 = this.f30208x - 1;
                 iArr2[i12] = iArr2[i12] + 1;
                 return parseLong;
             } catch (NumberFormatException unused) {
             }
         }
-        this.f29268s = 11;
-        double parseDouble = Double.parseDouble(this.f29271v);
+        this.f30203s = 11;
+        double parseDouble = Double.parseDouble(this.f30206v);
         long j10 = (long) parseDouble;
         if (j10 == parseDouble) {
-            this.f29271v = null;
-            this.f29268s = 0;
-            int[] iArr3 = this.f29275z;
-            int i13 = this.f29273x - 1;
+            this.f30206v = null;
+            this.f30203s = 0;
+            int[] iArr3 = this.f30210z;
+            int i13 = this.f30208x - 1;
             iArr3[i13] = iArr3[i13] + 1;
             return j10;
         }
-        throw new NumberFormatException("Expected a long but was " + this.f29271v + p());
+        throw new NumberFormatException("Expected a long but was " + this.f30206v + p());
     }
 
     public String o0() {
         String C;
-        int i10 = this.f29268s;
+        int i10 = this.f30203s;
         if (i10 == 0) {
-            i10 = k();
+            i10 = i();
         }
         if (i10 == 14) {
             C = I();
@@ -1188,19 +1188,19 @@ public class a implements Closeable {
         } else {
             throw new IllegalStateException("Expected a name but was " + peek() + p());
         }
-        this.f29268s = 0;
-        this.f29274y[this.f29273x - 1] = C;
+        this.f30203s = 0;
+        this.f30209y[this.f30208x - 1] = C;
         return C;
     }
 
     String p() {
-        return " at line " + (this.f29266q + 1) + " column " + ((this.f29264o - this.f29267r) + 1) + " path " + t();
+        return " at line " + (this.f30201q + 1) + " column " + ((this.f30199o - this.f30202r) + 1) + " path " + t();
     }
 
     public b peek() {
-        int i10 = this.f29268s;
+        int i10 = this.f30203s;
         if (i10 == 0) {
-            i10 = k();
+            i10 = i();
         }
         switch (i10) {
             case 1:
@@ -1236,20 +1236,20 @@ public class a implements Closeable {
     }
 
     public boolean s() {
-        int i10 = this.f29268s;
+        int i10 = this.f30203s;
         if (i10 == 0) {
-            i10 = k();
+            i10 = i();
         }
         if (i10 == 5) {
-            this.f29268s = 0;
-            int[] iArr = this.f29275z;
-            int i11 = this.f29273x - 1;
+            this.f30203s = 0;
+            int[] iArr = this.f30210z;
+            int i11 = this.f30208x - 1;
             iArr[i11] = iArr[i11] + 1;
             return true;
         } else if (i10 == 6) {
-            this.f29268s = 0;
-            int[] iArr2 = this.f29275z;
-            int i12 = this.f29273x - 1;
+            this.f30203s = 0;
+            int[] iArr2 = this.f30210z;
+            int i12 = this.f30208x - 1;
             iArr2[i12] = iArr2[i12] + 1;
             return false;
         } else {
@@ -1260,20 +1260,20 @@ public class a implements Closeable {
     public String t() {
         StringBuilder sb2 = new StringBuilder();
         sb2.append('$');
-        int i10 = this.f29273x;
+        int i10 = this.f30208x;
         for (int i11 = 0; i11 < i10; i11++) {
-            int i12 = this.f29272w[i11];
+            int i12 = this.f30207w[i11];
             if (i12 != 1 && i12 != 2) {
                 if (i12 == 3 || i12 == 4 || i12 == 5) {
                     sb2.append('.');
-                    String str = this.f29274y[i11];
+                    String str = this.f30209y[i11];
                     if (str != null) {
                         sb2.append(str);
                     }
                 }
             } else {
                 sb2.append('[');
-                sb2.append(this.f29275z[i11]);
+                sb2.append(this.f30210z[i11]);
                 sb2.append(']');
             }
         }
@@ -1285,58 +1285,58 @@ public class a implements Closeable {
     }
 
     public void u() {
-        int i10 = this.f29268s;
+        int i10 = this.f30203s;
         if (i10 == 0) {
-            i10 = k();
+            i10 = i();
         }
         if (i10 == 1) {
             Z(3);
-            this.f29268s = 0;
+            this.f30203s = 0;
             return;
         }
         throw new IllegalStateException("Expected BEGIN_OBJECT but was " + peek() + p());
     }
 
     public void v() {
-        int i10 = this.f29268s;
+        int i10 = this.f30203s;
         if (i10 == 0) {
-            i10 = k();
+            i10 = i();
         }
         if (i10 == 4) {
-            int i11 = this.f29273x;
-            this.f29273x = i11 - 1;
-            int[] iArr = this.f29275z;
+            int i11 = this.f30208x;
+            this.f30208x = i11 - 1;
+            int[] iArr = this.f30210z;
             int i12 = i11 - 2;
             iArr[i12] = iArr[i12] + 1;
-            this.f29268s = 0;
+            this.f30203s = 0;
             return;
         }
         throw new IllegalStateException("Expected END_ARRAY but was " + peek() + p());
     }
 
     public void x() {
-        int i10 = this.f29268s;
+        int i10 = this.f30203s;
         if (i10 == 0) {
-            i10 = k();
+            i10 = i();
         }
         if (i10 == 3) {
             Z(1);
-            this.f29275z[this.f29273x - 1] = 0;
-            this.f29268s = 0;
+            this.f30210z[this.f30208x - 1] = 0;
+            this.f30203s = 0;
             return;
         }
         throw new IllegalStateException("Expected BEGIN_ARRAY but was " + peek() + p());
     }
 
     public void z() {
-        int i10 = this.f29268s;
+        int i10 = this.f30203s;
         if (i10 == 0) {
-            i10 = k();
+            i10 = i();
         }
         if (i10 == 7) {
-            this.f29268s = 0;
-            int[] iArr = this.f29275z;
-            int i11 = this.f29273x - 1;
+            this.f30203s = 0;
+            int[] iArr = this.f30210z;
+            int i11 = this.f30208x - 1;
             iArr[i11] = iArr[i11] + 1;
             return;
         }

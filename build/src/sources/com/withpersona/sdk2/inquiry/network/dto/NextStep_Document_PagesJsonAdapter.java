@@ -45,7 +45,7 @@ public final class NextStep_Document_PagesJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 documentPages = (NextStep.Document.Pages.DocumentPages) this.nullableDocumentPagesAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class NextStep_Document_PagesJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Document.Pages pages) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (pages != null) {
-            writer.k();
+            writer.i();
             writer.J("document");
             this.nullableDocumentPagesAdapter.toJson(writer, pages.getDocument());
             writer.s();

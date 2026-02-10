@@ -16,17 +16,17 @@ import org.jetbrains.annotations.NotNull;
 public final class CompositeAnnotations implements Annotations {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f32118d;
+    private final List f32340d;
 
     public CompositeAnnotations(@NotNull List<? extends Annotations> delegates) {
         Intrinsics.checkNotNullParameter(delegates, "delegates");
-        this.f32118d = delegates;
+        this.f32340d = delegates;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final AnnotationDescriptor d(FqName fqName, Annotations it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return it.mo1195findAnnotation(fqName);
+        return it.mo1198findAnnotation(fqName);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -37,15 +37,15 @@ public final class CompositeAnnotations implements Annotations {
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations
     /* renamed from: findAnnotation */
-    public AnnotationDescriptor mo1195findAnnotation(@NotNull FqName fqName) {
+    public AnnotationDescriptor mo1198findAnnotation(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        return (AnnotationDescriptor) k.K(k.S(CollectionsKt.b0(this.f32118d), new c(fqName)));
+        return (AnnotationDescriptor) k.K(k.S(CollectionsKt.b0(this.f32340d), new c(fqName)));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations
     public boolean hasAnnotation(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        for (Annotations annotations : CollectionsKt.b0(this.f32118d)) {
+        for (Annotations annotations : CollectionsKt.b0(this.f32340d)) {
             if (annotations.hasAnnotation(fqName)) {
                 return true;
             }
@@ -55,7 +55,7 @@ public final class CompositeAnnotations implements Annotations {
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations
     public boolean isEmpty() {
-        List<Annotations> list = this.f32118d;
+        List<Annotations> list = this.f32340d;
         if ((list instanceof Collection) && list.isEmpty()) {
             return true;
         }
@@ -70,7 +70,7 @@ public final class CompositeAnnotations implements Annotations {
     @Override // java.lang.Iterable
     @NotNull
     public Iterator<AnnotationDescriptor> iterator() {
-        return k.L(CollectionsKt.b0(this.f32118d), d.f32142d).iterator();
+        return k.L(CollectionsKt.b0(this.f32340d), d.f32364d).iterator();
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

@@ -3,17 +3,17 @@ package rg;
 public final class v1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f48749a;
+    private int f47203a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final y1 f48750b = y1.DEFAULT;
+    private final y1 f47204b = y1.DEFAULT;
 
     public final v1 a(int i10) {
-        this.f48749a = i10;
+        this.f47203a = i10;
         return this;
     }
 
     public final z1 b() {
-        return new u1(this.f48749a, this.f48750b);
+        return new u1(this.f47203a, this.f47204b);
     }
 }

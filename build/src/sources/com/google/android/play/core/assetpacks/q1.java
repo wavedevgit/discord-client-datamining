@@ -1,16 +1,16 @@
 package com.google.android.play.core.assetpacks;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class q1 implements yh.t {
+public final class q1 implements ai.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final yh.w f16090a;
+    private final ai.w f16839a;
 
-    public q1(yh.w wVar) {
-        this.f16090a = wVar;
+    public q1(ai.w wVar) {
+        this.f16839a = wVar;
     }
 
-    @Override // yh.w
+    @Override // ai.w
     public final /* bridge */ /* synthetic */ Object a() {
-        return new p1(((q4) this.f16090a).b());
+        return new p1(((q4) this.f16839a).b());
     }
 }

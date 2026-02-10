@@ -24,14 +24,14 @@ import com.facebook.react.uimanager.ReactPointerEventsView;
 import com.facebook.react.uimanager.UIManagerHelper;
 import com.facebook.react.uimanager.events.EventDispatcher;
 import com.facebook.react.views.text.ReactTypefaceUtils;
-import com.swmansion.rnscreens.q0;
+import com.swmansion.rnscreens.v0;
 import java.util.ArrayList;
 import java.util.Iterator;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class ScreenStackHeaderConfig extends e implements ReactPointerEventsView {
+public final class ScreenStackHeaderConfig extends f implements ReactPointerEventsView {
     public static final a O = new a(null);
     private float A;
     private int B;
@@ -40,40 +40,40 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
     private boolean E;
     private boolean F;
     private boolean G;
-    private boolean H;
-    private int I;
-    private boolean J;
+    private int H;
+    private boolean I;
+    private final int J;
     private final int K;
-    private final int L;
-    private final View.OnClickListener M;
-    private boolean N;
+    private final View.OnClickListener L;
+    private boolean M;
+    private final u0 N;
 
     /* renamed from: r  reason: collision with root package name */
-    private final ReactPointerEventsView f18340r;
+    private final ReactPointerEventsView f19085r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final ArrayList f18341s;
+    private final ArrayList f19086s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final d f18342t;
+    private final e f19087t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f18343u;
+    private boolean f19088u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f18344v;
+    private boolean f19089v;
 
     /* renamed from: w  reason: collision with root package name */
-    private String f18345w;
+    private String f19090w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f18346x;
+    private int f19091x;
 
     /* renamed from: y  reason: collision with root package name */
-    private String f18347y;
+    private String f19092y;
 
     /* renamed from: z  reason: collision with root package name */
-    private String f18348z;
+    private String f19093z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -104,23 +104,23 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
     public /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f18349a;
+        public static final /* synthetic */ int[] f19094a;
 
         static {
-            int[] iArr = new int[q0.a.values().length];
+            int[] iArr = new int[v0.a.values().length];
             try {
-                iArr[q0.a.f18469d.ordinal()] = 1;
+                iArr[v0.a.f19394d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[q0.a.f18471i.ordinal()] = 2;
+                iArr[v0.a.f19396i.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[q0.a.f18470e.ordinal()] = 3;
+                iArr[v0.a.f19395e.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f18349a = iArr;
+            f19094a = iArr;
         }
     }
 
@@ -129,44 +129,44 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
         super(context);
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(pointerEventsImpl, "pointerEventsImpl");
-        this.f18340r = pointerEventsImpl;
-        this.f18341s = new ArrayList(3);
-        this.H = true;
-        this.M = new View.OnClickListener() { // from class: com.swmansion.rnscreens.o0
+        this.f19085r = pointerEventsImpl;
+        this.f19086s = new ArrayList(3);
+        this.L = new View.OnClickListener() { // from class: com.swmansion.rnscreens.s0
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 ScreenStackHeaderConfig.e(ScreenStackHeaderConfig.this, view);
             }
         };
+        this.N = new u0();
         setVisibility(8);
-        d dVar = new d(context, this);
-        this.f18342t = dVar;
-        this.K = dVar.getContentInsetStart();
-        this.L = dVar.getContentInsetStartWithNavigation();
+        e eVar = new e(context, this);
+        this.f19087t = eVar;
+        this.J = eVar.getContentInsetStart();
+        this.K = eVar.getContentInsetStartWithNavigation();
         TypedValue typedValue = new TypedValue();
         if (context.getTheme().resolveAttribute(16843827, typedValue, true)) {
-            dVar.setBackgroundColor(typedValue.data);
+            eVar.setBackgroundColor(typedValue.data);
         }
-        dVar.setClipChildren(false);
+        eVar.setClipChildren(false);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void e(ScreenStackHeaderConfig screenStackHeaderConfig, View view) {
-        n0 screenFragment = screenStackHeaderConfig.getScreenFragment();
+        r0 screenFragment = screenStackHeaderConfig.getScreenFragment();
         if (screenFragment != null) {
             ScreenStack screenStack = screenStackHeaderConfig.getScreenStack();
-            if (screenStack != null && Intrinsics.areEqual(screenStack.getRootScreen(), screenFragment.g())) {
+            if (screenStack != null && Intrinsics.areEqual(screenStack.getRootScreen(), screenFragment.h())) {
                 Fragment parentFragment = screenFragment.getParentFragment();
-                if (parentFragment instanceof n0) {
-                    n0 n0Var = (n0) parentFragment;
-                    if (n0Var.g().getNativeBackButtonDismissalEnabled()) {
-                        n0Var.V();
+                if (parentFragment instanceof r0) {
+                    r0 r0Var = (r0) parentFragment;
+                    if (r0Var.h().getNativeBackButtonDismissalEnabled()) {
+                        r0Var.Z();
                     } else {
-                        n0Var.z();
+                        r0Var.z();
                     }
                 }
-            } else if (screenFragment.g().getNativeBackButtonDismissalEnabled()) {
-                screenFragment.V();
+            } else if (screenFragment.h().getNativeBackButtonDismissalEnabled()) {
+                screenFragment.Z();
             } else {
                 screenFragment.z();
             }
@@ -202,9 +202,9 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
         }
     }
 
-    public final void d(q0 child, int i10) {
+    public final void d(v0 child, int i10) {
         Intrinsics.checkNotNullParameter(child, "child");
-        this.f18341s.add(i10, child);
+        this.f19086s.add(i10, child);
         j();
     }
 
@@ -212,43 +212,48 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
         this.F = true;
     }
 
-    public final q0 g(int i10) {
-        Object obj = this.f18341s.get(i10);
+    public final v0 g(int i10) {
+        Object obj = this.f19086s.get(i10);
         Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
-        return (q0) obj;
+        return (v0) obj;
     }
 
     public final int getConfigSubviewsCount() {
-        return this.f18341s.size();
+        return this.f19086s.size();
+    }
+
+    @NotNull
+    public final u0 getHeaderHeightUpdateProxy() {
+        return this.N;
     }
 
     @Override // com.facebook.react.uimanager.ReactPointerEventsView
     @NotNull
     public PointerEvents getPointerEvents() {
-        return this.f18340r.getPointerEvents();
+        return this.f19085r.getPointerEvents();
     }
 
     public final int getPreferredContentInsetEnd() {
-        return this.K;
+        return this.J;
     }
 
     public final int getPreferredContentInsetStart() {
-        return this.K;
+        return this.J;
     }
 
     public final int getPreferredContentInsetStartWithNavigation() {
-        if (this.N) {
+        if (this.M) {
             return 0;
         }
-        return this.L;
+        return this.K;
     }
 
-    public final n0 getScreenFragment() {
+    public final r0 getScreenFragment() {
         ViewParent parent = getParent();
         if (parent instanceof Screen) {
             Fragment fragment = ((Screen) parent).getFragment();
-            if (fragment instanceof n0) {
-                return (n0) fragment;
+            if (fragment instanceof r0) {
+                return (r0) fragment;
             }
             return null;
         }
@@ -256,16 +261,16 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
     }
 
     @NotNull
-    public final d getToolbar() {
-        return this.f18342t;
+    public final e getToolbar() {
+        return this.f19087t;
     }
 
     public final boolean h() {
-        return this.f18343u;
+        return this.f19088u;
     }
 
     public final boolean i() {
-        return this.H;
+        return this.f19089v;
     }
 
     public final void k(Toolbar toolbar, boolean z10) {
@@ -280,11 +285,11 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
         } else {
             max = Math.max(toolbar.getCurrentContentInsetStart(), toolbar.getPaddingStart());
         }
-        Iterator it = this.f18341s.iterator();
+        Iterator it = this.f19086s.iterator();
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();
-                if (((q0) obj).getType() == q0.a.f18469d) {
+                if (((v0) obj).getType() == v0.a.f19394d) {
                     break;
                 }
             } else {
@@ -292,11 +297,13 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
                 break;
             }
         }
-        q0 q0Var = (q0) obj;
-        if (q0Var != null) {
-            max = q0Var.getLeft();
+        v0 v0Var = (v0) obj;
+        if (v0Var != null) {
+            max = v0Var.getLeft();
         }
-        a(toolbar.getWidth(), toolbar.getHeight(), max, toolbar.getCurrentContentInsetEnd() + toolbar.getPaddingEnd());
+        int currentContentInsetEnd = toolbar.getCurrentContentInsetEnd() + toolbar.getPaddingEnd();
+        this.N.a(this, getScreen());
+        a(toolbar.getWidth(), toolbar.getHeight(), max, currentContentInsetEnd);
     }
 
     public final void l() {
@@ -305,8 +312,8 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
         boolean z11;
         ImageView imageView;
         Drawable navigationIcon;
-        n0 screenFragment;
-        n0 screenFragment2;
+        r0 screenFragment;
+        r0 screenFragment2;
         ReactContext reactContext;
         ScreenStack screenStack = getScreenStack();
         if (screenStack != null && !Intrinsics.areEqual(screenStack.getTopScreen(), getParent())) {
@@ -314,8 +321,8 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
         } else {
             z10 = true;
         }
-        if (this.J && z10 && !this.F) {
-            n0 screenFragment3 = getScreenFragment();
+        if (this.I && z10 && !this.F) {
+            r0 screenFragment3 = getScreenFragment();
             if (screenFragment3 != null) {
                 fragmentActivity = screenFragment3.getActivity();
             } else {
@@ -323,12 +330,12 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
             }
             AppCompatActivity appCompatActivity = (AppCompatActivity) fragmentActivity;
             if (appCompatActivity != null) {
-                String str = this.f18348z;
+                String str = this.f19093z;
                 if (str != null) {
                     if (Intrinsics.areEqual(str, "rtl")) {
-                        this.f18342t.setLayoutDirection(1);
-                    } else if (Intrinsics.areEqual(this.f18348z, "ltr")) {
-                        this.f18342t.setLayoutDirection(0);
+                        this.f19087t.setLayoutDirection(1);
+                    } else if (Intrinsics.areEqual(this.f19093z, "ltr")) {
+                        this.f19087t.setLayoutDirection(0);
                     }
                 }
                 Screen screen = getScreen();
@@ -345,49 +352,49 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
                             reactContext = null;
                         }
                     }
-                    v0.f18505a.x(screen, appCompatActivity, reactContext);
+                    y0.f19411a.p(screen, appCompatActivity, reactContext);
                 }
-                if (this.f18343u) {
-                    if (this.f18342t.getParent() != null && (screenFragment2 = getScreenFragment()) != null) {
+                if (this.f19088u) {
+                    if (this.f19087t.getParent() != null && (screenFragment2 = getScreenFragment()) != null) {
                         screenFragment2.i0();
-                        return;
                     }
+                    this.N.a(this, getScreen());
                     return;
                 }
-                if (this.f18342t.getParent() == null && (screenFragment = getScreenFragment()) != null) {
-                    screenFragment.o0(this.f18342t);
+                if (this.f19087t.getParent() == null && (screenFragment = getScreenFragment()) != null) {
+                    screenFragment.p0(this.f19087t);
                 }
-                appCompatActivity.setSupportActionBar(this.f18342t);
+                appCompatActivity.setSupportActionBar(this.f19087t);
                 ActionBar supportActionBar = appCompatActivity.getSupportActionBar();
                 if (supportActionBar != null) {
-                    n0 screenFragment4 = getScreenFragment();
-                    if (screenFragment4 != null && screenFragment4.T() && !this.D) {
+                    r0 screenFragment4 = getScreenFragment();
+                    if (screenFragment4 != null && screenFragment4.V() && !this.D) {
                         z11 = true;
                     } else {
                         z11 = false;
                     }
                     supportActionBar.s(z11);
-                    supportActionBar.w(this.f18345w);
-                    if (TextUtils.isEmpty(this.f18345w)) {
-                        this.N = true;
+                    supportActionBar.w(this.f19090w);
+                    if (TextUtils.isEmpty(this.f19090w)) {
+                        this.M = true;
                     }
-                    this.f18342t.V();
-                    this.f18342t.setNavigationOnClickListener(this.M);
-                    n0 screenFragment5 = getScreenFragment();
+                    this.f19087t.V();
+                    this.f19087t.setNavigationOnClickListener(this.L);
+                    r0 screenFragment5 = getScreenFragment();
                     if (screenFragment5 != null) {
-                        screenFragment5.p0(this.E);
+                        screenFragment5.q0(this.E);
                     }
-                    n0 screenFragment6 = getScreenFragment();
+                    r0 screenFragment6 = getScreenFragment();
                     if (screenFragment6 != null) {
-                        screenFragment6.q0(this.f18344v);
+                        screenFragment6.r0(this.f19089v);
                     }
-                    TextView a10 = O.a(this.f18342t);
-                    int i10 = this.f18346x;
+                    TextView a10 = O.a(this.f19087t);
+                    int i10 = this.f19091x;
                     if (i10 != 0) {
-                        this.f18342t.setTitleTextColor(i10);
+                        this.f19087t.setTitleTextColor(i10);
                     }
                     if (a10 != null) {
-                        String str2 = this.f18347y;
+                        String str2 = this.f19092y;
                         if (str2 != null || this.B > 0) {
                             int i11 = this.B;
                             AssetManager assets = getContext().getAssets();
@@ -401,24 +408,24 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
                     }
                     Integer num = this.C;
                     if (num != null) {
-                        this.f18342t.setBackgroundColor(num.intValue());
+                        this.f19087t.setBackgroundColor(num.intValue());
                     }
-                    if (this.I != 0 && (navigationIcon = this.f18342t.getNavigationIcon()) != null) {
-                        navigationIcon.setColorFilter(new PorterDuffColorFilter(this.I, PorterDuff.Mode.SRC_ATOP));
+                    if (this.H != 0 && (navigationIcon = this.f19087t.getNavigationIcon()) != null) {
+                        navigationIcon.setColorFilter(new PorterDuffColorFilter(this.H, PorterDuff.Mode.SRC_ATOP));
                     }
-                    for (int childCount = this.f18342t.getChildCount() - 1; -1 < childCount; childCount--) {
-                        if (this.f18342t.getChildAt(childCount) instanceof q0) {
-                            this.f18342t.removeViewAt(childCount);
+                    for (int childCount = this.f19087t.getChildCount() - 1; -1 < childCount; childCount--) {
+                        if (this.f19087t.getChildAt(childCount) instanceof v0) {
+                            this.f19087t.removeViewAt(childCount);
                         }
                     }
-                    int size = this.f18341s.size();
+                    int size = this.f19086s.size();
                     for (int i12 = 0; i12 < size; i12++) {
-                        Object obj = this.f18341s.get(i12);
+                        Object obj = this.f19086s.get(i12);
                         Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
-                        q0 q0Var = (q0) obj;
-                        q0.a type = q0Var.getType();
-                        if (type == q0.a.f18472o) {
-                            View childAt = q0Var.getChildAt(0);
+                        v0 v0Var = (v0) obj;
+                        v0.a type = v0Var.getType();
+                        if (type == v0.a.f19397o) {
+                            View childAt = v0Var.getChildAt(0);
                             if (childAt instanceof ImageView) {
                                 imageView = (ImageView) childAt;
                             } else {
@@ -431,28 +438,29 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
                             }
                         } else {
                             Toolbar.g gVar = new Toolbar.g(-2, -1);
-                            int i13 = b.f18349a[type.ordinal()];
+                            int i13 = b.f19094a[type.ordinal()];
                             if (i13 != 1) {
                                 if (i13 != 2) {
                                     if (i13 == 3) {
                                         ((ViewGroup.MarginLayoutParams) gVar).width = -1;
-                                        gVar.f1044a = 1;
-                                        this.f18342t.setTitle((CharSequence) null);
+                                        gVar.f1045a = 1;
+                                        this.f19087t.setTitle((CharSequence) null);
                                     }
                                 } else {
-                                    gVar.f1044a = 8388613;
+                                    gVar.f1045a = 8388613;
                                 }
                             } else {
                                 if (!this.G) {
-                                    this.f18342t.setNavigationIcon((Drawable) null);
+                                    this.f19087t.setNavigationIcon((Drawable) null);
                                 }
-                                this.f18342t.setTitle((CharSequence) null);
-                                gVar.f1044a = 8388611;
+                                this.f19087t.setTitle((CharSequence) null);
+                                gVar.f1045a = 8388611;
                             }
-                            q0Var.setLayoutParams(gVar);
-                            this.f18342t.addView(q0Var);
+                            v0Var.setLayoutParams(gVar);
+                            this.f19087t.addView(v0Var);
                         }
                     }
+                    this.N.a(this, getScreen());
                     return;
                 }
                 throw new IllegalArgumentException("Required value was null.");
@@ -461,25 +469,25 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
     }
 
     public final void m() {
-        this.f18341s.clear();
+        this.f19086s.clear();
         j();
     }
 
     public final void n(int i10) {
-        this.f18341s.remove(i10);
+        this.f19086s.remove(i10);
         j();
     }
 
     @Override // android.view.ViewGroup, android.view.View
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        this.J = true;
+        this.I = true;
         int surfaceId = UIManagerHelper.getSurfaceId(this);
         Context context = getContext();
         Intrinsics.checkNotNull(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag((ReactContext) context, getId());
         if (eventDispatcherForReactTag != null) {
-            eventDispatcherForReactTag.dispatchEvent(new on.a(surfaceId, getId()));
+            eventDispatcherForReactTag.dispatchEvent(new qn.a(surfaceId, getId()));
         }
         l();
     }
@@ -487,13 +495,13 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
     @Override // android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        this.J = false;
+        this.I = false;
         int surfaceId = UIManagerHelper.getSurfaceId(this);
         Context context = getContext();
         Intrinsics.checkNotNull(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag((ReactContext) context, getId());
         if (eventDispatcherForReactTag != null) {
-            eventDispatcherForReactTag.dispatchEvent(new on.c(surfaceId, getId()));
+            eventDispatcherForReactTag.dispatchEvent(new qn.c(surfaceId, getId()));
         }
     }
 
@@ -510,19 +518,19 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
     }
 
     public final void setDirection(String str) {
-        this.f18348z = str;
+        this.f19093z = str;
     }
 
     public final void setHeaderHidden(boolean z10) {
-        this.f18343u = z10;
+        this.f19088u = z10;
     }
 
     public final void setHeaderTranslucent(boolean z10) {
-        this.f18344v = z10;
+        this.f19089v = z10;
     }
 
     public final void setHidden(boolean z10) {
-        this.f18343u = z10;
+        this.f19088u = z10;
     }
 
     public final void setHideBackButton(boolean z10) {
@@ -534,23 +542,23 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
     }
 
     public final void setTintColor(int i10) {
-        this.I = i10;
+        this.H = i10;
     }
 
     public final void setTitle(String str) {
-        this.f18345w = str;
+        this.f19090w = str;
     }
 
     public final void setTitleColor(int i10) {
-        this.f18346x = i10;
+        this.f19091x = i10;
     }
 
     public final void setTitleEmpty(boolean z10) {
-        this.N = z10;
+        this.M = z10;
     }
 
     public final void setTitleFontFamily(String str) {
-        this.f18347y = str;
+        this.f19092y = str;
     }
 
     public final void setTitleFontSize(float f10) {
@@ -561,17 +569,13 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
         this.B = ReactTypefaceUtils.parseFontWeight(str);
     }
 
-    public final void setTopInsetEnabled(boolean z10) {
-        this.H = z10;
-    }
-
     public final void setTranslucent(boolean z10) {
-        this.f18344v = z10;
+        this.f19089v = z10;
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ScreenStackHeaderConfig(Context context) {
-        this(context, new p());
+        this(context, new q());
         Intrinsics.checkNotNullParameter(context, "context");
     }
 }

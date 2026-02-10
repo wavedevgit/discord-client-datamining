@@ -13,13 +13,13 @@ import kotlin.jvm.internal.markers.KMutableSet;
 public final class b implements Collection, Set, KMutableCollection, KMutableSet {
 
     /* renamed from: d  reason: collision with root package name */
-    private int[] f51178d;
+    private int[] f50357d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object[] f51179e;
+    private Object[] f50358e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f51180i;
+    private int f50359i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private final class a extends f {
@@ -90,7 +90,7 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
         if (f10 == f() && i11 < d().length) {
             d()[i11] = i10;
             c()[i11] = obj;
-            j(f() + 1);
+            k(f() + 1);
             return true;
         }
         throw new ConcurrentModificationException();
@@ -125,15 +125,15 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
     }
 
     public final Object[] c() {
-        return this.f51179e;
+        return this.f50358e;
     }
 
     @Override // java.util.Collection, java.util.Set
     public void clear() {
         if (f() != 0) {
-            i(v0.a.f52070a);
-            h(v0.a.f52072c);
-            j(0);
+            j(v0.a.f51312a);
+            i(v0.a.f51314c);
+            k(0);
         }
         if (f() == 0) {
             return;
@@ -161,11 +161,11 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
     }
 
     public final int[] d() {
-        return this.f51178d;
+        return this.f50357d;
     }
 
     public int e() {
-        return this.f51180i;
+        return this.f50359i;
     }
 
     @Override // java.util.Collection, java.util.Set
@@ -190,7 +190,7 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
     }
 
     public final int f() {
-        return this.f51180i;
+        return this.f50359i;
     }
 
     public final Object g(int i10) {
@@ -234,15 +234,10 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
             c()[i12] = null;
         }
         if (f10 == f()) {
-            j(i12);
+            k(i12);
             return obj;
         }
         throw new ConcurrentModificationException();
-    }
-
-    public final void h(Object[] objArr) {
-        Intrinsics.checkNotNullParameter(objArr, "<set-?>");
-        this.f51179e = objArr;
     }
 
     @Override // java.util.Collection, java.util.Set
@@ -256,9 +251,9 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
         return i10;
     }
 
-    public final void i(int[] iArr) {
-        Intrinsics.checkNotNullParameter(iArr, "<set-?>");
-        this.f51178d = iArr;
+    public final void i(Object[] objArr) {
+        Intrinsics.checkNotNullParameter(objArr, "<set-?>");
+        this.f50358e = objArr;
     }
 
     public final int indexOf(Object obj) {
@@ -281,8 +276,13 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
         return new a();
     }
 
-    public final void j(int i10) {
-        this.f51180i = i10;
+    public final void j(int[] iArr) {
+        Intrinsics.checkNotNullParameter(iArr, "<set-?>");
+        this.f50357d = iArr;
+    }
+
+    public final void k(int i10) {
+        this.f50359i = i10;
     }
 
     public final Object l(int i10) {
@@ -329,7 +329,7 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
 
     @Override // java.util.Collection, java.util.Set
     public final Object[] toArray() {
-        return kotlin.collections.i.r(this.f51179e, 0, this.f51180i);
+        return kotlin.collections.i.r(this.f50358e, 0, this.f50359i);
     }
 
     public String toString() {
@@ -357,8 +357,8 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
     }
 
     public b(int i10) {
-        this.f51178d = v0.a.f52070a;
-        this.f51179e = v0.a.f52072c;
+        this.f50357d = v0.a.f51312a;
+        this.f50358e = v0.a.f51314c;
         if (i10 > 0) {
             d.a(this, i10);
         }
@@ -367,8 +367,8 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
     @Override // java.util.Collection, java.util.Set
     public final Object[] toArray(Object[] array) {
         Intrinsics.checkNotNullParameter(array, "array");
-        Object[] a10 = c.a(array, this.f51180i);
-        kotlin.collections.i.k(this.f51179e, a10, 0, 0, this.f51180i);
+        Object[] a10 = c.a(array, this.f50359i);
+        kotlin.collections.i.k(this.f50358e, a10, 0, 0, this.f50359i);
         Intrinsics.checkNotNull(a10);
         return a10;
     }

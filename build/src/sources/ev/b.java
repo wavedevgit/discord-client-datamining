@@ -1,66 +1,81 @@
 package ev;
 
 import java.util.List;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Lambda;
-import uu.c;
+import java.util.Map;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements tu.b, uu.c {
+public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f22146a = new b();
+    private final List f23268a;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function2 {
+    /* renamed from: b  reason: collision with root package name */
+    private final Map f23269b;
 
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f22147d = new a();
+    /* renamed from: c  reason: collision with root package name */
+    private final Object f23270c;
 
-        a() {
-            super(2);
+    public b(List list, Map map, Object obj) {
+        this.f23268a = list;
+        this.f23269b = map;
+        this.f23270c = obj;
+    }
+
+    public final Map a() {
+        return this.f23269b;
+    }
+
+    public final List b() {
+        return this.f23268a;
+    }
+
+    public final Object c() {
+        return this.f23270c;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-
-        public final Boolean a(int i10, int i11) {
-            boolean z10;
-            if (i10 >= i11) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            return Boolean.valueOf(z10);
+        if (!(obj instanceof b)) {
+            return false;
         }
-
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+        b bVar = (b) obj;
+        if (Intrinsics.areEqual(this.f23268a, bVar.f23268a) && Intrinsics.areEqual(this.f23269b, bVar.f23269b) && Intrinsics.areEqual(this.f23270c, bVar.f23270c)) {
+            return true;
         }
+        return false;
     }
 
-    private b() {
+    public int hashCode() {
+        int hashCode;
+        int hashCode2;
+        List list = this.f23268a;
+        int i10 = 0;
+        if (list == null) {
+            hashCode = 0;
+        } else {
+            hashCode = list.hashCode();
+        }
+        int i11 = hashCode * 31;
+        Map map = this.f23269b;
+        if (map == null) {
+            hashCode2 = 0;
+        } else {
+            hashCode2 = map.hashCode();
+        }
+        int i12 = (i11 + hashCode2) * 31;
+        Object obj = this.f23270c;
+        if (obj != null) {
+            i10 = obj.hashCode();
+        }
+        return i12 + i10;
     }
 
-    @Override // uu.c
-    public boolean b(List list, Function2 function2) {
-        return c.a.b(this, list, function2);
-    }
-
-    @Override // uu.a
-    public Boolean c(Object obj) {
-        return c.a.f(this, obj);
-    }
-
-    @Override // uu.b
-    public List d(Comparable comparable, Comparable comparable2) {
-        return c.a.e(this, comparable, comparable2);
-    }
-
-    @Override // tu.b
-    public Object f(Object obj, Object obj2) {
-        return Boolean.valueOf(b(dw.a.c(obj), a.f22147d));
-    }
-
-    @Override // uu.b
-    public List g(Comparable comparable, Comparable comparable2) {
-        return c.a.d(this, comparable, comparable2);
+    public String toString() {
+        List list = this.f23268a;
+        Map map = this.f23269b;
+        Object obj = this.f23270c;
+        return "ArrayOperationInputData(operationData=" + list + ", mappingOperation=" + map + ", operationDefault=" + obj + ")";
     }
 }

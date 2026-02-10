@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.TimeZone;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public interface e3 extends Closeable {
-    static Date M0(String str, ILogger iLogger) {
+    static Date Q0(String str, ILogger iLogger) {
         if (str == null) {
             return null;
         }
@@ -27,29 +27,27 @@ public interface e3 extends Closeable {
 
     void D();
 
-    Object E0(ILogger iLogger, m1 m1Var);
+    Object I0(ILogger iLogger, m1 m1Var);
 
-    Float M1();
+    Float R1();
 
     void T();
 
-    Object T1();
+    Object Z1();
 
     TimeZone b0(ILogger iLogger);
 
-    String b1();
-
-    List f2(ILogger iLogger, m1 m1Var);
-
-    Integer g1();
+    String g1();
 
     boolean hasNext();
 
-    Long i1();
+    List k2(ILogger iLogger, m1 m1Var);
 
-    String m1();
+    Integer l1();
 
     Double n0();
+
+    Long n1();
 
     double nextDouble();
 
@@ -61,15 +59,17 @@ public interface e3 extends Closeable {
 
     String o0();
 
-    Map o1(ILogger iLogger, m1 m1Var);
-
-    void p1(ILogger iLogger, Map map, String str);
-
     io.sentry.vendor.gson.stream.b peek();
+
+    String r1();
 
     Date s0(ILogger iLogger);
 
+    Map t1(ILogger iLogger, m1 m1Var);
+
     void u();
+
+    void u1(ILogger iLogger, Map map, String str);
 
     void v();
 

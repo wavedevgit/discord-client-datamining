@@ -1,6 +1,5 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import bn.c;
 import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
 import com.squareup.moshi.h;
@@ -9,6 +8,7 @@ import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.InputText;
+import dn.c;
 import kotlin.Metadata;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.Intrinsics;
@@ -70,7 +70,7 @@ public final class InputText_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -111,7 +111,7 @@ public final class InputText_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, InputText.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("prefill");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefill());
             writer.J("label");

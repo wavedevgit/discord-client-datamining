@@ -14,7 +14,7 @@ public interface j {
 
         @Override // ae.j
         public boolean a(Format format) {
-            String str = format.f11727w;
+            String str = format.f12304w;
             if (!"text/vtt".equals(str) && !"text/x-ssa".equals(str) && !"application/ttml+xml".equals(str) && !"application/x-mp4-vtt".equals(str) && !"application/x-subrip".equals(str) && !"application/x-quicktime-tx3g".equals(str) && !"application/cea-608".equals(str) && !"application/x-mp4-cea-608".equals(str) && !"application/cea-708".equals(str) && !"application/dvbsubs".equals(str) && !"application/pgs".equals(str) && !"text/x-exoplayer-cues".equals(str)) {
                 return false;
             }
@@ -23,7 +23,7 @@ public interface j {
 
         @Override // ae.j
         public h b(Format format) {
-            String str = format.f11727w;
+            String str = format.f12304w;
             if (str != null) {
                 char c10 = 65535;
                 switch (str.hashCode()) {
@@ -102,7 +102,7 @@ public interface j {
                 }
                 switch (c10) {
                     case 0:
-                        return new ce.a(format.f11729y);
+                        return new ce.a(format.f12306y);
                     case 1:
                         return new de.a();
                     case 2:
@@ -110,16 +110,16 @@ public interface j {
                     case 3:
                         return new je.h();
                     case 4:
-                        return new ie.a(format.f11729y);
+                        return new ie.a(format.f12306y);
                     case 5:
-                        return new fe.a(format.f11729y);
+                        return new fe.a(format.f12306y);
                     case 6:
                     case '\b':
                         return new be.a(str, format.O, 16000L);
                     case 7:
                         return new e();
                     case '\t':
-                        return new be.c(format.O, format.f11729y);
+                        return new be.c(format.O, format.f12306y);
                     case '\n':
                         return new ge.a();
                     case 11:

@@ -7,15 +7,15 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import nd.c;
-import ni.j;
 import oe.w0;
-import oi.m;
+import pi.j;
+import qi.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class c implements Metadata.b {
     public static final Parcelable.Creator<c> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final List f38165d;
+    public final List f37169d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -41,20 +41,20 @@ public final class c implements Metadata.b {
     public static final class b implements Parcelable {
 
         /* renamed from: d  reason: collision with root package name */
-        public final long f38167d;
+        public final long f37171d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final long f38168e;
+        public final long f37172e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final int f38169i;
+        public final int f37173i;
 
         /* renamed from: o  reason: collision with root package name */
-        public static final Comparator f38166o = new Comparator() { // from class: nd.d
+        public static final Comparator f37170o = new Comparator() { // from class: nd.d
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
                 int i10;
-                i10 = m.j().e(r1.f38167d, r2.f38167d).e(r1.f38168e, r2.f38168e).d(((c.b) obj).f38169i, ((c.b) obj2).f38169i).i();
+                i10 = m.j().e(r1.f37171d, r2.f37171d).e(r1.f37172e, r2.f37172e).d(((c.b) obj).f37173i, ((c.b) obj2).f37173i).i();
                 return i10;
             }
         };
@@ -86,9 +86,9 @@ public final class c implements Metadata.b {
                 z10 = false;
             }
             oe.a.a(z10);
-            this.f38167d = j10;
-            this.f38168e = j11;
-            this.f38169i = i10;
+            this.f37171d = j10;
+            this.f37172e = j11;
+            this.f37173i = i10;
         }
 
         @Override // android.os.Parcelable
@@ -102,7 +102,7 @@ public final class c implements Metadata.b {
             }
             if (obj != null && b.class == obj.getClass()) {
                 b bVar = (b) obj;
-                if (this.f38167d == bVar.f38167d && this.f38168e == bVar.f38168e && this.f38169i == bVar.f38169i) {
+                if (this.f37171d == bVar.f37171d && this.f37172e == bVar.f37172e && this.f37173i == bVar.f37173i) {
                     return true;
                 }
             }
@@ -110,23 +110,23 @@ public final class c implements Metadata.b {
         }
 
         public int hashCode() {
-            return j.b(Long.valueOf(this.f38167d), Long.valueOf(this.f38168e), Integer.valueOf(this.f38169i));
+            return j.b(Long.valueOf(this.f37171d), Long.valueOf(this.f37172e), Integer.valueOf(this.f37173i));
         }
 
         public String toString() {
-            return w0.D("Segment: startTimeMs=%d, endTimeMs=%d, speedDivisor=%d", Long.valueOf(this.f38167d), Long.valueOf(this.f38168e), Integer.valueOf(this.f38169i));
+            return w0.D("Segment: startTimeMs=%d, endTimeMs=%d, speedDivisor=%d", Long.valueOf(this.f37171d), Long.valueOf(this.f37172e), Integer.valueOf(this.f37173i));
         }
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeLong(this.f38167d);
-            parcel.writeLong(this.f38168e);
-            parcel.writeInt(this.f38169i);
+            parcel.writeLong(this.f37171d);
+            parcel.writeLong(this.f37172e);
+            parcel.writeInt(this.f37173i);
         }
     }
 
     public c(List list) {
-        this.f38165d = list;
+        this.f37169d = list;
         oe.a.a(!a(list));
     }
 
@@ -134,12 +134,12 @@ public final class c implements Metadata.b {
         if (list.isEmpty()) {
             return false;
         }
-        long j10 = ((b) list.get(0)).f38168e;
+        long j10 = ((b) list.get(0)).f37172e;
         for (int i10 = 1; i10 < list.size(); i10++) {
-            if (((b) list.get(i10)).f38167d < j10) {
+            if (((b) list.get(i10)).f37171d < j10) {
                 return true;
             }
-            j10 = ((b) list.get(i10)).f38168e;
+            j10 = ((b) list.get(i10)).f37172e;
         }
         return false;
     }
@@ -154,21 +154,21 @@ public final class c implements Metadata.b {
             return true;
         }
         if (obj != null && c.class == obj.getClass()) {
-            return this.f38165d.equals(((c) obj).f38165d);
+            return this.f37169d.equals(((c) obj).f37169d);
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f38165d.hashCode();
+        return this.f37169d.hashCode();
     }
 
     public String toString() {
-        return "SlowMotion: segments=" + this.f38165d;
+        return "SlowMotion: segments=" + this.f37169d;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeList(this.f38165d);
+        parcel.writeList(this.f37169d);
     }
 }

@@ -3552,7 +3552,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 'string';
                 var2 = typeof var2;
                 if (!(var3 === var2)) {
-                    _fun35583_ip = 59;
+                    _fun35583_ip = 61;
                     continue _fun35583
                 }
             case 25:
@@ -3561,10 +3561,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = /[^\n]/g;
                 var1 = '█';
                 var0 = var3.bind(var4)(var2, var1);
-            case 59:
+            case 61:
                 return var0;
         }
     };
     var2.plainSpoilerRenderer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 1410, 660, 1379, 483, 33, 3941, 3942, 1297, 671, 3944, 3946, 4002, 1234, 5344, 3149, 7440, 4086, 1457, 5942, 3146, 9765, 9305, 7784, 3241, 8239, 1348, 566, 4704, 4927, 9958, 12294, 7770, 4788, 8856, 8858, 11196, 11162, 3255, 478, 4809, 8859, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 1410, 660, 1379, 483, 33, 3941, 3942, 1297, 671, 3944, 3946, 4002, 1234, 5354, 3149, 7450, 4096, 1457, 5952, 3146, 9776, 9316, 7794, 3241, 8249, 1348, 566, 4714, 4937, 9969, 12305, 7780, 4798, 8867, 8869, 11207, 11173, 3255, 478, 4819, 8870, 2]);

@@ -38,10 +38,10 @@ import org.jetbrains.annotations.NotNull;
 public final class LazyJavaStaticClassScope extends LazyJavaStaticScope {
 
     /* renamed from: m  reason: collision with root package name */
-    private final JavaClass f32720m;
+    private final JavaClass f32942m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final JavaClassDescriptor f32721n;
+    private final JavaClassDescriptor f32943n;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public LazyJavaStaticClassScope(@NotNull LazyJavaResolverContext c10, @NotNull JavaClass jClass, @NotNull JavaClassDescriptor ownerDescriptor) {
@@ -49,8 +49,8 @@ public final class LazyJavaStaticClassScope extends LazyJavaStaticScope {
         Intrinsics.checkNotNullParameter(c10, "c");
         Intrinsics.checkNotNullParameter(jClass, "jClass");
         Intrinsics.checkNotNullParameter(ownerDescriptor, "ownerDescriptor");
-        this.f32720m = jClass;
-        this.f32721n = ownerDescriptor;
+        this.f32942m = jClass;
+        this.f32943n = ownerDescriptor;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -72,9 +72,9 @@ public final class LazyJavaStaticClassScope extends LazyJavaStaticScope {
     }
 
     private final Set f0(final ClassDescriptor classDescriptor, final Set set, final Function1 function1) {
-        DFS.dfs(CollectionsKt.e(classDescriptor), n0.f32759a, new DFS.AbstractNodeHandler<ClassDescriptor, Unit>() { // from class: kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaStaticClassScope$flatMapJavaStaticSupertypesScopes$2
+        DFS.dfs(CollectionsKt.e(classDescriptor), n0.f32981a, new DFS.AbstractNodeHandler<ClassDescriptor, Unit>() { // from class: kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaStaticClassScope$flatMapJavaStaticSupertypesScopes$2
             /* renamed from: result  reason: collision with other method in class */
-            public void m1197result() {
+            public void m1200result() {
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.utils.DFS.AbstractNodeHandler, kotlin.reflect.jvm.internal.impl.utils.DFS.NodeHandler
@@ -94,8 +94,8 @@ public final class LazyJavaStaticClassScope extends LazyJavaStaticScope {
 
             @Override // kotlin.reflect.jvm.internal.impl.utils.DFS.NodeHandler
             public /* bridge */ /* synthetic */ Object result() {
-                m1197result();
-                return Unit.f31765a;
+                m1200result();
+                return Unit.f31987a;
             }
         });
         return set;
@@ -105,14 +105,14 @@ public final class LazyJavaStaticClassScope extends LazyJavaStaticScope {
     public static final Iterable g0(ClassDescriptor classDescriptor) {
         Collection<KotlinType> supertypes = classDescriptor.getTypeConstructor().getSupertypes();
         Intrinsics.checkNotNullExpressionValue(supertypes, "getSupertypes(...)");
-        return kotlin.sequences.k.z(kotlin.sequences.k.S(CollectionsKt.b0(supertypes), o0.f32761d));
+        return kotlin.sequences.k.z(kotlin.sequences.k.S(CollectionsKt.b0(supertypes), o0.f32983d));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ClassDescriptor h0(KotlinType kotlinType) {
-        ClassifierDescriptor mo1199getDeclarationDescriptor = kotlinType.getConstructor().mo1199getDeclarationDescriptor();
-        if (mo1199getDeclarationDescriptor instanceof ClassDescriptor) {
-            return (ClassDescriptor) mo1199getDeclarationDescriptor;
+        ClassifierDescriptor mo1202getDeclarationDescriptor = kotlinType.getConstructor().mo1202getDeclarationDescriptor();
+        if (mo1202getDeclarationDescriptor instanceof ClassDescriptor) {
+            return (ClassDescriptor) mo1202getDeclarationDescriptor;
         }
         return null;
     }
@@ -144,7 +144,7 @@ public final class LazyJavaStaticClassScope extends LazyJavaStaticScope {
     @Override // kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaScope
     /* renamed from: b0 */
     public ClassDeclaredMemberIndex computeMemberIndex() {
-        return new ClassDeclaredMemberIndex(this.f32720m, k0.f32751d);
+        return new ClassDeclaredMemberIndex(this.f32942m, k0.f32973d);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaScope
@@ -162,7 +162,7 @@ public final class LazyJavaStaticClassScope extends LazyJavaStaticScope {
             set = x0.d();
         }
         k12.addAll(set);
-        if (this.f32720m.isEnum()) {
+        if (this.f32942m.isEnum()) {
             k12.addAll(CollectionsKt.o(StandardNames.ENUM_VALUE_OF, StandardNames.ENUM_VALUES));
         }
         k12.addAll(C().getComponents().getSyntheticPartsProvider().getStaticFunctionNames(getOwnerDescriptor(), C()));
@@ -171,7 +171,7 @@ public final class LazyJavaStaticClassScope extends LazyJavaStaticScope {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     /* renamed from: getContributedClassifier */
-    public ClassifierDescriptor mo1200getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
+    public ClassifierDescriptor mo1203getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
         return null;
@@ -181,7 +181,7 @@ public final class LazyJavaStaticClassScope extends LazyJavaStaticScope {
     @Override // kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaScope
     /* renamed from: i0 */
     public JavaClassDescriptor getOwnerDescriptor() {
-        return this.f32721n;
+        return this.f32943n;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaScope
@@ -204,7 +204,7 @@ public final class LazyJavaStaticClassScope extends LazyJavaStaticScope {
         Collection resolveOverridesForStaticMembers = DescriptorResolverUtils.resolveOverridesForStaticMembers(name, k0(name, getOwnerDescriptor()), result, getOwnerDescriptor(), C().getComponents().getErrorReporter(), C().getComponents().getKotlinTypeChecker().getOverridingUtil());
         Intrinsics.checkNotNullExpressionValue(resolveOverridesForStaticMembers, "resolveOverridesForStaticMembers(...)");
         result.addAll(resolveOverridesForStaticMembers);
-        if (this.f32720m.isEnum()) {
+        if (this.f32942m.isEnum()) {
             if (Intrinsics.areEqual(name, StandardNames.ENUM_VALUE_OF)) {
                 SimpleFunctionDescriptor createEnumValueOfMethod = DescriptorFactory.createEnumValueOfMethod(getOwnerDescriptor());
                 Intrinsics.checkNotNullExpressionValue(createEnumValueOfMethod, "createEnumValueOfMethod(...)");
@@ -251,7 +251,7 @@ public final class LazyJavaStaticClassScope extends LazyJavaStaticScope {
             }
             collection.addAll(arrayList);
         }
-        if (this.f32720m.isEnum() && Intrinsics.areEqual(name2, StandardNames.ENUM_ENTRIES)) {
+        if (this.f32942m.isEnum() && Intrinsics.areEqual(name2, StandardNames.ENUM_ENTRIES)) {
             kotlin.reflect.jvm.internal.impl.utils.CollectionsKt.addIfNotNull(collection, DescriptorFactory.createEnumEntriesProperty(getOwnerDescriptor()));
         }
     }
@@ -260,8 +260,8 @@ public final class LazyJavaStaticClassScope extends LazyJavaStaticScope {
     protected Set u(DescriptorKindFilter kindFilter, Function1 function1) {
         Intrinsics.checkNotNullParameter(kindFilter, "kindFilter");
         Set k12 = CollectionsKt.k1(((DeclaredMemberIndex) E().invoke()).getFieldNames());
-        f0(getOwnerDescriptor(), k12, l0.f32754d);
-        if (this.f32720m.isEnum()) {
+        f0(getOwnerDescriptor(), k12, l0.f32976d);
+        if (this.f32942m.isEnum()) {
             k12.add(StandardNames.ENUM_ENTRIES);
         }
         return k12;

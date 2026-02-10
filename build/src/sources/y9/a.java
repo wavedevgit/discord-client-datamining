@@ -7,29 +7,29 @@ import p9.d;
 public final class a implements b {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final C0780a f55549c = new C0780a(null);
+    public static final C0774a f55480c = new C0774a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f55550a;
+    private final d f55481a;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f55551b;
+    private long f55482b;
 
     /* renamed from: y9.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0780a {
-        public /* synthetic */ C0780a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0774a {
+        public /* synthetic */ C0774a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0780a() {
+        private C0774a() {
         }
     }
 
     public a(d animationInformation) {
         Intrinsics.checkNotNullParameter(animationInformation, "animationInformation");
-        this.f55550a = animationInformation;
-        this.f55551b = -1L;
+        this.f55481a = animationInformation;
+        this.f55482b = -1L;
     }
 
     @Override // y9.b
@@ -39,13 +39,13 @@ public final class a implements b {
         if (d10 == 0) {
             return -1L;
         }
-        if (!e() && j10 / d10 >= this.f55550a.b()) {
+        if (!e() && j10 / d10 >= this.f55481a.b()) {
             return -1L;
         }
         long j12 = j10 % d10;
-        int a10 = this.f55550a.a();
+        int a10 = this.f55481a.a();
         for (int i10 = 0; i10 < a10 && j11 <= j12; i10++) {
-            j11 += this.f55550a.k(i10);
+            j11 += this.f55481a.k(i10);
         }
         return j10 + (j11 - j12);
     }
@@ -56,7 +56,7 @@ public final class a implements b {
         if (d10 == 0) {
             return c(0L);
         }
-        if (!e() && j10 / d10 >= this.f55550a.b()) {
+        if (!e() && j10 / d10 >= this.f55481a.b()) {
             return -1;
         }
         return c(j10 % d10);
@@ -66,7 +66,7 @@ public final class a implements b {
         int i10 = 0;
         long j11 = 0;
         while (true) {
-            j11 += this.f55550a.k(i10);
+            j11 += this.f55481a.k(i10);
             int i11 = i10 + 1;
             if (j10 < j11) {
                 return i10;
@@ -76,20 +76,20 @@ public final class a implements b {
     }
 
     public long d() {
-        long j10 = this.f55551b;
+        long j10 = this.f55482b;
         if (j10 != -1) {
             return j10;
         }
-        this.f55551b = 0L;
-        int a10 = this.f55550a.a();
+        this.f55482b = 0L;
+        int a10 = this.f55481a.a();
         for (int i10 = 0; i10 < a10; i10++) {
-            this.f55551b += this.f55550a.k(i10);
+            this.f55482b += this.f55481a.k(i10);
         }
-        return this.f55551b;
+        return this.f55482b;
     }
 
     public boolean e() {
-        if (this.f55550a.b() == 0) {
+        if (this.f55481a.b() == 0) {
             return true;
         }
         return false;

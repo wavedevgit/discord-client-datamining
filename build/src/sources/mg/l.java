@@ -7,7 +7,7 @@ import ff.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class l extends ff.d implements vg.i {
     public l(Context context) {
-        super(context, g.f37083l, a.d.f22598c, d.a.f22610c);
+        super(context, g.f36458l, a.d.f23723g, d.a.f23735c);
     }
 
     @Override // vg.i
@@ -25,7 +25,7 @@ public final class l extends ff.d implements vg.i {
                     z10 = false;
                 }
                 hf.q.b(z10, "locationSettingsRequest can't be null");
-                ((f0) oVar.C()).L0(dVar2, new n(kVar), null);
+                ((f0) oVar.C()).N0(dVar2, new n(kVar), null);
             }
         }).e(2426).a());
     }

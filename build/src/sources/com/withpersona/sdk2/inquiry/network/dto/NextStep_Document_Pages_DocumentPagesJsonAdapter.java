@@ -51,7 +51,7 @@ public final class NextStep_Document_Pages_DocumentPagesJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 documentStartPage = (NextStep.Document.Pages.DocumentStartPage) this.nullableDocumentStartPageAdapter.fromJson(reader);
@@ -67,7 +67,7 @@ public final class NextStep_Document_Pages_DocumentPagesJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Document.Pages.DocumentPages documentPages) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentPages != null) {
-            writer.k();
+            writer.i();
             writer.J("prompt");
             this.nullableDocumentStartPageAdapter.toJson(writer, documentPages.getPrompt());
             writer.J("uploadOptionsDialog");

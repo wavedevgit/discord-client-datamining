@@ -4,11 +4,11 @@ public interface a {
 
     /* renamed from: y.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public interface InterfaceC0774a {
+    public interface InterfaceC0768a {
         void a(int i10, int i11);
     }
 
-    void a(InterfaceC0774a interfaceC0774a);
+    void a(InterfaceC0768a interfaceC0768a);
 
     String b(String str);
 

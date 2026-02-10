@@ -1,12 +1,18 @@
 package ki;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.zip.ZipEntry;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class n implements l {
-    @Override // ki.l
-    public final Object[] a(Object obj, ArrayList arrayList, File file, ArrayList arrayList2) {
-        return (Object[]) d0.e(obj, "makePathElements", Object[].class, List.class, arrayList, File.class, file, List.class, arrayList2);
+public final class n {
+
+    /* renamed from: a  reason: collision with root package name */
+    public final String f31766a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final ZipEntry f31767b;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public n(ZipEntry zipEntry, String str) {
+        this.f31767b = zipEntry;
+        this.f31766a = str;
     }
 }

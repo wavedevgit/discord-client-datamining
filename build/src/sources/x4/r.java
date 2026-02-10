@@ -16,7 +16,7 @@ public abstract class r implements Closeable {
 
     public abstract a a();
 
-    public abstract BufferedSource g();
+    public abstract BufferedSource h();
 
     private r() {
     }

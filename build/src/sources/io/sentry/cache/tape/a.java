@@ -22,7 +22,7 @@ final class a extends c {
     }
 
     @Override // io.sentry.cache.tape.c
-    public void C0(int i10) {
+    public void H0(int i10) {
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
@@ -30,7 +30,7 @@ final class a extends c {
     }
 
     @Override // io.sentry.cache.tape.c
-    public void g(Object obj) {
+    public void i(Object obj) {
     }
 
     @Override // java.lang.Iterable

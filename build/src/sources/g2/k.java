@@ -10,10 +10,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class k implements CredentialManager {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f23380c = new a(null);
+    public static final a f24680c = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f23381b;
+    private final Context f24681b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -27,7 +27,7 @@ public final class k implements CredentialManager {
 
     public k(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f23381b = context;
+        this.f24681b = context;
     }
 
     @Override // androidx.credentials.CredentialManager
@@ -50,7 +50,7 @@ public final class k implements CredentialManager {
         Intrinsics.checkNotNullParameter(request, "request");
         Intrinsics.checkNotNullParameter(executor, "executor");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        m d10 = n.d(new n(this.f23381b), request, false, 2, null);
+        m d10 = n.d(new n(this.f24681b), request, false, 2, null);
         if (d10 == null) {
             callback.a(new h2.h("createCredentialAsync no provider dependencies found - please ensure the desired provider dependencies are added"));
         } else {

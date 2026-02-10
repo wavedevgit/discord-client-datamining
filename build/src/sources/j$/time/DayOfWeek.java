@@ -18,17 +18,17 @@ public final class DayOfWeek implements TemporalAccessor, j$.time.temporal.l {
     public static final DayOfWeek WEDNESDAY;
 
     /* renamed from: a  reason: collision with root package name */
-    public static final DayOfWeek[] f29674a;
+    public static final DayOfWeek[] f30474a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ DayOfWeek[] f29675b;
+    public static final /* synthetic */ DayOfWeek[] f30475b;
 
     public static DayOfWeek valueOf(String str) {
         return (DayOfWeek) Enum.valueOf(DayOfWeek.class, str);
     }
 
     public static DayOfWeek[] values() {
-        return (DayOfWeek[]) f29675b.clone();
+        return (DayOfWeek[]) f30475b.clone();
     }
 
     /* JADX WARN: Type inference failed for: r0v0, types: [j$.time.DayOfWeek, java.lang.Enum] */
@@ -53,15 +53,15 @@ public final class DayOfWeek implements TemporalAccessor, j$.time.temporal.l {
         SATURDAY = r52;
         ?? r62 = new Enum("SUNDAY", 6);
         SUNDAY = r62;
-        f29675b = new DayOfWeek[]{r02, r12, r22, r32, r42, r52, r62};
-        f29674a = values();
+        f30475b = new DayOfWeek[]{r02, r12, r22, r32, r42, r52, r62};
+        f30474a = values();
     }
 
     public static DayOfWeek t(int i10) {
         if (i10 < 1 || i10 > 7) {
             throw new DateTimeException("Invalid value for DayOfWeek: " + i10);
         }
-        return f29674a[i10 - 1];
+        return f30474a[i10 - 1];
     }
 
     public final int r() {
@@ -102,7 +102,7 @@ public final class DayOfWeek implements TemporalAccessor, j$.time.temporal.l {
 
     @Override // j$.time.temporal.TemporalAccessor
     public final Object a(TemporalQuery temporalQuery) {
-        if (temporalQuery == o.f29821c) {
+        if (temporalQuery == o.f30621c) {
             return j$.time.temporal.b.DAYS;
         }
         return super.a(temporalQuery);

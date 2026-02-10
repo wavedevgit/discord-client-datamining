@@ -137,7 +137,7 @@ public final class StepStyles_SelfieStepStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -198,7 +198,7 @@ public final class StepStyles_SelfieStepStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.SelfieStepStyle selfieStepStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfieStepStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("textColor");
             this.nullableHeaderButtonColorStyleAdapter.toJson(writer, selfieStepStyle.getHeaderButtonColor());
             writer.J(ViewProps.BACKGROUND_COLOR);

@@ -3,17 +3,17 @@ package rg;
 final class u extends x {
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ c0 f48720p;
+    final /* synthetic */ c0 f47174p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public u(c0 c0Var) {
         super(c0Var, null);
-        this.f48720p = c0Var;
+        this.f47174p = c0Var;
     }
 
     @Override // rg.x
     final Object a(int i10) {
-        return c0.m(this.f48720p, i10);
+        return c0.m(this.f47174p, i10);
     }
 }

@@ -1,47 +1,46 @@
 package on;
 
-import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.events.Event;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import com.facebook.react.uimanager.PixelUtil;
+import kotlin.jvm.internal.Intrinsics;
+import nn.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d extends Event {
+public final class d extends b {
 
-    /* renamed from: b  reason: collision with root package name */
-    public static final a f42382b = new a(null);
+    /* renamed from: e  reason: collision with root package name */
+    private final float f40642e;
 
-    /* renamed from: a  reason: collision with root package name */
-    private final int f42383a;
+    /* renamed from: f  reason: collision with root package name */
+    private final float f40643f;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: g  reason: collision with root package name */
+    private final float f40644g;
 
-        private a() {
-        }
+    /* renamed from: h  reason: collision with root package name */
+    private final float f40645h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final int f40646i;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public d(o handler) {
+        super(handler);
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        this.f40642e = handler.L();
+        this.f40643f = handler.M();
+        this.f40644g = handler.J();
+        this.f40645h = handler.K();
+        this.f40646i = handler.Y0();
     }
 
-    public d(int i10, int i11, int i12) {
-        super(i10, i11);
-        this.f42383a = i12;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public short getCoalescingKey() {
-        return (short) this.f42383a;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    protected WritableMap getEventData() {
-        WritableMap createMap = Arguments.createMap();
-        createMap.putDouble("headerHeight", this.f42383a);
-        return createMap;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public String getEventName() {
-        return "topHeaderHeightChange";
+    @Override // on.b
+    public void a(WritableMap eventData) {
+        Intrinsics.checkNotNullParameter(eventData, "eventData");
+        super.a(eventData);
+        eventData.putDouble("x", PixelUtil.toDIPFromPixel(this.f40642e));
+        eventData.putDouble("y", PixelUtil.toDIPFromPixel(this.f40643f));
+        eventData.putDouble("absoluteX", PixelUtil.toDIPFromPixel(this.f40644g));
+        eventData.putDouble("absoluteY", PixelUtil.toDIPFromPixel(this.f40645h));
+        eventData.putInt("duration", this.f40646i);
     }
 }

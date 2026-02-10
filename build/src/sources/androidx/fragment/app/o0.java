@@ -16,33 +16,33 @@ public abstract class o0 {
     public class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f4473d;
+        final /* synthetic */ int f4483d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4474e;
+        final /* synthetic */ ArrayList f4484e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4475i;
+        final /* synthetic */ ArrayList f4485i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4476o;
+        final /* synthetic */ ArrayList f4486o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4477p;
+        final /* synthetic */ ArrayList f4487p;
 
         a(int i10, ArrayList arrayList, ArrayList arrayList2, ArrayList arrayList3, ArrayList arrayList4) {
-            this.f4473d = i10;
-            this.f4474e = arrayList;
-            this.f4475i = arrayList2;
-            this.f4476o = arrayList3;
-            this.f4477p = arrayList4;
+            this.f4483d = i10;
+            this.f4484e = arrayList;
+            this.f4485i = arrayList2;
+            this.f4486o = arrayList3;
+            this.f4487p = arrayList4;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            for (int i10 = 0; i10 < this.f4473d; i10++) {
-                androidx.core.view.h0.J0((View) this.f4474e.get(i10), (String) this.f4475i.get(i10));
-                androidx.core.view.h0.J0((View) this.f4476o.get(i10), (String) this.f4477p.get(i10));
+            for (int i10 = 0; i10 < this.f4483d; i10++) {
+                androidx.core.view.i0.C0((View) this.f4484e.get(i10), (String) this.f4485i.get(i10));
+                androidx.core.view.i0.C0((View) this.f4486o.get(i10), (String) this.f4487p.get(i10));
             }
         }
     }
@@ -51,7 +51,7 @@ public abstract class o0 {
     public static void f(List list, View view) {
         int size = list.size();
         if (!i(list, view, size)) {
-            if (androidx.core.view.h0.I(view) != null) {
+            if (androidx.core.view.i0.H(view) != null) {
                 list.add(view);
             }
             for (int i10 = size; i10 < list.size(); i10++) {
@@ -61,7 +61,7 @@ public abstract class o0 {
                     int childCount = viewGroup.getChildCount();
                     for (int i11 = 0; i11 < childCount; i11++) {
                         View childAt = viewGroup.getChildAt(i11);
-                        if (!i(list, childAt, size) && androidx.core.view.h0.I(childAt) != null) {
+                        if (!i(list, childAt, size) && androidx.core.view.i0.H(childAt) != null) {
                             list.add(childAt);
                         }
                     }
@@ -148,8 +148,8 @@ public abstract class o0 {
         int size = arrayList.size();
         for (int i10 = 0; i10 < size; i10++) {
             View view = (View) arrayList.get(i10);
-            arrayList2.add(androidx.core.view.h0.I(view));
-            androidx.core.view.h0.J0(view, null);
+            arrayList2.add(androidx.core.view.i0.H(view));
+            androidx.core.view.i0.C0(view, null);
         }
         return arrayList2;
     }
@@ -177,17 +177,17 @@ public abstract class o0 {
         ArrayList arrayList4 = new ArrayList();
         for (int i10 = 0; i10 < size; i10++) {
             View view2 = (View) arrayList.get(i10);
-            String I = androidx.core.view.h0.I(view2);
-            arrayList4.add(I);
-            if (I != null) {
-                androidx.core.view.h0.J0(view2, null);
-                String str = (String) map.get(I);
+            String H = androidx.core.view.i0.H(view2);
+            arrayList4.add(H);
+            if (H != null) {
+                androidx.core.view.i0.C0(view2, null);
+                String str = (String) map.get(H);
                 int i11 = 0;
                 while (true) {
                     if (i11 >= size) {
                         break;
                     } else if (str.equals(arrayList3.get(i11))) {
-                        androidx.core.view.h0.J0((View) arrayList2.get(i11), I);
+                        androidx.core.view.i0.C0((View) arrayList2.get(i11), H);
                         break;
                     } else {
                         i11++;
@@ -195,7 +195,7 @@ public abstract class o0 {
                 }
             }
         }
-        androidx.core.view.y.a(view, new a(size, arrayList2, arrayList3, arrayList, arrayList4));
+        androidx.core.view.z.a(view, new a(size, arrayList2, arrayList3, arrayList, arrayList4));
     }
 
     public abstract void z(Object obj, View view, ArrayList arrayList);

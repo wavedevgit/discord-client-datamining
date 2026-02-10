@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.databinding.PollRecyclerViewBinding;
 import com.discord.chat.presentation.message.messagepart.PollMessageAccessory;
@@ -46,16 +46,16 @@ public abstract class BasePollWithRecyclerView extends ConstraintLayout implemen
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$3(Function3 function3, PollMessageAccessory pollMessageAccessory, String answerId) {
         Intrinsics.checkNotNullParameter(answerId, "answerId");
-        function3.invoke(ChannelId.m1057boximpl(pollMessageAccessory.m630getChannelIdo4g7jtM()), MessageId.m1083boximpl(pollMessageAccessory.mo536getMessageId3Eiw7ao()), answerId);
-        return Unit.f31765a;
+        function3.invoke(ChannelId.m1058boximpl(pollMessageAccessory.m631getChannelIdo4g7jtM()), MessageId.m1084boximpl(pollMessageAccessory.mo537getMessageId3Eiw7ao()), answerId);
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$4(Function8 function8, PollMessageAccessory pollMessageAccessory, String attachmentId, int i10, int i11, int i12, int i13, ViewResizeMode viewResizeMode) {
         Intrinsics.checkNotNullParameter(attachmentId, "attachmentId");
         Intrinsics.checkNotNullParameter(viewResizeMode, "viewResizeMode");
-        function8.invoke(ChannelId.m1057boximpl(pollMessageAccessory.m630getChannelIdo4g7jtM()), MessageId.m1083boximpl(pollMessageAccessory.mo536getMessageId3Eiw7ao()), attachmentId, Integer.valueOf((int) SizeUtilsKt.getPxToDp(i10)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i11)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i12)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i13)), viewResizeMode);
-        return Unit.f31765a;
+        function8.invoke(ChannelId.m1058boximpl(pollMessageAccessory.m631getChannelIdo4g7jtM()), MessageId.m1084boximpl(pollMessageAccessory.mo537getMessageId3Eiw7ao()), attachmentId, Integer.valueOf((int) SizeUtilsKt.getPxToDp(i10)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i11)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i12)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i13)), viewResizeMode);
+        return Unit.f31987a;
     }
 
     protected static /* synthetic */ void getBinding$annotations() {
@@ -92,9 +92,9 @@ public abstract class BasePollWithRecyclerView extends ConstraintLayout implemen
         RecyclerView recyclerView = this.binding.answers;
         boolean z13 = true;
         recyclerView.setFocusableInTouchMode(!accessory.getData().getCanSelectMultipleAnswers());
-        h0.A0(recyclerView, 4);
+        i0.v0(recyclerView, 4);
         recyclerView.setImportantForAccessibility(1);
-        h0.n0(recyclerView, new PollAnswersRecyclerAccessibilityDelegate(accessory));
+        i0.k0(recyclerView, new PollAnswersRecyclerAccessibilityDelegate(accessory));
         boolean hasAccessibilityFocus = this.binding.primaryAction.hasAccessibilityFocus();
         boolean hasAccessibilityFocus2 = this.binding.secondaryActionButton.hasAccessibilityFocus();
         boolean hasAccessibilityFocus3 = this.binding.tertiaryActionButton.hasAccessibilityFocus();
@@ -113,9 +113,9 @@ public abstract class BasePollWithRecyclerView extends ConstraintLayout implemen
         }
         textView.setVisibility(i10);
         textView.setText(accessory.getData().getPromptLabel());
-        this.binding.primaryAction.m709bindurJ__Hs(accessory.getData().getPrimaryAction(), accessory.m630getChannelIdo4g7jtM(), accessory.mo536getMessageId3Eiw7ao(), onTapPollAction);
-        this.binding.secondaryActionButton.m709bindurJ__Hs(accessory.getData().getSecondaryAction(), accessory.m630getChannelIdo4g7jtM(), accessory.mo536getMessageId3Eiw7ao(), onTapPollAction);
-        this.binding.tertiaryActionButton.m709bindurJ__Hs(accessory.getData().getTertiaryAction(), accessory.m630getChannelIdo4g7jtM(), accessory.mo536getMessageId3Eiw7ao(), onTapPollAction);
+        this.binding.primaryAction.m710bindurJ__Hs(accessory.getData().getPrimaryAction(), accessory.m631getChannelIdo4g7jtM(), accessory.mo537getMessageId3Eiw7ao(), onTapPollAction);
+        this.binding.secondaryActionButton.m710bindurJ__Hs(accessory.getData().getSecondaryAction(), accessory.m631getChannelIdo4g7jtM(), accessory.mo537getMessageId3Eiw7ao(), onTapPollAction);
+        this.binding.tertiaryActionButton.m710bindurJ__Hs(accessory.getData().getTertiaryAction(), accessory.m631getChannelIdo4g7jtM(), accessory.mo537getMessageId3Eiw7ao(), onTapPollAction);
         if (hasAccessibilityFocus && !this.binding.primaryAction.hasAccessibilityFocus()) {
             z11 = true;
         } else {

@@ -12,10 +12,10 @@ import kotlin.reflect.jvm.internal.impl.util.Check;
 final class a implements Check {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f34563a = new a();
+    public static final a f34785a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String f34564b = "second parameter must be of type KProperty<*> or its supertype";
+    private static final String f34786b = "second parameter must be of type KProperty<*> or its supertype";
 
     private a() {
     }
@@ -37,7 +37,7 @@ final class a implements Check {
 
     @Override // kotlin.reflect.jvm.internal.impl.util.Check
     public String getDescription() {
-        return f34564b;
+        return f34786b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.util.Check

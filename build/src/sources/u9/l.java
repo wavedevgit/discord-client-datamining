@@ -7,10 +7,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CloseableReference f51385a;
+    private final CloseableReference f50564a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f51386b;
+    private final a f50565b;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -18,31 +18,31 @@ public final class l {
     public static final class a {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f51387d = new a("SUCCESS", 0);
+        public static final a f50566d = new a("SUCCESS", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f51388e = new a("NEAREST", 1);
+        public static final a f50567e = new a("NEAREST", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final a f51389i = new a("MISSING", 2);
+        public static final a f50568i = new a("MISSING", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ a[] f51390o;
+        private static final /* synthetic */ a[] f50569o;
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f51391p;
+        private static final /* synthetic */ EnumEntries f50570p;
 
         static {
             a[] a10 = a();
-            f51390o = a10;
-            f51391p = yr.a.a(a10);
+            f50569o = a10;
+            f50570p = hs.a.a(a10);
         }
 
         private a(String str, int i10) {
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f51387d, f51388e, f51389i};
+            return new a[]{f50566d, f50567e, f50568i};
         }
 
         public static a valueOf(String str) {
@@ -50,21 +50,21 @@ public final class l {
         }
 
         public static a[] values() {
-            return (a[]) f51390o.clone();
+            return (a[]) f50569o.clone();
         }
     }
 
     public l(CloseableReference closeableReference, a type) {
         Intrinsics.checkNotNullParameter(type, "type");
-        this.f51385a = closeableReference;
-        this.f51386b = type;
+        this.f50564a = closeableReference;
+        this.f50565b = type;
     }
 
     public final CloseableReference a() {
-        return this.f51385a;
+        return this.f50564a;
     }
 
     public final a b() {
-        return this.f51386b;
+        return this.f50565b;
     }
 }

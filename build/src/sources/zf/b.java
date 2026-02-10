@@ -12,13 +12,13 @@ public interface b extends IInterface {
 
         /* renamed from: zf.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static class C0801a extends lg.a implements b {
-            C0801a(IBinder iBinder) {
+        public static class C0802a extends lg.a implements b {
+            C0802a(IBinder iBinder) {
                 super(iBinder, "com.google.android.gms.identitycredentials.internal.IIdentityCredentialService");
             }
 
             @Override // zf.b
-            public void J0(zf.a aVar, GetCredentialRequest getCredentialRequest) {
+            public void L0(zf.a aVar, GetCredentialRequest getCredentialRequest) {
                 Parcel e10 = e();
                 lg.c.c(e10, aVar);
                 lg.c.b(e10, getCredentialRequest);
@@ -34,9 +34,9 @@ public interface b extends IInterface {
             if (queryLocalInterface instanceof b) {
                 return (b) queryLocalInterface;
             }
-            return new C0801a(iBinder);
+            return new C0802a(iBinder);
         }
     }
 
-    void J0(zf.a aVar, GetCredentialRequest getCredentialRequest);
+    void L0(zf.a aVar, GetCredentialRequest getCredentialRequest);
 }

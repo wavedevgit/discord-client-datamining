@@ -33,13 +33,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.acknowledgeTooltip = var4;
     var0 = function arg0() {
-        _fun69434: for (var _fun69434_ip = 0;;) switch (_fun69434_ip) {
+        _fun69490: for (var _fun69490_ip = 0;;) switch (_fun69490_ip) {
             case 0:
                 var4 = arguments[1];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun69434_ip = 11;
-                    continue _fun69434
+                    _fun69490_ip = 11;
+                    continue _fun69490
                 }
             case 9:
                 var4 = false;

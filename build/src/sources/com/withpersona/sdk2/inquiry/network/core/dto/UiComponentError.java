@@ -2,6 +2,7 @@ package com.withpersona.sdk2.inquiry.network.core.dto;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import as.p;
 import com.squareup.moshi.f;
 import com.squareup.moshi.h;
 import com.squareup.moshi.i;
@@ -16,7 +17,6 @@ import java.util.Map;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import rr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class UiComponentError implements Parcelable {
     @NotNull
@@ -33,7 +33,7 @@ public abstract class UiComponentError implements Parcelable {
             y10.u();
             while (y10.hasNext()) {
                 if (Intrinsics.areEqual(y10.o0(), "type")) {
-                    return y10.b1();
+                    return y10.g1();
                 }
                 y10.T();
             }

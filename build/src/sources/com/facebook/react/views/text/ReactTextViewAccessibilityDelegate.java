@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityNodeProviderCompat;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import com.facebook.react.R;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.uimanager.ReactAccessibilityDelegate;
@@ -45,7 +45,7 @@ public final class ReactTextViewAccessibilityDelegate extends ReactAccessibility
             private int end;
 
             /* renamed from: id  reason: collision with root package name */
-            private int f11414id;
+            private int f11991id;
             private int start;
 
             public final String getDescription() {
@@ -57,7 +57,7 @@ public final class ReactTextViewAccessibilityDelegate extends ReactAccessibility
             }
 
             public final int getId() {
-                return this.f11414id;
+                return this.f11991id;
             }
 
             public final int getStart() {
@@ -73,7 +73,7 @@ public final class ReactTextViewAccessibilityDelegate extends ReactAccessibility
             }
 
             public final void setId(int i10) {
-                this.f11414id = i10;
+                this.f11991id = i10;
             }
 
             public final void setStart(int i10) {
@@ -90,7 +90,7 @@ public final class ReactTextViewAccessibilityDelegate extends ReactAccessibility
                 i.F(clickableSpanArr, new Comparator() { // from class: com.facebook.react.views.text.ReactTextViewAccessibilityDelegate$AccessibilityLinks$special$$inlined$sortBy$1
                     @Override // java.util.Comparator
                     public final int compare(T t10, T t11) {
-                        return ur.a.d(Integer.valueOf(text.getSpanStart((ClickableSpan) t10)), Integer.valueOf(text.getSpanStart((ClickableSpan) t11)));
+                        return ds.a.d(Integer.valueOf(text.getSpanStart((ClickableSpan) t10)), Integer.valueOf(text.getSpanStart((ClickableSpan) t11)));
                     }
                 });
             }
@@ -143,14 +143,14 @@ public final class ReactTextViewAccessibilityDelegate extends ReactAccessibility
 
         public final void resetDelegate(@NotNull View view, boolean z10, int i10) {
             Intrinsics.checkNotNullParameter(view, "view");
-            h0.n0(view, new ReactTextViewAccessibilityDelegate(view, z10, i10));
+            i0.k0(view, new ReactTextViewAccessibilityDelegate(view, z10, i10));
         }
 
         public final void setDelegate(@NotNull View view, boolean z10, int i10) {
             Intrinsics.checkNotNullParameter(view, "view");
-            if (!h0.N(view)) {
+            if (!i0.M(view)) {
                 if (view.getTag(R.id.accessibility_role) != null || view.getTag(R.id.accessibility_state) != null || view.getTag(R.id.accessibility_actions) != null || view.getTag(R.id.react_test_id) != null || view.getTag(R.id.accessibility_collection_item) != null || view.getTag(R.id.accessibility_links) != null || view.getTag(R.id.role) != null) {
-                    h0.n0(view, new ReactTextViewAccessibilityDelegate(view, z10, i10));
+                    i0.k0(view, new ReactTextViewAccessibilityDelegate(view, z10, i10));
                 }
             }
         }

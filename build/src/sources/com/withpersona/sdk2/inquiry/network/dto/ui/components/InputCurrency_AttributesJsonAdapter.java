@@ -64,7 +64,7 @@ public final class InputCurrency_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -95,7 +95,7 @@ public final class InputCurrency_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, InputCurrency.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("prefill");
             this.nullableNumberAdapter.toJson(writer, attributes.getPrefill());
             writer.J("label");

@@ -27,49 +27,49 @@ public abstract class l implements Serializable {
     private static final l F;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String f38716d = System.getProperty("line.separator");
+    private static final String f37720d = System.getProperty("line.separator");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String f38717e = System.getProperty("net.time4j.tz.repository.version");
+    private static final String f37721e = System.getProperty("net.time4j.tz.repository.version");
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Comparator f38718i = new a();
+    private static final Comparator f37722i = new a();
 
     /* renamed from: o  reason: collision with root package name */
-    public static final o f38719o;
+    public static final o f37723o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final o f38720p;
+    public static final o f37724p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final boolean f38721q;
+    private static final boolean f37725q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final boolean f38722r;
+    private static final boolean f37726r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static volatile e f38723s;
+    private static volatile e f37727s;
 
     /* renamed from: t  reason: collision with root package name */
-    private static volatile l f38724t;
+    private static volatile l f37728t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static volatile boolean f38725u;
+    private static volatile boolean f37729u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static int f38726v;
+    private static int f37730v;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final Map f38727w;
+    private static final Map f37731w;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final Map f38728x;
+    private static final Map f37732x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final r f38729y;
+    private static final r f37733y;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final r f38730z;
+    private static final r f37734z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static class a implements Comparator {
@@ -91,10 +91,10 @@ public abstract class l implements Serializable {
                 }
                 l.C.clear();
             }
-            e unused = l.f38723s = new e();
+            e unused = l.f37727s = new e();
             l.A.clear();
-            if (l.f38722r) {
-                l unused2 = l.f38724t = l.f();
+            if (l.f37726r) {
+                l unused2 = l.f37728t = l.f();
             }
         }
     }
@@ -104,11 +104,11 @@ public abstract class l implements Serializable {
     public static class c extends SoftReference {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f38731a;
+        private final String f37735a;
 
         c(l lVar, ReferenceQueue referenceQueue) {
             super(lVar, referenceQueue);
-            this.f38731a = lVar.z().a();
+            this.f37735a = lVar.z().a();
         }
     }
 
@@ -196,18 +196,18 @@ public abstract class l implements Serializable {
     private static class e {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f38732a;
+        private final List f37736a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f38733b;
+        private final List f37737b;
 
         e() {
             ArrayList arrayList = new ArrayList((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET);
             ArrayList arrayList2 = new ArrayList((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET);
-            arrayList.add(p.f38781v);
+            arrayList.add(p.f37785v);
             for (Map.Entry entry : l.D.entrySet()) {
                 r rVar = (r) entry.getValue();
-                if (rVar != l.f38729y || l.f38730z == l.f38729y) {
+                if (rVar != l.f37733y || l.f37734z == l.f37733y) {
                     for (String str : rVar.g()) {
                         k P = l.P(str);
                         if (!arrayList.contains(P)) {
@@ -223,10 +223,10 @@ public abstract class l implements Serializable {
                     }
                 }
             }
-            Collections.sort(arrayList, l.f38718i);
-            Collections.sort(arrayList2, l.f38718i);
-            this.f38732a = Collections.unmodifiableList(arrayList);
-            this.f38733b = Collections.unmodifiableList(arrayList2);
+            Collections.sort(arrayList, l.f37722i);
+            Collections.sort(arrayList2, l.f37722i);
+            this.f37736a = Collections.unmodifiableList(arrayList);
+            this.f37737b = Collections.unmodifiableList(arrayList2);
         }
     }
 
@@ -260,7 +260,7 @@ public abstract class l implements Serializable {
     private static r D(String str) {
         if (!str.isEmpty()) {
             if (str.equals("DEFAULT")) {
-                return f38730z;
+                return f37734z;
             }
             return (r) D.get(str);
         }
@@ -276,7 +276,7 @@ public abstract class l implements Serializable {
         if (cVar != null) {
             lVar = (l) cVar.get();
             if (lVar == null) {
-                concurrentMap.remove(cVar.f38731a);
+                concurrentMap.remove(cVar.f37735a);
             }
         } else {
             lVar = null;
@@ -307,7 +307,7 @@ public abstract class l implements Serializable {
             }
             throw new IllegalArgumentException("Timezone key is empty.");
         }
-        r rVar = f38730z;
+        r rVar = f37734z;
         if (str4.isEmpty() || str4.equals("DEFAULT")) {
             z11 = true;
         }
@@ -332,7 +332,7 @@ public abstract class l implements Serializable {
                 kVar = new net.time4j.tz.e(str);
             }
         }
-        if (rVar == f38729y) {
+        if (rVar == f37733y) {
             h hVar = new h(kVar, str2);
             if (!hVar.T() || str2.equals("GMT") || str2.startsWith("UT") || str2.equals("Z")) {
                 lVar = hVar;
@@ -354,7 +354,7 @@ public abstract class l implements Serializable {
             }
             throw new IllegalArgumentException("Unknown timezone: " + str);
         }
-        if (f38725u) {
+        if (f37729u) {
             c cVar2 = (c) A.putIfAbsent(str, new c(lVar, B));
             if (cVar2 == null) {
                 synchronized (l.class) {
@@ -362,7 +362,7 @@ public abstract class l implements Serializable {
                         C.addFirst(lVar);
                         while (true) {
                             LinkedList linkedList = C;
-                            if (linkedList.size() >= f38726v) {
+                            if (linkedList.size() >= f37730v) {
                                 linkedList.removeLast();
                             }
                         }
@@ -431,15 +431,15 @@ public abstract class l implements Serializable {
     }
 
     public static l O() {
-        if (f38722r && f38724t != null) {
-            return f38724t;
+        if (f37726r && f37728t != null) {
+            return f37728t;
         }
         return F;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static k P(String str) {
-        k kVar = (k) f38727w.get(str);
+        k kVar = (k) f37731w.get(str);
         if (kVar == null) {
             if (str.startsWith("GMT")) {
                 str = "UTC" + str.substring(3);
@@ -460,7 +460,7 @@ public abstract class l implements Serializable {
     private static r r(r rVar, r rVar2) {
         String e10 = rVar.e();
         if (!e10.isEmpty()) {
-            String str = f38717e;
+            String str = f37721e;
             if (e10.equals(str) || (str == null && (rVar2 == null || e10.compareTo(rVar2.e()) > 0 || (e10.compareTo(rVar2.e()) == 0 && !rVar.getLocation().contains("{java.home}"))))) {
                 return rVar;
             }
@@ -469,7 +469,7 @@ public abstract class l implements Serializable {
     }
 
     private static void s(Map map) {
-        p pVar = p.f38781v;
+        p pVar = p.f37785v;
         map.put("Etc/GMT", pVar);
         map.put("Etc/Greenwich", pVar);
         map.put("Etc/Universal", pVar);
@@ -508,12 +508,12 @@ public abstract class l implements Serializable {
     }
 
     public static List t() {
-        return f38723s.f38732a;
+        return f37727s.f37736a;
     }
 
     public static List u(String str) {
         if (str.equals("INCLUDE_ALIAS")) {
-            return f38723s.f38733b;
+            return f37727s.f37737b;
         }
         r D2 = D(str);
         if (D2 == null) {
@@ -523,7 +523,7 @@ public abstract class l implements Serializable {
         for (String str2 : D2.g()) {
             arrayList.add(P(str2));
         }
-        Collections.sort(arrayList, f38718i);
+        Collections.sort(arrayList, f37722i);
         return Collections.unmodifiableList(arrayList);
     }
 
@@ -540,7 +540,7 @@ public abstract class l implements Serializable {
         String str;
         String a10 = kVar.a();
         int indexOf = a10.indexOf(126);
-        r rVar = f38730z;
+        r rVar = f37734z;
         if (indexOf >= 0) {
             String substring = a10.substring(0, indexOf);
             if (substring.equals("DEFAULT") || (rVar = (r) D.get(substring)) != null) {
@@ -566,17 +566,17 @@ public abstract class l implements Serializable {
         return f10;
     }
 
-    public abstract p A(qt.a aVar, qt.g gVar);
+    public abstract p A(zt.a aVar, zt.g gVar);
 
-    public abstract p B(qt.f fVar);
+    public abstract p B(zt.f fVar);
 
     public abstract o E();
 
-    public abstract boolean I(qt.f fVar);
+    public abstract boolean I(zt.f fVar);
 
     public abstract boolean J();
 
-    public abstract boolean K(qt.a aVar, qt.g gVar);
+    public abstract boolean K(zt.a aVar, zt.g gVar);
 
     public abstract l Q(o oVar);
 

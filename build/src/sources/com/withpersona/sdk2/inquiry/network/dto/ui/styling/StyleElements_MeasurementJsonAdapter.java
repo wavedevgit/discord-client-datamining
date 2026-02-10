@@ -45,7 +45,7 @@ public final class StyleElements_MeasurementJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 size = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class StyleElements_MeasurementJsonAdapter extends h {
     public void toJson(@NotNull t writer, StyleElements.Measurement measurement) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (measurement != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableSizeAdapter.toJson(writer, measurement.getBase());
             writer.s();

@@ -6,21 +6,21 @@ import android.content.Context;
 public final class c1 implements g1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private Context f16265a;
+    private Context f17014a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public /* synthetic */ c1(bi.h hVar) {
+    public /* synthetic */ c1(di.h hVar) {
     }
 
     public final c1 a(Context context) {
         context.getClass();
-        this.f16265a = context;
+        this.f17014a = context;
         return this;
     }
 
     @Override // com.google.android.play.core.integrity.g1
     public final d1 b() {
-        li.c0.a(this.f16265a, Context.class);
-        return new d1(this.f16265a, null);
+        ni.c0.a(this.f17014a, Context.class);
+        return new d1(this.f17014a, null);
     }
 }

@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/parent_tools/native/FamilyCenterSettingsControls.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun82814: for (var _fun82814_ip = 0;;) switch (_fun82814_ip) {
+        _fun82870: for (var _fun82870_ip = 0;;) switch (_fun82870_ip) {
             case 0:
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var17.length;
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun82814_ip = 1021;
-                    continue _fun82814
+                    _fun82870_ip = 1021;
+                    continue _fun82870
                 }
             case 101:
                 var0 = function arg0() {
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var9 = {};
                 if (var4) {
-                    _fun82814_ip = 613;
-                    continue _fun82814
+                    _fun82870_ip = 613;
+                    continue _fun82870
                 }
             case 173:
                 var9.gap = var14;
@@ -226,8 +226,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[2] = var10;
                 var7.children = var4;
                 var4 = var7;
-                _fun82814_ip = 1003;
-                continue _fun82814;
+                _fun82870_ip = 1003;
+                continue _fun82870;
             case 613:
                 var10 = 16;
                 var9.gap = var10;
@@ -371,4 +371,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 4594, 660, 33, 10576, 6577, 1469, 4080, 3942, 1234, 1860, 4084, 4647, 3946, 5416, 4900, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 4604, 660, 33, 10587, 6587, 1469, 4090, 3942, 1234, 1860, 4094, 4657, 3946, 5426, 4910, 2]);

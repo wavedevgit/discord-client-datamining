@@ -5,10 +5,10 @@ import android.os.Looper;
 import ff.a;
 import ff.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class t5 extends a.AbstractC0331a {
-    @Override // ff.a.AbstractC0331a
+public final class t5 extends a.AbstractC0316a {
+    @Override // ff.a.AbstractC0316a
     public final /* synthetic */ a.f a(Context context, Looper looper, hf.d dVar, Object obj, e.a aVar, e.b bVar) {
-        a.d.C0332a c0332a = (a.d.C0332a) obj;
+        a.d.C0317a c0317a = (a.d.C0317a) obj;
         return new u5(context, looper, dVar, aVar, bVar);
     }
 }

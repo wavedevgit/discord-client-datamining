@@ -4,21 +4,21 @@ package com.google.android.gms.internal.play_billing;
 public final class u extends m {
 
     /* renamed from: r  reason: collision with root package name */
-    static final m f14489r = new u(null, new Object[0], 0);
+    static final m f15066r = new u(null, new Object[0], 0);
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Object f14490o;
+    private final transient Object f15067o;
 
     /* renamed from: p  reason: collision with root package name */
-    final transient Object[] f14491p;
+    final transient Object[] f15068p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient int f14492q;
+    private final transient int f15069q;
 
     private u(Object obj, Object[] objArr, int i10) {
-        this.f14490o = obj;
-        this.f14491p = objArr;
-        this.f14492q = i10;
+        this.f15067o = obj;
+        this.f15068p = objArr;
+        this.f15069q = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -60,17 +60,17 @@ public final class u extends m {
 
     @Override // com.google.android.gms.internal.play_billing.m
     final g a() {
-        return new t(this.f14491p, 1, this.f14492q);
+        return new t(this.f15068p, 1, this.f15069q);
     }
 
     @Override // com.google.android.gms.internal.play_billing.m
     final n d() {
-        return new r(this, this.f14491p, 0, this.f14492q);
+        return new r(this, this.f15068p, 0, this.f15069q);
     }
 
     @Override // com.google.android.gms.internal.play_billing.m
     final n e() {
-        return new s(this, new t(this.f14491p, 0, this.f14492q));
+        return new s(this, new t(this.f15068p, 0, this.f15069q));
     }
 
     /* JADX WARN: Removed duplicated region for block: B:41:0x009e A[RETURN] */
@@ -89,8 +89,8 @@ public final class u extends m {
             r10 = r0
             goto L9c
         L6:
-            int r1 = r9.f14492q
-            java.lang.Object[] r2 = r9.f14491p
+            int r1 = r9.f15069q
+            java.lang.Object[] r2 = r9.f15068p
             r3 = 1
             if (r1 != r3) goto L20
             r1 = 0
@@ -102,7 +102,7 @@ public final class u extends m {
             java.util.Objects.requireNonNull(r10)
             goto L9c
         L20:
-            java.lang.Object r1 = r9.f14490o
+            java.lang.Object r1 = r9.f15067o
             if (r1 != 0) goto L25
             goto L3
         L25:
@@ -189,6 +189,6 @@ public final class u extends m {
 
     @Override // java.util.Map
     public final int size() {
-        return this.f14492q;
+        return this.f15069q;
     }
 }

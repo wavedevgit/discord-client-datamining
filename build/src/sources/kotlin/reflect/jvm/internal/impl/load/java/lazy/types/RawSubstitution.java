@@ -1,5 +1,6 @@
 package kotlin.reflect.jvm.internal.impl.load.java.lazy.types;
 
+import as.v;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Pair;
@@ -32,7 +33,6 @@ import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
 import kotlin.reflect.jvm.internal.impl.types.error.ErrorTypeKind;
 import kotlin.reflect.jvm.internal.impl.types.error.ErrorUtils;
 import org.jetbrains.annotations.NotNull;
-import rr.v;
 @SourceDebugExtension({"SMAP\nRawSubstitution.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RawSubstitution.kt\norg/jetbrains/kotlin/load/java/lazy/types/RawSubstitution\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,95:1\n1563#2:96\n1634#2,3:97\n*S KotlinDebug\n*F\n+ 1 RawSubstitution.kt\norg/jetbrains/kotlin/load/java/lazy/types/RawSubstitution\n*L\n73#1:96\n73#1:97,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class RawSubstitution extends TypeSubstitution {
@@ -40,16 +40,16 @@ public final class RawSubstitution extends TypeSubstitution {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final JavaTypeAttributes f32792c;
+    private static final JavaTypeAttributes f33014c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final JavaTypeAttributes f32793d;
+    private static final JavaTypeAttributes f33015d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final RawProjectionComputer f32794a;
+    private final RawProjectionComputer f33016a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TypeParameterUpperBoundEraser f32795b;
+    private final TypeParameterUpperBoundEraser f33017b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -63,8 +63,8 @@ public final class RawSubstitution extends TypeSubstitution {
 
     static {
         TypeUsage typeUsage = TypeUsage.COMMON;
-        f32792c = JavaTypeAttributesKt.toAttributes$default(typeUsage, false, true, null, 5, null).withFlexibility(JavaTypeFlexibility.FLEXIBLE_LOWER_BOUND);
-        f32793d = JavaTypeAttributesKt.toAttributes$default(typeUsage, false, true, null, 5, null).withFlexibility(JavaTypeFlexibility.FLEXIBLE_UPPER_BOUND);
+        f33014c = JavaTypeAttributesKt.toAttributes$default(typeUsage, false, true, null, 5, null).withFlexibility(JavaTypeFlexibility.FLEXIBLE_LOWER_BOUND);
+        f33015d = JavaTypeAttributesKt.toAttributes$default(typeUsage, false, true, null, 5, null).withFlexibility(JavaTypeFlexibility.FLEXIBLE_UPPER_BOUND);
     }
 
     public RawSubstitution() {
@@ -94,9 +94,9 @@ public final class RawSubstitution extends TypeSubstitution {
             List<TypeParameterDescriptor> list = parameters;
             ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
             for (TypeParameterDescriptor typeParameterDescriptor : list) {
-                RawProjectionComputer rawProjectionComputer = this.f32794a;
+                RawProjectionComputer rawProjectionComputer = this.f33016a;
                 Intrinsics.checkNotNull(typeParameterDescriptor);
-                arrayList.add(ErasureProjectionComputer.computeProjection$default(rawProjectionComputer, typeParameterDescriptor, javaTypeAttributes, this.f32795b, null, 8, null));
+                arrayList.add(ErasureProjectionComputer.computeProjection$default(rawProjectionComputer, typeParameterDescriptor, javaTypeAttributes, this.f33017b, null, 8, null));
             }
             return v.a(KotlinTypeFactory.simpleTypeWithNonTrivialMemberScope(attributes, typeConstructor, arrayList, simpleType.isMarkedNullable(), memberScope, new b(classDescriptor, this, simpleType, javaTypeAttributes)), Boolean.TRUE);
         }
@@ -114,17 +114,17 @@ public final class RawSubstitution extends TypeSubstitution {
     }
 
     private final KotlinType d(KotlinType kotlinType, JavaTypeAttributes javaTypeAttributes) {
-        ClassifierDescriptor mo1199getDeclarationDescriptor = kotlinType.getConstructor().mo1199getDeclarationDescriptor();
-        if (mo1199getDeclarationDescriptor instanceof TypeParameterDescriptor) {
-            return d(this.f32795b.getErasedUpperBound((TypeParameterDescriptor) mo1199getDeclarationDescriptor, javaTypeAttributes.markIsRaw(true)), javaTypeAttributes);
+        ClassifierDescriptor mo1202getDeclarationDescriptor = kotlinType.getConstructor().mo1202getDeclarationDescriptor();
+        if (mo1202getDeclarationDescriptor instanceof TypeParameterDescriptor) {
+            return d(this.f33017b.getErasedUpperBound((TypeParameterDescriptor) mo1202getDeclarationDescriptor, javaTypeAttributes.markIsRaw(true)), javaTypeAttributes);
         }
-        if (mo1199getDeclarationDescriptor instanceof ClassDescriptor) {
-            ClassifierDescriptor mo1199getDeclarationDescriptor2 = FlexibleTypesKt.upperIfFlexible(kotlinType).getConstructor().mo1199getDeclarationDescriptor();
-            if (mo1199getDeclarationDescriptor2 instanceof ClassDescriptor) {
-                Pair b10 = b(FlexibleTypesKt.lowerIfFlexible(kotlinType), (ClassDescriptor) mo1199getDeclarationDescriptor, f32792c);
+        if (mo1202getDeclarationDescriptor instanceof ClassDescriptor) {
+            ClassifierDescriptor mo1202getDeclarationDescriptor2 = FlexibleTypesKt.upperIfFlexible(kotlinType).getConstructor().mo1202getDeclarationDescriptor();
+            if (mo1202getDeclarationDescriptor2 instanceof ClassDescriptor) {
+                Pair b10 = b(FlexibleTypesKt.lowerIfFlexible(kotlinType), (ClassDescriptor) mo1202getDeclarationDescriptor, f33014c);
                 SimpleType simpleType = (SimpleType) b10.a();
                 boolean booleanValue = ((Boolean) b10.b()).booleanValue();
-                Pair b11 = b(FlexibleTypesKt.upperIfFlexible(kotlinType), (ClassDescriptor) mo1199getDeclarationDescriptor2, f32793d);
+                Pair b11 = b(FlexibleTypesKt.upperIfFlexible(kotlinType), (ClassDescriptor) mo1202getDeclarationDescriptor2, f33015d);
                 SimpleType simpleType2 = (SimpleType) b11.a();
                 boolean booleanValue2 = ((Boolean) b11.b()).booleanValue();
                 if (!booleanValue && !booleanValue2) {
@@ -132,9 +132,9 @@ public final class RawSubstitution extends TypeSubstitution {
                 }
                 return new RawTypeImpl(simpleType, simpleType2);
             }
-            throw new IllegalStateException(("For some reason declaration for upper bound is not a class but \"" + mo1199getDeclarationDescriptor2 + "\" while for lower it's \"" + mo1199getDeclarationDescriptor + '\"').toString());
+            throw new IllegalStateException(("For some reason declaration for upper bound is not a class but \"" + mo1202getDeclarationDescriptor2 + "\" while for lower it's \"" + mo1202getDeclarationDescriptor + '\"').toString());
         }
-        throw new IllegalStateException(("Unexpected declaration kind: " + mo1199getDeclarationDescriptor).toString());
+        throw new IllegalStateException(("Unexpected declaration kind: " + mo1202getDeclarationDescriptor).toString());
     }
 
     static /* synthetic */ KotlinType e(RawSubstitution rawSubstitution, KotlinType kotlinType, JavaTypeAttributes javaTypeAttributes, int i10, Object obj) {
@@ -151,14 +151,14 @@ public final class RawSubstitution extends TypeSubstitution {
 
     public RawSubstitution(TypeParameterUpperBoundEraser typeParameterUpperBoundEraser) {
         RawProjectionComputer rawProjectionComputer = new RawProjectionComputer();
-        this.f32794a = rawProjectionComputer;
-        this.f32795b = typeParameterUpperBoundEraser == null ? new TypeParameterUpperBoundEraser(rawProjectionComputer, null, 2, null) : typeParameterUpperBoundEraser;
+        this.f33016a = rawProjectionComputer;
+        this.f33017b = typeParameterUpperBoundEraser == null ? new TypeParameterUpperBoundEraser(rawProjectionComputer, null, 2, null) : typeParameterUpperBoundEraser;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeSubstitution
     @NotNull
     /* renamed from: get */
-    public TypeProjectionImpl mo1202get(@NotNull KotlinType key) {
+    public TypeProjectionImpl mo1205get(@NotNull KotlinType key) {
         Intrinsics.checkNotNullParameter(key, "key");
         return new TypeProjectionImpl(e(this, key, null, 2, null));
     }

@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notification_center/native/ForYouSuggestedFriendsSectionHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun103990: for (var _fun103990_ip = 0;;) switch (_fun103990_ip) {
+        _fun104042: for (var _fun104042_ip = 0;;) switch (_fun104042_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.showDivider;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[0] = var8;
                 var6 = !var6;
                 if (!var6) {
-                    _fun103990_ip = 57;
-                    continue _fun103990
+                    _fun104042_ip = 57;
+                    continue _fun104042
                 }
             case 51:
                 var6 = var7.noDivider;

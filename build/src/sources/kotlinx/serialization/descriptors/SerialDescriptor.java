@@ -1,8 +1,8 @@
 package kotlinx.serialization.descriptors;
 
 import java.util.List;
-import jt.k;
 import kotlin.collections.CollectionsKt;
+import st.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface SerialDescriptor {
 

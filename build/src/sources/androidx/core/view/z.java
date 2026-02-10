@@ -1,73 +1,61 @@
 package androidx.core.view;
 
-import android.os.Build;
-import android.view.ScrollFeedbackProvider;
 import android.view.View;
+import android.view.ViewTreeObserver;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class z {
+public final class z implements ViewTreeObserver.OnPreDrawListener, View.OnAttachStateChangeListener {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final d f3586a;
+    /* renamed from: d  reason: collision with root package name */
+    private final View f3591d;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    private static class b implements d {
+    /* renamed from: e  reason: collision with root package name */
+    private ViewTreeObserver f3592e;
 
-        /* renamed from: a  reason: collision with root package name */
-        private final ScrollFeedbackProvider f3587a;
+    /* renamed from: i  reason: collision with root package name */
+    private final Runnable f3593i;
 
-        b(View view) {
-            this.f3587a = ScrollFeedbackProvider.createProvider(view);
-        }
-
-        @Override // androidx.core.view.z.d
-        public void onScrollLimit(int i10, int i11, int i12, boolean z10) {
-            this.f3587a.onScrollLimit(i10, i11, i12, z10);
-        }
-
-        @Override // androidx.core.view.z.d
-        public void onScrollProgress(int i10, int i11, int i12, int i13) {
-            this.f3587a.onScrollProgress(i10, i11, i12, i13);
-        }
+    private z(View view, Runnable runnable) {
+        this.f3591d = view;
+        this.f3592e = view.getViewTreeObserver();
+        this.f3593i = runnable;
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    private static class c implements d {
-        private c() {
+    public static z a(View view, Runnable runnable) {
+        if (view != null) {
+            if (runnable != null) {
+                z zVar = new z(view, runnable);
+                view.getViewTreeObserver().addOnPreDrawListener(zVar);
+                view.addOnAttachStateChangeListener(zVar);
+                return zVar;
+            }
+            throw new NullPointerException("runnable == null");
         }
-
-        @Override // androidx.core.view.z.d
-        public void onScrollLimit(int i10, int i11, int i12, boolean z10) {
-        }
-
-        @Override // androidx.core.view.z.d
-        public void onScrollProgress(int i10, int i11, int i12, int i13) {
-        }
+        throw new NullPointerException("view == null");
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    private interface d {
-        void onScrollLimit(int i10, int i11, int i12, boolean z10);
-
-        void onScrollProgress(int i10, int i11, int i12, int i13);
-    }
-
-    private z(View view) {
-        if (Build.VERSION.SDK_INT >= 35) {
-            this.f3586a = new b(view);
+    public void b() {
+        if (this.f3592e.isAlive()) {
+            this.f3592e.removeOnPreDrawListener(this);
         } else {
-            this.f3586a = new c();
+            this.f3591d.getViewTreeObserver().removeOnPreDrawListener(this);
         }
+        this.f3591d.removeOnAttachStateChangeListener(this);
     }
 
-    public static z a(View view) {
-        return new z(view);
+    @Override // android.view.ViewTreeObserver.OnPreDrawListener
+    public boolean onPreDraw() {
+        b();
+        this.f3593i.run();
+        return true;
     }
 
-    public void b(int i10, int i11, int i12, boolean z10) {
-        this.f3586a.onScrollLimit(i10, i11, i12, z10);
+    @Override // android.view.View.OnAttachStateChangeListener
+    public void onViewAttachedToWindow(View view) {
+        this.f3592e = view.getViewTreeObserver();
     }
 
-    public void c(int i10, int i11, int i12, int i13) {
-        this.f3586a.onScrollProgress(i10, i11, i12, i13);
+    @Override // android.view.View.OnAttachStateChangeListener
+    public void onViewDetachedFromWindow(View view) {
+        b();
     }
 }

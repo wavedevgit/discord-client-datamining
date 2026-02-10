@@ -1,5 +1,6 @@
 package net.time4j;
 
+import bu.l0;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.Externalizable;
@@ -11,16 +12,15 @@ import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Map;
 import net.time4j.k;
-import st.l0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 final class SPX implements Externalizable {
     private static final long serialVersionUID = 1;
 
     /* renamed from: d  reason: collision with root package name */
-    private transient Object f38187d;
+    private transient Object f37191d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient int f38188e;
+    private transient int f37192e;
 
     public SPX() {
     }
@@ -92,12 +92,12 @@ final class SPX implements Externalizable {
     }
 
     private Object d(ObjectInput objectInput, byte b10) {
-        zt.f fVar;
+        iu.f fVar;
         int i10;
         if ((b10 & 1) == 1) {
-            fVar = zt.f.UTC;
+            fVar = iu.f.UTC;
         } else {
-            fVar = zt.f.POSIX;
+            fVar = iu.f.POSIX;
         }
         long readLong = objectInput.readLong();
         if ((b10 & 2) == 2) {
@@ -105,7 +105,7 @@ final class SPX implements Externalizable {
         } else {
             i10 = 0;
         }
-        if (fVar == zt.f.UTC) {
+        if (fVar == iu.f.UTC) {
             return y.l(readLong, i10);
         }
         return y.k(readLong, i10);
@@ -172,7 +172,7 @@ final class SPX implements Externalizable {
     }
 
     private void i(DataOutput dataOutput) {
-        j((f0) this.f38187d, 1, dataOutput);
+        j((f0) this.f37191d, 1, dataOutput);
     }
 
     private static void j(f0 f0Var, int i10, DataOutput dataOutput) {
@@ -185,7 +185,7 @@ final class SPX implements Externalizable {
         } else {
             i11 = 3;
         }
-        dataOutput.writeByte((i10 << 4) | f0Var.r());
+        dataOutput.writeByte((i10 << 4) | f0Var.q());
         dataOutput.writeByte(f0Var.g() | (i11 << 5));
         if (i11 == 1) {
             dataOutput.writeByte(f10 - 1978);
@@ -198,7 +198,7 @@ final class SPX implements Externalizable {
 
     private void k(ObjectOutput objectOutput) {
         int i10;
-        k.b bVar = (k.b) k.b.class.cast(this.f38187d);
+        k.b bVar = (k.b) k.b.class.cast(this.f37191d);
         Locale M = bVar.M();
         if (bVar.Q()) {
             i10 = 113;
@@ -224,7 +224,7 @@ final class SPX implements Externalizable {
     private void l(ObjectOutput objectOutput) {
         boolean z10;
         int i10;
-        n nVar = (n) n.class.cast(this.f38187d);
+        n nVar = (n) n.class.cast(this.f37191d);
         int size = nVar.a().size();
         int min = Math.min(size, 6);
         int i11 = 0;
@@ -263,8 +263,8 @@ final class SPX implements Externalizable {
 
     private void m(ObjectOutput objectOutput) {
         int i10;
-        y yVar = (y) y.class.cast(this.f38187d);
-        if (yVar.g() == zt.f.UTC) {
+        y yVar = (y) y.class.cast(this.f37191d);
+        if (yVar.g() == iu.f.UTC) {
             i10 = 81;
         } else {
             i10 = 80;
@@ -280,12 +280,12 @@ final class SPX implements Externalizable {
     }
 
     private void n(DataOutput dataOutput) {
-        ((a0) this.f38187d).w0(dataOutput);
+        ((a0) this.f37191d).w0(dataOutput);
     }
 
     private void o(DataOutput dataOutput) {
         dataOutput.writeByte(32);
-        p((g0) this.f38187d, dataOutput);
+        p((g0) this.f37191d, dataOutput);
     }
 
     private static void p(g0 g0Var, DataOutput dataOutput) {
@@ -311,7 +311,7 @@ final class SPX implements Externalizable {
     }
 
     private void q(DataOutput dataOutput) {
-        i0 i0Var = (i0) this.f38187d;
+        i0 i0Var = (i0) this.f37191d;
         j(i0Var.V(), 8, dataOutput);
         p(i0Var.X(), dataOutput);
     }
@@ -319,7 +319,7 @@ final class SPX implements Externalizable {
     private void r(DataOutput dataOutput) {
         boolean z10;
         int i10;
-        a1 a1Var = (a1) this.f38187d;
+        a1 a1Var = (a1) this.f37191d;
         if (a1Var.h() == y0.SATURDAY && a1Var.e() == y0.SUNDAY) {
             z10 = true;
         } else {
@@ -338,7 +338,7 @@ final class SPX implements Externalizable {
     }
 
     private Object readResolve() {
-        return this.f38187d;
+        return this.f37191d;
     }
 
     @Override // java.io.Externalizable
@@ -346,28 +346,28 @@ final class SPX implements Externalizable {
         byte readByte = objectInput.readByte();
         switch ((readByte & 255) >> 4) {
             case 1:
-                this.f38187d = a(objectInput, readByte);
+                this.f37191d = a(objectInput, readByte);
                 return;
             case 2:
-                this.f38187d = f(objectInput);
+                this.f37191d = f(objectInput);
                 return;
             case 3:
-                this.f38187d = h(objectInput, readByte);
+                this.f37191d = h(objectInput, readByte);
                 return;
             case 4:
-                this.f38187d = e(objectInput, readByte);
+                this.f37191d = e(objectInput, readByte);
                 return;
             case 5:
-                this.f38187d = d(objectInput, readByte);
+                this.f37191d = d(objectInput, readByte);
                 return;
             case 6:
-                this.f38187d = c(objectInput, readByte);
+                this.f37191d = c(objectInput, readByte);
                 return;
             case 7:
-                this.f38187d = b(objectInput, readByte);
+                this.f37191d = b(objectInput, readByte);
                 return;
             case 8:
-                this.f38187d = g(objectInput, readByte);
+                this.f37191d = g(objectInput, readByte);
                 return;
             default:
                 throw new StreamCorruptedException("Unknown serialized type.");
@@ -376,7 +376,7 @@ final class SPX implements Externalizable {
 
     @Override // java.io.Externalizable
     public void writeExternal(ObjectOutput objectOutput) {
-        switch (this.f38188e) {
+        switch (this.f37192e) {
             case 1:
                 i(objectOutput);
                 return;
@@ -408,7 +408,7 @@ final class SPX implements Externalizable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public SPX(Object obj, int i10) {
-        this.f38187d = obj;
-        this.f38188e = i10;
+        this.f37191d = obj;
+        this.f37192e = i10;
     }
 }

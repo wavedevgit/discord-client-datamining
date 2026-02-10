@@ -20,40 +20,40 @@ import q4.z;
 public class g implements androidx.work.impl.f {
 
     /* renamed from: w  reason: collision with root package name */
-    static final String f5711w = m.i("SystemAlarmDispatcher");
+    static final String f5721w = m.i("SystemAlarmDispatcher");
 
     /* renamed from: d  reason: collision with root package name */
-    final Context f5712d;
+    final Context f5722d;
 
     /* renamed from: e  reason: collision with root package name */
-    final r4.b f5713e;
+    final r4.b f5723e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final z f5714i;
+    private final z f5724i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final u f5715o;
+    private final u f5725o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final p0 f5716p;
+    private final p0 f5726p;
 
     /* renamed from: q  reason: collision with root package name */
-    final androidx.work.impl.background.systemalarm.b f5717q;
+    final androidx.work.impl.background.systemalarm.b f5727q;
 
     /* renamed from: r  reason: collision with root package name */
-    final List f5718r;
+    final List f5728r;
 
     /* renamed from: s  reason: collision with root package name */
-    Intent f5719s;
+    Intent f5729s;
 
     /* renamed from: t  reason: collision with root package name */
-    private c f5720t;
+    private c f5730t;
 
     /* renamed from: u  reason: collision with root package name */
-    private b0 f5721u;
+    private b0 f5731u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final n0 f5722v;
+    private final n0 f5732v;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -65,46 +65,46 @@ public class g implements androidx.work.impl.f {
         public void run() {
             Executor a10;
             d dVar;
-            synchronized (g.this.f5718r) {
+            synchronized (g.this.f5728r) {
                 g gVar = g.this;
-                gVar.f5719s = (Intent) gVar.f5718r.get(0);
+                gVar.f5729s = (Intent) gVar.f5728r.get(0);
             }
-            Intent intent = g.this.f5719s;
+            Intent intent = g.this.f5729s;
             if (intent != null) {
                 String action = intent.getAction();
-                int intExtra = g.this.f5719s.getIntExtra("KEY_START_ID", 0);
+                int intExtra = g.this.f5729s.getIntExtra("KEY_START_ID", 0);
                 m e10 = m.e();
-                String str = g.f5711w;
-                e10.a(str, "Processing command " + g.this.f5719s + ", " + intExtra);
-                Context context = g.this.f5712d;
+                String str = g.f5721w;
+                e10.a(str, "Processing command " + g.this.f5729s + ", " + intExtra);
+                Context context = g.this.f5722d;
                 PowerManager.WakeLock b10 = t.b(context, action + " (" + intExtra + ")");
                 try {
                     m e11 = m.e();
                     e11.a(str, "Acquiring operation wake lock (" + action + ") " + b10);
                     b10.acquire();
                     g gVar2 = g.this;
-                    gVar2.f5717q.o(gVar2.f5719s, intExtra, gVar2);
+                    gVar2.f5727q.o(gVar2.f5729s, intExtra, gVar2);
                     m e12 = m.e();
                     e12.a(str, "Releasing operation wake lock (" + action + ") " + b10);
                     b10.release();
-                    a10 = g.this.f5713e.a();
+                    a10 = g.this.f5723e.a();
                     dVar = new d(g.this);
                 } catch (Throwable th2) {
                     try {
                         m e13 = m.e();
-                        String str2 = g.f5711w;
+                        String str2 = g.f5721w;
                         e13.d(str2, "Unexpected error in onHandleIntent", th2);
                         m e14 = m.e();
                         e14.a(str2, "Releasing operation wake lock (" + action + ") " + b10);
                         b10.release();
-                        a10 = g.this.f5713e.a();
+                        a10 = g.this.f5723e.a();
                         dVar = new d(g.this);
                     } catch (Throwable th3) {
                         m e15 = m.e();
-                        String str3 = g.f5711w;
+                        String str3 = g.f5721w;
                         e15.a(str3, "Releasing operation wake lock (" + action + ") " + b10);
                         b10.release();
-                        g.this.f5713e.a().execute(new d(g.this));
+                        g.this.f5723e.a().execute(new d(g.this));
                         throw th3;
                     }
                 }
@@ -118,24 +118,24 @@ public class g implements androidx.work.impl.f {
     public static class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final g f5724d;
+        private final g f5734d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Intent f5725e;
+        private final Intent f5735e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f5726i;
+        private final int f5736i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public b(g gVar, Intent intent, int i10) {
-            this.f5724d = gVar;
-            this.f5725e = intent;
-            this.f5726i = i10;
+            this.f5734d = gVar;
+            this.f5735e = intent;
+            this.f5736i = i10;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f5724d.a(this.f5725e, this.f5726i);
+            this.f5734d.a(this.f5735e, this.f5736i);
         }
     }
 
@@ -149,15 +149,15 @@ public class g implements androidx.work.impl.f {
     static class d implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final g f5727d;
+        private final g f5737d;
 
         d(g gVar) {
-            this.f5727d = gVar;
+            this.f5737d = gVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f5727d.d();
+            this.f5737d.d();
         }
     }
 
@@ -175,9 +175,9 @@ public class g implements androidx.work.impl.f {
 
     private boolean j(String str) {
         c();
-        synchronized (this.f5718r) {
+        synchronized (this.f5728r) {
             try {
-                for (Intent intent : this.f5718r) {
+                for (Intent intent : this.f5728r) {
                     if (str.equals(intent.getAction())) {
                         return true;
                     }
@@ -191,10 +191,10 @@ public class g implements androidx.work.impl.f {
 
     private void l() {
         c();
-        PowerManager.WakeLock b10 = t.b(this.f5712d, "ProcessCommand");
+        PowerManager.WakeLock b10 = t.b(this.f5722d, "ProcessCommand");
         try {
             b10.acquire();
-            this.f5716p.q().d(new a());
+            this.f5726p.q().d(new a());
         } finally {
             b10.release();
         }
@@ -202,7 +202,7 @@ public class g implements androidx.work.impl.f {
 
     public boolean a(Intent intent, int i10) {
         m e10 = m.e();
-        String str = f5711w;
+        String str = f5721w;
         e10.a(str, "Adding command " + intent + " (" + i10 + ")");
         c();
         String action = intent.getAction();
@@ -213,10 +213,10 @@ public class g implements androidx.work.impl.f {
             return false;
         } else {
             intent.putExtra("KEY_START_ID", i10);
-            synchronized (this.f5718r) {
+            synchronized (this.f5728r) {
                 try {
-                    boolean isEmpty = this.f5718r.isEmpty();
-                    this.f5718r.add(intent);
+                    boolean isEmpty = this.f5728r.isEmpty();
+                    this.f5728r.add(intent);
                     if (isEmpty) {
                         l();
                     }
@@ -230,33 +230,33 @@ public class g implements androidx.work.impl.f {
 
     @Override // androidx.work.impl.f
     public void b(p4.m mVar, boolean z10) {
-        this.f5713e.a().execute(new b(this, androidx.work.impl.background.systemalarm.b.d(this.f5712d, mVar, z10), 0));
+        this.f5723e.a().execute(new b(this, androidx.work.impl.background.systemalarm.b.d(this.f5722d, mVar, z10), 0));
     }
 
     void d() {
         m e10 = m.e();
-        String str = f5711w;
+        String str = f5721w;
         e10.a(str, "Checking if commands are complete.");
         c();
-        synchronized (this.f5718r) {
+        synchronized (this.f5728r) {
             try {
-                if (this.f5719s != null) {
+                if (this.f5729s != null) {
                     m e11 = m.e();
-                    e11.a(str, "Removing command " + this.f5719s);
-                    if (((Intent) this.f5718r.remove(0)).equals(this.f5719s)) {
-                        this.f5719s = null;
+                    e11.a(str, "Removing command " + this.f5729s);
+                    if (((Intent) this.f5728r.remove(0)).equals(this.f5729s)) {
+                        this.f5729s = null;
                     } else {
                         throw new IllegalStateException("Dequeue-d command is not the first.");
                     }
                 }
-                r4.a c10 = this.f5713e.c();
-                if (!this.f5717q.n() && this.f5718r.isEmpty() && !c10.r1()) {
+                r4.a c10 = this.f5723e.c();
+                if (!this.f5727q.n() && this.f5728r.isEmpty() && !c10.V0()) {
                     m.e().a(str, "No more commands & intents.");
-                    c cVar = this.f5720t;
+                    c cVar = this.f5730t;
                     if (cVar != null) {
                         cVar.b();
                     }
-                } else if (!this.f5718r.isEmpty()) {
+                } else if (!this.f5728r.isEmpty()) {
                     l();
                 }
             } catch (Throwable th2) {
@@ -267,60 +267,60 @@ public class g implements androidx.work.impl.f {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u e() {
-        return this.f5715o;
+        return this.f5725o;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r4.b f() {
-        return this.f5713e;
+        return this.f5723e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p0 g() {
-        return this.f5716p;
+        return this.f5726p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public z h() {
-        return this.f5714i;
+        return this.f5724i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n0 i() {
-        return this.f5722v;
+        return this.f5732v;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void k() {
-        m.e().a(f5711w, "Destroying SystemAlarmDispatcher");
-        this.f5715o.m(this);
-        this.f5720t = null;
+        m.e().a(f5721w, "Destroying SystemAlarmDispatcher");
+        this.f5725o.m(this);
+        this.f5730t = null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void m(c cVar) {
-        if (this.f5720t != null) {
-            m.e().c(f5711w, "A completion listener for SystemAlarmDispatcher already exists.");
+        if (this.f5730t != null) {
+            m.e().c(f5721w, "A completion listener for SystemAlarmDispatcher already exists.");
         } else {
-            this.f5720t = cVar;
+            this.f5730t = cVar;
         }
     }
 
     g(Context context, u uVar, p0 p0Var, n0 n0Var) {
         Context applicationContext = context.getApplicationContext();
-        this.f5712d = applicationContext;
-        this.f5721u = new b0();
+        this.f5722d = applicationContext;
+        this.f5731u = new b0();
         p0Var = p0Var == null ? p0.k(context) : p0Var;
-        this.f5716p = p0Var;
-        this.f5717q = new androidx.work.impl.background.systemalarm.b(applicationContext, p0Var.i().a(), this.f5721u);
-        this.f5714i = new z(p0Var.i().k());
+        this.f5726p = p0Var;
+        this.f5727q = new androidx.work.impl.background.systemalarm.b(applicationContext, p0Var.i().a(), this.f5731u);
+        this.f5724i = new z(p0Var.i().k());
         uVar = uVar == null ? p0Var.m() : uVar;
-        this.f5715o = uVar;
+        this.f5725o = uVar;
         r4.b q10 = p0Var.q();
-        this.f5713e = q10;
-        this.f5722v = n0Var == null ? new o0(uVar, q10) : n0Var;
+        this.f5723e = q10;
+        this.f5732v = n0Var == null ? new o0(uVar, q10) : n0Var;
         uVar.e(this);
-        this.f5718r = new ArrayList();
-        this.f5719s = null;
+        this.f5728r = new ArrayList();
+        this.f5729s = null;
     }
 }

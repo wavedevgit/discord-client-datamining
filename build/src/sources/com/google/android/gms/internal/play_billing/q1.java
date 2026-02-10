@@ -124,16 +124,16 @@ public abstract class q1 extends z {
         if (byteValue == 0) {
             return false;
         }
-        boolean h10 = d3.a().b(q1Var.getClass()).h(q1Var);
+        boolean i10 = d3.a().b(q1Var.getClass()).i(q1Var);
         if (z10) {
-            if (true != h10) {
+            if (true != i10) {
                 obj = null;
             } else {
                 obj = q1Var;
             }
             q1Var.y(2, obj, null);
         }
-        return h10;
+        return i10;
     }
 
     private final int z(g3 g3Var) {

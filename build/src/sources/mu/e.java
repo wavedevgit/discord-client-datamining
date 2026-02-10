@@ -1,211 +1,713 @@
 package mu;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
+import av.a0;
+import com.facebook.react.views.text.internal.span.SetSpanOperation;
+import j$.util.DesugarTimeZone;
+import java.io.Closeable;
+import java.io.File;
+import java.io.IOException;
+import java.io.InterruptedIOException;
+import java.net.Socket;
+import java.net.SocketTimeoutException;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
-import javax.net.ssl.SSLSocket;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.util.Locale;
+import java.util.Map;
+import java.util.TimeZone;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.TimeUnit;
+import kotlin.Unit;
+import kotlin.collections.CollectionsKt;
+import kotlin.collections.i;
+import kotlin.collections.m0;
+import kotlin.collections.o0;
+import kotlin.jvm.internal.ArrayIteratorKt;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.LongCompanionObject;
+import kotlin.jvm.internal.StringCompanionObject;
+import kotlin.ranges.IntRange;
+import kotlin.text.Charsets;
+import kotlin.text.Regex;
+import kotlin.text.StringsKt;
+import okhttp3.Call;
+import okhttp3.Headers;
+import okhttp3.HttpUrl;
+import okhttp3.OkHttpClient;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import okhttp3.ResponseBody;
+import okhttp3.e;
+import okio.Buffer;
+import okio.BufferedSink;
+import okio.BufferedSource;
+import okio.ByteString;
+import okio.Sink;
+import okio.Source;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e extends h {
+public abstract class e {
 
-    /* renamed from: i  reason: collision with root package name */
-    public static final b f37641i = new b(null);
+    /* renamed from: a */
+    public static final byte[] f36656a;
 
-    /* renamed from: d  reason: collision with root package name */
-    private final Method f37642d;
+    /* renamed from: b */
+    public static final Headers f36657b = Headers.f40273e.i(new String[0]);
 
-    /* renamed from: e  reason: collision with root package name */
-    private final Method f37643e;
+    /* renamed from: c */
+    public static final ResponseBody f36658c;
 
-    /* renamed from: f  reason: collision with root package name */
-    private final Method f37644f;
+    /* renamed from: d */
+    public static final RequestBody f36659d;
 
-    /* renamed from: g  reason: collision with root package name */
-    private final Class f37645g;
+    /* renamed from: e */
+    private static final a0 f36660e;
 
-    /* renamed from: h  reason: collision with root package name */
-    private final Class f37646h;
+    /* renamed from: f */
+    public static final TimeZone f36661f;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static final class a implements InvocationHandler {
+    /* renamed from: g */
+    private static final Regex f36662g;
 
-        /* renamed from: a  reason: collision with root package name */
-        private final List f37647a;
+    /* renamed from: h */
+    public static final boolean f36663h;
 
-        /* renamed from: b  reason: collision with root package name */
-        private boolean f37648b;
+    /* renamed from: i */
+    public static final String f36664i;
 
-        /* renamed from: c  reason: collision with root package name */
-        private String f37649c;
+    static {
+        byte[] bArr = new byte[0];
+        f36656a = bArr;
+        f36658c = ResponseBody.Companion.i(ResponseBody.Companion, bArr, null, 1, null);
+        f36659d = RequestBody.Companion.p(RequestBody.Companion, bArr, null, 0, 0, 7, null);
+        a0.a aVar = a0.f6218o;
+        ByteString.a aVar2 = ByteString.f40591o;
+        f36660e = aVar.d(aVar2.e("efbbbf"), aVar2.e("feff"), aVar2.e("fffe"), aVar2.e("0000ffff"), aVar2.e("ffff0000"));
+        TimeZone timeZone = DesugarTimeZone.getTimeZone("GMT");
+        Intrinsics.checkNotNull(timeZone);
+        f36661f = timeZone;
+        f36662g = new Regex("([0-9a-fA-F]*:[0-9a-fA-F:.]*)|([\\d.]+)");
+        f36663h = false;
+        String name = OkHttpClient.class.getName();
+        Intrinsics.checkNotNullExpressionValue(name, "OkHttpClient::class.java.name");
+        f36664i = StringsKt.D0(StringsKt.B0(name, "okhttp3."), "Client");
+    }
 
-        public a(List protocols) {
-            Intrinsics.checkNotNullParameter(protocols, "protocols");
-            this.f37647a = protocols;
+    public static /* synthetic */ int A(String str, int i10, int i11, int i12, Object obj) {
+        if ((i12 & 1) != 0) {
+            i10 = 0;
         }
-
-        public final String a() {
-            return this.f37649c;
+        if ((i12 & 2) != 0) {
+            i11 = str.length();
         }
+        return z(str, i10, i11);
+    }
 
-        public final boolean b() {
-            return this.f37648b;
-        }
-
-        @Override // java.lang.reflect.InvocationHandler
-        public Object invoke(Object proxy, Method method, Object[] objArr) {
-            Intrinsics.checkNotNullParameter(proxy, "proxy");
-            Intrinsics.checkNotNullParameter(method, "method");
-            if (objArr == null) {
-                objArr = new Object[0];
-            }
-            String name = method.getName();
-            Class<?> returnType = method.getReturnType();
-            if (Intrinsics.areEqual(name, "supports") && Intrinsics.areEqual(Boolean.TYPE, returnType)) {
-                return Boolean.TRUE;
-            }
-            if (Intrinsics.areEqual(name, "unsupported") && Intrinsics.areEqual(Void.TYPE, returnType)) {
-                this.f37648b = true;
-                return null;
-            } else if (Intrinsics.areEqual(name, "protocols") && objArr.length == 0) {
-                return this.f37647a;
-            } else {
-                if ((Intrinsics.areEqual(name, "selectProtocol") || Intrinsics.areEqual(name, "select")) && Intrinsics.areEqual(String.class, returnType) && objArr.length == 1) {
-                    Object obj = objArr[0];
-                    if (obj instanceof List) {
-                        Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlin.collections.List<*>");
-                        List list = (List) obj;
-                        int size = list.size();
-                        if (size >= 0) {
-                            int i10 = 0;
-                            while (true) {
-                                Object obj2 = list.get(i10);
-                                Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.String");
-                                String str = (String) obj2;
-                                if (this.f37647a.contains(str)) {
-                                    this.f37649c = str;
-                                    return str;
-                                } else if (i10 == size) {
-                                    break;
-                                } else {
-                                    i10++;
-                                }
-                            }
-                        }
-                        String str2 = (String) this.f37647a.get(0);
-                        this.f37649c = str2;
-                        return str2;
+    public static final int B(String str, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(str, "<this>");
+        int i12 = i11 - 1;
+        if (i10 <= i12) {
+            while (true) {
+                char charAt = str.charAt(i12);
+                if (charAt == '\t' || charAt == '\n' || charAt == '\f' || charAt == '\r' || charAt == ' ') {
+                    if (i12 == i10) {
+                        break;
                     }
+                    i12--;
+                } else {
+                    return i12 + 1;
                 }
-                if ((Intrinsics.areEqual(name, "protocolSelected") || Intrinsics.areEqual(name, "selected")) && objArr.length == 1) {
-                    Object obj3 = objArr[0];
-                    Intrinsics.checkNotNull(obj3, "null cannot be cast to non-null type kotlin.String");
-                    this.f37649c = (String) obj3;
-                    return null;
+            }
+        }
+        return i10;
+    }
+
+    public static /* synthetic */ int C(String str, int i10, int i11, int i12, Object obj) {
+        if ((i12 & 1) != 0) {
+            i10 = 0;
+        }
+        if ((i12 & 2) != 0) {
+            i11 = str.length();
+        }
+        return B(str, i10, i11);
+    }
+
+    public static final int D(String str, int i10) {
+        Intrinsics.checkNotNullParameter(str, "<this>");
+        int length = str.length();
+        while (i10 < length) {
+            char charAt = str.charAt(i10);
+            if (charAt != ' ' && charAt != '\t') {
+                return i10;
+            }
+            i10++;
+        }
+        return str.length();
+    }
+
+    public static final String[] E(String[] strArr, String[] other, Comparator comparator) {
+        Intrinsics.checkNotNullParameter(strArr, "<this>");
+        Intrinsics.checkNotNullParameter(other, "other");
+        Intrinsics.checkNotNullParameter(comparator, "comparator");
+        ArrayList arrayList = new ArrayList();
+        for (String str : strArr) {
+            int length = other.length;
+            int i10 = 0;
+            while (true) {
+                if (i10 >= length) {
+                    break;
+                } else if (comparator.compare(str, other[i10]) == 0) {
+                    arrayList.add(str);
+                    break;
+                } else {
+                    i10++;
                 }
-                return method.invoke(this, Arrays.copyOf(objArr, objArr.length));
+            }
+        }
+        return (String[]) arrayList.toArray(new String[0]);
+    }
+
+    public static final boolean F(uu.a aVar, File file) {
+        Intrinsics.checkNotNullParameter(aVar, "<this>");
+        Intrinsics.checkNotNullParameter(file, "file");
+        Sink f10 = aVar.f(file);
+        try {
+            try {
+                aVar.h(file);
+                ls.c.a(f10, null);
+                return true;
+            } catch (IOException unused) {
+                Unit unit = Unit.f31987a;
+                ls.c.a(f10, null);
+                aVar.h(file);
+                return false;
+            }
+        } catch (Throwable th2) {
+            try {
+                throw th2;
+            } catch (Throwable th3) {
+                ls.c.a(f10, th2);
+                throw th3;
             }
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b {
-        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        public final h a() {
-            String jvmVersion = System.getProperty("java.specification.version", "unknown");
+    public static final boolean G(Socket socket, BufferedSource source) {
+        Intrinsics.checkNotNullParameter(socket, "<this>");
+        Intrinsics.checkNotNullParameter(source, "source");
+        try {
+            int soTimeout = socket.getSoTimeout();
             try {
-                Intrinsics.checkNotNullExpressionValue(jvmVersion, "jvmVersion");
-                if (Integer.parseInt(jvmVersion) >= 9) {
-                    return null;
+                socket.setSoTimeout(1);
+                return !source.p1();
+            } finally {
+                socket.setSoTimeout(soTimeout);
+            }
+        } catch (SocketTimeoutException unused) {
+            return true;
+        } catch (IOException unused2) {
+            return false;
+        }
+    }
+
+    public static final boolean H(String name) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        if (StringsKt.A(name, "Authorization", true) || StringsKt.A(name, "Cookie", true) || StringsKt.A(name, "Proxy-Authorization", true) || StringsKt.A(name, "Set-Cookie", true)) {
+            return true;
+        }
+        return false;
+    }
+
+    public static final int I(char c10) {
+        if ('0' <= c10 && c10 < ':') {
+            return c10 - '0';
+        }
+        if ('a' <= c10 && c10 < 'g') {
+            return c10 - 'W';
+        }
+        if ('A' <= c10 && c10 < 'G') {
+            return c10 - '7';
+        }
+        return -1;
+    }
+
+    public static final Charset J(BufferedSource bufferedSource, Charset charset) {
+        Intrinsics.checkNotNullParameter(bufferedSource, "<this>");
+        Intrinsics.checkNotNullParameter(charset, "default");
+        int T1 = bufferedSource.T1(f36660e);
+        if (T1 != -1) {
+            if (T1 != 0) {
+                if (T1 != 1) {
+                    if (T1 != 2) {
+                        if (T1 != 3) {
+                            if (T1 == 4) {
+                                return Charsets.f34899a.b();
+                            }
+                            throw new AssertionError();
+                        }
+                        return Charsets.f34899a.a();
+                    }
+                    Charset UTF_16LE = StandardCharsets.UTF_16LE;
+                    Intrinsics.checkNotNullExpressionValue(UTF_16LE, "UTF_16LE");
+                    return UTF_16LE;
                 }
+                Charset UTF_16BE = StandardCharsets.UTF_16BE;
+                Intrinsics.checkNotNullExpressionValue(UTF_16BE, "UTF_16BE");
+                return UTF_16BE;
+            }
+            Charset UTF_8 = StandardCharsets.UTF_8;
+            Intrinsics.checkNotNullExpressionValue(UTF_8, "UTF_8");
+            return UTF_8;
+        }
+        return charset;
+    }
+
+    public static final int K(BufferedSource bufferedSource) {
+        Intrinsics.checkNotNullParameter(bufferedSource, "<this>");
+        return d(bufferedSource.readByte(), SetSpanOperation.SPAN_MAX_PRIORITY) | (d(bufferedSource.readByte(), SetSpanOperation.SPAN_MAX_PRIORITY) << 16) | (d(bufferedSource.readByte(), SetSpanOperation.SPAN_MAX_PRIORITY) << 8);
+    }
+
+    public static final int L(Buffer buffer, byte b10) {
+        Intrinsics.checkNotNullParameter(buffer, "<this>");
+        int i10 = 0;
+        while (!buffer.p1() && buffer.Z(0L) == b10) {
+            i10++;
+            buffer.readByte();
+        }
+        return i10;
+    }
+
+    public static final boolean M(Source source, int i10, TimeUnit timeUnit) {
+        long j10;
+        Intrinsics.checkNotNullParameter(source, "<this>");
+        Intrinsics.checkNotNullParameter(timeUnit, "timeUnit");
+        long nanoTime = System.nanoTime();
+        if (source.timeout().e()) {
+            j10 = source.timeout().c() - nanoTime;
+        } else {
+            j10 = Long.MAX_VALUE;
+        }
+        source.timeout().d(Math.min(j10, timeUnit.toNanos(i10)) + nanoTime);
+        try {
+            Buffer buffer = new Buffer();
+            while (source.read(buffer, 8192L) != -1) {
+                buffer.h();
+            }
+            if (j10 == LongCompanionObject.MAX_VALUE) {
+                source.timeout().a();
+                return true;
+            }
+            source.timeout().d(nanoTime + j10);
+            return true;
+        } catch (InterruptedIOException unused) {
+            if (j10 == LongCompanionObject.MAX_VALUE) {
+                source.timeout().a();
+                return false;
+            }
+            source.timeout().d(nanoTime + j10);
+            return false;
+        } catch (Throwable th2) {
+            if (j10 == LongCompanionObject.MAX_VALUE) {
+                source.timeout().a();
+            } else {
+                source.timeout().d(nanoTime + j10);
+            }
+            throw th2;
+        }
+    }
+
+    public static final ThreadFactory N(final String name, final boolean z10) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        return new ThreadFactory() { // from class: mu.d
+            @Override // java.util.concurrent.ThreadFactory
+            public final Thread newThread(Runnable runnable) {
+                Thread O;
+                O = e.O(name, z10, runnable);
+                return O;
+            }
+        };
+    }
+
+    public static final Thread O(String name, boolean z10, Runnable runnable) {
+        Intrinsics.checkNotNullParameter(name, "$name");
+        Thread thread = new Thread(runnable, name);
+        thread.setDaemon(z10);
+        return thread;
+    }
+
+    public static final List P(Headers headers) {
+        Intrinsics.checkNotNullParameter(headers, "<this>");
+        IntRange u10 = kotlin.ranges.d.u(0, headers.size());
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(u10, 10));
+        Iterator it = u10.iterator();
+        while (it.hasNext()) {
+            int nextInt = ((m0) it).nextInt();
+            arrayList.add(new tu.c(headers.e(nextInt), headers.k(nextInt)));
+        }
+        return arrayList;
+    }
+
+    public static final Headers Q(List list) {
+        Intrinsics.checkNotNullParameter(list, "<this>");
+        Headers.a aVar = new Headers.a();
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            tu.c cVar = (tu.c) it.next();
+            aVar.d(cVar.a().M(), cVar.b().M());
+        }
+        return aVar.f();
+    }
+
+    public static final String R(int i10) {
+        String hexString = Integer.toHexString(i10);
+        Intrinsics.checkNotNullExpressionValue(hexString, "toHexString(this)");
+        return hexString;
+    }
+
+    public static final String S(long j10) {
+        String hexString = Long.toHexString(j10);
+        Intrinsics.checkNotNullExpressionValue(hexString, "toHexString(this)");
+        return hexString;
+    }
+
+    public static final String T(HttpUrl httpUrl, boolean z10) {
+        String i10;
+        Intrinsics.checkNotNullParameter(httpUrl, "<this>");
+        if (StringsKt.V(httpUrl.i(), ":", false, 2, null)) {
+            i10 = '[' + httpUrl.i() + ']';
+        } else {
+            i10 = httpUrl.i();
+        }
+        if (!z10 && httpUrl.o() == HttpUrl.f40276k.c(httpUrl.s())) {
+            return i10;
+        }
+        return i10 + ':' + httpUrl.o();
+    }
+
+    public static /* synthetic */ String U(HttpUrl httpUrl, boolean z10, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            z10 = false;
+        }
+        return T(httpUrl, z10);
+    }
+
+    public static final List V(List list) {
+        Intrinsics.checkNotNullParameter(list, "<this>");
+        List unmodifiableList = Collections.unmodifiableList(CollectionsKt.j1(list));
+        Intrinsics.checkNotNullExpressionValue(unmodifiableList, "unmodifiableList(toMutableList())");
+        return unmodifiableList;
+    }
+
+    public static final Map W(Map map) {
+        Intrinsics.checkNotNullParameter(map, "<this>");
+        if (map.isEmpty()) {
+            return o0.i();
+        }
+        Map unmodifiableMap = Collections.unmodifiableMap(new LinkedHashMap(map));
+        Intrinsics.checkNotNullExpressionValue(unmodifiableMap, "{\n    Collections.unmodi…(LinkedHashMap(this))\n  }");
+        return unmodifiableMap;
+    }
+
+    public static final long X(String str, long j10) {
+        Intrinsics.checkNotNullParameter(str, "<this>");
+        try {
+            return Long.parseLong(str);
+        } catch (NumberFormatException unused) {
+            return j10;
+        }
+    }
+
+    public static final int Y(String str, int i10) {
+        if (str != null) {
+            try {
+                long parseLong = Long.parseLong(str);
+                if (parseLong > 2147483647L) {
+                    return Integer.MAX_VALUE;
+                }
+                if (parseLong < 0) {
+                    return 0;
+                }
+                return (int) parseLong;
             } catch (NumberFormatException unused) {
             }
-            try {
-                Class<?> cls = Class.forName("org.eclipse.jetty.alpn.ALPN", true, null);
-                Class<?> cls2 = Class.forName("org.eclipse.jetty.alpn.ALPN$Provider", true, null);
-                Class<?> clientProviderClass = Class.forName("org.eclipse.jetty.alpn.ALPN$ClientProvider", true, null);
-                Class<?> serverProviderClass = Class.forName("org.eclipse.jetty.alpn.ALPN$ServerProvider", true, null);
-                Method putMethod = cls.getMethod("put", SSLSocket.class, cls2);
-                Method getMethod = cls.getMethod("get", SSLSocket.class);
-                Method removeMethod = cls.getMethod("remove", SSLSocket.class);
-                Intrinsics.checkNotNullExpressionValue(putMethod, "putMethod");
-                Intrinsics.checkNotNullExpressionValue(getMethod, "getMethod");
-                Intrinsics.checkNotNullExpressionValue(removeMethod, "removeMethod");
-                Intrinsics.checkNotNullExpressionValue(clientProviderClass, "clientProviderClass");
-                Intrinsics.checkNotNullExpressionValue(serverProviderClass, "serverProviderClass");
-                return new e(putMethod, getMethod, removeMethod, clientProviderClass, serverProviderClass);
-            } catch (ClassNotFoundException | NoSuchMethodException unused2) {
-                return null;
+        }
+        return i10;
+    }
+
+    public static final String Z(String str, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(str, "<this>");
+        int z10 = z(str, i10, i11);
+        String substring = str.substring(z10, B(str, z10, i11));
+        Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
+        return substring;
+    }
+
+    public static /* synthetic */ String a0(String str, int i10, int i11, int i12, Object obj) {
+        if ((i12 & 1) != 0) {
+            i10 = 0;
+        }
+        if ((i12 & 2) != 0) {
+            i11 = str.length();
+        }
+        return Z(str, i10, i11);
+    }
+
+    public static final Throwable b0(Exception exc, List suppressed) {
+        Intrinsics.checkNotNullParameter(exc, "<this>");
+        Intrinsics.checkNotNullParameter(suppressed, "suppressed");
+        Iterator it = suppressed.iterator();
+        while (it.hasNext()) {
+            as.e.a(exc, (Exception) it.next());
+        }
+        return exc;
+    }
+
+    public static final void c(List list, Object obj) {
+        Intrinsics.checkNotNullParameter(list, "<this>");
+        if (!list.contains(obj)) {
+            list.add(obj);
+        }
+    }
+
+    public static final void c0(BufferedSink bufferedSink, int i10) {
+        Intrinsics.checkNotNullParameter(bufferedSink, "<this>");
+        bufferedSink.writeByte((i10 >>> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
+        bufferedSink.writeByte((i10 >>> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
+        bufferedSink.writeByte(i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
+    }
+
+    public static final int d(byte b10, int i10) {
+        return b10 & i10;
+    }
+
+    public static final int e(short s10, int i10) {
+        return s10 & i10;
+    }
+
+    public static final long f(int i10, long j10) {
+        return i10 & j10;
+    }
+
+    public static final e.c g(final okhttp3.e eVar) {
+        Intrinsics.checkNotNullParameter(eVar, "<this>");
+        return new e.c() { // from class: mu.c
+            @Override // okhttp3.e.c
+            public final okhttp3.e a(Call call) {
+                okhttp3.e h10;
+                h10 = e.h(okhttp3.e.this, call);
+                return h10;
+            }
+        };
+    }
+
+    public static final okhttp3.e h(okhttp3.e this_asFactory, Call it) {
+        Intrinsics.checkNotNullParameter(this_asFactory, "$this_asFactory");
+        Intrinsics.checkNotNullParameter(it, "it");
+        return this_asFactory;
+    }
+
+    public static final boolean i(String str) {
+        Intrinsics.checkNotNullParameter(str, "<this>");
+        return f36662g.i(str);
+    }
+
+    public static final boolean j(HttpUrl httpUrl, HttpUrl other) {
+        Intrinsics.checkNotNullParameter(httpUrl, "<this>");
+        Intrinsics.checkNotNullParameter(other, "other");
+        if (Intrinsics.areEqual(httpUrl.i(), other.i()) && httpUrl.o() == other.o() && Intrinsics.areEqual(httpUrl.s(), other.s())) {
+            return true;
+        }
+        return false;
+    }
+
+    public static final int k(String name, long j10, TimeUnit timeUnit) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        int i10 = (j10 > 0L ? 1 : (j10 == 0L ? 0 : -1));
+        if (i10 >= 0) {
+            if (timeUnit != null) {
+                long millis = timeUnit.toMillis(j10);
+                if (millis <= 2147483647L) {
+                    if (millis == 0 && i10 > 0) {
+                        throw new IllegalArgumentException((name + " too small.").toString());
+                    }
+                    return (int) millis;
+                }
+                throw new IllegalArgumentException((name + " too large.").toString());
+            }
+            throw new IllegalStateException("unit == null");
+        }
+        throw new IllegalStateException((name + " < 0").toString());
+    }
+
+    public static final void l(long j10, long j11, long j12) {
+        if ((j11 | j12) >= 0 && j11 <= j10 && j10 - j11 >= j12) {
+            return;
+        }
+        throw new ArrayIndexOutOfBoundsException();
+    }
+
+    public static final void m(Closeable closeable) {
+        Intrinsics.checkNotNullParameter(closeable, "<this>");
+        try {
+            closeable.close();
+        } catch (RuntimeException e10) {
+            throw e10;
+        } catch (Exception unused) {
+        }
+    }
+
+    public static final void n(Socket socket) {
+        Intrinsics.checkNotNullParameter(socket, "<this>");
+        try {
+            socket.close();
+        } catch (AssertionError e10) {
+            throw e10;
+        } catch (RuntimeException e11) {
+            if (Intrinsics.areEqual(e11.getMessage(), "bio == null")) {
+                return;
+            }
+            throw e11;
+        } catch (Exception unused) {
+        }
+    }
+
+    public static final String[] o(String[] strArr, String value) {
+        Intrinsics.checkNotNullParameter(strArr, "<this>");
+        Intrinsics.checkNotNullParameter(value, "value");
+        Object[] copyOf = Arrays.copyOf(strArr, strArr.length + 1);
+        Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(this, newSize)");
+        String[] strArr2 = (String[]) copyOf;
+        strArr2[i.a0(strArr2)] = value;
+        return strArr2;
+    }
+
+    public static final int p(String str, char c10, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(str, "<this>");
+        while (i10 < i11) {
+            if (str.charAt(i10) == c10) {
+                return i10;
+            }
+            i10++;
+        }
+        return i11;
+    }
+
+    public static final int q(String str, String delimiters, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(str, "<this>");
+        Intrinsics.checkNotNullParameter(delimiters, "delimiters");
+        while (i10 < i11) {
+            if (StringsKt.U(delimiters, str.charAt(i10), false, 2, null)) {
+                return i10;
+            }
+            i10++;
+        }
+        return i11;
+    }
+
+    public static /* synthetic */ int r(String str, char c10, int i10, int i11, int i12, Object obj) {
+        if ((i12 & 2) != 0) {
+            i10 = 0;
+        }
+        if ((i12 & 4) != 0) {
+            i11 = str.length();
+        }
+        return p(str, c10, i10, i11);
+    }
+
+    public static final boolean s(Source source, int i10, TimeUnit timeUnit) {
+        Intrinsics.checkNotNullParameter(source, "<this>");
+        Intrinsics.checkNotNullParameter(timeUnit, "timeUnit");
+        try {
+            return M(source, i10, timeUnit);
+        } catch (IOException unused) {
+            return false;
+        }
+    }
+
+    public static final String t(String format, Object... args) {
+        Intrinsics.checkNotNullParameter(format, "format");
+        Intrinsics.checkNotNullParameter(args, "args");
+        StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
+        Locale locale = Locale.US;
+        Object[] copyOf = Arrays.copyOf(args, args.length);
+        String format2 = String.format(locale, format, Arrays.copyOf(copyOf, copyOf.length));
+        Intrinsics.checkNotNullExpressionValue(format2, "format(locale, format, *args)");
+        return format2;
+    }
+
+    public static final boolean u(String[] strArr, String[] strArr2, Comparator comparator) {
+        Intrinsics.checkNotNullParameter(strArr, "<this>");
+        Intrinsics.checkNotNullParameter(comparator, "comparator");
+        if (strArr.length != 0 && strArr2 != null && strArr2.length != 0) {
+            for (String str : strArr) {
+                Iterator it = ArrayIteratorKt.iterator(strArr2);
+                while (it.hasNext()) {
+                    if (comparator.compare(str, (String) it.next()) == 0) {
+                        return true;
+                    }
+                }
             }
         }
+        return false;
+    }
 
-        private b() {
+    public static final long v(Response response) {
+        Intrinsics.checkNotNullParameter(response, "<this>");
+        String c10 = response.z0().c("Content-Length");
+        if (c10 == null) {
+            return -1L;
         }
+        return X(c10, -1L);
     }
 
-    public e(Method putMethod, Method getMethod, Method removeMethod, Class clientProviderClass, Class serverProviderClass) {
-        Intrinsics.checkNotNullParameter(putMethod, "putMethod");
-        Intrinsics.checkNotNullParameter(getMethod, "getMethod");
-        Intrinsics.checkNotNullParameter(removeMethod, "removeMethod");
-        Intrinsics.checkNotNullParameter(clientProviderClass, "clientProviderClass");
-        Intrinsics.checkNotNullParameter(serverProviderClass, "serverProviderClass");
-        this.f37642d = putMethod;
-        this.f37643e = getMethod;
-        this.f37644f = removeMethod;
-        this.f37645g = clientProviderClass;
-        this.f37646h = serverProviderClass;
+    public static final List w(Object... elements) {
+        Intrinsics.checkNotNullParameter(elements, "elements");
+        Object[] objArr = (Object[]) elements.clone();
+        List unmodifiableList = Collections.unmodifiableList(CollectionsKt.o(Arrays.copyOf(objArr, objArr.length)));
+        Intrinsics.checkNotNullExpressionValue(unmodifiableList, "unmodifiableList(listOf(*elements.clone()))");
+        return unmodifiableList;
     }
 
-    @Override // mu.h
-    public void b(SSLSocket sslSocket) {
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        try {
-            this.f37644f.invoke(null, sslSocket);
-        } catch (IllegalAccessException e10) {
-            throw new AssertionError("failed to remove ALPN", e10);
-        } catch (InvocationTargetException e11) {
-            throw new AssertionError("failed to remove ALPN", e11);
+    public static final int x(String[] strArr, String value, Comparator comparator) {
+        Intrinsics.checkNotNullParameter(strArr, "<this>");
+        Intrinsics.checkNotNullParameter(value, "value");
+        Intrinsics.checkNotNullParameter(comparator, "comparator");
+        int length = strArr.length;
+        for (int i10 = 0; i10 < length; i10++) {
+            if (comparator.compare(strArr[i10], value) == 0) {
+                return i10;
+            }
         }
+        return -1;
     }
 
-    @Override // mu.h
-    public void e(SSLSocket sslSocket, String str, List protocols) {
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        Intrinsics.checkNotNullParameter(protocols, "protocols");
-        try {
-            this.f37642d.invoke(null, sslSocket, Proxy.newProxyInstance(h.class.getClassLoader(), new Class[]{this.f37645g, this.f37646h}, new a(h.f37655a.b(protocols))));
-        } catch (IllegalAccessException e10) {
-            throw new AssertionError("failed to set ALPN", e10);
-        } catch (InvocationTargetException e11) {
-            throw new AssertionError("failed to set ALPN", e11);
+    public static final int y(String str) {
+        Intrinsics.checkNotNullParameter(str, "<this>");
+        int length = str.length();
+        for (int i10 = 0; i10 < length; i10++) {
+            char charAt = str.charAt(i10);
+            if (Intrinsics.compare((int) charAt, 31) <= 0 || Intrinsics.compare((int) charAt, 127) >= 0) {
+                return i10;
+            }
         }
+        return -1;
     }
 
-    @Override // mu.h
-    public String h(SSLSocket sslSocket) {
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        try {
-            InvocationHandler invocationHandler = Proxy.getInvocationHandler(this.f37643e.invoke(null, sslSocket));
-            Intrinsics.checkNotNull(invocationHandler, "null cannot be cast to non-null type okhttp3.internal.platform.Jdk8WithJettyBootPlatform.AlpnProvider");
-            a aVar = (a) invocationHandler;
-            if (!aVar.b() && aVar.a() == null) {
-                h.l(this, "ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?", 0, null, 6, null);
-                return null;
-            } else if (aVar.b()) {
-                return null;
+    public static final int z(String str, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(str, "<this>");
+        while (i10 < i11) {
+            char charAt = str.charAt(i10);
+            if (charAt == '\t' || charAt == '\n' || charAt == '\f' || charAt == '\r' || charAt == ' ') {
+                i10++;
             } else {
-                return aVar.a();
+                return i10;
             }
-        } catch (IllegalAccessException e10) {
-            throw new AssertionError("failed to get ALPN selected protocol", e10);
-        } catch (InvocationTargetException e11) {
-            throw new AssertionError("failed to get ALPN selected protocol", e11);
         }
+        return i11;
     }
 }

@@ -1,6 +1,5 @@
 package com.withpersona.sdk2.inquiry.network.core.dto;
 
-import bn.c;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.squareup.moshi.a0;
 import com.squareup.moshi.h;
@@ -8,6 +7,7 @@ import com.squareup.moshi.m;
 import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.core.dto.UiComponentError;
+import dn.c;
 import java.lang.reflect.Constructor;
 import java.util.Map;
 import kotlin.collections.x0;
@@ -47,7 +47,7 @@ public final class UiComponentError_UiGovernmentIdNfcScanComponentErrorJsonAdapt
         while (mVar.hasNext()) {
             int J = mVar.J(this.options);
             if (J == -1) {
-                mVar.C0();
+                mVar.z0();
                 mVar.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
@@ -76,7 +76,7 @@ public final class UiComponentError_UiGovernmentIdNfcScanComponentErrorJsonAdapt
         }
         Constructor<UiComponentError.UiGovernmentIdNfcScanComponentError> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = UiComponentError.UiGovernmentIdNfcScanComponentError.class.getDeclaredConstructor(String.class, String.class, Map.class, Integer.TYPE, c.f7152c);
+            constructor = UiComponentError.UiGovernmentIdNfcScanComponentError.class.getDeclaredConstructor(String.class, String.class, Map.class, Integer.TYPE, c.f21827c);
             this.constructorRef = constructor;
         }
         if (str != null) {
@@ -91,7 +91,7 @@ public final class UiComponentError_UiGovernmentIdNfcScanComponentErrorJsonAdapt
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, UiComponentError.UiGovernmentIdNfcScanComponentError uiGovernmentIdNfcScanComponentError) {
         if (uiGovernmentIdNfcScanComponentError != null) {
-            tVar.k();
+            tVar.i();
             tVar.J(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(tVar, uiGovernmentIdNfcScanComponentError.getName());
             tVar.J("type");

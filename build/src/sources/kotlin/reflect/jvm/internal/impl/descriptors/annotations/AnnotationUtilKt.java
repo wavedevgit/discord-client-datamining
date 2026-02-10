@@ -1,5 +1,6 @@
 package kotlin.reflect.jvm.internal.impl.descriptors.annotations;
 
+import as.v;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.o0;
@@ -18,41 +19,40 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 import kotlin.reflect.jvm.internal.impl.types.SimpleType;
 import kotlin.reflect.jvm.internal.impl.types.Variance;
 import org.jetbrains.annotations.NotNull;
-import rr.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class AnnotationUtilKt {
 
     /* renamed from: a */
-    private static final Name f32105a;
+    private static final Name f32327a;
 
     /* renamed from: b */
-    private static final Name f32106b;
+    private static final Name f32328b;
 
     /* renamed from: c */
-    private static final Name f32107c;
+    private static final Name f32329c;
 
     /* renamed from: d */
-    private static final Name f32108d;
+    private static final Name f32330d;
 
     /* renamed from: e */
-    private static final Name f32109e;
+    private static final Name f32331e;
 
     static {
         Name identifier = Name.identifier("message");
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-        f32105a = identifier;
+        f32327a = identifier;
         Name identifier2 = Name.identifier("replaceWith");
         Intrinsics.checkNotNullExpressionValue(identifier2, "identifier(...)");
-        f32106b = identifier2;
+        f32328b = identifier2;
         Name identifier3 = Name.identifier("level");
         Intrinsics.checkNotNullExpressionValue(identifier3, "identifier(...)");
-        f32107c = identifier3;
+        f32329c = identifier3;
         Name identifier4 = Name.identifier("expression");
         Intrinsics.checkNotNullExpressionValue(identifier4, "identifier(...)");
-        f32108d = identifier4;
+        f32330d = identifier4;
         Name identifier5 = Name.identifier("imports");
         Intrinsics.checkNotNullExpressionValue(identifier5, "identifier(...)");
-        f32109e = identifier5;
+        f32331e = identifier5;
     }
 
     public static final KotlinType b(KotlinBuiltIns kotlinBuiltIns, ModuleDescriptor module) {
@@ -68,11 +68,11 @@ public final class AnnotationUtilKt {
         Intrinsics.checkNotNullParameter(message, "message");
         Intrinsics.checkNotNullParameter(replaceWith, "replaceWith");
         Intrinsics.checkNotNullParameter(level, "level");
-        BuiltInAnnotationDescriptor builtInAnnotationDescriptor = new BuiltInAnnotationDescriptor(kotlinBuiltIns, StandardNames.FqNames.replaceWith, o0.m(v.a(f32108d, new StringValue(replaceWith)), v.a(f32109e, new ArrayValue(CollectionsKt.l(), new a(kotlinBuiltIns)))), false, 8, null);
+        BuiltInAnnotationDescriptor builtInAnnotationDescriptor = new BuiltInAnnotationDescriptor(kotlinBuiltIns, StandardNames.FqNames.replaceWith, o0.m(v.a(f32330d, new StringValue(replaceWith)), v.a(f32331e, new ArrayValue(CollectionsKt.l(), new a(kotlinBuiltIns)))), false, 8, null);
         FqName fqName = StandardNames.FqNames.deprecated;
-        Pair a10 = v.a(f32105a, new StringValue(message));
-        Pair a11 = v.a(f32106b, new AnnotationValue(builtInAnnotationDescriptor));
-        Name name = f32107c;
+        Pair a10 = v.a(f32327a, new StringValue(message));
+        Pair a11 = v.a(f32328b, new AnnotationValue(builtInAnnotationDescriptor));
+        Name name = f32329c;
         ClassId classId = ClassId.Companion.topLevel(StandardNames.FqNames.deprecationLevel);
         Name identifier = Name.identifier(level);
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");

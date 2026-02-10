@@ -3,7 +3,7 @@ package kotlin.jvm.internal;
 import kotlin.reflect.KCallable;
 import kotlin.reflect.KProperty;
 import org.jetbrains.annotations.NotNull;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class PropertyReference extends CallableReference implements KProperty {
     private final boolean syntheticJavaProperty;
 

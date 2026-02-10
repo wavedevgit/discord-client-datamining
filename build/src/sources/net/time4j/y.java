@@ -4,78 +4,78 @@ import java.io.InvalidObjectException;
 import java.io.ObjectInputStream;
 import java.io.Serializable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class y implements st.l0, Comparable, Serializable {
+public final class y implements bu.l0, Comparable, Serializable {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final y f38792o;
+    private static final y f37796o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final y f38793p;
+    private static final y f37797p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final st.j0 f38794q;
+    public static final bu.j0 f37798q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final st.j0 f38795r;
+    public static final bu.j0 f37799r;
     private static final long serialVersionUID = -4150291820807606229L;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient long f38796d;
+    private final transient long f37800d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient int f38797e;
+    private final transient int f37801e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient zt.f f38798i;
+    private final transient iu.f f37802i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class b implements st.j0 {
+    private static class b implements bu.j0 {
 
         /* renamed from: d  reason: collision with root package name */
-        private final zt.f f38799d;
+        private final iu.f f37803d;
 
-        private b(zt.f fVar) {
-            this.f38799d = fVar;
+        private b(iu.f fVar) {
+            this.f37803d = fVar;
         }
     }
 
     static {
-        zt.f fVar = zt.f.POSIX;
-        f38792o = new y(0L, 0, fVar);
-        zt.f fVar2 = zt.f.UTC;
-        f38793p = new y(0L, 0, fVar2);
-        f38794q = new b(fVar);
-        f38795r = new b(fVar2);
+        iu.f fVar = iu.f.POSIX;
+        f37796o = new y(0L, 0, fVar);
+        iu.f fVar2 = iu.f.UTC;
+        f37797p = new y(0L, 0, fVar2);
+        f37798q = new b(fVar);
+        f37799r = new b(fVar2);
     }
 
-    private y(long j10, int i10, zt.f fVar) {
+    private y(long j10, int i10, iu.f fVar) {
         while (i10 < 0) {
             i10 += 1000000000;
-            j10 = qt.c.m(j10, 1L);
+            j10 = zt.c.m(j10, 1L);
         }
         while (i10 >= 1000000000) {
             i10 -= 1000000000;
-            j10 = qt.c.f(j10, 1L);
+            j10 = zt.c.f(j10, 1L);
         }
         if (j10 < 0 && i10 > 0) {
             j10++;
             i10 -= 1000000000;
         }
-        this.f38796d = j10;
-        this.f38797e = i10;
-        this.f38798i = fVar;
+        this.f37800d = j10;
+        this.f37801e = i10;
+        this.f37802i = fVar;
     }
 
     private void e(StringBuilder sb2) {
         if (i()) {
             sb2.append('-');
-            sb2.append(Math.abs(this.f38796d));
+            sb2.append(Math.abs(this.f37800d));
         } else {
-            sb2.append(this.f38796d);
+            sb2.append(this.f37800d);
         }
-        if (this.f38797e != 0) {
+        if (this.f37801e != 0) {
             sb2.append('.');
-            String valueOf = String.valueOf(Math.abs(this.f38797e));
+            String valueOf = String.valueOf(Math.abs(this.f37801e));
             for (int length = 9 - valueOf.length(); length > 0; length--) {
                 sb2.append('0');
             }
@@ -85,16 +85,16 @@ public final class y implements st.l0, Comparable, Serializable {
 
     public static y k(long j10, int i10) {
         if (j10 == 0 && i10 == 0) {
-            return f38792o;
+            return f37796o;
         }
-        return new y(j10, i10, zt.f.POSIX);
+        return new y(j10, i10, iu.f.POSIX);
     }
 
     public static y l(long j10, int i10) {
         if (j10 == 0 && i10 == 0) {
-            return f38793p;
+            return f37797p;
         }
-        return new y(j10, i10, zt.f.UTC);
+        return new y(j10, i10, iu.f.UTC);
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
@@ -108,16 +108,16 @@ public final class y implements st.l0, Comparable, Serializable {
     @Override // java.lang.Comparable
     /* renamed from: d */
     public int compareTo(y yVar) {
-        if (this.f38798i == yVar.f38798i) {
-            long j10 = this.f38796d;
-            long j11 = yVar.f38796d;
+        if (this.f37802i == yVar.f37802i) {
+            long j10 = this.f37800d;
+            long j11 = yVar.f37800d;
             if (j10 < j11) {
                 return -1;
             }
             if (j10 > j11) {
                 return 1;
             }
-            return this.f38797e - yVar.f38797e;
+            return this.f37801e - yVar.f37801e;
         }
         throw new ClassCastException("Different time scales.");
     }
@@ -128,7 +128,7 @@ public final class y implements st.l0, Comparable, Serializable {
         }
         if (obj instanceof y) {
             y yVar = (y) obj;
-            if (this.f38796d == yVar.f38796d && this.f38797e == yVar.f38797e && this.f38798i == yVar.f38798i) {
+            if (this.f37800d == yVar.f37800d && this.f37801e == yVar.f37801e && this.f37802i == yVar.f37802i) {
                 return true;
             }
         }
@@ -136,32 +136,32 @@ public final class y implements st.l0, Comparable, Serializable {
     }
 
     public int f() {
-        int i10 = this.f38797e;
+        int i10 = this.f37801e;
         if (i10 < 0) {
             return i10 + 1000000000;
         }
         return i10;
     }
 
-    public zt.f g() {
-        return this.f38798i;
+    public iu.f g() {
+        return this.f37802i;
     }
 
     public long h() {
-        long j10 = this.f38796d;
-        if (this.f38797e < 0) {
+        long j10 = this.f37800d;
+        if (this.f37801e < 0) {
             return j10 - 1;
         }
         return j10;
     }
 
     public int hashCode() {
-        long j10 = this.f38796d;
-        return ((((161 + ((int) (j10 ^ (j10 >>> 32)))) * 23) + this.f38797e) * 23) + this.f38798i.hashCode();
+        long j10 = this.f37800d;
+        return ((((161 + ((int) (j10 ^ (j10 >>> 32)))) * 23) + this.f37801e) * 23) + this.f37802i.hashCode();
     }
 
     public boolean i() {
-        if (this.f38796d >= 0 && this.f38797e >= 0) {
+        if (this.f37800d >= 0 && this.f37801e >= 0) {
             return false;
         }
         return true;
@@ -171,7 +171,7 @@ public final class y implements st.l0, Comparable, Serializable {
         StringBuilder sb2 = new StringBuilder();
         e(sb2);
         sb2.append("s [");
-        sb2.append(this.f38798i.name());
+        sb2.append(this.f37802i.name());
         sb2.append(']');
         return sb2.toString();
     }

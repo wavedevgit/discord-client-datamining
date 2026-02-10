@@ -5,18 +5,18 @@ import oe.h0;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f43115a;
+    public final int f41573a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f43116b;
+    public final int f41574b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final String f43117c;
+    public final String f41575c;
 
     private d(int i10, int i11, String str) {
-        this.f43115a = i10;
-        this.f43116b = i11;
-        this.f43117c = str;
+        this.f41573a = i10;
+        this.f41574b = i11;
+        this.f41575c = str;
     }
 
     public static d a(h0 h0Var) {

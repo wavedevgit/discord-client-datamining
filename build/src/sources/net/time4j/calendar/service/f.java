@@ -1,52 +1,52 @@
 package net.time4j.calendar.service;
 
-import st.v;
+import bu.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public class f extends d {
     private static final long serialVersionUID = -4975173343610190782L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f38414o;
+    private final transient int f37418o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient int f38415p;
+    private final transient int f37419p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient v f38416q;
+    private final transient v f37420q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient v f38417r;
+    private final transient v f37421r;
 
     public f(String str, Class cls, int i10, int i11, char c10) {
         super(str, cls, c10, str.startsWith("DAY_OF_"));
-        this.f38414o = i10;
-        this.f38415p = i11;
-        this.f38416q = null;
-        this.f38417r = null;
+        this.f37418o = i10;
+        this.f37419p = i11;
+        this.f37420q = null;
+        this.f37421r = null;
     }
 
-    @Override // st.p
+    @Override // bu.p
     /* renamed from: G */
-    public Integer e() {
-        return Integer.valueOf(this.f38415p);
+    public Integer f() {
+        return Integer.valueOf(this.f37419p);
     }
 
-    @Override // st.p
+    @Override // bu.p
     /* renamed from: H */
     public Integer B() {
-        return Integer.valueOf(this.f38414o);
+        return Integer.valueOf(this.f37418o);
     }
 
-    @Override // st.p
+    @Override // bu.p
     public Class getType() {
         return Integer.class;
     }
 
     public f(String str, Class cls, int i10, int i11, char c10, v vVar, v vVar2) {
         super(str, cls, c10, false);
-        this.f38414o = i10;
-        this.f38415p = i11;
-        this.f38416q = vVar;
-        this.f38417r = vVar2;
+        this.f37418o = i10;
+        this.f37419p = i11;
+        this.f37420q = vVar;
+        this.f37421r = vVar2;
     }
 }

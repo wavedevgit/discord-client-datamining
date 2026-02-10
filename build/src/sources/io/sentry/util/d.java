@@ -10,7 +10,7 @@ import java.util.Properties;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static String f29194a = "sentry-debug-meta.properties";
+    public static String f30129a = "sentry-debug-meta.properties";
 
     public static void a(k7 k7Var, List list) {
         if (list != null) {
@@ -66,15 +66,15 @@ public abstract class d {
                     distribution = k7Var.getDistribution();
                     if (k10 != null) {
                         k7Var.getLogger().c(SentryLevel.DEBUG, "Distribution org slug found: %s", k10);
-                        distribution.f28502b = k10;
+                        distribution.f29437b = k10;
                     }
                     if (l10 != null) {
                         k7Var.getLogger().c(SentryLevel.DEBUG, "Distribution project slug found: %s", l10);
-                        distribution.f28503c = l10;
+                        distribution.f29438c = l10;
                     }
                     if (i10 != null) {
                         k7Var.getLogger().c(SentryLevel.DEBUG, "Distribution org auth token found", new Object[0]);
-                        distribution.f28501a = i10;
+                        distribution.f29436a = i10;
                     }
                     if (j10 == null) {
                         return;
@@ -83,21 +83,21 @@ public abstract class d {
                 }
             } else {
                 distribution = k7Var.getDistribution();
-                if (k10 != null && !k10.isEmpty() && distribution.f28502b.isEmpty()) {
+                if (k10 != null && !k10.isEmpty() && distribution.f29437b.isEmpty()) {
                     k7Var.getLogger().c(SentryLevel.DEBUG, "Distribution org slug found: %s", k10);
-                    distribution.f28502b = k10;
+                    distribution.f29437b = k10;
                 }
-                if (l10 != null && !l10.isEmpty() && distribution.f28503c.isEmpty()) {
+                if (l10 != null && !l10.isEmpty() && distribution.f29438c.isEmpty()) {
                     k7Var.getLogger().c(SentryLevel.DEBUG, "Distribution project slug found: %s", l10);
-                    distribution.f28503c = l10;
+                    distribution.f29438c = l10;
                 }
-                if (i10 != null && !i10.isEmpty() && distribution.f28501a.isEmpty()) {
+                if (i10 != null && !i10.isEmpty() && distribution.f29436a.isEmpty()) {
                     k7Var.getLogger().c(SentryLevel.DEBUG, "Distribution org auth token found", new Object[0]);
-                    distribution.f28501a = i10;
+                    distribution.f29436a = i10;
                 }
-                if (j10 == null && !j10.isEmpty() && distribution.f28505e == null) {
+                if (j10 == null && !j10.isEmpty() && distribution.f29440e == null) {
                     k7Var.getLogger().c(SentryLevel.DEBUG, "Distribution build configuration found: %s", j10);
-                    distribution.f28505e = j10;
+                    distribution.f29440e = j10;
                     return;
                 }
                 return;

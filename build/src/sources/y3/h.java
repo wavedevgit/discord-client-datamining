@@ -7,22 +7,22 @@ import x3.k;
 public final class h extends g implements k {
 
     /* renamed from: e  reason: collision with root package name */
-    private final SQLiteStatement f55453e;
+    private final SQLiteStatement f55384e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public h(SQLiteStatement delegate) {
         super(delegate);
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f55453e = delegate;
-    }
-
-    @Override // x3.k
-    public long T0() {
-        return this.f55453e.executeInsert();
+        this.f55384e = delegate;
     }
 
     @Override // x3.k
     public int V() {
-        return this.f55453e.executeUpdateDelete();
+        return this.f55384e.executeUpdateDelete();
+    }
+
+    @Override // x3.k
+    public long X0() {
+        return this.f55384e.executeInsert();
     }
 }

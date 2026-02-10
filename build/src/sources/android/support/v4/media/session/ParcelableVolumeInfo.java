@@ -9,19 +9,19 @@ public class ParcelableVolumeInfo implements Parcelable {
     public static final Parcelable.Creator<ParcelableVolumeInfo> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public int f904d;
+    public int f905d;
 
     /* renamed from: e  reason: collision with root package name */
-    public int f905e;
+    public int f906e;
 
     /* renamed from: i  reason: collision with root package name */
-    public int f906i;
+    public int f907i;
 
     /* renamed from: o  reason: collision with root package name */
-    public int f907o;
+    public int f908o;
 
     /* renamed from: p  reason: collision with root package name */
-    public int f908p;
+    public int f909p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Parcelable.Creator {
@@ -42,11 +42,11 @@ public class ParcelableVolumeInfo implements Parcelable {
     }
 
     public ParcelableVolumeInfo(Parcel parcel) {
-        this.f904d = parcel.readInt();
-        this.f906i = parcel.readInt();
-        this.f907o = parcel.readInt();
-        this.f908p = parcel.readInt();
-        this.f905e = parcel.readInt();
+        this.f905d = parcel.readInt();
+        this.f907i = parcel.readInt();
+        this.f908o = parcel.readInt();
+        this.f909p = parcel.readInt();
+        this.f906e = parcel.readInt();
     }
 
     @Override // android.os.Parcelable
@@ -56,10 +56,10 @@ public class ParcelableVolumeInfo implements Parcelable {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeInt(this.f904d);
-        parcel.writeInt(this.f906i);
-        parcel.writeInt(this.f907o);
-        parcel.writeInt(this.f908p);
-        parcel.writeInt(this.f905e);
+        parcel.writeInt(this.f905d);
+        parcel.writeInt(this.f907i);
+        parcel.writeInt(this.f908o);
+        parcel.writeInt(this.f909p);
+        parcel.writeInt(this.f906e);
     }
 }

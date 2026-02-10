@@ -5,59 +5,59 @@ import com.google.android.exoplayer2.Timeline;
 public abstract class l extends Timeline {
 
     /* renamed from: q  reason: collision with root package name */
-    protected final Timeline f47919q;
+    protected final Timeline f46373q;
 
     public l(Timeline timeline) {
-        this.f47919q = timeline;
+        this.f46373q = timeline;
     }
 
     @Override // com.google.android.exoplayer2.Timeline
     public int e(boolean z10) {
-        return this.f47919q.e(z10);
+        return this.f46373q.e(z10);
     }
 
     @Override // com.google.android.exoplayer2.Timeline
     public int f(Object obj) {
-        return this.f47919q.f(obj);
+        return this.f46373q.f(obj);
     }
 
     @Override // com.google.android.exoplayer2.Timeline
     public int g(boolean z10) {
-        return this.f47919q.g(z10);
+        return this.f46373q.g(z10);
     }
 
     @Override // com.google.android.exoplayer2.Timeline
     public int i(int i10, int i11, boolean z10) {
-        return this.f47919q.i(i10, i11, z10);
+        return this.f46373q.i(i10, i11, z10);
     }
 
     @Override // com.google.android.exoplayer2.Timeline
     public Timeline.b k(int i10, Timeline.b bVar, boolean z10) {
-        return this.f47919q.k(i10, bVar, z10);
+        return this.f46373q.k(i10, bVar, z10);
     }
 
     @Override // com.google.android.exoplayer2.Timeline
     public int m() {
-        return this.f47919q.m();
+        return this.f46373q.m();
     }
 
     @Override // com.google.android.exoplayer2.Timeline
     public int p(int i10, int i11, boolean z10) {
-        return this.f47919q.p(i10, i11, z10);
+        return this.f46373q.p(i10, i11, z10);
     }
 
     @Override // com.google.android.exoplayer2.Timeline
     public Object q(int i10) {
-        return this.f47919q.q(i10);
+        return this.f46373q.q(i10);
     }
 
     @Override // com.google.android.exoplayer2.Timeline
     public Timeline.d s(int i10, Timeline.d dVar, long j10) {
-        return this.f47919q.s(i10, dVar, j10);
+        return this.f46373q.s(i10, dVar, j10);
     }
 
     @Override // com.google.android.exoplayer2.Timeline
     public int t() {
-        return this.f47919q.t();
+        return this.f46373q.t();
     }
 }

@@ -3,8 +3,8 @@ package androidx.activity;
 public abstract class a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f979a = 2131362878;
+    public static int f980a = 2131362889;
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f980b = 2131363248;
+    public static int f981b = 2131363262;
 }

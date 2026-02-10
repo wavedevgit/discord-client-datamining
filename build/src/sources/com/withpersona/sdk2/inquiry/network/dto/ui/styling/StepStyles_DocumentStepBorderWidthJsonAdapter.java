@@ -46,7 +46,7 @@ public final class StepStyles_DocumentStepBorderWidthJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 measurementSet = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
@@ -60,7 +60,7 @@ public final class StepStyles_DocumentStepBorderWidthJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.DocumentStepBorderWidth documentStepBorderWidth) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStepBorderWidth != null) {
-            writer.k();
+            writer.i();
             writer.J("imagePreview");
             this.nullableMeasurementSetAdapter.toJson(writer, documentStepBorderWidth.getImagePreview());
             writer.s();

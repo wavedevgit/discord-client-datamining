@@ -7,23 +7,23 @@ import org.jetbrains.annotations.NotNull;
 public final class NullabilityQualifierWithMigrationStatus {
 
     /* renamed from: a  reason: collision with root package name */
-    private final NullabilityQualifier f32827a;
+    private final NullabilityQualifier f33049a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f32828b;
+    private final boolean f33050b;
 
     public NullabilityQualifierWithMigrationStatus(@NotNull NullabilityQualifier qualifier, boolean z10) {
         Intrinsics.checkNotNullParameter(qualifier, "qualifier");
-        this.f32827a = qualifier;
-        this.f32828b = z10;
+        this.f33049a = qualifier;
+        this.f33050b = z10;
     }
 
     public static /* synthetic */ NullabilityQualifierWithMigrationStatus copy$default(NullabilityQualifierWithMigrationStatus nullabilityQualifierWithMigrationStatus, NullabilityQualifier nullabilityQualifier, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            nullabilityQualifier = nullabilityQualifierWithMigrationStatus.f32827a;
+            nullabilityQualifier = nullabilityQualifierWithMigrationStatus.f33049a;
         }
         if ((i10 & 2) != 0) {
-            z10 = nullabilityQualifierWithMigrationStatus.f32828b;
+            z10 = nullabilityQualifierWithMigrationStatus.f33050b;
         }
         return nullabilityQualifierWithMigrationStatus.copy(nullabilityQualifier, z10);
     }
@@ -40,27 +40,27 @@ public final class NullabilityQualifierWithMigrationStatus {
         }
         if (obj instanceof NullabilityQualifierWithMigrationStatus) {
             NullabilityQualifierWithMigrationStatus nullabilityQualifierWithMigrationStatus = (NullabilityQualifierWithMigrationStatus) obj;
-            return this.f32827a == nullabilityQualifierWithMigrationStatus.f32827a && this.f32828b == nullabilityQualifierWithMigrationStatus.f32828b;
+            return this.f33049a == nullabilityQualifierWithMigrationStatus.f33049a && this.f33050b == nullabilityQualifierWithMigrationStatus.f33050b;
         }
         return false;
     }
 
     @NotNull
     public final NullabilityQualifier getQualifier() {
-        return this.f32827a;
+        return this.f33049a;
     }
 
     public int hashCode() {
-        return (this.f32827a.hashCode() * 31) + Boolean.hashCode(this.f32828b);
+        return (this.f33049a.hashCode() * 31) + Boolean.hashCode(this.f33050b);
     }
 
     public final boolean isForWarningOnly() {
-        return this.f32828b;
+        return this.f33050b;
     }
 
     @NotNull
     public String toString() {
-        return "NullabilityQualifierWithMigrationStatus(qualifier=" + this.f32827a + ", isForWarningOnly=" + this.f32828b + ')';
+        return "NullabilityQualifierWithMigrationStatus(qualifier=" + this.f33049a + ", isForWarningOnly=" + this.f33050b + ')';
     }
 
     public /* synthetic */ NullabilityQualifierWithMigrationStatus(NullabilityQualifier nullabilityQualifier, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {

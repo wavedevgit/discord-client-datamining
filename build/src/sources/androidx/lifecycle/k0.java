@@ -13,17 +13,17 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class k0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f4654a = CollectionsKt.o(Application.class, b0.class);
+    private static final List f4664a = CollectionsKt.o(Application.class, b0.class);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final List f4655b = CollectionsKt.e(b0.class);
+    private static final List f4665b = CollectionsKt.e(b0.class);
 
     public static final /* synthetic */ List a() {
-        return f4654a;
+        return f4664a;
     }
 
     public static final /* synthetic */ List b() {
-        return f4655b;
+        return f4665b;
     }
 
     public static final Constructor c(Class modelClass, List signature) {

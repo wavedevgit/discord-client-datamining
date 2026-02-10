@@ -1,14 +1,14 @@
 package rg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class pa implements zi.d {
+final class pa implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final pa f48606a = new pa();
+    static final pa f47060a = new pa();
 
     static {
-        c.b a10 = zi.c.a("shadowRemovalType");
+        c.b a10 = bj.c.a("shadowRemovalType");
         v1 v1Var = new v1();
         v1Var.a(1);
         a10.b(v1Var.b()).a();
@@ -17,10 +17,10 @@ final class pa implements zi.d {
     private pa() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

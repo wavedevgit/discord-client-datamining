@@ -1,48 +1,143 @@
 package wl;
 
+import android.content.Context;
+import android.media.MediaCodec;
 import android.media.MediaFormat;
+import android.media.MediaMuxer;
+import android.net.Uri;
+import android.os.Build;
+import android.os.ParcelFileDescriptor;
 import android.util.Log;
-import org.webrtc.MediaStreamTrack;
-import pl.e;
-import ul.f;
-import vl.i;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.util.LinkedList;
+import rl.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class d {
+public class d implements f {
+
+    /* renamed from: i  reason: collision with root package name */
+    private static final String f52902i = "d";
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f53802a = "d";
+    LinkedList f52903a;
 
-    public c a(int i10, int i11, ul.e eVar, ol.a aVar, i iVar, ol.b bVar, f fVar, MediaFormat mediaFormat) {
-        if (mediaFormat == null) {
-            return new b(eVar, i10, fVar, i11);
-        }
-        String string = mediaFormat.getString("mime");
-        if (string != null) {
-            if (string.startsWith(MediaStreamTrack.VIDEO_TRACK_KIND) || string.startsWith(MediaStreamTrack.AUDIO_TRACK_KIND)) {
-                if (aVar != null) {
-                    if (bVar == null) {
-                        throw new pl.e(e.a.ENCODER_NOT_PROVIDED, mediaFormat, null, null);
-                    }
+    /* renamed from: b  reason: collision with root package name */
+    boolean f52904b;
+
+    /* renamed from: c  reason: collision with root package name */
+    MediaMuxer f52905c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private MediaFormat[] f52906d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private ParcelFileDescriptor f52907e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private String f52908f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private int f52909g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private int f52910h;
+
+    public d(Context context, Uri uri, int i10, int i11, int i12) {
+        MediaMuxer mediaMuxer;
+        try {
+            if (Build.VERSION.SDK_INT >= 26) {
+                ParcelFileDescriptor openFileDescriptor = context.getContentResolver().openFileDescriptor(uri, "rwt");
+                this.f52907e = openFileDescriptor;
+                if (openFileDescriptor != null) {
+                    c.a();
+                    mediaMuxer = b.a(this.f52907e.getFileDescriptor(), i12);
                 } else {
-                    throw new pl.e(e.a.DECODER_NOT_PROVIDED, mediaFormat, null, null);
+                    throw new IOException("Inaccessible URI " + uri);
                 }
-            }
-            if (string.startsWith(MediaStreamTrack.VIDEO_TRACK_KIND)) {
-                if (iVar != null) {
-                    return new e(eVar, i10, fVar, i11, mediaFormat, iVar, aVar, bVar);
-                }
-                throw new pl.e(e.a.RENDERER_NOT_PROVIDED, mediaFormat, null, null);
-            } else if (string.startsWith(MediaStreamTrack.AUDIO_TRACK_KIND)) {
-                if (iVar == null) {
-                    iVar = new vl.c(bVar);
-                }
-                return new a(eVar, i10, fVar, i11, mediaFormat, iVar, aVar, bVar);
+            } else if ("file".equalsIgnoreCase(uri.getScheme()) && uri.getPath() != null) {
+                mediaMuxer = new MediaMuxer(uri.getPath(), i12);
             } else {
-                String str = f53802a;
-                Log.i(str, "Unsupported track mime type: " + string + ", will use passthrough transcoder");
-                return new b(eVar, i10, fVar, i11);
+                throw new rl.c(c.a.UNSUPPORTED_URI_TYPE, uri, i12, new Throwable());
+            }
+            d(mediaMuxer, i10, i11);
+        } catch (IOException e10) {
+            e();
+            throw new rl.c(c.a.IO_FAILUE, uri, i12, e10);
+        } catch (IllegalArgumentException e11) {
+            throw new rl.c(c.a.INVALID_PARAMS, uri, i12, e11);
+        }
+    }
+
+    private void d(MediaMuxer mediaMuxer, int i10, int i11) {
+        this.f52910h = i10;
+        this.f52905c = mediaMuxer;
+        mediaMuxer.setOrientationHint(i11);
+        this.f52909g = 0;
+        this.f52904b = false;
+        this.f52903a = new LinkedList();
+        this.f52906d = new MediaFormat[i10];
+    }
+
+    private void e() {
+        try {
+            ParcelFileDescriptor parcelFileDescriptor = this.f52907e;
+            if (parcelFileDescriptor != null) {
+                parcelFileDescriptor.close();
+                this.f52907e = null;
+            }
+        } catch (IOException unused) {
+        }
+    }
+
+    @Override // wl.f
+    public String a() {
+        String str = this.f52908f;
+        if (str != null) {
+            return str;
+        }
+        return "";
+    }
+
+    @Override // wl.f
+    public void b(int i10, ByteBuffer byteBuffer, MediaCodec.BufferInfo bufferInfo) {
+        if (this.f52904b) {
+            if (byteBuffer == null) {
+                Log.e(f52902i, "Trying to write a null buffer, skipping");
+                return;
+            } else {
+                this.f52905c.writeSampleData(i10, byteBuffer, bufferInfo);
+                return;
             }
         }
-        throw new pl.e(e.a.SOURCE_TRACK_MIME_TYPE_NOT_FOUND, mediaFormat, null, null);
+        this.f52903a.addLast(new g(i10, byteBuffer, bufferInfo));
+    }
+
+    @Override // wl.f
+    public int c(MediaFormat mediaFormat, int i10) {
+        this.f52906d[i10] = mediaFormat;
+        int i11 = this.f52909g + 1;
+        this.f52909g = i11;
+        if (i11 == this.f52910h) {
+            Log.d(f52902i, "All tracks added, starting MediaMuxer, writing out " + this.f52903a.size() + " queued samples");
+            for (MediaFormat mediaFormat2 : this.f52906d) {
+                this.f52905c.addTrack(mediaFormat2);
+            }
+            this.f52905c.start();
+            this.f52904b = true;
+            while (!this.f52903a.isEmpty()) {
+                g gVar = (g) this.f52903a.removeFirst();
+                this.f52905c.writeSampleData(gVar.c(), gVar.a(), gVar.b());
+            }
+        }
+        return i10;
+    }
+
+    @Override // wl.f
+    public void release() {
+        try {
+            this.f52905c.release();
+        } finally {
+            e();
+        }
     }
 }

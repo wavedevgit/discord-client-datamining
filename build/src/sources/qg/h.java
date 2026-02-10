@@ -7,46 +7,46 @@ import java.util.Map;
 final class h implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    final Iterator f45830d;
+    final Iterator f44498d;
 
     /* renamed from: e  reason: collision with root package name */
-    Collection f45831e;
+    Collection f44499e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ i f45832i;
+    final /* synthetic */ i f44500i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(i iVar) {
-        this.f45832i = iVar;
-        this.f45830d = iVar.f45877i.entrySet().iterator();
+        this.f44500i = iVar;
+        this.f44498d = iVar.f44545i.entrySet().iterator();
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f45830d.hasNext();
+        return this.f44498d.hasNext();
     }
 
     @Override // java.util.Iterator
     public final /* bridge */ /* synthetic */ Object next() {
-        Map.Entry entry = (Map.Entry) this.f45830d.next();
-        this.f45831e = (Collection) entry.getValue();
-        i iVar = this.f45832i;
+        Map.Entry entry = (Map.Entry) this.f44498d.next();
+        this.f44499e = (Collection) entry.getValue();
+        i iVar = this.f44500i;
         Object key = entry.getKey();
-        return new l0(key, iVar.f45878o.h(key, (Collection) entry.getValue()));
+        return new l0(key, iVar.f44546o.h(key, (Collection) entry.getValue()));
     }
 
     @Override // java.util.Iterator
     public final void remove() {
         boolean z10;
-        if (this.f45831e != null) {
+        if (this.f44499e != null) {
             z10 = true;
         } else {
             z10 = false;
         }
         c.d(z10, "no calls to next() since the last call to remove()");
-        this.f45830d.remove();
-        q.l(this.f45832i.f45878o, this.f45831e.size());
-        this.f45831e.clear();
-        this.f45831e = null;
+        this.f44498d.remove();
+        q.l(this.f44500i.f44546o, this.f44499e.size());
+        this.f44499e.clear();
+        this.f44499e = null;
     }
 }

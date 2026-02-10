@@ -5,13 +5,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f56150a = new b();
+    public static final b f56189a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f56151b = new C0795b();
+    public static final a f56190b = new C0796b();
 
     /* renamed from: c  reason: collision with root package name */
-    private static c f56152c;
+    private static c f56191c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -19,7 +19,7 @@ public final class b {
 
     /* renamed from: za.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class C0795b implements a {
+    private static final class C0796b implements a {
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -36,20 +36,20 @@ public final class b {
 
     public static final void a(String name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        f56150a.c().a(name);
+        f56189a.c().a(name);
     }
 
     public static final void b() {
-        f56150a.c().b();
+        f56189a.c().b();
     }
 
     private final c c() {
         za.a aVar;
-        c cVar = f56152c;
+        c cVar = f56191c;
         if (cVar == null) {
             synchronized (b.class) {
                 aVar = new za.a();
-                f56152c = aVar;
+                f56191c = aVar;
             }
             return aVar;
         }
@@ -57,6 +57,6 @@ public final class b {
     }
 
     public static final boolean d() {
-        return f56150a.c().isTracing();
+        return f56189a.c().isTracing();
     }
 }

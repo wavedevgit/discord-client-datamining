@@ -1,43 +1,43 @@
 package qg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class d7 implements zi.d {
+final class d7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d7 f45599a = new d7();
+    static final d7 f44267a = new d7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f45600b;
+    private static final bj.c f44268b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f45601c;
+    private static final bj.c f44269c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f45602d;
+    private static final bj.c f44270d;
 
     static {
-        c.b a10 = zi.c.a("detectorMode");
+        c.b a10 = bj.c.a("detectorMode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f45600b = a10.b(s1Var.b()).a();
-        c.b a11 = zi.c.a("streamModeSmoothingRatio");
+        f44268b = a10.b(s1Var.b()).a();
+        c.b a11 = bj.c.a("streamModeSmoothingRatio");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f45601c = a11.b(s1Var2.b()).a();
-        c.b a12 = zi.c.a("rawSizeMaskEnabled");
+        f44269c = a11.b(s1Var2.b()).a();
+        c.b a12 = bj.c.a("rawSizeMaskEnabled");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f45602d = a12.b(s1Var3.b()).a();
+        f44270d = a12.b(s1Var3.b()).a();
     }
 
     private d7() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

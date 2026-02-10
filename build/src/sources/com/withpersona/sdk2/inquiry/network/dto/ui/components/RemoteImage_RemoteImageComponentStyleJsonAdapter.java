@@ -77,7 +77,7 @@ public final class RemoteImage_RemoteImageComponentStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -108,7 +108,7 @@ public final class RemoteImage_RemoteImageComponentStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, RemoteImage.RemoteImageComponentStyle remoteImageComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (remoteImageComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("height");
             this.nullableRemoteImageHeightStyleAdapter.toJson(writer, remoteImageComponentStyle.getHeight());
             writer.J("width");

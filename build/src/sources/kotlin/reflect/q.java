@@ -7,30 +7,30 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 /* JADX INFO: Access modifiers changed from: package-private */
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class q implements WildcardType, Type {
     @NotNull
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f34616i = new a(null);
+    public static final a f34838i = new a(null);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final q f34617o = new q(null, null);
+    private static final q f34839o = new q(null, null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Type f34618d;
+    private final Type f34840d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Type f34619e;
+    private final Type f34841e;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
         public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
         public final q a() {
-            return q.f34617o;
+            return q.f34839o;
         }
 
         private a() {
@@ -38,8 +38,8 @@ public final class q implements WildcardType, Type {
     }
 
     public q(Type type, Type type2) {
-        this.f34618d = type;
-        this.f34619e = type2;
+        this.f34840d = type;
+        this.f34841e = type2;
     }
 
     public boolean equals(Object obj) {
@@ -55,7 +55,7 @@ public final class q implements WildcardType, Type {
 
     @Override // java.lang.reflect.WildcardType
     public Type[] getLowerBounds() {
-        Type type = this.f34619e;
+        Type type = this.f34841e;
         return type == null ? new Type[0] : new Type[]{type};
     }
 
@@ -63,18 +63,18 @@ public final class q implements WildcardType, Type {
     public String getTypeName() {
         String h10;
         String h11;
-        if (this.f34619e != null) {
+        if (this.f34841e != null) {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("? super ");
-            h11 = p.h(this.f34619e);
+            h11 = p.h(this.f34841e);
             sb2.append(h11);
             return sb2.toString();
         }
-        Type type = this.f34618d;
+        Type type = this.f34840d;
         if (type != null && !Intrinsics.areEqual(type, Object.class)) {
             StringBuilder sb3 = new StringBuilder();
             sb3.append("? extends ");
-            h10 = p.h(this.f34618d);
+            h10 = p.h(this.f34840d);
             sb3.append(h10);
             return sb3.toString();
         }
@@ -83,7 +83,7 @@ public final class q implements WildcardType, Type {
 
     @Override // java.lang.reflect.WildcardType
     public Type[] getUpperBounds() {
-        Type type = this.f34618d;
+        Type type = this.f34840d;
         if (type == null) {
             type = Object.class;
         }

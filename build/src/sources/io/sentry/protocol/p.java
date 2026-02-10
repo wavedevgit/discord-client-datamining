@@ -11,22 +11,22 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class p implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28823d;
+    private String f29758d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f28824e;
+    private Map f29759e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Integer f28825i;
+    private Integer f29760i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Long f28826o;
+    private Long f29761o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Object f28827p;
+    private Object f29762p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f28828q;
+    private Map f29763q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -74,30 +74,30 @@ public final class p implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        pVar.f28825i = e3Var.g1();
+                        pVar.f29760i = e3Var.l1();
                         break;
                     case 1:
-                        pVar.f28827p = e3Var.T1();
+                        pVar.f29762p = e3Var.Z1();
                         break;
                     case 2:
-                        Map map = (Map) e3Var.T1();
+                        Map map = (Map) e3Var.Z1();
                         if (map == null) {
                             break;
                         } else {
-                            pVar.f28824e = io.sentry.util.c.b(map);
+                            pVar.f29759e = io.sentry.util.c.b(map);
                             break;
                         }
                     case 3:
-                        pVar.f28823d = e3Var.m1();
+                        pVar.f29758d = e3Var.r1();
                         break;
                     case 4:
-                        pVar.f28826o = e3Var.i1();
+                        pVar.f29761o = e3Var.n1();
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.p1(iLogger, concurrentHashMap, o02);
+                        e3Var.u1(iLogger, concurrentHashMap, o02);
                         break;
                 }
             }
@@ -111,31 +111,31 @@ public final class p implements w1 {
     }
 
     public void f(Map map) {
-        this.f28828q = map;
+        this.f29763q = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f28823d != null) {
-            f3Var.e("cookies").f(this.f28823d);
+        if (this.f29758d != null) {
+            f3Var.e("cookies").f(this.f29758d);
         }
-        if (this.f28824e != null) {
-            f3Var.e("headers").j(iLogger, this.f28824e);
+        if (this.f29759e != null) {
+            f3Var.e("headers").j(iLogger, this.f29759e);
         }
-        if (this.f28825i != null) {
-            f3Var.e("status_code").j(iLogger, this.f28825i);
+        if (this.f29760i != null) {
+            f3Var.e("status_code").j(iLogger, this.f29760i);
         }
-        if (this.f28826o != null) {
-            f3Var.e("body_size").j(iLogger, this.f28826o);
+        if (this.f29761o != null) {
+            f3Var.e("body_size").j(iLogger, this.f29761o);
         }
-        if (this.f28827p != null) {
-            f3Var.e("data").j(iLogger, this.f28827p);
+        if (this.f29762p != null) {
+            f3Var.e("data").j(iLogger, this.f29762p);
         }
-        Map map = this.f28828q;
+        Map map = this.f29763q;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28828q.get(str);
+                Object obj = this.f29763q.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -144,11 +144,11 @@ public final class p implements w1 {
     }
 
     public p(p pVar) {
-        this.f28823d = pVar.f28823d;
-        this.f28824e = io.sentry.util.c.b(pVar.f28824e);
-        this.f28828q = io.sentry.util.c.b(pVar.f28828q);
-        this.f28825i = pVar.f28825i;
-        this.f28826o = pVar.f28826o;
-        this.f28827p = pVar.f28827p;
+        this.f29758d = pVar.f29758d;
+        this.f29759e = io.sentry.util.c.b(pVar.f29759e);
+        this.f29763q = io.sentry.util.c.b(pVar.f29763q);
+        this.f29760i = pVar.f29760i;
+        this.f29761o = pVar.f29761o;
+        this.f29762p = pVar.f29762p;
     }
 }

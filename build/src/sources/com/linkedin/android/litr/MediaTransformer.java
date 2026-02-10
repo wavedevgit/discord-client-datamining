@@ -16,26 +16,26 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import org.webrtc.MediaStreamTrack;
-import pl.c;
-import ul.e;
-import xl.g;
+import rl.c;
+import wl.e;
+import zl.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class MediaTransformer {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String f17314e = "MediaTransformer";
+    private static final String f18063e = "MediaTransformer";
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f17315a;
+    private final Context f18064a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ExecutorService f17316b;
+    private final ExecutorService f18065b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Looper f17317c;
+    private final Looper f18066c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f17318d;
+    private final Map f18067d;
 
     public MediaTransformer(Context context) {
         this(context, Looper.getMainLooper(), Executors.newSingleThreadExecutor());
@@ -65,7 +65,7 @@ public class MediaTransformer {
                     i12 = 5;
                 }
                 createVideoFormat.setInteger("i-frame-interval", i12);
-                createVideoFormat.setInteger("frame-rate", xl.e.a(trackFormat, 30).intValue());
+                createVideoFormat.setInteger("frame-rate", zl.e.a(trackFormat, 30).intValue());
                 return createVideoFormat;
             } else if (str2.startsWith(MediaStreamTrack.AUDIO_TRACK_KIND)) {
                 if (d(eVar, i10, str)) {
@@ -190,7 +190,7 @@ public class MediaTransformer {
 
     private boolean g(String str, boolean z10, boolean z11) {
         if (str == null) {
-            Log.e(f17314e, "Mime type is null for track ");
+            Log.e(f18063e, "Mime type is null for track ");
             return false;
         } else if ((z10 && str.startsWith(MediaStreamTrack.AUDIO_TRACK_KIND)) || (z11 && !str.startsWith(MediaStreamTrack.VIDEO_TRACK_KIND) && !str.startsWith(MediaStreamTrack.AUDIO_TRACK_KIND))) {
             return false;
@@ -200,17 +200,17 @@ public class MediaTransformer {
     }
 
     public void a(String str) {
-        Future future = (Future) this.f17318d.get(str);
+        Future future = (Future) this.f18067d.get(str);
         if (future != null && !future.isCancelled() && !future.isDone()) {
             future.cancel(true);
         }
     }
 
     public void e() {
-        this.f17316b.shutdownNow();
+        this.f18065b.shutdownNow();
     }
 
-    public void h(String str, Uri uri, Uri uri2, MediaFormat mediaFormat, MediaFormat mediaFormat2, ml.a aVar, d dVar) {
+    public void h(String str, Uri uri, Uri uri2, MediaFormat mediaFormat, MediaFormat mediaFormat2, ol.a aVar, d dVar) {
         d dVar2;
         int i10;
         String str2;
@@ -220,10 +220,10 @@ public class MediaTransformer {
             dVar2 = dVar;
         }
         try {
-            ul.a aVar2 = new ul.a(this.f17315a, uri, dVar2.f17354d);
+            wl.a aVar2 = new wl.a(this.f18064a, uri, dVar2.f18103d);
             int i11 = 0;
             for (int i12 = 0; i12 < aVar2.getTrackCount(); i12++) {
-                if (f(aVar2.getTrackFormat(i12), dVar2.f17355e, dVar2.f17356f)) {
+                if (f(aVar2.getTrackFormat(i12), dVar2.f18104e, dVar2.f18105f)) {
                     i11++;
                 }
             }
@@ -233,7 +233,7 @@ public class MediaTransformer {
                 i10 = 0;
             }
             if (i11 > 0) {
-                ul.d dVar3 = new ul.d(this.f17315a, uri2, i11, aVar2.getOrientationHint(), i10);
+                wl.d dVar3 = new wl.d(this.f18064a, uri2, i11, aVar2.getOrientationHint(), i10);
                 int trackCount = aVar2.getTrackCount();
                 ArrayList arrayList = new ArrayList(trackCount);
                 for (int i13 = 0; i13 < trackCount; i13++) {
@@ -243,31 +243,31 @@ public class MediaTransformer {
                     } else {
                         str2 = null;
                     }
-                    if (g(str2, dVar2.f17355e, dVar2.f17356f)) {
-                        b.C0224b f10 = new b.C0224b(aVar2, i13, dVar3).f(arrayList.size());
+                    if (g(str2, dVar2.f18104e, dVar2.f18105f)) {
+                        b.C0205b f10 = new b.C0205b(aVar2, i13, dVar3).f(arrayList.size());
                         if (str2.startsWith(MediaStreamTrack.VIDEO_TRACK_KIND)) {
-                            f10.b(new ol.d()).d(new vl.g(dVar2.f17352b)).c(new ol.e()).e(mediaFormat);
+                            f10.b(new ql.d()).d(new xl.g(dVar2.f18101b)).c(new ql.e()).e(mediaFormat);
                         } else if (str2.startsWith(MediaStreamTrack.AUDIO_TRACK_KIND)) {
-                            ol.e eVar = new ol.e();
-                            f10.b(new ol.d()).c(eVar).d(new vl.c(eVar, dVar2.f17353c)).e(mediaFormat2);
+                            ql.e eVar = new ql.e();
+                            f10.b(new ql.d()).c(eVar).d(new xl.c(eVar, dVar2.f18102c)).e(mediaFormat2);
                         } else {
                             f10.e(null);
                         }
                         arrayList.add(f10.a());
                     }
                 }
-                i(str, arrayList, aVar, dVar2.f17351a);
+                i(str, arrayList, aVar, dVar2.f18100a);
                 return;
             }
-            throw new pl.c(c.a.NO_OUTPUT_TRACKS, uri2, i10, new IllegalArgumentException("No output tracks left"));
-        } catch (pl.b | pl.c e10) {
+            throw new rl.c(c.a.NO_OUTPUT_TRACKS, uri2, i10, new IllegalArgumentException("No output tracks left"));
+        } catch (rl.b | rl.c e10) {
             aVar.onError(str, e10, null);
         }
     }
 
-    public void i(String str, List list, ml.a aVar, int i10) {
+    public void i(String str, List list, ol.a aVar, int i10) {
         String str2;
-        if (!this.f17318d.containsKey(str)) {
+        if (!this.f18067d.containsKey(str)) {
             int size = list.size();
             int i11 = 0;
             while (true) {
@@ -292,19 +292,19 @@ public class MediaTransformer {
             for (int i12 = 0; i12 < size; i12++) {
                 b bVar2 = (b) list.get(i12);
                 if (bVar2.g() == null && ((bVar2.e() != null && bVar2.e().a()) || d(bVar2.c(), bVar2.f(), str2))) {
-                    list.set(i12, new b.C0224b(bVar2.c(), bVar2.f(), bVar2.d()).f(bVar2.h()).b(bVar2.a()).c(bVar2.b()).d(bVar2.e()).e(b(bVar2.c(), bVar2.f(), str2)).a());
+                    list.set(i12, new b.C0205b(bVar2.c(), bVar2.f(), bVar2.d()).f(bVar2.h()).b(bVar2.a()).c(bVar2.b()).d(bVar2.e()).e(b(bVar2.c(), bVar2.f(), str2)).a());
                 }
             }
-            this.f17318d.put(str, this.f17316b.submit(new c(str, list, i10, new a(this.f17318d, aVar, this.f17317c))));
+            this.f18067d.put(str, this.f18065b.submit(new c(str, list, i10, new a(this.f18067d, aVar, this.f18066c))));
             return;
         }
         throw new IllegalArgumentException("Request with id " + str + " already exists");
     }
 
     public MediaTransformer(Context context, Looper looper, ExecutorService executorService) {
-        this.f17315a = context.getApplicationContext();
-        this.f17318d = new HashMap(10);
-        this.f17317c = looper;
-        this.f17316b = executorService;
+        this.f18064a = context.getApplicationContext();
+        this.f18067d = new HashMap(10);
+        this.f18066c = looper;
+        this.f18065b = executorService;
     }
 }

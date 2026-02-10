@@ -1911,6 +1911,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14.CREATOR_STORE_PAGE_VIEWED = var1;
     var1 = 'creator_store_page_cta_clicked';
     var14.CREATOR_STORE_PAGE_CTA_CLICKED = var1;
+    var1 = 'seo_page_cwv_measured';
+    var14.SEO_PAGE_CWV_MEASURED = var1;
     var13 = {};
     var1 = 'mktg_ack_modal_open';
     var13.MKTG_ACKNOWLEDGEMENTS_MODAL_OPEN = var1;

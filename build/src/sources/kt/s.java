@@ -1,61 +1,96 @@
 package kt;
 
 import java.util.Iterator;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.CompositeEncoder;
-import kotlinx.serialization.encoding.Encoder;
-import kotlinx.serialization.encoding.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class s extends a {
+public final class s {
+
+    /* renamed from: b  reason: collision with root package name */
+    public static final a f35296b = new a(null);
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final s f35297c = new s(CollectionsKt.o("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"));
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final s f35298d = new s(CollectionsKt.o("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"));
 
     /* renamed from: a  reason: collision with root package name */
-    private final KSerializer f35212a;
+    private final List f35299a;
 
-    public /* synthetic */ s(KSerializer kSerializer, DefaultConstructorMarker defaultConstructorMarker) {
-        this(kSerializer);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final s a() {
+            return s.f35298d;
+        }
+
+        private a() {
+        }
     }
 
-    @Override // kt.a
-    protected final void g(kotlinx.serialization.encoding.c decoder, Object obj, int i10, int i11) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        if (i11 >= 0) {
-            for (int i12 = 0; i12 < i11; i12++) {
-                h(decoder, i10 + i12, obj, false);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final b f35300d = new b();
+
+        b() {
+            super(1, String.class, "toString", "toString()Ljava/lang/String;", 0);
+        }
+
+        @Override // kotlin.jvm.functions.Function1
+        public final String invoke(String p02) {
+            Intrinsics.checkNotNullParameter(p02, "p0");
+            return p02.toString();
+        }
+    }
+
+    public s(List names) {
+        Intrinsics.checkNotNullParameter(names, "names");
+        this.f35299a = names;
+        if (names.size() == 7) {
+            Iterator it = CollectionsKt.m(names).iterator();
+            while (it.hasNext()) {
+                int nextInt = ((kotlin.collections.m0) it).nextInt();
+                if (((CharSequence) this.f35299a.get(nextInt)).length() > 0) {
+                    for (int i10 = 0; i10 < nextInt; i10++) {
+                        if (Intrinsics.areEqual(this.f35299a.get(nextInt), this.f35299a.get(i10))) {
+                            throw new IllegalArgumentException(("Day-of-week names must be unique, but '" + ((String) this.f35299a.get(nextInt)) + "' was repeated").toString());
+                        }
+                    }
+                } else {
+                    throw new IllegalArgumentException("A day-of-week name can not be empty");
+                }
             }
             return;
         }
-        throw new IllegalArgumentException("Size must be known in advance when using READ_ALL");
+        throw new IllegalArgumentException("Day of week names must contain exactly 7 elements");
     }
 
-    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
-    public abstract SerialDescriptor getDescriptor();
-
-    @Override // kt.a
-    protected void h(kotlinx.serialization.encoding.c decoder, int i10, Object obj, boolean z10) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        n(obj, i10, c.a.c(decoder, getDescriptor(), i10, this.f35212a, null, 8, null));
+    public final List b() {
+        return this.f35299a;
     }
 
-    protected abstract void n(Object obj, int i10, Object obj2);
-
-    @Override // gt.o
-    public void serialize(Encoder encoder, Object obj) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        int e10 = e(obj);
-        SerialDescriptor descriptor = getDescriptor();
-        CompositeEncoder j10 = encoder.j(descriptor, e10);
-        Iterator d10 = d(obj);
-        for (int i10 = 0; i10 < e10; i10++) {
-            j10.F(getDescriptor(), i10, this.f35212a, d10.next());
+    public boolean equals(Object obj) {
+        if ((obj instanceof s) && Intrinsics.areEqual(this.f35299a, ((s) obj).f35299a)) {
+            return true;
         }
-        j10.c(descriptor);
+        return false;
     }
 
-    private s(KSerializer kSerializer) {
-        super(null);
-        this.f35212a = kSerializer;
+    public int hashCode() {
+        return this.f35299a.hashCode();
+    }
+
+    public String toString() {
+        return CollectionsKt.x0(this.f35299a, ", ", "DayOfWeekNames(", ")", 0, null, b.f35300d, 24, null);
     }
 }

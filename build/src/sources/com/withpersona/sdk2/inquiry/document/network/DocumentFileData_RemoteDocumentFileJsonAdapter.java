@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class DocumentFileData_RemoteDocumentFileJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18638a;
+    private final m.b f19518a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18639b;
+    private final h f19519b;
 
     public DocumentFileData_RemoteDocumentFileJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("url", "filename");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18638a = a10;
+        this.f19518a = a10;
         h f10 = moshi.f(String.class, x0.d(), "url");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18639b = f10;
+        this.f19519b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,20 +37,20 @@ public final class DocumentFileData_RemoteDocumentFileJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18638a);
+            int J = reader.J(this.f19518a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str2 = (String) this.f18639b.fromJson(reader)) == null) {
-                        throw bn.c.x("filename", "filename", reader);
+                    if (J == 1 && (str2 = (String) this.f19519b.fromJson(reader)) == null) {
+                        throw dn.c.x("filename", "filename", reader);
                     }
                 } else {
-                    str = (String) this.f18639b.fromJson(reader);
+                    str = (String) this.f19519b.fromJson(reader);
                     if (str == null) {
-                        throw bn.c.x("url", "url", reader);
+                        throw dn.c.x("url", "url", reader);
                     }
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -59,9 +59,9 @@ public final class DocumentFileData_RemoteDocumentFileJsonAdapter extends h {
             if (str2 != null) {
                 return new DocumentFileData.RemoteDocumentFile(str, str2);
             }
-            throw bn.c.o("filename", "filename", reader);
+            throw dn.c.o("filename", "filename", reader);
         }
-        throw bn.c.o("url", "url", reader);
+        throw dn.c.o("url", "url", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -69,11 +69,11 @@ public final class DocumentFileData_RemoteDocumentFileJsonAdapter extends h {
     public void toJson(t writer, DocumentFileData.RemoteDocumentFile remoteDocumentFile) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (remoteDocumentFile != null) {
-            writer.k();
+            writer.i();
             writer.J("url");
-            this.f18639b.toJson(writer, remoteDocumentFile.b());
+            this.f19519b.toJson(writer, remoteDocumentFile.b());
             writer.J("filename");
-            this.f18639b.toJson(writer, remoteDocumentFile.a());
+            this.f19519b.toJson(writer, remoteDocumentFile.a());
             writer.s();
             return;
         }

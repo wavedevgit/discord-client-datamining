@@ -59,12 +59,12 @@ public final class CheckInquiryResponseJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 data = (CheckInquiryResponse.Data) this.dataAdapter.fromJson(reader);
                 if (data == null) {
-                    throw bn.c.x("data_", "data", reader);
+                    throw dn.c.x("data_", "data", reader);
                 }
             } else if (J == 1) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -76,14 +76,14 @@ public final class CheckInquiryResponseJsonAdapter extends h {
         if (data != null) {
             return new CheckInquiryResponse(data, str, list);
         }
-        throw bn.c.o("data_", "data", reader);
+        throw dn.c.o("data_", "data", reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, CheckInquiryResponse checkInquiryResponse) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkInquiryResponse != null) {
-            writer.k();
+            writer.i();
             writer.J("data");
             this.dataAdapter.toJson(writer, checkInquiryResponse.getData());
             writer.J("token");

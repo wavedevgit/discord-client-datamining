@@ -14,10 +14,10 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class b implements ViewTreeObserver.OnPreDrawListener {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f4759d = new a(null);
+    public static final a f4769d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Field f4760e;
+    private static final Field f4770e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -26,13 +26,13 @@ public abstract class b implements ViewTreeObserver.OnPreDrawListener {
         }
 
         public final Field a() {
-            return b.f4760e;
+            return b.f4770e;
         }
 
         public final long b(View view) {
             Context context;
             float f10;
-            f.a aVar = f.f4778b;
+            f.a aVar = f.f4788b;
             if (aVar.a() < 0) {
                 Window window = null;
                 if (view != null) {
@@ -66,7 +66,7 @@ public abstract class b implements ViewTreeObserver.OnPreDrawListener {
     static {
         Field declaredField = Choreographer.class.getDeclaredField("mLastFrameTimeNanos");
         Intrinsics.checkNotNullExpressionValue(declaredField, "Choreographer::class.jav…ld(\"mLastFrameTimeNanos\")");
-        f4760e = declaredField;
+        f4770e = declaredField;
         declaredField.setAccessible(true);
     }
 }

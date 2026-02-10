@@ -1,39 +1,68 @@
 package zv;
 
-import java.util.Locale;
-import kotlin.jvm.internal.Intrinsics;
-import zv.o;
+import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements tu.b, o {
+public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f56709a = new b();
+    private static final Map f57219a = b();
 
-    private b() {
-    }
+    /* renamed from: b  reason: collision with root package name */
+    private static final Pattern f57220b = Pattern.compile("^&#[Xx]?");
 
-    public String a(Object obj) {
-        return o.a.a(this, obj);
-    }
-
-    @Override // tu.b
-    public Object f(Object obj, Object obj2) {
-        String a10 = a(obj);
-        if (a10 != null) {
-            if (a10.length() > 0) {
-                StringBuilder sb2 = new StringBuilder();
-                String valueOf = String.valueOf(a10.charAt(0));
-                Intrinsics.checkNotNull(valueOf, "null cannot be cast to non-null type java.lang.String");
-                String upperCase = valueOf.toUpperCase(Locale.ROOT);
-                Intrinsics.checkNotNullExpressionValue(upperCase, "this as java.lang.String).toUpperCase(Locale.ROOT)");
-                sb2.append((Object) upperCase);
-                String substring = a10.substring(1);
-                Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String).substring(startIndex)");
-                sb2.append(substring);
-                return sb2.toString();
+    public static String a(String str) {
+        int i10;
+        Matcher matcher = f57220b.matcher(str);
+        if (matcher.find()) {
+            if (matcher.end() == 2) {
+                i10 = 10;
+            } else {
+                i10 = 16;
             }
-            return a10;
+            try {
+                int parseInt = Integer.parseInt(str.substring(matcher.end(), str.length() - 1), i10);
+                if (parseInt == 0) {
+                    return "�";
+                }
+                return new String(Character.toChars(parseInt));
+            } catch (IllegalArgumentException unused) {
+                return "�";
+            }
         }
-        return null;
+        String str2 = (String) f57219a.get(str.substring(1, str.length() - 1));
+        if (str2 != null) {
+            return str2;
+        }
+        return str;
+    }
+
+    private static Map b() {
+        HashMap hashMap = new HashMap();
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(b.class.getResourceAsStream("/org/commonmark/internal/util/entities.properties"), Charset.forName("UTF-8")));
+            while (true) {
+                String readLine = bufferedReader.readLine();
+                if (readLine != null) {
+                    if (readLine.length() != 0) {
+                        int indexOf = readLine.indexOf("=");
+                        hashMap.put(readLine.substring(0, indexOf), readLine.substring(indexOf + 1));
+                    }
+                } else {
+                    bufferedReader.close();
+                    hashMap.put("NewLine", ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
+                    return hashMap;
+                }
+            }
+        } catch (IOException e10) {
+            throw new IllegalStateException("Failed reading data for HTML named character references", e10);
+        }
     }
 }

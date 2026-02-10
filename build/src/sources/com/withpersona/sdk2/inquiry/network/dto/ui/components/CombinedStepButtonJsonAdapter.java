@@ -1,6 +1,5 @@
 package com.withpersona.sdk2.inquiry.network.dto.ui.components;
 
-import bn.c;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.squareup.moshi.h;
 import com.squareup.moshi.m;
@@ -8,6 +7,7 @@ import com.squareup.moshi.t;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.dto.ui.BasicButtonAttributes;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.ButtonCombinedStepComponentStyle;
+import dn.c;
 import java.lang.reflect.Constructor;
 import kotlin.Metadata;
 import kotlin.collections.x0;
@@ -63,7 +63,7 @@ public final class CombinedStepButtonJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
@@ -86,7 +86,7 @@ public final class CombinedStepButtonJsonAdapter extends h {
         }
         Constructor<CombinedStepButton> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = CombinedStepButton.class.getDeclaredConstructor(String.class, BasicButtonAttributes.class, ButtonCombinedStepComponentStyle.class, Integer.TYPE, c.f7152c);
+            constructor = CombinedStepButton.class.getDeclaredConstructor(String.class, BasicButtonAttributes.class, ButtonCombinedStepComponentStyle.class, Integer.TYPE, c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -102,7 +102,7 @@ public final class CombinedStepButtonJsonAdapter extends h {
     public void toJson(@NotNull t writer, CombinedStepButton combinedStepButton) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (combinedStepButton != null) {
-            writer.k();
+            writer.i();
             writer.J(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(writer, combinedStepButton.getName());
             writer.J("attributes");

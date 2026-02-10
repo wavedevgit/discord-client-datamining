@@ -7,24 +7,24 @@ import java.security.NoSuchAlgorithmException;
 final class p2 extends f2 implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final MessageDigest f14183d;
+    private final MessageDigest f14760d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f14184e;
+    private final int f14761e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f14185i;
+    private final boolean f14762i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f14186o;
+    private final String f14763o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p2(String str, String str2) {
         MessageDigest a10 = a("SHA-256");
-        this.f14183d = a10;
-        this.f14184e = a10.getDigestLength();
-        this.f14186o = "Hashing.sha256()";
-        this.f14185i = b(a10);
+        this.f14760d = a10;
+        this.f14761e = a10.getDigestLength();
+        this.f14763o = "Hashing.sha256()";
+        this.f14762i = b(a10);
     }
 
     private static MessageDigest a(String str) {
@@ -45,17 +45,17 @@ final class p2 extends f2 implements Serializable {
     }
 
     public final String toString() {
-        return this.f14186o;
+        return this.f14763o;
     }
 
     @Override // com.google.android.gms.internal.fido.j2
     public final k2 zza() {
-        if (this.f14185i) {
+        if (this.f14762i) {
             try {
-                return new n2((MessageDigest) this.f14183d.clone(), this.f14184e, null);
+                return new n2((MessageDigest) this.f14760d.clone(), this.f14761e, null);
             } catch (CloneNotSupportedException unused) {
             }
         }
-        return new n2(a(this.f14183d.getAlgorithm()), this.f14184e, null);
+        return new n2(a(this.f14760d.getAlgorithm()), this.f14761e, null);
     }
 }

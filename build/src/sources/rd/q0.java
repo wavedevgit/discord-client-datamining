@@ -18,71 +18,71 @@ import rd.y;
 public final class q0 implements p, j.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.a f47988d;
+    private final com.google.android.exoplayer2.upstream.a f46442d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final DataSource.Factory f47989e;
+    private final DataSource.Factory f46443e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final me.c0 f47990i;
+    private final me.c0 f46444i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.i f47991o;
+    private final com.google.android.exoplayer2.upstream.i f46445o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final y.a f47992p;
+    private final y.a f46446p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final w0 f47993q;
+    private final w0 f46447q;
 
     /* renamed from: s  reason: collision with root package name */
-    private final long f47995s;
+    private final long f46449s;
 
     /* renamed from: u  reason: collision with root package name */
-    final Format f47997u;
+    final Format f46451u;
 
     /* renamed from: v  reason: collision with root package name */
-    final boolean f47998v;
+    final boolean f46452v;
 
     /* renamed from: w  reason: collision with root package name */
-    boolean f47999w;
+    boolean f46453w;
 
     /* renamed from: x  reason: collision with root package name */
-    byte[] f48000x;
+    byte[] f46454x;
 
     /* renamed from: y  reason: collision with root package name */
-    int f48001y;
+    int f46455y;
 
     /* renamed from: r  reason: collision with root package name */
-    private final ArrayList f47994r = new ArrayList();
+    private final ArrayList f46448r = new ArrayList();
 
     /* renamed from: t  reason: collision with root package name */
-    final com.google.android.exoplayer2.upstream.j f47996t = new com.google.android.exoplayer2.upstream.j("SingleSampleMediaPeriod");
+    final com.google.android.exoplayer2.upstream.j f46450t = new com.google.android.exoplayer2.upstream.j("SingleSampleMediaPeriod");
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private final class b implements m0 {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f48002d;
+        private int f46456d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f48003e;
+        private boolean f46457e;
 
         private b() {
         }
 
         private void b() {
-            if (!this.f48003e) {
-                q0.this.f47992p.h(oe.c0.k(q0.this.f47997u.f11727w), q0.this.f47997u, 0, null, 0L);
-                this.f48003e = true;
+            if (!this.f46457e) {
+                q0.this.f46446p.h(oe.c0.k(q0.this.f46451u.f12304w), q0.this.f46451u, 0, null, 0L);
+                this.f46457e = true;
             }
         }
 
         @Override // rd.m0
         public void a() {
             q0 q0Var = q0.this;
-            if (!q0Var.f47998v) {
-                q0Var.f47996t.a();
+            if (!q0Var.f46452v) {
+                q0Var.f46450t.a();
             }
         }
 
@@ -90,11 +90,11 @@ public final class q0 implements p, j.b {
         public int c(mc.x xVar, rc.f fVar, int i10) {
             b();
             q0 q0Var = q0.this;
-            boolean z10 = q0Var.f47999w;
-            if (z10 && q0Var.f48000x == null) {
-                this.f48002d = 2;
+            boolean z10 = q0Var.f46453w;
+            if (z10 && q0Var.f46454x == null) {
+                this.f46456d = 2;
             }
-            int i11 = this.f48002d;
+            int i11 = this.f46456d;
             if (i11 == 2) {
                 fVar.g(4);
                 return -4;
@@ -102,42 +102,42 @@ public final class q0 implements p, j.b {
                 if (!z10) {
                     return -3;
                 }
-                oe.a.e(q0Var.f48000x);
+                oe.a.e(q0Var.f46454x);
                 fVar.g(1);
-                fVar.f47777p = 0L;
+                fVar.f46231p = 0L;
                 if ((i10 & 4) == 0) {
-                    fVar.u(q0.this.f48001y);
-                    ByteBuffer byteBuffer = fVar.f47775i;
+                    fVar.u(q0.this.f46455y);
+                    ByteBuffer byteBuffer = fVar.f46229i;
                     q0 q0Var2 = q0.this;
-                    byteBuffer.put(q0Var2.f48000x, 0, q0Var2.f48001y);
+                    byteBuffer.put(q0Var2.f46454x, 0, q0Var2.f46455y);
                 }
                 if ((i10 & 1) == 0) {
-                    this.f48002d = 2;
+                    this.f46456d = 2;
                 }
                 return -4;
             } else {
-                xVar.f36907b = q0Var.f47997u;
-                this.f48002d = 1;
+                xVar.f36282b = q0Var.f46451u;
+                this.f46456d = 1;
                 return -5;
             }
         }
 
         public void d() {
-            if (this.f48002d == 2) {
-                this.f48002d = 1;
+            if (this.f46456d == 2) {
+                this.f46456d = 1;
             }
         }
 
         @Override // rd.m0
         public boolean isReady() {
-            return q0.this.f47999w;
+            return q0.this.f46453w;
         }
 
         @Override // rd.m0
         public int j(long j10) {
             b();
-            if (j10 > 0 && this.f48002d != 2) {
-                this.f48002d = 2;
+            if (j10 > 0 && this.f46456d != 2) {
+                this.f46456d = 2;
                 return 1;
             }
             return 0;
@@ -145,20 +145,20 @@ public final class q0 implements p, j.b {
     }
 
     public q0(com.google.android.exoplayer2.upstream.a aVar, DataSource.Factory factory, me.c0 c0Var, Format format, long j10, com.google.android.exoplayer2.upstream.i iVar, y.a aVar2, boolean z10) {
-        this.f47988d = aVar;
-        this.f47989e = factory;
-        this.f47990i = c0Var;
-        this.f47997u = format;
-        this.f47995s = j10;
-        this.f47991o = iVar;
-        this.f47992p = aVar2;
-        this.f47998v = z10;
-        this.f47993q = new w0(new u0(format));
+        this.f46442d = aVar;
+        this.f46443e = factory;
+        this.f46444i = c0Var;
+        this.f46451u = format;
+        this.f46449s = j10;
+        this.f46445o = iVar;
+        this.f46446p = aVar2;
+        this.f46452v = z10;
+        this.f46447q = new w0(new u0(format));
     }
 
     @Override // rd.p, rd.n0
     public long b() {
-        if (!this.f47999w && !this.f47996t.j()) {
+        if (!this.f46453w && !this.f46450t.j()) {
             return 0L;
         }
         return Long.MIN_VALUE;
@@ -167,27 +167,27 @@ public final class q0 implements p, j.b {
     @Override // com.google.android.exoplayer2.upstream.j.b
     /* renamed from: c */
     public void i(c cVar, long j10, long j11, boolean z10) {
-        me.a0 a0Var = cVar.f48007c;
-        LoadEventInfo loadEventInfo = new LoadEventInfo(cVar.f48005a, cVar.f48006b, a0Var.p(), a0Var.q(), j10, j11, a0Var.o());
-        this.f47991o.d(cVar.f48005a);
-        this.f47992p.k(loadEventInfo, 1, -1, null, 0, null, 0L, this.f47995s);
+        me.a0 a0Var = cVar.f46461c;
+        LoadEventInfo loadEventInfo = new LoadEventInfo(cVar.f46459a, cVar.f46460b, a0Var.p(), a0Var.q(), j10, j11, a0Var.o());
+        this.f46445o.d(cVar.f46459a);
+        this.f46446p.k(loadEventInfo, 1, -1, null, 0, null, 0L, this.f46449s);
     }
 
     @Override // rd.p, rd.n0
     public boolean d() {
-        return this.f47996t.j();
+        return this.f46450t.j();
     }
 
     @Override // rd.p, rd.n0
     public boolean f(long j10) {
-        if (!this.f47999w && !this.f47996t.j() && !this.f47996t.i()) {
-            DataSource createDataSource = this.f47989e.createDataSource();
-            me.c0 c0Var = this.f47990i;
+        if (!this.f46453w && !this.f46450t.j() && !this.f46450t.i()) {
+            DataSource createDataSource = this.f46443e.createDataSource();
+            me.c0 c0Var = this.f46444i;
             if (c0Var != null) {
                 createDataSource.i(c0Var);
             }
-            c cVar = new c(this.f47988d, createDataSource);
-            this.f47992p.t(new LoadEventInfo(cVar.f48005a, this.f47988d, this.f47996t.n(cVar, this, this.f47991o.b(1))), 1, -1, this.f47997u, 0, null, 0L, this.f47995s);
+            c cVar = new c(this.f46442d, createDataSource);
+            this.f46446p.t(new LoadEventInfo(cVar.f46459a, this.f46442d, this.f46450t.n(cVar, this, this.f46445o.b(1))), 1, -1, this.f46451u, 0, null, 0L, this.f46449s);
             return true;
         }
         return false;
@@ -195,7 +195,7 @@ public final class q0 implements p, j.b {
 
     @Override // rd.p, rd.n0
     public long g() {
-        if (this.f47999w) {
+        if (this.f46453w) {
             return Long.MIN_VALUE;
         }
         return 0L;
@@ -204,19 +204,19 @@ public final class q0 implements p, j.b {
     @Override // com.google.android.exoplayer2.upstream.j.b
     /* renamed from: j */
     public void k(c cVar, long j10, long j11) {
-        this.f48001y = (int) cVar.f48007c.o();
-        this.f48000x = (byte[]) oe.a.e(cVar.f48008d);
-        this.f47999w = true;
-        me.a0 a0Var = cVar.f48007c;
-        LoadEventInfo loadEventInfo = new LoadEventInfo(cVar.f48005a, cVar.f48006b, a0Var.p(), a0Var.q(), j10, j11, this.f48001y);
-        this.f47991o.d(cVar.f48005a);
-        this.f47992p.n(loadEventInfo, 1, -1, this.f47997u, 0, null, 0L, this.f47995s);
+        this.f46455y = (int) cVar.f46461c.o();
+        this.f46454x = (byte[]) oe.a.e(cVar.f46462d);
+        this.f46453w = true;
+        me.a0 a0Var = cVar.f46461c;
+        LoadEventInfo loadEventInfo = new LoadEventInfo(cVar.f46459a, cVar.f46460b, a0Var.p(), a0Var.q(), j10, j11, this.f46455y);
+        this.f46445o.d(cVar.f46459a);
+        this.f46446p.n(loadEventInfo, 1, -1, this.f46451u, 0, null, 0L, this.f46449s);
     }
 
     @Override // rd.p
     public long l(long j10) {
-        for (int i10 = 0; i10 < this.f47994r.size(); i10++) {
-            ((b) this.f47994r.get(i10)).d();
+        for (int i10 = 0; i10 < this.f46448r.size(); i10++) {
+            ((b) this.f46448r.get(i10)).d();
         }
         return j10;
     }
@@ -231,35 +231,35 @@ public final class q0 implements p, j.b {
     public j.c n(c cVar, long j10, long j11, IOException iOException, int i10) {
         boolean z10;
         j.c cVar2;
-        me.a0 a0Var = cVar.f48007c;
-        LoadEventInfo loadEventInfo = new LoadEventInfo(cVar.f48005a, cVar.f48006b, a0Var.p(), a0Var.q(), j10, j11, a0Var.o());
-        long a10 = this.f47991o.a(new i.c(loadEventInfo, new MediaLoadData(1, -1, this.f47997u, 0, null, 0L, oe.w0.p1(this.f47995s)), iOException, i10));
+        me.a0 a0Var = cVar.f46461c;
+        LoadEventInfo loadEventInfo = new LoadEventInfo(cVar.f46459a, cVar.f46460b, a0Var.p(), a0Var.q(), j10, j11, a0Var.o());
+        long a10 = this.f46445o.a(new i.c(loadEventInfo, new MediaLoadData(1, -1, this.f46451u, 0, null, 0L, oe.w0.p1(this.f46449s)), iOException, i10));
         int i11 = (a10 > (-9223372036854775807L) ? 1 : (a10 == (-9223372036854775807L) ? 0 : -1));
-        if (i11 != 0 && i10 < this.f47991o.b(1)) {
+        if (i11 != 0 && i10 < this.f46445o.b(1)) {
             z10 = false;
         } else {
             z10 = true;
         }
-        if (this.f47998v && z10) {
+        if (this.f46452v && z10) {
             oe.y.j("SingleSampleMediaPeriod", "Loading failed, treating as end-of-stream.", iOException);
-            this.f47999w = true;
-            cVar2 = com.google.android.exoplayer2.upstream.j.f13568f;
+            this.f46453w = true;
+            cVar2 = com.google.android.exoplayer2.upstream.j.f14145f;
         } else if (i11 != 0) {
             cVar2 = com.google.android.exoplayer2.upstream.j.h(false, a10);
         } else {
-            cVar2 = com.google.android.exoplayer2.upstream.j.f13569g;
+            cVar2 = com.google.android.exoplayer2.upstream.j.f14146g;
         }
         j.c cVar3 = cVar2;
         boolean c10 = cVar3.c();
-        this.f47992p.p(loadEventInfo, 1, -1, this.f47997u, 0, null, 0L, this.f47995s, iOException, !c10);
+        this.f46446p.p(loadEventInfo, 1, -1, this.f46451u, 0, null, 0L, this.f46449s, iOException, !c10);
         if (!c10) {
-            this.f47991o.d(cVar.f48005a);
+            this.f46445o.d(cVar.f46459a);
         }
         return cVar3;
     }
 
     public void q() {
-        this.f47996t.l();
+        this.f46450t.l();
     }
 
     @Override // rd.p
@@ -267,12 +267,12 @@ public final class q0 implements p, j.b {
         for (int i10 = 0; i10 < gVarArr.length; i10++) {
             m0 m0Var = m0VarArr[i10];
             if (m0Var != null && (gVarArr[i10] == null || !zArr[i10])) {
-                this.f47994r.remove(m0Var);
+                this.f46448r.remove(m0Var);
                 m0VarArr[i10] = null;
             }
             if (m0VarArr[i10] == null && gVarArr[i10] != null) {
                 b bVar = new b();
-                this.f47994r.add(bVar);
+                this.f46448r.add(bVar);
                 m0VarArr[i10] = bVar;
                 zArr2[i10] = true;
             }
@@ -282,7 +282,7 @@ public final class q0 implements p, j.b {
 
     @Override // rd.p
     public w0 s() {
-        return this.f47993q;
+        return this.f46447q;
     }
 
     @Override // rd.p
@@ -295,43 +295,43 @@ public final class q0 implements p, j.b {
     public static final class c implements j.e {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long f48005a = LoadEventInfo.a();
+        public final long f46459a = LoadEventInfo.a();
 
         /* renamed from: b  reason: collision with root package name */
-        public final com.google.android.exoplayer2.upstream.a f48006b;
+        public final com.google.android.exoplayer2.upstream.a f46460b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final me.a0 f48007c;
+        private final me.a0 f46461c;
 
         /* renamed from: d  reason: collision with root package name */
-        private byte[] f48008d;
+        private byte[] f46462d;
 
         public c(com.google.android.exoplayer2.upstream.a aVar, DataSource dataSource) {
-            this.f48006b = aVar;
-            this.f48007c = new me.a0(dataSource);
+            this.f46460b = aVar;
+            this.f46461c = new me.a0(dataSource);
         }
 
         @Override // com.google.android.exoplayer2.upstream.j.e
         public void a() {
-            this.f48007c.r();
+            this.f46461c.r();
             try {
-                this.f48007c.b(this.f48006b);
+                this.f46461c.b(this.f46460b);
                 int i10 = 0;
                 while (i10 != -1) {
-                    int o10 = (int) this.f48007c.o();
-                    byte[] bArr = this.f48008d;
+                    int o10 = (int) this.f46461c.o();
+                    byte[] bArr = this.f46462d;
                     if (bArr == null) {
-                        this.f48008d = new byte[IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET];
+                        this.f46462d = new byte[IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET];
                     } else if (o10 == bArr.length) {
-                        this.f48008d = Arrays.copyOf(bArr, bArr.length * 2);
+                        this.f46462d = Arrays.copyOf(bArr, bArr.length * 2);
                     }
-                    me.a0 a0Var = this.f48007c;
-                    byte[] bArr2 = this.f48008d;
+                    me.a0 a0Var = this.f46461c;
+                    byte[] bArr2 = this.f46462d;
                     i10 = a0Var.read(bArr2, o10, bArr2.length - o10);
                 }
-                me.o.a(this.f48007c);
+                me.o.a(this.f46461c);
             } catch (Throwable th2) {
-                me.o.a(this.f48007c);
+                me.o.a(this.f46461c);
                 throw th2;
             }
         }

@@ -11,19 +11,19 @@ import kotlin.reflect.jvm.internal.impl.name.FqName;
 public final class e implements Annotations {
 
     /* renamed from: d  reason: collision with root package name */
-    private final FqName f32869d;
+    private final FqName f33091d;
 
     public e(FqName fqNameToMatch) {
         Intrinsics.checkNotNullParameter(fqNameToMatch, "fqNameToMatch");
-        this.f32869d = fqNameToMatch;
+        this.f33091d = fqNameToMatch;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations
     /* renamed from: b */
-    public d mo1195findAnnotation(FqName fqName) {
+    public d mo1198findAnnotation(FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        if (Intrinsics.areEqual(fqName, this.f32869d)) {
-            return d.f32867a;
+        if (Intrinsics.areEqual(fqName, this.f33091d)) {
+            return d.f33089a;
         }
         return null;
     }

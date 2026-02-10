@@ -16,8 +16,8 @@ public abstract class q extends RecyclerView.ItemAnimator {
     public boolean animateAppearance(@NonNull RecyclerView.ViewHolder viewHolder, RecyclerView.ItemAnimator.ItemHolderInfo itemHolderInfo, @NonNull RecyclerView.ItemAnimator.ItemHolderInfo itemHolderInfo2) {
         int i10;
         int i11;
-        if (itemHolderInfo != null && ((i10 = itemHolderInfo.f4949a) != (i11 = itemHolderInfo2.f4949a) || itemHolderInfo.f4950b != itemHolderInfo2.f4950b)) {
-            return animateMove(viewHolder, i10, itemHolderInfo.f4950b, i11, itemHolderInfo2.f4950b);
+        if (itemHolderInfo != null && ((i10 = itemHolderInfo.f4959a) != (i11 = itemHolderInfo2.f4959a) || itemHolderInfo.f4960b != itemHolderInfo2.f4960b)) {
+            return animateMove(viewHolder, i10, itemHolderInfo.f4960b, i11, itemHolderInfo2.f4960b);
         }
         return animateAdd(viewHolder);
     }
@@ -28,15 +28,15 @@ public abstract class q extends RecyclerView.ItemAnimator {
     public boolean animateChange(@NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder viewHolder2, @NonNull RecyclerView.ItemAnimator.ItemHolderInfo itemHolderInfo, @NonNull RecyclerView.ItemAnimator.ItemHolderInfo itemHolderInfo2) {
         int i10;
         int i11;
-        int i12 = itemHolderInfo.f4949a;
-        int i13 = itemHolderInfo.f4950b;
+        int i12 = itemHolderInfo.f4959a;
+        int i13 = itemHolderInfo.f4960b;
         if (viewHolder2.shouldIgnore()) {
-            int i14 = itemHolderInfo.f4949a;
-            i11 = itemHolderInfo.f4950b;
+            int i14 = itemHolderInfo.f4959a;
+            i11 = itemHolderInfo.f4960b;
             i10 = i14;
         } else {
-            i10 = itemHolderInfo2.f4949a;
-            i11 = itemHolderInfo2.f4950b;
+            i10 = itemHolderInfo2.f4959a;
+            i11 = itemHolderInfo2.f4960b;
         }
         return animateChange(viewHolder, viewHolder2, i12, i13, i10, i11);
     }
@@ -45,19 +45,19 @@ public abstract class q extends RecyclerView.ItemAnimator {
     public boolean animateDisappearance(@NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ItemAnimator.ItemHolderInfo itemHolderInfo, RecyclerView.ItemAnimator.ItemHolderInfo itemHolderInfo2) {
         int i10;
         int i11;
-        int i12 = itemHolderInfo.f4949a;
-        int i13 = itemHolderInfo.f4950b;
+        int i12 = itemHolderInfo.f4959a;
+        int i13 = itemHolderInfo.f4960b;
         View view = viewHolder.itemView;
         if (itemHolderInfo2 == null) {
             i10 = view.getLeft();
         } else {
-            i10 = itemHolderInfo2.f4949a;
+            i10 = itemHolderInfo2.f4959a;
         }
         int i14 = i10;
         if (itemHolderInfo2 == null) {
             i11 = view.getTop();
         } else {
-            i11 = itemHolderInfo2.f4950b;
+            i11 = itemHolderInfo2.f4960b;
         }
         int i15 = i11;
         if (!viewHolder.isRemoved() && (i12 != i14 || i13 != i15)) {
@@ -71,13 +71,13 @@ public abstract class q extends RecyclerView.ItemAnimator {
 
     @Override // androidx.recyclerview.widget.RecyclerView.ItemAnimator
     public boolean animatePersistence(@NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ItemAnimator.ItemHolderInfo itemHolderInfo, @NonNull RecyclerView.ItemAnimator.ItemHolderInfo itemHolderInfo2) {
-        int i10 = itemHolderInfo.f4949a;
-        int i11 = itemHolderInfo2.f4949a;
-        if (i10 == i11 && itemHolderInfo.f4950b == itemHolderInfo2.f4950b) {
+        int i10 = itemHolderInfo.f4959a;
+        int i11 = itemHolderInfo2.f4959a;
+        if (i10 == i11 && itemHolderInfo.f4960b == itemHolderInfo2.f4960b) {
             dispatchMoveFinished(viewHolder);
             return false;
         }
-        return animateMove(viewHolder, i10, itemHolderInfo.f4950b, i11, itemHolderInfo2.f4950b);
+        return animateMove(viewHolder, i10, itemHolderInfo.f4960b, i11, itemHolderInfo2.f4960b);
     }
 
     public abstract boolean animateRemove(RecyclerView.ViewHolder viewHolder);

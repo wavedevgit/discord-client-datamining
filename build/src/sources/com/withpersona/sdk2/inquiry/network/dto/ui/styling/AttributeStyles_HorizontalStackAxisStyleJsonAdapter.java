@@ -46,7 +46,7 @@ public final class AttributeStyles_HorizontalStackAxisStyleJsonAdapter extends h
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 axisContainer = (StyleElements.AxisContainer) this.nullableAxisContainerAdapter.fromJson(reader);
@@ -60,7 +60,7 @@ public final class AttributeStyles_HorizontalStackAxisStyleJsonAdapter extends h
     public void toJson(@NotNull t writer, AttributeStyles.HorizontalStackAxisStyle horizontalStackAxisStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (horizontalStackAxisStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableAxisContainerAdapter.toJson(writer, horizontalStackAxisStyle.getBase());
             writer.s();

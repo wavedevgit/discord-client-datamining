@@ -1,38 +1,104 @@
 package vu;
 
 import java.util.List;
-import java.util.Map;
-import kotlin.jvm.functions.Function2;
+import javax.net.ssl.SSLParameters;
+import javax.net.ssl.SSLSocket;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import vu.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface f extends vu.a {
+public class f extends h {
+
+    /* renamed from: d  reason: collision with root package name */
+    public static final a f52010d = new a(null);
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final boolean f52011e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
-        public static b a(f fVar, List expressionValues, Object obj, h evaluator) {
-            Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
-            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-            return a.C0728a.a(fVar, expressionValues, obj, evaluator);
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
 
-        public static Object b(f fVar, Map map, List expressionValues) {
-            Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
-            return a.C0728a.b(fVar, map, expressionValues);
+        public final f a() {
+            if (b()) {
+                return new f();
+            }
+            return null;
         }
 
-        public static Object c(f fVar, Object obj, Object obj2, h evaluator, Function2 arrayOperation) {
-            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-            Intrinsics.checkNotNullParameter(arrayOperation, "arrayOperation");
-            return arrayOperation.invoke(fVar.c(dw.a.c(obj), obj2, evaluator), evaluator);
+        public final boolean b() {
+            return f.f52011e;
         }
 
-        public static List d(f fVar, List expression, Object obj, h evaluator) {
-            Intrinsics.checkNotNullParameter(expression, "expression");
-            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-            return a.C0728a.c(fVar, expression, obj, evaluator);
+        private a() {
         }
     }
 
-    Object b(Object obj, Object obj2, h hVar, Function2 function2);
+    /* JADX WARN: Code restructure failed: missing block: B:9:0x0020, code lost:
+        if (r0.intValue() >= 9) goto L8;
+     */
+    static {
+        /*
+            vu.f$a r0 = new vu.f$a
+            r1 = 0
+            r0.<init>(r1)
+            vu.f.f52010d = r0
+            java.lang.String r0 = "java.specification.version"
+            java.lang.String r0 = java.lang.System.getProperty(r0)
+            if (r0 == 0) goto L15
+            java.lang.Integer r0 = kotlin.text.StringsKt.toIntOrNull(r0)
+            goto L16
+        L15:
+            r0 = r1
+        L16:
+            r2 = 0
+            r3 = 1
+            if (r0 == 0) goto L24
+            int r0 = r0.intValue()
+            r1 = 9
+            if (r0 < r1) goto L2c
+        L22:
+            r2 = r3
+            goto L2c
+        L24:
+            java.lang.Class<javax.net.ssl.SSLSocket> r0 = javax.net.ssl.SSLSocket.class
+            java.lang.String r4 = "getApplicationProtocol"
+            r0.getMethod(r4, r1)     // Catch: java.lang.NoSuchMethodException -> L2c
+            goto L22
+        L2c:
+            vu.f.f52011e = r2
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: vu.f.<clinit>():void");
+    }
+
+    @Override // vu.h
+    public void e(SSLSocket sslSocket, String str, List protocols) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Intrinsics.checkNotNullParameter(protocols, "protocols");
+        SSLParameters sSLParameters = sslSocket.getSSLParameters();
+        sSLParameters.setApplicationProtocols((String[]) h.f52015a.b(protocols).toArray(new String[0]));
+        sslSocket.setSSLParameters(sSLParameters);
+    }
+
+    @Override // vu.h
+    public String h(SSLSocket sslSocket) {
+        boolean areEqual;
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        try {
+            String applicationProtocol = sslSocket.getApplicationProtocol();
+            if (applicationProtocol == null) {
+                areEqual = true;
+            } else {
+                areEqual = Intrinsics.areEqual(applicationProtocol, "");
+            }
+            if (areEqual) {
+                return null;
+            }
+            return applicationProtocol;
+        } catch (UnsupportedOperationException unused) {
+            return null;
+        }
+    }
 }

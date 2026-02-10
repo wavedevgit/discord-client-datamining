@@ -7,10 +7,10 @@ import java.util.List;
 public final class f implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f42958a;
+    private final r3.u f41416a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f42959b;
+    private final r3.i f41417b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -27,21 +27,21 @@ public final class f implements e {
         /* renamed from: k */
         public void i(x3.k kVar, d dVar) {
             if (dVar.a() == null) {
-                kVar.N1(1);
+                kVar.S1(1);
             } else {
-                kVar.d1(1, dVar.a());
+                kVar.i1(1, dVar.a());
             }
             if (dVar.b() == null) {
-                kVar.N1(2);
+                kVar.S1(2);
             } else {
-                kVar.q1(2, dVar.b().longValue());
+                kVar.v1(2, dVar.b().longValue());
             }
         }
     }
 
     public f(r3.u uVar) {
-        this.f42958a = uVar;
-        this.f42959b = new a(uVar);
+        this.f41416a = uVar;
+        this.f41417b = new a(uVar);
     }
 
     public static List c() {
@@ -50,27 +50,27 @@ public final class f implements e {
 
     @Override // p4.e
     public void a(d dVar) {
-        this.f42958a.d();
-        this.f42958a.e();
+        this.f41416a.d();
+        this.f41416a.e();
         try {
-            this.f42959b.j(dVar);
-            this.f42958a.A();
+            this.f41417b.j(dVar);
+            this.f41416a.A();
         } finally {
-            this.f42958a.i();
+            this.f41416a.i();
         }
     }
 
     @Override // p4.e
     public Long b(String str) {
-        r3.x k10 = r3.x.k("SELECT long_value FROM Preference where `key`=?", 1);
+        r3.x i10 = r3.x.i("SELECT long_value FROM Preference where `key`=?", 1);
         if (str == null) {
-            k10.N1(1);
+            i10.S1(1);
         } else {
-            k10.d1(1, str);
+            i10.i1(1, str);
         }
-        this.f42958a.d();
+        this.f41416a.d();
         Long l10 = null;
-        Cursor b10 = t3.b.b(this.f42958a, k10, false, null);
+        Cursor b10 = t3.b.b(this.f41416a, i10, false, null);
         try {
             if (b10.moveToFirst() && !b10.isNull(0)) {
                 l10 = Long.valueOf(b10.getLong(0));
@@ -78,7 +78,7 @@ public final class f implements e {
             return l10;
         } finally {
             b10.close();
-            k10.p();
+            i10.p();
         }
     }
 }

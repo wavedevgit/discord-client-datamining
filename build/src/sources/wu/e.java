@@ -1,63 +1,19 @@
 package wu;
 
-import java.util.List;
-import java.util.Map;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import wu.d;
+import java.util.logging.Level;
+import java.util.logging.LogRecord;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e implements tu.a, d {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final e f54071a = new e();
-
-    private e() {
-    }
-
-    @Override // vu.f
-    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
-        return d.a.f(this, obj, obj2, hVar, function2);
-    }
-
-    @Override // vu.a
-    public vu.b c(List list, Object obj, h hVar) {
-        return d.a.c(this, list, obj, hVar);
-    }
-
-    @Override // tu.a
-    public Object d(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        return g(obj, obj2, evaluator);
-    }
-
-    @Override // wu.d
-    public Object e(c data, h evaluator) {
-        Intrinsics.checkNotNullParameter(data, "data");
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        for (Object obj : data.b()) {
-            if (f54071a.i(evaluator.a(data.a(), obj))) {
-                return Boolean.TRUE;
-            }
+public abstract class e {
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int b(LogRecord logRecord) {
+        int intValue = logRecord.getLevel().intValue();
+        Level level = Level.INFO;
+        if (intValue > level.intValue()) {
+            return 5;
         }
-        return data.c();
-    }
-
-    @Override // cw.a
-    public List f(List list, Object obj, h hVar) {
-        return d.a.h(this, list, obj, hVar);
-    }
-
-    public Object g(Object obj, Object obj2, h hVar) {
-        return d.a.b(this, obj, obj2, hVar);
-    }
-
-    @Override // vu.a
-    /* renamed from: h */
-    public Boolean a(Map map, List list) {
-        return d.a.e(this, map, list);
-    }
-
-    public boolean i(Object obj) {
-        return d.a.i(this, obj);
+        if (logRecord.getLevel().intValue() == level.intValue()) {
+            return 4;
+        }
+        return 3;
     }
 }

@@ -22,13 +22,13 @@ import org.jetbrains.annotations.NotNull;
 public class TypeParameterDescriptorImpl extends AbstractTypeParameterDescriptor {
 
     /* renamed from: v  reason: collision with root package name */
-    private final Function1 f32330v;
+    private final Function1 f32552v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final List f32331w;
+    private final List f32553w;
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f32332x;
+    private boolean f32554x;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     private TypeParameterDescriptorImpl(DeclarationDescriptor declarationDescriptor, Annotations annotations, boolean z10, Variance variance, Name name, int i10, SourceElement sourceElement, Function1 function1, SupertypeLoopChecker supertypeLoopChecker, StorageManager storageManager) {
@@ -54,9 +54,9 @@ public class TypeParameterDescriptorImpl extends AbstractTypeParameterDescriptor
         if (storageManager == null) {
             a(25);
         }
-        this.f32331w = new ArrayList(1);
-        this.f32332x = false;
-        this.f32330v = function1;
+        this.f32553w = new ArrayList(1);
+        this.f32554x = false;
+        this.f32552v = function1;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -213,14 +213,14 @@ public class TypeParameterDescriptorImpl extends AbstractTypeParameterDescriptor
     }
 
     private void d() {
-        if (this.f32332x) {
+        if (this.f32554x) {
             return;
         }
         throw new IllegalStateException("Type parameter descriptor is not initialized: " + g());
     }
 
     private void e() {
-        if (!this.f32332x) {
+        if (!this.f32554x) {
             return;
         }
         throw new IllegalStateException("Type parameter descriptor is already initialized: " + g());
@@ -230,7 +230,7 @@ public class TypeParameterDescriptorImpl extends AbstractTypeParameterDescriptor
         if (KotlinTypeKt.isError(kotlinType)) {
             return;
         }
-        this.f32331w.add(kotlinType);
+        this.f32553w.add(kotlinType);
     }
 
     private String g() {
@@ -248,7 +248,7 @@ public class TypeParameterDescriptorImpl extends AbstractTypeParameterDescriptor
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.AbstractTypeParameterDescriptor
     protected List c() {
         d();
-        List list = this.f32331w;
+        List list = this.f32553w;
         if (list == null) {
             a(28);
         }
@@ -256,7 +256,7 @@ public class TypeParameterDescriptorImpl extends AbstractTypeParameterDescriptor
     }
 
     public boolean isInitialized() {
-        return this.f32332x;
+        return this.f32554x;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.AbstractTypeParameterDescriptor
@@ -264,7 +264,7 @@ public class TypeParameterDescriptorImpl extends AbstractTypeParameterDescriptor
         if (kotlinType == null) {
             a(27);
         }
-        Function1 function1 = this.f32330v;
+        Function1 function1 = this.f32552v;
         if (function1 == null) {
             return;
         }
@@ -273,7 +273,7 @@ public class TypeParameterDescriptorImpl extends AbstractTypeParameterDescriptor
 
     public void setInitialized() {
         e();
-        this.f32332x = true;
+        this.f32554x = true;
     }
 
     public static TypeParameterDescriptorImpl createForFurtherModification(@NotNull DeclarationDescriptor declarationDescriptor, @NotNull Annotations annotations, boolean z10, @NotNull Variance variance, @NotNull Name name, int i10, @NotNull SourceElement sourceElement, Function1<KotlinType, Void> function1, @NotNull SupertypeLoopChecker supertypeLoopChecker, @NotNull StorageManager storageManager) {

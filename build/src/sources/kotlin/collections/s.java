@@ -9,7 +9,7 @@ import kotlin.jvm.internal.Intrinsics;
 public class s {
     public static List a(List builder) {
         Intrinsics.checkNotNullParameter(builder, "builder");
-        return ((sr.b) builder).r();
+        return ((bs.b) builder).r();
     }
 
     public static final Object[] b(Object[] objArr, boolean z10) {
@@ -23,11 +23,11 @@ public class s {
     }
 
     public static List c() {
-        return new sr.b(0, 1, null);
+        return new bs.b(0, 1, null);
     }
 
     public static List d(int i10) {
-        return new sr.b(i10);
+        return new bs.b(i10);
     }
 
     public static List e(Object obj) {

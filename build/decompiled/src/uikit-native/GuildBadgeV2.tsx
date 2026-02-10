@@ -43,15 +43,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/GuildBadgeV2.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun60255: for (var _fun60255_ip = 0;;) switch (_fun60255_ip) {
+        _fun60308: for (var _fun60308_ip = 0;;) switch (_fun60308_ip) {
             case 0:
                 var3 = arg0;
                 var8 = var3.guild;
                 var9 = var3.size;
                 var5 = undefined;
                 if (!(var9 === var5)) {
-                    _fun60255_ip = 54;
-                    continue _fun60255
+                    _fun60308_ip = 54;
+                    continue _fun60308
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var3)();
                 var4 = var1.theme;
                 if (!(var0 != var8)) {
-                    _fun60255_ip = 241;
-                    continue _fun60255
+                    _fun60308_ip = 241;
+                    continue _fun60308
                 }
             case 132:
                 var3 = _closure1_slot0;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var8;
                 var1 = null;
                 if (var3) {
-                    _fun60255_ip = 239;
-                    continue _fun60255
+                    _fun60308_ip = 239;
+                    continue _fun60308
                 }
             case 173:
                 var4 = _closure1_slot3;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0, arg1() {
-        _fun60256: for (var _fun60256_ip = 0;;) switch (_fun60256_ip) {
+        _fun60309: for (var _fun60309_ip = 0;;) switch (_fun60309_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var0 = _closure1_slot2;
@@ -149,8 +149,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var0 = var2 != var5;
                 if (!var0) {
-                    _fun60256_ip = 130;
-                    continue _fun60256
+                    _fun60309_ip = 130;
+                    continue _fun60309
                 }
             case 93:
                 var3 = _closure1_slot0;
@@ -167,4 +167,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasGuildBadge = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 4086, 3207, 7443, 7438, 7439, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 4096, 3207, 7453, 7448, 7449, 2]);

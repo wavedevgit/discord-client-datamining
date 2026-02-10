@@ -1,6 +1,13 @@
 package tt;
+
+import kotlinx.serialization.KSerializer;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public enum k {
-    CARDINALS,
-    ORDINALS
+final class k {
+
+    /* renamed from: a  reason: collision with root package name */
+    public final KSerializer f50014a;
+
+    public k(KSerializer kSerializer) {
+        this.f50014a = kSerializer;
+    }
 }

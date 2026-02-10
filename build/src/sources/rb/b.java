@@ -8,10 +8,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f47755a = new b();
+    public static final b f46209a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    public static boolean f47756b;
+    public static boolean f46210b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static abstract class a {
@@ -24,13 +24,13 @@ public final class b {
 
     /* renamed from: rb.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class C0654b extends a {
+    private static final class C0631b extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final long f47757a;
+        private final long f46211a;
 
-        public C0654b(long j10) {
-            this.f47757a = j10;
+        public C0631b(long j10) {
+            this.f46211a = j10;
         }
 
         @Override // rb.b.a
@@ -48,7 +48,7 @@ public final class b {
 
         @Override // rb.b.a
         public void c() {
-            rb.a.i(this.f47757a);
+            rb.a.i(this.f46211a);
         }
     }
 
@@ -57,23 +57,23 @@ public final class b {
     public static final class c extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final long f47758a;
+        private final long f46212a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f47759b;
+        private final String f46213b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f47760c;
+        private final List f46214c;
 
         public c(long j10, String sectionName) {
             Intrinsics.checkNotNullParameter(sectionName, "sectionName");
-            this.f47758a = j10;
-            this.f47759b = sectionName;
-            this.f47760c = new ArrayList();
+            this.f46212a = j10;
+            this.f46213b = sectionName;
+            this.f46214c = new ArrayList();
         }
 
         private final void d(String str, String str2) {
-            List list = this.f47760c;
+            List list = this.f46214c;
             list.add(str + ": " + str2);
         }
 
@@ -95,10 +95,10 @@ public final class b {
         @Override // rb.b.a
         public void c() {
             String str;
-            long j10 = this.f47758a;
-            String str2 = this.f47759b;
-            if (b.f47756b && !this.f47760c.isEmpty()) {
-                str = " (" + c2.a(", ", this.f47760c) + ")";
+            long j10 = this.f46212a;
+            String str2 = this.f46213b;
+            if (b.f46210b && !this.f46214c.isEmpty()) {
+                str = " (" + c2.a(", ", this.f46214c) + ")";
             } else {
                 str = "";
             }
@@ -115,6 +115,6 @@ public final class b {
     }
 
     public static final a b(long j10) {
-        return new C0654b(j10);
+        return new C0631b(j10);
     }
 }

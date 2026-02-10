@@ -8,13 +8,13 @@ import oe.w0;
 final class j extends ne.c {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Pattern f13518r = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v1\\.exo$", 32);
+    private static final Pattern f14095r = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v1\\.exo$", 32);
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Pattern f13519s = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v2\\.exo$", 32);
+    private static final Pattern f14096s = Pattern.compile("^(.+)\\.(\\d+)\\.(\\d+)\\.v2\\.exo$", 32);
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Pattern f13520t = Pattern.compile("^(\\d+)\\.(\\d+)\\.(\\d+)\\.v3\\.exo$", 32);
+    private static final Pattern f14097t = Pattern.compile("^(\\d+)\\.(\\d+)\\.(\\d+)\\.v3\\.exo$", 32);
 
     private j(String str, long j10, long j11, long j12, File file) {
         super(str, j10, j11, j12, file);
@@ -32,7 +32,7 @@ final class j extends ne.c {
             name = file.getName();
         }
         File file2 = file;
-        Matcher matcher = f13520t.matcher(name);
+        Matcher matcher = f14097t.matcher(name);
         if (!matcher.matches() || (k10 = hVar.k(Integer.parseInt((String) oe.a.e(matcher.group(1))))) == null) {
             return null;
         }
@@ -71,11 +71,11 @@ final class j extends ne.c {
     private static File m(File file, h hVar) {
         String str;
         String name = file.getName();
-        Matcher matcher = f13519s.matcher(name);
+        Matcher matcher = f14096s.matcher(name);
         if (matcher.matches()) {
             str = w0.o1((String) oe.a.e(matcher.group(1)));
         } else {
-            matcher = f13518r.matcher(name);
+            matcher = f14095r.matcher(name);
             if (matcher.matches()) {
                 str = (String) oe.a.e(matcher.group(1));
             } else {
@@ -93,7 +93,7 @@ final class j extends ne.c {
     }
 
     public j f(File file, long j10) {
-        oe.a.g(this.f38176o);
-        return new j(this.f38173d, this.f38174e, this.f38175i, j10, file);
+        oe.a.g(this.f37180o);
+        return new j(this.f37177d, this.f37178e, this.f37179i, j10, file);
     }
 }

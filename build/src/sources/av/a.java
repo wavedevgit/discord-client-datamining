@@ -1,83 +1,46 @@
 package av;
 
-import av.b;
-import java.util.List;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Lambda;
+import java.io.File;
+import java.io.InputStream;
+import java.io.OutputStream;
+import kotlin.jvm.internal.Intrinsics;
+import okio.BufferedSink;
+import okio.BufferedSource;
+import okio.Sink;
+import okio.Source;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements tu.b, b {
+public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f6213a = new a();
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* renamed from: av.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0121a extends Lambda implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final C0121a f6214d = new C0121a();
-
-        C0121a() {
-            super(2);
-        }
-
-        public final Boolean a(int i10, int i11) {
-            boolean z10;
-            if (i10 == i11) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            return Boolean.valueOf(z10);
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
-        }
-    }
+    public static final a f6217a = new a();
 
     private a() {
     }
 
-    @Override // cv.a
-    public Object a(Object obj) {
-        return b.a.f(this, obj);
+    public final BufferedSink a(Sink sink) {
+        Intrinsics.checkNotNullParameter(sink, "sink");
+        return x.c(sink);
     }
 
-    @Override // uu.c
-    public boolean b(List list, Function2 function2) {
-        return b.a.b(this, list, function2);
+    public final BufferedSource b(Source source) {
+        Intrinsics.checkNotNullParameter(source, "source");
+        return x.d(source);
     }
 
-    @Override // uu.a
-    public Boolean c(Object obj) {
-        return b.a.g(this, obj);
+    public final Sink c(File file) {
+        Sink g10;
+        Intrinsics.checkNotNullParameter(file, "file");
+        g10 = y.g(file, false, 1, null);
+        return g10;
     }
 
-    @Override // uu.b
-    public List d(Comparable comparable, Comparable comparable2) {
-        return b.a.d(this, comparable, comparable2);
+    public final Sink d(OutputStream outputStream) {
+        Intrinsics.checkNotNullParameter(outputStream, "outputStream");
+        return x.g(outputStream);
     }
 
-    @Override // cv.c
-    public Object e(Object obj) {
-        return b.a.e(this, obj);
-    }
-
-    @Override // uu.b
-    public List g(Comparable comparable, Comparable comparable2) {
-        return b.a.c(this, comparable, comparable2);
-    }
-
-    public boolean h(Object obj, Function2 function2) {
-        return b.a.a(this, obj, function2);
-    }
-
-    @Override // tu.b
-    /* renamed from: i */
-    public Boolean f(Object obj, Object obj2) {
-        return Boolean.valueOf(h(obj, C0121a.f6214d));
+    public final Source e(InputStream inputStream) {
+        Intrinsics.checkNotNullParameter(inputStream, "inputStream");
+        return x.k(inputStream);
     }
 }

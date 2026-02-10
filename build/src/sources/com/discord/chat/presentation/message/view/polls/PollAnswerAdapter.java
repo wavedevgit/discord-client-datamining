@@ -2,7 +2,7 @@ package com.discord.chat.presentation.message.view.polls;
 
 import android.annotation.SuppressLint;
 import android.view.View;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.e;
 import com.discord.chat.presentation.message.messagepart.polls.PollAnswerAccessory;
@@ -58,20 +58,20 @@ public abstract class PollAnswerAdapter<THolder extends PollAnswerViewHolder<?>>
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$4(PollAnswerAdapter pollAnswerAdapter, PollAnswerAccessory pollAnswerAccessory) {
         pollAnswerAdapter.onTapAnswer.invoke(pollAnswerAccessory.getAnswer().getAnswerId());
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onLongPressImage$lambda$1(String str, int i10, int i11, int i12, int i13, ViewResizeMode viewResizeMode) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
         Intrinsics.checkNotNullParameter(viewResizeMode, "<unused var>");
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onTapAnswer$lambda$0(String str) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
@@ -108,7 +108,7 @@ public abstract class PollAnswerAdapter<THolder extends PollAnswerViewHolder<?>>
         this.items = answers;
         this.onTapAnswer = onTapAnswer;
         this.onLongPressImage = onLongPressImage;
-        e.C0068e c10 = androidx.recyclerview.widget.e.c(new ItemDiffer(list, answers), false);
+        e.C0064e c10 = androidx.recyclerview.widget.e.c(new ItemDiffer(list, answers), false);
         Intrinsics.checkNotNullExpressionValue(c10, "calculateDiff(...)");
         c10.c(this);
     }
@@ -134,7 +134,7 @@ public abstract class PollAnswerAdapter<THolder extends PollAnswerViewHolder<?>>
             }
         });
         root.setImportantForAccessibility(1);
-        h0.n0(root, new PollsAnswerAccessibilityDelegate(pollAnswerAccessory));
+        i0.k0(root, new PollsAnswerAccessibilityDelegate(pollAnswerAccessory));
         holder.bind(pollAnswerAccessory, new Function0() { // from class: com.discord.chat.presentation.message.view.polls.h
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {

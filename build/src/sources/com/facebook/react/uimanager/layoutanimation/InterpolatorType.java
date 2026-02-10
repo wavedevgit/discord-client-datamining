@@ -75,7 +75,7 @@ public final class InterpolatorType {
     static {
         InterpolatorType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = yr.a.a($values);
+        $ENTRIES = hs.a.a($values);
         Companion = new Companion(null);
     }
 

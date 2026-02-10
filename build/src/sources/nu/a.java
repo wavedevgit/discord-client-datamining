@@ -1,82 +1,124 @@
 package nu;
 
-import android.net.ssl.SSLSockets;
-import android.os.Build;
-import java.io.IOException;
+import java.net.Authenticator;
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+import java.net.PasswordAuthentication;
+import java.net.Proxy;
+import java.net.SocketAddress;
 import java.util.List;
-import javax.net.ssl.SSLParameters;
-import javax.net.ssl.SSLSocket;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
+import lu.d;
+import lu.g;
+import lu.h;
+import lu.k;
+import okhttp3.HttpUrl;
+import okhttp3.Request;
+import okhttp3.Response;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements k {
+public final class a implements lu.a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final C0578a f40031a = new C0578a(null);
+    /* renamed from: d  reason: collision with root package name */
+    private final h f38376d;
 
     /* renamed from: nu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0578a {
-        public /* synthetic */ C0578a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    public /* synthetic */ class C0540a {
 
-        public final k a() {
-            if (b()) {
-                return new a();
+        /* renamed from: a  reason: collision with root package name */
+        public static final /* synthetic */ int[] f38377a;
+
+        static {
+            int[] iArr = new int[Proxy.Type.values().length];
+            try {
+                iArr[Proxy.Type.DIRECT.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
             }
-            return null;
-        }
-
-        public final boolean b() {
-            if (mu.h.f37655a.h() && Build.VERSION.SDK_INT >= 29) {
-                return true;
-            }
-            return false;
-        }
-
-        private C0578a() {
+            f38377a = iArr;
         }
     }
 
-    @Override // nu.k
-    public boolean a() {
-        return f40031a.b();
+    public a(h defaultDns) {
+        Intrinsics.checkNotNullParameter(defaultDns, "defaultDns");
+        this.f38376d = defaultDns;
     }
 
-    @Override // nu.k
-    public boolean b(SSLSocket sslSocket) {
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        return SSLSockets.isSupportedSocket(sslSocket);
-    }
-
-    @Override // nu.k
-    public String c(SSLSocket sslSocket) {
-        boolean areEqual;
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        String applicationProtocol = sslSocket.getApplicationProtocol();
-        if (applicationProtocol == null) {
-            areEqual = true;
+    private final InetAddress b(Proxy proxy, HttpUrl httpUrl, h hVar) {
+        int i10;
+        Proxy.Type type = proxy.type();
+        if (type == null) {
+            i10 = -1;
         } else {
-            areEqual = Intrinsics.areEqual(applicationProtocol, "");
+            i10 = C0540a.f38377a[type.ordinal()];
         }
-        if (areEqual) {
-            return null;
+        if (i10 == 1) {
+            return (InetAddress) CollectionsKt.o0(hVar.lookup(httpUrl.i()));
         }
-        return applicationProtocol;
+        SocketAddress address = proxy.address();
+        Intrinsics.checkNotNull(address, "null cannot be cast to non-null type java.net.InetSocketAddress");
+        InetAddress address2 = ((InetSocketAddress) address).getAddress();
+        Intrinsics.checkNotNullExpressionValue(address2, "address() as InetSocketAddress).address");
+        return address2;
     }
 
-    @Override // nu.k
-    public void d(SSLSocket sslSocket, String str, List protocols) {
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        Intrinsics.checkNotNullParameter(protocols, "protocols");
-        try {
-            SSLSockets.setUseSessionTickets(sslSocket, true);
-            SSLParameters sSLParameters = sslSocket.getSSLParameters();
-            sSLParameters.setApplicationProtocols((String[]) mu.h.f37655a.b(protocols).toArray(new String[0]));
-            sslSocket.setSSLParameters(sSLParameters);
-        } catch (IllegalArgumentException e10) {
-            throw new IOException("Android internal error", e10);
+    @Override // lu.a
+    public Request a(k kVar, Response response) {
+        boolean z10;
+        Proxy proxy;
+        h hVar;
+        PasswordAuthentication requestPasswordAuthentication;
+        String str;
+        okhttp3.a a10;
+        Intrinsics.checkNotNullParameter(response, "response");
+        List<d> y10 = response.y();
+        Request O0 = response.O0();
+        HttpUrl n10 = O0.n();
+        if (response.z() == 407) {
+            z10 = true;
+        } else {
+            z10 = false;
         }
+        if (kVar == null || (proxy = kVar.b()) == null) {
+            proxy = Proxy.NO_PROXY;
+        }
+        for (d dVar : y10) {
+            if (StringsKt.A("Basic", dVar.c(), true)) {
+                if (kVar == null || (a10 = kVar.a()) == null || (hVar = a10.c()) == null) {
+                    hVar = this.f38376d;
+                }
+                if (z10) {
+                    SocketAddress address = proxy.address();
+                    Intrinsics.checkNotNull(address, "null cannot be cast to non-null type java.net.InetSocketAddress");
+                    InetSocketAddress inetSocketAddress = (InetSocketAddress) address;
+                    String hostName = inetSocketAddress.getHostName();
+                    Intrinsics.checkNotNullExpressionValue(proxy, "proxy");
+                    requestPasswordAuthentication = Authenticator.requestPasswordAuthentication(hostName, b(proxy, n10, hVar), inetSocketAddress.getPort(), n10.s(), dVar.b(), dVar.c(), n10.u(), Authenticator.RequestorType.PROXY);
+                } else {
+                    String i10 = n10.i();
+                    Intrinsics.checkNotNullExpressionValue(proxy, "proxy");
+                    requestPasswordAuthentication = Authenticator.requestPasswordAuthentication(i10, b(proxy, n10, hVar), n10.o(), n10.s(), dVar.b(), dVar.c(), n10.u(), Authenticator.RequestorType.SERVER);
+                }
+                if (requestPasswordAuthentication != null) {
+                    if (z10) {
+                        str = "Proxy-Authorization";
+                    } else {
+                        str = "Authorization";
+                    }
+                    String userName = requestPasswordAuthentication.getUserName();
+                    Intrinsics.checkNotNullExpressionValue(userName, "auth.userName");
+                    char[] password = requestPasswordAuthentication.getPassword();
+                    Intrinsics.checkNotNullExpressionValue(password, "auth.password");
+                    return O0.k().e(str, g.a(userName, new String(password), dVar.a())).b();
+                }
+            }
+        }
+        return null;
+    }
+
+    public /* synthetic */ a(h hVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i10 & 1) != 0 ? h.f36060b : hVar);
     }
 }

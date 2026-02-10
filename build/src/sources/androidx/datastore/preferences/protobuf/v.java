@@ -3,13 +3,13 @@ package androidx.datastore.preferences.protobuf;
 class v implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final v f3978a = new v();
+    private static final v f3984a = new v();
 
     private v() {
     }
 
     public static v c() {
-        return f3978a;
+        return f3984a;
     }
 
     @Override // androidx.datastore.preferences.protobuf.n0

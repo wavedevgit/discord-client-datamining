@@ -6,19 +6,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d implements m {
 
     /* renamed from: d  reason: collision with root package name */
-    private final g[] f4625d;
+    private final g[] f4635d;
 
     public d(g[] generatedAdapters) {
         Intrinsics.checkNotNullParameter(generatedAdapters, "generatedAdapters");
-        this.f4625d = generatedAdapters;
+        this.f4635d = generatedAdapters;
     }
 
     @Override // androidx.lifecycle.m
-    public void k(LifecycleOwner source, Lifecycle.a event) {
+    public void i(LifecycleOwner source, Lifecycle.a event) {
         Intrinsics.checkNotNullParameter(source, "source");
         Intrinsics.checkNotNullParameter(event, "event");
         new v();
-        g[] gVarArr = this.f4625d;
+        g[] gVarArr = this.f4635d;
         if (gVarArr.length <= 0) {
             if (gVarArr.length <= 0) {
                 return;

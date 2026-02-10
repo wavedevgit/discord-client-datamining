@@ -9,8 +9,8 @@ import android.view.WindowInsets;
 import android.view.WindowManager;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
-import androidx.core.view.h0;
-import androidx.core.view.w0;
+import androidx.core.view.i0;
+import androidx.core.view.x0;
 import androidx.recyclerview.widget.RecyclerView;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.views.common.UiModeUtils;
@@ -27,13 +27,13 @@ public final class WindowUtilKt {
 
     public static final void disableEdgeToEdge(@NotNull Window window) {
         Intrinsics.checkNotNullParameter(window, "<this>");
-        w0.c(window, true);
+        x0.c(window, true);
     }
 
     public static final void enableEdgeToEdge(@NotNull Window window) {
         Intrinsics.checkNotNullParameter(window, "<this>");
         int i10 = 0;
-        w0.c(window, false);
+        x0.c(window, false);
         Context context = window.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         boolean isDarkMode = UiModeUtils.isDarkMode(context);
@@ -92,7 +92,7 @@ public final class WindowUtilKt {
         } else {
             window.getDecorView().setOnApplyWindowInsetsListener(null);
         }
-        h0.k0(window.getDecorView());
+        i0.h0(window.getDecorView());
     }
 
     /* JADX INFO: Access modifiers changed from: private */

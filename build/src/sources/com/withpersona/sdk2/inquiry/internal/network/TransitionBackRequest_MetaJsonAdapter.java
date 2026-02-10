@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class TransitionBackRequest_MetaJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19352a;
+    private final m.b f20232a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19353b;
+    private final com.squareup.moshi.h f20233b;
 
     public TransitionBackRequest_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("fromStep");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19352a = a10;
+        this.f20232a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "fromStep");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19353b = f10;
+        this.f20233b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,13 +35,13 @@ public final class TransitionBackRequest_MetaJsonAdapter extends com.squareup.mo
         reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19352a);
+            int J = reader.J(this.f20232a);
             if (J != -1) {
-                if (J == 0 && (str = (String) this.f19353b.fromJson(reader)) == null) {
-                    throw bn.c.x("fromStep", "fromStep", reader);
+                if (J == 0 && (str = (String) this.f20233b.fromJson(reader)) == null) {
+                    throw dn.c.x("fromStep", "fromStep", reader);
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -49,7 +49,7 @@ public final class TransitionBackRequest_MetaJsonAdapter extends com.squareup.mo
         if (str != null) {
             return new TransitionBackRequest.Meta(str);
         }
-        throw bn.c.o("fromStep", "fromStep", reader);
+        throw dn.c.o("fromStep", "fromStep", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -57,9 +57,9 @@ public final class TransitionBackRequest_MetaJsonAdapter extends com.squareup.mo
     public void toJson(t writer, TransitionBackRequest.Meta meta) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (meta != null) {
-            writer.k();
+            writer.i();
             writer.J("fromStep");
-            this.f19353b.toJson(writer, meta.a());
+            this.f20233b.toJson(writer, meta.a());
             writer.s();
             return;
         }

@@ -11,16 +11,16 @@ import java.util.concurrent.TimeoutException;
 public class a implements ServiceConnection {
 
     /* renamed from: d  reason: collision with root package name */
-    boolean f13866d = false;
+    boolean f14443d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private final BlockingQueue f13867e = new LinkedBlockingQueue();
+    private final BlockingQueue f14444e = new LinkedBlockingQueue();
 
     public IBinder a(long j10, TimeUnit timeUnit) {
         hf.q.k("BlockingServiceConnection.getServiceWithTimeout() called on main thread");
-        if (!this.f13866d) {
-            this.f13866d = true;
-            IBinder iBinder = (IBinder) this.f13867e.poll(j10, timeUnit);
+        if (!this.f14443d) {
+            this.f14443d = true;
+            IBinder iBinder = (IBinder) this.f14444e.poll(j10, timeUnit);
             if (iBinder != null) {
                 return iBinder;
             }
@@ -31,7 +31,7 @@ public class a implements ServiceConnection {
 
     @Override // android.content.ServiceConnection
     public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-        this.f13867e.add(iBinder);
+        this.f14444e.add(iBinder);
     }
 
     @Override // android.content.ServiceConnection

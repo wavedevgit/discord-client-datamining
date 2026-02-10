@@ -44,7 +44,7 @@ public final class TextTransform {
     static {
         TextTransform[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = yr.a.a($values);
+        $ENTRIES = hs.a.a($values);
         Companion = new Companion(null);
     }
 

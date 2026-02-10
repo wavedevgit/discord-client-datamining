@@ -45,7 +45,7 @@ public final class AttributeStyles_ESignatureSecondaryButtonStylesJsonAdapter ex
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 eSignatureSecondaryButtonStylesContainer = (AttributeStyles.ESignatureSecondaryButtonStylesContainer) this.nullableESignatureSecondaryButtonStylesContainerAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class AttributeStyles_ESignatureSecondaryButtonStylesJsonAdapter ex
     public void toJson(@NotNull t writer, AttributeStyles.ESignatureSecondaryButtonStyles eSignatureSecondaryButtonStyles) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignatureSecondaryButtonStyles != null) {
-            writer.k();
+            writer.i();
             writer.J("clearSignatureButton");
             this.nullableESignatureSecondaryButtonStylesContainerAdapter.toJson(writer, eSignatureSecondaryButtonStyles.getClearSignatureButton());
             writer.s();

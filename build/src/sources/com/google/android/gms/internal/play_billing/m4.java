@@ -18,82 +18,82 @@ public final class m4 {
     private static final /* synthetic */ m4[] E;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final m4 f14411e;
+    public static final m4 f14988e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final m4 f14412i;
+    public static final m4 f14989i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final m4 f14413o;
+    public static final m4 f14990o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final m4 f14414p;
+    public static final m4 f14991p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final m4 f14415q;
+    public static final m4 f14992q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final m4 f14416r;
+    public static final m4 f14993r;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final m4 f14417s;
+    public static final m4 f14994s;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final m4 f14418t;
+    public static final m4 f14995t;
 
     /* renamed from: u  reason: collision with root package name */
-    public static final m4 f14419u;
+    public static final m4 f14996u;
 
     /* renamed from: v  reason: collision with root package name */
-    public static final m4 f14420v;
+    public static final m4 f14997v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final m4 f14421w;
+    public static final m4 f14998w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final m4 f14422x;
+    public static final m4 f14999x;
 
     /* renamed from: y  reason: collision with root package name */
-    public static final m4 f14423y;
+    public static final m4 f15000y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final m4 f14424z;
+    public static final m4 f15001z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final n4 f14425d;
+    private final n4 f15002d;
 
     static {
         m4 m4Var = new m4("DOUBLE", 0, n4.DOUBLE, 1);
-        f14411e = m4Var;
+        f14988e = m4Var;
         m4 m4Var2 = new m4("FLOAT", 1, n4.FLOAT, 5);
-        f14412i = m4Var2;
+        f14989i = m4Var2;
         n4 n4Var = n4.LONG;
         m4 m4Var3 = new m4("INT64", 2, n4Var, 0);
-        f14413o = m4Var3;
+        f14990o = m4Var3;
         m4 m4Var4 = new m4("UINT64", 3, n4Var, 0);
-        f14414p = m4Var4;
+        f14991p = m4Var4;
         n4 n4Var2 = n4.INT;
         m4 m4Var5 = new m4("INT32", 4, n4Var2, 0);
-        f14415q = m4Var5;
+        f14992q = m4Var5;
         m4 m4Var6 = new m4("FIXED64", 5, n4Var, 1);
-        f14416r = m4Var6;
+        f14993r = m4Var6;
         m4 m4Var7 = new m4("FIXED32", 6, n4Var2, 5);
-        f14417s = m4Var7;
+        f14994s = m4Var7;
         m4 m4Var8 = new m4("BOOL", 7, n4.BOOLEAN, 0);
-        f14418t = m4Var8;
+        f14995t = m4Var8;
         m4 m4Var9 = new m4("STRING", 8, n4.STRING, 2);
-        f14419u = m4Var9;
+        f14996u = m4Var9;
         n4 n4Var3 = n4.MESSAGE;
         m4 m4Var10 = new m4("GROUP", 9, n4Var3, 3);
-        f14420v = m4Var10;
+        f14997v = m4Var10;
         m4 m4Var11 = new m4("MESSAGE", 10, n4Var3, 2);
-        f14421w = m4Var11;
+        f14998w = m4Var11;
         m4 m4Var12 = new m4("BYTES", 11, n4.BYTE_STRING, 2);
-        f14422x = m4Var12;
+        f14999x = m4Var12;
         m4 m4Var13 = new m4("UINT32", 12, n4Var2, 0);
-        f14423y = m4Var13;
+        f15000y = m4Var13;
         m4 m4Var14 = new m4("ENUM", 13, n4.ENUM, 0);
-        f14424z = m4Var14;
+        f15001z = m4Var14;
         m4 m4Var15 = new m4("SFIXED32", 14, n4Var2, 5);
         A = m4Var15;
         m4 m4Var16 = new m4("SFIXED64", 15, n4Var, 1);
@@ -106,7 +106,7 @@ public final class m4 {
     }
 
     private m4(String str, int i10, n4 n4Var, int i11) {
-        this.f14425d = n4Var;
+        this.f15002d = n4Var;
     }
 
     public static m4[] values() {
@@ -114,6 +114,6 @@ public final class m4 {
     }
 
     public final n4 a() {
-        return this.f14425d;
+        return this.f15002d;
     }
 }

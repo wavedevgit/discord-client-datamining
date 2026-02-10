@@ -1,20 +1,21 @@
 package x;
 
 import x.q;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-final class b extends q {
+public final class b extends q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final q.b f54280a;
+    private final q.b f54012a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final q.a f54281b;
+    private final q.a f54013b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(q.b bVar, q.a aVar) {
         if (bVar != null) {
-            this.f54280a = bVar;
-            this.f54281b = aVar;
+            this.f54012a = bVar;
+            this.f54013b = aVar;
             return;
         }
         throw new NullPointerException("Null type");
@@ -22,12 +23,12 @@ final class b extends q {
 
     @Override // x.q
     public q.a c() {
-        return this.f54281b;
+        return this.f54013b;
     }
 
     @Override // x.q
     public q.b d() {
-        return this.f54280a;
+        return this.f54012a;
     }
 
     public boolean equals(Object obj) {
@@ -37,7 +38,7 @@ final class b extends q {
         }
         if (obj instanceof q) {
             q qVar = (q) obj;
-            if (this.f54280a.equals(qVar.d()) && ((aVar = this.f54281b) != null ? aVar.equals(qVar.c()) : qVar.c() == null)) {
+            if (this.f54012a.equals(qVar.d()) && ((aVar = this.f54013b) != null ? aVar.equals(qVar.c()) : qVar.c() == null)) {
                 return true;
             }
         }
@@ -46,8 +47,8 @@ final class b extends q {
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = (this.f54280a.hashCode() ^ 1000003) * 1000003;
-        q.a aVar = this.f54281b;
+        int hashCode2 = (this.f54012a.hashCode() ^ 1000003) * 1000003;
+        q.a aVar = this.f54013b;
         if (aVar == null) {
             hashCode = 0;
         } else {
@@ -57,6 +58,6 @@ final class b extends q {
     }
 
     public String toString() {
-        return "CameraState{type=" + this.f54280a + ", error=" + this.f54281b + "}";
+        return "CameraState{type=" + this.f54012a + ", error=" + this.f54013b + "}";
     }
 }

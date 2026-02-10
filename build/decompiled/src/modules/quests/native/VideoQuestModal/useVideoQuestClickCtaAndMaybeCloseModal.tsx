@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[2] = var5;
         var1[3] = var4;
         var0 = function() { // Environment: var0
-            _fun84579: for (var _fun84579_ip = 0;;) switch (_fun84579_ip) {
+            _fun84635: for (var _fun84635_ip = 0;;) switch (_fun84635_ip) {
                 case 0:
                     var3 = _closure1_slot1;
                     var5 = _closure1_slot2;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = true;
                     var2 = var4.bind(var6)(var3, var2);
                     if (!var2) {
-                        _fun84579_ip = 89;
-                        continue _fun84579
+                        _fun84635_ip = 89;
+                        continue _fun84635
                     }
                 case 81:
                     var2 = _closure2_slot1;
@@ -106,4 +106,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useVideoQuestClickCtaAndMaybeCloseModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1457, 5343, 5370, 5283, 5330, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1457, 5353, 5380, 5293, 5340, 2]);

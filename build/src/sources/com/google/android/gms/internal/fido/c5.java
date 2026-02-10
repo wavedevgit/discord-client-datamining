@@ -8,24 +8,24 @@ import kotlin.jvm.internal.ByteCompanionObject;
 public final class c5 extends l5 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final e1 f14075d;
+    private final e1 f14652d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f14076e;
+    private final int f14653e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c5(e1 e1Var) {
         e1Var.getClass();
-        this.f14075d = e1Var;
+        this.f14652d = e1Var;
         int i10 = 0;
-        for (int i11 = 0; i11 < this.f14075d.size(); i11++) {
-            int a10 = ((l5) this.f14075d.get(i11)).a();
+        for (int i11 = 0; i11 < this.f14652d.size(); i11++) {
+            int a10 = ((l5) this.f14652d.get(i11)).a();
             if (i10 < a10) {
                 i10 = a10;
             }
         }
         int i12 = i10 + 1;
-        this.f14076e = i12;
+        this.f14653e = i12;
         if (i12 <= 8) {
             return;
         }
@@ -35,7 +35,7 @@ public final class c5 extends l5 {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.google.android.gms.internal.fido.l5
     public final int a() {
-        return this.f14076e;
+        return this.f14653e;
     }
 
     @Override // java.lang.Comparable
@@ -48,12 +48,12 @@ public final class c5 extends l5 {
             size = l5.e(ByteCompanionObject.MIN_VALUE);
         } else {
             c5 c5Var = (c5) l5Var;
-            if (this.f14075d.size() != c5Var.f14075d.size()) {
-                size = this.f14075d.size();
-                size2 = c5Var.f14075d.size();
+            if (this.f14652d.size() != c5Var.f14652d.size()) {
+                size = this.f14652d.size();
+                size2 = c5Var.f14652d.size();
             } else {
-                for (int i10 = 0; i10 < this.f14075d.size(); i10++) {
-                    int compareTo = ((l5) this.f14075d.get(i10)).compareTo((l5) c5Var.f14075d.get(i10));
+                for (int i10 = 0; i10 < this.f14652d.size(); i10++) {
+                    int compareTo = ((l5) this.f14652d.get(i10)).compareTo((l5) c5Var.f14652d.get(i10));
                     if (compareTo != 0) {
                         return compareTo;
                     }
@@ -71,19 +71,19 @@ public final class c5 extends l5 {
         if (obj == null || c5.class != obj.getClass()) {
             return false;
         }
-        return this.f14075d.equals(((c5) obj).f14075d);
+        return this.f14652d.equals(((c5) obj).f14652d);
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(l5.e(ByteCompanionObject.MIN_VALUE)), this.f14075d});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(l5.e(ByteCompanionObject.MIN_VALUE)), this.f14652d});
     }
 
     public final String toString() {
-        if (this.f14075d.isEmpty()) {
+        if (this.f14652d.isEmpty()) {
             return "[]";
         }
         ArrayList arrayList = new ArrayList();
-        e1 e1Var = this.f14075d;
+        e1 e1Var = this.f14652d;
         int size = e1Var.size();
         for (int i10 = 0; i10 < size; i10++) {
             arrayList.add(((l5) e1Var.get(i10)).toString().replace(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, "\n  "));

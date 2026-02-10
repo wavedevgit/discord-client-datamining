@@ -9,82 +9,82 @@ import java.util.Locale;
 public abstract class v {
 
     /* renamed from: a  reason: collision with root package name */
-    public static String f8244a = "Volley";
+    public static String f8821a = "Volley";
 
     /* renamed from: b  reason: collision with root package name */
-    public static boolean f8245b = Log.isLoggable("Volley", 2);
+    public static boolean f8822b = Log.isLoggable("Volley", 2);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String f8246c = v.class.getName();
+    private static final String f8823c = v.class.getName();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: c  reason: collision with root package name */
-        public static final boolean f8247c = v.f8245b;
+        public static final boolean f8824c = v.f8822b;
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f8248a = new ArrayList();
+        private final List f8825a = new ArrayList();
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f8249b = false;
+        private boolean f8826b = false;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* renamed from: com.android.volley.v$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static class C0161a {
+        public static class C0138a {
 
             /* renamed from: a  reason: collision with root package name */
-            public final String f8250a;
+            public final String f8827a;
 
             /* renamed from: b  reason: collision with root package name */
-            public final long f8251b;
+            public final long f8828b;
 
             /* renamed from: c  reason: collision with root package name */
-            public final long f8252c;
+            public final long f8829c;
 
-            public C0161a(String str, long j10, long j11) {
-                this.f8250a = str;
-                this.f8251b = j10;
-                this.f8252c = j11;
+            public C0138a(String str, long j10, long j11) {
+                this.f8827a = str;
+                this.f8828b = j10;
+                this.f8829c = j11;
             }
         }
 
         private long c() {
-            if (this.f8248a.size() == 0) {
+            if (this.f8825a.size() == 0) {
                 return 0L;
             }
-            long j10 = ((C0161a) this.f8248a.get(0)).f8252c;
-            List list = this.f8248a;
-            return ((C0161a) list.get(list.size() - 1)).f8252c - j10;
+            long j10 = ((C0138a) this.f8825a.get(0)).f8829c;
+            List list = this.f8825a;
+            return ((C0138a) list.get(list.size() - 1)).f8829c - j10;
         }
 
         public synchronized void a(String str, long j10) {
-            if (!this.f8249b) {
-                this.f8248a.add(new C0161a(str, j10, SystemClock.elapsedRealtime()));
+            if (!this.f8826b) {
+                this.f8825a.add(new C0138a(str, j10, SystemClock.elapsedRealtime()));
             } else {
                 throw new IllegalStateException("Marker added to finished log");
             }
         }
 
         public synchronized void b(String str) {
-            this.f8249b = true;
+            this.f8826b = true;
             long c10 = c();
             if (c10 <= 0) {
                 return;
             }
-            long j10 = ((C0161a) this.f8248a.get(0)).f8252c;
+            long j10 = ((C0138a) this.f8825a.get(0)).f8829c;
             v.b("(%-4d ms) %s", Long.valueOf(c10), str);
-            for (C0161a c0161a : this.f8248a) {
-                long j11 = c0161a.f8252c;
-                v.b("(+%-4d) [%2d] %s", Long.valueOf(j11 - j10), Long.valueOf(c0161a.f8251b), c0161a.f8250a);
+            for (C0138a c0138a : this.f8825a) {
+                long j11 = c0138a.f8829c;
+                v.b("(+%-4d) [%2d] %s", Long.valueOf(j11 - j10), Long.valueOf(c0138a.f8828b), c0138a.f8827a);
                 j10 = j11;
             }
         }
 
         protected void finalize() {
-            if (!this.f8249b) {
+            if (!this.f8826b) {
                 b("Request on the loose");
                 v.c("Marker log finalized without finish() - uncaught exit point for request", new Object[0]);
             }
@@ -100,7 +100,7 @@ public abstract class v {
         int i10 = 2;
         while (true) {
             if (i10 < stackTrace.length) {
-                if (!stackTrace[i10].getClassName().equals(f8246c)) {
+                if (!stackTrace[i10].getClassName().equals(f8823c)) {
                     String className = stackTrace[i10].getClassName();
                     String substring = className.substring(className.lastIndexOf(46) + 1);
                     str2 = substring.substring(substring.lastIndexOf(36) + 1) + "." + stackTrace[i10].getMethodName();
@@ -116,20 +116,20 @@ public abstract class v {
     }
 
     public static void b(String str, Object... objArr) {
-        Log.d(f8244a, a(str, objArr));
+        Log.d(f8821a, a(str, objArr));
     }
 
     public static void c(String str, Object... objArr) {
-        Log.e(f8244a, a(str, objArr));
+        Log.e(f8821a, a(str, objArr));
     }
 
     public static void d(Throwable th2, String str, Object... objArr) {
-        Log.e(f8244a, a(str, objArr), th2);
+        Log.e(f8821a, a(str, objArr), th2);
     }
 
     public static void e(String str, Object... objArr) {
-        if (f8245b) {
-            Log.v(f8244a, a(str, objArr));
+        if (f8822b) {
+            Log.v(f8821a, a(str, objArr));
         }
     }
 }

@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56173: for (var _fun56173_ip = 0;;) switch (_fun56173_ip) {
+        _fun56226: for (var _fun56226_ip = 0;;) switch (_fun56226_ip) {
             case 0:
                 var3 = arg0;
                 var11 = var3.message;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var5.bind(var6)(var7, var0, var15);
                 var0 = {};
                 if (!(!(var9 > var4))) {
-                    _fun56173_ip = 312;
-                    continue _fun56173
+                    _fun56226_ip = 312;
+                    continue _fun56226
                 }
             case 138:
                 var5 = _closure1_slot0;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = 'username';
                 var13 = null;
                 if (!(var19 === var15)) {
-                    _fun56173_ip = 236;
-                    continue _fun56173
+                    _fun56226_ip = 236;
+                    continue _fun56226
                 }
             case 233:
                 var13 = var14;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.roleColor = var14;
                 var13 = null;
                 if (!var17) {
-                    _fun56173_ip = 254;
-                    continue _fun56173
+                    _fun56226_ip = 254;
+                    continue _fun56226
                 }
             case 251:
                 var13 = var16;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = 'dot';
                 var13 = var13 === var15;
                 if (!var13) {
-                    _fun56173_ip = 274;
-                    continue _fun56173
+                    _fun56226_ip = 274;
+                    continue _fun56226
                 }
             case 270:
                 var13 = var18 != var14;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.medium = var13;
                 var4.usernameOnClick = var8;
                 var4 = var6.bind(var7)(var5, var4);
-                _fun56173_ip = 488;
-                continue _fun56173;
+                _fun56226_ip = 488;
+                continue _fun56226;
             case 312:
                 var6 = _closure1_slot0;
                 var13 = _closure1_slot2;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = 'username';
                 var12 = null;
                 if (!(var18 === var15)) {
-                    _fun56173_ip = 412;
-                    continue _fun56173
+                    _fun56226_ip = 412;
+                    continue _fun56226
                 }
             case 409:
                 var12 = var14;
@@ -151,8 +151,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.roleColor = var14;
                 var12 = null;
                 if (!var17) {
-                    _fun56173_ip = 430;
-                    continue _fun56173
+                    _fun56226_ip = 430;
+                    continue _fun56226
                 }
             case 427:
                 var12 = var16;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'dot';
                 var12 = var12 === var15;
                 if (!var12) {
-                    _fun56173_ip = 450;
-                    continue _fun56173
+                    _fun56226_ip = 450;
+                    continue _fun56226
                 }
             case 446:
                 var12 = var13 != var14;
@@ -190,4 +190,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createUserPremiumGuildSubscriptionSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6773, 6744, 6745, 1234, 6746, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6783, 6754, 6755, 1234, 6756, 2]);

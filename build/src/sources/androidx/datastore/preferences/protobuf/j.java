@@ -12,96 +12,96 @@ import java.util.logging.Logger;
 public abstract class j extends f {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Logger f3813c = Logger.getLogger(j.class.getName());
+    private static final Logger f3819c = Logger.getLogger(j.class.getName());
 
     /* renamed from: d  reason: collision with root package name */
-    private static final boolean f3814d = o1.C();
+    private static final boolean f3820d = o1.C();
 
     /* renamed from: a  reason: collision with root package name */
-    k f3815a;
+    k f3821a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f3816b;
+    private boolean f3822b;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static abstract class b extends j {
 
         /* renamed from: e  reason: collision with root package name */
-        final byte[] f3817e;
+        final byte[] f3823e;
 
         /* renamed from: f  reason: collision with root package name */
-        final int f3818f;
+        final int f3824f;
 
         /* renamed from: g  reason: collision with root package name */
-        int f3819g;
+        int f3825g;
 
         /* renamed from: h  reason: collision with root package name */
-        int f3820h;
+        int f3826h;
 
         b(int i10) {
             super();
             if (i10 >= 0) {
                 byte[] bArr = new byte[Math.max(i10, 20)];
-                this.f3817e = bArr;
-                this.f3818f = bArr.length;
+                this.f3823e = bArr;
+                this.f3824f = bArr.length;
                 return;
             }
             throw new IllegalArgumentException("bufferSize must be >= 0");
         }
 
         final void S0(byte b10) {
-            byte[] bArr = this.f3817e;
-            int i10 = this.f3819g;
-            this.f3819g = i10 + 1;
+            byte[] bArr = this.f3823e;
+            int i10 = this.f3825g;
+            this.f3825g = i10 + 1;
             bArr[i10] = b10;
-            this.f3820h++;
+            this.f3826h++;
         }
 
         final void T0(int i10) {
-            byte[] bArr = this.f3817e;
-            int i11 = this.f3819g;
+            byte[] bArr = this.f3823e;
+            int i11 = this.f3825g;
             int i12 = i11 + 1;
-            this.f3819g = i12;
+            this.f3825g = i12;
             bArr[i11] = (byte) (i10 & SetSpanOperation.SPAN_MAX_PRIORITY);
             int i13 = i11 + 2;
-            this.f3819g = i13;
+            this.f3825g = i13;
             bArr[i12] = (byte) ((i10 >> 8) & SetSpanOperation.SPAN_MAX_PRIORITY);
             int i14 = i11 + 3;
-            this.f3819g = i14;
+            this.f3825g = i14;
             bArr[i13] = (byte) ((i10 >> 16) & SetSpanOperation.SPAN_MAX_PRIORITY);
-            this.f3819g = i11 + 4;
+            this.f3825g = i11 + 4;
             bArr[i14] = (byte) ((i10 >> 24) & SetSpanOperation.SPAN_MAX_PRIORITY);
-            this.f3820h += 4;
+            this.f3826h += 4;
         }
 
         final void U0(long j10) {
-            byte[] bArr = this.f3817e;
-            int i10 = this.f3819g;
+            byte[] bArr = this.f3823e;
+            int i10 = this.f3825g;
             int i11 = i10 + 1;
-            this.f3819g = i11;
+            this.f3825g = i11;
             bArr[i10] = (byte) (j10 & 255);
             int i12 = i10 + 2;
-            this.f3819g = i12;
+            this.f3825g = i12;
             bArr[i11] = (byte) ((j10 >> 8) & 255);
             int i13 = i10 + 3;
-            this.f3819g = i13;
+            this.f3825g = i13;
             bArr[i12] = (byte) ((j10 >> 16) & 255);
             int i14 = i10 + 4;
-            this.f3819g = i14;
+            this.f3825g = i14;
             bArr[i13] = (byte) (255 & (j10 >> 24));
             int i15 = i10 + 5;
-            this.f3819g = i15;
+            this.f3825g = i15;
             bArr[i14] = (byte) (((int) (j10 >> 32)) & SetSpanOperation.SPAN_MAX_PRIORITY);
             int i16 = i10 + 6;
-            this.f3819g = i16;
+            this.f3825g = i16;
             bArr[i15] = (byte) (((int) (j10 >> 40)) & SetSpanOperation.SPAN_MAX_PRIORITY);
             int i17 = i10 + 7;
-            this.f3819g = i17;
+            this.f3825g = i17;
             bArr[i16] = (byte) (((int) (j10 >> 48)) & SetSpanOperation.SPAN_MAX_PRIORITY);
-            this.f3819g = i10 + 8;
+            this.f3825g = i10 + 8;
             bArr[i17] = (byte) (((int) (j10 >> 56)) & SetSpanOperation.SPAN_MAX_PRIORITY);
-            this.f3820h += 8;
+            this.f3826h += 8;
         }
 
         final void V0(int i10) {
@@ -117,67 +117,67 @@ public abstract class j extends f {
         }
 
         final void X0(int i10) {
-            if (j.f3814d) {
-                long j10 = this.f3819g;
+            if (j.f3820d) {
+                long j10 = this.f3825g;
                 while ((i10 & (-128)) != 0) {
-                    byte[] bArr = this.f3817e;
-                    int i11 = this.f3819g;
-                    this.f3819g = i11 + 1;
+                    byte[] bArr = this.f3823e;
+                    int i11 = this.f3825g;
+                    this.f3825g = i11 + 1;
                     o1.H(bArr, i11, (byte) ((i10 & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT));
                     i10 >>>= 7;
                 }
-                byte[] bArr2 = this.f3817e;
-                int i12 = this.f3819g;
-                this.f3819g = i12 + 1;
+                byte[] bArr2 = this.f3823e;
+                int i12 = this.f3825g;
+                this.f3825g = i12 + 1;
                 o1.H(bArr2, i12, (byte) i10);
-                this.f3820h += (int) (this.f3819g - j10);
+                this.f3826h += (int) (this.f3825g - j10);
                 return;
             }
             while ((i10 & (-128)) != 0) {
-                byte[] bArr3 = this.f3817e;
-                int i13 = this.f3819g;
-                this.f3819g = i13 + 1;
+                byte[] bArr3 = this.f3823e;
+                int i13 = this.f3825g;
+                this.f3825g = i13 + 1;
                 bArr3[i13] = (byte) ((i10 & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-                this.f3820h++;
+                this.f3826h++;
                 i10 >>>= 7;
             }
-            byte[] bArr4 = this.f3817e;
-            int i14 = this.f3819g;
-            this.f3819g = i14 + 1;
+            byte[] bArr4 = this.f3823e;
+            int i14 = this.f3825g;
+            this.f3825g = i14 + 1;
             bArr4[i14] = (byte) i10;
-            this.f3820h++;
+            this.f3826h++;
         }
 
         final void Y0(long j10) {
-            if (j.f3814d) {
-                long j11 = this.f3819g;
+            if (j.f3820d) {
+                long j11 = this.f3825g;
                 while ((j10 & (-128)) != 0) {
-                    byte[] bArr = this.f3817e;
-                    int i10 = this.f3819g;
-                    this.f3819g = i10 + 1;
+                    byte[] bArr = this.f3823e;
+                    int i10 = this.f3825g;
+                    this.f3825g = i10 + 1;
                     o1.H(bArr, i10, (byte) ((((int) j10) & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT));
                     j10 >>>= 7;
                 }
-                byte[] bArr2 = this.f3817e;
-                int i11 = this.f3819g;
-                this.f3819g = i11 + 1;
+                byte[] bArr2 = this.f3823e;
+                int i11 = this.f3825g;
+                this.f3825g = i11 + 1;
                 o1.H(bArr2, i11, (byte) j10);
-                this.f3820h += (int) (this.f3819g - j11);
+                this.f3826h += (int) (this.f3825g - j11);
                 return;
             }
             while ((j10 & (-128)) != 0) {
-                byte[] bArr3 = this.f3817e;
-                int i12 = this.f3819g;
-                this.f3819g = i12 + 1;
+                byte[] bArr3 = this.f3823e;
+                int i12 = this.f3825g;
+                this.f3825g = i12 + 1;
                 bArr3[i12] = (byte) ((((int) j10) & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-                this.f3820h++;
+                this.f3826h++;
                 j10 >>>= 7;
             }
-            byte[] bArr4 = this.f3817e;
-            int i13 = this.f3819g;
-            this.f3819g = i13 + 1;
+            byte[] bArr4 = this.f3823e;
+            int i13 = this.f3825g;
+            this.f3825g = i13 + 1;
             bArr4[i13] = (byte) j10;
-            this.f3820h++;
+            this.f3826h++;
         }
     }
 
@@ -192,24 +192,24 @@ public abstract class j extends f {
     private static final class d extends b {
 
         /* renamed from: i  reason: collision with root package name */
-        private final OutputStream f3821i;
+        private final OutputStream f3827i;
 
         d(OutputStream outputStream, int i10) {
             super(i10);
             if (outputStream != null) {
-                this.f3821i = outputStream;
+                this.f3827i = outputStream;
                 return;
             }
             throw new NullPointerException("out");
         }
 
         private void Z0() {
-            this.f3821i.write(this.f3817e, 0, this.f3819g);
-            this.f3819g = 0;
+            this.f3827i.write(this.f3823e, 0, this.f3825g);
+            this.f3825g = 0;
         }
 
         private void a1(int i10) {
-            if (this.f3818f - this.f3819g < i10) {
+            if (this.f3824f - this.f3825g < i10) {
                 Z0();
             }
         }
@@ -249,7 +249,7 @@ public abstract class j extends f {
                 int length = str.length() * 3;
                 int R = j.R(length);
                 int i10 = R + length;
-                int i11 = this.f3818f;
+                int i11 = this.f3824f;
                 if (i10 > i11) {
                     byte[] bArr = new byte[length];
                     int f10 = p1.f(str, bArr, 0, length);
@@ -257,29 +257,29 @@ public abstract class j extends f {
                     a(bArr, 0, f10);
                     return;
                 }
-                if (i10 > i11 - this.f3819g) {
+                if (i10 > i11 - this.f3825g) {
                     Z0();
                 }
                 int R2 = j.R(str.length());
-                int i12 = this.f3819g;
+                int i12 = this.f3825g;
                 try {
                     if (R2 == R) {
                         int i13 = i12 + R2;
-                        this.f3819g = i13;
-                        int f11 = p1.f(str, this.f3817e, i13, this.f3818f - i13);
-                        this.f3819g = i12;
+                        this.f3825g = i13;
+                        int f11 = p1.f(str, this.f3823e, i13, this.f3824f - i13);
+                        this.f3825g = i12;
                         g10 = (f11 - i12) - R2;
                         X0(g10);
-                        this.f3819g = f11;
+                        this.f3825g = f11;
                     } else {
                         g10 = p1.g(str);
                         X0(g10);
-                        this.f3819g = p1.f(str, this.f3817e, this.f3819g, g10);
+                        this.f3825g = p1.f(str, this.f3823e, this.f3825g, g10);
                     }
-                    this.f3820h += g10;
+                    this.f3826h += g10;
                 } catch (p1.d e10) {
-                    this.f3820h -= this.f3819g - i12;
-                    this.f3819g = i12;
+                    this.f3826h -= this.f3825g - i12;
+                    this.f3825g = i12;
                     throw e10;
                 } catch (ArrayIndexOutOfBoundsException e11) {
                     throw new c(e11);
@@ -322,7 +322,7 @@ public abstract class j extends f {
 
         @Override // androidx.datastore.preferences.protobuf.j
         public void W() {
-            if (this.f3819g > 0) {
+            if (this.f3825g > 0) {
                 Z0();
             }
         }
@@ -334,7 +334,7 @@ public abstract class j extends f {
 
         @Override // androidx.datastore.preferences.protobuf.j
         public void a0(byte b10) {
-            if (this.f3819g == this.f3818f) {
+            if (this.f3825g == this.f3824f) {
                 Z0();
             }
             S0(b10);
@@ -348,28 +348,28 @@ public abstract class j extends f {
         }
 
         public void b1(byte[] bArr, int i10, int i11) {
-            int i12 = this.f3818f;
-            int i13 = this.f3819g;
+            int i12 = this.f3824f;
+            int i13 = this.f3825g;
             if (i12 - i13 >= i11) {
-                System.arraycopy(bArr, i10, this.f3817e, i13, i11);
-                this.f3819g += i11;
-                this.f3820h += i11;
+                System.arraycopy(bArr, i10, this.f3823e, i13, i11);
+                this.f3825g += i11;
+                this.f3826h += i11;
                 return;
             }
             int i14 = i12 - i13;
-            System.arraycopy(bArr, i10, this.f3817e, i13, i14);
+            System.arraycopy(bArr, i10, this.f3823e, i13, i14);
             int i15 = i10 + i14;
             int i16 = i11 - i14;
-            this.f3819g = this.f3818f;
-            this.f3820h += i14;
+            this.f3825g = this.f3824f;
+            this.f3826h += i14;
             Z0();
-            if (i16 <= this.f3818f) {
-                System.arraycopy(bArr, i15, this.f3817e, 0, i16);
-                this.f3819g = i16;
+            if (i16 <= this.f3824f) {
+                System.arraycopy(bArr, i15, this.f3823e, 0, i16);
+                this.f3825g = i16;
             } else {
-                this.f3821i.write(bArr, i15, i16);
+                this.f3827i.write(bArr, i15, i16);
             }
-            this.f3820h += i16;
+            this.f3826h += i16;
         }
 
         public void c1(int i10, o0 o0Var) {
@@ -379,7 +379,7 @@ public abstract class j extends f {
 
         void d1(o0 o0Var, d1 d1Var) {
             P0(((androidx.datastore.preferences.protobuf.a) o0Var).d(d1Var));
-            d1Var.i(o0Var, this.f3815a);
+            d1Var.i(o0Var, this.f3821a);
         }
 
         @Override // androidx.datastore.preferences.protobuf.j
@@ -512,7 +512,7 @@ public abstract class j extends f {
         try {
             length = p1.g(str);
         } catch (p1.d unused) {
-            length = str.getBytes(y.f3993a).length;
+            length = str.getBytes(y.f3999a).length;
         }
         return y(length);
     }
@@ -732,8 +732,8 @@ public abstract class j extends f {
     public abstract void W();
 
     final void X(String str, p1.d dVar) {
-        f3813c.log(Level.WARNING, "Converting ill-formed UTF-16. Your Protocol Buffer will not round trip correctly!", (Throwable) dVar);
-        byte[] bytes = str.getBytes(y.f3993a);
+        f3819c.log(Level.WARNING, "Converting ill-formed UTF-16. Your Protocol Buffer will not round trip correctly!", (Throwable) dVar);
+        byte[] bytes = str.getBytes(y.f3999a);
         try {
             P0(bytes.length);
             a(bytes, 0, bytes.length);
@@ -746,7 +746,7 @@ public abstract class j extends f {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean Y() {
-        return this.f3816b;
+        return this.f3822b;
     }
 
     @Override // androidx.datastore.preferences.protobuf.f
@@ -820,7 +820,7 @@ public abstract class j extends f {
     }
 
     final void u0(o0 o0Var, d1 d1Var) {
-        d1Var.i(o0Var, this.f3815a);
+        d1Var.i(o0Var, this.f3821a);
     }
 
     public abstract void v0(int i10, int i11);

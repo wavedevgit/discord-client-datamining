@@ -9,7 +9,7 @@ import k4.g;
 public abstract class Worker extends c {
 
     /* renamed from: p  reason: collision with root package name */
-    androidx.work.impl.utils.futures.c f5600p;
+    androidx.work.impl.utils.futures.c f5610p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Runnable {
@@ -19,9 +19,9 @@ public abstract class Worker extends c {
         @Override // java.lang.Runnable
         public void run() {
             try {
-                Worker.this.f5600p.p(Worker.this.p());
+                Worker.this.f5610p.p(Worker.this.p());
             } catch (Throwable th2) {
-                Worker.this.f5600p.q(th2);
+                Worker.this.f5610p.q(th2);
             }
         }
     }
@@ -30,18 +30,18 @@ public abstract class Worker extends c {
     class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ androidx.work.impl.utils.futures.c f5602d;
+        final /* synthetic */ androidx.work.impl.utils.futures.c f5612d;
 
         b(androidx.work.impl.utils.futures.c cVar) {
-            this.f5602d = cVar;
+            this.f5612d = cVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             try {
-                this.f5602d.p(Worker.this.q());
+                this.f5612d.p(Worker.this.q());
             } catch (Throwable th2) {
-                this.f5602d.q(th2);
+                this.f5612d.q(th2);
             }
         }
     }
@@ -59,9 +59,9 @@ public abstract class Worker extends c {
 
     @Override // androidx.work.c
     public final ListenableFuture n() {
-        this.f5600p = androidx.work.impl.utils.futures.c.t();
+        this.f5610p = androidx.work.impl.utils.futures.c.t();
         c().execute(new a());
-        return this.f5600p;
+        return this.f5610p;
     }
 
     public abstract c.a p();

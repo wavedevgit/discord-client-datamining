@@ -1,41 +1,34 @@
 package at;
 
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import at.w;
+import dt.f0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g {
+public interface g extends w, v {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final g f6053d = new g("AM", 0);
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f6164a = b.f6165a;
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final g f6054e = new g("PM", 1);
-
-    /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ g[] f6055i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f6056o;
-
-    static {
-        g[] a10 = a();
-        f6055i = a10;
-        f6056o = yr.a.a(a10);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static boolean a(g gVar, Object obj) {
+            return w.a.b(gVar, obj);
+        }
     }
 
-    private g(String str, int i10) {
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b {
 
-    private static final /* synthetic */ g[] a() {
-        return new g[]{f6053d, f6054e};
-    }
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ b f6165a = new b();
 
-    public static g valueOf(String str) {
-        return (g) Enum.valueOf(g.class, str);
-    }
+        /* renamed from: b  reason: collision with root package name */
+        private static final int f6166b = f0.b("kotlinx.coroutines.channels.defaultBuffer", 64, 1, 2147483646);
 
-    public static g[] values() {
-        return (g[]) f6055i.clone();
+        private b() {
+        }
+
+        public final int a() {
+            return f6166b;
+        }
     }
 }

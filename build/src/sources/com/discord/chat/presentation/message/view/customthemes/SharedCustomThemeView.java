@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import androidx.core.view.o0;
+import androidx.core.view.p0;
 import com.discord.chat.bridge.customthemes.SharedCustomThemeData;
 import com.discord.chat.databinding.SharedCustomThemeViewBinding;
 import com.discord.core.DCDButton;
@@ -56,11 +56,11 @@ public final class SharedCustomThemeView extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind_pPZZVto$lambda$2(Function1 function1, String str, View view) {
-        function1.invoke(MessageId.m1083boximpl(str));
+        function1.invoke(MessageId.m1084boximpl(str));
     }
 
     /* renamed from: bind-pPZZVto  reason: not valid java name */
-    public final void m708bindpPZZVto(@NotNull final String messageId, @NotNull SharedCustomThemeData sharedCustomThemeData, String str, @NotNull final Function1<? super MessageId, Unit> onTapPreview, @NotNull Function1<? super MessageId, Unit> onViewed) {
+    public final void m709bindpPZZVto(@NotNull final String messageId, @NotNull SharedCustomThemeData sharedCustomThemeData, String str, @NotNull final Function1<? super MessageId, Unit> onTapPreview, @NotNull Function1<? super MessageId, Unit> onViewed) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(sharedCustomThemeData, "sharedCustomThemeData");
         Intrinsics.checkNotNullParameter(onTapPreview, "onTapPreview");
@@ -95,7 +95,7 @@ public final class SharedCustomThemeView extends LinearLayout {
         this.binding.previewHeading.setPadding(0, 0, 0, SizeUtilsKt.getDpToPx(6.0f));
         FlexboxLayout heading = this.binding.heading;
         Intrinsics.checkNotNullExpressionValue(heading, "heading");
-        if (!k.B(o0.a(heading), this.nitroWheelIcon)) {
+        if (!k.B(p0.a(heading), this.nitroWheelIcon)) {
             SimpleDraweeView simpleDraweeView = this.nitroWheelIcon;
             FlexboxLayout.LayoutParams layoutParams = new FlexboxLayout.LayoutParams(SizeUtilsKt.getDpToPx(18.0f), SizeUtilsKt.getDpToPx(13.0f));
             layoutParams.setMarginStart(SizeUtilsKt.getDpToPx(4.0f));
@@ -156,7 +156,7 @@ public final class SharedCustomThemeView extends LinearLayout {
         if (!this.hasViewed && (str = this.messageId) != null) {
             Function1<? super MessageId, Unit> function1 = this.onViewed;
             if (function1 != null) {
-                function1.invoke(MessageId.m1083boximpl(str));
+                function1.invoke(MessageId.m1084boximpl(str));
             }
             this.hasViewed = true;
         }

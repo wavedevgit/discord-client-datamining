@@ -5,7 +5,7 @@ import android.graphics.BlendMode;
 import android.os.Build;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.core.view.n0;
+import androidx.core.view.o0;
 import com.facebook.react.R;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
@@ -24,7 +24,7 @@ public final class BlendModeHelper {
 
     public static final boolean needsIsolatedLayer(@NotNull ViewGroup view) {
         Intrinsics.checkNotNullParameter(view, "view");
-        for (View view2 : n0.a(view)) {
+        for (View view2 : o0.a(view)) {
             if (view2.getTag(R.id.mix_blend_mode) != null) {
                 return true;
             }

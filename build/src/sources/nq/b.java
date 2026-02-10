@@ -1,59 +1,39 @@
 package nq;
 
-import android.content.Context;
-import android.view.View;
-import android.view.ViewGroup;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import com.withpersona.sdk2.inquiry.network.dto.ui.components.RemoteImage;
-import com.withpersona.sdk2.inquiry.steps.ui.components.f;
-import cq.s;
-import gq.m5;
-import gq.r4;
-import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
+import android.os.Parcelable;
+import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyles;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import kotlin.collections.o0;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-    public static final View b(RemoteImage remoteImage, ConstraintLayout container, boolean z10) {
-        Intrinsics.checkNotNullParameter(remoteImage, "<this>");
-        Intrinsics.checkNotNullParameter(container, "container");
-        Context context = container.getContext();
-        Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        final m5 m5Var = new m5(context);
-        View m10 = r4.m(f.k(remoteImage), m5Var, remoteImage);
-        container.addView(m10);
-        ViewGroup.LayoutParams layoutParams = m10.getLayoutParams();
-        if (layoutParams != null) {
-            ConstraintLayout.LayoutParams layoutParams2 = (ConstraintLayout.LayoutParams) layoutParams;
-            layoutParams2.f2573i = 0;
-            layoutParams2.f2595t = 0;
-            layoutParams2.f2599v = 0;
-            if (z10) {
-                layoutParams2.f2579l = 0;
+public interface b extends Parcelable {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final Map f38242a = new LinkedHashMap();
+
+        public final a a(String str, Function1 cb2) {
+            Intrinsics.checkNotNullParameter(cb2, "cb");
+            if (str == null) {
+                return this;
             }
-            m10.setLayoutParams(layoutParams2);
-            s.b(container, new Function0() { // from class: nq.a
-                @Override // kotlin.jvm.functions.Function0
-                public final Object invoke() {
-                    Unit d10;
-                    d10 = b.d(m5.this);
-                    return d10;
-                }
-            });
-            return m10;
+            this.f38242a.put(str, cb2);
+            return this;
         }
-        throw new NullPointerException("null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout.LayoutParams");
+
+        public final List b() {
+            return o0.A(this.f38242a);
+        }
     }
 
-    public static /* synthetic */ View c(RemoteImage remoteImage, ConstraintLayout constraintLayout, boolean z10, int i10, Object obj) {
-        if ((i10 & 2) != 0) {
-            z10 = false;
-        }
-        return b(remoteImage, constraintLayout, z10);
-    }
+    List E0();
 
-    public static final Unit d(m5 m5Var) {
-        m5Var.c();
-        return Unit.f31765a;
-    }
+    List getComponents();
+
+    StepStyles.UiStepStyle getStyles();
 }

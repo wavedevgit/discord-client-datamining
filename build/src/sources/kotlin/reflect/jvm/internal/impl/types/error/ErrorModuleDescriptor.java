@@ -1,5 +1,6 @@
 package kotlin.reflect.jvm.internal.impl.types.error;
 
+import as.l;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
@@ -19,35 +20,34 @@ import kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations;
 import kotlin.reflect.jvm.internal.impl.name.FqName;
 import kotlin.reflect.jvm.internal.impl.name.Name;
 import org.jetbrains.annotations.NotNull;
-import rr.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class ErrorModuleDescriptor implements ModuleDescriptor {
     @NotNull
     public static final ErrorModuleDescriptor INSTANCE = new ErrorModuleDescriptor();
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Name f34455d;
+    private static final Name f34677d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final List f34456e;
+    private static final List f34678e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final List f34457i;
+    private static final List f34679i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Set f34458o;
+    private static final Set f34680o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Lazy f34459p;
+    private static final Lazy f34681p;
 
     static {
         Name special = Name.special(ErrorEntity.ERROR_MODULE.getDebugText());
         Intrinsics.checkNotNullExpressionValue(special, "special(...)");
-        f34455d = special;
-        f34456e = CollectionsKt.l();
-        f34457i = CollectionsKt.l();
-        f34458o = x0.d();
-        f34459p = l.a(a.f34486d);
+        f34677d = special;
+        f34678e = CollectionsKt.l();
+        f34679i = CollectionsKt.l();
+        f34680o = x0.d();
+        f34681p = l.b(a.f34708d);
     }
 
     private ErrorModuleDescriptor() {
@@ -73,7 +73,7 @@ public final class ErrorModuleDescriptor implements ModuleDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor
     @NotNull
     public KotlinBuiltIns getBuiltIns() {
-        return (KotlinBuiltIns) f34459p.getValue();
+        return (KotlinBuiltIns) f34681p.getValue();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor
@@ -90,7 +90,7 @@ public final class ErrorModuleDescriptor implements ModuleDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor
     @NotNull
     public List<ModuleDescriptor> getExpectedByModules() {
-        return f34457i;
+        return f34679i;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.Named
@@ -114,7 +114,7 @@ public final class ErrorModuleDescriptor implements ModuleDescriptor {
 
     @NotNull
     public Name getStableName() {
-        return f34455d;
+        return f34677d;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor

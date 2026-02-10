@@ -10,13 +10,13 @@ public final class ExcludedTypeAnnotations {
     public static final ExcludedTypeAnnotations INSTANCE = new ExcludedTypeAnnotations();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f33821a = x0.i(new FqName("kotlin.internal.NoInfer"), new FqName("kotlin.internal.Exact"));
+    private static final Set f34043a = x0.i(new FqName("kotlin.internal.NoInfer"), new FqName("kotlin.internal.Exact"));
 
     private ExcludedTypeAnnotations() {
     }
 
     @NotNull
     public final Set<FqName> getInternalAnnotationsForResolve() {
-        return f33821a;
+        return f34043a;
     }
 }

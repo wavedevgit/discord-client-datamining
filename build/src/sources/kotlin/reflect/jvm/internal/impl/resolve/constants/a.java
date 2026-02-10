@@ -9,16 +9,16 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 public class a implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final PrimitiveType f33912d;
+    private final PrimitiveType f34134d;
 
     public a(PrimitiveType primitiveType) {
-        this.f33912d = primitiveType;
+        this.f34134d = primitiveType;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         KotlinType c10;
-        c10 = ConstantValueFactory.c(this.f33912d, (ModuleDescriptor) obj);
+        c10 = ConstantValueFactory.c(this.f34134d, (ModuleDescriptor) obj);
         return c10;
     }
 }

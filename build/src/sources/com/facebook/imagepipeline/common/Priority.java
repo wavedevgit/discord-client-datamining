@@ -9,22 +9,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class Priority {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f10479d;
+    public static final a f11056d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final Priority f10480e = new Priority("LOW", 0);
+    public static final Priority f11057e = new Priority("LOW", 0);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final Priority f10481i = new Priority("MEDIUM", 1);
+    public static final Priority f11058i = new Priority("MEDIUM", 1);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final Priority f10482o = new Priority("HIGH", 2);
+    public static final Priority f11059o = new Priority("HIGH", 2);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ Priority[] f10483p;
+    private static final /* synthetic */ Priority[] f11060p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f10484q;
+    private static final /* synthetic */ EnumEntries f11061q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -47,20 +47,20 @@ public final class Priority {
 
     static {
         Priority[] a10 = a();
-        f10483p = a10;
-        f10484q = yr.a.a(a10);
-        f10479d = new a(null);
+        f11060p = a10;
+        f11061q = hs.a.a(a10);
+        f11056d = new a(null);
     }
 
     private Priority(String str, int i10) {
     }
 
     private static final /* synthetic */ Priority[] a() {
-        return new Priority[]{f10480e, f10481i, f10482o};
+        return new Priority[]{f11057e, f11058i, f11059o};
     }
 
     public static final Priority d(Priority priority, Priority priority2) {
-        return f10479d.a(priority, priority2);
+        return f11056d.a(priority, priority2);
     }
 
     public static Priority valueOf(String str) {
@@ -68,6 +68,6 @@ public final class Priority {
     }
 
     public static Priority[] values() {
-        return (Priority[]) f10483p.clone();
+        return (Priority[]) f11060p.clone();
     }
 }

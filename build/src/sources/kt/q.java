@@ -1,77 +1,52 @@
 package kt;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
-import kotlin.Result;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.reflect.KClass;
-import kotlin.reflect.KType;
-import kotlinx.serialization.KSerializer;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class q implements s1 {
+final class q extends mt.c0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Function2 f35204a;
+    /* renamed from: e  reason: collision with root package name */
+    private final h0 f35292e;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final r f35205b;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a implements Function0 {
-        @Override // kotlin.jvm.functions.Function0
-        public final Object invoke() {
-            return new r1();
-        }
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public q(kt.h0 r5) {
+        /*
+            r4 = this;
+            java.lang.String r0 = "padding"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
+            kt.i r0 = kt.i.f35204a
+            mt.b0 r0 = r0.a()
+            kt.h0 r1 = kt.h0.f35200e
+            r2 = 2
+            if (r5 != r1) goto L12
+            r1 = r2
+            goto L13
+        L12:
+            r1 = 1
+        L13:
+            kt.h0 r3 = kt.h0.f35201i
+            if (r5 != r3) goto L1c
+            java.lang.Integer r2 = java.lang.Integer.valueOf(r2)
+            goto L1d
+        L1c:
+            r2 = 0
+        L1d:
+            r4.<init>(r0, r1, r2)
+            r4.f35292e = r5
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: kt.q.<init>(kt.h0):void");
     }
 
-    public q(Function2 compute) {
-        Intrinsics.checkNotNullParameter(compute, "compute");
-        this.f35204a = compute;
-        this.f35205b = new r();
+    public boolean equals(Object obj) {
+        if ((obj instanceof q) && this.f35292e == ((q) obj).f35292e) {
+            return true;
+        }
+        return false;
     }
 
-    @Override // kt.s1
-    public Object a(KClass key, List types) {
-        ConcurrentHashMap concurrentHashMap;
-        Object b10;
-        Intrinsics.checkNotNullParameter(key, "key");
-        Intrinsics.checkNotNullParameter(types, "types");
-        Object obj = this.f35205b.get(es.a.b(key));
-        Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
-        e1 e1Var = (e1) obj;
-        Object obj2 = e1Var.f35131a.get();
-        if (obj2 == null) {
-            obj2 = e1Var.a(new a());
-        }
-        r1 r1Var = (r1) obj2;
-        List<KType> list = types;
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-        for (KType kType : list) {
-            arrayList.add(new r0(kType));
-        }
-        concurrentHashMap = r1Var.f35210a;
-        Object obj3 = concurrentHashMap.get(arrayList);
-        if (obj3 == null) {
-            try {
-                Result.a aVar = Result.f31762e;
-                b10 = Result.b((KSerializer) this.f35204a.invoke(key, types));
-            } catch (Throwable th2) {
-                Result.a aVar2 = Result.f31762e;
-                b10 = Result.b(kotlin.c.a(th2));
-            }
-            Result a10 = Result.a(b10);
-            Object putIfAbsent = concurrentHashMap.putIfAbsent(arrayList, a10);
-            if (putIfAbsent == null) {
-                obj3 = a10;
-            } else {
-                obj3 = putIfAbsent;
-            }
-        }
-        Intrinsics.checkNotNullExpressionValue(obj3, "getOrPut(...)");
-        return ((Result) obj3).j();
+    public int hashCode() {
+        return this.f35292e.hashCode();
     }
 }

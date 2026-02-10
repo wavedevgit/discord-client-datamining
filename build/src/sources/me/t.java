@@ -7,10 +7,10 @@ import java.util.regex.Pattern;
 public abstract class t {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Pattern f37047a = Pattern.compile("bytes (\\d+)-(\\d+)/(?:\\d+|\\*)");
+    private static final Pattern f36422a = Pattern.compile("bytes (\\d+)-(\\d+)/(?:\\d+|\\*)");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f37048b = Pattern.compile("bytes (?:(?:\\d+-\\d+)|\\*)/(\\d+)");
+    private static final Pattern f36423b = Pattern.compile("bytes (?:(?:\\d+-\\d+)|\\*)/(\\d+)");
 
     public static String a(long j10, long j11) {
         if (j10 == 0 && j11 == -1) {
@@ -54,7 +54,7 @@ public abstract class t {
         L28:
             boolean r0 = android.text.TextUtils.isEmpty(r10)
             if (r0 != 0) goto La3
-            java.util.regex.Pattern r0 = me.t.f37047a
+            java.util.regex.Pattern r0 = me.t.f36422a
             java.util.regex.Matcher r0 = r0.matcher(r10)
             boolean r5 = r0.matches()
             if (r5 == 0) goto La3
@@ -111,7 +111,7 @@ public abstract class t {
         if (TextUtils.isEmpty(str)) {
             return -1L;
         }
-        Matcher matcher = f37048b.matcher(str);
+        Matcher matcher = f36423b.matcher(str);
         if (!matcher.matches()) {
             return -1L;
         }

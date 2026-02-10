@@ -51,7 +51,7 @@ public final class NextStep_Ui_PromptPageJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -85,7 +85,7 @@ public final class NextStep_Ui_PromptPageJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Ui.PromptPage promptPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
-            writer.k();
+            writer.i();
             writer.J("gpsPermissionsBtnCancel");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsPermissionsBtnCancel());
             writer.J("gpsPermissionsBtnContinueMobile");

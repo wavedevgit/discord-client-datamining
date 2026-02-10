@@ -15,41 +15,41 @@ import java.util.SortedMap;
 public final class l1 extends f1 implements NavigableMap {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Comparator f14145q;
+    private static final Comparator f14722q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final l1 f14146r;
+    private static final l1 f14723r;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final /* synthetic */ int f14147s = 0;
+    public static final /* synthetic */ int f14724s = 0;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient v1 f14148i;
+    private final transient v1 f14725i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient e1 f14149o;
+    private final transient e1 f14726o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient l1 f14150p;
+    private final transient l1 f14727p;
 
     static {
-        q1 q1Var = q1.f14192d;
-        f14145q = q1Var;
+        q1 q1Var = q1.f14769d;
+        f14722q = q1Var;
         v1 x10 = m1.x(q1Var);
-        int i10 = e1.f14090i;
-        f14146r = new l1(x10, t1.f14218q, null);
+        int i10 = e1.f14667i;
+        f14723r = new l1(x10, t1.f14795q, null);
     }
 
     l1(v1 v1Var, e1 e1Var, l1 l1Var) {
-        this.f14148i = v1Var;
-        this.f14149o = e1Var;
-        this.f14150p = l1Var;
+        this.f14725i = v1Var;
+        this.f14726o = e1Var;
+        this.f14727p = l1Var;
     }
 
     public static l1 e(Map map) {
         boolean equals;
         Set set;
-        Comparator comparator = f14145q;
+        Comparator comparator = f14722q;
         final s1 s1Var = (s1) comparator;
         Comparator comparator2 = ((SortedMap) map).comparator();
         int i10 = 1;
@@ -63,7 +63,7 @@ public final class l1 extends f1 implements NavigableMap {
             equals = s1Var.equals(comparator2);
         }
         Set entrySet = map.entrySet();
-        Map.Entry[] entryArr = f1.f14102e;
+        Map.Entry[] entryArr = f1.f14679e;
         if (entrySet instanceof Collection) {
             set = entrySet;
         } else {
@@ -98,7 +98,7 @@ public final class l1 extends f1 implements NavigableMap {
                         public final int compare(Object obj, Object obj2) {
                             Map.Entry entry3 = (Map.Entry) obj;
                             Map.Entry entry4 = (Map.Entry) obj2;
-                            int i12 = l1.f14147s;
+                            int i12 = l1.f14724s;
                             Objects.requireNonNull(entry3);
                             Objects.requireNonNull(entry4);
                             return s1Var.compare(entry3.getKey(), entry4.getKey());
@@ -132,7 +132,7 @@ public final class l1 extends f1 implements NavigableMap {
                         }
                     }
                 }
-                return new l1(new v1(e1.i(objArr, length), s1Var), e1.i(objArr2, length), null);
+                return new l1(new v1(e1.j(objArr, length), s1Var), e1.j(objArr2, length), null);
             }
             Map.Entry entry9 = entryArr2[0];
             Objects.requireNonNull(entry9);
@@ -143,37 +143,37 @@ public final class l1 extends f1 implements NavigableMap {
     }
 
     static l1 f(Comparator comparator) {
-        if (q1.f14192d.equals(comparator)) {
-            return f14146r;
+        if (q1.f14769d.equals(comparator)) {
+            return f14723r;
         }
         v1 x10 = m1.x(comparator);
-        int i10 = e1.f14090i;
-        return new l1(x10, t1.f14218q, null);
+        int i10 = e1.f14667i;
+        return new l1(x10, t1.f14795q, null);
     }
 
     private final l1 k(int i10, int i11) {
         if (i10 == 0) {
-            if (i11 != this.f14149o.size()) {
+            if (i11 != this.f14726o.size()) {
                 i10 = 0;
             } else {
                 return this;
             }
         }
         if (i10 == i11) {
-            return f(this.f14148i.f14160i);
+            return f(this.f14725i.f14737i);
         }
-        return new l1(this.f14148i.D(i10, i11), this.f14149o.subList(i10, i11), null);
+        return new l1(this.f14725i.D(i10, i11), this.f14726o.subList(i10, i11), null);
     }
 
     @Override // com.google.android.gms.internal.fido.f1
     public final z0 a() {
-        return this.f14149o;
+        return this.f14726o;
     }
 
     @Override // com.google.android.gms.internal.fido.f1
     final h1 b() {
         if (isEmpty()) {
-            return u1.f14228t;
+            return u1.f14805t;
         }
         return new k1(this);
     }
@@ -190,21 +190,21 @@ public final class l1 extends f1 implements NavigableMap {
 
     @Override // java.util.SortedMap
     public final Comparator comparator() {
-        return this.f14148i.f14160i;
+        return this.f14725i.f14737i;
     }
 
     @Override // java.util.NavigableMap
     public final /* synthetic */ NavigableSet descendingKeySet() {
-        return this.f14148i.descendingSet();
+        return this.f14725i.descendingSet();
     }
 
     @Override // java.util.NavigableMap
     public final /* bridge */ /* synthetic */ NavigableMap descendingMap() {
         s1 w0Var;
-        l1 l1Var = this.f14150p;
+        l1 l1Var = this.f14727p;
         if (l1Var == null) {
             if (isEmpty()) {
-                Comparator comparator = this.f14148i.f14160i;
+                Comparator comparator = this.f14725i.f14737i;
                 if (comparator instanceof s1) {
                     w0Var = (s1) comparator;
                 } else {
@@ -212,7 +212,7 @@ public final class l1 extends f1 implements NavigableMap {
                 }
                 return f(w0Var.a());
             }
-            return new l1((v1) this.f14148i.descendingSet(), this.f14149o.g(), this);
+            return new l1((v1) this.f14725i.descendingSet(), this.f14726o.g(), this);
         }
         return l1Var;
     }
@@ -227,12 +227,12 @@ public final class l1 extends f1 implements NavigableMap {
         if (isEmpty()) {
             return null;
         }
-        return (Map.Entry) c().j().get(0);
+        return (Map.Entry) c().k().get(0);
     }
 
     @Override // java.util.SortedMap
     public final Object firstKey() {
-        return this.f14148i.first();
+        return this.f14725i.first();
     }
 
     @Override // java.util.NavigableMap
@@ -249,7 +249,7 @@ public final class l1 extends f1 implements NavigableMap {
     /* renamed from: g */
     public final l1 headMap(Object obj, boolean z10) {
         obj.getClass();
-        return k(0, this.f14148i.B(obj, z10));
+        return k(0, this.f14725i.B(obj, z10));
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:6:0x000f, code lost:
@@ -263,15 +263,15 @@ public final class l1 extends f1 implements NavigableMap {
     public final java.lang.Object get(java.lang.Object r4) {
         /*
             r3 = this;
-            com.google.android.gms.internal.fido.v1 r0 = r3.f14148i
+            com.google.android.gms.internal.fido.v1 r0 = r3.f14725i
             r1 = -1
             if (r4 != 0) goto L7
         L5:
             r4 = r1
             goto L12
         L7:
-            com.google.android.gms.internal.fido.e1 r2 = r0.f14237p     // Catch: java.lang.ClassCastException -> L5
-            java.util.Comparator r0 = r0.f14160i     // Catch: java.lang.ClassCastException -> L5
+            com.google.android.gms.internal.fido.e1 r2 = r0.f14814p     // Catch: java.lang.ClassCastException -> L5
+            java.util.Comparator r0 = r0.f14737i     // Catch: java.lang.ClassCastException -> L5
             int r4 = java.util.Collections.binarySearch(r2, r4, r0)     // Catch: java.lang.ClassCastException -> L5
             if (r4 >= 0) goto L12
             goto L5
@@ -280,7 +280,7 @@ public final class l1 extends f1 implements NavigableMap {
             r4 = 0
             return r4
         L16:
-            com.google.android.gms.internal.fido.e1 r0 = r3.f14149o
+            com.google.android.gms.internal.fido.e1 r0 = r3.f14726o
             java.lang.Object r4 = r0.get(r4)
             return r4
         */
@@ -292,7 +292,7 @@ public final class l1 extends f1 implements NavigableMap {
     public final l1 subMap(Object obj, boolean z10, Object obj2, boolean z11) {
         obj.getClass();
         obj2.getClass();
-        if (this.f14148i.f14160i.compare(obj, obj2) <= 0) {
+        if (this.f14725i.f14737i.compare(obj, obj2) <= 0) {
             return headMap(obj2, z11).tailMap(obj, z10);
         }
         throw new IllegalArgumentException(m0.a("expected fromKey <= toKey but %s > %s", obj, obj2));
@@ -317,12 +317,12 @@ public final class l1 extends f1 implements NavigableMap {
     /* renamed from: i */
     public final l1 tailMap(Object obj, boolean z10) {
         obj.getClass();
-        return k(this.f14148i.C(obj, z10), this.f14149o.size());
+        return k(this.f14725i.C(obj, z10), this.f14726o.size());
     }
 
     @Override // java.util.Map, java.util.SortedMap
     public final /* synthetic */ Set keySet() {
-        return this.f14148i;
+        return this.f14725i;
     }
 
     @Override // java.util.NavigableMap
@@ -330,12 +330,12 @@ public final class l1 extends f1 implements NavigableMap {
         if (isEmpty()) {
             return null;
         }
-        return (Map.Entry) c().j().get(this.f14149o.size() - 1);
+        return (Map.Entry) c().k().get(this.f14726o.size() - 1);
     }
 
     @Override // java.util.SortedMap
     public final Object lastKey() {
-        return this.f14148i.last();
+        return this.f14725i.last();
     }
 
     @Override // java.util.NavigableMap
@@ -350,7 +350,7 @@ public final class l1 extends f1 implements NavigableMap {
 
     @Override // java.util.NavigableMap
     public final /* synthetic */ NavigableSet navigableKeySet() {
-        return this.f14148i;
+        return this.f14725i;
     }
 
     @Override // java.util.NavigableMap
@@ -365,7 +365,7 @@ public final class l1 extends f1 implements NavigableMap {
 
     @Override // java.util.Map
     public final int size() {
-        return this.f14149o.size();
+        return this.f14726o.size();
     }
 
     @Override // java.util.NavigableMap, java.util.SortedMap
@@ -380,6 +380,6 @@ public final class l1 extends f1 implements NavigableMap {
 
     @Override // java.util.Map, java.util.SortedMap
     public final /* synthetic */ Collection values() {
-        return this.f14149o;
+        return this.f14726o;
     }
 }

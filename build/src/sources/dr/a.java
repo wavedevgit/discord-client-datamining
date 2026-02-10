@@ -1,28 +1,16 @@
 package dr;
 
-import java.net.URLEncoder;
-import kotlin.text.Charsets;
-import tu.b;
-import zv.o;
+import android.content.Context;
+import kotlin.jvm.functions.Function0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements b, o {
+public interface a {
+    void a();
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f20957a = new a();
+    void b(cr.a aVar);
 
-    private a() {
-    }
+    void c();
 
-    public String a(Object obj) {
-        return o.a.a(this, obj);
-    }
+    void d(String str, String str2, String str3, String str4, int i10, int i11, boolean z10, Function0 function0, Function0 function02);
 
-    @Override // tu.b
-    public Object f(Object obj, Object obj2) {
-        String a10 = a(obj);
-        if (a10 != null) {
-            return URLEncoder.encode(a10, Charsets.UTF_8.name());
-        }
-        return null;
-    }
+    void e(Context context);
 }

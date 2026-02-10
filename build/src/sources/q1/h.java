@@ -45,11 +45,11 @@ public abstract class h {
             a a10 = a(c(resources, xmlPullParser, attributeSet, theme), b10, b12, h10, b11);
             if (g10 != 1) {
                 if (g10 != 2) {
-                    return new LinearGradient(f10, f11, f12, f13, a10.f45163a, a10.f45164b, d(g11));
+                    return new LinearGradient(f10, f11, f12, f13, a10.f43831a, a10.f43832b, d(g11));
                 }
-                return new SweepGradient(f14, f15, a10.f45163a, a10.f45164b);
+                return new SweepGradient(f14, f15, a10.f43831a, a10.f43832b);
             } else if (f16 > 0.0f) {
-                return new RadialGradient(f14, f15, f16, a10.f45163a, a10.f45164b, d(g11));
+                return new RadialGradient(f14, f15, f16, a10.f43831a, a10.f43832b, d(g11));
             } else {
                 throw new XmlPullParserException("<gradient> tag requires 'gradientRadius' attribute with radial type");
             }
@@ -152,29 +152,29 @@ public abstract class h {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final int[] f45163a;
+        final int[] f43831a;
 
         /* renamed from: b  reason: collision with root package name */
-        final float[] f45164b;
+        final float[] f43832b;
 
         a(List list, List list2) {
             int size = list.size();
-            this.f45163a = new int[size];
-            this.f45164b = new float[size];
+            this.f43831a = new int[size];
+            this.f43832b = new float[size];
             for (int i10 = 0; i10 < size; i10++) {
-                this.f45163a[i10] = ((Integer) list.get(i10)).intValue();
-                this.f45164b[i10] = ((Float) list2.get(i10)).floatValue();
+                this.f43831a[i10] = ((Integer) list.get(i10)).intValue();
+                this.f43832b[i10] = ((Float) list2.get(i10)).floatValue();
             }
         }
 
         a(int i10, int i11) {
-            this.f45163a = new int[]{i10, i11};
-            this.f45164b = new float[]{0.0f, 1.0f};
+            this.f43831a = new int[]{i10, i11};
+            this.f43832b = new float[]{0.0f, 1.0f};
         }
 
         a(int i10, int i11, int i12) {
-            this.f45163a = new int[]{i10, i11, i12};
-            this.f45164b = new float[]{0.0f, 0.5f, 1.0f};
+            this.f43831a = new int[]{i10, i11, i12};
+            this.f43832b = new float[]{0.0f, 0.5f, 1.0f};
         }
     }
 }

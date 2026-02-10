@@ -1,17 +1,16 @@
 package ls;
 
-import kotlin.jvm.functions.Function1;
-import kotlin.reflect.KType;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class e implements Function1 {
+import java.io.ByteArrayOutputStream;
+import kotlin.jvm.internal.Intrinsics;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+final class e extends ByteArrayOutputStream {
+    public e(int i10) {
+        super(i10);
+    }
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final e f36422d = new e();
-
-    @Override // kotlin.jvm.functions.Function1
-    public Object invoke(Object obj) {
-        KType a10;
-        a10 = h.a((Class) obj);
-        return a10;
+    public final byte[] a() {
+        byte[] buf = ((ByteArrayOutputStream) this).buf;
+        Intrinsics.checkNotNullExpressionValue(buf, "buf");
+        return buf;
     }
 }

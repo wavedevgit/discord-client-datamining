@@ -12,7 +12,7 @@ import java.util.Iterator;
 public abstract class r {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final d f49802a = new d("PhoneskyVerificationUtils");
+    private static final d f48118a = new d("PhoneskyVerificationUtils");
 
     public static int a(Context context) {
         try {
@@ -30,18 +30,18 @@ public abstract class r {
     public static boolean b(Context context) {
         try {
             if (!context.getPackageManager().getApplicationInfo("com.android.vending", 0).enabled) {
-                f49802a.d("Play Store package is disabled.", new Object[0]);
+                f48118a.d("Play Store package is disabled.", new Object[0]);
             } else {
                 try {
                     if (c(context.getPackageManager().getPackageInfo("com.android.vending", 64).signatures)) {
                         return true;
                     }
                 } catch (PackageManager.NameNotFoundException unused) {
-                    f49802a.d("Play Store package is not found.", new Object[0]);
+                    f48118a.d("Play Store package is not found.", new Object[0]);
                 }
             }
         } catch (PackageManager.NameNotFoundException unused2) {
-            f49802a.d("Play Store package is not found.", new Object[0]);
+            f48118a.d("Play Store package is not found.", new Object[0]);
         }
         return false;
     }
@@ -61,7 +61,7 @@ public abstract class r {
                     return true;
                 }
             }
-            d dVar = f49802a;
+            d dVar = f48118a;
             StringBuilder sb2 = new StringBuilder();
             Iterator it = arrayList.iterator();
             if (it.hasNext()) {
@@ -76,7 +76,7 @@ public abstract class r {
             dVar.d(String.format("Play Store package certs are not valid. Found these sha256 certs: [%s].", sb2.toString()), new Object[0]);
             return false;
         }
-        f49802a.d("Play Store package is not signed -- possibly self-built package. Could not verify.", new Object[0]);
+        f48118a.d("Play Store package is not signed -- possibly self-built package. Could not verify.", new Object[0]);
         return false;
     }
 }

@@ -18,40 +18,40 @@ public interface c {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f21136a;
+        private final Context f22303a;
 
         /* renamed from: b  reason: collision with root package name */
-        private double f21137b;
+        private double f22304b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f21138c;
+        private int f22305c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f21139d = true;
+        private boolean f22306d = true;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f21140e = true;
+        private boolean f22307e = true;
 
         public a(Context context) {
-            this.f21136a = context;
-            this.f21137b = k.e(context);
+            this.f22303a = context;
+            this.f22304b = k.e(context);
         }
 
         public final c a() {
             i bVar;
             h aVar;
             int i10;
-            if (this.f21140e) {
+            if (this.f22307e) {
                 bVar = new g();
             } else {
                 bVar = new e5.b();
             }
-            if (this.f21139d) {
-                double d10 = this.f21137b;
+            if (this.f22306d) {
+                double d10 = this.f22304b;
                 if (d10 > 0.0d) {
-                    i10 = k.c(this.f21136a, d10);
+                    i10 = k.c(this.f22303a, d10);
                 } else {
-                    i10 = this.f21138c;
+                    i10 = this.f22305c;
                 }
                 if (i10 > 0) {
                     aVar = new f(i10, bVar);
@@ -67,34 +67,34 @@ public interface c {
 
     /* renamed from: e5.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0315c {
+    public static final class C0302c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Bitmap f21144a;
+        private final Bitmap f22311a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Map f21145b;
+        private final Map f22312b;
 
-        public C0315c(Bitmap bitmap, Map map) {
-            this.f21144a = bitmap;
-            this.f21145b = map;
+        public C0302c(Bitmap bitmap, Map map) {
+            this.f22311a = bitmap;
+            this.f22312b = map;
         }
 
         public final Bitmap a() {
-            return this.f21144a;
+            return this.f22311a;
         }
 
         public final Map b() {
-            return this.f21145b;
+            return this.f22312b;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if (obj instanceof C0315c) {
-                C0315c c0315c = (C0315c) obj;
-                if (Intrinsics.areEqual(this.f21144a, c0315c.f21144a) && Intrinsics.areEqual(this.f21145b, c0315c.f21145b)) {
+            if (obj instanceof C0302c) {
+                C0302c c0302c = (C0302c) obj;
+                if (Intrinsics.areEqual(this.f22311a, c0302c.f22311a) && Intrinsics.areEqual(this.f22312b, c0302c.f22312b)) {
                     return true;
                 }
                 return false;
@@ -103,19 +103,19 @@ public interface c {
         }
 
         public int hashCode() {
-            return (this.f21144a.hashCode() * 31) + this.f21145b.hashCode();
+            return (this.f22311a.hashCode() * 31) + this.f22312b.hashCode();
         }
 
         public String toString() {
-            return "Value(bitmap=" + this.f21144a + ", extras=" + this.f21145b + ')';
+            return "Value(bitmap=" + this.f22311a + ", extras=" + this.f22312b + ')';
         }
     }
 
     void a(int i10);
 
-    C0315c b(b bVar);
+    C0302c b(b bVar);
 
-    void c(b bVar, C0315c c0315c);
+    void c(b bVar, C0302c c0302c);
 
     void clear();
 
@@ -123,13 +123,13 @@ public interface c {
     public static final class b implements Parcelable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f21142d;
+        private final String f22309d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Map f21143e;
+        private final Map f22310e;
 
         /* renamed from: i  reason: collision with root package name */
-        private static final C0314b f21141i = new C0314b(null);
+        private static final C0301b f22308i = new C0301b(null);
         @Deprecated
         @NotNull
         public static final Parcelable.Creator<b> CREATOR = new a();
@@ -165,26 +165,26 @@ public interface c {
 
         /* renamed from: e5.c$b$b  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        private static final class C0314b {
-            public /* synthetic */ C0314b(DefaultConstructorMarker defaultConstructorMarker) {
+        private static final class C0301b {
+            public /* synthetic */ C0301b(DefaultConstructorMarker defaultConstructorMarker) {
                 this();
             }
 
-            private C0314b() {
+            private C0301b() {
             }
         }
 
         public b(String str, Map map) {
-            this.f21142d = str;
-            this.f21143e = map;
+            this.f22309d = str;
+            this.f22310e = map;
         }
 
         public static /* synthetic */ b b(b bVar, String str, Map map, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = bVar.f21142d;
+                str = bVar.f22309d;
             }
             if ((i10 & 2) != 0) {
-                map = bVar.f21143e;
+                map = bVar.f22310e;
             }
             return bVar.a(str, map);
         }
@@ -194,7 +194,7 @@ public interface c {
         }
 
         public final Map c() {
-            return this.f21143e;
+            return this.f22310e;
         }
 
         @Override // android.os.Parcelable
@@ -208,7 +208,7 @@ public interface c {
             }
             if (obj instanceof b) {
                 b bVar = (b) obj;
-                if (Intrinsics.areEqual(this.f21142d, bVar.f21142d) && Intrinsics.areEqual(this.f21143e, bVar.f21143e)) {
+                if (Intrinsics.areEqual(this.f22309d, bVar.f22309d) && Intrinsics.areEqual(this.f22310e, bVar.f22310e)) {
                     return true;
                 }
                 return false;
@@ -217,18 +217,18 @@ public interface c {
         }
 
         public int hashCode() {
-            return (this.f21142d.hashCode() * 31) + this.f21143e.hashCode();
+            return (this.f22309d.hashCode() * 31) + this.f22310e.hashCode();
         }
 
         public String toString() {
-            return "Key(key=" + this.f21142d + ", extras=" + this.f21143e + ')';
+            return "Key(key=" + this.f22309d + ", extras=" + this.f22310e + ')';
         }
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeString(this.f21142d);
-            parcel.writeInt(this.f21143e.size());
-            for (Map.Entry entry : this.f21143e.entrySet()) {
+            parcel.writeString(this.f22309d);
+            parcel.writeInt(this.f22310e.size());
+            for (Map.Entry entry : this.f22310e.entrySet()) {
                 parcel.writeString((String) entry.getKey());
                 parcel.writeString((String) entry.getValue());
             }

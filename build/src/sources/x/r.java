@@ -3,15 +3,15 @@ package x;
 public class r extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f54421d;
+    private final int f54153d;
 
     public r(int i10, String str) {
         super(str);
-        this.f54421d = i10;
+        this.f54153d = i10;
     }
 
     public r(int i10, Throwable th2) {
         super(th2);
-        this.f54421d = i10;
+        this.f54153d = i10;
     }
 }

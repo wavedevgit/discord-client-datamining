@@ -1,43 +1,43 @@
 package qg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class g7 implements zi.d {
+final class g7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final g7 f45814a = new g7();
+    static final g7 f44482a = new g7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f45815b;
+    private static final bj.c f44483b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f45816c;
+    private static final bj.c f44484c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f45817d;
+    private static final bj.c f44485d;
 
     static {
-        c.b a10 = zi.c.a("inferenceCommonLogEvent");
+        c.b a10 = bj.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f45815b = a10.b(s1Var.b()).a();
-        c.b a11 = zi.c.a("detectorOptions");
+        f44483b = a10.b(s1Var.b()).a();
+        c.b a11 = bj.c.a("detectorOptions");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f45816c = a11.b(s1Var2.b()).a();
-        c.b a12 = zi.c.a("imageInfo");
+        f44484c = a11.b(s1Var2.b()).a();
+        c.b a12 = bj.c.a("imageInfo");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f45817d = a12.b(s1Var3.b()).a();
+        f44485d = a12.b(s1Var3.b()).a();
     }
 
     private g7() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

@@ -1,59 +1,37 @@
 package ct;
 
-import java.util.ArrayList;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.FlowCollector;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class h implements o {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final List f20222a;
-
-    public h(List formats) {
-        Intrinsics.checkNotNullParameter(formats, "formats");
-        this.f20222a = formats;
+public final class h extends g {
+    public /* synthetic */ h(Flow flow, CoroutineContext coroutineContext, int i10, at.a aVar, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+        this(flow, (i11 & 2) != 0 ? kotlin.coroutines.e.f32061d : coroutineContext, (i11 & 4) != 0 ? -3 : i10, (i11 & 8) != 0 ? at.a.f6104d : aVar);
     }
 
-    @Override // ct.o
-    public dt.e a() {
-        List<s> list = this.f20222a;
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-        for (s sVar : list) {
-            arrayList.add(sVar.a());
+    @Override // ct.e
+    protected e f(CoroutineContext coroutineContext, int i10, at.a aVar) {
+        return new h(this.f21040o, coroutineContext, i10, aVar);
+    }
+
+    @Override // ct.e
+    public Flow j() {
+        return this.f21040o;
+    }
+
+    @Override // ct.g
+    protected Object q(FlowCollector flowCollector, Continuation continuation) {
+        Object collect = this.f21040o.collect(flowCollector, continuation);
+        if (collect == gs.b.f()) {
+            return collect;
         }
-        if (arrayList.size() == 1) {
-            return (dt.e) CollectionsKt.Q0(arrayList);
-        }
-        return new dt.a(arrayList);
+        return Unit.f31987a;
     }
 
-    @Override // ct.o
-    public et.q b() {
-        List<s> list = this.f20222a;
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-        for (s sVar : list) {
-            arrayList.add(sVar.b());
-        }
-        return et.n.b(arrayList);
-    }
-
-    public final List c() {
-        return this.f20222a;
-    }
-
-    public boolean equals(Object obj) {
-        if ((obj instanceof h) && Intrinsics.areEqual(this.f20222a, ((h) obj).f20222a)) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        return this.f20222a.hashCode();
-    }
-
-    public String toString() {
-        return "ConcatenatedFormatStructure(" + CollectionsKt.x0(this.f20222a, ", ", null, null, 0, null, null, 62, null) + ')';
+    public h(Flow flow, CoroutineContext coroutineContext, int i10, at.a aVar) {
+        super(flow, coroutineContext, i10, aVar);
     }
 }

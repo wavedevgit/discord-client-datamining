@@ -8,10 +8,10 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class CreationExtras {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f4680b = new a(null);
+    public static final a f4690b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f4681a = new LinkedHashMap();
+    private final Map f4691a = new LinkedHashMap();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -27,7 +27,7 @@ public abstract class CreationExtras {
     public static final class b extends CreationExtras {
 
         /* renamed from: c  reason: collision with root package name */
-        public static final b f4682c = new b();
+        public static final b f4692c = new b();
 
         private b() {
         }
@@ -46,21 +46,21 @@ public abstract class CreationExtras {
     public abstract Object a(c cVar);
 
     public final Map b() {
-        return this.f4681a;
+        return this.f4691a;
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof CreationExtras) && Intrinsics.areEqual(this.f4681a, ((CreationExtras) obj).f4681a)) {
+        if ((obj instanceof CreationExtras) && Intrinsics.areEqual(this.f4691a, ((CreationExtras) obj).f4691a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f4681a.hashCode();
+        return this.f4691a.hashCode();
     }
 
     public String toString() {
-        return "CreationExtras(extras=" + this.f4681a + ')';
+        return "CreationExtras(extras=" + this.f4691a + ')';
     }
 }

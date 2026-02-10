@@ -8,19 +8,19 @@ import androidx.recyclerview.widget.RecyclerView;
 public abstract class r extends RecyclerView.OnFlingListener {
 
     /* renamed from: a  reason: collision with root package name */
-    RecyclerView f5185a;
+    RecyclerView f5195a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Scroller f5186b;
+    private Scroller f5196b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final RecyclerView.OnScrollListener f5187c = new a();
+    private final RecyclerView.OnScrollListener f5197c = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends RecyclerView.OnScrollListener {
 
         /* renamed from: a  reason: collision with root package name */
-        boolean f5188a = false;
+        boolean f5198a = false;
 
         a() {
         }
@@ -28,8 +28,8 @@ public abstract class r extends RecyclerView.OnFlingListener {
         @Override // androidx.recyclerview.widget.RecyclerView.OnScrollListener
         public void onScrollStateChanged(RecyclerView recyclerView, int i10) {
             super.onScrollStateChanged(recyclerView, i10);
-            if (i10 == 0 && this.f5188a) {
-                this.f5188a = false;
+            if (i10 == 0 && this.f5198a) {
+                this.f5198a = false;
                 r.this.i();
             }
         }
@@ -39,19 +39,19 @@ public abstract class r extends RecyclerView.OnFlingListener {
             if (i10 == 0 && i11 == 0) {
                 return;
             }
-            this.f5188a = true;
+            this.f5198a = true;
         }
     }
 
     private void d() {
-        this.f5185a.removeOnScrollListener(this.f5187c);
-        this.f5185a.setOnFlingListener(null);
+        this.f5195a.removeOnScrollListener(this.f5197c);
+        this.f5195a.setOnFlingListener(null);
     }
 
     private void g() {
-        if (this.f5185a.getOnFlingListener() == null) {
-            this.f5185a.addOnScrollListener(this.f5187c);
-            this.f5185a.setOnFlingListener(this);
+        if (this.f5195a.getOnFlingListener() == null) {
+            this.f5195a.addOnScrollListener(this.f5197c);
+            this.f5195a.setOnFlingListener(this);
             return;
         }
         throw new IllegalStateException("An instance of OnFlingListener already set.");
@@ -69,15 +69,15 @@ public abstract class r extends RecyclerView.OnFlingListener {
     }
 
     public void a(RecyclerView recyclerView) {
-        RecyclerView recyclerView2 = this.f5185a;
+        RecyclerView recyclerView2 = this.f5195a;
         if (recyclerView2 != recyclerView) {
             if (recyclerView2 != null) {
                 d();
             }
-            this.f5185a = recyclerView;
+            this.f5195a = recyclerView;
             if (recyclerView != null) {
                 g();
-                this.f5186b = new Scroller(this.f5185a.getContext(), new DecelerateInterpolator());
+                this.f5196b = new Scroller(this.f5195a.getContext(), new DecelerateInterpolator());
                 i();
             }
         }
@@ -94,24 +94,24 @@ public abstract class r extends RecyclerView.OnFlingListener {
     void i() {
         RecyclerView.LayoutManager layoutManager;
         View e10;
-        RecyclerView recyclerView = this.f5185a;
+        RecyclerView recyclerView = this.f5195a;
         if (recyclerView != null && (layoutManager = recyclerView.getLayoutManager()) != null && (e10 = e(layoutManager)) != null) {
             int[] b10 = b(layoutManager, e10);
             int i10 = b10[0];
             if (i10 == 0 && b10[1] == 0) {
                 return;
             }
-            this.f5185a.smoothScrollBy(i10, b10[1]);
+            this.f5195a.smoothScrollBy(i10, b10[1]);
         }
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.OnFlingListener
     public boolean onFling(int i10, int i11) {
-        RecyclerView.LayoutManager layoutManager = this.f5185a.getLayoutManager();
-        if (layoutManager == null || this.f5185a.getAdapter() == null) {
+        RecyclerView.LayoutManager layoutManager = this.f5195a.getLayoutManager();
+        if (layoutManager == null || this.f5195a.getAdapter() == null) {
             return false;
         }
-        int minFlingVelocity = this.f5185a.getMinFlingVelocity();
+        int minFlingVelocity = this.f5195a.getMinFlingVelocity();
         if ((Math.abs(i11) <= minFlingVelocity && Math.abs(i10) <= minFlingVelocity) || !h(layoutManager, i10, i11)) {
             return false;
         }

@@ -3,11 +3,11 @@ package com.rnfs;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public int f17937a;
+    public int f18686a;
 
     /* renamed from: b  reason: collision with root package name */
-    public long f17938b;
+    public long f18687b;
 
     /* renamed from: c  reason: collision with root package name */
-    public Exception f17939c;
+    public Exception f18688c;
 }

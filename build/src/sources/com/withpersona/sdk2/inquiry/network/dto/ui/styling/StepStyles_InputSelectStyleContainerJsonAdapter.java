@@ -45,7 +45,7 @@ public final class StepStyles_InputSelectStyleContainerJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 inputSelectComponentStyle = (InputSelectComponentStyle) this.nullableInputSelectComponentStyleAdapter.fromJson(reader);
@@ -59,7 +59,7 @@ public final class StepStyles_InputSelectStyleContainerJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.InputSelectStyleContainer inputSelectStyleContainer) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputSelectStyleContainer != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableInputSelectComponentStyleAdapter.toJson(writer, inputSelectStyleContainer.getBase());
             writer.s();

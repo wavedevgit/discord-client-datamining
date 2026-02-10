@@ -17,7 +17,7 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.OverScroller;
 import android.widget.ScrollView;
 import androidx.annotation.NonNull;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import com.facebook.react.R;
 import com.facebook.react.animated.NativeAnimatedModule;
 import com.facebook.react.bridge.ReactContext;
@@ -236,7 +236,7 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
                 if (ReactScrollView.this.mActivelyScrolling) {
                     ReactScrollView.this.mActivelyScrolling = false;
                     this.mStableFrames = 0;
-                    h0.g0(ReactScrollView.this, this, 20L);
+                    i0.d0(ReactScrollView.this, this, 20L);
                     return;
                 }
                 ReactScrollViewHelper.updateFabricScrollState(ReactScrollView.this);
@@ -258,11 +258,11 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
                     this.mSnappingToPage = true;
                     ReactScrollView.this.flingAndSnap(0);
                 }
-                h0.g0(ReactScrollView.this, this, 20L);
+                i0.d0(ReactScrollView.this, this, 20L);
             }
         };
         this.mPostTouchRunnable = runnable;
-        h0.g0(this, runnable, 20L);
+        i0.d0(this, runnable, 20L);
     }
 
     private boolean isContentReady() {
@@ -382,7 +382,7 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
                     }
                 };
                 this.mPostTouchRunnable = runnable2;
-                h0.g0(this, runnable2, 20L);
+                i0.d0(this, runnable2, 20L);
             }
             return dispatchGenericMotionEvent;
         }
@@ -428,7 +428,7 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
             flingAndSnap(i11);
         } else if (this.mScroller != null) {
             this.mScroller.fling(getScrollX(), getScrollY(), 0, i11, 0, 0, 0, Integer.MAX_VALUE, 0, ((getHeight() - getPaddingBottom()) - getPaddingTop()) / 2);
-            h0.e0(this);
+            i0.b0(this);
         } else {
             super.fling(i11);
         }
@@ -1026,7 +1026,7 @@ public class ReactScrollView extends ScrollView implements ReactClippingViewGrou
         setOnHierarchyChangeListener(this);
         setScrollBarStyle(33554432);
         setClipChildren(false);
-        h0.n0(this, new ReactScrollViewAccessibilityDelegate());
+        i0.k0(this, new ReactScrollViewAccessibilityDelegate());
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

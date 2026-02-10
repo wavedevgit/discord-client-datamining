@@ -83,7 +83,7 @@ public final class InputCheckbox_InputCheckboxComponentStyleJsonAdapter extends 
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -117,7 +117,7 @@ public final class InputCheckbox_InputCheckboxComponentStyleJsonAdapter extends 
     public void toJson(@NotNull t writer, InputCheckbox.InputCheckboxComponentStyle inputCheckboxComponentStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputCheckboxComponentStyle != null) {
-            writer.k();
+            writer.i();
             writer.J(ViewProps.FONT_FAMILY);
             this.nullableInputCheckboxFontFamilyStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getFontFamily());
             writer.J(ViewProps.FONT_SIZE);

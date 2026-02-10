@@ -18,11 +18,11 @@ import java.io.InputStream;
 public abstract class n0 extends Resources {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Resources f1900a;
+    private final Resources f1903a;
 
     public n0(Resources resources) {
         super(resources.getAssets(), resources.getDisplayMetrics(), resources.getConfiguration());
-        this.f1900a = resources;
+        this.f1903a = resources;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -32,188 +32,188 @@ public abstract class n0 extends Resources {
 
     @Override // android.content.res.Resources
     public XmlResourceParser getAnimation(int i10) {
-        return this.f1900a.getAnimation(i10);
+        return this.f1903a.getAnimation(i10);
     }
 
     @Override // android.content.res.Resources
     public boolean getBoolean(int i10) {
-        return this.f1900a.getBoolean(i10);
+        return this.f1903a.getBoolean(i10);
     }
 
     @Override // android.content.res.Resources
     public int getColor(int i10) {
-        return this.f1900a.getColor(i10);
+        return this.f1903a.getColor(i10);
     }
 
     @Override // android.content.res.Resources
     public ColorStateList getColorStateList(int i10) {
-        return this.f1900a.getColorStateList(i10);
+        return this.f1903a.getColorStateList(i10);
     }
 
     @Override // android.content.res.Resources
     public Configuration getConfiguration() {
-        return this.f1900a.getConfiguration();
+        return this.f1903a.getConfiguration();
     }
 
     @Override // android.content.res.Resources
     public float getDimension(int i10) {
-        return this.f1900a.getDimension(i10);
+        return this.f1903a.getDimension(i10);
     }
 
     @Override // android.content.res.Resources
     public int getDimensionPixelOffset(int i10) {
-        return this.f1900a.getDimensionPixelOffset(i10);
+        return this.f1903a.getDimensionPixelOffset(i10);
     }
 
     @Override // android.content.res.Resources
     public int getDimensionPixelSize(int i10) {
-        return this.f1900a.getDimensionPixelSize(i10);
+        return this.f1903a.getDimensionPixelSize(i10);
     }
 
     @Override // android.content.res.Resources
     public DisplayMetrics getDisplayMetrics() {
-        return this.f1900a.getDisplayMetrics();
+        return this.f1903a.getDisplayMetrics();
     }
 
     @Override // android.content.res.Resources
     public Drawable getDrawable(int i10, Resources.Theme theme) {
-        return q1.j.f(this.f1900a, i10, theme);
+        return q1.j.f(this.f1903a, i10, theme);
     }
 
     @Override // android.content.res.Resources
     public Drawable getDrawableForDensity(int i10, int i11) {
-        return q1.j.g(this.f1900a, i10, i11, null);
+        return q1.j.g(this.f1903a, i10, i11, null);
     }
 
     @Override // android.content.res.Resources
     public float getFraction(int i10, int i11, int i12) {
-        return this.f1900a.getFraction(i10, i11, i12);
+        return this.f1903a.getFraction(i10, i11, i12);
     }
 
     @Override // android.content.res.Resources
     public int getIdentifier(String str, String str2, String str3) {
-        return this.f1900a.getIdentifier(str, str2, str3);
+        return this.f1903a.getIdentifier(str, str2, str3);
     }
 
     @Override // android.content.res.Resources
     public int[] getIntArray(int i10) {
-        return this.f1900a.getIntArray(i10);
+        return this.f1903a.getIntArray(i10);
     }
 
     @Override // android.content.res.Resources
     public int getInteger(int i10) {
-        return this.f1900a.getInteger(i10);
+        return this.f1903a.getInteger(i10);
     }
 
     @Override // android.content.res.Resources
     public XmlResourceParser getLayout(int i10) {
-        return this.f1900a.getLayout(i10);
+        return this.f1903a.getLayout(i10);
     }
 
     @Override // android.content.res.Resources
     public Movie getMovie(int i10) {
-        return this.f1900a.getMovie(i10);
+        return this.f1903a.getMovie(i10);
     }
 
     @Override // android.content.res.Resources
     public String getQuantityString(int i10, int i11, Object... objArr) {
-        return this.f1900a.getQuantityString(i10, i11, objArr);
+        return this.f1903a.getQuantityString(i10, i11, objArr);
     }
 
     @Override // android.content.res.Resources
     public CharSequence getQuantityText(int i10, int i11) {
-        return this.f1900a.getQuantityText(i10, i11);
+        return this.f1903a.getQuantityText(i10, i11);
     }
 
     @Override // android.content.res.Resources
     public String getResourceEntryName(int i10) {
-        return this.f1900a.getResourceEntryName(i10);
+        return this.f1903a.getResourceEntryName(i10);
     }
 
     @Override // android.content.res.Resources
     public String getResourceName(int i10) {
-        return this.f1900a.getResourceName(i10);
+        return this.f1903a.getResourceName(i10);
     }
 
     @Override // android.content.res.Resources
     public String getResourcePackageName(int i10) {
-        return this.f1900a.getResourcePackageName(i10);
+        return this.f1903a.getResourcePackageName(i10);
     }
 
     @Override // android.content.res.Resources
     public String getResourceTypeName(int i10) {
-        return this.f1900a.getResourceTypeName(i10);
+        return this.f1903a.getResourceTypeName(i10);
     }
 
     @Override // android.content.res.Resources
     public String getString(int i10) {
-        return this.f1900a.getString(i10);
+        return this.f1903a.getString(i10);
     }
 
     @Override // android.content.res.Resources
     public String[] getStringArray(int i10) {
-        return this.f1900a.getStringArray(i10);
+        return this.f1903a.getStringArray(i10);
     }
 
     @Override // android.content.res.Resources
     public CharSequence getText(int i10) {
-        return this.f1900a.getText(i10);
+        return this.f1903a.getText(i10);
     }
 
     @Override // android.content.res.Resources
     public CharSequence[] getTextArray(int i10) {
-        return this.f1900a.getTextArray(i10);
+        return this.f1903a.getTextArray(i10);
     }
 
     @Override // android.content.res.Resources
     public void getValue(int i10, TypedValue typedValue, boolean z10) {
-        this.f1900a.getValue(i10, typedValue, z10);
+        this.f1903a.getValue(i10, typedValue, z10);
     }
 
     @Override // android.content.res.Resources
     public void getValueForDensity(int i10, int i11, TypedValue typedValue, boolean z10) {
-        this.f1900a.getValueForDensity(i10, i11, typedValue, z10);
+        this.f1903a.getValueForDensity(i10, i11, typedValue, z10);
     }
 
     @Override // android.content.res.Resources
     public XmlResourceParser getXml(int i10) {
-        return this.f1900a.getXml(i10);
+        return this.f1903a.getXml(i10);
     }
 
     @Override // android.content.res.Resources
     public TypedArray obtainAttributes(AttributeSet attributeSet, int[] iArr) {
-        return this.f1900a.obtainAttributes(attributeSet, iArr);
+        return this.f1903a.obtainAttributes(attributeSet, iArr);
     }
 
     @Override // android.content.res.Resources
     public TypedArray obtainTypedArray(int i10) {
-        return this.f1900a.obtainTypedArray(i10);
+        return this.f1903a.obtainTypedArray(i10);
     }
 
     @Override // android.content.res.Resources
     public InputStream openRawResource(int i10) {
-        return this.f1900a.openRawResource(i10);
+        return this.f1903a.openRawResource(i10);
     }
 
     @Override // android.content.res.Resources
     public AssetFileDescriptor openRawResourceFd(int i10) {
-        return this.f1900a.openRawResourceFd(i10);
+        return this.f1903a.openRawResourceFd(i10);
     }
 
     @Override // android.content.res.Resources
     public void parseBundleExtra(String str, AttributeSet attributeSet, Bundle bundle) {
-        this.f1900a.parseBundleExtra(str, attributeSet, bundle);
+        this.f1903a.parseBundleExtra(str, attributeSet, bundle);
     }
 
     @Override // android.content.res.Resources
     public void parseBundleExtras(XmlResourceParser xmlResourceParser, Bundle bundle) {
-        this.f1900a.parseBundleExtras(xmlResourceParser, bundle);
+        this.f1903a.parseBundleExtras(xmlResourceParser, bundle);
     }
 
     @Override // android.content.res.Resources
     public void updateConfiguration(Configuration configuration, DisplayMetrics displayMetrics) {
         super.updateConfiguration(configuration, displayMetrics);
-        Resources resources = this.f1900a;
+        Resources resources = this.f1903a;
         if (resources != null) {
             resources.updateConfiguration(configuration, displayMetrics);
         }
@@ -221,31 +221,31 @@ public abstract class n0 extends Resources {
 
     @Override // android.content.res.Resources
     public Drawable getDrawableForDensity(int i10, int i11, Resources.Theme theme) {
-        return q1.j.g(this.f1900a, i10, i11, theme);
+        return q1.j.g(this.f1903a, i10, i11, theme);
     }
 
     @Override // android.content.res.Resources
     public String getQuantityString(int i10, int i11) {
-        return this.f1900a.getQuantityString(i10, i11);
+        return this.f1903a.getQuantityString(i10, i11);
     }
 
     @Override // android.content.res.Resources
     public String getString(int i10, Object... objArr) {
-        return this.f1900a.getString(i10, objArr);
+        return this.f1903a.getString(i10, objArr);
     }
 
     @Override // android.content.res.Resources
     public CharSequence getText(int i10, CharSequence charSequence) {
-        return this.f1900a.getText(i10, charSequence);
+        return this.f1903a.getText(i10, charSequence);
     }
 
     @Override // android.content.res.Resources
     public void getValue(String str, TypedValue typedValue, boolean z10) {
-        this.f1900a.getValue(str, typedValue, z10);
+        this.f1903a.getValue(str, typedValue, z10);
     }
 
     @Override // android.content.res.Resources
     public InputStream openRawResource(int i10, TypedValue typedValue) {
-        return this.f1900a.openRawResource(i10, typedValue);
+        return this.f1903a.openRawResource(i10, typedValue);
     }
 }

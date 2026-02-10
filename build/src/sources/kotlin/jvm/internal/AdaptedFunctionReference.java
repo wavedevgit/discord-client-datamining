@@ -2,7 +2,7 @@ package kotlin.jvm.internal;
 
 import java.io.Serializable;
 import kotlin.reflect.KDeclarationContainer;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public class AdaptedFunctionReference implements FunctionBase, Serializable {
     private final int arity;
     private final int flags;

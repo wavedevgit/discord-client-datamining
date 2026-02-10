@@ -1,21 +1,97 @@
 package pi;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.math.RoundingMode;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
+abstract class a implements Iterator {
 
-    /* renamed from: a  reason: collision with root package name */
-    static final BigInteger f44278a = new BigInteger("16a09e667f3bcc908b2fb1366ea957d3e3adec17512775099da2f590b0667322a", 16);
+    /* renamed from: d  reason: collision with root package name */
+    private b f42724d = b.NOT_READY;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final double f44279b = Math.log(10.0d);
+    /* renamed from: e  reason: collision with root package name */
+    private Object f42725e;
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final double f44280c = Math.log(2.0d);
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* renamed from: pi.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static /* synthetic */ class C0590a {
 
-    public static BigInteger a(BigInteger bigInteger, BigInteger bigInteger2, RoundingMode roundingMode) {
-        return new BigDecimal(bigInteger).divide(new BigDecimal(bigInteger2), 0, roundingMode).toBigIntegerExact();
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ int[] f42726a;
+
+        static {
+            int[] iArr = new int[b.values().length];
+            f42726a = iArr;
+            try {
+                iArr[b.DONE.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f42726a[b.READY.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public enum b {
+        READY,
+        NOT_READY,
+        DONE,
+        FAILED
+    }
+
+    private boolean c() {
+        this.f42724d = b.FAILED;
+        this.f42725e = a();
+        if (this.f42724d != b.DONE) {
+            this.f42724d = b.READY;
+            return true;
+        }
+        return false;
+    }
+
+    protected abstract Object a();
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final Object b() {
+        this.f42724d = b.DONE;
+        return null;
+    }
+
+    @Override // java.util.Iterator
+    public final boolean hasNext() {
+        boolean z10;
+        if (this.f42724d != b.FAILED) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        m.o(z10);
+        int i10 = C0590a.f42726a[this.f42724d.ordinal()];
+        if (i10 == 1) {
+            return false;
+        }
+        if (i10 == 2) {
+            return true;
+        }
+        return c();
+    }
+
+    @Override // java.util.Iterator
+    public final Object next() {
+        if (hasNext()) {
+            this.f42724d = b.NOT_READY;
+            Object a10 = i.a(this.f42725e);
+            this.f42725e = null;
+            return a10;
+        }
+        throw new NoSuchElementException();
+    }
+
+    @Override // java.util.Iterator
+    public final void remove() {
+        throw new UnsupportedOperationException();
     }
 }

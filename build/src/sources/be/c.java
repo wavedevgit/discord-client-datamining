@@ -28,65 +28,65 @@ import oe.y;
 public final class c extends e {
 
     /* renamed from: g  reason: collision with root package name */
-    private final h0 f6533g = new h0();
+    private final h0 f6639g = new h0();
 
     /* renamed from: h  reason: collision with root package name */
-    private final g0 f6534h = new g0();
+    private final g0 f6640h = new g0();
 
     /* renamed from: i  reason: collision with root package name */
-    private int f6535i = -1;
+    private int f6641i = -1;
 
     /* renamed from: j  reason: collision with root package name */
-    private final boolean f6536j;
+    private final boolean f6642j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final int f6537k;
+    private final int f6643k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final b[] f6538l;
+    private final b[] f6644l;
 
     /* renamed from: m  reason: collision with root package name */
-    private b f6539m;
+    private b f6645m;
 
     /* renamed from: n  reason: collision with root package name */
-    private List f6540n;
+    private List f6646n;
 
     /* renamed from: o  reason: collision with root package name */
-    private List f6541o;
+    private List f6647o;
 
     /* renamed from: p  reason: collision with root package name */
-    private C0134c f6542p;
+    private C0098c f6648p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f6543q;
+    private int f6649q;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: c  reason: collision with root package name */
-        private static final Comparator f6544c = new Comparator() { // from class: be.b
+        private static final Comparator f6650c = new Comparator() { // from class: be.b
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
                 int compare;
-                compare = Integer.compare(((c.a) obj2).f6546b, ((c.a) obj).f6546b);
+                compare = Integer.compare(((c.a) obj2).f6652b, ((c.a) obj).f6652b);
                 return compare;
             }
         };
 
         /* renamed from: a  reason: collision with root package name */
-        public final ae.b f6545a;
+        public final ae.b f6651a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f6546b;
+        public final int f6652b;
 
         public a(CharSequence charSequence, Layout.Alignment alignment, float f10, int i10, int i11, float f11, int i12, float f12, boolean z10, int i13, int i14) {
             b.C0009b n10 = new b.C0009b().o(charSequence).p(alignment).h(f10, i10).i(i11).k(f11).l(i12).n(f12);
             if (z10) {
                 n10.s(i13);
             }
-            this.f6545a = n10.a();
-            this.f6546b = i14;
+            this.f6651a = n10.a();
+            this.f6652b = i14;
         }
     }
 
@@ -102,89 +102,89 @@ public final class c extends e {
         private static final int[] G;
 
         /* renamed from: w  reason: collision with root package name */
-        public static final int f6547w = h(2, 2, 2, 0);
+        public static final int f6653w = h(2, 2, 2, 0);
 
         /* renamed from: x  reason: collision with root package name */
-        public static final int f6548x;
+        public static final int f6654x;
 
         /* renamed from: y  reason: collision with root package name */
-        public static final int f6549y;
+        public static final int f6655y;
 
         /* renamed from: z  reason: collision with root package name */
-        private static final int[] f6550z;
+        private static final int[] f6656z;
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f6551a = new ArrayList();
+        private final List f6657a = new ArrayList();
 
         /* renamed from: b  reason: collision with root package name */
-        private final SpannableStringBuilder f6552b = new SpannableStringBuilder();
+        private final SpannableStringBuilder f6658b = new SpannableStringBuilder();
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f6553c;
+        private boolean f6659c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f6554d;
+        private boolean f6660d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f6555e;
+        private int f6661e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f6556f;
+        private boolean f6662f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f6557g;
+        private int f6663g;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f6558h;
+        private int f6664h;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f6559i;
+        private int f6665i;
 
         /* renamed from: j  reason: collision with root package name */
-        private int f6560j;
+        private int f6666j;
 
         /* renamed from: k  reason: collision with root package name */
-        private boolean f6561k;
+        private boolean f6667k;
 
         /* renamed from: l  reason: collision with root package name */
-        private int f6562l;
+        private int f6668l;
 
         /* renamed from: m  reason: collision with root package name */
-        private int f6563m;
+        private int f6669m;
 
         /* renamed from: n  reason: collision with root package name */
-        private int f6564n;
+        private int f6670n;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f6565o;
+        private int f6671o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f6566p;
+        private int f6672p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f6567q;
+        private int f6673q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f6568r;
+        private int f6674r;
 
         /* renamed from: s  reason: collision with root package name */
-        private int f6569s;
+        private int f6675s;
 
         /* renamed from: t  reason: collision with root package name */
-        private int f6570t;
+        private int f6676t;
 
         /* renamed from: u  reason: collision with root package name */
-        private int f6571u;
+        private int f6677u;
 
         /* renamed from: v  reason: collision with root package name */
-        private int f6572v;
+        private int f6678v;
 
         static {
             int h10 = h(0, 0, 0, 0);
-            f6548x = h10;
+            f6654x = h10;
             int h11 = h(0, 0, 0, 3);
-            f6549y = h11;
-            f6550z = new int[]{0, 0, 0, 0, 0, 2, 0};
+            f6655y = h11;
+            f6656z = new int[]{0, 0, 0, 0, 0, 2, 0};
             A = new int[]{0, 0, 0, 0, 0, 0, 2};
             B = new int[]{3, 3, 3, 3, 3, 3, 1};
             C = new boolean[]{false, false, false, true, true, true, false};
@@ -259,36 +259,36 @@ public final class c extends e {
 
         public void a(char c10) {
             if (c10 == '\n') {
-                this.f6551a.add(d());
-                this.f6552b.clear();
-                if (this.f6566p != -1) {
-                    this.f6566p = 0;
+                this.f6657a.add(d());
+                this.f6658b.clear();
+                if (this.f6672p != -1) {
+                    this.f6672p = 0;
                 }
-                if (this.f6567q != -1) {
-                    this.f6567q = 0;
+                if (this.f6673q != -1) {
+                    this.f6673q = 0;
                 }
-                if (this.f6568r != -1) {
-                    this.f6568r = 0;
+                if (this.f6674r != -1) {
+                    this.f6674r = 0;
                 }
-                if (this.f6570t != -1) {
-                    this.f6570t = 0;
+                if (this.f6676t != -1) {
+                    this.f6676t = 0;
                 }
                 while (true) {
-                    if ((this.f6561k && this.f6551a.size() >= this.f6560j) || this.f6551a.size() >= 15) {
-                        this.f6551a.remove(0);
+                    if ((this.f6667k && this.f6657a.size() >= this.f6666j) || this.f6657a.size() >= 15) {
+                        this.f6657a.remove(0);
                     } else {
                         return;
                     }
                 }
             } else {
-                this.f6552b.append(c10);
+                this.f6658b.append(c10);
             }
         }
 
         public void b() {
-            int length = this.f6552b.length();
+            int length = this.f6658b.length();
             if (length > 0) {
-                this.f6552b.delete(length - 1, length);
+                this.f6658b.delete(length - 1, length);
             }
         }
 
@@ -313,74 +313,74 @@ public final class c extends e {
         }
 
         public SpannableString d() {
-            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(this.f6552b);
+            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(this.f6658b);
             int length = spannableStringBuilder.length();
             if (length > 0) {
-                if (this.f6566p != -1) {
-                    spannableStringBuilder.setSpan(new StyleSpan(2), this.f6566p, length, 33);
+                if (this.f6672p != -1) {
+                    spannableStringBuilder.setSpan(new StyleSpan(2), this.f6672p, length, 33);
                 }
-                if (this.f6567q != -1) {
-                    spannableStringBuilder.setSpan(new UnderlineSpan(), this.f6567q, length, 33);
+                if (this.f6673q != -1) {
+                    spannableStringBuilder.setSpan(new UnderlineSpan(), this.f6673q, length, 33);
                 }
-                if (this.f6568r != -1) {
-                    spannableStringBuilder.setSpan(new ForegroundColorSpan(this.f6569s), this.f6568r, length, 33);
+                if (this.f6674r != -1) {
+                    spannableStringBuilder.setSpan(new ForegroundColorSpan(this.f6675s), this.f6674r, length, 33);
                 }
-                if (this.f6570t != -1) {
-                    spannableStringBuilder.setSpan(new BackgroundColorSpan(this.f6571u), this.f6570t, length, 33);
+                if (this.f6676t != -1) {
+                    spannableStringBuilder.setSpan(new BackgroundColorSpan(this.f6677u), this.f6676t, length, 33);
                 }
             }
             return new SpannableString(spannableStringBuilder);
         }
 
         public void e() {
-            this.f6551a.clear();
-            this.f6552b.clear();
-            this.f6566p = -1;
-            this.f6567q = -1;
-            this.f6568r = -1;
-            this.f6570t = -1;
-            this.f6572v = 0;
+            this.f6657a.clear();
+            this.f6658b.clear();
+            this.f6672p = -1;
+            this.f6673q = -1;
+            this.f6674r = -1;
+            this.f6676t = -1;
+            this.f6678v = 0;
         }
 
         public void f(boolean z10, boolean z11, boolean z12, int i10, boolean z13, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
-            this.f6553c = true;
-            this.f6554d = z10;
-            this.f6561k = z11;
-            this.f6555e = i10;
-            this.f6556f = z13;
-            this.f6557g = i11;
-            this.f6558h = i12;
-            this.f6559i = i15;
+            this.f6659c = true;
+            this.f6660d = z10;
+            this.f6667k = z11;
+            this.f6661e = i10;
+            this.f6662f = z13;
+            this.f6663g = i11;
+            this.f6664h = i12;
+            this.f6665i = i15;
             int i18 = i13 + 1;
-            if (this.f6560j != i18) {
-                this.f6560j = i18;
+            if (this.f6666j != i18) {
+                this.f6666j = i18;
                 while (true) {
-                    if ((!z11 || this.f6551a.size() < this.f6560j) && this.f6551a.size() < 15) {
+                    if ((!z11 || this.f6657a.size() < this.f6666j) && this.f6657a.size() < 15) {
                         break;
                     }
-                    this.f6551a.remove(0);
+                    this.f6657a.remove(0);
                 }
             }
-            if (i16 != 0 && this.f6563m != i16) {
-                this.f6563m = i16;
+            if (i16 != 0 && this.f6669m != i16) {
+                this.f6669m = i16;
                 int i19 = i16 - 1;
-                q(D[i19], f6549y, C[i19], 0, A[i19], B[i19], f6550z[i19]);
+                q(D[i19], f6655y, C[i19], 0, A[i19], B[i19], f6656z[i19]);
             }
-            if (i17 != 0 && this.f6564n != i17) {
-                this.f6564n = i17;
+            if (i17 != 0 && this.f6670n != i17) {
+                this.f6670n = i17;
                 int i20 = i17 - 1;
                 m(0, 1, 1, false, false, F[i20], E[i20]);
-                n(f6547w, G[i20], f6548x);
+                n(f6653w, G[i20], f6654x);
             }
         }
 
         public boolean i() {
-            return this.f6553c;
+            return this.f6659c;
         }
 
         public boolean j() {
             if (i()) {
-                if (!this.f6551a.isEmpty() || this.f6552b.length() != 0) {
+                if (!this.f6657a.isEmpty() || this.f6658b.length() != 0) {
                     return false;
                 }
                 return true;
@@ -389,164 +389,164 @@ public final class c extends e {
         }
 
         public boolean k() {
-            return this.f6554d;
+            return this.f6660d;
         }
 
         public void l() {
             e();
-            this.f6553c = false;
-            this.f6554d = false;
-            this.f6555e = 4;
-            this.f6556f = false;
-            this.f6557g = 0;
-            this.f6558h = 0;
-            this.f6559i = 0;
-            this.f6560j = 15;
-            this.f6561k = true;
-            this.f6562l = 0;
-            this.f6563m = 0;
-            this.f6564n = 0;
-            int i10 = f6548x;
-            this.f6565o = i10;
-            this.f6569s = f6547w;
-            this.f6571u = i10;
+            this.f6659c = false;
+            this.f6660d = false;
+            this.f6661e = 4;
+            this.f6662f = false;
+            this.f6663g = 0;
+            this.f6664h = 0;
+            this.f6665i = 0;
+            this.f6666j = 15;
+            this.f6667k = true;
+            this.f6668l = 0;
+            this.f6669m = 0;
+            this.f6670n = 0;
+            int i10 = f6654x;
+            this.f6671o = i10;
+            this.f6675s = f6653w;
+            this.f6677u = i10;
         }
 
         public void m(int i10, int i11, int i12, boolean z10, boolean z11, int i13, int i14) {
-            if (this.f6566p != -1) {
+            if (this.f6672p != -1) {
                 if (!z10) {
-                    this.f6552b.setSpan(new StyleSpan(2), this.f6566p, this.f6552b.length(), 33);
-                    this.f6566p = -1;
+                    this.f6658b.setSpan(new StyleSpan(2), this.f6672p, this.f6658b.length(), 33);
+                    this.f6672p = -1;
                 }
             } else if (z10) {
-                this.f6566p = this.f6552b.length();
+                this.f6672p = this.f6658b.length();
             }
-            if (this.f6567q != -1) {
+            if (this.f6673q != -1) {
                 if (!z11) {
-                    this.f6552b.setSpan(new UnderlineSpan(), this.f6567q, this.f6552b.length(), 33);
-                    this.f6567q = -1;
+                    this.f6658b.setSpan(new UnderlineSpan(), this.f6673q, this.f6658b.length(), 33);
+                    this.f6673q = -1;
                 }
             } else if (z11) {
-                this.f6567q = this.f6552b.length();
+                this.f6673q = this.f6658b.length();
             }
         }
 
         public void n(int i10, int i11, int i12) {
-            if (this.f6568r != -1 && this.f6569s != i10) {
-                this.f6552b.setSpan(new ForegroundColorSpan(this.f6569s), this.f6568r, this.f6552b.length(), 33);
+            if (this.f6674r != -1 && this.f6675s != i10) {
+                this.f6658b.setSpan(new ForegroundColorSpan(this.f6675s), this.f6674r, this.f6658b.length(), 33);
             }
-            if (i10 != f6547w) {
-                this.f6568r = this.f6552b.length();
-                this.f6569s = i10;
+            if (i10 != f6653w) {
+                this.f6674r = this.f6658b.length();
+                this.f6675s = i10;
             }
-            if (this.f6570t != -1 && this.f6571u != i11) {
-                this.f6552b.setSpan(new BackgroundColorSpan(this.f6571u), this.f6570t, this.f6552b.length(), 33);
+            if (this.f6676t != -1 && this.f6677u != i11) {
+                this.f6658b.setSpan(new BackgroundColorSpan(this.f6677u), this.f6676t, this.f6658b.length(), 33);
             }
-            if (i11 != f6548x) {
-                this.f6570t = this.f6552b.length();
-                this.f6571u = i11;
+            if (i11 != f6654x) {
+                this.f6676t = this.f6658b.length();
+                this.f6677u = i11;
             }
         }
 
         public void o(int i10, int i11) {
-            if (this.f6572v != i10) {
+            if (this.f6678v != i10) {
                 a('\n');
             }
-            this.f6572v = i10;
+            this.f6678v = i10;
         }
 
         public void p(boolean z10) {
-            this.f6554d = z10;
+            this.f6660d = z10;
         }
 
         public void q(int i10, int i11, boolean z10, int i12, int i13, int i14, int i15) {
-            this.f6565o = i10;
-            this.f6562l = i15;
+            this.f6671o = i10;
+            this.f6668l = i15;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: be.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0134c {
+    public static final class C0098c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f6573a;
+        public final int f6679a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f6574b;
+        public final int f6680b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final byte[] f6575c;
+        public final byte[] f6681c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f6576d = 0;
+        int f6682d = 0;
 
-        public C0134c(int i10, int i11) {
-            this.f6573a = i10;
-            this.f6574b = i11;
-            this.f6575c = new byte[(i11 * 2) - 1];
+        public C0098c(int i10, int i11) {
+            this.f6679a = i10;
+            this.f6680b = i11;
+            this.f6681c = new byte[(i11 * 2) - 1];
         }
     }
 
     public c(int i10, List list) {
         boolean z10 = true;
-        this.f6537k = i10 == -1 ? 1 : i10;
-        this.f6536j = (list == null || !oe.f.h(list)) ? false : z10;
-        this.f6538l = new b[8];
+        this.f6643k = i10 == -1 ? 1 : i10;
+        this.f6642j = (list == null || !oe.f.h(list)) ? false : z10;
+        this.f6644l = new b[8];
         for (int i11 = 0; i11 < 8; i11++) {
-            this.f6538l[i11] = new b();
+            this.f6644l[i11] = new b();
         }
-        this.f6539m = this.f6538l[0];
+        this.f6645m = this.f6644l[0];
     }
 
     private void A() {
-        int h10 = b.h(this.f6534h.h(2), this.f6534h.h(2), this.f6534h.h(2), this.f6534h.h(2));
-        int h11 = b.h(this.f6534h.h(2), this.f6534h.h(2), this.f6534h.h(2), this.f6534h.h(2));
-        this.f6534h.r(2);
-        this.f6539m.n(h10, h11, b.g(this.f6534h.h(2), this.f6534h.h(2), this.f6534h.h(2)));
+        int h10 = b.h(this.f6640h.h(2), this.f6640h.h(2), this.f6640h.h(2), this.f6640h.h(2));
+        int h11 = b.h(this.f6640h.h(2), this.f6640h.h(2), this.f6640h.h(2), this.f6640h.h(2));
+        this.f6640h.r(2);
+        this.f6645m.n(h10, h11, b.g(this.f6640h.h(2), this.f6640h.h(2), this.f6640h.h(2)));
     }
 
     private void B() {
-        this.f6534h.r(4);
-        int h10 = this.f6534h.h(4);
-        this.f6534h.r(2);
-        this.f6539m.o(h10, this.f6534h.h(6));
+        this.f6640h.r(4);
+        int h10 = this.f6640h.h(4);
+        this.f6640h.r(2);
+        this.f6645m.o(h10, this.f6640h.h(6));
     }
 
     private void C() {
-        int h10 = b.h(this.f6534h.h(2), this.f6534h.h(2), this.f6534h.h(2), this.f6534h.h(2));
-        int h11 = this.f6534h.h(2);
-        int g10 = b.g(this.f6534h.h(2), this.f6534h.h(2), this.f6534h.h(2));
-        if (this.f6534h.g()) {
+        int h10 = b.h(this.f6640h.h(2), this.f6640h.h(2), this.f6640h.h(2), this.f6640h.h(2));
+        int h11 = this.f6640h.h(2);
+        int g10 = b.g(this.f6640h.h(2), this.f6640h.h(2), this.f6640h.h(2));
+        if (this.f6640h.g()) {
             h11 |= 4;
         }
-        boolean g11 = this.f6534h.g();
-        int h12 = this.f6534h.h(2);
-        int h13 = this.f6534h.h(2);
-        int h14 = this.f6534h.h(2);
-        this.f6534h.r(8);
-        this.f6539m.q(h10, g10, g11, h11, h12, h13, h14);
+        boolean g11 = this.f6640h.g();
+        int h12 = this.f6640h.h(2);
+        int h13 = this.f6640h.h(2);
+        int h14 = this.f6640h.h(2);
+        this.f6640h.r(8);
+        this.f6645m.q(h10, g10, g11, h11, h12, h13, h14);
     }
 
     private void D() {
-        C0134c c0134c = this.f6542p;
-        if (c0134c.f6576d != (c0134c.f6574b * 2) - 1) {
-            y.b("Cea708Decoder", "DtvCcPacket ended prematurely; size is " + ((this.f6542p.f6574b * 2) - 1) + ", but current index is " + this.f6542p.f6576d + " (sequence number " + this.f6542p.f6573a + ");");
+        C0098c c0098c = this.f6648p;
+        if (c0098c.f6682d != (c0098c.f6680b * 2) - 1) {
+            y.b("Cea708Decoder", "DtvCcPacket ended prematurely; size is " + ((this.f6648p.f6680b * 2) - 1) + ", but current index is " + this.f6648p.f6682d + " (sequence number " + this.f6648p.f6679a + ");");
         }
-        g0 g0Var = this.f6534h;
-        C0134c c0134c2 = this.f6542p;
-        g0Var.o(c0134c2.f6575c, c0134c2.f6576d);
+        g0 g0Var = this.f6640h;
+        C0098c c0098c2 = this.f6648p;
+        g0Var.o(c0098c2.f6681c, c0098c2.f6682d);
         boolean z10 = false;
         while (true) {
-            if (this.f6534h.b() <= 0) {
+            if (this.f6640h.b() <= 0) {
                 break;
             }
-            int h10 = this.f6534h.h(3);
-            int h11 = this.f6534h.h(5);
+            int h10 = this.f6640h.h(3);
+            int h11 = this.f6640h.h(5);
             if (h10 == 7) {
-                this.f6534h.r(2);
-                h10 = this.f6534h.h(6);
+                this.f6640h.r(2);
+                h10 = this.f6640h.h(6);
                 if (h10 < 7) {
                     y.i("Cea708Decoder", "Invalid extended service number: " + h10);
                 }
@@ -555,12 +555,12 @@ public final class c extends e {
                 if (h10 != 0) {
                     y.i("Cea708Decoder", "serviceNumber is non-zero (" + h10 + ") when blockSize is 0");
                 }
-            } else if (h10 != this.f6537k) {
-                this.f6534h.s(h11);
+            } else if (h10 != this.f6643k) {
+                this.f6640h.s(h11);
             } else {
-                int e10 = this.f6534h.e() + (h11 * 8);
-                while (this.f6534h.e() < e10) {
-                    int h12 = this.f6534h.h(8);
+                int e10 = this.f6640h.e() + (h11 * 8);
+                while (this.f6640h.e() < e10) {
+                    int h12 = this.f6640h.h(8);
                     if (h12 != 16) {
                         if (h12 <= 31) {
                             q(h12);
@@ -577,7 +577,7 @@ public final class c extends e {
                             z10 = true;
                         }
                     } else {
-                        int h13 = this.f6534h.h(8);
+                        int h13 = this.f6640h.h(8);
                         if (h13 <= 31) {
                             s(h13);
                         } else {
@@ -597,36 +597,36 @@ public final class c extends e {
             }
         }
         if (z10) {
-            this.f6540n = p();
+            this.f6646n = p();
         }
     }
 
     private void E() {
         for (int i10 = 0; i10 < 8; i10++) {
-            this.f6538l[i10].l();
+            this.f6644l[i10].l();
         }
     }
 
     private void o() {
-        if (this.f6542p == null) {
+        if (this.f6648p == null) {
             return;
         }
         D();
-        this.f6542p = null;
+        this.f6648p = null;
     }
 
     private List p() {
         a c10;
         ArrayList arrayList = new ArrayList();
         for (int i10 = 0; i10 < 8; i10++) {
-            if (!this.f6538l[i10].j() && this.f6538l[i10].k() && (c10 = this.f6538l[i10].c()) != null) {
+            if (!this.f6644l[i10].j() && this.f6644l[i10].k() && (c10 = this.f6644l[i10].c()) != null) {
                 arrayList.add(c10);
             }
         }
-        Collections.sort(arrayList, a.f6544c);
+        Collections.sort(arrayList, a.f6650c);
         ArrayList arrayList2 = new ArrayList(arrayList.size());
         for (int i11 = 0; i11 < arrayList.size(); i11++) {
-            arrayList2.add(((a) arrayList.get(i11)).f6545a);
+            arrayList2.add(((a) arrayList.get(i11)).f6651a);
         }
         return Collections.unmodifiableList(arrayList2);
     }
@@ -640,18 +640,18 @@ public final class c extends e {
                             E();
                             return;
                         case 13:
-                            this.f6539m.a('\n');
+                            this.f6645m.a('\n');
                             return;
                         case 14:
                             return;
                         default:
                             if (i10 >= 17 && i10 <= 23) {
                                 y.i("Cea708Decoder", "Currently unsupported COMMAND_EXT1 Command: " + i10);
-                                this.f6534h.r(8);
+                                this.f6640h.r(8);
                                 return;
                             } else if (i10 >= 24 && i10 <= 31) {
                                 y.i("Cea708Decoder", "Currently unsupported COMMAND_P16 Command: " + i10);
-                                this.f6534h.r(16);
+                                this.f6640h.r(16);
                                 return;
                             } else {
                                 y.i("Cea708Decoder", "Invalid C0 command: " + i10);
@@ -659,10 +659,10 @@ public final class c extends e {
                             }
                     }
                 }
-                this.f6539m.b();
+                this.f6645m.b();
                 return;
             }
-            this.f6540n = p();
+            this.f6646n = p();
         }
     }
 
@@ -679,52 +679,52 @@ public final class c extends e {
             case 134:
             case 135:
                 int i12 = i10 - 128;
-                if (this.f6543q != i12) {
-                    this.f6543q = i12;
-                    this.f6539m = this.f6538l[i12];
+                if (this.f6649q != i12) {
+                    this.f6649q = i12;
+                    this.f6645m = this.f6644l[i12];
                     return;
                 }
                 return;
             case 136:
                 while (i11 <= 8) {
-                    if (this.f6534h.g()) {
-                        this.f6538l[8 - i11].e();
+                    if (this.f6640h.g()) {
+                        this.f6644l[8 - i11].e();
                     }
                     i11++;
                 }
                 return;
             case 137:
                 for (int i13 = 1; i13 <= 8; i13++) {
-                    if (this.f6534h.g()) {
-                        this.f6538l[8 - i13].p(true);
+                    if (this.f6640h.g()) {
+                        this.f6644l[8 - i13].p(true);
                     }
                 }
                 return;
             case 138:
                 while (i11 <= 8) {
-                    if (this.f6534h.g()) {
-                        this.f6538l[8 - i11].p(false);
+                    if (this.f6640h.g()) {
+                        this.f6644l[8 - i11].p(false);
                     }
                     i11++;
                 }
                 return;
             case 139:
                 for (int i14 = 1; i14 <= 8; i14++) {
-                    if (this.f6534h.g()) {
-                        this.f6538l[8 - i14].p(!bVar.k());
+                    if (this.f6640h.g()) {
+                        this.f6644l[8 - i14].p(!bVar.k());
                     }
                 }
                 return;
             case 140:
                 while (i11 <= 8) {
-                    if (this.f6534h.g()) {
-                        this.f6538l[8 - i11].l();
+                    if (this.f6640h.g()) {
+                        this.f6644l[8 - i11].l();
                     }
                     i11++;
                 }
                 return;
             case 141:
-                this.f6534h.r(8);
+                this.f6640h.r(8);
                 return;
             case 142:
                 return;
@@ -732,24 +732,24 @@ public final class c extends e {
                 E();
                 return;
             case 144:
-                if (!this.f6539m.i()) {
-                    this.f6534h.r(16);
+                if (!this.f6645m.i()) {
+                    this.f6640h.r(16);
                     return;
                 } else {
                     z();
                     return;
                 }
             case 145:
-                if (!this.f6539m.i()) {
-                    this.f6534h.r(24);
+                if (!this.f6645m.i()) {
+                    this.f6640h.r(24);
                     return;
                 } else {
                     A();
                     return;
                 }
             case MediaImageViewKt.OBSCURED_IMAGE_MIN_WIDTH /* 146 */:
-                if (!this.f6539m.i()) {
-                    this.f6534h.r(16);
+                if (!this.f6645m.i()) {
+                    this.f6640h.r(16);
                     return;
                 } else {
                     B();
@@ -763,8 +763,8 @@ public final class c extends e {
                 y.i("Cea708Decoder", "Invalid C1 command: " + i10);
                 return;
             case 151:
-                if (!this.f6539m.i()) {
-                    this.f6534h.r(32);
+                if (!this.f6645m.i()) {
+                    this.f6640h.r(32);
                     return;
                 } else {
                     C();
@@ -780,9 +780,9 @@ public final class c extends e {
             case 159:
                 int i15 = i10 - 152;
                 u(i15);
-                if (this.f6543q != i15) {
-                    this.f6543q = i15;
-                    this.f6539m = this.f6538l[i15];
+                if (this.f6649q != i15) {
+                    this.f6649q = i15;
+                    this.f6645m = this.f6644l[i15];
                     return;
                 }
                 return;
@@ -792,54 +792,54 @@ public final class c extends e {
     private void s(int i10) {
         if (i10 > 7) {
             if (i10 <= 15) {
-                this.f6534h.r(8);
+                this.f6640h.r(8);
             } else if (i10 <= 23) {
-                this.f6534h.r(16);
+                this.f6640h.r(16);
             } else if (i10 <= 31) {
-                this.f6534h.r(24);
+                this.f6640h.r(24);
             }
         }
     }
 
     private void t(int i10) {
         if (i10 <= 135) {
-            this.f6534h.r(32);
+            this.f6640h.r(32);
         } else if (i10 <= 143) {
-            this.f6534h.r(40);
+            this.f6640h.r(40);
         } else if (i10 <= 159) {
-            this.f6534h.r(2);
-            this.f6534h.r(this.f6534h.h(6) * 8);
+            this.f6640h.r(2);
+            this.f6640h.r(this.f6640h.h(6) * 8);
         }
     }
 
     private void u(int i10) {
-        b bVar = this.f6538l[i10];
-        this.f6534h.r(2);
-        boolean g10 = this.f6534h.g();
-        boolean g11 = this.f6534h.g();
-        boolean g12 = this.f6534h.g();
-        int h10 = this.f6534h.h(3);
-        boolean g13 = this.f6534h.g();
-        int h11 = this.f6534h.h(7);
-        int h12 = this.f6534h.h(8);
-        int h13 = this.f6534h.h(4);
-        int h14 = this.f6534h.h(4);
-        this.f6534h.r(2);
-        int h15 = this.f6534h.h(6);
-        this.f6534h.r(2);
-        bVar.f(g10, g11, g12, h10, g13, h11, h12, h14, h15, h13, this.f6534h.h(3), this.f6534h.h(3));
+        b bVar = this.f6644l[i10];
+        this.f6640h.r(2);
+        boolean g10 = this.f6640h.g();
+        boolean g11 = this.f6640h.g();
+        boolean g12 = this.f6640h.g();
+        int h10 = this.f6640h.h(3);
+        boolean g13 = this.f6640h.g();
+        int h11 = this.f6640h.h(7);
+        int h12 = this.f6640h.h(8);
+        int h13 = this.f6640h.h(4);
+        int h14 = this.f6640h.h(4);
+        this.f6640h.r(2);
+        int h15 = this.f6640h.h(6);
+        this.f6640h.r(2);
+        bVar.f(g10, g11, g12, h10, g13, h11, h12, h14, h15, h13, this.f6640h.h(3), this.f6640h.h(3));
     }
 
     private void v(int i10) {
         if (i10 == 127) {
-            this.f6539m.a((char) 9835);
+            this.f6645m.a((char) 9835);
         } else {
-            this.f6539m.a((char) (i10 & SetSpanOperation.SPAN_MAX_PRIORITY));
+            this.f6645m.a((char) (i10 & SetSpanOperation.SPAN_MAX_PRIORITY));
         }
     }
 
     private void w(int i10) {
-        this.f6539m.a((char) (i10 & SetSpanOperation.SPAN_MAX_PRIORITY));
+        this.f6645m.a((char) (i10 & SetSpanOperation.SPAN_MAX_PRIORITY));
     }
 
     private void x(int i10) {
@@ -855,54 +855,54 @@ public final class c extends e {
                                             if (i10 != 61) {
                                                 switch (i10) {
                                                     case 48:
-                                                        this.f6539m.a((char) 9608);
+                                                        this.f6645m.a((char) 9608);
                                                         return;
                                                     case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_IMAGE /* 49 */:
-                                                        this.f6539m.a((char) 8216);
+                                                        this.f6645m.a((char) 8216);
                                                         return;
                                                     case 50:
-                                                        this.f6539m.a((char) 8217);
+                                                        this.f6645m.a((char) 8217);
                                                         return;
                                                     case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_VISUAL_PLACEHOLDER /* 51 */:
-                                                        this.f6539m.a((char) 8220);
+                                                        this.f6645m.a((char) 8220);
                                                         return;
                                                     case ChatViewRecyclerTypes.REFERRAL /* 52 */:
-                                                        this.f6539m.a((char) 8221);
+                                                        this.f6645m.a((char) 8221);
                                                         return;
                                                     case ChatViewRecyclerTypes.GUILD_PROFILE_INVITE /* 53 */:
-                                                        this.f6539m.a((char) 8226);
+                                                        this.f6645m.a((char) 8226);
                                                         return;
                                                     default:
                                                         switch (i10) {
                                                             case 118:
-                                                                this.f6539m.a((char) 8539);
+                                                                this.f6645m.a((char) 8539);
                                                                 return;
                                                             case 119:
-                                                                this.f6539m.a((char) 8540);
+                                                                this.f6645m.a((char) 8540);
                                                                 return;
                                                             case 120:
-                                                                this.f6539m.a((char) 8541);
+                                                                this.f6645m.a((char) 8541);
                                                                 return;
                                                             case 121:
-                                                                this.f6539m.a((char) 8542);
+                                                                this.f6645m.a((char) 8542);
                                                                 return;
                                                             case 122:
-                                                                this.f6539m.a((char) 9474);
+                                                                this.f6645m.a((char) 9474);
                                                                 return;
                                                             case 123:
-                                                                this.f6539m.a((char) 9488);
+                                                                this.f6645m.a((char) 9488);
                                                                 return;
                                                             case 124:
-                                                                this.f6539m.a((char) 9492);
+                                                                this.f6645m.a((char) 9492);
                                                                 return;
                                                             case 125:
-                                                                this.f6539m.a((char) 9472);
+                                                                this.f6645m.a((char) 9472);
                                                                 return;
                                                             case 126:
-                                                                this.f6539m.a((char) 9496);
+                                                                this.f6645m.a((char) 9496);
                                                                 return;
                                                             case 127:
-                                                                this.f6539m.a((char) 9484);
+                                                                this.f6645m.a((char) 9484);
                                                                 return;
                                                             default:
                                                                 y.i("Cea708Decoder", "Invalid G2 character: " + i10);
@@ -910,47 +910,47 @@ public final class c extends e {
                                                         }
                                                 }
                                             }
-                                            this.f6539m.a((char) 8480);
+                                            this.f6645m.a((char) 8480);
                                             return;
                                         }
-                                        this.f6539m.a((char) 339);
+                                        this.f6645m.a((char) 339);
                                         return;
                                     }
-                                    this.f6539m.a((char) 353);
+                                    this.f6645m.a((char) 353);
                                     return;
                                 }
-                                this.f6539m.a((char) 8482);
+                                this.f6645m.a((char) 8482);
                                 return;
                             }
-                            this.f6539m.a((char) 376);
+                            this.f6645m.a((char) 376);
                             return;
                         }
-                        this.f6539m.a((char) 338);
+                        this.f6645m.a((char) 338);
                         return;
                     }
-                    this.f6539m.a((char) 352);
+                    this.f6645m.a((char) 352);
                     return;
                 }
-                this.f6539m.a((char) 8230);
+                this.f6645m.a((char) 8230);
                 return;
             }
-            this.f6539m.a((char) 160);
+            this.f6645m.a((char) 160);
             return;
         }
-        this.f6539m.a(' ');
+        this.f6645m.a(' ');
     }
 
     private void y(int i10) {
         if (i10 == 160) {
-            this.f6539m.a((char) 13252);
+            this.f6645m.a((char) 13252);
             return;
         }
         y.i("Cea708Decoder", "Invalid G3 character: " + i10);
-        this.f6539m.a('_');
+        this.f6645m.a('_');
     }
 
     private void z() {
-        this.f6539m.m(this.f6534h.h(4), this.f6534h.h(2), this.f6534h.h(2), this.f6534h.g(), this.f6534h.g(), this.f6534h.h(3), this.f6534h.h(3));
+        this.f6645m.m(this.f6640h.h(4), this.f6640h.h(2), this.f6640h.h(2), this.f6640h.g(), this.f6640h.g(), this.f6640h.h(3), this.f6640h.h(3));
     }
 
     @Override // be.e, ae.h
@@ -960,18 +960,18 @@ public final class c extends e {
 
     @Override // be.e
     protected g e() {
-        List list = this.f6540n;
-        this.f6541o = list;
+        List list = this.f6646n;
+        this.f6647o = list;
         return new f((List) oe.a.e(list));
     }
 
     @Override // be.e
     protected void f(k kVar) {
         boolean z10;
-        ByteBuffer byteBuffer = (ByteBuffer) oe.a.e(kVar.f47775i);
-        this.f6533g.S(byteBuffer.array(), byteBuffer.limit());
-        while (this.f6533g.a() >= 3) {
-            int H = this.f6533g.H();
+        ByteBuffer byteBuffer = (ByteBuffer) oe.a.e(kVar.f46229i);
+        this.f6639g.S(byteBuffer.array(), byteBuffer.limit());
+        while (this.f6639g.a() >= 3) {
+            int H = this.f6639g.H();
             int i10 = H & 3;
             boolean z11 = false;
             if ((H & 4) == 4) {
@@ -979,49 +979,49 @@ public final class c extends e {
             } else {
                 z10 = false;
             }
-            byte H2 = (byte) this.f6533g.H();
-            byte H3 = (byte) this.f6533g.H();
+            byte H2 = (byte) this.f6639g.H();
+            byte H3 = (byte) this.f6639g.H();
             if (i10 == 2 || i10 == 3) {
                 if (z10) {
                     if (i10 == 3) {
                         o();
                         int i11 = (H2 & 192) >> 6;
-                        int i12 = this.f6535i;
+                        int i12 = this.f6641i;
                         if (i12 != -1 && i11 != (i12 + 1) % 4) {
                             E();
-                            y.i("Cea708Decoder", "Sequence number discontinuity. previous=" + this.f6535i + " current=" + i11);
+                            y.i("Cea708Decoder", "Sequence number discontinuity. previous=" + this.f6641i + " current=" + i11);
                         }
-                        this.f6535i = i11;
+                        this.f6641i = i11;
                         int i13 = H2 & 63;
                         if (i13 == 0) {
                             i13 = 64;
                         }
-                        C0134c c0134c = new C0134c(i11, i13);
-                        this.f6542p = c0134c;
-                        byte[] bArr = c0134c.f6575c;
-                        int i14 = c0134c.f6576d;
-                        c0134c.f6576d = i14 + 1;
+                        C0098c c0098c = new C0098c(i11, i13);
+                        this.f6648p = c0098c;
+                        byte[] bArr = c0098c.f6681c;
+                        int i14 = c0098c.f6682d;
+                        c0098c.f6682d = i14 + 1;
                         bArr[i14] = H3;
                     } else {
                         if (i10 == 2) {
                             z11 = true;
                         }
                         oe.a.a(z11);
-                        C0134c c0134c2 = this.f6542p;
-                        if (c0134c2 == null) {
+                        C0098c c0098c2 = this.f6648p;
+                        if (c0098c2 == null) {
                             y.c("Cea708Decoder", "Encountered DTVCC_PACKET_DATA before DTVCC_PACKET_START");
                         } else {
-                            byte[] bArr2 = c0134c2.f6575c;
-                            int i15 = c0134c2.f6576d;
+                            byte[] bArr2 = c0098c2.f6681c;
+                            int i15 = c0098c2.f6682d;
                             int i16 = i15 + 1;
-                            c0134c2.f6576d = i16;
+                            c0098c2.f6682d = i16;
                             bArr2[i15] = H2;
-                            c0134c2.f6576d = i15 + 2;
+                            c0098c2.f6682d = i15 + 2;
                             bArr2[i16] = H3;
                         }
                     }
-                    C0134c c0134c3 = this.f6542p;
-                    if (c0134c3.f6576d == (c0134c3.f6574b * 2) - 1) {
+                    C0098c c0098c3 = this.f6648p;
+                    if (c0098c3.f6682d == (c0098c3.f6680b * 2) - 1) {
                         o();
                     }
                 }
@@ -1032,12 +1032,12 @@ public final class c extends e {
     @Override // be.e, rc.d
     public void flush() {
         super.flush();
-        this.f6540n = null;
-        this.f6541o = null;
-        this.f6543q = 0;
-        this.f6539m = this.f6538l[0];
+        this.f6646n = null;
+        this.f6647o = null;
+        this.f6649q = 0;
+        this.f6645m = this.f6644l[0];
         E();
-        this.f6542p = null;
+        this.f6648p = null;
     }
 
     @Override // be.e
@@ -1052,7 +1052,7 @@ public final class c extends e {
 
     @Override // be.e
     protected boolean k() {
-        if (this.f6540n != this.f6541o) {
+        if (this.f6646n != this.f6647o) {
             return true;
         }
         return false;

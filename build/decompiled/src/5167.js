@@ -15,9 +15,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = require;
     var0 = undefined;
     var1 = var1.bind(var0)(var3);
-    var3 = var1.requireNativeComponent;
-    var1 = 'AutoLayoutView';
-    var1 = var3.bind(var0)(var1);
-    var2.default = var1;
+    var3 = var1.ScrollView;
+    var1 = var1.Animated;
+    var1 = var1.ScrollView;
+    var2.CompatScroller = var3;
+    var2.CompatAnimatedScroller = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

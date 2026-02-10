@@ -6,15 +6,15 @@ import com.google.android.gms.tasks.Task;
 final class z implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ Task f56445d;
+    final /* synthetic */ Task f56484d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ a0 f56446e;
+    final /* synthetic */ a0 f56485e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public z(a0 a0Var, Task task) {
-        this.f56446e = a0Var;
-        this.f56445d = task;
+        this.f56485e = a0Var;
+        this.f56484d = task;
     }
 
     @Override // java.lang.Runnable
@@ -22,14 +22,14 @@ final class z implements Runnable {
         Object obj;
         OnCompleteListener onCompleteListener;
         OnCompleteListener onCompleteListener2;
-        obj = this.f56446e.f56386b;
+        obj = this.f56485e.f56425b;
         synchronized (obj) {
             try {
-                a0 a0Var = this.f56446e;
-                onCompleteListener = a0Var.f56387c;
+                a0 a0Var = this.f56485e;
+                onCompleteListener = a0Var.f56426c;
                 if (onCompleteListener != null) {
-                    onCompleteListener2 = a0Var.f56387c;
-                    onCompleteListener2.onComplete(this.f56445d);
+                    onCompleteListener2 = a0Var.f56426c;
+                    onCompleteListener2.onComplete(this.f56484d);
                 }
             } catch (Throwable th2) {
                 throw th2;

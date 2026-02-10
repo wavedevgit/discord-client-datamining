@@ -58,7 +58,7 @@ public final class ReactContentSizeChangedEvent extends Event<ReactTextChangedEv
         return EVENT_NAME;
     }
 
-    @rr.c
+    @as.c
     public ReactContentSizeChangedEvent(int i10, float f10, float f11) {
         this(-1, i10, f10, f11);
     }

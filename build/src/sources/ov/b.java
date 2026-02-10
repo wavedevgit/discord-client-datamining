@@ -1,31 +1,35 @@
 package ov;
+
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class b extends tv.c {
+public interface b {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final int f42746a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        private static Object a(b bVar, Object obj) {
+            while (!(obj instanceof Number)) {
+                if (obj instanceof String) {
+                    return StringsKt.p((String) obj);
+                }
+                if (obj instanceof List) {
+                    obj = CollectionsKt.firstOrNull((List) obj);
+                } else {
+                    return null;
+                }
+            }
+            return Double.valueOf(((Number) obj).doubleValue());
+        }
 
-    /* renamed from: b  reason: collision with root package name */
-    private final int f42747b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final boolean f42748c;
-
-    public b(int i10, int i11, boolean z10) {
-        this.f42746a = i10;
-        this.f42747b = i11;
-        this.f42748c = z10;
-    }
-
-    public int e() {
-        return this.f42747b;
-    }
-
-    public int f() {
-        return this.f42746a;
-    }
-
-    public boolean g() {
-        return this.f42748c;
+        public static List b(b bVar, Object obj) {
+            List<Object> c10 = mw.a.c(obj);
+            ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
+            for (Object obj2 : c10) {
+                arrayList.add(a(bVar, obj2));
+            }
+            return arrayList;
+        }
     }
 }

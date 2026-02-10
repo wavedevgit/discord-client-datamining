@@ -48,7 +48,7 @@ public final class AttributeStyles_InputRadioGroupFontWeightStyleJsonAdapter ext
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 fontWeightContainer = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
@@ -66,7 +66,7 @@ public final class AttributeStyles_InputRadioGroupFontWeightStyleJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.InputRadioGroupFontWeightStyle inputRadioGroupFontWeightStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputRadioGroupFontWeightStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableFontWeightContainerAdapter.toJson(writer, inputRadioGroupFontWeightStyle.getBase());
             writer.J("description");

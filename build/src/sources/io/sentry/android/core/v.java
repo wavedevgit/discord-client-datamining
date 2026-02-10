@@ -32,74 +32,74 @@ public class v implements io.sentry.l0, a0.b {
     private final io.sentry.util.a H;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ILogger f27655d;
+    private final ILogger f28590d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f27656e;
+    private final String f28591e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f27657i;
+    private final int f28592i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final io.sentry.z0 f27658o;
+    private final io.sentry.z0 f28593o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final x0 f27659p;
+    private final x0 f28594p;
 
     /* renamed from: r  reason: collision with root package name */
-    private final io.sentry.android.core.internal.util.c0 f27661r;
+    private final io.sentry.android.core.internal.util.c0 f28596r;
 
     /* renamed from: u  reason: collision with root package name */
-    private io.sentry.w0 f27664u;
+    private io.sentry.w0 f28599u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Future f27665v;
+    private Future f28600v;
 
     /* renamed from: w  reason: collision with root package name */
-    private io.sentry.h f27666w;
+    private io.sentry.h f28601w;
 
     /* renamed from: y  reason: collision with root package name */
-    private io.sentry.protocol.x f27668y;
+    private io.sentry.protocol.x f28603y;
 
     /* renamed from: z  reason: collision with root package name */
-    private io.sentry.protocol.x f27669z;
+    private io.sentry.protocol.x f28604z;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f27660q = false;
+    private boolean f28595q = false;
 
     /* renamed from: s  reason: collision with root package name */
-    private i0 f27662s = null;
+    private i0 f28597s = null;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f27663t = false;
+    private boolean f28598t = false;
 
     /* renamed from: x  reason: collision with root package name */
-    private final List f27667x = new ArrayList();
+    private final List f28602x = new ArrayList();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f27670a;
+        static final /* synthetic */ int[] f28605a;
 
         static {
             int[] iArr = new int[o3.values().length];
-            f27670a = iArr;
+            f28605a = iArr;
             try {
                 iArr[o3.TRACE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f27670a[o3.MANUAL.ordinal()] = 2;
+                f28605a[o3.MANUAL.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
     }
 
     public v(x0 x0Var, io.sentry.android.core.internal.util.c0 c0Var, ILogger iLogger, String str, int i10, io.sentry.z0 z0Var) {
-        io.sentry.protocol.x xVar = io.sentry.protocol.x.f28863e;
-        this.f27668y = xVar;
-        this.f27669z = xVar;
+        io.sentry.protocol.x xVar = io.sentry.protocol.x.f29798e;
+        this.f28603y = xVar;
+        this.f28604z = xVar;
         this.A = new AtomicBoolean(false);
         this.B = new c7();
         this.C = true;
@@ -108,29 +108,29 @@ public class v implements io.sentry.l0, a0.b {
         this.F = 0;
         this.G = new io.sentry.util.a();
         this.H = new io.sentry.util.a();
-        this.f27655d = iLogger;
-        this.f27661r = c0Var;
-        this.f27659p = x0Var;
-        this.f27656e = str;
-        this.f27657i = i10;
-        this.f27658o = z0Var;
+        this.f28590d = iLogger;
+        this.f28596r = c0Var;
+        this.f28594p = x0Var;
+        this.f28591e = str;
+        this.f28592i = i10;
+        this.f28593o = z0Var;
     }
 
     public static /* synthetic */ void b(v vVar, k7 k7Var, io.sentry.w0 w0Var) {
         if (!vVar.A.get()) {
-            ArrayList arrayList = new ArrayList(vVar.f27667x.size());
+            ArrayList arrayList = new ArrayList(vVar.f28602x.size());
             io.sentry.a1 a10 = vVar.H.a();
             try {
-                for (m3.a aVar : vVar.f27667x) {
+                for (m3.a aVar : vVar.f28602x) {
                     arrayList.add(aVar.a(k7Var));
                 }
-                vVar.f27667x.clear();
+                vVar.f28602x.clear();
                 if (a10 != null) {
                     a10.close();
                 }
                 Iterator it = arrayList.iterator();
                 while (it.hasNext()) {
-                    w0Var.v((m3) it.next());
+                    w0Var.w((m3) it.next());
                 }
             } catch (Throwable th2) {
                 if (a10 != null) {
@@ -146,31 +146,31 @@ public class v implements io.sentry.l0, a0.b {
     }
 
     private void i() {
-        if (this.f27660q) {
+        if (this.f28595q) {
             return;
         }
-        this.f27660q = true;
-        String str = this.f27656e;
+        this.f28595q = true;
+        String str = this.f28591e;
         if (str == null) {
-            this.f27655d.c(SentryLevel.WARNING, "Disabling profiling because no profiling traces dir path is defined in options.", new Object[0]);
+            this.f28590d.c(SentryLevel.WARNING, "Disabling profiling because no profiling traces dir path is defined in options.", new Object[0]);
             return;
         }
-        int i10 = this.f27657i;
+        int i10 = this.f28592i;
         if (i10 <= 0) {
-            this.f27655d.c(SentryLevel.WARNING, "Disabling profiling because trace rate is set to %d", Integer.valueOf(i10));
+            this.f28590d.c(SentryLevel.WARNING, "Disabling profiling because trace rate is set to %d", Integer.valueOf(i10));
         } else {
-            this.f27662s = new i0(str, ((int) TimeUnit.SECONDS.toMicros(1L)) / this.f27657i, this.f27661r, null, this.f27655d);
+            this.f28597s = new i0(str, ((int) TimeUnit.SECONDS.toMicros(1L)) / this.f28592i, this.f28596r, null, this.f28590d);
         }
     }
 
     private void j() {
-        io.sentry.w0 w0Var = this.f27664u;
-        if ((w0Var == null || w0Var == io.sentry.p2.I()) && b5.v() != io.sentry.p2.I()) {
-            this.f27664u = b5.v();
-            this.f27666w = b5.v().b().getCompositePerformanceCollector();
-            io.sentry.transport.a0 j10 = this.f27664u.j();
-            if (j10 != null) {
-                j10.n(this);
+        io.sentry.w0 w0Var = this.f28599u;
+        if ((w0Var == null || w0Var == io.sentry.p2.h()) && b5.v() != io.sentry.p2.h()) {
+            this.f28599u = b5.v();
+            this.f28601w = b5.v().b().getCompositePerformanceCollector();
+            io.sentry.transport.a0 k10 = this.f28599u.k();
+            if (k10 != null) {
+                k10.n(this);
             }
         }
     }
@@ -190,51 +190,51 @@ public class v implements io.sentry.l0, a0.b {
 
     private void l() {
         j();
-        if (this.f27659p.d() >= 22) {
+        if (this.f28594p.d() >= 22) {
             i();
-            if (this.f27662s != null) {
-                io.sentry.w0 w0Var = this.f27664u;
+            if (this.f28597s != null) {
+                io.sentry.w0 w0Var = this.f28599u;
                 if (w0Var != null) {
-                    io.sentry.transport.a0 j10 = w0Var.j();
-                    if (j10 != null && (j10.z(io.sentry.j.All) || j10.z(io.sentry.j.ProfileChunkUi))) {
-                        this.f27655d.c(SentryLevel.WARNING, "SDK is rate limited. Stopping profiler.", new Object[0]);
+                    io.sentry.transport.a0 k10 = w0Var.k();
+                    if (k10 != null && (k10.z(io.sentry.j.All) || k10.z(io.sentry.j.ProfileChunkUi))) {
+                        this.f28590d.c(SentryLevel.WARNING, "SDK is rate limited. Stopping profiler.", new Object[0]);
                         m(false);
                         return;
-                    } else if (this.f27664u.b().getConnectionStatusProvider().y0() == k0.a.DISCONNECTED) {
-                        this.f27655d.c(SentryLevel.WARNING, "Device is offline. Stopping profiler.", new Object[0]);
+                    } else if (this.f28599u.b().getConnectionStatusProvider().y0() == k0.a.DISCONNECTED) {
+                        this.f28590d.c(SentryLevel.WARNING, "Device is offline. Stopping profiler.", new Object[0]);
                         m(false);
                         return;
                     } else {
-                        this.B = this.f27664u.b().getDateProvider().now();
+                        this.B = this.f28599u.b().getDateProvider().now();
                     }
                 } else {
                     this.B = new c7();
                 }
-                if (this.f27662s.j() == null) {
+                if (this.f28597s.j() == null) {
                     return;
                 }
-                this.f27663t = true;
-                io.sentry.protocol.x xVar = this.f27668y;
-                io.sentry.protocol.x xVar2 = io.sentry.protocol.x.f28863e;
+                this.f28598t = true;
+                io.sentry.protocol.x xVar = this.f28603y;
+                io.sentry.protocol.x xVar2 = io.sentry.protocol.x.f29798e;
                 if (xVar.equals(xVar2)) {
-                    this.f27668y = new io.sentry.protocol.x();
+                    this.f28603y = new io.sentry.protocol.x();
                 }
-                if (this.f27669z.equals(xVar2)) {
-                    this.f27669z = new io.sentry.protocol.x();
+                if (this.f28604z.equals(xVar2)) {
+                    this.f28604z = new io.sentry.protocol.x();
                 }
-                io.sentry.h hVar = this.f27666w;
+                io.sentry.h hVar = this.f28601w;
                 if (hVar != null) {
-                    hVar.f(this.f27669z.toString());
+                    hVar.f(this.f28604z.toString());
                 }
                 try {
-                    this.f27665v = this.f27658o.c(new Runnable() { // from class: io.sentry.android.core.t
+                    this.f28600v = this.f28593o.c(new Runnable() { // from class: io.sentry.android.core.t
                         @Override // java.lang.Runnable
                         public final void run() {
                             v.this.m(true);
                         }
                     }, LogThrottleSingleton.RATE_LIMIT_ONE_MINUTE);
                 } catch (RejectedExecutionException e10) {
-                    this.f27655d.b(SentryLevel.ERROR, "Failed to schedule profiling chunk finish. Did you call Sentry.close()?", e10);
+                    this.f28590d.b(SentryLevel.ERROR, "Failed to schedule profiling chunk finish. Did you call Sentry.close()?", e10);
                     this.D = true;
                 }
             }
@@ -247,47 +247,47 @@ public class v implements io.sentry.l0, a0.b {
         j();
         io.sentry.a1 a10 = this.G.a();
         try {
-            Future future = this.f27665v;
+            Future future = this.f28600v;
             if (future != null) {
                 future.cancel(true);
             }
-            if (this.f27662s != null && this.f27663t) {
-                if (this.f27659p.d() < 22) {
+            if (this.f28597s != null && this.f28598t) {
+                if (this.f28594p.d() < 22) {
                     if (a10 != null) {
                         a10.close();
                         return;
                     }
                     return;
                 }
-                io.sentry.h hVar = this.f27666w;
+                io.sentry.h hVar = this.f28601w;
                 if (hVar != null) {
-                    list = hVar.c(this.f27669z.toString());
+                    list = hVar.c(this.f28604z.toString());
                 } else {
                     list = null;
                 }
-                i0.b g10 = this.f27662s.g(false, list);
+                i0.b g10 = this.f28597s.g(false, list);
                 if (g10 == null) {
-                    this.f27655d.c(SentryLevel.ERROR, "An error occurred while collecting a profile chunk, and it won't be sent.", new Object[0]);
+                    this.f28590d.c(SentryLevel.ERROR, "An error occurred while collecting a profile chunk, and it won't be sent.", new Object[0]);
                 } else {
                     io.sentry.a1 a11 = this.H.a();
-                    this.f27667x.add(new m3.a(this.f27668y, this.f27669z, g10.f27333d, g10.f27332c, this.B, "android"));
+                    this.f28602x.add(new m3.a(this.f28603y, this.f28604z, g10.f28268d, g10.f28267c, this.B, "android"));
                     if (a11 != null) {
                         a11.close();
                     }
                 }
-                this.f27663t = false;
-                io.sentry.protocol.x xVar = io.sentry.protocol.x.f28863e;
-                this.f27669z = xVar;
-                io.sentry.w0 w0Var = this.f27664u;
+                this.f28598t = false;
+                io.sentry.protocol.x xVar = io.sentry.protocol.x.f29798e;
+                this.f28604z = xVar;
+                io.sentry.w0 w0Var = this.f28599u;
                 if (w0Var != null) {
                     k(w0Var, w0Var.b());
                 }
                 if (z10 && !this.D) {
-                    this.f27655d.c(SentryLevel.DEBUG, "Profile chunk finished. Starting a new one.", new Object[0]);
+                    this.f28590d.c(SentryLevel.DEBUG, "Profile chunk finished. Starting a new one.", new Object[0]);
                     l();
                 } else {
-                    this.f27668y = xVar;
-                    this.f27655d.c(SentryLevel.DEBUG, "Profile chunk finished.", new Object[0]);
+                    this.f28603y = xVar;
+                    this.f28590d.c(SentryLevel.DEBUG, "Profile chunk finished.", new Object[0]);
                 }
                 if (a10 != null) {
                     a10.close();
@@ -295,9 +295,9 @@ public class v implements io.sentry.l0, a0.b {
                 }
                 return;
             }
-            io.sentry.protocol.x xVar2 = io.sentry.protocol.x.f28863e;
-            this.f27668y = xVar2;
-            this.f27669z = xVar2;
+            io.sentry.protocol.x xVar2 = io.sentry.protocol.x.f29798e;
+            this.f28603y = xVar2;
+            this.f28604z = xVar2;
             if (a10 != null) {
                 a10.close();
             }
@@ -347,17 +347,17 @@ public class v implements io.sentry.l0, a0.b {
                 this.C = false;
             }
             if (!this.E) {
-                this.f27655d.c(SentryLevel.DEBUG, "Profiler was not started due to sampling decision.", new Object[0]);
+                this.f28590d.c(SentryLevel.DEBUG, "Profiler was not started due to sampling decision.", new Object[0]);
                 if (a10 != null) {
                     a10.close();
                     return;
                 }
                 return;
             }
-            int i10 = a.f27670a[o3Var.ordinal()];
+            int i10 = a.f28605a[o3Var.ordinal()];
             if (i10 != 1) {
                 if (i10 == 2 && isRunning()) {
-                    this.f27655d.c(SentryLevel.DEBUG, "Profiler is already running.", new Object[0]);
+                    this.f28590d.c(SentryLevel.DEBUG, "Profiler is already running.", new Object[0]);
                     if (a10 != null) {
                         a10.close();
                         return;
@@ -371,7 +371,7 @@ public class v implements io.sentry.l0, a0.b {
                 this.F++;
             }
             if (!isRunning()) {
-                this.f27655d.c(SentryLevel.DEBUG, "Started Profiler.", new Object[0]);
+                this.f28590d.c(SentryLevel.DEBUG, "Started Profiler.", new Object[0]);
                 l();
             }
             if (a10 != null) {
@@ -396,14 +396,14 @@ public class v implements io.sentry.l0, a0.b {
 
     @Override // io.sentry.l0
     public io.sentry.protocol.x f() {
-        return this.f27669z;
+        return this.f28604z;
     }
 
     @Override // io.sentry.l0
     public void g(o3 o3Var) {
         io.sentry.a1 a10 = this.G.a();
         try {
-            int i10 = a.f27670a[o3Var.ordinal()];
+            int i10 = a.f28605a[o3Var.ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
                     this.D = true;
@@ -440,12 +440,12 @@ public class v implements io.sentry.l0, a0.b {
 
     @Override // io.sentry.l0
     public io.sentry.protocol.x h() {
-        return this.f27668y;
+        return this.f28603y;
     }
 
     @Override // io.sentry.l0
     public boolean isRunning() {
-        return this.f27663t;
+        return this.f28598t;
     }
 
     @Override // io.sentry.transport.a0.b
@@ -453,7 +453,7 @@ public class v implements io.sentry.l0, a0.b {
         if (!a0Var.z(io.sentry.j.All) && !a0Var.z(io.sentry.j.ProfileChunkUi)) {
             return;
         }
-        this.f27655d.c(SentryLevel.WARNING, "SDK is rate limited. Stopping profiler.", new Object[0]);
+        this.f28590d.c(SentryLevel.WARNING, "SDK is rate limited. Stopping profiler.", new Object[0]);
         m(false);
     }
 }

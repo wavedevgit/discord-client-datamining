@@ -1,127 +1,151 @@
 package ru;
 
-import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import java.util.ArrayList;
-import java.util.Map;
-import kotlin.collections.CollectionsKt;
-import kotlin.collections.o0;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
+import okhttp3.Call;
+import okhttp3.Interceptor;
+import okhttp3.Request;
+import okhttp3.Response;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g {
+public final class g implements Interceptor.Chain {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f49381a;
+    private final qu.e f47760a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f49382b;
+    private final List f47761b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c0 f49383c;
+    private final int f47762c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Long f49384d;
+    private final qu.c f47763d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Long f49385e;
+    private final Request f47764e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Long f49386f;
+    private final int f47765f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Long f49387g;
+    private final int f47766g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Map f49388h;
+    private final int f47767h;
 
-    public g(boolean z10, boolean z11, c0 c0Var, Long l10, Long l11, Long l12, Long l13, Map extras) {
-        Intrinsics.checkNotNullParameter(extras, "extras");
-        this.f49381a = z10;
-        this.f49382b = z11;
-        this.f49383c = c0Var;
-        this.f49384d = l10;
-        this.f49385e = l11;
-        this.f49386f = l12;
-        this.f49387g = l13;
-        this.f49388h = o0.w(extras);
+    /* renamed from: i  reason: collision with root package name */
+    private int f47768i;
+
+    public g(qu.e call, List interceptors, int i10, qu.c cVar, Request request, int i11, int i12, int i13) {
+        Intrinsics.checkNotNullParameter(call, "call");
+        Intrinsics.checkNotNullParameter(interceptors, "interceptors");
+        Intrinsics.checkNotNullParameter(request, "request");
+        this.f47760a = call;
+        this.f47761b = interceptors;
+        this.f47762c = i10;
+        this.f47763d = cVar;
+        this.f47764e = request;
+        this.f47765f = i11;
+        this.f47766g = i12;
+        this.f47767h = i13;
     }
 
-    public static /* synthetic */ g b(g gVar, boolean z10, boolean z11, c0 c0Var, Long l10, Long l11, Long l12, Long l13, Map map, int i10, Object obj) {
-        if ((i10 & 1) != 0) {
-            z10 = gVar.f49381a;
+    public static /* synthetic */ g c(g gVar, int i10, qu.c cVar, Request request, int i11, int i12, int i13, int i14, Object obj) {
+        if ((i14 & 1) != 0) {
+            i10 = gVar.f47762c;
         }
-        if ((i10 & 2) != 0) {
-            z11 = gVar.f49382b;
+        if ((i14 & 2) != 0) {
+            cVar = gVar.f47763d;
         }
-        if ((i10 & 4) != 0) {
-            c0Var = gVar.f49383c;
+        if ((i14 & 4) != 0) {
+            request = gVar.f47764e;
         }
-        if ((i10 & 8) != 0) {
-            l10 = gVar.f49384d;
+        if ((i14 & 8) != 0) {
+            i11 = gVar.f47765f;
         }
-        if ((i10 & 16) != 0) {
-            l11 = gVar.f49385e;
+        if ((i14 & 16) != 0) {
+            i12 = gVar.f47766g;
         }
-        if ((i10 & 32) != 0) {
-            l12 = gVar.f49386f;
+        if ((i14 & 32) != 0) {
+            i13 = gVar.f47767h;
         }
-        if ((i10 & 64) != 0) {
-            l13 = gVar.f49387g;
-        }
-        if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-            map = gVar.f49388h;
-        }
-        Long l14 = l13;
-        Map map2 = map;
-        Long l15 = l11;
-        Long l16 = l12;
-        return gVar.a(z10, z11, c0Var, l10, l15, l16, l14, map2);
+        int i15 = i12;
+        int i16 = i13;
+        return gVar.b(i10, cVar, request, i11, i15, i16);
     }
 
-    public final g a(boolean z10, boolean z11, c0 c0Var, Long l10, Long l11, Long l12, Long l13, Map extras) {
-        Intrinsics.checkNotNullParameter(extras, "extras");
-        return new g(z10, z11, c0Var, l10, l11, l12, l13, extras);
+    @Override // okhttp3.Interceptor.Chain
+    public Response a(Request request) {
+        Intrinsics.checkNotNullParameter(request, "request");
+        if (this.f47762c < this.f47761b.size()) {
+            this.f47768i++;
+            qu.c cVar = this.f47763d;
+            if (cVar != null) {
+                if (cVar.j().g(request.n())) {
+                    if (this.f47768i != 1) {
+                        throw new IllegalStateException(("network interceptor " + this.f47761b.get(this.f47762c - 1) + " must call proceed() exactly once").toString());
+                    }
+                } else {
+                    throw new IllegalStateException(("network interceptor " + this.f47761b.get(this.f47762c - 1) + " must retain the same host and port").toString());
+                }
+            }
+            g c10 = c(this, this.f47762c + 1, null, request, 0, 0, 0, 58, null);
+            Interceptor interceptor = (Interceptor) this.f47761b.get(this.f47762c);
+            Response intercept = interceptor.intercept(c10);
+            if (intercept != null) {
+                if (this.f47763d != null && this.f47762c + 1 < this.f47761b.size() && c10.f47768i != 1) {
+                    throw new IllegalStateException(("network interceptor " + interceptor + " must call proceed() exactly once").toString());
+                } else if (intercept.n() != null) {
+                    return intercept;
+                } else {
+                    throw new IllegalStateException(("interceptor " + interceptor + " returned a response with no body").toString());
+                }
+            }
+            throw new NullPointerException("interceptor " + interceptor + " returned null");
+        }
+        throw new IllegalStateException("Check failed.");
     }
 
-    public final Long c() {
-        return this.f49384d;
+    public final g b(int i10, qu.c cVar, Request request, int i11, int i12, int i13) {
+        Intrinsics.checkNotNullParameter(request, "request");
+        return new g(this.f47760a, this.f47761b, i10, cVar, request, i11, i12, i13);
     }
 
-    public final c0 d() {
-        return this.f49383c;
+    @Override // okhttp3.Interceptor.Chain
+    public Call call() {
+        return this.f47760a;
     }
 
-    public final boolean e() {
-        return this.f49382b;
+    public final qu.e d() {
+        return this.f47760a;
     }
 
-    public String toString() {
-        ArrayList arrayList = new ArrayList();
-        if (this.f49381a) {
-            arrayList.add("isRegularFile");
-        }
-        if (this.f49382b) {
-            arrayList.add("isDirectory");
-        }
-        if (this.f49384d != null) {
-            arrayList.add("byteCount=" + this.f49384d);
-        }
-        if (this.f49385e != null) {
-            arrayList.add("createdAt=" + this.f49385e);
-        }
-        if (this.f49386f != null) {
-            arrayList.add("lastModifiedAt=" + this.f49386f);
-        }
-        if (this.f49387g != null) {
-            arrayList.add("lastAccessedAt=" + this.f49387g);
-        }
-        if (!this.f49388h.isEmpty()) {
-            arrayList.add("extras=" + this.f49388h);
-        }
-        return CollectionsKt.x0(arrayList, ", ", "FileMetadata(", ")", 0, null, null, 56, null);
+    public final int e() {
+        return this.f47765f;
     }
 
-    public /* synthetic */ g(boolean z10, boolean z11, c0 c0Var, Long l10, Long l11, Long l12, Long l13, Map map, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? false : z10, (i10 & 2) != 0 ? false : z11, (i10 & 4) != 0 ? null : c0Var, (i10 & 8) != 0 ? null : l10, (i10 & 16) != 0 ? null : l11, (i10 & 32) != 0 ? null : l12, (i10 & 64) != 0 ? null : l13, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? o0.i() : map);
+    public final qu.c f() {
+        return this.f47763d;
+    }
+
+    public final int g() {
+        return this.f47766g;
+    }
+
+    public final Request h() {
+        return this.f47764e;
+    }
+
+    @Override // okhttp3.Interceptor.Chain
+    public Request i() {
+        return this.f47764e;
+    }
+
+    public final int j() {
+        return this.f47767h;
+    }
+
+    public int k() {
+        return this.f47766g;
     }
 }

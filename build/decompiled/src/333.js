@@ -175,7 +175,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var3 = arg0;
                                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                         if (var1) {
-                                            _fun4931_ip = 187;
+                                            _fun4931_ip = 186;
                                             continue _fun4931
                                         }
                                     case 13:
@@ -188,63 +188,63 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var2._frame = var5;
                                         var2 = var2._initialFrameHeight;
                                         if (var2) {
-                                            _fun4931_ip = 84;
+                                            _fun4931_ip = 83;
                                             continue _fun4931
                                         }
-                                    case 63:
+                                    case 62:
                                         var5 = _closure3_slot0;
                                         var2 = var5._frame;
                                         var2 = var2.height;
                                         var5._initialFrameHeight = var2;
-                                    case 84:
+                                    case 83:
                                         var2 = var4;
                                         if (!var2) {
-                                            _fun4931_ip = 114;
+                                            _fun4931_ip = 113;
                                             continue _fun4931
                                         }
-                                    case 90:
+                                    case 89:
                                         var5 = var4.height;
                                         var4 = _closure3_slot0;
                                         var4 = var4._frame;
                                         var4 = var4.height;
                                         var2 = var5 === var4;
-                                    case 114:
+                                    case 113:
                                         if (var2) {
-                                            _fun4931_ip = 144;
+                                            _fun4931_ip = 143;
                                             continue _fun4931
                                         }
-                                    case 117:
+                                    case 116:
                                         var4 = _closure3_slot0;
                                         var2 = var4._updateBottomIfNecessary;
                                         var2 = var2.bind(var4)();
-                                        SaveGenerator(address = 135);
-                                    case 133:
+                                        SaveGenerator(address = 134);
+                                    case 132:
                                         return var2;
-                                    case 135:
+                                    case 134:
                                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 4);
                                         if (!var4) {
-                                            _fun4931_ip = 144;
+                                            _fun4931_ip = 143;
                                             continue _fun4931
                                         }
-                                    case 141:
+                                    case 140:
                                         return var2;
-                                    case 144:
+                                    case 143:
                                         var2 = _closure3_slot0;
                                         var2 = var2.props;
                                         var2 = var2.onLayout;
                                         if (!var2) {
-                                            _fun4931_ip = 182;
+                                            _fun4931_ip = 181;
                                             continue _fun4931
                                         }
-                                    case 162:
+                                    case 161:
                                         var1 = _closure3_slot0;
                                         var2 = var1.props;
                                         var1 = var2.onLayout;
                                         var1 = var1.bind(var2)(var3);
-                                    case 182:
+                                    case 181:
                                         var1 = undefined;
                                         return var1;
-                                    case 187:
+                                    case 186:
                                         return var0;
                                 }
                             };

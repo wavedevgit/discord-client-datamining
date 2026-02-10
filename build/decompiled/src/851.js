@@ -185,7 +185,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = var6.bind(var7)(var4);
                             var4 = var6.start_timestamp;
                             if (!var4) {
-                                _fun8991_ip = 451;
+                                _fun8991_ip = 452;
                                 continue _fun8991
                             }
                         case 135:
@@ -277,7 +277,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var0 = var5.isRecording;
                                         var0 = var0.bind(var5)();
                                         if (!var0) {
-                                            _fun8994_ip = 180;
+                                            _fun8994_ip = 181;
                                             continue _fun8994
                                         }
                                     case 19:
@@ -302,7 +302,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = var2.bind(var6)(var1);
                                         var1 = var1.DEBUG_BUILD;
                                         if (!var1) {
-                                            _fun8994_ip = 180;
+                                            _fun8994_ip = 181;
                                             continue _fun8994
                                         }
                                     case 113:
@@ -320,7 +320,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = var1.bind(var4)(var5, var6, var0);
                                         var0 = '[Tracing] Cancelling span since span ended early';
                                         var0 = var2.bind(var3)(var0, var1);
-                                    case 180:
+                                    case 181:
                                         var2 = _closure1_slot0;
                                         var0 = _closure1_slot1;
                                         var6 = 6;
@@ -332,21 +332,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var7 = var2.timestamp;
                                         var1 = 0;
                                         if (!(var0 !== var7)) {
-                                            _fun8994_ip = 231;
+                                            _fun8994_ip = 232;
                                             continue _fun8994
                                         }
-                                    case 228:
+                                    case 229:
                                         var1 = var7;
-                                    case 231:
+                                    case 232:
                                         var2 = var2.start_timestamp;
                                         var4 = 0;
                                         if (!(var0 !== var2)) {
-                                            _fun8994_ip = 246;
+                                            _fun8994_ip = 247;
                                             continue _fun8994
                                         }
-                                    case 243:
+                                    case 244:
                                         var4 = var2;
-                                    case 246:
+                                    case 247:
                                         var7 = _closure3_slot0;
                                         var7 = var4 <= var7;
                                         var8 = var1 - var4;
@@ -363,20 +363,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var8 = var9.bind(var0)(var8);
                                         var8 = var8.DEBUG_BUILD;
                                         if (!var8) {
-                                            _fun8994_ip = 437;
+                                            _fun8994_ip = 440;
                                             continue _fun8994
                                         }
-                                    case 319:
+                                    case 320:
                                         var8 = global;
                                         var10 = var8.JSON;
                                         var9 = var10.stringify;
                                         var8 = 2;
                                         var11 = var9.bind(var10)(var5, var0, var8);
                                         if (var7) {
-                                            _fun8994_ip = 391;
+                                            _fun8994_ip = 393;
                                             continue _fun8994
                                         }
-                                    case 346:
+                                    case 347:
                                         var9 = _closure1_slot0;
                                         var10 = _closure1_slot1;
                                         var8 = 12;
@@ -386,14 +386,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var9 = var10.log;
                                         var8 = '[Tracing] Discarding span since it happened after idle span was finished';
                                         var8 = var9.bind(var10)(var8, var11);
-                                        _fun8994_ip = 437;
+                                        _fun8994_ip = 440;
                                         continue _fun8994;
-                                    case 391:
+                                    case 393:
                                         if (var4) {
-                                            _fun8994_ip = 437;
+                                            _fun8994_ip = 440;
                                             continue _fun8994
                                         }
-                                    case 394:
+                                    case 396:
                                         var9 = _closure1_slot0;
                                         var10 = _closure1_slot1;
                                         var8 = 12;
@@ -403,19 +403,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var9 = var10.log;
                                         var8 = '[Tracing] Discarding span since it finished after idle span final timeout';
                                         var8 = var9.bind(var10)(var8, var11);
-                                    case 437:
-                                        if (!var4) {
-                                            _fun8994_ip = 443;
-                                            continue _fun8994
-                                        }
                                     case 440:
-                                        var4 = var7;
-                                    case 443:
-                                        if (var4) {
-                                            _fun8994_ip = 490;
+                                        if (!var4) {
+                                            _fun8994_ip = 446;
                                             continue _fun8994
                                         }
+                                    case 443:
+                                        var4 = var7;
                                     case 446:
+                                        if (var4) {
+                                            _fun8994_ip = 493;
+                                            continue _fun8994
+                                        }
+                                    case 449:
                                         var4 = _closure1_slot0;
                                         var3 = _closure1_slot1;
                                         var3 = var3[var6];
@@ -426,23 +426,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = _closure3_slot1;
                                         var1 = var1 + 1;
                                         _closure3_slot1 = var1;
-                                    case 490:
+                                    case 493:
                                         return var0;
                                 }
                             };
                             var3 = var5.bind(var6)(var3);
                             var3 = _closure3_slot1;
                             if (!(var3 > var4)) {
-                                _fun8991_ip = 451;
+                                _fun8991_ip = 452;
                                 continue _fun8991
                             }
-                        case 425:
+                        case 426:
                             var4 = _closure2_slot14;
                             var3 = var4.setAttribute;
                             var2 = _closure3_slot1;
                             var1 = 'sentry.idle_span_discarded_spans';
                             var1 = var3.bind(var4)(var1, var2);
-                        case 451:
+                        case 452:
                             return var0;
                     }
                 };
@@ -620,7 +620,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var10.bind(var4)(var8);
                 var8 = var8.DEBUG_BUILD;
                 if (!var8) {
-                    _fun8985_ip = 629;
+                    _fun8985_ip = 630;
                     continue _fun8985
                 }
             case 587:
@@ -633,7 +633,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var10.log;
                 var7 = '[Tracing] Started span is an idle span';
                 var7 = var8.bind(var10)(var7);
-            case 629:
+            case 630:
                 var _closure2_slot14 = var0;
                 var11 = var2.Proxy;
                 var19 = var0.end;
@@ -1079,12 +1079,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var8.bind(var9)(var7);
                 var6 = var6.disableAutoFinish;
                 if (var6) {
-                    _fun8985_ip = 796;
+                    _fun8985_ip = 797;
                     continue _fun8985
                 }
-            case 792:
+            case 793:
                 var5 = var5.bind(var4)();
-            case 796:
+            case 797:
                 var2 = var2.setTimeout;
                 var1 = function() { // Environment: var1
                     _fun9001: for (var _fun9001_ip = 0;;) switch (_fun9001_ip) {

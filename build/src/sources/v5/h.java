@@ -15,46 +15,46 @@ import l5.s;
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f52152a;
+    private final g f51394a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final f f52153b;
+    private final f f51395b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f52154a;
+        static final /* synthetic */ int[] f51396a;
 
         static {
             int[] iArr = new int[c.values().length];
-            f52154a = iArr;
+            f51396a = iArr;
             try {
                 iArr[c.ZIP.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f52154a[c.GZIP.ordinal()] = 2;
+                f51396a[c.GZIP.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
     }
 
     public h(g gVar, f fVar) {
-        this.f52152a = gVar;
-        this.f52153b = fVar;
+        this.f51394a = gVar;
+        this.f51395b = fVar;
     }
 
     private i a(Context context, String str, String str2) {
         g gVar;
         Pair a10;
         c0 E;
-        if (str2 == null || (gVar = this.f52152a) == null || (a10 = gVar.a(str)) == null) {
+        if (str2 == null || (gVar = this.f51394a) == null || (a10 = gVar.a(str)) == null) {
             return null;
         }
         InputStream inputStream = (InputStream) a10.second;
-        int i10 = a.f52154a[((c) a10.first).ordinal()];
+        int i10 = a.f51396a[((c) a10.first).ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 E = s.q(inputStream, str2);
@@ -81,7 +81,7 @@ public class h {
         Closeable closeable = null;
         try {
             try {
-                d a10 = this.f52153b.a(str);
+                d a10 = this.f51395b.a(str);
                 if (a10.isSuccessful()) {
                     c0Var = e(context, str, a10.v0(), a10.p0(), str2);
                     StringBuilder sb2 = new StringBuilder();
@@ -94,7 +94,7 @@ public class h {
                     sb2.append(z10);
                     y5.d.a(sb2.toString());
                 } else {
-                    c0Var = new c0((Throwable) new IllegalArgumentException(a10.B1()));
+                    c0Var = new c0((Throwable) new IllegalArgumentException(a10.G1()));
                 }
                 try {
                     a10.close();
@@ -128,7 +128,7 @@ public class h {
 
     private c0 d(String str, InputStream inputStream, String str2) {
         g gVar;
-        if (str2 != null && (gVar = this.f52152a) != null) {
+        if (str2 != null && (gVar = this.f51394a) != null) {
             return s.q(new GZIPInputStream(new FileInputStream(gVar.g(str, inputStream, c.GZIP))), str);
         }
         return s.q(new GZIPInputStream(inputStream), null);
@@ -157,7 +157,7 @@ public class h {
             g10 = g(context, str, inputStream, str3);
             cVar = cVar2;
         }
-        if (str3 != null && g10.b() != null && (gVar = this.f52152a) != null) {
+        if (str3 != null && g10.b() != null && (gVar = this.f51394a) != null) {
             gVar.f(str, cVar);
         }
         return g10;
@@ -165,7 +165,7 @@ public class h {
 
     private c0 f(String str, InputStream inputStream, String str2) {
         g gVar;
-        if (str2 != null && (gVar = this.f52152a) != null) {
+        if (str2 != null && (gVar = this.f51394a) != null) {
             return s.q(new FileInputStream(gVar.g(str, inputStream, c.JSON).getAbsolutePath()), str);
         }
         return s.q(inputStream, null);
@@ -173,7 +173,7 @@ public class h {
 
     private c0 g(Context context, String str, InputStream inputStream, String str2) {
         g gVar;
-        if (str2 != null && (gVar = this.f52152a) != null) {
+        if (str2 != null && (gVar = this.f51394a) != null) {
             return s.E(context, new ZipInputStream(new FileInputStream(gVar.g(str, inputStream, c.ZIP))), str);
         }
         return s.E(context, new ZipInputStream(inputStream), null);

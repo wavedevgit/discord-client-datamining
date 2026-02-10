@@ -7,34 +7,34 @@ import android.view.ViewConfiguration;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    InterfaceC0550a f37991a;
+    InterfaceC0527a f36995a;
 
     /* renamed from: b  reason: collision with root package name */
-    final float f37992b;
+    final float f36996b;
 
     /* renamed from: c  reason: collision with root package name */
-    boolean f37993c;
+    boolean f36997c;
 
     /* renamed from: d  reason: collision with root package name */
-    boolean f37994d;
+    boolean f36998d;
 
     /* renamed from: e  reason: collision with root package name */
-    long f37995e;
+    long f36999e;
 
     /* renamed from: f  reason: collision with root package name */
-    float f37996f;
+    float f37000f;
 
     /* renamed from: g  reason: collision with root package name */
-    float f37997g;
+    float f37001g;
 
     /* renamed from: n9.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface InterfaceC0550a {
+    public interface InterfaceC0527a {
         boolean a();
     }
 
     public a(Context context) {
-        this.f37992b = ViewConfiguration.get(context).getScaledTouchSlop();
+        this.f36996b = ViewConfiguration.get(context).getScaledTouchSlop();
         a();
     }
 
@@ -43,53 +43,53 @@ public class a {
     }
 
     public void a() {
-        this.f37991a = null;
+        this.f36995a = null;
         e();
     }
 
     public boolean b() {
-        return this.f37993c;
+        return this.f36997c;
     }
 
     public boolean d(MotionEvent motionEvent) {
-        InterfaceC0550a interfaceC0550a;
+        InterfaceC0527a interfaceC0527a;
         int action = motionEvent.getAction();
         if (action != 0) {
             if (action != 1) {
                 if (action != 2) {
                     if (action == 3) {
-                        this.f37993c = false;
-                        this.f37994d = false;
+                        this.f36997c = false;
+                        this.f36998d = false;
                     }
-                } else if (Math.abs(motionEvent.getX() - this.f37996f) > this.f37992b || Math.abs(motionEvent.getY() - this.f37997g) > this.f37992b) {
-                    this.f37994d = false;
+                } else if (Math.abs(motionEvent.getX() - this.f37000f) > this.f36996b || Math.abs(motionEvent.getY() - this.f37001g) > this.f36996b) {
+                    this.f36998d = false;
                 }
             } else {
-                this.f37993c = false;
-                if (Math.abs(motionEvent.getX() - this.f37996f) > this.f37992b || Math.abs(motionEvent.getY() - this.f37997g) > this.f37992b) {
-                    this.f37994d = false;
+                this.f36997c = false;
+                if (Math.abs(motionEvent.getX() - this.f37000f) > this.f36996b || Math.abs(motionEvent.getY() - this.f37001g) > this.f36996b) {
+                    this.f36998d = false;
                 }
-                if (this.f37994d && motionEvent.getEventTime() - this.f37995e <= ViewConfiguration.getLongPressTimeout() && (interfaceC0550a = this.f37991a) != null) {
-                    interfaceC0550a.a();
+                if (this.f36998d && motionEvent.getEventTime() - this.f36999e <= ViewConfiguration.getLongPressTimeout() && (interfaceC0527a = this.f36995a) != null) {
+                    interfaceC0527a.a();
                 }
-                this.f37994d = false;
+                this.f36998d = false;
             }
         } else {
-            this.f37993c = true;
-            this.f37994d = true;
-            this.f37995e = motionEvent.getEventTime();
-            this.f37996f = motionEvent.getX();
-            this.f37997g = motionEvent.getY();
+            this.f36997c = true;
+            this.f36998d = true;
+            this.f36999e = motionEvent.getEventTime();
+            this.f37000f = motionEvent.getX();
+            this.f37001g = motionEvent.getY();
         }
         return true;
     }
 
     public void e() {
-        this.f37993c = false;
-        this.f37994d = false;
+        this.f36997c = false;
+        this.f36998d = false;
     }
 
-    public void f(InterfaceC0550a interfaceC0550a) {
-        this.f37991a = interfaceC0550a;
+    public void f(InterfaceC0527a interfaceC0527a) {
+        this.f36995a = interfaceC0527a;
     }
 }

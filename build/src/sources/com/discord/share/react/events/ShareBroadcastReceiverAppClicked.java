@@ -2,7 +2,6 @@ package com.discord.share.react.events;
 
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
-import gt.m;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -10,9 +9,10 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import kt.n2;
-import kt.v1;
 import org.jetbrains.annotations.NotNull;
+import qt.m;
+import tt.n2;
+import tt.v1;
 @m
 @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0081\b\u0018\u0000 !2\u00020\u0001:\u0002 !B\u0019\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\b\u0005\u0010\u0006B/\b\u0010\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\u0004\b\u0005\u0010\u000bJ\t\u0010\u000f\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0010\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u001f\u0010\u0011\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003HÆ\u0001J\u0013\u0010\u0012\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015HÖ\u0003J\t\u0010\u0016\u001a\u00020\bHÖ\u0001J\t\u0010\u0017\u001a\u00020\u0003HÖ\u0001J%\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u00002\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0001¢\u0006\u0002\b\u001fR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\r¨\u0006\""}, d2 = {"Lcom/discord/share/react/events/ShareBroadcastReceiverAppClicked;", "Lcom/discord/reactevents/ReactEvent;", "app", "", "location", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getApp", "()Ljava/lang/String;", "getLocation", "component1", "component2", "copy", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$share_release", "$serializer", "Companion", "share_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -22,7 +22,7 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
     @NotNull
 
     /* renamed from: app  reason: collision with root package name */
-    private final String f9837app;
+    private final String f10414app;
     private final String location;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/share/react/events/ShareBroadcastReceiverAppClicked$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/share/react/events/ShareBroadcastReceiverAppClicked;", "share_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -45,13 +45,13 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
         if (3 != (i10 & 3)) {
             v1.b(i10, 3, ShareBroadcastReceiverAppClicked$$serializer.INSTANCE.getDescriptor());
         }
-        this.f9837app = str;
+        this.f10414app = str;
         this.location = str2;
     }
 
     public static /* synthetic */ ShareBroadcastReceiverAppClicked copy$default(ShareBroadcastReceiverAppClicked shareBroadcastReceiverAppClicked, String str, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = shareBroadcastReceiverAppClicked.f9837app;
+            str = shareBroadcastReceiverAppClicked.f10414app;
         }
         if ((i10 & 2) != 0) {
             str2 = shareBroadcastReceiverAppClicked.location;
@@ -60,13 +60,13 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
     }
 
     public static final /* synthetic */ void write$Self$share_release(ShareBroadcastReceiverAppClicked shareBroadcastReceiverAppClicked, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.y(serialDescriptor, 0, shareBroadcastReceiverAppClicked.f9837app);
-        compositeEncoder.i(serialDescriptor, 1, n2.f35181a, shareBroadcastReceiverAppClicked.location);
+        compositeEncoder.y(serialDescriptor, 0, shareBroadcastReceiverAppClicked.f10414app);
+        compositeEncoder.o(serialDescriptor, 1, n2.f50032a, shareBroadcastReceiverAppClicked.location);
     }
 
     @NotNull
     public final String component1() {
-        return this.f9837app;
+        return this.f10414app;
     }
 
     public final String component2() {
@@ -85,14 +85,14 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
         }
         if (obj instanceof ShareBroadcastReceiverAppClicked) {
             ShareBroadcastReceiverAppClicked shareBroadcastReceiverAppClicked = (ShareBroadcastReceiverAppClicked) obj;
-            return Intrinsics.areEqual(this.f9837app, shareBroadcastReceiverAppClicked.f9837app) && Intrinsics.areEqual(this.location, shareBroadcastReceiverAppClicked.location);
+            return Intrinsics.areEqual(this.f10414app, shareBroadcastReceiverAppClicked.f10414app) && Intrinsics.areEqual(this.location, shareBroadcastReceiverAppClicked.location);
         }
         return false;
     }
 
     @NotNull
     public final String getApp() {
-        return this.f9837app;
+        return this.f10414app;
     }
 
     public final String getLocation() {
@@ -100,7 +100,7 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
     }
 
     public int hashCode() {
-        int hashCode = this.f9837app.hashCode() * 31;
+        int hashCode = this.f10414app.hashCode() * 31;
         String str = this.location;
         return hashCode + (str == null ? 0 : str.hashCode());
     }
@@ -113,14 +113,14 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
 
     @NotNull
     public String toString() {
-        String str = this.f9837app;
+        String str = this.f10414app;
         String str2 = this.location;
         return "ShareBroadcastReceiverAppClicked(app=" + str + ", location=" + str2 + ")";
     }
 
     public ShareBroadcastReceiverAppClicked(@NotNull String app2, String str) {
         Intrinsics.checkNotNullParameter(app2, "app");
-        this.f9837app = app2;
+        this.f10414app = app2;
         this.location = str;
     }
 }

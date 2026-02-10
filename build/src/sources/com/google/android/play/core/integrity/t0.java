@@ -7,29 +7,29 @@ import java.util.Set;
 public final class t0 extends c.d.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f16353a;
+    private String f17102a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Set f16354b;
+    private Set f17103b;
 
     @Override // com.google.android.play.core.integrity.c.d.a
     public final c.d a() {
-        Set set = this.f16354b;
+        Set set = this.f17103b;
         if (set != null) {
-            return new u0(this.f16353a, set, null);
+            return new u0(this.f17102a, set, null);
         }
         throw new IllegalStateException("Missing required properties: verdictOptOut");
     }
 
     @Override // com.google.android.play.core.integrity.c.d.a
     public final c.d.a b(String str) {
-        this.f16353a = str;
+        this.f17102a = str;
         return this;
     }
 
     public final c.d.a c(Set set) {
         if (set != null) {
-            this.f16354b = set;
+            this.f17103b = set;
             return this;
         }
         throw new NullPointerException("Null verdictOptOut");

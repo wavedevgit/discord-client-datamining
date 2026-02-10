@@ -1,78 +1,171 @@
 package oh;
 
-import android.content.Context;
-import android.content.res.ColorStateList;
-import android.content.res.TypedArray;
-import android.graphics.drawable.Drawable;
-import android.util.TypedValue;
-import androidx.appcompat.widget.v0;
+import android.os.Build;
+import android.view.View;
+import android.window.BackEvent;
+import android.window.OnBackAnimationCallback;
+import android.window.OnBackInvokedCallback;
+import android.window.OnBackInvokedDispatcher;
+import androidx.activity.BackEventCompat;
+import androidx.annotation.NonNull;
+import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
-    public static ColorStateList a(Context context, TypedArray typedArray, int i10) {
-        int resourceId;
-        ColorStateList a10;
-        if (typedArray.hasValue(i10) && (resourceId = typedArray.getResourceId(i10, 0)) != 0 && (a10 = g.a.a(context, resourceId)) != null) {
-            return a10;
+public final class c {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final d f40085a = a();
+
+    /* renamed from: b  reason: collision with root package name */
+    private final oh.b f40086b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final View f40087c;
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static class b implements d {
+
+        /* renamed from: a  reason: collision with root package name */
+        private OnBackInvokedCallback f40088a;
+
+        private b() {
         }
-        return typedArray.getColorStateList(i10);
+
+        @Override // oh.c.d
+        public void a(@NonNull oh.b bVar, @NonNull View view, boolean z10) {
+            OnBackInvokedDispatcher findOnBackInvokedDispatcher;
+            int i10;
+            if (this.f40088a != null || (findOnBackInvokedDispatcher = view.findOnBackInvokedDispatcher()) == null) {
+                return;
+            }
+            OnBackInvokedCallback c10 = c(bVar);
+            this.f40088a = c10;
+            if (z10) {
+                i10 = 1000000;
+            } else {
+                i10 = 0;
+            }
+            findOnBackInvokedDispatcher.registerOnBackInvokedCallback(i10, c10);
+        }
+
+        @Override // oh.c.d
+        public void b(@NonNull View view) {
+            OnBackInvokedDispatcher findOnBackInvokedDispatcher;
+            if (this.f40088a == null || (findOnBackInvokedDispatcher = view.findOnBackInvokedDispatcher()) == null) {
+                return;
+            }
+            findOnBackInvokedDispatcher.unregisterOnBackInvokedCallback(this.f40088a);
+            this.f40088a = null;
+        }
+
+        OnBackInvokedCallback c(final oh.b bVar) {
+            Objects.requireNonNull(bVar);
+            return new OnBackInvokedCallback() { // from class: oh.d
+                public final void onBackInvoked() {
+                    b.this.d();
+                }
+            };
+        }
+
+        boolean d() {
+            if (this.f40088a != null) {
+                return true;
+            }
+            return false;
+        }
     }
 
-    public static ColorStateList b(Context context, v0 v0Var, int i10) {
-        int n10;
-        ColorStateList a10;
-        if (v0Var.s(i10) && (n10 = v0Var.n(i10, 0)) != 0 && (a10 = g.a.a(context, n10)) != null) {
-            return a10;
+    /* JADX INFO: Access modifiers changed from: private */
+    /* renamed from: oh.c$c  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static class C0551c extends b {
+
+        /* renamed from: oh.c$c$a */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        class a implements OnBackAnimationCallback {
+
+            /* renamed from: a  reason: collision with root package name */
+            final /* synthetic */ oh.b f40089a;
+
+            a(oh.b bVar) {
+                this.f40089a = bVar;
+            }
+
+            public void onBackCancelled() {
+                if (!C0551c.this.d()) {
+                    return;
+                }
+                this.f40089a.a();
+            }
+
+            public void onBackInvoked() {
+                this.f40089a.d();
+            }
+
+            public void onBackProgressed(BackEvent backEvent) {
+                if (!C0551c.this.d()) {
+                    return;
+                }
+                this.f40089a.c(new BackEventCompat(backEvent));
+            }
+
+            public void onBackStarted(BackEvent backEvent) {
+                if (!C0551c.this.d()) {
+                    return;
+                }
+                this.f40089a.b(new BackEventCompat(backEvent));
+            }
         }
-        return v0Var.c(i10);
+
+        private C0551c() {
+            super();
+        }
+
+        @Override // oh.c.b
+        OnBackInvokedCallback c(oh.b bVar) {
+            return new a(bVar);
+        }
     }
 
-    public static int c(Context context, TypedArray typedArray, int i10, int i11) {
-        TypedValue typedValue = new TypedValue();
-        if (typedArray.getValue(i10, typedValue) && typedValue.type == 2) {
-            TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(new int[]{typedValue.data});
-            int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(0, i11);
-            obtainStyledAttributes.recycle();
-            return dimensionPixelSize;
-        }
-        return typedArray.getDimensionPixelSize(i10, i11);
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public interface d {
+        void a(oh.b bVar, View view, boolean z10);
+
+        void b(View view);
     }
 
-    public static Drawable d(Context context, TypedArray typedArray, int i10) {
-        int resourceId;
-        Drawable b10;
-        if (typedArray.hasValue(i10) && (resourceId = typedArray.getResourceId(i10, 0)) != 0 && (b10 = g.a.b(context, resourceId)) != null) {
-            return b10;
-        }
-        return typedArray.getDrawable(i10);
+    public c(oh.b bVar, View view) {
+        this.f40086b = bVar;
+        this.f40087c = view;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static int e(TypedArray typedArray, int i10, int i11) {
-        if (typedArray.hasValue(i10)) {
-            return i10;
+    private static d a() {
+        int i10 = Build.VERSION.SDK_INT;
+        if (i10 >= 34) {
+            return new C0551c();
         }
-        return i11;
+        if (i10 < 33) {
+            return null;
+        }
+        return new b();
     }
 
-    public static d f(Context context, TypedArray typedArray, int i10) {
-        int resourceId;
-        if (typedArray.hasValue(i10) && (resourceId = typedArray.getResourceId(i10, 0)) != 0) {
-            return new d(context, resourceId);
+    private void c(boolean z10) {
+        d dVar = this.f40085a;
+        if (dVar != null) {
+            dVar.a(this.f40086b, this.f40087c, z10);
         }
-        return null;
     }
 
-    public static boolean g(Context context) {
-        if (context.getResources().getConfiguration().fontScale >= 1.3f) {
-            return true;
-        }
-        return false;
+    public void b() {
+        c(false);
     }
 
-    public static boolean h(Context context) {
-        if (context.getResources().getConfiguration().fontScale >= 2.0f) {
-            return true;
+    public void d() {
+        d dVar = this.f40085a;
+        if (dVar != null) {
+            dVar.b(this.f40087c);
         }
-        return false;
     }
 }

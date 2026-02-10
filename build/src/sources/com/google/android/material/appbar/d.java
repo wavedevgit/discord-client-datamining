@@ -3,32 +3,31 @@ package com.google.android.material.appbar;
 import android.content.Context;
 import android.graphics.Rect;
 import android.util.AttributeSet;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.core.view.h0;
-import androidx.core.view.j;
 import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 abstract class d extends e {
 
     /* renamed from: o  reason: collision with root package name */
-    final Rect f14643o;
+    final Rect f15219o;
 
     /* renamed from: p  reason: collision with root package name */
-    final Rect f14644p;
+    final Rect f15220p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f14645q;
+    private int f15221q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f14646r;
+    private int f15222r;
 
     public d() {
-        this.f14643o = new Rect();
-        this.f14644p = new Rect();
-        this.f14645q = 0;
+        this.f15219o = new Rect();
+        this.f15220p = new Rect();
+        this.f15221q = 0;
     }
 
     private static int R(int i10) {
@@ -41,43 +40,43 @@ abstract class d extends e {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.google.android.material.appbar.e
     public void J(CoordinatorLayout coordinatorLayout, View view, int i10) {
-        View L = L(coordinatorLayout.m(view));
+        View L = L(coordinatorLayout.q(view));
         if (L != null) {
             CoordinatorLayout.f fVar = (CoordinatorLayout.f) view.getLayoutParams();
-            Rect rect = this.f14643o;
+            Rect rect = this.f15219o;
             rect.set(coordinatorLayout.getPaddingLeft() + ((ViewGroup.MarginLayoutParams) fVar).leftMargin, L.getBottom() + ((ViewGroup.MarginLayoutParams) fVar).topMargin, (coordinatorLayout.getWidth() - coordinatorLayout.getPaddingRight()) - ((ViewGroup.MarginLayoutParams) fVar).rightMargin, ((coordinatorLayout.getHeight() + L.getBottom()) - coordinatorLayout.getPaddingBottom()) - ((ViewGroup.MarginLayoutParams) fVar).bottomMargin);
             WindowInsetsCompat lastWindowInsets = coordinatorLayout.getLastWindowInsets();
-            if (lastWindowInsets != null && h0.w(coordinatorLayout) && !h0.w(view)) {
+            if (lastWindowInsets != null && coordinatorLayout.getFitsSystemWindows() && !view.getFitsSystemWindows()) {
                 rect.left += lastWindowInsets.o();
                 rect.right -= lastWindowInsets.p();
             }
-            Rect rect2 = this.f14644p;
-            j.a(R(fVar.f3001c), view.getMeasuredWidth(), view.getMeasuredHeight(), rect, rect2, i10);
+            Rect rect2 = this.f15220p;
+            Gravity.apply(R(fVar.f3004c), view.getMeasuredWidth(), view.getMeasuredHeight(), rect, rect2, i10);
             int M = M(L);
             view.layout(rect2.left, rect2.top - M, rect2.right, rect2.bottom - M);
-            this.f14645q = rect2.top - L.getBottom();
+            this.f15221q = rect2.top - L.getBottom();
             return;
         }
         super.J(coordinatorLayout, view, i10);
-        this.f14645q = 0;
+        this.f15221q = 0;
     }
 
     abstract View L(List list);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int M(View view) {
-        if (this.f14646r == 0) {
+        if (this.f15222r == 0) {
             return 0;
         }
         float N = N(view);
-        int i10 = this.f14646r;
+        int i10 = this.f15222r;
         return u1.a.b((int) (N * i10), 0, i10);
     }
 
     abstract float N(View view);
 
     public final int O() {
-        return this.f14646r;
+        return this.f15222r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -87,11 +86,11 @@ abstract class d extends e {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int Q() {
-        return this.f14645q;
+        return this.f15221q;
     }
 
     public final void S(int i10) {
-        this.f14646r = i10;
+        this.f15222r = i10;
     }
 
     protected boolean T() {
@@ -104,10 +103,10 @@ abstract class d extends e {
         int i14;
         WindowInsetsCompat lastWindowInsets;
         int i15 = view.getLayoutParams().height;
-        if ((i15 == -1 || i15 == -2) && (L = L(coordinatorLayout.m(view))) != null) {
+        if ((i15 == -1 || i15 == -2) && (L = L(coordinatorLayout.q(view))) != null) {
             int size = View.MeasureSpec.getSize(i12);
             if (size > 0) {
-                if (h0.w(L) && (lastWindowInsets = coordinatorLayout.getLastWindowInsets()) != null) {
+                if (L.getFitsSystemWindows() && (lastWindowInsets = coordinatorLayout.getLastWindowInsets()) != null) {
                     size += lastWindowInsets.q() + lastWindowInsets.n();
                 }
             } else {
@@ -126,7 +125,7 @@ abstract class d extends e {
             } else {
                 i14 = Integer.MIN_VALUE;
             }
-            coordinatorLayout.F(view, i10, i11, View.MeasureSpec.makeMeasureSpec(P, i14), i13);
+            coordinatorLayout.J(view, i10, i11, View.MeasureSpec.makeMeasureSpec(P, i14), i13);
             return true;
         }
         return false;
@@ -134,8 +133,8 @@ abstract class d extends e {
 
     public d(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f14643o = new Rect();
-        this.f14644p = new Rect();
-        this.f14645q = 0;
+        this.f15219o = new Rect();
+        this.f15220p = new Rect();
+        this.f15221q = 0;
     }
 }

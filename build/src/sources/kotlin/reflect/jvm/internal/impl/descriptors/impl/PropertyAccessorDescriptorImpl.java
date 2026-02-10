@@ -24,28 +24,28 @@ import org.jetbrains.annotations.NotNull;
 public abstract class PropertyAccessorDescriptorImpl extends DeclarationDescriptorNonRootImpl implements PropertyAccessorDescriptor {
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f32294p;
+    private boolean f32516p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f32295q;
+    private final boolean f32517q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Modality f32296r;
+    private final Modality f32518r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final PropertyDescriptor f32297s;
+    private final PropertyDescriptor f32519s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final boolean f32298t;
+    private final boolean f32520t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final CallableMemberDescriptor.Kind f32299u;
+    private final CallableMemberDescriptor.Kind f32521u;
 
     /* renamed from: v  reason: collision with root package name */
-    private DescriptorVisibility f32300v;
+    private DescriptorVisibility f32522v;
 
     /* renamed from: w  reason: collision with root package name */
-    private FunctionDescriptor f32301w;
+    private FunctionDescriptor f32523w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PropertyAccessorDescriptorImpl(@NotNull Modality modality, @NotNull DescriptorVisibility descriptorVisibility, @NotNull PropertyDescriptor propertyDescriptor, @NotNull Annotations annotations, @NotNull Name name, boolean z10, boolean z11, boolean z12, CallableMemberDescriptor.Kind kind, @NotNull SourceElement sourceElement) {
@@ -68,14 +68,14 @@ public abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
         if (sourceElement == null) {
             a(5);
         }
-        this.f32301w = null;
-        this.f32296r = modality;
-        this.f32300v = descriptorVisibility;
-        this.f32297s = propertyDescriptor;
-        this.f32294p = z10;
-        this.f32295q = z11;
-        this.f32298t = z12;
-        this.f32299u = kind;
+        this.f32523w = null;
+        this.f32518r = modality;
+        this.f32522v = descriptorVisibility;
+        this.f32519s = propertyDescriptor;
+        this.f32516p = z10;
+        this.f32517q = z11;
+        this.f32520t = z12;
+        this.f32521u = kind;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -255,7 +255,7 @@ public abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PropertyAccessorDescriptor
     @NotNull
     public PropertyDescriptor getCorrespondingProperty() {
-        PropertyDescriptor propertyDescriptor = this.f32297s;
+        PropertyDescriptor propertyDescriptor = this.f32519s;
         if (propertyDescriptor == null) {
             a(13);
         }
@@ -274,13 +274,13 @@ public abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor
     public FunctionDescriptor getInitialSignatureDescriptor() {
-        return this.f32301w;
+        return this.f32523w;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor
     @NotNull
     public CallableMemberDescriptor.Kind getKind() {
-        CallableMemberDescriptor.Kind kind = this.f32299u;
+        CallableMemberDescriptor.Kind kind = this.f32521u;
         if (kind == null) {
             a(6);
         }
@@ -290,7 +290,7 @@ public abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     @NotNull
     public Modality getModality() {
-        Modality modality = this.f32296r;
+        Modality modality = this.f32518r;
         if (modality == null) {
             a(10);
         }
@@ -319,7 +319,7 @@ public abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithVisibility
     @NotNull
     public DescriptorVisibility getVisibility() {
-        DescriptorVisibility descriptorVisibility = this.f32300v;
+        DescriptorVisibility descriptorVisibility = this.f32522v;
         if (descriptorVisibility == null) {
             a(11);
         }
@@ -338,7 +338,7 @@ public abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PropertyAccessorDescriptor
     public boolean isDefault() {
-        return this.f32294p;
+        return this.f32516p;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
@@ -348,7 +348,7 @@ public abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     public boolean isExternal() {
-        return this.f32295q;
+        return this.f32517q;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor
@@ -368,7 +368,7 @@ public abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor
     public boolean isInline() {
-        return this.f32298t;
+        return this.f32520t;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor
@@ -393,11 +393,11 @@ public abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
     }
 
     public void setDefault(boolean z10) {
-        this.f32294p = z10;
+        this.f32516p = z10;
     }
 
     public void setInitialSignatureDescriptor(FunctionDescriptor functionDescriptor) {
-        this.f32301w = functionDescriptor;
+        this.f32523w = functionDescriptor;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor
@@ -408,7 +408,7 @@ public abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
     }
 
     public void setVisibility(DescriptorVisibility descriptorVisibility) {
-        this.f32300v = descriptorVisibility;
+        this.f32522v = descriptorVisibility;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.Substitutable

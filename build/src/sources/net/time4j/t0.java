@@ -14,92 +14,92 @@ import java.util.concurrent.ConcurrentMap;
 public final class t0 {
 
     /* renamed from: n  reason: collision with root package name */
-    private static final ConcurrentMap f38678n = new ConcurrentHashMap();
+    private static final ConcurrentMap f37682n = new ConcurrentHashMap();
 
     /* renamed from: o  reason: collision with root package name */
-    private static final w[] f38679o = {f.f38424o, f.f38426q, f.f38427r, f.f38428s, g.f38461d, g.f38462e, g.f38463i, g.f38464o, g.f38465p, g.f38466q};
+    private static final w[] f37683o = {f.f37428o, f.f37430q, f.f37431r, f.f37432s, g.f37465d, g.f37466e, g.f37467i, g.f37468o, g.f37469p, g.f37470q};
 
     /* renamed from: p  reason: collision with root package name */
-    private static final tt.x f38680p;
+    private static final cu.x f37684p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final tt.x f38681q;
+    private static final cu.x f37685q;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Locale f38682a;
+    private final Locale f37686a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f38683b;
+    private final Map f37687b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f38684c;
+    private final Map f37688c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f38685d;
+    private final Map f37689d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f38686e;
+    private final Map f37690e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Map f38687f;
+    private final Map f37691f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Map f38688g;
+    private final Map f37692g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f38689h;
+    private final String f37693h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f38690i;
+    private final String f37694i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final String f38691j;
+    private final String f37695j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final String f38692k;
+    private final String f37696k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Map f38693l;
+    private final Map f37697l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Map f38694m;
+    private final Map f37698m;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f38695a;
+        static final /* synthetic */ int[] f37699a;
 
         static {
-            int[] iArr = new int[tt.v.values().length];
-            f38695a = iArr;
+            int[] iArr = new int[cu.v.values().length];
+            f37699a = iArr;
             try {
-                iArr[tt.v.WIDE.ordinal()] = 1;
+                iArr[cu.v.WIDE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f38695a[tt.v.ABBREVIATED.ordinal()] = 2;
+                f37699a[cu.v.ABBREVIATED.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f38695a[tt.v.SHORT.ordinal()] = 3;
+                f37699a[cu.v.SHORT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f38695a[tt.v.NARROW.ordinal()] = 4;
+                f37699a[cu.v.NARROW.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class b implements tt.x {
+    private static class b implements cu.x {
         private b() {
         }
 
-        private static String F(String str, String str2, String str3, tt.v vVar, tt.n nVar) {
-            int i10 = a.f38695a[vVar.ordinal()];
+        private static String F(String str, String str2, String str3, cu.v vVar, cu.n nVar) {
+            int i10 = a.f37699a[vVar.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2 && i10 != 3) {
                     if (i10 == 4) {
@@ -112,9 +112,9 @@ public final class t0 {
             return G(str, nVar);
         }
 
-        private static String G(String str, tt.n nVar) {
+        private static String G(String str, cu.n nVar) {
             String str2;
-            if (nVar == tt.n.ONE) {
+            if (nVar == cu.n.ONE) {
                 str2 = "";
             } else {
                 str2 = "s";
@@ -122,9 +122,9 @@ public final class t0 {
             return "{0} " + str + str2;
         }
 
-        private static String H(String str, boolean z10, tt.n nVar) {
+        private static String H(String str, boolean z10, cu.n nVar) {
             String str2;
-            if (nVar == tt.n.ONE) {
+            if (nVar == cu.n.ONE) {
                 str2 = "";
             } else {
                 str2 = "s";
@@ -153,141 +153,117 @@ public final class t0 {
             return "{0} " + str;
         }
 
-        @Override // tt.x
-        public String A(Locale locale, boolean z10, tt.n nVar) {
+        @Override // cu.x
+        public String A(Locale locale, boolean z10, cu.n nVar) {
             if (locale.getLanguage().equals("en")) {
-                return H("minute", z10, nVar);
+                return H("day", z10, nVar);
             }
-            return I("min", z10);
+            return I("d", z10);
         }
 
-        @Override // tt.x
-        public String B(Locale locale, boolean z10, tt.n nVar) {
-            if (locale.getLanguage().equals("en")) {
-                return H("second", z10, nVar);
-            }
-            return I("s", z10);
-        }
-
-        @Override // tt.x
-        public String C(Locale locale, tt.v vVar, tt.n nVar) {
-            if (locale.getLanguage().equals("en")) {
-                return F("nanosecond", "nsec", "ns", vVar, nVar);
-            }
-            return J("ns");
-        }
-
-        @Override // tt.x
-        public String D(Locale locale, tt.v vVar, tt.n nVar) {
-            if (locale.getLanguage().equals("en")) {
-                return F("year", "yr", "y", vVar, nVar);
-            }
-            return J("y");
-        }
-
-        @Override // tt.x
-        public String c(Locale locale) {
-            return "now";
-        }
-
-        @Override // tt.x
-        public String g(Locale locale, boolean z10, tt.n nVar) {
-            if (locale.getLanguage().equals("en")) {
-                return H("year", z10, nVar);
-            }
-            return I("y", z10);
-        }
-
-        @Override // tt.x
-        public String j(Locale locale, tt.v vVar, tt.n nVar) {
-            if (locale.getLanguage().equals("en")) {
-                return F("second", "sec", "s", vVar, nVar);
-            }
-            return J("s");
-        }
-
-        @Override // tt.x
-        public String k(Locale locale, tt.v vVar, tt.n nVar) {
-            if (locale.getLanguage().equals("en")) {
-                return F("millisecond", "msec", "ms", vVar, nVar);
-            }
-            return J("ms");
-        }
-
-        @Override // tt.x
-        public String l(Locale locale, boolean z10, tt.n nVar) {
-            if (locale.getLanguage().equals("en")) {
-                return H("month", z10, nVar);
-            }
-            return I("m", z10);
-        }
-
-        @Override // tt.x
-        public String m(Locale locale, tt.v vVar, tt.n nVar) {
-            if (locale.getLanguage().equals("en")) {
-                return F("day", "day", "d", vVar, nVar);
-            }
-            return J("d");
-        }
-
-        @Override // tt.x
-        public String n(Locale locale, boolean z10, tt.n nVar) {
-            if (locale.getLanguage().equals("en")) {
-                return H("week", z10, nVar);
-            }
-            return I("w", z10);
-        }
-
-        @Override // tt.x
-        public String p(Locale locale, tt.v vVar, tt.n nVar) {
-            if (locale.getLanguage().equals("en")) {
-                return F("month", "mth", "m", vVar, nVar);
-            }
-            return J("m");
-        }
-
-        @Override // tt.x
-        public String q(Locale locale, boolean z10, tt.n nVar) {
-            if (locale.getLanguage().equals("en")) {
-                return H("hour", z10, nVar);
-            }
-            return I("h", z10);
-        }
-
-        @Override // tt.x
-        public String t(Locale locale, tt.v vVar, tt.n nVar) {
+        @Override // cu.x
+        public String B(Locale locale, cu.v vVar, cu.n nVar) {
             if (locale.getLanguage().equals("en")) {
                 return F("hour", "hr", "h", vVar, nVar);
             }
             return J("h");
         }
 
-        @Override // tt.x
-        public String u(Locale locale, tt.v vVar, tt.n nVar) {
+        @Override // cu.x
+        public String C(Locale locale, boolean z10, cu.n nVar) {
+            if (locale.getLanguage().equals("en")) {
+                return H("minute", z10, nVar);
+            }
+            return I("min", z10);
+        }
+
+        @Override // cu.x
+        public String E(Locale locale, cu.v vVar, cu.n nVar) {
+            if (locale.getLanguage().equals("en")) {
+                return F("day", "day", "d", vVar, nVar);
+            }
+            return J("d");
+        }
+
+        @Override // cu.x
+        public String b(Locale locale, boolean z10, cu.n nVar) {
+            if (locale.getLanguage().equals("en")) {
+                return H("year", z10, nVar);
+            }
+            return I("y", z10);
+        }
+
+        @Override // cu.x
+        public String d(Locale locale) {
+            return "now";
+        }
+
+        @Override // cu.x
+        public String f(Locale locale, cu.v vVar, cu.n nVar) {
             if (locale.getLanguage().equals("en")) {
                 return F("microsecond", "µsec", "µs", vVar, nVar);
             }
             return J("µs");
         }
 
-        @Override // tt.x
-        public String w(Locale locale, tt.v vVar, tt.n nVar) {
+        @Override // cu.x
+        public String g(Locale locale, cu.v vVar, cu.n nVar) {
             if (locale.getLanguage().equals("en")) {
                 return F("minute", "min", "m", vVar, nVar);
             }
             return J("min");
         }
 
-        @Override // tt.x
-        public String x(Locale locale, tt.v vVar, tt.n nVar) {
+        @Override // cu.x
+        public String i(Locale locale, cu.v vVar, cu.n nVar) {
             if (locale.getLanguage().equals("en")) {
                 return F("week", "wk", "w", vVar, nVar);
             }
             return J("w");
         }
 
-        @Override // tt.x
-        public String y(Locale locale, tt.v vVar, int i10) {
+        @Override // cu.x
+        public String j(Locale locale, cu.v vVar, cu.n nVar) {
+            if (locale.getLanguage().equals("en")) {
+                return F("year", "yr", "y", vVar, nVar);
+            }
+            return J("y");
+        }
+
+        @Override // cu.x
+        public String m(Locale locale, cu.v vVar, cu.n nVar) {
+            if (locale.getLanguage().equals("en")) {
+                return F("nanosecond", "nsec", "ns", vVar, nVar);
+            }
+            return J("ns");
+        }
+
+        @Override // cu.x
+        public String n(Locale locale, boolean z10, cu.n nVar) {
+            if (locale.getLanguage().equals("en")) {
+                return H("week", z10, nVar);
+            }
+            return I("w", z10);
+        }
+
+        @Override // cu.x
+        public String o(Locale locale, cu.v vVar, cu.n nVar) {
+            if (locale.getLanguage().equals("en")) {
+                return F("month", "mth", "m", vVar, nVar);
+            }
+            return J("m");
+        }
+
+        @Override // cu.x
+        public String p(Locale locale, cu.v vVar, cu.n nVar) {
+            if (locale.getLanguage().equals("en")) {
+                return F("second", "sec", "s", vVar, nVar);
+            }
+            return J("s");
+        }
+
+        @Override // cu.x
+        public String s(Locale locale, cu.v vVar, int i10) {
             if (i10 >= 2) {
                 StringBuilder sb2 = new StringBuilder(i10 * 5);
                 for (int i11 = 0; i11 < i10; i11++) {
@@ -303,12 +279,36 @@ public final class t0 {
             throw new IllegalArgumentException("Size must be greater than 1.");
         }
 
-        @Override // tt.x
-        public String z(Locale locale, boolean z10, tt.n nVar) {
+        @Override // cu.x
+        public String t(Locale locale, cu.v vVar, cu.n nVar) {
             if (locale.getLanguage().equals("en")) {
-                return H("day", z10, nVar);
+                return F("millisecond", "msec", "ms", vVar, nVar);
             }
-            return I("d", z10);
+            return J("ms");
+        }
+
+        @Override // cu.x
+        public String u(Locale locale, boolean z10, cu.n nVar) {
+            if (locale.getLanguage().equals("en")) {
+                return H("hour", z10, nVar);
+            }
+            return I("h", z10);
+        }
+
+        @Override // cu.x
+        public String w(Locale locale, boolean z10, cu.n nVar) {
+            if (locale.getLanguage().equals("en")) {
+                return H("month", z10, nVar);
+            }
+            return I("m", z10);
+        }
+
+        @Override // cu.x
+        public String x(Locale locale, boolean z10, cu.n nVar) {
+            if (locale.getLanguage().equals("en")) {
+                return H("second", z10, nVar);
+            }
+            return I("s", z10);
         }
 
         /* synthetic */ b(a aVar) {
@@ -317,19 +317,19 @@ public final class t0 {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v13, types: [tt.x] */
+    /* JADX WARN: Type inference failed for: r1v13, types: [cu.x] */
     static {
         b bVar = null;
         b bVar2 = new b(null);
-        f38681q = bVar2;
-        Iterator it = qt.d.c().g(tt.x.class).iterator();
+        f37685q = bVar2;
+        Iterator it = zt.d.c().g(cu.x.class).iterator();
         if (it.hasNext()) {
-            bVar = (tt.x) it.next();
+            bVar = (cu.x) it.next();
         }
         if (bVar != null) {
             bVar2 = bVar;
         }
-        f38680p = bVar2;
+        f37684p = bVar2;
     }
 
     private t0(Locale locale) {
@@ -338,43 +338,43 @@ public final class t0 {
         String str3;
         String str4;
         y0[] values;
-        tt.v[] values2;
+        cu.v[] values2;
         HashMap hashMap;
         HashMap hashMap2;
-        tt.n[] values3;
-        tt.n[] values4;
-        this.f38682a = locale;
+        cu.n[] values3;
+        cu.n[] values4;
+        this.f37686a = locale;
         HashMap hashMap3 = new HashMap(10);
         HashMap hashMap4 = new HashMap(10);
         HashMap hashMap5 = new HashMap(10);
         HashMap hashMap6 = new HashMap(10);
         HashMap hashMap7 = new HashMap(10);
         HashMap hashMap8 = new HashMap(10);
-        w[] wVarArr = f38679o;
+        w[] wVarArr = f37683o;
         int length = wVarArr.length;
         int i10 = 0;
         while (i10 < length) {
             w wVar = wVarArr[i10];
-            EnumMap enumMap = new EnumMap(tt.v.class);
-            tt.v[] values5 = tt.v.values();
+            EnumMap enumMap = new EnumMap(cu.v.class);
+            cu.v[] values5 = cu.v.values();
             int length2 = values5.length;
             w[] wVarArr2 = wVarArr;
             int i11 = 0;
             while (i11 < length2) {
                 int i12 = length;
-                tt.v vVar = values5[i11];
+                cu.v vVar = values5[i11];
                 int i13 = i11;
-                EnumMap enumMap2 = new EnumMap(tt.n.class);
-                tt.n[] values6 = tt.n.values();
+                EnumMap enumMap2 = new EnumMap(cu.n.class);
+                cu.n[] values6 = cu.n.values();
                 int i14 = i10;
                 int i15 = 0;
                 for (int length3 = values6.length; i15 < length3; length3 = length3) {
                     int i16 = i15;
-                    tt.n nVar = values6[i16];
-                    enumMap2.put((EnumMap) nVar, (tt.n) c(locale, wVar, vVar, nVar));
+                    cu.n nVar = values6[i16];
+                    enumMap2.put((EnumMap) nVar, (cu.n) f(locale, wVar, vVar, nVar));
                     i15 = i16 + 1;
                 }
-                enumMap.put((EnumMap) vVar, (tt.v) Collections.unmodifiableMap(enumMap2));
+                enumMap.put((EnumMap) vVar, (cu.v) Collections.unmodifiableMap(enumMap2));
                 i11 = i13 + 1;
                 length = i12;
                 i10 = i14;
@@ -383,38 +383,38 @@ public final class t0 {
             int i18 = i10;
             hashMap3.put(wVar, Collections.unmodifiableMap(enumMap));
             if (!Character.isDigit(wVar.d())) {
-                EnumMap enumMap3 = new EnumMap(tt.n.class);
-                tt.n[] values7 = tt.n.values();
+                EnumMap enumMap3 = new EnumMap(cu.n.class);
+                cu.n[] values7 = cu.n.values();
                 int length4 = values7.length;
                 int i19 = 0;
                 while (i19 < length4) {
-                    tt.n nVar2 = values7[i19];
-                    enumMap3.put((EnumMap) nVar2, (tt.n) d(locale, wVar, false, false, nVar2));
+                    cu.n nVar2 = values7[i19];
+                    enumMap3.put((EnumMap) nVar2, (cu.n) g(locale, wVar, false, false, nVar2));
                     i19++;
                     hashMap3 = hashMap3;
                 }
                 hashMap = hashMap3;
                 hashMap4.put(wVar, Collections.unmodifiableMap(enumMap3));
-                EnumMap enumMap4 = new EnumMap(tt.n.class);
-                for (tt.n nVar3 : tt.n.values()) {
-                    enumMap4.put((EnumMap) nVar3, (tt.n) d(locale, wVar, false, true, nVar3));
+                EnumMap enumMap4 = new EnumMap(cu.n.class);
+                for (cu.n nVar3 : cu.n.values()) {
+                    enumMap4.put((EnumMap) nVar3, (cu.n) g(locale, wVar, false, true, nVar3));
                 }
                 hashMap6.put(wVar, Collections.unmodifiableMap(enumMap4));
-                EnumMap enumMap5 = new EnumMap(tt.n.class);
-                tt.n[] values8 = tt.n.values();
+                EnumMap enumMap5 = new EnumMap(cu.n.class);
+                cu.n[] values8 = cu.n.values();
                 int length5 = values8.length;
                 int i20 = 0;
                 while (i20 < length5) {
-                    tt.n nVar4 = values8[i20];
-                    enumMap5.put((EnumMap) nVar4, (tt.n) d(locale, wVar, true, false, nVar4));
+                    cu.n nVar4 = values8[i20];
+                    enumMap5.put((EnumMap) nVar4, (cu.n) g(locale, wVar, true, false, nVar4));
                     i20++;
                     hashMap4 = hashMap4;
                 }
                 hashMap2 = hashMap4;
                 hashMap5.put(wVar, Collections.unmodifiableMap(enumMap5));
-                EnumMap enumMap6 = new EnumMap(tt.n.class);
-                for (tt.n nVar5 : tt.n.values()) {
-                    enumMap6.put((EnumMap) nVar5, (tt.n) d(locale, wVar, true, true, nVar5));
+                EnumMap enumMap6 = new EnumMap(cu.n.class);
+                for (cu.n nVar5 : cu.n.values()) {
+                    enumMap6.put((EnumMap) nVar5, (cu.n) g(locale, wVar, true, true, nVar5));
                 }
                 hashMap7.put(wVar, Collections.unmodifiableMap(enumMap6));
             } else {
@@ -431,18 +431,18 @@ public final class t0 {
         HashMap hashMap10 = hashMap4;
         for (int i21 = 2; i21 <= 7; i21++) {
             Integer valueOf = Integer.valueOf(i21);
-            EnumMap enumMap7 = new EnumMap(tt.v.class);
-            for (tt.v vVar2 : tt.v.values()) {
-                enumMap7.put((EnumMap) vVar2, (tt.v) e(locale, vVar2, i21));
+            EnumMap enumMap7 = new EnumMap(cu.v.class);
+            for (cu.v vVar2 : cu.v.values()) {
+                enumMap7.put((EnumMap) vVar2, (cu.v) e(locale, vVar2, i21));
             }
             hashMap8.put(valueOf, Collections.unmodifiableMap(enumMap7));
         }
-        this.f38683b = Collections.unmodifiableMap(hashMap9);
-        this.f38684c = Collections.unmodifiableMap(hashMap10);
-        this.f38685d = Collections.unmodifiableMap(hashMap5);
-        this.f38686e = Collections.unmodifiableMap(hashMap6);
-        this.f38687f = Collections.unmodifiableMap(hashMap7);
-        this.f38688g = Collections.unmodifiableMap(hashMap8);
+        this.f37687b = Collections.unmodifiableMap(hashMap9);
+        this.f37688c = Collections.unmodifiableMap(hashMap10);
+        this.f37689d = Collections.unmodifiableMap(hashMap5);
+        this.f37690e = Collections.unmodifiableMap(hashMap6);
+        this.f37691f = Collections.unmodifiableMap(hashMap7);
+        this.f37692g = Collections.unmodifiableMap(hashMap8);
         EnumMap enumMap8 = new EnumMap(y0.class);
         EnumMap enumMap9 = new EnumMap(y0.class);
         y0[] values9 = y0.values();
@@ -464,97 +464,58 @@ public final class t0 {
                 i22++;
             }
         }
-        tt.x xVar = f38680p;
-        String c10 = xVar.c(locale);
-        if (!(xVar instanceof tt.r)) {
+        cu.x xVar = f37684p;
+        String d10 = xVar.d(locale);
+        if (!(xVar instanceof cu.r)) {
             str4 = "";
             str3 = str4;
         } else {
-            tt.r rVar = (tt.r) tt.r.class.cast(xVar);
-            String b10 = rVar.b(locale);
+            cu.r rVar = (cu.r) cu.r.class.cast(xVar);
+            String c10 = rVar.c(locale);
             try {
                 str3 = rVar.v(locale);
                 try {
-                    str = rVar.i(locale);
+                    str = rVar.h(locale);
                     for (y0 y0Var2 : y0.values()) {
-                        enumMap8.put((EnumMap) y0Var2, (y0) rVar.o(y0Var2, locale));
-                        enumMap9.put((EnumMap) y0Var2, (y0) rVar.E(y0Var2, locale));
+                        enumMap8.put((EnumMap) y0Var2, (y0) rVar.k(y0Var2, locale));
+                        enumMap9.put((EnumMap) y0Var2, (y0) rVar.D(y0Var2, locale));
                     }
                     str4 = str;
-                    str = b10;
+                    str = c10;
                 } catch (MissingResourceException unused2) {
                     str2 = str;
-                    str = b10;
-                    c10 = f38681q.c(locale);
+                    str = c10;
+                    d10 = f37685q.d(locale);
                     str4 = str2;
-                    this.f38689h = c10;
-                    this.f38690i = str;
-                    this.f38691j = str3;
-                    this.f38692k = str4;
-                    this.f38693l = Collections.unmodifiableMap(enumMap8);
-                    this.f38694m = Collections.unmodifiableMap(enumMap9);
+                    this.f37693h = d10;
+                    this.f37694i = str;
+                    this.f37695j = str3;
+                    this.f37696k = str4;
+                    this.f37697l = Collections.unmodifiableMap(enumMap8);
+                    this.f37698m = Collections.unmodifiableMap(enumMap9);
                 }
             } catch (MissingResourceException unused3) {
                 str2 = "";
                 str3 = str2;
             }
         }
-        this.f38689h = c10;
-        this.f38690i = str;
-        this.f38691j = str3;
-        this.f38692k = str4;
-        this.f38693l = Collections.unmodifiableMap(enumMap8);
-        this.f38694m = Collections.unmodifiableMap(enumMap9);
+        this.f37693h = d10;
+        this.f37694i = str;
+        this.f37695j = str3;
+        this.f37696k = str4;
+        this.f37697l = Collections.unmodifiableMap(enumMap8);
+        this.f37698m = Collections.unmodifiableMap(enumMap9);
     }
 
     private static char a(w wVar) {
         char d10 = wVar.d();
-        if (wVar == g.f38462e) {
+        if (wVar == g.f37466e) {
             return 'N';
         }
         return d10;
     }
 
-    private static String c(Locale locale, w wVar, tt.v vVar, tt.n nVar) {
-        try {
-            return f(f38680p, locale, a(wVar), vVar, nVar);
-        } catch (MissingResourceException unused) {
-            return f(f38681q, locale, a(wVar), vVar, nVar);
-        }
-    }
-
-    private static String d(Locale locale, w wVar, boolean z10, boolean z11, tt.n nVar) {
-        Locale locale2;
-        boolean z12;
-        boolean z13;
-        tt.n nVar2;
-        try {
-            locale2 = locale;
-            z12 = z10;
-            z13 = z11;
-            nVar2 = nVar;
-        } catch (MissingResourceException unused) {
-            locale2 = locale;
-            z12 = z10;
-            z13 = z11;
-            nVar2 = nVar;
-        }
-        try {
-            return g(f38680p, locale2, a(wVar), z12, z13, nVar2);
-        } catch (MissingResourceException unused2) {
-            return g(f38681q, locale2, a(wVar), z12, z13, nVar2);
-        }
-    }
-
-    private static String e(Locale locale, tt.v vVar, int i10) {
-        try {
-            return f38680p.y(locale, vVar, i10);
-        } catch (MissingResourceException unused) {
-            return f38681q.y(locale, vVar, i10);
-        }
-    }
-
-    private static String f(tt.x xVar, Locale locale, char c10, tt.v vVar, tt.n nVar) {
+    private static String c(cu.x xVar, Locale locale, char c10, cu.v vVar, cu.n nVar) {
         if (c10 != '3') {
             if (c10 != '6') {
                 if (c10 != '9') {
@@ -565,32 +526,32 @@ public final class t0 {
                                     if (c10 != 'Y') {
                                         if (c10 != 'M') {
                                             if (c10 == 'N') {
-                                                return xVar.w(locale, vVar, nVar);
+                                                return xVar.g(locale, vVar, nVar);
                                             }
                                             throw new UnsupportedOperationException("Unit-ID: " + c10);
                                         }
-                                        return xVar.p(locale, vVar, nVar);
+                                        return xVar.o(locale, vVar, nVar);
                                     }
-                                    return xVar.D(locale, vVar, nVar);
+                                    return xVar.j(locale, vVar, nVar);
                                 }
-                                return xVar.x(locale, vVar, nVar);
+                                return xVar.i(locale, vVar, nVar);
                             }
-                            return xVar.j(locale, vVar, nVar);
+                            return xVar.p(locale, vVar, nVar);
                         }
-                        return xVar.t(locale, vVar, nVar);
+                        return xVar.B(locale, vVar, nVar);
                     }
-                    return xVar.m(locale, vVar, nVar);
+                    return xVar.E(locale, vVar, nVar);
                 }
-                return xVar.C(locale, vVar, nVar);
+                return xVar.m(locale, vVar, nVar);
             }
-            return xVar.u(locale, vVar, nVar);
+            return xVar.f(locale, vVar, nVar);
         }
-        return xVar.k(locale, vVar, nVar);
+        return xVar.t(locale, vVar, nVar);
     }
 
-    private static String g(tt.x xVar, Locale locale, char c10, boolean z10, boolean z11, tt.n nVar) {
-        if (z11 && (xVar instanceof tt.r)) {
-            tt.r rVar = (tt.r) tt.r.class.cast(xVar);
+    private static String d(cu.x xVar, Locale locale, char c10, boolean z10, boolean z11, cu.n nVar) {
+        if (z11 && (xVar instanceof cu.r)) {
+            cu.r rVar = (cu.r) cu.r.class.cast(xVar);
             if (c10 != 'D') {
                 if (c10 != 'H') {
                     if (c10 != 'S') {
@@ -598,21 +559,21 @@ public final class t0 {
                             if (c10 != 'Y') {
                                 if (c10 != 'M') {
                                     if (c10 == 'N') {
-                                        return rVar.f(locale, z10, nVar);
+                                        return rVar.z(locale, z10, nVar);
                                     }
                                     throw new UnsupportedOperationException("Unit-ID: " + c10);
                                 }
-                                return rVar.e(locale, z10, nVar);
+                                return rVar.y(locale, z10, nVar);
                             }
                             return rVar.r(locale, z10, nVar);
                         }
-                        return rVar.h(locale, z10, nVar);
+                        return rVar.e(locale, z10, nVar);
                     }
-                    return rVar.s(locale, z10, nVar);
+                    return rVar.q(locale, z10, nVar);
                 }
-                return rVar.a(locale, z10, nVar);
+                return rVar.l(locale, z10, nVar);
             }
-            return rVar.d(locale, z10, nVar);
+            return rVar.a(locale, z10, nVar);
         } else if (c10 != 'D') {
             if (c10 != 'H') {
                 if (c10 != 'S') {
@@ -620,28 +581,67 @@ public final class t0 {
                         if (c10 != 'Y') {
                             if (c10 != 'M') {
                                 if (c10 == 'N') {
-                                    return xVar.A(locale, z10, nVar);
+                                    return xVar.C(locale, z10, nVar);
                                 }
                                 throw new UnsupportedOperationException("Unit-ID: " + c10);
                             }
-                            return xVar.l(locale, z10, nVar);
+                            return xVar.w(locale, z10, nVar);
                         }
-                        return xVar.g(locale, z10, nVar);
+                        return xVar.b(locale, z10, nVar);
                     }
                     return xVar.n(locale, z10, nVar);
                 }
-                return xVar.B(locale, z10, nVar);
+                return xVar.x(locale, z10, nVar);
             }
-            return xVar.q(locale, z10, nVar);
+            return xVar.u(locale, z10, nVar);
         } else {
-            return xVar.z(locale, z10, nVar);
+            return xVar.A(locale, z10, nVar);
+        }
+    }
+
+    private static String e(Locale locale, cu.v vVar, int i10) {
+        try {
+            return f37684p.s(locale, vVar, i10);
+        } catch (MissingResourceException unused) {
+            return f37685q.s(locale, vVar, i10);
+        }
+    }
+
+    private static String f(Locale locale, w wVar, cu.v vVar, cu.n nVar) {
+        try {
+            return c(f37684p, locale, a(wVar), vVar, nVar);
+        } catch (MissingResourceException unused) {
+            return c(f37685q, locale, a(wVar), vVar, nVar);
+        }
+    }
+
+    private static String g(Locale locale, w wVar, boolean z10, boolean z11, cu.n nVar) {
+        Locale locale2;
+        boolean z12;
+        boolean z13;
+        cu.n nVar2;
+        try {
+            locale2 = locale;
+            z12 = z10;
+            z13 = z11;
+            nVar2 = nVar;
+        } catch (MissingResourceException unused) {
+            locale2 = locale;
+            z12 = z10;
+            z13 = z11;
+            nVar2 = nVar;
+        }
+        try {
+            return d(f37684p, locale2, a(wVar), z12, z13, nVar2);
+        } catch (MissingResourceException unused2) {
+            return d(f37685q, locale2, a(wVar), z12, z13, nVar2);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static t0 h(Locale locale) {
         if (locale != null) {
-            ConcurrentMap concurrentMap = f38678n;
+            ConcurrentMap concurrentMap = f37682n;
             t0 t0Var = (t0) concurrentMap.get(locale);
             if (t0Var == null) {
                 t0Var = new t0(locale);
@@ -657,6 +657,6 @@ public final class t0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public String b() {
-        return this.f38691j;
+        return this.f37695j;
     }
 }

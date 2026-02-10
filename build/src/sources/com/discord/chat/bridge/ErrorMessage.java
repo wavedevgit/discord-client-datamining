@@ -3,7 +3,6 @@ package com.discord.chat.bridge;
 import com.discord.primitives.MessageId;
 import com.discord.primitives.MessageId$$serializer;
 import com.facebook.react.devsupport.StackTraceHelper;
-import gt.m;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -11,8 +10,9 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
-import kt.v1;
 import org.jetbrains.annotations.NotNull;
+import qt.m;
+import tt.v1;
 @m
 @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 &2\u00020\u0001:\u0002%&B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007B/\b\u0010\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0004\b\u0006\u0010\fJ\u0010\u0010\u0011\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u0012\u0010\u000eJ\t\u0010\u0013\u001a\u00020\u0005HÆ\u0003J$\u0010\u0014\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005HÆ\u0001¢\u0006\u0004\b\u0015\u0010\u0016J\u0013\u0010\u0017\u001a\u00020\u00182\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aHÖ\u0003J\t\u0010\u001b\u001a\u00020\tHÖ\u0001J\t\u0010\u001c\u001a\u00020\u0005HÖ\u0001J%\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u00002\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0001¢\u0006\u0002\b$R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u000f\u001a\u0004\b\r\u0010\u000eR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000e¨\u0006'"}, d2 = {"Lcom/discord/chat/bridge/ErrorMessage;", "Lcom/discord/chat/bridge/MessageBase;", StackTraceHelper.ID_KEY, "Lcom/discord/primitives/MessageId;", "stackTrace", "", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getStackTrace", "component1", "component1-3Eiw7ao", "component2", "copy", "copy-ntcYbpo", "(Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/bridge/ErrorMessage;", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -22,7 +22,7 @@ public final class ErrorMessage extends MessageBase {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8655id;
+    private final String f9232id;
     @NotNull
     private final String stackTrace;
 
@@ -47,26 +47,26 @@ public final class ErrorMessage extends MessageBase {
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ ErrorMessage m221copyntcYbpo$default(ErrorMessage errorMessage, String str, String str2, int i10, Object obj) {
+    public static /* synthetic */ ErrorMessage m222copyntcYbpo$default(ErrorMessage errorMessage, String str, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = errorMessage.f8655id;
+            str = errorMessage.f9232id;
         }
         if ((i10 & 2) != 0) {
             str2 = errorMessage.stackTrace;
         }
-        return errorMessage.m223copyntcYbpo(str, str2);
+        return errorMessage.m224copyntcYbpo(str, str2);
     }
 
     public static final /* synthetic */ void write$Self$chat_release(ErrorMessage errorMessage, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         MessageBase.write$Self(errorMessage, compositeEncoder, serialDescriptor);
-        compositeEncoder.F(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1083boximpl(errorMessage.f8655id));
+        compositeEncoder.k(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(errorMessage.f9232id));
         compositeEncoder.y(serialDescriptor, 1, errorMessage.stackTrace);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m222component13Eiw7ao() {
-        return this.f8655id;
+    public final String m223component13Eiw7ao() {
+        return this.f9232id;
     }
 
     @NotNull
@@ -76,7 +76,7 @@ public final class ErrorMessage extends MessageBase {
 
     @NotNull
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final ErrorMessage m223copyntcYbpo(@NotNull String id2, @NotNull String stackTrace) {
+    public final ErrorMessage m224copyntcYbpo(@NotNull String id2, @NotNull String stackTrace) {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(stackTrace, "stackTrace");
         return new ErrorMessage(id2, stackTrace, null);
@@ -88,15 +88,15 @@ public final class ErrorMessage extends MessageBase {
         }
         if (obj instanceof ErrorMessage) {
             ErrorMessage errorMessage = (ErrorMessage) obj;
-            return MessageId.m1087equalsimpl0(this.f8655id, errorMessage.f8655id) && Intrinsics.areEqual(this.stackTrace, errorMessage.stackTrace);
+            return MessageId.m1088equalsimpl0(this.f9232id, errorMessage.f9232id) && Intrinsics.areEqual(this.stackTrace, errorMessage.stackTrace);
         }
         return false;
     }
 
     @NotNull
     /* renamed from: getId-3Eiw7ao  reason: not valid java name */
-    public final String m224getId3Eiw7ao() {
-        return this.f8655id;
+    public final String m225getId3Eiw7ao() {
+        return this.f9232id;
     }
 
     @NotNull
@@ -105,14 +105,14 @@ public final class ErrorMessage extends MessageBase {
     }
 
     public int hashCode() {
-        return (MessageId.m1088hashCodeimpl(this.f8655id) * 31) + this.stackTrace.hashCode();
+        return (MessageId.m1089hashCodeimpl(this.f9232id) * 31) + this.stackTrace.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1090toStringimpl = MessageId.m1090toStringimpl(this.f8655id);
+        String m1091toStringimpl = MessageId.m1091toStringimpl(this.f9232id);
         String str = this.stackTrace;
-        return "ErrorMessage(id=" + m1090toStringimpl + ", stackTrace=" + str + ")";
+        return "ErrorMessage(id=" + m1091toStringimpl + ", stackTrace=" + str + ")";
     }
 
     public /* synthetic */ ErrorMessage(String str, String str2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -125,7 +125,7 @@ public final class ErrorMessage extends MessageBase {
         if (3 != (i10 & 3)) {
             v1.b(i10, 3, ErrorMessage$$serializer.INSTANCE.getDescriptor());
         }
-        this.f8655id = str;
+        this.f9232id = str;
         this.stackTrace = str2;
     }
 
@@ -134,7 +134,7 @@ public final class ErrorMessage extends MessageBase {
         super(null);
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(stackTrace, "stackTrace");
-        this.f8655id = id2;
+        this.f9232id = id2;
         this.stackTrace = stackTrace;
     }
 }

@@ -1,51 +1,19 @@
 package mt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
-    public static final byte a(char c10) {
-        if (c10 < '~') {
-            return k.f37553c[c10];
+public interface b extends ot.a {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static Object a(b bVar, Object obj) {
+            Object a10 = bVar.a(obj);
+            if (a10 != null) {
+                return a10;
+            }
+            throw new IllegalStateException("Field " + bVar.getName() + " is not set");
         }
-        return (byte) 0;
     }
 
-    public static final char b(int i10) {
-        if (i10 < 117) {
-            return k.f37552b[i10];
-        }
-        return (char) 0;
-    }
+    Object a(Object obj);
 
-    public static final String c(byte b10) {
-        if (b10 == 1) {
-            return "quotation mark '\"'";
-        }
-        if (b10 == 2) {
-            return "string escape sequence '\\'";
-        }
-        if (b10 == 4) {
-            return "comma ','";
-        }
-        if (b10 == 5) {
-            return "colon ':'";
-        }
-        if (b10 == 6) {
-            return "start of the object '{'";
-        }
-        if (b10 == 7) {
-            return "end of the object '}'";
-        }
-        if (b10 == 8) {
-            return "start of the array '['";
-        }
-        if (b10 == 9) {
-            return "end of the array ']'";
-        }
-        if (b10 == 10) {
-            return "end of the input";
-        }
-        if (b10 == Byte.MAX_VALUE) {
-            return "invalid token";
-        }
-        return "valid token";
-    }
+    Object b(Object obj);
 }

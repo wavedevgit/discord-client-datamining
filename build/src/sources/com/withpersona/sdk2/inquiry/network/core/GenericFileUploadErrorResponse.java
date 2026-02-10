@@ -27,7 +27,7 @@ public final class GenericFileUploadErrorResponse {
 
         @NotNull
         public final h.e getAdapter() {
-            return an.b.b(DocumentErrorResponse.class, "code").e(DocumentErrorResponse.DisabledFileTypeError.class, "document-generic-disabled-file-type-error").e(DocumentErrorResponse.FileLimitExceededError.class, "document-generic-file-limit-exceeded-error").e(DocumentErrorResponse.PageLimitExceededError.class, "document-generic-page-limit-exceeded-error").e(DocumentErrorResponse.MalformedFileError.class, "document-generic-malformed-file-error").e(DocumentErrorResponse.MalformedImageError.class, "document-generic-malformed-image-error").e(DocumentErrorResponse.MalformedPdfError.class, "document-generic-malformed-pdf-error").e(DocumentErrorResponse.GovernmentIdDimensionSizeError.class, "document-government-id-dimension-size-error").d(UnknownErrorAdapter.INSTANCE);
+            return cn.b.b(DocumentErrorResponse.class, "code").e(DocumentErrorResponse.DisabledFileTypeError.class, "document-generic-disabled-file-type-error").e(DocumentErrorResponse.FileLimitExceededError.class, "document-generic-file-limit-exceeded-error").e(DocumentErrorResponse.PageLimitExceededError.class, "document-generic-page-limit-exceeded-error").e(DocumentErrorResponse.MalformedFileError.class, "document-generic-malformed-file-error").e(DocumentErrorResponse.MalformedImageError.class, "document-generic-malformed-image-error").e(DocumentErrorResponse.MalformedPdfError.class, "document-generic-malformed-pdf-error").e(DocumentErrorResponse.GovernmentIdDimensionSizeError.class, "document-government-id-dimension-size-error").d(UnknownErrorAdapter.INSTANCE);
         }
 
         private Companion() {
@@ -882,11 +882,11 @@ public final class GenericFileUploadErrorResponse {
 
         @Override // com.squareup.moshi.h
         public void toJson(@NotNull t tVar, DocumentErrorResponse.UnknownError unknownError) {
-            tVar.k();
+            tVar.i();
             tVar.J("title");
-            tVar.r1(unknownError != null ? unknownError.getTitle() : null);
+            tVar.V0(unknownError != null ? unknownError.getTitle() : null);
             tVar.J("code");
-            tVar.r1(unknownError != null ? unknownError.getCode() : null);
+            tVar.V0(unknownError != null ? unknownError.getCode() : null);
             tVar.s();
         }
     }

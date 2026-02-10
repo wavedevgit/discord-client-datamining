@@ -52,7 +52,7 @@ public final class AttributeStyles_ESignatureBackgroundColorStyleJsonAdapter ext
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
@@ -68,7 +68,7 @@ public final class AttributeStyles_ESignatureBackgroundColorStyleJsonAdapter ext
     public void toJson(@NotNull t writer, AttributeStyles.ESignatureBackgroundColorStyle eSignatureBackgroundColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignatureBackgroundColorStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableComplexElementColorAdapter.toJson(writer, eSignatureBackgroundColorStyle.getBase());
             writer.J("signaturePreview");

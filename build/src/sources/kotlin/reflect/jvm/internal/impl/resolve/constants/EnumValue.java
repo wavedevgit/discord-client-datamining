@@ -1,5 +1,6 @@
 package kotlin.reflect.jvm.internal.impl.resolve.constants;
 
+import as.v;
 import kotlin.Pair;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
@@ -14,29 +15,28 @@ import kotlin.reflect.jvm.internal.impl.types.SimpleType;
 import kotlin.reflect.jvm.internal.impl.types.error.ErrorTypeKind;
 import kotlin.reflect.jvm.internal.impl.types.error.ErrorUtils;
 import org.jetbrains.annotations.NotNull;
-import rr.v;
 @SourceDebugExtension({"SMAP\nconstantValues.kt\nKotlin\n*S Kotlin\n*F\n+ 1 constantValues.kt\norg/jetbrains/kotlin/resolve/constants/EnumValue\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,320:1\n1#2:321\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class EnumValue extends ConstantValue<Pair<? extends ClassId, ? extends Name>> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final ClassId f33894b;
+    private final ClassId f34116b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Name f33895c;
+    private final Name f34117c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public EnumValue(@NotNull ClassId enumClassId, @NotNull Name enumEntryName) {
         super(v.a(enumClassId, enumEntryName));
         Intrinsics.checkNotNullParameter(enumClassId, "enumClassId");
         Intrinsics.checkNotNullParameter(enumEntryName, "enumEntryName");
-        this.f33894b = enumClassId;
-        this.f33895c = enumEntryName;
+        this.f34116b = enumClassId;
+        this.f34117c = enumEntryName;
     }
 
     @NotNull
     public final Name getEnumEntryName() {
-        return this.f33895c;
+        return this.f34117c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.constants.ConstantValue
@@ -44,7 +44,7 @@ public final class EnumValue extends ConstantValue<Pair<? extends ClassId, ? ext
     public KotlinType getType(@NotNull ModuleDescriptor module) {
         SimpleType defaultType;
         Intrinsics.checkNotNullParameter(module, "module");
-        ClassDescriptor findClassAcrossModuleDependencies = FindClassInModuleKt.findClassAcrossModuleDependencies(module, this.f33894b);
+        ClassDescriptor findClassAcrossModuleDependencies = FindClassInModuleKt.findClassAcrossModuleDependencies(module, this.f34116b);
         if (findClassAcrossModuleDependencies != null) {
             if (!DescriptorUtils.isEnumClass(findClassAcrossModuleDependencies)) {
                 findClassAcrossModuleDependencies = null;
@@ -53,16 +53,16 @@ public final class EnumValue extends ConstantValue<Pair<? extends ClassId, ? ext
                 return defaultType;
             }
         }
-        return ErrorUtils.createErrorType(ErrorTypeKind.ERROR_ENUM_TYPE, this.f33894b.toString(), this.f33895c.toString());
+        return ErrorUtils.createErrorType(ErrorTypeKind.ERROR_ENUM_TYPE, this.f34116b.toString(), this.f34117c.toString());
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.constants.ConstantValue
     @NotNull
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(this.f33894b.getShortClassName());
+        sb2.append(this.f34116b.getShortClassName());
         sb2.append('.');
-        sb2.append(this.f33895c);
+        sb2.append(this.f34117c);
         return sb2.toString();
     }
 }

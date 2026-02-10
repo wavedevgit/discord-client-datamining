@@ -27,7 +27,7 @@ public abstract class s {
             textView.beginBatchEdit();
             try {
                 Selection.setSelection((Spannable) textView.getText(), offsetForPosition);
-                androidx.core.view.h0.d0(textView, new ContentInfoCompat.a(dragEvent.getClipData(), 3).a());
+                androidx.core.view.i0.a0(textView, new ContentInfoCompat.a(dragEvent.getClipData(), 3).a());
                 textView.endBatchEdit();
                 return true;
             } catch (Throwable th2) {
@@ -38,14 +38,14 @@ public abstract class s {
 
         static boolean b(@NonNull DragEvent dragEvent, @NonNull View view, @NonNull Activity activity) {
             activity.requestDragAndDropPermissions(dragEvent);
-            androidx.core.view.h0.d0(view, new ContentInfoCompat.a(dragEvent.getClipData(), 3).a());
+            androidx.core.view.i0.a0(view, new ContentInfoCompat.a(dragEvent.getClipData(), 3).a());
             return true;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean a(View view, DragEvent dragEvent) {
-        if (Build.VERSION.SDK_INT < 31 && dragEvent.getLocalState() == null && androidx.core.view.h0.C(view) != null) {
+        if (Build.VERSION.SDK_INT < 31 && dragEvent.getLocalState() == null && androidx.core.view.i0.B(view) != null) {
             Activity c10 = c(view);
             if (c10 == null) {
                 Log.i("ReceiveContent", "Can't handle drop: no activity: view=" + view);
@@ -69,7 +69,7 @@ public abstract class s {
     public static boolean b(TextView textView, int i10) {
         ClipData primaryClip;
         int i11 = 0;
-        if (Build.VERSION.SDK_INT >= 31 || androidx.core.view.h0.C(textView) == null || (i10 != 16908322 && i10 != 16908337)) {
+        if (Build.VERSION.SDK_INT >= 31 || androidx.core.view.i0.B(textView) == null || (i10 != 16908322 && i10 != 16908337)) {
             return false;
         }
         ClipboardManager clipboardManager = (ClipboardManager) textView.getContext().getSystemService("clipboard");
@@ -83,7 +83,7 @@ public abstract class s {
             if (i10 != 16908322) {
                 i11 = 1;
             }
-            androidx.core.view.h0.d0(textView, aVar.d(i11).a());
+            androidx.core.view.i0.a0(textView, aVar.d(i11).a());
         }
         return true;
     }

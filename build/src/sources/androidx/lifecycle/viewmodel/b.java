@@ -11,30 +11,30 @@ import m3.h;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ViewModelStore f4683a;
+    private final ViewModelStore f4693a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ViewModelProvider.Factory f4684b;
+    private final ViewModelProvider.Factory f4694b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final CreationExtras f4685c;
+    private final CreationExtras f4695c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final f f4686d;
+    private final f f4696d;
 
     public b(ViewModelStore store, ViewModelProvider.Factory factory, CreationExtras defaultExtras) {
         Intrinsics.checkNotNullParameter(store, "store");
         Intrinsics.checkNotNullParameter(factory, "factory");
         Intrinsics.checkNotNullParameter(defaultExtras, "defaultExtras");
-        this.f4683a = store;
-        this.f4684b = factory;
-        this.f4685c = defaultExtras;
-        this.f4686d = new f();
+        this.f4693a = store;
+        this.f4694b = factory;
+        this.f4695c = defaultExtras;
+        this.f4696d = new f();
     }
 
     public static /* synthetic */ n0 e(b bVar, KClass kClass, String str, int i10, Object obj) {
         if ((i10 & 2) != 0) {
-            str = h.f36753a.c(kClass);
+            str = h.f36128a.c(kClass);
         }
         return bVar.d(kClass, str);
     }
@@ -43,20 +43,20 @@ public final class b {
         n0 b10;
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
         Intrinsics.checkNotNullParameter(key, "key");
-        synchronized (this.f4686d) {
+        synchronized (this.f4696d) {
             try {
-                b10 = this.f4683a.b(key);
+                b10 = this.f4693a.b(key);
                 if (modelClass.isInstance(b10)) {
-                    if (this.f4684b instanceof ViewModelProvider.d) {
+                    if (this.f4694b instanceof ViewModelProvider.d) {
                         Intrinsics.checkNotNull(b10);
-                        ((ViewModelProvider.d) this.f4684b).d(b10);
+                        ((ViewModelProvider.d) this.f4694b).d(b10);
                     }
                     Intrinsics.checkNotNull(b10, "null cannot be cast to non-null type T of androidx.lifecycle.viewmodel.ViewModelProviderImpl.getViewModel");
                 } else {
-                    a aVar = new a(this.f4685c);
-                    aVar.c(ViewModelProvider.f4596c, key);
-                    b10 = l3.b.a(this.f4684b, modelClass, aVar);
-                    this.f4683a.d(key, b10);
+                    a aVar = new a(this.f4695c);
+                    aVar.c(ViewModelProvider.f4606c, key);
+                    b10 = l3.b.a(this.f4694b, modelClass, aVar);
+                    this.f4693a.d(key, b10);
                 }
             } catch (Throwable th2) {
                 throw th2;

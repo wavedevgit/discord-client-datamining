@@ -68,7 +68,7 @@ public final class WebAuthn {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit authenticateSecurityKey$lambda$3(Activity activity, PendingIntent pendingIntent) {
         activity.startIntentSenderForResult(pendingIntent.getIntentSender(), REQUEST_CODE_AUTHENTICATE_SK, null, 0, 0, 0);
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -185,8 +185,8 @@ public final class WebAuthn {
                 }
             }
             jsonReader.endObject();
-            Unit unit = Unit.f31765a;
-            cs.c.a(jsonReader, null);
+            Unit unit = Unit.f31987a;
+            ls.c.a(jsonReader, null);
             PublicKeyCredentialRequestOptions a10 = builder.a();
             Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
             return a10;
@@ -253,7 +253,7 @@ public final class WebAuthn {
                             String nextString3 = jsonReader.nextString();
                             Log log4 = Log.INSTANCE;
                             Log.w$default(log4, TAG, "parseRequestOptions: userVerification: `" + nextString3 + "`, skipping", (Throwable) null, 4, (Object) null);
-                            Unit unit = Unit.f31765a;
+                            Unit unit = Unit.f31987a;
                             continue;
                         }
                 }
@@ -261,7 +261,7 @@ public final class WebAuthn {
             Log log5 = Log.INSTANCE;
             Log.w$default(log5, TAG, "parseRequestOptions: Found unrecognized option: `" + nextName + "`, skipping", (Throwable) null, 4, (Object) null);
             jsonReader.skipValue();
-            Unit unit2 = Unit.f31765a;
+            Unit unit2 = Unit.f31987a;
         }
         jsonReader.endObject();
     }
@@ -269,7 +269,7 @@ public final class WebAuthn {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit registerSecurityKey$lambda$0(Activity activity, PendingIntent pendingIntent) {
         activity.startIntentSenderForResult(pendingIntent.getIntentSender(), 4001, null, 0, 0, 0);
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -338,11 +338,11 @@ public final class WebAuthn {
             }
             q b10 = q.b(bArr);
             Intrinsics.checkNotNullExpressionValue(b10, "deserializeFromBytes(...)");
-            if (b10.h() instanceof h) {
+            if (b10.g() instanceof h) {
                 Function1<String, Unit> function1 = this.reject;
-                i h10 = b10.h();
-                Intrinsics.checkNotNull(h10, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorErrorResponse");
-                String d10 = ((h) h10).d();
+                i g10 = b10.g();
+                Intrinsics.checkNotNull(g10, "null cannot be cast to non-null type com.google.android.gms.fido.fido2.api.common.AuthenticatorErrorResponse");
+                String d10 = ((h) g10).d();
                 if (d10 == null) {
                     d10 = "Unknown error";
                 }

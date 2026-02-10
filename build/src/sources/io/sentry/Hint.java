@@ -10,32 +10,32 @@ import java.util.Map;
 public final class Hint {
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Map f27098h;
+    private static final Map f28033h;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f27099a = new HashMap();
+    private final Map f28034a = new HashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f27100b = new ArrayList();
+    private final List f28035b = new ArrayList();
 
     /* renamed from: c  reason: collision with root package name */
-    private final io.sentry.util.a f27101c = new io.sentry.util.a();
+    private final io.sentry.util.a f28036c = new io.sentry.util.a();
 
     /* renamed from: d  reason: collision with root package name */
-    private b f27102d = null;
+    private b f28037d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private b f27103e = null;
+    private b f28038e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private b f27104f = null;
+    private b f28039f = null;
 
     /* renamed from: g  reason: collision with root package name */
-    private v3 f27105g = null;
+    private v3 f28040g = null;
 
     static {
         HashMap hashMap = new HashMap();
-        f27098h = hashMap;
+        f28033h = hashMap;
         hashMap.put(InquiryField.BooleanField.TYPE, Boolean.class);
         hashMap.put("char", Character.class);
         hashMap.put("byte", Byte.class);
@@ -47,7 +47,7 @@ public final class Hint {
     }
 
     private boolean j(Object obj, Class cls) {
-        Class cls2 = (Class) f27098h.get(cls.getCanonicalName());
+        Class cls2 = (Class) f28033h.get(cls.getCanonicalName());
         if (obj != null && cls.isPrimitive() && cls2 != null && cls2.isInstance(obj)) {
             return true;
         }
@@ -56,14 +56,14 @@ public final class Hint {
 
     public void a(List list) {
         if (list != null) {
-            this.f27100b.addAll(list);
+            this.f28035b.addAll(list);
         }
     }
 
     public void b() {
-        a1 a10 = this.f27101c.a();
+        a1 a10 = this.f28036c.a();
         try {
-            Iterator it = this.f27099a.entrySet().iterator();
+            Iterator it = this.f28034a.entrySet().iterator();
             while (it.hasNext()) {
                 Map.Entry entry = (Map.Entry) it.next();
                 if (entry.getKey() != null && ((String) entry.getKey()).startsWith("sentry:")) {
@@ -86,9 +86,9 @@ public final class Hint {
     }
 
     public Object c(String str) {
-        a1 a10 = this.f27101c.a();
+        a1 a10 = this.f28036c.a();
         try {
-            Object obj = this.f27099a.get(str);
+            Object obj = this.f28034a.get(str);
             if (a10 != null) {
                 a10.close();
             }
@@ -106,9 +106,9 @@ public final class Hint {
     }
 
     public Object d(String str, Class cls) {
-        a1 a10 = this.f27101c.a();
+        a1 a10 = this.f28036c.a();
         try {
-            Object obj = this.f27099a.get(str);
+            Object obj = this.f28034a.get(str);
             if (cls.isInstance(obj)) {
                 if (a10 != null) {
                     a10.close();
@@ -138,29 +138,29 @@ public final class Hint {
     }
 
     public List e() {
-        return new ArrayList(this.f27100b);
+        return new ArrayList(this.f28035b);
     }
 
     public v3 f() {
-        return this.f27105g;
+        return this.f28040g;
     }
 
     public b g() {
-        return this.f27102d;
+        return this.f28037d;
     }
 
     public b h() {
-        return this.f27104f;
+        return this.f28039f;
     }
 
     public b i() {
-        return this.f27103e;
+        return this.f28038e;
     }
 
     public void k(String str, Object obj) {
-        a1 a10 = this.f27101c.a();
+        a1 a10 = this.f28036c.a();
         try {
-            this.f27099a.put(str, obj);
+            this.f28034a.put(str, obj);
             if (a10 != null) {
                 a10.close();
             }
@@ -177,18 +177,18 @@ public final class Hint {
     }
 
     public void l(v3 v3Var) {
-        this.f27105g = v3Var;
+        this.f28040g = v3Var;
     }
 
     public void m(b bVar) {
-        this.f27102d = bVar;
+        this.f28037d = bVar;
     }
 
     public void n(b bVar) {
-        this.f27104f = bVar;
+        this.f28039f = bVar;
     }
 
     public void o(b bVar) {
-        this.f27103e = bVar;
+        this.f28038e = bVar;
     }
 }

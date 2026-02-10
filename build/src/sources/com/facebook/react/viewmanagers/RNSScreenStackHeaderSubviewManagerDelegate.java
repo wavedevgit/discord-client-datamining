@@ -15,10 +15,49 @@ public class RNSScreenStackHeaderSubviewManagerDelegate<T extends View, U extend
     @Override // com.facebook.react.uimanager.BaseViewManagerDelegate, com.facebook.react.uimanager.ViewManagerDelegate
     public void setProperty(T t10, String str, Object obj) {
         str.getClass();
-        if (!str.equals("type")) {
-            super.kotlinCompat$setProperty(t10, str, obj);
-        } else {
-            ((RNSScreenStackHeaderSubviewManagerInterface) this.mViewManager).setType(t10, (String) obj);
+        boolean z10 = false;
+        char c10 = 65535;
+        switch (str.hashCode()) {
+            case -2035671681:
+                if (str.equals("synchronousShadowStateUpdatesEnabled")) {
+                    c10 = 0;
+                    break;
+                }
+                break;
+            case 3575610:
+                if (str.equals("type")) {
+                    c10 = 1;
+                    break;
+                }
+                break;
+            case 144077060:
+                if (str.equals("hidesSharedBackground")) {
+                    c10 = 2;
+                    break;
+                }
+                break;
+        }
+        switch (c10) {
+            case 0:
+                RNSScreenStackHeaderSubviewManagerInterface rNSScreenStackHeaderSubviewManagerInterface = (RNSScreenStackHeaderSubviewManagerInterface) this.mViewManager;
+                if (obj != null) {
+                    z10 = ((Boolean) obj).booleanValue();
+                }
+                rNSScreenStackHeaderSubviewManagerInterface.setSynchronousShadowStateUpdatesEnabled(t10, z10);
+                return;
+            case 1:
+                ((RNSScreenStackHeaderSubviewManagerInterface) this.mViewManager).setType(t10, (String) obj);
+                return;
+            case 2:
+                RNSScreenStackHeaderSubviewManagerInterface rNSScreenStackHeaderSubviewManagerInterface2 = (RNSScreenStackHeaderSubviewManagerInterface) this.mViewManager;
+                if (obj != null) {
+                    z10 = ((Boolean) obj).booleanValue();
+                }
+                rNSScreenStackHeaderSubviewManagerInterface2.setHidesSharedBackground(t10, z10);
+                return;
+            default:
+                super.kotlinCompat$setProperty(t10, str, obj);
+                return;
         }
     }
 }

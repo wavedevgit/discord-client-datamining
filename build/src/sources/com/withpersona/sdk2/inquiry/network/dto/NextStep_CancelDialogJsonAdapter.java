@@ -48,7 +48,7 @@ public final class NextStep_CancelDialogJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
@@ -68,7 +68,7 @@ public final class NextStep_CancelDialogJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.CancelDialog cancelDialog) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (cancelDialog != null) {
-            writer.k();
+            writer.i();
             writer.J("title");
             this.nullableStringAdapter.toJson(writer, cancelDialog.getTitle());
             writer.J("prompt");

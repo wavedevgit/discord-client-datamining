@@ -1,5 +1,6 @@
 package okhttp3;
 
+import as.v;
 import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,26 +21,25 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.StringCompanionObject;
 import kotlin.jvm.internal.markers.KMappedMarker;
 import kotlin.text.StringsKt;
-import rr.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class Headers implements Iterable, KMappedMarker {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final b f42023e = new b(null);
+    public static final b f40273e = new b(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String[] f42024d;
+    private final String[] f40274d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f42025a = new ArrayList(20);
+        private final List f40275a = new ArrayList(20);
 
         public final a a(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            b bVar = Headers.f42023e;
+            b bVar = Headers.f40273e;
             bVar.e(name);
             bVar.f(value, name);
             d(name, value);
@@ -50,7 +50,7 @@ public final class Headers implements Iterable, KMappedMarker {
             Intrinsics.checkNotNullParameter(headers, "headers");
             int size = headers.size();
             for (int i10 = 0; i10 < size; i10++) {
-                d(headers.e(i10), headers.j(i10));
+                d(headers.e(i10), headers.k(i10));
             }
             return this;
         }
@@ -79,51 +79,51 @@ public final class Headers implements Iterable, KMappedMarker {
         public final a d(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            this.f42025a.add(name);
-            this.f42025a.add(StringsKt.k1(value).toString());
+            this.f40275a.add(name);
+            this.f40275a.add(StringsKt.k1(value).toString());
             return this;
         }
 
         public final a e(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            Headers.f42023e.e(name);
+            Headers.f40273e.e(name);
             d(name, value);
             return this;
         }
 
         public final Headers f() {
-            return new Headers((String[]) this.f42025a.toArray(new String[0]), null);
+            return new Headers((String[]) this.f40275a.toArray(new String[0]), null);
         }
 
         public final String g(String name) {
             Intrinsics.checkNotNullParameter(name, "name");
-            int size = this.f42025a.size() - 2;
-            int c10 = zr.c.c(size, 0, -2);
+            int size = this.f40275a.size() - 2;
+            int c10 = is.c.c(size, 0, -2);
             if (c10 <= size) {
-                while (!StringsKt.A(name, (String) this.f42025a.get(size), true)) {
+                while (!StringsKt.A(name, (String) this.f40275a.get(size), true)) {
                     if (size != c10) {
                         size -= 2;
                     } else {
                         return null;
                     }
                 }
-                return (String) this.f42025a.get(size + 1);
+                return (String) this.f40275a.get(size + 1);
             }
             return null;
         }
 
         public final List h() {
-            return this.f42025a;
+            return this.f40275a;
         }
 
         public final a i(String name) {
             Intrinsics.checkNotNullParameter(name, "name");
             int i10 = 0;
-            while (i10 < this.f42025a.size()) {
-                if (StringsKt.A(name, (String) this.f42025a.get(i10), true)) {
-                    this.f42025a.remove(i10);
-                    this.f42025a.remove(i10);
+            while (i10 < this.f40275a.size()) {
+                if (StringsKt.A(name, (String) this.f40275a.get(i10), true)) {
+                    this.f40275a.remove(i10);
+                    this.f40275a.remove(i10);
                     i10 -= 2;
                 }
                 i10 += 2;
@@ -134,7 +134,7 @@ public final class Headers implements Iterable, KMappedMarker {
         public final a j(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            b bVar = Headers.f42023e;
+            b bVar = Headers.f40273e;
             bVar.e(name);
             bVar.f(value, name);
             i(name);
@@ -156,7 +156,7 @@ public final class Headers implements Iterable, KMappedMarker {
                 for (int i10 = 0; i10 < length; i10++) {
                     char charAt = str.charAt(i10);
                     if ('!' > charAt || charAt >= 127) {
-                        throw new IllegalArgumentException(du.e.t("Unexpected char %#04x at %d in header name: %s", Integer.valueOf(charAt), Integer.valueOf(i10), str).toString());
+                        throw new IllegalArgumentException(mu.e.t("Unexpected char %#04x at %d in header name: %s", Integer.valueOf(charAt), Integer.valueOf(i10), str).toString());
                     }
                 }
                 return;
@@ -172,8 +172,8 @@ public final class Headers implements Iterable, KMappedMarker {
                 char charAt = str.charAt(i10);
                 if (charAt != '\t' && (' ' > charAt || charAt >= 127)) {
                     StringBuilder sb2 = new StringBuilder();
-                    sb2.append(du.e.t("Unexpected char %#04x at %d in %s value", Integer.valueOf(charAt), Integer.valueOf(i10), str2));
-                    if (du.e.H(str2)) {
+                    sb2.append(mu.e.t("Unexpected char %#04x at %d in %s value", Integer.valueOf(charAt), Integer.valueOf(i10), str2));
+                    if (mu.e.H(str2)) {
                         str3 = "";
                     } else {
                         str3 = ": " + str;
@@ -187,7 +187,7 @@ public final class Headers implements Iterable, KMappedMarker {
         /* JADX INFO: Access modifiers changed from: private */
         public final String g(String[] strArr, String str) {
             int length = strArr.length - 2;
-            int c10 = zr.c.c(length, 0, -2);
+            int c10 = is.c.c(length, 0, -2);
             if (c10 <= length) {
                 while (!StringsKt.A(str, strArr[length], true)) {
                     if (length != c10) {
@@ -236,7 +236,7 @@ public final class Headers implements Iterable, KMappedMarker {
                         throw new IllegalArgumentException("Headers cannot be null");
                     }
                 }
-                int c10 = zr.c.c(0, strArr.length - 1, 2);
+                int c10 = is.c.c(0, strArr.length - 1, 2);
                 if (c10 >= 0) {
                     while (true) {
                         String str2 = strArr[i10];
@@ -262,8 +262,8 @@ public final class Headers implements Iterable, KMappedMarker {
         this(strArr);
     }
 
-    public static final Headers h(String... strArr) {
-        return f42023e.i(strArr);
+    public static final Headers i(String... strArr) {
+        return f40273e.i(strArr);
     }
 
     public final int b() {
@@ -272,24 +272,24 @@ public final class Headers implements Iterable, KMappedMarker {
 
     public final String c(String name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return f42023e.g(this.f42024d, name);
+        return f40273e.g(this.f40274d, name);
     }
 
     public final Date d(String name) {
         Intrinsics.checkNotNullParameter(name, "name");
         String c10 = c(name);
         if (c10 != null) {
-            return iu.c.a(c10);
+            return ru.c.a(c10);
         }
         return null;
     }
 
     public final String e(int i10) {
-        return this.f42024d[i10 * 2];
+        return this.f40274d[i10 * 2];
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof Headers) && Arrays.equals(this.f42024d, ((Headers) obj).f42024d)) {
+        if ((obj instanceof Headers) && Arrays.equals(this.f40274d, ((Headers) obj).f40274d)) {
             return true;
         }
         return false;
@@ -308,15 +308,25 @@ public final class Headers implements Iterable, KMappedMarker {
 
     public final a g() {
         a aVar = new a();
-        CollectionsKt.D(aVar.h(), this.f42024d);
+        CollectionsKt.D(aVar.h(), this.f40274d);
         return aVar;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(this.f42024d);
+        return Arrays.hashCode(this.f40274d);
     }
 
-    public final Map i() {
+    @Override // java.lang.Iterable
+    public Iterator iterator() {
+        int size = size();
+        Pair[] pairArr = new Pair[size];
+        for (int i10 = 0; i10 < size; i10++) {
+            pairArr[i10] = v.a(e(i10), k(i10));
+        }
+        return ArrayIteratorKt.iterator(pairArr);
+    }
+
+    public final Map j() {
         TreeMap treeMap = new TreeMap(StringsKt.C(StringCompanionObject.INSTANCE));
         int size = size();
         for (int i10 = 0; i10 < size; i10++) {
@@ -330,23 +340,13 @@ public final class Headers implements Iterable, KMappedMarker {
                 list = new ArrayList(2);
                 treeMap.put(lowerCase, list);
             }
-            list.add(j(i10));
+            list.add(k(i10));
         }
         return treeMap;
     }
 
-    @Override // java.lang.Iterable
-    public Iterator iterator() {
-        int size = size();
-        Pair[] pairArr = new Pair[size];
-        for (int i10 = 0; i10 < size; i10++) {
-            pairArr[i10] = v.a(e(i10), j(i10));
-        }
-        return ArrayIteratorKt.iterator(pairArr);
-    }
-
-    public final String j(int i10) {
-        return this.f42024d[(i10 * 2) + 1];
+    public final String k(int i10) {
+        return this.f40274d[(i10 * 2) + 1];
     }
 
     public final List l(String name) {
@@ -358,7 +358,7 @@ public final class Headers implements Iterable, KMappedMarker {
                 if (arrayList == null) {
                     arrayList = new ArrayList(2);
                 }
-                arrayList.add(j(i10));
+                arrayList.add(k(i10));
             }
         }
         if (arrayList != null) {
@@ -370,7 +370,7 @@ public final class Headers implements Iterable, KMappedMarker {
     }
 
     public final int size() {
-        return this.f42024d.length / 2;
+        return this.f40274d.length / 2;
     }
 
     public String toString() {
@@ -378,13 +378,13 @@ public final class Headers implements Iterable, KMappedMarker {
         int size = size();
         for (int i10 = 0; i10 < size; i10++) {
             String e10 = e(i10);
-            String j10 = j(i10);
+            String k10 = k(i10);
             sb2.append(e10);
             sb2.append(": ");
-            if (du.e.H(e10)) {
-                j10 = "██";
+            if (mu.e.H(e10)) {
+                k10 = "██";
             }
-            sb2.append(j10);
+            sb2.append(k10);
             sb2.append(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
         }
         String sb3 = sb2.toString();
@@ -393,6 +393,6 @@ public final class Headers implements Iterable, KMappedMarker {
     }
 
     private Headers(String[] strArr) {
-        this.f42024d = strArr;
+        this.f40274d = strArr;
     }
 }

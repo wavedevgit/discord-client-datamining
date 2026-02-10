@@ -11,40 +11,40 @@ import java.util.concurrent.Callable;
 public final class ScreenshotEventProcessor implements io.sentry.b0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final SentryAndroidOptions f27202d;
+    private final SentryAndroidOptions f28137d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final x0 f27203e;
+    private final x0 f28138e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final io.sentry.android.core.internal.util.n f27204i = new io.sentry.android.core.internal.util.n(io.sentry.android.core.internal.util.f.b(), 2000, 3);
+    private final io.sentry.android.core.internal.util.n f28139i = new io.sentry.android.core.internal.util.n(io.sentry.android.core.internal.util.f.b(), 2000, 3);
 
     public ScreenshotEventProcessor(SentryAndroidOptions sentryAndroidOptions, x0 x0Var) {
-        this.f27202d = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
-        this.f27203e = (x0) io.sentry.util.y.c(x0Var, "BuildInfoProvider is required");
+        this.f28137d = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
+        this.f28138e = (x0) io.sentry.util.y.c(x0Var, "BuildInfoProvider is required");
         if (sentryAndroidOptions.isAttachScreenshot()) {
             io.sentry.util.p.a("Screenshot");
         }
     }
 
     @Override // io.sentry.b0
-    public SentryEvent g(SentryEvent sentryEvent, Hint hint) {
+    public SentryEvent h(SentryEvent sentryEvent, Hint hint) {
         final Bitmap c10;
         if (sentryEvent.B0()) {
-            if (!this.f27202d.isAttachScreenshot()) {
-                this.f27202d.getLogger().c(SentryLevel.DEBUG, "attachScreenshot is disabled.", new Object[0]);
+            if (!this.f28137d.isAttachScreenshot()) {
+                this.f28137d.getLogger().c(SentryLevel.DEBUG, "attachScreenshot is disabled.", new Object[0]);
                 return sentryEvent;
             }
             Activity b10 = f1.c().b();
             if (b10 != null && !io.sentry.util.n.i(hint)) {
-                boolean a10 = this.f27204i.a();
-                this.f27202d.getBeforeScreenshotCaptureCallback();
-                if (!a10 && (c10 = io.sentry.android.core.internal.util.w.c(b10, this.f27202d.getThreadChecker(), this.f27202d.getLogger(), this.f27203e)) != null) {
+                boolean a10 = this.f28139i.a();
+                this.f28137d.getBeforeScreenshotCaptureCallback();
+                if (!a10 && (c10 = io.sentry.android.core.internal.util.w.c(b10, this.f28137d.getThreadChecker(), this.f28137d.getLogger(), this.f28138e)) != null) {
                     hint.m(io.sentry.b.a(new Callable() { // from class: io.sentry.android.core.f2
                         @Override // java.util.concurrent.Callable
                         public final Object call() {
                             byte[] d10;
-                            d10 = io.sentry.android.core.internal.util.w.d(c10, ScreenshotEventProcessor.this.f27202d.getLogger());
+                            d10 = io.sentry.android.core.internal.util.w.d(c10, ScreenshotEventProcessor.this.f28137d.getLogger());
                             return d10;
                         }
                     }, "screenshot.png", ClipboardModule.MIMETYPE_PNG, false));
@@ -56,7 +56,7 @@ public final class ScreenshotEventProcessor implements io.sentry.b0 {
     }
 
     @Override // io.sentry.b0
-    public io.sentry.protocol.d0 k(io.sentry.protocol.d0 d0Var, Hint hint) {
+    public io.sentry.protocol.d0 i(io.sentry.protocol.d0 d0Var, Hint hint) {
         return d0Var;
     }
 }

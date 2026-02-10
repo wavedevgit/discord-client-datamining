@@ -3,7 +3,7 @@ package qg;
 public final class ce {
 
     /* renamed from: a  reason: collision with root package name */
-    private static ce f45575a;
+    private static ce f44243a;
 
     private ce() {
     }
@@ -12,10 +12,10 @@ public final class ce {
         ce ceVar;
         synchronized (ce.class) {
             try {
-                if (f45575a == null) {
-                    f45575a = new ce();
+                if (f44243a == null) {
+                    f44243a = new ce();
                 }
-                ceVar = f45575a;
+                ceVar = f44243a;
             } catch (Throwable th2) {
                 throw th2;
             }

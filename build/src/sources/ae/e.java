@@ -4,7 +4,7 @@ import java.nio.ByteBuffer;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.List;
-import oi.s;
+import qi.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class e implements h {
 
@@ -132,7 +132,7 @@ public final class e implements h {
                 lVar.g(4);
             } else {
                 k kVar = this.f739b;
-                lVar.u(this.f739b.f47777p, new b(kVar.f47777p, this.f738a.a(((ByteBuffer) oe.a.e(kVar.f47775i)).array())), 0L);
+                lVar.u(this.f739b.f46231p, new b(kVar.f46231p, this.f738a.a(((ByteBuffer) oe.a.e(kVar.f46229i)).array())), 0L);
             }
             this.f739b.h();
             this.f741d = 0;

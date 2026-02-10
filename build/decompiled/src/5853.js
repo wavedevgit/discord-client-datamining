@@ -1,45 +1,33 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0, arg1() {
-        _fun51711: for (var _fun51711_ip = 0;;) switch (_fun51711_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = arg1;
-                var2 = var1.headerTitle;
-                var3 = 'string';
-                var2 = typeof var2;
-                if (!(var3 !== var2)) {
-                    _fun51711_ip = 41;
-                    continue _fun51711
+    _fun51746: for (var _fun51746_ip = 0;;) switch (_fun51746_ip) {
+        case 0:
+            var9 = require;
+            var8 = exports;
+            var7 = dependencyMap;
+            var0 = global;
+            var10 = var0.Object;
+            var2 = var10.defineProperty;
+            var1 = {};
+            var0 = true;
+            var1.value = var0;
+            var0 = '__esModule';
+            var0 = var2.bind(var10)(var8, var0, var1);
+            var2 = 0;
+            var1 = var7[var2];
+            var0 = undefined;
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 62: {
+                    case 71: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun51746_ip = 62;
+                    continue _fun51746;
                 }
-            case 23:
-                var3 = var1.title;
-                var2 = undefined;
-                if (!(var2 !== var3)) {
-                    _fun51711_ip = 39;
-                    continue _fun51711
-                }
-            case 34:
-                var0 = var1.title;
-            case 39:
-                _fun51711_ip = 47;
-                continue _fun51711;
-            case 41:
-                var0 = var1.headerTitle;
-            case 47:
-                return var0;
-        }
-    };
-    var1.default = var0;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+        case 93:
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5854]);

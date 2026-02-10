@@ -5,23 +5,23 @@ import ff.a;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final ff.a f52327a;
+    public static final ff.a f51569a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final ye.a f52328b;
+    public static final ye.a f51570b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a.g f52329c;
+    public static final a.g f51571c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final a.AbstractC0331a f52330d;
+    private static final a.AbstractC0316a f51572d;
 
     static {
         a.g gVar = new a.g();
-        f52329c = gVar;
+        f51571c = gVar;
         h hVar = new h();
-        f52330d = hVar;
-        f52327a = new ff.a("Auth.PROXY_API", hVar, gVar);
-        f52328b = new cg.d();
+        f51572d = hVar;
+        f51569a = new ff.a("Auth.PROXY_API", hVar, gVar);
+        f51570b = new cg.d();
     }
 }

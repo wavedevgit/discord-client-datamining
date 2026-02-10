@@ -5,10 +5,10 @@ import javax.inject.Provider;
 public final class g implements cc.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Provider f24126a;
+    private final Provider f25426a;
 
     public g(Provider provider) {
-        this.f24126a = provider;
+        this.f25426a = provider;
     }
 
     public static hc.f a(kc.a aVar) {
@@ -22,6 +22,6 @@ public final class g implements cc.b {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public hc.f get() {
-        return a((kc.a) this.f24126a.get());
+        return a((kc.a) this.f25426a.get());
     }
 }

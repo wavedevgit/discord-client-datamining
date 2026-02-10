@@ -3,5 +3,5 @@ package x3;
 public interface j {
     String a();
 
-    void g(i iVar);
+    void h(i iVar);
 }

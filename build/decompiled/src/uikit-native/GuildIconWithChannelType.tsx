@@ -225,4 +225,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GuildIconWithChannelType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7440, 1297, 671, 4809, 7852, 5510, 4086, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7450, 1297, 671, 4819, 7862, 5520, 4096, 2]);

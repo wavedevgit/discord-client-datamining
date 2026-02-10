@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.name.FqName;
 public class a implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AbstractDeserializedPackageFragmentProvider f34120d;
+    private final AbstractDeserializedPackageFragmentProvider f34342d;
 
     public a(AbstractDeserializedPackageFragmentProvider abstractDeserializedPackageFragmentProvider) {
-        this.f34120d = abstractDeserializedPackageFragmentProvider;
+        this.f34342d = abstractDeserializedPackageFragmentProvider;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         PackageFragmentDescriptor c10;
-        c10 = AbstractDeserializedPackageFragmentProvider.c(this.f34120d, (FqName) obj);
+        c10 = AbstractDeserializedPackageFragmentProvider.c(this.f34342d, (FqName) obj);
         return c10;
     }
 }

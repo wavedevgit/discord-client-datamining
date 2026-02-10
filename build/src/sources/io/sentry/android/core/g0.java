@@ -142,7 +142,7 @@ public abstract class g0 {
             }
         }), rVar));
         sentryAndroidOptions.addIntegration(new NdkIntegration(uVar.g("io.sentry.android.ndk.SentryNdk", sentryAndroidOptions.getLogger())));
-        sentryAndroidOptions.addIntegration(EnvelopeFileObserverIntegration.k());
+        sentryAndroidOptions.addIntegration(EnvelopeFileObserverIntegration.i());
         sentryAndroidOptions.addIntegration(new SendCachedEnvelopeIntegration(new t4(new p4() { // from class: io.sentry.android.core.e0
             @Override // io.sentry.p4
             public final String a() {
@@ -198,8 +198,8 @@ public abstract class g0 {
         sentryAndroidOptions.setFlushTimeoutMillis(4000L);
         sentryAndroidOptions.setFrameMetricsCollector(new io.sentry.android.core.internal.util.c0(g10, iLogger, x0Var));
         b2.a(g10, sentryAndroidOptions, x0Var);
-        sentryAndroidOptions.setCacheDirPath((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0434a() { // from class: io.sentry.android.core.b0
-            @Override // io.sentry.util.runtime.a.InterfaceC0434a
+        sentryAndroidOptions.setCacheDirPath((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0409a() { // from class: io.sentry.android.core.b0
+            @Override // io.sentry.util.runtime.a.InterfaceC0409a
             public final Object run() {
                 String absolutePath;
                 absolutePath = g0.f(g10).getAbsolutePath();
@@ -223,8 +223,8 @@ public abstract class g0 {
         }
         if (sentryAndroidOptions.getDistinctId() == null) {
             try {
-                sentryAndroidOptions.setDistinctId((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0434a() { // from class: io.sentry.android.core.f0
-                    @Override // io.sentry.util.runtime.a.InterfaceC0434a
+                sentryAndroidOptions.setDistinctId((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0409a() { // from class: io.sentry.android.core.f0
+                    @Override // io.sentry.util.runtime.a.InterfaceC0409a
                     public final Object run() {
                         String a10;
                         a10 = r1.a(context);
@@ -246,7 +246,7 @@ public abstract class g0 {
             if (l0Var != null) {
                 sentryAndroidOptions.setContinuousProfiler(l0Var);
                 io.sentry.protocol.x f10 = l0Var.f();
-                if (l0Var.isRunning() && !f10.equals(io.sentry.protocol.x.f28863e)) {
+                if (l0Var.isRunning() && !f10.equals(io.sentry.protocol.x.f29798e)) {
                     hVar.f(f10.toString());
                     return;
                 }

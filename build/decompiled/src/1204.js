@@ -1163,7 +1163,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var3 = var1.filename;
                                         var2 = 'Failed to read image data from:';
                                         var2 = var4.bind(var5)(var2, var3);
-                                        _fun13120_ip = 195;
+                                        _fun13120_ip = 196;
                                         continue _fun13120;
                                     case 76:
                                         var4 = _closure1_slot0;
@@ -1253,7 +1253,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             return var0;
                                         };
                                         var0 = var1.bind(var2)(var0);
-                                    case 195:
+                                    case 196:
                                         var0 = undefined;
                                         return var0;
                                 }

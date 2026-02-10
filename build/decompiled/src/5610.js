@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var6)(var2, var0, var1);
     var1 = {};
-    var6 = 'RNSVGSymbol';
+    var6 = 'RNSVGPattern';
     var1.uiViewClassName = var6;
     var4 = {
         'name': true,
@@ -45,6 +45,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'fontSize': true,
         'fontWeight': true,
         'font': true,
+        'x': true,
+        'y': true,
+        'height': true,
+        'width': true,
+        'patternUnits': true,
+        'patternContentUnits': true,
+        'patternTransform': true,
         'minX': true,
         'minY': true,
         'vbWidth': true,

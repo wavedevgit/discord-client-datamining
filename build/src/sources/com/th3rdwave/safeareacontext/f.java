@@ -11,32 +11,32 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f extends ReactViewGroup implements ViewTreeObserver.OnPreDrawListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private Function3 f18566d;
+    private Function3 f19446d;
 
     /* renamed from: e  reason: collision with root package name */
-    private a f18567e;
+    private a f19447e;
 
     /* renamed from: i  reason: collision with root package name */
-    private c f18568i;
+    private c f19448i;
 
     public f(Context context) {
         super(context);
     }
 
-    private final void c() {
+    private final void d() {
         a e10;
-        Function3 function3 = this.f18566d;
+        Function3 function3 = this.f19446d;
         if (function3 != null && (e10 = h.e(this)) != null) {
             View rootView = getRootView();
             Intrinsics.checkNotNull(rootView, "null cannot be cast to non-null type android.view.ViewGroup");
             c a10 = h.a((ViewGroup) rootView, this);
             if (a10 != null) {
-                if (Intrinsics.areEqual(this.f18567e, e10) && Intrinsics.areEqual(this.f18568i, a10)) {
+                if (Intrinsics.areEqual(this.f19447e, e10) && Intrinsics.areEqual(this.f19448i, a10)) {
                     return;
                 }
                 function3.invoke(this, e10, a10);
-                this.f18567e = e10;
-                this.f18568i = a10;
+                this.f19447e = e10;
+                this.f19448i = a10;
             }
         }
     }
@@ -46,7 +46,7 @@ public final class f extends ReactViewGroup implements ViewTreeObserver.OnPreDra
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
         getViewTreeObserver().addOnPreDrawListener(this);
-        c();
+        d();
     }
 
     @Override // android.view.ViewGroup, android.view.View
@@ -57,12 +57,12 @@ public final class f extends ReactViewGroup implements ViewTreeObserver.OnPreDra
 
     @Override // android.view.ViewTreeObserver.OnPreDrawListener
     public boolean onPreDraw() {
-        c();
+        d();
         return true;
     }
 
     public final void setOnInsetsChangeHandler(Function3 function3) {
-        this.f18566d = function3;
-        c();
+        this.f19446d = function3;
+        d();
     }
 }

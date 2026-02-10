@@ -15,7 +15,7 @@ import uc.z;
 public final class e implements uc.m, g {
 
     /* renamed from: u  reason: collision with root package name */
-    public static final g.a f50756u = new g.a() { // from class: td.d
+    public static final g.a f48688u = new g.a() { // from class: td.d
         @Override // td.g.a
         public final g a(int i10, Format format, boolean z10, List list, b0 b0Var, t1 t1Var) {
             return e.f(i10, format, z10, list, b0Var, t1Var);
@@ -23,103 +23,103 @@ public final class e implements uc.m, g {
     };
 
     /* renamed from: v  reason: collision with root package name */
-    private static final y f50757v = new y();
+    private static final y f48689v = new y();
 
     /* renamed from: d  reason: collision with root package name */
-    private final uc.k f50758d;
+    private final uc.k f48690d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f50759e;
+    private final int f48691e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Format f50760i;
+    private final Format f48692i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final SparseArray f50761o = new SparseArray();
+    private final SparseArray f48693o = new SparseArray();
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f50762p;
+    private boolean f48694p;
 
     /* renamed from: q  reason: collision with root package name */
-    private g.b f50763q;
+    private g.b f48695q;
 
     /* renamed from: r  reason: collision with root package name */
-    private long f50764r;
+    private long f48696r;
 
     /* renamed from: s  reason: collision with root package name */
-    private z f50765s;
+    private z f48697s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Format[] f50766t;
+    private Format[] f48698t;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class a implements b0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f50767a;
+        private final int f48699a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f50768b;
+        private final int f48700b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Format f50769c;
+        private final Format f48701c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final uc.j f50770d = new uc.j();
+        private final uc.j f48702d = new uc.j();
 
         /* renamed from: e  reason: collision with root package name */
-        public Format f50771e;
+        public Format f48703e;
 
         /* renamed from: f  reason: collision with root package name */
-        private b0 f50772f;
+        private b0 f48704f;
 
         /* renamed from: g  reason: collision with root package name */
-        private long f50773g;
+        private long f48705g;
 
         public a(int i10, int i11, Format format) {
-            this.f50767a = i10;
-            this.f50768b = i11;
-            this.f50769c = format;
+            this.f48699a = i10;
+            this.f48700b = i11;
+            this.f48701c = format;
         }
 
         @Override // uc.b0
         public void a(long j10, int i10, int i11, int i12, b0.a aVar) {
-            long j11 = this.f50773g;
+            long j11 = this.f48705g;
             if (j11 != -9223372036854775807L && j10 >= j11) {
-                this.f50772f = this.f50770d;
+                this.f48704f = this.f48702d;
             }
-            ((b0) w0.j(this.f50772f)).a(j10, i10, i11, i12, aVar);
+            ((b0) w0.j(this.f48704f)).a(j10, i10, i11, i12, aVar);
         }
 
         @Override // uc.b0
         public int b(me.j jVar, int i10, boolean z10, int i11) {
-            return ((b0) w0.j(this.f50772f)).f(jVar, i10, z10);
+            return ((b0) w0.j(this.f48704f)).f(jVar, i10, z10);
         }
 
         @Override // uc.b0
         public void c(Format format) {
-            Format format2 = this.f50769c;
+            Format format2 = this.f48701c;
             if (format2 != null) {
                 format = format.j(format2);
             }
-            this.f50771e = format;
-            ((b0) w0.j(this.f50772f)).c(this.f50771e);
+            this.f48703e = format;
+            ((b0) w0.j(this.f48704f)).c(this.f48703e);
         }
 
         @Override // uc.b0
         public void d(h0 h0Var, int i10, int i11) {
-            ((b0) w0.j(this.f50772f)).e(h0Var, i10);
+            ((b0) w0.j(this.f48704f)).e(h0Var, i10);
         }
 
         public void g(g.b bVar, long j10) {
             if (bVar == null) {
-                this.f50772f = this.f50770d;
+                this.f48704f = this.f48702d;
                 return;
             }
-            this.f50773g = j10;
-            b0 c10 = bVar.c(this.f50767a, this.f50768b);
-            this.f50772f = c10;
-            Format format = this.f50771e;
+            this.f48705g = j10;
+            b0 c10 = bVar.c(this.f48699a, this.f48700b);
+            this.f48704f = c10;
+            Format format = this.f48703e;
             if (format != null) {
                 c10.c(format);
             }
@@ -127,15 +127,15 @@ public final class e implements uc.m, g {
     }
 
     public e(uc.k kVar, int i10, Format format) {
-        this.f50758d = kVar;
-        this.f50759e = i10;
-        this.f50760i = format;
+        this.f48690d = kVar;
+        this.f48691e = i10;
+        this.f48692i = format;
     }
 
     public static /* synthetic */ g f(int i10, Format format, boolean z10, List list, b0 b0Var, t1 t1Var) {
         int i11;
         uc.k gVar;
-        String str = format.f11726v;
+        String str = format.f12303v;
         if (c0.r(str)) {
             return null;
         }
@@ -155,7 +155,7 @@ public final class e implements uc.m, g {
     @Override // td.g
     public boolean a(uc.l lVar) {
         boolean z10;
-        int h10 = this.f50758d.h(lVar, f50757v);
+        int h10 = this.f48690d.h(lVar, f48689v);
         if (h10 != 1) {
             z10 = true;
         } else {
@@ -170,23 +170,23 @@ public final class e implements uc.m, g {
 
     @Override // td.g
     public void b(g.b bVar, long j10, long j11) {
-        this.f50763q = bVar;
-        this.f50764r = j11;
-        if (!this.f50762p) {
-            this.f50758d.c(this);
+        this.f48695q = bVar;
+        this.f48696r = j11;
+        if (!this.f48694p) {
+            this.f48690d.c(this);
             if (j10 != -9223372036854775807L) {
-                this.f50758d.a(0L, j10);
+                this.f48690d.a(0L, j10);
             }
-            this.f50762p = true;
+            this.f48694p = true;
             return;
         }
-        uc.k kVar = this.f50758d;
+        uc.k kVar = this.f48690d;
         if (j10 == -9223372036854775807L) {
             j10 = 0;
         }
         kVar.a(0L, j10);
-        for (int i10 = 0; i10 < this.f50761o.size(); i10++) {
-            ((a) this.f50761o.valueAt(i10)).g(bVar, j11);
+        for (int i10 = 0; i10 < this.f48693o.size(); i10++) {
+            ((a) this.f48693o.valueAt(i10)).g(bVar, j11);
         }
     }
 
@@ -194,29 +194,29 @@ public final class e implements uc.m, g {
     public b0 c(int i10, int i11) {
         boolean z10;
         Format format;
-        a aVar = (a) this.f50761o.get(i10);
+        a aVar = (a) this.f48693o.get(i10);
         if (aVar == null) {
-            if (this.f50766t == null) {
+            if (this.f48698t == null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             oe.a.g(z10);
-            if (i11 == this.f50759e) {
-                format = this.f50760i;
+            if (i11 == this.f48691e) {
+                format = this.f48692i;
             } else {
                 format = null;
             }
             aVar = new a(i10, i11, format);
-            aVar.g(this.f50763q, this.f50764r);
-            this.f50761o.put(i10, aVar);
+            aVar.g(this.f48695q, this.f48696r);
+            this.f48693o.put(i10, aVar);
         }
         return aVar;
     }
 
     @Override // td.g
     public uc.c d() {
-        z zVar = this.f50765s;
+        z zVar = this.f48697s;
         if (zVar instanceof uc.c) {
             return (uc.c) zVar;
         }
@@ -225,25 +225,25 @@ public final class e implements uc.m, g {
 
     @Override // td.g
     public Format[] e() {
-        return this.f50766t;
+        return this.f48698t;
     }
 
     @Override // uc.m
     public void j(z zVar) {
-        this.f50765s = zVar;
+        this.f48697s = zVar;
     }
 
     @Override // uc.m
     public void q() {
-        Format[] formatArr = new Format[this.f50761o.size()];
-        for (int i10 = 0; i10 < this.f50761o.size(); i10++) {
-            formatArr[i10] = (Format) oe.a.i(((a) this.f50761o.valueAt(i10)).f50771e);
+        Format[] formatArr = new Format[this.f48693o.size()];
+        for (int i10 = 0; i10 < this.f48693o.size(); i10++) {
+            formatArr[i10] = (Format) oe.a.i(((a) this.f48693o.valueAt(i10)).f48703e);
         }
-        this.f50766t = formatArr;
+        this.f48698t = formatArr;
     }
 
     @Override // td.g
     public void release() {
-        this.f50758d.release();
+        this.f48690d.release();
     }
 }

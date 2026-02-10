@@ -6,21 +6,21 @@ import k4.q;
 public class q implements k4.q {
 
     /* renamed from: c  reason: collision with root package name */
-    private final MutableLiveData f5817c = new MutableLiveData();
+    private final MutableLiveData f5827c = new MutableLiveData();
 
     /* renamed from: d  reason: collision with root package name */
-    private final androidx.work.impl.utils.futures.c f5818d = androidx.work.impl.utils.futures.c.t();
+    private final androidx.work.impl.utils.futures.c f5828d = androidx.work.impl.utils.futures.c.t();
 
     public q() {
-        a(k4.q.f30669b);
+        a(k4.q.f31527b);
     }
 
     public void a(q.b bVar) {
-        this.f5817c.m(bVar);
+        this.f5827c.m(bVar);
         if (bVar instanceof q.b.c) {
-            this.f5818d.p((q.b.c) bVar);
+            this.f5828d.p((q.b.c) bVar);
         } else if (bVar instanceof q.b.a) {
-            this.f5818d.q(((q.b.a) bVar).a());
+            this.f5828d.q(((q.b.a) bVar).a());
         }
     }
 }

@@ -22,14 +22,14 @@ abstract class i {
     static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f20537a;
+        private final String f21484a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final u f20538b;
+        private final u f21485b;
 
         private b(String str, u uVar) {
-            this.f20537a = str;
-            this.f20538b = uVar;
+            this.f21484a = str;
+            this.f21485b = uVar;
         }
     }
 
@@ -38,10 +38,10 @@ abstract class i {
         r retryPolicy = nVar.getRetryPolicy();
         int timeoutMs = nVar.getTimeoutMs();
         try {
-            retryPolicy.b(bVar.f20538b);
-            nVar.addMarker(String.format("%s-retry [timeout=%s]", bVar.f20537a, Integer.valueOf(timeoutMs)));
+            retryPolicy.b(bVar.f21485b);
+            nVar.addMarker(String.format("%s-retry [timeout=%s]", bVar.f21484a, Integer.valueOf(timeoutMs)));
         } catch (u e10) {
-            nVar.addMarker(String.format("%s-timeout-giveup [timeout=%s]", bVar.f20537a, Integer.valueOf(timeoutMs)));
+            nVar.addMarker(String.format("%s-timeout-giveup [timeout=%s]", bVar.f21484a, Integer.valueOf(timeoutMs)));
             throw e10;
         }
     }
@@ -52,7 +52,7 @@ abstract class i {
         if (cacheEntry == null) {
             return new com.android.volley.k(304, (byte[]) null, true, j10, list);
         }
-        return new com.android.volley.k(304, cacheEntry.f8179a, true, j10, e.a(list, cacheEntry));
+        return new com.android.volley.k(304, cacheEntry.f8756a, true, j10, e.a(list, cacheEntry));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -100,7 +100,7 @@ abstract class i {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void d(long j10, n nVar, byte[] bArr, int i10) {
         Object obj;
-        if (!v.f8245b && j10 <= 3000) {
+        if (!v.f8822b && j10 <= 3000) {
             return;
         }
         Long valueOf = Long.valueOf(j10);

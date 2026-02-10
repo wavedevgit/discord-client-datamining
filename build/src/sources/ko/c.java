@@ -1,41 +1,29 @@
 package ko;
 
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import android.content.Context;
+import lr.d;
+import lr.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c {
+public final class c implements d {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final c f30994d = new c("IdTypeRejected", 0);
+    /* renamed from: a  reason: collision with root package name */
+    private final h f31981a;
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final c f30995e = new c("UnableToClassify", 1);
-
-    /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ c[] f30996i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f30997o;
-
-    static {
-        c[] a10 = a();
-        f30996i = a10;
-        f30997o = yr.a.a(a10);
+    public c(h hVar) {
+        this.f31981a = hVar;
     }
 
-    private c(String str, int i10) {
+    public static c a(h hVar) {
+        return new c(hVar);
     }
 
-    private static final /* synthetic */ c[] a() {
-        return new c[]{f30994d, f30995e};
+    public static b c(Context context) {
+        return new b(context);
     }
 
-    public static c valueOf(String str) {
-        return (c) Enum.valueOf(c.class, str);
-    }
-
-    public static c[] values() {
-        return (c[]) f30996i.clone();
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public b get() {
+        return c((Context) this.f31981a.get());
     }
 }

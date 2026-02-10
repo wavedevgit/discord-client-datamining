@@ -57,8 +57,8 @@ public final class PackagerStatusCheck {
     public final void run(@NotNull String host, @NotNull final PackagerStatusCallback callback) {
         Intrinsics.checkNotNullParameter(host, "host");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        this.client.a(new Request.Builder().l(Companion.createPackagerStatusURL(host)).b()).J0(new cu.b() { // from class: com.facebook.react.devsupport.PackagerStatusCheck$run$1
-            @Override // cu.b
+        this.client.a(new Request.Builder().l(Companion.createPackagerStatusURL(host)).b()).b1(new lu.b() { // from class: com.facebook.react.devsupport.PackagerStatusCheck$run$1
+            @Override // lu.b
             public void onFailure(Call call, IOException e10) {
                 Intrinsics.checkNotNullParameter(call, "call");
                 Intrinsics.checkNotNullParameter(e10, "e");
@@ -67,13 +67,13 @@ public final class PackagerStatusCheck {
                 PackagerStatusCallback.this.onPackagerStatusFetched(false);
             }
 
-            @Override // cu.b
+            @Override // lu.b
             public void onResponse(Call call, Response response) {
                 Intrinsics.checkNotNullParameter(call, "call");
                 Intrinsics.checkNotNullParameter(response, "response");
                 if (!response.isSuccessful()) {
-                    int g10 = response.g();
-                    q8.a.m(ReactConstants.TAG, "Got non-success http code from packager when requesting status: " + g10);
+                    int h10 = response.h();
+                    q8.a.m(ReactConstants.TAG, "Got non-success http code from packager when requesting status: " + h10);
                     PackagerStatusCallback.this.onPackagerStatusFetched(false);
                     return;
                 }

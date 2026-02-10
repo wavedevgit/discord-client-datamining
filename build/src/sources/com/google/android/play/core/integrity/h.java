@@ -4,58 +4,58 @@ import android.os.Parcelable;
 import android.os.RemoteException;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class h extends li.u0 {
+public final class h extends ni.u0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ byte[] f16294e;
+    final /* synthetic */ byte[] f17043e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ Long f16295i;
+    final /* synthetic */ Long f17044i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ Parcelable f16296o;
+    final /* synthetic */ Parcelable f17045o;
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ zg.k f16297p;
+    final /* synthetic */ zg.k f17046p;
 
     /* renamed from: q  reason: collision with root package name */
-    final /* synthetic */ IntegrityTokenRequest f16298q;
+    final /* synthetic */ IntegrityTokenRequest f17047q;
 
     /* renamed from: r  reason: collision with root package name */
-    final /* synthetic */ k f16299r;
+    final /* synthetic */ k f17048r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public h(k kVar, zg.k kVar2, byte[] bArr, Long l10, Parcelable parcelable, zg.k kVar3, IntegrityTokenRequest integrityTokenRequest) {
         super(kVar2);
-        this.f16294e = bArr;
-        this.f16295i = l10;
-        this.f16296o = parcelable;
-        this.f16297p = kVar3;
-        this.f16298q = integrityTokenRequest;
-        this.f16299r = kVar;
+        this.f17043e = bArr;
+        this.f17044i = l10;
+        this.f17045o = parcelable;
+        this.f17046p = kVar3;
+        this.f17047q = integrityTokenRequest;
+        this.f17048r = kVar;
     }
 
-    @Override // li.u0
+    @Override // ni.u0
     public final void a(Exception exc) {
-        if (exc instanceof li.g) {
+        if (exc instanceof ni.g) {
             super.a(new a(-9, exc));
         } else {
             super.a(exc);
         }
     }
 
-    @Override // li.u0
+    @Override // ni.u0
     protected final void b() {
-        li.t0 t0Var;
+        ni.t0 t0Var;
         try {
-            ((li.q0) this.f16299r.f16323f.e()).K(k.a(this.f16299r, this.f16294e, this.f16295i, this.f16296o), new j(this.f16299r, this.f16297p));
+            ((ni.q0) this.f17048r.f17072f.e()).w0(k.a(this.f17048r, this.f17043e, this.f17044i, this.f17045o), new j(this.f17048r, this.f17046p));
         } catch (RemoteException e10) {
-            k kVar = this.f16299r;
-            IntegrityTokenRequest integrityTokenRequest = this.f16298q;
-            t0Var = kVar.f16318a;
+            k kVar = this.f17048r;
+            IntegrityTokenRequest integrityTokenRequest = this.f17047q;
+            t0Var = kVar.f17067a;
             t0Var.b(e10, "requestIntegrityToken(%s)", integrityTokenRequest);
-            this.f16297p.d(new a(-100, e10));
+            this.f17046p.d(new a(-100, e10));
         }
     }
 }

@@ -1,17 +1,55 @@
 package ls;
 
-import java.util.concurrent.ConcurrentHashMap;
-import kotlin.jvm.functions.Function1;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class g implements Function1 {
+import java.io.File;
+import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class g {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final g f36434d = new g();
+    /* renamed from: a  reason: collision with root package name */
+    private final File f36009a;
 
-    @Override // kotlin.jvm.functions.Function1
-    public Object invoke(Object obj) {
-        ConcurrentHashMap b10;
-        b10 = h.b((Class) obj);
-        return b10;
+    /* renamed from: b  reason: collision with root package name */
+    private final List f36010b;
+
+    public g(File root, List segments) {
+        Intrinsics.checkNotNullParameter(root, "root");
+        Intrinsics.checkNotNullParameter(segments, "segments");
+        this.f36009a = root;
+        this.f36010b = segments;
+    }
+
+    public final File a() {
+        return this.f36009a;
+    }
+
+    public final List b() {
+        return this.f36010b;
+    }
+
+    public final int c() {
+        return this.f36010b.size();
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof g)) {
+            return false;
+        }
+        g gVar = (g) obj;
+        if (Intrinsics.areEqual(this.f36009a, gVar.f36009a) && Intrinsics.areEqual(this.f36010b, gVar.f36010b)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return (this.f36009a.hashCode() * 31) + this.f36010b.hashCode();
+    }
+
+    public String toString() {
+        return "FilePathComponents(root=" + this.f36009a + ", segments=" + this.f36010b + ')';
     }
 }

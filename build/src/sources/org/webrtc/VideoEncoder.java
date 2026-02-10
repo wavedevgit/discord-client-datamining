@@ -216,16 +216,16 @@ public interface VideoEncoder {
         public final Integer low;
 
         /* renamed from: on  reason: collision with root package name */
-        public final boolean f42644on;
+        public final boolean f41110on;
 
         public ScalingSettings(int i10, int i11) {
-            this.f42644on = true;
+            this.f41110on = true;
             this.low = Integer.valueOf(i10);
             this.high = Integer.valueOf(i11);
         }
 
         public String toString() {
-            if (this.f42644on) {
+            if (this.f41110on) {
                 Integer num = this.low;
                 Integer num2 = this.high;
                 return "[ " + num + ", " + num2 + " ]";
@@ -234,21 +234,21 @@ public interface VideoEncoder {
         }
 
         private ScalingSettings() {
-            this.f42644on = false;
+            this.f41110on = false;
             this.low = null;
             this.high = null;
         }
 
         @Deprecated
         public ScalingSettings(boolean z10) {
-            this.f42644on = z10;
+            this.f41110on = z10;
             this.low = null;
             this.high = null;
         }
 
         @Deprecated
         public ScalingSettings(boolean z10, int i10, int i11) {
-            this.f42644on = z10;
+            this.f41110on = z10;
             this.low = Integer.valueOf(i10);
             this.high = Integer.valueOf(i11);
         }

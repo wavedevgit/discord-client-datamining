@@ -9,10 +9,10 @@ import androidx.recyclerview.widget.RecyclerView;
 public class o extends r {
 
     /* renamed from: d  reason: collision with root package name */
-    private OrientationHelper f5182d;
+    private OrientationHelper f5192d;
 
     /* renamed from: e  reason: collision with root package name */
-    private OrientationHelper f5183e;
+    private OrientationHelper f5193e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends l {
@@ -35,7 +35,7 @@ public class o extends r {
         @Override // androidx.recyclerview.widget.l, androidx.recyclerview.widget.RecyclerView.SmoothScroller
         public void onTargetFound(View view, RecyclerView.State state, RecyclerView.SmoothScroller.Action action) {
             o oVar = o.this;
-            int[] b10 = oVar.b(oVar.f5185a.getLayoutManager(), view);
+            int[] b10 = oVar.b(oVar.f5195a.getLayoutManager(), view);
             int i10 = b10[0];
             int i11 = b10[1];
             int calculateTimeForDeceleration = calculateTimeForDeceleration(Math.max(Math.abs(i10), Math.abs(i11)));
@@ -69,11 +69,11 @@ public class o extends r {
     }
 
     private OrientationHelper l(RecyclerView.LayoutManager layoutManager) {
-        OrientationHelper orientationHelper = this.f5183e;
-        if (orientationHelper == null || orientationHelper.f4942a != layoutManager) {
-            this.f5183e = OrientationHelper.a(layoutManager);
+        OrientationHelper orientationHelper = this.f5193e;
+        if (orientationHelper == null || orientationHelper.f4952a != layoutManager) {
+            this.f5193e = OrientationHelper.a(layoutManager);
         }
-        return this.f5183e;
+        return this.f5193e;
     }
 
     private OrientationHelper m(RecyclerView.LayoutManager layoutManager) {
@@ -87,11 +87,11 @@ public class o extends r {
     }
 
     private OrientationHelper n(RecyclerView.LayoutManager layoutManager) {
-        OrientationHelper orientationHelper = this.f5182d;
-        if (orientationHelper == null || orientationHelper.f4942a != layoutManager) {
-            this.f5182d = OrientationHelper.c(layoutManager);
+        OrientationHelper orientationHelper = this.f5192d;
+        if (orientationHelper == null || orientationHelper.f4952a != layoutManager) {
+            this.f5192d = OrientationHelper.c(layoutManager);
         }
-        return this.f5182d;
+        return this.f5192d;
     }
 
     private boolean o(RecyclerView.LayoutManager layoutManager, int i10, int i11) {
@@ -140,7 +140,7 @@ public class o extends r {
         if (!(layoutManager instanceof RecyclerView.SmoothScroller.a)) {
             return null;
         }
-        return new a(this.f5185a.getContext());
+        return new a(this.f5195a.getContext());
     }
 
     @Override // androidx.recyclerview.widget.r

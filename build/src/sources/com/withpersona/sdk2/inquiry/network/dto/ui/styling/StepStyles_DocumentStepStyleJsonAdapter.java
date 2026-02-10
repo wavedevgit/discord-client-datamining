@@ -131,7 +131,7 @@ public final class StepStyles_DocumentStepStyleJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -189,7 +189,7 @@ public final class StepStyles_DocumentStepStyleJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.DocumentStepStyle documentStepStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStepStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("textColor");
             this.nullableHeaderButtonColorStyleAdapter.toJson(writer, documentStepStyle.getHeaderButtonColor());
             writer.J(ViewProps.BACKGROUND_COLOR);

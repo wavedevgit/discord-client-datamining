@@ -3,22 +3,22 @@ package vd;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f52221a;
+    public final String f51463a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final String f52222b;
+    public final String f51464b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f52223c;
+    public final int f51465c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f52224d;
+    public final int f51466d;
 
     public b(String str, String str2, int i10, int i11) {
-        this.f52221a = str;
-        this.f52222b = str2;
-        this.f52223c = i10;
-        this.f52224d = i11;
+        this.f51463a = str;
+        this.f51464b = str2;
+        this.f51465c = i10;
+        this.f51466d = i11;
     }
 
     public boolean equals(Object obj) {
@@ -29,13 +29,13 @@ public final class b {
             return false;
         }
         b bVar = (b) obj;
-        if (this.f52223c == bVar.f52223c && this.f52224d == bVar.f52224d && ni.j.a(this.f52221a, bVar.f52221a) && ni.j.a(this.f52222b, bVar.f52222b)) {
+        if (this.f51465c == bVar.f51465c && this.f51466d == bVar.f51466d && pi.j.a(this.f51463a, bVar.f51463a) && pi.j.a(this.f51464b, bVar.f51464b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return ni.j.b(this.f52221a, this.f52222b, Integer.valueOf(this.f52223c), Integer.valueOf(this.f52224d));
+        return pi.j.b(this.f51463a, this.f51464b, Integer.valueOf(this.f51465c), Integer.valueOf(this.f51466d));
     }
 }

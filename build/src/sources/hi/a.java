@@ -1,38 +1,40 @@
 package hi;
 
-import android.app.Activity;
-import android.app.PendingIntent;
-import android.content.Context;
-import android.content.Intent;
-import com.google.android.gms.tasks.Task;
-import com.google.android.play.core.review.ReviewManager;
-import ei.b;
-import zg.m;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a implements ReviewManager {
+public abstract class a implements IInterface {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Context f26128a;
+    /* renamed from: c  reason: collision with root package name */
+    private final IBinder f27346c;
 
-    /* renamed from: b  reason: collision with root package name */
-    private b f26129b;
+    /* renamed from: d  reason: collision with root package name */
+    private final String f27347d = "com.google.android.play.core.inappreview.protocol.IInAppReviewService";
 
-    public a(Context context) {
-        this.f26128a = context;
+    /* JADX INFO: Access modifiers changed from: protected */
+    public a(IBinder iBinder, String str) {
+        this.f27346c = iBinder;
     }
 
-    @Override // com.google.android.play.core.review.ReviewManager
-    public Task a(Activity activity, b bVar) {
-        if (bVar != this.f26129b) {
-            return m.e(new ei.a(-2));
+    @Override // android.os.IInterface
+    public final IBinder asBinder() {
+        return this.f27346c;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final Parcel e() {
+        Parcel obtain = Parcel.obtain();
+        obtain.writeInterfaceToken(this.f27347d);
+        return obtain;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final void f(int i10, Parcel parcel) {
+        try {
+            this.f27346c.transact(2, parcel, null, 1);
+        } finally {
+            parcel.recycle();
         }
-        return m.f(null);
-    }
-
-    @Override // com.google.android.play.core.review.ReviewManager
-    public Task b() {
-        b c10 = b.c(PendingIntent.getBroadcast(this.f26128a, 0, new Intent(), 67108864), false);
-        this.f26129b = c10;
-        return m.f(c10);
     }
 }

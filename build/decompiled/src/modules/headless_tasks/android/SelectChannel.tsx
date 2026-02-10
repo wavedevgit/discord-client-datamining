@@ -32,12 +32,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3.bind(var0)(var2);
             var2 = var3.awaitStorage;
             var1 = function() { // Environment: var1
-                _fun118933: for (var _fun118933_ip = 0;;) switch (_fun118933_ip) {
+                _fun118987: for (var _fun118987_ip = 0;;) switch (_fun118987_ip) {
                     case 0:
                         var0 = _closure2_slot1;
                         if (!var0) {
-                            _fun118933_ip = 50;
-                            continue _fun118933
+                            _fun118987_ip = 50;
+                            continue _fun118987
                         }
                     case 10:
                         var3 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/headless_tasks/android/SelectChannel.tsx';
     var1 = var2.bind(var3)(var1);
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [15154, 4231, 3944, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [15164, 4241, 3944, 2]);

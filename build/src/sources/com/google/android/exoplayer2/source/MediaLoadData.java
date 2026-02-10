@@ -5,37 +5,37 @@ import com.google.android.exoplayer2.Format;
 public final class MediaLoadData {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f12845a;
+    public final int f13422a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f12846b;
+    public final int f13423b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Format f12847c;
+    public final Format f13424c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f12848d;
+    public final int f13425d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Object f12849e;
+    public final Object f13426e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final long f12850f;
+    public final long f13427f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final long f12851g;
+    public final long f13428g;
 
     public MediaLoadData(int i10) {
         this(i10, -1, null, 0, null, -9223372036854775807L, -9223372036854775807L);
     }
 
     public MediaLoadData(int i10, int i11, Format format, int i12, Object obj, long j10, long j11) {
-        this.f12845a = i10;
-        this.f12846b = i11;
-        this.f12847c = format;
-        this.f12848d = i12;
-        this.f12849e = obj;
-        this.f12850f = j10;
-        this.f12851g = j11;
+        this.f13422a = i10;
+        this.f13423b = i11;
+        this.f13424c = format;
+        this.f13425d = i12;
+        this.f13426e = obj;
+        this.f13427f = j10;
+        this.f13428g = j11;
     }
 }

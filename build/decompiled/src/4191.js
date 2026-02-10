@@ -1,686 +1,353 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var6 = require;
-    var2 = exports;
-    var7 = dependencyMap;
-    var0 = global;
-    var5 = var0.Object;
-    var3 = var5.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var5)(var2, var0, var1);
-    var0 = 0;
-    var3 = var7[var0];
-    var1 = metroImportDefault;
-    var0 = undefined;
-    var1 = var1.bind(var0)(var3);
-    var _closure1_slot0 = var1;
-    var1 = {
-        8: 'GPSSatellites',
-        11: 'GPSDOP',
-        13: 'GPSSpeed',
-        15: 'GPSTrack',
-        17: 'GPSImgDirection',
-        18: 'GPSMapDatum',
-        24: 'GPSDestBearing',
-        26: 'GPSDestDistance',
-        29: 'GPSDateStamp',
-        31: 'GPSHPositioningError'
-    };
-    var3 = {};
-    var5 = 'GPSVersionID';
-    var3.name = var5;
-    var5 = function arg0() {
-        _fun38269: for (var _fun38269_ip = 0;;) switch (_fun38269_ip) {
+    var1 = exports;
+    var0 = metroImportDefault;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
+    var0 = function arg0, arg1, arg2() {
+        _fun38190: for (var _fun38190_ip = 0;;) switch (_fun38190_ip) {
             case 0:
-                var4 = arg0;
-                var2 = 0;
-                var5 = var4[var2];
-                var3 = 'Unknown';
-                var1 = 2;
-                var0 = var3;
-                if (!(var1 === var5)) {
-                    _fun38269_ip = 68;
-                    continue _fun38269
-                }
-            case 23:
-                var5 = 1;
-                var5 = var4[var5];
-                var0 = var3;
-                if (!(var1 === var5)) {
-                    _fun38269_ip = 68;
-                    continue _fun38269
-                }
-            case 37:
-                var1 = var4[var1];
-                var0 = var3;
-                if (!(var2 === var1)) {
-                    _fun38269_ip = 68;
-                    continue _fun38269
-                }
-            case 48:
                 var1 = 3;
-                var1 = var4[var1];
-                var0 = var3;
-                if (!(var2 === var1)) {
-                    _fun38269_ip = 68;
-                    continue _fun38269
+                var0 = arg2;
+                if (!(!(var1 > var0))) {
+                    _fun38190_ip = 74;
+                    continue _fun38190
+                }
+            case 10:
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
+                var0 = undefined;
+                var3 = var2.bind(var0)(var1);
+                var2 = var3.getByteAt;
+                var1 = arg1;
+                var0 = 2;
+                var1 = var1 + var0;
+                var0 = arg0;
+                var1 = var2.bind(var3)(var0, var1);
+                var0 = {};
+                var0.value = var1;
+                var1 = '' + var1;
+                var0.description = var1;
+                return var0;
+            case 74:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var _closure1_slot2 = var0;
+    var0 = function arg0, arg1, arg2() {
+        _fun38191: for (var _fun38191_ip = 0;;) switch (_fun38191_ip) {
+            case 0:
+                var1 = 5;
+                var0 = arg2;
+                if (!(!(var1 > var0))) {
+                    _fun38191_ip = 98;
+                    continue _fun38191
+                }
+            case 10:
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
+                var0 = undefined;
+                var3 = var2.bind(var0)(var1);
+                var2 = var3.getShortAt;
+                var1 = arg1;
+                var0 = 3;
+                var1 = var1 + var0;
+                var0 = arg0;
+                var4 = var2.bind(var3)(var0, var1);
+                var0 = {};
+                var0.value = var4;
+                var1 = global;
+                var1 = var1.HermesInternal;
+                var3 = var1.concat;
+                var2 = '';
+                var1 = 'px';
+                var1 = var3.bind(var2)(var4, var1);
+                var0.description = var1;
+                return var0;
+            case 98:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var _closure1_slot3 = var0;
+    var0 = function arg0, arg1, arg2() {
+        _fun38192: for (var _fun38192_ip = 0;;) switch (_fun38192_ip) {
+            case 0:
+                var1 = 7;
+                var0 = arg2;
+                if (!(!(var1 > var0))) {
+                    _fun38192_ip = 98;
+                    continue _fun38192
+                }
+            case 10:
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
+                var0 = undefined;
+                var3 = var2.bind(var0)(var1);
+                var2 = var3.getShortAt;
+                var1 = arg1;
+                var0 = 5;
+                var1 = var1 + var0;
+                var0 = arg0;
+                var4 = var2.bind(var3)(var0, var1);
+                var0 = {};
+                var0.value = var4;
+                var1 = global;
+                var1 = var1.HermesInternal;
+                var3 = var1.concat;
+                var2 = '';
+                var1 = 'px';
+                var1 = var3.bind(var2)(var4, var1);
+                var0.description = var1;
+                return var0;
+            case 98:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var _closure1_slot4 = var0;
+    var0 = function arg0, arg1, arg2, arg3() {
+        _fun38193: for (var _fun38193_ip = 0;;) switch (_fun38193_ip) {
+            case 0:
+                var11 = arg0;
+                var10 = arg1;
+                var9 = arg2;
+                var8 = 3;
+                var0 = var8 * var9;
+                var7 = 8;
+                var1 = var7 + var0;
+                var0 = arg3;
+                if (!(!(var1 > var0))) {
+                    _fun38193_ip = 236;
+                    continue _fun38193
+                }
+            case 33:
+                var5 = new Array(0);
+                var6 = 0;
+                var12 = var6 < var9;
+                var4 = undefined;
+                var3 = 1;
+                var1 = 2;
+                var0 = 0;
+                if (!var12) {
+                    _fun38193_ip = 186;
+                    continue _fun38193
                 }
             case 62:
-                var0 = 'Version 2.2';
-            case 68:
+                var13 = var10 + var7;
+                var12 = var8 * var0;
+                var14 = var13 + var12;
+                var13 = var5.push;
+                var16 = _closure1_slot0;
+                var15 = _closure1_slot1;
+                var12 = var15[var6];
+                var17 = var16.bind(var4)(var12);
+                var12 = var17.getByteAt;
+                var17 = var12.bind(var17)(var11, var14);
+                var12 = new Array(3);
+                var12[0] = var17;
+                var17 = var15[var6];
+                var19 = var16.bind(var4)(var17);
+                var18 = var19.getByteAt;
+                var17 = var14 + var3;
+                var17 = var18.bind(var19)(var11, var17);
+                var12[1] = var17;
+                var15 = var15[var6];
+                var16 = var16.bind(var4)(var15);
+                var15 = var16.getByteAt;
+                var14 = var14 + var1;
+                var14 = var15.bind(var16)(var11, var14);
+                var12[2] = var14;
+                var12 = var13.bind(var5)(var12);
+                var0 = var0 + 1;
+                if (var0 < var9) {
+                    _fun38193_ip = 62;
+                    continue _fun38193
+                }
+            case 186:
+                var0 = {};
+                var0.value = var5;
+                var1 = var5.length;
+                var3 = var1 > var3;
+                var1 = '';
+                if (!var3) {
+                    _fun38193_ip = 230;
+                    continue _fun38193
+                }
+            case 208:
+                var3 = _closure1_slot6;
+                var3 = var3.bind(var4)(var5);
+                var2 = _closure1_slot7;
+                var2 = var2.bind(var4)(var5);
+                var1 = var3 + var2;
+            case 230:
+                var0.description = var1;
+                return var0;
+            case 236:
+                var0 = undefined;
                 return var0;
         }
     };
-    var3.description = var5;
-    var1[0] = var3;
-    var3 = {};
-    var5 = 'GPSLatitudeRef';
-    var3.name = var5;
-    var5 = function arg0() {
-        _fun38270: for (var _fun38270_ip = 0;;) switch (_fun38270_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = var2.join;
-                var0 = '';
-                var3 = var1.bind(var2)(var0);
-                var0 = 'North latitude';
-                var1 = 'N';
-                if (!(var1 !== var3)) {
-                    _fun38270_ip = 52;
-                    continue _fun38270
-                }
-            case 31:
-                var1 = 'Unknown';
-                var2 = 'S';
-                if (!(var2 === var3)) {
-                    _fun38270_ip = 49;
-                    continue _fun38270
-                }
-            case 43:
-                var1 = 'South latitude';
-            case 49:
-                var0 = var1;
-            case 52:
-                return var0;
-        }
-    };
-    var3.description = var5;
-    var1[1] = var3;
-    var3 = {};
-    var5 = 'GPSLatitude';
-    var3.name = var5;
-    var5 = 1;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.getCalculatedGpsValue;
-    var3.description = var8;
-    var1[2] = var3;
-    var3 = {};
-    var8 = 'GPSLongitudeRef';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38271: for (var _fun38271_ip = 0;;) switch (_fun38271_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = var2.join;
-                var0 = '';
-                var3 = var1.bind(var2)(var0);
-                var0 = 'East longitude';
-                var1 = 'E';
-                if (!(var1 !== var3)) {
-                    _fun38271_ip = 52;
-                    continue _fun38271
-                }
-            case 31:
-                var1 = 'Unknown';
-                var2 = 'W';
-                if (!(var2 === var3)) {
-                    _fun38271_ip = 49;
-                    continue _fun38271
-                }
-            case 43:
-                var1 = 'West longitude';
-            case 49:
-                var0 = var1;
-            case 52:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[3] = var3;
-    var3 = {};
-    var8 = 'GPSLongitude';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.getCalculatedGpsValue;
-    var3.description = var8;
-    var1[4] = var3;
-    var3 = {};
-    var8 = 'GPSAltitudeRef';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38272: for (var _fun38272_ip = 0;;) switch (_fun38272_ip) {
-            case 0:
-                var3 = arg0;
-                var0 = 'Sea level';
-                var1 = 0;
-                if (!(var1 !== var3)) {
-                    _fun38272_ip = 35;
-                    continue _fun38272
-                }
-            case 15:
-                var1 = 'Unknown';
-                var2 = 1;
-                if (!(var2 === var3)) {
-                    _fun38272_ip = 32;
-                    continue _fun38272
-                }
-            case 26:
-                var1 = 'Sea level reference (negative value)';
-            case 32:
-                var0 = var1;
-            case 35:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[5] = var3;
-    var3 = {};
-    var8 = 'GPSAltitude';
-    var3.name = var8;
-    var8 = function arg0() {
+    var _closure1_slot5 = var0;
+    var0 = function arg0() {
         var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 / var0;
-        var0 = ' m';
-        var0 = var1 + var0;
-        return var0;
-    };
-    var3.description = var8;
-    var1[6] = var3;
-    var3 = {};
-    var8 = 'GPSTimeStamp';
-    var3.name = var8;
-    var8 = function arg0() {
-        var2 = arg0;
+        var1 = {
+            1: 'Y',
+            2: 'Cb',
+            3: 'Cr',
+            4: 'I',
+            5: 'Q'
+        };
+        var _closure2_slot0 = var1;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
-            _fun38275: for (var _fun38275_ip = 0;;) switch (_fun38275_ip) {
-                case 0:
-                    var3 = _closure1_slot0;
-                    var2 = undefined;
-                    var1 = arg0;
-                    var0 = 2;
-                    var2 = var3.bind(var2)(var1, var0);
-                    var0 = 0;
-                    var1 = var2[var0];
-                    var0 = 1;
-                    var0 = var2[var0];
-                    var3 = var1 / var0;
-                    var4 = /^\d(\.|$)/;
-                    var2 = var4.test;
-                    var1 = global;
-                    var0 = var1.HermesInternal;
-                    var5 = var0.concat;
-                    var0 = '';
-                    var0 = var5.bind(var0)(var3);
-                    var2 = var2.bind(var4)(var0);
-                    var0 = var3;
-                    if (!var2) {
-                        _fun38275_ip = 112;
-                        continue _fun38275
-                    }
-                case 90:
-                    var1 = var1.HermesInternal;
-                    var2 = var1.concat;
-                    var1 = '0';
-                    var0 = var2.bind(var1)(var3);
-                case 112:
-                    return var0;
-            }
+            var1 = _closure2_slot0;
+            var2 = arg0;
+            var0 = 0;
+            var0 = var2[var0];
+            var0 = var1[var0];
+            return var0;
         };
         var2 = var1.bind(var2)(var0);
         var1 = var2.join;
-        var0 = ':';
+        var0 = '';
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var3.description = var8;
-    var1[7] = var3;
-    var3 = {};
-    var8 = 'GPSStatus';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38276: for (var _fun38276_ip = 0;;) switch (_fun38276_ip) {
+    var _closure1_slot6 = var0;
+    var0 = function arg0() {
+        _fun38196: for (var _fun38196_ip = 0;;) switch (_fun38196_ip) {
             case 0:
-                var2 = arg0;
-                var1 = var2.join;
-                var0 = '';
-                var3 = var1.bind(var2)(var0);
-                var0 = 'Measurement in progress';
-                var1 = 'A';
-                if (!(var1 !== var3)) {
-                    _fun38276_ip = 52;
-                    continue _fun38276
-                }
-            case 31:
-                var1 = 'Unknown';
-                var2 = 'V';
-                if (!(var2 === var3)) {
-                    _fun38276_ip = 49;
-                    continue _fun38276
-                }
-            case 43:
-                var1 = 'Measurement Interoperability';
-            case 49:
-                var0 = var1;
-            case 52:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[9] = var3;
-    var3 = {};
-    var8 = 'GPSMeasureMode';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38277: for (var _fun38277_ip = 0;;) switch (_fun38277_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = var2.join;
-                var0 = '';
-                var3 = var1.bind(var2)(var0);
-                var0 = '2-dimensional measurement';
-                var1 = '2';
-                if (!(var1 !== var3)) {
-                    _fun38277_ip = 56;
-                    continue _fun38277
-                }
-            case 33:
-                var1 = 'Unknown';
-                var2 = '3';
-                if (!(var2 === var3)) {
-                    _fun38277_ip = 53;
-                    continue _fun38277
-                }
-            case 47:
-                var1 = '3-dimensional measurement';
-            case 53:
-                var0 = var1;
-            case 56:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[10] = var3;
-    var3 = {};
-    var8 = 'GPSSpeedRef';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38278: for (var _fun38278_ip = 0;;) switch (_fun38278_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = var2.join;
-                var0 = '';
-                var4 = var1.bind(var2)(var0);
-                var0 = 'Kilometers per hour';
-                var1 = 'K';
-                if (!(var1 !== var4)) {
-                    _fun38278_ip = 69;
-                    continue _fun38278
-                }
-            case 31:
-                var1 = 'Miles per hour';
-                var2 = 'M';
-                if (!(var2 !== var4)) {
-                    _fun38278_ip = 66;
-                    continue _fun38278
-                }
-            case 45:
-                var2 = 'Unknown';
-                var3 = 'N';
-                if (!(var3 === var4)) {
-                    _fun38278_ip = 63;
-                    continue _fun38278
-                }
-            case 57:
-                var2 = 'Knots';
-            case 63:
-                var1 = var2;
-            case 66:
-                var0 = var1;
-            case 69:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[12] = var3;
-    var3 = {};
-    var8 = 'GPSTrackRef';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38279: for (var _fun38279_ip = 0;;) switch (_fun38279_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = var2.join;
-                var0 = '';
-                var3 = var1.bind(var2)(var0);
-                var0 = 'True direction';
-                var1 = 'T';
-                if (!(var1 !== var3)) {
-                    _fun38279_ip = 52;
-                    continue _fun38279
-                }
-            case 31:
-                var1 = 'Unknown';
-                var2 = 'M';
-                if (!(var2 === var3)) {
-                    _fun38279_ip = 49;
-                    continue _fun38279
-                }
-            case 43:
-                var1 = 'Magnetic direction';
-            case 49:
-                var0 = var1;
-            case 52:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[14] = var3;
-    var3 = {};
-    var8 = 'GPSImgDirectionRef';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38280: for (var _fun38280_ip = 0;;) switch (_fun38280_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = var2.join;
-                var0 = '';
-                var3 = var1.bind(var2)(var0);
-                var0 = 'True direction';
-                var1 = 'T';
-                if (!(var1 !== var3)) {
-                    _fun38280_ip = 52;
-                    continue _fun38280
-                }
-            case 31:
-                var1 = 'Unknown';
-                var2 = 'M';
-                if (!(var2 === var3)) {
-                    _fun38280_ip = 49;
-                    continue _fun38280
-                }
-            case 43:
-                var1 = 'Magnetic direction';
-            case 49:
-                var0 = var1;
-            case 52:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[16] = var3;
-    var3 = {};
-    var8 = 'GPSDestLatitudeRef';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38281: for (var _fun38281_ip = 0;;) switch (_fun38281_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = var2.join;
-                var0 = '';
-                var3 = var1.bind(var2)(var0);
-                var0 = 'North latitude';
-                var1 = 'N';
-                if (!(var1 !== var3)) {
-                    _fun38281_ip = 52;
-                    continue _fun38281
-                }
-            case 31:
-                var1 = 'Unknown';
-                var2 = 'S';
-                if (!(var2 === var3)) {
-                    _fun38281_ip = 49;
-                    continue _fun38281
-                }
-            case 43:
-                var1 = 'South latitude';
-            case 49:
-                var0 = var1;
-            case 52:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[19] = var3;
-    var3 = {};
-    var8 = 'GPSDestLatitude';
-    var3.name = var8;
-    var8 = function arg0() {
-        var4 = arg0;
-        var5 = 0;
-        var0 = var4[var5];
-        var1 = var0[var5];
-        var0 = var4[var5];
-        var3 = 1;
-        var0 = var0[var3];
-        var1 = var1 / var0;
-        var0 = var4[var3];
-        var2 = var0[var5];
-        var0 = var4[var3];
-        var0 = var0[var3];
-        var2 = var2 / var0;
-        var0 = 60;
-        var0 = var2 / var0;
-        var1 = var1 + var0;
-        var0 = 2;
-        var2 = var4[var0];
-        var2 = var2[var5];
-        var0 = var4[var0];
-        var0 = var0[var3];
-        var2 = var2 / var0;
-        var0 = 3600;
-        var0 = var2 / var0;
-        var0 = var1 + var0;
-        return var0;
-    };
-    var3.description = var8;
-    var1[20] = var3;
-    var3 = {};
-    var8 = 'GPSDestLongitudeRef';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38283: for (var _fun38283_ip = 0;;) switch (_fun38283_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = var2.join;
-                var0 = '';
-                var3 = var1.bind(var2)(var0);
-                var0 = 'East longitude';
-                var1 = 'E';
-                if (!(var1 !== var3)) {
-                    _fun38283_ip = 52;
-                    continue _fun38283
-                }
-            case 31:
-                var1 = 'Unknown';
-                var2 = 'W';
-                if (!(var2 === var3)) {
-                    _fun38283_ip = 49;
-                    continue _fun38283
-                }
-            case 43:
-                var1 = 'West longitude';
-            case 49:
-                var0 = var1;
-            case 52:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[21] = var3;
-    var3 = {};
-    var8 = 'GPSDestLongitude';
-    var3.name = var8;
-    var8 = function arg0() {
-        var4 = arg0;
-        var5 = 0;
-        var0 = var4[var5];
-        var1 = var0[var5];
-        var0 = var4[var5];
-        var3 = 1;
-        var0 = var0[var3];
-        var1 = var1 / var0;
-        var0 = var4[var3];
-        var2 = var0[var5];
-        var0 = var4[var3];
-        var0 = var0[var3];
-        var2 = var2 / var0;
-        var0 = 60;
-        var0 = var2 / var0;
-        var1 = var1 + var0;
-        var0 = 2;
-        var2 = var4[var0];
-        var2 = var2[var5];
-        var0 = var4[var0];
-        var0 = var0[var3];
-        var2 = var2 / var0;
-        var0 = 3600;
-        var0 = var2 / var0;
-        var0 = var1 + var0;
-        return var0;
-    };
-    var3.description = var8;
-    var1[22] = var3;
-    var3 = {};
-    var8 = 'GPSDestBearingRef';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38285: for (var _fun38285_ip = 0;;) switch (_fun38285_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = var2.join;
-                var0 = '';
-                var3 = var1.bind(var2)(var0);
-                var0 = 'True direction';
-                var1 = 'T';
-                if (!(var1 !== var3)) {
-                    _fun38285_ip = 52;
-                    continue _fun38285
-                }
-            case 31:
-                var1 = 'Unknown';
-                var2 = 'M';
-                if (!(var2 === var3)) {
-                    _fun38285_ip = 49;
-                    continue _fun38285
-                }
-            case 43:
-                var1 = 'Magnetic direction';
-            case 49:
-                var0 = var1;
-            case 52:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[23] = var3;
-    var3 = {};
-    var8 = 'GPSDestDistanceRef';
-    var3.name = var8;
-    var8 = function arg0() {
-        _fun38286: for (var _fun38286_ip = 0;;) switch (_fun38286_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = var2.join;
-                var0 = '';
-                var4 = var1.bind(var2)(var0);
-                var0 = 'Kilometers';
-                var1 = 'K';
-                if (!(var1 !== var4)) {
-                    _fun38286_ip = 69;
-                    continue _fun38286
-                }
-            case 31:
-                var1 = 'Miles';
-                var2 = 'M';
-                if (!(var2 !== var4)) {
-                    _fun38286_ip = 66;
-                    continue _fun38286
-                }
-            case 45:
-                var2 = 'Unknown';
-                var3 = 'N';
-                if (!(var3 === var4)) {
-                    _fun38286_ip = 63;
-                    continue _fun38286
-                }
-            case 57:
-                var2 = 'Knots';
-            case 63:
-                var1 = var2;
-            case 66:
-                var0 = var1;
-            case 69:
-                return var0;
-        }
-    };
-    var3.description = var8;
-    var1[25] = var3;
-    var3 = {};
-    var8 = 'GPSProcessingMethod';
-    var3.name = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.getEncodedString;
-    var3.description = var8;
-    var1[27] = var3;
-    var3 = {};
-    var8 = 'GPSAreaInformation';
-    var3.name = var8;
-    var5 = var7[var5];
-    var5 = var6.bind(var0)(var5);
-    var5 = var5.getEncodedString;
-    var3.description = var5;
-    var1[28] = var3;
-    var3 = {};
-    var5 = 'GPSDifferential';
-    var3.name = var5;
-    var4 = function arg0() {
-        _fun38287: for (var _fun38287_ip = 0;;) switch (_fun38287_ip) {
-            case 0:
-                var3 = arg0;
-                var0 = 'Measurement without differential correction';
+                var4 = arg0;
+                var2 = {
+                    17: '4:4:4 (1 1)',
+                    18: '4:4:0 (1 2)',
+                    20: '4:4:1 (1 4)',
+                    33: '4:2:2 (2 1)',
+                    34: '4:2:0 (2 2)',
+                    36: '4:2:1 (2 4)',
+                    65: '4:1:1 (4 1)',
+                    66: '4:1:0 (4 2)'
+                };
+                var3 = var4.length;
+                var7 = '';
                 var1 = 0;
+                var0 = var7;
                 if (!(var1 !== var3)) {
-                    _fun38287_ip = 35;
-                    continue _fun38287
+                    _fun38196_ip = 86;
+                    continue _fun38196
                 }
-            case 15:
-                var1 = 'Unknown';
-                var2 = 1;
-                if (!(var2 === var3)) {
-                    _fun38287_ip = 32;
-                    continue _fun38287
-                }
-            case 26:
-                var1 = 'Differential correction applied';
-            case 32:
-                var0 = var1;
             case 35:
+                var5 = var4[var1];
+                var3 = 1;
+                var5 = var5[var3];
+                var6 = undefined;
+                var0 = var7;
+                if (!(var6 !== var5)) {
+                    _fun38196_ip = 86;
+                    continue _fun38196
+                }
+            case 55:
+                var5 = var4[var1];
+                var5 = var5[var3];
+                var5 = var2[var5];
+                var0 = var7;
+                if (!(var6 !== var5)) {
+                    _fun38196_ip = 86;
+                    continue _fun38196
+                }
+            case 74:
+                var1 = var4[var1];
+                var1 = var1[var3];
+                var0 = var2[var1];
+            case 86:
                 return var0;
         }
     };
-    var3.description = var4;
-    var1[30] = var3;
-    var2.default = var1;
+    var _closure1_slot7 = var0;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = {};
+    var2 = function arg0, arg1() {
+        _fun38197: for (var _fun38197_ip = 0;;) switch (_fun38197_ip) {
+            case 0:
+                var7 = arg0;
+                var6 = arg1;
+                var1 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var8 = 0;
+                var0 = var0[var8];
+                var5 = undefined;
+                var1 = var1.bind(var5)(var0);
+                var0 = var1.getShortAt;
+                var4 = var0.bind(var1)(var7, var6);
+                var0 = 8;
+                var0 = var0 > var4;
+                var2 = undefined;
+                if (var0) {
+                    _fun38197_ip = 106;
+                    continue _fun38197
+                }
+            case 54:
+                var1 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var0 = var0[var8];
+                var8 = var1.bind(var5)(var0);
+                var1 = var8.getByteAt;
+                var0 = 7;
+                var0 = var6 + var0;
+                var1 = var1.bind(var8)(var7, var0);
+                var0 = {};
+                var0.value = var1;
+                var1 = '' + var1;
+                var0.description = var1;
+                var2 = var0;
+            case 106:
+                var0 = {};
+                var1 = _closure1_slot2;
+                var1 = var1.bind(var5)(var7, var6, var4);
+                var0['Bits Per Sample'] = var1;
+                var1 = _closure1_slot3;
+                var1 = var1.bind(var5)(var7, var6, var4);
+                var0['Image Height'] = var1;
+                var1 = _closure1_slot4;
+                var1 = var1.bind(var5)(var7, var6, var4);
+                var0['Image Width'] = var1;
+                var0['Color Components'] = var2;
+                var1 = var2;
+                if (!var1) {
+                    _fun38197_ip = 195;
+                    continue _fun38197
+                }
+            case 171:
+                var3 = _closure1_slot5;
+                var10 = var2.value;
+                var13 = undefined;
+                var12 = var7;
+                var11 = var6;
+                var9 = var4;
+                var1 = var13[var3](var12, var11, var10, var9, var8);
+            case 195:
+                var0.Subsampling = var1;
+                return var0;
+        }
+    };
+    var0.read = var2;
+    var1.default = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 4190]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4192]);

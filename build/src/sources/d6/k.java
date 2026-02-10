@@ -12,21 +12,21 @@ public abstract class k {
     public class a implements d.c {
 
         /* renamed from: a  reason: collision with root package name */
-        private File f20540a = null;
+        private File f21487a = null;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Context f20541b;
+        final /* synthetic */ Context f21488b;
 
         a(Context context) {
-            this.f20541b = context;
+            this.f21488b = context;
         }
 
         @Override // d6.d.c
         public File get() {
-            if (this.f20540a == null) {
-                this.f20540a = new File(this.f20541b.getCacheDir(), "volley");
+            if (this.f21487a == null) {
+                this.f21487a = new File(this.f21488b.getCacheDir(), "volley");
             }
-            return this.f20540a;
+            return this.f21487a;
         }
     }
 

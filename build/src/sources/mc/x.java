@@ -5,13 +5,13 @@ import com.google.android.exoplayer2.Format;
 public final class x {
 
     /* renamed from: a  reason: collision with root package name */
-    public sc.n f36906a;
+    public sc.n f36281a;
 
     /* renamed from: b  reason: collision with root package name */
-    public Format f36907b;
+    public Format f36282b;
 
     public void a() {
-        this.f36906a = null;
-        this.f36907b = null;
+        this.f36281a = null;
+        this.f36282b = null;
     }
 }

@@ -1,109 +1,83 @@
 package sr;
 
-import java.io.Serializable;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Set;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.markers.KMutableSet;
-import org.jetbrains.annotations.NotNull;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
+import android.text.TextUtils;
+import android.widget.TextView;
+import java.util.List;
+import sr.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class h extends kotlin.collections.g implements Set, Serializable, KMutableSet {
-    @NotNull
+class h extends e {
 
-    /* renamed from: e  reason: collision with root package name */
-    private static final a f50085e = new a(null);
+    /* renamed from: a  reason: collision with root package name */
+    private final TextView.BufferType f48319a;
 
-    /* renamed from: i  reason: collision with root package name */
-    private static final h f50086i = new h(d.f50060y.e());
+    /* renamed from: b  reason: collision with root package name */
+    private final bw.d f48320b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final m f48321c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final d f50087d;
+    private final g f48322d;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    /* renamed from: e  reason: collision with root package name */
+    private final List f48323e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final boolean f48324f;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public h(TextView.BufferType bufferType, e.b bVar, bw.d dVar, m mVar, g gVar, List list, boolean z10) {
+        this.f48319a = bufferType;
+        this.f48320b = dVar;
+        this.f48321c = mVar;
+        this.f48322d = gVar;
+        this.f48323e = list;
+        this.f48324f = z10;
+    }
+
+    @Override // sr.e
+    public void c(TextView textView, String str) {
+        d(textView, e(str));
+    }
+
+    @Override // sr.e
+    public void d(TextView textView, Spanned spanned) {
+        for (i iVar : this.f48323e) {
+            iVar.j(textView, spanned);
         }
-
-        private a() {
+        textView.setText(spanned, this.f48319a);
+        for (i iVar2 : this.f48323e) {
+            iVar2.d(textView);
         }
     }
 
-    public h(d backing) {
-        Intrinsics.checkNotNullParameter(backing, "backing");
-        this.f50087d = backing;
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean add(Object obj) {
-        if (this.f50087d.i(obj) >= 0) {
-            return true;
+    @Override // sr.e
+    public Spanned e(String str) {
+        Spanned g10 = g(f(str));
+        if (TextUtils.isEmpty(g10) && this.f48324f && !TextUtils.isEmpty(str)) {
+            return new SpannableStringBuilder(str);
         }
-        return false;
+        return g10;
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean addAll(Collection elements) {
-        Intrinsics.checkNotNullParameter(elements, "elements");
-        this.f50087d.l();
-        return super.addAll(elements);
-    }
-
-    public final Set b() {
-        this.f50087d.k();
-        if (size() > 0) {
-            return this;
+    public aw.r f(String str) {
+        for (i iVar : this.f48323e) {
+            str = iVar.f(str);
         }
-        return f50086i;
+        return this.f48320b.b(str);
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public void clear() {
-        this.f50087d.clear();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean contains(Object obj) {
-        return this.f50087d.containsKey(obj);
-    }
-
-    @Override // kotlin.collections.g
-    public int getSize() {
-        return this.f50087d.size();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean isEmpty() {
-        return this.f50087d.isEmpty();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
-    public Iterator iterator() {
-        return this.f50087d.C();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean remove(Object obj) {
-        return this.f50087d.L(obj);
-    }
-
-    @Override // java.util.AbstractSet, java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean removeAll(Collection elements) {
-        Intrinsics.checkNotNullParameter(elements, "elements");
-        this.f50087d.l();
-        return super.removeAll(elements);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean retainAll(Collection elements) {
-        Intrinsics.checkNotNullParameter(elements, "elements");
-        this.f50087d.l();
-        return super.retainAll(elements);
-    }
-
-    public h() {
-        this(new d());
+    public Spanned g(aw.r rVar) {
+        for (i iVar : this.f48323e) {
+            iVar.b(rVar);
+        }
+        l a10 = this.f48321c.a();
+        rVar.a(a10);
+        for (i iVar2 : this.f48323e) {
+            iVar2.e(rVar, a10);
+        }
+        return a10.builder().l();
     }
 }

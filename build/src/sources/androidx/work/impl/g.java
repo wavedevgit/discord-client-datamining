@@ -5,7 +5,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g extends s3.b {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final g f5787c = new g();
+    public static final g f5797c = new g();
 
     private g() {
         super(11, 12);

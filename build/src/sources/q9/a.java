@@ -23,70 +23,70 @@ import s9.a;
 public final class a implements p9.a, c.b {
 
     /* renamed from: r  reason: collision with root package name */
-    public static final C0626a f45323r = new C0626a(null);
+    public static final C0603a f43991r = new C0603a(null);
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Class f45324s = a.class;
+    private static final Class f43992s = a.class;
 
     /* renamed from: a  reason: collision with root package name */
-    private final PlatformBitmapFactory f45325a;
+    private final PlatformBitmapFactory f43993a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f45326b;
+    private final b f43994b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final d f45327c;
+    private final d f43995c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final c f45328d;
+    private final c f43996d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f45329e;
+    private final boolean f43997e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final s9.a f45330f;
+    private final s9.a f43998f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final s9.b f45331g;
+    private final s9.b f43999g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final float[] f45332h;
+    private final float[] f44000h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Bitmap.Config f45333i;
+    private final Bitmap.Config f44001i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Paint f45334j;
+    private final Paint f44002j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Rect f45335k;
+    private Rect f44003k;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f45336l;
+    private int f44004l;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f45337m;
+    private int f44005m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final Path f45338n;
+    private final Path f44006n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Matrix f45339o;
+    private final Matrix f44007o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f45340p;
+    private int f44008p;
 
     /* renamed from: q  reason: collision with root package name */
-    private a.InterfaceC0610a f45341q;
+    private a.InterfaceC0586a f44009q;
 
     /* renamed from: q9.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0626a {
-        public /* synthetic */ C0626a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0603a {
+        public /* synthetic */ C0603a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0626a() {
+        private C0603a() {
         }
     }
 
@@ -95,40 +95,40 @@ public final class a implements p9.a, c.b {
         Intrinsics.checkNotNullParameter(bitmapFrameCache, "bitmapFrameCache");
         Intrinsics.checkNotNullParameter(animationInformation, "animationInformation");
         Intrinsics.checkNotNullParameter(bitmapFrameRenderer, "bitmapFrameRenderer");
-        this.f45325a = platformBitmapFactory;
-        this.f45326b = bitmapFrameCache;
-        this.f45327c = animationInformation;
-        this.f45328d = bitmapFrameRenderer;
-        this.f45329e = z10;
-        this.f45330f = aVar;
-        this.f45331g = bVar;
-        this.f45332h = null;
-        this.f45333i = Bitmap.Config.ARGB_8888;
-        this.f45334j = new Paint(6);
-        this.f45338n = new Path();
-        this.f45339o = new Matrix();
-        this.f45340p = -1;
+        this.f43993a = platformBitmapFactory;
+        this.f43994b = bitmapFrameCache;
+        this.f43995c = animationInformation;
+        this.f43996d = bitmapFrameRenderer;
+        this.f43997e = z10;
+        this.f43998f = aVar;
+        this.f43999g = bVar;
+        this.f44000h = null;
+        this.f44001i = Bitmap.Config.ARGB_8888;
+        this.f44002j = new Paint(6);
+        this.f44006n = new Path();
+        this.f44007o = new Matrix();
+        this.f44008p = -1;
         s();
     }
 
     private final void o(int i10, Bitmap bitmap, Canvas canvas) {
-        Rect rect = this.f45335k;
+        Rect rect = this.f44003k;
         if (rect == null) {
-            canvas.drawBitmap(bitmap, 0.0f, 0.0f, this.f45334j);
+            canvas.drawBitmap(bitmap, 0.0f, 0.0f, this.f44002j);
         } else if (t(i10, bitmap, rect.width(), rect.height())) {
-            canvas.drawPath(this.f45338n, this.f45334j);
+            canvas.drawPath(this.f44006n, this.f44002j);
         } else {
-            canvas.drawBitmap(bitmap, (Rect) null, rect, this.f45334j);
+            canvas.drawBitmap(bitmap, (Rect) null, rect, this.f44002j);
         }
     }
 
     private final boolean p(int i10, CloseableReference closeableReference, Canvas canvas, int i11) {
-        if (closeableReference != null && CloseableReference.G0(closeableReference)) {
+        if (closeableReference != null && CloseableReference.C0(closeableReference)) {
             Object J = closeableReference.J();
             Intrinsics.checkNotNullExpressionValue(J, "get(...)");
             o(i10, (Bitmap) J, canvas);
-            if (i11 != 3 && !this.f45329e) {
-                this.f45326b.b(i10, closeableReference, i11);
+            if (i11 != 3 && !this.f43997e) {
+                this.f43994b.b(i10, closeableReference, i11);
                 return true;
             }
             return true;
@@ -144,8 +144,8 @@ public final class a implements p9.a, c.b {
         try {
             boolean z10 = false;
             int i12 = 1;
-            if (this.f45329e) {
-                s9.a aVar = this.f45330f;
+            if (this.f43997e) {
+                s9.a aVar = this.f43998f;
                 if (aVar != null) {
                     closeableReference = aVar.c(i10, canvas.getWidth(), canvas.getHeight());
                 } else {
@@ -153,7 +153,7 @@ public final class a implements p9.a, c.b {
                 }
                 if (closeableReference != null) {
                     try {
-                        if (closeableReference.D0()) {
+                        if (closeableReference.z0()) {
                             Object J = closeableReference.J();
                             Intrinsics.checkNotNullExpressionValue(J, "get(...)");
                             o(i10, (Bitmap) J, canvas);
@@ -167,7 +167,7 @@ public final class a implements p9.a, c.b {
                         throw th;
                     }
                 }
-                s9.a aVar2 = this.f45330f;
+                s9.a aVar2 = this.f43998f;
                 if (aVar2 != null) {
                     aVar2.a(canvas.getWidth(), canvas.getHeight(), null);
                 }
@@ -181,25 +181,25 @@ public final class a implements p9.a, c.b {
                             CloseableReference.z(null);
                             return false;
                         }
-                        e10 = this.f45326b.c(i10);
+                        e10 = this.f43994b.c(i10);
                         p10 = p(i10, e10, canvas, 3);
                         i12 = -1;
                     } else {
                         try {
-                            e10 = this.f45325a.b(this.f45336l, this.f45337m, this.f45333i);
+                            e10 = this.f43993a.b(this.f44004l, this.f44005m, this.f44001i);
                             if (r(i10, e10) && p(i10, e10, canvas, 2)) {
                                 z10 = true;
                             }
                             p10 = z10;
                             i12 = 3;
                         } catch (RuntimeException e11) {
-                            q8.a.G(f45324s, "Failed to create frame bitmap", e11);
+                            q8.a.G(f43992s, "Failed to create frame bitmap", e11);
                             CloseableReference.z(null);
                             return false;
                         }
                     }
                 } else {
-                    e10 = this.f45326b.d(i10, this.f45336l, this.f45337m);
+                    e10 = this.f43994b.d(i10, this.f44004l, this.f44005m);
                     if (r(i10, e10) && p(i10, e10, canvas, 1)) {
                         z10 = true;
                     }
@@ -207,7 +207,7 @@ public final class a implements p9.a, c.b {
                     i12 = 2;
                 }
             } else {
-                e10 = this.f45326b.e(i10);
+                e10 = this.f43994b.e(i10);
                 p10 = p(i10, e10, canvas, 0);
             }
             CloseableReference.z(e10);
@@ -223,8 +223,8 @@ public final class a implements p9.a, c.b {
     }
 
     private final boolean r(int i10, CloseableReference closeableReference) {
-        if (closeableReference != null && closeableReference.D0()) {
-            c cVar = this.f45328d;
+        if (closeableReference != null && closeableReference.z0()) {
+            c cVar = this.f43996d;
             Object J = closeableReference.J();
             Intrinsics.checkNotNullExpressionValue(J, "get(...)");
             boolean a10 = cVar.a(i10, (Bitmap) J);
@@ -238,94 +238,94 @@ public final class a implements p9.a, c.b {
 
     private final void s() {
         int i10;
-        int e10 = this.f45328d.e();
-        this.f45336l = e10;
+        int e10 = this.f43996d.e();
+        this.f44004l = e10;
         int i11 = -1;
         if (e10 == -1) {
-            Rect rect = this.f45335k;
+            Rect rect = this.f44003k;
             if (rect != null) {
                 i10 = rect.width();
             } else {
                 i10 = -1;
             }
-            this.f45336l = i10;
+            this.f44004l = i10;
         }
-        int c10 = this.f45328d.c();
-        this.f45337m = c10;
+        int c10 = this.f43996d.c();
+        this.f44005m = c10;
         if (c10 == -1) {
-            Rect rect2 = this.f45335k;
+            Rect rect2 = this.f44003k;
             if (rect2 != null) {
                 i11 = rect2.height();
             }
-            this.f45337m = i11;
+            this.f44005m = i11;
         }
     }
 
     private final boolean t(int i10, Bitmap bitmap, float f10, float f11) {
-        if (this.f45332h == null) {
+        if (this.f44000h == null) {
             return false;
         }
-        if (i10 == this.f45340p) {
+        if (i10 == this.f44008p) {
             return true;
         }
         Shader.TileMode tileMode = Shader.TileMode.CLAMP;
         BitmapShader bitmapShader = new BitmapShader(bitmap, tileMode, tileMode);
-        this.f45339o.setRectToRect(new RectF(0.0f, 0.0f, this.f45336l, this.f45337m), new RectF(0.0f, 0.0f, f10, f11), Matrix.ScaleToFit.FILL);
-        bitmapShader.setLocalMatrix(this.f45339o);
-        this.f45334j.setShader(bitmapShader);
-        this.f45338n.addRoundRect(new RectF(0.0f, 0.0f, f10, f11), this.f45332h, Path.Direction.CW);
-        this.f45340p = i10;
+        this.f44007o.setRectToRect(new RectF(0.0f, 0.0f, this.f44004l, this.f44005m), new RectF(0.0f, 0.0f, f10, f11), Matrix.ScaleToFit.FILL);
+        bitmapShader.setLocalMatrix(this.f44007o);
+        this.f44002j.setShader(bitmapShader);
+        this.f44006n.addRoundRect(new RectF(0.0f, 0.0f, f10, f11), this.f44000h, Path.Direction.CW);
+        this.f44008p = i10;
         return true;
     }
 
     @Override // p9.d
     public int a() {
-        return this.f45327c.a();
+        return this.f43995c.a();
     }
 
     @Override // p9.d
     public int b() {
-        return this.f45327c.b();
+        return this.f43995c.b();
     }
 
     @Override // p9.a
     public int c() {
-        return this.f45337m;
+        return this.f44005m;
     }
 
     @Override // p9.a
     public void clear() {
-        if (this.f45329e) {
-            s9.a aVar = this.f45330f;
+        if (this.f43997e) {
+            s9.a aVar = this.f43998f;
             if (aVar != null) {
                 aVar.d();
                 return;
             }
             return;
         }
-        this.f45326b.clear();
+        this.f43994b.clear();
     }
 
     @Override // p9.a
     public void d(Rect rect) {
-        this.f45335k = rect;
-        this.f45328d.d(rect);
+        this.f44003k = rect;
+        this.f43996d.d(rect);
         s();
     }
 
     @Override // p9.a
     public int e() {
-        return this.f45336l;
+        return this.f44004l;
     }
 
     @Override // p9.a
     public void f(ColorFilter colorFilter) {
-        this.f45334j.setColorFilter(colorFilter);
+        this.f44002j.setColorFilter(colorFilter);
     }
 
     @Override // p9.d
     public int g() {
-        return this.f45327c.g();
+        return this.f43995c.g();
     }
 
     @Override // p9.a
@@ -335,16 +335,16 @@ public final class a implements p9.a, c.b {
         Intrinsics.checkNotNullParameter(parent, "parent");
         Intrinsics.checkNotNullParameter(canvas, "canvas");
         boolean q10 = q(canvas, i10, 0);
-        if (!this.f45329e && (bVar = this.f45331g) != null && (aVar = this.f45330f) != null) {
-            a.C0664a.f(aVar, bVar, this.f45326b, this, i10, null, 16, null);
+        if (!this.f43997e && (bVar = this.f43999g) != null && (aVar = this.f43998f) != null) {
+            a.C0649a.f(aVar, bVar, this.f43994b, this, i10, null, 16, null);
         }
         return q10;
     }
 
     @Override // p9.c.b
     public void i() {
-        if (this.f45329e) {
-            s9.a aVar = this.f45330f;
+        if (this.f43997e) {
+            s9.a aVar = this.f43998f;
             if (aVar != null) {
                 aVar.b();
                 return;
@@ -356,26 +356,26 @@ public final class a implements p9.a, c.b {
 
     @Override // p9.d
     public int j() {
-        return this.f45327c.j();
+        return this.f43995c.j();
     }
 
     @Override // p9.d
     public int k(int i10) {
-        return this.f45327c.k(i10);
+        return this.f43995c.k(i10);
     }
 
     @Override // p9.a
     public void l(int i10) {
-        this.f45334j.setAlpha(i10);
+        this.f44002j.setAlpha(i10);
     }
 
     @Override // p9.d
     public int m() {
-        return this.f45327c.m();
+        return this.f43995c.m();
     }
 
     @Override // p9.a
-    public void n(a.InterfaceC0610a interfaceC0610a) {
-        this.f45341q = interfaceC0610a;
+    public void n(a.InterfaceC0586a interfaceC0586a) {
+        this.f44009q = interfaceC0586a;
     }
 }

@@ -1,48 +1,71 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var3 = dependencyMap;
-    var0 = 0;
-    var4 = var3[var0];
-    var3 = require;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var4 = var3.useRef;
-    var _closure1_slot0 = var4;
-    var3 = var3.useLayoutEffect;
-    var _closure1_slot1 = var3;
-    var1 = function() {
-        var3 = _closure1_slot0;
-        var4 = undefined;
-        var0 = false;
-        var0 = var3.bind(var4)(var0);
-        var _closure2_slot0 = var0;
-        var3 = _closure1_slot1;
-        var2 = function() { // Environment: var1
-            var1 = _closure2_slot0;
-            var0 = false;
-            var1.current = var0;
-            var0 = function() { // Environment: var0
-                var1 = _closure2_slot0;
-                var0 = true;
-                var1.current = var0;
-                var0 = undefined;
+    var0 = module;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var1 = function arg0, arg1() {
+        _fun45915: for (var _fun45915_ip = 0;;) switch (_fun45915_ip) {
+            case 0:
+                var2 = arg0;
+                var6 = arg1;
+                var0 = {};
+                var1 = var0.hasOwnProperty;
+                var0 = var1.call;
+                var1 = var0.bind(var1)(var2, var6);
+                var0 = var2;
+                if (var1) {
+                    _fun45915_ip = 126;
+                    continue _fun45915
+                }
+            case 31:
+                var7 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var4 = 0;
+                var1 = var1[var4];
+                var3 = undefined;
+                var1 = var7.bind(var3)(var1);
+                var1 = var1.bind(var3)(var2);
+                var2 = null;
+                var0 = var1;
+                if (!(var2 !== var0)) {
+                    _fun45915_ip = 126;
+                    continue _fun45915
+                }
+            case 69:
+                var7 = {};
+                var8 = var7.hasOwnProperty;
+                var7 = var8.call;
+                var7 = var7.bind(var8)(var1, var6);
+                var8 = var1;
+                var0 = var8;
+                if (var7) {
+                    _fun45915_ip = 126;
+                    continue _fun45915
+                }
+            case 97:
+                var9 = _closure1_slot0;
+                var7 = _closure1_slot1;
+                var7 = var7[var4];
+                var7 = var9.bind(var3)(var7);
+                var1 = var7.bind(var3)(var8);
+                var0 = var1;
+                if (var2 !== var0) {
+                    _fun45915_ip = 69;
+                    continue _fun45915
+                }
+            case 126:
                 return var0;
-            };
-            return var0;
-        };
-        var1 = new Array(0);
-        var1 = var3.bind(var4)(var2, var1);
-        return var0;
+        }
     };
-    var2.useUnmountFlag = var1;
+    var0.exports = var1;
+    var2 = var0.exports;
+    var1 = true;
+    var2.__esModule = var1;
+    var1 = var0.exports;
+    var0 = var0.exports;
+    var1.default = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5147]);

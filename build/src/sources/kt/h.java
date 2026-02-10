@@ -1,42 +1,23 @@
 package kt;
-
-import jt.e;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class h implements KSerializer {
+public interface h {
+    Integer A();
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final h f35145a = new h();
+    void B(Integer num);
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f35146b = new g2("kotlin.Boolean", e.a.f30476a);
+    Integer C();
 
-    private h() {
-    }
+    void E(Integer num);
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public Boolean deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return Boolean.valueOf(decoder.w());
-    }
+    Integer f();
 
-    public void b(Encoder encoder, boolean z10) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        encoder.r(z10);
-    }
+    Integer g();
 
-    @Override // kotlinx.serialization.KSerializer, gt.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f35146b;
-    }
+    Integer k();
 
-    @Override // gt.o
-    public /* bridge */ /* synthetic */ void serialize(Encoder encoder, Object obj) {
-        b(encoder, ((Boolean) obj).booleanValue());
-    }
+    void o(Integer num);
+
+    void v(Integer num);
+
+    void y(Integer num);
 }

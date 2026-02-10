@@ -10,8 +10,8 @@ import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
-import lv.a;
 import org.chromium.net.CronetEngine;
+import uv.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class CronetProvider {
     private static final String GMS_CORE_CRONET_PROVIDER_CLASS = "com.google.android.gms.net.GmsCoreCronetProvider";
@@ -29,23 +29,23 @@ public abstract class CronetProvider {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public CronetProvider f42625a;
+        public CronetProvider f41091a;
 
         /* renamed from: b  reason: collision with root package name */
-        public a.b f42626b;
+        public a.b f41092b;
 
         a() {
         }
 
         public boolean equals(Object obj) {
-            if ((obj instanceof a) && this.f42625a.equals(((a) obj).f42625a)) {
+            if ((obj instanceof a) && this.f41091a.equals(((a) obj).f41091a)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f42625a.hashCode();
+            return this.f41091a.hashCode();
         }
     }
 
@@ -79,8 +79,8 @@ public abstract class CronetProvider {
         try {
             Constructor constructor = context.getClassLoader().loadClass(str).asSubclass(CronetProvider.class).getConstructor(Context.class);
             a aVar = new a();
-            aVar.f42625a = (CronetProvider) constructor.newInstance(context);
-            aVar.f42626b = bVar;
+            aVar.f41091a = (CronetProvider) constructor.newInstance(context);
+            aVar.f41092b = bVar;
             set.add(aVar);
             return true;
         } catch (ClassNotFoundException e10) {
@@ -116,7 +116,7 @@ public abstract class CronetProvider {
     public static List<CronetProvider> getAllProviders(Context context) {
         ArrayList arrayList = new ArrayList();
         for (a aVar : getAllProviderInfos(context)) {
-            arrayList.add(aVar.f42625a);
+            arrayList.add(aVar.f41091a);
         }
         return Collections.unmodifiableList(arrayList);
     }

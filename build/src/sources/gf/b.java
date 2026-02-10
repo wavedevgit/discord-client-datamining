@@ -5,22 +5,22 @@ import ff.a;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f24265a;
+    private final int f25565a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ff.a f24266b;
+    private final ff.a f25566b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a.d f24267c;
+    private final a.d f25567c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f24268d;
+    private final String f25568d;
 
     private b(ff.a aVar, a.d dVar, String str) {
-        this.f24266b = aVar;
-        this.f24267c = dVar;
-        this.f24268d = str;
-        this.f24265a = hf.o.b(aVar, dVar, str);
+        this.f25566b = aVar;
+        this.f25567c = dVar;
+        this.f25568d = str;
+        this.f25565a = hf.o.b(aVar, dVar, str);
     }
 
     public static b a(ff.a aVar, a.d dVar, String str) {
@@ -28,7 +28,7 @@ public final class b {
     }
 
     public final String b() {
-        return this.f24266b.c();
+        return this.f25566b.c();
     }
 
     public final boolean equals(Object obj) {
@@ -42,13 +42,13 @@ public final class b {
             return false;
         }
         b bVar = (b) obj;
-        if (!hf.o.a(this.f24266b, bVar.f24266b) || !hf.o.a(this.f24267c, bVar.f24267c) || !hf.o.a(this.f24268d, bVar.f24268d)) {
+        if (!hf.o.a(this.f25566b, bVar.f25566b) || !hf.o.a(this.f25567c, bVar.f25567c) || !hf.o.a(this.f25568d, bVar.f25568d)) {
             return false;
         }
         return true;
     }
 
     public final int hashCode() {
-        return this.f24265a;
+        return this.f25565a;
     }
 }

@@ -113,4 +113,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GuildSubscriptionRemoval = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7325, 10077, 10078, 10079, 3207, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7335, 10088, 10089, 10090, 3207, 2]);

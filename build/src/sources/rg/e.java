@@ -8,15 +8,15 @@ import java.util.Set;
 public final class e extends c1 {
 
     /* renamed from: i  reason: collision with root package name */
-    final transient Map f48174i;
+    final transient Map f46628i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ m f48175o;
+    final /* synthetic */ m f46629o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(m mVar, Map map) {
-        this.f48175o = mVar;
-        this.f48174i = map;
+        this.f46629o = mVar;
+        this.f46628i = map;
     }
 
     @Override // rg.c1
@@ -27,9 +27,9 @@ public final class e extends c1 {
     @Override // java.util.AbstractMap, java.util.Map
     public final void clear() {
         Map map;
-        m mVar = this.f48175o;
-        Map map2 = this.f48174i;
-        map = mVar.f48540i;
+        m mVar = this.f46629o;
+        Map map2 = this.f46628i;
+        map = mVar.f46994i;
         if (map2 == map) {
             mVar.o();
         } else {
@@ -39,12 +39,12 @@ public final class e extends c1 {
 
     @Override // java.util.AbstractMap, java.util.Map
     public final boolean containsKey(Object obj) {
-        return d1.b(this.f48174i, obj);
+        return d1.b(this.f46628i, obj);
     }
 
     @Override // java.util.AbstractMap, java.util.Map
     public final boolean equals(Object obj) {
-        if (this != obj && !this.f48174i.equals(obj)) {
+        if (this != obj && !this.f46628i.equals(obj)) {
             return false;
         }
         return true;
@@ -52,46 +52,46 @@ public final class e extends c1 {
 
     @Override // java.util.AbstractMap, java.util.Map
     public final /* bridge */ /* synthetic */ Object get(Object obj) {
-        Collection collection = (Collection) d1.a(this.f48174i, obj);
+        Collection collection = (Collection) d1.a(this.f46628i, obj);
         if (collection == null) {
             return null;
         }
-        return this.f48175o.h(obj, collection);
+        return this.f46629o.h(obj, collection);
     }
 
     @Override // java.util.AbstractMap, java.util.Map
     public final int hashCode() {
-        return this.f48174i.hashCode();
+        return this.f46628i.hashCode();
     }
 
     @Override // java.util.AbstractMap, java.util.Map
     public final Set keySet() {
-        return this.f48175o.d();
+        return this.f46629o.d();
     }
 
     @Override // java.util.AbstractMap, java.util.Map
     public final /* bridge */ /* synthetic */ Object remove(Object obj) {
         int i10;
-        Collection collection = (Collection) this.f48174i.remove(obj);
+        Collection collection = (Collection) this.f46628i.remove(obj);
         if (collection == null) {
             return null;
         }
-        Collection g10 = this.f48175o.g();
+        Collection g10 = this.f46629o.g();
         g10.addAll(collection);
-        m mVar = this.f48175o;
-        i10 = mVar.f48541o;
-        mVar.f48541o = i10 - collection.size();
+        m mVar = this.f46629o;
+        i10 = mVar.f46995o;
+        mVar.f46995o = i10 - collection.size();
         collection.clear();
         return g10;
     }
 
     @Override // java.util.AbstractMap, java.util.Map
     public final int size() {
-        return this.f48174i.size();
+        return this.f46628i.size();
     }
 
     @Override // java.util.AbstractMap
     public final String toString() {
-        return this.f48174i.toString();
+        return this.f46628i.toString();
     }
 }

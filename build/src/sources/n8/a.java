@@ -8,13 +8,13 @@ import java.util.concurrent.TimeUnit;
 public class a extends AbstractExecutorService implements AutoCloseable {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final a f37976d = new a();
+    private static final a f36980d = new a();
 
     private a() {
     }
 
     public static a a() {
-        return f37976d;
+        return f36980d;
     }
 
     @Override // java.util.concurrent.ExecutorService

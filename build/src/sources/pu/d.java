@@ -1,150 +1,206 @@
 package pu;
 
-import java.security.cert.Certificate;
-import java.security.cert.CertificateParsingException;
-import java.security.cert.X509Certificate;
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Locale;
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.SSLException;
-import javax.net.ssl.SSLSession;
-import kotlin.collections.CollectionsKt;
+import java.util.concurrent.RejectedExecutionException;
+import java.util.logging.Level;
+import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
-import ru.k0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements HostnameVerifier {
+public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f44558a = new d();
+    private final e f43208a;
 
-    private d() {
+    /* renamed from: b  reason: collision with root package name */
+    private final String f43209b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private boolean f43210c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private a f43211d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final List f43212e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private boolean f43213f;
+
+    public d(e taskRunner, String name) {
+        Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
+        Intrinsics.checkNotNullParameter(name, "name");
+        this.f43208a = taskRunner;
+        this.f43209b = name;
+        this.f43212e = new ArrayList();
     }
 
-    private final String b(String str) {
-        if (d(str)) {
-            Locale US = Locale.US;
-            Intrinsics.checkNotNullExpressionValue(US, "US");
-            String lowerCase = str.toLowerCase(US);
-            Intrinsics.checkNotNullExpressionValue(lowerCase, "this as java.lang.String).toLowerCase(locale)");
-            return lowerCase;
+    public static /* synthetic */ void j(d dVar, a aVar, long j10, int i10, Object obj) {
+        if ((i10 & 2) != 0) {
+            j10 = 0;
         }
-        return str;
+        dVar.i(aVar, j10);
     }
 
-    private final List c(X509Certificate x509Certificate, int i10) {
-        Object obj;
-        try {
-            Collection<List<?>> subjectAlternativeNames = x509Certificate.getSubjectAlternativeNames();
-            if (subjectAlternativeNames == null) {
-                return CollectionsKt.l();
-            }
-            ArrayList arrayList = new ArrayList();
-            for (List<?> list : subjectAlternativeNames) {
-                if (list != null && list.size() >= 2 && Intrinsics.areEqual(list.get(0), Integer.valueOf(i10)) && (obj = list.get(1)) != null) {
-                    arrayList.add((String) obj);
+    public final void a() {
+        if (mu.e.f36663h && Thread.holdsLock(this)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
+        }
+        synchronized (this.f43208a) {
+            try {
+                if (b()) {
+                    this.f43208a.h(this);
                 }
+                Unit unit = Unit.f31987a;
+            } catch (Throwable th2) {
+                throw th2;
             }
-            return arrayList;
-        } catch (CertificateParsingException unused) {
-            return CollectionsKt.l();
         }
     }
 
-    private final boolean d(String str) {
-        if (str.length() != ((int) k0.b(str, 0, 0, 3, null))) {
+    public final boolean b() {
+        a aVar = this.f43211d;
+        if (aVar != null) {
+            Intrinsics.checkNotNull(aVar);
+            if (aVar.a()) {
+                this.f43213f = true;
+            }
+        }
+        boolean z10 = false;
+        for (int size = this.f43212e.size() - 1; -1 < size; size--) {
+            if (((a) this.f43212e.get(size)).a()) {
+                a aVar2 = (a) this.f43212e.get(size);
+                if (e.f43214h.a().isLoggable(Level.FINE)) {
+                    b.a(aVar2, this, "canceled");
+                }
+                this.f43212e.remove(size);
+                z10 = true;
+            }
+        }
+        return z10;
+    }
+
+    public final a c() {
+        return this.f43211d;
+    }
+
+    public final boolean d() {
+        return this.f43213f;
+    }
+
+    public final List e() {
+        return this.f43212e;
+    }
+
+    public final String f() {
+        return this.f43209b;
+    }
+
+    public final boolean g() {
+        return this.f43210c;
+    }
+
+    public final e h() {
+        return this.f43208a;
+    }
+
+    public final void i(a task, long j10) {
+        Intrinsics.checkNotNullParameter(task, "task");
+        synchronized (this.f43208a) {
+            if (this.f43210c) {
+                if (task.a()) {
+                    if (e.f43214h.a().isLoggable(Level.FINE)) {
+                        b.a(task, this, "schedule canceled (queue is shutdown)");
+                    }
+                    return;
+                }
+                if (e.f43214h.a().isLoggable(Level.FINE)) {
+                    b.a(task, this, "schedule failed (queue is shutdown)");
+                }
+                throw new RejectedExecutionException();
+            }
+            if (k(task, j10, false)) {
+                this.f43208a.h(this);
+            }
+            Unit unit = Unit.f31987a;
+        }
+    }
+
+    public final boolean k(a task, long j10, boolean z10) {
+        String str;
+        Intrinsics.checkNotNullParameter(task, "task");
+        task.e(this);
+        long c10 = this.f43208a.g().c();
+        long j11 = c10 + j10;
+        int indexOf = this.f43212e.indexOf(task);
+        if (indexOf != -1) {
+            if (task.c() <= j11) {
+                if (e.f43214h.a().isLoggable(Level.FINE)) {
+                    b.a(task, this, "already scheduled");
+                }
+                return false;
+            }
+            this.f43212e.remove(indexOf);
+        }
+        task.g(j11);
+        if (e.f43214h.a().isLoggable(Level.FINE)) {
+            if (z10) {
+                str = "run again after " + b.b(j11 - c10);
+            } else {
+                str = "scheduled after " + b.b(j11 - c10);
+            }
+            b.a(task, this, str);
+        }
+        Iterator it = this.f43212e.iterator();
+        int i10 = 0;
+        while (true) {
+            if (it.hasNext()) {
+                if (((a) it.next()).c() - c10 > j10) {
+                    break;
+                }
+                i10++;
+            } else {
+                i10 = -1;
+                break;
+            }
+        }
+        if (i10 == -1) {
+            i10 = this.f43212e.size();
+        }
+        this.f43212e.add(i10, task);
+        if (i10 != 0) {
             return false;
         }
         return true;
     }
 
-    private final boolean f(String str, String str2) {
-        if (str != null && str.length() != 0 && !StringsKt.P(str, ".", false, 2, null) && !StringsKt.z(str, "..", false, 2, null) && str2 != null && str2.length() != 0 && !StringsKt.P(str2, ".", false, 2, null) && !StringsKt.z(str2, "..", false, 2, null)) {
-            if (!StringsKt.z(str, ".", false, 2, null)) {
-                str = str + '.';
-            }
-            String str3 = str;
-            if (!StringsKt.z(str2, ".", false, 2, null)) {
-                str2 = str2 + '.';
-            }
-            String b10 = b(str2);
-            if (!StringsKt.V(b10, "*", false, 2, null)) {
-                return Intrinsics.areEqual(str3, b10);
-            }
-            if (!StringsKt.P(b10, "*.", false, 2, null) || StringsKt.h0(b10, '*', 1, false, 4, null) != -1 || str3.length() < b10.length() || Intrinsics.areEqual("*.", b10)) {
-                return false;
-            }
-            String substring = b10.substring(1);
-            Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String).substring(startIndex)");
-            if (!StringsKt.z(str3, substring, false, 2, null)) {
-                return false;
-            }
-            int length = str3.length() - substring.length();
-            if (length > 0 && StringsKt.n0(str3, '.', length - 1, false, 4, null) != -1) {
-                return false;
-            }
-            return true;
-        }
-        return false;
+    public final void l(a aVar) {
+        this.f43211d = aVar;
     }
 
-    private final boolean g(String str, X509Certificate x509Certificate) {
-        String b10 = b(str);
-        List<String> c10 = c(x509Certificate, 2);
-        if ((c10 instanceof Collection) && c10.isEmpty()) {
-            return false;
+    public final void m(boolean z10) {
+        this.f43213f = z10;
+    }
+
+    public final void n() {
+        if (mu.e.f36663h && Thread.holdsLock(this)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
-        for (String str2 : c10) {
-            if (f44558a.f(b10, str2)) {
-                return true;
+        synchronized (this.f43208a) {
+            try {
+                this.f43210c = true;
+                if (b()) {
+                    this.f43208a.h(this);
+                }
+                Unit unit = Unit.f31987a;
+            } catch (Throwable th2) {
+                throw th2;
             }
         }
-        return false;
     }
 
-    private final boolean h(String str, X509Certificate x509Certificate) {
-        String e10 = du.a.e(str);
-        List<String> c10 = c(x509Certificate, 7);
-        if ((c10 instanceof Collection) && c10.isEmpty()) {
-            return false;
-        }
-        for (String str2 : c10) {
-            if (Intrinsics.areEqual(e10, du.a.e(str2))) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public final List a(X509Certificate certificate) {
-        Intrinsics.checkNotNullParameter(certificate, "certificate");
-        return CollectionsKt.L0(c(certificate, 7), c(certificate, 2));
-    }
-
-    public final boolean e(String host, X509Certificate certificate) {
-        Intrinsics.checkNotNullParameter(host, "host");
-        Intrinsics.checkNotNullParameter(certificate, "certificate");
-        if (du.e.i(host)) {
-            return h(host, certificate);
-        }
-        return g(host, certificate);
-    }
-
-    @Override // javax.net.ssl.HostnameVerifier
-    public boolean verify(String host, SSLSession session) {
-        Intrinsics.checkNotNullParameter(host, "host");
-        Intrinsics.checkNotNullParameter(session, "session");
-        if (!d(host)) {
-            return false;
-        }
-        try {
-            Certificate certificate = session.getPeerCertificates()[0];
-            Intrinsics.checkNotNull(certificate, "null cannot be cast to non-null type java.security.cert.X509Certificate");
-            return e(host, (X509Certificate) certificate);
-        } catch (SSLException unused) {
-            return false;
-        }
+    public String toString() {
+        return this.f43209b;
     }
 }

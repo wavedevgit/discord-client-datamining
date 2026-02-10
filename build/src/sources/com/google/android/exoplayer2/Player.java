@@ -21,13 +21,13 @@ public interface Player {
     public static final class Commands implements g {
 
         /* renamed from: e  reason: collision with root package name */
-        public static final Commands f11979e = new a().e();
+        public static final Commands f12556e = new a().e();
 
         /* renamed from: i  reason: collision with root package name */
-        private static final String f11980i = oe.w0.B0(0);
+        private static final String f12557i = oe.w0.B0(0);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final g.a f11981o = new g.a() { // from class: mc.o0
+        public static final g.a f12558o = new g.a() { // from class: mc.o0
             @Override // com.google.android.exoplayer2.g.a
             public final com.google.android.exoplayer2.g a(Bundle bundle) {
                 Player.Commands d10;
@@ -37,47 +37,47 @@ public interface Player {
         };
 
         /* renamed from: d  reason: collision with root package name */
-        private final oe.q f11982d;
+        private final oe.q f12559d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public static final class a {
 
             /* renamed from: b  reason: collision with root package name */
-            private static final int[] f11983b = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 31, 20, 21, 22, 23, 24, 25, 33, 26, 34, 27, 28, 29, 30, 32};
+            private static final int[] f12560b = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 31, 20, 21, 22, 23, 24, 25, 33, 26, 34, 27, 28, 29, 30, 32};
 
             /* renamed from: a  reason: collision with root package name */
-            private final q.b f11984a = new q.b();
+            private final q.b f12561a = new q.b();
 
             public a a(int i10) {
-                this.f11984a.a(i10);
+                this.f12561a.a(i10);
                 return this;
             }
 
             public a b(Commands commands) {
-                this.f11984a.b(commands.f11982d);
+                this.f12561a.b(commands.f12559d);
                 return this;
             }
 
             public a c(int... iArr) {
-                this.f11984a.c(iArr);
+                this.f12561a.c(iArr);
                 return this;
             }
 
             public a d(int i10, boolean z10) {
-                this.f11984a.d(i10, z10);
+                this.f12561a.d(i10, z10);
                 return this;
             }
 
             public Commands e() {
-                return new Commands(this.f11984a.e());
+                return new Commands(this.f12561a.e());
             }
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static Commands d(Bundle bundle) {
-            ArrayList<Integer> integerArrayList = bundle.getIntegerArrayList(f11980i);
+            ArrayList<Integer> integerArrayList = bundle.getIntegerArrayList(f12557i);
             if (integerArrayList == null) {
-                return f11979e;
+                return f12556e;
             }
             a aVar = new a();
             for (int i10 = 0; i10 < integerArrayList.size(); i10++) {
@@ -87,7 +87,7 @@ public interface Player {
         }
 
         public boolean c(int i10) {
-            return this.f11982d.a(i10);
+            return this.f12559d.a(i10);
         }
 
         public boolean equals(Object obj) {
@@ -97,15 +97,15 @@ public interface Player {
             if (!(obj instanceof Commands)) {
                 return false;
             }
-            return this.f11982d.equals(((Commands) obj).f11982d);
+            return this.f12559d.equals(((Commands) obj).f12559d);
         }
 
         public int hashCode() {
-            return this.f11982d.hashCode();
+            return this.f12559d.hashCode();
         }
 
         private Commands(oe.q qVar) {
-            this.f11982d = qVar;
+            this.f12559d = qVar;
         }
     }
 
@@ -113,18 +113,18 @@ public interface Player {
     public static final class Events {
 
         /* renamed from: a  reason: collision with root package name */
-        private final oe.q f11985a;
+        private final oe.q f12562a;
 
         public Events(oe.q qVar) {
-            this.f11985a = qVar;
+            this.f12562a = qVar;
         }
 
         public boolean a(int i10) {
-            return this.f11985a.a(i10);
+            return this.f12562a.a(i10);
         }
 
         public boolean b(int... iArr) {
-            return this.f11985a.b(iArr);
+            return this.f12562a.b(iArr);
         }
 
         public boolean equals(Object obj) {
@@ -134,11 +134,11 @@ public interface Player {
             if (!(obj instanceof Events)) {
                 return false;
             }
-            return this.f11985a.equals(((Events) obj).f11985a);
+            return this.f12562a.equals(((Events) obj).f12562a);
         }
 
         public int hashCode() {
-            return this.f11985a.hashCode();
+            return this.f12562a.hashCode();
         }
     }
 
@@ -146,49 +146,49 @@ public interface Player {
     public static final class PositionInfo implements g {
 
         /* renamed from: d  reason: collision with root package name */
-        public final Object f11991d;
+        public final Object f12568d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f11992e;
+        public final int f12569e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final int f11993i;
+        public final int f12570i;
 
         /* renamed from: o  reason: collision with root package name */
-        public final MediaItem f11994o;
+        public final MediaItem f12571o;
 
         /* renamed from: p  reason: collision with root package name */
-        public final Object f11995p;
+        public final Object f12572p;
 
         /* renamed from: q  reason: collision with root package name */
-        public final int f11996q;
+        public final int f12573q;
 
         /* renamed from: r  reason: collision with root package name */
-        public final long f11997r;
+        public final long f12574r;
 
         /* renamed from: s  reason: collision with root package name */
-        public final long f11998s;
+        public final long f12575s;
 
         /* renamed from: t  reason: collision with root package name */
-        public final int f11999t;
+        public final int f12576t;
 
         /* renamed from: u  reason: collision with root package name */
-        public final int f12000u;
+        public final int f12577u;
 
         /* renamed from: v  reason: collision with root package name */
-        private static final String f11986v = oe.w0.B0(0);
+        private static final String f12563v = oe.w0.B0(0);
 
         /* renamed from: w  reason: collision with root package name */
-        private static final String f11987w = oe.w0.B0(1);
+        private static final String f12564w = oe.w0.B0(1);
 
         /* renamed from: x  reason: collision with root package name */
-        private static final String f11988x = oe.w0.B0(2);
+        private static final String f12565x = oe.w0.B0(2);
 
         /* renamed from: y  reason: collision with root package name */
-        private static final String f11989y = oe.w0.B0(3);
+        private static final String f12566y = oe.w0.B0(3);
 
         /* renamed from: z  reason: collision with root package name */
-        private static final String f11990z = oe.w0.B0(4);
+        private static final String f12567z = oe.w0.B0(4);
         private static final String A = oe.w0.B0(5);
         private static final String B = oe.w0.B0(6);
         public static final g.a C = new g.a() { // from class: mc.p0
@@ -201,29 +201,29 @@ public interface Player {
         };
 
         public PositionInfo(Object obj, int i10, MediaItem mediaItem, Object obj2, int i11, long j10, long j11, int i12, int i13) {
-            this.f11991d = obj;
-            this.f11992e = i10;
-            this.f11993i = i10;
-            this.f11994o = mediaItem;
-            this.f11995p = obj2;
-            this.f11996q = i11;
-            this.f11997r = j10;
-            this.f11998s = j11;
-            this.f11999t = i12;
-            this.f12000u = i13;
+            this.f12568d = obj;
+            this.f12569e = i10;
+            this.f12570i = i10;
+            this.f12571o = mediaItem;
+            this.f12572p = obj2;
+            this.f12573q = i11;
+            this.f12574r = j10;
+            this.f12575s = j11;
+            this.f12576t = i12;
+            this.f12577u = i13;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static PositionInfo b(Bundle bundle) {
             MediaItem mediaItem;
-            int i10 = bundle.getInt(f11986v, 0);
-            Bundle bundle2 = bundle.getBundle(f11987w);
+            int i10 = bundle.getInt(f12563v, 0);
+            Bundle bundle2 = bundle.getBundle(f12564w);
             if (bundle2 == null) {
                 mediaItem = null;
             } else {
                 mediaItem = (MediaItem) MediaItem.A.a(bundle2);
             }
-            return new PositionInfo(null, i10, mediaItem, null, bundle.getInt(f11988x, 0), bundle.getLong(f11989y, 0L), bundle.getLong(f11990z, 0L), bundle.getInt(A, -1), bundle.getInt(B, -1));
+            return new PositionInfo(null, i10, mediaItem, null, bundle.getInt(f12565x, 0), bundle.getLong(f12566y, 0L), bundle.getLong(f12567z, 0L), bundle.getInt(A, -1), bundle.getInt(B, -1));
         }
 
         public boolean equals(Object obj) {
@@ -232,7 +232,7 @@ public interface Player {
             }
             if (obj != null && PositionInfo.class == obj.getClass()) {
                 PositionInfo positionInfo = (PositionInfo) obj;
-                if (this.f11993i == positionInfo.f11993i && this.f11996q == positionInfo.f11996q && this.f11997r == positionInfo.f11997r && this.f11998s == positionInfo.f11998s && this.f11999t == positionInfo.f11999t && this.f12000u == positionInfo.f12000u && ni.j.a(this.f11991d, positionInfo.f11991d) && ni.j.a(this.f11995p, positionInfo.f11995p) && ni.j.a(this.f11994o, positionInfo.f11994o)) {
+                if (this.f12570i == positionInfo.f12570i && this.f12573q == positionInfo.f12573q && this.f12574r == positionInfo.f12574r && this.f12575s == positionInfo.f12575s && this.f12576t == positionInfo.f12576t && this.f12577u == positionInfo.f12577u && pi.j.a(this.f12568d, positionInfo.f12568d) && pi.j.a(this.f12572p, positionInfo.f12572p) && pi.j.a(this.f12571o, positionInfo.f12571o)) {
                     return true;
                 }
             }
@@ -240,7 +240,7 @@ public interface Player {
         }
 
         public int hashCode() {
-            return ni.j.b(this.f11991d, Integer.valueOf(this.f11993i), this.f11994o, this.f11995p, Integer.valueOf(this.f11996q), Long.valueOf(this.f11997r), Long.valueOf(this.f11998s), Integer.valueOf(this.f11999t), Integer.valueOf(this.f12000u));
+            return pi.j.b(this.f12568d, Integer.valueOf(this.f12570i), this.f12571o, this.f12572p, Integer.valueOf(this.f12573q), Long.valueOf(this.f12574r), Long.valueOf(this.f12575s), Integer.valueOf(this.f12576t), Integer.valueOf(this.f12577u));
         }
     }
 

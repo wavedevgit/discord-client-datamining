@@ -1,154 +1,55 @@
 package tt;
 
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KClass;
+import kotlinx.serialization.KSerializer;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class p {
+final class p implements k2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final p f51090a;
+    private final Function1 f50044a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final p f51091b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final p f51092c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final p f51093d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final Map f51094e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final Map f51095f;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static /* synthetic */ class a {
-
-        /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f51096a;
-
-        static {
-            int[] iArr = new int[k.values().length];
-            f51096a = iArr;
-            try {
-                iArr[k.CARDINALS.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                f51096a[k.ORDINALS.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
-            }
-        }
-    }
+    private final r f50045b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class b implements o {
-        private b() {
+    public static final class a implements Function0 {
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ KClass f50047e;
+
+        public a(KClass kClass) {
+            this.f50047e = kClass;
         }
 
-        @Override // tt.o
-        public p a(Locale locale, k kVar) {
-            boolean equals = locale.getLanguage().equals("en");
-            int i10 = a.f51096a[kVar.ordinal()];
-            if (i10 == 1) {
-                return equals ? p.f51090a : p.f51091b;
-            } else if (i10 == 2) {
-                return equals ? p.f51092c : p.f51093d;
-            } else {
-                throw new UnsupportedOperationException(kVar.name());
-            }
-        }
-
-        /* synthetic */ b(a aVar) {
-            this();
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            return new k((KSerializer) p.this.b().invoke(this.f50047e));
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class c extends p {
-
-        /* renamed from: g  reason: collision with root package name */
-        private final k f51097g;
-
-        /* renamed from: h  reason: collision with root package name */
-        private final boolean f51098h;
-
-        /* synthetic */ c(k kVar, boolean z10, a aVar) {
-            this(kVar, z10);
-        }
-
-        private c(k kVar, boolean z10) {
-            this.f51097g = kVar;
-            this.f51098h = z10;
-        }
+    public p(Function1 compute) {
+        Intrinsics.checkNotNullParameter(compute, "compute");
+        this.f50044a = compute;
+        this.f50045b = new r();
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class d {
-
-        /* renamed from: a  reason: collision with root package name */
-        private static final o f51099a;
-
-        static {
-            o oVar;
-            Iterator it = qt.d.c().g(o.class).iterator();
-            if (it.hasNext()) {
-                oVar = (o) it.next();
-            } else {
-                oVar = null;
-            }
-            if (oVar == null) {
-                oVar = new b(null);
-            }
-            f51099a = oVar;
+    @Override // tt.k2
+    public KSerializer a(KClass key) {
+        Intrinsics.checkNotNullParameter(key, "key");
+        Object obj = this.f50045b.get(ns.a.b(key));
+        Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
+        e1 e1Var = (e1) obj;
+        Object obj2 = e1Var.f49982a.get();
+        if (obj2 == null) {
+            obj2 = e1Var.a(new a(key));
         }
+        return ((k) obj2).f50014a;
     }
 
-    static {
-        k kVar = k.CARDINALS;
-        f51090a = new c(kVar, true, null);
-        f51091b = new c(kVar, false, null);
-        k kVar2 = k.ORDINALS;
-        f51092c = new c(kVar2, true, null);
-        f51093d = new c(kVar2, false, null);
-        f51094e = new ConcurrentHashMap();
-        f51095f = new ConcurrentHashMap();
-    }
-
-    private static Map e(k kVar) {
-        int i10 = a.f51096a[kVar.ordinal()];
-        if (i10 != 1) {
-            if (i10 == 2) {
-                return f51095f;
-            }
-            throw new UnsupportedOperationException(kVar.name());
-        }
-        return f51094e;
-    }
-
-    public static p f(Locale locale, k kVar) {
-        Map e10 = e(kVar);
-        p pVar = null;
-        if (!e10.isEmpty()) {
-            if (!locale.getCountry().equals("")) {
-                pVar = (p) e10.get(g(locale));
-            }
-            if (pVar == null) {
-                pVar = (p) e10.get(locale.getLanguage());
-            }
-        }
-        if (pVar == null) {
-            return d.f51099a.a(locale, kVar);
-        }
-        return pVar;
-    }
-
-    private static String g(Locale locale) {
-        return locale.getLanguage() + '_' + locale.getCountry();
+    public final Function1 b() {
+        return this.f50044a;
     }
 }

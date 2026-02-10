@@ -1,88 +1,73 @@
 package yo;
 
-import android.content.Context;
-import cs.j;
-import java.io.File;
-import java.lang.Thread;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import android.os.Parcel;
+import android.os.Parcelable;
+import ap.e;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private boolean f55716a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private boolean f55717b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final io.a f55718c;
+public final class b implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private List f55719d;
+    private final e f55678d;
 
-    public b(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        this.f55717b = true;
-        this.f55718c = new io.a(context);
-        this.f55719d = CollectionsKt.l();
-    }
+    /* renamed from: e  reason: collision with root package name */
+    private final String f55679e;
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void e(b bVar, Thread.UncaughtExceptionHandler uncaughtExceptionHandler, Thread thread, Throwable th2) {
-        Intrinsics.checkNotNull(th2);
-        bVar.c(th2);
-        if (uncaughtExceptionHandler != null) {
-            uncaughtExceptionHandler.uncaughtException(thread, th2);
-        } else {
-            System.exit(1);
-            throw new RuntimeException("System.exit returned normally, while it was supposed to halt JVM.");
+    /* renamed from: i  reason: collision with root package name */
+    private final Map f55680i;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final b createFromParcel(Parcel parcel) {
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            e valueOf = e.valueOf(parcel.readString());
+            String readString = parcel.readString();
+            int readInt = parcel.readInt();
+            LinkedHashMap linkedHashMap = new LinkedHashMap(readInt);
+            for (int i10 = 0; i10 != readInt; i10++) {
+                linkedHashMap.put(parcel.readString(), Integer.valueOf(parcel.readInt()));
+            }
+            return new b(valueOf, readString, linkedHashMap);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final b[] newArray(int i10) {
+            return new b[i10];
         }
     }
 
-    public final void b() {
-        this.f55718c.a();
+    public b(e idType, String minAge, Map elementToStoreLength) {
+        Intrinsics.checkNotNullParameter(idType, "idType");
+        Intrinsics.checkNotNullParameter(minAge, "minAge");
+        Intrinsics.checkNotNullParameter(elementToStoreLength, "elementToStoreLength");
+        this.f55678d = idType;
+        this.f55679e = minAge;
+        this.f55680i = elementToStoreLength;
     }
 
-    public final void c(Throwable e10) {
-        Intrinsics.checkNotNullParameter(e10, "e");
-        if (this.f55717b) {
-            try {
-                this.f55718c.g(e10);
-            } catch (Exception unused) {
-            }
-            try {
-                for (File file : this.f55719d) {
-                    j.r(file);
-                }
-            } catch (Exception unused2) {
-            }
-        }
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
     }
 
-    public final synchronized void d() {
-        if (this.f55716a) {
-            return;
-        }
-        this.f55716a = true;
-        final Thread.UncaughtExceptionHandler defaultUncaughtExceptionHandler = Thread.getDefaultUncaughtExceptionHandler();
-        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() { // from class: yo.a
-            @Override // java.lang.Thread.UncaughtExceptionHandler
-            public final void uncaughtException(Thread thread, Throwable th2) {
-                b.e(b.this, defaultUncaughtExceptionHandler, thread, th2);
-            }
-        });
-    }
-
-    public final void f(List list) {
-        Intrinsics.checkNotNullParameter(list, "<set-?>");
-        this.f55719d = list;
-    }
-
-    public final synchronized void g() {
-        if (this.f55716a) {
-            this.f55717b = false;
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeString(this.f55678d.name());
+        dest.writeString(this.f55679e);
+        Map map = this.f55680i;
+        dest.writeInt(map.size());
+        for (Map.Entry entry : map.entrySet()) {
+            dest.writeString((String) entry.getKey());
+            dest.writeInt(((Number) entry.getValue()).intValue());
         }
     }
 }

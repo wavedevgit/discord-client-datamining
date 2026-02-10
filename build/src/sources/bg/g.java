@@ -10,7 +10,7 @@ public final class g extends a implements IInterface {
         super(iBinder, "com.google.android.gms.appset.internal.IAppSetService");
     }
 
-    public final void h(ue.d dVar, f fVar) {
+    public final void i(ue.d dVar, f fVar) {
         Parcel e10 = e();
         c.b(e10, dVar);
         c.c(e10, fVar);

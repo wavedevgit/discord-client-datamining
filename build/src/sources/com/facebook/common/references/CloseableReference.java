@@ -12,28 +12,28 @@ import p8.j;
 public abstract class CloseableReference implements Cloneable, Closeable {
 
     /* renamed from: q  reason: collision with root package name */
-    private static int f9978q;
+    private static int f10555q;
 
     /* renamed from: d  reason: collision with root package name */
-    protected boolean f9981d = false;
+    protected boolean f10558d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    protected final t8.d f9982e;
+    protected final t8.d f10559e;
 
     /* renamed from: i  reason: collision with root package name */
-    protected final c f9983i;
+    protected final c f10560i;
 
     /* renamed from: o  reason: collision with root package name */
-    protected final Throwable f9984o;
+    protected final Throwable f10561o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static Class f9977p = CloseableReference.class;
+    private static Class f10554p = CloseableReference.class;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final t8.c f9979r = new a();
+    private static final t8.c f10556r = new a();
 
     /* renamed from: s  reason: collision with root package name */
-    private static final c f9980s = new b();
+    private static final c f10557s = new b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements t8.c {
@@ -59,7 +59,7 @@ public abstract class CloseableReference implements Cloneable, Closeable {
         public void a(t8.d dVar, Throwable th2) {
             String name;
             Object f10 = dVar.f();
-            Class cls = CloseableReference.f9977p;
+            Class cls = CloseableReference.f10554p;
             Integer valueOf = Integer.valueOf(System.identityHashCode(this));
             Integer valueOf2 = Integer.valueOf(System.identityHashCode(dVar));
             if (f10 == null) {
@@ -85,21 +85,48 @@ public abstract class CloseableReference implements Cloneable, Closeable {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public CloseableReference(t8.d dVar, c cVar, Throwable th2) {
-        this.f9982e = (t8.d) j.g(dVar);
+        this.f10559e = (t8.d) j.g(dVar);
         dVar.b();
-        this.f9983i = cVar;
-        this.f9984o = th2;
+        this.f10560i = cVar;
+        this.f10561o = th2;
     }
 
-    public static boolean G0(CloseableReference closeableReference) {
-        if (closeableReference != null && closeableReference.D0()) {
+    public static boolean C0(CloseableReference closeableReference) {
+        if (closeableReference != null && closeableReference.z0()) {
             return true;
         }
         return false;
     }
 
-    public static CloseableReference H0(Closeable closeable) {
-        return R0(closeable, f9979r);
+    public static CloseableReference E0(Closeable closeable) {
+        return G0(closeable, f10556r);
+    }
+
+    public static CloseableReference F0(Closeable closeable, c cVar) {
+        Throwable th2 = null;
+        if (closeable == null) {
+            return null;
+        }
+        t8.c cVar2 = f10556r;
+        if (cVar.b()) {
+            th2 = new Throwable();
+        }
+        return L0(closeable, cVar2, cVar, th2);
+    }
+
+    public static CloseableReference G0(Object obj, t8.c cVar) {
+        return H0(obj, cVar, f10557s);
+    }
+
+    public static CloseableReference H0(Object obj, t8.c cVar, c cVar2) {
+        Throwable th2 = null;
+        if (obj == null) {
+            return null;
+        }
+        if (cVar2.b()) {
+            th2 = new Throwable();
+        }
+        return L0(obj, cVar, cVar2, th2);
     }
 
     public static void I(Iterable iterable) {
@@ -111,39 +138,12 @@ public abstract class CloseableReference implements Cloneable, Closeable {
         }
     }
 
-    public static CloseableReference O0(Closeable closeable, c cVar) {
-        Throwable th2 = null;
-        if (closeable == null) {
-            return null;
-        }
-        t8.c cVar2 = f9979r;
-        if (cVar.b()) {
-            th2 = new Throwable();
-        }
-        return W0(closeable, cVar2, cVar, th2);
-    }
-
-    public static CloseableReference R0(Object obj, t8.c cVar) {
-        return V0(obj, cVar, f9980s);
-    }
-
-    public static CloseableReference V0(Object obj, t8.c cVar, c cVar2) {
-        Throwable th2 = null;
-        if (obj == null) {
-            return null;
-        }
-        if (cVar2.b()) {
-            th2 = new Throwable();
-        }
-        return W0(obj, cVar, cVar2, th2);
-    }
-
-    public static CloseableReference W0(Object obj, t8.c cVar, c cVar2, Throwable th2) {
+    public static CloseableReference L0(Object obj, t8.c cVar, c cVar2, Throwable th2) {
         if (obj == null) {
             return null;
         }
         if ((obj instanceof Bitmap) || (obj instanceof t8.a)) {
-            int i10 = f9978q;
+            int i10 = f10555q;
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
@@ -184,18 +184,14 @@ public abstract class CloseableReference implements Cloneable, Closeable {
         }
     }
 
-    public synchronized boolean D0() {
-        return !this.f9981d;
-    }
-
     public synchronized Object J() {
-        j.i(!this.f9981d);
-        return j.g(this.f9982e.f());
+        j.i(!this.f10558d);
+        return j.g(this.f10559e.f());
     }
 
     public int Z() {
-        if (D0()) {
-            return System.identityHashCode(this.f9982e.f());
+        if (z0()) {
+            return System.identityHashCode(this.f10559e.f());
         }
         return 0;
     }
@@ -204,11 +200,11 @@ public abstract class CloseableReference implements Cloneable, Closeable {
     public void close() {
         synchronized (this) {
             try {
-                if (this.f9981d) {
+                if (this.f10558d) {
                     return;
                 }
-                this.f9981d = true;
-                this.f9982e.d();
+                this.f10558d = true;
+                this.f10559e.d();
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -216,20 +212,24 @@ public abstract class CloseableReference implements Cloneable, Closeable {
     }
 
     @Override // 
-    /* renamed from: k */
+    /* renamed from: h */
     public abstract CloseableReference clone();
 
     public synchronized CloseableReference m() {
-        if (D0()) {
+        if (z0()) {
             return clone();
         }
         return null;
     }
 
+    public synchronized boolean z0() {
+        return !this.f10558d;
+    }
+
     /* JADX INFO: Access modifiers changed from: protected */
     public CloseableReference(Object obj, t8.c cVar, c cVar2, Throwable th2, boolean z10) {
-        this.f9982e = new t8.d(obj, cVar, z10);
-        this.f9983i = cVar2;
-        this.f9984o = th2;
+        this.f10559e = new t8.d(obj, cVar, z10);
+        this.f10560i = cVar2;
+        this.f10561o = th2;
     }
 }

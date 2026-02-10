@@ -9,17 +9,17 @@ import android.view.View;
 import android.widget.GridView;
 import android.widget.ListAdapter;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import java.util.Calendar;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class MaterialCalendarGridView extends GridView {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Calendar f14988d;
+    private final Calendar f15606d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f14989e;
+    private final boolean f15607e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends androidx.core.view.a {
@@ -85,7 +85,8 @@ public final class MaterialCalendarGridView extends GridView {
         if (!super.onKeyDown(i10, keyEvent)) {
             return false;
         }
-        if (getSelectedItemPosition() == -1 || getSelectedItemPosition() >= getAdapter2().b()) {
+        int selectedItemPosition = getSelectedItemPosition();
+        if (selectedItemPosition == -1 || (selectedItemPosition >= getAdapter2().b() && selectedItemPosition <= getAdapter2().k())) {
             return true;
         }
         if (19 != i10) {
@@ -97,7 +98,7 @@ public final class MaterialCalendarGridView extends GridView {
 
     @Override // android.widget.GridView, android.widget.AbsListView, android.view.View
     public void onMeasure(int i10, int i11) {
-        if (this.f14989e) {
+        if (this.f15607e) {
             super.onMeasure(i10, View.MeasureSpec.makeMeasureSpec(16777215, Integer.MIN_VALUE));
             getLayoutParams().height = getMeasuredHeight();
             return;
@@ -116,13 +117,13 @@ public final class MaterialCalendarGridView extends GridView {
 
     public MaterialCalendarGridView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f14988d = t.i();
+        this.f15606d = t.i();
         if (k.J(getContext())) {
-            setNextFocusLeftId(bh.f.f6708a);
-            setNextFocusRightId(bh.f.f6711d);
+            setNextFocusLeftId(bh.f.f6837a);
+            setNextFocusRightId(bh.f.f6843d);
         }
-        this.f14989e = k.L(getContext());
-        h0.n0(this, new a());
+        this.f15607e = k.L(getContext());
+        i0.k0(this, new a());
     }
 
     @Override // android.widget.AdapterView

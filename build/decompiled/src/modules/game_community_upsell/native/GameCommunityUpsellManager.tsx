@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() {
-        _fun86967: for (var _fun86967_ip = 0;;) switch (_fun86967_ip) {
+        _fun87023: for (var _fun87023_ip = 0;;) switch (_fun87023_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun86967_ip = 76;
-                continue _fun86967;
+                _fun87023_ip = 76;
+                continue _fun87023;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function arg0() {
-            _fun86971: for (var _fun86971_ip = 0;;) switch (_fun86971_ip) {
+            _fun87027: for (var _fun87027_ip = 0;;) switch (_fun87027_ip) {
                 case 0:
                     var5 = this;
                     var13 = 0;
@@ -122,14 +122,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot12;
                     var0 = var0.bind(var4)();
                     if (var0) {
-                        _fun86971_ip = 86;
-                        continue _fun86971
+                        _fun87027_ip = 86;
+                        continue _fun87027
                     }
                 case 73:
                     var0 = var9.apply;
                     var0 = var0.bind(var9)(var5, var10);
-                    _fun86971_ip = 120;
-                    continue _fun86971;
+                    _fun87027_ip = 120;
+                    continue _fun87027;
                 case 86:
                     var6 = global;
                     var8 = var6.Reflect;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'handleLogout';
         var4.key = var0;
         var0 = function() {
-            _fun86975: for (var _fun86975_ip = 0;;) switch (_fun86975_ip) {
+            _fun87031: for (var _fun87031_ip = 0;;) switch (_fun87031_ip) {
                 case 0:
                     var1 = this;
                     var0 = false;
@@ -203,8 +203,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var1.timeout;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun86975_ip = 50;
-                        continue _fun86975
+                        _fun87031_ip = 50;
+                        continue _fun87031
                     }
                 case 23:
                     var2 = global;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = 'scheduleGameDetection';
         var4.key = var7;
         var7 = function() {
-            _fun86976: for (var _fun86976_ip = 0;;) switch (_fun86976_ip) {
+            _fun87032: for (var _fun87032_ip = 0;;) switch (_fun87032_ip) {
                 case 0:
                     var2 = this;
                     var _closure3_slot0 = var2;
@@ -243,16 +243,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var5.isDebugMode;
                     var4 = var4.bind(var5)();
                     if (var4) {
-                        _fun86976_ip = 126;
-                        continue _fun86976
+                        _fun87032_ip = 128;
+                        continue _fun87032
                     }
-                case 73:
+                case 74:
                     var4 = var2.hasChecked;
                     if (!var4) {
-                        _fun86976_ip = 126;
-                        continue _fun86976
+                        _fun87032_ip = 128;
+                        continue _fun87032
                     }
-                case 82:
+                case 83:
                     var5 = _closure1_slot0;
                     var4 = _closure1_slot1;
                     var4 = var4[var6];
@@ -261,16 +261,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var7.log;
                     var4 = 'Already checked, skipping (debugMode: false)';
                     var4 = var5.bind(var7)(var4);
-                    _fun86976_ip = 560;
-                    continue _fun86976;
-                case 126:
+                    _fun87032_ip = 567;
+                    continue _fun87032;
+                case 128:
                     var4 = _closure1_slot8;
                     var4 = var4.hasLoadedExperiments;
                     if (var4) {
-                        _fun86976_ip = 183;
-                        continue _fun86976
+                        _fun87032_ip = 186;
+                        continue _fun87032
                     }
-                case 139:
+                case 141:
                     var5 = _closure1_slot0;
                     var4 = _closure1_slot1;
                     var4 = var4[var6];
@@ -279,9 +279,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var7.log;
                     var4 = 'Experiments not loaded yet, skipping';
                     var4 = var5.bind(var7)(var4);
-                    _fun86976_ip = 560;
-                    continue _fun86976;
-                case 183:
+                    _fun87032_ip = 567;
+                    continue _fun87032;
+                case 186:
                     var7 = _closure1_slot9;
                     var5 = var7.hasConsented;
                     var4 = _closure1_slot11;
@@ -290,19 +290,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = _closure1_slot0;
                     var5 = _closure1_slot1;
                     if (var4) {
-                        _fun86976_ip = 255;
-                        continue _fun86976
+                        _fun87032_ip = 259;
+                        continue _fun87032
                     }
-                case 219:
+                case 222:
                     var4 = var5[var6];
                     var4 = var7.bind(var0)(var4);
                     var9 = var4.debugLogger;
                     var8 = var9.log;
                     var4 = 'No personalization consent, skipping';
                     var4 = var8.bind(var9)(var4);
-                    _fun86976_ip = 560;
-                    continue _fun86976;
-                case 255:
+                    _fun87032_ip = 567;
+                    continue _fun87032;
+                case 259:
                     var4 = 11;
                     var4 = var5[var4];
                     var4 = var7.bind(var0)(var4);
@@ -322,16 +322,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var7.isDebugMode;
                     var5 = var5.bind(var7)();
                     if (var5) {
-                        _fun86976_ip = 397;
-                        continue _fun86976
+                        _fun87032_ip = 403;
+                        continue _fun87032
                     }
-                case 345:
+                case 350:
                     var4 = var4.enabled;
                     if (var4) {
-                        _fun86976_ip = 397;
-                        continue _fun86976
+                        _fun87032_ip = 403;
+                        continue _fun87032
                     }
-                case 353:
+                case 358:
                     var5 = _closure1_slot0;
                     var4 = _closure1_slot1;
                     var4 = var4[var6];
@@ -340,9 +340,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var7.log;
                     var4 = 'Not in experiment, skipping';
                     var4 = var5.bind(var7)(var4);
-                    _fun86976_ip = 560;
-                    continue _fun86976;
-                case 397:
+                    _fun87032_ip = 567;
+                    continue _fun87032;
+                case 403:
                     var5 = _closure1_slot0;
                     var4 = _closure1_slot1;
                     var6 = var4[var6];
@@ -363,15 +363,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var2.timeout;
                     var5 = null;
                     if (!(var5 != var7)) {
-                        _fun86976_ip = 512;
-                        continue _fun86976
+                        _fun87032_ip = 519;
+                        continue _fun87032
                     }
-                case 489:
+                case 496:
                     var8 = var4.clearTimeout;
                     var7 = var2.timeout;
                     var7 = var8.bind(var0)(var7);
                     var2.timeout = var5;
-                case 512:
+                case 519:
                     var4 = var4.setTimeout;
                     var5 = _closure1_slot0;
                     var3 = _closure1_slot1;
@@ -387,7 +387,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var1 = var4.bind(var0)(var1, var3);
                     var2.timeout = var1;
-                case 560:
+                case 567:
                     return var0;
             }
         };
@@ -397,14 +397,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = 'forceShowUpsell';
         var4.key = var7;
         var7 = function() {
-            _fun86978: for (var _fun86978_ip = 0;;) switch (_fun86978_ip) {
+            _fun87034: for (var _fun87034_ip = 0;;) switch (_fun87034_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.timeout;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun86978_ip = 42;
-                        continue _fun86978
+                        _fun87034_ip = 42;
+                        continue _fun87034
                     }
                 case 15:
                     var2 = global;
@@ -430,13 +430,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = _closure1_slot2;
         var6 = function*() { // Environment: var5
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun86980: for (var _fun86980_ip = 0;;) switch (_fun86980_ip) {
+                _fun87036: for (var _fun87036_ip = 0;;) switch (_fun87036_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun86980_ip = 399;
-                            continue _fun86980
+                            _fun87036_ip = 404;
+                            continue _fun87036
                         }
                     case 10:
                         var1 = undefined;
@@ -450,7 +450,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var7.log;
                         var3 = 'detectAndShowUpsell called';
                         var3 = var5.bind(var7)(var3);
-                    case 59: // try_start_0
+                    case 60: // try_start_0
                         var5 = _closure1_slot0;
                         var7 = _closure1_slot1;
                         var3 = 13;
@@ -458,16 +458,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var5.bind(var1)(var3);
                         var3 = var5.getTopPriorityGame;
                         var3 = var3.bind(var5)();
-                        SaveGenerator(address = 93);
-                    case 91:
+                        SaveGenerator(address = 94);
+                    case 92:
                         return var3;
-                    case 93:
+                    case 94:
                         ResumeGenerator(result_out_reg = 3, return_bool_out_reg = 5);
                         if (var5) {
-                            _fun86980_ip = 351;
-                            continue _fun86980
+                            _fun87036_ip = 356;
+                            continue _fun87036
                         }
-                    case 102:
+                    case 103:
                         var6 = var3;
                         var7 = _closure1_slot0;
                         var5 = _closure1_slot1;
@@ -479,10 +479,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var7.bind(var8)(var5, var3);
                         var5 = null;
                         if (!(var5 == var3)) {
-                            _fun86980_ip = 195;
-                            continue _fun86980
+                            _fun87036_ip = 198;
+                            continue _fun87036
                         }
-                    case 151:
+                    case 153:
                         var7 = _closure1_slot0;
                         var5 = _closure1_slot1;
                         var5 = var5[var4];
@@ -491,9 +491,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var8.log;
                         var5 = 'No game detected';
                         var5 = var7.bind(var8)(var5);
-                        _fun86980_ip = 346;
-                        continue _fun86980;
-                    case 195:
+                        _fun87036_ip = 351;
+                        continue _fun87036;
+                    case 198:
                         var8 = _closure1_slot0;
                         var9 = _closure1_slot1;
                         var5 = var9[var4];
@@ -510,16 +510,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var8.fetchGuildForPopout;
                         var5 = var5.guildId;
                         var5 = var7.bind(var8)(var5);
-                        SaveGenerator(address = 275);
-                    case 273:
+                        SaveGenerator(address = 279);
+                    case 277:
                         return var5;
-                    case 275:
+                    case 279:
                         ResumeGenerator(result_out_reg = 5, return_bool_out_reg = 7);
                         if (var7) {
-                            _fun86980_ip = 348;
-                            continue _fun86980
+                            _fun87036_ip = 353;
+                            continue _fun87036
                         }
-                    case 281:
+                    case 285:
                         var8 = _closure1_slot0;
                         var7 = _closure1_slot1;
                         var7 = var7[var4];
@@ -534,14 +534,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = true;
                         var6 = this;
                         var6.hasChecked = var7;
-                    case 346: // try_end0
-                        _fun86980_ip = 396;
-                        continue _fun86980;
-                    case 348:
+                    case 351: // try_end0
+                        _fun87036_ip = 401;
+                        continue _fun87036;
+                    case 353:
                         return var5;
-                    case 351:
+                    case 356:
                         return var3;
-                    case 354: // catch_target0
+                    case 359: // catch_target0
                         CatchBlockStart(arg_register = 5);
                         var3 = _closure1_slot0;
                         var2 = _closure1_slot1;
@@ -551,9 +551,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var4.error;
                         var2 = 'Error in detectAndShowUpsell:';
                         var2 = var3.bind(var4)(var2, var5);
-                    case 396:
+                    case 401:
                         return var1;
-                    case 399:
+                    case 404:
                         return var0;
                 }
             };
@@ -594,4 +594,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 6, 7, 15, 17, 18, 1590, 4559, 11221, 660, 11220, 11225, 11223, 11222, 11226, 4299, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 6, 7, 15, 17, 18, 1590, 4569, 11232, 660, 11231, 11236, 11234, 11233, 11237, 4309, 2]);

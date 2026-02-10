@@ -7,28 +7,28 @@ import kotlin.enums.EnumEntries;
 public final class h {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final h f24978d = new h("FILL", 0);
+    public static final h f26196d = new h("FILL", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final h f24979e = new h("FIT", 1);
+    public static final h f26197e = new h("FIT", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ h[] f24980i;
+    private static final /* synthetic */ h[] f26198i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f24981o;
+    private static final /* synthetic */ EnumEntries f26199o;
 
     static {
         h[] a10 = a();
-        f24980i = a10;
-        f24981o = yr.a.a(a10);
+        f26198i = a10;
+        f26199o = hs.a.a(a10);
     }
 
     private h(String str, int i10) {
     }
 
     private static final /* synthetic */ h[] a() {
-        return new h[]{f24978d, f24979e};
+        return new h[]{f26196d, f26197e};
     }
 
     public static h valueOf(String str) {
@@ -36,6 +36,6 @@ public final class h {
     }
 
     public static h[] values() {
-        return (h[]) f24980i.clone();
+        return (h[]) f26198i.clone();
     }
 }

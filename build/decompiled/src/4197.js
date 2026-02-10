@@ -1,1511 +1,885 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var0 = dependencyMap;
-    var _closure1_slot1 = var0;
-    var6 = function arg0() {
-        _fun38306: for (var _fun38306_ip = 0;;) switch (_fun38306_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var2 = 0;
-                var1 = var0[var2];
-                var0 = undefined;
-                var3 = var3.bind(var0)(var1);
-                var1 = var3.getStringValue;
-                var0 = arg0;
-                var6 = var1.bind(var3)(var0);
-                var3 = var6.length;
-                var1 = 8;
-                var0 = var6;
-                if (!(var3 >= var1)) {
-                    _fun38306_ip = 118;
-                    continue _fun38306
-                }
-            case 53:
-                var1 = var6.substr;
-                var4 = 4;
-                var1 = var1.bind(var6)(var2, var4);
-                var3 = '-';
-                var2 = var1 + var3;
-                var1 = var6.substr;
-                var5 = 2;
-                var1 = var1.bind(var6)(var4, var5);
-                var1 = var2 + var1;
-                var4 = var6.substr;
-                var2 = 6;
-                var2 = var4.bind(var6)(var2, var5);
-                var1 = var1 + var3;
-                var0 = var1 + var2;
-            case 118:
-                return var0;
-        }
-    };
-    var5 = function arg0() {
-        _fun38307: for (var _fun38307_ip = 0;;) switch (_fun38307_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var2 = 0;
-                var1 = var0[var2];
-                var0 = undefined;
-                var3 = var3.bind(var0)(var1);
-                var1 = var3.getStringValue;
-                var0 = arg0;
-                var8 = var1.bind(var3)(var0);
-                var1 = var8.length;
-                var6 = 6;
-                var0 = var8;
-                if (!(var1 >= var6)) {
-                    _fun38307_ip = 197;
-                    continue _fun38307
-                }
-            case 56:
-                var1 = var8.substr;
-                var7 = 2;
-                var1 = var1.bind(var8)(var2, var7);
-                var5 = ':';
-                var2 = var1 + var5;
-                var1 = var8.substr;
-                var1 = var1.bind(var8)(var7, var7);
-                var1 = var2 + var1;
-                var3 = var8.substr;
-                var2 = 4;
-                var2 = var3.bind(var8)(var2, var7);
-                var1 = var1 + var5;
-                var3 = var1 + var2;
-                var4 = var8.length;
-                var2 = 11;
-                var1 = var3;
-                if (!(var2 === var4)) {
-                    _fun38307_ip = 194;
-                    continue _fun38307
-                }
-            case 133:
-                var4 = var8.substr;
-                var2 = 1;
-                var4 = var4.bind(var8)(var6, var2);
-                var6 = var8.substr;
-                var2 = 7;
-                var2 = var6.bind(var8)(var2, var7);
-                var2 = var4 + var2;
-                var6 = var8.substr;
-                var4 = 9;
-                var4 = var6.bind(var8)(var4, var7);
-                var2 = var2 + var5;
-                var2 = var2 + var4;
-                var1 = var3 + var2;
-            case 194:
-                var0 = var1;
-            case 197:
-                return var0;
-        }
-    };
-    var7 = function arg0() {
-        _fun38308: for (var _fun38308_ip = 0;;) switch (_fun38308_ip) {
-            case 0:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var2 = var2.bind(var0)(var1);
-                var1 = var2.getStringValue;
-                var0 = arg0;
-                var14 = var1.bind(var2)(var0);
-                var0 = 'UTF-8';
-                var1 = '\x1b%G';
-                if (!(var1 !== var14)) {
-                    _fun38308_ip = 304;
-                    continue _fun38308
-                }
-            case 57:
-                var1 = 'Windows-1252';
-                var2 = '\x1b%5';
-                if (!(var2 !== var14)) {
-                    _fun38308_ip = 301;
-                    continue _fun38308
-                }
-            case 76:
-                var2 = 'UTF-8 Level 1';
-                var3 = '\x1b%/G';
-                if (!(var3 !== var14)) {
-                    _fun38308_ip = 298;
-                    continue _fun38308
-                }
-            case 95:
-                var3 = 'UTF-8 Level 2';
-                var4 = '\x1b%/H';
-                if (!(var4 !== var14)) {
-                    _fun38308_ip = 295;
-                    continue _fun38308
-                }
-            case 114:
-                var4 = 'UTF-8 Level 3';
-                var5 = '\x1b%/I';
-                if (!(var5 !== var14)) {
-                    _fun38308_ip = 292;
-                    continue _fun38308
-                }
-            case 133:
-                var5 = 'ISO-8859-1';
-                var6 = '\x1b/A';
-                if (!(var6 !== var14)) {
-                    _fun38308_ip = 289;
-                    continue _fun38308
-                }
-            case 152:
-                var6 = 'ISO-8859-2';
-                var7 = '\x1b/B';
-                if (!(var7 !== var14)) {
-                    _fun38308_ip = 286;
-                    continue _fun38308
-                }
-            case 168:
-                var7 = 'ISO-8859-3';
-                var8 = '\x1b/C';
-                if (!(var8 !== var14)) {
-                    _fun38308_ip = 283;
-                    continue _fun38308
-                }
-            case 184:
-                var8 = 'ISO-8859-4';
-                var9 = '\x1b/D';
-                if (!(var9 !== var14)) {
-                    _fun38308_ip = 280;
-                    continue _fun38308
-                }
-            case 200:
-                var9 = 'ISO-8859-5';
-                var10 = '\x1b/@';
-                if (!(var10 !== var14)) {
-                    _fun38308_ip = 277;
-                    continue _fun38308
-                }
-            case 216:
-                var10 = 'ISO-8859-6';
-                var11 = '\x1b/G';
-                if (!(var11 !== var14)) {
-                    _fun38308_ip = 274;
-                    continue _fun38308
-                }
-            case 232:
-                var11 = 'ISO-8859-7';
-                var12 = '\x1b/F';
-                if (!(var12 !== var14)) {
-                    _fun38308_ip = 271;
-                    continue _fun38308
-                }
-            case 248:
-                var12 = 'Unknown';
-                var13 = '\x1b/H';
-                if (!(var13 === var14)) {
-                    _fun38308_ip = 268;
-                    continue _fun38308
-                }
-            case 262:
-                var12 = 'ISO-8859-8';
-            case 268:
-                var11 = var12;
-            case 271:
-                var10 = var11;
-            case 274:
-                var9 = var10;
-            case 277:
-                var8 = var9;
-            case 280:
-                var7 = var8;
-            case 283:
-                var6 = var7;
-            case 286:
-                var5 = var6;
-            case 289:
-                var4 = var5;
-            case 292:
-                var3 = var4;
-            case 295:
-                var2 = var3;
-            case 298:
-                var1 = var2;
-            case 301:
-                var0 = var1;
-            case 304:
-                return var0;
-        }
+    var6 = metroImportDefault;
+    var2 = exports;
+    var7 = dependencyMap;
+    var8 = function arg0() {
+        var0 = global;
+        var3 = var0.TextDecoder;
+        var1 = var3.prototype;
+        var2 = Object.create(var1, {
+            constructor: {
+                value: var3
+            }
+        });
+        var6 = 'utf-16';
+        var7 = var2;
+        var1 = new var7[var3](var6, var5);
+        var2 = var1 instanceof Object ? var1 : var2;
+        var1 = var2.decode;
+        var4 = var0.Uint8Array;
+        var0 = var4.prototype;
+        var3 = Object.create(var0, {
+            constructor: {
+                value: var4
+            }
+        });
+        var6 = arg0;
+        var7 = var3;
+        var0 = new var7[var4](var6, var5);
+        var0 = var0 instanceof Object ? var0 : var3;
+        var3 = var1.bind(var2)(var0);
+        var2 = var3.replace;
+        var1 = /\u0000+$/;
+        var0 = '';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
     };
     var0 = global;
-    var8 = var0.Object;
-    var3 = var8.defineProperty;
-    var2 = {};
+    var5 = var0.Object;
+    var3 = var5.defineProperty;
+    var1 = {};
     var0 = true;
-    var2.value = var0;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var8)(var1, var0, var2);
+    var0 = var3.bind(var5)(var2, var0, var1);
+    var1 = {
+        11: 'ProcessingSoftware',
+        256: 'ImageWidth',
+        257: 'ImageLength',
+        258: 'BitsPerSample',
+        259: 'Compression',
+        262: 'PhotometricInterpretation',
+        264: 'CellWidth',
+        265: 'CellLength',
+        269: 'DocumentName',
+        270: 'ImageDescription',
+        271: 'Make',
+        272: 'Model',
+        273: 'StripOffsets',
+        277: 'SamplesPerPixel',
+        278: 'RowsPerStrip',
+        279: 'StripByteCounts',
+        280: 'MinSampleValue',
+        281: 'MaxSampleValue',
+        284: 'PlanarConfiguration',
+        285: 'PageName',
+        297: 'PageNumber',
+        301: 'TransferFunction',
+        305: 'Software',
+        306: 'DateTime',
+        315: 'Artist',
+        316: 'HostComputer',
+        317: 'Predictor',
+        321: 'HalftoneHints',
+        322: 'TileWidth',
+        323: 'TileLength',
+        330: 'A100DataOffset',
+        337: 'TargetPrinter',
+        513: 'JPEGInterchangeFormat',
+        514: 'JPEGInterchangeFormatLength',
+        530: 'YCbCrSubSampling',
+        700: 'ApplicationNotes',
+        18246: 'Rating',
+        18249: 'RatingPercent',
+        33550: 'PixelScale',
+        33723: 'IPTC-NAA',
+        33920: 'IntergraphMatrix',
+        33922: 'ModelTiePoint',
+        34118: 'SEMInfo',
+        34264: 'ModelTransform',
+        34377: 'PhotoshopSettings',
+        34665: 'Exif IFD Pointer',
+        34675: 'ICC_Profile',
+        34735: 'GeoTiffDirectory',
+        34736: 'GeoTiffDoubleParams',
+        34737: 'GeoTiffAsciiParams',
+        34853: 'GPS Info IFD Pointer',
+        42112: 'GDALMetadata',
+        42113: 'GDALNoData',
+        50341: 'PrintIM',
+        50707: 'DNGBackwardVersion',
+        50708: 'UniqueCameraModel',
+        50709: 'LocalizedCameraModel',
+        50721: 'ColorMatrix1',
+        50722: 'ColorMatrix2',
+        50723: 'CameraCalibration1',
+        50724: 'CameraCalibration2',
+        50725: 'ReductionMatrix1',
+        50726: 'ReductionMatrix2',
+        50727: 'AnalogBalance',
+        50728: 'AsShotNeutral',
+        50729: 'AsShotWhiteXY',
+        50730: 'BaselineExposure',
+        50731: 'BaselineNoise',
+        50732: 'BaselineSharpness',
+        50734: 'LinearResponseLimit',
+        50735: 'CameraSerialNumber',
+        50736: 'DNGLensInfo',
+        50739: 'ShadowScale',
+        50781: 'RawDataUniqueID',
+        50827: 'OriginalRawFileName',
+        50828: 'OriginalRawFileData',
+        50831: 'AsShotICCProfile',
+        50832: 'AsShotPreProfileMatrix',
+        50833: 'CurrentICCProfile',
+        50834: 'CurrentPreProfileMatrix',
+        50879: 'ColorimetricReference',
+        50885: 'SRawType',
+        50898: 'PanasonicTitle',
+        50899: 'PanasonicTitle2',
+        50931: 'CameraCalibrationSig',
+        50932: 'ProfileCalibrationSig',
+        50933: 'ProfileIFD',
+        50934: 'AsShotProfileName',
+        50936: 'ProfileName',
+        50937: 'ProfileHueSatMapDims',
+        50938: 'ProfileHueSatMapData1',
+        50939: 'ProfileHueSatMapData2',
+        50940: 'ProfileToneCurve',
+        50942: 'ProfileCopyright',
+        50964: 'ForwardMatrix1',
+        50965: 'ForwardMatrix2',
+        50966: 'PreviewApplicationName',
+        50967: 'PreviewApplicationVersion',
+        50968: 'PreviewSettingsName',
+        50969: 'PreviewSettingsDigest',
+        50971: 'PreviewDateTime',
+        50972: 'RawImageDigest',
+        50973: 'OriginalRawFileDigest',
+        50981: 'ProfileLookTableDims',
+        50982: 'ProfileLookTableData',
+        51043: 'TimeCodes',
+        51044: 'FrameRate',
+        51058: 'TStop',
+        51081: 'ReelName',
+        51089: 'OriginalDefaultFinalSize',
+        51090: 'OriginalBestQualitySize',
+        51091: 'OriginalDefaultCropSize',
+        51105: 'CameraLabel',
+        51109: 'BaselineExposureOffset',
+        51111: 'NewRawImageDigest',
+        51112: 'RawToPreviewGain'
+    };
     var0 = {};
-    var2 = {
-        286: 'Service Identifier',
-        296: 'Envelope Number',
-        306: 'Product ID',
-        316: 'Envelope Priority',
-        356: 'UNO',
-        515: 'Object Type Reference',
-        516: 'Object Attribute Reference',
-        517: 'Object Name',
-        519: 'Edit Status',
-        522: 'Urgency',
-        527: 'Category',
-        534: 'Fixture Identifier',
-        542: 'Release Date',
-        547: 'Release Time',
-        549: 'Expiration Date',
-        550: 'Expiration Time',
-        552: 'Special Instructions',
-        577: 'Originating Program',
-        582: 'Program Version',
-        602: 'City',
-        604: 'Sub-location',
-        607: 'Province/State',
-        612: 'Country/Primary Location Code',
-        613: 'Country/Primary Location Name',
-        615: 'Original Transmission Reference',
-        617: 'Headline',
-        622: 'Credit',
-        627: 'Source',
-        628: 'Copyright Notice',
-        632: 'Caption/Abstract',
-        642: 'Image Type',
-        647: 'Language Identifier',
-        666: 'Audio Outcue',
-        698: 'Short Document ID',
-        699: 'Unique Document ID',
-        700: 'Owner ID',
-        714: 'ObjectData Preview Data'
-    };
-    var3 = {};
-    var8 = 'Model Version';
-    var3.name = var8;
-    var8 = function arg0() {
-        var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 8;
-        var1 = var1 << var0;
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 + var0;
-        var0 = var1.toString;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var3.description = var8;
-    var2[256] = var3;
-    var3 = {
-        'name': 'Destination',
-        'repeatable': true
-    };
-    var2[261] = var3;
-    var3 = {};
-    var8 = 'File Format';
-    var3.name = var8;
-    var8 = function arg0() {
-        var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 8;
-        var1 = var1 << var0;
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 + var0;
-        var0 = var1.toString;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var3.description = var8;
-    var2[276] = var3;
-    var3 = {};
-    var8 = 'File Format Version';
-    var3.name = var8;
-    var8 = function arg0() {
-        var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 8;
-        var1 = var1 << var0;
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 + var0;
-        var0 = var1.toString;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var3.description = var8;
-    var2[278] = var3;
-    var3 = {};
-    var8 = 'Date Sent';
-    var3.name = var8;
-    var3.description = var6;
-    var2[326] = var3;
-    var3 = {};
-    var8 = 'Time Sent';
-    var3.name = var8;
-    var3.description = var5;
-    var2[336] = var3;
-    var3 = {};
-    var8 = 'Coded Character Set';
-    var3.name = var8;
-    var3.description = var7;
-    var3.encoding_name = var7;
-    var2[346] = var3;
-    var3 = {};
-    var7 = 'ARM Identifier';
-    var3.name = var7;
-    var7 = function arg0() {
-        var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 8;
-        var1 = var1 << var0;
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 + var0;
-        var0 = var1.toString;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var3.description = var7;
-    var2[376] = var3;
-    var3 = {};
-    var7 = 'ARM Version';
-    var3.name = var7;
-    var7 = function arg0() {
-        var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 8;
-        var1 = var1 << var0;
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 + var0;
-        var0 = var1.toString;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var3.description = var7;
-    var2[378] = var3;
-    var3 = {};
-    var7 = 'Record Version';
-    var3.name = var7;
-    var7 = function arg0() {
-        var2 = arg0;
-        var0 = 0;
-        var1 = var2[var0];
-        var0 = 8;
-        var1 = var1 << var0;
-        var0 = 1;
-        var0 = var2[var0];
-        var1 = var1 + var0;
-        var0 = var1.toString;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var3.description = var7;
-    var2[512] = var3;
-    var3 = {};
-    var7 = 'Editorial Update';
-    var3.name = var7;
-    var7 = function arg0() {
-        _fun38315: for (var _fun38315_ip = 0;;) switch (_fun38315_ip) {
+    var3 = 'SubfileType';
+    var0.name = var3;
+    var3 = function arg0() {
+        _fun38234: for (var _fun38234_ip = 0;;) switch (_fun38234_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var2 = var2.bind(var0)(var1);
-                var1 = var2.getStringValue;
+                var1 = {
+                    0: 'Full-resolution image',
+                    1: 'Reduced-resolution image',
+                    2: 'Single page of multi-page image',
+                    3: 'Single page of multi-page reduced-resolution image',
+                    4: 'Transparency mask',
+                    5: 'Transparency mask of reduced-resolution image',
+                    6: 'Transparency mask of multi-page image',
+                    7: 'Transparency mask of reduced-resolution multi-page image',
+                    65537: 'Alternate reduced-resolution image',
+                    '4294967295': 'Invalid'
+                };
                 var0 = arg0;
-                var2 = var1.bind(var2)(var0);
+                var0 = var1[var0];
+                if (var0) {
+                    _fun38234_ip = 28;
+                    continue _fun38234
+                }
+            case 24:
                 var0 = 'Unknown';
-                var1 = '01';
-                if (!(var1 === var2)) {
-                    _fun38315_ip = 56;
-                    continue _fun38315
-                }
-            case 50:
-                var0 = 'Additional Language';
-            case 56:
+            case 28:
                 return var0;
         }
     };
-    var3.description = var7;
-    var2[520] = var3;
-    var3 = {
-        'name': 'Subject Reference',
-        'repeatable': true
-    };
-    var7 = function arg0() {
-        _fun38316: for (var _fun38316_ip = 0;;) switch (_fun38316_ip) {
+    var0.description = var3;
+    var1[254] = var0;
+    var0 = {};
+    var3 = 'OldSubfileType';
+    var0.name = var3;
+    var3 = function arg0() {
+        _fun38235: for (var _fun38235_ip = 0;;) switch (_fun38235_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var2 = var2.bind(var0)(var1);
-                var1 = var2.getStringValue;
+                var1 = {
+                    0: 'Full-resolution image',
+                    1: 'Reduced-resolution image',
+                    2: 'Single page of multi-page image'
+                };
                 var0 = arg0;
-                var2 = var1.bind(var2)(var0);
-                var1 = var2.split;
-                var0 = ':';
-                var3 = var1.bind(var2)(var0);
-                var0 = 2;
-                var2 = var3[var0];
-                var4 = 3;
-                var5 = var3[var4];
-                var1 = '';
-                var0 = var1;
-                if (!var5) {
-                    _fun38316_ip = 88;
-                    continue _fun38316
+                var0 = var1[var0];
+                if (var0) {
+                    _fun38235_ip = 28;
+                    continue _fun38235
                 }
-            case 76:
-                var5 = var3[var4];
-                var4 = '/';
-                var0 = var4 + var5;
-            case 88:
-                var0 = var2 + var0;
-                var2 = 4;
-                var4 = var3[var2];
-                if (!var4) {
-                    _fun38316_ip = 114;
-                    continue _fun38316
-                }
-            case 102:
-                var3 = var3[var2];
-                var2 = '/';
-                var1 = var2 + var3;
-            case 114:
-                var0 = var0 + var1;
+            case 24:
+                var0 = 'Unknown';
+            case 28:
                 return var0;
         }
     };
-    var3.description = var7;
-    var2[524] = var3;
-    var3 = {
-        'name': 'Supplemental Category',
-        'repeatable': true
-    };
-    var2[532] = var3;
-    var3 = {
-        'name': 'Keywords',
-        'repeatable': true
-    };
-    var2[537] = var3;
-    var3 = {
-        'name': 'Content Location Code',
-        'repeatable': true
-    };
-    var2[538] = var3;
-    var3 = {
-        'name': 'Content Location Name',
-        'repeatable': true
-    };
-    var2[539] = var3;
-    var3 = {};
-    var7 = 'Action Advised';
-    var3.name = var7;
-    var7 = function arg0() {
-        _fun38317: for (var _fun38317_ip = 0;;) switch (_fun38317_ip) {
+    var0.description = var3;
+    var1[255] = var0;
+    var0 = {};
+    var3 = 'Thresholding';
+    var0.name = var3;
+    var3 = function arg0() {
+        _fun38236: for (var _fun38236_ip = 0;;) switch (_fun38236_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var2 = var2.bind(var0)(var1);
-                var1 = var2.getStringValue;
+                var1 = {
+                    1: 'No dithering or halftoning',
+                    2: 'Ordered dither or halfton',
+                    3: 'Randomized dither'
+                };
                 var0 = arg0;
-                var5 = var1.bind(var2)(var0);
-                var0 = 'Object Kill';
-                var1 = '01';
-                if (!(var1 !== var5)) {
-                    _fun38317_ip = 107;
-                    continue _fun38317
+                var0 = var1[var0];
+                if (var0) {
+                    _fun38236_ip = 28;
+                    continue _fun38236
                 }
-            case 52:
-                var1 = 'Object Replace';
-                var2 = '02';
-                if (!(var2 !== var5)) {
-                    _fun38317_ip = 104;
-                    continue _fun38317
-                }
-            case 66:
-                var2 = 'Object Append';
-                var3 = '03';
-                if (!(var3 !== var5)) {
-                    _fun38317_ip = 101;
-                    continue _fun38317
-                }
-            case 80:
-                var3 = 'Unknown';
-                var4 = '04';
-                if (!(var4 === var5)) {
-                    _fun38317_ip = 98;
-                    continue _fun38317
-                }
-            case 92:
-                var3 = 'Object Reference';
-            case 98:
-                var2 = var3;
-            case 101:
-                var1 = var2;
-            case 104:
-                var0 = var1;
-            case 107:
+            case 24:
+                var0 = 'Unknown';
+            case 28:
                 return var0;
         }
     };
-    var3.description = var7;
-    var2[554] = var3;
-    var3 = {
-        'name': 'Reference Service',
-        'repeatable': true
-    };
-    var2[557] = var3;
-    var3 = {
-        'name': 'Reference Date',
-        'repeatable': true
-    };
-    var2[559] = var3;
-    var3 = {
-        'name': 'Reference Number',
-        'repeatable': true
-    };
-    var2[562] = var3;
-    var3 = {};
-    var7 = 'Date Created';
-    var3.name = var7;
-    var3.description = var6;
-    var2[567] = var3;
-    var3 = {};
-    var7 = 'Time Created';
-    var3.name = var7;
-    var3.description = var5;
-    var2[572] = var3;
-    var3 = {};
-    var7 = 'Digital Creation Date';
-    var3.name = var7;
-    var3.description = var6;
-    var2[574] = var3;
-    var3 = {};
-    var6 = 'Digital Creation Time';
-    var3.name = var6;
-    var3.description = var5;
-    var2[575] = var3;
-    var3 = {};
-    var5 = 'Object Cycle';
-    var3.name = var5;
-    var5 = function arg0() {
-        _fun38318: for (var _fun38318_ip = 0;;) switch (_fun38318_ip) {
+    var0.description = var3;
+    var1[263] = var0;
+    var0 = {};
+    var3 = 'FillOrder';
+    var0.name = var3;
+    var3 = function arg0() {
+        _fun38237: for (var _fun38237_ip = 0;;) switch (_fun38237_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var2 = var2.bind(var0)(var1);
-                var1 = var2.getStringValue;
+                var1 = {
+                    1: 'Normal',
+                    2: 'Reversed'
+                };
                 var0 = arg0;
-                var4 = var1.bind(var2)(var0);
-                var0 = 'morning';
-                var1 = 'a';
-                if (!(var1 !== var4)) {
-                    _fun38318_ip = 86;
-                    continue _fun38318
+                var0 = var1[var0];
+                if (var0) {
+                    _fun38237_ip = 28;
+                    continue _fun38237
                 }
-            case 50:
-                var1 = 'evening';
-                var2 = 'p';
-                if (!(var2 !== var4)) {
-                    _fun38318_ip = 83;
-                    continue _fun38318
-                }
-            case 62:
-                var2 = 'Unknown';
-                var3 = 'b';
-                if (!(var3 === var4)) {
-                    _fun38318_ip = 80;
-                    continue _fun38318
-                }
-            case 74:
-                var2 = 'both';
-            case 80:
-                var1 = var2;
-            case 83:
-                var0 = var1;
-            case 86:
+            case 24:
+                var0 = 'Unknown';
+            case 28:
                 return var0;
         }
     };
-    var3.description = var5;
-    var2[587] = var3;
-    var3 = {
-        'name': 'By-line',
-        'repeatable': true
-    };
-    var2[592] = var3;
-    var3 = {
-        'name': 'By-line Title',
-        'repeatable': true
-    };
-    var2[597] = var3;
-    var3 = {
-        'name': 'Contact',
-        'repeatable': true
-    };
-    var2[630] = var3;
-    var3 = {
-        'name': 'Writer/Editor',
-        'repeatable': true
-    };
-    var2[634] = var3;
-    var3 = {};
-    var5 = 'Rasterized Caption';
-    var3.name = var5;
-    var5 = function arg0() {
-        var0 = arg0;
-        return var0;
-    };
-    var3.description = var5;
-    var2[637] = var3;
-    var3 = {};
-    var5 = 'Image Orientation';
-    var3.name = var5;
-    var5 = function arg0() {
-        _fun38320: for (var _fun38320_ip = 0;;) switch (_fun38320_ip) {
+    var0.description = var3;
+    var1[266] = var0;
+    var0 = {};
+    var3 = 'Orientation';
+    var0.name = var3;
+    var3 = function arg0() {
+        _fun38238: for (var _fun38238_ip = 0;;) switch (_fun38238_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var2 = var2.bind(var0)(var1);
-                var1 = var2.getStringValue;
-                var0 = arg0;
-                var4 = var1.bind(var2)(var0);
-                var0 = 'Portrait';
-                var1 = 'P';
-                if (!(var1 !== var4)) {
-                    _fun38320_ip = 90;
-                    continue _fun38320
-                }
-            case 52:
-                var1 = 'Landscape';
-                var2 = 'L';
-                if (!(var2 !== var4)) {
-                    _fun38320_ip = 87;
-                    continue _fun38320
-                }
-            case 66:
-                var2 = 'Unknown';
-                var3 = 'S';
-                if (!(var3 === var4)) {
-                    _fun38320_ip = 84;
-                    continue _fun38320
-                }
-            case 78:
-                var2 = 'Square';
-            case 84:
-                var1 = var2;
-            case 87:
-                var0 = var1;
-            case 90:
-                return var0;
-        }
-    };
-    var3.description = var5;
-    var2[643] = var3;
-    var3 = {};
-    var5 = 'Audio Type';
-    var3.name = var5;
-    var5 = function arg0() {
-        _fun38321: for (var _fun38321_ip = 0;;) switch (_fun38321_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var2 = 0;
-                var1 = var0[var2];
-                var0 = undefined;
-                var3 = var3.bind(var0)(var1);
-                var1 = var3.getStringValue;
-                var0 = arg0;
-                var0 = var1.bind(var3)(var0);
-                var1 = var0.charAt;
-                var2 = var1.bind(var0)(var2);
-                var3 = var0.charAt;
+                var9 = arg0;
+                var0 = 'top-left';
                 var1 = 1;
-                var4 = var3.bind(var0)(var1);
-                var3 = 'Mono';
-                var1 = '1';
-                if (!(var1 !== var2)) {
-                    _fun38321_ip = 99;
-                    continue _fun38321
+                if (!(var1 !== var9)) {
+                    _fun38238_ip = 134;
+                    continue _fun38238
                 }
-            case 79:
-                var3 = '';
-                var1 = '2';
-                if (!(var1 === var2)) {
-                    _fun38321_ip = 99;
-                    continue _fun38321
+            case 16:
+                var1 = 'top-right';
+                var2 = 2;
+                if (!(var2 !== var9)) {
+                    _fun38238_ip = 131;
+                    continue _fun38238
                 }
-            case 93:
-                var3 = 'Stereo';
-            case 99:
-                var1 = 'A';
-                if (!(var1 !== var4)) {
-                    _fun38321_ip = 256;
-                    continue _fun38321
+            case 29:
+                var2 = 'bottom-right';
+                var3 = 3;
+                if (!(var3 !== var9)) {
+                    _fun38238_ip = 128;
+                    continue _fun38238
                 }
-            case 110:
-                var1 = 'C';
-                if (!(var1 !== var4)) {
-                    _fun38321_ip = 244;
-                    continue _fun38321
+            case 42:
+                var3 = 'bottom-left';
+                var4 = 4;
+                if (!(var4 !== var9)) {
+                    _fun38238_ip = 125;
+                    continue _fun38238
                 }
-            case 121:
-                var1 = 'M';
-                if (!(var1 !== var4)) {
-                    _fun38321_ip = 232;
-                    continue _fun38321
-                }
-            case 129:
-                var1 = 'Q';
-                if (!(var1 !== var4)) {
-                    _fun38321_ip = 220;
-                    continue _fun38321
-                }
-            case 137:
-                var1 = 'R';
-                if (!(var1 !== var4)) {
-                    _fun38321_ip = 208;
-                    continue _fun38321
-                }
-            case 145:
-                var1 = 'S';
-                if (!(var1 !== var4)) {
-                    _fun38321_ip = 196;
-                    continue _fun38321
-                }
-            case 153:
-                var1 = 'V';
-                if (!(var1 !== var4)) {
-                    _fun38321_ip = 184;
-                    continue _fun38321
-                }
-            case 161:
-                var2 = 'W';
-                var1 = var3;
-                if (!(var2 === var4)) {
-                    _fun38321_ip = 266;
-                    continue _fun38321
-                }
-            case 172:
-                var2 = ', wrap';
-                var1 = var3 + var2;
-                _fun38321_ip = 266;
-                continue _fun38321;
-            case 184:
-                var2 = ', voicer';
-                var1 = var3 + var2;
-                _fun38321_ip = 266;
-                continue _fun38321;
-            case 196:
-                var2 = ', scener';
-                var1 = var3 + var2;
-                _fun38321_ip = 266;
-                continue _fun38321;
-            case 208:
-                var2 = ', raw sound';
-                var1 = var3 + var2;
-                _fun38321_ip = 266;
-                continue _fun38321;
-            case 220:
-                var2 = ', response to a question';
-                var1 = var3 + var2;
-                _fun38321_ip = 266;
-                continue _fun38321;
-            case 232:
-                var2 = ', music, transmitted by itself';
-                var1 = var3 + var2;
-                _fun38321_ip = 266;
-                continue _fun38321;
-            case 244:
-                var2 = ', question and answer session';
-                var1 = var3 + var2;
-                _fun38321_ip = 266;
-                continue _fun38321;
-            case 256:
-                var2 = ', actuality';
-                var1 = var3 + var2;
-            case 266:
-                var2 = '';
-                if (!(var2 !== var1)) {
-                    _fun38321_ip = 277;
-                    continue _fun38321
-                }
-            case 274:
-                var0 = var1;
-            case 277:
-                return var0;
-        }
-    };
-    var3.description = var5;
-    var2[662] = var3;
-    var3 = {};
-    var5 = 'Audio Sampling Rate';
-    var3.name = var5;
-    var5 = function arg0() {
-        var0 = global;
-        var3 = var0.parseInt;
-        var1 = _closure1_slot0;
-        var2 = _closure1_slot1;
-        var0 = 0;
-        var0 = var2[var0];
-        var2 = undefined;
-        var4 = var1.bind(var2)(var0);
-        var1 = var4.getStringValue;
-        var0 = arg0;
-        var1 = var1.bind(var4)(var0);
-        var0 = 10;
-        var1 = var3.bind(var2)(var1, var0);
-        var0 = ' Hz';
-        var0 = var1 + var0;
-        return var0;
-    };
-    var3.description = var5;
-    var2[663] = var3;
-    var3 = {};
-    var5 = 'Audio Sampling Resolution';
-    var3.name = var5;
-    var5 = function arg0() {
-        _fun38323: for (var _fun38323_ip = 0;;) switch (_fun38323_ip) {
-            case 0:
-                var0 = global;
-                var3 = var0.parseInt;
-                var1 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 0;
-                var0 = var2[var0];
-                var2 = undefined;
-                var4 = var1.bind(var2)(var0);
-                var1 = var4.getStringValue;
-                var0 = arg0;
-                var1 = var1.bind(var4)(var0);
-                var0 = 10;
-                var1 = var3.bind(var2)(var1, var0);
-                var0 = ' bits';
-                var2 = 1;
-                if (!(var2 === var1)) {
-                    _fun38323_ip = 74;
-                    continue _fun38323
+            case 55:
+                var4 = 'left-top';
+                var5 = 5;
+                if (!(var5 !== var9)) {
+                    _fun38238_ip = 122;
+                    continue _fun38238
                 }
             case 68:
-                var0 = ' bit';
-            case 74:
-                var0 = var1 + var0;
-                return var0;
-        }
-    };
-    var3.description = var5;
-    var2[664] = var3;
-    var3 = {};
-    var5 = 'Audio Duration';
-    var3.name = var5;
-    var5 = function arg0() {
-        _fun38324: for (var _fun38324_ip = 0;;) switch (_fun38324_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var2 = 0;
-                var1 = var0[var2];
-                var0 = undefined;
-                var3 = var3.bind(var0)(var1);
-                var1 = var3.getStringValue;
-                var0 = arg0;
-                var6 = var1.bind(var3)(var0);
-                var3 = var6.length;
-                var1 = 6;
-                var0 = var6;
-                if (!(var3 >= var1)) {
-                    _fun38324_ip = 115;
-                    continue _fun38324
+                var5 = 'right-top';
+                var6 = 6;
+                if (!(var6 !== var9)) {
+                    _fun38238_ip = 119;
+                    continue _fun38238
                 }
-            case 53:
-                var1 = var6.substr;
-                var5 = 2;
-                var1 = var1.bind(var6)(var2, var5);
-                var3 = ':';
-                var2 = var1 + var3;
-                var1 = var6.substr;
-                var1 = var1.bind(var6)(var5, var5);
-                var1 = var2 + var1;
-                var4 = var6.substr;
-                var2 = 4;
-                var2 = var4.bind(var6)(var2, var5);
-                var1 = var1 + var3;
-                var0 = var1 + var2;
-            case 115:
-                return var0;
-        }
-    };
-    var3.description = var5;
-    var2[665] = var3;
-    var3 = {};
-    var5 = function arg0() {
-        _fun38325: for (var _fun38325_ip = 0;;) switch (_fun38325_ip) {
-            case 0:
-                var0 = arg0;
-                var2 = var0.length;
-                var0 = 'Record 2 destination';
-                var1 = 2;
-                if (!(var1 === var2)) {
-                    _fun38325_ip = 25;
-                    continue _fun38325
+            case 81:
+                var6 = 'right-bottom';
+                var7 = 7;
+                if (!(var7 !== var9)) {
+                    _fun38238_ip = 116;
+                    continue _fun38238
                 }
-            case 21:
-                var0 = 'ObjectData Preview File Format';
-            case 25:
-                return var0;
-        }
-    };
-    var3.name = var5;
-    var5 = function arg0() {
-        _fun38326: for (var _fun38326_ip = 0;;) switch (_fun38326_ip) {
-            case 0:
-                var0 = arg0;
-                var1 = var0.length;
-                var3 = 2;
-                if (!(var3 !== var1)) {
-                    _fun38326_ip = 52;
-                    continue _fun38326
+            case 94:
+                var7 = 'Undefined';
+                var8 = 8;
+                if (!(var8 === var9)) {
+                    _fun38238_ip = 113;
+                    continue _fun38238
                 }
-            case 15:
-                var4 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var1 = 0;
-                var2 = var2[var1];
-                var1 = undefined;
-                var2 = var4.bind(var1)(var2);
-                var1 = var2.getStringValue;
-                var1 = var1.bind(var2)(var0);
-                return var1;
-            case 52:
-                var1 = 0;
-                var2 = var0[var1];
-                var9 = 8;
-                var4 = var2 << var9;
-                var2 = 1;
-                var0 = var0[var2];
-                var32 = var4 + var0;
-                var0 = 'No ObjectData';
-                if (!(var1 !== var32)) {
-                    _fun38326_ip = 634;
-                    continue _fun38326
-                }
-            case 89:
-                var1 = 'IPTC-NAA Digital Newsphoto Parameter Record';
-                if (!(var2 !== var32)) {
-                    _fun38326_ip = 631;
-                    continue _fun38326
-                }
-            case 102:
-                var2 = 'IPTC7901 Recommended Message Format';
-                if (!(var3 !== var32)) {
-                    _fun38326_ip = 628;
-                    continue _fun38326
-                }
-            case 115:
-                var3 = 'Tagged Image File Format (Adobe/Aldus Image data)';
-                var4 = 3;
-                if (!(var4 !== var32)) {
-                    _fun38326_ip = 625;
-                    continue _fun38326
-                }
-            case 131:
-                var4 = 'Illustrator (Adobe Graphics data)';
-                var5 = 4;
-                if (!(var5 !== var32)) {
-                    _fun38326_ip = 622;
-                    continue _fun38326
-                }
-            case 147:
-                var5 = 'AppleSingle (Apple Computer Inc)';
-                var6 = 5;
-                if (!(var6 !== var32)) {
-                    _fun38326_ip = 619;
-                    continue _fun38326
-                }
-            case 163:
-                var6 = 'NAA 89-3 (ANPA 1312)';
-                var7 = 6;
-                if (!(var7 !== var32)) {
-                    _fun38326_ip = 616;
-                    continue _fun38326
-                }
-            case 179:
-                var7 = 'MacBinary II';
-                var8 = 7;
-                if (!(var8 !== var32)) {
-                    _fun38326_ip = 613;
-                    continue _fun38326
-                }
-            case 195:
-                var8 = 'IPTC Unstructured Character Oriented File Format (UCOFF)';
-                if (!(var9 !== var32)) {
-                    _fun38326_ip = 610;
-                    continue _fun38326
-                }
-            case 208:
-                var9 = 'United Press International ANPA 1312 variant';
-                var10 = 9;
-                if (!(var10 !== var32)) {
-                    _fun38326_ip = 607;
-                    continue _fun38326
-                }
-            case 224:
-                var10 = 'United Press International Down-Load Message';
-                var11 = 10;
-                if (!(var11 !== var32)) {
-                    _fun38326_ip = 604;
-                    continue _fun38326
-                }
-            case 240:
-                var11 = 'JPEG File Interchange (JFIF)';
-                var12 = 11;
-                if (!(var12 !== var32)) {
-                    _fun38326_ip = 601;
-                    continue _fun38326
-                }
-            case 256:
-                var12 = 'Photo-CD Image-Pac (Eastman Kodak)';
-                var13 = 12;
-                if (!(var13 !== var32)) {
-                    _fun38326_ip = 598;
-                    continue _fun38326
-                }
-            case 272:
-                var13 = 'Microsoft Bit Mapped Graphics File [*.BMP]';
-                var14 = 13;
-                if (!(var14 !== var32)) {
-                    _fun38326_ip = 595;
-                    continue _fun38326
-                }
-            case 288:
-                var14 = 'Digital Audio File [*.WAV] (Microsoft & Creative Labs)';
-                var15 = 14;
-                if (!(var15 !== var32)) {
-                    _fun38326_ip = 592;
-                    continue _fun38326
-                }
-            case 304:
-                var15 = 'Audio plus Moving Video [*.AVI] (Microsoft)';
-                var16 = 15;
-                if (!(var16 !== var32)) {
-                    _fun38326_ip = 589;
-                    continue _fun38326
-                }
-            case 320:
-                var16 = 'PC DOS/Windows Executable Files [*.COM][*.EXE]';
-                var17 = 16;
-                if (!(var17 !== var32)) {
-                    _fun38326_ip = 586;
-                    continue _fun38326
-                }
-            case 336:
-                var17 = 'Compressed Binary File [*.ZIP] (PKWare Inc)';
-                var18 = 17;
-                if (!(var18 !== var32)) {
-                    _fun38326_ip = 583;
-                    continue _fun38326
-                }
-            case 352:
-                var18 = 'Audio Interchange File Format AIFF (Apple Computer Inc)';
-                var19 = 18;
-                if (!(var19 !== var32)) {
-                    _fun38326_ip = 580;
-                    continue _fun38326
-                }
-            case 368:
-                var19 = 'RIFF Wave (Microsoft Corporation)';
-                var20 = 19;
-                if (!(var20 !== var32)) {
-                    _fun38326_ip = 577;
-                    continue _fun38326
-                }
-            case 384:
-                var20 = 'Freehand (Macromedia/Aldus)';
-                var21 = 20;
-                if (!(var21 !== var32)) {
-                    _fun38326_ip = 574;
-                    continue _fun38326
-                }
-            case 400:
-                var21 = 'Hypertext Markup Language "HTML" (The Internet Society)';
-                var22 = 21;
-                if (!(var22 !== var32)) {
-                    _fun38326_ip = 571;
-                    continue _fun38326
-                }
-            case 416:
-                var22 = 'MPEG 2 Audio Layer 2 (Musicom), ISO/IEC';
-                var23 = 22;
-                if (!(var23 !== var32)) {
-                    _fun38326_ip = 568;
-                    continue _fun38326
-                }
-            case 432:
-                var23 = 'MPEG 2 Audio Layer 3, ISO/IEC';
-                var24 = 23;
-                if (!(var24 !== var32)) {
-                    _fun38326_ip = 565;
-                    continue _fun38326
-                }
-            case 445:
-                var24 = 'Portable Document File (*.PDF) Adobe';
-                var25 = 24;
-                if (!(var25 !== var32)) {
-                    _fun38326_ip = 562;
-                    continue _fun38326
-                }
-            case 458:
-                var25 = 'News Industry Text Format (NITF)';
-                var26 = 25;
-                if (!(var26 !== var32)) {
-                    _fun38326_ip = 559;
-                    continue _fun38326
-                }
-            case 471:
-                var26 = 'Tape Archive (*.TAR)';
-                var27 = 26;
-                if (!(var27 !== var32)) {
-                    _fun38326_ip = 556;
-                    continue _fun38326
-                }
-            case 484:
-                var27 = 'Tidningarnas Telegrambyrå NITF version (TTNITF DTD)';
-                var28 = 27;
-                if (!(var28 !== var32)) {
-                    _fun38326_ip = 553;
-                    continue _fun38326
-                }
-            case 497:
-                var28 = 'Ritzaus Bureau NITF version (RBNITF DTD)';
-                var29 = 28;
-                if (!(var29 !== var32)) {
-                    _fun38326_ip = 550;
-                    continue _fun38326
-                }
-            case 510:
-                var29 = 'Corel Draw [*.CDR]';
-                var30 = 29;
-                if (!(var30 !== var32)) {
-                    _fun38326_ip = 547;
-                    continue _fun38326
-                }
-            case 523:
-                var30 = global;
-                var30 = var30.HermesInternal;
-                var31 = var30.concat;
-                var30 = 'Unknown format ';
-                var29 = var31.bind(var30)(var32);
-            case 547:
-                var28 = var29;
-            case 550:
-                var27 = var28;
-            case 553:
-                var26 = var27;
-            case 556:
-                var25 = var26;
-            case 559:
-                var24 = var25;
-            case 562:
-                var23 = var24;
-            case 565:
-                var22 = var23;
-            case 568:
-                var21 = var22;
-            case 571:
-                var20 = var21;
-            case 574:
-                var19 = var20;
-            case 577:
-                var18 = var19;
-            case 580:
-                var17 = var18;
-            case 583:
-                var16 = var17;
-            case 586:
-                var15 = var16;
-            case 589:
-                var14 = var15;
-            case 592:
-                var13 = var14;
-            case 595:
-                var12 = var13;
-            case 598:
-                var11 = var12;
-            case 601:
-                var10 = var11;
-            case 604:
-                var9 = var10;
-            case 607:
-                var8 = var9;
-            case 610:
-                var7 = var8;
-            case 613:
+            case 107:
+                var7 = 'left-bottom';
+            case 113:
                 var6 = var7;
-            case 616:
+            case 116:
                 var5 = var6;
-            case 619:
+            case 119:
                 var4 = var5;
-            case 622:
+            case 122:
                 var3 = var4;
-            case 625:
+            case 125:
                 var2 = var3;
-            case 628:
+            case 128:
                 var1 = var2;
-            case 631:
+            case 131:
                 var0 = var1;
-            case 634:
+            case 134:
                 return var0;
         }
     };
-    var3.description = var5;
-    var2[712] = var3;
+    var0.description = var3;
+    var1[274] = var0;
     var3 = {};
-    var5 = 'ObjectData Preview File Format Version';
-    var3.name = var5;
-    var5 = function arg0, arg1() {
-        _fun38327: for (var _fun38327_ip = 0;;) switch (_fun38327_ip) {
-            case 0:
-                var0 = arg1;
-                var2 = {};
-                var1 = {};
-                var3 = '1';
-                var1['00'] = var3;
-                var2['00'] = var1;
-                var4 = '2';
-                var5 = '4';
-                var1 = {
-                    '01': '1',
-                    '02': '2',
-                    '03': '3',
-                    '04': '4'
-                };
-                var2['01'] = var1;
-                var1 = {};
-                var1['04'] = var5;
-                var2['02'] = var1;
-                var1 = {
-                    '01': '5.0',
-                    '02': '6.0'
-                };
-                var2['03'] = var1;
-                var1 = {};
-                var5 = '1.40';
-                var1['01'] = var5;
-                var2['04'] = var1;
-                var1 = {};
-                var1['01'] = var4;
-                var2['05'] = var1;
-                var1 = {};
-                var1['01'] = var3;
-                var2['06'] = var1;
-                var1 = {};
-                var3 = '1.02';
-                var1['01'] = var3;
-                var2[11] = var1;
-                var1 = {
-                    '01': '3.1',
-                    '02': '4.0',
-                    '03': '5.0',
-                    '04': '5.5'
-                };
-                var2[20] = var1;
-                var1 = {};
-                var3 = '2.0';
-                var1['02'] = var3;
-                var2[21] = var1;
-                var4 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var6 = 0;
-                var1 = var1[var6];
-                var5 = undefined;
-                var7 = var4.bind(var5)(var1);
-                var4 = var7.getStringValue;
-                var1 = arg0;
-                var1 = var4.bind(var7)(var1);
-                var4 = var0["ObjectData Preview File Format"];
-                if (!var4) {
-                    _fun38327_ip = 287;
-                    continue _fun38327
-                }
-            case 230:
-                var4 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var3 = var3[var6];
-                var4 = var4.bind(var5)(var3);
-                var3 = var4.getStringValue;
-                var0 = var0["ObjectData Preview File Format"];
-                var0 = var0.value;
-                var0 = var3.bind(var4)(var0);
-                var3 = var2[var0];
-                if (!var3) {
-                    _fun38327_ip = 287;
-                    continue _fun38327
-                }
-            case 276:
-                var3 = var2[var0];
-                var3 = var3[var1];
-                if (var3) {
-                    _fun38327_ip = 289;
-                    continue _fun38327
-                }
-            case 287:
-                return var1;
-            case 289:
-                var0 = var2[var0];
-                var0 = var0[var1];
-                return var0;
-        }
-    };
-    var3.description = var5;
-    var2[713] = var3;
+    var0 = 'XResolution';
+    var3.name = var0;
+    var5 = 0;
+    var9 = var7[var5];
+    var0 = undefined;
+    var9 = var6.bind(var0)(var9);
+    var9 = var9.XResolution;
+    var3.description = var9;
+    var1[282] = var3;
     var3 = {};
-    var5 = 'Size Mode';
-    var3.name = var5;
-    var5 = function arg0() {
-        var1 = arg0;
+    var9 = 'YResolution';
+    var3.name = var9;
+    var9 = var7[var5];
+    var9 = var6.bind(var0)(var9);
+    var9 = var9.YResolution;
+    var3.description = var9;
+    var1[283] = var3;
+    var3 = {};
+    var9 = 'XPosition';
+    var3.name = var9;
+    var9 = function arg0() {
+        var4 = arg0;
+        var0 = global;
+        var2 = var0.Math;
+        var1 = var2.round;
         var0 = 0;
-        var1 = var1[var0];
-        var0 = var1.toString;
-        var0 = var0.bind(var1)();
+        var3 = var4[var0];
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var3 / var0;
+        var0 = var1.bind(var2)(var0);
+        var0 = '' + var0;
         return var0;
     };
-    var3.description = var5;
-    var2[1802] = var3;
+    var3.description = var9;
+    var1[286] = var3;
     var3 = {};
-    var5 = 'Max Subfile Size';
-    var3.name = var5;
-    var5 = function arg0() {
-        _fun38329: for (var _fun38329_ip = 0;;) switch (_fun38329_ip) {
+    var9 = 'YPosition';
+    var3.name = var9;
+    var9 = function arg0() {
+        var4 = arg0;
+        var0 = global;
+        var2 = var0.Math;
+        var1 = var2.round;
+        var0 = 0;
+        var3 = var4[var0];
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var3 / var0;
+        var0 = var1.bind(var2)(var0);
+        var0 = '' + var0;
+        return var0;
+    };
+    var3.description = var9;
+    var1[287] = var3;
+    var3 = {};
+    var9 = 'GrayResponseUnit';
+    var3.name = var9;
+    var9 = function arg0() {
+        _fun38241: for (var _fun38241_ip = 0;;) switch (_fun38241_ip) {
             case 0:
-                var5 = arg0;
-                var0 = var5.length;
-                var1 = 0;
-                var0 = var1 < var0;
-                var4 = 8;
-                var3 = 0;
-                var2 = 0;
-                if (!var0) {
-                    _fun38329_ip = 51;
-                    continue _fun38329
+                var1 = {
+                    1: '0.1',
+                    2: '0.001',
+                    3: '0.0001',
+                    4: '1e-05',
+                    5: '1e-06'
+                };
+                var0 = arg0;
+                var0 = var1[var0];
+                if (var0) {
+                    _fun38241_ip = 28;
+                    continue _fun38241
                 }
             case 24:
-                var6 = var5[var2];
-                var0 = var3 << var4;
-                var3 = var0 + var6;
-                var2 = var2 + 1;
-                var0 = var5.length;
-                var1 = var3;
-                if (var2 < var0) {
-                    _fun38329_ip = 24;
-                    continue _fun38329
+                var0 = 'Unknown';
+            case 28:
+                return var0;
+        }
+    };
+    var3.description = var9;
+    var1[290] = var3;
+    var3 = {};
+    var9 = 'ResolutionUnit';
+    var3.name = var9;
+    var9 = var7[var5];
+    var9 = var6.bind(var0)(var9);
+    var9 = var9.ResolutionUnit;
+    var3.description = var9;
+    var1[296] = var3;
+    var3 = {};
+    var9 = 'WhitePoint';
+    var3.name = var9;
+    var9 = function arg0() {
+        var2 = arg0;
+        var1 = var2.map;
+        var0 = function(arg0) { // Environment: var0
+            var1 = arg0;
+            var0 = 0;
+            var4 = var1[var0];
+            var0 = 1;
+            var3 = var1[var0];
+            var0 = global;
+            var0 = var0.HermesInternal;
+            var2 = var0.concat;
+            var1 = '';
+            var0 = '/';
+            var0 = var2.bind(var1)(var4, var0, var3);
+            return var0;
+        };
+        var2 = var1.bind(var2)(var0);
+        var1 = var2.join;
+        var0 = ', ';
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var3.description = var9;
+    var1[318] = var3;
+    var3 = {};
+    var9 = 'PrimaryChromaticities';
+    var3.name = var9;
+    var9 = function arg0() {
+        var2 = arg0;
+        var1 = var2.map;
+        var0 = function(arg0) { // Environment: var0
+            var1 = arg0;
+            var0 = 0;
+            var4 = var1[var0];
+            var0 = 1;
+            var3 = var1[var0];
+            var0 = global;
+            var0 = var0.HermesInternal;
+            var2 = var0.concat;
+            var1 = '';
+            var0 = '/';
+            var0 = var2.bind(var1)(var4, var0, var3);
+            return var0;
+        };
+        var2 = var1.bind(var2)(var0);
+        var1 = var2.join;
+        var0 = ', ';
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var3.description = var9;
+    var1[319] = var3;
+    var3 = {};
+    var9 = 'InkSet';
+    var3.name = var9;
+    var9 = function arg0() {
+        _fun38246: for (var _fun38246_ip = 0;;) switch (_fun38246_ip) {
+            case 0:
+                var1 = {
+                    1: 'CMYK',
+                    2: 'Not CMYK'
+                };
+                var0 = arg0;
+                var0 = var1[var0];
+                if (var0) {
+                    _fun38246_ip = 28;
+                    continue _fun38246
                 }
-            case 51:
-                var0 = var1.toString;
-                var0 = var0.bind(var1)();
+            case 24:
+                var0 = 'Unknown';
+            case 28:
+                return var0;
+        }
+    };
+    var3.description = var9;
+    var1[332] = var3;
+    var3 = {};
+    var9 = 'ExtraSamples';
+    var3.name = var9;
+    var9 = function arg0() {
+        _fun38247: for (var _fun38247_ip = 0;;) switch (_fun38247_ip) {
+            case 0:
+                var1 = {
+                    0: 'Unspecified',
+                    1: 'Associated Alpha',
+                    2: 'Unassociated Alpha'
+                };
+                var0 = arg0;
+                var0 = var1[var0];
+                if (var0) {
+                    _fun38247_ip = 28;
+                    continue _fun38247
+                }
+            case 24:
+                var0 = 'Unknown';
+            case 28:
+                return var0;
+        }
+    };
+    var3.description = var9;
+    var1[338] = var3;
+    var3 = {};
+    var9 = 'SampleFormat';
+    var3.name = var9;
+    var9 = function arg0() {
+        _fun38248: for (var _fun38248_ip = 0;;) switch (_fun38248_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = {
+                    1: 'Unsigned',
+                    2: 'Signed',
+                    3: 'Float',
+                    4: 'Undefined',
+                    5: 'Complex int',
+                    6: 'Complex float'
+                };
+                var _closure2_slot0 = var0;
+                var0 = global;
+                var2 = var0.Array;
+                var0 = var2.isArray;
+                var2 = var0.bind(var2)(var3);
+                var0 = 'Unknown';
+                if (!var2) {
+                    _fun38248_ip = 79;
+                    continue _fun38248
+                }
+            case 48:
+                var2 = var3.map;
+                var1 = function(arg0) { // Environment: var1
+                    _fun38249: for (var _fun38249_ip = 0;;) switch (_fun38249_ip) {
+                        case 0:
+                            var1 = _closure2_slot0;
+                            var0 = arg0;
+                            var0 = var1[var0];
+                            if (var0) {
+                                _fun38249_ip = 21;
+                                continue _fun38249
+                            }
+                        case 17:
+                            var0 = 'Unknown';
+                        case 21:
+                            return var0;
+                    }
+                };
+                var3 = var2.bind(var3)(var1);
+                var2 = var3.join;
+                var1 = ', ';
+                var0 = var2.bind(var3)(var1);
+            case 79:
+                return var0;
+        }
+    };
+    var3.description = var9;
+    var1[339] = var3;
+    var3 = {};
+    var9 = 'YCbCrCoefficients';
+    var3.name = var9;
+    var9 = function arg0() {
+        var2 = arg0;
+        var1 = var2.map;
+        var0 = function(arg0) { // Environment: var0
+            var2 = arg0;
+            var0 = 0;
+            var1 = var2[var0];
+            var0 = 1;
+            var0 = var2[var0];
+            var0 = var1 / var0;
+            var0 = '' + var0;
+            return var0;
+        };
+        var2 = var1.bind(var2)(var0);
+        var1 = var2.join;
+        var0 = '/';
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var3.description = var9;
+    var1[529] = var3;
+    var3 = {};
+    var9 = 'YCbCrPositioning';
+    var3.name = var9;
+    var9 = function arg0() {
+        _fun38252: for (var _fun38252_ip = 0;;) switch (_fun38252_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = 'centered';
+                var1 = 1;
+                if (!(var1 !== var3)) {
+                    _fun38252_ip = 40;
+                    continue _fun38252
+                }
+            case 14:
+                var1 = 'co-sited';
+                var2 = 2;
+                if (!(var2 !== var3)) {
+                    _fun38252_ip = 37;
+                    continue _fun38252
+                }
+            case 27:
+                var2 = 'undefined ';
+                var1 = var2 + var3;
+            case 37:
+                var0 = var1;
+            case 40:
+                return var0;
+        }
+    };
+    var3.description = var9;
+    var1[531] = var3;
+    var3 = {};
+    var9 = 'ReferenceBlackWhite';
+    var3.name = var9;
+    var9 = function arg0() {
+        var2 = arg0;
+        var1 = var2.map;
+        var0 = function(arg0) { // Environment: var0
+            var2 = arg0;
+            var0 = 0;
+            var1 = var2[var0];
+            var0 = 1;
+            var0 = var2[var0];
+            var0 = var1 / var0;
+            var0 = '' + var0;
+            return var0;
+        };
+        var2 = var1.bind(var2)(var0);
+        var1 = var2.join;
+        var0 = ', ';
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var3.description = var9;
+    var1[532] = var3;
+    var3 = {};
+    var9 = 'Copyright';
+    var3.name = var9;
+    var9 = function arg0() {
+        var2 = arg0;
+        var1 = var2.join;
+        var0 = '; ';
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var3.description = var9;
+    var1[33432] = var3;
+    var3 = {};
+    var9 = 'XPTitle';
+    var3.name = var9;
+    var3.description = var8;
+    var1[40091] = var3;
+    var3 = {};
+    var9 = 'XPComment';
+    var3.name = var9;
+    var3.description = var8;
+    var1[40092] = var3;
+    var3 = {};
+    var9 = 'XPAuthor';
+    var3.name = var9;
+    var3.description = var8;
+    var1[40093] = var3;
+    var3 = {};
+    var9 = 'XPKeywords';
+    var3.name = var9;
+    var3.description = var8;
+    var1[40094] = var3;
+    var3 = {};
+    var9 = 'XPSubject';
+    var3.name = var9;
+    var3.description = var8;
+    var1[40095] = var3;
+    var3 = {};
+    var8 = 'MakerNoteSafety';
+    var3.name = var8;
+    var8 = function arg0() {
+        _fun38256: for (var _fun38256_ip = 0;;) switch (_fun38256_ip) {
+            case 0:
+                var1 = {
+                    0: 'Unsafe',
+                    1: 'Safe'
+                };
+                var0 = arg0;
+                var0 = var1[var0];
+                if (var0) {
+                    _fun38256_ip = 28;
+                    continue _fun38256
+                }
+            case 24:
+                var0 = 'Unknown';
+            case 28:
+                return var0;
+        }
+    };
+    var3.description = var8;
+    var1[50741] = var3;
+    var3 = {};
+    var8 = 'CalibrationIlluminant1';
+    var3.name = var8;
+    var8 = var7[var5];
+    var8 = var6.bind(var0)(var8);
+    var8 = var8.LightSource;
+    var3.description = var8;
+    var1[50778] = var3;
+    var3 = {};
+    var8 = 'CalibrationIlluminant2';
+    var3.name = var8;
+    var5 = var7[var5];
+    var5 = var6.bind(var0)(var5);
+    var5 = var5.LightSource;
+    var3.description = var5;
+    var1[50779] = var3;
+    var3 = {};
+    var5 = 'ProfileEmbedPolicy';
+    var3.name = var5;
+    var5 = function arg0() {
+        _fun38257: for (var _fun38257_ip = 0;;) switch (_fun38257_ip) {
+            case 0:
+                var1 = {
+                    0: 'Allow Copying',
+                    1: 'Embed if Used',
+                    2: 'Never Embed',
+                    3: 'No Restrictions'
+                };
+                var0 = arg0;
+                var0 = var1[var0];
+                if (var0) {
+                    _fun38257_ip = 28;
+                    continue _fun38257
+                }
+            case 24:
+                var0 = 'Unknown';
+            case 28:
                 return var0;
         }
     };
     var3.description = var5;
-    var2[1812] = var3;
+    var1[50941] = var3;
     var3 = {};
-    var5 = 'ObjectData Size Announced';
+    var5 = 'PreviewColorSpace';
     var3.name = var5;
     var5 = function arg0() {
-        _fun38330: for (var _fun38330_ip = 0;;) switch (_fun38330_ip) {
+        _fun38258: for (var _fun38258_ip = 0;;) switch (_fun38258_ip) {
             case 0:
-                var5 = arg0;
-                var0 = var5.length;
-                var1 = 0;
-                var0 = var1 < var0;
-                var4 = 8;
-                var3 = 0;
-                var2 = 0;
-                if (!var0) {
-                    _fun38330_ip = 51;
-                    continue _fun38330
+                var1 = {
+                    1: 'Gray Gamma 2.2',
+                    2: 'sRGB',
+                    3: 'Adobe RGB',
+                    4: 'ProPhoto RGB'
+                };
+                var0 = arg0;
+                var0 = var1[var0];
+                if (var0) {
+                    _fun38258_ip = 28;
+                    continue _fun38258
                 }
             case 24:
-                var6 = var5[var2];
-                var0 = var3 << var4;
-                var3 = var0 + var6;
-                var2 = var2 + 1;
-                var0 = var5.length;
-                var1 = var3;
-                if (var2 < var0) {
-                    _fun38330_ip = 24;
-                    continue _fun38330
-                }
-            case 51:
-                var0 = var1.toString;
-                var0 = var0.bind(var1)();
+                var0 = 'Unknown';
+            case 28:
                 return var0;
         }
     };
     var3.description = var5;
-    var2[1882] = var3;
+    var1[50970] = var3;
     var3 = {};
-    var5 = 'Maximum ObjectData Size';
+    var5 = 'ProfileHueSatMapEncoding';
+    var3.name = var5;
+    var5 = function arg0() {
+        _fun38259: for (var _fun38259_ip = 0;;) switch (_fun38259_ip) {
+            case 0:
+                var1 = {
+                    0: 'Linear',
+                    1: 'sRGB'
+                };
+                var0 = arg0;
+                var0 = var1[var0];
+                if (var0) {
+                    _fun38259_ip = 28;
+                    continue _fun38259
+                }
+            case 24:
+                var0 = 'Unknown';
+            case 28:
+                return var0;
+        }
+    };
+    var3.description = var5;
+    var1[51107] = var3;
+    var3 = {};
+    var5 = 'ProfileLookTableEncoding';
+    var3.name = var5;
+    var5 = function arg0() {
+        _fun38260: for (var _fun38260_ip = 0;;) switch (_fun38260_ip) {
+            case 0:
+                var1 = {
+                    0: 'Linear',
+                    1: 'sRGB'
+                };
+                var0 = arg0;
+                var0 = var1[var0];
+                if (var0) {
+                    _fun38260_ip = 28;
+                    continue _fun38260
+                }
+            case 24:
+                var0 = 'Unknown';
+            case 28:
+                return var0;
+        }
+    };
+    var3.description = var5;
+    var1[51108] = var3;
+    var3 = {};
+    var5 = 'DefaultBlackRender';
     var3.name = var5;
     var4 = function arg0() {
-        _fun38331: for (var _fun38331_ip = 0;;) switch (_fun38331_ip) {
+        _fun38261: for (var _fun38261_ip = 0;;) switch (_fun38261_ip) {
             case 0:
-                var5 = arg0;
-                var0 = var5.length;
-                var1 = 0;
-                var0 = var1 < var0;
-                var4 = 8;
-                var3 = 0;
-                var2 = 0;
-                if (!var0) {
-                    _fun38331_ip = 51;
-                    continue _fun38331
+                var1 = {
+                    0: 'Auto',
+                    1: 'None'
+                };
+                var0 = arg0;
+                var0 = var1[var0];
+                if (var0) {
+                    _fun38261_ip = 24;
+                    continue _fun38261
                 }
+            case 20:
+                var0 = 'Unknown';
             case 24:
-                var6 = var5[var2];
-                var0 = var3 << var4;
-                var3 = var0 + var6;
-                var2 = var2 + 1;
-                var0 = var5.length;
-                var1 = var3;
-                if (var2 < var0) {
-                    _fun38331_ip = 24;
-                    continue _fun38331
-                }
-            case 51:
-                var0 = var1.toString;
-                var0 = var0.bind(var1)();
                 return var0;
         }
     };
     var3.description = var4;
-    var2[1887] = var3;
-    var0.iptc = var2;
-    var1.default = var0;
-    var0 = undefined;
+    var1[51110] = var3;
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4190]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4198]);

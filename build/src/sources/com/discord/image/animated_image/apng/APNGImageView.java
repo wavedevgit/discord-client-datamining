@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
-import androidx.core.view.n0;
+import androidx.core.view.o0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -49,7 +49,7 @@ public abstract class APNGImageView extends FrameLayout {
         if (aPNGImageViewEventHandler != null) {
             aPNGImageViewEventHandler.onImageLoaded(url);
         }
-        return Unit.f31765a;
+        return Unit.f31987a;
     }
 
     public static /* synthetic */ void recycleChild$default(APNGImageView aPNGImageView, View view, boolean z10, int i10, Object obj) {
@@ -126,7 +126,7 @@ public abstract class APNGImageView extends FrameLayout {
     /* JADX INFO: Access modifiers changed from: protected */
     public void resetViews(View view, boolean z10) {
         int i10;
-        for (View view2 : n0.a(this)) {
+        for (View view2 : o0.a(this)) {
             boolean areEqual = Intrinsics.areEqual(view2, view);
             if (!areEqual) {
                 recycleChild(view2, z10);

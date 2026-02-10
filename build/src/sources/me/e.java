@@ -12,32 +12,32 @@ public interface e {
 
         /* renamed from: me.e$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static final class C0533a {
+        public static final class C0515a {
 
             /* renamed from: a  reason: collision with root package name */
-            private final CopyOnWriteArrayList f36983a = new CopyOnWriteArrayList();
+            private final CopyOnWriteArrayList f36358a = new CopyOnWriteArrayList();
 
             /* JADX INFO: Access modifiers changed from: private */
             /* renamed from: me.e$a$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-            public static final class C0534a {
+            public static final class C0516a {
 
                 /* renamed from: a  reason: collision with root package name */
-                private final Handler f36984a;
+                private final Handler f36359a;
 
                 /* renamed from: b  reason: collision with root package name */
-                private final a f36985b;
+                private final a f36360b;
 
                 /* renamed from: c  reason: collision with root package name */
-                private boolean f36986c;
+                private boolean f36361c;
 
-                public C0534a(Handler handler, a aVar) {
-                    this.f36984a = handler;
-                    this.f36985b = aVar;
+                public C0516a(Handler handler, a aVar) {
+                    this.f36359a = handler;
+                    this.f36360b = aVar;
                 }
 
                 public void d() {
-                    this.f36986c = true;
+                    this.f36361c = true;
                 }
             }
 
@@ -45,24 +45,24 @@ public interface e {
                 oe.a.e(handler);
                 oe.a.e(aVar);
                 d(aVar);
-                this.f36983a.add(new C0534a(handler, aVar));
+                this.f36358a.add(new C0516a(handler, aVar));
             }
 
             public void c(int i10, long j10, long j11) {
                 final int i11;
                 final long j12;
                 final long j13;
-                Iterator it = this.f36983a.iterator();
+                Iterator it = this.f36358a.iterator();
                 while (it.hasNext()) {
-                    final C0534a c0534a = (C0534a) it.next();
-                    if (!c0534a.f36986c) {
+                    final C0516a c0516a = (C0516a) it.next();
+                    if (!c0516a.f36361c) {
                         i11 = i10;
                         j12 = j10;
                         j13 = j11;
-                        c0534a.f36984a.post(new Runnable() { // from class: me.d
+                        c0516a.f36359a.post(new Runnable() { // from class: me.d
                             @Override // java.lang.Runnable
                             public final void run() {
-                                e.a.C0533a.C0534a.this.f36985b.w(i11, j12, j13);
+                                e.a.C0515a.C0516a.this.f36360b.w(i11, j12, j13);
                             }
                         });
                     } else {
@@ -77,12 +77,12 @@ public interface e {
             }
 
             public void d(a aVar) {
-                Iterator it = this.f36983a.iterator();
+                Iterator it = this.f36358a.iterator();
                 while (it.hasNext()) {
-                    C0534a c0534a = (C0534a) it.next();
-                    if (c0534a.f36985b == aVar) {
-                        c0534a.d();
-                        this.f36983a.remove(c0534a);
+                    C0516a c0516a = (C0516a) it.next();
+                    if (c0516a.f36360b == aVar) {
+                        c0516a.d();
+                        this.f36358a.remove(c0516a);
                     }
                 }
             }

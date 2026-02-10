@@ -1,9 +1,10 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var3 = metroImportDefault;
+    var4 = require;
     var2 = exports;
-    var4 = dependencyMap;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
     var0 = global;
     var7 = var0.Object;
     var6 = var7.defineProperty;
@@ -13,142 +14,163 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var1);
     var0 = 0;
-    var1 = var4[var0];
+    var6 = var5[var0];
+    var1 = metroImportDefault;
     var0 = undefined;
-    var1 = var3.bind(var0)(var1);
-    var2.FlashList = var1;
+    var1 = var1.bind(var0)(var6);
+    var _closure1_slot2 = var1;
     var1 = 1;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.FlashListProps;
-    var2.FlashListProps = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.ContentStyle;
-    var2.ContentStyle = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.ListRenderItem;
-    var2.ListRenderItem = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.ListRenderItemInfo;
-    var2.ListRenderItemInfo = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.RenderTarget;
-    var2.RenderTarget = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.RenderTargetOptions;
-    var2.RenderTargetOptions = var1;
-    var1 = 2;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useOnNativeBlankAreaEvents;
-    var2.useOnNativeBlankAreaEvents = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.BlankAreaEventHandler;
-    var2.BlankAreaEventHandler = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.BlankAreaEvent;
-    var2.BlankAreaEvent = var1;
-    var1 = 3;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useBenchmark;
-    var2.useBenchmark = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.BenchmarkParams;
-    var2.BenchmarkParams = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.BenchmarkResult;
-    var2.BenchmarkResult = var1;
-    var1 = 4;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.useDataMultiplier;
-    var2.useDataMultiplier = var1;
-    var1 = 5;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useFlatListBenchmark;
-    var2.useFlatListBenchmark = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.FlatListBenchmarkParams;
-    var2.FlatListBenchmarkParams = var1;
-    var1 = 6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useBlankAreaTracker;
-    var2.useBlankAreaTracker = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.BlankAreaTrackerResult;
-    var2.BlankAreaTrackerResult = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.BlankAreaTrackerConfig;
-    var2.BlankAreaTrackerConfig = var1;
-    var1 = 7;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashList;
-    var2.MasonryFlashList = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashListProps;
-    var2.MasonryFlashListProps = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashListScrollEvent;
-    var2.MasonryFlashListScrollEvent = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashListRef;
-    var2.MasonryFlashListRef = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryListItem;
-    var2.MasonryListItem = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryListRenderItem;
-    var2.MasonryListRenderItem = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.MasonryListRenderItemInfo;
-    var2.MasonryListRenderItemInfo = var1;
-    var1 = 8;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.JSFPSMonitor;
-    var2.JSFPSMonitor = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.JSFPSResult;
-    var2.JSFPSResult = var1;
-    var1 = 9;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.autoScroll;
-    var2.autoScroll = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.Cancellable;
-    var2.Cancellable = var1;
-    var1 = 10;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.ViewToken = var1;
-    var1 = 11;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.CellContainer = var1;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var4 = var1.useEffect;
+    var _closure1_slot3 = var4;
+    var4 = var1.useMemo;
+    var _closure1_slot4 = var4;
+    var4 = var1.useRef;
+    var _closure1_slot5 = var4;
+    var1 = var1.useState;
+    var _closure1_slot6 = var1;
+    var1 = function arg0, arg1() {
+        var0 = arg0;
+        var _closure2_slot0 = var0;
+        var0 = arg1;
+        var _closure2_slot1 = var0;
+        var4 = _closure1_slot5;
+        var0 = undefined;
+        var3 = false;
+        var3 = var4.bind(var0)(var3);
+        var _closure2_slot2 = var3;
+        var2 = _closure1_slot3;
+        var1 = function() { // Environment: var1
+            _fun46066: for (var _fun46066_ip = 0;;) switch (_fun46066_ip) {
+                case 0:
+                    var2 = _closure2_slot0;
+                    var1 = var2.getIsFirstLayoutComplete;
+                    var1 = var1.bind(var2)();
+                    if (!var1) {
+                        _fun46066_ip = 32;
+                        continue _fun46066
+                    }
+                case 20:
+                    var2 = _closure2_slot2;
+                    var2 = var2.current;
+                    var1 = !var2;
+                case 32:
+                    if (!var1) {
+                        _fun46066_ip = 57;
+                        continue _fun46066
+                    }
+                case 35:
+                    var2 = _closure2_slot2;
+                    var1 = true;
+                    var2.current = var1;
+                    var1 = _closure2_slot1;
+                    var0 = undefined;
+                    var0 = var1.bind(var0)();
+                case 57:
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var1 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var _closure1_slot7 = var1;
+    var3 = function arg0, arg1() {
+        var4 = arg0;
+        var _closure2_slot0 = var4;
+        var1 = arg1;
+        var _closure2_slot1 = var1;
+        var5 = _closure1_slot5;
+        var1 = global;
+        var3 = var1.Date;
+        var1 = var3.now;
+        var1 = var1.bind(var3)();
+        var3 = undefined;
+        var1 = var5.bind(var3)(var1);
+        var _closure2_slot2 = var1;
+        var5 = _closure1_slot6;
+        var1 = false;
+        var5 = var5.bind(var3)(var1);
+        var1 = _closure1_slot2;
+        var8 = 2;
+        var6 = var1.bind(var3)(var5, var8);
+        var1 = 0;
+        var1 = var6[var1];
+        var5 = 1;
+        var5 = var6[var5];
+        var _closure2_slot3 = var5;
+        var5 = var4.getDataLength;
+        var5 = var5.bind(var4)();
+        var7 = _closure1_slot0;
+        var6 = _closure1_slot1;
+        var6 = var6[var8];
+        var7 = var7.bind(var3)(var6);
+        var6 = var7.useUnmountAwareAnimationFrame;
+        var6 = var6.bind(var7)();
+        var6 = var6.requestAnimationFrame;
+        var _closure2_slot4 = var6;
+        var7 = _closure1_slot4;
+        var6 = new Array(1);
+        var6[0] = var5;
+        var5 = function() { // Environment: var0
+            var1 = _closure2_slot2;
+            var0 = global;
+            var2 = var0.Date;
+            var0 = var2.now;
+            var0 = var0.bind(var2)();
+            var1.current = var0;
+            var0 = undefined;
+            return var0;
+        };
+        var5 = var7.bind(var3)(var5, var6);
+        var2 = _closure1_slot7;
+        var0 = function() { // Environment: var0
+            var0 = global;
+            var2 = var0.Date;
+            var0 = var2.now;
+            var3 = var0.bind(var2)();
+            var2 = _closure2_slot2;
+            var2 = var2.current;
+            var2 = var3 - var2;
+            var _closure3_slot0 = var2;
+            var2 = _closure2_slot4;
+            var0 = undefined;
+            var1 = function() { // Environment: var1
+                _fun46070: for (var _fun46070_ip = 0;;) switch (_fun46070_ip) {
+                    case 0:
+                        var1 = _closure2_slot0;
+                        var2 = true;
+                        var1.isFirstPaintOnUiComplete = var2;
+                        var3 = _closure2_slot1;
+                        var1 = null;
+                        if (!(var1 != var3)) {
+                            _fun46070_ip = 50;
+                            continue _fun46070
+                        }
+                    case 25:
+                        var4 = _closure2_slot1;
+                        var3 = {};
+                        var1 = _closure3_slot0;
+                        var3.elapsedTimeInMs = var1;
+                        var1 = undefined;
+                        var1 = var4.bind(var1)(var3);
+                    case 50:
+                        var1 = _closure2_slot3;
+                        var0 = undefined;
+                        var1 = var1.bind(var0)(var2);
+                        return var0;
+                }
+            };
+            var1 = var2.bind(var0)(var1);
+            return var0;
+        };
+        var0 = var2.bind(var3)(var4, var0);
+        var0 = {};
+        var0.isLoaded = var1;
+        return var0;
+    };
+    var2.useOnListLoad = var3;
+    var2.useOnLoad = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5163, 5169, 5166, 5221, 5226, 5227, 5222, 5228, 5224, 5223, 5229, 5168]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5114, 31, 5160]);

@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
 import android.widget.ImageView;
+import androidx.core.view.i0;
 import com.airbnb.lottie.LottieAnimationView;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.common.MapBuilder;
@@ -19,30 +20,30 @@ import l5.h0;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f7811a = new g();
+    public static final g f8388a = new g();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements View.OnAttachStateChangeListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ boolean f7812d;
+        final /* synthetic */ boolean f8389d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ LottieAnimationView f7813e;
+        final /* synthetic */ LottieAnimationView f8390e;
 
         a(boolean z10, LottieAnimationView lottieAnimationView) {
-            this.f7812d = z10;
-            this.f7813e = lottieAnimationView;
+            this.f8389d = z10;
+            this.f8390e = lottieAnimationView;
         }
 
         @Override // android.view.View.OnAttachStateChangeListener
         public void onViewAttachedToWindow(View v10) {
             Intrinsics.checkNotNullParameter(v10, "v");
             LottieAnimationView lottieAnimationView = (LottieAnimationView) v10;
-            if (this.f7812d) {
-                this.f7813e.playAnimation();
+            if (this.f8389d) {
+                this.f8390e.playAnimation();
             } else {
-                this.f7813e.w();
+                this.f8390e.w();
             }
             lottieAnimationView.removeOnAttachStateChangeListener(this);
         }
@@ -170,7 +171,7 @@ public final class g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void i(LottieAnimationView lottieAnimationView) {
-        if (androidx.core.view.h0.R(lottieAnimationView)) {
+        if (i0.P(lottieAnimationView)) {
             lottieAnimationView.pauseAnimation();
         }
     }
@@ -224,7 +225,7 @@ public final class g {
                 lottieAnimationView.D(num.intValue(), num2.intValue());
             }
         }
-        if (androidx.core.view.h0.R(lottieAnimationView)) {
+        if (i0.P(lottieAnimationView)) {
             if (z10) {
                 lottieAnimationView.playAnimation();
                 return;
@@ -248,7 +249,7 @@ public final class g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void m(LottieAnimationView lottieAnimationView) {
-        if (androidx.core.view.h0.R(lottieAnimationView)) {
+        if (i0.P(lottieAnimationView)) {
             lottieAnimationView.m();
             lottieAnimationView.setProgress(0.0f);
         }
@@ -266,7 +267,7 @@ public final class g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void o(LottieAnimationView lottieAnimationView) {
-        if (androidx.core.view.h0.R(lottieAnimationView)) {
+        if (i0.P(lottieAnimationView)) {
             lottieAnimationView.w();
         }
     }

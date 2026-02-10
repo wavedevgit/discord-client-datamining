@@ -7,13 +7,13 @@ public enum YogaPositionType {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f11585d;
+    private final int f12162d;
 
     YogaPositionType(int i10) {
-        this.f11585d = i10;
+        this.f12162d = i10;
     }
 
     public int d() {
-        return this.f11585d;
+        return this.f12162d;
     }
 }

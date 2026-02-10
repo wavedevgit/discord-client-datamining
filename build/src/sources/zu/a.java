@@ -1,64 +1,70 @@
 package zu;
 
-import cv.d;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import java.io.Closeable;
+import java.util.zip.Deflater;
+import kotlin.jvm.internal.Intrinsics;
+import okio.Buffer;
+import okio.ByteString;
+import okio.Sink;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements tu.b, cv.d {
+public final class a implements Closeable {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f56702a = new a();
+    /* renamed from: d  reason: collision with root package name */
+    private final boolean f57128d;
 
-    private a() {
+    /* renamed from: e  reason: collision with root package name */
+    private final Buffer f57129e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final Deflater f57130i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final av.e f57131o;
+
+    public a(boolean z10) {
+        this.f57128d = z10;
+        Buffer buffer = new Buffer();
+        this.f57129e = buffer;
+        Deflater deflater = new Deflater(-1, true);
+        this.f57130i = deflater;
+        this.f57131o = new av.e((Sink) buffer, deflater);
     }
 
-    public boolean a(Object obj) {
-        return d.a.a(this, obj);
+    private final boolean h(Buffer buffer, ByteString byteString) {
+        return buffer.r0(buffer.size() - byteString.G(), byteString);
     }
 
-    @Override // tu.b
-    public Object f(Object obj, Object obj2) {
-        Object obj3;
-        List c10 = dw.a.c(obj);
-        List<Object> list = c10;
-        boolean z10 = list instanceof Collection;
-        if (!z10 || !list.isEmpty()) {
-            for (Object obj4 : list) {
-                if (!(obj4 instanceof Boolean)) {
-                    Iterator it = list.iterator();
-                    while (true) {
-                        if (it.hasNext()) {
-                            obj3 = it.next();
-                            if (!f56702a.a(obj3)) {
-                                break;
-                            }
-                        } else {
-                            obj3 = null;
-                            break;
-                        }
-                    }
-                    if (obj3 == null) {
-                        return CollectionsKt.z0(c10);
-                    }
-                    return obj3;
-                }
+    public final void a(Buffer buffer) {
+        ByteString byteString;
+        Intrinsics.checkNotNullParameter(buffer, "buffer");
+        if (this.f57129e.size() == 0) {
+            if (this.f57128d) {
+                this.f57130i.reset();
             }
-        }
-        boolean z11 = true;
-        if (!z10 || !list.isEmpty()) {
-            Iterator it2 = list.iterator();
-            while (true) {
-                if (!it2.hasNext()) {
-                    break;
+            this.f57131o.u0(buffer, buffer.size());
+            this.f57131o.flush();
+            Buffer buffer2 = this.f57129e;
+            byteString = b.f57132a;
+            if (h(buffer2, byteString)) {
+                long size = this.f57129e.size() - 4;
+                Buffer.a G0 = Buffer.G0(this.f57129e, null, 1, null);
+                try {
+                    G0.i(size);
+                    ls.c.a(G0, null);
+                } finally {
                 }
-                if (!f56702a.a(it2.next())) {
-                    z11 = false;
-                    break;
-                }
+            } else {
+                this.f57129e.writeByte(0);
             }
+            Buffer buffer3 = this.f57129e;
+            buffer.u0(buffer3, buffer3.size());
+            return;
         }
-        return Boolean.valueOf(z11);
+        throw new IllegalArgumentException("Failed requirement.");
+    }
+
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        this.f57131o.close();
     }
 }

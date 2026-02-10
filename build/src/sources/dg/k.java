@@ -13,28 +13,28 @@ import we.d;
 public final class k extends ff.d implements we.h {
 
     /* renamed from: l  reason: collision with root package name */
-    private static final a.g f20728l;
+    private static final a.g f21675l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final a.AbstractC0331a f20729m;
+    private static final a.AbstractC0316a f21676m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final ff.a f20730n;
+    private static final ff.a f21677n;
 
     /* renamed from: k  reason: collision with root package name */
-    private final String f20731k;
+    private final String f21678k;
 
     static {
         a.g gVar = new a.g();
-        f20728l = gVar;
+        f21675l = gVar;
         h hVar = new h();
-        f20729m = hVar;
-        f20730n = new ff.a("Auth.Api.Identity.SignIn.API", hVar, gVar);
+        f21676m = hVar;
+        f21677n = new ff.a("Auth.Api.Identity.SignIn.API", hVar, gVar);
     }
 
     public k(Activity activity, we.v vVar) {
-        super(activity, f20730n, (a.d) vVar, d.a.f22610c);
-        this.f20731k = n.a();
+        super(activity, f21677n, (a.d) vVar, d.a.f23735c);
+        this.f21678k = n.a();
     }
 
     @Override // we.h
@@ -42,30 +42,30 @@ public final class k extends ff.d implements we.h {
         if (intent != null) {
             Status status = (Status) jf.e.b(intent, "status", Status.CREATOR);
             if (status != null) {
-                if (status.h()) {
+                if (status.g()) {
                     we.i iVar = (we.i) jf.e.b(intent, "sign_in_credential", we.i.CREATOR);
                     if (iVar != null) {
                         return iVar;
                     }
-                    throw new ff.b(Status.f13876s);
+                    throw new ff.b(Status.f14453s);
                 }
                 throw new ff.b(status);
             }
-            throw new ff.b(Status.f13878u);
+            throw new ff.b(Status.f14455u);
         }
-        throw new ff.b(Status.f13876s);
+        throw new ff.b(Status.f14453s);
     }
 
     @Override // we.h
     public final Task d(we.a aVar) {
         hf.q.l(aVar);
-        a.C0743a j10 = we.a.j(aVar);
-        j10.h(this.f20731k);
+        a.C0732a j10 = we.a.j(aVar);
+        j10.h(this.f21678k);
         final we.a a10 = j10.a();
         return p(gf.q.a().d(new com.google.android.gms.common.d("auth_api_credentials_begin_sign_in", 8L)).b(new gf.m() { // from class: dg.f
             @Override // gf.m
             public final void accept(Object obj, Object obj2) {
-                ((b0) ((l) obj).C()).h(new i(k.this, (zg.k) obj2), (we.a) hf.q.l(a10));
+                ((b0) ((l) obj).C()).i(new i(k.this, (zg.k) obj2), (we.a) hf.q.l(a10));
             }
         }).c(false).e(1553).a());
     }
@@ -73,10 +73,10 @@ public final class k extends ff.d implements we.h {
     @Override // we.h
     public final Task j(we.d dVar) {
         hf.q.l(dVar);
-        d.a h10 = we.d.h(dVar);
-        h10.f(this.f20731k);
-        final we.d a10 = h10.a();
-        return p(gf.q.a().d(m.f20737f).b(new gf.m() { // from class: dg.g
+        d.a g10 = we.d.g(dVar);
+        g10.f(this.f21678k);
+        final we.d a10 = g10.a();
+        return p(gf.q.a().d(m.f21684f).b(new gf.m() { // from class: dg.g
             @Override // gf.m
             public final void accept(Object obj, Object obj2) {
                 ((b0) ((l) obj).C()).W0(new j(k.this, (zg.k) obj2), (we.d) hf.q.l(a10));
@@ -85,7 +85,7 @@ public final class k extends ff.d implements we.h {
     }
 
     public k(Context context, we.v vVar) {
-        super(context, f20730n, vVar, d.a.f22610c);
-        this.f20731k = n.a();
+        super(context, f21677n, vVar, d.a.f23735c);
+        this.f21678k = n.a();
     }
 }

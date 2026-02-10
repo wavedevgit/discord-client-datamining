@@ -1,8 +1,10 @@
 package gt;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-@Retention(RetentionPolicy.RUNTIME)
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public @interface d {
+public interface d {
+    void a(h hVar, Function2 function2);
+
+    void f(f fVar, Function1 function1);
 }

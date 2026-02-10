@@ -2,12 +2,12 @@ package androidx.recyclerview.widget;
 
 import android.graphics.Canvas;
 import android.view.View;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 class j implements ItemTouchUIUtil {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ItemTouchUIUtil f5171a = new j();
+    static final ItemTouchUIUtil f5181a = new j();
 
     j() {
     }
@@ -18,9 +18,9 @@ class j implements ItemTouchUIUtil {
         for (int i10 = 0; i10 < childCount; i10++) {
             View childAt = recyclerView.getChildAt(i10);
             if (childAt != view) {
-                float u10 = h0.u(childAt);
-                if (u10 > f10) {
-                    f10 = u10;
+                float t10 = i0.t(childAt);
+                if (t10 > f10) {
+                    f10 = t10;
                 }
             }
         }
@@ -29,11 +29,11 @@ class j implements ItemTouchUIUtil {
 
     @Override // androidx.recyclerview.widget.ItemTouchUIUtil
     public void a(View view) {
-        Object tag = view.getTag(q3.c.f45231a);
+        Object tag = view.getTag(q3.c.f43899a);
         if (tag instanceof Float) {
-            h0.v0(view, ((Float) tag).floatValue());
+            i0.r0(view, ((Float) tag).floatValue());
         }
-        view.setTag(q3.c.f45231a, null);
+        view.setTag(q3.c.f43899a, null);
         view.setTranslationX(0.0f);
         view.setTranslationY(0.0f);
     }
@@ -44,10 +44,10 @@ class j implements ItemTouchUIUtil {
 
     @Override // androidx.recyclerview.widget.ItemTouchUIUtil
     public void c(Canvas canvas, RecyclerView recyclerView, View view, float f10, float f11, int i10, boolean z10) {
-        if (z10 && view.getTag(q3.c.f45231a) == null) {
-            Float valueOf = Float.valueOf(h0.u(view));
-            h0.v0(view, e(recyclerView, view) + 1.0f);
-            view.setTag(q3.c.f45231a, valueOf);
+        if (z10 && view.getTag(q3.c.f43899a) == null) {
+            Float valueOf = Float.valueOf(i0.t(view));
+            i0.r0(view, e(recyclerView, view) + 1.0f);
+            view.setTag(q3.c.f43899a, valueOf);
         }
         view.setTranslationX(f10);
         view.setTranslationY(f11);

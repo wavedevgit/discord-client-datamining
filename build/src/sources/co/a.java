@@ -1,29 +1,30 @@
 package co;
 
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import android.view.View;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.i0;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final C0160a f7798a = new C0160a(null);
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final List f7799b = CollectionsKt.o("RootedDevice", "DebuggerThreatDetected", "AppIsDebuggable", "AppIntegrityError", "EmulatorFound", "GoogleEmulatorDetected", "MagiskManagerDetected", "FridaDetected", "FridaCustomDetected");
-
-    /* renamed from: co.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0160a {
-        public /* synthetic */ C0160a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    public static final int a(View decorView) {
+        Intrinsics.checkNotNullParameter(decorView, "decorView");
+        WindowInsetsCompat F = i0.F(decorView);
+        if (F == null) {
+            return 0;
         }
+        return b(F);
+    }
 
-        public final List a() {
-            return a.f7799b;
-        }
+    private static final int b(WindowInsetsCompat windowInsetsCompat) {
+        return windowInsetsCompat.f(WindowInsetsCompat.p.h() | WindowInsetsCompat.p.b()).f3305b;
+    }
 
-        private C0160a() {
+    public static final Boolean c(View decorView) {
+        Intrinsics.checkNotNullParameter(decorView, "decorView");
+        WindowInsetsCompat F = i0.F(decorView);
+        if (F == null) {
+            return null;
         }
+        return Boolean.valueOf(F.u(WindowInsetsCompat.p.c()));
     }
 }

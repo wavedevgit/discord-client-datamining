@@ -1,8 +1,6 @@
 package com.facebook.react.devsupport.inspector;
 
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import cs.c;
-import cu.b;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
@@ -11,6 +9,8 @@ import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.Charsets;
+import ls.c;
+import lu.b;
 import okhttp3.Call;
 import okhttp3.Headers;
 import okhttp3.OkHttpClient;
@@ -43,8 +43,8 @@ public final class InspectorNetworkHelper {
                 Intrinsics.throwUninitializedPropertyAccessException("client");
                 okHttpClient = null;
             }
-            okHttpClient.a(b10).J0(new b() { // from class: com.facebook.react.devsupport.inspector.InspectorNetworkHelper$loadNetworkResource$1
-                @Override // cu.b
+            okHttpClient.a(b10).b1(new b() { // from class: com.facebook.react.devsupport.inspector.InspectorNetworkHelper$loadNetworkResource$1
+                @Override // lu.b
                 public void onFailure(Call call, IOException e10) {
                     Intrinsics.checkNotNullParameter(call, "call");
                     Intrinsics.checkNotNullParameter(e10, "e");
@@ -54,16 +54,16 @@ public final class InspectorNetworkHelper {
                     InspectorNetworkRequestListener.this.onError(e10.getMessage());
                 }
 
-                @Override // cu.b
+                @Override // lu.b
                 public void onResponse(Call call, Response response) {
                     Intrinsics.checkNotNullParameter(call, "call");
                     Intrinsics.checkNotNullParameter(response, "response");
-                    Headers k10 = response.k();
+                    Headers i10 = response.i();
                     HashMap hashMap = new HashMap();
-                    for (String str : k10.f()) {
-                        hashMap.put(str, k10.c(str));
+                    for (String str : i10.f()) {
+                        hashMap.put(str, i10.c(str));
                     }
-                    InspectorNetworkRequestListener.this.onHeaders(response.g(), hashMap);
+                    InspectorNetworkRequestListener.this.onHeaders(response.h(), hashMap);
                     try {
                         ResponseBody a10 = response.a();
                         InspectorNetworkRequestListener inspectorNetworkRequestListener = InspectorNetworkRequestListener.this;
@@ -77,11 +77,11 @@ public final class InspectorNetworkHelper {
                                 }
                                 inspectorNetworkRequestListener.onData(new String(bArr, 0, read, Charsets.UTF_8));
                             }
-                            Unit unit = Unit.f31765a;
+                            Unit unit = Unit.f31987a;
                             c.a(byteStream, null);
                         }
                         inspectorNetworkRequestListener.onCompletion();
-                        Unit unit2 = Unit.f31765a;
+                        Unit unit2 = Unit.f31987a;
                         c.a(a10, null);
                     } catch (IOException e10) {
                         InspectorNetworkRequestListener.this.onError(e10.getMessage());

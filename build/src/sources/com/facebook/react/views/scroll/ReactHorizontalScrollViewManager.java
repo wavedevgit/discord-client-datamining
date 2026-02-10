@@ -1,7 +1,7 @@
 package com.facebook.react.views.scroll;
 
 import android.view.View;
-import androidx.core.view.h0;
+import androidx.core.view.i0;
 import com.facebook.react.bridge.Dynamic;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
@@ -212,7 +212,7 @@ public class ReactHorizontalScrollViewManager extends ViewGroupManager<ReactHori
     @ReactProp(name = "nestedScrollEnabled")
     public final void setNestedScrollEnabled(ReactHorizontalScrollView reactHorizontalScrollView, boolean z10) {
         if (reactHorizontalScrollView != null) {
-            h0.C0(reactHorizontalScrollView, z10);
+            i0.w0(reactHorizontalScrollView, z10);
         }
     }
 
@@ -385,7 +385,7 @@ public class ReactHorizontalScrollViewManager extends ViewGroupManager<ReactHori
     }
 
     @Override // com.facebook.react.uimanager.ViewManager
-    @rr.c
+    @as.c
     public void receiveCommand(@NotNull ReactHorizontalScrollView scrollView, int i10, ReadableArray readableArray) {
         Intrinsics.checkNotNullParameter(scrollView, "scrollView");
         ReactScrollViewCommandHelper.Companion.receiveCommand((ReactScrollViewCommandHelper.ScrollCommandHandler<ReactHorizontalScrollViewManager>) this, (ReactHorizontalScrollViewManager) scrollView, i10, readableArray);

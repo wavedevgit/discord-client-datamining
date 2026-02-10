@@ -3865,10 +3865,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = 'function';
                         var3 = typeof var3;
                         if (!(var4 === var3)) {
-                            _fun3979_ip = 75;
+                            _fun3979_ip = 76;
                             continue _fun3979
                         }
-                    case 44:
+                    case 45:
                         var5 = _closure1_slot0;
                         var3 = _closure1_slot1;
                         var3 = var3[var6];
@@ -3876,31 +3876,31 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var5 = var6.unstable_setDisableYieldValue;
                         var3 = var1;
                         var3 = var5.bind(var6)(var3);
-                    case 75:
+                    case 76:
                         var3 = _closure1_slot58;
                         if (!var3) {
-                            _fun3979_ip = 123;
+                            _fun3979_ip = 124;
                             continue _fun3979
                         }
-                    case 82:
+                    case 83:
                         var3 = _closure1_slot58;
                         var3 = var3.setStrictMode;
                         var3 = typeof var3;
                         if (!(var4 === var3)) {
-                            _fun3979_ip = 123;
+                            _fun3979_ip = 124;
                             continue _fun3979
                         }
-                    case 99: // try_start_0
+                    case 100: // try_start_0
                         var4 = _closure1_slot58;
                         var3 = var4.setStrictMode;
                         var2 = _closure1_slot57;
                         var1 = var3.bind(var4)(var2, var1);
-                    case 119: // try_end0
-                        _fun3979_ip = 123;
+                    case 120: // try_end0
+                        _fun3979_ip = 124;
                         continue _fun3979;
-                    case 121: // catch_target0
+                    case 122: // catch_target0
                         CatchBlockStart(arg_register = 1);
-                    case 123:
+                    case 124:
                         return var0;
                 }
             };
@@ -30547,35 +30547,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1.defaultPrevented = var0;
                         var2 = var1.nativeEvent;
                         if (!var2) {
-                            _fun4301_ip = 79;
+                            _fun4301_ip = 78;
                             continue _fun4301
                         }
-                    case 20:
+                    case 19:
                         var0 = var2.preventDefault;
                         if (var0) {
-                            _fun4301_ip = 56;
+                            _fun4301_ip = 55;
                             continue _fun4301
                         }
-                    case 29:
+                    case 28:
                         var0 = var2.returnValue;
                         var3 = 'unknown';
                         var0 = typeof var0;
                         if (!(var3 !== var0)) {
-                            _fun4301_ip = 66;
+                            _fun4301_ip = 65;
                             continue _fun4301
                         }
-                    case 46:
+                    case 45:
                         var0 = false;
                         var2.returnValue = var0;
-                        _fun4301_ip = 66;
+                        _fun4301_ip = 65;
                         continue _fun4301;
-                    case 56:
+                    case 55:
                         var0 = var2.preventDefault;
                         var0 = var0.bind(var2)();
-                    case 66:
+                    case 65:
                         var0 = _closure1_slot186;
                         var1.isDefaultPrevented = var0;
-                    case 79:
+                    case 78:
                         var0 = undefined;
                         return var0;
                 }
@@ -30587,35 +30587,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = this;
                         var2 = var1.nativeEvent;
                         if (!var2) {
-                            _fun4302_ip = 71;
+                            _fun4302_ip = 70;
                             continue _fun4302
                         }
-                    case 12:
+                    case 11:
                         var0 = var2.stopPropagation;
                         if (var0) {
-                            _fun4302_ip = 48;
+                            _fun4302_ip = 47;
                             continue _fun4302
                         }
-                    case 21:
+                    case 20:
                         var0 = var2.cancelBubble;
                         var3 = 'unknown';
                         var0 = typeof var0;
                         if (!(var3 !== var0)) {
-                            _fun4302_ip = 58;
+                            _fun4302_ip = 57;
                             continue _fun4302
                         }
-                    case 38:
+                    case 37:
                         var0 = true;
                         var2.cancelBubble = var0;
-                        _fun4302_ip = 58;
+                        _fun4302_ip = 57;
                         continue _fun4302;
-                    case 48:
+                    case 47:
                         var0 = var2.stopPropagation;
                         var0 = var0.bind(var2)();
-                    case 58:
+                    case 57:
                         var0 = _closure1_slot186;
                         var1.isPropagationStopped = var0;
-                    case 71:
+                    case 70:
                         var0 = undefined;
                         return var0;
                 }
@@ -32599,10 +32599,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var14 = 'function';
             var10 = typeof var10;
             if (!(var14 !== var10)) {
-                _fun3918_ip = 5223;
+                _fun3918_ip = 5224;
                 continue _fun3918
             }
-        case 5216:
+        case 5217:
             var10 = function arg0, arg1() {
                 _fun4333: for (var _fun4333_ip = 0;;) switch (_fun4333_ip) {
                     case 0:
@@ -32646,12 +32646,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                 }
             };
-            _fun3918_ip = 5235;
+            _fun3918_ip = 5236;
             continue _fun3918;
-        case 5223:
+        case 5224:
             var22 = var0.Object;
             var10 = var22.is;
-        case 5235:
+        case 5236:
             var _closure1_slot79 = var10;
             var10 = var19.bind(var2)(var9);
             var _closure1_slot80 = var10;
@@ -32661,10 +32661,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var10 = 'undefined';
             var22 = typeof var22;
             if (!(var10 === var22)) {
-                _fun3918_ip = 5280;
+                _fun3918_ip = 5281;
                 continue _fun3918
             }
-        case 5273:
+        case 5274:
             var22 = function() { // Environment: var5
                 var1 = this;
                 var2 = new Array(0);
@@ -32703,11 +32703,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = undefined;
                 return var0;
             };
-            _fun3918_ip = 5286;
+            _fun3918_ip = 5287;
             continue _fun3918;
-        case 5280:
+        case 5281:
             var22 = var0.AbortController;
-        case 5286:
+        case 5287:
             var _closure1_slot83 = var22;
             var22 = {
                 '$$typeof': null,
@@ -33656,10 +33656,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var19 = var0.reportError;
             var19 = typeof var19;
             if (!(var14 !== var19)) {
-                _fun3918_ip = 6243;
+                _fun3918_ip = 6244;
                 continue _fun3918
             }
-        case 6236:
+        case 6237:
             var19 = function(arg0) { // Environment: var5
                 _fun4367: for (var _fun4367_ip = 0;;) switch (_fun4367_ip) {
                     case 0:
@@ -33773,11 +33773,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                 }
             };
-            _fun3918_ip = 6249;
+            _fun3918_ip = 6250;
             continue _fun3918;
-        case 6243:
+        case 6244:
             var19 = var0.reportError;
-        case 6249:
+        case 6250:
             var _closure1_slot132 = var19;
             var20 = var0.Error;
             var19 = "This is not a real error. It's an implementation detail of React's selective hydration feature. If this leaks into userspace, it's a bug in React. Please file an issue.";
@@ -33796,16 +33796,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var19 = var0.WeakSet;
             var19 = typeof var19;
             if (!(var14 !== var19)) {
-                _fun3918_ip = 6321;
+                _fun3918_ip = 6322;
                 continue _fun3918
             }
-        case 6313:
+        case 6314:
             var19 = var0.Set;
-            _fun3918_ip = 6327;
+            _fun3918_ip = 6328;
             continue _fun3918;
-        case 6321:
+        case 6322:
             var19 = var0.WeakSet;
-        case 6327:
+        case 6328:
             var _closure1_slot138 = var19;
             var _closure1_slot139 = var9;
             var _closure1_slot140 = var9;
@@ -33843,16 +33843,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var19 = var0.WeakMap;
             var19 = typeof var19;
             if (!(var14 !== var19)) {
-                _fun3918_ip = 6390;
+                _fun3918_ip = 6391;
                 continue _fun3918
             }
-        case 6382:
+        case 6383:
             var19 = var0.Map;
-            _fun3918_ip = 6396;
+            _fun3918_ip = 6397;
             continue _fun3918;
-        case 6390:
+        case 6391:
             var19 = var0.WeakMap;
-        case 6396:
+        case 6397:
             var _closure1_slot144 = var19;
             var _closure1_slot145 = var17;
             var _closure1_slot146 = var9;
@@ -33890,20 +33890,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var3.version;
             var17 = '19.1.0';
             if (!(var17 === var3)) {
-                _fun3918_ip = 6846;
+                _fun3918_ip = 6847;
                 continue _fun3918
             }
-        case 6557:
+        case 6558:
             var12 = var16[var12];
             var12 = var15.bind(var2)(var12);
             var12 = var12.ReactFiberErrorDialog;
             var12 = var12.showErrorDialog;
             var12 = typeof var12;
             if (!(var14 === var12)) {
-                _fun3918_ip = 6827;
+                _fun3918_ip = 6828;
                 continue _fun3918
             }
-        case 6588:
+        case 6589:
             var12 = function arg0, arg1() {
                 _fun4369: for (var _fun4369_ip = 0;;) switch (_fun4369_ip) {
                     case 0:
@@ -33990,45 +33990,45 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var12.currentDispatcherRef = var13;
             var8 = var12;
             if (!(var9 !== var11)) {
-                _fun3918_ip = 6659;
+                _fun3918_ip = 6660;
                 continue _fun3918
             }
-        case 6650:
+        case 6651:
             var9 = var8;
             var9.rendererConfig = var11;
-        case 6659:
+        case 6660:
             var9 = var0.__REACT_DEVTOOLS_GLOBAL_HOOK__;
             var9 = typeof var9;
             if (!(var10 !== var9)) {
-                _fun3918_ip = 6725;
+                _fun3918_ip = 6726;
                 continue _fun3918
             }
-        case 6672:
+        case 6673:
             var9 = var0.__REACT_DEVTOOLS_GLOBAL_HOOK__;
             var7 = var9;
             var9 = var9.isDisabled;
             if (var9) {
-                _fun3918_ip = 6725;
+                _fun3918_ip = 6726;
                 continue _fun3918
             }
-        case 6690:
+        case 6691:
             var9 = var7;
             var9 = var9.supportsFiber;
             if (!var9) {
-                _fun3918_ip = 6725;
+                _fun3918_ip = 6726;
                 continue _fun3918
             }
-        case 6702: // try_start_0
+        case 6703: // try_start_0
             var9 = var7.inject;
             var8 = var9.bind(var7)(var8);
             _closure1_slot57 = var8;
             _closure1_slot58 = var7;
-        case 6721: // try_end0
-            _fun3918_ip = 6725;
+        case 6722: // try_end0
+            _fun3918_ip = 6726;
             continue _fun3918;
-        case 6723: // catch_target0
+        case 6724: // catch_target0
             CatchBlockStart(arg_register = 7);
-        case 6725:
+        case 6726:
             var7 = function(arg0, arg1) { // Environment: var5
                 _fun4370: for (var _fun4370_ip = 0;;) switch (_fun4370_ip) {
                     case 0:
@@ -34567,12 +34567,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4.unmountComponentAtNodeAndRemoveContainer = var5;
             var4.unstable_batchedUpdates = var1;
             return var2;
-        case 6827:
+        case 6828:
             var4 = var0.Error;
             var1 = 'Expected ReactFiberErrorDialog.showErrorDialog to be a function.';
             var1 = var4.bind(var2)(var1);
             throw var1;
-        case 6846:
+        case 6847:
             var1 = var0.Error;
             var0 = 'Incompatible React versions: The "react" and "react-native-renderer" packages must have the exact same version. Instead got:\n  - react:                  ';
             var3 = var0 + var3;

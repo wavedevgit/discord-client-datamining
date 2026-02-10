@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/images/native/premium/illustrations',
-        'width': 180,
-        'height': 108.5,
+        'httpServerLocation': '/assets/images/native/premium/logos',
+        'width': 167.5,
+        'height': 16,
         'scales': null,
-        'hash': '9b8bd10d33176958273580b349a5855d',
-        'name': 'img_what_you_lose_hd_video',
+        'hash': '48c1555b13d7692f2f1f3a2ca57206f1',
+        'name': 'server_boost_logo_light',
         'type': 'png'
     };
     var4 = [2, 3];

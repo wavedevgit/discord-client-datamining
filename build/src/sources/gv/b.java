@@ -1,67 +1,63 @@
 package gv;
 
-import java.util.ArrayList;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
+import mw.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface b {
+public final class b implements cv.b {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        private static List a(b bVar, Object obj) {
-            List<Object> list;
-            if (obj instanceof List) {
-                list = (List) obj;
-            } else {
-                list = null;
-            }
-            if (list != null) {
-                ArrayList arrayList = new ArrayList();
-                for (Object obj2 : list) {
-                    CollectionsKt.B(arrayList, a(bVar, obj2));
-                }
-                return arrayList;
-            }
-            return CollectionsKt.e(b(bVar, obj));
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f26041a = new b();
 
-        private static String b(b bVar, Object obj) {
-            if (obj instanceof Number) {
-                Number number = (Number) obj;
-                if (number.doubleValue() == number.intValue()) {
-                    return String.valueOf(number.intValue());
-                }
-            }
-            return dw.a.h(obj);
-        }
+    private b() {
+    }
 
-        private static String c(b bVar, Object obj) {
-            List<Object> list;
-            if (obj instanceof List) {
-                list = (List) obj;
-            } else {
-                list = null;
-            }
-            if (list != null) {
-                ArrayList arrayList = new ArrayList();
-                for (Object obj2 : list) {
-                    CollectionsKt.B(arrayList, a(bVar, obj2));
-                }
-                String x02 = CollectionsKt.x0(arrayList, ",", null, null, 0, null, null, 62, null);
-                if (x02 != null) {
-                    return x02;
-                }
-            }
-            return b(bVar, obj);
+    @Override // cv.b
+    public Object f(Object obj, Object obj2) {
+        List list;
+        long j10;
+        List list2;
+        Object obj3;
+        List list3;
+        Object firstOrNull;
+        String obj4;
+        boolean z10 = obj instanceof List;
+        List list4 = null;
+        if (z10) {
+            list = (List) obj;
+        } else {
+            list = null;
         }
-
-        public static List d(b bVar, Object obj) {
-            List<Object> c10 = dw.a.c(obj);
-            ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
-            for (Object obj2 : c10) {
-                arrayList.add(c(bVar, obj2));
-            }
-            return arrayList;
+        if (list != null && (firstOrNull = CollectionsKt.firstOrNull(list)) != null && (obj4 = firstOrNull.toString()) != null) {
+            j10 = d.c(obj4);
+        } else {
+            j10 = 0;
         }
+        if (z10) {
+            list2 = (List) obj;
+        } else {
+            list2 = null;
+        }
+        if (list2 != null) {
+            obj3 = mw.c.b(list2);
+        } else {
+            obj3 = null;
+        }
+        if (obj3 instanceof List) {
+            list3 = (List) obj3;
+        } else {
+            list3 = null;
+        }
+        if (list3 == null) {
+            list3 = CollectionsKt.l();
+        }
+        List f10 = a.f26040a.f(list3, obj2);
+        if (list3.size() - f10.size() < j10) {
+            list4 = f10;
+        }
+        if (list4 == null) {
+            return CollectionsKt.l();
+        }
+        return list4;
     }
 }

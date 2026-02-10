@@ -48,7 +48,7 @@ public final class AttributeStyles_InputRadioGroupTextColorStyleJsonAdapter exte
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
@@ -66,7 +66,7 @@ public final class AttributeStyles_InputRadioGroupTextColorStyleJsonAdapter exte
     public void toJson(@NotNull t writer, AttributeStyles.InputRadioGroupTextColorStyle inputRadioGroupTextColorStyle) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputRadioGroupTextColorStyle != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, inputRadioGroupTextColorStyle.getBase());
             writer.J("description");

@@ -13,33 +13,33 @@ import com.facebook.react.uimanager.ViewProps;
 public class z extends c0 {
 
     /* renamed from: q  reason: collision with root package name */
-    SVGLength f17241q;
+    SVGLength f17990q;
 
     /* renamed from: r  reason: collision with root package name */
-    SVGLength f17242r;
+    SVGLength f17991r;
 
     /* renamed from: s  reason: collision with root package name */
-    SVGLength f17243s;
+    SVGLength f17992s;
 
     /* renamed from: t  reason: collision with root package name */
-    SVGLength f17244t;
+    SVGLength f17993t;
 
     /* renamed from: u  reason: collision with root package name */
-    Bitmap f17245u;
+    Bitmap f17994u;
 
     /* renamed from: v  reason: collision with root package name */
-    Canvas f17246v;
+    Canvas f17995v;
 
     public z(ReactContext reactContext) {
         super(reactContext);
-        this.f17245u = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
-        this.f17246v = new Canvas(this.f17245u);
+        this.f17994u = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
+        this.f17995v = new Canvas(this.f17994u);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.horcrux.svg.c0
-    public void c(Canvas canvas, Paint paint, float f10) {
-        i();
+    public void d(Canvas canvas, Paint paint, float f10) {
+        j();
         SvgView svgView = getSvgView();
         RectF rectF = new RectF();
         for (int i10 = 0; i10 < getChildCount(); i10++) {
@@ -78,36 +78,31 @@ public class z extends c0 {
             }
         }
         setClientRect(rectF);
-        h();
+        i();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup, android.view.View
     public void dispatchDraw(Canvas canvas) {
-        super.dispatchDraw(this.f17246v);
+        super.dispatchDraw(this.f17995v);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.horcrux.svg.c0, com.horcrux.svg.RenderableView, com.horcrux.svg.VirtualView
     public void draw(Canvas canvas, Paint paint, float f10) {
-        canvas.translate((float) relativeOnWidth(this.f17241q), (float) relativeOnHeight(this.f17242r));
-        canvas.clipRect(0.0f, 0.0f, (float) relativeOnWidth(this.f17243s), (float) relativeOnHeight(this.f17244t));
+        canvas.translate((float) relativeOnWidth(this.f17990q), (float) relativeOnHeight(this.f17991r));
+        canvas.clipRect(0.0f, 0.0f, (float) relativeOnWidth(this.f17992s), (float) relativeOnHeight(this.f17993t));
         super.draw(canvas, paint, f10);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup
     public boolean drawChild(Canvas canvas, View view, long j10) {
-        return super.drawChild(this.f17246v, view, j10);
-    }
-
-    public void n(Dynamic dynamic) {
-        this.f17244t = SVGLength.b(dynamic);
-        invalidate();
+        return super.drawChild(this.f17995v, view, j10);
     }
 
     public void o(Dynamic dynamic) {
-        this.f17243s = SVGLength.b(dynamic);
+        this.f17993t = SVGLength.b(dynamic);
         invalidate();
     }
 
@@ -118,12 +113,17 @@ public class z extends c0 {
     }
 
     public void p(Dynamic dynamic) {
-        this.f17241q = SVGLength.b(dynamic);
+        this.f17992s = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void q(Dynamic dynamic) {
-        this.f17242r = SVGLength.b(dynamic);
+        this.f17990q = SVGLength.b(dynamic);
+        invalidate();
+    }
+
+    public void r(Dynamic dynamic) {
+        this.f17991r = SVGLength.b(dynamic);
         invalidate();
     }
 }

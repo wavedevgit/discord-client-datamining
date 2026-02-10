@@ -46,24 +46,24 @@ public final class NextStep_CompleteJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0 && (str = (String) this.stringAdapter.fromJson(reader)) == null) {
-                throw bn.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+                throw dn.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
             }
         }
         reader.D();
         if (str != null) {
             return new NextStep.Complete(str);
         }
-        throw bn.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw dn.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t writer, NextStep.Complete complete) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complete != null) {
-            writer.k();
+            writer.i();
             writer.J(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(writer, complete.getName());
             writer.s();

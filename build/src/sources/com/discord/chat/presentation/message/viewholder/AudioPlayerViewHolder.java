@@ -75,7 +75,7 @@ public final class AudioPlayerViewHolder extends MessagePartViewHolder {
                 Intrinsics.checkNotNullParameter(view, "view");
                 mediaPlayerManagerModule = AudioPlayerViewHolder.this.mediaPlayerManagerModule;
                 if (mediaPlayerManagerModule != null) {
-                    mediaPlayerManagerModule.m943onMediaPlayerViewWillAppearLJLSWy8(audioAttachmentMessageAccessory.m549getChannelIdo4g7jtM(), mediaSource);
+                    mediaPlayerManagerModule.m944onMediaPlayerViewWillAppearLJLSWy8(audioAttachmentMessageAccessory.m550getChannelIdo4g7jtM(), mediaSource);
                 }
             }
 
@@ -85,7 +85,7 @@ public final class AudioPlayerViewHolder extends MessagePartViewHolder {
                 Intrinsics.checkNotNullParameter(view, "view");
                 mediaPlayerManagerModule = AudioPlayerViewHolder.this.mediaPlayerManagerModule;
                 if (mediaPlayerManagerModule != null) {
-                    mediaPlayerManagerModule.m942onMediaPlayerViewDetachedLJLSWy8(audioAttachmentMessageAccessory.m549getChannelIdo4g7jtM(), mediaSource);
+                    mediaPlayerManagerModule.m943onMediaPlayerViewDetachedLJLSWy8(audioAttachmentMessageAccessory.m550getChannelIdo4g7jtM(), mediaSource);
                 }
             }
         };
@@ -145,16 +145,16 @@ public final class AudioPlayerViewHolder extends MessagePartViewHolder {
                 }
                 float f13 = f12;
                 ChatEventHandler chatEventHandler = eventHandler;
-                String mo536getMessageId3Eiw7ao = accessory.mo536getMessageId3Eiw7ao();
-                UserId m548getAuthorIdwUX8bhU = accessory.m548getAuthorIdwUX8bhU();
-                if (m548getAuthorIdwUX8bhU != null) {
-                    long m1144unboximpl = m548getAuthorIdwUX8bhU.m1144unboximpl();
+                String mo537getMessageId3Eiw7ao = accessory.mo537getMessageId3Eiw7ao();
+                UserId m549getAuthorIdwUX8bhU = accessory.m549getAuthorIdwUX8bhU();
+                if (m549getAuthorIdwUX8bhU != null) {
+                    long m1145unboximpl = m549getAuthorIdwUX8bhU.m1145unboximpl();
                     boolean isVoiceMessage = accessory.isVoiceMessage();
                     String id2 = accessory.getAttachment().getId();
                     if (id2 == null) {
                         id2 = "";
                     }
-                    chatEventHandler.mo432mediaAttachmentPlaybackEndedO97gnAM(mo536getMessageId3Eiw7ao, f13, f10, m1144unboximpl, f11, isVoiceMessage, id2);
+                    chatEventHandler.mo433mediaAttachmentPlaybackEndedO97gnAM(mo537getMessageId3Eiw7ao, f13, f10, m1145unboximpl, f11, isVoiceMessage, id2);
                 }
             }
 
@@ -176,16 +176,16 @@ public final class AudioPlayerViewHolder extends MessagePartViewHolder {
                 }
                 float f12 = f11;
                 ChatEventHandler chatEventHandler = eventHandler;
-                String mo536getMessageId3Eiw7ao = accessory.mo536getMessageId3Eiw7ao();
-                UserId m548getAuthorIdwUX8bhU = accessory.m548getAuthorIdwUX8bhU();
-                if (m548getAuthorIdwUX8bhU != null) {
-                    long m1144unboximpl = m548getAuthorIdwUX8bhU.m1144unboximpl();
+                String mo537getMessageId3Eiw7ao = accessory.mo537getMessageId3Eiw7ao();
+                UserId m549getAuthorIdwUX8bhU = accessory.m549getAuthorIdwUX8bhU();
+                if (m549getAuthorIdwUX8bhU != null) {
+                    long m1145unboximpl = m549getAuthorIdwUX8bhU.m1145unboximpl();
                     boolean isVoiceMessage = accessory.isVoiceMessage();
                     String id2 = accessory.getAttachment().getId();
                     if (id2 == null) {
                         id2 = "";
                     }
-                    chatEventHandler.mo433mediaAttachmentPlaybackStartedjd4C3YQ(mo536getMessageId3Eiw7ao, f12, f10, m1144unboximpl, isVoiceMessage, id2);
+                    chatEventHandler.mo434mediaAttachmentPlaybackStartedjd4C3YQ(mo537getMessageId3Eiw7ao, f12, f10, m1145unboximpl, isVoiceMessage, id2);
                 }
             }
 
@@ -194,7 +194,7 @@ public final class AudioPlayerViewHolder extends MessagePartViewHolder {
                 if (!accessory.isVoiceMessage()) {
                     return;
                 }
-                eventHandler.mo487voiceMessagePlaybackFailedntcYbpo(accessory.mo536getMessageId3Eiw7ao(), str);
+                eventHandler.mo488voiceMessagePlaybackFailedntcYbpo(accessory.mo537getMessageId3Eiw7ao(), str);
             }
         });
     }

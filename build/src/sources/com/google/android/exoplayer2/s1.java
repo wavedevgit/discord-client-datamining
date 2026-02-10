@@ -6,46 +6,46 @@ import java.util.concurrent.TimeoutException;
 public final class s1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f12823a;
+    private final b f13400a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f12824b;
+    private final a f13401b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final oe.e f12825c;
+    private final oe.e f13402c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Timeline f12826d;
+    private final Timeline f13403d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f12827e;
+    private int f13404e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Object f12828f;
+    private Object f13405f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Looper f12829g;
+    private Looper f13406g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f12830h;
+    private int f13407h;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f12831i = -9223372036854775807L;
+    private long f13408i = -9223372036854775807L;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f12832j = true;
+    private boolean f13409j = true;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f12833k;
+    private boolean f13410k;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f12834l;
+    private boolean f13411l;
 
     /* renamed from: m  reason: collision with root package name */
-    private boolean f12835m;
+    private boolean f13412m;
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f12836n;
+    private boolean f13413n;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -58,34 +58,34 @@ public final class s1 {
     }
 
     public s1(a aVar, b bVar, Timeline timeline, int i10, oe.e eVar, Looper looper) {
-        this.f12824b = aVar;
-        this.f12823a = bVar;
-        this.f12826d = timeline;
-        this.f12829g = looper;
-        this.f12825c = eVar;
-        this.f12830h = i10;
+        this.f13401b = aVar;
+        this.f13400a = bVar;
+        this.f13403d = timeline;
+        this.f13406g = looper;
+        this.f13402c = eVar;
+        this.f13407h = i10;
     }
 
     public synchronized boolean a(long j10) {
         boolean z10;
         boolean z11;
         try {
-            oe.a.g(this.f12833k);
-            if (this.f12829g.getThread() != Thread.currentThread()) {
+            oe.a.g(this.f13410k);
+            if (this.f13406g.getThread() != Thread.currentThread()) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             oe.a.g(z10);
-            long b10 = this.f12825c.b() + j10;
+            long b10 = this.f13402c.b() + j10;
             while (true) {
-                z11 = this.f12835m;
+                z11 = this.f13412m;
                 if (z11 || j10 <= 0) {
                     break;
                 }
-                this.f12825c.d();
+                this.f13402c.d();
                 wait(j10);
-                j10 = b10 - this.f12825c.b();
+                j10 = b10 - this.f13402c.b();
             }
             if (z11) {
             } else {
@@ -94,70 +94,70 @@ public final class s1 {
         } catch (Throwable th2) {
             throw th2;
         }
-        return this.f12834l;
+        return this.f13411l;
     }
 
     public boolean b() {
-        return this.f12832j;
+        return this.f13409j;
     }
 
     public Looper c() {
-        return this.f12829g;
+        return this.f13406g;
     }
 
     public int d() {
-        return this.f12830h;
+        return this.f13407h;
     }
 
     public Object e() {
-        return this.f12828f;
+        return this.f13405f;
     }
 
     public long f() {
-        return this.f12831i;
+        return this.f13408i;
     }
 
     public b g() {
-        return this.f12823a;
+        return this.f13400a;
     }
 
     public Timeline h() {
-        return this.f12826d;
+        return this.f13403d;
     }
 
     public int i() {
-        return this.f12827e;
+        return this.f13404e;
     }
 
     public synchronized boolean j() {
-        return this.f12836n;
+        return this.f13413n;
     }
 
     public synchronized void k(boolean z10) {
-        this.f12834l = z10 | this.f12834l;
-        this.f12835m = true;
+        this.f13411l = z10 | this.f13411l;
+        this.f13412m = true;
         notifyAll();
     }
 
     public s1 l() {
-        oe.a.g(!this.f12833k);
-        if (this.f12831i == -9223372036854775807L) {
-            oe.a.a(this.f12832j);
+        oe.a.g(!this.f13410k);
+        if (this.f13408i == -9223372036854775807L) {
+            oe.a.a(this.f13409j);
         }
-        this.f12833k = true;
-        this.f12824b.e(this);
+        this.f13410k = true;
+        this.f13401b.e(this);
         return this;
     }
 
     public s1 m(Object obj) {
-        oe.a.g(!this.f12833k);
-        this.f12828f = obj;
+        oe.a.g(!this.f13410k);
+        this.f13405f = obj;
         return this;
     }
 
     public s1 n(int i10) {
-        oe.a.g(!this.f12833k);
-        this.f12827e = i10;
+        oe.a.g(!this.f13410k);
+        this.f13404e = i10;
         return this;
     }
 }

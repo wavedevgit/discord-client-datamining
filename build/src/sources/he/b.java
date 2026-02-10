@@ -3,49 +3,49 @@ package he;
 import android.text.TextUtils;
 import com.facebook.react.uimanager.ViewProps;
 import java.util.regex.Pattern;
-import oi.u;
+import qi.u;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 final class b {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Pattern f25889d = Pattern.compile("\\s+");
+    private static final Pattern f27107d = Pattern.compile("\\s+");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final u f25890e = u.v("auto", ViewProps.NONE);
+    private static final u f27108e = u.v("auto", ViewProps.NONE);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final u f25891f = u.w("dot", "sesame", "circle");
+    private static final u f27109f = u.w("dot", "sesame", "circle");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final u f25892g = u.v("filled", "open");
+    private static final u f27110g = u.v("filled", "open");
 
     /* renamed from: h  reason: collision with root package name */
-    private static final u f25893h = u.w("after", "before", "outside");
+    private static final u f27111h = u.w("after", "before", "outside");
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f25894a;
+    public final int f27112a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f25895b;
+    public final int f27113b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f25896c;
+    public final int f27114c;
 
     private b(int i10, int i11, int i12) {
-        this.f25894a = i10;
-        this.f25895b = i11;
-        this.f25896c = i12;
+        this.f27112a = i10;
+        this.f27113b = i11;
+        this.f27114c = i12;
     }
 
     public static b a(String str) {
         if (str == null) {
             return null;
         }
-        String e10 = ni.b.e(str.trim());
+        String e10 = pi.b.e(str.trim());
         if (e10.isEmpty()) {
             return null;
         }
-        return b(u.p(TextUtils.split(e10, f25889d)));
+        return b(u.p(TextUtils.split(e10, f27107d)));
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x004b  */
@@ -56,11 +56,11 @@ final class b {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    private static he.b b(oi.u r7) {
+    private static he.b b(qi.u r7) {
         /*
             Method dump skipped, instructions count: 248
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: he.b.b(oi.u):he.b");
+        throw new UnsupportedOperationException("Method not decompiled: he.b.b(qi.u):he.b");
     }
 }

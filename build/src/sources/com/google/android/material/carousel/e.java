@@ -1,121 +1,353 @@
 package com.google.android.material.carousel;
 
-import android.content.Context;
-import com.google.android.material.carousel.f;
-/* JADX INFO: Access modifiers changed from: package-private */
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class e {
-    static float a(float f10, float f11, int i10) {
-        return f10 + (Math.max(0, i10 - 1) * f11);
-    }
+public final class e {
 
-    static float b(float f10, float f11, int i10) {
-        return i10 > 0 ? f10 + (f11 / 2.0f) : f10;
-    }
+    /* renamed from: a  reason: collision with root package name */
+    private final float f15513a;
 
-    static f c(Context context, float f10, float f11, a aVar) {
-        int i10;
-        float f12;
-        float f13;
-        int i11;
-        int i12;
-        int i13;
-        float min = Math.min(f(context) + f10, aVar.f14896f);
-        float f14 = min / 2.0f;
-        float f15 = 0.0f - f14;
-        float b10 = b(0.0f, aVar.f14892b, aVar.f14893c);
-        float j10 = j(0.0f, a(b10, aVar.f14892b, (int) Math.floor(aVar.f14893c / 2.0f)), aVar.f14892b, aVar.f14893c);
-        float b11 = b(j10, aVar.f14895e, aVar.f14894d);
-        float j11 = j(j10, a(b11, aVar.f14895e, (int) Math.floor(aVar.f14894d / 2.0f)), aVar.f14895e, aVar.f14894d);
-        float b12 = b(j11, aVar.f14896f, aVar.f14897g);
-        float j12 = j(j11, a(b12, aVar.f14896f, aVar.f14897g), aVar.f14896f, aVar.f14897g);
-        float b13 = b(j12, aVar.f14895e, aVar.f14894d);
-        float b14 = b(j(j12, a(b13, aVar.f14895e, (int) Math.ceil(aVar.f14894d / 2.0f)), aVar.f14895e, aVar.f14894d), aVar.f14892b, aVar.f14893c);
-        float f16 = f14 + f11;
-        float b15 = d.b(min, aVar.f14896f, f10);
-        float b16 = d.b(aVar.f14892b, aVar.f14896f, f10);
-        float b17 = d.b(aVar.f14895e, aVar.f14896f, f10);
-        f.b a10 = new f.b(aVar.f14896f, f11).a(f15, b15, min);
-        if (aVar.f14893c > 0) {
-            f12 = 2.0f;
-            f13 = f16;
-            a10.g(b10, b16, aVar.f14892b, (int) Math.floor(i10 / 2.0f));
-        } else {
-            f12 = 2.0f;
-            f13 = f16;
+    /* renamed from: b  reason: collision with root package name */
+    private int f15514b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final List f15515c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final int f15516d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final int f15517e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final int f15518f;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final float f15519a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final int f15520b;
+
+        /* renamed from: d  reason: collision with root package name */
+        private c f15522d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private c f15523e;
+
+        /* renamed from: c  reason: collision with root package name */
+        private final List f15521c = new ArrayList();
+
+        /* renamed from: f  reason: collision with root package name */
+        private int f15524f = -1;
+
+        /* renamed from: g  reason: collision with root package name */
+        private int f15525g = -1;
+
+        /* renamed from: h  reason: collision with root package name */
+        private float f15526h = 0.0f;
+
+        /* renamed from: i  reason: collision with root package name */
+        private int f15527i = -1;
+
+        public b(float f10, int i10) {
+            this.f15519a = f10;
+            this.f15520b = i10;
         }
-        if (aVar.f14894d > 0) {
-            a10.g(b11, b17, aVar.f14895e, (int) Math.floor(i11 / f12));
+
+        private static float j(float f10, float f11, int i10, int i11) {
+            return (f10 - (i10 * f11)) + (i11 * f11);
         }
-        a10.h(b12, 0.0f, aVar.f14896f, aVar.f14897g, true);
-        if (aVar.f14894d > 0) {
-            a10.g(b13, b17, aVar.f14895e, (int) Math.ceil(i12 / f12));
+
+        public b a(float f10, float f11, float f12) {
+            return d(f10, f11, f12, false, true);
         }
-        if (aVar.f14893c > 0) {
-            a10.g(b14, b16, aVar.f14892b, (int) Math.ceil(i13 / f12));
+
+        public b b(float f10, float f11, float f12) {
+            return c(f10, f11, f12, false);
         }
-        a10.a(f13, b15, min);
-        return a10.i();
+
+        public b c(float f10, float f11, float f12, boolean z10) {
+            return d(f10, f11, f12, z10, false);
+        }
+
+        public b d(float f10, float f11, float f12, boolean z10, boolean z11) {
+            float f13;
+            float f14 = f12 / 2.0f;
+            float f15 = f10 - f14;
+            float f16 = f14 + f10;
+            int i10 = this.f15520b;
+            if (f16 > i10) {
+                f13 = Math.abs(f16 - Math.max(f16 - f12, i10));
+            } else {
+                f13 = 0.0f;
+                if (f15 < 0.0f) {
+                    f13 = Math.abs(f15 - Math.min(f15 + f12, 0.0f));
+                }
+            }
+            return e(f10, f11, f12, z10, z11, f13);
+        }
+
+        public b e(float f10, float f11, float f12, boolean z10, boolean z11, float f13) {
+            return f(f10, f11, f12, z10, z11, f13, 0.0f, 0.0f);
+        }
+
+        public b f(float f10, float f11, float f12, boolean z10, boolean z11, float f13, float f14, float f15) {
+            if (f12 <= 0.0f) {
+                return this;
+            }
+            if (z11) {
+                if (!z10) {
+                    int i10 = this.f15527i;
+                    if (i10 != -1 && i10 != 0) {
+                        throw new IllegalArgumentException("Anchor keylines must be either the first or last keyline.");
+                    }
+                    this.f15527i = this.f15521c.size();
+                } else {
+                    throw new IllegalArgumentException("Anchor keylines cannot be focal.");
+                }
+            }
+            c cVar = new c(Float.MIN_VALUE, f10, f11, f12, z11, f13, f14, f15);
+            if (z10) {
+                if (this.f15522d == null) {
+                    this.f15522d = cVar;
+                    this.f15524f = this.f15521c.size();
+                }
+                if (this.f15525g != -1 && this.f15521c.size() - this.f15525g > 1) {
+                    throw new IllegalArgumentException("Keylines marked as focal must be placed next to each other. There cannot be non-focal keylines between focal keylines.");
+                }
+                if (f12 == this.f15522d.f15531d) {
+                    this.f15523e = cVar;
+                    this.f15525g = this.f15521c.size();
+                } else {
+                    throw new IllegalArgumentException("Keylines that are marked as focal must all have the same masked item size.");
+                }
+            } else if (this.f15522d == null && cVar.f15531d < this.f15526h) {
+                throw new IllegalArgumentException("Keylines before the first focal keyline must be ordered by incrementing masked item size.");
+            } else {
+                if (this.f15523e != null && cVar.f15531d > this.f15526h) {
+                    throw new IllegalArgumentException("Keylines after the last focal keyline must be ordered by decreasing masked item size.");
+                }
+            }
+            this.f15526h = cVar.f15531d;
+            this.f15521c.add(cVar);
+            return this;
+        }
+
+        public b g(float f10, float f11, float f12, int i10) {
+            return h(f10, f11, f12, i10, false);
+        }
+
+        public b h(float f10, float f11, float f12, int i10, boolean z10) {
+            if (i10 > 0 && f12 > 0.0f) {
+                for (int i11 = 0; i11 < i10; i11++) {
+                    c((i11 * f12) + f10, f11, f12, z10);
+                }
+            }
+            return this;
+        }
+
+        public e i() {
+            if (this.f15522d != null) {
+                ArrayList arrayList = new ArrayList();
+                for (int i10 = 0; i10 < this.f15521c.size(); i10++) {
+                    c cVar = (c) this.f15521c.get(i10);
+                    arrayList.add(new c(j(this.f15522d.f15529b, this.f15519a, this.f15524f, i10), cVar.f15529b, cVar.f15530c, cVar.f15531d, cVar.f15532e, cVar.f15533f, cVar.f15534g, cVar.f15535h));
+                }
+                return new e(this.f15519a, arrayList, this.f15524f, this.f15525g, this.f15520b);
+            }
+            throw new IllegalStateException("There must be a keyline marked as focal.");
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static f d(Context context, float f10, float f11, a aVar, int i10) {
-        if (i10 == 1) {
-            return c(context, f10, f11, aVar);
-        }
-        return e(context, f10, f11, aVar);
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c {
 
-    static f e(Context context, float f10, float f11, a aVar) {
-        float min = Math.min(f(context) + f10, aVar.f14896f);
-        float f12 = min / 2.0f;
-        float f13 = 0.0f - f12;
-        float b10 = b(0.0f, aVar.f14896f, aVar.f14897g);
-        float j10 = j(0.0f, a(b10, aVar.f14896f, aVar.f14897g), aVar.f14896f, aVar.f14897g);
-        float b11 = b(j10, aVar.f14895e, aVar.f14894d);
-        float b12 = b(j(j10, b11, aVar.f14895e, aVar.f14894d), aVar.f14892b, aVar.f14893c);
-        float f14 = f12 + f11;
-        float b13 = d.b(min, aVar.f14896f, f10);
-        float b14 = d.b(aVar.f14892b, aVar.f14896f, f10);
-        float b15 = d.b(aVar.f14895e, aVar.f14896f, f10);
-        f.b h10 = new f.b(aVar.f14896f, f11).a(f13, b13, min).h(b10, 0.0f, aVar.f14896f, aVar.f14897g, true);
-        if (aVar.f14894d > 0) {
-            h10.b(b11, b15, aVar.f14895e);
-        }
-        int i10 = aVar.f14893c;
-        if (i10 > 0) {
-            h10.g(b12, b14, aVar.f14892b, i10);
-        }
-        h10.a(f14, b13, min);
-        return h10.i();
-    }
+        /* renamed from: a  reason: collision with root package name */
+        final float f15528a;
 
-    static float f(Context context) {
-        return context.getResources().getDimension(bh.d.f6685o);
+        /* renamed from: b  reason: collision with root package name */
+        final float f15529b;
+
+        /* renamed from: c  reason: collision with root package name */
+        final float f15530c;
+
+        /* renamed from: d  reason: collision with root package name */
+        final float f15531d;
+
+        /* renamed from: e  reason: collision with root package name */
+        final boolean f15532e;
+
+        /* renamed from: f  reason: collision with root package name */
+        final float f15533f;
+
+        /* renamed from: g  reason: collision with root package name */
+        final float f15534g;
+
+        /* renamed from: h  reason: collision with root package name */
+        final float f15535h;
+
+        c(float f10, float f11, float f12, float f13) {
+            this(f10, f11, f12, f13, false, 0.0f, 0.0f, 0.0f);
+        }
+
+        static c a(c cVar, c cVar2, float f10) {
+            return new c(ch.a.a(cVar.f15528a, cVar2.f15528a, f10), ch.a.a(cVar.f15529b, cVar2.f15529b, f10), ch.a.a(cVar.f15530c, cVar2.f15530c, f10), ch.a.a(cVar.f15531d, cVar2.f15531d, f10));
+        }
+
+        c(float f10, float f11, float f12, float f13, boolean z10, float f14, float f15, float f16) {
+            this.f15528a = f10;
+            this.f15529b = f11;
+            this.f15530c = f12;
+            this.f15531d = f13;
+            this.f15532e = z10;
+            this.f15533f = f14;
+            this.f15534g = f15;
+            this.f15535h = f16;
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static float g(Context context) {
-        return context.getResources().getDimension(bh.d.f6686p);
+    public static e o(e eVar, e eVar2, float f10) {
+        if (eVar.g() == eVar2.g()) {
+            List h10 = eVar.h();
+            List h11 = eVar2.h();
+            if (h10.size() == h11.size()) {
+                ArrayList arrayList = new ArrayList();
+                for (int i10 = 0; i10 < eVar.h().size(); i10++) {
+                    arrayList.add(c.a((c) h10.get(i10), (c) h11.get(i10), f10));
+                }
+                return new e(eVar.g(), arrayList, ch.a.c(eVar.c(), eVar2.c(), f10), ch.a.c(eVar.j(), eVar2.j(), f10), eVar.f15518f);
+            }
+            throw new IllegalArgumentException("Keylines being linearly interpolated must have the same number of keylines.");
+        }
+        throw new IllegalArgumentException("Keylines being linearly interpolated must have the same item size.");
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static float h(Context context) {
-        return context.getResources().getDimension(bh.d.f6687q);
+    public static e p(e eVar, int i10) {
+        boolean z10;
+        b bVar = new b(eVar.g(), i10);
+        float f10 = (i10 - eVar.k().f15529b) - (eVar.k().f15531d / 2.0f);
+        for (int size = eVar.h().size() - 1; size >= 0; size--) {
+            c cVar = (c) eVar.h().get(size);
+            float f11 = (cVar.f15531d / 2.0f) + f10;
+            if (size >= eVar.c() && size <= eVar.j()) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            bVar.d(f11, cVar.f15530c, cVar.f15531d, z10, cVar.f15532e);
+            f10 += cVar.f15531d;
+        }
+        return bVar.i();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static int i(int[] iArr) {
-        int i10 = Integer.MIN_VALUE;
-        for (int i11 : iArr) {
-            if (i11 > i10) {
-                i10 = i11;
+    public int a() {
+        return this.f15518f;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c b() {
+        return (c) this.f15515c.get(this.f15516d);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int c() {
+        return this.f15516d;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c d() {
+        return (c) this.f15515c.get(0);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c e() {
+        for (int i10 = 0; i10 < this.f15515c.size(); i10++) {
+            c cVar = (c) this.f15515c.get(i10);
+            if (!cVar.f15532e) {
+                return cVar;
             }
         }
-        return i10;
+        return null;
     }
 
-    static float j(float f10, float f11, float f12, int i10) {
-        return i10 > 0 ? f11 + (f12 / 2.0f) : f10;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public List f() {
+        return this.f15515c.subList(this.f15516d, this.f15517e + 1);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public float g() {
+        return this.f15513a;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public List h() {
+        return this.f15515c;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c i() {
+        return (c) this.f15515c.get(this.f15517e);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int j() {
+        return this.f15517e;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c k() {
+        List list = this.f15515c;
+        return (c) list.get(list.size() - 1);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c l() {
+        for (int size = this.f15515c.size() - 1; size >= 0; size--) {
+            c cVar = (c) this.f15515c.get(size);
+            if (!cVar.f15532e) {
+                return cVar;
+            }
+        }
+        return null;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int m() {
+        int i10 = 0;
+        for (c cVar : this.f15515c) {
+            if (cVar.f15532e) {
+                i10++;
+            }
+        }
+        return this.f15515c.size() - i10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public int n() {
+        return this.f15514b;
+    }
+
+    private e(float f10, List list, int i10, int i11, int i12) {
+        this.f15513a = f10;
+        this.f15515c = Collections.unmodifiableList(list);
+        this.f15516d = i10;
+        this.f15517e = i11;
+        while (i10 <= i11) {
+            if (((c) list.get(i10)).f15533f == 0.0f) {
+                this.f15514b++;
+            }
+            i10++;
+        }
+        this.f15518f = i12;
     }
 }

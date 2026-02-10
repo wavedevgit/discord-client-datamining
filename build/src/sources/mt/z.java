@@ -1,26 +1,78 @@
 package mt;
 
-import org.jetbrains.annotations.NotNull;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface z {
-    @NotNull
-    public static final a Companion = a.f37623a;
+public abstract class z implements l {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final n f36648a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final Integer f36649b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final Integer f36650c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Integer f36651d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final Integer f36652e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
+    /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
+        a(Object obj) {
+            super(1, obj, b.class, "getterNotNull", "getterNotNull(Ljava/lang/Object;)Ljava/lang/Object;", 0);
+        }
 
-        /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ a f37623a = new a();
-
-        private a() {
+        @Override // kotlin.jvm.functions.Function1
+        /* renamed from: a */
+        public final Integer invoke(Object obj) {
+            return (Integer) ((b) this.receiver).b(obj);
         }
     }
 
-    void a(char c10);
+    public z(n field, Integer num, Integer num2, Integer num3, Integer num4) {
+        Intrinsics.checkNotNullParameter(field, "field");
+        this.f36648a = field;
+        this.f36649b = num;
+        this.f36650c = num2;
+        this.f36651d = num3;
+        this.f36652e = num4;
+        if (num != null && num.intValue() < 0) {
+            throw new IllegalArgumentException(("The minimum number of digits (" + num + ") is negative").toString());
+        } else if (num2 != null && num != null && num2.intValue() < num.intValue()) {
+            throw new IllegalArgumentException(("The maximum number of digits (" + num2 + ") is less than the minimum number of digits (" + num + ')').toString());
+        }
+    }
 
-    void b(String str);
+    @Override // mt.l
+    public nt.e a() {
+        int i10;
+        a aVar = new a(this.f36648a.b());
+        Integer num = this.f36649b;
+        if (num != null) {
+            i10 = num.intValue();
+        } else {
+            i10 = 0;
+        }
+        nt.g gVar = new nt.g(aVar, i10, this.f36652e);
+        Integer num2 = this.f36651d;
+        if (num2 != null) {
+            return new nt.h(gVar, num2.intValue());
+        }
+        return gVar;
+    }
 
-    void c(String str);
+    @Override // mt.l
+    public ot.q b() {
+        return ot.p.a(this.f36649b, this.f36650c, this.f36651d, this.f36648a.b(), this.f36648a.getName(), this.f36652e);
+    }
 
-    void writeLong(long j10);
+    @Override // mt.l
+    public final n c() {
+        return this.f36648a;
+    }
 }

@@ -14,25 +14,25 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateDocumentRequest_AttributesJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f18612a;
+    private final m.b f19492a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18613b;
+    private final h f19493b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f18614c;
+    private final h f19494c;
 
     public CreateDocumentRequest_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("kind", "fileLimit");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f18612a = a10;
+        this.f19492a = a10;
         h f10 = moshi.f(String.class, x0.d(), "kind");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f18613b = f10;
+        this.f19493b = f10;
         h f11 = moshi.f(Integer.TYPE, x0.d(), "fileLimit");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f18614c = f11;
+        this.f19494c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -43,20 +43,20 @@ public final class CreateDocumentRequest_AttributesJsonAdapter extends h {
         String str = null;
         Integer num = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f18612a);
+            int J = reader.J(this.f19492a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (num = (Integer) this.f18614c.fromJson(reader)) == null) {
-                        throw bn.c.x("fileLimit", "fileLimit", reader);
+                    if (J == 1 && (num = (Integer) this.f19494c.fromJson(reader)) == null) {
+                        throw dn.c.x("fileLimit", "fileLimit", reader);
                     }
                 } else {
-                    str = (String) this.f18613b.fromJson(reader);
+                    str = (String) this.f19493b.fromJson(reader);
                     if (str == null) {
-                        throw bn.c.x("kind", "kind", reader);
+                        throw dn.c.x("kind", "kind", reader);
                     }
                 }
             } else {
-                reader.C0();
+                reader.z0();
                 reader.T();
             }
         }
@@ -65,9 +65,9 @@ public final class CreateDocumentRequest_AttributesJsonAdapter extends h {
             if (num != null) {
                 return new CreateDocumentRequest.Attributes(str, num.intValue());
             }
-            throw bn.c.o("fileLimit", "fileLimit", reader);
+            throw dn.c.o("fileLimit", "fileLimit", reader);
         }
-        throw bn.c.o("kind", "kind", reader);
+        throw dn.c.o("kind", "kind", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -75,11 +75,11 @@ public final class CreateDocumentRequest_AttributesJsonAdapter extends h {
     public void toJson(t writer, CreateDocumentRequest.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("kind");
-            this.f18613b.toJson(writer, attributes.b());
+            this.f19493b.toJson(writer, attributes.b());
             writer.J("fileLimit");
-            this.f18614c.toJson(writer, Integer.valueOf(attributes.a()));
+            this.f19494c.toJson(writer, Integer.valueOf(attributes.a()));
             writer.s();
             return;
         }

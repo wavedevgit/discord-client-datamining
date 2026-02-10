@@ -29,7 +29,7 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_FileLimi
         mVar.u();
         while (mVar.hasNext()) {
             if (mVar.J(this.options) == -1) {
-                mVar.C0();
+                mVar.z0();
                 mVar.T();
             }
         }
@@ -40,7 +40,7 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_FileLimi
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError.Details details) {
         if (details != null) {
-            tVar.k();
+            tVar.i();
             tVar.s();
             return;
         }

@@ -10,55 +10,55 @@ import org.jetbrains.annotations.NotNull;
 public class SerializerExtensionProtocol {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ExtensionRegistryLite f34013a;
+    private final ExtensionRegistryLite f34235a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34014b;
+    private final GeneratedMessageLite.GeneratedExtension f34236b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34015c;
+    private final GeneratedMessageLite.GeneratedExtension f34237c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34016d;
+    private final GeneratedMessageLite.GeneratedExtension f34238d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34017e;
+    private final GeneratedMessageLite.GeneratedExtension f34239e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34018f;
+    private final GeneratedMessageLite.GeneratedExtension f34240f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34019g;
+    private final GeneratedMessageLite.GeneratedExtension f34241g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34020h;
+    private final GeneratedMessageLite.GeneratedExtension f34242h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34021i;
+    private final GeneratedMessageLite.GeneratedExtension f34243i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34022j;
+    private final GeneratedMessageLite.GeneratedExtension f34244j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34023k;
+    private final GeneratedMessageLite.GeneratedExtension f34245k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34024l;
+    private final GeneratedMessageLite.GeneratedExtension f34246l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34025m;
+    private final GeneratedMessageLite.GeneratedExtension f34247m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34026n;
+    private final GeneratedMessageLite.GeneratedExtension f34248n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34027o;
+    private final GeneratedMessageLite.GeneratedExtension f34249o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34028p;
+    private final GeneratedMessageLite.GeneratedExtension f34250p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final GeneratedMessageLite.GeneratedExtension f34029q;
+    private final GeneratedMessageLite.GeneratedExtension f34251q;
 
     public SerializerExtensionProtocol(@NotNull ExtensionRegistryLite extensionRegistry, @NotNull GeneratedMessageLite.GeneratedExtension<ProtoBuf.Package, Integer> packageFqName, @NotNull GeneratedMessageLite.GeneratedExtension<ProtoBuf.Constructor, List<ProtoBuf.Annotation>> constructorAnnotation, @NotNull GeneratedMessageLite.GeneratedExtension<ProtoBuf.Class, List<ProtoBuf.Annotation>> classAnnotation, @NotNull GeneratedMessageLite.GeneratedExtension<ProtoBuf.Function, List<ProtoBuf.Annotation>> functionAnnotation, GeneratedMessageLite.GeneratedExtension<ProtoBuf.Function, List<ProtoBuf.Annotation>> generatedExtension, @NotNull GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> propertyAnnotation, @NotNull GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> propertyGetterAnnotation, @NotNull GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> propertySetterAnnotation, GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> generatedExtension2, GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> generatedExtension3, GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> generatedExtension4, @NotNull GeneratedMessageLite.GeneratedExtension<ProtoBuf.EnumEntry, List<ProtoBuf.Annotation>> enumEntryAnnotation, @NotNull GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, ProtoBuf.Annotation.Argument.Value> compileTimeValue, @NotNull GeneratedMessageLite.GeneratedExtension<ProtoBuf.ValueParameter, List<ProtoBuf.Annotation>> parameterAnnotation, @NotNull GeneratedMessageLite.GeneratedExtension<ProtoBuf.Type, List<ProtoBuf.Annotation>> typeAnnotation, @NotNull GeneratedMessageLite.GeneratedExtension<ProtoBuf.TypeParameter, List<ProtoBuf.Annotation>> typeParameterAnnotation) {
         Intrinsics.checkNotNullParameter(extensionRegistry, "extensionRegistry");
@@ -74,98 +74,98 @@ public class SerializerExtensionProtocol {
         Intrinsics.checkNotNullParameter(parameterAnnotation, "parameterAnnotation");
         Intrinsics.checkNotNullParameter(typeAnnotation, "typeAnnotation");
         Intrinsics.checkNotNullParameter(typeParameterAnnotation, "typeParameterAnnotation");
-        this.f34013a = extensionRegistry;
-        this.f34014b = packageFqName;
-        this.f34015c = constructorAnnotation;
-        this.f34016d = classAnnotation;
-        this.f34017e = functionAnnotation;
-        this.f34018f = generatedExtension;
-        this.f34019g = propertyAnnotation;
-        this.f34020h = propertyGetterAnnotation;
-        this.f34021i = propertySetterAnnotation;
-        this.f34022j = generatedExtension2;
-        this.f34023k = generatedExtension3;
-        this.f34024l = generatedExtension4;
-        this.f34025m = enumEntryAnnotation;
-        this.f34026n = compileTimeValue;
-        this.f34027o = parameterAnnotation;
-        this.f34028p = typeAnnotation;
-        this.f34029q = typeParameterAnnotation;
+        this.f34235a = extensionRegistry;
+        this.f34236b = packageFqName;
+        this.f34237c = constructorAnnotation;
+        this.f34238d = classAnnotation;
+        this.f34239e = functionAnnotation;
+        this.f34240f = generatedExtension;
+        this.f34241g = propertyAnnotation;
+        this.f34242h = propertyGetterAnnotation;
+        this.f34243i = propertySetterAnnotation;
+        this.f34244j = generatedExtension2;
+        this.f34245k = generatedExtension3;
+        this.f34246l = generatedExtension4;
+        this.f34247m = enumEntryAnnotation;
+        this.f34248n = compileTimeValue;
+        this.f34249o = parameterAnnotation;
+        this.f34250p = typeAnnotation;
+        this.f34251q = typeParameterAnnotation;
     }
 
     @NotNull
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.Class, List<ProtoBuf.Annotation>> getClassAnnotation() {
-        return this.f34016d;
+        return this.f34238d;
     }
 
     @NotNull
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, ProtoBuf.Annotation.Argument.Value> getCompileTimeValue() {
-        return this.f34026n;
+        return this.f34248n;
     }
 
     @NotNull
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.Constructor, List<ProtoBuf.Annotation>> getConstructorAnnotation() {
-        return this.f34015c;
+        return this.f34237c;
     }
 
     @NotNull
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.EnumEntry, List<ProtoBuf.Annotation>> getEnumEntryAnnotation() {
-        return this.f34025m;
+        return this.f34247m;
     }
 
     @NotNull
     public final ExtensionRegistryLite getExtensionRegistry() {
-        return this.f34013a;
+        return this.f34235a;
     }
 
     @NotNull
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.Function, List<ProtoBuf.Annotation>> getFunctionAnnotation() {
-        return this.f34017e;
+        return this.f34239e;
     }
 
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.Function, List<ProtoBuf.Annotation>> getFunctionExtensionReceiverAnnotation() {
-        return this.f34018f;
+        return this.f34240f;
     }
 
     @NotNull
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.ValueParameter, List<ProtoBuf.Annotation>> getParameterAnnotation() {
-        return this.f34027o;
+        return this.f34249o;
     }
 
     @NotNull
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> getPropertyAnnotation() {
-        return this.f34019g;
+        return this.f34241g;
     }
 
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> getPropertyBackingFieldAnnotation() {
-        return this.f34023k;
+        return this.f34245k;
     }
 
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> getPropertyDelegatedFieldAnnotation() {
-        return this.f34024l;
+        return this.f34246l;
     }
 
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> getPropertyExtensionReceiverAnnotation() {
-        return this.f34022j;
+        return this.f34244j;
     }
 
     @NotNull
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> getPropertyGetterAnnotation() {
-        return this.f34020h;
+        return this.f34242h;
     }
 
     @NotNull
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.Property, List<ProtoBuf.Annotation>> getPropertySetterAnnotation() {
-        return this.f34021i;
+        return this.f34243i;
     }
 
     @NotNull
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.Type, List<ProtoBuf.Annotation>> getTypeAnnotation() {
-        return this.f34028p;
+        return this.f34250p;
     }
 
     @NotNull
     public final GeneratedMessageLite.GeneratedExtension<ProtoBuf.TypeParameter, List<ProtoBuf.Annotation>> getTypeParameterAnnotation() {
-        return this.f34029q;
+        return this.f34251q;
     }
 }

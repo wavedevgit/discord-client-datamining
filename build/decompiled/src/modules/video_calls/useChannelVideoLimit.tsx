@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun66784: for (var _fun66784_ip = 0;;) switch (_fun66784_ip) {
+            _fun66837: for (var _fun66837_ip = 0;;) switch (_fun66837_ip) {
                 case 0:
                     var4 = _closure1_slot3;
                     var3 = var4.countVoiceStatesForChannel;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.bind(var5)(var2);
                     var3 = null;
                     if (!(var3 != var2)) {
-                        _fun66784_ip = 159;
-                        continue _fun66784
+                        _fun66837_ip = 159;
+                        continue _fun66837
                     }
                 case 60:
                     var1 = _closure2_slot0;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot4;
                     var0 = var0.GUILD_STAGE_VOICE;
                     if (!(var1 !== var0)) {
-                        _fun66784_ip = 127;
-                        continue _fun66784
+                        _fun66837_ip = 127;
+                        continue _fun66837
                     }
                 case 83:
                     var0 = {};
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = 0;
                     var1 = var3 > var1;
                     if (!var1) {
-                        _fun66784_ip = 110;
-                        continue _fun66784
+                        _fun66837_ip = 110;
+                        continue _fun66837
                     }
                 case 100:
                     var3 = var2.maxVideoChannelUsers;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.reachedLimit = var1;
                     var1 = var2.maxVideoChannelUsers;
                     var0.limit = var1;
-                    _fun66784_ip = 157;
-                    continue _fun66784;
+                    _fun66837_ip = 157;
+                    continue _fun66837;
                 case 127:
                     var1 = {};
                     var3 = var2.maxStageVideoChannelUsers;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.limit = var2;
                     var0 = var1;
                 case 157:
-                    _fun66784_ip = 173;
-                    continue _fun66784;
+                    _fun66837_ip = 173;
+                    continue _fun66837;
                 case 159:
                     var0 = {
                         'reachedLimit': false,
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0() {
-        _fun66785: for (var _fun66785_ip = 0;;) switch (_fun66785_ip) {
+        _fun66838: for (var _fun66838_ip = 0;;) switch (_fun66838_ip) {
             case 0:
                 var1 = arg0;
                 var4 = _closure1_slot3;
@@ -136,16 +136,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var5)(var2);
                 var3 = null;
                 if (!(var3 != var2)) {
-                    _fun66785_ip = 151;
-                    continue _fun66785
+                    _fun66838_ip = 151;
+                    continue _fun66838
                 }
             case 56:
                 var1 = var1.type;
                 var0 = _closure1_slot4;
                 var0 = var0.GUILD_STAGE_VOICE;
                 if (!(var1 !== var0)) {
-                    _fun66785_ip = 119;
-                    continue _fun66785
+                    _fun66838_ip = 119;
+                    continue _fun66838
                 }
             case 75:
                 var0 = {};
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0;
                 var1 = var3 > var1;
                 if (!var1) {
-                    _fun66785_ip = 102;
-                    continue _fun66785
+                    _fun66838_ip = 102;
+                    continue _fun66838
                 }
             case 92:
                 var3 = var2.maxVideoChannelUsers;
@@ -163,8 +163,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.reachedLimit = var1;
                 var1 = var2.maxVideoChannelUsers;
                 var0.limit = var1;
-                _fun66785_ip = 149;
-                continue _fun66785;
+                _fun66838_ip = 149;
+                continue _fun66838;
             case 119:
                 var1 = {};
                 var3 = var2.maxStageVideoChannelUsers;
@@ -174,8 +174,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.limit = var2;
                 var0 = var1;
             case 149:
-                _fun66785_ip = 165;
-                continue _fun66785;
+                _fun66838_ip = 165;
+                continue _fun66838;
             case 151:
                 var0 = {
                     'reachedLimit': false,

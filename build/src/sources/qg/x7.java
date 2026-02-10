@@ -1,133 +1,133 @@
 package qg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class x7 implements zi.d {
+final class x7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x7 f46481a = new x7();
+    static final x7 f45149a = new x7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f46482b;
+    private static final bj.c f45150b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f46483c;
+    private static final bj.c f45151c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f46484d;
+    private static final bj.c f45152d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final zi.c f46485e;
+    private static final bj.c f45153e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final zi.c f46486f;
+    private static final bj.c f45154f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final zi.c f46487g;
+    private static final bj.c f45155g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final zi.c f46488h;
+    private static final bj.c f45156h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final zi.c f46489i;
+    private static final bj.c f45157i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final zi.c f46490j;
+    private static final bj.c f45158j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final zi.c f46491k;
+    private static final bj.c f45159k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final zi.c f46492l;
+    private static final bj.c f45160l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final zi.c f46493m;
+    private static final bj.c f45161m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final zi.c f46494n;
+    private static final bj.c f45162n;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final zi.c f46495o;
+    private static final bj.c f45163o;
 
     static {
-        c.b a10 = zi.c.a("appId");
+        c.b a10 = bj.c.a("appId");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f46482b = a10.b(s1Var.b()).a();
-        c.b a11 = zi.c.a("appVersion");
+        f45150b = a10.b(s1Var.b()).a();
+        c.b a11 = bj.c.a("appVersion");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f46483c = a11.b(s1Var2.b()).a();
-        c.b a12 = zi.c.a("firebaseProjectId");
+        f45151c = a11.b(s1Var2.b()).a();
+        c.b a12 = bj.c.a("firebaseProjectId");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f46484d = a12.b(s1Var3.b()).a();
-        c.b a13 = zi.c.a("mlSdkVersion");
+        f45152d = a12.b(s1Var3.b()).a();
+        c.b a13 = bj.c.a("mlSdkVersion");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f46485e = a13.b(s1Var4.b()).a();
-        c.b a14 = zi.c.a("tfliteSchemaVersion");
+        f45153e = a13.b(s1Var4.b()).a();
+        c.b a14 = bj.c.a("tfliteSchemaVersion");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f46486f = a14.b(s1Var5.b()).a();
-        c.b a15 = zi.c.a("gcmSenderId");
+        f45154f = a14.b(s1Var5.b()).a();
+        c.b a15 = bj.c.a("gcmSenderId");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f46487g = a15.b(s1Var6.b()).a();
-        c.b a16 = zi.c.a("apiKey");
+        f45155g = a15.b(s1Var6.b()).a();
+        c.b a16 = bj.c.a("apiKey");
         s1 s1Var7 = new s1();
         s1Var7.a(7);
-        f46488h = a16.b(s1Var7.b()).a();
-        c.b a17 = zi.c.a("languages");
+        f45156h = a16.b(s1Var7.b()).a();
+        c.b a17 = bj.c.a("languages");
         s1 s1Var8 = new s1();
         s1Var8.a(8);
-        f46489i = a17.b(s1Var8.b()).a();
-        c.b a18 = zi.c.a("mlSdkInstanceId");
+        f45157i = a17.b(s1Var8.b()).a();
+        c.b a18 = bj.c.a("mlSdkInstanceId");
         s1 s1Var9 = new s1();
         s1Var9.a(9);
-        f46490j = a18.b(s1Var9.b()).a();
-        c.b a19 = zi.c.a("isClearcutClient");
+        f45158j = a18.b(s1Var9.b()).a();
+        c.b a19 = bj.c.a("isClearcutClient");
         s1 s1Var10 = new s1();
         s1Var10.a(10);
-        f46491k = a19.b(s1Var10.b()).a();
-        c.b a20 = zi.c.a("isStandaloneMlkit");
+        f45159k = a19.b(s1Var10.b()).a();
+        c.b a20 = bj.c.a("isStandaloneMlkit");
         s1 s1Var11 = new s1();
         s1Var11.a(11);
-        f46492l = a20.b(s1Var11.b()).a();
-        c.b a21 = zi.c.a("isJsonLogging");
+        f45160l = a20.b(s1Var11.b()).a();
+        c.b a21 = bj.c.a("isJsonLogging");
         s1 s1Var12 = new s1();
         s1Var12.a(12);
-        f46493m = a21.b(s1Var12.b()).a();
-        c.b a22 = zi.c.a("buildLevel");
+        f45161m = a21.b(s1Var12.b()).a();
+        c.b a22 = bj.c.a("buildLevel");
         s1 s1Var13 = new s1();
         s1Var13.a(13);
-        f46494n = a22.b(s1Var13.b()).a();
-        c.b a23 = zi.c.a("optionalModuleVersion");
+        f45162n = a22.b(s1Var13.b()).a();
+        c.b a23 = bj.c.a("optionalModuleVersion");
         s1 s1Var14 = new s1();
         s1Var14.a(14);
-        f46495o = a23.b(s1Var14.b()).a();
+        f45163o = a23.b(s1Var14.b()).a();
     }
 
     private x7() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         hc hcVar = (hc) obj;
-        zi.e eVar = (zi.e) obj2;
-        eVar.d(f46482b, hcVar.g());
-        eVar.d(f46483c, hcVar.h());
-        eVar.d(f46484d, null);
-        eVar.d(f46485e, hcVar.j());
-        eVar.d(f46486f, hcVar.k());
-        eVar.d(f46487g, null);
-        eVar.d(f46488h, null);
-        eVar.d(f46489i, hcVar.a());
-        eVar.d(f46490j, hcVar.i());
-        eVar.d(f46491k, hcVar.b());
-        eVar.d(f46492l, hcVar.d());
-        eVar.d(f46493m, hcVar.c());
-        eVar.d(f46494n, hcVar.e());
-        eVar.d(f46495o, hcVar.f());
+        bj.e eVar = (bj.e) obj2;
+        eVar.e(f45150b, hcVar.g());
+        eVar.e(f45151c, hcVar.h());
+        eVar.e(f45152d, null);
+        eVar.e(f45153e, hcVar.j());
+        eVar.e(f45154f, hcVar.k());
+        eVar.e(f45155g, null);
+        eVar.e(f45156h, null);
+        eVar.e(f45157i, hcVar.a());
+        eVar.e(f45158j, hcVar.i());
+        eVar.e(f45159k, hcVar.b());
+        eVar.e(f45160l, hcVar.d());
+        eVar.e(f45161m, hcVar.c());
+        eVar.e(f45162n, hcVar.e());
+        eVar.e(f45163o, hcVar.f());
     }
 }

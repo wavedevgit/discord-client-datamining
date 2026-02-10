@@ -5,22 +5,22 @@ import com.facebook.drawee.view.DraweeHolder;
 public class a extends sb.a {
 
     /* renamed from: s  reason: collision with root package name */
-    private final DraweeHolder f10210s;
+    private final DraweeHolder f10787s;
 
     public a(DraweeHolder draweeHolder, int i10) {
         super(draweeHolder.g(), i10);
-        this.f10210s = draweeHolder;
+        this.f10787s = draweeHolder;
     }
 
     public DraweeHolder f() {
-        return this.f10210s;
+        return this.f10787s;
     }
 
     public void g() {
-        this.f10210s.j();
+        this.f10787s.j();
     }
 
     public void h() {
-        this.f10210s.k();
+        this.f10787s.k();
     }
 }

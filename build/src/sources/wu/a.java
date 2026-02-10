@@ -1,63 +1,82 @@
 package wu;
 
+import android.net.ssl.SSLSockets;
+import android.os.Build;
+import java.io.IOException;
 import java.util.List;
-import java.util.Map;
-import kotlin.jvm.functions.Function2;
+import javax.net.ssl.SSLParameters;
+import javax.net.ssl.SSLSocket;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import wu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements tu.a, d {
+public final class a implements k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f54065a = new a();
+    public static final C0757a f53981a = new C0757a(null);
 
-    private a() {
-    }
-
-    @Override // vu.f
-    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
-        return d.a.f(this, obj, obj2, hVar, function2);
-    }
-
-    @Override // vu.a
-    public vu.b c(List list, Object obj, h hVar) {
-        return d.a.c(this, list, obj, hVar);
-    }
-
-    @Override // tu.a
-    public Object d(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        return g(obj, obj2, evaluator);
-    }
-
-    @Override // wu.d
-    public Object e(c data, h evaluator) {
-        Intrinsics.checkNotNullParameter(data, "data");
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        for (Object obj : data.b()) {
-            if (!f54065a.i(evaluator.a(data.a(), obj))) {
-                return data.c();
-            }
+    /* renamed from: wu.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0757a {
+        public /* synthetic */ C0757a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        return Boolean.TRUE;
+
+        public final k a() {
+            if (b()) {
+                return new a();
+            }
+            return null;
+        }
+
+        public final boolean b() {
+            if (vu.h.f52015a.h() && Build.VERSION.SDK_INT >= 29) {
+                return true;
+            }
+            return false;
+        }
+
+        private C0757a() {
+        }
     }
 
-    @Override // cw.a
-    public List f(List list, Object obj, h hVar) {
-        return d.a.h(this, list, obj, hVar);
+    @Override // wu.k
+    public boolean a() {
+        return f53981a.b();
     }
 
-    public Object g(Object obj, Object obj2, h hVar) {
-        return d.a.b(this, obj, obj2, hVar);
+    @Override // wu.k
+    public boolean b(SSLSocket sslSocket) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        return SSLSockets.isSupportedSocket(sslSocket);
     }
 
-    @Override // vu.a
-    /* renamed from: h */
-    public Boolean a(Map map, List list) {
-        return d.a.e(this, map, list);
+    @Override // wu.k
+    public String c(SSLSocket sslSocket) {
+        boolean areEqual;
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        String applicationProtocol = sslSocket.getApplicationProtocol();
+        if (applicationProtocol == null) {
+            areEqual = true;
+        } else {
+            areEqual = Intrinsics.areEqual(applicationProtocol, "");
+        }
+        if (areEqual) {
+            return null;
+        }
+        return applicationProtocol;
     }
 
-    public boolean i(Object obj) {
-        return d.a.i(this, obj);
+    @Override // wu.k
+    public void d(SSLSocket sslSocket, String str, List protocols) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Intrinsics.checkNotNullParameter(protocols, "protocols");
+        try {
+            SSLSockets.setUseSessionTickets(sslSocket, true);
+            SSLParameters sSLParameters = sslSocket.getSSLParameters();
+            sSLParameters.setApplicationProtocols((String[]) vu.h.f52015a.b(protocols).toArray(new String[0]));
+            sslSocket.setSSLParameters(sSLParameters);
+        } catch (IllegalArgumentException e10) {
+            throw new IOException("Android internal error", e10);
+        }
     }
 }

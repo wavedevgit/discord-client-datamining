@@ -7,42 +7,42 @@ import java.util.concurrent.ThreadLocalRandom;
 final class d implements AutoCloseable {
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f14578i;
+    private final int f15155i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Context f14579o;
+    private final Context f15156o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final float f14580p;
+    private final float f15157p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f14581q = 13;
+    private int f15158q = 13;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f14576d = System.currentTimeMillis();
+    private final long f15153d = System.currentTimeMillis();
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f14577e = SystemClock.uptimeMillis();
+    private final long f15154e = SystemClock.uptimeMillis();
 
     public d(Context context, int i10, float f10) {
-        this.f14578i = i10;
-        this.f14579o = context;
-        this.f14580p = f10;
+        this.f15155i = i10;
+        this.f15156o = context;
+        this.f15157p = f10;
     }
 
     public final void a() {
-        this.f14581q = 0;
+        this.f15158q = 0;
     }
 
     @Override // java.lang.AutoCloseable
     public final void close() {
-        c a10 = c.a(this.f14579o);
-        int i10 = this.f14581q;
+        c a10 = c.a(this.f15156o);
+        int i10 = this.f15158q;
         long currentTimeMillis = System.currentTimeMillis();
-        long uptimeMillis = SystemClock.uptimeMillis() - this.f14577e;
-        if (ThreadLocalRandom.current().nextFloat() < this.f14580p) {
+        long uptimeMillis = SystemClock.uptimeMillis() - this.f15154e;
+        if (ThreadLocalRandom.current().nextFloat() < this.f15157p) {
             int i11 = (int) uptimeMillis;
-            a10.b(this.f14578i, i10, this.f14576d, currentTimeMillis, i11);
+            a10.b(this.f15155i, i10, this.f15153d, currentTimeMillis, i11);
         }
     }
 }

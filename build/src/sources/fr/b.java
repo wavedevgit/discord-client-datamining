@@ -1,43 +1,37 @@
 package fr;
-
-import dw.c;
-import java.util.List;
-import kotlin.Result;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.Regex;
-import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface b {
+public abstract class b {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        private static String a(b bVar, String str, String str2, Function2 function2) {
-            Double p10;
-            if (!new Regex("%[\\d|.]*[f]").i(str) || (p10 = StringsKt.p(str2)) == null) {
-                return null;
-            }
-            return (String) function2.invoke(str, Double.valueOf(p10.doubleValue()));
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static int f24232a = 2131166312;
 
-        public static String b(b bVar, Object obj, Object obj2, Function2 formatFloatingPoint) {
-            Object b10;
-            Intrinsics.checkNotNullParameter(formatFloatingPoint, "formatFloatingPoint");
-            List c10 = dw.a.c(obj);
-            String valueOf = String.valueOf(CollectionsKt.firstOrNull(c10));
-            String valueOf2 = String.valueOf(c.b(c10));
-            try {
-                Result.a aVar = Result.f31762e;
-                b10 = Result.b(a(bVar, valueOf, valueOf2, formatFloatingPoint));
-            } catch (Throwable th2) {
-                Result.a aVar2 = Result.f31762e;
-                b10 = Result.b(kotlin.c.a(th2));
-            }
-            if (Result.e(b10) == null) {
-                return (String) b10;
-            }
-            return null;
-        }
-    }
+    /* renamed from: b  reason: collision with root package name */
+    public static int f24233b = 2131166313;
+
+    /* renamed from: c  reason: collision with root package name */
+    public static int f24234c = 2131166315;
+
+    /* renamed from: d  reason: collision with root package name */
+    public static int f24235d = 2131166316;
+
+    /* renamed from: e  reason: collision with root package name */
+    public static int f24236e = 2131166317;
+
+    /* renamed from: f  reason: collision with root package name */
+    public static int f24237f = 2131166320;
+
+    /* renamed from: g  reason: collision with root package name */
+    public static int f24238g = 2131166322;
+
+    /* renamed from: h  reason: collision with root package name */
+    public static int f24239h = 2131166323;
+
+    /* renamed from: i  reason: collision with root package name */
+    public static int f24240i = 2131166328;
+
+    /* renamed from: j  reason: collision with root package name */
+    public static int f24241j = 2131166332;
+
+    /* renamed from: k  reason: collision with root package name */
+    public static int f24242k = 2131166333;
 }

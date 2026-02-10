@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/AvatarDecorationProductPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun88105: for (var _fun88105_ip = 0;;) switch (_fun88105_ip) {
+        _fun88161: for (var _fun88161_ip = 0;;) switch (_fun88161_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.product;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var7;
                 if (var1) {
-                    _fun88105_ip = 285;
-                    continue _fun88105
+                    _fun88161_ip = 285;
+                    continue _fun88161
                 }
             case 93:
                 var3 = _closure1_slot4;
@@ -133,4 +133,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 9548, 6956, 1234, 5505, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 9559, 6966, 1234, 5515, 2]);

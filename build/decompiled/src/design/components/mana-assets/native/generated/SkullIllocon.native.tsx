@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/SkullIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53440: for (var _fun53440_ip = 0;;) switch (_fun53440_ip) {
+        _fun53493: for (var _fun53493_ip = 0;;) switch (_fun53493_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun53440_ip = 32;
-                    continue _fun53440
+                    _fun53493_ip = 32;
+                    continue _fun53493
                 }
             case 29:
                 var7 = 64;
@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SkullIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6430, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4714, 6440, 2]);

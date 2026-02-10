@@ -21,34 +21,34 @@ public final class ErrorUtils {
     public static final ErrorUtils INSTANCE = new ErrorUtils();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ModuleDescriptor f34480a = ErrorModuleDescriptor.INSTANCE;
+    private static final ModuleDescriptor f34702a = ErrorModuleDescriptor.INSTANCE;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ErrorClassDescriptor f34481b;
+    private static final ErrorClassDescriptor f34703b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final KotlinType f34482c;
+    private static final KotlinType f34704c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final KotlinType f34483d;
+    private static final KotlinType f34705d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final PropertyDescriptor f34484e;
+    private static final PropertyDescriptor f34706e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Set f34485f;
+    private static final Set f34707f;
 
     static {
         String format = String.format(ErrorEntity.ERROR_CLASS.getDebugText(), Arrays.copyOf(new Object[]{"unknown class"}, 1));
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
         Name special = Name.special(format);
         Intrinsics.checkNotNullExpressionValue(special, "special(...)");
-        f34481b = new ErrorClassDescriptor(special);
-        f34482c = createErrorType(ErrorTypeKind.CYCLIC_SUPERTYPES, new String[0]);
-        f34483d = createErrorType(ErrorTypeKind.ERROR_PROPERTY_TYPE, new String[0]);
+        f34703b = new ErrorClassDescriptor(special);
+        f34704c = createErrorType(ErrorTypeKind.CYCLIC_SUPERTYPES, new String[0]);
+        f34705d = createErrorType(ErrorTypeKind.ERROR_PROPERTY_TYPE, new String[0]);
         ErrorPropertyDescriptor errorPropertyDescriptor = new ErrorPropertyDescriptor();
-        f34484e = errorPropertyDescriptor;
-        f34485f = x0.c(errorPropertyDescriptor);
+        f34706e = errorPropertyDescriptor;
+        f34707f = x0.c(errorPropertyDescriptor);
     }
 
     private ErrorUtils() {
@@ -75,7 +75,7 @@ public final class ErrorUtils {
     public static final boolean isError(DeclarationDescriptor declarationDescriptor) {
         if (declarationDescriptor != null) {
             ErrorUtils errorUtils = INSTANCE;
-            if (errorUtils.a(declarationDescriptor) || errorUtils.a(declarationDescriptor.getContainingDeclaration()) || declarationDescriptor == f34480a) {
+            if (errorUtils.a(declarationDescriptor) || errorUtils.a(declarationDescriptor.getContainingDeclaration()) || declarationDescriptor == f34702a) {
                 return true;
             }
             return false;
@@ -111,27 +111,27 @@ public final class ErrorUtils {
 
     @NotNull
     public final ErrorClassDescriptor getErrorClass() {
-        return f34481b;
+        return f34703b;
     }
 
     @NotNull
     public final ModuleDescriptor getErrorModule() {
-        return f34480a;
+        return f34702a;
     }
 
     @NotNull
     public final Set<PropertyDescriptor> getErrorPropertyGroup() {
-        return f34485f;
+        return f34707f;
     }
 
     @NotNull
     public final KotlinType getErrorPropertyType() {
-        return f34483d;
+        return f34705d;
     }
 
     @NotNull
     public final KotlinType getErrorTypeForLoopInSupertypes() {
-        return f34482c;
+        return f34704c;
     }
 
     @NotNull

@@ -7,14 +7,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var4 = function arg0() {
-        _fun70589: for (var _fun70589_ip = 0;;) switch (_fun70589_ip) {
+        _fun70645: for (var _fun70645_ip = 0;;) switch (_fun70645_ip) {
             case 0:
                 var4 = arg0;
                 var1 = arguments[1];
                 var2 = undefined;
                 if (!(var1 === var2)) {
-                    _fun70589_ip = 14;
-                    continue _fun70589
+                    _fun70645_ip = 14;
+                    continue _fun70645
                 }
             case 12:
                 var1 = false;
@@ -27,8 +27,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.ChannelListLayoutTypes;
                 var3 = var3.COZY_DRAWER;
                 if (!(var3 !== var4)) {
-                    _fun70589_ip = 292;
-                    continue _fun70589
+                    _fun70645_ip = 292;
+                    continue _fun70645
                 }
             case 55:
                 var6 = _closure1_slot0;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.ChannelListLayoutTypes;
                 var3 = var3.COZY_DRAWER_SMOL;
                 if (!(var3 !== var4)) {
-                    _fun70589_ip = 264;
-                    continue _fun70589
+                    _fun70645_ip = 264;
+                    continue _fun70645
                 }
             case 91:
                 var6 = _closure1_slot0;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.ChannelListLayoutTypes;
                 var3 = var3.COMPACT;
                 if (!(var3 !== var4)) {
-                    _fun70589_ip = 225;
-                    continue _fun70589
+                    _fun70645_ip = 225;
+                    continue _fun70645
                 }
             case 124:
                 var6 = _closure1_slot0;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.ChannelListLayoutTypes;
                 var3 = var3.MINIMAL;
                 if (!(var3 !== var4)) {
-                    _fun70589_ip = 186;
-                    continue _fun70589
+                    _fun70645_ip = 186;
+                    continue _fun70645
                 }
             case 157:
                 var4 = _closure1_slot0;
@@ -77,13 +77,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5[var3];
                 var4 = var4.bind(var2)(var3);
                 if (var1) {
-                    _fun70589_ip = 217;
-                    continue _fun70589
+                    _fun70645_ip = 217;
+                    continue _fun70645
                 }
             case 209:
                 var3 = var4.CHANNEL_LIST_STYLES_COZY;
-                _fun70589_ip = 223;
-                continue _fun70589;
+                _fun70645_ip = 223;
+                continue _fun70645;
             case 217:
                 var3 = var4.CHANNEL_LIST_STYLES_COZY_LAUNCHPAD;
             case 223:
@@ -95,13 +95,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5[var3];
                 var3 = var4.bind(var2)(var3);
                 if (var1) {
-                    _fun70589_ip = 256;
-                    continue _fun70589
+                    _fun70645_ip = 256;
+                    continue _fun70645
                 }
             case 248:
                 var1 = var3.CHANNEL_LIST_STYLES_COMPACT;
-                _fun70589_ip = 262;
-                continue _fun70589;
+                _fun70645_ip = 262;
+                continue _fun70645;
             case 256:
                 var1 = var3.CHANNEL_LIST_STYLES_COMPACT_LAUNCHPAD;
             case 262:
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.makeSizeStyle = var4;
     var2.isLayoutCompact = var3;
     var3 = function arg0() {
-        _fun70592: for (var _fun70592_ip = 0;;) switch (_fun70592_ip) {
+        _fun70648: for (var _fun70648_ip = 0;;) switch (_fun70648_ip) {
             case 0:
                 var2 = arg0;
                 var3 = _closure1_slot0;
@@ -178,8 +178,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.COZY;
                 var0 = var2 === var0;
                 if (var0) {
-                    _fun70592_ip = 79;
-                    continue _fun70592
+                    _fun70648_ip = 79;
+                    continue _fun70648
                 }
             case 46:
                 var6 = _closure1_slot0;
@@ -191,8 +191,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2 === var3;
             case 79:
                 if (var0) {
-                    _fun70592_ip = 115;
-                    continue _fun70592
+                    _fun70648_ip = 115;
+                    continue _fun70648
                 }
             case 82:
                 var3 = _closure1_slot0;
@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isLayoutCozy = var3;
     var3 = function arg0() {
-        _fun70593: for (var _fun70593_ip = 0;;) switch (_fun70593_ip) {
+        _fun70649: for (var _fun70649_ip = 0;;) switch (_fun70649_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -227,14 +227,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.ChannelListLayoutTypes;
                 var0 = arg0;
                 if (var0) {
-                    _fun70593_ip = 144;
-                    continue _fun70593
+                    _fun70649_ip = 144;
+                    continue _fun70649
                 }
             case 72:
                 var0 = var1.COMPACT;
                 if (!(var3 !== var0)) {
-                    _fun70593_ip = 113;
-                    continue _fun70593
+                    _fun70649_ip = 113;
+                    continue _fun70649
                 }
             case 82:
                 var3 = _closure1_slot0;
@@ -243,8 +243,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.bind(var4)(var0);
                 var0 = var0.ChannelListLayoutTypes;
                 var0 = var0.COZY;
-                _fun70593_ip = 142;
-                continue _fun70593;
+                _fun70649_ip = 142;
+                continue _fun70649;
             case 113:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -253,8 +253,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.ChannelListLayoutTypes;
                 var0 = var2.COMPACT;
             case 142:
-                _fun70593_ip = 150;
-                continue _fun70593;
+                _fun70649_ip = 150;
+                continue _fun70649;
             case 144:
                 var0 = var1.COZY_DRAWER_SMOL;
             case 150:
@@ -263,14 +263,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useMessagesTabLayout = var3;
     var1 = function arg0, arg1() {
-        _fun70594: for (var _fun70594_ip = 0;;) switch (_fun70594_ip) {
+        _fun70650: for (var _fun70650_ip = 0;;) switch (_fun70650_ip) {
             case 0:
                 var4 = arg1;
                 var0 = arguments[2];
                 var3 = undefined;
                 if (!(var0 === var3)) {
-                    _fun70594_ip = 14;
-                    continue _fun70594
+                    _fun70650_ip = 14;
+                    continue _fun70650
                 }
             case 12:
                 var0 = false;
@@ -301,14 +301,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.bind(var8)(var5, var2);
                 var5 = var6.container;
                 if (var0) {
-                    _fun70594_ip = 156;
-                    continue _fun70594
+                    _fun70650_ip = 156;
+                    continue _fun70650
                 }
             case 143:
                 var2 = var5.padding;
                 var2 = var2.paddingVertical;
-                _fun70594_ip = 168;
-                continue _fun70594;
+                _fun70650_ip = 168;
+                continue _fun70650;
             case 156:
                 var5 = var5.paddingThread;
                 var2 = var5.paddingVertical;
@@ -318,14 +318,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var7 + var2;
                 var6 = var6.layout;
                 if (var0) {
-                    _fun70594_ip = 202;
-                    continue _fun70594
+                    _fun70650_ip = 202;
+                    continue _fun70650
                 }
             case 188:
                 var0 = var6.margin;
                 var0 = var0.marginVertical;
-                _fun70594_ip = 214;
-                continue _fun70594;
+                _fun70650_ip = 214;
+                continue _fun70650;
             case 202:
                 var6 = var6.marginThread;
                 var0 = var6.marginVertical;
@@ -335,8 +335,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.bind(var3)(var4);
                 var1 = 0;
                 if (!var3) {
-                    _fun70594_ip = 235;
-                    continue _fun70594
+                    _fun70650_ip = 235;
+                    continue _fun70650
                 }
             case 232:
                 var1 = 4;
@@ -348,4 +348,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getScaledChannelRowHeight = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8851, 8852, 8854, 8855, 1348, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8862, 8863, 8865, 8866, 1348, 2]);

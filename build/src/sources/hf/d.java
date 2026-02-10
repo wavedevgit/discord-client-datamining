@@ -12,101 +12,101 @@ import java.util.Set;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Account f25987a;
+    private final Account f27205a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f25988b;
+    private final Set f27206b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f25989c;
+    private final Set f27207c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f25990d;
+    private final Map f27208d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f25991e;
+    private final int f27209e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final View f25992f;
+    private final View f27210f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f25993g;
+    private final String f27211g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f25994h;
+    private final String f27212h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final wg.a f25995i;
+    private final wg.a f27213i;
 
     /* renamed from: j  reason: collision with root package name */
-    private Integer f25996j;
+    private Integer f27214j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private Account f25997a;
+        private Account f27215a;
 
         /* renamed from: b  reason: collision with root package name */
-        private u0.b f25998b;
+        private u0.b f27216b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f25999c;
+        private String f27217c;
 
         /* renamed from: d  reason: collision with root package name */
-        private String f26000d;
+        private String f27218d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final wg.a f26001e = wg.a.f53724u;
+        private final wg.a f27219e = wg.a.f52753u;
 
         public d a() {
-            return new d(this.f25997a, this.f25998b, null, 0, null, this.f25999c, this.f26000d, this.f26001e, false);
+            return new d(this.f27215a, this.f27216b, null, 0, null, this.f27217c, this.f27218d, this.f27219e, false);
         }
 
         public a b(String str) {
-            this.f25999c = str;
+            this.f27217c = str;
             return this;
         }
 
         public final a c(Collection collection) {
-            if (this.f25998b == null) {
-                this.f25998b = new u0.b();
+            if (this.f27216b == null) {
+                this.f27216b = new u0.b();
             }
-            this.f25998b.addAll(collection);
+            this.f27216b.addAll(collection);
             return this;
         }
 
         public final a d(Account account) {
-            this.f25997a = account;
+            this.f27215a = account;
             return this;
         }
 
         public final a e(String str) {
-            this.f26000d = str;
+            this.f27218d = str;
             return this;
         }
     }
 
     public d(Account account, Set set, Map map, int i10, View view, String str, String str2, wg.a aVar, boolean z10) {
         Set unmodifiableSet;
-        this.f25987a = account;
+        this.f27205a = account;
         if (set == null) {
             unmodifiableSet = Collections.EMPTY_SET;
         } else {
             unmodifiableSet = Collections.unmodifiableSet(set);
         }
-        this.f25988b = unmodifiableSet;
+        this.f27206b = unmodifiableSet;
         map = map == null ? Collections.EMPTY_MAP : map;
-        this.f25990d = map;
-        this.f25992f = view;
-        this.f25991e = i10;
-        this.f25993g = str;
-        this.f25994h = str2;
-        this.f25995i = aVar == null ? wg.a.f53724u : aVar;
+        this.f27208d = map;
+        this.f27210f = view;
+        this.f27209e = i10;
+        this.f27211g = str;
+        this.f27212h = str2;
+        this.f27213i = aVar == null ? wg.a.f52753u : aVar;
         HashSet hashSet = new HashSet(unmodifiableSet);
         Iterator it = map.values().iterator();
         if (!it.hasNext()) {
-            this.f25989c = Collections.unmodifiableSet(hashSet);
+            this.f27207c = Collections.unmodifiableSet(hashSet);
         } else {
             android.support.v4.media.session.b.a(it.next());
             throw null;
@@ -114,11 +114,11 @@ public final class d {
     }
 
     public Account a() {
-        return this.f25987a;
+        return this.f27205a;
     }
 
     public String b() {
-        Account account = this.f25987a;
+        Account account = this.f27205a;
         if (account != null) {
             return account.name;
         }
@@ -126,7 +126,7 @@ public final class d {
     }
 
     public Account c() {
-        Account account = this.f25987a;
+        Account account = this.f27205a;
         if (account != null) {
             return account;
         }
@@ -134,35 +134,35 @@ public final class d {
     }
 
     public Set d() {
-        return this.f25989c;
+        return this.f27207c;
     }
 
     public Set e(ff.a aVar) {
-        android.support.v4.media.session.b.a(this.f25990d.get(aVar));
-        return this.f25988b;
+        android.support.v4.media.session.b.a(this.f27208d.get(aVar));
+        return this.f27206b;
     }
 
     public String f() {
-        return this.f25993g;
+        return this.f27211g;
     }
 
     public Set g() {
-        return this.f25988b;
+        return this.f27206b;
     }
 
     public final wg.a h() {
-        return this.f25995i;
+        return this.f27213i;
     }
 
     public final Integer i() {
-        return this.f25996j;
+        return this.f27214j;
     }
 
     public final String j() {
-        return this.f25994h;
+        return this.f27212h;
     }
 
     public final void k(Integer num) {
-        this.f25996j = num;
+        this.f27214j = num;
     }
 }

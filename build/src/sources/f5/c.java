@@ -1,5 +1,7 @@
 package f5;
 
+import as.l;
+import as.o;
 import k5.k;
 import kotlin.Lazy;
 import kotlin.jvm.functions.Function0;
@@ -9,32 +11,30 @@ import okhttp3.MediaType;
 import okhttp3.Response;
 import okio.BufferedSink;
 import okio.BufferedSource;
-import rr.l;
-import rr.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f22452a;
+    private final Lazy f23577a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f22453b;
+    private final Lazy f23578b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f22454c;
+    private final long f23579c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f22455d;
+    private final long f23580d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f22456e;
+    private final boolean f23581e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Headers f22457f;
+    private final Headers f23582f;
 
     public c(BufferedSource bufferedSource) {
-        o oVar = o.f49211i;
-        this.f22452a = l.b(oVar, new Function0() { // from class: f5.a
+        o oVar = o.f6083i;
+        this.f23577a = l.a(oVar, new Function0() { // from class: f5.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 CacheControl c10;
@@ -42,7 +42,7 @@ public final class c {
                 return c10;
             }
         });
-        this.f22453b = l.b(oVar, new Function0() { // from class: f5.b
+        this.f23578b = l.a(oVar, new Function0() { // from class: f5.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 MediaType d10;
@@ -50,75 +50,75 @@ public final class c {
                 return d10;
             }
         });
-        this.f22454c = Long.parseLong(bufferedSource.F0());
-        this.f22455d = Long.parseLong(bufferedSource.F0());
-        this.f22456e = Integer.parseInt(bufferedSource.F0()) > 0;
-        int parseInt = Integer.parseInt(bufferedSource.F0());
+        this.f23579c = Long.parseLong(bufferedSource.J0());
+        this.f23580d = Long.parseLong(bufferedSource.J0());
+        this.f23581e = Integer.parseInt(bufferedSource.J0()) > 0;
+        int parseInt = Integer.parseInt(bufferedSource.J0());
         Headers.a aVar = new Headers.a();
         for (int i10 = 0; i10 < parseInt; i10++) {
-            k.b(aVar, bufferedSource.F0());
+            k.b(aVar, bufferedSource.J0());
         }
-        this.f22457f = aVar.f();
+        this.f23582f = aVar.f();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final CacheControl c(c cVar) {
-        return CacheControl.f41966n.b(cVar.f22457f);
+        return CacheControl.f40216n.b(cVar.f23582f);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final MediaType d(c cVar) {
-        String c10 = cVar.f22457f.c("Content-Type");
+        String c10 = cVar.f23582f.c("Content-Type");
         if (c10 != null) {
-            return MediaType.f42047e.c(c10);
+            return MediaType.f40297e.c(c10);
         }
         return null;
     }
 
     public final CacheControl e() {
-        return (CacheControl) this.f22452a.getValue();
+        return (CacheControl) this.f23577a.getValue();
     }
 
     public final MediaType f() {
-        return (MediaType) this.f22453b.getValue();
+        return (MediaType) this.f23578b.getValue();
     }
 
     public final long g() {
-        return this.f22455d;
+        return this.f23580d;
     }
 
     public final Headers h() {
-        return this.f22457f;
+        return this.f23582f;
     }
 
     public final long i() {
-        return this.f22454c;
+        return this.f23579c;
     }
 
     public final boolean j() {
-        return this.f22456e;
+        return this.f23581e;
     }
 
     public final void k(BufferedSink bufferedSink) {
         long j10;
-        bufferedSink.S0(this.f22454c).writeByte(10);
-        bufferedSink.S0(this.f22455d).writeByte(10);
-        if (this.f22456e) {
+        bufferedSink.W0(this.f23579c).writeByte(10);
+        bufferedSink.W0(this.f23580d).writeByte(10);
+        if (this.f23581e) {
             j10 = 1;
         } else {
             j10 = 0;
         }
-        bufferedSink.S0(j10).writeByte(10);
-        bufferedSink.S0(this.f22457f.size()).writeByte(10);
-        int size = this.f22457f.size();
+        bufferedSink.W0(j10).writeByte(10);
+        bufferedSink.W0(this.f23582f.size()).writeByte(10);
+        int size = this.f23582f.size();
         for (int i10 = 0; i10 < size; i10++) {
-            bufferedSink.q0(this.f22457f.e(i10)).q0(": ").q0(this.f22457f.j(i10)).writeByte(10);
+            bufferedSink.q0(this.f23582f.e(i10)).q0(": ").q0(this.f23582f.k(i10)).writeByte(10);
         }
     }
 
     public c(Response response) {
-        o oVar = o.f49211i;
-        this.f22452a = l.b(oVar, new Function0() { // from class: f5.a
+        o oVar = o.f6083i;
+        this.f23577a = l.a(oVar, new Function0() { // from class: f5.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 CacheControl c10;
@@ -126,7 +126,7 @@ public final class c {
                 return c10;
             }
         });
-        this.f22453b = l.b(oVar, new Function0() { // from class: f5.b
+        this.f23578b = l.a(oVar, new Function0() { // from class: f5.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 MediaType d10;
@@ -134,9 +134,9 @@ public final class c {
                 return d10;
             }
         });
-        this.f22454c = response.a1();
-        this.f22455d = response.V0();
-        this.f22456e = response.I() != null;
-        this.f22457f = response.C0();
+        this.f23579c = response.S0();
+        this.f23580d = response.N0();
+        this.f23581e = response.I() != null;
+        this.f23582f = response.z0();
     }
 }

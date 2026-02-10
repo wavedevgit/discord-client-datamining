@@ -2,13 +2,13 @@ package kotlin.random;
 
 import java.util.Random;
 import kotlin.jvm.internal.Intrinsics;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class b extends kotlin.random.a {
 
     /* renamed from: i  reason: collision with root package name */
-    private final a f31854i = new a();
+    private final a f32076i = new a();
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends ThreadLocal {
         a() {
         }
@@ -23,7 +23,7 @@ public final class b extends kotlin.random.a {
 
     @Override // kotlin.random.a
     public Random g() {
-        Object obj = this.f31854i.get();
+        Object obj = this.f32076i.get();
         Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
         return (Random) obj;
     }

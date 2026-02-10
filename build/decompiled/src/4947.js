@@ -12,14 +12,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var0 = 0;
     var3 = var1[var0];
-    var1 = require;
+    var1 = metroImportDefault;
     var0 = undefined;
     var1 = var1.bind(var0)(var3);
-    var4 = var1.createContext;
-    var1 = null;
-    var3 = var4.bind(var0)(var1);
-    var1 = var4.bind(var0)(var1);
-    var2.BottomSheetGestureHandlersContext = var3;
-    var2.BottomSheetDraggableContext = var1;
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4948]);

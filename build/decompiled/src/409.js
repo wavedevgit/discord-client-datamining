@@ -140,7 +140,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var3 = var0.current;
                                         var9 = null;
                                         if (!(var9 != var3)) {
-                                            _fun5804_ip = 153;
+                                            _fun5804_ip = 151;
                                             continue _fun5804
                                         }
                                     case 24:
@@ -157,23 +157,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var11 = var9 != var10;
                                         var1 = 0;
                                         if (!var11) {
-                                            _fun5804_ip = 85;
+                                            _fun5804_ip = 84;
                                             continue _fun5804
                                         }
-                                    case 82:
+                                    case 81:
                                         var1 = var10;
-                                    case 85:
+                                    case 84:
                                         var8 = var8.nativeEvent;
                                         var8 = var8.locationY;
                                         var9 = var9 != var8;
                                         var5 = 0;
                                         if (!var9) {
-                                            _fun5804_ip = 109;
+                                            _fun5804_ip = 107;
                                             continue _fun5804
                                         }
-                                    case 106:
+                                    case 104:
                                         var5 = var8;
-                                    case 109:
+                                    case 107:
                                         var1 = var6.bind(var7)(var3, var1, var5);
                                         var1 = _closure1_slot0;
                                         var0 = _closure1_slot2;
@@ -183,7 +183,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = var2.setPressed;
                                         var0 = true;
                                         var0 = var1.bind(var2)(var3, var0);
-                                    case 153:
+                                    case 151:
                                         var0 = undefined;
                                         return var0;
                                 }
@@ -197,7 +197,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var4 = var0.current;
                                         var6 = null;
                                         if (!(var6 != var4)) {
-                                            _fun5805_ip = 113;
+                                            _fun5805_ip = 111;
                                             continue _fun5805
                                         }
                                     case 21:
@@ -214,25 +214,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var8 = var6 != var7;
                                         var0 = 0;
                                         if (!var8) {
-                                            _fun5805_ip = 82;
+                                            _fun5805_ip = 81;
                                             continue _fun5805
                                         }
-                                    case 79:
+                                    case 78:
                                         var0 = var7;
-                                    case 82:
+                                    case 81:
                                         var5 = var5.nativeEvent;
                                         var5 = var5.locationY;
                                         var6 = var6 != var5;
                                         var1 = 0;
                                         if (!var6) {
-                                            _fun5805_ip = 106;
+                                            _fun5805_ip = 104;
                                             continue _fun5805
                                         }
-                                    case 103:
+                                    case 101:
                                         var1 = var5;
-                                    case 106:
+                                    case 104:
                                         var0 = var2.bind(var3)(var4, var0, var1);
-                                    case 113:
+                                    case 111:
                                         var0 = undefined;
                                         return var0;
                                 }

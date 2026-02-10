@@ -3,26 +3,26 @@ package com.google.android.gms.internal.fido;
 public final class n5 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte f14169a;
+    private final byte f14746a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final byte f14170b;
+    private final byte f14747b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n5(int i10) {
-        this.f14169a = (byte) (i10 & 224);
-        this.f14170b = (byte) (i10 & 31);
+        this.f14746a = (byte) (i10 & 224);
+        this.f14747b = (byte) (i10 & 31);
     }
 
     public final byte a() {
-        return this.f14170b;
+        return this.f14747b;
     }
 
     public final byte b() {
-        return this.f14169a;
+        return this.f14746a;
     }
 
     public final int c() {
-        return (this.f14169a >> 5) & 7;
+        return (this.f14746a >> 5) & 7;
     }
 }

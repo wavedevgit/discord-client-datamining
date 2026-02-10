@@ -22,7 +22,7 @@ import uc.y;
 public final class f implements k {
 
     /* renamed from: u  reason: collision with root package name */
-    public static final p f6470u = new p() { // from class: bd.d
+    public static final p f6576u = new p() { // from class: bd.d
         @Override // uc.p
         public final k[] b() {
             return f.b();
@@ -30,7 +30,7 @@ public final class f implements k {
     };
 
     /* renamed from: v  reason: collision with root package name */
-    private static final h.a f6471v = new h.a() { // from class: bd.e
+    private static final h.a f6577v = new h.a() { // from class: bd.e
         @Override // md.h.a
         public final boolean a(int i10, int i11, int i12, int i13, int i14) {
             return f.e(i10, i11, i12, i13, i14);
@@ -38,64 +38,64 @@ public final class f implements k {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f6472a;
+    private final int f6578a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f6473b;
+    private final long f6579b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h0 f6474c;
+    private final h0 f6580c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final u.a f6475d;
+    private final u.a f6581d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final v f6476e;
+    private final v f6582e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final w f6477f;
+    private final w f6583f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final b0 f6478g;
+    private final b0 f6584g;
 
     /* renamed from: h  reason: collision with root package name */
-    private m f6479h;
+    private m f6585h;
 
     /* renamed from: i  reason: collision with root package name */
-    private b0 f6480i;
+    private b0 f6586i;
 
     /* renamed from: j  reason: collision with root package name */
-    private b0 f6481j;
+    private b0 f6587j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f6482k;
+    private int f6588k;
 
     /* renamed from: l  reason: collision with root package name */
-    private Metadata f6483l;
+    private Metadata f6589l;
 
     /* renamed from: m  reason: collision with root package name */
-    private long f6484m;
+    private long f6590m;
 
     /* renamed from: n  reason: collision with root package name */
-    private long f6485n;
+    private long f6591n;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f6486o;
+    private long f6592o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f6487p;
+    private int f6593p;
 
     /* renamed from: q  reason: collision with root package name */
-    private g f6488q;
+    private g f6594q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f6489r;
+    private boolean f6595r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f6490s;
+    private boolean f6596s;
 
     /* renamed from: t  reason: collision with root package name */
-    private long f6491t;
+    private long f6597t;
 
     public f() {
         this(0);
@@ -119,19 +119,19 @@ public final class f implements k {
     }
 
     private void f() {
-        oe.a.i(this.f6480i);
-        w0.j(this.f6479h);
+        oe.a.i(this.f6586i);
+        w0.j(this.f6585h);
     }
 
     private g g(l lVar) {
         long l10;
         long j10;
         g p10 = p(lVar);
-        c o10 = o(this.f6483l, lVar.getPosition());
-        if (this.f6489r) {
+        c o10 = o(this.f6589l, lVar.getPosition());
+        if (this.f6595r) {
             return new g.a();
         }
-        if ((this.f6472a & 4) != 0) {
+        if ((this.f6578a & 4) != 0) {
             if (o10 != null) {
                 l10 = o10.i();
                 j10 = o10.f();
@@ -139,7 +139,7 @@ public final class f implements k {
                 l10 = p10.i();
                 j10 = p10.f();
             } else {
-                l10 = l(this.f6483l);
+                l10 = l(this.f6589l);
                 j10 = -1;
             }
             p10 = new b(l10, lVar.getPosition(), j10);
@@ -149,24 +149,24 @@ public final class f implements k {
             p10 = null;
         }
         boolean z10 = true;
-        if (p10 != null && (p10.g() || (this.f6472a & 1) == 0)) {
+        if (p10 != null && (p10.g() || (this.f6578a & 1) == 0)) {
             return p10;
         }
-        if ((this.f6472a & 2) == 0) {
+        if ((this.f6578a & 2) == 0) {
             z10 = false;
         }
         return k(lVar, z10);
     }
 
     private long i(long j10) {
-        return this.f6484m + ((j10 * 1000000) / this.f6475d.f40508d);
+        return this.f6590m + ((j10 * 1000000) / this.f6581d.f38834d);
     }
 
     private g k(l lVar, boolean z10) {
-        lVar.n(this.f6474c.e(), 0, 4);
-        this.f6474c.U(0);
-        this.f6475d.a(this.f6474c.q());
-        return new a(lVar.getLength(), lVar.getPosition(), this.f6475d, z10);
+        lVar.n(this.f6580c.e(), 0, 4);
+        this.f6580c.U(0);
+        this.f6581d.a(this.f6580c.q());
+        return new a(lVar.getLength(), lVar.getPosition(), this.f6581d, z10);
     }
 
     private static long l(Metadata metadata) {
@@ -176,8 +176,8 @@ public final class f implements k {
                 Metadata.b d10 = metadata.d(i10);
                 if (d10 instanceof md.m) {
                     md.m mVar = (md.m) d10;
-                    if (mVar.f36939d.equals("TLEN")) {
-                        return w0.K0(Long.parseLong((String) mVar.f36952o.get(0)));
+                    if (mVar.f36314d.equals("TLEN")) {
+                        return w0.K0(Long.parseLong((String) mVar.f36327o.get(0)));
                     }
                 }
             }
@@ -226,37 +226,37 @@ public final class f implements k {
     }
 
     private g p(l lVar) {
-        h0 h0Var = new h0(this.f6475d.f40507c);
-        lVar.n(h0Var.e(), 0, this.f6475d.f40507c);
-        u.a aVar = this.f6475d;
+        h0 h0Var = new h0(this.f6581d.f38833c);
+        lVar.n(h0Var.e(), 0, this.f6581d.f38833c);
+        u.a aVar = this.f6581d;
         int i10 = 21;
-        if ((aVar.f40505a & 1) != 0) {
-            if (aVar.f40509e != 1) {
+        if ((aVar.f38831a & 1) != 0) {
+            if (aVar.f38835e != 1) {
                 i10 = 36;
             }
-        } else if (aVar.f40509e == 1) {
+        } else if (aVar.f38835e == 1) {
             i10 = 13;
         }
         int i11 = i10;
         int m10 = m(h0Var, i11);
         if (m10 != 1483304551 && m10 != 1231971951) {
             if (m10 == 1447187017) {
-                h a10 = h.a(lVar.getLength(), lVar.getPosition(), this.f6475d, h0Var);
-                lVar.k(this.f6475d.f40507c);
+                h a10 = h.a(lVar.getLength(), lVar.getPosition(), this.f6581d, h0Var);
+                lVar.k(this.f6581d.f38833c);
                 return a10;
             }
             lVar.e();
             return null;
         }
-        i a11 = i.a(lVar.getLength(), lVar.getPosition(), this.f6475d, h0Var);
-        if (a11 != null && !this.f6476e.a()) {
+        i a11 = i.a(lVar.getLength(), lVar.getPosition(), this.f6581d, h0Var);
+        if (a11 != null && !this.f6582e.a()) {
             lVar.e();
             lVar.h(i11 + 141);
-            lVar.n(this.f6474c.e(), 0, 3);
-            this.f6474c.U(0);
-            this.f6476e.d(this.f6474c.K());
+            lVar.n(this.f6580c.e(), 0, 3);
+            this.f6580c.U(0);
+            this.f6582e.d(this.f6580c.K());
         }
-        lVar.k(this.f6475d.f40507c);
+        lVar.k(this.f6581d.f38833c);
         if (a11 != null && !a11.g() && m10 == 1231971951) {
             return k(lVar, false);
         }
@@ -264,7 +264,7 @@ public final class f implements k {
     }
 
     private boolean q(l lVar) {
-        g gVar = this.f6488q;
+        g gVar = this.f6594q;
         if (gVar != null) {
             long f10 = gVar.f();
             if (f10 != -1 && lVar.g() > f10 - 4) {
@@ -272,7 +272,7 @@ public final class f implements k {
             }
         }
         try {
-            return !lVar.c(this.f6474c.e(), 0, 4, true);
+            return !lVar.c(this.f6580c.e(), 0, 4, true);
         } catch (EOFException unused) {
             return true;
         }
@@ -280,29 +280,29 @@ public final class f implements k {
 
     private int r(l lVar) {
         Metadata metadata;
-        if (this.f6482k == 0) {
+        if (this.f6588k == 0) {
             try {
                 t(lVar, false);
             } catch (EOFException unused) {
                 return -1;
             }
         }
-        if (this.f6488q == null) {
+        if (this.f6594q == null) {
             g g10 = g(lVar);
-            this.f6488q = g10;
-            this.f6479h.j(g10);
-            b0 b0Var = this.f6481j;
-            Format.b Q = new Format.b().g0(this.f6475d.f40506b).Y(RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT).J(this.f6475d.f40509e).h0(this.f6475d.f40508d).P(this.f6476e.f51528a).Q(this.f6476e.f51529b);
-            if ((this.f6472a & 8) != 0) {
+            this.f6594q = g10;
+            this.f6585h.j(g10);
+            b0 b0Var = this.f6587j;
+            Format.b Q = new Format.b().g0(this.f6581d.f38832b).Y(RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT).J(this.f6581d.f38835e).h0(this.f6581d.f38834d).P(this.f6582e.f50707a).Q(this.f6582e.f50708b);
+            if ((this.f6578a & 8) != 0) {
                 metadata = null;
             } else {
-                metadata = this.f6483l;
+                metadata = this.f6589l;
             }
             b0Var.c(Q.Z(metadata).G());
-            this.f6486o = lVar.getPosition();
-        } else if (this.f6486o != 0) {
+            this.f6592o = lVar.getPosition();
+        } else if (this.f6592o != 0) {
             long position = lVar.getPosition();
-            long j10 = this.f6486o;
+            long j10 = this.f6592o;
             if (position < j10) {
                 lVar.k((int) (j10 - position));
             }
@@ -312,49 +312,49 @@ public final class f implements k {
 
     private int s(l lVar) {
         u.a aVar;
-        if (this.f6487p == 0) {
+        if (this.f6593p == 0) {
             lVar.e();
             if (q(lVar)) {
                 return -1;
             }
-            this.f6474c.U(0);
-            int q10 = this.f6474c.q();
-            if (n(q10, this.f6482k) && u.j(q10) != -1) {
-                this.f6475d.a(q10);
-                if (this.f6484m == -9223372036854775807L) {
-                    this.f6484m = this.f6488q.b(lVar.getPosition());
-                    if (this.f6473b != -9223372036854775807L) {
-                        this.f6484m += this.f6473b - this.f6488q.b(0L);
+            this.f6580c.U(0);
+            int q10 = this.f6580c.q();
+            if (n(q10, this.f6588k) && u.j(q10) != -1) {
+                this.f6581d.a(q10);
+                if (this.f6590m == -9223372036854775807L) {
+                    this.f6590m = this.f6594q.b(lVar.getPosition());
+                    if (this.f6579b != -9223372036854775807L) {
+                        this.f6590m += this.f6579b - this.f6594q.b(0L);
                     }
                 }
-                this.f6487p = this.f6475d.f40507c;
-                g gVar = this.f6488q;
+                this.f6593p = this.f6581d.f38833c;
+                g gVar = this.f6594q;
                 if (gVar instanceof b) {
                     b bVar = (b) gVar;
-                    bVar.c(i(this.f6485n + aVar.f40511g), lVar.getPosition() + this.f6475d.f40507c);
-                    if (this.f6490s && bVar.a(this.f6491t)) {
-                        this.f6490s = false;
-                        this.f6481j = this.f6480i;
+                    bVar.c(i(this.f6591n + aVar.f38837g), lVar.getPosition() + this.f6581d.f38833c);
+                    if (this.f6596s && bVar.a(this.f6597t)) {
+                        this.f6596s = false;
+                        this.f6587j = this.f6586i;
                     }
                 }
             } else {
                 lVar.k(1);
-                this.f6482k = 0;
+                this.f6588k = 0;
                 return 0;
             }
         }
-        int f10 = this.f6481j.f(lVar, this.f6487p, true);
+        int f10 = this.f6587j.f(lVar, this.f6593p, true);
         if (f10 == -1) {
             return -1;
         }
-        int i10 = this.f6487p - f10;
-        this.f6487p = i10;
+        int i10 = this.f6593p - f10;
+        this.f6593p = i10;
         if (i10 > 0) {
             return 0;
         }
-        this.f6481j.a(i(this.f6485n), 1, this.f6475d.f40507c, 0, null);
-        this.f6485n += this.f6475d.f40511g;
-        this.f6487p = 0;
+        this.f6587j.a(i(this.f6591n), 1, this.f6581d.f38833c, 0, null);
+        this.f6591n += this.f6581d.f38837g;
+        this.f6593p = 0;
         return 0;
     }
 
@@ -368,7 +368,7 @@ public final class f implements k {
         r12.e();
      */
     /* JADX WARN: Code restructure failed: missing block: B:50:0x00a4, code lost:
-        r11.f6482k = r4;
+        r11.f6588k = r4;
      */
     /* JADX WARN: Code restructure failed: missing block: B:51:0x00a6, code lost:
         return true;
@@ -393,19 +393,19 @@ public final class f implements k {
             r2 = 0
             r3 = 0
             if (r1 != 0) goto L3e
-            int r1 = r11.f6472a
+            int r1 = r11.f6578a
             r1 = r1 & 8
             if (r1 != 0) goto L1f
             r1 = r2
             goto L21
         L1f:
-            md.h$a r1 = bd.f.f6471v
+            md.h$a r1 = bd.f.f6577v
         L21:
-            uc.w r4 = r11.f6477f
+            uc.w r4 = r11.f6583f
             com.google.android.exoplayer2.metadata.Metadata r1 = r4.a(r12, r1)
-            r11.f6483l = r1
+            r11.f6589l = r1
             if (r1 == 0) goto L30
-            uc.v r4 = r11.f6476e
+            uc.v r4 = r11.f6582e
             r4.c(r1)
         L30:
             long r4 = r12.g()
@@ -433,9 +433,9 @@ public final class f implements k {
             r12.<init>()
             throw r12
         L51:
-            oe.h0 r7 = r11.f6474c
+            oe.h0 r7 = r11.f6580c
             r7.U(r3)
-            oe.h0 r7 = r11.f6474c
+            oe.h0 r7 = r11.f6580c
             int r7 = r7.q()
             if (r4 == 0) goto L65
             long r9 = (long) r4
@@ -470,7 +470,7 @@ public final class f implements k {
         L8c:
             int r5 = r5 + 1
             if (r5 != r8) goto L97
-            oc.u$a r4 = r11.f6475d
+            oc.u$a r4 = r11.f6581d
             r4.a(r7)
             r4 = r7
             goto La7
@@ -485,7 +485,7 @@ public final class f implements k {
         La1:
             r12.e()
         La4:
-            r11.f6482k = r4
+            r11.f6588k = r4
             return r8
         La7:
             int r9 = r9 + (-4)
@@ -497,25 +497,25 @@ public final class f implements k {
 
     @Override // uc.k
     public void a(long j10, long j11) {
-        this.f6482k = 0;
-        this.f6484m = -9223372036854775807L;
-        this.f6485n = 0L;
-        this.f6487p = 0;
-        this.f6491t = j11;
-        g gVar = this.f6488q;
+        this.f6588k = 0;
+        this.f6590m = -9223372036854775807L;
+        this.f6591n = 0L;
+        this.f6593p = 0;
+        this.f6597t = j11;
+        g gVar = this.f6594q;
         if ((gVar instanceof b) && !((b) gVar).a(j11)) {
-            this.f6490s = true;
-            this.f6481j = this.f6478g;
+            this.f6596s = true;
+            this.f6587j = this.f6584g;
         }
     }
 
     @Override // uc.k
     public void c(m mVar) {
-        this.f6479h = mVar;
+        this.f6585h = mVar;
         b0 c10 = mVar.c(0, 1);
-        this.f6480i = c10;
-        this.f6481j = c10;
-        this.f6479h.q();
+        this.f6586i = c10;
+        this.f6587j = c10;
+        this.f6585h.q();
     }
 
     @Override // uc.k
@@ -527,18 +527,18 @@ public final class f implements k {
     public int h(l lVar, y yVar) {
         f();
         int r10 = r(lVar);
-        if (r10 == -1 && (this.f6488q instanceof b)) {
-            long i10 = i(this.f6485n);
-            if (this.f6488q.i() != i10) {
-                ((b) this.f6488q).d(i10);
-                this.f6479h.j(this.f6488q);
+        if (r10 == -1 && (this.f6594q instanceof b)) {
+            long i10 = i(this.f6591n);
+            if (this.f6594q.i() != i10) {
+                ((b) this.f6594q).d(i10);
+                this.f6585h.j(this.f6594q);
             }
         }
         return r10;
     }
 
     public void j() {
-        this.f6489r = true;
+        this.f6595r = true;
     }
 
     public f(int i10) {
@@ -546,16 +546,16 @@ public final class f implements k {
     }
 
     public f(int i10, long j10) {
-        this.f6472a = (i10 & 2) != 0 ? i10 | 1 : i10;
-        this.f6473b = j10;
-        this.f6474c = new h0(10);
-        this.f6475d = new u.a();
-        this.f6476e = new v();
-        this.f6484m = -9223372036854775807L;
-        this.f6477f = new w();
+        this.f6578a = (i10 & 2) != 0 ? i10 | 1 : i10;
+        this.f6579b = j10;
+        this.f6580c = new h0(10);
+        this.f6581d = new u.a();
+        this.f6582e = new v();
+        this.f6590m = -9223372036854775807L;
+        this.f6583f = new w();
         j jVar = new j();
-        this.f6478g = jVar;
-        this.f6481j = jVar;
+        this.f6584g = jVar;
+        this.f6587j = jVar;
     }
 
     @Override // uc.k

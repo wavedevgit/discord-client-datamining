@@ -60,7 +60,7 @@ public final class AFf1zSDK extends AFe1gSDK {
     private final void getCurrencyIso4217Code(String str, int i10) {
         AppsFlyerInAppPurchaseValidationCallback appsFlyerInAppPurchaseValidationCallback = this.copy;
         if (appsFlyerInAppPurchaseValidationCallback != null) {
-            appsFlyerInAppPurchaseValidationCallback.onInAppPurchaseValidationError(o0.m(rr.v.a("error_code", Integer.valueOf(i10)), rr.v.a("error_message", str)));
+            appsFlyerInAppPurchaseValidationCallback.onInAppPurchaseValidationError(o0.m(as.v.a("error_code", Integer.valueOf(i10)), as.v.a("error_message", str)));
         }
     }
 
@@ -113,17 +113,17 @@ public final class AFf1zSDK extends AFe1gSDK {
         if (responseNetwork != null) {
             if (responseNetwork.getStatusCode() == 200) {
                 try {
-                    Result.a aVar = Result.f31762e;
+                    Result.a aVar = Result.f31984e;
                     AppsFlyerInAppPurchaseValidationCallback appsFlyerInAppPurchaseValidationCallback = this.copy;
                     if (appsFlyerInAppPurchaseValidationCallback != null) {
                         appsFlyerInAppPurchaseValidationCallback.onInAppPurchaseValidationFinished(AFj1cSDK.getRevenue(new JSONObject((String) responseNetwork.getBody())));
-                        unit = Unit.f31765a;
+                        unit = Unit.f31987a;
                     } else {
                         unit = null;
                     }
                     b10 = Result.b(unit);
                 } catch (Throwable th2) {
-                    Result.a aVar2 = Result.f31762e;
+                    Result.a aVar2 = Result.f31984e;
                     b10 = Result.b(kotlin.c.a(th2));
                 }
                 if (Result.e(b10) != null) {
@@ -134,7 +134,7 @@ public final class AFf1zSDK extends AFe1gSDK {
             }
             AppsFlyerInAppPurchaseValidationCallback appsFlyerInAppPurchaseValidationCallback2 = this.copy;
             if (appsFlyerInAppPurchaseValidationCallback2 != null) {
-                appsFlyerInAppPurchaseValidationCallback2.onInAppPurchaseValidationError(o0.m(rr.v.a("error_code", Integer.valueOf(responseNetwork.getStatusCode())), rr.v.a("error_message", responseNetwork.getBody())));
+                appsFlyerInAppPurchaseValidationCallback2.onInAppPurchaseValidationError(o0.m(as.v.a("error_code", Integer.valueOf(responseNetwork.getStatusCode())), as.v.a("error_message", responseNetwork.getBody())));
             }
         }
     }
@@ -178,7 +178,7 @@ public final class AFf1zSDK extends AFe1gSDK {
             if (i10 == 2) {
                 return ((AFe1eSDK) this).component1.getRevenue(map, str);
             }
-            throw new rr.p();
+            throw new as.p();
         }
         return ((AFe1eSDK) this).component1.getCurrencyIso4217Code(map, str);
     }

@@ -19,18 +19,8 @@ public class m extends e implements SubMenu {
     }
 
     @Override // androidx.appcompat.view.menu.e
-    public e D() {
-        return this.B.D();
-    }
-
-    @Override // androidx.appcompat.view.menu.e
-    public boolean G() {
-        return this.B.G();
-    }
-
-    @Override // androidx.appcompat.view.menu.e
-    public boolean H() {
-        return this.B.H();
+    public e F() {
+        return this.B.F();
     }
 
     @Override // androidx.appcompat.view.menu.e
@@ -39,17 +29,23 @@ public class m extends e implements SubMenu {
     }
 
     @Override // androidx.appcompat.view.menu.e
-    public void S(e.a aVar) {
-        this.B.S(aVar);
+    public boolean J() {
+        return this.B.J();
+    }
+
+    @Override // androidx.appcompat.view.menu.e
+    public boolean K() {
+        return this.B.K();
+    }
+
+    @Override // androidx.appcompat.view.menu.e
+    public void W(e.a aVar) {
+        this.B.W(aVar);
     }
 
     @Override // androidx.appcompat.view.menu.e
     public boolean f(g gVar) {
         return this.B.f(gVar);
-    }
-
-    public Menu f0() {
-        return this.B;
     }
 
     @Override // android.view.SubMenu
@@ -66,9 +62,13 @@ public class m extends e implements SubMenu {
         return true;
     }
 
+    public Menu j0() {
+        return this.B;
+    }
+
     @Override // androidx.appcompat.view.menu.e
-    public boolean k(g gVar) {
-        return this.B.k(gVar);
+    public boolean m(g gVar) {
+        return this.B.m(gVar);
     }
 
     @Override // androidx.appcompat.view.menu.e, android.view.Menu
@@ -78,17 +78,17 @@ public class m extends e implements SubMenu {
 
     @Override // android.view.SubMenu
     public SubMenu setHeaderIcon(Drawable drawable) {
-        return (SubMenu) super.W(drawable);
+        return (SubMenu) super.a0(drawable);
     }
 
     @Override // android.view.SubMenu
     public SubMenu setHeaderTitle(CharSequence charSequence) {
-        return (SubMenu) super.Z(charSequence);
+        return (SubMenu) super.d0(charSequence);
     }
 
     @Override // android.view.SubMenu
     public SubMenu setHeaderView(View view) {
-        return (SubMenu) super.a0(view);
+        return (SubMenu) super.e0(view);
     }
 
     @Override // android.view.SubMenu
@@ -103,7 +103,7 @@ public class m extends e implements SubMenu {
     }
 
     @Override // androidx.appcompat.view.menu.e
-    public String t() {
+    public String v() {
         int i10;
         g gVar = this.C;
         if (gVar != null) {
@@ -114,17 +114,17 @@ public class m extends e implements SubMenu {
         if (i10 == 0) {
             return null;
         }
-        return super.t() + ":" + i10;
+        return super.v() + ":" + i10;
     }
 
     @Override // android.view.SubMenu
     public SubMenu setHeaderIcon(int i10) {
-        return (SubMenu) super.V(i10);
+        return (SubMenu) super.Z(i10);
     }
 
     @Override // android.view.SubMenu
     public SubMenu setHeaderTitle(int i10) {
-        return (SubMenu) super.Y(i10);
+        return (SubMenu) super.c0(i10);
     }
 
     @Override // android.view.SubMenu

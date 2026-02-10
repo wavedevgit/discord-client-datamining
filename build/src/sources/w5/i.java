@@ -7,10 +7,10 @@ import x5.c;
 public class i implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f53270a = new i();
+    public static final i f52299a = new i();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f53271b = c.a.a("t", "f", "s", "j", "tr", "lh", "ls", "fc", "sc", "sw", "of", "ps", "sz");
+    private static final c.a f52300b = c.a.a("t", "f", "s", "j", "tr", "lh", "ls", "fc", "sc", "sw", "of", "ps", "sz");
 
     private i() {
     }
@@ -34,12 +34,12 @@ public class i implements n0 {
         int i12 = 0;
         boolean z10 = true;
         while (cVar.hasNext()) {
-            switch (cVar.p(f53271b)) {
+            switch (cVar.p(f52300b)) {
                 case 0:
-                    str = cVar.b1();
+                    str = cVar.g1();
                     break;
                 case 1:
-                    str2 = cVar.b1();
+                    str2 = cVar.g1();
                     break;
                 case 2:
                     f11 = (float) cVar.nextDouble();
@@ -71,7 +71,7 @@ public class i implements n0 {
                     f14 = (float) cVar.nextDouble();
                     break;
                 case 10:
-                    z10 = cVar.g();
+                    z10 = cVar.h();
                     break;
                 case 11:
                     cVar.x();

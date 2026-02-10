@@ -2,71 +2,88 @@ package yq;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import java.io.Closeable;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a implements Parcelable {
+public final class a implements Closeable, Parcelable {
+    @NotNull
     public static final Parcelable.Creator<a> CREATOR = new C0782a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f55722d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final float f55723e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final float f55724i;
+    private final List f55719d;
 
     /* renamed from: yq.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class C0782a implements Parcelable.Creator {
-        C0782a() {
-        }
-
+    public static final class C0782a implements Parcelable.Creator {
         @Override // android.os.Parcelable.Creator
         /* renamed from: a */
-        public a createFromParcel(Parcel parcel) {
-            return new a(parcel);
+        public final a createFromParcel(Parcel parcel) {
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            int readInt = parcel.readInt();
+            ArrayList arrayList = new ArrayList(readInt);
+            for (int i10 = 0; i10 != readInt; i10++) {
+                arrayList.add(parcel.readParcelable(a.class.getClassLoader()));
+            }
+            return new a(arrayList);
         }
 
         @Override // android.os.Parcelable.Creator
         /* renamed from: b */
-        public a[] newArray(int i10) {
+        public final a[] newArray(int i10) {
             return new a[i10];
         }
     }
 
-    public a(String str, float f10, float f11) {
-        this.f55722d = str;
-        this.f55723e = f10;
-        this.f55724i = f11;
+    public a(List stepData) {
+        Intrinsics.checkNotNullParameter(stepData, "stepData");
+        this.f55719d = stepData;
     }
 
-    public String a() {
-        return this.f55722d;
+    public final List a() {
+        return this.f55719d;
     }
 
-    public float b() {
-        return this.f55723e;
-    }
-
-    public float c() {
-        return this.f55724i;
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        for (g gVar : this.f55719d) {
+            gVar.close();
+        }
     }
 
     @Override // android.os.Parcelable
-    public int describeContents() {
+    public final int describeContents() {
         return 0;
     }
 
-    @Override // android.os.Parcelable
-    public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f55722d);
-        parcel.writeFloat(this.f55723e);
-        parcel.writeFloat(this.f55724i);
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if ((obj instanceof a) && Intrinsics.areEqual(this.f55719d, ((a) obj).f55719d)) {
+            return true;
+        }
+        return false;
     }
 
-    protected a(Parcel parcel) {
-        this.f55722d = parcel.readString();
-        this.f55723e = parcel.readFloat();
-        this.f55724i = parcel.readFloat();
+    public int hashCode() {
+        return this.f55719d.hashCode();
+    }
+
+    public String toString() {
+        List list = this.f55719d;
+        return "CollectedData(stepData=" + list + ")";
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        List<Parcelable> list = this.f55719d;
+        dest.writeInt(list.size());
+        for (Parcelable parcelable : list) {
+            dest.writeParcelable(parcelable, i10);
+        }
     }
 }

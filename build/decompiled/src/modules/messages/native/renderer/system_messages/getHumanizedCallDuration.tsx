@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/messages/native/renderer/system_messages/getHumanizedCallDuration.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0() {
-        _fun56059: for (var _fun56059_ip = 0;;) switch (_fun56059_ip) {
+        _fun56112: for (var _fun56112_ip = 0;;) switch (_fun56112_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.call;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 != var2;
                 var2 = null;
                 if (!var3) {
-                    _fun56059_ip = 29;
-                    continue _fun56059
+                    _fun56112_ip = 29;
+                    continue _fun56112
                 }
             case 19:
                 var1 = var1.call;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0 != var2;
                 var0 = null;
                 if (!var1) {
-                    _fun56059_ip = 48;
-                    continue _fun56059
+                    _fun56112_ip = 48;
+                    continue _fun56112
                 }
             case 38:
                 var1 = var2.humanize;

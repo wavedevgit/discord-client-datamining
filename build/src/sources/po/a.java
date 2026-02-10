@@ -1,79 +1,89 @@
 package po;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.util.ArrayList;
-import java.util.List;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewbinding.ViewBinding;
+import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
+import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
+import oo.y2;
+import oo.z2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<a> CREATOR = new C0615a();
+public final class a implements ViewBinding {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final ConstraintLayout f42844a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final ConstraintLayout f42845b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final TextView f42846c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f44388d;
+    public final ConstraintLayout f42847d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f44389e;
+    public final Pi2NavigationBar f42848e;
 
-    /* renamed from: i  reason: collision with root package name */
-    private final String f44390i;
+    /* renamed from: f  reason: collision with root package name */
+    public final ThemeableLottieAnimationView f42849f;
 
-    /* renamed from: o  reason: collision with root package name */
-    private final List f44391o;
+    /* renamed from: g  reason: collision with root package name */
+    public final TextView f42850g;
 
-    /* renamed from: po.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0615a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final a createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            String readString = parcel.readString();
-            String readString2 = parcel.readString();
-            String readString3 = parcel.readString();
-            int readInt = parcel.readInt();
-            ArrayList arrayList = new ArrayList(readInt);
-            for (int i10 = 0; i10 != readInt; i10++) {
-                arrayList.add(b.CREATOR.createFromParcel(parcel));
+    private a(ConstraintLayout constraintLayout, ConstraintLayout constraintLayout2, TextView textView, ConstraintLayout constraintLayout3, Pi2NavigationBar pi2NavigationBar, ThemeableLottieAnimationView themeableLottieAnimationView, TextView textView2) {
+        this.f42844a = constraintLayout;
+        this.f42845b = constraintLayout2;
+        this.f42846c = textView;
+        this.f42847d = constraintLayout3;
+        this.f42848e = pi2NavigationBar;
+        this.f42849f = themeableLottieAnimationView;
+        this.f42850g = textView2;
+    }
+
+    public static a a(View view) {
+        int i10 = y2.f41048b;
+        ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
+        if (constraintLayout != null) {
+            i10 = y2.f41049c;
+            TextView textView = (TextView) e4.a.a(view, i10);
+            if (textView != null) {
+                i10 = y2.f41052f;
+                ConstraintLayout constraintLayout2 = (ConstraintLayout) e4.a.a(view, i10);
+                if (constraintLayout2 != null) {
+                    i10 = y2.f41059m;
+                    Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
+                    if (pi2NavigationBar != null) {
+                        i10 = y2.f41060n;
+                        ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
+                        if (themeableLottieAnimationView != null) {
+                            i10 = y2.f41065s;
+                            TextView textView2 = (TextView) e4.a.a(view, i10);
+                            if (textView2 != null) {
+                                return new a((ConstraintLayout) view, constraintLayout, textView, constraintLayout2, pi2NavigationBar, themeableLottieAnimationView, textView2);
+                            }
+                        }
+                    }
+                }
             }
-            return new a(readString, readString2, readString3, arrayList);
         }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final a[] newArray(int i10) {
-            return new a[i10];
-        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    public a(String merchantId, String nonce, String fieldKeyMobileDriversLicense, List digitalIdRequests) {
-        Intrinsics.checkNotNullParameter(merchantId, "merchantId");
-        Intrinsics.checkNotNullParameter(nonce, "nonce");
-        Intrinsics.checkNotNullParameter(fieldKeyMobileDriversLicense, "fieldKeyMobileDriversLicense");
-        Intrinsics.checkNotNullParameter(digitalIdRequests, "digitalIdRequests");
-        this.f44388d = merchantId;
-        this.f44389e = nonce;
-        this.f44390i = fieldKeyMobileDriversLicense;
-        this.f44391o = digitalIdRequests;
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f44388d);
-        dest.writeString(this.f44389e);
-        dest.writeString(this.f44390i);
-        List<b> list = this.f44391o;
-        dest.writeInt(list.size());
-        for (b bVar : list) {
-            bVar.writeToParcel(dest, i10);
+    public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(z2.f41072a, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
         }
+        return a(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public ConstraintLayout getRoot() {
+        return this.f42844a;
     }
 }

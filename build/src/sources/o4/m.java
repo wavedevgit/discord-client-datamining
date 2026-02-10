@@ -5,11 +5,11 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f40251a;
+    private static final String f38577a;
 
     static {
         String i10 = k4.m.i("StorageNotLowTracker");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"StorageNotLowTracker\")");
-        f40251a = i10;
+        f38577a = i10;
     }
 }

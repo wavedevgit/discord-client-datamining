@@ -9,28 +9,28 @@ public enum h0 {
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f35725a;
+        static final /* synthetic */ int[] f35622a;
 
         static {
             int[] iArr = new int[h0.values().length];
-            f35725a = iArr;
+            f35622a = iArr;
             try {
                 iArr[h0.HARDWARE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f35725a[h0.SOFTWARE.ordinal()] = 2;
+                f35622a[h0.SOFTWARE.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f35725a[h0.AUTOMATIC.ordinal()] = 3;
+                f35622a[h0.AUTOMATIC.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
     }
 
     public boolean d(int i10, boolean z10, int i11) {
-        int i12 = a.f35725a[ordinal()];
+        int i12 = a.f35622a[ordinal()];
         if (i12 == 1) {
             return false;
         }

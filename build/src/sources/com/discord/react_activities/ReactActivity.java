@@ -6,7 +6,7 @@ import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Window;
-import androidx.core.view.w0;
+import androidx.core.view.x0;
 import com.discord.bundle_updater.BundleUpdater;
 import com.discord.crash_reporting.CrashReporting;
 import com.discord.device.utils.IsMetaQuestKt;
@@ -137,7 +137,7 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
             Log.e$default(Log.INSTANCE, "ReactActivity", "Timeout waiting for application initialization - proceeding anyway", (Throwable) null, 4, (Object) null);
         }
         super.attachBaseContext(FontScaleUtilsKt.getFontScaledContext(newBase));
-        Unit unit = Unit.f31765a;
+        Unit unit = Unit.f31987a;
         Context applicationContext = getApplicationContext();
         Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
         FontScaleUtilsKt.setFontScaleDeprecated(applicationContext);
@@ -180,7 +180,7 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
             this.patchedResources = resources;
         }
         super.onConfigurationChanged(newConfig);
-        b.f53449o.a(this, newConfig);
+        b.f52478o.a(this, newConfig);
         Context applicationContext = getApplicationContext();
         Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
         FontScaleUtilsKt.setFontScaleDeprecated(applicationContext);
@@ -195,7 +195,7 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
             TTIModule.Companion.setMainActivityIntent(getIntent());
         }
         BundleUpdater.Companion.checkForOta();
-        w0.a(getWindow());
+        x0.a(getWindow());
         JankStatsAggregator jankStatsAggregator = JankStatsAggregator.INSTANCE;
         Window window = getWindow();
         Intrinsics.checkNotNullExpressionValue(window, "getWindow(...)");

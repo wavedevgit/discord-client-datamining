@@ -27,82 +27,82 @@ public class e implements t1.a {
     private static final int[] A = {1, 4, 5, 3, 2, 0};
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f1440a;
+    private final Context f1442a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Resources f1441b;
+    private final Resources f1443b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f1442c;
+    private boolean f1444c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f1443d;
+    private boolean f1445d;
 
     /* renamed from: e  reason: collision with root package name */
-    private a f1444e;
+    private a f1446e;
 
     /* renamed from: m  reason: collision with root package name */
-    private ContextMenu.ContextMenuInfo f1452m;
+    private ContextMenu.ContextMenuInfo f1454m;
 
     /* renamed from: n  reason: collision with root package name */
-    CharSequence f1453n;
+    CharSequence f1455n;
 
     /* renamed from: o  reason: collision with root package name */
-    Drawable f1454o;
+    Drawable f1456o;
 
     /* renamed from: p  reason: collision with root package name */
-    View f1455p;
+    View f1457p;
 
     /* renamed from: x  reason: collision with root package name */
-    private g f1463x;
+    private g f1465x;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f1465z;
+    private boolean f1467z;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f1451l = 0;
+    private int f1453l = 0;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f1456q = false;
+    private boolean f1458q = false;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f1457r = false;
+    private boolean f1459r = false;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f1458s = false;
+    private boolean f1460s = false;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f1459t = false;
+    private boolean f1461t = false;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f1460u = false;
+    private boolean f1462u = false;
 
     /* renamed from: v  reason: collision with root package name */
-    private ArrayList f1461v = new ArrayList();
+    private ArrayList f1463v = new ArrayList();
 
     /* renamed from: w  reason: collision with root package name */
-    private CopyOnWriteArrayList f1462w = new CopyOnWriteArrayList();
+    private CopyOnWriteArrayList f1464w = new CopyOnWriteArrayList();
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f1464y = false;
+    private boolean f1466y = false;
 
     /* renamed from: f  reason: collision with root package name */
-    private ArrayList f1445f = new ArrayList();
+    private ArrayList f1447f = new ArrayList();
 
     /* renamed from: g  reason: collision with root package name */
-    private ArrayList f1446g = new ArrayList();
+    private ArrayList f1448g = new ArrayList();
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f1447h = true;
+    private boolean f1449h = true;
 
     /* renamed from: i  reason: collision with root package name */
-    private ArrayList f1448i = new ArrayList();
+    private ArrayList f1450i = new ArrayList();
 
     /* renamed from: j  reason: collision with root package name */
-    private ArrayList f1449j = new ArrayList();
+    private ArrayList f1451j = new ArrayList();
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f1450k = true;
+    private boolean f1452k = true;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -117,12 +117,12 @@ public class e implements t1.a {
     }
 
     public e(Context context) {
-        this.f1440a = context;
-        this.f1441b = context.getResources();
-        c0(true);
+        this.f1442a = context;
+        this.f1443b = context.getResources();
+        g0(true);
     }
 
-    private static int B(int i10) {
+    private static int D(int i10) {
         int i11 = ((-65536) & i10) >> 16;
         if (i11 >= 0) {
             int[] iArr = A;
@@ -133,112 +133,154 @@ public class e implements t1.a {
         throw new IllegalArgumentException("order does not contain a valid category.");
     }
 
-    private void O(int i10, boolean z10) {
-        if (i10 >= 0 && i10 < this.f1445f.size()) {
-            this.f1445f.remove(i10);
+    private void Q(int i10, boolean z10) {
+        if (i10 >= 0 && i10 < this.f1447f.size()) {
+            this.f1447f.remove(i10);
             if (z10) {
-                L(true);
+                N(true);
             }
         }
     }
 
-    private void X(int i10, CharSequence charSequence, int i11, Drawable drawable, View view) {
-        Resources C = C();
+    private void b0(int i10, CharSequence charSequence, int i11, Drawable drawable, View view) {
+        Resources E = E();
         if (view != null) {
-            this.f1455p = view;
-            this.f1453n = null;
-            this.f1454o = null;
+            this.f1457p = view;
+            this.f1455n = null;
+            this.f1456o = null;
         } else {
             if (i10 > 0) {
-                this.f1453n = C.getText(i10);
+                this.f1455n = E.getText(i10);
             } else if (charSequence != null) {
-                this.f1453n = charSequence;
+                this.f1455n = charSequence;
             }
             if (i11 > 0) {
-                this.f1454o = androidx.core.content.a.e(u(), i11);
+                this.f1456o = androidx.core.content.a.e(w(), i11);
             } else if (drawable != null) {
-                this.f1454o = drawable;
+                this.f1456o = drawable;
             }
-            this.f1455p = null;
+            this.f1457p = null;
         }
-        L(false);
-    }
-
-    /* JADX WARN: Code restructure failed: missing block: B:6:0x0019, code lost:
-        if (androidx.core.view.k0.l(android.view.ViewConfiguration.get(r2.f1440a), r2.f1440a) != false) goto L6;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    private void c0(boolean r3) {
-        /*
-            r2 = this;
-            if (r3 == 0) goto L1c
-            android.content.res.Resources r3 = r2.f1441b
-            android.content.res.Configuration r3 = r3.getConfiguration()
-            int r3 = r3.keyboard
-            r0 = 1
-            if (r3 == r0) goto L1c
-            android.content.Context r3 = r2.f1440a
-            android.view.ViewConfiguration r3 = android.view.ViewConfiguration.get(r3)
-            android.content.Context r1 = r2.f1440a
-            boolean r3 = androidx.core.view.k0.l(r3, r1)
-            if (r3 == 0) goto L1c
-            goto L1d
-        L1c:
-            r0 = 0
-        L1d:
-            r2.f1443d = r0
-            return
-        */
-        throw new UnsupportedOperationException("Method not decompiled: androidx.appcompat.view.menu.e.c0(boolean):void");
+        N(false);
     }
 
     private g g(int i10, int i11, int i12, int i13, CharSequence charSequence, int i14) {
         return new g(this, i10, i11, i12, i13, charSequence, i14);
     }
 
+    /* JADX WARN: Code restructure failed: missing block: B:6:0x0019, code lost:
+        if (androidx.core.view.l0.l(android.view.ViewConfiguration.get(r2.f1442a), r2.f1442a) != false) goto L6;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private void g0(boolean r3) {
+        /*
+            r2 = this;
+            if (r3 == 0) goto L1c
+            android.content.res.Resources r3 = r2.f1443b
+            android.content.res.Configuration r3 = r3.getConfiguration()
+            int r3 = r3.keyboard
+            r0 = 1
+            if (r3 == r0) goto L1c
+            android.content.Context r3 = r2.f1442a
+            android.view.ViewConfiguration r3 = android.view.ViewConfiguration.get(r3)
+            android.content.Context r1 = r2.f1442a
+            boolean r3 = androidx.core.view.l0.l(r3, r1)
+            if (r3 == 0) goto L1c
+            goto L1d
+        L1c:
+            r0 = 0
+        L1d:
+            r2.f1445d = r0
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.appcompat.view.menu.e.g0(boolean):void");
+    }
+
     private void i(boolean z10) {
-        if (this.f1462w.isEmpty()) {
+        if (this.f1464w.isEmpty()) {
             return;
         }
-        e0();
-        Iterator it = this.f1462w.iterator();
+        i0();
+        Iterator it = this.f1464w.iterator();
         while (it.hasNext()) {
             WeakReference weakReference = (WeakReference) it.next();
             j jVar = (j) weakReference.get();
             if (jVar == null) {
-                this.f1462w.remove(weakReference);
+                this.f1464w.remove(weakReference);
             } else {
-                jVar.e(z10);
+                jVar.g(z10);
             }
         }
-        d0();
+        h0();
     }
 
-    private boolean j(m mVar, j jVar) {
+    private void j(Bundle bundle) {
+        Parcelable parcelable;
+        SparseArray sparseParcelableArray = bundle.getSparseParcelableArray("android:menu:presenters");
+        if (sparseParcelableArray != null && !this.f1464w.isEmpty()) {
+            Iterator it = this.f1464w.iterator();
+            while (it.hasNext()) {
+                WeakReference weakReference = (WeakReference) it.next();
+                j jVar = (j) weakReference.get();
+                if (jVar == null) {
+                    this.f1464w.remove(weakReference);
+                } else {
+                    int id2 = jVar.getId();
+                    if (id2 > 0 && (parcelable = (Parcelable) sparseParcelableArray.get(id2)) != null) {
+                        jVar.d(parcelable);
+                    }
+                }
+            }
+        }
+    }
+
+    private void k(Bundle bundle) {
+        Parcelable f10;
+        if (this.f1464w.isEmpty()) {
+            return;
+        }
+        SparseArray<? extends Parcelable> sparseArray = new SparseArray<>();
+        Iterator it = this.f1464w.iterator();
+        while (it.hasNext()) {
+            WeakReference weakReference = (WeakReference) it.next();
+            j jVar = (j) weakReference.get();
+            if (jVar == null) {
+                this.f1464w.remove(weakReference);
+            } else {
+                int id2 = jVar.getId();
+                if (id2 > 0 && (f10 = jVar.f()) != null) {
+                    sparseArray.put(id2, f10);
+                }
+            }
+        }
+        bundle.putSparseParcelableArray("android:menu:presenters", sparseArray);
+    }
+
+    private boolean l(m mVar, j jVar) {
         boolean z10 = false;
-        if (this.f1462w.isEmpty()) {
+        if (this.f1464w.isEmpty()) {
             return false;
         }
         if (jVar != null) {
-            z10 = jVar.d(mVar);
+            z10 = jVar.e(mVar);
         }
-        Iterator it = this.f1462w.iterator();
+        Iterator it = this.f1464w.iterator();
         while (it.hasNext()) {
             WeakReference weakReference = (WeakReference) it.next();
             j jVar2 = (j) weakReference.get();
             if (jVar2 == null) {
-                this.f1462w.remove(weakReference);
+                this.f1464w.remove(weakReference);
             } else if (!z10) {
-                z10 = jVar2.d(mVar);
+                z10 = jVar2.e(mVar);
             }
         }
         return z10;
     }
 
-    private static int n(ArrayList arrayList, int i10) {
+    private static int p(ArrayList arrayList, int i10) {
         for (int size = arrayList.size() - 1; size >= 0; size--) {
             if (((g) arrayList.get(size)).f() <= i10) {
                 return size + 1;
@@ -247,85 +289,94 @@ public class e implements t1.a {
         return 0;
     }
 
+    public View A() {
+        return this.f1457p;
+    }
+
+    public ArrayList B() {
+        t();
+        return this.f1451j;
+    }
+
     /* JADX INFO: Access modifiers changed from: package-private */
-    public boolean A() {
-        return this.f1459t;
+    public boolean C() {
+        return this.f1461t;
     }
 
-    Resources C() {
-        return this.f1441b;
+    Resources E() {
+        return this.f1443b;
     }
 
-    public e D() {
+    public e F() {
         return this;
     }
 
-    public ArrayList E() {
-        if (!this.f1447h) {
-            return this.f1446g;
+    public ArrayList G() {
+        if (!this.f1449h) {
+            return this.f1448g;
         }
-        this.f1446g.clear();
-        int size = this.f1445f.size();
+        this.f1448g.clear();
+        int size = this.f1447f.size();
         for (int i10 = 0; i10 < size; i10++) {
-            g gVar = (g) this.f1445f.get(i10);
+            g gVar = (g) this.f1447f.get(i10);
             if (gVar.isVisible()) {
-                this.f1446g.add(gVar);
+                this.f1448g.add(gVar);
             }
         }
-        this.f1447h = false;
-        this.f1450k = true;
-        return this.f1446g;
+        this.f1449h = false;
+        this.f1452k = true;
+        return this.f1448g;
     }
 
-    public boolean F() {
-        return !this.f1456q;
-    }
-
-    public boolean G() {
-        return this.f1464y;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
     public boolean H() {
-        return this.f1442c;
+        return !this.f1458q;
     }
 
     public boolean I() {
-        return this.f1443d;
+        return this.f1466y;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void J(g gVar) {
-        this.f1450k = true;
-        L(true);
+    public boolean J() {
+        return this.f1444c;
+    }
+
+    public boolean K() {
+        return this.f1445d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void K(g gVar) {
-        this.f1447h = true;
-        L(true);
+    public void L(g gVar) {
+        this.f1452k = true;
+        N(true);
     }
 
-    public void L(boolean z10) {
-        if (!this.f1456q) {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public void M(g gVar) {
+        this.f1449h = true;
+        N(true);
+    }
+
+    public void N(boolean z10) {
+        if (!this.f1458q) {
             if (z10) {
-                this.f1447h = true;
-                this.f1450k = true;
+                this.f1449h = true;
+                this.f1452k = true;
             }
             i(z10);
             return;
         }
-        this.f1457r = true;
+        this.f1459r = true;
         if (z10) {
-            this.f1458s = true;
+            this.f1460s = true;
         }
     }
 
-    public boolean M(MenuItem menuItem, int i10) {
-        return N(menuItem, null, i10);
+    public boolean O(MenuItem menuItem, int i10) {
+        return P(menuItem, null, i10);
     }
 
-    public boolean N(MenuItem menuItem, j jVar, int i10) {
+    public boolean P(MenuItem menuItem, j jVar, int i10) {
         boolean z10;
         g gVar = (g) menuItem;
         if (gVar == null || !gVar.isEnabled()) {
@@ -354,35 +405,35 @@ public class e implements t1.a {
                 e(false);
             }
             if (!gVar.hasSubMenu()) {
-                gVar.x(new m(u(), this, gVar));
+                gVar.x(new m(w(), this, gVar));
             }
             m mVar = (m) gVar.getSubMenu();
             if (z10) {
                 a10.e(mVar);
             }
-            boolean j10 = j(mVar, jVar) | k10;
-            if (!j10) {
+            boolean l10 = l(mVar, jVar) | k10;
+            if (!l10) {
                 e(true);
             }
-            return j10;
+            return l10;
         }
     }
 
-    public void P(j jVar) {
-        Iterator it = this.f1462w.iterator();
+    public void R(j jVar) {
+        Iterator it = this.f1464w.iterator();
         while (it.hasNext()) {
             WeakReference weakReference = (WeakReference) it.next();
             j jVar2 = (j) weakReference.get();
             if (jVar2 == null || jVar2 == jVar) {
-                this.f1462w.remove(weakReference);
+                this.f1464w.remove(weakReference);
             }
         }
     }
 
-    public void Q(Bundle bundle) {
+    public void S(Bundle bundle) {
         MenuItem findItem;
         if (bundle != null) {
-            SparseArray<Parcelable> sparseParcelableArray = bundle.getSparseParcelableArray(t());
+            SparseArray<Parcelable> sparseParcelableArray = bundle.getSparseParcelableArray(v());
             int size = size();
             for (int i10 = 0; i10 < size; i10++) {
                 MenuItem item = getItem(i10);
@@ -391,7 +442,7 @@ public class e implements t1.a {
                     actionView.restoreHierarchyState(sparseParcelableArray);
                 }
                 if (item.hasSubMenu()) {
-                    ((m) item.getSubMenu()).Q(bundle);
+                    ((m) item.getSubMenu()).S(bundle);
                 }
             }
             int i11 = bundle.getInt("android:menu:expandedactionview");
@@ -401,7 +452,11 @@ public class e implements t1.a {
         }
     }
 
-    public void R(Bundle bundle) {
+    public void T(Bundle bundle) {
+        j(bundle);
+    }
+
+    public void U(Bundle bundle) {
         int size = size();
         SparseArray<? extends Parcelable> sparseArray = null;
         for (int i10 = 0; i10 < size; i10++) {
@@ -417,31 +472,35 @@ public class e implements t1.a {
                 }
             }
             if (item.hasSubMenu()) {
-                ((m) item.getSubMenu()).R(bundle);
+                ((m) item.getSubMenu()).U(bundle);
             }
         }
         if (sparseArray != null) {
-            bundle.putSparseParcelableArray(t(), sparseArray);
+            bundle.putSparseParcelableArray(v(), sparseArray);
         }
     }
 
-    public void S(a aVar) {
-        this.f1444e = aVar;
+    public void V(Bundle bundle) {
+        k(bundle);
     }
 
-    public e T(int i10) {
-        this.f1451l = i10;
+    public void W(a aVar) {
+        this.f1446e = aVar;
+    }
+
+    public e X(int i10) {
+        this.f1453l = i10;
         return this;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void U(MenuItem menuItem) {
+    public void Y(MenuItem menuItem) {
         boolean z10;
         int groupId = menuItem.getGroupId();
-        int size = this.f1445f.size();
-        e0();
+        int size = this.f1447f.size();
+        i0();
         for (int i10 = 0; i10 < size; i10++) {
-            g gVar = (g) this.f1445f.get(i10);
+            g gVar = (g) this.f1447f.get(i10);
             if (gVar.getGroupId() == groupId && gVar.m() && gVar.isCheckable()) {
                 if (gVar == menuItem) {
                     z10 = true;
@@ -451,49 +510,32 @@ public class e implements t1.a {
                 gVar.s(z10);
             }
         }
-        d0();
+        h0();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public e V(int i10) {
-        X(0, null, i10, null, null);
+    public e Z(int i10) {
+        b0(0, null, i10, null, null);
         return this;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public e W(Drawable drawable) {
-        X(0, null, 0, drawable, null);
-        return this;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public e Y(int i10) {
-        X(i10, null, 0, null, null);
-        return this;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public e Z(CharSequence charSequence) {
-        X(0, charSequence, 0, null, null);
-        return this;
-    }
-
-    protected MenuItem a(int i10, int i11, int i12, CharSequence charSequence) {
-        int B = B(i12);
-        g g10 = g(i10, i11, i12, B, charSequence, this.f1451l);
-        ContextMenu.ContextMenuInfo contextMenuInfo = this.f1452m;
+    public MenuItem a(int i10, int i11, int i12, CharSequence charSequence) {
+        int D = D(i12);
+        g g10 = g(i10, i11, i12, D, charSequence, this.f1453l);
+        ContextMenu.ContextMenuInfo contextMenuInfo = this.f1454m;
         if (contextMenuInfo != null) {
             g10.v(contextMenuInfo);
         }
-        ArrayList arrayList = this.f1445f;
-        arrayList.add(n(arrayList, B), g10);
-        L(true);
+        ArrayList arrayList = this.f1447f;
+        arrayList.add(p(arrayList, D), g10);
+        N(true);
         return g10;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public e a0(View view) {
-        X(0, null, 0, null, view);
+    public e a0(Drawable drawable) {
+        b0(0, null, 0, drawable, null);
         return this;
     }
 
@@ -507,7 +549,7 @@ public class e implements t1.a {
         int i14;
         Intent intent2;
         int i15;
-        PackageManager packageManager = this.f1440a.getPackageManager();
+        PackageManager packageManager = this.f1442a.getPackageManager();
         List<ResolveInfo> queryIntentActivityOptions = packageManager.queryIntentActivityOptions(componentName, intentArr, intent, 0);
         if (queryIntentActivityOptions != null) {
             i14 = queryIntentActivityOptions.size();
@@ -542,34 +584,36 @@ public class e implements t1.a {
     }
 
     public void b(j jVar) {
-        c(jVar, this.f1440a);
-    }
-
-    public void b0(boolean z10) {
-        this.f1465z = z10;
+        c(jVar, this.f1442a);
     }
 
     public void c(j jVar, Context context) {
-        this.f1462w.add(new WeakReference(jVar));
-        jVar.h(context, this);
-        this.f1450k = true;
+        this.f1464w.add(new WeakReference(jVar));
+        jVar.j(context, this);
+        this.f1452k = true;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public e c0(int i10) {
+        b0(i10, null, 0, null, null);
+        return this;
     }
 
     @Override // android.view.Menu
     public void clear() {
-        g gVar = this.f1463x;
+        g gVar = this.f1465x;
         if (gVar != null) {
             f(gVar);
         }
-        this.f1445f.clear();
-        L(true);
+        this.f1447f.clear();
+        N(true);
     }
 
     public void clearHeader() {
-        this.f1454o = null;
-        this.f1453n = null;
-        this.f1455p = null;
-        L(false);
+        this.f1456o = null;
+        this.f1455n = null;
+        this.f1457p = null;
+        N(false);
     }
 
     @Override // android.view.Menu
@@ -578,69 +622,69 @@ public class e implements t1.a {
     }
 
     public void d() {
-        a aVar = this.f1444e;
+        a aVar = this.f1446e;
         if (aVar != null) {
             aVar.b(this);
         }
     }
 
-    public void d0() {
-        this.f1456q = false;
-        if (this.f1457r) {
-            this.f1457r = false;
-            L(this.f1458s);
-        }
+    /* JADX INFO: Access modifiers changed from: protected */
+    public e d0(CharSequence charSequence) {
+        b0(0, charSequence, 0, null, null);
+        return this;
     }
 
     public final void e(boolean z10) {
-        if (this.f1460u) {
+        if (this.f1462u) {
             return;
         }
-        this.f1460u = true;
-        Iterator it = this.f1462w.iterator();
+        this.f1462u = true;
+        Iterator it = this.f1464w.iterator();
         while (it.hasNext()) {
             WeakReference weakReference = (WeakReference) it.next();
             j jVar = (j) weakReference.get();
             if (jVar == null) {
-                this.f1462w.remove(weakReference);
+                this.f1464w.remove(weakReference);
             } else {
                 jVar.a(this, z10);
             }
         }
-        this.f1460u = false;
+        this.f1462u = false;
     }
 
-    public void e0() {
-        if (!this.f1456q) {
-            this.f1456q = true;
-            this.f1457r = false;
-            this.f1458s = false;
-        }
+    /* JADX INFO: Access modifiers changed from: protected */
+    public e e0(View view) {
+        b0(0, null, 0, null, view);
+        return this;
     }
 
     public boolean f(g gVar) {
         boolean z10 = false;
-        if (!this.f1462w.isEmpty() && this.f1463x == gVar) {
-            e0();
-            Iterator it = this.f1462w.iterator();
+        if (!this.f1464w.isEmpty() && this.f1465x == gVar) {
+            i0();
+            Iterator it = this.f1464w.iterator();
             while (it.hasNext()) {
                 WeakReference weakReference = (WeakReference) it.next();
                 j jVar = (j) weakReference.get();
                 if (jVar == null) {
-                    this.f1462w.remove(weakReference);
+                    this.f1464w.remove(weakReference);
                 } else {
-                    z10 = jVar.g(this, gVar);
+                    z10 = jVar.i(this, gVar);
                     if (z10) {
                         break;
                     }
                 }
             }
-            d0();
+            h0();
             if (z10) {
-                this.f1463x = null;
+                this.f1465x = null;
             }
         }
         return z10;
+    }
+
+    public void f0(boolean z10) {
+        this.f1467z = z10;
     }
 
     @Override // android.view.Menu
@@ -648,7 +692,7 @@ public class e implements t1.a {
         MenuItem findItem;
         int size = size();
         for (int i11 = 0; i11 < size; i11++) {
-            g gVar = (g) this.f1445f.get(i11);
+            g gVar = (g) this.f1447f.get(i11);
             if (gVar.getItemId() == i10) {
                 return gVar;
             }
@@ -661,52 +705,68 @@ public class e implements t1.a {
 
     @Override // android.view.Menu
     public MenuItem getItem(int i10) {
-        return (MenuItem) this.f1445f.get(i10);
+        return (MenuItem) this.f1447f.get(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean h(e eVar, MenuItem menuItem) {
-        a aVar = this.f1444e;
+        a aVar = this.f1446e;
         if (aVar != null && aVar.a(eVar, menuItem)) {
             return true;
         }
         return false;
     }
 
+    public void h0() {
+        this.f1458q = false;
+        if (this.f1459r) {
+            this.f1459r = false;
+            N(this.f1460s);
+        }
+    }
+
     @Override // android.view.Menu
     public boolean hasVisibleItems() {
-        if (this.f1465z) {
+        if (this.f1467z) {
             return true;
         }
         int size = size();
         for (int i10 = 0; i10 < size; i10++) {
-            if (((g) this.f1445f.get(i10)).isVisible()) {
+            if (((g) this.f1447f.get(i10)).isVisible()) {
                 return true;
             }
         }
         return false;
     }
 
+    public void i0() {
+        if (!this.f1458q) {
+            this.f1458q = true;
+            this.f1459r = false;
+            this.f1460s = false;
+        }
+    }
+
     @Override // android.view.Menu
     public boolean isShortcutKey(int i10, KeyEvent keyEvent) {
-        if (p(i10, keyEvent) != null) {
+        if (r(i10, keyEvent) != null) {
             return true;
         }
         return false;
     }
 
-    public boolean k(g gVar) {
+    public boolean m(g gVar) {
         boolean z10 = false;
-        if (this.f1462w.isEmpty()) {
+        if (this.f1464w.isEmpty()) {
             return false;
         }
-        e0();
-        Iterator it = this.f1462w.iterator();
+        i0();
+        Iterator it = this.f1464w.iterator();
         while (it.hasNext()) {
             WeakReference weakReference = (WeakReference) it.next();
             j jVar = (j) weakReference.get();
             if (jVar == null) {
-                this.f1462w.remove(weakReference);
+                this.f1464w.remove(weakReference);
             } else {
                 z10 = jVar.b(this, gVar);
                 if (z10) {
@@ -714,24 +774,24 @@ public class e implements t1.a {
                 }
             }
         }
-        d0();
+        h0();
         if (z10) {
-            this.f1463x = gVar;
+            this.f1465x = gVar;
         }
         return z10;
     }
 
-    public int l(int i10) {
-        return m(i10, 0);
+    public int n(int i10) {
+        return o(i10, 0);
     }
 
-    public int m(int i10, int i11) {
+    public int o(int i10, int i11) {
         int size = size();
         if (i11 < 0) {
             i11 = 0;
         }
         while (i11 < size) {
-            if (((g) this.f1445f.get(i11)).getGroupId() == i10) {
+            if (((g) this.f1447f.get(i11)).getGroupId() == i10) {
                 return i11;
             }
             i11++;
@@ -739,21 +799,41 @@ public class e implements t1.a {
         return -1;
     }
 
-    public int o(int i10) {
+    @Override // android.view.Menu
+    public boolean performIdentifierAction(int i10, int i11) {
+        return O(findItem(i10), i11);
+    }
+
+    @Override // android.view.Menu
+    public boolean performShortcut(int i10, KeyEvent keyEvent, int i11) {
+        boolean z10;
+        g r10 = r(i10, keyEvent);
+        if (r10 != null) {
+            z10 = O(r10, i11);
+        } else {
+            z10 = false;
+        }
+        if ((i11 & 2) != 0) {
+            e(true);
+        }
+        return z10;
+    }
+
+    public int q(int i10) {
         int size = size();
         for (int i11 = 0; i11 < size; i11++) {
-            if (((g) this.f1445f.get(i11)).getItemId() == i10) {
+            if (((g) this.f1447f.get(i11)).getItemId() == i10) {
                 return i11;
             }
         }
         return -1;
     }
 
-    g p(int i10, KeyEvent keyEvent) {
+    g r(int i10, KeyEvent keyEvent) {
         char numericShortcut;
-        ArrayList arrayList = this.f1461v;
+        ArrayList arrayList = this.f1463v;
         arrayList.clear();
-        q(arrayList, i10, keyEvent);
+        s(arrayList, i10, keyEvent);
         if (arrayList.isEmpty()) {
             return null;
         }
@@ -764,16 +844,16 @@ public class e implements t1.a {
         if (size == 1) {
             return (g) arrayList.get(0);
         }
-        boolean H = H();
+        boolean J = J();
         for (int i11 = 0; i11 < size; i11++) {
             g gVar = (g) arrayList.get(i11);
-            if (H) {
+            if (J) {
                 numericShortcut = gVar.getAlphabeticShortcut();
             } else {
                 numericShortcut = gVar.getNumericShortcut();
             }
             char[] cArr = keyData.meta;
-            if ((numericShortcut == cArr[0] && (metaState & 2) == 0) || ((numericShortcut == cArr[2] && (metaState & 2) != 0) || (H && numericShortcut == '\b' && i10 == 67))) {
+            if ((numericShortcut == cArr[0] && (metaState & 2) == 0) || ((numericShortcut == cArr[2] && (metaState & 2) != 0) || (J && numericShortcut == '\b' && i10 == 67))) {
                 return gVar;
             }
         }
@@ -781,51 +861,54 @@ public class e implements t1.a {
     }
 
     @Override // android.view.Menu
-    public boolean performIdentifierAction(int i10, int i11) {
-        return M(findItem(i10), i11);
+    public void removeGroup(int i10) {
+        int n10 = n(i10);
+        if (n10 >= 0) {
+            int size = this.f1447f.size() - n10;
+            int i11 = 0;
+            while (true) {
+                int i12 = i11 + 1;
+                if (i11 >= size || ((g) this.f1447f.get(n10)).getGroupId() != i10) {
+                    break;
+                }
+                Q(n10, false);
+                i11 = i12;
+            }
+            N(true);
+        }
     }
 
     @Override // android.view.Menu
-    public boolean performShortcut(int i10, KeyEvent keyEvent, int i11) {
-        boolean z10;
-        g p10 = p(i10, keyEvent);
-        if (p10 != null) {
-            z10 = M(p10, i11);
-        } else {
-            z10 = false;
-        }
-        if ((i11 & 2) != 0) {
-            e(true);
-        }
-        return z10;
+    public void removeItem(int i10) {
+        Q(q(i10), true);
     }
 
-    void q(List list, int i10, KeyEvent keyEvent) {
+    void s(List list, int i10, KeyEvent keyEvent) {
         char numericShortcut;
         int numericModifiers;
-        boolean H = H();
+        boolean J = J();
         int modifiers = keyEvent.getModifiers();
         KeyCharacterMap.KeyData keyData = new KeyCharacterMap.KeyData();
         if (keyEvent.getKeyData(keyData) || i10 == 67) {
-            int size = this.f1445f.size();
+            int size = this.f1447f.size();
             for (int i11 = 0; i11 < size; i11++) {
-                g gVar = (g) this.f1445f.get(i11);
+                g gVar = (g) this.f1447f.get(i11);
                 if (gVar.hasSubMenu()) {
-                    ((e) gVar.getSubMenu()).q(list, i10, keyEvent);
+                    ((e) gVar.getSubMenu()).s(list, i10, keyEvent);
                 }
-                if (H) {
+                if (J) {
                     numericShortcut = gVar.getAlphabeticShortcut();
                 } else {
                     numericShortcut = gVar.getNumericShortcut();
                 }
-                if (H) {
+                if (J) {
                     numericModifiers = gVar.getAlphabeticModifiers();
                 } else {
                     numericModifiers = gVar.getNumericModifiers();
                 }
                 if ((modifiers & 69647) == (numericModifiers & 69647) && numericShortcut != 0) {
                     char[] cArr = keyData.meta;
-                    if ((numericShortcut == cArr[0] || numericShortcut == cArr[2] || (H && numericShortcut == '\b' && i10 == 67)) && gVar.isEnabled()) {
+                    if ((numericShortcut == cArr[0] || numericShortcut == cArr[2] || (J && numericShortcut == '\b' && i10 == 67)) && gVar.isEnabled()) {
                         list.add(gVar);
                     }
                 }
@@ -833,75 +916,11 @@ public class e implements t1.a {
         }
     }
 
-    public void r() {
-        ArrayList E = E();
-        if (!this.f1450k) {
-            return;
-        }
-        Iterator it = this.f1462w.iterator();
-        boolean z10 = false;
-        while (it.hasNext()) {
-            WeakReference weakReference = (WeakReference) it.next();
-            j jVar = (j) weakReference.get();
-            if (jVar == null) {
-                this.f1462w.remove(weakReference);
-            } else {
-                z10 |= jVar.f();
-            }
-        }
-        if (z10) {
-            this.f1448i.clear();
-            this.f1449j.clear();
-            int size = E.size();
-            for (int i10 = 0; i10 < size; i10++) {
-                g gVar = (g) E.get(i10);
-                if (gVar.l()) {
-                    this.f1448i.add(gVar);
-                } else {
-                    this.f1449j.add(gVar);
-                }
-            }
-        } else {
-            this.f1448i.clear();
-            this.f1449j.clear();
-            this.f1449j.addAll(E());
-        }
-        this.f1450k = false;
-    }
-
-    @Override // android.view.Menu
-    public void removeGroup(int i10) {
-        int l10 = l(i10);
-        if (l10 >= 0) {
-            int size = this.f1445f.size() - l10;
-            int i11 = 0;
-            while (true) {
-                int i12 = i11 + 1;
-                if (i11 >= size || ((g) this.f1445f.get(l10)).getGroupId() != i10) {
-                    break;
-                }
-                O(l10, false);
-                i11 = i12;
-            }
-            L(true);
-        }
-    }
-
-    @Override // android.view.Menu
-    public void removeItem(int i10) {
-        O(o(i10), true);
-    }
-
-    public ArrayList s() {
-        r();
-        return this.f1448i;
-    }
-
     @Override // android.view.Menu
     public void setGroupCheckable(int i10, boolean z10, boolean z11) {
-        int size = this.f1445f.size();
+        int size = this.f1447f.size();
         for (int i11 = 0; i11 < size; i11++) {
-            g gVar = (g) this.f1445f.get(i11);
+            g gVar = (g) this.f1447f.get(i11);
             if (gVar.getGroupId() == i10) {
                 gVar.t(z11);
                 gVar.setCheckable(z10);
@@ -911,14 +930,14 @@ public class e implements t1.a {
 
     @Override // android.view.Menu
     public void setGroupDividerEnabled(boolean z10) {
-        this.f1464y = z10;
+        this.f1466y = z10;
     }
 
     @Override // android.view.Menu
     public void setGroupEnabled(int i10, boolean z10) {
-        int size = this.f1445f.size();
+        int size = this.f1447f.size();
         for (int i11 = 0; i11 < size; i11++) {
-            g gVar = (g) this.f1445f.get(i11);
+            g gVar = (g) this.f1447f.get(i11);
             if (gVar.getGroupId() == i10) {
                 gVar.setEnabled(z10);
             }
@@ -927,68 +946,100 @@ public class e implements t1.a {
 
     @Override // android.view.Menu
     public void setGroupVisible(int i10, boolean z10) {
-        int size = this.f1445f.size();
+        int size = this.f1447f.size();
         boolean z11 = false;
         for (int i11 = 0; i11 < size; i11++) {
-            g gVar = (g) this.f1445f.get(i11);
+            g gVar = (g) this.f1447f.get(i11);
             if (gVar.getGroupId() == i10 && gVar.y(z10)) {
                 z11 = true;
             }
         }
         if (z11) {
-            L(true);
+            N(true);
         }
     }
 
     @Override // android.view.Menu
     public void setQwertyMode(boolean z10) {
-        this.f1442c = z10;
-        L(false);
+        this.f1444c = z10;
+        N(false);
     }
 
     @Override // android.view.Menu
     public int size() {
-        return this.f1445f.size();
+        return this.f1447f.size();
+    }
+
+    public void t() {
+        ArrayList G = G();
+        if (!this.f1452k) {
+            return;
+        }
+        Iterator it = this.f1464w.iterator();
+        boolean z10 = false;
+        while (it.hasNext()) {
+            WeakReference weakReference = (WeakReference) it.next();
+            j jVar = (j) weakReference.get();
+            if (jVar == null) {
+                this.f1464w.remove(weakReference);
+            } else {
+                z10 |= jVar.h();
+            }
+        }
+        if (z10) {
+            this.f1450i.clear();
+            this.f1451j.clear();
+            int size = G.size();
+            for (int i10 = 0; i10 < size; i10++) {
+                g gVar = (g) G.get(i10);
+                if (gVar.l()) {
+                    this.f1450i.add(gVar);
+                } else {
+                    this.f1451j.add(gVar);
+                }
+            }
+        } else {
+            this.f1450i.clear();
+            this.f1451j.clear();
+            this.f1451j.addAll(G());
+        }
+        this.f1452k = false;
+    }
+
+    public ArrayList u() {
+        t();
+        return this.f1450i;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public String t() {
+    public String v() {
         return "android:menu:actionviewstates";
     }
 
-    public Context u() {
-        return this.f1440a;
+    public Context w() {
+        return this.f1442a;
     }
 
-    public g v() {
-        return this.f1463x;
+    public g x() {
+        return this.f1465x;
     }
 
-    public Drawable w() {
-        return this.f1454o;
+    public Drawable y() {
+        return this.f1456o;
     }
 
-    public CharSequence x() {
-        return this.f1453n;
-    }
-
-    public View y() {
-        return this.f1455p;
-    }
-
-    public ArrayList z() {
-        r();
-        return this.f1449j;
+    public CharSequence z() {
+        return this.f1455n;
     }
 
     @Override // android.view.Menu
     public MenuItem add(int i10) {
-        return a(0, 0, 0, this.f1441b.getString(i10));
+        return a(0, 0, 0, this.f1443b.getString(i10));
     }
 
     @Override // android.view.Menu
     public SubMenu addSubMenu(int i10) {
-        return addSubMenu(0, 0, 0, this.f1441b.getString(i10));
+        return addSubMenu(0, 0, 0, this.f1443b.getString(i10));
     }
 
     @Override // android.view.Menu
@@ -999,18 +1050,18 @@ public class e implements t1.a {
     @Override // android.view.Menu
     public SubMenu addSubMenu(int i10, int i11, int i12, CharSequence charSequence) {
         g gVar = (g) a(i10, i11, i12, charSequence);
-        m mVar = new m(this.f1440a, this, gVar);
+        m mVar = new m(this.f1442a, this, gVar);
         gVar.x(mVar);
         return mVar;
     }
 
     @Override // android.view.Menu
     public MenuItem add(int i10, int i11, int i12, int i13) {
-        return a(i10, i11, i12, this.f1441b.getString(i13));
+        return a(i10, i11, i12, this.f1443b.getString(i13));
     }
 
     @Override // android.view.Menu
     public SubMenu addSubMenu(int i10, int i11, int i12, int i13) {
-        return addSubMenu(i10, i11, i12, this.f1441b.getString(i13));
+        return addSubMenu(i10, i11, i12, this.f1443b.getString(i13));
     }
 }

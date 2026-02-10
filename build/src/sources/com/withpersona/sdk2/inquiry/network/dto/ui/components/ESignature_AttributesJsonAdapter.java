@@ -61,7 +61,7 @@ public final class ESignature_AttributesJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -101,7 +101,7 @@ public final class ESignature_AttributesJsonAdapter extends h {
     public void toJson(@NotNull t writer, ESignature.Attributes attributes) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
-            writer.k();
+            writer.i();
             writer.J("label");
             this.nullableStringAdapter.toJson(writer, attributes.getLabel());
             writer.J(ViewProps.HIDDEN);

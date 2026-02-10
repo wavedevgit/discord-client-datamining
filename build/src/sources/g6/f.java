@@ -6,30 +6,30 @@ import g6.g;
 public class f {
 
     /* renamed from: a  reason: collision with root package name */
-    b.r f23706a = null;
+    b.r f25006a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    e f23707b = null;
+    e f25007b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    String f23708c = null;
+    String f25008c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    g.b f23709d = null;
+    g.b f25009d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    String f23710e = null;
+    String f25010e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    g.b f23711f = null;
+    g.b f25011f = null;
 
     public f a(String str) {
-        this.f23706a = new b(b.u.RenderOptions).d(str);
+        this.f25006a = new b(b.u.RenderOptions).d(str);
         return this;
     }
 
     public boolean b() {
-        b.r rVar = this.f23706a;
+        b.r rVar = this.f25006a;
         if (rVar != null && rVar.f() > 0) {
             return true;
         }
@@ -37,42 +37,42 @@ public class f {
     }
 
     public boolean c() {
-        if (this.f23707b != null) {
+        if (this.f25007b != null) {
             return true;
         }
         return false;
     }
 
     public boolean d() {
-        if (this.f23708c != null) {
+        if (this.f25008c != null) {
             return true;
         }
         return false;
     }
 
     public boolean e() {
-        if (this.f23710e != null) {
+        if (this.f25010e != null) {
             return true;
         }
         return false;
     }
 
     public boolean f() {
-        if (this.f23709d != null) {
+        if (this.f25009d != null) {
             return true;
         }
         return false;
     }
 
     public boolean g() {
-        if (this.f23711f != null) {
+        if (this.f25011f != null) {
             return true;
         }
         return false;
     }
 
     public f h(float f10, float f11, float f12, float f13) {
-        this.f23711f = new g.b(f10, f11, f12, f13);
+        this.f25011f = new g.b(f10, f11, f12, f13);
         return this;
     }
 }

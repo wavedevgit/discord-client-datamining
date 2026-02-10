@@ -1,26 +1,26 @@
 package og;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class i8 implements zi.d {
+final class i8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final i8 f40955a = new i8();
+    static final i8 f39281a = new i8();
 
     static {
-        c.b a10 = zi.c.a("cameraId");
+        c.b a10 = bj.c.a("cameraId");
         l2 l2Var = new l2();
         l2Var.a(1);
         a10.b(l2Var.b()).a();
-        c.b a11 = zi.c.a("physicalCameraIds");
+        c.b a11 = bj.c.a("physicalCameraIds");
         l2 l2Var2 = new l2();
         l2Var2.a(2);
         a11.b(l2Var2.b()).a();
-        c.b a12 = zi.c.a("deviceModel");
+        c.b a12 = bj.c.a("deviceModel");
         l2 l2Var3 = new l2();
         l2Var3.a(3);
         a12.b(l2Var3.b()).a();
-        c.b a13 = zi.c.a("enableMlDenoiser");
+        c.b a13 = bj.c.a("enableMlDenoiser");
         l2 l2Var4 = new l2();
         l2Var4.a(4);
         a13.b(l2Var4.b()).a();
@@ -29,10 +29,10 @@ final class i8 implements zi.d {
     private i8() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

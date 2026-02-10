@@ -12,53 +12,53 @@ import androidx.lifecycle.s;
 import androidx.work.impl.foreground.b;
 import k4.m;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public class SystemForegroundService extends s implements b.InterfaceC0081b {
+public class SystemForegroundService extends s implements b.InterfaceC0077b {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String f5759q = m.i("SystemFgService");
+    private static final String f5769q = m.i("SystemFgService");
 
     /* renamed from: r  reason: collision with root package name */
-    private static SystemForegroundService f5760r = null;
+    private static SystemForegroundService f5770r = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private Handler f5761e;
+    private Handler f5771e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f5762i;
+    private boolean f5772i;
 
     /* renamed from: o  reason: collision with root package name */
-    androidx.work.impl.foreground.b f5763o;
+    androidx.work.impl.foreground.b f5773o;
 
     /* renamed from: p  reason: collision with root package name */
-    NotificationManager f5764p;
+    NotificationManager f5774p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f5765d;
+        final /* synthetic */ int f5775d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Notification f5766e;
+        final /* synthetic */ Notification f5776e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ int f5767i;
+        final /* synthetic */ int f5777i;
 
         a(int i10, Notification notification, int i11) {
-            this.f5765d = i10;
-            this.f5766e = notification;
-            this.f5767i = i11;
+            this.f5775d = i10;
+            this.f5776e = notification;
+            this.f5777i = i11;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             int i10 = Build.VERSION.SDK_INT;
             if (i10 >= 31) {
-                e.a(SystemForegroundService.this, this.f5765d, this.f5766e, this.f5767i);
+                e.a(SystemForegroundService.this, this.f5775d, this.f5776e, this.f5777i);
             } else if (i10 >= 29) {
-                d.a(SystemForegroundService.this, this.f5765d, this.f5766e, this.f5767i);
+                d.a(SystemForegroundService.this, this.f5775d, this.f5776e, this.f5777i);
             } else {
-                SystemForegroundService.this.startForeground(this.f5765d, this.f5766e);
+                SystemForegroundService.this.startForeground(this.f5775d, this.f5776e);
             }
         }
     }
@@ -67,19 +67,19 @@ public class SystemForegroundService extends s implements b.InterfaceC0081b {
     class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f5769d;
+        final /* synthetic */ int f5779d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Notification f5770e;
+        final /* synthetic */ Notification f5780e;
 
         b(int i10, Notification notification) {
-            this.f5769d = i10;
-            this.f5770e = notification;
+            this.f5779d = i10;
+            this.f5780e = notification;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            SystemForegroundService.this.f5764p.notify(this.f5769d, this.f5770e);
+            SystemForegroundService.this.f5774p.notify(this.f5779d, this.f5780e);
         }
     }
 
@@ -87,15 +87,15 @@ public class SystemForegroundService extends s implements b.InterfaceC0081b {
     class c implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f5772d;
+        final /* synthetic */ int f5782d;
 
         c(int i10) {
-            this.f5772d = i10;
+            this.f5782d = i10;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            SystemForegroundService.this.f5764p.cancel(this.f5772d);
+            SystemForegroundService.this.f5774p.cancel(this.f5782d);
         }
     }
 
@@ -112,73 +112,73 @@ public class SystemForegroundService extends s implements b.InterfaceC0081b {
             try {
                 service.startForeground(i10, notification, i11);
             } catch (ForegroundServiceStartNotAllowedException e10) {
-                m.e().l(SystemForegroundService.f5759q, "Unable to start foreground service", e10);
+                m.e().l(SystemForegroundService.f5769q, "Unable to start foreground service", e10);
             } catch (SecurityException e11) {
-                m.e().l(SystemForegroundService.f5759q, "Unable to start foreground service", e11);
+                m.e().l(SystemForegroundService.f5769q, "Unable to start foreground service", e11);
             }
         }
     }
 
     private void g() {
-        this.f5761e = new Handler(Looper.getMainLooper());
-        this.f5764p = (NotificationManager) getApplicationContext().getSystemService("notification");
+        this.f5771e = new Handler(Looper.getMainLooper());
+        this.f5774p = (NotificationManager) getApplicationContext().getSystemService("notification");
         androidx.work.impl.foreground.b bVar = new androidx.work.impl.foreground.b(getApplicationContext());
-        this.f5763o = bVar;
+        this.f5773o = bVar;
         bVar.n(this);
     }
 
-    @Override // androidx.work.impl.foreground.b.InterfaceC0081b
+    @Override // androidx.work.impl.foreground.b.InterfaceC0077b
     public void a(int i10, Notification notification) {
-        this.f5761e.post(new b(i10, notification));
+        this.f5771e.post(new b(i10, notification));
     }
 
-    @Override // androidx.work.impl.foreground.b.InterfaceC0081b
+    @Override // androidx.work.impl.foreground.b.InterfaceC0077b
     public void c(int i10, int i11, Notification notification) {
-        this.f5761e.post(new a(i10, notification, i11));
+        this.f5771e.post(new a(i10, notification, i11));
     }
 
-    @Override // androidx.work.impl.foreground.b.InterfaceC0081b
+    @Override // androidx.work.impl.foreground.b.InterfaceC0077b
     public void d(int i10) {
-        this.f5761e.post(new c(i10));
+        this.f5771e.post(new c(i10));
     }
 
     @Override // androidx.lifecycle.s, android.app.Service
     public void onCreate() {
         super.onCreate();
-        f5760r = this;
+        f5770r = this;
         g();
     }
 
     @Override // androidx.lifecycle.s, android.app.Service
     public void onDestroy() {
         super.onDestroy();
-        this.f5763o.l();
+        this.f5773o.l();
     }
 
     @Override // androidx.lifecycle.s, android.app.Service
     public int onStartCommand(Intent intent, int i10, int i11) {
         super.onStartCommand(intent, i10, i11);
-        if (this.f5762i) {
-            m.e().f(f5759q, "Re-initializing SystemForegroundService after a request to shut-down.");
-            this.f5763o.l();
+        if (this.f5772i) {
+            m.e().f(f5769q, "Re-initializing SystemForegroundService after a request to shut-down.");
+            this.f5773o.l();
             g();
-            this.f5762i = false;
+            this.f5772i = false;
         }
         if (intent != null) {
-            this.f5763o.m(intent);
+            this.f5773o.m(intent);
             return 3;
         }
         return 3;
     }
 
-    @Override // androidx.work.impl.foreground.b.InterfaceC0081b
+    @Override // androidx.work.impl.foreground.b.InterfaceC0077b
     public void stop() {
-        this.f5762i = true;
-        m.e().a(f5759q, "All commands completed.");
+        this.f5772i = true;
+        m.e().a(f5769q, "All commands completed.");
         if (Build.VERSION.SDK_INT >= 26) {
             stopForeground(true);
         }
-        f5760r = null;
+        f5770r = null;
         stopSelf();
     }
 }

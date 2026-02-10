@@ -1,64 +1,64 @@
 package pg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class c3 implements zi.d {
+final class c3 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c3 f43347a = new c3();
+    static final c3 f41805a = new c3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f43348b;
+    private static final bj.c f41806b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f43349c;
+    private static final bj.c f41807c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f43350d;
+    private static final bj.c f41808d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final zi.c f43351e;
+    private static final bj.c f41809e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final zi.c f43352f;
+    private static final bj.c f41810f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final zi.c f43353g;
+    private static final bj.c f41811g;
 
     static {
-        c.b a10 = zi.c.a("maxMs");
+        c.b a10 = bj.c.a("maxMs");
         f fVar = new f();
         fVar.a(1);
-        f43348b = a10.b(fVar.b()).a();
-        c.b a11 = zi.c.a("minMs");
+        f41806b = a10.b(fVar.b()).a();
+        c.b a11 = bj.c.a("minMs");
         f fVar2 = new f();
         fVar2.a(2);
-        f43349c = a11.b(fVar2.b()).a();
-        c.b a12 = zi.c.a("avgMs");
+        f41807c = a11.b(fVar2.b()).a();
+        c.b a12 = bj.c.a("avgMs");
         f fVar3 = new f();
         fVar3.a(3);
-        f43350d = a12.b(fVar3.b()).a();
-        c.b a13 = zi.c.a("firstQuartileMs");
+        f41808d = a12.b(fVar3.b()).a();
+        c.b a13 = bj.c.a("firstQuartileMs");
         f fVar4 = new f();
         fVar4.a(4);
-        f43351e = a13.b(fVar4.b()).a();
-        c.b a14 = zi.c.a("medianMs");
+        f41809e = a13.b(fVar4.b()).a();
+        c.b a14 = bj.c.a("medianMs");
         f fVar5 = new f();
         fVar5.a(5);
-        f43352f = a14.b(fVar5.b()).a();
-        c.b a15 = zi.c.a("thirdQuartileMs");
+        f41810f = a14.b(fVar5.b()).a();
+        c.b a15 = bj.c.a("thirdQuartileMs");
         f fVar6 = new f();
         fVar6.a(6);
-        f43353g = a15.b(fVar6.b()).a();
+        f41811g = a15.b(fVar6.b()).a();
     }
 
     private c3() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

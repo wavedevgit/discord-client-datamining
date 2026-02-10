@@ -7,28 +7,28 @@ import io.sentry.k7;
 public final class m0 implements io.sentry.transport.r {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k7 f27516a;
+    private final k7 f28451a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f27517a;
+        static final /* synthetic */ int[] f28452a;
 
         static {
             int[] iArr = new int[k0.a.values().length];
-            f27517a = iArr;
+            f28452a = iArr;
             try {
                 iArr[k0.a.CONNECTED.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f27517a[k0.a.UNKNOWN.ordinal()] = 2;
+                f28452a[k0.a.UNKNOWN.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f27517a[k0.a.NO_PERMISSION.ordinal()] = 3;
+                f28452a[k0.a.NO_PERMISSION.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -36,16 +36,16 @@ public final class m0 implements io.sentry.transport.r {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m0(k7 k7Var) {
-        this.f27516a = k7Var;
+        this.f28451a = k7Var;
     }
 
     @Override // io.sentry.transport.r
     public boolean a() {
-        return b(this.f27516a.getConnectionStatusProvider().y0());
+        return b(this.f28451a.getConnectionStatusProvider().y0());
     }
 
     boolean b(k0.a aVar) {
-        int i10 = a.f27517a[aVar.ordinal()];
+        int i10 = a.f28452a[aVar.ordinal()];
         if (i10 == 1 || i10 == 2 || i10 == 3) {
             return true;
         }

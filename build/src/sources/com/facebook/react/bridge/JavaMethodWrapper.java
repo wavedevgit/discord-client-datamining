@@ -260,7 +260,7 @@ public final class JavaMethodWrapper implements JavaModuleWrapper.NativeMethod {
                 return new PromiseImpl((Callback) argumentExtractor.extractArgument(jsInstance, jsArguments, i10), (Callback) argumentExtractor2.extractArgument(jsInstance, jsArguments, i10 + 1));
             }
         };
-        DEBUG = b9.c.a().a(c9.a.f7342e);
+        DEBUG = b9.c.a().a(c9.a.f8023e);
     }
 
     public JavaMethodWrapper(@NotNull JavaModuleWrapper moduleWrapper, @NotNull Method method, boolean z10) {
@@ -419,7 +419,7 @@ public final class JavaMethodWrapper implements JavaModuleWrapper.NativeMethod {
         String str = this.moduleWrapper.getName() + "." + this.method.getName();
         rb.b.a(0L, "callJavaModuleMethod").b("method", str).c();
         if (DEBUG) {
-            b9.c.a().c(c9.a.f7342e, "JS->Java: %s.%s()", this.moduleWrapper.getName(), this.method.getName());
+            b9.c.a().c(c9.a.f8023e, "JS->Java: %s.%s()", this.moduleWrapper.getName(), this.method.getName());
         }
         try {
             if (!this.argumentsProcessed) {

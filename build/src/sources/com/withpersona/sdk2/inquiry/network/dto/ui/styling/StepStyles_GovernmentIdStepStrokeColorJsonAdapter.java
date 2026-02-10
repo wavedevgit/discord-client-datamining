@@ -51,7 +51,7 @@ public final class StepStyles_GovernmentIdStepStrokeColorJsonAdapter extends h {
         while (reader.hasNext()) {
             switch (reader.J(this.options)) {
                 case -1:
-                    reader.C0();
+                    reader.z0();
                     reader.T();
                     break;
                 case 0:
@@ -82,7 +82,7 @@ public final class StepStyles_GovernmentIdStepStrokeColorJsonAdapter extends h {
     public void toJson(@NotNull t writer, StepStyles.GovernmentIdStepStrokeColor governmentIdStepStrokeColor) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepStrokeColor != null) {
-            writer.k();
+            writer.i();
             writer.J("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getBase());
             writer.J("governmentIdSelectOptionIcon");

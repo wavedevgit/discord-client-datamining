@@ -7,17 +7,17 @@ import z.a0;
 public final class d extends a0.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final j0.z f55825a;
+    private final j0.z f55864a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final n0.g f55826b;
+    private final n0.g f55865b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(j0.z zVar, n0.g gVar) {
         if (zVar != null) {
-            this.f55825a = zVar;
+            this.f55864a = zVar;
             if (gVar != null) {
-                this.f55826b = gVar;
+                this.f55865b = gVar;
                 return;
             }
             throw new NullPointerException("Null outputFileOptions");
@@ -28,13 +28,13 @@ public final class d extends a0.a {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // z.a0.a
     public n0.g a() {
-        return this.f55826b;
+        return this.f55865b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // z.a0.a
     public j0.z b() {
-        return this.f55825a;
+        return this.f55864a;
     }
 
     public boolean equals(Object obj) {
@@ -43,7 +43,7 @@ public final class d extends a0.a {
         }
         if (obj instanceof a0.a) {
             a0.a aVar = (a0.a) obj;
-            if (this.f55825a.equals(aVar.b()) && this.f55826b.equals(aVar.a())) {
+            if (this.f55864a.equals(aVar.b()) && this.f55865b.equals(aVar.a())) {
                 return true;
             }
         }
@@ -51,10 +51,10 @@ public final class d extends a0.a {
     }
 
     public int hashCode() {
-        return ((this.f55825a.hashCode() ^ 1000003) * 1000003) ^ this.f55826b.hashCode();
+        return ((this.f55864a.hashCode() ^ 1000003) * 1000003) ^ this.f55865b.hashCode();
     }
 
     public String toString() {
-        return "In{packet=" + this.f55825a + ", outputFileOptions=" + this.f55826b + "}";
+        return "In{packet=" + this.f55864a + ", outputFileOptions=" + this.f55865b + "}";
     }
 }

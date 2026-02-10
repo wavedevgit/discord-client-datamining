@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.types.TypeParameterUpperBoundEraser;
 public class w implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeParameterUpperBoundEraser f34531d;
+    private final TypeParameterUpperBoundEraser f34753d;
 
     public w(TypeParameterUpperBoundEraser typeParameterUpperBoundEraser) {
-        this.f34531d = typeParameterUpperBoundEraser;
+        this.f34753d = typeParameterUpperBoundEraser;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         KotlinType e10;
-        e10 = TypeParameterUpperBoundEraser.e(this.f34531d, (TypeParameterUpperBoundEraser.a) obj);
+        e10 = TypeParameterUpperBoundEraser.e(this.f34753d, (TypeParameterUpperBoundEraser.a) obj);
         return e10;
     }
 }

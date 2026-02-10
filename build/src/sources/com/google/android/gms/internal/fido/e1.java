@@ -9,33 +9,33 @@ import java.util.RandomAccess;
 public abstract class e1 extends z0 implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final d2 f14089e = new a1(t1.f14218q, 0);
+    private static final d2 f14666e = new a1(t1.f14795q, 0);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final /* synthetic */ int f14090i = 0;
+    public static final /* synthetic */ int f14667i = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static e1 i(Object[] objArr, int i10) {
+    public static e1 j(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return t1.f14218q;
+            return t1.f14795q;
         }
         return new t1(objArr, i10);
     }
 
-    public static e1 j(Object[] objArr) {
+    public static e1 k(Object[] objArr) {
         if (objArr.length == 0) {
-            return t1.f14218q;
+            return t1.f14795q;
         }
         Object[] objArr2 = (Object[]) objArr.clone();
         int length = objArr2.length;
         r1.b(objArr2, length);
-        return i(objArr2, length);
+        return j(objArr2, length);
     }
 
     public static e1 l(Object obj) {
         Object[] objArr = {obj};
         r1.b(objArr, 1);
-        return i(objArr, 1);
+        return j(objArr, 1);
     }
 
     @Override // java.util.List
@@ -142,20 +142,6 @@ public abstract class e1 extends z0 implements List, RandomAccess {
         return new b1(this);
     }
 
-    @Override // java.util.List
-    /* renamed from: h */
-    public e1 subList(int i10, int i11) {
-        k0.e(i10, i11, size());
-        int i12 = i11 - i10;
-        if (i12 == size()) {
-            return this;
-        }
-        if (i12 == 0) {
-            return t1.f14218q;
-        }
-        return new d1(this, i10, i12);
-    }
-
     @Override // java.util.Collection, java.util.List
     public final int hashCode() {
         int size = size();
@@ -164,6 +150,20 @@ public abstract class e1 extends z0 implements List, RandomAccess {
             i10 = (i10 * 31) + get(i11).hashCode();
         }
         return i10;
+    }
+
+    @Override // java.util.List
+    /* renamed from: i */
+    public e1 subList(int i10, int i11) {
+        k0.e(i10, i11, size());
+        int i12 = i11 - i10;
+        if (i12 == size()) {
+            return this;
+        }
+        if (i12 == 0) {
+            return t1.f14795q;
+        }
+        return new d1(this, i10, i12);
     }
 
     public int indexOf(Object obj) {
@@ -206,7 +206,7 @@ public abstract class e1 extends z0 implements List, RandomAccess {
     public final d2 listIterator(int i10) {
         k0.b(i10, size(), "index");
         if (isEmpty()) {
-            return f14089e;
+            return f14666e;
         }
         return new a1(this, i10);
     }

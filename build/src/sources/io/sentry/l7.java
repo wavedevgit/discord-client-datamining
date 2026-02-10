@@ -104,38 +104,38 @@ public final class l7 extends e5 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        xVar = (io.sentry.protocol.x) e3Var.E0(iLogger, new x.a());
+                        xVar = (io.sentry.protocol.x) e3Var.I0(iLogger, new x.a());
                         break;
                     case 1:
                         date2 = e3Var.s0(iLogger);
                         break;
                     case 2:
-                        str = e3Var.m1();
+                        str = e3Var.r1();
                         break;
                     case 3:
-                        list = (List) e3Var.T1();
+                        list = (List) e3Var.Z1();
                         break;
                     case 4:
                         date = e3Var.s0(iLogger);
                         break;
                     case 5:
-                        list2 = (List) e3Var.T1();
+                        list2 = (List) e3Var.Z1();
                         break;
                     case 6:
-                        list3 = (List) e3Var.T1();
+                        list3 = (List) e3Var.Z1();
                         break;
                     case 7:
-                        bVar = (b) e3Var.E0(iLogger, new b.a());
+                        bVar = (b) e3Var.I0(iLogger, new b.a());
                         break;
                     case '\b':
-                        num = e3Var.g1();
+                        num = e3Var.l1();
                         break;
                     default:
                         if (!aVar.a(l7Var, o02, e3Var, iLogger)) {
                             if (hashMap == null) {
                                 hashMap = new HashMap();
                             }
-                            e3Var.p1(iLogger, hashMap, o02);
+                            e3Var.u1(iLogger, hashMap, o02);
                             break;
                         } else {
                             break;
@@ -175,7 +175,7 @@ public final class l7 extends e5 implements w1 {
             @Override // io.sentry.m1
             /* renamed from: b */
             public b a(e3 e3Var, ILogger iLogger) {
-                return b.valueOf(e3Var.b1().toUpperCase(Locale.ROOT));
+                return b.valueOf(e3Var.g1().toUpperCase(Locale.ROOT));
             }
         }
 

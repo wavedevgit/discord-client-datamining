@@ -55,7 +55,7 @@ public final class NextStep_Selfie_AssetConfig_PromptPageJsonAdapter extends h {
         while (reader.hasNext()) {
             int J = reader.J(this.options);
             if (J == -1) {
-                reader.C0();
+                reader.z0();
                 reader.T();
             } else if (J == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
@@ -87,7 +87,7 @@ public final class NextStep_Selfie_AssetConfig_PromptPageJsonAdapter extends h {
         RemoteImage remoteImage12 = remoteImage;
         Constructor<NextStep.Selfie.AssetConfig.PromptPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Selfie.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, bn.c.f7152c);
+            constructor = NextStep.Selfie.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, dn.c.f21827c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -100,7 +100,7 @@ public final class NextStep_Selfie_AssetConfig_PromptPageJsonAdapter extends h {
     public void toJson(@NotNull t writer, NextStep.Selfie.AssetConfig.PromptPage promptPage) {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
-            writer.k();
+            writer.i();
             writer.J("headerPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, promptPage.getHeaderPictograph());
             writer.J("selfiePictograph");

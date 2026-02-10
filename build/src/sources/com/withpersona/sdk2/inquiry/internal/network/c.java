@@ -1,9 +1,9 @@
 package com.withpersona.sdk2.inquiry.internal.network;
 
+import as.p;
 import com.withpersona.sdk2.inquiry.internal.network.ErrorRequest;
 import com.withpersona.sdk2.inquiry.network.core.InternalErrorInfo;
 import kotlin.jvm.internal.Intrinsics;
-import rr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {
     public static final ErrorRequest.a a(InternalErrorInfo internalErrorInfo) {

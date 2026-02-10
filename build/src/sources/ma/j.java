@@ -16,31 +16,31 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j {
 
     /* renamed from: h  reason: collision with root package name */
-    public static final a f36808h = new a(null);
+    public static final a f36183h = new a(null);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Class f36809i = j.class;
+    private static final Class f36184i = j.class;
 
     /* renamed from: a  reason: collision with root package name */
-    private final k8.j f36810a;
+    private final k8.j f36185a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final s8.i f36811b;
+    private final s8.i f36186b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final s8.l f36812c;
+    private final s8.l f36187c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Executor f36813d;
+    private final Executor f36188d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Executor f36814e;
+    private final Executor f36189e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final s f36815f;
+    private final s f36190f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final a0 f36816g;
+    private final a0 f36191g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -59,29 +59,29 @@ public final class j {
         Intrinsics.checkNotNullParameter(readExecutor, "readExecutor");
         Intrinsics.checkNotNullParameter(writeExecutor, "writeExecutor");
         Intrinsics.checkNotNullParameter(imageCacheStatsTracker, "imageCacheStatsTracker");
-        this.f36810a = fileCache;
-        this.f36811b = pooledByteBufferFactory;
-        this.f36812c = pooledByteStreams;
-        this.f36813d = readExecutor;
-        this.f36814e = writeExecutor;
-        this.f36815f = imageCacheStatsTracker;
+        this.f36185a = fileCache;
+        this.f36186b = pooledByteBufferFactory;
+        this.f36187c = pooledByteStreams;
+        this.f36188d = readExecutor;
+        this.f36189e = writeExecutor;
+        this.f36190f = imageCacheStatsTracker;
         a0 d10 = a0.d();
         Intrinsics.checkNotNullExpressionValue(d10, "getInstance(...)");
-        this.f36816g = d10;
+        this.f36191g = d10;
     }
 
     private final boolean g(CacheKey cacheKey) {
-        ta.k c10 = this.f36816g.c(cacheKey);
+        ta.k c10 = this.f36191g.c(cacheKey);
         if (c10 != null) {
             c10.close();
-            q8.a.z(f36809i, "Found image for %s in staging area", cacheKey.a());
-            this.f36815f.e(cacheKey);
+            q8.a.z(f36184i, "Found image for %s in staging area", cacheKey.a());
+            this.f36190f.e(cacheKey);
             return true;
         }
-        q8.a.z(f36809i, "Did not find image for %s in staging area", cacheKey.a());
-        this.f36815f.k(cacheKey);
+        q8.a.z(f36184i, "Did not find image for %s in staging area", cacheKey.a());
+        this.f36190f.k(cacheKey);
         try {
-            return this.f36810a.g(cacheKey);
+            return this.f36185a.g(cacheKey);
         } catch (Exception unused) {
             return false;
         }
@@ -92,16 +92,16 @@ public final class j {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Object e10 = ua.a.e(obj, null);
         try {
-            this$0.f36816g.a();
-            this$0.f36810a.a();
+            this$0.f36191g.a();
+            this$0.f36185a.a();
             return null;
         } finally {
         }
     }
 
     private final u4.f l(CacheKey cacheKey, ta.k kVar) {
-        q8.a.z(f36809i, "Found image for %s in staging area", cacheKey.a());
-        this.f36815f.e(cacheKey);
+        q8.a.z(f36184i, "Found image for %s in staging area", cacheKey.a());
+        this.f36190f.e(cacheKey);
         u4.f h10 = u4.f.h(kVar);
         Intrinsics.checkNotNullExpressionValue(h10, "forResult(...)");
         return h10;
@@ -117,9 +117,9 @@ public final class j {
                     o10 = j.o(d10, atomicBoolean, this, cacheKey);
                     return o10;
                 }
-            }, this.f36813d);
+            }, this.f36188d);
         } catch (Exception e10) {
-            q8.a.I(f36809i, e10, "Failed to schedule disk-cache read for %s", cacheKey.a());
+            q8.a.I(f36184i, e10, "Failed to schedule disk-cache read for %s", cacheKey.a());
             return u4.f.g(e10);
         }
     }
@@ -132,24 +132,24 @@ public final class j {
         Object e10 = ua.a.e(obj, null);
         try {
             if (!isCancelled.get()) {
-                ta.k c10 = this$0.f36816g.c(key);
+                ta.k c10 = this$0.f36191g.c(key);
                 if (c10 != null) {
-                    q8.a.z(f36809i, "Found image for %s in staging area", key.a());
-                    this$0.f36815f.e(key);
+                    q8.a.z(f36184i, "Found image for %s in staging area", key.a());
+                    this$0.f36190f.e(key);
                 } else {
-                    q8.a.z(f36809i, "Did not find image for %s in staging area", key.a());
-                    this$0.f36815f.k(key);
+                    q8.a.z(f36184i, "Did not find image for %s in staging area", key.a());
+                    this$0.f36190f.k(key);
                     try {
                         s8.h r10 = this$0.r(key);
                         if (r10 == null) {
                             return null;
                         }
-                        CloseableReference H0 = CloseableReference.H0(r10);
-                        Intrinsics.checkNotNullExpressionValue(H0, "of(...)");
+                        CloseableReference E0 = CloseableReference.E0(r10);
+                        Intrinsics.checkNotNullExpressionValue(E0, "of(...)");
                         try {
-                            c10 = new ta.k(H0);
+                            c10 = new ta.k(E0);
                         } finally {
-                            CloseableReference.z(H0);
+                            CloseableReference.z(E0);
                         }
                     } catch (Exception unused) {
                         return null;
@@ -158,7 +158,7 @@ public final class j {
                 if (!Thread.interrupted()) {
                     return c10;
                 }
-                q8.a.y(f36809i, "Host thread was interrupted, decreasing reference count");
+                q8.a.y(f36184i, "Host thread was interrupted, decreasing reference count");
                 c10.close();
                 throw new InterruptedException();
             }
@@ -186,24 +186,24 @@ public final class j {
 
     private final s8.h r(CacheKey cacheKey) {
         try {
-            Class cls = f36809i;
+            Class cls = f36184i;
             q8.a.z(cls, "Disk cache read for %s", cacheKey.a());
-            i8.a d10 = this.f36810a.d(cacheKey);
+            i8.a d10 = this.f36185a.d(cacheKey);
             if (d10 == null) {
                 q8.a.z(cls, "Disk cache miss for %s", cacheKey.a());
-                this.f36815f.b(cacheKey);
+                this.f36190f.b(cacheKey);
                 return null;
             }
             q8.a.z(cls, "Found entry in disk cache for %s", cacheKey.a());
-            this.f36815f.h(cacheKey);
+            this.f36190f.h(cacheKey);
             InputStream a10 = d10.a();
-            s8.h b10 = this.f36811b.b(a10, (int) d10.size());
+            s8.h b10 = this.f36186b.b(a10, (int) d10.size());
             a10.close();
             q8.a.z(cls, "Successful read from disk cache for %s", cacheKey.a());
             return b10;
         } catch (IOException e10) {
-            q8.a.I(f36809i, e10, "Exception reading from cache for %s", cacheKey.a());
-            this.f36815f.n(cacheKey);
+            q8.a.I(f36184i, e10, "Exception reading from cache for %s", cacheKey.a());
+            this.f36190f.n(cacheKey);
             throw e10;
         }
     }
@@ -214,27 +214,27 @@ public final class j {
         Intrinsics.checkNotNullParameter(key, "$key");
         Object e10 = ua.a.e(obj, null);
         try {
-            this$0.f36816g.g(key);
-            this$0.f36810a.f(key);
+            this$0.f36191g.g(key);
+            this$0.f36185a.f(key);
             return null;
         } finally {
         }
     }
 
     private final void u(CacheKey cacheKey, final ta.k kVar) {
-        Class cls = f36809i;
+        Class cls = f36184i;
         q8.a.z(cls, "About to write to disk-cache for key %s", cacheKey.a());
         try {
-            this.f36810a.c(cacheKey, new j8.i() { // from class: ma.i
+            this.f36185a.c(cacheKey, new j8.i() { // from class: ma.i
                 @Override // j8.i
                 public final void a(OutputStream outputStream) {
                     j.v(ta.k.this, this, outputStream);
                 }
             });
-            this.f36815f.c(cacheKey);
+            this.f36190f.c(cacheKey);
             q8.a.z(cls, "Successful disk-cache write for key %s", cacheKey.a());
         } catch (IOException e10) {
-            q8.a.I(f36809i, e10, "Failed to write to disk-cache for key %s", cacheKey.a());
+            q8.a.I(f36184i, e10, "Failed to write to disk-cache for key %s", cacheKey.a());
         }
     }
 
@@ -245,7 +245,7 @@ public final class j {
         Intrinsics.checkNotNull(kVar);
         InputStream C = kVar.C();
         if (C != null) {
-            this$0.f36812c.a(C, os2);
+            this$0.f36187c.a(C, os2);
             return;
         }
         throw new IllegalStateException("Required value was null.");
@@ -253,11 +253,11 @@ public final class j {
 
     public final void f(CacheKey key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        this.f36810a.b(key);
+        this.f36185a.b(key);
     }
 
     public final u4.f h() {
-        this.f36816g.a();
+        this.f36191g.a();
         final Object d10 = ua.a.d("BufferedDiskCache_clearAll");
         try {
             return u4.f.b(new Callable() { // from class: ma.h
@@ -267,16 +267,16 @@ public final class j {
                     i10 = j.i(d10, this);
                     return i10;
                 }
-            }, this.f36814e);
+            }, this.f36189e);
         } catch (Exception e10) {
-            q8.a.I(f36809i, e10, "Failed to schedule disk-cache clear", new Object[0]);
+            q8.a.I(f36184i, e10, "Failed to schedule disk-cache clear", new Object[0]);
             return u4.f.g(e10);
         }
     }
 
     public final boolean j(CacheKey key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        if (!this.f36816g.b(key) && !this.f36810a.e(key)) {
+        if (!this.f36191g.b(key) && !this.f36185a.e(key)) {
             return false;
         }
         return true;
@@ -296,7 +296,7 @@ public final class j {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(isCancelled, "isCancelled");
         if (!za.b.d()) {
-            ta.k c10 = this.f36816g.c(key);
+            ta.k c10 = this.f36191g.c(key);
             if (c10 != null && (l10 = l(key, c10)) != null) {
                 return l10;
             }
@@ -304,7 +304,7 @@ public final class j {
         }
         za.b.a("BufferedDiskCache#get");
         try {
-            ta.k c11 = this.f36816g.c(key);
+            ta.k c11 = this.f36191g.c(key);
             if (c11 != null) {
                 n10 = l(key, c11);
                 if (n10 == null) {
@@ -325,22 +325,22 @@ public final class j {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
         if (!za.b.d()) {
-            if (ta.k.O0(encodedImage)) {
-                this.f36816g.f(key, encodedImage);
-                final ta.k g10 = ta.k.g(encodedImage);
+            if (ta.k.H0(encodedImage)) {
+                this.f36191g.f(key, encodedImage);
+                final ta.k h10 = ta.k.h(encodedImage);
                 try {
                     final Object d10 = ua.a.d("BufferedDiskCache_putAsync");
-                    this.f36814e.execute(new Runnable() { // from class: ma.e
+                    this.f36189e.execute(new Runnable() { // from class: ma.e
                         @Override // java.lang.Runnable
                         public final void run() {
-                            j.q(d10, this, key, g10);
+                            j.q(d10, this, key, h10);
                         }
                     });
                     return;
                 } catch (Exception e10) {
-                    q8.a.I(f36809i, e10, "Failed to schedule disk-cache write for %s", key.a());
-                    this.f36816g.h(key, encodedImage);
-                    ta.k.k(g10);
+                    q8.a.I(f36184i, e10, "Failed to schedule disk-cache write for %s", key.a());
+                    this.f36191g.h(key, encodedImage);
+                    ta.k.i(h10);
                     return;
                 }
             }
@@ -348,23 +348,23 @@ public final class j {
         }
         za.b.a("BufferedDiskCache#put");
         try {
-            if (ta.k.O0(encodedImage)) {
-                this.f36816g.f(key, encodedImage);
-                final ta.k g11 = ta.k.g(encodedImage);
+            if (ta.k.H0(encodedImage)) {
+                this.f36191g.f(key, encodedImage);
+                final ta.k h11 = ta.k.h(encodedImage);
                 try {
                     final Object d11 = ua.a.d("BufferedDiskCache_putAsync");
-                    this.f36814e.execute(new Runnable() { // from class: ma.e
+                    this.f36189e.execute(new Runnable() { // from class: ma.e
                         @Override // java.lang.Runnable
                         public final void run() {
-                            j.q(d11, this, key, g11);
+                            j.q(d11, this, key, h11);
                         }
                     });
                 } catch (Exception e11) {
-                    q8.a.I(f36809i, e11, "Failed to schedule disk-cache write for %s", key.a());
-                    this.f36816g.h(key, encodedImage);
-                    ta.k.k(g11);
+                    q8.a.I(f36184i, e11, "Failed to schedule disk-cache write for %s", key.a());
+                    this.f36191g.h(key, encodedImage);
+                    ta.k.i(h11);
                 }
-                Unit unit = Unit.f31765a;
+                Unit unit = Unit.f31987a;
                 return;
             }
             throw new IllegalStateException("Check failed.");
@@ -375,7 +375,7 @@ public final class j {
 
     public final u4.f s(final CacheKey key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        this.f36816g.g(key);
+        this.f36191g.g(key);
         try {
             final Object d10 = ua.a.d("BufferedDiskCache_remove");
             return u4.f.b(new Callable() { // from class: ma.g
@@ -385,9 +385,9 @@ public final class j {
                     t10 = j.t(d10, this, key);
                     return t10;
                 }
-            }, this.f36814e);
+            }, this.f36189e);
         } catch (Exception e10) {
-            q8.a.I(f36809i, e10, "Failed to schedule disk-cache remove for %s", key.a());
+            q8.a.I(f36184i, e10, "Failed to schedule disk-cache remove for %s", key.a());
             return u4.f.g(e10);
         }
     }

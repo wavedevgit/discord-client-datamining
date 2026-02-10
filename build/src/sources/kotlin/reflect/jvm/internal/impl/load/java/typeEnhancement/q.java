@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.load.kotlin.SignatureBuildingComponents;
 class q implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final SignatureBuildingComponents f32895d;
+    private final SignatureBuildingComponents f33117d;
 
     public q(SignatureBuildingComponents signatureBuildingComponents) {
-        this.f32895d = signatureBuildingComponents;
+        this.f33117d = signatureBuildingComponents;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Unit q10;
-        q10 = PredefinedEnhancementInfoKt.q(this.f32895d, (SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder) obj);
+        q10 = PredefinedEnhancementInfoKt.q(this.f33117d, (SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder) obj);
         return q10;
     }
 }

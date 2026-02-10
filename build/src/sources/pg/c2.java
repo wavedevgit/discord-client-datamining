@@ -1,64 +1,64 @@
 package pg;
 
-import zi.c;
+import bj.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-final class c2 implements zi.d {
+final class c2 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c2 f43340a = new c2();
+    static final c2 f41798a = new c2();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zi.c f43341b;
+    private static final bj.c f41799b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final zi.c f43342c;
+    private static final bj.c f41800c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final zi.c f43343d;
+    private static final bj.c f41801d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final zi.c f43344e;
+    private static final bj.c f41802e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final zi.c f43345f;
+    private static final bj.c f41803f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final zi.c f43346g;
+    private static final bj.c f41804g;
 
     static {
-        c.b a10 = zi.c.a("cameraSource");
+        c.b a10 = bj.c.a("cameraSource");
         f fVar = new f();
         fVar.a(1);
-        f43341b = a10.b(fVar.b()).a();
-        c.b a11 = zi.c.a("eventType");
+        f41799b = a10.b(fVar.b()).a();
+        c.b a11 = bj.c.a("eventType");
         f fVar2 = new f();
         fVar2.a(2);
-        f43342c = a11.b(fVar2.b()).a();
-        c.b a12 = zi.c.a("requestedPreviewHeight");
+        f41800c = a11.b(fVar2.b()).a();
+        c.b a12 = bj.c.a("requestedPreviewHeight");
         f fVar3 = new f();
         fVar3.a(3);
-        f43343d = a12.b(fVar3.b()).a();
-        c.b a13 = zi.c.a("requestedPreviewWidth");
+        f41801d = a12.b(fVar3.b()).a();
+        c.b a13 = bj.c.a("requestedPreviewWidth");
         f fVar4 = new f();
         fVar4.a(4);
-        f43344e = a13.b(fVar4.b()).a();
-        c.b a14 = zi.c.a("actualPreviewHeight");
+        f41802e = a13.b(fVar4.b()).a();
+        c.b a14 = bj.c.a("actualPreviewHeight");
         f fVar5 = new f();
         fVar5.a(5);
-        f43345f = a14.b(fVar5.b()).a();
-        c.b a15 = zi.c.a("actualPreviewWidth");
+        f41803f = a14.b(fVar5.b()).a();
+        c.b a15 = bj.c.a("actualPreviewWidth");
         f fVar6 = new f();
         fVar6.a(6);
-        f43346g = a15.b(fVar6.b()).a();
+        f41804g = a15.b(fVar6.b()).a();
     }
 
     private c2() {
     }
 
-    @Override // zi.d
+    @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         android.support.v4.media.session.b.a(obj);
-        zi.e eVar = (zi.e) obj2;
+        bj.e eVar = (bj.e) obj2;
         throw null;
     }
 }

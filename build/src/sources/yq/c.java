@@ -1,44 +1,70 @@
 package yq;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.io.File;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class c {
+public final class c implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<c> CREATOR = new a();
 
-    /* renamed from: a  reason: collision with root package name */
-    private int f55732a;
+    /* renamed from: d  reason: collision with root package name */
+    private final File f55722d;
 
-    /* renamed from: b  reason: collision with root package name */
-    private int f55733b;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final c createFromParcel(Parcel parcel) {
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            return new c((File) parcel.readSerializable());
+        }
 
-    /* renamed from: c  reason: collision with root package name */
-    private int f55734c;
-
-    public c(int i10, int i11, int i12) {
-        this.f55732a = i10;
-        this.f55733b = i11;
-        this.f55734c = i12;
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final c[] newArray(int i10) {
+            return new c[i10];
+        }
     }
 
-    public int a() {
-        return this.f55733b;
+    public c(File data) {
+        Intrinsics.checkNotNullParameter(data, "data");
+        this.f55722d = data;
     }
 
-    public int b() {
-        return this.f55734c;
+    public final File a() {
+        return this.f55722d;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if (obj != null && getClass() == obj.getClass()) {
-            c cVar = (c) obj;
-            if (this.f55732a == cVar.f55732a && this.f55733b == cVar.f55733b && this.f55734c == cVar.f55734c) {
-                return true;
-            }
+        if ((obj instanceof c) && Intrinsics.areEqual(this.f55722d, ((c) obj).f55722d)) {
+            return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((this.f55732a * 31) + this.f55733b) * 31) + this.f55734c;
+        return this.f55722d.hashCode();
+    }
+
+    public String toString() {
+        File file = this.f55722d;
+        return "DocumentFile(data=" + file + ")";
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeSerializable(this.f55722d);
     }
 }

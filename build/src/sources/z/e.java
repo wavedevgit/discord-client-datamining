@@ -5,25 +5,25 @@ import z.o0;
 final class e extends o0.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final j0.u f55831a;
+    private final j0.u f55870a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final j0.u f55832b;
+    private final j0.u f55871b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f55833c;
+    private final int f55872c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f55834d;
+    private final int f55873d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(j0.u uVar, j0.u uVar2, int i10, int i11) {
         if (uVar != null) {
-            this.f55831a = uVar;
+            this.f55870a = uVar;
             if (uVar2 != null) {
-                this.f55832b = uVar2;
-                this.f55833c = i10;
-                this.f55834d = i11;
+                this.f55871b = uVar2;
+                this.f55872c = i10;
+                this.f55873d = i11;
                 return;
             }
             throw new NullPointerException("Null postviewEdge");
@@ -33,22 +33,22 @@ final class e extends o0.a {
 
     @Override // z.o0.a
     j0.u a() {
-        return this.f55831a;
+        return this.f55870a;
     }
 
     @Override // z.o0.a
     int b() {
-        return this.f55833c;
+        return this.f55872c;
     }
 
     @Override // z.o0.a
     int c() {
-        return this.f55834d;
+        return this.f55873d;
     }
 
     @Override // z.o0.a
     j0.u d() {
-        return this.f55832b;
+        return this.f55871b;
     }
 
     public boolean equals(Object obj) {
@@ -57,7 +57,7 @@ final class e extends o0.a {
         }
         if (obj instanceof o0.a) {
             o0.a aVar = (o0.a) obj;
-            if (this.f55831a.equals(aVar.a()) && this.f55832b.equals(aVar.d()) && this.f55833c == aVar.b() && this.f55834d == aVar.c()) {
+            if (this.f55870a.equals(aVar.a()) && this.f55871b.equals(aVar.d()) && this.f55872c == aVar.b() && this.f55873d == aVar.c()) {
                 return true;
             }
         }
@@ -65,10 +65,10 @@ final class e extends o0.a {
     }
 
     public int hashCode() {
-        return ((((((this.f55831a.hashCode() ^ 1000003) * 1000003) ^ this.f55832b.hashCode()) * 1000003) ^ this.f55833c) * 1000003) ^ this.f55834d;
+        return ((((((this.f55870a.hashCode() ^ 1000003) * 1000003) ^ this.f55871b.hashCode()) * 1000003) ^ this.f55872c) * 1000003) ^ this.f55873d;
     }
 
     public String toString() {
-        return "In{edge=" + this.f55831a + ", postviewEdge=" + this.f55832b + ", inputFormat=" + this.f55833c + ", outputFormat=" + this.f55834d + "}";
+        return "In{edge=" + this.f55870a + ", postviewEdge=" + this.f55871b + ", inputFormat=" + this.f55872c + ", outputFormat=" + this.f55873d + "}";
     }
 }

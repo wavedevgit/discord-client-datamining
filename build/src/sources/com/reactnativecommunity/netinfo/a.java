@@ -6,31 +6,31 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Build;
 import android.os.Handler;
-import gm.d;
+import im.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class a {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f17529b;
+    private final Context f18278b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final InterfaceC0231a f17530c;
+    private final InterfaceC0212a f18279c;
 
     /* renamed from: e  reason: collision with root package name */
-    private Handler f17532e;
+    private Handler f18281e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f17528a = new c();
+    private final c f18277a = new c();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Runnable f17531d = new b();
+    private final Runnable f18280d = new b();
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f17533f = false;
+    private boolean f18282f = false;
 
     /* renamed from: com.reactnativecommunity.netinfo.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface InterfaceC0231a {
+    public interface InterfaceC0212a {
         void onAmazonFireDeviceConnectivityChanged(boolean z10);
     }
 
@@ -38,11 +38,11 @@ public class a {
     private class b implements Runnable {
         @Override // java.lang.Runnable
         public void run() {
-            if (!a.this.f17533f) {
+            if (!a.this.f18282f) {
                 return;
             }
-            a.this.f17529b.sendBroadcast(new Intent("com.amazon.tv.networkmonitor.CONNECTIVITY_CHECK"));
-            a.this.f17532e.postDelayed(a.this.f17531d, 10000L);
+            a.this.f18278b.sendBroadcast(new Intent("com.amazon.tv.networkmonitor.CONNECTIVITY_CHECK"));
+            a.this.f18281e.postDelayed(a.this.f18280d, 10000L);
         }
 
         private b() {
@@ -54,10 +54,10 @@ public class a {
     public class c extends BroadcastReceiver {
 
         /* renamed from: a  reason: collision with root package name */
-        boolean f17535a;
+        boolean f18284a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Boolean f17536b;
+        private Boolean f18285b;
 
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
@@ -75,22 +75,22 @@ public class a {
             } else {
                 return;
             }
-            Boolean bool = this.f17536b;
+            Boolean bool = this.f18285b;
             if (bool == null || bool.booleanValue() != z10) {
-                this.f17536b = Boolean.valueOf(z10);
-                a.this.f17530c.onAmazonFireDeviceConnectivityChanged(z10);
+                this.f18285b = Boolean.valueOf(z10);
+                a.this.f18279c.onAmazonFireDeviceConnectivityChanged(z10);
             }
         }
 
         private c() {
-            this.f17535a = false;
+            this.f18284a = false;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public a(Context context, InterfaceC0231a interfaceC0231a) {
-        this.f17529b = context;
-        this.f17530c = interfaceC0231a;
+    public a(Context context, InterfaceC0212a interfaceC0212a) {
+        this.f18278b = context;
+        this.f18279c = interfaceC0212a;
     }
 
     private boolean f() {
@@ -105,42 +105,42 @@ public class a {
     }
 
     private void h() {
-        if (this.f17528a.f17535a) {
+        if (this.f18277a.f18284a) {
             return;
         }
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("com.amazon.tv.networkmonitor.INTERNET_DOWN");
         intentFilter.addAction("com.amazon.tv.networkmonitor.INTERNET_UP");
-        d.a(this.f17529b, this.f17528a, intentFilter, false);
-        this.f17528a.f17535a = true;
+        d.a(this.f18278b, this.f18277a, intentFilter, false);
+        this.f18277a.f18284a = true;
     }
 
     private void i() {
-        if (this.f17533f) {
+        if (this.f18282f) {
             return;
         }
         Handler handler = new Handler();
-        this.f17532e = handler;
-        this.f17533f = true;
-        handler.post(this.f17531d);
+        this.f18281e = handler;
+        this.f18282f = true;
+        handler.post(this.f18280d);
     }
 
     private void j() {
-        if (!this.f17533f) {
+        if (!this.f18282f) {
             return;
         }
-        this.f17533f = false;
-        this.f17532e.removeCallbacksAndMessages(null);
-        this.f17532e = null;
+        this.f18282f = false;
+        this.f18281e.removeCallbacksAndMessages(null);
+        this.f18281e = null;
     }
 
     private void l() {
-        c cVar = this.f17528a;
-        if (!cVar.f17535a) {
+        c cVar = this.f18277a;
+        if (!cVar.f18284a) {
             return;
         }
-        this.f17529b.unregisterReceiver(cVar);
-        this.f17528a.f17535a = false;
+        this.f18278b.unregisterReceiver(cVar);
+        this.f18277a.f18284a = false;
     }
 
     public void g() {

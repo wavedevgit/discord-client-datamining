@@ -1,37 +1,45 @@
 package pj;
 
-import com.google.firebase.components.ComponentRegistrar;
-import java.util.ArrayList;
-import java.util.List;
-import vi.d;
-import vi.g;
-import vi.i;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class b implements i {
-    public static /* synthetic */ Object b(String str, vi.c cVar, d dVar) {
-        try {
-            c.b(str);
-            return cVar.h().a(dVar);
-        } finally {
-            c.a();
+public abstract class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final pj.a f42767a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private static volatile pj.a f42768b;
+
+    /* renamed from: pj.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static class C0593b implements pj.a {
+        private C0593b() {
+        }
+
+        @Override // pj.a
+        public ExecutorService a(ThreadFactory threadFactory, c cVar) {
+            return b(1, threadFactory, cVar);
+        }
+
+        public ExecutorService b(int i10, ThreadFactory threadFactory, c cVar) {
+            ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(i10, i10, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), threadFactory);
+            threadPoolExecutor.allowCoreThreadTimeOut(true);
+            return Executors.unconfigurableExecutorService(threadPoolExecutor);
         }
     }
 
-    @Override // vi.i
-    public List a(ComponentRegistrar componentRegistrar) {
-        ArrayList arrayList = new ArrayList();
-        for (final vi.c cVar : componentRegistrar.getComponents()) {
-            final String i10 = cVar.i();
-            if (i10 != null) {
-                cVar = cVar.r(new g() { // from class: pj.a
-                    @Override // vi.g
-                    public final Object a(d dVar) {
-                        return b.b(i10, cVar, dVar);
-                    }
-                });
-            }
-            arrayList.add(cVar);
-        }
-        return arrayList;
+    static {
+        C0593b c0593b = new C0593b();
+        f42767a = c0593b;
+        f42768b = c0593b;
+    }
+
+    public static pj.a a() {
+        return f42768b;
     }
 }

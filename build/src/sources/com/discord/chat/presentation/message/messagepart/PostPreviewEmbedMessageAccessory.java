@@ -22,7 +22,7 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-AFFcxXc$default  reason: not valid java name */
-    public static /* synthetic */ PostPreviewEmbedMessageAccessory m631copyAFFcxXc$default(PostPreviewEmbedMessageAccessory postPreviewEmbedMessageAccessory, String str, PostPreviewEmbed postPreviewEmbed, int i10, SpoilerAttributes spoilerAttributes, int i11, Object obj) {
+    public static /* synthetic */ PostPreviewEmbedMessageAccessory m632copyAFFcxXc$default(PostPreviewEmbedMessageAccessory postPreviewEmbedMessageAccessory, String str, PostPreviewEmbed postPreviewEmbed, int i10, SpoilerAttributes spoilerAttributes, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             str = postPreviewEmbedMessageAccessory.messageId;
         }
@@ -35,12 +35,12 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
         if ((i11 & 8) != 0) {
             spoilerAttributes = postPreviewEmbedMessageAccessory.spoilerAttributes;
         }
-        return postPreviewEmbedMessageAccessory.m633copyAFFcxXc(str, postPreviewEmbed, i10, spoilerAttributes);
+        return postPreviewEmbedMessageAccessory.m634copyAFFcxXc(str, postPreviewEmbed, i10, spoilerAttributes);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m632component13Eiw7ao() {
+    public final String m633component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -59,7 +59,7 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-AFFcxXc  reason: not valid java name */
-    public final PostPreviewEmbedMessageAccessory m633copyAFFcxXc(@NotNull String messageId, @NotNull PostPreviewEmbed postPreviewEmbed, int i10, SpoilerAttributes spoilerAttributes) {
+    public final PostPreviewEmbedMessageAccessory m634copyAFFcxXc(@NotNull String messageId, @NotNull PostPreviewEmbed postPreviewEmbed, int i10, SpoilerAttributes spoilerAttributes) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(postPreviewEmbed, "postPreviewEmbed");
         return new PostPreviewEmbedMessageAccessory(messageId, postPreviewEmbed, i10, spoilerAttributes, null);
@@ -71,7 +71,7 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof PostPreviewEmbedMessageAccessory) {
             PostPreviewEmbedMessageAccessory postPreviewEmbedMessageAccessory = (PostPreviewEmbedMessageAccessory) obj;
-            return MessageId.m1087equalsimpl0(this.messageId, postPreviewEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.postPreviewEmbed, postPreviewEmbedMessageAccessory.postPreviewEmbed) && this.index == postPreviewEmbedMessageAccessory.index && Intrinsics.areEqual(this.spoilerAttributes, postPreviewEmbedMessageAccessory.spoilerAttributes);
+            return MessageId.m1088equalsimpl0(this.messageId, postPreviewEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.postPreviewEmbed, postPreviewEmbedMessageAccessory.postPreviewEmbed) && this.index == postPreviewEmbedMessageAccessory.index && Intrinsics.areEqual(this.spoilerAttributes, postPreviewEmbedMessageAccessory.spoilerAttributes);
         }
         return false;
     }
@@ -83,7 +83,7 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo537getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -97,18 +97,18 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int m1088hashCodeimpl = ((((MessageId.m1088hashCodeimpl(this.messageId) * 31) + this.postPreviewEmbed.hashCode()) * 31) + Integer.hashCode(this.index)) * 31;
+        int m1089hashCodeimpl = ((((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.postPreviewEmbed.hashCode()) * 31) + Integer.hashCode(this.index)) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
-        return m1088hashCodeimpl + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode());
+        return m1089hashCodeimpl + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode());
     }
 
     @NotNull
     public String toString() {
-        String m1090toStringimpl = MessageId.m1090toStringimpl(this.messageId);
+        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
         PostPreviewEmbed postPreviewEmbed = this.postPreviewEmbed;
         int i10 = this.index;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
-        return "PostPreviewEmbedMessageAccessory(messageId=" + m1090toStringimpl + ", postPreviewEmbed=" + postPreviewEmbed + ", index=" + i10 + ", spoilerAttributes=" + spoilerAttributes + ")";
+        return "PostPreviewEmbedMessageAccessory(messageId=" + m1091toStringimpl + ", postPreviewEmbed=" + postPreviewEmbed + ", index=" + i10 + ", spoilerAttributes=" + spoilerAttributes + ")";
     }
 
     public /* synthetic */ PostPreviewEmbedMessageAccessory(String str, PostPreviewEmbed postPreviewEmbed, int i10, SpoilerAttributes spoilerAttributes, int i11, DefaultConstructorMarker defaultConstructorMarker) {

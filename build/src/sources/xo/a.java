@@ -4,64 +4,61 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-import androidx.constraintlayout.helper.widget.Flow;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
-import vo.f2;
-import vo.g2;
+import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
+import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
+import to.m4;
+import to.n4;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class a implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f55248a;
+    private final CoordinatorLayout f54946a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ConstraintLayout f55249b;
+    public final LinearLayout f54947b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Button f55250c;
+    public final Button f54948c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Flow f55251d;
+    public final ThemeableLottieAnimationView f54949d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f55252e;
+    public final Pi2NavigationBar f54950e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final TextView f55253f;
+    public final TextView f54951f;
 
-    /* renamed from: g  reason: collision with root package name */
-    public final Button f55254g;
-
-    private a(ConstraintLayout constraintLayout, ConstraintLayout constraintLayout2, Button button, Flow flow, TextView textView, TextView textView2, Button button2) {
-        this.f55248a = constraintLayout;
-        this.f55249b = constraintLayout2;
-        this.f55250c = button;
-        this.f55251d = flow;
-        this.f55252e = textView;
-        this.f55253f = textView2;
-        this.f55254g = button2;
+    private a(CoordinatorLayout coordinatorLayout, LinearLayout linearLayout, Button button, ThemeableLottieAnimationView themeableLottieAnimationView, Pi2NavigationBar pi2NavigationBar, TextView textView) {
+        this.f54946a = coordinatorLayout;
+        this.f54947b = linearLayout;
+        this.f54948c = button;
+        this.f54949d = themeableLottieAnimationView;
+        this.f54950e = pi2NavigationBar;
+        this.f54951f = textView;
     }
 
     public static a a(View view) {
-        ConstraintLayout constraintLayout = (ConstraintLayout) view;
-        int i10 = f2.f52821b;
-        Button button = (Button) e4.a.a(view, i10);
-        if (button != null) {
-            i10 = f2.f52822c;
-            Flow flow = (Flow) e4.a.a(view, i10);
-            if (flow != null) {
-                i10 = f2.f52824e;
-                TextView textView = (TextView) e4.a.a(view, i10);
-                if (textView != null) {
-                    i10 = f2.f52825f;
-                    TextView textView2 = (TextView) e4.a.a(view, i10);
-                    if (textView2 != null) {
-                        i10 = f2.f52828i;
-                        Button button2 = (Button) e4.a.a(view, i10);
-                        if (button2 != null) {
-                            return new a(constraintLayout, constraintLayout, button, flow, textView, textView2, button2);
+        int i10 = m4.f49404t;
+        LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
+        if (linearLayout != null) {
+            i10 = m4.f49406u;
+            Button button = (Button) e4.a.a(view, i10);
+            if (button != null) {
+                i10 = m4.P;
+                ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
+                if (themeableLottieAnimationView != null) {
+                    i10 = m4.Y;
+                    Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
+                    if (pi2NavigationBar != null) {
+                        i10 = m4.D0;
+                        TextView textView = (TextView) e4.a.a(view, i10);
+                        if (textView != null) {
+                            return new a((CoordinatorLayout) view, linearLayout, button, themeableLottieAnimationView, pi2NavigationBar, textView);
                         }
                     }
                 }
@@ -71,7 +68,7 @@ public final class a implements ViewBinding {
     }
 
     public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(g2.f52855a, viewGroup, false);
+        View inflate = layoutInflater.inflate(n4.f49536a, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -80,7 +77,7 @@ public final class a implements ViewBinding {
 
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
-    public ConstraintLayout getRoot() {
-        return this.f55248a;
+    public CoordinatorLayout getRoot() {
+        return this.f54946a;
     }
 }

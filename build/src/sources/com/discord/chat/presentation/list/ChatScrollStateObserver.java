@@ -37,7 +37,7 @@ public final class ChatScrollStateObserver extends RecyclerView.OnScrollListener
         static {
             EmitMode[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = yr.a.a($values);
+            $ENTRIES = hs.a.a($values);
         }
 
         private EmitMode(String str, int i10) {

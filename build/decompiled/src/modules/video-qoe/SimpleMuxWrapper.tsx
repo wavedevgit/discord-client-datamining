@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = 'initialize';
         var0.key = var1;
         var1 = function() {
-            _fun83961: for (var _fun83961_ip = 0;;) switch (_fun83961_ip) {
+            _fun84017: for (var _fun84017_ip = 0;;) switch (_fun84017_ip) {
                 case 0:
                     var2 = this;
                     var0 = undefined;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = null;
                     var1 = var6 != var3;
                     if (!var1) {
-                        _fun83961_ip = 44;
-                        continue _fun83961
+                        _fun84017_ip = 44;
+                        continue _fun84017
                     }
                 case 41:
                     var1 = var3;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var5;
                     var5 = var2.hlsInstance;
                     if (!(var6 != var5)) {
-                        _fun83961_ip = 155;
-                        continue _fun83961
+                        _fun84017_ip = 155;
+                        continue _fun84017
                     }
                 case 123:
                     var6 = var4;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var6.bind(var7)(var5, var4);
                     var2.isMonitoring = var3;
                 case 199: // try_end0
-                    _fun83961_ip = 232;
-                    continue _fun83961;
+                    _fun84017_ip = 232;
+                    continue _fun84017;
                 case 201: // catch_target0
                     CatchBlockStart(arg_register = 5);
                     var4 = _closure1_slot5;
@@ -151,13 +151,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'endSession';
         var0.key = var5;
         var5 = function() {
-            _fun83962: for (var _fun83962_ip = 0;;) switch (_fun83962_ip) {
+            _fun84018: for (var _fun84018_ip = 0;;) switch (_fun84018_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.isMonitoring;
                     if (!var0) {
-                        _fun83962_ip = 124;
-                        continue _fun83962
+                        _fun84018_ip = 124;
+                        continue _fun84018
                     }
                 case 12: // try_start_0
                     var5 = _closure1_slot1;
@@ -170,8 +170,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = 'function';
                     var2 = typeof var2;
                     if (!(var5 === var2)) {
-                        _fun83962_ip = 88;
-                        continue _fun83962
+                        _fun84018_ip = 88;
+                        continue _fun84018
                     }
                 case 54:
                     var2 = _closure1_slot1;
@@ -185,8 +185,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = false;
                     var1.isMonitoring = var0;
                 case 96: // try_end0
-                    _fun83962_ip = 124;
-                    continue _fun83962;
+                    _fun84018_ip = 124;
+                    continue _fun84018;
                 case 98: // catch_target0
                     CatchBlockStart(arg_register = 3);
                     var2 = _closure1_slot5;
@@ -204,13 +204,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'destroy';
         var0.key = var5;
         var5 = function() {
-            _fun83963: for (var _fun83963_ip = 0;;) switch (_fun83963_ip) {
+            _fun84019: for (var _fun84019_ip = 0;;) switch (_fun84019_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.isMonitoring;
                     if (!var0) {
-                        _fun83963_ip = 124;
-                        continue _fun83963
+                        _fun84019_ip = 124;
+                        continue _fun84019
                     }
                 case 12: // try_start_0
                     var5 = _closure1_slot1;
@@ -223,8 +223,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = 'function';
                     var2 = typeof var2;
                     if (!(var5 === var2)) {
-                        _fun83963_ip = 88;
-                        continue _fun83963
+                        _fun84019_ip = 88;
+                        continue _fun84019
                     }
                 case 54:
                     var2 = _closure1_slot1;
@@ -238,8 +238,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = false;
                     var1.isMonitoring = var0;
                 case 96: // try_end0
-                    _fun83963_ip = 124;
-                    continue _fun83963;
+                    _fun84019_ip = 124;
+                    continue _fun84019;
                 case 98: // catch_target0
                     CatchBlockStart(arg_register = 3);
                     var2 = _closure1_slot5;
@@ -276,4 +276,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.SimpleMuxWrapper = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4, 10784, 10785, 10786, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4, 10795, 10796, 10797, 2]);

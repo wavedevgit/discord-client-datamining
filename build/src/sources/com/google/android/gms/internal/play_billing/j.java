@@ -9,25 +9,25 @@ import java.util.RandomAccess;
 public abstract class j extends g implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final x f14357e = new h(p.f14449q, 0);
+    private static final x f14934e = new h(p.f15026q, 0);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final /* synthetic */ int f14358i = 0;
+    public static final /* synthetic */ int f14935i = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static j i(Object[] objArr, int i10) {
+    public static j j(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return p.f14449q;
+            return p.f15026q;
         }
         return new p(objArr, i10);
     }
 
-    public static j j(Collection collection) {
+    public static j k(Collection collection) {
         if (collection instanceof g) {
             j e10 = ((g) collection).e();
             if (e10.f()) {
                 Object[] array = e10.toArray();
-                return i(array, array.length);
+                return j(array, array.length);
             }
             return e10;
         }
@@ -38,11 +38,11 @@ public abstract class j extends g implements List, RandomAccess {
                 throw new NullPointerException("at index " + i10);
             }
         }
-        return i(array2, array2.length);
+        return j(array2, array2.length);
     }
 
     public static j l() {
-        return p.f14449q;
+        return p.f15026q;
     }
 
     @Override // java.util.List
@@ -141,20 +141,6 @@ public abstract class j extends g implements List, RandomAccess {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.internal.play_billing.j.equals(java.lang.Object):boolean");
     }
 
-    @Override // java.util.List
-    /* renamed from: h */
-    public j subList(int i10, int i11) {
-        b.d(i10, i11, size());
-        int i12 = i11 - i10;
-        if (i12 == size()) {
-            return this;
-        }
-        if (i12 == 0) {
-            return p.f14449q;
-        }
-        return new i(this, i10, i12);
-    }
-
     @Override // java.util.Collection, java.util.List
     public final int hashCode() {
         int size = size();
@@ -163,6 +149,20 @@ public abstract class j extends g implements List, RandomAccess {
             i10 = (i10 * 31) + get(i11).hashCode();
         }
         return i10;
+    }
+
+    @Override // java.util.List
+    /* renamed from: i */
+    public j subList(int i10, int i11) {
+        b.d(i10, i11, size());
+        int i12 = i11 - i10;
+        if (i12 == size()) {
+            return this;
+        }
+        if (i12 == 0) {
+            return p.f15026q;
+        }
+        return new i(this, i10, i12);
     }
 
     @Override // java.util.List
@@ -207,7 +207,7 @@ public abstract class j extends g implements List, RandomAccess {
     public final x listIterator(int i10) {
         b.b(i10, size(), "index");
         if (isEmpty()) {
-            return f14357e;
+            return f14934e;
         }
         return new h(this, i10);
     }
